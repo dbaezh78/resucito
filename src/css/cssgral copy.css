@@ -1,4 +1,4 @@
-/* Creado por un siervo de Cristo: Carlos David */
+/*  Creado por un siervo de Cristo: Carlos David */
 
 #CristoReydereyesYSeñordeseñores {
     --CristoMiSeñor: white
@@ -362,35 +362,6 @@ display: none;}
         width: 100%;
     }
 }
-
-/* NUEVO: Estilos para cuando un canto tiene solo una columna (lizq) */
-.canto-content-wrapper.single-column-mode {
-    flex-direction: column; /* Forzar diseño de una sola columna */
-    align-items: center; /* Centrar el contenedor de la columna única */
-    width: 100%; /* Ocupar todo el ancho de su contenedor padre */
-    max-width: 992px; /* Limitar el ancho máximo en pantallas grandes para legibilidad */
-    margin: 0 auto; /* Centrar el contenedor horizontalmente */
-}
-
-.canto-content-wrapper.single-column-mode #canto-left-container {
-    width: 100%; /* El contenedor izquierdo ocupa todo el ancho del wrapper */
-    padding-left: 10%; /* Empujar el contenido a la derecha un 10% de su ancho */
-    padding-right: 10%; /* Mantener el equilibrio */
-    box-sizing: border-box; /* Incluir el padding en el cálculo del ancho */
-}
-
-.canto-content-wrapper.single-column-mode #canto-right-container {
-    display: none; /* Ocultar el contenedor derecho */
-}
-
-/* Ajustar padding para pantallas más pequeñas en modo de una sola columna */
-@media (max-width: 767px) {
-    .canto-content-wrapper.single-column-mode #canto-left-container {
-        padding-left: 5%; /* Menos padding en pantallas pequeñas */
-        padding-right: 5%;
-    }
-}
-
 
 .linea-canto {
     position: relative;
@@ -948,5 +919,4 @@ hr {
     align-content: center;
 
 }
-
 

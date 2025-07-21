@@ -12,16 +12,15 @@ const allCantosData = [
         dbno: "1",
         notes: "Este canto se usa en la liturgia de Pascua.",
         audioSrc: "/audio/alavictimapascual.mp3", // <-- Nueva propiedad para el audio
+        sig: "",
+        ant: "",
         // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
-        // Propiedades para navegación entre cantos
-        ant: "/resucito/", // No hay canto anterior para el primero
-        sig: "/resucito/src/index.html?canto=anadiedemosocasiondetropiezo", // URL del siguiente canto
-        // Datos específicos del canto, ahora referenciados aquí
-         lizq: [
+            mobile: { velocidad: 6, incremento: 3 },
+            tablet: { velocidad: 7, incremento: 1 },
+            desktop: { velocidad: 7, incremento: 1 }},
+
+        lizq: [
             { line: "A la víctima pascual, (La,m,18)(La,7,200)"},
             { line: "ofrecemos hoy"},
             { line: "el sacrificio de alabanza. (Re,m9,186)"},
@@ -53,29 +52,24 @@ const allCantosData = [
             { line: "Y NOS PRECEDE EN GALILEA, (Fa,,10)(Mi,,254)", sC: "as"},
             { line: "Y NOS PRECEDE EN GALILEA. (Fa,,10)(Mi,,254)", sC: "as"},
             { line: "Tú, Rey victorioso, danos tú la salvación. (Fa,,10)(Mi,,356)", sC: "mt"},
-        ]},
-
-    //  A NADIE DEMOS OCASIÓN DE TROPIEZO
+        ]
+    },
+//  A NADIE DEMOS OCASIÓN DE TROPIEZO
     {
         id: "anadiedemosocasiondetropiezo", // Un ID único para el canto
         tt: "A nadie demos ocasión de tropiezo",
         title: "A NADIE DEMOS OCASIÓN DE TROPIEZO",
         subtitle: "2ª Corintios 6,3ss",
-        category: ["PreCatecumenado", "Pascua", "Pentecostés", "Comunión"],
-
-        // propiedad para la velocidad de desplazamiento segun equipo
+        category: ["PreCatecumenado", "Pascua", "Pentecostés", "Comunión"], // Sigue siendo un array de nombres de categorías
+        // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 },
             tablet: { velocidad: 7, incremento: 1 },
-            desktop: { velocidad: 7, incremento: 1 }
-        },
-        // Propiedades para navegación entre cantos
-        ant: "/resucito/src/index.html?canto=alavictimapascual",
-        sig: "/resucito/src/index.html?canto=atilevantomisojos",
+            desktop: { velocidad: 7, incremento: 1 }},
         nCan: "Notas",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
-        audioSrc: "/audio/anadiedemosocasiondetropiezo.mp3",
+        audioSrc: "/audio/anadiedemosocasiondetropiezo.mp3", // <-- Nueva propiedad para el audio
         lizq: [
             { line: "Hermanos, a nadie demos ocasión de tropiezo, (La,m,16)(Re,m,410)", sC: "tc" },
             { line: "hermanos, vivamos aceptando las tribulaciones, (Mi,,61) (La,m,412)" },
@@ -150,71 +144,8 @@ const allCantosData = [
 
             { line: "En pureza, paciencia y bondad, (Re,m,15) (Mi,,271)", sC: "mt tc" },
             { line: "en el Espíritu Santo, y en el poder de Dios. (Fa,,141) (Mi,,375)" },
-        ]},
-
-        //  A TI LEVANTO MIS OJOS
-    {
-        id: "atilevantomisojos", // Un ID único para el canto
-        tt: "A ti levanto mis ojos",
-        title: "A TI LEVANTO MIS OJOS",
-        subtitle: "Salmo 123 (122)",
-        category: ["PreCatecumenado", "Cuaresma", "Penitencial"],
-
-        // propiedad para la velocidad de desplazamiento segun equipo
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 },
-            tablet: { velocidad: 7, incremento: 1 },
-            desktop: { velocidad: 7, incremento: 1 }
-        },
-        // Propiedades para navegación entre cantos
-        ant: "/resucito/src/index.html?canto=anadiedemosocasiondetropiezo",
-        sig: "/resucito/src/index.html?canto=atisenorenmiclamorimploro",
-        nCan: "Notas",
-        dbno: "2",
-        notes: "Este canto se usa en la liturgia de Pascua.",
-        audioSrc: "/audio/atilevantomisojos.mp3",
-
-        lizq: [
-            { line: "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,210)", sC: "tc as b3" },
-            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,16)(La,7,210)", sC: "as" },
-
-            { line: "Como los ojos de los siervos,  (Re,m,15(La,7,150)", sC: "as" },
-            { line: "miran a las manos de sus señores,  (Re,m,15(La,7,150)"},
-            { line: "como los ojos de la esclava,(Sol m La 7)"},
-            { line: "a las manos de su señora,(Sol m La 7)"},
-            { line: "así nuestros ojos miran al Señor,(Si� 7 La 7)"},
-            { line: "esperando que tenga piedad, (Si� 7 La 7 Si� 7 La 7)"},
-            { line: "esperando que tenga piedad. (Si� 7 La 7 Si� 7 La 7)"},
-
-            { line: "Mujeres: "},
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Re m La 7)", sC:"as b3hym b3hm1"},
-            { line: "Hombres: ", sC: "b3hym"},
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!(Si� 7 La 7)", sC:"b3hym"},
-            { line: "Mujeres: ¡QUE DEMASIADO SE HAN BURLADO DE NOSOTROS,(Re m La 7)"},
-            { line: "Hombres. QUE NUESTRA ALMA ESTÁ SACIADA DE DESPRECIOS!(Si� 7 La 7)"},
-            { line: "Mujeres: ¡DE LAS BURLAS DE LOS SATISFECHOS,(Re m La 7)"},
-            { line: "Hombres: DEL DESPRECIO DE LOS SOBERBIOS!(Si� 7 La 7)"},
-            { line: "Mujeres: ¡PIEDAD DE NOSOTROS, SEÑOR!(Re m La 7)"},
-            { line: "Hombres: ¡PIEDAD DE NOSOTROS, SEÑOR!(Si� 7 La 7)"},
-            { line: "A TI LEVANTO MIS OJOS ...(Re m La 7)"},
-
-
-            {   type: "collapsible-block",
-                id: "asamblea_anadie_1",
-                initialState: "collapsed",
-                triggerLine: "A TI LEVANTO MIS OJOS (La,m,18)", sC: "mt as ta",
-                lines: [
-                    { line: "OCASIÓN DE TROPIEZO, (Re,m,186)", sC: "as" },
-                    { line: "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)", sC: "as" },
-                    { line: "LAS TRIBULACIONES,  (La,m,148)", sC: "as" },
-                    { line: "NECESIDADES, ANGUSTIAS Y FATIGAS. (Re,m,18)(Mi,,322)", sC: "as" },
-                ]},
-        ],
-        lder: [
-
         ]
     }
-
     // Aquí irían más cantos:
     // {
     //     id: "abraham",

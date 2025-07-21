@@ -905,18 +905,6 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
         }
     }
 
-    // Lógica para el modo de una sola columna
-    if (cantoSpecificData.lder && cantoSpecificData.lder.length === 0) {
-        cantoContentWrapper.classList.add('single-column-mode');
-        // El CSS se encargará de ocultar cantoRightContainer y ajustar cantoLeftContainer
-    } else {
-        cantoContentWrapper.classList.remove('single-column-mode');
-        // Asegurarse de que el contenedor derecho sea visible si estaba oculto por un canto anterior de una sola columna
-        if (cantoRightContainer) {
-            cantoRightContainer.style.display = ''; // Revertir a la visualización predeterminada
-        }
-    }
-
 
     // Parsear y almacenar los datos del canto actual
     // Asegurarse de que currentCantoData sea un objeto válido antes de intentar asignar propiedades.

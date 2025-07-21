@@ -73,3 +73,24 @@
     .b1-1::before{height: 127px;margin-left: 76%;margin-top: 0%;}
     .b1-2::before{height: 80px;margin-left: 88%;margin-top: 0%;}
 }
+
+.b3::before {
+        font-size: 1.3rem;
+        font-weight: bold;
+        height: 72px;
+        margin-left: 76%;
+        margin-top: 0%;
+    }
+
+.b3hym {
+    top: -59px;
+    left: 132px;
+    width: fit-content;
+}
+
+.b3hm1.canto-content-wrapper.single-column-mode #canto-left-container {
+    width: 768px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+}

@@ -1,3 +1,4 @@
+// Version 21 jul 2025 1.42pm
 // jsgral.js - JavaScript General para todos los cantos
 
 // Definición de los acordes y su mapeo a semitonos (desde Do)
@@ -150,10 +151,6 @@ let isScrolling = false;
 let scrollInterval;
 let startScrollBtn; // Referencia al botón de scroll
 let scrollIcon; // Referencia al icono del botón de scroll
-
-// Referencias para los botones de navegación anterior/siguiente
-let prevCantoBtn;
-let nextCantoBtn;
 
 
 // Función para obtener el nombre legible del acorde a partir del nombre del archivo
@@ -611,17 +608,18 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     cantoContentWrapper = document.querySelector('.canto-content-wrapper'); // Obtener el wrapper
 
     // Referencias para el control de audio
+    
     cantoAudioPlayer = document.getElementById('cantoAudioPlayer');
     audioControlBtn = document.getElementById('audio-control-btn');
     audioIcon = audioControlBtn ? audioControlBtn.querySelector('.audio-icon') : null;
 
     // Referencias para el nuevo botón de asamblea
     showAllAsambleaBtn = document.getElementById('showAllAsambleaBtn');
-    showAllAsambleaIcon = showAllAsambleaBtn ? showAllAsambleaBtn.querySelector('.material-symbols-outlined') : null;
+    showAllAsambleaIcon = showAllAsambleaBtn ? showAllAsambleaBtn.querySelector('.mso1') : null;
 
     // Referencias para el botón de alternar vista
     toggleVistaBtn = document.getElementById('toggleVista');
-    toggleVistaIcon = toggleVistaBtn ? toggleVistaBtn.querySelector('.material-symbols-outlined') : null;
+    toggleVistaIcon = toggleVistaBtn ? toggleVistaBtn.querySelector('.mso1') : null;
 
     // Referencias para la modal de imágenes de acordes
     callNotasBtn = document.getElementById('CallNotas');
@@ -635,10 +633,6 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     // Referencias para el scroll automático
     startScrollBtn = document.getElementById('startScroll');
     scrollIcon = startScrollBtn ? startScrollBtn.querySelector('.scroll-icon') : null;
-
-    // Referencias para los botones de navegación anterior/siguiente
-    prevCantoBtn = document.getElementById('prevCantoBtn');
-    nextCantoBtn = document.getElementById('nextCantoBtn');
 
 
     // Verificar si los contenedores del canto se encontraron
@@ -662,8 +656,6 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     if (!largeChordImage) console.error("Error: #largeChordImage no encontrado.");
     if (!startScrollBtn) console.error("Error: #startScroll no encontrado.");
     if (!scrollIcon) console.error("Error: .scroll-icon no encontrado dentro de #startScroll.");
-    if (!prevCantoBtn) console.error("Error: #prevCantoBtn no encontrado.");
-    if (!nextCantoBtn) console.error("Error: #nextCantoBtn no encontrado.");
 
 
     // Actualizar los títulos y subtítulos del canto
@@ -885,37 +877,6 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
         scrollIcon.textContent = 'south'; // Cambiar icono a flecha abajo
         clearInterval(scrollInterval);
     };
-
-    // Lógica para los botones de navegación anterior/siguiente
-    if (prevCantoBtn) {
-        if (cantoSpecificData.ant) {
-            prevCantoBtn.href = cantoSpecificData.ant;
-            prevCantoBtn.style.display = ''; // Mostrar el botón
-        } else {
-            prevCantoBtn.style.display = 'none'; // Ocultar si no hay canto anterior
-        }
-    }
-
-    if (nextCantoBtn) {
-        if (cantoSpecificData.sig) {
-            nextCantoBtn.href = cantoSpecificData.sig;
-            nextCantoBtn.style.display = ''; // Mostrar el botón
-        } else {
-            nextCantoBtn.style.display = 'none'; // Ocultar si no hay canto siguiente
-        }
-    }
-
-    // Lógica para el modo de una sola columna
-    if (cantoSpecificData.lder && cantoSpecificData.lder.length === 0) {
-        cantoContentWrapper.classList.add('single-column-mode');
-        // El CSS se encargará de ocultar cantoRightContainer y ajustar cantoLeftContainer
-    } else {
-        cantoContentWrapper.classList.remove('single-column-mode');
-        // Asegurarse de que el contenedor derecho sea visible si estaba oculto por un canto anterior de una sola columna
-        if (cantoRightContainer) {
-            cantoRightContainer.style.display = ''; // Revertir a la visualización predeterminada
-        }
-    }
 
 
     // Parsear y almacenar los datos del canto actual
