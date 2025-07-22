@@ -127,6 +127,7 @@ h2 {
     border-radius: 0;
     font-size: 16px;
     margin-left: 9px;
+    clip-path: content-box;
 }
 
 .filters-container {
@@ -653,8 +654,9 @@ h2 {
     }
     .search-container input {
         border-radius: 0;
-        margin-bottom: 6px;
+        margin-bottom: 0px;
         width: 40%;
+        clip-path: content-box;
     }
     .filter-toggle-button {
         width: auto;

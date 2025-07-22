@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/src/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="/resucito/src/css/cssgral.css">
+    <link rel="stylesheet" href="/resucito/src/css/search.css">
     <link rel="stylesheet" href="/resucito/src/css/pg/atilevantomisojos.css">
     <!-- Enlace para Material Symbols Outlined -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
@@ -69,8 +70,13 @@
                         <span class="mso1">arrow_right_alt</span>
                     </a>
                     
-                    <!-- Campo de búsqueda -->
-                    <input type="search" id="searchInput" placeholder="Buscar..." class="toolbar-item search-input">
+                    <!-- Campo de búsqueda y contenedor de resultados -->
+                    <div class="buscador-cantos">
+                        <input type="search" id="DavidLoBusca" placeholder="Buscar..." class="toolbar-item search-input">
+                        <div id="resultadosBusqueda" class="resultados-busqueda">
+                            <!-- Los resultados de la búsqueda se cargarán aquí dinámicamente -->
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -134,7 +140,8 @@
 
     <!-- Carga de scripts: ¡El orden es importante! -->
     <script src="/resucito/src/data/canto_data.js"></script> <!-- Primero, ya que contiene los datos -->
-    <script src="/resucito/src/js/jsgral-almos.js"></script>
+    <script src="/resucito/src/data/find.js"></script>
+    <script src="/resucito/src/js/jsgral.js"></script>
     <script src="/resucito/src/js/index.js"></script>
 </body>
 </html>

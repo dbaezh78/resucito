@@ -18,12 +18,12 @@ const positionConfigs = {
     'mobile': { // Para anchos de pantalla entre 384px y 767px
         minWidth: 384,
         maxWidth: 767,
-        factor: 0.734, // Factor por defecto, ajustar según necesidad
+        factor: 0.720, // Factor por defecto, ajustar según necesidad
     },
     'tablet': { // Para anchos de pantalla entre 768px y 991px
         minWidth: 768,
         maxWidth: 991,
-        factor: 1.36, // Factor por defecto, ajustar según necesidad
+        factor: 1.20, // Factor por defecto, ajustar según necesidad
     },
     'desktop-small': { // Para anchos de pantalla entre 992px y 1279px
         minWidth: 992,

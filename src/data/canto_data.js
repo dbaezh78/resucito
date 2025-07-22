@@ -184,22 +184,22 @@ const allCantosData = [
             { line: "como los ojos de la esclava,(Sol,m,105)", sC: "mt"},
             { line: "a las manos de su señora,(La,7,216)"},
 
-            { line: "así nuestros ojos miran al Señor,(Si♭,,18)(La,7,290)", sC: "mt"},
+            { line: "así nuestros ojos miran al Señor,(Si♭,,12)(La,7,290)", sC: "mt"},
 
-            { line: "esperando que tenga piedad, (Si♭,7,51)(La,7,255)", sC: "mt"},
-            { line: "esperando que tenga piedad. (Si♭,7,51)(La,7,255)"},
+            { line: "esperando que tenga piedad, (Si♭,7,59)(La,7,255)", sC: "mt"},
+            { line: "esperando que tenga piedad. (Si♭,7,59)(La,7,255)"},
 
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Re,m,53)(La,7,282)", sC:"mujeres as mt"},
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Si♭,,49)(La,7,282)", sC:"hombres as"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Re,m,86)(La,7,315)", sC:"mujeres as mt"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Si♭,,86)(La,7,315)", sC:"hombres as"},
 
-            { line: "¡QUE DEMASIADO SE HAN BURLADO DE NOSOTROS (Re,m,127)(La,7,432)", sC:"mujeres as mt"},
-            { line: "QUE NUESTRA ALMA ESTÁ SACIADA DE DESPRECIOS! (Si♭,,150)(La,7,454)", sC:"hombres as"},
+            { line: "¡QUE DEMASIADO SE HAN BURLADO DE NOSOTROS (Re,m,130)(La,7,435)", sC:"mujeres as mt"},
+            { line: "QUE NUESTRA ALMA ESTÁ SACIADA DE DESPRECIOS! (Si♭,7,150)(La,7,456)", sC:"hombres as"},
 
-            { line: "¡DE LAS BURLAS DE LOS SATISFECHOS,(Re,m,98)(La,7,311)", sC:"mujeres as mt"},
-            { line: "DEL DESPRECIO DE LOS SOBERBIOS!(Si♭,7,117)(La,7,280)", sC:"hombres as"},
+            { line: "¡DE LAS BURLAS DE LOS SATISFECHOS,(Re,m,100)(La,7,313)", sC:"mujeres as mt"},
+            { line: "DEL DESPRECIO DE LOS SOBERBIOS!(Si♭,7,119)(La,7,282)", sC:"hombres as"},
 
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,53)(La,7,284)", sC:"mujeres as mt"},
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Si♭,7,53)(La,7,284)", sC:"hombres as"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,57)(La,7,286)", sC:"mujeres as mt"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Si♭,7,57)(La,7,286)", sC:"hombres as"},
 
             {   type: "collapsible-block",
                 id: "asamblea_anadie_1",

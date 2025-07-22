@@ -12,15 +12,15 @@
 
 @media (min-width: 384px) {
     .r1::before, .r2::before {
-        height: 93px;
-        margin-left: 79%;
+        height: 59px;
+        margin-left: 68%;
         margin-top: -10%;
     }
 }
 @media (min-width: 768px) {
     .r1::before, .r2::before {
-        height: 153px;
-        margin-left: 80%;
+        height: 105px;
+        margin-left: 57%;
         margin-top: -9%;
     }
 }
@@ -28,7 +28,7 @@
 @media (min-width: 992px) {
     .r1::before, .r2::before {
         height: 90px;
-        margin-left: 41%;
+        margin-left: 45%;
         margin-top: -8%;
     }
 }
@@ -41,17 +41,19 @@
     margin: 0 auto;
 
         @media (min-width: 384px) {
-
         }
         @media (min-width: 768px) {}
         @media (min-width: 992px) {
             width: 992px;
+            margin-left: -53px;
         }
-
 } 
 
 .mujeres::before, .hombres::before {
-    @media (min-width: 384px) {}
+    @media (min-width: 384px) {
+        margin-top: 0%;
+        left: -17px;
+    }
     @media (min-width: 768px) {}
     @media (min-width: 992px) {
         font-size: 1.23rem;
@@ -115,16 +117,19 @@
 
 .hombres::before, .mujeres::before {
         @media (min-width: 384px) {
-            font-size: 1.5rem;
-            left: -97px;
-            top: 20px;
+            font-size: 1rem;
+            left:-17px;
+            top: 15px;
         }
         @media (min-width: 768px) {
             font-size: 1.5rem;
-            left: 0px;
+            left: -36px;
             top: 20px;
         }
-        @media (min-width: 992px) {}
+        @media (min-width: 992px) {
+            left: -36px;
+            
+        }
     }
 
 
@@ -136,7 +141,9 @@
                 padding-right: 0%;
                 box-sizing: border-box;
         }
-        @media (min-width: 992px) {}
+        @media (min-width: 992px) {
+            padding-left: 0%;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -152,6 +159,28 @@
 .hombres, .mujeres
  {
     position: relative;
-    padding-left: 2em;
+    padding-left: 1px;
     min-height: 1.5em;
+}
+
+@media (min-width: 384px) and (max-width: 583px) {
+    .letra {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0px 3px 50px 0px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .saudio {
+        position: absolute;
+        margin-left: -20px;
+        width: 982px;
+        height: 35px;
+    }
 }
