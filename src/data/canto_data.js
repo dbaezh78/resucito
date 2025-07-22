@@ -71,7 +71,7 @@ const allCantosData = [
         },
         // Propiedades para navegación entre cantos
         ant: "/resucito/src/index.html?canto=alavictimapascual",
-        sig: "/resucito/src/index.html?canto=atilevantomisojos",
+        sig: "/resucito/src/html/atlmos.html?canto=atilevantomisojos",
         nCan: "Notas",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
@@ -164,7 +164,7 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 },
             tablet: { velocidad: 7, incremento: 1 },
-            desktop: { velocidad: 7, incremento: 1 }
+            desktop: { velocidad: 7, incremento: 1 },
         },
         // Propiedades para navegación entre cantos
         ant: "/resucito/src/index.html?canto=anadiedemosocasiondetropiezo",
@@ -175,39 +175,38 @@ const allCantosData = [
         audioSrc: "/audio/atilevantomisojos.mp3",
 
         lizq: [
-            { line: "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,210)", sC: "tc as b3" },
-            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,16)(La,7,210)", sC: "as" },
+            { line: "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,189)", sC: "as tc" },
+            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "r1 as" },
 
-            { line: "Como los ojos de los siervos,  (Re,m,15(La,7,150)", sC: "as" },
-            { line: "miran a las manos de sus señores,  (Re,m,15(La,7,150)"},
-            { line: "como los ojos de la esclava,(Sol m La 7)"},
-            { line: "a las manos de su señora,(Sol m La 7)"},
-            { line: "así nuestros ojos miran al Señor,(Si� 7 La 7)"},
-            { line: "esperando que tenga piedad, (Si� 7 La 7 Si� 7 La 7)"},
-            { line: "esperando que tenga piedad. (Si� 7 La 7 Si� 7 La 7)"},
+            { line: "Como los ojos de los siervos,  (Re,m,15)", sC: "tc mt" },
+            { line: "miran a las manos de sus señores,  (La,7,287)"},
 
-            { line: "Mujeres: "},
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Re m La 7)", sC:"as b3hym b3hm1"},
-            { line: "Hombres: ", sC: "b3hym"},
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!(Si� 7 La 7)", sC:"b3hym"},
-            { line: "Mujeres: ¡QUE DEMASIADO SE HAN BURLADO DE NOSOTROS,(Re m La 7)"},
-            { line: "Hombres. QUE NUESTRA ALMA ESTÁ SACIADA DE DESPRECIOS!(Si� 7 La 7)"},
-            { line: "Mujeres: ¡DE LAS BURLAS DE LOS SATISFECHOS,(Re m La 7)"},
-            { line: "Hombres: DEL DESPRECIO DE LOS SOBERBIOS!(Si� 7 La 7)"},
-            { line: "Mujeres: ¡PIEDAD DE NOSOTROS, SEÑOR!(Re m La 7)"},
-            { line: "Hombres: ¡PIEDAD DE NOSOTROS, SEÑOR!(Si� 7 La 7)"},
-            { line: "A TI LEVANTO MIS OJOS ...(Re m La 7)"},
+            { line: "como los ojos de la esclava,(Sol,m,105)", sC: "mt"},
+            { line: "a las manos de su señora,(La,7,216)"},
 
+            { line: "así nuestros ojos miran al Señor,(Si♭,,18)(La,7,290)", sC: "mt"},
+
+            { line: "esperando que tenga piedad, (Si♭,7,51)(La,7,255)", sC: "mt"},
+            { line: "esperando que tenga piedad. (Si♭,7,51)(La,7,255)"},
+
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Re,m,53)(La,7,282)", sC:"mujeres as mt"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Si♭,,49)(La,7,282)", sC:"hombres as"},
+
+            { line: "¡QUE DEMASIADO SE HAN BURLADO DE NOSOTROS (Re,m,127)(La,7,432)", sC:"mujeres as mt"},
+            { line: "QUE NUESTRA ALMA ESTÁ SACIADA DE DESPRECIOS! (Si♭,,150)(La,7,454)", sC:"hombres as"},
+
+            { line: "¡DE LAS BURLAS DE LOS SATISFECHOS,(Re,m,98)(La,7,311)", sC:"mujeres as mt"},
+            { line: "DEL DESPRECIO DE LOS SOBERBIOS!(Si♭,7,117)(La,7,280)", sC:"hombres as"},
+
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,53)(La,7,284)", sC:"mujeres as mt"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Si♭,7,53)(La,7,284)", sC:"hombres as"},
 
             {   type: "collapsible-block",
                 id: "asamblea_anadie_1",
                 initialState: "collapsed",
-                triggerLine: "A TI LEVANTO MIS OJOS (La,m,18)", sC: "mt as ta",
+                triggerLine: "A TI LEVANTO MIS OJOS (Re,m,16)(La,7,189)", sC: "mt as ta",
                 lines: [
-                    { line: "OCASIÓN DE TROPIEZO, (Re,m,186)", sC: "as" },
-                    { line: "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)", sC: "as" },
-                    { line: "LAS TRIBULACIONES,  (La,m,148)", sC: "as" },
-                    { line: "NECESIDADES, ANGUSTIAS Y FATIGAS. (Re,m,18)(Mi,,322)", sC: "as" },
+                    { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "as" },
                 ]},
         ],
         lder: [

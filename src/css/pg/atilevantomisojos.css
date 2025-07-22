@@ -1,0 +1,157 @@
+/* Este archivo contendrá estilos específicos para el canto actual (ej. A la Víctima Pascual) */
+/* Puedes añadir sobrescrituras o estilos únicos aquí */
+
+/* Ejemplo: Si quieres un color de fondo diferente solo para este canto */
+/* body { background-color: #f0f8ff; } */
+
+
+/* Puedes mantener las media queries para .r1::before, .r2::before aquí si son específicas de este canto */
+.r1::before, .r2::before {
+    /* Las propiedades comunes que no dependen de media queries van aquí */
+}
+
+@media (min-width: 384px) {
+    .r1::before, .r2::before {
+        height: 93px;
+        margin-left: 79%;
+        margin-top: -10%;
+    }
+}
+@media (min-width: 768px) {
+    .r1::before, .r2::before {
+        height: 153px;
+        margin-left: 80%;
+        margin-top: -9%;
+    }
+}
+
+@media (min-width: 992px) {
+    .r1::before, .r2::before {
+        height: 90px;
+        margin-left: 41%;
+        margin-top: -8%;
+    }
+}
+
+/* ESTRUCTURA DE BIS*/
+
+.canto-content-wrapper.single-column-mode {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+        @media (min-width: 384px) {
+
+        }
+        @media (min-width: 768px) {}
+        @media (min-width: 992px) {
+            width: 992px;
+        }
+
+} 
+
+.mujeres::before, .hombres::before {
+    @media (min-width: 384px) {}
+    @media (min-width: 768px) {}
+    @media (min-width: 992px) {
+        font-size: 1.23rem;
+        margin-top: 0%;
+        left: -108px;
+    }
+}
+
+/* *************************** */
+
+/* --- Nuevos estilos para etiquetas de sección --- */
+.ta, .tc {
+    position: relative;
+    padding-left: 0em;
+    min-height: 1.5em;
+}
+
+/* Estilos COMPARTIDOS por todos los ::before */
+.ta::before, .tc::before {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    font-family: Arial, sans-serif;
+    line-height: 1.3;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Media queries para los ::before */
+@media (min-width: 384px) {
+    .ta::before, .tc::before {
+        font-size: 0.9rem;
+        left: -17px;
+        top: 14px;
+    }
+}
+@media (min-width: 768px) {
+    .ta::before, .tc::before {
+        font-size: 1.6rem;
+        left: -40px;
+        top: 20px;
+    }
+}
+@media (min-width: 992px) {
+    .ta::before, .tc::before {
+        font-size: 1.23rem;
+        margin-top: 0%;
+        left: -34px;
+    }
+}
+
+/* Color GRIS para la mayoría */
+.ta::before, .tc::before {
+    color: #80808065; /* Gris semitransparente */
+}
+
+/* Contenido específico para cada ::before */
+.ta::before {content: "A.";}
+.tc::before {content: "C.";}
+
+
+.hombres::before, .mujeres::before {
+        @media (min-width: 384px) {
+            font-size: 1.5rem;
+            left: -97px;
+            top: 20px;
+        }
+        @media (min-width: 768px) {
+            font-size: 1.5rem;
+            left: 0px;
+            top: 20px;
+        }
+        @media (min-width: 992px) {}
+    }
+
+
+    .canto-content-wrapper.single-column-mode #canto-left-container {
+        @media (min-width: 384px) {}
+        @media (min-width: 768px) {
+                width: 768px;
+                padding-left: 5%;
+                padding-right: 0%;
+                box-sizing: border-box;
+        }
+        @media (min-width: 992px) {}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .letra {
+        font-size: 1.7em;
+    }
+}
+
+.hombres::before {content: "H:";}
+.mujeres::before {content: "M:";}
+
+
+.hombres, .mujeres
+ {
+    position: relative;
+    padding-left: 2em;
+    min-height: 1.5em;
+}
