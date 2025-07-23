@@ -617,11 +617,11 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
 
     // Referencias para el nuevo botón de asamblea
     showAllAsambleaBtn = document.getElementById('showAllAsambleaBtn');
-    showAllAsambleaIcon = showAllAsambleaBtn ? showAllAsambleaBtn.querySelector('.material-symbols-outlined') : null;
+    showAllAsambleaIcon = showAllAsambleaBtn ? showAllAsambleaBtn.querySelector('.mso1') : null;
 
     // Referencias para el botón de alternar vista
     toggleVistaBtn = document.getElementById('toggleVista');
-    toggleVistaIcon = toggleVistaBtn ? toggleVistaBtn.querySelector('.material-symbols-outlined') : null;
+    toggleVistaIcon = toggleVistaBtn ? toggleVistaBtn.querySelector('.mso1') : null;
 
     // Referencias para la modal de imágenes de acordes
     callNotasBtn = document.getElementById('CallNotas');
