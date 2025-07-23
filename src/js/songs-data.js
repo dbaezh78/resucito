@@ -234,7 +234,7 @@ const songs = [
         {id:231,title: "Yo te amo, Señor", subtitle: "Sal 18 (17)", category: "Precatecumenado", moments: ["Adviento", "Niños", "Nuevo Testamento"], url: "/resucito/src/index.html?canto=yoteamosenor.html"},
         {id:232,title: "Yo vengo a reunir", subtitle: "Isaías 66,18-21", category: "Precatecumenado", moments: ["Nuevo Testamento"], url: "/resucito/src/index.html?canto=yovengoareunir.html"},
         {id:233,title: "Zaqueo", subtitle: "Lucas 19,1-10", category: "Precatecumenado", moments: ["Navidad", "Niños"], url: "/resucito/src/index.html?canto=zaqueo.html"},
-        {id:234,title: "Prountuario de Acordes", subtitle: "Notas", category: "Precatecumenado", moments: ["Cuaresma", "Laudes", "Antiguo Testamento"], url: "/resucito/src/img/prontuario.png"},
-        {id:235,title: "Libro de Canto en PDF", subtitle: "Libro de Canto del Camino Neo Catecumenal", category: "Precatecumenado", moments: [""], url: "/resucito/src/doc/resucito.pdf", targetBlank: true }
+        {id:234,title: "Prountuario de Acordes", subtitle: "Notas", category: "Precatecumenado", moments: ["Cuaresma", "Laudes", "Antiguo Testamento"], url: "/docs/ima/prontuario.png"},
+        {id:235,title: "Libro de Canto en PDF", subtitle: "Libro de Canto del Camino Neo Catecumenal", category: "Precatecumenado", moments: [""], url: "/docs/resucito.pdf", targetBlank: true }
   
     ];
