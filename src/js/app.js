@@ -121,7 +121,8 @@ toggleView.addEventListener('change', function() {
         if (searchTerm) {
             filteredSongs = filteredSongs.filter(song => 
                 removeAccents(song.title.toLowerCase()).includes(searchTerm) || 
-                removeAccents(song.subtitle.toLowerCase()).includes(searchTerm)
+                removeAccents(song.subtitle.toLowerCase()).includes(searchTerm) ||
+                (song.content && removeAccents(song.content.toLowerCase()).includes(searchTerm)) // Nuevo: buscar en el contenido
             );
         }
         
