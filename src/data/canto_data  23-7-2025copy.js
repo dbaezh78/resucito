@@ -137,10 +137,11 @@ const allCantosData = [
             { line: "¿Qué unión entre el santuario de Dios (Fa,,343)" },
             { line: "y el santuario de los ídolos? (Mi,,201)"  },
 
-            {type: "collapsible-block",
-               id: "asamblea_anadie_2",
-               initialState: "collapsed",
-               triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "as mt ta", lines: [
+            {   type: "collapsible-block",
+                id: "asamblea_anadie_2",
+                initialState: "collapsed",
+                triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "as mt ta", // Texto del disparador sin "..."
+                lines: [
                     { line: "OCASIÓN DE TROPIEZO, (Re,m,186)", sC: "as" },
                     { line: "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)", sC: "as" },
                     { line: "LAS TRIBULACIONES,  (La,m,148)", sC: "as" },
@@ -211,78 +212,17 @@ const allCantosData = [
         lder: [
 
         ]
-    },
-    
-/*
-╔════════════════════════════════════════════════════════════════╗
-║                A TI, SEÑOR, EN MI CLAMOR IMPLORO               ║
-╚════════════════════════════════════════════════════════════════╝  */
-   {
-        id: "atisenorenmiclamorimploro",
-        tt: "A Ti, Señor, En Mi Clamor Imploro",
-        title: "A Ti, Señor, En Mi Clamor Imploro",
-        subtitle: "Salmo 142 (141)",
-        category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
-        nCan: "",
-        dbno: "4",
-        notes: "",
-        audioSrc: "/audio/atisenorenmiclamorimploro.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/html/atlmos.html?canto=atilevantomisojos",
-        sig: "/resucito/src/index.html?canto=atisenorlevantomialma",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,250)", sC: "as"},
-            { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (La,m,250)", sC: "as"},
-            { line: "A TI DERRAMO MI LAMENTO,, (La,7,15)", sC: "as"},
-            { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,,15)(Mi,,250)", sC: "as"},
-            { line: "Siento que el espíritu en mí se apaga, , (Re,m,15)", sC: "mt"},
-            { line: "más tú conoces mi sendero. , (Mi,7,250)", sC: ""},
-            { line: "Mira, Señor, que en el camino,, (La,m,15)(Re,m,250)", sC: "mt"},
-            { line: "mira, Señor, que me han tendido un lazo. , (La,m,250)", sC: ""},
-            { line: "Mira, Señor, que a la derecha no hay ninguno,, (Mi,,15)(Mi,7,250)", sC: ""},
-            { line: "ninguno que me conozca. , (La,m,15)", sC: ""},
-            { line: "Que huye de mí todo consuelo,, (Re,m,15)", sC: ""},
-            { line: "que no hay nadie que se cuide de mi alma., (Fa,m,15)(Mi,7,250)", sC: ""},
-            { line: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "as mt"},
-            { line: "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,, (Mi,7,250)", sC: "as"},
-            { line: "TÚ ERES MI PORCIÓN EN ESTA TIERRA,, (Fa,,15)", sC: "as"},
-            { line: "MI ÚNICA FELICIDAD., (Mi,,250)", sC: "as"},
-    ], lder: [
-            { line: "Escúchame, Señor, que estoy llorando,, (Re,m,15)(Mi,,250)", sC: ""},
-            { line: "estoy tan deprimido., (Fa,,15)(Mi,,250)", sC: ""},
-            { line: "¡Líbrame tú de estos enemigos, (Fa,,15)", sC: ""},
-            { line: "que son más fuertes que yo!, (Sol,,15)(Mi,,250)", sC: ""},
-            { line: "¡Saca mi alma de esta cárcel, (La,m,15)", sC: ""},
-            { line: "y yo daré gracias a tu Nombre!, (Sol,,15)(Mi,,250)", sC: ""},
-            { line: "En torno a mí los santos harán corro,, (Re,m,15)", sC: ""},
-            { line: "me felicitarán por tu favor hacia mí. , (Fa,,15)(Mi,,250)", sC: ""},
-  
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
-           triggerLine: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,250)", sC: "mt as ta", lines: [
-            { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (La,m,250)", sC: "as"},
-            { line: "A TI DERRAMO MI LAMENTO,, (Mi,7,15)", sC: "as"},
-            { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,m,15)(Mi,,250)", sC: "as"},  ]},
- 
-            { type: "collapsible-block",
-                id: "asamblea_anadie_2",
-          initialState: "collapsed",
-           triggerLine: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "mt as ta", lines: [
-            { line: "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,, (Mi,7,250)", sC: "as"},
-            { line: "TÚ ERES MI PORCIÓN EN ESTA TIERRA,, (Fa,,15)", sC: "as"},
-            { line: "MI ÚNICA FELICIDAD., (Mi,,250)", sC: "as"},  ]},
-]} // ULTIMA LINEA DEL CANTO: A Ti, Señor, En Mi Clamor Imploro
-// SIGUIENTE CANTO DEBAJO
+    }
 
-
-
-
-
-
+    // Aquí irían más cantos:
+    // {
+    //     id: "abraham",
+    //     title: "Abraham",
+    //     subtitle: "Canto de Cuaresma",
+    //     category: ["Cuaresma", "Meditación"], // Ejemplo de múltiples categorías
+    //     notes: "Un canto para el tiempo de Cuaresma.",
+    //     lizq: [ /* datos de Abraham */ ],
+    //     lder: [ /* datos de Abraham */ ]
+    // },
+    // ... y así sucesivamente
 ];
