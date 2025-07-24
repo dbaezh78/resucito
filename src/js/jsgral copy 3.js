@@ -47,7 +47,6 @@ let chordSelectionModal;
 let chordListContainer;
 let cantoCategoriesContainer; // Nueva referencia para el contenedor de categorías
 let cantoContentWrapper; // Nueva referencia para el contenedor principal de las columnas
-let cejillaSelect; // ADDED: Nueva referencia para el select de cejilla
 
 // Referencias para el control de audio
 let cantoAudioPlayer;
@@ -610,7 +609,6 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     chordListContainer = document.getElementById('chordList');
     cantoCategoriesContainer = document.getElementById('cantoCategories');
     cantoContentWrapper = document.querySelector('.canto-content-wrapper'); // Obtener el wrapper
-    cejillaSelect = document.getElementById('cejillaSelect'); // ADDED: Obtener el select de cejilla
 
     // Referencias para el control de audio
     cantoAudioPlayer = document.getElementById('cantoAudioPlayer');
@@ -666,7 +664,6 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     if (!scrollIcon) console.error("Error: .scroll-icon no encontrado dentro de #startScroll.");
     if (!prevCantoBtn) console.error("Error: #prevCantoBtn no encontrado.");
     if (!nextCantoBtn) console.error("Error: #nextCantoBtn no encontrado.");
-    if (!cejillaSelect) console.error("Error: #cejillaSelect no encontrado."); // ADDED: Error check for cejillaSelect
 
 
     // Actualizar los títulos y subtítulos del canto
@@ -918,21 +915,6 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
         if (cantoRightContainer) {
             cantoRightContainer.style.display = ''; // Revertir a la visualización predeterminada
         }
-    }
-
-
-    // ADDED: Lógica para la cejilla (corregida)
-    if (cejillaSelect) {
-        // Establecer el valor predeterminado si existe en los datos del canto
-        if (cantoSpecificData.cejilla !== undefined && cantoSpecificData.cejilla !== null && cantoSpecificData.cejilla !== "") {
-            cejillaSelect.value = cantoSpecificData.cejilla;
-        } else {
-            // Si no hay cejilla definida en el canto, o es vacía, establecer en "0"
-            cejillaSelect.value = "0";
-        }
-        // No se añade un event listener para cambiar el tono,
-        // ya que la cejilla es solo una referencia visual y no debe afectar la transposición.
-        // La transposición se maneja exclusivamente a través de la selección de acordes.
     }
 
 

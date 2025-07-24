@@ -8,7 +8,8 @@ const allCantosData = [
         title: "A la Víctima Pascual",
         subtitle: "Secuencia de Pascua - Himno lat. «Victimae paschall laudes»",
         category: ["Pascua", "Pentecostes", "Cuaresma", "Adviento", "Liturgia"], // Sigue siendo un array de nombres de categorías
-        nCan: "Notas del canto, ej: * Se repite todo el canto en un tono más alto",
+        cejilla: "5",
+        nCan: "", //Nota del canto = nCan
         dbno: "1",
         notes: "Este canto se usa en la liturgia de Pascua.",
         audioSrc: "/audio/alavictimapascual.mp3", // <-- Nueva propiedad para el audio
@@ -22,7 +23,7 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=anadiedemosocasiondetropiezo", // URL del siguiente canto
         // Datos específicos del canto, ahora referenciados aquí
          lizq: [
-            { line: "A la víctima pascual, (La,m,18)(La,7,200)"},
+            { line: "A la víctima pascual, (La,m,18)(La,7,200)", sC: "tc" },
             { line: "ofrecemos hoy"},
             { line: "el sacrificio de alabanza. (Re,m9,186)"},
             { line: "El cordero ha redimido el rebaño, (Fa,maj7,27)(Mi,,280)"},
@@ -41,7 +42,7 @@ const allCantosData = [
             { line: "los ángeles, las vendas y el sudario». (Fa,,10)(Mi,,303)"},
 
         ], lder: [
-            { line: "PORQUE CRISTO, MI ESPERANZA, (Fa,,115)", sC: "as"},
+            { line: "PORQUE CRISTO, MI ESPERANZA, (Fa,,115)", sC: "ta as"},
             { line: "¡HA RESUCITADO! (Mi,,130)", sC: "as"},
             { line: "Y NOS PRECEDE EN GALILEA, (Fa,,8)(Mi,,257)", sC: "as"},
             { line: "Y NOS PRECEDE EN GALILEA. (Fa,,8)(Mi,,257)", sC: "as"},
@@ -52,9 +53,9 @@ const allCantosData = [
             { line: "CRISTO HA RESUCITADO. (Fa,,10)(Mi,,122)", sC: "as"},
             { line: "Y NOS PRECEDE EN GALILEA, (Fa,,10)(Mi,,254)", sC: "as"},
             { line: "Y NOS PRECEDE EN GALILEA. (Fa,,10)(Mi,,254)", sC: "as"},
-            { line: "Tú, Rey victorioso, danos tú la salvación. (Fa,,10)(Mi,,356)", sC: "mt"},
-        ]},
-
+            { line: "Tú, Rey victorioso, danos tú la salvación. (Fa,,10)(Mi,,356)", sC: "mt tc"},
+        ]}
+    ,
     //  A NADIE DEMOS OCASIÓN DE TROPIEZO
     {
         id: "anadiedemosocasiondetropiezo", // Un ID único para el canto
@@ -62,7 +63,7 @@ const allCantosData = [
         title: "A NADIE DEMOS OCASIÓN DE TROPIEZO",
         subtitle: "2ª Corintios 6,3ss",
         category: ["PreCatecumenado", "Pascua", "Pentecostés", "Comunión"],
-
+        cejilla: "",
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 },
@@ -137,10 +138,10 @@ const allCantosData = [
             { line: "¿Qué unión entre el santuario de Dios (Fa,,343)" },
             { line: "y el santuario de los ídolos? (Mi,,201)"  },
 
-            {type: "collapsible-block",
-               id: "asamblea_anadie_2",
-               initialState: "collapsed",
-               triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "as mt ta", lines: [
+            {   type: "collapsible-block",
+                id: "asamblea_anadie_2",
+                initialState: "collapsed",
+                triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "as mt ta", lines: [
                     { line: "OCASIÓN DE TROPIEZO, (Re,m,186)", sC: "as" },
                     { line: "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)", sC: "as" },
                     { line: "LAS TRIBULACIONES,  (La,m,148)", sC: "as" },
@@ -149,7 +150,8 @@ const allCantosData = [
 
             { line: "En pureza, paciencia y bondad, (Re,m,15) (Mi,,271)", sC: "mt tc" },
             { line: "en el Espíritu Santo, y en el poder de Dios. (Fa,,141) (Mi,,375)" },
-        ]},
+        ]}
+    ,
 
         //  A TI LEVANTO MIS OJOS
     {
@@ -158,7 +160,7 @@ const allCantosData = [
         title: "A TI LEVANTO MIS OJOS",
         subtitle: "Salmo 123 (122)",
         category: ["PreCatecumenado", "Cuaresma", "Penitencial"],
-
+        cejilla: "",
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 },
@@ -211,8 +213,8 @@ const allCantosData = [
         lder: [
 
         ]
-    },
-    
+    }
+    ,
 /*
 ╔════════════════════════════════════════════════════════════════╗
 ║                A TI, SEÑOR, EN MI CLAMOR IMPLORO               ║
@@ -223,6 +225,7 @@ const allCantosData = [
         title: "A Ti, Señor, En Mi Clamor Imploro",
         subtitle: "Salmo 142 (141)",
         category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
+        cejilla: "2",
         nCan: "",
         dbno: "4",
         notes: "",
@@ -236,10 +239,11 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=atisenorlevantomialma",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,250)", sC: "as"},
-            { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (La,m,250)", sC: "as"},
-            { line: "A TI DERRAMO MI LAMENTO,, (La,7,15)", sC: "as"},
-            { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,,15)(Mi,,250)", sC: "as"},
+            { line: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,327)", sC: "as"},
+            { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (La,m,327)", sC: "as"},
+            { line: "A TI DERRAMO MI LAMENTO,, (La,7,29)", sC: "as"},
+            { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,,29)(Mi,,222)", sC: "as"},
+            
             { line: "Siento que el espíritu en mí se apaga, , (Re,m,15)", sC: "mt"},
             { line: "más tú conoces mi sendero. , (Mi,7,250)", sC: ""},
             { line: "Mira, Señor, que en el camino,, (La,m,15)(Re,m,250)", sC: "mt"},
@@ -248,6 +252,7 @@ const allCantosData = [
             { line: "ninguno que me conozca. , (La,m,15)", sC: ""},
             { line: "Que huye de mí todo consuelo,, (Re,m,15)", sC: ""},
             { line: "que no hay nadie que se cuide de mi alma., (Fa,m,15)(Mi,7,250)", sC: ""},
+
             { line: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "as mt"},
             { line: "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,, (Mi,7,250)", sC: "as"},
             { line: "TÚ ERES MI PORCIÓN EN ESTA TIERRA,, (Fa,,15)", sC: "as"},
@@ -265,20 +270,153 @@ const allCantosData = [
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
           initialState: "collapsed",
-           triggerLine: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,250)", sC: "mt as ta", lines: [
-            { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (La,m,250)", sC: "as"},
-            { line: "A TI DERRAMO MI LAMENTO,, (Mi,7,15)", sC: "as"},
-            { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,m,15)(Mi,,250)", sC: "as"},  ]},
+           triggerLine: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,327)", sC: "mt as ta", lines: [
+            { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (La,m,327)", sC: "as"},
+            { line: "A TI DERRAMO MI LAMENTO,, (Mi,7,29)", sC: "as"},
+            { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,m,29)(Mi,,222)", sC: "as"},  ]},
  
             { type: "collapsible-block",
                 id: "asamblea_anadie_2",
           initialState: "collapsed",
-           triggerLine: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "mt as ta", lines: [
+       triggerLine: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "mt as ta", lines: [
             { line: "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,, (Mi,7,250)", sC: "as"},
             { line: "TÚ ERES MI PORCIÓN EN ESTA TIERRA,, (Fa,,15)", sC: "as"},
             { line: "MI ÚNICA FELICIDAD., (Mi,,250)", sC: "as"},  ]},
-]} // ULTIMA LINEA DEL CANTO: A Ti, Señor, En Mi Clamor Imploro
+]}, // ULTIMA LINEA DEL CANTO: A Ti, Señor, En Mi Clamor Imploro
+// SIGUIENTE CANTO DEBAJO 
+
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                A TI, SEÑOR, LEVANTO MI ALMA                    ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "atisenorlevantomialma",
+        tt: "A Ti, Señor, Levanto Mi Alma",
+        title: "A Ti, Señor, Levanto Mi Alma",
+        subtitle: "Salmo 25 (24)",
+        category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
+        cejilla: "3",
+        nCan: "",
+        dbno: "5",
+        notes: "",
+        audioSrc: "/audio/atisenorlevantomialma.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=atisenorenmiclamorimploro",
+        sig: "/resucito/src/index.html?canto=atisenorsedebelaalabanzaension",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "A TI, SEÑOR, LEVANTO MI ALMA,, (La,m,15)(Mi,,250)", sC: "as"},
+            { line: "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)", sC: "as"},
+
+            { line: "En ti confío, Señor,, (La,m,16)(Mi,,154)", sC: "mt"},
+            { line: "no triunfen sobre mí mis enemigos., (Re,m,215)(Fa,,250)(Mi,,293)", sC: ""},
+            { line: "Muéstrame, Señor, tu camino,, (La,m,15)(Mi,,255)", sC: ""},
+            { line: "enséñame, Señor, tu sendero., (Re,m,186)(Fa,,222)(Mi,,254)", sC: ""},
+
+            { type: "collapsible-block",
+                id: "asamblea_anadie_1",
+          initialState: "collapsed",
+           triggerLine: "A TI, SEÑOR, LEVANTO MI ALMA, (La,m,15)(Mi,,250)", sC: "mt as ta", lines: [
+                { line: "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)", sC: "as"},  ]},            
+
+            { line: "Acuérdate, Señor, de tu ternura,, (La,m,15)(Mi,,270)", sC: "mt"},
+            { line: "de tu inmensa compasión, que son de siempre., (Re,m,275)(Fa,,315)(Mi,,393)", sC: ""},
+            { line: "De mis pecados, Señor, no te acuerdes,, (La,m,15)(Mi,,322)", sC: ""},
+            { line: "acuérdate, Señor, que eres misericordia., (Re,m,192)(Fa,,239)(Mi,,339)", sC: ""},
+            { line: "Rocíame, Señor, de tu misericordia., (Fa,,37)(Mi,,291)", sC: "mt"},
+            { line: "Sumérgeme, Señor, en tu misericordia., (Fa,,51)(Mi,,323)", sC: ""},
+
+            { type: "collapsible-block",
+                id: "asamblea_anadie_2",
+          initialState: "collapsed",
+           triggerLine: "A TI, SEÑOR, LEVANTO MI ALMA, (La,m,15)(Mi,,250)", sC: "mt as ta", lines: [
+                { line: "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)", sC: "as"},  ]},
+
+    ], lder: [
+
+]}, // ULTIMA LINEA DEL CANTO: A TI, SEÑOR, LEVANTO MI ALMA
 // SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

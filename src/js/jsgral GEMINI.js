@@ -47,7 +47,7 @@ let chordSelectionModal;
 let chordListContainer;
 let cantoCategoriesContainer; // Nueva referencia para el contenedor de categorías
 let cantoContentWrapper; // Nueva referencia para el contenedor principal de las columnas
-let cejillaSelect; // ADDED: Nueva referencia para el select de cejilla
+let cejillaSelect; // Nueva referencia para el select de cejilla
 
 // Referencias para el control de audio
 let cantoAudioPlayer;
@@ -142,7 +142,7 @@ const chordImageFilenames = [
     "sim.jpg",
 
 ];
-const IMAGE_BASE_PATH = "/docs/ima/";
+const IMAGE_BASE_PATH = "/resucito/src/ima/";
 
 // Variables para el scroll automático
 let scrollSpeed = 200; // Velocidad de desplazamiento en píxeles por segundo (valor por defecto)
@@ -151,10 +151,6 @@ let isScrolling = false;
 let scrollInterval;
 let startScrollBtn; // Referencia al botón de scroll
 let scrollIcon; // Referencia al icono del botón de scroll
-
-// Referencias para los botones de navegación anterior/siguiente
-let prevCantoBtn;
-let nextCantoBtn;
 
 
 // Función para obtener el nombre legible del acorde a partir del nombre del archivo
@@ -610,7 +606,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     chordListContainer = document.getElementById('chordList');
     cantoCategoriesContainer = document.getElementById('cantoCategories');
     cantoContentWrapper = document.querySelector('.canto-content-wrapper'); // Obtener el wrapper
-    cejillaSelect = document.getElementById('cejillaSelect'); // ADDED: Obtener el select de cejilla
+    cejillaSelect = document.getElementById('cejillaSelect'); // Obtener el select de cejilla
 
     // Referencias para el control de audio
     cantoAudioPlayer = document.getElementById('cantoAudioPlayer');
@@ -619,11 +615,11 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
 
     // Referencias para el nuevo botón de asamblea
     showAllAsambleaBtn = document.getElementById('showAllAsambleaBtn');
-    showAllAsambleaIcon = showAllAsambleaBtn ? showAllAsambleaBtn.querySelector('.mso1') : null;
+    showAllAsambleaIcon = showAllAsambleaBtn ? showAllAsambleaBtn.querySelector('.material-symbols-outlined') : null;
 
     // Referencias para el botón de alternar vista
     toggleVistaBtn = document.getElementById('toggleVista');
-    toggleVistaIcon = toggleVistaBtn ? toggleVistaBtn.querySelector('.mso1') : null;
+    toggleVistaIcon = toggleVistaBtn ? toggleVistaBtn.querySelector('.material-symbols-outlined') : null;
 
     // Referencias para la modal de imágenes de acordes
     callNotasBtn = document.getElementById('CallNotas');
@@ -637,10 +633,6 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     // Referencias para el scroll automático
     startScrollBtn = document.getElementById('startScroll');
     scrollIcon = startScrollBtn ? startScrollBtn.querySelector('.scroll-icon') : null;
-
-    // Referencias para los botones de navegación anterior/siguiente
-    prevCantoBtn = document.getElementById('prevCantoBtn');
-    nextCantoBtn = document.getElementById('nextCantoBtn');
 
 
     // Verificar si los contenedores del canto se encontraron
@@ -664,9 +656,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     if (!largeChordImage) console.error("Error: #largeChordImage no encontrado.");
     if (!startScrollBtn) console.error("Error: #startScroll no encontrado.");
     if (!scrollIcon) console.error("Error: .scroll-icon no encontrado dentro de #startScroll.");
-    if (!prevCantoBtn) console.error("Error: #prevCantoBtn no encontrado.");
-    if (!nextCantoBtn) console.error("Error: #nextCantoBtn no encontrado.");
-    if (!cejillaSelect) console.error("Error: #cejillaSelect no encontrado."); // ADDED: Error check for cejillaSelect
+    if (!cejillaSelect) console.error("Error: #cejillaSelect no encontrado.");
 
 
     // Actualizar los títulos y subtítulos del canto
@@ -889,50 +879,24 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
         clearInterval(scrollInterval);
     };
 
-    // Lógica para los botones de navegación anterior/siguiente
-    if (prevCantoBtn) {
-        if (cantoSpecificData.ant) {
-            prevCantoBtn.href = cantoSpecificData.ant;
-            prevCantoBtn.style.display = ''; // Mostrar el botón
-        } else {
-            prevCantoBtn.style.display = 'none'; // Ocultar si no hay canto anterior
-        }
-    }
-
-    if (nextCantoBtn) {
-        if (cantoSpecificData.sig) {
-            nextCantoBtn.href = cantoSpecificData.sig;
-            nextCantoBtn.style.display = ''; // Mostrar el botón
-        } else {
-            nextCantoBtn.style.display = 'none'; // Ocultar si no hay canto siguiente
-        }
-    }
-
-    // Lógica para el modo de una sola columna
-    if (cantoSpecificData.lder && cantoSpecificData.lder.length === 0) {
-        cantoContentWrapper.classList.add('single-column-mode');
-        // El CSS se encargará de ocultar cantoRightContainer y ajustar cantoLeftContainer
-    } else {
-        cantoContentWrapper.classList.remove('single-column-mode');
-        // Asegurarse de que el contenedor derecho sea visible si estaba oculto por un canto anterior de una sola columna
-        if (cantoRightContainer) {
-            cantoRightContainer.style.display = ''; // Revertir a la visualización predeterminada
-        }
-    }
-
-
-    // ADDED: Lógica para la cejilla (corregida)
+    // Lógica para la cejilla
     if (cejillaSelect) {
         // Establecer el valor predeterminado si existe en los datos del canto
         if (cantoSpecificData.cejilla !== undefined && cantoSpecificData.cejilla !== null && cantoSpecificData.cejilla !== "") {
             cejillaSelect.value = cantoSpecificData.cejilla;
+            // Opcional: Aplicar la cejilla inmediatamente al cargar
+            currentKeyOffset = parseInt(cantoSpecificData.cejilla);
         } else {
-            // Si no hay cejilla definida en el canto, o es vacía, establecer en "0"
-            cejillaSelect.value = "0";
+            // Si no hay cejilla definida en el canto, usar el valor por defecto del HTML (que es "5" en tu caso)
+            // o resetear a 0 si prefieres que no haya cejilla por defecto.
+            cejillaSelect.value = "0"; // O puedes dejarlo vacío si no quieres ninguna seleccionada
+            currentKeyOffset = 0;
         }
-        // No se añade un event listener para cambiar el tono,
-        // ya que la cejilla es solo una referencia visual y no debe afectar la transposición.
-        // La transposición se maneja exclusivamente a través de la selección de acordes.
+
+        cejillaSelect.addEventListener('change', (event) => {
+            currentKeyOffset = parseInt(event.target.value || "0"); // Convertir a número, si es vacío, 0
+            renderCanto(); // Volver a renderizar el canto con la nueva cejilla
+        });
     }
 
 
