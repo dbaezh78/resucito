@@ -7,12 +7,12 @@ const allCantosData = [
         tt: "A la Víctima Pascual",
         title: "A la Víctima Pascual",
         subtitle: "Secuencia de Pascua - Himno lat. «Victimae paschall laudes»",
-        category: ["Precatecumenado", "Pascua", "Pentecostés", "Vírgen María", "Cuaresma", "Adviento", "Liturgia"], // Sigue siendo un array de nombres de categorías
+        category: ["Pascua", "Pentecostes", "Cuaresma", "Adviento", "Liturgia"], // Sigue siendo un array de nombres de categorías
         cejilla: "5",
         nCan: "", //Nota del canto = nCan
         dbno: "1",
         notes: "Este canto se usa en la liturgia de Pascua.",
-        audioSrc: "/audio/alavictimapascual.mp3",
+        audioSrc: "/audio/alavictimapascual.mp3", // <-- Nueva propiedad para el audio
         // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular

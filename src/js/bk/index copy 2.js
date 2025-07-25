@@ -19,40 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Listas de categorías y momentos para determinar el tipo de URL
-    // Estas listas almacenan los nombres normalizados para una comparación consistente.
+    // Estas listas ahora almacenan los nombres normalizados para una comparación consistente.
     const categoriesList = ["precatecumenado", "catecumenado", "eleccion", "liturgia"];
     const momentsList = [
         "entrada", "paz", "fraccion-del-pan", "comunion", "final",
-        "adviento", "navidad", "pascua", "pentecostes",
-        "virgen-maria", // "Vírgen María" normalizado
+        "adviento", "navidad", "pascua", "Pentecostés", "virgen-maria", // "Vírgen María" normalizado
         "aclamacion", "laudes", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
         "cuaresma"
     ];
-
-    // Mapeo de nombres normalizados a sus nombres canónicos (con acentos y capitalización correcta)
-    const canonicalNames = {
-        "precatecumenado": "Precatecumenado",
-        "catecumenado": "Catecumenado",
-        "eleccion": "Elección",
-        "liturgia": "Liturgia",
-        "entrada": "Entrada",
-        "paz": "Paz",
-        "fraccion-del-pan": "Fracción del Pan",
-        "comunion": "Comunión",
-        "final": "Final",
-        "adviento": "Adviento",
-        "navidad": "Navidad",
-        "pascua": "Pascua",
-        "pentecostes": "Pentecostés", // Nombre canónico con acento
-        "virgen-maria": "Vírgen María", // Nombre canónico con acento
-        "aclamacion": "Aclamación",
-        "laudes": "Laudes",
-        "penitencial": "Penitencial",
-        "salmodia": "Salmodia",
-        "nuevo-testamento": "Nuevo Testamento",
-        "antiguo-testamento": "Antiguo Testamento",
-        "cuaresma": "Cuaresma"
-    };
 
 
     // 1. Obtener el parámetro 'canto' de la URL
@@ -73,32 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
             let baseUrl = "/resucito/index.html?";
             let paramType = "";
             
-            // Normalizar el nombre de la categoría/momento para la comparación
-            let normalizedCatNameForComparison = normalizeForUrl(catName);
-            let nameForUrl = catName; // Por defecto, usar el nombre original de canto_data.js
+            // Normalizar el nombre de la categoría/momento antes de la comparación
+            let normalizedCatName = normalizeForUrl(catName);
 
             // Determinar si es una categoría o un momento usando las listas normalizadas
-            if (categoriesList.includes(normalizedCatNameForComparison)) {
+            if (categoriesList.includes(normalizedCatName)) {
                 paramType = "category";
-                // Si existe un nombre canónico, usarlo para la URL
-                if (canonicalNames[normalizedCatNameForComparison]) {
-                    nameForUrl = canonicalNames[normalizedCatNameForComparison];
-                }
-            } else if (momentsList.includes(normalizedCatNameForComparison)) {
+            } else if (momentsList.includes(normalizedCatName)) {
                 paramType = "moment";
-                // Si existe un nombre canónico, usarlo para la URL
-                if (canonicalNames[normalizedCatNameForComparison]) {
-                    nameForUrl = canonicalNames[normalizedCatNameForComparison];
-                }
             } else {
                 // Fallback si no se encuentra en ninguna lista, se asume como categoría
-                console.warn(`Categoría/Momento "${catName}" (normalizado: "${normalizedCatNameForComparison}") no encontrado en las listas predefinidas. Se usará el parámetro "category".`);
+                console.warn(`Categoría/Momento "${catName}" (normalizado: "${normalizedCatName}") no encontrado en las listas predefinidas. Se usará el parámetro "category".`);
                 paramType = "category";
             }
             
-            // Usar el nombre determinado (nameForUrl) para el valor del parámetro en la URL
-            // El navegador se encargará de codificar los caracteres especiales (como acentos)
-            const categoryUrl = `${baseUrl}${paramType}=${nameForUrl}`;
+            const categoryUrl = `${baseUrl}${paramType}=${normalizedCatName}`;
             return { name: catName, url: categoryUrl };
         });
         console.log("Processed categories:", processedCategories);
