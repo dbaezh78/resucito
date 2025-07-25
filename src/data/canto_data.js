@@ -1,4 +1,27 @@
 // Este archivo contendrá la "base de datos" de todos los cantos.
+/*Categorias Aceptadas.
+- Vírgen María
+
+- precatecumenado
+- catecumenado
+- eleccion
+- liturgia
+
+- entrada
+- paz
+- fraccion-del-pan
+- comunion
+- final
+- adviento
+- navidad
+- pascua
+- pentecostes
+- aclamacion
+- laudes
+ ", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
+        "cuaresma"
+
+*/
 // Cada objeto en el array representa un canto.
 
 const allCantosData = [
@@ -7,7 +30,7 @@ const allCantosData = [
         tt: "A la Víctima Pascual",
         title: "A la Víctima Pascual",
         subtitle: "Secuencia de Pascua - Himno lat. «Victimae paschall laudes»",
-        category: ["Precatecumenado", "Pascua", "Pentecostés", "Vírgen María", "Cuaresma", "Adviento", "Liturgia"], // Sigue siendo un array de nombres de categorías
+        category: ["Precatecumenado", "Pascua", "Pentecostés", "Comunión", "Cuaresma", "Adviento", "Vírgen María", "Laudes", "Visperas"], // Sigue siendo un array de nombres de categorías
         cejilla: "5",
         nCan: "", //Nota del canto = nCan
         dbno: "1",

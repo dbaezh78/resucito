@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const momentsList = [
         "entrada", "paz", "fraccion-del-pan", "comunion", "final",
         "adviento", "navidad", "pascua", "pentecostes",
-        "virgen-maria", // "Vírgen María" normalizado
-        "aclamacion", "laudes", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
+        "virgen-maria", "Vírgen María",  // "Vírgen María" normalizado
+        "aclamacion", "laudes", "visperas", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
         "cuaresma"
     ];
 
@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "virgen-maria": "Vírgen María", // Nombre canónico con acento
         "aclamacion": "Aclamación",
         "laudes": "Laudes",
+        "visperas": "Visperas",
         "penitencial": "Penitencial",
         "salmodia": "Salmodia",
         "nuevo-testamento": "Nuevo Testamento",
