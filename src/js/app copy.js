@@ -16,53 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let clickCount = 0;
     let clickTimer = null;
     
-    // Función para obtener los parámetros de la URL
-    function getUrlParams() {
-        const params = {};
-        window.location.search.substring(1).split('&').forEach(param => {
-            const parts = param.split('=');
-            if (parts[0] && parts[1]) {
-                params[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
-            }
-        });
-        return params;
-    }
-
     // Mostrar todos los cantos al cargar la página
     displaySongs(songs);
-
-    // --- NUEVA FUNCIONALIDAD: Aplicar filtros desde la URL al cargar la página ---
-    const urlParams = getUrlParams();
-
-    // Si hay un parámetro de categoría en la URL
-    if (urlParams.category) {
-        activeFilters.category = urlParams.category; // Asignar la categoría activa
-        // Resaltar el botón de categoría correspondiente en la interfaz
-        categoryFilters.forEach(filterBtn => {
-            if (filterBtn.getAttribute('data-category').toLowerCase() === urlParams.category.toLowerCase()) {
-                filterBtn.classList.add('active');
-            }
-        });
-    }
-
-    // Si hay un parámetro de momento en la URL
-    if (urlParams.moment) {
-        // Asumimos que el parámetro 'moment' puede contener múltiples momentos separados por comas
-        const momentsFromUrl = urlParams.moment.split(',').map(m => m.trim());
-        momentsFromUrl.forEach(momentParam => {
-            activeFilters.moments.push(momentParam); // Añadir el momento activo
-            // Resaltar el botón de momento correspondiente en la interfaz
-            momentFilters.forEach(filterBtn => {
-                if (filterBtn.getAttribute('data-moment').toLowerCase() === momentParam.toLowerCase()) {
-                    filterBtn.classList.add('active');
-                }
-            });
-        });
-    }
-    
-    // Llamar a filterSongs para aplicar los filtros iniciales de la URL
-    filterSongs();
-    // --- FIN NUEVA FUNCIONALIDAD ---
 
 
 // Función para mostrar los cantos
@@ -151,17 +106,13 @@ toggleView.addEventListener('change', function() {
         
         // Filtrar por categoría
         if (activeFilters.category) {
-            filteredSongs = filteredSongs.filter(song => 
-                song.category && song.category.toLowerCase() === activeFilters.category.toLowerCase()
-            );
+            filteredSongs = filteredSongs.filter(song => song.category === activeFilters.category);
         }
         
         // Filtrar por momentos litúrgicos
         if (activeFilters.moments.length > 0) {
             filteredSongs = filteredSongs.filter(song => 
-                song.moments && activeFilters.moments.some(activeMoment => 
-                    song.moments.some(songMoment => songMoment.toLowerCase() === activeMoment.toLowerCase())
-                )
+                song.moments.some(moment => activeFilters.moments.includes(moment))
             );
         }
         
@@ -177,11 +128,11 @@ toggleView.addEventListener('change', function() {
         
         displaySongs(filteredSongs);
         
-        // Ocultar filtros después de aplicar (esto es parte de tu lógica existente)
-        // if (activeFilters.category || activeFilters.moments.length > 0) {
-        //     filtersContainer.classList.add('hidden');
-        //     toggleFilters.innerHTML = '';
-        // }
+        // Ocultar filtros después de aplicar
+        if (activeFilters.category || activeFilters.moments.length > 0) {
+            filtersContainer.classList.add('hidden');
+            toggleFilters.innerHTML = '';
+        }
     }
     
     function removeAccents(text) {

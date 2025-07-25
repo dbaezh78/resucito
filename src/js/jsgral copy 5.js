@@ -47,7 +47,7 @@ let chordSelectionModal;
 let chordListContainer;
 let cantoCategoriesContainer; // Nueva referencia para el contenedor de categorías
 let cantoContentWrapper; // Nueva referencia para el contenedor principal de las columnas
-let cejillaSelect; // ADDED: Nueva referencia para el select de cejilla
+let cejillaSelect; // Nueva referencia para el select de cejilla
 
 // Referencias para el control de audio
 let cantoAudioPlayer;
@@ -323,8 +323,7 @@ const renderParsedLine = (lineaParsed) => {
         noteSpan.classList.add('nota-posicionada');
 
         const transposedNoteName = transposeNote(noteInfo.originalNote, currentKeyOffset);
-        //noteSpan.textContent = transposedNoteName + noteInfo.type;
-        // Deparación de la Nota o Acorde del Estado de la nota o el acorde
+        // MODIFIED: Añadir un espacio si noteInfo.type no está vacío
         noteSpan.textContent = transposedNoteName + (noteInfo.type ? ' ' : '') + noteInfo.type;
 
         noteSpan.dataset.originalNote = noteInfo.originalNote;
@@ -612,7 +611,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     chordListContainer = document.getElementById('chordList');
     cantoCategoriesContainer = document.getElementById('cantoCategories');
     cantoContentWrapper = document.querySelector('.canto-content-wrapper'); // Obtener el wrapper
-    cejillaSelect = document.getElementById('cejillaSelect'); // ADDED: Obtener el select de cejilla
+    cejillaSelect = document.getElementById('cejillaSelect'); // Obtener el select de cejilla
 
     // Referencias para el control de audio
     cantoAudioPlayer = document.getElementById('cantoAudioPlayer');
@@ -668,7 +667,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     if (!scrollIcon) console.error("Error: .scroll-icon no encontrado dentro de #startScroll.");
     if (!prevCantoBtn) console.error("Error: #prevCantoBtn no encontrado.");
     if (!nextCantoBtn) console.error("Error: #nextCantoBtn no encontrado.");
-    if (!cejillaSelect) console.error("Error: #cejillaSelect no encontrado."); // ADDED: Error check for cejillaSelect
+    if (!cejillaSelect) console.error("Error: #cejillaSelect no encontrado.");
 
 
     // Actualizar los títulos y subtítulos del canto
@@ -923,7 +922,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     }
 
 
-    // ADDED: Lógica para la cejilla (corregida)
+    // Lógica para la cejilla (corregida)
     if (cejillaSelect) {
         // Establecer el valor predeterminado si existe en los datos del canto
         if (cantoSpecificData.cejilla !== undefined && cantoSpecificData.cejilla !== null && cantoSpecificData.cejilla !== "") {

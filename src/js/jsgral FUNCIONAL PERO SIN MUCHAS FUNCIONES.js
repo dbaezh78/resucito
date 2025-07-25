@@ -81,64 +81,63 @@ const chordImageFilenames = [
     "dom.jpg",
     "do7.jpg",
     "do72.jpg",
-    "dos.jpg", 
-    "dos7.jpg", 
-    "dosm.jpg", 
+    "dos.jpg",
+    "dos7.jpg",
+    "dosm.jpg",
 
     "re.jpg",
-    "rem.jpg", 
-    "re7.jpg", 
-    "rem9.jpg", 
-    "res.jpg", 
-    "res1.jpg", 
+    "rem.jpg",
+    "re7.jpg",
+    "rem9.jpg",
+    "res.jpg",
+    "res1.jpg",
     "resm.jpg",
 
     "mi.jpg",
-    "mim.jpg", 
-    "mi6.jpg", 
-    "mi7.jpg", 
-    "mim6.jpg", 
-    "mimaj7.jpg", 
+    "mim.jpg",
+    "mi6.jpg",
+    "mi7.jpg",
+    "mim6.jpg",
+    "mimaj7.jpg",
 
-    "fa.jpg", 
-    "fam.jpg", 
-    "fa7.jpg", 
-    "famaj7.jpg", 
-    "famaj713.jpg", 
+    "fa.jpg",
+    "fam.jpg",
+    "fa7.jpg",
+    "famaj7.jpg",
+    "famaj713.jpg",
 
     "fas.jpg",
-    "fasm.jpg", 
-    "fas5-9dim.jpg", 
-    "fas7.jpg", 
+    "fasm.jpg",
+    "fas5-9dim.jpg",
+    "fas7.jpg",
 
-    "sol.jpg", 
-    "sol2.jpg", 
-    "sol3.jpg", 
-    "solm.jpg", 
-    "sol7.jpg", 
+    "sol.jpg",
+    "sol2.jpg",
+    "sol3.jpg",
+    "solm.jpg",
+    "sol7.jpg",
 
-    "sols.jpg", 
+    "sols.jpg",
     "solsm.jpg",
-    "sols7.jpg", 
+    "sols7.jpg",
 
-    "la.jpg", 
-    "la2.jpg", 
-    "la3.jpg", 
+    "la.jpg",
+    "la2.jpg",
+    "la3.jpg",
     "la6.jpg",
-    "la7.jpg", 
-    "lab.jpg", 
-    "lam.jpg", 
-    "lam6.jpg", 
-    "lam7.jpg", 
-    
-    
+    "la7.jpg",
+    "lab.jpg",
+    "lam.jpg",
+    "lam6.jpg",
+    "lam7.jpg",
 
-    "si.jpg", 
-    "si7.jpg", 
-    "si72.jpg", 
-    "sib.jpg", 
-    "sib7.jpg", 
-    "sibm.jpg", 
+
+    "si.jpg",
+    "si7.jpg",
+    "si72.jpg",
+    "sib.jpg",
+    "sib7.jpg",
+    "sibm.jpg",
     "sim.jpg",
 
 ];
@@ -311,7 +310,7 @@ const renderParsedLine = (lineaParsed) => {
     letraSpan.textContent = lineaParsed.letra;
     // Almacenar el texto original limpio para los disparadores colapsables
     letraSpan.dataset.originalText = lineaParsed.letra;
-    
+
     if (lineaParsed.textStyleClass) {
         letraSpan.classList.add(lineaParsed.textStyleClass);
     }
@@ -482,14 +481,11 @@ const openChordImagesModal = () => {
         const chordName = getDisplayNameFromFilename(filename); // Usar la nueva función
         const chordImageItem = document.createElement('div');
         chordImageItem.classList.add('chord-image-item');
-
         // Determinar la nota base para la clase de color
         let baseNoteForColor = chordName.replace(/[#♭m79]/g, ''); // Eliminar #, ♭, m, 7, 9 para obtener la nota base (Do, Re, Mi, etc.)
         baseNoteForColor = baseNoteForColor.toLowerCase(); // Convertir a minúsculas para la clase CSS
-
         // Añadir una clase basada en la nota base para el estilo de color
         chordImageItem.classList.add(`chord-color-${baseNoteForColor}`);
-
         const img = document.createElement('img');
         img.src = IMAGE_BASE_PATH + filename;
         img.alt = chordName; // Texto alternativo para accesibilidad
@@ -498,20 +494,16 @@ const openChordImagesModal = () => {
             console.warn(`No se pudo cargar la imagen: ${img.src}`);
             img.style.display = 'none'; // Ocultar la imagen si no se carga
         };
-
         const nameSpan = document.createElement('span');
         nameSpan.textContent = chordName;
-
         // Añadir event listener para abrir la imagen grande
         chordImageItem.addEventListener('click', () => {
             openLargeImageModal(img.src, chordName);
         });
-
         chordImageItem.appendChild(img);
         chordImageItem.appendChild(nameSpan);
         chordImagesContainer.appendChild(chordImageItem);
     });
-
     chordImagesModal.style.display = 'flex'; // Mostrar la modal
 };
 
@@ -536,7 +528,6 @@ const closeLargeImageModal = () => {
     largeImageModal.style.display = 'none';
 };
 
-
 let resizeTimeout;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
@@ -550,7 +541,6 @@ const renderCategories = (categoriesWithUrls) => {
         return;
     }
     cantoCategoriesContainer.innerHTML = '';
-
     categoriesWithUrls.forEach(catInfo => {
         const categoryLink = document.createElement('a');
         categoryLink.href = catInfo.url;
@@ -566,7 +556,6 @@ const areAllAssemblyBlocksExpanded = () => {
     // Obtener todos los bloques colapsables que tienen un ID que comienza con "asamblea_"
     const assemblyBlocks = document.querySelectorAll('.collapsible-block-container[data-block-id^="asamblea_"]');
     if (assemblyBlocks.length === 0) return false; // Si no hay bloques de asamblea, consideramos que no todos están expandidos
-
     for (const block of assemblyBlocks) {
         const blockId = block.dataset.blockId;
         // Si el estado del bloque no está en el mapa o es false (colapsado), entonces no todos están expandidos
@@ -601,10 +590,10 @@ const updateToggleVistaIcon = () => {
 // Su valor inicial se establecerá en initializeCantoPage.
 let currentCantoData = { lizq: [], lder: [] };
 
-
 // Función de inicialización que será llamada desde cada archivo de canto
-const initializeCantoPage = (cantoSpecificData, processedCategories) => {
+const initializeCantoPage = (cantoSpecificData) => { // 'processedCategories' se construye dentro
     console.log("Initializing canto page with data:", cantoSpecificData);
+
     // Asignar referencias a los elementos del DOM
     cantoLeftContainer = document.getElementById('canto-left-container');
     cantoRightContainer = document.getElementById('canto-right-container');
@@ -621,319 +610,51 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
 
     // Referencias para el nuevo botón de asamblea
     showAllAsambleaBtn = document.getElementById('showAllAsambleaBtn');
-    showAllAsambleaIcon = showAllAsambleaBtn ? showAllAsambleaBtn.querySelector('.mso1') : null;
+    showAllAsambleaIcon = showAllAsambleaBtn ? showAllAsambleaBtn.querySelector('.mso') : null;
 
-    // Referencias para el botón de alternar vista
-    toggleVistaBtn = document.getElementById('toggleVista');
-    toggleVistaIcon = toggleVistaBtn ? toggleVistaBtn.querySelector('.mso1') : null;
+    // Referencias para el nuevo botón de alternar vista
+    toggleVistaBtn = document.getElementById('toggleVistaBtn');
+    toggleVistaIcon = toggleVistaBtn ? toggleVistaBtn.querySelector('.mso') : null;
 
-    // Referencias para la modal de imágenes de acordes
-    callNotasBtn = document.getElementById('CallNotas');
+    // Referencias para las modales de acordes
+    callNotasBtn = document.getElementById('callNotasBtn');
     chordImagesModal = document.getElementById('chordImagesModal');
     chordImagesContainer = document.getElementById('chordImageList');
-
-    // Referencias para la modal de imagen grande
     largeImageModal = document.getElementById('largeImageModal');
     largeChordImage = document.getElementById('largeChordImage');
 
     // Referencias para el scroll automático
-    startScrollBtn = document.getElementById('startScroll');
-    scrollIcon = startScrollBtn ? startScrollBtn.querySelector('.scroll-icon') : null;
+    startScrollBtn = document.getElementById('startScrollBtn');
+    scrollIcon = startScrollBtn ? startScrollBtn.querySelector('.mso') : null;
 
-    // Referencias para los botones de navegación anterior/siguiente
+    // Referencias para los botones de navegación
     prevCantoBtn = document.getElementById('prevCantoBtn');
     nextCantoBtn = document.getElementById('nextCantoBtn');
 
 
-    // Verificar si los contenedores del canto se encontraron
-    if (!cantoLeftContainer) console.error("Error: #canto-left-container no encontrado.");
-    if (!cantoRightContainer) console.error("Error: #canto-right-container no encontrado.");
-    if (!chordSelectionModal) console.error("Error: #chordSelectionModal no encontrado.");
-    if (!chordListContainer) console.error("Error: #chordList no encontrado.");
-    if (!cantoCategoriesContainer) console.error("Error: #cantoCategories no encontrado.");
-    if (!cantoAudioPlayer) console.error("Error: #cantoAudioPlayer no encontrado.");
-    if (!audioControlBtn) console.error("Error: #audio-control-btn no encontrado.");
-    if (!audioIcon) console.error("Error: .audio-icon no encontrado dentro de #audio-control-btn.");
-    if (!showAllAsambleaBtn) console.error("Error: #showAllAsambleaBtn no encontrado.");
-    if (!showAllAsambleaIcon) console.error("Error: .material-symbols-outlined no encontrado dentro de #showAllAsambleaBtn.");
-    if (!toggleVistaBtn) console.error("Error: #toggleVista no encontrado.");
-    if (!toggleVistaIcon) console.error("Error: .material-symbols-outlined no encontrado dentro de #toggleVista.");
-    if (!cantoContentWrapper) console.error("Error: .canto-content-wrapper no encontrado.");
-    if (!callNotasBtn) console.error("Error: #CallNotas no encontrado.");
-    if (!chordImagesModal) console.error("Error: #chordImagesModal no encontrado.");
-    if (!chordImagesContainer) console.error("Error: #chordImageList no encontrado.");
-    if (!largeImageModal) console.error("Error: #largeImageModal no encontrado.");
-    if (!largeChordImage) console.error("Error: #largeChordImage no encontrado.");
-    if (!startScrollBtn) console.error("Error: #startScroll no encontrado.");
-    if (!scrollIcon) console.error("Error: .scroll-icon no encontrado dentro de #startScroll.");
-    if (!prevCantoBtn) console.error("Error: #prevCantoBtn no encontrado.");
-    if (!nextCantoBtn) console.error("Error: #nextCantoBtn no encontrado.");
-    if (!cejillaSelect) console.error("Error: #cejillaSelect no encontrado."); // ADDED: Error check for cejillaSelect
-
-
-    // Actualizar los títulos y subtítulos del canto
-    const dbt1Element = document.querySelector('.dbt1');
-    const dbs2Element = document.querySelector('.dbs2');
-    const dbnoElement = document.getElementById('dbno');
-    const nCanElement = document.getElementById('nCan');
-
-    if (dbt1Element) dbt1Element.textContent = cantoSpecificData.title;
-    else console.error("Error: Elemento con clase .dbt1 no encontrado.");
-
-    if (dbs2Element) dbs2Element.textContent = cantoSpecificData.subtitle;
-    else console.error("Error: Elemento con clase .dbs2 no encontrado.");
-
-    if (dbnoElement) dbnoElement.textContent = cantoSpecificData.dbno;
-    else console.error("Error: Elemento con ID #dbno no encontrado.");
-    
-    if (nCanElement) nCanElement.textContent = cantoSpecificData.nCan;
-    else console.error("Error: Elemento con ID #nCan no encontrado.");
-    
-    // Actualizar el título de la pestaña del navegador (la etiqueta <title>)
-    const pageTitleElement = document.getElementById('tt');
-    if (pageTitleElement && cantoSpecificData.tt) {
-        pageTitleElement.textContent = cantoSpecificData.tt;
-    } else if (!pageTitleElement) {
-        console.error("Error: Elemento con ID #tt no encontrado.");
-    }
-
-    // Configurar el reproductor de audio
-    if (cantoAudioPlayer && cantoSpecificData.audioSrc) {
-        cantoAudioPlayer.src = cantoSpecificData.audioSrc;
-        cantoAudioPlayer.load(); // Cargar el nuevo audio
-        cantoAudioPlayer.style.display = 'none'; // Asegurarse de que esté oculto al inicio
-        if (audioIcon) {
-            audioIcon.textContent = 'play_circle'; // Asegurarse de que el icono sea de reproducción
-        }
-    } else if (cantoAudioPlayer) {
-        // Si no hay audioSrc para el canto actual, ocultar el reproductor y el botón
-        cantoAudioPlayer.style.display = 'none';
-        if (audioControlBtn) audioControlBtn.style.display = 'none';
-    } else if (audioControlBtn) {
-        // Si no hay reproductor de audio, ocultar el botón de control
-        audioControlBtn.style.display = 'none';
-    }
-
-
-    // Event listener para el botón de control de audio
-    if (audioControlBtn && cantoAudioPlayer) {
-        audioControlBtn.onclick = (event) => {
-            event.preventDefault(); // Evitar el comportamiento por defecto del enlace
-            if (cantoAudioPlayer.paused) {
-                cantoAudioPlayer.play();
-                cantoAudioPlayer.style.display = 'block'; // Mostrar el reproductor
-                if (audioIcon) audioIcon.textContent = 'pause_circle'; // Cambiar a icono de pausa
-            } else {
-                cantoAudioPlayer.pause();
-                cantoAudioPlayer.style.display = 'none'; // Ocultar el reproductor
-                if (audioIcon) audioIcon.textContent = 'play_circle'; // Cambiar a icono de reproducción
-            }
-        };
-
-        // Event listener para cuando el audio termina
-        cantoAudioPlayer.onended = () => {
-            cantoAudioPlayer.style.display = 'none'; // Ocultar el reproductor
-            if (audioIcon) audioIcon.textContent = 'play_circle'; // Cambiar a icono de reproducción
-        };
-    }
-
-    // Lógica para el botón "Mostrar toda la asamblea"
-    if (showAllAsambleaBtn && showAllAsambleaIcon) {
-        showAllAsambleaBtn.onclick = (event) => {
-            event.preventDefault();
-            const allCurrentlyExpanded = areAllAssemblyBlocksExpanded();
-            const targetState = !allCurrentlyExpanded; // Si todos están expandidos, colapsar; si no, expandir
-
-            document.querySelectorAll('.collapsible-block-container[data-block-id^="asamblea_"]').forEach(blockContainer => {
-                const blockId = blockContainer.dataset.blockId;
-                const contentDiv = blockContainer.querySelector('.collapsible-content');
-                const triggerDiv = blockContainer.querySelector('.collapsible-trigger');
-                const triggerLetraSpan = triggerDiv.querySelector('.letra');
-
-                if (targetState) { // Expandir
-                    contentDiv.style.display = '';
-                    triggerLetraSpan.textContent = triggerLetraSpan.dataset.originalText;
-                    triggerDiv.dataset.isExpanded = "true";
-                    collapsibleStates.set(blockId, true);
-                } else { // Colapsar
-                    contentDiv.style.display = 'none';
-                    if (!triggerLetraSpan.textContent.endsWith(' ...')) {
-                        triggerLetraSpan.textContent += ' ...';
-                    }
-                    triggerDiv.dataset.isExpanded = "false";
-                    collapsibleStates.set(blockId, false);
-                }
-            });
-            // Actualizar el icono del botón principal después de la acción
-            updateShowAllAsambleaIcon();
-        };
-
-        // Efecto hover para el icono del ojo
-        showAllAsambleaBtn.addEventListener('mouseover', () => {
-            const allCurrentlyExpanded = areAllAssemblyBlocksExpanded();
-            // Si todos están expandidos, al pasar el ratón se sugiere "visibility" (para colapsar al hacer clic)
-            // Si no todos están expandidos, al pasar el ratón se sugiere "visibility_off" (para expandir al hacer clic)
-            showAllAsambleaIcon.textContent = allCurrentlyExpanded ? 'visibility' : 'visibility_off';
-        });
-
-        showAllAsambleaBtn.addEventListener('mouseout', () => {
-            // Al quitar el ratón, el icono vuelve a su estado normal (indicando la acción actual)
-            updateShowAllAsambleaIcon();
-        });
-    }
-
-    // Lógica para el botón de alternar vista (menu_book)
-    if (toggleVistaBtn && toggleVistaIcon && cantoContentWrapper) {
-        toggleVistaBtn.onclick = (event) => {
-            event.preventDefault();
-            // Solo aplicar el cambio si la pantalla es de escritorio
-            if (window.innerWidth >= 992) {
-                cantoContentWrapper.classList.toggle('stacked-layout');
-                updateToggleVistaIcon(); // Actualizar icono después de alternar la clase
-            }
-        };
-        // Inicializar el icono de la vista al cargar
-        updateToggleVistaIcon();
-    }
-
-    // Lógica para el botón de mostrar imágenes de acordes (music_note)
-    if (callNotasBtn) {
-        callNotasBtn.onclick = (event) => {
-            event.preventDefault();
-            openChordImagesModal();
-        };
-    }
-
-    // Lógica para cerrar la modal de imágenes de acordes al hacer clic fuera
-    if (chordImagesModal) {
-        chordImagesModal.addEventListener('click', (event) => {
-            if (event.target === chordImagesModal) {
-                closeChordImagesModal();
-            }
-        });
-        // Lógica para cerrar la modal de imágenes de acordes al presionar 'Escape'
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && chordImagesModal.style.display === 'flex') {
-                closeChordImagesModal();
-            }
-        });
-    }
-
-    // Lógica para cerrar la modal de imagen grande al hacer clic fuera
-    if (largeImageModal) {
-        largeImageModal.addEventListener('click', (event) => {
-            if (event.target === largeImageModal) {
-                closeLargeImageModal();
-            }
-        });
-        // Lógica para cerrar la modal de imagen grande al presionar 'Escape'
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && largeImageModal.style.display === 'flex') {
-                closeLargeImageModal();
-            }
-        });
-    }
-
-    // Lógica para el scroll automático
-    if (startScrollBtn && scrollIcon) {
-        // Determinar el tipo de dispositivo actual
-        const deviceType = getDeviceType(window.innerWidth);
-        let selectedScrollConfig = null;
-
-        if (cantoSpecificData.scrollConfig) {
-            selectedScrollConfig = cantoSpecificData.scrollConfig[deviceType];
-        }
-
-        if (selectedScrollConfig) {
-            scrollSpeed = selectedScrollConfig.velocidad;
-            scrollIncrement = selectedScrollConfig.incremento;
-        } else {
-            console.warn(`No se encontró configuración de scroll para ${deviceType}. Usando valores por defecto.`);
-            // scrollSpeed y scrollIncrement ya tienen valores por defecto definidos globalmente.
-        }
-
-        startScrollBtn.onclick = (event) => {
-            event.preventDefault();
-            if (isScrolling) {
-                stopAutoScroll();
-            } else {
-                startAutoScroll();
-            }
-        };
-    }
-
-    // Función para iniciar el scroll automático
-    const startAutoScroll = () => {
-        if (isScrolling) return; // Evitar iniciar múltiples intervalos
-
-        isScrolling = true;
-        scrollIcon.textContent = 'pause'; // Cambiar icono a pausa
-        
-        // Calcular el tiempo de intervalo para la velocidad deseada
-        // (1000 ms / scrollSpeed pixels/sec) * scrollIncrement pixels/step
-        const intervalTime = (1000 / scrollSpeed) * scrollIncrement; 
-
-        scrollInterval = setInterval(() => {
-            window.scrollBy(0, scrollIncrement); // Desplazar hacia abajo
-            // Detener el scroll si llegamos al final de la página
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                stopAutoScroll();
-            }
-        }, intervalTime);
-    };
-
-    // Función para detener el scroll automático
-    const stopAutoScroll = () => {
-        if (!isScrolling) return; // No hay scroll para detener
-
-        isScrolling = false;
-        scrollIcon.textContent = 'south'; // Cambiar icono a flecha abajo
-        clearInterval(scrollInterval);
-    };
-
-    // Lógica para los botones de navegación anterior/siguiente
-    if (prevCantoBtn) {
-        if (cantoSpecificData.ant) {
-            prevCantoBtn.href = cantoSpecificData.ant;
-            prevCantoBtn.style.display = ''; // Mostrar el botón
-        } else {
-            prevCantoBtn.style.display = 'none'; // Ocultar si no hay canto anterior
-        }
-    }
-
-    if (nextCantoBtn) {
-        if (cantoSpecificData.sig) {
-            nextCantoBtn.href = cantoSpecificData.sig;
-            nextCantoBtn.style.display = ''; // Mostrar el botón
-        } else {
-            nextCantoBtn.style.display = 'none'; // Ocultar si no hay canto siguiente
-        }
-    }
-
-    // Lógica para el modo de una sola columna
-    if (cantoSpecificData.lder && cantoSpecificData.lder.length === 0) {
-        cantoContentWrapper.classList.add('single-column-mode');
-        // El CSS se encargará de ocultar cantoRightContainer y ajustar cantoLeftContainer
-    } else {
-        cantoContentWrapper.classList.remove('single-column-mode');
-        // Asegurarse de que el contenedor derecho sea visible si estaba oculto por un canto anterior de una sola columna
-        if (cantoRightContainer) {
-            cantoRightContainer.style.display = ''; // Revertir a la visualización predeterminada
-        }
-    }
-
-
-    // ADDED: Lógica para la cejilla (corregida)
+    // Configurar cejilla si está presente
     if (cejillaSelect) {
-        // Establecer el valor predeterminado si existe en los datos del canto
-        if (cantoSpecificData.cejilla !== undefined && cantoSpecificData.cejilla !== null && cantoSpecificData.cejilla !== "") {
-            cejillaSelect.value = cantoSpecificData.cejilla;
-        } else {
-            // Si no hay cejilla definida en el canto, o es vacía, establecer en "0"
-            cejillaSelect.value = "0";
+        // Llenar el select con opciones de cejilla
+        for (let i = 0; i <= 12; i++) { // Por ejemplo, cejillas del 0 al 12
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = `Cejilla ${i}`;
+            cejillaSelect.appendChild(option);
         }
-        // No se añade un event listener para cambiar el tono,
-        // ya que la cejilla es solo una referencia visual y no debe afectar la transposición.
+        // Establecer la cejilla inicial si está definida en los datos del canto
+        if (cantoSpecificData.cejilla !== undefined) {
+            cejillaSelect.value = cantoSpecificData.cejilla;
+            // Calcular el offset inicial de transposición basado en la cejilla
+            currentKeyOffset = -parseInt(cantoSpecificData.cejilla);
+        }
+        // Añadir event listener para cambiar la transposición al seleccionar una cejilla
+        cejillaSelect.addEventListener('change', function() {
+            currentKeyOffset = -parseInt(this.value);
+            renderCanto(); // Volver a renderizar el canto con la nueva transposición
+        });
+    } else {
+        // Si no hay cejilla, asegurar que el offset sea 0
+        currentKeyOffset = 0;
         // La transposición se maneja exclusivamente a través de la selección de acordes.
     }
 
@@ -955,10 +676,209 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     updateShowAllAsambleaIcon(); // Establecer el icono inicial del botón de asamblea
     updateToggleVistaIcon(); // Establecer el icono inicial del botón de vista
 
-    // Renderizar las categorías
-    if (processedCategories && Array.isArray(processedCategories)) {
-        renderCategories(processedCategories);
+    // NUEVO: Preparar categorías para renderizar en el pie de página
+    // 'cantoSpecificData.category' es un array de strings como ["Pascua", "Adviento"]
+    // 'renderCategories' espera un array de objetos como [{name: "Pascua", url: "..."}]
+    if (cantoSpecificData.category && Array.isArray(cantoSpecificData.category)) {
+        const processedCategoriesForFooter = cantoSpecificData.category.map(catName => {
+            // Se asume que las categorías se utilizan para filtrar en la página principal
+            // Se construye una URL que activaría el filtro en la página principal /resucito/
+            const encodedCategory = encodeURIComponent(catName);
+            return {
+                name: catName,
+                url: `/resucito/?category=${encodedCategory}` // URL adaptada para el filtrado
+            };
+        });
+        renderCategories(processedCategoriesForFooter);
     } else {
-        console.warn("Advertencia: No se proporcionaron categorías procesadas o no es un array.");
+        console.warn("Advertencia: No se proporcionaron categorías válidas en cantoSpecificData para renderizar en el pie de página.");
     }
-};
+
+    // Configurar el reproductor de audio si hay una fuente
+    if (cantoAudioPlayer && cantoSpecificData.audioSrc) {
+        cantoAudioPlayer.src = cantoSpecificData.audioSrc;
+        audioControlBtn.style.display = 'block'; // Mostrar el botón de control de audio
+    } else if (audioControlBtn) {
+        audioControlBtn.style.display = 'none'; // Ocultar si no hay audio
+    }
+
+    // Configurar la velocidad de scroll
+    if (cantoSpecificData.scrollConfig) {
+        const deviceType = getDeviceType(window.innerWidth);
+        const config = cantoSpecificData.scrollConfig[deviceType] || cantoSpecificData.scrollConfig.desktop; // Fallback a desktop
+        scrollSpeed = config.velocidad;
+        scrollIncrement = config.incremento;
+    }
+
+    // Configurar botones de navegación
+    if (prevCantoBtn) {
+        if (cantoSpecificData.ant) {
+            prevCantoBtn.href = cantoSpecificData.ant;
+            prevCantoBtn.style.display = 'inline-block';
+        } else {
+            prevCantoBtn.style.display = 'none';
+        }
+    }
+    if (nextCantoBtn) {
+        if (cantoSpecificData.sig) {
+            nextCantoBtn.href = cantoSpecificData.sig;
+            nextCantoBtn.style.display = 'inline-block';
+        } else {
+            nextCantoBtn.style.display = 'none';
+        }
+    }
+
+    // Añadir event listeners para botones
+    if (callNotasBtn) {
+        callNotasBtn.addEventListener('click', openChordImagesModal);
+    }
+
+    // Cerrar modales al hacer clic fuera
+    if (chordSelectionModal) {
+        chordSelectionModal.addEventListener('click', (event) => {
+            if (event.target === chordSelectionModal) {
+                chordSelectionModal.style.display = 'none';
+            }
+        });
+    }
+
+    if (chordImagesModal) {
+        chordImagesModal.addEventListener('click', (event) => {
+            if (event.target === chordImagesModal) {
+                closeChordImagesModal();
+            }
+        });
+    }
+
+    if (largeImageModal) {
+        largeImageModal.addEventListener('click', (event) => {
+            if (event.target === largeImageModal) {
+                closeLargeImageModal();
+            }
+        });
+    }
+
+    if (startScrollBtn) {
+        startScrollBtn.addEventListener('click', toggleScroll);
+    }
+
+    if (audioControlBtn) {
+        audioControlBtn.addEventListener('click', toggleAudioPlayback);
+    }
+
+    if (showAllAsambleaBtn) {
+        showAllAsambleaBtn.addEventListener('click', toggleAllAssemblyBlocks);
+    }
+
+    if (toggleVistaBtn) {
+        toggleVistaBtn.addEventListener('click', toggleCantoLayout);
+    }
+
+    // Manejo de la lógica de toggle para los bloques de asamblea
+    function toggleAllAssemblyBlocks() {
+        const allExpanded = areAllAssemblyBlocksExpanded();
+        document.querySelectorAll('.collapsible-block-container[data-block-id^="asamblea_"]').forEach(block => {
+            const blockId = block.dataset.blockId;
+            const contentDiv = block.querySelector('.collapsible-content');
+            const triggerLetraSpan = block.querySelector('.collapsible-trigger .letra');
+            if (allExpanded) {
+                // Colapsar todos
+                contentDiv.style.display = 'none';
+                if (!triggerLetraSpan.textContent.endsWith(' ...')) {
+                    triggerLetraSpan.textContent += ' ...';
+                }
+                block.querySelector('.collapsible-trigger').dataset.isExpanded = "false";
+                collapsibleStates.set(blockId, false);
+            } else {
+                // Expandir todos
+                contentDiv.style.display = '';
+                triggerLetraSpan.textContent = triggerLetraSpan.dataset.originalText;
+                block.querySelector('.collapsible-trigger').dataset.isExpanded = "true";
+                collapsibleStates.set(blockId, true);
+            }
+        });
+        updateShowAllAsambleaIcon(); // Actualizar el icono después de la acción
+    }
+
+    function toggleAudioPlayback() {
+        if (cantoAudioPlayer.paused) {
+            cantoAudioPlayer.play();
+            audioIcon.textContent = 'pause';
+        } else {
+            cantoAudioPlayer.pause();
+            audioIcon.textContent = 'play_arrow';
+        }
+    }
+
+    function startScroll() {
+        if (isScrolling) return; // Evitar múltiples intervalos
+        isScrolling = true;
+        scrollIcon.textContent = 'pause'; // Cambiar icono a pausa
+
+        const cantoContentDiv = cantoContentWrapper; // Usar el wrapper principal
+
+        // Guardar la posición inicial de scroll
+        const startScrollPosition = cantoContentDiv.scrollTop;
+
+        // Calcular la duración total del scroll necesaria
+        const totalScrollHeight = cantoContentDiv.scrollHeight - cantoContentDiv.clientHeight;
+        const remainingScrollDistance = totalScrollHeight - startScrollPosition;
+
+        // Calcular la duración total del scroll
+        const totalDurationMs = (remainingScrollDistance / scrollSpeed) * 1000;
+
+        let startTime = null;
+
+        function animateScroll(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const elapsed = currentTime - startTime;
+
+            const newScrollTop = Math.min(startScrollPosition + (scrollSpeed * (elapsed / 1000)), totalScrollHeight);
+
+            cantoContentDiv.scrollTop = newScrollTop;
+
+            if (newScrollTop >= totalScrollHeight) {
+                stopScroll(); // Detener el scroll al llegar al final
+            } else {
+                if (isScrolling) { // Solo continuar si el scroll no ha sido detenido
+                    requestAnimationFrame(animateScroll);
+                }
+            }
+        }
+
+        scrollInterval = requestAnimationFrame(animateScroll); // Usar requestAnimationFrame
+    }
+
+
+    function stopScroll() {
+        if (!isScrolling) return;
+        isScrolling = false;
+        if (scrollInterval) {
+            cancelAnimationFrame(scrollInterval); // Cancelar el frame de animación
+            scrollInterval = null;
+        }
+        scrollIcon.textContent = 'play_arrow'; // Cambiar icono a play
+    }
+
+    function toggleScroll() {
+        if (isScrolling) {
+            stopScroll();
+        } else {
+            startScroll();
+        }
+    }
+
+    function toggleCantoLayout() {
+        if (cantoContentWrapper) {
+            cantoContentWrapper.classList.toggle('stacked-layout'); // Alternar la clase
+            updateToggleVistaIcon(); // Actualizar el icono después del cambio
+        }
+    }
+
+    // Configurar el título de la pestaña desde los datos del canto
+    const pageTitleElement = document.getElementById('tt');
+    if (pageTitleElement && cantoSpecificData.title) {
+        pageTitleElement.textContent = `RESUCITÓ - ${cantoSpecificData.title}`;
+    }
+
+}; // Fin de initializeCantoPage
