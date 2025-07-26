@@ -103,6 +103,7 @@
 
 .resultados-busqueda .resultado-item:last-child {
     border-bottom: none;
+    z-index: 9999;
 }
 
 .resultados-busqueda .resultado-item:hover {

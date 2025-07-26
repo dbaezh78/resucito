@@ -725,7 +725,7 @@ hr {
     outline: none;
     border-radius: 0px 0px 0px 0px;
     display: none; 
-    z-index: 9999;
+    z-index: 999;
     
 }
 

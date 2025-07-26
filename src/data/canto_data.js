@@ -2,24 +2,10 @@
 /*Categorias Aceptadas.
 - Vírgen María
 
-- precatecumenado
-- catecumenado
-- eleccion
-- liturgia
-
-- entrada
-- paz
-- fraccion-del-pan
-- comunion
-- final
-- adviento
-- navidad
-- pascua
-- pentecostes
-- aclamacion
-- laudes
- ", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
-        "cuaresma"
+- precatecumenado - catecumenado - eleccion - liturgia - entrada - paz - fraccion-del-pan 
+- comunion        - final        - adviento - navidad  - pascua  - pentecostes
+- aclamacion      - laudes       - penitencial         - salmodia
+- nuevo-testamento               - antiguo-testamento  - cuaresma
 
 */
 // Cada objeto en el array representa un canto.
@@ -30,7 +16,7 @@ const allCantosData = [
         tt: "A la Víctima Pascual",
         title: "A la Víctima Pascual",
         subtitle: "Secuencia de Pascua - Himno lat. «Victimae paschall laudes»",
-        category: ["Precatecumenado", "Pascua", "Pentecostés", "Comunión", "Cuaresma", "Adviento", "Vírgen María", "Laudes", "Visperas"], // Sigue siendo un array de nombres de categorías
+        category: ["Precatecumenado", "Pascua", "Pentecostés"],
         cejilla: "5",
         nCan: "", //Nota del canto = nCan
         dbno: "1",
@@ -244,8 +230,8 @@ const allCantosData = [
 ╚════════════════════════════════════════════════════════════════╝  */
    {
         id: "atisenorenmiclamorimploro",
-        tt: "A Ti, Señor, En Mi Clamor Imploro",
-        title: "A Ti, Señor, En Mi Clamor Imploro",
+        tt: "A ti, Señor, en mi clamor imploro",
+        title: "A ti, Señor, en mi clamor imploro",
         subtitle: "Salmo 142 (141)",
         category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
         cejilla: "2",
@@ -262,12 +248,12 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=atisenorlevantomialma",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,327)", sC: "as"},
+            { line: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,327)", sC: "as ta"},
             { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (La,m,327)", sC: "as"},
             { line: "A TI DERRAMO MI LAMENTO,, (La,7,29)", sC: "as"},
             { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,,29)(Mi,,222)", sC: "as"},
             
-            { line: "Siento que el espíritu en mí se apaga, , (Re,m,15)", sC: "mt"},
+            { line: "Siento que el espíritu en mí se apaga, , (Re,m,15)", sC: "mt tc"},
             { line: "más tú conoces mi sendero. , (Mi,7,250)", sC: ""},
             { line: "Mira, Señor, que en el camino,, (La,m,15)(Re,m,250)", sC: "mt"},
             { line: "mira, Señor, que me han tendido un lazo. , (La,m,250)", sC: ""},
@@ -276,12 +262,12 @@ const allCantosData = [
             { line: "Que huye de mí todo consuelo,, (Re,m,15)", sC: ""},
             { line: "que no hay nadie que se cuide de mi alma., (Fa,m,15)(Mi,7,250)", sC: ""},
 
-            { line: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "as mt"},
+            { line: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "ta as mt"},
             { line: "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,, (Mi,7,250)", sC: "as"},
             { line: "TÚ ERES MI PORCIÓN EN ESTA TIERRA,, (Fa,,15)", sC: "as"},
             { line: "MI ÚNICA FELICIDAD., (Mi,,250)", sC: "as"},
     ], lder: [
-            { line: "Escúchame, Señor, que estoy llorando,, (Re,m,15)(Mi,,250)", sC: ""},
+            { line: "Escúchame, Señor, que estoy llorando,, (Re,m,15)(Mi,,250)", sC: "tc"},
             { line: "estoy tan deprimido., (Fa,,15)(Mi,,250)", sC: ""},
             { line: "¡Líbrame tú de estos enemigos, (Fa,,15)", sC: ""},
             { line: "que son más fuertes que yo!, (Sol,,15)(Mi,,250)", sC: ""},
@@ -332,10 +318,10 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=atisenorsedebelaalabanzaension",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "A TI, SEÑOR, LEVANTO MI ALMA,, (La,m,15)(Mi,,250)", sC: "as"},
+            { line: "A TI, SEÑOR, LEVANTO MI ALMA,, (La,m,15)(Mi,,250)", sC: "ta as"},
             { line: "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)", sC: "as"},
 
-            { line: "En ti confío, Señor,, (La,m,16)(Mi,,154)", sC: "mt"},
+            { line: "En ti confío, Señor,, (La,m,16)(Mi,,154)", sC: "mt tc"},
             { line: "no triunfen sobre mí mis enemigos., (Re,m,215)(Fa,,250)(Mi,,293)", sC: ""},
             { line: "Muéstrame, Señor, tu camino,, (La,m,15)(Mi,,255)", sC: ""},
             { line: "enséñame, Señor, tu sendero., (Re,m,186)(Fa,,222)(Mi,,254)", sC: ""},
@@ -346,7 +332,7 @@ const allCantosData = [
            triggerLine: "A TI, SEÑOR, LEVANTO MI ALMA, (La,m,15)(Mi,,250)", sC: "mt as ta", lines: [
                 { line: "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)", sC: "as"},  ]},            
 
-            { line: "Acuérdate, Señor, de tu ternura,, (La,m,15)(Mi,,270)", sC: "mt"},
+            { line: "Acuérdate, Señor, de tu ternura,, (La,m,15)(Mi,,270)", sC: "mt tc"},
             { line: "de tu inmensa compasión, que son de siempre., (Re,m,275)(Fa,,315)(Mi,,393)", sC: ""},
             { line: "De mis pecados, Señor, no te acuerdes,, (La,m,15)(Mi,,322)", sC: ""},
             { line: "acuérdate, Señor, que eres misericordia., (Re,m,192)(Fa,,239)(Mi,,339)", sC: ""},
@@ -363,87 +349,69 @@ const allCantosData = [
 
 ]}, // ULTIMA LINEA DEL CANTO: A TI, SEÑOR, LEVANTO MI ALMA
 // SIGUIENTE CANTO DEBAJO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-];
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "atisenorsedebelaalabanzaension",
+        tt: "A Ti, Señor, Se Debe La Alabanza En Sión",
+        title: "A Ti, Señor, Se Debe La Alabanza En Sión",
+        subtitle: "Salmo 65 (64)",
+        category: ["PreCatecumenado","Penitencial"],
+        cejilla: "3",
+        nCan: "",
+        dbno: "6",
+        notes: "",
+        audioSrc: "/audio/atisenorsedebelaalabanzaension.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=atisenorlevantomialma",
+        sig: "/resucito/src/index.html?canto=abbapadre",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "A ti, Señor, se debe la alabanza, en Sión., (Re,m,15)(La,7,250)", sC: ""},
+            { line: "A ti se te cumple el voto, en Jerusalén., (Re,m,15)", sC: ""},
+            { line: "A ti que escuchas la oración,, (Sol,m,15)(Re,m,250)", sC: ""},
+            { line: "viene todo mortal, viene todo mortal., (La,7,15)(Re,m,250)", sC: ""},
+            { line: "A TI QUE ESCUCHAS LA ORACIÓN, (Si,,15)(La,7,250)", sC: "mt as"},
+            { line: "VIENE TODO MORTAL,, (Si,,15)", sC: "as"},
+            { line: "VIENE TODO MORTAL., (La,7,15)", sC: "as"},
+            { line: "Pesan sobre nosotros nuestros pecados,, (Re,m,15)(La,7,250)", sC: "mt"},
+            { line: "mas tú perdonas nuestras culpas., (Re,m,15)", sC: ""},
+            { line: "Dichoso el que tú eliges, el que tú llamas,, (La,7,15)", sC: ""},
+            { line: "vivirá en tus atrios., (Re,m,15)", sC: ""},
+            { line: "A ti que escuchas la oración,, (Sol,m,15)(Re,m,250)", sC: "mt"},
+            { line: "viene todo mortal, viene todo mortal., (La,7,15)(Re,m,250)", sC: ""},
+  
+            { type: "collapsible-block",
+                id: "asamblea_anadie_1",
+          initialState: "collapsed",
+           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si,,15)(La,7,250)", sC: "mt as ta", lines: [
+            { line: "VIENE TODO MORTAL,, (Si,,15)", sC: "as"},
+            { line: "VIENE TODO MORTAL., (La,7,15)", sC: "as"},  ]},
+ 
+    ], lder: [
+            { line: "Nos saciaremos de los bienes de tu casa,, (Re,m,15)(La,7,250)", sC: ""},
+            { line: "de la santidad de tu templo., (Re,m,15)", sC: ""},
+            { line: "Con los prodigios de tu amor tú nos hablas,, (La,7,15)", sC: ""},
+            { line: "con los portentos de tu justicia nos respondes., (Re,m,15)", sC: ""},
+
+            { line: "A ti que escuchas la oración,, (Sol,m,15)(Re,m,250)", sC: "mt"},
+            { line: "viene todo mortal, viene todo mortal., (La,7,15)(Re,m,250)", sC: ""},
+  
+            { type: "collapsible-block",
+                id: "asamblea_anadie_1",
+          initialState: "collapsed",
+           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si,,15)(La,7,250)", sC: "mt as ta", lines: [
+            { line: "VIENE TODO MORTAL,, (Si,,15)", sC: "as"},
+            { line: "VIENE TODO MORTAL., (La,7,15)", sC: "as"},  ]},
+ 
+]} // ULTIMA LINEA DEL CANTO: A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN
+// SIGUIENTE CANTO DEBAJO
+
+
+]
