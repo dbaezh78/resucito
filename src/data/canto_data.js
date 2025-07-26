@@ -10,6 +10,11 @@
 */
 // Cada objeto en el array representa un canto.
 
+/*
+╔═══════════════════════════════════════════════════════════╗
+║                A LA VICTIMA PASCUAL                       ║
+╚═══════════════════════════════════════════════════════════╝  */
+
 const allCantosData = [
     {
         id: "alavictimapascual", // Un ID único para el canto
@@ -65,7 +70,10 @@ const allCantosData = [
             { line: "Tú, Rey victorioso, danos tú la salvación. (Fa,,10)(Mi,,356)", sC: "mt tc"},
         ]}
     ,
-    //  A NADIE DEMOS OCASIÓN DE TROPIEZO
+    /*
+╔════════════════════════════════════════════════════════════════╗
+║                A NADIE DEMOS OCASIÓN DE TROPIEZO               ║
+╚════════════════════════════════════════════════════════════════╝  */
     {
         id: "anadiedemosocasiondetropiezo", // Un ID único para el canto
         tt: "A nadie demos ocasión de tropiezo",
@@ -159,10 +167,13 @@ const allCantosData = [
 
             { line: "En pureza, paciencia y bondad, (Re,m,15) (Mi,,271)", sC: "mt tc" },
             { line: "en el Espíritu Santo, y en el poder de Dios. (Fa,,141) (Mi,,375)" },
-        ]}
-    ,
+        ]},
+        /*
+╔════════════════════════════════════════════════════╗
+║                A TI LEVANTO MIS OJOS               ║
+╚════════════════════════════════════════════════════╝  */
 
-        //  A TI LEVANTO MIS OJOS
+        //  
     {
         id: "atilevantomisojos", // Un ID único para el canto
         tt: "A ti levanto mis ojos",
@@ -254,27 +265,27 @@ const allCantosData = [
             { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,,29)(Mi,,222)", sC: "as"},
             
             { line: "Siento que el espíritu en mí se apaga, , (Re,m,15)", sC: "mt tc"},
-            { line: "más tú conoces mi sendero. , (Mi,7,250)", sC: ""},
+            { line: "más tú conoces mi sendero. , (Mi,7,239)", sC: ""},
             { line: "Mira, Señor, que en el camino,, (La,m,15)(Re,m,250)", sC: "mt"},
-            { line: "mira, Señor, que me han tendido un lazo. , (La,m,250)", sC: ""},
-            { line: "Mira, Señor, que a la derecha no hay ninguno,, (Mi,,15)(Mi,7,250)", sC: ""},
-            { line: "ninguno que me conozca. , (La,m,15)", sC: ""},
+            { line: "mira, Señor, que me han tendido un lazo. , (La,m,263)", sC: ""},
+            { line: "Mira, Señor, que a la derecha no hay ninguno,, (Mi,,95)(Mi,7,401)", sC: ""},
+            { line: "ninguno que me conozca. , (Fa,m,55)(La,m,214)", sC: ""},
             { line: "Que huye de mí todo consuelo,, (Re,m,15)", sC: ""},
-            { line: "que no hay nadie que se cuide de mi alma., (Fa,m,15)(Mi,7,250)", sC: ""},
+            { line: "que no hay nadie que se cuide de mi alma., (Fa,m,135)(Mi,7,370)", sC: ""},
 
-            { line: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "ta as mt"},
+            { line: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,199)", sC: "ta as mt"},
             { line: "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,, (Mi,7,250)", sC: "as"},
             { line: "TÚ ERES MI PORCIÓN EN ESTA TIERRA,, (Fa,,15)", sC: "as"},
-            { line: "MI ÚNICA FELICIDAD., (Mi,,250)", sC: "as"},
+            { line: "MI ÚNICA FELICIDAD., (Mi,,178)", sC: "as"},
     ], lder: [
-            { line: "Escúchame, Señor, que estoy llorando,, (Re,m,15)(Mi,,250)", sC: "tc"},
-            { line: "estoy tan deprimido., (Fa,,15)(Mi,,250)", sC: ""},
+            { line: "Escúchame, Señor, que estoy llorando,, (Re,m,15)(Mi,,318)", sC: "tc"},
+            { line: "estoy tan deprimido., (Fa,,32)(Mi,,166)", sC: ""},
             { line: "¡Líbrame tú de estos enemigos, (Fa,,15)", sC: ""},
-            { line: "que son más fuertes que yo!, (Sol,,15)(Mi,,250)", sC: ""},
+            { line: "que son más fuertes que yo!, (Sol,,58)(Mi,,258)", sC: ""},
             { line: "¡Saca mi alma de esta cárcel, (La,m,15)", sC: ""},
-            { line: "y yo daré gracias a tu Nombre!, (Sol,,15)(Mi,,250)", sC: ""},
-            { line: "En torno a mí los santos harán corro,, (Re,m,15)", sC: ""},
-            { line: "me felicitarán por tu favor hacia mí. , (Fa,,15)(Mi,,250)", sC: ""},
+            { line: "y yo daré gracias a tu Nombre!, (Sol,,11)(Mi,,228)", sC: ""},
+            { line: "En torno a mí los santos harán corro,, (Re,m,48)", sC: ""},
+            { line: "me felicitarán por tu favor hacia mí. , (Fa,,115)(Mi,,331)", sC: ""},
   
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
@@ -287,10 +298,10 @@ const allCantosData = [
             { type: "collapsible-block",
                 id: "asamblea_anadie_2",
           initialState: "collapsed",
-       triggerLine: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,250)", sC: "mt as ta", lines: [
+       triggerLine: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,199)", sC: "mt as ta", lines: [
             { line: "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,, (Mi,7,250)", sC: "as"},
             { line: "TÚ ERES MI PORCIÓN EN ESTA TIERRA,, (Fa,,15)", sC: "as"},
-            { line: "MI ÚNICA FELICIDAD., (Mi,,250)", sC: "as"},  ]},
+            { line: "MI ÚNICA FELICIDAD., (Mi,,178)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: A Ti, Señor, En Mi Clamor Imploro
 // SIGUIENTE CANTO DEBAJO 
 
