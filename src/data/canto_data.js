@@ -26,6 +26,7 @@ const allCantosData = [
         nCan: "", //Nota del canto = nCan
         dbno: "1",
         notes: "Este canto se usa en la liturgia de Pascua.",
+        mant: "No",
         audioSrc: "/audio/alavictimapascual.mp3",
         // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -93,6 +94,7 @@ const allCantosData = [
         nCan: "Notas",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
+        mant: "No",
         audioSrc: "/audio/anadiedemosocasiondetropiezo.mp3",
         lizq: [
             { line: "Hermanos, a nadie demos ocasión de tropiezo, (La,m,16)(Re,m,410)", sC: "tc" },
@@ -193,6 +195,7 @@ const allCantosData = [
         nCan: "Notas",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
+        mant: "No",
         audioSrc: "/audio/atilevantomisojos.mp3",
 
         lizq: [
@@ -249,6 +252,7 @@ const allCantosData = [
         nCan: "",
         dbno: "4",
         notes: "",
+        mant: "No",
         audioSrc: "/audio/atisenorenmiclamorimploro.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -319,6 +323,7 @@ const allCantosData = [
         nCan: "",
         dbno: "5",
         notes: "",
+        mant: "No",
         audioSrc: "/audio/atisenorlevantomialma.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -374,6 +379,7 @@ const allCantosData = [
         nCan: "",
         dbno: "6",
         notes: "",
+        mant: "No",
         audioSrc: "/audio/atisenorsedebelaalabanzaension.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -384,45 +390,91 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=abbapadre",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "A ti, Señor, se debe la alabanza, en Sión., (Re,m,15)(La,7,250)", sC: ""},
-            { line: "A ti se te cumple el voto, en Jerusalén., (Re,m,15)", sC: ""},
-            { line: "A ti que escuchas la oración,, (Sol,m,15)(Re,m,250)", sC: ""},
-            { line: "viene todo mortal, viene todo mortal., (La,7,15)(Re,m,250)", sC: ""},
-            { line: "A TI QUE ESCUCHAS LA ORACIÓN, (Si,,15)(La,7,250)", sC: "mt as"},
-            { line: "VIENE TODO MORTAL,, (Si,,15)", sC: "as"},
-            { line: "VIENE TODO MORTAL., (La,7,15)", sC: "as"},
-            { line: "Pesan sobre nosotros nuestros pecados,, (Re,m,15)(La,7,250)", sC: "mt"},
-            { line: "mas tú perdonas nuestras culpas., (Re,m,15)", sC: ""},
-            { line: "Dichoso el que tú eliges, el que tú llamas,, (La,7,15)", sC: ""},
-            { line: "vivirá en tus atrios., (Re,m,15)", sC: ""},
-            { line: "A ti que escuchas la oración,, (Sol,m,15)(Re,m,250)", sC: "mt"},
-            { line: "viene todo mortal, viene todo mortal., (La,7,15)(Re,m,250)", sC: ""},
+            { line: "A ti, Señor, se debe la alabanza, en Sión., (Re,m,15)(La,7,364)", sC: ""},
+            { line: "A ti se te cumple el voto, en Jerusalén., (Re,m,342)", sC: ""},
+            { line: "A ti que escuchas la oración,, (Sol,m,28)(Re,m,246)", sC: ""},
+            { line: "viene todo mortal, viene todo mortal., (La,7,156)(Re,m,330)", sC: ""},
+
+            { line: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "mt as"},
+            { line: "VIENE TODO MORTAL,, (Si♭,,25)", sC: "as"},
+            { line: "VIENE TODO MORTAL., (La,7,189)", sC: "as"},
+
+            { line: "Pesan sobre nosotros nuestros pecados,, (Re,m,15)(La,7,340)", sC: "mt"},
+            { line: "mas tú perdonas nuestras culpas., (Re,m,273)", sC: ""},
+            { line: "Dichoso el que tú eliges, el que tú llamas,, (La,7,345)", sC: ""},
+            { line: "vivirá en tus atrios., (Re,m,137)", sC: ""},
+            { line: "A ti que escuchas la oración,, (Sol,m,31)(Re,m,247)", sC: "mt"},
+            { line: "viene todo mortal, viene todo mortal., (La,7,158)(Re,m,333)", sC: ""},
   
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
           initialState: "collapsed",
-           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si,,15)(La,7,250)", sC: "mt as ta", lines: [
-            { line: "VIENE TODO MORTAL,, (Si,,15)", sC: "as"},
-            { line: "VIENE TODO MORTAL., (La,7,15)", sC: "as"},  ]},
+           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "mt as ta", lines: [
+            { line: "VIENE TODO MORTAL,, (Si♭,,25)", sC: "as"},
+            { line: "VIENE TODO MORTAL., (La,7,189)", sC: "as"},  ]},
  
     ], lder: [
-            { line: "Nos saciaremos de los bienes de tu casa,, (Re,m,15)(La,7,250)", sC: ""},
-            { line: "de la santidad de tu templo., (Re,m,15)", sC: ""},
-            { line: "Con los prodigios de tu amor tú nos hablas,, (La,7,15)", sC: ""},
-            { line: "con los portentos de tu justicia nos respondes., (Re,m,15)", sC: ""},
+            { line: "Nos saciaremos de los bienes de tu casa,, (Re,m,15)(La,7,361)", sC: ""},
+            { line: "de la santidad de tu templo., (Re,m,214)", sC: ""},
+            { line: "Con los prodigios de tu amor tú nos hablas,, (La,7,360)", sC: ""},
+            { line: "con los portentos de tu justicia nos respondes., (Re,m,380)", sC: ""},
 
-            { line: "A ti que escuchas la oración,, (Sol,m,15)(Re,m,250)", sC: "mt"},
-            { line: "viene todo mortal, viene todo mortal., (La,7,15)(Re,m,250)", sC: ""},
+            { line: "A ti que escuchas la oración,, (Sol,m,31)(Re,m,246)", sC: "mt"},
+            { line: "viene todo mortal, viene todo mortal., (La,7,156)(Re,m,331)", sC: ""},
   
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
           initialState: "collapsed",
-           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si,,15)(La,7,250)", sC: "mt as ta", lines: [
-            { line: "VIENE TODO MORTAL,, (Si,,15)", sC: "as"},
-            { line: "VIENE TODO MORTAL., (La,7,15)", sC: "as"},  ]},
+           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "mt as ta", lines: [
+            { line: "VIENE TODO MORTAL,, (Si♭,,25)", sC: "as"},
+            { line: "VIENE TODO MORTAL., (La,7,189)", sC: "as"},  ]},
  
-]} // ULTIMA LINEA DEL CANTO: A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN
+]}, // ULTIMA LINEA DEL CANTO: A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN
 // SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════╗
+║                ABBÁ, PADRE               ║
+╚══════════════════════════════════════════╝  */
+   {
+        id: "abbapadre",
+        tt: "Abbá, Padre",
+        title: "Abbá, Padre",
+        subtitle: "Romanos 8,15–17",
+        category: ["PreCatecumenado","Laudes/Visperas","Comunión","Nuevo Testamento"],
+        cejilla: "3",
+        nCan: "",
+        dbno: "7",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/abbapadre.mp3",
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=atisenorsedebelaalabanzaension",
+        sig: "/resucito/src/index.html?canto=abraham",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡ABBÁ, PADRE, PADRE!, (Do,,9)(Sol,,90)(Fa,,174)(Do,,220)", sC: "as"},
+            { line: "No hemos recibido, (La,m,17)", sC: "mt"},
+            { line: "el espíritu de siervos, (Re,m,56)(La,m,147)", sC: ""},
+            { line: "para recaer en el temor,, (Fa,,10)(Mi,,209)", sC: ""},
+            { line: "para recaer en el temor., (Fa,,10)(Mi,,209)", sC: ""},
+
+            { line: "ESTE MISMO ESPÍRITU, (La,m,15)", sC: "mt as"},
+            { line: "DA TESTIMONIO A NUESTRO ESPÍRITU, (Re,m,15)(La,m,111)(Fa,,165)(Mi,,320)", sC: "as"},
+            { line: "DE QUE SOMOS HIJOS DE DIOS., (Mi,7,15)(La,m,278)", sC: "as"},
+            { line: "Y, SI HIJOS, TAMBIÉN HEREDEROS,, (Sol,7,61)(Do,,281)", sC: "mt as"},
+            { line: "COHEREDEROS DE CRISTO,, (Mi,7,214)", sC: "as"},
+            { line: "HEREDEROS DE DIOS., (La,m,189)", sC: "as"},
+            { line: "Y, SI HIJOS, TAMBIÉN HEREDEROS,, (Sol,7,63)(Do,,284)", sC: "mt as"},
+            { line: "COHEREDEROS DE CRISTO,, (Mi,7,213)", sC: "as"},
+            { line: "HEREDEROS DE DIOS., (La,m,179)", sC: "as"},
+            { line: "¡ABBÁ, PADRE, PADRE!, (Do,,15)(Sol,,89)(Fa,,173)(Do,,214)", sC: "as mt"},
+
+    ], lder: []}, // ULTIMA LINEA DEL CANTO: ABBÁ, PADRE
+// SIGUIENTE CANTO DEBAJO
+
 
 
 ]

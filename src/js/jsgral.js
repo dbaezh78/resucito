@@ -23,7 +23,7 @@ const positionConfigs = {
     'tablet': { // Para anchos de pantalla entre 768px y 991px
         minWidth: 768,
         maxWidth: 991,
-        factor: 1.36, // Factor por defecto, ajustar según necesidad
+        factor: 1.34, // Factor por defecto, ajustar según necesidad
     },
     'desktop-small': { // Para anchos de pantalla entre 992px y 1279px
         minWidth: 992,

@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Selecciona todos los elementos de acordes que tienen la clase 'nota-posicionada'
     const chordNotes = document.querySelectorAll('.nota-posicionada');
 
+    if (typeof window.currentLoadedCantoData === 'undefined' || window.currentLoadedCantoData.mant !== "Si") {
+    console.log("showAcorde.js deshabilitado para este canto (mant: No o no definido).");
+    return; // Salir de la función si el mantenimiento no está habilitado
+}
+
     chordNotes.forEach(noteSpan => {
         let isDragging = false; // Bandera para saber si se está arrastrando
         let initialMouseX;      // Posición inicial del ratón al empezar a arrastrar
