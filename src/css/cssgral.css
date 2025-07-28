@@ -429,7 +429,7 @@ display: none;}
 
 .nota-posicionada {
     position: absolute;
-    top: 0;
+    /*top: 0; Antes posicion del acorde*/
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     font-weight: bold;
     color: rgb(196 76 75);
@@ -440,6 +440,10 @@ display: none;}
     z-index: 10;
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
+
+    @media (min-width: 384px) {top: 0px;}
+    @media (min-width: 768px) {top: -2px;}
+    @media (min-width: 992px) {top: 3px;}
 }
 
 .nota-posicionada:hover {

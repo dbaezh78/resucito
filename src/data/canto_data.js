@@ -547,7 +547,7 @@ const allCantosData = [
         nCan: "",
         dbno: "9",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/aclamadalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -561,24 +561,30 @@ const allCantosData = [
             { line: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "as"},
             { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
             { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,58)(Sol,,154)(La,,297)", sC: "as"},
-            { line: "Acercaos a Él, (Re,m,15)(La,7,250)", sC: "mt ast91"},
-            { line: "con gritos de júbilo., (Re,m,15)", sC: ""},
+
+            { line: "Acercaos a Él, (Re,m,55)(La,7,138)", sC: "mt ast91"},
+            { line: "con gritos de júbilo., (Re,m,175)", sC: ""},
+            
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
           initialState: "collapsed",
            triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
+
             { line: "Porque el Señor es nuestro Dios, (Re,m,15)(La,7,250)", sC: "mt ast92"},
             { line: "y nosotros su pueblo., (Re,m,15)", sC: ""},
+
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
           initialState: "collapsed",
            triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
-            { line: "¡Entrad por sus puertas , (Re,m,15)(La,7,250)", sC: "mt ast93"},
-            { line: "con himnos de alegría!, (Re,m,15)", sC: ""},
+
+            { line: "¡Entrad por sus puertas , (Re,m,15)(La,7,234)", sC: "mt ast93"},
+            { line: "con himnos de alegría!, (Re,m,205)", sC: ""},
+
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
           initialState: "collapsed",
@@ -586,17 +592,20 @@ const allCantosData = [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
     ], lder: [
-            { line: "Bendecid su nombre, (Re,m,15)(La,7,250)", sC: "mt ast94"},
-            { line: "dándole gracias, (Re,m,15)", sC: ""},
+            { line: "Bendecid su nombre, (Re,m,73)(La,7,207)", sC: "mt ast94"},
+            { line: "dándole gracias, (Re,m,135)", sC: ""},
+
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
           initialState: "collapsed",
            triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
-            { line: "Porque es bueno el Señor,, (Re,m,15)(La,7,250)", sC: "mt ast95"},
-            { line: "es eterno su amor, (Re,m,15)(La,7,250)", sC: "ast96"},
-            { line: "con nosotros., (Re,m,15)", sC: ""},
+
+            { line: "Porque es bueno el Señor,, (Re,m,15)(La,7,254)", sC: "mt ast95"},
+            { line: "es eterno su amor, (Re,m,15)(La,7,138)", sC: "ast96"},
+            { line: "con nosotros., (Re,m,103)", sC: ""},
+
             { type: "collapsible-block",
                 id: "asamblea_anadie_1",
           initialState: "collapsed",
@@ -605,6 +614,103 @@ const allCantosData = [
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ACLAMAD AL SEÑOR
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                AL DESPERTAR               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "aldespertar",
+        tt: "Al Despertar",
+        title: "Al Despertar",
+        subtitle: "Salmo 17 (16) ",
+        category: ["PreCatecumenado","Cuaresma","Antiguo Testamento","Penitencial"],
+        cejilla: "3",
+        nCan: "",
+        dbno: "10",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/aldespertar.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=aclamadalsenor",
+        sig: "/resucito/src/index.html?canto=alabadalsenorenelcielo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "AL DESPERTAR, (Si,m,15)", sC: "mt as ta"},
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)", sC: "as"},
+            { line: "AL DESPERTAR, (Mi,m,127)", sC: "as"},
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)", sC: "as"},
+
+            { line: "Escucha, Señor, mi oración,, (Mi,m,15)(Si,m,241)", sC: "mt tc"},
+            { line: "atiende, Señor, a mi clamor., (Mi,m,15)(Si,m,250)", sC: ""},
+            { line: "Presta oídos a mi súplica,, (Sol,,11)(Fa#,,188)", sC: ""},
+            { line: "que mis labios no traicionan, Señor,, (Sol,,96)(Fa#,,322)", sC: ""},
+            { line: "salga de ti la sentencia., (Sol,,11)(Fa#,,175)", sC: ""},
+            { line: "Porque tus ojos ven, tus ojos ven mi rectitud., (Mi,m,119)(Fa#,,404)", sC: ""},
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "AL DESPERTAR, (Si,m,15)", sC: "mt as ta", lines: [
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)", sC: "as"},
+            { line: "AL DESPERTAR, (Mi,m,127)", sC: "as"},
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)", sC: "as"},  ]},
+
+            { line: "Sondea, Señor, mi corazón,, (Mi,m,15)(Si,m,238)", sC: "mt tc"},
+            { line: "escrútalo de noche, Señor,, (Mi,m,15)(Si,m,233)", sC: ""},
+            { line: "pruébame al crisol, pruébame al crisol., (Sol,,15)(Fa#,,229)", sC: ""},
+            { line: "Porque tú sabes que no hay malicia en mí,, (Sol,,15)(Fa#,,394)", sC: ""},
+            { line: "que mi boca no miente como hacen los hombres., (Sol,,15)(Fa#,,299)", sC: ""},
+            { line: "Que he guardado tu palabra,, (Mi,m,136)", sC: ""},
+            { line: "que no he seguido los caminos del violento,, (Fa#,,377)", sC: ""},
+            { line: "que a tus huellas he ajustado mis pasos,, (Sol,,123)(Fa#,,342)", sC: ""},
+            { line: "que no vacilaré, que no vacilaré., (Mi,m,58)(Fa#,,294)", sC: ""},
+
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "AL DESPERTAR, (Si,m,15)", sC: "mt as ta", lines: [
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)", sC: "as"},
+            { line: "AL DESPERTAR, (Mi,m,127)", sC: "as"},
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)", sC: "as"},  ]},
+    ], lder: [
+            { line: "A Ti te invoco, Señor,, (Mi,m,15)(Si,m,178)", sC: "mt tc"},
+            { line: "concédeme, Señor, una respuesta,, (Mi,m,51)(Si,m,294)", sC: ""},
+            { line: "muéstrame los prodigios de tu amor., (Sol,,13)(Fa#,,196)", sC: ""},
+            { line: "Porque tú salvas al que se apoya en ti,, (Sol,,112)(Fa#,,356)", sC: ""},
+            { line: "porque tú ayudas, (Sol,,125)", sC: ""},
+            { line: "al que se refugia a tu derecha., (Fa#,,244)", sC: ""},
+            { line: "Como a la niña de tus ojos guárdame,, (Mi,m,15)(Fa#,,291)", sC: ""},
+            { line: "a la sombra de tus alas escóndeme,, (Mi,m,53)(Fa#,,265)", sC: ""},
+            { line: "mira que quieren matarme., (Sol,,21)(Fa#,,210)", sC: ""},
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "AL DESPERTAR, (Si,m,15)", sC: "mt as ta", lines: [
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)", sC: "as"},
+            { line: "AL DESPERTAR, (Mi,m,127)", sC: "as"},
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)", sC: "as"},  ]},
+
+            { line: "Míralos, están cerrados en su orgullo,, (Mi,m,15)(Si,m,322)", sC: "mt tc"},
+            { line: "hablan, la arrogancia está en su boca., (Mi,m,15)(Si,m,330)", sC: ""},
+            { line: "Avanzan contra mí, avanzan contra mí., (Sol,,15)(Fa#,,216)", sC: ""},
+            { line: "Ayúdame tú, Señor,, (Sol,,15)(Fa#,,167)", sC: ""},
+            { line: "líbrame de los hombres de este mundo,, (Sol,,15)(Fa#,,332)", sC: ""},
+            { line: "de los hombres cuyo premio es esta vida., (Mi,m,80)(Fa#,,362)", sC: ""},
+            { line: "Cólmalos de tus bienes, Señor,, (Sol,,15)(Fa#,,273)", sC: ""},
+            { line: "llénales el vientre y que sus hijos se sacien., (Sol,,11)(Fa#,,361)", sC: ""},
+            { line: "Que yo al despertar, que yo por tu amor, (Mi,m,58)", sC: ""},
+            { line: "me saciaré de tu rostro, Señor., (Sol,,96)(Fa#,,272)", sC: ""},
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "AL DESPERTAR, (Si,m,15)", sC: "mt as ta", lines: [
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)", sC: "as"},
+            { line: "AL DESPERTAR, (Mi,m,127)", sC: "as"},
+            { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: AL DESPERTAR
+// SIGUIENTE CANTO DEBAJO
+
+
+
 
 
 
