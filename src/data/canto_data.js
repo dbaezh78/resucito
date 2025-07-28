@@ -439,13 +439,13 @@ const allCantosData = [
         id: "abbapadre",
         tt: "Abbá, Padre",
         title: "Abbá, Padre",
-        subtitle: "Romanos 8,15–17",
+        subtitle: "Rm 8,15–17",
         category: ["PreCatecumenado","Laudes/Visperas","Comunión","Nuevo Testamento"],
         cejilla: "3",
         nCan: "",
         dbno: "7",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/abbapadre.mp3",
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -455,13 +455,13 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=abraham",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "¡ABBÁ, PADRE, PADRE!, (Do,,9)(Sol,,90)(Fa,,174)(Do,,220)", sC: "as"},
-            { line: "No hemos recibido, (La,m,17)", sC: "mt"},
+            { line: "¡ABBÁ, PADRE, PADRE!, (Do,,9)(Sol,,90)(Fa,,174)(Do,,220)", sC: "ta as"},
+            { line: "No hemos recibido, (La,m,17)", sC: "mt tc"},
             { line: "el espíritu de siervos, (Re,m,56)(La,m,147)", sC: ""},
             { line: "para recaer en el temor,, (Fa,,10)(Mi,,209)", sC: ""},
             { line: "para recaer en el temor., (Fa,,10)(Mi,,209)", sC: ""},
 
-            { line: "ESTE MISMO ESPÍRITU, (La,m,15)", sC: "mt as"},
+            { line: "ESTE MISMO ESPÍRITU, (La,m,15)", sC: "mt as ta"},
             { line: "DA TESTIMONIO A NUESTRO ESPÍRITU, (Re,m,15)(La,m,111)(Fa,,165)(Mi,,320)", sC: "as"},
             { line: "DE QUE SOMOS HIJOS DE DIOS., (Mi,7,15)(La,m,278)", sC: "as"},
             { line: "Y, SI HIJOS, TAMBIÉN HEREDEROS,, (Sol,7,61)(Do,,281)", sC: "mt as"},
@@ -474,6 +474,144 @@ const allCantosData = [
 
     ], lder: []}, // ULTIMA LINEA DEL CANTO: ABBÁ, PADRE
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                ABRAHAM               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "abraham",
+        tt: "Abraham",
+        title: "Abraham",
+        subtitle: "Génesis 18,1–5 – Teofanía de Mambré",
+        category: ["PreCatecumenado","Laudes","Visperas","Entrada","Antiguo Testamento"],
+        cejilla: "3",
+        nCan: "",
+        dbno: "8",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/abraham.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=abbapadre",
+        sig: "/resucito/src/index.html?canto=aclamadalsenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Hacía calor aquel día, (La,m,15)m", sC: ""},
+            { line: "cuando Abraham, (Re,m,28)(Mi,,139)", sC: ""},
+            { line: "estaba sentado delante de su tienda., (La,m,307)", sC: ""},
+            { line: "Hacía calor aquel día, ", sC: "mt"},
+            { line: "cuando Abraham, (Re,m,27)(Mi,,137)", sC: ""},
+            { line: "estaba sentado, ", sC: ""},
+            { line: "cerca del encinar de Mambré., (La,m,266)", sC: ""},
+            { line: "Alzando los ojos, miró, (Sol,,125)(Fa,,201)", sC: "mt"},
+            { line: "y tres hombres de pie, (Mi,,199)", sC: ""},
+            { line: "estaban delante., (La,m,121)", sC: ""},
+            { line: "En cuanto los vio,, (Mi,,154)", sC: "mt"},
+            { line: "se inclinó hasta el suelo y dijo:, (La,m,267)", sC: ""},
+            { line: "«Oh Señor mío,, (Sol,,123)", sC: "mt"},
+            { line: "no pases, te ruego, sin detenerte., (Fa,,143)(Mi,,284)", sC: ""},
+            { line: "«SIN DETENERTE,, (La,m,119)", sC: "as mt"},
+            { line: "NO PASES, TE RUEGO,, (Sol,,168)", sC: "as"},
+            { line: "SIN DETENERTE, SIN DETENERTE»., (Fa,,112)(Mi,,274)", sC: "as"},
+    ], lder: [
+            { line: "«Os traeré un poco de agua,, (La,m,15)(Mi,,221)", sC: ""},
+            { line: "os lavaré los pies, ", sC: ""},
+            { line: "y reposaréis a la sombra., (La,m,180)", sC: ""},
+            { line: "Os traeré un bocado,, (Mi,,167)", sC: "mt"},
+            { line: "os reconfortaréis, ", sC: ""},
+            { line: "y lúego seguiréis adelante., (La,m,214)", sC: ""},
+            { line: "No por casualidad, (Sol,,154)", sC: "mt"},
+            { line: "habéis pasado hoy delante de mí., (Fa,,161)(Mi,,310)", sC: ""},
+            { line: "«OH SEÑOR MÍO,, (La,m,135)", sC: "as mt"},
+            { line: "NO PASES, TE RUEGO,, (Sol,,171)", sC: "as"},
+            { line: "SIN DETENERTE, SIN DETENERTE., (Fa,,106)(Mi,,270)", sC: "as"},
+            { line: "SIN DETENERTE,, (La,m,110)", sC: "as mt"},
+            { line: "NO PASES, TE RUEGO,, (Sol,,170)", sC: "as"},
+            { line: "SIN DETENERTE, SIN DETENERTE»., (Fa,,108)(Mi,,273)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: ABRAHAM
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                ACLAMAD AL SEÑOR               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "aclamadalsenor",
+        tt: "Aclamad Al Señor",
+        title: "Aclamad Al Señor",
+        subtitle: "Salmo 100 (99)",
+        category: ["PreCatecumenado","Pascua"],
+        cejilla: "",
+        nCan: "",
+        dbno: "9",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/aclamadalsenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=abraham",
+        sig: "/resucito/src/index.html?canto=aldespertar",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "as"},
+            { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
+            { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,58)(Sol,,154)(La,,297)", sC: "as"},
+            { line: "Acercaos a Él, (Re,m,15)(La,7,250)", sC: "mt ast91"},
+            { line: "con gritos de júbilo., (Re,m,15)", sC: ""},
+            { type: "collapsible-block",
+                id: "asamblea_anadie_1",
+          initialState: "collapsed",
+           triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
+                { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
+                { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
+            { line: "Porque el Señor es nuestro Dios, (Re,m,15)(La,7,250)", sC: "mt ast92"},
+            { line: "y nosotros su pueblo., (Re,m,15)", sC: ""},
+            { type: "collapsible-block",
+                id: "asamblea_anadie_1",
+          initialState: "collapsed",
+           triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
+                { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
+                { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
+            { line: "¡Entrad por sus puertas , (Re,m,15)(La,7,250)", sC: "mt ast93"},
+            { line: "con himnos de alegría!, (Re,m,15)", sC: ""},
+            { type: "collapsible-block",
+                id: "asamblea_anadie_1",
+          initialState: "collapsed",
+           triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
+                { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
+                { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Bendecid su nombre, (Re,m,15)(La,7,250)", sC: "mt ast94"},
+            { line: "dándole gracias, (Re,m,15)", sC: ""},
+            { type: "collapsible-block",
+                id: "asamblea_anadie_1",
+          initialState: "collapsed",
+           triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
+                { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
+                { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
+            { line: "Porque es bueno el Señor,, (Re,m,15)(La,7,250)", sC: "mt ast95"},
+            { line: "es eterno su amor, (Re,m,15)(La,7,250)", sC: "ast96"},
+            { line: "con nosotros., (Re,m,15)", sC: ""},
+            { type: "collapsible-block",
+                id: "asamblea_anadie_1",
+          initialState: "collapsed",
+           triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
+                { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
+                { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ACLAMAD AL SEÑOR
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
 
 
 

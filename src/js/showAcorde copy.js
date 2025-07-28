@@ -1,26 +1,6 @@
 // showAcorde.js - Script temporal para mover y mostrar la posición de los acordes
-// Este script es autónomo y se activa solo si el canto actual tiene mant: "Si"
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Obtener el ID del canto de la URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const cantoIdFromUrl = urlParams.get('canto');
-
-    // 2. Definir el ID del canto a cargar (usa un valor predeterminado si no hay en la URL)
-    const cantoIdToLoad = cantoIdFromUrl || "alavictimapascual"; 
-
-    // 3. Buscar el canto específico por su ID en la base de datos global
-    // Se asume que allCantosData está disponible globalmente desde canto_data.js
-    const currentCanto = allCantosData.find(canto => canto.id === cantoIdToLoad);
-
-    // 4. Verificar la propiedad 'mant' del canto actual
-    if (!currentCanto || currentCanto.mant !== "Si") {
-        console.log("showAcorde.js deshabilitado para este canto (mant: No o no definido).");
-        return; // Salir de la función si el mantenimiento no está habilitado
-    }
-
-    console.log("showAcorde.js habilitado para este canto (mant: Si).");
-
     // Selecciona todos los elementos de acordes que tienen la clase 'nota-posicionada'
     const chordNotes = document.querySelectorAll('.nota-posicionada');
 
@@ -36,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Aplica estilos para que sea simple, sin fondo y de color negro
         positionDisplay.style.cssText = `
             position: absolute;
-            top: -13px; /* -1.2em Posiciona el número un poco por encima del acorde */
-            left: 10px;
+            top: 0px; /* Posiciona el número un poco por encima del acorde */
+            left: 60px;
             font-size: 1.1em;
-            color: rgb(196 76 75);
+            color: gray;
             background: none;
             pointer-events: none; /* Permite hacer clic a través del texto para el acorde subyacente */
             white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
@@ -52,8 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const updatePositionDisplay = () => {
             // Obtiene el valor 'left' actual del estilo del elemento, lo convierte a número
             const currentLeftPx = parseFloat(noteSpan.style.left || 0);
-            // Actualiza el texto con la posición actual en píxeles
-            positionDisplay.textContent = `${currentLeftPx.toFixed(0)}`;
+            // Obtiene la unidad de posición conceptual original del dataset
+            const originalConceptualUnit = noteSpan.dataset.conceptualPositionUnit;
+            // Actualiza el texto con la posición original y la actual en píxeles
+            positionDisplay.textContent = ` ${currentLeftPx.toFixed(0)}`;
+            //positionDisplay.textContent = `Orig: ${originalConceptualUnit} | Curr: ${currentLeftPx.toFixed(0)}px`;
         };
 
         // Muestra la posición inicial del acorde al cargar la página

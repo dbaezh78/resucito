@@ -47,7 +47,7 @@ let chordSelectionModal;
 let chordListContainer;
 let cantoCategoriesContainer; // Nueva referencia para el contenedor de categorías
 let cantoContentWrapper; // Nueva referencia para el contenedor principal de las columnas
-let cejillaSelect; // Nueva referencia para el select de cejilla
+let cejillaSelect; // ADDED: Nueva referencia para el select de cejilla
 
 // Referencias para el control de audio
 let cantoAudioPlayer;
@@ -322,6 +322,7 @@ const renderParsedLine = (lineaParsed) => {
         noteSpan.classList.add('nota-posicionada');
 
         const transposedNoteName = transposeNote(noteInfo.originalNote, currentKeyOffset);
+        //noteSpan.textContent = transposedNoteName + noteInfo.type;
         // Deparación de la Nota o Acorde del Estado de la nota o el acorde
         noteSpan.textContent = transposedNoteName + (noteInfo.type ? ' ' : '') + noteInfo.type;
 
@@ -420,6 +421,28 @@ const renderCanto = () => {
     console.log("Canto rendering complete.");
 };
 
+const adjustNotePositions = () => {
+    const screenWidth = window.innerWidth;
+    const currentConfig = getCurrentPositionConfig(screenWidth);
+
+    // Ajustar notas en ambos contenedores
+    document.querySelectorAll('.linea-canto').forEach(lineaDiv => {
+        lineaDiv.querySelectorAll('.nota-posicionada').forEach(notaSpan => {
+            const conceptualPositionUnit = parseFloat(notaSpan.dataset.conceptualPositionUnit);
+            let adjustedPosition = conceptualPositionUnit;
+
+            const overrideKey = `p${conceptualPositionUnit}`;
+            if (currentConfig[overrideKey] !== undefined) {
+                adjustedPosition = currentConfig[overrideKey];
+            } else {
+                adjustedPosition = conceptualPositionUnit * currentConfig.factor;
+            }
+
+            notaSpan.style.left = `${adjustedPosition}px`;
+        });
+    });
+};
+
 const openChordSelectionModal = (currentDisplayedNoteClicked) => {
     clickedDisplayedNoteSemitone = noteToSemitone[currentDisplayedNoteClicked];
     chordListContainer.innerHTML = '';
@@ -438,21 +461,13 @@ const openChordSelectionModal = (currentDisplayedNoteClicked) => {
             }
 
             renderCanto(); // Esto ahora preservará el estado de los colapsables
-            closeChordSelectionModal(); // Cerrar la modal después de seleccionar
+            chordSelectionModal.style.display = 'none';
             updateShowAllAsambleaIcon(); // Actualizar el icono del botón de asamblea
         });
         chordListContainer.appendChild(chordItem);
     });
     chordSelectionModal.style.display = 'flex';
 };
-
-// Función para cerrar la modal de selección de acordes
-const closeChordSelectionModal = () => {
-    if (chordSelectionModal) {
-        chordSelectionModal.style.display = 'none';
-    }
-};
-
 
 // Nueva función para abrir la modal de imágenes de acordes
 const openChordImagesModal = () => {
@@ -527,30 +542,6 @@ window.addEventListener('resize', () => {
     resizeTimeout = setTimeout(adjustNotePositions, 100);
 });
 
-// Función para ajustar las posiciones de las notas después de renderizar
-const adjustNotePositions = () => {
-    const screenWidth = window.innerWidth;
-    const currentConfig = getCurrentPositionConfig(screenWidth);
-
-    // Ajustar notas en ambos contenedores
-    document.querySelectorAll('.linea-canto').forEach(lineaDiv => {
-        lineaDiv.querySelectorAll('.nota-posicionada').forEach(notaSpan => {
-            const conceptualPositionUnit = parseFloat(notaSpan.dataset.conceptualPositionUnit);
-            let adjustedPosition = conceptualPositionUnit;
-
-            const overrideKey = `p${conceptualPositionUnit}`;
-            if (currentConfig[overrideKey] !== undefined) {
-                adjustedPosition = currentConfig[overrideKey];
-            } else {
-                adjustedPosition = conceptualPositionUnit * currentConfig.factor;
-            }
-
-            notaSpan.style.left = `${adjustedPosition}px`;
-        });
-    });
-};
-
-
 // Función para renderizar las categorías como enlaces
 const renderCategories = (categoriesWithUrls) => {
     if (!cantoCategoriesContainer) {
@@ -613,7 +604,6 @@ let currentCantoData = { lizq: [], lder: [] };
 // Función de inicialización que será llamada desde cada archivo de canto
 const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     console.log("Initializing canto page with data:", cantoSpecificData);
-    
     // Asignar referencias a los elementos del DOM
     cantoLeftContainer = document.getElementById('canto-left-container');
     cantoRightContainer = document.getElementById('canto-right-container');
@@ -621,7 +611,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     chordListContainer = document.getElementById('chordList');
     cantoCategoriesContainer = document.getElementById('cantoCategories');
     cantoContentWrapper = document.querySelector('.canto-content-wrapper'); // Obtener el wrapper
-    cejillaSelect = document.getElementById('cejillaSelect'); // Obtener el select de cejilla
+    cejillaSelect = document.getElementById('cejillaSelect'); // ADDED: Obtener el select de cejilla
 
     // Referencias para el control de audio
     cantoAudioPlayer = document.getElementById('cantoAudioPlayer');
@@ -677,7 +667,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     if (!scrollIcon) console.error("Error: .scroll-icon no encontrado dentro de #startScroll.");
     if (!prevCantoBtn) console.error("Error: #prevCantoBtn no encontrado.");
     if (!nextCantoBtn) console.error("Error: #nextCantoBtn no encontrado.");
-    if (!cejillaSelect) console.error("Error: #cejillaSelect no encontrado.");
+    if (!cejillaSelect) console.error("Error: #cejillaSelect no encontrado."); // ADDED: Error check for cejillaSelect
 
 
     // Actualizar los títulos y subtítulos del canto
@@ -932,7 +922,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     }
 
 
-    // Lógica para la cejilla (corregida)
+    // ADDED: Lógica para la cejilla (corregida)
     if (cejillaSelect) {
         // Establecer el valor predeterminado si existe en los datos del canto
         if (cantoSpecificData.cejilla !== undefined && cantoSpecificData.cejilla !== null && cantoSpecificData.cejilla !== "") {
@@ -969,22 +959,5 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
         renderCategories(processedCategories);
     } else {
         console.warn("Advertencia: No se proporcionaron categorías procesadas o no es un array.");
-    }
-
-    // Event listeners para cerrar la modal de selección de acordes
-    if (chordSelectionModal) {
-        // Cerrar al hacer clic fuera del contenido del modal
-        chordSelectionModal.addEventListener('click', (event) => {
-            if (event.target === chordSelectionModal) { // Solo si se hace clic en el overlay
-                closeChordSelectionModal();
-            }
-        });
-
-        // Cerrar al presionar la tecla 'Escape'
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && chordSelectionModal.style.display === 'flex') {
-                closeChordSelectionModal();
-            }
-        });
     }
 };

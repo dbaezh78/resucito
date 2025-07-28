@@ -35,6 +35,55 @@
 
 /* ESTRUCTURA DE BIS*/
 
+.ast91, .ast92, .ast93, .ast94, .ast95, .ast96 {position: relative;min-height: 0px;}
+
+.ast91::before, .ast92::before, .ast93::before, .ast94::before, .ast95::before, .ast96::before 
+{
+    content: "*";
+    position: absolute;
+    align-content: center;
+    color: red;
+    width: max-content; /* Movido aquí */
+    font: icon;
+    font-weight: bold;
+}
+
+.ast91::before {
+    @media (min-width: 384px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 768px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 28%;margin-top: 0%;}
+}
+
+.ast92::before {
+    @media (min-width: 384px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 768px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 65%;margin-top: 0%;}
+}
+
+.ast93::before {
+    @media (min-width: 384px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 768px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 48%;margin-top: 0%;}
+}
+
+.ast94::before {
+    @media (min-width: 384px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 768px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 43%;margin-top: 0%;}
+}
+
+.ast95::before {
+    @media (min-width: 384px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 768px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 54%;margin-top: 0%;}
+}
+
+.ast96::before {
+    @media (min-width: 384px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 768px) {height: 40px;margin-left: 85%;margin-top: 0%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 38%;margin-top: 0%;}
+}
+
 .r1, .r2, .b1-1, .b1-2, .b3, .b12-1, .b12-2, .b14, .b18, .b1
  {
     position: relative;
