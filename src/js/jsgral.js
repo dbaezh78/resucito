@@ -1,5 +1,6 @@
 // jsgral.js - JavaScript General para todos los cantos
 
+
 // Definición de los acordes y su mapeo a semitonos (desde Do)
 const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
 // Mapeo de nombres de notas a su índice de semitono (Do=0, Do#=1, etc.)
@@ -986,5 +987,62 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
                 closeChordSelectionModal();
             }
         });
+    }
+
+    // INICIO DEL CÓDIGO A AÑADIR/MODIFICAR PARA LOS FONDOS
+    // Se obtienen referencias a los elementos del DOM
+    const currentMainWrapperElement = document.querySelector('.main-wrapper');
+    const currentBodyElement = document.body;
+    const currentContainerElement = document.querySelector('.container'); // NUEVO: Referencia al .container
+    // Se obtiene la categoría del canto actual desde los datos específicos del canto
+    const activeCantoCategory = cantoSpecificData.catCanto; 
+
+    // Primero, limpiar cualquier variable CSS dinámica de una carga anterior
+    // Esto asegura que los estilos de un canto anterior no persistan
+    currentMainWrapperElement.style.removeProperty('--dynamic-main-background');
+    currentBodyElement.style.removeProperty('--dynamic-body-background');
+    if (currentContainerElement) { // Verificar si el elemento existe antes de manipularlo
+        currentContainerElement.style.removeProperty('--dynamic-main-background'); // Limpiar la propiedad para .container
+    }
+
+    // Si la categoría del canto existe y está definida en nuestro mapa de fondos
+    if (activeCantoCategory && cantoBackgroundMap[activeCantoCategory]) {
+        // Obtenemos los nombres de las variables CSS para esta categoría
+        const categoryStyles = cantoBackgroundMap[activeCantoCategory];
+        
+        // Establecemos nuevas variables CSS dinámicas en los elementos
+        // Estas variables dinámicas tomarán el valor de las variables CSS estáticas definidas en cssgral.css
+        currentMainWrapperElement.style.setProperty('--dynamic-main-background', `var(${categoryStyles.mainBgVar})`);
+        currentBodyElement.style.setProperty('--dynamic-body-background', `var(${categoryStyles.bodyBgVar})`);
+        if (currentContainerElement) { // Verificar si el elemento existe antes de manipularlo
+            currentContainerElement.style.setProperty('--dynamic-main-background', `var(${categoryStyles.mainBgVar})`); // Aplicar el mismo fondo que a .main-wrapper
+        }
+    } else {
+        // Si la categoría no se encuentra o no está definida, puedes establecer un fondo por defecto
+        // o simplemente dejar que el CSS por defecto actúe (al remover las propiedades arriba)
+        console.warn(`Categoría de canto "${activeCantoCategory}" no encontrada en cantoBackgroundMap. Se usarán estilos por defecto.`);
+    }
+    // FIN DEL CÓDIGO A AÑADIR/MODIFICAR PARA LOS FONDOS
+
+};
+
+
+// NUEVO: Mapa de colores para las categorías de canto, usando nombres únicos para las variables CSS estáticas
+const cantoBackgroundMap = {
+    "Precatecumenado": {
+        mainBgVar: "--precat", // Referencia a la variable CSS para el fondo principal
+        bodyBgVar: "--precat-body-bg" // Referencia a la variable CSS para el fondo del body
+    },
+    "Catecumenado": {
+        mainBgVar: "--cat",
+        bodyBgVar: "--cat-body-bg"
+    },
+    "Liturgia": {
+        mainBgVar: "--liturgia",
+        bodyBgVar: "--liturgia-body-bg"
+    },
+    "Eleccion": {
+        mainBgVar: "--eleccion",
+        bodyBgVar: "--eleccion-body-bg"
     }
 };

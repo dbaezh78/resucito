@@ -1,15 +1,5 @@
-// Este archivo contendrá la "base de datos" de todos los cantos.
-/*Categorias Aceptadas.
-- Vírgen María
-
-- precatecumenado - catecumenado - eleccion - liturgia - entrada - paz - fraccion-del-pan 
-- comunion        - final        - adviento - navidad  - pascua  - pentecostes
-- aclamacion      - laudes       - penitencial         - salmodia
-- nuevo-testamento               - antiguo-testamento  - cuaresma
-
-*/
-// Cada objeto en el array representa un canto.
-
+// Info del archivo en dbaezh.docx
+// resucito\src\data\Explicacion Cantos.docx
 /*
 ╔═══════════════════════════════════════════════════════════╗
 ║                A LA VICTIMA PASCUAL                       ║
@@ -22,6 +12,7 @@ const allCantosData = [
         title: "A la Víctima Pascual",
         subtitle: "Secuencia de Pascua - Himno lat. «Victimae paschall laudes»",
         category: ["Precatecumenado", "Pascua", "Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "5",
         nCan: "", //Nota del canto = nCan
         dbno: "1",
@@ -81,6 +72,7 @@ const allCantosData = [
         title: "A NADIE DEMOS OCASIÓN DE TROPIEZO",
         subtitle: "2ª Corintios 6,3ss",
         category: ["PreCatecumenado", "Pascua", "Pentecostés", "Comunión"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
@@ -91,7 +83,7 @@ const allCantosData = [
         // Propiedades para navegación entre cantos
         ant: "/resucito/src/index.html?canto=alavictimapascual",
         sig: "/resucito/src/html/atlmos.html?canto=atilevantomisojos",
-        nCan: "Notas",
+        nCan: "",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
@@ -182,6 +174,7 @@ const allCantosData = [
         title: "A TI LEVANTO MIS OJOS",
         subtitle: "Salmo 123 (122)",
         category: ["PreCatecumenado", "Cuaresma", "Penitencial"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
@@ -192,7 +185,7 @@ const allCantosData = [
         // Propiedades para navegación entre cantos
         ant: "/resucito/src/index.html?canto=anadiedemosocasiondetropiezo",
         sig: "/resucito/src/index.html?canto=atisenorenmiclamorimploro",
-        nCan: "Notas",
+        nCan: "",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
@@ -248,6 +241,7 @@ const allCantosData = [
         title: "A ti, Señor, en mi clamor imploro",
         subtitle: "Salmo 142 (141)",
         category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "2",
         nCan: "",
         dbno: "4",
@@ -319,6 +313,7 @@ const allCantosData = [
         title: "A Ti, Señor, Levanto Mi Alma",
         subtitle: "Salmo 25 (24)",
         category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
         dbno: "5",
@@ -375,6 +370,7 @@ const allCantosData = [
         title: "A Ti, Señor, Se Debe La Alabanza En Sión",
         subtitle: "Salmo 65 (64)",
         category: ["PreCatecumenado","Penitencial"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
         dbno: "6",
@@ -440,8 +436,9 @@ const allCantosData = [
         tt: "Abbá, Padre",
         title: "Abbá, Padre",
         subtitle: "Rm 8,15–17",
-        category: ["PreCatecumenado","Laudes/Visperas","Comunión","Nuevo Testamento"],
-        cejilla: "3",
+        category: ["PreCatecumenado","Laudes", "Visperas","Comunión","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
         nCan: "",
         dbno: "7",
         notes: "",
@@ -484,7 +481,8 @@ const allCantosData = [
         title: "Abraham",
         subtitle: "Génesis 18,1–5 – Teofanía de Mambré",
         category: ["PreCatecumenado","Laudes","Visperas","Entrada","Antiguo Testamento"],
-        cejilla: "3",
+        cejilla: "",
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         nCan: "",
         dbno: "8",
         notes: "",
@@ -543,6 +541,7 @@ const allCantosData = [
         title: "Aclamad Al Señor",
         subtitle: "Salmo 100 (99)",
         category: ["PreCatecumenado","Pascua"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         dbno: "9",
@@ -624,8 +623,9 @@ const allCantosData = [
         title: "Al Despertar",
         subtitle: "Salmo 17 (16) ",
         category: ["PreCatecumenado","Cuaresma","Antiguo Testamento","Penitencial"],
-        cejilla: "3",
-        nCan: "",
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",   // Notas del canto
         dbno: "10",
         notes: "",
         mant: "No",
@@ -708,7 +708,77 @@ const allCantosData = [
             { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Si,m,261)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: AL DESPERTAR
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                ALABAD AL SEÑOR EN EL CIELO               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "alabadalsenorenelcielo",
+        tt: "Alabad Al Señor En El Cielo",
+        title: "Alabad Al Señor En El Cielo",
+        subtitle: "Salmo 148 ",
+        category: ["PreCatecumenado","Navidad","Niños"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "11",
+        notes: "",
+        mant: "",
+        audioSrc: "/audio/alabadalsenorenelcielo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=aldespertar",
+        sig: "/resucito/src/index.html?canto=alegriahanacidoelsalvador",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Alabad al Señor en el Cielo,, (La,,8)", sC: "tc"},
+            { line: "¡ALABADLO!, ", sC: "as ta"},
+            { line: "alabad al Señor en lo alto,, (Fa#,m,219)", sC: "tc"},
+            { line: "¡ALABADLO!, ", sC: "as ta"},
+            { line: "Alabadlo, todos sus ángeles;, (La,,10)", sC: "tc"},
+            { line: "¡ALABADLO!, ", sC: "as ta"},
+            { line: "alabadlo, todos sus ejércitos., (Fa#,m,213)", sC: "tc"},
+            { line: "¡ALABADLO!, ", sC: "as ta"},
 
+            { line: "Alabadlo, sol y luna;", sC: "tc ptop0 alabadlo2"},
+            { line: "alabadlo, estrellas lucientes. ", sC: "ptop0 alabadlo"},
+            { line: "Alabadlo, espacios celestes, ", sC: "ptop0 alabadlo"},
+            { line: "y aguas que cuelgan en el cielo. ", sC: "alabadlo"},
+            { line: "Alaben el nombre del Señor, ", sC: "ptop0 alabadlo"},
+            { line: "porque Él lo mandó, y existieron. ", sC: "ptop0 alabadlo"},
+            { line: "Les dio consistencia perpetua, ", sC: "ptop0 alabadlo"},
+            { line: "y una ley que no pasará. ", sC: "ptop0 alabadlo sdb"},
+    ], lder: [
+            { line: "Alabad al Señor en la tierra, ", sC: "ptop0 alabadlo"},
+            { line: "cetáceos y abismos del mar, ", sC: "ptop0 alabadlo"},
+            { line: "rayos, granizo, nieve y bruma, ", sC: "ptop0 alabadlo"},
+            { line: "viento huracanado, ", sC: "ptop1 ptop0"},
+            { line: "que cumple sus órdenes, ", sC: "ptop0 alabadlo sdb"},
+
+            { line: "montes y todas las sierras, ", sC: "ptop0 alabadlo"},
+            { line: "árboles frutales y cedros, ", sC: "ptop0 alabadlo"},
+            { line: "fieras y animales domésticos, ", sC: "ptop0 alabadlo"},
+            { line: "reptiles y pájaros que vuelan. ", sC: "alabadlo sdb"},
+
+            { line: "Reyes y pueblos del orbe, ", sC: "ptop0 alabadlo"},
+            { line: "príncipes y jefes del mundo, ", sC: "ptop0 alabadlo"},
+            { line: "los jóvenes, ", sC: "ptop1 ptop0"},
+            { line: "y también las doncellas, ", sC: "ptop0 alabadlo"},
+            { line: "los viejos a una con los niños, ", sC: "alabadlo sdb"},
+
+            { line: "alaben el nombre del Señor, ", sC: "ptop0 alabadlo"},
+            { line: "el único nombre sublime. ", sC: "ptop0 sdb alabadlo"},
+            { line: "Su majestad,", sC: "ptop1"},
+            { line: "sobre el cielo y la tierra; ", sC: "ptop0 alabadlo1 mleft"},
+            { line: "Él da fuerza y vigor a su pueblo. ", sC: "alabadlo sdb"},
+
+            { line: "Alabanza de todos sus fieles,, ", sC: "ptop0 alabadlo"},
+            { line: "de Israel, su pueblo elegido., ", sC: "ptop0 alabadlo"},
+]}, // ULTIMA LINEA DEL CANTO: ALABAD AL SEÑOR EN EL CIELO
+// SIGUIENTE CANTO DEBAJO
 
 
 

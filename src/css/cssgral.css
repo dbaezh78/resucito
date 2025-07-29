@@ -21,6 +21,13 @@
     --cat: #bde9ff;
     --eleccion: #CEFFCF;
 
+    /* Variables de colores de fondo para el body (pueden ser más transparentes o diferentes) */
+    --precat-body-bg: rgba(255, 255, 255, 0.2);
+    --liturgia-body-bg: rgba(255, 255, 203, 0.2);
+    --cat-body-bg: rgba(189, 233, 255, 0.2);
+    --eleccion-body-bg: rgba(206, 255, 207, 0.2);
+
+
     /* Nuevos colores de fondo para acordes */
     --chord-color-do: #FF0000; /* Rojo Fuerte, base */
     --chord-color-re: #FFA500; /* Naranja Energía, calidez */
@@ -31,20 +38,35 @@
     --chord-color-la: #800080; /* Violeta Misterio, profundidad */
     --chord-color-si: #000000; /* Negro Oscuro, resolución */
     --chord-color-default-text: white; /* Color de texto por defecto para los nombres de acordes */
+
+    /* Nuevas variables para los fondos de canto por categoría */
+    --FondoCanto-Precatecumenado: white;
+    --FondoCanto-Catecumenado: #bde9ff;
+    --FondoCanto-Liturgico: #FFFFCB;
+    --FondoCanto-Eleccion: #CEFFCF;
+
+    /* Trasfondos con 80% de transparencia */
+    --TrasfondoCanto-Precatecumenado: rgba(255, 255, 255, 0.2); /* white con 20% de opacidad */
+    --TrasfondoCanto-Catecumenado: rgba(189, 233, 255, 0.2); /* #bde9ff con 20% de opacidad */
+    --TrasfondoCanto-Liturgico: rgba(255, 255, 203, 0.2); /* #FFFFCB con 20% de opacidad */
+    --TrasfondoCanto-Eleccion: rgba(206, 255, 207, 0.2); /* #CEFFCF con 20% de opacidad */
 }
 
 
+/* REMOVIDO: Colores de fondo basados en clases en el body (antiguos) */
+/* body:has(.precat) {background-color: #282828;} */
+/* body:has(.liturgia) {background-color: #ffffe4;} */
+/* body:has(.cat) {background-color: #ebf7fd;} */
+/* body:has(.eleccion) {background-color:#eaffea;} */
 
-/* Colores de fondo basados en clases en el body */
-body:has(.precat) {background-color: #282828;}
-body:has(.liturgia) {background-color: #ffffe4;}
-body:has(.cat) {background-color: #ebf7fd;}
-body:has(.eleccion) {background-color:#eaffea;}
+/* NUEVO: Clases para aplicar los fondos al body según la categoría del canto */
+
+
 
 body {
     width: 100%;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Este será el fallback si no se aplica ninguna clase de categoría */
     color: #333;
     display: flex;
     justify-content: center;
@@ -61,13 +83,13 @@ display: none;}
 
 @media(min-width: 384px){
     body {
-        background-color: white;
+        /* background-color: white; REMOVIDO: Ahora se controla por las clases cat- */
         padding: 0px;
     }
 }
 @media(min-width: 768px){
     body {
-        background-color: white;
+        /* background-color: white; REMOVIDO: Ahora se controla por las clases cat- */
         padding: 0px;
     }
 }
@@ -104,7 +126,24 @@ display: none;}
     text-align: center;
     box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.1);
     width: 100%; /* Default for smaller screens */
+    /* NUEVO: Fondo por defecto, se sobrescribirá por las clases cat- */
+    background-color: white;
 }
+
+/* NUEVO: Clases para aplicar los fondos al main-wrapper según la categoría del canto */
+.main-wrapper.cat-precatecumenado {
+    background-color: var(--FondoCanto-Precatecumenado);
+}
+.main-wrapper.cat-catecumenado {
+    background-color: var(--FondoCanto-Catecumenado);
+}
+.main-wrapper.cat-liturgico {
+    background-color: var(--FondoCanto-Liturgico);
+}
+.main-wrapper.cat-eleccion {
+    background-color: var(--FondoCanto-Eleccion);
+}
+
 
 @media(min-width: 384px){
     .main-wrapper {
@@ -128,7 +167,7 @@ display: none;}
 }
 @media(min-width: 992px){
     .main-wrapper {
-        background-color: var(--precat);
+        /* background-color: var(--precat); REMOVIDO: Ahora se controla por las clases cat- */
         width: auto;
         padding: 0px 20px 0px 20px;
     }
@@ -447,7 +486,7 @@ display: none;}
 }
 
 .nota-posicionada:hover {
-    background-color: #e6e6e6;
+    background-color: #ffffff00;
 }
 
 /* Estilos para el modal */
@@ -604,7 +643,7 @@ display: none;}
 
 /* Las propiedades comunes que no dependen de media queries van aquí */
 .r1::before, .r2::before {
-    content: " BIS A."; /* Movido aquí */
+    content: " BIS A."; /* Movido aquí */
     position: absolute; /* Movido aquí */
     align-content: center; /* Movido aquí */
     border-left: 2px solid #c6c5c59e; /* Movido aquí */
@@ -959,49 +998,7 @@ hr {
 }
 
 
+/* Usar la variable dinámica establecida por JS para el fondo del body y principal */
+body { background-color: var(--dynamic-body-background, #f4f4f4);}
+.main-wrapper, .container, .category-link {background-color: var(--dynamic-main-background, white);}
 
-
-
-
-:root {
-    /* Colores de fondo para categorías */
-    --fondo-catecumenado: #ebf7fd;
-    --fondo-precatecumenado: white;
-    --fondo-liturgia: #ffffe4;
-    --fondo-eleccion: #CEFFCF;
-}
-
-/* Clases para aplicar los fondos al body */
-.fondo-catecumenado {
-    background-color: var(--fondo-catecumenado);
-}
-
-.fondo-precatecumenado {
-    background-color: var(--fondo-precatecumenado);
-}
-
-.fondo-liturgia {
-    background-color: var(--fondo-liturgia);
-}
-
-.fondo-eleccion {
-    background-color: var(--fondo-eleccion);
-}
-
-/* Estilos generales del cuerpo */
-body {
-    /* ... otras propiedades del body ... */
-    background-color: var(--precat); /* Fondo por defecto, puedes ajustarlo si quieres un color base diferente */
-}
-
-/* Contenedor principal para centrar el contenido y aplicar el fondo */
-.main-wrapper {
-    /* ... otras propiedades de .main-wrapper ... */
-    background-color: inherit; /* Hereda el color de fondo del body */
-}
-
-/* Estilos del contenedor de canto */
-.container {
-    /* ... otras propiedades de .container ... */
-    background-color: inherit; /* Hereda el color de fondo del body */
-}

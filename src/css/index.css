@@ -35,7 +35,7 @@
 
 /* ESTRUCTURA DE BIS*/
 
-.ast91, .ast92, .ast93, .ast94, .ast95, .ast96 {position: relative;min-height: 0px;}
+.ast91, .ast92, .ast93, .ast94, .ast95, .ast96, .alabadlo, .alabadlo1, .alabadlo2 {position: relative;min-height: 0px;}
 
 .ast91::before, .ast92::before, .ast93::before, .ast94::before, .ast95::before, .ast96::before 
 {
@@ -85,6 +85,37 @@
     @media (min-width: 992px) {height: 40px;margin-left: 38%;margin-top: 0%;}
 }
 
+
+.alabadlo::before, .alabadlo1::before, .alabadlo2::before {
+    content: "¡ALABADLO!";
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    position: absolute;
+    align-content: center;
+    color: black;
+    width: max-content; /* Movido aquí */
+    font: icon;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.alabadlo::before {
+    @media (min-width: 384px) {font-size: 1em; height: 40px;margin-left: 230px;margin-top: -8px;}
+    @media (min-width: 768px) {font-size: 1.5em;height: 40px;margin-left: 450px;margin-top: 0%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 65%;margin-top: 0%;}
+}
+
+.alabadlo1::before {
+    @media (min-width: 384px) {font-size: 1em; height: 40px;margin-left: 190px;margin-top: -1px;}
+    @media (min-width: 768px) {font-size: 1.5em;height: 40px;margin-left: 410px;margin-top: 0%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 270px;margin-top: -5px;}
+}
+
+.alabadlo2::before {
+    @media (min-width: 384px) {font-size: 1em; height: 40px;margin-left: 246px;margin-top: -20px;}
+    @media (min-width: 768px) {font-size: 1.5em;height: 40px;margin-left: 490px;margin-top: -2%;}
+    @media (min-width: 992px) {height: 40px;margin-left: 344px;margin-top: -10px;}
+}
+
 .r1, .r2, .b1-1, .b1-2, .b3, .b12-1, .b12-2, .b14, .b18, .b1
  {
     position: relative;
@@ -95,7 +126,7 @@
 .r1::before, .r2::before, .b1-1::before, .b1-2::before,
 .b3::before, .b12-1::before, .b12-2::before
 {
-    content: " BIS A."; /* Movido aquí */
+    content: " BIS A."; /* Movido aquí */
     position: absolute; /* Movido aquí */
     align-content: center; /* Movido aquí */
     border-left: 2px solid #c6c5c59e; /* Movido aquí */
@@ -143,4 +174,52 @@
     padding-left: 1%;
     padding-right: 1%;
     box-sizing: border-box;
+}
+
+.ptop0 {
+    padding-top: 0px;
+    height: 25px;
+    margin-top: 0px;
+
+    @media (min-width: 768px){
+        padding-top: 5px;
+        height: 21px;
+        margin-top: 5px;
+    }
+    @media (min-width: 992px){
+        height: 19px;
+    }
+}
+
+.ptop1 {
+    height: 0px;
+    padding-top: 0px;
+    margin-bottom: -8px;
+    
+    @media (min-width: 768px){
+        margin-bottom: 17px;
+    }
+
+    @media (min-width: 992px){
+        margin-bottom: -18px;
+    }
+
+}
+
+.sdb {
+    padding-bottom: 10px;
+}
+
+
+.container {
+    @media (min-width: 384px) {
+        margin-left: -100px;
+    }
+    @media (min-width: 992px) {
+        margin-left: 0px;
+    }
+}
+
+.mleft {
+    margin-left: 40px;
 }
