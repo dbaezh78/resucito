@@ -852,76 +852,6 @@ const allCantosData = [
 // SIGUIENTE CANTO DEBAJO
 /*
 ╔════════════════════════════════════════════════════════════════╗
-║                ALELUYA, ALABAD AL SEÑOR               ║
-╚════════════════════════════════════════════════════════════════╝  */
-   {
-        id: "aleluyaalabadalsenor",
-        tt: "Aleluya, Alabad Al Señor",
-        title: "Aleluya, Alabad Al Señor",
-        subtitle: "Salmo 150",
-        category: ["PreCatecumenado","Laudes","Vispera"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        dbno: "13",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/aleluyaalabadalsenor.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=alegriahanacidoelsalvador",
-        sig: "/resucito/src/index.html?canto=aleluyabendecidalsenor",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "¡ALELUYA, ALELUYA, ALELUYA!, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)", sC: "as ta"},
-            { line: "¡ALELUYA, ALELUYA, ALELUYA!, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)", sC: "as"},
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "Alabad al Señor en su templo,, (MI,,10)(La,,139)(Re,,170)(La,,228)", sC: "tc"},
-            { line: "alabadlo en su fuerte firmamento,, (Re,,52)(La,,173)(Mi,,286)", sC: ""},
-            { line: "Alabadlo por sus obras estupendas,, (La,,52)(Re,,178)(La,,236)(Mi,,284)", sC: ""},
-            { line: "alabadlo por su inmensa grandeza., (La,,52)(Re,,198)(Mi,,309)", sC: ""},
-            
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡ALELUYA, ALELUYA, ALELUYA, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)", sC: "as ta", lines: [
-            { line: "¡ALELUYA, ALELUYA, ALELUYA!, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)", sC: "as"},  ]},
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "Alabadlo al son de trompetas,, (Mi,,10)(La,,128)(Re,,168)(La,,245)", sC: "tc"},
-            { line: "alabadlo con arpas y guitarras,, (Re,,45)(La,,140)(Mi,,243)", sC: ""},
-            { line: "alabadlo con tambores y con danzas,, (La,,45)(Re,,182)(La,,237)(Mi,,298)", sC: ""},
-            { line: "alabadlo con trompas y flautas., (La,,45)(Re,,143)(Mi,,257)", sC: ""},
-            
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            
-            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "¡ALELUYA, ALELUYA, ALELUYA, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)", sC: "as ta", lines: [
-            { line: "¡ALELUYA, ALELUYA, ALELUYA!, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)", sC: "as"},  ]},
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "Alabadlo con platillos sonoros,, (Mi,,15)(La,,169)(Re,,195)(La,,251)", sC: "tc"},
-            { line: "alabadlo con platillos vibrantes., (Re,,48)(La,,166)(Mi,,249)", sC: ""},
-            { line: "¡TODO SER ALABE AL SEÑOR,, (La,,10)(Re,,81)(La,,137)(Mi,,254)", sC: "as ta"},
-            { line: "ALABE, ALABE AL SEÑOR!, (La,,31)(Re,,102)(MI,,222)", sC: "as"},
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "¡ALELUYA, ALELUYA, ALELUYA, (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)", sC: "as ta", lines: [
-            { line: "¡ALELUYA, ALELUYA, ALELUYA! (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)", sC: "as"},  ]},
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: ALELUYA, ALABAD AL SEÑOR
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════════════╗
 ║                ALELUYA, BENDECID AL SEÑOR               ║
 ╚════════════════════════════════════════════════════════════════╝  */
    {
@@ -946,8 +876,8 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=aleluyayallegoelreino",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,15)(Si♭,,250)(La,,350)", sC: "as"},
-            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,15)(La,,250)", sC: "as"},
+            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,15)(Si♭,,250)(La,,350)", sC: ""},
+            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,15)(La,,250)", sC: ""},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
@@ -965,8 +895,8 @@ const allCantosData = [
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,250)(Si♭,La,350)", sC: "as"},
-            { line: "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,250)(Si♭,La,350)", sC: "as"},
+            { line: "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,250)(Si♭,La,350)", sC: ""},
+            { line: "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,250)(Si♭,La,350)", sC: ""},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
@@ -989,11 +919,12 @@ const allCantosData = [
        triggerLine: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, (Re,m,15)", sC: "as ta", lines: [
             { line: "VOSOTROS LOS SIERVOS DEL SEÑOR., (La7,,15)", sC: "as"},
             { line: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, ", sC: "as"},
-            { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR., (Re,m,15)", sC: "as"},
+            { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR., (Re,m,15)", sC: "as"}, ]},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "ALZAD A ÉL LAS MANOS, ALZAD A ÉL LAS MANOS, (Re,m,15)", sC: "as ta"} ,
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ALZAD A ÉL LAS MANOS, ALZAD A ÉL LAS MANOS, (Re,m,15)", sC: "as ta", lines: [
             { line: "Y BENDECID AL SEÑOR,, (La7,,15)", sC: "as"},
             { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR, ", sC: "as"},
             { line: "DURANTE LA NOCHE., (Re,m,15)", sC: "as"},  ]},
@@ -1010,6 +941,18 @@ const allCantosData = [
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA, BENDECID AL SEÑOR
 // SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
