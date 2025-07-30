@@ -105,12 +105,14 @@ display: none;}
     .container {
         padding: 0px 3px 20px 3px;
         text-align: center;
+        width: 82%;     /* normalizando posicion del contenido: no quitar*/
     }
 }
 @media(min-width: 768px){
     .container {
         padding: 0px 1px 20px 0px;
         text-align: center;
+        width: 82%;
     }
 }
 @media(min-width: 992px){
@@ -144,6 +146,7 @@ display: none;}
     background-color: var(--FondoCanto-Eleccion);
 }
 
+/* MAIN-WRAPPER PARA LA TAMAÑO DE LA PANTALLA*/
 
 @media(min-width: 384px){
     .main-wrapper {
@@ -190,6 +193,10 @@ display: none;}
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     justify-content: space-between;
+
+    @media (min-width: 768px) {
+        font-size: larger;
+    }
 }
 
 @media (min-width: 992px) {
@@ -243,18 +250,24 @@ display: none;}
     /* Elimina el 'gap' aquí si ya lo estás manejando con .mgap */
 }
 
-.mgap { /* Nueva clase para controlar el gap */
-    gap: 15px; /* Valor por defecto para pantallas grandes */
+
+.mgap {
+    @media (min-width: 284px) and (max-width: 484px) {
+        gap: 0%;
+        #toggleVista {display: none;}   /* Ocultar el botón en mobile y tablet */
+    }
+
+    @media (min-width: 485px) and (max-width: 991px) {
+        gap: 35px;
+        #toggleVista {display: none;}   /* Ocultar el botón en mobile y tablet */
+    }
+
+    @media (min-width: 992px){
+        gap: 35px;
+    }
 }
 
-@media(max-width: 991px){ /* Aplicar a mobile y tablet */
-    .mgap {
-        gap: 5px; /* Gap más pequeño para pantallas pequeñas */
-    }
-    #toggleVista { /* Ocultar el botón en mobile y tablet */
-        display: none;
-    }
-}
+
 
 
 .toolbar-item {
@@ -915,7 +928,6 @@ hr {
   font-family: 'Material Symbols Outlined Local';
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -928,7 +940,7 @@ hr {
   /*border: 1px solid rgb(255, 255, 255);*/
   border-radius: 2em;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 149%;
   color: white;
 }
 

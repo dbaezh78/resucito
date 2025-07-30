@@ -184,3 +184,29 @@
         height: 35px;
     }
 }
+
+.container {
+    @media (min-width: 384px) {
+        margin-left: 26px;
+    }
+}
+
+.main-wrapper {
+@media (min-width: 384px) {
+        /* width: 98%; */
+        padding: 0px;
+        align-items: center;
+        
+        margin-right: 0%;
+        margin-top: 44px;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .main-wrapper {
+        width: 992px;
+        padding: 0px 20px 0px 20px;
+    }
+}

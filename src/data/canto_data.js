@@ -497,7 +497,7 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=aclamadalsenor",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Hacía calor aquel día, (La,m,15)m", sC: ""},
+            { line: "Hacía calor aquel día, (La,m,15)m", sC: "tc"},
             { line: "cuando Abraham, (Re,m,28)(Mi,,139)", sC: ""},
             { line: "estaba sentado delante de su tienda., (La,m,307)", sC: ""},
             { line: "Hacía calor aquel día, ", sC: "mt"},
@@ -511,11 +511,11 @@ const allCantosData = [
             { line: "se inclinó hasta el suelo y dijo:, (La,m,267)", sC: ""},
             { line: "«Oh Señor mío,, (Sol,,123)", sC: "mt"},
             { line: "no pases, te ruego, sin detenerte., (Fa,,143)(Mi,,284)", sC: ""},
-            { line: "«SIN DETENERTE,, (La,m,119)", sC: "as mt"},
+            { line: "«SIN DETENERTE,, (La,m,119)", sC: "ta as mt"},
             { line: "NO PASES, TE RUEGO,, (Sol,,168)", sC: "as"},
             { line: "SIN DETENERTE, SIN DETENERTE»., (Fa,,112)(Mi,,274)", sC: "as"},
     ], lder: [
-            { line: "«Os traeré un poco de agua,, (La,m,15)(Mi,,221)", sC: ""},
+            { line: "«Os traeré un poco de agua,, (La,m,15)(Mi,,221)", sC: "tc"},
             { line: "os lavaré los pies, ", sC: ""},
             { line: "y reposaréis a la sombra., (La,m,180)", sC: ""},
             { line: "Os traeré un bocado,, (Mi,,167)", sC: "mt"},
@@ -523,7 +523,8 @@ const allCantosData = [
             { line: "y lúego seguiréis adelante., (La,m,214)", sC: ""},
             { line: "No por casualidad, (Sol,,154)", sC: "mt"},
             { line: "habéis pasado hoy delante de mí., (Fa,,161)(Mi,,310)", sC: ""},
-            { line: "«OH SEÑOR MÍO,, (La,m,135)", sC: "as mt"},
+
+            { line: "«OH SEÑOR MÍO,, (La,m,135)", sC: "ta as mt"},
             { line: "NO PASES, TE RUEGO,, (Sol,,171)", sC: "as"},
             { line: "SIN DETENERTE, SIN DETENERTE., (Fa,,106)(Mi,,270)", sC: "as"},
             { line: "SIN DETENERTE,, (La,m,110)", sC: "as mt"},
@@ -614,9 +615,9 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: ACLAMAD AL SEÑOR
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
+╔═══════════════════════════════════════════╗
 ║                AL DESPERTAR               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╚═══════════════════════════════════════════╝ */
    {
         id: "aldespertar",
         tt: "Al Despertar",
