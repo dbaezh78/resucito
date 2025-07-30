@@ -151,7 +151,7 @@ display: none;}
 
 @media(min-width: 384px){
     .main-wrapper {
-        width: 98%;
+        width: 384px; /*98%;*/
         padding: 0px;
         align-items: center;
         margin-left: 1px;
@@ -356,7 +356,7 @@ display: none;}
 @media (min-width: 384px) {
     .dbs2 {
         font-size: 0.9rem;
-        width: 80%;
+        width: 100%;
         justify-self: center;
         
     }
@@ -489,14 +489,14 @@ display: none;}
     background-color: transparent;
     white-space: nowrap;
     transform: translateX(-50%);
-    font-size: 0.9em;
+    font-size: 1.0em;
     z-index: 10;
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
 
     @media (min-width: 384px) {top: 0px;}
     @media (min-width: 768px) {top: -2px;}
-    @media (min-width: 992px) {top: 3px;}
+    @media (min-width: 992px) {top: -2px;}
 }
 
 .nota-posicionada:hover {
@@ -566,7 +566,7 @@ display: none;}
 
 @media (min-width: 384px) and (max-width: 583px) {
     .letra { font-size: 1em; }
-    .nota-posicionada { font-size: 0.8em; }
+    .nota-posicionada { font-size: 0.9em; }
 }
 
 @media (min-width: 584px) and (max-width: 767px) {
@@ -581,7 +581,7 @@ display: none;}
 
 @media (min-width: 992px) {
     .letra { font-size: 1.4em; }
-    .nota-posicionada { font-size: 0.95em; }
+    .nota-posicionada { font-size: 1.1em; }
 }
 
 /* --- Nuevos estilos para etiquetas de sección --- */

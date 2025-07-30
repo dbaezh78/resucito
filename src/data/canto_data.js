@@ -37,7 +37,7 @@ const allCantosData = [
             { line: "los pecadores al Padre, (Mi,,176)"},
 
             { line: "Muerte y vida se han enfrentado, (La,m,15)(La,7,101)", sC: "mt"},
-            { line: "en un prodigioso duelo:, (Re,m9,186)"},
+            { line: "en un prodigioso duelo: (Re,m9,186)"},
             { line: "el Señor de la Vida estaba muerto, (Fa,maj7,27)(Mi,,290)"},
             { line: "mas ahora está vivo y triunfa. (Re,m9,78)(Fa,,143)(Mi,,229)"},
 
@@ -109,11 +109,8 @@ const allCantosData = [
             { line: "como quienes nada tienen, (Fa,,205)" },
             { line: "aunque lo poseemos todo. (Mi,,212)" },
 
-            {   type: "collapsible-block",
-                id: "asamblea_anadie_1",
-                initialState: "collapsed",
-                triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "mt as ta",
-                lines: [
+            {   type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+                triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "mt as ta", lines: [
                     { line: "OCASIÓN DE TROPIEZO, (Re,m,186)", sC: "as" },
                     { line: "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)", sC: "as" },
                     { line: "LAS TRIBULACIONES,  (La,m,148)", sC: "as" },
@@ -131,11 +128,8 @@ const allCantosData = [
             // Bloque de asamblea colapsado en lder
             
             {
-                type: "collapsible-block",
-                id: "asamblea_anadie_2",
-                initialState: "collapsed",
-                triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "as mt ta",
-                lines: [
+                type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+                triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "as mt ta", lines: [
                     { line: "OCASIÓN DE TROPIEZO, (Re,m,186)", sC: "as" },
                     { line: "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)", sC: "as" },
                     { line: "LAS TRIBULACIONES,  (La,m,148)", sC: "as" },
@@ -149,9 +143,7 @@ const allCantosData = [
             { line: "¿Qué unión entre el santuario de Dios (Fa,,343)" },
             { line: "y el santuario de los ídolos? (Mi,,201)"  },
 
-            {   type: "collapsible-block",
-                id: "asamblea_anadie_2",
-                initialState: "collapsed",
+            {   type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
                 triggerLine: "HERMANOS, A NADIE DEMOS (La,m,18)", sC: "as mt ta", lines: [
                     { line: "OCASIÓN DE TROPIEZO, (Re,m,186)", sC: "as" },
                     { line: "HERMANOS, VIVAMOS ACEPTANDO (Mi,,63)", sC: "as" },
@@ -218,11 +210,8 @@ const allCantosData = [
             { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,57)(La,7,286)", sC:"mujeres as mt"},
             { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Si♭,7,57)(La,7,286)", sC:"hombres as"},
 
-            {   type: "collapsible-block",
-                id: "asamblea_anadie_1",
-                initialState: "collapsed",
-                triggerLine: "A TI LEVANTO MIS OJOS (Re,m,16)(La,7,189)", sC: "mt as ta",
-                lines: [
+            {   type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+                triggerLine: "A TI LEVANTO MIS OJOS (Re,m,16)(La,7,189)", sC: "mt as ta", lines: [
                     { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "as" },
                 ]},
         ],
@@ -285,17 +274,13 @@ const allCantosData = [
             { line: "En torno a mí los santos harán corro,, (Re,m,48)", sC: ""},
             { line: "me felicitarán por tu favor hacia mí. , (Fa,,115)(Mi,,331)", sC: ""},
   
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
            triggerLine: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)(Re,m,327)", sC: "mt as ta", lines: [
             { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (La,m,327)", sC: "as"},
             { line: "A TI DERRAMO MI LAMENTO,, (Mi,7,29)", sC: "as"},
             { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,m,29)(Mi,,222)", sC: "as"},  ]},
  
-            { type: "collapsible-block",
-                id: "asamblea_anadie_2",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "A TI, YO CLAMO SEÑOR,, (La,m,15)(Sol,,199)", sC: "mt as ta", lines: [
             { line: "A TI, YO DIGO: TÚ SOLO ERES MI REFUGIO,, (Mi,7,250)", sC: "as"},
             { line: "TÚ ERES MI PORCIÓN EN ESTA TIERRA,, (Fa,,15)", sC: "as"},
@@ -337,9 +322,7 @@ const allCantosData = [
             { line: "Muéstrame, Señor, tu camino,, (La,m,15)(Mi,,255)", sC: ""},
             { line: "enséñame, Señor, tu sendero., (Re,m,186)(Fa,,222)(Mi,,254)", sC: ""},
 
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
            triggerLine: "A TI, SEÑOR, LEVANTO MI ALMA, (La,m,15)(Mi,,250)", sC: "mt as ta", lines: [
                 { line: "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)", sC: "as"},  ]},            
 
@@ -350,9 +333,7 @@ const allCantosData = [
             { line: "Rocíame, Señor, de tu misericordia., (Fa,,37)(Mi,,291)", sC: "mt"},
             { line: "Sumérgeme, Señor, en tu misericordia., (Fa,,51)(Mi,,323)", sC: ""},
 
-            { type: "collapsible-block",
-                id: "asamblea_anadie_2",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
            triggerLine: "A TI, SEÑOR, LEVANTO MI ALMA, (La,m,15)(Mi,,250)", sC: "mt as ta", lines: [
                 { line: "A TI, OH DIOS MÍO., (Re,m,60)(Fa,,94)(Mi,,159)", sC: "as"},  ]},
 
@@ -362,7 +343,7 @@ const allCantosData = [
 // SIGUIENTE CANTO DEBAJO
 /*
 ╔════════════════════════════════════════════════════════════════╗
-║                A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN               ║
+║                A TI, SEÑOR, SE DEBE LA ALABANZA EN SIÓN        ║
 ╚════════════════════════════════════════════════════════════════╝  */
    {
         id: "atisenorsedebelaalabanzaension",
@@ -402,9 +383,7 @@ const allCantosData = [
             { line: "A ti que escuchas la oración,, (Sol,m,31)(Re,m,247)", sC: "mt"},
             { line: "viene todo mortal, viene todo mortal., (La,7,158)(Re,m,333)", sC: ""},
   
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
            triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "mt as ta", lines: [
             { line: "VIENE TODO MORTAL,, (Si♭,,25)", sC: "as"},
             { line: "VIENE TODO MORTAL., (La,7,189)", sC: "as"},  ]},
@@ -418,9 +397,7 @@ const allCantosData = [
             { line: "A ti que escuchas la oración,, (Sol,m,31)(Re,m,246)", sC: "mt"},
             { line: "viene todo mortal, viene todo mortal., (La,7,156)(Re,m,331)", sC: ""},
   
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
            triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "mt as ta", lines: [
             { line: "VIENE TODO MORTAL,, (Si♭,,25)", sC: "as"},
             { line: "VIENE TODO MORTAL., (La,7,189)", sC: "as"},  ]},
@@ -508,7 +485,7 @@ const allCantosData = [
             { line: "y tres hombres de pie, (Mi,,199)", sC: ""},
             { line: "estaban delante., (La,m,121)", sC: ""},
             { line: "En cuanto los vio,, (Mi,,154)", sC: "mt"},
-            { line: "se inclinó hasta el suelo y dijo:, (La,m,267)", sC: ""},
+            { line: "se inclinó hasta el suelo y dijo: (La,m,267)", sC: ""},
             { line: "«Oh Señor mío,, (Sol,,123)", sC: "mt"},
             { line: "no pases, te ruego, sin detenerte., (Fa,,143)(Mi,,284)", sC: ""},
             { line: "«SIN DETENERTE,, (La,m,119)", sC: "ta as mt"},
@@ -558,57 +535,47 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=aldespertar",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "as"},
+            { line: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "ta as"},
             { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
             { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,58)(Sol,,154)(La,,297)", sC: "as"},
 
-            { line: "Acercaos a Él, (Re,m,55)(La,7,138)", sC: "mt ast91"},
-            { line: "con gritos de júbilo., (Re,m,175)", sC: ""},
+            { line: "Acercaos a Él, (Re,m,55)(La,7,138)", sC: "tc mt"},
+            { line: "con gritos de júbilo., (Re,m,175)", sC: "ast91"},
             
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
            triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
 
-            { line: "Porque el Señor es nuestro Dios, (Re,m,15)(La,7,250)", sC: "mt ast92"},
-            { line: "y nosotros su pueblo., (Re,m,15)", sC: ""},
+            { line: "Porque el Señor es nuestro Dios, (Re,m,15)(La,7,250)", sC: "tc mt"},
+            { line: "y nosotros su pueblo., (Re,m,15)", sC: "ast92"},
 
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
            triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
 
-            { line: "¡Entrad por sus puertas , (Re,m,15)(La,7,234)", sC: "mt ast93"},
-            { line: "con himnos de alegría!, (Re,m,205)", sC: ""},
+            { line: "¡Entrad por sus puertas , (Re,m,15)(La,7,234)", sC: "tc mt"},
+            { line: "con himnos de alegría!, (Re,m,205)", sC: "ast93"},
 
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
            triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
     ], lder: [
-            { line: "Bendecid su nombre, (Re,m,73)(La,7,207)", sC: "mt ast94"},
-            { line: "dándole gracias, (Re,m,135)", sC: ""},
+            { line: "Bendecid su nombre, (Re,m,73)(La,7,207)", sC: "mt tc"},
+            { line: "dándole gracias, (Re,m,135)", sC: "ast94"},
 
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
            triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
 
-            { line: "Porque es bueno el Señor,, (Re,m,15)(La,7,254)", sC: "mt ast95"},
-            { line: "es eterno su amor, (Re,m,15)(La,7,138)", sC: "ast96"},
-            { line: "con nosotros., (Re,m,103)", sC: ""},
+            { line: "Porque es bueno el Señor,, (Re,m,15)(La,7,254)", sC: "mt tc"},
+            { line: "es eterno su amor, (Re,m,15)(La,7,138)", sC: "ast95"},
+            { line: "con nosotros., (Re,m,103)", sC: "ast96"},
 
-            { type: "collapsible-block",
-                id: "asamblea_anadie_1",
-          initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
            triggerLine: "ACLAMAD AL SEÑOR, (Re,m,15)", sC: "mt as ta", lines: [
                 { line: "TODA LA TIERRA,, (Sol,m,15)(Re,m,118)", sC: "as"},
                 { line: "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)", sC: "as"},  ]},
@@ -669,7 +636,7 @@ const allCantosData = [
             { line: "que no vacilaré, que no vacilaré., (Mi,m,58)(Fa#,,294)", sC: ""},
 
 
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "AL DESPERTAR, (Si,m,15)", sC: "mt as ta", lines: [
             { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)", sC: "as"},
             { line: "AL DESPERTAR, (Mi,m,127)", sC: "as"},
@@ -685,7 +652,7 @@ const allCantosData = [
             { line: "a la sombra de tus alas escóndeme,, (Mi,m,53)(Fa#,,265)", sC: ""},
             { line: "mira que quieren matarme., (Sol,,21)(Fa#,,210)", sC: ""},
 
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "AL DESPERTAR, (Si,m,15)", sC: "mt as ta", lines: [
             { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)", sC: "as"},
             { line: "AL DESPERTAR, (Mi,m,127)", sC: "as"},
@@ -702,7 +669,7 @@ const allCantosData = [
             { line: "Que yo al despertar, que yo por tu amor, (Mi,m,58)", sC: ""},
             { line: "me saciaré de tu rostro, Señor., (Sol,,96)(Fa#,,272)", sC: ""},
 
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
        triggerLine: "AL DESPERTAR, (Si,m,15)", sC: "mt as ta", lines: [
             { line: "ME SACIARÉ DE TU SEMBLANTE, SEÑOR., (Sol,,115)(Si,m,262)", sC: "as"},
             { line: "AL DESPERTAR, (Mi,m,127)", sC: "as"},
@@ -711,7 +678,7 @@ const allCantosData = [
 // SIGUIENTE CANTO DEBAJO
 /*
 ╔════════════════════════════════════════════════════════════════╗
-║                ALABAD AL SEÑOR EN EL CIELO               ║
+║                ALABAD AL SEÑOR EN EL CIELO                     ║
 ╚════════════════════════════════════════════════════════════════╝  */
    {
         id: "alabadalsenorenelcielo",
@@ -747,8 +714,9 @@ const allCantosData = [
             { line: "Alabadlo, sol y luna;", sC: "tc ptop0 alabadlo2"},
             { line: "alabadlo, estrellas lucientes. ", sC: "ptop0 alabadlo"},
             { line: "Alabadlo, espacios celestes, ", sC: "ptop0 alabadlo"},
-            { line: "y aguas que cuelgan en el cielo. ", sC: "alabadlo"},
-            { line: "Alaben el nombre del Señor, ", sC: "ptop0 alabadlo"},
+            { line: "y aguas que cuelgan en el cielo. ", sC: "sdb ptop0 alabadlo"},
+
+            { line: "Alaben el nombre del Señor, ", sC: "alabadlo"},
             { line: "porque Él lo mandó, y existieron. ", sC: "ptop0 alabadlo"},
             { line: "Les dio consistencia perpetua, ", sC: "ptop0 alabadlo"},
             { line: "y una ley que no pasará. ", sC: "ptop0 alabadlo sdb"},
@@ -757,7 +725,7 @@ const allCantosData = [
             { line: "cetáceos y abismos del mar, ", sC: "ptop0 alabadlo"},
             { line: "rayos, granizo, nieve y bruma, ", sC: "ptop0 alabadlo"},
             { line: "viento huracanado, ", sC: "ptop1 ptop0"},
-            { line: "que cumple sus órdenes, ", sC: "ptop0 alabadlo sdb"},
+            { line: "que cumple sus órdenes, ", sC: "alabadlo sdb"},
 
             { line: "montes y todas las sierras, ", sC: "ptop0 alabadlo"},
             { line: "árboles frutales y cedros, ", sC: "ptop0 alabadlo"},
@@ -780,14 +748,176 @@ const allCantosData = [
             { line: "de Israel, su pueblo elegido., ", sC: "ptop0 alabadlo"},
 ]}, // ULTIMA LINEA DEL CANTO: ALABAD AL SEÑOR EN EL CIELO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                ALEGRÍA, HA NACIDO EL SALVADOR               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "alegriahanacidoelsalvador",
+        tt: "Alegría, Ha Nacido El Salvador",
+        title: "Alegría, Ha Nacido El Salvador",
+        subtitle: "Villancico (Kiko Argüello)",
+        category: ["PreCatecumenado","Adviento","Navidad","Ordinario"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "12",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/alegriahanacidoelsalvador.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=alabadalsenorenelcielo",
+        sig: "/resucito/src/index.html?canto=aleluyaalabadalsenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Un ángel vino del cielo, (Re,m,18)", sC: "b12-1"},
+            { line: "trayendo una gran noticia: ", sC: "tc"},
 
+            { line: "¡Hoy os ha nacido,, (Sol,m,15)(Re,m,139)", sC: "b12-1"},
+            { line: "ha nacido el Salvador!, (La,,64)(Re,m,194)", sC: ""},
 
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
+            { line: "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,, (Fa,,75)(La,,264)", sC: "as ta" },
+            { line: "HA NACIDO EL SALVADOR, (Si♭,,78)", sC: "as b12-2"},
+            { line: "ACOSTADO EN UN PESEBRE!, (Do,,68)", sC: "as"},
+            { line: "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)", sC: "as"},
 
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
+            { line: "¡Fajado con lindos pañales, (Re,m,15)", sC: "b12-1"},
+            { line: "y acostado en un pesebre!, ", sC: "sdb"},
 
+            { line: "Esta será la señal, (Sol,m,20)(Re,m,151)", sC: "b12-1"},
+            { line: "de que Él es el Señor. (La,,79)(Re,m,187)", sC: ""},
 
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,, (Fa,,75)(La,,264)", sC: "as ta", lines: [
+            { line: "HA NACIDO EL SALVADOR, (Si♭,,78)", sC: "as b12-2"},
+            { line: "ACOSTADO EN UN PESEBRE!, (Do,,68)", sC: "as"},
+            { line: "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Al establo de Belén, (Re,m,15)", sC: "b12-1"},
+            { line: "han llegado los pastores., ", sC: "sdb"},
+
+            { line: "Vienen trayendo regalos, (Sol,m,15)(Re,m,195)", sC: "b12-1"},
+            { line: "a Jesús el Salvador., (La,,52)(Re,m,168)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,, (Fa,,75)(La,,264)", sC: "as ta", lines: [
+            { line: "HA NACIDO EL SALVADOR, (Si♭,,78)", sC: "as b12-2"},
+            { line: "ACOSTADO EN UN PESEBRE!, (Do,,68)", sC: "as"},
+            { line: "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Encontraron a María,, (Re,m,15)", sC: "b12-1"},
+            { line: "encontraron a José., ", sC: ""},
+
+            { line: "El buey, el asno y el niño,, (Sol,m,15)(Re,m,208)", sC: "b12-1"},
+            { line: "que se llamará Emmanuel., (La,,85)(Re,m,234)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,, (Fa,,75)(La,,264)", sC: "as ta", lines: [
+            { line: "HA NACIDO EL SALVADOR, (Si♭,,78)", sC: "as b12-2"},
+            { line: "ACOSTADO EN UN PESEBRE!, (Do,,68)", sC: "as"},
+            { line: "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "El buey reconoce a su dueño,, (Re,m,15)", sC: "b12-1"},
+            { line: "el borrico su pesebre., ", sC: ""},
+            
+            { line: "Pero Israel no conoce,, (Sol,m,15)(Re,m,174)", sC: "b12-1"},
+            { line: "no conoce a su Señor., (La,,71)(Re,m,189)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,, (Fa,,75)(La,,264)", sC: "as ta", lines: [
+            { line: "HA NACIDO EL SALVADOR, (Si♭,,78)", sC: "as b12-2"},
+            { line: "ACOSTADO EN UN PESEBRE!, (Do,,68)", sC: "as"},
+            { line: "¡ÉL ES EL CRISTO, EL SEÑOR!, (Do,7,252)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ALEGRÍA, HA NACIDO EL SALVADOR
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                ALELUYA, ALABAD AL SEÑOR               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "aleluyaalabadalsenor",
+        tt: "Aleluya, Alabad Al Señor",
+        title: "Aleluya, Alabad Al Señor",
+        subtitle: "Salmo 150",
+        category: ["PreCatecumenado","Pascua","Niños","Paz","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "13",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/aleluyaalabadalsenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=alegriahanacidoelsalvador",
+        sig: "/resucito/src/index.html?canto=aleluyabendecidalsenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)", sC: "as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Alabad al Señor en su templo,, (MI,,10)(La,,139)(Re,,170)(La,,228)", sC: ""},
+            { line: "alabadlo en su fuerte firmamento., (Re,,52)(La,,173)(Mi,,286)", sC: ""},
+            { line: "Alabadlo por sus obras estupendas,, (La,,15)(Re,,250)(La,,350)(Mi,,450)", sC: ""},
+            { line: "alabadlo por su inmensa grandeza., (La,,15)(Re,,250)(Mi,,350)", sC: ""},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ALELUYA, ALELUYA, ALELUYA., (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)", sC: "as ta", lines: [
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Alabadlo al son de trompetas,, (Mi,,15)(La,,250)(Re,,350)(La,,450)", sC: ""},
+            { line: "alabadlo con arpas y guitarras,, (Re,,15)(La,,250)(Mi,,350)", sC: ""},
+            { line: "alabadlo con tambores y con danzas,, (La,,15)(Re,,250)(La,,350)(Mi,,450)", sC: ""},
+            { line: "alabadlo con trompas y flautas., (La,,15)(Re,,250)(Mi,,350)", sC: ""},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "ALELUYA, ALELUYA, ALELUYA., (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)", sC: "as ta", lines: [
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)", sC: "as"},  ]},
+
+            { line: "Alabadlo con platillos sonoros,, (Mi,,15)(La,,250)(Re,,350)(La,,450)", sC: ""},
+            { line: "alabadlo con platillos vibrantes., (Re,,15)(La,,250)(Mi,,350)", sC: ""},
+            { line: "TODO SER ALABE AL SEÑOR,, (La,,15)(Re,,250)(La,,350)(Mi,,450)", sC: "as"},
+            { line: "ALABE, ALABE AL SEÑOR., (La,,15)(Re,,250)(MI,,350)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "ALELUYA, ALELUYA, ALELUYA., (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(La,,248)(Mi,,275)", sC: "as ta", lines: [
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,10)(La,,58)(Re,,108)(La,,153)(Re,,205)(Mi,,275)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA, ALABAD AL SEÑOR
+// SIGUIENTE CANTO DEBAJO
 
 
 
