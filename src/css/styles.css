@@ -21,7 +21,7 @@ input {
 
 @font-face {
     font-family: Neocat;
-    src: url('/cantos/src/font/Neocat-Regular_3.0.ttf') format('truetype');
+    src: url('/docs/Neocat-Regular_3.0.ttf') format('truetype');
     font-display: swap; /* Muestra texto con fuente fallback mientras carga */
 }
 
@@ -70,6 +70,28 @@ input {
     font-weight: bold;
     margin-top: -2px;
 }
+
+.cristo {
+    position: fixed;
+    z-index: -9999;
+
+    @media (min-width: 384px){
+        width: 33%;
+        left: 0px;
+        top: 100px;
+    }
+    @media (min-width: 768px){
+        width: 7%;
+        left: 0px;
+        top: 2%;
+    }
+    @media (min-width: 992px){
+        width: 14%;
+        left: 0px;
+        top: 2%;
+    }
+}
+
 
 .cima {
     width: 16%;
@@ -219,7 +241,6 @@ color: black;
 border: 1px solid #FFEB3B;
 
 }
-
 
 .moment-filter {
     width: fit-content;
@@ -426,9 +447,10 @@ border: 1px solid #FFEB3B;
 }
 
 .dblink-ac:hover {
-    background-color: rgb(255 255 255);
+    background-color: rgba(255, 255, 255, 0);
     color: #1095cc;
-    max-width:max-content;
+    width: 100%;
+    max-width:100%;
 }
 
 .dblink, .dblink-rojo, .dblink-fb {

@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
                    .replace(/í/g, 'i')
                    .replace(/ó/g, 'o')
                    .replace(/ú/g, 'u')
-                   .replace(/ñ/g, 'n') // Esta línea convierte 'ñ' a 'n'
+                   .replace(/ñ/g, 'n')
                    .replace(/\s/g, '-');
     };
 
     // Listas de categorías y momentos para determinar el tipo de URL
-    // Estas listas almacenan los nombres NORMALIZADOS para una comparación consistente.
+    // Estas listas almacenan los nombres normalizados para una comparación consistente.
     const categoriesList = ["precatecumenado", "catecumenado", "eleccion", "liturgia"];
     const momentsList = [
-        "ninos", // *** CAMBIO AQUÍ: Usar "ninos" sin 'ñ' ***
+        "niños", // Asegúrate de que "Niños" esté normalizado aquí
         "entrada", "paz", "fraccion-del-pan", "comunion", "final",
         "adviento", "navidad", "pascua", "pentecostes",
         "virgen-maria",
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "cuaresma"
     ];
 
-    // Mapeo de nombres normalizados a sus nombres canónicos para CATEGORÍAS
+    // NUEVO: Mapeo de nombres normalizados a sus nombres canónicos para CATEGORÍAS
     const canonicalCategoryNames = {
         "precatecumenado": "Precatecumenado",
         "catecumenado": "Catecumenado",
@@ -38,9 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
         "liturgia": "Liturgia",
     };
 
-    // Mapeo de nombres normalizados a sus nombres canónicos para MOMENTOS
+    // NUEVO: Mapeo de nombres normalizados a sus nombres canónicos para MOMENTOS
     const canonicalMomentNames = {
-        "ninos": "Niños", // *** CAMBIO AQUÍ: La clave es "ninos", el valor es "Niños" ***
+        "virgen-maria": "Vírgen María",
+        "niños": "Niños", // Agregado el nombre canónico para "Niños"
         "entrada": "Entrada",
         "paz": "Paz",
         "fraccion-del-pan": "Fracción del Pan",
@@ -50,19 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "navidad": "Navidad",
         "pascua": "Pascua",
         "pentecostes": "Pentecostés",
-        "virgen-maria": "Vírgen María",
         "aclamacion": "Aclamación",
         "laudes": "Laudes",
-        "Vísperas": "visperas",
+        "visperas": "Vísperas", // Corregido el acento si es necesario
         "penitencial": "Penitencial",
         "salmodia": "Salmodia",
         "nuevo-testamento": "Nuevo Testamento",
         "antiguo-testamento": "Antiguo Testamento",
         "cuaresma": "Cuaresma",
     };
-
-    // Debugging: Confirmar el contenido de momentsList al inicio
-    console.log("momentsList content (at start):", momentsList);
 
 
     // 1. Obtener el parámetro 'canto' de la URL
@@ -74,9 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cantoIdToLoad = cantoIdFromUrl || "alavictimapascual"; 
 
     // 3. Busca el canto específico por su ID en la base de datos
-    // Asumiendo que allCantosData está importado o globalmente disponible
-    const currentCanto = typeof allCantosData !== 'undefined' ? allCantosData.find(canto => canto.id === cantoIdToLoad) : null;
-
+    const currentCanto = allCantosData.find(canto => canto.id === cantoIdToLoad);
 
     if (currentCanto) {
         console.log("Canto found:", currentCanto.title);
@@ -89,36 +84,18 @@ document.addEventListener('DOMContentLoaded', () => {
             let normalizedCatNameForComparison = normalizeForUrl(catName);
             let nameForUrl = catName; // Por defecto, usar el nombre original de canto_data.js
 
-            // *** INICIO DE LOS LOGS PARA DEPURACIÓN ADICIONAL ***
-            console.log(`--- Processing Category/Moment: "${catName}" ---`);
-            console.log(`  Normalized name for comparison: "${normalizedCatNameForComparison}" (length: ${normalizedCatNameForComparison.length})`);
-            
-            // Verificar si momentsList tiene al menos un elemento antes de acceder a momentsList[0]
-            if (momentsList.length > 0) {
-                console.log(`  momentsList[0] (should be "ninos"): "${momentsList[0]}" (length: ${momentsList[0].length})`);
-                console.log(`  Are normalizedCatNameForComparison and momentsList[0] strictly equal? ${normalizedCatNameForComparison === momentsList[0]}`);
-            } else {
-                console.log("  momentsList is empty or does not have a first element.");
-            }
-            
-            console.log(`  Is in categoriesList? ${categoriesList.includes(normalizedCatNameForComparison)}`);
-            console.log(`  Is in momentsList? ${momentsList.includes(normalizedCatNameForComparison)}`);
-            // *** FIN DE LOS LOGS PARA DEPURACIÓN ADICIONAL ***
-
-
             // Determinar si es una categoría o un momento usando las listas normalizadas
-            // PRIORIZAR LA COMPROBACIÓN DE MOMENTOS
-            if (momentsList.includes(normalizedCatNameForComparison)) {
-                paramType = "moment";
-                // Si existe un nombre canónico en el mapa de momentos, usarlo para la URL
-                if (canonicalMomentNames[normalizedCatNameForComparison]) {
-                    nameForUrl = canonicalMomentNames[normalizedCatNameForComparison];
-                }
-            } else if (categoriesList.includes(normalizedCatNameForComparison)) {
+            if (categoriesList.includes(normalizedCatNameForComparison)) {
                 paramType = "category";
                 // Si existe un nombre canónico en el mapa de categorías, usarlo para la URL
                 if (canonicalCategoryNames[normalizedCatNameForComparison]) {
                     nameForUrl = canonicalCategoryNames[normalizedCatNameForComparison];
+                }
+            } else if (momentsList.includes(normalizedCatNameForComparison)) {
+                paramType = "moment";
+                // Si existe un nombre canónico en el mapa de momentos, usarlo para la URL
+                if (canonicalMomentNames[normalizedCatNameForComparison]) {
+                    nameForUrl = canonicalMomentNames[normalizedCatNameForComparison];
                 }
             } else {
                 // Fallback si no se encuentra en ninguna lista, se asume como categoría
@@ -126,11 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 paramType = "category";
             }
             
-            // *** INICIO DE LOS LOGS PARA DEPURACIÓN FINAL ***
-            console.log(`  Final paramType determined: "${paramType}"`);
-            console.log(`  Name for URL: "${nameForUrl}"`);
-            // *** FIN DE LOS LOGS PARA DEPURACIÓN FINAL ***
-
             // Usar el nombre determinado (nameForUrl) para el valor del parámetro en la URL
             // El navegador se encargará de codificar los caracteres especiales (como acentos)
             const categoryUrl = `${baseUrl}${paramType}=${nameForUrl}`;

@@ -26,7 +26,7 @@ const positionConfigs = {
         maxWidth: 991,
         factor: 1.34, // Factor por defecto, ajustar según necesidad
     },
-    'desktop-small': { // Para anchos de pantalla entre 992px y 1279px
+    'desktopsmall': { // Para anchos de pantalla entre 992px y 1279px
         minWidth: 992,
         maxWidth: 1279,
         factor: 1.0, // Factor por defecto, ajustar según necesidad
@@ -208,8 +208,8 @@ const getCurrentPositionConfig = (screenWidth) => {
         return positionConfigs.mobile;
     } else if (screenWidth >= positionConfigs.tablet.minWidth && screenWidth <= positionConfigs.tablet.maxWidth) {
         return positionConfigs.tablet;
-    } else if (screenWidth >= positionConfigs['desktop-small'].minWidth && screenWidth <= positionConfigs['desktop-small'].maxWidth) {
-        return positionConfigs['desktop-small'];
+    } else if (screenWidth >= positionConfigs['desktopsmall'].minWidth && screenWidth <= positionConfigs['desktopsmall'].maxWidth) {
+        return positionConfigs['desktopsmall'];
     } else {
         return positionConfigs.desktop;
     }
@@ -223,8 +223,8 @@ const getDeviceType = (screenWidth) => {
         return 'mobile';
     } else if (screenWidth >= positionConfigs.tablet.minWidth && screenWidth <= positionConfigs.tablet.maxWidth) {
         return 'tablet';
-    } else if (screenWidth >= positionConfigs['desktop-small'].minWidth && screenWidth <= positionConfigs['desktop-small'].maxWidth) {
-        return 'desktop-small';
+    } else if (screenWidth >= positionConfigs['desktopsmall'].minWidth && screenWidth <= positionConfigs['desktopsmall'].maxWidth) {
+        return 'desktopsmall';
     } else {
         return 'desktop';
     }

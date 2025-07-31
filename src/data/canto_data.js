@@ -23,7 +23,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         // Propiedades para navegación entre cantos
         ant: "/resucito/", // No hay canto anterior para el primero
         sig: "/resucito/src/index.html?canto=anadiedemosocasiondetropiezo", // URL del siguiente canto
@@ -78,8 +79,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 },
             tablet: { velocidad: 7, incremento: 1 },
-            desktop: { velocidad: 7, incremento: 1 }
-        },
+            desktop: { velocidad: 7, incremento: 1 },
+            desktopsmall: { velocidad: 7, incremento: 1 }},
         // Propiedades para navegación entre cantos
         ant: "/resucito/src/index.html?canto=alavictimapascual",
         sig: "/resucito/src/html/atlmos.html?canto=atilevantomisojos",
@@ -173,6 +174,7 @@ const allCantosData = [
             mobile: { velocidad: 6, incremento: 3 },
             tablet: { velocidad: 7, incremento: 1 },
             desktop: { velocidad: 7, incremento: 1 },
+            desktopsmall: { velocidad: 7, incremento: 1 },
         },
         // Propiedades para navegación entre cantos
         ant: "/resucito/src/index.html?canto=anadiedemosocasiondetropiezo",
@@ -241,7 +243,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/html/atlmos.html?canto=atilevantomisojos",
         sig: "/resucito/src/index.html?canto=atisenorlevantomialma",
 // Contenido del lado izquierdo del canto,
@@ -309,7 +312,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=atisenorenmiclamorimploro",
         sig: "/resucito/src/index.html?canto=atisenorsedebelaalabanzaension",
 // Contenido del lado izquierdo del canto,
@@ -362,43 +366,57 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=atisenorlevantomialma",
         sig: "/resucito/src/index.html?canto=abbapadre",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "A ti, Señor, se debe la alabanza, en Sión., (Re,m,15)(La,7,364)", sC: ""},
+            { line: "A ti, Señor, se debe la alabanza, en Sión., (Re,m,15)(La,7,364)", sC: "tc"},
             { line: "A ti se te cumple el voto, en Jerusalén., (Re,m,342)", sC: ""},
             { line: "A ti que escuchas la oración,, (Sol,m,28)(Re,m,246)", sC: ""},
             { line: "viene todo mortal, viene todo mortal., (La,7,156)(Re,m,330)", sC: ""},
 
-            { line: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "mt as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "ta as"},
             { line: "VIENE TODO MORTAL,, (Si♭,,25)", sC: "as"},
             { line: "VIENE TODO MORTAL., (La,7,189)", sC: "as"},
 
-            { line: "Pesan sobre nosotros nuestros pecados,, (Re,m,15)(La,7,340)", sC: "mt"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Pesan sobre nosotros nuestros pecados,, (Re,m,15)(La,7,340)", sC: "tc"},
             { line: "mas tú perdonas nuestras culpas., (Re,m,273)", sC: ""},
             { line: "Dichoso el que tú eliges, el que tú llamas,, (La,7,345)", sC: ""},
             { line: "vivirá en tus atrios., (Re,m,137)", sC: ""},
-            { line: "A ti que escuchas la oración,, (Sol,m,31)(Re,m,247)", sC: "mt"},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "A ti que escuchas la oración,, (Sol,m,31)(Re,m,247)", sC: ""},
             { line: "viene todo mortal, viene todo mortal., (La,7,158)(Re,m,333)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
   
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "mt as ta", lines: [
+           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "as ta", lines: [
             { line: "VIENE TODO MORTAL,, (Si♭,,25)", sC: "as"},
             { line: "VIENE TODO MORTAL., (La,7,189)", sC: "as"},  ]},
  
     ], lder: [
-            { line: "Nos saciaremos de los bienes de tu casa,, (Re,m,15)(La,7,361)", sC: ""},
+            { line: "Nos saciaremos de los bienes de tu casa,, (Re,m,15)(La,7,361)", sC: "tc"},
             { line: "de la santidad de tu templo., (Re,m,214)", sC: ""},
             { line: "Con los prodigios de tu amor tú nos hablas,, (La,7,360)", sC: ""},
             { line: "con los portentos de tu justicia nos respondes., (Re,m,380)", sC: ""},
 
-            { line: "A ti que escuchas la oración,, (Sol,m,31)(Re,m,246)", sC: "mt"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "A ti que escuchas la oración,, (Sol,m,31)(Re,m,246)", sC: ""},
             { line: "viene todo mortal, viene todo mortal., (La,7,156)(Re,m,331)", sC: ""},
   
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "mt as ta", lines: [
+           triggerLine: "A TI QUE ESCUCHAS LA ORACIÓN, (Si♭,,8)(La,7,297)", sC: "as ta", lines: [
             { line: "VIENE TODO MORTAL,, (Si♭,,25)", sC: "as"},
             { line: "VIENE TODO MORTAL., (La,7,189)", sC: "as"},  ]},
  
@@ -424,24 +442,33 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=atisenorsedebelaalabanzaension",
         sig: "/resucito/src/index.html?canto=abraham",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "¡ABBÁ, PADRE, PADRE!, (Do,,9)(Sol,,90)(Fa,,174)(Do,,220)", sC: "ta as"},
-            { line: "No hemos recibido, (La,m,17)", sC: "mt tc"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "No hemos recibido, (La,m,17)", sC: "tc"},
             { line: "el espíritu de siervos, (Re,m,56)(La,m,147)", sC: ""},
             { line: "para recaer en el temor,, (Fa,,10)(Mi,,209)", sC: ""},
             { line: "para recaer en el temor., (Fa,,10)(Mi,,209)", sC: ""},
 
-            { line: "ESTE MISMO ESPÍRITU, (La,m,15)", sC: "mt as ta"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "ESTE MISMO ESPÍRITU, (La,m,15)", sC: "as ta"},
             { line: "DA TESTIMONIO A NUESTRO ESPÍRITU, (Re,m,15)(La,m,111)(Fa,,165)(Mi,,320)", sC: "as"},
             { line: "DE QUE SOMOS HIJOS DE DIOS., (Mi,7,15)(La,m,278)", sC: "as"},
             { line: "Y, SI HIJOS, TAMBIÉN HEREDEROS,, (Sol,7,61)(Do,,281)", sC: "mt as"},
             { line: "COHEREDEROS DE CRISTO,, (Mi,7,214)", sC: "as"},
             { line: "HEREDEROS DE DIOS., (La,m,189)", sC: "as"},
-            { line: "Y, SI HIJOS, TAMBIÉN HEREDEROS,, (Sol,7,63)(Do,,284)", sC: "mt as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Y, SI HIJOS, TAMBIÉN HEREDEROS,, (Sol,7,63)(Do,,284)", sC: "as"},
             { line: "COHEREDEROS DE CRISTO,, (Mi,7,213)", sC: "as"},
             { line: "HEREDEROS DE DIOS., (La,m,179)", sC: "as"},
             { line: "¡ABBÁ, PADRE, PADRE!, (Do,,15)(Sol,,89)(Fa,,173)(Do,,214)", sC: "as mt"},
@@ -469,7 +496,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=abbapadre",
         sig: "/resucito/src/index.html?canto=aclamadalsenor",
 // Contenido del lado izquierdo del canto,
@@ -530,7 +558,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=abraham",
         sig: "/resucito/src/index.html?canto=aldespertar",
 // Contenido del lado izquierdo del canto,
@@ -602,7 +631,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=aclamadalsenor",
         sig: "/resucito/src/index.html?canto=alabadalsenorenelcielo",
 // Contenido del lado izquierdo del canto,
@@ -685,7 +715,7 @@ const allCantosData = [
         tt: "Alabad Al Señor En El Cielo",
         title: "Alabad Al Señor En El Cielo",
         subtitle: "Salmo 148 ",
-        category: ["PreCatecumenado","Navidad","Niños"],
+        category: ["PreCatecumenado","Niños","Navidad"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -697,7 +727,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=aldespertar",
         sig: "/resucito/src/index.html?canto=alegriahanacidoelsalvador",
 // Contenido del lado izquierdo del canto,
@@ -757,7 +788,7 @@ const allCantosData = [
         tt: "Alegría, Ha Nacido El Salvador",
         title: "Alegría, Ha Nacido El Salvador",
         subtitle: "Villancico (Kiko Argüello)",
-        category: ["PreCatecumenado","Adviento","Navidad","Ordinario"],
+        category: ["PreCatecumenado","Adviento","Navidad"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -769,7 +800,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=alabadalsenorenelcielo",
         sig: "/resucito/src/index.html?canto=aleluyaalabadalsenor",
 // Contenido del lado izquierdo del canto,
@@ -859,7 +891,7 @@ const allCantosData = [
         tt: "Aleluya, Alabad Al Señor",
         title: "Aleluya, Alabad Al Señor",
         subtitle: "Salmo 150",
-        category: ["PreCatecumenado","Laudes","Vispera"],
+        category: ["PreCatecumenado","Laudes","Visperas"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -871,7 +903,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },  // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=alegriahanacidoelsalvador",
         sig: "/resucito/src/index.html?canto=aleluyabendecidalsenor",
 // Contenido del lado izquierdo del canto,
@@ -921,92 +954,84 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA, ALABAD AL SEÑOR
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
-║                ALELUYA, BENDECID AL SEÑOR               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╔══════════════════════════════════════════════════════════════╗
+║                ALELUYA, BENDECID AL SEÑOR                    ║
+╚══════════════════════════════════════════════════════════════╝  */
    {
         id: "aleluyabendecidalsenor",
         tt: "Aleluya, Bendecid Al Señor",
         title: "Aleluya, Bendecid Al Señor",
         subtitle: "Salmo 1.34 (1.33) - Melodía hebraica",
-        category: ["PreCatecumenado","Laudes/Visperas","Comunión","Nuevo Testamento"],
+        category: ["PreCatecumenado","Pascua","Pentecostés","Niños","Paz","Comunión"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         dbno: "14",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/aleluyabendecidalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=aleluyaalabadalsenor",
         sig: "/resucito/src/index.html?canto=aleluyayallegoelreino",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,15)(Si♭,,250)(La,,350)", sC: "as"},
-            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,15)(La,,250)", sC: "as"},
+            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,10)(Si♭,,178)(La,,272)", sC: "niño as"},
+            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)", sC: "as b14"},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "Bendecid al Señor, bendecid al Señor,, (Re,m,15)", sC: ""},
-            { line: "vosotros los siervos del Señor., (La7,,15)", sC: ""},
-            { line: "Bendecid al Señor, bendecid al Señor,, ", sC: ""},
-            { line: "vosotros que estáis en la casa del Señor., (Re,m,15)", sC: ""},
+            { line: "Bendecid al Señor, bendecid al Señor,, (Re,m,20)", sC: "niño"},
+            { line: "vosotros los siervos del Señor., (La7,,266)", sC: ""},
+            { line: "Bendecid al Señor, bendecid al Señor, ", sC: ""},
+            { line: "vosotros que estáis en la casa del Señor., (Re,m,366)", sC: ""},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "Alzad a Él las manos, alzad a Él las manos, (Re,m,15)", sC: ""},
-            { line: "y bendecid al Señor,, (La7,,15)", sC: ""},
+            { line: "Alzad a Él las manos, alzad a Él las manos, (Re,m,21)", sC: ""},
+            { line: "y bendecid al Señor,, (La7,,172)", sC: ""},
             { line: "vosotros que estáis en la casa del Señor, ", sC: ""},
-            { line: "durante la noche., (Re,m,15)", sC: ""},
+            { line: "durante la noche., (Re,m,159)", sC: ""},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,250)(Si♭,La,350)", sC: "as"},
-            { line: "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,250)(Si♭,La,350)", sC: "as"},
+            { line: "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,108)(Si♭,,218)(La,,250)", sC: "ta as"},
+            { line: "ALELUYA, ALELUYA, A A LE E LU U YA., (Re,m,15)(La,7,108)(Si♭,,218)(La,,250)", sC: "as"},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,15)(Si♭,,250)(La,,350)", sC: "as ta", lines: [
-            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,15)(La,,250)", sC: "as"},  ]},
+       triggerLine: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,10)(Si♭,,178)(La,,272)", sC: "as ta", lines: [
+            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)", sC: "as"},  ]},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "A TI, SEÑOR, EN MI CLAMOR IMPLORO,, (La,m,15)", sC: "as ta", lines: [
-            { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (Fa,,15)", sC: "as"},
-            { line: "A TI, SEÑOR, EN MI CLAMOR SUPLICO,, (Mi,7,15)", sC: "as"},
-            { line: "A TI DERRAMO MI LAMENTO,, (Fa,,15)", sC: "as"},
-            { line: "A TI MI ANGUSTIA EXPONGO. , (Fa,,15)", sC: "as"},  ]},
-            
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, (Re,m,15)", sC: "as ta", lines: [
-            { line: "VOSOTROS LOS SIERVOS DEL SEÑOR., (La7,,15)", sC: "as"},
+       triggerLine: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, (Re,m,20)", sC: "as ta", lines: [
+            { line: "VOSOTROS LOS SIERVOS DEL SEÑOR., (La7,,327)", sC: "as"},
             { line: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, ", sC: "as"},
-            { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR., (Re,m,15)", sC: "as"},
+            { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR., (Re,m,439)", sC: "as"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "ALZAD A ÉL LAS MANOS, ALZAD A ÉL LAS MANOS, (Re,m,15)", sC: "as ta"} ,
-            { line: "Y BENDECID AL SEÑOR,, (La7,,15)", sC: "as"},
+            { line: "ALZAD A ÉL LAS MANOS, ALZAD A ÉL LAS MANOS, (Re,m,21)", sC: "as ta"} ,
+            { line: "Y BENDECID AL SEÑOR,, (La7,,172)", sC: "as"},
             { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR, ", sC: "as"},
-            { line: "DURANTE LA NOCHE., (Re,m,15)", sC: "as"},  ]},
+            { line: "DURANTE LA NOCHE., (Re,m,159)", sC: "as"},  ]},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "Aalelú, alelú uuu ... uuya., (Si♭,,15)(La,7,250)", sC: "tc"},
+            { line: "Aalelú, alelú uuu ... uuya., (Si♭,,59)(La,7,226)", sC: "tc"},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,15)(Si♭,,250)(La,,350)", sC: "as ta", lines: [
-            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,15)(La,,250)", sC: "as"},  ]},
+       triggerLine: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,10)(Si♭,,178)(La,,272)", sC: "as ta", lines: [
+            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)", sC: "as"},  ]},
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA, BENDECID AL SEÑOR
 // SIGUIENTE CANTO DEBAJO

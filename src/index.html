@@ -15,12 +15,12 @@
 
     <!-- Contenedor principal que envuelve todo el contenido de la página -->
     <div class="main-wrapper">
+        <img class="cristo"  src="/resucito/src/img/cristo.png" alt="Cristo Resucitado">
         <div class="header-section">
             <div class="top-row-controls">
                 
                 <home class="home-icon-container">
                     <a href="/resucito/" class="material-symbols-outlined icon-button">home</a>
-                    
                 </home>
 
                 <div class="toolbar mgap"> <!-- Añadida clase mgap aquí -->
@@ -78,32 +78,18 @@
                         <input type="search" id="DavidLoBusca" placeholder="Buscar..." autocomplete="off" class="toolbar-item search-input" >
                         <div id="resultadosBusqueda" class="resultados-busqueda"></div>
                     </div>
-
-
-
-
-
-
-
-                    
                 </div>
             </div>
-            
-            
-            
         <div>
         <audio id="cantoAudioPlayer" class="saudio" controls="" controlslist="download" preload="metadata" loop="">
         <source src="" type="audio/mpeg"></audio> <!-- La fuente se establecerá con JS -->
         </div>
-
-        </div>
-
-            <h1>
-                <!-- Los títulos del canto se llenarán con JavaScript desde canto_data.js -->
-                <div class="dbt1"></div>
-                <div class="dbs2"></div>
-            </h1>
-
+            </div>
+                <h1 class="sdb">
+                    <!-- Los títulos del canto se llenarán con JavaScript desde canto_data.js -->
+                    <div class="dbt1"></div>
+                    <div class="dbs2"></div>
+                </h1>
         <div class="container">
             <div class="canto-content-wrapper">
                 <div id="canto-left-container" class="canto-column">
@@ -146,7 +132,6 @@
             <img id="largeChordImage" src="" alt="Acorde ampliado">
         </div>
     </div>
-
     <script src="/resucito/src/data/canto_data.js"></script> <!-- Primer JS, ya que contiene los datos -->
     <script src="/resucito/src/data/find.js"></script>
     <script src="/resucito/src/js/jsgral.js"></script>
