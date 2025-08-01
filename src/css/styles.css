@@ -75,6 +75,12 @@ input {
     position: fixed;
     z-index: -9999;
 
+    @media (min-width: 1px){
+        width: 33%;
+        left: 0px;
+        top: 100px;
+    }
+
     @media (min-width: 384px){
         width: 33%;
         left: 0px;
@@ -88,8 +94,15 @@ input {
     @media (min-width: 992px){
         width: 15%;
         left: 0px;
-        top: 6%;
+        top: 2%;
     }
+
+    @media (min-width: 802px) {
+        width: 27%;
+        top: 34px;
+    }
+    @media (min-width: 1000px) {width: 24%;}
+    @media (min-width: 1300px) and (min-width: 1700px) {width: 17%;}
 }
 
 

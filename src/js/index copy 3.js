@@ -61,34 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "cuaresma": "Cuaresma",
     };
 
-    // *** INICIO DE CÓDIGO NUEVO PARA CARGAR CSS DINÁMICO ***
-    // Función para crear y agregar dinámicamente un link de CSS al head
-    const loadDynamicCSS = (cantoId) => {
-        // La ruta del archivo CSS ahora es src/css/pg/
-        const cssPath = `/resucito/src/css/pg/${cantoId}.css`;
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = cssPath;
-        link.onerror = () => {
-            console.log(`No se encontró el archivo CSS específico para el canto: ${cssPath}`);
-        };
-        link.onload = () => {
-            console.log(`Se cargó el CSS dinámico para el canto: ${cssPath}`);
-        };
-        document.head.appendChild(link);
-        console.log(`Intentando cargar CSS dinámico para el canto: ${cssPath}`);
-    };
-    // *** FIN DE CÓDIGO NUEVO ***
-
-    // Función para obtener el valor de un parámetro de la URL por su nombre
-    const getUrlParameter = (name) => {
-        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-        const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-        const results = regex.exec(location.search);
-        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-    };
-
     // Debugging: Confirmar el contenido de momentsList al inicio
     console.log("momentsList content (at start):", momentsList);
 
@@ -108,9 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (currentCanto) {
         console.log("Canto found:", currentCanto.title);
-        // Llamada a la nueva función para cargar el CSS específico del canto
-        loadDynamicCSS(cantoIdToLoad);
-        
         // Procesar las categorías para incluir sus URLs
         const processedCategories = currentCanto.category.map(catName => {
             let baseUrl = "/resucito/index.html?";
@@ -135,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(`  Is in categoriesList? ${categoriesList.includes(normalizedCatNameForComparison)}`);
             console.log(`  Is in momentsList? ${momentsList.includes(normalizedCatNameForComparison)}`);
             // *** FIN DE LOS LOGS PARA DEPURACIÓN ADICIONAL ***
+
 
             // Determinar si es una categoría o un momento usando las listas normalizadas
             // PRIORIZAR LA COMPROBACIÓN DE MOMENTOS
@@ -177,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     } else {
         console.error(`Error: El canto con ID \"${cantoIdToLoad}\" no se encontró en canto_data.js. Verifica el ID y el contenido de canto_data.js.`);
-        // Aquí está el bloque de código de manejo de errores
+        // Opcional: Mostrar un mensaje al usuario si el canto no se encuentra
         document.querySelector('.dbt1').textContent = "Canto no encontrado";
         document.querySelector('.dbs2').textContent = "Verifica la URL o el ID del canto.";
         document.getElementById('canto-left-container').innerHTML = "<p>Lo sentimos, el canto solicitado no existe.</p>";

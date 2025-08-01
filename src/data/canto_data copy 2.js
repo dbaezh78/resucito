@@ -83,7 +83,7 @@ const allCantosData = [
             desktopsmall: { velocidad: 7, incremento: 1 }},
         // Propiedades para navegación entre cantos
         ant: "/resucito/src/index.html?canto=alavictimapascual",
-        sig: "/resucito/src/index.html?canto=atilevantomisojos",
+        sig: "/resucito/src/html/atlmos.html?canto=atilevantomisojos",
         nCan: "",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
@@ -187,7 +187,7 @@ const allCantosData = [
 
         lizq: [
             { line: "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,189)", sC: "as tc" },
-            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "b2 as" },
+            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "r1 as" },
 
             { line: "Como los ojos de los siervos,  (Re,m,15)", sC: "tc mt" },
             { line: "miran a las manos de sus señores,  (La,7,287)"},
@@ -209,7 +209,7 @@ const allCantosData = [
             { line: "¡DE LAS BURLAS DE LOS SATISFECHOS,(Re,m,100)(La,7,313)", sC:"mujeres as mt"},
             { line: "DEL DESPRECIO DE LOS SOBERBIOS!(Si♭,7,119)(La,7,282)", sC:"hombres as"},
 
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,57)(La,7,286)", sC:"mujeres as mt ndb"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,57)(La,7,286)", sC:"mujeres as mt"},
             { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Si♭,7,57)(La,7,286)", sC:"hombres as"},
 
             {   type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
@@ -245,7 +245,7 @@ const allCantosData = [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=atilevantomisojos",
+        ant: "/resucito/src/html/atlmos.html?canto=atilevantomisojos",
         sig: "/resucito/src/index.html?canto=atisenorlevantomialma",
 // Contenido del lado izquierdo del canto,
     lizq: [
