@@ -790,35 +790,33 @@ hr {
 }
 
 .saudio {
+    z-index: 999;
+    opacity: 0.7;
     width: -webkit-fill-available;
     background-color: #f1f3f4;
     outline: none;
     border-radius: 0px 0px 0px 0px;
     display: none; 
-    z-index: 999;
     
-}
-
-@media (min-width: 384px) {
-    .saudio {
+    @media (min-width: 384px) {
+        z-index: 999;
         position: fixed; 
         width: 376px; 
         margin-left: 0px;
         margin-top: -5px;
         height: 22px;
     }
-}
-@media (min-width: 768px) {
-    .saudio { 
-        
+
+    @media (min-width: 768px) {
+        z-index: 999;
         position: fixed;
         margin-left: 0px; 
         width: 784px;
         height: 28px;
     }
-}
-@media (min-width: 992px) {
-    .saudio { 
+
+    @media (min-width: 992px) {
+        z-index: 999;
         position: absolute;
         margin-left: -20px; 
         width: 1085px;
