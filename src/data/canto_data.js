@@ -1104,6 +1104,92 @@ const allCantosData = [
             { line: "ALELUYA,ALELUYA,ALELUYA., (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA, YA LLEGÓ EL REINO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                ALZAOS, PUERTAS               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "alzaospuertas",
+        tt: "Alzaos, Puertas",
+        title: "Alzaos, Puertas",
+        subtitle: "Salmo 24 (23)",
+        category: ["PreCatecumenado","Entrada","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "16",
+        notes: "",
+        mant: "`No",
+        audioSrc: "/audio/alzaospuertas.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=aleluyayallegoelreino",
+        sig: "/resucito/src/index.html?canto=amenamenamen",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Del Señor es la tierra,, (Mi,,10)", sC: "tc"},
+            { line: "DEL SEÑOR ES LA TIERRA,, ", sC: "ta as"},
+            { line: "y todo aquello que contiene,, (Sol,,10)", sC: "tc"},
+            { line: "Y TODO AQUELLO QUE CONTIENE,, ", sC: "ta as"},
+            { line: "el orbe y sus habitantes., (La,,10)(Si,7,183)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALZAOS, PUERTAS,, (Mi,,10)", sC: "ta as"},
+            { line: "ALZAD LOS DINTELES,, (Sol,,45)", sC: "as"},
+            { line: "PUERTAS ETERNAS,, (La,,125)", sC: "as"},
+            { line: "DEBE ENTRAR EL REY, (Mi,,195)", sC: "as"},
+            { line: "DE LA GLORIA, DE LA GLORIA., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿Quién es ese Rey de la gloria?, (Mi,m,15)(La,m,92)(Mi,m,258)", sC: "tc"},
+            { line: "¿QUIÉN ES ESE REY DE LA GLORIA?, (La,m,94)(Mi,m,288)", sC: "ta as"},
+            { line: "El Señor, el fuerte, el valiente,, (Si,m,17)", sC: "tc"},
+            { line: "EL SEÑOR, EL FUERTE, EL VALIENTE,, ", sC: "ta as"},
+            { line: "el Señor, valiente en la batalla,, (Sol,,63)(La,,254)", sC: "tc"},
+            { line: "VALIENTE EN LA BATALLA., (Si,,200)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Señor de los ejércitos,, (Mi,m,15)(Si,m,177)", sC: "tc"},
+            { line: "EL SEÑOR DE LOS EJÉRCITOS., (Mi,m,75)(Si,m,209)", sC: "ta as"},
+    ], lder: [
+            { line: "Él es el Rey de la gloria,, (Sol,,31)(La,,187)", sC: "tc"},
+            { line: "EL REY DE LA GLORIA., (Si,,168)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ALZAOS, PUERTAS,, (Mi,,10)", sC: "as ta", lines: [
+            { line: "ALZAD LOS DINTELES,, (Sol,,45)", sC: "as"},
+            { line: "PUERTAS ETERNAS,, (La,,125)", sC: "as"},
+            { line: "DEBE ENTRAR EL REY, (Mi,,195)", sC: "as"},
+            { line: "DE LA GLORIA, DE LA GLORIA., ", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿Quién subirá al monte del Señor?, (Mi,m,15)(La,m,124)(Mi,m,307)", sC: "tc"},
+            { line: "¿QUIÉN SUBIRÁ AL MONTE DEL SEÑOR?, (La,m,138)(Mi,m,350)", sC: "ta as"},
+            { line: "El de manos inocentes y puro corazón,, (Si,m,20)", sC: "tc"},
+            { line: "EL DE MANOS INOCENTES, ", sC: "ta as"},
+            { line: "Y PURO CORAZÓN,, ", sC: "as"},
+            { line: "el que no conduce su vida por vanidad,, (Sol,,14)(La,,348)", sC: "tc"},
+            { line: "POR VANIDAD., (Si,,114)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y nosotros somos su Iglesia,, (Mi,m,15)(Si,m,233)", sC: "tc"},
+            { line: "Y NOSOTROS SOMOS SU IGLESIA,, (Mi,m,65)(Si,m,280)", sC: "ta as"},
+            { line: "que hoy viene a tu presencia,, (Mi,m,99)(Si,m,228)", sC: "tc"},
+            { line: "QUE HOY VIENE A TU PRESENCIA,, (Mi,m,112)(Si,m,258)", sC: "ta as"},
+            { line: "que busca tu rostro, oh Dios de Jacob,, (Sol,,55)(La,,335)", sC: "tc"},
+            { line: "OH DIOS DE JACOB., (Si,,163)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ALZAOS, PUERTAS,, (Mi,,10)", sC: "as ta", lines: [
+            { line: "ALZAD LOS DINTELES,, (Sol,,45)", sC: "as"},
+            { line: "PUERTAS ETERNAS,, (La,,125)", sC: "as"},
+            { line: "DEBE ENTRAR EL REY, (Mi,,195)", sC: "as"},
+            { line: "DE LA GLORIA, DE LA GLORIA., ", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ALZAOS, PUERTAS
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
 
 
 
