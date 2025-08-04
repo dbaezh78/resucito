@@ -10,6 +10,7 @@
       @font-face {font-family: 'Material Symbols Outlined Local';font-style: normal;font-weight: 100 700;src: url('/cantos/src/font/font.woff2') format('woff2'); /* Ajusta la ruta según tu estructura */}
       @font-face {font-family: 'Fave';src: local('Fave Script Bold Pro'), local('Fave-Script-Bold-Pro'),url('/cantos/src/font/Fave-ScriptBoldPro.woff2') format('woff2'),url('/cantos/src/font/Fave-ScriptBoldPro.woff') format('woff'),url('/cantos/src/font/Fave-ScriptBoldPro.ttf') format('truetype');font-weight: 700;font-style: normal;}
       @font-face {font-family: 'Franklin Gothic Medium';src: url('/cantos/src/font/FranklinGothicMedium.ttf') format('truetype');font-weight: normal;font-style: normal;font-display: swap;}
+      @font-face {font-family: Neocat; src: url('/docs/Neocat-Regular_3.0.ttf') format('truetype'); font-display: swap; }
 
 
 
@@ -783,7 +784,12 @@ hr {
 }
 
 .cno {padding: 10px 20px 0px 20px;   }
-.nCanto {font-family: monospace;}
+
+.nCanto {
+    color: red;
+    font-family: Neocat;
+    font-size: small;
+}
 
 .collapsible-trigger {
     cursor: pointer;

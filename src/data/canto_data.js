@@ -549,7 +549,7 @@ const allCantosData = [
         category: ["PreCatecumenado","Pascua"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
-        nCan: "",
+        nCan: "* Melisma",
         dbno: "9",
         notes: "",
         mant: "No",
@@ -1185,15 +1185,188 @@ const allCantosData = [
             { line: "DE LA GLORIA, DE LA GLORIA., ", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ALZAOS, PUERTAS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔═════════════════════════════════════════════════╗
+║                AMÉN, AMÉN, AMÉN                 ║
+╚═════════════════════════════════════════════════╝  */
+   {
+        id: "amenamenamen",
+        tt: "Amén, Amén, Amén",
+        title: "Amén, Amén, Amén",
+        subtitle: "Apocalipsis 7,12-14 ",
+        category: ["PreCatecumenado","Cuaresma","Laudes", "Visperas","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "17",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/amenamenamen.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=alzaospuertas",
+        sig: "/resucito/src/index.html?canto=amoalsenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "AMÉN, AMÉN, AMÉN., (Do,,10)", sC: "ta as"},
+            { line: "AMÉN, AMÉN, AMÉN., (La,m,41)", sC: "as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)", sC: "as"},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "BENDICIÓN Y GLORIA,, (Do,,10)", sC: "as"},
+            { line: "SABIDURÍA,, (Sol,,92)", sC: "as"},
+            { line: "ACCIÓN DE GRACIAS,", sC: "as"},
+            { line: "DEMOS A DIOS., (Do,,123)", sC: "as"},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "AMÉN, AMÉN, AMÉN, (Do,,10)", sC: "ta as", lines: [
+            { line: "AMÉN, AMÉN, AMÉN., (La,m,41)", sC: "as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)", sC: "as"},  ]},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "Honor y poder, (Fa,,40)", sC: "tc"},
+            { line: "y fortaleza,, (Mi,,71)", sC: ""},
+            { line: "honor y poder, (Fa,,37)", sC: ""},
+            { line: "demos a Dios., (Mi,,113)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "BENDICIÓN Y GLORIA, (Do,,10)", sC: "ta as", lines: [
+            { line: "SABIDURÍA,, (Sol,,92)", sC: "as"},
+            { line: "ACCIÓN DE GRACIAS, ", sC: "as"},
+            { line: "DEMOS A DIOS., (Do,,123)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "AMÉN, AMÉN, AMÉN, (Do,,10)", sC: "ta as", lines: [
+            { line: "AMÉN, AMÉN, AMÉN., (La,m,41)", sC: "as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+    ], lder: [
+            { line: "¿Quiénes son, (Fa,,108)", sC: "tc"},
+            { line: "y de dónde vienen?, (Mi,,130)", sC: ""},
+            { line: "¿QUIÉNES SON, (Fa,,123)", sC: "ta as"},
+            { line: "Y DE DÓNDE VIENEN?, (Mi,,151)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "ESTOS SON LOS QUE VIENEN, (Sol,7,22)(Do,,228)", sC: "ta as"},
+            { line: "DE LA GRAN TRIBULACIÓN., (Sol,,99)(Do,,235)", sC: "as b17"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Y LAVARON SUS TÚNICAS, (Fa,,62)", sC: "ta as"},
+            { line: "Y LAS BLANQUEARON, (Do,,165)", sC: "as"},
+            { line: "EN LA SANGRE DEL CORDERO,, (Fa,,85)(Mi,,261)", sC: "as"},
+            { line: "EN LA SANGRE DEL CORDERO., (Fa,,85)(Mi,,261)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESTOS SON LOS QUE VIENEN, (Sol,7,22)(Do,,228)", sC: "ta as", lines: [
+            { line: "DE LA GRAN TRIBULACIÓN., (Sol,,99)(Do,,235)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Y LAVARON SUS TÚNICAS, (Fa,,62)", sC: "as"},
+            { line: "Y LAS BLANQUEARON, (Do,,165)", sC: "as"},
+            { line: "EN LA SANGRE DEL CORDERO,, (Fa,,85)(Mi,,261)", sC: "as"},
+            { line: "EN LA SANGRE DEL CORDERO., (Fa,,85)(Mi,,261)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "AMÉN, AMÉN, AMÉN, (Do,,10)", sC: "ta as", lines: [
+            { line: "AMÉN, AMÉN, AMÉN., (La,m,41)", sC: "as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: AMÉN, AMÉN, AMÉN
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════╗
+║                AMO AL SEÑOR                    ║
+╚════════════════════════════════════════════════╝  */
+   {
+        id: "amoalsenor",
+        tt: "Amo Al Señor",
+        title: "Amo Al Señor",
+        subtitle: "Salmo 116 (114-115)",
+        category: ["PreCatecumenado","Cuaresma"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "18",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/amoalsenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=amenamenamen",
+        sig: "/resucito/src/index.html?canto=aquedah",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Amo al Señor, porque escucha, (Re,,10)(Fa#,m,253)", sC: "tc"},
+            { line: "mi voz suplicante;, (Sol,,127)", sC: "b18"},
+            { line: "inclina hacia mí su oído, (Mi,m6,38)(La,7,201)", sC: ""},
+            { line: "el día en que lo invoco., (Re,,188)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Me envolvían redes de muerte,, (Re,,11)", sC: "tc"},
+            { line: "me alcanzaron los lazos del infierno;, (Fa#,m,300)", sC: ""},
+            { line: "me rodeaban tristeza y angustia,, (Sol,,87)(Mi,m6,268)", sC: ""},
+            { line: "invoqué el nombre del Señor:, (La,7,68)", sC: ""},
+            { line: "«¡Te ruego, Señor, sálvame!»., (Re,,193)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "RECOBRA, ALMA MÍA, TU REPOSO,, (Re,,11)(Fa#,m,297)", sC: "ta as"},
+            { line: "PORQUE EL SEÑOR FUE BUENO CONTIGO., (Sol,,15)(Mi,m6,214)(La,7,364)", sC: "as"},
+            { line: "ÉL TE HA SALVADO DE LA MUERTE,, (Sol,,13)(Re,,293)", sC: "as"},
+            { line: "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,243)(Re,,358)", sC: "as"},
+            { line: "ÉL TE HA SALVADO DE LA MUERTE,, (Sol,,14)(Re,,284)", sC: "as"},
+            { line: "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,246)(Re,,359)", sC: "as"},
+    ], lder: [
+            { line: "¡Tenía fe, aun cuando dije:, (Re,,10)(Fa#,m,231)", sC: "tc"},
+            { line: "«Yo soy un desgraciado»!,", sC: ""},
+            { line: "y pensaba lleno de angustia:, (Sol,,229)", sC: ""},
+            { line: "«todo hombre es falso»., (Mi,m6,26)(La,7,176)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "¿Cómo pagaré al Señor, (Re,,14)", sC: "tc"},
+            { line: "todo el bien que me ha hecho?, (Fa#,m,248)", sC: ""},
+            { line: "Alzaré la copa de la bendición, (Sol,,53)(Mi,m6,267)", sC: ""},
+            { line: "e invocaré el nombre del Señor., (La,7,89)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "RECOBRA, ALMA MÍA, TU REPOSO,, (Re,,11)(Fa#,m,297)", sC: "ta as", lines: [
+            { line: "PORQUE EL SEÑOR FUE BUENO CONTIGO., (Sol,,15)(Mi,m6,214)(La,7,364)", sC: "as"},
+            { line: "ÉL TE HA SALVADO DE LA MUERTE,, (Sol,,13)(Re,,293)", sC: "as"},
+            { line: "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,243)(Re,,358)", sC: "as"},
+            { line: "ÉL TE HA SALVADO DE LA MUERTE,, (Sol,,14)(Re,,284)", sC: "as"},
+            { line: "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,246)(Re,,359)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: AMO AL SEÑOR
+// SIGUIENTE CANTO DEBAJO
 
 
 
 
 
 
-
-
-
-
-
-]
+] //LLAVE DE CIERRE DEL CANTO
