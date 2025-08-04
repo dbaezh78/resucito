@@ -1010,7 +1010,7 @@ const allCantosData = [
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, (Re,m,20)", sC: "as ta", lines: [
             { line: "VOSOTROS LOS SIERVOS DEL SEÑOR., (La7,,327)", sC: "as"},
             { line: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, ", sC: "as"},
@@ -1029,7 +1029,7 @@ const allCantosData = [
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,10)(Si♭,,178)(La,,272)", sC: "as ta", lines: [
             { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)", sC: "as"},  ]},
     ], lder: [
@@ -1086,7 +1086,7 @@ const allCantosData = [
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "ALELUYA,ALELUYA,ALELUYA., (Do,,15)(Mi,,149)(La,m,262)", sC: "as ta", lines: [
             { line: "ALELUYA,ALELUYA,ALELUYA., (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
     ], lder: [
@@ -1099,7 +1099,7 @@ const allCantosData = [
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "ALELUYA,ALELUYA,ALELUYA., (Do,,15)(Mi,,149)(La,m,262)", sC: "as ta", lines: [
             { line: "ALELUYA,ALELUYA,ALELUYA., (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA, YA LLEGÓ EL REINO
@@ -1177,7 +1177,7 @@ const allCantosData = [
             { line: "que busca tu rostro, oh Dios de Jacob,, (Sol,,55)(La,,335)", sC: "tc"},
             { line: "OH DIOS DE JACOB., (Si,,163)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "ALZAOS, PUERTAS,, (Mi,,10)", sC: "as ta", lines: [
             { line: "ALZAD LOS DINTELES,, (Sol,,45)", sC: "as"},
             { line: "PUERTAS ETERNAS,, (La,,125)", sC: "as"},
@@ -1238,7 +1238,7 @@ const allCantosData = [
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "BENDICIÓN Y GLORIA, (Do,,10)", sC: "ta as", lines: [
             { line: "SABIDURÍA,, (Sol,,92)", sC: "as"},
             { line: "ACCIÓN DE GRACIAS, ", sC: "as"},
@@ -1246,7 +1246,7 @@ const allCantosData = [
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "AMÉN, AMÉN, AMÉN, (Do,,10)", sC: "ta as", lines: [
             { line: "AMÉN, AMÉN, AMÉN., (La,m,41)", sC: "as"},
             { line: "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)", sC: "as"},  ]},
@@ -1286,7 +1286,7 @@ const allCantosData = [
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "AMÉN, AMÉN, AMÉN, (Do,,10)", sC: "ta as", lines: [
             { line: "AMÉN, AMÉN, AMÉN., (La,m,41)", sC: "as"},
             { line: "AMÉN, AMÉN, AMÉN., (Sol,,38)(Do,,181)", sC: "as"},  ]},
@@ -1363,6 +1363,73 @@ const allCantosData = [
             { line: "HA PRESERVADO TUS PIES DE LA CAÍDA., (La,7,246)(Re,,359)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: AMO AL SEÑOR
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                AQUEDAH               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "aquedah",
+        tt: "Aquedah",
+        title: "Aquedah",
+        subtitle: "Gn 22,1-19 - Del Targum Neofiti sobre el sacrificio de Isaac",
+        category: ["PreCatecumenado","Cuaresma"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "19",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/aquedah.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=amoalsenor",
+        sig: "/resucito/src/index.html?canto=asihablaelamen",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Era todavía de noche cuando Abraham, (La,m,22)(Re,m9,351)", sC: "tc"},
+            { line: "se disponía a sacrificar a su hijo;, (La,m,288)", sC: ""},
+            { line: "los dos se miraban fijamente, (Re,m9,251)", sC: ""},
+            { line: "cuando le dijo su hijo Isaac:, (Mi,,241)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "AQUEDAH, AQUEDAH,, (La,m,73)(Re,m9,183)", sC: "ta as"},
+            { line: "AQUEDAH, AQUEDAH., (La,m,179)", sC: "as b19"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "«Átame, átame fuerte, padre mío,, (La,m,21)(Re,m9,303)", sC: "tc"},
+            { line: "no sea que por el miedo me resista, (La,m,308)", sC: ""},
+            { line: "y no sea válido tu sacrificio, (Re,m9,236)", sC: ""},
+            { line: "y los dos seamos rechazados.», (Mi,,238)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "AQUEDAH, AQUEDAH,, (La,m,73)(Re,m9,183)", sC: "ta as", lines: [
+            { line: "AQUEDAH, AQUEDAH., (La,m,179)", sC: "as b19"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "«ÁTAME, ÁTAME FUERTE,, (La,m,21)(Re,m9,182)", sC: "ta as"},
+            { line: "PADRE MÍO, QUE YO NO ME RESISTA.», (La,m,315)", sC: "as b19b"},
+    ], lder: [
+            { line: "Venid y ved la fe sobre la tierra,, (La,m,18)", sC: "tc"},
+            { line: "venid y ved la fe sobre la tierra,, (Re,m,258)", sC: ""},
+            { line: "el Padre que sacrifica a su hijo,, (Re,m9,276)", sC: ""},
+            { line: "y el hijo querido que le ofrece su cuello., (Mi,7,342)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "AQUEDAH, AQUEDAH,, (La,m,73)(Re,m9,183)", sC: "ta as", lines: [
+            { line: "AQUEDAH, AQUEDAH., (La,m,179)", sC: "as b19"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: AQUEDAH
+// SIGUIENTE CANTO DEBAJO
+
 
 
 
