@@ -202,12 +202,23 @@ display: none;}
 }
 
 @media (min-width: 992px) {
+
+    .top-row-controls {
+        position: fixed;
+        justify-content: space-between;
+        padding: 0px 40px 0px 0px;
+        left: 0px;
+        width: 998px;
+        justify-self: anchor-center;
+    }
+/*
     .top-row-controls {
         position: relative; /* Relative for desktop */
-        justify-content: space-between;
+  /*      justify-content: space-between;
         padding: 0px 40px 0px 0px;
         left: -20px;
     }
+        */
 }
 
 .home-icon-container {
@@ -358,7 +369,7 @@ display: none;}
 @media (min-width: 384px) {
     .dbs2 {
         font-size: 0.9rem;
-        width: 100%;
+        width: 90%;
         justify-self: center;
         
     }
@@ -796,36 +807,33 @@ hr {
 }
 
 .saudio {
-    z-index: 999;
-    opacity: 0.7;
-    width: -webkit-fill-available;
+    z-index: 1000;
+    opacity: 0.4;
+    /*width: -webkit-fill-available;*/
     background-color: #f1f3f4;
     outline: none;
     border-radius: 0px 0px 0px 0px;
     display: none; 
     
     @media (min-width: 384px) {
-        z-index: 999;
         position: fixed; 
-        width: 376px; 
+        width: 384px;
         margin-left: 0px;
-        margin-top: -5px;
+        /*margin-top: -5px;*/
         height: 22px;
     }
 
     @media (min-width: 768px) {
-        z-index: 999;
         position: fixed;
         margin-left: 0px; 
-        width: 784px;
+        width: 100%;    /*width: 784px;*/
         height: 28px;
     }
 
     @media (min-width: 992px) {
-        z-index: 999;
-        position: absolute;
+        /*position: absolute;*/
         margin-left: -20px; 
-        width: 1085px;
+        width: 1038px;
         height: 35px;
      }
 }

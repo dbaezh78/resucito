@@ -1444,7 +1444,7 @@ const allCantosData = [
         nCan: "",
         dbno: "20",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/asihablaelamen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -1466,40 +1466,524 @@ const allCantosData = [
             { line: "no eres ni frío ni caliente., (Sol,,38)", sC: ""},
             { line: "¡Ojalá fueras frío o caliente, (Re,7,221)", sC: ""},
             { line: "y no tibio!, (Si,7,58)", sC: ""},
-            { line: "Porque voy a vomitarte de mi boca., (Mi,m,301)", sC: ""},
+            { line: "Porque voy a vomitarte de mi boca., (Mi,m,304)", sC: ""},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Tú dices: «Yo soy rico, nada me falta»,, (Mi,m,15)", sC: ""},
+            { line: "Tú dices: «Yo soy rico, nada me falta»,, (Mi,m,22)", sC: ""},
             { line: "y no te das cuenta, (Sol,,15)", sC: ""},
-            { line: "que eres un desgraciado,, (Re,7,15)", sC: ""},
-            { line: "digno de compasión,, (Si,7,15)", sC: ""},
-            { line: "pobre, ciego y desnudo., (Mi,m,15)", sC: ""},
+            { line: "que eres un desgraciado,, (Re,7,203)", sC: ""},
+            { line: "digno de compasión,, (Si,7,177)", sC: ""},
+            { line: "pobre, ciego y desnudo., (Mi,m,192)", sC: ""},
+
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ASÍ HABLA EL AMÉN,, (Mi,m,15)", sC: "ta as", lines: [
-            { line: "EL TESTIGO FIEL Y VERAZ,, (Do,,15)(Re,7,250)", sC: "as"},
+            { line: "EL TESTIGO FIEL Y VERAZ,, (Do,,79)(Re,7,223)", sC: "as"},
             { line: "EL PRINCIPIO, ", sC: "as"},
-            { line: "DE LAS CRIATURAS DE DIOS., (Mi,m,15)", sC: "as"},  ]},
+            { line: "DE LAS CRIATURAS DE DIOS., (Mi,m,248)", sC: "as"},  ]},
     ], lder: [
             { line: "Te aconsejo que me compres, (Mi,m,15)", sC: "tc"},
-            { line: "oro acrisolado al fuego,, (Sol,,15)", sC: ""},
-            { line: "para que te enriquezcas,, (Re,7,15)", sC: ""},
-            { line: "y vestidos blancos, (Si,7,15)", sC: ""},
+            { line: "oro acrisolado al fuego,, (Sol,,10)", sC: ""},
+            { line: "para que te enriquezcas,, (Re,7,183)", sC: ""},
+            { line: "y vestidos blancos, (Si,7,126)", sC: ""},
+            { line: "para cubrir tu desnudez., (Mi,m,211)", sC: ""},
+
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "para cubrir tu desnudez., (Mi,m,15)", sC: ""},
-            { line: "Mira que estoy a la puerta y llamo;, (Mi,m,15)", sC: ""},
-            { line: "si alguno oye mi voz y me abre,, (Sol,,15)", sC: ""},
-            { line: "entraré en su casa,, (Re,7,15)(Si,7,250)", sC: ""},
-            { line: "y cenaré con él y él conmigo., (Mi,m,15)", sC: "as"},
+
+            { line: "Mira que estoy a la puerta y llamo;, (Mi,m,21)", sC: ""},
+            { line: "si alguno oye mi voz y me abre,, (Sol,,12)", sC: ""},
+            { line: "entraré en su casa,, (Re,7,147)(Si,7,195)", sC: ""},
+            { line: "y cenaré con él y él conmigo., (Mi,m,240)", sC: ""},
+
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "ASÍ HABLA EL AMÉN,, (Mi,m,15)", sC: "ta as", lines: [
-            { line: "EL TESTIGO FIEL Y VERAZ,, (Do,,15)(Re,7,250)", sC: "as"},
+            { line: "EL TESTIGO FIEL Y VERAZ,, (Do,,79)(Re,7,223)", sC: "as"},
             { line: "EL PRINCIPIO, ", sC: "as"},
-            { line: "DE LAS CRIATURAS DE DIOS., (Mi,m,15)", sC: "as"},  ]},
+            { line: "DE LAS CRIATURAS DE DIOS., (Mi,m,248)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ASÍ HABLA EL AMÉN
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                AVE MARÍA I               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "avemariai",
+        tt: "Ave María I",
+        title: "Ave María I",
+        subtitle: "Lc 1,28ss",
+        category: ["PreCatecumenado","Virgen","Final","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "21",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/avemariai.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=asihablaelamen",
+        sig: "/resucito/src/index.html?canto=avemariaii(1984)",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Ave María,, (Do,,10)(Mi,,77)(La,m,110)", sC: ""},
+            { line: "llena de gracia,, (Do,,10)(Mi,,105)(La,m,142)", sC: ""},
+            { line: "el Señor es contigo,, (Fa,,10)(Mi,,155)", sC: ""},
+            { line: "bendita tú eres, (La,m,121)", sC: ""},
+            { line: "entre todas las mujeres,, (Rem,,73)(Mi,,189)", sC: ""},
+            { line: "y bendito es el fruto, (La,m,163)", sC: ""},
+            { line: "de tu vientre, Jesús., (Rem,,72)(Mi,,167)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "SANTA MARÍA,, (Do,,10)(Mi,,112)(La,m,151)", sC: "ta as"},
+            { line: "MADRE DE DIOS,, (Do,,10)(Mi,,133)(La,m,169)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS, (Fa,,10)(Mi,,172)", sC: "as"},
+            { line: "QUE SOMOS PECADORES,, (La,m,196)", sC: "as"},
+            { line: "RUEGA AHORA, (Rem,,106)", sC: "as"},
+            { line: "Y EN LA HORA DE NUESTRA MUERTE., (Mi,,308)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "AMÉN, AMÉN, AMÉN., (La,m,36)(Fa,,78)(Mi,,111)(La,m,175)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: AVE MARÍA I
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                AVE MARÍA II (1984)               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "avemariaii(1984)",
+        tt: "Ave María II (1984)",
+        title: "Ave María II",
+        subtitle: "Lc 1,28ss - 1984 ",
+        category: ["PreCatecumenado","Cuaresma","Laudes/Visperas","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "22",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/avemariaii(1984).mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=avemariai",
+        sig: "/resucito/src/index.html?canto=babiloniacriminal",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Ave       María,, (Do,,10)(Mi,,42)(Fa,,72)(Mi,,124)", sC: "tc"},
+            { line: "llena     de gracia,, (Do,,10)(Mi,,45)(Fa,,72)(Mi,,135)", sC: ""},
+            { line: "el Señor es contigo,, (Fa,,64)(Mi,,157)", sC: ""},
+            { line: "bendita tú eres, (Fa,,52)", sC: ""},
+            { line: "entre todas las mujeres,, (Mi,,192)", sC: ""},
+            { line: "y bendito es el fruto, (Fa,,67)", sC: ""},
+            { line: "de tu vientre, Jesús., (Mi,,169)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "SANTA MARÍA,, (Do,,10)(Mi,,39)(Fa,,65)(Mi,,129)", sC: "ta as"},
+            { line: "MADRE DE DIOS,, (Do,,10)(Mi,,42)(Fa,,68)(Mi,,138)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS, (Fa,,129(Mi,,172)", sC: "as"},
+            { line: "QUE SOMOS PECADORES,, (Fa,,68)(Mi,,200)", sC: "as"},
+            { line: "RUEGA AHORA, (Fa,,111)", sC: "as"},
+            { line: "Y EN LA HORA DE NUESTRA MUERTE., (Mi,,311)(Fa,,343)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "AMÉN., (Mi,,42)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: AVE MARÍA II (1984)
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                BABILONIA CRIMINAL               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "babiloniacriminal",
+        tt: "Babilonia Criminal",
+        title: "Babilonia Criminal",
+        subtitle: "Sal 137 (136)",
+        category: ["PreCatecumenado","Paz","Comunión","Final","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "23",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/babiloniacriminal.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=avemariaii(1984)",
+        sig: "/resucito/src/index.html?canto=balaam",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "JUNTO A LOS CANALES DE BABILONIA,, (Mi,m,15)(La,m,177)(Mi,m,321)", sC: "ta as"},
+            { line: "ACORDÁNDONOS DE TI,, (Si,7,222)", sC: "as"},
+            { line: "NOS SENTAMOS A LLORAR., (Mi,m,240)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "DE LOS SAUCES COLGABAN, (La,m,221)", sC: "as"},
+            { line: "LAS GUITARRAS,, (Mi,m,96)", sC: "as"},
+            { line: "ACORDÁNDONOS DE TI,, (Si,7,222)", sC: "as"},
+            { line: "NOS SENTAMOS A LLORAR., (Mi,m,238)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "«CANTADNOS», NOS DECÍAN, (La,m,242)", sC: "as"},
+            { line: "NUESTROS ENEMIGOS., (Mi,m,170)", sC: "as"},
+            { line: "«CANTADNOS», NOS DECÍAN, (La,m,241)", sC: "as"},
+            { line: "NUESTROS OPRESORES., (Mi,m,184)", sC: "as"},
+            { line: "ELLOS QUERÍAN QUE NOSOTROS, (Si,7,263)", sC: "as"},
+            { line: "LES DIVIRTIÉRAMOS., (Mi,m,118)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "¿Cómo cantar un cántico del Señor, (Re,,13)", sC: "tc"},
+            { line: "en tierra extraña?, (Mi,m,128)", sC: ""},
+            { line: "Si de Ti yo me olvidare,, (Si,7,191)", sC: ""},
+            { line: "que se me seque la mano derecha, (Mi,m,292)", sC: ""},
+    ], lder: [
+            { line: "Que se me pegue la lengua al paladar,, (Mi,m,15)(La,m,216)(Mi,m,351)", sC: ""},
+            { line: "si de ti yo me olvidare, Jerusalén,, (Si,7,183)", sC: ""},
+            { line: "en la cumbre de mi alegría., (Mi,m,241)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "SEÑOR, TOMA CUENTAS, (Mi,m,18)(La,m,179)", sC: "ta as"},
+            { line: "A NUESTROS ENEMIGOS., (Mi,m,196)", sC: "as"},
+            { line: "SEÑOR, TOMA CUENTAS, (La,m,180)", sC: "as"},
+            { line: "A NUESTROS OPRESORES., (Mi,m,207)", sC: "as"},
+            { line: "CUANDO ELLOS SE DECÍAN:, (Si,7,233)", sC: "as"},
+            { line: "¡ARRASADLA HASTA EL CIMIENTO!, (Mi,m,279)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Capital de Babilonia criminal,, (Re,,10)(Mi,m,266)", sC: "tc"},
+            { line: "¡quién pudiera pagarte, (Re,,110)", sC: ""},
+            { line: "los males que nos has hecho!, (Mi,m,237)", sC: ""},
+            { line: "¡Quién pudiera estrellar, (Si,7,213)", sC: ""},
+            { line: "tus hijos contra la piedra!, (Mi,m,198)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "JUNTO A LOS CANALES DE BABILONIA,, (Mi,m,15)(La,m,177)(Mi,m,321)", sC: "ta as", lines: [
+            { line: "ACORDÁNDONOS DE TI,, (Si,7,222)", sC: "as"},
+            { line: "NOS SENTAMOS A LLORAR., (Mi,m,240)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: BABILONIA CRIMINAL
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                BALAAM               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "balaam",
+        tt: "Balaam",
+        title: "Balaam",
+        subtitle: "Nm 23,7-24",
+        category: ["PreCatecumenado","Cuaresma","Laudes/Visperas","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "24",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/balaam.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=babiloniacriminal",
+        sig: "/resucito/src/index.html?canto=bendecirealsenorentodotiempo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "De Aram me ha hecho venir, (Mi,m,22)(Re,,255)", sC: "tc"},
+            { line: "Balaq, el rey de Moab,, (Mi,m,41)(Re,,192)", sC: ""},
+            { line: "desde los montes de Oriente:, (Mi,m,238)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "«Ven y maldice a Jacob;, (Re,,25)(Mi,m,204)", sC: ""},
+            { line: "ven y profetiza contra Israel»., (Re,,15)(Mi,m,250)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "¿Cómo maldeciré, si Dios no quiere?, (Sol,,10)(Re,,168)(Sol,,216)(Si,m,258)(Mi,m,310)", sC: ""},
+            { line: "¿Cómo profetizaré, si Dios no me deja?, (Sol,,10)(Re,,168)(Sol,,216)(Si,m,258)(Mi,m,342)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "De lo alto de esta cima yo diviso,, (Re,,67)(Mi,m,284)", sC: ""},
+            { line: "desde lo alto de esta roca yo contemplo:, (Re,,94)(Mi,m,330)", sC: ""},
+            { line: "este es un pueblo distinto, (Re,,11)", sC: ""},
+            { line: "a todas las naciones., (Mi,m,155)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "¡QUÉ BELLAS SON TUS TIENDAS,, (Mi,m,19)(Re,,246)", sC: "ta as"},
+            { line: "QUÉ BELLAS SON, ISRAEL!, (Mi,m,230)", sC: "as b24"},
+            { line: "¡QUÉ BELLAS SON TUS TIENDAS,, (Re,,245)", sC: "as"},
+            { line: "QUÉ BELLAS SON, ISRAEL!, (Mi,m,229)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "¿Quién contará, contará tu multitud?, (Sol,,15)(Re,,142)(Sol,,224)(Si,m,262)(Mi,m,324)", sC: "tc"},
+            { line: "JACOB, JACOB, JACOB, JACOB., (Re,,44)(Mi,m,112)(Re,,191)(Mi,m,262)", sC: "ta as"},
+    ], lder: [
+            { line: "Sea, sea mi muerte, (Sol,,13)(Re,,160)", sC: "tc"},
+            { line: "como la muerte de su Justo., (Sol,,121)(Si,m,154)(Mi,m,232)", sC: ""},
+            { line: "Vaya mi vida donde Él,, (Re,,15)(Mi,m,209)", sC: ""},
+            { line: "VAYA MI VIDA DONDE ÉL., (Re,,15)(Mi,m,226)", sC: "ta as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡QUÉ BELLAS SON TUS TIENDAS,, (Mi,m,19)(Re,,246)", sC: "ta as", lines: [
+            { line: "QUÉ BELLAS SON, ISRAEL!, (Mi,m,230)", sC: "as b24"},
+            { line: "¡QUÉ BELLAS SON TUS TIENDAS,, (Re,,245)", sC: "as"},
+            { line: "QUÉ BELLAS SON, ISRAEL!, (Mi,m,229)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "«¿Pero qué es lo que estás haciendo?, (Mi,m,15)(Re,,305)", sC: "tc"},
+            { line: "¡Tú lo estás bendiciendo!, (Mi,m,190)", sC: ""},
+            { line: "Ven, quizá desde otra parte, (Re,,10)", sC: ""},
+            { line: "Dios lo quiera maldecir»., (Mi,m,205)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Escucha, hijo de Sippor, pon el oído rey Balaq;, (Sol,,13)(Re,,205)(Sol,,312)(Si,m,346)(Mi,m,419)", sC: "tc"},
+            { line: "que Dios no es un hombre, (Re,,67)", sC: ""},
+            { line: "que dice y se arrepiente., (Mi,m,197)", sC: ""},
+            { line: "Una estrella surge de Jacob,, (Re,,86)(Mi,m,241)", sC: ""},
+            { line: "se oyen aclamaciones por su Rey., (Re,,36)(Mi,m,300)", sC: ""},
+            { line: "Dios es su Padre., (Re,,25)(Mi,m,123)", sC: ""},
+            { line: "Se acuesta como león,, (Re,,68)(Mi,m,193)", sC: ""},
+            { line: "se echa como leona, nadie lo hará levantar»., (Re,,36)(Mi,m,159)(Re,,221)(Mi,m,399)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡QUÉ BELLAS SON TUS TIENDAS,, (Mi,m,19)(Re,,246)", sC: "ta as", lines: [
+            { line: "QUÉ BELLAS SON, ISRAEL!, (Mi,m,230)", sC: "as b24"},
+            { line: "¡QUÉ BELLAS SON TUS TIENDAS,, (Re,,245)", sC: "as"},
+            { line: "QUÉ BELLAS SON, ISRAEL!, (Mi,m,229)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: BALAAM
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                BENDECIRÉ AL SEÑOR EN TODO TIEMPO               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "bendecirealsenorentodotiempo",
+        tt: "Bendeciré Al Señor En Todo Tiempo",
+        title: "Bendeciré Al Señor En Todo Tiempo",
+        subtitle: "Sal 34 (33)",
+        category: ["PreCatecumenado","Cuaresma","Laudes/Visperas","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "25",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/bendecirealsenorentodotiempo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=balaam",
+        sig: "/resucito/src/index.html?canto=bendicealmamiaayahveh",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "BENDECIRÉ AL SEÑOR EN TODO TIEMPO,, (Re,m,20)", sC: "ta as"},
+            { line: "EN MI BOCA SIEMPRE SU ALABANZA;, (Do,,86)(La,,311)", sC: "as"},
+            { line: "YO ME GLORÍO EN EL SEÑOR,, (Si♭,,131)(La,7,265)", sC: "as"},
+            { line: "LO ESCUCHEN LOS HUMILDES, (Si♭,,81)", sC: "as"},
+            { line: "Y SE ALEGREN., (La,7,79)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Cantad conmigo al Señor,, (Re,m,20)", sC: "tc"},
+            { line: "cantemos juntos a su Nombre., (Do,,47)(La,,222)", sC: ""},
+            { line: "Porque este pobre grita, el Señor le escucha,, (Si♭,,144)(La,,386)", sC: ""},
+            { line: "y le libra de todas sus angustias., (Si♭,,50)(La,,259)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "BENDECIRÉ AL SEÑOR EN TODO TIEMPO,, (Re,m,20)", sC: "ta as", lines: [
+            { line: "EN MI BOCA SIEMPRE SU ALABANZA;, (Do,,86)(La,,311)", sC: "as"},
+            { line: "YO ME GLORÍO EN EL SEÑOR,, (Si♭,,131)(La,7,265)", sC: "as"},
+            { line: "LO ESCUCHEN LOS HUMILDES, (Si♭,,81)", sC: "as"},
+            { line: "Y SE ALEGREN., (La,7,79)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Porque el ángel del Señor acampa, (Re,m,20)", sC: "tc"},
+            { line: "en torno a aquellos que le temen y les salva., (Do,,41)(La,,379)", sC: ""},
+            { line: "Gritan ellos, y el Señor les escucha, (Si♭,,77)", sC: ""},
+            { line: "y los libra de todas sus angustias., (Si♭,,62)(La,,268)", sC: ""},
+    ], lder: [
+            { line: "Gustad y ved, (Re,m,20)", sC: "tc"},
+            { line: "qué bueno es el Señor,, (Do,,77)(La,,195)", sC: ""},
+            { line: "dichoso el hombre, (Si♭,,122)", sC: ""},
+            { line: "que se refugia en Él., (La,,182)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "GUSTAD Y VED, (Re,m,20)", sC: "ta as"},
+            { line: "QUÉ BUENO ES EL SEÑOR,, (Do,,83)(La,,227)", sC: "as"},
+            { line: "DICHOSO EL HOMBRE, (Si♭,,149)", sC: "as"},
+            { line: "QUE SE REFUGIA EN ÉL., (La,,206)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Porque muchas son las pruebas, (Re,m,20)", sC: "tc"},
+            { line: "que le esperan al Justo,, ", sC: ""},
+            { line: "mas de todas le libra el Señor., (Do,,90)(La,,267)", sC: ""},
+            { line: "Gritan ellos, y el Señor les escucha, (Si♭,,77)(La,,299)", sC: ""},
+            { line: "y los libra de todas sus angustias., (Si♭,,62)(La,,268)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "BENDECIRÉ AL SEÑOR EN TODO TIEMPO,, (Re,m,20)", sC: "ta as", lines: [
+            { line: "EN MI BOCA SIEMPRE SU ALABANZA;, (Do,,86)(La,,311)", sC: "as"},
+            { line: "YO ME GLORÍO EN EL SEÑOR,, (Si♭,,131)(La,7,265)", sC: "as"},
+            { line: "LO ESCUCHEN LOS HUMILDES, (Si♭,,81)", sC: "as"},
+            { line: "Y SE ALEGREN., (La,7,79)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: BENDECIRÉ AL SEÑOR EN TODO TIEMPO
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+╔═════════════════════════════════════════════════╗
+║                HIMNO A LA CARIDAD               ║
+╚═════════════════════════════════════════════════╝  */
+   {
+        id: "himnoalacaridad",
+        tt: "Himno A La Caridad",
+        title: "Himno A La Caridad",
+        subtitle: "1 Corintios 13,1-7",
+        category: ["PreCatecumenado","Cuaresma","Comunión","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "86",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/himnoalacaridad.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=himnoacristoluz",
+        sig: "/resucito/src/index.html?canto=himnoalakenosis",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Aunque hablara las lenguas de los ángeles,, (Do,,10)", sC: "tc"},
+            { line: "si no tengo amor, nada., (La,m,19)(Fa,,154)(Sol,,185)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aunque tuviera el don de profecía, (Do,,10)", sC: ""},
+            { line: "y conociera todos los misterios,, (La,m,252)", sC: ""},
+            { line: "aunque tuviera plenitud de fe, (Do,,10)", sC: ""},
+            { line: "y pudiera trasladar montañas,, (La,m,241)", sC: ""},
+            { line: "si no tengo amor, nada., (Fa,,149)(Sol,,186)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aunque repartiera, (Do,,10)", sC: ""},
+            { line: "todos mis bienes a los pobres ", sC: ""},
+            { line: "y entregara mi cuerpo a las llamas,, (La,m,285)", sC: ""},
+            { line: "si no tengo amor, nada., (Fa,,150)(Sol,,186)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PORQUE EL AMOR,, (Do,,160)", sC: "ta as"},
+            { line: "EL AMOR, EL AMOR,, (La,m,71)(Do,,171)", sC: "as"},
+            { line: "ES PACIENTE, ES SERVICIAL, ", sC: "as"},
+            { line: "NO ES ENVIDIOSO,, (La,m,138)", sC: "as"},
+    ], lder: [
+            { line: "NO SE JACTA, NO SE ENGRÍE,, (Do,,79)", sC: "as"},
+            { line: "ES DECOROSO,, (La,m,105)", sC: "as"},
+            { line: "NO BUSCA LO SUYO, NO SE IRRITA., (Fa,,158)(Sol,,307)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "NO TOMA EN CUENTA EL MAL,, (Do,,265)", sC: "as"},
+            { line: "NO TOMA EN CUENTA EL MAL,, (La,m,267)", sC: "as"},
+            { line: "NO SE ALEGRA DE LA INJUSTICIA,, (Fa,,283)", sC: "as"},
+            { line: "SE ALEGRA CON LA VERDAD., (Sol,,256)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TODO LO CREE,, (Do,,127)", sC: "as"},
+            { line: "TODO LO EXCUSA,, (La,m,135)", sC: "as"},
+            { line: "TODO LO ESPERA,, (Do,,139)", sC: "as"},
+            { line: "SOPORTA TODO, SOPORTA TODO. ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PORQUE EL AMOR, EL AMOR,, (Do,,10)(La,m,259)", sC: "as"},
+            { line: "PORQUE EL AMOR ES DIOS, (Do,,159)", sC: "as"},
+            { line: "ES DIOS, ES DIOS.", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: HIMNO A LA CARIDAD
+// SIGUIENTE CANTO DEBAJO
+
 
 
 
