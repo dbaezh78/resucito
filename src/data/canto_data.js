@@ -1429,6 +1429,78 @@ const allCantosData = [
             { line: "AQUEDAH, AQUEDAH., (La,m,179)", sC: "as b19"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: AQUEDAH
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                ASÍ HABLA EL AMÉN               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "asihablaelamen",
+        tt: "Así Habla El Amén",
+        title: "Así Habla El Amén",
+        subtitle: "Ap 3,14-20",
+        category: ["PreCatecumenado","Cuaresma","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "20",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/asihablaelamen.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=aquedah",
+        sig: "/resucito/src/index.html?canto=avemariai",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ASÍ HABLA EL AMÉN,, (Mi,m,15)", sC: "ta as"},
+            { line: "EL TESTIGO FIEL Y VERAZ,, (Do,,79)(Re,7,223)", sC: "as"},
+            { line: "EL PRINCIPIO, ", sC: "as"},
+            { line: "DE LAS CRIATURAS DE DIOS., (Mi,m,248)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Conozco tu conducta:, (Mi,m,20)", sC: "tc"},
+            { line: "no eres ni frío ni caliente., (Sol,,38)", sC: ""},
+            { line: "¡Ojalá fueras frío o caliente, (Re,7,221)", sC: ""},
+            { line: "y no tibio!, (Si,7,58)", sC: ""},
+            { line: "Porque voy a vomitarte de mi boca., (Mi,m,301)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Tú dices: «Yo soy rico, nada me falta»,, (Mi,m,15)", sC: ""},
+            { line: "y no te das cuenta, (Sol,,15)", sC: ""},
+            { line: "que eres un desgraciado,, (Re,7,15)", sC: ""},
+            { line: "digno de compasión,, (Si,7,15)", sC: ""},
+            { line: "pobre, ciego y desnudo., (Mi,m,15)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ASÍ HABLA EL AMÉN,, (Mi,m,15)", sC: "ta as", lines: [
+            { line: "EL TESTIGO FIEL Y VERAZ,, (Do,,15)(Re,7,250)", sC: "as"},
+            { line: "EL PRINCIPIO, ", sC: "as"},
+            { line: "DE LAS CRIATURAS DE DIOS., (Mi,m,15)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Te aconsejo que me compres, (Mi,m,15)", sC: "tc"},
+            { line: "oro acrisolado al fuego,, (Sol,,15)", sC: ""},
+            { line: "para que te enriquezcas,, (Re,7,15)", sC: ""},
+            { line: "y vestidos blancos, (Si,7,15)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "para cubrir tu desnudez., (Mi,m,15)", sC: ""},
+            { line: "Mira que estoy a la puerta y llamo;, (Mi,m,15)", sC: ""},
+            { line: "si alguno oye mi voz y me abre,, (Sol,,15)", sC: ""},
+            { line: "entraré en su casa,, (Re,7,15)(Si,7,250)", sC: ""},
+            { line: "y cenaré con él y él conmigo., (Mi,m,15)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ASÍ HABLA EL AMÉN,, (Mi,m,15)", sC: "ta as", lines: [
+            { line: "EL TESTIGO FIEL Y VERAZ,, (Do,,15)(Re,7,250)", sC: "as"},
+            { line: "EL PRINCIPIO, ", sC: "as"},
+            { line: "DE LAS CRIATURAS DE DIOS., (Mi,m,15)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ASÍ HABLA EL AMÉN
+// SIGUIENTE CANTO DEBAJO
+
 
 
 
