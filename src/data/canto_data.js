@@ -1870,6 +1870,142 @@ const allCantosData = [
             { line: "Y SE ALEGREN., (La,7,79)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: BENDECIRÉ AL SEÑOR EN TODO TIEMPO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════════════════════╗
+║                BENDICE, ALMA MÍA, A YAHVEH               ║
+╚══════════════════════════════════════════════════════════╝  */
+   {
+        id: "bendicealmamiaayahveh",
+        tt: "Bendice, Alma Mía, A Yahveh",
+        title: "Bendice, Alma Mía, A Yahveh",
+        subtitle: "Sal 103 (102)",
+        category: ["PreCatecumenado","Pascua"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "26",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/bendicealmamiaayahveh.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+        desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=bendecirealsenorentodotiempo",
+        sig: "/resucito/src/index.html?canto=benditaerestumaria",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "BENDICE, ALMA MÍA, A YAHVEH,, (La,m,19)(Mi,,285)", sC: "ta as"},
+            { line: "DEL FONDO DE MI SER, SU NOMBRE., (La,m,284)", sC: "as"},
+            { line: "BENDICE, ALMA MÍA, A YAHVEH,, (Mi,,281)", sC: "as"},
+            { line: "NO OLVIDES SUS AMORES., (La,m,209)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Él, que tus culpas perdona,, (Re,m,22)", sC: "tc"},
+            { line: "que todas tus dolencias cura,, (La,m,251)", sC: ""},
+            { line: "saca tu vida de la muerte,, (Mi,,209)", sC: ""},
+            { line: "te colma de gracia y amor., (La,m,235)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Él, que te hace justicia,, (Re,m,21)", sC: ""},
+            { line: "que defiende a los más pobres,, (La,m,246)", sC: ""},
+            { line: "a Moisés enseñó sus caminos,, (Mi,,245)", sC: ""},
+            { line: "a Israel sus hazañas mostró., (La,m,262)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "BENDICE, ALMA MÍA, A YAHVEH,, (La,m,19)(Mi,,285)", sC: "ta as", lines: [
+            { line: "DEL FONDO DE MI SER, SU NOMBRE., (La,m,284)", sC: "as"},
+            { line: "BENDICE, ALMA MÍA, A YAHVEH,, (Mi,,281)", sC: "as"},
+            { line: "NO OLVIDES SUS AMORES., (La,m,209)", sC: "as"},  ]},
+    ], lder: [
+  
+]}, // ULTIMA LINEA DEL CANTO: BENDICE, ALMA MÍA, A YAHVEH
+// SIGUIENTE CANTO DEBAJO
+/*
+╔═════════════════════════════════════════════════════╗
+║                BENDITA ERES TÚ, MARÍA               ║
+╚═════════════════════════════════════════════════════╝  */
+   {
+        id: "benditaerestumaria",
+        tt: "Bendita Eres Tú, María",
+        title: "Bendita Eres Tú, María",
+        subtitle: "Lucas 1,42-45",
+        category: ["PreCatecumenado","Penitencial"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        dbno: "27",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/benditaerestumaria.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=bendicealmamiaayahveh",
+        sig: "/resucito/src/index.html?canto=benditoeressenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Bendita eres tú, María,, (La,m,15)(Sol,,138)(La,m,196)", sC: "tc"},
+            { line: "entre todas las mujeres, María., (Sol,,193)(La,m,278)", sC: ""},
+            { line: "Y bendito es el fruto, María,, (Sol,,166)(La,m,242)", sC: ""},
+            { line: "el fruto de tu seno, Jesús., (Sol,,141)(La,m,222)", sC: ""},
+            { line: "María, tú has creído., (Fa,,41)(Mi,,165)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Y CÓMO ES QUE LA MADRE DEL SEÑOR, (La,m,15)", sC: "ta as"},
+            { line: "VIENE A MÍ, VIENE A MÍ., (Sol,,99)(La,m,211)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Porque apenas he sentido tu voz,, (La,m,21)(Mi,,293)", sC: "tc"},
+            { line: "algo se ha movido dentro de mí,, (Re,m,21)(Mi,,298)", sC: ""},
+            { line: "mi niño ha exultado de gozo., (Re,m,48)(Mi,,242)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "MARÍA, BENDITA MARÍA,, (La,m,18)(Fa,,217)", sC: "ta as"},
+            { line: "TÚ HAS CREÍDO LA PALABRA DEL SEÑOR., (Mi,,376)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Y CÓMO ES QUE LA MADRE DEL SEÑOR, (La,m,15)", sC: "ta as", lines: [
+            { line: "VIENE A MÍ, VIENE A MÍ., (Sol,,99)(La,m,211)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Porque apenas he sentido tu voz, (La,m,21)(Fa,,291)", sC: "tc", lines: [
+            { line: "algo se ha movido dentro de mí,, (Re,m,21)(Mi,,298)", sC: ""},
+            { line: "mi niño ha exultado de gozo., (Re,m,48)(Mi,,242)", sC: ""},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MARÍA, BENDITA MARÍA,, (La,m,18)(Fa,,217)", sC: "ta as", lines: [
+            { line: "TÚ HAS CREÍDO LA PALABRA DEL SEÑOR., (Mi,,376)", sC: "as"},]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: BENDITA ERES TÚ, MARÍA
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1939,7 +2075,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            tablet: { velocidad: 4, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=himnoacristoluz",
         sig: "/resucito/src/index.html?canto=himnoalakenosis",

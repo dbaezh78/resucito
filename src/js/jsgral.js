@@ -375,8 +375,8 @@ const renderCantoSection = (container, parsedData) => {
                 triggerLetraSpan.textContent = triggerLetraSpan.dataset.originalText; // Asegurarse de que no tenga "..."
             } else {
                 contentDiv.style.display = 'none'; // Ocultar
-                if (!triggerLetraSpan.textContent.endsWith(' ...')) {
-                    triggerLetraSpan.textContent += ' ...';
+                if (!triggerLetraSpan.textContent.endsWith('...')) {
+                    triggerLetraSpan.textContent += '...';
                 }
                 triggerDiv.dataset.isExpanded = "false";
                 collapsibleStates.set(entry.id, false); // Guardar estado
@@ -387,8 +387,8 @@ const renderCantoSection = (container, parsedData) => {
                 const wasExpanded = contentDiv.style.display !== 'none';
                 if (wasExpanded) {
                     contentDiv.style.display = 'none';
-                    if (!triggerLetraSpan.textContent.endsWith(' ...')) {
-                        triggerLetraSpan.textContent += ' ...';
+                    if (!triggerLetraSpan.textContent.endsWith('...')) {
+                        triggerLetraSpan.textContent += '...';
                     }
                     triggerDiv.dataset.isExpanded = "false";
                     collapsibleStates.set(entry.id, false); // Guardar estado
@@ -767,8 +767,8 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
                     collapsibleStates.set(blockId, true);
                 } else { // Colapsar
                     contentDiv.style.display = 'none';
-                    if (!triggerLetraSpan.textContent.endsWith(' ...')) {
-                        triggerLetraSpan.textContent += ' ...';
+                    if (!triggerLetraSpan.textContent.endsWith('...')) {
+                        triggerLetraSpan.textContent += '...';
                     }
                     triggerDiv.dataset.isExpanded = "false";
                     collapsibleStates.set(blockId, false);
