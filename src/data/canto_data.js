@@ -1997,6 +1997,118 @@ const allCantosData = [
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: BENDITA ERES TÚ, MARÍA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════════════╗
+║                BENDITO ERES, SEÑOR               ║
+╚══════════════════════════════════════════════════╝  */
+   {
+        id: "benditoeressenor",
+        tt: "Bendito Eres, Señor",
+        title: "Bendito Eres, Señor",
+        subtitle: "Daniel 3,52-57",
+        category: ["PreCatecumenado","Virgen","Entrada","Final","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "28",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/benditoeressenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=benditaerestumaria",
+        sig: "/resucito/src/index.html?canto=benditoseadios",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Bendito eres, Señor,, (Sol,,13)(Fa#,m,104)(Mi,,177)", sC: "tc"},
+            { line: "Dios de nuestros padres:, (Sol,,13)(La,,108)(Si,,176)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "A TI GLORIA Y ALABANZA,, (Mi,m,36)(Re,,78)(Mi,m,197)", sC: "ta as"},
+            { line: "A TI GLORIA POR LOS SIGLOS., (Re,,28)(So,,78)(Si,7,230)(Mi,m,302)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Bendito sea tu nombre,, (Sol,,13)(Fa#,m,104)(Mi,,157)", sC: "tc"},
+            { line: "tu nombre santo y glorioso:, (Sol,,39)(La,,115)(Si,,230)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "A ÉL GLORIA Y ALABANZA,, (Mi,m,37)(Re,,85)(Mi,m,203)", sC: "ta as"},
+            { line: "A ÉL GLORIA POR LOS SIGLOS., (Re,,30)(Do,,84)(Si,7,234)(Mi,m,315)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Bendito eres en el templo,, (Sol,,14)(Fa#,m,103)(Mi,,195)", sC: "tc"},
+            { line: "en el templo de tu santa gloria:, (Sol,,65)(La,,195)(Si,,262)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "A TI GLORIA Y ALABANZA,, (Mi,m,37)(Re,,85)(Mi,m,203)", sC: "ta as", lines: [
+            { line: "A TI GLORIA POR LOS SIGLOS., (Re,,30)(Do,,84)(Si,7,234)(Mi,m,315)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Bendito eres sobre el trono,, (Sol,,14)(Fa#,m,104)(Mi,,227)", sC: "tc"},
+            { line: "sobre el trono de tu reino:, (Sol,,102)(La,,156)(Si,,217)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "A TI GLORIA Y ALABANZA,, (Mi,m,37)(Re,,85)(Mi,m,203)", sC: "ta as", lines: [
+            { line: "A TI GLORIA POR LOS SIGLOS., (Re,,30)(Do,,84)(Si,7,234)(Mi,m,315)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Bendito entre querubines,, (Sol,,15)(Fa#,m,106)(Mi,,201)", sC: "tc"},
+            { line: "tú, que sondeas los abismos:, (Sol,,15)(La,,123)(Si,,213)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "A TI GLORIA Y ALABANZA,, (Mi,m,37)(Re,,85)(Mi,m,203)", sC: "ta as", lines: [
+            { line: "A TI GLORIA POR LOS SIGLOS., (Re,,30)(Do,,84)(Si,7,234)(Mi,m,315)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Bendito eres, Señor,, (Sol,,12)(Fa#,m,100)(Mi,,176)", sC: "tc"},
+            { line: "en la bóveda del cielo., (Sol,,12)(La,,70)(Si,,185)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "A TI HONOR Y ALABANZA,, (Mi,m,31)(Re,,91)(Mi,m,194)", sC: "ta as"},
+            { line: "A TI GLORIA POR LOS SIGLOS., (Re,,29)(Do,,76)(Si,7,227)(Mi,m,302)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Criaturas todas del Señor,, (Sol,,12)(Fa#,m,113)(Mi,,227)", sC: "tc"},
+            { line: "BENDECID AL SEÑOR., (Sol,,79)(La,,113)(Si,,186)", sC: "ta as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Ensalzadlo con himnos por los siglos,, (Mi,m,67)(Re,,159)(Mi,m,311)", sC: "tc"},
+            { line: "ENSALZADLO, (Re,,81)", sC: "ta as"},
+            { line: "CON HIMNOS POR LOS SIGLOS., (Do,,61)(Si,7,241)(Mi,m,316)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: BENDITO ERES, SEÑOR
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
