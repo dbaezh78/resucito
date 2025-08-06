@@ -2244,7 +2244,7 @@ const allCantosData = [
             { line: "para guiar nuestros pasos, (La,7,87)", sC: ""},
             { line: "por el camino de la paz., (Re,m,207)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "BENDITO SEA EL SEÑOR, (Re,m,21)", sC: "ta as", lines: [
             { line: "DIOS DE ISRAEL,, (Sol,m,27)(Re,m,138)", sC: "as"},
             { line: "porque ha visitado y redimido a su pueblo,, ", sC: "tc"},
@@ -2253,6 +2253,179 @@ const allCantosData = [
             { line: "EN LA CASA DE DAVID, SU SIERVO., (La,7,81)(Re,m,286)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: BENEDICTUS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════╗
+║                CANTAD A DIOS               ║
+╚════════════════════════════════════════════╝  */
+   {
+        id: "cantadadios",
+        tt: "Cantad A Dios",
+        title: "Cantad A Dios",
+        subtitle: "Salmo 67 (68) 2.4-7",
+        category: ["PreCatecumenado","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "31",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/cantadadios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=benedictus",
+        sig: "/resucito/src/index.html?canto=cantadalsenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "CANTAD A DIOS,, (Mi,,10)", sC: "ta as"},
+            { line: "SALMODIAD PARA SU NOMBRE., ", sC: "as b31"},
+            { line: "CANTAD A DIOS,, ", sC: "as"},
+            { line: "ALLANAD EL CAMINO, (Re,m9,180)", sC: "as"},
+            { line: "AL QUE CABALGA EN LAS NUBES., (Mi,,273)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor es su Nombre, alegraos ante Él., (Mi,,12)(Re,m9,262)", sC: "tc"},
+            { line: "Padre de los huérfanos,, ", sC: ""},
+            { line: "defensor de las viudas, es Dios., (Mi,,279)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "A los más pobres hace habitar en su casa,, (Re,m9,128)(Mi,,372)", sC: ""},
+            { line: "a los cautivos Él los libra con amor., (Re,m9,107)(Mi,,321)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SE LEVANTA DIOS,, (Mi,,11)", sC: "ta as"},
+            { line: "SUS ENEMIGOS SE DISPERSAN;, ", sC: "as"},
+            { line: "LOS JUSTOS SE ALEGRAN, ", sC: "as"},
+            { line: "Y CANTAN DE ALEGRÍA., (Re,m9,45)(Mi,,200)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "CANTAD A DIOS,, (Mi,,10)", sC: "ta as", lines: [
+            { line: "SALMODIAD PARA SU NOMBRE., ", sC: "as b31"},
+            { line: "CANTAD A DIOS,, ", sC: "as"},
+            { line: "ALLANAD EL CAMINO, (Re,m9,180)", sC: "as"},
+            { line: "AL QUE CABALGA EN LAS NUBES., (Mi,,273", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: CANTAD A DIOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                CANTAD AL SEÑOR               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "cantadalsenor",
+        tt: "Cantad Al Señor",
+        title: "Cantad Al Señor",
+        subtitle: "Salmo 117 (116)",
+        category: ["PreCatecumenado","Cuaresma","Laudes/Visperas","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "32",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/cantadalsenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=cantadadios",
+        sig: "/resucito/src/index.html?canto=canticodelostresjovenes",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "CANTAD AL SEÑOR,, (Sol,,15)(La,m,207)", sC: "ta as"},
+            { line: "PUEBLOS TODOS DE LA TIERRA,, ", sC: "as"},
+            { line: "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque grande es su amor hacia nosotros,, (Sol,,15)(La,m,421)", sC: "tc"},
+            { line: "es eterna su misericordia,, ", sC: ""},
+            { line: "naciones, dadle gloria., (Do,,46)(Si,7,186)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "CANTAD AL SEÑOR,, (Sol,,15)(La,m,207)", sC: "ta as", lines: [
+            { line: "PUEBLOS TODOS DE LA TIERRA,, ", sC: "as"},
+            { line: "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque firme es su amor hacia nosotros,, (Sol,,15)(La,m,405)", sC: "tc"},
+            { line: "su fidelidad dura por siempre,, ", sC: ""},
+            { line: "naciones, dadle gloria., (Do,,46)(Si,7,184", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "CANTAD AL SEÑOR,, (Sol,,15)(La,m,207)", sC: "ta as", lines: [
+            { line: "PUEBLOS TODOS DE LA TIERRA,, ", sC: "as"},
+            { line: "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: CANTAD AL SEÑOR
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

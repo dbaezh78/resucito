@@ -104,7 +104,7 @@
     @media (min-width: 992px) {height: 40px;margin-left: 344px;margin-top: -10px;}
 }
 
-.r1, .r2, .b1-1, .b1-2, .b2, .b3, .b12-1, .b12-2, .b14, .b17, .b18, .b19, .b24
+.r1, .r2, .b1-1, .b1-2, .b2, .b3, .b12-1, .b12-2, .b14, .b17, .b18, .b19, .b24, b31
  {
     position: relative;
     min-height: 0px;
@@ -113,7 +113,7 @@
 /* Las propiedades comunes que no dependen de media queries van aquí */
 .r1::before, .r2::before, .b1-1::before, .b1-2::before, .b2::before,
 .b3::before, .b12-1::before, .b12-2::before, .b14::before, .b17::before,
-.b18::before, .b19::before, .b19b::before, .b24::before
+.b18::before, .b19::before, .b19b::before, .b24::before, .b31::before
 {
     content: " BIS A."; /* Movido aquí */
     position: absolute; /* Movido aquí */
@@ -139,6 +139,7 @@
     .b19::before{height: 56px;margin-left: 163px;margin-top: -35px;}
     .b19b::before{height: 56px;margin-left: 277px;margin-top: -35px;}
     .b24::before{height: 131px;margin-left: 244px;margin-top: -35px;}
+    .b31::before{height: 166px;margin-left: 244px;margin-top: -35px;}
 }
 @media (min-width: 768px) {
     .r1::before {font-size: 1.5rem;height: 80px;margin-left: 80%;margin-top: 0%;}
@@ -154,6 +155,7 @@
     .b19::before{height: 91px;margin-left: 300px;margin-top: -50px;}
     .b19b::before{height: 91px;margin-left: 500px;margin-top: -50px;}
     .b24::before{height: 202px;margin-left: 447px;margin-top: -50px;}
+    .b31::before{height: 262px;margin-left: 447px;margin-top: -50px;}
 }
 @media (min-width: 992px) {
     .r1::before {font-size: 1.3rem;font-weight: bold;height: 134px;margin-left: 80%;margin-top: 0%;}
@@ -169,6 +171,7 @@
     .b19::before{height: 72px;margin-left: 225px;margin-top: -42px;}
     .b19b::before{height: 72px;margin-left: 380px;margin-top: -42px;}
     .b24::before{height: 163px;margin-left: 343px;margin-top: -42px;}
+    .b31::before{height: 208px;margin-left: 343px;margin-top: -42px;}
 }
 
 
