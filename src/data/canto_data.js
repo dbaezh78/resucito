@@ -775,7 +775,7 @@ const allCantosData = [
             { line: "sobre el cielo y la tierra; ", sC: "ptop0 alabadlo1 mleft"},
             { line: "Él da fuerza y vigor a su pueblo. ", sC: "alabadlo sdb"},
 
-            { line: "Alabanza de todos sus fieles,, ", sC: "ptop0 alabadlo"},
+            { line: "Alabanza de todos sus fieles,", sC: "ptop0 alabadlo"},
             { line: "de Israel, su pueblo elegido., ", sC: "ptop0 alabadlo"},
 ]}, // ULTIMA LINEA DEL CANTO: ALABAD AL SEÑOR EN EL CIELO
 // SIGUIENTE CANTO DEBAJO
@@ -1013,7 +1013,7 @@ const allCantosData = [
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, (Re,m,20)", sC: "as ta", lines: [
             { line: "VOSOTROS LOS SIERVOS DEL SEÑOR., (La7,,327)", sC: "as"},
-            { line: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,, ", sC: "as"},
+            { line: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,", sC: "as"},
             { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR., (Re,m,439)", sC: "as"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -1131,9 +1131,9 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Del Señor es la tierra,, (Mi,,10)", sC: "tc"},
-            { line: "DEL SEÑOR ES LA TIERRA,, ", sC: "ta as"},
+            { line: "DEL SEÑOR ES LA TIERRA,", sC: "ta as"},
             { line: "y todo aquello que contiene,, (Sol,,10)", sC: "tc"},
-            { line: "Y TODO AQUELLO QUE CONTIENE,, ", sC: "ta as"},
+            { line: "Y TODO AQUELLO QUE CONTIENE,", sC: "ta as"},
             { line: "el orbe y sus habitantes., (La,,10)(Si,7,183)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALZAOS, PUERTAS,, (Mi,,10)", sC: "ta as"},
@@ -1145,7 +1145,7 @@ const allCantosData = [
             { line: "¿Quién es ese Rey de la gloria?, (Mi,m,15)(La,m,92)(Mi,m,258)", sC: "tc"},
             { line: "¿QUIÉN ES ESE REY DE LA GLORIA?, (La,m,94)(Mi,m,288)", sC: "ta as"},
             { line: "El Señor, el fuerte, el valiente,, (Si,m,17)", sC: "tc"},
-            { line: "EL SEÑOR, EL FUERTE, EL VALIENTE,, ", sC: "ta as"},
+            { line: "EL SEÑOR, EL FUERTE, EL VALIENTE,", sC: "ta as"},
             { line: "el Señor, valiente en la batalla,, (Sol,,63)(La,,254)", sC: "tc"},
             { line: "VALIENTE EN LA BATALLA., (Si,,200)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -1166,7 +1166,7 @@ const allCantosData = [
             { line: "¿QUIÉN SUBIRÁ AL MONTE DEL SEÑOR?, (La,m,138)(Mi,m,350)", sC: "ta as"},
             { line: "El de manos inocentes y puro corazón,, (Si,m,20)", sC: "tc"},
             { line: "EL DE MANOS INOCENTES, ", sC: "ta as"},
-            { line: "Y PURO CORAZÓN,, ", sC: "as"},
+            { line: "Y PURO CORAZÓN,", sC: "as"},
             { line: "el que no conduce su vida por vanidad,, (Sol,,14)(La,,348)", sC: "tc"},
             { line: "POR VANIDAD., (Si,,114)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -1855,7 +1855,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
             { line: "Porque muchas son las pruebas, (Re,m,20)", sC: "tc"},
-            { line: "que le esperan al Justo,, ", sC: ""},
+            { line: "que le esperan al Justo,", sC: ""},
             { line: "mas de todas le libra el Señor., (Do,,90)(La,,267)", sC: ""},
             { line: "Gritan ellos, y el Señor les escucha, (Si♭,,77)(La,,299)", sC: ""},
             { line: "y los libra de todas sus angustias., (Si♭,,62)(La,,268)", sC: ""},
@@ -2224,7 +2224,7 @@ const allCantosData = [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "BENDITO SEA EL SEÑOR, (Re,m,21)", sC: "ta as", lines: [
             { line: "DIOS DE ISRAEL,, (Sol,m,27)(Re,m,138)", sC: "as"},
-            { line: "porque ha visitado y redimido a su pueblo,, ", sC: "tc"},
+            { line: "porque ha visitado y redimido a su pueblo,", sC: "tc"},
             { line: "SUSCITÁNDONOS, (Sol,m,78)", sC: "ta as"},
             { line: "UNA FUERZA DE SALVACIÓN, (Re,m,250)", sC: "as"},
             { line: "EN LA CASA DE DAVID, SU SIERVO., (La,7,81)(Re,m,286)", sC: "as"},  ]},
@@ -2247,7 +2247,7 @@ const allCantosData = [
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "BENDITO SEA EL SEÑOR, (Re,m,21)", sC: "ta as", lines: [
             { line: "DIOS DE ISRAEL,, (Sol,m,27)(Re,m,138)", sC: "as"},
-            { line: "porque ha visitado y redimido a su pueblo,, ", sC: "tc"},
+            { line: "porque ha visitado y redimido a su pueblo,", sC: "tc"},
             { line: "SUSCITÁNDONOS, (Sol,m,78)", sC: "ta as"},
             { line: "UNA FUERZA DE SALVACIÓN, (Re,m,250)", sC: "as"},
             { line: "EN LA CASA DE DAVID, SU SIERVO., (La,7,81)(Re,m,286)", sC: "as"},  ]},
@@ -2282,12 +2282,12 @@ const allCantosData = [
     lizq: [
             { line: "CANTAD A DIOS,, (Mi,,10)", sC: "ta as"},
             { line: "SALMODIAD PARA SU NOMBRE., ", sC: "as b31"},
-            { line: "CANTAD A DIOS,, ", sC: "as"},
+            { line: "CANTAD A DIOS,", sC: "as"},
             { line: "ALLANAD EL CAMINO, (Re,m9,180)", sC: "as"},
             { line: "AL QUE CABALGA EN LAS NUBES., (Mi,,273)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Señor es su Nombre, alegraos ante Él., (Mi,,12)(Re,m9,262)", sC: "tc"},
-            { line: "Padre de los huérfanos,, ", sC: ""},
+            { line: "Padre de los huérfanos,", sC: ""},
             { line: "defensor de las viudas, es Dios., (Mi,,279)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "A los más pobres hace habitar en su casa,, (Re,m9,128)(Mi,,372)", sC: ""},
@@ -2301,7 +2301,7 @@ const allCantosData = [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "CANTAD A DIOS,, (Mi,,10)", sC: "ta as", lines: [
             { line: "SALMODIAD PARA SU NOMBRE., ", sC: "as b31"},
-            { line: "CANTAD A DIOS,, ", sC: "as"},
+            { line: "CANTAD A DIOS,", sC: "as"},
             { line: "ALLANAD EL CAMINO, (Re,m9,180)", sC: "as"},
             { line: "AL QUE CABALGA EN LAS NUBES., (Mi,,273", sC: "as"},  ]},
     ], lder: [
@@ -2373,7 +2373,7 @@ const allCantosData = [
         nCan: "",
         dbno: "33",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/canticodelostresjovenes.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -2386,117 +2386,110 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Criaturas todas del Señor,, (La,m,15)", sC: "tc"},
-
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            
-            { line: "BENDECID AL SEÑOR., (Mi,7,15)(La,m,250)", sC: "ta as"},
-
+            { line: "BENDECID AL SEÑOR., (Mi,7,88)(La,m,181)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
- 
-            { line: "Ensalzadlo, (Mi,7,15)", sC: "tc"},
- 
+            { line: "Ensalzadlo, (Mi,7,69)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
- 
-            { line: "CON HIMNOS POR LOS SIGLOS., (La,m,15)", sC: "ta as"},
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CON HIMNOS POR LOS SIGLOS., (La,m,242)", sC: "ta as"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
             { line: "Ángeles del Señor, ", sC: "bdcd"},
             { line: "Cielos,", sC: "bdcd"},
-            
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "", sC: "ta1"}, // Espacio Generado para separar contenido
 
             { line: "Aguas del espacio,", sC: "bdcd"},
             { line: "Ejércitos del Señor,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Sol y Luna,, ", sC: "bdcd"},
+            { line: "Sol y Luna,", sC: "bdcd"},
             { line: "Astros del Cielo,", sC: "bdcd"},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "Fuego y calor,, ", sC: "bdcd"},
-            { line: "Fríos y heladas,, ", sC: "bdcd"},
+            { line: "Fuego y calor,", sC: "bdcd"},
+            { line: "Fríos y heladas,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Rocíos y nevadas,, ", sC: "bdcd"},
-            { line: "Témpanos y hielos,, ", sC: "bdcd"},
+            { line: "Rocíos y nevadas,", sC: "bdcd"},
+            { line: "Témpanos y hielos,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Escarchas y nieves,, ", sC: "bdcd"},
-            { line: "Noche y día,, ", sC: "bdcd"},
+            { line: "Escarchas y nieves,", sC: "bdcd"},
+            { line: "Noche y día,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Luz y tinieblas,, ", sC: "bdcd"},
-            { line: "Rayos y nubes,, ", sC: "bdcd"},
+            { line: "Luz y tinieblas,", sC: "bdcd"},
+            { line: "Rayos y nubes,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Bendiga la tierra al Señor, (Mi,7,15)", sC: "tc"},
+            { line: "Bendiga la tierra al Señor, (Mi,7,56)", sC: "tc"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
             { line: "LO ENSALCE, ", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "CON HIMNOS POR LOS SIGLOS., (La,m,15)", sC: "as"},
+            { line: "CON HIMNOS POR LOS SIGLOS., (La,m,242)", sC: "as"},
     ], lder: [
-            { line: "Montes y cumbres,, (La,m,15)(Mi,7,250)", sC: "tc bdcd"},
-            { line: "Cuanto germina en la tierra,, ", sC: "bdcd"},
+            { line: "Montes y cumbres,, (La,m,21)(Mi,7,359)", sC: "bdcd"},
+            { line: "Cuanto germina en la tierra,", sC: "bdga"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "", sC: "ta1"}, // Espacio Generado para separar contenido
+            
+
+            { line: "Manantiales,", sC: "bdcd"},
+            { line: "Mares y ríos,", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Cetáceos y peces,", sC: "bdcd"},
+            { line: "Aves del cielo,", sC: "bdcd"},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Manantiales,, ", sC: "bdcd"},
-            { line: "Mares y ríos,, ", sC: "bdcd"},
+            { line: "Fieras y ganados,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Cetáceos y peces,, ", sC: "bdcd"},
-            { line: "Aves del cielo,, ", sC: "bdcd"},
+            { line: "Ensalzadlo, (Mi,7,69)", sC: "tc"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "CON HIMNOS POR LOS SIGLOS, (La,m,241)", sC: "ta as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Hijos de los hombres,, (La,m,15)(Mi,7,390)", sC: "bdcd"},
+            { line: "Bendiga Israel al Señor,", sC: "bdga"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "", sC: "ta1"}, // Espacio Generado para separar contenido
             
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "Fieras y ganados,, ", sC: "bdcd"},
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "Ensalzadlo, (Mi,7,15)", sC: "tc"},
+            { line: "Sacerdotes del Señor,", sC: "bdcd"},
+            { line: "Siervos del Señor,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "CON HIMNOS POR LOS SIGLOS, (La,m,15)", sC: "ta as"},            
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            
-            { line: "Hijos de los hombres,, (La,m,15)(Mi,7,250)", sC: "tc bdcd"},
-            { line: "Bendiga Israel al Señor,, ", sC: "bdcd"},
-            
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "Sacerdotes del Señor,, ", sC: "bdcd"},
-            { line: "Siervos del Señor,, ", sC: "bdcd"},
+            { line: "Almas y espíritus justos,", sC: "bdcd"},
+            { line: "Santos y humildes de corazón,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Almas y espíritus justos,, ", sC: "bdcd"},
-            { line: "Santos y humildes de corazón,, ", sC: "bdcd"},
+            { line: "Ananías, Azarías y Misael,", sC: "bdcd"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Ananías, Azarías y Misael,, ", sC: "bdcd"},
+            { line: "Ensalzadlo, (Mi,7,70)", sC: "tc"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Ensalzadlo, (Mi,7,15)", sC: "tc"},
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "CON HIMNOS POR LOS SIGLOS, (La,m,15)", sC: "ta as"},
+            { line: "CON HIMNOS POR LOS SIGLOS, (La,m,243)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: CÁNTICO DE LOS TRES JÓVENES
 // SIGUIENTE CANTO DEBAJO
 
