@@ -2319,10 +2319,10 @@ const allCantosData = [
         category: ["PreCatecumenado","Cuaresma","Laudes/Visperas","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
-        nCan: "",
+        nCan: "* Melisma",
         dbno: "32",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/cantadalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -2335,28 +2335,169 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "CANTAD AL SEÑOR,, (Sol,,15)(La,m,207)", sC: "ta as"},
-            { line: "PUEBLOS TODOS DE LA TIERRA,, ", sC: "as"},
+            { line: "PUEBLOS TODOS DE LA TIERRA,", sC: "as"},
             { line: "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Porque grande es su amor hacia nosotros,, (Sol,,15)(La,m,421)", sC: "tc"},
-            { line: "es eterna su misericordia,, ", sC: ""},
+            { line: "Porque grande es su amor hacia nosotros,, (Sol,,15)(La,m,421)", sC: "tc a321"},
+            { line: "es eterna su misericordia, ", sC: "a322"},
             { line: "naciones, dadle gloria., (Do,,46)(Si,7,186)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "CANTAD AL SEÑOR,, (Sol,,15)(La,m,207)", sC: "ta as", lines: [
-            { line: "PUEBLOS TODOS DE LA TIERRA,, ", sC: "as"},
+            { line: "PUEBLOS TODOS DE LA TIERRA,", sC: "as"},
             { line: "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Porque firme es su amor hacia nosotros,, (Sol,,15)(La,m,405)", sC: "tc"},
-            { line: "su fidelidad dura por siempre,, ", sC: ""},
-            { line: "naciones, dadle gloria., (Do,,46)(Si,7,184", sC: ""},
+            { line: "Porque firme es su amor hacia nosotros,, (Sol,,15)(La,m,405)", sC: "tc a323"},
+            { line: "su fidelidad dura por siempre,", sC: "a324"},
+            { line: "naciones, dadle gloria., (Do,,46)(Si,7,184)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "CANTAD AL SEÑOR,, (Sol,,15)(La,m,207)", sC: "ta as", lines: [
-            { line: "PUEBLOS TODOS DE LA TIERRA,, ", sC: "as"},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "CANTAD AL SEÑOR, (Sol,,15)(La,m,207)", sC: "ta as", lines: [
+            { line: "PUEBLOS TODOS DE LA TIERRA, ", sC: "as"},
             { line: "NACIONES, DADLE GLORIA., (Do,,57)(Si,7,217)", sC: "as"},  ]},
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: CANTAD AL SEÑOR
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════════════╗
+║                CÁNTICO DE LOS TRES JÓVENES               ║
+╚════════════════════════════════════════════════════════════════╝  */
+   {
+        id: "canticodelostresjovenes",
+        tt: "Cántico De Los Tres Jóvenes",
+        title: "Cántico De Los Tres Jóvenes",
+        subtitle: "Daniel 3,57-58",
+        category: ["PreCatecumenado","Laudes/Visperas","Entrada","Final","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        dbno: "33",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/canticodelostresjovenes.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=cantadalsenor",
+        sig: "/resucito/src/index.html?canto=cantodemoises",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Criaturas todas del Señor,, (La,m,15)", sC: "tc"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "BENDECID AL SEÑOR., (Mi,7,15)(La,m,250)", sC: "ta as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+ 
+            { line: "Ensalzadlo, (Mi,7,15)", sC: "tc"},
+ 
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+ 
+            { line: "CON HIMNOS POR LOS SIGLOS., (La,m,15)", sC: "ta as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Ángeles del Señor, ", sC: "bdcd"},
+            { line: "Cielos,", sC: "bdcd"},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Aguas del espacio,", sC: "bdcd"},
+            { line: "Ejércitos del Señor,", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Sol y Luna,, ", sC: "bdcd"},
+            { line: "Astros del Cielo,", sC: "bdcd"},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "Fuego y calor,, ", sC: "bdcd"},
+            { line: "Fríos y heladas,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Rocíos y nevadas,, ", sC: "bdcd"},
+            { line: "Témpanos y hielos,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Escarchas y nieves,, ", sC: "bdcd"},
+            { line: "Noche y día,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Luz y tinieblas,, ", sC: "bdcd"},
+            { line: "Rayos y nubes,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Bendiga la tierra al Señor, (Mi,7,15)", sC: "tc"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "LO ENSALCE, ", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CON HIMNOS POR LOS SIGLOS., (La,m,15)", sC: "as"},
+    ], lder: [
+            { line: "Montes y cumbres,, (La,m,15)(Mi,7,250)", sC: "tc bdcd"},
+            { line: "Cuanto germina en la tierra,, ", sC: "bdcd"},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Manantiales,, ", sC: "bdcd"},
+            { line: "Mares y ríos,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Cetáceos y peces,, ", sC: "bdcd"},
+            { line: "Aves del cielo,, ", sC: "bdcd"},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Fieras y ganados,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Ensalzadlo, (Mi,7,15)", sC: "tc"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "CON HIMNOS POR LOS SIGLOS, (La,m,15)", sC: "ta as"},            
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "Hijos de los hombres,, (La,m,15)(Mi,7,250)", sC: "tc bdcd"},
+            { line: "Bendiga Israel al Señor,, ", sC: "bdcd"},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Sacerdotes del Señor,, ", sC: "bdcd"},
+            { line: "Siervos del Señor,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Almas y espíritus justos,, ", sC: "bdcd"},
+            { line: "Santos y humildes de corazón,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Ananías, Azarías y Misael,, ", sC: "bdcd"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Ensalzadlo, (Mi,7,15)", sC: "tc"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "CON HIMNOS POR LOS SIGLOS, (La,m,15)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: CÁNTICO DE LOS TRES JÓVENES
 // SIGUIENTE CANTO DEBAJO
 
 

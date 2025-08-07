@@ -1,0 +1,47 @@
+.container {margin-left: 3%;}
+
+.m11 {margin-left: 244px;bottom: 63px;}
+.m12 {margin-left: 244px;bottom: 75px;}
+
+
+
+.linea-canto {
+    min-height: 30px;
+}
+.linea-canto {
+    margin-bottom: -12px;
+    padding-top: 7px;
+}
+
+
+
+.a321, .a322, .a323, .a324 .bdcd
+{position: relative;min-height: 0px;}
+
+.bdcd::before {
+    font-size: 1.3em;
+    content: "BENDECID...";
+    position: absolute;
+    color: black;
+    width: max-content; /* Movido aquí */
+    font: icon;
+    align-content: center;
+ }
+
+
+@media (min-width: 384px) {
+    
+    
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+    .bdcd::before {
+        font-weight: bolder;
+        font-size: 1.3em;
+        margin-left: 300px;
+        top: 15px;
+
+    }
+}
