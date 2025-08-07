@@ -2367,7 +2367,7 @@ const allCantosData = [
         tt: "Cántico De Los Tres Jóvenes",
         title: "Cántico De Los Tres Jóvenes",
         subtitle: "Daniel 3,57-58",
-        category: ["PreCatecumenado","Laudes/Visperas","Entrada","Final","Antiguo Testamento"],
+        category: ["PreCatecumenado","Laudes","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",

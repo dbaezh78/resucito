@@ -1,4 +1,16 @@
-.container {margin-left: 3%;}
+/*.container {margin-left: 3%;}*/
+.container {
+    @media (min-width: 384px) {
+            margin-left: 7%;
+    }
+    @media (min-width: 768px) {
+            margin-left: 7%;
+    }
+    @media (min-width: 992px) {
+            margin-left: 3%;
+    }
+
+}
 
 .m11 {margin-left: 244px;bottom: 63px;}
 .m12 {margin-left: 244px;bottom: 75px;}
