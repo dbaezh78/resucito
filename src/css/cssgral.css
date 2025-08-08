@@ -1023,8 +1023,12 @@ hr {
 
 }
 
-
 /* Usar la variable dinámica establecida por JS para el fondo del body y principal */
 body { background-color: var(--dynamic-body-background, #f4f4f4);}
 .main-wrapper, .container, .category-link {background-color: var(--dynamic-main-background, white);}
 
+.ncan-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}

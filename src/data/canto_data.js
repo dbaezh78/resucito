@@ -15,6 +15,9 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "5",
         nCan: "", //Nota del canto = nCan
+        nCanURL: "",
+        /*      nCanURL: "/resucito/src/index.html?canto=cantodemoises1",*/
+
         dbno: "1",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
@@ -85,6 +88,7 @@ const allCantosData = [
         ant: "/resucito/src/index.html?canto=alavictimapascual",
         sig: "/resucito/src/index.html?canto=atilevantomisojos",
         nCan: "",
+        nCanURL: "",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
@@ -180,6 +184,7 @@ const allCantosData = [
         ant: "/resucito/src/index.html?canto=anadiedemosocasiondetropiezo",
         sig: "/resucito/src/index.html?canto=atisenorenmiclamorimploro",
         nCan: "",
+        nCanURL: "",
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
@@ -235,6 +240,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "2",
         nCan: "",
+        nCanURL: "",
         dbno: "4",
         notes: "",
         mant: "No",
@@ -304,6 +310,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
+        nCanURL: "",
         dbno: "5",
         notes: "",
         mant: "No",
@@ -358,6 +365,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
+        nCanURL: "",
         dbno: "6",
         notes: "",
         mant: "No",
@@ -435,6 +443,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "7",
         notes: "",
         mant: "No",
@@ -488,6 +497,7 @@ const allCantosData = [
         cejilla: "",
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         nCan: "",
+        nCanURL: "",
         dbno: "8",
         notes: "",
         mant: "No",
@@ -623,6 +633,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",   // Notas del canto
+        nCanURL: "",
         dbno: "10",
         notes: "",
         mant: "No",
@@ -719,6 +730,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "11",
         notes: "",
         mant: "",
@@ -792,6 +804,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "12",
         notes: "",
         mant: "No",
@@ -895,6 +908,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "13",
         notes: "",
         mant: "No",
@@ -966,6 +980,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "14",
         notes: "",
         mant: "No",
@@ -1048,6 +1063,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "15",
         notes: "",
         mant: "No",
@@ -1117,6 +1133,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "16",
         notes: "",
         mant: "`No",
@@ -1198,6 +1215,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "17",
         notes: "",
         mant: "No",
@@ -1305,6 +1323,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "18",
         notes: "",
         mant: "No",
@@ -1376,6 +1395,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "19",
         notes: "",
         mant: "No",
@@ -1442,6 +1462,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "20",
         notes: "",
         mant: "No",
@@ -1519,6 +1540,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "21",
         notes: "",
         mant: "No",
@@ -1568,6 +1590,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "22",
         notes: "",
         mant: "No",
@@ -1617,6 +1640,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "23",
         notes: "",
         mant: "No",
@@ -1699,6 +1723,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "24",
         notes: "",
         mant: "No",
@@ -1798,6 +1823,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "25",
         notes: "",
         mant: "No",
@@ -1883,6 +1909,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "26",
         notes: "",
         mant: "No",
@@ -1940,6 +1967,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
+        nCanURL: "",
         dbno: "27",
         notes: "",
         mant: "No",
@@ -2010,6 +2038,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "28",
         notes: "",
         mant: "No",
@@ -2108,6 +2137,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "29",
         notes: "",
         mant: "No",
@@ -2184,6 +2214,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "30",
         notes: "",
         mant: "No",
@@ -2266,6 +2297,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "31",
         notes: "",
         mant: "No",
@@ -2370,7 +2402,8 @@ const allCantosData = [
         category: ["PreCatecumenado","Laudes","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
-        nCan: "",
+        nCan: "",       //Nota del canto = nCan
+        nCanURL: "",    //URL de la nota del canto
         dbno: "33",
         notes: "",
         mant: "No",
@@ -2504,7 +2537,8 @@ const allCantosData = [
         category: ["PreCatecumenado","Pascua","Pentecostes"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
-        nCan: "",
+        nCan: "Version 2",
+        nCanURL: "index.html?canto=cantodemoises1",
         dbno: "34",
         notes: "",
         mant: "No",
@@ -2577,6 +2611,7 @@ const allCantosData = [
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
             { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 // ------------------------------------------------------------------------------------------------
             { line: "El enemigo había dicho:, ", sC: "nSpace"},
             { line: "«Les perseguiré y alcanzaré,", sC: "nSpace"},
@@ -2584,7 +2619,7 @@ const allCantosData = [
             { line: "los aniquilaré.», ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
             { line: "CABALLO Y CABALLERO., ", sC: "as"},
@@ -2597,6 +2632,7 @@ const allCantosData = [
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
             { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 // ------------------------------------------------------------------------------------------------
             { line: "Soplaste con tu aliento, ", sC: "nSpace"},
             { line: "y el mar los sepultó., ", sC: "nSpace"},
@@ -2605,7 +2641,7 @@ const allCantosData = [
             { line: "en las aguas formidables., ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
             { line: "CABALLO Y CABALLERO., ", sC: "as"},
@@ -2625,7 +2661,7 @@ const allCantosData = [
             { line: "autor de maravillas?, ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
             { line: "CABALLO Y CABALLERO., ", sC: "as"},
@@ -2645,7 +2681,7 @@ const allCantosData = [
             { line: "al paso de Jacob., ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
             { line: "CABALLO Y CABALLERO., ", sC: "as"},
@@ -2665,7 +2701,7 @@ const allCantosData = [
             { line: "que tus manos prepararon., ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
             { line: "CABALLO Y CABALLERO., ", sC: "as"},
@@ -2681,6 +2717,274 @@ const allCantosData = [
 // ------------------------------------------------------------------------------------------------
 ]}, // ULTIMA LINEA DEL CANTO: CANTO DE MOISÉS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════════╗
+║                CANTO DE MOISÉS               ║
+╚══════════════════════════════════════════════╝  */
+   {
+        id: "cantodemoises1",
+        tt: "Canto De Moisés",
+        title: "Canto De Moisés",
+        subtitle: "Éxodo 15,1-18",
+        category: ["PreCatecumenado","Pascua","Pentecostes"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "34",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/cantodemoises.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=canticodelostresjovenes",
+        sig: "/resucito/src/index.html?canto=caritaschristiurgetnos",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Cantemos al Señor,(Do,7,19)(Fa,,167)", sC: "tc"},
+            { line: "cantemos al Señor,(La,7,164)", sC: ""},
+            { line: "que se cubrió de gloria,(Re,7,188)", sC: ""},
+            { line: "de gloria, de gloria,", sC: ""},
+            { line: "precipitó en el mar, (Sol,7,161)", sC: ""},
+            { line: "caballo y caballero., (Do,7,156)", sC: ""},
+// ---------------------------------------------------------------------------------------------------
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "ta as"},
+            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
+            { line: "CABALLO Y CABALLERO,", sC: "as"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+// ---------------------------------------------------------------------------------------------------
+            { line: "El Señor es un guerrero,(Fa,,196)", sC: "tc"},
+            { line: "su nombre es Yahveh., (La,7,187)", sC: ""},
+            { line: "Precipitó en el mar a los valientes,(Re,7,167)", sC: ""},
+            { line: "la flor del Faraón., (Sol,7,144)", sC: ""},
+// ------------------------------------------------------------------------------------------------
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
+            { line: "CABALLO Y CABALLERO,", sC: "as"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
+            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
+            { line: "CABALLO Y CABALLERO,", sC: "as"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+// ------------------------------------------------------------------------------------------------
+    ], lder: [
+            { line: "Tu diestra poderosa,", sC: "tc nSpace"},
+            { line: "gloriosa por su fuerza, ", sC: "nSpace"},
+            { line: "tu diestra, oh Señor, aplasta al enemigo,", sC: "nSpace"},
+            { line: "aplasta al enemigo., ", sC: "nSpace"},
+// ------------------------------------------------------------------------------------------------
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as nSpace", lines: [
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
+            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+// ------------------------------------------------------------------------------------------------
+            { line: "El enemigo había dicho:, ", sC: "nSpace"},
+            { line: "«Les perseguiré y alcanzaré,", sC: "nSpace"},
+            { line: "desnudaré la espada, se saciará mi alma,", sC: "nSpace"},
+            { line: "los aniquilaré.», ", sC: "nSpace"},
+// ------------------------------------------------------------------------------------------------
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as nSpace", lines: [
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
+            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+// ------------------------------------------------------------------------------------------------
+            { line: "Soplaste con tu aliento, ", sC: "nSpace"},
+            { line: "y el mar los sepultó., ", sC: "nSpace"},
+            { line: "Se hundieron como plomo, ", sC: "nSpace"},
+            { line: "en las aguas de la muerte,", sC: "nSpace"},
+            { line: "en las aguas formidables., ", sC: "nSpace"},
+// ------------------------------------------------------------------------------------------------
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as nSpace", lines: [
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
+            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+// ------------------------------------------------------------------------------------------------
+            { line: "¿Quién como tú, Señor,", sC: "nSpace"},
+            { line: "glorioso en santidad,", sC: "nSpace"},
+            { line: "terrible en las empresas, autor de maravillas,", sC: "nSpace"},
+            { line: "autor de maravillas?, ", sC: "nSpace"},
+// ------------------------------------------------------------------------------------------------
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as nSpace", lines: [
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
+            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+// ------------------------------------------------------------------------------------------------
+            { line: "Rescatas a tu pueblo,", sC: "nSpace"},
+            { line: "lo llevas a tu casa., ", sC: "nSpace"},
+            { line: "Los príncipes de Edom, se estremecen, ", sC: "nSpace"},
+            { line: "al paso de Jacob., ", sC: "nSpace"},
+// ------------------------------------------------------------------------------------------------
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
+       triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as nSpace", lines: [
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
+            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+// ------------------------------------------------------------------------------------------------
+            { line: "Lo llevas y lo plantas, ", sC: "nSpace"},
+            { line: "en el lugar sagrado, ", sC: "nSpace"},
+            { line: "sobre tu monte santo, el santuario, ", sC: "nSpace"},
+            { line: "que tus manos prepararon., ", sC: "nSpace"},
+// ------------------------------------------------------------------------------------------------
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_7", initialState: "collapsed",
+       triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as nSpace", lines: [
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
+            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO,", sC: "as nSpace"},
+            { line: "CABALLO Y CABALLERO., ", sC: "as nSpace"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+// ------------------------------------------------------------------------------------------------
+]}, // ULTIMA LINEA DEL CANTO: CANTO DE MOISÉS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║                CARITAS CHRISTI URGET NOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "caritaschristiurgetnos",
+        tt: "Caritas Christi Urget Nos",
+        title: "Caritas Christi Urget Nos",
+        subtitle: "2ª Corintios 5,14.15.17.21",
+        category: ["PreCatecumenado","Cuaresma"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "35",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/caritaschristiurgetnos.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=cantodemoises",
+        sig: "/resucito/src/index.html?canto=carmen63-(estanrotasmisataduras)",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡CARITAS CHRISTI URGET NOS!, (La,m,19)(Do,,184)(Mi,,271)", sC: "ta as"},
+            { line: "¡CARITAS CHRISTI URGET NOS!, (Fa,,11)(Mi,,273)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El amor de Cristo, (La,m,20)", sC: "tc"},
+            { line: "nos apremia al pensar,, (Do,,12)(Mi,,198)", sC: ""},
+            { line: "EL AMOR DE CRISTO, (Fa,,12)", sC: "ta as"},
+            { line: "NOS APREMIA AL PENSAR,, (Mi,,229)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "que si uno murió por todos,, (La,m,21)", sC: "tc"},
+            { line: "todos por tanto murieron., (Do,,12)(Mi,,200)", sC: ""},
+            { line: "QUE SI CRISTO MURIÓ POR TODOS,, (Fa,,11)", sC: "ta as"},
+            { line: "TODOS MURIERON., (Mi,,129)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y murió por todos para que los que viven, (Re,m,15)(Mi,,356)", sC: "tc"},
+            { line: "no vivan más para sí,, (Re,m,21)(Mi,,189)", sC: ""},
+            { line: "sino para aquel que murió, (Fa,,15)(Re,m9,250)", sC: ""},
+            { line: "y resucitó por ellos., (Sol,,11)(Mi,,140)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡CARITAS CHRISTI URGET NOS!, (La,m,19)(Do,,184)(Mi,,271)", sC: "ta as", lines: [
+            { line: "¡CARITAS CHRISTI URGET NOS!, (Fa,,11)(Mi,,273)", sC: "as"},  ]},
+    ], lder: [
+            { line: "El que está en Cristo es una nueva creación;, (Re,m,20)(Mi,,397)", sC: "tc"},
+            { line: "pasó lo viejo, todo es nuevo., (Re,m,21)(Mi,,231)", sC: ""},
+            { line: "A quien no conoció pecado,, (Fa,,10)(Re,m9,229)", sC: ""},
+            { line: "Dios le hizo pecado,, ", sC: ""},
+            { line: "para que fuésemos justicia de Dios en Él., (Sol,,12)(Mi,,381)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Ay de mí si no anunciase, (La,m,15)(La,7,82)", sC: "tc"},
+            { line: "el Evangelio!, (Re,m,90)", sC: ""},
+            { line: "¡Ay de mí! ¡Ay de mí!, (Mi,,83)(La,m,182)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡AY DE MÍ SI NO ANUNCIASE, (La,7,81)", sC: "ta as"},
+            { line: "EL EVANGELIO!, (Re,m,99)", sC: "as"},
+            { line: "¡AY DE MÍ! ¡AY DE MÍ!, (Mi,,100)(La,m,189)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡CARITAS CHRISTI URGET NOS!, (La,m,19)(Do,,184)(Mi,,271)", sC: "ta as", lines: [
+            { line: "¡CARITAS CHRISTI URGET NOS!, (Fa,,11)(Mi,,273)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: CARITAS CHRISTI URGET NOS
+// SIGUIENTE CANTO DEBAJO
+
+
+
 
 
 
@@ -2841,6 +3145,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
+        nCanURL: "",
         dbno: "86",
         notes: "",
         mant: "No",

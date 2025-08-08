@@ -696,8 +696,31 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     if (dbnoElement) dbnoElement.textContent = cantoSpecificData.dbno;
     else console.error("Error: Elemento con ID #dbno no encontrado.");
     
-    if (nCanElement) nCanElement.textContent = cantoSpecificData.nCan;
-    else console.error("Error: Elemento con ID #nCan no encontrado.");
+    // actualización de la nota del canto en pie de pagina para agregar URL
+
+/*    if (nCanElement) nCanElement.textContent = cantoSpecificData.nCan;
+    else console.error("Error: Elemento con ID #nCan no encontrado.");*/
+
+if (nCanElement) {
+        // Limpiar el contenido previo
+        nCanElement.innerHTML = '';
+        if (cantoSpecificData.nCan && cantoSpecificData.nCanURL) {
+            // Si existen ambas propiedades, crear un enlace
+            const linkElement = document.createElement('a');
+            linkElement.href = cantoSpecificData.nCanURL;
+            linkElement.textContent = cantoSpecificData.nCan;
+            linkElement.target = '_blank';
+            linkElement.classList.add('ncan-link');
+            nCanElement.appendChild(linkElement);
+        } else if (cantoSpecificData.nCan) {
+            // Si solo existe nCan, mostrarlo como texto plano
+            nCanElement.textContent = cantoSpecificData.nCan;
+        }
+    } else {
+        console.error("Error: Elemento con ID #nCan no encontrado.");
+    }`
+    
+    // actualización de la nota del canto en pie de pagina para agregar URL`
     
     // Actualizar el título de la pestaña del navegador (la etiqueta <title>)
     const pageTitleElement = document.getElementById('tt');
