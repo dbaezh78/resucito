@@ -2977,7 +2977,7 @@ const allCantosData = [
             { line: "EL EVANGELIO!, (Re,m,99)", sC: "as"},
             { line: "¡AY DE MÍ! ¡AY DE MÍ!, (Mi,,100)(La,m,189)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "¡CARITAS CHRISTI URGET NOS!, (La,m,19)(Do,,184)(Mi,,271)", sC: "ta as", lines: [
             { line: "¡CARITAS CHRISTI URGET NOS!, (Fa,,11)(Mi,,273)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: CARITAS CHRISTI URGET NOS
@@ -3048,6 +3048,172 @@ const allCantosData = [
             { line: "ME VOY A TODAS PARTES!, (Mi,,57)(La,,193)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: CARMEN 63 - (ESTÁN ROTAS MIS ATADURAS )
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           COMO CONDENADOS A MUERTE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "comocondenadosamuerte",
+        tt: "Como Condenados A Muerte",
+        title: "Como Condenados A Muerte",
+        subtitle: "1ª Corintios 4,9-13",
+        category: ["PreCatecumenado","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "37",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/comocondenadosamuerte.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=carmen63-(estanrotasmisataduras)",
+        sig: "/resucito/src/index.html?canto=comoesmaravilloso",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Hasta el presente, pasamos hambre,, (La,m,15)(Sol,,287)", sC: "tc"},
+            { line: "pasamos sed y desnudez., (La,m,227)", sC: ""},
+            { line: "Somos abofeteados,, (Sol,,13)", sC: ""},
+            { line: "y andamos errantes., (La,m,144)", sC: ""},
+            { line: "SOMOS ABOFETEADOS,, (Sol,,12)", sC: "ta as"},
+            { line: "Y ANDAMOS ERRANTES., (La,m,170)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Insultados, bendecimos,, (Sol,,59)(La,m,183)", sC: "tc"},
+            { line: "perseguidos, lo soportamos., (Sol,,84)(La,m,217)", sC: ""},
+            { line: "Si somos difamados,, (Sol,,15)", sC: ""},
+            { line: "respondemos con amor., (La,m,216)", sC: ""},
+            { line: "SI SOMOS DIFAMADOS,, (Sol,,15)", sC: "ta as"},
+            { line: "RESPONDEMOS CON AMOR., (La,m,247)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HEMOS VENIDO A SER,, (La,m,13)(Sol,,196)", sC: "ta as"},
+            { line: "HEMOS VENIDO A SER,, (La,m,198)", sC: "as"},
+            { line: "HEMOS VENIDO A SER,, (Sol,,195)", sC: "as"},
+            { line: "LA BASURA DEL MUNDO,, (La,m,187)", sC: "as"},
+            { line: "EL ESTROPAJO DE TODOS., (Sol,,13)(La,m,200)", sC: "as"},
+    ], lder: [
+            { line: "Porque pienso que a nosotros,, (La,m,21)(Sol,,243)", sC: "tc"},
+            { line: "los apóstoles,, (La,m,66)", sC: ""},
+            { line: "Dios nos ha asignado, (Sol,,175)", sC: ""},
+            { line: "el último lugar., (La,m,126)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "COMO CONDENADOS A MUERTE,, (Sol,,11)", sC: "ta as"},
+            { line: "COMO CONDENADOS A MUERTE., (La,m,19)", sC: "as"},
+            { line: "COMO CONDENADOS A MUERTE,, (Sol,,11)", sC: "as"},
+            { line: "COMO CONDENADOS A MUERTE., (La,m,19)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Puestos como espectáculo, (La,m,15)(Sol,,209)", sC: "tc"},
+            { line: "para el mundo,, (La,m,96)", sC: ""},
+            { line: "para los ángeles,, (Sol,,94)", sC: ""},
+            { line: "para los hombres,, (Fa,,97)", sC: ""},
+            { line: "para los hombres., (Mi,,98)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "COMO CONDENADOS A MUERTE,, (Sol,,11)", sC: "ta as", lines: [
+            { line: "COMO CONDENADOS A MUERTE., (La,m,19)", sC: "as"},
+            { line: "COMO CONDENADOS A MUERTE,, (Sol,,11)", sC: "as"},
+            { line: "COMO CONDENADOS A MUERTE., (La,m,19)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "HEMOS VENIDO A SER,, (La,m,13)(Sol,,196)", sC: "ta as", lines: [
+            { line: "HEMOS VENIDO A SER,, (La,m,198)", sC: "as"},
+            { line: "HEMOS VENIDO A SER,, (Sol,,195)", sC: "as"},
+            { line: "LA BASURA DEL MUNDO,, (La,m,187)", sC: "as"},
+            { line: "EL ESTROPAJO DE TODOS., (Sol,,13)(La,m,200)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: COMO CONDENADOS A MUERTE
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           CÓMO ES MARAVILLOSO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "comoesmaravilloso",
+        tt: "Cómo Es Maravilloso",
+        title: "Cómo Es Maravilloso",
+        subtitle: "Salmo 133 (132)",
+        category: ["PreCatecumenado","Cuaresma","Laudes/Visperas","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "38",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/comoesmaravilloso.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=comocondenadosamuerte",
+        sig: "/resucito/src/index.html?canto=comolacierva",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡Cómo es maravilloso, (Mi,m,15)(La,m,177)(Mi,m,216)", sC: "tc"},
+            { line: "estar con los hermanos!, (Si,7,15)(Mi,m,190)", sC: ""},
+            { line: "¡CÓMO ES MARAVILLOSO, (La,m,197)(Mi,m,240)", sC: "ta as"},
+            { line: "ESTAR CON LOS HERMANOS!, (Si,7,15)(Mi,m,228)", sC: "as"},
+            { line: "Maravilloso estar con los hermanos., (Do,,44)(Re,,83)(Mi,m,114)(Sol,,148)", sC: "tc"},
+            { line: "MARAVILLOSO ESTAR CON LOS HERMANOS., (Do,,55)(Re,,100)(Mi,m,131)(Sol,,165)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Es como aceite que baja, (La,m,15)(Mi,m,250)", sC: "tc"},
+            { line: "por la barba de Aarón., (Si,7,15)(Mi,m,250)", sC: ""},
+            { line: "ES COMO ACEITE QUE BAJA, (La,m,15)(Mi,m,250)", sC: "ta as"},
+            { line: "POR LA BARBA DE AARÓN., (Si,7,15)(Mi,m,250)", sC: "as"},
+            { line: "Como aceite por la barba de Aarón., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "tc"},
+            { line: "COMO ACEITE POR LA BARBA DE AARÓN., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Como rocío del Hermón que baja sobre Sión., (La,m,15)(Mi,m,250)(Si,7,350)(Mi,m,450)", sC: "tc"},
+            { line: "COMO ROCÍO DEL HERMÓN, (La,m,15)(Mi,m,250)", sC: "ta as"},
+            { line: "QUE BAJA SOBRE SIÓN., (Si,7,15)(Mi,m,250)", sC: "as"},
+            { line: "Como rocío que baja sobre Sión., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "tc"},
+            { line: "COMO ROCÍO QUE BAJA SOBRE SIÓN., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "ta as"},
+    ], lder: [
+            { line: "Allí Yahveh nos ha dado, (Mi,m,15)(La,m,250)(Mi,m,350)", sC: "tc"},
+            { line: "toda su bendición., (Si,7,15)(Mi,m,250)", sC: ""},
+            { line: "ALLÍYAHVEH NOS HA DADO, (La,m,15)(Mi,m,250)", sC: "ta as"},
+            { line: "TODA SU BENDICIÓN., (Si,7,15)(Mi,m,250)", sC: "as"},
+            { line: "Nos ha dado toda su bendición., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "tc"},
+            { line: "NOS HA DADO TODA SU BENDICIÓN., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Allí Yahveh nos ha dado, (La,m,15)(Mi,m,250)", sC: "tc"},
+            { line: "la Vida para siempre., (Si,7,15)(Mi,m,250)", sC: ""},
+            { line: "ALLÍ YAHVEH NOS HA DADO, (La,m,15)(Mi,m,250)", sC: ""},
+            { line: "LA VIDA PARA SIEMPRE., (Si,7,15)(Mi,m,250)", sC: "ta as"},
+            { line: "Nos ha dado la Vida para siempre., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "tc"},
+            { line: "NOS HA DADO LA VIDA PARA SIEMPRE., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡CÓMO ES MARAVILLOSO, (Mi,m,15)(La,m,250)(Mi,m,350)", sC: "ta as"},
+            { line: "ESTAR CON LOS HERMANOS!, (Si,7,15)(Mi,m,250)", sC: "as ast"},
+]}, // ULTIMA LINEA DEL CANTO: CÓMO ES MARAVILLOSO
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
