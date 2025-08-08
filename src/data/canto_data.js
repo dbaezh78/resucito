@@ -2938,7 +2938,7 @@ const allCantosData = [
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=cantodemoises",
-        sig: "/resucito/src/index.html?canto=carmen63-(estanrotasmisataduras)",
+        sig: "/resucito/src/index.html?canto=carmen63",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "¡CARITAS CHRISTI URGET NOS!, (La,m,19)(Do,,184)(Mi,,271)", sC: "ta as"},
@@ -2982,6 +2982,75 @@ const allCantosData = [
             { line: "¡CARITAS CHRISTI URGET NOS!, (Fa,,11)(Mi,,273)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: CARITAS CHRISTI URGET NOS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           CARMEN 63 - (ESTÁN ROTAS MIS ATADURAS )      ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "carmen63",
+        tt: "Carmen 63 - (Están Rotas Mis Ataduras )",
+        title: "Carmen 63",
+        subtitle: "(Rabindranath Tagore)*",
+        category: ["PreCatecumenado","Pascua","Pentecostes","Comunión","Final"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* La Cosecha, poema 74, Antes: Están rotas mis ataduras",
+        nCanURL: "/docs/Tagore La Cosecha.pdf",
+        dbno: "36",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/carmen63.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=caritaschristiurgetnos",
+        sig: "/resucito/src/index.html?canto=comocondenadosamuerte",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Están rotas mis ataduras,, (La,m,15)(Mi,,55)(Fa,,204)", sC: "tc"},
+            { line: "pagadas mis deudas,, (Re,m,43)(Mi,,146)", sC: ""},
+            { line: "mis puertas de par en par ..., (Fa,,68)", sC: ""},
+            { line: "¡me voy a todas partes!, (Mi,,173)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ellos, acurrucados en su rincón,, (Re,m,21)(Mi,,284)", sC: ""},
+            { line: "siguen tejiendo, (Re,m,19)", sC: ""},
+            { line: "el pálido lienzo de sus horas;, (Mi,,239)", sC: ""},
+            { line: "o vuelven a sentarse en el polvo,, (Fa,,44)", sC: ""},
+            { line: "a contar sus monedas., (Mi,,171)", sC: ""},
+            { line: "Y me llaman, y me llaman, (Fa,,66)(Mi,,199)", sC: ""},
+            { line: "para que no siga., (Fa,,21)(Mi,,134)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Pero ya mi espada está forjada,, (La,m,21)(Mi,m,278)", sC: ""},
+            { line: "ya tengo puesta mi armadura,, (La,m,22)(Mi,m,250)", sC: ""},
+            { line: "ya mi caballo se impacienta!..., (Sol,,15)(Si,,232)", sC: ""},
+            { line: "¡Y yo ganaré mi reino!, (Re,,14)(La,,70)(Fa#,,170)", sC: ""},
+            { line: "¡Y yo ganaré mi reino!, (Si,m,16)(Sol,,69)(Fa#,,170)", sC: ""},
+    ], lder: [
+            { line: "¡GANARÉ MI REINO,, (Re,,12)(La,,149)", sC: "ta as"},
+            { line: "GANARÉ MI REINO,, (Re,,24)(La,,145)", sC: "as"},
+            { line: "ME VOY A TODAS PARTES!, (Mi,,57)(La,,193)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡GANARÉ MI REINO,, (Re,,15)(La,,149)", sC: "as"},
+            { line: "GANARÉ MI REINO,, (Re,,21)(La,,142)", sC: "as"},
+            { line: "ME VOY A TODAS PARTES!, (Mi,,56)(La,,192)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ESTÁN ROTAS MIS ATADURAS,, (La,m,19)(Mi,,59)(Fa,,241)", sC: "ta as"},
+            { line: "PAGADAS MIS DEUDAS,, (Re,m,46)(Mi,,167)", sC: "as"},
+            { line: "MIS PUERTAS DE PAR EN PAR ..., (Fa,,79)", sC: "as"},
+            { line: "¡ME VOY A TODAS PARTES!, (Mi,,196)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡GANARÉ MI REINO,, (Re,,12)(La,,149)", sC: "ta as", lines: [
+            { line: "GANARÉ MI REINO,, (Re,,24)(La,,145)", sC: "as"},
+            { line: "ME VOY A TODAS PARTES!, (Mi,,57)(La,,193)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: CARMEN 63 - (ESTÁN ROTAS MIS ATADURAS )
+// SIGUIENTE CANTO DEBAJO
+
+
+
 
 
 

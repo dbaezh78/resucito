@@ -369,18 +369,19 @@ display: none;}
 @media (min-width: 384px) {
     .dbs2 {
         font-size: 0.9rem;
-        width: 90%;
+        width: 330px;
         justify-self: center;
-        
     }
 }
 @media (min-width: 768px) {
     .dbs2 {
+        width: 730px;
         font-size: large;
     }
 }
 @media (min-width: 992px) {
     .dbs2 {
+        width: 900px;
         font-size: 1.2rem;
     }
 }
