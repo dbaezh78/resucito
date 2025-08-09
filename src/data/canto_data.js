@@ -3072,7 +3072,7 @@ const allCantosData = [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=carmen63-(estanrotasmisataduras)",
+        ant: "/resucito/src/index.html?canto=carmen63",
         sig: "/resucito/src/index.html?canto=comoesmaravilloso",
 // Contenido del lado izquierdo del canto,
     lizq: [
@@ -3127,22 +3127,23 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: COMO CONDENADOS A MUERTE
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔═════════════════════════════════════════════╗
 ║           CÓMO ES MARAVILLOSO               ║
-╚════════════════════════════════════════════════════════╝  */
+╚═════════════════════════════════════════════╝  */
    {
         id: "comoesmaravilloso",
         tt: "Cómo Es Maravilloso",
         title: "Cómo Es Maravilloso",
         subtitle: "Salmo 133 (132)",
-        category: ["PreCatecumenado","Cuaresma","Laudes/Visperas","Antiguo Testamento"],
+        category: ["PreCatecumenado","Paz"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
-        nCan: "",
+        nCan: "* Puede intercalarse el estribillo en hebreo: HINNEH MAH TOV UMAH NA 'IYM, SHEVETH Af;IIYM GAM YAf;IADH",
+        /*nCan: "en hebreo: HINNEH MAH TOV UMAH NA 'IYM, SHEVETH Af;IIYM GAM YAf;IADH",*/
         nCanURL: "",
         dbno: "38",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/comoesmaravilloso.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -3158,38 +3159,38 @@ const allCantosData = [
             { line: "estar con los hermanos!, (Si,7,15)(Mi,m,190)", sC: ""},
             { line: "¡CÓMO ES MARAVILLOSO, (La,m,197)(Mi,m,240)", sC: "ta as"},
             { line: "ESTAR CON LOS HERMANOS!, (Si,7,15)(Mi,m,228)", sC: "as"},
-            { line: "Maravilloso estar con los hermanos., (Do,,44)(Re,,83)(Mi,m,114)(Sol,,148)", sC: "tc"},
-            { line: "MARAVILLOSO ESTAR CON LOS HERMANOS., (Do,,55)(Re,,100)(Mi,m,131)(Sol,,165)", sC: "ta as"},
+            { line: "Maravilloso estar con los hermanos., (Do,,44)(Re,,83)(Mi,m,114)(Sol,,148)(Si,m,227)(Mi,m,302)", sC: "tc"},
+            { line: "MARAVILLOSO ESTAR CON LOS HERMANOS., (Do,,55)(Re,,100)(Mi,m,131)(Sol,,165)(Si,m,281)(Mi,m,367)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Es como aceite que baja, (La,m,15)(Mi,m,250)", sC: "tc"},
-            { line: "por la barba de Aarón., (Si,7,15)(Mi,m,250)", sC: ""},
-            { line: "ES COMO ACEITE QUE BAJA, (La,m,15)(Mi,m,250)", sC: "ta as"},
-            { line: "POR LA BARBA DE AARÓN., (Si,7,15)(Mi,m,250)", sC: "as"},
-            { line: "Como aceite por la barba de Aarón., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "tc"},
-            { line: "COMO ACEITE POR LA BARBA DE AARÓN., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "ta as"},
+            { line: "Es como aceite que baja, (La,m,197)(Mi,m,242)", sC: "tc"},
+            { line: "por la barba de Aarón., (Si,7,15)(Mi,m,198)", sC: ""},
+            { line: "ES COMO ACEITE QUE BAJA, (La,m,223)(Mi,m,264)", sC: "ta as"},
+            { line: "POR LA BARBA DE AARÓN., (Si,7,23)(Mi,m,237)", sC: "as"},
+            { line: "Como aceite por la barba de Aarón., (Do,,50)(Re,,88)(Mi,m,124)(Sol,,160)(Si,m,233)(Mi,m,318)", sC: "tc"},
+            { line: "COMO ACEITE POR LA BARBA DE AARÓN., (Do,,50)(Re,,88)(Mi,m,124)(Sol,,160)(Si,m,275)(Mi,m,370)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Como rocío del Hermón que baja sobre Sión., (La,m,15)(Mi,m,250)(Si,7,350)(Mi,m,450)", sC: "tc"},
-            { line: "COMO ROCÍO DEL HERMÓN, (La,m,15)(Mi,m,250)", sC: "ta as"},
-            { line: "QUE BAJA SOBRE SIÓN., (Si,7,15)(Mi,m,250)", sC: "as"},
-            { line: "Como rocío que baja sobre Sión., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "tc"},
-            { line: "COMO ROCÍO QUE BAJA SOBRE SIÓN., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "ta as"},
+            { line: "Como rocío del Hermón que baja sobre Sión., (La,m,171)(Mi,m,214)(Si,7,264)(Mi,m,394)", sC: "tc"},
+            { line: "COMO ROCÍO DEL HERMÓN, (La,m,198)(Mi,m,247)", sC: "ta as"},
+            { line: "QUE BAJA SOBRE SIÓN., (Si,7,37)(Mi,m,189)", sC: "as"},
+            { line: "Como rocío que baja sobre Sión., (Do,,46)(Re,,85)(Mi,m,124)(Sol,,158)(Si,m,218)(Mi,m,278)", sC: "tc"},
+            { line: "COMO ROCÍO QUE BAJA SOBRE SIÓN., (Do,,52)(Re,,100)(Mi,m,134)(Sol,,169)(Si,m,251)(Mi,m,320)", sC: "ta as"},
     ], lder: [
-            { line: "Allí Yahveh nos ha dado, (Mi,m,15)(La,m,250)(Mi,m,350)", sC: "tc"},
-            { line: "toda su bendición., (Si,7,15)(Mi,m,250)", sC: ""},
-            { line: "ALLÍYAHVEH NOS HA DADO, (La,m,15)(Mi,m,250)", sC: "ta as"},
-            { line: "TODA SU BENDICIÓN., (Si,7,15)(Mi,m,250)", sC: "as"},
-            { line: "Nos ha dado toda su bendición., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "tc"},
-            { line: "NOS HA DADO TODA SU BENDICIÓN., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "ta as"},
+            { line: "Allí Yahveh nos ha dado, (Mi,m,15)(La,m,188)(Mi,m,230)", sC: "tc"},
+            { line: "toda su bendición., (Si,7,15)(Mi,m,151)", sC: ""},
+            { line: "ALLÍYAHVEH NOS HA DADO, (La,m,217)(Mi,m,258)", sC: "ta as"},
+            { line: "TODA SU BENDICIÓN., (Si,7,27)(Mi,m,176)", sC: "as"},
+            { line: "Nos ha dado toda su bendición., (Do,,46)(Re,,85)(Mi,m,124)(Sol,,158)(Si,m,218)(Mi,m,278)", sC: "tc"},
+            { line: "NOS HA DADO TODA SU BENDICIÓN., (Do,,52)(Re,,100)(Mi,m,134)(Sol,,169)(Si,m,251)(Mi,m,320)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Allí Yahveh nos ha dado, (La,m,15)(Mi,m,250)", sC: "tc"},
-            { line: "la Vida para siempre., (Si,7,15)(Mi,m,250)", sC: ""},
-            { line: "ALLÍ YAHVEH NOS HA DADO, (La,m,15)(Mi,m,250)", sC: ""},
-            { line: "LA VIDA PARA SIEMPRE., (Si,7,15)(Mi,m,250)", sC: "ta as"},
-            { line: "Nos ha dado la Vida para siempre., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "tc"},
-            { line: "NOS HA DADO LA VIDA PARA SIEMPRE., (Do,,15)(Re,,250)(Mi,m,350)(Sol,,450)", sC: "as"},
+            { line: "Allí Yahveh nos ha dado, (La,m,183)(Mi,m,224)", sC: "tc"},
+            { line: "la Vida para siempre., (Si,7,15)(Mi,m,140)", sC: ""},
+            { line: "ALLÍ YAHVEH NOS HA DADO, (La,m,217)(Mi,m,259)", sC: ""},
+            { line: "LA VIDA PARA SIEMPRE., (Si,7,15)(Mi,m,166)", sC: "ta as"},
+            { line: "Nos ha dado la Vida para siempre., (Do,,46)(Re,,85)(Mi,m,124)(Sol,,158)(Si,m,218)(Mi,m,278)", sC: "tc"},
+            { line: "NOS HA DADO LA VIDA PARA SIEMPRE., (Do,,52)(Re,,100)(Mi,m,134)(Sol,,169)(Si,m,251)(Mi,m,320)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¡CÓMO ES MARAVILLOSO, (Mi,m,15)(La,m,250)(Mi,m,350)", sC: "ta as"},
-            { line: "ESTAR CON LOS HERMANOS!, (Si,7,15)(Mi,m,250)", sC: "as ast"},
+            { line: "¡CÓMO ES MARAVILLOSO, (Mi,m,15)(La,m,192)(Mi,m,234)", sC: "ta as"},
+            { line: "ESTAR CON LOS HERMANOS!, (Si,7,15)(Mi,m,226)", sC: "as a321"},
 ]}, // ULTIMA LINEA DEL CANTO: CÓMO ES MARAVILLOSO
 // SIGUIENTE CANTO DEBAJO
 
@@ -3434,6 +3435,91 @@ const allCantosData = [
 // SIGUIENTE CANTO DEBAJO
 
 
+
+
+
+
+
+
+
+
+/*
+╔═════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA II               ║
+╚═════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiimodeloip1",
+        tt: "Plegaria Eucarística Ii",
+        title: "Plegaria Eucarística Ii",
+        subtitle: "Modelo I",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "Me lodía adaptable para los prefacios de solemnidade s o de varios tiempos litúrgicos.",
+        nCanURL: "",
+        dbno: "194",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/plegariaeucaristicaiimodeloip1.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=padrenuestro",
+        sig: "/resucito/src/index.html?canto=plegariaeucaristicaiimIp2",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "PREFACIO", sC: "sp2"},
+            { line: "El Señor esté con vosotros., (Sol,,11)(La,m,211)", sC: "pa"},
+            { line: "Y CON TU ESPÍRITU., (Sol,,12)(La ,m,142)", sC: "ta"},
+            { line: "Levantemos el corazón., (Fa,,12)(Mi,,206)", sC: "pa"},
+            { line: "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (Fa,,10)(Mi,,393)", sC: "as"},
+            { line: "Demos gracias al Señor, nuestro Dios., (La ,m,335)", sC: "ta"},
+            { line: "A ES JUSTO Y NECESARIO., (Sol,,66)(La ,m,202)", sC: "as sb194"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En verdad es justo y necesario,, (La ,m,15)(Sol,,254)", sC: "pa"},
+            { line: "es nuestro deber y salvación, (La ,m,251)", sC: ""},
+            { line: "darte gracias,, (Do,,80)", sC: ""},
+            { line: "siempre y en todo lugar,, (La ,m,213)", sC: ""},
+            { line: "a ti, Padre Santo,, (Sol,,28)", sC: ""},
+            { line: "por Jesucristo, tu Hijo amado., (La ,m,245)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por Él, que es tu Palabra,, (Sol,,197)", sC: ""},
+            { line: "hiciste todas las cosas., (La ,m,177)", sC: ""},
+            { line: "Tú nos lo enviaste hecho hombre, (Do,,138)", sC: ""},
+            { line: "por obra del Espíritu Santo,, (La ,m,219)", sC: ""},
+            { line: "para que, nacido de María la Virgen,, (Sol,,297)", sC: ""},
+            { line: "fuera nuestro Salvador y Redentor., (La ,m,285)", sC: ""},
+    ], lder: [
+            { line: "Él, en cumplimiento de tu voluntad,, (Fa,,11)(Mi,,315)", sC: ""},
+            { line: "para destruir la muerte, (Fa,,15)", sC: "as"},
+            { line: "y manifestar la resurrección,, (Mi,,247)", sC: "as"},
+            { line: "extendió sus brazos en la cruz,, (La,m,74)(Sol,,269)", sC: ""},
+            { line: "y así adquirió para ti, (Fa,7,197)", sC: ""},
+            { line: "un pueblo santo., (Mi,7,116)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MURIENDO, (Sol,,11)", sC: "pa as r1"},
+            { line: "DESTRUYÓ NUESTRA MUERTE,, (Sol,,243)", sC: "as"},
+            { line: "RESUCITANDO, (Fa,,91)", sC: "as"},
+            { line: "RESTAURÓ NUESTRA VIDA., (Mi,,223)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por eso, con los ángeles y los santos,, (La ,m,15)(Sol,,297)", sC: "pa"},
+            { line: "cantamos tu gloria diciendo:, (La ,m,220)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO, ", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TRANSICIÓN, ", sC: "sp1"},
+            { line: "Santo eres en verdad, Señor,, ", sC: "nSpace"},
+            { line: "fuente de toda santidad:, ", sC: "nSpace"},
+            { line: "EPÍCLESIS. ORACIÓN CONSECRATORIA, ", sC: "sp1"},
+            { line: "Santifica estos dones con la efusión, ", sC: "pa nSpace red"},
+            { line: "de tu Espíritu, de manera que sean para, ", sC: "nSpace"},
+            { line: "nosotros Cuerpo y ✠ Sangre, ", sC: "nSpace"},
+            { line: "de Jesucristo,nuestro Señor., ", sC: "nSpace"},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
+// SIGUIENTE CANTO DEBAJO
 
 
 

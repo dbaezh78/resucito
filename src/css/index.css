@@ -104,7 +104,7 @@
     @media (min-width: 992px) {height: 40px;margin-left: 344px;margin-top: -10px;}
 }
 
-.r1, .r2, .b1-1, .b1-2, .b2, .b3, .b12-1, .b12-2, .b14, .b17, .b18, .b19, .b24, b31
+.r1, .r2, .b1-1, .b1-2, .b2, .b3, .b12-1, .b12-2, .b14, .b17, .b18, .b19, .b24, .sb194
  {
     position: relative;
     min-height: 0px;
@@ -116,6 +116,17 @@
 .b18::before, .b19::before, .b19b::before, .b24::before, .b31::before
 {
     content: " BIS A."; /* Movido aquí */
+    position: absolute; /* Movido aquí */
+    align-content: center; /* Movido aquí */
+    border-left: 2px solid #c6c5c59e; /* Movido aquí */
+    color: #c6c5c59e; /* Movido aquí */
+    width: max-content; /* Movido aquí */
+    font: icon;
+    font-weight: bold;
+}
+
+.sb194::before {
+    content: " S"; /* Movido aquí */
     position: absolute; /* Movido aquí */
     align-content: center; /* Movido aquí */
     border-left: 2px solid #c6c5c59e; /* Movido aquí */

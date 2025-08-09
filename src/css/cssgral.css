@@ -485,6 +485,10 @@ display: none;}
     white-space: pre-wrap;
 }
 
+.red {
+    color: red !important;
+}
+
 /* Nuevas clases para el estilo del texto de la letra */
 .tx {
     font-weight: normal;
@@ -799,8 +803,8 @@ hr {
 
 .nCanto {
     color: red;
-    font-family: Neocat;
-    font-size: small;
+    font-family: 'Franklin Gothic Medium';
+    font-size: medium;
 }
 
 .collapsible-trigger {
