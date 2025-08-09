@@ -309,6 +309,6 @@
     padding-right: 0%;
 }
 
-
-
-
+.letra[data-color] {
+    color: var(--line-color, inherit);
+}

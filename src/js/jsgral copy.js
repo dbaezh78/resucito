@@ -231,8 +231,7 @@ const getDeviceType = (screenWidth) => {
 };
 
 // Función auxiliar para parsear una sola línea de canto (letra y notas)
-
-const parseSingleLineData = (lineContent, sectionClass = null, textStyleClass = null, color = null) => {
+const parseSingleLineData = (lineContent, sectionClass = null, textStyleClass = null) => {
     const firstParenIndex = lineContent.indexOf('(');
     let letra = '';
     let notasRawString = '';
@@ -270,7 +269,7 @@ const parseSingleLineData = (lineContent, sectionClass = null, textStyleClass = 
             });
         }
     }
-    return { letra, notes, sectionClass, textStyleClass, color };
+    return { letra, notes, sectionClass, textStyleClass };
 };
 
 
@@ -282,17 +281,17 @@ const parseCantoSectionData = (cantoSectionData) => {
             return {
                 type: "collapsible-block",
                 id: entry.id,
-                initialState: entry.initialState || "collapsed",
-                triggerLine: parseSingleLineData(entry.triggerLine, entry.sC, entry.tcss, entry.color),
-                lines: entry.lines.map(lineEntry => parseSingleLineData(lineEntry.line, lineEntry.sC, lineEntry.tcss, lineEntry.color))
+                initialState: entry.initialState || "collapsed", // Default a colapsado
+                triggerLine: parseSingleLineData(entry.triggerLine, entry.sC, entry.tcss), // Parsear la línea del disparador
+                lines: entry.lines.map(lineEntry => parseSingleLineData(lineEntry.line, lineEntry.sC, lineEntry.tcss)) // Parsear todas las líneas internas
             };
         } else {
             // Es una línea normal
-            return parseSingleLineData(entry.line, entry.sC, entry.tcss, entry.color);
+            // CORRECCIÓN: Asegurarse de pasar la propiedad 'line' y las clases 'sC' y 'tcss'
+            return parseSingleLineData(entry.line, entry.sC, entry.tcss);
         }
     });
 };
-
 
 // Función auxiliar para renderizar una línea de canto ya parseada
 const renderParsedLine = (lineaParsed) => {
@@ -314,11 +313,6 @@ const renderParsedLine = (lineaParsed) => {
     letraSpan.dataset.originalText = lineaParsed.letra;
     
     //* AÑADIENDO COLOR AL TEXTO SEGUN NECESIDAD ************* */
-if (lineaParsed.color) {
-    letraSpan.style.color = lineaParsed.color;
-} else {
-    letraSpan.style.removeProperty('color');
-}
     
     //* AÑADIENDO COLOR AL TEXTO SEGUN NECESIDAD ************* */
     //******************************************************* */
