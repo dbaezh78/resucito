@@ -77,3 +77,40 @@
     margin-left: -46px;
     padding-top: 0px;
     }
+
+
+.n1 {
+    @media (min-width: 384px) {
+        margin-top: -36px;
+        margin-left: 111px;
+    }
+    @media (min-width: 768px) {
+        top: -22px;
+        margin-left: 208px;
+    }
+    @media (min-width: 992px) {
+        top: -9px;
+        margin-left: 155px;
+    }
+    
+
+}
+.n2 {
+        @media (min-width: 384px) {
+        margin-top: -36px;
+        margin-left: 290px;
+    }
+    @media (min-width: 768px) {
+        margin-top: -79px;
+        margin-left: 542px;
+    }
+    @media (min-width: 992px) {
+        margin-top: -55px;
+        margin-left: 406px;
+    }
+    
+}
+
+.space1941 {margin-bottom: 100px;}
+.space1942 {margin-bottom: 20px;}
+.space1943 {margin-bottom: 10px;}

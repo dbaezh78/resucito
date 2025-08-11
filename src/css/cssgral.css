@@ -665,7 +665,7 @@ display: none;}
 .mujeres::before {content: "Mujeres:";}
 .melisma::before {content: "[melisma]";}
 .bis::before {content: "BIS A.";}
-.pa::before {content: "P";}
+.pa::before {content: "P.";}
 
 
 .r1, .r2 {

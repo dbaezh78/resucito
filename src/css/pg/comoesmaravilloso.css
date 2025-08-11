@@ -5,3 +5,9 @@
         @media (min-width: 768px) {margin-left: 380px;margin-top: 13px;}
         @media (min-width: 992px) {margin-left: 285px;margin-top: 0px;}
                 }
+
+                @media (min-width: 992px) {
+    .top-row-controls {
+        width: 1036px;
+    }
+}

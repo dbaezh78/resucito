@@ -3193,6 +3193,92 @@ const allCantosData = [
             { line: "ESTAR CON LOS HERMANOS!, (Si,7,15)(Mi,m,226)", sC: "as a321"},
 ]}, // ULTIMA LINEA DEL CANTO: CÓMO ES MARAVILLOSO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           COMO LA CIERVA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "comolacierva",
+        tt: "Como La Cierva",
+        title: "Como La Cierva",
+        subtitle: "Salmo 42-43 (41-42)",
+        category: ["PreCatecumenado","Pascua","Comunión","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "39",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/comolacierva.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=comoesmaravilloso",
+        sig: "/resucito/src/index.html?canto=comoovejaqueve",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Como la cierva anhela las corrientes de agua,, (Mi,,11)", sC: "tc"},
+            { line: "así mi alma te anhela a ti, Dios mío;, (Fa#,m,325)", sC: ""},
+            { line: "mi alma tiene sed de Dios, del Dios vivo,, (Si,7,354)", sC: ""},
+            { line: "¿cuándo podré ver el rostro de Dios?, (Mi,,319)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Mis lágrimas son mi pan noche y día,, ", sC: ""},
+            { line: "mientras mis enemigos me dicen todo el día:, ", sC: ""},
+            { line: "«¿Dónde está tu Dios? ¿Dónde está tu Dios?, (Fa#,m,184)", sC: ""},
+            { line: "¿Dónde está tu Dios?», ", sC: ""},
+            { line: "Y cuando yo recuerdo, (Si,7,170)", sC: ""},
+            { line: "el alma se me llena de tristeza,", sC: ""},
+            { line: "cómo marchaba en medio, ", sC: ""},
+            { line: "de un pueblo en fiesta., (Mi,,180)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿Por qué te abates, alma mía,, (Sol#,,15)", sC: ""},
+            { line: "por qué tú gimes dentro de mí?, (Do#,m,286)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ESPERA EN DIOS, ESPERA EN DIOS,, (Fa#,m,143)(Si,7,322)", sC: "ta as"},
+            { line: "QUE VOLVERÁS A ALABARLO. (Mi,,233)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque Él, Él es tu salvación,, (Do#,m,27)(Do#,7,117)(Fa#,m,249)", sC: "tc"},
+            { line: "Él es tu Dios, Él es tu Dios., (Si,7,15)(Do#,m,102)(La,,141)(Sol#,,227)", sC: ""},
+    ], lder: [
+            { line: "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,143)(Sol#,,318)", sC: "ta as"},
+            { line: "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,141)(Si,,319)(Si,,360)(Si♭,,386)(La,,412)", sC: "as"},
+            { line: "QUE VOLVERÁS A ALABARLO. (Sol#,,231)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Cuántas veces le he dicho a mi roca:, (Mi,,15)", sC: "tc"},
+            { line: "¿Por qué me has abandonado?!, ", sC: ""},
+            { line: "¿Por qué camino triste,, ", sC: ""},
+            { line: "oprimido por mis enemigos?, (Fa#,m,226)", sC: ""},
+            { line: "Se me rompen los huesos", sC: ""},
+            { line: "de escuchar todo el día:, (Si,7,211)", sC: ""},
+            { line: "¿Dónde está tu Dios? ¿Dónde está ese Dios?, (Mi,,403)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor, envíame tu luz y tu verdad,, (Fa#,m,299)", sC: ""},
+            { line: "que ellas me guíen hasta tu monte santo., (Si,7,359)", sC: ""},
+            { line: "Entonces podré cantar, ", sC: ""},
+            { line: "un canto de alegría con mi guitarra., (Mi,,301)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_1", initialState: "collapsed",
+       triggerLine: "¿Por qué te abates, alma mía, (Sol#,,15)", sC: "tc", lines: [
+            { line: "por qué tú gimes dentro de mí?, (Do#,m,286)", sC: ""},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_2", initialState: "collapsed",
+       triggerLine: "ESPERA EN DIOS, ESPERA EN DIOS,, (Fa#,m,143)(Si,7,322)", sC: "ta as", lines: [
+            { line: "QUE VOLVERÁS A ALABARLO. (Mi,,233)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_3", initialState: "collapsed",
+       triggerLine: "Porque Él, Él es tu salvación, (Do#,m,27)(Do#,7,117)(Fa#,m,249)", sC: "tc", lines: [
+            { line: "Él es tu Dios, Él es tu Dios., (Si,7,15)(Do#,m,102)(La,,141)(Sol#,,227)", sC: ""},  ]},
+            { type: "collapsible-block", id: "asamblea_4", initialState: "collapsed",
+       triggerLine: "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,143)(Sol#,,318)", sC: "ta as", lines: [
+            { line: "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,141)(Si,,319)(Si,,360)(Si♭,,386)(La,,412)", sC: "as"},
+            { line: "QUE VOLVERÁS A ALABARLO. (Sol#,,231)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: COMO LA CIERVA
+// SIGUIENTE CANTO DEBAJO
+
 
 
 
@@ -3610,7 +3696,7 @@ const allCantosData = [
         nCanURL: "",
         dbno: "194",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/plegariaeucaristicaiimodeloip3.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -3622,52 +3708,53 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=plegariaeucaristicaiimodeloiip1",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Acuérdate, Señor, de tu Iglesia, (Sol,,15)", sC: "pa"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "extendida por toda la tierra;, (Mi,m,15)", sC: ""},
-            { line: "y con el Papa ... N/., con nuestro obispo ... N/., (La,m,15)(Mi,m,250)", sC: ""},
+            { line: "Acuérdate, Señor, de tu Iglesia (Sol,,15)", sC: "pa"},
+            { line: "extendida por toda la tierra; (Mi,m,228)", sC: ""},
+            { line: "y con el Papa ... N/., con nuestro obispo ... N/., (La,m,15)(Mi,m,275)", sC: ""},
+            { line: "N/", sC: "n1", color: "#C24F4D" },
+            { line: "N/", sC: "n2", color: "#C24F4D" },
             { line: "y de todos los que en ella cuidan de tu pueblo,, (La,m,15)", sC: ""},
-            { line: "llévala a su perfección por la caridad., (Sol,,15)(Si,m,250)(Mi,m,350)", sC: ""},
+            { line: "llévala a su perfección por la caridad., (Sol,,15)(Si,m,195)(Mi,m,333)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Acuérdate también de nuestros hermanos, (Sol,,15)", sC: ""},
-            { line: "que durmieron en la esperanza, (Si,m,15)", sC: ""},
-            { line: "de la resurrección,, ", sC: ""},
-            { line: "y de todos los que han muerto, (La,m,15)", sC: ""},
-            { line: "en tu misericordia;, (Mi,m,15)", sC: ""},
-            { line: "admítelos a contemplar la luz de tu rostro., (Sol,,15)(Si,m,250)(Mi,m,350)", sC: ""},
-            { line: "CONMEMORACIÓN DE LOS SANTOS, (Sol,,15)(Mi,m,250)", sC: "sp1", color: "#9D9580"},
-            { line: "Ten misericordia de todos nosotros,, (La,m,15)", sC: ""},
-            { line: "y así, con María, la Virgen Madre de Dios,, (Mi,m,15)(La,m,250)", sC: ""},
-            { line: "su esposo San José, los apóstoles, (Mi,m,15)", sC: ""},
-            { line: "y cuantos vivieron en tu amistad, ", sC: ""},
-            { line: "a través de los tiempos, (Sol,,15)", sC: ""},
-            { line: "merezcamos, por tu Hijo Jesucristo,, (Si,m,15)", sC: ""},
-            { line: "compartir la vida eterna, (La,,15)(Mi,m,250)", sC: ""},
-            { line: "y cantar tus alabanzas., ", sC: ""},
+            { line: "Acuérdate también de nuestros hermanos, (Sol,,13)", sC: ""},
+            { line: "que durmieron en la esperanza, (Si,m,20)", sC: ""},
+            { line: "de la resurrección, ", sC: ""},
+            { line: "y de todos los que han muerto, (La,m,19)", sC: ""},
+            { line: "en tu misericordia; (Mi,m,132)", sC: ""},
+            { line: "admítelos a contemplar la luz de tu rostro., (Sol,,13)(Si,m,212)(Mi,m,360)", sC: ""},
+            { line: "CONMEMORACIÓN DE LOS SANTOS", sC: "sp1 space1943", color: "#9D9580"},
+            { line: "Ten misericordia de todos nosotros,, (Sol,,15)(Mi,m,250)", sC: ""},
+            { line: "y así, con María, la Virgen Madre de Dios,, (La,m,15)", sC: ""},
+            { line: "su esposo San José, los apóstoles,(Mi,m,15)(La,m,250)", sC: ""},
+            { line: "y cuantos vivieron en tu amistad, (Mi,m,15) ", sC: ""},
+            { line: "a través de los tiempos", sC: ""},
+            { line: "merezcamos, por tu Hijo Jesucristo,, (Sol,,15)", sC: ""},
+            { line: "compartir la vida eterna, (Si,m,15)", sC: ""},
+            { line: "y cantar tus alabanzas., (La,,15)(Mi,m,167) ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
     ], lder: [
-            { line: "DOXOLOGÍA Y CONCLUSIÓN DE LA PLEGARIA EUCARÍSTICA, (Sol,,15)", sC: "sp1", color: "#9D9580"},
-            { line: "Por Cristo, con Cristo y en Cristo,, ", sC: "pa"},
-            { line: "a ti, Dios Padre omnipotente,, (Si,m,15)", sC: ""},
-            { line: "en la unidad del Espíritu Santo,, (La,m,15)", sC: ""},
+            { line: "DOXOLOGÍA Y CONCLUSIÓN DE LA PLEGARIA EUCARÍSTICA", sC: "sp1", color: "#9D9580"},
+            { line: "Por Cristo, con Cristo y en Cristo,(Sol,,15)", sC: "pa"},
+            { line: "a ti, Dios Padre omnipotente, (Si,m,15)", sC: ""},
+            { line: "en la unidad del Espíritu Santo, (La,m,15)", sC: ""},
             { line: "todo honor y toda gloria, (Mi,m,15)", sC: ""},
             { line: "por los siglos de los siglos., (Sol,,15)", sC: ""},
-            { line: "AMÉN, AMÉN, AMÉN., (Sol,,15)(Si,m,250)(La,,350)(Mi,m,450)", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,15)(Si,m,101)(La,,135)(Mi,m,181)", sC: "ta as"},
+            { line: "", sC: "space1941"}, // Espacio Generado para separar contenido
 
-            { line: "Cuando el 'MEMORIAL y LA OFRENDA' se hace recitada,, ", sC: "sp3", color: "#9D9580"},
-            { line: "puede cantarse la Doxología con la siguiente melodía:, ", sC: "sp3", color: "#9D9580"},
+            { line: "Cuando el 'MEMORIAL y LA OFRENDA' se hace recitada,", sC: "sp3", color: "#9D9580"},
+            { line: "puede cantarse la Doxología con la siguiente melodía:", sC: "sp3 space1942", color: "#9D9580"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,15)(Re,7,250)", sC: "pa"},
-            { line: "a ti, Dios Padre omnipotente,, (Sol,,15)", sC: ""},
+            { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,15)(Re,7,272)", sC: "pa"},
+            { line: "a ti, Dios Padre omnipotente,, (Sol,,235)", sC: ""},
             { line: "en la unidad del Espíritu Santo,, (Mi,m,15)(Si,7,250)", sC: ""},
-            { line: "todo honor y toda gloria, (Mi,m,15)", sC: ""},
-            { line: "por los siglos de los siglos., (Do,,15)(Si,7,250)", sC: ""},
+            { line: "todo honor y toda gloria, (Mi,m,194)", sC: ""},
+            { line: "por los siglos de los siglos., (Do,,12)(Si,7,210)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "AMÉN, AMÉN, AMÉN., (Sol,,15)", sC: "ta as"},
-            { line: "AMÉN, AMÉN, AMÉN., (Mi,m,15)", sC: "as"},
-            { line: "AMÉN, AMÉN, AMÉN., (Re,,15)(Sol,,250)", sC: "as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,13)", sC: "ta as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Mi,m,42)", sC: "as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Re,,35)(Sol,,176)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
 // SIGUIENTE CANTO DEBAJO
