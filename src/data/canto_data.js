@@ -3278,6 +3278,82 @@ const allCantosData = [
             { line: "QUE VOLVERÁS A ALABARLO. (Sol#,,231)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: COMO LA CIERVA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           COMO OVEJA QUE VE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "comoovejaqueve",
+        tt: "Como Oveja Que Ve",
+        title: "Como Oveja Que Ve",
+        subtitle: "Kontáklon (Romano el Meloda)",
+        category: ["PreCatecumenado","Fracción del Pan"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "40",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/comoovejaqueve.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=comolacierva",
+        sig: "/resucito/src/index.html?canto=consoladamipueblo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Como oveja que ve cómo se llevan, (Mi,m,15)", sC: "tc"},
+            { line: "su corderito al matadero,, (La,m,211)", sC: ""},
+            { line: "María lo seguía consumida de dolor., (Mi,m,328)", sC: ""},
+            { line: "Y le decía: «¿Dónde te llevan, Hijo mío?, (La,m,349)", sC: ""},
+            { line: "¿Cómo se acaba tan pronto, ", sC: ""},
+            { line: "el curso de tu vida?, (Si,7,149)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Háblame: no pases, te ruego, sin hablarme., (Do,,15)(Si,7,379)", sC: ""},
+            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,15)(Si,7,250)", sC: ""},
+            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!, (La,m,15)(Si,7,250)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Nunca hubiera podido imaginar, (Mi,m,15)", sC: "tc"},
+            { line: "que llegaría a verte en este estado,, (La,m,15)", sC: ""},
+            { line: "nunca hubiera creído, ", sC: ""},
+            { line: "que llegarían a tal punto de odio y de furor,, (Mi,m,15)", sC: ""},
+            { line: "apresándote contra toda justicia., (Si,7,15)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Quisiera comprender! ¡Ay de mí!, (Do,,15)(La,m,250)", sC: "tc"},
+            { line: "¡QUISIERA COMPRENDER! ¡AY DE MÍ!, (Do,,15)(La,m,250)", sC: "ta as"},
+            { line: "¡Cómo es posible que la luz se apague!, (Si,7,15)", sC: "tc"},
+            { line: "¡CÓMO ES POSIBLE QUE LA LUZ SE APAGUE!, (La,m,15)(Si,7,250)", sC: "ta as"},
+    ], lder: [
+            { line: "¡Cómo es posible que te claven en una cruz!, (La,m,15)(Si,7,250)", sC: "tc"},
+            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,15)(Si,7,250)", sC: ""},
+            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!»., (La,m,15)(Si,7,250)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«¿Por qué lloras, por qué lloras, madre mía?, (Mi,m,15)(La,m,250)", sC: "tc"},
+            { line: "¿Por qué lloras, por qué lloras, madre mía?, (Mi,m,15)", sC: ""},
+            { line: "¿Acaso no debería sufrir?, (La,m6,15)", sC: ""},
+            { line: "¿Acaso no debo morir?, (Si,7,15)", sC: ""},
+            { line: "Entonces, ¿cómo podría salvar a Adán?, (Do,,15)(Si,7,250)", sC: ""},
+            { line: "Entonces, ¿cómo podrías ver a Eva, (La,m,15)", sC: ""},
+            { line: "que vuelve a la vida?»., (Si,7,15)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "COMO OVEJA QUE VE CÓMO SE LLEVAN, (Mi,m,15)", sC: "ta as", lines: [
+            { line: "SU CORDERITO AL MATADERO,, (La,m,15)", sC: "as"},
+            { line: "MARÍA LO SEGUÍA CONSUMIDA DE DOLOR., (Mi,m,15)", sC: "as"},
+            { line: "Y LE DECÍA: «¿DÓNDE TE LLEVAN, HIJO MÍO?, (La,m,15)", sC: "as"},
+            { line: "¿CÓMO SE ACABA TAN PRONTO, ", sC: "as"},
+            { line: "EL CURSO DE TU VIDA?, (Si,7,15)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Háblame: no pases, te ruego, sin hablarme,, (Do,,15)(Si,7,250)", sC: ""},
+            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,15)(Si,7,250)", sC: ""},
+            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!, (La,m,15)(Si,7,250)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: COMO OVEJA QUE VE
+// SIGUIENTE CANTO DEBAJO
+
 
 
 
