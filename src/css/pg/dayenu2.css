@@ -8,3 +8,26 @@
         margin-left: 410px;
     }
 }
+
+
+.container {margin-left: 0px;}
+
+.full {
+    width: max-content;
+}
+
+@media (min-width: 992px) {
+    .main-wrapper {
+        width: auto;
+        padding: 0px 60px 0px 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .top-row-controls {
+        position: fixed;
+        padding: 0px 121px 0px 0px;
+    }
+}
+
+
