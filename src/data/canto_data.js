@@ -3694,7 +3694,7 @@ const allCantosData = [
 // SIGUIENTE CANTO DEBAJO
 /*
 ╔════════════════════════════════╗
-║           DAYENÚ Continuación  ║
+║           DAYENÚ               ║
 ╚════════════════════════════════╝  */
    {
         id: "dayenu2",
@@ -3716,23 +3716,24 @@ const allCantosData = [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=cuandoisraelsaliodeegipto",
+        ant: "/resucito/src/index.html?canto=dayenu",
         sig: "/resucito/src/index.html?canto=deprofundis",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Si hubiera construido en nosotros su templo, (Mi,m,15)(Re,,250)(Do,,350)", sC: ""},
-            { line: "y no lo hubiera llenado de su Santo Espíritu:, (Si,7,15)(Mi,m,250)", sC: ""},
-            { line: "ESO NOS HABRÍA BASTADO,, (Re,,15)(Do,,250)", sC: ""},
+            { line: "Si hubiera construido en nosotros su templo, (Re,,178)(Do,,366)", sC: "tc"},
+            { line: "y no lo hubiera llenado de su Santo Espíritu:, (Si,7,186)(Mi,m,375)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "NOS HABRÍA BASTADO., ( Mi,m,15)", sC: ""},
-            { line: "DAYENÚ, DAYENÚ, DAYENÚ, (Re,,15)(Do,,250)(Mi,m,350)", sC: ""},
-            { line: "Cuánto más tenemos que dar gracias al Señor., (Mi,m,15)(La,m,250)(Mi,m,350)", sC: ""},
-            { line: "CUÁNTO MÁS TENEMOS, (La,m,15)", sC: ""},
-            { line: "QUE DAR GRACIAS AL SEÑOR., (Mi,m,15)", sC: ""},
-            { line: "Cuánto más tenemos que dar gracias al Señor., (Re,,15)(Do,,250)(Mi,m,350)", sC: ""},
+            { line: "Cuánto más tenemos que dar gracias al Señor., (La,m,250)(Mi,m,350)", sC: "tc"},
+            { line: "CUÁNTO MÁS TENEMOS, (La,m,15)", sC: "ta as"},
+            { line: "QUE DAR GRACIAS AL SEÑOR., (Mi,m,15)", sC: "as"},
+            { line: "Cuánto más tenemos que dar gracias al Señor., (Re,,15)(Do,,250)(Mi,m,350)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "CUÁNTO MÁS TENEMOS, (Re,,15)", sC: ""},
-            { line: "QUE DAR GRACIAS AL SEÑOR., (Do,,15)(Mi,m,250)", sC: ""},
+            { line: "CUÁNTO MÁS TENEMOS, (Re,,15)", sC: "ta as"},
+            { line: "QUE DAR GRACIAS AL SEÑOR., (Do,,15)(Mi,m,250)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Que nos ha hecho salir de Egipto., (La,m,15)(Mi,m,250)", sC: "tc r1"},
             { line: "Que ha hecho justicia del Faraón., (La,m,15)(Mi,m,250)", sC: "r1"},
@@ -3764,31 +3765,10 @@ const allCantosData = [
             { line: "ALELUYA, ALELUYA, ALELUYA., (La,m,15)(Mi,m,250)", sC: "ta as"},
             { line: "Aleluya, aleluya, aleluya., (Re,,15)(Do,,250)(Mi,m,350)", sC: "tc"},
             { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,15)(Do,,250)(Mi,m,350)", sC: "ta as"},
-
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ASAMBLEA UNO, ", sC: "ta as", lines: [
-            { line: "ASAMBLEA DOS, ", sC: "as"},
-            { line: "ASAMBLEA TRES, ", sC: "as"},
-            { line: "ASAMBLEA CUATRO, ", sC: "as"},
-            { line: "ASAMBLEA CISCO, ", sC: "as"},
-            { line: "ASAMBLEA SEIS, ", sC: "as"},
-            { line: "ASAMBLEA CIERRE, ", sC: "as"},  ]},
- 
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ASAMBLEA UNO, ", sC: "ta as", lines: [
-            { line: "ASAMBLEA DOS, ", sC: "as"},
-            { line: "ASAMBLEA TRES, ", sC: "as"},
-            { line: "ASAMBLEA CUATRO, ", sC: "as"},
-            { line: "ASAMBLEA CISCO, ", sC: "as"},
-            { line: "ASAMBLEA SEIS, ", sC: "as"},
-            { line: "ASAMBLEA CIERRE, ", sC: "as"},  ]},
-
 ]}, // ULTIMA LINEA DEL CANTO: DAYENÚ
 // SIGUIENTE CANTO DEBAJO
+
+
 
 
 
