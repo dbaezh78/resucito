@@ -3289,7 +3289,7 @@ const allCantosData = [
         subtitle: "Kontáklon (Romano el Meloda)",
         category: ["PreCatecumenado","Virgen Maria","Cuaresma","Pascua","Pentecostes","Fracción del Pan"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
+        cejilla: "2",
         nCan: "",
         nCanURL: "",
         dbno: "40",
@@ -3526,6 +3526,93 @@ const allCantosData = [
             { line: "TRAYENDO LAS GAVILLAS., (Mi,m,63)(Re,,197)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: CUANDO EL SEÑOR
 // SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           CUANDO ISRAEL SALIÓ DE EGIPTO                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "cuandoisraelsaliodeegipto",
+        tt: "Cuando Israel Salió De Egipto",
+        title: "Cuando Israel Salió De Egipto",
+        subtitle: "Salmo 114 (113)",
+        category: ["PreCatecumenado","Pascua","Paz"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* Se repite todo el canto en un tono más alto.",
+        nCanURL: "",
+        dbno: "44",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/cuandoisraelsaliodeegipto.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=cuandoelsenor",
+        sig: "/resucito/src/index.html?canto=dayenu",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Cuando Israel salió de Egipto,, (Mi,,10)(Fa,,123)(Mi,,246)", sC: "tc"},
+            { line: "la casa de Jacob de un pueblo bárbaro,, (Fa,,236)(Mi,,314)", sC: ""},
+            { line: "Judá fue su santuario,, (Fa,,179)", sC: ""},
+            { line: "Israel fue su dominio., (Mi,,165)", sC: ""},
+            { line: "A JUDÁ FUE SU SANTUARIO,, (Mi,,15)(Fa,,250)", sC: "ta as"},
+            { line: "ISRAEL FUE SU DOMINIO., (Mi,,198)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Lo vio el mar y huyó,, (La,m,20)", sC: "tc"},
+            { line: "retrocedió el Jordán,, (Sol,,92)", sC: ""},
+            { line: "los montes saltaron como carneros,, (Fa,,57)", sC: ""},
+            { line: "las colinas como corderos., (Mi,,213)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿QUÉ ES LO QUE TIENES, OH MAR, PARA HUIR,, (La,m,26)", sC: "ta as"},
+            { line: "Y TÚ JORDÁN, PARA RETROCEDER,, (Sol,,105)", sC: "as"},
+            { line: "VOSOTROS, MONTES QUE SALTÁIS COMO CARNEROS,, (Fa,,142)", sC: "as"},
+            { line: "COLINAS, COMO CORDEROS?, (MI,,228)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TIEMBLA TIERRA, TIEMBLA,, (La,,12)", sC: "as"},
+            { line: "DELANTE DE DIOS QUE PASA,, (Fa#,m,154)Si(m,,250)", sC: "as"},
+            { line: "DELANTE DEL DIOS DE JACOB,, (Re,,12)(La,,266)", sC: "as"},
+            { line: "QUE HACE BROTAR DE LA ROCA EL AGUA., (Sol,,63)(Fa#,,352)", sC: "as a321"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: CUANDO ISRAEL SALIÓ DE EGIPTO
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
