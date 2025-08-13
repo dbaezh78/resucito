@@ -3287,14 +3287,14 @@ const allCantosData = [
         tt: "Como Oveja Que Ve",
         title: "Como Oveja Que Ve",
         subtitle: "Kontáklon (Romano el Meloda)",
-        category: ["PreCatecumenado","Fracción del Pan"],
+        category: ["PreCatecumenado","Virgen Maria","Cuaresma","Pascua","Pentecostes","Fracción del Pan"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
         dbno: "40",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/comoovejaqueve.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -3313,46 +3313,224 @@ const allCantosData = [
             { line: "¿Cómo se acaba tan pronto, ", sC: ""},
             { line: "el curso de tu vida?, (Si,7,149)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¡Háblame: no pases, te ruego, sin hablarme., (Do,,15)(Si,7,379)", sC: ""},
-            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,15)(Si,7,250)", sC: ""},
-            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!, (La,m,15)(Si,7,250)", sC: "ta as"},
+            { line: "¡Háblame: no pases, te ruego, sin hablarme., (Do,,11)(Si,7,379)", sC: ""},
+            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,20)(Si,7,261)", sC: ""},
+            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!, (La,m,20)(Si,7,295)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Nunca hubiera podido imaginar, (Mi,m,15)", sC: "tc"},
-            { line: "que llegaría a verte en este estado,, (La,m,15)", sC: ""},
+            { line: "Nunca hubiera podido imaginar, (Mi,m,21)", sC: "tc"},
+            { line: "que llegaría a verte en este estado,, (La,m,304)", sC: ""},
             { line: "nunca hubiera creído, ", sC: ""},
-            { line: "que llegarían a tal punto de odio y de furor,, (Mi,m,15)", sC: ""},
-            { line: "apresándote contra toda justicia., (Si,7,15)", sC: ""},
+            { line: "que llegarían a tal punto de odio y de furor,, (Mi,m,394)", sC: ""},
+            { line: "apresándote contra toda justicia., (Si,7,284)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¡Quisiera comprender! ¡Ay de mí!, (Do,,15)(La,m,250)", sC: "tc"},
-            { line: "¡QUISIERA COMPRENDER! ¡AY DE MÍ!, (Do,,15)(La,m,250)", sC: "ta as"},
-            { line: "¡Cómo es posible que la luz se apague!, (Si,7,15)", sC: "tc"},
-            { line: "¡CÓMO ES POSIBLE QUE LA LUZ SE APAGUE!, (La,m,15)(Si,7,250)", sC: "ta as"},
+            { line: "¡Quisiera comprender! ¡Ay de mí!, (Do,,59)(La,m,304)", sC: "tc"},
+            { line: "¡QUISIERA COMPRENDER! ¡AY DE MÍ!, (Do,,67)(La,m,347)", sC: "ta as"},
+            { line: "¡Cómo es posible que la luz se apague!, (Si,7,327)", sC: "tc"},
+            { line: "¡CÓMO ES POSIBLE QUE LA LUZ SE APAGUE!, (La,m,18)(Si,7,372)", sC: "ta as"},
     ], lder: [
-            { line: "¡Cómo es posible que te claven en una cruz!, (La,m,15)(Si,7,250)", sC: "tc"},
-            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,15)(Si,7,250)", sC: ""},
-            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!»., (La,m,15)(Si,7,250)", sC: "ta as"},
+            { line: "¡Cómo es posible que te claven en una cruz!, (La,m,131)(Si,7,399)", sC: "tc"},
+            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,19)(Si,7,267)", sC: ""},
+            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!»., (La,m,22)(Si,7,294)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "«¿Por qué lloras, por qué lloras, madre mía?, (Mi,m,15)(La,m,250)", sC: "tc"},
-            { line: "¿Por qué lloras, por qué lloras, madre mía?, (Mi,m,15)", sC: ""},
-            { line: "¿Acaso no debería sufrir?, (La,m6,15)", sC: ""},
-            { line: "¿Acaso no debo morir?, (Si,7,15)", sC: ""},
-            { line: "Entonces, ¿cómo podría salvar a Adán?, (Do,,15)(Si,7,250)", sC: ""},
+            { line: "«¿Por qué lloras, por qué lloras, madre mía?, (Mi,m,20)(La,m,294)", sC: "tc"},
+            { line: "¿Por qué lloras, por qué lloras, madre mía?, (Mi,m,386)", sC: ""},
+            { line: "¿Acaso no debería sufrir?, (La,m6,218)", sC: ""},
+            { line: "¿Acaso no debo morir?, (Si,7,199)", sC: ""},
+            { line: "Entonces, ¿cómo podría salvar a Adán?, (Do,,36)(Si,7,346)", sC: ""},
             { line: "Entonces, ¿cómo podrías ver a Eva, (La,m,15)", sC: ""},
-            { line: "que vuelve a la vida?»., (Si,7,15)", sC: ""},
+            { line: "que vuelve a la vida?»., (Si,7,162)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "COMO OVEJA QUE VE CÓMO SE LLEVAN, (Mi,m,15)", sC: "ta as", lines: [
-            { line: "SU CORDERITO AL MATADERO,, (La,m,15)", sC: "as"},
-            { line: "MARÍA LO SEGUÍA CONSUMIDA DE DOLOR., (Mi,m,15)", sC: "as"},
-            { line: "Y LE DECÍA: «¿DÓNDE TE LLEVAN, HIJO MÍO?, (La,m,15)", sC: "as"},
+       triggerLine: "COMO OVEJA QUE VE CÓMO SE LLEVAN, (Mi,m,21)", sC: "ta as", lines: [
+            { line: "SU CORDERITO AL MATADERO,, (La,m,254)", sC: "as"},
+            { line: "MARÍA LO SEGUÍA CONSUMIDA DE DOLOR., (Mi,m,375)", sC: "as"},
+            { line: "Y LE DECÍA: «¿DÓNDE TE LLEVAN, HIJO MÍO?, (La,m,397)", sC: "as"},
             { line: "¿CÓMO SE ACABA TAN PRONTO, ", sC: "as"},
-            { line: "EL CURSO DE TU VIDA?, (Si,7,15)", sC: "as"},  ]},
+            { line: "EL CURSO DE TU VIDA?, (Si,7,185)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¡Háblame: no pases, te ruego, sin hablarme,, (Do,,15)(Si,7,250)", sC: ""},
-            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,15)(Si,7,250)", sC: ""},
-            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!, (La,m,15)(Si,7,250)", sC: "ta as"},
+            { line: "¡Háblame: no pases, te ruego, sin hablarme,, (Do,,11)(Si,7,377)", sC: ""},
+            { line: "Hijo mío, Hijo mío y Dios mío!, (La,m,21)(Si,7,265)", sC: ""},
+            { line: "¡HIJO MÍO, HIJO MÍO Y DIOS MÍO!, (La,m,20)(Si,7,297)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: COMO OVEJA QUE VE
 // SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════════╗
+║           CONSOLAD A MI PUEBLO               ║
+╚══════════════════════════════════════════════╝  */
+   {
+        id: "consoladamipueblo",
+        tt: "Consolad A Mi Pueblo",
+        title: "Consolad A Mi Pueblo",
+        subtitle: "Isaías 40,1-11 - Melodía hebraica ",
+        category: ["PreCatecumenado"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "41",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/consoladamipueblo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=comoovejaqueve",
+        sig: "/resucito/src/index.html?canto=cristoeslaluz",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "CONSOLAD A MI PUEBLO, (Mi,m,15)", sC: "ta as"},
+            { line: "Y HABLAD AL CORAZÓN DE JERUSALÉN,, (La,m,79)(Si,7,365)", sC: "as"},
+            { line: "Y DECIDLE QUE SE ACABA SU ESCLAVITUD., (Mi,m,383)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Ohey!, una voz en el desierto grita:, (Sol,,15)(La,,303)(Si,7,329)", sC: "tc"},
+            { line: "«Preparad el camino, la senda al Señor»., (La,m,21)(Si,7,246)(Mi,m,361)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PORQUE EL SEÑOR VIENE CON POTENCIA,, (La,m,161)(Mi,m,348)", sC: "ta as"},
+            { line: "TRAE CONSIGO EL PREMIO., (Si,7,215)", sC: "as"},
+            { line: "COMO EL PASTOR REÚNE A SU REBAÑO,, (La,m,151)(Mi,m,321)", sC: "as"},
+            { line: "LLEVA AL CORDERILLO EN SUS BRAZOS., (Si,7,176)(Mi,m,336)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Como el pastor conduce con cuidado, (La,m,129)(Mi,m,322)", sC: "tc"},
+            { line: "las ovejas que van a ser madres,, (Si,7,260)", sC: ""},
+            { line: "como el pastor que lleva sobre sus hombros, (La,m,128)", sC: "melisma"},
+            { line: "la oveja perdida., (Si,7,126)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "CONSOLAD A MI PUEBLO, (Mi,m,15)", sC: "ta as", lines: [
+            { line: "Y HABLAD AL CORAZÓN DE JERUSALÉN,, (La,m,79)(Si,7,365)", sC: "as"},
+            { line: "Y DECIDLE QUE SE ACABA SU ESCLAVITUD., (Mi,m,383)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: CONSOLAD A MI PUEBLO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════╗
+║           CRISTO ES LA LUZ               ║
+╚══════════════════════════════════════════╝  */
+   {
+        id: "cristoeslaluz",
+        tt: "Cristo Es La Luz",
+        title: "Cristo Es La Luz",
+        subtitle: "Himno - Juan 8,12; 14,6",
+        category: ["PreCatecumenado","Pascua","Pentecostes"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "42",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/cristoeslaluz.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=consoladamipueblo",
+        sig: "/resucito/src/index.html?canto=cuandoelsenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Cristo es la Luz., (Do,,10)", sC: "tc"},
+            { line: "CRISTO ES LA LUZ., (La,m,20)", sC: "ta as"},
+            { line: "Cristo es la Luz., (Re,m,22)", sC: "tc"},
+            { line: "CRISTO ES LA LUZ., (Sol,,13)", sC: "ta as"},
+            { line: "ÉL ES LA SALVACIÓN., (Do,,179)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cristo es el Camino., (Do,,10)", sC: "tc"},
+            { line: "CRISTO ES EL CAMINO., (La,m,20)", sC: "ta as"},
+            { line: "Cristo es el Camino., (Re,m,22)", sC: "tc"},
+            { line: "CRISTO ES EL CAMINO., (Sol,,13)", sC: "ta as"},
+            { line: "ÉL ES LA SALVACIÓN., (Do,,179)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cristo es la Verdad., (Do,,10)", sC: "tc"},
+            { line: "CRISTO ES LA VERDAD., (La,m,20)", sC: "ta as"},
+            { line: "Cristo es la Verdad., (Re,m,22)", sC: "tc"},
+            { line: "CRISTO ES LA VERDAD., (Sol,,13)", sC: "ta as"},
+            { line: "ÉL ES LA SALVACIÓN., (Do,,179)", sC: "as"},
+    ], lder: [
+            { line: "Cristo es la Vida., (Do,,10)", sC: "tc"},
+            { line: "CRISTO ES LA VID, (La,m,20)", sC: "ta as"},
+            { line: "Cristo es la Vida., (Re,m,22)", sC: "tc"},
+            { line: "CRISTO ES LA VID, (Sol,,13)", sC: "ta as"},
+            { line: "ÉL ES LA SALVACIÓN., (Do,,179)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cristo es la Luz., (Do,,10)", sC: "tc"},
+            { line: "CRISTO ES EL CAMINO., (La,m,20)", sC: "ta as"},
+            { line: "Cristo es la Verdad., (Re,m,22)", sC: "tc"},
+            { line: "CRISTO ES LA VID, (Sol,,13)", sC: "ta as"},
+            { line: "ÉL ES LA SALVACIÓN., (Do,,179)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: CRISTO ES LA LUZ
+// SIGUIENTE CANTO DEBAJO
+/*
+╔═════════════════════════════════════════╗
+║           CUANDO EL SEÑOR               ║
+╚═════════════════════════════════════════╝  */
+   {
+        id: "cuandoelsenor",
+        tt: "Cuando El Señor",
+        title: "Cuando El Señor",
+        subtitle: "Salmo 126 (125)",
+        category: ["PreCatecumenado","Cuaresma","Entrada"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "43",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/cuandoelsenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=cristoeslaluz",
+        sig: "/resucito/src/index.html?canto=cuandoisraelsaliodeegipto",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Cuando el Señor, (Re,,15)", sC: "tc"},
+            { line: "hizo volver, (Mi,m,85)", sC: ""},
+            { line: "a los cautivos, (Re,,95)", sC: ""},
+            { line: "de Sión,, (Mi,m,55)", sC: ""},
+            { line: "nos parecía soñar;, (Re,,155)", sC: ""},
+            { line: "la boca, (Mi,m,40)", sC: ""},
+            { line: "se nos llenaba de risas,, (Re,,183)", sC: ""},
+            { line: "la lengua, (Mi,m,36)", sC: ""},
+            { line: "de cantares., (Re,,76)(Re,7,137)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PORQUE AL IR,, (Sol,,127)", sC: "ta as"},
+            { line: "SE VA LLORANDO,, (La,,21)(Re,,164)", sC: "as"},
+            { line: "LLEVANDO LA SEMILLA;, (Mi,m,58)(Re,,184)(Re,7,239)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MAS AL VOLVER,, (Sol,,132)", sC: "as"},
+            { line: "SE VIENE CANTANDO,, (La,,53)(Re,,203)", sC: "as"},
+            { line: "TRAYENDO LAS GAVILLAS., (Mi,m,63)(Re,,197)", sC: "as"},
+    ], lder: [
+            { line: "¡Grandes cosas ha hecho,, (Re,,15)", sC: "tc"},
+            { line: "maravillas,, (Mi,m,62)", sC: ""},
+            { line: "ha hecho el Señor con nosotros!, (Re,,254)", sC: ""},
+            { line: "Por eso, (Mi,m,53)", sC: ""},
+            { line: "estamos alegres., (Re,,110)(Re,7,185)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+
+       triggerLine: "PORQUE AL IR,, (Sol,,127)", sC: "ta as", lines: [
+            { line: "SE VA LLORANDO,, (La,,21)(Re,,164)", sC: "as"},
+            { line: "LLEVANDO LA SEMILLA;, (Mi,m,58)(Re,,184)(Re,7,239)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MAS AL VOLVER,, (Sol,,132)", sC: "as"},
+            { line: "SE VIENE CANTANDO,, (La,,53)(Re,,203)", sC: "as"},
+            { line: "TRAYENDO LAS GAVILLAS., (Mi,m,63)(Re,,197)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: CUANDO EL SEÑOR
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
 
 
 
