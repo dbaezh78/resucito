@@ -122,3 +122,10 @@ body {
             width: fit-content;
         }
 }
+
+@media (min-width: 992px) {
+    .top-row-controls {
+        padding: 0px 0px 0px 0px;
+        width: 942px;
+    }
+}
