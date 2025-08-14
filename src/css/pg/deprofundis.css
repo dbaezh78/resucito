@@ -1,0 +1,45 @@
+.container {margin-left: 4%;}
+
+.melisma::before{
+    color: red;
+    font-style: italic;
+@media (min-width: 384px) {
+    font-size: 1rem;
+    left: 36px;
+    top: 14px;
+
+}
+@media (min-width: 768px) {
+    font-size: 1.3rem;
+    left: 60px;
+    top: 22px;
+    }
+@media (min-width: 992px)
+    {
+        font-size: 1rem;
+        margin-top: 0%;
+        left: 44px;
+    }
+}
+
+.r1::before {
+@media (min-width: 384px) {
+    height: 35px;
+    margin-left: 64%;
+    top: -65px;
+}
+@media (min-width: 768px) {
+    height: 46px;
+    margin-left: 62%;
+    top: -103px;
+}
+@media (min-width: 992px) {
+        height: 35px;
+        margin-left: 64%;
+        top: -85px;
+    }
+}
+
+.tc1::before{
+        margin-top: -10%;
+}

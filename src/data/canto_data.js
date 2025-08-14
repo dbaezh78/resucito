@@ -3768,6 +3768,94 @@ const allCantosData = [
             { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,101)(Do,,200)(Mi,m,269)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: DAYENÚ
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           DE PROFUNDIS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "deprofundis",
+        tt: "De Profundis",
+        title: "De Profundis",
+        subtitle: "Salmo 130 (129)",
+        category: ["PreCatecumenado","Adviento","Virgen Maria","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "47",
+        notes: "",
+        mant: "No", // Mantenimiento
+        audioSrc: "/audio/deprofundis.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=dayenu",
+        sig: "/resucito/src/index.html?canto=decidlealosdecorazoncansado",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "De lo profundo a ti grito, Señor:, (La,m,19)(Fa,7,200)(Mi,,277)(La,m,316)", sC: "tc"},
+            { line: "Señor escucha mi voz., (Fa,,43)(Mi,7,196)", sC: ""},
+            { line: "¡Estén tus oídos atentos, (La,m,28)(Fa,7,115)(Mi,,181)(La,m,238)", sC: ""},
+            { line: "a la voz de mi súplica!, (Fa,,56)(Mi,,156)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DE LO PROFUNDO A TI GRITO, SEÑOR:, (La,m,20)(Fa,7,252)(Mi,,332)(La,m,369)", sC: "ta as"},
+            { line: "SEÑOR ESCUCHA MI VOZ., (Fa,,46)(Mi,7,221)", sC: "as"},
+            { line: "¡ESTÉN TUS OÍDOS ATENTOS, (la,m,18)(Fa,7,133)(Mi,,212)(La,m,272)", sC: "as"},
+            { line: "A LA VOZ DE MI SÚPLICA!, (Fa,,70)(Mi,,178)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si llevas cuentas de los pecados, Señor,, (Sol,,14)(Fa,,355)(La,m,393)", sC: "tc"},
+            { line: "¿quién se salvará?, ¿quién se salvará?, (Fa,7,355)(Mi,7,388)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Mas cerca de ti está el perdón,, (Fa,m,15)(Mi,7,250)", sC: "tc"},
+            { line: "sólo en ti se encuentra el amor., (Fa,7,85)la(La,m,283)", sC: ""},
+            { line: "MAS CERCA DE TI ESTÁ EL PERDÓN,, (Fa,,69)(Mi,7,324)", sC: "tc as"},
+            { line: "SÓLO EN TI SE ENCUENTRA EL AMOR., (Fa,7,103)(La,m,337)", sC: "as"},
+    ], lder: [
+            { line: "Yo espero en el Señor, (Sol,,12)", sC: "tc"},
+            { line: "mi alma espera en su palabra;, (Fa,,38)(La,m,257)", sC: ""},
+            { line: "mi alma aguarda al Señor, (Sol,,41)", sC: ""},
+            { line: "más que el centinela la aurora;, (Fa,,24)(La,m,272)", sC: ""},
+            { line: "Israel espera al Señor", sC: ""},
+            { line: "más que el centinela espera a la aurora.(Fa,7,174)(Mi,7,355)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque solo en el Señor está el amor,, (Fa,,85)(Mi,7,343)", sC: "tc"},
+            { line: "sólo en él se encuentra el perdón., (Fa,7,89)(La,m,300)", sC: ""},
+            { line: "PORQUE SOLO EN EL SEÑOR ESTÁ EL AMOR,, (Fa,,110)(Mi,7,404)", sC: "ta as"},
+            { line: "SÓLO EN ÉL SE ENCUENTRA EL PERDÓN., (Fa,7,105)(La,m,366)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Señor redime a Israel,, (La,m,22)", sC: "tc"},
+            { line: "EL SEÑOR REDIME A ISRAEL, (Mi,,77)", sC: "ta as"},
+            { line: "DE TODOS SUS PECADOS., (La,m,195)", sC: "ta as"},
+            { line: "", sC: "r1"}, // Espacio Generado para separar contenido
+            { line: "¡Ay!, (La,m,22)(Re,m,70)(La,m,120)", sC: "melisma"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: DE PROFUNDIS
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
