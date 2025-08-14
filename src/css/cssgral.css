@@ -603,7 +603,7 @@ display: none;}
 }
 
 /* --- Nuevos estilos para etiquetas de sección --- */
-.ta, .tc, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .bis, .pa {
+.ta, .tc, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .bis, .pa {
     position: relative;
     padding-left: 0em;
     min-height: 1.5em;
@@ -611,7 +611,8 @@ display: none;}
 
 /* Estilos COMPARTIDOS por todos los ::before */
 .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-.hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before {
+.hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before
+{
     position: absolute;
     left: 0;
     top: 0px;
@@ -624,15 +625,15 @@ display: none;}
 /* Media queries para los ::before */
 @media (min-width: 384px) {
     .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before {
-        font-size: 0.9rem;
+    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before 
+    {font-size: 0.9rem;
         left: -17px;
-        top: 14px;
-    }
+        top: 14px;}
 }
 @media (min-width: 768px) {
     .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before {
+    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before 
+    {
         font-size: 1.6rem;
         left: -40px;
         top: 20px;
@@ -640,7 +641,8 @@ display: none;}
 }
 @media (min-width: 992px) {
     .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before {
+    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before  
+    {
         font-size: 1.23rem;
         margin-top: 0%;
         left: -34px;
@@ -650,13 +652,14 @@ display: none;}
 /* Color GRIS para la mayoría */
 .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before,
 .niño::before, .hombres::before, .mujeres::before, .bis::before,
-.pa::before {
-    color: #80808065; /* Gris semitransparente */
-}
+.pa::before, .tc1::before, .tc2::before  
+{color: #80808065; /* Gris semitransparente */}
 
 /* Contenido específico para cada ::before */
+.tc::before, .tc1::before, .tc2::before
+{content: "C.";}
+
 .ta::before {content: "A.";}
-.tc::before {content: "C.";}
 .ta1::before {content: "A1.";}
 .ta2::before {content: "A2.";}
 .ta3::before {content: "A3.";}

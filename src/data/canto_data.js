@@ -3701,14 +3701,14 @@ const allCantosData = [
         tt: "Dayenú",
         title: "Dayenú",
         subtitle: "De la Hagadá de Pésaj hebrea",
-        category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
+        category: ["PreCatecumenado","Pascua","Pentecostes","Paz"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
         dbno: "45",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/dayenu.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -3727,44 +3727,45 @@ const allCantosData = [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Cuánto más tenemos que dar gracias al Señor., (La,m,250)(Mi,m,350)", sC: "tc"},
-            { line: "CUÁNTO MÁS TENEMOS, (La,m,15)", sC: "ta as"},
-            { line: "QUE DAR GRACIAS AL SEÑOR., (Mi,m,15)", sC: "as"},
-            { line: "Cuánto más tenemos que dar gracias al Señor., (Re,,15)(Do,,250)(Mi,m,350)", sC: "tc"},
+            { line: "Cuánto más tenemos que dar gracias al Señor., (La,m,150)(Mi,m,426)", sC: "tc"},
+            { line: "CUÁNTO MÁS TENEMOS, (La,m,180)", sC: "ta as"},
+            { line: "QUE DAR GRACIAS AL SEÑOR., (Mi,m,261)", sC: "as"},
+            { line: "Cuánto más tenemos que dar gracias al Señor., (Re,,153)(Do,,314)(Mi,m,432)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "CUÁNTO MÁS TENEMOS, (Re,,15)", sC: "ta as"},
-            { line: "QUE DAR GRACIAS AL SEÑOR., (Do,,15)(Mi,m,250)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Que nos ha hecho salir de Egipto., (La,m,15)(Mi,m,250)", sC: "tc r1"},
-            { line: "Que ha hecho justicia del Faraón., (La,m,15)(Mi,m,250)", sC: "r1"},
-            { line: "Que nos ha librado de todos los enemigo, (Re,,15)(Do,,250)(Mi,m,350)", sC: "r1"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Que nos ha dado todas sus riqueza, (La,m,15)(Mi,m,250)", sC: "tc r1"},
-            { line: "Que ha abierto el mar para nosotro, (La,m,15)(Mi,m,250)", sC: "r1"},
-            { line: "Que ha hundido a nuestros opresore, (Re,,15)(Do,,250)(Mi,m,350)", sC: "r1"},
-            { line: "Que nos ha dado un camino en el desierto., (La,m,15)(Mi,m,250)", sC: "r1"},
-            { line: "Que nos ha nutrido con el pan de la vida., (La,m,15)(Mi,m,250)", sC: "r1"},
-            { line: "Que nos ha dado el día del Señor., (Re,,15)(Do,,250)(Mi,m,350)", sC: "r1"},
+            { line: "CUÁNTO MÁS TENEMOS, (Re,,176)", sC: "ta as"},
+            { line: "QUE DAR GRACIAS AL SEÑOR., (Do,,123)(Mi,m,261)", sC: "as"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "Que nos ha hecho salir de Egipto., (La,m,130)(Mi,m,280)", sC: "r1"},
+            { line: "Que ha hecho justicia del Faraón., (La,m,91)(Mi,m,291)", sC: "r1"},
+            { line: "Que nos ha librado de todos los enemigo, (Re,,150)(Do,,226)(Mi,m,359)", sC: "r1"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "Que nos ha dado todas sus riqueza, (La,m,132)(Mi,m,303)", sC: "r1"},
+            { line: "Que ha abierto el mar para nosotro, (La,m,106)(Mi,m,301)", sC: "r1"},
+            { line: "Que ha hundido a nuestros opresore, (Re,,122)(Do,,203)(Mi,m,316)", sC: "r1"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "Que nos ha dado un camino en el desierto., (La,m,131)(Mi,m,368)", sC: "r1"},
+            { line: "Que nos ha nutrido con el pan de la vida., (La,m,152)(Mi,m,360)", sC: "r1"},
+            { line: "Que nos ha dado el día del Señor., (Re,,130)(Do,,202)(Mi,m,301)", sC: "r1"},
     ], lder: [
-            { line: "Que nos ha hecho una nueva Alianza., (La,m,15)(Mi,m,250)", sC: "tc r1"},
-            { line: "Que nos ha hecho entrar en su Iglesia., (La,m,15)(Mi,m,250)", sC: "r1"},
-            { line: "Que ha construido en nosotros su templo., (Re,,15)(Do,,250)(Mi,m,350)", sC: "r1"},
-            { line: "Y lo ha llenado de su Espíritu Santo, (Re,,15)(Do,,250)", sC: "tc"},
-            { line: "en el perdón de los pecados., (Si,7,15)(Mi,m,250)", sC: ""},
+            { line: "Que nos ha hecho una nueva Alianza., (La,m,129)(Mi,m,316)", sC: "r1"},
+            { line: "Que nos ha hecho entrar en su Iglesia., (La,m,129)(Mi,m,325)", sC: "r1"},
+            { line: "Que ha construido en nosotros su templo., (Re,,149)(Do,,250)(Mi,m,339)", sC: "r1"},
+            { line: "Y lo ha llenado de su Espíritu Santo, (Re,,106)(Do,,296)", sC: "tc"},
+            { line: "en el perdón de los pecados., (Si,7,102)(Mi,m,237)", sC: ""},
+            { line: "", sC: "tc2"}, // Espacio Generado para separar contenido
+            { line: "Cristo nuestra Pascua está resucitado., (Mi,m,21)(La,m,159)(Mi,m,332)", sC: "tc"},
+            { line: "CRISTO NUESTRA PASCUA, (La,m,193)", sC: "ta as"},
+            { line: "ESTÁ RESUCITADO., (Mi,m,144)", sC: "as"},
+            { line: "Cristo nuestra Pascua está resucitado., (Re,,154)(Do,,247)(Mi,m,332)", sC: "tc"},
+            { line: "CRISTO NUESTRA PASCUA, (Re,,191)", sC: "ta as"},
+            { line: "ESTÁ RESUCITADO., (Do,,45)(Mi,m,144)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Cristo nuestra Pascua está resucitado., (Mi,m,15)(La,m,250)(Mi,m,350)", sC: "tc"},
-            { line: "CRISTO NUESTRA PASCUA, (La,m,15)", sC: "ta as"},
-            { line: "ESTÁ RESUCITADO., (Mi,m,15)", sC: "as"},
-            { line: "Cristo nuestra Pascua está resucitado., (Re,,15)(Do,,250)(Mi,m,350)", sC: "tc"},
-            { line: "CRISTO NUESTRA PASCUA, (Re,,15)", sC: "ta as"},
-            { line: "ESTÁ RESUCITADO., (Do,,15)(Mi,m,250)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Aleluya, aleluya., (Mi,m,15)(La,m,250)(Mi,m,350)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA., (La,m,15)(Mi,m,250)", sC: "ta as"},
-            { line: "Aleluya, aleluya, aleluya, (La,m,15)(Mi,m,250)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (La,m,15)(Mi,m,250)", sC: "ta as"},
-            { line: "Aleluya, aleluya, aleluya., (Re,,15)(Do,,250)(Mi,m,350)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,15)(Do,,250)(Mi,m,350)", sC: "ta as"},
+            { line: "Aleluya, aleluya., (La,m,43)(Mi,m,95)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA., (La,m,55)(Mi,m,113)", sC: "ta as"},
+            { line: "Aleluya, aleluya, aleluya, (La,m,94)(Mi,m,176)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (La,m,112)(Mi,m,206)", sC: "ta as"},
+            { line: "Aleluya, aleluya, aleluya., (Re,,86)(Do,,166)(Mi,m,217)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,101)(Do,,200)(Mi,m,269)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: DAYENÚ
 // SIGUIENTE CANTO DEBAJO
 
