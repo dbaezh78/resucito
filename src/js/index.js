@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "entrada", "paz", "fraccion-del-pan", "comunion", "final",
         "adviento", "navidad", "pascua", "pentecostes",
         "virgen-maria",
-        "aclamacion", "laudes", "visperas", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
+        "aclamacion", "salmodias", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
         "cuaresma"
     ];
 
@@ -52,10 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "pentecostes": "Pentecostés",
         "virgen-maria": "Vírgen María",
         "aclamacion": "Aclamación",
-        "laudes": "Laudes",
-        "Vísperas": "visperas",
+        "Salmodias": "Salmodias",
+        "salmodias": "Salmodias",
         "penitencial": "Penitencial",
-        "salmodia": "Salmodia",
         "nuevo-testamento": "Nuevo Testamento",
         "antiguo-testamento": "Antiguo Testamento",
         "cuaresma": "Cuaresma",

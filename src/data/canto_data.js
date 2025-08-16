@@ -11,7 +11,7 @@ const allCantosData = [
         tt: "A la Víctima Pascual",
         title: "A la Víctima Pascual",
         subtitle: "Secuencia de Pascua - Himno lat. «Victimae paschall laudes»",
-        category: ["Precatecumenado", "Pascua", "Pentecostés"],
+        category: ["PreCatecumenado","Pascua","Pentecostés"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "5",
         nCan: "", //Nota del canto = nCan
@@ -75,7 +75,7 @@ const allCantosData = [
         tt: "A nadie demos ocasión de tropiezo",
         title: "A NADIE DEMOS OCASIÓN DE TROPIEZO",
         subtitle: "2ª Corintios 6,3ss",
-        category: ["PreCatecumenado", "Pascua", "Pentecostés", "Comunión"],
+        category: ["PreCatecumenado","Fracción del Pan","Nuevo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         // propiedad para la velocidad de desplazamiento segun equipo
@@ -170,7 +170,7 @@ const allCantosData = [
         tt: "A ti levanto mis ojos",
         title: "A TI LEVANTO MIS OJOS",
         subtitle: "Salmo 123 (122)",
-        category: ["PreCatecumenado", "Cuaresma", "Penitencial"],
+        category: ["PreCatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         // propiedad para la velocidad de desplazamiento segun equipo
@@ -236,7 +236,7 @@ const allCantosData = [
         tt: "A ti, Señor, en mi clamor imploro",
         title: "A ti, Señor, en mi clamor imploro",
         subtitle: "Salmo 142 (141)",
-        category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
+        category: ["PreCatecumenado","Cuaresma","Penitencial"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "2",
         nCan: "",
@@ -306,7 +306,7 @@ const allCantosData = [
         tt: "A Ti, Señor, Levanto Mi Alma",
         title: "A Ti, Señor, Levanto Mi Alma",
         subtitle: "Salmo 25 (24)",
-        category: ["PreCatecumenado","Cuaresma","Antiguo Testamento"],
+        category: ["PreCatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
@@ -361,7 +361,7 @@ const allCantosData = [
         tt: "A Ti, Señor, Se Debe La Alabanza En Sión",
         title: "A Ti, Señor, Se Debe La Alabanza En Sión",
         subtitle: "Salmo 65 (64)",
-        category: ["PreCatecumenado","Penitencial"],
+        category: ["PreCatecumenado","Cuaresma","Penitencial"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
@@ -439,7 +439,7 @@ const allCantosData = [
         tt: "Abbá, Padre",
         title: "Abbá, Padre",
         subtitle: "Rm 8,15–17",
-        category: ["PreCatecumenado","Laudes", "Visperas","Comunión","Nuevo Testamento"],
+        category: ["PreCatecumenado","Entrada","Pascua","Pentecostés","Nuevo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -485,15 +485,15 @@ const allCantosData = [
     ], lder: []}, // ULTIMA LINEA DEL CANTO: ABBÁ, PADRE
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
+╔══════════════════════════════════════╗
 ║                ABRAHAM               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╚══════════════════════════════════════╝  */
    {
         id: "abraham",
         tt: "Abraham",
         title: "Abraham",
         subtitle: "Génesis 18,1–5 – Teofanía de Mambré",
-        category: ["PreCatecumenado","Laudes","Visperas","Entrada","Antiguo Testamento"],
+        category: ["PreCatecumenado","Entrada","Antiguo Testamento"],
         cejilla: "",
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         nCan: "",
@@ -556,7 +556,7 @@ const allCantosData = [
         tt: "Aclamad Al Señor",
         title: "Aclamad Al Señor",
         subtitle: "Salmo 100 (99)",
-        category: ["PreCatecumenado","Pascua"],
+        category: ["PreCatecumenado","Entrada","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "* Melisma",
@@ -629,7 +629,7 @@ const allCantosData = [
         tt: "Al Despertar",
         title: "Al Despertar",
         subtitle: "Salmo 17 (16) ",
-        category: ["PreCatecumenado","Cuaresma","Antiguo Testamento","Penitencial"],
+        category: ["PreCatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",   // Notas del canto
@@ -726,7 +726,7 @@ const allCantosData = [
         tt: "Alabad Al Señor En El Cielo",
         title: "Alabad Al Señor En El Cielo",
         subtitle: "Salmo 148 ",
-        category: ["PreCatecumenado","Niños","Navidad"],
+        category: ["PreCatecumenado","Salmodias","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -792,15 +792,15 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: ALABAD AL SEÑOR EN EL CIELO
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
+╔═════════════════════════════════════════════════════════════╗
 ║                ALEGRÍA, HA NACIDO EL SALVADOR               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╚═════════════════════════════════════════════════════════════╝  */
    {
         id: "alegriahanacidoelsalvador",
         tt: "Alegría, Ha Nacido El Salvador",
         title: "Alegría, Ha Nacido El Salvador",
         subtitle: "Villancico (Kiko Argüello)",
-        category: ["PreCatecumenado","Adviento","Navidad"],
+        category: ["PreCatecumenado","Niños","Adviento","Adviento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -904,7 +904,7 @@ const allCantosData = [
         tt: "Aleluya, Alabad Al Señor",
         title: "Aleluya, Alabad Al Señor",
         subtitle: "Salmo 150",
-        category: ["PreCatecumenado","Laudes","Visperas"],
+        category: ["PreCatecumenado","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -1211,7 +1211,7 @@ const allCantosData = [
         tt: "Amén, Amén, Amén",
         title: "Amén, Amén, Amén",
         subtitle: "Apocalipsis 7,12-14 ",
-        category: ["PreCatecumenado","Cuaresma","Laudes", "Visperas","Antiguo Testamento"],
+        category: ["PreCatecumenado","Cuaresma","Salmodias", "Visperas","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -1586,7 +1586,7 @@ const allCantosData = [
         tt: "Ave María II (1984)",
         title: "Ave María II",
         subtitle: "Lc 1,28ss - 1984 ",
-        category: ["PreCatecumenado","Cuaresma","Laudes","Visperas","Antiguo Testamento"],
+        category: ["PreCatecumenado","Cuaresma","Salmodias","Visperas","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -1819,7 +1819,7 @@ const allCantosData = [
         tt: "Bendeciré Al Señor En Todo Tiempo",
         title: "Bendeciré Al Señor En Todo Tiempo",
         subtitle: "Sal 34 (33)",
-        category: ["PreCatecumenado","Cuaresma","Laudes","Visperas"],
+        category: ["PreCatecumenado","Cuaresma","Salmodias","Visperas"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -1905,7 +1905,7 @@ const allCantosData = [
         tt: "Bendice, Alma Mía, A Yahveh",
         title: "Bendice, Alma Mía, A Yahveh",
         subtitle: "Sal 103 (102)",
-        category: ["PreCatecumenado","Pascua","Laudes","Visperas"],
+        category: ["PreCatecumenado","Pascua","Salmodias","Visperas"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -2034,7 +2034,7 @@ const allCantosData = [
         tt: "Bendito Eres, Señor",
         title: "Bendito Eres, Señor",
         subtitle: "Daniel 3,52-57",
-        category: ["PreCatecumenado","Laudes","Visperas"],
+        category: ["PreCatecumenado","Salmodias","Visperas"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -2210,7 +2210,7 @@ const allCantosData = [
         tt: "Benedictus",
         title: "Benedictus",
         subtitle: "Lucas 1,67-80",
-        category: ["PreCatecumenado","Antiguo Testamento","Laudes"],
+        category: ["PreCatecumenado","Antiguo Testamento","Salmodias"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -2348,7 +2348,7 @@ const allCantosData = [
         tt: "Cantad Al Señor",
         title: "Cantad Al Señor",
         subtitle: "Salmo 117 (116)",
-        category: ["PreCatecumenado","Laudes","Visperas","Entrada","Final"],
+        category: ["PreCatecumenado","Salmodias","Visperas","Entrada","Final"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "* Melisma",
@@ -2391,15 +2391,15 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: CANTAD AL SEÑOR
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
+╔══════════════════════════════════════════════════════════╗
 ║                CÁNTICO DE LOS TRES JÓVENES               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╚══════════════════════════════════════════════════════════╝  */
    {
         id: "canticodelostresjovenes",
         tt: "Cántico De Los Tres Jóvenes",
         title: "Cántico De Los Tres Jóvenes",
         subtitle: "Daniel 3,57-58",
-        category: ["PreCatecumenado","Laudes","Antiguo Testamento"],
+        category: ["PreCatecumenado","Salmodias","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",       //Nota del canto = nCan
@@ -2534,7 +2534,7 @@ const allCantosData = [
         tt: "Canto De Moisés",
         title: "Canto De Moisés",
         subtitle: "Éxodo 15,1-18",
-        category: ["PreCatecumenado","Pascua","Pentecostes"],
+        category: ["PreCatecumenado","Pascua","Pentecostés","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "Version 2",
@@ -2726,7 +2726,7 @@ const allCantosData = [
         tt: "Canto De Moisés",
         title: "Canto De Moisés",
         subtitle: "Éxodo 15,1-18",
-        category: ["PreCatecumenado","Pascua","Pentecostes"],
+        category: ["PreCatecumenado","Pascua","Pentecostés","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -2922,7 +2922,7 @@ const allCantosData = [
         tt: "Caritas Christi Urget Nos",
         title: "Caritas Christi Urget Nos",
         subtitle: "2ª Corintios 5,14.15.17.21",
-        category: ["PreCatecumenado","Cuaresma"],
+        category: ["PreCatecumenado","Cuaresma","Penitencial","Nuevo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -2991,7 +2991,7 @@ const allCantosData = [
         tt: "Carmen 63 - (Están Rotas Mis Ataduras )",
         title: "Carmen 63",
         subtitle: "(Rabindranath Tagore)*",
-        category: ["PreCatecumenado","Pascua","Pentecostes","Comunión","Final"],
+        category: ["PreCatecumenado","Comunión","Final","Pascua","Pentecostés"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "* La Cosecha, poema 74, Antes: Están rotas mis ataduras",
@@ -3135,7 +3135,7 @@ const allCantosData = [
         tt: "Cómo Es Maravilloso",
         title: "Cómo Es Maravilloso",
         subtitle: "Salmo 133 (132)",
-        category: ["PreCatecumenado","Paz"],
+        category: ["PreCatecumenado","Paz","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "* Puede intercalarse el estribillo en hebreo: HINNEH MAH TOV UMAH NA 'IYM, SHEVETH Af;IIYM GAM YAf;IADH",
@@ -3202,7 +3202,7 @@ const allCantosData = [
         tt: "Como La Cierva",
         title: "Como La Cierva",
         subtitle: "Salmo 42-43 (41-42)",
-        category: ["PreCatecumenado","Pascua","Comunión","Antiguo Testamento"],
+        category: ["PreCatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -3287,7 +3287,7 @@ const allCantosData = [
         tt: "Como Oveja Que Ve",
         title: "Como Oveja Que Ve",
         subtitle: "Kontáklon (Romano el Meloda)",
-        category: ["PreCatecumenado","Virgen Maria","Cuaresma","Pascua","Pentecostes","Fracción del Pan"],
+        category: ["PreCatecumenado","Virgen Maria","Fracción del pan","Cuaresma","Pascua","Pentecostés","Penitencial"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "2",
         nCan: "",
@@ -3362,7 +3362,7 @@ const allCantosData = [
         tt: "Consolad A Mi Pueblo",
         title: "Consolad A Mi Pueblo",
         subtitle: "Isaías 40,1-11 - Melodía hebraica ",
-        category: ["PreCatecumenado"],
+        category: ["PreCatecumenado","Entrada","Paz","Final","Adviento","Navidad","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -3414,7 +3414,7 @@ const allCantosData = [
         tt: "Cristo Es La Luz",
         title: "Cristo Es La Luz",
         subtitle: "Himno - Juan 8,12; 14,6",
-        category: ["PreCatecumenado","Pascua","Pentecostes"],
+        category: ["PreCatecumenado","Pascua","Pentecostés","Nuevo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -3473,7 +3473,7 @@ const allCantosData = [
         tt: "Cuando El Señor",
         title: "Cuando El Señor",
         subtitle: "Salmo 126 (125)",
-        category: ["PreCatecumenado","Cuaresma","Entrada"],
+        category: ["PreCatecumenado","Entrada","Cuaresma","Penitencial","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -3536,7 +3536,7 @@ const allCantosData = [
         tt: "Cuando Israel Salió De Egipto",
         title: "Cuando Israel Salió De Egipto",
         subtitle: "Salmo 114 (113)",
-        category: ["PreCatecumenado","Pascua","Paz"],
+        category: ["PreCatecumenado","Pascua","Pentecostés","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "* Se repite todo el canto en un tono más alto.",
@@ -3588,7 +3588,7 @@ const allCantosData = [
         tt: "Dayenú",
         title: "Dayenú",
         subtitle: "De la Hagadá de Pésaj hebrea",
-        category: ["PreCatecumenado","Pascua","Pentecostes","Paz"],
+        category: ["PreCatecumenado","Paz","Pascua","Pentecostés"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -3701,7 +3701,7 @@ const allCantosData = [
         tt: "Dayenú",
         title: "Dayenú",
         subtitle: "De la Hagadá de Pésaj hebrea",
-        category: ["PreCatecumenado","Pascua","Pentecostes","Paz"],
+        category: ["PreCatecumenado","Paz","Pascua","Pentecostés"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -3777,7 +3777,7 @@ const allCantosData = [
         tt: "De Profundis",
         title: "De Profundis",
         subtitle: "Salmo 130 (129)",
-        category: ["PreCatecumenado","Adviento","Virgen Maria","Antiguo Testamento"],
+        category: ["PreCatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
@@ -3834,6 +3834,72 @@ const allCantosData = [
             { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: DE PROFUNDIS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           DECIDLE A LOS DE CORAZÓN CANSADO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "decidlealosdecorazoncansado",
+        tt: "Decidle A Los De Corazón Cansado",
+        title: "Decidle A Los De Corazón Cansado",
+        subtitle: "Isaías 35,4ss",
+        category: ["PreCatecumenado","Entrada","Adviento","Navidad","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "48",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/decidlealosdecorazoncansado.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=deprofundis",
+        sig: "/resucito/src/index.html?canto=delantedelosangeles",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Decidle a los de corazón cansado,, (La,m,15)(Re,m9,286)", sC: "tc"},
+            { line: "decídselo, decídselo a los pobres:, (La,m,267)", sC: ""},
+            { line: "«¡Ánimo, no temáis!, (Fa,,75)(Mi,,155)", sC: ""},
+            { line: "que vuestro Dios viene a salvaros»., (Fa,,144)(Mi,,283)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ya se abren los ojos de los ciegos,, (La,m,19)(Re,m9,280)", sC: ""},
+            { line: "se abren los oídos de los sordos., (La,m,258)", sC: ""},
+            { line: "El cojo salta como un ciervo,, (Fa,,62)(Mi,,230)", sC: ""},
+            { line: "grita de júbilo la lengua del mudo., (Fa,,88)(Mi,,287)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PORQUE SE ABRIRÁ UN CAMINO,, (Do,,10)(Mi,m,180)(Do,,282)", sC: "ta as"},
+            { line: "UN CAMINO DE SALVACIÓN;, (Mi,m,81)(La,m,236)", sC: "as"},
+            { line: "UNA SENDA, UNA VÍA, (Do,,77)(Mi,m,191)", sC: "as"},
+            { line: "PARA LOS POBRES., (La,m,123)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y por ella retornarán, (Mi,m,70)", sC: "tc"},
+            { line: "los rescatados del Señor., (La,m,98)", sC: ""},
+            { line: "Y POR ELLA RETORNARÁN, (Mi,m,81)", sC: "ta as"},
+            { line: "LOS RESCATADOS DEL SEÑOR., (La,m,127)", sC: "as"},
+    ], lder: [
+            { line: "Todos los pobres, ciegos y cojos,, (Mi,m,109)", sC: "tc"},
+            { line: "los alejados del Señor., (La,m,75)", sC: ""},
+            { line: "TODOS LOS POBRES, CIEGOS Y COJOS,, (Mi,m,136)", sC: "ta as"},
+            { line: "LOS ALEJADOS DEL SEÑOR., (La,m,101)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Los pecadores!, (Mi,m,108)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y CANTARÁN FELICIDAD,, (Fa,,100)(Mi,,206)", sC: "ta as"},
+            { line: "Y CANTARÁN FELICIDAD., (Fa,,100)(Mi,,206)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA, ALELUYA., (Fa,,100)(Mi,,174)", sC: "as"},
+            { line: "ALELUYA, ALELUYA., (Fa,,100)(Mi,,174)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA, ALELUYA., (Fa,,100)(Mi,,174)", sC: "as"},
+            { line: "ALELUYA, ALELUY, (Fa,,100)(Mi,,174)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: DECIDLE A LOS DE CORAZÓN CANSADO
+// SIGUIENTE CANTO DEBAJO
+
 
 
 
