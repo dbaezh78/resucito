@@ -3899,6 +3899,97 @@ const allCantosData = [
             { line: "ALELUYA, ALELUY, (Fa,,100)(Mi,,174)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: DECIDLE A LOS DE CORAZÓN CANSADO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           DELANTE DE LOS ÁNGELES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "delantedelosangeles",
+        tt: "Delante De Los Ángeles",
+        title: "Delante De Los Ángeles",
+        subtitle: "Salmo 138 (137)",
+        category: ["PreCatecumenado","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "49",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/delantedelosangeles.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=decidlealosdecorazoncansado",
+        sig: "/resucito/src/index.html?canto=diadereposo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)", sC: "ta as"},
+            { line: "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)", sC: "as"},
+            { line: "DELANTE DE LOS ÁNGELES, (Sol,,47)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Mi,,210)", sC: "as"},
+            { line: "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Fa,,69)(Mi,,209)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Te doy gracias, Señor, de todo corazón,, (Do,,12)(Mi,,190)(Re,m9,345)", sC: "tc"},
+            { line: "porque tus promesas han superado tu fama., (Sol,,159)(Mi,,380)", sC: ""},
+            { line: "Cuando te invoqué, tú me escuchaste,, (Re,m9,323)", sC: ""},
+            { line: "diste fuerza y vigor a mi alma., (Fa,,80)(Mi,,241)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)", sC: "ta as", lines: [
+            { line: "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)", sC: "as"},
+            { line: "DELANTE DE LOS ÁNGELES, (Sol,,47)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Mi,,210)", sC: "as"},
+            { line: "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Te darán gracias, Señor,, (Do,,11)(Mi,,212)", sC: "tc"},
+            { line: "los reyes de la tierra,, (Re,m9,164)", sC: ""},
+            { line: "al escuchar las palabras de tu boca;, (Sol,,95)(Mi,,312)", sC: ""},
+            { line: "y cantarán en el camino del Señor,, (Re,m9,312)", sC: ""},
+            { line: "dirán: «¡Qué grande es tu amor!»., (Fa,,32)(Mi,,282)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)", sC: "ta as", lines: [
+            { line: "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)", sC: "as"},
+            { line: "DELANTE DE LOS ÁNGELES, (Sol,,47)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Mi,,210)", sC: "as"},
+            { line: "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Sublime es el Señor,, (Do,,10)(Mi,,177)", sC: "tc"},
+            { line: "que mira hacia el humilde,, (Re,m9,213)", sC: ""},
+            { line: "conoce al soberbio, le mira desde lejos., (Sol,,34)(Mi,,337)", sC: ""},
+            { line: "Mas cuando yo camino, ", sC: ""},
+            { line: "en medio de la angustia,, (Re,m9,193)", sC: ""},
+            { line: "extiende su mano y su diestra me salva., (Fa,,11)(Mi,,342)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)", sC: "ta as", lines: [
+            { line: "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)", sC: "as"},
+            { line: "DELANTE DE LOS ÁNGELES, (Sol,,47)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Mi,,210)", sC: "as"},
+            { line: "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Señor terminará en mí lo comenzado,, (Do,,12)(Mi,,231)(Re,m9,346)", sC: "tc"},
+            { line: "porque es eterno su amor., (Sol,,13)(Mi,,230)", sC: ""},
+            { line: "No abandona la obra de sus manos., (Re,m9,295)", sC: ""},
+            { line: "¡Señor, no nos abandones!, (Fa,,20)(Mi,,206)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "DELANTE DE LOS ÁNGELES, (Do,,15)(Mi,,181)", sC: "ta as", lines: [
+            { line: "PARA TI YO CANTARÉ, SEÑOR., (Re,m9,191)", sC: "as"},
+            { line: "DELANTE DE LOS ÁNGELES, (Sol,,47)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Mi,,210)", sC: "as"},
+            { line: "DARÉ GRACIAS A TU NOMBRE,, (Re,m9,227)", sC: "as"},
+            { line: "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: DELANTE DE LOS ÁNGELES
+// SIGUIENTE CANTO DEBAJO
 
 
 
@@ -4269,10 +4360,10 @@ const allCantosData = [
             { line: "para destruir la muerte, (Fa,,15)", sC: "as"},
             { line: "y manifestar la resurrección,, (Mi,,247)", sC: "as"},
             { line: "extendió sus brazos en la cruz,, (La,m,74)(Sol,,269)", sC: ""},
-            { line: "y así adquirió para ti, (Fa,7,197)", sC: ""},
+            { line: "y así adquirió para ti, (Fa,,197)", sC: ""},
             { line: "un pueblo santo., (Mi,7,116)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "MURIENDO, (Sol,,11)", sC: "pa as r1"},
+            { line: "MURIENDO, (La,,11)", sC: "pa as r1"},
             { line: "DESTRUYÓ NUESTRA MUERTE,, (Sol,,243)", sC: "as"},
             { line: "RESUCITANDO, (Fa,,91)", sC: "as"},
             { line: "RESTAURÓ NUESTRA VIDA., (Mi,,223)", sC: "as"},
