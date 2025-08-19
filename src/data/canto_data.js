@@ -11,7 +11,7 @@ const allCantosData = [
         tt: "A la Víctima Pascual",
         title: "A la Víctima Pascual",
         subtitle: "Secuencia de Pascua - Himno lat. «Victimae paschall laudes»",
-        category: ["PreCatecumenado","Pascua","Pentecostés"],
+        category: ["PreCatecumenado","Pascua","Pentecostés","Comunión"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "5",
         nCan: "", //Nota del canto = nCan
@@ -1536,7 +1536,7 @@ const allCantosData = [
         tt: "Ave María I",
         title: "Ave María I",
         subtitle: "Lc 1,28ss",
-        category: ["PreCatecumenado","Virgen","Final","Nuevo Testamento"],
+        category: ["PreCatecumenado","Virgen Maria","Final","Nuevo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -1554,7 +1554,7 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=avemariaii(1984)",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Ave María,(Do,,10)(Mi,,77)(La,m,110)", sC: ""},
+            { line: "Ave María,(Do,,10)(Mi,,77)(La,m,110)", sC: "tc"},
             { line: "llena de gracia,(Do,,10)(Mi,,105)(La,m,142)", sC: ""},
             { line: "el Señor es contigo,(Fa,,10)(Mi,,155)", sC: ""},
             { line: "bendita tú eres, (La,m,121)", sC: ""},
@@ -3990,6 +3990,206 @@ const allCantosData = [
             { line: "PARA TI SALMODIARÉ., (Fa,,15)(Mi,,209)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: DELANTE DE LOS ÁNGELES
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           DÍA DE REPOSO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "diadereposo",
+        tt: "Día De Reposo",
+        title: "Día De Reposo",
+        subtitle: "Juan 8,52",
+        category: ["Precatecumenado","Final","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "50",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/diadereposo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=delantedelosangeles",
+        sig: "/resucito/src/index.html?canto=diceelsenoramisenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Si alguno guarda mi Palabra, (Mi,m,15)(La,m,131)(Mi,m,237)", sC: "tc"},
+            { line: "no gustará la muerte, ¡no!, ", sC: ""},
+            { line: "TÚ ERES ÚNICO, EL ÚNICO CON ALEGRÍA., (Mi,m,19)(La,m,203)(Mi,m,374)", sC: "ta as"},
+            { line: "¿QUIÉN ES COMO EL SEÑOR?, ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Corona de salvación,, (Mi,m,21)(La,m,63)(Mi,m,107)", sC: "tc"},
+            { line: "MEMORIAL DE ALEGRÍA., (La,m,21)(Mi,m,92)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DÍA DE REPOSO Y DE SANTIDAD, (Mi,m,20)(La,m,171)", sC: "ta as"},
+            { line: "HAS DADO A TU PUEBLO. (Mi,m,70)", sC: "as r1"},
+            { line: "DÍA DE REPOSO Y DE SANTIDAD (La,m,175), ", sC: "as"},
+            { line: "HAS DADO A TU PUEBLO., (Mi,m,68)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Abraham vio este día, (Mi,m,15)(La,m,65)(Mi,m,112)", sC: "tc"},
+            { line: "Y EN ISAAC SE ALEGRÓ., (La,m,15)(Mi,m,94)", sC: "ta as"},
+            { line: "Jacob y sus hijos en él descansaron., (La,m,67)(Mi,m,203)", sC: "tc"},
+            { line: "JACOB Y SUS HIJOS EN ÉL DESCANSARON., (La,m,80)(Mi,m,236)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "DÍA DE REPOSO Y DE SANTIDAD, (Mi,m,20)(La,m,171)", sC: "ta as", lines: [
+            { line: "HAS DADO A TU PUEBLO., (Mi,m,70)", sC: "as r1"},
+            { line: "DÍA DE REPOSO Y DE SANTIDAD, (La,m,175) ", sC: "as"},
+            { line: "HAS DADO A TU PUEBLO., (Mi,m,68)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: DÍA DE REPOSO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           DICE EL SEÑOR A MI SEÑOR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "diceelsenoramisenor",
+        tt: "Dice El Señor A Mi Señor",
+        title: "Dice El Señor A Mi Señor",
+        subtitle: "Salmo 110 (109)",
+        category: ["Precatecumenado","Pascua","Pentecostés","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "51",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/diceelsenoramisenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=diadereposo",
+        sig: "/resucito/src/index.html?canto=dichosoelhombre",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "DICE EL SEÑOR A MI SEÑOR:, (Mi,,10)", sC: "ta as"},
+            { line: "«SIÉNTATE A MI DERECHA,, (Sol#,,39)", sC: "as"},
+            { line: "HASTA QUE PONGA A TUS ENEMIGOS, (La,,21)", sC: "as"},
+            { line: "COMO ESCABEL DE TUS PIES;, (Mi,,10)", sC: "as"},
+            { line: "DEBAJO DE TUS PIES,, (Si,7,47)(Mi,,184)", sC: "as"},
+            { line: "DEBAJO DE TUS PIES»., (Si,7,49)(Mi,,186)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El cetro de tu poder, (Do#,m,27)(Sol#,,173)", sC: "tc"},
+            { line: "extiende el Señor desde Sión:, (Si,,10)(Sol#,,266)", sC: ""},
+            { line: "¡domina en medio de tus enemigos,, (La,,10)(Mi,,301)", sC: ""},
+            { line: "domina en medio de tus enemigos!, (Si,7,15)(Mi,,295)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«Desde el seno de la aurora, (Do#,m,31)(Sol#,,243)", sC: ""},
+            { line: "como rocío yo te he engendrado;, (Si,,10)(Sol#,,280)", sC: ""},
+            { line: "desde antes de la aurora, (La,,10)(Mi,,209)", sC: ""},
+            { line: "como rocío yo te he engendrado»., (Si,7,15)(Mi,,277)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "DICE EL SEÑOR A MI SEÑOR:, (Mi,,10)", sC: "ta as", lines: [
+            { line: "«SIÉNTATE A MI DERECHA,, (Sol#,,39)", sC: "as"},
+            { line: "HASTA QUE PONGA A TUS ENEMIGOS, (La,,21)", sC: "as"},
+            { line: "COMO ESCABEL DE TUS PIES;, (Mi,,10)", sC: "as"},
+            { line: "DEBAJO DE TUS PIES,, (Si,7,47)(Mi,,184)", sC: "as"},
+            { line: "DEBAJO DE TUS PIES»., (Si,7,49)(Mi,,186)", sC: "as"},  ]},
+    ], lder: [
+            { line: "El Señor ha jurado y no se arrepiente:, (Do#,m,26)(Sol#,,323)", sC: "tc"},
+            { line: "Tú eres sacerdote para siempre,, (Si,,10)(Sol#,,255)", sC: ""},
+            { line: "a semejanza de Melquisedec,, (La,,12)(Mi,,218)", sC: ""},
+            { line: "a semejanza de Melquisedec»., (Si,7,15)(Mi,,220)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque el Señor está a tu derecha,, (Do#,m,25)(Sol#,,291)", sC: ""},
+            { line: "destruirá tus enemigos,, (Si,,10)(Sol#,,182)", sC: ""},
+            { line: "tú juzgarás los pueblos,, (La,,10)(Mi,,170)", sC: ""},
+            { line: "sentenciarás a las naciones., (Si,7,15)(Mi,,227)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En el camino bebe del torrente,, (Do#,m,27)(Sol#,,250)", sC: ""},
+            { line: "y levanta la cabeza,, (Si,,7)(Sol#,,156)", sC: ""},
+            { line: "levanta la cabeza,, (La,,10)(Mi,,136)", sC: ""},
+            { line: "levanta la cabeza., (Si,7,15)(Mi,,135)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "DICE EL SEÑOR A MI SEÑOR:, (Mi,,10)", sC: "ta as", lines: [
+            { line: "«SIÉNTATE A MI DERECHA,, (Sol#,,39)", sC: "as"},
+            { line: "HASTA QUE PONGA A TUS ENEMIGOS, (La,,21)", sC: "as"},
+            { line: "COMO ESCABEL DE TUS PIES;, (Mi,,10)", sC: "as"},
+            { line: "DEBAJO DE TUS PIES,, (Si,7,47)(Mi,,184)", sC: "as"},
+            { line: "DEBAJO DE TUS PIES»., (Si,7,49)(Mi,,186)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: DICE EL SEÑOR A MI SEÑOR
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           DICHOSO EL HOMBRE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "dichosoelhombre",
+        tt: "Dichoso El Hombre",
+        title: "Dichoso El Hombre",
+        subtitle: "Salmo 1",
+        category: ["Precatecumenado","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "52",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/dichosoelhombre.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=diceelsenoramisenor",
+        sig: "/resucito/src/index.html?canto=elcombateescatologico",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "DICHOSO EL HOMBRE, (La,m,22)(Fa,,218)", sC: "ta as"},
+            { line: "QUE NO SIGUE EL CONSEJO DE LOS IMPÍOS,, (La,m,361)(Fa,,422)", sC: "as"},
+            { line: "NI EN LA SENDA DE LOS PECADORES SE DETIENE,, (La,m,439)", sC: "as"},
+            { line: "NI EN EL BANCO DE LOS BURLONES SE SIENTA., (Fa,,105)(La,m,400)", sC: "as"},
+            { line: "Mas se complace en la palabra del Señor,, (Sol,,13)(Mi,,376)", sC: "tc"},
+            { line: "sus salmos susurra día y noche., (Sol,,48)(Fa,,148)(Mi,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Será como árbol plantado, (La,m,22)(Fa,,212)", sC: ""},
+            { line: "junto a corrientes de agua., (La,m,215)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SERÁ COMO ÁRBOL PLANTADO, (Fa,,261)", sC: "ta as"},
+            { line: "JUNTO A CORRIENTES DE AGUA,, (La,m,257)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "que da fruto a su tiempo,, (Fa,,89)(Mi,,183)", sC: "tc"},
+            { line: "nunca se marchitarán sus hojas;, (Fa,,11)(Mi,,262)", sC: ""},
+            { line: "todo lo que emprende le sale bien,, (Sol,,12)(Fa,,164)(Mi,,302)", sC: ""},
+            { line: "todo lo que emprende le sale bien., (Sol,,13)(Fa,,164)(Mi,,302)", sC: ""},
+    ], lder: [
+            { line: "¡No así los impíos, no así!, (La,m,25)", sC: "tc"},
+            { line: "Que son como la paja, (Fa,,58)", sC: ""},
+            { line: "que se lleva el viento., (La,m,157)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡NO ASÍ LOS IMPÍOS, NO ASÍ!, (La,m,25)", sC: "ta as"},
+            { line: "QUE SON COMO LA PAJA, (Fa,,63)", sC: "as"},
+            { line: "QUE SE LLEVA EL VIENTO., (La,m,200)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "No resistirán en el juicio los impíos,, (Fa,,10)(Mi,,303)", sC: "tc"},
+            { line: "ni los pecadores, (Fa,,120)", sC: ""},
+            { line: "en la comunidad de los santos., (Mi,,233)", sC: ""},
+            { line: "Porque el Señor cuida, (Sol,,14)", sC: ""},
+            { line: "el camino de sus fieles,, (Fa,,65)(Mi,,181)", sC: ""},
+            { line: "mas el camino de los impíos, (Fa,,111)", sC: ""},
+            { line: "acaba mal, acaba mal, acaba mal., (Mi,,84)(Fa,,133)(Mi,,305)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "DICHOSO EL HOMBRE, (La,m,22)(Fa,,218)", sC: "ta as", lines: [
+            { line: "QUE NO SIGUE EL CONSEJO DE LOS IMPÍOS,, (La,m,361)(Fa,,422)", sC: "as"},
+            { line: "NI EN LA SENDA DE LOS PECADORES SE DETIENE,, (La,m,439)", sC: "as"},
+            { line: "NI EN EL BANCO DE LOS BURLONES SE SIENTA., (Fa,,104)(La,m,400)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: DICHOSO EL HOMBRE
+// SIGUIENTE CANTO DEBAJO
 
 
 
@@ -4312,8 +4512,8 @@ const allCantosData = [
 ╚═════════════════════════════════════════════════╝  */
    {
         id: "plegariaeucaristicaiimodeloip1",
-        tt: "Plegaria Eucarística Ii",
-        title: "Plegaria Eucarística Ii",
+        tt: "Plegaria Eucarística II",
+        title: "Plegaria Eucarística II",
         subtitle: "Modelo I",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
