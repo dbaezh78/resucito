@@ -4802,33 +4802,31 @@ const allCantosData = [
             { line: "RESTAURÓ NUESTRA VIDA., (Mi,,223)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Por eso, con los ángeles y los santos,, (La ,m,15)(Sol,,297)", sC: "pa"},
-            { line: "cantamos tu gloria diciendo:, (La ,m,220)", sC: ""},
+            { line: "cantamos tu gloria diciendo:, (La ,m,220)", sC: "sp5"},
 
-            { line: "SANTO, SANTO, SANTO...", sC: "sp5"},
+            { line: "SANTO, SANTO, SANTO...", sC: ""},
+//      SALMOS
 
-            //************************************ */
-            //      SANTO, SANTO, SANTO...
-            //************************************ */
+            { type: "collapsible-block", id: "salmo_Palomera65", initialState: "collapsed",
+       triggerLine: "SANTO Palomera 65", sC: "Santo", color: "red", lines: [
 
-// SANTO PALOMERA 65 - COMPLETADO
-            { type: "collapsible-block", id: "santopalomeras65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
             { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
-
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Llenos están los cielos, (Do,,11)", sC: "tc"},
             { line: "y la tierra de tu gloria., (Si,7,178)", sC: ""},
             { line: "Hosanna, hosanna, hosanna,, (Do,,11)", sC: ""},
             { line: "hosanna en las alturas., (Si7,,180)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as", lines: [
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
-            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
-
+            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},  ]},
+    
             { line: "Bendito es el que viene, (Mi,m,15)", sC: "tc"},
             { line: "en nombre del Señor,, (Si,7,15)", sC: ""},
             { line: "bendito es el que viene, ", sC: ""},
@@ -4839,79 +4837,37 @@ const allCantosData = [
             { line: "BENDITO ES EL QUE VIENE, ", sC: "as"},
             { line: "EN NOMBRE DEL SEÑOR., (Mi,,215)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            
-            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as", lines: [
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
-            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
-]}, // ULTIMA LINEA DEL CANTO: SANTO PALOMERAS 65 
+            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},  ]},
+        ]}, // ULTIMA LINEA DEL CANTO: SANTO PALOMERAS 65 
 
 
-// SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "SANTOMelodíahebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
-            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
+        ]},
+
+            { type: "collapsible-block", id: "salmo_1988", initialState: "collapsed",
+       triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+
+
+/*
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
-            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
-
-            { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Re,m,23)", sC: "ta as"},
-            { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)", sC: "as"},
-            { line: "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Los cielos y la tierra, (Re,m,20)(Sol,m,110)(Re,m,164)", sC: "tc"},
-            { line: "están llenos de Ti., (Sol,m,24)(Re,m,163)", sC: ""},
-            { line: "LOS CIELOS Y LA TIERRA, (Sol,m,129)(Re,m,189)", sC: "ta as"},
-            { line: "ESTÁN LLENOS DE TI., (Sol,m,23)(Re,m,197)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Hosanna en el cielo,, (Sol,m,104)(Re,m,165)", sC: "tc"},
-            { line: "hosanna., (Sol,m,21)(Re,m,75)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "HOSANNA EN EL CIELO,, (Sol,m,122)(Re,m,187)", sC: "ta as"},
-            { line: "HOSANNA., (Sol,m,21)(Re,m,90)", sC: "as"},
-
-            { line: "SANTO, ES SANTO, SANTO, ES SANTO..., (Re,m,23)", sC: "ta as"},
-            { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)", sC: "as"},
-            { line: "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Bendito el que viene,, (Re,m,21)(Sol,m,97)(Re,m,162)", sC: "tc"},
-            { line: "en el nombre del Señor., (Sol,m,22)(Re,m,210)", sC: ""},
-            { line: "A BENDITO EL QUE VIENE,, (Re,m,20)(Sol,m,123)(Re,m,208)", sC: "ta as"},
-            { line: "EN EL NOMBRE DEL SEÑOR., (Sol,m,24)(Re,m,242)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Hosanna en el cielo,, (Sol,m,104)(Re,m,165)", sC: "tc"},
-            { line: "hosanna., (Sol,m,22)(Re,m,75)", sC: ""},
-            { line: "HOSANNA EN EL CIELO,, (Sol,m,126)(Re,m,190)", sC: "ta as"},
-            { line: "HOSANNA., (Sol,m,22)(Re,m,89)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "SANTO, ES SANTO, SANTO, ES SANTO..., (Re,m,23)", sC: "ta as"},
-            { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)", sC: "as"},
-            { line: "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)", sC: "as"},
+            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},  ]},
 
 
-]}, // ULTIMA LINEA DEL CANTO: // SANTO Melodía hebraica
+//
 
-// SANTO Palestina 74 - PENDIENTE
-            { type: "collapsible-block", id: "SANTOPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
-            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
-            { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
-            { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
-            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
+            // PROCLAMACIÓN DEL SANTO
 
-]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
+                { line: "SANTO 1988", sC: "center", color: "#770000ff"},
 
-// SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
-            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
-            { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
-            { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
-            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
+                { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
+*/
 
-// SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
-            { line: "", sC: ""}, // Espacio Generado para separar contenido
+                { line: "", sC: "sp5"}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO,SANTO,SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -4939,13 +4895,11 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (Fa,,14)(Mi,,143)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Fa,,13)(Mi,,163)", sC: "ta as"},
-]}, // SANTO 1988
 
-
-
-
+            ]},
 
 // FIN PROCLAMACIÓN DEL SANTO
+
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "TRANSICIÓN, ", sC: "sp1", color: "#9D9580"},
             

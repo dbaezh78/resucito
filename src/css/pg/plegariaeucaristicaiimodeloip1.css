@@ -66,3 +66,7 @@
 .red {
     color: red !important;
 }
+
+.put {
+    cursor: pointer;
+}
