@@ -671,13 +671,13 @@ display: none;}
 .pa::before {content: "P.";}
 
 
-.r1, .r2 {
+.r1, .r2, .r11 {
     position: relative;
     min-height: 0px;
 }
 
 /* Las propiedades comunes que no dependen de media queries van aquí */
-.r1::before, .r2::before {
+.r1::before, .r2::before, .r11::before {
     content: " BIS A."; /* Movido aquí */
     position: absolute; /* Movido aquí */
     align-content: center; /* Movido aquí */

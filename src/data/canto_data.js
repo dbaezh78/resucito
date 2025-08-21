@@ -4737,7 +4737,22 @@ const allCantosData = [
 // SIGUIENTE CANTO DEBAJO
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //***************************************************** */
+// Plegaria Completa
 // Plegaria Eucaristica solo para Tablet y Celulares
 /*
 ╔═════════════════════════════════════════════════╗
@@ -4892,13 +4907,90 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO Melodía hebraica
 
 // SANTO Palestina 74 - PENDIENTE
+
             { type: "collapsible-block", id: "SANTOPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
-            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
-            { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
-            { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
-            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
+            { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
+            { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
+            { line: "SANTO ES EL SEÑOR., (Sol,m,22)(La,,175)", sC: "as"},
+            { line: "YAHVEH SEBAOTH,, (Sol,m,22)(La,,144)", sC: "as"},
+            { line: "YAHVEH SEBAOTH., (Sol,m,21)(La,,143)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos, (Re,m,21)(Sol,m,74)", sC: "tc"},
+            { line: "y la tierra, (Re,m,58)", sC: ""},
+            { line: "están llenos,, (Sol,m,77)", sC: ""},
+            { line: "están llenos de Ti., (La,,160)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (Re,m,20)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,, (Sol,m,52)(La,,293)", sC: "as"},
+            { line: "HOSANNA, HOSANNA., (Sol,m,49)(La,,209)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Bendito, (Re,m,21)(Sol,m,72)", sC: "tc"},
+            { line: "es el que viene,, (Re,m,111)", sC: ""},
+            { line: "en el nombre,, (Sol,m,65)", sC: ""},
+            { line: "en el nombre del Señor., (La,,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (Re,m,20)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
+
+
+// SANTO Roma 77 - PENDIENTE
+            { type: "collapsible-block", id: "SANTORoma77", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            
+            { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos y la tierra, (La,m,21)(Sol,,63)(La,m,158)", sC: "tc"},
+            { line: "están llenos, están llenos de Ti., (Sol,,75)(La,m,287)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO. (Fa,,71)(Mi,,188)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO. (La,m,185)", sC: "as"},
+            
+            { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Bendito es el que viene,, (La,m,18)(Sol,,55)(La,m,189)", sC: "tc"},
+            { line: "en el nombre, en el nombre del Señor., (Sol,,67)(La,m,346)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (La,m,185)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
+
+]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
             { type: "collapsible-block", id: "SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
@@ -4913,7 +5005,7 @@ const allCantosData = [
             { type: "collapsible-block", id: "salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
-            { line: "SANTO,SANTO,SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Los cielos y la tierra, (La,m,19)(Sol,,150)", sC: "tc"},
             { line: "están llenos de tu Gloria., (La,m,15)", sC: ""},
@@ -4946,6 +5038,8 @@ const allCantosData = [
 
 
 // FIN PROCLAMACIÓN DEL SANTO
+
+
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "TRANSICIÓN, ", sC: "sp1", color: "#9D9580"},
             
@@ -5190,7 +5284,135 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: SANTO MELODÍA HEBRAICA
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           SANTO PALESTINA 74               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "santopalestina74",
+        tt: "Santo Palestina 74",
+        title: "Santo",
+        subtitle: "Palestina 74",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "216",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/santopalestina74.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=santomelodiahebraica",
+        sig: "/resucito/src/index.html?canto=santoroma77",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
+            { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
+            { line: "SANTO ES EL SEÑOR., (Sol,m,22)(La,,175)", sC: "as"},
+            { line: "YAHVEH SEBAOTH,, (Sol,m,22)(La,,144)", sC: "as"},
+            { line: "YAHVEH SEBAOTH., (Sol,m,21)(La,,143)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos, (Re,m,21)(Sol,m,74)", sC: "tc"},
+            { line: "y la tierra, (Re,m,58)", sC: ""},
+            { line: "están llenos,, (Sol,m,77)", sC: ""},
+            { line: "están llenos de Ti., (La,,160)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (Re,m,20)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,, (Sol,m,52)(La,,293)", sC: "as"},
+            { line: "HOSANNA, HOSANNA., (Sol,m,49)(La,,209)", sC: "as"},
+    ], lder: [
+            { line: "Bendito, (Re,m,21)(Sol,m,72)", sC: "tc"},
+            { line: "es el que viene,, (Re,m,111)", sC: ""},
+            { line: "en el nombre,, (Sol,m,65)", sC: ""},
+            { line: "en el nombre del Señor., (La,,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "HOSANNA, HOSANNA,, (Re,m,20)", sC: "ta as", lines: [
+            { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: SANTO PALESTINA 74
+// SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           SANTO ROMA 77               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "santoroma77",
+        tt: "Santo Roma 77",
+        title: "Santo Roma 77",
+        subtitle: "Roma 77",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "217",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/santoroma77.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=santopalestina74",
+        sig: "/resucito/src/index.html?canto=santo1982",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos y la tierra, (La,m,21)(Sol,,63)(La,m,158)", sC: "tc"},
+            { line: "están llenos, están llenos de Ti., (Sol,,75)(La,m,287)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO. (Fa,,71)(Mi,,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO. (La,m,185)", sC: "as"},
+    ], lder: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as", lines: [
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r1"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Bendito es el que viene,, (La,m,18)(Sol,,55)(La,m,189)", sC: "tc"},
+            { line: "en el nombre, en el nombre del Señor., (Sol,,67)(La,m,346)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "ta as", lines: [
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (La,m,185)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as", lines: [
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r1"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: SANTO ROMA 77
+// SIGUIENTE CANTO DEBAJO
 
 
 
@@ -5223,7 +5445,7 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
-            { line: "SANTO,SANTO,SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Los cielos y la tierra, (La,m,19)(Sol,,150)", sC: "tc"},
             { line: "están llenos de tu Gloria., (La,m,15)", sC: ""},
