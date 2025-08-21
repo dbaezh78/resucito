@@ -1,0 +1,14 @@
+/* .container {margin-left: 8%;}*/
+
+.ptop0 {
+    @media (min-width: 992px) {
+        height: 0px;
+        margin-top: -8px;
+    }
+}
+
+.ptop1 {
+    @media (min-width: 992px) {
+        height: -38px;
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    @media (min-width: 384px) {
+        margin-left: 0%;
+    }
+    @media (min-width: 768px) {
+        margin-left: 0%;
+        
+    }
+    @media (min-width: 992px) {
+        margin-left: 3%;
+
+    }
+}
+
+.r1::before {
+        @media (min-width: 384px) {
+        margin-top: -11%;
+        height: 139px;
+        margin-left: 302px;
+        border-left: 2px solid #c6c5c575;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+        height: 217px;
+        margin-left: 620px;
+        margin-top: -10%;
+        border-left: 2px solid #c6c5c575;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.3rem;
+        font-weight: bold;
+        height: 160px;
+        margin-left: 491px;
+        margin-top: -5%;
+        border-left: 2px solid #c6c5c575;
+    }
+}

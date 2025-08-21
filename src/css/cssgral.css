@@ -162,7 +162,8 @@ display: none;}
 }
 @media(min-width: 768px){
     .main-wrapper {
-        width: 98%;
+        /*width: 98%;*/
+        width: -webkit-fill-available;
         padding: 0px;
         align-items: center;
         margin-left: 1px;
