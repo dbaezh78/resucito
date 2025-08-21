@@ -4775,13 +4775,14 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 5, incremento: 1 },  // Para tablet
+            tablet: { velocidad: 4.5, incremento: 0.4 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=padrenuestro",
         sig: "/resucito/src/index.html?canto=plegariaeucaristicaiimodeloip2",
 // Contenido del lado izquierdo del canto,
     lizq: [
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PREFACIO", sC: "sp1", color: "#9D9580"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "El Señor esté con vosotros., (Sol,,11)(La,m,211)", sC: "pa"},
