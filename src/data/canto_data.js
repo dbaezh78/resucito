@@ -4994,10 +4994,35 @@ const allCantosData = [
 
 // SANTO 1982 - PENDIENTE
             { type: "collapsible-block", id: "SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
-            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
-            { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
-            { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
-            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
+
+            { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
+            { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
+            { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "as"},
+            { line: "ES EL SEÑOR,, (Sol,,10)(La,m,106)", sC: "as"},
+            { line: "DIOS DEL UNIVERSO., (Sol,,27)(La,m,150)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos y la tierra, (Fa,,13)(Mi,,157)", sC: "tc"},
+            { line: "están llenos de tu Gloria., (Fa,,76)(Mi,,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "ta as"},
+            { line: "HOSANNA,HOSANNA, (Re,m,22)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "as"},
+            { line: "HOSANNA,HOSANNA, (Re,m,21)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,72)(Mi,,188)", sC: "as"},
+
+            { line: "Bendito es el que viene, (La,m,21)", sC: "tc"},
+            { line: "en el nombre del Señor,, (Re,m,72)(Mi,,211)", sC: ""},
+            { line: "en el nombre del Señor., (Re,m,72)(Mi,,211)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA, (La,m,19)", sC: "ta as"},
+            { line: "HOSANNA,HOSANNA, (Rem,,22)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "as"},
+            { line: "HOSANNA,HOSANNA, (Rem,,21)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,72)(Mi,,188)", sC: "as"},
 
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
@@ -5414,6 +5439,65 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: SANTO ROMA 77
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           SANTO 1982               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "santo1982",
+        tt: "Santo 1982",
+        title: "Santo",
+        subtitle: "1982",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "218",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/santo1982.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=santoroma77",
+        sig: "/resucito/src/index.html?canto=santo1988",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
+            { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
+            { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "as"},
+            { line: "ES EL SEÑOR,, (Sol,,10)(La,m,106)", sC: "as"},
+            { line: "DIOS DEL UNIVERSO., (Sol,,27)(La,m,150)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos y la tierra, (Fa,,13)(Mi,,157)", sC: "tc"},
+            { line: "están llenos de tu Gloria., (Fa,,76)(Mi,,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "ta as"},
+            { line: "HOSANNA,HOSANNA, (Re,m,22)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "as"},
+            { line: "HOSANNA,HOSANNA, (Re,m,21)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,72)(Mi,,188)", sC: "as"},
+    ], lder: [
+            { line: "Bendito es el que viene, (La,m,21)", sC: "tc"},
+            { line: "en el nombre del Señor,, (Re,m,72)(Mi,,211)", sC: ""},
+            { line: "en el nombre del Señor., (Re,m,72)(Mi,,211)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "HOSANNA, HOSANNA, (La,m,19)", sC: "ta as", lines: [
+            { line: "HOSANNA,HOSANNA, (Rem,,22)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "as"},
+            { line: "HOSANNA,HOSANNA, (Rem,,21)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,72)(Mi,,188)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: SANTO 1982
+// SIGUIENTE CANTO DEBAJO
 
 
 /*
