@@ -4993,6 +4993,402 @@ const allCantosData = [
             { line: "¡su corazón, su corazón, vivirá para siempre!, (Si,7,91)(Mi,m,359) ", sC: ""},
 ]}, // ULTIMA LINEA DEL CANTO: ELÍ, ELÍ, LAMÁ SABACTANÍ 
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           EN MEDIO DE AQUEL GENTÍO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "enmediodeaquelgentio",
+        tt: "En Medio De Aquel Gentío",
+        title: "En Medio De Aquel Gentío",
+        subtitle: "Lucas 8,42b-48",
+        category: ["Precatecumenado","Comunión","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "64",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/enmediodeaquelgentio.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=elielilamasabactani",
+        sig: "/resucito/src/index.html?canto=enunanocheoscura",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "EN MEDIO DE AQUEL GENTÍO,, (La,m,21)", sC: "tc"},
+            { line: "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)", sC: "as r1"},
+            { line: "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«¿Quién es el que me ha tocado?, (La,m,19)", sC: "tc"},
+            { line: "¿Quién es el que me ha tocado?», (Sol,,265)", sC: ""},
+            { line: "dijo Cristo, dijo Cristo y se paró., (Mi,,12)(Fa,,170)(Mi,,288)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Una mujer temblorosa,, (La,m,20)", sC: ""},
+            { line: "una mujer temblorosa, (Sol,,186)", sC: ""},
+            { line: "dijo a Cristo: «¡He sido yo!, (Fa,,10)(Mi,,231)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«Que soy una mujer impura,, (La,m,24)", sC: ""},
+            { line: "que soy una mujer impura, (Sol,,224)", sC: ""},
+            { line: "que sufro flujo de sangre., (Fa,,57)(Mi,,194)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "QUE SOY UNA MUJER IMPURA,, (La,m,22)", sC: "ta as"},
+            { line: "QUE SOY UNA MUJER IMPURA, (Sol,,252)", sC: "as"},
+            { line: "QUE SUFRO FLUJO DE SANGRE., (Fa,,68)(Mi,,236)", sC: "as"},
+    ], lder: [
+            { line: "Mas al tocar tu vestido,, (La,m,22)", sC: ""},
+            { line: "mas al tocar tu vestido, (Sol,,193)", sC: ""},
+            { line: "el flujo de sangre se curó»., (Fa,,40)(Mi,,233)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«Hija, tu fe,, (La,m,27)Sol", sC: ""},
+            { line: "tu fe te ha salvado»., (Fa,,38)(Mi,,149)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "EN MEDIO DE AQUEL GENTÍO,, (La,m,21)", sC: "ta as", lines: [
+            { line: "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)", sC: "as r1"},
+            { line: "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si quieres tú tocar a Cristo,, (La,m,19)", sC: "tc"},
+            { line: "si quieres tú tocar a Cristo,, (Sol,,217)", sC: ""},
+            { line: "lo puedes tocar con la fe., (Fa,,51)(Mi,,224)", sC: ""},
+            { line: "Que Él es el Hijo de Dios,, (La,m,21)", sC: ""},
+            { line: "que Él es el Hijo de Dios, (Sol,,214)", sC: ""},
+            { line: "que ha venido para curarte,, (Fa,,106)", sC: ""},
+            { line: "para salvarte., (Mi,,93)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "EN MEDIO DE AQUEL GENTÍO,, (La,m,21)", sC: "ta as", lines: [
+            { line: "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)", sC: "as r1"},
+            { line: "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: EN MEDIO DE AQUEL GENTÍO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           EN UNA NOCHE OSCURA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "enunanocheoscura",
+        tt: "En Una Noche Oscura",
+        title: "En Una Noche Oscura",
+        subtitle: "Subida al Monte Carmelo – San Juan de la Cruz",
+        category: ["Precatecumenado","Comunión","Fracción del Pan","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "65",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/enunanocheoscura.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=enmediodeaquelgentio",
+        sig: "/resucito/src/index.html?canto=eresdignodetomarellibro",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "EN UNA NOCHE OSCURA,, (La,m,21)", sC: "ta as"},
+            { line: "CON ANSIAS, EN AMORES INFLAMADA,, (Re,m,60)(Mi,,337)", sC: "as r1"},
+            { line: "¡OH DICHOSA VENTURA!,, (Re,m,22)(Fa,,190)", sC: "as"},
+            { line: "SALÍ SIN SER NOTADA,, (Re,m,180)", sC: "as"},
+            { line: "ESTANDO YA MI CASA SOSEGADA., (Mi,,289)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "A oscuras y segura,, (La,m,89)", sC: "tc"},
+            { line: "por la secreta escala, disfrazada,, (Re,m,105)(Mi,,277)", sC: ""},
+            { line: "¡oh dichosa ventura!,, (Re,m,21)(Fa,,161)", sC: ""},
+            { line: "a oscuras y en celada,, (Re,m,176)", sC: ""},
+            { line: "estando ya mi casa sosegada., (Mi,,254)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En la noche dichosa,, (Re,m,21)(Mi,,163)", sC: ""},
+            { line: "en secreto, que nadie me veía,, (Re,m,74)(Fa,,273)", sC: ""},
+            { line: "ni yo miraba cosa,, ", sC: ""},
+            { line: "sin otra luz y guía,, (Re,m,149)", sC: ""},
+            { line: "sino la que en el corazón ardía., (Mi,,279)", sC: ""},
+    ], lder: [
+            { line: "Aquésta me guiaba, (La,m,15)(Re,m,153)", sC: "tc"},
+            { line: "más cierto que la luz del mediodía,, (La,m,312)", sC: ""},
+            { line: "adonde me esperaba, (Mi,,170)", sC: ""},
+            { line: "quien yo bien me sabía,, (La,m,206)", sC: ""},
+            { line: "en parte donde nadie parecía., (Re,m,46)(Mi,,266)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Oh noche que guiaste!, (La,m,24)(Re,m,182)", sC: "tc"},
+            { line: "¡oh noche amable más que la alborada!, (La,m,344)", sC: ""},
+            { line: "¡oh noche que juntaste, (Mi,,185)", sC: ""},
+            { line: "Amado con amada,, (Fa,,34)", sC: ""},
+            { line: "amada en el Amado transformada!, (Re,m,45)(Mi,,297)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡OH NOCHE QUE GUIASTE!, (La,m,19)(Re,m,201)", sC: "ta as"},
+            { line: "¡OH NOCHE AMABLE MÁS QUE LA ALBORADA!, (La,m,401)", sC: "as"},
+            { line: "¡OH NOCHE QUE JUNTASTE, (Mi,,215)", sC: "as"},
+            { line: "AMADO CON AMADA,, (Fa,,41)", sC: "as"},
+            { line: "AMADA EN EL AMADO TRANSFORMADA!, (Re,m,39)(Mi,,349)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "EN UNA NOCHE OSCURA, (La,m,21)", sC: "ta as", lines: [
+            { line: "CON ANSIAS, EN AMORES INFLAMADA,, (Re,m,60)(Mi,,337)", sC: "as r1"},
+            { line: "¡OH DICHOSA VENTURA!,, (Re,m,22)(Fa,,190)", sC: "as"},
+            { line: "SALÍ SIN SER NOTADA,, (Re,m,180)", sC: "as"},
+            { line: "ESTANDO YA MI CASA SOSEGADA. (Mi,,289)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: EN UNA NOCHE OSCURA
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ERES DIGNO DE TOMAR EL LIBRO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "eresdignodetomarellibro",
+        tt: "Eres Digno De Tomar El Libro",
+        title: "Eres Digno De Tomar El Libro",
+        subtitle: "Apocalipsis 5,9ss",
+        category: ["Precatecumenado","Pascua","Pentecostés","Fracción Del Pan","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "66",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/eresdignodetomarellibro.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=enunanocheoscura",
+        sig: "/resucito/src/index.html?canto=ereshermoso",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Eres digno de tomar el libro, (Re,m,22)", sC: "tc"},
+            { line: "y abrir sus sellos, (Sol,m,45)(La,,119)", sC: ""},
+            { line: "porque tú has sido inmolado, (La,7,88)(Re,m,246)", sC: ""},
+            { line: "y has comprado con tu sangre, (La,,237)", sC: ""},
+            { line: "hombres de toda raza,, (Re,m,22)", sC: ""},
+            { line: "lengua, pueblo y nación;, ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y HAS HECHO DE ELLOS, (Fa,,8)(La,m,182)", sC: "ta as"},
+            { line: "PARA NUESTRO DIOS, (Fa,,182)", sC: "as"},
+            { line: "UN REINO DE SACERDOTES,, (La,m,54)(Fa,,222)", sC: "as"},
+            { line: "Y REINAN, Y REINAN, (La,m,143)", sC: "as"},
+            { line: "SOBRE LA TIERRA., (Re,m,127)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Eres digno, Cordero degollado,, (Re,m,15)", sC: "tc"},
+            { line: "de tomar el libro, (Sol,m,72)(La,,126)", sC: ""},
+            { line: "y abrir sus sellos, (La,7,50)(Re,m,120)", sC: ""},
+            { line: "porque has comprado con tu sangre, (La,,296)", sC: ""},
+            { line: "hombres de toda raza,, (Re,m,21)", sC: ""},
+            { line: "lengua, pueblo y nación;, ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Y HAS HECHO DE ELLOS, (Fa,,8)(La,m,182)", sC: "ta as", lines: [
+            { line: "PARA NUESTRO DIOS, (Fa,,182)", sC: "as"},
+            { line: "UN REINO DE SACERDOTES,, (La,m,54)(Fa,,222)", sC: "as"},
+            { line: "Y REINAN, Y REINAN, (La,m,143)", sC: "as"},
+            { line: "SOBRE LA TIERRA., (Re,m,127)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Digno eres, Cordero degollado,, (Re,m,15)", sC: "tc"},
+            { line: "de recibir el poder, la riqueza y la gloria,, (Sol,m,81)(La,,344)", sC: ""},
+            { line: "la sabiduría, el honor y la alabanza,, (La,7,100)(Re,m,293)", sC: ""},
+            { line: "porque has comprado con tu sangre, (La,7,296)", sC: ""},
+            { line: "hombres de toda raza,, (Re,m,23)", sC: ""},
+            { line: "lengua, pueblo y nación;, ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Y HAS HECHO DE ELLOS, (Fa,,8)(La,m,182)", sC: "ta as", lines: [
+            { line: "PARA NUESTRO DIOS, (Fa,,182)", sC: "as"},
+            { line: "UN REINO DE SACERDOTES,, (La,m,54)(Fa,,222)", sC: "as"},
+            { line: "Y REINAN, Y REINAN, (La,m,143)", sC: "as"},
+            { line: "SOBRE LA TIERRA., (Re,m,127)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ERES DIGNO DE TOMAR EL LIBRO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ERES HERMOSO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ereshermoso",
+        tt: "Eres Hermoso",
+        title: "Eres Hermoso",
+        subtitle: "Salmo 45 (44) ",
+        category: ["Precatecumenado","Comunión","Final","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "67",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/ereshermoso.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=eresdignodetomarellibro",
+        sig: "/resucito/src/index.html?canto=espaciente",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as"},
+            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
+            { line: "ERES BENDITO,, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ciñe la espada a tu flanco, oh valiente,, (Do#,m,28)(Sol#,,335)", sC: "tc"},
+            { line: "y marcha lleno de gloria y esplendor,, (La,,46)(Sol#,,334)", sC: ""},
+            { line: "cabalga por la verdad,, (Fa#,m,26)", sC: ""},
+            { line: "la mansedumbre, la justicia., (Sol#,,233)", sC: ""},
+            { line: "¡Tensa tu arco,, ", sC: ""},
+            { line: "que hace temible tu derecha!, (La,,15)(Sol#,,230)", sC: ""},
+            { line: "Agudas son tus flechas,, (Fa#,m,27)(Sol#,,170)", sC: ""},
+            { line: "te han sido entregados los pueblos., (Si,,8)(La,,179)(Sol#,,290)", sC: ""},
+            { line: "TE HAN SIDO ENTREGADOS, (Si,,8)(La,,218)", sC: "ta as"},
+            { line: "LOS PUEBLOS., (Sol#,,76)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
+            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
+            { line: "ERES BENDITO,, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
+    ], lder: [
+            { line: "Desde los palacios de marfil, (Do#,m,26)(Sol#,,264)", sC: "tc"},
+            { line: "las cítaras cantan para ti., (La,,46)(Sol#,,234)", sC: ""},
+            { line: "Hijas de reyes son tus favoritas;, (Fa#,m,25)(Sol#,,264)", sC: ""},
+            { line: "a tu derecha está la reina,, (Si,,80)(La,,207)", sC: ""},
+            { line: "en oro de Ofir., (Sol#,,123)", sC: ""},
+            { line: "A TU DERECHA ESTÁ LA REINA, (Si,,100)(La,,259)", sC: "ta as"},
+            { line: "EN ORO DE OFIR., (Sol#,,148)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
+            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
+            { line: "ERES BENDITO,, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Escucha, hija, y mira, inclina el oído,, (Do#,m,29)(Sol#,,171)(La,,243)(Sol#,,315)", sC: "tc"},
+            { line: "olvida tu pueblo y la casa de tu padre,, (Fa#,m,34)(Sol#,,318)", sC: ""},
+            { line: "y el rey se prendará de tu belleza., (Si,,54)(La,,179)(Sol#,,288)", sC: ""},
+            { line: "Y EL REY SE PRENDARÁ, (Si,,70)(La,,222)", sC: "ta as"},
+            { line: "DE TU BELLEZA., (Sol#,,119)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El es tu Señor, ¡entrégate a él!, (Fa#,m,27)(Sol#,,119)(Fa#,m,193)(Sol#,,272)", sC: "tc"},
+            { line: "Y en lugar de padres, tendrás hijos,, (Si,,8)(La,,298)", sC: ""},
+            { line: "que serán príncipes sobre la tierra., (Sol#,,297)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
+            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
+            { line: "ERES BENDITO,, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ERES HERMOSO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ES PACIENTE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "espaciente",
+        tt: "Es Paciente",
+        title: "Es Paciente",
+        subtitle: "Himno al Espíritu Santo (Kiko Argüello) ",
+        category: ["Precatecumenado","Pascua","Pentecostés","Entrada","Comunión"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "68",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/espaciente.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=ereshermoso",
+        sig: "/resucito/src/index.html?canto=escondemeenloocultode",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "El Espíritu Santo es el yugo suave,, (La,m,20)(Mi,,298)", sC: "tc"},
+            { line: "es el yugo suave y ligero., (La,m,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "EL ESPÍRITU SANTO ES EL YUGO SUAVE,, (La,m,21)(Mi,,349)", sC: "ta as"},
+            { line: "ES EL YUGO SUAVE Y LIGERO., (La,m,244)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Lleno de comprensión,, (Re,m,21)(Mi,,196)", sC: "tc"},
+            { line: "lleno de misericordia con nuestras faltas,, (Re,m,21)(Mi,,348)", sC: ""},
+            { line: "lleno de ternura y compasión, (Fa,,11)", sC: ""},
+            { line: "y de amor sin límites., (Mi,,145)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ES PACIENTE, ES BENIGNO,, (La,m,19)", sC: "ta as"},
+            { line: "ES EL SUMO BIEN,, (Mi,,151)", sC: "as"},
+            { line: "ES EL DON DE DIOS,, (La,m,165)", sC: "as"},
+            { line: "ES LA GARANTÍA DE LA VIDA ETERNA,, (Re,m,22)(Mi,,310)", sC: "as"},
+            { line: "ES EL «PARÁCLITO»., (Re,m,21)(Mi,,116)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Habitando en el hombre,, (La,m,21)", sC: "tc"},
+            { line: "nos perdona siempre,, (Mi,,148)", sC: ""},
+            { line: "habitando en el hombre,, ", sC: ""},
+            { line: "espera siempre., (La,m,96)", sC: ""},
+    ], lder: [
+            { line: "Lo comprende todo, lo excusa todo., (Re,m,21)(Mi,,307)", sC: ""},
+            { line: "Nos defiende siempre,, (Re,m,21)", sC: ""},
+            { line: "y nos enseña a ser pacientes, (Fa,,230)", sC: ""},
+            { line: "con nuestros pecados., (Mi,,195)", sC: ""},
+            { line: "Nos dice quiénes somos,, (Re,m,23)(Mi,,186)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "y nos dice dónde andamos,, (Re,m,19)(Mi,,209)", sC: ""},
+            { line: "cuál es el camino y porqué sufrimos., (Fa,,10)(Mi,,299)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ES PACIENTE, ES BENIGNO,, (La,m,19)", sC: "ta as", lines: [
+            { line: "ES EL SUMO BIEN,, (Mi,,151)", sC: "as"},
+            { line: "ES EL DON DE DIOS,, (La,m,165)", sC: "as"},
+            { line: "ES LA GARANTÍA DE LA VIDA ETERNA,, (Re,m,22)(Mi,,310)", sC: "as"},
+            { line: "ES EL «PARÁCLITO»., (Re,m,21)(Mi,,116)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Nos dice que en nuestra vida todo es santo,, (La,m,20)(Mi,,374)", sC: "tc"},
+            { line: "que nuestra historia es santa,, (La,m,242)", sC: ""},
+            { line: "y nos conduce al abandono total en Cristo., (Re,m,20)(Mi,,366)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En Él nada se pretende,, (Re,m,22)(Mi,,181)", sC: ""},
+            { line: "se acepta todo, se soporta todo., (Fa,,57)(Mi,,274)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque parecerse al Señor sobre la Cruz, (Re,m,22)(Mi,,366)", sC: ""},
+            { line: "es nuestra gloria, es la verdad,, (Re,m,129)", sC: ""},
+            { line: "es la Santidad, es nuestro ser Cristiano., (Fa,,116)(Mi,,341)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ES PACIENTE, ES BENIGNO,, (La,m,19)", sC: "ta as", lines: [
+            { line: "ES EL SUMO BIEN,, (Mi,,151)", sC: "as"},
+            { line: "ES EL DON DE DIOS,, (La,m,165)", sC: "as"},
+            { line: "ES LA GARANTÍA DE LA VIDA ETERNA,, (Re,m,22)(Mi,,310)", sC: "as"},
+            { line: "ES EL «PARÁCLITO»., (Re,m,21)(Mi,,116)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: ES PACIENTE
+// SIGUIENTE CANTO DEBAJO
+
 
 
 
