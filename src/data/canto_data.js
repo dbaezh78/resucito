@@ -4901,7 +4901,7 @@ const allCantosData = [
         audioSrc: "/audio/elielilamasabactani.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 5, incremento: 0.5 }, // Para celular
             tablet: { velocidad: 3, incremento: 0.4 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
