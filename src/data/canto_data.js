@@ -4597,7 +4597,7 @@ const allCantosData = [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=elneciopiensaquediosno",
+        ant: "/resucito/src/index.html?canto=elneciopiensaquediosnoexiste",
         sig: "/resucito/src/index.html?canto=elsenoranunciaunanoticia",
 // Contenido del lado izquierdo del canto,
     lizq: [
@@ -5155,7 +5155,7 @@ const allCantosData = [
         nCanURL: "",
         dbno: "66",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/eresdignodetomarellibro.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
