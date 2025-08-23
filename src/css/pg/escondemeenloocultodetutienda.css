@@ -1,0 +1,23 @@
+.container {margin-left: 8%;}
+
+.r1::before {
+    @media (min-width: 384px) {
+        height: 95px;
+        margin-left: 228px;
+        margin-top: -10%;
+    }
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+        height: 150px;
+        margin-left: 401px;
+        margin-top: -8%;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.3rem;
+        font-weight: bold;
+        height: 118px;
+        margin-left: 304px;
+        margin-top: -9%;
+    }
+}

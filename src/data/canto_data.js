@@ -5308,8 +5308,8 @@ const allCantosData = [
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "espaciente",
-        tt: "Es Paciente",
-        title: "Es Paciente",
+        tt: "Es paciente",
+        title: "Es paciente",
         subtitle: "Himno al Espíritu Santo (Kiko Argüello) ",
         category: ["Precatecumenado","Pascua","Pentecostés","Entrada","Comunión"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
@@ -5327,7 +5327,7 @@ const allCantosData = [
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=ereshermoso",
-        sig: "/resucito/src/index.html?canto=escondemeenloocultode",
+        sig: "/resucito/src/index.html?canto=escondemeenloocultodetutienda",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "El Espíritu Santo es el yugo suave,, (La,m,20)(Mi,,298)", sC: "tc"},
@@ -5387,6 +5387,364 @@ const allCantosData = [
             { line: "ES EL «PARÁCLITO»., (Re,m,21)(Mi,,116)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: ES PACIENTE
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ESCÓNDEME EN LO OCULTO DE                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "escondemeenloocultodetutienda",
+        tt: "Escóndeme en lo oculto de tu tienda ",
+        title: "Escóndeme en lo oculto de tu tienda",
+        subtitle: "Salmo 27 (26)",
+        category: ["Precatecumenado","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "69",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/escondemeenloocultodetutienda.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=espaciente",
+        sig: "/resucito/src/index.html?canto=escuchadislaslejanas",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ESCÓNDEME, (La,m,20)", sC: "ta as"},
+            { line: "EN LO OCULTO DE TU TIENDA,, (Sol,,220)", sC: "as r1"},
+            { line: "SOBRE TU ROCA LEVÁNTAME., (Fa,,121)(Mi,,273)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yahveh es mi luz y mi salvación,, (La,m,19)(Fa,,282)", sC: "tc"},
+            { line: "¿a quién he de temer?, (Mi,,190)", sC: ""},
+            { line: "Yahveh es el refugio de mi vida,, (La,m,20)(Fa,,271)", sC: ""},
+            { line: "¿por quién he de temblar?, (Mi,,227)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESCÓNDEME, (La,m,20)", sC: "ta as", lines: [
+            { line: "EN LO OCULTO DE TU TIENDA,, (Sol,,220)", sC: "as r1"},
+            { line: "SOBRE TU ROCA LEVÁNTAME., (Fa,,121)(Mi,,273)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cuando se acercan contra mí los malvados, (La,m,21)(Fa,,368)", sC: "tc"},
+            { line: "a devorar mi carne,, (Mi,,144)", sC: ""},
+            { line: "son ellos, mis adversarios y enemigos,, (La,m,19)(Fa,,322)", sC: ""},
+            { line: "los que tropiezan y sucumben., (Mi,,221)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESCÓNDEME, (La,m,20)", sC: "ta as", lines: [
+            { line: "EN LO OCULTO DE TU TIENDA,, (Sol,,220)", sC: "as r1"},
+            { line: "SOBRE TU ROCA LEVÁNTAME., (Fa,,121)(Mi,,273)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aunque acampe un ejército contra mí,, (La,m,20)(Fa,,356)", sC: "tc"},
+            { line: "mi corazón no teme;, (Mi,,155)", sC: ""},
+            { line: "aunque estalle una guerra contra mí,, (La,m,20)(Fa,,345)", sC: ""},
+            { line: "estoy seguro en ella., (Mi,,164)", sC: ""},
+    ], lder: [
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESCÓNDEME, (La,m,20)", sC: "ta as", lines: [
+            { line: "EN LO OCULTO DE TU TIENDA,, (Sol,,220)", sC: "as r1"},
+            { line: "SOBRE TU ROCA LEVÁNTAME., (Fa,,121)(Mi,,273)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Una cosa he pedido a Yahveh,, (La,m,20)(Fa,,259)", sC: "tc"},
+            { line: "eso solo estoy buscando:, (Mi,,188)", sC: ""},
+            { line: "habitar en la Casa de Yahveh,, (La,m,20)(Fa,,256)", sC: ""},
+            { line: "todos los días de mi vida., (Mi,,208)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESCÓNDEME, (La,m,20)", sC: "ta as", lines: [
+            { line: "EN LO OCULTO DE TU TIENDA,, (Sol,,220)", sC: "as r1"},
+            { line: "SOBRE TU ROCA LEVÁNTAME., (Fa,,121)(Mi,,273)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Él me dará cobijo en su cabaña, (La,m,20)(Fa,,264)", sC: "tc"},
+            { line: "el día de la desdicha;, (Mi,,157)", sC: ""},
+            { line: "me esconderá en lo oculto de su tienda,, (La,m,20)(Fa,,333)", sC: ""},
+            { line: "sobre su roca me levantará., (Mi,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESCÓNDEME, (La,m,20)", sC: "ta as", lines: [
+            { line: "EN LO OCULTO DE TU TIENDA,, (Sol,,220)", sC: "as r1"},
+            { line: "SOBRE TU ROCA LEVÁNTAME., (Fa,,121)(Mi,,273)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Escucha, Yahveh, mi voz que clama,, (La,m,20)(Fa,,299)", sC: "tc"},
+            { line: "¡tenme piedad, respóndeme!, (Mi,,262)", sC: ""},
+            { line: "Sí, Yahveh, tu rostro busco:, (La,m,21)(Fa,,208)", sC: ""},
+            { line: "no me ocultes tu rostro., (Mi,,177)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESCÓNDEME, (La,m,20)", sC: "ta as", lines: [
+            { line: "EN LO OCULTO DE TU TIENDA,, (Sol,,220)", sC: "as r1"},
+            { line: "SOBRE TU ROCA LEVÁNTAME., (Fa,,121)(Mi,,273)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ESCÓNDEME EN LO OCULTO DE 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ESCUCHAD, ISLAS LEJANAS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "escuchadislaslejanas",
+        tt: "Escuchad, Islas Lejanas",
+        title: "Escuchad, Islas Lejanas",
+        subtitle: "Isaias 49,1-16 - Segundo canto de Siervo de Yahveh",
+        category: ["Precatecumenado","Adviento","Navidad","Entrada","Comunión","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "70",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/escuchadislaslejanas.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=escondemeenloocultodetutienda",
+        sig: "/resucito/src/index.html?canto=esteeseldiaenqueactuoelsenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Escuchad, islas lejanas,, (La,7,15)", sC: "tc"},
+            { line: "prestad atención, naciones,, ", sC: ""},
+            { line: "así habla el Señor, el Santo de Israel:, ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aquel que tiene la vida despreciada, (Re,,10)", sC: ""},
+            { line: "y es el abominio de las gentes,, (Fa#,,16)(Sol,,245)", sC: ""},
+            { line: "al esclavo de los dominadores:, (Fa#,,16)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TE VERÁN LOS REYES,, (Re,,10)", sC: "ta as"},
+            { line: "SE PONDRÁN EN PIE., ", sC: "as r1"},
+            { line: "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)", sC: "as"},
+            { line: "SE INCLINARÁN,, (Sol,,135)", sC: "as"},
+            { line: "YO TE HE ELEGIDO,, ", sC: "as"},
+            { line: "TE HE ELEGIDO., (Fa#,,111)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En el día favorable te ayudaré,, (Re,,11)", sC: "tc"},
+            { line: "en el día de la muerte te asistiré,, (Fa#,m,75)(Sol,,302)", sC: ""},
+            { line: "pues te he elegido, ", sC: ""},
+            { line: "como alianza a las naciones., (Fa#,,233)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TE VERÁN LOS REYES,, (Re,,10)", sC: "ta as", lines: [
+            { line: "SE PONDRÁN EN PIE., ", sC: "as r1"},
+            { line: "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)", sC: "as"},
+            { line: "SE INCLINARÁN,, (Sol,,135)", sC: "as"},
+            { line: "YO TE HE ELEGIDO,, ", sC: "as"},
+            { line: "TE HE ELEGIDO., (Fa#,,111)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Dirás a los prisioneros: «Salid»;, (Re,,12)", sC: "tc"},
+            { line: "dirás a los ciegos: «Mirad»;, (Fa#,m,27)(Sol,,217)", sC: ""},
+            { line: "conducirás a los pueblos, ", sC: ""},
+            { line: "por el camino de la vida., (Fa#,,200)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TE VERÁN LOS REYES,, (Re,,10)", sC: "ta as", lines: [
+            { line: "SE PONDRÁN EN PIE., ", sC: "as r1"},
+            { line: "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)", sC: "as"},
+            { line: "SE INCLINARÁN,, (Sol,,135)", sC: "as"},
+            { line: "YO TE HE ELEGIDO,, ", sC: "as"},
+            { line: "TE HE ELEGIDO., (Fa#,,111)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Mas Sión dice: «Yahveh me ha abandonado,, (Si,m,20)(Mi,m,202)(Si,m,383)", sC: "tc"},
+            { line: "Yahveh me ha olvidado»., (Mi,m,51)(Si,m,193)", sC: ""},
+            { line: "¿Acaso una madre olvida a su hijo de pecho,, (Sol,,13)(Fa#,,381)", sC: ""},
+            { line: "es que se olvida del hijo de su seno?, (Sol,,13)(Fa#,,307)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PUES AUNQUE UNA MADRE, (Re,,12)(Fa#,m,214)", sC: "ta as"},
+            { line: "SE OLVIDASE DE SU HIJO,, (Sol,,208)", sC: "as"},
+            { line: "YO JAMÁS TE OLVIDARÉ., (Fa#,,221)", sC: "as"},
+            { line: "MÍRAME, EN LAS PALMAS DE MIS MANOS, (Sol,,15)", sC: "as"},
+            { line: "TE LLEVO TATUADA., (Fa#,,147)", sC: "as"},
+            { line: "MÍRAME, EN LAS PALMAS DE MIS MANOS, (Sol,,15)", sC: "as"},
+            { line: "TE LLEVO TATUADA., (Fa#,,158)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TE VERÁN LOS REYES,, (Re,,10)", sC: "ta as", lines: [
+            { line: "SE PONDRÁN EN PIE., ", sC: "as r1"},
+            { line: "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)", sC: "as"},
+            { line: "SE INCLINARÁN,, (Sol,,135)", sC: "as"},
+            { line: "YO TE HE ELEGIDO,, ", sC: "as"},
+            { line: "TE HE ELEGIDO., (Fa#,,111)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ESCUCHAD, ISLAS LEJANAS
+// SIGUIENTE CANTO DEBAJO
+
+// CANTO ESPECIAL, ESTE ES EL DIA EN QUE ACTUO EL SEÑOR
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           ESTE ES EL DÍA EN QUE ACTUÓ EL SEÑOR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "esteeseldiaenqueactuoelsenor",
+        tt: "Este Es El Día En Que Actuó El Señor",
+        title: "Este Es El Día En Que Actuó El Señor",
+        subtitle: "Salmo 118 (117)",
+        category: ["Precatecumenado","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "71",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/esteeseldiaenqueactuoelsenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=escuchadislaslejanas",
+        sig: "/resucito/src/index.html?canto=esteeselmandamientomio",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "No he de morir,, (La,m,19)", sC: "tc"},
+            { line: "QUE VIVIRÉ,", sC: "ta as ab1"},
+
+            { line: "No he de morir,", sC: "tc"},
+            { line: "QUE VIVIRÉ, ", sC: "ta as ab1"},
+
+            { line: "para cantar, (Fa,,96)", sC: ""},
+            { line: "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)", sC: "as ab2"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Me castigó,, (La,m ,20)", sC: ""},
+            { line: "ME CASTIGÓ. ", sC: "as ab3"},
+
+            { line: "Me castigó, ", sC: ""},
+            { line: "ME CASTIGÓ, ", sC: "as ab3"},
+
+            { line: "pero no, (Fa,,64)", sC: ""},
+            { line: "ME DEJÓ EN LA MUERTE., (Mi,,193)", sC: "as ab4"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Dad gracias al Señor porque es bueno,, (La,m,20)", sC: ""},
+            { line: "PORQUE ES ETERNA SU MISERICORDIA., (Fa,,146)(Mi,,325)", sC: "as"},
+
+            { line: "Que lo diga la casa de Israel:, (La,m,20)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ES ETERNA, (Fa,,63)", sC: "as ab5", lines: [
+            { line: "SU MISERICORDIA., (Mi,,123)", sC: "as ab6"},  ]},
+
+
+            { line: "Que lo diga la casa de Aarón:, (La,m,15)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "ES ETERNA, (Fa,,63)", sC: "as ab5", lines: [
+            { line: "SU MISERICORDIA., (Mi,,123)", sC: "as ab6"},  ]},
+
+            { line: "Que lo digan los fieles del Señor:, (La,m,15)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "ES ETERNA, (Fa,,63)", sC: "as ab7", lines: [
+            { line: "SU MISERICORDIA., (Mi,,123)", sC: "as ab8"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Mejor es confiar en el Señor, (Do,,10)", sC: ""},
+            { line: "QUE FIARSE DE LOS HOMBRES,, (Fa,,68)(Mi,,221)", sC: "as"},
+            { line: "mejor es apoyarse en el Señor, (Do,,10)", sC: ""},
+            { line: "QUE CONFIAR EN LOS INTELIGENTES., (Fa,,111)(Mi,,297)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "me rodeaban,,(La,m,20)", sC: ""},
+            { line: "ME RODEABAN, ", sC: "as ab9"},
+
+            { line: "me rodeaban, ", sC: ""},
+            { line: "ME RODEABAN, ", sC: "as ab9"},
+
+            { line: "en el nombre del Señor, (Fa,,66)", sC: ""},
+            { line: "LOS RECHACÉ., (Mi,,129)", sC: "as ab10"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+    ], lder: [
+            { line: "Me empujaban,, (Lam,,15)", sC: ""},
+            { line: "ME EMPUJABAN, ", sC: "as ab11"},
+
+            { line: "Me empujaban, ", sC: ""},
+            { line: "ME EMPUJABAN, ", sC: "as ab11"},
+
+            { line: "pero el Señor, (Fa,,112)", sC: ""},
+            { line: "ME AYUDÓ., (Mi,,97)", sC: "as ab12"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Escuchad: hay cantos de victoria, (Do,,10)", sC: ""},
+            { line: "EN LAS TIENDAS DE LOS JUSTOS:, (Fa,,96)(Mi,,258)", sC: "as"},
+            { line: "«La diestra del Señor es poderosa,, (Do,,10)", sC: ""},
+            { line: "ES EXCELSA LA DIESTRA DEL SEÑOR»., (Fa,,74)(Mi,,333)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            // No he de morir... . .. EN LA MUERTE. 
+
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "No he de morir...    ...EN LA MUERTE.  (La,m,19)", sC: "tc as", lines: [
+
+            { line: "QUE VIVIRÉ,", sC: "as ab14 bgtop"},
+            
+            { line: "No he de morir,", sC: "tc"},
+            { line: "QUE VIVIRÉ, ", sC: "as ab14"},
+
+            { line: "para cantar, (Fa,,96)", sC: ""},
+            { line: "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)", sC: "as ab2"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Me castigó,, (La,m ,20)", sC: ""},
+            { line: "ME CASTIGÓ. ", sC: "as ab3"},
+
+            { line: "Me castigó, ", sC: ""},
+            { line: "ME CASTIGÓ, ", sC: "as ab3"},
+
+            { line: "pero no, (Fa,,64)", sC: ""},
+            { line: "ME DEJÓ EN LA MUERTE., (Mi,,193)", sC: "as ab4"},
+
+        ]},     // No he de morir... . .. EN LA MUERTE. 
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Abridme las puertas del triunfo, (La,m,21)", sC: ""},
+            { line: "Y ENTRARÉ PARA DAR GRACIAS AL SEÑOR., (Fa,,108)(Mi,,394)", sC: "as"},
+            { line: "Esta es la puerta del Señor:, (Fa,,10)(Mi,,244)", sC: ""},
+            { line: "LOS VENCEDORES ENTRARÁN POR ELLA., (Fa,,130)(Mi,,348)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "La piedra que desecharon los arquitectos, (Do,,10)", sC: ""},
+            { line: "ES AHORA LA PIEDRA ANGULAR., (Fa,,67)(Mi,,289)", sC: "as"},
+            { line: "Es el Señor quien lo ha hecho,, (Fa,,10)(Mi,,238)", sC: ""},
+            { line: "HA SIDO UN MILAGRO PATENTE., (Fa,,46)(Mi,,259)", sC: "as"},
+            { line: "Este es el día en que actuó el Señor:, (Do,,10)", sC: ""},
+            { line: "SEA NUESTRA ALEGRÍA Y NUESTRO GOZO., (Fa,,20)(Mi,,369)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            // No he de morir... . .. EN LA MUERTE. 
+
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "No he de morir...    ...EN LA MUERTE.  (La,m,19)", sC: "tc as", lines: [
+
+            { line: "QUE VIVIRÉ,", sC: "as ab14 bgtop"},
+            
+            { line: "No he de morir,", sC: "tc"},
+            { line: "QUE VIVIRÉ, ", sC: "as ab14"},
+
+            { line: "para cantar, (Fa,,96)", sC: ""},
+            { line: "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)", sC: "as ab2"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Me castigó,, (La,m ,20)", sC: ""},
+            { line: "ME CASTIGÓ. ", sC: "as ab3"},
+
+            { line: "Me castigó, ", sC: ""},
+            { line: "ME CASTIGÓ, ", sC: "as ab3"},
+
+            { line: "pero no, (Fa,,64)", sC: ""},
+            { line: "ME DEJÓ EN LA MUERTE., (Mi,,193)", sC: "as ab4"},
+
+        ]},     // No he de morir... . .. EN LA MUERTE. 
+
+]}, // ULTIMA LINEA DEL CANTO: ESTE ES EL DÍA EN QUE ACTUÓ EL SEÑOR
 // SIGUIENTE CANTO DEBAJO
 
 
