@@ -6837,6 +6837,57 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: HIMNO A LA KENOSIS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           HIMNO DE ADVIENTO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "himnodeadviento",
+        tt: "Himno De Adviento",
+        title: "Himno De Adviento",
+        subtitle: "Himno lat. «Vox clara ecce Intonat»",
+        category: ["Precatecumenado","Adviento","Navidad"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "88",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/himnodeadviento.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=himnoalakenosis",
+        sig: "/resucito/src/index.html?canto=himnodelaascension",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Una voz recia disipa con sus ecos la oscuridad,, (Re,m,20)", sC: "tc"},
+            { line: "lejos el ensueño, Jesús brilla ya., (La,7,294)", sC: ""},
+            { line: "Levántese el alma entorpecida, (Re,m,268)", sC: ""},
+            { line: "y deje de arrastrarse por el suelo:, (La,7,293)", sC: ""},
+            { line: "amanece una nueva estrella., (Re,m,240)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ved, que se nos envía un Cordero, (Sol,m,22)", sC: ""},
+            { line: "para satisfacer gratuitamente nuestras deudas:, (Re,m,411)", sC: ""},
+            { line: "vayamos a Él con lágrimas,, (La,7,182)", sC: ""},
+            { line: "pidámosle todos perdón., (Re,m,214)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PARA QUE, CUANDO APAREZCA GLORIOSO, (Sol,m,84)", sC: "ta as"},
+            { line: "EN SU SEGUNDA VENIDA,, (Re,m,205)", sC: "as"},
+            { line: "Y LLENE EL MUNDO DE ESPANTO,, (La,7,273)", sC: "as"},
+            { line: "ÉL NOS PROTEJA PIADOSO., (Re,m,224)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "POR ESO, (Sol,m,63)", sC: "ta as"},
+            { line: "YO LE CANTO ESTA BALADA, (Re,m,229)", sC: "as r1"},
+            { line: "AL PADRE, AL HIJO Y AL ESPÍRITU,, (La,7,278)", sC: "as"},
+            { line: "QUE ELLOS VIVAN, AMÉN., (Re,m,223)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: HIMNO DE ADVIENTO
+// SIGUIENTE CANTO DEBAJO
 
 
 
