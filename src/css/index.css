@@ -35,10 +35,10 @@
 
 /* ESTRUCTURA DE BIS*/
 
-.ast91, .ast92, .ast93, .ast94, .ast95, .ast96, .alabadlo, .alabadlo1, .alabadlo2
+.ast91, .ast92, .ast93, .ast94, .ast95, .ast96, .alabadlo, .alabadlo1, .alabadlo2, .ast
 {position: relative;min-height: 0px;}
 
-.ast91::before, .ast92::before, .ast93::before, .ast94::before, .ast95::before, .ast96::before, .a321::before, .a322::before, .a323::before, .a324::before
+.ast91::before, .ast92::before, .ast93::before, .ast94::before, .ast95::before, .ast96::before, .a321::before, .a322::before, .a323::before, .a324::before, .ast::before
 {
     content: "*";
     position: absolute;
@@ -73,6 +73,8 @@
 .ast96::before {    @media (min-width: 384px) {height: 40px;margin-left: 128px;margin-top: -38px;}
                     @media (min-width: 768px) {height: 40px;margin-left: 237px;margin-top: -50px;}
                     @media (min-width: 992px) {height: 40px;margin-left: 183px;margin-top: -43px;}}
+
+
 
 .alabadlo::before, .alabadlo1::before, .alabadlo2::before {
     content: "¡ALABADLO!";

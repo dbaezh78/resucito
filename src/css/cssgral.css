@@ -604,7 +604,7 @@ display: none;}
 }
 
 /* --- Nuevos estilos para etiquetas de sección --- */
-.ta, .tc, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .bis, .pa {
+.ta, .tc, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .melisma1, .bis, .pa {
     position: relative;
     padding-left: 0em;
     min-height: 1.5em;
@@ -612,7 +612,7 @@ display: none;}
 
 /* Estilos COMPARTIDOS por todos los ::before */
 .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-.hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before
+.hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before
 {
     position: absolute;
     left: 0;
@@ -626,14 +626,14 @@ display: none;}
 /* Media queries para los ::before */
 @media (min-width: 384px) {
     .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before 
+    .hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before 
     {font-size: 0.9rem;
         left: -17px;
         top: 14px;}
 }
 @media (min-width: 768px) {
     .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before 
+    .hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before 
     {
         font-size: 1.6rem;
         left: -40px;
@@ -642,7 +642,7 @@ display: none;}
 }
 @media (min-width: 992px) {
     .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before  
+    .hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before  
     {
         font-size: 1.23rem;
         margin-top: 0%;
@@ -668,6 +668,7 @@ display: none;}
 .hombres::before {content: "Hombres:";}
 .mujeres::before {content: "Mujeres:";}
 .melisma::before {content: "[melisma]";}
+.melisma1::before {content: "[melisma]";}
 .bis::before {content: "BIS A.";}
 .pa::before {content: "P.";}
 
