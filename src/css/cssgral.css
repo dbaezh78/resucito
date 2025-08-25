@@ -604,15 +604,16 @@ display: none;}
 }
 
 /* --- Nuevos estilos para etiquetas de sección --- */
-.ta, .tc, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .melisma1, .bis, .pa {
-    position: relative;
+.ta, .tc, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .melisma1, .bis, .pa, .aleluya
+ {position: relative;
     padding-left: 0em;
     min-height: 1.5em;
 }
 
 /* Estilos COMPARTIDOS por todos los ::before */
 .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-.hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before
+.hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, 
+.pa::before, .tc1::before, .tc2::before, .aleluya::before
 {
     position: absolute;
     left: 0;
@@ -625,15 +626,19 @@ display: none;}
 
 /* Media queries para los ::before */
 @media (min-width: 384px) {
-    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before 
+    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, 
+    .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
+    .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
+    .aleluya::before
     {font-size: 0.9rem;
         left: -17px;
         top: 14px;}
 }
 @media (min-width: 768px) {
-    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before 
+    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, 
+    .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
+    .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
+    .aleluya::before 
     {
         font-size: 1.6rem;
         left: -40px;
@@ -641,8 +646,10 @@ display: none;}
     }
 }
 @media (min-width: 992px) {
-    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
-    .hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before  
+    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, 
+    .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
+    .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
+    .aleluya::before
     {
         font-size: 1.23rem;
         margin-top: 0%;
@@ -651,10 +658,10 @@ display: none;}
 }
 
 /* Color GRIS para la mayoría */
-.ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before,
-.niño::before, .hombres::before, .mujeres::before, .bis::before,
-.pa::before, .tc1::before, .tc2::before  
+.ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .bis::before, .pa::before, .tc1::before, .tc2::before
 {color: #80808065; /* Gris semitransparente */}
+
+.aleluya::before {font-weight: bolder;}
 
 /* Contenido específico para cada ::before */
 .tc::before, .tc1::before, .tc2::before
@@ -667,6 +674,7 @@ display: none;}
 .niño::before {content: "Niños:";}
 .hombres::before {content: "Hombres:";}
 .mujeres::before {content: "Mujeres:";}
+.aleluya::before {content: "A.\00a0\00a0\ ALELUYA.";} /*\00a0\ esto es para agregar espacio */
 .melisma::before {content: "[melisma]";}
 .melisma1::before {content: "[melisma]";}
 .bis::before {content: "BIS A.";}
