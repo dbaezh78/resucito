@@ -6888,6 +6888,169 @@ const allCantosData = [
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: HIMNO DE ADVIENTO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           HIMNO DE LA ASCENSIÓN               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "himnodelaascension",
+        tt: "Himno De La Ascensión",
+        title: "Himno De La Ascensión",
+        subtitle: "Himno de Laudes del tiempo Pascual, de la Ascensión a Pentecostés  / Himno de la liturgia de las horas ",
+        category: ["Precatecumenado","Pascua","Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "89",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/himnodelaascension.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=himnodeadviento",
+        sig: "/resucito/src/index.html?canto=himnodepascua",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "tc as"},
+            { line: "A LA DERECHA DEL PADRE,, (La,m,211)", sC: "as r1"},
+            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,228)", sC: "as"},
+            { line: "CON MARÍA EN EL CENÁCULO., (La,m,228)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Del esplendor eterno, (La,m,20)(Sol,,160)", sC: "tc"},
+            { line: "desciende el crisma profético,, (La,m,244)", sC: ""},
+            { line: "que consagra a los apóstoles, (Sol,,215)", sC: ""},
+            { line: "en heraldos del Evangelio., (La,m,215)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "ta as", lines: [
+            { line: "A LA DERECHA DEL PADRE,, (La,m,211)", sC: "as r1"},
+            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,228)", sC: "as"},
+            { line: "CON MARÍA EN EL CENÁCULO., (La,m,228)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ven, oh divino Espíritu,, (La,m,20)(Sol,,175)", sC: "tc"},
+            { line: "con tus santos dones, (La,m,163)", sC: ""},
+            { line: "y transforma nuestros cuerpos, (Sol,,244)", sC: ""},
+            { line: "en el templo de tu santa gloria., (La,m,257)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "ta as", lines: [
+            { line: "A LA DERECHA DEL PADRE,, (La,m,211)", sC: "as r1"},
+            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,228)", sC: "as"},
+            { line: "CON MARÍA EN EL CENÁCULO., (La,m,228)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Oh luz de eterna sabiduría,, (La,m,20)(Sol,,250)", sC: "tc"},
+            { line: "revélanos el gran misterio, (La,m,20)", sC: ""},
+            { line: "del Dios uno y trino, (Sol,,14)", sC: ""},
+            { line: "fuente de eterno amor., (La,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "ta as", lines: [
+            { line: "A LA DERECHA DEL PADRE,, (La,m,211)", sC: "as r1"},
+            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,228)", sC: "as"},
+            { line: "CON MARÍA EN EL CENÁCULO., (La,m,228)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: HIMNO DE LA ASCENSIÓN
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
