@@ -74,7 +74,9 @@
                     @media (min-width: 768px) {height: 40px;margin-left: 237px;margin-top: -50px;}
                     @media (min-width: 992px) {height: 40px;margin-left: 183px;margin-top: -43px;}}
 
-
+.ast::before {      @media (min-width: 384px) {margin-top: 5px; margin-left: 164px;}
+                    @media (min-width: 768px) {margin-top: 15px;margin-left: 305px;}
+                    @media (min-width: 992px) {margin-top: 9px; margin-left: 226px;}}
 
 .alabadlo::before, .alabadlo1::before, .alabadlo2::before {
     content: "¡ALABADLO!";
