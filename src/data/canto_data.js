@@ -6427,7 +6427,7 @@ const allCantosData = [
         nCanURL: "",
         dbno: "82",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/heaquiquevengopresto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -7072,7 +7072,7 @@ const allCantosData = [
         nCanURL: "",
         dbno: "92",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/idyanunciadamishermanos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -7085,51 +7085,306 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)", sC: "ta as"},
-            { line: "QUE VAYAN A GALILEA., (Sol,,14)(La,m,250)", sC: "as r1"},
+            { line: "QUE VAYAN A GALILEA., (Sol,,14)(La,m,196)", sC: "as r1"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Que allí me verán,, (Mi,,20)", sC: "tc"},
-            { line: "QUE ALLÍ ME VERÁN»., (La,m,20)", sC: "ta as"},
+            { line: "Que allí me verán,, (Mi,,69)", sC: "tc"},
+            { line: "QUE ALLÍ ME VERÁN»., (La,m,175)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Los discípulos fueron a Galilea,, (La,m,20)(Re,m,250)(La,m,350)", sC: "tc"},
-            { line: "al monte que Jesús les había indicado., (Re,m,22)(La,m,250)", sC: ""},
-            { line: "Cuando lo vieron le adoraron., (Mi,,20)(La,m,250)", sC: ""},
+            { line: "Los discípulos fueron a Galilea,, (La,m,20)(Re,m,162)(La,m,275)", sC: "tc"},
+            { line: "al monte que Jesús les había indicado., (Re,m,172)(La,m,340)", sC: ""},
+            { line: "Cuando lo vieron le adoraron., (Mi,,125)(La,m,238)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Y Jesús les dijo:, (Fa,,20)(Mi,,250)", sC: ""},
+            { line: "Y Jesús les dijo:, (Fa,,55)(Mi,,122)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "«Me ha sido dado todo poder, (Do,,10)(Sol,,250)", sC: ""},
-            { line: "en el cielo y en la tierra., (Do,,10)", sC: ""},
+            { line: "«Me ha sido dado todo poder, (Do,,10)(Sol,,257)", sC: ""},
+            { line: "en el cielo y en la tierra., (Do,,194)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ME HA SIDO DADO TODO PODER, (Do,,10)(Sol,,250)", sC: "ta as"},
-            { line: "EN EL CIELO Y EN LA TIERRA., (Do,,10)", sC: "as"},
+            { line: "ME HA SIDO DADO TODO PODER, (Do,,10)(Sol,,291)", sC: "ta as"},
+            { line: "EN EL CIELO Y EN LA TIERRA., (Do,,232)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Id, pues, y haced discípulos, (Do,,10)(Sol,,250)", sC: "tc"},
-            { line: "a todas las gentes, (Do,,10)", sC: ""},
-            { line: "bautizándolas en el nombre del Padre, (La,m,20)(Mi,,250)", sC: ""},
-            { line: "y del Hijo y del Espíritu Santo,, (La,m,20)", sC: ""},
+            { line: "Id, pues, y haced discípulos, (Do,,10)(Sol,,205)", sC: "tc"},
+            { line: "a todas las gentes, (Do,,125)", sC: ""},
+            { line: "bautizándolas en el nombre del Padre, (La,m,67)(Mi,,329)", sC: ""},
+            { line: "y del Hijo y del Espíritu Santo,, (La,m,242)", sC: ""},
     ], lder: [
-            { line: "y enseñándoles a poner en práctica,, (Fa,,20)", sC: ""},
-            { line: "todo lo que yo os he mandado., (Mi,,20)(La,m,250)", sC: ""},
+            { line: "y enseñándoles a poner en práctica,, (Fa,,10)", sC: ""},
+            { line: "todo lo que yo os he mandado., (Mi,,260)(La,m,311)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)", sC: "ta as", lines: [
-            { line: "QUE VAYAN A GALILEA., (Sol,,14)(La,m,250)", sC: "as r1"},  ]},
+            { line: "QUE VAYAN A GALILEA., (Sol,,63)(La,m,196)", sC: "as r1"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Ved que yo estoy con vosotros,, (La,m,20)", sC: "tc"},
-            { line: "ved que yo estoy con vosotros, (Sol,,14)", sC: ""},
-            { line: "todos los días., (La,m,20)", sC: ""},
+            { line: "ved que yo estoy con vosotros, (Sol,,238)", sC: ""},
+            { line: "todos los días., (La,m,109)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "VED QUE YO ESTOY CON VOSOTROS,, (La,m,20)", sC: "ta as"},
-            { line: "VED QUE YO ESTOY CON VOSOTROS, (Sol,,14)", sC: "as"},
-            { line: "TODOS LOS DÍAS., (La,m,20)", sC: "as"},
+            { line: "VED QUE YO ESTOY CON VOSOTROS, (Sol,,278)", sC: "as"},
+            { line: "TODOS LOS DÍAS., (La,m,139)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Hasta el fin del mundo,, (Mi,,20)", sC: "tc"},
-            { line: "HASTA EL FIN DEL MUNDO, (La,m,20)", sC: "ta as"},
+            { line: "HASTA EL FIN DEL MUNDO, (La,m,207)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)", sC: "ta as", lines: [
-            { line: "QUE VAYAN A GALILEA., (Sol,,14)(La,m,250)", sC: "as r1"},  ]},
+            { line: "QUE VAYAN A GALILEA., (Sol,,63)(La,m,196)", sC: "as r1"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: ID Y ANUNCIAD A MIS HERMANOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           IMPROPERIOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "improperios",
+        tt: "Improperios",
+        title: "Improperios",
+        subtitle: "Adoración de la santa Cruz el Viernes santo",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Fracción Del Pan"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "93",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/improperios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=idyanunciadamishermanos",
+        sig: "/resucito/src/index.html?canto=jerusalenreconstruida",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)", sC: "ta as"},
+            { line: "¿QUÉ MAL YO TE HE HECHO?, ", sC: "as"},
+            { line: "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)", sC: "as"},
+            { line: "¿EN QUÉ TE HE CONTRISTADO?, ", sC: "as"},
+            { line: "RESPÓNDEME., ", sC: "as"},
+            { line: "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo te he hecho salir de Egipto,, (La,m,20)(La,m6,248)", sC: "tc"},
+            { line: "yo te he abierto el mar en dos partes,, (La,m,18)", sC: ""},
+            { line: "yo te he liberado del Faraón, (La,m,18)", sC: ""},
+            { line: "y tú, y tú, me has preparado la cruz., (Si,7,30)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "¿QUÉ MAL YO TE HE HECHO?, ", sC: "as"},
+            { line: "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)", sC: "as"},
+            { line: "¿EN QUÉ TE HE CONTRISTADO?, ", sC: "as"},
+            { line: "RESPÓNDEME., ", sC: "as"},
+            { line: "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo te he abierto un camino en el desierto,, (La,m,20)(La,m6,359)", sC: ""},
+            { line: "yo te he alimentado con el maná,, (La,m,20)(La,m6,300)", sC: ""},
+            { line: "te he introducido en la Tierra Prometida,, (La,m,20)", sC: ""},
+            { line: "y tú, y tú, me has preparado la cruz., (Si,7,28)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "¿QUÉ MAL YO TE HE HECHO?, ", sC: "as"},
+            { line: "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)", sC: "as"},
+            { line: "¿EN QUÉ TE HE CONTRISTADO?, ", sC: "as"},
+            { line: "RESPÓNDEME., ", sC: "as"},
+            { line: "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)", sC: "as"},  ]},
+    ], lder: [
+            { line: "¿Qué más he podido hacer por ti, (La,m,20)", sC: "tc"},
+            { line: "que no haya hecho?, (La,m6,147)", sC: ""},
+            { line: "Yo te llamé: «Mi viña amada»,, (La,m,20)", sC: ""},
+            { line: "y tú, y tú me has dado fruto amargo., (Si,7,31)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Hágios o Théos,, (La,m,20)", sC: "tc"},
+            { line: "SANCTUS DEUS., (Si,7,112)", sC: "ta as"},
+            { line: "Hágios lschyrós,, (La,m,21)", sC: "tc"},
+            { line: "SANCTUS FORTIS., (Si,7,114)", sC: "ta as"},
+            { line: "Hágios Athánatos,, (La,m,20)", sC: "tc"},
+            { line: "ELÉISON HIMÁS., (Si,7,134)", sC: "ta as"},
+            { line: "Sanctus et inmortalis,, (La,m,20)", sC: "tc"},
+            { line: "MISERERE NOBIS., (Si,7,128)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "¿QUÉ MAL YO TE HE HECHO?, ", sC: "as"},
+            { line: "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)", sC: "as"},
+            { line: "¿EN QUÉ TE HE CONTRISTADO?, ", sC: "as"},
+            { line: "RESPÓNDEME., ", sC: "as"},
+            { line: "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: IMPROPERIOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           JERUSALÉN RECONSTRUIDA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "jerusalenreconstruida",
+        tt: "Jerusalén Reconstruida",
+        title: "Jerusalén Reconstruida",
+        subtitle: "Tobias 13,11-17",
+        category: ["Precatecumenado","Pascua","Pentecostés","Paz","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "5",
+        nCan: "",
+        nCanURL: "",
+        dbno: "94",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/jerusalenreconstruida.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=improperios",
+        sig: "/resucito/src/index.html?canto=jesusrecorriatodaslasciudades",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Bendice, alma mía al Señor,, (Mi,m,20)(Re,,250)", sC: "tc"},
+            { line: "bendice, alma mía, al gran Rey,, (Mi,m,283)", sC: ""},
+            { line: "porque será reconstruida, (Re,,216)", sC: ""},
+            { line: "Jerusalén, Jerusalén., (Mi,m,177)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as"},
+            { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
+            { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
+            { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Jerusalén será reconstruida,, (Mi,m,20)(Re,,250)", sC: "tc"},
+            { line: "con zafiros y esmeraldas,, (Mi,m,193)", sC: ""},
+            { line: "de piedras preciosas sus murallas,, (Re,,287)", sC: ""},
+            { line: "sus torres con oro puro., (Mi,m,194)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sus plazas serán de rubí,, (Re,,232)", sC: ""},
+            { line: "sus calles de oro de Ofir,, (Mi,m,220)", sC: ""},
+            { line: "sobre sus puertas se exultará, (Re,,275)", sC: ""},
+            { line: "y en sus casas se cantará., (Mi,m,238)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
+            { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
+            { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
+            { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Brillará tu luz hasta los confines de la tierra,, (Mi,m,20)(Re,,383)", sC: ""},
+            { line: "vendrán a ti pueblos numerosos,, (Mi,m,270)", sC: ""},
+    ], lder: [
+            { line: "vendrán a ti todas las naciones,, (Re,,260)", sC: ""},
+            { line: "hasta la casa de tu Nombre., (Mi,m,207)", sC: ""},
+            { line: "Las generaciones te cantarán,, (Re,,267)", sC: ""},
+            { line: "todos los pueblos exultarán, (Mi,m,243)", sC: ""},
+            { line: "y en ella el nombre de tu Elegido, (Re,,283)", sC: ""},
+            { line: "será para siempre, será para siempre., (Mi,m,300)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
+            { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
+            { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
+            { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Malditos sean los que te dicen palabras crueles,, (Mi,m,20)(Re,,421)", sC: "tc"},
+            { line: "malditos sean los que te destruyen,, (Mi,m,293)", sC: ""},
+            { line: "todos los que derriban tus murallas,, (Re,,299)", sC: ""},
+            { line: "y tiran por tierra tus torres., (Mi,m,211)", sC: ""},
+            { line: "Mas sean benditos, benditos para siempre,, (Re,,149)(Mi,m,352)", sC: ""},
+            { line: "los que te construyen, los que te edifican., (Re,,163)(Mi,m,356)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Benditos los que te aman,, (Re,,197)", sC: ""},
+            { line: "los que lloran por tus castigos,, (Mi,m,248)", sC: ""},
+            { line: "porque en tus puertas exultarán,, (Re,,288)", sC: ""},
+            { line: "porque en sus casas te cantarán., (Mi,m,293)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
+            { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
+            { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
+            { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Mi,m,20)(Re,,154)(Mi,m,347)", sC: "ta as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Re,,155)(Mi,m,347)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: JERUSALÉN RECONSTRUIDA
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           JESÚS RECORRÍA TODAS LAS                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "jesusrecorriatodaslasciudades",
+        tt: "Jesús Recorría Todas Las Ciudades ",
+        title: "Jesús recorría todas las ciudades",
+        subtitle: "Mateo 9,35ss; 10 ",
+        category: ["Precatecumenado","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "95",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/jesusrecorriatodaslasciudades.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=jerusalenreconstruida",
+        sig: "/resucito/src/index.html?canto=lacorderadedios",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Jesús recorría todas las ciudades., (La,m,20)(Fa,,121)(La,m,279)", sC: "tc"},
+            { line: "Jesús de pueblo en pueblo, (Fa,,216)", sC: ""},
+            { line: "anunciaba el Reino., (La,m,151)", sC: ""},
+            { line: "Y viendo las gentes que lo seguían, (Re,m,39)(Mi,7,306)", sC: ""},
+            { line: "se conmovió., (La,m,113)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ESTABAN CANSADOS,, (Mi,m,20)", sC: "tc as"},
+            { line: "ESTABAN ABATIDOS, (Fa,,149)", sC: "as r1"},
+            { line: "COMO OVEJAS SIN PASTOR., (Mi,,242)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Entonces Jesús dijo a sus discípulos:, (La,m,20)(Fa,,130)(Mi,7,293)", sC: "tc"},
+            { line: "«La mies es grande,, (La,m,20)", sC: ""},
+            { line: "es verdaderamente grande,, (Sol,,216)", sC: ""},
+            { line: "y los obreros son pocos., (La,m,87)(Mi,,185)", sC: ""},
+            { line: "Rogad, hermanos, al dueño de la mies, (La,m,129)(Sol,,352)", sC: ""},
+            { line: "que envíe obreros a su mies., (La,m,84)(Mi,,255)", sC: ""},
+            { line: "Mirad que yo os envío, (Do,,10)(Sol,,192)", sC: ""},
+            { line: "como ovejas entre lobos., (La,m,84)(Sol,,195)", sC: ""},
+            { line: "Sed prudentes como serpientes, (Do,,92)(Sol,,256)", sC: ""},
+            { line: "y sencillos como palomas,, (La,m,63)(Sol,,199)", sC: ""},
+            { line: "COMO PALOMAS., (La,m,20)", sC: "ta as"},
+    ], lder: [
+            { line: "No llevéis ni bolsa ni dinero,, (Do,,10)(Sol,,234)", sC: "tc"},
+            { line: "ni alforja, ni calzado., (La,m,57)(Sol,,159)", sC: ""},
+            { line: "Y anunciad que el Reino está cerca,, (Do,,89)(Sol,,298)", sC: ""},
+            { line: "Cristo ha resucitado y viene con nosotros,, (La,m,20)(Sol,,345)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "VIENE CON NOSOTROS., (La,m,157)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El que ama a su padre o a su madre más que a mí,, (Do,,10)", sC: "tc txcant"},
+
+            { line: "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,82)(La,m,288)", sC: "ta as"},
+            { line: "El que ama a su hijo o a su hija más que a mí, (Do,,10)", sC: "tc"},
+            { line: "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,82)(La,m,285)", sC: "ta as"},
+            { line: "El que no tome su cruz y me siga,, (Do,,10)", sC: "tc"},
+            { line: "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,81)(La,m,285)", sC: "ta as"},
+            { line: "Porque el que busca en este mundo su vida,, (Do,,10)", sC: "tc"},
+            { line: "LA PERDERÁ, LA PERDERÁ., (Sol,,122)(La,m,256)", sC: "ta as"},
+            { line: "Y el que pierda su vida por el amor mío,, (Do,,107)", sC: "tc"},
+            { line: "LA ENCONTRARÁ, LA ENCONTRARÁ., (Sol,,159)(La,m,334)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Quien os escucha,, (Sol,,124)", sC: "tc"},
+            { line: "ME ESCUCHA A MÍ., (La,m,171)", sC: "ta as tleft"},
+
+            { line: "Quien os acoge,, (Sol,m,126)", sC: "tc"},
+            { line: "ME ACOGE A MÍ., (La,m,147)", sC: "ta as tleft"},
+
+            { line: "QUIEN ME ACOGE A MÍ,, (Sol,,215)", sC: "ta as"},
+            { line: "ACOGE A DIOS, ACOGE A DIOS»., (Fa,,122)(Mi,,272)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: JESÚS RECORRÍA TODAS LAS 
 // SIGUIENTE CANTO DEBAJO
 
 
