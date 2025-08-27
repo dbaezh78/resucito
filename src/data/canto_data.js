@@ -7386,6 +7386,104 @@ const allCantosData = [
             { line: "ACOGE A DIOS, ACOGE A DIOS»., (Fa,,122)(Mi,,272)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: JESÚS RECORRÍA TODAS LAS 
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LA CORDERA DE DIOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lacorderadedios",
+        tt: "La Cordera De Dios",
+        title: "La Cordera De Dios",
+        subtitle: "Mateo 1,18s; 2,13s.18",
+        category: ["Precatecumenado","Vírgen María","Adviento","Navidad","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "96",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/lacorderadedios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=jesusrecorriatodaslas",
+        sig: "/resucito/src/index.html?canto=laespada",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Era la Virgen María prometida de José,, (Mi,m,20)(La,m,209)", sC: "tc"},
+            { line: "cuando antes de que vivieran juntos,, (Do,,10)", sC: ""},
+            { line: "se encontró encinta por obra, ", sC: ""},
+            { line: "del Espíritu Santo., (Si,7,132)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y José, como era justo, (Mi,m,20)", sC: ""},
+            { line: "y no quería repudiarla,, (La,m,90)", sC: ""},
+            { line: "decidió abandonarla en secreto., (Do,,64)(Si,7,279)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "QUÉ AMARGA ES EL AGUA, MARÍA, (Mi,m,315)", sC: "ta as"},
+            { line: "CORDERA DE DIOS, HUMILDE CORDERA,, (Do,,10)", sC: "as"},
+            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
+            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "María dio a luz a su hijo,, (Mi,m,20)", sC: "tc"},
+            { line: "lo envolvió en pañales, (La,m,20)", sC: ""},
+            { line: "y lo acostó en un pesebre, ", sC: ""},
+            { line: "porque no había sitio para ellos en la posada., (Do,,10)(Si,7,400)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUÉ AMARGA ES EL AGUA, MARÍA, (Mi,m,315)", sC: "ta as", lines: [
+            { line: "CORDERA DE DIOS, HUMILDE CORDERA,, (Do,,10)", sC: "as"},
+            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
+            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Y una noche José se levantó,, (Mi,m,20)", sC: "tc"},
+            { line: "tomó al niño y a su madre, (La,m,20)", sC: ""},
+            { line: "y huyó a Egipto, (Do,,10)", sC: ""},
+            { line: "porque querían matar al niño., (Si,7,251)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUÉ AMARGA ES EL AGUA, MARÍA, (Mi,m,315)", sC: "ta as", lines: [
+            { line: "CORDERA DE DIOS, HUMILDE CORDERA,, (Do,,10)", sC: "as"},
+            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
+            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Un grito se siente en Ramá, ¡Ay Ayaay!, (Mi,m,20)", sC: "tc"},
+            { line: "un llanto y un lamento grande:, (La,m,20)", sC: ""},
+            { line: "es Raquel que llora a sus hijos,, (Do,,10)", sC: ""},
+            { line: "y no quiere ser consolada,, (La,m,213)", sC: ""},
+            { line: "porque ya no existen., (Si,7,156)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUÉ AMARGA ES EL AGUA, MARÍA, (Mi,m,315)", sC: "ta as", lines: [
+            { line: "CORDERA DE DIOS, HUMILDE CORDERA,, (Do,,10)", sC: "as"},
+            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
+            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Ángel del Señor le dijo a José en Egipto:, (Mi,m,20)", sC: "tc"},
+            { line: "«Levántate, toma contigo al niño y a su madre, (La,m,20)", sC: ""},
+            { line: "y vuelve a la tierra de Israel,, (Do,,44)(Si,7,254)", sC: ""},
+            { line: "porque \"de Egipto llamé a mi Hijo\"»., (Mi,m,303)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "CORDERA DE DIOS, (Do,,10)", sC: "ta as", lines: [
+            { line: "HUMILDE CORDERA, ", sC: "as"},
+            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
+            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: LA CORDERA DE DIOS
+// SIGUIENTE CANTO DEBAJO
 
 
 

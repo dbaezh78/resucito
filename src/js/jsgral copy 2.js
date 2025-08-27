@@ -121,7 +121,6 @@ const chordImageFilenames = [
     "sols.jpg", 
     "solsm.jpg",
     "sols7.jpg", 
-    "solsdim7.jpg", 
 
     "la.jpg", 
     "la2.jpg", 
@@ -141,8 +140,6 @@ const chordImageFilenames = [
     "sib7.jpg", 
     "sibm.jpg", 
     "sim.jpg",
-    
-
 
 ];
 const IMAGE_BASE_PATH = "/docs/ima/";
@@ -178,7 +175,6 @@ const getDisplayNameFromFilename = (filename) => {
     name = name.replace(/sibm$/, 'si♭m');
     name = name.replace(/sol2$/, 'sol');
     name = name.replace(/sol3$/, 'sol');
-    name = name.replace(/solsdim7$/, 'solsdim7');
     name = name.replace(/la3$/, 'la');
     // Reemplazar 'b' por '♭' para bemoles (ej. 'sib' -> 'Si♭')
     name = name.replace(/b$/, '♭');
