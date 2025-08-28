@@ -5171,7 +5171,7 @@ const allCantosData = [
             { line: "y abrir sus sellos, (Sol,m,45)(La,,119)", sC: ""},
             { line: "porque tú has sido inmolado, (La,7,88)(Re,m,246)", sC: ""},
             { line: "y has comprado con tu sangre, (La,,237)", sC: ""},
-            { line: "hombres de toda raza,, (Re,m,22)", sC: ""},
+            { line: "hombres de toda raza, (Re,m,22)", sC: ""},
             { line: "lengua, pueblo y nación;, ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Y HAS HECHO DE ELLOS, (Fa,,8)(La,m,182)", sC: "ta as"},
@@ -5238,12 +5238,12 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as"},
-            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
-            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
-            { line: "ERES BENDITO,, ", sC: "as"},
-            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS. ", sC: "as"},
+            { line: "ERES BENDITO, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Ciñe la espada a tu flanco, oh valiente,, (Do#,m,28)(Sol#,,335)", sC: "tc"},
             { line: "y marcha lleno de gloria y esplendor,, (La,,46)(Sol#,,334)", sC: ""},
@@ -5258,35 +5258,35 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
-            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
-            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
-            { line: "ERES BENDITO,, ", sC: "as"},
-            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS. ", sC: "as"},
+            { line: "ERES BENDITO, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE. ", sC: "as"},  ]},
     ], lder: [
             { line: "Desde los palacios de marfil, (Do#,m,26)(Sol#,,264)", sC: "tc"},
             { line: "las cítaras cantan para ti., (La,,46)(Sol#,,234)", sC: ""},
             { line: "Hijas de reyes son tus favoritas;, (Fa#,m,25)(Sol#,,264)", sC: ""},
-            { line: "a tu derecha está la reina,, (Si,,80)(La,,207)", sC: ""},
-            { line: "en oro de Ofir., (Sol#,,123)", sC: ""},
+            { line: "a tu derecha está la reina, (Si,,80)(La,,207)", sC: ""},
+            { line: "en oro de Ofir. (Sol#,,123)", sC: ""},
             { line: "A TU DERECHA ESTÁ LA REINA, (Si,,100)(La,,259)", sC: "ta as"},
-            { line: "EN ORO DE OFIR., (Sol#,,148)", sC: "as"},
+            { line: "EN ORO DE OFIR. (Sol#,,148)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
-            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
-            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
-            { line: "ERES BENDITO,, ", sC: "as"},
-            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS. ", sC: "as"},
+            { line: "ERES BENDITO, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE. ", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Escucha, hija, y mira, inclina el oído,, (Do#,m,29)(Sol#,,171)(La,,243)(Sol#,,315)", sC: "tc"},
             { line: "olvida tu pueblo y la casa de tu padre,, (Fa#,m,34)(Sol#,,318)", sC: ""},
             { line: "y el rey se prendará de tu belleza., (Si,,54)(La,,179)(Sol#,,288)", sC: ""},
             { line: "Y EL REY SE PRENDARÁ, (Si,,70)(La,,222)", sC: "ta as"},
-            { line: "DE TU BELLEZA., (Sol#,,119)", sC: "as"},
+            { line: "DE TU BELLEZA. (Sol#,,119)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "El es tu Señor, ¡entrégate a él!, (Fa#,m,27)(Sol#,,119)(Fa#,m,193)(Sol#,,272)", sC: "tc"},
             { line: "Y en lugar de padres, tendrás hijos,, (Si,,8)(La,,298)", sC: ""},
@@ -5294,12 +5294,12 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
-            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
-            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
-            { line: "ERES BENDITO,, ", sC: "as"},
-            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS. ", sC: "as"},
+            { line: "ERES BENDITO, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE. ", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ERES HERMOSO
 // SIGUIENTE CANTO DEBAJO
 /*
