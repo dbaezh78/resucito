@@ -271,7 +271,7 @@
 }
 
 .cristo {
-    z-index: 999;
+    /*z-index: 999;*/
     position: fixed;
     align-self: normal;
     opacity: 0.4; /* Adjust the opacity value (0.0 - 1.0) */

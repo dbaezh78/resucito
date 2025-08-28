@@ -5171,7 +5171,7 @@ const allCantosData = [
             { line: "y abrir sus sellos, (Sol,m,45)(La,,119)", sC: ""},
             { line: "porque tú has sido inmolado, (La,7,88)(Re,m,246)", sC: ""},
             { line: "y has comprado con tu sangre, (La,,237)", sC: ""},
-            { line: "hombres de toda raza, (Re,m,22)", sC: ""},
+            { line: "hombres de toda raza,, (Re,m,22)", sC: ""},
             { line: "lengua, pueblo y nación;, ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Y HAS HECHO DE ELLOS, (Fa,,8)(La,m,182)", sC: "ta as"},
@@ -5238,12 +5238,12 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as"},
-            { line: "DE LOS HIJOS DE ADÁN, ", sC: "as"},
-            { line: "DE LOS HIJOS DE ADÁN. ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA GRACIA ESTÁ EN TUS LABIOS. ", sC: "as"},
-            { line: "ERES BENDITO, ", sC: "as"},
-            { line: "EL BENDITO PARA SIEMPRE. ", sC: "as"},
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
+            { line: "ERES BENDITO,, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Ciñe la espada a tu flanco, oh valiente,, (Do#,m,28)(Sol#,,335)", sC: "tc"},
             { line: "y marcha lleno de gloria y esplendor,, (La,,46)(Sol#,,334)", sC: ""},
@@ -5258,35 +5258,35 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
-            { line: "DE LOS HIJOS DE ADÁN, ", sC: "as"},
-            { line: "DE LOS HIJOS DE ADÁN. ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA GRACIA ESTÁ EN TUS LABIOS. ", sC: "as"},
-            { line: "ERES BENDITO, ", sC: "as"},
-            { line: "EL BENDITO PARA SIEMPRE. ", sC: "as"},  ]},
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
+            { line: "ERES BENDITO,, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
     ], lder: [
             { line: "Desde los palacios de marfil, (Do#,m,26)(Sol#,,264)", sC: "tc"},
             { line: "las cítaras cantan para ti., (La,,46)(Sol#,,234)", sC: ""},
             { line: "Hijas de reyes son tus favoritas;, (Fa#,m,25)(Sol#,,264)", sC: ""},
-            { line: "a tu derecha está la reina, (Si,,80)(La,,207)", sC: ""},
-            { line: "en oro de Ofir. (Sol#,,123)", sC: ""},
+            { line: "a tu derecha está la reina,, (Si,,80)(La,,207)", sC: ""},
+            { line: "en oro de Ofir., (Sol#,,123)", sC: ""},
             { line: "A TU DERECHA ESTÁ LA REINA, (Si,,100)(La,,259)", sC: "ta as"},
-            { line: "EN ORO DE OFIR. (Sol#,,148)", sC: "as"},
+            { line: "EN ORO DE OFIR., (Sol#,,148)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
-            { line: "DE LOS HIJOS DE ADÁN, ", sC: "as"},
-            { line: "DE LOS HIJOS DE ADÁN. ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA GRACIA ESTÁ EN TUS LABIOS. ", sC: "as"},
-            { line: "ERES BENDITO, ", sC: "as"},
-            { line: "EL BENDITO PARA SIEMPRE. ", sC: "as"},  ]},
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
+            { line: "ERES BENDITO,, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Escucha, hija, y mira, inclina el oído,, (Do#,m,29)(Sol#,,171)(La,,243)(Sol#,,315)", sC: "tc"},
             { line: "olvida tu pueblo y la casa de tu padre,, (Fa#,m,34)(Sol#,,318)", sC: ""},
             { line: "y el rey se prendará de tu belleza., (Si,,54)(La,,179)(Sol#,,288)", sC: ""},
             { line: "Y EL REY SE PRENDARÁ, (Si,,70)(La,,222)", sC: "ta as"},
-            { line: "DE TU BELLEZA. (Sol#,,119)", sC: "as"},
+            { line: "DE TU BELLEZA., (Sol#,,119)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "El es tu Señor, ¡entrégate a él!, (Fa#,m,27)(Sol#,,119)(Fa#,m,193)(Sol#,,272)", sC: "tc"},
             { line: "Y en lugar de padres, tendrás hijos,, (Si,,8)(La,,298)", sC: ""},
@@ -5294,12 +5294,12 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ERES HERMOSO, EL MÁS HERMOSO, (Mi,,11)", sC: "ta as", lines: [
-            { line: "DE LOS HIJOS DE ADÁN, ", sC: "as"},
-            { line: "DE LOS HIJOS DE ADÁN. ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN,, ", sC: "as"},
+            { line: "DE LOS HIJOS DE ADÁN., ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA GRACIA ESTÁ EN TUS LABIOS. ", sC: "as"},
-            { line: "ERES BENDITO, ", sC: "as"},
-            { line: "EL BENDITO PARA SIEMPRE. ", sC: "as"},  ]},
+            { line: "LA GRACIA ESTÁ EN TUS LABIOS., ", sC: "as"},
+            { line: "ERES BENDITO,, ", sC: "as"},
+            { line: "EL BENDITO PARA SIEMPRE., ", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ERES HERMOSO
 // SIGUIENTE CANTO DEBAJO
 /*
@@ -6427,7 +6427,7 @@ const allCantosData = [
         nCanURL: "",
         dbno: "82",
         notes: "",
-        mant: "No",
+        mant: "Si",
         audioSrc: "/audio/heaquiquevengopresto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -6916,574 +6916,122 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=himnodepascua",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "ta as"},
-            { line: "A LA DERECHA DEL PADRE,, (La,m,212)", sC: "as r1"},
-            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,229)", sC: "as"},
+            { line: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "tc as"},
+            { line: "A LA DERECHA DEL PADRE,, (La,m,211)", sC: "as r1"},
+            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,228)", sC: "as"},
             { line: "CON MARÍA EN EL CENÁCULO., (La,m,228)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Del esplendor eterno, (La,m,20)(Sol,,162)", sC: "tc"},
-            { line: "desciende el crisma profético,, (La,m,245)", sC: ""},
-            { line: "que consagra a los apóstoles, (Sol,,212)", sC: ""},
-            { line: "en heraldos del Evangelio., (La,m,216)", sC: ""},
+            { line: "Del esplendor eterno, (La,m,20)(Sol,,160)", sC: "tc"},
+            { line: "desciende el crisma profético,, (La,m,244)", sC: ""},
+            { line: "que consagra a los apóstoles, (Sol,,215)", sC: ""},
+            { line: "en heraldos del Evangelio., (La,m,215)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "ta as", lines: [
-            { line: "A LA DERECHA DEL PADRE,, (La,m,212)", sC: "as r1"},
-            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,229)", sC: "as"},
+            { line: "A LA DERECHA DEL PADRE,, (La,m,211)", sC: "as r1"},
+            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,228)", sC: "as"},
             { line: "CON MARÍA EN EL CENÁCULO., (La,m,228)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Ven, oh divino Espíritu,, (La,m,20)(Sol,,162)", sC: "tc"},
-            { line: "con tus santos dones, (La,m,245)", sC: ""},
-            { line: "y transforma nuestros cuerpos, (Sol,,212)", sC: ""},
-            { line: "en el templo de tu santa gloria., (La,m,216)", sC: ""},
+            { line: "Ven, oh divino Espíritu,, (La,m,20)(Sol,,175)", sC: "tc"},
+            { line: "con tus santos dones, (La,m,163)", sC: ""},
+            { line: "y transforma nuestros cuerpos, (Sol,,244)", sC: ""},
+            { line: "en el templo de tu santa gloria., (La,m,257)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "ta as", lines: [
-            { line: "A LA DERECHA DEL PADRE,, (La,m,212)", sC: "as r1"},
-            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,229)", sC: "as"},
+            { line: "A LA DERECHA DEL PADRE,, (La,m,211)", sC: "as r1"},
+            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,228)", sC: "as"},
             { line: "CON MARÍA EN EL CENÁCULO., (La,m,228)", sC: "as"},  ]},
     ], lder: [
-            { line: "Oh luz de eterna sabiduría,, (La,m,20)(Sol,,233)", sC: "tc"},
-            { line: "revélanos el gran misterio, (La,m,217)", sC: ""},
-            { line: "del Dios uno y trino, (Sol,,155)", sC: ""},
-            { line: "fuente de eterno amor., (La,m,196)", sC: ""},
+            { line: "Oh luz de eterna sabiduría,, (La,m,20)(Sol,,250)", sC: "tc"},
+            { line: "revélanos el gran misterio, (La,m,20)", sC: ""},
+            { line: "del Dios uno y trino, (Sol,,14)", sC: ""},
+            { line: "fuente de eterno amor., (La,m,20)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "EL BUEN PASTOR HA SUBIDO, (La,m,20)(Sol,,250)", sC: "ta as", lines: [
-            { line: "A LA DERECHA DEL PADRE,, (La,m,212)", sC: "as r1"},
-            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,229)", sC: "as"},
+            { line: "A LA DERECHA DEL PADRE,, (La,m,211)", sC: "as r1"},
+            { line: "VELA EL PEQUEÑO REBAÑO, (Sol,,228)", sC: "as"},
             { line: "CON MARÍA EN EL CENÁCULO., (La,m,228)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: HIMNO DE LA ASCENSIÓN
 // SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           HIMNO DE PASCUA               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "himnodepascua",
-        tt: "Himno De Pascua",
-        title: "Himno De Pascua",
-        subtitle: "Himno lat. «Aurora lucis rutiiat»",
-        category: ["Precatecumenado","Pascua","Pentecostés"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        nCanURL: "",
-        dbno: "90",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/himnodepascua.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=himnodelaascension",
-        sig: "/resucito/src/index.html?canto=huyeamadomio",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "La aurora tiñe de púrpura el cielo,, (La,m,20)", sC: "tc"},
-            { line: "resuena en los aires el eco de las alabanzas,, (Mi,7,373)", sC: ""},
-            { line: "el mundo triunfante se alegra,, ", sC: ""},
-            { line: "tenebroso el infierno brama., (La,m,226)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "MIENTRAS EL REY, CRISTO,, (La,7,20)(Re,m,159)", sC: "ta as"},
-            { line: "LIBRA A TODOS DE LA CÁRCEL, (La,m,242)", sC: "as r1"},
-            { line: "TENEBROSA QUE ES LA MUERTE, (Mi,7,271)", sC: "as"},
-            { line: "Y NOS CONDUCE A LA VIDA., (La,m,230)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Una piedra sellaba su sepulcro,, (La,m,20)", sC: "tc"},
-            { line: "muchos guardias lo custodiaban,, (Mi,7,272)", sC: ""},
-            { line: "pero Él triunfa glorioso, ", sC: ""},
-            { line: "y de la muerte se levanta., (La,m,205)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "NO MÁS LUTOS, NI LLANTOS,, (La,7,20)(Re,m,103)", sC: "ta as"},
-            { line: "NI PESARES,, (La,m,73)", sC: "as r2"},
-            { line: "¡RESUCITÓ!, (Mi,,98)", sC: "as"},
-            { line: "¡RESUCITÓ!, (La,m,96)", sC: "as"},
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: HIMNO DE PASCUA
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           HUYE, AMADO MÍO               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "huyeamadomio",
-        tt: "Huye, Amado Mío",
-        title: "Huye, Amado Mío",
-        subtitle: "Cantar de los Cantares 8,10-14",
-        category: ["Precatecumenado","Pascua","Pentecostés","Comunión","Final","Antiguo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "* Golpe en Fa# m, golpe al aire y Mi",
-        nCanURL: "",
-        dbno: "91",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/huyeamadomio.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=himnodepascua",
-        sig: "/resucito/src/index.html?canto=idyanunciadamishermanos",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "Tú, que vives en los jardines,, (La,m,20)Re(m,,218)", sC: "tc"},
-            { line: "donde tus compañeros te están escuchando:, (Mi,7,384)", sC: ""},
-            { line: "hazme oír tu voz,, (Fa,,14)", sC: ""},
-            { line: "hazme oír tu voz., (Mi,,140)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "HUYE, AMADO MÍO,, (La,,10)", sC: "ta as"},
-            { line: "COMO UNA GACELA,, (Mi,,162)", sC: "as"},
-            { line: "COMO UN CERVATILLO,, (Fa#,m,23)", sC: "as ast"},
-            { line: "HASTA EL MONTE DE LAS BALSAMERAS., (Mi,,25)(La,,342)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Yo soy para mi amado, (La,m,20)Re(m,,179)", sC: "tc"},
-            { line: "como aquella que encontró la paz., (La,m,310)", sC: ""},
-            { line: "Mi viña está aquí, está ante mí,, (Mi,,161)(La,m,288)", sC: ""},
-            { line: "mi viña está aquí, está ante mí., (Mi,,161)(La,m,287)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HUYE, AMADO MÍO,, (La,,10)", sC: "ta as", lines: [
-            { line: "COMO UNA GACELA,, (Mi,,162)", sC: "as"},
-            { line: "COMO UN CERVATILLO,, (Fa#,m,23)", sC: "as ast"},
-            { line: "HASTA EL MONTE DE LAS BALSAMERAS., (Mi,,25)(La,,342)", sC: "as"},  ]},
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: HUYE, AMADO MÍO
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           ID Y ANUNCIAD A MIS HERMANOS               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "idyanunciadamishermanos",
-        tt: "Id Y Anunciad A Mis Hermanos",
-        title: "Id Y Anunciad A Mis Hermanos",
-        subtitle: "Mateo 28,10.16-20",
-        category: ["Precatecumenado","Pascua","Pentecostés","Final","Nuevo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        nCanURL: "",
-        dbno: "92",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/idyanunciadamishermanos.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=huyeamadomio",
-        sig: "/resucito/src/index.html?canto=improperios",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)", sC: "ta as"},
-            { line: "QUE VAYAN A GALILEA., (Sol,,14)(La,m,196)", sC: "as r1"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Que allí me verán,, (Mi,,69)", sC: "tc"},
-            { line: "QUE ALLÍ ME VERÁN»., (La,m,175)", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Los discípulos fueron a Galilea,, (La,m,20)(Re,m,162)(La,m,275)", sC: "tc"},
-            { line: "al monte que Jesús les había indicado., (Re,m,172)(La,m,340)", sC: ""},
-            { line: "Cuando lo vieron le adoraron., (Mi,,125)(La,m,238)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Y Jesús les dijo:, (Fa,,55)(Mi,,122)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "«Me ha sido dado todo poder, (Do,,10)(Sol,,257)", sC: ""},
-            { line: "en el cielo y en la tierra., (Do,,194)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ME HA SIDO DADO TODO PODER, (Do,,10)(Sol,,291)", sC: "ta as"},
-            { line: "EN EL CIELO Y EN LA TIERRA., (Do,,232)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Id, pues, y haced discípulos, (Do,,10)(Sol,,205)", sC: "tc"},
-            { line: "a todas las gentes, (Do,,125)", sC: ""},
-            { line: "bautizándolas en el nombre del Padre, (La,m,67)(Mi,,329)", sC: ""},
-            { line: "y del Hijo y del Espíritu Santo,, (La,m,242)", sC: ""},
-    ], lder: [
-            { line: "y enseñándoles a poner en práctica,, (Fa,,10)", sC: ""},
-            { line: "todo lo que yo os he mandado., (Mi,,260)(La,m,311)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)", sC: "ta as", lines: [
-            { line: "QUE VAYAN A GALILEA., (Sol,,63)(La,m,196)", sC: "as r1"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Ved que yo estoy con vosotros,, (La,m,20)", sC: "tc"},
-            { line: "ved que yo estoy con vosotros, (Sol,,238)", sC: ""},
-            { line: "todos los días., (La,m,109)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "VED QUE YO ESTOY CON VOSOTROS,, (La,m,20)", sC: "ta as"},
-            { line: "VED QUE YO ESTOY CON VOSOTROS, (Sol,,278)", sC: "as"},
-            { line: "TODOS LOS DÍAS., (La,m,139)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Hasta el fin del mundo,, (Mi,,20)", sC: "tc"},
-            { line: "HASTA EL FIN DEL MUNDO, (La,m,207)", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "«ID Y ANUNCIAD A MIS HERMANOS, (La,m,20)", sC: "ta as", lines: [
-            { line: "QUE VAYAN A GALILEA., (Sol,,63)(La,m,196)", sC: "as r1"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-]}, // ULTIMA LINEA DEL CANTO: ID Y ANUNCIAD A MIS HERMANOS
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           IMPROPERIOS               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "improperios",
-        tt: "Improperios",
-        title: "Improperios",
-        subtitle: "Adoración de la santa Cruz el Viernes santo",
-        category: ["Precatecumenado","Cuaresma","Penitencial","Fracción Del Pan"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        nCanURL: "",
-        dbno: "93",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/improperios.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=idyanunciadamishermanos",
-        sig: "/resucito/src/index.html?canto=jerusalenreconstruida",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)", sC: "ta as"},
-            { line: "¿QUÉ MAL YO TE HE HECHO?, ", sC: "as"},
-            { line: "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)", sC: "as"},
-            { line: "¿EN QUÉ TE HE CONTRISTADO?, ", sC: "as"},
-            { line: "RESPÓNDEME., ", sC: "as"},
-            { line: "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Yo te he hecho salir de Egipto,, (La,m,20)(La,m6,248)", sC: "tc"},
-            { line: "yo te he abierto el mar en dos partes,, (La,m,18)", sC: ""},
-            { line: "yo te he liberado del Faraón, (La,m,18)", sC: ""},
-            { line: "y tú, y tú, me has preparado la cruz., (Si,7,30)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)", sC: "ta as", lines: [
-            { line: "¿QUÉ MAL YO TE HE HECHO?, ", sC: "as"},
-            { line: "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)", sC: "as"},
-            { line: "¿EN QUÉ TE HE CONTRISTADO?, ", sC: "as"},
-            { line: "RESPÓNDEME., ", sC: "as"},
-            { line: "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Yo te he abierto un camino en el desierto,, (La,m,20)(La,m6,359)", sC: ""},
-            { line: "yo te he alimentado con el maná,, (La,m,20)(La,m6,300)", sC: ""},
-            { line: "te he introducido en la Tierra Prometida,, (La,m,20)", sC: ""},
-            { line: "y tú, y tú, me has preparado la cruz., (Si,7,28)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)", sC: "ta as", lines: [
-            { line: "¿QUÉ MAL YO TE HE HECHO?, ", sC: "as"},
-            { line: "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)", sC: "as"},
-            { line: "¿EN QUÉ TE HE CONTRISTADO?, ", sC: "as"},
-            { line: "RESPÓNDEME., ", sC: "as"},
-            { line: "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)", sC: "as"},  ]},
-    ], lder: [
-            { line: "¿Qué más he podido hacer por ti, (La,m,20)", sC: "tc"},
-            { line: "que no haya hecho?, (La,m6,147)", sC: ""},
-            { line: "Yo te llamé: «Mi viña amada»,, (La,m,20)", sC: ""},
-            { line: "y tú, y tú me has dado fruto amargo., (Si,7,31)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Hágios o Théos,, (La,m,20)", sC: "tc"},
-            { line: "SANCTUS DEUS., (Si,7,112)", sC: "ta as"},
-            { line: "Hágios lschyrós,, (La,m,21)", sC: "tc"},
-            { line: "SANCTUS FORTIS., (Si,7,114)", sC: "ta as"},
-            { line: "Hágios Athánatos,, (La,m,20)", sC: "tc"},
-            { line: "ELÉISON HIMÁS., (Si,7,134)", sC: "ta as"},
-            { line: "Sanctus et inmortalis,, (La,m,20)", sC: "tc"},
-            { line: "MISERERE NOBIS., (Si,7,128)", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡OH PUEBLO MÍO! ¡OH PUEBLO MÍO!, (Mi,m,20)", sC: "ta as", lines: [
-            { line: "¿QUÉ MAL YO TE HE HECHO?, ", sC: "as"},
-            { line: "¿QUÉ MAL YO TE HE HECHO?, (La,m,45)", sC: "as"},
-            { line: "¿EN QUÉ TE HE CONTRISTADO?, ", sC: "as"},
-            { line: "RESPÓNDEME., ", sC: "as"},
-            { line: "¿EN QUÉ TE HE CONTRISTADO?, (Si,7,28)", sC: "as"},  ]},
-]}, // ULTIMA LINEA DEL CANTO: IMPROPERIOS
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           JERUSALÉN RECONSTRUIDA               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "jerusalenreconstruida",
-        tt: "Jerusalén Reconstruida",
-        title: "Jerusalén Reconstruida",
-        subtitle: "Tobias 13,11-17",
-        category: ["Precatecumenado","Pascua","Pentecostés","Paz","Antiguo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "5",
-        nCan: "",
-        nCanURL: "",
-        dbno: "94",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/jerusalenreconstruida.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=improperios",
-        sig: "/resucito/src/index.html?canto=jesusrecorriatodaslasciudades",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "Bendice, alma mía al Señor,, (Mi,m,20)(Re,,250)", sC: "tc"},
-            { line: "bendice, alma mía, al gran Rey,, (Mi,m,283)", sC: ""},
-            { line: "porque será reconstruida, (Re,,216)", sC: ""},
-            { line: "Jerusalén, Jerusalén., (Mi,m,177)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as"},
-            { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
-            { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
-            { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Jerusalén será reconstruida,, (Mi,m,20)(Re,,250)", sC: "tc"},
-            { line: "con zafiros y esmeraldas,, (Mi,m,193)", sC: ""},
-            { line: "de piedras preciosas sus murallas,, (Re,,287)", sC: ""},
-            { line: "sus torres con oro puro., (Mi,m,194)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Sus plazas serán de rubí,, (Re,,232)", sC: ""},
-            { line: "sus calles de oro de Ofir,, (Mi,m,220)", sC: ""},
-            { line: "sobre sus puertas se exultará, (Re,,275)", sC: ""},
-            { line: "y en sus casas se cantará., (Mi,m,238)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
-            { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
-            { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
-            { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Brillará tu luz hasta los confines de la tierra,, (Mi,m,20)(Re,,383)", sC: ""},
-            { line: "vendrán a ti pueblos numerosos,, (Mi,m,270)", sC: ""},
-    ], lder: [
-            { line: "vendrán a ti todas las naciones,, (Re,,260)", sC: ""},
-            { line: "hasta la casa de tu Nombre., (Mi,m,207)", sC: ""},
-            { line: "Las generaciones te cantarán,, (Re,,267)", sC: ""},
-            { line: "todos los pueblos exultarán, (Mi,m,243)", sC: ""},
-            { line: "y en ella el nombre de tu Elegido, (Re,,283)", sC: ""},
-            { line: "será para siempre, será para siempre., (Mi,m,300)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
-            { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
-            { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
-            { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Malditos sean los que te dicen palabras crueles,, (Mi,m,20)(Re,,421)", sC: "tc"},
-            { line: "malditos sean los que te destruyen,, (Mi,m,293)", sC: ""},
-            { line: "todos los que derriban tus murallas,, (Re,,299)", sC: ""},
-            { line: "y tiran por tierra tus torres., (Mi,m,211)", sC: ""},
-            { line: "Mas sean benditos, benditos para siempre,, (Re,,149)(Mi,m,352)", sC: ""},
-            { line: "los que te construyen, los que te edifican., (Re,,163)(Mi,m,356)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Benditos los que te aman,, (Re,,197)", sC: ""},
-            { line: "los que lloran por tus castigos,, (Mi,m,248)", sC: ""},
-            { line: "porque en tus puertas exultarán,, (Re,,288)", sC: ""},
-            { line: "porque en sus casas te cantarán., (Mi,m,293)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
-            { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
-            { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
-            { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Mi,m,20)(Re,,154)(Mi,m,347)", sC: "ta as"},
-            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Re,,155)(Mi,m,347)", sC: "as"},
-]}, // ULTIMA LINEA DEL CANTO: JERUSALÉN RECONSTRUIDA
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           JESÚS RECORRÍA TODAS LAS                ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "jesusrecorriatodaslasciudades",
-        tt: "Jesús Recorría Todas Las Ciudades ",
-        title: "Jesús recorría todas las ciudades",
-        subtitle: "Mateo 9,35ss; 10 ",
-        category: ["Precatecumenado","Nuevo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        nCanURL: "",
-        dbno: "95",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/jesusrecorriatodaslasciudades.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=jerusalenreconstruida",
-        sig: "/resucito/src/index.html?canto=lacorderadedios",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "Jesús recorría todas las ciudades., (La,m,20)(Fa,,121)(La,m,279)", sC: "tc"},
-            { line: "Jesús de pueblo en pueblo, (Fa,,216)", sC: ""},
-            { line: "anunciaba el Reino., (La,m,151)", sC: ""},
-            { line: "Y viendo las gentes que lo seguían, (Re,m,39)(Mi,7,306)", sC: ""},
-            { line: "se conmovió., (La,m,113)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ESTABAN CANSADOS,, (Mi,m,20)", sC: "tc as"},
-            { line: "ESTABAN ABATIDOS, (Fa,,149)", sC: "as r1"},
-            { line: "COMO OVEJAS SIN PASTOR., (Mi,,242)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Entonces Jesús dijo a sus discípulos:, (La,m,20)(Fa,,130)(Mi,7,293)", sC: "tc"},
-            { line: "«La mies es grande,, (La,m,20)", sC: ""},
-            { line: "es verdaderamente grande,, (Sol,,216)", sC: ""},
-            { line: "y los obreros son pocos., (La,m,87)(Mi,,185)", sC: ""},
-            { line: "Rogad, hermanos, al dueño de la mies, (La,m,129)(Sol,,352)", sC: ""},
-            { line: "que envíe obreros a su mies., (La,m,84)(Mi,,255)", sC: ""},
-            { line: "Mirad que yo os envío, (Do,,10)(Sol,,192)", sC: ""},
-            { line: "como ovejas entre lobos., (La,m,84)(Sol,,195)", sC: ""},
-            { line: "Sed prudentes como serpientes, (Do,,92)(Sol,,256)", sC: ""},
-            { line: "y sencillos como palomas,, (La,m,63)(Sol,,199)", sC: ""},
-            { line: "COMO PALOMAS., (La,m,20)", sC: "ta as"},
-    ], lder: [
-            { line: "No llevéis ni bolsa ni dinero,, (Do,,10)(Sol,,234)", sC: "tc"},
-            { line: "ni alforja, ni calzado., (La,m,57)(Sol,,159)", sC: ""},
-            { line: "Y anunciad que el Reino está cerca,, (Do,,89)(Sol,,298)", sC: ""},
-            { line: "Cristo ha resucitado y viene con nosotros,, (La,m,20)(Sol,,345)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "VIENE CON NOSOTROS., (La,m,157)", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "El que ama a su padre o a su madre más que a mí,, (Do,,10)", sC: "tc txcant"},
 
-            { line: "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,82)(La,m,288)", sC: "ta as"},
-            { line: "El que ama a su hijo o a su hija más que a mí, (Do,,10)", sC: "tc"},
-            { line: "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,82)(La,m,285)", sC: "ta as"},
-            { line: "El que no tome su cruz y me siga,, (Do,,10)", sC: "tc"},
-            { line: "NO ES DIGNO DE MÍ, NO ES DIGNO DE MÍ., (Sol,,81)(La,m,285)", sC: "ta as"},
-            { line: "Porque el que busca en este mundo su vida,, (Do,,10)", sC: "tc"},
-            { line: "LA PERDERÁ, LA PERDERÁ., (Sol,,122)(La,m,256)", sC: "ta as"},
-            { line: "Y el que pierda su vida por el amor mío,, (Do,,107)", sC: "tc"},
-            { line: "LA ENCONTRARÁ, LA ENCONTRARÁ., (Sol,,159)(La,m,334)", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Quien os escucha,, (Sol,,124)", sC: "tc"},
-            { line: "ME ESCUCHA A MÍ., (La,m,171)", sC: "ta as tleft"},
 
-            { line: "Quien os acoge,, (Sol,m,126)", sC: "tc"},
-            { line: "ME ACOGE A MÍ., (La,m,147)", sC: "ta as tleft"},
 
-            { line: "QUIEN ME ACOGE A MÍ,, (Sol,,215)", sC: "ta as"},
-            { line: "ACOGE A DIOS, ACOGE A DIOS»., (Fa,,122)(Mi,,272)", sC: "ta as"},
-]}, // ULTIMA LINEA DEL CANTO: JESÚS RECORRÍA TODAS LAS 
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           LA CORDERA DE DIOS               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "lacorderadedios",
-        tt: "La Cordera De Dios",
-        title: "La Cordera De Dios",
-        subtitle: "Mateo 1,18s; 2,13s.18",
-        category: ["Precatecumenado","Vírgen María","Adviento","Navidad","Nuevo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "3",
-        nCan: "",
-        nCanURL: "",
-        dbno: "96",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/lacorderadedios.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=jesusrecorriatodaslas",
-        sig: "/resucito/src/index.html?canto=laespada",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "Era la Virgen María prometida de José,, (Mi,m,20)(La,m,209)", sC: "tc"},
-            { line: "cuando antes de que vivieran juntos,, (Do,,10)", sC: ""},
-            { line: "se encontró encinta por obra, ", sC: ""},
-            { line: "del Espíritu Santo., (Si,7,132)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Y José, como era justo, (Mi,m,20)", sC: ""},
-            { line: "y no quería repudiarla,, (La,m,90)", sC: ""},
-            { line: "decidió abandonarla en secreto., (Do,,64)(Si,7,279)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "QUÉ AMARGA ES EL AGUA, MARÍA, (Mi,m,315)", sC: "ta as"},
-            { line: "CORDERA DE DIOS, HUMILDE CORDERA,, (Do,,10)", sC: "as"},
-            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
-            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "María dio a luz a su hijo,, (Mi,m,20)", sC: "tc"},
-            { line: "lo envolvió en pañales, (La,m,20)", sC: ""},
-            { line: "y lo acostó en un pesebre, ", sC: ""},
-            { line: "porque no había sitio para ellos en la posada., (Do,,10)(Si,7,400)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "QUÉ AMARGA ES EL AGUA, MARÍA, (Mi,m,315)", sC: "ta as", lines: [
-            { line: "CORDERA DE DIOS, HUMILDE CORDERA,, (Do,,10)", sC: "as"},
-            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
-            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},  ]},
-    ], lder: [
-            { line: "Y una noche José se levantó,, (Mi,m,20)", sC: "tc"},
-            { line: "tomó al niño y a su madre, (La,m,20)", sC: ""},
-            { line: "y huyó a Egipto, (Do,,10)", sC: ""},
-            { line: "porque querían matar al niño., (Si,7,251)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "QUÉ AMARGA ES EL AGUA, MARÍA, (Mi,m,315)", sC: "ta as", lines: [
-            { line: "CORDERA DE DIOS, HUMILDE CORDERA,, (Do,,10)", sC: "as"},
-            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
-            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Un grito se siente en Ramá, ¡Ay Ayaay!, (Mi,m,20)", sC: "tc"},
-            { line: "un llanto y un lamento grande:, (La,m,20)", sC: ""},
-            { line: "es Raquel que llora a sus hijos,, (Do,,10)", sC: ""},
-            { line: "y no quiere ser consolada,, (La,m,213)", sC: ""},
-            { line: "porque ya no existen., (Si,7,156)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "QUÉ AMARGA ES EL AGUA, MARÍA, (Mi,m,315)", sC: "ta as", lines: [
-            { line: "CORDERA DE DIOS, HUMILDE CORDERA,, (Do,,10)", sC: "as"},
-            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
-            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "El Ángel del Señor le dijo a José en Egipto:, (Mi,m,20)", sC: "tc"},
-            { line: "«Levántate, toma contigo al niño y a su madre, (La,m,20)", sC: ""},
-            { line: "y vuelve a la tierra de Israel,, (Do,,44)(Si,7,254)", sC: ""},
-            { line: "porque \"de Egipto llamé a mi Hijo\"»., (Mi,m,303)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "CORDERA DE DIOS, (Do,,10)", sC: "ta as", lines: [
-            { line: "HUMILDE CORDERA, ", sC: "as"},
-            { line: "QUE NO TE RESISTES AL MAL., (Mi,m,20)", sC: "as"},
-            { line: "MADRE DE JESÚS Y MADRE NUESTRA,, (La,m,20)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS,, (Si,7,172)", sC: "as"},
-            { line: "RUEGA POR NOSOTROS., (Mi,m,176)", sC: "as"},  ]},
-]}, // ULTIMA LINEA DEL CANTO: LA CORDERA DE DIOS
-// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
