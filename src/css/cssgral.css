@@ -926,6 +926,7 @@ hr {
 .chord-image-item.chord-color-faaj13 { background-color: var(--chord-color-fa); }
 .chord-image-item.chord-color-fa5-di { background-color: var(--chord-color-fa); }
 .chord-image-item.chord-color-sol { background-color: var(--chord-color-sol); }
+.chord-image-item.chord-color-di { background-color: var(--chord-color-sol); }
 .chord-image-item.chord-color-la { background-color: var(--chord-color-la); }
 .chord-image-item.chord-color-la6 { background-color: var(--chord-color-la); }
 .chord-image-item.chord-color-si { background-color: var(--chord-color-si); }
