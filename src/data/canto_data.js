@@ -8652,4 +8652,51 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
+
+
+// Aleluyas Segun Semana
+/*
+╔════════════════════════════════════════════════════════╗
+║           ALELUYA INTERLECCIONAL               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ialeluyas22",
+        tt: "Aleluya Interleccional Semana XXII",
+        title: "Aleluya Interleccional Semana XXII",
+        subtitle: "Modelo III",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "180",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/aleluyainterleccional.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=aclamacionesalaoraciondelosfieles",
+        sig: "/resucito/src/index.html?canto=aleluyapascual",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad sobre vosotros mi yugo y aprended de mí,, (Mi,m,21)(La,m,253)(Mi,m,468)", sC: "tc"},
+            { line: "que soy manso y humilde de corazón,, (La,m,348)", sC: ""},
+            { line: "y hallaréis descanso para vosotros,, (Mi,m,279)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ALELUYA, ALELUYA, ALELUYA., (Mi,m,15)(Re,,144)(Mi,m,266)", sC: "ta as", lines: [
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,160)(Mi,m,271)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
+// SIGUIENTE CANTO DEBAJO
+
+
+
 ] //LLAVE DE CIERRE DEL CANTO
