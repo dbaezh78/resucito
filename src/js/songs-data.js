@@ -236,5 +236,9 @@ const songs = [
         // Prountuario de Acordes y Libro PDF
         {id:234,title: "Prountuario de Acordes", subtitle: "Notas", category: "Precatecumenado", moments: [""], url: "/docs/ima/prontuario.png", content: "Este es el prontuario de acordes, una guía visual para las notas musicales y sus posiciones en la guitarra."},
         {id:235,title: "Libro de Canto en PDF", subtitle: "Libro de Canto del Camino Neo Catecumenal", category: "Precatecumenado", moments: [""], url: "/docs/resucito.pdf", targetBlank: true, content: "Este es el libro de cantos en formato PDF, que contiene todos los cantos del Camino Neocatecumenal para su consulta y uso." },
+
+        // Aleluya Internacional
+        {id:236,title: "Aleluya Internacional Semana XXII", subtitle: "Antifona Evangelio Semana XXII", category: "Liturgia", moments: ["Liturgia"], url: "/resucito/src/index.html?canto=ialeluyas22", targetBlank: true, content: "ALELUYA, ALELUYA, ALELUYA, Yo soy la vid, vosotros los sarmientos. El que permanece en mí y yo en él, ése da fruto abundante. ialeluyas22, Semana 22, s22." },
+
   
     ];
