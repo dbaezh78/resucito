@@ -7753,6 +7753,156 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Y LLEGA YA LA SIEGA?, (Re,m,176)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: LA SIEGA DE LAS NACIONES
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LA VOZ DE MI AMADO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lavozdemiamado",
+        tt: "La Voz De Mi Amado",
+        title: "La Voz De Mi Amado",
+        subtitle: "Cantar de los Cantares 2,8-17",
+        category: ["Precatecumenado","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "101",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/lavozdemiamado.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=lasiegadelasnaciones",
+        sig: "/resucito/src/index.html?canto=lasarmasdelaluz",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡La voz de mi amado!, (Do,,10)(La,m,225)", sC: "tc"},
+            { line: "Helo aquí que viene,, (Fa,,158)", sC: ""},
+            { line: "saltando por los montes,, (Mi,,188)", sC: ""},
+            { line: "brincando por los collados., (Fa,,53)(Mi,,214)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Semejante es mi amado a una gacela,, (Do,,10)(La,m,386)", sC: ""},
+            { line: "o a un joven cervatillo,, (Fa,,182)", sC: ""},
+            { line: "semejante es mi amado a una gacela., (Mi,,335)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Vedle que ya se para, (Do,,10)(La,m,217)", sC: ""},
+            { line: "detrás de nuestra cerca,, (Fa,,190)", sC: ""},
+            { line: "mira por la ventana, atisba por la reja., (Mi,,335)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Empieza a hablar mi amado y me dice:, (Do,,10)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡LEVÁNTATE, AMADA MÍA,, (Do,,10)(Mi,,222)", sC: "ta as"},
+            { line: "LEVÁNTATE,, (Fa,,41)", sC: "as r1"},
+            { line: "HERMOSA MÍA, Y VENTE!, (Mi,,189)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque, mira, ha pasado ya el invierno,, (Re,m,22)(Mi,,332)", sC: "tc"},
+            { line: "han cesado las lluvias y se han ido,, (Re,m,22)(Mi,,306)", sC: ""},
+            { line: "aparecen las flores en la tierra,, (Fa,,12)", sC: ""},
+            { line: "el tiempo de las canciones ha llegado., (Mi,,331)", sC: ""},
+    ], lder: [
+            { line: "Se oye el arrullo de la tórtola,, (Re,m,20)(Mi,,222)", sC: ""},
+            { line: "echa la higuera sus yemas, (Fa,,10)", sC: ""},
+            { line: "y la viña exhala su fragancia., (Mi,,225)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡LEVÁNTATE, AMADA MÍA, (Do,,10)(Mi,,222)", sC: "ta as", lines: [
+            { line: "LEVÁNTATE,, (Fa,,41)", sC: "as r1"},
+            { line: "HERMOSA MÍA, Y VENTE!, (Mi,,187)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Paloma mía que vives en las grietas de la roca, (Re,m,22)(Mi,,417)", sC: "tc"},
+            { line: "en escarpados escondrijos,, (Re,m,22)(Mi,,223)", sC: ""},
+            { line: "déjame oír tu voz, déjame oír tu voz., (Fa,,20)(Mi,,329)", sC: ""},
+            { line: "Cazadnos las raposas,, (Do,,10)", sC: ""},
+            { line: "las pequeñas raposas, (Mi,,10)", sC: ""},
+            { line: "que devastan nuestra viña,, (Fa,,79)(Mi,,221)", sC: ""},
+            { line: "porque nuestra viña está ya en flor,, (Sol,,11)(Fa,,163)(Mi,,315)", sC: ""},
+            { line: "PORQUE NUESTRA VIÑA ESTÁ YA EN FLOR., (Sol,,11)(Fa,,200)(Mi,,386)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Mi amado es para mí,, (Re,m,20)(Mi,,199)", sC: "tc"},
+            { line: "y yo soy para mi amado., (Re,m,20)(Mi,,200)", sC: ""},
+            { line: "Antes que sople la brisa, (Re,m,20)(Mi,,204)", sC: ""},
+            { line: "y se alarguen las sombras con la muerte,, (Re,m,20)(Mi,,352)", sC: ""},
+            { line: "RETORNA, RETORNA, RETORNA., (La,m,20)(Sol,,145)(La,m,255)", sC: "la as r2"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "¡LEVÁNTATE, AMADA MÍA, (Do,,10)(Mi,,222)", sC: "ta as", lines: [
+            { line: "LEVÁNTATE,, (Fa,,41)", sC: "as r1"},
+            { line: "HERMOSA MÍA, Y VENTE!, (Mi,,187)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: LA VOZ DE MI AMADO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LAS ARMAS DE LA LUZ               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lasarmasdelaluz",
+        tt: "Las Armas De La Luz",
+        title: "Las Armas De La Luz",
+        subtitle: "cf Efesios 6,11.ss",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Adviento","Navidad","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "102",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/lasarmasdelaluz.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=lavozdemiamado",
+        sig: "/resucito/src/index.html?canto=laudasion",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Revestíos de la armadura de Dios,, (La,m,20)(Re,m9,306)", sC: "tc"},
+            { line: "empuñando las armas de la luz., (Mi,7,76)(La,m,290)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "REVESTÍOS DE LA ARMADURA DE DIOS,, (La,m,20)(Re,m9,359)", sC: "ta as"},
+            { line: "EMPUÑANDO LAS ARMAS DE LA LUZ., (Mi,7,80)(La,m,336)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque nuestra lucha, (Fa,,10)", sC: ""},
+            { line: "no es contra la carne ni la sangre,, (Mi,7,271)", sC: ""},
+            { line: "más contra los espíritus del mal, (Fa,,10)", sC: ""},
+            { line: "que viven en el mundo tenebroso., (Mi,7,258)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CEÑIDOS CON LA VERDAD,, (La,m,20)(Mi,7,228)", sC: "ta as"},
+            { line: "REVESTIDOS DE LA JUSTICIA DE LA CRUZ., (La,m,376)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que no se resiste al mal,, (Fa,,58)(Mi,7,219)", sC: "tc"},
+            { line: "mas lleva sobre sí los pecados de los demás., (Fa,,64)(Mi,7,408)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CALZADOS CON EL CELO, (La,m,20)", sC: "ta as"},
+            { line: "POR ANUNCIAR EL EVANGELIO,, (Mi,7,20)", sC: ""},
+            { line: "MAS SOBRE TODO, ", sC: ""},
+            { line: "CON EL ESCUDO DE LA FE., (La,m,20)", sC: ""},
+    ], lder: [
+            { line: "Que Cristo te ama ciertamente,, (Fa,,20)(Mi,7,250)", sC: "tc"},
+            { line: "que ha dado su vida por ti, (Fa,,20)(Mi,7,250)", sC: ""},
+            { line: "cuando eras malvado y pecador., (Fa,,20)(Mi,7,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CON LA ESPADA DEL ESPÍRITU,, (La,m,20)", sC: "ta as"},
+            { line: "QUE ES LA PALABRA DE DIOS,, (Mi,7,20)", sC: "as"},
+            { line: "Y CORONADOS, ", sC: "as"},
+            { line: "CON EL YELMO DE LA SALVACIÓN., (La,m,20)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que Cristo Jesús resucitó,, (Fa,,20)(Mi,7,250)", sC: "tc"},
+            { line: "que él es el Señor,, (Fa,,20)(Mi,7,250)", sC: ""},
+            { line: "que volverá, que volverá, (Rem,,)", sC: ""},
+            { line: "y nos llevará con él., (Mi,7,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA,ALELÚ,ALELÚ,ALELUYA., (La,m,20)(Mi,7,250)", sC: "ta as"},
+            { line: "ALELUYA,ALELÚ,ALELÚ,ALELUYA., (La,m Mi,20)(7,,250)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: LAS ARMAS DE LA LUZ
+// SIGUIENTE CANTO DEBAJO
 
 
 
