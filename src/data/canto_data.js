@@ -7851,7 +7851,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "102",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/lasarmasdelaluz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -7881,27 +7881,120 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "mas lleva sobre sí los pecados de los demás., (Fa,,64)(Mi,7,408)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "CALZADOS CON EL CELO, (La,m,20)", sC: "ta as"},
-            { line: "POR ANUNCIAR EL EVANGELIO,, (Mi,7,20)", sC: ""},
-            { line: "MAS SOBRE TODO, ", sC: ""},
-            { line: "CON EL ESCUDO DE LA FE., (La,m,20)", sC: ""},
+            { line: "POR ANUNCIAR EL EVANGELIO,, (Mi,7,253)", sC: "as"},
+            { line: "MAS SOBRE TODO, ", sC: "as"},
+            { line: "CON EL ESCUDO DE LA FE., (La,m,245)", sC: "as"},
     ], lder: [
-            { line: "Que Cristo te ama ciertamente,, (Fa,,20)(Mi,7,250)", sC: "tc"},
-            { line: "que ha dado su vida por ti, (Fa,,20)(Mi,7,250)", sC: ""},
-            { line: "cuando eras malvado y pecador., (Fa,,20)(Mi,7,250)", sC: ""},
+            { line: "Que Cristo te ama ciertamente,, (Fa,,10)(Mi,7,256)", sC: "tc"},
+            { line: "que ha dado su vida por ti, (Fa,,88)(Mi,7,248)", sC: ""},
+            { line: "cuando eras malvado y pecador., (Fa,,84)(Mi,7,296)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "CON LA ESPADA DEL ESPÍRITU,, (La,m,20)", sC: "ta as"},
-            { line: "QUE ES LA PALABRA DE DIOS,, (Mi,7,20)", sC: "as"},
+            { line: "QUE ES LA PALABRA DE DIOS,, (Mi,7,263)", sC: "as"},
             { line: "Y CORONADOS, ", sC: "as"},
-            { line: "CON EL YELMO DE LA SALVACIÓN., (La,m,20)", sC: "as"},
+            { line: "CON EL YELMO DE LA SALVACIÓN., (La,m,305)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Que Cristo Jesús resucitó,, (Fa,,20)(Mi,7,250)", sC: "tc"},
-            { line: "que él es el Señor,, (Fa,,20)(Mi,7,250)", sC: ""},
-            { line: "que volverá, que volverá, (Rem,,)", sC: ""},
-            { line: "y nos llevará con él., (Mi,7,20)", sC: ""},
+            { line: "Que Cristo Jesús resucitó,, (Fa,,66)(Mi,7,238)", sC: "tc"},
+            { line: "que él es el Señor,, (Fa,,49)(Mi,7,160)", sC: ""},
+            { line: "que volverá, que volverá, (Re,m,101)", sC: ""},
+            { line: "y nos llevará con él., (Mi,7,178)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA,ALELÚ,ALELÚ,ALELUYA., (La,m,20)(Mi,7,250)", sC: "ta as"},
-            { line: "ALELUYA,ALELÚ,ALELÚ,ALELUYA., (La,m Mi,20)(7,,250)", sC: "as"},
+            { line: "ALELUYA, ALELÚ, ALELÚ, ALELUYA., (La,m,79)(Mi,7,326)", sC: "ta as"},
+            { line: "ALELUYA, ALELÚ, ALELÚ, ALELUYA., (La,m,87)(Mi,7,326)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: LAS ARMAS DE LA LUZ
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LAUDA SIÓN               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "laudasion",
+        tt: "Lauda Sión",
+        title: "Lauda Sión",
+        subtitle: "Secuencia del Corpus Christi (Santo Tomas de Aquino) ",
+        category: ["Precatecumenado","Pascua","Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "103",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/laudasion.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=lasarmasdelaluz",
+        sig: "/resucito/src/index.html?canto=laudasion",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Alaba, Sión, al Salvador,, (La,m,20)(Re,m,250)", sC: "tc"},
+            { line: "Él es tu guía y tu Pastor., (La,m,20)", sC: ""},
+            { line: "Alábalo con himnos y cantos., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ESTE ES EL PAN DE LOS ÁNGELES,, (La,m,20)(Re,m,250)", sC: "ta as"},
+            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Canta con todo fervor,, (La,m,20)(Re,m,250)", sC: "tc"},
+            { line: "al pan vivo que da vida:, (La,m,20)", sC: ""},
+            { line: "este es el tema del canto, ", sC: ""},
+            { line: "y el objeto de alabanza., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ciertamente se donó,, (La,m,20)(Re,m,250)", sC: "tc"},
+            { line: "al grupo de doce hermanos,, (Lam,,)", sC: ""},
+            { line: "en fraterna y Santa Cena., (Mi,,20)", sC: ""},
+            { line: "Esta es la fiesta solemne,, (La,m,20)(Re,m,250)", sC: ""},
+            { line: "en la cual celebramos,, (La,m,20)", sC: ""},
+            { line: "la primera y Santa Cena., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Es el banquete del nuevo Rey,, (La,m,20)(Re,m,250)", sC: "tc"},
+            { line: "la nueva Pascua y nueva Ley,, (La,m,20)", sC: ""},
+            { line: "donde lo antiguo termina., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Lo antiguo se verá nuevo,, (La,m,20)(Re,m,250)", sC: ""},
+            { line: "la realidad a la sombra;, (La,m,20)", sC: ""},
+            { line: "¡Es todo luz, ya no hay tinieblas!, (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cristo deja en su memoria,, (La,m,20)(Re,m,250)", sC: "tc"},
+            { line: "lo que hizo en Santa Cena,, (La,m,20)", sC: ""},
+            { line: "nosotros lo renovamos., (Mi,,20)", sC: ""},
+            { line: "Obedientes a su palabra,, (La,m,20)(Re,m,250)", sC: ""},
+            { line: "consagramos pan y vino,, (La,m,20)", sC: ""},
+            { line: "¡Hostia de la salvación!, (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Es cierto a los cristianos,, (La,m,20)(Re,m,250)", sC: "tc"},
+            { line: "que se transforma el pan en carne,, (La,m,20)", sC: ""},
+            { line: "y que el vino se hace sangre., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: LAUDA SIÓN
 // SIGUIENTE CANTO DEBAJO
 
 
