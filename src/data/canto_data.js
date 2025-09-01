@@ -7562,6 +7562,197 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "MARÍA, MARÍA, MADRE DE DIOS., (Do,,10)(Mi,7,127)(Fa,,182)(Mi,7,295)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: LA ESPADA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LA MARCHA ES DURA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lamarchaesdura",
+        tt: "La Marcha Es Dura",
+        title: "La Marcha Es Dura",
+        subtitle: "Espiritual negro «Go down, Moses»",
+        category: ["Precatecumenado","Cuaresma","Penitencial"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "98",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/lamarchaesdura.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=laespada",
+        sig: "/resucito/src/index.html?canto=lasalve",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "La marcha es dura, recio el sol,, (Mi,m,20)(Si,7,154)(Mi,m,281)", sC: "tc"},
+            { line: "lento el caminar., (Si,7,92)(Mi,m,142)", sC: ""},
+            { line: "Moisés caudillo de Israel, (Si,7,126)(Mi,m,221)", sC: ""},
+            { line: "lo va a liberar., (Si,7,80)(Mi,m,121)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "OYE, PADRE, EL GRITO DE TU PUEBLO., (Mi,m,20)(La,m,70)(Si,7,143)(Mi,m,316)", sC: "ta as"},
+            { line: "OYE, PADRE, MANDA AL SALVADOR., (Si,7,256)(Mi,m,318)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El pueblo anhela vida y paz,, (Mi,m,20)(Si,7,135)(Mi,m,244)", sC: "tc"},
+            { line: "quiere resurgir., (Si,7,82)(Mi,m,128)", sC: ""},
+            { line: "Moisés caudillo de Israel, (Si,7,124)(Mi,m,222)", sC: ""},
+            { line: "va a librarlo al fin., (Si,7,77)(Mi,m,152)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "OYE, PADRE (Mi,m,20)(La,m,70)", sC: "ta as", lines: [
+            { line: "EL GRITO DE TU PUEBLO., (Si,7,16)(Mi,m,191)", sC: "as"},
+            { line: "OYE, PADRE, MANDA AL SALVADOR., (Si,7,256)(Mi,m,316)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: LA MARCHA ES DURA
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LA SALVE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lasalve",
+        tt: "La Salve",
+        title: "La Salve",
+        subtitle: "Himno lat. «Salve Regina»",
+        category: ["Precatecumenado","Vírgen María","Cuaresma","Penitencial"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "99",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/lasalve.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=lamarchaesdura",
+        sig: "/resucito/src/index.html?canto=lasiegadelasnaciones",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Dios te salve,, (Mi,m,20)", sC: "tc"},
+            { line: "Reina y Madre de misericordia,, (La,m,97)(Mi,m,247)", sC: ""},
+            { line: "vida, dulzura y esperanza nuestra., (Fa,,10)(Mi,,276)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Dios te salve., (Mi,m,20)", sC: ""},
+            { line: "A ti llamamos los desterrados hijos de Eva,, (La,m,84)(Mi,m,382)", sC: ""},
+            { line: "a ti suspiramos, gimiendo y llorando, (La,m,102)(Mi,m,301)", sC: ""},
+            { line: "en este valle de lágrimas,, (Fa,,35)(Mi,,165)", sC: ""},
+            { line: "en este valle de lágrimas., (Fa,,35)(Mi,,165)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ea, pues, Señora, abogada nuestra,, (La,m,20)(Fa,,177)(Mi,,289)", sC: ""},
+            { line: "vuelve a nosotros, (Fa,,10)", sC: ""},
+            { line: "esos tus ojos misericordiosos,, (Mi,,241)", sC: ""},
+            { line: "y después de este destierro, (Fa,,10)", sC: ""},
+            { line: "muéstranos a Jesús,, (Mi,,172)", sC: ""},
+            { line: "fruto bendito de tu vientre.", sC: ""},
+    ], lder: [
+            { line: "¡Oh, clementísima!, (Mi,m,20)", sC: ""},
+            { line: "¡Oh, piadosa!, (La,m,94)", sC: ""},
+            { line: "¡Oh, dulce Virgen María!, (Mi,m,209)", sC: ""},
+            { line: "Ruega por nosotros,, (Fa,,29)", sC: ""},
+            { line: "Santa Madre de Dios,, (Mi,,183)", sC: ""},
+            { line: "para que seamos dignos, ", sC: ""},
+            { line: "de alcanzar las promesas, (Fa,,200)", sC: ""},
+            { line: "de Jesucristo,, (Mi,,92)", sC: ""},
+            { line: "de Jesucristo. ", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: LA SALVE
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LA SIEGA DE LAS NACIONES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lasiegadelasnaciones",
+        tt: "La Siega De Las Naciones",
+        title: "La Siega De Las Naciones",
+        subtitle: "Juan 4,31-38",
+        category: ["Precatecumenado","Final","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "100",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/lasiegadelasnaciones.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=lasalve",
+        sig: "/resucito/src/index.html?canto=lavozdemiamado",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Llegaron sus discípulos y le dijeron:, (Re,m,20)", sC: "tc"},
+            { line: "«Rabbí, come, Rabbí, come»., (Sol,m,51)(La,,90)(Sol,m,180)(La,,227)", sC: ""},
+            { line: "Pero Él les dijo: «Yo tengo para comer, (Si♭,,13)", sC: ""},
+            { line: "un alimento que vosotros no conocéis:, (La,,344)", sC: ""},
+            { line: "mi alimento es hacer la voluntad, (Si♭,,13)", sC: ""},
+            { line: "de Aquel que me ha enviado, (La,,242)", sC: ""},
+            { line: "y llevar a cabo su obra»., (Sol,m,49)(La,,179)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿NO DECÍS VOSOTROS:, (Re,m,157)(La,,198)", sC: "ta as"},
+            { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
+            { line: "Y LLEGA YA LA SIEGA?, (Re,m,170)", sC: "as"},
+            { line: "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)", sC: "as"},
+            { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
+            { line: "Y LLEGA YA LA SIEGA?, (Re,m,176)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Pues bien, yo os digo:, (Sol,m,23)", sC: "tc"},
+            { line: "alzad vuestros ojos y ved los campos, (Do,,10)", sC: ""},
+            { line: "que ya blanquean para la siega,, (La,,269)", sC: ""},
+            { line: "QUE YA BLANQUEAN PARA LA SIEGA., (Si♭,,170)(La,,320)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¿NO DECÍS VOSOTROS:..., (Re,m,157)(La,,198)", sC: "ta as", lines: [
+            { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
+            { line: "Y LLEGA YA LA SIEGA?, (Re,m,170)", sC: "as"},
+            { line: "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)", sC: "as"},
+            { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
+            { line: "Y LLEGA YA LA SIEGA?, (Re,m,176)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Ya se reúnen los segadores,, (Si♭,,10)(La,,225)", sC: "tc"},
+            { line: "YA SE REÚNEN LOS SEGADORES,, (Si♭,,10)(La,,268)", sC: "ta as"},
+            { line: "y reciben el salario y recogen fruto, (Sol,m,51)", sC: "tc"},
+            { line: "para la vida eterna,, (La,,143)", sC: ""},
+            { line: "A PARA LA VIDA ETERNA., (Si♭,,10)(La,,194)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "¿NO DECÍS VOSOTROS:..., (Re,m,157)(La,,198)", sC: "ta as", lines: [
+            { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
+            { line: "Y LLEGA YA LA SIEGA?, (Re,m,170)", sC: "as"},
+            { line: "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)", sC: "as"},
+            { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
+            { line: "Y LLEGA YA LA SIEGA?, (Re,m,176)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo os he mandado a segar, (Sol,m,20)", sC: "tc"},
+            { line: "lo que vosotros no habéis trabajado;, (Do,,10)(La,,312)", sC: ""},
+            { line: "otros se fatigaron, (Si♭,,11)", sC: ""},
+            { line: "y vosotros os aprovecháis de su fatiga;, (La,,334)", sC: ""},
+            { line: "de modo que el sembrador, (Sol,m,22)", sC: ""},
+            { line: "se alegra, se alegra con el segador., (Do,,10)(Si♭,,153)(La,,320)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¿NO DECÍS VOSOTROS:..., (Re,m,157)(La,,198)", sC: "ta as", lines: [
+            { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
+            { line: "Y LLEGA YA LA SIEGA?, (Re,m,170)", sC: "as"},
+            { line: "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)", sC: "as"},
+            { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
+            { line: "Y LLEGA YA LA SIEGA?, (Re,m,176)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: LA SIEGA DE LAS NACIONES
+// SIGUIENTE CANTO DEBAJO
 
 
 
