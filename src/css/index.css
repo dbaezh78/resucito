@@ -326,3 +326,6 @@
 .letra[data-color] {
     color: var(--line-color, inherit);
 }
+
+.red {
+    color: red inherit}

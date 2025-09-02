@@ -387,7 +387,7 @@ const renderCantoSection = (container, parsedData) => {
             // Aplicar el display y el texto del disparador según el estado
             if (isCurrentlyExpanded) {
                 contentDiv.style.display = ''; // Mostrar
-                triggerLetraSpan.textContent = triggerLetraSpan.dataset.originalText + ','; // Asegurarse de que termine en coma
+                triggerLetraSpan.textContent = triggerLetraSpan.dataset.originalText; // Asegurarse de que no tenga "..."
             } else {
                 contentDiv.style.display = 'none'; // Ocultar
                 if (!triggerLetraSpan.textContent.endsWith('...')) {
@@ -403,13 +403,13 @@ const renderCantoSection = (container, parsedData) => {
                 if (wasExpanded) {
                     contentDiv.style.display = 'none';
                     if (!triggerLetraSpan.textContent.endsWith('...')) {
-                        triggerLetraSpan.textContent = triggerLetraSpan.dataset.originalText + '...';
+                        triggerLetraSpan.textContent += '...';
                     }
                     triggerDiv.dataset.isExpanded = "false";
                     collapsibleStates.set(entry.id, false); // Guardar estado
                 } else {
                     contentDiv.style.display = ''; // Mostrar
-                    triggerLetraSpan.textContent = triggerLetraSpan.dataset.originalText + ','; // Restaurar texto original con coma
+                    triggerLetraSpan.textContent = triggerLetraSpan.dataset.originalText; // Restaurar texto original
                     triggerDiv.dataset.isExpanded = "true";
                     collapsibleStates.set(entry.id, true); // Guardar estado
                 }

@@ -2553,107 +2553,107 @@ const allCantosData = [
         sig: "/resucito/src/index.html?canto=caritaschristiurgetnos",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Cantemos al Señor,(Do,7,19)(Fa,,167)", sC: "tc"},
-            { line: "cantemos al Señor,(La,7,164)", sC: ""},
-            { line: "que se cubrió de gloria,(Re,7,188)", sC: ""},
+            { line: "Cantemos al Señor,, (Do,7,19)(Fa,,167)", sC: "tc"},
+            { line: "cantemos al Señor,, (La,7,164)", sC: ""},
+            { line: "que se cubrió de gloria,,(Re,7,188)", sC: ""},
             { line: "de gloria, de gloria,", sC: ""},
             { line: "precipitó en el mar, (Sol,7,161)", sC: ""},
-            { line: "caballo y caballero., (Do,7,156)", sC: ""},
+            { line: "caballo y caballero. (Do,7,156)", sC: ""},
 // ---------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "ta as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
-            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ. (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 // ---------------------------------------------------------------------------------------------------
-            { line: "El Señor es un guerrero,(Fa,,196)", sC: "tc"},
+            { line: "El Señor es un guerrero,,(Fa,,196)", sC: "tc"},
             { line: "su nombre es Yahveh., (La,7,187)", sC: ""},
             { line: "Precipitó en el mar a los valientes,(Re,7,167)", sC: ""},
-            { line: "la flor del Faraón., (Sol,7,144)", sC: ""},
+            { line: "la flor del Faraón. (Sol,7,144)", sC: ""},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
-            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ. (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},  ]},
 // ------------------------------------------------------------------------------------------------
     ], lder: [
             { line: "Tu diestra poderosa,", sC: "tc nSpace"},
             { line: "gloriosa por su fuerza, ", sC: "nSpace"},
             { line: "tu diestra, oh Señor, aplasta al enemigo,", sC: "nSpace"},
-            { line: "aplasta al enemigo., ", sC: "nSpace"},
+            { line: "aplasta al enemigo. ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
-            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ. (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 // ------------------------------------------------------------------------------------------------
-            { line: "El enemigo había dicho:, ", sC: "nSpace"},
+            { line: "El enemigo había dicho: ", sC: "nSpace"},
             { line: "«Les perseguiré y alcanzaré,", sC: "nSpace"},
             { line: "desnudaré la espada, se saciará mi alma,", sC: "nSpace"},
-            { line: "los aniquilaré.», ", sC: "nSpace"},
+            { line: "los aniquilaré». ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
-            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ. (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 // ------------------------------------------------------------------------------------------------
-            { line: "Soplaste con tu aliento, ", sC: "nSpace"},
-            { line: "y el mar los sepultó., ", sC: "nSpace"},
-            { line: "Se hundieron como plomo, ", sC: "nSpace"},
+            { line: "Soplaste con tu aliento ", sC: "nSpace"},
+            { line: "y el mar los sepultó. ", sC: "nSpace"},
+            { line: "Se hundieron como plomo ", sC: "nSpace"},
             { line: "en las aguas de la muerte,", sC: "nSpace"},
-            { line: "en las aguas formidables., ", sC: "nSpace"},
+            { line: "en las aguas formidables. ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
-            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ. (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},  ]},
 // ------------------------------------------------------------------------------------------------
             { line: "¿Quién como tú, Señor,", sC: "nSpace"},
             { line: "glorioso en santidad,", sC: "nSpace"},
@@ -2664,56 +2664,56 @@ const allCantosData = [
             { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
-            { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
-            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "ES EL SEÑOR. (La,7,110)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ. (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},  ]},
 // ------------------------------------------------------------------------------------------------
             { line: "Rescatas a tu pueblo,", sC: "nSpace"},
             { line: "lo llevas a tu casa., ", sC: "nSpace"},
             { line: "Los príncipes de Edom, se estremecen, ", sC: "nSpace"},
-            { line: "al paso de Jacob., ", sC: "nSpace"},
+            { line: "al paso de Jacob. ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
-            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ. (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},  ]},
 // ------------------------------------------------------------------------------------------------
             { line: "Lo llevas y lo plantas, ", sC: "nSpace"},
             { line: "en el lugar sagrado, ", sC: "nSpace"},
             { line: "sobre tu monte santo, el santuario, ", sC: "nSpace"},
-            { line: "que tus manos prepararon., ", sC: "nSpace"},
+            { line: "que tus manos prepararon. ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
        triggerLine: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "ta as", lines: [
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
-            { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
+            { line: "Y YO LO ENSALZARÉ. (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
             { line: "CABALLO Y CABALLERO,", sC: "as"},
-            { line: "CABALLO Y CABALLERO., ", sC: "as"},  ]},
+            { line: "CABALLO Y CABALLERO. ", sC: "as"},  ]},
 // ------------------------------------------------------------------------------------------------
 ]}, // ULTIMA LINEA DEL CANTO: CANTO DE MOISÉS
 // SIGUIENTE CANTO DEBAJO
@@ -2755,7 +2755,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "ta as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
             { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
@@ -2765,7 +2765,7 @@ const allCantosData = [
 // ---------------------------------------------------------------------------------------------------
             { line: "El Señor es un guerrero,(Fa,,196)", sC: "tc"},
             { line: "su nombre es Yahveh., (La,7,187)", sC: ""},
-            { line: "Precipitó en el mar a los valientes,(Re,7,167)", sC: ""},
+            { line: "Precipitó en el mar a los valientes,, (Re,7,167)", sC: ""},
             { line: "la flor del Faraón., (Sol,7,144)", sC: ""},
 // ------------------------------------------------------------------------------------------------
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -2776,7 +2776,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
             { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as"},
@@ -2785,7 +2785,7 @@ const allCantosData = [
 // ------------------------------------------------------------------------------------------------
     ], lder: [
             { line: "Tu diestra poderosa,", sC: "tc nSpace"},
-            { line: "gloriosa por su fuerza, ", sC: "nSpace"},
+            { line: "gloriosa por su fuerza,,", sC: "nSpace"},
             { line: "tu diestra, oh Señor, aplasta al enemigo,", sC: "nSpace"},
             { line: "aplasta al enemigo., ", sC: "nSpace"},
 // ------------------------------------------------------------------------------------------------
@@ -2797,7 +2797,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
             { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
@@ -2818,7 +2818,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
             { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
@@ -2840,7 +2840,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
             { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
@@ -2861,7 +2861,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
             { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
@@ -2882,7 +2882,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
             { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
@@ -2903,7 +2903,7 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MI FUERZA Y MI CANCIÓN, (Fa,,229)", sC: "as"},
             { line: "ES EL SEÑOR., (La,7,110)", sC: "as"},
-            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS, (Re,7,179)", sC: "as"},
+            { line: "ÉL ES MI SALVACIÓN, ES MI DIOS,,(Re,7,179)", sC: "as"},
             { line: "Y YO LO ENSALZARÉ., (Sol,7,188)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "PRECIPITÓ EN EL MAR, (Do,7,15)", sC: "as nSpace"},
@@ -8160,6 +8160,362 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: LEVANTO MIS OJOS A LOS MONTES
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LLEGUE HASTA TU PRESENCIA MI CLAMOR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lleguehastatupresenciamiclamor",
+        tt: "Llegue Hasta Tu Presencia Mi Clamor",
+        title: "Llegue Hasta Tu Presencia Mi Clamor",
+        subtitle: "Salmo 119 (118)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Adviento","Navidad","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "106",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/lleguehastatupresenciamiclamor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=levantomisojosalosmontes",
+        sig: "/resucito/src/index.html?canto=llevamealcielo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡Señor, Señor Jesús!, (La,m,20)(Fa,,66)(Mi,,174)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Llegue hasta tu presencia mi clamor,, (La,m,20)", sC: ""},
+            { line: "brota de mis labios tu canción,, (Fa,,10)", sC: ""},
+            { line: "canta mi lengua tus palabras,, (Sol,,14)", sC: ""},
+            { line: "alma mía, Jesús., (Fa,,74)(Mi,,143)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sea conmigo tu mano para ayudarme,, (La,m,20)", sC: ""},
+            { line: "de ti anhelo la salvación,, (Fa,,37)", sC: ""},
+            { line: "viva mi alma para alabarte,, (Sol,,12)", sC: ""},
+            { line: "mírame, ando errante., (Fa,,66)(Mi,,171)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "VEN, EN BUSCA DE TU SIERVO,, (La,m,20)(Sol,,244)", sC: "ta as"},
+            { line: "VEN, SEÑOR JESÚS., (Fa,,16)(Mi,,166)", sC: "as"},
+            { line: "VEN, QUE YO SIN TI ME PIERDO,, (La,m,19)(Sol,,253)", sC: "as"},
+            { line: "VEN, SEÑOR JESÚS., (Fa,,20)(Mi,,166)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Llegue hasta tu presencia mi clamor, (La,m,20)", sC: "tc", lines: [
+            { line: "brota de mis labios tu canción,, (Fa,,10)", sC: ""},
+            { line: "canta mi lengua tus palabras,, (Sol,,14)", sC: ""},
+            { line: "alma mía, Jesús., (Fa,,74)(Mi,,143)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sea conmigo tu mano para ayudarme,, (La,m,20)", sC: ""},
+            { line: "de ti anhelo la salvación, (Fa,,37)", sC: ""},
+            { line: "viva mi alma para alabarte, (Sol,,12)", sC: ""},
+            { line: "mírame, ando errante., (Fa,,66)(Mi,,171)", sC: ""},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, EN BUSCA DE TU SIERVO, (La,m,20)(Sol,,244)", sC: "ta as", lines: [
+            { line: "VEN, SEÑOR JESÚS., (Fa,,16)(Mi,,166)", sC: "as"},
+            { line: "VEN, QUE YO SIN TI ME PIERDO,, (La,m,19)(Sol,,253)", sC: "as"},
+            { line: "VEN, SEÑOR JESÚS., (Fa,,20)(Mi,,166)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: LLEGUE HASTA TU PRESENCIA MI CLAMOR
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LLÉVAME AL CIELO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "llevamealcielo",
+        tt: "Llévame Al Cielo",
+        title: "Llévame Al Cielo",
+        subtitle: "Filipenses 1,23",
+        category: ["Precatecumenado","Adviento","Navidad","Pascua","Pentecostés","Final","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "107",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/llevamealcielo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=lleguehastatupresenciamiclamor",
+        sig: "/resucito/src/index.html?canto=magnificat",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "LLÉVAME AL CIELO,, (Mi,,11)", sC: "ta as"},
+            { line: "LLÉVAME AL CIELO,, ", sC: "as"},
+            { line: "OH, OH SEÑOR., (Do#,m,27)(Sol#,,124)", sC: "as"},
+            { line: "PORQUE MORIR,, (Mi,,136)", sC: "as"},
+            { line: "PORQUE MORIR,, ", sC: "as"},
+            { line: "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)", sC: "as"},
+            { line: "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)", sC: "as"},
+            { line: "ESTAR CONTIGO,, (Si7,,124)", sC: "as"},
+            { line: "ESTAR CONTIGO., (Mi,,119)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Una cosa te ruego,, (Mi,,10)", sC: "tc"},
+            { line: "eso solo te pido:, ", sC: ""},
+            { line: "no dudar nunca de tu amor,, (Do#,m,26)(Sol#,,246)", sC: ""},
+            { line: "no dudar nunca de Ti,, (La,,10)(Mi,,196)", sC: ""},
+            { line: "estar contigo,, (Si7,,95)", sC: ""},
+            { line: "estar contigo., (Mi,,99)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "LLÉVAME AL CIELO, (Mi,,11)", sC: "ta as", lines: [
+            { line: "LLÉVAME AL CIELO,, ", sC: "as"},
+            { line: "OH, OH SEÑOR., (Do#,m,27)(Sol#,,124)", sC: "as"},
+            { line: "PORQUE MORIR,, (Mi,,136)", sC: "as"},
+            { line: "PORQUE MORIR,, ", sC: "as"},
+            { line: "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)", sC: "as"},
+            { line: "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)", sC: "as"},
+            { line: "ESTAR CONTIGO,, (Si7,,124)", sC: "as"},
+            { line: "ESTAR CONTIGO., (Mi,,119)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Oh qué bueno,, (Mi,,10)", sC: "tc"},
+            { line: "oh qué dulce,, ", sC: ""},
+            { line: "ha sido tu amor conmigo,, (Do#,m,27)(Sol#,,211)", sC: ""},
+            { line: "ha sido tu amor conmigo,, (La,,10)(Mi,,210)", sC: ""},
+            { line: "oh qué bueno,, (Si7,,101)", sC: ""},
+            { line: "oh qué dulce., (Mi,,89)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "LLÉVAME AL CIELO, (Mi,,11)", sC: "ta as", lines: [
+            { line: "LLÉVAME AL CIELO,, ", sC: "as"},
+            { line: "OH, OH SEÑOR., (Do#,m,27)(Sol#,,124)", sC: "as"},
+            { line: "PORQUE MORIR,, (Mi,,136)", sC: "as"},
+            { line: "PORQUE MORIR,, ", sC: "as"},
+            { line: "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)", sC: "as"},
+            { line: "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)", sC: "as"},
+            { line: "ESTAR CONTIGO,, (Si7,,124)", sC: "as"},
+            { line: "ESTAR CONTIGO., (Mi,,119)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Una cosa te ruego, (Mi,,10)", sC: "tc", lines: [
+            { line: "eso solo te pido:, ", sC: ""},
+            { line: "no dudar nunca de tu amor,, (Do#,m,26)(Sol#,,246)", sC: ""},
+            { line: "no dudar nunca de Ti,, (La,,10)(Mi,,196)", sC: ""},
+            { line: "estar contigo,, (Si7,,95)", sC: ""},
+            { line: "estar contigo., (Mi,,99)", sC: ""},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "LLÉVAME AL CIELO, (Mi,,11)", sC: "ta as", lines: [
+            { line: "LLÉVAME AL CIELO,, ", sC: "as"},
+            { line: "OH, OH SEÑOR., (Do#,m,27)(Sol#,,124)", sC: "as"},
+            { line: "PORQUE MORIR,, (Mi,,136)", sC: "as"},
+            { line: "PORQUE MORIR,, ", sC: "as"},
+            { line: "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)", sC: "as"},
+            { line: "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)", sC: "as"},
+            { line: "ESTAR CONTIGO,, (Si7,,124)", sC: "as"},
+            { line: "ESTAR CONTIGO., (Mi,,119)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: LLÉVAME AL CIELO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           MAGNÍFICAT               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "magnificat",
+        tt: "Magníficat",
+        title: "Magníficat",
+        subtitle: "Lucas 1,46-55",
+        category: ["Precatecumenado","Vírgen María","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "108",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/magnificat.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=llevamealcielo",
+        sig: "/resucito/src/index.html?canto=mariacasadebendicion",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "PROCLAMA MI ALMA, (Re,,11)", sC: "ta as"},
+            { line: "LA GRANDEZA DEL SEÑOR,, (Mi,,236)", sC: "as r1"},
+            { line: "SE ALEGRA MI ESPÍRITU, ", sC: "as"},
+            { line: "EN DIOS MI SALVADOR., (Re,,194)(La,,242)(Mi,,266)(La,,292)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Desde ahora me felicitarán, (La,,11)(Mi,,245)", sC: "tc"},
+            { line: "todas las generaciones., (La,,173)", sC: ""},
+            { line: "DESDE AHORA ME FELICITARÁN, (Mi,,288)", sC: "ta as"},
+            { line: "TODAS LAS GENERACIONES., (La,,224)", sC: "as"},
+            { line: "Porque el Poderoso, (Re,,158)", sC: "tc"},
+            { line: "ha hecho grandes cosas en mí,, (La,,281)", sC: ""},
+            { line: "su nombre es santo., (Mi,,42)(La,,150)", sC: ""},
+            { line: "PORQUE EL PODEROSO, (La,7,19)(Re,,196)", sC: "ta as"},
+            { line: "HA HECHO GRANDES COSAS EN MÍ,, (La,,332)", sC: "as"},
+            { line: "SU NOMBRE ES SANTO., (Mi,,58)(La,,175)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Él hace proezas con su brazo:, (La,,10)(Mi,,247)", sC: "tc"},
+            { line: "dispersa a los soberbios de corazón., (La,,321)", sC: ""},
+            { line: "ÉL HACE PROEZAS CON SU BRAZO:, (Mi,,299)", sC: "ta as"},
+            { line: "DISPERSA A LOS SOBERBIOS DE CORAZÓN., (La,,395)", sC: "as"},
+    ], lder: [
+            { line: "Derriba a los poderosos, (Re,,48)(La,,187)", sC: "tc"},
+            { line: "y ensalza a los humildes., (Mi,,52)(La,,191)", sC: ""},
+            { line: "LOS HAMBRIENTOS, (La,7,17)(Re,,120)", sC: "ta as"},
+            { line: "COLMA DE BIENES, (La,,122)", sC: "as"},
+            { line: "Y A LOS RICOS DESPIDE VACÍOS., (Mi,,97)(La,,277)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Auxilia a Israel, su siervo,, (La,,10)(Mi,,203)", sC: "tc"},
+            { line: "acordándose de la misericordia., (La,,257)", sC: ""},
+            { line: "AUXILIA A ISRAEL, SU SIERVO,, (Mi,,236)", sC: "ta as"},
+            { line: "ACORDÁNDOSE DE LA MISERICORDIA., (La,,310)", sC: "as"},
+            { line: "Como lo había prometido, (Re,,120)(La,,215)", sC: "tc"},
+            { line: "en favor de Abraham., (Mi,,64)(La,,172)", sC: ""},
+            { line: "COMO LO HABÍA PROMETIDO, (Re,,10)(La,,247)", sC: "ta as"},
+            { line: "EN FAVOR DE ABRAHAM., (Mi,,75)(La,,207)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "PROCLAMA MI ALMA, (Re,,11)", sC: "ta as", lines: [
+            { line: "LA GRANDEZA DEL SEÑOR,, (Mi,,236)", sC: "as r1"},
+            { line: "SE ALEGRA MI ESPÍRITU, ", sC: "as"},
+            { line: "EN DIOS MI SALVADOR., (Re,,194)(La,,242)(Mi,,266)(La,,292)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: MAGNÍFICAT
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           MARÍA, CASA DE BENDICIÓN               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "mariacasadebendicion",
+        tt: "María, Casa De Bendición",
+        title: "María, Casa De Bendición",
+        subtitle: "Juan 2,1–11 | Las Bodas de Caná",
+        category: ["Precatecumenado","Vírgen María","Pascua","Comunión","Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "109",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/mariacasadebendicion.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=magnificat",
+        sig: "/resucito/src/index.html?canto=mariadejasnagora",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "MARÍA, CASA DE BENDICIÓN,, (Re,m,20)(Sol,m,99)(Re,m,256)", sC: "ta as"},
+            { line: "SALUD DE NUESTRO SIGLO,, (Sol,m,44)(Re,m,218)", sC: "as r1"},
+            { line: "MORADA TERRESTRE DEL HUMILDE., (La,7,56)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú, como en Caná de Galilea,, (Sol,m,22)(La,7,258)", sC: "tc"},
+            { line: "has visto que nos faltaba el vino;, (Sol,m,24)(La,7,279)", sC: ""},
+            { line: "que nuestra fiesta no era fiesta,, (Si♭,,13)", sC: ""},
+            { line: "que nuestra vida no era vida,", sC: ""},
+            { line: "porque la muerte reinaba en nosotros., (La,7,322)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MARÍA, CASA DE BENDICIÓN (Re,m,20)(Sol,m,99)(Re,m,256)", sC: "ta as", lines: [
+            { line: "SALUD DE NUESTRO SIGLO,, (Sol,m,44)(Re,m,218)", sC: "as r1"},
+            { line: "MORADA TERRESTRE DEL HUMILDE., (La,7,56)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y tú nos has llevado hasta tu Hijo,, (Sol,m,22)(La,7,297)", sC: "tc"},
+            { line: "nos has enseñado a obedecerle, (Sol,m,20)", sC: ""},
+            { line: "y a hacer todo lo que nos diga Él,, (La,7,305)", sC: ""},
+            { line: "para que transforme nuestra agua (Si♭,,13)", sC: ""},
+            { line: "en vino nuevo.,(La,7,97)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡VICTORIA! ¡VICTORIA!, (Re,m,11)(Do,,158)", sC: "ta as"},
+            { line: "¡VIDA ETERNA EN CRISTO RESUCITADO!, (Si♭,,92)(La,7,338)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aleluya, alelú, aleluya., (Re,m,62)(Do,,121)(Re,m,200)", sC: "tc"},
+            { line: "ALELUYA, ALELÚ, ALELUYA., (Do,,153)(Re,m,241)", sC: "ta as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: MARÍA, CASA DE BENDICIÓN
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           MARÍA DE JASNA GÓRA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "mariadejasnagora",
+        tt: "María De Jasna Góra",
+        title: "María De Jasna Góra",
+        subtitle: "Himno a la Virgen de Jasna Göra, Częstochowa Polonia (Kiko Argüello) ",
+        category: ["Precatecumenado","Vírgen María","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* Se puede decir por el texto en latín: MARIA, SANCTA MARIA",
+        nCanURL: "",
+        dbno: "110",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/mariadejasnagora.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=mariacasadebendicion",
+        sig: "/resucito/src/index.html?canto=mariamadredelaiglesia",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "MARÍA DE JASNA GÓRA, (La,,10)", sC: "ta as"},
+            { line: "MARIA, SANCTA MARIA", sC: "as msm", color: "rgb(255 0 0 / 42%)"},
+            { line: "", sC: "ast"}, // Espacio Generado para separar contenido
+            { line: "MATER ABSCONDITA,", sC: "as"},
+            { line: "AT SEMPER SOLICITA;", sC: "as"},
+            { line: "TU, REDEMPTORIS MATER,, (Sol,m,22) ", sC: "as"},
+            { line: "ORA PRO NOBIS., (La,,122)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Surge como Débora,, (Re,m,22)", sC: "tc"},
+            { line: "sálvanos como Judit,, (Sol,m,23)(La,,186)", sC: ""},
+            { line: "canta como Ana,, (Sol,m,22)", sC: ""},
+            { line: "intercede como Ester., (La,,191)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MARÍA DE JASNA GÓRA, (La,,10)", sC: "ta as", lines: [
+            { line: "MARIA, SANCTA MARIA", sC: "as msm", color: "rgb(255 0 0 / 42%)"},
+            { line: "", sC: "ast"}, // Espacio Generado para separar contenido
+            { line: "MATER ABSCONDITA,, ", sC: "as"},
+            { line: "AT SEMPER SOLICITA; ", sC: "as"},
+            { line: "TU, REDEMPTORIS MATER,, (Sol,m,22)", sC: "as"},
+            { line: "ORA PRO NOBIS., (La,,122)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Madre del Cielo,, (Re,m,22)", sC: "tc"},
+            { line: "enséñanos a seguir las huellas de Cristo,, (Sol,m,22)", sC: ""},
+            { line: "las huellas del Siervo, ", sC: ""},
+            { line: "del humilde Hijo, ", sC: ""},
+            { line: "de la humilde Madre, ", sC: ""},
+            { line: "de la siempre Virgen María., (La,,251)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "MARÍA DE JASNA GÓRA, (La,,10)", sC: "ta as", lines: [
+            { line: "MARIA, SANCTA MARIA", sC: "as msm", color: "rgb(255 0 0 / 42%)"},
+            { line: "", sC: "ast"}, // Espacio Generado para separar contenido
+            { line: "MATER ABSCONDITA,, ", sC: "as"},
+            { line: "AT SEMPER SOLICITA; ", sC: "as"},
+            { line: "TU, REDEMPTORIS MATER,, (Sol,m,22)", sC: "as"},
+            { line: "ORA PRO NOBIS., (La,,122)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: MARÍA DE JASNA GÓRA
 // SIGUIENTE CANTO DEBAJO
 
 
