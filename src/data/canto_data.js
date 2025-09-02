@@ -7919,8 +7919,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "103",
         notes: "",
-        mant: "Si",
-        audioSrc: "/audio/laudasion.mp3",
+        mant: "No",
+        audioSrc: "/audio/laudasion1.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7928,74 +7928,260 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/resucito/src/index.html?canto=lasarmasdelaluz",
-        sig: "/resucito/src/index.html?canto=laudasion",
+        sig: "/resucito/src/index.html?canto=laudasionc",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Alaba, Sión, al Salvador,, (La,m,20)(Re,m,250)", sC: "tc"},
-            { line: "Él es tu guía y tu Pastor., (La,m,20)", sC: ""},
-            { line: "Alábalo con himnos y cantos., (Mi,,20)", sC: ""},
+            { line: "Alaba, Sión, al Salvador,, (La,m,20)(Re,m,216)", sC: "tc"},
+            { line: "Él es tu guía y tu Pastor., (La,m,208)", sC: ""},
+            { line: "Alábalo con himnos y cantos., (Mi,,25)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ESTE ES EL PAN DE LOS ÁNGELES,, (La,m,20)(Re,m,250)", sC: "ta as"},
-            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
-            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},
+            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,10)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Canta con todo fervor,, (La,m,20)(Re,m,250)", sC: "tc"},
-            { line: "al pan vivo que da vida:, (La,m,20)", sC: ""},
+            { line: "Canta con todo fervor,, (La,m,20)(Re,m,190)", sC: "tc"},
+            { line: "al pan vivo que da vida:, (La,m,193)", sC: ""},
             { line: "este es el tema del canto, ", sC: ""},
-            { line: "y el objeto de alabanza., (Mi,,20)", sC: ""},
+            { line: "y el objeto de alabanza., (Mi,,204)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
-            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
-            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Ciertamente se donó,, (La,m,20)(Re,m,250)", sC: "tc"},
-            { line: "al grupo de doce hermanos,, (Lam,,)", sC: ""},
-            { line: "en fraterna y Santa Cena., (Mi,,20)", sC: ""},
-            { line: "Esta es la fiesta solemne,, (La,m,20)(Re,m,250)", sC: ""},
-            { line: "en la cual celebramos,, (La,m,20)", sC: ""},
-            { line: "la primera y Santa Cena., (Mi,,20)", sC: ""},
+            { line: "Ciertamente se donó,, (La,m,20)(Re,m,190)", sC: "tc"},
+            { line: "al grupo de doce hermanos, (Lam,,217)", sC: ""},
+            { line: "en fraterna y Santa Cena. (Mi,,209)", sC: ""},
+            { line: "Esta es la fiesta solemne, (La,m,20)(Re,m,192)", sC: ""},
+            { line: "en la cual celebramos, (La,m,162)", sC: ""},
+            { line: "la primera y Santa Cena. (Mi,,73)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
-            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
-            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
     ], lder: [
-            { line: "Es el banquete del nuevo Rey,, (La,m,20)(Re,m,250)", sC: "tc"},
-            { line: "la nueva Pascua y nueva Ley,, (La,m,20)", sC: ""},
-            { line: "donde lo antiguo termina., (Mi,,20)", sC: ""},
+            { line: "Es el banquete del nuevo Rey, (La,m,20)(Re,m,266)", sC: "tc"},
+            { line: "la nueva Pascua y nueva Ley, (La,m,256)", sC: ""},
+            { line: "donde lo antiguo termina. (Mi,,120)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Lo antiguo se verá nuevo,, (La,m,20)(Re,m,250)", sC: ""},
-            { line: "la realidad a la sombra;, (La,m,20)", sC: ""},
-            { line: "¡Es todo luz, ya no hay tinieblas!, (Mi,,20)", sC: ""},
+            { line: "Lo antiguo se verá nuevo, (La,m,20)(Re,m,204)", sC: ""},
+            { line: "la realidad a la sombra; (La,m,160)", sC: ""},
+            { line: "¡Es todo luz, ya no hay tinieblas!, (Mi,,91)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
-            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
-            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Cristo deja en su memoria,, (La,m,20)(Re,m,250)", sC: "tc"},
-            { line: "lo que hizo en Santa Cena,, (La,m,20)", sC: ""},
-            { line: "nosotros lo renovamos., (Mi,,20)", sC: ""},
-            { line: "Obedientes a su palabra,, (La,m,20)(Re,m,250)", sC: ""},
-            { line: "consagramos pan y vino,, (La,m,20)", sC: ""},
-            { line: "¡Hostia de la salvación!, (Mi,,20)", sC: ""},
+            { line: "Cristo deja en su memoria, (La,m,20)(Re,m,216)", sC: "tc"},
+            { line: "lo que hizo en Santa Cena, (La,m,215)", sC: ""},
+            { line: "nosotros lo renovamos. (Mi,,167)", sC: ""},
+            { line: "Obedientes a su palabra, (La,m,20)(Re,m,194)", sC: ""},
+            { line: "consagramos pan y vino, (La,m,201)", sC: ""},
+            { line: "¡Hostia de la salvación!, (Mi,,24)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
-            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
-            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Es cierto a los cristianos,, (La,m,20)(Re,m,250)", sC: "tc"},
-            { line: "que se transforma el pan en carne,, (La,m,20)", sC: ""},
-            { line: "y que el vino se hace sangre., (Mi,,20)", sC: ""},
+            { line: "Es cierto a los cristianos, (La,m,20)(Re,m,188)", sC: "tc"},
+            { line: "que se transforma el pan en carne,, (La,m,292)", sC: ""},
+            { line: "y que el vino se hace sangre. (Mi,,88)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES,..., (La,m,20)(Re,m,250)", sC: "ta as", lines: [
-            { line: "PAN DE LOS QUE HACEN CAMINO., (La,m,20)", sC: "as"},
-            { line: "ESTE ES EL PAN DE LOS HIJOS., (Mi,,20)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: LAUDA SIÓN
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════╗
+║           LAUDA SIÓN               ║
+╚════════════════════════════════════╝  */
+   {
+        id: "laudasionc",
+        tt: "Lauda Sión",
+        title: "Lauda Sión",
+        subtitle: "Secuencia del Corpus Christi (Santo Tomas de Aquino) ",
+        category: ["Precatecumenado","Pascua","Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "103",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/laudasion2.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=laudasion",
+        sig: "/resucito/src/index.html?canto=levantomisojosalosmontes",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Tú no ves, tú no comprendes;, (La,m,20)(Re,m,220)", sC: "tc"},
+            { line: "mas la fe te lo confirma, (La,m,186)", sC: ""},
+            { line: "más allá de la razón., (Mi,,76)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Es signo lo que aparece,, (La,m,20)(Re,m,199)", sC: ""},
+            { line: "y esconde un gran misterio,, (La,m,231)", sC: ""},
+            { line: "una realidad sublime., (Mi,,104)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Comes carne, bebes sangre,, (La,m,20)(Re,m,217)", sC: ""},
+            { line: "en las dos especies;, (La,m,141)", sC: ""},
+            { line: "pero queda Cristo entero., (Mi,,75)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El que come solo parte,, (La,m,20)(Re,m,187)", sC: "tc"},
+            { line: "ni separa ni divide,, (La,m,149)", sC: ""},
+            { line: "en tanto que lo recibe., (Mi,,175)", sC: ""},
+            { line: "Que sean uno, que sean mil,, (La,m,20)(Re,m,253)", sC: ""},
+            { line: "igualmente lo reciben, (La,m,176)", sC: ""},
+            { line: "y nunca se consume., (Mi,,33)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Buen pastor, pan verdadero,, (La,m,20)(Re,m,239)", sC: "tc"},
+            { line: "de nosotros ten piedad., (La,m,203)", sC: ""},
+            { line: "Danos los bienes eternos, (Mi,,194)", sC: ""},
+            { line: "en la tierra de los vivos., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Oh, Señor, que todo sabes!, (La,m,20)(Re,m,217)", sC: "tc"},
+            { line: "¡Oh, Señor, que todo puedes!, (La,m,230)", sC: ""},
+            { line: "¡Que nos sacias en la tierra!, (Mi,,108)", sC: ""},
+            { line: "Conduce a tus hermanos, (La,m,20)(Re,m,198)", sC: ""},
+            { line: "a la cena del cielo;, (La,m,150)", sC: ""},
+            { line: "en el gozo de los santos., (Mi,,71)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)", sC: "ta as", lines: [
+            { line: "PAN DE LOS QUE HACEN CAMINO. (La,m,288)", sC: "as"},
+            { line: "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "", sC: "sp1 nota"},
+            { line: "En la convivencia de itinerantes de España del año, 2003, Kiko cantó este himno en la Eucaristía como, canto de entrada. En aquella ocasión, utilizó como, estribillo el texto en latín que reproducimos a, continuación, con el fin de que pueda ser utilizado, por los salmistas si así lo consideráis apropiado para, la celebración.", sC: "small"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "LAUDA, SION, SALVATOREM, (La,m,20)(Re,m,230)", sC: "ta as", lines: [
+            { line: "LAUDA DUCEM ET PASTOREM (La,m,248)", sC: "as"},
+            { line: "IN HYMNIS ET CANTICIS. (Mi,,10)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: LAUDA SIÓN
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LEVANTO MIS OJOS A LOS MONTES                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "levantomisojosalosmontes",
+        tt: "Levanto Mis Ojos A Los Montes",
+        title: "Levanto Mis Ojos A Los Montes",
+        subtitle: "Salmo 121 (120)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "105",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/levantomisojosalosmontes.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=laudasionc",
+        sig: "/resucito/src/index.html?canto=lleguehastatupresenciamiclamor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "LEVANTO MIS OJOS A LOS MONTES:, (Sol,,14)(Si,m,280)", sC: "ta as"},
+            { line: "¿DE DÓNDE ME VENDRÁ EL AUXILIO?, (Do,,65)(Re,7,232)(Sol,,317)", sC: "as"},
+            { line: "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,69)(Sol,,297)", sC: "as"},
+            { line: "QUE HIZO EL CIELO Y LA TIERRA., (Re,,65)(Do,,152)(Sol,,260)", sC: "as"},
+            { line: "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,74)(Re,7,171)(Sol,,300)", sC: "as"},
+            { line: "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "No permitirá que resbale tu pie,, (Sol,,13)(Si,m,286)", sC: "tc"},
+            { line: "tu guardián no duerme;, (Do,,10)(Re,7,90)(Sol,,174)", sC: ""},
+            { line: "no duerme ni reposa, (Do,,57)(Sol,,167)", sC: ""},
+            { line: "el guardián de Israel., (Re,,89)(Do,,128)(Sol,,184)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "LEVANTO MIS OJOS A LOS MONTES, (Sol,,14)(Si,m,280)", sC: "ta as", lines: [
+            { line: "¿DE DÓNDE ME VENDRÁ EL AUXILIO?, (Do,,65)(Re,7,232)(Sol,,317)", sC: "as"},
+            { line: "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,69)(Sol,,297)", sC: "as"},
+            { line: "QUE HIZO EL CIELO Y LA TIERRA., (Re,,65)(Do,,152)(Sol,,260)", sC: "as"},
+            { line: "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,74)(Re,7,171)(Sol,,300)", sC: "as"},
+            { line: "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)", sC: "as"},  ]},
+    ], lder: [
+            { line: "El Señor te guarda a su sombra,, (Sol,,14)(Si,m,246)", sC: "tc"},
+            { line: "Él está a tu derecha;, (Do,,10)(Re,7,55)(Sol,,143)", sC: ""},
+            { line: "de día el sol no te hará daño,, (Do,,42)(Sol,,237)", sC: ""},
+            { line: "ni la luna de noche., (Re,,54)(Do,,80)(Sol,,135)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "LEVANTO MIS OJOS A LOS MONTES, (Sol,,14)(Si,m,280)", sC: "ta as", lines: [
+            { line: "¿DE DÓNDE ME VENDRÁ EL AUXILIO?, (Do,,65)(Re,7,232)(Sol,,317)", sC: "as"},
+            { line: "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,69)(Sol,,297)", sC: "as"},
+            { line: "QUE HIZO EL CIELO Y LA TIERRA., (Re,,65)(Do,,152)(Sol,,260)", sC: "as"},
+            { line: "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,74)(Re,7,171)(Sol,,300)", sC: "as"},
+            { line: "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Señor te guarda de todo mal,, (Sol,,14)(Si,m,287)", sC: "tc"},
+            { line: "él guarda tu alma;, (Do,,10)(Re,7,51)(Sol,,123)", sC: ""},
+            { line: "vigila tus entradas y salidas,, (Do,,23)(Sol,,222)", sC: ""},
+            { line: "ahora y por siempre., (Re,,28)(Do,,68)(Sol,,133)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "LEVANTO MIS OJOS A LOS MONTES, (Sol,,14)(Si,m,280)", sC: "ta as", lines: [
+            { line: "¿DE DÓNDE ME VENDRÁ EL AUXILIO?, (Do,,65)(Re,7,232)(Sol,,317)", sC: "as"},
+            { line: "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,69)(Sol,,297)", sC: "as"},
+            { line: "QUE HIZO EL CIELO Y LA TIERRA., (Re,,65)(Do,,152)(Sol,,260)", sC: "as"},
+            { line: "EL AUXILIO ME VIENE DEL SEÑOR,, (Do,,74)(Re,7,171)(Sol,,300)", sC: "as"},
+            { line: "QUE HIZO EL CIELO Y LA TIERRA., (Do,,64)(Re,7,150)(Sol,,260)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: LEVANTO MIS OJOS A LOS MONTES
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
