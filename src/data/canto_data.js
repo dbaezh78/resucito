@@ -8517,6 +8517,83 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: MARÍA DE JASNA GÓRA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           MARÍA, MADRE DE LA IGLESIA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "mariamadredelaiglesia",
+        tt: "María, Madre De La Iglesia",
+        title: "María, Madre De La Iglesia",
+        subtitle: "Juan 19,26-34",
+        category: ["Precatecumenado","Vírgen María","Cuaresma","Penitencial","Fracción Del Pan","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "111",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/mariamadredelaiglesia.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=mariadejasnagora",
+        sig: "/resucito/src/index.html?canto=mariamadredelcaminoardiente",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "«Mujer, he ahí a tu hijo,, (Mi,,12)", sC: "tc"},
+            { line: "he ahí a tu hijo, he ahí a tu hijo, ", sC: ""},
+            { line: "ahí tienes a tu hijo., ", sC: ""},
+            { line: "Ahí tienes a tu Madre,, (La,m,20)", sC: ""},
+            { line: "ahí tienes a tu Madre»., (Re,m,22)(Mi,,166)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MARÍA, MADRE MÍA,, (La,m,20)", sC: "ta as"},
+            { line: "MARÍA, MADRE NUESTRA:, (Sol,7,20)(La,m,191)", sC: "as"},
+            { line: "VEN A VIVIR CONMIGO,, (Sol,,14)(Mi,,182)", sC: "as"},
+            { line: "VEN A MI CASA., (Sol,,10)(Mi,,115)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y ENSÉÑANOS A AMAR A TU HIJO, (Mi,7,65)(Fa,maj7,302)", sC: "as"},
+            { line: "COMO LO HAS AMADO TÚ,, (Mi,,242)", sC: "as"},
+            { line: "Y ENSÉÑANOS A AMAR A TU HIJO, (Mi,7,61)(Fa,maj7,302)", sC: "as"},
+            { line: "COMO LO HAS AMADO TÚ., (Mi,,244)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«Tengo sed, tengo sed,, (Mi,,17)", sC: "tc"},
+            { line: "todo se ha cumplido, todo se ha cumplido,, ", sC: ""},
+            { line: "todo se ha cumplido»., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MARÍA, MADRE MÍA, (La,m,20)", sC: "ta as", lines: [
+            { line: "MARÍA, MADRE NUESTRA:, (Sol,7,22)(La,m,191)", sC: "as"},
+            { line: "VEN A VIVIR CONMIGO,, (Sol,,14)(Mi,,182)", sC: "as"},
+            { line: "VEN A MI CASA., (Sol,,10)(Mi,,115)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y ENSÉÑANOS A AMAR A TU HIJO, (Mi,7,65)(Fa,maj7,301)", sC: "as"},
+            { line: "COMO LO HAS AMADO TÚ,, (Mi,,242)", sC: "as"},
+            { line: "Y ENSÉÑANOS A AMAR A TU HIJO, (Mi,7,61)(Fa,maj7,302)", sC: "as"},
+            { line: "COMO LO HAS AMADO TÚ., (Mi,,244)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Llegaron, pues, los soldados,, (Mi,,10)", sC: "tc"},
+            { line: "y viendo que estaba muerto, ", sC: ""},
+            { line: "no le quebraron las piernas,, ", sC: ""},
+            { line: "mas uno de los soldados, ", sC: ""},
+            { line: "le atravesó el costado con la lanza, ", sC: ""},
+            { line: "y al instante salió sangre y agua,, (Fa,maj7,162)(Mi,,267)", sC: ""},
+            { line: "sangre y agua., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MARÍA, MADRE MÍA,, (La,m,20)", sC: "ta as"},
+            { line: "MARÍA, MADRE NUESTRA:, (Sol,7,20)(La,m,193)", sC: "as"},
+            { line: "TÚ ERES MADRE DE LA IGLESIA,, (Sol,,12)(Mi,,270)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "QUE NACE DEL COSTADO DE CRISTO, (Mi,7,63)(Fa,maj7,308)", sC: "as"},
+            { line: "COMO ESPOSA, NUEVA EVA., (Mi,,236)", sC: "as"},
+            { line: "QUE NACE DEL COSTADO DE CRISTO, (Mi,7,70)(Fa,maj7,305)", sC: "as"},
+            { line: "COMO ESPOSA, NUEVA EVA., (Mi,,237)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: MARÍA, MADRE DE LA IGLESIA
+// SIGUIENTE CANTO DEBAJO
 
 
 
@@ -9722,7 +9799,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         subtitle: "Modelo III",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
+        cejilla: "3",
         nCan: "",
         nCanURL: "",
         dbno: "180",
@@ -9755,4 +9832,177 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
+
+
+
+
+
+
+
+
+/*
+╔════════════════════════════════════════════════╗
+║           ALELUYA INTERLECCIONAL SEMANA XXII   ║
+╚════════════════════════════════════════════════╝  */
+   {
+        id: "ialeluyas23",
+        tt: "Aleluya Interleccional Semana XXIII",
+        title: "Aleluya Interleccional Semana XXIII",
+        subtitle: "Según Modelo",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "180",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/aleluyainterleccional.mp3",
+        // propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=aclamacionesalaoraciondelosfieles",
+        sig: "/resucito/src/index.html?canto=aleluyapascual",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)", sC: "ta as bg"},  
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cargad con mi yugo y aprended de mí, (Mi,,10)(Re,,181)(Mi,m,352)", sC: "tc"},
+            { line: "—dice el Señor—", sC: ""},
+            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,142)(La,m,335)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
+        ]},
+
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)", sC: "ta as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)", sC: "as bg"},  
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Haz brillar tu rostro sobre tu siervo,, (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
+            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
+        ]},
+
+                        { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"}, 
+
+                        { line: "Cargad con mi yugo y aprended de mí, (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
+            { line: "—dice el Señor—", sC: ""},
+            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
+        
+        ]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL SEMANA XXIII
+// SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════════════════════╗
+║           ALELUYA INTERLECCIONAL SEMANA XXII   ║
+╚════════════════════════════════════════════════╝  */
+   {
+        id: "ialeluyas24",
+        tt: "Aleluya Interleccional Semana XXII",
+        title: "Aleluya Interleccional Semana XXII",
+        subtitle: "Según Modelo",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "180",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/aleluyainterleccional.mp3",
+        // propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=aclamacionesalaoraciondelosfieles",
+        sig: "/resucito/src/index.html?canto=aleluyapascual",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)", sC: "ta as bg"},  
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cargad con mi yugo y aprended de mí, (Mi,,10)(Re,,181)(Mi,m,352)", sC: "tc"},
+            { line: "—dice el Señor—", sC: ""},
+            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,142)(La,m,335)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
+        ]},
+
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)", sC: "ta as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)", sC: "as bg"},  
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Cargad con mi yugo y aprended de mí, (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
+            { line: "—dice el Señor—", sC: ""},
+            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
+        ]},
+
+                        { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"}, 
+
+                        { line: "Cargad con mi yugo y aprended de mí, (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
+            { line: "—dice el Señor—", sC: ""},
+            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
+        
+        ]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL SEMANA XXIII
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ] //LLAVE DE CIERRE DEL CANTO
+
