@@ -9915,9 +9915,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ╚════════════════════════════════════════════════╝  */
    {
         id: "ialeluyas24",
-        tt: "Aleluya Interleccional ",
-        title: "Semana XXIV",
-        subtitle: "Aleluya Interleccional Tiempo Ordinario",
+        tt: "Aleluya Interleccional Semana XXIV",
+        title: "Aleluya Interleccional Semana XXIV",
+        subtitle: "Según Modelo",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
@@ -9925,7 +9925,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "180",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/aleluyainterleccional.mp3",
         // propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -9944,8 +9944,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)", sC: "ta as bg"},  
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Jesús proclamaba el Evangelio del reino,           (Mi,m,20)(Re,,161)(Mi,m,364)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                 (Re,,10)(Mi,m,290)", sC: ""},
+            { line: "Jesús proclamaba el Evangelio del reino,           (Mi,,10)(Re,,181)(Mi,m,352)", sC: "tc"},
+            { line: "y curaba toda dolencia del pueblo.                 (Do,,10)(Mi,,142)(La,m,335)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
         ]},
@@ -9968,8 +9968,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
             { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"}, 
 
-            { line: "Jesús proclamaba el Evangelio del reino,              (Mi,m,20)(La,m,171)(Mi,m,365)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                    (La,m,77)(Mi,m,298)", sC: "bg"},
+            { line: "Jesús proclamaba el Evangelio del reino,              (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
+            { line: "y curaba toda dolencia del pueblo.                    (Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
         
