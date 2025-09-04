@@ -9999,6 +9999,55 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           MAGNÍFICAT               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "jesusestaentrenosotros",
+        tt: "Jesus esta entre nosotros",
+        title: "Jesus esta entre nosotros",
+        subtitle: "Cantico del Pueblo",
+        category: ["","",""],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "1",
+        nCan: "",
+        nCanURL: "",
+        dbno: "300",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/magnificat.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=llevamealcielo",
+        sig: "/resucito/src/index.html?canto=mariacasadebendicion",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "JESÚS ESTÁ ENTRE NOSOTROS,, (Do,,10)(Sol,,84)(Fa,,130)(Do,,228)(Sol,,285)", sC: "ta as"},
+            { line: "ÉL VIVE HOY, (Do,,10)(Mi,m,97)", sC: "as"},
+            { line: "Y SU ESPÍRITU A TODOS DA., (Fa,,10)(Sol,,255)", sC: "as"},
+            { line: "JESÚS, RAZÓN DE NUESTRA VIDA,, (Do,,10)(Sol,,108)(Fa,,154)(Do,,263)", sC: "as"},
+            { line: "ES EL SEÑOR,, (Do,,10)(Mi,m,106)", sC: "as"},
+            { line: "NOS REÚNE EN PUEBLO DE AMOR., (Fa,,11)(Sol,,294)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cambia nuestras vidas con tu fuerza., (La,m,20)(Fa,,180)(Do,,298)(Sol,,348)", sC: "tc"},
+            { line: "Guárdanos por siempre en tu presencia., (La,m,45)(Fa,,185)(Do,,328)(Sol,,370)", sC: ""},
+            { line: "Tú eres verdad, Tú eres la paz., (La,m,24)(Mi,m,143)(Fa,,205)(Do,,280)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Rompe las cadenas que nos atan,, (La,m,20)(Fa,,173)(Do,,256)(Sol,,312)", sC: ""},
+            { line: "llénanos de gracia en tu Palabra,, (La,m,45)(Fa,,185)(Do,,262)(Sol,,305)", sC: ""},
+            { line: "gracias, Señor; gracias, Salvador., (La,m,24)(Mi,m,143)(Fa,,205)(Do,,280)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Nuestras existencias hoy te alaban,, (La,m,20)(Fa,,165)(Do,,224)(Sol,,338)", sC: ""},
+            { line: "nuestros corazones te dan gracias,, (La,m,45)(Fa,,185)(Do,,302)(Sol,,334)", sC: ""},
+            { line: "Tu eres amor, eres canción., (La,m,24)(Mi,m,112)(Fa,,148)(Do,,240)", sC: ""},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: MAGNÍFICAT
+// SIGUIENTE CANTO DEBAJO
 
 
 
