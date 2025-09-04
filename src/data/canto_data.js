@@ -9856,7 +9856,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "180",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "/audio/aleluyainterleccional.mp3",
         // propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -9875,9 +9875,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)", sC: "ta as bg"},  
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Cargad con mi yugo y aprended de mí, (Mi,,10)(Re,,181)(Mi,m,352)", sC: "tc"},
-            { line: "—dice el Señor—", sC: ""},
-            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,142)(La,m,335)", sC: ""},
+            { line: "Jesús proclamaba el Evangelio del reino,           (Mi,,10)(Re,,181)(Mi,m,352)", sC: "tc"},
+            { line: "y curaba toda dolencia del pueblo.                 (Do,,10)(Mi,,142)(La,m,335)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
         ]},
@@ -9885,12 +9884,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
             { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)", sC: "ta as"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)", sC: "as bg"},  
+            { line: "ALELUYA, ALELUYA, ALELUYA.,(Do,,10)(Mi,,152)(La,m,275)", sC: "ta as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA.,(Do,,10)(Mi,,152)(La,m,275)", sC: "as bg"},  
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Haz brillar tu rostro sobre tu siervo,, (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
-            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
+            { line: "Jesús proclamaba el Evangelio del reino,             (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
+            { line: "y curaba toda dolencia del pueblo.                   (Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
         ]},
@@ -9900,9 +9899,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
             { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"}, 
 
-                        { line: "Cargad con mi yugo y aprended de mí, (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
-            { line: "—dice el Señor—", sC: ""},
-            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
+            { line: "Jesús proclamaba el Evangelio del reino,              (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
+            { line: "y curaba toda dolencia del pueblo.                    (Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
         
