@@ -9913,11 +9913,13 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ╔════════════════════════════════════════════════╗
 ║           ALELUYA INTERLECCIONAL SEMANA XXII   ║
 ╚════════════════════════════════════════════════╝  */
-   {
+
+
+{
         id: "ialeluyas24",
-        tt: "Aleluya Interleccional ",
-        title: "Semana XXIV",
-        subtitle: "Aleluya Interleccional Tiempo Ordinario",
+        tt: "Aleluya Interleccional",
+        title: "Aleluya Interleccional",
+        subtitle: "Semana XXIV | Tiempo Ordinario",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
@@ -9937,7 +9939,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/resucito/src/index.html?canto=aleluyapascual",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            
+
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
        triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
             { line: "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)", sC: "tc"},
@@ -10107,4 +10109,5 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 ] //LLAVE DE CIERRE DEL CANTO
+
 
