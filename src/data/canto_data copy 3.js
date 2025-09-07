@@ -8748,7 +8748,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "188",
         notes: "",
-        mant: "No",
+        mant: "Si",
         audioSrc: "/audio/gloriaadiosenloaltodelcielo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -8760,38 +8760,38 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/resucito/src/index.html?canto=letaniasdelossantos",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "GLORIA DIOS EN LO ALTO DEL CIELO,, (Re,,10)(La,,322)", sC: "ta as"},
-            { line: "Y PAZ EN LA TIERRA, (Sol,,43)", sC: "as"},
-            { line: "A LOS HOMBRES QUE AMA EL SEÑOR., (La,,339)", sC: "as"},
+            { line: "GLORIA DIOS EN LO ALTO DEL CIELO,, (Re,,10)(La,,250)", sC: "ta as"},
+            { line: "Y PAZ EN LA TIERRA, (Sol,,15)", sC: "as"},
+            { line: "A LOS HOMBRES QUE AMA EL SEÑOR., (La,,15)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "TE ALABAMOS, TE GLORIFICAMOS,, (Re,,91)(La,,276)", sC: "as"},
-            { line: "TE ADORAMOS, TE DAMOS GRACIAS, (Sol,,95)", sC: "as"},
-            { line: "POR TU INMENSA GLORIA., (La,,209)", sC: "as"},
+            { line: "TE ALABAMOS, TE GLORIFICAMOS,, (Re,,15)(La,,250)", sC: "as"},
+            { line: "TE ADORAMOS, TE DAMOS GRACIAS, (Sol,,15)", sC: "as"},
+            { line: "POR TU INMENSA GLORIA., (La,,15)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Señor Dios, Rey celestial,, (Sol,,89)", sC: "tc"},
-            { line: "Dios Padre todopoderoso., (Fa#,m,221)", sC: ""},
-            { line: "Señor, Hijo único,, (Mi,m,125)", sC: ""},
-            { line: "JESUCRISTO., (La,,77)", sC: "ta"},
+            { line: "Señor Dios, Rey celestial,, (Sol,,15)", sC: "tc"},
+            { line: "Dios Padre todopoderoso., (Fa#,m,15)", sC: ""},
+            { line: "Señor, Hijo único,, (Mi,m,15)", sC: ""},
+            { line: "JESUCRISTO., (La,,15)", sC: "ta"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Señor Dios, Cordero de Dios,, (Sol,,89)", sC: "tc"},
-            { line: "Hijo del Padre;, (Fa#,m,100)", sC: ""},
-            { line: "tú que quitas el pecado del mundo,, (Mi,m,293)", sC: ""},
-            { line: "TEN PIEDAD DE NOSOTROS., (La,,204)", sC: "ta as"},
+            { line: "Señor Dios, Cordero de Dios,, (Sol,,15)", sC: "tc"},
+            { line: "Hijo del Padre;, (Fa#,m,15)", sC: ""},
+            { line: "tú que quitas el pecado del mundo,, (Mi,m,15)", sC: ""},
+            { line: "TEN PIEDAD DE NOSOTROS., (La,,15)", sC: "ta as"},
     ], lder: [
-            { line: "Tú que quitas el pecado del mundo,, (Sol,,96)", sC: "tc"},
-            { line: "atiende a nuestra súplica;, (Fa#,m,196)", sC: ""},
+            { line: "Tú que quitas el pecado del mundo,, (Sol,,15)", sC: "tc"},
+            { line: "atiende a nuestra súplica;, (Fa#,m,15)", sC: ""},
             { line: "tú, que estás sentado, ", sC: ""},
-            { line: "a la derecha del Padre,, (Mi,m,176)", sC: ""},
-            { line: "TEN PIEDAD DE NOSOTROS;, (La,,204)", sC: "ta as"},
+            { line: "a la derecha del Padre,, (Mi,m,15)", sC: ""},
+            { line: "TEN PIEDAD DE NOSOTROS;, (La,,15)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "PORQUE SOLO TÚ ERES SANTO,, (Sol,,107)", sC: "ta as"},
-            { line: "SOLO TÚ SEÑOR,, (Fa#,m,138)", sC: "as"},
-            { line: "SOLO TÚ ALTÍSIMO,, (Mi,m,130)", sC: "as"},
-            { line: "JESUCRISTO,, (La,,78)", sC: "as"},
+            { line: "PORQUE SOLO TÚ ERES SANTO,, (Sol,,15)", sC: "ta as"},
+            { line: "SOLO TÚ SEÑOR,, (Fa#,m,15)", sC: "as"},
+            { line: "SOLO TÚ ALTÍSIMO,, (Mi,m,15)", sC: "as"},
+            { line: "JESUCRISTO,, (La,,15)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "con el Espíritu Santo, ", sC: "tc"},
-            { line: "en la gloria de Dios Padre., (Re,,207)", sC: ""},
-            { line: "AMÉN, AMÉN, (Sol,,12)(Re,,83)", sC: "ta as"},
+            { line: "en la gloria de Dios Padre., (Re,,15)", sC: ""},
+            { line: "AMÉN, AMÉN, (Sol,,15)(Re,,250)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: GLORIA A DIOS EN LO ALTO DEL CIELO
 // SIGUIENTE CANTO DEBAJO
 
@@ -10172,87 +10172,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
-// INCOVACION AL ESPIRITU SANTO
-/*
-╔════════════════════════════════════════════════════════╗
-║           INVOCACIÓN AL ESPIRITU SANTO               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "iespiritusanto",
-        tt: "Invocación Al Espiritu Santo",
-        title: "Invocación Al Espiritu Santo",
-        subtitle: "Celebración",
-        category: ["Precatecumenado","Celebración",""],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "3",
-        nCan: "",
-        nCanURL: "",
-        dbno: "246",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/invocacionalespiritusanto.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=ohluzgozosa",
-        sig: "/resucito/src/index.html?canto=#",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "OH SEÑOR, ENVIA TU ESPIRITU,, (Mi,m,19)(La,m,133)(Mi,m,311)", sC: "ta as"},
-            { line: "QUE RENUEVE LA FAZ, (Sol,,13)(Do,,152)(La,m,237)", sC: "as"},
-            { line: "DE LA TIERRA, (Mi,m,46)(Si,7,83)(Mi,m,137)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "OH SEÑOR, ENVIA TU ESPIRITU,, (Mi,m,19)(La,m,133)(Mi,m,311)", sC: "ta as"},
-            { line: "QUE RENUEVE LA FAZ, (Sol,,13)(Do,,152)(La,m,237)", sC: "as"},
-            { line: "DE LA TIERRA, (Mi,m,46)(Si,7,83)(Mi,m,137)", sC: "as"},
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: INVOCACIÓN AL ESPIRITU SANTO
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           OH LUZ GOZOSA               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "ohluzgozosa",
-        tt: "Oh Luz Gozosa",
-        title: "Oh Luz Gozosa",
-        subtitle: "Salmo 17 (16) ",
-        category: ["Precatecumenado","Cuaresma","Antiguo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        nCanURL: "",
-        dbno: "10",
-        notes: "",
-        mant: "No",
-        audioSrc: "/audio/ohluzgozosa.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=ialeluyas22",
-        sig: "/resucito/src/index.html?canto=iespiritusanto",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-/*            { line: "Oh luz gozosa, (Sol,,13)(Do,,101)", sC: "tc"},
-            { line: "de la santa Gloria, (Sol,,15)(Re,,106)", sC: ""},
-            { line: "del Padre celeste inmortal, (Mi,m,22)(Do,,107)(Re,,195)", sC: ""},
-            { line: "Santo y feliz, Jesucristo,, (Sol,,13)(Do,,106)(Sol,,175)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido*/
-            { line: "Oh luz gozosa, (Sol,,13)(Do,,101)", sC: "tc"},
-            { line: "de la santa Gloria, (Sol,,15)(Re,,106)", sC: ""},
-            { line: "del Padre celeste inmortal, (Mi,m,22)(Do,,107)(Re,,195)", sC: ""},
-            { line: "Santo y feliz, (Sol,,13)(Do,,106)", sC: ""},
-            { line: "Jesucristo, (Sol,,48)", sC: "as"},
-
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: OH LUZ GOZOSA
-// SIGUIENTE CANTO DEBAJO
 
 
 
