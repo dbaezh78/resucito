@@ -64,13 +64,12 @@ const aitps6c = "Domingo VI, Tiempo Pascual";
 const aitps7c = "Domingo VII, Tiempo Pascual";
 const aitps8c = "Domingo VIII, Tiempo Pascual";
 
-
-
+// TIPO Y AÑO
 const añoa = "Aleluya InterLeccional, Modelo I, II, III - Año A";
 const añob = "Aleluya InterLeccional, Modelo I, II, III - Año B";
 const añoc = "Aleluya InterLeccional, Modelo I, II, III - Año C";
 
-
+// CANTOR Y ASAMBLEA
 const am11 = "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)";
 const am12 = "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)";
 const am2 = "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)";
@@ -321,7 +320,7 @@ const allCantosData = [
 ╚════════════════════════════════════════════════╝  */
    {
         id: "aitos23c",
-        tt: "Aleluya Interleccional Semana XXIII",
+        tt: "aitos23c",
         title: aitos23c,
         subtitle: añoc,
         category: ["Liturgia"],
@@ -331,7 +330,7 @@ const allCantosData = [
         nCanURL: "",
         dbno: "180",
         notes: "",
-        mant: "No",
+        mant: "Si",
         audioSrc: "/audio/aleluyainterleccional.mp3",
         // propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -350,8 +349,8 @@ const allCantosData = [
             { line: am12, sC: "ta as bg"},  
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Jesús proclamaba el Evangelio del reino,           (Mi,,10)(Re,,181)(Mi,m,352)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                 (Do,,10)(Mi,,142)(La,m,335)", sC: ""},
+            { line: "Haz brillar tu rostro sobre tu siervo,           (Mi,,10)(Re,,112)(Mi,m,323)", sC: "tc"},
+            { line: "enséñame tus decretos.                           (Re,,10)(Mi,m,72)(Re,,120)(Mi,m,208)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
         ]},
@@ -363,8 +362,8 @@ const allCantosData = [
             { line: am2, sC: "as bg"},  
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Jesús proclamaba el Evangelio del reino,             (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                   (Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
+            { line: "Haz brillar tu rostro sobre tu siervo,             (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
+            { line: "enséñame tus decretos.                             (Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
         ]},
@@ -374,8 +373,8 @@ const allCantosData = [
             { line: am31, sC: "tc"},
             { line: am32, sC: "ta as"}, 
 
-            { line: "Jesús proclamaba el Evangelio del reino,              (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                    (Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
+            { line: "Haz brillar tu rostro sobre tu siervo,              (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
+            { line: "enséñame tus decretos.                              (Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
         
@@ -384,13 +383,11 @@ const allCantosData = [
 ╔════════════════════════════════════════════════╗
 ║           ALELUYA INTERLECCIONAL SEMANA XXIV   ║
 ╚════════════════════════════════════════════════╝  */
-
-
 {
         id: "aitos24c",
-        tt: "Aleluya Interleccional",
-        title: "Aleluya Interleccional",
-        subtitle: "Semana XXIV | Tiempo Ordinario",
+        tt: aitos24c,
+        title: aitos24c,
+        subtitle: añoc,
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
@@ -417,8 +414,8 @@ const allCantosData = [
             { line: am12, sC: "ta as bg"},  
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Jesús proclamaba el Evangelio del reino,           (Mi,m,20)(Re,,161)(Mi,m,364)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                 (Re,,10)(Mi,m,290)", sC: ""},
+            { line: "Dios estaba en Cristo reconciliando al mundo consigo,       (Mi,m,20)(Re,,175)(Mi,m,489)", sC: "tc"},
+            { line: "y ha puesto en nosotros el mensaje de la reconciliación     (Re,,225)(Mi,m,497)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
         ]},
@@ -430,8 +427,8 @@ const allCantosData = [
             { line: am2, sC: "as bg"},  
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Jesús proclamaba el Evangelio del reino,             (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                   (Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
+            { line: "Dios estaba en Cristo reconciliando al mundo consigo,         (Do,,10)(Mi,,175)(La,m,478)", sC: "tc"},
+            { line: "y ha puesto en nosotros el mensaje de la reconciliación       (Do,,10)(Mi,,212)(La,m,493)", sC: "bg"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
         ]},
@@ -441,8 +438,8 @@ const allCantosData = [
             { line: am31, sC: "tc"},
             { line: am32, sC: "ta as"},
 
-            { line: "Jesús proclamaba el Evangelio del reino,              (Mi,m,20)(La,m,171)(Mi,m,365)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                    (La,m,77)(Mi,m,298)", sC: "bg"},
+            { line: "Dios estaba en Cristo reconciliando al mundo consigo,          (Mi,m,20)(La,m,175)(Mi,m,487)", sC: "tc"},
+            { line: "y ha puesto en nosotros el mensaje de la reconciliación        (La,m,204)(Mi,m,503)", sC: "bg"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
         
@@ -451,7 +448,75 @@ const allCantosData = [
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL SEMANA XXIII
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════╗
+║           ALELUYA INTERLECCIONAL SEMANA XXIV   ║
+╚════════════════════════════════════════════════╝  */
+{
+        id: "aitos25c",
+        tt: aitos25c,
+        title: aitos25c,
+        subtitle: añoc,
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "180",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/aleluyainterleccional.mp3",
+        // propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/ainterleccional.html?canto=aitos24c",
+        sig: "/resucito/src/ainterleccional.html?canto=aitos26c",
+// Contenido del lado izquierdo del canto,
+    lizq: [
 
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: am11, sC: "tc"},
+            { line: am12, sC: "ta as bg"},  
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Jesucristo, siendo rico, se hizo pobre           (Mi,m,20)(Re,,85)(Mi,m,325)", sC: "tc"},
+            { line: "para enriqueceros con su pobreza.                (Re,,163)(Mi,m,312)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
+        ]},
+
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: am2, sC: "ta as"},
+            { line: am2, sC: "as bg"},  
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Jesucristo, siendo rico, se hizo pobre             (Do,,10)(Mi,,82)(La,m,311)", sC: "tc"},
+            { line: "para enriqueceros con su pobreza.                  (Do,,10)(Mi,,193)(La,m,302)", sC: "bg"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
+        ]},
+
+                        { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: am31, sC: "tc"},
+            { line: am32, sC: "ta as"},
+
+            { line: "Jesucristo, siendo rico, se hizo pobre              (Mi,m,20)(La,m,79)(Mi,m,331)", sC: "tc"},
+            { line: "para enriqueceros con su pobreza.                   (La,m,163)(Mi,m,304)", sC: "bg"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
+        
+        ]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL SEMANA XXIII
+// SIGUIENTE CANTO DEBAJO
 
 
 
