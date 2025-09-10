@@ -23,6 +23,8 @@ const aitns2 = "Domingo II, Tiempo Navidad";
 const aitns3 = "Domingo III, Tiempo Navidad";
 const aitns4 = "Domingo IV, Tiempo Navidad";
 const aitns25dicmv = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
+const aitns25dicmm = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
+const aitns25dicma = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 
 // Tiempo Ordinario
 const aitos1 = "Domingo I, Tiempo Ordinario";
