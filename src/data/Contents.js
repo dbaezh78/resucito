@@ -25,6 +25,9 @@ const aitns4 = "Domingo IV, Tiempo Navidad";
 const aitns25dicmv = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aitns25dicmm = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aitns25dicma = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
+const aitns25dicmd = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
+const aitnssf = "Fiesta de la Sagrada Familia";    //Aleluya - Sagrada Familia
+const aitns6 = " La Epifanía del Señor";    //Aleluya - Sagrada Familia
 
 // Tiempo Ordinario
 const aitos1 = "Domingo I, Tiempo Ordinario";
@@ -153,12 +156,14 @@ let aitos4a1 = "Estad alegres y contentos,";
 let aitos4a2 = "porque vuestra recompensa será grande en el cielo.";
 
 const aitos5a = "Juan 8, 12b";
-let aitos5a1 = "Yo soy la luz del mundo —dice el Señor—;";
-let aitos5a2 = "el que me sigue tendrá la luz de la vida.";
+let aitos5a1 = "Yo soy la luz del mundo;";
+let aitos5a2 = "—dice el Señor—;";
+let aitos5a3 = "el que me sigue tendrá la luz de la vida.";
 
 const aitos6a = "Mateo 11, 25";
 let aitos6a1 = "Bendito seas, Padre, Señor de cielo y tierra,";
-let aitos6a2 = "porque has revelado los secretos del reino a la gente sencilla.";
+let aitos6a2 = "porque has revelado los secretos del reino";
+let aitos6a3 = "a la gente sencilla.";
 
 const aitos7a = "1 Juan 2, 5";
 let aitos7a1 = "Quien guarda la palabra de Cristo,";
@@ -169,20 +174,26 @@ let aitos8a1 = "La palabra de Dios es viva y eficaz;";
 let aitos8a2 = "juzga los deseos e intenciones del corazón.";
 
 const aitos9a = "Juan 15, 5";
-let aitos9a1 = "Yo soy la vid, vosotros los sarmientos —dice el Señor—;";
-let aitos9a2 = "el que permanece en mí y yo en él, ése da fruto abundante.";
+let aitos9a1 = "Yo soy la vid, vosotros los sarmientos";
+let aitos9a2 = "—dice el Señor—;";
+let aitos9a3 = "el que permanece en mí y yo en él,";
+let aitos9a4 = "ése da fruto abundante.";
+
 
 const aitos10a = "Lucas 4, 18";
-let aitos10a1 = "El Señor me ha enviado para anunciar el Evangelio a los pobres,";
-let aitos10a2 = "para anunciar a los cautivos la libertad.";
+let aitos10a1 = "El Señor me ha enviado";
+let aitos10a2 = "para anunciar el Evangelio a los pobres,";
+let aitos10a3 = "para anunciar a los cautivos la libertad.";
+
 
 const aitos11a = "Marcos 1, 15";
 let aitos11a1 = "Está cerca el reino de Dios:";
 let aitos11a2 = "convertíos y creed en el Evangelio.";
 
 const aitos12a = "Juan 15, 26b. 27a";
-let aitos12a1 = "El Espíritu de la verdad dará testimonio de mí —dice el Señor—;";
-let aitos12a2 = "y también vosotros daréis testimonio.";
+let aitos12a1 = "El Espíritu de la verdad dará testimonio de mí" ;
+let aitos12a2 = " —dice el Señor—;";
+let aitos12a3 = "y también vosotros daréis testimonio.";
 
 const aitos13a = "1 Pedro 2, 9";
 let aitos13a1 = "Vosotros sois una raza elegida, un sacerdocio real, una nación consagrada;";
@@ -439,9 +450,9 @@ const aitns2domingob = "Cf. 1Tm 3, 16 - 2º Domingo después de Navidad";
 let aitns2domingob1 = "Gloria a ti, Cristo, proclamado a los paganos.";
 let aitns2domingob2 = "Gloria a ti, Cristo, creído en el mundo.";
 
-const aitns6enerob = "Mt 2, 2 - Epifanía del Señor";
-let aitns6enerob1 = "Hemos visto salir su estrella";
-let aitns6enerob2 = "y venimos a adorar al Señor.";
+const aitns6b = "Mt 2, 2 - Epifanía del Señor";
+let aitns6b1 = "Hemos visto salir su estrella";
+let aitns6b2 = "y venimos a adorar al Señor.";
 
 const aitos1b = "Cf. Mc 9, 7";
 let aitos1b1 = "Se abrió el cielo, y se oyó la voz del Padre:";
@@ -745,9 +756,9 @@ const aitns2domingoc = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
 let aitns2domingoc1 = "Gloria a ti, Cristo, proclamado a los paganos.";
 let aitns2domingoc2 = "Gloria a ti, Cristo, creído en el mundo.";
 
-const aitns6eneroc = "Mateo 2, 2 - Epifanía del Señor";
-let aitns6eneroc1 = "Hemos visto salir su estrella";
-let aitns6eneroc2 = "y venimos a adorar al Señor.";
+const aitns6c = "Mateo 2, 2 - Epifanía del Señor";
+let aitns6c1 = "Hemos visto salir su estrella";
+let aitns6c2 = "y venimos a adorar al Señor.";
 
 const aitos1c = "Marcos 9, 7 - El Bautismo del Señor";
 let aitos1c1 = "Se abrió el cielo,";
