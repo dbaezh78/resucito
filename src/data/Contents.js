@@ -79,6 +79,10 @@ const aitcs4 = "Domingo IV, Tiempo Cuaresma";
 const aitcs5 = "Domingo V, Tiempo Cuaresma";
 const aitcs6 = "Domingo VI, Tiempo Cuaresma";
 
+const aitcsjs = "Jueves Santo";
+const aitcsvs = "Viernes Santo";
+const aitpsss = "Vigilia Pascual";
+
 // Tiempo de Pascua
 const aitps1 = "Domingo I, Tiempo Pascual";
 const aitps2 = "Domingo II, Tiempo Pascual";
