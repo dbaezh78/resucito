@@ -1,0 +1,19 @@
+/*.container {margin-left: 8%;}*/
+
+.r1::before {
+@media (min-width: 384px) {
+        height: 134px;
+        margin-left: 85%;
+        margin-top: -13%;
+}
+@media (min-width: 768px) {
+        height: 206px;
+        margin-left: 83%;
+        margin-top: -10%;
+}
+@media (min-width: 992px) {
+        height: 177px;
+        margin-left: 44%;
+        margin-top: -6%;
+    }
+}

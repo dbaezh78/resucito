@@ -167,7 +167,8 @@ let aitos6a3 = "a la gente sencilla.";
 
 const aitos7a = "1 Juan 2, 5";
 let aitos7a1 = "Quien guarda la palabra de Cristo,";
-let aitos7a2 = "ciertamente el amor de Dios ha llegado en él a su plenitud.";
+let aitos7a2 = "ciertamente el amor de Dios";
+let aitos7a3 = "ha llegado en él a su plenitud.";
 
 const aitos8a = "Hebreos 4, 12";
 let aitos8a1 = "La palabra de Dios es viva y eficaz;";
@@ -196,24 +197,32 @@ let aitos12a2 = " —dice el Señor—;";
 let aitos12a3 = "y también vosotros daréis testimonio.";
 
 const aitos13a = "1 Pedro 2, 9";
-let aitos13a1 = "Vosotros sois una raza elegida, un sacerdocio real, una nación consagrada;";
-let aitos13a2 = "proclamad las hazañas del que os llamó a salir de las tinieblas y a entrar en su luz maravillosa.";
+let aitos13a1 = "Vosotros sois una raza elegida, un sacerdocio real,";
+let aitos13a2 = "una nación consagrada;";
+let aitos13a3 = "proclamad las hazañas";
+let aitos13a4 = "del que os llamaron a salir de las tinieblas";
+let aitos13a5 = "y a entrar en su luz maravillosa.";
 
 const aitos14a = "Cf. Mateo 11, 25";
 let aitos14a1 = "Bendito seas, Padre, Señor de cielo y tierra,";
-let aitos14a2 = "porque has revelado los secretos del reino a la gente sencilla.";
+let aitos14a2 = "porque has revelado los secretos del reino";
+let aitos14a3 = " a la gente sencilla.";
 
 const aitos15a = "Cf. Lucas 8, 11.15";
-let aitos15a1 = "La semilla es la palabra de Dios, el sembrador es Cristo;";
-let aitos15a2 = "quien lo encuentra vive para siempre.";
+let aitos15a1 = "La semilla es la palabra de Dios,";
+let aitos15a2 = "el sembrador es Cristo;";
+let aitos15a3 = "quien lo encuentra vive para siempre.";
 
 const aitos16a = "Cf. Mateo 11, 25";
 let aitos16a1 = "Bendito seas, Padre, Señor de cielo y tierra,";
-let aitos16a2 = "porque has revelado los secretos del reino a la gente sencilla.";
+let aitos16a2 = "porque has revelado los secretos del reino";
+let aitos16a3 = " a la gente sencilla.";
 
 const aitos17a = "Cf. Mateo 11, 25";
-let aitos17a1 = "Bendito seas, Padre, Señor de cielo y tierra,";
-let aitos17a2 = "porque has revelado los secretos del reino a la gente sencilla.";
+let aitos17a1 = "Bendito seas, Padre,";
+let aitos17a2 = "Señor de cielo y tierra,";
+let aitos17a3 = "porque has revelado";
+let aitos17a4 = "los secretos del reino a la gente sencilla.";
 
 const aitos18a = "Mateo 4, 4b";
 let aitos18a1 = "No sólo de pan vive el hombre,";

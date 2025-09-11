@@ -847,6 +847,7 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos8a",
             { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
             { line: `${aitos7a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
             { line: `${aitos7a2} (Re,,181)(Mi,m,352)`, sC: ""},
+            { line: `${aitos7a3} (Re,,181)(Mi,m,352)`, sC: ""},
             { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
@@ -854,12 +855,14 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos8a",
             { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
             { line: `${aitos7a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
             { line: `${aitos7a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "tc"},
+            { line: `${aitos7a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "tc"},
             { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
             { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
             { line: `${aitos7a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
             { line: `${aitos7a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos7a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
 
     ], lder: [
@@ -984,16 +987,16 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos11a",
        triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
             { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
             { line: `${aitos10a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
-            { line: `${aitos10a2} (Re,,181)(Mi,m,352)`, sC: "tc"},
-            { line: `${aitos10a3} (Re,,181)(Mi,m,352)`, sC: "tc"},
+            { line: `${aitos10a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos10a3} (Re,,181)(Mi,m,352)`, sC: "bg"},
             { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
             { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
             { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
             { line: `${aitos10a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
-            { line: `${aitos10a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "tc"},
-            { line: `${aitos10a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "tc"},
+            { line: `${aitos10a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos10a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
             { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
@@ -1001,6 +1004,341 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos11a",
             { line: `${aitos10a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
             { line: `${aitos10a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
             { line: `${aitos10a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
+// SIGUIENTE CANTO DEBAJO
+  /*╔════════════════════════════════════════════════════════╗
+    ║   ALELUYA INTERLECCIONAL TIEMPO ORDINARIO SEMANA XI    ║
+    ╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "aitos11a",
+        tt: aitos11,
+     title: aitos11,
+  subtitle: añoa+", "+aitos11a,
+  category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
+      mant: "Si",
+  audioSrc: "/audio/aleluyainterleccional.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+ scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+ant: "/resucito/src/ainterleccional.html?canto=aitos10a",
+sig: "/resucito/src/ainterleccional.html?canto=aitos12a",
+// Vaciando contenido,
+    lizq: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos11a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+            { line: `${aitos11a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos11a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos11a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
+            { line: `${aitos11a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: ""},
+            { line: `${aitos11a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
+// SIGUIENTE CANTO DEBAJO
+  /*╔════════════════════════════════════════════════════════╗
+    ║   ALELUYA INTERLECCIONAL TIEMPO ORDINARIO SEMANA XII   ║
+    ╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "aitos12a",
+        tt: aitos12,
+     title: aitos12,
+  subtitle: añoa+", "+aitos12a,
+  category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
+      mant: "Si",
+  audioSrc: "/audio/aleluyainterleccional.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+ scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+ant: "/resucito/src/ainterleccional.html?canto=aitos11a",
+sig: "/resucito/src/ainterleccional.html?canto=aitos13a",
+// Vaciando contenido,
+    lizq: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos12a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+            { line: `${aitos12a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos12a3} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos12a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos12a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos12a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
+            { line: `${aitos12a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos12a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos12a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
+// SIGUIENTE CANTO DEBAJO
+  /*╔════════════════════════════════════════════════════════╗
+    ║   ALELUYA INTERLECCIONAL TIEMPO ORDINARIO SEMANA XIII  ║
+    ╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "aitos13a",
+        tt: aitos13,
+     title: aitos13,
+  subtitle: añoa+", "+aitos13a,
+  category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
+      mant: "Si",
+  audioSrc: "/audio/aleluyainterleccional.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+ scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+ant: "/resucito/src/ainterleccional.html?canto=aitos12a",
+sig: "/resucito/src/ainterleccional.html?canto=aitos14a",
+// Vaciando contenido,
+    lizq: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos13a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+            { line: `${aitos13a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos13a3} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos13a4} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos13a5} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos13a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos13a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos13a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos13a4} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos13a5} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
+            { line: `${aitos13a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos13a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos13a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos13a4} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos13a5} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
+// SIGUIENTE CANTO DEBAJO
+  /*╔════════════════════════════════════════════════════════╗
+    ║   ALELUYA INTERLECCIONAL TIEMPO ORDINARIO SEMANA XIV      ║
+    ╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "aitos14a",
+        tt: aitos14,
+     title: aitos14,
+  subtitle: añoa+", "+aitos14a,
+  category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
+      mant: "Si",
+  audioSrc: "/audio/aleluyainterleccional.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+ scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+ant: "/resucito/src/ainterleccional.html?canto=aitos13a",
+sig: "/resucito/src/ainterleccional.html?canto=aitos15a",
+// Vaciando contenido,
+    lizq: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos14a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+            { line: `${aitos14a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos14a3} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos14a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos14a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos14a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
+            { line: `${aitos14a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos14a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos14a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
+// SIGUIENTE CANTO DEBAJO
+  /*╔════════════════════════════════════════════════════════╗
+    ║   ALELUYA INTERLECCIONAL TIEMPO ORDINARIO SEMANA XV      ║
+    ╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "aitos15a",
+        tt: aitos15,
+     title: aitos15,
+  subtitle: añoa+", "+aitos15a,
+  category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
+      mant: "Si",
+  audioSrc: "/audio/aleluyainterleccional.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+ scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+ant: "/resucito/src/ainterleccional.html?canto=aitos14a",
+sig: "/resucito/src/ainterleccional.html?canto=aitos16a",
+// Vaciando contenido,
+    lizq: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos15a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+            { line: `${aitos15a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos15a3} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos15a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos15a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos15a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
+            { line: `${aitos15a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos15a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos15a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
+// SIGUIENTE CANTO DEBAJO
+  /*╔════════════════════════════════════════════════════════╗
+    ║   ALELUYA INTERLECCIONAL TIEMPO ORDINARIO SEMANA XVI      ║
+    ╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "aitos16a",
+        tt: aitos16,
+     title: aitos16,
+  subtitle: añoa+", "+aitos16a,
+  category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
+      mant: "Si",
+  audioSrc: "/audio/aleluyainterleccional.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+ scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+ant: "/resucito/src/ainterleccional.html?canto=aitos15a",
+sig: "/resucito/src/ainterleccional.html?canto=aitos17a",
+// Vaciando contenido,
+    lizq: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos16a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+            { line: `${aitos16a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos16a3} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos16a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos16a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos16a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
+            { line: `${aitos16a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos16a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos16a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
+// SIGUIENTE CANTO DEBAJO
+  /*╔════════════════════════════════════════════════════════╗
+    ║   ALELUYA INTERLECCIONAL TIEMPO ORDINARIO SEMANA XVII      ║
+    ╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "aitos17a",
+        tt: aitos17,
+     title: aitos17,
+  subtitle: añoa+", "+aitos17a,
+  category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
+      mant: "Si",
+  audioSrc: "/audio/aleluyainterleccional.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+ scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+ant: "/resucito/src/ainterleccional.html?canto=aitos16a",
+sig: "/resucito/src/ainterleccional.html?canto=aitos18a",
+// Vaciando contenido,
+    lizq: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+            { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos17a1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+            { line: `${aitos17a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos17a3} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: `${aitos17a4} (Re,,181)(Mi,m,352)`, sC: "bg"},
+            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+            { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},{ line: "", sC: "adb1"},
+            { line: `${aitos17a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos17a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos17a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos17a4} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+            { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
+            { line: `${aitos17a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
+            { line: `${aitos17a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos17a3} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos17a4} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
 
     ], lder: [

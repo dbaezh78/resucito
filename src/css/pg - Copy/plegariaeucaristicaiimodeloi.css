@@ -1,0 +1,247 @@
+.container {margin-left: 8%;}
+
+.r1::before {
+    @media (min-width: 384px) {}
+    @media (min-width: 768px) {
+        height: 200px;
+    }
+    @media (min-width: 992px) {
+        height: 155px;
+        margin-left: 45%;
+        margin-top: 0%;
+    }
+}
+    
+
+.sb194::before {
+    @media (min-width: 384px) {}
+    @media (min-width: 768px){
+        height: 37px;
+        margin-left: 60%;
+        font-size: xx-large;
+    }
+    @media (min-width: 992px) {
+        height: 37px;
+        margin-left: 35%;
+        margin-top: 0%;
+        font-size: large;
+    }
+}
+
+.nSpace {
+    @media (min-width: 384px){
+        height: 10px;
+
+    }
+    @media (min-width: 768px){
+        height: 18px;
+    }
+    @media (min-width: 992px){
+        height: 4px;
+
+    }
+}
+
+
+
+
+.linea-canto {
+    @media (min-width: 992px) {
+        min-height: 13px;
+    }
+}
+
+
+.sp1 {
+    font-size: small;
+    @media (min-width: 384px) {
+        margin-left: -46px;
+    }
+    @media (min-width: 768px) {}
+    @media (min-width: 992px) {
+        padding-top: 30px;
+        color: #2c3e505c !important;
+        margin-left: -46px
+        }
+}
+
+
+@media (min-width: 992px) {
+    .sp2 {
+        color: #2c3e505c !important;
+        font-size: small;
+        margin-left: -46px;
+        margin-top: -40px;
+    }
+}
+
+.red {
+    color: red !important;
+}
+
+.put {
+    cursor: pointer;
+}
+
+
+
+/* CSS2*/
+  
+.linea-canto {
+    @media (min-width: 992px) {
+        min-height: 13px;
+    }
+}
+
+
+
+
+@media (min-width: 992px) {
+    .sp2 {
+        color: #2c3e505c !important;
+        font-size: small;
+        margin-left: -46px;
+        margin-top: -40px;
+    }
+}
+
+.red {
+    color: red !important;
+}
+
+.sdb {
+     padding-bottom: 0px;
+}
+
+
+
+
+
+
+/* 
+CSS3
+*/
+
+
+.linea-canto {
+    @media (min-width: 992px) {
+        min-height: 13px;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .sp2 {
+        color: #2c3e505c !important;
+        font-size: small;
+        margin-left: -46px;
+        margin-top: -40px;
+    }
+}
+
+.red {
+    color: red !important;
+}
+
+.sdb {
+     padding-bottom: 0px;
+}
+
+
+.sp3 {
+    font-size: small;
+    color: #2c3e505c !important;
+    margin-left: -46px;
+    padding-top: 0px;
+    }
+
+
+.n1 {
+    @media (min-width: 384px) {
+        margin-top: -36px;
+        margin-left: 111px;
+    }
+    @media (min-width: 768px) {
+        top: -22px;
+        margin-left: 208px;
+    }
+    @media (min-width: 992px) {
+        top: -9px;
+        margin-left: 155px;
+    }
+    
+
+}
+.n2 {
+        @media (min-width: 384px) {
+        margin-top: -36px;
+        margin-left: 290px;
+    }
+    @media (min-width: 768px) {
+        margin-top: -79px;
+        margin-left: 542px;
+    }
+    @media (min-width: 992px) {
+        margin-top: -55px;
+        margin-left: 406px;
+    }
+    
+}
+
+.space1941 {margin-bottom: 100px;}
+.space1942 {margin-bottom: 20px;}
+.space1943 {margin-bottom: 10px;}
+
+
+.sp4 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #2c3e505c !important;
+    
+
+}
+
+.center {
+    text-align: center;
+}
+
+.atext {
+            font-size: 0.9em;
+        }
+        
+        .lx {
+    font-size: 0.6em;
+
+}
+
+.sp5{
+    padding-bottom: 2%;
+
+}
+
+.Santo {
+    font-size: small;
+}
+
+
+.r11::before {
+    @media (min-width: 384px){
+        height: 61px;
+        margin-left: 180px;
+        margin-top: -37px;
+    }
+    @media (min-width: 768px){
+        height: 94px;
+        margin-left: 333px;
+        margin-top: -54px;
+    }
+    @media (min-width: 992px){
+        font-size: 1.3rem;
+        font-weight: bold;
+        height: 74px;
+        margin-left: 248px;
+        margin-top: -40px;
+    }
+}
