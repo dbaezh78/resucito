@@ -751,8 +751,7 @@ hr {
 
 .pie{
     width: 100%;
-    /*display: flex;*/      /* ANTERIOR CONFIGURACION PARA EL PIE DE PAGINA, POR MEJORAS*/
-    display: -webkit-inline-flex;
+    display: flex;
     justify-content: space-between;
     padding: 0px 0px 10px 0px;
 }
@@ -761,16 +760,9 @@ hr {
 #cantoCategories {
     display: flex; /* Usar flexbox para que los enlaces se alineen en fila */
     flex-wrap: wrap; /* Permitir que los enlaces se envuelvan a la siguiente línea si no caben */
-    gap: 1px; /* Espacio entre los elementos de categoría */
-    justify-content: flex-end; /* Alinear al inicio - Antes: flex-start */
-    align-content: flex-start;  /* antes: align-items: center;*/
-    min-width: min-content;
-    max-width: 100%;
-    text-align: end;
-}
-
-.dbsize{
-    max-width: 33%;
+    gap: 8px; /* Espacio entre los elementos de categoría */
+    justify-content: flex-start; /* Alinear al inicio */
+    align-items: center;
 }
 
 .category-link {
@@ -824,13 +816,12 @@ hr {
     }
 }
 
-.cno {padding: 10px 5px 0px 5px;   }
+.cno {padding: 10px 20px 0px 20px;   }
 
 .nCanto {
     color: red;
     font-family: 'Franklin Gothic Medium';
     font-size: medium;
-    text-align: justify;        /* ESTE SE HA PUESTO PARA JUSTIFICAR EL CONTENIDO DE LOS COMENTARIOS*/
 }
 
 .collapsible-trigger {
