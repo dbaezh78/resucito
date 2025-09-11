@@ -2,6 +2,7 @@
 const añoa = "Aleluya InterLeccional, Modelo I, II, III - Año A";
 const añob = "Aleluya InterLeccional, Modelo I, II, III - Año B";
 const añoc = "Aleluya InterLeccional, Modelo I, II, III - Año C";
+const añof = "Aleluya InterLeccional, Modelo I, II, III - Fiesta";
 
 // CANTOR Y ASAMBLEA
 const am11 = "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)";
@@ -65,6 +66,11 @@ const aitos32 = "Domingo XXXII, Tiempo Ordinario";
 const aitos33 = "Domingo XXXIII, Tiempo Ordinario";
 const aitos34 = "Domingo XXXIV, Tiempo Ordinario";
 
+// Fiestas del Señor
+const aitosscsc = "Santísimo Cuerpo y Sangre de Cristo";
+const aitosvs = "El Sagrado Corazón de Jesús, Viernes posterior al segundo domingo después de Pentecostés";
+const aitfs14 = "La Exaltación de la Cruz";
+
 // Tiempo de Cuaresma
 const aitcs1 = "Domingo I, Tiempo Cuaresma";
 const aitcs2 = "Domingo II, Tiempo Cuaresma";
@@ -83,6 +89,14 @@ const aitps6 = "Domingo VI, Tiempo Pascual";
 const aitps7 = "Domingo VII, Tiempo Pascual";
 const aitps8 = "Domingo VIII, Tiempo Pascual";
 
+
+// ACLAMACIÓN DEL EVANGELIO DE LOS DIAS DE FIESTA
+const aitfs14s = "Exaltación de la Cruz ✟";
+let aitfs14s1 = "Te adoramos, oh Cristo, y te bendecimos,"
+let aitfs14s2 = "porque con tu cruz has redimido el mundo."
+
+
+// ACLAMACIÓN DEL EVANGELIO POR SEMANA CON SUS AÑOS TODOS LOS TIEMPOS
 
 const aitas1a = "Salmo 84, 8.";
 let aitas1a1 = "Muéstranos, Señor, tu misericordia";
@@ -302,8 +316,10 @@ let aitos33a2 = "—dice el Señor—;";
 let aitos33a3 = "el que permanece en mí da fruto abundante.";
 
 const aitos34a = "Mc 11, 9b-10a";
-let aitos34a1 = "Bendito el que viene en nombre del Señor.";
-let aitos34a2 = "Bendito el reino que llega, el de nuestro padre David.";
+let aitos34a1 = "Bendito el que viene";
+let aitos34a2 = "en nombre del Señor.";
+let aitos34a3 = "Bendito el reino que llega,";
+let aitos34a4 = "el de nuestro padre David.";
 
 const aitosscsca = "Jn 6, 51 - Santísimo Cuerpo y Sangre de Cristo";
 let aitosscsca1 = "Yo soy el pan vivo que ha bajado del cielo";
@@ -311,10 +327,11 @@ let aitosscsca2 = "—dice el Señor—;";
 let aitosscsca3 = "el que coma de este pan";
 let aitosscsca4 = "vivirá para siempre.";
 
-const aitosviernesa = "Mt 11, 29ab - El Sagrado Corazón de Jesús";
-let aitosviernesa1 = "Cargad con mi yugo y aprended de mí";
-let aitosviernesa2 = "—dice el Señor—,";
-let aitosviernesa3 = "que soy manso y humilde de corazón.";
+//Viernes santo Año A
+const aitosvsa = "Mt 11, 29ab - El Sagrado Corazón de Jesús";
+let aitosvsa1 = "Cargad con mi yugo y aprended de mí";
+let aitosvsa2 = "—dice el Señor—,";
+let aitosvsa3 = "que soy manso y humilde de corazón.";
 
 const aitosviernesao2 = "1Jn 4, 10b - 1 Juan 4, 10b";
 let aitosviernesa1o2 = "Dios nos amó y nos envió a su Hijo";
@@ -325,8 +342,9 @@ let aitcs1a1 = "No sólo de pan vive el hombre,";
 let aitcs1a2 = "sino de toda palabra que sale de la boca de Dios.";
 
 const aitcs2a = "Aleluya";
-let aitcs2a1 = "En el esplendor de la nube se oyó la voz del Padre:";
-let aitcs2a2 = "«Éste es mi Hijo, el amado; escuchadlo».";
+let aitcs2a1 = "En el esplendor de la nube";
+let aitcs2a2 = "se oyó la voz del Padre:";
+let aitcs2a3 = "«Éste es mi Hijo, el amado; escuchadlo».";
 
 const aitcs3a = "Jn 4, 42. 15";
 let aitcs3a1 = "Señor, tú eres de verdad el Salvador del mundo;";
