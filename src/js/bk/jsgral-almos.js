@@ -141,7 +141,7 @@ const chordImageFilenames = [
     "sim.jpg",
 
 ];
-const IMAGE_BASE_PATH = "/resucito/src/ima/";
+const IMAGE_BASE_PATH = "/src/ima/";
 
 // Variables para el scroll automático
 let scrollSpeed = 200; // Velocidad de desplazamiento en píxeles por segundo (valor por defecto)

@@ -1,18 +1,18 @@
 {
   "name": "Cristo ha Resucitó",
   "short_name": "Resucitó",
-  "start_url": "/resucito/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/resucito/src/ico.ico",
+      "src": "/src/ico.ico",
       "sizes": "64x64",
       "type": "image/x-icon"
     }
   ],
-  "scope": "/resucito/",
+  "scope": "/",
   "description": "Cantos del Camino offline",
   "orientation": "portrait-primary"
 }

@@ -19,7 +19,7 @@ document.getElementById('DavidLoBusca')?.addEventListener('input', async functio
     try {
         // La URL para fetch se mantiene con el parámetro para evitar problemas de caché del navegador,
         // el Service Worker se encarga de ignorarlo para la búsqueda en caché.
-        const response = await fetch(`/resucito/src/data/find.json?v=${Date.now()}`);
+        const response = await fetch(`/src/data/find.json?v=${Date.now()}`);
 
         if (!response.ok) {
             throw new Error(`Error HTTP ${response.status}`);
@@ -42,7 +42,7 @@ document.getElementById('DavidLoBusca')?.addEventListener('input', async functio
         resultadosDiv.innerHTML = `
             <div class="resultado-item">
                 Error al cargar: ${error.message}<br>
-                <small>Ruta intentada: /resucito/src/data/find.json</small>
+                <small>Ruta intentada: /src/data/find.json</small>
             </div>`;
         resultadosDiv.style.display = 'block';
     }

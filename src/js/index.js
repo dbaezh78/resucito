@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para crear y agregar dinámicamente un link de CSS al head
     const loadDynamicCSS = (cantoId) => {
         // La ruta del archivo CSS ahora es src/css/pg/
-        const cssPath = `/resucito/src/css/pg/${cantoId}.css`;
+        const cssPath = `/src/css/pg/${cantoId}.css`;
         const link = document.createElement('link');
         link.rel = 'stylesheet';
         link.type = 'text/css';
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Procesar las categorías para incluir sus URLs
         const processedCategories = currentCanto.category.map(catName => {
-            let baseUrl = "/resucito/index.html?";
+            let baseUrl = "/index.html?";
             let paramType = "";
             
             // Normalizar el nombre de la categoría/momento para la comparación

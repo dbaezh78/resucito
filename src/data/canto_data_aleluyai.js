@@ -18,8 +18,8 @@ scrollConfig: {
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-         ant: "/resucito/",
-         sig: "/resucito/src/ainterleccional.html?canto=aitas2a",
+         ant: "/",
+         sig: "/src/ainterleccional.html?canto=aitas2a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -62,8 +62,8 @@ scrollConfig: {
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitas1a",
-sig: "/resucito/src/ainterleccional.html?canto=aitas3a",
+ant: "/src/ainterleccional.html?canto=aitas1a",
+sig: "/src/ainterleccional.html?canto=aitas3a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -105,8 +105,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitas3a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitas2a",
-sig: "/resucito/src/ainterleccional.html?canto=aitas4a",
+ant: "/src/ainterleccional.html?canto=aitas2a",
+sig: "/src/ainterleccional.html?canto=aitas4a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -148,8 +148,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitas4a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitas3a",
-sig: "/resucito/src/ainterleccional.html?canto=aitns25dicmva",
+ant: "/src/ainterleccional.html?canto=aitas3a",
+sig: "/src/ainterleccional.html?canto=aitns25dicmva",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -194,8 +194,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitns25dicmva",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitas4a",
-sig: "/resucito/src/ainterleccional.html?canto=aitns25dicmma",
+ant: "/src/ainterleccional.html?canto=aitas4a",
+sig: "/src/ainterleccional.html?canto=aitns25dicmma",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -237,8 +237,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitns25dicmma",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitns25dicmva",
-sig: "/resucito/src/ainterleccional.html?canto=aitns25dicmaa",
+ant: "/src/ainterleccional.html?canto=aitns25dicmva",
+sig: "/src/ainterleccional.html?canto=aitns25dicmaa",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -283,8 +283,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitns25dicmaa",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitns25dicmma",
-sig: "/resucito/src/ainterleccional.html?canto=aitns25dicmda",
+ant: "/src/ainterleccional.html?canto=aitns25dicmma",
+sig: "/src/ainterleccional.html?canto=aitns25dicmda",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -326,8 +326,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitns25dicmda",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitns25dicmaa",
-sig: "/resucito/src/ainterleccional.html?canto=aitnssfa",
+ant: "/src/ainterleccional.html?canto=aitns25dicmaa",
+sig: "/src/ainterleccional.html?canto=aitnssfa",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -372,8 +372,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitnssfa",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitns25dicmda",
-sig: "/resucito/src/ainterleccional.html?canto=aitns1a",
+ant: "/src/ainterleccional.html?canto=aitns25dicmda",
+sig: "/src/ainterleccional.html?canto=aitns1a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -421,8 +421,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitns1a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitnssfa",
-sig: "/resucito/src/ainterleccional.html?canto=aitns2a",
+ant: "/src/ainterleccional.html?canto=aitnssfa",
+sig: "/src/ainterleccional.html?canto=aitns2a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -467,8 +467,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitns2a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitns1a",
-sig: "/resucito/src/ainterleccional.html?canto=aitns6a",
+ant: "/src/ainterleccional.html?canto=aitns1a",
+sig: "/src/ainterleccional.html?canto=aitns6a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -510,8 +510,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitns6a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitns2a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos1a",
+ant: "/src/ainterleccional.html?canto=aitns2a",
+sig: "/src/ainterleccional.html?canto=aitos1a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -553,8 +553,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos1a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitns6a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos2a",
+ant: "/src/ainterleccional.html?canto=aitns6a",
+sig: "/src/ainterleccional.html?canto=aitos2a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -599,8 +599,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos2a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos1a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos3a",
+ant: "/src/ainterleccional.html?canto=aitos1a",
+sig: "/src/ainterleccional.html?canto=aitos3a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -642,8 +642,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos3a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos2a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos4a",
+ant: "/src/ainterleccional.html?canto=aitos2a",
+sig: "/src/ainterleccional.html?canto=aitos4a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -685,8 +685,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos4a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos3a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos5a",
+ant: "/src/ainterleccional.html?canto=aitos3a",
+sig: "/src/ainterleccional.html?canto=aitos5a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -728,8 +728,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos5a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos4a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos6a",
+ant: "/src/ainterleccional.html?canto=aitos4a",
+sig: "/src/ainterleccional.html?canto=aitos6a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -774,8 +774,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos6a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos5a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos7a",
+ant: "/src/ainterleccional.html?canto=aitos5a",
+sig: "/src/ainterleccional.html?canto=aitos7a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -820,8 +820,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos7a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos6a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos8a",
+ant: "/src/ainterleccional.html?canto=aitos6a",
+sig: "/src/ainterleccional.html?canto=aitos8a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -866,8 +866,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos8a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos7a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos9a",
+ant: "/src/ainterleccional.html?canto=aitos7a",
+sig: "/src/ainterleccional.html?canto=aitos9a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -909,8 +909,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos9a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos8a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos10a",
+ant: "/src/ainterleccional.html?canto=aitos8a",
+sig: "/src/ainterleccional.html?canto=aitos10a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -958,8 +958,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos10a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos9a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos11a",
+ant: "/src/ainterleccional.html?canto=aitos9a",
+sig: "/src/ainterleccional.html?canto=aitos11a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1004,8 +1004,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos11a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos10a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos12a",
+ant: "/src/ainterleccional.html?canto=aitos10a",
+sig: "/src/ainterleccional.html?canto=aitos12a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1047,8 +1047,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos12a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos11a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos13a",
+ant: "/src/ainterleccional.html?canto=aitos11a",
+sig: "/src/ainterleccional.html?canto=aitos13a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1093,8 +1093,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos13a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos12a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos14a",
+ant: "/src/ainterleccional.html?canto=aitos12a",
+sig: "/src/ainterleccional.html?canto=aitos14a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1145,8 +1145,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos14a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos13a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos15a",
+ant: "/src/ainterleccional.html?canto=aitos13a",
+sig: "/src/ainterleccional.html?canto=aitos15a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1191,8 +1191,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos15a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos14a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos16a",
+ant: "/src/ainterleccional.html?canto=aitos14a",
+sig: "/src/ainterleccional.html?canto=aitos16a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1237,8 +1237,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos16a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos15a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos17a",
+ant: "/src/ainterleccional.html?canto=aitos15a",
+sig: "/src/ainterleccional.html?canto=aitos17a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1285,8 +1285,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos17a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos16a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos18a",
+ant: "/src/ainterleccional.html?canto=aitos16a",
+sig: "/src/ainterleccional.html?canto=aitos18a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1336,8 +1336,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos18a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos17a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos19a",
+ant: "/src/ainterleccional.html?canto=aitos17a",
+sig: "/src/ainterleccional.html?canto=aitos19a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1380,8 +1380,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos19a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos18a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos20a",
+ant: "/src/ainterleccional.html?canto=aitos18a",
+sig: "/src/ainterleccional.html?canto=aitos20a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1424,8 +1424,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos20a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos19a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos21a",
+ant: "/src/ainterleccional.html?canto=aitos19a",
+sig: "/src/ainterleccional.html?canto=aitos21a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1468,8 +1468,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos21a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos20a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos22a",
+ant: "/src/ainterleccional.html?canto=aitos20a",
+sig: "/src/ainterleccional.html?canto=aitos22a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1515,8 +1515,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos22a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos21a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos23a",
+ant: "/src/ainterleccional.html?canto=aitos21a",
+sig: "/src/ainterleccional.html?canto=aitos23a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1562,8 +1562,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos23a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos22a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos24a",
+ant: "/src/ainterleccional.html?canto=aitos22a",
+sig: "/src/ainterleccional.html?canto=aitos24a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1609,8 +1609,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos24a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos23a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos25a",
+ant: "/src/ainterleccional.html?canto=aitos23a",
+sig: "/src/ainterleccional.html?canto=aitos25a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1659,8 +1659,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos25a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos24a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos26a",
+ant: "/src/ainterleccional.html?canto=aitos24a",
+sig: "/src/ainterleccional.html?canto=aitos26a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1703,8 +1703,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos26a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos25a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos27a",
+ant: "/src/ainterleccional.html?canto=aitos25a",
+sig: "/src/ainterleccional.html?canto=aitos27a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1750,8 +1750,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos27a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos26a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos28a",
+ant: "/src/ainterleccional.html?canto=aitos26a",
+sig: "/src/ainterleccional.html?canto=aitos28a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1797,8 +1797,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos28a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos27a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos29a",
+ant: "/src/ainterleccional.html?canto=aitos27a",
+sig: "/src/ainterleccional.html?canto=aitos29a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1847,8 +1847,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos29a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos28a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos30a",
+ant: "/src/ainterleccional.html?canto=aitos28a",
+sig: "/src/ainterleccional.html?canto=aitos30a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1891,8 +1891,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos30a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos29a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos31a",
+ant: "/src/ainterleccional.html?canto=aitos29a",
+sig: "/src/ainterleccional.html?canto=aitos31a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1935,8 +1935,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos31a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos30a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos32a",
+ant: "/src/ainterleccional.html?canto=aitos30a",
+sig: "/src/ainterleccional.html?canto=aitos32a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -1979,8 +1979,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos32a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos31a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos33a",
+ant: "/src/ainterleccional.html?canto=aitos31a",
+sig: "/src/ainterleccional.html?canto=aitos33a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2023,8 +2023,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos33a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos32a",
-sig: "/resucito/src/ainterleccional.html?canto=aitos34a",
+ant: "/src/ainterleccional.html?canto=aitos32a",
+sig: "/src/ainterleccional.html?canto=aitos34a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2070,8 +2070,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos34a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos33a",
-sig: "/resucito/src/ainterleccional.html?canto=aitosscsca",
+ant: "/src/ainterleccional.html?canto=aitos33a",
+sig: "/src/ainterleccional.html?canto=aitosscsca",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2120,8 +2120,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitosscsca",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitos34a",
-sig: "/resucito/src/ainterleccional.html?canto=aitosvsa",
+ant: "/src/ainterleccional.html?canto=aitos34a",
+sig: "/src/ainterleccional.html?canto=aitosvsa",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2170,8 +2170,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitosvsa",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitosscsca",
-sig: "/resucito/src/ainterleccional.html?canto=aitcs1a",
+ant: "/src/ainterleccional.html?canto=aitosscsca",
+sig: "/src/ainterleccional.html?canto=aitcs1a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2217,8 +2217,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitcs1a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitosvsa",
-sig: "/resucito/src/ainterleccional.html?canto=aitcs2a",
+ant: "/src/ainterleccional.html?canto=aitosvsa",
+sig: "/src/ainterleccional.html?canto=aitcs2a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2261,8 +2261,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitcs2a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitcs1a",
-sig: "/resucito/src/ainterleccional.html?canto=aitcs3a",
+ant: "/src/ainterleccional.html?canto=aitcs1a",
+sig: "/src/ainterleccional.html?canto=aitcs3a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2306,8 +2306,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitcs3a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitcs2a",
-sig: "/resucito/src/ainterleccional.html?canto=aitcs4a",
+ant: "/src/ainterleccional.html?canto=aitcs2a",
+sig: "/src/ainterleccional.html?canto=aitcs4a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2348,8 +2348,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitcs4a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitcs3a",
-sig: "/resucito/src/ainterleccional.html?canto=aitcs5a",
+ant: "/src/ainterleccional.html?canto=aitcs3a",
+sig: "/src/ainterleccional.html?canto=aitcs5a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2393,8 +2393,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitcs5a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitcs4a",
-sig: "/resucito/src/ainterleccional.html?canto=aitcs6a",
+ant: "/src/ainterleccional.html?canto=aitcs4a",
+sig: "/src/ainterleccional.html?canto=aitcs6a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2438,8 +2438,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitcs6a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitcs5a",
-sig: "/resucito/src/ainterleccional.html?canto=aitcsjsa",
+ant: "/src/ainterleccional.html?canto=aitcs5a",
+sig: "/src/ainterleccional.html?canto=aitcsjsa",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2486,8 +2486,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitcsjsa",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitcs6a",
-sig: "/resucito/src/ainterleccional.html?canto=aitcsvsa",
+ant: "/src/ainterleccional.html?canto=aitcs6a",
+sig: "/src/ainterleccional.html?canto=aitcsvsa",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2534,8 +2534,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitcsvsa",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitcsjsa",
-sig: "/resucito/src/ainterleccional.html?canto=aitpsssa",
+ant: "/src/ainterleccional.html?canto=aitcsjsa",
+sig: "/src/ainterleccional.html?canto=aitpsssa",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2582,8 +2582,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitpsssa",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitcsvsa",
-sig: "/resucito/src/ainterleccional.html?canto=aitps1a",
+ant: "/src/ainterleccional.html?canto=aitcsvsa",
+sig: "/src/ainterleccional.html?canto=aitps1a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2624,8 +2624,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitps1a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitpsssa",
-sig: "/resucito/src/ainterleccional.html?canto=aitps2a",
+ant: "/src/ainterleccional.html?canto=aitpsssa",
+sig: "/src/ainterleccional.html?canto=aitps2a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2668,8 +2668,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitps2a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitps1a",
-sig: "/resucito/src/ainterleccional.html?canto=aitps3a",
+ant: "/src/ainterleccional.html?canto=aitps1a",
+sig: "/src/ainterleccional.html?canto=aitps3a",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -2741,8 +2741,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitps3a",
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-ant: "/resucito/src/ainterleccional.html?canto=aitas1a",
-sig: "/resucito/src/ainterleccional.html?canto=aitfs15s",
+ant: "/src/ainterleccional.html?canto=aitas1a",
+sig: "/src/ainterleccional.html?canto=aitfs15s",
 // Vaciando contenido,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
