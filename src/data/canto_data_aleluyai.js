@@ -2733,7 +2733,7 @@ sig: "/src/ainterleccional.html?canto=aitps3a",
      title: aitfs14,
   subtitle: añof+", "+aitfs14s,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
-      mant: "Si",
+      mant: "No",
   audioSrc: "/audio/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
