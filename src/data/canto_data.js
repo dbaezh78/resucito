@@ -8673,6 +8673,67 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: QUIÉN NOS SEPARARÁ
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           QUIERO ANDAR, MADRE, A JERUSALÉN               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "quieroandarmadreajerusalen",
+        tt: "Quiero Andar, Madre, A Jerusalén",
+        title: "Quiero Andar, Madre, A Jerusalén",
+        subtitle: "Canto sefardí",
+        category: ["Precatecumenado","Pascua","Pentecostés","Final"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "140",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/quieroandarmadreajerusalen.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=quiennosseparara",
+        sig: "/resucito/src/index.html?canto=quierocantar",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Quiero andar, madre,, (Mi,,20)(La,m,250)", sC: "tc"},
+            { line: "a Jerusalén, Jerusalén., (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "A comer las hierbas, (La,m,20)", sC: ""},
+            { line: "y a saciarme de ellas,, (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "saciarme de ellas., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "EN EL SENDERO ME ENCUENTRO YO., (Fa,,20)(La,m,250)", sC: "ta as"},
+            { line: "EN EL SENDERO CAMINO YO., (Fa,,20)(La,m,250)", sC: "as"},
+            { line: "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,22)(Mi,,250)", sC: "as"},
+            { line: "DE TODO EL MUNDO., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA LA, LA LA LA LA LA LA LALA ..., (Mi,,20)", sC: "as"},
+            { line: "LA LA, LA ... LA, (Re,m,22)(Mi,,250)", sC: "as"},
+            { line: "LALALA ..., ", sC: "as"},
+    ], lder: [
+            { line: "Hazme comer las hierbas,, (Mi,,20)(La,m,250)", sC: "tc"},
+            { line: "que pueda saciar mis ansias,, (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "que son ansias de amistad,, ", sC: ""},
+            { line: "que son ansias de humildad,, ", sC: ""},
+            { line: "que son ansias,, (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "que son ansias de obediencia., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "EN EL SENDERO ME ENCUENTRO YO., (Fa,,20)(La,m,250)", sC: "ta as", lines: [
+            { line: "EN EL SENDERO CAMINO YO., (Fa,,20)(La,m,250)", sC: "as"},
+            { line: "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,22)(Mi,,250)", sC: "as"},
+            { line: "DE TODO EL MUNDO., ", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ADONAI ELOHENU,, (Mi,,20)", sC: "ta as"},
+            { line: "ADONAI ELOHENU,, (Re,m,22)(Mi,,250)", sC: "as"},
+            { line: "ADONAI EJAD., (Fa,,20)(Mi,,250)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: QUIERO ANDAR, MADRE, A JERUSALÉN
+// SIGUIENTE CANTO DEBAJO
 
 
 
