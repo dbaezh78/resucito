@@ -21,7 +21,7 @@ const allCantosData = [
         dbno: "1",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
-        audioSrc: "/audio.resucito.do/alavictimapascual.mp3",
+        audioSrc: "/audio/alavictimapascual.mp3",
         // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -92,7 +92,7 @@ const allCantosData = [
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
-        audioSrc: "/audio.resucito.do/anadiedemosocasiondetropiezo.mp3",
+        audioSrc: "/audio/anadiedemosocasiondetropiezo.mp3",
         lizq: [
             { line: "Hermanos, a nadie demos ocasión de tropiezo, (La,m,16)(Re,m,410)", sC: "tc" },
             { line: "hermanos, vivamos aceptando las tribulaciones, (Mi,,61) (La,m,412)" },
@@ -188,7 +188,7 @@ const allCantosData = [
         dbno: "2",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
-        audioSrc: "/audio.resucito.do/atilevantomisojos.mp3",
+        audioSrc: "/audio/atilevantomisojos.mp3",
 
         lizq: [
             { line: "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,189)", sC: "as tc" },
@@ -244,7 +244,7 @@ const allCantosData = [
         dbno: "4",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/atisenorenmiclamorimploro.mp3",
+        audioSrc: "/audio/atisenorenmiclamorimploro.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -314,7 +314,7 @@ const allCantosData = [
         dbno: "5",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/atisenorlevantomialma.mp3",
+        audioSrc: "/audio/atisenorlevantomialma.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -369,7 +369,7 @@ const allCantosData = [
         dbno: "6",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/atisenorsedebelaalabanzaension.mp3",
+        audioSrc: "/audio/atisenorsedebelaalabanzaension.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -447,7 +447,7 @@ const allCantosData = [
         dbno: "7",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/abbapadre.mp3",
+        audioSrc: "/audio/abbapadre.mp3",
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
@@ -501,7 +501,7 @@ const allCantosData = [
         dbno: "8",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/abraham.mp3",
+        audioSrc: "/audio/abraham.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -563,7 +563,7 @@ const allCantosData = [
         dbno: "9",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/aclamadalsenor.mp3",
+        audioSrc: "/audio/aclamadalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -637,7 +637,7 @@ const allCantosData = [
         dbno: "10",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/aldespertar.mp3",
+        audioSrc: "/audio/aldespertar.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -734,7 +734,7 @@ const allCantosData = [
         dbno: "11",
         notes: "",
         mant: "",
-        audioSrc: "/audio.resucito.do/alabadalsenorenelcielo.mp3",
+        audioSrc: "/audio/alabadalsenorenelcielo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -808,7 +808,7 @@ const allCantosData = [
         dbno: "12",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/alegriahanacidoelsalvador.mp3",
+        audioSrc: "/audio/alegriahanacidoelsalvador.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -912,7 +912,7 @@ const allCantosData = [
         dbno: "13",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/aleluyaalabadalsenor.mp3",
+        audioSrc: "/audio/aleluyaalabadalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -984,7 +984,7 @@ const allCantosData = [
         dbno: "14",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/aleluyabendecidalsenor.mp3",
+        audioSrc: "/audio/aleluyabendecidalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1067,7 +1067,7 @@ const allCantosData = [
         dbno: "15",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/aleluyayallegoelreino.mp3",
+        audioSrc: "/audio/aleluyayallegoelreino.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1137,7 +1137,7 @@ const allCantosData = [
         dbno: "16",
         notes: "",
         mant: "`No",
-        audioSrc: "/audio.resucito.do/alzaospuertas.mp3",
+        audioSrc: "/audio/alzaospuertas.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1219,7 +1219,7 @@ const allCantosData = [
         dbno: "17",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/amenamenamen.mp3",
+        audioSrc: "/audio/amenamenamen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1327,7 +1327,7 @@ const allCantosData = [
         dbno: "18",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/amoalsenor.mp3",
+        audioSrc: "/audio/amoalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1399,7 +1399,7 @@ const allCantosData = [
         dbno: "19",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/aquedah.mp3",
+        audioSrc: "/audio/aquedah.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1466,7 +1466,7 @@ const allCantosData = [
         dbno: "20",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/asihablaelamen.mp3",
+        audioSrc: "/audio/asihablaelamen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1544,7 +1544,7 @@ const allCantosData = [
         dbno: "21",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/avemariai.mp3",
+        audioSrc: "/audio/avemariai.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1594,7 +1594,7 @@ const allCantosData = [
         dbno: "22",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/avemariaii.mp3",
+        audioSrc: "/audio/avemariaii.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1644,7 +1644,7 @@ const allCantosData = [
         dbno: "23",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/babiloniacriminal.mp3",
+        audioSrc: "/audio/babiloniacriminal.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1727,7 +1727,7 @@ const allCantosData = [
         dbno: "24",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/balaam.mp3",
+        audioSrc: "/audio/balaam.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1827,7 +1827,7 @@ const allCantosData = [
         dbno: "25",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/bendecirealsenorentodotiempo.mp3",
+        audioSrc: "/audio/bendecirealsenorentodotiempo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1913,7 +1913,7 @@ const allCantosData = [
         dbno: "26",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/bendicealmamiaayahveh.mp3",
+        audioSrc: "/audio/bendicealmamiaayahveh.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1971,7 +1971,7 @@ const allCantosData = [
         dbno: "27",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/benditaerestumaria.mp3",
+        audioSrc: "/audio/benditaerestumaria.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2042,7 +2042,7 @@ const allCantosData = [
         dbno: "28",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/benditoeressenor.mp3",
+        audioSrc: "/audio/benditoeressenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2141,7 +2141,7 @@ const allCantosData = [
         dbno: "29",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/benditoseadios.mp3",
+        audioSrc: "/audio/benditoseadios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2218,7 +2218,7 @@ const allCantosData = [
         dbno: "30",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/benedictus.mp3",
+        audioSrc: "/audio/benedictus.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2301,7 +2301,7 @@ const allCantosData = [
         dbno: "31",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/cantadadios.mp3",
+        audioSrc: "/audio/cantadadios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2355,7 +2355,7 @@ const allCantosData = [
         dbno: "32",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/cantadalsenor.mp3",
+        audioSrc: "/audio/cantadalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2407,7 +2407,7 @@ const allCantosData = [
         dbno: "33",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/canticodelostresjovenes.mp3",
+        audioSrc: "/audio/canticodelostresjovenes.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2542,7 +2542,7 @@ const allCantosData = [
         dbno: "34",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/cantodemoises.mp3",
+        audioSrc: "/audio/cantodemoises.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2734,7 +2734,7 @@ const allCantosData = [
         dbno: "34",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/cantodemoises.mp3",
+        audioSrc: "/audio/cantodemoises.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2930,7 +2930,7 @@ const allCantosData = [
         dbno: "35",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/caritaschristiurgetnos.mp3",
+        audioSrc: "/audio/caritaschristiurgetnos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2999,7 +2999,7 @@ const allCantosData = [
         dbno: "36",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/carmen63.mp3",
+        audioSrc: "/audio/carmen63.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3065,7 +3065,7 @@ const allCantosData = [
         dbno: "37",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/comocondenadosamuerte.mp3",
+        audioSrc: "/audio/comocondenadosamuerte.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3144,7 +3144,7 @@ const allCantosData = [
         dbno: "38",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/comoesmaravilloso.mp3",
+        audioSrc: "/audio/comoesmaravilloso.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3210,7 +3210,7 @@ const allCantosData = [
         dbno: "39",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/comolacierva.mp3",
+        audioSrc: "/audio/comolacierva.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3295,7 +3295,7 @@ const allCantosData = [
         dbno: "40",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/comoovejaqueve.mp3",
+        audioSrc: "/audio/comoovejaqueve.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3370,7 +3370,7 @@ const allCantosData = [
         dbno: "41",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/consoladamipueblo.mp3",
+        audioSrc: "/audio/consoladamipueblo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3422,7 +3422,7 @@ const allCantosData = [
         dbno: "42",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/cristoeslaluz.mp3",
+        audioSrc: "/audio/cristoeslaluz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3481,7 +3481,7 @@ const allCantosData = [
         dbno: "43",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/cuandoelsenor.mp3",
+        audioSrc: "/audio/cuandoelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3544,7 +3544,7 @@ const allCantosData = [
         dbno: "44",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/cuandoisraelsaliodeegipto.mp3",
+        audioSrc: "/audio/cuandoisraelsaliodeegipto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3596,7 +3596,7 @@ const allCantosData = [
         dbno: "45",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/dayenu.mp3",
+        audioSrc: "/audio/dayenu.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3709,7 +3709,7 @@ const allCantosData = [
         dbno: "45",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/dayenu.mp3",
+        audioSrc: "/audio/dayenu.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3785,7 +3785,7 @@ const allCantosData = [
         dbno: "47",
         notes: "",
         mant: "No", // Mantenimiento
-        audioSrc: "/audio.resucito.do/deprofundis.mp3",
+        audioSrc: "/audio/deprofundis.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3851,7 +3851,7 @@ const allCantosData = [
         dbno: "48",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/decidlealosdecorazoncansado.mp3",
+        audioSrc: "/audio/decidlealosdecorazoncansado.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -3916,7 +3916,7 @@ const allCantosData = [
         dbno: "49",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/delantedelosangeles.mp3",
+        audioSrc: "/audio/delantedelosangeles.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4007,7 +4007,7 @@ const allCantosData = [
         dbno: "50",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/diadereposo.mp3",
+        audioSrc: "/audio/diadereposo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4061,7 +4061,7 @@ const allCantosData = [
         dbno: "51",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/diceelsenoramisenor.mp3",
+        audioSrc: "/audio/diceelsenoramisenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4138,7 +4138,7 @@ const allCantosData = [
         dbno: "52",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/dichosoelhombre.mp3",
+        audioSrc: "/audio/dichosoelhombre.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4207,7 +4207,7 @@ const allCantosData = [
         dbno: "53",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elcombateescatologico.mp3",
+        audioSrc: "/audio/elcombateescatologico.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4278,7 +4278,7 @@ const allCantosData = [
         dbno: "54",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elespiritudelsenorestasobremi.mp3",
+        audioSrc: "/audio/elespiritudelsenorestasobremi.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4336,7 +4336,7 @@ const allCantosData = [
         dbno: "55",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/eljacaldelospastores.mp3",
+        audioSrc: "/audio/eljacaldelospastores.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4397,7 +4397,7 @@ const allCantosData = [
         dbno: "56",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/ellagarero.mp3",
+        audioSrc: "/audio/ellagarero.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4460,7 +4460,7 @@ const allCantosData = [
         dbno: "57",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elmesiasleon.mp3",
+        audioSrc: "/audio/elmesiasleon.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4514,7 +4514,7 @@ const allCantosData = [
         dbno: "58",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elneciopiensaquediosnoexiste.mp3",
+        audioSrc: "/audio/elneciopiensaquediosnoexiste.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4590,7 +4590,7 @@ const allCantosData = [
         dbno: "59",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elpuebloquecaminabaenlastinieblas.mp3",
+        audioSrc: "/audio/elpuebloquecaminabaenlastinieblas.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4663,7 +4663,7 @@ const allCantosData = [
         dbno: "60",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elsenoranunciaunanoticia.mp3",
+        audioSrc: "/audio/elsenoranunciaunanoticia.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4723,7 +4723,7 @@ const allCantosData = [
         dbno: "61",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elsenoresmipastor.mp3",
+        audioSrc: "/audio/elsenoresmipastor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4822,7 +4822,7 @@ const allCantosData = [
         dbno: "62",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elsenormehadado.mp3",
+        audioSrc: "/audio/elsenormehadado.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -4898,7 +4898,7 @@ const allCantosData = [
         dbno: "63",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/elielilamasabactani.mp3",
+        audioSrc: "/audio/elielilamasabactani.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 5, incremento: 0.5 }, // Para celular
@@ -5010,7 +5010,7 @@ const allCantosData = [
         dbno: "64",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/enmediodeaquelgentio.mp3",
+        audioSrc: "/audio/enmediodeaquelgentio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5084,7 +5084,7 @@ const allCantosData = [
         dbno: "65",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/enunanocheoscura.mp3",
+        audioSrc: "/audio/enunanocheoscura.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5156,7 +5156,7 @@ const allCantosData = [
         dbno: "66",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/eresdignodetomarellibro.mp3",
+        audioSrc: "/audio/eresdignodetomarellibro.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5226,7 +5226,7 @@ const allCantosData = [
         dbno: "67",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/ereshermoso.mp3",
+        audioSrc: "/audio/ereshermoso.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5319,7 +5319,7 @@ const allCantosData = [
         dbno: "68",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/espaciente.mp3",
+        audioSrc: "/audio/espaciente.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5405,7 +5405,7 @@ const allCantosData = [
         dbno: "69",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/escondemeenloocultodetutienda.mp3",
+        audioSrc: "/audio/escondemeenloocultodetutienda.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5499,7 +5499,7 @@ const allCantosData = [
         dbno: "70",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/escuchadislaslejanas.mp3",
+        audioSrc: "/audio/escuchadislaslejanas.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5593,7 +5593,7 @@ const allCantosData = [
         dbno: "71",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/esteeseldiaenqueactuoelsenor.mp3",
+        audioSrc: "/audio/esteeseldiaenqueactuoelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5763,7 +5763,7 @@ const allCantosData = [
         dbno: "72",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/esteeselmandamientomio.mp3",
+        audioSrc: "/audio/esteeselmandamientomio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5836,7 +5836,7 @@ const allCantosData = [
         dbno: "73",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/evenushalomalejem.mp3",
+        audioSrc: "/audio/evenushalomalejem.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5915,7 +5915,7 @@ const allCantosData = [
         dbno: "74",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/extiendomismanos.mp3",
+        audioSrc: "/audio/extiendomismanos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -5973,7 +5973,7 @@ const allCantosData = [
         dbno: "75",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/exultadjustosenelsenor.mp3",
+        audioSrc: "/audio/exultadjustosenelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6038,7 +6038,7 @@ const allCantosData = [
         dbno: "76",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/felicidadparaelhombre.mp3",
+        audioSrc: "/audio/felicidadparaelhombre.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6096,7 +6096,7 @@ const allCantosData = [
         dbno: "77",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/graciasayahveh.mp3",
+        audioSrc: "/audio/graciasayahveh.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6180,7 +6180,7 @@ const allCantosData = [
         dbno: "78",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/gritadjubilosos.mp3",
+        audioSrc: "/audio/gritadjubilosos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6244,7 +6244,7 @@ const allCantosData = [
         dbno: "79",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/haciatimoradasanta.mp3",
+        audioSrc: "/audio/haciatimoradasanta.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6310,7 +6310,7 @@ const allCantosData = [
         dbno: "80",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/hastacuando.mp3",
+        audioSrc: "/audio/hastacuando.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6374,7 +6374,7 @@ const allCantosData = [
         dbno: "81",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/heaquimisiervo.mp3",
+        audioSrc: "/audio/heaquimisiervo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6428,7 +6428,7 @@ const allCantosData = [
         dbno: "82",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/heaquiquevengopresto.mp3",
+        audioSrc: "/audio/heaquiquevengopresto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6482,7 +6482,7 @@ const allCantosData = [
         dbno: "83",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/heesperadoenelsenor.mp3",
+        audioSrc: "/audio/heesperadoenelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6584,7 +6584,7 @@ const allCantosData = [
         dbno: "84",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/hijasdejerusalen.mp3",
+        audioSrc: "/audio/hijasdejerusalen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6656,7 +6656,7 @@ const allCantosData = [
         dbno: "85",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/himnoacristoluz.mp3",
+        audioSrc: "/audio/himnoacristoluz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6712,7 +6712,7 @@ const allCantosData = [
         dbno: "86",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/himnoalacaridad.mp3",
+        audioSrc: "/audio/himnoalacaridad.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6777,7 +6777,7 @@ const allCantosData = [
         dbno: "87",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/himnoalakenosis.mp3",
+        audioSrc: "/audio/himnoalakenosis.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6854,7 +6854,7 @@ const allCantosData = [
         dbno: "88",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/himnodeadviento.mp3",
+        audioSrc: "/audio/himnodeadviento.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6905,7 +6905,7 @@ const allCantosData = [
         dbno: "89",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/himnodelaascension.mp3",
+        audioSrc: "/audio/himnodelaascension.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -6972,7 +6972,7 @@ const allCantosData = [
         dbno: "90",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/himnodepascua.mp3",
+        audioSrc: "/audio/himnodepascua.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7022,7 +7022,7 @@ const allCantosData = [
         dbno: "91",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/huyeamadomio.mp3",
+        audioSrc: "/audio/huyeamadomio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7073,7 +7073,7 @@ const allCantosData = [
         dbno: "92",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/idyanunciadamishermanos.mp3",
+        audioSrc: "/audio/idyanunciadamishermanos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7148,7 +7148,7 @@ const allCantosData = [
         dbno: "93",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/improperios.mp3",
+        audioSrc: "/audio/improperios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7232,7 +7232,7 @@ const allCantosData = [
         dbno: "94",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/jerusalenreconstruida.mp3",
+        audioSrc: "/audio/jerusalenreconstruida.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7324,7 +7324,7 @@ const allCantosData = [
         dbno: "95",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/jesusrecorriatodaslasciudades.mp3",
+        audioSrc: "/audio/jesusrecorriatodaslasciudades.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7403,7 +7403,7 @@ const allCantosData = [
         dbno: "96",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/lacorderadedios.mp3",
+        audioSrc: "/audio/lacorderadedios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7501,7 +7501,7 @@ const allCantosData = [
         dbno: "97",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/laespada.mp3",
+        audioSrc: "/audio/laespada.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7579,7 +7579,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "98",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/lamarchaesdura.mp3",
+        audioSrc: "/audio/lamarchaesdura.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7627,7 +7627,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "99",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/lasalve.mp3",
+        audioSrc: "/audio/lasalve.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7683,7 +7683,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "100",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/lasiegadelasnaciones.mp3",
+        audioSrc: "/audio/lasiegadelasnaciones.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7770,7 +7770,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "101",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/lavozdemiamado.mp3",
+        audioSrc: "/audio/lavozdemiamado.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7852,7 +7852,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "102",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/lasarmasdelaluz.mp3",
+        audioSrc: "/audio/lasarmasdelaluz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -7920,7 +7920,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "103",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/laudasion1.mp3",
+        audioSrc: "/audio/laudasion1.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8013,7 +8013,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "103",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/laudasion2.mp3",
+        audioSrc: "/audio/laudasion2.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8102,7 +8102,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "105",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/levantomisojosalosmontes.mp3",
+        audioSrc: "/audio/levantomisojosalosmontes.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8178,7 +8178,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "106",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/lleguehastatupresenciamiclamor.mp3",
+        audioSrc: "/audio/lleguehastatupresenciamiclamor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8243,7 +8243,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "107",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/llevamealcielo.mp3",
+        audioSrc: "/audio/llevamealcielo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8338,7 +8338,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "108",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/magnificat.mp3",
+        audioSrc: "/audio/magnificat.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8409,7 +8409,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "109",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/mariacasadebendicion.mp3",
+        audioSrc: "/audio/mariacasadebendicion.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8466,7 +8466,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "110",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/mariadejasnagora.mp3",
+        audioSrc: "/audio/mariadejasnagora.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8534,7 +8534,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "111",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/mariamadredelaiglesia.mp3",
+        audioSrc: "/audio/mariamadredelaiglesia.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8617,7 +8617,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "139",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/quiennosseparara.mp3",
+        audioSrc: "/audio/quiennosseparara.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8712,7 +8712,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "161",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/tuqueeresfiel.mp3",
+        audioSrc: "/audio/tuqueeresfiel.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8811,7 +8811,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "152",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/sihoyescuchaissuvoz.mp3",
+        audioSrc: "/audio/sihoyescuchaissuvoz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8902,7 +8902,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "188",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/gloriaadiosenloaltodelcielo.mp3",
+        audioSrc: "/audio/gloriaadiosenloaltodelcielo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8967,7 +8967,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "194",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/plegariaeucaristicaiimodeloip1.mp3",
+        audioSrc: "/audio/plegariaeucaristicaiimodeloip1.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9044,7 +9044,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "195",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/plegariaeucaristicaiimodeloip2.mp3",
+        audioSrc: "/audio/plegariaeucaristicaiimodeloip2.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9118,7 +9118,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "194",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/plegariaeucaristicaiimodeloip3.mp3",
+        audioSrc: "/audio/plegariaeucaristicaiimodeloip3.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9215,7 +9215,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "194",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/plegariaeucarísticaiimodeloi.mp3",
+        audioSrc: "/audio/plegariaeucarísticaiimodeloi.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9645,7 +9645,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "214",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/santopalomeras65.mp3",
+        audioSrc: "/audio/santopalomeras65.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9706,7 +9706,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "215",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/santomelodiahebraica.mp3",
+        audioSrc: "/audio/santomelodiahebraica.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9771,7 +9771,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "216",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/santopalestina74.mp3",
+        audioSrc: "/audio/santopalestina74.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9833,7 +9833,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "217",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/santoroma77.mp3",
+        audioSrc: "/audio/santoroma77.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9901,7 +9901,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "218",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/santo1982.mp3",
+        audioSrc: "/audio/santo1982.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9962,7 +9962,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "219",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/santo1988.mp3",
+        audioSrc: "/audio/santo1988.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -10027,7 +10027,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "180",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/aleluyainterleccional.mp3",
+        audioSrc: "/audio/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -10079,7 +10079,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "180",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/aleluyainterleccional.mp3",
+        audioSrc: "/audio/aleluyainterleccional.mp3",
         // propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -10150,7 +10150,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "180",
         notes: "",
         mant: "Si",
-        audioSrc: "/audio.resucito.do/aleluyainterleccional.mp3",
+        audioSrc: "/audio/aleluyainterleccional.mp3",
         // propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -10255,7 +10255,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "180",
         notes: "",
         mant: "Si",
-        audioSrc: "/audio.resucito.do/aleluyainterleccional.mp3",
+        audioSrc: "/audio/aleluyainterleccional.mp3",
         // propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -10343,7 +10343,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "246",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/invocacionalespiritusanto.mp3",
+        audioSrc: "/audio/invocacionalespiritusanto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -10381,7 +10381,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "10",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/ohluzgozosa.mp3",
+        audioSrc: "/audio/ohluzgozosa.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -10428,7 +10428,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "227",
         notes: "",
         mant: "No",
-        audioSrc: "/audio.resucito.do/himnoalacruzgloriosa.mp3",
+        audioSrc: "/audio/himnoalacruzgloriosa.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
