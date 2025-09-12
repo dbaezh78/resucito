@@ -1356,8 +1356,8 @@ sig: "/resucito/src/ainterleccional.html?canto=aitos19a",
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
             { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
-            { line: `${aitos18a1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
-            { line: `${aitos18a2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitos18a1} (Mi,m,20)(La,m,178)(Mi,m,342)`, sC: "tc"},
+            { line: `${aitos18a2} (La,,151)(Mi,m,252)`, sC: "bg"},
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
 
     ], lder: [
@@ -2745,7 +2745,7 @@ ant: "/resucito/src/ainterleccional.html?canto=aitas1a",
 sig: "/resucito/src/ainterleccional.html?canto=aitfs15s",
 // Vaciando contenido,
     lizq: [
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
             { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
             { line: `${aitfs14s1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
@@ -2758,11 +2758,11 @@ sig: "/resucito/src/ainterleccional.html?canto=aitfs15s",
             { line: `${aitfs14s1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
             { line: `${aitfs14s2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
             { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
-            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "expanded",
        triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
             { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
-            { line: `${aitfs14s1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
-            { line: `${aitfs14s2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
+            { line: `${aitfs14s1} (Mi,m,20)(La,m,149)(Mi,m,342)`, sC: "tc"},
+            { line: `${aitfs14s2} (La,m,151)(Mi,m,364)`, sC: "bg"},
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
 
     ], lder: []}, // ULTIMA LINEA DEL CANTO: TIEMPO FIESTA 14 de septiembre LA EXALTACIÓN DE LA SANTA CRUZ
