@@ -11,7 +11,7 @@ const allCantosData = [
     subtitle: añoa+", "+aitas1a,
     category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
         mant: "Si",
-    audioSrc: "/audio/aleluyainterleccional.mp3",
+    audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
 scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -55,7 +55,7 @@ scrollConfig: {
   subtitle: añoa+", "+aitas2a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -98,7 +98,7 @@ sig: "/src/ainterleccional.html?canto=aitas3a",
   subtitle: añoa+", "+aitas3a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -141,7 +141,7 @@ sig: "/src/ainterleccional.html?canto=aitas4a",
   subtitle: añoa+", "+aitas4a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -187,7 +187,7 @@ sig: "/src/ainterleccional.html?canto=aitns25dicmva",
   subtitle: añoa+", "+aitns25dicmva,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -230,7 +230,7 @@ sig: "/src/ainterleccional.html?canto=aitns25dicmma",
   subtitle: añoa+", "+aitns25dicmma,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -276,7 +276,7 @@ sig: "/src/ainterleccional.html?canto=aitns25dicmaa",
   subtitle: añoa+", "+aitns25dicmaa,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -319,7 +319,7 @@ sig: "/src/ainterleccional.html?canto=aitns25dicmda",
   subtitle: añoa+", "+aitns25dicmda,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -365,7 +365,7 @@ sig: "/src/ainterleccional.html?canto=aitnssfa",
   subtitle: añoa+", "+aitnssfa,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -414,7 +414,7 @@ sig: "/src/ainterleccional.html?canto=aitns1a",
   subtitle: añoa+", "+aitns1a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -460,7 +460,7 @@ sig: "/src/ainterleccional.html?canto=aitns2a",
   subtitle: añoa+", "+aitns2a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -503,7 +503,7 @@ sig: "/src/ainterleccional.html?canto=aitns6a",
   subtitle: añoa+", "+aitns6a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -546,7 +546,7 @@ sig: "/src/ainterleccional.html?canto=aitos1a",
   subtitle: añoa+", "+aitos1a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -592,7 +592,7 @@ sig: "/src/ainterleccional.html?canto=aitos2a",
   subtitle: añoa+", "+aitos2a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -635,7 +635,7 @@ sig: "/src/ainterleccional.html?canto=aitos3a",
   subtitle: añoa+", "+aitos3a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -678,7 +678,7 @@ sig: "/src/ainterleccional.html?canto=aitos4a",
   subtitle: añoa+", "+aitos4a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -721,7 +721,7 @@ sig: "/src/ainterleccional.html?canto=aitos5a",
   subtitle: añoa+", "+aitos5a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -767,7 +767,7 @@ sig: "/src/ainterleccional.html?canto=aitos6a",
   subtitle: añoa+", "+aitos6a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -813,7 +813,7 @@ sig: "/src/ainterleccional.html?canto=aitos7a",
   subtitle: añoa+", "+aitos7a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -859,7 +859,7 @@ sig: "/src/ainterleccional.html?canto=aitos8a",
   subtitle: añoa+", "+aitos8a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -902,7 +902,7 @@ sig: "/src/ainterleccional.html?canto=aitos9a",
   subtitle: añoa+", "+aitos9a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -951,7 +951,7 @@ sig: "/src/ainterleccional.html?canto=aitos10a",
   subtitle: añoa+", "+aitos10a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -997,7 +997,7 @@ sig: "/src/ainterleccional.html?canto=aitos11a",
   subtitle: añoa+", "+aitos11a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1040,7 +1040,7 @@ sig: "/src/ainterleccional.html?canto=aitos12a",
   subtitle: añoa+", "+aitos12a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1086,7 +1086,7 @@ sig: "/src/ainterleccional.html?canto=aitos13a",
   subtitle: añoa+", "+aitos13a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1138,7 +1138,7 @@ sig: "/src/ainterleccional.html?canto=aitos14a",
   subtitle: añoa+", "+aitos14a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1184,7 +1184,7 @@ sig: "/src/ainterleccional.html?canto=aitos15a",
   subtitle: añoa+", "+aitos15a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1230,7 +1230,7 @@ sig: "/src/ainterleccional.html?canto=aitos16a",
   subtitle: añoa+", "+aitos16a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1278,7 +1278,7 @@ sig: "/src/ainterleccional.html?canto=aitos17a",
   subtitle: añoa+", "+aitos17a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1329,7 +1329,7 @@ sig: "/src/ainterleccional.html?canto=aitos18a",
   subtitle: añoa+", "+aitos18a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1373,7 +1373,7 @@ sig: "/src/ainterleccional.html?canto=aitos19a",
   subtitle: añoa+", "+aitos19a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1417,7 +1417,7 @@ sig: "/src/ainterleccional.html?canto=aitos20a",
   subtitle: añoa+", "+aitos20a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1461,7 +1461,7 @@ sig: "/src/ainterleccional.html?canto=aitos21a",
   subtitle: añoa+", "+aitos21a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1508,7 +1508,7 @@ sig: "/src/ainterleccional.html?canto=aitos22a",
   subtitle: añoa+", "+aitos22a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1555,7 +1555,7 @@ sig: "/src/ainterleccional.html?canto=aitos23a",
   subtitle: añoa+", "+aitos23a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1602,7 +1602,7 @@ sig: "/src/ainterleccional.html?canto=aitos24a",
   subtitle: añoa+", "+aitos24a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1652,7 +1652,7 @@ sig: "/src/ainterleccional.html?canto=aitos25a",
   subtitle: añoa+", "+aitos25a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1696,7 +1696,7 @@ sig: "/src/ainterleccional.html?canto=aitos26a",
   subtitle: añoa+", "+aitos26a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1743,7 +1743,7 @@ sig: "/src/ainterleccional.html?canto=aitos27a",
   subtitle: añoa+", "+aitos27a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1790,7 +1790,7 @@ sig: "/src/ainterleccional.html?canto=aitos28a",
   subtitle: añoa+", "+aitos28a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1840,7 +1840,7 @@ sig: "/src/ainterleccional.html?canto=aitos29a",
   subtitle: añoa+", "+aitos29a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1884,7 +1884,7 @@ sig: "/src/ainterleccional.html?canto=aitos30a",
   subtitle: añoa+", "+aitos30a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1928,7 +1928,7 @@ sig: "/src/ainterleccional.html?canto=aitos31a",
   subtitle: añoa+", "+aitos31a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -1972,7 +1972,7 @@ sig: "/src/ainterleccional.html?canto=aitos32a",
   subtitle: añoa+", "+aitos32a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2016,7 +2016,7 @@ sig: "/src/ainterleccional.html?canto=aitos33a",
   subtitle: añoa+", "+aitos33a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2063,7 +2063,7 @@ sig: "/src/ainterleccional.html?canto=aitos34a",
   subtitle: añoa+", "+aitos34a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2113,7 +2113,7 @@ sig: "/src/ainterleccional.html?canto=aitosscsca",
   subtitle: añoa+", "+aitosscsca,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2163,7 +2163,7 @@ sig: "/src/ainterleccional.html?canto=aitosvsa",
   subtitle: añof+", "+aitosvsa,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2210,7 +2210,7 @@ sig: "/src/ainterleccional.html?canto=aitcs1a",
   subtitle: añoa+", "+aitcs1a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2254,7 +2254,7 @@ sig: "/src/ainterleccional.html?canto=aitcs2a",
   subtitle: añoa+", "+aitcs2a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2299,7 +2299,7 @@ sig: "/src/ainterleccional.html?canto=aitcs3a",
   subtitle: añoa+", "+aitcs3a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2341,7 +2341,7 @@ sig: "/src/ainterleccional.html?canto=aitcs4a",
   subtitle: añoa+", "+aitcs4a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2386,7 +2386,7 @@ sig: "/src/ainterleccional.html?canto=aitcs5a",
   subtitle: añoa+", "+aitcs5a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2431,7 +2431,7 @@ sig: "/src/ainterleccional.html?canto=aitcs6a",
   subtitle: añoa+", "+aitcs6a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2479,7 +2479,7 @@ sig: "/src/ainterleccional.html?canto=aitcsjsa",
   subtitle: añoa+", "+aitcsjsa,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2527,7 +2527,7 @@ sig: "/src/ainterleccional.html?canto=aitcsvsa",
   subtitle: añoa+", "+aitcsvsa,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2575,7 +2575,7 @@ sig: "/src/ainterleccional.html?canto=aitpsssa",
   subtitle: añoa+", "+aitpsssa,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2617,7 +2617,7 @@ sig: "/src/ainterleccional.html?canto=aitps1a",
   subtitle: añoa+", "+aitps1a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2661,7 +2661,7 @@ sig: "/src/ainterleccional.html?canto=aitps2a",
   subtitle: añoa+", "+aitps2a,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "Si",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -2734,7 +2734,7 @@ sig: "/src/ainterleccional.html?canto=aitps3a",
   subtitle: añof+", "+aitfs14s,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
       mant: "No",
-  audioSrc: "/audio/aleluyainterleccional.mp3",
+  audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
