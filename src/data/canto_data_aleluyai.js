@@ -2762,7 +2762,7 @@ sig: "/src/ainterleccional.html?canto=aitfs15s",
        triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
             { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
             { line: `${aitfs14s1} (Mi,m,20)(La,m,178)(Mi,m,342)`, sC: "tc"},
-            { line: `${aitfs14s2} (La,m,151)(Mi,m,252)`, sC: "bg"},
+            { line: `${aitfs14s2} (La,m,151)(Mi,m,366)`, sC: "bg"},
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
 
     ], lder: []}, // ULTIMA LINEA DEL CANTO: TIEMPO FIESTA 14 de septiembre LA EXALTACIÓN DE LA SANTA CRUZ
