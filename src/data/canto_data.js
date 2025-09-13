@@ -8618,7 +8618,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "138",
         notes: "",
         mant: "No",
-        audioSrc: "/audio/quienesestaquesubedeldesierto.mp3",
+        audioSrc: "https://audio.resucito.do/quienesestaquesubedeldesierto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
