@@ -8600,6 +8600,69 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // LETRA Q
 
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           QUIÉN ES ESTA QUE SUBE DEL DESIERTO          ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "quienesestaquesubedeldesierto",
+        tt: "Quién Es Esta Que Sube Del Desierto",
+        title: "Quién Es Esta Que Sube Del Desierto",
+        subtitle: "Cantar de los Cantares 8,5-7",
+        category: ["Precatecumenado","Pascua","Pentecostés","Comunión","Final","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "138",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/quienesestaquesubedeldesierto.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=queestupendoquealegria",
+        sig: "/resucito/src/index.html?canto=quiennosseparara",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¿QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (La,m,20)(Re,m,227)(La,m,359)", sC: "ta as"},
+            { line: "QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (Fa,,211)(La,m,349)", sC: "as"},
+            { line: "APOYADA EN SU AMADO, EN SU AMADO,, (Fa,,60)(Mi,,348)", sC: "as"},
+            { line: "APOYADA EN SU AMADO?, (Fa,,60)(La,m,198)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Debajo del manzano te desperté,, (Sol,,12)(Fa,,168)(La,m,305)", sC: "tc"},
+            { line: "allí donde te concibió tu madre,, (Sol,,12)(Fa,,139)(La,m,257)", sC: ""},
+            { line: "allí donde tu madre te dio a luz,, (Fa,,10)(Mi,,280)", sC: ""},
+            { line: "allí donde tu madre te dio a luz., (Fa,,10)(La,m,285)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¿QUIÉN ES ESTA QUE SUBE DEL DESIERTO (La,m,20)(Re,m,227)(La,m,359)", sC: "ta as", lines: [
+            { line: "QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (Fa,,211)(La,m,349)", sC: "as"},
+            { line: "APOYADA EN SU AMADO, EN SU AMADO,, (Fa,,60)(Mi,,348)", sC: "as"},
+            { line: "APOYADA EN SU AMADO?, (Fa,,60)(La,m,198)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Llévame como un sello en tu corazón,, (Sol,,14)(Fa,,191)(La,m,340)", sC: "tc"},
+            { line: "como un tatuaje en tu brazo,, (Sol,,14)(Fa,,129)(La,m,238)", sC: ""},
+            { line: "porque es fuerte el amor como la muerte, (Fa,,122)(Mi,,362)", sC: ""},
+            { line: "y las aguas no lo pueden apagar,, (Fa,,55)(Mi,,293)", sC: ""},
+            { line: "ni los ríos lo pueden anegar., (Fa,,69)(Mi,,252)", sC: ""},
+            { line: "Que si tú dieras los bienes de tu casa por el amor, (Fa,,112)(Mi,,461)", sC: ""},
+            { line: "sólo encontrarías el desprecio., (Fa,,10)(Mi,,253)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "¿QUIÉN ES ESTA QUE SUBE DEL DESIERTO, (La,m,20)(Re,m,227)(La,m,359)", sC: "ta as", lines: [
+            { line: "QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (Fa,,211)(La,m,349)", sC: "as"},
+            { line: "APOYADA EN SU AMADO, EN SU AMADO,, (Fa,,60)(Mi,,348)", sC: "as"},
+            { line: "APOYADA EN SU AMADO?, (Fa,,60)(La,m,198)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: QUIÉN ES ESTA QUE SUBE DEL DESIERTO
+// SIGUIENTE CANTO DEBAJO
+
+
 /*
 ╔════════════════════════════════════════════════════════╗
 ║           QUIÉN NOS SEPARARÁ               ║
@@ -8633,7 +8696,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "DEL AMOR DE DIOS?, (Fa,,84)(Mi,,168)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¿Acaso Cristo Jesús,, (Mi,,10)(La,m,170)", sC: "tc"},
-            { line: "el que murió,, ", sC: ""},
+            { line: "el que murió, ", sC: ""},
             { line: "más aún el que resucitó,, (Sol,,222)", sC: ""},
             { line: "el que a la derecha de Dios, (Fa,,244)", sC: ""},
             { line: "intercede por nosotros?, (Mi,,172)", sC: ""},
@@ -8655,8 +8718,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "DEL AMOR DE DIOS?, (Fa,,84)(Mi,,168)", sC: "as"},  ]},
     ], lder: [
             { line: "Si seguros estamos, (Mi,,10)(La,m,137)", sC: "tc"},
-            { line: "que ni la muerte, ni la vida,, ", sC: ""},
-            { line: "ni lo presente, ni lo futuro,, ", sC: ""},
+            { line: "que ni la muerte, ni la vida, ", sC: ""},
+            { line: "ni lo presente, ni lo futuro, ", sC: ""},
             { line: "ni la altura, ni la profundidad,, (Sol,,259)", sC: ""},
             { line: "ni otra criatura alguna,, (Fa,,180)", sC: ""},
             { line: "nos podrá separar de Dios., (Mi,,233)", sC: ""},
@@ -8689,7 +8752,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "140",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/quieroandarmadreajerusalen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -8701,37 +8764,37 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/resucito/src/index.html?canto=quierocantar",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Quiero andar, madre,, (Mi,,20)(La,m,250)", sC: "tc"},
-            { line: "a Jerusalén, Jerusalén., (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "Quiero andar, madre,, (Mi,,10)(La,m,189)", sC: "tc"},
+            { line: "a Jerusalén, Jerusalén., (Re,m,22)(Mi,,62)", sC: ""},
             { line: "A comer las hierbas, (La,m,20)", sC: ""},
-            { line: "y a saciarme de ellas,, (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "y a saciarme de ellas,, (Re,m,22)(Mi,,59)", sC: ""},
             { line: "saciarme de ellas., ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "EN EL SENDERO ME ENCUENTRO YO., (Fa,,20)(La,m,250)", sC: "ta as"},
-            { line: "EN EL SENDERO CAMINO YO., (Fa,,20)(La,m,250)", sC: "as"},
-            { line: "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,22)(Mi,,250)", sC: "as"},
+            { line: "EN EL SENDERO ME ENCUENTRO YO., (Fa,,10)(La,m,339)", sC: "ta as"},
+            { line: "EN EL SENDERO CAMINO YO., (Fa,,10)(La,m,265)", sC: "as"},
+            { line: "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,20)(Mi,,57)", sC: "as"},
             { line: "DE TODO EL MUNDO., ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA LA, LA LA LA LA LA LA LALA ..., (Mi,,20)", sC: "as"},
-            { line: "LA LA, LA ... LA, (Re,m,22)(Mi,,250)", sC: "as"},
-            { line: "LALALA ..., ", sC: "as"},
+            { line: "LA LA, LA LA LA LA LA LA LALA ..., (Mi,,10)", sC: "as"},
+            { line: "LA LA, LA ... LA, (Re,m,46)(Mi,,138)", sC: "as"},
+            { line: "LALALA ... ", sC: "as"},
     ], lder: [
-            { line: "Hazme comer las hierbas,, (Mi,,20)(La,m,250)", sC: "tc"},
-            { line: "que pueda saciar mis ansias,, (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "Hazme comer las hierbas,, (Mi,,10)(La,m,223)", sC: "tc"},
+            { line: "que pueda saciar mis ansias,, (Re,m,22)(Mi,,62)", sC: ""},
             { line: "que son ansias de amistad,, ", sC: ""},
             { line: "que son ansias de humildad,, ", sC: ""},
-            { line: "que son ansias,, (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "que son ansias,, (Re,m,95)(Mi,,135)", sC: ""},
             { line: "que son ansias de obediencia., ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EN EL SENDERO ME ENCUENTRO YO., (Fa,,20)(La,m,250)", sC: "ta as", lines: [
-            { line: "EN EL SENDERO CAMINO YO., (Fa,,20)(La,m,250)", sC: "as"},
-            { line: "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,22)(Mi,,250)", sC: "as"},
+       triggerLine: "EN EL SENDERO ME ENCUENTRO YO, (Fa,,10)(La,m,339)", sC: "ta as", lines: [
+            { line: "EN EL SENDERO CAMINO YO., (Fa,,10)(La,m,265)", sC: "as"},
+            { line: "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,20)(Mi,,57)", sC: "as"},
             { line: "DE TODO EL MUNDO., ", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ADONAI ELOHENU,, (Mi,,20)", sC: "ta as"},
-            { line: "ADONAI ELOHENU,, (Re,m,22)(Mi,,250)", sC: "as"},
-            { line: "ADONAI EJAD., (Fa,,20)(Mi,,250)", sC: "as"},
+            { line: "ADONAI ELOHENU,, (Mi,,11)", sC: "ta as"},
+            { line: "ADONAI ELOHENU,, (Re,m,63)(Mi,,140)", sC: "as"},
+            { line: "ADONAI EJAD., (Fa,,62)(Mi,,108)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: QUIERO ANDAR, MADRE, A JERUSALÉN
 // SIGUIENTE CANTO DEBAJO
 
