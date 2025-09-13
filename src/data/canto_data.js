@@ -8625,8 +8625,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=queestupendoquealegria",
-        sig: "/resucito/src/index.html?canto=quiennosseparara",
+        ant: "/src/index.html?canto=queestupendoquealegria",
+        sig: "/src/index.html?canto=quiennosseparara",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "¿QUIÉN ES ESTA QUE SUBE DEL DESIERTO,, (La,m,20)(Re,m,227)(La,m,359)", sC: "ta as"},
@@ -8760,8 +8760,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=quiennosseparara",
-        sig: "/resucito/src/index.html?canto=quierocantar",
+        ant: "/src/index.html?canto=quiennosseparara",
+        sig: "/src/index.html?canto=quierocantar",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Quiero andar, madre,, (Mi,,10)(La,m,189)", sC: "tc"},
