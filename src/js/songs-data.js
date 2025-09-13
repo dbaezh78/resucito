@@ -237,7 +237,7 @@ const songs = [
         {id:234,title: "Prountuario de Acordes", subtitle: "Notas", category: "Precatecumenado", moments: [""], url: "/docs/ima/prontuario.png", content: "Este es el prontuario de acordes, una guía visual para las notas musicales y sus posiciones en la guitarra."},
         
         // Aleluya Internacional
-        {id:235,title: "Aleluya Internacional Semana XXII", subtitle: "Antifona Evangelio Semana XXII", category: "Liturgia", moments: ["Liturgia"], url: "/src/index.html?canto=ialeluyas22", targetBlank: true, content: "ALELUYA, ALELUYA, ALELUYA, Yo soy la vid, vosotros los sarmientos. El que permanece en mí y yo en él, ése da fruto abundante. ialeluyas22, Semana 22, s22." },
+        {id:235,title: "Exaltación a la Cruz | Aleluya Interleccional", subtitle: "Fiesta", category: "Liturgia", moments: ["Liturgia"], url: "/src/ainterleccional.html?canto=aitfs14s", targetBlank: true, content: "Te adoramos, oh Cristo, y te bendecimos porque con tu cruz has redimido el mundo., exaltacion a la cruz, exaltacionalacruz, aicruz 14/9 14 septiembre 14 9" },
         {id:236,title: "Oh Luz Gozosa", subtitle: "Pascua", category: "Liturgia", moments: ["Liturgia"], url: "/src/index.html?canto=ohluzgozosa", targetBlank: true, content: "Oh luz gozosa de la santa Gloria del Padre celeste inmortal, Santo y feliz, Jesucristo, Oh luz gozosa, Ohluzgozosa" },
         {id:237,title: "Invocación Al Espiritu Santo", subtitle: "Celebración", category: "Precatecumenado", moments: ["Precatecumenado"], url: "/src/index.html?canto=iespiritusanto", targetBlank: true, content: "OH SEÑOR, ENVIA TU ESPIRITU, QUE RENUEVE LA FAZ, DE LA TIERRA, Invocación Al Espiritu Santo, invocaciónalespiritusanto, espiritusanto" },
 
