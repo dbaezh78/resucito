@@ -8611,7 +8611,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "112",
         notes: "",
         mant: "No",
-        audioSrc: "audio.resucito.do/mariamadredelcaminoardiente.mp3",
+        audioSrc: "https://audio.resucito.do/mariamadredelcaminoardiente.mp3",
 
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
