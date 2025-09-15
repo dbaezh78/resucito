@@ -10618,6 +10618,80 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "EN SUS RAMAS YO ME EXTIENDO., (Si,7,16)(Mi,,273)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: HIMNO A LA CRUZ GLORIOSA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════╗
+║           JACOB                ║
+╚════════════════════════════════╝  */
+   {
+        id: "jacob",
+        tt: "Jacob ",
+        title: "Jacob ",
+        subtitle: "Genesis 32,23-29 ",
+        category: ["Catecumenado","Antiguo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "228",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/jacob.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=himnoalacruzgloriosa",
+        sig: "/src/index.html?canto=ningunopuedeserviradossenores",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Era ya noche cuando Jacob se levantó,, (La,m,20)", sC: "tc"},
+            { line: "tomó a sus mujeres y a todos sus hijos, (Fa,,153)(Mi,,338)", sC: ""},
+            { line: "y cruzó el vado de Yabboq., (La,m,226)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los tomó y les hizo pasar el río,, (La,m,20)", sC: ""},
+            { line: "e hizo pasar también todos sus bienes, (Fa,,184)(Mi,,328)", sC: ""},
+            { line: "y Jacob quedó solo., (La,m,158)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y de pronto alguien luchó con él., (Sol,,73)(La,m,295)", sC: "tc"},
+            { line: "Y DE PRONTO ALGUIEN LUCHÓ CON ÉL., (Sol,,83)(La,m,358)", sC: "ta as"},
+            { line: "Luchó, luchó con él hasta el alba., (Sol,,51)(La,m,289)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Viendo Aquel que Jacob se le resistía,, (La,m,20)(Fa,,336)", sC: "tc"},
+            { line: "le golpeó con fuerza en la cadera, ", sC: ""},
+            { line: "y el fémur de Jacob se dislocó, (Mi,,282)", sC: ""},
+            { line: "en la lucha con Aquel., (La,m,193)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Suéltame, que ya viene la aurora., (Sol,,29)(La,m,228)", sC: "tc"},
+            { line: "SUÉLTAME, QUE YA VIENE LA AURORA., (Sol,,29)(La,m,329)", sC: "ta as"},
+            { line: "Suéltame, que ya viene la aurora»., (Sol,,29)(La,m,289)", sC: "tc"},
+    ], lder: [
+            { line: "«No, no te soltaré, (Do,,20)(Re,,112)", sC: "tc"},
+            { line: "si no me bendices., (Fa,,33)(Mi,,137)", sC: ""},
+            { line: "NO, NO TE SOLTARÉ, (Do,,18)(Re,,117)", sC: "ta as"},
+            { line: "SI NO ME BENDICES»., (Fa,,41)(Mi,,151)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y Dios le preguntó:, (Mi,7,17)(La,m,165)", sC: "tc"},
+            { line: "«¿Cuál es tu nombre? ", sC: ""},
+            { line: "¿Cuál es tu nombre?» ", sC: ""},
+            { line: "«Jacob», respondió él,, (Fa,,43)", sC: ""},
+            { line: "«Jacob», respondió él., (Mi,,187)", sC: ""},
+            { line: "«No te llamarás más Jacob., (La,m,236)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ISRAEL, ISRAEL,, (Sol,,52)(La,m,130)", sC: "ta as"},
+            { line: "ISRAEL SERÁ TU NOMBRE., (Sol,,53)(La,m,130)", sC: "as"},
+            { line: "ISRAEL, HAS CONOCIDO TU DEBILIDAD., (Sol,,53)(La,m,183)", sC: "as"},
+            { line: "ISRAEL, TE APOYARÁS EN DIOS., (Sol,,53)(La,m,349)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ISRAEL, FUERTE CON DIOS., (Sol,,53)(La,m,228)", sC: "as"},
+            { line: "ISRAEL, TU VENCERÁS., (Sol,,53)(La,m,193)", sC: "as"},
+            { line: "ISRAEL, HAS CONOCIDO TU DEBILIDAD., (Sol,,53)(La,m,349)", sC: "as"},
+            { line: "ISRAEL, TE APOYARÁS EN DIOS»., (Sol,,53)(La,m,277)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: JACOB 
+// SIGUIENTE CANTO DEBAJO
+
+
 
 
 // ELECCIÓN
