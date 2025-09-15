@@ -8598,6 +8598,77 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
+
+
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           MARÍA, PEQUEÑA MARÍA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "mariapequenamaria",
+        tt: "María, Pequeña María",
+        title: "María, Pequeña María",
+        subtitle: "Himno a la Virgen María (Kiko Argüello)",
+        category: ["Precatecumenado","Vírgen María","Cuaresma","Penitencial"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "113",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/mariapequenamaria.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=mariamadredelcaminoardiente",
+        sig: "/resucito/src/index.html?canto=meensenaraselcaminodelavida",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "María, pequeña María,, (Re,,11)(Fa#,m,199)", sC: "tc"},
+            { line: "tú eres la brisa suave de Elías,, (Sol,,35)(Mim6,,259)", sC: ""},
+            { line: "el susurro del Espíritu de Dios., (La,7,63)(Re,,265)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú eres la zarza ardiente de Moisés, (Fa#,m,336)", sC: ""},
+            { line: "que llevas al Señor y no te consumes., (Sol,,61)(La,,304)(La7,,366)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú eres Hel lugar junto a mí», (Re,,36)(Fa#,,258)", sC: ""},
+            { line: "que mostró el Señor a Moisés,, (Sol,,101)(Re,,265)", sC: ""},
+            { line: "tú eres la hendidura de la roca, (Sol,,37)(Re,,263)", sC: ""},
+            { line: "que Dios cubre con su mano, (La,,237)", sC: ""},
+            { line: "mientras que pasa su gloria., (Sol,,31)(La,,117)(Re,,236)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "VENGA EL SEÑOR CON NOSOTROS,, (Re,,11)(Fa#,,269)", sC: "ta as"},
+            { line: "SI HEMOS HALLADO GRACIA A SUS OJOS., (Sol,,40)(Re,,354)", sC: "as"},
+            { line: "ES CIERTO QUE SOMOS PECADORES,, (Sol,,55)(Re,,302)", sC: "as"},
+            { line: "MAS RUEGA TÚ POR NOSOTROS,, (La,,253)", sC: "as"},
+            { line: "Y SEREMOS SU PUEBLO Y SU HEREDAD., (Sol,,61)(La,,188)(Re,,357)", sC: "as"},
+    ], lder: [
+            { line: "María, pequeña María,, (Re,,12)(Fa#,m,199)", sC: "tc"},
+            { line: "hija de Jerusalén,, (Sol,,14)(Mi,m6,146)", sC: ""},
+            { line: "Madre de todos los pueblos,, (Re,,10)(Fa#,m,212)", sC: ""},
+            { line: "Virgen de Nazaret., (Sol,,12)(La,,157)(La,7,196)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú eres la nube del desierto, (Re,,39)(Fa#,,231)", sC: ""},
+            { line: "que protege la marcha de Israel,, (Sol,,84)(Re,,291)", sC: ""},
+            { line: "tú eres la tienda de la reunión,, (Sol,,31)(Re,,268)", sC: ""},
+            { line: "el arca que lleva la alianza,, (La,,215)", sC: ""},
+            { line: "el Santuario de la gloria del Señor., (Sol,,86)(La,,196)(Re,,309)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VENGA EL SEÑOR CON NOSOTROS, (Re,,11)(Fa#,,269)", sC: "ta as", lines: [
+            { line: "SI HEMOS HALLADO GRACIA A SUS OJOS., (Sol,,40)(Re,,354)", sC: "as"},
+            { line: "ES CIERTO QUE SOMOS PECADORES,, (Sol,,55)(Re,,302)", sC: "as"},
+            { line: "MAS RUEGA TÚ POR NOSOTROS,, (La,,253)", sC: "as"},
+            { line: "Y SEREMOS SU PUEBLO Y SU HEREDAD., (Sol,,61)(La,,188)(Re,,357)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: MARÍA, PEQUEÑA MARÍA
+// SIGUIENTE CANTO DEBAJO
+
+
 // LETRA Q
 
 
