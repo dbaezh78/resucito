@@ -8594,12 +8594,62 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "COMO ESPOSA, NUEVA EVA., (Mi,,237)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: MARÍA, MADRE DE LA IGLESIA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           MARÍA, MADRE DEL CAMINO ARDIENTE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "mariamadredelcaminoardiente",
+        tt: "María, Madre Del Camino Ardiente",
+        title: "María, Madre Del Camino Ardiente",
+        subtitle: "Himno a la Virgen del Tercer Milenio (Kiko Argüello)",
+        category: ["Precatecumenado","Vírgen María","Adviento","Navidad"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "112",
+        notes: "",
+        mant: "No",
+        audioSrc: "audio.resucito.do/mariamadredelcaminoardiente.mp3",
 
-
-
-
-
-
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=mariamadredelaiglesia",
+        sig: "/resucito/src/index.html?canto=mariapequenamaria",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡María, Madre del camino ardiente!, (Sol,,14)(Mi,m,57)(Do,,95)(La,,292)", sC: "tc"},
+            { line: "Tú nos libras del fuego de las pasiones, (Do,,78)(Sol,,330)", sC: ""},
+            { line: "con el rocío de tu intercesión,, (Re,,96)(Sol,,260)", sC: ""},
+            { line: "tú nos libras del fuego de las pasiones, (Do,,75)(Sol,,326)", sC: ""},
+            { line: "con el rocío de tu intercesión., (Re,,98)(Sol,,258)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡HUMILDE MARÍA, TODA INMACULADA,, (Mi,m,25)(Do,,152)(La,,198)(Re,,331)", sC: "ta as"},
+            { line: "ÁNGEL DE LA GUARDA DEL TERCER MILENIO;, (Do,,10)(Sol,,392)", sC: "as"},
+            { line: "LUGAR DE TODAS LAS GRACIAS;, (Re,,47)(Sol,,251)", sC: "as"},
+            { line: "IMAGEN DE LA VIRTUD;, (Do,,30)(Sol,,197)", sC: "as"},
+            { line: "TU BELLEZA CANTA LA JERUSALÉN CELESTE!, (Re,,137)(Sol,,382)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Tú nos has mostrado el camino!, (Mi,m,20)(Do,,58)(La,,277)", sC: "tc"},
+            { line: "Bajo la cruz nos has recibido,, (Do,,96)(Sol,,244)", sC: ""},
+            { line: "Madre del camino ardiente; (Re,,22)(Sol,,219)", sC: ""},
+            { line: "bajo la cruz nos has recibido: (Do,,104)(Sol,,245)", sC: ""},
+            { line: "¡cómo decir no a tu Hijo sufriente!, (Re,,135)(Sol,,284)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡HUMILDE MARÍA, TODA INMACULADA, (Mi,m,25)(Do,,152)(La,,198)(Re,,331)", sC: "ta as", lines: [
+            { line: "ÁNGEL DE LA GUARDA DEL TERCER MILENIO;, (Do,,10)(Sol,,392)", sC: "as"},
+            { line: "LUGAR DE TODAS LAS GRACIAS;, (Re,,47)(Sol,,251)", sC: "as"},
+            { line: "IMAGEN DE LA VIRTUD;, (Do,,30)(Sol,,197)", sC: "as"},
+            { line: "TU BELLEZA CANTA LA JERUSALÉN CELESTE!, (Re,,137)(Sol,,382)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: MARÍA, MADRE DEL CAMINO ARDIENTE
+// SIGUIENTE CANTO DEBAJO
 
 /*
 ╔════════════════════════════════════════════════════════╗
