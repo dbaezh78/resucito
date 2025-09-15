@@ -5680,7 +5680,7 @@ const allCantosData = [
             // No he de morir... . .. EN LA MUERTE. 
 
             { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
-       triggerLine: "No he de morir...    ...EN LA MUERTE.  (La,m,19)", sC: "tc as", lines: [
+       triggerLine: "No he de morir...    ...EN LA MUERTE  (La,m,19)", sC: "tc as", lines: [
 
             { line: "QUE VIVIRÉ,", sC: "as ab14 bgtop"},
             
@@ -5721,7 +5721,7 @@ const allCantosData = [
             // No he de morir... . .. EN LA MUERTE. 
 
             { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
-       triggerLine: "No he de morir...    ...EN LA MUERTE.  (La,m,19)", sC: "tc as", lines: [
+       triggerLine: "No he de morir...    ...EN LA MUERTE  (La,m,19)", sC: "tc as", lines: [
 
             { line: "QUE VIVIRÉ,", sC: "as ab14 bgtop"},
             
@@ -8666,6 +8666,112 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "MAS RUEGA TÚ POR NOSOTROS,, (La,,253)", sC: "as"},
             { line: "Y SEREMOS SU PUEBLO Y SU HEREDAD., (Sol,,61)(La,,188)(Re,,357)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: MARÍA, PEQUEÑA MARÍA
+// SIGUIENTE CANTO DEBAJO
+
+
+// LETRA P
+/*
+╔═══════════════════════════════════════════════════╗
+║           POR EL AMOR DE MIS AMIGOS               ║
+╚═══════════════════════════════════════════════════╝  */
+   {
+        id: "porelamordemisamigos",
+        tt: "Por El Amor De Mis Amigos",
+        title: "Por El Amor De Mis Amigos",
+        subtitle: "Salmo 122 (121) - Melodía hebraica ",
+        category: ["Precatecumenado","Paz","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "132",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/porelamordemisamigos.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=pentecostes",
+        sig: "/resucito/src/index.html?canto=porqueestanocheesdiferente",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Por el amor de mis amigos,, (Mi,m,20)(La,m,221)", sC: "tc"},
+            { line: "por el amor de mis hermanos,, (Mi,m,246)", sC: ""},
+            { line: "déjame que yo te diga:, (Si7,,188)", sC: ""},
+            { line: "la paz contigo., (Mi,m,109)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Qué alegría cuando me dijeron:, (Mi,m,20)", sC: "tc"},
+            { line: "vamos a la casa del Señor!, (La,m,20)(Mi,m,240)", sC: ""},
+            { line: "YA ESTÁN PISANDO NUESTROS PIES, (Si7,,333)", sC: "ta as"},
+            { line: "TUS UMBRALES JERUSALÉN., (Mi,m,251)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "JERUSALÉN, JERUSALÉN, (Mi,m,20)", sC: "ta as"},
+            { line: "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)", sC: "as"},
+            { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si7,,67)(Mi,m,200)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "JERUSALÉN,JERUSALÉN,, (Mi,m,20)", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)", sC: "as"},
+            { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si7,,65)(Mi,m,201)", sC: "as"},
+    ], lder: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Por el amor... ...paz contigo, (Mi,m,20)", sC: "tc", lines: [
+            { line: "Por el amor de mis amigos, (Mi,m,20)(La,m,221)", sC: "sub1"},
+            { line: "por el amor de mis hermanos, (Mi,m,246)", sC: ""},
+            { line: "déjame que yo te diga:, (Si7,,188)", sC: ""},
+            { line: "la paz contigo. (Mi,m,109)", sC: ""},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Allá suben las tribus,, (Mi,m,20)", sC: "tc"},
+            { line: "las tribus del Señor,, (La,m,51)(Mi,m,167)", sC: ""},
+            { line: "SEGÚN LA COSTUMBRE DE ISRAEL,, (Si,7,317)", sC: "ta as"},
+            { line: "PARA CANTAR AL SEÑOR., (Mi,m,222)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "JERUSALÉN, JERUSALÉN, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)", sC: "as"},
+            { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si7,,67)(Mi,m,200)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "JERUSALÉN,JERUSALÉN,, (Mi,m,20)", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)", sC: "as"},
+            { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si7,,65)(Mi,m,201)", sC: "as"}, ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Por el amor... ...paz contigo, (Mi,m,20)", sC: "tc", lines: [
+            { line: "Por el amor de mis amigos, (Mi,m,20)(La,m,221)", sC: "sub1"},
+            { line: "por el amor de mis hermanos, (Mi,m,246)", sC: ""},
+            { line: "déjame que yo te diga:, (Si7,,188)", sC: ""},
+            { line: "la paz contigo. (Mi,m,109)", sC: ""},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Pedid la paz, pedid la paz, (Mi,m,20)", sC: "tc"},
+            { line: "para Jerusalén:, (La,m,20)(Mi,m,125)", sC: ""},
+            { line: "QUE SEA LA PAZ, QUE SEA LA PAZ, ", sC: "ta as"},
+            { line: "CON TODOS LOS QUE TE AMAN., (Si,7,20)(Mi,m,250)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "JERUSALÉN, JERUSALÉN, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)", sC: "as"},
+            { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si7,,67)(Mi,m,200)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "JERUSALÉN,JERUSALÉN,, (Mi,m,20)", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)", sC: "as"},
+            { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si7,,65)(Mi,m,201)", sC: "as"}, ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA LALALALALA, LA LALALALALA,, (Mi,m,20)", sC: "ta as"},
+            { line: "LA LA LALALA., (La,m,20)(Mi,m,104)", sC: "as"},
+            { line: "LA LALALALALA, LA LALALALALA, ", sC: "as"},
+            { line: "LA LA LALALA., (Si,7,20)(Mi,m,104)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: POR EL AMOR DE MIS AMIGOS
 // SIGUIENTE CANTO DEBAJO
 
 

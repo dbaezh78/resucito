@@ -1,0 +1,10 @@
+.container {margin-left: 8%;}
+
+.sub1 {
+    background-color: white;
+    width: fit-content;
+    @media (min-width: 384px){margin-top: -35px;}
+    @media (min-width: 768px){margin-top: -62px;}
+    @media (min-width: 992px){margin-top: -45px;}
+}
+
