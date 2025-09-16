@@ -8619,8 +8619,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=mariamadredelaiglesia",
-        sig: "/resucito/src/index.html?canto=mariapequenamaria",
+        ant: "/src/index.html?canto=mariamadredelaiglesia",
+        sig: "/src/index.html?canto=mariapequenamaria",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "¡María, Madre del camino ardiente!, (Sol,,14)(Mi,m,57)(Do,,95)(La,,292)", sC: "tc"},
@@ -8675,8 +8675,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=mariamadredelcaminoardiente",
-        sig: "/resucito/src/index.html?canto=meensenaraselcaminodelavida",
+        ant: "/src/index.html?canto=mariamadredelcaminoardiente",
+        sig: "/src/index.html?canto=meensenaraselcaminodelavida",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "María, pequeña María,, (Re,,11)(Fa#,m,199)", sC: "tc"},
@@ -8717,6 +8717,81 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Y SEREMOS SU PUEBLO Y SU HEREDAD., (Sol,,61)(La,,188)(Re,,357)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: MARÍA, PEQUEÑA MARÍA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ME ENSEÑARÁS EL CAMINO DE LA VIDA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "meensenaraselcaminodelavida",
+        tt: "Me Enseñarás El Camino De La Vida",
+        title: "Me Enseñarás El Camino De La Vida",
+        subtitle: "Salmo 16 (15)",
+        category: ["Precatecumenado","Pascua","Pentecostés","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "114",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/meensenaraselcaminodelavida.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=mariapequenamaria",
+        sig: "/src/index.html?canto=mehasseducidosenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (La,m,20)(Fa,,250)", sC: "tc as"},
+            { line: "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (Re,m,22)(La,m,250)", sC: "as"},
+            { line: "ME SACIARÁS DE GOZO EN TU PRESENCIA,, (Mi,,20)", sC: "as"},
+            { line: "DE ALEGRÍA PERPETUA A TU DERECHA., (Re,m,22)(Mi,,250)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Protégeme, Dios mío, en ti me refugio., (La,m,20)(Fa,,250)(Re,m,350)(La,m,450)", sC: "tc"},
+            { line: "Yo digo a Dios: «Tú eres mi Señor,, (La,m,20)(Fa,,250)(Re,m,350)(La,m,450)", sC: ""},
+            { line: "sin ti no tengo nada»., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ME ENSEÑARÁS EL CAMINO DE LA VIDA, (La,m,20)(Fa,,250)", sC: "ta as", lines: [
+            { line: "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (Re,m,22)(La,m,250)", sC: "as"},
+            { line: "ME SACIARÁS DE GOZO EN TU PRESENCIA,, (Mi,,20)", sC: "as"},
+            { line: "DE ALEGRÍA PERPETUA A TU DERECHA., (Re,m,22)(Mi,,250)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Señor es mi heredad y mi copa,, (La,m,20)(Fa,,250)", sC: "tc"},
+            { line: "mi vida está en sus manos;, (Re,m,22)(La,m,250)", sC: ""},
+            { line: "me ha tocado en suerte un lote hermoso,, (Fa,,20)", sC: ""},
+            { line: "me encanta mi heredad., (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Bendigo al Señor que me aconseja,, (La,m,20)(Fa,,250)", sC: "tc"},
+            { line: "hasta de noche instruye mi corazón,, (Re,m,22)", sC: ""},
+            { line: "tengo siempre delante de mí al Señor,, (Mi,,20)", sC: ""},
+            { line: "está a mi derecha, no vacilaré., (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ME ENSEÑARÁS EL CAMINO DE LA VIDA, (La,m,20)(Fa,,250)", sC: "ta as", lines: [
+            { line: "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (Re,m,22)(La,m,250)", sC: "as"},
+            { line: "ME SACIARÁS DE GOZO EN TU PRESENCIA,, (Mi,,20)", sC: "as"},
+            { line: "DE ALEGRÍA PERPETUA A TU DERECHA., (Re,m,22)(Mi,,250)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Por eso se alegra mi corazón,, (La,m,20)(Fa,,250)", sC: "tc"},
+            { line: "exulta mi alma,, (Re,m,22)(La,m,250)", sC: ""},
+            { line: "y mi carne descansa serena;, (Mi,,20)", sC: ""},
+            { line: "porque no abandonarás, (Re,m,22)", sC: ""},
+            { line: "mi vida en el sepulcro,, (Mi,,20)", sC: ""},
+            { line: "ni dejarás que tu santo, (Re,m,22)", sC: ""},
+            { line: "experimente la corrupción,, (Mi,,20)", sC: ""},
+            { line: "la corrupción., (Re,m,22)(Mi,,250)", sC: "melisma"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ME ENSEÑARÁS EL CAMINO DE LA VIDA, (La,m,20)(Fa,,250)", sC: "ta as", lines: [
+            { line: "ME ENSEÑARÁS EL CAMINO DE LA VIDA,, (Re,m,22)(La,m,250)", sC: "as"},
+            { line: "ME SACIARÁS DE GOZO EN TU PRESENCIA,, (Mi,,20)", sC: "as"},
+            { line: "DE ALEGRÍA PERPETUA A TU DERECHA., (Re,m,22)(Mi,,250)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ME ENSEÑARÁS EL CAMINO DE LA VIDA
+// SIGUIENTE CANTO DEBAJO
 
 
 // LETRA P
@@ -8744,8 +8819,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=pentecostes",
-        sig: "/resucito/src/index.html?canto=porqueestanocheesdiferente",
+        ant: "/src/index.html?canto=pentecostes",
+        sig: "/src/index.html?canto=porqueestanocheesdiferente",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Por el amor de mis amigos,, (Mi,m,20)(La,m,221)", sC: "tc"},
