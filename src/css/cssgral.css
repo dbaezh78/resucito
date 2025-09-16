@@ -676,7 +676,7 @@ display: none;}
 .hombres::before {content: "Hombres:";}
 .mujeres::before {content: "Mujeres:";}
 .aleluya::before {content: "A.\00a0\00a0\ ALELUYA.";} /*\00a0\ esto es para agregar espacio */
-.melisma::before {content: "[melisma]";}
+.melisma::before {content: "[melisma]"; color:red;}
 .melisma1::before {content: "[melisma]";}
 .bis::before {content: "BIS A.";}
 .pa::before {content: "P.";}
