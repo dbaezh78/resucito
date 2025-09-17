@@ -8668,7 +8668,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "113",
         notes: "",
         mant: "No",
-        audioSrc: "/audio/mariapequenamaria.mp3",
+        audioSrc: "https://audio.resucito.do/mariapequenamaria.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8734,7 +8734,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "114",
         notes: "",
         mant: "No",
-        audioSrc: "/audio/meensenaraselcaminodelavida.mp3",
+        audioSrc: "https://audio.resucito.do/meensenaraselcaminodelavida.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8810,7 +8810,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "115",
         notes: "",
         mant: "No",
-        audioSrc: "/audio/mehasseducidosenor.mp3",
+        audioSrc: "https://audio.resucito.do/mehasseducidosenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8891,7 +8891,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "116",
         notes: "",
         mant: "No",
-        audioSrc: "/audio/miradqueestupendo.mp3",
+        audioSrc: "https://audio.resucito.do/miradqueestupendo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -8969,6 +8969,232 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: MIRAD QUÉ ESTUPENDO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════╗
+║           MISERICORDIA, DIOS MÍO               ║
+╚════════════════════════════════════════════════╝  */
+   {
+        id: "misericordiadiosmio",
+        tt: "Misericordia, Dios Mío",
+        title: "Misericordia, Dios Mío",
+        subtitle: "Salmo 51 (50)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "117",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/misericordiadiosmio.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=miradqueestupendo",
+        sig: "/src/index.html?canto=misericordiamiamisericordia",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Misericordia, Dios mío, por tu bondad, (Re,m,22)(Sol,m,346)", sC: "tc"},
+            { line: "POR TU INMENSA COMPASIÓN, ", sC: "ta as"},
+            { line: "BORRA MI CULPA; (Re,m,127)", sC: "as"},
+            { line: "lava del todo mi delito, (Sol,m,194)", sC: "tc"},
+            { line: "LIMPIA MI PECADO. (Re,m,151)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Pues yo reconozco mi culpa, ", sC: "tc ptop0"},
+            { line: "TENGO SIEMPRE PRESENTE MI PECADO: ", sC: "ta as ptop0"},
+            { line: "contra Ti, contra Ti sólo pequé, ", sC: "tc ptop0"},
+            { line: "COMETÍ LA MALDAD QUE ABORRECES. ", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En la sentencia tendrás razón, ", sC: "tc ptop0"},
+            { line: "EN EL JUICIO RESULTARÁS INOCENTE. ", sC: "ta as ptop0"},
+            { line: "Mira, en la culpa nací, ", sC: "tc ptop0"},
+            { line: "PECADOR ME CONCIBIÓ MI MADRE. ", sC: "ta as ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Te gusta un corazón sincero, ", sC: "tc ptop0"},
+            { line: "Y EN MI INTERIOR, ", sC: "ta as ptop0"},
+            { line: "ME INCULCAS SABIDURÍA.", sC: "as ptop0"},
+            { line: "Rocíame con el hisopo: quedaré limpio;", sC: "tc ptop0"},
+            { line: "LÁVAME: QUEDARÉ, ", sC: "ta as ptop0"},
+            { line: "MÁS BLANCO QUE LA NIEVE. ", sC: "as ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Hazme oír el gozo y la alegría, ", sC: "tc ptop0"},
+            { line: "QUE SE ALEGREN, ", sC: "ta as ptop0"},
+            { line: "LOS HUESOS QUEBRANTADOS. ", sC: "as ptop0"},
+            { line: "Aparta de mi pecado tu vista, ", sC: "tc ptop0"},
+            { line: "BORRA EN MÍ TODA CULPA. ", sC: "ta as ptop0"},
+    ], lder: [
+            { line: "Oh Dios, crea en mí un corazón puro, (Re,m,22)(Sol,m,324)", sC: "tc ptop0"},
+            { line: "RENUÉVAME POR DENTRO, ", sC: "ta as ptop0"},
+            { line: "CON ESPÍRITU FIRME; ", sC: "as ptop0"},
+            { line: "no me arrojes lejos de tu rostro, ", sC: "tc ptop0"},
+            { line: "NO ME QUITES TU SANTO ESPÍRITU. ", sC: "ta as ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Devuélveme la alegría de tu salvación, ", sC: "tc ptop0"},
+            { line: "AFIÁNZAME CON ESPÍRITU GENEROSO; ", sC: "ta as ptop0"},
+            { line: "enseñaré a los malvados tus caminos, ", sC: "tc ptop0"},
+            { line: "LOS PECADORES VOLVERÁN A TI. ", sC: "ta as ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Líbrame de la sangre, oh Dios, ", sC: "tc ptop0"},
+            { line: "Dios, Salvador mío, ", sC: "ptop0"},
+            { line: "Y CANTARÁ MI LENGUA TU JUSTICIA. ", sC: "ta as ptop0"},
+            { line: "Señor, me abrirás los labios, ", sC: "tc ptop0"},
+            { line: "Y MI BOCA PROCLAMARÁ TU ALABANZA. ", sC: "as ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los sacrificios no te satisfacen: ", sC: "tc ptop0"},
+            { line: "SI TE OFRECIERA UN HOLOCAUSTO, ", sC: "ta as ptop0"},
+            { line: "TÚ NO LO QUERRÍAS. ", sC: "as"},
+            { line: "Mi sacrificio es un espíritu quebrantado; ", sC: "tc ptop0"},
+            { line: "UN CORAZÓN QUEBRANTADO Y, ", sC: "ta as ptop0"},
+            { line: "HUMILLADO, TÚ NO LO DESPRECIAS. ", sC: "as ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor, por tu bondad, favorece a Sión, ", sC: "tc ptop0"},
+            { line: "RECONSTRUYE, ", sC: "ta as ptop0"},
+            { line: "LAS MURALLAS DE JERUSALÉN: ", sC: "as ptop0"},
+            { line: "Entonces aceptarás los sacrificios rituales, ", sC: "tc ptop0"},
+            { line: "ofrendas y holocaustos, ", sC: "tc ptop0"},
+            { line: "SOBRE TU ALTAR, ", sC: "ta as ptop0"},
+            { line: "SE INMOLARÁN NOVILLOS. ", sC: "as ptop0"},
+]}, // ULTIMA LINEA DEL CANTO: MISERICORDIA, DIOS MÍO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           MISERICORDIA MÍA, MISERICORDIA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "misericordiamiamisericordia",
+        tt: "Misericordia Mía, Misericordia",
+        title: "Misericordia Mía, Misericordia",
+        subtitle: "Salmo 51 (50)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "118",
+        notes: "",
+        mant: "No",
+        //audioSrc: "https://audio.resucito.do/misericordiamiamisericordia.mp3",
+        audioSrc: "https://audio.resucito.do/misericordiadiosmio.mp3",
+
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=misericordiadiosmio",
+        sig: "/src/index.html?canto=muchomehanperseguido",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA… (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "tc as r1"},
+            { line: "Misericordia, Dios mío, por tu bondad, (Mi,m,20)(La,m,345)", sC: "tc"},
+            { line: "por tu inmensa compasión borra mi culpa; (Mi,m,368)", sC: ""},
+            { line: "lava del todo mi delito,, (La,m,196)", sC: ""},
+            { line: "limpia mi pecado. (Mi,m,134)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex junte", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { line: "Pues yo reconozco mi culpa, ", sC: "junte"},
+            { line: "tengo siempre presente mi pecado: ", sC: "junte"},
+            { line: "contra Ti, contra Ti sólo pequé, ", sC: "junte"},
+            { line: "cometí la maldad que aborreces. ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex junte", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { line: "En la sentencia tendrás razón, ", sC: "junte"},
+            { line: "en el juicio resultarás inocente. ", sC: "junte"},
+            { line: "Mira, en la culpa nací, ", sC: "junte"},
+            { line: "pecador me concibió mi madre. ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { line: "Te gusta un corazón sincero, ", sC: "junte"},
+            { line: "y en mi interiorme inculcas sabiduría. ", sC: "junte"},
+            { line: "Rocíame con el hisopo: quedaré limpio; ", sC: "junte"},
+            { line: "lávame: quedaré más blanco que la nieve. ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { line: "Hazme oír el gozo y la alegría, ", sC: "junte"},
+            { line: "que se alegren los huesos quebrantados., ", sC: "junte"},
+            { line: "Aparta de mi pecado tu vista, ", sC: "junte"},
+            { line: "borra en mí toda culpa., ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+    ], lder: [
+            { line: "Oh Dios, crea en mí un corazón puro, (Mi,m,20)(La,m,324)", sC: "junte"},
+            { line: "renuévame por dentro con espíritu firme; ", sC: "junte"},
+            { line: "no me arrojes lejos de tu rostro, ", sC: "junte"},
+            { line: "no me quites tu Santo Espíritu. ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { line: "Devuélveme la alegría de tu salvación, ", sC: "junte"},
+            { line: "afiánzame con espíritu generoso; ", sC: "junte"},
+            { line: "enseñaré a los malvados tus caminos, ", sC: "junte"},
+            { line: "los pecadores volverán a ti., ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_7", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { line: "Líbrame de la sangre, oh Dios, ", sC: "junte"},
+            { line: "Dios, Salvador mío,, ", sC: "junte"},
+            { line: "y cantará mi lengua tu justicia. ", sC: "junte"},
+            { line: "Señor, me abrirás los labios, ", sC: "junte"},
+            { line: "y mi boca proclamará tu alabanza. ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_8", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { line: "Los sacrificios no te satisfacen: ", sC: "junte"},
+            { line: "si te ofreciera un holocausto, tú no lo querrías. ", sC: "junte"},
+            { line: "Mi sacrificio es un espíritu quebrantado; ", sC: "junte"},
+            { line: "un corazón quebrantado y humillado, ", sC: "junte"},
+            { line: "tú no lo desprecias., ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_9", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { line: "Señor, por tu bondad, favorece a Sión, ", sC: "junte"},
+            { line: "reconstruye las murallas de Jerusalén: ", sC: "junte"},
+            { line: "Entonces aceptarás los sacrificios rituales, ", sC: "junte"},
+            { line: "ofrendas y holocaustos,, ", sC: "junte"},
+            { line: "sobre tu altar se inmolarán novillos. ", sC: "junte"},
+            { line: "", sC: "adb1 junte"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_10", initialState: "collapsed",
+       triggerLine: "MISERICORDIA MÍA (Mi,m,20)", sC: "ta as zindex", lines: [
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as sub"},
+            { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: MISERICORDIA MÍA, MISERICORDIA
+// SIGUIENTE CANTO DEBAJO
 
 
 
@@ -8998,7 +9224,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "132",
         notes: "",
         mant: "No",
-        audioSrc: "/audio/porelamordemisamigos.mp3",
+        audioSrc: "https://audio.resucito.do/porelamordemisamigos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular

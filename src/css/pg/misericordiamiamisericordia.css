@@ -1,0 +1,23 @@
+.container {margin-left: 2%;}
+
+@media (min-width: 992px) {
+    .r1::before {
+        font-size: 1.3rem;
+        font-weight: bold;
+        height: 30px;
+        margin-left: 421px;
+        margin-top: -7px;
+    }
+}
+
+.sub {
+        margin-top: -46px;
+}
+
+.zindex {
+    z-index: 9999;
+}
+
+.junte {
+        margin-top: -20px;
+}
