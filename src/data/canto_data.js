@@ -8793,6 +8793,192 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: ME ENSEÑARÁS EL CAMINO DE LA VIDA
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           ME HAS SEDUCIDO, SEÑOR                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "mehasseducidosenor",
+        tt: "Me Has Seducido, Señor ",
+        title: "Me Has Seducido, Señor ",
+        subtitle: "Jeremias 20,7-18",
+        category: ["Precatecumenado","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "115",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/mehasseducidosenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=meensenaraselcaminodelavida",
+        sig: "/src/index.html?canto=miradqueestupendo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ME HAS SEDUCIDO, SEÑOR,, (La,m,20)(Mi7,,242)", sC: "ta as"},
+            { line: "Y ME HE DEJADO SEDUCIR., (La,m,235)", sC: "as r1"},
+            { line: "HAS LUCHADO CONMIGO, (Mi7,,207)", sC: "as"},
+            { line: "Y ME HAS VENCIDO., (La,m,154)", sC: "as"},
+            { line: "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)", sC: "as"},
+            { line: "ME HAS PODIDO., (Mi7,,127)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cuando hablo debo gritar:, (La,m,20)(Mi,7,229)", sC: "tc"},
+            { line: "«¡Violencia!», «¡Opresión!», (La,m,202)", sC: ""},
+            { line: "Así tu palabra es para mí befa y oprobio., (Mi,7,95)(La,m,337)", sC: ""},
+            { line: "Me decía: «No pensaré más en Él,, (Mi7,,74)", sC: ""},
+            { line: "no hablaré más en su nombre•., (La,m,231)", sC: ""},
+            { line: "Mas en mi corazón, (Mi7,,16)", sC: ""},
+            { line: "había un fuego ardiente,, ", sC: ""},
+            { line: "que corría por mis huesos., (Fa,,79)(Mi,,206)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MAS EN MI CORAZÓN, (Mi7,,17)", sC: "ta as"},
+            { line: "HABÍA UN FUEGO ARDIENTE,, ", sC: "as"},
+            { line: "QUE CORRÍA POR MIS HUESOS., (Fa,,107)(Mi,,255)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ME HAS SEDUCIDO, SEÑOR, (La,m,20)(Mi7,,242)", sC: "ta as", lines: [
+            { line: "Y ME HE DEJADO SEDUCIR., (La,m,235)", sC: "as"},
+            { line: "HAS LUCHADO CONMIGO, (Mi7,,207)", sC: "as"},
+            { line: "Y ME HAS VENCIDO., (La,m,154)", sC: "as"},
+            { line: "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)", sC: "as"},
+            { line: "ME HAS PODIDO., (Mi7,,124)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Maldito el día en que nací., (Mi7,,16)", sC: "tc"},
+            { line: "Maldito el hombre, ", sC: ""},
+            { line: "que le dio la noticia a mi padre:, ", sC: ""},
+            { line: "«Te ha nacido un hijo»., ", sC: ""},
+            { line: "¿Por qué he salido del seno de mi madre,, ", sC: ""},
+            { line: "si sólo debo ver penas y aflicción?, ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MAS EL SEÑOR ESTÁ CONMIGO,, (Do,,10)(Sol,,272)", sC: "ta as"},
+            { line: "COMO UN HÉROE VALEROSO., (Do,,235)", sC: "as r2"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cantad himnos al Señor, alabad su Nombre, (La,m,20)(Mi7,,88)(La,m,360)", sC: "tc"},
+            { line: "que ha salvado la vida de este pobre., (Fa,,114)(Mi7,,311)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MAS EL SEÑOR ESTÁ CONMIGO,, (Do,,10)(Sol,,270)", sC: "ta as"},
+            { line: "COMO UN HÉROE VALEROSO., (Do,,239)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ME HAS SEDUCIDO, SEÑOR, (La,m,20)(Mi7,,242)", sC: "ta as", lines: [
+            { line: "Y ME HE DEJADO SEDUCIR., (La,m,235)", sC: "as"},
+            { line: "HAS LUCHADO CONMIGO, (Mi7,,207)", sC: "as"},
+            { line: "Y ME HAS VENCIDO., (La,m,154)", sC: "as"},
+            { line: "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)", sC: "as"},
+            { line: "ME HAS PODIDO., (Mi7,,124)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ME HAS SEDUCIDO, SEÑOR 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           MIRAD QUÉ ESTUPENDO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "miradqueestupendo",
+        tt: "Mirad Qué Estupendo",
+        title: "¡Mirad Qué Estupendo!",
+        subtitle: "Salmo 133 (132)",
+        category: ["Precatecumenado","Paz","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "116",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/miradqueestupendo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=mehasseducidosenor",
+        sig: "/src/index.html?canto=misericordiadiosmio",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,20)", sC: "ta as"},
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,66)(Si7,,275)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Es ungüento perfumado que desciende,, (La,m,80)(Si7,,335)", sC: "tc"},
+            { line: "que desciende por la barba de Aarón., (La,m,96)(Si7,,337)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ES UNGÜENTO PERFUMADO, (Do,,100)", sC: "ta as"},
+            { line: "QUE DESCIENDE, (Si7,,110)", sC: "as"},
+            { line: "HASTA EL BORDE DEL MANTO., (Do,,61)(Si7,,242)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,275)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Es como rocío del Hermón, (La,m,44)(Si7,,193)", sC: "tc"},
+            { line: "que desciende sobre el monte Sión;, (La,m,97)(Si7,,306)", sC: ""},
+            { line: "ES ROCÍO DEL HERMÓN QUE DESCIENDE, (Do,,70)(Si7,,344)", sC: "as"},
+            { line: "SOBRE EL MONTE SIÓN., (Do,,62)(Si7,,187)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,275)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Porque allí el Señor nos ha dado,, (La,m,101)(Si7,,277)", sC: "tc"},
+            { line: "nos ha dado su bendición., (La,m,88)(Si7,,225)", sC: ""},
+            { line: "PORQUE ALLÍ EL SEÑOR NOS HA DADO,, (Do,,126)(Si7,,339)", sC: "ta as"},
+            { line: "NOS HA DADO SU AMOR., (Do,,65)(Si7,,211)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,275)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque allí el Señor nos ha dado, (La,m,97)(Si7,,277)", sC: "tc"},
+            { line: "la vida eternamente., (La,m,39)(Si7,,151)", sC: ""},
+            { line: "PORQUE ALLÍ EL SEÑOR NOS HA DADO, (Do,,129)(Si7,,336)", sC: "ta as"},
+            { line: "LA VIDA PARA SIEMPRE., (Do,,45)(Si7,,166)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,275)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
+            { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: MIRAD QUÉ ESTUPENDO
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
 
 // LETRA P
 /*
