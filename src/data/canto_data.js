@@ -8849,11 +8849,11 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)", sC: "as"},
             { line: "ME HAS PODIDO., (Mi7,,124)", sC: "as"},  ]},
     ], lder: [
-            { line: "Maldito el día en que nací., (Mi7,,16)", sC: "tc"},
-            { line: "Maldito el hombre, ", sC: ""},
-            { line: "que le dio la noticia a mi padre:, ", sC: ""},
-            { line: "«Te ha nacido un hijo»., ", sC: ""},
-            { line: "¿Por qué he salido del seno de mi madre,, ", sC: ""},
+            { line: "Maldito el día en que nací. (Mi7,,16)", sC: "tc"},
+            { line: "Maldito el hombre ", sC: ""},
+            { line: "que le dio la noticia a mi padre: ", sC: ""},
+            { line: "«Te ha nacido un hijo». ", sC: ""},
+            { line: "¿Por qué he salido del seno de mi madre, ", sC: ""},
             { line: "si sólo debo ver penas y aflicción?, ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MAS EL SEÑOR ESTÁ CONMIGO,, (Do,,10)(Sol,,272)", sC: "ta as"},
