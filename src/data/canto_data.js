@@ -9195,6 +9195,240 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "MISERICORDIA MÍA, MISERICORDIA (Mi,m,20)(Re,,248)(Mi,m,291)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: MISERICORDIA MÍA, MISERICORDIA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════════════╗
+║           MUCHO ME HAN PERSEGUIDO                ║
+╚══════════════════════════════════════════════════╝  */
+   {
+        id: "muchomehanperseguido",
+        tt: "Mucho Me Han Perseguido ",
+        title: "Mucho Me Han Perseguido ",
+        subtitle: "Salmo 129 (128)",
+        category: ["Precatecumenado","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "119",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/muchomehanperseguido.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=misericordiamiamisericordia",
+        sig: "/src/index.html?canto=noestaaquiresucito",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Mucho me han perseguido desde mi juventud,, (La,m,20)(Mi,,422)", sC: "tc"},
+            { line: "mucho me han perseguido, que lo diga Israel., (La,m,418)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MUCHO ME HAN PERSEGUIDO, (La,m,20)", sC: "ta as"},
+            { line: "DESDE MI JUVENTUD,, (Mi,,178)", sC: "as"},
+            { line: "MUCHO ME HAN PERSEGUIDO, ", sC: "as"},
+            { line: "PERO NO HAN PODIDO CONMIGO., (La,m,286)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sobre mi espalda araron aradores,, (La,m,20)(Mi,,291)", sC: "tc"},
+            { line: "sobre mi espalda alargaron sus surcos., (La,m,324)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SOBRE MI ESPALDA ARARON, (La,m,20)", sC: "ta as"},
+            { line: "LOS ARADORES,, (Mi,,107)", sC: "as"},
+            { line: "SOBRE MI ESPALDA ALARGARON, ", sC: "as"},
+            { line: "SUS SURCOS., (La,m,63)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Mas el Señor, que es justo,, (La,m,20)(Mi,,214)", sC: "tc"},
+            { line: "rompió las coyundas de los malvados., (La,m,315)", sC: ""},
+            { line: "Mas el Señor, que es justo,, (Mi,,214)", sC: ""},
+            { line: "rompió las coyundas de los malvados., (La,m,314)", sC: ""},
+    ], lder: [
+            { line: "Retrocedan los que odian a Sión,, (La,m,20)(Mi,,294)", sC: "tc"},
+            { line: "retrocedan los que odian a Sión., (La,m,285)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN,, (La,m,20)(Mi,,185)", sC: "ta as"},
+            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN., (La,m,150)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que sean como la hierba, (La,m,306)", sC: "tc"},
+            { line: "que crece en el tejado,, (Mi,,354)", sC: ""},
+            { line: "como la hierba que se seca, ", sC: ""},
+            { line: "antes de arrancarla., (La,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "De ella no llena el segador su mano,, (Mi,,306)", sC: ""},
+            { line: "de ella no llena su regazo el gavillador., (La,m,354)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "RETROCEDAN LOS QUE ODIAN A SIÓN, (La,m,20)(Mi,,185)", sC: "ta as", lines: [
+            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN., (La,m,150)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "MUCHO ME HAN PERSEGUIDO, (La,m,20)", sC: "ta as", lines: [
+            { line: "DESDE MI JUVENTUD,, (Mi,,178)", sC: "as"},
+            { line: "MUCHO ME HAN PERSEGUIDO, ", sC: "as"},
+            { line: "PERO NO HAN PODIDO CONMIGO., (La,m,286)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: MUCHO ME HAN PERSEGUIDO 
+// SIGUIENTE CANTO DEBAJO
+
+// LETRA N
+/*
+╔════════════════════════════════════════════════╗
+║           NO ESTÁ AQUÍ, RESUCITÓ               ║
+╚════════════════════════════════════════════════╝  */
+   {
+        id: "noestaaquiresucito",
+        tt: "No Está Aquí, Resucitó",
+        title: "No Está Aquí, Resucitó",
+        subtitle: "Mateo 28,1-8",
+        category: ["Precatecumenado","Pascua","Pentecostés","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "2",
+        nCan: "",
+        nCanURL: "",
+        dbno: "120",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/noestaaquiresucito.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=muchomehanperseguido",
+        sig: "/src/index.html?canto=nohayenelparecer",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Pasado el sábado,, (Do,,10)(Mi,,180)", sC: "tc"},
+            { line: "al alba del primer día de la semana,, (Fa,,305)", sC: ""},
+            { line: "María Magdalena y la otra María, (Re,m,297)", sC: ""},
+            { line: "fueron al sepulcro., (Mi,,132)", sC: ""},
+            { line: "Cuando de pronto se produjo un terremoto,, (Re,m,132)(Mi,,381)", sC: ""},
+            { line: "el Ángel del Señor bajó del cielo,, (Fa,,11)(Sol,,199)(Sol,,321)(Mi,,353)", sC: ""},
+            { line: "e hizo rodar la piedra., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y el Ángel dijo a las mujeres:, (Re,m,20)(Mi,,236)", sC: ""},
+            { line: "«No temáis, sé que buscáis a Jesús,, (Re,7,22)(Do,7,132)", sC: ""},
+            { line: "el Crucificado., (Re,7,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "No está aquí, ha resucitado., (Sol,m,24)(Re,7,115)(Sol,m,234)", sC: "tc"},
+            { line: "NO ESTÁ AQUÍ, HA RESUCITADO., (Re,7,130)(Sol,m,267)", sC: "ta as"},
+            { line: "No está aquí, resucitó,, (Do,m,112)(Re,7,202)", sC: "tc"},
+            { line: "NO ESTÁ AQUÍ, RESUCITÓ., (Do,m,128)(Re,7,241)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Id de prisa a decir a sus discípulos:, (Sol,m,24)(Re,7,274)", sC: "tc"},
+            { line: "ha resucitado de entre los muertos., (Sol,m,286)", sC: ""},
+            { line: "Id de prisa a decir a sus discípulos:, (Re,7,272)", sC: ""},
+            { line: "ha resucitado de entre los muertos, (Sol,m,289)", sC: ""},
+            { line: "y os precede en Galilea., (Do,m,21)(Re,7,207)", sC: ""},
+    ], lder: [
+            { line: "NO ESTÁ AQUÍ, RESUCITÓ., (Sol,m,24)(Re,7,133)(Sol,m,233)", sC: "ta as"},
+            { line: "NO ESTÁ AQUÍ, RESUCITÓ., (Re,7,133)(Sol,m,233)", sC: "as"},
+            { line: "NO ESTÁ AQUÍ, RESUCITÓ., (Do,m,139)(Re,7,230)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y os precede en Galilea,, (Do,m,18)(Re,7,209)", sC: "tc"},
+            { line: "Y OS PRECEDE EN GALILEA;, (Do,m,18)(Re,7,241)", sC: "ta as"},
+            { line: "allí le veréis,, (Do,m,21)(Re,7,92)", sC: "tc "},
+            { line: "ALLÍ LE VERÉIS., (Do,m,21)(Re,7,124)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "NO ESTÁ AQUÍ, RESUCITÓ..., (Sol,m,24)(Re,7,133)(Sol,m,233)", sC: "ta as", lines: [
+            { line: "NO ESTÁ AQUÍ, RESUCITÓ., (Re,7,133)(Sol,m,233)", sC: "as"},
+            { line: "NO ESTÁ AQUÍ, RESUCITÓ., (Do,m,139)(Re,7,230)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y os precede en Galilea,, (Do,m,20)(Re,7,208)", sC: "tc"},
+            { line: "Y OS PRECEDE EN GALILEA;, (Do,m,20)(Re,7,243)", sC: "ta as"},
+            { line: "allí le veréis,, (Do,m,20)(Re,7,90)", sC: "tc"},
+            { line: "ALLÍ LE VERÉIS»., (Do,m,20)(Re,7,120)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: NO ESTÁ AQUÍ, RESUCITÓ
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           NO HAY EN ÉL PARECER               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "nohayenelparecer",
+        tt: "No Hay En Él Parecer",
+        title: "No Hay En Él Parecer",
+        subtitle: "Isaías 53,2ss - Cuarto canto del Siervo de Yahveh",
+        category: ["Precatecumenado","Fracción Del Pan","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "121",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/nohayenelparecer.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=noestaaquiresucito",
+        sig: "/src/index.html?canto=nolimetangere",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "No hay en Él parecer,, (Do,,10)", sC: "tc"},
+            { line: "no hay hermosura, (La,m,147)", sC: ""},
+            { line: "que atraiga las miradas,, (Sol7,,187)", sC: ""},
+            { line: "no hay en él belleza que agrade., (Do,,271)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Despreciado,, (Do,,10)", sC: ""},
+            { line: "desecho de los hombres,, (La,m,169)", sC: ""},
+            { line: "varón de dolores,, (Do,,121)", sC: ""},
+            { line: "conocedor de todos los quebrantos., (La,m,283)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Do,,10)", sC: "ta as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol7,,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Menospreciado,, (Do,,10)", sC: "tc"},
+            { line: "estimado en nada., (La,m,144)", sC: ""},
+            { line: "Despreciado,, (Do,,90)", sC: ""},
+            { line: "desecho de los hombres,, (La,m,163)", sC: ""},
+            { line: "varón de dolores,, (Do,,123)", sC: ""},
+            { line: "conocedor de todos los quebrantos., (La,m,286)", sC: ""},
+    ], lder: [
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ANTE QUIEN SE VUELVE EL ROSTRO, (Do,,10)", sC: "ta as", lines: [
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol7,,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Pero fue Él, el que cargó con los pecados., (Do,,10)(La,m,355)", sC: "tc"},
+            { line: "Pero fue Él, el que cargó con los dolores., (Do,,97)(La,m,347)", sC: ""},
+            { line: "TODOS NOSOTROS, (Fa,,123)", sC: "ta as"},
+            { line: "ANDÁBAMOS ERRANTES., (Sol,,180)", sC: "as"},
+            { line: "MALTRATADO,, (Do,,96)", sC: "as"},
+            { line: "MAS ÉL SE SOMETIÓ,, (La,m,190)", sC: "as"},
+            { line: "NO ABRIÓ LA BOCA,, (Do,,151)", sC: "as"},
+            { line: "COMO CORDERO LLEVADO AL MATADERO., (La,m,367)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "ANTE QUIEN SE VUELVE EL ROSTRO, (Do,,10)", sC: "ta as", lines: [
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol7,,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡MALTRATADO!, (Do,,10)", sC: "ta as"},
+            { line: "¡MALTRATADO!, ", sC: "as"},
+            { line: "¡MALTRATADO!, ", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: NO HAY EN ÉL PARECER
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
 
 
 
