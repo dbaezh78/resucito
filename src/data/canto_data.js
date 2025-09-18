@@ -9419,6 +9419,156 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "¡MALTRATADO!, ", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: NO HAY EN ÉL PARECER
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           NOLI ME TANGERE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "nolimetangere",
+        tt: "Noli Me Tangere",
+        title: "Noli Me Tangere",
+        subtitle: "Juan 20,15-17",
+        category: ["Precatecumenado","Pascua","Pentecostés","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "122",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/nolimetangere.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=nohayenelparecer",
+        sig: "/src/index.html?canto=ohcieloslloveddeloalto",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "«Mujer, dime, ¿por qué lloras?, (Do,,12)", sC: "tc"},
+            { line: "Mujer, dime, ¿por qué lloras?, (Fa,,231)", sC: ""},
+            { line: "¿A quién buscas?, (Do,,104)", sC: ""},
+            { line: "¿A quién buscas?, (Sol,,104)", sC: ""},
+            { line: "¿A quién buscas?», (Do,,104)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«SEÑOR, SI TE LO HAS LLEVADO TÚ,, (Do,,10)", sC: "ta as"},
+            { line: "SEÑOR, SI TE LO HAS LLEVADO TÚ,, (Fa,,318)", sC: "as"},
+            { line: "DIME DÓNDE LO HAS PUESTO,, (Do,,239)", sC: "as"},
+            { line: "Y YO ME LO LLEVARÉ,, (Sol,,37)(Do,,200)", sC: "as"},
+            { line: "Y YO ME LO LLEVARÉ»., (Sol,,36)(Do,,194)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«¡María!», (Fa,m,20)", sC: "tc"},
+            { line: "«¡RABBUNÍ!», (Do,m,76)", sC: "ta as"},
+            { line: "«¡María!», (Fa,m,20)", sC: "tc"},
+            { line: "«¡RABBUNÍ!», (Do,m,69)(Do,,106)", sC: "ta as"},
+    ], lder: [
+            { line: "«¡Noli me tangere! No me toques,, (Si♭,,21)(Do,,103)(Si♭,,198)(Do,,260)", sC: "tc"},
+            { line: "que todavía no he subido al Padre., (Si♭,,14)(Do,,285)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ve y anuncia a mis hermanos,, (Fa,m,20)(Do,m,245)", sC: "tc"},
+            { line: "Y ANUNCIA A MIS HERMANOS,, (Fa,m,20)(Do,m,238)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que subo al Padre mío, (La♭,,60)", sC: "tc"},
+            { line: "y padre vuestro,, (Sol,,104)", sC: ""},
+            { line: "Dios mío y Dios vuestro., (La♭,,70)(Sol,,182)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "QUE SUBO AL PADRE MÍO, (Fa,m,65)", sC: "ta as"},
+            { line: "Y PADRE VUESTRO,, (Do,m,124)", sC: "as"},
+            { line: "DIOS MÍO Y DIOS VUESTRO., (Fa,m,72)(Do,m,202)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que subo al Padre mío, (La♭,,58)", sC: "tc"},
+            { line: "y padre vuestro,, (Sol,,106)", sC: ""},
+            { line: "Dios mío y Dios vuestro»., (La♭,,71)(Sol,,181)", sC: "melisma"},
+]}, // ULTIMA LINEA DEL CANTO: NOLI ME TANGERE
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           OH CIELOS, LLOVED DE LO ALTO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ohcieloslloveddeloalto",
+        tt: "Oh Cielos, Lloved De Lo Alto",
+        title: "Oh Cielos, Lloved De Lo Alto",
+        subtitle: "Isaías 45,8",
+        category: ["Precatecumenado","Adviento","Navidad","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "123",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/ohcieloslloveddeloalto.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=nolimetangere",
+        sig: "/src/index.html?canto=ohdiosportunombre",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "OH CIELOS, LLOVED DE LO ALTO,, (La,m,20)(Fa,,264)", sC: "ta as"},
+            { line: "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)", sC: "as"},
+            { line: "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)", sC: "as"},
+            { line: "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Somos desierto, somos arena., (La,m,20)(Sol,,254)", sC: "tc"},
+            { line: "Marana thá,, (Mi,,104)", sC: "tc"},
+            { line: "MARANA THÁ., (Sol,,14)(Mi,,124)", sC: "ta as jte"},
+            { line: "Somos el viento, nadie nos oye., (La,m,20)(Sol,,250)", sC: "tc"},
+            { line: "Marana thá,, (Mi,,104)", sC: "tc"},
+            { line: "MARANA THÁ., (Sol,,14)(Mi,,124)", sC: "ta as jte"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)", sC: "ta as", lines: [
+            { line: "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)", sC: "as"},
+            { line: "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)", sC: "as"},
+            { line: "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Somos tinieblas, nadie nos guía., (La,m,20)(Sol,,250)", sC: "tc"},
+            { line: "Marana thá,, (Mi,,104)", sC: "tc"},
+            { line: "MARANA THÁ., (Sol,,14)(Mi,,124)", sC: "ta as jte"},
+            { line: "Somos cadenas, nadie nos libra., (La,m,20)(Sol,,250)", sC: "tc"},
+            { line: "Marana thá,, (Mi,,104)", sC: "tc"},
+            { line: "MARANA THÁ., (Sol,,14)(Mi,,124)", sC: "ta as jte"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)", sC: "ta as", lines: [
+            { line: "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)", sC: "as"},
+            { line: "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)", sC: "as"},
+            { line: "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Tenemos frío, nadie nos cubre., (La,m,20)(Sol,,250)", sC: "tc"},
+            { line: "Marana thá,, (Mi,,104)", sC: "tc"},
+            { line: "MARANA THÁ., (Sol,,14)(Mi,,124)", sC: "ta as jte"},
+            { line: "Tenemos hambre, nadie nos sacia., (La,m,20)(Sol,,250)", sC: "ta as"},
+            { line: "Marana thá,, (Mi,,104)", sC: "tc"},
+            { line: "MARANA THÁ., (Sol,,14)(Mi,,124)", sC: "ta as jte"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)", sC: "ta as", lines: [
+            { line: "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)", sC: "as"},
+            { line: "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)", sC: "as"},
+            { line: "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Somos las lágrimas, que nadie enjuga., (La,m,20)(Sol,,250)", sC: "tc"},
+            { line: "Marana thá,, (Mi,,104)", sC: "tc"},
+            { line: "MARANA THÁ., (Sol,,14)(Mi,,124)", sC: "ta as jte"},
+            { line: "Somos dolor, nadie nos mira., (La,m,20)(Sol,,250)", sC: "tc"},
+            { line: "Marana thá,, (Mi,,104)", sC: "tc"},
+            { line: "MARANA THÁ., (Sol,,14)(Mi,,124)", sC: "ta as jte"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)", sC: "ta as", lines: [
+            { line: "OH NUBES, MANDADNOS AL SANTO., (Sol,,53)(La,m,298)", sC: "as"},
+            { line: "OH TIERRA, ÁBRETE, OH TIERRA,, (Mi,,100)(La,m,263)", sC: "as"},
+            { line: "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: OH CIELOS, LLOVED DE LO ALTO
+// SIGUIENTE CANTO DEBAJO
 
 
 
