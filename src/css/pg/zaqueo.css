@@ -1,0 +1,31 @@
+.container {margin-left: 0%;}
+
+
+
+.sub {
+    margin-top: -45px;
+    background-color: white;
+    width: 84%;
+}
+
+.r1::before {
+    @media (min-width: 992px) {
+        font-size: 1.3rem;
+        font-weight: bold;
+        height: 26px;
+        margin-left: 163px;
+        margin-top: 6px;
+    }
+}
+
+.r2::before {
+    @media (min-width: 992px) {
+        font-size: 1.3rem;
+        font-weight: bold;
+        height: 34px;
+        margin-left: 352px;
+        margin-top: 0%;
+    }
+}
+
+.ajustar { width: max-content;}

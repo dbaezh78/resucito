@@ -70,6 +70,9 @@ const aitos34 = "Domingo XXXIV, Tiempo Ordinario";
 const aitosscsc = "Santísimo Cuerpo y Sangre de Cristo";
 const aitosvs = "El Sagrado Corazón de Jesús, Viernes posterior al segundo domingo después de Pentecostés";
 const aitfs14 = "La Exaltación de la Cruz";
+const aitpsas = "La Ascensión del Señor";
+const aitps9 = "La Santísima Trinidad";
+
 
 // Tiempo de Cuaresma
 const aitcs1 = "Domingo I, Tiempo Cuaresma";
