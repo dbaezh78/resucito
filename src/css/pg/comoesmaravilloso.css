@@ -1,4 +1,8 @@
-.container {margin-left: 8%;}
+.container {
+        @media (min-width: 384px) {margin-left: 4%;}
+        @media (min-width: 768px) {margin-left: 0%;}
+        @media (min-width: 992px) {margin-left: 15%;}
+    }
 
     .a321::before {
         @media (min-width: 384px) {margin-left: 205px;margin-top: 5px;}
@@ -6,8 +10,14 @@
         @media (min-width: 992px) {margin-left: 285px;margin-top: 0px;}
                 }
 
-                @media (min-width: 992px) {
-    .top-row-controls {
-        width: 1036px;
+    .dbsize {
+        @media (min-width: 384px) {
+            max-width: 44%;
+        }
+        @media (min-width: 768px) {
+            max-width: 50%;
+        }
+        @media (min-width: 992px) {
+            max-width: 44%;
+        }
     }
-}

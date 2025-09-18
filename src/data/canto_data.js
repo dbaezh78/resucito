@@ -3113,13 +3113,13 @@ const allCantosData = [
             { line: "para los hombres., (Mi,,98)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "COMO CONDENADOS A MUERTE,, (Sol,,11)", sC: "ta as", lines: [
+       triggerLine: "COMO CONDENADOS A MUERTE, (Sol,,11)", sC: "ta as", lines: [
             { line: "COMO CONDENADOS A MUERTE., (La,m,19)", sC: "as"},
             { line: "COMO CONDENADOS A MUERTE,, (Sol,,11)", sC: "as"},
             { line: "COMO CONDENADOS A MUERTE., (La,m,19)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "HEMOS VENIDO A SER,, (La,m,13)(Sol,,196)", sC: "ta as", lines: [
+       triggerLine: "HEMOS VENIDO A SER, (La,m,13)(Sol,,196)", sC: "ta as", lines: [
             { line: "HEMOS VENIDO A SER,, (La,m,198)", sC: "as"},
             { line: "HEMOS VENIDO A SER,, (Sol,,195)", sC: "as"},
             { line: "LA BASURA DEL MUNDO,, (La,m,187)", sC: "as"},
