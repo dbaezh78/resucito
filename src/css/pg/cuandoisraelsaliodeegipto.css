@@ -1,3 +1,9 @@
+.container {
+        @media (min-width: 384px) {margin-left: 0%;}
+        @media (min-width: 768px) {margin-left: 0%;}
+        @media (min-width: 992px) {margin-left: 0%;}
+    }
+    
 .a321::before {
     @media (min-width: 384px){
         margin-left: 295px;
@@ -18,19 +24,3 @@
         padding-right: 0%;
     }
 
-    /*.container {
-}
-
-/*
-.container {
-    @media (min-width: 384px){
-        margin-left: 22px;
-    }
-    @media (min-width: 768px){
-        margin-left: 0px;
-    }
-    @media (min-width: 992px){
-        margin-left: 0px;
-    }
-}
-*/

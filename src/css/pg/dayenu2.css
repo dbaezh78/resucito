@@ -43,13 +43,14 @@
     }
 }
 
+/*
 @media (min-width: 992px) {
     .top-row-controls {
         position: fixed;
         padding: 0px 121px 0px 0px;
     }
 }
-
+*/
 
 .tc1::before {
     @media (min-width:384px){

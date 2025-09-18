@@ -3517,7 +3517,7 @@ const allCantosData = [
             { line: "estamos alegres., (Re,,110)(Re,7,185)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
 
-       triggerLine: "PORQUE AL IR,, (Sol,,127)", sC: "ta as", lines: [
+       triggerLine: "PORQUE AL IR, (Sol,,127)", sC: "ta as", lines: [
             { line: "SE VA LLORANDO,, (La,,21)(Re,,164)", sC: "as"},
             { line: "LLEVANDO LA SEMILLA;, (Mi,m,58)(Re,,184)(Re,7,239)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -3624,70 +3624,70 @@ const allCantosData = [
             { line: "Si hubiera hecho justicia del Faraón, (Re,,122)(Do,,324)", sC: "tc"},
             { line: "y no nos hubiera librado de todos los ídolos:, (Si,7,202)(Mi,m,372)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si nos hubiera librado de todos los ídolos, (Mi,m,15)(La,m,175)(Si,7,350)", sC: ""},
             { line: "y no nos hubiera dado todas sus riquezas:, (Mi,m,358)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si nos hubiera dado todas sus riquezas, (Re,,161)(Do,,303)", sC: ""},
             { line: "y no hubiera abierto el mar para nosotros:, (Si,7,158)(Mi,m,357)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
     ], lder: [
             { line: "Si hubiera abierto el mar para nosotros, (Mi,m,15)(La,m,136)(Si,7,333)", sC: "tc"},
             { line: "y no hubiera hundido a nuestros opresores:, (Mi,m,376)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si hubiera hundido a nuestros opresores, (Re,,150)(Do,,353)", sC: "tc"},
             { line: "y no nos hubiera abierto un camino en el desierto:, (Si,7,199)(Mi,m,440)", sC: "full"},
             { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si nos hubiera abierto un camino en el desierto, (Mi,m,11)(La,m,175)(Si,7,423)", sC: "tc"},
             { line: "y no nos hubiera nutrido con el pan de la vida:, (Mi,m,411)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si nos hubiera nutrido con el pan de la vida, (Re,,10)(Do,,184)", sC: "tc"},
             { line: "y no nos hubiera dado el día del Señor:, (Si,7,183)(Mi,m,351)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_7", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si nos hubiera dado el día del Señor, (Mi,m,20)(La,m,162)(Si,7,331)", sC: "tc"},
             { line: "y no nos hubiera sellado una nueva Alianza:, (Mi,m,376)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_8", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si hubiera hecho con nosotros una nueva Alianza, (Re,,245)(Do,,428)", sC: "tc"},
             { line: "y no nos hubiera hecho entrar en su Iglesia:, (Si,7,182)(Mi,m,376)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_9", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si nos hubiera hecho entrar en su Iglesia, (Mi,m,20)(La,m,163)(Si,7,358)", sC: "tc"},
             { line: "y no hubiera construido en nosotros su templo:, (Mi,m,393)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_10", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: DAYENÚ
@@ -3723,7 +3723,7 @@ const allCantosData = [
             { line: "Si hubiera construido en nosotros su templo, (Re,,178)(Do,,366)", sC: "tc"},
             { line: "y no lo hubiera llenado de su Santo Espíritu:, (Si,7,186)(Mi,m,375)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
             { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
             { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido

@@ -1,4 +1,8 @@
-.container {margin-left: 0px;}
+.container {
+        @media (min-width: 384px) {margin-left: 0%;}
+        @media (min-width: 768px) {margin-left: 0%;}
+        @media (min-width: 992px) {margin-left: 0%;}
+    }
 
 .full {
     width: max-content;
@@ -11,6 +15,7 @@
     }
 }
 
+/*
 @media (min-width: 992px) {
     .top-row-controls {
         position: fixed;
@@ -18,4 +23,4 @@
     }
 }
 
-
+*/
