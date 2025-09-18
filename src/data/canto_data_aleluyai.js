@@ -3478,8 +3478,8 @@ sig: "/src/ainterleccional.html?canto=aitps9a",
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "expanded",    //collapsed / expanded
        triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
             { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
-            { line: `${aitos25c1} (Mi,m,20)(La,,178)(Mi,m,342)`, sC: "tc"},
-            { line: `${aitos25c2} (La,,151)(Mi,m,252)`, sC: "bg"},
+            { line: `${aitos25c1} (Mi,m,20)(La,,115)(Mi,m,326)`, sC: "tc"},
+            { line: `${aitos25c2} (La,,151)(Mi,m,292)`, sC: "bg"},
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
     ], lder: []}, // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXV
 
