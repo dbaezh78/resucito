@@ -1,4 +1,9 @@
-.container {margin-left: 4%;}
+.container {
+        @media (min-width: 384px) {margin-left: 2%;}
+        @media (min-width: 768px) {margin-left: 0%;}
+        @media (min-width: 992px) {margin-left: 8%;}
+    }
+    
 
 .linea-canto {
     @media (min-width: 384px) {min-height: 5px;padding-top: 8px;}

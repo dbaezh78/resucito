@@ -43,12 +43,10 @@ body {
     @media (min-width: 768px) {
         width: max-content;
         margin-left: 0%;
-
     }
 
     @media (min-width: 992px) {
         margin-left: -10%;
-
     }
 
 }
@@ -123,9 +121,17 @@ body {
         }
 }
 
+
 @media (min-width: 992px) {
     .top-row-controls {
         padding: 0px 0px 0px 0px;
-        width: 942px;
+        width: 950px;
+    }
+}
+
+@media (min-width: 992px) {
+    .top-row-controls {
+        padding: 0px 0px 0px 0px;
+        width: 990px;
     }
 }

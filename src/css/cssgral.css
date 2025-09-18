@@ -175,7 +175,8 @@ display: none;}
     .main-wrapper {
         /* background-color: var(--precat); REMOVIDO: Ahora se controla por las clases cat- */
         /*width: auto;*/        /* ESTE ES EL QUE CONTROLA EL TAMAÑO DE LA PANTALLA DEL CANTO*/
-        width: 992px;
+        /*width: 992px;*/
+        width: 1080px;
         padding: 0px 20px 0px 20px;
     }
 }
@@ -210,7 +211,8 @@ display: none;}
         justify-content: space-between;
         padding: 0px 40px 0px 0px;
         left: 0px;
-        width: 998px;
+        /*width: 998px;*/
+        width: 1080px;
         justify-self: anchor-center;
     }
 /*

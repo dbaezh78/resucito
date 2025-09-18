@@ -2531,8 +2531,8 @@ const allCantosData = [
 ╚══════════════════════════════════════════════╝  */
    {
         id: "cantodemoises",
-        tt: "Canto De Moisés",
-        title: "Canto De Moisés",
+        tt: "Canto de Moisés",
+        title: "Canto de Moisés",
         subtitle: "Éxodo 15,1-18",
         category: ["PreCatecumenado","Pascua","Pentecostés","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
@@ -2723,8 +2723,8 @@ const allCantosData = [
 ╚══════════════════════════════════════════════╝  */
    {
         id: "cantodemoises1",
-        tt: "Canto De Moisés",
-        title: "Canto De Moisés",
+        tt: "Canto de Moisés",
+        title: "Canto de Moisés",
         subtitle: "Éxodo 15,1-18",
         category: ["PreCatecumenado","Pascua","Pentecostés","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
@@ -2995,7 +2995,7 @@ const allCantosData = [
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "* La Cosecha, poema 74, Antes: Están rotas mis ataduras",
-        nCanURL: "/docs/Tagore La Cosecha.pdf",
+        nCanURL: "//docs.resucito.do/Tagore La Cosecha.pdf",
         dbno: "36",
         notes: "",
         mant: "No",
