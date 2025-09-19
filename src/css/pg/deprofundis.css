@@ -1,4 +1,9 @@
-.container {margin-left: 4%;}
+.container {
+        @media (min-width: 384px) {margin-left: 4%;}
+        @media (min-width: 768px) {margin-left: 0%;}
+        @media (min-width: 992px) {margin-left: 10%;}
+    }
+
 
 .melisma::before{
     color: red;

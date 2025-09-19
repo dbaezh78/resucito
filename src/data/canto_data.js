@@ -4368,7 +4368,7 @@ const allCantosData = [
             { line: "hasta el jacal de los pastores., (Re,m,15)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "LLÉVAME EN POS DE TI, SALGAMOS., (Re,m,21)", sC: "ta as", lines: [
+       triggerLine: "LLÉVAME EN POS DE TI, SALGAMOS (Re,m,21)", sC: "ta as", lines: [
             { line: "LLÉVAME TRAS DE TI, CORRAMOS., (Si♭,,89)(La,,278)", sC: "as"},
             { line: "CELEBRAREMOS TUS AMORES MÁS QUE EL VINO, ", sC: "as"},
             { line: "CON CUÁNTA RAZÓN ERES AMADO., (Re,m,300)", sC: "as"},
@@ -4483,7 +4483,7 @@ const allCantosData = [
             { line: "dote para su esposa virgen., (Fa,,15)(Mi,,213)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL MESÍAS, LEÓN PARA VENCER,, (La,m,22)(Mi,,250)", sC: "ta as", lines: [
+       triggerLine: "EL MESÍAS, LEÓN PARA VENCER, (La,m,22)(Mi,,250)", sC: "ta as", lines: [
             { line: "SE HIZO CORDERO PARA SUFRIR., (La,m,301)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Y descendió a los infiernos, (Do,,11)(Mi,,208)", sC: "tc"},
@@ -4492,7 +4492,7 @@ const allCantosData = [
             { line: "y la hizo entrar en la casa del Padre., (Fa,,50)(Mi,,303)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL MESÍAS, LEÓN PARA VENCER,, (La,m,22)(Mi,,250)", sC: "ta as", lines: [
+       triggerLine: "EL MESÍAS, LEÓN PARA VENCER, (La,m,22)(Mi,,250)", sC: "ta as", lines: [
             { line: "SE HIZO CORDERO PARA SUFRIR., (La,m,301)", sC: "as"},  ]},
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: EL MESÍAS LEÓN
