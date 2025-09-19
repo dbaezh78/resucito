@@ -74,6 +74,10 @@ const aitpsas = "La Ascensión del Señor";
 const aitps9 = "La Santísima Trinidad";
 
 
+
+
+
+
 // Tiempo de Cuaresma
 const aitcs1 = "Domingo I, Tiempo Cuaresma";
 const aitcs2 = "Domingo II, Tiempo Cuaresma";
