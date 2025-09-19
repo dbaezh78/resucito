@@ -3450,7 +3450,7 @@ sig: "/src/ainterleccional.html?canto=aitps9a",
      title: aitos25,
   subtitle: añoc+", "+aitos25c,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
-      mant: "Si",
+      mant: "No",
   audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
