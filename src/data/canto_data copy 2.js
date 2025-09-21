@@ -9569,61 +9569,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Y BROTE EL SALVADOR., (Mi,,52)(La,m,197)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: OH CIELOS, LLOVED DE LO ALTO
 // SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════════════╗
-║           OH DIOS, POR TU NOMBRE                ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "ohdiosportunombre",
-        tt: "Oh Dios, Por Tu Nombre ",
-        title: "Oh Dios, Por Tu Nombre ",
-        subtitle: "Salmo 54 (53)",
-        category: ["Precatecumenado","Antiguo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        nCanURL: "",
-        dbno: "124",
-        notes: "",
-        mant: "Si",
-        audioSrc: "https://audio.resucito.do/ohdiosportunombre.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=ohcieloslloveddeloalto",
-        sig: "/src/index.html?canto=ohdiostueresmidios",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "OH DIOS, POR TU NOMBRE SÁLVAME,, (La,m,20)(Fa,7,250)", sC: "ta as"},
-            { line: "POR TU PODER HAZME JUSTICIA., (Re,m,22)(Mi,,250)", sC: "as"},
-            { line: "OH DIOS, ESCUCHA MI ORACIÓN,, (La,m,20)(Fa,7,250)", sC: "as"},
-            { line: "ATIENDE A LAS PALABRAS DE MI BOCA., (Re,m,22)(Mi,,250)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Porque los arrogantes se han aliado contra mí,, (La,7,20)(Re,m,250)", sC: "tc"},
-            { line: "los prepotentes andan buscando mi vida,, (Si♭,7,)(La,7,250)", sC: ""},
-            { line: "no tienen nunca a Dios presente,, (Sol,m,14)(La,7,250)", sC: ""},
-            { line: "no tienen nunca a Dios presente., (Si♭,7,)(La,7,250)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "MAS VED, QUE DIOS VIENE EN MI AYUDA,, (Re,m,22)(La,7,250)", sC: "ta as"},
-            { line: "EL SEÑOR, EL SEÑOR ME SOSTIENE., (Re,m,22)(La,7,250)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "De todo corazón le ofreceré un sacrificio,, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "celebraré su nombre, porque es bueno,, (Sol,m,14)(La,7,250)", sC: ""},
-            { line: "de toda angustia Él me ha liberado,, (Si♭,7,)(La,7,250)", sC: ""},
-            { line: "de toda angustia me ha liberado,, (Si♭,,)(La,7,250)", sC: ""},
-            { line: "de toda angustia me ha liberado., (Do,,10)(Mi,,250)", sC: "melisma"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "OH DIOS, POR TU NOMBRE SÁLVAME, (La,m,20)(Fa,7,250)", sC: "ta as", lines: [
-            { line: "POR TU PODER HAZME JUSTICIA., (Re,m,22)(Mi,,250)", sC: "as"},
-            { line: "OH DIOS, ESCUCHA MI ORACIÓN,, (La,m,20)(Fa,7,250)", sC: "as"},
-            { line: "ATIENDE A LAS PALABRAS DE MI BOCA., (Re,m,22)(Mi,,250)", sC: "as"},  ]},
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: OH DIOS, POR TU NOMBRE 
-// SIGUIENTE CANTO DEBAJO
 
 
 
@@ -9973,9 +9918,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // LETRA T
 
 /*
-╔══════════════════════════════════════════╗
+╔════════════════════════════════════════════════════════╗
 ║           TÚ QUE ERES FIEL               ║
-╚══════════════════════════════════════════╝  */
+╚════════════════════════════════════════════════════════╝  */
    {
         id: "tuqueeresfiel",
         tt: "Tú Que Eres Fiel",
