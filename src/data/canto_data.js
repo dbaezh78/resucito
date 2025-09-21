@@ -9653,7 +9653,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "OH DIOS, TÚ ERES MI DIOS,, (La,m,20)(Re,m,234)", sC: "ta as"},
-            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as r1"},
             { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Sedienta de ti está mi alma,, (Fa,,11)(Mi,,127)(La,m,232)", sC: "tc"},
@@ -9663,7 +9663,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "OH DIOS, TÚ ERES MI DIOS, (La,m,20)(Re,m,234)", sC: "ta as", lines: [
-            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as r1"},
             { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Tu amor es para mí más que la vida,, (Fa,,11)(Mi,,178)(La,m,317)", sC: "tc"},
@@ -9673,7 +9673,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "OH DIOS, TÚ ERES MI DIOS, (La,m,20)(Re,m,234)", sC: "ta as", lines: [
-            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as r1"},
             { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},  ]},
     ], lder: [
             { line: "Unida a ti está mi alma,, (Fa,,10)(Mi,,86)(La,m,189)", sC: "tc"},
@@ -9683,7 +9683,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "OH DIOS, TÚ ERES MI DIOS, (La,m,20)(Re,m,234)", sC: "ta as", lines: [
-            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as r1"},
             { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Saciada de ti está mi alma,, (Fa,,12)(Mi,,121)(La,m,221)", sC: "tc"},
@@ -9693,10 +9693,95 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "OH DIOS, TÚ ERES MI DIOS, (La,m,20)(Re,m,234)", sC: "ta as", lines: [
-            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as r1"},
             { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: OH DIOS, TÚ ERES MI DIOS 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           OH JESÚS, AMOR MÍO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ohjesusamormio",
+        tt: "Oh Jesús, Amor Mío",
+        title: "Oh Jesús, Amor Mío",
+        subtitle: "(Kiko Argüello)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Fracción Del Pan"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "Melisma",
+        nCanURL: "",
+        dbno: "126",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/ohjesusamormio.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=ohdiostueresmidios",
+        sig: "/src/index.html?canto=ohmuerte¿dondeestatuvictoria?",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Oh Jesús ,amor mío,, (La,m,20)(Fa,,174)", sC: "tc ast"},
+            { line: "¡cuánto me has amado,, ", sC: ""},
+            { line: "cuánto me has amado!, (Mi,,189)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "OH JESÚS, AMOR MÍO,, (La,m,75)(Fa,,191)", sC: "ta as"},
+            { line: "¡CUÁNTO ME HAS AMADO,, ", sC: "as"},
+            { line: "CUÁNTO ME HAS AMADO!, (Mi,,207)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú has recibido las espinas de la soberbia de mí,, (La,m,20)(Sol,,117)(La,m,451)", sC: "tc"},
+            { line: "para que yo reciba la humildad de ti., (Fa,,148)(Mi,,339)", sC: ""},
+            { line: "Tú has recibido los azotes de la lujuria de mí,, (La,m,20)(Sol,,116)(La,m,417)", sC: ""},
+            { line: "para que yo reciba el amor y la pureza de ti., (Fa,,149)(Mi,,408)", sC: ""},
+            { line: "Tú has sido por la avaricia despojado por mí,, (La,m,20)(Sol,,79)(La,m,414)", sC: ""},
+            { line: "para que yo reciba la riqueza de ti., (Fa,,150)(Mi,,319)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "OH JESÚS, AMOR MÍO, (La,m,75)(Fa,,191)", sC: "ta as", lines: [
+            { line: "¡CUÁNTO ME HAS AMADO, ", sC: "as"},
+            { line: "CUÁNTO ME HAS AMADO!, (Mi,,207)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú has recibido la hiel y el vinagre de mí,, (La,m,20)(Sol,,119)(La,m,382)", sC: "tc"},
+            { line: "para que yo reciba la dulzura de ti., (Fa,,147)(Mi,,318)", sC: ""},
+            { line: "Tú has recibido el desprecio y los insultos de mí,, (La,m,20)(Sol,,119)(La,m,451)", sC: ""},
+            { line: "para que yo reciba la mansedumbre de ti., (Fa,,148)(Mi,,391)", sC: ""},
+    ], lder: [
+            { line: "Tú has recibido, (La,m,20)(Sol,,117)", sC: ""},
+            { line: "los clavos y la lanzada de mí,, (La,m,267)", sC: ""},
+            { line: "para que yo reciba la obediencia de ti., (Fa,,147)(Mi,,353)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "OH JESÚS, AMOR MÍO, (La,m,75)(Fa,,191)", sC: "ta as", lines: [
+            { line: "¡CUÁNTO ME HAS AMADO, ", sC: "as"},
+            { line: "CUÁNTO ME HAS AMADO!, (Mi,,207)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú has sido crucificado por mí,, (La,m,20)(Sol,,111)(La,m,280)", sC: "tc"},
+            { line: "para que yo reciba la salvación de ti., (Fa,,147)(Mi,,337)", sC: ""},
+            { line: "Tú has recibido la muerte de mí,, (La,m,20)(Sol,,213)(La,m,286)", sC: ""},
+            { line: "para que yo reciba la vida de ti., (Fa,,147)(Mi,,286)", sC: ""},
+            { line: "Tú has recibido la sepultura de mí,, (La,m,20)(Sol,,238)(La,m,316)", sC: ""},
+            { line: "para que yo reciba la resurrección de ti., (Fa,,147)(Mi,,367)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "OH JESÚS, AMOR MÍO, (La,m,75)(Fa,,191)", sC: "ta as", lines: [
+            { line: "¡CUÁNTO ME HAS AMADO, ", sC: "as"},
+            { line: "CUÁNTO ME HAS AMADO!, (Mi,,207)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "De mí, Señor, tú has recibido, (Mi,,10)(La,m,114)(Sol,,247)", sC: "tc"},
+            { line: "el mal, la muerte y el pecado,, (La,m,248)", sC: ""},
+            { line: "para que yo reciba de ti sólo a ti mismo., (Fa,,147)(Mi,,331)", sC: ""},
+            { line: "A mí, a mí tú te has donado., (Fa,,40)(Mi,,232)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "OH JESÚS, AMOR MÍO, (La,m,75)(Fa,,191)", sC: "ta as", lines: [
+            { line: "¡CUÁNTO ME HAS AMADO, ", sC: "as"},
+            { line: "CUÁNTO ME HAS AMADO!, (Mi,,207)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: OH JESÚS, AMOR MÍO
 // SIGUIENTE CANTO DEBAJO
 
 
