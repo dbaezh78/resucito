@@ -9624,6 +9624,80 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: OH DIOS, POR TU NOMBRE 
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           OH DIOS, TÚ ERES MI DIOS                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ohdiostueresmidios",
+        tt: "Oh Dios, Tú Eres Mi Dios ",
+        title: "Oh Dios, Tú Eres Mi Dios ",
+        subtitle: "Salmo 63 (62)",
+        category: ["Precatecumenado","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "125",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/ohdiostueresmidios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=ohdiosportunombre",
+        sig: "/src/index.html?canto=ohjesusamormio",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "OH DIOS, TÚ ERES MI DIOS,, (La,m,20)(Re,m,234)", sC: "ta as"},
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sedienta de ti está mi alma,, (Fa,,11)(Mi,,127)(La,m,232)", sC: "tc"},
+            { line: "ansia de ti tiene mi carne:, (Re,m,22)(Mi,,203)", sC: ""},
+            { line: "tierra reseca y árida,, (La,m,156)", sC: ""},
+            { line: "tierra reseca y árida, sin agua., (Fa,,16)(Mi,,151)(La,m,248)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "OH DIOS, TÚ ERES MI DIOS, (La,m,20)(Re,m,234)", sC: "ta as", lines: [
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tu amor es para mí más que la vida,, (Fa,,11)(Mi,,178)(La,m,317)", sC: "tc"},
+            { line: "por eso te ensalzan mis labios;, (Re,m,22)(Mi,,244)", sC: ""},
+            { line: "así yo te bendigo, (La,m,134)", sC: ""},
+            { line: "y en tu Nombre levanto mis manos., (Fa,,86)(Mi,,182)(La,m,288)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "OH DIOS, TÚ ERES MI DIOS, (La,m,20)(Re,m,234)", sC: "ta as", lines: [
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Unida a ti está mi alma,, (Fa,,10)(Mi,,86)(La,m,189)", sC: "tc"},
+            { line: "con fuerza me sostiene tu derecha, (Re,m,22)(Mi,,289)", sC: ""},
+            { line: "cuando me acuerdo de ti,, (La,m,233)", sC: ""},
+            { line: "cuando en medio de la noche pienso en ti., (Fa,,12)(Mi,,242)(La,m,397)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "OH DIOS, TÚ ERES MI DIOS, (La,m,20)(Re,m,234)", sC: "ta as", lines: [
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Saciada de ti está mi alma,, (Fa,,12)(Mi,,121)(La,m,221)", sC: "tc"},
+            { line: "te canta con júbilo mi boca,, (Re,m,22)(Mi,,228)", sC: ""},
+            { line: "porque tú eres mi auxilio, (La,m,212)", sC: ""},
+            { line: "y a la sombra de tus alas exulto., (Fa,,70)(Mi,,208)(La,m,268)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "OH DIOS, TÚ ERES MI DIOS, (La,m,20)(Re,m,234)", sC: "ta as", lines: [
+            { line: "TE ANHELO DESDE LA AURORA,, (La,m,262)", sC: "as"},
+            { line: "SEDIENTA DE TI ESTÁ MI ALMA., (Fa,,50)(Mi,,143)(La,m,256)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: OH DIOS, TÚ ERES MI DIOS 
+// SIGUIENTE CANTO DEBAJO
 
 
 
