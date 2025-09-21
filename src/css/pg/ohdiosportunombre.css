@@ -3,3 +3,19 @@
         @media (min-width: 768px) {margin-left: 0%;}
         @media (min-width: 992px) {margin-left: 0%;}
     }
+
+    .melisma::before {
+        @media (min-width: 384px) {
+            left: 239px;
+        }
+        @media (min-width: 768px) {
+            left: 439px;
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+        @media (min-width: 992px) {
+            font-size: 1rem;
+            margin-top: -2px;
+            left: 330px;
+    }
+}

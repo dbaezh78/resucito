@@ -9570,13 +9570,13 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: OH CIELOS, LLOVED DE LO ALTO
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔═════════════════════════════════════════════════╗
 ║           OH DIOS, POR TU NOMBRE                ║
-╚════════════════════════════════════════════════════════╝  */
+╚═════════════════════════════════════════════════╝  */
    {
         id: "ohdiosportunombre",
-        tt: "Oh Dios, Por Tu Nombre ",
-        title: "Oh Dios, Por Tu Nombre ",
+        tt: "Oh Dios, por tu nombre sálvame",
+        title: "Oh Dios, por tu nombre sálvame",
         subtitle: "Salmo 54 (53)",
         category: ["Precatecumenado","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
@@ -9585,8 +9585,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "124",
         notes: "",
-        mant: "Si",
-        audioSrc: "https://audio.resucito.do/ohdiosportunombre.mp3",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/ohdiosportunombresalvame.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -9597,30 +9597,30 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=ohdiostueresmidios",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "OH DIOS, POR TU NOMBRE SÁLVAME,, (La,m,20)(Fa,7,250)", sC: "ta as"},
-            { line: "POR TU PODER HAZME JUSTICIA., (Re,m,22)(Mi,,250)", sC: "as"},
-            { line: "OH DIOS, ESCUCHA MI ORACIÓN,, (La,m,20)(Fa,7,250)", sC: "as"},
-            { line: "ATIENDE A LAS PALABRAS DE MI BOCA., (Re,m,22)(Mi,,250)", sC: "as"},
+            { line: "OH DIOS, POR TU NOMBRE SÁLVAME,, (La,m,20)(Fa,7,286)", sC: "ta as"},
+            { line: "POR TU PODER HAZME JUSTICIA., (Re,m,22)(Mi,,274)", sC: "as"},
+            { line: "OH DIOS, ESCUCHA MI ORACIÓN,, (La,m,20)(Fa,7,288)", sC: "as"},
+            { line: "ATIENDE A LAS PALABRAS DE MI BOCA., (Re,m,22)(Mi,,343)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Porque los arrogantes se han aliado contra mí,, (La,7,20)(Re,m,250)", sC: "tc"},
-            { line: "los prepotentes andan buscando mi vida,, (Si♭,7,)(La,7,250)", sC: ""},
-            { line: "no tienen nunca a Dios presente,, (Sol,m,14)(La,7,250)", sC: ""},
-            { line: "no tienen nunca a Dios presente., (Si♭,7,)(La,7,250)", sC: ""},
+            { line: "Porque los arrogantes se han aliado contra mí,, (La,7,20)(Re,m,436)", sC: "tc"},
+            { line: "los prepotentes andan buscando mi vida,, (Si♭,7,20)(La,7,361)", sC: ""},
+            { line: "no tienen nunca a Dios presente,, (Sol,m,50)(La,7,272)", sC: ""},
+            { line: "no tienen nunca a Dios presente., (Si♭,7,47)(La,7,272)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "MAS VED, QUE DIOS VIENE EN MI AYUDA,, (Re,m,22)(La,7,250)", sC: "ta as"},
-            { line: "EL SEÑOR, EL SEÑOR ME SOSTIENE., (Re,m,22)(La,7,250)", sC: "as"},
+            { line: "MAS VED, QUE DIOS VIENE EN MI AYUDA,, (Re,m,22)(La,7,354)", sC: "ta as"},
+            { line: "EL SEÑOR, EL SEÑOR ME SOSTIENE., (Re,m,77)(La,7,309)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "De todo corazón le ofreceré un sacrificio,, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "celebraré su nombre, porque es bueno,, (Sol,m,14)(La,7,250)", sC: ""},
-            { line: "de toda angustia Él me ha liberado,, (Si♭,7,)(La,7,250)", sC: ""},
-            { line: "de toda angustia me ha liberado,, (Si♭,,)(La,7,250)", sC: ""},
-            { line: "de toda angustia me ha liberado., (Do,,10)(Mi,,250)", sC: "melisma"},
+            { line: "De todo corazón le ofreceré un sacrificio,, (Sol,m,23)(La,7,355)", sC: "tc"},
+            { line: "celebraré su nombre, porque es bueno,, (Sol,m,82)(La,7,343)", sC: ""},
+            { line: "de toda angustia Él me ha liberado,, (Si♭,7,20)(La,7,307)", sC: ""},
+            { line: "de toda angustia me ha liberado,, (Do,,10)(La,7,285)", sC: ""},
+            { line: "de toda angustia me ha liberado., (Do,,10)(Mi,,173)", sC: "melisma"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "OH DIOS, POR TU NOMBRE SÁLVAME, (La,m,20)(Fa,7,250)", sC: "ta as", lines: [
-            { line: "POR TU PODER HAZME JUSTICIA., (Re,m,22)(Mi,,250)", sC: "as"},
-            { line: "OH DIOS, ESCUCHA MI ORACIÓN,, (La,m,20)(Fa,7,250)", sC: "as"},
-            { line: "ATIENDE A LAS PALABRAS DE MI BOCA., (Re,m,22)(Mi,,250)", sC: "as"},  ]},
+       triggerLine: "OH DIOS, POR TU NOMBRE SÁLVAME, (La,m,20)(Fa,7,286)", sC: "ta as", lines: [
+            { line: "POR TU PODER HAZME JUSTICIA., (Re,m,22)(Mi,,274)", sC: "as"},
+            { line: "OH DIOS, ESCUCHA MI ORACIÓN,, (La,m,20)(Fa,7,288)", sC: "as"},
+            { line: "ATIENDE A LAS PALABRAS DE MI BOCA., (Re,m,22)(Mi,,343)", sC: "as"},  ]},
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: OH DIOS, POR TU NOMBRE 
 // SIGUIENTE CANTO DEBAJO
