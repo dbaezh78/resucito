@@ -9714,7 +9714,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "126",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/ohjesusamormio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
