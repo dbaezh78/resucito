@@ -10435,6 +10435,80 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "EN SIÓN MI SANTO MONTE»., (Mi,m,212)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: POR QUÉ LAS GENTES CONJURAN
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           PORQUE MI YUGO ES SUAVE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "porquemiyugoessuave",
+        tt: "Porque Mi Yugo Es Suave",
+        title: "Porque Mi Yugo Es Suave",
+        subtitle: "Mateo 11,28ss",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "135",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/porquemiyugoessuave.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=porquelasgentesconjuran",
+        sig: "/src/index.html?canto=queamablessontusmoradas",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Venid a mí vosotros todos, (Do,,10)(Mi,,203)", sC: "tc"},
+            { line: "que estáis cansados y agobiados,, (La,m,275)", sC: ""},
+            { line: "que yo os aliviaré,, (Fa,,11)(Mi,,159)", sC: ""},
+            { line: "que yo os aliviaré., (Fa,,57)(Mi,,159)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad sobre vosotros mi yugo, (Do,,10)", sC: ""},
+            { line: "y aprended de mí,, (Mi,,163)", sC: ""},
+            { line: "que soy manso y humilde de corazón,, (La,m,334)", sC: ""},
+            { line: "y hallaréis descanso para vosotros,, (Fa,,20)(Mi,,284)", sC: ""},
+            { line: "y encontraréis reposo para vuestras almas., (Fa,,175)(Mi,,355)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PORQUE MI YUGO ES SUAVE,, (Do,,10)(Mi,,242)", sC: "ta as"},
+            { line: "PORQUE MI YUGO ES SUAVE, (Fa,,241)", sC: "as"},
+            { line: "Y MI CARGA LIGERA., (Mi,,158)", sC: "as"},
+            { line: "PORQUE MI YUGO ES SUAVE, (Fa,,241)", sC: "as"},
+            { line: "Y MI CARGA LIGERA., (Mi,,173)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Venid a mí, (Do,,10)", sC: "tc", lines: [
+            { line: "que estáis cansados y agobiados,, (La,m,275)", sC: ""},
+            { line: "que yo os aliviaré,, (Fa,,11)(Mi,,159)", sC: ""},
+            { line: "que yo os aliviaré., (Fa,,57)(Mi,,159)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad sobre vosotros mi yugo, (Do,,10)", sC: ""},
+            { line: "y aprended de mí,, (Mi,,163)", sC: ""},
+            { line: "que soy manso y humilde de corazón,, (La,m,334)", sC: ""},
+            { line: "y hallaréis descanso para vosotros,, (Fa,,20)(Mi,,284)", sC: ""},
+            { line: "y encontraréis reposo para vuestras almas., (Fa,,175)(Mi,,355)", sC: ""},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "PORQUE MI YUGO ES SUAVE, (Do,,10)(Mi,,242)", sC: "ta as", lines: [
+            { line: "PORQUE MI YUGO ES SUAVE, (Fa,,241)", sC: "as"},
+            { line: "Y MI CARGA LIGERA., (Mi,,158)", sC: "as"},
+            { line: "PORQUE MI YUGO ES SUAVE, (Fa,,241)", sC: "as"},
+            { line: "Y MI CARGA LIGERA., (Mi,,173)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: PORQUE MI YUGO ES SUAVE
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
 
 
 // LETRA Q
