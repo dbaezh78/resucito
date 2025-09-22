@@ -1,0 +1,4 @@
+        @media (min-width: 384px) {.container {margin-left: 4%;}.junte {margin-top: -20px;}}
+        @media (min-width: 768px) {.container {margin-left: 0%;}.junte {margin-top: -20px;}}
+        @media (min-width: 992px) {.container {margin-left: 15%;}.junte {margin-top: -25px;}}
+

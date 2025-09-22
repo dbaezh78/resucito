@@ -1,4 +1,6 @@
-.container {margin-left: 8%;}
+        @media (min-width: 384px) {.container {margin-left: 0%;}}
+        @media (min-width: 768px) {.container {margin-left: 0%;}}
+        @media (min-width: 992px) {.container {margin-left: 17%;}}
 
 .sub1 {
     background-color: white;
@@ -8,3 +10,8 @@
     @media (min-width: 992px){margin-top: -45px;}
 }
 
+
+.n1 {
+    z-index: 9999;
+    top: 2px;
+}

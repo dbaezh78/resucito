@@ -9484,8 +9484,11 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: NOLI ME TANGERE
 // SIGUIENTE CANTO DEBAJO
 /*
+
+// LETRA O
+
 ╔════════════════════════════════════════════════════════╗
-║           OH CIELOS, LLOVED DE LO ALTO               ║
+║           OH CIELOS, LLOVED DE LO ALTO                 ║
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "ohcieloslloveddeloalto",
@@ -9984,10 +9987,13 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "OS REUNIRÉ DE TODOS LOS PUEBLOS,, (Sol,m,309)", sC: "as"},
             { line: "OS ROCIARÉ CON AGUA PURA, (La,,119)(Re,m,253)", sC: "as"},
             { line: "Y YO OS PURIFICARÉ., (Si♭,,10)(La,,192)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: OS TOMARÉ DE ENTRE LAS NACIONES
 // SIGUIENTE CANTO DEBAJO
+
+// LETRA P
+
+
 /*
 ╔════════════════════════════════════════════════════════╗
 ║           PALOMA INCORRUPTA               ║
@@ -10033,7 +10039,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PALOMA INCORRUPTA;, (Mi,m,172)", sC: "as"},
             { line: "REFUGIO DE LAS ALMAS DÉBILES; ", sC: "as"},
             { line: "ARCA DEL ESPÍRITU SANTO., (Sol,,14)(Fa#,,217)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
     ], lder: [
             { line: "Dios te salve, María,, (Mi,m,20)(Fa#,,172)", sC: "tc"},
             { line: "radiante como el sol., (Mi,m,20)(Fa#,,185)", sC: ""},
@@ -10063,7 +10068,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PALOMA INCORRUPTA;, (Mi,m,172)", sC: "as"},
             { line: "REFUGIO DE LAS ALMAS DÉBILES; ", sC: "as"},
             { line: "ARCA DEL ESPÍRITU SANTO., (Sol,,14)(Fa#,,217)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: PALOMA INCORRUPTA
 // SIGUIENTE CANTO DEBAJO
 /*
@@ -10168,27 +10172,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: PENTECOSTÉS
 // SIGUIENTE CANTO DEBAJO
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// LETRA P
 /*
 ╔═══════════════════════════════════════════════════╗
 ║           POR EL AMOR DE MIS AMIGOS               ║
@@ -10291,6 +10274,166 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "LA LALALALALA, LA LALALALALA, ", sC: "as"},
             { line: "LA LA LALALA., (Si,7,20)(Mi,m,104)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: POR EL AMOR DE MIS AMIGOS
+// SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           POR QUÉ ESTA NOCHE ES DIFERENTE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "porqueestanocheesdiferente",
+        tt: "Por Qué Esta Noche Es Diferente",
+        title: "Por Qué Esta Noche Es Diferente",
+        subtitle: "Haggadá de Pesaj - Melodía hebraica",
+        category: ["Precatecumenado","Pascua","Pentecostés","Niños"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "5",
+        nCan: "",
+        nCanURL: "",
+        dbno: "133",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/porqueestanocheesdiferente.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=porelamordemisamigos",
+        sig: "/src/index.html?canto=porquelasgentesconjuran",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¿Por qué esta noche es diferente, (La,m,20)", sC: "tn"},
+            { line: "de todas las otras noches?, (Re,m,46)(La,m,194)", sC: ""},
+            { line: "DE TODAS LAS OTRAS NOCHES., (Re,m,49)(La,m,237)", sC: "ta as"},
+            { line: "Que todas las otras noches, (La,m,20)", sC: "tn"},
+            { line: "nos vamos a la cama pronto, ", sC: "junte"},
+            { line: "y no nos quedamos levantados., (Re,m,36)(La,m,255)", sC: ""},
+            { line: "Y NO NOS QUEDAMOS LEVANTADOS., (Re,m,37)(La,m,301)", sC: "ta as"},
+            { line: "Mas esta noche, esta noche, (Re,m,64)(La,m,180)", sC: "tn"},
+            { line: "estamos levantados., (Mi,,34)(La,m,153)", sC: ""},
+            { line: "A MAS ESTA NOCHE, ESTA NOCHE, (Re,m,88)(La,m,219)", sC: "ta as"},
+            { line: "ESTAMOS LEVANTADOS., (Mi,,42)(La,m,178)", sC: "as"},
+            { line: "¿Por qué esta noche es diferente, (La,m,20)", sC: "tn"},
+            { line: "de todas las otras noches?, (Re,m,47)(La,m,194)", sC: ""},
+            { line: "DE TODAS LAS OTRAS NOCHES., (Re,m,49)(La,m,234)", sC: "ta as"},
+            { line: "Que todas las otras noches, (La,m,20)", sC: "tn"},
+            { line: "nos vamos a la cama pronto, ", sC: "junte"},
+            { line: "después de haber cenado., (Re,m,64)(La,m,2214", sC: ""},
+            { line: "DESPUÉS DE HABER CENADO., (Re,m,73)(La,m,253)", sC: "ta as"},
+            { line: "Mas esta noche, esta noche hemos ayunado., (Re,m,65)(La,m,172)(Mi,,290)(La,m,398)", sC: "tn"},
+            { line: "MAS ESTA NOCHE, ESTA NOCHE, (Re,m,68)(La,m,195)", sC: "ta as"},
+            { line: "HEMOS AYUNADO., (Mi,,23)(La,m,135)", sC: "as"},
+    ], lder: [
+            { line: "¿Por qué esta noche es diferente, (La,m,20)", sC: "tn"},
+            { line: "de todas las otras noches?, (Re,m,48)(La,m,194)", sC: ""},
+            { line: "DE TODAS LAS OTRAS NOCHES., (Re,m,52)(La,m,236)", sC: "ta as"},
+            { line: "Que todas las otras noches, (La,m,20)", sC: "tn"},
+            { line: "nos vamos a la cama pronto, ", sC: "junte"},
+            { line: "y no esperamos nada., (Re,m,37)(La,m,175)", sC: ""},
+            { line: "Y NO ESPERAMOS NADA., (Re,m,35)(La,m,203)", sC: "ta as"},
+            { line: "Mas esta noche, esta noche, (Re,m,65)(La,m,180)", sC: "tn"},
+            { line: "estamos esperando., (Mi,,33)(La,m,143)", sC: ""},
+            { line: "MAS ESTA NOCHE, ESTA NOCHE, (Re,m,67)(La,m,198)", sC: "ta as"},
+            { line: "ESTAMOS ESPERANDO., (Mi,,46)(La,m,170)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿POR QUÉ ESTA NOCHE ES DIFERENTE, (La,m,20)", sC: "ta as"},
+            { line: "DE TODAS LAS OTRAS NOCHES?, (Re,m,52)(La,m,237)", sC: "as"},
+            { line: "DE TODAS LAS OTRAS NOCHES., (Re,m,53)(La,m,243)", sC: "as"},
+            { line: "Para estar levantados,, (Re,m,86)", sC: "tn"},
+            { line: "para haber ayunado,, (La,m,90)", sC: ""},
+            { line: "para estar todos esperando., (Mi,,83)(La,m,222)", sC: ""},
+            { line: "PARA ESTAR LEVANTADOS,, (Re,m,104)", sC: "ta as"},
+            { line: "PARA HABER AYUNADO,, (La,m,109)", sC: "as"},
+            { line: "PARA ESTAR TODOS ESPERANDO., (Mi,,103)(La,m,273)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: POR QUÉ ESTA NOCHE ES DIFERENTE
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           POR QUÉ LAS GENTES CONJURAN               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "porquelasgentesconjuran",
+        tt: "Por Qué Las Gentes Conjuran",
+        title: "Por Qué Las Gentes Conjuran",
+        subtitle: "Salmo 2",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "134",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/porquelasgentesconjuran.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=porqueestanocheesdiferente",
+        sig: "/src/index.html?canto=porquemiyugoessuave",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¿POR QUÉ LAS GENTES CONJURAN, (Mi,m,20)(La,m,289)", sC: "ta as"},
+            { line: "POR QUÉ CONSPIRAN LOS PUEBLOS?, (Mi,m,296)", sC: "as"},
+            { line: "SE ALZAN LOS REYES DE LA TIERRA,, (La,m,303)", sC: "as"},
+            { line: "Y LOS PRÍNCIPES SE REÚNEN, (Si,7,239)", sC: "as"},
+            { line: "CONTRA EL SEÑOR Y CONTRA SU MESÍAS., (Mi,m,373)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«Rompamos sus coyundas y cadenas,, (Mi,m,20)", sC: "tc"},
+            { line: "alejemos de nosotros su yugo»., (La,m,255)", sC: ""},
+            { line: "El que habita en los cielos se ríe,, (Si,7,295)", sC: ""},
+            { line: "el Señor se burla de ellos. ", sC: ""},
+            { line: "De repente les habla con ira, ", sC: ""},
+            { line: "y en su cólera los espanta:, (Mi,m,213)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«PORQUE YO LE HE CONSTITUIDO SOBERANO, (La,m,113)(Mi,m,399)", sC: "ta as"},
+            { line: "EN SIÓN MI SANTO MONTE,, (Si,7,61)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE»., (Mi,m,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "YO LE HE CONSTITUIDO SOBERANO, (La,m,20)(Mi,m,301)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE,, (Si,7,62)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE»., (Mi,m,212)", sC: "as"},
+    ], lder: [
+            { line: "Anunciaré el decreto del Señor;, (Mi,m,20)(La,m,282)", sC: "tc"},
+            { line: "Él me ha dicho: «Tú eres mi hijo;, (Si,7,107)", sC: ""},
+            { line: "yo te he engendrado hoy., (Mi,m,220)", sC: ""},
+            { line: "Pídeme, y te daré en herencia las naciones,, (La,m,369)", sC: ""},
+            { line: "y en dominio los confines de la tierra., (Si,7,320)", sC: ""},
+            { line: "Los quebrantarás con cetro de hierro,, ", sC: ""},
+            { line: "como vasos de arcilla los quebrarás»., (Mi,m,328)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "«PORQUE YO LE HE CONSTITUIDO SOBERANO, (La,m,113)(Mi,m,399)", sC: "ta as", lines: [
+            { line: "EN SIÓN MI SANTO MONTE,, (Si,7,61)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE»., (Mi,m,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "YO LE HE CONSTITUIDO SOBERANO, (La,m,20)(Mi,m,301)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE,, (Si,7,62)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE»., (Mi,m,212)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y ahora, soberanos, sed sensatos,, (La,m,49)(Si,7,284)", sC: "tc"},
+            { line: "instruíos, jueces de la tierra., (La,m,63)(Si,7,234)", sC: ""},
+            { line: "Servid al Señor con temor,, ", sC: ""},
+            { line: "y con temblor exultad., (Mi,m,189)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "No sea que se irrite, ", sC: ""},
+            { line: "y perezcáis en el camino, (La,m,208)", sC: ""},
+            { line: "porque de pronto se enciende su ira., (Si,7,328)", sC: ""},
+            { line: "¡Mas dichoso el que se refugia en Él!, (Mi,m,338)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "«PORQUE YO LE HE CONSTITUIDO SOBERANO, (La,m,113)(Mi,m,399)", sC: "ta as", lines: [
+            { line: "EN SIÓN MI SANTO MONTE,, (Si,7,61)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE»., (Mi,m,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "YO LE HE CONSTITUIDO SOBERANO, (La,m,20)(Mi,m,301)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE,, (Si,7,62)", sC: "as"},
+            { line: "EN SIÓN MI SANTO MONTE»., (Mi,m,212)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: POR QUÉ LAS GENTES CONJURAN
 // SIGUIENTE CANTO DEBAJO
 
 

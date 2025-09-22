@@ -308,6 +308,9 @@ display: none;}
     box-shadow: 0 0 0 2px rgba(90, 45, 128, 0.2);
 }
 
+.cejilla {
+    font-size: 1.2em !important;
+}
 .search-input {width: 150px;transition: width 0.5s ease;}
 
 .search-input {
@@ -409,7 +412,7 @@ display: none;}
         width: 992px;
         flex-direction: row; /* Por defecto en escritorio, en fila */
         justify-content: space-between;
-        gap: 40px;
+        gap: 33px;
     }
     .canto-content-wrapper.stacked-layout { /* Nueva clase para apilar en escritorio */
         flex-direction: column;
@@ -607,14 +610,14 @@ display: none;}
 }
 
 /* --- Nuevos estilos para etiquetas de sección --- */
-.ta, .tc, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .melisma1, .bis, .pa, .aleluya
+.ta, .tc, .tn, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .melisma1, .bis, .pa, .aleluya
  {position: relative;
     padding-left: 0em;
     min-height: 1.5em;
 }
 
 /* Estilos COMPARTIDOS por todos los ::before */
-.ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
+.ta::before, .tc::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
 .hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, 
 .pa::before, .tc1::before, .tc2::before, .aleluya::before
 {
@@ -629,7 +632,7 @@ display: none;}
 
 /* Media queries para los ::before */
 @media (min-width: 384px) {
-    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, 
+    .ta::before, .tc::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, 
     .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
     .aleluya::before
@@ -638,7 +641,7 @@ display: none;}
         top: 14px;}
 }
 @media (min-width: 768px) {
-    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, 
+    .ta::before, .tc::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, 
     .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
     .aleluya::before 
@@ -649,7 +652,7 @@ display: none;}
     }
 }
 @media (min-width: 992px) {
-    .ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, 
+    .ta::before, .tc::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, 
     .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
     .aleluya::before
@@ -661,7 +664,7 @@ display: none;}
 }
 
 /* Color GRIS para la mayoría */
-.ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .bis::before, .pa::before, .tc1::before, .tc2::before
+.ta::before, .tc::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .bis::before, .pa::before, .tc1::before, .tc2::before
 {color: #80808065; /* Gris semitransparente */}
 
 .aleluya::before {font-weight: bolder;}
@@ -674,6 +677,7 @@ display: none;}
 .ta1::before {content: "A1.";}
 .ta2::before {content: "A2.";}
 .ta3::before {content: "A3.";}
+.tn::before {content: "N.";}
 .niño::before {content: "Niños:";}
 .hombres::before {content: "Hombres:";}
 .mujeres::before {content: "Mujeres:";}
