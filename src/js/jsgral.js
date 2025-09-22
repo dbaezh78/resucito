@@ -186,7 +186,6 @@ const getDisplayNameFromFilename = (filename) => {
     name = name.replace(/solsdim7$/, 'dim7');
     name = name.replace(/la3$/, 'la');
     name = name.replace(/mi7_1/, 'mi7');
-    name = name.replace(/remadd9$/, 'remadd9');
     // Reemplazar 'b' por '♭' para bemoles (ej. 'sib' -> 'Si♭')
     name = name.replace(/b$/, '♭');
 

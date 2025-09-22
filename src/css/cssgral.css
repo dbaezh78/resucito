@@ -932,6 +932,7 @@ hr {
 /* Clases para los colores de fondo de los acordes */
 .chord-image-item.chord-color-do { background-color: var(--chord-color-do); }
 .chord-image-item.chord-color-re { background-color: var(--chord-color-re); }
+.chord-image-item.chord-color-readd { background-color: var(--chord-color-re); }
 .chord-image-item.chord-color-mi { background-color: var(--chord-color-mi); }
 .chord-image-item.chord-color-mi6 { background-color: var(--chord-color-mi); }
 .chord-image-item.chord-color-miaj { background-color: var(--chord-color-mi); }
