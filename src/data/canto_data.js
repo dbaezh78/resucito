@@ -10512,6 +10512,100 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // LETRA Q
+/*
+╔════════════════════════════════════════════════════════╗
+║           QUÉ AMABLES SON TUS MORADAS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "queamablessontusmoradas",
+        tt: "Qué Amables Son Tus Moradas",
+        title: "Qué Amables Son Tus Moradas",
+        subtitle: "Salmo 84 (83)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "136",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/queamablessontusmoradas.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=porquemiyugoessuave",
+        sig: "/src/index.html?canto=queestupendoquealegria",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡Qué amables son tus moradas, Señor,, (Do,,10)(Mi,m,250)(La,m,350)", sC: "tc"},
+            { line: "Señor de los ejércitos!, (Do,,10)(Mi,m,250)", sC: ""},
+            { line: "Mi alma ansía y anhela, (Fa,,20)(Do,,250)", sC: ""},
+            { line: "los atrios del Señor., (Sol,,14)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Hasta el pájaro encuentra una casa,, (Do,,10)(Mi,m,250)(La,m,350)", sC: ""},
+            { line: "la golondrina su nido:, (Do,,10)(Mi,m,250)", sC: ""},
+            { line: "¡junto a tus altares, Señor,, (Fa,,20)(Do,,250)", sC: ""},
+            { line: "rey mío y Dios mío!, (Sol,,14)", sC: ""},
+            { line: "¡REY MÍO Y DIOS MÍO!, (Do,,10)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DICHOSOS LOS QUE VIVEN EN TU CASA,, (Fa,,20)(Do,,250)", sC: "ta as"},
+            { line: "SIEMPRE CANTAN TUS AMORES,, (Sol,,14)", sC: "as"},
+            { line: "SIEMPRE CANTAN TUS AMORES., (Do,,10)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DICHOSO EL QUE ENCUENTRA, (Fa,,20)", sC: "as"},
+            { line: "EN TI LA FUERZA, (Do,,10)", sC: "as"},
+            { line: "Y EN SU CORAZÓN DECIDE, (Sol,,14)", sC: "as"},
+            { line: "EL SANTO VIAJE., (Do,,10)", sC: "as"},
+    ], lder: [
+            { line: "PASANDO POR EL VALLE DEL LLANTO,, (Do,,10)(Mi,m,250)(La,m,350)", sC: "ta as"},
+            { line: "ÉL LO CAMBIA EN BENDICIÓN., (Do,,10)(Mi,m,250)", sC: "as"},
+            { line: "CRECE EN EL CAMINO SU VIGOR,, (Fa,,20)(Do,,250)", sC: "as"},
+            { line: "HASTA LLEGAR A SIÓN,, (Sol,,14)", sC: "as"},
+            { line: "HASTA LLEGAR A SIÓN., (Do,,10)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Mejor es un día en tus atrios, (Fa,,20)(Do,,250)", sC: "tc"},
+            { line: "que mil fuera de ellos,, (Sol,,14)", sC: ""},
+            { line: "QUE MIL FUERA DE ELLOS,, (Do,,10)", sC: "ta as"},
+            { line: "porque estar en el umbral de tu casa, (Fa,,20)(Do,,250)", sC: "tc"},
+            { line: "es siempre mejor, (Sol,,14)", sC: ""},
+            { line: "QUE HABITAR EN LOS PALACIOS., (Do,,10)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "PASANDO POR EL VALLE DEL LLANTO, (Do,,10)(Mi,m,250)(La,m,350)", sC: "ta as", lines: [
+            { line: "ÉL LO CAMBIA EN BENDICIÓN., (Do,,10)(Mi,m,250)", sC: "as"},
+            { line: "CRECE EN EL CAMINO SU VIGOR,, (Fa,,20)(Do,,250)", sC: "as"},
+            { line: "HASTA LLEGAR A SIÓN,, (Sol,,14)", sC: "as"},
+            { line: "HASTA LLEGAR A SIÓN., (Do,,10)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "DICHOSOS LOS QUE VIVEN... ...EL SANTO VIAJE, (Fa,,20)", sC: "ta as", lines: [
+            { line: "DICHOSOS LOS QUE VIVEN EN TU CASA,, (Fa,,20)(Do,,250)", sC: "as sub1"},
+            { line: "SIEMPRE CANTAN TUS AMORES,, (Sol,,14)", sC: "as"},
+            { line: "SIEMPRE CANTAN TUS AMORES., (Do,,10)", sC: "as"},
+            { line: "DICHOSO EL QUE ENCUENTRA, (Fa,,20)", sC: "as"},
+            { line: "EN TI LA FUERZA, (Do,,10)", sC: "as"},
+            { line: "Y EN SU CORAZÓN DECIDE, (Sol,,14)", sC: "as"},
+            { line: "EL SANTO VIAJE., (Do,,10)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: QUÉ AMABLES SON TUS MORADAS
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
