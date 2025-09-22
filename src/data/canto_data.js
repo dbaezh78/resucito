@@ -9870,6 +9870,202 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ALELUYA, ALELUYA, ALELUYA., (La,,56)(Sol,,149)(Fa#,,271)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: OH MUERTE ¿DÓNDE ESTÁ TU VICTORIA?
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           OH SEÑOR, NUESTRO DIOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ohsenornuestrodios",
+        tt: "Oh Señor, Nuestro Dios",
+        title: "Oh Señor, Nuestro Dios",
+        subtitle: "Salmo 8",
+        category: ["Precatecumenado","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "2",
+        nCan: "",
+        nCanURL: "",
+        dbno: "128",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/ohSenornuestroDios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=ohmuerte¿dondeestatuvictoria?",
+        sig: "/src/index.html?canto=ostomaredeentrelasnaciones",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡OH SEÑOR, NUESTRO DIOS,, (Re,m,22)", sC: "ta as"},
+            { line: "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)", sC: "as"},
+            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,357)", sC: "as"},
+            { line: "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Con la boca de los niños pequeños, (Sol,m,14)(La,7,291)", sC: "tc"},
+            { line: "afirmas tu gloria, oh Señor,, (Sol,m,24)(La,7,242)", sC: ""},
+            { line: "y reduces al silencio enemigos y rebeldes., (Si♭,,52)(La,7,350)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡OH SEÑOR, NUESTRO DIOS, (Re,m,22)", sC: "ta as", lines: [
+            { line: "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)", sC: "as"},
+            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,357)", sC: "as"},
+            { line: "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si contemplo el cielo, obra de tus manos,, (Sol,m,24)(La,7,347)", sC: "tc"},
+            { line: "la luna y las estrellas que has creado,, (Sol,m,42)(La,7,325)", sC: ""},
+            { line: "¿qué es el hombre para que te acuerdes de él,, (Si♭,,39)(La,7,430)", sC: ""},
+            { line: "el hijo del hombre para darle poder?, (Si♭,,34)(La,7,326)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Lo hiciste, lo hiciste poco menos que los ángeles,, (Fa,,10)(La,7,156)(Re,m,406)", sC: ""},
+            { line: "de gloria y de honor lo has coronado,, (Si♭,,55)(La,7,318)", sC: ""},
+            { line: "todo lo has sometido bajo sus pies., (Si♭,,18)(La,7,326)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "¡OH SEÑOR, NUESTRO DIOS, (Re,m,22)", sC: "ta as", lines: [
+            { line: "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)", sC: "as"},
+            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,357)", sC: "as"},
+            { line: "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: OH SEÑOR, NUESTRO DIOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           OS TOMARÉ DE ENTRE LAS NACIONES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ostomaredeentrelasnaciones",
+        tt: "Os Tomaré De Entre Las Naciones",
+        title: "Os Tomaré De Entre Las Naciones",
+        subtitle: "Ezequiel 36,24-28",
+        category: ["Precatecumenado","Pascua","Pentecostés","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "129",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/ostomaredeentrelasnaciones.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=ohsenornuestrodios",
+        sig: "/src/index.html?canto=palomaincorrupta",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "OS TOMARÉ DE ENTRE LAS NACIONES,, (Re,m,21)(Re,7,110)", sC: "ta as"},
+            { line: "OS REUNIRÉ DE TODOS LOS PUEBLOS,, (Sol,m,309)", sC: "as"},
+            { line: "OS ROCIARÉ CON AGUA PURA, (La,,119)(Re,m,253)", sC: "as"},
+            { line: "Y YO OS PURIFICARÉ., (Si♭,,10)(La,,192)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Os daré un corazón nuevo,, (Re,7,19)", sC: "tc"},
+            { line: "infundiré en vosotros un espíritu nuevo,, (Sol,m,338)", sC: ""},
+            { line: "os quitaré el corazón de piedra,, (La,,90)(Re,m,255)", sC: ""},
+            { line: "os daré un corazón de carne., (Si♭,,64)(La,,231)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "OS TOMARÉ DE ENTRE LAS NACIONES, (Re,m,21)(Re,7,110)", sC: "ta as", lines: [
+            { line: "OS REUNIRÉ DE TODOS LOS PUEBLOS,, (Sol,m,309)", sC: "as"},
+            { line: "OS ROCIARÉ CON AGUA PURA, (La,,119)(Re,m,253)", sC: "as"},
+            { line: "Y YO OS PURIFICARÉ., (Si♭,,10)(La,,192)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Pondré mi Espíritu dentro de vosotros, (Re,7,20)(Sol,m,318)", sC: "tc"},
+            { line: "y haré que caminéis según mi Palabra., (La,,53)(Rem,,332)", sC: ""},
+            { line: "Vosotros seréis mi pueblo, (Si♭,,12)", sC: ""},
+            { line: "y yo seré vuestro Dios., (La,,184)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "OS TOMARÉ DE ENTRE LAS NACIONES, (Re,m,21)(Re,7,110)", sC: "ta as", lines: [
+            { line: "OS REUNIRÉ DE TODOS LOS PUEBLOS,, (Sol,m,309)", sC: "as"},
+            { line: "OS ROCIARÉ CON AGUA PURA, (La,,119)(Re,m,253)", sC: "as"},
+            { line: "Y YO OS PURIFICARÉ., (Si♭,,10)(La,,192)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: OS TOMARÉ DE ENTRE LAS NACIONES
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           PALOMA INCORRUPTA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "palomaincorrupta",
+        tt: "Paloma Incorrupta",
+        title: "Paloma Incorrupta",
+        subtitle: "Kontákion (Romano el Meloda)",
+        category: ["Precatecumenado","Vírgen María","Pascua","Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "130",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/palomaincorrupta.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=ostomaredeentrelasnaciones",
+        sig: "/src/index.html?canto=pentecostes",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Dios te salve, María,, (Mi,m,20)(Fa#,,175)", sC: "tc"},
+            { line: "radiante como el sol., (Mi,m,20)(Fa#,,184)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú nos muestras el camino;, (Sol,,14)(Fa#,,230)", sC: ""},
+            { line: "esperanza de los confines de la tierra;, (Sol,,13)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "tú eres la sola Paloma incorrupta., (Fa#,,283)", sC: ""},
+            { line: "Está en ti toda la belleza del Espíritu;, (Mi,m,20)(Fa#,,313)", sC: ""},
+            { line: "gloria que en el mundo, (Sol,,14)", sC: ""},
+            { line: "hace bella la creación., (Fa#,,194)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)", sC: "ta as", lines: [
+            { line: "RADIANTE COMO EL SOL., (Fa#,,218)", sC: "as"},
+            { line: "PALOMA INCORRUPTA;, (Mi,m,172)", sC: "as"},
+            { line: "REFUGIO DE LAS ALMAS DÉBILES; ", sC: "as"},
+            { line: "ARCA DEL ESPÍRITU SANTO., (Sol,,14)(Fa#,,217)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+    ], lder: [
+            { line: "Dios te salve, María,, (Mi,m,20)(Fa#,,172)", sC: "tc"},
+            { line: "radiante como el sol., (Mi,m,20)(Fa#,,185)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú intercedes por todos los hombres;, (Sol,,14)(Fa#,,281)", sC: ""},
+            { line: "tú eres el refugio de las almas débiles;, (Mi,m,20)(Fa#,,317)", sC: ""},
+            { line: "filacteria de la perfecta castidad;, (Sol,,14)(Fa#,,292)", sC: ""},
+            { line: "arca perfumadísima del Espíritu Santo., (Sol,,14)(Fa#,,331)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)", sC: "ta as", lines: [
+            { line: "RADIANTE COMO EL SOL., (Fa#,,218)", sC: "as"},
+            { line: "PALOMA INCORRUPTA;, (Mi,m,172)", sC: "as"},
+            { line: "REFUGIO DE LAS ALMAS DÉBILES; ", sC: "as"},
+            { line: "ARCA DEL ESPÍRITU SANTO., (Sol,,14)(Fa#,,217)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Dios te salve, María,, (Mi,m,20)(Fa#,,175)", sC: "tc"},
+            { line: "radiante como el sol., (Mi,m,20)(Fa#,,182)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "A ti suplican todos los hombres., (Sol,,14)(Fa#,,236)", sC: ""},
+            { line: "A ti pedimos por la Iglesia:, (Sol,,14)", sC: ""},
+            { line: "dale nuevo vigor de gracia y santidad., (Fa#,,337)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)", sC: "ta as", lines: [
+            { line: "RADIANTE COMO EL SOL., (Fa#,,218)", sC: "as"},
+            { line: "PALOMA INCORRUPTA;, (Mi,m,172)", sC: "as"},
+            { line: "REFUGIO DE LAS ALMAS DÉBILES; ", sC: "as"},
+            { line: "ARCA DEL ESPÍRITU SANTO., (Sol,,14)(Fa#,,217)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: PALOMA INCORRUPTA
+// SIGUIENTE CANTO DEBAJO
 
 
 
