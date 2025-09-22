@@ -902,7 +902,7 @@ hr {
     align-items: center;
     justify-content: flex-end; /* Alinear el texto abajo de la imagen */
     padding: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #082c60;
     border-radius: 5px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
