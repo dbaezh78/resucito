@@ -11039,7 +11039,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "143",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/resurrexit.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -11051,56 +11051,56 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=salvereinadeloscielos",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,250)", sC: "ta as"},
-            { line: "RESURREXIT, RESURREXIT., (Fa,,20)(Mi,,250)", sC: "as"},
-            { line: "GLORIA, GLORIA, GLORIA, GLORIA., (La,m,20)(Mi,7,250)(Fa,,350)(Mi,,450)", sC: "as"},
+            { line: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,218)", sC: "ta as"},
+            { line: "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)", sC: "as"},
+            { line: "GLORIA, GLORIA, GLORIA, GLORIA., (La,m,20)(Mi,7,116)(Fa,,199)(Mi,,287)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Yo soy la Resurrección,, (La,m,20)(Mi7,,250)", sC: ""},
-            { line: "la Resurrección, la Resurrección., (Re,m,22)(Mi7,,250)", sC: ""},
+            { line: "Yo soy la Resurrección,, (La,m,20)(Mi,7,198)", sC: ""},
+            { line: "la Resurrección, la Resurrección., (Re,m,22)(Mi,7,291)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "YO SOY LA RESURRECCIÓN,, (La,m,20)(Mi7,,250)", sC: "ta as"},
-            { line: "LA RESURRECCIÓN,, (Rem,,)", sC: "as"},
-            { line: "LA RESURRECCIÓN., (Mi7,,)", sC: "as"},
+            { line: "YO SOY LA RESURRECCIÓN,, (La,m,20)(Mi7,,238)", sC: "ta as"},
+            { line: "LA RESURRECCIÓN,, (Re,m,20)", sC: "as"},
+            { line: "LA RESURRECCIÓN., (Mi,7,165)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "El que cree en mí, aunque muera vivirá,, (Re,m,22)(Mi7,,250)", sC: "tc"},
-            { line: "y todo el que vive y cree en mí,, (Rem,,)(Fa,,250)", sC: ""},
-            { line: "no morirá jamás, no morirá jamás., (Mi7,,)(Fa,,250)(Mi7,,350)", sC: ""},
+            { line: "El que cree en mí, aunque muera vivirá,, (Re,m,86)(Mi,7,363)", sC: "tc"},
+            { line: "y todo el que vive y cree en mí,, (Re,m,17)(Fa,,280)", sC: ""},
+            { line: "no morirá jamás, no morirá jamás., (Mi,7,145)(Fa,,179)(Mi,7,311)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
-            { line: "RESURREXIT, RESURREXIT., (Fa,,20)(Mi,,250)", sC: "as"},  ]},
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: " GLORIA, GLORIA, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
-            { line: "GLORIA, GLORIA,, (La,m,20)(Mi,7,250)(Fa,,350)(Mi,,450)", sC: "as"},  ]},
+       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi7,,220)", sC: "ta as", lines: [
+            { line: "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi7,,116)", sC: "ta as", lines: [
+            { line: "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)", sC: "as gloria"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¿Crees tú esto? ¿Crees tú esto?, (Re,m,22)(Mi,,250)(Re,m,350)(Mi,,450)", sC: "tc"},
-            { line: "Sí, yo creo que tú eres el Cristo,, (Fa,,20)", sC: ""},
-            { line: "el Hijo de Dios, que ha de venir al mundo., (Mi7,,)(Fa,,250)(Mi7,,350)", sC: ""},
+            { line: "¿Crees tú esto? ¿Crees tú esto?, (Re,m,22)(Mi,,103)(Re,m,185)(Mi,,258)", sC: "tc"},
+            { line: "Sí, yo creo que tú eres el Cristo,, (Fa,,10)", sC: ""},
+            { line: "el Hijo de Dios, que ha de venir al mundo., (Mi,7,120)(Fa,,205)(Mi,7,347)", sC: ""},
     ], lder: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
-            { line: "RESURREXIT, RESURREXIT., (Fa,,20)(Mi,,250)", sC: "as"},  ]},
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: " GLORIA, GLORIA, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
-            { line: "GLORIA, GLORIA,, (La,m,20)(Mi,7,250)(Fa,,350)(Mi,,450)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi7,,220)", sC: "ta as", lines: [
+            { line: "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi7,,116)", sC: "ta as", lines: [
+            { line: "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)", sC: "as gloria"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA, LA, LA, LA,  LA LA,, (La,m,20)", sC: "as"},
+            { line: "LA LA LA LA, LA LA, LA LA;, (Re,m,22)(Mi7,,178)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "LA, LA, LA, LA, LA LA,, (La,m,20)", sC: "as"},
-            { line: "LA LA LA LA, LA LA, LA LA;, (Re,m,22)(Mi7,,250)", sC: "as"},
+            { line: "LA, LA LA LA., (Re,m,22)(Mi,7,110)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "LA, LA, LA, LA, LA LA,, (La,m,20)", sC: "as"},
-            { line: "LA, LA LA LA., (Re,m,22)(Mi7,,250)", sC: "as"},
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi7,,220)", sC: "ta as", lines: [
+            { line: "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
+       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi7,,116)", sC: "ta as", lines: [
+            { line: "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)", sC: "as gloria"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
-            { line: "RESURREXIT, RESURREXIT., (Fa,,20)(Mi,,250)", sC: "as"},  ]},
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: " GLORIA, GLORIA, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
-            { line: "GLORIA, GLORIA,, (La,m,20)(Mi,7,250)(Fa,,350)(Mi,,450)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA, ALELUYA,, (La,m,20)(Mi7,,250)", sC: "as"},
-            { line: "ALELUYA, ALELUYA., (Fa,,20)(Mi,,250)", sC: "as"},
-            { line: "ALELUYA., (La,m,20)", sC: "as"},
+            { line: "ALELUYA, ALELUYA,, (La,m,51)(Mi7,,155)", sC: "as"},
+            { line: "ALELUYA, ALELUYA., (Fa,,55)(Mi,,150)", sC: "as"},
+            { line: "ALELUYA., (La,m,79)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: RESURREXIT
 // SIGUIENTE CANTO DEBAJO
 
