@@ -10516,12 +10516,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         subtitle: "Salmo 84 (83)",
         category: ["Precatecumenado","Cuaresma","Penitencial","Entrada","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
+        cejilla: "3",
         nCan: "",
         nCanURL: "",
         dbno: "136",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/queamablessontusmoradas.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -10573,10 +10573,10 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HASTA LLEGAR A SIÓN,, (Sol,,194)", sC: "as"},
             { line: "HASTA LLEGAR A SIÓN., (Do,,193)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "DICHOSOS LOS QUE VIVEN... ...EL SANTO VIAJE, (Fa,,54)", sC: "ta as", lines: [
-            { line: "DICHOSOS LOS QUE VIVEN EN TU CASA, (Do,,341)", sC: "as sub1"},
-            { line: "SIEMPRE CANTAN TUS AMORES,, (Sol,,263)", sC: "as"},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "DICHOSOS LOS QUE VIVEN ...  \n...EL SANTO VIAJE, (Fa,,54)", sC: "ta as", lines: [
+            { line: "  EN TU CASA,, (Do,,81)", sC: "as sub1"},
+            { line: "SIEMPRE CANTAN TUS AMORES,, (Sol,,257)", sC: "as sub2"},
             { line: "SIEMPRE CANTAN TUS AMORES., (Do,,260)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "DICHOSO EL QUE ENCUENTRA, (Fa,,54)", sC: "as"},
@@ -10586,9 +10586,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: QUÉ AMABLES SON TUS MORADAS
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔═════════════════════════════════════════════════════╗
 ║           QUÉ ESTUPENDO, QUÉ ALEGRÍA                ║
-╚════════════════════════════════════════════════════════╝  */
+╚═════════════════════════════════════════════════════╝  */
    {
         id: "queestupendoquealegria",
         tt: "Qué Estupendo, Qué Alegría ",
@@ -10601,7 +10601,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "137",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/queestupendoquealegria.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -10613,58 +10613,38 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=quienesestaquesubedeldesierto",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,250)(La,m,350)(Mi,,450)", sC: "ta as"},
-            { line: "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,250)(Mi,,350)(La,m,450)", sC: "as"},
+            { line: "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,123)(La,m,206)(Mi,,298)", sC: "ta as"},
+            { line: "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,114)(Mi,,196)(La,m,295)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Es como ungüento que desciende por la barba,, (Sol,,14)", sC: "tc"},
-            { line: "por la barba de Aarón., (Fa,,20)(Mi,,250)", sC: ""},
-            { line: "ES COMO UNGÜENTO QUE DESCIENDE POR LA BARBA,, (Sol,,14)", sC: "ta as"},
-            { line: "POR LA BARBA DE AARÓN., (Fa,,20)(Mi,,250)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!..., (La,m,20)(Re,m,250)(La,m,350)(Mi,,450)", sC: "ta as", lines: [
-            { line: "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,250)(Mi,,350)(La,m,450)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Como rocío que desciende del Hermón, (Sol,,14)", sC: "tc"},
-            { line: "sobre el monte de Sión,, (Fa,,20)(Mi,,250)", sC: ""},
-            { line: "COMO ROCÍO QUE DESCIENDE DEL HERMÓN, (Sol,,14)", sC: "ta as"},
-            { line: "SOBRE EL MONTE DE SIÓN., (Fa,,20)(Mi,,250)", sC: "as"},
+            { line: "Es como ungüento que desciende por la barba,, (Sol,,137)", sC: "tc"},
+            { line: "por la barba de Aarón., (Fa,,12)(Mi,,192)", sC: ""},
+            { line: "ES COMO UNGÜENTO QUE DESCIENDE POR LA BARBA,, (Sol,,159)", sC: "ta as"},
+            { line: "POR LA BARBA DE AARÓN., (Fa,,20)(Mi,,236)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!..., (La,m,20)(Re,m,250)(La,m,350)(Mi,,450)", sC: "ta as", lines: [
-            { line: "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,250)(Mi,,350)(La,m,450)", sC: "as"},  ]},
+       triggerLine: "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,123)(La,m,206)(Mi,,298)", sC: "ta as", lines: [
+            { line: "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,114)(Mi,,196)(La,m,295)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Nos bendice el Señor desde lo alto,, (Sol,,14)", sC: "tc"},
-            { line: "la vida nos da eternamente,, (Fa,,20)(Mi,,250)", sC: ""},
-            { line: "NOS BENDICE EL SEÑOR DESDE LO ALTO,, (Sol,,14)", sC: "ta as"},
-            { line: "LA VIDA NOS DA ETERNAMENTE., (Fa,,20)(Mi,,250)", sC: "as"},
+            { line: "Como rocío que desciende del Hermón, (Sol,,95)", sC: "tc"},
+            { line: "sobre el monte de Sión,, (Fa,,14)(Mi,,224)", sC: ""},
+            { line: "COMO ROCÍO QUE DESCIENDE DEL HERMÓN, (Sol,,111)", sC: "ta as"},
+            { line: "SOBRE EL MONTE DE SIÓN., (Fa,,15)(Mi,,227)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!..., (La,m,20)(Re,m,250)(La,m,350)(Mi,,450)", sC: "ta as", lines: [
-            { line: "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,250)(Mi,,350)(La,m,450)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,123)(La,m,206)(Mi,,298)", sC: "ta as", lines: [
+            { line: "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,114)(Mi,,196)(La,m,295)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Nos bendice el Señor desde lo alto,, (Sol,,95)", sC: "tc"},
+            { line: "la vida nos da eternamente,, (Fa,,35)(Mi,,222)", sC: ""},
+            { line: "NOS BENDICE EL SEÑOR DESDE LO ALTO,, (Sol,,105)", sC: "ta as"},
+            { line: "LA VIDA NOS DA ETERNAMENTE., (Fa,,39)(Mi,,263)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "¡QUÉ ESTUPENDO, QUÉ ALEGRÍA!, (La,m,20)(Re,m,123)(La,m,206)(Mi,,298)", sC: "ta as", lines: [
+            { line: "¡LOS HERMANOS SIEMPRE UNIDOS!, (La,m,20)(Re,m,114)(Mi,,196)(La,m,295)", sC: "as"},  ]},
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: QUÉ ESTUPENDO, QUÉ ALEGRÍA 
 // SIGUIENTE CANTO DEBAJO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 ╔════════════════════════════════════════════════════════╗
@@ -10729,9 +10709,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 /*
-╔════════════════════════════════════════════════════════╗
+╔════════════════════════════════════════════╗
 ║           QUIÉN NOS SEPARARÁ               ║
-╚════════════════════════════════════════════════════════╝  */
+╚════════════════════════════════════════════╝  */
    {
         id: "quiennosseparara",
         tt: "Quién Nos Separará",
@@ -10803,7 +10783,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 /*
 ╔════════════════════════════════════════════════════════╗
-║           QUIERO ANDAR, MADRE, A JERUSALÉN               ║
+║           QUIERO ANDAR, MADRE, A JERUSALÉN             ║
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "quieroandarmadreajerusalen",
@@ -10842,7 +10822,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "LA LA, LA LA LA LA LA LA LALA ..., (Mi,,10)", sC: "as"},
             { line: "LA LA, LA ... LA, (Re,m,46)(Mi,,138)", sC: "as"},
-            { line: "LALALA ... ", sC: "as"},
+            { line: "LA LA LA ... ", sC: "as"},
     ], lder: [
             { line: "Hazme comer las hierbas,, (Mi,,10)(La,m,223)", sC: "tc"},
             { line: "que pueda saciar mis ansias,, (Re,m,22)(Mi,,62)", sC: ""},
@@ -10861,6 +10841,267 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ADONAI ELOHENU,, (Re,m,63)(Mi,,140)", sC: "as"},
             { line: "ADONAI EJAD., (Fa,,62)(Mi,,108)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: QUIERO ANDAR, MADRE, A JERUSALÉN
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           QUIERO CANTAR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "quierocantar",
+        tt: "Quiero Cantar",
+        title: "Quiero Cantar",
+        subtitle: "Salmo 57 (56)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "141",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/quierocantar.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=quieroandarmadreajerusalen",
+        sig: "/src/index.html?canto=resucito",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "QUIERO CANTAR, (Re,,10)", sC: "ta as"},
+            { line: "A TI QUIERO CANTAR,, (Fa#,m,34)", sC: "as r1"},
+            { line: "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)", sC: "as"},
+            { line: "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Misericordia, Dios mío, misericordia,, (Re,,12)(Fa#,m,300)", sC: "tc"},
+            { line: "que mi alma se refugia en Ti., (Sol,,267)", sC: ""},
+            { line: "Me refugio a la sombra de tus alas,, (Mi,m,167)", sC: ""},
+            { line: "hasta que pase el peligro., (La,7,20)(Re,,207)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUIERO CANTAR, (Re,,10)", sC: "ta as", lines: [
+            { line: "A TI QUIERO CANTAR,, (Fa#,m,34)", sC: "as r1"},
+            { line: "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)", sC: "as"},
+            { line: "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Invoco a Dios, al Dios Altísimo,, (Re,,10)(Fa#,m,242)", sC: "tc"},
+            { line: "a Dios, que ha hecho tanto por mí., (Sol,,321)", sC: ""},
+            { line: "Desde el cielo me envía la salvación,, (Mi,m,212)", sC: ""},
+            { line: "confunde a los que ansían matarme., (La,7,49)(Re,,300)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUIERO CANTAR, (Re,,10)", sC: "ta as", lines: [
+            { line: "A TI QUIERO CANTAR,, (Fa#,m,34)", sC: "as r1"},
+            { line: "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)", sC: "as"},
+            { line: "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Misericordia, Dios mío, misericordia,, (Re,,10)(Fa#,m,300)", sC: ""},
+            { line: "que estoy echado entre leones,, (Sol,,248)", sC: ""},
+            { line: "leones devoradores de hombres,, (Mi,m,146)", sC: ""},
+            { line: "sus dientes son lanzas y flechas., (La,7,64)(Re,,251)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUIERO CANTAR, (Re,,10)", sC: "ta as", lines: [
+            { line: "A TI QUIERO CANTAR,, (Fa#,m,34)", sC: "as r1"},
+            { line: "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)", sC: "as"},
+            { line: "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)", sC: "as"},  ]},
+        ], lder: [
+            { line: "Misericordia, Dios mío, misericordia,, (Re,,10)(Fa#,m,302)", sC: "tc"},
+            { line: "que han tendido una red a mis pasos,, (Sol,,313)", sC: ""},
+            { line: "una red a mis pasos,, ", sC: ""},
+            { line: "me han cavado delante una fosa,, (Mi,m,190)", sC: ""},
+            { line: "pero han sido ellos los que han caído en ella., (La,7,150)(Re,,397)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUIERO CANTAR, (Re,,10)", sC: "ta as", lines: [
+            { line: "A TI QUIERO CANTAR,, (Fa#,m,34)", sC: "as r1"},
+            { line: "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)", sC: "as"},
+            { line: "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Mi corazón está firme, Dios mío,, (Re,,10)(Fa#,m,284)", sC: "tc"},
+            { line: "para Ti, oh Dios, quiero cantar,, (Sol,,270)", sC: ""},
+            { line: "a la aurora yo quiero despertar,, (Mi,m,166)", sC: ""},
+            { line: "despertad, arpa y cítara., (La,7,79)(Re,,189)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUIERO CANTAR, (Re,,10)", sC: "ta as", lines: [
+            { line: "A TI QUIERO CANTAR,, (Fa#,m,34)", sC: "as r1"},
+            { line: "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)", sC: "as"},
+            { line: "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Te daré gracias ante los pueblos, Señor,, (Re,,10)(Fa#,m,360)", sC: "tc"},
+            { line: "cantaré, cantaré ante las naciones,, (Sol,,289)", sC: ""},
+            { line: "porque tu amor ha sido grande conmigo,, (Mi,m,250)", sC: ""},
+            { line: "tu bondad más alta que los cielos., (La,7,79)(Re,,288)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "QUIERO CANTAR, (Re,,10)", sC: "ta as", lines: [
+            { line: "A TI QUIERO CANTAR,, (Fa#,m,34)", sC: "as r1"},
+            { line: "DESPIERTA, DESPIERTA GLORIA MÍA,, (Sol,,64)", sC: "as"},
+            { line: "DESPIERTA, ARPA Y CÍTARA., (La,,67)(Re,,215)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: QUIERO CANTAR
+// SIGUIENTE CANTO DEBAJO
+
+// LETRA R
+/*
+╔════════════════════════════════════════════════════════╗
+║           RESUCITÓ               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "resucito",
+        tt: "Resucitó",
+        title: "Resucitó",
+        subtitle: "(Kiko Argüello)",
+        category: ["Precatecumenado","Pascua","Pentecostés","Comunión"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "142",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/resucito.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=quierocantar",
+        sig: "/src/index.html?canto=resurrexit",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "RESUCITÓ, RESUCITÓ,, (La,m,20)(Sol,,199)", sC: "ta as"},
+            { line: "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)", sC: "as"},
+            { line: "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)", sC: "as"},
+            { line: "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "La muerte,, (La,m,66)", sC: "tc"},
+            { line: "¿dónde está la muerte?,, (Sol,,182)", sC: ""},
+            { line: "¿dónde está mi muerte?,, (Fa,,187)", sC: ""},
+            { line: "¿dónde su victoria?, (Mi,,144)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)", sC: "ta as", lines: [
+            { line: "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)", sC: "as"},
+            { line: "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)", sC: "as"},
+            { line: "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Gracias, (La,m,20)", sC: "tc"},
+            { line: "sean dadas al Padre,, (Sol,,157)", sC: ""},
+            { line: "que nos pasó a su Reino,, (Fa,,197)", sC: ""},
+            { line: "donde se vive de amor., (Mi,,203)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)", sC: "ta as", lines: [
+            { line: "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)", sC: "as"},
+            { line: "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)", sC: "as"},
+            { line: "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Alegría,, (La,m,52)", sC: "tc"},
+            { line: "alegría, hermanos,, (Sol,,132)", sC: ""},
+            { line: "que si hoy nos queremos, (Fa,,189)", sC: ""},
+            { line: "es porque resucitó., (Mi,,172)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)", sC: "ta as", lines: [
+            { line: "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)", sC: "as"},
+            { line: "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)", sC: "as"},
+            { line: "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si con Él morimos,, (La,m,130)", sC: "tc"},
+            { line: "con Él vivimos,, (Sol,,91)", sC: ""},
+            { line: "con Él cantamos:, (Fa,,107)", sC: ""},
+            { line: "¡Aleluya!, (Mi,,69)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "RESUCITÓ, RESUCITÓ, (La,m,20)(Sol,,199)", sC: "ta as", lines: [
+            { line: "RESUCITÓ, ALELUYA., (Fa,,89)(Mi,,186)", sC: "as"},
+            { line: "ALELUYA, ALELUYA,, (La,m,80)(Sol,,179)", sC: "as"},
+            { line: "ALELUYA, RESUCITÓ., (Fa,,71)(Mi,,190)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: RESUCITÓ
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           RESURREXIT               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "resurrexit",
+        tt: "Resurrexit",
+        title: "Resurrexit",
+        subtitle: "Juan 11,25s",
+        category: ["Precatecumenado","Pascua","Pentecostés","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "143",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/resurrexit.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=resucito",
+        sig: "/src/index.html?canto=salvereinadeloscielos",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,250)", sC: "ta as"},
+            { line: "RESURREXIT, RESURREXIT., (Fa,,20)(Mi,,250)", sC: "as"},
+            { line: "GLORIA, GLORIA, GLORIA, GLORIA., (La,m,20)(Mi,7,250)(Fa,,350)(Mi,,450)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo soy la Resurrección,, (La,m,20)(Mi7,,250)", sC: ""},
+            { line: "la Resurrección, la Resurrección., (Re,m,22)(Mi7,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "YO SOY LA RESURRECCIÓN,, (La,m,20)(Mi7,,250)", sC: "ta as"},
+            { line: "LA RESURRECCIÓN,, (Rem,,)", sC: "as"},
+            { line: "LA RESURRECCIÓN., (Mi7,,)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El que cree en mí, aunque muera vivirá,, (Re,m,22)(Mi7,,250)", sC: "tc"},
+            { line: "y todo el que vive y cree en mí,, (Rem,,)(Fa,,250)", sC: ""},
+            { line: "no morirá jamás, no morirá jamás., (Mi7,,)(Fa,,250)(Mi7,,350)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
+            { line: "RESURREXIT, RESURREXIT., (Fa,,20)(Mi,,250)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: " GLORIA, GLORIA, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
+            { line: "GLORIA, GLORIA,, (La,m,20)(Mi,7,250)(Fa,,350)(Mi,,450)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿Crees tú esto? ¿Crees tú esto?, (Re,m,22)(Mi,,250)(Re,m,350)(Mi,,450)", sC: "tc"},
+            { line: "Sí, yo creo que tú eres el Cristo,, (Fa,,20)", sC: ""},
+            { line: "el Hijo de Dios, que ha de venir al mundo., (Mi7,,)(Fa,,250)(Mi7,,350)", sC: ""},
+    ], lder: [
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
+            { line: "RESURREXIT, RESURREXIT., (Fa,,20)(Mi,,250)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: " GLORIA, GLORIA, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
+            { line: "GLORIA, GLORIA,, (La,m,20)(Mi,7,250)(Fa,,350)(Mi,,450)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA, LA, LA, LA, LA LA,, (La,m,20)", sC: "as"},
+            { line: "LA LA LA LA, LA LA, LA LA;, (Re,m,22)(Mi7,,250)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LA, LA, LA, LA, LA LA,, (La,m,20)", sC: "as"},
+            { line: "LA, LA LA LA., (Re,m,22)(Mi7,,250)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
+            { line: "RESURREXIT, RESURREXIT., (Fa,,20)(Mi,,250)", sC: "as"},  ]},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: " GLORIA, GLORIA, (La,m,20)(Mi7,,250)", sC: "ta as", lines: [
+            { line: "GLORIA, GLORIA,, (La,m,20)(Mi,7,250)(Fa,,350)(Mi,,450)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA, ALELUYA,, (La,m,20)(Mi7,,250)", sC: "as"},
+            { line: "ALELUYA, ALELUYA., (Fa,,20)(Mi,,250)", sC: "as"},
+            { line: "ALELUYA., (La,m,20)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: RESURREXIT
 // SIGUIENTE CANTO DEBAJO
 
 
