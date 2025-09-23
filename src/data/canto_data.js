@@ -8821,35 +8821,35 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=miradqueestupendo",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "ME HAS SEDUCIDO, SEÑOR,, (La,m,20)(Mi7,,242)", sC: "ta as"},
+            { line: "ME HAS SEDUCIDO, SEÑOR,, (La,m,20)(Mi,7,242)", sC: "ta as"},
             { line: "Y ME HE DEJADO SEDUCIR., (La,m,235)", sC: "as r1"},
-            { line: "HAS LUCHADO CONMIGO, (Mi7,,207)", sC: "as"},
+            { line: "HAS LUCHADO CONMIGO, (Mi,7,207)", sC: "as"},
             { line: "Y ME HAS VENCIDO., (La,m,154)", sC: "as"},
             { line: "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)", sC: "as"},
-            { line: "ME HAS PODIDO., (Mi7,,127)", sC: "as"},
+            { line: "ME HAS PODIDO., (Mi,7,127)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Cuando hablo debo gritar:, (La,m,20)(Mi,7,229)", sC: "tc"},
             { line: "«¡Violencia!», «¡Opresión!», (La,m,202)", sC: ""},
             { line: "Así tu palabra es para mí befa y oprobio., (Mi,7,95)(La,m,337)", sC: ""},
-            { line: "Me decía: «No pensaré más en Él,, (Mi7,,74)", sC: ""},
+            { line: "Me decía: «No pensaré más en Él,, (Mi,7,74)", sC: ""},
             { line: "no hablaré más en su nombre•., (La,m,231)", sC: ""},
-            { line: "Mas en mi corazón, (Mi7,,16)", sC: ""},
+            { line: "Mas en mi corazón, (Mi,7,16)", sC: ""},
             { line: "había un fuego ardiente,, ", sC: ""},
             { line: "que corría por mis huesos., (Fa,,79)(Mi,,206)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "MAS EN MI CORAZÓN, (Mi7,,17)", sC: "ta as"},
+            { line: "MAS EN MI CORAZÓN, (Mi,7,17)", sC: "ta as"},
             { line: "HABÍA UN FUEGO ARDIENTE,, ", sC: "as"},
             { line: "QUE CORRÍA POR MIS HUESOS., (Fa,,107)(Mi,,255)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ME HAS SEDUCIDO, SEÑOR, (La,m,20)(Mi7,,242)", sC: "ta as", lines: [
+       triggerLine: "ME HAS SEDUCIDO, SEÑOR, (La,m,20)(Mi,7,242)", sC: "ta as", lines: [
             { line: "Y ME HE DEJADO SEDUCIR., (La,m,235)", sC: "as"},
-            { line: "HAS LUCHADO CONMIGO, (Mi7,,207)", sC: "as"},
+            { line: "HAS LUCHADO CONMIGO, (Mi,7,207)", sC: "as"},
             { line: "Y ME HAS VENCIDO., (La,m,154)", sC: "as"},
             { line: "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)", sC: "as"},
-            { line: "ME HAS PODIDO., (Mi7,,124)", sC: "as"},  ]},
+            { line: "ME HAS PODIDO., (Mi,7,124)", sC: "as"},  ]},
     ], lder: [
-            { line: "Maldito el día en que nací. (Mi7,,16)", sC: "tc"},
+            { line: "Maldito el día en que nací. (Mi,7,16)", sC: "tc"},
             { line: "Maldito el hombre ", sC: ""},
             { line: "que le dio la noticia a mi padre: ", sC: ""},
             { line: "«Te ha nacido un hijo». ", sC: ""},
@@ -8859,19 +8859,19 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "MAS EL SEÑOR ESTÁ CONMIGO,, (Do,,10)(Sol,,272)", sC: "ta as"},
             { line: "COMO UN HÉROE VALEROSO., (Do,,235)", sC: "as r2"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Cantad himnos al Señor, alabad su Nombre, (La,m,20)(Mi7,,88)(La,m,360)", sC: "tc"},
-            { line: "que ha salvado la vida de este pobre., (Fa,,114)(Mi7,,311)", sC: ""},
+            { line: "Cantad himnos al Señor, alabad su Nombre, (La,m,20)(Mi,7,88)(La,m,360)", sC: "tc"},
+            { line: "que ha salvado la vida de este pobre., (Fa,,114)(Mi,7,311)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "MAS EL SEÑOR ESTÁ CONMIGO,, (Do,,10)(Sol,,270)", sC: "ta as"},
             { line: "COMO UN HÉROE VALEROSO., (Do,,239)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ME HAS SEDUCIDO, SEÑOR, (La,m,20)(Mi7,,242)", sC: "ta as", lines: [
+       triggerLine: "ME HAS SEDUCIDO, SEÑOR, (La,m,20)(Mi,7,242)", sC: "ta as", lines: [
             { line: "Y ME HE DEJADO SEDUCIR., (La,m,235)", sC: "as"},
-            { line: "HAS LUCHADO CONMIGO, (Mi7,,207)", sC: "as"},
+            { line: "HAS LUCHADO CONMIGO, (Mi,7,207)", sC: "as"},
             { line: "Y ME HAS VENCIDO., (La,m,154)", sC: "as"},
             { line: "HAS SIDO MÁS FUERTE QUE YO,, (Fa,,10)", sC: "as"},
-            { line: "ME HAS PODIDO., (Mi7,,124)", sC: "as"},  ]},
+            { line: "ME HAS PODIDO., (Mi,7,124)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ME HAS SEDUCIDO, SEÑOR 
 // SIGUIENTE CANTO DEBAJO
 /*
@@ -11051,14 +11051,14 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=salvereinadeloscielos",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi7,,218)", sC: "ta as"},
+            { line: "RESURREXIT, RESURREXIT,, (La,m,20)(Mi,7,218)", sC: "ta as"},
             { line: "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)", sC: "as"},
             { line: "GLORIA, GLORIA, GLORIA, GLORIA., (La,m,20)(Mi,7,116)(Fa,,199)(Mi,,287)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Yo soy la Resurrección,, (La,m,20)(Mi,7,198)", sC: ""},
             { line: "la Resurrección, la Resurrección., (Re,m,22)(Mi,7,291)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "YO SOY LA RESURRECCIÓN,, (La,m,20)(Mi7,,238)", sC: "ta as"},
+            { line: "YO SOY LA RESURRECCIÓN,, (La,m,20)(Mi,7,238)", sC: "ta as"},
             { line: "LA RESURRECCIÓN,, (Re,m,20)", sC: "as"},
             { line: "LA RESURRECCIÓN., (Mi,7,165)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -11067,10 +11067,10 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "no morirá jamás, no morirá jamás., (Mi,7,145)(Fa,,179)(Mi,7,311)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi7,,220)", sC: "ta as", lines: [
+       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi,7,220)", sC: "ta as", lines: [
             { line: "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)", sC: "as"},  ]},
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi7,,116)", sC: "ta as", lines: [
+       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi,7,116)", sC: "ta as", lines: [
             { line: "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)", sC: "as gloria"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¿Crees tú esto? ¿Crees tú esto?, (Re,m,22)(Mi,,103)(Re,m,185)(Mi,,258)", sC: "tc"},
@@ -11079,26 +11079,26 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     ], lder: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi7,,220)", sC: "ta as", lines: [
+       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi,7,220)", sC: "ta as", lines: [
             { line: "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)", sC: "as"},  ]},
             { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
-       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi7,,116)", sC: "ta as", lines: [
+       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi,7,116)", sC: "ta as", lines: [
             { line: "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)", sC: "as gloria"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "LA, LA, LA, LA,  LA LA,, (La,m,20)", sC: "as"},
-            { line: "LA LA LA LA, LA LA, LA LA;, (Re,m,22)(Mi7,,178)", sC: "as"},
+            { line: "LA LA LA LA, LA LA, LA LA;, (Re,m,22)(Mi,7,178)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "LA, LA, LA, LA, LA LA,, (La,m,20)", sC: "as"},
             { line: "LA, LA LA LA., (Re,m,22)(Mi,7,110)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
-       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi7,,220)", sC: "ta as", lines: [
+       triggerLine: "RESURREXIT, RESURREXIT, (La,m,20)(Mi,7,220)", sC: "ta as", lines: [
             { line: "RESURREXIT, RESURREXIT., (Fa,,92)(Mi,,223)", sC: "as"},  ]},
             { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
-       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi7,,116)", sC: "ta as", lines: [
+       triggerLine: "GLORIA, GLORIA, (La,m,32)(Mi,7,116)", sC: "ta as", lines: [
             { line: "GLORIA, GLORIA,, (Fa,,33)(Mi,,117)", sC: "as gloria"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA, ALELUYA,, (La,m,51)(Mi7,,155)", sC: "as"},
+            { line: "ALELUYA, ALELUYA,, (La,m,51)(Mi,7,155)", sC: "as"},
             { line: "ALELUYA, ALELUYA., (Fa,,55)(Mi,,150)", sC: "as"},
             { line: "ALELUYA., (La,m,79)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: RESURREXIT
