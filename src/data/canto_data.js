@@ -11103,6 +11103,250 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ALELUYA., (La,m,79)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: RESURREXIT
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SALVE, REINA DE LOS CIELOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "salvereinadeloscielos",
+        tt: "Salve, Reina De Los Cielos",
+        title: "Salve, Reina De Los Cielos",
+        subtitle: "Himno lat. «Ave, Regina Caelorum»",
+        category: ["Precatecumenado","Vírgen María"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "144",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/salvereinadeloscielos.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=resurrexit",
+        sig: "/src/index.html?canto=seencontrarondosangeles",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Salve, Reina de los Cielos,, (La,m,20)", sC: "tc"},
+            { line: "Señora, Señora de los Ángeles., (Sol,,40)(La,m,222)", sC: ""},
+            { line: "Salve raíz, Salve puerta,, (Fa,,77)(Mi,,185)", sC: ""},
+            { line: "tú, tú, tú abriste el camino a nuestra luz., (Mi,7,15)(La,m,368)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALÉGRATE, VIRGEN MARÍA,, (La,m,17)(Mi,7,238)", sC: "ta as"},
+            { line: "ENTRE TODAS LA MÁS BELLA., (La,m,243)", sC: "as"},
+            { line: "SALVE, ETERNA DONCELLA,, (Re,m,20)(La,m,216)", sC: "as"},
+            { line: "RUEGA A CRISTO POR NOSOTROS., (Mi,7,123)(La,m,264)", sC: "as"},
+            { line: "SALVE, ETERNA DONCELLA,, (Re,m,22)(La,m,216)", sC: "as"},
+            { line: "RUEGA A CRISTO POR NOSOTROS., (Mi,7,123)(La,m,267)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "I..    "+" I...    I..., (La,m,20)(Sol,,57)(La,m,108)", sC: "tc melisma"},
+            { line: "Salve raíz, Salve puerta,, (Fa,,78)(Mi,,186)", sC: ""},
+            { line: "tú, tú, tú abriste el camino a nuestra luz., (Mi,7,17)(La,m,367)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ALÉGRATE, VIRGEN MARÍA, (La,m,17)(Mi,7,238)", sC: "ta as", lines: [
+            { line: "ENTRE TODAS LA MÁS BELLA., (La,m,243)", sC: "as"},
+            { line: "SALVE, ETERNA DONCELLA,, (Re,m,20)(La,m,216)", sC: "as"},
+            { line: "RUEGA A CRISTO POR NOSOTROS., (Mi,7,123)(La,m,264)", sC: "as"},
+            { line: "SALVE, ETERNA DONCELLA,, (Re,m,22)(La,m,216)", sC: "as"},
+            { line: "RUEGA A CRISTO POR NOSOTROS., (Mi,7,123)(La,m,267)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: SALVE, REINA DE LOS CIELOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SE ENCONTRARON DOS ÁNGELES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "seencontrarondosangeles",
+        tt: "Se Encontraron Dos Ángeles",
+        title: "Se Encontraron Dos Ángeles",
+        subtitle: "Melodía hebraica",
+        category: ["Precatecumenado","Niños","Paz"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* Se repite todo el canto subiendo medio tono cada vez.",
+        nCanURL: "",
+        dbno: "145",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/seencontrarondosangeles.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=salvereinadeloscielos",
+        sig: "/src/index.html?canto=senorayudameanodudardeti",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Se encontraron dos ángeles,, (La,m,20)", sC: "tc"},
+            { line: "el uno preguntó al otro:, ", sC: ""},
+            { line: "«¿dónde,dónde, (Re,m,67)(La,m,131)", sC: ""},
+            { line: "está la gloria de Dios?», (Mi,,31)(La,m,182)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«¿DÓNDE, DÓNDE, (Re,m,85)(La,m,159)", sC: "ta as"},
+            { line: "ESTÁ LA GLORIA DE DIOS?», (Mi,,39)(La,m,221)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«En la bendición,, (La,m,20)(Re,m,133)", sC: "tc"},
+            { line: "en la bendición,, (La,m,126)", sC: ""},
+            { line: "en la bendición»,, (Mi,,131)", sC: ""},
+            { line: "el otro le respondió., (La,m,167)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "«EN LA BENDICIÓN,, (La,m,20)(Re,m,157)", sC: "ta as"},
+            { line: "EN LA BENDICIÓN,, (La,m,149)", sC: "as"},
+            { line: "EN LA BENDICIÓN,, (Mi,,151)", sC: "as"},
+            { line: "ESTÁ LA GLORIA DE DIOS»., (La,m,221)", sC: "as ast"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: SE ENCONTRARON DOS ÁNGELES
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SEÑOR, AYÚDAME A NO DUDAR DE TI               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "senorayudameanodudardeti",
+        tt: "Señor, Ayúdame A No Dudar De Ti",
+        title: "Señor, Ayúdame A No Dudar De Ti",
+        subtitle: "(Kiko Argüello)",
+        category: ["Precatecumenado","Cuaresma","Penitencial"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "146",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/senorayudameanodudardeti.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=seencontrarondosangeles",
+        sig: "/src/index.html?canto=senornomecorrijasentucolera",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡Señor, ayúdame, Señor!, (Si,m,20)(La,,99)(Si,m,216)", sC: "tc"},
+            { line: "¡SEÑOR, AYÚDAME, SEÑOR!, (La,,119)(Si,m,240)", sC: "ta as"},
+            { line: "A no dudar de Ti., (Fa#,,35)", sC: "tc"},
+            { line: "A NO DUDAR DE TI., ", sC: "ta as"},
+            { line: "¡Señor, ayúdame, Señor!, (Si,m,50)(La,,104)(Si,m,217)", sC: "tc"},
+            { line: "¡SEÑOR, AYÚDAME, SEÑOR!, (La,,121)(Si,m,239)", sC: "ta as"},
+            { line: "A no dudar nunca de tu amor., (Sol,,29)(Fa#,,263)", sC: "tc"},
+            { line: "A NO DUDAR NUNCA DE TU AMOR., (Sol,,39)(Fa#,,302)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tu gracia derramando, (La,,10)(Re,,166)", sC: "tc"},
+            { line: "dejó mi corazón ya florecido, (Si,m,20)(Sol,,131)(Fa#,,241)", sC: ""},
+            { line: "de mil ansias de amor,, (Mi,m,49)(Fa#,,199)", sC: ""},
+            { line: "de mil ansias de amor., (Mi,m,49)(Fa#,,199)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que más no puedo que sufrir, (La,,10)(Sol,,150)(Fa#,,264)", sC: ""},
+            { line: "que vivir en un gemido., (Sol,,67)(Fa#,,187)", sC: ""},
+    ], lder: [
+            { line: "Y en esta llama de tu amor oscura,, (Re,,10)(La,,306)", sC: ""},
+            { line: "en esta tela que envuelve mi alma, ", sC: ""},
+            { line: "y la sofoca,, (Re,,75)", sC: ""},
+            { line: "siento mi corazón que se disloca,, (Sol,,23)(Fa#,,284)", sC: ""},
+            { line: "que se abre y se derrama, (Sol,,79)(Fa#,,211)", sC: ""},
+            { line: "como agua que inunda tu jardín., (Mi,m,77)(Fa#,,289)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "¡SEÑOR, AYÚDAME, SEÑOR \n ...A NO DUDAR NUNCA DE TU AMOR., (Si,m,20)(La,,116)(Si,m,236)", sC: "ta as", lines: [
+            { line: "¡SEÑOR, AYÚDAME, SEÑOR!, (La,,119)(Si,m,240)", sC: "as sub1"},
+            { line: "A no dudar de Ti., (Fa#,,35)", sC: ""},
+            { line: "A NO DUDAR DE TI., ", sC: "as"},
+            { line: "¡Señor, ayúdame, Señor!, (Si,m,50)(La,,104)(Si,m,217)", sC: ""},
+            { line: "¡SEÑOR, AYÚDAME, SEÑOR!, (La,,121)(Si,m,239)", sC: "as"},
+            { line: "A no dudar nunca de tu amor., (Sol,,29)(Fa#,,263)", sC: ""},
+            { line: "A NO DUDAR NUNCA DE TU AMOR., (Sol,,29)(Fa#,,302)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y EN ESTA LLAMA DE TU AMOR OSCURA,, (Re,,10)(La,,352)", sC: "ta as"},
+            { line: "EN ESTA TELA QUE ENVUELVE MI ALMA, ", sC: "as"},
+            { line: "Y LA SOFOCA,, (Re,,91)", sC: "as"},
+            { line: "SIENTO MI CORAZÓN QUE SE DISLOCA,, (Sol,,26)(Fa#,,338)", sC: "as"},
+            { line: "QUE SE ABRE Y SE DERRAMA, (Sol,,87)(Fa#,,245)", sC: "as"},
+            { line: "COMO AGUA QUE INUNDA TU JARDÍN., (Mi,m,84)(Fa#,,336)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: SEÑOR, AYÚDAME A NO DUDAR DE TI
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SEÑOR, NO ME CORRIJAS EN TU CÓLERA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "senornomecorrijasentucolera",
+        tt: "Señor, No Me Corrijas En Tu Cólera",
+        title: "Señor, No Me Corrijas En Tu Cólera",
+        subtitle: "Salmo 6",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "147",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/senornomecorrijasentucolera.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=senorayudameanodudardeti",
+        sig: "/src/index.html?canto=sermondelamontana",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SEÑOR, NO ME CORRIJAS EN TU CÓLERA,, (Fa#,5/9 dim,47)(Sol,,210)(Fa#,,335)", sC: "tc as"},
+            { line: "EN TU FUROR NO ME CASTIGUES., (Sol,,107)(Fa#,,258)", sC: "as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ten piedad de mí, ten piedad Señor,, (Si,m,18)(La,,324)", sC: "tc"},
+            { line: "que estoy sin fuerzas,, (Fa#,,158)", sC: ""},
+            { line: "sáname tú, Señor,, (Si,m,18)(La,,157)", sC: ""},
+            { line: "que se desmoronan mis huesos., (Fa#,,267)", sC: ""},
+            { line: "Hundida tengo el alma,, (Sol,,14)(Fa#,,179)", sC: ""},
+            { line: "y tú, Señor, ¿hasta cuándo?, (La,,27)(Fa#,,213)", sC: ""},
+            { line: "Y TÚ, SEÑOR, ¿HASTA CUÁNDO?, (La,,36)(Fa#,,248)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SEÑOR, NO ME CORRIJAS EN TU CÓLERA, (Fa#,5/9 dim,47)(Sol,,250)(Fa#,,335)", sC: "ta as", lines: [
+            { line: "EN TU FUROR NO ME CASTIGUES., (Sol,,107)(Fa#,,258)", sC: "as r1"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Vuélvete, Señor, recobra mi alma,, (Si,m,17)(La,,135)(Fa#,,282)", sC: "tc"},
+            { line: "sáname tú, Señor, por tu misericordia., (Si,m,18)(La,,159)(Fa#,,317)", sC: ""},
+            { line: "Que nadie entre los muertos te recuerda,, (La,,58)(Fa#,,350)", sC: ""},
+            { line: "ni en los infiernos se canta tu alabanza., (La,,120)(Fa#,,336)", sC: ""},
+            { line: "QUE NADIE ENTRE LOS MUERTOS, (La,,20)", sC: "ta as"},
+            { line: "TE RECUERDA, NI EN LOS INFIERNOS, (Fa#,,88)(La,,296)", sC: "as"},
+            { line: "SE CANTA TU ALABANZA., (Fa#,,187)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "SEÑOR, NO ME CORRIJAS EN TU CÓLERA, (Fa#,5/9 dim,47)(Sol,,250)(Fa#,,335)", sC: "ta as", lines: [
+            { line: "EN TU FUROR NO ME CASTIGUES., (Sol,,107)(Fa#,,258)", sC: "as r1"},  ]},
+    ], lder: [
+            { line: "Estoy cansado de gemir,, (Si,m,17)", sC: "tc"},
+            { line: "inundo de lágrimas mi cama,, (La,,10)(Si,m,236)", sC: ""},
+            { line: "mis ojos se consumen en la angustia,, (La,,313)", sC: ""},
+            { line: "envejezco entre enemigos., (Fa#,,215)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Apartaos de mí, malvados,, (La,,10)(Fa#,,209)", sC: ""},
+            { line: "que el Señor escucha mis sollozos,, (La,,111)(Fa#,,293)", sC: ""},
+            { line: "que el Señor acoge mi oración., (La,,111)(Fa#,,275)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "SEÑOR, NO ME CORRIJAS EN TU CÓLERA, (Fa#,5/9 dim,47)(Sol,,250)(Fa#,,335)", sC: "ta as", lines: [
+            { line: "EN TU FUROR NO ME CASTIGUES., (Sol,,107)(Fa#,,258)", sC: "as r1"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y tú, Señor, ¿hasta cuándo?, (La,,29)(Fa#,,215)", sC: "tc"},
+            { line: "Y TÚ, SEÑOR, ¿HASTA CUÁNDO?, (La,,34)(Fa#,,246)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: SEÑOR, NO ME CORRIJAS EN TU CÓLERA
+// SIGUIENTE CANTO DEBAJO
 
 
 
