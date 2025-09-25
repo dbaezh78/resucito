@@ -1001,14 +1001,14 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { line: "Bendecid al Señor, bendecid al Señor,(Re,m,20)", sC: "niño"},
-            { line: "vosotros los siervos del Señor., (La7,,266)", sC: ""},
+            { line: "vosotros los siervos del Señor., (La,7,266)", sC: ""},
             { line: "Bendecid al Señor, bendecid al Señor, ", sC: ""},
             { line: "vosotros que estáis en la casa del Señor., (Re,m,366)", sC: ""},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { line: "Alzad a Él las manos, alzad a Él las manos, (Re,m,21)", sC: ""},
-            { line: "y bendecid al Señor,(La7,,172)", sC: ""},
+            { line: "y bendecid al Señor,(La,7,172)", sC: ""},
             { line: "vosotros que estáis en la casa del Señor, ", sC: ""},
             { line: "durante la noche., (Re,m,159)", sC: ""},
             
@@ -1027,14 +1027,14 @@ const allCantosData = [
             
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,(Re,m,20)", sC: "as ta", lines: [
-            { line: "VOSOTROS LOS SIERVOS DEL SEÑOR., (La7,,327)", sC: "as"},
+            { line: "VOSOTROS LOS SIERVOS DEL SEÑOR., (La,7,327)", sC: "as"},
             { line: "BENDECID AL SEÑOR, BENDECID AL SEÑOR,", sC: "as"},
             { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR., (Re,m,439)", sC: "as"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { line: "ALZAD A ÉL LAS MANOS, ALZAD A ÉL LAS MANOS, (Re,m,21)", sC: "as ta"} ,
-            { line: "Y BENDECID AL SEÑOR,(La7,,172)", sC: "as"},
+            { line: "Y BENDECID AL SEÑOR,(La,7,172)", sC: "as"},
             { line: "VOSOTROS QUE ESTÁIS EN LA CASA DEL SEÑOR, ", sC: "as"},
             { line: "DURANTE LA NOCHE., (Re,m,159)", sC: "as"},  ]},
             
@@ -8261,14 +8261,14 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PORQUE MORIR,, ", sC: "as"},
             { line: "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)", sC: "as"},
             { line: "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)", sC: "as"},
-            { line: "ESTAR CONTIGO,, (Si7,,124)", sC: "as"},
+            { line: "ESTAR CONTIGO,, (Si,7,124)", sC: "as"},
             { line: "ESTAR CONTIGO., (Mi,,119)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Una cosa te ruego,, (Mi,,10)", sC: "tc"},
             { line: "eso solo te pido:, ", sC: ""},
             { line: "no dudar nunca de tu amor,, (Do#,m,26)(Sol#,,246)", sC: ""},
             { line: "no dudar nunca de Ti,, (La,,10)(Mi,,196)", sC: ""},
-            { line: "estar contigo,, (Si7,,95)", sC: ""},
+            { line: "estar contigo,, (Si,7,95)", sC: ""},
             { line: "estar contigo., (Mi,,99)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
@@ -8279,14 +8279,14 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PORQUE MORIR,, ", sC: "as"},
             { line: "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)", sC: "as"},
             { line: "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)", sC: "as"},
-            { line: "ESTAR CONTIGO,, (Si7,,124)", sC: "as"},
+            { line: "ESTAR CONTIGO,, (Si,7,124)", sC: "as"},
             { line: "ESTAR CONTIGO., (Mi,,119)", sC: "as"},  ]},
     ], lder: [
             { line: "Oh qué bueno,, (Mi,,10)", sC: "tc"},
             { line: "oh qué dulce,, ", sC: ""},
             { line: "ha sido tu amor conmigo,, (Do#,m,27)(Sol#,,211)", sC: ""},
             { line: "ha sido tu amor conmigo,, (La,,10)(Mi,,210)", sC: ""},
-            { line: "oh qué bueno,, (Si7,,101)", sC: ""},
+            { line: "oh qué bueno,, (Si,7,101)", sC: ""},
             { line: "oh qué dulce., (Mi,,89)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
@@ -8297,7 +8297,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PORQUE MORIR,, ", sC: "as"},
             { line: "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)", sC: "as"},
             { line: "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)", sC: "as"},
-            { line: "ESTAR CONTIGO,, (Si7,,124)", sC: "as"},
+            { line: "ESTAR CONTIGO,, (Si,7,124)", sC: "as"},
             { line: "ESTAR CONTIGO., (Mi,,119)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
@@ -8305,7 +8305,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "eso solo te pido:, ", sC: ""},
             { line: "no dudar nunca de tu amor,, (Do#,m,26)(Sol#,,246)", sC: ""},
             { line: "no dudar nunca de Ti,, (La,,10)(Mi,,196)", sC: ""},
-            { line: "estar contigo,, (Si7,,95)", sC: ""},
+            { line: "estar contigo,, (Si,7,95)", sC: ""},
             { line: "estar contigo., (Mi,,99)", sC: ""},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
@@ -8316,7 +8316,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PORQUE MORIR,, ", sC: "as"},
             { line: "ES CON MUCHO LO MEJOR,, (Do#,m,27)(Sol#,,238)", sC: "as"},
             { line: "ES CON MUCHO LO MEJOR,, (La,,10)(Mi,,233)", sC: "as"},
-            { line: "ESTAR CONTIGO,, (Si7,,124)", sC: "as"},
+            { line: "ESTAR CONTIGO,, (Si,7,124)", sC: "as"},
             { line: "ESTAR CONTIGO., (Mi,,119)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: LLÉVAME AL CIELO
@@ -8684,7 +8684,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "el susurro del Espíritu de Dios., (La,7,63)(Re,,265)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Tú eres la zarza ardiente de Moisés, (Fa#,m,336)", sC: ""},
-            { line: "que llevas al Señor y no te consumes., (Sol,,61)(La,,304)(La7,,366)", sC: ""},
+            { line: "que llevas al Señor y no te consumes., (Sol,,61)(La,,304)(La,7,366)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Tú eres Hel lugar junto a mí», (Re,,36)(Fa#,,258)", sC: ""},
             { line: "que mostró el Señor a Moisés,, (Sol,,101)(Re,,265)", sC: ""},
@@ -8904,69 +8904,69 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     lizq: [
             { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,20)", sC: "ta as"},
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,66)(Si7,,275)", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,66)(Si,7,275)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Es ungüento perfumado que desciende,, (La,m,80)(Si7,,335)", sC: "tc"},
-            { line: "que desciende por la barba de Aarón., (La,m,96)(Si7,,337)", sC: ""},
+            { line: "Es ungüento perfumado que desciende,, (La,m,80)(Si,7,335)", sC: "tc"},
+            { line: "que desciende por la barba de Aarón., (La,m,96)(Si,7,337)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ES UNGÜENTO PERFUMADO, (Do,,100)", sC: "ta as"},
-            { line: "QUE DESCIENDE, (Si7,,110)", sC: "as"},
-            { line: "HASTA EL BORDE DEL MANTO., (Do,,61)(Si7,,242)", sC: "as"},
+            { line: "QUE DESCIENDE, (Si,7,110)", sC: "as"},
+            { line: "HASTA EL BORDE DEL MANTO., (Do,,61)(Si,7,242)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)", sC: "ta as", lines: [
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,275)", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,275)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Es como rocío del Hermón, (La,m,44)(Si7,,193)", sC: "tc"},
-            { line: "que desciende sobre el monte Sión;, (La,m,97)(Si7,,306)", sC: ""},
-            { line: "ES ROCÍO DEL HERMÓN QUE DESCIENDE, (Do,,70)(Si7,,344)", sC: "as"},
-            { line: "SOBRE EL MONTE SIÓN., (Do,,62)(Si7,,187)", sC: "as"},
+            { line: "Es como rocío del Hermón, (La,m,44)(Si,7,193)", sC: "tc"},
+            { line: "que desciende sobre el monte Sión;, (La,m,97)(Si,7,306)", sC: ""},
+            { line: "ES ROCÍO DEL HERMÓN QUE DESCIENDE, (Do,,70)(Si,7,344)", sC: "as"},
+            { line: "SOBRE EL MONTE SIÓN., (Do,,62)(Si,7,187)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)", sC: "ta as", lines: [
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,275)", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,275)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)", sC: "as"},  ]},
     ], lder: [
-            { line: "Porque allí el Señor nos ha dado,, (La,m,101)(Si7,,277)", sC: "tc"},
-            { line: "nos ha dado su bendición., (La,m,88)(Si7,,225)", sC: ""},
-            { line: "PORQUE ALLÍ EL SEÑOR NOS HA DADO,, (Do,,126)(Si7,,339)", sC: "ta as"},
-            { line: "NOS HA DADO SU AMOR., (Do,,65)(Si7,,211)", sC: "as"},
+            { line: "Porque allí el Señor nos ha dado,, (La,m,101)(Si,7,277)", sC: "tc"},
+            { line: "nos ha dado su bendición., (La,m,88)(Si,7,225)", sC: ""},
+            { line: "PORQUE ALLÍ EL SEÑOR NOS HA DADO,, (Do,,126)(Si,7,339)", sC: "ta as"},
+            { line: "NOS HA DADO SU AMOR., (Do,,65)(Si,7,211)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)", sC: "ta as", lines: [
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,275)", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,275)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Porque allí el Señor nos ha dado, (La,m,97)(Si7,,277)", sC: "tc"},
-            { line: "la vida eternamente., (La,m,39)(Si7,,151)", sC: ""},
-            { line: "PORQUE ALLÍ EL SEÑOR NOS HA DADO, (Do,,129)(Si7,,336)", sC: "ta as"},
-            { line: "LA VIDA PARA SIEMPRE., (Do,,45)(Si7,,166)", sC: "as"},
+            { line: "Porque allí el Señor nos ha dado, (La,m,97)(Si,7,277)", sC: "tc"},
+            { line: "la vida eternamente., (La,m,39)(Si,7,151)", sC: ""},
+            { line: "PORQUE ALLÍ EL SEÑOR NOS HA DADO, (Do,,129)(Si,7,336)", sC: "ta as"},
+            { line: "LA VIDA PARA SIEMPRE., (Do,,45)(Si,7,166)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "¡MIRAD QUÉ ESTUPENDO, (Mi,m,20)", sC: "ta as", lines: [
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,275)", sC: "as"},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,275)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡MIRAD QUÉ ESTUPENDO,, (Mi,m,50)", sC: "as"},
             { line: "GUSTAD QUÉ ALEGRÍA, ", sC: "as"},
-            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si7,,252)(Do,,288)(Si7,,318)", sC: "as"},  ]},
+            { line: "EL AMOR ENTRE LOS HERMANOS!, (Do,,68)(Si,7,252)(Do,,288)(Si,7,318)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: MIRAD QUÉ ESTUPENDO
 // SIGUIENTE CANTO DEBAJO
 /*
@@ -9372,7 +9372,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     lizq: [
             { line: "No hay en Él parecer,, (Do,,10)", sC: "tc"},
             { line: "no hay hermosura, (La,m,147)", sC: ""},
-            { line: "que atraiga las miradas,, (Sol7,,187)", sC: ""},
+            { line: "que atraiga las miradas,, (Sol,7,189)", sC: ""},
             { line: "no hay en él belleza que agrade., (Do,,271)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Despreciado,, (Do,,10)", sC: ""},
@@ -9382,7 +9382,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Do,,10)", sC: "ta as"},
             { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)", sC: "as"},
-            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol7,,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol,7,277)", sC: "as"},
             { line: "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Menospreciado,, (Do,,10)", sC: "tc"},
@@ -9396,7 +9396,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ANTE QUIEN SE VUELVE EL ROSTRO, (Do,,10)", sC: "ta as", lines: [
             { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)", sC: "as"},
-            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol7,,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol,7,277)", sC: "as"},
             { line: "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Pero fue Él, el que cargó con los pecados., (Do,,10)(La,m,355)", sC: "tc"},
@@ -9411,7 +9411,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "ANTE QUIEN SE VUELVE EL ROSTRO, (Do,,10)", sC: "ta as", lines: [
             { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (La,m,277)", sC: "as"},
-            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol7,,277)", sC: "as"},
+            { line: "ANTE QUIEN SE VUELVE EL ROSTRO,, (Sol,7,277)", sC: "as"},
             { line: "ANTE QUIEN SE VUELVE EL ROSTRO., (Do,,275)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡MALTRATADO!, (Do,,10)", sC: "ta as"},
@@ -10116,7 +10116,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Que yo recuerde, (Re,m,22)", sC: ""},
             { line: "entre ellos no había ningún doctor,, (Fa,,68)", sC: ""},
             { line: "y aquel que llamaban Maestro, (Si♭,,58)", sC: ""},
-            { line: "estaba muerto y sepultado., (Fa,,11)(La7,,228)", sC: ""},
+            { line: "estaba muerto y sepultado., (Fa,,11)(La,7,228)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
         triggerLine: "SI SIENTES UN SOPLO DEL CIELO, (Re,m,22)(Do,,284)", sC: "ta as", lines: [
@@ -10132,7 +10132,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Tenían un corazón, (Re,m,22)", sC: "tc"},
             { line: "como tú, como yo,, (Fa,,71)", sC: ""},
             { line: "que una mano de hielo oprimía,, (Si♭,,112)", sC: ""},
-            { line: "tenían los ojos llenos de lágrimas., (Fa,,35)(La7,,248)", sC: ""},
+            { line: "tenían los ojos llenos de lágrimas., (Fa,,35)(La,7,248)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Pensaban sin duda en el amigo perdido,, (Re,m,22)(Fa,,351)", sC: ""},
             { line: "en la mujer dejada en la puerta de la casa,, (Si♭,,97)", sC: ""},
@@ -10202,29 +10202,29 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     lizq: [
             { line: "Por el amor de mis amigos,, (Mi,m,20)(La,m,221)", sC: "tc"},
             { line: "por el amor de mis hermanos,, (Mi,m,246)", sC: ""},
-            { line: "déjame que yo te diga:, (Si7,,188)", sC: ""},
+            { line: "déjame que yo te diga:, (Si,7,188)", sC: ""},
             { line: "la paz contigo., (Mi,m,109)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡Qué alegría cuando me dijeron:, (Mi,m,20)", sC: "tc"},
             { line: "vamos a la casa del Señor!, (La,m,20)(Mi,m,240)", sC: ""},
-            { line: "YA ESTÁN PISANDO NUESTROS PIES, (Si7,,333)", sC: "ta as"},
+            { line: "YA ESTÁN PISANDO NUESTROS PIES, (Si,7,333)", sC: "ta as"},
             { line: "TUS UMBRALES JERUSALÉN., (Mi,m,251)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "JERUSALÉN, JERUSALÉN, (Mi,m,20)", sC: "ta as"},
             { line: "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)", sC: "as"},
             { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
-            { line: "DE NUEVO REEDIFICADA., (Si7,,67)(Mi,m,200)", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si,7,67)(Mi,m,200)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "JERUSALÉN,JERUSALÉN,, (Mi,m,20)", sC: "as"},
             { line: "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)", sC: "as"},
             { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
-            { line: "DE NUEVO REEDIFICADA., (Si7,,65)(Mi,m,201)", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si,7,65)(Mi,m,201)", sC: "as"},
     ], lder: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "Por el amor... ...paz contigo, (Mi,m,20)", sC: "tc", lines: [
             { line: "Por el amor de mis amigos, (Mi,m,20)(La,m,221)", sC: "sub1"},
             { line: "por el amor de mis hermanos, (Mi,m,246)", sC: ""},
-            { line: "déjame que yo te diga:, (Si7,,188)", sC: ""},
+            { line: "déjame que yo te diga:, (Si,7,188)", sC: ""},
             { line: "la paz contigo. (Mi,m,109)", sC: ""},  ]},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -10237,19 +10237,19 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
        triggerLine: "JERUSALÉN, JERUSALÉN, (Mi,m,20)", sC: "ta as", lines: [
             { line: "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)", sC: "as"},
             { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
-            { line: "DE NUEVO REEDIFICADA., (Si7,,67)(Mi,m,200)", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si,7,67)(Mi,m,200)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "JERUSALÉN,JERUSALÉN,, (Mi,m,20)", sC: "as"},
             { line: "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)", sC: "as"},
             { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
-            { line: "DE NUEVO REEDIFICADA., (Si7,,65)(Mi,m,201)", sC: "as"}, ]},
+            { line: "DE NUEVO REEDIFICADA., (Si,7,65)(Mi,m,201)", sC: "as"}, ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "Por el amor... ...paz contigo, (Mi,m,20)", sC: "tc", lines: [
             { line: "Por el amor de mis amigos, (Mi,m,20)(La,m,221)", sC: "sub1"},
             { line: "por el amor de mis hermanos, (Mi,m,246)", sC: ""},
-            { line: "déjame que yo te diga:, (Si7,,188)", sC: ""},
+            { line: "déjame que yo te diga:, (Si,7,188)", sC: ""},
             { line: "la paz contigo. (Mi,m,109)", sC: ""},  ]},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -10262,12 +10262,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
        triggerLine: "JERUSALÉN, JERUSALÉN, (Mi,m,20)", sC: "ta as", lines: [
             { line: "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)", sC: "as"},
             { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
-            { line: "DE NUEVO REEDIFICADA., (Si7,,67)(Mi,m,200)", sC: "as"},
+            { line: "DE NUEVO REEDIFICADA., (Si,7,67)(Mi,m,200)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "JERUSALÉN,JERUSALÉN,, (Mi,m,20)", sC: "as"},
             { line: "DE NUEVO REEDIFICADA., (La,m,68)(Mi,m,201)", sC: "as"},
             { line: "JERUSALÉN,JERUSALÉN, ", sC: "as"},
-            { line: "DE NUEVO REEDIFICADA., (Si7,,65)(Mi,m,201)", sC: "as"}, ]},
+            { line: "DE NUEVO REEDIFICADA., (Si,7,65)(Mi,m,201)", sC: "as"}, ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "LA LALALALALA, LA LALALALALA,, (Mi,m,20)", sC: "ta as"},
             { line: "LA LA LALALA., (La,m,20)(Mi,m,104)", sC: "as"},
@@ -11292,7 +11292,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "147",
         notes: "",
         mant: "No",
-        audioSrc: "https://audio.resucito.do/senornomecorrijasentucolera.mp3",
+        audioSrc: "https://audio.resucito.do/senornomecorrijasentucolera",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -11346,6 +11346,224 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Y tú, Señor, ¿hasta cuándo?, (La,,29)(Fa#,,215)", sC: "tc"},
             { line: "Y TÚ, SEÑOR, ¿HASTA CUÁNDO?, (La,,34)(Fa#,,246)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: SEÑOR, NO ME CORRIJAS EN TU CÓLERA
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SERMÓN DE LA MONTAÑA                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "sermondelamontana",
+        tt: "Sermón De La Montaña ",
+        title: "Sermón De La Montaña ",
+        subtitle: "Lucas 6,20-38",
+        category: ["Precatecumenado","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "148",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/sermondelamontana.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=senornomecorrijasentucolera",
+        sig: "/src/index.html?canto=shlomlejmariam",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Alzando los ojos hacia, (Re,,10)", sC: "tc"},
+            { line: "sus discípulos, Jesús decía:, (La,7,182)(Re,,239)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DICHOSOS LOS POBRES,, (Sol,,171)(Re,,212)", sC: "tca as"},
+            { line: "PORQUE VUESTRO, (La,7,124)", sC: "as"},
+            { line: "ES EL REINO DE DIOS., (Re,,181)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DICHOSOS LOS QUE AHORA, ", sC: "tca as"},
+            { line: "TENÉIS HAMBRE,, (Sol,,93)(Re,,152)", sC: "as"},
+            { line: "PORQUE SERÉIS SACIADOS., (La,7,20)(Re,,214)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DICHOSOS LOS QUE LLORÁIS AHORA,, (Sol,,321)(Re,,354)", sC: "tca as"},
+            { line: "PORQUE REIRÉIS., (La,7,20)(Re,,144)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Dichosos seréis cuando os odien,, (Si,m,136)(La,,269)", sC: "tc"},
+            { line: "os injurien a causa del Hijo del hombre., (Sol,,59)(Fa#,,318)", sC: ""},
+            { line: "Alegraos ese día, que vuestra recompensa, (Sol,,53)", sC: ""},
+            { line: "será grande en el cielo., (Fa#,,189)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡AY DE VOSOTROS, LOS RICOS!, (Re,,12)(Sol,,242)(Re,,272)", sC: "tc as"},
+            { line: "PORQUE HABÉIS RECIBIDO, (La,7,227)", sC: "as"},
+            { line: "VUESTRO CONSUELO., (Re,,166)", sC: "as"},
+    ], lder: [
+            { line: "¡AY DE LOS QUE REÍS AHORA!, (Sol,,243)(Re,,275)", sC: "tca as"},
+            { line: "PORQUE TENDRÉIS AFLICIÓN, (La,7,261)", sC: "as"},
+            { line: "Y LLANTO., (Re,,60)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AMAD A VUESTROS ENEMIGOS,, (Mi,,10)(La,,252)(Mi,,279)", sC: "tca as"},
+            { line: "HACED EL BIEN A LOS QUE OS ODIAN., (Si,7,129)(Mi,,304)", sC: "as"},
+            { line: "AL QUE TE HIERE EN UNA MEJILLA,, (La,,191)(Mi,,320)", sC: "tca as"},
+            { line: "PRESÉNTALE TAMBIÉN LA OTRA;, (Si,7,59)(Mi,,265)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AL QUE TE QUITE EL MANTO,, (Fa#,,15)(Si,,221)(Fa#,,256)", sC: "tca as"},
+            { line: "NO LE NIEGUES LA TÚNICA;, (Do#,7,88)(Fa#,,201)", sC: "as"},
+            { line: "AL QUE TE QUITE LO QUE ES TUYO,, (Si,,285)(Fa#,,318)", sC: "tca as"},
+            { line: "NO SE LO RECLAMES., (Do#,7,22)(Fa#,,152)", sC: "as"},
+            { line: "AMAD A VUESTROS ENEMIGOS,, (Mi,,10)(La,,249)(Mi,,278)", sC: "tca as"},
+            { line: "HACED EL BIEN A LOS QUE OS ODIAN., (Si,7,127)(Mi,,301)", sC: "as"},
+            { line: "NO JUZGUÉIS,, (Fa#,,15)(Si,,98)(Fa#,,127)", sC: "tca as"},
+            { line: "NO CONDENÉIS;, (Si,,120)(Fa#,,147)", sC: "tca as"},
+            { line: "PERDONAD, (Si,,82)(Fa#,,113)", sC: "tca as"},
+            { line: "Y SERÉIS PERDONADOS, (Do#,7,69)(Fa#,,181)", sC: "tca as"},
+]}, // ULTIMA LINEA DEL CANTO: SERMÓN DE LA MONTAÑA 
+// SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           SHLOM LEJ MARIAM               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "shlomlejmariam",
+        tt: "Shlom Lej Mariam",
+        title: "Shlom Lej Mariam",
+        subtitle: "Ave María en arameo antiguo",
+        category: ["Precatecumenado","Vírgen María"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "149",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/shlomlejmariam.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=sermondelamontana",
+        sig: "/src/index.html?canto=sielsenornoconstruyelacasa",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SHLOM LEJ MARIAM,, (Mi,m,20)(Si,7,95)(Mi,m,170)", sC: "tc as"},
+            { line: "MALIATH TAi BUTHA., (Si,7,110)(Mi,m,149)", sC: "as r1"},
+            { line: "MARAN, MARAN AMEJ,, (Do,,52)(Si,7,203)", sC: "as"},
+            { line: "MARAN, MARAN AMEJ., (Do,,52)(Si,7,203)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ave María, llena de gracia,, (Mi,m,20)", sC: "tc"},
+            { line: "el Señor, el Señor es contigo,, (Do,,65)(Si,7,243)", sC: ""},
+            { line: "bendita tú eres entre todas las mujeres,, (Do,,47)(Si,7,347)", sC: ""},
+            { line: "y bendito es el fruto de tu seno, Jesús., (Do,,63)(La,m,161)(Si,7,344)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTA, SANTA MARÍA,, (Mi,m,20)", sC: "ta as"},
+            { line: "MADRE, MADRE DE DIOS, ", sC: "as r2"},
+            { line: "RUEGA, RUEGA POR NOSOTROS, (Do,,33)(Si,7,249)", sC: "as"},
+            { line: "QUE SOMOS, QUE SOMOS PECADORES., (Do,,10)(Si,7,327)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡María, no llores!, (La,m,20)(Si,7,119)", sC: "tc"},
+            { line: "María, María, María., (La,m,20)", sC: ""},
+            { line: "¡Ayaay, ayaay, aay!, (Si,7,160)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SANTA, SANTA MARÍA, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "MADRE, MADRE DE DIOS, ", sC: "as r2"},
+            { line: "RUEGA, RUEGA POR NOSOTROS, (Do,,33)(Si,7,249)", sC: "as"},
+            { line: "QUE SOMOS, QUE SOMOS PECADORES., (Do,,10)(Si,7,327)", sC: "as"}, ]},
+    ], lder: [
+            { line: "María, ayúdanos,, (Sol,,14)(Si,7,93)", sC: "tc"},
+            { line: "María, ayúdanos., (La,m,43)(Si,7,96)", sC: ""},
+            { line: "¡Virgen María!, (La,m,113)", sC: ""},
+            { line: "¡Ay ay aaay aaaaaaaaay!, ", sC: "melisma"},
+            { line: "¡Ayúdanos!, (Si,7,36)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SANTA, SANTA MARÍA, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "MADRE, MADRE DE DIOS, ", sC: "as r2"},
+            { line: "RUEGA, RUEGA POR NOSOTROS, (Do,,33)(Si,7,249)", sC: "as"},
+            { line: "QUE SOMOS, QUE SOMOS PECADORES., (Do,,10)(Si,7,327)", sC: "as"}, ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SHLOM LEJ MARIAM, (Mi,m,20)(Si,7,95)(Mi,m,170)", sC: "ta as", lines: [
+            { line: "MALIATH TAi BUTHA., (Si,7,110)(Mi,m,149)", sC: "as r1"},
+            { line: "MARAN, MARAN AMEJ,, (Do,,52)(Si,7,203)", sC: "as"},
+            { line: "MARAN, MARAN AMEJ., (Do,,52)(Si,7,203)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: SHLOM LEJ MARIAM
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SI EL SEÑOR NO CONSTRUYE LA CASA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "sielsenornoconstruyelacasa",
+        tt: "Si El Señor No Construye La Casa",
+        title: "Si El Señor No Construye La Casa",
+        subtitle: "Salmo 127 (126)",
+        category: ["Precatecumenado","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "150",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/sielsenornoconstruyelacasa.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=shlomlejmariam",
+        sig: "/src/index.html?canto=sihabeisresucitadoconcristo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SI EL SEÑOR, (Mi,,10)", sC: "tc as"},
+            { line: "NO CONSTRUYE LA CASA,, (Do#,m,116)(La,,209)", sC: "as r1"},
+            { line: "EN VANO SE CANSAN, (Si,,53)", sC: "as"},
+            { line: "LOS CONSTRUCTORES., (Mi,,171)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si el Señor no guarda la ciudad,, (Do#,m,27)(Sol#,,281)", sC: "tc"},
+            { line: "en vano vigilan los centinelas,, (Do#,m,255)", sC: ""},
+            { line: "si el Señor no guarda la ciudad., (La,,10)(Sol#,,279)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SI EL SEÑOR, (Mi,,10)", sC: "ta as", lines: [
+            { line: "NO CONSTRUYE LA CASA,, (Do#,m,116)(La,,209)", sC: "as r1"},
+            { line: "EN VANO SE CANSAN, (Si,,53)", sC: "as"},
+            { line: "LOS CONSTRUCTORES., (Mi,,171)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En vano madrugáis al levantaros,, (Do#,m,26)(Sol#,,279)", sC: "tc"},
+            { line: "el descanso retrasáis, ", sC: ""},
+            { line: "para conseguir el pan:, (Do#,m,196)", sC: ""},
+            { line: "Dios lo da a sus amigos, (La,,10)", sC: ""},
+            { line: "mientras duermen., (Sol#,,126)", sC: ""},
+            { line: "DIOS LO DA A SUS AMIGOS, (La,,10)", sC: "ta as"},
+            { line: "MIENTRAS DUERMEN., (Sol#,,144)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "SI EL SEÑOR, (Mi,,10)", sC: "ta as", lines: [
+            { line: "NO CONSTRUYE LA CASA,, (Do#,m,116)(La,,209)", sC: "as r1"},
+            { line: "EN VANO SE CANSAN, (Si,,53)", sC: "as"},
+            { line: "LOS CONSTRUCTORES., (Mi,,171)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Don del Señor son los hijos,, (Do#,m,26)(Sol#,,229)", sC: "tc"},
+            { line: "son como flechas en manos de un guerrero, ", sC: ""},
+            { line: "los hijos de la juventud., (Do#,m,204)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Dichoso el hombre, (La,,17)", sC: ""},
+            { line: "que tiene llena su aljaba!, (Sol#,,206)", sC: ""},
+            { line: "No temerá cuando lleguen, (La,,97)", sC: ""},
+            { line: "sus enemigos., (Sol#,,97)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "SI EL SEÑOR, (Mi,,10)", sC: "ta as", lines: [
+            { line: "NO CONSTRUYE LA CASA,, (Do#,m,116)(La,,209)", sC: "as r1"},
+            { line: "EN VANO SE CANSAN, (Si,,53)", sC: "as"},
+            { line: "LOS CONSTRUCTORES., (Mi,,171)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: SI EL SEÑOR NO CONSTRUYE LA CASA
 // SIGUIENTE CANTO DEBAJO
 
 
@@ -12058,7 +12276,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Llenos están los cielos, (Do,,11)", sC: "tc"},
             { line: "y la tierra de tu gloria., (Si,7,178)", sC: ""},
             { line: "Hosanna, hosanna, hosanna,, (Do,,11)", sC: ""},
-            { line: "hosanna en las alturas., (Si7,,180)", sC: ""},
+            { line: "hosanna en las alturas., (Si,7,180)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
@@ -12441,7 +12659,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Llenos están los cielos, (Do,,11)", sC: "tc"},
             { line: "y la tierra de tu gloria., (Si,7,178)", sC: ""},
             { line: "Hosanna, hosanna, hosanna,, (Do,,11)", sC: ""},
-            { line: "hosanna en las alturas., (Si7,,180)", sC: ""},
+            { line: "hosanna en las alturas., (Si,7,180)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as", lines: [
