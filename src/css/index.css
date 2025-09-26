@@ -35,10 +35,10 @@
 
 /* ESTRUCTURA DE BIS*/
 
-.ast91, .ast92, .ast93, .ast94, .ast95, .ast96, .alabadlo, .alabadlo1, .alabadlo2, .ast
+.ast91, .ast92, .ast93, .ast94, .ast95, .ast96, .alabadlo, .alabadlo1, .alabadlo2, .ast, .ast1, .ast2, .ast3, .ast4, .ast5, .ast6, .ast7, .ast8
 {position: relative;min-height: 0px;}
 
-.ast91::before, .ast92::before, .ast93::before, .ast94::before, .ast95::before, .ast96::before, .a321::before, .a322::before, .a323::before, .a324::before, .ast::before
+.ast91::before, .ast92::before, .ast93::before, .ast94::before, .ast95::before, .ast96::before, .a321::before, .a322::before, .a323::before, .a324::before, .ast::before, .ast1::before, .ast2::before, .ast3::before, .ast4::before, .ast5::before, .ast6::before, .ast7::before, .ast8::before
 {
     content: "*";
     position: absolute;
@@ -74,9 +74,9 @@
                     @media (min-width: 768px) {height: 40px;margin-left: 237px;margin-top: -50px;}
                     @media (min-width: 992px) {height: 40px;margin-left: 183px;margin-top: -43px;}}
 
-.ast::before {      @media (min-width: 384px) {margin-top: 5px; margin-left: 164px;}
-                    @media (min-width: 768px) {margin-top: 15px;margin-left: 305px;}
-                    @media (min-width: 992px) {margin-top: 9px; margin-left: 226px;}}
+    @media (min-width: 384px) {.ast::before, .ast1::before, .ast2::before, .ast3::before, .ast4::before, .ast5::before, .ast6::before, .ast7::before, .ast8::before{margin-top: 5px;margin-left: 164px;}}
+    @media (min-width: 768px) {.ast::before, .ast1::before, .ast2::before, .ast3::before, .ast4::before, .ast5::before, .ast6::before, .ast7::before, .ast8::before{margin-top: 15px;margin-left: 305px;}}
+    @media (min-width: 992px) {.ast::before, .ast1::before, .ast2::before, .ast3::before, .ast4::before, .ast5::before, .ast6::before, .ast7::before, .ast8::before{margin-top: 9px;margin-left: 226px;}}
 
 .alabadlo::before, .alabadlo1::before, .alabadlo2::before {
     content: "¡ALABADLO!";
@@ -142,7 +142,7 @@
 
 /* Media queries para r1 y r2 */
 @media (min-width: 384px) {
-    .r1::before, .r2::before {height: 40px;margin-left: 85%;margin-top: 0%;}
+    .r1::before, .r2::before {height: 40px;left: auto;margin-top: 0%;}
     .b1-1::before{height: 100px;margin-left: 85%;margin-top: 0%;}
     .b1-2::before{height: 60px;margin-left: 88%;margin-top: 0%;}
     .b2::before{height: 60px;margin-left: 88%;margin-top: 0%;}

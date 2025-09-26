@@ -1,4 +1,15 @@
-.container {margin-left: 8%;}
+        @media (min-width: 384px) {
+            .container {margin-left: 2%;}
+            .r1::before {height: 127px;margin-left: 240px;margin-top: 0%;}
+        }
+        @media (min-width: 768px) {
+            .container {margin-left: 0%;}
+            .r1::before {height: 211px;margin-left: 456px;margin-top: 0%;}
+        }
+        @media (min-width: 992px) {
+            .container {margin-left: 12%;}
+            .r1::before {height: 160px;margin-left: 335px;margin-top: 0%;}
+        }
 
     .aleluya::before {
         font-family: 'Franklin Gothic Medium';
@@ -6,9 +17,9 @@
         color: gray;
 
         @media (min-width: 384px) {
-        font-size: 0.9rem;
-        left: 186px;
-        top: 12px;
+            font-size: 0.9rem;
+            left: 186px;
+            top: 12px;
     }
         @media (min-width: 768px) {
             font-size: 1.6rem;
@@ -22,10 +33,10 @@
     }
 }
 
-.tc1::before {
-@media (min-width: 992px) {
-        font-size: 1.23rem;
-        margin-top: 33px;
-        left: -34px;
+    @media (min-width: 992px) {
+        .tc1::before {
+            font-size: 1.23rem;
+            margin-top: 33px;
+            left: -34px;
+        }
     }
-}

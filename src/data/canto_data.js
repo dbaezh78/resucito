@@ -4306,7 +4306,7 @@ const allCantosData = [
             { line: "para anunciar la salvación., (Mi,,233)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ,, (La,m,19)(Mi,,215)(La,m,388)", sC: "ta as", lines: [
+       triggerLine: "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ, (La,m,19)(Mi,,215)(La,m,388)", sC: "ta as", lines: [
             { line: "EL ESPÍRITU DEL SEÑOR ESTÁ SOBRE MÍ., (Mi,,214)(La,m,389)", sC: "as"},
             { line: "PUES ME HA UNGIDO,, (Sol,,172)", sC: "as"},
             { line: "ME HA ENVIADO,, (Fa,,121)", sC: "as"},
@@ -4687,7 +4687,7 @@ const allCantosData = [
             { line: "sobre el Monte Umbrío., (La,,107)(Mi,m,202)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL SEÑOR ANUNCIA UNA NOTICIA,, (Sol,,14)(Mi,m,292)", sC: "ta as", lines: [
+       triggerLine: "EL SEÑOR ANUNCIA UNA NOTICIA, (Sol,,14)(Mi,m,292)", sC: "ta as", lines: [
             { line: "LOS MENSAJEROS SON UN EJÉRCITO INMENSO., (La,m,134)(Mi,m,202)", sC: "as r1"},
             { line: "LOS REYES ENEMIGOS HUYEN, HUYEN,, (La,m,64)(Mi,m,243)", sC: "as"},
             { line: "LA BELLA DE LA CASA REPARTE EL BOTÍN., (Sol,,47)(Si,m,263)(Mi,m,388)", sC: "as"},  ]},
@@ -4699,7 +4699,7 @@ const allCantosData = [
             { line: "él lanza su voz, su voz potente., (Si,m,39)(La,,196)(Mi,m,251)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "EL SEÑOR ANUNCIA UNA NOTICIA,, (Sol,,15)(Mi,m,250)", sC: "ta as", lines: [
+       triggerLine: "EL SEÑOR ANUNCIA UNA NOTICIA, (Sol,,15)(Mi,m,250)", sC: "ta as", lines: [
             { line: "LOS MENSAJEROS SON UN EJÉRCITO INMENSO., (La,m,15)(Mi,m,250)", sC: "as r1"},
             { line: "LOS REYES ENEMIGOS HUYEN, HUYEN,, (La,m,15)(Mi,m,250)", sC: "as"},
             { line: "LA BELLA DE LA CASA REPARTE EL BOTÍN., (Sol,,15)(Si,m,250)(Mi,m,388)", sC: "as"},  ]},
@@ -4750,7 +4750,7 @@ const allCantosData = [
             { line: "para la gloria de su nombre., (Mi,,212)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL SEÑOR ES MI PASTOR,, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
+       triggerLine: "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
             { line: "NADA ME FALTA., (Mi,,118)", sC: "as"},
             { line: "HACIA LAS AGUAS DE LA VIDA, ", sC: "as"},
             { line: "ME CONDUCE., (La,m,97)", sC: "as"},  ]},
@@ -4765,7 +4765,7 @@ const allCantosData = [
             { line: "me consuelan., (Mi,,96)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL SEÑOR ES MI PASTOR,, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
+       triggerLine: "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
             { line: "NADA ME FALTA., (Mi,,118)", sC: "as"},
             { line: "HACIA LAS AGUAS DE LA VIDA, ", sC: "as"},
             { line: "ME CONDUCE., (La,m,97)", sC: "as"},  ]},
@@ -4776,7 +4776,7 @@ const allCantosData = [
             { line: "mi copa rebosa., (Mi,,125)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL SEÑOR ES MI PASTOR,, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
+       triggerLine: "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
             { line: "NADA ME FALTA., (Mi,,118)", sC: "as"},
             { line: "HACIA LAS AGUAS DE LA VIDA, ", sC: "as"},
             { line: "ME CONDUCE., (La,m,97)", sC: "as"},  ]},
@@ -4787,7 +4787,7 @@ const allCantosData = [
             { line: "en tu casa eternamente., (Mi,,191)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL SEÑOR ES MI PASTOR,, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
+       triggerLine: "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
             { line: "NADA ME FALTA., (Mi,,118)", sC: "as"},
             { line: "HACIA LAS AGUAS DE LA VIDA, ", sC: "as"},
             { line: "ME CONDUCE., (La,m,97)", sC: "as"},  ]},
@@ -4799,7 +4799,7 @@ const allCantosData = [
             { line: "EN TU CASA ETERNAMENTE., (Mi,,218)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EL SEÑOR ES MI PASTOR,, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
+       triggerLine: "EL SEÑOR ES MI PASTOR, (La,m,19)(Fa,,217)", sC: "ta as", lines: [
             { line: "NADA ME FALTA., (Mi,,118)", sC: "as"},
             { line: "HACIA LAS AGUAS DE LA VIDA, ", sC: "as"},
             { line: "ME CONDUCE., (La,m,97)", sC: "as"},  ]},
@@ -4875,7 +4875,7 @@ const allCantosData = [
             { line: "en su Nombre., (Si,m,79)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "CERCA ESTÁS, CERCA ESTÁS TÚ,, (Re,,10)(Fa#,m,297)", sC: "ta as", lines: [
+       triggerLine: "CERCA ESTÁS, CERCA ESTÁS TÚ, (Re,,10)(Fa#,m,297)", sC: "ta as", lines: [
             { line: "SI TÚ SALVAS, ¿QUIÉN PELEARÁ CONMIGO?, (Sol,,74)(Fa#,,372)", sC: "as"},
             { line: "SI TÚ AYUDAS, SI TÚ ME AYUDAS,, (Re,,88)(Fa#,m,269)", sC: "as"},
             { line: "SI TÚ SÁLVAS, ¿QUIÉN ME CONDENARÁ?, (Sol,,78)(Fa#,,366)", sC: "as"},  ]},
@@ -4910,7 +4910,7 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "ELÍ, ELÍ, LAMÁ SABACTANÍ., (Mi,m,15)(La,m,125)(Mi,m,251)", sC: "ta as"},
-            { line: "DIOS MÍO, DIOS MÍO,, ", sC: "as"},
+            { line: "DIOS MÍO, DIOS MÍO, ", sC: "as"},
             { line: "¿POR QUÉ ME HAS ABANDONADO?, (La,m,91)(Mi,m,292)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
@@ -4919,8 +4919,8 @@ const allCantosData = [
             { line: "grito de noche, y no hay reposo para mí.,(Mi,m,372) ", sC: "ptop00"},
             
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ELÍ, ELÍ, LAMÁ SABACTANÍ..., (Mi,m,15)(La,m,125)(Mi,m,251)", sC: "ta as", lines: [
-            { line: "DIOS MÍO, DIOS MÍO,, ", sC: "as"},
+       triggerLine: "ELÍ, ELÍ, LAMÁ SABACTANÍ, (Mi,m,15)(La,m,125)(Mi,m,251)", sC: "ta as", lines: [
+            { line: "DIOS MÍO, DIOS MÍO, ", sC: "as"},
             { line: "¿POR QUÉ ME HAS ABANDONADO?, (La,m,91)(Mi,m,292)", sC: "as"},  ]},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -4936,9 +4936,9 @@ const allCantosData = [
             { line: "¿Acaso no soy un hombre?, (Mi,m,192)", sC: ""},
 
             { line: "Eso soy yo: soy un gusano,, (Si,7,15)", sC: ""},
-            { line: "desprecio de la gente, asco del pueblo,, ", sC: "ptop00"},
+            { line: "desprecio de la gente, asco del pueblo, ", sC: "ptop00"},
             { line: "todos los que me ven de mí se ríen, ", sC: "ptop00"},
-            { line: "menean la cabeza y dicen:, ", sC: "ptop00"},
+            { line: "menean la cabeza y dicen: ", sC: "ptop00"},
             { line: "«Se confió a Dios, ¡que él lo libre,", sC: "ptop00"},
             { line: "que él le salve, si tanto dice que le ama!»,  (Mi,m,351)", sC: "ptop00"},
             { line: "Sí, que tú me amas, sí, que tú me quieres,, (La,m,358)", sC: ""},
@@ -4948,8 +4948,8 @@ const allCantosData = [
             { line: "desde el vientre de mi madre tú ya eras mi Dios., (Mi,m,436)", sC: "ptop00"},
 
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "ELÍ, ELÍ, LAMÁ SABACTANÍ..., (Mi,m,15)(La,m,125)(Mi,m,251)", sC: "ta as", lines: [
-            { line: "DIOS MÍO, DIOS MÍO,, ", sC: "as"},
+       triggerLine: "ELÍ, ELÍ, LAMÁ SABACTANÍ, (Mi,m,15)(La,m,125)(Mi,m,251)", sC: "ta as", lines: [
+            { line: "DIOS MÍO, DIOS MÍO, ", sC: "as"},
             { line: "¿POR QUÉ ME HAS ABANDONADO?, (La,m,91)(Mi,m,292)", sC: "as"},  ]},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -4961,15 +4961,15 @@ const allCantosData = [
             { line: "y mi lengua está pegada a la garganta. (Mi,m,333)", sC: "ptop00"},
 
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "ELÍ, ELÍ, LAMÁ SABACTANÍ..., (Mi,m,15)(La,m,125)(Mi,m,251)", sC: "ta as", lines: [
-            { line: "DIOS MÍO, DIOS MÍO,, ", sC: "as"},
+       triggerLine: "ELÍ, ELÍ, LAMÁ SABACTANÍ, (Mi,m,15)(La,m,125)(Mi,m,251)", sC: "ta as", lines: [
+            { line: "DIOS MÍO, DIOS MÍO, ", sC: "as"},
             { line: "¿POR QUÉ ME HAS ABANDONADO?, (La,m,91)(Mi,m,292)", sC: "as"},  ]},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Perros innumerables me rodean,, (Si,7,15)", sC: "tc"},
             { line: "una banda de malhechores me acomete,, ", sC: "ptop00"},
-            { line: "taladran mis manos y mis pies., ", sC: "ptop00"},
-            { line: "Se pueden contar mis huesos;, ", sC: "ptop00"},
+            { line: "taladran mis manos y mis pies. ", sC: "ptop00"},
+            { line: "Se pueden contar mis huesos; ", sC: "ptop00"},
             { line: "me observan y me miran,", sC: "ptop00"},
             { line: "se reparten mis vestidos, se sortean mi túnica. (Mi,m,397)", sC: "ptop00"},
             { line: "¡Mas tú, Dios mío, no estés lejos!, (La,m,278)", sC: ""},
@@ -5021,7 +5021,7 @@ const allCantosData = [
         sig: "/src/index.html?canto=enunanocheoscura",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "EN MEDIO DE AQUEL GENTÍO,, (La,m,21)", sC: "tc"},
+            { line: "EN MEDIO DE AQUEL GENTÍO,, (La,m,21)", sC: "tc as"},
             { line: "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)", sC: "as r1"},
             { line: "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -5049,7 +5049,7 @@ const allCantosData = [
             { line: "tu fe te ha salvado»., (Fa,,38)(Mi,,149)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EN MEDIO DE AQUEL GENTÍO,, (La,m,21)", sC: "ta as", lines: [
+       triggerLine: "EN MEDIO DE AQUEL GENTÍO, (La,m,21)", sC: "ta as", lines: [
             { line: "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)", sC: "as r1"},
             { line: "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -5062,7 +5062,7 @@ const allCantosData = [
             { line: "para salvarte., (Mi,,93)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EN MEDIO DE AQUEL GENTÍO,, (La,m,21)", sC: "ta as", lines: [
+       triggerLine: "EN MEDIO DE AQUEL GENTÍO, (La,m,21)", sC: "ta as", lines: [
             { line: "EN MEDIO DE TODA AQUELLA GENTE, (Sol,,316)", sC: "as r1"},
             { line: "UNA MUJER, UNA MUJER LE TOCÓ., (Mi,,97)(Fa,,216)(Mi,,319)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: EN MEDIO DE AQUEL GENTÍO
@@ -5362,7 +5362,7 @@ const allCantosData = [
             { line: "cuál es el camino y porqué sufrimos., (Fa,,10)(Mi,,299)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ES PACIENTE, ES BENIGNO,, (La,m,19)", sC: "ta as", lines: [
+       triggerLine: "ES PACIENTE, ES BENIGNO, (La,m,19)", sC: "ta as", lines: [
             { line: "ES EL SUMO BIEN,, (Mi,,151)", sC: "as"},
             { line: "ES EL DON DE DIOS,, (La,m,165)", sC: "as"},
             { line: "ES LA GARANTÍA DE LA VIDA ETERNA,, (Re,m,22)(Mi,,310)", sC: "as"},
@@ -5380,7 +5380,7 @@ const allCantosData = [
             { line: "es la Santidad, es nuestro ser Cristiano., (Fa,,116)(Mi,,341)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ES PACIENTE, ES BENIGNO,, (La,m,19)", sC: "ta as", lines: [
+       triggerLine: "ES PACIENTE, ES BENIGNO, (La,m,19)", sC: "ta as", lines: [
             { line: "ES EL SUMO BIEN,, (Mi,,151)", sC: "as"},
             { line: "ES EL DON DE DIOS,, (La,m,165)", sC: "as"},
             { line: "ES LA GARANTÍA DE LA VIDA ETERNA,, (Re,m,22)(Mi,,310)", sC: "as"},
@@ -5445,7 +5445,6 @@ const allCantosData = [
             { line: "aunque estalle una guerra contra mí,, (La,m,20)(Fa,,345)", sC: ""},
             { line: "estoy seguro en ella., (Mi,,164)", sC: ""},
     ], lder: [
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "ESCÓNDEME, (La,m,20)", sC: "ta as", lines: [
             { line: "EN LO OCULTO DE TU TIENDA,, (Sol,,220)", sC: "as r1"},
@@ -5483,9 +5482,9 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: ESCÓNDEME EN LO OCULTO DE 
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔═════════════════════════════════════════════════╗
 ║           ESCUCHAD, ISLAS LEJANAS               ║
-╚════════════════════════════════════════════════════════╝  */
+╚═════════════════════════════════════════════════╝  */
    {
         id: "escuchadislaslejanas",
         tt: "Escuchad, Islas Lejanas",
@@ -5519,10 +5518,10 @@ const allCantosData = [
             { line: "al esclavo de los dominadores:, (Fa#,,16)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "TE VERÁN LOS REYES,, (Re,,10)", sC: "ta as"},
-            { line: "SE PONDRÁN EN PIE., ", sC: "as r1"},
+            { line: "SE PONDRÁN EN PIE. ", sC: "as r1"},
             { line: "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)", sC: "as"},
             { line: "SE INCLINARÁN,, (Sol,,135)", sC: "as"},
-            { line: "YO TE HE ELEGIDO,, ", sC: "as"},
+            { line: "YO TE HE ELEGIDO, ", sC: "as"},
             { line: "TE HE ELEGIDO., (Fa#,,111)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "En el día favorable te ayudaré,, (Re,,11)", sC: "tc"},
@@ -5531,11 +5530,11 @@ const allCantosData = [
             { line: "como alianza a las naciones., (Fa#,,233)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "TE VERÁN LOS REYES,, (Re,,10)", sC: "ta as", lines: [
-            { line: "SE PONDRÁN EN PIE., ", sC: "as r1"},
+       triggerLine: "TE VERÁN LOS REYES, (Re,,10)", sC: "ta as", lines: [
+            { line: "SE PONDRÁN EN PIE. ", sC: "as r1"},
             { line: "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)", sC: "as"},
             { line: "SE INCLINARÁN,, (Sol,,135)", sC: "as"},
-            { line: "YO TE HE ELEGIDO,, ", sC: "as"},
+            { line: "YO TE HE ELEGIDO, ", sC: "as"},
             { line: "TE HE ELEGIDO., (Fa#,,111)", sC: "as"},  ]},
     ], lder: [
             { line: "Dirás a los prisioneros: «Salid»;, (Re,,12)", sC: "tc"},
@@ -5543,13 +5542,13 @@ const allCantosData = [
             { line: "conducirás a los pueblos, ", sC: ""},
             { line: "por el camino de la vida., (Fa#,,200)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "TE VERÁN LOS REYES,, (Re,,10)", sC: "ta as", lines: [
-            { line: "SE PONDRÁN EN PIE., ", sC: "as r1"},
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "TE VERÁN LOS REYES, (Re,,10)", sC: "ta as", lines: [
+            { line: "SE PONDRÁN EN PIE. ", sC: "as r1"},
             { line: "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)", sC: "as"},
             { line: "SE INCLINARÁN,, (Sol,,135)", sC: "as"},
-            { line: "YO TE HE ELEGIDO,, ", sC: "as"},
-            { line: "TE HE ELEGIDO., (Fa#,,111)", sC: "as"},  ]},
+            { line: "YO TE HE ELEGIDO, ", sC: "as"},
+            { line: "TE HE ELEGIDO. (Fa#,,111)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Mas Sión dice: «Yahveh me ha abandonado,, (Si,m,20)(Mi,m,202)(Si,m,383)", sC: "tc"},
             { line: "Yahveh me ha olvidado»., (Mi,m,51)(Si,m,193)", sC: ""},
@@ -5564,13 +5563,13 @@ const allCantosData = [
             { line: "MÍRAME, EN LAS PALMAS DE MIS MANOS, (Sol,,15)", sC: "as"},
             { line: "TE LLEVO TATUADA., (Fa#,,158)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "TE VERÁN LOS REYES,, (Re,,10)", sC: "ta as", lines: [
-            { line: "SE PONDRÁN EN PIE., ", sC: "as r1"},
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "TE VERÁN LOS REYES, (Re,,10)", sC: "ta as", lines: [
+            { line: "SE PONDRÁN EN PIE. ", sC: "as r1"},
             { line: "LOS PRÍNCIPES DE LA TIERRA, (Fa#,m,75)", sC: "as"},
             { line: "SE INCLINARÁN,, (Sol,,135)", sC: "as"},
-            { line: "YO TE HE ELEGIDO,, ", sC: "as"},
-            { line: "TE HE ELEGIDO., (Fa#,,111)", sC: "as"},  ]},
+            { line: "YO TE HE ELEGIDO, ", sC: "as"},
+            { line: "TE HE ELEGIDO. (Fa#,,111)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ESCUCHAD, ISLAS LEJANAS
 // SIGUIENTE CANTO DEBAJO
 
@@ -5642,7 +5641,7 @@ const allCantosData = [
             { line: "Que lo digan los fieles del Señor:, (La,m,15)", sC: ""},
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
        triggerLine: "ES ETERNA, (Fa,,63)", sC: "as ab7", lines: [
-            { line: "SU MISERICORDIA., (Mi,,123)", sC: "as ab8"},  ]},
+            { line: "SU MISERICORDIA., (Mi,,129)", sC: "as ab8"},  ]},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Mejor es confiar en el Señor, (Do,,10)", sC: ""},
@@ -5928,7 +5927,7 @@ const allCantosData = [
     lizq: [
             { line: "EXTIENDO MIS MANOS,, (Re,,10)(Si,m,86)(Sol,,171)", sC: "at as "},
             { line: "EXTIENDO MIS MANOS,, (Mi,,50)(La,,170)", sC: "as r1"},
-            { line: "Y GRITO AL SEÑOR ,, (Sol,,50)(Re,,161)", sC: "as"},
+            { line: "Y GRITO AL SEÑOR,, (Sol,,50)(Re,,161)", sC: "as"},
             { line: "Y GRITO AL SEÑOR., (La,,50)(Re,,161)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Abbá, Padre mío,, (Fa#,,15)", sC: "tc"},
@@ -5937,9 +5936,9 @@ const allCantosData = [
             { line: "en tus manos encomiendo mi espíritu., (Sol,,15)(Re,,88)(La,,215)(Re,,328)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EXTIENDO MIS MANOS,, (Re,,10)(Si,m,86)(Sol,,171)", sC: "ta as", lines: [
+       triggerLine: "EXTIENDO MIS MANOS, (Re,,10)(Si,m,86)(Sol,,171)", sC: "ta as", lines: [
             { line: "EXTIENDO MIS MANOS,, (Mi,,50)(La,,170)", sC: "as r1"},
-            { line: "Y GRITO AL SEÑOR ,, (Sol,,50)(Re,,161)", sC: "as"},
+            { line: "Y GRITO AL SEÑOR,, (Sol,,50)(Re,,161)", sC: "as"},
             { line: "Y GRITO AL SEÑOR., (La,,50)(Re,,161)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Porque el extender las manos, (Fa#,,15)(Mi,,70)", sC: "tc"},
@@ -5949,9 +5948,9 @@ const allCantosData = [
             { line: "es el leño alzado., (Re,,125)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "EXTIENDO MIS MANOS,, (Re,,10)(Si,m,86)(Sol,,171)", sC: "ta as", lines: [
+       triggerLine: "EXTIENDO MIS MANOS, (Re,,10)(Si,m,86)(Sol,,171)", sC: "ta as", lines: [
             { line: "EXTIENDO MIS MANOS,, (Mi,,50)(La,,170)", sC: "as r1"},
-            { line: "Y GRITO AL SEÑOR ,, (Sol,,50)(Re,,161)", sC: "as"},
+            { line: "Y GRITO AL SEÑOR,, (Sol,,50)(Re,,161)", sC: "as"},
             { line: "Y GRITO AL SEÑOR., (La,,50)(Re,,161)", sC: "as"},  ]},
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: EXTIENDO MIS MANOS
@@ -5998,7 +5997,7 @@ const allCantosData = [
             { line: "de su amor está llena la tierra., (Re,,93)(Si,7,258)", sC: "melisma"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "EXULTAD, JUSTOS, EN EL SEÑOR,, (Sol,,14)(Mi,m,286)", sC: "ta as", lines: [
+       triggerLine: "EXULTAD, JUSTOS, EN EL SEÑOR, (Sol,,14)(Mi,m,286)", sC: "ta as", lines: [
             { line: "DE LOS SANTOS ES PROPIA LA ALABANZA., (Do,,97)(Sol,,359)", sC: "as"},
             { line: "DAD GRACIAS AL SEÑOR CON LA CÍTARA,, (Mi,m,338)", sC: "as"},
             { line: "CON EL ARPA DE DIEZ CUERDAS, (Do,,86)", sC: "as"},
@@ -6014,7 +6013,7 @@ const allCantosData = [
             { line: "subsiste por siempre., (Si,7,145)", sC: "melisma1"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "EXULTAD, JUSTOS, EN EL SEÑOR,, (Sol,,14)(Mi,m,286)", sC: "ta as", lines: [
+       triggerLine: "EXULTAD, JUSTOS, EN EL SEÑOR, (Sol,,14)(Mi,m,286)", sC: "ta as", lines: [
             { line: "DE LOS SANTOS ES PROPIA LA ALABANZA., (Do,,97)(Sol,,359)", sC: "as"},
             { line: "DAD GRACIAS AL SEÑOR CON LA CÍTARA,, (Mi,m,338)", sC: "as"},
             { line: "CON EL ARPA DE DIEZ CUERDAS, (Do,,86)", sC: "as"},
@@ -6022,9 +6021,9 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: EXULTAD, JUSTOS, EN EL SEÑOR
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔═══════════════════════════════════════════════════╗
 ║           FELICIDAD PARA EL HOMBRE                ║
-╚════════════════════════════════════════════════════════╝  */
+╚═══════════════════════════════════════════════════╝  */
    {
         id: "felicidadparaelhombre",
         tt: "Felicidad Para El Hombre ",
@@ -6117,7 +6116,7 @@ const allCantosData = [
             { line: "demos gracias al Señor de los Señores., (Si,m,96)(Mi,m,338)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "GRACIAS A YAHVEH, ALELUYA., (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
+       triggerLine: "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
             { line: "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)", sC: "as"},  ]},
@@ -6127,7 +6126,7 @@ const allCantosData = [
             { line: "hizo pasar por en medio a su pueblo., (Si,m,83)(Mi,m,310)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "GRACIAS A YAHVEH, ALELUYA., (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
+       triggerLine: "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
             { line: "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)", sC: "as"},  ]},
@@ -6137,7 +6136,7 @@ const allCantosData = [
             { line: "e hizo con el pueblo una alianza para siempre., (Si,m,157)(Mi,m,380)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "GRACIAS A YAHVEH, ALELUYA., (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
+       triggerLine: "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
             { line: "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)", sC: "as"},  ]},
@@ -6147,7 +6146,7 @@ const allCantosData = [
             { line: "una tierra que mana leche y miel., (Si,m,59)(Mi,m,302)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "GRACIAS A YAHVEH, ALELUYA., (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
+       triggerLine: "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
             { line: "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)", sC: "as"},  ]},
@@ -6157,7 +6156,7 @@ const allCantosData = [
             { line: "Él nos libra de nuestros enemigos., (Si,m,78)(Mi,m,285)", sC: "tc"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "GRACIAS A YAHVEH, ALELUYA., (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
+       triggerLine: "GRACIAS A YAHVEH, ALELUYA, (Mi,m,18)(Re,,98)(Mi,m,171)(Re,,232)(Mi,m,278)", sC: "ta as", lines: [
             { line: "GRACIAS A YAHVEH, ALELUYA., (Re,,99)(Mi,m,169)(Re,,236)(Mi,m,281)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,34)(Mi,m,170)(Si,7,233)(Mi,m,280)", sC: "ta as"},
             { line: "GRACIAS A YAHVEH, ALELUYA., (La,m,32)(Mi,m,167)(Si,7,232)(Mi,m,281)", sC: "as"},  ]},
@@ -6271,7 +6270,7 @@ const allCantosData = [
             { line: "tu Fe nos salvará., (Mi,,155)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HACIA TI, MORADA SANTA,..., (La,m,19)(Mi,,211)", sC: "ta as", lines: [
+       triggerLine: "HACIA TI, MORADA SANTA, (La,m,19)(Mi,,211)", sC: "ta as", lines: [
             { line: "HACIA TI, TIERRA DEL SALVADOR,, (La,m,295)", sC: "as"},
             { line: "PEREGRINOS, CAMINANTES,, (Sol,,80)(Fa,,210)", sC: "as"},
             { line: "VAMOS HACIA TI., (Mi,,152)", sC: "as"},  ]},
@@ -6287,7 +6286,7 @@ const allCantosData = [
             { line: "Amén. Aleluya., (Mi,,129)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HACIA TI, MORADA SANTA,..., (La,m,19)(Mi,,211)", sC: "ta as", lines: [
+       triggerLine: "HACIA TI, MORADA SANTA, (La,m,19)(Mi,,211)", sC: "ta as", lines: [
             { line: "HACIA TI, TIERRA DEL SALVADOR,, (La,m,295)", sC: "as"},
             { line: "PEREGRINOS, CAMINANTES,, (Sol,,80)(Fa,,210)", sC: "as"},
             { line: "VAMOS HACIA TI., (Mi,,152)", sC: "as"},  ]},
@@ -6331,11 +6330,11 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Mírame,, (La,m,20)", sC: "tc"},
             { line: "respóndeme, Yahveh, amor de mí,, (Mi,,319)", sC: ""},
-            { line: "alumbra mis ojos,, ", sC: ""},
+            { line: "alumbra mis ojos, ", sC: ""},
             { line: "no me duerma yo en la muerte., (La,m,267)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "CANTARÉ A YAHVEH,..., (Mi,,88)(La,m,173)", sC: "ta as", lines: [
+       triggerLine: "CANTARÉ A YAHVEH, (Mi,,88)(La,m,173)", sC: "ta as", lines: [
             { line: "CANTARÉ AL QUE ES MI REDENTOR., (Mi,,88)(La,m,319)", sC: "as"},  ]},
     ], lder: [
             { line: "Que no puedan,, (La,m,20)", sC: "tc"},
@@ -6344,7 +6343,7 @@ const allCantosData = [
             { line: "se alegrarán si yo cayera., (La,m,212)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "CANTARÉ A YAHVEH,..., (Mi,,88)(La,m,173)", sC: "ta as", lines: [
+       triggerLine: "CANTARÉ A YAHVEH, (Mi,,88)(La,m,173)", sC: "ta as", lines: [
             { line: "CANTARÉ AL QUE ES MI REDENTOR., (Mi,,88)(La,m,319)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Pero yo, (La,m,20)", sC: "tc"},
@@ -6353,7 +6352,7 @@ const allCantosData = [
             { line: "se alegrará en tu salvación., (La,m,238)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "CANTARÉ A YAHVEH,..., (Mi,,88)(La,m,173)", sC: "ta as", lines: [
+       triggerLine: "CANTARÉ A YAHVEH, (Mi,,88)(La,m,173)", sC: "ta as", lines: [
             { line: "CANTARÉ AL QUE ES MI REDENTOR., (Mi,,88)(La,m,319)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: HASTA CUÁNDO
 // SIGUIENTE CANTO DEBAJO
@@ -6506,7 +6505,7 @@ const allCantosData = [
             { line: "en un camino, en un camino de salvación., (Fa,,99)(Mi,,380)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HE ESPERADO,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HE ESPERADO, (La,m,20)", sC: "ta as", lines: [
             { line: "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)", sC: "as r1"},
             { line: "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)", sC: "as"},
             { line: "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)", sC: "as"},
@@ -6519,7 +6518,7 @@ const allCantosData = [
             { line: "y tantos en Él confiarán., (Fa,,26)(Mi,,203)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "HE ESPERADO,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HE ESPERADO, (La,m,20)", sC: "ta as", lines: [
             { line: "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)", sC: "as r1"},
             { line: "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)", sC: "as"},
             { line: "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)", sC: "as"},
@@ -6532,7 +6531,7 @@ const allCantosData = [
             { line: "son tantos que me superan en número., (Fa,,53)(Mi,,316)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "HE ESPERADO,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HE ESPERADO, (La,m,20)", sC: "ta as", lines: [
             { line: "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)", sC: "as r1"},
             { line: "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)", sC: "as"},
             { line: "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)", sC: "as"},
@@ -6546,7 +6545,7 @@ const allCantosData = [
             { line: "para hacer tu voluntad., (Mi,7,201)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HE ESPERADO,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HE ESPERADO, (La,m,20)", sC: "ta as", lines: [
             { line: "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)", sC: "as r1"},
             { line: "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)", sC: "as"},
             { line: "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)", sC: "as"},
@@ -6559,7 +6558,7 @@ const allCantosData = [
             { line: "tu palabra, tu palabra en mis entrañas., (Fa,,60)(Mi,,325)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HE ESPERADO,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HE ESPERADO, (La,m,20)", sC: "ta as", lines: [
             { line: "HE ESPERADO EN EL SEÑOR,, (Mi,m,251)", sC: "as r1"},
             { line: "Y ÉL HACIA MÍ SE HA INCLINADO,, (La,m,33)(Mi,m,277)", sC: "as"},
             { line: "HA ESCUCHADO MI GRITO,, (Fa,,116)(Mi,7,222)", sC: "as"},
@@ -6605,7 +6604,7 @@ const allCantosData = [
             { line: "¡Aaaay!, (La,m,52)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HIJAS DE JERUSALÉN,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HIJAS DE JERUSALÉN, (La,m,20)", sC: "ta as", lines: [
             { line: "NO LLORÉIS,, (Fa,,95)", sC: "as"},
             { line: "NO LLORÉIS POR MÍ., (La,m,189)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -6615,7 +6614,7 @@ const allCantosData = [
             { line: "¡Aaaay!, (La,m,55)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HIJAS DE JERUSALÉN,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HIJAS DE JERUSALÉN, (La,m,20)", sC: "ta as", lines: [
             { line: "NO LLORÉIS,, (Fa,,95)", sC: "as"},
             { line: "NO LLORÉIS POR MÍ., (La,m,189)", sC: "as"},  ]},
     ], lder: [
@@ -6624,7 +6623,7 @@ const allCantosData = [
             { line: "en el Paraíso., (Mi,,98)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HIJAS DE JERUSALÉN,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HIJAS DE JERUSALÉN, (La,m,20)", sC: "ta as", lines: [
             { line: "NO LLORÉIS,, (Fa,,95)", sC: "as"},
             { line: "NO LLORÉIS POR MÍ., (La,m,189)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -6634,15 +6633,15 @@ const allCantosData = [
             { line: "¡Ah! ¡Ah! ¡Ah!, (Fa,,10)(Mi,,54)(La,m,107)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HIJAS DE JERUSALÉN,, (La,m,20)", sC: "ta as", lines: [
+       triggerLine: "HIJAS DE JERUSALÉN, (La,m,20)", sC: "ta as", lines: [
             { line: "NO LLORÉIS,, (Fa,,95)", sC: "as"},
             { line: "NO LLORÉIS POR MÍ., (La,m,189)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: HIJAS DE JERUSALÉN
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔════════════════════════════════════════════╗
 ║           HIMNO A CRISTO LUZ               ║
-╚════════════════════════════════════════════════════════╝  */
+╚════════════════════════════════════════════╝  */
    {
         id: "himnoacristoluz",
         tt: "Himno A Cristo Luz",
@@ -6687,7 +6686,7 @@ const allCantosData = [
             { line: "te bendecimos, Señor., (Mi,m,190)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "TE BENDECIMOS EN ESTA HORA,, (Mi,m,20)", sC: "ta as", lines: [
+       triggerLine: "TE BENDECIMOS EN ESTA HORA, (Mi,m,20)", sC: "ta as", lines: [
             { line: "¡OH CRISTO MÍO!, VERBO DE DIOS,, (La,m,138)", sC: "as"},
             { line: "LUZ DE LA LUZ SIN COMIENZO., (Mi,m,242)", sC: "as"},
             { line: "TE BENDECIMOS, VERBO DE DIOS,, (Si,7,111)(Mi,m,303)", sC: "as"},
@@ -6831,9 +6830,9 @@ const allCantosData = [
             { line: "¡ALELUYA!, (Si,7,86)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ALELUYA,ALELUYA,ALELUYA., (Mi,m,53)", sC: "ta as", lines: [
-            { line: "ALELUYA,ALELUYA,ALELUYA., (Re,,55)", sC: "as"},
-            { line: "ALELUYA,ALELUYA,ALELUYA., (Do,,55)", sC: "as"},  ]},
+       triggerLine: "ALELUYA, ALELUYA, ALELUYA, (Mi,m,53)", sC: "ta as", lines: [
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,55)", sC: "as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,55)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 ]}, // ULTIMA LINEA DEL CANTO: HIMNO A LA KENOSIS
 // SIGUIENTE CANTO DEBAJO
@@ -6889,9 +6888,9 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: HIMNO DE ADVIENTO
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔═══════════════════════════════════════════════╗
 ║           HIMNO DE LA ASCENSIÓN               ║
-╚════════════════════════════════════════════════════════╝  */
+╚═══════════════════════════════════════════════╝  */
    {
         id: "himnodelaascension",
         tt: "Himno De La Ascensión",
@@ -7049,7 +7048,7 @@ const allCantosData = [
             { line: "mi viña está aquí, está ante mí., (Mi,,161)(La,m,287)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "HUYE, AMADO MÍO,, (La,,10)", sC: "ta as", lines: [
+       triggerLine: "HUYE, AMADO MÍO, (La,,10)", sC: "ta as", lines: [
             { line: "COMO UNA GACELA,, (Mi,,162)", sC: "as"},
             { line: "COMO UN CERVATILLO,, (Fa#,m,23)", sC: "as ast"},
             { line: "HASTA EL MONTE DE LAS BALSAMERAS., (Mi,,25)(La,,342)", sC: "as"},  ]},
@@ -7264,7 +7263,7 @@ const allCantosData = [
             { line: "y en sus casas se cantará., (Mi,m,238)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
+       triggerLine: "JERUSALÉN, JERUSALÉN, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
             { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
             { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
             { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
@@ -7280,7 +7279,7 @@ const allCantosData = [
             { line: "será para siempre, será para siempre., (Mi,m,300)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
+       triggerLine: "JERUSALÉN, JERUSALÉN, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
             { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
             { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
             { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
@@ -7298,7 +7297,7 @@ const allCantosData = [
             { line: "porque en sus casas te cantarán., (Mi,m,293)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "JERUSALÉN, JERUSALÉN,, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
+       triggerLine: "JERUSALÉN, JERUSALÉN, (Mi,m,20)(Re,,217)", sC: "ta as", lines: [
             { line: "JERUSALÉN, JERUSALÉN., (Mi,m,216)", sC: "as"},
             { line: "JERUSALÉN RECONSTRUIDA,, (Re,,239)", sC: "as"},
             { line: "JERUSALÉN PARA SIEMPRE., (Mi,m,207)", sC: "as"},  ]},
@@ -11577,7 +11576,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         category: ["Precatecumenado","Nuevo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "1",
-        nCan: "",
+        nCan: "* Melisma",
         nCanURL: "",
         dbno: "151",
         notes: "",
@@ -11609,7 +11608,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y vuestra vida está oculta, (La,m,207)", sC: ""},
             { line: "unida con Cristo en Dios., (Si,7,210)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Y cuando"+'  '+"aparezca Cristo,, (La,m,20)(Si,7,212)", sC: ""},
+            { line: "Y cuando"+'  '+"aparezca Cristo,, (La,m,20)(Si,7,212)", sC: "ast1"},
             { line: "que es vuestra vida,, (La,m,20)(Si,7,161)", sC: ""},
             { line: "entonces vosotros, (Do,,34)", sC: ""},
             { line: "apareceréis gloriosos con Él., (Si,7,263)", sC: ""},
@@ -11633,7 +11632,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Y VUESTRA VIDA ESTÁ OCULTA, (La,m,253)", sC: "as"},
             { line: "UNIDA CON CRISTO EN DIOS., (Si,7,249)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Y cuando"+'  '+"aparezca Cristo,, (La,m,20)(Si,7,214)", sC: "tc"},
+            { line: "Y cuando"+'  '+"aparezca Cristo,, (La,m,20)(Si,7,214)", sC: "tc ast2"},
             { line: "que es vuestra vida,, (La,m,20)(Si,7,158)", sC: ""},
             { line: "entonces vosotros, (Do,,35)", sC: ""},
             { line: "apareceréis gloriosos con Él., (Si,7,261)", sC: ""},

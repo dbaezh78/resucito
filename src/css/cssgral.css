@@ -412,7 +412,7 @@ display: none;}
         width: 992px;
         flex-direction: row; /* Por defecto en escritorio, en fila */
         justify-content: space-between;
-        gap: 33px;
+        gap: 20px;
     }
     .canto-content-wrapper.stacked-layout { /* Nueva clase para apilar en escritorio */
         flex-direction: column;

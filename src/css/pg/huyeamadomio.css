@@ -1,16 +1,12 @@
-.container {margin-left: 0%;}
-
-.ast::before {
-    @media (min-width: 384px){
-        margin-top: 5px;
-        margin-left: 164px;
-    }
-    @media (min-width: 768px){
-        margin-top: 15px;
-        margin-left: 305px;
-    }
-    @media (min-width: 992px){
-        margin-top: 9px;
-        margin-left: 226px;
-    }
-}
+        @media (min-width: 384px) {
+            .container {margin-left: 3%;}
+            .ast::before {margin-left: 164px;margin-top: 5px;}
+        }
+        @media (min-width: 768px) {
+            .container {margin-left: 0%;}
+            .ast::before {margin-left: 15px;margin-top: 305px;}
+        }
+        @media (min-width: 992px) {
+            .container {margin-left: 0%;}
+            .ast::before {margin-left: 9px;margin-top: 226px;}
+        }
