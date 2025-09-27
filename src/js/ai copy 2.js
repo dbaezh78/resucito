@@ -22,118 +22,86 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedSemana = null;
     let urlBase = '/src/ainterleccional.html?canto=';
 
-//*****************************************
-const getInfoLiturgicaActual = () => {
-    const today = new Date();
-    
-    // Usar Date.UTC para una comparación fiable, evitando problemas de zona horaria
-    const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
-
-    const diaSemana = today.toLocaleString('es-ES', { weekday: 'long' });
-    const fechaCompleta = today.toLocaleDateString('es-ES');
-    
-    // Calcular ciclo litúrgico actual
-    let cicloActual = getCicloLiturgico(today.getFullYear());
-    
-    // Verificar si estamos en Adviento (noviembre/diciembre) que pertenece al próximo año litúrgico
-    const mesActual = today.getMonth(); // 0-11 (enero-diciembre)
-    if (mesActual === 11) { // Diciembre
-        const proximoCiclo = getCicloLiturgico(today.getFullYear() + 1);
-        const tiemposProximo = tiemposLiturgicos[proximoCiclo];
-        const advientoProximo = tiemposProximo.find(t => t.codigo === 'ta');
+    const getInfoLiturgicaActual = () => {
+        const today = new Date();
+        const year = today.getFullYear();
+        const diaSemana = today.toLocaleString('es-ES', { weekday: 'long' });
+        const fechaCompleta = today.toLocaleDateString('es-ES');
         
-        if (advientoProximo) {
-            const inicioAdvientoUTC = Date.UTC(new Date(advientoProximo.inicio).getFullYear(), new Date(advientoProximo.inicio).getMonth(), new Date(advientoProximo.inicio).getDate());
-            if (todayUTC >= inicioAdvientoUTC) {
-                cicloActual = proximoCiclo;
-            }
+        let cicloActual = getCicloLiturgico(year);
+        // Si el mes es noviembre o diciembre, el ciclo litúrgico cambia para el próximo año.
+        if (today.getMonth() >= 11) {
+            cicloActual = getCicloLiturgico(year + 1);
         }
-    }
-    
-    const infoCiclo = tiemposLiturgicos[cicloActual];
-    let infoActual = null;
-    let esOrdinario = false;
+        
+        const infoCiclo = tiemposLiturgicos[cicloActual];
+        let infoActual = null;
+        let esOrdinario = false;
 
-    // Buscar el tiempo litúrgico actual
-    infoCiclo.forEach(item => {
-        if (item.inicio && item.fin) {
-            const inicioUTC = Date.UTC(new Date(item.inicio).getFullYear(), new Date(item.inicio).getMonth(), new Date(item.inicio).getDate());
-            const finUTC = Date.UTC(new Date(item.fin).getFullYear(), new Date(item.fin).getMonth(), new Date(item.fin).getDate());
-            
-            // La comparación es inclusiva para la fecha de inicio y de fin
-            if (todayUTC >= inicioUTC && todayUTC <= finUTC) {
+        infoCiclo.forEach(item => {
+            const inicio = new Date(item.inicio);
+            const fin = new Date(item.fin);
+            fin.setHours(23, 59, 59, 999);
+            if (today >= inicio && today <= fin) {
                 infoActual = item;
                 if (item.codigo === 'to') {
                     esOrdinario = true;
                 }
             }
+        });
+        
+        if (!infoActual) {
+            return {
+                tiempo: 'Tiempo Ordinario',
+                semana: '',
+                dia: diaSemana,
+                fecha: fechaCompleta
+            };
         }
-    });
-    
-    if (!infoActual) {
+        
+        let semanaTexto = '';
+        if (infoActual.tipo === 'semanas') {
+            if (esOrdinario) {
+                const ordinaryWeeks = ordinaryTimeWeeks[cicloActual];
+                let semanaOrdinaria = null;
+                const todayDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+                
+                for (const week of ordinaryWeeks) {
+                    const inicio = new Date(week.inicio);
+                    const fin = new Date(week.fin);
+                    fin.setHours(23, 59, 59, 999);
+                    
+                    if (todayDate.getTime() >= inicio.getTime() && todayDate.getTime() <= fin.getTime()) {
+                        semanaOrdinaria = week.semana;
+                        break;
+                    }
+                }
+                if (semanaOrdinaria !== null) {
+                    semanaTexto = `, Semana ${semanaOrdinaria}`;
+                }
+            } else {
+                 const oneDay = 24 * 60 * 60 * 1000;
+                 const inicioSemanaDate = new Date(infoActual.inicio);
+                 const todayDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+                 const diasPasados = Math.floor((todayDate - inicioSemanaDate) / oneDay);
+                 
+                 if (infoActual.inicioSemana) {
+                     const semanaActual = infoActual.inicioSemana + Math.floor(diasPasados / 7);
+                     semanaTexto = `, Semana ${semanaActual}`;
+                 } else {
+                     const semanaActual = Math.floor(diasPasados / 7) + 1;
+                     semanaTexto = `, Semana ${semanaActual}`;
+                 }
+             }
+        }
+        
         return {
-            tiempo: 'Tiempo Ordinario',
-            semana: '',
+            tiempo: infoActual.tiempo,
+            semana: semanaTexto,
             dia: diaSemana,
             fecha: fechaCompleta
         };
-    }
-    
-    let semanaTexto = '';
-    
-    if (infoActual.tipo === 'semanas') {
-        if (esOrdinario) {
-            const ordinaryWeeks = ordinaryTimeWeeks[cicloActual];
-            let semanaOrdinaria = null;
-            
-            for (const week of ordinaryWeeks) {
-                const inicioUTC = Date.UTC(new Date(week.inicio).getFullYear(), new Date(week.inicio).getMonth(), new Date(week.inicio).getDate());
-                const finUTC = Date.UTC(new Date(week.fin).getFullYear(), new Date(week.fin).getMonth(), new Date(week.fin).getDate());
-                
-                if (todayUTC >= inicioUTC && todayUTC <= finUTC) {
-                    semanaOrdinaria = week.semana;
-                    break;
-                }
-            }
-            
-            if (semanaOrdinaria !== null) {
-                semanaTexto = `, Semana ${semanaOrdinaria}`;
-            } else {
-                const inicioTiempoUTC = Date.UTC(new Date(infoActual.inicio).getFullYear(), new Date(infoActual.inicio).getMonth(), new Date(infoActual.inicio).getDate());
-                
-                const diferenciaMs = todayUTC - inicioTiempoUTC;
-                const diferenciaDias = Math.floor(diferenciaMs / (1000 * 60 * 60 * 24));
-                const semanaActual = Math.floor(diferenciaDias / 7) + 1;
-                
-                if (infoActual.inicioSemana) {
-                    semanaTexto = `, Semana ${infoActual.inicioSemana + semanaActual - 1}`;
-                } else {
-                    semanaTexto = `, Semana ${semanaActual}`;
-                }
-            }
-        } else {
-            const inicioTiempoUTC = Date.UTC(new Date(infoActual.inicio).getFullYear(), new Date(infoActual.inicio).getMonth(), new Date(infoActual.inicio).getDate());
-            
-            const diferenciaMs = todayUTC - inicioTiempoUTC;
-            const diferenciaDias = Math.floor(diferenciaMs / (1000 * 60 * 60 * 24));
-            const semanaActual = Math.floor(diferenciaDias / 7) + 1;
-            
-            if (infoActual.inicioSemana) {
-                semanaTexto = `, Semana ${infoActual.inicioSemana + semanaActual - 1}`;
-            } else {
-                semanaTexto = `, Semana ${semanaActual}`;
-            }
-        }
-    }
-    
-    return {
-        tiempo: infoActual.tiempo,
-        semana: semanaTexto,
-        dia: diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1), // Capitalizar
-        fecha: fechaCompleta
     };
-};
-    //*************************************************************************
 
     const displayTiempos = (ciclo) => {
         tiemposContainer.innerHTML = '';
