@@ -4091,7 +4091,7 @@ const allCantosData = [
             { line: "como rocío yo te he engendrado»., (Si,7,15)(Mi,,277)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "DICE EL SEÑOR A MI SEÑOR:, (Mi,,10)", sC: "ta as", lines: [
+       triggerLine: "DICE EL SEÑOR A MI SEÑOR, (Mi,,10)", sC: "ta as", lines: [
             { line: "«SIÉNTATE A MI DERECHA,, (Sol#,,39)", sC: "as"},
             { line: "HASTA QUE PONGA A TUS ENEMIGOS, (La,,21)", sC: "as"},
             { line: "COMO ESCABEL DE TUS PIES;, (Mi,,10)", sC: "as"},
@@ -4114,7 +4114,7 @@ const allCantosData = [
             { line: "levanta la cabeza., (Si,7,15)(Mi,,135)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "DICE EL SEÑOR A MI SEÑOR:, (Mi,,10)", sC: "ta as", lines: [
+       triggerLine: "DICE EL SEÑOR A MI SEÑOR, (Mi,,10)", sC: "ta as", lines: [
             { line: "«SIÉNTATE A MI DERECHA,, (Sol#,,39)", sC: "as"},
             { line: "HASTA QUE PONGA A TUS ENEMIGOS, (La,,21)", sC: "as"},
             { line: "COMO ESCABEL DE TUS PIES;, (Mi,,10)", sC: "as"},

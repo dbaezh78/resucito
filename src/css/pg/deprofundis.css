@@ -7,7 +7,7 @@
     color: red;
     font-style: italic;
 @media (min-width: 384px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
     left: 36px;
     top: 14px;
 
