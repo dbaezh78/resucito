@@ -1090,8 +1090,8 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ALELUYA,ALELUYA,ALELUYA., (Do,,15)(Mi,,149)(La,m,262)", sC: "as ta", lines: [
-            { line: "ALELUYA,ALELUYA,ALELUYA., (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
+       triggerLine: "ALELUYA, ALELUYA, ALELUYA (Do,,15)(Mi,,149)(La,m,262)", sC: "as ta", lines: [
+            { line: "ALELUYA, ALELUYA, ALELUYA. (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
@@ -1103,8 +1103,8 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "ALELUYA,ALELUYA,ALELUYA., (Do,,15)(Mi,,149)(La,m,262)", sC: "as ta", lines: [
-            { line: "ALELUYA,ALELUYA,ALELUYA., (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
+       triggerLine: "ALELUYA, ALELUYA, ALELUYA., (Do,,15)(Mi,,149)(La,m,262)", sC: "as ta", lines: [
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
     ], lder: [
             { line: "Bienaventurados, (Do,,10)", sC: "tc"},
             { line: "los invitados a bodas,(Mi,,10)", sC: ""},
@@ -1116,8 +1116,8 @@ const allCantosData = [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
             { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "ALELUYA,ALELUYA,ALELUYA., (Do,,15)(Mi,,149)(La,m,262)", sC: "as ta", lines: [
-            { line: "ALELUYA,ALELUYA,ALELUYA., (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
+       triggerLine: "ALELUYA, ALELUYA, ALELUYA., (Do,,15)(Mi,,149)(La,m,262)", sC: "as ta", lines: [
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,53)(Mi,,149)(La,m,262)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA, YA LLEGÓ EL REINO
 // SIGUIENTE CANTO DEBAJO
 /*
@@ -1832,7 +1832,8 @@ const allCantosData = [
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 }},   // Para PC
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=balaam",
         sig: "/src/index.html?canto=bendicealmamiaayahveh",
 // Contenido del lado izquierdo del canto,
@@ -1863,8 +1864,8 @@ const allCantosData = [
 
             { line: "Porque el ángel del Señor acampa, (Re,m,20)", sC: "tc"},
             { line: "en torno a aquellos que le temen y les salva., (Do,,41)(La,,379)", sC: ""},
-            { line: "Gritan ellos, y el Señor les escucha, (Si♭,,77)", sC: ""},
-            { line: "y los libra de todas sus angustias., (Si♭,,62)(La,,268)", sC: ""},
+            { line: "Gritan ellos, y el Señor les escucha, (Si♭,,77)(La,,291)", sC: ""},
+            { line: "y los libra de todas sus angustias., (Si♭,,62)(La,,267)", sC: ""},
     ], lder: [
             { line: "Gustad y ved, (Re,m,20)", sC: "tc"},
             { line: "qué bueno es el Señor,(Do,,77)(La,,195)", sC: ""},
@@ -2034,7 +2035,7 @@ const allCantosData = [
         tt: "Bendito Eres, Señor",
         title: "Bendito Eres, Señor",
         subtitle: "Daniel 3,52-57",
-        category: ["PreCatecumenado","Salmodias","Visperas"],
+        category: ["PreCatecumenado","Salmodias"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
@@ -7409,7 +7410,7 @@ const allCantosData = [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=jesusrecorriatodaslas",
+        ant: "/src/index.html?canto=jesusrecorriatodaslasciudades",
         sig: "/src/index.html?canto=laespada",
 // Contenido del lado izquierdo del canto,
     lizq: [
@@ -7714,7 +7715,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "QUE YA BLANQUEAN PARA LA SIEGA., (Si♭,,170)(La,,320)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¿NO DECÍS VOSOTROS:..., (Re,m,157)(La,,198)", sC: "ta as", lines: [
+       triggerLine: "¿NO DECÍS VOSOTROS (Re,m,157)(La,,198)", sC: "ta as", lines: [
             { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
             { line: "Y LLEGA YA LA SIEGA?, (Re,m,170)", sC: "as"},
             { line: "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)", sC: "as"},
@@ -7728,7 +7729,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "A PARA LA VIDA ETERNA., (Si♭,,10)(La,,194)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "¿NO DECÍS VOSOTROS:..., (Re,m,157)(La,,198)", sC: "ta as", lines: [
+       triggerLine: "¿NO DECÍS VOSOTROS (Re,m,157)(La,,198)", sC: "ta as", lines: [
             { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
             { line: "Y LLEGA YA LA SIEGA?, (Re,m,170)", sC: "as"},
             { line: "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)", sC: "as"},
@@ -7744,7 +7745,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "se alegra, se alegra con el segador., (Do,,10)(Si♭,,153)(La,,320)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¿NO DECÍS VOSOTROS:..., (Re,m,157)(La,,198)", sC: "ta as", lines: [
+       triggerLine: "¿NO DECÍS VOSOTROS (Re,m,157)(La,,198)", sC: "ta as", lines: [
             { line: "TODAVÍA CUATRO MESES, ", sC: "as"},
             { line: "Y LLEGA YA LA SIEGA?, (Re,m,170)", sC: "as"},
             { line: "¿NO DECÍS VOSOTROS:, (Do,,95)(Si♭,,129)(La,,160)", sC: "as"},

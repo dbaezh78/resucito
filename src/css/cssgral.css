@@ -154,7 +154,7 @@ display: none;}
     .main-wrapper {
         width: 384px; /*98%;*/
         padding: 0px;
-        align-items: center;
+        /*  align-items: center;        /* CSs para Central contenido */
         margin-left: 1px;
         margin-right: 1px;
         margin-top: 44px;
@@ -705,48 +705,6 @@ display: none;}
 .melisma1::before {content: "[melisma]";}
 .bis::before {content: "BIS A.";}
 .pa::before {content: "P.";}
-
-
-.r1, .r2, .r11 {
-    position: relative;
-    min-height: 0px;
-}
-
-/* Las propiedades comunes que no dependen de media queries van aquí */
-.r1::before, .r2::before, .r11::before {
-    content: " BIS A."; /* Movido aquí */
-    position: absolute; /* Movido aquí */
-    align-content: center; /* Movido aquí */
-    border-left: 2px solid #c6c5c59e; /* Movido aquí */
-    color: #c6c5c59e; /* Movido aquí */
-    width: max-content; /* Movido aquí */
-}
-
-/* Media queries para r1 y r2 */
-@media (min-width: 384px) {
-    .r1::before, .r2::before {
-        height: 40px;
-        margin-left: 85%;
-        margin-top: 0%;
-    }
-}
-@media (min-width: 768px) {
-    .r1::before, .r2::before {
-        font-size: 1.5rem;
-        height: 80px;
-        margin-left: 80%;
-        margin-top: 0%;
-    }
-}
-@media (min-width: 992px) {
-    .r1::before, .r2::before {
-        font-size: 1.3rem;
-        font-weight: bold;
-        height: 134px;
-        margin-left: 80%;
-        margin-top: 0%;
-    }
-}
 
 hr {
     color: gray;

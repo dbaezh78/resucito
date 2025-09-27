@@ -1,16 +1,7 @@
-/*.container {margin-left: 3%;}*/
-.container {
-    @media (min-width: 384px) {
-            margin-left: 7%;
-    }
-    @media (min-width: 768px) {
-            margin-left: 7%;
-    }
-    @media (min-width: 992px) {
-            margin-left: 7%;
-    }
+        @media (min-width: 384px) {.container {margin-left: 7%;}.r1::before {height: 127px;margin-left: 240px;margin-top: 0%;}}
+        @media (min-width: 768px) {.container {margin-left: 0%;}.r1::before {height: 211px;margin-left: 456px;margin-top: 0%;}}
+        @media (min-width: 992px) {.container {margin-left: 12%;}.r1::before {height: 160px;margin-left: 335px;margin-top: 0%;}}
 
-}
 
 .m11 {margin-left: 244px;bottom: 63px;}
 .m12 {margin-left: 244px;bottom: 75px;}

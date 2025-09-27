@@ -1,47 +1,8 @@
-.container {
-    @media (min-width: 384px) {
-        margin-left: 8%;
-    }
-    @media (min-width: 768px) {
-        margin-left: 10%;
-    }
-    @media (min-width: 992px) {
-        margin-left: 0%;
-    }
-}
+    @media (min-width: 384px) {.container {margin-left: 5%;}.r1::before {height: 28px;margin-left: 86px;margin-top: 0%;}.tc1::before {top: 47px;}.tc2::before { font-size: 0.9rem;left: -17px;top: -163px;}}
+    @media (min-width: 768px) {.container {margin-left: 0%;}.r1::before {height: 47px;margin-left: 88px;margin-top: 0%;}.tc1::before {top: 53px;font-size: 1.6rem;}.tc2::before { font-size: 1.6rem;left: -39px;top: -270px;}}
+    @media (min-width: 992px) {.container {margin-left: 0%;}.r1::before {height: 34px;margin-left: 410px;margin-top: 0%;font-size: large;}.main-wrapper {width: auto;padding: 0px 60px 0px 60px;}.tc1::before {top: 50px;font-size: 1.23rem;}.tc2::before {top: -214px;}}
 
-.r1::before {
-@media (min-width: 384px) {
-    height: 28px;
-    margin-left: 86%;
-    margin-top: 0%;
-}
-@media (min-width: 768px) {
-        height: 47px;
-        margin-left: 88%;
-        margin-top: 0%;
-    }
-
-@media (min-width: 992px) {
-    font-size: large;
-        height: 34px;
-        margin-left: 410px;
-    }
-}
-
-
-.container {margin-left: 0px;}
-
-.full {
-    width: max-content;
-}
-
-@media (min-width: 992px) {
-    .main-wrapper {
-        width: auto;
-        padding: 0px 60px 0px 60px;
-    }
-}
+    .full {width: max-content;}
 
 /*
 @media (min-width: 992px) {
@@ -52,33 +13,5 @@
 }
 */
 
-.tc1::before {
-    @media (min-width:384px){
-        top: 47px;
-    }
-    @media (min-width:768px){
-        top: 53px;
-        font-size: 1.6rem;
-    }
-    @media (min-width:992px){
-        top: 50px;
-        font-size: 1.23rem;
-    }
-}
 
-.tc2::before {
-    @media (min-width: 384px) {
-        font-size: 0.9rem;
-        left: -17px;
-        top: -163px;
-    }
-    @media (min-width: 768px) {
-        font-size: 1.6rem;
-        left: -39px;
-        top: -270px;
-    }
 
-    @media (min-width: 992px) {
-        top: -214px;
-    }
-}

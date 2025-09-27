@@ -4,34 +4,33 @@
 /* Ejemplo: Si quieres un color de fondo diferente solo para este canto */
 /* body { background-color: #f0f8ff; } */
 
+/*1ra configuracion r1, r2 */
+.r1, .r2, .r3, .r4, .r5, .r6, .r7, .r8, .r9, .r10, .r11, .r12 {position: relative;min-height: 0px;}
 
-/* Puedes mantener las media queries para .r1::before, .r2::before aquí si son específicas de este canto */
-.r1::before, .r2::before {
-    /* Las propiedades comunes que no dependen de media queries van aquí */
-}
-
-@media (min-width: 384px) {
-    .r1::before, .r2::before {
-        height: 93px;
-        margin-left: 79%;
-        margin-top: -10%;
-    }
-}
-@media (min-width: 768px) {
-    .r1::before, .r2::before {
-        height: 153px;
-        margin-left: 80%;
-        margin-top: -9%;
-    }
+/*2da configuracion r1, r2 */
+/* Las propiedades comunes que no dependen de media queries van aquí */
+.r1::before, .r2::before, .r3::before, .r4::before, .r5::before, .r6::before, .r7::before, .r8::before, .r9::before, .r10::before, .r11::before, .r12::before
+{
+    content: " BIS A."; /* Movido aquí */
+    position: absolute; /* Movido aquí */
+    align-content: center; /* Movido aquí */
+    border-left: 2px solid #c6c5c59e; /* Movido aquí */
+    color: #c6c5c59e; /* Movido aquí */
+    width: max-content; /* Movido aquí */
+    font: icon;
+    font-weight: bold;
 }
 
-@media (min-width: 992px) {
-    .r1::before, .r2::before {
-        height: 125px;
-        margin-left: 77%;
-        margin-top: -9%;
-    }
-}
+/*3ra configuracion r1, r2 */
+@media (min-width: 384px) {.r1::before, .r2::before, .r3::before, .r4::before, .r5::before, .r6::before, .r7::before, .r8::before, .r9::before, .r10::before, .r11::before, .r12::before 
+    {height: 93px;margin-left: 375px;margin-top: -47px;}}
+@media (min-width: 768px) {.r1::before, .r2::before, .r3::before, .r4::before, .r5::before, .r6::before, .r7::before, .r8::before, .r9::before, .r10::before, .r11::before, .r12::before 
+    {height: 153px;margin-left: 380px;margin-top: -42px}}
+@media (min-width: 992px) {.r1::before, .r2::before, .r3::before, .r4::before, .r5::before, .r6::before, .r7::before, .r8::before, .r9::before, .r10::before, .r11::before, .r12::before 
+    {height: 125px;margin-left: 366px;margin-top: -42px;}}
+
+ .b1-1, .b1-2, .b2, .b3, .b12-1, .b12-2, .b14, .b17, .b18, .b19, .b24, .sb194
+ {position: relative;min-height: 0px;}
 
 /* ESTRUCTURA DE BIS*/
 
@@ -108,14 +107,9 @@
     @media (min-width: 992px) {height: 40px;margin-left: 344px;margin-top: -10px;}
 }
 
-.r1, .r2, .b1-1, .b1-2, .b2, .b3, .b12-1, .b12-2, .b14, .b17, .b18, .b19, .b24, .sb194
- {
-    position: relative;
-    min-height: 0px;
-}
 
 /* Las propiedades comunes que no dependen de media queries van aquí */
-.r1::before, .r2::before, .b1-1::before, .b1-2::before, .b2::before,
+.b1-1::before, .b1-2::before, .b2::before,
 .b3::before, .b12-1::before, .b12-2::before, .b14::before, .b17::before,
 .b18::before, .b19::before, .b19b::before, .b24::before, .b31::before
 {
@@ -142,11 +136,10 @@
 
 /* Media queries para r1 y r2 */
 @media (min-width: 384px) {
-    .r1::before, .r2::before {height: 40px;left: auto;margin-top: 0%;}
     .b1-1::before{height: 100px;margin-left: 85%;margin-top: 0%;}
     .b1-2::before{height: 60px;margin-left: 88%;margin-top: 0%;}
     .b2::before{height: 60px;margin-left: 88%;margin-top: 0%;}
-    .b12-1::before{height: 55px;margin-left: 200px;margin-top: 0%;}
+    .b12-1::before {height: 55px;margin-left: 200px;margin-top: 0%;}
     .b12-2::before{height: 130px;margin-left: 230px;margin-top: -35px;}
     .b14::before{height: 55px;margin-left: 230px;margin-top: -35px;}
     .b17::before{height: 55px;margin-left: 230px;margin-top: -35px;}
@@ -157,8 +150,6 @@
     .b31::before{height: 166px;margin-left: 244px;margin-top: -35px;}
 }
 @media (min-width: 768px) {
-    .r1::before {font-size: 1.5rem;height: 80px;margin-left: 80%;margin-top: 0%;}
-    .r2::before {font-size: 1.5rem;height: 80px;margin-left: 80%;margin-top: 0%;}
     .b1-1::before{height: 79px;margin-left: 85%;margin-top: 0%;}
     .b1-2::before{height: 60px;margin-left: 88%;margin-top: 0%;}
     .b2::before{height: 60px;margin-left: 88%;margin-top: 0%;}
@@ -173,8 +164,6 @@
     .b31::before{height: 262px;margin-left: 447px;margin-top: -50px;}
 }
 @media (min-width: 992px) {
-    .r1::before {font-size: 1.3rem;font-weight: bold;height: 134px;margin-left: 80%;margin-top: 0%;}
-    .r2::before {font-size: 1.3rem;font-weight: bold;height: 134px;margin-left: 80%;margin-top: 0%;}
     .b1-1::before{height: 127px;margin-left: 76%;margin-top: 0%;}
     .b1-2::before{height: 80px;margin-left: 88%;margin-top: 0%;}
     .b2::before {font-size: 1.3rem;font-weight: bold;height: 73px;margin-left: 40%;margin-top: -5%;}
