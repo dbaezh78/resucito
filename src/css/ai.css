@@ -1,7 +1,14 @@
 /* CSS PARA LIBRO DE CANTOS*/
-.cristo {
-    width: 13%;
+
+@media (min-width: 384px){
+    .cristo {width: 34%;}
 }
+@media (min-width: 768px){}
+@media (min-width: 992px){
+    .cristo {width: 13%;}
+}
+
+
 
 
 body {

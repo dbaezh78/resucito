@@ -9247,20 +9247,20 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Retrocedan los que odian a Sión,, (La,m,20)(Mi,,294)", sC: "tc"},
             { line: "retrocedan los que odian a Sión., (La,m,285)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN,, (La,m,20)(Mi,,185)", sC: "ta as"},
-            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN., (La,m,150)", sC: "as"},
+            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN,, (La,m,20)(Mi,,343)", sC: "ta as"},
+            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN., (La,m,341)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Que sean como la hierba, (La,m,306)", sC: "tc"},
-            { line: "que crece en el tejado,, (Mi,,354)", sC: ""},
+            { line: "Que sean como la hierba, (La,m,20)", sC: "tc"},
+            { line: "que crece en el tejado,, (Mi,,180)", sC: ""},
             { line: "como la hierba que se seca, ", sC: ""},
-            { line: "antes de arrancarla., (La,m,20)", sC: ""},
+            { line: "antes de arrancarla., (La,m,154)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "De ella no llena el segador su mano,, (Mi,,306)", sC: ""},
             { line: "de ella no llena su regazo el gavillador., (La,m,354)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "RETROCEDAN LOS QUE ODIAN A SIÓN, (La,m,20)(Mi,,185)", sC: "ta as", lines: [
-            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN., (La,m,150)", sC: "as"},  ]},
+       triggerLine: "RETROCEDAN LOS QUE ODIAN A SIÓN, (La,m,20)(Mi,,344)", sC: "ta as", lines: [
+            { line: "RETROCEDAN LOS QUE ODIAN A SIÓN., (La,m,341)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
        triggerLine: "MUCHO ME HAN PERSEGUIDO, (La,m,20)", sC: "ta as", lines: [
@@ -9729,12 +9729,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=ohmuertedondeestatuvictoria",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Oh Jesús ,amor mío,, (La,m,20)(Fa,,174)", sC: "tc ast"},
-            { line: "¡cuánto me has amado,, ", sC: ""},
+            { line: "Oh Jesús , amor mío,, (La,m,20)(Fa,,174)", sC: "tc ast"},
+            { line: "¡cuánto me has amado, ", sC: ""},
             { line: "cuánto me has amado!, (Mi,,189)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "OH JESÚS, AMOR MÍO,, (La,m,75)(Fa,,191)", sC: "ta as"},
-            { line: "¡CUÁNTO ME HAS AMADO,, ", sC: "as"},
+            { line: "¡CUÁNTO ME HAS AMADO, ", sC: "as"},
             { line: "CUÁNTO ME HAS AMADO!, (Mi,,207)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Tú has recibido las espinas de la soberbia de mí,, (La,m,20)(Sol,,117)(La,m,451)", sC: "tc"},
@@ -10618,7 +10618,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Es como ungüento que desciende por la barba,, (Sol,,137)", sC: "tc"},
             { line: "por la barba de Aarón., (Fa,,12)(Mi,,192)", sC: ""},
-            { line: "ES COMO UNGÜENTO QUE DESCIENDE POR LA BARBA,, (Sol,,159)", sC: "ta as"},
+            { line: "ES COMO UNGÜENTO \n QUE DESCIENDE POR LA BARBA,, (Sol,,159)", sC: "ta as"},
             { line: "POR LA BARBA DE AARÓN., (Fa,,20)(Mi,,236)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
@@ -10813,12 +10813,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "a Jerusalén, Jerusalén., (Re,m,22)(Mi,,62)", sC: ""},
             { line: "A comer las hierbas, (La,m,20)", sC: ""},
             { line: "y a saciarme de ellas,, (Re,m,22)(Mi,,59)", sC: ""},
-            { line: "saciarme de ellas., ", sC: ""},
+            { line: "saciarme de ellas. ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "EN EL SENDERO ME ENCUENTRO YO., (Fa,,10)(La,m,339)", sC: "ta as"},
             { line: "EN EL SENDERO CAMINO YO., (Fa,,10)(La,m,265)", sC: "as"},
             { line: "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,20)(Mi,,57)", sC: "as"},
-            { line: "DE TODO EL MUNDO., ", sC: "as"},
+            { line: "DE TODO EL MUNDO. ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "LA LA, LA LA LA LA LA LA LALA ..., (Mi,,10)", sC: "as"},
             { line: "LA LA, LA ... LA, (Re,m,46)(Mi,,138)", sC: "as"},
@@ -10826,8 +10826,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     ], lder: [
             { line: "Hazme comer las hierbas,, (Mi,,10)(La,m,223)", sC: "tc"},
             { line: "que pueda saciar mis ansias,, (Re,m,22)(Mi,,62)", sC: ""},
-            { line: "que son ansias de amistad,, ", sC: ""},
-            { line: "que son ansias de humildad,, ", sC: ""},
+            { line: "que son ansias de amistad, ", sC: ""},
+            { line: "que son ansias de humildad, ", sC: ""},
             { line: "que son ansias,, (Re,m,95)(Mi,,135)", sC: ""},
             { line: "que son ansias de obediencia., ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -10835,7 +10835,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
        triggerLine: "EN EL SENDERO ME ENCUENTRO YO, (Fa,,10)(La,m,339)", sC: "ta as", lines: [
             { line: "EN EL SENDERO CAMINO YO., (Fa,,10)(La,m,265)", sC: "as"},
             { line: "EN EL SEÑOR DE TODO EL MUNDO,, (Re,m,20)(Mi,,57)", sC: "as"},
-            { line: "DE TODO EL MUNDO., ", sC: "as"},  ]},
+            { line: "DE TODO EL MUNDO. ", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ADONAI ELOHENU,, (Mi,,11)", sC: "ta as"},
             { line: "ADONAI ELOHENU,, (Re,m,63)(Mi,,140)", sC: "as"},
@@ -11845,6 +11845,147 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "NO ENDUREZCÁIS EL CORAZÓN., (Si,7,153)(Mi,,285)", sC: "as r1"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: SI HOY ESCUCHÁIS SU VOZ 
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SI ME HE REFUGIADO EN EL SEÑOR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "simeherefugiadoenelsenor",
+        tt: "Si Me He Refugiado En El Señor",
+        title: "Si Me He Refugiado En El Señor",
+        subtitle: "Salmo 11(10)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "153",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/simeherefugiadoenelsenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=sihoyescuchaissuvoz",
+        sig: "/src/index.html?canto=sionmadredetodoslospueblos",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SI ME HE REFUGIADO EN EL SEÑOR,, (Sol,,14)(Si,7,172)", sC: "ta as"},
+            { line: "¿CÓMO PODÉIS DECIRME, ", sC: "as"},
+            { line: "CÓMO PODÉIS DECIRME, (Mi,m,190)", sC: "as"},
+            { line: "QUE HUYA COMO EL PÁJARO AL MONTE,, (Do,,64)(Si,7,339)", sC: "as"},
+            { line: "QUE HUYA COMO EL PÁJARO AL MONTE?, (Do,,64)(Si,7,339)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo sé que los malvados tensan el arco,, (Do,,10)(Si7,,335)", sC: "tc"},
+            { line: "que ajustan las flechas a la cuerda,, (Do,,66)(Si,7,297)", sC: ""},
+            { line: "para herir en la sombra al inocente., (Do,,64)(Si,7,303)", sC: ""},
+            { line: "Mas cuando fallan los cimientos,, (La,m,20)(Si,7,263)", sC: ""},
+            { line: "¿qué puede hacer el justo?,, (La,m,20)(Si,7,215)", sC: ""},
+            { line: "¿qué puede hacer el justo?, (Do,,10)(Si,7,216)", sC: ""},
+    ], lder: [
+            { line: "Mas el Señor, el Señor, (Sol,,14)(Si,7,200)", sC: ""},
+            { line: "está en su templo santo,, (Mi,m,197)", sC: ""},
+            { line: "tiene su trono en el cielo;, (Do,,10)(Si,7,213)", sC: ""},
+            { line: "sus ojos observan el mundo,, (Do,,46)(Si,7,226)", sC: ""},
+            { line: "sus pupilas las acciones de los hombres., (Do,,77)(Si,7,318)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Señor escruta a los justos,, (Sol,,14)(Si,7,79)(Mi,m,230)", sC: ""},
+            { line: "mas también escruta a los malvados;, (Do,,10)(Si,7,312)", sC: ""},
+            { line: "y el Señor no ama la violencia,, (La,m,81)(Si,7,241)", sC: ""},
+            { line: "el Señor no ama la violencia., (La,m,69)(Si,7,226)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SI ME HE REFUGIADO EN EL SEÑOR (Sol,,14)(Si,7,172)", sC: "ta as", lines: [
+            { line: "¿CÓMO PODÉIS DECIRME, ", sC: "as"},
+            { line: "CÓMO PODÉIS DECIRME, (Mi,m,190)", sC: "as"},
+            { line: "QUE HUYA COMO EL PÁJARO AL MONTE,, (Do,,64)(Si,7,339)", sC: "as"},
+            { line: "QUE HUYA COMO EL PÁJARO AL MONTE?, (Do,,64)(Si,7,339)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: SI ME HE REFUGIADO EN EL SEÑOR
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SIÓN, MADRE DE TODOS LOS PUEBLOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "sionmadredetodoslospueblos",
+        tt: "Sión, Madre De Todos Los Pueblos",
+        title: "Sión, Madre De Todos Los Pueblos",
+        subtitle: "Salmo 87 (86)",
+        category: ["Precatecumenado","Vírgen María","Final","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "2",
+        nCan: "* Punteo: al aire la 5ª cuerda, 3e, traste la 6ª cuerda, 1e, traste la 6ª cuerda, enlazando con el acorde de Fa",
+        nCanURL: "",
+        dbno: "154",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/sionmadredetodoslospueblos.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=simeherefugiadoenelsenor",
+        sig: "/src/index.html?canto=solaasolo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Su fundación está sobre los montes santos,, (La,m,15)(Fa,,421)", sC: "tc ast"},
+            { line: "el Señor ama las puertas de Sión, ", sC: ""},
+            { line: "más que todas las moradas de Jacob., (Mi,,339)(Si,7,377)", sC: ""},
+            { line: "De ti se dicen cosas estupendas,, ", sC: ""},
+            { line: "ciudad de Dios., (Mi,,125)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Recuerdo Ráhab y Babilonia,, (La,m,15)(Fa,,286)", sC: "ast1"},
+            { line: "Palestina, Tiro y Etiopía,, ", sC: ""},
+            { line: "Cuando alguno nace en ellas se dice:, ", sC: ""},
+            { line: "Fulano nació allí»,, (Mi,,149)(Si,7,188)", sC: ""},
+            { line: "Mas de Sión se dice: Madre»., (Mi,,226)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PORQUE TODOS HAN NACIDO EN ELLA., (La,m,20)(Re,m,102)(Mi,,182)(La,m,335)", sC: "tc as r1"},
+            { line: "EL SEÑOR, ÉL MISMO LA FUNDÓ., (Sol,,14)(Fa,,78)(Mi,,300)", sC: "tc as r1"},
+            { line: "¡MADRE, MADRE, CIUDAD DE DIOS!, (La,m,35)(Sol,,114)(Fa,,227)(Mi,,310)", sC: "ta as r1"},
+    ], lder: [
+            { line: "El Señor escribe en el libro de los pueblos:, (La,m,20)(Fa,,412)", sC: "tc ast2"},
+            { line: "Este ha nacido en ella»,, ", sC: ""},
+            { line: "y danzando cantarán:, (Mi,,182)(Si,7,240)", sC: ""},
+            { line: "Están en ti todas mis fuentes»., (Mi,,231)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y DANZANDO, DANZANDO CANTARÁN:, (La,m,20)(Re,m,80)(Mi,,203)(La,m,345)", sC: "tc as r1"},
+            { line: "«TODAS MIS FUENTES ESTÁN EN TI., (Sol,,25)(Fa,,149)(Mi,,329)", sC: "tc as r1"},
+            { line: "¡MADRE, MADRE, CIUDAD DE DIOS!, (La,m,34)(Sol,,112)(Fa,,226)(Mi,,307)", sC: "ta as r1"},
+]}, // ULTIMA LINEA DEL CANTO: SIÓN, MADRE DE TODOS LOS PUEBLOS
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

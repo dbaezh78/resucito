@@ -711,24 +711,28 @@ hr {
     width: 100%;
     padding: 0 20px 0 20px;
     margin-left: -20px; /* Adjusted to align with container padding */
+
+        @media (min-width: 992px) {
+        padding: 10px 60px 10px 60px;
+    }
 }
 
 @media (min-width: 384px) {
     hr {
-        width: 334px;
+        width: 341px;
         margin-left: 0px;
     }
 }
 @media (min-width: 768px) {
     hr {
-        width: 742px;
+        width: 758px;
         margin-left: 0px;
     }
 }
 @media (min-width: 992px) {
     hr {
         width: 100%;
-        margin-left: -20px;
+        margin-left: -61px;
     }
 }
 
@@ -753,7 +757,8 @@ hr {
 }
 
 .dbsize{
-    max-width: 33%;
+    /*max-width: 33%;*/
+    align-self: start;
 }
 
 .category-link {
@@ -803,7 +808,7 @@ hr {
 
 
     @media (min-width: 992px) {
-        padding: 10px 20px 10px 20px;
+        padding: 10px 60px 10px 60px;
     }
 }
 
@@ -813,7 +818,7 @@ hr {
     color: red;
     font-family: 'Franklin Gothic Medium';
     font-size: medium;
-    text-align: justify;        /* ESTE SE HA PUESTO PARA JUSTIFICAR EL CONTENIDO DE LOS COMENTARIOS*/
+    text-align: start;        /* ESTE SE HA PUESTO PARA JUSTIFICAR EL CONTENIDO DE LOS COMENTARIOS*/
 }
 
 .collapsible-trigger {

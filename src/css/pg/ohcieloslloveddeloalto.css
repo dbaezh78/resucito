@@ -1,10 +1,15 @@
-.container {
-        @media (min-width: 384px) {margin-left: 4%;}
-        @media (min-width: 768px) {margin-left: 0%;}
-        @media (min-width: 992px) {margin-left: 15%;}
-    }
-
-.jte {
-    margin-top: -46px;
-    margin-left: 162px;
-}
+        @media (min-width: 384px) {
+            .container {margin-left: 5%;}
+            .r1::before {height: 129px;margin-left: 238px;margin-top: -11%;}
+            .jte {margin-top: -33px;margin-left: 120px;}
+        }
+        @media (min-width: 768px) {
+            .container {margin-left: 0%;}
+            .r1::before {height: 216px;margin-left: 446px;margin-top: -9%;}
+            .jte {margin-top: -57px;margin-left: 215px;}
+        }
+        @media (min-width: 992px) {
+            .container {margin-left: 12%;}
+            .r1::before {height: 173px;margin-left: 337px;margin-top: -6%;}
+            .jte {margin-top: -46px;margin-left: 162px;}
+        }
