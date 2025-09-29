@@ -707,13 +707,13 @@ display: none;}
 .pa::before {content: "P.";}
 
 hr {
+    margin: 0;
     color: gray;
     width: 100%;
     padding: 0 20px 0 20px;
     margin-left: -20px; /* Adjusted to align with container padding */
-
         @media (min-width: 992px) {
-        padding: 10px 60px 10px 60px;
+        padding: 0px 20px 0px 20px;
     }
 }
 
@@ -732,7 +732,7 @@ hr {
 @media (min-width: 992px) {
     hr {
         width: 100%;
-        margin-left: -61px;
+        margin-right: 0px;
     }
 }
 
@@ -808,7 +808,7 @@ hr {
 
 
     @media (min-width: 992px) {
-        padding: 10px 60px 10px 60px;
+        padding: 10px 21px 10px 21px;
     }
 }
 

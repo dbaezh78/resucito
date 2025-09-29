@@ -11959,6 +11959,140 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "¡MADRE, MADRE, CIUDAD DE DIOS!, (La,m,34)(Sol,,112)(Fa,,226)(Mi,,307)", sC: "ta as r1"},
 ]}, // ULTIMA LINEA DEL CANTO: SIÓN, MADRE DE TODOS LOS PUEBLOS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SOLA A SOLO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "solaasolo",
+        tt: "Sola A Solo",
+        title: "Sola A Solo",
+        subtitle: "(Kiko Argüello)",
+        category: ["Precatecumenado","Vírgen María","Cuaresma","Penitencial","Fracción Del Pan"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* Punteo en la 1ª cuerda: al aire 5º 4º 5º 7° 5° 4° y 5° traste. La 4ª cuerda en el 6° traste tres veces y la 1 ª al aire nuevamente.",
+        nCanURL: "",
+        dbno: "155",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/solaasolo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=sionmadredetodoslospueblos",
+        sig: "/src/index.html?canto=stabatmaterdolorosa",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Sola a solo, (Re,madd9*,47)(Sol,m,127)", sC: "tc"},
+            { line: "bajo la cruz,, (La,,96)", sC: ""},
+            { line: "María, ¿quién te podrá separar?, (Re,m,284)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Virgen sola,, (Sol,m,88)", sC: ""},
+            { line: "Madre,, (La,,25)", sC: ""},
+            { line: "torre atravesada., (Re,m,126)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Columna de amor,, (Sol,m,158)", sC: ""},
+            { line: "tú sujetas el cielo, (La,,146)", sC: ""},
+            { line: "de nuestra débil fe., (Re,m,164)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SOLA A SOLO,, (Re,m,18)(Do,,100)", sC: "ta as"},
+            { line: "MADRE, LLENA DE DIOS., (Fa,,209)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS, (La,,36)", sC: "as"},
+            { line: "QUE SOMOS PECADORES., (Si♭,,71)(La,,200)", sC: "as"},
+    ], lder: [
+            { line: "Sola a solo, (Re,m,21)(Sol,m,85)", sC: "tc"},
+            { line: "bajo la cruz,, (La,,92)", sC: ""},
+            { line: "María, ¿quién te podrá separar?, (Re,m,286)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "VIRGEN SOLA,, (Re,m,19)(Sol,m,101)", sC: "ta as"},
+            { line: "MADRE,, (La,,26)", sC: "as"},
+            { line: "TORRE ATRAVESADA., (Re,m,163)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Columna de amor,, (Re,m,23)(Sol,m,157)", sC: "tc"},
+            { line: "tú sujetas el cielo, (La,,143)", sC: ""},
+            { line: "de nuestra débil fe., (Re,m,165)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SOLA A SOLO, (Re,m,18)(Do,,100)", sC: "ta as", lines: [
+            { line: "MADRE, LLENA DE DIOS., (Fa,,209)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS, (La,,36)", sC: "as"},
+            { line: "QUE SOMOS PECADORES., (Si♭,,71)(La,,200)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: SOLA A SOLO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           STABAT MATER DOLOROSA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "stabatmaterdolorosa",
+        tt: "Stabat Mater Dolorosa",
+        title: "Stabat Mater Dolorosa",
+        subtitle: "Himno latin",
+        category: ["Precatecumenado","Vírgen María","Cuaresma","Penitencial","Fracción Del Pan"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "156",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/stabatmaterdolorosa.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=solaasolo",
+        sig: "/src/index.html?canto=subediosentreaclamaciones",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "STABAT MATER DOLOROSA, (Re,m add9,42)", sC: "ta as"},
+            { line: "IUXTA CRUCEM LACRIMOSA,, (Do,7,19)(Si♭,7,237)", sC: "as r1"},
+            { line: "DUM PENDEBAT FILIUS., (La,,201)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Era su alma un gemido,, (Re,m,20)", sC: "tc"},
+            { line: "era un dolor, era un grito,, (Do,7,107)(Si♭,7,209)", sC: ""},
+            { line: "cuando una espada la atravesó., (La,,291)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Oh qué triste y afligida, (Re,m,22)", sC: ""},
+            { line: "está la bendita Madre, (Do,7,33)(Si♭,7,169)", sC: ""},
+            { line: "del Unigénito., (La,,83)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "STABAT MATER DOLOROSA, (Re,m,20)", sC: "ta as", lines: [
+            { line: "IUXTA CRUCEM LACRIMOSA,, (Do,7,19)(Si♭,7,237)", sC: "as r1"},
+            { line: "DUM PENDEBAT FILIUS., (La,,201)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿Cuál es el hombre que no llora, (Re,m,22)", sC: "tc"},
+            { line: "al ver a la Madre de Cristo, (Do,7,41)(Si♭,7,216)", sC: ""},
+            { line: "en tanto suplicio?, (La,,131)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por los pecados de su gente, (Re,m,22)", sC: ""},
+            { line: "Ella ve a Jesús en tormentos,, (Do,7,59)(Si♭,7,226)", sC: ""},
+            { line: "y sometido a los azotes., (La,,189)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "STABAT MATER DOLOROSA, (Re,m,20)", sC: "ta as", lines: [
+            { line: "IUXTA CRUCEM LACRIMOSA,, (Do,7,19)(Si♭,7,237)", sC: "as r1"},
+            { line: "DUM PENDEBAT FILIUS., (La,,201)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Ella ve a su Hijo amado, (Re,m,21)", sC: "tc"},
+            { line: "que muere desolado,, (Do,7,80)(Si♭,7,171)", sC: ""},
+            { line: "y que entrega su Espíritu., (La,,200)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Oh, Cristo, cuando yo deba morir,, (Re,m,21)(Sol,m,294)", sC: ""},
+            { line: "por tu bendita Madre hazme conseguir, (Si♭,7,355)", sC: ""},
+            { line: "la palma de la victoria., (La,,183)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AMÉN, AMÉN, AMÉN., (Re,m,36)(Si♭,7,112)(La,7,179)", sC: "ta as r2"},
+]}, // ULTIMA LINEA DEL CANTO: STABAT MATER DOLOROSA
+// SIGUIENTE CANTO DEBAJO
 
 
 

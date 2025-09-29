@@ -13,5 +13,9 @@
 }
 */
 
-
+hr, .dbr {
+    @media (min-width: 992px) {
+        padding: 0px 60px 0px 60px;
+    }
+}
 

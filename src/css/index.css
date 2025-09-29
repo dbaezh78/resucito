@@ -1,10 +1,36 @@
-/* Este archivo contendrá estilos específicos para el canto actual (ej. A la Víctima Pascual) */
+/* Este archivo contendrá estilos específicos para todos los cantos (ej. A la Víctima Pascual) */
 /* Puedes añadir sobrescrituras o estilos únicos aquí */
+
+.cristo {
+    /*z-index: 999;*/
+    position: fixed;
+    align-self: normal;
+    opacity: 0.4; /* Adjust the opacity value (0.0 - 1.0) */
+    z-index: 9999;
+
+    @media (min-width: 384px){
+        width: 30%;
+        top: 6%;
+        margin-left: -35px;
+    }
+    @media (min-width: 768px){
+        width: 16%;
+        top: initial;
+    }
+    @media (min-width: 992px){
+        width: 8em;
+        top: initial;
+        margin-left: -47px;
+    }
+}
+
 
 /* Ejemplo: Si quieres un color de fondo diferente solo para este canto */
 /* body { background-color: #f0f8ff; } */
 
+
 /*1ra configuracion r1, r2 */
+
 .r1, .r2, .r3, .r4, .r5, .r6, .r7, .r8, .r9, .r10, .r11, .r12 {position: relative;min-height: 0px;}
 
 /*2da configuracion r1, r2 */
@@ -268,31 +294,6 @@
         left: -71px;
     }
 }
-
-.cristo {
-    /*z-index: 999;*/
-    position: fixed;
-    align-self: normal;
-    opacity: 0.4; /* Adjust the opacity value (0.0 - 1.0) */
-
-    /*z-index: -9999;*/
-    @media (min-width: 384px){
-        width: 30%;
-        top: 6%;
-        margin-left: -35px;
-    }
-    @media (min-width: 768px){
-        width: 16%;
-        top: initial;
-    }
-    @media (min-width: 992px){
-        width: 8em;
-        top: initial;
-        margin-left: -47px;
-
-    }
-}
-
 
 .hombres::before, .mujeres::before {
         @media (min-width: 992px) {
