@@ -12093,6 +12093,140 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "AMÉN, AMÉN, AMÉN., (Re,m,36)(Si♭,7,112)(La,7,179)", sC: "ta as r2"},
 ]}, // ULTIMA LINEA DEL CANTO: STABAT MATER DOLOROSA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SUBE DIOS ENTRE ACLAMACIONES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "subediosentreaclamaciones",
+        tt: "Sube Dios Entre Aclamaciones",
+        title: "Sube Dios Entre Aclamaciones",
+        subtitle: "Salmo 47 (46)",
+        category: ["Precatecumenado","Pascua","Pentecostés","Antiguo Testamento","Paz"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "157",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/subediosentreaclamaciones.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=stabatmaterdolorosa",
+        sig: "/src/index.html?canto=teestoyllamandosenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Sube Dios entre aclamaciones,, (Re,m,20)(Sol,m,252)", sC: "tc"},
+            { line: "al son de las trompetas., (Re,m,204)", sC: ""},
+            { line: "SUBE DIOS ENTRE ACLAMACIONES,, (Re,m,20)(Sol,m,289)", sC: "ta as"},
+            { line: "AL SON DE LAS TROMPETAS., (Re,m,256)", sC: "as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Pueblos todos, batid palmas,, (Re,m,20)(Sol,m,227)", sC: "tc"},
+            { line: "PUEBLOS TODOS, BATID PALMAS!, (Re,m,259)", sC: "ta as"},
+            { line: "¡PUEBLOS TODOS, BATID PALMAS,, (Sol,m,262)", sC: "as"},
+            { line: "PUEBLOS TODOS, BATID PALMAS!, (Re,m,256)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SUBE DIOS ENTRE ACLAMACIONES, (Re,m,20)(Sol,m,289)", sC: "ta as", lines: [
+            { line: "AL SON DE LAS TROMPETAS., (Re,m,256)", sC: "as r1"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Cantad para Dios, cantad,, (Re,m,22)(Sol,m,233)", sC: "tc"},
+            { line: "CANTAD PARA DIOS, CANTAD!, (Re,m,261)", sC: "ta as"},
+            { line: "¡CANTAD PARA DIOS, CANTAD,, (Sol,m,271)", sC: "as"},
+            { line: "CANTAD PARA DIOS, CANTAD!, (Re,m,264)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "SUBE DIOS ENTRE ACLAMACIONES, (Re,m,20)(Sol,m,289)", sC: "ta as", lines: [
+            { line: "AL SON DE LAS TROMPETAS., (Re,m,256)", sC: "as r1"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: SUBE DIOS ENTRE ACLAMACIONES
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           TE ESTOY LLAMANDO, SEÑOR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "teestoyllamandosenor",
+        tt: "Te Estoy Llamando, Señor",
+        title: "Te Estoy Llamando, Señor",
+        subtitle: "Salmo 141 (140)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "158",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/teestoyllamandosenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=subediosentreaclamaciones",
+        sig: "/src/index.html?canto=tehemanifestadomipecado",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "A TE ESTOY LLAMANDO,, (Re,m,22)", sC: "ta as"},
+            { line: "TE ESTOY LLAMANDO, SEÑOR,, (La,7,269)", sC: "as"},
+            { line: "VEN CORRIENDO,, (Sol,m,22)(La,7,113)", sC: "as"},
+            { line: "ESCUCHA MI VOZ QUE YO A TI GRITO., (Re,m,324)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "VALGA ANTE TI MI ORACIÓN, ", sC: "as"},
+            { line: "COMO INCIENSO,, (La,7,114)", sC: "as"},
+            { line: "EL ALZAR DE MIS MANOS, ", sC: "as"},
+            { line: "COMO SACRIFICIO DE LA TARDE., (Re,m,263)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Pon, Señor, a mi boca un centinela,, (Do,,10)(Fa,,123)(La,7,309)", sC: "tc"},
+            { line: "una guardia a la puerta de mis labios., (Do,,68)(Si♭,,191)(La,7,318)", sC: ""},
+            { line: "No sea que se incline mi corazón a la maldad,, (Sol,m,52)(La,7,417)", sC: ""},
+            { line: "a cometer acciones criminales., (Si♭,,88)(La,7,258)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que el justo me golpee por amor, y me corrija,, (Fa,,11)(Re,m,137)(La,7,300)(Re,m,411)", sC: ""},
+            { line: "para que el ungüento del malvado, (Si,♭,10)", sC: ""},
+            { line: "no perfume mi cabeza,, (La,7,190)", sC: ""},
+            { line: "porque yo me enviciaría en su maldad,, (Sol,m,93)(La,7,348)", sC: ""},
+            { line: "porque yo me enviciaría en su maldad., (Si♭,,90)(La,7,348)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TE ESTOY LLAMANDO, (Re,m,22)", sC: "ta as", lines: [
+            { line: "TE ESTOY LLAMANDO, SEÑOR,, (La,7,269)", sC: "as"},
+            { line: "VEN CORRIENDO,, (Sol,m,22)(La,7,113)", sC: "as"},
+            { line: "ESCUCHA MI VOZ QUE YO A TI GRITO., (Re,m,324)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "VALGA ANTE TI MI ORACIÓN, ", sC: "as"},
+            { line: "COMO INCIENSO,, (La,7,114)", sC: "as"},
+            { line: "EL ALZAR DE MIS MANOS, ", sC: "as"},
+            { line: "COMO SACRIFICIO DE LA TARDE., (Re,m,263)", sC: "as"},  ]},
+    ], lder: [
+            { line: "A ti, Señor, miran mis ojos,, (Do,,10)(Fa,,80)(La,7,228)", sC: "tc"},
+            { line: "en ti me refugio, ¡no desampares mi alma!, (Do,,35)(Si♭,,120)(La,7,367)", sC: ""},
+            { line: "Guárdame tú del lazo que me tienden,, (Sol,m,22)(La,7,307)", sC: ""},
+            { line: "de las trampas de tantos enemigos., (Sol,m,87)(La,7,298)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Caigan ellos, cada uno en su red,, (Fa,,10)(Re,m,135)(La,7,294)", sC: ""},
+            { line: "que yo, unido a ti, paso indemne,, (Si♭,,12)(La,7,265)", sC: ""},
+            { line: "que yo, unido a ti, paso indemne., (Sol,m,23)(Si♭,,161)(La,7,262)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TE ESTOY LLAMANDO, (Re,m,22)", sC: "ta as", lines: [
+            { line: "TE ESTOY LLAMANDO, SEÑOR,, (La,7,269)", sC: "as"},
+            { line: "VEN CORRIENDO,, (Sol,m,22)(La,7,113)", sC: "as"},
+            { line: "ESCUCHA MI VOZ QUE YO A TI GRITO., (Re,m,324)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "VALGA ANTE TI MI ORACIÓN, ", sC: "as"},
+            { line: "COMO INCIENSO,, (La,7,114)", sC: "as"},
+            { line: "EL ALZAR DE MIS MANOS, ", sC: "as"},
+            { line: "COMO SACRIFICIO DE LA TARDE., (Re,m,263)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: TE ESTOY LLAMANDO, SEÑOR
+// SIGUIENTE CANTO DEBAJO
 
 
 
