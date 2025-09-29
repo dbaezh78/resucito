@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const cicloBtns = document.querySelectorAll('.ciclo-btn');
     const tiemposContainer = document.getElementById('tiempos-container');
     const semanasContainer = document.getElementById('semanas-container');
-    const goButton = document.getElementById('go-button');
 
     const getCicloLiturgico = (year) => {
         const remainder = (year - 1) % 3;
@@ -16,217 +15,219 @@ document.addEventListener('DOMContentLoaded', () => {
         if (remainder === 2) return 'C';
     };
     
-    // CORRECCIÓN: Inicializar el ciclo con el valor calculado para el año actual
     let selectedCiclo = getCicloLiturgico(new Date().getFullYear());
-    let selectedTiempo = null;
-    let selectedSemana = null;
     let urlBase = '/src/ainterleccional.html?canto=';
 
-//*****************************************
-const getInfoLiturgicaActual = () => {
-    const today = new Date();
-    
-    // Usar Date.UTC para una comparación fiable, evitando problemas de zona horaria
-    const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
-
-    const diaSemana = today.toLocaleString('es-ES', { weekday: 'long' });
-    const fechaCompleta = today.toLocaleDateString('es-ES');
-    
-    // Calcular ciclo litúrgico actual
-    let cicloActual = getCicloLiturgico(today.getFullYear());
-    
-    // Verificar si estamos en Adviento (noviembre/diciembre) que pertenece al próximo año litúrgico
-    const mesActual = today.getMonth(); // 0-11 (enero-diciembre)
-    if (mesActual === 11) { // Diciembre
-        const proximoCiclo = getCicloLiturgico(today.getFullYear() + 1);
-        const tiemposProximo = tiemposLiturgicos[proximoCiclo];
-        const advientoProximo = tiemposProximo.find(t => t.codigo === 'ta');
-        
-        if (advientoProximo) {
-            const inicioAdvientoUTC = Date.UTC(new Date(advientoProximo.inicio).getFullYear(), new Date(advientoProximo.inicio).getMonth(), new Date(advientoProximo.inicio).getDate());
-            if (todayUTC >= inicioAdvientoUTC) {
-                cicloActual = proximoCiclo;
-            }
+    // Parsear YYYY-MM-DD como fecha local (evita interpretación UTC)
+    const parseLocalDate = (input) => {
+        if (!input) return null;
+        if (input instanceof Date) {
+            return new Date(input.getFullYear(), input.getMonth(), input.getDate());
         }
-    }
-    
-    const infoCiclo = tiemposLiturgicos[cicloActual];
-    let infoActual = null;
-    let esOrdinario = false;
-
-    // Buscar el tiempo litúrgico actual
-    infoCiclo.forEach(item => {
-        if (item.inicio && item.fin) {
-            const inicioUTC = Date.UTC(new Date(item.inicio).getFullYear(), new Date(item.inicio).getMonth(), new Date(item.inicio).getDate());
-            const finUTC = Date.UTC(new Date(item.fin).getFullYear(), new Date(item.fin).getMonth(), new Date(item.fin).getDate());
-            
-            // La comparación es inclusiva para la fecha de inicio y de fin
-            if (todayUTC >= inicioUTC && todayUTC <= finUTC) {
-                infoActual = item;
-                if (item.codigo === 'to') {
-                    esOrdinario = true;
-                }
-            }
-        }
-    });
-    
-    if (!infoActual) {
-        return {
-            tiempo: 'Tiempo Ordinario',
-            semana: '',
-            dia: diaSemana,
-            fecha: fechaCompleta
-        };
-    }
-    
-    let semanaTexto = '';
-    
-    if (infoActual.tipo === 'semanas') {
-        if (esOrdinario) {
-            const ordinaryWeeks = ordinaryTimeWeeks[cicloActual];
-            let semanaOrdinaria = null;
-            
-            for (const week of ordinaryWeeks) {
-                const inicioUTC = Date.UTC(new Date(week.inicio).getFullYear(), new Date(week.inicio).getMonth(), new Date(week.inicio).getDate());
-                const finUTC = Date.UTC(new Date(week.fin).getFullYear(), new Date(week.fin).getMonth(), new Date(week.fin).getDate());
-                
-                if (todayUTC >= inicioUTC && todayUTC <= finUTC) {
-                    semanaOrdinaria = week.semana;
-                    break;
-                }
-            }
-            
-            if (semanaOrdinaria !== null) {
-                semanaTexto = `, Semana ${semanaOrdinaria}`;
+        if (typeof input === 'string') {
+            const m = input.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+            if (m) {
+                const y = Number(m[1]), mo = Number(m[2]) - 1, d = Number(m[3]);
+                return new Date(y, mo, d); // medianoche local del día
             } else {
-                const inicioTiempoUTC = Date.UTC(new Date(infoActual.inicio).getFullYear(), new Date(infoActual.inicio).getMonth(), new Date(infoActual.inicio).getDate());
-                
-                const diferenciaMs = todayUTC - inicioTiempoUTC;
-                const diferenciaDias = Math.floor(diferenciaMs / (1000 * 60 * 60 * 24));
-                const semanaActual = Math.floor(diferenciaDias / 7) + 1;
-                
-                if (infoActual.inicioSemana) {
-                    semanaTexto = `, Semana ${infoActual.inicioSemana + semanaActual - 1}`;
-                } else {
-                    semanaTexto = `, Semana ${semanaActual}`;
-                }
-            }
-        } else {
-            const inicioTiempoUTC = Date.UTC(new Date(infoActual.inicio).getFullYear(), new Date(infoActual.inicio).getMonth(), new Date(infoActual.inicio).getDate());
-            
-            const diferenciaMs = todayUTC - inicioTiempoUTC;
-            const diferenciaDias = Math.floor(diferenciaMs / (1000 * 60 * 60 * 24));
-            const semanaActual = Math.floor(diferenciaDias / 7) + 1;
-            
-            if (infoActual.inicioSemana) {
-                semanaTexto = `, Semana ${infoActual.inicioSemana + semanaActual - 1}`;
-            } else {
-                semanaTexto = `, Semana ${semanaActual}`;
+                // fallback: intentar construir Date (no recomendado para YYYY-MM-DD)
+                const dObj = new Date(input);
+                return new Date(dObj.getFullYear(), dObj.getMonth(), dObj.getDate());
             }
         }
-    }
-    
-    return {
-        tiempo: infoActual.tiempo,
-        semana: semanaTexto,
-        dia: diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1), // Capitalizar
-        fecha: fechaCompleta
+        return null;
     };
-};
-    //*************************************************************************
+
+    // Normalizar al inicio o fin del día (local)
+    const normalizeDate = (dateStrOrObj, endOfDay = false) => {
+        const base = parseLocalDate(dateStrOrObj);
+        if (!base) return null;
+        if (endOfDay) {
+            return new Date(base.getFullYear(), base.getMonth(), base.getDate(), 23, 59, 59, 999);
+        } else {
+            return new Date(base.getFullYear(), base.getMonth(), base.getDate(), 0, 0, 0, 0);
+        }
+    };
+
+    const fmt = (d) => {
+        if (!d) return '';
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const dd = String(d.getDate()).padStart(2, '0');
+        return `${y}-${m}-${dd}`;
+    };
+
+    const getInfoLiturgicaActual = () => {
+        const today = new Date();
+        const todayNorm = new Date(today.getFullYear(), today.getMonth(), today.getDate()); // medianoche local
+
+        const diaSemana = today.toLocaleString('es-ES', { weekday: 'long' });
+        const fechaCompleta = today.toLocaleDateString('es-ES');
+        
+        let cicloActual = getCicloLiturgico(today.getFullYear());
+
+        if (today.getMonth() >= 10) { 
+            const firstSundayOfAdvent = new Date(today.getFullYear(), 11, 1);
+            while (firstSundayOfAdvent.getDay() !== 0) {
+                firstSundayOfAdvent.setDate(firstSundayOfAdvent.getDate() + 1);
+            }
+            if (today >= firstSundayOfAdvent) {
+                cicloActual = getCicloLiturgico(today.getFullYear() + 1);
+            }
+        }
+        
+        let info = {
+            dia: diaSemana,
+            fecha: fechaCompleta,
+            tiempo: 'Tiempo Ordinario',
+            semana: ''
+        };
+
+        console.log("📅 Hoy (local):", fmt(todayNorm), "Ciclo:", cicloActual);
+
+        const tiempos = tiemposLiturgicos[cicloActual];
+        if (tiempos) {
+            for (const tiempo of tiempos) {
+                if (tiempo.tipo === 'semanas') {
+                    const inicio = normalizeDate(tiempo.inicio);
+                    const fin = normalizeDate(tiempo.fin, true);
+                    console.log(`  Chequeando tiempo "${tiempo.tiempo}": ${fmt(inicio)} - ${fmt(fin)}`);
+                    if (todayNorm >= inicio && todayNorm <= fin) {
+                        info.tiempo = tiempo.tiempo;
+
+                        if (tiempo.codigo === 'to') {
+                            const weeks = ordinaryTimeWeeks[cicloActual] || [];
+                            if (weeks.length === 0) console.log("  ⚠️ No hay semanas definidas para el ciclo", cicloActual);
+                            for (const week of weeks) {
+                                const weekStart = normalizeDate(week.inicio);
+                                const weekEnd   = normalizeDate(week.fin, true);
+                                console.log(`🔎 Semana ${week.semana}: ${fmt(weekStart)} - ${fmt(weekEnd)}`);
+                                if (todayNorm >= weekStart && todayNorm <= weekEnd) {
+                                    console.log("✅ Coincide con Semana", week.semana);
+                                    info.semana = `, Semana ${week.semana}`;
+                                    break;
+                                }
+                            }
+                        } else {
+                            const weeks = ordinaryTimeWeeks[tiempo.tiempo] || [];
+                            for (const week of weeks) {
+                                const weekStart = normalizeDate(week.inicio);
+                                const weekEnd   = normalizeDate(week.fin, true);
+                                console.log(`🔎 [${tiempo.tiempo}] Semana ${week.semana}: ${fmt(weekStart)} - ${fmt(weekEnd)}`);
+                                if (todayNorm >= weekStart && todayNorm <= weekEnd) {
+                                    console.log("✅ Coincide con", tiempo.tiempo, "Semana", week.semana);
+                                    info.semana = `, Semana ${week.semana}`;
+                                    break;
+                                }
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+
+        const fiestas = tiemposLiturgicos[cicloActual].find(t => t.tipo === 'fiestas');
+        if (fiestas) {
+            const todayMonth = today.toLocaleString('es-ES', { month: 'long' });
+            const todayDay = today.getDate();
+            const fiestasMes = fiestas.fiestas[todayMonth];
+            if (fiestasMes) {
+                const fiestaHoy = fiestasMes.find(f => f.fecha.startsWith(todayDay.toString()));
+                if (fiestaHoy) {
+                    console.log("🎉 Hoy es fiesta:", fiestaHoy.nombre);
+                    info.tiempo = fiestaHoy.nombre;
+                    info.semana = '';
+                }
+            }
+        }
+
+        console.log("🔔 Info detectada:", info);
+        return info;
+    };
 
     const displayTiempos = (ciclo) => {
+        const tiempos = tiemposLiturgicos[ciclo];
+        if (!tiempos) return;
+        
         tiemposContainer.innerHTML = '';
         semanasContainer.innerHTML = '';
-        const tiempos = tiemposLiturgicos[ciclo];
-        
-        if (!tiempos) {
-            tiemposContainer.innerHTML = '<p>No hay datos disponibles para este ciclo.</p>';
-            return;
-        }
 
-        const tiempoBtns = document.createElement('div');
-        tiempoBtns.classList.add('tiempo-botones');
-        tiemposContainer.appendChild(tiempoBtns);
-        
-        tiempos.forEach(item => {
-            const btn = document.createElement('button');
-            btn.classList.add('tiempo-btn');
-            btn.textContent = item.tiempo;
-            btn.dataset.codigo = item.codigo;
-            btn.dataset.tipo = item.tipo;
-            btn.dataset.semanas = item.semanas || 1;
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.tiempo-btn').forEach(b => b.classList.remove('selected'));
-                btn.classList.add('selected');
-                selectedTiempo = item;
-                displaySemanas(item);
+        tiempos.forEach(tiempo => {
+            const tiempoBtn = document.createElement('button');
+            tiempoBtn.classList.add('tiempo-btn');
+            tiempoBtn.textContent = tiempo.tiempo;
+            tiempoBtn.addEventListener('click', () => {
+                tiemposContainer.querySelectorAll('.tiempo-btn').forEach(btn => btn.classList.remove('selected'));
+                tiempoBtn.classList.add('selected');
+                displaySemanas(tiempo);
             });
-            tiempoBtns.appendChild(btn);
+            tiemposContainer.appendChild(tiempoBtn);
         });
     };
-    
+
     const displaySemanas = (tiempo) => {
         semanasContainer.innerHTML = '';
+        selectedSemana = null;
+
         if (tiempo.tipo === 'semanas') {
-            const semanasDiv = document.createElement('div');
-            semanasDiv.classList.add('semana-botones');
-            semanasContainer.appendChild(semanasDiv);
-            
-            let totalSemanas = tiempo.semanas;
+            let semanas = [];
             
             if (tiempo.codigo === 'to') {
-                totalSemanas = 34;
+                semanas = ordinaryTimeWeeks[selectedCiclo] || [];
+            } else {
+                semanas = ordinaryTimeWeeks[tiempo.tiempo] || [];
+                if (semanas.length === 0) {
+                    for (let i = 1; i <= tiempo.semanas; i++) {
+                        semanas.push({ semana: i });
+                    }
+                }
             }
-            
-            for (let i = 1; i <= totalSemanas; i++) {
-                const btn = document.createElement('button');
-                btn.classList.add('semana-btn');
-                btn.textContent = i;
-                btn.dataset.numero = i;
-                btn.addEventListener('click', () => {
-                    document.querySelectorAll('.semana-btn').forEach(b => b.classList.remove('selected'));
-                    btn.classList.add('selected');
-                    selectedSemana = i;
-                    const url = `${urlBase}ai${tiempo.codigo}s${selectedSemana}${selectedCiclo.toLowerCase()}`;
+
+            semanas.forEach(semana => {
+                const semanaBtn = document.createElement('button');
+                semanaBtn.classList.add('semana-btn');
+                semanaBtn.textContent = `${semana.semana}`;
+                semanaBtn.addEventListener('click', () => {
+                    const url = `${urlBase}ai${tiempo.codigo}s${semana.semana}${selectedCiclo.toLowerCase()}`;
+                    console.log("➡️ Navegando a:", url);
                     window.location.href = url;
                 });
-                semanasDiv.appendChild(btn);
-            }
+                semanasContainer.appendChild(semanaBtn);
+            });
         } else if (tiempo.tipo === 'fiestas') {
             const mesesContainer = document.createElement('div');
             mesesContainer.classList.add('meses-container');
             semanasContainer.appendChild(mesesContainer);
-
+            
             const fiestasContainer = document.createElement('div');
-            fiestasContainer.classList.add('fiestas-mes');
+            fiestasContainer.classList.add('fiestas-container');
             semanasContainer.appendChild(fiestasContainer);
 
-            for (const mes in tiempo.fiestas) {
+            Object.keys(tiempo.fiestas).forEach(mes => {
                 const mesBtn = document.createElement('button');
                 mesBtn.classList.add('mes-btn');
                 mesBtn.textContent = mes.charAt(0).toUpperCase() + mes.slice(1);
                 mesBtn.dataset.mes = mes;
-                mesesContainer.appendChild(mesBtn);
-
                 mesBtn.addEventListener('click', () => {
-                    document.querySelectorAll('.fiestas-mes').forEach(f => f.innerHTML = '');
-                    document.querySelectorAll('.mes-btn').forEach(b => b.classList.remove('selected'));
+                    mesesContainer.querySelectorAll('.mes-btn').forEach(btn => btn.classList.remove('selected'));
                     mesBtn.classList.add('selected');
-
-                    const fiestasDelMes = tiempo.fiestas[mes];
-                    fiestasDelMes.forEach(fiesta => {
+                    fiestasContainer.innerHTML = '';
+                    tiempo.fiestas[mes].forEach(fiesta => {
                         const btn = document.createElement('button');
                         btn.classList.add('fiesta-btn');
                         btn.textContent = `${fiesta.nombre} (${fiesta.fecha})`;
                         btn.dataset.url = fiesta.url;
                         btn.addEventListener('click', () => {
+                            console.log("➡️ Navegando a fiesta:", fiesta.url);
                             window.location.href = urlBase + fiesta.url;
                         });
                         fiestasContainer.appendChild(btn);
                     });
                 });
-            }
+                mesesContainer.appendChild(mesBtn);
+            });
+
             const primerMes = Object.keys(tiempo.fiestas)[0];
             if (primerMes) {
                 const primerBoton = mesesContainer.querySelector(`[data-mes="${primerMes}"]`);
@@ -259,25 +260,52 @@ const getInfoLiturgicaActual = () => {
     });
 
     displayTiempos(selectedCiclo);
+});
 
-    goButton.addEventListener('click', () => {
-        if (!selectedTiempo) {
-            alert('La paz de Cristo Hermano,\\nPor favor, selecciona un tiempo litúrgico.');
-            return;
-        }
-        
-        let url = urlBase;
-        
-        if (selectedTiempo.tipo === 'fiestas') {
-             url += `fds-${selectedCiclo.toLowerCase()}`;
-             window.location.href = url;
-        } else {
-            if (!selectedSemana) {
-                alert('La paz de Cristo Hermano,\\nPor favor, selecciona una semana.');
-                return;
+
+// =====================
+// 🔍 Validador de tiempos.js
+// =====================
+
+const validarSemanas = () => {
+    const ciclos = Object.keys(ordinaryTimeWeeks);
+
+    ciclos.forEach(ciclo => {
+        const semanas = ordinaryTimeWeeks[ciclo];
+        if (!Array.isArray(semanas) || semanas.length === 0) return;
+
+        console.log(`\n📖 Validando ciclo/tiempo: ${ciclo}`);
+
+        // Ordenar por fecha de inicio
+        const ordenadas = [...semanas].sort((a, b) => new Date(a.inicio) - new Date(b.inicio));
+
+        for (let i = 0; i < ordenadas.length; i++) {
+            const sem = ordenadas[i];
+            const inicio = new Date(sem.inicio);
+            const fin = new Date(sem.fin);
+
+            // Validación básica
+            if (inicio > fin) {
+                console.error(`❌ Semana ${sem.semana} en ${ciclo} tiene inicio mayor que fin: ${sem.inicio} > ${sem.fin}`);
             }
-            url += `ai${selectedTiempo.codigo}s${selectedSemana}${selectedCiclo.toLowerCase()}`;
-            window.location.href = url;
+
+            // Comparar con la siguiente
+            if (i < ordenadas.length - 1) {
+                const next = ordenadas[i + 1];
+                const nextInicio = new Date(next.inicio);
+
+                if (fin >= nextInicio) {
+                    console.warn(`⚠️ Semana ${sem.semana} (${sem.inicio}-${sem.fin}) solapa con Semana ${next.semana} (${next.inicio}-${next.fin})`);
+                }
+
+                const gap = (nextInicio - fin) / (1000 * 60 * 60 * 24);
+                if (gap > 1) {
+                    console.warn(`⚠️ Hay un hueco de ${gap - 1} días entre Semana ${sem.semana} (${sem.fin}) y Semana ${next.semana} (${next.inicio})`);
+                }
+            }
         }
     });
-});
+};
+
+// Ejecutar validación
+validarSemanas();
