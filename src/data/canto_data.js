@@ -11647,126 +11647,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: SI HABÉIS RESUCITADO CON CRISTO
 // SIGUIENTE CANTO DEBAJO
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// LETRA T
-
-/*
-╔══════════════════════════════════════════╗
-║           TÚ QUE ERES FIEL               ║
-╚══════════════════════════════════════════╝  */
-   {
-        id: "tuqueeresfiel",
-        tt: "Tú Que Eres Fiel",
-        title: "Tú Que Eres Fiel",
-        subtitle: "Salmo 143 (142)",
-        category: ["Precatecumenado","Cuaresma","Penitencial","Entrada","Antiguo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "* La asamblea puede dividirse para hacer la segunda voz más grave.",
-        nCanURL: "",
-        dbno: "161",
-        notes: "",
-        mant: "No",
-        audioSrc: "https://audio.resucito.do/tuqueeresfiel.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=tuhascubiertodevergüenzalamuerte",
-        sig: "/src/index.html?canto=unretonobrotadeltroncodejese",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "Señor, escucha mi oración,, (Do,,10)(Re,,77)(Do,m,171)", sC: "tc"},
-            { line: "presta oídos a mi súplica., (Re,,12)(Do,m,144)(Re,,250)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "TÚ QUE ERES FIEL,, (Sol,m,23)(Do,m,153)", sC: "ta as ast"},
-            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
-            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "No llames a juicio a tu siervo,, (Sol,m,23)(Re,7,238)", sC: "tc"},
-            { line: "ningún hombre es inocente frente a ti., (Sol,m,350)", sC: ""},
-            { line: "El enemigo me persigue,, (Re,7,193)", sC: ""},
-            { line: "estrella mi vida contra el suelo., (Do,m,46)(Re,7,273)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "TÚ QUE ERES FIEL, (Sol,m,20)(Do,m,153)", sC: "ta as ast", lines: [
-            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
-            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Extiendo mis manos hacia ti,, (Sol,m,24)(Re,7,268)", sC: "tc"},
-            { line: "tengo sed de ti como tierra reseca., (Sol,m,304)", sC: ""},
-            { line: "¡Escúchame pronto, Señor,, (Re,7,236)", sC: ""},
-            { line: "que me falta el aliento!, (Do,m,22)(Re,7,180)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "TÚ QUE ERES FIEL, (Sol,m,20)(Do,m,153)", sC: "ta as ast", lines: [
-            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
-            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},  ]},
-    ], lder: [
-            { line: "Hazme conocer el camino,, (Sol,m,20)(Re,7,220)", sC: "tc"},
-            { line: "la vía que he de seguir., (Sol,m,194)", sC: ""},
-            { line: "Líbrame de mis enemigos,, (Re,7,210)", sC: ""},
-            { line: "Señor, que me refugio en ti., (Do,m,47)(Re,7,254)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "TÚ QUE ERES FIEL, (Sol,m,20)(Do,m,153)", sC: "ta as ast", lines: [
-            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
-            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Enséñame a cumplir tu voluntad,, (Sol,m,20)(Re,7,293)", sC: "tc"},
-            { line: "porque tú eres mi Dios;, (Sol,m,198)", sC: ""},
-            { line: "tu Espíritu me guíe,, (Re,7,167)", sC: ""},
-            { line: "tu Espíritu me guíe por tierra llana., (Do,m,60)(Re,7,296)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
-       triggerLine: "TÚ QUE ERES FIEL, (Sol,m,20)(Do,m,153)", sC: "ta as ast", lines: [
-            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
-            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},  ]},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-]}, // ULTIMA LINEA DEL CANTO: TÚ QUE ERES FIEL
-// SIGUIENTE CANTO DEBAJO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// LETRA S
-
 /*
 ╔════════════════════════════════════════════════════════╗
 ║           SI HOY ESCUCHÁIS SU VOZ                ║
@@ -12147,6 +12027,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: SUBE DIOS ENTRE ACLAMACIONES
 // SIGUIENTE CANTO DEBAJO
 /*
+
+// LETRA T
+
 ╔════════════════════════════════════════════════════════╗
 ║           TE ESTOY LLAMANDO, SEÑOR               ║
 ╚════════════════════════════════════════════════════════╝  */
@@ -12227,6 +12110,94 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "COMO SACRIFICIO DE LA TARDE., (Re,m,263)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: TE ESTOY LLAMANDO, SEÑOR
 // SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+/*
+╔══════════════════════════════════════════╗
+║           TÚ QUE ERES FIEL               ║
+╚══════════════════════════════════════════╝  */
+   {
+        id: "tuqueeresfiel",
+        tt: "Tú Que Eres Fiel",
+        title: "Tú Que Eres Fiel",
+        subtitle: "Salmo 143 (142)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* La asamblea puede dividirse para hacer la segunda voz más grave.",
+        nCanURL: "",
+        dbno: "161",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/tuqueeresfiel.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=tuhascubiertodevergüenzalamuerte",
+        sig: "/src/index.html?canto=unretonobrotadeltroncodejese",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Señor, escucha mi oración,, (Do,,10)(Re,,77)(Do,m,171)", sC: "tc"},
+            { line: "presta oídos a mi súplica., (Re,,12)(Do,m,144)(Re,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TÚ QUE ERES FIEL,, (Sol,m,23)(Do,m,153)", sC: "ta as ast"},
+            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
+            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "No llames a juicio a tu siervo,, (Sol,m,23)(Re,7,238)", sC: "tc"},
+            { line: "ningún hombre es inocente frente a ti., (Sol,m,350)", sC: ""},
+            { line: "El enemigo me persigue,, (Re,7,193)", sC: ""},
+            { line: "estrella mi vida contra el suelo., (Do,m,46)(Re,7,273)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TÚ QUE ERES FIEL, (Sol,m,20)(Do,m,153)", sC: "ta as ast", lines: [
+            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
+            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Extiendo mis manos hacia ti,, (Sol,m,24)(Re,7,268)", sC: "tc"},
+            { line: "tengo sed de ti como tierra reseca., (Sol,m,304)", sC: ""},
+            { line: "¡Escúchame pronto, Señor,, (Re,7,236)", sC: ""},
+            { line: "que me falta el aliento!, (Do,m,22)(Re,7,180)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "TÚ QUE ERES FIEL, (Sol,m,20)(Do,m,153)", sC: "ta as ast", lines: [
+            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
+            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Hazme conocer el camino,, (Sol,m,20)(Re,7,220)", sC: "tc"},
+            { line: "la vía que he de seguir., (Sol,m,194)", sC: ""},
+            { line: "Líbrame de mis enemigos,, (Re,7,210)", sC: ""},
+            { line: "Señor, que me refugio en ti., (Do,m,47)(Re,7,254)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "TÚ QUE ERES FIEL, (Sol,m,20)(Do,m,153)", sC: "ta as ast", lines: [
+            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
+            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Enséñame a cumplir tu voluntad,, (Sol,m,20)(Re,7,293)", sC: "tc"},
+            { line: "porque tú eres mi Dios;, (Sol,m,198)", sC: ""},
+            { line: "tu Espíritu me guíe,, (Re,7,167)", sC: ""},
+            { line: "tu Espíritu me guíe por tierra llana., (Do,m,60)(Re,7,296)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "TÚ QUE ERES FIEL, (Sol,m,20)(Do,m,153)", sC: "ta as ast", lines: [
+            { line: "TÚ QUE ERES FIEL, RESPÓNDEME,, (Sol,m,20)(Do,m,153)(Re,7,244)", sC: "as"},
+            { line: "POR TU JUSTICIA RESPÓNDEME., (Do,m,127)(Re,7,230)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: TÚ QUE ERES FIEL
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
 
 
 
