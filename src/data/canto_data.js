@@ -12538,6 +12538,80 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "LA LA LA, LA LA, LA LA... ", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: UNA GRAN SEÑAL
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           URÍ, URÍ, URÁ               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "uriuriura",
+        tt: "Urí, Urí, Urá",
+        title: "Urí, Urí, Urá",
+        subtitle: "Villancico (Kiko Argüello)",
+        category: ["Precatecumenado","Adviento","Navidad","Niños"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "164",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/uriuriura.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=unagransenal",
+        sig: "/src/index.html?canto=vamosyapastores",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Urí, urí, urí, urá,, (Mi,m,20)(Si,7,133)", sC: "tc"},
+            { line: "urí, urí, urí, urá., (Mi,m,130)", sC: ""},
+            { line: "URÍ, URÍ, URÍ, URÁ., (Si,7,172)", sC: "ta as"},
+            { line: "URÍ, URÍ, URÍ, URÁ., (Mi,m,167)", sC: "as"},
+            { line: "URÍ, URÍ, URÍ, URÁ., (Si,7,168)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,386)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,382)", sC: "as"},
+            { line: "LALALALÁ LALÁ., (Mi,m,147)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Un niño pequeño va a nacer,, (Mi,m,20)(Si,7,250)", sC: "tc"},
+            { line: "un niñito pequeño., (Mi,m,20)", sC: ""},
+            { line: "UN NIÑO PEQUEÑO VA A NACER,, (Si,7,20)", sC: "ta as"},
+            { line: "UN NIÑITO PEQUEÑO., (Mi,m,20)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿Cómo se llamará? Emmanuel., (Si,7,20)", sC: "tc"},
+            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Mi,m,20)", sC: "ta as"},
+            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Si,7,20)", sC: "as"},
+            { line: "VEN CHIQUITITO, VEN., (Mi,m,20)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "URÍ, URÍ, URÍ, URÁ., (Si,7,20)", sC: "ta as", lines: [
+            { line: "URÍ, URÍ, URÍ, URÁ., (Mi,m,20)", sC: "as"},
+            { line: "URÍ, URÍ, URÍ, URÁ., (Si,7,20)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,20)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,20)", sC: "as"},
+            { line: "LALALALÁ LALÁ., (Mi,m,20)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Su madrecita está en Belén,, (Mi,m,20)(Si,7,250)", sC: "tc"},
+            { line: "su padre es carpintero., (Mi,m,20)", sC: ""},
+            { line: "SU MADRECITA ESTÁ EN BELÉN,, (Si,7,20)", sC: "ta as"},
+            { line: "SU PADRE ES CARPINTERO., (Mi,m,20)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿Cómo se llamará? Emmanuel., (Si,7,20)", sC: "tc"},
+            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Mi,m,20)", sC: "ta as"},
+            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Si,7,20)", sC: "as"},
+            { line: "VEN CHIQUITITO, VEN., (Mi,m,20)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "URÍ, URÍ, URÍ, URÁ., (Si,7,20)", sC: "ta as", lines: [
+            { line: "URÍ, URÍ, URÍ, URÁ., (Mi,m,20)", sC: "as"},
+            { line: "URÍ, URÍ, URÍ, URÁ., (Si,7,20)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,20)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,20)", sC: "as"},
+            { line: "LALALALÁ LALÁ., (Mi,m,20)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: URÍ, URÍ, URÁ
+// SIGUIENTE CANTO DEBAJO
 
 
 
