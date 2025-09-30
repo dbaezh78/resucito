@@ -826,7 +826,7 @@ hr {
 }
 
 .saudio {
-    z-index: 1000;
+    z-index: 999;
     opacity: 0.4;
     /*width: -webkit-fill-available;*/
     background-color: #f1f3f4;
@@ -837,14 +837,14 @@ hr {
     @media (min-width: 384px) {
         position: fixed; 
         width: 384px;
-        margin-left: 0px;
+        margin-left: -1px;
         /*margin-top: -5px;*/
         height: 22px;
     }
 
     @media (min-width: 768px) {
         position: fixed;
-        margin-left: 0px; 
+        margin-left: -1px; 
         width: 100%;    /*width: 784px;*/
         height: 28px;
     }
@@ -852,7 +852,7 @@ hr {
     @media (min-width: 992px) {
         /*position: absolute;*/
         margin-left: -20px; 
-        width: 1038px;
+        width: 1121px;
         height: 35px;
      }
 }

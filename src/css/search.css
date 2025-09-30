@@ -95,6 +95,7 @@
     cursor: pointer;
     color: #ffffff; /* Color de texto legible */
     text-align: left; /* Alinea el texto a la izquierda */
+    z-index: 9999;
 
     @media (min-width: 384px) {
         padding: 5px;
@@ -109,4 +110,5 @@
 .resultados-busqueda .resultado-item:hover {
     background-color: white;
     color: #421616;
+    z-index: 9999
 }

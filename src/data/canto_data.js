@@ -3044,7 +3044,7 @@ const allCantosData = [
             { line: "¡ME VOY A TODAS PARTES!, (Mi,,196)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡GANARÉ MI REINO,, (Re,,12)(La,,149)", sC: "ta as", lines: [
+       triggerLine: "¡GANARÉ MI REINO, (Re,,12)(La,,149)", sC: "ta as", lines: [
             { line: "GANARÉ MI REINO,, (Re,,24)(La,,145)", sC: "as"},
             { line: "ME VOY A TODAS PARTES!, (Mi,,57)(La,,193)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: CARMEN 63 - (ESTÁN ROTAS MIS ATADURAS )
@@ -7033,7 +7033,7 @@ const allCantosData = [
         sig: "/src/index.html?canto=idyanunciadamishermanos",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Tú, que vives en los jardines,, (La,m,20)Re(m,,218)", sC: "tc"},
+            { line: "Tú, que vives en los jardines,, (La,m,20)(Re,m,230)", sC: "tc"},
             { line: "donde tus compañeros te están escuchando:, (Mi,7,384)", sC: ""},
             { line: "hazme oír tu voz,, (Fa,,14)", sC: ""},
             { line: "hazme oír tu voz., (Mi,,140)", sC: ""},
@@ -7043,7 +7043,7 @@ const allCantosData = [
             { line: "COMO UN CERVATILLO,, (Fa#,m,23)", sC: "as ast"},
             { line: "HASTA EL MONTE DE LAS BALSAMERAS., (Mi,,25)(La,,342)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Yo soy para mi amado, (La,m,20)Re(m,,179)", sC: "tc"},
+            { line: "Yo soy para mi amado, (La,m,20)(Re,m,179)", sC: "tc"},
             { line: "como aquella que encontró la paz., (La,m,310)", sC: ""},
             { line: "Mi viña está aquí, está ante mí,, (Mi,,161)(La,m,288)", sC: ""},
             { line: "mi viña está aquí, está ante mí., (Mi,,161)(La,m,287)", sC: ""},
@@ -12109,6 +12109,92 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "EL ALZAR DE MIS MANOS, ", sC: "as"},
             { line: "COMO SACRIFICIO DE LA TARDE., (Re,m,263)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: TE ESTOY LLAMANDO, SEÑOR
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           TE HE MANIFESTADO MI PECADO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "tehemanifestadomipecado",
+        tt: "Te He Manifestado Mi Pecado",
+        title: "Te He Manifestado Mi Pecado",
+        subtitle: "Salmo 32 (31)",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "159",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/tehemanifestadomipecado.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=teestoyllamandosenor",
+        sig: "/src/index.html?canto=tuhascubiertodevergüenzalamuerte",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "TE HE MANIFESTADO MI PECADO,, (La,m,20)(Re,m,225)", sC: "ta as"},
+            { line: "NO HE TENIDO ESCONDIDOS MIS ERRORES., (La,m,109)", sC: "as"},
+            { line: "HE DICHO: «CONFESARÉ AL SEÑOR MI CULPA»., (Sol,,50)(La,m,225)", sC: "as"},
+            { line: "Y TÚ HAS PERDONADO, (Sol,,36)", sC: "as"},
+            { line: "LA MALICIA DE MI PECADO., (La,m,224)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Dichoso el hombre, (La,m,20)", sC: "tc"},
+            { line: "al que le son perdonadas sus culpas, (Re,m,106)", sC: ""},
+            { line: "y que le fueron cubiertos sus pecados., (La,m,101)", sC: ""},
+            { line: "Dichoso el hombre, (Sol,,123)", sC: ""},
+            { line: "al que el Señor no imputa algún mal, (La,m,132)", sC: ""},
+            { line: "y en cuyo espíritu no hay engaño., (Sol,,131)(La,m,280)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TE HE MANIFESTADO MI PECADO, (La,m,20)(Re,m,225)", sC: "ta as", lines: [
+            { line: "NO HE TENIDO ESCONDIDOS MIS ERRORES., (La,m,109)", sC: "as"},
+            { line: "HE DICHO: «CONFESARÉ AL SEÑOR MI CULPA»., (Sol,,50)(La,m,225)", sC: "as"},
+            { line: "Y TÚ HAS PERDONADO, (Sol,,36)", sC: "as"},
+            { line: "LA MALICIA DE MI PECADO., (La,m,224)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Callaba y se consumían mis huesos, (La,m,20)(Sol,,197)", sC: "tc"},
+            { line: "gimiendo todo el día,, (La,m,48)", sC: ""},
+            { line: "porque día y noche, (Sol,,18)", sC: ""},
+            { line: "pesaba tu mano sobre mí,, (La,m,238)", sC: ""},
+            { line: "como estío de verano, (Sol,,90)", sC: ""},
+            { line: "estaba árido mi corazón., (La,m,217)", sC: ""},
+    ], lder: [
+            { line: "Mas te he manifestado mi pecado,, (La,m,20)(Re,m,245)", sC: ""},
+            { line: "no he tenido escondidos mis errores,, (La,m,98)", sC: ""},
+            { line: "he dicho: «Confesaré al Señor mi culpa»., (Sol,,43)(La,m,190)", sC: ""},
+            { line: "Y tú has perdonado la malicia de mi pecado., (Sol,,27)(La,m,389)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+              triggerLine: "TE HE MANIFESTADO MI PECADO, (La,m,20)(Re,m,225)", sC: "ta as", lines: [
+            { line: "NO HE TENIDO ESCONDIDOS MIS ERRORES., (La,m,109)", sC: "as"},
+            { line: "HE DICHO: «CONFESARÉ AL SEÑOR MI CULPA»., (Sol,,50)(La,m,225)", sC: "as"},
+            { line: "Y TÚ HAS PERDONADO, (Sol,,36)", sC: "as"},
+            { line: "LA MALICIA DE MI PECADO., (La,m,224)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por eso te suplican tus fieles, (La,m,20)(Re,m,146)", sC: "tc"},
+            { line: "en el día de la angustia,, (La,m,70)", sC: ""},
+            { line: "cuando las aguas caudalosas se desbordan,, (Sol,,122)(La,m,245)", sC: ""},
+            { line: "mas a él no le alcanzarán., (Sol,,76)(La,m,227)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú eres mi refugio,, (Sol,,136)", sC: ""},
+            { line: "tú me preservas del peligro,, (La,m,114)", sC: ""},
+            { line: "me rodeas de cantos de salvación,, (Sol,,14)(La,m,156)", sC: ""},
+            { line: "me dices: «Te haré sabio,, (Sol,,14)", sC: ""},
+            { line: "te indicaré el camino de la vida»., (La,m,275)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TE HE MANIFESTADO MI PECADO, (La,m,20)(Re,m,225)", sC: "ta as", lines: [
+            { line: "NO HE TENIDO ESCONDIDOS MIS ERRORES., (La,m,109)", sC: "as"},
+            { line: "HE DICHO: «CONFESARÉ AL SEÑOR MI CULPA»., (Sol,,50)(La,m,225)", sC: "as"},
+            { line: "Y TÚ HAS PERDONADO, (Sol,,36)", sC: "as"},
+            { line: "LA MALICIA DE MI PECADO., (La,m,224)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: TE HE MANIFESTADO MI PECADO
 // SIGUIENTE CANTO DEBAJO
 
 
