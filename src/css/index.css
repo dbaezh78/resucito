@@ -44,7 +44,8 @@
     color: #c6c5c59e; /* Movido aquí */
     width: max-content; /* Movido aquí */
     font: icon;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 20px
 }
 
 /*3ra configuracion r1, r2 */

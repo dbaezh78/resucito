@@ -1,5 +1,5 @@
         @media (min-width: 384px) {
-            .container {margin-left: 0%;}
+            .container {margin-left: 5%;}
             .r1::before {height: 62px;margin-left: 255px;margin-top: -40px;}
         }
         @media (min-width: 768px) {
@@ -7,6 +7,6 @@
             .r1::before {height: 101px;margin-left: 483px;margin-top: -59px}
         }
         @media (min-width: 992px) {
-            .container {margin-left: 0%;}
-            .r1::before {height: 75px;margin-left: 363px;margin-top: -44px;}
+            .container {margin-left: 12%;}
+            .r1::before {height: 257px;margin-left: 400px;margin-top: -46px;}
         }

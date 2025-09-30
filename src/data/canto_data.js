@@ -12112,7 +12112,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // SIGUIENTE CANTO DEBAJO
 /*
 ╔════════════════════════════════════════════════════════╗
-║           TE HE MANIFESTADO MI PECADO               ║
+║           TE HE MANIFESTADO MI PECADO                  ║
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "tehemanifestadomipecado",
@@ -12197,8 +12197,174 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: TE HE MANIFESTADO MI PECADO
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           TÚ HAS CUBIERTO DE VERGÜENZA LA MUERTE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "tuhascubiertodevergüenzalamuerte",
+        tt: "Tú Has Cubierto De Vergüenza La Muerte",
+        title: "Tú Has Cubierto De Vergüenza La Muerte",
+        subtitle: "Homilía Pascual (Melltón de Sardes)",
+        category: ["Precatecumenado","Vírgen María","Pascua","Pentecostés","Fracción Del Pan"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "160",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/tuhascubiertodevergüenzalamuerte.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=tehemanifestadomipecado",
+        sig: "/src/index.html?canto=tuqueeresfiel",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Tú has cubierto de vergüenza la muerte,, (Re,m,22)(La,7,345)", sC: "tc"},
+            { line: "tú has llenado de luto el infierno., (Re,m,276)", sC: "r1"},
+            { line: "Has golpeado la iniquidad,, (La,7,233)", sC: ""},
+            { line: "has privado a la injusticia de sus hijos,, (Re,m,334)", sC: ""},
+            { line: "como Moisés al Faraón,, (Si♭,7,112)(La,7,210)", sC: ""},
+            { line: "como Moisés al Faraón., (Si♭,7,113)(La,7,210)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú nos has pasado de la esclavitud a la libertad, (Re,m,20)(La,7,433)", sC: "tc"},
+            { line: "de las tinieblas a la luz,, (Re,m,207)", sC: ""},
+            { line: "de la muerte a la vida,, (La,7,183)", sC: ""},
+            { line: "de la tiranía al reino eterno., (Re,m,227)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú eres la Pascua de nuestra salvación;, (La,7,357)", sC: ""},
+            { line: "tú eres el cordero nacido de María., (Re,m,315)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MARÍA, CORDERA SIN MANCHA,, (Re,m,20)(La,7,241)", sC: "ta as"},
+            { line: "MARÍA, LA INOCENTE CORDERA., (Re,m,273)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú has sido asesinado en Abel,, (Re,m,20)(La,7,275)", sC: "tc"},
+            { line: "tú fuiste atado en Isaac,, (Re,m,210)", sC: ""},
+            { line: "vendido en José,, (La,7,140)", sC: ""},
+            { line: "abandonado sobre las aguas en Moisés,, (Re,m,362)", sC: ""},
+    ], lder: [
+            { line: "perseguido en David, (La,7,182)", sC: ""},
+            { line: "y despreciado en todos los profetas., (Re,m,303)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú eres el cordero que no abre boca;, (La,7,314)", sC: ""},
+            { line: "tú eres el cordero nacido de María., (Re,m,310)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MARÍA, CORDERA SIN MANCHA, (Re,m,20)(La,7,241)", sC: "ta as", lines: [
+            { line: "MARÍA, LA INOCENTE CORDERA., (Re,m,273)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú fuiste cogido del rebaño,, (Re,m,20)(La,7,228)", sC: "tc"},
+            { line: "conducido al sacrificio, inmolado por la tarde,, (Re,m,396)", sC: ""},
+            { line: "sepultado en la noche; (La,7,169)", sC: ""},
+            { line: "sobre la cruz no te fue roto ningún hueso,", sC: ""},
+            { line: "ni en la tierra experimentaste la corrupción., (Re,m,396)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú resucitando de la muerte, (La,7,238)", sC: ""},
+            { line: "has hecho resurgir a la humanidad, ", sC: ""},
+            { line: "de lo profundo del sepulcro., (Re,m,220)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú eres el cordero que no abre boca;, (La,7,313)", sC: ""},
+            { line: "tú eres el cordero nacido de María., (Re,m,311)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MARÍA, CORDERA SIN MANCHA, (Re,m,20)(La,7,241)", sC: "ta as", lines: [
+            { line: "MARÍA, LA INOCENTE CORDERA., (Re,m,273)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: TÚ HAS CUBIERTO DE VERGÜENZA LA MUERTE
+// SIGUIENTE CANTO DEBAJO
 
-
+/*
+╔════════════════════════════════════════════════════════╗
+║           UN RETOÑO BROTA DEL TRONCO DE JESÉ               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "unretonobrotadeltroncodejese",
+        tt: "Un Retoño Brota Del Tronco De Jesé",
+        title: "Un Retoño Brota Del Tronco De Jesé",
+        subtitle: "Isaías 11,1-11",
+        category: ["Precatecumenado","Adviento","Navidad","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "162",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/unretonobrotadeltroncodejese.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=tuqueeresfiel",
+        sig: "/src/index.html?canto=unagransenal",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "UN RETOÑO BROTA DEL TRONCO DE JESÉ,, (Sol,,14)(Mi,m,418)", sC: "ta as"},
+            { line: "UN GERMEN DE SUS RAÍCES., (Sol,,231)", sC: "as"},
+            { line: "SOBRE ÉL SE POSA EL ESPÍRITU DEL SEÑOR:, (Do,,82)(Sol,,406)", sC: "as"},
+            { line: "ESPÍRITU DE SABIDURÍA E INTELIGENCIA,, (Re,,40)(Sol,,339)", sC: "as"},
+            { line: "ESPÍRITU DE CONSEJO Y FORTALEZA,, (Re,,40)(Sol,,323)", sC: "as"},
+            { line: "ESPÍRITU DE CIENCIA Y DE PIEDAD,, (Do,,40)(Sol,,313)", sC: "as"},
+            { line: "ESPÍRITU DE TEMOR DEL SEÑOR., (Re,,40)(Sol,,290)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "No juzgará de oídas,, (Do,,10)(Sol,,149)", sC: "tc"},
+            { line: "sino que ayudará a los oprimidos., (Re,,10)(Sol,,279)", sC: ""},
+            { line: "Su palabra será una vara contra el violento, (Do,,65)(Sol,,373)", sC: ""},
+            { line: "y con el soplo de su boca matará al malvado., (Re,,92)(Sol,,398)", sC: ""},
+            { line: "El lobo vivirá con el cordero,, (Do,,34)(Sol,,235)", sC: ""},
+            { line: "la pantera se echará con el cabrito,, (Do,,71)(Sol,,309)", sC: ""},
+            { line: "el león y el novillo pacerán juntos,, (Re,,45)(Sol,,269)", sC: ""},
+            { line: "y un niño los guiará, y un niño los guiará., (Do,,57)(Sol,,176)(Re,,258)(Sol,,376)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "UN RETOÑO BROTA DEL TRONCO DE JESÉ, (Sol,,14)(Mi,m,418)", sC: "ta as", lines: [
+            { line: "UN GERMEN DE SUS RAÍCES., (Sol,,231)", sC: "as"},
+            { line: "SOBRE ÉL SE POSA EL ESPÍRITU DEL SEÑOR:, (Do,,82)(Sol,,406)", sC: "as"},
+            { line: "ESPÍRITU DE SABIDURÍA E INTELIGENCIA,, (Re,,40)(Sol,,339)", sC: "as"},
+            { line: "ESPÍRITU DE CONSEJO Y FORTALEZA,, (Re,,40)(Sol,,323)", sC: "as"},
+            { line: "ESPÍRITU DE CIENCIA Y DE PIEDAD,, (Do,,40)(Sol,,313)", sC: "as"},
+            { line: "ESPÍRITU DE TEMOR DEL SEÑOR., (Re,,40)(Sol,,290)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "La vaca y la osa estarán juntas,, (Do,,10)(Sol,,250)", sC: "tc"},
+            { line: "el león, como el buey, comerá paja., (Do,,45)(Sol,,310)", sC: ""},
+            { line: "El niño de pecho hurgará, (Re,,37)", sC: ""},
+    ], lder: [
+            { line: "en el agujero del áspid,, (Sol,,173)", sC: ""},
+            { line: "el recién nacido meterá la mano, (Do,,123)", sC: ""},
+            { line: "en la hura de la víbora., (Sol,,167)", sC: ""},
+            { line: "Porque ya nadie hará daño., (Re,,56)(Sol,,223)", sC: "tc"},
+            { line: "PORQUE YA NADIE HARÁ DAÑO., (Re,,74)(Sol,,271)", sC: "ta as"},
+            { line: "Porque la tierra estará llena, (Re,,114)", sC: "tc"},
+            { line: "del conocimiento del Señor., (Sol,,247)", sC: ""},
+            { line: "PORQUE LA TIERRA ESTARÁ LLENA, (Re,,145)", sC: "ta as"},
+            { line: "DEL CONOCIMIENTO DEL SEÑOR., (Sol,,288)", sC: "as"},
+            { line: "Porque aquel día, (Si,7,20)", sC: "tc"},
+            { line: "la raíz de Jesé se levantará, ", sC: ""},
+            { line: "como estandarte de los pueblos,, (Mi,m,260)", sC: ""},
+            { line: "y las gentes lo seguirán con ansia., (La,m,67)(Si,7,283)", sC: ""},
+            { line: "En aquel día el Señor extenderá su mano, (Do,,104)(Si,7,362)", sC: ""},
+            { line: "y un camino se formará,, (Do,,86)(Si,7,220)", sC: ""},
+            { line: "Y UN CAMINO SE FORMARÁ;, (Do,,97)(Si,7,262)", sC: "ta as"},
+            { line: "una vía para todas las naciones,, (Do,,58)(Si,7,263)", sC: "tc"},
+            { line: "UNA VÍA PARA TODAS LAS NACIONES, (Do,,63)(Si,7,312)", sC: "ta as"},
+            { line: "que la Virgen indicará., (La,m,20)(Si,7,200)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "UN RETOÑO BROTA DEL TRONCO DE JESÉ, (Sol,,14)(Mi,m,418)", sC: "ta as", lines: [
+            { line: "UN GERMEN DE SUS RAÍCES., (Sol,,231)", sC: "as"},
+            { line: "SOBRE ÉL SE POSA EL ESPÍRITU DEL SEÑOR:, (Do,,82)(Sol,,406)", sC: "as"},
+            { line: "ESPÍRITU DE SABIDURÍA E INTELIGENCIA,, (Re,,40)(Sol,,339)", sC: "as"},
+            { line: "ESPÍRITU DE CONSEJO Y FORTALEZA,, (Re,,40)(Sol,,323)", sC: "as"},
+            { line: "ESPÍRITU DE CIENCIA Y DE PIEDAD,, (Do,,40)(Sol,,313)", sC: "as"},
+            { line: "ESPÍRITU DE TEMOR DEL SEÑOR., (Re,,40)(Sol,,290)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: UN RETOÑO BROTA DEL TRONCO DE JESÉ
+// SIGUIENTE CANTO DEBAJO
 
 
 /*
