@@ -366,11 +366,12 @@ display: none;}
 }
 
 .dbs2 {
-    color: grey;
+    color: #5a575a;
     margin: 0px;
     font-size: medium;
     font-weight: bold;
     text-align: center;
+    font-style: italic;
 }
 
 @media (min-width: 384px) {

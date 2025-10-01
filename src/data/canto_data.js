@@ -12628,7 +12628,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "165",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/vamosyapastores.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -12697,7 +12697,438 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PA RA RAM PAM PAM., (Mi,m,188)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: VAMOS YA, PASTORES
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           VEN DEL LÍBANO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "vendellibano",
+        tt: "Ven Del Líbano",
+        title: "Ven Del Líbano",
+        subtitle: "Cantar de los cantares 4,8ss",
+        category: ["Precatecumenado","Pascua","Pentecostés","Entrada","Comunión","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "166",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/vendellibano.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=vamosyapastores",
+        sig: "/src/index.html?canto=venespiritusanto",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Ven del Líbano, esposa,, (Mi,m,20)(Re,,132)", sC: "tc"},
+            { line: "ven del Líbano, ven., (Do,,10)(Re,,87)(Mi,m,168)", sC: ""},
+            { line: "Tendrás por corona la cima de los montes,, (Re,,221)", sC: ""},
+            { line: "la alta cumbre del Hermón., (Do,,32)(Re,,84)(Mi,m,238)", sC: ""},
+            { line: "Tú me has herido, herido el corazón,, (Re,,208)", sC: ""},
+            { line: "oh, esposa, amada mía., (Do,,10)(Re,,72)(Mi,m,207)", sC: ""},
+            { line: "Ven del Líbano, esposa,, (Re,,131)", sC: ""},
+            { line: "ven del Líbano, ven., (Do,,10)(Re,,86)(Mi,m,168)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "BUSQUÉ EL AMOR DEL ALMA MÍA,, (Sol,,153)(La,,303)", sC: "ta as"},
+            { line: "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)Mi(m,,257)", sC: "as"},
+            { line: "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)", sC: "as"},
+            { line: "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo pertenezco a mi amado, y él es todo para mí., (Mi,,10)(Re,,149)(Do,,292)(Re,,343)(Mi,m,446)", sC: "tc"},
+            { line: "Ven, salgamos a los campos,, (Re,,154)", sC: ""},
+            { line: "nos perderemos por los pueblos., (Do,,16)(Re,,107)(Mi,m,257)", sC: ""},
+            { line: "Saldremos al alba a las viñas, (Re,,186)", sC: ""},
+            { line: "y recogeremos de su fruto., (Do,,10)(Re,,91)(Mi,m,223)", sC: ""},
+            { line: "Yo pertenezco a mi amado, y él es todo para mí., (Re,,147)(Do,,291)(Re,,343)(Mi,m,450)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "BUSQUÉ EL AMOR DEL ALMA MÍA, (Sol,,153)(La,,303)", sC: "ta as", lines: [
+            { line: "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)(Mi,m,257)", sC: "as"},
+            { line: "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)", sC: "as"},
+            { line: "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Levántate deprisa, amada mía,, (Mi,m,20)(Re,,217)", sC: "tc"},
+            { line: "ven, paloma, ven., (Do,,14)(Re,,77)(Mi,m,144)", sC: ""},
+            { line: "Porque el invierno ya ha pasado,, (Re,,192)", sC: ""},
+            { line: "el canto de la alondra ya se oye., (Do,,39)(Re,,157)(Mi,m,282)", sC: ""},
+            { line: "Las flores aparecen en la tierra,, (Re,,202)", sC: ""},
+            { line: "el fuerte sol ha llegado., (Do,,46)(Re,,100)(Mi,m,189)", sC: ""},
+            { line: "Levántate deprisa, amada mía,, (Re,,216)", sC: ""},
+            { line: "ven, paloma, ven., (Do,,15)(Re,,78)(Mi,m,144)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "BUSQUÉ EL AMOR DEL ALMA MÍA, (Sol,,153)(La,,303)", sC: "ta as", lines: [
+            { line: "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)(Mi,m,257)", sC: "as"},
+            { line: "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)", sC: "as"},
+            { line: "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Como un sello en el corazón,, (Mi,m,20)(Re,,150)", sC: "tc"},
+            { line: "como tatuaje en el brazo., (Do,,10)(Re,,104)(Mi,m,207)", sC: ""},
+            { line: "El amor es fuerte como la muerte,, (Re,,185)", sC: ""},
+            { line: "las aguas no lo apagarán., (Do,,42)(Re,,111)(Mi,m,222)", sC: ""},
+            { line: "Dar por este amor, ", sC: ""},
+            { line: "todos los bienes de la casa,, (Re,,101)", sC: ""},
+            { line: "sería despreciarlo., (Do,,32)(Re,,73)(Mi,m,137)", sC: ""},
+            { line: "Como un sello en el corazón,, (Re,,149)", sC: ""},
+            { line: "como tatuaje en el brazo., (Do,,13)(Re,,101)(Mi,m,206)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "BUSQUÉ EL AMOR DEL ALMA MÍA, (Sol,,153)(La,,303)", sC: "ta as", lines: [
+            { line: "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)(Mi,m,257)", sC: "as"},
+            { line: "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)", sC: "as"},
+            { line: "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: VEN DEL LÍBANO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           VEN, ESPÍRITU SANTO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "venespiritusanto",
+        tt: "Ven, Espíritu Santo",
+        title: "Ven, Espíritu Santo",
+        subtitle: "Secuencia de Pentecostés - Himno latin. «Veni, Sancte Spiritus»",
+        category: ["Precatecumenado","Pascua","Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "167",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/venespiritusanto.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=vendellibano",
+        sig: "/src/index.html?canto=venhijodelhombre",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "VEN, ESPÍRITU SANTO,, (Do,,10)(Fa,,164)", sC: "ta as"},
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ven, padre de los pobres,, (Do,,10)(Fa,,186)", sC: "tc"},
+            { line: "ven, luz del corazón., (Mi,,168)", sC: ""},
+            { line: "Ven, consolador buenísimo,, (Do,,12)(Fa,,205)", sC: ""},
+            { line: "dulce huésped del alma., (Mi,,189)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "Ven, dulce refrigerio, ", sC: "tc ptop0"},
+            { line: "en la fatiga tú eres descanso; ", sC: "ptop0"},
+            { line: "en el calor tú eres nuestro alivio; ", sC: "ptop0"},
+            { line: "en el llanto eres consuelo. ", sC: "ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "Oh luz dichosísima, ", sC: "tc ptop0"},
+            { line: "inunda de tu resplandor, ", sC: "ptop0"},
+            { line: "lo íntimo del corazón de tus fieles, ", sC: "ptop0"},
+            { line: "llega hasta el fondo del alma. ", sC: "ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ. (Mi,,235)", sC: "as"},  ]},
+            { line: "Sin tu luz nada hay puro en el hombre, ", sC: "tc ptop0"},
+            { line: "nada hay inocente. ", sC: "ptop0"},
+            { line: "Mira la fuerza del pecado, ", sC: "ptop0"},
+            { line: "cuando tú no estás con nosotros. ", sC: "ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Lava lo que está sucio, ", sC: "tc ptop0"},
+            { line: "riega lo que está árido, ", sC: "ptop0"},
+            { line: "sana lo que está enfermo. ", sC: "ptop0"},
+            { line: "Convierte al duro y al rígido. ", sC: "ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ. (Mi,,235)", sC: "as"},  ]},
+            { line: "Inflama lo que está tibio, ", sC: "tc ptop0"},
+            { line: "encamina al que se ha extraviado. ", sC: "ptop0"},
+            { line: "Danos tus siete dones, ", sC: "ptop0"},
+            { line: "danos tu amor y tu alegría. ", sC: "ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "Danos virtud y premio, ", sC: "tc ptop0"},
+            { line: "danos la alegría de la salvación, ", sC: "ptop0"},
+            { line: "danos una muerte santa, ", sC: "ptop0"},
+            { line: "danos el gozo eterno. ", sC: "ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "Danos sabiduría y entendimiento,, ", sC: "tc ptop0"},
+            { line: "danos ciencia y piedad, ", sC: "ptop0"},
+            { line: "danos consejo y fortaleza, ", sC: "ptop0"},
+            { line: "danos el temor de Dios. ", sC: "ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "Danos tus santos frutos: ", sC: "tc ptop0"},
+            { line: "danos paciencia y bondad, ", sC: "ptop0"},
+            { line: "danos amor y alegría, ", sC: "ptop0"},
+            { line: "danos justicia y verdad. ", sC: "ptop0"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: VEN, ESPÍRITU SANTO
+// SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════╗
+║           VEN, ESPÍRITU SANTO              ║
+╚════════════════════════════════════════════╝  */
+   {
+        id: "venespiritusantov2",
+        tt: "Ven, Espíritu Santo",
+        title: "Ven, Espíritu Santo",
+        subtitle: "Secuencia de Pentecostés - Himno latin. «Veni, Sancte Spiritus»",
+        category: ["Precatecumenado","Pascua","Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "167",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/venespiritusanto.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=vendellibano",
+        sig: "/src/index.html?canto=venhijodelhombre",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "VEN, ESPÍRITU SANTO,, (Do,,10)(Fa,,250)", sC: "ta as"},
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,20)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ven, padre de los pobres,, (Do,,10)(Fa,,250)", sC: "tc"},
+            { line: "ven, luz del corazón., (Mi,,20)", sC: ""},
+            { line: "Ven, consolador buenísimo,, (Do,,10)(Fa,,250)", sC: ""},
+            { line: "dulce huésped del alma., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ven, dulce refrigerio,, (Do,,10)(Fa,,250)", sC: "tc"},
+            { line: "en la fatiga tú eres descanso;, (Mi,,20)", sC: ""},
+            { line: "en el calor tú eres nuestro alivio;, (Do,,10)(Fa,,250)", sC: ""},
+            { line: "en el llanto eres consuelo., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Oh luz dichosísima, (Do,,10)(Fa,,250)", sC: "tc"},
+            { line: "inunda de tu resplandor, (Mi,,20)", sC: ""},
+            { line: "lo íntimo del corazón de tus fieles,, (Do,,10)(Fa,,250)", sC: ""},
+            { line: "llega hasta el fondo del alma., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sin tu luz nada hay puro en el hombre,, ", sC: "tc"},
+            { line: "nada hay inocente., ", sC: ""},
+            { line: "Mira la fuerza del pecado,, ", sC: ""},
+            { line: "cuando tú no estás con nosotros., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Lava lo que está sucio,, ", sC: "tc"},
+            { line: "riega lo que está árido,, ", sC: ""},
+            { line: "sana lo que está enfermo., ", sC: ""},
+            { line: "Convierte al duro y al rígido., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Inflama lo que está tibio,, ", sC: "tc"},
+            { line: "encamina al que se ha extraviado., ", sC: ""},
+            { line: "Danos tus siete dones,, ", sC: ""},
+            { line: "danos tu amor y tu alegría., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Danos virtud y premio,, ", sC: "tc"},
+            { line: "danos la alegría de la salvación,, ", sC: ""},
+            { line: "danos una muerte santa,, ", sC: ""},
+            { line: "danos el gozo eterno., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Danos sabiduría y entendimiento,, ", sC: "tc"},
+            { line: "danos ciencia y piedad,, ", sC: ""},
+            { line: "danos consejo y fortaleza,, ", sC: ""},
+            { line: "danos el temor de Dios., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Danos tus santos frutos:, ", sC: "tc"},
+            { line: "danos paciencia y bondad,, ", sC: ""},
+            { line: "danos amor y alegría,, ", sC: ""},
+            { line: "danos justicia y verdad., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)", sC: "ta as", lines: [
+            { line: "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: VEN, ESPÍRITU SANTO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           VEN, HIJO DEL HOMBRE               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "venhijodelhombre",
+        tt: "Ven, Hijo Del Hombre",
+        title: "Ven, Hijo Del Hombre",
+        subtitle: "Apocalipsis 21,17ss",
+        category: ["Precatecumenado","Adviento","Navidad","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* Melisma",
+        nCanURL: "",
+        dbno: "168",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/venhijodelhombre.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=venespiritusanto",
+        sig: "/src/index.html?canto=venicreator",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Ven, Hijo del Hombre,, (Mi,m,20)(La,m,144)", sC: "tc"},
+            { line: "ven, ¡Señor Jesús!, (Si,7,15)(Mi,m,146)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ven,, (Mi,m,20)", sC: "tc"},
+            { line: "VEN, ", sC: "ta as a2"},
+            { line: "Siervo de los pobres,, (La,m,149)", sC: "tc"},
+            { line: "SIERVO DE LOS POBRES;, ", sC: "ta as"},
+            { line: "ven,, (Si,7,15)", sC: "tc"},
+            { line: "VEN, ", sC: "ta as a2"},
+            { line: "¡Señor Jesús!, (Mi,m,101)", sC: "tc"},
+            { line: "¡SEÑOR JESÚS!, ", sC: "ta as a2"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Espíritu dice: ¡Ven!, (Do,,10)(Mi,m,178)", sC: "tc"},
+            { line: "El que escucha diga: ¡Ven!, (Do,,102)(Si,7,230)", sC: ""},
+            { line: "¡VEN! ¡VEN! ¡VEN!, ", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ven,, (Mi,m,20)", sC: "tc"},
+            { line: "VEN, ", sC: "ta as a2"},
+            { line: "amor mío,, (La,m,77)", sC: "tc"},
+            { line: "AMOR MÍO, ", sC: "ta as a2"},
+            { line: "ven,, (Si,7,15)", sC: ""},
+            { line: "VEN, ", sC: "ta as a2"},
+            { line: "¡Señor Jesús!, (Mi,m,108)", sC: ""},
+            { line: "¡SEÑOR JESÚS!, ", sC: "ta as a2"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Calma,, (Mi,m,20)", sC: "tc"},
+            { line: "CALMA, ", sC: "ta as a2"},
+            { line: "tú este fuego,, (La,m,92)", sC: ""},
+            { line: "TÚ ESTE FUEGO,", sC: "ta as a2"},
+            { line: "ven,, (Si,7,15)", sC: ""},
+            { line: "VEN, ", sC: "ta as a2"},
+            { line: "¡Señor Jesús!, (Mi,m,100)", sC: ""},
+            { line: "¡SEÑOR JESÚS!,", sC: "ta as a2"},
+    ], lder: [
+            { line: "La Esposa dice: ¡Ven!, (Do,,10)(Mi,m,176)", sC: "tc"},
+            { line: "Y el que escucha diga: ¡Ven!, (Do,,177)(Si,7,245)", sC: ""},
+            { line: "¡VEN! ¡VEN! ¡VEN!, ", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Vieni, (Mi,m,20)", sC: "tc"},
+            { line: "VIENI, ", sC: "ta as a2"},
+            { line: "Figlio dell'uomo,, (La,m,114)", sC: "tc"},
+            { line: "FIGLIO DELL'UOMO, ", sC: "ta as a2"},
+            { line: "vieni, (Si,7,12)", sC: ""},
+            { line: "VIENI, ", sC: "ta as a2"},
+            { line: "Signore Gesü!, (Mi,m,114)", sC: ""},
+            { line: "SIGNORE GESÜ!, ", sC: "ta as a2"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Viens,", sC: "tc t0"},
+            { line: "VIENS,", sC: "ta as a2"},
+            { line: "Fils de l'homme, ", sC: "t0"},
+            { line: "FILS DE L'HOMME, ", sC: "ta as a2"},
+            { line: "viens, ", sC: "t0"},
+            { line: "VIENS, ", sC: "ta as a2"},
+            { line: "Seigneur Jesus!, ", sC: "t0"},
+            { line: "SEIGNEUR JESUS!, ", sC: "ta as a2"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Come, ", sC: "tc t0 p1"},
+            { line: "COME, ", sC: "ta as a2 t0 p1"},
+            { line: "Son of the Man, ", sC: "t0 p1"},
+            { line: "SON OF THE MAN, ", sC: "ta as a2 t0 p1"},
+            { line: "come, ", sC: "t0 p1"},
+            { line: "COME, ", sC: "ta as a2 t0 p1"},
+            
+            { line: "Lord Jesus!, ", sC: ""},
+            { line: "LORD JESUS!, ", sC: "ta as a2"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ven,, (Mi,m,20)", sC: "tc"},
+            { line: "VEN,, ", sC: "ta as a2"},
+            { line: "Hijo del Hombre,, (La,m,98)", sC: ""},
+            { line: "HIJO DEL HOMBRE,, ", sC: "ta as a2"},
+            { line: "¡Ven!, (Si,7,12)", sC: ""},
+            { line: "¡VEN!, ", sC: "as a3"},
+
+            { line: "¡Ven! (Si,7,20)", sC: "tc"},
+            { line: "¡VEN! ", sC: "as a4"},
+            { line: "¡Ven! ", sC: "a5"},
+            { line: "¡VEN! ", sC: "as a6"},
+            { line: "¡Ven! ", sC: "a7"},
+            { line: "¡VEN! ... ", sC: "as a8"},
+            { line: "", sC: "ast"},
+            
+            { line: "¡Señor! ", sC: ""},
+            { line: "¡SEÑOR! ", sC: "as a9"},
+            { line: "Signore! ", sC: "a10"},
+            { line: "SIGNORE! ... ", sC: "as a11"},
+            { line: "", sC: "ast1"},
+            
+            { line: "¡Ven! Vieni! Viens! Come! ¡Ven!, ", sC: ""},
+            { line: "¡VEN! ... ", sC: "as a12"},
+            { line: "", sC: "ast2"},
+            { line: "¡SEÑOR JESÚS!, (Mi,m,121)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: VEN, HIJO DEL HOMBRE
+// SIGUIENTE CANTO DEBAJO
 
 
 

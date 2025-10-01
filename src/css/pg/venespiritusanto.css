@@ -9,4 +9,5 @@
         @media (min-width: 992px) {
             .container {margin-left: 12%;}
             .r1::before {height: 173px;margin-left: 337px;margin-top: -6%;}
+            .ptop0 {min-height: 0px;}
         }
