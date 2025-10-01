@@ -11759,7 +11759,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "QUE HUYA COMO EL PÁJARO AL MONTE,, (Do,,64)(Si,7,339)", sC: "as"},
             { line: "QUE HUYA COMO EL PÁJARO AL MONTE?, (Do,,64)(Si,7,339)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Yo sé que los malvados tensan el arco,, (Do,,10)(Si7,,335)", sC: "tc"},
+            { line: "Yo sé que los malvados tensan el arco,, (Do,,10)(Si,7,335)", sC: "tc"},
             { line: "que ajustan las flechas a la cuerda,, (Do,,66)(Si,7,297)", sC: ""},
             { line: "para herir en la sombra al inocente., (Do,,64)(Si,7,303)", sC: ""},
             { line: "Mas cuando fallan los cimientos,, (La,m,20)(Si,7,263)", sC: ""},
