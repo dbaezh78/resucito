@@ -12554,7 +12554,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "164",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/uriuriura.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -12575,42 +12575,127 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,382)", sC: "as"},
             { line: "LALALALÁ LALÁ., (Mi,m,147)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Un niño pequeño va a nacer,, (Mi,m,20)(Si,7,250)", sC: "tc"},
-            { line: "un niñito pequeño., (Mi,m,20)", sC: ""},
-            { line: "UN NIÑO PEQUEÑO VA A NACER,, (Si,7,20)", sC: "ta as"},
-            { line: "UN NIÑITO PEQUEÑO., (Mi,m,20)", sC: "as"},
+            { line: "Un niño pequeño va a nacer,, (Mi,m,20)(Si,7,257)", sC: "tc"},
+            { line: "un niñito pequeño., (Mi,m,146)", sC: ""},
+            { line: "UN NIÑO PEQUEÑO VA A NACER,, (Si,7,288)", sC: "ta as"},
+            { line: "UN NIÑITO PEQUEÑO., (Mi,m,167)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¿Cómo se llamará? Emmanuel., (Si,7,20)", sC: "tc"},
-            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Mi,m,20)", sC: "ta as"},
-            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Si,7,20)", sC: "as"},
-            { line: "VEN CHIQUITITO, VEN., (Mi,m,20)", sC: "as"},
+            { line: "¿Cómo se llamará? Emmanuel., (Si,7,284)", sC: "tc"},
+            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Mi,m,315)", sC: "ta as"},
+            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Si,7,317)", sC: "as"},
+            { line: "VEN CHIQUITITO, VEN., (Mi,m,183)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "URÍ, URÍ, URÍ, URÁ., (Si,7,20)", sC: "ta as", lines: [
-            { line: "URÍ, URÍ, URÍ, URÁ., (Mi,m,20)", sC: "as"},
-            { line: "URÍ, URÍ, URÍ, URÁ., (Si,7,20)", sC: "as"},
-            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,20)", sC: "as"},
-            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,20)", sC: "as"},
-            { line: "LALALALÁ LALÁ., (Mi,m,20)", sC: "as"},  ]},
+       triggerLine: "URÍ, URÍ, URÍ, URÁ, (Mi,m,20)(Si,7,172)", sC: "ta as", lines: [
+            { line: "URÍ, URÍ, URÍ, URÁ., (Mi,m,167)", sC: "as"},
+            { line: "URÍ, URÍ, URÍ, URÁ., (Si,7,168)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,386)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,382)", sC: "as"},
+            { line: "LALALALÁ LALÁ., (Mi,m,147)", sC: "as"},  ]},
     ], lder: [
-            { line: "Su madrecita está en Belén,, (Mi,m,20)(Si,7,250)", sC: "tc"},
-            { line: "su padre es carpintero., (Mi,m,20)", sC: ""},
-            { line: "SU MADRECITA ESTÁ EN BELÉN,, (Si,7,20)", sC: "ta as"},
-            { line: "SU PADRE ES CARPINTERO., (Mi,m,20)", sC: "as"},
+            { line: "Su madrecita está en Belén,, (Mi,m,20)(Si,7,248)", sC: "tc"},
+            { line: "su padre es carpintero., (Mi,m,191)", sC: ""},
+            { line: "SU MADRECITA ESTÁ EN BELÉN,, (Si,7,285)", sC: "ta as"},
+            { line: "SU PADRE ES CARPINTERO., (Mi,m,229)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¿Cómo se llamará? Emmanuel., (Si,7,20)", sC: "tc"},
-            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Mi,m,20)", sC: "ta as"},
-            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Si,7,20)", sC: "as"},
-            { line: "VEN CHIQUITITO, VEN., (Mi,m,20)", sC: "as"},
+            { line: "¿Cómo se llamará? Emmanuel., (Si,7,284)", sC: "tc"},
+            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Mi,m,314)", sC: "ta as"},
+            { line: "¿CÓMO SE LLAMARÁ? EMMANUEL., (Si,7,315)", sC: "as"},
+            { line: "VEN CHIQUITITO, VEN., (Mi,m,184)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "URÍ, URÍ, URÍ, URÁ., (Si,7,20)", sC: "ta as", lines: [
-            { line: "URÍ, URÍ, URÍ, URÁ., (Mi,m,20)", sC: "as"},
-            { line: "URÍ, URÍ, URÍ, URÁ., (Si,7,20)", sC: "as"},
-            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,20)", sC: "as"},
-            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,20)", sC: "as"},
-            { line: "LALALALÁ LALÁ., (Mi,m,20)", sC: "as"},  ]},
+       triggerLine: "URÍ, URÍ, URÍ, URÁ (Mi,m,20)(Si,7,172)", sC: "ta as", lines: [
+            { line: "URÍ, URÍ, URÍ, URÁ., (Mi,m,167)", sC: "as"},
+            { line: "URÍ, URÍ, URÍ, URÁ., (Si,7,168)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Mi,m,386)", sC: "as"},
+            { line: "PAMPAM, PAMPAM, PAMPARAM PAMPAM,, (Si,7,382)", sC: "as"},
+            { line: "LALALALÁ LALÁ., (Mi,m,147)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: URÍ, URÍ, URÁ
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           VAMOS YA, PASTORES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "vamosyapastores",
+        tt: "Vamos Ya, Pastores",
+        title: "Vamos Ya, Pastores",
+        subtitle: "Villancico (Kiko Argüello)",
+        category: ["Precatecumenado","Adviento","Navidad","Niños"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "165",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/vamosyapastores.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=uriuriura",
+        sig: "/src/index.html?canto=vendellibano",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "VAMOS YA, PASTORES , (Mi,m,20)", sC: "ta as"},
+            { line: "VAMOS A BELÉN,, (Si,7,141)", sC: "as"},
+            { line: "QUE HA NACIDO UN NIÑO, ", sC: "as"},
+            { line: "SE LLAMA EMMANUEL., (Mi,m,201)", sC: "as"},
+            { line: "SE LLAMA EMMANUEL,", sC: "as"},
+            { line: "SE LLAMA EMMANUEL,, (Si,7,197)", sC: "as"},
+            { line: "VAMOS YA, PASTORES,", sC: "as"},
+            { line: "VAMOS A BELÉN., (Mi,m,140)", sC: "as"},
+            { line: "PA RA RAM PAM PAM,, (Si,7,187)", sC: "as r1"},
+            { line: "PA RA RAM PAM PAM., (Mi,m,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los pobres ya cantan,, (Mi,m,20)", sC: "tc"},
+            { line: "los niños ya ríen., (Si,7,153)", sC: ""},
+            { line: "Los pobres ya cantan,, (Mi,m,150)", sC: ""},
+            { line: "los niños ya ríen., (Si,7,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALEGRÍA, ALEGRÍA,, (Mi,m,20)(Si,7,169)", sC: "ta as"},
+            { line: "ALEGRÍA, ALEGRÍA., (Mi,m,165)", sC: "as"},
+            { line: "ALEGRÍA, ALEGRÍA:, (Si,7,165)", sC: "as"},
+            { line: "HA NACIDO EL SALVADOR., (Mi,m,226)", sC: "as"},
+    ], lder: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VAMOS YA, PASTORES, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "VAMOS A BELÉN,, (Si,7,141)", sC: "as"},
+            { line: "QUE HA NACIDO UN NIÑO, ", sC: "as"},
+            { line: "SE LLAMA EMMANUEL., (Mi,m,201)", sC: "as"},
+            { line: "SE LLAMA EMMANUEL,", sC: "as"},
+            { line: "SE LLAMA EMMANUEL,, (Si,7,197)", sC: "as"},
+            { line: "VAMOS YA, PASTORES,", sC: "as"},
+            { line: "VAMOS A BELÉN., (Mi,m,140)", sC: "as"},
+            { line: "PA RA RAM PAM PAM,, (Si,7,187)", sC: "as r1"},
+            { line: "PA RA RAM PAM PAM., (Mi,m,188)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Su madre, María,, (Mi,m,20)(Si,7,143)", sC: "tc"},
+            { line: "su padre, José., (Mi,m,128)", sC: ""},
+            { line: "Ha nacido un niño,, (Si,7,147)", sC: ""},
+            { line: "se llama Emmanuel., (Mi,m,178)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ALEGRÍA, ALEGRÍA, (Mi,m,20)(Si,7,169)", sC: "ta as", lines: [
+            { line: "ALEGRÍA, ALEGRÍA., (Si,7,165)", sC: "as"},
+            { line: "ALEGRÍA, ALEGRÍA:, (Mi,m,165)", sC: "as"},
+            { line: "HA NACIDO EL SALVADOR, (Mi,m,226)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VAMOS YA, PASTORES, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "VAMOS A BELÉN,, (Si,7,141)", sC: "as"},
+            { line: "QUE HA NACIDO UN NIÑO, ", sC: "as"},
+            { line: "SE LLAMA EMMANUEL., (Mi,m,201)", sC: "as"},
+            { line: "SE LLAMA EMMANUEL,", sC: "as"},
+            { line: "SE LLAMA EMMANUEL,, (Si,7,197)", sC: "as"},
+            { line: "VAMOS YA, PASTORES,", sC: "as"},
+            { line: "VAMOS A BELÉN., (Mi,m,140)", sC: "as"},
+            { line: "PA RA RAM PAM PAM,, (Si,7,187)", sC: "as r1"},
+            { line: "PA RA RAM PAM PAM., (Mi,m,188)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: VAMOS YA, PASTORES
 // SIGUIENTE CANTO DEBAJO
 
 
