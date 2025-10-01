@@ -14,9 +14,7 @@
         .a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,.a9,.a10,.a11,.a12, .t0 { width: fit-content; }
             
         .a1{margin-top: -45px;margin-left: 95px;}
-        .a2{margin-top: -47px;margin-left: 200px; height: 0px;
-            min-height: 16px;
-        }
+        .a2{margin-top: -47px;margin-left: 200px;}
         /*.a2{min-height: 21px;}*/
         .a3{margin-top: -45px;margin-left: 53px;}
         .a4{margin-top: -45px;margin-left: 59px;}
@@ -28,6 +26,8 @@
         .a10{margin-top: -45px;margin-left: 182px;}
         .a11{margin-top: -45px;margin-left: 273px;}
         .a12{margin-top: -45px;margin-left: 306px;}
+
+        .b1{margin-top: -20px;}
 
         .ast {top: -52px;margin-left: 167px;}
         .ast1 {top: -52px;margin-left: 163px;}

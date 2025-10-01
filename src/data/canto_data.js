@@ -13084,22 +13084,22 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
             { line: "Viens,", sC: "tc t0"},
             { line: "VIENS,", sC: "ta as a2"},
-            { line: "Fils de l'homme, ", sC: "t0"},
+            { line: "Fils de l'homme, ", sC: "t0 b1"},
             { line: "FILS DE L'HOMME, ", sC: "ta as a2"},
-            { line: "viens, ", sC: "t0"},
+            { line: "viens, ", sC: "t0 b1"},
             { line: "VIENS, ", sC: "ta as a2"},
-            { line: "Seigneur Jesus!, ", sC: "t0"},
+            { line: "Seigneur Jesus!, ", sC: "t0 b1"},
             { line: "SEIGNEUR JESUS!, ", sC: "ta as a2"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Come, ", sC: "tc t0 p1"},
-            { line: "COME, ", sC: "ta as a2 t0 p1"},
-            { line: "Son of the Man, ", sC: "t0 p1"},
-            { line: "SON OF THE MAN, ", sC: "ta as a2 t0 p1"},
-            { line: "come, ", sC: "t0 p1"},
-            { line: "COME, ", sC: "ta as a2 t0 p1"},
+            { line: "Come, ", sC: "tc t0 b1"},
+            { line: "COME, ", sC: "ta as a2 t0"},
+            { line: "Son of the Man, ", sC: "t0 b1"},
+            { line: "SON OF THE MAN, ", sC: "ta as a2 t0"},
+            { line: "come, ", sC: "t0 b1"},
+            { line: "COME, ", sC: "ta as a2 t0"},
             
-            { line: "Lord Jesus!, ", sC: ""},
+            { line: "Lord Jesus!, ", sC: "b1"},
             { line: "LORD JESUS!, ", sC: "ta as a2"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Ven,, (Mi,m,20)", sC: "tc"},
