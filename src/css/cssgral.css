@@ -173,11 +173,11 @@ display: none;}
 }
 @media(min-width: 992px){
     .main-wrapper {
+        width: 1080px;
+        padding: 0px 20px 0px 20px;
         /* background-color: var(--precat); REMOVIDO: Ahora se controla por las clases cat- */
         /*width: auto;*/        /* ESTE ES EL QUE CONTROLA EL TAMAÑO DE LA PANTALLA DEL CANTO*/
         /*width: 992px;*/
-        width: 1080px;
-        padding: 0px 20px 0px 20px;
     }
 }
 
@@ -519,11 +519,13 @@ display: none;}
     z-index: 10;
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
-
-    @media (min-width: 384px) {top: 0px;}
-    @media (min-width: 768px) {top: -2px;}
-    @media (min-width: 992px) {top: -2px;}
 }
+
+@media (min-width: 384px) {.nota-posicionada {top: 0px;}}
+@media (min-width: 768px) {.nota-posicionada {top: -2px;}}
+@media (min-width: 992px) {.nota-posicionada {top: -1px;}}
+
+
 
 .nota-posicionada:hover {
     background-color: #ffffff00;
@@ -1059,3 +1061,7 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 .container { /* Lienzo transparente para no solapar el borde*/
     background: transparent;
 }
+
+.fontstyle {font-style: italic;}
+.fontsizelarge {font-size: large;}
+.fontsizemedium {font-size: medium;}

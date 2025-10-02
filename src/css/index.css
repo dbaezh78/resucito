@@ -61,10 +61,10 @@
 
 /* ESTRUCTURA DE BIS*/
 
-.ast91, .ast92, .ast93, .ast94, .ast95, .ast96, .alabadlo, .alabadlo1, .alabadlo2, .ast, .ast1, .ast2, .ast3, .ast4, .ast5, .ast6, .ast7, .ast8
+.ast91, .ast92, .ast93, .ast94, .ast95, .ast96, .alabadlo, .alabadlo1, .alabadlo2, .ast, .ast1, .ast2, .ast3, .ast4, .ast5, .ast6, .ast7, .ast8, .astd
 {position: relative;min-height: 0px;}
 
-.ast91::before, .ast92::before, .ast93::before, .ast94::before, .ast95::before, .ast96::before, .a321::before, .a322::before, .a323::before, .a324::before, .ast::before, .ast1::before, .ast2::before, .ast3::before, .ast4::before, .ast5::before, .ast6::before, .ast7::before, .ast8::before
+.ast91::before, .ast92::before, .ast93::before, .ast94::before, .ast95::before, .ast96::before, .a321::before, .a322::before, .a323::before, .a324::before, .ast::before, .ast1::before, .ast2::before, .ast3::before, .ast4::before, .ast5::before, .ast6::before, .ast7::before, .ast8::before, .astd::before
 {
     content: "*";
     position: absolute;
@@ -75,6 +75,8 @@
     font-weight: bold;
     font-size: larger;
 }
+
+.astd::before{content: "**";}
 
 .ast91::before {    @media (min-width: 384px) {height: 40px;margin-left: 95px;margin-top: -40px;}
                     @media (min-width: 768px) {height: 40px;margin-left: 180px;margin-top: -50px;}
@@ -271,7 +273,12 @@
         padding-top: 0px;
     }          /* ↑ Arriba          ↓ */
 }
+.adb5 {padding-top: 5px;}      /* ↑ Arriba          ↓ */ 
+.adb10 {padding-top: 10px;}      /* ↑ Arriba          ↓ */ 
+.adb15 {padding-top: 15px;}      /* ↑ Arriba          ↓ */ 
 
+.mheight0 {min-height: 0px;}
+.mheight2 {min-height: 2px;}
 
 .mleft {
     margin-left: 40px;
@@ -320,3 +327,15 @@
 
 .red {
     color: red inherit}
+
+            .top1 {z-index: 999;}
+            @media (min-width: 384px) {
+                .sub {margin-top: -36px;} /* 384px */
+            }
+            @media (min-width: 768px) {
+                .sub {margin-top: -57px;} /* 768px */
+            }
+            @media (min-width: 992px) {
+                .sub {margin-top: -46px;} /* 992px */
+
+            }

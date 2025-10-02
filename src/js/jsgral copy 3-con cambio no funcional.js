@@ -287,21 +287,6 @@ const parseSingleLineData = (lineContent, sectionClass = null, textStyleClass = 
 // Función para parsear una sección del canto (lizq o lder), incluyendo bloques colapsables
 const parseCantoSectionData = (cantoSectionData) => {
     return cantoSectionData.map(entry => {
-        
-        // ⬇️ CORRECCIÓN: Detección de Imagen ⬇️
-        if (entry.img) {
-            return {
-                type: "image", // Nuevo tipo de entrada
-                imgSrc: entry.img,
-                // Usamos la propiedad 'chords' para guardar la cadena de acordes, es opcional
-                chordsRawString: entry.chords || '', 
-                sC: entry.sC || '', // Aseguramos que sC esté presente (incluso si es '')
-                tcss: entry.tcss, 
-                color: entry.color 
-            };
-        }
-        // ⬆️ FIN CORRECCIÓN ⬆️
-        
         if (entry.type === "collapsible-block") {
             // Es un bloque colapsable
             return {
@@ -311,11 +296,10 @@ const parseCantoSectionData = (cantoSectionData) => {
                 triggerLine: parseSingleLineData(entry.triggerLine, entry.sC, entry.tcss, entry.color),
                 lines: entry.lines.map(lineEntry => parseSingleLineData(lineEntry.line, lineEntry.sC, lineEntry.tcss, lineEntry.color))
             };
-        } else if (entry.line !== undefined) {
-             // Es una línea normal
+        } else {
+            // Es una línea normal
             return parseSingleLineData(entry.line, entry.sC, entry.tcss, entry.color);
         }
-        return entry; // Devolver la entrada si no es reconocida, como fallback.
     });
 };
 
@@ -382,7 +366,7 @@ const renderCantoSection = (container, parsedData) => {
 
     parsedData.forEach(entry => {
 
-        // ⬇️ CORRECCIÓN: Lógica para renderizar una Imagen con Acordes ⬇️
+                // ⬇️ NUEVO: Lógica para renderizar una Imagen con Acordes ⬇️
         if (entry.type === "image") {
             const lineaDiv = document.createElement('div');
             lineaDiv.classList.add('linea-canto'); // Contenedor de línea general
@@ -399,29 +383,26 @@ const renderCantoSection = (container, parsedData) => {
             // 1. Procesar y añadir Acordes (si existen)
             if (entry.chordsRawString) {
                 // Reutilizar el parseo de la línea para obtener el array 'notes'
-                const parsedChords = parseSingleLineData(entry.chordsRawString);
+                const dummyParsedLine = parseSingleLineData(entry.chordsRawString);
                 
-                // **Verificación de seguridad:** Asegurar que se obtuvieron notas válidas
-                if (parsedChords && parsedChords.notes && parsedChords.notes.length > 0) {
-                    
-                    parsedChords.notes.forEach(noteInfo => {
-                        const noteSpan = document.createElement('span');
-                        noteSpan.classList.add('nota-posicionada');
-                        // Reutilizar lógica de transposición y display
-                        const transposedNoteName = transposeNote(noteInfo.originalNote, currentKeyOffset);
-                        noteSpan.textContent = transposedNoteName + (noteInfo.type ? ' ' : '') + noteInfo.type;
+                // Renderizar solo los acordes (reutilizando la lógica de renderParsedLine)
+                dummyParsedLine.notes.forEach(noteInfo => {
+                    const noteSpan = document.createElement('span');
+                    noteSpan.classList.add('nota-posicionada');
+                    // Reutilizar lógica de transposición y display
+                    const transposedNoteName = transposeNote(noteInfo.originalNote, currentKeyOffset);
+                    noteSpan.textContent = transposedNoteName + (noteInfo.type ? ' ' : '') + noteInfo.type;
 
-                        noteSpan.dataset.originalNote = noteInfo.originalNote;
-                        noteSpan.dataset.conceptualPositionUnit = noteInfo.conceptualPositionUnit;
-                        
-                        // Reutilizar Event Listener
-                        noteSpan.addEventListener('click', () => {
-                            openChordSelectionModal(transposedNoteName);
-                        });
-                        
-                        lineaDiv.appendChild(noteSpan); // Añadir el acorde a la línea
+                    noteSpan.dataset.originalNote = noteInfo.originalNote;
+                    noteSpan.dataset.conceptualPositionUnit = noteInfo.conceptualPositionUnit;
+                    
+                    // Reutilizar Event Listener
+                    noteSpan.addEventListener('click', () => {
+                        openChordSelectionModal(transposedNoteName);
                     });
-                }
+                    
+                    lineaDiv.appendChild(noteSpan); // Añadir el acorde a la línea
+                });
             }
 
             // 2. Crear y añadir el elemento de imagen <img>
@@ -437,7 +418,7 @@ const renderCantoSection = (container, parsedData) => {
             // Llama a adjustNotePositions al final de renderCanto, lo cual se aplicará a los nuevos acordes
             return; // Detener el procesamiento para esta entrada (es una imagen)
         }
-        // ⬆️ FIN CORRECCIÓN ⬆️
+        // ⬆️ FIN NUEVO ⬆️
 
 
         if (entry.type === "collapsible-block") {
@@ -794,7 +775,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     
     // actualización de la nota del canto en pie de pagina para agregar URL
 
-/* if (nCanElement) nCanElement.textContent = cantoSpecificData.nCan;
+/*    if (nCanElement) nCanElement.textContent = cantoSpecificData.nCan;
     else console.error("Error: Elemento con ID #nCan no encontrado.");*/
 
 if (nCanElement) {
@@ -814,9 +795,9 @@ if (nCanElement) {
         }
     } else {
         console.error("Error: Elemento con ID #nCan no encontrado.");
-    }
+    }`
     
-    // actualización de la nota del canto en pie de pagina para agregar URL
+    // actualización de la nota del canto en pie de pagina para agregar URL`
     
     // Actualizar el título de la pestaña del navegador (la etiqueta <title>)
     const pageTitleElement = document.getElementById('tt');

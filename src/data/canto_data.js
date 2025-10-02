@@ -192,7 +192,7 @@ const allCantosData = [
 
         lizq: [
             { line: "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,189)", sC: "as tc" },
-            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "b2 as" },
+            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "r1 as" },
 
             { line: "Como los ojos de los siervos,  (Re,m,15)", sC: "tc mt" },
             { line: "miran a las manos de sus señores,  (La,7,287)"},
@@ -219,7 +219,7 @@ const allCantosData = [
 
             {   type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
                 triggerLine: "A TI LEVANTO MIS OJOS (Re,m,16)(La,7,189)", sC: "mt as ta", lines: [
-                    { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "as" },
+                    { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "as r1" },
                 ]},
         ],
         lder: [
@@ -13393,7 +13393,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         category: ["Precatecumenado","Nuevo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
-        nCan: "",
+        nCan: "* La asamblea puede dividirse para cantar este comienzo en polifonía a tres voces",
         nCanURL: "",
         dbno: "173",
         notes: "",
@@ -13409,7 +13409,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=yavienemidios",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "VOSOTROS   SOIS LA LUZ DEL MUNDO,, (La,m,20)(Mi,,83)(La,m,317)", sC: "ta as ast"},
+            { line: "VOSOTROS   SOIS LA LUZ DEL MUNDO,, (La,m,20)(Mi,,83)(La,m,317)", sC: "ta as"},
+            { line: "", sC: "ast"},
             { line: "SOIS LA LUZ, LA LUZ DEL MUNDO,, (Re,m,22)(Mi,,100)(Re,m,150)(Mi,,272)", sC: "as"},
             { line: "LA LUZ DEL MUNDO., (Re,m,22)(Mi,,142)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -13429,12 +13430,228 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y glorifiquen a vuestro Padre que está en los cielos., (Fa,,10)(Mi,,452)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "VOSOTROS SOIS LA LUZ DEL MUNDO..., (La,m,20)(Mi,,83)(La,m,317)", sC: "ta as", lines: [
+       triggerLine: "VOSOTROS SOIS LA LUZ DEL MUNDO (La,m,20)(Mi,,83)(La,m,317)", sC: "ta as", lines: [
             { line: "SOIS LA LUZ, LA LUZ DEL MUNDO,, (Re,m,22)(Mi,,100)(Re,m,150)(Mi,,272)", sC: "as"},
             { line: "LA LUZ DEL MUNDO., (Re,m,22)(Mi,,142)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: VOSOTROS SOIS LA LUZ DEL MUNDO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           YA VIENE MI DIOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "yavienemidios",
+        tt: "Ya Viene Mi Dios",
+        title: "Ya Viene Mi Dios",
+        subtitle: "Villancico (Kiko Argüello)",
+        category: ["Precatecumenado","Adviento","Navidad","Niños"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "",
+        nCanURL: "",
+        dbno: "174",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/yavienemidios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=vosotrossoislaluzdelmundo",
+        sig: "/src/index.html?canto=yahvehtueresmidios",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY,, (Mi,m,20)(Si,7,325)", sC: "ta as"},
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI REY., (Mi,m,241)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Es un pobre obrero nacido en Belén,, (Mi,m,20)(Si,7,323)", sC: "tc"},
+            { line: "su madre, María, su padre, José., (Mi,m,293)", sC: ""},
+            { line: "Ya viene, ya viene mi Salvador,, (Si,7,277)", sC: ""},
+            { line: "ya viene, ya viene mi Rey., (Mi,m,222)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "YA VIENE MI DIOS (Mi,m,20)", sC: "ta as top1", lines: [
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,20)(Si,7,325)", sC: "as sub"},
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI REY., (Mi,m,241)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Él tiene unos ojos que hablan de amor,, (Mi,m,20)(Si,7,355)", sC: "tc"},
+            { line: "que hablan del Padre, que hablan de Dios., (Mi,m,382)", sC: ""},
+            { line: "Ya viene, ya viene mi Salvador,, (Si,7,277)", sC: ""},
+            { line: "ya viene, ya viene mi Rey., (Mi,m,222)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "YA VIENE MI DIOS (Mi,m,20)", sC: "ta as top1", lines: [
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,20)(Si,7,325)", sC: "as sub"},
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI REY., (Mi,m,241)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Murió en un madero lleno de dolor,, (Mi,m,20)(Si,7,318)", sC: "tc"},
+            { line: "murió por los hombres muy lleno de amor., (Mi,m,391)", sC: ""},
+            { line: "Ya viene, ya viene mi Salvador,, (Si,7,277)", sC: ""},
+            { line: "ya viene, ya viene mi Rey., (Mi,m,221)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "YA VIENE MI DIOS (Mi,m,20)", sC: "ta as top1", lines: [
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,20)(Si,7,325)", sC: "as sub"},
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI REY., (Mi,m,241)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ha entrado en la muerte, ha entrado mi Dios,, (Mi,m,20)(Si,7,413)", sC: "tc"},
+            { line: "ya viene, ya sube, ya llega el Señor., (Mi,m,319)", sC: ""},
+            { line: "Que canten, que griten: ¡Resucitó!, (Si,7,310)", sC: ""},
+            { line: "Mi Dios ha vencido, salió por amor., (Mi,m,315)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "YA VIENE MI DIOS (Mi,m,20)", sC: "ta as top1", lines: [
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,20)(Si,7,325)", sC: "as sub"},
+            { line: "YA VIENE MI DIOS, YA VIENE MI REY., (Mi,m,324)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI SALVADOR,, (Si,7,302)", sC: "as"},
+            { line: "YA VIENE, YA VIENE MI REY., (Mi,m,241)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: YA VIENE MI DIOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           YAHVEH, TÚ ERES MI DIOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "yahvehtueresmidios",
+        tt: "Yahveh, Tú Eres Mi Dios",
+        title: "Yahveh, Tú Eres Mi Dios",
+        subtitle: "Isaías 25,1-8",
+        category: ["Precatecumenado","Cuaresma","Penitencial","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "175",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/yahvehtueresmidios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=yavienemidios",
+        sig: "/src/index.html?canto=yoteamosenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "YAHVEH, TÚ ERES MI DIOS,, (La,m,20)(Mi,,231)", sC: "tc as"},
+            { line: "YO TE ENSALZARÉ., (La,m,169)", sC: "as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y alabaré tu nombre,, (Fa,,140)", sC: "tc"},
+            { line: "alabaré tu nombre,, ", sC: ""},
+            { line: "alabaré tu nombre., (Mi,,119)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "YAHVEH, TÚ ERES MI DIOS, (La,m,20)(Mi,,231)", sC: "ta as", lines: [
+            { line: "YO TE ENSALZARÉ., (La,m,169)", sC: "as r1"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Destruirás la muerte para siempre., (Fa,,163)", sC: ""},
+            { line: "Y enjugarás las lágrimas, (Sol,,161)", sC: ""},
+            { line: "de todos los rostros,, (Fa,,133)", sC: ""},
+            { line: "de todos los rostros., (Mi,,135)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "YAHVEH, TÚ ERES MI DIOS, (La,m,20)(Mi,,231)", sC: "ta as", lines: [
+            { line: "YO TE ENSALZARÉ., (La,m,169)", sC: "as r1"},  ]},
+    ], lder: [
+            { line: "Ya se acercan los pasos de los pobres,, (Fa,,82)", sC: "tc"},
+            { line: "los pies de los humildes,, (Sol,,186)", sC: ""},
+            { line: "los pies de los humildes,, (Fa,,183)", sC: ""},
+            { line: "el resto de Jacob., (Mi,,143)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "YAHVEH, TÚ ERES MI DIOS, (La,m,20)(Mi,,231)", sC: "ta as", lines: [
+            { line: "YO TE ENSALZARÉ., (La,m,169)", sC: "as r1"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: YAHVEH, TÚ ERES MI DIOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           YO TE AMO, SEÑOR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "yoteamosenor",
+        tt: "Yo Te Amo, Señor",
+        title: "Yo Te Amo, Señor",
+        subtitle: "Salmo 18 (17)",
+        category: ["Precatecumenado","Entrada","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "176",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/yoteamosenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=yahvehtueresmidios",
+        sig: "/src/index.html?canto=yovengoareunir",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Yo te amo, Señor, tú eres mi roca,, (Re,,11)(Fa#,,150)(Si,m,293)", sC: "tc"},
+            { line: "tú eres mi liberador, tú eres mi Dios., (Sol,,14)(Fa#,,327)", sC: ""},
+            { line: "Yo te amo, yo te amo, Señor., (Sol,,63)(Fa#,,255)", sC: ""},
+            { line: "", sC: "mheight0"}, // Espacio Generado para separar contenido
+            { line: "[Violin *]", sC: "fontstyle", color: "red"}, // Espacio Generado para separar contenido
+            { line: "", sC: "mheight2"}, // Espacio Generado para separar contenido
+            { line: "LAS OLAS DE LA MUERTE ME ENVOLVÍAN,, (Re,,11)(Si,m,369)", sC: "ta as"},
+            { line: "ME ESPANTABAN LAS TROMBAS DE BELIAL,, (Sol,,117)(Re,,399)", sC: "as"},
+            { line: "ME RODEABAN LOS LAZOS DEL SEOL,, (La,,96)(Sol,,338)", sC: "as"},
+            { line: "HABÍA CAÍDO EN LOS CEPOS DE LA MUERTE., (Re,,379)", sC: "as"},
+            { line: "", sC: "mheight0"}, // Espacio Generado para separar contenido
+            { line: "[Violin **]", sC: "fontstyle", color: "red"}, // Espacio Generado para separar contenido
+            { line: "", sC: "mheight2"}, // Espacio Generado para separar contenido
+            { line: "Clamé al Señor en mi angustia,, (Fa#,,15)", sC: "tc"},
+            { line: "a mi Dios, a mi Dios invoqué,, (Si,m,263)", sC: ""},
+            { line: "y escuchó mi voz desde su templo,, (La,,11)(Sol,,274)", sC: ""},
+            { line: "llegó mi llamada a sus oídos., (Fa#,,234)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y la tierra fue sacudida y vaciló,, (Sol,,58)(Fa#,,290)", sC: ""},
+            { line: "retemblaron las bases de los montes., (Sol,,91)(Fa#,,304)", sC: ""},
+            { line: "Porque inclinó los cielos y bajó., (Sol,,14)(Fa#,,284)", sC: "melisma"},
+    ], lder: [
+            { line: "Y el fondo del mar quedó a la vista,, (La,,10)(Fa#,,299)", sC: ""},
+            { line: "los cimientos del orbe aparecieron., (La,,79)(Fa#,,294)", sC: ""},
+            { line: "Extendió su mano para asirme,, (Sol,,77)", sC: ""},
+            { line: "me sacó de lo profundo de las aguas., (Fa#,,306)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "YO TE AMO, SEÑOR (Re,,10)(Fa#,,150)", sC: "ta as top1", lines: [
+            { line: "YO TE AMO, SEÑOR, TÚ ERES MI ROCA, (Re,,10)(Fa#,,150)(Si,m,293)", sC: "as sub"},
+            { line: "TÚ ERES MI LIBERADOR, TÚ ERES MI DIOS., (Sol,,14)(Fa#,,327)", sC: "as"},
+            { line: "YO TE AMO, YO TE AMO, SEÑOR., (Sol,,70)(Fa#,,276)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "LAS OLAS DE LA MUERTE (Re,,11)", sC: "ta as top1", lines: [
+            { line: "LAS OLAS DE LA MUERTE ME ENVOLVÍAN, (Re,,11)(Si,m,369)", sC: "as sub"},
+            { line: "ME ESPANTABAN LAS TROMBAS DE BELIAL,, (Sol,,117)(Re,,399)", sC: "as"},
+            { line: "ME RODEABAN LOS LAZOS DEL SEOL,, (La,,96)(Sol,,338)", sC: "as"},
+            { line: "HABÍA CAÍDO EN LOS CEPOS DE LA MUERTE., (Re,,379)", sC: "as"},     ]},
+            { line: "", sC: "adb"}, // Espacio Generado para separar contenido
+            { img: "/src/img/yoteamo1.png",chords: "(Si,m,93)(La,,348)",sC: "img ast" },
+            { img: "/src/img/yoteamo2.png",chords: "(Si,m,71)(La,,281)(Si,m,380)",sC: "img" },
+            { img: "/src/img/yoteamo3.png",chords: "(Sol,,65)(Fa#,,173)(Sol,,236)(Fa#,,430)",sC: "img" },
+            { line: "", sC: "adb"}, // Espacio Generado para separar contenido
+            { img: "/src/img/yoteamo4.png",chords: "(Si,m,88)(Sol,,213)(La,,382)",sC: "img astd" },
+            { img: "/src/img/yoteamo5.png",chords: "(Sol,,67)(Fa#,,188)(Sol,,301)(Fa#,,425)",sC: "img" },
+]}, // ULTIMA LINEA DEL CANTO: YO TE AMO, SEÑOR
 // SIGUIENTE CANTO DEBAJO
 
 

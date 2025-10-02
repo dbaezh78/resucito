@@ -15,3 +15,9 @@
             .r1::before {height: 173px;margin-left: 337px;margin-top: -6%;}
             .sub {margin-top: -46px;}
         }
+
+
+        .top1 {z-index: 9999;}
+        .sub {margin-top: -36px;} /* 384px */
+        .sub {margin-top: -57px;} /* 768px */
+        .sub {margin-top: -46px;} /* 992px */
