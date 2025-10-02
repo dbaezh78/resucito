@@ -13268,7 +13268,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         id: "virgendelamaravilla",
         tt: "Virgen De La Maravilla",
         title: "Virgen De La Maravilla",
-        subtitle: "(Dante Allghlerl)",
+        subtitle: "(Dante Allghlerl)*",
         category: ["Precatecumenado","Vírgen María","Adviento","Navidad"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
@@ -13292,7 +13292,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "MADRE DE JESÚS, (Mi,m,27)", sC: "as r1"},
             { line: "Y MADRE NUESTRA., (Si,m,128)", sC: "as"},
             { line: "VIRGEN DE LA MARAVILLA., (Sol,,14)(Fa#,,214)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "", sC: "ast"}, 
+            { line: "", sC: "ast1"}, 
             { line: "María, tú la creatura, (Si,m,20)(Mi,m,81)(Si,m,166)", sC: "tc"},
             { line: "que has dado a luz al Creador,, (Mi,m,98)(Si,m,272)", sC: ""},
             { line: "tú eres la sierva, (Sol,,37)", sC: ""},
