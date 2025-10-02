@@ -13719,42 +13719,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: YO VENGO A REUNIR
 // SIGUIENTE CANTO DEBAJO
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // LETRA Z
 /*
 ╔════════════════════════════════╗
@@ -13859,11 +13823,58 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: ZAQUEO
 // SIGUIENTE CANTO DEBAJO
 
-
-
-
-
 // CANTOS LITURGICOS
+
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           ACLAMACIONES A LA ORACIÓN DE LOS FIELES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "aclamacionesalaoraciondelosfieles",
+        tt: "Aclamaciones A La Oración De Los Fieles",
+        title: "Aclamaciones A La Oración De Los Fieles",
+        subtitle: "Respuestas a las oraciones de los fieles, Modelo I, II, III, IV",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "179",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/aclamacionesalaoraciondelosfieles.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=zaqueo",
+        sig: "/src/ai.html",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "CANTOS LIRÚSTICOS ", sC: "as cl", color: "#544d47"},
+            { line: "Modelo I ", sC: "as left", color: "rgb(196 76 75)"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Te lo pedimos Señor., (Sol,,15)(Re,,193)(Sol,,236)", sC: "tc"},
+            { line: "TE LO PEDIMOS SEÑOR., (La,m,15)(Mi,m,194)(Si,7,240)(Mi,m,287)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Modelo II ", sC: "as left", color: "rgb(196 76 75)"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ESCÚCHANOS, OH SEÑOR., (Mi,m,15)(Re,,154)(Mi,m,229)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Modelo III ", sC: "as left", color: "rgb(196 76 75)"},
+            { line: "Misma música Modelo I", sC: "mmmi", color: "gray"},
+            { line: "ACUÉRDATE DE NOSOTROS,, (Sol,,15)(Re,,209)(Sol,,240)", sC: "ta as"},
+            { line: "AHORA QUE ESTÁS EN TU REINO., (La m,,15)(Mi m,,262)(Si 7,,305)(Mi m,,345)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Modelo IV ", sC: "as left", color: "rgb(196 76 75)"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "OYE, PADRE, EL GRITO DE TU PUEBLO, (Mi,m,15)(La,m,70)(Si,7,139)(Mi,m,310)", sC: "ta as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ACLAMACIONES A LA ORACIÓN DE LOS FIELES
+// SIGUIENTE CANTO DEBAJO
 
 
 
