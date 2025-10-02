@@ -76,3 +76,31 @@
 }
 
         */
+
+
+
+
+
+
+
+
+
+
+
+
+                @media (min-width: 384px) {
+            .container {margin-left: 7%;}
+            .r1::before {height: 129px;margin-left: 238px;margin-top: -11%;}
+            .canto-content-wrapper.single-column-mode #canto-left-container {padding-left: 0%;padding-right: 0%;}
+            .mujeres::before {content: "M:";}.hombress::before {content: "H:";}
+        }
+        @media (min-width: 768px) {
+            .container {margin-left: 0%;}
+            .r1::before {height: 109px;margin-left: 428px;margin-top: -9%;}
+            .mujeres::before {content: "M:";}.hombress::before {content: "H:";}
+        }
+        @media (min-width: 992px) {
+            .container {margin-left: 1%;}
+            .r1::before {height: 95px;margin-left: 333px;margin-top: -7%;}
+            .hombres::before, .mujeres::before {font-size: 1.4rem;margin-left: -78px;margin-top: -7px;}
+        }

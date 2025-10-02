@@ -1,6 +1,8 @@
-// Info del archivo en dbaezh.docx
-// resucito\src\data\Explicacion Cantos.docx
-/*
+/* Info del archivo en dbaezh.docx
+resucito\src\data\Explicacion Cantos.docx
+
+Generar espacio: \u200B   , lo que est'a entre la coma es el espacio que se generó
+
 ╔═══════════════════════════════════════════════════════════╗
 ║                A LA VICTIMA PASCUAL                       ║
 ╚═══════════════════════════════════════════════════════════╝  */
@@ -185,14 +187,14 @@ const allCantosData = [
         sig: "/src/index.html?canto=atisenorenmiclamorimploro",
         nCan: "",
         nCanURL: "",
-        dbno: "2",
+        dbno: "3",
         notes: "Este canto se usa en la liturgia de Pascua.",
         mant: "No",
         audioSrc: "https://audio.resucito.do/atilevantomisojos.mp3",
 
         lizq: [
             { line: "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,189)", sC: "as tc" },
-            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "r1 as" },
+            { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "b2 as" },
 
             { line: "Como los ojos de los siervos,  (Re,m,15)", sC: "tc mt" },
             { line: "miran a las manos de sus señores,  (La,7,287)"},
@@ -205,21 +207,21 @@ const allCantosData = [
             { line: "esperando que tenga piedad, (Si♭,7,59)(La,7,255)", sC: "mt"},
             { line: "esperando que tenga piedad. (Si♭,7,59)(La,7,255)"},
 
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Re,m,86)(La,7,315)", sC:"mujeres as mt"},
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Si♭,,86)(La,7,315)", sC:"hombres as"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Re,m,86)(La,7,315)", sC:"mujeres as mt aleft"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR! (Si♭,,86)(La,7,315)", sC:"hombres as aleft"},
 
-            { line: "¡QUE DEMASIADO SE HAN BURLADO DE NOSOTROS (Re,m,130)(La,7,435)", sC:"mujeres as mt"},
-            { line: "QUE NUESTRA ALMA ESTÁ SACIADA DE DESPRECIOS! (Si♭,7,150)(La,7,456)", sC:"hombres as"},
+            { line: "¡QUE DEMASIADO SE HAN BURLADO DE NOSOTROS (Re,m,130)(La,7,435)", sC:"mujeres as mt aleft"},
+            { line: "QUE NUESTRA ALMA ESTÁ SACIADA DE DESPRECIOS! (Si♭,7,150)(La,7,456)", sC:"hombres as aleft"},
 
-            { line: "¡DE LAS BURLAS DE LOS SATISFECHOS,(Re,m,100)(La,7,313)", sC:"mujeres as mt"},
-            { line: "DEL DESPRECIO DE LOS SOBERBIOS!(Si♭,7,119)(La,7,282)", sC:"hombres as"},
+            { line: "¡DE LAS BURLAS DE LOS SATISFECHOS,(Re,m,100)(La,7,313)", sC:"mujeres as mt aleft"},
+            { line: "DEL DESPRECIO DE LOS SOBERBIOS!(Si♭,7,119)(La,7,282)", sC:"hombres as aleft"},
 
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,57)(La,7,286)", sC:"mujeres as mt ndb"},
-            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Si♭,7,57)(La,7,286)", sC:"hombres as"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Re,m,57)(La,7,286)", sC:"mujeres as mt ndb aleft"},
+            { line: "¡PIEDAD DE NOSOTROS, SEÑOR!, (Si♭,7,57)(La,7,286)", sC:"hombres as aleft"},
 
             {   type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
                 triggerLine: "A TI LEVANTO MIS OJOS (Re,m,16)(La,7,189)", sC: "mt as ta", lines: [
-                    { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "as r1" },
+                    { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "as b2" },
                 ]},
         ],
         lder: [
@@ -754,7 +756,9 @@ const allCantosData = [
             { line: "alabadlo, todos sus ejércitos., (Fa#,m,213)", sC: "tc"},
             { line: "¡ALABADLO!, ", sC: "as ta"},
 
-            { line: "Alabadlo, sol y luna;", sC: "tc ptop0 alabadlo2"},
+            { line: "", sC: "tc1"},
+
+            { line: "Alabadlo, sol y luna;", sC: "ptop0 alabadlo"},
             { line: "alabadlo, estrellas lucientes. ", sC: "ptop0 alabadlo"},
             { line: "Alabadlo, espacios celestes, ", sC: "ptop0 alabadlo"},
             { line: "y aguas que cuelgan en el cielo. ", sC: "sdb ptop0 alabadlo"},
@@ -784,7 +788,7 @@ const allCantosData = [
             { line: "alaben el nombre del Señor, ", sC: "ptop0 alabadlo"},
             { line: "el único nombre sublime. ", sC: "ptop0 sdb alabadlo"},
             { line: "Su majestad,", sC: "ptop1"},
-            { line: "sobre el cielo y la tierra; ", sC: "ptop0 alabadlo1 mleft"},
+            { line: "\u200B     sobre el cielo y la tierra; ", sC: "ptop0 alabadlo"},
             { line: "Él da fuerza y vigor a su pueblo. ", sC: "alabadlo sdb"},
 
             { line: "Alabanza de todos sus fieles,", sC: "ptop0 alabadlo"},
@@ -996,7 +1000,7 @@ const allCantosData = [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "ALELÚ, ALELÚ, ALE E LU U YA., (La,,10)(Si♭,,178)(La,,272)", sC: "niño as"},
-            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)", sC: "as b14"},
+            { line: "ALELÚ, ALELÚ, ALE E LU U YA., (Si♭,,180)(La,,271)", sC: "as r1"},
             
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
@@ -13652,6 +13656,67 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { img: "/src/img/yoteamo4.png",chords: "(Si,m,88)(Sol,,213)(La,,382)",sC: "img astd" },
             { img: "/src/img/yoteamo5.png",chords: "(Sol,,67)(Fa#,,188)(Sol,,301)(Fa#,,425)",sC: "img" },
 ]}, // ULTIMA LINEA DEL CANTO: YO TE AMO, SEÑOR
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           YO VENGO A REUNIR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "yovengoareunir",
+        tt: "Yo Vengo A Reunir",
+        title: "Yo Vengo A Reunir",
+        subtitle: "Isaías 66,18-21",
+        category: ["Precatecumenado","Entrada","Final","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "177",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/yovengoareunir.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=yoteamosenor",
+        sig: "/src/index.html?canto=zaqueo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Yo vengo a reunir,, (Mi,,10)", sC: "tc"},
+            { line: "YO VENGO A REUNIR,, ", sC: "ta as"},
+            { line: "a todas las naciones,, (La,,10)(Mi,,155)", sC: ""},
+            { line: "A TODAS LAS NACIONES., (La,,10)(Mi,,186)", sC: "ta as"},
+            { line: "Vendrán y verán mi gloria,, (Fa#,,60)(Si,7,212)", sC: ""},
+            { line: "VENDRÁN Y VERÁN MI GLORIA., (La,,74)(Mi,,252)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "ta as"},
+            { line: "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y pondré en ellos una señal, (Do#,,14)", sC: ""},
+            { line: "y los enviaré a las naciones más lejanas,, (La,,20)(Mi,,250)", sC: ""},
+            { line: "para que anuncien mi gloria,, (Si,7,120)(Mi,,239)", sC: ""},
+            { line: "para que anuncien mi gloria., (Si,7,120)(Mi,,239)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "GLORIA, GLORIA, GLORIA, (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "ta as", lines: [
+            { line: "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Y traerán a vuestros hermanos, (Sol#,,16)(La,,259)", sC: "tc"},
+            { line: "de entre todas las naciones,, (Mi,,222)", sC: ""},
+            { line: "como oblación al Señor,, (Si,7,120)(Mi,,212)", sC: ""},
+            { line: "como oblación al Señor., (Si,7,120)(Mi,,212)", sC: ""},
+            { line: "Y de entre ellos tomaré, (Do#,m,24)(Sol#,,214)", sC: ""},
+            { line: "sacerdotes para mí,, (Si,,10)(Sol#,,179)", sC: ""},
+            { line: "sacerdotes que anunciarán mi gloria,, (La,,66)(Mi,,320)", sC: ""},
+            { line: "sacerdotes que anunciarán mi gloria., (Si,7,70)(Mi,,320)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "GLORIA, GLORIA, GLORIA, (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "ta as", lines: [
+            { line: "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: YO VENGO A REUNIR
 // SIGUIENTE CANTO DEBAJO
 
 
