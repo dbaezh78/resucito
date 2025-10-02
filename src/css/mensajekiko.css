@@ -22,6 +22,7 @@
 
 .border {
     border: 1px solid goldenrod;
+    padding: 5px;
 }
 
 .marquee-text {

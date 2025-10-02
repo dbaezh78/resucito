@@ -61,8 +61,16 @@ input {
     font-weight: bold;
     letter-spacing: -4.5px;
     margin-bottom: -30px;
-    margin-top: -20px;
 }
+    @media(min-width: 384px){
+        .tResucito {margin-top: 1%;}
+    }
+    @media(min-width: 768px){
+        .tResucito {margin-top: 0%;}
+    }
+    @media(min-width: 992px){
+        .tResucito {margin-top: 1%;}
+    }
 
 .introData{
     font-family: Neocat;
