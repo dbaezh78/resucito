@@ -13328,6 +13328,59 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "VIRGEN DE LA MARAVILLA., (Sol,,14)(Fa#,,214)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: VIRGEN DE LA MARAVILLA
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           VIVID ALEGRES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "vividalegres",
+        tt: "Vivid Alegres",
+        title: "Vivid Alegres",
+        subtitle: "Filipenses 4,4ss",
+        category: ["Precatecumenado","Adviento","Navidad","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "172",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/vividalegres.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=virgendelamaravilla",
+        sig: "/src/index.html?canto=vosotrossoislaluzdelmundo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "VIVID ALEGRES, EL SEÑOR ESTÁ CERCA,, (La,m,20)(Mi,,335)", sC: "ta as"},
+            { line: "VIVID ALEGRES, EL SEÑOR ESTÁ CERCA., (La,m,336)", sC: "as"},
+            { line: "VIVID ALEGRES, EL SEÑOR VIENE YA,, (La,7,32)(Re,m,341)", sC: "as"},
+            { line: "Y NOS SALVARÁ,, (La,m,145)", sC: "as"},
+            { line: "Y NOS SALVARÁ,, (Mi,,147)", sC: "as"},
+            { line: "Y NOS SALVARÁ., (La,m,147)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Valor, no temáis, (La,,10)(La,7,130)", sC: "tc"},
+            { line: "que el Señor viene ya,, (Re,m,198)", sC: ""},
+            { line: "y nos salvará,, (La,m,117)", sC: ""},
+            { line: "y nos salvará,, (Mi,,122)", sC: ""},
+            { line: "y nos salvará., (La,m,115)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "VIVID ALEGRES (La,m,20)", sC: "ta as top1", lines: [
+            { line: "VIVID ALEGRES, EL SEÑOR ESTÁ CERCA., (La,m,20)(Mi,,335)", sC: "as sub"},
+            { line: "VIVID ALEGRES, EL SEÑOR ESTÁ CERCA., (La,m,336)", sC: "as"},
+            { line: "VIVID ALEGRES, EL SEÑOR VIENE YA,, (La,7,32)(Re,m,341)", sC: "as"},
+            { line: "Y NOS SALVARÁ,, (La,m,147)", sC: "as"},
+            { line: "Y NOS SALVARÁ,, (Mi,,147)", sC: "as"},
+            { line: "Y NOS SALVARÁ., (La,m,147)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: VIVID ALEGRES
+// SIGUIENTE CANTO DEBAJO
 
 
 
