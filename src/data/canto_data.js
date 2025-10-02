@@ -13260,6 +13260,73 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "VESTIDO Y CEÑIDO DE PODER., (Mi,m,267)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: VIENE EL SEÑOR
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           VIRGEN DE LA MARAVILLA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "virgendelamaravilla",
+        tt: "Virgen De La Maravilla",
+        title: "Virgen De La Maravilla",
+        subtitle: "(Dante Allghlerl)",
+        category: ["Precatecumenado","Vírgen María","Adviento","Navidad"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "3",
+        nCan: "* Cf. La Divina Comedia, «El Paraíso», canto XXXIII. ** La asamblea puede dividirse para hacer la segunda voz más aguda.",
+        nCanURL: "https://docs.resucito.do/CantoXXXIII.pdf",
+        dbno: "171",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/virgendelamaravilla.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=vieneelsenor",
+        sig: "/src/index.html?canto=vividalegres",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "MARÍA, HIJA DE TU HIJO,, (Si,m,20)(Mi,m,93)(Si,m,203)", sC: "tc as"},
+            { line: "MADRE DE JESÚS, (Mi,m,27)", sC: "as r1"},
+            { line: "Y MADRE NUESTRA., (Si,m,128)", sC: "as"},
+            { line: "VIRGEN DE LA MARAVILLA., (Sol,,14)(Fa#,,214)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "María, tú la creatura, (Si,m,20)(Mi,m,81)(Si,m,166)", sC: "tc"},
+            { line: "que has dado a luz al Creador,, (Mi,m,98)(Si,m,272)", sC: ""},
+            { line: "tú eres la sierva, (Sol,,37)", sC: ""},
+            { line: "que ha concebido al Señor., (Fa#,,15)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+        triggerLine: "MARÍA, HIJA DE TU HIJO, (Si,m,20)(Mi,m,93)(Si,m,203)", sC: "ta as", lines: [
+            { line: "MADRE DE JESÚS, (Mi,m,27)", sC: "as r1"},
+            { line: "Y MADRE NUESTRA., (Si,m,128)", sC: "as"},
+            { line: "VIRGEN DE LA MARAVILLA., (Sol,,14)(Fa#,,214)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "María, hecha de tierra,, (Si,m,20)(Mi,m,86)(Si,m,180)", sC: "tc"},
+            { line: "tú eres la gloriosa,, (Mi,m,20)(Si,m,142)", sC: ""},
+            { line: "gloriosa imagen del cielo., (Sol,,46)(Fa#,,216)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+        triggerLine: "MARÍA, HIJA DE TU HIJO, (Si,m,20)(Mi,m,93)(Si,m,203)", sC: "ta as", lines: [
+            { line: "MADRE DE JESÚS, (Mi,m,27)", sC: "as r1"},
+            { line: "Y MADRE NUESTRA., (Si,m,128)", sC: "as"},
+            { line: "VIRGEN DE LA MARAVILLA., (Sol,,14)(Fa#,,214)", sC: "as"},  ]},
+    ], lder: [
+            { line: "María, siendo la pequeña, (Si,m,20)(Mi,m,82)(Si,m,212)", sC: "tc"},
+            { line: "tú eres la más grande,, (Mi,m,20)(Si,m,169)", sC: ""},
+            { line: "siendo Hija de Dios eres su Madre,, (Sol,,19)(Fa#,,286)", sC: ""},
+            { line: "siendo Hija de Dios eres su Madre., (Mi,m,20)(Fa#,,286)", sC: ""},
+            { line: "Virgen de la maravilla., (Sol,,14)(Fa#,,178)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+        triggerLine: "MARÍA, HIJA DE TU HIJO, (Si,m,20)(Mi,m,93)(Si,m,203)", sC: "ta as", lines: [
+            { line: "MADRE DE JESÚS, (Mi,m,27)", sC: "as r1"},
+            { line: "Y MADRE NUESTRA., (Si,m,128)", sC: "as"},
+            { line: "VIRGEN DE LA MARAVILLA., (Sol,,14)(Fa#,,214)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: VIRGEN DE LA MARAVILLA
+// SIGUIENTE CANTO DEBAJO
 
 
 
