@@ -6,6 +6,7 @@
     <title>Calendario Litúrgico</title>
     <link rel="icon"       href="img/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/ai.css">
+    <link rel="stylesheet" href="/src/css/search.css">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 
 </head>
@@ -22,10 +23,16 @@
             <div id="tiempo-actual"></div>
         </div>
 
+        
         <a class="cristo" href="/src/index.html?canto=aleluyapascual">
-        <img class="cristo" src="/src/img/cristo.png" alt="Cristo Resucitado" oncontextmenu="return false;" ondragstart="return false";>
-
+            <img class="cristo" src="/src/img/cristo.png" alt="Cristo Resucitado" oncontextmenu="return false;" ondragstart="return false";>
+            
         </a>
+        <p></p>
+        <div class="buscador-cantos">
+                <input type="search" id="DavidLoBusca" placeholder="Buscar..." autocomplete="off" class="toolbar-item search-input" >
+                <div id="resultadosBusqueda" class="resultados-busqueda"></div>
+            </div>
 
         <h1>Seleccione el Año o Ciclo Litúrgico</h1>
         <div class="ciclo-botones">
@@ -48,5 +55,7 @@
 
     <script src="js/tiempos.js"></script>
     <script src="/src/js/ai.js"></script>
+    <script src="/src/data/find.js"></script>
+
 </body>
 </html>
