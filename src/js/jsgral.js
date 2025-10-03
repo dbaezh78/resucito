@@ -19,7 +19,8 @@ const positionConfigs = {
     'mobile': { // Para anchos de pantalla entre 384px y 767px
         minWidth: 384,
         maxWidth: 767,
-        factor: 0.734, // Factor por defecto, ajustar según necesidad
+        //factor: 0.734, // Factor por defecto, ajustar según necesidad
+        factor: 0.722, // Factor por defecto, ajustar según necesidad
     },
     'tablet': { // Para anchos de pantalla entre 768px y 991px
         minWidth: 768,
@@ -360,7 +361,12 @@ if (lineaParsed.color) {
         noteSpan.classList.add('nota-posicionada');
 
         const transposedNoteName = transposeNote(noteInfo.originalNote, currentKeyOffset);
-        // Deparación de la Nota o Acorde del Estado de la nota o el acorde
+        /* Deparación de la Nota o Acorde del Estado de la nota o el acorde, 
+        Este corresponde a 1/5 espacio \u2009
+        Este es un espacio mas delgado \u200a
+        El espacio que le dejado es el del teclado, que se parece mas al del libro de canto
+
+        */
         noteSpan.textContent = transposedNoteName + (noteInfo.type ? ' ' : '') + noteInfo.type;
 
         noteSpan.dataset.originalNote = noteInfo.originalNote;

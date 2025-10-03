@@ -1,5 +1,7 @@
 /* Info del archivo en dbaezh.docx
 resucito\src\data\Explicacion Cantos.docx
+Posible fuente para acorde: sans-serif, 'system-ui', cursive, sans-serif
+font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
 
 Generar espacio: \u200B   , lo que est'a entre la coma es el espacio que se generó
 
@@ -13880,6 +13882,475 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
+
+
+// Aleluyas Segun Semana
+/* No. 180
+╔════════════════════════════════════════════════╗
+║           ALELUYA INTERLECCIONAL               ║
+╚════════════════════════════════════════════════╝  */
+
+/*
+╔═════════════════════════════════════════╗
+║           ALELUYA PASCUAL               ║
+╚═════════════════════════════════════════╝  */
+   {
+        id: "aleluyapascual",
+        tt: "Aleluya Pascual",
+        title: "Aleluya Pascual",
+        subtitle: "Apropiado para el tiempo Pascual",
+        category: ["Liturgia","Pascua"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "La asamblea se divide para cantar a tres voces: A1, A2 y A3 y cada voz va entrando tal y como se indica en el esquema.",
+        nCanURL: "",
+        dbno: "181",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/aleluyapascual.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=aleluyainterleccional",
+        sig: "/src/index.html?canto=antifonaparaelevangelio",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Cristo Jesús ha resucitado., (La,,10)(Mi,,100)(La,,218)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)", sC: "ta1 as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)", sC: "ta2 as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,105)(La,,200)", sC: "ta as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,105)(La,,200)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cristo Jesús ha resucitado., (La,,10)(Mi,,100)(La,,218)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)", sC: "ta2 as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,105)(La,,200)", sC: "ta as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)", sC: "ta1 as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cristo Jesús ha resucitado., (La,,10)(Mi,,100)(La,,218)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,105)(La,,200)", sC: "ta3 as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)", sC: "ta1 as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)", sC: "ta2 as"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Mi,,154)(La,,250)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: ALELUYA PASCUAL
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ANTÍFONA PARA EL EVANGELIO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "antifonaparaelevangelio",
+        tt: "Antífona Para El Evangelio",
+        title: "Antífona Para El Evangelio",
+        subtitle: "Tiempo de Cuaresma",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "182",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/antifonaparaelevangelio.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=aleluyapascual",
+        sig: "/src/index.html?canto=bendiciondelagua",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Modelo I", sC: "as", color: "rgb(196 76 75)"},
+            { line: "La estrofa que hace el cantor se canta con la, melodía del «Aleluya interleccional - Modelo I", sC: "fsize", color: "gray"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Gloria a ti, oh Cristo,, (Sol,,14)(Do,,158)", sC: "tc"},
+            { line: "Rey de eterna gloria,, (Re,,162)", sC: ""},
+            { line: "Rey de eterna gloria., (Sol,,160)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "GLORIA A TI, OH CRISTO,, (Sol,,14)(Do,,191)", sC: "ta as"},
+            { line: "REY DE ETERNA GLORIA,, (Re,,194)", sC: "as"},
+            { line: "REY DE ETERNA GLORIA., (Sol,,194)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo soy la vid, vosotros los sarmientos., (Mi,m,20)(Re,,80)(Mi,m,250)", sC: "tc"},
+            { line: "El que permanece en mí y yo en él,, (Re,,228)(Mi,m,317)", sC: ""},
+            { line: "ese da fruto abundante., (Re,,10)(Mi,m,184)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "GLORIA A TI, OH CRISTO, (Sol,,14)(Do,,191)", sC: "ta as", lines: [
+            { line: "REY DE ETERNA GLORIA,, (Re,,194)", sC: "as"},
+            { line: "REY DE ETERNA GLORIA., (Sol,,194)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Modelo II", sC: "as", color: "rgb(196 76 75)"},
+            { line: "Toda la antífona se canta con la misma melodía del «Aleluya interleccional - Modelo I, ", sC: "fsize", color: "gray"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Gloria al Señor, gloria al Señor,, (Sol,,14)", sC: "tc"},
+            { line: "gloria al Señor, gloria al Señor,, (Do,,121)(Re,,272)", sC: ""},
+            { line: "gloria al Señor., (Sol,,125)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Sol,,14)", sC: "ta as"},
+            { line: "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Do,,159)(Re,,348)", sC: "as"},
+            { line: "GLORIA AL SEÑOR., (Sol,,157)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En el esplendor de la nube,, (Mi,m,20)Re", sC: "tc"},
+            { line: "se oyó la voz del Padre:, (Mi,m,177)", sC: ""},
+            { line: "Este es mi Hijo amado, escuchadle,, (Re,,183)(Mi,m,300)", sC: ""},
+            { line: "este es mi Hijo amado, escuchadle»., (Re,,179)(Mi,m,302)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "GLORIA AL SEÑOR, (Sol,,14)", sC: "ta as top1", lines: [
+            { line: "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Sol,,14)", sC: "as sub"},
+            { line: "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Do,,159)(Re,,348)", sC: "as"},
+            { line: "GLORIA AL SEÑOR., (Sol,,157)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ANTÍFONA PARA EL EVANGELIO
+// SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           BENDICIÓN DEL AGUA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "bendiciondelagua",
+        tt: "Bendición Del Agua",
+        title: "Bendición Del Agua",
+        subtitle: "De la liturgia bautismal de la Vigilia Pascual",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* Melisma",
+        nCanURL: "",
+        dbno: "183",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/bendiciondelagua.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=antifonaparaelevangelio",
+        sig: "/src/index.html?canto=bendiciondelaguap1",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "", sC: "ast"},
+            { line: "Oh Dios, (Mi,m,20)", sC: "pa"},
+            { line: "que por mediode los signos sacramentales, (La,m,20)(Si,7,378)", sC: ""},
+            { line: "tú obras con invisible potencia, ", sC: ""},
+            { line: "las maravillas de la salvación., (Mi,m,262)", sC: ""},
+            { line: "", sC: "mheight0"}, // Espacio Generado para separar contenido
+            { line: "De muchos modos, ", sC: "ast1"},
+            { line: "a través de los tiempos, (La,m,20)", sC: ""},
+            { line: "has preparado el agua, tu criatura,, (Do,,10)", sC: ""},
+            { line: "para que fuese signo del Bautismo., (Si,7,288)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Desde los orígenes tu Espíritu, (Mi,m,20)", sC: "ast2"},
+            { line: "aleteaba sobre las aguas,,(La,m,20)(Si,7,250) ", sC: ""},
+            { line: "para que contuviesen la fuerza de santificar. ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y también en el Diluvio, (Mi,m,20)", sC: "ast3"},
+            { line: "has prefigurado el Bautismo,,(La,m,20)(Si,7,230)", sC: ""},
+            { line: "para que hoy como ayer, (Mi,m,218)", sC: ""},
+            { line: "el agua señalase el fin del pecado, (Re,,33)(Do,,201)", sC: ""},
+            { line: "y el inicio de la Vida Nueva.,  (Si,7,226)", sC: ""},
+            { line: "Tú, has liberado de la esclavitud, (Mi,m,20)", sC: ""},
+            { line: "a los hijos de Abraham, (Re,,190)", sC: ""},
+            { line: "haciéndoles pasar ilesos el Mar Rojo,(Mi,m,283) ", sC: ""},
+            { line: "para que fuesen la imagen, ", sC: ""},
+            { line: "del futuro pueblo de bautizados., (Re,,127)(Mi,m,263)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por fin, en la plenitud de los tiempos,, (Re,,289)", sC: ""},
+            { line: "tu Hijo, bautizado en el agua del Jordán,, (Mi,m,39)(Re,,360)", sC: ""},
+            { line: "fue consagrado por el Espíritu Santo., (Do,,119)(Si,7,310)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LEVANTADO EN LA CRUZ,, (Mi,m,20)(Re,,210)", sC: "pa as"},
+            { line: "DE SU COSTADO SALIÓ, (Do,,210)", sC: "as r1"},
+            { line: "SANGRE Y AGUA., (Si,7,119)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y después de su resurrección, (Mi,m,20)(Re,,210)", sC: "pa"},
+            { line: "ordenó a sus discípulos:, (Mi,m,168)", sC: ""},
+            { line: "«Id y anunciad el Evangelio, (Re,,221)", sC: ""},
+            { line: "a todos los pueblos,, (Mi,m,134)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "BAUTIZÁNDOLOS, (Mi,m,20)", sC: "pa as"},
+            { line: "EN EL NOMBRE DEL PADRE,, (Re,,217)", sC: "as r2"},
+            { line: "Y DEL HIJO,, (Do,,78)", sC: "as"},
+            { line: "Y DEL ESPÍRITU SANTO., (Si,7,177)", sC: "as"},
+    ], lder: [
+            { line: "Ahora, ahora Padre,, (Mi,m,20)", sC: "pa"},
+            { line: "mira con amor a tu Iglesia, (Re,,218)", sC: ""},
+            { line: "y haz brotar para ella, (Do,,177)", sC: ""},
+            { line: "la fuente del Bautismo., (Si,7,173)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Infunde en esta agua,, (Mi,m,20)(Re,,164)", sC: ""},
+            { line: "por obra del Espíritu Santo,, (Do,,206)", sC: ""},
+            { line: "la gracia de tu Único Hijo,, (Si,7,212)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "para que por el Sacramento del Bautismo, (Mi,m,70)(Re,,353)", sC: ""},
+            { line: "el hombre, hecho a tu imagen,, (Mi,m,246)", sC: ""},
+            { line: "sea lavado de todos sus pecados, (Re,,273)", sC: ""},
+            { line: "y del agua y del Espíritu Santo, (Do,,247)", sC: ""},
+            { line: "renazca como nueva criatura., (Si,7,251)", sC: ""},
+            { line: "Descienda, Padre,, (Mi,m,20)", sC: "ast4"},
+            { line: "en esta agua, por obra de tu Hijo,, (La,m,20)(Si,7,291)", sC: ""},
+            { line: "la potencia del Espíritu Santo., (Mi,m,242)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Para que todos aquellos que hoy reciban, ", sC: ""},
+            { line: "el Bautismo, sean sepultados con Cristo., (Re,,73)(Mi,m,347)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Y MUERTOS CON ÉL,, (Mi,m,20)", sC: "ta as"},
+            { line: "RESURJAN, BISA., (Re,,48)", sC: "as r3"},
+            { line: "RESUCITEN, (Do,,70)", sC: "as"},
+            { line: "A LA VIDA INMORTAL!, (Si,7,189)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por Cristo, Nuestro Señor., (Mi,m,226)", sC: "pa"},
+            { line: "AMÉN, AMÉN, AMÉN., (Mi,m,20)(Re,,111)(Mi,m,182)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: BENDICIÓN DEL AGUA
+// SIGUIENTE CANTO DEBAJO
+
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           BENDICIÓN DEL AGUA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "bendiciondelaguap1",
+        tt: "Bendición Del Agua",
+        title: "Bendición Del Agua",
+        subtitle: "Parte I | De la liturgia bautismal de la Vigilia Pascual",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "183",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/bendiciondelagua.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=bendiciondelagua",
+        sig: "/src/index.html?canto=bendiciondelaguap2",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "", sC: "ast "},
+            { line: "Oh Dios, (Mi,m,20)", sC: "pa"},
+            { line: "que por medio de los signos sacramentales, (La,m,20)(Si,7,378)", sC: ""},
+            { line: "tú obras con invisible potencia, ", sC: ""},
+            { line: "las maravillas de la salvación., (Mi,m,262)", sC: ""},
+            { line: "", sC: "mheight0"}, // Espacio Generado para separar contenido
+            { line: "De muchos modos, ", sC: "ast1"},
+            { line: "a través de los tiempos, (La,m,20)", sC: ""},
+            { line: "has preparado el agua, tu criatura,, (Do,,10)", sC: ""},
+            { line: "para que fuese signo del Bautismo., (Si,7,288)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Desde los orígenes tu Espíritu, (Mi,m,20)", sC: "ast2"},
+            { line: "aleteaba sobre las aguas,,(La,m,20)(Si,7,250) ", sC: ""},
+            { line: "para que contuviesen la fuerza de santificar. ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y también en el Diluvio, (Mi,m,20)", sC: "ast3"},
+            { line: "has prefigurado el Bautismo,,(La,m,20)(Si,7,230)", sC: ""},
+            { line: "para que hoy como ayer, (Mi,m,218)", sC: ""},
+            { line: "el agua señalase el fin del pecado, (Re,,33)(Do,,201)", sC: ""},
+            { line: "y el inicio de la Vida Nueva.,  (Si,7,226)", sC: ""},
+            { line: "Tú, has liberado de la esclavitud, (Mi,m,20)", sC: ""},
+            { line: "a los hijos de Abraham, (Re,,190)", sC: ""},
+    ], lder: [
+            { line: "haciéndoles pasar ilesos el Mar Rojo,(Mi,m,283) ", sC: ""},
+            { line: "para que fuesen la imagen, ", sC: ""},
+            { line: "del futuro pueblo de bautizados., (Re,,127)(Mi,m,263)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por fin, en la plenitud de los tiempos,, (Re,,289)", sC: ""},
+            { line: "tu Hijo, bautizado en el agua del Jordán,, (Mi,m,39)(Re,,360)", sC: ""},
+            { line: "fue consagrado por el Espíritu Santo., (Do,,119)(Si,7,310)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LEVANTADO EN LA CRUZ,, (Mi,m,20)(Re,,210)", sC: "pa as"},
+            { line: "DE SU COSTADO SALIÓ, (Do,,210)", sC: "as r1"},
+            { line: "SANGRE Y AGUA., (Si,7,119)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y después de su resurrección, (Mi,m,20)(Re,,210)", sC: "pa"},
+            { line: "ordenó a sus discípulos:, (Mi,m,168)", sC: ""},
+            { line: "«Id y anunciad el Evangelio, (Re,,221)", sC: ""},
+            { line: "a todos los pueblos,, (Mi,m,134)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "BAUTIZÁNDOLOS, (Mi,m,20)", sC: "pa as"},
+            { line: "EN EL NOMBRE DEL PADRE,, (Re,,217)", sC: "as r2"},
+            { line: "Y DEL HIJO,, (Do,,78)", sC: "as"},
+            { line: "Y DEL ESPÍRITU SANTO., (Si,7,177)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: BENDICIÓN DEL AGUA
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           BENDICIÓN DEL AGUA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "bendiciondelaguap2",
+        tt: "Bendición Del Agua",
+        title: "Bendición Del Agua",
+        subtitle: "Parte II | De la liturgia bautismal de la Vigilia Pascual",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "183",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/bendiciondelagua.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=bendiciondelaguap1",
+        sig: "/src/index.html?canto=celebracionpenitencial",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Ahora, ahora Padre,, (Mi,m,20)", sC: "pa"},
+            { line: "mira con amor a tu Iglesia, (Re,,218)", sC: ""},
+            { line: "y haz brotar para ella, (Do,,177)", sC: ""},
+            { line: "la fuente del Bautismo., (Si,7,173)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Infunde en esta agua,, (Mi,m,20)(Re,,164)", sC: ""},
+            { line: "por obra del Espíritu Santo,, (Do,,206)", sC: ""},
+            { line: "la gracia de tu Único Hijo,, (Si,7,212)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "para que por el Sacramento del Bautismo, (Mi,m,70)(Re,,353)", sC: ""},
+            { line: "el hombre, hecho a tu imagen,, (Mi,m,246)", sC: ""},
+            { line: "sea lavado de todos sus pecados, (Re,,273)", sC: ""},
+            { line: "y del agua y del Espíritu Santo, (Do,,247)", sC: ""},
+            { line: "renazca como nueva criatura., (Si,7,251)", sC: ""},
+    ], lder: [
+            { line: "Descienda, Padre,, (Mi,m,20)", sC: "ast"},
+            { line: "en esta agua, por obra de tu Hijo,, (La,m,20)(Si,7,291)", sC: ""},
+            { line: "la potencia del Espíritu Santo., (Mi,m,242)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Para que todos aquellos que hoy reciban, ", sC: ""},
+            { line: "el Bautismo, sean sepultados con Cristo., (Re,,73)(Mi,m,347)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Y MUERTOS CON ÉL,, (Mi,m,20)", sC: "ta as"},
+            { line: "RESURJAN, BISA., (Re,,48)", sC: "as r1"},
+            { line: "RESUCITEN, (Do,,70)", sC: "as"},
+            { line: "A LA VIDA INMORTAL!, (Si,7,189)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por Cristo, Nuestro Señor., (Mi,m,226)", sC: "pa"},
+            { line: "AMÉN, AMÉN, AMÉN., (Mi,m,20)(Re,,111)(Mi,m,182)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: BENDICIÓN DEL AGUA
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           CELEBRACIÓN PENITENCIAL (BENDICIÓN PENITENCIAL )               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "celebracionpenitencial",
+        tt: "Celebración Penitencial (Bendición Penitencial )",
+        title: "Celebración Penitencial",
+        subtitle: "Acción de gracias (Bendición Penitencial )",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "185",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/celebracionpenitencial(bendicionpenitencial).mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=bendiciondelagua",
+        sig: "/src/index.html?canto=corderodedios",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "El Señor esté con vosotros., (Sol,,14)(La,m,214)", sC: "pa"},
+            { line: "Y CON TU ESPÍRITU., (Sol,,14)(La,m,142)", sC: "ta as"},
+            { line: "Levantemos el corazón., (Fa,,20)(Mi,,204)", sC: "pa"},
+            { line: "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (Fa,,20)(Mi,,393)", sC: "ta as"},
+            { line: "Demos gracias al Señor, nuestro Dios., (La,m,341)", sC: "pa"},
+            { line: "ES JUSTO Y NECESARIO., (Sol,,48)(La,m,185)", sC: "ta as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Realmente es justo y necesario,, (La,m,20)(Re,m,162)(La,m,269)", sC: "ta"},
+            { line: "es nuestro deber y salvación, (Mi,,150)(La,m,254)", sC: ""},
+            { line: "darte gracias, siempre y en todo lugar,, (Re,m,161)(La,m,348)", sC: ""},
+            { line: "a ti, Dios Padre omnipotente y misericordioso,, (Mi,,27)(La,m,405)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "que admirablemente has creado al hombre,, (Fa,,12)(La,m,360)", sC: ""},
+            { line: "y más admirablemente has hecho en él, (Fa,,10)", sC: ""},
+            { line: "una nueva creación., (Mi,,172)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú,no abandonas al pecador,, (La,m,20)(Sol,,257)", sC: ""},
+            { line: "sino que lo llamas por la fuerza de tu amor., (La,m,398)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú, has enviado a tu Hijo al mundo,, (Sol,,287)", sC: ""},
+            { line: "para destruir el pecado y la muerte,, (La,m,299)", sC: ""},
+    ], lder: [
+            { line: "y en su resurrección, (Sol,,174)", sC: ""},
+            { line: "nos has devuelto la vida y la alegría., (La,m,326)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú, has derramado el Espíritu Santo, ", sC: ""},
+            { line: "en nuestros corazones,, (Sol,,172)", sC: ""},
+            { line: "para hacernos herederos e hijos tuyos., (La,m,330)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú, nos renuevas por la fuerza del Evangelio, (Sol,,388)", sC: ""},
+            { line: "y de los Sacramentos., (La,m,161)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TÚ, NOS LIBRAS, (La,m,20)", sC: "ta as"},
+            { line: "DE LA ESCLAVITUD DEL PECADO, (Sol,,274)", sC: "as r2"},
+            { line: "Y NOS TRANSFORMAS DÍA A DÍA, (Fa,,300)", sC: "as"},
+            { line: "EN LA IMAGEN DE TU HIJO., (Mi,,223)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Alabamos y bendecimos tu nombre, (La,m,20)(Sol,,280)", sC: "pa"},
+            { line: "y te damos gracias, ", sC: ""},
+            { line: "por las maravillas de tu misericordia., (La,m,307)", sC: ""},
+            { line: "Y con los ángeles y los santos,, (Sol,,232)", sC: ""},
+            { line: "cantamos, cantamos el himno de tu gloria., (La,m,48)(Fa,,150)(La,m,371)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO… ", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: CELEBRACIÓN PENITENCIAL (BENDICIÓN PENITENCIAL )
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 ╔════════════════════════════════════════════════════════╗
 ║           GLORIA A DIOS EN LO ALTO DEL CIELO               ║
@@ -15004,48 +15475,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
-// Aleluyas Segun Semana
-/*
-╔════════════════════════════════════════════════════════╗
-║           ALELUYA INTERLECCIONAL               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "ialeluyas22",
-        tt: "Aleluya Interleccional Semana XXII",
-        title: "Aleluya Interleccional Semana XXII",
-        subtitle: "Modelo III",
-        category: ["Liturgia"],
-        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "3",
-        nCan: "",
-        nCanURL: "",
-        dbno: "180",
-        notes: "",
-        mant: "No",
-        audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=aclamacionesalaoraciondelosfieles",
-        sig: "/src/index.html?canto=aleluyapascual",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Tomad sobre vosotros mi yugo y aprended de mí,, (Mi,m,21)(La,m,253)(Mi,m,468)", sC: "tc"},
-            { line: "que soy manso y humilde de corazón,, (La,m,348)", sC: ""},
-            { line: "y hallaréis descanso para vosotros,, (Mi,m,279)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "ALELUYA, ALELUYA, ALELUYA., (Mi,m,15)(Re,,144)(Mi,m,266)", sC: "ta as", lines: [
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,160)(Mi,m,271)", sC: "as"},  ]},
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL
-// SIGUIENTE CANTO DEBAJO
 
 
 
@@ -15057,254 +15486,10 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
-/*
-╔════════════════════════════════════════════════╗
-║           ALELUYA INTERLECCIONAL SEMANA XXII   ║
-╚════════════════════════════════════════════════╝  */
-   {
-        id: "ialeluyas23",
-        tt: "Aleluya Interleccional Semana XXIII",
-        title: "Aleluya Interleccional Semana XXIII",
-        subtitle: "Según Modelo",
-        category: ["Liturgia"],
-        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "3",
-        nCan: "",
-        nCanURL: "",
-        dbno: "180",
-        notes: "",
-        mant: "No",
-        audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
-        // propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=aclamacionesalaoraciondelosfieles",
-        sig: "/src/index.html?canto=aleluyapascual",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
-       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
-            { line: "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)", sC: "ta as bg"},  
-            
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Has brillar tu rostro sobre tu siervo,           (Mi,,10)(Re,,181)(Mi,m,352)", sC: "tc"},
-            { line: "enséñame tus decretos.                           (Do,,10)(Mi,,142)(La,m,335)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
-        ]},
 
-            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
-            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
-            { line: "ALELUYA, ALELUYA, ALELUYA.,(Do,,10)(Mi,,152)(La,m,275)", sC: "ta as"},
-            { line: "ALELUYA, ALELUYA, ALELUYA.,(Do,,10)(Mi,,152)(La,m,275)", sC: "as bg"},  
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Has brillar tu rostro sobre tu siervo,             (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
-            { line: "enséñame tus decretos.                             (Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
-        ]},
 
-                        { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
-            { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"}, 
 
-            { line: "Has brillar tu rostro sobre tu siervo,               (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
-            { line: "enséñame tus decretos.                               (Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
-        
-        ]},
-
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL SEMANA XXIII
-// SIGUIENTE CANTO DEBAJO
-/*
-╔════════════════════════════════════════════════╗
-║           ALELUYA INTERLECCIONAL SEMANA XXII   ║
-╚════════════════════════════════════════════════╝  */
-
-
-{
-        id: "ialeluyas24",
-        tt: "Aleluya Interleccional",
-        title: "Aleluya Interleccional",
-        subtitle: "Semana XXIV | Tiempo Ordinario",
-        category: ["Liturgia"],
-        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "3",
-        nCan: "",
-        nCanURL: "",
-        dbno: "180",
-        notes: "",
-        mant: "Si",
-        audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
-        // propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=aclamacionesalaoraciondelosfieles",
-        sig: "/src/index.html?canto=aleluyapascual",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
-       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
-            { line: "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)", sC: "ta as bg"},  
-            
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Jesús proclamaba el Evangelio del reino,           (Mi,m,20)(Re,,161)(Mi,m,364)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                 (Re,,10)(Mi,m,290)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
-        ]},
-
-            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
-            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
-            { line: "ALELUYA, ALELUYA, ALELUYA.,(Do,,10)(Mi,,152)(La,m,275)", sC: "ta as"},
-            { line: "ALELUYA, ALELUYA, ALELUYA.,(Do,,10)(Mi,,152)(La,m,275)", sC: "as bg"},  
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "Jesús proclamaba el Evangelio del reino,             (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                   (Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
-        ]},
-
-                        { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
-            { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"}, 
-
-            { line: "Jesús proclamaba el Evangelio del reino,              (Mi,m,20)(La,m,171)(Mi,m,365)", sC: "tc"},
-            { line: "y curaba toda dolencia del pueblo.                    (La,m,77)(Mi,m,298)", sC: "bg"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
-        
-        ]},
-
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL SEMANA XXIII
-// SIGUIENTE CANTO DEBAJO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-╔════════════════════════════════════════════════╗
-║           ALELUYA INTERLECCIONAL SEMANA XXII   ║
-╚════════════════════════════════════════════════╝  */
-   {
-        id: "ialeluyasboceto24",
-        tt: "Aleluya Interleccional Semana XXII",
-        title: "Aleluya Interleccional Semana XXII",
-        subtitle: "Según Modelo",
-        category: ["Liturgia"],
-        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "3",
-        nCan: "",
-        nCanURL: "",
-        dbno: "180",
-        notes: "",
-        mant: "Si",
-        audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
-        // propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=aclamacionesalaoraciondelosfieles",
-        sig: "/src/index.html?canto=aleluyapascual",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
-       triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
-            { line: "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)", sC: "ta as bg"},  
-            
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Cargad con mi yugo y aprended de mí, (Mi,,10)(Re,,181)(Mi,m,352)", sC: "tc"},
-            { line: "—dice el Señor—", sC: ""},
-            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,142)(La,m,335)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},
-        ]},
-
-            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
-            { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)", sC: "ta as"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)", sC: "as bg"},  
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
-            { line: "Cargad con mi yugo y aprended de mí, (Do,,10)(Mi,,178)(La,m,342)", sC: "tc"},
-            { line: "—dice el Señor—", sC: ""},
-            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,152)(La,m,330)", sC: "bg"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Do,,10)", sC: "ta as"},
-        ]},
-
-                        { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
-       triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
-            { line: "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)", sC: "tc"},
-            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)", sC: "ta as"}, 
-
-                        { line: "Cargad con mi yugo y aprended de mí, (Do,,10)(Mi,,200)(La,m,346)", sC: "tc"},
-            { line: "—dice el Señor—", sC: ""},
-            { line: "que soy manso y humilde de corazón.(Do,,10)(Mi,,152)(La,m,334)", sC: "bg"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},
-        
-        ]},
-
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: ALELUYA INTERLECCIONAL SEMANA XXIII
-// SIGUIENTE CANTO DEBAJO
 
 
 

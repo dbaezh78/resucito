@@ -516,7 +516,8 @@ display: none;}
 .nota-posicionada {
     position: absolute;
     /*top: 0; Antes posicion del acorde*/
-    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
+    font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
     font-weight: bold;
     color: rgb(196 76 75);
     background-color: transparent;
@@ -836,7 +837,7 @@ hr {
 }
 
 .saudio {
-    z-index: 999;
+    z-index: 9999;
     opacity: 0.4;
     /*width: -webkit-fill-available;*/
     background-color: #f1f3f4;

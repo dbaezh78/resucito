@@ -3534,7 +3534,7 @@ sig: "/src/ainterleccional.html?canto=aitps9a",
      title: aitos27,
   subtitle: añoc+", "+aitos27c,
   category: ["Liturgia"],catCanto: "Liturgia",cejilla: "",nCan: "",nCanURL: "",dbno: "180",notes: "",
-      mant: "Si",
+      mant: "No",
   audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
  scrollConfig: {
@@ -3559,11 +3559,11 @@ sig: "/src/ainterleccional.html?canto=aitps9a",
             { line: `${aitos27c1} (Do,,10)(Mi,,178)(La,m,342)`, sC: "tc"},
             { line: `${aitos27c2} (Do,,151)(Mi,,252)(La,m,350)`, sC: "bg"},
             { line: "ALELUYA ... (Do,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
-            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",   // collapsed / expanded
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "expanded",   // collapsed / expanded
        triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
             { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},{ line: "", sC: "adb1"},
-            { line: `${aitos27c1} (Mi,m,20)(La,,178)(Mi,m,342)`, sC: "tc"},
-            { line: `${aitos27c2} (La,,151)(Mi,m,252)`, sC: "bg"},
+            { line: `${aitos27c1} (Mi,m,20)(La,,178)(Mi,m,404)`, sC: "tc"},
+            { line: `${aitos27c2} (La,,163)(Mi,m,334)`, sC: "bg"},
             { line: "ALELUYA ... (Mi,,21)", sC: "ta as"},{ line: "", sC: "adb1"},]},
     ], lder: []}, // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXVII
 
