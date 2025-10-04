@@ -13914,7 +13914,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=aleluyainterleccional",
+        ant: "/src/ai.html",
         sig: "/src/index.html?canto=antifonaparaelevangelio",
 // Contenido del lado izquierdo del canto,
     lizq: [
@@ -14323,6 +14323,65 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "SANTO, SANTO, SANTO… ", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: CELEBRACIÓN PENITENCIAL (BENDICIÓN PENITENCIAL )
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           CORDERO DE DIOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "corderodedios",
+        tt: "Cordero De Dios",
+        title: "Cordero De Dios",
+        subtitle: "Después de la consagración",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "2",
+        nCan: "",
+        nCanURL: "",
+        dbno: "186",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/corderodedios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=celebracionpenitencial",
+        sig: "/src/index.html?canto=credo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ESPAÑOL", sC: "as", color: "red"},
+            { line: "", sC: "hr"},
+            { line: "Cordero de Dios,, (La,m,20)", sC: "tc"},
+            { line: "que quitas el pecado del mundo,, (Sol,,69)(La,m,264)", sC: ""},
+            { line: "ten piedad de nosotros., (Fa,,10)(Mi,,173)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CORDERO DE DIOS,, (La,m,20)", sC: "ta as"},
+            { line: "QUE QUITAS EL PECADO DEL MUNDO,, (Sol,,74)(La,m,305)", sC: "as"},
+            { line: "TEN PIEDAD DE NOSOTROS., (Fa,,15)(Mi,,200)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CORDERO DE DIOS,, (La,m,20)", sC: "ta as"},
+            { line: "QUE QUITAS EL PECADO DEL MUNDO,, (Sol,,73)(La,m,307)", sC: "as"},
+            { line: "DANOS LA PAZ,, (Fa,,18)(Mi,,121)", sC: "as"},
+            { line: "DANOS LA PAZ., (Fa,,18)(Mi,,121)", sC: "as"},
+    ], lder: [
+            { line: "LATÍN", sC: "as", color: "red"},    
+            { line: "", sC: "",},    
+            { line: "Agnus Dei,, (La,m,20)", sC: "tc"},
+            { line: "qui tollis peccata mundi:, (Sol,,47)(La,m,264)", sC: ""},
+            { line: "miserere nobis., (Fa,,18)(Mi,,104)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AGNUS DEI,, (La,m,20)", sC: "ta as"},
+            { line: "QUI TOLLIS PECCATA MUNDI:, (Sol,,55)(La,m,231)", sC: "as"},
+            { line: "MISERERE NOBIS., (Fa,,20)(Mi,,126)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AGNUS DEI,, (La,m,20)", sC: "as"},
+            { line: "QUI TOLLIS PECCATA MUNDI:, (Sol,,55)(La,m,230)", sC: "as"},
+            { line: "DONA NOBIS PACEM,, (Fa,,20)(Mi,,148)", sC: "as"},
+            { line: "DONA NOBIS PACEM., (Fa,,20)(Mi,,148)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: CORDERO DE DIOS
 // SIGUIENTE CANTO DEBAJO
 
 
