@@ -14383,6 +14383,124 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "DONA NOBIS PACEM., (Fa,,20)(Mi,,148)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: CORDERO DE DIOS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           CREDO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "credo",
+        tt: "Credo",
+        title: "Credo",
+        subtitle: "Símbolo Apostólico",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "Pueden cantarlo aquellas comunidades que ya han vivido la Redditio Symboli.",
+        nCanURL: "",
+        dbno: "187",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/credo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=corderodedios",
+        sig: "/src/index.html?canto=gloriaadiosenloaltodelcielo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "CREO EN DIOS PADRE TODOPODEROSO,, (Re,m,22)(Fa,,56)", sC: "ta as"},
+            { line: "CREADOR DEL CIELO Y DE LA TIERRA., (Do,,10)(Re,m,311)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CREO EN JESUCRISTO, (Re,m,22)(Fa,,55)", sC: "as"},
+            { line: "SU ÚNICO HIJO, NUESTRO SEÑOR,", sC: "as"},
+            { line: "QUE FUE CONCEBIDO POR OBRA Y GRACIA,, (Do,,10)", sC: "as"},
+            { line: "DEL ESPÍRITU SANTO,", sC: "as"},
+            { line: "NACIÓ DE SANTA MARÍA VIRGEN., (Re,m,49)", sC: "as"},
+            { line: "PADECIÓ BAJO EL PODER DE PONCIO PILATO,, (Fa,,11)", sC: "as"},
+            { line: "FUE CRUCIFICADO, MUERTO Y SEPULTADO,, (Do,,10)", sC: "as"},
+            { line: "DESCENDIÓ A LOS INFIERNOS., (Re,m,102)", sC: "as"},
+            { line: "AL TERCER DÍA RESUCITÓ,, (Fa,,10)(Do,,165)", sC: "as"},
+            { line: "RESUCITÓ DE ENTRE LOS MUERTOS,, (Fa,,78)(La,m,111)(Re,m,286)", sC: "as"},
+            { line: "SUBIÓ AL CIELO , (Si♭,,10)", sC: "as"},
+            { line: "Y ESTÁ SENTADO A LA DERECHA DE DIOS,, (La,,377)", sC: "as"},
+            { line: "DESDE ALLÍ HA DE VENIR A JUZGAR, (Si♭,,15)", sC: "as"},
+            { line: "A LOS VIVOS Y A LOS MUERTOS., (La,,246)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CREO EN EL ESPÍRITU SANTO,, (Re,m,22)(Fa,,55)", sC: "as"},
+            { line: "LA SANTA IGLESIA CATÓLICA, ", sC: "as"},
+            { line: "LA COMUNIÓN DE LOS SANTOS, ", sC: "as"},
+            { line: "EL PERDÓN DE LOS PECADOS,, (Do,,94)", sC: "as"},
+            { line: "LA RESURRECCIÓN DE LA CARNE, (Fa,,151)(La,m,186)(Re,m,271)", sC: "as"},
+            { line: "Y LA VIDA ETERNA., (Si♭,,12)(La,,131)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AMÉN., (Re,m,43)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: CREDO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LETANÍAS DE LOS SANTOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "letaniasdelossantos",
+        tt: "Letanías De Los Santos",
+        title: "Letanías De Los Santos",
+        subtitle: "De la liturgia bautismal de la Vigilia Pascual",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "189",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/letaniasdelossantos.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=gloriaadiosenloaltodelcielo",
+        sig: "/src/index.html?canto=aleluyainterleccional",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Señor, ten piedad., (Mi,m,20)", sC: "tc stp"},
+            { line: "Cristo, ten piedad., ", sC: "ctp"},
+            { line: "Señor, ten piedad., ", sC: "stp"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Santa María, Madre de Dios., (Sol,,14)(Mi,m,250)(Do,,350)(Re,7,450)", sC: "tc"},
+            { line: "RUEGA POR NOSOTROS., (Do,,10)(Re,7,250)", sC: "as"},
+            { line: "San Miguel., ", sC: "rpn"},
+            { line: "Santos ángeles de Dios., (Sol,,14)(Mi,m,250)(Do,,350)(Re,7,450)", sC: "rpn"},
+            { line: "San Juan Bautista., (Sol,,14)(Mi,m,250)(Do,,350)(Re,7,450)", sC: "rpn"},
+            { line: "San José., ", sC: "rpn"},
+            { line: "Santos Pedro y Pablo., (Sol,,14)(Mi,m,250)(Do,,350)(Re,7,450)", sC: "rpn"},
+            { line: "San Andrés., (Sol,,14)(Mi,m,250)(Do,,350)(Re,7,450)", sC: "rpn"},
+            { line: "San Juan., ", sC: "rpn"},
+            { line: "Santa María Magdalena., ", sC: "rpn"},
+            { line: "San Esteban., ", sC: "rpn"},
+            { line: "San Ignacio de Antioquía., ", sC: "rpn"},
+            { line: "San Lorenzo., ", sC: "rpn"},
+            { line: "Santas Perpetua y Felicidad., (Sol,,14)(Mi,m,250)(Do,,350)(Re,7,450)", sC: "rpn"},
+            { line: "Santa Inés., (Sol,,14)(Mi,m,250)(Do,,350)(Re,7,450)", sC: "rpn"},
+            { line: "San Gregorio., ", sC: "rpn"},
+            { line: "San Agustín., ", sC: "rpn"},
+            { line: "San Atanasio., ", sC: "rpn"},
+            { line: "San Basilio., ", sC: "rpn"},
+            { line: "San Martín., ", sC: "rpn"},
+            { line: "San Benito., ", sC: "rpn"},
+            { line: "Santos Francisco y Domingo., (Sol,,14)(Mi,m,250)(Do,,350)(Re,7,450)", sC: "rpn"},
+            { line: "San Francisco Javier., ", sC: "rpn"},
+            { line: "San Juan María Vianney., ", sC: "rpn"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: LETANÍAS DE LOS SANTOS
+// SIGUIENTE CANTO DEBAJO
+
+
 
 
 

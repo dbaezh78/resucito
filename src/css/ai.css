@@ -184,33 +184,55 @@ hr {
 
 /* Añade esto al final de tu archivo ai.css */
 
-.home {
-    position: absolute;
-    top: 15px;
-    left: 15px;
+
+.homeb {
+    display: flex;
+    position: relative;
+    gap: 1px;
     z-index: 1000;
-    color: #ffffff; /* Color del icono, puedes ajustarlo */
+    color: #ffffff;
     font-size: 2em;
     text-decoration: none;
     transition: transform 0.2s ease-in-out;
+    gap: 8px;
 }
 
+        @media (min-width: 384px){
+            .homeb {justify-content: center;}
+        }
+        @media (min-width: 768px){
+            .homeb {
+                justify-content: center;
+            }
+        }
+        @media (min-width: 992px){
+            .homeb {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                /*align-items: flex-end;*/
+                
+            }
+        }
+
+        .flextime{
+            position: inherit;
+        }
+
+.home {
+    color: white;
+    gap: 1%;
+}
         @media (min-width: 384px) {
             .home {
-            margin-left: 46px;
-            margin-top: 14px;
             }
         }
         @media (min-width: 768px) {
             .home {
-                margin-left: 60px;
-                margin-top: 16px;
             }
         }
         @media (min-width: 992px) {
             .home {
-                margin-left: 58px;
-                margin-top: 23px;
             }
         }
 
@@ -225,9 +247,9 @@ hr {
         
     }
     @media (min-width: 768px) {
-        .fizquierda {margin-left: 8px;}
-        .homec {margin-left: 40px;}
-        .fderecha {margin-left: 73px;}
+        .fizquierda {margin-left: 2%;}
+        .homec {margin-left: 4.4%;}
+        .fderecha {margin-left: 6%;}
 
     }
     @media (min-width: 992px) {
@@ -236,28 +258,7 @@ hr {
     }
 
 
-.homeb { 
-    width:min-content;
-    margin-left: 0px;
-}
 
-.buscador-cantos {
-    /* position: relative; */
-    display: table;
-    margin-top: -34px;
-    margin-left: 234px;
-}
-
-@media (min-width: 768px) {
-    .search-input {
-        width: 120px !important;
-        margin-left: 315px;
-
-        display: table;
-    margin-top: -34px;
-        
-    }
-}
 
 
 

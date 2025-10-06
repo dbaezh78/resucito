@@ -621,7 +621,7 @@ display: none;}
 }
 
 /* --- Nuevos estilos para etiquetas de sección --- */
-.ta, .tc, .tn, .tca, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .melisma1, .bis, .pa, .aleluya
+.ta, .tc, .tn, .tca, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .melisma1, .bis, .pa, .aleluya, .stp, .ctp, .rpn
     {
         position: relative;
         padding-left: 0em;
@@ -631,7 +631,7 @@ display: none;}
 /* Estilos COMPARTIDOS por todos los ::before */
 .ta::before, .tc::before, .tn::before, .tca::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
 .hombres::before, .mujeres::before, .melisma::before, .melisma1::before, .bis::before, 
-.pa::before, .tc1::before, .tc2::before, .aleluya::before
+.pa::before, .tc1::before, .tc2::before, .aleluya::before, .stp::before, .ctp::before, .rpn::before
 {
     position: absolute;
     left: 0;
@@ -647,7 +647,7 @@ display: none;}
     .ta::before, .tc::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, 
     .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
-    .aleluya::before
+    .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
         font-size: 0.9rem;
         left: -17px;
@@ -663,7 +663,7 @@ display: none;}
     .ta::before, .tc::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, 
     .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
-    .aleluya::before 
+    .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
         font-size: 1.6rem;
         left: -40px;
@@ -679,7 +679,7 @@ display: none;}
     .ta::before, .tc::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, 
     .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
-    .aleluya::before
+    .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
         font-size: 1.23rem;
         margin-top: -4px;
@@ -702,6 +702,9 @@ display: none;}
 .tc::before, .tc1::before, .tc2::before
 {content: "C.";}
 
+.stp::before {content: "SEÑOR TEN PIEDAD.";}
+.ctp::before {content: "CRISTO TEN PIEDAD.";}
+.rpn::before {content: "RUEGA POR NOSOTROS.";}
 .ta::before {content: "A.";}
 .ta1::before {content: "A1.";}
 .ta2::before {content: "A2.";}
