@@ -13,5 +13,8 @@
             .container {margin-left: -10%;}
             .r1::before {height: 173px;margin-left: 337px;margin-top: -6%;}
             .stp::before, .ctp::before, .rpn::before {font-size: 1.23rem;margin-top: -2px;margin-left: 340px;color: black;}
-            .tc::before {font-size: 1.3rem;left: -21px;top: 49px;}
+            .tc::before {font-size: 1.3rem;left: -35px;top: 19px;}
+            .sub {margin-top: -46px;
+                margin-left: 286px;
+            }
         }
