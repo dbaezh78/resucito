@@ -6,35 +6,34 @@
             .rpn::before {font-size: 0.7rem;margin-top: -35px;margin-left: 220px;color: black; font-weight: bolder;}
             .sub {margin-top: -35px;margin-left: 200px;font-weight: bolder;width: max-content;}
             .sub1 {margin-top: -46px;}
-            .sub2 {margin-top: -35px;margin-left: 200px;font-weight: bolder;width: max-content;}
-            .sub2 {margin-top: -35px;margin-left: 145px;font-weight: bolder;}
-            .height {margin-top: -18px}
+            .sub2 {margin-top: -40px;margin-left: 140px;font-weight: bolder;}
+            .height {margin-top: -16px}
             .redc {width: 100%;font-size:small;margin-left: -15px;line-height:normal}
             .canto-content-wrapper.single-column-mode #canto-left-container {
                 width: 384px;
                 padding-left: 5%;
                 padding-right: 0%;}
-                .letra {font-size: 0.918em;}
+                .letra {font-size: 0.9em;}
             }
-        @media (min-width: 768px) {
-            .container {margin-left: 0%;}
-            .tc::before {font-size: 1.345rem;left: -35px;top: 18px;}
-            .r1::before {height: 216px;margin-left: 446px;margin-top: -9%;}
-            .sub {margin-top: -50px;margin-left: 421px;font-weight: bolder; width: max-content;}
-            .sub1 {margin-top: -46px;}
-            .sub2 {margin-top: -58px;margin-left: 280px;font-weight: bolder;}
-            .height {margin-top: -12px}
-            .redc {width: 100%;font-size:x-small;margin-left: -18px;line-height:normal}
-            .letra {font-size: 1.5em;}
+            @media (min-width: 768px) {
+                .container {margin-left: 0%;}
+                .tc::before {font-size: 1.345rem;left: -35px;top: 18px;}
+                .r1::before {height: 216px;margin-left: 446px;margin-top: -9%;}
+                .sub {margin-top: -47px;margin-left: 421px;font-weight: bolder; width: max-content;}
+                .sub1 {margin-top: -46px;}
+                .sub2 {margin-top: -53px;margin-left: 230px;font-weight: bolder;}
+                .height {margin-top: -20px}
+                .redc {width: 100%;font-size:x-small;margin-left: -18px;line-height:normal}
+                .letra {font-size: 1.5em;}
             }
         @media (min-width: 992px) {
             .container {margin-left: 0%;}
             .r1::before {height: 173px;margin-left: 337px;margin-top: -6%;}
             .stp::before, .ctp::before, .rpn::before {font-size: 1.23rem;margin-top: -2px;margin-left: 340px;color: black;}
             .tc::before {font-size: 1.3rem;left: -35px;top: 19px;}
-            .sub {margin-top: -46px;margin-left: 370px;font-weight: bolder;}
+            .sub {margin-top: -46px;margin-left: 312px;font-weight: bolder;}
             .sub1 {margin-top: -46px;}
-            .sub2 {margin-top: -46px;margin-left: 230px;font-weight: bolder;}
+            .sub2 {margin-top: -46px;margin-left: 210px;font-weight: bolder;}
             .height {margin-top: -20px}
             .redc {width: 100%;font-size:small;margin-left: -40px;line-height:normal}
         }
