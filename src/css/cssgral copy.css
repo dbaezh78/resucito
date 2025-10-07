@@ -626,7 +626,6 @@ display: none;}
         position: relative;
         padding-left: 0em;
         min-height: 1.5em;
-        width: max-content;
     }
 
 /* Estilos COMPARTIDOS por todos los ::before */

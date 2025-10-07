@@ -1,5 +1,5 @@
         @media (min-width: 384px) {
-                .container {margin-left: 1%;}
+                .container {margin-left: 4%;}
                 .r1::before {height: 67px;margin-left: 232px;margin-top: -13%;}
                 .niño::before {content: "N.";margin-left: 0px;font-size: 1em;margin-top: 0px;}}
         @media (min-width: 768px) {
