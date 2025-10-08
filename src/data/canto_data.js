@@ -14525,7 +14525,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "as sub"},
             { line: "Santa Teresa de Jesús. ", sC: ""},
             { line: "\u200B      \"              \"              \" ", sC: "sub"},
-            { line: "En las letanías se pueden añadir algunos nombres de santos, especialmente el del titular de la iglesia y los de los patronos del lugar y de los que van a ser bautizados., ", sC: "redc", color: "red"},
+//          { line: "En las letanías se pueden añadir algunos nombres de santos, especialmente el del titular de la iglesia y los de los patronos del lugar y de los que van a ser bautizados., ", sC: "redc", color: "red"},
             { line: "Santos y santas de Dios, ", sC: "height"},
             { line: "RUEGA POR NOSOTROS.,", sC: "as sub"},
             { line: "", sC: "",},
