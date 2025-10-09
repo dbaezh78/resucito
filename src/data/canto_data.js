@@ -68,8 +68,7 @@ const allCantosData = [
             { line: "Y NOS PRECEDE EN GALILEA, (Fa,,10)(Mi,,254)", sC: "as"},
             { line: "Y NOS PRECEDE EN GALILEA. (Fa,,10)(Mi,,254)", sC: "as"},
             { line: "Tú, Rey victorioso, danos tú la salvación. (Fa,,10)(Mi,,356)", sC: "mt tc"},
-        ]}
-    ,
+        ]},
     /*
 ╔════════════════════════════════════════════════════════════════╗
 ║                A NADIE DEMOS OCASIÓN DE TROPIEZO               ║
@@ -14383,6 +14382,296 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "DONA NOBIS PACEM., (Fa,,20)(Mi,,148)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: CORDERO DE DIOS
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           CREDO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "credo",
+        tt: "Credo",
+        title: "Credo",
+        subtitle: "Símbolo Apostólico",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "Pueden cantarlo aquellas comunidades que ya han vivido la Redditio Symboli.",
+        nCanURL: "",
+        dbno: "187",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/credo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=corderodedios",
+        sig: "/src/index.html?canto=gloriaadiosenloaltodelcielo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "CREO EN DIOS PADRE TODOPODEROSO,, (Re,m,22)(Fa,,56)", sC: "ta as"},
+            { line: "CREADOR DEL CIELO Y DE LA TIERRA., (Do,,10)(Re,m,311)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CREO EN JESUCRISTO, (Re,m,22)(Fa,,55)", sC: "as"},
+            { line: "SU ÚNICO HIJO, NUESTRO SEÑOR,", sC: "as"},
+            { line: "QUE FUE CONCEBIDO POR OBRA Y GRACIA,, (Do,,10)", sC: "as"},
+            { line: "DEL ESPÍRITU SANTO,", sC: "as"},
+            { line: "NACIÓ DE SANTA MARÍA VIRGEN., (Re,m,49)", sC: "as"},
+            { line: "PADECIÓ BAJO EL PODER DE PONCIO PILATO,, (Fa,,11)", sC: "as"},
+            { line: "FUE CRUCIFICADO, MUERTO Y SEPULTADO,, (Do,,10)", sC: "as"},
+            { line: "DESCENDIÓ A LOS INFIERNOS., (Re,m,102)", sC: "as"},
+            { line: "AL TERCER DÍA RESUCITÓ,, (Fa,,10)(Do,,165)", sC: "as"},
+            { line: "RESUCITÓ DE ENTRE LOS MUERTOS,, (Fa,,78)(La,m,111)(Re,m,286)", sC: "as"},
+            { line: "SUBIÓ AL CIELO , (Si♭,,10)", sC: "as"},
+            { line: "Y ESTÁ SENTADO A LA DERECHA DE DIOS,, (La,,377)", sC: "as"},
+            { line: "DESDE ALLÍ HA DE VENIR A JUZGAR, (Si♭,,15)", sC: "as"},
+            { line: "A LOS VIVOS Y A LOS MUERTOS., (La,,246)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CREO EN EL ESPÍRITU SANTO,, (Re,m,22)(Fa,,55)", sC: "as"},
+            { line: "LA SANTA IGLESIA CATÓLICA, ", sC: "as"},
+            { line: "LA COMUNIÓN DE LOS SANTOS, ", sC: "as"},
+            { line: "EL PERDÓN DE LOS PECADOS,, (Do,,94)", sC: "as"},
+            { line: "LA RESURRECCIÓN DE LA CARNE, (Fa,,151)(La,m,186)(Re,m,271)", sC: "as"},
+            { line: "Y LA VIDA ETERNA., (Si♭,,12)(La,,131)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AMÉN., (Re,m,43)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: CREDO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LETANÍAS DE LOS SANTOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "letaniasdelossantos",
+        tt: "Letanías De Los Santos",
+        title: "Letanías De Los Santos",
+        subtitle: "De la liturgia bautismal de la Vigilia Pascual",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "189",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/letaniasdelossantos.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=gloriaadiosenloaltodelcielo",
+        sig: "/src/index.html?canto=letaniaspenitenciales1",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Señor, ten piedad. (Mi,m,20)", sC: "tc height"},
+            { line: "SEÑOR TEN PIEDAD.", sC: "ta sub"},
+            { line: "Cristo, ten piedad. ", sC: "height"},
+            { line: "CRISTO TEN PIEDAD. ", sC: "as sub"},
+            { line: "Señor, ten piedad. ", sC: "height"},
+            { line: "SEÑOR TEN PIEDAD.", sC: "as sub"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Santa María, Madre de Dios., (Sol,,14)(Mi,m,246)", sC: "tc"},
+            { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "as sub"},
+            { line: "San Miguel. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "Santos ángeles de Dios., (Sol,,14)(Mi,m,206)", sC: ""},
+            { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "as sub"},
+            { line: "San Juan Bautista., (Sol,,14)(Mi,m,150)", sC: ""},
+            { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "as sub"},
+            { line: "San José. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "Santos Pedro y Pablo., (Sol,,14)(Mi,m,168)", sC: ""},
+            { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "as sub"},
+            { line: "San Andrés., (Sol,,14)(Mi,m,93)", sC: ""},
+            { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "as sub"},
+            { line: "San Juan. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "Santa María Magdalena. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "San Esteban. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "San Ignacio de Antioquía. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "San Lorenzo. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "Santas Perpetua y Felicidad., (Sol,,14)(Mi,m,248)", sC: ""},
+            { line: "RUEGA POR NOSOTROS. (Do,,12)(Re,7,171)", sC: "as sub"},
+            { line: "Santa Inés. (Sol,,14)(Mi,m,83)", sC: ""},
+            { line: "RUEGA POR NOSOTROS. (Do,,12)(Re,7,171)", sC: "as sub"},
+            { line: "San Gregorio. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "San Agustín. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "San Atanasio. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "San Basilio. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "San Martín. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "San Benito. ", sC: "height"},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "Santos Francisco y Domingo. (Sol,,14)(Mi,m,233)", sC: ""},
+            { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "sub"},
+            { line: "San Francisco Javier. ", sC: "height"},
+            { line: "RUEGA POR NOSOTROS.", sC: "sub"},
+            { line: "San Juan María Vianney. ", sC: "height"},
+            
+            { line: "Santa Catalina de Siena., (Sol,,14)(Mi,m,84)", sC: "tc"},
+            { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "as sub"},
+            { line: "Santa Teresa de Jesús. ", sC: ""},
+            { line: "\u200B      \"              \"              \" ", sC: "sub"},
+            { line: "\u200B  En las letanías se pueden añadir algunos nombres de santos, \n especialmente el del titular de la iglesia y los de los patronos \n del lugar y de los que van a ser bautizados. ", sC: "redc", color: "red"},
+//          { line: "En las letanías se pueden añadir algunos nombres de santos, especialmente el del titular de la iglesia y los de los patronos del lugar y de los que van a ser bautizados. ", sC: "redc", color: "red"},
+            { line: "Santos y santas de Dios, ", sC: "height"},
+            { line: "RUEGA POR NOSOTROS.,", sC: "as sub"},
+            { line: "", sC: "",},
+            { line: "Muéstrate propicio., (Sol,,14)(Mi,m,149)", sC: ""},
+            { line: "LÍBRANOS, SEÑOR., (Do,,12)(Re,7,171)", sC: "ta as sub"},
+            { line: "De todo mal. ", sC: "height"},
+            { line: "\u200B         \"              \" ", sC: "sub"},
+            { line: "De todo pecado. ", sC: "height"},
+            { line: "\u200B         \"              \" ", sC: "sub"},
+            { line: "De la muerte eterna. ", sC: "height"},
+            { line: "\u200B         \"              \" ", sC: "sub"},
+            { line: "Por tu encarnación. ", sC: "height"},
+            { line: "\u200B         \"              \" ", sC: "sub"},
+            { line: "Por tu muerte y resurrección. ", sC: "height"},
+            { line: "\u200B         \"              \" ", sC: "sub"},
+            { line: "Por el envío del Espíritu Santo. ", sC: "height"},
+            { line: "\u200B         \"              \" ", sC: "sub"},
+            { line: "Nosotros que somos pecadores., (Sol,,14)(Mi,m,272)", sC: "tc"},
+            { line: "TE ROGAMOS, ÓYENOS., (Do,,12)(Re,7,171)", sC: "as sub der"},
+            { line: "Si hay bautizados, ", sC: "redc", color: "red"},
+            { line: "Para que regeneres a, (Sol,,14)", sC: "tc"},
+            { line: "... N/. ", sC: "sub2", color: "red"},
+            { line: "\u200B                 con la gracia del Bautismo., (Mi,m,334)", sC: "height"},
+            { line: "\u200B             \"              \" ", sC: "sub"},
+            { line: "Para que regeneres a estos, (Sol,,14)", sC: "tc"},
+            { line: "\u200B   elegidos con la gracia del Bautismo., (Mi,m,335)", sC: "height"},
+            { line: "\u200B             \"              \" ", sC: "sub"},
+            { line: "Si no hay bautizados, ", sC: "redc", color: "red"},
+            { line: "Para que santifiques esta agua, (Sol,,14)", sC: "tc"},
+            { line: "\u200B   en la que renacerán tus nuevos hijos., (Mi,m,342)", sC: "height"},
+            { line: "\u200B             \"              \" ", sC: "sub"},
+            { line: "Jesús hijo de Dios vivo., (Sol,,14)(Mi,m,117)", sC: "tc"},
+            { line: "TE ROGAMOS, ÓYENOS., (Do,,12)(Re,7,171)", sC: "ta as sub"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cristo, óyenos., (Sol,,14)(Mi,m,127)", sC: "tc"},
+            { line: "CRISTO, ÓYENOS., (Do,,12)(Re,7,171)", sC: "ta as sub"},
+            { line: "Cristo, escúchanos., (Sol,,14)(Mi,m,127)", sC: "tc"},
+            { line: "CRISTO, ESCÚCHANOS., (Do,,12)(Re,7,171)", sC: "ta as sub"},
+
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: LETANÍAS DE LOS SANTOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════════════╗
+║           LETANÍAS PENITENCIALES I               ║
+╚══════════════════════════════════════════════════╝  */
+   {
+        id: "letaniaspenitenciales1",
+        tt: "Letanías Penitenciales I",
+        title: "Letanías Penitenciales I",
+        subtitle: "Letanía para la Celebración Penitencial – modelo abreviado",
+        category: ["Liturgia","Penitencial"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "191",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/letaniaspenitenciales1.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=letaniasdelossantos",
+        sig: "/src/index.html?canto=letaniaspenitencialesii",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Tú que al ciego que gritaba le diste la vista,, (Mi,m,20)(La,m,383)", sC: "tc"},
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "ta as"},
+            { line: "Señor, ten piedad., (Do,,39)(Si,7,151)", sC: "tc"},
+            { line: "SEÑOR, TEN PIEDAD., (Do,,47)(Si,7,176)", sC: "ta as srtp"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que no condenaste a la adúltera,, (Mi,m,20)(La,m,291)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que comiste con publicanos y pecadores,, (Mi,m,20)(La,m,380)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que llevaste la salvación a la casa de Zaqueo,, (Mi,m,20)(La,m,445)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que de la muerte llamaste a Lázaro,, (Mi,m,20)(La,m,323)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que a Judas lo amaste hasta el final,, (Mi,m,20)(La,m,260)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor, ten piedad., (Do,,10)(Si,7,151)", sC: "tc"},
+            { line: "SEÑOR, TEN PIEDAD., (Do,,50)(Si,7,170)", sC: "ta as srtp"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que desde la cruz perdonaste al ladrón,, (Mi,m,20)(La,m,387)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que eres el único que no te escandalizas de mí,, (Mi,m,20)(La,m,468)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_7", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que eres el único que amas al enemigo, (Mi,m,20)(La,m,381)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_8", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que has entrado en la muerte por mis pecados, Señor,, (Mi,m,20)(La,m,436)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_9", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que para mi salvación has resucitado de la muerte,, (Mi,m,20)(La,m,483)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_10", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor, ten piedad., (Do,,10)(Si,7,151)", sC: "tc"},
+            { line: "SEÑOR, TEN PIEDAD., (Do,,50)(Si,7,170)", sC: "ta as srtp"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: LETANÍAS PENITENCIALES I
+// SIGUIENTE CANTO DEBAJO
+
+
 
 
 

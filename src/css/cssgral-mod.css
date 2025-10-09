@@ -89,9 +89,18 @@ body {
 body::-webkit-scrollbar {
 display: none;}
 
-/* background-color: white; REMOVIDO: Ahora se controla por las clases cat- */
-@media(min-width: 384px){body {padding: 0px;}}
-@media(min-width: 768px){body {padding: 0px;}}
+@media(min-width: 384px){
+    body {
+        /* background-color: white; REMOVIDO: Ahora se controla por las clases cat- */
+        padding: 0px;
+    }
+}
+@media(min-width: 768px){
+    body {
+        /* background-color: white; REMOVIDO: Ahora se controla por las clases cat- */
+        padding: 0px;
+    }
+}
 
 .container {
     background-color: #fff;
@@ -100,27 +109,27 @@ display: none;}
     text-align: center;
 }
 
-        @media(min-width: 384px){
-            .container {
-                padding: 0px 3px 20px 3px;
-                text-align: center;
-                width: 98%;     /* normalizando posicion del contenido: no quitar*/
-            }
-        }
-        @media(min-width: 768px){
-            .container {
-                padding: 0px 1px 20px 0px;
-                text-align: center;
-                width: 98%;
-            }
-        }
-        @media(min-width: 992px){
-            .container {
-                padding: 0px 3px 50px 3px;
-                text-align: center;
-                width: 98%;
-            }
-        }
+@media(min-width: 384px){
+    .container {
+        padding: 0px 3px 20px 3px;
+        text-align: center;
+        width: 90%;     /* normalizando posicion del contenido: no quitar*/
+    }
+}
+@media(min-width: 768px){
+    .container {
+        padding: 0px 1px 20px 0px;
+        text-align: center;
+        width: 82%;
+    }
+}
+@media(min-width: 992px){
+    .container {
+        padding: 0px 3px 50px 3px;
+        text-align: center;
+        width: 95%;
+    }
+}
 
 .main-wrapper {
     display: flex;
@@ -299,9 +308,6 @@ display: none;}
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
-    @media (min-width:384px){.toolbar select,.toolbar .search-input {padding: 5px 0px;}}
-
-
 .toolbar select:focus,
 .toolbar .search-input:focus {
     outline: none;
@@ -396,32 +402,19 @@ display: none;}
 }
 
 /* Estilos para el diseño de dos columnas */
+.canto-content-wrapper {
+    display: flex;
+    flex-direction: column; /* Por defecto, apilado en pantallas pequeñas */
+    gap: 20px;
+    width: 100%;
+}
 
 .canto-column {
     width: 100%;
     box-sizing: border-box;
 }
 
-
 /* Media query para pantallas de escritorio (992px y más) */
-@media (min-width: 384px) {
-        .canto-content-wrapper {
-        display: flex;
-        flex-direction: column; /* Por defecto, apilado en pantallas pequeñas */
-        gap: 20px;
-        width: 96%;
-        margin-left: 4%;
-    }
-}
-@media (min-width: 768px) {
-    .canto-content-wrapper {
-        display: flex;
-        flex-direction: column; /* Por defecto, apilado en pantallas pequeñas */
-        gap: 20px;
-        width: 96%;
-        margin-left: 4%;
-    }
-}
 @media (min-width: 992px) {
     .canto-content-wrapper {
         width: 992px;
@@ -449,30 +442,41 @@ display: none;}
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
 }
 
-
 .canto-content-wrapper.single-column-mode #canto-left-container {
     width: 100%; /* El contenedor izquierdo ocupa todo el ancho del wrapper */
-    padding-left: 7%; /* Empujar el contenido a la derecha un 10% de su ancho */
-    padding-right: 1%; /* Mantener el equilibrio */
+    padding-left: 10%; /* Empujar el contenido a la derecha un 10% de su ancho */
+    padding-right: 10%; /* Mantener el equilibrio */
     box-sizing: border-box; /* Incluir el padding en el cálculo del ancho */
-}
-@media (min-width: 384px) {.canto-content-wrapper.single-column-mode #canto-left-container {
-        padding-left: 5%; /* Menos padding en pantallas pequeñas */
-        padding-right: 0.5%;}}
+}    
 
-@media (min-width: 768px) {.canto-content-wrapper.single-column-mode #canto-left-container {
-        padding-left: 5%; /* Menos padding en pantallas pequeñas */
-        padding-right: 0.5%;}}
-    
-    @media (min-width: 384px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 380px;}}
-    @media (min-width: 768px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 768px;}} /*width: max-content;*/
-    @media (min-width: 992px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 992px;}}
+        @media (min-width: 384px) {
+            .canto-content-wrapper.single-column-mode #canto-left-container {
+                width: max-content;
+            }
+        }
+    @media (min-width: 768px) {
+        .canto-content-wrapper.single-column-mode #canto-left-container {
+            width: max-content;
+        }
+    }
+    @media (min-width: 992px) {
+        .canto-content-wrapper.single-column-mode #canto-left-container {
+            width: 992px;
+        }
+    }
 
 .canto-content-wrapper.single-column-mode #canto-right-container {
     display: none; /* Ocultar el contenedor derecho */
 }
 
 /* Ajustar padding para pantallas más pequeñas en modo de una sola columna */
+@media (max-width: 767px) {
+    .canto-content-wrapper.single-column-mode #canto-left-container {
+        padding-left: 5%; /* Menos padding en pantallas pequeñas */
+        padding-right: 5%;
+    }
+}
+
 
 .linea-canto {
     position: relative;
@@ -526,7 +530,6 @@ display: none;}
     /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
     font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
     font-weight: bold;
-/*    color: var(--SangreDeCristo);*/
     color: rgb(196 76 75);
     background-color: transparent;
     white-space: nowrap;
@@ -634,7 +637,6 @@ display: none;}
         position: relative;
         padding-left: 0em;
         min-height: 1.5em;
-        width: max-content;
     }
 
 /* Estilos COMPARTIDOS por todos los ::before */
@@ -675,7 +677,7 @@ display: none;}
     .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
         font-size: 1.6rem;
-        left: -33px;
+        left: -40px;
         top: 20px;
     }
     .tca::before {
@@ -703,7 +705,7 @@ display: none;}
 
 /* Color GRIS para la mayoría */
 .ta::before, .tc::before, .tn::before, .tca::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .bis::before, .pa::before, .tc1::before, .tc2::before
-{color: #c2b5b5; /* Gris semitransparente */}
+{color: #80808065; /* Gris semitransparente */}
 
 .aleluya::before {font-weight: bolder;}
 
@@ -1085,4 +1087,3 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 .fontstyle {font-style: italic;}
 .fontsizelarge {font-size: large;}
 .fontsizemedium {font-size: medium;}
-

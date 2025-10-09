@@ -396,32 +396,19 @@ display: none;}
 }
 
 /* Estilos para el diseño de dos columnas */
+.canto-content-wrapper {
+    display: flex;
+    flex-direction: column; /* Por defecto, apilado en pantallas pequeñas */
+    gap: 20px;
+    width: 100%;
+}
 
 .canto-column {
     width: 100%;
     box-sizing: border-box;
 }
 
-
 /* Media query para pantallas de escritorio (992px y más) */
-@media (min-width: 384px) {
-        .canto-content-wrapper {
-        display: flex;
-        flex-direction: column; /* Por defecto, apilado en pantallas pequeñas */
-        gap: 20px;
-        width: 96%;
-        margin-left: 4%;
-    }
-}
-@media (min-width: 768px) {
-    .canto-content-wrapper {
-        display: flex;
-        flex-direction: column; /* Por defecto, apilado en pantallas pequeñas */
-        gap: 20px;
-        width: 96%;
-        margin-left: 4%;
-    }
-}
 @media (min-width: 992px) {
     .canto-content-wrapper {
         width: 992px;
@@ -449,22 +436,14 @@ display: none;}
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
 }
 
-
 .canto-content-wrapper.single-column-mode #canto-left-container {
     width: 100%; /* El contenedor izquierdo ocupa todo el ancho del wrapper */
     padding-left: 7%; /* Empujar el contenido a la derecha un 10% de su ancho */
     padding-right: 1%; /* Mantener el equilibrio */
     box-sizing: border-box; /* Incluir el padding en el cálculo del ancho */
 }
-@media (min-width: 384px) {.canto-content-wrapper.single-column-mode #canto-left-container {
-        padding-left: 5%; /* Menos padding en pantallas pequeñas */
-        padding-right: 0.5%;}}
-
-@media (min-width: 768px) {.canto-content-wrapper.single-column-mode #canto-left-container {
-        padding-left: 5%; /* Menos padding en pantallas pequeñas */
-        padding-right: 0.5%;}}
     
-    @media (min-width: 384px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 380px;}}
+    @media (min-width: 384px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 380px;margin-left: -10px;}}
     @media (min-width: 768px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 768px;}} /*width: max-content;*/
     @media (min-width: 992px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 992px;}}
 
@@ -473,6 +452,19 @@ display: none;}
 }
 
 /* Ajustar padding para pantallas más pequeñas en modo de una sola columna */
+@media (max-width: 384px) {
+    .canto-content-wrapper.single-column-mode #canto-left-container {
+        padding-left: 15%; /* Menos padding en pantallas pequeñas */
+        padding-right: 0.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .canto-content-wrapper.single-column-mode #canto-left-container {
+        padding-left: 5%; /* Menos padding en pantallas pequeñas */
+        padding-right: 0.5%;
+    }
+}
 
 .linea-canto {
     position: relative;
@@ -675,7 +667,7 @@ display: none;}
     .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
         font-size: 1.6rem;
-        left: -33px;
+        left: -40px;
         top: 20px;
     }
     .tca::before {
@@ -703,7 +695,7 @@ display: none;}
 
 /* Color GRIS para la mayoría */
 .ta::before, .tc::before, .tn::before, .tca::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .bis::before, .pa::before, .tc1::before, .tc2::before
-{color: #c2b5b5; /* Gris semitransparente */}
+{color: #80808065; /* Gris semitransparente */}
 
 .aleluya::before {font-weight: bolder;}
 
@@ -1085,4 +1077,3 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 .fontstyle {font-style: italic;}
 .fontsizelarge {font-size: large;}
 .fontsizemedium {font-size: medium;}
-
