@@ -68,8 +68,7 @@ const allCantosData = [
             { line: "Y NOS PRECEDE EN GALILEA, (Fa,,10)(Mi,,254)", sC: "as"},
             { line: "Y NOS PRECEDE EN GALILEA. (Fa,,10)(Mi,,254)", sC: "as"},
             { line: "Tú, Rey victorioso, danos tú la salvación. (Fa,,10)(Mi,,356)", sC: "mt tc"},
-        ]}
-    ,
+        ]},
     /*
 ╔════════════════════════════════════════════════════════════════╗
 ║                A NADIE DEMOS OCASIÓN DE TROPIEZO               ║
@@ -14465,7 +14464,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=gloriaadiosenloaltodelcielo",
-        sig: "/src/index.html?canto=aleluyainterleccional",
+        sig: "/src/index.html?canto=letaniaspenitenciales1",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Señor, ten piedad. (Mi,m,20)", sC: "tc height"},
@@ -14568,6 +14567,108 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: LETANÍAS DE LOS SANTOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔══════════════════════════════════════════════════╗
+║           LETANÍAS PENITENCIALES I               ║
+╚══════════════════════════════════════════════════╝  */
+   {
+        id: "letaniaspenitenciales1",
+        tt: "Letanías Penitenciales I",
+        title: "Letanías Penitenciales I",
+        subtitle: "Letanía para la Celebración Penitencial – modelo abreviado",
+        category: ["Liturgia","Penitencial"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "191",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/letaniaspenitenciales1.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=letaniasdelossantos",
+        sig: "/src/index.html?canto=letaniaspenitencialesii",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Tú que al ciego que gritaba le diste la vista,, (Mi,m,20)(La,m,383)", sC: "tc"},
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "ta as"},
+            { line: "Señor, ten piedad., (Do,,39)(Si,7,151)", sC: "tc"},
+            { line: "SEÑOR, TEN PIEDAD., (Do,,47)(Si,7,176)", sC: "ta as srtp"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que no condenaste a la adúltera,, (Mi,m,20)(La,m,291)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que comiste con publicanos y pecadores,, (Mi,m,20)(La,m,380)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que llevaste la salvación a la casa de Zaqueo,, (Mi,m,20)(La,m,445)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que de la muerte llamaste a Lázaro,, (Mi,m,20)(La,m,323)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que a Judas lo amaste hasta el final,, (Mi,m,20)(La,m,260)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor, ten piedad., (Do,,10)(Si,7,151)", sC: "tc"},
+            { line: "SEÑOR, TEN PIEDAD., (Do,,50)(Si,7,170)", sC: "ta as srtp"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que desde la cruz perdonaste al ladrón,, (Mi,m,20)(La,m,387)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que eres el único que no te escandalizas de mí,, (Mi,m,20)(La,m,468)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_7", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que eres el único que amas al enemigo, (Mi,m,20)(La,m,381)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_8", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que has entrado en la muerte por mis pecados, Señor,, (Mi,m,20)(La,m,436)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_9", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú que para mi salvación has resucitado de la muerte,, (Mi,m,20)(La,m,483)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_10", initialState: "collapsed",
+       triggerLine: "TEN PIEDAD DE MÍ (Si,7,173)", sC: "ta as top1", lines: [
+            { line: "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)", sC: "as sub"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor, ten piedad., (Do,,10)(Si,7,151)", sC: "tc"},
+            { line: "SEÑOR, TEN PIEDAD., (Do,,50)(Si,7,170)", sC: "ta as srtp"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: LETANÍAS PENITENCIALES I
 // SIGUIENTE CANTO DEBAJO
 
 
