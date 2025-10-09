@@ -519,6 +519,7 @@ display: none;}
     /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
     font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
     font-weight: bold;
+/*    color: var(--SangreDeCristo);*/
     color: rgb(196 76 75);
     background-color: transparent;
     white-space: nowrap;
