@@ -1,7 +1,7 @@
 ﻿        @media (min-width: 384px) {
             .container {margin-left: 0%;}
             .r1::before {height: 129px;margin-left: 238px;margin-top: -11%;}
-            .jte {margin-top: -33px;margin-left: 120px;}
+            .jte {width: max-content;margin-top: -33px;margin-left: 120px;}
         }
         @media (min-width: 768px) {
             .container {margin-left: 0%;}
