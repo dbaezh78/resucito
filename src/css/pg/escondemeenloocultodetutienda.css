@@ -1,5 +1,5 @@
-        @media (min-width: 384px) {
-            .container {margin-left: 1%;}
+﻿        @media (min-width: 384px) {
+            .container {margin-left: 0%;}
             .r1::before {
                 height: 95px;
                 margin-left: 228px;
@@ -22,3 +22,4 @@
                 margin-top: -9%;
             }
         }
+

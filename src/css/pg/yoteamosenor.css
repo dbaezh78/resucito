@@ -1,5 +1,5 @@
-        @media (min-width: 384px) {
-            .container {margin-left: 5%;}
+﻿        @media (min-width: 384px) {
+            .container {margin-left: 0%;}
             .r1::before {height: 129px;margin-left: 238px;margin-top: -11%;}
             .canto-imagen {width: 356px;margin-left: 0px;}
             .ast::before {margin-top: 10px;margin-left: -13px;font-size: large;}
@@ -22,3 +22,4 @@
             .ast::before {margin-top: 13px;margin-left: -30px;font-size: x-large;}
             .astd::before {margin-top: 14px;margin-left: -30px;font-size: x-large;}
         }
+

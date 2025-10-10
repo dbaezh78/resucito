@@ -1,5 +1,5 @@
-        @media (min-width: 384px) {
-            .container {margin-left: 2%;}
+﻿        @media (min-width: 384px) {
+            .container {margin-left: 0%;}
             .dbsize {max-width: 50%;margin-left: 4px;}
             .ast::before {height: 40px;margin-left: 138px;margin-top: -8px;}
         }

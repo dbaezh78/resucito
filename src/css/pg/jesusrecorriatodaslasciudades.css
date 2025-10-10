@@ -1,5 +1,5 @@
-        @media (min-width: 384px) {
-            .container {margin-left: 3%;}
+﻿        @media (min-width: 384px) {
+            .container {margin-left: 0%;}
             .r1::before {height: 93px;margin-left: 215px;margin-top: -48px;}
         }
         @media (min-width: 768px) {
@@ -12,4 +12,5 @@
             .txcant {font-size: 15.4px;}
             .tleft {margin-top: -46px;margin-left: 215px;}
         }
+
 

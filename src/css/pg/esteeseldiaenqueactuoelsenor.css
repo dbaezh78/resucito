@@ -1,5 +1,5 @@
-        @media (min-width: 384px) {
-            .container {margin-left: 1%;}
+﻿        @media (min-width: 384px) {
+            .container {margin-left: 0%;}
             .r1::before {
                 height: 202px;
                 margin-left: 228PX;
@@ -141,7 +141,7 @@
     }
 
 
-.ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before {
+.ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niÃ±o::before, .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before {
     @media (min-width: 992px) {
         margin-top: -1%;
     }

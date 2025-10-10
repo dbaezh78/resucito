@@ -1,7 +1,7 @@
-.a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,.a9,.a10,.a11,.a12, .t0 { width: fit-content; }
+﻿.a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,.a9,.a10,.a11,.a12, .t0 { width: fit-content; }
 
         @media (min-width: 384px) {
-            .container {margin-left: 5%;}
+            .container {margin-left: 0%;}
             .r1::before {height: 129px;margin-left: 238px;margin-top: -11%;}
             .a2{margin-top: -34px;margin-left: 200px;}
             .a4{margin-top: -36px;margin-left: 40px;}

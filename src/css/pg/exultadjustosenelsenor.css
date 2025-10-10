@@ -1,10 +1,10 @@
-        .melisma::before, .melisma1::before  {
+﻿        .melisma::before, .melisma1::before  {
             font-style: italic;
             color: red;
         }
 
         @media (min-width: 384px) {
-            .container {margin-left: 2%;}
+            .container {margin-left: 0%;}
             .r1::before {height: 133px;margin-left: 186px;margin-top: -14%;}
             .melisma::before {font-size: 0.8rem;margin-top: 0%;left: 217px;}
             .melisma1::before {font-size: 0.9rem;left: 155px;top: 14px;}

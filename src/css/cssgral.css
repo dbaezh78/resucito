@@ -152,7 +152,7 @@ display: none;}
     .main-wrapper {
         width: 384px; /*98%;*/
         padding: 0px;
-        /*  align-items: center;        /* CSs para Central contenido */
+        /* align-items: center;        /* CSs para Central contenido */
         margin-left: 1px;
         margin-right: 1px;
         margin-top: 44px;
@@ -216,7 +216,7 @@ display: none;}
 /*
     .top-row-controls {
         position: relative; /* Relative for desktop */
-  /*      justify-content: space-between;
+  /* justify-content: space-between;
         padding: 0px 40px 0px 0px;
         left: -20px;
     }
@@ -294,7 +294,7 @@ display: none;}
     padding: 5px 7px;
     border-radius: 20px;
     border: 1px solid #ccc;
-    font-size: 0.9em;
+    font-size: 14.4px; /* Converted from 0.9em */
     background-color: #f9f9f9;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
@@ -310,7 +310,7 @@ display: none;}
 }
 
 .cejilla {
-    font-size: 1.2em !important;
+    font-size: 19.2px !important; /* Converted from 1.2em */
 }
 .search-input {width: 150px;transition: width 0.5s ease;}
 
@@ -351,18 +351,18 @@ display: none;}
 
 @media (min-width: 384px)  {
     .dbt1 {
-        font-size: 1.2rem;
+        font-size: 19.2px; /* Converted from 1.2rem */
         margin-top: 40px;
     }
 }
 @media (min-width: 768px)  {
     .dbt1 {
-        font-size: 2.5rem;
+        font-size: 40px; /* Converted from 2.5rem */
     }
 }
 @media (min-width: 992px)  {
     .dbt1 {
-        font-size: 2.5rem;
+        font-size: 40px; /* Converted from 2.5rem */
     }
 }
 
@@ -377,7 +377,7 @@ display: none;}
 
 @media (min-width: 384px) {
     .dbs2 {
-        font-size: 0.9rem;
+        font-size: 14.4px; /* Converted from 0.9rem */
         width: 330px;
         justify-self: center;
     }
@@ -391,7 +391,7 @@ display: none;}
 @media (min-width: 992px) {
     .dbs2 {
         width: 900px;
-        font-size: 1.2rem;
+        font-size: 19.2px; /* Converted from 1.2rem */
     }
 }
 
@@ -410,7 +410,7 @@ display: none;}
         flex-direction: column; /* Por defecto, apilado en pantallas pequeñas */
         gap: 20px;
         width: 96%;
-        margin-left: 4%;
+        margin-left: 5%;
     }
 }
 @media (min-width: 768px) {
@@ -456,16 +456,20 @@ display: none;}
     padding-right: 1%; /* Mantener el equilibrio */
     box-sizing: border-box; /* Incluir el padding en el cálculo del ancho */
 }
-@media (min-width: 384px) {.canto-content-wrapper.single-column-mode #canto-left-container {
-        padding-left: 5%; /* Menos padding en pantallas pequeñas */
-        padding-right: 0.5%;}}
 
-@media (min-width: 768px) {.canto-content-wrapper.single-column-mode #canto-left-container {
-        padding-left: 5%; /* Menos padding en pantallas pequeñas */
-        padding-right: 0.5%;}}
+
+    @media (min-width: 384px) {.canto-content-wrapper.single-column-mode #canto-left-container {
+        width: 380px;
+        padding-left: 5%;
+        padding-right: 0.5%;
+    }
+}
+    @media (min-width: 768px) {.canto-content-wrapper.single-column-mode #canto-left-container {
+        width: 768px;
+        padding-left: 5%;
+        padding-right: 0.5%;
     
-    @media (min-width: 384px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 380px;}}
-    @media (min-width: 768px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 768px;}} /*width: max-content;*/
+    }} /*width: max-content;*/
     @media (min-width: 992px) {.canto-content-wrapper.single-column-mode #canto-left-container {width: 992px;}}
 
 .canto-content-wrapper.single-column-mode #canto-right-container {
@@ -501,7 +505,7 @@ display: none;}
 }*/
 
 .letra {
-    font-size: 1.3em;
+    font-size: 20.8px; /* Converted from 1.3em */
     line-height: 1.6;
     color: #2c3e50;
     white-space: pre-wrap;
@@ -526,12 +530,12 @@ display: none;}
     /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
     font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
     font-weight: bold;
-/*    color: var(--SangreDeCristo);*/
+/* color: var(--SangreDeCristo);*/
     color: rgb(196 76 75);
     background-color: transparent;
     white-space: nowrap;
     transform: translateX(-50%);
-    font-size: 1.0em;
+    font-size: 16px; /* Converted from 1.0em */
     z-index: 10;
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -602,39 +606,39 @@ display: none;}
 
 /* Media queries para ajustar el tamaño de fuente según el ancho de la pantalla */
 @media (max-width: 383px) {
-    .letra { font-size: 1.0em; }
-    .nota-posicionada { font-size: 0.75em; }
+    .letra { font-size: 16px; } /* Converted from 1.0em */
+    .nota-posicionada { font-size: 12px; } /* Converted from 0.75em */
     .modal-content { padding: 20px; }
     .chord-list { grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); }
 }
 
 @media (min-width: 384px) and (max-width: 583px) {
-    .letra { font-size: 1em; }
-    .nota-posicionada { font-size: 0.9em; }
+    .letra { font-size: 16px; }
+    .nota-posicionada { font-size: 14.4px; }
 }
 
 @media (min-width: 584px) and (max-width: 767px) {
-    .letra { font-size: 1.2em; }
-    .nota-posicionada { font-size: 1.1em; }
+    .letra { font-size: 19.2px; }
+    .nota-posicionada { font-size: 17.6px; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .letra { font-size: 1.87em; }
-    .nota-posicionada { font-size: 1.32em; }
+    .letra { font-size: 29.92px}
+    .nota-posicionada { font-size: 21.12px;  }
 }
 
 @media (min-width: 992px) {
-    .letra { font-size: 1.4em; }
-    .nota-posicionada { font-size: 1.1em; }
+    .letra { font-size: 22.4px; }
+    .nota-posicionada { font-size: 17.6px; } /* Converted from 1.1em */
 }
 
 /* --- Nuevos estilos para etiquetas de sección --- */
 .ta, .tc, .tn, .tca, .tc1, .ta1, .ta2, .ta3, .niño, .hombres, .mujeres, .melisma, .melisma1, .bis, .pa, .aleluya, .stp, .ctp, .rpn
     {
         position: relative;
-        padding-left: 0em;
-        min-height: 1.5em;
-        width: max-content;
+        padding-left: 0px; /* Converted from 0em */
+        min-height: 24px; /* Converted from 1.5em */
+        width: 99%;
     }
 
 /* Estilos COMPARTIDOS por todos los ::before */
@@ -658,12 +662,12 @@ display: none;}
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
     .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
-        font-size: 0.9rem;
+        font-size: 14.4px;
         left: -17px;
         top: 14px;
     }
     .tca::before {
-        font-size: 0.9rem;
+        font-size: 14.4px; /* Converted from 0.9rem */
         margin-top: 14px;
         left: -35px;
      }
@@ -674,12 +678,12 @@ display: none;}
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
     .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
-        font-size: 1.6rem;
+        font-size: 25.6px; /* Converted from 1.6rem */
         left: -33px;
         top: 20px;
     }
     .tca::before {
-        font-size: 1.63rem;
+        font-size: 26.08px; /* Converted from 1.63rem */
         margin-top: 18px;
         left: -68px;
      }
@@ -690,12 +694,12 @@ display: none;}
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
     .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
-        font-size: 1.23rem;
+        font-size: 19.68px; /* Converted from 1.23rem */
         margin-top: -4px;
         left: -34px;
     }
      .tca::before {
-        font-size: 1.23rem;
+        font-size: 19.68px; /* Converted from 1.23rem */
         margin-top: 17px;
         left: -54px;
      }
@@ -791,7 +795,7 @@ hr {
     padding: 5px 10px;
     border-radius: 0px;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 14.4px; /* Converted from 0.9em */
     transition: background-color 0.2s ease;
 }
 
@@ -935,7 +939,7 @@ hr {
 .chord-image-item span {
     font-weight: bold;
     color: var(--chord-color-default-text); /* Color de texto blanco por defecto */
-    font-size: 0.9em;
+    font-size: 14.4px; /* Converted from 0.9em */
 }
 
 /* Clases para los colores de fondo de los acordes */
@@ -1085,4 +1089,3 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 .fontstyle {font-style: italic;}
 .fontsizelarge {font-size: large;}
 .fontsizemedium {font-size: medium;}
-

@@ -1,5 +1,5 @@
-        @media (min-width: 384px) {
-                .container {margin-left: 5%;}
+﻿        @media (min-width: 384px) {
+                .container {margin-left: 0%;}
                 .sub1 {margin-top: -61px;margin-left: 186px;background-color: white;width: fit-content;}
                 .sub2 {/*margin-top: -45px;*/background-color: white;}
         }
@@ -15,3 +15,4 @@
                 .sub1 {margin-top: -82px;margin-left: 260px;background-color: white;width: fit-content}
                 .sub2 {/*margin-top: -45px;*/background-color: white;}
         }
+

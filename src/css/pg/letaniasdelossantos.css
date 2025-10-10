@@ -1,6 +1,6 @@
-@media (min-width: 384px) {
+﻿@media (min-width: 384px) {
 
-            .container {margin-left: 7%;}
+            .container {margin-left: 0%;}
 /*
             .r1::before {height: 129px;margin-left: 238px;margin-top: -11%;}
             .tc::before {font-size: 0.9rem;left: -15px;top: 49px;}
@@ -76,4 +76,5 @@
     font-weight: bold;
     white-space: nowrap;
 }
+
 

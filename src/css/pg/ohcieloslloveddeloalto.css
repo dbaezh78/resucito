@@ -1,5 +1,5 @@
-        @media (min-width: 384px) {
-            .container {margin-left: 5%;}
+﻿        @media (min-width: 384px) {
+            .container {margin-left: 0%;}
             .r1::before {height: 129px;margin-left: 238px;margin-top: -11%;}
             .jte {margin-top: -33px;margin-left: 120px;}
         }
@@ -13,3 +13,4 @@
             .r1::before {height: 173px;margin-left: 337px;margin-top: -6%;}
             .jte {margin-top: -46px;margin-left: 162px;}
         }
+

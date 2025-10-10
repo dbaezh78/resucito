@@ -1,5 +1,5 @@
-        @media (min-width: 384px) {
-            .container {margin-left: 3%;}
+﻿        @media (min-width: 384px) {
+            .container {margin-left: 0%;}
             .ast::before {margin-left: 164px;margin-top: 5px;}
         }
         @media (min-width: 768px) {

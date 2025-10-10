@@ -1,4 +1,4 @@
-    .cristo {
+﻿    .cristo {
         position: fixed;
         align-self: flex-start;
         opacity: 0.4; /* Adjust the opacity value (0.0 - 1.0) */
@@ -89,7 +89,7 @@
 
 
                 @media (min-width: 384px) {
-            .container {margin-left: 7%;}
+            .container {margin-left: 0%;}
             .r1::before {height: 129px;margin-left: 238px;margin-top: -11%;}
             .canto-content-wrapper.single-column-mode #canto-left-container {padding-left: 0%;padding-right: 0%;}
             .mujeres::before {content: "M:";}.hombress::before {content: "H:";}
@@ -104,3 +104,4 @@
             .r1::before {height: 95px;margin-left: 333px;margin-top: -7%;}
             .hombres::before, .mujeres::before {font-size: 1.4rem;margin-left: -78px;margin-top: -7px;}
         }
+
