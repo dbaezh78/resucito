@@ -1,11 +1,11 @@
 ﻿        @media (min-width: 384px) {
             .container {margin-left: 0%;}
-            .dbsize {max-width: 50%;margin-left: 4px;}
+            .dbsize {max-width: max-content;margin-left: 4px;}
             .ast::before {height: 40px;margin-left: 138px;margin-top: -8px;}
         }
         @media (min-width: 768px) {
             .container {margin-left: 0%;}
-            .dbsize {max-width: 58%;margin-left: 4px;}
+            .dbsize {max-width: max-content;margin-left: 4px;}
             .ast::before {height: 40px;margin-left: 245px;margin-top: -10px;}
         }
         @media (min-width: 992px) {

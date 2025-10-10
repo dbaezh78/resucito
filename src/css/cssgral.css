@@ -351,13 +351,14 @@ display: none;}
 
 @media (min-width: 384px)  {
     .dbt1 {
-        font-size: 19.2px; /* Converted from 1.2rem */
-        margin-top: 40px;
+        font-size: 1.5rem; /* Converted from 1.2rem */
+        margin-top: 65px;
     }
 }
 @media (min-width: 768px)  {
     .dbt1 {
         font-size: 40px; /* Converted from 2.5rem */
+        margin-top: 76px;
     }
 }
 @media (min-width: 992px)  {

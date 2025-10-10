@@ -8,7 +8,7 @@
             .rpn::before {font-size: 0.7rem;margin-top: -35px;margin-left: 220px;color: black; font-weight: bolder;}
             */
             .sub {margin-top: -35px;margin-left: 200px;font-weight: bolder;width: max-content;}
-            .canto-content-wrapper.single-column-mode #canto-left-container {padding-left: 0%;padding-right: 0%;}
+            .canto-content-wrapper.single-column-mode #canto-left-container {padding-left: 4%;padding-right: 0%;}
             .sub2 {margin-top: -36px;margin-left: 153px;font-weight: bolder;}
             .height {margin-top: -16px}
             .redc {width: 365px;font-size:small;margin-left: -8px;line-height:normal}

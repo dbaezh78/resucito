@@ -13854,10 +13854,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         ant: "/src/index.html?canto=zaqueo",
         sig: "/src/ai.html",
 // Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "CANTOS LIRÚSTICOS ", sC: "as cl", color: "#544d47"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+    lizq: [ 
+            { line: "", sC: "cantosliturgicos", color: "#544d47"},
             { line: "Modelo I ", sC: "as left", color: "rgb(196 76 75)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Te lo pedimos Señor., (Sol,,15)(Re,,193)(Sol,,236)", sC: "tc"},
