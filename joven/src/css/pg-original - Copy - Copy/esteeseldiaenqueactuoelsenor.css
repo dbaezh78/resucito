@@ -1,0 +1,148 @@
+        @media (min-width: 384px) {
+            .container {margin-left: 1%;}
+            .r1::before {
+                height: 202px;
+                margin-left: 228PX;
+                margin-top: -10%;
+            }
+        }
+        @media (min-width: 768px) {
+            .container {margin-left: 0%;}
+            .r1::before {
+                height: 326px;
+                margin-left: 415PX;
+                margin-top: -8%;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {margin-left: 8%;}
+            .r1::before {
+                height: 255px;
+                margin-left: 324px;
+                margin-top: -9%;
+            }
+        }
+
+.ab1 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 133px;}
+    @media (min-width: 768px){margin-top: -62px;margin-left: 245px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 190px;}
+}
+
+.ab2 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 95px;}
+    @media (min-width: 768px){margin-top: -58px;margin-left: 160px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 121px;}
+}
+
+.ab3 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 96px;}
+    @media (min-width: 768px){margin-top: -58px;margin-left: 156px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 121px;}
+}
+
+.ab4 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 64px;}
+    @media (min-width: 768px){margin-top: -58px;margin-left: 108px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 80px;}
+}
+
+.ab5 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 203px;}
+    @media (min-width: 768px){margin-top: -58px;margin-left: 380px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 283px;}
+}
+
+.ab6 {
+    @media (min-width: 384px){margin-top: -20px;margin-left: 203px;}
+    @media (min-width: 768px){margin-top: -30px;margin-left: 383px;}
+    @media (min-width: 992px){margin-top: -20px;margin-left: 283px;}
+}
+
+.ab7 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 229px;}
+    @media (min-width: 768px){margin-top: -58px;margin-left: 421px;}
+    @media (min-width: 992px){margin-top: -46px;margin-left: 317px;}
+}
+
+    @media (min-width: 384px){
+        .ab8 {
+            margin-top: -20px;
+            margin-left: 203px;
+        }
+    }
+    @media (min-width: 768px){
+        .ab8 {
+            margin-top: -30px;
+            margin-left: 408px;
+        }
+    }
+    @media (min-width: 992px){
+        .ab8 {
+            margin-top: -20px;
+            margin-left: 315px;
+            width: max-content;
+        }
+    }
+
+.ab9 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 104px;}
+    @media (min-width: 768px){margin-top: -60px;margin-left: 187px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 141px;}
+}
+
+.ab10 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 166px;}
+    @media (min-width: 768px){margin-top: -59px;margin-left: 312px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 232px;}
+}
+
+.ab11 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 115px;}
+    @media (min-width: 768px){margin-top: -60px;margin-left: 211px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 158px;}
+}
+
+.ab12 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 100px;}
+    @media (min-width: 768px){margin-top: -60px;margin-left: 180px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 135px;}
+}
+
+.ab13 {
+    @media (min-width: 384px){margin-top: -35px;margin-left: 115px;}
+    @media (min-width: 768px){margin-top: -62px;margin-left: 245px;}
+    @media (min-width: 992px){margin-top: -45px;margin-left: 205px;}
+}
+
+
+.bgtop{
+    background: white;
+}
+
+    @media (min-width: 384px){
+        .ab14 {
+            margin-top: -35px;
+            margin-left: 128px;
+        }
+    }
+    @media (min-width: 768px){
+        .ab14 {
+            margin-top: -62px;
+            margin-left: 245px;
+        }
+    }
+    @media (min-width: 992px){
+        .ab14 {
+            margin-top: -45px;
+            margin-left: 181px;
+            width: 165px;
+        }
+    }
+
+
+.ta::before, .tc::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .melisma::before, .bis::before, .pa::before, .tc1::before, .tc2::before {
+    @media (min-width: 992px) {
+        margin-top: -1%;
+    }
+}
