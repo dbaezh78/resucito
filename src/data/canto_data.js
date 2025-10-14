@@ -14437,6 +14437,70 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: CREDO
 // SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           GLORIA A DIOS EN LO ALTO DEL CIELO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "gloriaadiosenloaltodelcielo",
+        tt: "Gloria A Dios En Lo Alto Del Cielo",
+        title: "Gloria A Dios En Lo Alto Del Cielo",
+        subtitle: "Himno Litúrgico",
+        category: ["Liturgia","Navidad","Orinario","Pascua"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "188",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/gloriaadiosenloaltodelcielo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=credo",
+        sig: "/src/index.html?canto=letaniasdelossantos",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "GLORIA DIOS EN LO ALTO DEL CIELO,, (Re,,10)(La,,322)", sC: "ta as"},
+            { line: "Y PAZ EN LA TIERRA, (Sol,,43)", sC: "as"},
+            { line: "A LOS HOMBRES QUE AMA EL SEÑOR., (La,,339)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TE ALABAMOS, TE GLORIFICAMOS,, (Re,,91)(La,,276)", sC: "as"},
+            { line: "TE ADORAMOS, TE DAMOS GRACIAS, (Sol,,95)", sC: "as"},
+            { line: "POR TU INMENSA GLORIA., (La,,209)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor Dios, Rey celestial,, (Sol,,89)", sC: "tc"},
+            { line: "Dios Padre todopoderoso., (Fa#,m,221)", sC: ""},
+            { line: "Señor, Hijo único,, (Mi,m,125)", sC: ""},
+            { line: "JESUCRISTO., (La,,77)", sC: "ta"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor Dios, Cordero de Dios,, (Sol,,89)", sC: "tc"},
+            { line: "Hijo del Padre;, (Fa#,m,100)", sC: ""},
+            { line: "tú que quitas el pecado del mundo,, (Mi,m,293)", sC: ""},
+            { line: "TEN PIEDAD DE NOSOTROS., (La,,204)", sC: "ta as"},
+    ], lder: [
+            { line: "Tú que quitas el pecado del mundo,, (Sol,,96)", sC: "tc"},
+            { line: "atiende a nuestra súplica;, (Fa#,m,196)", sC: ""},
+            { line: "tú, que estás sentado, ", sC: ""},
+            { line: "a la derecha del Padre,, (Mi,m,176)", sC: ""},
+            { line: "TEN PIEDAD DE NOSOTROS;, (La,,204)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PORQUE SOLO TÚ ERES SANTO,, (Sol,,107)", sC: "ta as"},
+            { line: "SOLO TÚ SEÑOR,, (Fa#,m,138)", sC: "as"},
+            { line: "SOLO TÚ ALTÍSIMO,, (Mi,m,130)", sC: "as"},
+            { line: "JESUCRISTO,, (La,,78)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "con el Espíritu Santo, ", sC: "tc"},
+            { line: "en la gloria de Dios Padre., (Re,,207)", sC: ""},
+            { line: "AMÉN, AMÉN, (Sol,,12)(Re,,83)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: GLORIA A DIOS EN LO ALTO DEL CIELO
+// SIGUIENTE CANTO DEBAJO
+
 /*
 ╔════════════════════════════════════════════════════════╗
 ║           LETANÍAS DE LOS SANTOS               ║
@@ -14863,6 +14927,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: LETANÍAS PENITENCIALES II
 // SIGUIENTE CANTO DEBAJO
+
 /*
 ╔════════════════════════════════════════════════════════╗
 ║           PADRE NUESTRO               ║
@@ -14874,12 +14939,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         subtitle: "Tiempo de la Elección",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
+        cejilla: "2",
+        nCan: "⚠️Pueden cantarlo aquellas comunidades que han vivido la última parte de la etapa del Padre nuestro.",
         nCanURL: "",
         dbno: "193",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/padrenuestro.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -14901,7 +14966,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "DANOS HOY NUESTRO PAN DE CADA DÍA;, (Re,m,22)", sC: "as"},
             { line: "PERDONA NUESTRAS OFENSAS,, (Fa,,11)(La,m,247)", sC: "as"},
-            { line: "COMO TAMBIÉN NOSOTROS PERDONAMOS A LOS QUE NOS OFENDEN;, (Sol,m,27)(La,,614)", sC: "as"},
+            { line: "COMO TAMBIÉN NOSOTROS PERDONAMOS;, (Sol,m,27)", sC: "as"},
+            { line: "A LOS QUE NOS OFENDEN;, (La,,188)", sC: "as"},
             { line: "NO NOS DEJES CAER EN LA TENTACIÓN,, (Si♭,,10)(La,,354)", sC: "as"},
             { line: "Y LÍBRANOS DEL MAL., (Re,m,194)", sC: "as"},
     ], lder: [
@@ -14909,355 +14975,18 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // SIGUIENTE CANTO DEBAJO
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-╔════════════════════════════════════════════════════════╗
-║           GLORIA A DIOS EN LO ALTO DEL CIELO               ║
-╚════════════════════════════════════════════════════════╝  */
-   {
-        id: "gloriaadiosenloaltodelcielo",
-        tt: "Gloria A Dios En Lo Alto Del Cielo",
-        title: "Gloria A Dios En Lo Alto Del Cielo",
-        subtitle: "Himno Litúrgico",
-        category: ["Liturgia","Navidad","Orinario","Pascua"],
-        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        nCanURL: "",
-        dbno: "188",
-        notes: "",
-        mant: "No",
-        audioSrc: "https://audio.resucito.do/gloriaadiosenloaltodelcielo.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=credo",
-        sig: "/src/index.html?canto=letaniasdelossantos",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "GLORIA DIOS EN LO ALTO DEL CIELO,, (Re,,10)(La,,322)", sC: "ta as"},
-            { line: "Y PAZ EN LA TIERRA, (Sol,,43)", sC: "as"},
-            { line: "A LOS HOMBRES QUE AMA EL SEÑOR., (La,,339)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "TE ALABAMOS, TE GLORIFICAMOS,, (Re,,91)(La,,276)", sC: "as"},
-            { line: "TE ADORAMOS, TE DAMOS GRACIAS, (Sol,,95)", sC: "as"},
-            { line: "POR TU INMENSA GLORIA., (La,,209)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Señor Dios, Rey celestial,, (Sol,,89)", sC: "tc"},
-            { line: "Dios Padre todopoderoso., (Fa#,m,221)", sC: ""},
-            { line: "Señor, Hijo único,, (Mi,m,125)", sC: ""},
-            { line: "JESUCRISTO., (La,,77)", sC: "ta"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Señor Dios, Cordero de Dios,, (Sol,,89)", sC: "tc"},
-            { line: "Hijo del Padre;, (Fa#,m,100)", sC: ""},
-            { line: "tú que quitas el pecado del mundo,, (Mi,m,293)", sC: ""},
-            { line: "TEN PIEDAD DE NOSOTROS., (La,,204)", sC: "ta as"},
-    ], lder: [
-            { line: "Tú que quitas el pecado del mundo,, (Sol,,96)", sC: "tc"},
-            { line: "atiende a nuestra súplica;, (Fa#,m,196)", sC: ""},
-            { line: "tú, que estás sentado, ", sC: ""},
-            { line: "a la derecha del Padre,, (Mi,m,176)", sC: ""},
-            { line: "TEN PIEDAD DE NOSOTROS;, (La,,204)", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "PORQUE SOLO TÚ ERES SANTO,, (Sol,,107)", sC: "ta as"},
-            { line: "SOLO TÚ SEÑOR,, (Fa#,m,138)", sC: "as"},
-            { line: "SOLO TÚ ALTÍSIMO,, (Mi,m,130)", sC: "as"},
-            { line: "JESUCRISTO,, (La,,78)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "con el Espíritu Santo, ", sC: "tc"},
-            { line: "en la gloria de Dios Padre., (Re,,207)", sC: ""},
-            { line: "AMÉN, AMÉN, (Sol,,12)(Re,,83)", sC: "ta as"},
-]}, // ULTIMA LINEA DEL CANTO: GLORIA A DIOS EN LO ALTO DEL CIELO
-// SIGUIENTE CANTO DEBAJO
-
-
-
-/*
+//***************************************************** *
+// Plegaria Completa                                    *
+// Plegaria Eucaristica solo para Tablet y Celulares    *
+/****************************************************** *
 ╔═════════════════════════════════════════════════╗
-║           PLEGARIA EUCARÍSTICA II               ║
-╚═════════════════════════════════════════════════╝  */
-   {
-        id: "plegariaeucaristicaiimodeloip1",
-        tt: "Plegaria Eucarística II",
-        title: "Plegaria Eucarística II",
-        subtitle: "Modelo I",
-        category: ["Liturgia"],
-        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "Melodía adaptable para los prefacios de solemnidades o de varios tiempos litúrgicos, Ver: Tablet.",
-        nCanURL: "/src/index.html?canto=plegariaeucaristicaiimodeloi",
-        dbno: "194",
-        notes: "",
-        mant: "No",
-        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip1.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=padrenuestro",
-        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloip2",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "PREFACIO", sC: "sp2", color: "#9D9580"},
-            { line: "El Señor esté con vosotros., (Sol,,11)(La,m,211)", sC: "pa"},
-            { line: "Y CON TU ESPÍRITU., (Sol,,12)(La ,m,142)", sC: "ta"},
-            { line: "Levantemos el corazón., (Fa,,12)(Mi,,206)", sC: "pa"},
-            { line: "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (Fa,,10)(Mi,,393)", sC: "as"},
-            { line: "Demos gracias al Señor, nuestro Dios., (La ,m,335)", sC: "ta"},
-            { line: "A ES JUSTO Y NECESARIO., (Sol,,66)(La ,m,202)", sC: "as sb194"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "En verdad es justo y necesario,, (La ,m,15)(Sol,,254)", sC: "pa"},
-            { line: "es nuestro deber y salvación, (La ,m,251)", sC: ""},
-            { line: "darte gracias,, (Do,,80)", sC: ""},
-            { line: "siempre y en todo lugar,, (La ,m,213)", sC: ""},
-            { line: "a ti, Padre Santo,, (Sol,,28)", sC: ""},
-            { line: "por Jesucristo, tu Hijo amado., (La ,m,245)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Por Él, que es tu Palabra,, (Sol,,197)", sC: ""},
-            { line: "hiciste todas las cosas., (La ,m,177)", sC: ""},
-            { line: "Tú nos lo enviaste hecho hombre, (Do,,138)", sC: ""},
-            { line: "por obra del Espíritu Santo,, (La ,m,219)", sC: ""},
-            { line: "para que, nacido de María la Virgen,, (Sol,,297)", sC: ""},
-            { line: "fuera nuestro Salvador y Redentor., (La ,m,285)", sC: ""},
-    ], lder: [
-            { line: "Él, en cumplimiento de tu voluntad,, (Fa,,11)(Mi,,315)", sC: ""},
-            { line: "para destruir la muerte, (Fa,,15)", sC: "as"},
-            { line: "y manifestar la resurrección,, (Mi,,247)", sC: "as"},
-            { line: "extendió sus brazos en la cruz,, (La,m,74)(Sol,,269)", sC: ""},
-            { line: "y así adquirió para ti, (Fa,,197)", sC: ""},
-            { line: "un pueblo santo., (Mi,7,116)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "MURIENDO, (La,,11)", sC: "pa as r1"},
-            { line: "DESTRUYÓ NUESTRA MUERTE,, (Sol,,243)", sC: "as"},
-            { line: "RESUCITANDO, (Fa,,91)", sC: "as"},
-            { line: "RESTAURÓ NUESTRA VIDA., (Mi,,223)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Por eso, con los ángeles y los santos,, (La ,m,15)(Sol,,297)", sC: "pa"},
-            { line: "cantamos tu gloria diciendo:, (La ,m,220)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "SANTO, SANTO, SANTO, ", sC: "ta as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "TRANSICIÓN, ", sC: "sp1", color: "#9D9580"},
-            { line: "Santo eres en verdad, Señor,, ", sC: "nSpace", color: "#C24F4D"},
-            { line: "fuente de toda santidad:, ", sC: "nSpace", color: "#C24F4D"},
-            { line: "EPÍCLESIS. ORACIÓN CONSECRATORIA, ", sC: "sp1", color: "gray"},
-            { line: "Santifica estos dones con la efusión, ", sC: "pa nSpace", color: "#C24F4D"},
-            { line: "de tu Espíritu, de manera que sean para, ", sC: "nSpace", color: "#C24F4D"},
-            { line: "nosotros Cuerpo y ✠ Sangre, ", sC: "nSpace", color: "#C24F4D"},
-            { line: "de Jesucristo,nuestro Señor., ", sC: "nSpace", color: "#C24F4D"},
-]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
-// SIGUIENTE CANTO DEBAJO
-/*
-╔═════════════════════════════════════════════════╗
-║           PLEGARIA EUCARÍSTICA II               ║
-╚═════════════════════════════════════════════════╝  */
-   {
-        id: "plegariaeucaristicaiimodeloip2",
-        tt: "Plegaria Eucarística Ii",
-        title: "Plegaria Eucarística Ii",
-        subtitle: "Modelo I",
-        category: ["Liturgia"],
-        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "",
-        nCanURL: "",
-        dbno: "195",
-        notes: "",
-        mant: "No",
-        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip2.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloip1",
-        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloip3",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "RELATO DE LA INSTITUCIÓN,", sC: "sp1", color: "#9D9580"},
-            { line: "El cual, cuando iba a ser entregado a su Pasión,, (Re,m,21)", sC: "pa"},
-            { line: "voluntariamente aceptada, tomó el pan,, ", sC: ""},
-            { line: "y elevando los ojos a Ti, Padre, Padre,, ", sC: ""},
-            { line: "pronunció la bendición,, (Fa,,10)", sC: ""},
-            { line: "lo partió y lo dio a sus discípulos, diciendo:, (Sol,m,72)(Re,m,360)", sC: ""},
-            { line: "Tomad y comed todos de él,, (La,7,262)", sC: ""},
-            { line: "porque esto es mi Cuerpo,, (Re,m,91)", sC: ""},
-            { line: "que será entregado por vosotros., (La,7,157)(Re,m,270)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Del mismo modo, acabada la cena,, (Re,m,20)", sC: ""},
-            { line: "tomó el cáliz, lleno del fruto de la vid,, ", sC: ""},
-            { line: "y elevando los ojos a Ti, Padre, Padre,, ", sC: ""},
-            { line: "pronunció la bendición,, (Fa,,10)", sC: ""},
-            { line: "lo pasó a sus discípulos, diciendo:, (Sol,m,71)(Re,m,274)", sC: ""},
-            { line: "Tomad y bebed todos de él,, (La,7,255)", sC: ""},
-            { line: "porque este es el cáliz de mi Sangre,, (Re,m,91)", sC: ""},
-            { line: "Sangre de la alianza nueva y eterna,, ", sC: ""},
-            { line: "que será derramada por muchos, (La,7,269)", sC: ""},
-            { line: "para el perdón de los pecados., (Re,m,255)", sC: ""},
-            { line: "Haced esto como mi memorial., (La,7,83)(Re,m,280)", sC: ""},
-    ], lder: [
-            { line: "ACLAMACIÓN,", sC: "sp1", color: "#9D9580"},
-            { line: "Este es el sacramento de nuestra fe., (Sol,m,23)(La,7,339)", sC: "pa"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Re,m,19)", sC: "ta as"},
-            { line: "PROCLAMAMOS TU RESURRECCIÓN., (Sol,m,23)", sC: "as"},
-            { line: "¡MARANA THÁ! ¡MARANA THÁ!, (La,7,126)(Sol,m,274)", sC: "as"},
-            { line: "¡MARANA THÁ!, (La,7,126)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¡Ven, Señor Jesús!, (Re,m,19)", sC: "tc"},
-            { line: "MEMORIAL Y OFRENDA,", sC: "sp1", color: "#9D9580"},
-            { line: "Así, pues, Padre, al celebrar ahora, (Sol,,15)", sC: "pa"},
-            { line: "el memorial de la muerte, ", sC: ""},
-            { line: "y resurrección de tu Hijo,, (Mi,m,215)", sC: ""},
-            { line: "te ofrecemos el pan de vida, (La,m,21)", sC: ""},
-            { line: "y el cáliz de salvación,, (Mi,m,19)", sC: ""},
-            { line: "y te damos gracias porque nos haces dignos, (La,m,19)(Mi,m,206)", sC: ""},
-            { line: "de servirte en tu presencia., ", sC: ""},
-            { line: "EPÍCLESIS, ", sC: "sp1", color: "#9D9580"},
-            { line: "Te pedimos humildemente, (Sol,,13)", sC: ""},
-            { line: "que el Espíritu Santo congregue en la unidad, (Si,m,15)", sC: ""},
-            { line: "a cuantos participamos, (La,m,15)", sC: ""},
-            { line: "del Cuerpo y Sangre de Cristo., (Mi,m,247)", sC: ""},
-]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
-// SIGUIENTE CANTO DEBAJO
-/*
-╔═════════════════════════════════════════════════╗
-║           PLEGARIA EUCARÍSTICA II               ║
-╚═════════════════════════════════════════════════╝  */
-   {
-        id: "plegariaeucaristicaiimodeloip3",
-        tt: "Plegaria Eucarística Ii",
-        title: "Plegaria Eucarística Ii",
-        subtitle: "Modelo I",
-        category: ["Liturgia"],
-        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
-        nCan: "Me lodía adaptable para los prefacios de solemnidade s o de varios tiempos litúrgicos.",
-        nCanURL: "",
-        dbno: "194",
-        notes: "",
-        mant: "No",
-        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip3.mp3",
-// Nueva propiedad para la velocidad de desplazamiento
-        scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
-            desktop: { velocidad: 7, incremento: 1 },   // Para PC
-            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloip2",
-        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloiip1",
-// Contenido del lado izquierdo del canto,
-    lizq: [
-            { line: "Acuérdate, Señor, de tu Iglesia (Sol,,15)", sC: "pa"},
-            { line: "extendida por toda la tierra; (Mi,m,228)", sC: ""},
-            { line: "y con el Papa ... N/., con nuestro obispo ... N/., (La,m,15)(Mi,m,275)", sC: ""},
-            { line: "N/", sC: "n1", color: "#C24F4D" },
-            { line: "N/", sC: "n2", color: "#C24F4D" },
-            { line: "y de todos los que en ella cuidan de tu pueblo,, (La,m,15)", sC: ""},
-            { line: "llévala a su perfección por la caridad., (Sol,,15)(Si,m,195)(Mi,m,333)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Acuérdate también de nuestros hermanos, (Sol,,13)", sC: ""},
-            { line: "que durmieron en la esperanza, (Si,m,20)", sC: ""},
-            { line: "de la resurrección, ", sC: ""},
-            { line: "y de todos los que han muerto, (La,m,19)", sC: ""},
-            { line: "en tu misericordia; (Mi,m,132)", sC: ""},
-            { line: "admítelos a contemplar la luz de tu rostro., (Sol,,13)(Si,m,212)(Mi,m,360)", sC: ""},
-            { line: "CONMEMORACIÓN DE LOS SANTOS", sC: "sp1 space1943", color: "#9D9580"},
-            { line: "Ten misericordia de todos nosotros,, (Sol,,15)(Mi,m,250)", sC: ""},
-            { line: "y así, con María, la Virgen Madre de Dios,, (La,m,15)", sC: ""},
-            { line: "su esposo San José, los apóstoles,(Mi,m,15)(La,m,250)", sC: ""},
-            { line: "y cuantos vivieron en tu amistad, (Mi,m,15) ", sC: ""},
-            { line: "a través de los tiempos", sC: ""},
-            { line: "merezcamos, por tu Hijo Jesucristo,, (Sol,,15)", sC: ""},
-            { line: "compartir la vida eterna, (Si,m,15)", sC: ""},
-            { line: "y cantar tus alabanzas., (La,,15)(Mi,m,167) ", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-    ], lder: [
-            { line: "DOXOLOGÍA Y CONCLUSIÓN DE LA PLEGARIA EUCARÍSTICA", sC: "sp1", color: "#9D9580"},
-            { line: "Por Cristo, con Cristo y en Cristo,(Sol,,15)", sC: "pa"},
-            { line: "a ti, Dios Padre omnipotente, (Si,m,15)", sC: ""},
-            { line: "en la unidad del Espíritu Santo, (La,m,15)", sC: ""},
-            { line: "todo honor y toda gloria, (Mi,m,15)", sC: ""},
-            { line: "por los siglos de los siglos., (Sol,,15)", sC: ""},
-            { line: "AMÉN, AMÉN, AMÉN., (Sol,,15)(Si,m,101)(La,,135)(Mi,m,181)", sC: "ta as"},
-            { line: "", sC: "space1941"}, // Espacio Generado para separar contenido
-
-            { line: "Cuando el 'MEMORIAL y LA OFRENDA' se hace recitada,", sC: "sp3", color: "#9D9580"},
-            { line: "puede cantarse la Doxología con la siguiente melodía:", sC: "sp3 space1942", color: "#9D9580"},
-
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,15)(Re,7,272)", sC: "pa"},
-            { line: "a ti, Dios Padre omnipotente,, (Sol,,235)", sC: ""},
-            { line: "en la unidad del Espíritu Santo,, (Mi,m,15)(Si,7,250)", sC: ""},
-            { line: "todo honor y toda gloria, (Mi,m,194)", sC: ""},
-            { line: "por los siglos de los siglos., (Do,,12)(Si,7,210)", sC: ""},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "AMÉN, AMÉN, AMÉN., (Sol,,13)", sC: "ta as"},
-            { line: "AMÉN, AMÉN, AMÉN., (Mi,m,42)", sC: "as"},
-            { line: "AMÉN, AMÉN, AMÉN., (Re,,35)(Sol,,176)", sC: "as"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
-// SIGUIENTE CANTO DEBAJO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//***************************************************** */
-// Plegaria Completa
-// Plegaria Eucaristica solo para Tablet y Celulares
-/*
-╔═════════════════════════════════════════════════╗
-║           PLEGARIA EUCARÍSTICA II               ║
+║           PLEGARIA EUCARÍSTICA II MODELO 1      ║
 ╚═════════════════════════════════════════════════╝  */
    {
         id: "plegariaeucaristicaiimodeloi",
         tt: "Plegaria Eucarística II",
         title: "Plegaria Eucarística II",
-        subtitle: "Modelo I",
+        subtitle: "Modelo I ─ Completo",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
@@ -15274,7 +15003,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=padrenuestro",
-        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloip2",
+        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloip1",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -15554,10 +15283,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "SANTO, SANTO, SANTO., (Fa,,13)(Mi,,163)", sC: "ta as"},
 ]}, // SANTO 1988
 
-
-
-
-
 // FIN PROCLAMACIÓN DEL SANTO
 
 
@@ -15674,6 +15399,396 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
 // SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+/*
+╔═════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA II               ║
+╚═════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiimodeloip1",
+        tt: "Plegaria Eucarística II",
+        title: "Plegaria Eucarística II",
+        subtitle: "Modelo I ─ Página 1",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "Melodía adaptable para los prefacios de solemnidades o de varios tiempos litúrgicos, Ver: Tablet.",
+        nCanURL: "/src/index.html?canto=plegariaeucaristicaiimodeloi",
+        dbno: "194",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip1.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloi",
+        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloip2",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "PREFACIO", sC: "sp2", color: "#9D9580"},
+            { line: "El Señor esté con vosotros., (Sol,,11)(La,m,211)", sC: "pa"},
+            { line: "Y CON TU ESPÍRITU., (Sol,,12)(La ,m,142)", sC: "ta"},
+            { line: "Levantemos el corazón., (Fa,,12)(Mi,,206)", sC: "pa"},
+            { line: "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (Fa,,10)(Mi,,393)", sC: "as"},
+            { line: "Demos gracias al Señor, nuestro Dios., (La ,m,335)", sC: "ta"},
+            { line: "A ES JUSTO Y NECESARIO., (Sol,,66)(La ,m,202)", sC: "as sb194"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "En verdad es justo y necesario,, (La ,m,15)(Sol,,254)", sC: "pa"},
+            { line: "es nuestro deber y salvación, (La ,m,251)", sC: ""},
+            { line: "darte gracias,, (Do,,80)", sC: ""},
+            { line: "siempre y en todo lugar,, (La ,m,213)", sC: ""},
+            { line: "a ti, Padre Santo,, (Sol,,28)", sC: ""},
+            { line: "por Jesucristo, tu Hijo amado., (La ,m,245)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por Él, que es tu Palabra,, (Sol,,197)", sC: ""},
+            { line: "hiciste todas las cosas., (La ,m,177)", sC: ""},
+            { line: "Tú nos lo enviaste hecho hombre, (Do,,138)", sC: ""},
+            { line: "por obra del Espíritu Santo,, (La ,m,219)", sC: ""},
+            { line: "para que, nacido de María la Virgen,, (Sol,,297)", sC: ""},
+            { line: "fuera nuestro Salvador y Redentor., (La ,m,285)", sC: ""},
+    ], lder: [
+            { line: "Él, en cumplimiento de tu voluntad,, (Fa,,11)(Mi,,315)", sC: ""},
+            { line: "para destruir la muerte, (Fa,,15)", sC: "as"},
+            { line: "y manifestar la resurrección,, (Mi,,247)", sC: "as"},
+            { line: "extendió sus brazos en la cruz,, (La,m,74)(Sol,,269)", sC: ""},
+            { line: "y así adquirió para ti, (Fa,,197)", sC: ""},
+            { line: "un pueblo santo., (Mi,7,116)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MURIENDO, (La,,11)", sC: "pa as r1"},
+            { line: "DESTRUYÓ NUESTRA MUERTE,, (Sol,,243)", sC: "as"},
+            { line: "RESUCITANDO, (Fa,,91)", sC: "as"},
+            { line: "RESTAURÓ NUESTRA VIDA., (Mi,,223)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por eso, con los ángeles y los santos,, (La ,m,15)(Sol,,297)", sC: "pa"},
+            { line: "cantamos tu gloria diciendo:, (La ,m,220)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO, ", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TRANSICIÓN, ", sC: "sp1", color: "#9D9580"},
+            { line: "Santo eres en verdad, Señor,, ", sC: "nSpace", color: "#C24F4D"},
+            { line: "fuente de toda santidad:, ", sC: "nSpace", color: "#C24F4D"},
+            { line: "EPÍCLESIS. ORACIÓN CONSECRATORIA, ", sC: "sp1", color: "gray"},
+            { line: "Santifica estos dones con la efusión, ", sC: "pa nSpace", color: "#C24F4D"},
+            { line: "de tu Espíritu, de manera que sean para, ", sC: "nSpace", color: "#C24F4D"},
+            { line: "nosotros Cuerpo y ✠ Sangre, ", sC: "nSpace", color: "#C24F4D"},
+            { line: "de Jesucristo,nuestro Señor., ", sC: "nSpace", color: "#C24F4D"},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
+// SIGUIENTE CANTO DEBAJO
+/*
+╔═════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA II               ║
+╚═════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiimodeloip2",
+        tt: "Plegaria Eucarística II",
+        title: "Plegaria Eucarística II",
+        subtitle: "Modelo I ─ Página 2",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "195",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip2.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloip1",
+        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloip3",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "RELATO DE LA INSTITUCIÓN,", sC: "sp1", color: "#9D9580"},
+            { line: "El cual, cuando iba a ser entregado a su Pasión,, (Re,m,21)", sC: "pa"},
+            { line: "voluntariamente aceptada, tomó el pan,, ", sC: ""},
+            { line: "y elevando los ojos a Ti, Padre, Padre,, ", sC: ""},
+            { line: "pronunció la bendición,, (Fa,,10)", sC: ""},
+            { line: "lo partió y lo dio a sus discípulos, diciendo:, (Sol,m,72)(Re,m,360)", sC: ""},
+            { line: "Tomad y comed todos de él,, (La,7,262)", sC: ""},
+            { line: "porque esto es mi Cuerpo,, (Re,m,91)", sC: ""},
+            { line: "que será entregado por vosotros., (La,7,157)(Re,m,270)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Del mismo modo, acabada la cena,, (Re,m,20)", sC: ""},
+            { line: "tomó el cáliz, lleno del fruto de la vid,, ", sC: ""},
+            { line: "y elevando los ojos a Ti, Padre, Padre,, ", sC: ""},
+            { line: "pronunció la bendición,, (Fa,,10)", sC: ""},
+            { line: "lo pasó a sus discípulos, diciendo:, (Sol,m,71)(Re,m,274)", sC: ""},
+            { line: "Tomad y bebed todos de él,, (La,7,255)", sC: ""},
+            { line: "porque este es el cáliz de mi Sangre,, (Re,m,91)", sC: ""},
+            { line: "Sangre de la alianza nueva y eterna,, ", sC: ""},
+            { line: "que será derramada por muchos, (La,7,269)", sC: ""},
+            { line: "para el perdón de los pecados., (Re,m,255)", sC: ""},
+            { line: "Haced esto como mi memorial., (La,7,83)(Re,m,280)", sC: ""},
+    ], lder: [
+            { line: "ACLAMACIÓN,", sC: "sp1", color: "#9D9580"},
+            { line: "Este es el sacramento de nuestra fe., (Sol,m,23)(La,7,339)", sC: "pa"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Re,m,19)", sC: "ta as"},
+            { line: "PROCLAMAMOS TU RESURRECCIÓN., (Sol,m,23)", sC: "as"},
+            { line: "¡MARANA THÁ! ¡MARANA THÁ!, (La,7,126)(Sol,m,274)", sC: "as"},
+            { line: "¡MARANA THÁ!, (La,7,126)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Ven, Señor Jesús!, (Re,m,19)", sC: "tc"},
+            { line: "MEMORIAL Y OFRENDA,", sC: "sp1", color: "#9D9580"},
+            { line: "Así, pues, Padre, al celebrar ahora, (Sol,,15)", sC: "pa"},
+            { line: "el memorial de la muerte, ", sC: ""},
+            { line: "y resurrección de tu Hijo,, (Mi,m,215)", sC: ""},
+            { line: "te ofrecemos el pan de vida, (La,m,21)", sC: ""},
+            { line: "y el cáliz de salvación,, (Mi,m,19)", sC: ""},
+            { line: "y te damos gracias porque nos haces dignos, (La,m,19)(Mi,m,206)", sC: ""},
+            { line: "de servirte en tu presencia., ", sC: ""},
+            { line: "EPÍCLESIS, ", sC: "sp1", color: "#9D9580"},
+            { line: "Te pedimos humildemente, (Sol,,13)", sC: ""},
+            { line: "que el Espíritu Santo congregue en la unidad, (Si,m,15)", sC: ""},
+            { line: "a cuantos participamos, (La,m,15)", sC: ""},
+            { line: "del Cuerpo y Sangre de Cristo., (Mi,m,247)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
+// SIGUIENTE CANTO DEBAJO
+/*
+╔═════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA II               ║
+╚═════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiimodeloip3",
+        tt: "Plegaria Eucarística II",
+        title: "Plegaria Eucarística II",
+        subtitle: "Modelo I ─ Página 3",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "Me lodía adaptable para los prefacios de solemnidade s o de varios tiempos litúrgicos.",
+        nCanURL: "",
+        dbno: "194",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip3.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloip2",
+        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloii",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Acuérdate, Señor, de tu Iglesia (Sol,,15)", sC: "pa"},
+            { line: "extendida por toda la tierra; (Mi,m,228)", sC: ""},
+            { line: "y con el Papa ... N/., con nuestro obispo ... N/., (La,m,15)(Mi,m,275)", sC: ""},
+            { line: "N/", sC: "n1", color: "#C24F4D" },
+            { line: "N/", sC: "n2", color: "#C24F4D" },
+            { line: "y de todos los que en ella cuidan de tu pueblo,, (La,m,15)", sC: ""},
+            { line: "llévala a su perfección por la caridad., (Sol,,15)(Si,m,195)(Mi,m,333)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Acuérdate también de nuestros hermanos, (Sol,,13)", sC: ""},
+            { line: "que durmieron en la esperanza, (Si,m,20)", sC: ""},
+            { line: "de la resurrección, ", sC: ""},
+            { line: "y de todos los que han muerto, (La,m,19)", sC: ""},
+            { line: "en tu misericordia; (Mi,m,132)", sC: ""},
+            { line: "admítelos a contemplar la luz de tu rostro., (Sol,,13)(Si,m,212)(Mi,m,360)", sC: ""},
+            { line: "CONMEMORACIÓN DE LOS SANTOS", sC: "sp1 space1943", color: "#9D9580"},
+            { line: "Ten misericordia de todos nosotros,, (Sol,,15)(Mi,m,250)", sC: ""},
+            { line: "y así, con María, la Virgen Madre de Dios,, (La,m,15)", sC: ""},
+            { line: "su esposo San José, los apóstoles,(Mi,m,15)(La,m,250)", sC: ""},
+            { line: "y cuantos vivieron en tu amistad, (Mi,m,15) ", sC: ""},
+            { line: "a través de los tiempos", sC: ""},
+            { line: "merezcamos, por tu Hijo Jesucristo,, (Sol,,15)", sC: ""},
+            { line: "compartir la vida eterna, (Si,m,15)", sC: ""},
+            { line: "y cantar tus alabanzas., (La,,15)(Mi,m,167) ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+    ], lder: [
+            { line: "DOXOLOGÍA Y CONCLUSIÓN DE LA PLEGARIA EUCARÍSTICA", sC: "sp1", color: "#9D9580"},
+            { line: "Por Cristo, con Cristo y en Cristo,(Sol,,15)", sC: "pa"},
+            { line: "a ti, Dios Padre omnipotente, (Si,m,15)", sC: ""},
+            { line: "en la unidad del Espíritu Santo, (La,m,15)", sC: ""},
+            { line: "todo honor y toda gloria, (Mi,m,15)", sC: ""},
+            { line: "por los siglos de los siglos., (Sol,,15)", sC: ""},
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,15)(Si,m,101)(La,,135)(Mi,m,181)", sC: "ta as"},
+            { line: "", sC: "space1941"}, // Espacio Generado para separar contenido
+
+            { line: "Cuando el 'MEMORIAL y LA OFRENDA' se hace recitada,", sC: "sp3", color: "#9D9580"},
+            { line: "puede cantarse la Doxología con la siguiente melodía:", sC: "sp3 space1942", color: "#9D9580"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,15)(Re,7,272)", sC: "pa"},
+            { line: "a ti, Dios Padre omnipotente,, (Sol,,235)", sC: ""},
+            { line: "en la unidad del Espíritu Santo,, (Mi,m,15)(Si,7,250)", sC: ""},
+            { line: "todo honor y toda gloria, (Mi,m,194)", sC: ""},
+            { line: "por los siglos de los siglos., (Do,,12)(Si,7,210)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,13)", sC: "ta as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Mi,m,42)", sC: "as"},
+            { line: "AMÉN, AMÉN, AMÉN., (Re,,35)(Sol,,176)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+/*  Modo completo
+
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA II MODELO I             ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiimodeloii",
+        tt: "Plegaria Eucarística II",
+        title: "Plegaria Eucarística II",
+        subtitle: "Modelo II (1987)  ─ Completo",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* Meliasma",
+        nCanURL: "",
+        dbno: "197",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloi.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloip3",
+        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloiip1",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "El Señor esté con vosotros., (La,m,20)(Sol,,119)(La,m,212)", sC: "pa"},
+            { line: "Y CON TU ESPÍRITU., (Sol,,39)(La,m,141)", sC: "ta as"},
+            { line: "Levantemos el corazón., (Sol,,204)", sC: "pa"},
+            { line: "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (La,m,389)", sC: "ta as"},
+            { line: "Demos gracias al Señor, nuestro Dios., (Sol,,14)(La,m,336)", sC: "pa"},
+            { line: "ES JUSTO Y NECESARIO., (Sol,,14)(La,m,186)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Verdaderamente,, (La,m,20)", sC: "pa ast"},
+            { line: "es justo y necesario,, (Sol,,44)", sC: ""},
+            { line: "es nuestro deber y fuente de salvación, (La,m,352)", sC: ""},
+            { line: "darte gracias, siempre y en todo lugar., (Sol,,14)(La,m,158)", sC: ""},
+            { line: "A ti, Padre Santo, ", sC: "ast1"},
+            { line: "por Jesucristo, tu amadísimo Hijo., (Sol,,104)(La,m,303)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por Él, que es tu Palabra viviente,, (Sol,,279)", sC: "ast2"},
+            { line: "hiciste todas las cosas;, (La,m,182)", sC: ""},
+            { line: "tú nos lo enviaste Salvador y Redentor, (Fa,,131)(La,m,195)", sC: ""},
+            { line: "hecho hombre por obra del Espíritu Santo,, (Sol,,14)", sC: ""},
+            { line: "y nacido de la Virgen María,, (La,m,246)", sC: ""},
+    ], lder: [
+            { line: "para cumplir tu voluntad, (Sol,,14)(La,m,221)", sC: ""},
+            { line: "y adquirir para Ti un pueblo santo. ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Él,", sC: "ast3"},
+            { line: "extendió sus brazos en la cruz,, (Sol,,75)(La,m,270)", sC: ""},
+            { line: "muriendo destruyó la muerte.,(Sol,,50)(La,m,251) ", sC: ""},
+            { line: "Y proclamó, ", sC: ""},
+            { line: "la resurrección.,(Sol,,14)(La,m,126) ", sC: ""},
+            { line: "Y PROCLAMÓ, (La,m,20)", sC: "as r1"},
+            { line: "LA RESURRECCIÓN., (Sol,,14)(La,m,164)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por este misterio de salvación,, (La,m,20)", sC: ""},
+            { line: "unidos a los ángeles y a los santos, ", sC: ""},
+            { line: "cantamos a una sola voz, (Sol,,14)", sC: ""},
+            { line: "el himno de tu gloria:, (La,m,168)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO... ", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II MODELO I
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA II MODELO I             ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiimodeloiip1",
+        tt: "Plegaria Eucarística II Modelo I",
+        title: "Plegaria Eucarística II Modelo I",
+        subtitle: "Modelo II (1987) ─ Página 1",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "* Meliasma",
+        nCanURL: "",
+        dbno: "197",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloi.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloii",
+        sig: "/src/index.html?canto=padrenuestro",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "El Señor esté con vosotros., (La,m,20)(Sol,,119)(La,m,212)", sC: "pa"},
+            { line: "Y CON TU ESPÍRITU., (Sol,,39)(La,m,141)", sC: "ta as"},
+            { line: "Levantemos el corazón., (Sol,,204)", sC: "pa"},
+            { line: "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (La,m,389)", sC: "ta as"},
+            { line: "Demos gracias al Señor, nuestro Dios., (Sol,,14)(La,m,336)", sC: "pa"},
+            { line: "ES JUSTO Y NECESARIO., (Sol,,14)(La,m,186)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Verdaderamente,, (La,m,20)", sC: "pa ast"},
+            { line: "es justo y necesario,, (Sol,,44)", sC: ""},
+            { line: "es nuestro deber y fuente de salvación, (La,m,352)", sC: ""},
+            { line: "darte gracias, siempre y en todo lugar., (Sol,,14)(La,m,158)", sC: ""},
+            { line: "A ti, Padre Santo, ", sC: "ast1"},
+            { line: "por Jesucristo, tu amadísimo Hijo., (Sol,,104)(La,m,303)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por Él, que es tu Palabra viviente,, (Sol,,279)", sC: "ast2"},
+            { line: "hiciste todas las cosas;, (La,m,182)", sC: ""},
+            { line: "tú nos lo enviaste Salvador y Redentor, (Fa,,131)(La,m,195)", sC: ""},
+            { line: "hecho hombre por obra del Espíritu Santo,, (Sol,,14)", sC: ""},
+            { line: "y nacido de la Virgen María,, (La,m,246)", sC: ""},
+    ], lder: [
+            { line: "para cumplir tu voluntad, (Sol,,14)(La,m,221)", sC: ""},
+            { line: "y adquirir para Ti un pueblo santo. ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Él,", sC: "ast3"},
+            { line: "extendió sus brazos en la cruz,, (Sol,,75)(La,m,270)", sC: ""},
+            { line: "muriendo destruyó la muerte.,(Sol,,50)(La,m,251) ", sC: ""},
+            { line: "Y proclamó, ", sC: ""},
+            { line: "la resurrección.,(Sol,,14)(La,m,126) ", sC: ""},
+            { line: "Y PROCLAMÓ, (La,m,20)", sC: "as r1"},
+            { line: "LA RESURRECCIÓN., (Sol,,14)(La,m,164)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por este misterio de salvación,, (La,m,20)", sC: ""},
+            { line: "unidos a los ángeles y a los santos, ", sC: ""},
+            { line: "cantamos a una sola voz, (Sol,,14)", sC: ""},
+            { line: "el himno de tu gloria:, (La,m,168)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO... ", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II MODELO I
+// SIGUIENTE CANTO DEBAJO
+
 
 
 //******************************************************** */
