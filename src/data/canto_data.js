@@ -16288,10 +16288,140 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: JACOB 
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           EL MISMO DIOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "elmismodios",
+        tt: "El Mismo Dios",
+        title: "El Mismo Dios",
+        subtitle: "2 Corintios 4,6-12",
+        category: ["Catecumenado","Comunión","Nuevo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "224",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/elmismodios.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=debora",
+        sig: "/resucito/src/index.html?canto=elsembrador",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "El mismo Dios que dijo:, (Re,,12)(Fa#,,198)", sC: "tc"},
+            { line: "«De las tinieblas brille la luz»,, (Si,m,110)", sC: ""},
+            { line: "es el mismo que ha hecho brillar la luz, (Fa#,,15)", sC: ""},
+            { line: "en nuestros corazones,, ", sC: ""},
+            { line: "para irradiar el conocimiento de su gloria,, (Si,m,101)", sC: ""},
+            { line: "que está en el rostro de Cristo,, (La,,77)(Si,m,252)", sC: ""},
+            { line: "QUE ESTÁ EN EL ROSTRO DE CRISTO., (La,,90)(Si,m,309)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Pero llevamos este tesoro en vasos de barro., (Fa#,,15)", sC: "tc"},
+            { line: "PERO LLEVAMOS ESTE TESORO, ", sC: "ta as"},
+            { line: "EN VASOS DE BARRO., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Para que se manifieste, (Si,m,71)", sC: "tc"},
+            { line: "que lo sublime de este amor, (La,,161)", sC: ""},
+            { line: "viene de Dios,, (Si,m,113)(Sol,,153)", sC: ""},
+            { line: "viene de Dios y que no viene de nosotros., (Fa#,,344)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "LLEVANDO SIEMPRE EN NUESTRO CUERPO, (Si,m,133)", sC: "ta as"},
+            { line: "EL MORIR DE JESÚS, PARA QUE, (La,,174)(Si,m,296)(Sol,,333)", sC: "as"},
+            { line: "SE MANIFIESTE EN NUESTRO CUERPO, ", sC: "as"},
+            { line: "QUE ESTÁ RESUCITADO., (Fa#,,196)", sC: "as"},
+    ], lder: [
+            { line: "Atribulados en todo,, (Fa#,,18)", sC: "tc"},
+            { line: "mas no desesperados;, ", sC: ""},
+            { line: "perseguidos, mas nunca abandonados;, ", sC: ""},
+            { line: "derribados, mas no aniquilados., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "LLEVANDO SIEMPRE EN NUESTRO CUERPO, (Si,m,133)", sC: "ta as", lines: [
+            { line: "EL MORIR DE JESÚS, PARA QUE, (La,,174)(Si,m,296)(Sol,,333)", sC: "as"},
+            { line: "SE MANIFIESTE EN NUESTRO CUERPO, ", sC: "as"},
+            { line: "QUE ESTÁ RESUCITADO., (Fa#,,15)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y mientras nosotros morimos, (Fa#,,15)", sC: "tc"},
+            { line: "el mundo recibe la vida., ", sC: ""},
+            { line: "Y MIENTRAS NOSOTROS MORIMOS, ", sC: "ta as"},
+            { line: "EL MUNDO RECIBE LA VIDA., ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "LLEVANDO SIEMPRE EN NUESTRO CUERPO, (Si,m,133)", sC: "ta as", lines: [
+            { line: "EL MORIR DE JESÚS, PARA QUE, (La,,174)(Si,m,296)(Sol,,333)", sC: "as"},
+            { line: "SE MANIFIESTE EN NUESTRO CUERPO, ", sC: "as"},
+            { line: "QUE ESTÁ RESUCITADO., (Fa#,,15)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: EL MISMO DIOS
+// SIGUIENTE CANTO DEBAJO
 
 
 
 // ELECCIÓN
+
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           NO ESTÁ AQUÍ, RESUCITÓ               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "quedetallesenor",
+        tt: "Que detalle Señor has tenico conmigo",
+        title: "Que detalle Señor has tenico conmigo",
+        subtitle: "Mateo 28,1-8",
+        category: ["Precatecumenado","Pascua","Pentecostés","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "120",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/noestaaquiresucito.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=muchomehanperseguido",
+        sig: "/src/index.html?canto=nohayenelparecer",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "QUE DETALLE, SEÑOR, HAS TENIDO CONMIGO, (Sol,,14)(Re,7,174)(Sol,,420)", sC: "ta as"},
+            { line: "CUANDO ME LLAMASTE, CUANDO ME ELEGISTE,, (Sol,,14)(Re,7,189)(Sol,,432)", sC: "as"},
+            { line: "CUANDO ME DIJISTE QUE TÚ ERAS MI AMIGO., (Do,,10)(Sol,,286)(Do,,413)", sC: "as"},
+            { line: "QUÉ DETALLE, SEÑOR, HAS TENIDO CONMIGO., (Re,7,124)(Sol,,356)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Te acercaste a mi puerta y pronunciaste mi nombre., (Sol,,14)(Do,,206)(La,7,323)(Re,7,465)", sC: "tc"},
+            { line: "Yo temblando te dije: aquí estoy, Señor., (Re,7,22)(Sol,,259)", sC: ""},
+            { line: "Tú me hablaste de un Reino, de un tesoro escondido,, (Sol,,14)(Do,,169)(La,7,304)(Re,7,438)", sC: ""},
+            { line: "de un mensaje fraterno que encendió mi ilusión., (Re,7,22)(Do,,165)(Re,7,330)(Sol,,432)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "QUE DETALLE, SEÑOR, HAS TENIDO CONMIGO, (Sol,,14)(Re,7,174)(Sol,,420)", sC: "ta as"},
+            { line: "CUANDO ME LLAMASTE, CUANDO ME ELEGISTE,, (Sol,,14)(Re,7,189)(Sol,,432)", sC: "as"},
+            { line: "CUANDO ME DIJISTE QUE TÚ ERAS MI AMIGO., (Do,,10)(Sol,,286)(Do,,413)", sC: "as"},
+            { line: "QUÉ DETALLE, SEÑOR, HAS TENIDO CONMIGO., (Re,7,124)(Sol,,356)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo deje casa y pueblo por vivir tu aventura, (Sol,,14)(Do,,174)(La,7,280)(Re,7,378)", sC: "tc"},
+            { line: "Codo a codo contigo comencé a caminar, (Re,7,22)(Sol,,247)", sC: ""},
+            { line: "Han pasado los años y aunque apriete el cansancio, (Sol,,14)(Do,,177)(La,7,334)(Re,7,467)", sC: ""},
+            { line: "Paso a paso te sigo sin mirar hacia atrás., (Re,7,22)(Do,,147)(Re,7,223)(Sol,,349)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "QUE DETALLE, SEÑOR, HAS TENIDO CONMIGO, (Sol,,14)(Re,7,174)(Sol,,420)", sC: "ta as"},
+            { line: "CUANDO ME LLAMASTE, CUANDO ME ELEGISTE,, (Sol,,14)(Re,7,189)(Sol,,432)", sC: "as"},
+            { line: "CUANDO ME DIJISTE QUE TÚ ERAS MI AMIGO., (Do,,10)(Sol,,286)(Do,,413)", sC: "as"},
+            { line: "QUÉ DETALLE, SEÑOR, HAS TENIDO CONMIGO., (Re,7,124)(Sol,,356)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: NO ESTÁ AQUÍ, RESUCITÓ
+// SIGUIENTE CANTO DEBAJO
 
 
 
