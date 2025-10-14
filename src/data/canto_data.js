@@ -14462,7 +14462,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=gloriaadiosenloaltodelcielo",
-        sig: "/src/index.html?canto=letaniaspenitenciales1",
+        sig: "/src/index.html?canto=letaniaspenitencialesi",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Señor, ten piedad. (Mi,m,20)", sC: "tc height"},
@@ -14862,6 +14862,50 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
         ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: LETANÍAS PENITENCIALES II
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           PADRE NUESTRO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "padrenuestro",
+        tt: "Padre Nuestro",
+        title: "Padre Nuestro",
+        subtitle: "Tiempo de la Elección",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "193",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/padrenuestro.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=letaniaspenitencialesii",
+        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloi",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡ABBÁ, ABBÁ PADRE!, (Re,m,22)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PADRE NUESTRO QUE ESTÁS EN EL CIELO,, ", sC: "as"},
+            { line: "SANTIFICADO SEA TU NOMBRE;, (Fa,,10)(La,m,158)", sC: "as"},
+            { line: "VENGA A NOSOTROS TU REINO;, (Sol,m,24)(La,,261)", sC: "as"},
+            { line: "HÁGASE TU VOLUNTAD, (Si♭,,10)", sC: "as"},
+            { line: "EN LA TIERRA COMO EN EL CIELO., (La,,291)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DANOS HOY NUESTRO PAN DE CADA DÍA;, (Re,m,22)", sC: "as"},
+            { line: "PERDONA NUESTRAS OFENSAS,, (Fa,,11)(La,m,247)", sC: "as"},
+            { line: "COMO TAMBIÉN NOSOTROS PERDONAMOS A LOS QUE NOS OFENDEN;, (Sol,m,27)(La,,614)", sC: "as"},
+            { line: "NO NOS DEJES CAER EN LA TENTACIÓN,, (Si♭,,10)(La,,354)", sC: "as"},
+            { line: "Y LÍBRANOS DEL MAL., (Re,m,194)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: PADRE NUESTRO
 // SIGUIENTE CANTO DEBAJO
 
 
