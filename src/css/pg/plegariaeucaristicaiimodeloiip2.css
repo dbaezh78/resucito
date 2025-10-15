@@ -22,4 +22,19 @@
             .ast2::before {margin-top: 3px;margin-left: 56px;}
             .ast3::before {margin-top: 3px;margin-left: 19px;}
             .ast4::before {margin-top: -3px;margin-left: 195px;}
+            .tx {margin-top: -26px; font-size: small;}
+
+        }
+
+        .izq {
+            margin-left: -33px;
+            font-size: larger;
+        }
+
+
+        .top1 {
+            top:1px
+        }
+        .f15 .letra{
+            font-size: 8px;
         }

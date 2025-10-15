@@ -15746,7 +15746,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloii",
-        sig: "/src/index.html?canto=padrenuestro",
+        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloiip2",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "El Señor esté con vosotros., (La,m,20)(Sol,,119)(La,m,212)", sC: "pa"},
@@ -15788,6 +15788,94 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "SANTO, SANTO, SANTO... ", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II MODELO I
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA II MODELO II               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiimodeloiip2",
+        tt: "Plegaria Eucarística II Modelo II",
+        title: "Plegaria Eucarística II Modelo II",
+        subtitle: "Modelo II (1987) - Página 2",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "197",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloii.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloiip1",
+        sig: "/src/index.html?canto=plegariaeucaristicaiimodeloiip3",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "TRANSICIÓN, ", sC: "izq", color: "gray"},
+            { line: "Con la melodía de «El Señor anuncia una noticia». , ", sC: "izq top1 tx", color: "gray"},
+            { line: "Santo eres en verdad, Señor,, (Sol,,14)", sC: "pa"},
+            { line: "EPÍCLESIS. ORACIÓN C0NSECRATORIA , ", sC: "izq"},
+            { line: "fuente de toda santidad:, (Mi,m,20)", sC: ""},
+            { line: "santifica estos dones, (La,m,20)", sC: ""},
+            { line: "con la efusión de tu Espíritu,, (Mi,m,20)", sC: ""},
+            { line: "de manera que sean para nosotros, (Sol,,14)", sC: ""},
+            { line: "Cuerpo y ✠ Sangre, (Si,m,20)", sC: ""},
+            { line: "de Jesucristo, Nuestro Señor., (Mi,m,20)", sC: ""},
+            { line: "RELATO DE LA INSTITUCIÓN , (Sol,,14)", sC: "izq"},
+            { line: "El cual, cuando iba a ser entregado a su Pasión,, (Sol,,14)", sC: "pa"},
+            { line: "voluntariamente aceptada,, (Mi,m,20)", sC: ""},
+            { line: "tomó pan,, (La,m,20)", sC: ""},
+            { line: "dándote gracias,, (Mi,m,20)", sC: ""},
+            { line: "lo partió, (La,m,20)", sC: ""},
+            { line: "y lo dio a sus discípulos, diciendo:, (Mi,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad y comed todos de él,, (Sol,,14)", sC: ""},
+            { line: "porque esto es mi Cuerpo,, (Si,m,20)", sC: ""},
+            { line: "que será entregado por vosotros., (Mi,m,20)", sC: ""},
+    ], lder: [
+            { line: "Del mismo modo, acabada la cena,, (Sol,,14)", sC: ""},
+            { line: "tomó el cáliz,, (Mi,m,20)", sC: ""},
+            { line: "y dándote gracias de nuevo,, (La,m,20)", sC: ""},
+            { line: "lo pasó a sus discípulos, diciendo:, (Mi,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad y bebed todos de él,, (Sol,,14)", sC: ""},
+            { line: "éste es el cáliz de mi Sangre,, (Si,m,20)", sC: ""},
+            { line: "Sangre de la alianza nueva y eterna,, (La,m,20)(Mi,m,250)", sC: ""},
+            { line: "que será derramada por vosotros, (Sol,,14)", sC: ""},
+            { line: "y por muchos,, ", sC: ""},
+            { line: "para el perdón, (Si,m,20)", sC: ""},
+            { line: "para el perdón, (La,,20)", sC: ""},
+            { line: "de los pecados., (Mi,m,20)", sC: ""},
+            { line: "Haced esto en conmemoración mía., (Sol,,14)(Si,m,250)(Mi,m,350)", sC: ""},
+            { line: "ACLAMACIÓN, ", sC: ""},
+            { line: "Este es el sacramento de nuestra fe., (Sol,,14)", sC: "pa"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Sol,,14)", sC: "ta as"},
+            { line: "PROCLAMAMOS TU RESURRECCIÓN,, (Si,m,20)", sC: "as"},
+            { line: "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,250)", sC: "as"},
+            { line: "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,250)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II MODELO II
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
