@@ -16578,8 +16578,79 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA IV 
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA IV                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaivp4",
+        tt: "Plegaria Eucarística IV ",
+        title: "Plegaria Eucarística IV ",
+        subtitle: "(1988) ─ Página 4",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "200",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaivp3",
+        sig: "/src/index.html?canto=prefacioparaadvientoynavidad",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Dirige tu mirada sobre esta Víctima, (Do,,10)", sC: ""},
+            { line: "que tú mismo has preparado a tu Iglesia,, (La,m,20)", sC: ""},
+            { line: "y concede a cuantos compartimos este pan, (Fa,,20)", sC: ""},
+            { line: "y este cáliz,, (La,m,20)", sC: ""},
+            { line: "que, congregados en un solo cuerpo, (Fa,,20)", sC: ""},
+            { line: "por el Espíritu Santo,, ", sC: ""},
+            { line: "seamos en Cristo, víctima para tu alabanza., (Mi,,20)", sC: ""},
+            { line: "ALABANZA DE TU GLORIA,, (Mi7,,)", sC: "ta as"},
+            { line: "ALABANZA DE TU GLORIA., ", sC: "as"},
+            { line: "INTERCESIONES, ", sC: ""},
+            { line: "Acuérdate, Señor, de todos aquellos, (La,m,20)(Do,,250)", sC: ""},
+            { line: "por quienes te ofrecemos este sacrificio;, ", sC: ""},
+            { line: "de tu servidor el Papa ... N/., de nuestro obispo ... N/.,, (Re,m,22)", sC: ""},
+            { line: "del orden episcopal, de todo el clero,, ", sC: ""},
+            { line: "de cuantos aquí reunidos hacemos esta oblación,, ", sC: ""},
+            { line: "de todo tu pueblo santo, ", sC: ""},
+            { line: "y de aquellos que te buscan con sincero corazón., (Mi,,20)", sC: ""},
+            { line: "Acuérdate también de los que murieron, (La,m,20)(Do,,250)", sC: ""},
+            { line: "en la paz de Cristo, ", sC: ""},
+            { line: "y de todos los difuntos cuya fe solo tú conociste., (Re,m,22)(Mi,,250)", sC: ""},
+    ], lder: [
+            { line: "CONMEMORACIÓN DE LOS SANTOS , ", sC: ""},
+            { line: "Padre misericordioso,, (La,m,20)", sC: ""},
+            { line: "que todos tus hijos nos reunamos, (Re,m,22)", sC: ""},
+            { line: "en la heredad de tu reino,, ", sC: ""},
+            { line: "con María, la Virgen Madre de Dios,, (Mi,,20)", sC: ""},
+            { line: "su esposo san José,, ", sC: ""},
+            { line: "y con los apóstoles y los santos;, (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "y allí, junto con toda la creación,, ", sC: ""},
+            { line: "libre ya del pecado y de la muerte,, (Re,m,22)", sC: ""},
+            { line: "te glorifiquemos por Cristo, Señor nuestro,, (Mi,,20)", sC: ""},
+            { line: "por quien concedes al mundo, ", sC: ""},
+            { line: "todos los bienes., (La,m,20)", sC: ""},
+            { line: "DOXOLOGÍA Y CONCLUSIÓN DE LA PLEGARIA EUCARÍSTICA , ", sC: ""},
+            { line: "Por Cristo, con Cristo y en Cristo,, (Mi7,,)", sC: ""},
+            { line: "a ti Dios Padre omnipotente,, (Fa,,20)", sC: ""},
+            { line: "en la unidad del Espíritu Santo,, (Mi7,,)", sC: ""},
+            { line: "todo honor y gloria, (Fa,,20)", sC: ""},
+            { line: "por los siglos de los siglos., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AMÉN, AMÉN, AMÉN, AMÉN, (Fa,,20)(Mi,,250)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA IV 
+// SIGUIENTE CANTO DEBAJO
 
-//16580
+//16653
 
 
 
