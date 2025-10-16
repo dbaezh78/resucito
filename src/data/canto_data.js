@@ -14477,12 +14477,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Señor Dios, Rey celestial,, (Sol,,89)", sC: "tc"},
             { line: "Dios Padre todopoderoso., (Fa#,m,221)", sC: ""},
             { line: "Señor, Hijo único,, (Mi,m,125)", sC: ""},
-            { line: "JESUCRISTO., (La,,77)", sC: "ta"},
+            { line: "JESUCRISTO., (La,,77)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Señor Dios, Cordero de Dios,, (Sol,,89)", sC: "tc"},
             { line: "Hijo del Padre;, (Fa#,m,100)", sC: ""},
             { line: "tú que quitas el pecado del mundo,, (Mi,m,293)", sC: ""},
-            { line: "TEN PIEDAD DE NOSOTROS., (La,,204)", sC: "ta as"},
+            { line: "TEN PIEDAD DE NOSOTROS., (La,,204              )", sC: "ta as"},
     ], lder: [
             { line: "Tú que quitas el pecado del mundo,, (Sol,,96)", sC: "tc"},
             { line: "atiende a nuestra súplica;, (Fa#,m,196)", sC: ""},
@@ -15046,9 +15046,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
             { line: "SANTO, SANTO, SANTO...", sC: "sp5"},
 
-            //************************************ */
-            //      SANTO, SANTO, SANTO...
-            //************************************ */
+// *******************************************************************************************
+// ******************************** REPERTORIO PARA LOS SANTO ********************************
+// *******************************************************************************************
 
 // SANTO PALOMERA 65 - COMPLETADO
             { type: "collapsible-block", id: "santopalomeras65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
@@ -15283,7 +15283,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "SANTO, SANTO, SANTO., (Fa,,13)(Mi,,163)", sC: "ta as"},
 ]}, // SANTO 1988
 
-// FIN PROCLAMACIÓN DEL SANTO
+// ******************************************************************************************
+// ******************************* FIN PROCLAMACIÓN DEL SANTO *******************************
+// ******************************************************************************************
 
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -15662,7 +15664,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "197",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloi.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -15693,7 +15695,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "tú nos lo enviaste Salvador y Redentor, (Fa,,131)(La,m,195)", sC: ""},
             { line: "hecho hombre por obra del Espíritu Santo,, (Sol,,14)", sC: ""},
             { line: "y nacido de la Virgen María,, (La,m,246)", sC: ""},
-    ], lder: [
             { line: "para cumplir tu voluntad, (Sol,,14)(La,m,221)", sC: ""},
             { line: "y adquirir para Ti un pueblo santo. ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -15711,6 +15712,346 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "el himno de tu gloria:, (La,m,168)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "SANTO, SANTO, SANTO... ", sC: "ta as"},
+
+// *******************************************************************************************
+// ******************************** REPERTORIO PARA LOS SANTO ********************************
+// *******************************************************************************************
+
+// SANTO PALOMERA 65 - COMPLETADO
+            { type: "collapsible-block", id: "santopalomeras65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
+            { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
+            { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
+            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Llenos están los cielos, (Do,,11)", sC: "tc"},
+            { line: "y la tierra de tu gloria., (Si,7,178)", sC: ""},
+            { line: "Hosanna, hosanna, hosanna,, (Do,,11)", sC: ""},
+            { line: "hosanna en las alturas., (Si,7,180)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
+            { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
+            { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
+            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
+
+            { line: "Bendito es el que viene, (Mi,m,15)", sC: "tc"},
+            { line: "en nombre del Señor,, (Si,7,15)", sC: ""},
+            { line: "bendito es el que viene, ", sC: ""},
+            { line: "en nombre del Señor., (Mi,m,15)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA EN LAS ALTURAS,, (Mi,m,15)", sC: "ta as"},
+            { line: "BENDITO ES EL QUE VIENE,, (Si,7,219)", sC: "as"},
+            { line: "BENDITO ES EL QUE VIENE, ", sC: "as"},
+            { line: "EN NOMBRE DEL SEÑOR., (Mi,,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
+            { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
+            { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
+            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: SANTO PALOMERAS 65 
+
+
+// SANTO Melodía hebraica - COMPLETO
+            { type: "collapsible-block", id: "SANTOMelodíahebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
+            { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
+            { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
+            { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
+
+            { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Re,m,23)", sC: "ta as"},
+            { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)", sC: "as"},
+            { line: "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos y la tierra, (Re,m,20)(Sol,m,110)(Re,m,164)", sC: "tc"},
+            { line: "están llenos de Ti., (Sol,m,24)(Re,m,163)", sC: ""},
+            { line: "LOS CIELOS Y LA TIERRA, (Sol,m,129)(Re,m,189)", sC: "ta as"},
+            { line: "ESTÁN LLENOS DE TI., (Sol,m,23)(Re,m,197)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Hosanna en el cielo,, (Sol,m,104)(Re,m,165)", sC: "tc"},
+            { line: "hosanna., (Sol,m,21)(Re,m,75)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA EN EL CIELO,, (Sol,m,122)(Re,m,187)", sC: "ta as"},
+            { line: "HOSANNA., (Sol,m,21)(Re,m,90)", sC: "as"},
+
+            { line: "SANTO, ES SANTO, SANTO, ES SANTO..., (Re,m,23)", sC: "ta as"},
+            { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)", sC: "as"},
+            { line: "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Bendito el que viene,, (Re,m,21)(Sol,m,97)(Re,m,162)", sC: "tc"},
+            { line: "en el nombre del Señor., (Sol,m,22)(Re,m,210)", sC: ""},
+            { line: "A BENDITO EL QUE VIENE,, (Re,m,20)(Sol,m,123)(Re,m,208)", sC: "ta as"},
+            { line: "EN EL NOMBRE DEL SEÑOR., (Sol,m,24)(Re,m,242)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Hosanna en el cielo,, (Sol,m,104)(Re,m,165)", sC: "tc"},
+            { line: "hosanna., (Sol,m,22)(Re,m,75)", sC: ""},
+            { line: "HOSANNA EN EL CIELO,, (Sol,m,126)(Re,m,190)", sC: "ta as"},
+            { line: "HOSANNA., (Sol,m,22)(Re,m,89)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "SANTO, ES SANTO, SANTO, ES SANTO..., (Re,m,23)", sC: "ta as"},
+            { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)", sC: "as"},
+            { line: "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)", sC: "as"},
+
+
+]}, // ULTIMA LINEA DEL CANTO: // SANTO Melodía hebraica
+
+// SANTO Palestina 74 - PENDIENTE
+
+            { type: "collapsible-block", id: "SANTOPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
+            { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
+            { line: "SANTO ES EL SEÑOR., (Sol,m,22)(La,,175)", sC: "as"},
+            { line: "YAHVEH SEBAOTH,, (Sol,m,22)(La,,144)", sC: "as"},
+            { line: "YAHVEH SEBAOTH., (Sol,m,21)(La,,143)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos, (Re,m,21)(Sol,m,74)", sC: "tc"},
+            { line: "y la tierra, (Re,m,58)", sC: ""},
+            { line: "están llenos,, (Sol,m,77)", sC: ""},
+            { line: "están llenos de Ti., (La,,160)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (Re,m,20)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,, (Sol,m,52)(La,,293)", sC: "as"},
+            { line: "HOSANNA, HOSANNA., (Sol,m,49)(La,,209)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Bendito, (Re,m,21)(Sol,m,72)", sC: "tc"},
+            { line: "es el que viene,, (Re,m,111)", sC: ""},
+            { line: "en el nombre,, (Sol,m,65)", sC: ""},
+            { line: "en el nombre del Señor., (La,,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (Re,m,20)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
+
+]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
+
+
+// SANTO Roma 77 - PENDIENTE
+            { type: "collapsible-block", id: "SANTORoma77", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            
+            { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos y la tierra, (La,m,21)(Sol,,63)(La,m,158)", sC: "tc"},
+            { line: "están llenos, están llenos de Ti., (Sol,,75)(La,m,287)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO. (Fa,,71)(Mi,,188)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO. (La,m,185)", sC: "as"},
+            
+            { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Bendito es el que viene,, (La,m,18)(Sol,,55)(La,m,189)", sC: "tc"},
+            { line: "en el nombre, en el nombre del Señor., (Sol,,67)(La,m,346)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "ta as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)", sC: "as"},
+            { line: "HOSANNA, HOSANNA, (Fa,,15)(Sol,,157)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (La,m,185)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
+
+]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
+
+// SANTO 1982 - PENDIENTE
+            { type: "collapsible-block", id: "SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+
+            { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
+            { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
+            { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "as"},
+            { line: "ES EL SEÑOR,, (Sol,,10)(La,m,106)", sC: "as"},
+            { line: "DIOS DEL UNIVERSO., (Sol,,27)(La,m,150)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos y la tierra, (Fa,,13)(Mi,,157)", sC: "tc"},
+            { line: "están llenos de tu Gloria., (Fa,,76)(Mi,,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "ta as"},
+            { line: "HOSANNA,HOSANNA, (Re,m,22)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "as"},
+            { line: "HOSANNA,HOSANNA, (Re,m,21)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,72)(Mi,,188)", sC: "as"},
+
+            { line: "Bendito es el que viene, (La,m,21)", sC: "tc"},
+            { line: "en el nombre del Señor,, (Re,m,72)(Mi,,211)", sC: ""},
+            { line: "en el nombre del Señor., (Re,m,72)(Mi,,211)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA, (La,m,19)", sC: "ta as"},
+            { line: "HOSANNA,HOSANNA, (Rem,,22)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HOSANNA, HOSANNA,, (La,m,19)", sC: "as"},
+            { line: "HOSANNA,HOSANNA, (Rem,,21)", sC: "as"},
+            { line: "EN LO ALTO DEL CIELO., (Fa,,72)(Mi,,188)", sC: "as"},
+
+]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
+
+// SANTO 1988  - COMPLETADO
+            { type: "collapsible-block", id: "salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { line: "", sC: ""}, // Espacio Generado para separar contenido
+            { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
+            { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los cielos y la tierra, (La,m,19)(Sol,,150)", sC: "tc"},
+            { line: "están llenos de tu Gloria., (La,m,15)", sC: ""},
+            { line: "LOS CIELOS Y LA TIERRA, (Sol,,197)", sC: "ta as"},
+            { line: "ESTÁN LLENOS DE TU GLORIA., (La,m,181)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Hosanna en lo alto del Cielo., (Fa,,45)(Mi,,240)", sC: "tc"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO., (Fa,,46)(Mi,,288)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO., (La,m,20)(Sol,,90)(La,m,173)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO., (Sol,,90)(La,m,175)", sC: "as"},
+
+            { line: "Bendito es el que viene, (La,m,15)(Sol,,193)", sC: "tc"},
+            { line: "en el nombre del Señor., (La,m,212)", sC: ""},
+            { line: "BENDITO ES EL QUE VIENE, (Sol,,223)", sC: "ta as"},
+            { line: "EN EL NOMBRE DEL SEÑOR., (La,m,244)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Hosanna en lo alto del Cielo., (Fa,,38)(Mi,,242)", sC: "tc"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO., (Fa,,48)(Mi,,291)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO., (La,m,20)(Sol,,90)(La,m,173)", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO., (Sol,,90)(La,m,175)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Santo, Santo, Santo., (Fa,,14)(Mi,,143)", sC: "tc"},
+            { line: "SANTO, SANTO, SANTO., (Fa,,13)(Mi,,163)", sC: "ta as"},
+]}, // SANTO 1988
+
+// ******************************************************************************************
+// ******************************* FIN PROCLAMACIÓN DEL SANTO *******************************
+// ******************************************************************************************
+
+
+
+            // Segunda parte del canto completo
+
+            { line: "TRANSICIÓN, ", sC: "izq", color: "gray"},
+            { line: "Con la melodía de «El Señor anuncia una noticia». , ", sC: "izq top1 tx", color: "gray"},
+            { line: "Santo eres en verdad, Señor,, (Sol,,14)", sC: "pa"},
+            { line: "fuente de toda santidad:, (Mi,m,213)", sC: ""},
+            { line: "EPÍCLESIS. ORACIÓN C0NSECRATORIA , ", sC: "izq", color: "gray"},
+            { line: "santifica estos dones, (La,m,20)", sC: ""},
+            { line: "con la efusión de tu Espíritu,, (Mi,m,20)", sC: ""},
+            { line: "de manera que sean para nosotros, (Sol,,14)", sC: ""},
+            { line: "Cuerpo y,(Si,m,20)", sC: ""},
+            { line: "✠", sC: "sub cruz", color: "red"},
+            { line: "Sangre", sC: "sub sangre"},
+            { line: "de Jesucristo, Nuestro Señor., (Mi,m,90)", sC: ""},
+            { line: "RELATO DE LA INSTITUCIÓN", sC: "izq", color: "gray"},
+            { line: "El cual, cuando iba a ser entregado a su Pasión,, (Sol,,14)", sC: "pa"},
+            { line: "voluntariamente aceptada,, (Mi,m,223)", sC: ""},
+            { line: "tomó pan,, (La,m,20)", sC: ""},
+            { line: "dándote gracias,, (Mi,m,20)", sC: ""},
+            { line: "lo partió, (La,m,20)", sC: ""},
+            { line: "y lo dio a sus discípulos, diciendo:, (Mi,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad y comed todos de él,, (Sol,,14)", sC: ""},
+            { line: "porque esto es mi Cuerpo,, (Si,m,20)", sC: ""},
+            { line: "que será entregado por vosotros., (Mi,m,156)", sC: ""},
+
+            { line: "Del mismo modo, acabada la cena,, (Sol,,14)", sC: ""},
+            { line: "tomó el cáliz,, (Mi,m,99)", sC: ""},
+            { line: "y dándote gracias de nuevo,, (La,m,20)", sC: ""},
+            { line: "lo pasó a sus discípulos, diciendo:, (Mi,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad y bebed todos de él,, (Sol,,14)", sC: ""},
+            { line: "éste es el cáliz de mi Sangre,, (Si,m,20)", sC: ""},
+            { line: "Sangre de la alianza nueva y eterna,, (La,m,20)(Mi,m,307)", sC: ""},
+            { line: "que será derramada por vosotros, (Sol,,14)", sC: ""},
+            { line: "y por muchos,, ", sC: ""},
+            { line: "para el perdón, (Si,m,20)", sC: ""},
+            { line: "para el perdón, (La,,20)", sC: ""},
+            { line: "de los pecados., (Mi,m,20)", sC: ""},
+            { line: "Haced esto en conmemoración mía., (Sol,,14)(Si,m,129)(Mi,m,320)", sC: ""},
+            { line: "ACLAMACIÓN, ", sC: "izq", color: "gray"},
+            { line: "Este es el sacramento de nuestra fe., (Sol,,14)", sC: "pa"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Sol,,14)", sC: "ta as"},
+            { line: "PROCLAMAMOS TU RESURRECCIÓN,, (Si,m,20)", sC: "as"},
+            { line: "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,102)", sC: "as"},
+            { line: "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,102)", sC: "as"},
+
+            // TERCERA parte del canto completo
+
+            { line: "MEMORIAL Y OFRENDA,", sC: "izq", color: "gray"},
+            { line: "Así, pues, Padre, al celebrar ahora el memorial, (Sol,,14)", sC: "pa"},
+            { line: "de la muerte y resurrección de tu Hijo,, (Mi,m,336)", sC: ""},
+            { line: "te ofrecemos el pan de vida, (La,m,20)", sC: ""},
+            { line: "y el cáliz de salvación,, (Mi,m,20)", sC: ""},
+            { line: "y te damos gracias, (La,m,20)", sC: ""},
+            { line: "porque nos haces dignos de servirte en tu presencia., (Mi,m,20)", sC: ""},
+            { line: "EPÍCLESIS", sC: "izq", color: "gray"},
+            { line: "Te pedimos humildemente, (Sol,,14)", sC: ""},
+            { line: "que el Espíritu Santo congregue en la unidad, (Si,m,20)", sC: ""},
+            { line: "a cuantos participamos, (La,m,20)", sC: ""},
+            { line: "del Cuerpo y Sangre de Cristo., (Mi,m,20)", sC: ""},
+            { line: "INTERCESIONES", sC: "izq", color: "gray"},
+            { line: "Acuérdate, Señor, de tu Iglesia, (Sol,,14)", sC: "pa"},
+            { line: "extendida por toda la tierra;, (Mi,m,227)", sC: ""},
+            { line: "y con el Papa ... (La,m,20)", sC: ""},
+            { line: "N/, ", sC: "adl1 sub", color: "red"},
+            { line: "con nuestro obispo ..., (Mi,m,20)", sC: ""},
+            { line: "N/, ", sC: "adl2 sub", color: "red"},
+            { line: "y de todos los que en ella cuidan de tu pueblo,, (La,m,20)", sC: ""},
+            { line: "llévala a su perfección por la caridad., (Sol,,14)(Si,m,196)(Mi,m,336)", sC: ""},
+            { line: "Acuérdate también de nuestros hermanos, (Sol,,14)", sC: ""},
+            { line: "que durmieron en la esperanza de la resurrección,, (Si,m,20)", sC: "width"},
+            { line: "y de todos los que han muerto, (La,m,20)", sC: ""},
+            { line: "en tu misericordia;, (Mi,m,133)", sC: ""},
+            { line: "admítelos a contemplar la luz de tu rostro., (Sol,,14)(Si,m,211)(Mi,m,366)", sC: ""},
+            { line: "CONMEMORACIÓN DE LOS SANTOS", sC: "izq", color: "gray"},
+            { line: "Ten misericordia de todos nosotros,, (Sol,,14)(Mi,m,289)", sC: ""},
+            { line: "y así, con María, la Virgen Madre de Dios,, (La,m,20)", sC: ""},
+            { line: "su esposo San José,, (Mi,m,177)", sC: ""},
+            { line: "los apóstoles, (La,m,20)", sC: ""},
+            { line: "y cuantos vivieron en tu amistad, (Mi,m,20)", sC: ""},
+            { line: "a través de los tiempos, ", sC: ""},
+            { line: "merezcamos, por tu Hijo Jesucristo,, (Sol,,14)", sC: ""},
+            { line: "compartir la vida eterna, (Si,m,85)", sC: ""},
+            { line: "y cantar tus alabanzas., (La,,62)(Mi,m,166)", sC: ""},
+            { line: "DOXOLOGÍA Y CONCLUSIÓN DE LA PLEGARIA EUCARÍSTICA", sC: "izq", color: "gray"},
+            { line: "Ten misericordia de todos nosotros,, (Sol,,14)", sC: ""},
+            { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,14)", sC: "pa"},
+            { line: "a ti, Dios Padre omnipotente,, (Si,m,20)", sC: ""},
+            { line: "en la unidad del Espíritu Santo,, (La,m,20)", sC: ""},
+            { line: "todo honor y toda gloria, (Mi,m,20)", sC: ""},
+            { line: "por los siglos de los siglos., (Sol,,14)", sC: ""},
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,14)(Si,m,102)(La,,137)(Mi,m,178)", sC: "ta as"},
+
+        ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II MODELO I
 // SIGUIENTE CANTO DEBAJO
 
@@ -15727,8 +16068,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "plegariaeucaristicaiimodeloiip1",
-        tt: "Plegaria Eucarística II Modelo I",
-        title: "Plegaria Eucarística II Modelo I",
+        tt: "Plegaria Eucarística II Modelo II",
+        title: "Plegaria Eucarística II",
         subtitle: "Modelo II (1987) ─ Página 1",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
@@ -15795,8 +16136,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
    {
         id: "plegariaeucaristicaiimodeloiip2",
         tt: "Plegaria Eucarística II Modelo II",
-        title: "Plegaria Eucarística II Modelo II",
-        subtitle: "Modelo II (1987) - Página 2",
+        title: "Plegaria Eucarística II",
+        subtitle: "Modelo II (1987) ─ Página 2",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
@@ -15804,7 +16145,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "197",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloii.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -15819,16 +16160,18 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "TRANSICIÓN, ", sC: "izq", color: "gray"},
             { line: "Con la melodía de «El Señor anuncia una noticia». , ", sC: "izq top1 tx", color: "gray"},
             { line: "Santo eres en verdad, Señor,, (Sol,,14)", sC: "pa"},
-            { line: "EPÍCLESIS. ORACIÓN C0NSECRATORIA , ", sC: "izq"},
-            { line: "fuente de toda santidad:, (Mi,m,20)", sC: ""},
+            { line: "fuente de toda santidad:, (Mi,m,213)", sC: ""},
+            { line: "EPÍCLESIS. ORACIÓN C0NSECRATORIA , ", sC: "izq", color: "gray"},
             { line: "santifica estos dones, (La,m,20)", sC: ""},
             { line: "con la efusión de tu Espíritu,, (Mi,m,20)", sC: ""},
             { line: "de manera que sean para nosotros, (Sol,,14)", sC: ""},
-            { line: "Cuerpo y ✠ Sangre, (Si,m,20)", sC: ""},
-            { line: "de Jesucristo, Nuestro Señor., (Mi,m,20)", sC: ""},
-            { line: "RELATO DE LA INSTITUCIÓN , (Sol,,14)", sC: "izq"},
+            { line: "Cuerpo y,(Si,m,20)", sC: ""},
+            { line: "✠", sC: "sub cruz", color: "red"},
+            { line: "Sangre", sC: "sub sangre"},
+            { line: "de Jesucristo, Nuestro Señor., (Mi,m,90)", sC: ""},
+            { line: "RELATO DE LA INSTITUCIÓN", sC: "izq", color: "gray"},
             { line: "El cual, cuando iba a ser entregado a su Pasión,, (Sol,,14)", sC: "pa"},
-            { line: "voluntariamente aceptada,, (Mi,m,20)", sC: ""},
+            { line: "voluntariamente aceptada,, (Mi,m,223)", sC: ""},
             { line: "tomó pan,, (La,m,20)", sC: ""},
             { line: "dándote gracias,, (Mi,m,20)", sC: ""},
             { line: "lo partió, (La,m,20)", sC: ""},
@@ -15836,30 +16179,403 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Tomad y comed todos de él,, (Sol,,14)", sC: ""},
             { line: "porque esto es mi Cuerpo,, (Si,m,20)", sC: ""},
-            { line: "que será entregado por vosotros., (Mi,m,20)", sC: ""},
+            { line: "que será entregado por vosotros., (Mi,m,156)", sC: ""},
     ], lder: [
             { line: "Del mismo modo, acabada la cena,, (Sol,,14)", sC: ""},
-            { line: "tomó el cáliz,, (Mi,m,20)", sC: ""},
+            { line: "tomó el cáliz,, (Mi,m,99)", sC: ""},
             { line: "y dándote gracias de nuevo,, (La,m,20)", sC: ""},
             { line: "lo pasó a sus discípulos, diciendo:, (Mi,m,20)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Tomad y bebed todos de él,, (Sol,,14)", sC: ""},
             { line: "éste es el cáliz de mi Sangre,, (Si,m,20)", sC: ""},
-            { line: "Sangre de la alianza nueva y eterna,, (La,m,20)(Mi,m,250)", sC: ""},
+            { line: "Sangre de la alianza nueva y eterna,, (La,m,20)(Mi,m,307)", sC: ""},
             { line: "que será derramada por vosotros, (Sol,,14)", sC: ""},
             { line: "y por muchos,, ", sC: ""},
             { line: "para el perdón, (Si,m,20)", sC: ""},
             { line: "para el perdón, (La,,20)", sC: ""},
             { line: "de los pecados., (Mi,m,20)", sC: ""},
-            { line: "Haced esto en conmemoración mía., (Sol,,14)(Si,m,250)(Mi,m,350)", sC: ""},
-            { line: "ACLAMACIÓN, ", sC: ""},
+            { line: "Haced esto en conmemoración mía., (Sol,,14)(Si,m,129)(Mi,m,320)", sC: ""},
+            { line: "ACLAMACIÓN, ", sC: "izq", color: "gray"},
             { line: "Este es el sacramento de nuestra fe., (Sol,,14)", sC: "pa"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Sol,,14)", sC: "ta as"},
             { line: "PROCLAMAMOS TU RESURRECCIÓN,, (Si,m,20)", sC: "as"},
-            { line: "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,250)", sC: "as"},
-            { line: "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,250)", sC: "as"},
+            { line: "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,102)", sC: "as"},
+            { line: "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,102)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II MODELO II
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA II MODELO II               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiimodeloiip3",
+        tt: "Plegaria Eucarística II Modelo II",
+        title: "Plegaria Eucarística II",
+        subtitle: "Modelo II (1987) ─ Página 3",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "197",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloii.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloiip2",
+        sig: "/src/index.html?canto=plegariaeucaristicaiv",
+
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "MEMORIAL Y OFRENDA,", sC: "izq", color: "gray"},
+            { line: "Así, pues, Padre, al celebrar ahora el memorial, (Sol,,14)", sC: "pa"},
+            { line: "de la muerte y resurrección de tu Hijo,, (Mi,m,336)", sC: ""},
+            { line: "te ofrecemos el pan de vida, (La,m,20)", sC: ""},
+            { line: "y el cáliz de salvación,, (Mi,m,20)", sC: ""},
+            { line: "y te damos gracias, (La,m,20)", sC: ""},
+            { line: "porque nos haces dignos de servirte en tu presencia., (Mi,m,20)", sC: ""},
+            { line: "EPÍCLESIS", sC: "izq", color: "gray"},
+            { line: "Te pedimos humildemente, (Sol,,14)", sC: ""},
+            { line: "que el Espíritu Santo congregue en la unidad, (Si,m,20)", sC: ""},
+            { line: "a cuantos participamos, (La,m,20)", sC: ""},
+            { line: "del Cuerpo y Sangre de Cristo., (Mi,m,20)", sC: ""},
+            { line: "INTERCESIONES", sC: "izq", color: "gray"},
+            { line: "Acuérdate, Señor, de tu Iglesia, (Sol,,14)", sC: "pa"},
+            { line: "extendida por toda la tierra;, (Mi,m,227)", sC: ""},
+            { line: "y con el Papa ... (La,m,20)", sC: ""},
+            { line: "N/, ", sC: "adl1 sub", color: "red"},
+            { line: "con nuestro obispo ..., (Mi,m,20)", sC: ""},
+            { line: "N/, ", sC: "adl2 sub", color: "red"},
+            { line: "y de todos los que en ella cuidan de tu pueblo,, (La,m,20)", sC: ""},
+            { line: "llévala a su perfección por la caridad., (Sol,,14)(Si,m,196)(Mi,m,336)", sC: ""},
+            { line: "Acuérdate también de nuestros hermanos, (Sol,,14)", sC: ""},
+            { line: "que durmieron en la esperanza de la resurrección,, (Si,m,20)", sC: "width"},
+    ], lder: [
+            { line: "y de todos los que han muerto, (La,m,20)", sC: ""},
+            { line: "en tu misericordia;, (Mi,m,133)", sC: ""},
+            { line: "admítelos a contemplar la luz de tu rostro., (Sol,,14)(Si,m,211)(Mi,m,366)", sC: ""},
+            { line: "CONMEMORACIÓN DE LOS SANTOS", sC: "izq", color: "gray"},
+            { line: "Ten misericordia de todos nosotros,, (Sol,,14)(Mi,m,289)", sC: ""},
+            { line: "y así, con María, la Virgen Madre de Dios,, (La,m,20)", sC: ""},
+            { line: "su esposo San José,, (Mi,m,177)", sC: ""},
+            { line: "los apóstoles, (La,m,20)", sC: ""},
+            { line: "y cuantos vivieron en tu amistad, (Mi,m,20)", sC: ""},
+            { line: "a través de los tiempos, ", sC: ""},
+            { line: "merezcamos, por tu Hijo Jesucristo,, (Sol,,14)", sC: ""},
+            { line: "compartir la vida eterna, (Si,m,85)", sC: ""},
+            { line: "y cantar tus alabanzas., (La,,62)(Mi,m,166)", sC: ""},
+            { line: "DOXOLOGÍA Y CONCLUSIÓN DE LA PLEGARIA EUCARÍSTICA", sC: "izq", color: "gray"},
+            { line: "Ten misericordia de todos nosotros,, (Sol,,14)", sC: ""},
+            { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,14)", sC: "pa"},
+            { line: "a ti, Dios Padre omnipotente,, (Si,m,20)", sC: ""},
+            { line: "en la unidad del Espíritu Santo,, (La,m,20)", sC: ""},
+            { line: "todo honor y toda gloria, (Mi,m,20)", sC: ""},
+            { line: "por los siglos de los siglos., (Sol,,14)", sC: ""},
+            { line: "AMÉN, AMÉN, AMÉN., (Sol,,14)(Si,m,102)(La,,137)(Mi,m,178)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II MODELO II
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA IV                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaiv",
+        tt: "Plegaria Eucarística Iv ",
+        title: "Plegaria Eucarística Iv ",
+        subtitle: "(1988) ─ Completo",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "200",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiimodeloiip3",
+//        sig: "/src/index.html?canto=prefacioparaadvientoynavidad",
+        sig: "/src/index.html?canto=plegariaeucaristicaivp1",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "PREFACIO, ", sC: ""},
+            { line: "El Señor esté con vosotros., (Sol,,14)(La,m,215)", sC: "pa"},
+            { line: "Y CON TU ESPÍRITU., (Sol,,14)(La,m,142)", sC: "ta as"},
+            { line: "Levantemos el corazón., (Fa,,12)(Mi,,205)", sC: "pa"},
+            { line: "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (Fa,,10)(Mi,,395)", sC: "ta as"},
+            { line: "Demos gracias al Señor, nuestro Dios., (La,m,340)", sC: "pa"},
+            { line: "ES JUSTO Y NECESARIO., (Sol,,14)(La,m,186)", sC: "ta as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Realmente es justo darte gracias,, (La,m,20)(Do,,273)", sC: "pa"},
+            { line: "y deber nuestro glorificarte, Padre santo,, (Re,,107)(La,m,224)", sC: ""},
+            { line: "porque tú eres el único Dios vivo y verdadero, (Do,,84)(Lam,,401)", sC: ""},
+            { line: "que existes desde siempre y vives para siempre;, (Sol,,64)", sC: ""},
+            { line: "luz sobre toda luz., (La,m,157)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque tú solo eres bueno y fuente de vida,, (Do,,380)", sC: ""},
+            { line: "hiciste todas las cosas, (Re,,31)", sC: ""},
+            { line: "para colmarlas de tus bendiciones, (La,m,109)", sC: ""},
+            { line: "y alegrar su multitud con la claridad de tu gloria., (Sol,,70)(La,m,424)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por eso, innumerables ángeles en tu presencia,, (Do,,10)(La,m,407)", sC: ""},
+            { line: "contemplando la gloria de tu rostro,, (Re,,94)", sC: ""},
+            { line: "te sirven siempre y te glorifican sin cesar., (La,m,380)", sC: ""},
+    ], lder: [
+            { line: "Y con ellos también nosotros, llenos de alegría,, (Sol,,14)(La,m,434)", sC: ""},
+            { line: "y por nuestra voz las demás criaturas,, (Do,,147)", sC: ""},
+            { line: "aclamamos tu nombre cantando:, (Re,,60)(Mi,,272)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO... ", sC: "as"},
+            { line: "TRANSICIÓN, ", sC: ""},
+            { line: "Te alabamos, Padre santo, porque eres grande, (La,m,20)(Do,,403)", sC: "pa"},
+            { line: "y porque hiciste todas las cosas, (Re,,119)", sC: ""},
+            { line: "con sabiduría y amor., (La,m,189)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "A imagen tuya creaste al hombre, (Do,,260)", sC: ""},
+            { line: "y le encomendaste el universo entero,, (Re,,148)", sC: ""},
+            { line: "para que, sirviéndote solo a ti, su Creador,, (Fa,,142)", sC: ""},
+            { line: "dominara todo lo creado., (Sol,,109)(La,m,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y cuando por desobediencia perdió tu amistad,, (Sol,,14)(La,m,430)", sC: ""},
+            { line: "no lo abandonaste al poder de la muerte,, (Do,,141)", sC: ""},
+            { line: "sino que, compadecido,, (Re,,193)", sC: ""},
+            { line: "tendiste la mano a todos,, (Mi,,195)", sC: ""},
+            { line: "para que te encuentre, (Re,,165)", sC: ""},
+            { line: "el que te busca, (Mi,,104)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA IV 
+// SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA IV                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaivp1",
+        tt: "Plegaria Eucarística IV ",
+        title: "Plegaria Eucarística IV ",
+        subtitle: "(1988) ─ Página 1",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "200",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaiv",
+        sig: "/src/index.html?canto=plegariaeucaristicaivp2",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "PREFACIO, ", sC: ""},
+            { line: "El Señor esté con vosotros., (Sol,,14)(La,m,215)", sC: "pa"},
+            { line: "Y CON TU ESPÍRITU., (Sol,,14)(La,m,142)", sC: "ta as"},
+            { line: "Levantemos el corazón., (Fa,,12)(Mi,,205)", sC: "pa"},
+            { line: "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (Fa,,10)(Mi,,395)", sC: "ta as"},
+            { line: "Demos gracias al Señor, nuestro Dios., (La,m,340)", sC: "pa"},
+            { line: "ES JUSTO Y NECESARIO., (Sol,,14)(La,m,186)", sC: "ta as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Realmente es justo darte gracias,, (La,m,20)(Do,,273)", sC: "pa"},
+            { line: "y deber nuestro glorificarte, Padre santo,, (Re,,107)(La,m,224)", sC: ""},
+            { line: "porque tú eres el único Dios vivo y verdadero, (Do,,84)(Lam,,401)", sC: ""},
+            { line: "que existes desde siempre y vives para siempre;, (Sol,,64)", sC: ""},
+            { line: "luz sobre toda luz., (La,m,157)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque tú solo eres bueno y fuente de vida,, (Do,,380)", sC: ""},
+            { line: "hiciste todas las cosas, (Re,,31)", sC: ""},
+            { line: "para colmarlas de tus bendiciones, (La,m,109)", sC: ""},
+            { line: "y alegrar su multitud con la claridad de tu gloria., (Sol,,70)(La,m,424)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por eso, innumerables ángeles en tu presencia,, (Do,,10)(La,m,407)", sC: ""},
+            { line: "contemplando la gloria de tu rostro,, (Re,,94)", sC: ""},
+            { line: "te sirven siempre y te glorifican sin cesar., (La,m,380)", sC: ""},
+    ], lder: [
+            { line: "Y con ellos también nosotros, llenos de alegría,, (Sol,,14)(La,m,434)", sC: ""},
+            { line: "y por nuestra voz las demás criaturas,, (Do,,147)", sC: ""},
+            { line: "aclamamos tu nombre cantando:, (Re,,60)(Mi,,272)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SANTO, SANTO, SANTO... ", sC: "as"},
+            { line: "TRANSICIÓN, ", sC: ""},
+            { line: "Te alabamos, Padre santo, porque eres grande, (La,m,20)(Do,,403)", sC: "pa"},
+            { line: "y porque hiciste todas las cosas, (Re,,119)", sC: ""},
+            { line: "con sabiduría y amor., (La,m,189)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "A imagen tuya creaste al hombre, (Do,,260)", sC: ""},
+            { line: "y le encomendaste el universo entero,, (Re,,148)", sC: ""},
+            { line: "para que, sirviéndote solo a ti, su Creador,, (Fa,,142)", sC: ""},
+            { line: "dominara todo lo creado., (Sol,,109)(La,m,205)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y cuando por desobediencia perdió tu amistad,, (Sol,,14)(La,m,430)", sC: ""},
+            { line: "no lo abandonaste al poder de la muerte,, (Do,,141)", sC: ""},
+            { line: "sino que, compadecido,, (Re,,193)", sC: ""},
+            { line: "tendiste la mano a todos,, (Mi,,195)", sC: ""},
+            { line: "para que te encuentre, (Re,,165)", sC: ""},
+            { line: "el que te busca, (Mi,,104)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA IV 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA IV                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaivp2",
+        tt: "Plegaria Eucarística IV ",
+        title: "Plegaria Eucarística IV ",
+        subtitle: "(1988) ─ Página 2",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "200",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaivp1",
+        sig: "/src/index.html?canto=plegariaeucaristicaivp3",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Reiteraste tu alianza a los hombres;, (La,m,20)", sC: ""},
+            { line: "por los profetas los fuiste llevando, (Re,m,22)", sC: ""},
+            { line: "con la esperanza de la salvación., (Mi,,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Padre Santo, tanto amaste al mundo, (Do,,10)", sC: ""},
+            { line: "que, al cumplirse la plenitud de los tiempos,, (La,m,20)", sC: ""},
+            { line: "nos enviaste como salvador, (Do,,10)", sC: ""},
+            { line: "a tu único Hijo., (La,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El cual se encarnó, (Do,,10)", sC: ""},
+            { line: "por obra del Espíritu Santo,, (Re,,22)", sC: ""},
+            { line: "nació de María, la Virgen,, (La,m,20)", sC: ""},
+            { line: "y así compartió en todo, (Sol,,14)", sC: ""},
+            { line: "nuestra condición humana, ", sC: ""},
+            { line: "menos en el pecado;, (La,m,20)", sC: ""},
+            { line: "anunció la salvación a los pobres,, (Do,,10)(La,m,250)", sC: ""},
+            { line: "la liberación a los oprimidos, (Do,,10)", sC: ""},
+            { line: "y a los afligidos el consuelo., (La,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Para cumplir tus designios,, (Sol,,14)", sC: ""},
+            { line: "él mismo se entregó a la muerte, (La,m,20)", sC: ""},
+            { line: "y, resucitando, destruyó la muerte., (Sol,,14)(La,m,250)", sC: ""},
+    ], lder: [
+            { line: "RESUCITANDO,, (Do,,10)", sC: "ta as"},
+            { line: "DESTRUYÓ LA MUERTE, ", sC: "as"},
+            { line: "Y NOS DIO NUEVA VIDA., (La,m,20)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y porque no vivamos ya para nosotros mismos,, (La,m,20)(Do,,250)", sC: "pa"},
+            { line: "sino para él,, (Re,,22)", sC: ""},
+            { line: "que por nosotros murió y resucitó,, ", sC: ""},
+            { line: "envió, Padre, desde tu seno, (La,m,20)", sC: ""},
+            { line: "al Espíritu Santo, (Sol,,14)(La,m,250)", sC: ""},
+            { line: "como primicia para los creyentes,, (Sol,,14)", sC: ""},
+            { line: "a fin de santificar todas las cosas,, ", sC: ""},
+            { line: "llevando a plenitud su obra en el mundo., (La,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "EPÍCLESIS. ORACIÓN C0NSECRATORIA, ", sC: ""},
+            { line: "Y este mismo Espíritu, (Do,,10)", sC: "pa"},
+            { line: "santifique, Señor,, (Re,,22)", sC: ""},
+            { line: "estas ofrendas,, (La,m,20)", sC: ""},
+            { line: "para que sean Cuerpo y   Sangre, (Re,,22)", sC: ""},
+            { line: "de Jesucristo, nuestro Señor,, (La,m,20)", sC: ""},
+            { line: "y así celebremos el gran misterio, (Re,,22)", sC: ""},
+            { line: "que nos dejó, como alianza eterna., (La,m,20)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA IV 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           PLEGARIA EUCARÍSTICA IV                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "plegariaeucaristicaivp3",
+        tt: "Plegaria Eucarística IV ",
+        title: "Plegaria Eucarística IV ",
+        subtitle: "(1988) ─ Página 3",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "200",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=plegariaeucaristicaivp2",
+        sig: "/src/index.html?canto=plegariaeucaristicaivp4",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "RELATO DE LA INSTITUCIÓN, ", sC: ""},
+            { line: "Porque él mismo, llegada la hora, (Do,,10)", sC: "pa"},
+            { line: "en que había de ser glorificado por ti, Padre santo,, (La,m,20)", sC: ""},
+            { line: "habiendo amado a los suyos, (Do,,10)", sC: ""},
+            { line: "que estaban en el mundo,, ", sC: ""},
+            { line: "los amó hasta el extremo., (La,m,20)", sC: ""},
+            { line: "Y, mientras cenaba con sus discípulos,, (Fa,,20)", sC: ""},
+            { line: "tomó pan, te bendijo,, (La,m,20)", sC: ""},
+            { line: "lo partió y se lo dio, diciendo:, (Fa,,20)(Sol,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad y comed todos de él,, (La,m,20)(Sol,,250)(La,m,350)", sC: ""},
+            { line: "porque esto es mi Cuerpo,, (Sol,,14)", sC: ""},
+            { line: "que será entregado por vosotros., (La,m,20)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Del mismo modo,, (Do,,10)", sC: ""},
+            { line: "tomó el cáliz lleno del fruto de la vid, ", sC: ""},
+            { line: "y te dio gracias,, (La,m,20)", sC: ""},
+            { line: "lo pasó a sus discípulos, diciendo:, (Re,m,22)(Mi,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tomad y bebed todos de él,, (Sol,,14)(La,m,250)", sC: ""},
+            { line: "porque este es el cáliz de mi Sangre,, (Sol,,14)", sC: ""},
+            { line: "Sangre de la alianza nueva y eterna,, (La,m,20)", sC: ""},
+    ], lder: [
+            { line: "que será derramada por muchos,, (Sol,,14)", sC: ""},
+            { line: "para el perdón de los pecados., (La,m,20)", sC: ""},
+            { line: "Haced esto en conmemoración mía., (Fa,,20)(Mi,,250)", sC: ""},
+            { line: "ACLAMACIÓN, ", sC: ""},
+            { line: "Este es el sacramento de nuestra fe., (Sol,,14)(La,m,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Do,,10)", sC: "ta as"},
+            { line: "PROCLAMAMOS TU RESURRECCIÓN,, (La,m,20)", sC: "as r1"},
+            { line: "¡VEN, SEÑOR JESÚS!, (Fa,,20)(Mi,,250)", sC: "as"},
+            { line: "MEMORIAL Y OFRENDA, ", sC: ""},
+            { line: "Por eso, nosotros, Señor, al celebrar ahora, (La,m,20)", sC: "pa"},
+            { line: "el memorial de nuestra redención,, (Sol,,14)(La,m,250)", sC: ""},
+            { line: "recordamos la muerte de Cristo, (Fa,,20)", sC: ""},
+            { line: "y su descenso al lugar de los muertos,, (La,m,20)", sC: ""},
+            { line: "proclamamos su resurrección, (Fa,,20)", sC: ""},
+            { line: "y ascensión a tu derecha;, (Mi,,20)", sC: ""},
+            { line: "y, mientras esperamos su venida gloriosa,, (Fa,,20)(La,m,250)", sC: ""},
+            { line: "te ofrecemos su Cuerpo y su Sangre,, (Sol,,14)", sC: ""},
+            { line: "sacrificio agradabíe a Ti, (La,m,20)", sC: ""},
+            { line: "y salvación para todo el mundo., (Sol,,14)(La,m,250)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA IV 
 // SIGUIENTE CANTO DEBAJO
 
 
