@@ -1092,3 +1092,11 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 .fontstyle {font-style: italic;}
 .fontsizelarge {font-size: large;}
 .fontsizemedium {font-size: medium;}
+
+.width {width: max-content}
+
+.ttgray {
+        margin-left: -33px;
+        font-variant: all-small-caps;
+        display: flex
+    }

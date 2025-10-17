@@ -15718,7 +15718,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // *******************************************************************************************
 
 // SANTO PALOMERA 65 - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_SantoPalomeras65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "santopalomeras65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -15755,7 +15755,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "asamblea_SANTOMelodíahebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "SANTOMelodíahebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -15800,7 +15800,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // SANTO Palestina 74 - PENDIENTE
 
-            { type: "collapsible-block", id: "asamblea_SANTOPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "SANTOPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
             { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
@@ -15836,7 +15836,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Roma 77 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_SANTORoma77", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "SANTORoma77", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
@@ -15885,7 +15885,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
 
             { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
             { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
@@ -15919,7 +15919,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_Salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
