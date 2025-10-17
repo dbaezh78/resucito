@@ -13,6 +13,11 @@
             .izq {margin-left: -20px;font-size: larger;}
             .top1 {top:1px}
             .f15 .letra{font-size: 8px;}
+
+            .adl1 {margin-left: 167px;}
+            .adl2 {margin-left: 191px;}
+            .adl3 {margin-left: 329px;}
+            .adl4 {margin-left: 0px;}
         }
         @media (min-width: 768px) {
             .container {margin-left: 0%;}
@@ -30,8 +35,10 @@
             .top1 {top:1px}
             .f15 .letra{font-size: 8px;}
 
-            .adl1 {margin-left: 205px;}
-            .adl2 {margin-left: 280px;}
+            .adl1 {margin-left: 313px;}
+            .adl2 {margin-left: 357px;}
+            .adl3 {margin-left: 612px;}
+            .adl4 {margin-left: 280px;}
 
         }
         @media (min-width: 992px) {

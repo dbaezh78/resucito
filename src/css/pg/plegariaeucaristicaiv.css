@@ -2,6 +2,7 @@
             .container {margin-left: 0%;}
             .r1::before {height: 33px;margin-left: 207px;margin-top: -6px;}
             .r2::before {height: 106px;margin-left: 184px;margin-top: -43px;}
+            .r11{height: 93px;margin-left: 190px;margin-top: -47px;}
             .ast::before {margin-top: -2px;margin-left: 136px;}
             .ast1::before {margin-top: 2px;margin-left: 117px;}
             .ast2::before {margin-top: 3px;margin-left: 228px;}
@@ -13,7 +14,6 @@
             .izq {margin-left: -20px;font-size: larger;}
             .top1 {top:1px}
             .f15 .letra{font-size: 8px;}
-        }
         @media (min-width: 768px) {
             .container {margin-left: 0%;}
             .r1::before {height: 46px;margin-left: 380px;margin-top: -13px;}
