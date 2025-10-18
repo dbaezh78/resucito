@@ -244,4 +244,7 @@ const songs = [
 
         // Libro PDF
         {id:238,title: "Libro de Canto en PDF", subtitle: "Libro de Canto del Camino Neo Catecumenal", category: "Precatecumenado", moments: [""], url: "/docs.pdf", targetBlank: true, content: "Este es el libro de cantos en formato PDF, que contiene todos los cantos del Camino Neocatecumenal para su consulta y uso." },
+
+        //SALMODIAS
+        {id:239,title: "Salmo 96", subtitle: "Salmo 96", category: "Liturgia", moments: [""], url: "/src/index.html?canto=salmo96", targetBlank: true, content: "Salmo 96 El Señor reina, la tierra goza, salmo96, Salmo96, Salmo 96." },
     ];

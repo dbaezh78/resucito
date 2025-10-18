@@ -19356,6 +19356,78 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           PREGÓN PASCUAL               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "salmo96",
+        tt: "Salmo 96",
+        title: "Salmo 96",
+        subtitle: "«Saldias",
+        category: ["Laudes","Visperas"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "300",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/pregonpascual.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=prefacioparaeltiempopascual",
+        sig: "/src/index.html?canto=salmodiasparalaoraciondelosfieles",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "El Señor reina, la tierra goza,, (Sol,,14)", sC: "tc"},
+            { line: "se alegran las islas innumerables., (Do,,10)(Sol,,301)", sC: ""},
+            { line: "TINIEBLA Y NUBE LO RODEAN,, (Sol,,14)", sC: "ta as"},
+            { line: "JUSTICIA Y DERECHO SOSTIENEN SU TRONO., (Do,,10)(Sol,,400)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Delante de él avanza fuego,, (Sol,,14)", sC: "tc"},
+            { line: "abrasando en torno a los enemigos;, (Do,,10)(Sol,,300)", sC: ""},
+            { line: "SUS RELÁMPAGOS DESLUMBRAN EL ORBE,, (Sol,,14)", sC: "ta as"},
+            { line: "Y, VIÉNDOLOS, LA TIERRA SE ESTREMECE., (Do,,10)(Sol,,379)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los montes se derriten como cera, (Sol,,14)", sC: "tc"},
+            { line: "ante el dueño de toda la tierra;, (Do,,10)(Sol,,265)", sC: ""},
+            { line: "LOS CIELOS PREGONAN SU JUSTICIA,, (Sol,,14)", sC: "ta as"},
+            { line: "Y TODOS LOS PUEBLOS CONTEMPLAN SU GLORIA., (Do,,10)(Sol,,436)", sC: "as width"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Los que adoran estatuas se sonrojan,, (Sol,,14)", sC: "tc"},
+            { line: "los que ponen su orgullo en los ídolos;, (Do,,10)", sC: ""},
+            { line: "ante él se postran todos los dioses., (Sol,,315)", sC: ""},
+    ], lder: [
+            { line: "LO OYE SIÓN, Y SE ALEGRA,, (Sol,,14)", sC: "ta as"},
+            { line: "SE REGOCIJAN LAS CIUDADES DE JUDÁ, (Do,,10)", sC: "as"},
+            { line: "POR TUS SENTENCIAS, SEÑOR;, (Sol,,271)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "porque tú eres, Señor,, (Sol,,14)", sC: "tc"},
+            { line: "altísimo sobre toda la tierra,, (Do,,10)", sC: ""},
+            { line: "encumbrado sobre todos los dioses., (Sol,,317)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "EL SEÑOR AMA AL QUE ABRORRECE EL MAL, (Sol,,14)", sC: "ta as"},
+            { line: "PROTEGE LA VIDA DE SUS FIELES, (Do,,10)", sC: "as"},
+            { line: "Y LOS LIBRA DE LOS MALVADOR., (Sol,,288)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Amanece la luz para el justo,, (Sol,,14)", sC: "tc"},
+            { line: "y la alegría para los rectos de corazón., (Do,,10)(Sol,,340)", sC: ""},
+            { line: "Alegraos, justos, con el Señor,, (Sol,,14)", sC: ""},
+            { line: "celebrad su santo nombre., (Do,,10)(Sol,,242)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "GLORIA AL PADRE, AL HIJO Y AL ESPIRITU SANTO., (Sol,,13)", sC: "ta as"},
+            { line: "Como era en el principio ahora y siempre., (Do,,10)", sC: "tc"},
+            { line: "Por los siglos de los siglos, Amén., (Sol,,239)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: PREGÓN PASCUAL
+// SIGUIENTE CANTO DEBAJO
+
+
+
 ] //LLAVE DE CIERRE DEL CANTO
 
 
