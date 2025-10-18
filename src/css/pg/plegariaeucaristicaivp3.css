@@ -1,6 +1,6 @@
 ﻿        @media (min-width: 384px) {
             .container {margin-left: 0%;}
-            .r1::before {height: 25px;margin-left: 109px;margin-top: 0px;}
+            .r1::before {height: 107px;margin-left: 274px;margin-top: -43px;}
             .r2::before {height: 106px;margin-left: 184px;margin-top: -43px;}
             .ast::before {margin-top: -2px;margin-left: 136px;}
             .ast1::before {margin-top: 2px;margin-left: 117px;}
@@ -16,7 +16,7 @@
         }
         @media (min-width: 768px) {
             .container {margin-left: 0%;}
-            .r1::before {height: 39px;margin-left: 201px;margin-top: 0px;}
+            .r1::before {height: 166px;margin-left: 495px;margin-top: -56px;}
             .r2::before {height: 152px;margin-left: 336px;margin-top: -43px;}
             .ast::before {margin-top: 3px;margin-left: 248px;}
             .ast1::before {margin-top: 9px;margin-left: 215px;}
@@ -36,7 +36,7 @@
         }
         @media (min-width: 992px) {
             .container {margin-left: 5%;}
-            .r1::before {height: 25px;margin-left: 155px;margin-top: 3px;}
+            .r1::before {height: 122px;margin-left: 379px;margin-top: -49px;}
             .r2::before {height: 129px;margin-left: 263px;margin-top: -47px;}
             .ast::before {margin-top: -3px;margin-left: 195px;}
             .ast1::before {margin-top: 7px;margin-left: 163px;}

@@ -5,6 +5,56 @@ font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
 
 Generar espacio: \u200B   , lo que est'a entre la coma es el espacio que se generó
 
+
+SALMODIA VIII Sal 96 (95)
+   Sol
+C. El Señor reina la tierra goza,
+   Do                         Sol
+   se alegran las islas innumerables.
+   Sol
+A. TINIEBLA Y NUBE LO RODEAN,
+   Do                               Sol
+   JUSTICIA Y DERECHO SOSTIENEN SU TRONO.
+
+SALMO 96
+Gloria del Señor, rey de justicia
+
+1El Señor reina, la tierra goza,
+se alegran las islas innumerables.
+2Tiniebla y nube lo rodean,
+justicia y derecho sostienen su trono.
+
+3Delante de él avanza fuego,
+abrasando en torno a los enemigos;
+4sus relámpagos deslumbran el orbe,
+y, viéndolos, la tierra se estremece.
+
+5Los montes se derriten como cera
+ante el dueño de toda la tierra;
+6los cielos pregonan su justicia,
+y todos los pueblos contemplan su gloria.
+
+7Los que adoran estatuas se sonrojan,
+los que ponen su orgullo en los ídolos;
+ante él se postran todos los dioses.
+
+8Lo oye Sión, y se alegra,
+se regocijan las ciudades de Judá
+por tus sentencias, Señor;
+
+9porque tú eres, Señor,
+altísimo sobre toda la tierra,
+encumbrado sobre todos los dioses.
+
+10El Señor ama al que aborrece el mal,
+protege la vida de sus fieles
+y los libra de los malvados.
+
+11Amanece la luz para el justo,
+y la alegría para los rectos de corazón.
+12Alegraos, justos, con el Señor,
+celebrad su santo nombre.
+
 ╔═══════════════════════════════════════════════════════════╗
 ║                A LA VICTIMA PASCUAL                       ║
 ╚═══════════════════════════════════════════════════════════╝  */
@@ -16956,7 +17006,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
-            { line: "SANTO, SANTO, SANTO., (Sol,,16)(La,m,173)", sC: "as r11"},
+            { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Los cielos y la tierra, (La,m,21)(Sol,,63)(La,m,158)", sC: "tc"},
             { line: "están llenos, están llenos de Ti., (Sol,,75)(La,m,287)", sC: ""},
@@ -17170,7 +17220,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Este es el sacramento de nuestra fe., (Sol,,14)(La,m,335)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Do,,10)", sC: "ta as"},
-            { line: "PROCLAMAMOS TU RESURRECCIÓN,, (La,m,326)", sC: "as r7"},
+            { line: "PROCLAMAMOS TU RESURRECCIÓN,, (La,m,326)", sC: "as r1"},
             { line: "¡VEN, SEÑOR JESÚS!, (Fa,,10)(Mi,,168)", sC: "as"},
             { line: "MEMORIAL Y OFRENDA", sC: "ttgray", color: "gray"},
             { line: "Por eso, nosotros, Señor, al celebrar ahora, (La,m,20)", sC: "pa"},
@@ -17417,7 +17467,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Porque él mismo, llegada la hora, (Do,,10)", sC: "pa"},
             { line: "en que había de ser glorificado por ti, Padre santo,, (La,m,354)", sC: ""},
             { line: "habiendo amado a los suyos, (Do,,10)", sC: ""},
-            { line: "que estaban en el mundo, ", sC: ""},
+            { line: "que estaban en el mundo,, ", sC: ""},
             { line: "los amó hasta el extremo., (La,m,203)", sC: ""},
             { line: "Y, mientras cenaba con sus discípulos,, (Fa,,10)", sC: ""},
             { line: "tomó pan, te bendijo,, (La,m,20)", sC: ""},
@@ -17495,10 +17545,10 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "por el Espíritu Santo,, ", sC: ""},
             { line: "seamos en Cristo, víctima para tu alabanza., (Mi,,25)", sC: ""},
             { line: "ALABANZA DE TU GLORIA,, (Mi7,,13)", sC: "ta as"},
-            { line: "ALABANZA DE TU GLORIA. ", sC: "as"},
+            { line: "ALABANZA DE TU GLORIA., ", sC: "as"},
             { line: "INTERCESIONES", sC: "ttgray", color: "gray"},
             { line: "Acuérdate, Señor, de todos aquellos, (La,m,20)(Do,,218)", sC: ""},
-            { line: "por quienes te ofrecemos este sacrificio; ", sC: ""},
+            { line: "por quienes te ofrecemos este sacrificio;, ", sC: ""},
             { line: "de tu servidor el Papa...,(Re,m,22)", sC: ""},
             { line: "N/.", sC: "sub adl1", color:"red"},
             { line: "de nuestro obispo...", sC: "sub adl2"},
@@ -17901,7 +17951,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "de los ángeles y de los santos,, (Sol,,235)", sC: ""},
             { line: "cantamos, cantamos el himno de tu gloria:, (La,m,48)(Fa,,117)(La,m,373)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "SANTO, SANTO, SANTO... ", sC: "ta as"},
+            { line: "SANTO, SANTO, SANTO ..., ", sC: "ta as"},
 
             // *******************************************************************************************
 // ******************************** REPERTORIO PARA LOS SANTO ********************************

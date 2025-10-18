@@ -1096,7 +1096,7 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 .width {width: max-content}
 
     @media (min-width: 384px) {
-        .ttgray {margin-left: -33px;font-variant: all-small-caps;display: flex}
+        .ttgray {margin-left: -16px;font-variant: all-small-caps;display: flex}
     }
     @media (min-width: 768px) {
         .ttgray {margin-left: -33px;font-variant: all-small-caps;display: flex}

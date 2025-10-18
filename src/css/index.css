@@ -45,16 +45,15 @@
     width: max-content; /* Movido aquí */
     font: icon;
     font-weight: bold;
-    font-size: 20px
 }
 
 /*3ra configuracion r1, r2 */
 @media (min-width: 384px) {.r1::before, .r2::before, .r3::before, .r4::before, .r5::before, .r6::before, .r7::before, .r8::before, .r9::before, .r10::before, .r11::before, .r12::before 
-    {height: 93px;margin-left: 375px;margin-top: -47px;}}
+    {font-size: large;height: 93px;margin-left: 375px;margin-top: -47px;}}
 @media (min-width: 768px) {.r1::before, .r2::before, .r3::before, .r4::before, .r5::before, .r6::before, .r7::before, .r8::before, .r9::before, .r10::before, .r11::before, .r12::before 
-    {height: 153px;margin-left: 380px;margin-top: -42px}}
+    {font-size: x-large;height: 153px;margin-left: 380px;margin-top: -42px}}
 @media (min-width: 992px) {.r1::before, .r2::before, .r3::before, .r4::before, .r5::before, .r6::before, .r7::before, .r8::before, .r9::before, .r10::before, .r11::before, .r12::before 
-    {height: 125px;margin-left: 366px;margin-top: -42px;}}
+    {font-size: x-large;height: 125px;margin-left: 366px;margin-top: -42px;}}
 
  .b1-1, .b1-2, .b2, .b3, .b12-1, .b12-2, .b14, .b17, .b18, .b19, .b24, .sb194
  {position: relative;min-height: 0px;}
