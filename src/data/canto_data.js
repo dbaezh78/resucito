@@ -18476,9 +18476,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: SALMODIA PARA EL EVANGELIO
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔══════════════════════════════════════════════════╗
 ║           SALMODIA PARA EL ROSARIO               ║
-╚════════════════════════════════════════════════════════╝  */
+╚══════════════════════════════════════════════════╝  */
    {
         id: "salmodiaparaelrosario",
         tt: "Salmodia Para El Rosario",
@@ -18491,7 +18491,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "209",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/salmodiaparaelrosario.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -18503,35 +18503,120 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=salmodiaparaelsalmoresponsorial",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "PADRE NUESTRO, ", sC: "ttred", color: "red"},
+            { line: "PADRE NUESTRO ", sC: "ttred", color: "red"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Padre nuestro, que estás en el cielo,, (Mim,,)", sC: "tc"},
-            { line: "santificado sea tu Nombre;, ", sC: ""},
-            { line: "venga a nosotros tu reino;, ", sC: ""},
-            { line: "hágase tu voluntad en la tierra como en el cielo., (Si7,,)(Mim,,250)", sC: ""},
+            { line: "Padre nuestro, que estás en el cielo,, (Mi,m,20)", sC: "tc"},
+            { line: "santificado sea tu Nombre; ", sC: ""},
+            { line: "venga a nosotros tu reino; ", sC: ""},
+            { line: "hágase tu voluntad en la tierra como en el cielo., (Si,7,419)(Mi,m,459)", sC: ""},
             { line: "DANOS HOY NUESTRO PAN DE CADA DÍA;, (La,m,20)", sC: "ta as"},
-            { line: "PERDONA NUESTRAS OFENSAS,, ", sC: "as"},
-            { line: "COMO TAMBIÉN NOSOTROS , ", sC: "as"},
-            { line: "PERDONAMOS A LOS QUE NOS OFENDEN;, ", sC: "as"},
-            { line: "NO NOS DEJES CAER EN LA TENTACIÓN,, ", sC: "as"},
-            { line: "Y LÍBRANOS DEL MAL, AMÉN., (Mi,m,20)(SI,7,250)(Mi,m,350)", sC: "as"},
+            { line: "PERDONA NUESTRAS OFENSAS, ", sC: "as"},
+            { line: "COMO TAMBIÉN NOSOTROS", sC: "as"},
+            { line: "PERDONAMOS A LOS QUE NOS OFENDEN; ", sC: "as"},
+            { line: "NO NOS DEJES CAER EN LA TENTACIÓN, ", sC: "as"},
+            { line: "Y LÍBRANOS DEL MAL, AMÉN., (Mi,m,245)(Si,7,289)(Mi,m,331)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "AVE MARÍA, ", sC: "ttred", color: "red"},
+            { line: "AVE MARÍA ", sC: "ttred", color: "red"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Dios te Salve, María, llena eres de gracia, el Señor es contigo,, (Mim,,)", sC: "tc"},
-            { line: "bendita tú eres entre todas las mujeres,, ", sC: ""},
-            { line: "y bendito es el fruto de tu vientre Jesús., (Sl7,,)(Mim,,250)", sC: ""},
+            { line: "Dios te Salve, María,, (Mi,m,18)", sC: "tc"},
+            { line: "llena eres de gracia, el Señor es contigo", sC: ""},
+            { line: "bendita tú eres entre todas las mujeres, ", sC: ""},
+            { line: "y bendito es el fruto de tu vientre Jesús., (Si,7,350)(Mi,m,395)", sC: ""},
             { line: "SANTA MARIA, MADRE DE DIOS,, (La,m,20)", sC: "ta as"},
-            { line: "RUEGA POR NOSOTROS, PECADORES,, ", sC: "as"},
-            { line: "AHORA Y EN LA HORA DE NUESTRA MUERTE. AMÉN., (Mi,m,20)(SI,7,250)(Mi,m,350)", sC: "as"},
+            { line: "RUEGA POR NOSOTROS, PECADORES, AHORA ", sC: "as"},
+            { line: "Y EN LA HORA DE NUESTRA MUERTE. AMÉN., (Mi,m,390)(Si,7,432)(Mi,m,474)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "GLORIA, ",sC: "ttred", color: "red"},
+            { line: "GLORIA ",sC: "ttred", color: "red"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Sol,,14)(Re,,250)(Sol,,350)", sC: "tc"},
-            { line: "COMO ERA EN EL PRINCIPIO AHORA Y SIEMPRE,, (La,m,20)", sC: "ta as"},
-            { line: "POR LOS SIGLOS DE LOS SIGLOS. AMÉN., (Mi,m,20)(SI,7,250)(Mim,,350)", sC: "as"},
+            { line: "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Sol,,14)(Re,,381)(Sol,,413)", sC: "tc"},
+            { line: "COMO ERA EN EL PRINCIPIO, AHORA Y SIEMPRE,(La,m,20)", sC: "ta as"},
+            { line: "POR LOS SIGLOS DE LOS SIGLOS. AMÉN., (Mi,m,353)(Si,7,398)(Mim,,440)", sC: "as"},
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: SALMODIA PARA EL ROSARIO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SALMODIA PARA EL SALMO RESPONSORIAL               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "salmodiaparaelsalmoresponsorial",
+        tt: "Salmodia Para El Salmo Responsorial",
+        title: "Salmodia Para El Salmo Responsorial",
+        subtitle: "Modelo I, II, III",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "210",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/salmodiaparaelsalmoresponsorial.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=salmodiaparaelrosario",
+        sig: "/src/index.html?canto=salmodiasparalaoraciondelosfieles",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Modelo I, ", sC: "", color: "red" },
+            { line: "XXII Domingo del Tiempo ordinario - Ciclo A -\n Salmo 63 [62] ", sC: "ttpeq"},
+            { line: "MI ALMA ESTÁ SEDIENTA DE TI,, (Mi,m,20)(La,m,292)", sC: "tc as"},
+            { line: "SEÑOR, DIOS MÍO;, (Si,7,152)", sC: "as  r1"},
+            { line: "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Oh Dios, tú eres mi Dios, por ti madrugo,, (La,m,20)(Si,7,250)", sC: "tc"},
+            { line: "mi alma está sedienta de ti,, (La,m,20)(Si,7,250)", sC: ""},
+            { line: "mi carne tiene ansia de ti,, (Do,,10)(Si,7,250)", sC: ""},
+            { line: "como tierra reseca, agostada, sin agua., (Do,,10)(La,m,250)(Si,7,350)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_spsr_1", initialState: "collapsed",
+       triggerLine: "MI ALMA ESTÁ SEDIENTA DE TI, (Mi,m,20)(La,m,292)", sC: "ta as", lines: [
+            { line: "SEÑOR, DIOS MÍO;, (Si,7,152)", sC: "as  r1"},
+            { line: "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Cómo te contemplaba en el santuario, (La,m,20)(Si,7,250)", sC: "tc"},
+            { line: "viendo tu fuerza y tu gloria!, (La,m,20)(Si,7,250)", sC: ""},
+            { line: "Tu gracia vale más que la vida,, (Do,,10)(Si,7,250)", sC: ""},
+            { line: "te alabarán mis labios., (Do,,10)(La,m,250)(Si,7,350)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_spsr_2", initialState: "collapsed",
+       triggerLine: "MI ALMA ESTÁ SEDIENTA DE TI, (Mi,m,20)(La,m,292)", sC: "ta as", lines: [
+            { line: "SEÑOR, DIOS MÍO;, (Si,7,152)", sC: "as  r1"},
+            { line: "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Modelo II, ", sC: "", color: "red"},
+            { line: "IV Domingo de Pascua - Ciclo A -\n Sal 23 [22] ", sC: ""},
+            { line: "EL SEÑOR ES MI PASTOR,, (Sol,,14)", sC: "ta as"},
+            { line: "NADA ME FALTA;, ", sC: "as r2"},
+            { line: "EL SEÑOR ES MI PASTOR,, (Do,,10)", sC: "as"},
+            { line: "NADA ME FALTA., (Sol,,119)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Preparas una mesa ante mí,, (Sol,,14)", sC: "tc"},
+            { line: "enfrente de mis enemigos, ", sC: ""},
+            { line: "me unges la cabeza con perfume,, (Do,,10)", sC: ""},
+            { line: "y mi copa rebosa., (Sol,,14)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_spsr_3", initialState: "collapsed",
+       triggerLine: "EL SEÑOR ES MI PASTOR, (Sol,,14)", sC: "ta as", lines: [
+            { line: "NADA ME FALTA; ", sC: "as r2"},
+            { line: "EL SEÑOR ES MI PASTOR,, (Do,,10)", sC: "as"},
+            { line: "NADA ME FALTA., (Sol,,119)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tu bondad y tu misericordia me acompañan, (Sol,,14)", sC: "tc"},
+            { line: "todos los días de mi vida,, (Do,,10)", sC: ""},
+            { line: "y habitaré en la casa del Señor, (Sol,,14)", sC: ""},
+            { line: "por años sin término., (Do,,10)(Sol,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_spsr_4", initialState: "collapsed",
+       triggerLine: "EL SEÑOR ES MI PASTOR, (Sol,,14)", sC: "ta as", lines: [
+            { line: "NADA ME FALTA; ", sC: "as r2"},
+            { line: "EL SEÑOR ES MI PASTOR,, (Do,,10)", sC: "as"},
+            { line: "NADA ME FALTA., (Sol,,119)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: SALMODIA PARA EL SALMO RESPONSORIAL
 // SIGUIENTE CANTO DEBAJO
 
 

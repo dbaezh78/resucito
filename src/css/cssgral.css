@@ -1104,3 +1104,7 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
     @media (min-width: 384px) {.ttred {margin-left: -16px;font-weight: bolder;display: flex}} 
     @media (min-width: 768px) {.ttred {margin-left: -33px;font-weight: bolder;display: flex}}
     @media (min-width: 992px) {.ttred {margin-left: -33px;font-weight: bolder;display: flex}}
+
+    @media (min-width: 384px) {.ttpeq {font-variant:petite-caps; display: flex}} 
+    @media (min-width: 768px) {.ttpeq {font-variant:petite-caps; display: flex}}
+    @media (min-width: 992px) {.ttpeq {font-variant:petite-caps; display: flex}}
