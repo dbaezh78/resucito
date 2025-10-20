@@ -18475,6 +18475,64 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: SALMODIA PARA EL EVANGELIO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SALMODIA PARA EL ROSARIO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "salmodiaparaelrosario",
+        tt: "Salmodia Para El Rosario",
+        title: "Salmodia Para El Rosario",
+        subtitle: "Santo Rosario",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "209",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/salmodiaparaelrosario.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=salmodiaparaelevangelio",
+        sig: "/src/index.html?canto=salmodiaparaelsalmoresponsorial",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "PADRE NUESTRO, ", sC: "ttred", color: "red"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Padre nuestro, que estás en el cielo,, (Mim,,)", sC: "tc"},
+            { line: "santificado sea tu Nombre;, ", sC: ""},
+            { line: "venga a nosotros tu reino;, ", sC: ""},
+            { line: "hágase tu voluntad en la tierra como en el cielo., (Si7,,)(Mim,,250)", sC: ""},
+            { line: "DANOS HOY NUESTRO PAN DE CADA DÍA;, (La,m,20)", sC: "ta as"},
+            { line: "PERDONA NUESTRAS OFENSAS,, ", sC: "as"},
+            { line: "COMO TAMBIÉN NOSOTROS , ", sC: "as"},
+            { line: "PERDONAMOS A LOS QUE NOS OFENDEN;, ", sC: "as"},
+            { line: "NO NOS DEJES CAER EN LA TENTACIÓN,, ", sC: "as"},
+            { line: "Y LÍBRANOS DEL MAL, AMÉN., (Mi,m,20)(SI,7,250)(Mi,m,350)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AVE MARÍA, ", sC: "ttred", color: "red"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Dios te Salve, María, llena eres de gracia, el Señor es contigo,, (Mim,,)", sC: "tc"},
+            { line: "bendita tú eres entre todas las mujeres,, ", sC: ""},
+            { line: "y bendito es el fruto de tu vientre Jesús., (Sl7,,)(Mim,,250)", sC: ""},
+            { line: "SANTA MARIA, MADRE DE DIOS,, (La,m,20)", sC: "ta as"},
+            { line: "RUEGA POR NOSOTROS, PECADORES,, ", sC: "as"},
+            { line: "AHORA Y EN LA HORA DE NUESTRA MUERTE. AMÉN., (Mi,m,20)(SI,7,250)(Mi,m,350)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "GLORIA, ",sC: "ttred", color: "red"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Sol,,14)(Re,,250)(Sol,,350)", sC: "tc"},
+            { line: "COMO ERA EN EL PRINCIPIO AHORA Y SIEMPRE,, (La,m,20)", sC: "ta as"},
+            { line: "POR LOS SIGLOS DE LOS SIGLOS. AMÉN., (Mi,m,20)(SI,7,250)(Mim,,350)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: SALMODIA PARA EL ROSARIO
+// SIGUIENTE CANTO DEBAJO
 
 
 
