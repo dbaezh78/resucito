@@ -16801,7 +16801,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=plegariaeucaristicaivp1",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "PREFACIO, ", sC: "ttgray", color: "gray"},
+            { line: "PREFACIO, ", sC: "ttpeq", color: "gray"},
             { line: "El Señor esté con vosotros., (Sol,,14)(La,m,215)", sC: "pa"},
             { line: "Y CON TU ESPÍRITU., (Sol,,14)(La,m,142)", sC: "ta as"},
             { line: "Levantemos el corazón., (Fa,,12)(Mi,,205)", sC: "pa"},
@@ -17073,7 +17073,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // ******************************* FIN PROCLAMACIÓN DEL SANTO *******************************
 // ******************************************************************************************
 
-            { line: "TRANSICIÓN, ", sC: ""},
+            { line: "TRANSICIÓN, ", sC: "ttgray", color: "gray"},
             { line: "Te alabamos, Padre santo, porque eres grande, (La,m,20)(Do,,403)", sC: "pa"},
             { line: "y porque hiciste todas las cosas, (Re,,119)", sC: ""},
             { line: "con sabiduría y amor., (La,m,189)", sC: ""},
@@ -18550,7 +18550,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "210",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/salmodiaparaelsalmoresponsorial.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
@@ -18568,20 +18568,20 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "SEÑOR, DIOS MÍO;, (Si,7,152)", sC: "as  r1"},
             { line: "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Oh Dios, tú eres mi Dios, por ti madrugo,, (La,m,20)(Si,7,250)", sC: "tc"},
-            { line: "mi alma está sedienta de ti,, (La,m,20)(Si,7,250)", sC: ""},
-            { line: "mi carne tiene ansia de ti,, (Do,,10)(Si,7,250)", sC: ""},
-            { line: "como tierra reseca, agostada, sin agua., (Do,,10)(La,m,250)(Si,7,350)", sC: ""},
+            { line: "Oh Dios, tú eres mi Dios, por ti madrugo,, (La,m,20)(Si,7,356)", sC: "tc"},
+            { line: "mi alma está sedienta de ti,, (La,m,20)(Si,7,261)", sC: ""},
+            { line: "mi carne tiene ansia de ti,, (Do,,10)(Si,7,239)", sC: ""},
+            { line: "como tierra reseca, agostada, sin agua., (Do,,10)(La,m,154)(Si,7,346)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_spsr_1", initialState: "collapsed",
        triggerLine: "MI ALMA ESTÁ SEDIENTA DE TI, (Mi,m,20)(La,m,292)", sC: "ta as", lines: [
             { line: "SEÑOR, DIOS MÍO;, (Si,7,152)", sC: "as  r1"},
             { line: "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "¡Cómo te contemplaba en el santuario, (La,m,20)(Si,7,250)", sC: "tc"},
-            { line: "viendo tu fuerza y tu gloria!, (La,m,20)(Si,7,250)", sC: ""},
-            { line: "Tu gracia vale más que la vida,, (Do,,10)(Si,7,250)", sC: ""},
-            { line: "te alabarán mis labios., (Do,,10)(La,m,250)(Si,7,350)", sC: ""},
+            { line: "¡Cómo te contemplaba en el santuario, (La,m,20)(Si,7,357)", sC: "tc"},
+            { line: "viendo tu fuerza y tu gloria!, (La,m,20)(Si,7,259)", sC: ""},
+            { line: "Tu gracia vale más que la vida,, (Do,,10)(Si,7,260)", sC: ""},
+            { line: "te alabarán mis labios., (Do,,10)(La,m,90)(Si,7,170)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_spsr_2", initialState: "collapsed",
        triggerLine: "MI ALMA ESTÁ SEDIENTA DE TI, (Mi,m,20)(La,m,292)", sC: "ta as", lines: [
@@ -18589,7 +18589,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)", sC: "as"},  ]},
     ], lder: [
             { line: "Modelo II, ", sC: "", color: "red"},
-            { line: "IV Domingo de Pascua - Ciclo A -\n Sal 23 [22] ", sC: ""},
+            { line: "IV Domingo de Pascua - Ciclo A -\n Sal 23 [22] ", sC: "ttpeq"},
             { line: "EL SEÑOR ES MI PASTOR,, (Sol,,14)", sC: "ta as"},
             { line: "NADA ME FALTA;, ", sC: "as r2"},
             { line: "EL SEÑOR ES MI PASTOR,, (Do,,10)", sC: "as"},
@@ -18597,8 +18597,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Preparas una mesa ante mí,, (Sol,,14)", sC: "tc"},
             { line: "enfrente de mis enemigos, ", sC: ""},
-            { line: "me unges la cabeza con perfume,, (Do,,10)", sC: ""},
-            { line: "y mi copa rebosa., (Sol,,14)", sC: ""},
+            { line: "me unges la cabeza con perfume,, (Do,,45)", sC: ""},
+            { line: "y mi copa rebosa., (Sol,,113)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_spsr_3", initialState: "collapsed",
        triggerLine: "EL SEÑOR ES MI PASTOR, (Sol,,14)", sC: "ta as", lines: [
@@ -18609,7 +18609,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Tu bondad y tu misericordia me acompañan, (Sol,,14)", sC: "tc"},
             { line: "todos los días de mi vida,, (Do,,10)", sC: ""},
             { line: "y habitaré en la casa del Señor, (Sol,,14)", sC: ""},
-            { line: "por años sin término., (Do,,10)(Sol,,250)", sC: ""},
+            { line: "por años sin término., (Do,,10)(Sol,,136)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_spsr_4", initialState: "collapsed",
        triggerLine: "EL SEÑOR ES MI PASTOR, (Sol,,14)", sC: "ta as", lines: [
