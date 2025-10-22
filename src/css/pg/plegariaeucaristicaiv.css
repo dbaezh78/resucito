@@ -10,6 +10,10 @@
             .ast3::before {margin-top: 3px;margin-left: 15px;}
             .ast4::before {margin-top: -3px;margin-left: 195px;}
             .tx {margin-top: -26px; font-size: small;}
+            .adl1 {margin-left: 162px;}
+            .adl2 {margin-left: 186px;}
+            .adl3 {margin-left: 323px;}
+            .adl4 {margin-left: 210px;}
             .cruz {margin-left: 68px;}
             .sangre {margin-left: 90px;}
             .izq {margin-left: -20px;font-size: larger;}
@@ -28,9 +32,9 @@
             .ast3::before {margin-top: 7px;margin-left: 26px;}
             .ast4::before {margin-top: -3px;margin-left: 195px;}
             .tx {margin-top: -26px; font-size: small;}
-            .adl1 {margin-left: 304px;}
-            .adl2 {margin-left: 347px;}
-            .adl3 {margin-left: 598px;}
+            .adl1 {margin-left: 303px;}
+            .adl2 {margin-left: 350px;}
+            .adl3 {margin-left: 604px;}
             .adl4 {margin-left: 210px;}
             .cruz {margin-left: 120px;}
             .sangre {margin-left: 155px;}
@@ -43,6 +47,7 @@
             .container {margin-left: 5%;}
             .r1::before {height: 47px;margin-left: 293px;margin-top: -9px;}
             .r2::before {height: 129px;margin-left: 263px;margin-top: -47px;}
+            .r7::before {height: 108px;margin-left: 369px;margin-top: -36px;}
             .ast::before {margin-top: -3px;margin-left: 195px;}
             .ast1::before {margin-top: 7px;margin-left: 163px;}
             .ast2::before {margin-top: 3px;margin-left: 56px;}

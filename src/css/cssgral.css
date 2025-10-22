@@ -77,11 +77,13 @@ body {
     padding: 20px;
     box-sizing: border-box;
 
-    user-select: none; 
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+/* Control de Usuario y manipulación
+user-select: none; 
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
 
+*/    
 
 
 }
