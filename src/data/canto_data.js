@@ -18618,6 +18618,81 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "NADA ME FALTA., (Sol,,119)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: SALMODIA PARA EL SALMO RESPONSORIAL
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SALMODIAS PARA LA ORACIÓN DE LOS FIELES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "salmodiasparalaoraciondelosfieles",
+        tt: "Salmodias Para La Oración De Los Fieles",
+        title: "Salmodias Para La Oración De Los Fieles",
+        subtitle: "Para las solemnidades",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "211",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/salmodiasparalaoraciondelosfieles.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=salmodiaparaelsalmoresponsorial",
+        sig: "/src/index.html?canto=salmodiasparalaudes",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Oremos, hermanos,, (Mi,m,20)", sC: "tc"},
+            { line: "por la Iglesia santa de Dios,, ", sC: "subx"},
+            { line: "por su servidor el Papa ", sC: "subx"},
+            { line: "N/., ", sC: "sub", color: "red"},
+            { line: "por los obispos, los sacerdotes, diáconos, ", sC: "subx"},
+            { line: "y todo tu pueblo santo:, (Sol,,174)", sC: ""},
+            { line: "para que partícipen de los bienes celestiales, ", sC: ""},
+            { line: "podamos anunciar a este mundo que sufre, ", sC: "subx"},
+            { line: "la Buena Noticia de Jesucristo resucitado., (Mi,m,364)(Re,,404)(Mi,m,444)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡ESCÚCHANOS, OH SEÑOR!, (Mi,m,20)(Re,,160)(Mi,m,238)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Oremos, hermanos, por los gobernantes,, (Mi,m,20)", sC: "tc"},
+            { line: "y por todos los hombres, ", sC: "subx"},
+            { line: "que han sido constituidos como jefes, ", sC: "subx"},
+            { line: "y conductores de las naciones:, (Sol,,244)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "para que cesen las guerras, ", sC: "subx"},
+            { line: "para que desaparezcan las divisiones,, ", sC: "subx"},
+            { line: "y se construyan caminos, ", sC: "subx"},
+            { line: "de paz y justicia para todos los pueblos., (Mi,m,322)(Re,,361)(Mi,m,400)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡ESCÚCHANOS, OH SEÑOR!, (Mi,m,20)(Re,,160)(Mi,m,238)", sC: "ta as"},
+    ], lder: [
+            { line: "Oremos por todos los hombres, (Mi,m,20)", sC: "tc"},
+            { line: "que sufren en su cuerpo o en su espíritu,, ", sC: "subx"},
+            { line: "y por todos los pobres de la tierra:, (Sol,,286)", sC: ""},
+            { line: "para que por medio de tus profetas, ", sC: ""},
+            { line: "reciban el anuncio de la salvación y la vida, ", sC: "subx"},
+            { line: "el consuelo de tu Palabra, ", sC: "subx"},
+            { line: "y la comunión de los fieles de tu Iglesia., (Mi,m,336)(Re,,375)(Mi,m,415)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡ESCÚCHANOS, OH SEÑOR!, (Mi,m,20)(Re,,160)(Mi,m,238)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Oremos por esta asamblea santa,, (Mi,m,20)", sC: "tc subx"},
+            { line: "que convocada en tu Nombre, ", sC: "subx"},
+            { line: "celebra hoy el memorial de la muerte, ", sC: "subx"},
+            { line: "y resurrección de tu Hijo:, (Sol,,209)", sC: ""},
+            { line: "para que el Señor nos conceda a todos, ", sC: "subx"},
+            { line: "el celo por la salvación de los hombres, ", sC: "subx"},
+            { line: "el amor a los que sufren, ", sC: "subx"},
+            { line: "y la alegría de proclamar en esta generación, ", sC: "subx"},
+            { line: "tu amor y tu misericordia., (Mi,m,203)(Re,,238)(Mi,m,278)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡ESCÚCHANOS, OH SEÑOR!, (Mi,m,20)(Re,,160)(Mi,m,238)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: SALMODIAS PARA LA ORACIÓN DE LOS FIELES
+// SIGUIENTE CANTO DEBAJO
 
 
 
