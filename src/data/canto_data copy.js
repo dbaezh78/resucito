@@ -19650,7 +19650,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Pero llevamos este tesoro en vasos de barro., (Fa#,,15)", sC: "tc"},
             { line: "PERO LLEVAMOS ESTE TESORO, ", sC: "ta as"},
-            { line: "EN VASOS DE BARRO. ", sC: "as"},
+            { line: "EN VASOS DE BARRO., ", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Para que se manifieste, (Si,m,71)", sC: "tc"},
             { line: "que lo sublime de este amor, (La,,161)", sC: ""},
@@ -19720,6 +19720,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
+
+// CATECUMENOS
 
 /*
 ╔════════════════════════════════════════════════════════╗

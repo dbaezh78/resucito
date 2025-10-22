@@ -1110,3 +1110,7 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
     @media (min-width: 384px) {.ttpeq {font-variant:petite-caps; display: flex}} 
     @media (min-width: 768px) {.ttpeq {font-variant:petite-caps; display: flex}}
     @media (min-width: 992px) {.ttpeq {font-variant:petite-caps; display: flex}}
+
+    @media (min-width: 384px) {.s1 {margin-top: -18px;}} 
+    @media (min-width: 768px) {.s1 {margin-top: -18px;}}
+    @media (min-width: 992px) {.s1 {margin-top: -18px;}}
