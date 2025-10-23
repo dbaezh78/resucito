@@ -5801,7 +5801,7 @@ const allCantosData = [
             { line: "VOSOTROS A MÍ,, (Mi,,153)", sC: "as"},
     ], lder: [
             { line: "sino que yo os he elegido a vosotros,, (Re,m,20)(Mi,,301)", sC: "tc"},
-            { line: "SINO QUE YO, (Re,m,222)", sC: "ta as"},
+            { line: "SINO QUE YO, (Re,m,20)", sC: "ta as"},
             { line: "OS HE ELEGIDO A VOSOTROS., (Mi,,18)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si el mundo os odia, (La,7,17)", sC: "tc"},
