@@ -13845,7 +13845,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "179",
         notes: "",
         mant: "No",
-        audioSrc: "/audio/aclamacionesalaoraciondelosfieles.mp3",
+        audioSrc: "https://audio.resucito.do/aclamacionesalaoraciondelosfieles.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -19629,7 +19629,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "224",
         notes: "",
         mant: "No",
-        audioSrc: "/audio/elmismodios.mp3",
+        audioSrc: "http://audio.resucito.do/elmismoDios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
