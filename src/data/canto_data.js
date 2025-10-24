@@ -21103,7 +21103,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         subtitle: "Himno (San Quodvultdeus)",
         category: ["Eleccion"],
         catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        cejilla: "",
+        cejilla: "3",
         nCan: "",
         nCanURL: "",
         dbno: "244",
@@ -21137,7 +21137,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_esposo_1", initialState: "collapsed",
        triggerLine: "SUBA EL ESPOSO, (Mi,,20)", sC: "ta as", lines: [
-            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,137)", sC: "as"},
+            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,137)", sC: "as r1"},
             { line: "SUBA NUESTRO ESPOSO,, (Mi,,22)(La,m,235)", sC: "as"},
             { line: "AL LECHO, AL LECHO DE SU TÁLAMO., (Mi,,50)(La,m,291)", sC: "as"},  ]},
     ], lder: [
