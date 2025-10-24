@@ -20330,12 +20330,168 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "QUE YO NO LA ENTIENDO., (La,,192)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Señor, tú me escrutas y conoces,, (Re,m,22)(Sol,m,277)", sC: "tc"},
-            { line: "sondeas y pruebas mi corazón,, (Re,m,271)", sC: ""},
+            { line: "sondeas y pruebas mi corazón,, (Re,m,275)", sC: ""},
             { line: "para que no siga un camino de doblez,, (Sol,m,349)", sC: ""},
             { line: "para que no me aparte nunca, ", sC: ""},
             { line: "de tu camino., (Re,m,101)", sC: ""},
 ]}, // ULTIMA LINEA DEL CANTO: SEÑOR, TÚ ME ESCRUTAS Y CONOCES
 // SIGUIENTE CANTO DEBAJO
+/*
+╔═══════════════════════════════════════╗
+║           SHEMÁ ISRAEL                ║
+╚═══════════════════════════════════════╝  */
+   {
+        id: "shemaisrael",
+        tt: "Shemá Israel ",
+        title: "Shemá Israel ",
+        subtitle: "Deuteronomio 6,4-9",
+        category: ["Catecumenado","Antiguo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "4",
+        nCan: "* Se canta a dos voces intercalando el estribillo en hebreo \"Shemá Israel\" con una segunda voz más aguda.",
+        nCanURL: "",
+        dbno: "234",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/shemaisrael.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=senortumeescrutasyconoces",
+        sig: "/src/index.html?canto=sientatesolitarioysilencioso",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Shemá Israel, Shemá Israel,, (La,m,20)(Sol,,200)", sC: "tc"},
+            { line: "Adonai Elohenu, Adonai Ejad., (Fa,,55)(La,m,261)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SHEMÁ ISRAEL, SHEMÁ ISRAEL,, (La,m,20)(Sol,,220)", sC: "ta as"},
+            { line: "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ESCUCHA ISRAEL, ESCUCHA ISRAEL,, (La,m,20)(Sol,,224)", sC: "as ast"},
+            { line: "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)", sC: "as"},
+            { line: "EL SEÑOR ES UNO., (La,m,147)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Amarás al Señor tu Dios, (La,m,20)", sC: "tc"},
+            { line: "con todo tu corazón,, (Fa,,53)(La,m,176)", sC: ""},
+            { line: "con toda tu alma,, (Fa,,53)(La,m,131)", sC: ""},
+            { line: "con todas tus fuerzas., (Fa,,53)(Mi,,156)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Graba estas palabras, (La,m,20)(Re,m,162)", sC: ""},
+            { line: "como señal en las palmas de tus manos,, (Sol,,99)(La,m,346)", sC: ""},
+            { line: "como memorial entre tus ojos,, (Re,m,270)", sC: ""},
+            { line: "en las jambas de tu casa y en las puertas., (Sol,,73)(Mi,,352)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_shema_1", initialState: "collapsed",
+       triggerLine: "SHEMÁ ISRAEL, (La,m,20)", sC: "ta as", lines: [
+            { line: "SHEMÁ ISRAEL, (Sol,,64)", sC: "as sub"},
+            { line: "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)", sC: "as"},
+            { line: "", sC: "adb1"}, ]},
+
+            { type: "collapsible-block", id: "asamblea_shema_2", initialState: "collapsed",
+       triggerLine: "ESCUCHA ISRAEL, (La,m,20)", sC: "as", lines: [
+            { line: "ESCUCHA ISRAEL, (Sol,,46)", sC: "as sub1"},
+            { line: "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)", sC: "as"},
+            { line: "EL SEÑOR ES UNO., (La,m,147)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Enséñalo a tus hijos, Israel,, (La,m,20)", sC: "tc"},
+            { line: "háblales en casa,, (Fa,,10)(La,m,137)", sC: ""},
+            { line: "cuando camines por la calle,, (Fa,,121)(La,m,243)", sC: ""},
+            { line: "cuando te acuestes y te levantes., (Fa,,138)(Mi,,264)", sC: ""},
+            { line: "Este es el primer mandamiento de la vida,, (La,m,20)(Re,m,370)", sC: ""},
+            { line: "el segundo es igual a este:, (Sol,,70)(La,m,228)", sC: ""},
+            { line: "Ama a tu prójimo como a ti mismo, (Re,m,194)", sC: ""},
+            { line: "y tendrás, tendrás la Vida Eterna., (Sol,,74)(Mi,,275)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_shema_1", initialState: "collapsed",
+       triggerLine: "SHEMÁ ISRAEL, (La,m,20)", sC: "ta as", lines: [
+            { line: "SHEMÁ ISRAEL, (Sol,,64)", sC: "as sub"},
+            { line: "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)", sC: "as"},
+            { line: "", sC: "adb1"}, ]},
+
+            { type: "collapsible-block", id: "asamblea_shema_2", initialState: "collapsed",
+       triggerLine: "ESCUCHA ISRAEL, (La,m,20)", sC: "as", lines: [
+            { line: "ESCUCHA ISRAEL, (Sol,,46)", sC: "as sub1"},
+            { line: "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)", sC: "as"},
+            { line: "EL SEÑOR ES UNO., (La,m,147)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Shemá Israel,, (La,m,20)", sC: "melisma"},
+            { line: "SHEMÁ ISRAEL,, (Sol,,65)", sC: "ta as"},
+            { line: "ADONAI ELOHENU,, (Fa,,63)", sC: "as"},
+            { line: "ADONAI EJAD., (La,m,111)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: SHEMÁ ISRAEL 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SIENTATE SOLITARIO Y SILENCIOSO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "sientatesolitarioysilencioso",
+        tt: "Sientate Solitario Y Silencioso",
+        title: "Sientate Solitario Y Silencioso",
+        subtitle: "Lamentaciones 3",
+        category: ["Catecumenado","Cuaresma"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "235",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/sientatesolitarioysilencioso.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=shemaisrael",
+        sig: "/src/index.html?canto=tueresmiesperanzasenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Dios mío, Dios mío,, (Re,,12)(Fa#,m,214)", sC: "tc"},
+            { line: "me has llevado, me has llevado, (Si,m,322)", sC: ""},
+            { line: "y me has hecho caminar entre tinieblas., (Re,,333)", sC: ""},
+            { line: "Has construido para mí un yugo,, (Fa#,m,331)", sC: ""},
+            { line: "has atado mi cabeza, mi cabeza, (Si,m,327)", sC: ""},
+            { line: "y la barbilla., (Re,,82)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Has tensado tu arco,, (Fa#,m,222)", sC: ""},
+            { line: "y me has fijado, me has fijado, (Si,m,304)", sC: ""},
+            { line: "como blanco de tus flechas., (Re,,212)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aun cuando grito y gimo,, (Fa#,m,259)", sC: ""},
+            { line: "tú sofocas, sofocas, (Si,m,200)", sC: ""},
+            { line: "mi oración., (Re,,84)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Contemplar mi miseria, (Mi,m,20)", sC: ""},
+            { line: "y mi vida errante, (La,,128)", sC: ""},
+            { line: "es para mí hiel y amargura., (Re,,233)", sC: ""},
+    ], lder: [
+            { line: "¿Mas qué puedo hacer, (Fa#,,15)", sC: ""},
+            { line: "si hasta me falta la esperanza,, (Si,m,255)", sC: ""},
+            { line: "la esperanza que viene del Señor,, (La,,82)(Sol,,304)", sC: ""},
+            { line: "que viene del Señor?, (Fa#,,176)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SIÉNTATE SOLITARIO Y SILENCIOSO,, (Re, ,12)(Fa#,m,302)", sC: "ta as"},
+            { line: "PORQUE DIOS TE LO HA IMPUESTO., (Si,m,119)Re", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "HUMILLA TU BOCA EN EL POLVO,, (Fa#,m,265)", sC: "as"},
+            { line: "QUIZÁ HAYA ESPERANZA. (Si,m,43)(Re,,198)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "PON LA MEJILLA A QUIEN TE HIERE:, (Mi,m,20)(La,7,304)", sC: "as"},
+            { line: "PORQUE NO RECHAZA", sC: "as r1"},
+            { line: "PARA SIEMPRE EL SEÑOR., (La,,89)", sC: "as"},
+            { line: "AUN CUANDO AFLIGE, (sol,,32)", sC: "as"},
+            { line: "USA DE MISERICORDIA,, (La,,166)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "según su gran amor., (La,7,20)(Re,,174)", sC: "tc"},
+]}, // ULTIMA LINEA DEL CANTO: SIENTATE SOLITARIO Y SILENCIOSO
+// SIGUIENTE CANTO DEBAJO
+
 
 
 
