@@ -21121,7 +21121,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "SUBA EL ESPOSO,, (La,m,20)(Re,m,137)", sC: "tc as"},
-            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (Mi,,22)(La,m,235)", sC: "as"},
+            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (Mi,,22)(La,m,235)", sC: "as r1"},
             { line: "SUBA NUESTRO ESPOSO,, (Re,m,204)", sC: "as"},
             { line: "AL LECHO, AL LECHO DE SU TÁLAMO., (Mi,,50)(La,m,291)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -21153,7 +21153,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_esposo_2", initialState: "collapsed",
        triggerLine: "SUBA EL ESPOSO, (Mi,,20)(Re,m,137)", sC: "ta as", lines: [
-            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,236)", sC: "as"},
+            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,236)", sC: "as r1"},
             { line: "SUBA NUESTRO ESPOSO,, (Mi,,20)(La,m,200)", sC: "as"},
             { line: "AL LECHO, AL LECHO DE SU TÁLAMO., (Re,m,60)(La,m,291)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: SUBA EL ESPOSO AL LEÑO DE SU TÁLAMO 
