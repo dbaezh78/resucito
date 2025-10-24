@@ -714,7 +714,7 @@ display: none;}
 
 /* Color GRIS para la mayoría */
 .ta::before, .tc::before, .tn::before, .tca::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .bis::before, .pa::before, .tc1::before, .tc2::before
-{color: #c2b5b5; /* Gris semitransparente */}
+{color: #3b333369; /* Gris semitransparente */}
 
 .aleluya::before {font-weight: bolder;}
 
@@ -962,6 +962,7 @@ hr {
 .chord-image-item.chord-color-faaj13 { background-color: var(--chord-color-fa); }
 .chord-image-item.chord-color-fa5-di { background-color: var(--chord-color-fa); }
 .chord-image-item.chord-color-sol { background-color: var(--chord-color-sol); }
+.chord-image-item.chord-color-sol6 { background-color: var(--chord-color-sol); }
 .chord-image-item.chord-color-di { background-color: var(--chord-color-sol); }
 .chord-image-item.chord-color-la { background-color: var(--chord-color-la); }
 .chord-image-item.chord-color-la6 { background-color: var(--chord-color-la); }

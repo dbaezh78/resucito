@@ -19636,8 +19636,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=debora",
-        sig: "/resucito/src/index.html?canto=elsembrador",
+        ant: "/src/index.html?canto=debora",
+        sig: "/src/index.html?canto=elsembrador",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "El mismo Dios que dijo:, (Re,,12)(Fa#,,198)", sC: "tc"},
@@ -19685,41 +19685,130 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "QUE ESTÁ RESUCITADO., (Fa#,,15)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: EL MISMO DIOS
 // SIGUIENTE CANTO DEBAJO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+╔════════════════════════════════════════════════════════╗
+║           EL SEMBRADOR                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "elsembrador",
+        tt: "El Sembrador ",
+        title: "El Sembrador ",
+        subtitle: "Marcos 4,3ss",
+        category: ["Catecumenado","Nuevo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "225",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/elsembrador.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=elmismodios",
+        sig: "/src/index.html?canto=heaquiquenuestroespejoeselsenor",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SALIÓ EL SEMBRADOR A SEMBRAR, (Re,m,22)(Do,,323)", sC: "tc as"},
+            { line: "Y UNA PARTE CAYÓ EN EL CAMINO., (Re,m,86)", sC: "as r1"},
+            { line: "Vinieron las aves,, (Fa,,10)", sC: "tc"},
+            { line: "se la comieron,, (Sol,,12)", sC: ""},
+            { line: "se la comieron,, (La,,104)", sC: ""},
+            { line: "SE LA COMIERON., (Re,m,123)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SALIÓ EL SEMBRADOR A SEMBRAR, (Re,m,22)(Do,,323)", sC: "tc as"},
+            { line: "Y UNA PARTE CAYÓ EN LA PIEDRA., (Re,m,85)", sC: "as r1"},
+            { line: "Salió el sol,, (Fa,,10)", sC: "tc"},
+            { line: "la secó,, (Sol,,14)", sC: ""},
+            { line: "no había tierra,, (La,,111)", sC: ""},
+            { line: "NO HABÍA TIERRA., (Re,m,127)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "SALIÓ EL SEMBRADOR A SEMBRAR, (Re,m,22)(Do,,323)", sC: "tc as"},
+            { line: "Y UNA PARTE CAYÓ EN EL ESPINO., (Re,m,84)", sC: "as r1"},
+            { line: "Creció la semilla,, (Fa,,12)", sC: "tc"},
+            { line: "creció el espino,, (Sol,,14)", sC: ""},
+            { line: "la sofocó,, (La,,81)", sC: ""},
+            { line: "LA SOFOCÓ., (Re,m,105)", sC: "ta as"},
+    ], lder: [
+            { line: "SALIÓ EL SEMBRADOR A SEMBRAR, (Re,m,22)(Do,,321)", sC: "tc as"},
+            { line: "Y UNA PARTE CAYÓ EN LA TIERRA., (Re,m,93)", sC: "as r1"},
+            { line: "Y dio fruto,, (Fa,,10)", sC: "tc"},
+            { line: "unos treinta,, (Sol,,14)", sC: ""},
+            { line: "otros sesenta,, (La,,93)", sC: ""},
+            { line: "Y ALGUNOS CIENTO., (Re,m,143)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El que tenga oídos, (Sol,m,25)(Re,m,144)", sC: "tc"},
+            { line: "y quiera oír:, (Sol,m,23)(La,,97)", sC: ""},
+            { line: "¡Que oiga!, (Re,m,69)", sC: "tc"},
+            { line: "¡QUE OIGA!", sC: "ta as sub"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "No seas camino,, (Sol,m,24)(Re,m,130)", sC: "tc"},
+            { line: "NO SEAS CAMINO., (Sol,m,24)(Re,m,142)", sC: "ta as sub"},
+            { line: "No seas la piedra,, (Sol,m,24)(Re,m,130)", sC: "tc"},
+            { line: "NO SEAS LA PIEDRA., (Sol,m,24)(Re,m,143)", sC: "ta as sub"},
+            { line: "No seas espino,, (Sol,m,24)(Re,m,129)", sC: "tc"},
+            { line: "NO SEAS ESPINO., (Sol,m,24)(Re,m,136)", sC: "ta as sub"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que seas la tierra,, (Sol,m,26)(La,,137)", sC: "tc"},
+            { line: "LA BUENA TIERRA,, (Sol,m,25)(La,,128)", sC: "ta as"},
+            { line: "donde Jesús pueda crecer,, (Re,m,102)(La,7,155)(Re,m,231)", sC: "tc"},
+            { line: "DONDE JESÚS PUEDA CRECER., (La,7,176)(Re,m,275)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: EL SEMBRADOR 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           HE AQUÍ QUE NUESTRO ESPEJO ES EL SEÑOR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "heaquiquenuestroespejoeselsenor",
+        tt: "He Aquí Que Nuestro Espejo Es El Señor",
+        title: "He Aquí Que Nuestro Espejo Es El Señor",
+        subtitle: "Oda XIII de Salomón",
+        category: ["Catecumenado","Cuaresma"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "226",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/heaquiquenuestroespejoeselsenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=elsembrador",
+        sig: "/src/index.html?canto=himnoalacruzgloriosa",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¡He aquí que nuestro espejo es el Señor!, (Re,m,22)(La,m,401)", sC: "tc"},
+            { line: "Abrid vuestros ojos y miraos en Él, (Sol,m,345)", sC: ""},
+            { line: "y aprended cómo es vuestra imagen., (La,,306)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA,ALELUYA,ALELUYA., (Re,m,56)(Sol,m,299)", sC: "ta as"},
+            { line: "Aleluya, aleluya, aleluya., (La,,248)", sC: "tc r1"},
+            { line: "DAD GLORIA A SU ESPÍRITU, ", sC: "ta as"},
+            { line: "DAD GLORIA A SU ESPÍRITU. ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y limpiad la inmundicia de vuestro rostro,, (Re,m,22)(La,m,419)", sC: "tc"},
+            { line: "amad su santidad y revestíos, (Sol,m,303)", sC: ""},
+            { line: "y seréis inmaculados siempre delante de Él., (La,,406)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ALELUYA,ALELUYA,ALELUYA., (Re,m,56)(Sol,m,299)", sC: "ta as"},
+            { line: "Aleluya, aleluya, aleluya., (La,,248)", sC: "tc r1"},
+            { line: "DAD GLORIA A SU ESPÍRITU, ", sC: "ta as"},
+            { line: "DAD GLORIA A SU ESPÍRITU. ", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "DAD GLORIA A SU ESPÍRITU., (Re,m,22)", sC: "as"},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: HE AQUÍ QUE NUESTRO ESPEJO ES EL SEÑOR
+// SIGUIENTE CANTO DEBAJO
 
 /*
 ╔════════════════════════════════════════════════════════╗
@@ -19877,6 +19966,388 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ISRAEL, TE APOYARÁS EN DIOS»., (Sol,,53)(La,m,277)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: JACOB 
 // SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════════════════════════════╗
+║           NINGUNO PUEDE SERVIR A DOS SEÑORES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ningunopuedeserviradossenores",
+        tt: "Ninguno Puede Servir A Dos Señores",
+        title: "Ninguno Puede Servir A Dos Señores",
+        subtitle: "Mateo 6,24-33 ",
+        category: ["Catecumenado","Nuevo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "229",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/ningunopuedeserviradossenores.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=jacob",
+        sig: "/src/index.html?canto=noresistaisalmal",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Ninguno puede servir a dos señores,, (Mi,m,20)(Re,,99)(Do,,245)", sC: "tc"},
+            { line: "porque amando a uno desprecia al otro., (Re,,22)(Do,,188)(Mi,m,276)", sC: ""},
+            { line: "No podéis servir a Dios y al dinero., (La,m,20)(Re,7,118)(Do,,204)(Si,7,303)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por eso os digo:, (Mi,m,121)", sC: ""},
+            { line: "No os angustiéis por vuestra vida,, (Re,,10)(Do,,290)", sC: ""},
+            { line: "qué comeréis, qué beberéis,, (Re,,10)(Do,,154)", sC: ""},
+            { line: "con qué os vestiréis., (Mi,m,20)", sC: ""},
+            { line: "¿Acaso, la vida, (La,m,20)(Do,,118)", sC: ""},
+            { line: "no vale más que el alimento?, (Si,7,235)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MIRAD LAS AVES DEL CIELO:, (Sol,,14)(Si,m,129)", sC: "ta as"},
+            { line: "NO SIEMBRAN, NI COSECHAN,, (Si,7,62)(Do,7,228)(Do,,275)", sC: "as r1"},
+            { line: "VUESTRO PADRE CELESTIAL ", sC: "as"},
+            { line: "LAS ALIMENTA., (Si,7,100)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por lo demás, ¿quién de vosotros, (Mi,m,20)(Re,,232)", sC: "tc"},
+            { line: "por más que se preocupe,, (Do,,10)", sC: ""},
+            { line: "puede añadir una hora sola, (Re,,10)(Do,,232)", sC: ""},
+            { line: "a la medida de su vida?, (Mi,m,20)", sC: ""},
+            { line: "Y del vestido, ¿por qué preocuparos?, (La,m,20)(Re,7,156)(Do,,206)(Si,7,303)", sC: ""},
+    ], lder: [
+            { line: "MIRAD LOS LIRIOS DEL CAMPO;, (Sol,,14)(Si,m,130)", sC: "ta as"},
+            { line: "NO SE FATIGAN, NI HILAN,, (Si,7,103)(Do,7,197)(Do,,239)", sC: "as r2"},
+            { line: "SALOMÓN NO VESTÍA COMO ELLOS., (Si,7,288)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Buscad primero el Reino de Dios,, (Sol,,14)(Si,m,,294)", sC: "tc"},
+            { line: "y todo os será dado., (Si,7,35)(Do,7,154)(Do,,193)", sC: ""},
+            { line: "No podéis servir a Dios y al dinero., (Si,7,303)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "BUSCAD EL REINO DE DIOS,, (Sol,,14)(Si,m,139)", sC: "ta as"},
+            { line: "Y TODO OS SERÁ DADO., (Si,7,38)(Do7,,187)(Do,,228)", sC: "as"},
+            { line: "NO PODÉIS SERVIR A DOS SEÑORES., (Si,7,307)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Ninguno puede servir a dos señores, (Mi,m,20)(Re,,99)(Do,,245)", sC: "tc", lines: [
+            { line: "porque amando a uno desprecia al otro., (Re,,22)(Do,,188)(Mi,m,276)", sC: ""},
+            { line: "No podéis servir a Dios y al dinero., (La,m,20)(Re,7,118)(Do,,204)(Si,7,303)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Por eso os digo:, (Mi,m,121)", sC: ""},
+            { line: "No os angustiéis por vuestra vida,, (Re,,10)(Do,,290)", sC: ""},
+            { line: "qué comeréis, qué beberéis,, (Re,,10)(Do,,154)", sC: ""},
+            { line: "con qué os vestiréis., (Mi,m,20)", sC: ""},
+            { line: "¿Acaso, la vida, (La,m,20)(Do,,118)", sC: ""},
+            { line: "no vale más que el alimento?, (Si,7,235)", sC: ""},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MIRAD LAS AVES DEL CIELO, (Sol,,14)(Si,m,129)", sC: "ta as", lines: [
+            { line: "NO SIEMBRAN, NI COSECHAN,, (Si,7,62)(Do,7,228)(Do,,275)", sC: "as r1"},
+            { line: "VUESTRO PADRE CELESTIAL ", sC: "as"},
+            { line: "LAS ALIMENTA., (Si,7,100)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MIRAD LOS LIRIOS DEL CAMPO, (Sol,,14)(Si,m,130)", sC: "ta as", lines: [
+            { line: "NO SE FATIGAN, NI HILAN,, (Si,7,103)(Do,7,197)(Do,,239)", sC: "as r2"},
+            { line: "SALOMÓN NO VESTÍA COMO ELLOS., (Si,7,288)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "BUSCAD EL REINO DE DIOS, (Sol,,14)(Si,m,139)", sC: "ta as", lines: [
+            { line: "Y TODO OS SERÁ DADO., (Si,7,38)(Do7,,187)(Do,,228)", sC: "as"},
+            { line: "NO PODÉIS SERVIR A DOS SEÑORES., (Si,7,307)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: NINGUNO PUEDE SERVIR A DOS SEÑORES
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           NO RESISTÁIS AL MAL                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "noresistaisalmal",
+        tt: "No Resistáis Al Mal ",
+        title: "No Resistáis Al Mal ",
+        subtitle: "Mateo 5,38ss",
+        category: ["Catecumenado","Nuevo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "230",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/noresistaisalmal.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=ningunopuedeserviradossenores",
+        sig: "/src/index.html?canto=nosufrasporlosmalvados",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Habéis oído que se dijo:, (Re,,12)", sC: "tc"},
+            { line: "«Ojo por ojo, y diente por diente»., (Si,m,20)", sC: ""},
+            { line: "Mas yo os digo, mas yo os digo:, (La,,10)(Si,m,274)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "NO RESISTÁIS AL MAL,, (Re,,12)", sC: "ta as"},
+            { line: "NO RESISTÁIS AL MAL,, (Si,m,20)", sC: "as"},
+            { line: "NO RESISTÁIS AL MAL,, (La,,10)", sC: "as"},
+            { line: "NO RESISTÁIS AL MAL., (Si,m,200)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y si alguno te golpea en la mejilla derecha, (Si,m,20)(Re,,365)", sC: "tc"},
+            { line: "preséntale también la otra., (La,,46)(Si,m,234)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y si alguno, (Si,m,20)", sC: ""},
+            { line: "te lleva a juicio para quitarte la túnica, (Re,,315)", sC: ""},
+            { line: "déjale también el manto., (La,,10)(Si,m,200)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Al que te obligue a andar una milla,, (La,,10)", sC: ""},
+            { line: "vete con él dos., (Si,m,128)", sC: ""},
+            { line: "Y al que te robe lo que es tuyo,, (La,,10)", sC: ""},
+            { line: "no se lo reclames., (Si,m,124)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_nralmal_1", initialState: "collapsed",
+       triggerLine: "NO RESISTÁIS AL MAL, (Re,,12)", sC: "ta as", lines: [
+            { line: "NO RESISTÁIS AL MAL,, (Si,m,20)", sC: "as"},
+            { line: "NO RESISTÁIS AL MAL,, (La,,10)", sC: "as"},
+            { line: "NO RESISTÁIS AL MAL., (Si,m,200)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Habéis oído que se dijo:, (Re,,12)", sC: "tc"},
+            { line: "«Amarás a tu prójimo y odiarás a tu enemigo»., (Si,m,20)", sC: ""},
+            { line: "Mas yo os digo, mas yo os digo:, (La,,10)(Si,m,273)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Amad a vuestros enemigos,, (Re,,12)", sC: ""},
+            { line: "haced el bien a los que os odian,, (Si,m,112)", sC: ""},
+            { line: "rezad por los que os persiguen,, (La,,36)", sC: ""},
+            { line: "bendecid a los que os calumnian., (Si,m,74)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y seréis hijos de vuestro Padre celeste,, (Re,,332)", sC: ""},
+            { line: "que hace salir su sol sobre buenos y malos, (La, ,10)(Si,m,379)", sC: ""},
+            { line: "y manda la lluvia también, (La,,10)", sC: ""},
+            { line: "sobre los pecadores., (Si,m,160)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_nralmal_2", initialState: "collapsed",
+       triggerLine: "NO RESISTÁIS AL MAL, (Re,,10)", sC: "ta as", lines: [
+            { line: "NO RESISTÁIS AL MAL,, (Si,m,20)", sC: "as"},
+            { line: "NO RESISTÁIS AL MAL,, (La,,10)", sC: "as"},
+            { line: "NO RESISTÁIS AL MAL., (Si,m,200)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sed perfectos, (Sol,,14)", sC: "tc"},
+            { line: "como vuestro Padre celestial es perfecto,, (Si,m,20)", sC: ""},
+            { line: "porque Él es bueno con los malvados,, (Sol,,14)(La,,315)", sC: ""},
+            { line: "porque Él es bueno con los pecadores., (Sol,,14)(La,,301)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_nralmal_3", initialState: "collapsed",
+       triggerLine: "NO RESISTÁIS AL MAL, (Re,,10)", sC: "ta as", lines: [
+            { line: "NO RESISTÁIS AL MAL,, (Si,m,20)", sC: "as"},
+            { line: "NO RESISTÁIS AL MAL,, (La,,10)", sC: "as"},
+            { line: "NO RESISTÁIS AL MAL., (Si,m,200)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: NO RESISTÁIS AL MAL 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           NO SUFRAS POR LOS MALVADOS               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "nosufrasporlosmalvados",
+        tt: "No Sufras Por Los Malvados",
+        title: "No Sufras Por Los Malvados",
+        subtitle: "Salmo 37 (36)",
+        category: ["Catecumenado","Cuaresma","Antiguo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "231",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/nosufrasporlosmalvados.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=noresistaisalmal",
+        sig: "/src/index.html?canto=ohsenormicorazonyanoesambicioso",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "NO SUFRAS POR LOS MALVADOS,, (La,m,20)(Fa,,273)", sC: "ta as"},
+            { line: "NO ENVIDIES A LOS QUE OBRAN MAL., (Mi,,341)", sC: "as"},
+            { line: "SE SECARÁN COMO LA HIERBA,, (Re,m,103)(Mi,,253)", sC: "as"},
+            { line: "COMO EL CÉSPED SE AGOSTARÁN., (Fa,,116)(Mi,,308)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Confía en el Señor y haz el bien,, (La,m,20)(Fa,,282)", sC: "tc"},
+            { line: "habita tu tierra y sé leal,, (Mi,,214)", sC: ""},
+            { line: "sea el Señor tu delicia, (Re,m,108)(Mi,,181)", sC: ""},
+            { line: "y él te dará lo que ansía tu corazón., (Fa,,99)(Mi,,315)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Encomienda tu camino al Señor, (La,m,20)", sC: ""},
+            { line: "y espera en Él,, (Fa,,125)", sC: ""},
+            { line: "confía en Él, que actuará;, (Mi,,232)", sC: ""},
+            { line: "hará brillar tu justicia,, (Re,m,93)(Mi,,172)", sC: ""},
+            { line: "hará brillar tu lealtad., (Fa,,90)(Mi,,183)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_nsplmalvador_1", initialState: "collapsed",
+       triggerLine: "NO SUFRAS POR LOS MALVADOS (La,m,20)(Fa,,273)", sC: "ta as", lines: [
+            { line: "NO ENVIDIES A LOS QUE OBRAN MAL., (Mi,,341)", sC: "as"},
+            { line: "SE SECARÁN COMO LA HIERBA,, (Re,m,103)(Mi,,253)", sC: "as"},
+            { line: "COMO EL CÉSPED SE AGOSTARÁN., (Fa,,116)(Mi,,308)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Cohíbe tu ira, reprime el coraje,, (La,m,20)(Fa,,271)", sC: "tc"},
+            { line: "no te exasperes, no sea que obres mal;, (Mi,,353)", sC: ""},
+            { line: "los que obran mal son excluidos,, (Re,m,155)(Mi,,271)", sC: ""},
+            { line: "los que esperan en el Señor, (Fa,,112)", sC: ""},
+            { line: "en la tierra entrarán., (Mi,,175)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aguarda un momento,, (La,m,20)", sC: ""},
+            { line: "desapareció el malvado,, (Fa,,196)", sC: ""},
+            { line: "fíjate en su sitio: ya no está;, (Mi,,253)", sC: ""},
+            { line: "en cambio los mansos poseen la tierra,, (Re,m,166)(Mi,,339)", sC: ""},
+            { line: "gozan de paz, de paz disfrutarán., (Fa,,109)(Mi,,291)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_nsplmalvador_1", initialState: "collapsed",
+       triggerLine: "NO SUFRAS POR LOS MALVADOS (La,m,20)(Fa,,273)", sC: "ta as", lines: [
+            { line: "NO ENVIDIES A LOS QUE OBRAN MAL., (Mi,,341)", sC: "as"},
+            { line: "SE SECARÁN COMO LA HIERBA,, (Re,m,103)(Mi,,253)", sC: "as"},
+            { line: "COMO EL CÉSPED SE AGOSTARÁN., (Fa,,116)(Mi,,308)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: NO SUFRAS POR LOS MALVADOS
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "ohsenormicorazonyanoesambicioso",
+        tt: "Oh Señor, Mi Corazón Ya No Es Ambicioso",
+        title: "Oh Señor, Mi Corazón Ya No Es Ambicioso",
+        subtitle: "Salmo 131 (130)",
+        category: ["Catecumenado","Antiguo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "2",
+        nCan: "",
+        nCanURL: "",
+        dbno: "232",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/ohsenormicorazonyanoesambicioso.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=nosufrasporlosmalvados",
+        sig: "/src/index.html?canto=senortumeescrutasyconoces",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO, (Mi,m,20)(La,m,220)(Mi,m,418)", sC: "tc as"},
+            { line: "NI SE ELEVA CON SOBERBIA MI MIRADA,, (La,m,218)(Si,7,347)", sC: "as r1"},
+            { line: "NI VOY EN BUSCA DE COSAS GRANDES, ", sC: "as"},
+            { line: "QUE SON SUPERIORES A MIS FUERZAS., (Mi,m,322)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aquietada y acallada está mi alma, (Mi,m,20)(La,m,301)", sC: "tc"},
+            { line: "como un niño pequeño en brazos de su madre,, (Do,,106)(Mi,m,404)", sC: ""},
+            { line: "como un niño amamantado está mi espíritu,, (Si,7,391)", sC: ""},
+            { line: "como un niño dentro de mí., (Mi,m,251)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_osmyneambisioso_1", initialState: "collapsed",
+       triggerLine: "OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO, (Mi,m,20)(La,m,220)(Mi,m,418)", sC: "ta as", lines: [
+            { line: "NI SE ELEVA CON SOBERBIA MI MIRADA,, (La,m,218)(Si,7,347)", sC: "as r1"},
+            { line: "NI VOY EN BUSCA DE COSAS GRANDES, ", sC: "as"},
+            { line: "QUE SON SUPERIORES A MIS FUERZAS., (Mi,m,322)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_osmyneambisioso_2", initialState: "collapsed",
+       triggerLine: "Aquietada y acallada está mi alma, (Mi,m,20)(La,m,301)", sC: "tc", lines: [
+            { line: "como un niño pequeño en brazos de su madre,, (Do,,106)(Mi,m,404)", sC: ""},
+            { line: "como un niño amamantado está mi espíritu,, (Si,7,391)", sC: ""},
+            { line: "como un niño dentro de mí., (Mi,m,251)", sC: ""},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Espera Israel, en el Señor., (Mi,m,20)(La,m,112)(Mi,m,228)", sC: "tc"},
+            { line: "Espera Israel en el Señor, ahora y siempre., (La,m,222)(Mi,m,344)", sC: ""},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: OH SEÑOR, MI CORAZÓN YA NO ES AMBICIOSO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SEÑOR, TÚ ME ESCRUTAS Y CONOCES               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "senortumeescrutasyconoces",
+        tt: "Señor, Tú Me Escrutas Y Conoces",
+        title: "Señor, Tú Me Escrutas Y Conoces",
+        subtitle: "Salmo 139 (138)",
+        category: ["Catecumenado","Antiguo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "2",
+        nCan: "",
+        nCanURL: "",
+        dbno: "233",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/senortumeescrutasyconoces.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=ohsenormicorazonyanoesambicioso",
+        sig: "/src/index.html?canto=shemaisrael",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Señor, tú me escrutas y conoces,, (Re,m,22)(Sol,m,275)", sC: "tc"},
+            { line: "tú sabes cuando me acuesto y me levanto., (Re,m,365)", sC: ""},
+            { line: "Sondeas mis pensamientos desde lejos,, (Sol,m,354)", sC: ""},
+            { line: "te son familiares todas mis sendas., (Sol,m6,132)(Re,m,287)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Que no está aún en mi lengua la palabra,, (Do,,10)(Do,7,243)(Fa,,353)", sC: ""},
+            { line: "y ya tú, Señor, te la sabes toda., (La,,117)(Re,m,267)", sC: ""},
+            { line: "Me acosas por detrás,, (Do,,10)", sC: ""},
+            { line: "me atacas por delante,, (Fa,,181)", sC: ""},
+            { line: "y al mismo tiempo, (La,,132)", sC: ""},
+            { line: "tienes puesta sobre mí tu mano., (Re,m,273)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y esto es ciencia misteriosa para mí,, (Sol,m,22)(La,,340)", sC: ""},
+            { line: "ciencia que no llego a comprender,, (Sol,m,25)(La,,317)", sC: ""},
+            { line: "ciencia tan alta, que yo no la entiendo., (Sol,m,25)(La,,323)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¿A DÓNDE IRÉ YO LEJOS DE TU ESPÍRITU?, (Fa,,20)(La,m,346)", sC: "ta as"},
+            { line: "¿A DÓNDE DE TU ROSTRO ESCAPARÉ?, (Si♭,,342)", sC: "as"},
+            { line: "SI SUBO HASTA EL CIELO, ALLÍ ESTÁS TÚ,, (La,,381)", sC: "as"},
+            { line: "SI DESCIENDO HASTA LA MUERTE,, (Si♭,,91)", sC: "as"},
+            { line: "ALLÍ TE ENCUENTRO., (La,,139)", sC: "as"},
+    ], lder: [
+            { line: "ME ACOSAS POR DETRÁS,, (Fa,,10)", sC: "ta as"},
+            { line: "ME ATACAS POR DELANTE,, (La,m,210)", sC: "as"},
+            { line: "Y AL MISMO TIEMPO, ", sC: "as"},
+            { line: "TIENES PUESTA SOBRE MÍ TU MANO., (Si♭,,247)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y ESTO ES CIENCIA MISTERIOSA PARA MÍ,, (La,,393)", sC: "as"},
+            { line: "CIENCIA QUE NO LLEGO A COMPRENDER,, (Si♭,,25)(La,,375)", sC: "as"},
+            { line: "CIENCIA TAN ALTA,, (Si♭,,25)", sC: "as"},
+            { line: "QUE YO NO LA ENTIENDO., (La,,192)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Señor, tú me escrutas y conoces,, (Re,m,22)(Sol,m,277)", sC: "tc"},
+            { line: "sondeas y pruebas mi corazón,, (Re,m,271)", sC: ""},
+            { line: "para que no siga un camino de doblez,, (Sol,m,349)", sC: ""},
+            { line: "para que no me aparte nunca, ", sC: ""},
+            { line: "de tu camino., (Re,m,101)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: SEÑOR, TÚ ME ESCRUTAS Y CONOCES
+// SIGUIENTE CANTO DEBAJO
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ELECCIÓN

@@ -119,9 +119,10 @@ const chordImageFilenames = [
     "sol2.jpg", 
     "sol3.jpg", 
     "solm.jpg", 
+    "solm6.jpg", 
     "sol7.jpg", 
     "sol7_1.jpg", 
-
+    
     "sols.jpg", 
     "solsm.jpg",
     "sols7.jpg", 
@@ -184,6 +185,7 @@ const getDisplayNameFromFilename = (filename) => {
     name = name.replace(/sol2$/, 'sol');
     name = name.replace(/sol3$/, 'sol');
     name = name.replace(/sol7_1$/, 'sol7');
+    name = name.replace(/solm6$/, 'solm6');
     name = name.replace(/solsdim7$/, 'dim7');
     name = name.replace(/la3$/, 'la');
     name = name.replace(/mi7_1/, 'mi7');
