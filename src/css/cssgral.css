@@ -951,6 +951,7 @@ hr {
 
 /* Clases para los colores de fondo de los acordes */
 .chord-image-item.chord-color-do { background-color: var(--chord-color-do); }
+.chord-image-item.chord-color-dodi { background-color: var(--chord-color-do); }
 .chord-image-item.chord-color-re { background-color: var(--chord-color-re); }
 .chord-image-item.chord-color-readd { background-color: var(--chord-color-re); }
 .chord-image-item.chord-color-mi { background-color: var(--chord-color-mi); }
@@ -1115,3 +1116,61 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
     @media (min-width: 384px) {.s1 {margin-top: -18px;}} 
     @media (min-width: 768px) {.s1 {margin-top: -18px;}}
     @media (min-width: 992px) {.s1 {margin-top: -18px;}}
+
+
+            .cantosprecatecumenado::before , .cantoscatecumenado::before, 
+            .cantosliturgicos::before, .cantoseleccion::before {
+            /* Propiedades para el centrado */
+            position: absolute;
+            /* Ajusta el alto y el ancho para ocupar todo el espacio del contenedor padre (.cantosliturgicos) */
+            left: 0;
+            height: 100%; /* Ocupa todo el alto (asumiendo que .cantosliturgicos tiene un alto definido o se adapta al contenido) */
+
+            /* Centrado horizontal del texto */
+            text-align: center;
+
+            /* Centrado vertical (usando Flexbox) */
+            display: flex; /* Convierte el pseudoelemento en un contenedor flex */
+            align-items: center; /* Centra verticalmente el contenido (la línea de texto) */
+            justify-content: center; /* Esto también ayudará a asegurar el centrado horizontal */
+
+            /* Estilos de fuente para simular un H1 */
+            font-family: 'Franklin Gothic Medium',Arial, sans-serif;
+            line-height: 1.2;
+            font-weight: bold;
+            white-space: nowrap; /* Mantiene el texto en una sola línea */
+            font-weight: 800;
+        }
+
+.cantosprecatecumenado , .cantoscatecumenado, .cantosliturgicos, .cantoseleccion {
+    position: relative;
+    min-height: 24px; /* Mantenemos el mínimo, pero considerá darle un alto fijo o en porcentaje si es necesario */
+    width: 99%;
+}
+
+    .cantosprecatecumenado::before {content: "PRECATECUMENADO";}
+    .cantoscatecumenado::before {content: "CATECUMENADO";}
+    .cantosliturgicos::before {content: "CANTOS LITÚRGICOS";}
+    .cantoseleccion::before {content: "ELECCION";}
+
+    @media (min-width: 384px) {
+
+        .cantosprecatecumenado::before {margin-top: -128px;font-size: x-large;width: 336px;}
+        .cantoscatecumenado::before    {margin-top: -135px;font-size: x-large;width: 336px;}
+        .cantosliturgicos::before      {margin-top: -115px;font-size: xx-large;width: 100%;}
+        .cantoseleccion::before        {margin-top: -115px;font-size: xx-large;width: 100%;}
+    }
+    @media (min-width: 768px) {
+
+        .cantosprecatecumenado::before {font-size: xxx-large;margin-top: -143px;width: 725px;}
+        .cantoscatecumenado::before    {font-size: xxx-large;margin-top: -143px;width: 100%;}
+        .cantosliturgicos::before      {font-size: xxx-large;margin-top: -143px;width: 100%;}
+        .cantoseleccion::before        {font-size: xxx-large;margin-top: -143px;width: 100%;}
+    }
+    @media (min-width: 992px) {
+        .cantosprecatecumenado::before {margin-top: -140px;width: 852px;}
+        .cantoscatecumenado::before    {margin-top: -140px;width: 935px;}
+        .cantosliturgicos::before      {margin-top: -140px;width: 883px;}
+        .cantoseleccion::before        {margin-top: -140px;width: 883px;}
+    }
+    

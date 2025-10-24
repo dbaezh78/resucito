@@ -37,6 +37,7 @@ const allCantosData = [
         sig: "/src/index.html?canto=anadiedemosocasiondetropiezo", // URL del siguiente canto
         // Datos específicos del canto, ahora referenciados aquí
          lizq: [
+            { line: "", sC: "cantosprecatecumenado", color: "#544d47"},
             { line: "A la víctima pascual, (La,m,18)(La,7,200)", sC: "tc" },
             { line: "ofrecemos hoy"},
             { line: "el sacrificio de alabanza. (Re,m9,186)"},
@@ -19380,6 +19381,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=cuandodormia",
 // Contenido del lado izquierdo del canto,
     lizq: [
+            { line: "", sC: "cantoscatecumenado", color: "#544d47"},
             { line: "Como el impulso que siente la ira, (Do,,10)(La,m,250)", sC: "tc"},
             { line: "hacia el enemigo,, (Re,m,22)", sC: ""},
             { line: "como el impulso que siente el amor, (Sol,7,14)", sC: ""},
@@ -20491,6 +20493,671 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "según su gran amor., (La,7,20)(Re,,174)", sC: "tc"},
 ]}, // ULTIMA LINEA DEL CANTO: SIENTATE SOLITARIO Y SILENCIOSO
 // SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           TÚ ERES MI ESPERANZA, SEÑOR               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "tueresmiesperanzasenor",
+        tt: "Tú Eres Mi Esperanza, Señor",
+        title: "Tú Eres Mi Esperanza, Señor",
+        subtitle: "Oda XXIX de Salomón",
+        category: ["Catecumenado","Adviento","Navidad","Cuaresma","Antiguo Testamento"],
+        catCanto: "Catecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "236",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/tueresmiesperanzasenor.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=sientatesolitarioysilencioso",
+        sig: "/src/index.html?canto=alacenadelcordero",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Tú eres mi esperanza, Señor,, (Do#,dim7,40)", sC: "tc"},
+            { line: "y no seré confundido., (Si♭,7,35)(La,7,176)", sC: ""},
+            { line: "Con tu gloria tú me has creado,, (Do#,dim7,41)(La,7,268)", sC: ""},
+            { line: "en la misericordia tú me has formado., (Si♭,7,130)(La,7,333)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ME HAS SACADO DE LO PROFUNDO DEL SEOL,, (Re,m,23)(La,7,426)", sC: "ta as"},
+            { line: "DE LA BOCA DE LA MUERTE ME HAS ARRANCADO., (Si♭,7,223)(La,7,446)", sC: "as"},
+            { line: "PORQUE HE CREÍDO EN TU MESÍAS, (Re,m,161)(La,7,312)", sC: "as"},
+            { line: "Y QUE ÉL ES EL SEÑOR HE CONFESADO., (Si♭,7,80)(La,7,343)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tú me has dado la señal grande,, (Sol,m,24)(La,7,265)", sC: "tc"},
+            { line: "el misterio escondido a los ángeles,, (Sol,m,75)(La,7,276)", sC: ""},
+            { line: "para hacer la guerra con tu palabra,, (Si♭,7,165)(La,7,300)", sC: ""},
+            { line: "y volver victorioso de las naciones., (Si♭,7,142)(La,7,282)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "TÚ ERES MI ESPERANZA, SEÑOR,, (Re,m,21)(La,7,297)", sC: "tc as"},
+            { line: "Y NO SERÉ CONFUNDIDO., (Si♭,7,40)(La,7,208)", sC: "as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_esperanza_1", initialState: "collapsed",
+       triggerLine: "ME HAS SACADO DE LO PROFUNDO DEL SEOL, (Re,m,23)(La7,,426)", sC: "ta as", lines: [
+            { line: "DE LA BOCA DE LA MUERTE ME HAS ARRANCADO., (Si♭,7,223)(La,7,446)", sC: "as"},
+            { line: "PORQUE HE CREÍDO EN TU MESÍAS, (Re,m,161)(La,7,312)", sC: "as"},
+            { line: "Y QUE ÉL ES EL SEÑOR HE CONFESADO., (Si♭,7,80)(La,7,343)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: TÚ ERES MI ESPERANZA, SEÑOR
+// SIGUIENTE CANTO DEBAJO
+
+// **********************************************
+// ****************** ELECCIÓN ******************
+// **********************************************
+/*
+╔════════════════════════════════════════════════════════╗
+║           A LA CENA DEL CORDERO               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "alacenadelcordero",
+        tt: "A La Cena Del Cordero",
+        title: "A La Cena Del Cordero",
+        subtitle: "Himno lat. «Ad cenam Agni providi»",
+        category: ["Eleccion","Pascua","Pentecostés","Entrada"],
+        catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "237",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/alacenadelcordero.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=tueresmiesperanzasenor",
+        sig: "/src/index.html?canto=adondeteescondisteamado",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "", sC: "cantoseleccion", color: "#544d47"},
+            { line: "A LA CENA DEL CORDERO,, (La,m,20)(Sol,,216)", sC: "ta as"},
+            { line: "VESTIDOS CON BLANCAS TÚNICAS,, (La,m,266)(Fa,,343)", sC: "as"},
+            { line: "ATRAVESADO EL MAR ROJO, ", sC: "as"},
+            { line: "CANTAMOS A CRISTO, EL SEÑOR., (Mi,,293)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Su cuerpo lleno de amor,, (La,m,20)(Sol,,220)", sC: "tc"},
+            { line: "sobre la mesa es el Pan vivo., (La,m,252)", sC: ""},
+            { line: "Y su sangre sobre el altar,, (Sol,,233)", sC: ""},
+            { line: "es el cáliz del nuevo pacto., (La,m,215)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Manso cordero inmolado,, (Sol,,211)", sC: ""},
+            { line: "es Cristo, nuestra Pascua., (La,m,193)", sC: ""},
+            { line: "Su cuerpo adorable, (Sol,,149)", sC: ""},
+            { line: "es el verdadero pan ácimo., (La,m,212)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "A LA CENA DEL CORDERO, (La,m,20)(Sol,,216)", sC: "ta as", lines: [
+            { line: "VESTIDOS CON BLANCAS TÚNICAS,, (La,m,266)(Fa,,343)", sC: "as"},
+            { line: "ATRAVESADO EL MAR ROJO, ", sC: "as"},
+            { line: "CANTAMOS A CRISTO, EL SEÑOR., (Mi,,293)", sC: "as"},  ]},
+    ], lder: [
+            { line: "En esta hora admirable, (La,m,20)(Sol,,187)", sC: "tc"},
+            { line: "retornan los antiguos prodigios,, (La,m,261)", sC: ""},
+            { line: "su brazo potente nos salva, (Sol,,219)", sC: ""},
+            { line: "del ángel de la muerte., (La,m,178)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Irradia sobre la Iglesia, (Sol,,178)", sC: ""},
+            { line: "el gozo pascual, oh Señor,, (La,m,232)", sC: ""},
+            { line: "y une a tu gran victoria, (Sol,,188)", sC: ""},
+            { line: "a los que han renovado el Bautismo., (La,m,302)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "A LA CENA DEL CORDERO, (La,m,20)(Sol,,216)", sC: "ta as", lines: [
+            { line: "VESTIDOS CON BLANCAS TÚNICAS,, (La,m,266)(Fa,,343)", sC: "as"},
+            { line: "ATRAVESADO EL MAR ROJO, ", sC: "as"},
+            { line: "CANTAMOS A CRISTO, EL SEÑOR., (Mi,,293)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sea honor, alabanza y gloria,, (La,m,20)(Sol,,240)", sC: "tc"},
+            { line: "a Cristo victorioso de la muerte,, (La,m,266)", sC: ""},
+            { line: "al Padre y al Santo Espíritu, (Sol,,223)", sC: ""},
+            { line: "ahora y por los siglos eternos., (La,m,237)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "AMÉN, (Sol,,14)(La,m,53)", sC: "ta as"},
+]}, // ULTIMA LINEA DEL CANTO: A LA CENA DEL CORDERO
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ADÓNDE TE ESCONDISTE, AMADO                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "adondeteescondisteamado",
+        tt: "Adónde Te Escondiste, Amado ",
+        title: "Adónde Te Escondiste, Amado ",
+        subtitle: "Cántico espiritual (San Juan de la Cruz) ",
+        category: ["Eleccion"],
+        catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "238",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/adondeteescondisteamado.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=alacenadelcordero",
+        sig: "/src/index.html?canto=comodestilalamiel",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "¿Adónde te escondiste, amado,, (Mi,,10)", sC: "tc"},
+            { line: "y me dejaste con gemido? ", sC: ""},
+            { line: "Como el ciervo huiste, ", sC: ""},
+            { line: "habiéndome herido; ", sC: ""},
+            { line: "salí tras ti, clamando, y eras ido., (La,m,20)(Fa,,156)(Mi,,282)(Fa,maj 713,347)(Mi,,413)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Pastores, los que fuerdes, (Mi,,10)", sC: ""},
+            { line: "allá, por las majadas, al otero, ", sC: ""},
+            { line: "si por ventura vierdes, ", sC: ""},
+            { line: "aquel que yo más quiero, ", sC: ""},
+            { line: "decidle que adolezco, peno y muero., (La,m,20)(Fa,,164)(Mi,,317)(Fa,maj 713,383)(Mi,,443)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Buscando mis amores,, (Mi,,10)", sC: ""},
+            { line: "iré por esos montes y riberas; ", sC: ""},
+            { line: "ni cogeré las flores, ", sC: ""},
+            { line: "ni temeré las fieras, ", sC: ""},
+            { line: "y pasaré los fuertes y fronteras., (La,m,20)(Fa,,145)(Fa,maj 713,344)(Mi,,406)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Oh bosques y espesuras,, (Mi,,10)", sC: ""},
+            { line: "plantadas por la mano del amado!, ", sC: ""},
+    ], lder: [
+            { line: "¡Oh prado de verduras, ", sC: ""},
+            { line: "de flores esmaltado, ", sC: ""},
+            { line: "decid si por vosotros ha pasado!, (La,m,20)(Fa,,151)(Mi,,270)(Fa,maj 713,354)(Mi,,422)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "MIL GRACIAS DERRAMANDO,, (La,m,20)", sC: "ta as"},
+            { line: "PASÓ POR ESTOS SOTOS CON PRESURA,, (Sol,,356)", sC: "as"},
+            { line: "Y YÉNDOLOS MIRANDO,, (Fa,,177)", sC: "as"},
+            { line: "CON SOLA SU FIGURA, ", sC: "as"},
+            { line: "VESTIDOS LOS DEJÓ DE SU HERMOSURA., (Mi,,358)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Ay, quién podrá sanarme!, (Mi,,10)", sC: "tc"},
+            { line: "Acaba de entregarte ya de vero;, (La,m,275)", sC: ""},
+            { line: "no quieras enviarme, ", sC: ""},
+            { line: "de hoy más mensajero,, (Sol,,194)", sC: ""},
+            { line: "que no saben decirme lo que quiero., (Fa,,59)(Mi,,319)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Ay! ¡Ay!, (Fa,maj 713,48)(Mi,,115)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "MIL GRACIAS DERRAMANDO, (La,m,20)", sC: "ta as", lines: [
+            { line: "PASÓ POR ESTOS SOTOS CON PRESURA,, (Sol,,354)", sC: "as"},
+            { line: "Y YÉNDOLOS MIRANDO,, (Fa,,177)", sC: "as"},
+            { line: "CON SOLA SU FIGURA, ", sC: "as"},
+            { line: "VESTIDOS LOS DEJÓ DE SU HERMOSURA., (Mi,,358)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ADÓNDE TE ESCONDISTE, AMADO 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           COMO DESTILA LA MIEL               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "comodestilalamiel",
+        tt: "Como Destila La Miel",
+        title: "Como Destila La Miel",
+        subtitle: "Oda XL de Salomón",
+        category: ["Eleccion"],
+        catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "239",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/comodestilalamiel.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=adondeteescondisteamado",
+        sig: "/src/index.html?canto=comolirioentreloscardos",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "COMO DESTILA LA MIEL, (La,m,20)", sC: "ta as"},
+            { line: "EL PANAL DE LAS ABEJAS, (Re,m,210)", sC: "as"},
+            { line: "Y FLUYE LA LECHE, (Mi,,49)", sC: "as"},
+            { line: "EN LA MUJER QUE AMA A SUS HIJOS;, (La,m,313)", sC: "as"},
+            { line: "COMO MANAN DE LA FUENTE, ", sC: "as"},
+            { line: "LAS TRANQUILAS AGUAS,, (Re,m,191)", sC: "as"},
+            { line: "ASÍ MI CORAZÓN, (Mi,,28)", sC: "as"},
+            { line: "DERRAMA SU ALABANZA., (La,m,196)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y de mis labios brota, (Re,m,20)", sC: "tc"},
+            { line: "un nuevo canto hacia el Señor,, (Mi,,275)", sC: ""},
+            { line: "y mi lengua siente, (Re,m,66)", sC: ""},
+            { line: "la dulzura de su nombre,, (Mi,,173)", sC: ""},
+            { line: "y mi cuerpo se deleita, (Re,m,73)", sC: ""},
+            { line: "con sus canciones., (Mi,,135)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque su luz serena, (Fa,,113)", sC: ""},
+            { line: "apacigua todos mis males,, (Mi,,215)", sC: ""},
+            { line: "porque su mirada simple de amor, (Fa,,138)", sC: ""},
+            { line: "cura mi corazón., (Mi,,136)", sC: ""},
+    ], lder: [
+            { line: "PORQUE LA VIDA INMORTAL, (Fa,,252)", sC: "ta as"},
+            { line: "HA PUESTO SU TIENDA, ", sC: "as"},
+            { line: "DENTRO DE NOSOTROS., (Mi,,171)", sC: "as"},
+            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,Fa,109)Mi", sC: "as"},
+            { line: "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)", sC: "as"},
+            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,Fa,110)Mi", sC: "as"},
+            { line: "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_miel_1", initialState: "collapsed",
+       triggerLine: "COMO DESTILA LA MIEL (La,m,20)", sC: "ta as", lines: [
+            { line: "EL PANAL DE LAS ABEJAS, (Re,m,210)", sC: "as"},
+            { line: "Y FLUYE LA LECHE, (Mi,,49)", sC: "as"},
+            { line: "EN LA MUJER QUE AMA A SUS HIJOS;, (La,m,313)", sC: "as"},
+            { line: "COMO MANAN DE LA FUENTE, ", sC: "as"},
+            { line: "LAS TRANQUILAS AGUAS,, (Re,m,191)", sC: "as"},
+            { line: "ASÍ MI CORAZÓN, (Mi,,28)", sC: "as"},
+            { line: "DERRAMA SU ALABANZA., (La,m,196)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y mi rostro se ilumina con su alegría,, (Re,m,69)(Mi,,333)", sC: "tc"},
+            { line: "y mi espíritu se goza en sus amores., (Re,m,82)(Mi,,306)", sC: ""},
+            { line: "Mi corazón lleno de su luz, (Fa,,86)", sC: ""},
+            { line: "siente su mirada amorosa., (Mi,,223)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque el temor en Él se confía,, (Fa,,138)(Mi,,287)", sC: "tc"},
+            { line: "PORQUE EL TEMOR EN ÉL SE CONFÍA,, (Fa,,164)(Mi,,344)", sC: "ta as"},
+            { line: "porque la salvación en Él es segura., (Fa,,168)(Mi,,313)", sC: "tc"},
+            { line: "PORQUE LA SALVACIÓN EN ÉL ES SEGURA., (Fa,,203)(Mi,,370)", sC: "ta as"},
+
+            { type: "collapsible-block", id: "asamblea_miel_2", initialState: "collapsed",
+       triggerLine: "PORQUE LA VIDA INMORTAL, (Fa,,252)", sC: "ta as", lines: [
+            { line: "HA PUESTO SU TIENDA, ", sC: "as"},
+            { line: "DENTRO DE NOSOTROS., (Mi,,171)", sC: "as"},
+            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,Fa,109)Mi", sC: "as"},
+            { line: "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)", sC: "as"},
+            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,Fa,110)Mi", sC: "as"},
+            { line: "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_miel_3", initialState: "collapsed",
+       triggerLine: "COMO DESTILA LA MIEL, (La,m,20)", sC: "ta as", lines: [
+            { line: "EL PANAL DE LAS ABEJAS, (Re,m,210)", sC: "as"},
+            { line: "Y FLUYE LA LECHE, (Mi,,49)", sC: "as"},
+            { line: "EN LA MUJER QUE AMA A SUS HIJOS;, (La,m,313)", sC: "as"},
+            { line: "COMO MANAN DE LA FUENTE, ", sC: "as"},
+            { line: "LAS TRANQUILAS AGUAS,, (Re,m,191)", sC: "as"},
+            { line: "ASÍ MI CORAZÓN, (Mi,,28)", sC: "as"},
+            { line: "DERRAMA SU ALABANZA., (La,m,196)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: COMO DESTILA LA MIEL
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           COMO LIRIO ENTRE LOS CARDOS                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "comolirioentreloscardos",
+        tt: "Como Lirio Entre Los Cardos ",
+        title: "Como Lirio Entre Los Cardos ",
+        subtitle: "Cantar de los cantares 1,13ss ",
+        category: ["Eleccion","Antiguo Testamento"],
+        catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "240",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/comolirioentreloscardos.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=comodestilalamiel",
+        sig: "/src/index.html?canto=hermosaeresamigamia",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Como perfume de mirra es mi amado,, (Si,m,20)(Mi,m,329)", sC: "tc"},
+            { line: "así es mi amado,, (Fa#,,130)", sC: ""},
+            { line: "reposa sobre mi pecho., (Sol,,33)(Fa#,,181)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Como lirio entre los cardos es mi amada,, (Si,m,20)(Mi,m,356)", sC: ""},
+            { line: "así es mi amada,, (Fa#,,129)", sC: ""},
+            { line: "así es mi amada entre las doncellas., (Sol,,127)(Fa#,,307)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡QUÉ BELLA ERES, AMADA MÍA!, (Sol,,130)(Fa#,,280)", sC: "ta as"},
+            { line: "¡QUÉ BELLA ERES, QUÉ BELLA ERES!, (Sol,,128)(Fa#,,307)", sC: "as"},
+            { line: "PALOMAS SON TUS OJOS,, (Mi,m,20)(Fa#,,202)", sC: "as"},
+            { line: "PALOMAS SON TUS OJOS., (Mi,m,20)(Fa#,,202)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡QUÉ HERMOSO ERES, AMADO MÍO!, (Sol,,169)(Fa#,,319)", sC: "as"},
+            { line: "¡QUÉ HERMOSO ERES, QUÉ DELICIOSO!, (Sol,,169)(Fa#,,336)", sC: "as"},
+            { line: "PURO VERDOR ES NUESTRO LECHO,, (Mi,m,20)(Fa#,,300)", sC: "as"},
+            { line: "PURO VERDOR ES NUESTRO LECHO., (Mi,m,20)(Fa#,,300)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Como el manzano entre los árboles silvestres,, (Si,m,20)(Mi,m,385)", sC: "tc"},
+            { line: "así es mi amado,, (Fa#,,127)", sC: ""},
+            { line: "así es mi amado entre los jóvenes., (Sol,,127)(Fa#,,265)", sC: ""},
+    ], lder: [
+            { line: "A su sombra que anhelaba estoy sentada,, (Si,m,20)(Mi,m,367)", sC: ""},
+            { line: "y es dulce su fruto,, (Fa#,,146)", sC: ""},
+            { line: "¡qué dulce al paladar!, (Sol,,63)(Fa#,,190)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "ME HA INTRODUCIDO, (Sol,,173)", sC: "tc as"},
+            { line: "EN LA SALA DEL BANQUETE,, (Fa#,,238)", sC: "as r1"},
+            { line: "Y LA BANDERA QUE ENARBOLA, (Mi,m,110)", sC: "as"},
+            { line: "SOBRE MÍ ES EL AMOR., (Fa#,,203)", sC: "as r1"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Su izquierda sobre mi cabeza,, (Mi,m,84)(Fa#,,252)", sC: "tc"},
+            { line: "y con su diestra me abraza., (Mi,m,110)(Fa#,,226)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "YO OS CONJURO, HIJAS DE JERUSALÉN, (Si,m,123)(La,,179)(Si,m,356)", sC: "ta as ast"},
+            { line: "NO DESPERTÉIS AL AMOR,, (Sol,,14)(Fa#,,230)", sC: "as"},
+            { line: "HASTA QUE A ELLA LE PLAZCA., (Sol,,14)(Fa#,,250)", sC: "as"},
+]}, // ULTIMA LINEA DEL CANTO: COMO LIRIO ENTRE LOS CARDOS 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           HERMOSA ERES, AMIGA MÍA               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "hermosaeresamigamia",
+        tt: "Hermosa Eres, Amiga Mía",
+        title: "Hermosa Eres, Amiga Mía",
+        subtitle: "Cantar de los cantares 6-7",
+        category: ["Eleccion","Pascua","Pentecostés","Antiguo Testamento"],
+        catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "241",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/hermosaeresamigamia.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=comolirioentreloscardos",
+        sig: "/src/index.html?canto=lapalomavolo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "HERMOSA ERES, (Re,m,22)", sC: "tc as"},
+            { line: "AMIGA MÍA, COMO TIRSÁ,, (La,7,239)", sC: "as r1"},
+            { line: "BELLÍSIMA, COMO JERUSALÉN., (Re,m,285)", sC: "as"},
+            { line: "JERUSALÉN, JERUSALÉN,, (Sol,m,96)(La,7,215)", sC: "as"},
+            { line: "JERUSALÉN, JERUSALÉN., (Sol,m,96)(La,7,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Qué lindos son tus pies en las sandalias,, (Sol,m,25)", sC: "tc"},
+            { line: "hija de príncipe!, (La,7,94)", sC: ""},
+            { line: "Las curvas de tus caderas,, (Sol,m,24)", sC: ""},
+            { line: "obra de manos de un artista., (La,7,240)", sC: ""},
+            { line: "Tu ombligo es como un ánfora redonda., (Si♭,,83)(La,7,333)", sC: ""},
+            { line: "Tu cuello, es una torre de marfil., (Si♭,,57)(La,7,294)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tus ojos, como las piscinas de Jesbón,, (Sol,m,61)(La,7,341)", sC: ""},
+            { line: "tu cabeza es como el monte Carmelo,, (Sol,m,65)(La,7,335)", sC: ""},
+            { line: "tu pelo, es como la púrpura;, (Si♭,,44)(La,7,207)", sC: ""},
+            { line: "¡un rey en él está prisionero!, (Si♭,,51)(La,7,240)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_amigamia_1", initialState: "collapsed",
+       triggerLine: "HERMOSA ERES (Re,m,22)", sC: "ta as", lines: [
+            { line: "AMIGA MÍA, COMO TIRSÁ,, (La,7,239)", sC: "as r1"},
+            { line: "BELLÍSIMA, COMO JERUSALÉN., (Re,m,285)", sC: "as"},
+            { line: "JERUSALÉN, JERUSALÉN,, (Sol,m,96)(La,7,215)", sC: "as"},
+            { line: "JERUSALÉN, JERUSALÉN., (Sol,m,96)(La,7,215)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+    ], lder: [
+            { line: "«¿Quién es ésta que surge, (Re,7,12)", sC: "tc"},
+            { line: "como la aurora,, (Sol,m,116)", sC: ""},
+            { line: "bella como la luna,, (Si♭,,13)(La,7,148)", sC: ""},
+            { line: "esplendente como el sol?», (Si♭,,85)(La,7,221)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Qué bella eres, oh amor,, (Re,m,22)(La,7,223)", sC: ""},
+            { line: "qué bella eres, oh delicia!, (Re,m,208)", sC: ""},
+            { line: "Bellísima como Jerusalén,, (Sol,m,26)(La,7,225)", sC: ""},
+            { line: "bellísima como Jerusalén,, (Sol,m,26)(La,7,225)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Jerusalén ¡Aay! Jerusalén,, (Si♭,7,122)(La,7,226)", sC: ""},
+            { line: "Jerusalén, Jerusalén., (Si♭,7,75)(La,7,177)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_amigamia_2", initialState: "collapsed",
+       triggerLine: "HERMOSA ERES (Re,m,22)", sC: "ta as", lines: [
+            { line: "AMIGA MÍA, COMO TIRSÁ,, (La,7,239)", sC: "as r1"},
+            { line: "BELLÍSIMA, COMO JERUSALÉN., (Re,m,285)", sC: "as"},
+            { line: "JERUSALÉN, JERUSALÉN,, (Sol,m,96)(La,7,215)", sC: "as"},
+            { line: "JERUSALÉN, JERUSALÉN., (Sol,m,96)(La,7,215)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: HERMOSA ERES, AMIGA MÍA
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           LA PALOMA VOLÓ                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lapalomavolo",
+        tt: "La Paloma Voló ",
+        title: "La Paloma Voló ",
+        subtitle: "Oda XXIV de Salomón",
+        category: ["Eleccion"],
+        catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "242",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/lapalomavolo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=hermosaeresamigamia",
+        sig: "/src/index.html?canto=merobasteelcorazon",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "LA PALOMA VOLÓ, (Mi,m,20)", sC: "tc as"},
+            { line: "SOBRE LA CABEZA DEL SEÑOR, (Si,7,281)", sC: "as"},
+            { line: "Y SALMODIÓ SOBRE ÉL., (Mi,m,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y EL SEÑOR MOSTRÓ, ", sC: "as"},
+            { line: "EL DISEÑO DE SU AMOR,, (La,m6,213)", sC: "as"},
+            { line: "DISEÑO DE ARTE INEFABLE, (Si,7,43)", sC: "as"},
+            { line: "PARA CADA HOMBRE., (Mi,m,141)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y los abismos se abrieron,, (La,m,20)(Si,7,214)", sC: "tc"},
+            { line: "y se oyeron terribles gritos, (La,m,72)", sC: ""},
+            { line: "como de mujeres en parto., (Si,7,222)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y el Señor destruyó los abismos, (Do,,78)", sC: ""},
+            { line: "con la luz de su victoria., (Si,7,194)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "LA PALOMA VOLÓ, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "SOBRE LA CABEZA DEL SEÑOR, (Si,7,281)", sC: "as"},
+            { line: "Y SALMODIÓ SOBRE ÉL., (Mi,m,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y EL SEÑOR MOSTRÓ, ", sC: "as"},
+            { line: "EL DISEÑO DE SU AMOR,, (La,m6,213)", sC: "as"},
+            { line: "DISEÑO DE ARTE INEFABLE, (Si,7,43)", sC: "as"},
+            { line: "PARA CADA HOMBRE., (Mi,m,141)", sC: "as"},  ]},
+    ], lder: [
+            { line: "Mas los diseños se perdieron, (La,m,20)(Si,7,242)", sC: "tc"},
+            { line: "y lloraban los ángeles del cielo;, (La,m,53)(Si,7,266)", sC: ""},
+            { line: "los diseños de aquellos, (Do,,66)", sC: ""},
+            { line: "que no siguieron hacer su voluntad., (Si,7,316)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Porque el Señor ha mostrado su camino,, (Do,,14)(Si,7,361)", sC: ""},
+            { line: "y ha dado a aquellos que lo siguen, (Do,,63)", sC: ""},
+            { line: "la gracia de revestirse de su santidad., (Si,7,339)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "LA PALOMA VOLÓ, (Mi,m,20)", sC: "ta as", lines: [
+            { line: "SOBRE LA CABEZA DEL SEÑOR, (Si,7,281)", sC: "as"},
+            { line: "Y SALMODIÓ SOBRE ÉL., (Mi,m,215)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y EL SEÑOR MOSTRÓ, ", sC: "as"},
+            { line: "EL DISEÑO DE SU AMOR,, (La,m6,213)", sC: "as"},
+            { line: "DISEÑO DE ARTE INEFABLE, (Si,7,43)", sC: "as"},
+            { line: "PARA CADA HOMBRE., (Mi,m,141)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: LA PALOMA VOLÓ 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           ME ROBASTE EL CORAZÓN                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "merobasteelcorazon",
+        tt: "Me Robaste El Corazón ",
+        title: "Me Robaste El Corazón ",
+        subtitle: "Cantar de los cantares 4,9 - 5,1",
+        category: ["Eleccion","Antiguo Testamento"],
+        catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "243",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/merobasteelcorazon.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=lapalomavolo",
+        sig: "/src/index.html?canto=subaelesposoallenodesutalamo",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "ME ROBASTE EL CORAZÓN,, (Re,m,22)(Sol,m,238)", sC: "ta as"},
+            { line: "ME ROBASTE EL CORAZÓN,, (Re,m,238)", sC: "as r1"},
+            { line: "HERMANA MÍA, ESPOSA,, (Sol,m,203)", sC: "as"},
+            { line: "ME ROBASTE,, (La,,89)", sC: "as"},
+            { line: "ME ROBASTE EL CORAZÓN., (Re,m,237)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Qué hermosos tus amores,, (Re,m,22)(Sol,m,221)", sC: "tc"},
+            { line: "qué hermosos tus amores!, (Re,m,215)", sC: ""},
+            { line: "La fragancia de tus perfumes,, (Sol,m,239)", sC: ""},
+            { line: "más que todos los bálsamos de amor., (La,,104)(Re,m,350)", sC: ""},
+            { line: "Miel destilan tus labios,, (Sol,m,185)", sC: ""},
+            { line: "esposa mía, hermana,, ", sC: ""},
+            { line: "miel y leche debajo de tu lengua., (La,,75)(Re,m,266)", sC: ""},
+            { line: "La fragancia de tus vestidos, ", sC: ""},
+            { line: "es la fragancia del Líbano, esposa, esposa mía,, (Sol,m,203)", sC: ""},
+            { line: "más sabrosos son tus amores que el vino., (La,,94)(Re,m,374)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Huerto eres cerrado, hermana mía,, (Do,,10)(Re,m,313)", sC: ""},
+            { line: "fuente sellada, esposa mía., (Do,,10)(Re,m,243)", sC: ""},
+            { line: "Tus frutos un paraíso de granados,, (Sol,m,59)(La,,283)", sC: ""},
+            { line: "de nardo y azafrán, de mirra y áloe., (Sol,m,52)(La,,297)", sC: ""},
+    ], lder: [
+            { line: "¡Levántate, cierzo, ábrego, y ven!, (Do,,10)(Fa,,286)", sC: "tc"},
+            { line: "¡LEVÁNTATE, CIERZO, ÁBREGO, Y VEN!, (Do,,10)(Fa,,341)", sC: "ta as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Sopla en mi huerto, (La,,10)", sC: "tc"},
+            { line: "para que exhale sus aromas., (Re,m,224)", sC: ""},
+            { line: "SOPLA EN MI HUERTO, (La,,10)", sC: "ta as"},
+            { line: "PARA QUE EXHALE SUS AROMAS., (Re,m,266)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y pueda entrar mi amado en su huerto, (Do,,10)(Fa,,336)", sC: ""},
+            { line: "y coma de sus frutos exquisitos., (La,,10)(Re,m,272)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Ya he entrado en mi huerto, esposa mía;, (Sol,m,103)(La,,368)", sC: ""},
+            { line: "he comido mi miel en su panal,, (Sol,m,75)(La,,285)", sC: ""},
+            { line: "he bebido mi vino con su leche., (Sol,m,73)(La,,254)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡Amigos, venid, bebed,, (Re,m,22)(Do,,125)(Si♭,,194)", sC: "tc"},
+            { line: "oh queridos y embriagaos!, (La,,221)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "¡AMIGOS, VENID, BEBED,, (Re,m,22)(Do,,133)(Si♭,,218)", sC: "ta as"},
+            { line: "OH QUERIDOS Y EMBRIAGAOS!, (La,,259)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ME ROBASTE EL CORAZÓN, (Re,m,22)(Sol,m,238)", sC: "ta as", lines: [
+            { line: "ME ROBASTE EL CORAZÓN,, (Re,m,238)", sC: "as r1"},
+            { line: "HERMANA MÍA, ESPOSA,, (Sol,m,203)", sC: "as"},
+            { line: "ME ROBASTE,, (La,,89)", sC: "as"},
+            { line: "ME ROBASTE EL CORAZÓN., (Re,m,237)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: ME ROBASTE EL CORAZÓN 
+// SIGUIENTE CANTO DEBAJO
+/*
+╔════════════════════════════════════════════════════════╗
+║           SUBA EL ESPOSO AL LEÑO DE SU TÁLAMO                ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "subaelesposoallenodesutalamo",
+        tt: "Suba El Esposo Al Leño De Su Tálamo ",
+        title: "Suba El Esposo Al Leño De Su Tálamo ",
+        subtitle: "Himno (San Quodvultdeus)",
+        category: ["Eleccion"],
+        catCanto: "Eleccion",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "244",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/subaelesposoallenodesutalamo.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=merobasteelcorazon",
+        sig: "/",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "SUBA EL ESPOSO,, (La,m,20)(Re,m,137)", sC: "tc as"},
+            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (Mi,,22)(La,m,235)", sC: "as"},
+            { line: "SUBA NUESTRO ESPOSO,, (Re,m,204)", sC: "as"},
+            { line: "AL LECHO, AL LECHO DE SU TÁLAMO., (Mi,,50)(La,m,291)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Duerma muriendo y se abra su costado, (La,m,20)(Re,m,350)", sC: "tc"},
+            { line: "y salga la Iglesia virgen., (Mi,,28)(La,m,184)", sC: ""},
+            { line: "Herido en su costado al instante salió, (Re,m,351)", sC: ""},
+            { line: "Sangre y agua, Sangre y agua., (Mi,,98)(La,m,252)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Agua con la que la Esposa fue lavada,, (Re,m,22)(Mi,,327)", sC: ""},
+            { line: "Sangre que recibe como dote., (Re,m,22)(Mi,,257)", sC: ""},
+            { line: "Duerme Adán y es creada Eva,, (Fa,,10)(Mi,,265)", sC: ""},
+            { line: "muere Cristo y es formada la Iglesia., (Fa,,88)(Re,m,322)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_esposo_1", initialState: "collapsed",
+       triggerLine: "SUBA EL ESPOSO, (Mi,,20)", sC: "ta as", lines: [
+            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,137)", sC: "as"},
+            { line: "SUBA NUESTRO ESPOSO,, (Mi,,22)(La,m,235)", sC: "as"},
+            { line: "AL LECHO, AL LECHO DE SU TÁLAMO., (Mi,,50)(La,m,291)", sC: "as"},  ]},
+    ], lder: [
+            { line: "¡Oh, qué grande el sacramento de estas bodas!, (Re,,12)(Mi,,405)", sC: "tc"},
+            { line: "¡Qué misterio este Esposo y esta Esposa!, (Re,m,99)(Mi,,355)", sC: ""},
+            { line: "La Esposa toma el velo, (Re,m,78)", sC: ""},
+            { line: "cuando muere el Esposo,, (Fa,,206)", sC: ""},
+            { line: "y el Esposo se une a la Esposa, (Fa,,76)(Re,m,266)", sC: ""},
+            { line: "cuando de la muerte se separa., (Mi,,274)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Y cuando el Esposo es elevado a los Cielos,, (Fa,,46)", sC: ""},
+            { line: "la Esposa se hace fecunda en toda la tierra., (Mi,,379)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_esposo_2", initialState: "collapsed",
+       triggerLine: "SUBA EL ESPOSO, (Mi,,20)(Re,m,137)", sC: "ta as", lines: [
+            { line: "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,236)", sC: "as"},
+            { line: "SUBA NUESTRO ESPOSO,, (Mi,,20)(La,m,200)", sC: "as"},
+            { line: "AL LECHO, AL LECHO DE SU TÁLAMO., (Re,m,60)(La,m,291)", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: SUBA EL ESPOSO AL LEÑO DE SU TÁLAMO 
+// SIGUIENTE CANTO DEBAJO
 
 
 
@@ -20506,7 +21173,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
-// ELECCIÓN
+
 
 
 

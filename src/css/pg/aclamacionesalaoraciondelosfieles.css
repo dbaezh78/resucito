@@ -31,34 +31,4 @@
             }
 
 
-        .cantosliturgicos::before {
-    content: "CANTOS LITÚRGICOS";
-    /* Propiedades para el centrado */
-    position: absolute;
-    /* Ajusta el alto y el ancho para ocupar todo el espacio del contenedor padre (.cantosliturgicos) */
-    left: 0;
-    height: 100%; /* Ocupa todo el alto (asumiendo que .cantosliturgicos tiene un alto definido o se adapta al contenido) */
 
-    /* Centrado horizontal del texto */
-    text-align: center;
-
-    /* Centrado vertical (usando Flexbox) */
-    display: flex; /* Convierte el pseudoelemento en un contenedor flex */
-    align-items: center; /* Centra verticalmente el contenido (la línea de texto) */
-    justify-content: center; /* Esto también ayudará a asegurar el centrado horizontal */
-
-    /* Estilos de fuente para simular un H1 */
-    font-family: 'Franklin Gothic Medium',Arial, sans-serif;
-    line-height: 1.2;
-    font-weight: bold;
-    white-space: nowrap; /* Mantiene el texto en una sola línea */
-    font-weight: 800;
-}
-
-.cantosliturgicos {
-    position: relative;
-    /* Asegurate de que este contenedor tenga un alto si querés centrar verticalmente contra algo específico */
-    /* Por ejemplo: height: 50vh; para centrar en la mitad de la ventana */
-    min-height: 24px; /* Mantenemos el mínimo, pero considerá darle un alto fijo o en porcentaje si es necesario */
-    width: 99%;
-}
