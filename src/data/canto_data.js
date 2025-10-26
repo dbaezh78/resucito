@@ -19746,14 +19746,14 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "El que tenga oídos, (Sol,m,25)(Re,m,144)", sC: "tc"},
             { line: "y quiera oír:, (Sol,m,23)(La,,97)", sC: ""},
             { line: "¡Que oiga!, (Re,m,69)", sC: "tc"},
-            { line: "¡QUE OIGA!", sC: "ta as sub"},
+            { line: "¡QUE OIGA!", sC: "ta as sub width"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "No seas camino,, (Sol,m,24)(Re,m,130)", sC: "tc"},
-            { line: "NO SEAS CAMINO., (Sol,m,24)(Re,m,142)", sC: "ta as sub"},
+            { line: "NO SEAS CAMINO., (Sol,m,24)(Re,m,142)", sC: "ta as sub width"},
             { line: "No seas la piedra,, (Sol,m,24)(Re,m,130)", sC: "tc"},
-            { line: "NO SEAS LA PIEDRA., (Sol,m,24)(Re,m,143)", sC: "ta as sub"},
+            { line: "NO SEAS LA PIEDRA., (Sol,m,24)(Re,m,143)", sC: "ta as sub width"},
             { line: "No seas espino,, (Sol,m,24)(Re,m,129)", sC: "tc"},
-            { line: "NO SEAS ESPINO., (Sol,m,24)(Re,m,136)", sC: "ta as sub"},
+            { line: "NO SEAS ESPINO., (Sol,m,24)(Re,m,136)", sC: "ta as sub width"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Que seas la tierra,, (Sol,m,26)(La,,137)", sC: "tc"},
             { line: "LA BUENA TIERRA,, (Sol,m,25)(La,,128)", sC: "ta as"},
