@@ -9,7 +9,7 @@ if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         // Registra el Service Worker. La ruta debe ser relativa a la raíz del dominio.
         // Se mantiene la ruta /cantos/sworker.js según tu confirmación de que el archivo está allí.
-        navigator.serviceWorker.register('sworker.js')
+        navigator.serviceWorker.register('/sworker.js')
             .then((registration) => {
                 console.log('Service Worker registrado con éxito. Alcance:', registration.scope);
             })
@@ -586,6 +586,7 @@ document.getElementById('inputBusqueda')?.addEventListener('input', async functi
         // La URL para fetch se mantiene con el parámetro para evitar problemas de caché del navegador,
         // el Service Worker se encarga de ignorarlo para la búsqueda en caché.
         const response = await fetch(`/src/data/find.json?v=${Date.now()}`);
+        //const response = await fetch(`/cantos/resucito/find/index.json?v=${Date.now()}`);
 
         if (!response.ok) {
             throw new Error(`Error HTTP ${response.status}`);

@@ -1,258 +1,697 @@
 // Define el nombre de la caché. Es buena práctica versionar tu caché.
-const CACHE_NAME = 'cantos-cache-v1.5'; // Versión actualizada para forzar reinstalación
-
-// Define la URL de la página offline. Asegúrate de que esta página exista.
-const OFFLINE_URL = '/cantos/resucito/offline.html';
+const CACHE_NAME = 'cantos-cache-v2.0'; // ¡VERSION ACTUALIZADA!
+// Define la URL de la página offline. Asegúrate de que esta página exista en tu raíz.
+const OFFLINE_URL = '/src/offline.html';
 
 // Lista de URLs estáticas que se deben cachear durante la instalación del Service Worker.
 const urlsToCache = [
-    '/cantos/', // Asegura que la raíz sea precacheada
-    '/cantos/index.html',
-    '/cantos/src/js/manifest.json',
-    OFFLINE_URL, // Asegúrate de que esta página exista para el modo offline
+    // Páginas principales
+    '/',
+    '/index.html',
+    '/src/offline.html', // Asegúrate de que esta página exista
+    '/src/ai.html',
+    '/src/ainterleccional.html',
+   
+    // Archivos JavaScript y JSON de datos
+    '/src/js/manifest.json',
+    '/src/js/app.js',
+    '/src/data/find.json',
+    
+    // Sección JS
+    '/src/js/ai.js',
+    '/src/js/dbMainJS.js',
+    '/src/js/index.js',
+    '/src/js/jsgral.js',
+    '/src/js/jsgral_ainterleccional.js',
+    '/src/js/mensajekiko.js',
+    '/src/js/serviceWorker.js',
+    '/src/js/showAcorde.js',
+    '/src/js/songs-data.js',
+    '/src/js/tiempos.js',
+
+    // Sección Data
+
+    '/src/data/canto_data.js',
+    '/src/data/canto_data_aleluyai.js',
+    '/src/data/Contents.js',
+    '/src/data/find.js',
+    '/src/data/salmodia_data.js',
+    
+    // SESSION DE DATA JS
+  
+    '/src/data/canto_data_aleluyai.js', // Datos de aleluyas
+    '/src/data/Contents.js', // Referenciado en ainterleccional.html
+    '/src/data/find.js', // Referenciado en ainterleccional.html
+    '/src/js/app.js', // Del Service Worker anterior
+    '/src/js/index.js', // Referenciado en ainterleccional.html
+    '/src/js/jsgral.js', // Encontrado en el contenido
+    '/src/js/jsgral_ainterleccional.js', // Referenciado en ainterleccional.html
+    '/src/js/showAcorde.js', // Referenciado en ainterleccional.html
+    '/src/data/find.js',
+    '/src/data/find.json',
+    '//src/data/find.js',
+
+    // Imágenes y Fuentes (referenciadas en HTML/CSS)
+    '/src/img/ico.ico',
+    '/src/img/cristo.png',
+    '/src/img/cristo.jpg',
+    '/src/img/logo_cantos.png',
+    '/src/img/yoteamo1.png',
+    '/src/img/yoteamo2.png',
+    '/src/img/yoteamo3.png',
+    '/src/img/yoteamo4.png',
+    '/src/img/yoteamo5.png',
+    
+    '/src/font/font.woff2',
+    '/src/font/FranklinGothicMedium.ttf',
+    '/src/font/Fave-ScriptBoldPro.woff2',
+    '/src/font/Fave-ScriptBoldPro.woff',
+    '/src/font/Fave-ScriptBoldPro.ttf',
+    '/src/font/LibreFranklin-Bold.ttf',
+
+    // HTML
+    '/src/html/atlmos.html',
+    '/src/html/intro.html',
+    '/src/html/leccionarioc.html',
+    '/src/html/pantalla.html',
+
+
+    //IMAGENES
+    '/src/ima/1cintablanca.png',
+    '/src/ima/bis.png',
+    '/src/ima/do.jpg',
+    '/src/ima/do7.jpg',
+    '/src/ima/do72.jpg',
+    '/src/ima/dom.jpg',
+    '/src/ima/dos.jpg',
+    '/src/ima/dos7.jpg',
+    '/src/ima/dosdim7.jpg',
+    '/src/ima/dosm.jpg',
+    '/src/ima/dot3.jpg',
+    '/src/ima/fa.jpg',
+    '/src/ima/fa7.jpg',
+    '/src/ima/fam.jpg',
+    '/src/ima/famaj7.jpg',
+    '/src/ima/famaj713.jpg',
+    '/src/ima/fas.jpg',
+    '/src/ima/fas5-9dim.jpg',
+    '/src/ima/fas7.jpg',
+    '/src/ima/fasm.jpg',
+    '/src/ima/file.txt',
+    '/src/ima/icon-192x192.png',
+    '/src/ima/ima.txt',
+    '/src/ima/la.jpg',
+    '/src/ima/la2.jpg',
+    '/src/ima/la3.jpg',
+    '/src/ima/la6.jpg',
+    '/src/ima/la7.jpg',
+    '/src/ima/lab.jpg',
+    '/src/ima/lam.jpg',
+    '/src/ima/lam6.jpg',
+    '/src/ima/lam7.jpg',
+    '/src/ima/mi.jpg',
+    '/src/ima/mi6.jpg',
+    '/src/ima/mi7.jpg',
+    '/src/ima/mi7_1.jpg',
+    '/src/ima/mim.jpg',
+    '/src/ima/mim6.jpg',
+    '/src/ima/mimaj7.jpg',
+    '/src/ima/prontuario.png',
+    '/src/ima/re.jpg',
+    '/src/ima/re7.jpg',
+    '/src/ima/rem.jpg',
+    '/src/ima/rem9.jpg',
+    '/src/ima/remadd9.jpg',
+    '/src/ima/res.jpg',
+    '/src/ima/res1.jpg',
+    '/src/ima/resm.jpg',
+    '/src/ima/si.jpg',
+    '/src/ima/si7.jpg',
+    '/src/ima/si72.jpg',
+    '/src/ima/sib.jpg',
+    '/src/ima/sib7.jpg',
+    '/src/ima/sibm.jpg',
+    '/src/ima/sila-violin.png',
+    '/src/ima/silasi-violin.png',
+    '/src/ima/sim.jpg',
+    '/src/ima/sisolla-violin.png',
+    '/src/ima/so7_t2.jpg',
+    '/src/ima/sol.jpg',
+    '/src/ima/sol2.jpg',
+    '/src/ima/sol3.jpg',
+    '/src/ima/sol7.jpg',
+    '/src/ima/sol7_1.jpg',
+    '/src/ima/solfas-violin.png',
+    '/src/ima/solfasolfa-violin.png',
+    '/src/ima/solm.jpg',
+    '/src/ima/solm6.jpg',
+    '/src/ima/sols.jpg',
+    '/src/ima/sols7.jpg',
+    '/src/ima/solsdim7.jpg',
+    '/src/ima/solsm.jpg',
+    '/src/ima/sos.jpg',
+    '/src/ima/sos_t1.jpg',
 
     // Archivos CSS
-    '/cantos/src/css/dbCSS.css',
-    '/cantos/src/css/cssc/dbcssCantos.css',
-    '/cantos/src/css/styles.css',
-    '/cantos/src/css/mensajekiko.css',
-    '/cantos/src/css/cssc/asihablaelamen.css', // CSS específico para asihablaelamen.html
+    
+    // CSS
+    '/src/css/dbCSS.css',
+    '/src/css/aisearch.css',
+    '/src/css/ainterleccional.css',
+    '/src/css/cssc/asihablaelamen.css', // Del Service Worker anterior
+    '/src/css/ai.css',
+    '/src/css/cssc/dbcssCantos.css',
+    '/src/css/search.css',
+    '/src/css/mensajekiko.css',
+    '/src/css/styles.css',
+    '/src/css/cssgral.css',
+    '/src/css/index.css',
 
-    // Archivos JavaScript
-    '/cantos/src/js/dbMainJS.js',
-    '/cantos/src/js/songs-data.js', // Archivo de datos de canciones
-    '/cantos/src/js/app.js',
-    '/cantos/src/js/mensajekiko.js',
-    '/cantos/resucito/cjs/asihablaelamen.js', // Archivo JS específico
+        // CSS todas las paginas
+    '/src/css/pg/abbapadre.css',
+    '/src/css/pg/abraham.css',
+    '/src/css/pg/aclamacionesalaoraciondelosfieles.css',
+    '/src/css/pg/aclamadalsenor.css',
+    '/src/css/pg/aitas1a.css',
+    '/src/css/pg/aitas1b.css',
+    '/src/css/pg/aitas1c.css',
+    '/src/css/pg/aitas2a.css',
+    '/src/css/pg/aitas2b.css',
+    '/src/css/pg/aitas2c.css',
+    '/src/css/pg/aitas3a.css',
+    '/src/css/pg/aitas3b.css',
+    '/src/css/pg/aitas3c.css',
+    '/src/css/pg/aitas4a.css',
+    '/src/css/pg/aitas4b.css',
+    '/src/css/pg/aitas4c.css',
+    '/src/css/pg/aitas5a.css',
+    '/src/css/pg/aitcs1a.css',
+    '/src/css/pg/aitcs1b.css',
+    '/src/css/pg/aitcs1c.css',
+    '/src/css/pg/aitcs2a.css',
+    '/src/css/pg/aitcs2b.css',
+    '/src/css/pg/aitcs2c.css',
+    '/src/css/pg/aitcs3a.css',
+    '/src/css/pg/aitcs3b.css',
+    '/src/css/pg/aitcs3c.css',
+    '/src/css/pg/aitcs4a.css',
+    '/src/css/pg/aitcs4b.css',
+    '/src/css/pg/aitcs4c.css',
+    '/src/css/pg/aitcs5a.css',
+    '/src/css/pg/aitcs5b.css',
+    '/src/css/pg/aitcs5c.css',
+    '/src/css/pg/aitcs6a.css',
+    '/src/css/pg/aitcs6b.css',
+    '/src/css/pg/aitcs6c.css',
+    '/src/css/pg/aitcsjsa.css',
+    '/src/css/pg/aitcsjsb.css',
+    '/src/css/pg/aitcsjsc.css',
+    '/src/css/pg/aitcsvsa.css',
+    '/src/css/pg/aitcsvsb.css',
+    '/src/css/pg/aitcsvsc.css',
+    '/src/css/pg/aitfs14s.css',
+    '/src/css/pg/aitns1a.css',
+    '/src/css/pg/aitns1enerob.css',
+    '/src/css/pg/aitns1eneroc.css',
+    '/src/css/pg/aitns25dicmaa.css',
+    '/src/css/pg/aitns25dicmab.css',
+    '/src/css/pg/aitns25dicmac.css',
+    '/src/css/pg/aitns25dicmda.css',
+    '/src/css/pg/aitns25dicmdb.css',
+    '/src/css/pg/aitns25dicmdc.css',
+    '/src/css/pg/aitns25dicmma.css',
+    '/src/css/pg/aitns25dicmmb.css',
+    '/src/css/pg/aitns25dicmmc.css',
+    '/src/css/pg/aitns25dicmva.css',
+    '/src/css/pg/aitns25dicmvb.css',
+    '/src/css/pg/aitns25dicmvc.css',
+    '/src/css/pg/aitns2a.css',
+    '/src/css/pg/aitns2domingob.css',
+    '/src/css/pg/aitns2domingoc.css',
+    '/src/css/pg/aitns6a.css',
+    '/src/css/pg/aitns6enerob.css',
+    '/src/css/pg/aitns6eneroc.css',
+    '/src/css/pg/aitnssfa.css',
+    '/src/css/pg/aitnssfb.css',
+    '/src/css/pg/aitnssfc.css',
+    '/src/css/pg/aitos10a.css',
+    '/src/css/pg/aitos10b.css',
+    '/src/css/pg/aitos10c.css',
+    '/src/css/pg/aitos11a.css',
+    '/src/css/pg/aitos11b.css',
+    '/src/css/pg/aitos11c.css',
+    '/src/css/pg/aitos12a.css',
+    '/src/css/pg/aitos12b.css',
+    '/src/css/pg/aitos12c.css',
+    '/src/css/pg/aitos13a.css',
+    '/src/css/pg/aitos13b.css',
+    '/src/css/pg/aitos13c.css',
+    '/src/css/pg/aitos14a.css',
+    '/src/css/pg/aitos14b.css',
+    '/src/css/pg/aitos14c.css',
+    '/src/css/pg/aitos15a.css',
+    '/src/css/pg/aitos15b.css',
+    '/src/css/pg/aitos15c.css',
+    '/src/css/pg/aitos16a.css',
+    '/src/css/pg/aitos16b.css',
+    '/src/css/pg/aitos16c.css',
+    '/src/css/pg/aitos17a.css',
+    '/src/css/pg/aitos17b.css',
+    '/src/css/pg/aitos17c.css',
+    '/src/css/pg/aitos18a.css',
+    '/src/css/pg/aitos18b.css',
+    '/src/css/pg/aitos18c.css',
+    '/src/css/pg/aitos19a.css',
+    '/src/css/pg/aitos19b.css',
+    '/src/css/pg/aitos19c.css',
+    '/src/css/pg/aitos1a.css',
+    '/src/css/pg/aitos1b.css',
+    '/src/css/pg/aitos1c.css',
+    '/src/css/pg/aitos20a.css',
+    '/src/css/pg/aitos20b.css',
+    '/src/css/pg/aitos20c.css',
+    '/src/css/pg/aitos21a.css',
+    '/src/css/pg/aitos21b.css',
+    '/src/css/pg/aitos21c.css',
+    '/src/css/pg/aitos22a.css',
+    '/src/css/pg/aitos22b.css',
+    '/src/css/pg/aitos22c.css',
+    '/src/css/pg/aitos23a.css',
+    '/src/css/pg/aitos23b.css',
+    '/src/css/pg/aitos23c.css',
+    '/src/css/pg/aitos24a.css',
+    '/src/css/pg/aitos24b.css',
+    '/src/css/pg/aitos24c.css',
+    '/src/css/pg/aitos25a.css',
+    '/src/css/pg/aitos25b.css',
+    '/src/css/pg/aitos25c.css',
+    '/src/css/pg/aitos26a.css',
+    '/src/css/pg/aitos26b.css',
+    '/src/css/pg/aitos26c.css',
+    '/src/css/pg/aitos27a.css',
+    '/src/css/pg/aitos27b.css',
+    '/src/css/pg/aitos27c.css',
+    '/src/css/pg/aitos28a.css',
+    '/src/css/pg/aitos28b.css',
+    '/src/css/pg/aitos28c.css',
+    '/src/css/pg/aitos29a.css',
+    '/src/css/pg/aitos29b.css',
+    '/src/css/pg/aitos29c.css',
+    '/src/css/pg/aitos2a.css',
+    '/src/css/pg/aitos2b.css',
+    '/src/css/pg/aitos2c.css',
+    '/src/css/pg/aitos30a.css',
+    '/src/css/pg/aitos30b.css',
+    '/src/css/pg/aitos30c.css',
+    '/src/css/pg/aitos31a.css',
+    '/src/css/pg/aitos31b.css',
+    '/src/css/pg/aitos31c.css',
+    '/src/css/pg/aitos32a.css',
+    '/src/css/pg/aitos32b.css',
+    '/src/css/pg/aitos32c.css',
+    '/src/css/pg/aitos33a.css',
+    '/src/css/pg/aitos33b.css',
+    '/src/css/pg/aitos33c.css',
+    '/src/css/pg/aitos34a.css',
+    '/src/css/pg/aitos34b.css',
+    '/src/css/pg/aitos34c.css',
+    '/src/css/pg/aitos3a.css',
+    '/src/css/pg/aitos3b.css',
+    '/src/css/pg/aitos3c.css',
+    '/src/css/pg/aitos4a.css',
+    '/src/css/pg/aitos4b.css',
+    '/src/css/pg/aitos4c.css',
+    '/src/css/pg/aitos5a.css',
+    '/src/css/pg/aitos5b.css',
+    '/src/css/pg/aitos5c.css',
+    '/src/css/pg/aitos6a.css',
+    '/src/css/pg/aitos6b.css',
+    '/src/css/pg/aitos6c.css',
+    '/src/css/pg/aitos7a.css',
+    '/src/css/pg/aitos7b.css',
+    '/src/css/pg/aitos7c.css',
+    '/src/css/pg/aitos8a.css',
+    '/src/css/pg/aitos8b.css',
+    '/src/css/pg/aitos8c.css',
+    '/src/css/pg/aitos9a.css',
+    '/src/css/pg/aitos9b.css',
+    '/src/css/pg/aitos9c.css',
+    '/src/css/pg/aitosscsca.css',
+    '/src/css/pg/aitosscscb.css',
+    '/src/css/pg/aitosscscc.css',
+    '/src/css/pg/aitosvsa.css',
+    '/src/css/pg/aitosvsb.css',
+    '/src/css/pg/aitosvsc.css',
+    '/src/css/pg/aitps1a.css',
+    '/src/css/pg/aitps1b.css',
+    '/src/css/pg/aitps1c.css',
+    '/src/css/pg/aitps2a.css',
+    '/src/css/pg/aitps2b.css',
+    '/src/css/pg/aitps2c.css',
+    '/src/css/pg/aitps3a.css',
+    '/src/css/pg/aitps3b.css',
+    '/src/css/pg/aitps3c.css',
+    '/src/css/pg/aitps4a.css',
+    '/src/css/pg/aitps4b.css',
+    '/src/css/pg/aitps4c.css',
+    '/src/css/pg/aitps5a.css',
+    '/src/css/pg/aitps5b.css',
+    '/src/css/pg/aitps5c.css',
+    '/src/css/pg/aitps6a.css',
+    '/src/css/pg/aitps6b.css',
+    '/src/css/pg/aitps6c.css',
+    '/src/css/pg/aitps7a.css',
+    '/src/css/pg/aitps7b.css',
+    '/src/css/pg/aitps7c.css',
+    '/src/css/pg/aitps8a.css',
+    '/src/css/pg/aitps8b.css',
+    '/src/css/pg/aitps8c.css',
+    '/src/css/pg/aitps9a.css',
+    '/src/css/pg/aitps9b.css',
+    '/src/css/pg/aitps9c.css',
+    '/src/css/pg/aitpsasa.css',
+    '/src/css/pg/aitpsasb.css',
+    '/src/css/pg/aitpsasc.css',
+    '/src/css/pg/aitpsssa.css',
+    '/src/css/pg/aitpsssb.css',
+    '/src/css/pg/aitpsssc.css',
+    '/src/css/pg/alabadalsenorenelcielo.css',
+    '/src/css/pg/alacenadelcordero.css',
+    '/src/css/pg/alavictimapascual.css',
+    '/src/css/pg/aldespertar.css',
+    '/src/css/pg/alegriahanacidoelsalvador.css',
+    '/src/css/pg/aleluyaalabadalsenor.css',
+    '/src/css/pg/aleluyabendecidalsenor.css',
+    '/src/css/pg/aleluyapascual.css',
+    '/src/css/pg/aleluyayallegoelreino.css',
+    '/src/css/pg/alzaospuertas.css',
+    '/src/css/pg/amenamenamen.css',
+    '/src/css/pg/amoalsenor.css',
+    '/src/css/pg/anadiedemosocasiondetropiezo.css',
+    '/src/css/pg/antifonaparaelevangelio.css',
+    '/src/css/pg/aquedah.css',
+    '/src/css/pg/asihablaelamen.css',
+    '/src/css/pg/atilevantomisojos copy.css',
+    '/src/css/pg/atilevantomisojos-ver.css',
+    '/src/css/pg/atilevantomisojos.css',
+    '/src/css/pg/atisenorenmiclamorimploro.css',
+    '/src/css/pg/atisenorlevantomialma.css',
+    '/src/css/pg/atisenorsedebelaalabanzaension.css',
+    '/src/css/pg/avemariai.css',
+    '/src/css/pg/avemariaii(1984).css',
+    '/src/css/pg/babiloniacriminal.css',
+    '/src/css/pg/balaam.css',
+    '/src/css/pg/bendecirealsenorentodotiempo.css',
+    '/src/css/pg/bendicealmamiaayahveh.css',
+    '/src/css/pg/bendiciondelagua.css',
+    '/src/css/pg/bendiciondelaguap1.css',
+    '/src/css/pg/bendiciondelaguap2.css',
+    '/src/css/pg/benditaerestumaria.css',
+    '/src/css/pg/benditoeressenor.css',
+    '/src/css/pg/benditoseadios.css',
+    '/src/css/pg/benedictus.css',
+    '/src/css/pg/bk',
+    '/src/css/pg/cantadadios.css',
+    '/src/css/pg/cantadalsenor.css',
+    '/src/css/pg/canticodelostresjovenes.css',
+    '/src/css/pg/cantodemoises.css',
+    '/src/css/pg/cantodemoises1.css',
+    '/src/css/pg/caritaschristiurgetnos.css',
+    '/src/css/pg/carmen63.css',
+    '/src/css/pg/ccs.txt',
+    '/src/css/pg/celebracionpenitencial.css',
+    '/src/css/pg/comocondenadosamuerte.css',
+    '/src/css/pg/comodestilalamiel.css',
+    '/src/css/pg/comoelimpulsoquesientelaira.css',
+    '/src/css/pg/comoesmaravilloso.css',
+    '/src/css/pg/comolacierva.css',
+    '/src/css/pg/comolirioentreloscardos.css',
+    '/src/css/pg/comoovejaqueve.css',
+    '/src/css/pg/consoladamipueblo.css',
+    '/src/css/pg/corderodedios.css',
+    '/src/css/pg/credo.css',
+    '/src/css/pg/cristoeslaluz.css',
+    '/src/css/pg/cuandodormia.css',
+    '/src/css/pg/cuandoelsenor.css',
+    '/src/css/pg/cuandoisraelsaliodeegipto.css',
+    '/src/css/pg/dayenu.css',
+    '/src/css/pg/dayenu2.css',
+    '/src/css/pg/debora.css',
+    '/src/css/pg/decidlealosdecorazoncansado.css',
+    '/src/css/pg/delantedelosangeles.css',
+    '/src/css/pg/deprofundis.css',
+    '/src/css/pg/diadereposo.css',
+    '/src/css/pg/diceelsenoramisenor.css',
+    '/src/css/pg/dichosoelhombre.css',
+    '/src/css/pg/elcombateescatologico.css',
+    '/src/css/pg/elespiritudelsenorestasobremi.css',
+    '/src/css/pg/elielilamasabactani.css',
+    '/src/css/pg/elielilamasabactani1.css',
+    '/src/css/pg/eljacaldelospastores.css',
+    '/src/css/pg/ellagarero.css',
+    '/src/css/pg/elmesiasleon.css',
+    '/src/css/pg/elmismodios.css',
+    '/src/css/pg/elneciopiensaquediosnoexiste.css',
+    '/src/css/pg/elpuebloquecaminabaenlastinieblas.css',
+    '/src/css/pg/elsembrador.css',
+    '/src/css/pg/elsenoranunciaunanoticia.css',
+    '/src/css/pg/elsenoresmipastor.css',
+    '/src/css/pg/elsenormehadado.css',
+    '/src/css/pg/enmediodeaquelgentio.css',
+    '/src/css/pg/enunanocheoscura.css',
+    '/src/css/pg/eresdignodetomarellibro.css',
+    '/src/css/pg/ereshermoso.css',
+    '/src/css/pg/escondemeenloocultodetutienda.css',
+    '/src/css/pg/escuchadislaslejanas.css',
+    '/src/css/pg/espaciente.css',
+    '/src/css/pg/esteeseldiaenqueactuoelsenor.css',
+    '/src/css/pg/esteeselmandamientomio.css',
+    '/src/css/pg/evenushalomalejem.css',
+    '/src/css/pg/extiendomismanos.css',
+    '/src/css/pg/exultadjustosenelsenor.css',
+    '/src/css/pg/felicidadparaelhombre.css',
+    '/src/css/pg/gloriaadiosenloaltodelcielo.css',
+    '/src/css/pg/graciasayahveh.css',
+    '/src/css/pg/gritadjubilosos.css',
+    '/src/css/pg/haciatimoradasanta.css',
+    '/src/css/pg/hastacuando.css',
+    '/src/css/pg/heaquimisiervo.css',
+    '/src/css/pg/heaquiquenuestroespejoeselsenor.css',
+    '/src/css/pg/heaquiquevengopresto.css',
+    '/src/css/pg/heesperadoenelsenor.css',
+    '/src/css/pg/hermosaeresamigamia.css',
+    '/src/css/pg/hijasdejerusalen.css',
+    '/src/css/pg/himnoacristoluz.css',
+    '/src/css/pg/himnoalacaridad.css',
+    '/src/css/pg/himnoalacruzgloriosa.css',
+    '/src/css/pg/himnoalakenosis.css',
+    '/src/css/pg/himnodeadviento.css',
+    '/src/css/pg/himnodelaascension.css',
+    '/src/css/pg/himnodepascua.css',
+    '/src/css/pg/huyeamadomio.css',
+    '/src/css/pg/ialeluyas23.css',
+    '/src/css/pg/idyanunciadamishermanos.css',
+    '/src/css/pg/improperios.css',
+    '/src/css/pg/jacob.css',
+    '/src/css/pg/jerusalenreconstruida.css',
+    '/src/css/pg/jesusrecorriatodaslasciudades.css',
+    '/src/css/pg/lacorderadedios.css',
+    '/src/css/pg/laespada.css',
+    '/src/css/pg/lamarchaesdura.css',
+    '/src/css/pg/lapalomavolo.css',
+    '/src/css/pg/lasalve.css',
+    '/src/css/pg/lasarmasdelaluz.css',
+    '/src/css/pg/lasiegadelasnaciones.css',
+    '/src/css/pg/laudasion.css',
+    '/src/css/pg/laudasionc.css',
+    '/src/css/pg/lavozdemiamado.css',
+    '/src/css/pg/letaniasdelossantos.css',
+    '/src/css/pg/letaniaspenitencialesi.css',
+    '/src/css/pg/letaniaspenitencialesii.css',
+    '/src/css/pg/levantomisojosalosmontes.css',
+    '/src/css/pg/lleguehastatupresenciamiclamor.css',
+    '/src/css/pg/llevamealcielo.css',
+    '/src/css/pg/magnificat.css',
+    '/src/css/pg/mariacasadebendicion.css',
+    '/src/css/pg/mariadejasnagora.css',
+    '/src/css/pg/mariamadredelaiglesia.css',
+    '/src/css/pg/mariamadredelcaminoardiente.css',
+    '/src/css/pg/mariapequenamaria.css',
+    '/src/css/pg/meensenaraselcaminodelavida.css',
+    '/src/css/pg/mehasseducidosenor copy.css',
+    '/src/css/pg/mehasseducidosenor.css',
+    '/src/css/pg/merobasteelcorazon.css',
+    '/src/css/pg/miradqueestupendo.css',
+    '/src/css/pg/misericordiadiosmio.css',
+    '/src/css/pg/misericordiamiamisericordia.css',
+    '/src/css/pg/muchomehanperseguido.css',
+    '/src/css/pg/ningunopuedeserviradossenores.css',
+    '/src/css/pg/noestaaquiresucito.css',
+    '/src/css/pg/nohayenelparecer.css',
+    '/src/css/pg/nolimetangere.css',
+    '/src/css/pg/nosufrasporlosmalvados.css',
+    '/src/css/pg/ohcieloslloveddeloalto.css',
+    '/src/css/pg/ohdiosportunombre.css',
+    '/src/css/pg/ohdiostueresmidios.css',
+    '/src/css/pg/ohjesusamormio.css',
+    '/src/css/pg/ohmuertedondeestatuvictoria.css',
+    '/src/css/pg/ohsenormicorazonyanoesambicioso.css',
+    '/src/css/pg/ohsenornuestrodios.css',
+    '/src/css/pg/ostomaredeentrelasnaciones.css',
+    '/src/css/pg/palomaincorrupta.css',
+    '/src/css/pg/pentecostes.css',
+    '/src/css/pg/plegariaeucaristicaiimodeloi.css',
+    '/src/css/pg/plegariaeucaristicaiimodeloii.css',
+    '/src/css/pg/plegariaeucaristicaiimodeloiip1.css',
+    '/src/css/pg/plegariaeucaristicaiimodeloiip2.css',
+    '/src/css/pg/plegariaeucaristicaiimodeloiip3.css',
+    '/src/css/pg/plegariaeucaristicaiimodeloip1.css',
+    '/src/css/pg/plegariaeucaristicaiimodeloip2.css',
+    '/src/css/pg/plegariaeucaristicaiimodeloip3.css',
+    '/src/css/pg/plegariaeucaristicaiv.css',
+    '/src/css/pg/plegariaeucaristicaivp1.css',
+    '/src/css/pg/plegariaeucaristicaivp2.css',
+    '/src/css/pg/plegariaeucaristicaivp3.css',
+    '/src/css/pg/plegariaeucaristicaivp4.css',
+    '/src/css/pg/porelamordemisamigos.css',
+    '/src/css/pg/porqueestanocheesdiferente.css',
+    '/src/css/pg/porquelasgentesconjuran.css',
+    '/src/css/pg/porquemiyugoessuave.css',
+    '/src/css/pg/prefacioparaadvientoynavidad.css',
+    '/src/css/pg/prefacioparaeltiempopascual.css',
+    '/src/css/pg/pregonpascual.css',
+    '/src/css/pg/pregonpascualp1.css',
+    '/src/css/pg/pregonpascualp2.css',
+    '/src/css/pg/queamablessontusmoradas.css',
+    '/src/css/pg/queestupendoquealegria.css',
+    '/src/css/pg/quienesestaquesubedeldesierto.css',
+    '/src/css/pg/quiennosseparara.css',
+    '/src/css/pg/quieroandarmadreajerusalen.css',
+    '/src/css/pg/quierocantar.css',
+    '/src/css/pg/resucito.css',
+    '/src/css/pg/resurrexit.css',
+    '/src/css/pg/salmo96.css',
+    '/src/css/pg/salmodiaparaelrosario.css',
+    '/src/css/pg/salmodiaparaelsalmoresponsorial.css',
+    '/src/css/pg/salmodiasparalaoraciondelosfieles.css',
+    '/src/css/pg/salmodiasparalaudes1.css',
+    '/src/css/pg/salmodiasparalaudes2.css',
+    '/src/css/pg/salvereinadeloscielos.css',
+    '/src/css/pg/santo1982.css',
+    '/src/css/pg/santo1988.css',
+    '/src/css/pg/santomelodiahebraica.css',
+    '/src/css/pg/santopalestina74.css',
+    '/src/css/pg/santopalomeras65.css',
+    '/src/css/pg/santoroma77.css',
+    '/src/css/pg/seencontrarondosangeles.css',
+    '/src/css/pg/senorayudameanodudardeti.css',
+    '/src/css/pg/senornomecorrijasentucolera.css',
+    '/src/css/pg/senortumeescrutasyconoces.css',
+    '/src/css/pg/sermondelamontana.css',
+    '/src/css/pg/shemaisrael.css',
+    '/src/css/pg/shlomlejmariam.css',
+    '/src/css/pg/sielsenornoconstruyelacasa.css',
+    '/src/css/pg/sientatesolitarioysilencioso.css',
+    '/src/css/pg/sihabeisresucitadoconcristo.css',
+    '/src/css/pg/sihoyescuchaissuvoz.css',
+    '/src/css/pg/simeherefugiadoenelsenor.css',
+    '/src/css/pg/sionmadredetodoslospueblos.css',
+    '/src/css/pg/solaasolo.css',
+    '/src/css/pg/stabatmaterdolorosa.css',
+    '/src/css/pg/subaelesposoallenodesutalamo.css',
+    '/src/css/pg/subediosentreaclamaciones.css',
+    '/src/css/pg/tedeum.css',
+    '/src/css/pg/teestoyllamandosenor.css',
+    '/src/css/pg/tehemanifestadomipecado.css',
+    '/src/css/pg/tueresmiesperanzasenor.css',
+    '/src/css/pg/tuhascubiertodevergenzalamuerte.css',
+    '/src/css/pg/tuqueeresfiel.css',
+    '/src/css/pg/unagransenal.css',
+    '/src/css/pg/unretonobrotadeltroncodejese.css',
+    '/src/css/pg/uriuriura.css',
+    '/src/css/pg/vamosyapastores.css',
+    '/src/css/pg/vendellibano.css',
+    '/src/css/pg/venespiritusanto.css',
+    '/src/css/pg/venhijodelhombre.css',
+    '/src/css/pg/venicreator.css',
+    '/src/css/pg/vieneelsenor.css',
+    '/src/css/pg/virgendelamaravilla.css',
+    '/src/css/pg/vividalegres.css',
+    '/src/css/pg/vosotrossoislaluzdelmundo.css',
+    '/src/css/pg/yahvehtueresmidios.css',
+    '/src/css/pg/yavienemidios.css',
+    '/src/css/pg/yoteamosenor.css',
+    '/src/css/pg/yovengoareunir.css',
+    '/src/css/pg/z#.css',
+    '/src/css/pg/zaqueo.css',
 
-    // Fuentes
-    '/cantos/src/font/LibreFranklin-Bold.ttf',
-    '/cantos/src/font/font.woff2',
-    '/cantos/src/font/Fave-ScriptBoldPro.woff2',
-    '/cantos/src/font/Fave-ScriptBoldPro.woff',
-    '/cantos/src/font/Fave-ScriptBoldPro.ttf',
-    '/cantos/src/font/FranklinGothicMedium.ttf',
 
-    // Imágenes e íconos
-    '/cantos/img/logo_cantos.png',
-    '/cantos/src/ico.ico',
-    '/cantos/src/icons/icon-192x192.png',
-    '/cantos/src/icons/icon-512x512.png',
-    '/cantos/src/ima/do.jpg', // Imágenes de acordes
-    '/cantos/src/ima/dom.jpg',
-    '/cantos/src/ima/do7.jpg',
-    '/cantos/src/ima/dos.jpg',
-    '/cantos/src/ima/dosm.jpg',
-    '/cantos/src/ima/dos7.jpg',
-    '/cantos/src/ima/re.jpg',
-    '/cantos/src/ima/rem.jpg',
-    '/cantos/src/ima/re7.jpg',
-    '/cantos/src/ima/rem9.jpg',
-    '/cantos/src/ima/res.jpg',
-    '/cantos/src/ima/resm.jpg',
-    '/cantos/src/ima/mi.jpg',
-    '/cantos/src/ima/mim.jpg',
-    '/cantos/src/ima/mi7.jpg',
-    '/cantos/src/ima/mimaj7.jpg',
-    '/cantos/src/ima/mi6.jpg',
-    '/cantos/src/ima/mim6.jpg',
-    '/cantos/src/ima/fa.jpg',
-    '/cantos/src/ima/fam.jpg',
-    '/cantos/src/ima/fa7.jpg',
-    '/cantos/src/ima/famaj7.jpg',
-    '/cantos/src/ima/famaj713.jpg',
-    '/cantos/src/ima/fas.jpg',
-    '/cantos/src/ima/fasm.jpg',
-    '/cantos/src/ima/fas5-9dim.jpg',
-    '/cantos/src/ima/sol.jpg',
-    '/cantos/src/ima/solm.jpg',
-    '/cantos/src/ima/sol7.jpg',
-    '/cantos/src/ima/sols.jpg',
-    '/cantos/src/ima/solsm.jpg',
-    '/cantos/src/ima/sols7.jpg',
-    '/cantos/src/ima/la.jpg',
-    '/cantos/src/ima/lam.jpg',
-    '/cantos/src/ima/la7.jpg',
-    '/cantos/src/ima/lam7.jpg',
-    '/cantos/src/ima/la6.jpg',
-    '/cantos/src/ima/lam6.jpg',
-    '/cantos/src/ima/lab.jpg',
-    '/cantos/src/ima/si.jpg',
-    '/cantos/src/ima/Sim.jpg',
-    '/cantos/src/ima/si7.jpg',
-    '/cantos/src/ima/sib.jpg',
-    '/cantos/src/ima/sibm.jpg',
-    '/cantos/src/ima/sib7.jpg',
-
-    // JSON de búsqueda
-    '/cantos/resucito/find/index.json' // Archivo JSON de búsqueda
 ];
 
-// Evento 'install': Se dispara cuando el Service Worker se instala.
-// Aquí abrimos la caché y agregamos todos los recursos estáticos.
+// Evento 'install': Se dispara cuando el Service Worker se registra por primera vez
+// o cuando se detecta una nueva versión (cambio en CACHE_NAME).
 self.addEventListener('install', (event) => {
     console.log('[Service Worker] Instalando...');
+    // Espera hasta que la caché se haya abierto y todos los archivos hayan sido agregados.
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then((cache) => {
-                console.log('[Service Worker] Cache abierta:', CACHE_NAME);
-                // Usamos Promise.allSettled para que la instalación no falle
-                // si alguno de los recursos no se puede cachear.
-                return Promise.allSettled(
-                    urlsToCache.map(url => {
-                        // Para precachear index.json, asegúrate de que se cachee sin parámetros de consulta
-                        const requestToCache = (url === '/cantos/resucito/find/index.json') ? new Request(url, { ignoreSearch: true }) : url;
-                        return cache.add(requestToCache).catch(error => {
-                            console.warn(`[Service Worker] Fallo al cachear ${url}:`, error);
-                            // No lanzamos el error para que Promise.allSettled continúe
-                            // y el Service Worker se instale.
-                        });
-                    })
-                );
+                console.log('[Service Worker] Precaching recursos estáticos.');
+                return cache.addAll(urlsToCache);
             })
-            .then(() => {
-                console.log('[Service Worker] Todos los recursos estáticos intentados de cachear.');
-            })
+            .then(() => self.skipWaiting()) // Forzar la activación inmediata
             .catch((error) => {
-                // Este catch solo se ejecutará si hay un problema abriendo la caché
-                // o si Promise.allSettled falla por alguna razón inesperada.
-                console.error('[Service Worker] Fallo crítico durante la instalación:', error);
+                console.error('[Service Worker] Error durante el precaching:', error);
             })
     );
 });
 
-// Evento 'fetch': Se dispara cada vez que el navegador hace una solicitud de red.
-// Aquí interceptamos las solicitudes y servimos desde la caché si el recurso está disponible,
-// o lo cacheamos si es un archivo de audio o una página de canto HTML.
+// Evento 'fetch': Se dispara cada vez que el navegador solicita un recurso.
+// Aquí se implementa la estrategia de 'cache-first, then network' para assets estáticos
+// y una respuesta de 'página offline' para fallos de navegación.
 self.addEventListener('fetch', (event) => {
-    // Ignorar solicitudes que no sean GET o de extensiones específicas (ej. chrome-extension://)
-    if (event.request.method !== 'GET' || event.request.url.startsWith('chrome-extension://')) {
+    // Solo interceptar peticiones GET.
+    if (event.request.method !== 'GET') {
         return;
     }
 
-    const requestUrl = new URL(event.request.url);
-    const isIndexJsonRequest = requestUrl.pathname === '/cantos/resucito/find/index.json';
-    // Nueva verificación para la URL raíz o index.html
-    const isRootOrIndexHtmlRequest = requestUrl.pathname === '/cantos/' || requestUrl.pathname === '/cantos/index.html';
-
-    // Estrategia para la URL raíz o index.html
-    if (isRootOrIndexHtmlRequest) {
-        event.respondWith(
-            caches.match('/cantos/index.html') // Intenta encontrar index.html en caché
-                .then(cachedResponse => {
-                    if (cachedResponse) {
-                        console.log('[Service Worker] Sirviendo index.html desde caché para solicitud de raíz:', event.request.url);
-                        return cachedResponse;
-                    }
-                    // Si no está en caché, va a la red
-                    return fetch(event.request).then(networkResponse => {
-                        if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
-                            return networkResponse;
-                        }
-                        const responseToCache = networkResponse.clone();
-                        caches.open(CACHE_NAME).then(cache => {
-                            // Cachea la respuesta de index.html con la clave explícita
-                            cache.put('/cantos/index.html', responseToCache);
-                        });
-                        return networkResponse;
-                    }).catch(() => {
-                        console.log('[Service Worker] Red offline para index.html, intentando servir página offline.');
-                        return caches.match(OFFLINE_URL); // Si todo falla, sirve la página offline
-                    });
-                })
-        );
-        return; // Termina el evento fetch para esta solicitud
-    }
-
-    // Estrategia para index.json (ignorando parámetros de búsqueda)
-    if (isIndexJsonRequest) {
-        event.respondWith(
-            caches.match(event.request, { ignoreSearch: true }) // Intenta encontrar index.json en caché, ignorando parámetros
-                .then((cachedResponse) => {
-                    if (cachedResponse) {
-                        console.log('[Service Worker] Sirviendo index.json desde caché (ignorando parámetros):', event.request.url);
-                        return cachedResponse;
-                    }
-
-                    // Si no está en caché, intenta obtener de la red.
-                    console.log('[Service Worker] Obteniendo index.json de la red:', event.request.url);
-                    return fetch(event.request)
-                        .then((networkResponse) => {
-                            // Verifica si la respuesta de la red es válida.
-                            if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
-                                return networkResponse;
-                            }
-                            // Clona la respuesta para cachearla.
-                            const responseToCache = networkResponse.clone();
-                            caches.open(CACHE_NAME)
-                                .then((cache) => {
-                                    // Cachea index.json con la URL base (sin parámetros)
-                                    cache.put(new Request(requestUrl.origin + requestUrl.pathname), responseToCache);
-                                });
-                            return networkResponse;
-                        })
-                        .catch(() => {
-                            // Si la red falla y no se encontró en caché, no hay un fallback HTML para un JSON.
-                            console.error('[Service Worker] Fallo al obtener index.json de red y no en caché.');
-                            return new Response(JSON.stringify({ error: 'No se pudo cargar el buscador sin conexión.' }), {
-                                headers: { 'Content-Type': 'application/json' },
-                                status: 503, // Service Unavailable
-                                statusText: 'Service Unavailable (Offline)'
-                            });
-                        });
-                })
-        );
-        return; // Termina el evento fetch para index.json
-    }
-
-    // Para todas las demás solicitudes (general cache-first, network-fallback)
+    // Estrategia: Cache-First para todos los recursos
     event.respondWith(
-        caches.match(event.request) // Intenta obtener de la caché primero
+        caches.match(event.request)
             .then((cachedResponse) => {
+                // Si el recurso está en caché, lo servimos inmediatamente.
                 if (cachedResponse) {
-                    console.log('[Service Worker] Sirviendo desde caché:', event.request.url);
                     return cachedResponse;
                 }
 
-                // Si no está en caché, intenta obtener de la red.
-                console.log('[Service Worker] Obteniendo de la red:', event.request.url);
+                // Si no está en caché, vamos a la red.
                 return fetch(event.request)
                     .then((networkResponse) => {
-                        // Verificar si la respuesta de la red es válida.
-                        if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
-                            return networkResponse;
+                        // Opcional: Si la solicitud es exitosa, podemos agregarla a la caché en tiempo de ejecución
+                        // Pero para las URLs estáticas, el precaching ya debería cubrirlo.
+                        // Solo cachearemos las peticiones que no sean la página offline.
+                        if (event.request.url.startsWith(self.location.origin)) {
+                             const responseToCache = networkResponse.clone();
+                             caches.open(CACHE_NAME).then((cache) => {
+                                 cache.put(event.request, responseToCache);
+                             });
                         }
-
-                        // Clonar la respuesta porque un stream de respuesta solo puede ser consumido una vez.
-                        const responseToCache = networkResponse.clone();
-
-                        // Determinar si este recurso debe ser cacheado dinámicamente
-                        const url = event.request.url;
-                        const isAudio = url.endsWith('.mp3');
-                        const isSongHtml = url.startsWith(self.location.origin + '/cantos/resucito/') && url.endsWith('.html');
-                        const isCjsJs = url.startsWith(self.location.origin + '/cantos/resucito/cjs/') && url.endsWith('.js');
-
-                        if (isAudio || isSongHtml || isCjsJs) {
-                            caches.open(CACHE_NAME)
-                                .then((cache) => {
-                                    console.log(`[Service Worker] Cacheando dinámicamente ${isAudio ? 'audio' : isSongHtml ? 'HTML de canto' : 'JS de cjs'}:`, url);
-                                    cache.put(event.request, responseToCache); // Cachear la solicitud original con parámetros
-                                })
-                                .catch((error) => {
-                                    console.error(`[Service Worker] Fallo al cachear ${isAudio ? 'audio' : isSongHtml ? 'HTML de canto' : 'JS de cjs'} dinámicamente:`, error);
-                                });
-                        }
-
                         return networkResponse; // Devolver la respuesta de la red al navegador
                     })
                     .catch(() => {
                         // Si la red falla y no hay nada en caché, intenta servir la página offline.
                         console.log('[Service Worker] Red offline, intentando servir página offline.');
-                        return caches.match(OFFLINE_URL);
+                        // Manejo especial para peticiones de navegación (HTML)
+                        if (event.request.mode === 'navigate') {
+                            return caches.match(OFFLINE_URL);
+                        }
+                        // Para otros recursos (imágenes, scripts, etc.)
+                        return new Response(null, { status: 503, statusText: 'Service Unavailable' });
                     });
             })
     );
 });
+
 
 // Evento 'activate': Se dispara cuando el Service Worker se activa.
 // Aquí limpiamos las cachés antiguas para asegurar que solo la versión actual esté activa.

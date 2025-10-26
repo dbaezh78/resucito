@@ -152,7 +152,8 @@ const chordImageFilenames = [
 
 ];
 //const IMAGE_BASE_PATH = "/docs/ima/";
-const IMAGE_BASE_PATH = "https://docs.resucito.do/ima/";
+//const IMAGE_BASE_PATH = "https://docs.resucito.do/ima/";
+const IMAGE_BASE_PATH = "/src/ima/";
 
 // Variables para el scroll automático
 let scrollSpeed = 200; // Velocidad de desplazamiento en píxeles por segundo (valor por defecto)

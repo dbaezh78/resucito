@@ -19,7 +19,8 @@ document.getElementById('DavidLoBusca')?.addEventListener('input', async functio
     try {
         // La URL para fetch se mantiene con el parámetro para evitar problemas de caché del navegador,
         // el Service Worker se encarga de ignorarlo para la búsqueda en caché.
-        const response = await fetch(`/src/data/find.json?v=${Date.now()}`);
+        //const response = await fetch(`/src/data/find.json?v=${Date.now()}`);
+        const response = await fetch('/src/data/find.json');
 
         if (!response.ok) {
             throw new Error(`Error HTTP ${response.status}`);

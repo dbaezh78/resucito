@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Estás Sin Conexión! 🔌</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+        }
+        h1 {
+            color: #d9534f; /* Rojo de advertencia */
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .icon {
+            font-size: 4em;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚫</div> 
+        <h1>¡Parece que no tienes conexión a Internet!</h1>
+        <p>
+            No te preocupes. Algunos cantos y páginas que ya visitaste deberían seguir disponibles debido al cache que guarda el contenido.
+        </p>
+        <p>
+            **Consejo:** Intenta navegar de vuelta a la <a href="/" style="color: #007bff; text-decoration: none;">página de inicio</a> para acceder al contenido precacheado.
+        </p>
+    </div>
+</body>
+</html>
