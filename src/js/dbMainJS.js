@@ -7,9 +7,7 @@ let deferredPrompt;
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        // Registra el Service Worker. La ruta debe ser relativa a la raíz del dominio.
-        // Se mantiene la ruta /cantos/sworker.js según tu confirmación de que el archivo está allí.
-        navigator.serviceWorker.register('sworker.js')
+        navigator.serviceWorker.register('/sworker.js')
             .then((registration) => {
                 console.log('Service Worker registrado con éxito. Alcance:', registration.scope);
             })
