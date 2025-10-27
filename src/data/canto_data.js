@@ -1592,7 +1592,7 @@ const allCantosData = [
         tt: "Ave María II (1984)",
         title: "Ave María II",
         subtitle: "Lc 1,28ss - 1984 ",
-        category: ["PreCatecumenado","Cuaresma","Salmodias","Visperas","Antiguo Testamento"],
+        category: ["PreCatecumenado","Cuaresma","Salmodias","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",

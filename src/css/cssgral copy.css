@@ -92,7 +92,6 @@ body::-webkit-scrollbar {
 display: none;}
 
 /* background-color: white; REMOVIDO: Ahora se controla por las clases cat- */
-@media(min-width: 344px){body {padding: 0px;}}
 @media(min-width: 384px){body {padding: 0px;}}
 @media(min-width: 768px){body {padding: 0px;}}
 
@@ -103,13 +102,6 @@ display: none;}
     text-align: center;
 }
 
-        @media(min-width: 344px){
-            .container {
-                padding: 0px 3px 20px 3px;
-                text-align: center;
-                width: 98%;     /* normalizando posicion del contenido: no quitar*/
-            }
-        }
         @media(min-width: 384px){
             .container {
                 padding: 0px 3px 20px 3px;
@@ -627,8 +619,6 @@ display: none;}
     .chord-list { grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); }
 }
 
-
-/*
 @media (min-width: 384px) and (max-width: 583px) {
     .letra { font-size: 16px; }
     .nota-posicionada { font-size: 14.4px; }
@@ -640,28 +630,6 @@ display: none;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .letra { font-size: 29.92px}
-    .nota-posicionada { font-size: 21.12px;  }
-}
-
-@media (min-width: 992px) {
-    .letra { font-size: 22.4px; }
-    .nota-posicionada { font-size: 17.6px; } 
-}
-*/
-/* Converted from 1.1em */
-
-@media (min-width: 344px) {
-    .letra { font-size: 16px; }
-    .nota-posicionada { font-size: 14.4px; }
-}
-
-@media (min-width: 384px) {
-    .letra { font-size: 16px; }
-    .nota-posicionada { font-size: 14.4px; }
-}
-
-@media (min-width: 768px) {
     .letra { font-size: 29.92px}
     .nota-posicionada { font-size: 21.12px;  }
 }
