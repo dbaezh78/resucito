@@ -12451,9 +12451,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: UN RETOÑO BROTA DEL TRONCO DE JESÉ
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔════════════════════════════════════════╗
 ║           UNA GRAN SEÑAL               ║
-╚════════════════════════════════════════════════════════╝  */
+╚════════════════════════════════════════╝  */
    {
         id: "unagransenal",
         tt: "Una Gran Señal",
@@ -12541,13 +12541,20 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "al resto de sus hijos, (Fa,,35)", sC: ""},
             { line: "los que guardan los mandamientos de Dios, ", sC: ""},
             { line: "y mantienen el testimonio de Jesús., (Mi,,317)", sC: ""},
-            { line: "LA LA LA, LA LA, LA LA... ", sC: "ta as"},
+       //     { line: "LA LA LA, LA LA, LA LA... ", sC: "ta as"},
+
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "LA LA LAI, LA LAI, LA LA (La,m,20)", sC: "ta as", lines: [
+            { line: "LA LA LAI, LA LAI, LA LA, (Sol,,219)", sC: "as"},
+            { line: "LA LA LAI, LA LAI, LA LA, (Fa,,215)", sC: "as"},
+            { line: "LA LA LAI, LA LAI, LA LA, (Mi,,215)", sC: "as"},]},
+
 ]}, // ULTIMA LINEA DEL CANTO: UNA GRAN SEÑAL
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔═══════════════════════════════════════╗
 ║           URÍ, URÍ, URÁ               ║
-╚════════════════════════════════════════════════════════╝  */
+╚═══════════════════════════════════════╝  */
    {
         id: "uriuriura",
         tt: "Urí, Urí, Urá",
