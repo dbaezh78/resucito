@@ -21501,7 +21501,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         id: "belencampanasdebelen",
         tt: "Belén, Campanas De Belén,",
         title: "Belén, Campanas De Belén,",
-        subtitle: "Isaías 11,1-11",
+        subtitle: "Villancico",
         category: ["Precatecumenado","Adviento","Navidad","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
