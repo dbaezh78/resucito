@@ -248,4 +248,6 @@ const songs = [
 
         //SALMODIAS
         {id:239,title: "Salmo 96", subtitle: "Salmo 96", category: "Liturgia", moments: [""], url: "/src/index.html?canto=salmo96", targetBlank: true, content: "Salmo 96 El Señor reina, la tierra goza, salmo96, Salmo96, Salmo 96." },
+
+        {id:240,title: "Campanas sobre campanas", subtitle: "Villancicos", category: "Navidad", moments: ["Navidad","Entrada","Nuevo Testamento"], url: "/src/index.html?canto=belencampanasdebelen", content: "Campanas sobre campanas: Villancicos: Campana sobre campana y sobre campana una, asómate a la ventana, verás el Niño en la cuna, Belén  , campanas de Belén, que los  Ángeles tocan qué nueva nos traéis. Recogido tu rebaño a dónde  vas pastorcillo? Voy a llevar al portal requesón, manteca y vino. Belén  , campanas de Belén, que los  Ángeles tocan qué nueva nos traéis. Campana sobre campana, y sobre campana dos, asómate a esa ventana, porque está naciendo Dios. Belén  , campanas de Belén, que los  Ángeles tocan qué nueva nos traéis. Caminaba a medianoche, donde camin ais pastor me llevo al Niño que nace, como a Dios y corazón. Belén  , campanas de Belén, que los  Ángeles tocan qué nueva nos traéis."},
     ];
