@@ -19403,6 +19403,76 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: NO ESTÁ AQUÍ, RESUCITÓ
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           Belén, campanas de Belén,               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "belencampanasdebelen",
+        tt: "Belén, Campanas De Belén,",
+        title: "Belén, Campanas De Belén,",
+        subtitle: "Isaías 11,1-11",
+        category: ["Precatecumenado","Adviento","Navidad","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "162",
+        notes: "",
+        mant: "Si",
+        audioSrc: "/audio/belencampanasdebelen.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=tuqueeresfiel",
+        sig: "/resucito/src/index.html?canto=unagransenal",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Campana sobre campana,, (Re,,22)(La,7,250)", sC: ""},
+            { line: "y sobre campana una,, (Re,,22)", sC: ""},
+            { line: "asómate a la ventana,, (La,7,20)", sC: ""},
+            { line: "verás al Niño en la cuna., (Re,,22)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Belén, campanas de Belén,, (Sol,,14)(Re,,250)", sC: ""},
+            { line: "que los ángeles tocan, (Sol,,14)(Re,,250)", sC: ""},
+            { line: "¿qué nuevas me traéis?, (La,7,20)(Re,,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Recogido su rebaño,, (Re,,22)", sC: ""},
+            { line: "¿a dónde vas pastorcito?, (La,,20)(Mi,,250)(La,7,350)(Re,,450)", sC: ""},
+            { line: "Voy a llevar al portal, (La,,20)(Mi,,250)(La,7,350)(Re,,450)", sC: ""},
+            { line: "requesón, manteca y vino., ", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Belén, campanas de Belén,, ", sC: "ta as", lines: [
+            { line: "que los ángeles tocan, ", sC: "as"},
+            { line: "¿qué nuevas me traéis?, ", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+    ], lder: [
+            { line: "Campana sobre campana,, (Re,,22)(La,7,250)", sC: ""},
+            { line: "y sobre campana dos,, (Re,,22)", sC: ""},
+            { line: "asómate a la ventana,, (La,7,20)", sC: ""},
+            { line: "verás al Hijo de Dios., (Re,,22)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Belén, campanas de Belén,, ", sC: "ta as", lines: [
+            { line: "que los ángeles tocan, ", sC: "as"},
+            { line: "¿qué nuevas me traéis?, ", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Caminando a media noche,, (Re,,22)", sC: ""},
+            { line: "¿dónde caminas pastor?, (La,,20)(Mi,,250)(La,7,350)(Re,,450)", sC: ""},
+            { line: "Le llevo al Niño que nace,, ", sC: ""},
+            { line: "como a Dios mi corazón., (La,,20)(Mi,,250)(La,7,350)(Re,,450)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "Belén, campanas de Belén,, ", sC: "ta as", lines: [
+            { line: "que los ángeles tocan, ", sC: "as"},
+            { line: "¿qué nuevas me traéis?, ", sC: "as"},  ]},
+]}, // ULTIMA LINEA DEL CANTO: Belén, campanas de Belén,
+// SIGUIENTE CANTO DEBAJO
 
 
 
