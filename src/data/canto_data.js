@@ -21571,7 +21571,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         id: "lospecesenelrio",
         tt: "Los Peces En El Río",
         title: "Los Peces En El Río",
-        subtitle: "Apocalipsis 12",
+        subtitle: "Villancicos",
         category: ["Precatecumenado","Vírgen María","Adviento","Navidad","Pascua","Pentecostés","Final","Nuevo Testamento"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
@@ -21591,10 +21591,16 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/resucito/src/index.html?canto=uriuriura",
 // Contenido del lado izquierdo del canto,
     lizq: [
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "PERO MIRA COMO BEBEN LOS PECES EN EL RIO, (La,m,20)", sC: "ta as", lines: [
+            { line: "PERO MIRA COMO BEBEN POR VER AL DIOS NACIDO., (Mi,7,320)", sC: "as"},
+            { line: "BEBEN Y BEBEN Y VUELVEN A BEBER, ", sC: "as"},
+            { line: "LOS PECES EN EL RIO POR VER A DIOS NACER., (La,m,282)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "La Virgen está lavando y tendiendo en el romero,, (La,m,20)(Mi,7,412)", sC: ""},
             { line: "los pajarillos cantando y el romero floreciendo., (La,m,393)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
        triggerLine: "PERO MIRA COMO BEBEN LOS PECES EN EL RIO, (La,m,20)", sC: "ta as", lines: [
             { line: "PERO MIRA COMO BEBEN POR VER AL DIOS NACIDO., (Mi,7,320)", sC: "as"},
             { line: "BEBEN Y BEBEN Y VUELVEN A BEBER, ", sC: "as"},
