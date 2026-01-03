@@ -19476,6 +19476,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 
+
 ] //LLAVE DE CIERRE DEL CANTO
 
 

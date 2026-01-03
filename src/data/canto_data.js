@@ -21563,6 +21563,64 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "¿qué nuevas me traéis?, (Si,7,84)(Mi,,202)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: Belén, campanas de Belén,
 
+/*
+╔════════════════════════════════════════════════════════╗
+║           Los Peces en el Río               ║
+╚════════════════════════════════════════════════════════╝  */
+   {
+        id: "lospecesenelrio",
+        tt: "Los Peces En El Río",
+        title: "Los Peces En El Río",
+        subtitle: "Apocalipsis 12",
+        category: ["Precatecumenado","Vírgen María","Adviento","Navidad","Pascua","Pentecostés","Final","Nuevo Testamento"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "302",
+        notes: "",
+        mant: "No",
+        audioSrc: "/audio/lospecesenelrio.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/resucito/src/index.html?canto=unretonobrotadeltroncodejese",
+        sig: "/resucito/src/index.html?canto=uriuriura",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "La Virgen está lavando y tendiendo en el romero,, (La,m,20)(Mi,7,412)", sC: ""},
+            { line: "los pajarillos cantando y el romero floreciendo., (La,m,393)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
+       triggerLine: "PERO MIRA COMO BEBEN LOS PECES EN EL RIO, (La,m,20)", sC: "ta as", lines: [
+            { line: "PERO MIRA COMO BEBEN POR VER AL DIOS NACIDO., (Mi,7,320)", sC: "as"},
+            { line: "BEBEN Y BEBEN Y VUELVEN A BEBER, ", sC: "as"},
+            { line: "LOS PECES EN EL RIO POR VER A DIOS NACER., (La,m,282)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "La Virgen se está peinando entre cortina y cortina,, (La,m,20)(Mi,7,367)", sC: ""},
+            { line: "Sus cabellos son de oro, el peine de plata fina., (La,m,423)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "PERO MIRA COMO BEBEN LOS PECES EN EL RIO, (La,m,20)", sC: "ta as", lines: [
+            { line: "PERO MIRA COMO BEBEN POR VER AL DIOS NACIDO., (Mi,7,320)", sC: "as"},
+            { line: "BEBEN Y BEBEN Y VUELVEN A BEBER, ", sC: "as"},
+            { line: "LOS PECES EN EL RIO POR VER A DIOS NACER., (La,m,282)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "La Virgen va caminando por entre aquellas palmeras,, (La,mi,20)(Mi,7,461)", sC: ""},
+            { line: "el Niño mira en sus ojos, el color de la vereda., (La,m,412)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "PERO MIRA COMO BEBEN LOS PECES EN EL RIO, (La,m,20)", sC: "ta as", lines: [
+            { line: "PERO MIRA COMO BEBEN POR VER AL DIOS NACIDO., (Mi,7,320)", sC: "as"},
+            { line: "BEBEN Y BEBEN Y VUELVEN A BEBER, ", sC: "as"},
+            { line: "LOS PECES EN EL RIO POR VER A DIOS NACER., (La,m,282)", sC: "as"},  ]},
+    ], lder: [
+]}, // ULTIMA LINEA DEL CANTO: Los Peces en el Río
+// SIGUIENTE CANTO DEBAJO
+
 ] //LLAVE DE CIERRE DEL CANTO
 
 
