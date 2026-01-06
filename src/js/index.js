@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "catecumenado": "Catecumenado",
         "eleccion": "Elección",
         "liturgia": "Liturgia",
+        "Catolicos": "Catolicos",
     };
 
     // Mapeo de nombres normalizados a sus nombres canónicos para MOMENTOS
