@@ -318,7 +318,6 @@ const allCantosData = [
             { line: "sin penas ni tristezas, ciudad de eternidad., (Do,,162)(Re,,252)(Sol,,380)", sC: ""},
     ], lder: [
             
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Dura se hace nuestra marcha, (Do,,14)(Sol,,250)", sC: ""},
             { line: "andando entre las sombras, y en tanta oscuridad., (Re,,12)(Sol,,230)(Re,,296)(Sol,,452)", sC: ""},
 
