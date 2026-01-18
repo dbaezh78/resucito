@@ -7,6 +7,6 @@
             .r1::before {height: 150px;margin-left: 350px;margin-top: -8%;}
         }
         @media (min-width: 992px) {
-            .container {margin-left: 9%;}
+            .container {margin-left: 6%;}
             .r1::before {height: 117px;margin-left: 263px;margin-top: -9%;}
         }
