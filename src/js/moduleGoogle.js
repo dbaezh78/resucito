@@ -1,3 +1,4 @@
+//import { auth, db, loginConGoogle, guardarTonoEnNube } from './firebase-auth.js';
 import { auth, db, loginConGoogle, guardarTonoEnNube } from 'firebase-auth.js';
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
