@@ -530,38 +530,31 @@ const renderCanto = () => {
     console.log("Canto rendering complete.");
 };
 
-            // INICIO FUNCION MODAL
-            const openChordSelectionModal = (currentDisplayedNoteClicked) => {
-                clickedDisplayedNoteSemitone = noteToSemitone[currentDisplayedNoteClicked];
-                chordListContainer.innerHTML = '';
+const openChordSelectionModal = (currentDisplayedNoteClicked) => {
+    clickedDisplayedNoteSemitone = noteToSemitone[currentDisplayedNoteClicked];
+    chordListContainer.innerHTML = '';
 
-                cords.forEach(chord => {
-                    const chordItem = document.createElement('div');
-                    chordItem.classList.add('chord-item');
-                    chordItem.textContent = chord;
-                    chordItem.addEventListener('click', () => {
-                        const selectedChordFromModalSemitone = noteToSemitone[chord];
-                        const semitonesToShift = selectedChordFromModalSemitone - clickedDisplayedNoteSemitone;
+    cords.forEach(chord => {
+        const chordItem = document.createElement('div');
+        chordItem.classList.add('chord-item');
+        chordItem.textContent = chord;
+        chordItem.addEventListener('click', () => {
+            const selectedChordFromModalSemitone = noteToSemitone[chord];
+            const semitonesToShift = selectedChordFromModalSemitone - clickedDisplayedNoteSemitone;
 
-                        currentKeyOffset = (currentKeyOffset + semitonesToShift) % cords.length;
-                        if (currentKeyOffset < 0) currentKeyOffset += cords.length;
+            currentKeyOffset = (currentKeyOffset + semitonesToShift) % cords.length;
+            if (currentKeyOffset < 0) {
+                currentKeyOffset += cords.length;
+            }
 
-                        // GUARDAR TRANSPORTE (Independiente de la cejilla)
-                        const idCantoActual = new URLSearchParams(window.location.search).get('canto');
-                        if (window.firebaseAPI && idCantoActual) {
-                            window.firebaseAPI.guardarDato(idCantoActual, currentKeyOffset.toString(), 'transporte');
-                        }
-
-                        renderCanto(); 
-                        closeChordSelectionModal(); 
-                        updateShowAllAsambleaIcon(); 
-                    });
-                    chordListContainer.appendChild(chordItem);
-                });
-                chordSelectionModal.style.display = 'flex';
-            };  // FIN FUNCION MODAL
-
-
+            renderCanto(); // Esto ahora preservará el estado de los colapsables
+            closeChordSelectionModal(); // Cerrar la modal después de seleccionar
+            updateShowAllAsambleaIcon(); // Actualizar el icono del botón de asamblea
+        });
+        chordListContainer.appendChild(chordItem);
+    });
+    chordSelectionModal.style.display = 'flex';
+};
 
 // Función para cerrar la modal de selección de acordes
 const closeChordSelectionModal = () => {
@@ -1071,38 +1064,52 @@ if (nCanElement) {
         }
     }
 
-// --- LÓGICA DE PERSISTENCIA INDEPENDIENTE ---
+
+
+
+// --- BLOQUE CORREGIDO PARA CEJILLA Y ACORDES ---
     if (cejillaSelect) {
         const params = new URLSearchParams(window.location.search);
         const idCantoActual = params.get('canto');
-
-        window.actualizarTodoDesdeNube = async () => {
-            // 1. Recuperar Cejilla
-            const valCejilla = await window.firebaseAPI.obtenerDato(idCantoActual, 'cejilla');
-            if (valCejilla) cejillaSelect.value = valCejilla;
-
-            // 2. Recuperar Transporte (Acordes)
-            const valTransporte = await window.firebaseAPI.obtenerDato(idCantoActual, 'transporte');
-            currentKeyOffset = parseInt(valTransporte) || 0;
-            renderCanto();
-        };
-
-        // Carga rápida inicial (Local)
-        const localCejilla = localStorage.getItem(`cejilla_${idCantoActual}`);
-        const localTransporte = localStorage.getItem(`transporte_${idCantoActual}`);
         
-        cejillaSelect.value = localCejilla || (cantoSpecificData.cejilla || "0");
-        currentKeyOffset = parseInt(localTransporte) || 0;
+        // Hacer funciones globales inmediatamente para que moduleGoogle.js las vea
+        window.actualizarAcordes = actualizarAcordes;
+        window.renderCanto = renderCanto;
 
-        // Listener solo para la cejilla
+        // Carga inicial desde LocalStorage para respuesta instantánea
+        const tonoLocal = localStorage.getItem(`tono_${idCantoActual}`);
+        if (tonoLocal) {
+            cejillaSelect.value = tonoLocal;
+        } else {
+            cejillaSelect.value = (cantoSpecificData.cejilla || "0");
+        }
+
         cejillaSelect.addEventListener('change', () => {
+            const nuevoTono = cejillaSelect.value;
+            
+            // 1. Guardar en la nube (Firebase) y LocalStorage
             if (window.firebaseAPI && idCantoActual) {
-                window.firebaseAPI.guardarDato(idCantoActual, cejillaSelect.value, 'cejilla');
+                window.firebaseAPI.guardarTono(idCantoActual, nuevoTono);
+            }
+            
+            // --- EL TRUCO PARA EL MODAL Y LA LETRA ---
+            // 2. Recalculamos los tonos en el array matemático
+            if (typeof window.actualizarAcordes === 'function') {
+                window.actualizarAcordes(); 
+            }
+            // 3. Forzamos el redibujado visual de la letra
+            if (typeof window.renderCanto === 'function') {
+                window.renderCanto();
             }
         });
 
-        // Renderizado inicial
-        setTimeout(() => renderCanto(), 500);
+        // Primer renderizado tras carga para aplicar el tono guardado al abrir
+        setTimeout(() => { 
+            if (window.actualizarAcordes) {
+                window.actualizarAcordes();
+                if (window.renderCanto) window.renderCanto();
+            }
+        }, 500);
     }
     
     

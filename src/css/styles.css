@@ -467,8 +467,8 @@ border: 1px solid #52067d;
 }
 
 .dblink-install {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .dblink-install:hover{
@@ -797,11 +797,10 @@ border: 1px solid #52067d;
 }
 
 .installApp {
-    width: auto;
+    width: 6%;
     display:none; /* Oculto por defecto */
     background-color: #4CAF50; /* Color verde */
     color: white;
-    padding: auto;
     border: none;
     cursor: pointer;
     font-size: 16px;
