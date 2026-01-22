@@ -1,5 +1,5 @@
 // Define el nombre de la caché. Es buena práctica versionar tu caché.
-const CACHE_NAME = 'cantos-cache-v2.03'; // VERSION ACTUALIZADA: 26 Octubre 2025
+const CACHE_NAME = 'cantos-cache-v2.05'; // VERSION ACTUALIZADA: 26 Octubre 2025
 // Define la URL de la página offline. Asegúrate de que esta página exista en tu raíz.
 const OFFLINE_URL = 'src/offline.html';
 

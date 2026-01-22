@@ -27,25 +27,23 @@ window.firebaseAPI = {
     }
 };
 
-// 2. ESCUCHA DE SESIÓN CORREGIDA
 onAuthStateChanged(auth, async (user) => {
     const btnLogin = document.getElementById('btn-login');
     const urlParams = new URLSearchParams(window.location.search);
     const cantoId = urlParams.get('canto');
+    const cejillaSelect = document.getElementById('cejillaSelect');
 
     if (user) {
         if (btnLogin) {
-            // Se usa innerHTML y se concatena el nombre con el SVG
-            //btnLogin.innerHTML = `<span class="btn-text">Hola, ${user.displayName.split(' ')[0]}</span> ${googleIconSVG}`;
             btnLogin.innerHTML = `Hola, ${user.displayName.split(' ')[0]} (Salir)`;
             btnLogin.style.color = "darkgreen";
             btnLogin.dataset.action = 'logout';
         }
+        // Al iniciar sesión, notificamos a jsgral para que recupere los datos de la nube
         if (window.actualizarTodoDesdeNube) window.actualizarTodoDesdeNube();
     } else {
         if (btnLogin) {
-            // Se restaura el texto inicial y el icono
-            btnLogin.innerHTML = `<span class="btn-text">Entrar con Google</span> ${googleIconSVG}`;
+            btnLogin.innerHTML = "Entrar con Google";
             btnLogin.style.color = "black";
             btnLogin.dataset.action = 'login';
         }

@@ -69,7 +69,7 @@ input {
         .tResucito {margin-top: 0%;}
     }
     @media(min-width: 992px){
-        .tResucito {margin-top: 1%;}
+        .tResucito {margin-top: 2%;}
     }
 
 .introData{
@@ -155,7 +155,7 @@ h2 {
 .controls {
     background-color: #fff;
     padding: 0;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 30px;
     overflow: hidden;
@@ -563,7 +563,7 @@ border: 1px solid #52067d;
     margin-top: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-    background: #f9f9f9;
+    background: #87ceeb;
 }
 
 /* Muestra el mensaje cuando el checkbox está marcado */
@@ -806,4 +806,21 @@ border: 1px solid #52067d;
     font-size: 16px;
     display: block; /* Para que margin auto funcione */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.bgdif {
+    mix-blend-mode: difference;
+    background-color: white;
+    background-color: lightskyblue;
+    mix-blend-mode: difference;
+    background-color: skyblue;
+    background-color: inherit;
+    text-align: right;
+    padding: 8px;
+    border-radius: 20px 22px 0 0;
+}
+
+.cwh {      /* Color Blanco*/
+    color: red;
+    font-weight: bolder;
 }
