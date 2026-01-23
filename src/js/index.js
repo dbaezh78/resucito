@@ -189,3 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('tt').textContent = "Canto no encontrado";
     }
 });
+
+
+// Ejemplo de lógica de filtrado
+const cantosVisibles = todosLosCantos.filter(canto => canto.etapa <= usuario.etapaActual);

@@ -1,12 +1,13 @@
-// Define el nombre de la caché.
-const CACHE_NAME = 'cantos-cache-v2.08'; 
-// Define la URL de la página offline.
+// Define el nombre de la caché. Es buena práctica versionar tu caché.
+const CACHE_NAME = 'cantos-cache-v2.05'; // VERSION ACTUALIZADA: 26 Octubre 2025
+// Define la URL de la página offline. Asegúrate de que esta página exista en tu raíz.
 const OFFLINE_URL = 'src/offline.html';
 
+// Lista de URLs estáticas que se deben cachear durante la instalación del Service Worker.
 const urlsToCache = [
     // Páginas principales
-    './',
-    'index.html',
+    '/',
+    '/index.html',
     'src/offline.html', // Asegúrate de que esta página exista
     'src/ai.html',
     'src/ainterleccional.html',
@@ -409,6 +410,7 @@ const urlsToCache = [
     'src/css/pg/benditoeressenor.css',
     'src/css/pg/benditoseadios.css',
     'src/css/pg/benedictus.css',
+    'src/css/pg/bk',
     'src/css/pg/cantadadios.css',
     'src/css/pg/cantadalsenor.css',
     'src/css/pg/canticodelostresjovenes.css',
@@ -620,71 +622,96 @@ const urlsToCache = [
     'src/css/pg/yavienemidios.css',
     'src/css/pg/yoteamosenor.css',
     'src/css/pg/yovengoareunir.css',
+    'src/css/pg/z#.css',
     'src/css/pg/zaqueo.css'
+
 ];
 
-// 2. EVENTO INSTALL (Faltaba en tu código)
-// Este evento es el que descarga los archivos y los guarda en el móvil
+// Evento 'install': Se dispara cuando el Service Worker se registra por primera vez
+// o cuando se detecta una nueva versión (cambio en CACHE_NAME).
 self.addEventListener('install', (event) => {
+    console.log('[Service Worker] Instalando...');
+    // Espera hasta que la caché se haya abierto y todos los archivos hayan sido agregados.
     event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            console.log('[Service Worker] Iniciando descarga masiva...');
-            // Descargamos uno por uno para no saturar la conexión
-            return urlsToCache.reduce((promise, url) => {
-                return promise.then(() => {
-                    return cache.add(url).catch(err => console.warn(`Omitido: ${url}`));
-                });
-            }, Promise.resolve());
-        })
+        caches.open(CACHE_NAME)
+            .then((cache) => {
+                
+                console.log('[Service Worker] Precaching recursos estáticos.');
+                return cache.addAll(urlsToCache);
+            })
+            .then(() => self.skipWaiting()) // Forzar la activación inmediata
+            .catch((error) => {
+                console.error('[Service Worker] Error durante el precaching:', error);
+            })
     );
-    self.skipWaiting();
 });
 
-
-// 3. EVENTO FETCH
+// Evento 'fetch': Se dispara cada vez que el navegador solicita un recurso.
+// Aquí se implementa la estrategia de 'cache-first, then network' para assets estáticos
+// y una respuesta de 'página offline' para fallos de navegación.
 self.addEventListener('fetch', (event) => {
-    if (event.request.method !== 'GET') return;
+    // Solo interceptar peticiones GET.
+    if (event.request.method !== 'GET') {
+        return;
+    }
 
+    // Estrategia: Cache-First para todos los recursos
     event.respondWith(
-        caches.match(event.request).then((cachedResponse) => {
-            if (cachedResponse) {
-                return cachedResponse;
-            }
+        caches.match(event.request)
+            .then((cachedResponse) => {
+                // Si el recurso está en caché, lo servimos inmediatamente.
+                if (cachedResponse) {
+                    return cachedResponse;
+                }
 
-            return fetch(event.request).then((networkResponse) => {
-                // Cache dinámico: guarda lo que el usuario va visitando
-                if (networkResponse && networkResponse.status === 200 && event.request.url.startsWith(self.location.origin)) {
-                    const responseToCache = networkResponse.clone();
-                    caches.open(CACHE_NAME).then((cache) => {
-                        cache.put(event.request, responseToCache);
+                // Si no está en caché, vamos a la red.
+                return fetch(event.request)
+                    .then((networkResponse) => {
+                        // Opcional: Si la solicitud es exitosa, podemos agregarla a la caché en tiempo de ejecución
+                        // Pero para las URLs estáticas, el precaching ya debería cubrirlo.
+                        // Solo cachearemos las peticiones que no sean la página offline.
+                        if (event.request.url.startsWith(self.location.origin)) {
+                             const responseToCache = networkResponse.clone();
+                             caches.open(CACHE_NAME).then((cache) => {
+                                 cache.put(event.request, responseToCache);
+                             });
+                        }
+                        return networkResponse; // Devolver la respuesta de la red al navegador
+                    })
+                    .catch(() => {
+                        // Si la red falla y no hay nada en caché, intenta servir la página offline.
+                        console.log('[Service Worker] Red offline, intentando servir página offline.');
+                        // Manejo especial para peticiones de navegación (HTML)
+                        if (event.request.mode === 'navigate') {
+                            return caches.match(OFFLINE_URL);
+                        }
+                        // Para otros recursos (imágenes, scripts, etc.)
+                        return new Response(null, { status: 503, statusText: 'Service Unavailable' });
                     });
-                }
-                return networkResponse;
-            }).catch(() => {
-                // Si falla la red y es una página, mostrar offline.html
-                if (event.request.mode === 'navigate') {
-                    return caches.match(OFFLINE_URL);
-                }
-            });
-        })
+            })
     );
 });
 
-// 4. EVENTO ACTIVATE
+
+// Evento 'activate': Se dispara cuando el Service Worker se activa.
+// Aquí limpiamos las cachés antiguas para asegurar que solo la versión actual esté activa.
 self.addEventListener('activate', (event) => {
-    console.log('[Service Worker] Activando y limpiando caché vieja...');
-    const cacheWhitelist = [CACHE_NAME];
+    console.log('[Service Worker] Activando...');
+    const cacheWhitelist = [CACHE_NAME]; // Solo mantenemos la caché con el nombre actual.
 
     event.waitUntil(
         caches.keys().then((cacheNames) => {
             return Promise.all(
                 cacheNames.map((cacheName) => {
+                    // Si el nombre de la caché no está en la lista blanca, la eliminamos.
                     if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        console.log('[Service Worker] Eliminando caché antigua:', cacheName);
                         return caches.delete(cacheName);
                     }
                 })
             );
         })
     );
+    // Asegura que el Service Worker tome el control de las páginas existentes inmediatamente.
     return self.clients.claim();
 });

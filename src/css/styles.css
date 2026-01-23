@@ -439,6 +439,8 @@ border: 1px solid #52067d;
 .dblink-yt:hover{
     background-color: white;
     color: rgb(249, 12, 12);
+    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .dblink-fb{
@@ -449,21 +451,33 @@ border: 1px solid #52067d;
 .dblink-fb:hover{
     background-color: rgb(231, 234, 248);
     color: blue;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .dblink-ev {
     color: white;  
-    background-color: rgb(119, 18, 18);
+    background-color: rgb(20, 154, 249);
 }
 
 .dblink-ev:hover {
-    background-color: rgb(242, 236, 236);
-    color: rgb(119, 18, 18);
+    color: rgb(20, 154, 249);
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+
 }
 
 .dblink-laudes{
     background-color: #ffffcc;
     color: #0f0f02;
+}
+
+.dblink-laudes:hover{
+    background-color: #2196f3;
+    color: #ffffcc;
+    transition: all 0.3s ease;
+    transform: scale(1.1);    
 }
 
 .dblink-install {
@@ -476,9 +490,28 @@ border: 1px solid #52067d;
     color: black;
 }
 
-.dblink-laudes:hover{
-    background-color: #2196f3;
-    color: #ffffcc;
+.installApp {
+    background-color: rgb(32, 175, 218);
+    color: white;
+    display:inline !important;
+    width: fit-content;
+
+    /*
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    */
+}
+
+.installApp:hover {
+    background-color: #148def;
+    color: goldenrod;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
 .dblink-ac {
@@ -794,18 +827,6 @@ border: 1px solid #52067d;
         margin-left: 66%;
         margin-top: 1px;
     }
-}
-
-.installApp {
-    width: 6%;
-    display:none; /* Oculto por defecto */
-    background-color: #4CAF50; /* Color verde */
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    display: block; /* Para que margin auto funcione */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .bgdif {
