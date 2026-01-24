@@ -100,3 +100,64 @@
     .letra {
         font-size: x-large !important;
     }
+
+
+
+    /* css de listado de cantos*/
+
+    .contenedor-tabla {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tabla-gestion {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.tabla-gestion th, .tabla-gestion td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-gestion th {
+    background-color: #bc0009;
+    color: white;
+}
+
+.tu-dato {
+    font-weight: bold;
+    color: #4CAF50; /* Verde para identificar que son datos del cantor */
+}
+
+.fecha-uso {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #007bff;
+}
+
+
+/*  Tabla del listado de los cantos*/
+
+.tabla-gestion {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+}
+.tabla-gestion th {
+    background: #bc0009;
+    color: white;
+    padding: 10px;
+}
+.tabla-gestion td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.tu-dato {
+    color: #4CAF50;
+    font-weight: bold;
+}

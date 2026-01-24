@@ -12,76 +12,85 @@
 </head>
 <body>
 
-    
     <div class="perfil-container">
-    <div class="navigation-header">
-        <a href="index.html" class="material-symbols-outlined icon-button">home</a>
+        <div class="navigation-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <a href="index.html" class="material-symbols-outlined icon-button">home</a>
+            
+            <div id="auth-status-container" style="display: flex; align-items: center; gap: 15px;">
+                <b class="google-btn-container" id="btn-login" data-action="login">
+                    <span class="btn-text letra">Entrar con Google</span>
+                </b>
+                <a onclick="history.back()" class="material-symbols-outlined" style="cursor: pointer; border: none; background: none;">replay</a>
+                <a id="btn-logout-perfil" class="material-symbols-outlined icon-button logout-btn">logout</a>
+            </div>
+        </div>
 
-        <div style="text-align: right; margin-bottom: 20px;">
-        <b class="google-btn-container" id="btn-login" data-action="login">
-            <span class="btn-text letra">Entrar con Google</span>
-        </b>
-    </div>
+        <h2 style="font-family: 'Neocat'; text-align: center; color: #bc0009; margin-top: 10px;">Configuración de Perfil</h2>
+        
+        <div class="form-group">
+            <label>País:</label>
+            <input type="text" id="userCountry" list="paisesList" placeholder="Escribe tu país...">
+            <datalist id="paisesList">
+                </datalist>
+        </div>
 
-        <a onclick="history.back()" class="material-symbols-outlined" style="cursor: pointer; border: none; background: none;">replay</a>
-        <a id="btn-logout-perfil" class="material-symbols-outlined icon-button logout-btn">logout</a>
-    </div>
+        <div class="form-group">
+            <label>Parroquia:</label>
+            <input type="text" id="userParroquia" placeholder="Nombre de tu Parroquia">
+        </div>
 
+        <div class="form-group">
+            <label>Comunidad:</label>
+            <select id="userComunidad">
+                </select>
+        </div>
 
-    <h2 style="font-family: 'Neocat'; text-align: center; color: #bc0009;">Configuración de Perfil</h2>
-    
-    
-
-    <div class="form-group">
-        <label>País:</label>
-        <select id="userCountry">
-            <option value="Rep. Dominicana" selected>Rep. Dominicana</option>
-            <option value="España">España</option>
-            <option value="México">México</option>
-            <option value="Otros">Otros</option>
-        </select>
-    </div>
-
-    <div class="form-group">
-        <label>Parroquia:</label>
-        <input type="text" id="userParroquia" placeholder="Nombre de la Parroquia">
-    </div>
-
-    <div class="form-group">
-        <label>Comunidad:</label>
-        <select id="userComunidad">
+        <div class="form-group">
+            <label>Etapa del Camino:</label>
+            <select id="userStep">
+                <option value="0">Pre-Catecumenado</option>
+                <option value="1">1er Escrutinio</option>
+                <option value="2">Convivencia del Shema</option>
+                <option value="3">2do Escrutinio</option>
+                <option value="4">Iniciación a la Oración</option>
+                <option value="5">Traditio Symboli</option>
+                <option value="6">Reditio Symboli</option>
+                <option value="7">Padre Nuestro</option>
+                <option value="8">Elección</option>
+                <option value="9">Renovación Promesas Bautismales</option>
             </select>
+        </div>
+
+        <div id="adminSection" class="admin-lock" style="display:none;">
+            <label style="color: red; font-weight: bold;">Código de Administrador:</label>
+            <input type="password" id="adminCode" placeholder="Ingresa código para cambiar etapa">
+        </div>
+
+        <button class="btn-save" id="btnSave">Guardar Cambios</button>
     </div>
 
-    <div class="form-group">
-        <label>Etapa del Camino:</label>
-        <select id="userStep">
-            <option value="0">Pre-Catecumenado</option>
-            <option value="1">1er Escrutinio</option>
-            <option value="2">Convivencia del Shema</option>
-            <option value="3">2do Escrutinio</option>
-            <option value="4">Iniciación a la Oración</option>
-            <option value="5">Traditio Symboli</option>
-            <option value="6">Reditio Symboli</option>
-            <option value="7">Padre Nuestro</option>
-            <option value="8">Elección</option>
-        </select>
+    <div class="perfil-container" style="max-width: 950px; margin-top: 25px;">
+        <h2 style="font-family: 'Neocat'; color: #bc0009; margin-bottom: 5px;">Gestión de Contenido</h2>
+        <p style="font-size: 13px; color: #555; margin-bottom: 20px;">
+            Administra tus cantos offline, revisa fechas de uso y sincroniza acordes con la nube.
+        </p>
+
+        <div id="lista-cantos-gestion" class="contenedor-tabla">
+            <p style="text-align: center; padding: 20px;">Cargando base de datos de cantos...</p>
+        </div>
     </div>
 
-    <div id="adminSection" class="admin-lock" style="display:none;">
-        <label style="color: red;">Código de Administrador:</label>
-        <input type="password" id="adminCode" placeholder="Ingresa el código">
+    <div id="modalCalendario" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="closeCalendario" style="cursor:pointer; float:right; font-size: 28px;">&times;</span>
+            <h3 id="nombreCantoCalendario" style="color: #bc0009;"></h3>
+            <div id="calendarioDinamico">
+                </div>
+        </div>
     </div>
 
-    <button class="btn-save" id="btnSave">Guardar Cambios</button>
-    
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="index.html" style="color: #666; font-size: 14px;">← Volver al Inicio</a>
-    </div>
-</div>
-
-<script type="module" src="src/js/moduleGoogle.js"></script>
-<script type="module" src="src/js/perfil.js"></script>
+    <script type="module" src="src/js/moduleGoogle.js"></script>
+    <script type="module" src="src/js/perfil.js"></script>
 
 </body>
 </html>

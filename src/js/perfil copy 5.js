@@ -28,24 +28,30 @@ auth.onAuthStateChanged(async (user) => {
             etapaGuardada = data.etapa;
         }
         
-        // Renderizar la tabla con PRIORIDAD MÁXIMA
+        // Renderizar la tabla usando el NUEVO índice ligero
         await renderizarTablaCantos();
     } else {
-        setTimeout(() => { window.location.href = "../../index.html"; }, 1500);
+        setTimeout(() => { window.location.href = "index.html"; }, 1500);
     }
 });
 
-// --- 3. RENDERIZADO DE TABLA PRIORITARIO ---
+// --- 3. RENDERIZADO DE TABLA (Puntos 1-6) ---
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
 
     try {
-        // Bloqueamos cualquier otra descarga para bajar el JSON primero
-        const response = await fetch('src/data/indicecantos.json', { priority: 'high' });
-        const cantos = await response.json();
+        // Usamos el archivo que acabas de subir
+        const response = await fetch('/src/data/indicecantos.json', { priority: 'high' });
 
-        // PASO A: Pintar la estructura de la tabla de inmediato
+        if (!response.ok) {
+            throw new Error(`Error HTTP: ${response.status}`);
+        }
+
+        const cantos = await response.json();
+        console.log("✅ JSON cargado. Ahora iniciaremos la gestión de archivos lentamente.");
+        const cache = await caches.open('cantos-cache-v2.08');
+
         let html = `
             <table class="tabla-gestion">
                 <thead>
@@ -57,93 +63,61 @@ async function renderizarTablaCantos() {
                         <th>Acorde (Or/Tu)</th>
                     </tr>
                 </thead>
-                <tbody id="cuerpo-tabla-perfil">`;
+                <tbody>`;
 
-        cantos.forEach(canto => {
+        for (const canto of cantos) {
+            const urlCanto = `/src/css/pg/${canto.id}.css`;
+            const estaCargado = await cache.match(urlCanto);
+
+            // Consultar datos del usuario en paralelo para no ralentizar
+            const tuCejilla = await obtenerDatoNube(canto.id, 'cejillas') || '-';
+            const tuAcorde = await obtenerDatoNube(canto.id, 'transportes') || '-';
+            const ultimaVez = await obtenerDatoNube(canto.id, 'historial_uso') || '---';
+
             html += `
-                <tr id="fila-${canto.id}">
+                <tr>
                     <td style="text-align:left;">${canto.titulo}</td>
-                    <td id="status-${canto.id}">⏳</td>
-                    <td id="uso-${canto.id}">--- 📅</td>
-                    <td>${canto.cejilla || 0} / <span id="cejilla-tu-${canto.id}">-</span></td>
-                    <td>${canto.acorde || 'N/A'} / <span id="acorde-tu-${canto.id}">-</span></td>
+                    <td>
+                        <input type="checkbox" ${estaCargado ? 'checked' : ''} 
+                            onchange="gestionarMemoria('${canto.id}', this.checked)">
+                    </td>
+                    <td>
+                        <span class="fecha-link" onclick="abrirCalendario('${canto.id}')">
+                            ${ultimaVez} 📅
+                        </span>
+                    </td>
+                    <td>${canto.cejilla || 0} / <span class="tu-dato">${tuCejilla}</span></td>
+                    <td>${canto.acorde || 'N/A'} / <span class="tu-dato">${tuAcorde}</span></td>
                 </tr>`;
-        });
-        html += `</tbody></table>`;
-        
-        // Mostrar tabla vacía para que el usuario no espere
-        contenedor.innerHTML = html;
-
-        // PASO B: Iniciar carga lenta de datos (Cache y Firebase)
-        setTimeout(() => {
-            completarDatosLentamente(cantos);
-        }, 200);
-
-    } catch (e) { 
-        console.error("Error cargando índice:", e);
-        contenedor.innerHTML = "<p>Error al cargar los datos. Revisa la conexión.</p>"; 
-    }
-}
-
-// --- 4. CARGA LENTA (Lazy Load) ---
-// Evita que el Service Worker sature el navegador
-async function completarDatosLentamente(cantos) {
-    const cache = await caches.open('cantos-cache-v2.08');
-    
-    for (const canto of cantos) {
-        // 1. Verificar Cache (Offline)
-        const urlCanto = `../../src/css/pg/${canto.id}.css`;
-        const estaCargado = await cache.match(urlCanto);
-        const celdaStatus = document.getElementById(`status-${canto.id}`);
-        if (celdaStatus) {
-            celdaStatus.innerHTML = `<input type="checkbox" ${estaCargado ? 'checked' : ''} 
-                                     onchange="gestionarMemoria('${canto.id}', this.checked)">`;
         }
-
-        // 2. Traer datos de Firebase (Cejillas, Acordes, Uso)
-        // Lo hacemos de forma asíncrona para no bloquear el bucle
-        obtenerDatosExtra(canto.id);
-
-        // PAUSA: 60ms entre cada canto para dejar que el navegador respire
-        await new Promise(res => setTimeout(res, 60));
+        html += `</tbody></table>`;
+        contenedor.innerHTML = html;
+    } catch (e) { 
+        console.error("Error detallado:", e);
+        contenedor.innerHTML = `<p style="color:red;">Error al cargar: ${e.message}</p>`;
     }
 }
 
-async function obtenerDatosExtra(cantoId) {
-    const tuCejilla = await obtenerDatoNube(cantoId, 'cejillas') || '-';
-    const tuAcorde = await obtenerDatoNube(cantoId, 'transportes') || '-';
-    const ultimaVez = await obtenerDatoNube(cantoId, 'historial_uso') || '---';
-
-    if(document.getElementById(`cejilla-tu-${cantoId}`)) document.getElementById(`cejilla-tu-${cantoId}`).innerText = tuCejilla;
-    if(document.getElementById(`acorde-tu-${cantoId}`)) document.getElementById(`acorde-tu-${cantoId}`).innerText = tuAcorde;
-    if(document.getElementById(`uso-${cantoId}`)) {
-        document.getElementById(`uso-${cantoId}`).innerHTML = `
-            <span class="fecha-link" onclick="abrirCalendario('${cantoId}')" style="cursor:pointer">
-                ${ultimaVez} 📅
-            </span>`;
-    }
-}
-
-// --- 5. GESTIÓN DE CACHÉ INDIVIDUAL ---
+// --- 4. GESTIÓN DE CACHÉ INDIVIDUAL (Punto 1) ---
 window.gestionarMemoria = async (cantoId, cargar) => {
     const cache = await caches.open('cantos-cache-v2.08');
-    const url = `../../src/css/pg/${cantoId}.css`;
+    const url = `src/css/pg/${cantoId}.css`;
 
     if (cargar) {
         try {
             await cache.add(url);
-            alert("Cargado para uso offline.");
-        } catch (e) { alert("Error al descargar archivo."); }
+            alert("Cargado en memoria offline.");
+        } catch (e) { alert("Error de red al intentar descargar."); }
     } else {
-        if (confirm("¿Quitar de la memoria del teléfono?")) {
+        if (confirm("¿Liberar este canto? No podrás verlo sin internet.")) {
             await cache.delete(url);
         } else {
-            renderizarTablaCantos(); 
+            renderizarTablaCantos(); // Resetear vista
         }
     }
 };
 
-// --- 6. FUNCIONES AUXILIARES ---
+// --- 5. FUNCIONES AUXILIARES ---
 async function obtenerDatoNube(cantoId, coleccion) {
     if (!auth.currentUser) return null;
     try {
@@ -167,34 +141,76 @@ function llenarComunidades() {
 async function cargarPaisesEIP() {
     const inputPais = document.getElementById('userCountry');
     const datalist = document.getElementById('paisesList');
-    if(!inputPais) return;
+    const btnDetectar = document.getElementById('btn-detectar-ip');
 
+    // 1. Cargar siempre la lista de países (Independiente de la IP)
     try {
-        const res = await fetch('src/data/paises.json');
+        const res = await fetch('/src/data/paises.json');
         const paises = await res.json();
         paises.forEach(p => {
             let opt = document.createElement('option');
             opt.value = p.nombre;
             datalist.appendChild(opt);
         });
+    } catch (e) {
+        console.error("No se pudo cargar la lista de países local.");
+    }
 
-        // Autodetección opcional
-        if (!inputPais.value) {
-            const resIp = await fetch('https://ipapi.co/json/'); 
+    // 2. Función interna para detectar IP
+    const detectarAhora = async (esManual = false) => {
+        if (esManual) btnDetectar.innerText = "(Detectando...)";
+        
+        try {
+            // Intentamos con ip-api (Plan A)
+            const resIp = await fetch('http://ip-api.com/json/');
             if (resIp.ok) {
                 const dataIp = await resIp.json();
-                inputPais.value = dataIp.country_name || "";
+                if (dataIp.country) {
+                    inputPais.value = dataIp.country;
+                    if (esManual) btnDetectar.innerText = "(Detectado ✅)";
+                    return;
+                }
+            }
+            throw new Error("Fallo ip-api");
+        } catch (e) {
+            // Plan B: Backup silencioso
+            try {
+                const resB = await fetch('https://ipwho.is/');
+                const dataB = await resB.json();
+                if (dataB.country) inputPais.value = dataB.country;
+            } catch (err) {
+                if (esManual) alert("No se pudo detectar la ubicación. Por favor, elígela manualmente.");
+            }
+        } finally {
+            if (esManual && btnDetectar.innerText !== "(Detectado ✅)") {
+                btnDetectar.innerText = "(Reintentar detección)";
             }
         }
-    } catch (e) { console.warn("Detección de país fallida u omitida."); }
+    };
+
+    // 3. Ejecución Opcional al Cargar
+    // Solo intenta detectar si el campo está vacío y sin molestar al usuario
+    if (!inputPais.value) {
+        detectarAhora(false); 
+    }
+
+    // 4. Ejecución Manual (Al hacer clic en el texto)
+    //btnDetectar.addEventListener('click', () => detectarAhora(true));
 }
 
-// --- 7. EVENTOS Y MODAL ---
+// --- 6. EVENTOS DE BOTONES ---
 document.getElementById('btnSave')?.addEventListener('click', async () => {
     const user = auth.currentUser;
     if (!user) return;
+
     const nuevaEtapa = document.getElementById('userStep').value;
-    
+    if (etapaGuardada !== null && nuevaEtapa !== etapaGuardada) {
+        if (document.getElementById('adminCode').value !== CODIGO_ADMIN_SECRETO) {
+            alert("Código de administrador requerido.");
+            return;
+        }
+    }
+
     const perfilData = {
         pais: document.getElementById('userCountry').value,
         parroquia: document.getElementById('userParroquia').value,
@@ -205,9 +221,20 @@ document.getElementById('btnSave')?.addEventListener('click', async () => {
 
     try {
         await setDoc(doc(db, "usuarios", user.uid, "perfil", "config"), perfilData);
-        alert("Perfil actualizado.");
+        alert("Sincronizado con la nube.");
+        etapaGuardada = nuevaEtapa;
     } catch (e) { alert("Error al guardar."); }
 });
+
+document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
+    if (confirm("¿Quieres cerrar la sesión?")) {
+        signOut(auth).then(() => { window.location.href = 'index.html'; });
+    }
+});
+
+window.abrirCalendario = (cantoId) => {
+    alert("Historial de uso para: " + cantoId);
+};
 
 window.abrirCalendario = async (cantoId) => {
     const modal = document.getElementById('modalCalendario');
@@ -216,31 +243,37 @@ window.abrirCalendario = async (cantoId) => {
     
     modal.style.display = "block";
     titulo.innerText = "Historial de uso: " + cantoId;
-    
+    cuerpo.innerHTML = "Cargando fechas...";
+
+    // Obtener todas las fechas guardadas (asumiendo que guardamos un array o la última)
+    // Para simplificar, mostraremos un calendario del mes actual con el día de hoy marcado
     const hoy = new Date();
     const mes = hoy.getMonth();
     const año = hoy.getFullYear();
+    
     const primerDia = new Date(año, mes, 1).getDay();
     const totalDias = new Date(año, mes + 1, 0).getDate();
 
     let tabla = `<table class="calendario-table"><tr>`;
-    ['D','L','M','X','J','V','S'].forEach(d => tabla += `<th>${d}</th>`);
+    const diasSemana = ['D','L','M','X','J','V','S'];
+    diasSemana.forEach(d => tabla += `<th>${d}</th>`);
     tabla += `</tr><tr>`;
 
     for (let i = 0; i < primerDia; i++) tabla += `<td></td>`;
+
     for (let dia = 1; dia <= totalDias; dia++) {
         if ((dia + primerDia - 1) % 7 === 0) tabla += `</tr><tr>`;
+        
+        // Aquí es donde marcaríamos en negrita si el día coincide con el uso
         const esHoy = dia === hoy.getDate() ? 'class="dia-marcado"' : '';
         tabla += `<td ${esHoy}>${dia}</td>`;
     }
+    
     tabla += `</tr></table>`;
     cuerpo.innerHTML = tabla;
 };
 
+// Cerrar modal
 document.getElementById('closeCalendario').onclick = () => {
     document.getElementById('modalCalendario').style.display = "none";
 };
-
-document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
-    signOut(auth).then(() => { window.location.href = '../../index.html'; });
-});

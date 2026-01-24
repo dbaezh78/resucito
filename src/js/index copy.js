@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // La ruta del archivo CSS ahora es src/css/pg/
         const cssPath = `/src/css/pg/${cantoId}.css`;
         const link = document.createElement('link');
-        link.id = `css-${cantoId}`; // Agregar un ID único
         link.rel = 'stylesheet';
         link.type = 'text/css';
         link.href = cssPath;
@@ -113,12 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Canto found:", currentCanto.title);
         // Llamada a la nueva función para cargar el CSS específico del canto
         loadDynamicCSS(cantoIdToLoad);
-
-    if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
-        const hoy = new Date().toLocaleDateString();
-        window.firebaseAPI.guardarDato(cantoIdToLoad, hoy, 'historial_uso');
-    }
-
         
         // Procesar las categorías para incluir sus URLs
         const processedCategories = currentCanto.category.map(catName => {
@@ -214,18 +207,4 @@ function abrirCanto(cantoId) {
 
     // Finalmente rediriges al canto
     window.location.href = `src/html/pantalla.html?canto=${cantoId}`;
-}
-
-// MODIFICACIÓN AL FINAL DEL ARCHIVO
-window.abrirCanto = function(cantoId) {
-    // REGISTRO DE USO PARA EL CALENDARIO
-    if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
-        const hoy = new Date().toLocaleDateString(); 
-        window.firebaseAPI.guardarDato(cantoId, hoy, 'historial_uso');
-        console.log(`📅 Uso registrado: ${cantoId} el ${hoy}`);
-    }
-
-    // Redirección
-    window.location.href = `src/html/pantalla.html?canto=${cantoId}`;
-
 }
