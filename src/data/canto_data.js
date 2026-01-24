@@ -18981,7 +18981,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=salmodiasparalaudes",
+        ant: "/src/index.html?canto=salmodiasparalaudes2",
         sig: "/src/index.html?canto=santomelodiahebraica",
 // Contenido del lado izquierdo del canto,
     lizq: [
