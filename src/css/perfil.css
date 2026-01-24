@@ -107,7 +107,7 @@
 
     .contenedor-tabla {
     overflow-x: auto;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 .tabla-gestion {

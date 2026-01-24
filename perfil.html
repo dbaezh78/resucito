@@ -71,9 +71,18 @@
 
     <div class="perfil-container" style="max-width: 950px; margin-top: 25px;">
         <h2 style="font-family: 'Neocat'; color: #bc0009; margin-bottom: 5px;">Gestión de Contenido</h2>
-        <p style="font-size: 13px; color: #555; margin-bottom: 20px;">
-            Administra tus cantos offline, revisa fechas de uso y sincroniza acordes con la nube.
-        </p>
+
+        
+        <div class="acciones-globales">
+    <button id="btn-descargar-todo" class="btn-primario">
+        📥 Descargar todo para uso Offline
+    </button>
+    <i>Administra tus cantos offline, revisa fechas de uso y sincroniza acordes con la nube.</i>
+    <div id="progreso-descarga" style="display:none; margin-top:10px;">
+        <progress id="barra-progreso" value="0" max="100" style="width:100%;"></progress>
+        <small id="texto-progreso">Preparando descarga...</small>
+    </div>
+</div>
 
         <div id="lista-cantos-gestion" class="contenedor-tabla">
             <p style="text-align: center; padding: 20px;">Cargando base de datos de cantos...</p>

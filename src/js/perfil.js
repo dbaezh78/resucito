@@ -244,3 +244,72 @@ document.getElementById('closeCalendario').onclick = () => {
 document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
     signOut(auth).then(() => { window.location.href = '../../index.html'; });
 });
+
+
+// --- 8. FUNCIÓN DE CARGA MASIVA (Al final del archivo) ---
+
+document.getElementById('btn-descargar-todo')?.addEventListener('click', async () => {
+    const btn = document.getElementById('btn-descargar-todo');
+    const divProgreso = document.getElementById('progreso-descarga');
+    const barra = document.getElementById('barra-progreso');
+    const texto = document.getElementById('texto-progreso');
+
+    if (!confirm("Esto descargará todos los cantos que falten para usarlos sin internet. ¿Continuar?")) return;
+
+    try {
+        btn.disabled = true;
+        btn.innerText = "⏳ Procesando...";
+        divProgreso.style.display = "block";
+        
+        // Reutilizamos la ruta que ya sabemos que funciona
+        const response = await fetch('src/data/indicecantos.json');
+        const cantos = await response.json();
+        const cache = await caches.open('cantos-cache-v2.08');
+        
+        let total = cantos.length;
+        let procesados = 0;
+        let nuevos = 0;
+        let errores = 0;
+
+        for (const canto of cantos) {
+            const url = `src/css/pg/${canto.id}.css`;
+            const existe = await cache.match(url);
+            
+            if (!existe) {
+                try {
+                    const res = await fetch(url);
+                    if(res.ok) {
+                        await cache.put(url, res);
+                        nuevos++;
+                    } else {
+                        errores++;
+                    }
+                } catch (err) {
+                    errores++;
+                }
+            }
+
+            // Actualización de la barra
+            procesados++;
+            let porcentaje = Math.round((procesados / total) * 100);
+            if(barra) barra.value = porcentaje;
+            if(texto) texto.innerText = `Progreso: ${porcentaje}% (${procesados}/${total})`;
+
+            // Pausa mínima para no colapsar el navegador
+            await new Promise(res => setTimeout(res, 30));
+        }
+
+        alert(`Proceso terminado.\n✅ Nuevos descargados: ${nuevos}\n⚠️ No encontrados: ${errores}\n📦 Total en memoria: ${total - errores}`);
+        
+        // Refrescamos la tabla para que se vean los checks marcados
+        renderizarTablaCantos();
+
+    } catch (e) {
+        console.error(e);
+        alert("Error en la descarga masiva.");
+    } finally {
+        btn.disabled = false;
+        btn.innerText = "📥 Descargar todo para uso Offline";
+        divProgreso.style.display = "none";
+    }
+});
