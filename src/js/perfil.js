@@ -6,310 +6,268 @@ import { signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth
 let etapaGuardada = null;
 const CODIGO_ADMIN_SECRETO = "RE77"; 
 
-// --- 1. INICIALIZACIÓN ---
+// 1. INICIALIZACIÓN: Llena comunidades y países al cargar el DOM.
 document.addEventListener('DOMContentLoaded', async () => {
     llenarComunidades();
     await cargarPaisesEIP();
 });
 
-// --- 2. CONTROL DE SESIÓN ---
+// 2. OBSERVADOR AUTH: Carga perfil y lanza la tabla si hay usuario.
 auth.onAuthStateChanged(async (user) => {
     if (user) {
-        // Cargar configuración de perfil
         const docRef = doc(db, "usuarios", user.uid, "perfil", "config");
-        const docSnap = await getDoc(docRef);
-        
-        if (docSnap.exists()) {
-            const data = docSnap.data();
-            document.getElementById('userCountry').value = data.pais || "";
-            document.getElementById('userParroquia').value = data.parroquia || "";
-            document.getElementById('userComunidad').value = data.comunidad || 1;
-            document.getElementById('userStep').value = data.etapa || 0;
-            etapaGuardada = data.etapa;
-        }
-        
-        // Renderizar la tabla con PRIORIDAD MÁXIMA
+        try {
+            const docSnap = await getDoc(docRef);
+            if (docSnap.exists()) {
+                const data = docSnap.data();
+                document.getElementById('userCountry').value = data.pais || "";
+                document.getElementById('userParroquia').value = data.parroquia || "";
+                document.getElementById('userComunidad').value = data.comunidad || 1;
+                document.getElementById('userStep').value = data.etapa || 0;
+            }
+        } catch (e) { console.warn("Modo offline: Error de cuota en perfil."); }
         await renderizarTablaCantos();
     } else {
         setTimeout(() => { window.location.href = "../../index.html"; }, 1500);
     }
 });
 
-// --- 3. RENDERIZADO DE TABLA PRIORITARIO ---
+// 3. RENDERIZADO TABLA: Crea el HTML base desde el JSON.
+// 3. RENDERIZADO TABLA: Crea el HTML base y prepara el espacio para el estado
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
-
     try {
-        // Bloqueamos cualquier otra descarga para bajar el JSON primero
-        const response = await fetch('src/data/indicecantos.json', { priority: 'high' });
+        const response = await fetch('src/data/indicecantos.json');
         const cantos = await response.json();
-
-        // PASO A: Pintar la estructura de la tabla de inmediato
-        let html = `
-            <table class="tabla-gestion">
-                <thead>
-                    <tr>
-                        <th>Canto</th>
-                        <th>Offline</th>
-                        <th>Uso</th>
-                        <th>Cejilla (Or/Tu)</th>
-                        <th>Acorde (Or/Tu)</th>
-                    </tr>
-                </thead>
-                <tbody id="cuerpo-tabla-perfil">`;
-
+        let html = `<table class="tabla-gestion">
+            <thead>
+                <tr>
+                    <th>Canto</th>
+                    <th>Estado Offline</th> <th>Uso</th>
+                    <th>Cejilla (Or/Tu)</th>
+                    <th>Acorde (Or/Tu)</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla-perfil">`;
+        
         cantos.forEach(canto => {
-            html += `
-                <tr id="fila-${canto.id}">
-                    <td style="text-align:left;">${canto.titulo}</td>
-                    <td id="status-${canto.id}">⏳</td>
-                    <td id="uso-${canto.id}">--- 📅</td>
-                    <td>${canto.cejilla || 0} / <span id="cejilla-tu-${canto.id}">-</span></td>
-                    <td>${canto.acorde || 'N/A'} / <span id="acorde-tu-${canto.id}">-</span></td>
-                </tr>`;
+            html += `<tr id="fila-${canto.id}">
+                <td style="text-align:left;">${canto.titulo}</td>
+                <td id="status-${canto.id}">⏳</td> <td id="uso-${canto.id}">--- 📅</td>
+                <td>${canto.cejilla || 0} / <b id="cejilla-tu-${canto.id}" style="color: #bc0009;">-</b></td>
+                <td>${canto.acorde || 'N/A'} / <b id="acorde-tu-${canto.id}" style="color: #bc0009;">-</b></td>
+            </tr>`;
         });
         html += `</tbody></table>`;
-        
-        // Mostrar tabla vacía para que el usuario no espere
         contenedor.innerHTML = html;
-
-        // PASO B: Iniciar carga lenta de datos (Cache y Firebase)
-        setTimeout(() => {
-            completarDatosLentamente(cantos);
-        }, 200);
-
-    } catch (e) { 
-        console.error("Error cargando índice:", e);
-        contenedor.innerHTML = "<p>Error al cargar los datos. Revisa la conexión.</p>"; 
-    }
+        completarDatosLentamente(cantos);
+    } catch (e) { console.error("Error en tabla:", e); }
 }
 
-// --- 4. CARGA LENTA (Lazy Load) ---
-// Evita que el Service Worker sature el navegador
+// 4. CARGA PROGRESIVA: Determina si el canto es Online u Offline
 async function completarDatosLentamente(cantos) {
+    const user = auth.currentUser;
+    if (!user) return;
     const cache = await caches.open('cantos-cache-v2.08');
     
     for (const canto of cantos) {
-        // 1. Verificar Cache (Offline)
-        const urlCanto = `../../src/css/pg/${canto.id}.css`;
+        // --- PARTE OFFLINE ---
+        const urlCanto = `src/css/pg/${canto.id}.css`;
         const estaCargado = await cache.match(urlCanto);
         const celdaStatus = document.getElementById(`status-${canto.id}`);
+        
         if (celdaStatus) {
-            celdaStatus.innerHTML = `<input type="checkbox" ${estaCargado ? 'checked' : ''} 
-                                     onchange="gestionarMemoria('${canto.id}', this.checked)">`;
+            // Si está cargado ponemos un check verde, si no, un icono de nube/web
+            const iconoEstado = estaCargado 
+                ? '<span title="Disponible Offline" style="color: #28a745;">✅ Offline</span>' 
+                : '<span title="Solo Online" style="color: #007bff;">🌐 Online</span>';
+            
+            celdaStatus.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">
+                    ${iconoEstado}
+                    <input type="checkbox" ${estaCargado ? 'checked' : ''} 
+                           onchange="window.gestionarMemoria('${canto.id}', this.checked)" 
+                           title="Descargar para usar sin internet">
+                </div>`;
         }
 
-        // 2. Traer datos de Firebase (Cejillas, Acordes, Uso)
-        // Lo hacemos de forma asíncrona para no bloquear el bucle
-        obtenerDatosExtra(canto.id);
-
-        // PAUSA: 60ms entre cada canto para dejar que el navegador respire
-        await new Promise(res => setTimeout(res, 60));
-    }
-}
-
-async function obtenerDatosExtra(cantoId) {
-    const tuCejilla = await obtenerDatoNube(cantoId, 'cejillas') || '-';
-    const tuAcorde = await obtenerDatoNube(cantoId, 'transportes') || '-';
-    const ultimaVez = await obtenerDatoNube(cantoId, 'historial_uso') || '---';
-
-    if(document.getElementById(`cejilla-tu-${cantoId}`)) document.getElementById(`cejilla-tu-${cantoId}`).innerText = tuCejilla;
-    if(document.getElementById(`acorde-tu-${cantoId}`)) document.getElementById(`acorde-tu-${cantoId}`).innerText = tuAcorde;
-    if(document.getElementById(`uso-${cantoId}`)) {
-        document.getElementById(`uso-${cantoId}`).innerHTML = `
-            <span class="fecha-link" onclick="abrirCalendario('${cantoId}')" style="cursor:pointer">
-                ${ultimaVez} 📅
-            </span>`;
-    }
-}
-
-// --- 5. GESTIÓN DE CACHÉ INDIVIDUAL ---
-window.gestionarMemoria = async (cantoId, cargar) => {
-    const cache = await caches.open('cantos-cache-v2.08');
-    const url = `../../src/css/pg/${cantoId}.css`;
-
-    if (cargar) {
-        try {
-            await cache.add(url);
-            alert("Cargado para uso offline.");
-        } catch (e) { alert("Error al descargar archivo."); }
-    } else {
-        if (confirm("¿Quitar de la memoria del teléfono?")) {
-            await cache.delete(url);
+        // --- PARTE DATOS (LocalStorage / Firebase) ---
+        const localData = localStorage.getItem(`data-${canto.id}`);
+        if (localData) {
+            inyectarDatosEnTabla(canto.id, JSON.parse(localData), true);
         } else {
-            renderizarTablaCantos(); 
+            obtenerDatosExtraFirebase(canto.id, user.uid);
         }
+        
+        await new Promise(res => setTimeout(res, 120));
+    }
+}
+
+// 5. INYECTAR DATOS: Pinta en pantalla y añade el PUNTO VERDE si es local.
+function inyectarDatosEnTabla(cantoId, data, esLocal = false) {
+    const elCej = document.getElementById(`cejilla-tu-${cantoId}`);
+    const elAco = document.getElementById(`acorde-tu-${cantoId}`);
+    const elUso = document.getElementById(`uso-${cantoId}`);
+    if (elCej && data.cejilla) elCej.innerText = data.cejilla;
+    if (elAco && data.acorde) {
+        elAco.innerHTML = `${data.acorde} ${esLocal ? '<span style="color: #28a745; font-size: 0.8em; margin-left: 4px;">●</span>' : ''}`;
+    }
+    if (elUso && data.uso) {
+        elUso.innerHTML = `<span class="fecha-link" onclick="window.abrirCalendario('${cantoId}')">${data.uso} 📅</span>`;
+    }
+}
+
+// 6. OBTENER FIREBASE: Baja de la nube y guarda en LocalStorage.
+async function obtenerDatosExtraFirebase(cantoId, uid) {
+    try {
+        const [docCej, docAco, docUso] = await Promise.all([
+            getDoc(doc(db, "usuarios", uid, "cejillas", cantoId)),
+            getDoc(doc(db, "usuarios", uid, "transportes", cantoId)),
+            getDoc(doc(db, "usuarios", uid, "historial_uso", cantoId))
+        ]);
+        const datos = {};
+        if (docCej.exists()) datos.cejilla = docCej.data().valor;
+        if (docAco.exists()) datos.acorde = docAco.data().valor;
+        if (docUso.exists()) datos.uso = docUso.data().valor || docUso.data().fecha;
+        if (Object.keys(datos).length > 0) {
+            inyectarDatosEnTabla(cantoId, datos, false);
+            localStorage.setItem(`data-${cantoId}`, JSON.stringify(datos));
+        }
+    } catch (e) { /* Error de cuota */ }
+}
+
+// 7. TOGGLE SECTION: Expande/Colapsa secciones (Global).
+window.toggleSection = function(contentId, wrapperId) {
+    const content = document.getElementById(contentId);
+    const wrapper = document.getElementById(wrapperId);
+    if (!content || !wrapper) return;
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        wrapper.classList.remove("collapsed");
+    } else {
+        content.style.display = "none";
+        wrapper.classList.add("collapsed");
     }
 };
 
-// --- 6. FUNCIONES AUXILIARES ---
-async function obtenerDatoNube(cantoId, coleccion) {
-    if (!auth.currentUser) return null;
-    try {
-        const docRef = doc(db, "usuarios", auth.currentUser.uid, coleccion, cantoId);
-        const snap = await getDoc(docRef);
-        return snap.exists() ? snap.data().valor : null;
-    } catch (e) { return null; }
-}
+// 8. GESTIONAR MEMORIA: Descarga o borra CSS (Global).
+window.gestionarMemoria = async (cantoId, cargar) => {
+    const cache = await caches.open('cantos-cache-v2.08');
+    const url = `src/css/pg/${cantoId}.css`;
+    if (cargar) {
+        try {
+            const res = await fetch(url);
+            if(res.ok) await cache.put(url, res);
+        } catch (e) { alert("Error al descargar."); }
+    } else {
+        if (confirm("¿Borrar offline?")) await cache.delete(url);
+    }
+};
 
+// 9. ABRIR CALENDARIO: Modal de historial (Global).
+window.abrirCalendario = function(cantoId) {
+    const modal = document.getElementById('modalCalendario');
+    if (modal) modal.style.display = "block";
+};
+
+// 10. LLENAR COMUNIDADES: Opciones del select.
 function llenarComunidades() {
     const select = document.getElementById('userComunidad');
     if (!select) return;
     for (let i = 1; i <= 73; i++) {
         let opt = document.createElement('option');
-        opt.value = i;
-        opt.innerHTML = `Comunidad ${i}`;
+        opt.value = i; opt.innerText = `Comunidad ${i}`;
         select.appendChild(opt);
     }
 }
 
+// 11. CARGAR PAISES: Desde JSON local.
 async function cargarPaisesEIP() {
-    const inputPais = document.getElementById('userCountry');
     const datalist = document.getElementById('paisesList');
-    if(!inputPais) return;
-
+    if(!datalist) return;
     try {
         const res = await fetch('src/data/paises.json');
         const paises = await res.json();
         paises.forEach(p => {
             let opt = document.createElement('option');
-            opt.value = p.nombre;
-            datalist.appendChild(opt);
+            opt.value = p.nombre; datalist.appendChild(opt);
         });
-
-        // Autodetección opcional
-        if (!inputPais.value) {
-            const resIp = await fetch('https://ipapi.co/json/'); 
-            if (resIp.ok) {
-                const dataIp = await resIp.json();
-                inputPais.value = dataIp.country_name || "";
-            }
-        }
-    } catch (e) { console.warn("Detección de país fallida u omitida."); }
+    } catch (e) {}
 }
 
-// --- 7. EVENTOS Y MODAL ---
+// 12. GUARDAR PERFIL: Envía a Firebase.
 document.getElementById('btnSave')?.addEventListener('click', async () => {
     const user = auth.currentUser;
     if (!user) return;
-    const nuevaEtapa = document.getElementById('userStep').value;
-    
     const perfilData = {
         pais: document.getElementById('userCountry').value,
         parroquia: document.getElementById('userParroquia').value,
         comunidad: document.getElementById('userComunidad').value,
-        etapa: nuevaEtapa,
+        etapa: document.getElementById('userStep').value,
         ultimaActualizacion: new Date()
     };
-
     try {
         await setDoc(doc(db, "usuarios", user.uid, "perfil", "config"), perfilData);
         alert("Perfil actualizado.");
     } catch (e) { alert("Error al guardar."); }
 });
 
-window.abrirCalendario = async (cantoId) => {
-    const modal = document.getElementById('modalCalendario');
-    const titulo = document.getElementById('nombreCantoCalendario');
-    const cuerpo = document.getElementById('calendarioDinamico');
-    
-    modal.style.display = "block";
-    titulo.innerText = "Historial de uso: " + cantoId;
-    
-    const hoy = new Date();
-    const mes = hoy.getMonth();
-    const año = hoy.getFullYear();
-    const primerDia = new Date(año, mes, 1).getDay();
-    const totalDias = new Date(año, mes + 1, 0).getDate();
-
-    let tabla = `<table class="calendario-table"><tr>`;
-    ['D','L','M','X','J','V','S'].forEach(d => tabla += `<th>${d}</th>`);
-    tabla += `</tr><tr>`;
-
-    for (let i = 0; i < primerDia; i++) tabla += `<td></td>`;
-    for (let dia = 1; dia <= totalDias; dia++) {
-        if ((dia + primerDia - 1) % 7 === 0) tabla += `</tr><tr>`;
-        const esHoy = dia === hoy.getDate() ? 'class="dia-marcado"' : '';
-        tabla += `<td ${esHoy}>${dia}</td>`;
-    }
-    tabla += `</tr></table>`;
-    cuerpo.innerHTML = tabla;
-};
-
-document.getElementById('closeCalendario').onclick = () => {
-    document.getElementById('modalCalendario').style.display = "none";
-};
-
+// 13. LOGOUT: Cierra sesión.
 document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
     signOut(auth).then(() => { window.location.href = '../../index.html'; });
 });
 
-
-// --- 8. FUNCIÓN DE CARGA MASIVA (Al final del archivo) ---
-
+// 14. DESCARGA MASIVA: Botón descargar todo.
 document.getElementById('btn-descargar-todo')?.addEventListener('click', async () => {
-    const btn = document.getElementById('btn-descargar-todo');
     const divProgreso = document.getElementById('progreso-descarga');
     const barra = document.getElementById('barra-progreso');
     const texto = document.getElementById('texto-progreso');
-
-    if (!confirm("Esto descargará todos los cantos que falten para usarlos sin internet. ¿Continuar?")) return;
-
+    if (!confirm("¿Descargar todos los cantos?")) return;
     try {
-        btn.disabled = true;
-        btn.innerText = "⏳ Procesando...";
         divProgreso.style.display = "block";
-        
-        // Reutilizamos la ruta que ya sabemos que funciona
         const response = await fetch('src/data/indicecantos.json');
         const cantos = await response.json();
         const cache = await caches.open('cantos-cache-v2.08');
-        
-        let total = cantos.length;
-        let procesados = 0;
-        let nuevos = 0;
-        let errores = 0;
-
-        for (const canto of cantos) {
-            const url = `src/css/pg/${canto.id}.css`;
-            const existe = await cache.match(url);
-            
-            if (!existe) {
-                try {
-                    const res = await fetch(url);
-                    if(res.ok) {
-                        await cache.put(url, res);
-                        nuevos++;
-                    } else {
-                        errores++;
-                    }
-                } catch (err) {
-                    errores++;
-                }
-            }
-
-            // Actualización de la barra
-            procesados++;
-            let porcentaje = Math.round((procesados / total) * 100);
-            if(barra) barra.value = porcentaje;
-            if(texto) texto.innerText = `Progreso: ${porcentaje}% (${procesados}/${total})`;
-
-            // Pausa mínima para no colapsar el navegador
-            await new Promise(res => setTimeout(res, 30));
+        for (let i = 0; i < cantos.length; i++) {
+            const url = `src/css/pg/${cantos[i].id}.css`;
+            const res = await fetch(url);
+            if(res.ok) await cache.put(url, res);
+            let porc = Math.round(((i + 1) / cantos.length) * 100);
+            barra.value = porc; texto.innerText = `Sincronizando: ${porc}%`;
+            await new Promise(r => setTimeout(r, 20));
         }
-
-        alert(`Proceso terminado.\n✅ Nuevos descargados: ${nuevos}\n⚠️ No encontrados: ${errores}\n📦 Total en memoria: ${total - errores}`);
-        
-        // Refrescamos la tabla para que se vean los checks marcados
-        renderizarTablaCantos();
-
-    } catch (e) {
-        console.error(e);
-        alert("Error en la descarga masiva.");
-    } finally {
-        btn.disabled = false;
-        btn.innerText = "📥 Descargar todo para uso Offline";
-        divProgreso.style.display = "none";
-    }
+        alert("Sincronización terminada.");
+    } catch (e) { alert("Error masivo."); }
+    finally { divProgreso.style.display = "none"; }
 });
+
+// 15. EXPORTAR RESPALDO: Descarga el LocalStorage a JSON (Global).
+window.exportarDatosLocales = function() {
+    let datosExportar = {};
+    for (let i = 0; i < localStorage.length; i++) {
+        let clave = localStorage.key(i);
+        if (clave.startsWith('data-')) {
+            datosExportar[clave] = JSON.parse(localStorage.getItem(clave));
+        }
+    }
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(datosExportar, null, 2));
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", "mis_cantos_respaldo.json");
+    document.body.appendChild(downloadAnchorNode);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+};
+
+
+
+
+
+/*
+Imports y Globables.
+Auth y Arranque (Funciones 1 y 2).
+Lógica de Tabla y Datos (Funciones 3, 4, 5 y 6).
+Funciones Globales (Window) (Funciones 7, 8, 9 y 15) -> Estas son las que activan los botones.
+Auxiliares y Eventos de Botón (Funciones 10 a 14). 
+*/
