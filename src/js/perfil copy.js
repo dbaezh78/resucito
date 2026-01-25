@@ -32,7 +32,7 @@ auth.onAuthStateChanged(async (user) => {
     }
 });
 
-// 3. RENDERIZADO DE TABLA: Incluye buscador con botón de limpieza y enlaces
+// 3. RENDERIZADO DE TABLA: Ahora incluye enlaces directos y buscador
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
@@ -40,16 +40,12 @@ async function renderizarTablaCantos() {
         const response = await fetch('src/data/indicecantos.json');
         const cantos = await response.json();
         
-        // Contenedor del buscador con posición relativa para la 'X'
+        // Añadimos el input de búsqueda arriba de la tabla
         let html = `
-            <div class="buscador-container" style="margin-bottom: 15px; position: relative; width: 98%;">
+            <div class="buscador-container" style="margin-bottom: 15px;">
                 <input type="text" id="inputBuscador" placeholder="🔍 Buscar por título..." 
                        onkeyup="window.filtrarCantos()" 
-                       style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; padding-right: 35px; box-sizing: border-box;">
-                <span id="btnLimpiarBuscador" onclick="window.limpiarBuscador()" 
-                      style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #999; display: none; font-weight: bold; font-size: 1.2em;">
-                    ×
-                </span>
+                       style="width: 98%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
             </div>
             <table class="tabla-gestion" id="tablaCantos">
                 <thead>
@@ -64,11 +60,14 @@ async function renderizarTablaCantos() {
                 <tbody id="cuerpo-tabla-perfil">`;
 
         cantos.forEach(canto => {
+            // src/index.html?canto=alavictimapascual
+            // Creamos el enlace: /index.html?canto=id_del_canto
             const enlaceCanto = `/src/index.html?canto=${canto.id}`;
+            
             html += `<tr id="fila-${canto.id}" class="fila-canto">
                 <td style="text-align:left;">
                     <a href="${enlaceCanto}" style="text-decoration:none; color: inherit; font-weight: bold;">
-                        ${canto.titulo}
+                        ${canto.titulo} <span style="font-size: 0.8em; color: #007bff;"></span>
                     </a>
                 </td>
                 <td id="status-${canto.id}">⌛</td>
@@ -231,89 +230,33 @@ document.getElementById('btnSave')?.addEventListener('click', async () => {
     } catch (e) { alert("Error al guardar."); }
 });
 
-// 13. LOGOUT CON CONFIRMACIÓN
+// 13. LOGOUT: Cierra sesión.
 document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
-    const confirmar = confirm("¿Deseas Cerrar sesión?\n\nAl cerrar sesión, serás llevado a la página de inicio.");
-    if (confirmar) {
-        signOut(auth).then(() => { 
-            window.location.href = '../../index.html'; 
-        }).catch((error) => {
-            console.error("Error al cerrar sesión:", error);
-        });
-    }
+    signOut(auth).then(() => { window.location.href = '../../index.html'; });
 });
 
-// 14. DESCARGA MASIVA: Botón descargar todo con reporte final
+// 14. DESCARGA MASIVA: Botón descargar todo.
 document.getElementById('btn-descargar-todo')?.addEventListener('click', async () => {
     const divProgreso = document.getElementById('progreso-descarga');
     const barra = document.getElementById('barra-progreso');
     const texto = document.getElementById('texto-progreso');
-    
-    if (!confirm("¿Descargar todos los cantos para uso offline?")) return;
-
-    // Contadores para el resumen
-    let total = 0;
-    let descargados = 0;
-    let yaExistian = 0;
-    let errores = 0;
-
+    if (!confirm("¿Descargar todos los cantos?")) return;
     try {
         divProgreso.style.display = "block";
         const response = await fetch('src/data/indicecantos.json');
         const cantos = await response.json();
-        total = cantos.length;
-        
         const cache = await caches.open('cantos-cache-v2.08');
-
-        for (let i = 0; i < total; i++) {
+        for (let i = 0; i < cantos.length; i++) {
             const url = `src/css/pg/${cantos[i].id}.css`;
-            
-            // Verificamos si ya existe en el caché
-            const coincidencia = await cache.match(url);
-            
-            if (coincidencia) {
-                yaExistian++;
-            } else {
-                try {
-                    const res = await fetch(url);
-                    if (res.ok) {
-                        await cache.put(url, res);
-                        descargados++;
-                    } else {
-                        errores++;
-                    }
-                } catch (e) {
-                    errores++;
-                }
-            }
-
-            // Actualización visual de la barra
-            let porc = Math.round(((i + 1) / total) * 100);
-            barra.value = porc; 
-            texto.innerText = `Procesando: ${i + 1} de ${total} (${porc}%)`;
-            
-            // Pequeña pausa para no bloquear el navegador
+            const res = await fetch(url);
+            if(res.ok) await cache.put(url, res);
+            let porc = Math.round(((i + 1) / cantos.length) * 100);
+            barra.value = porc; texto.innerText = `Sincronizando: ${porc}%`;
             await new Promise(r => setTimeout(r, 20));
         }
-
-        // REPORTE FINAL
-        alert(
-            `✅ Sincronización Terminada:\n\n` +
-            `• Cantos procesados: ${total}\n` +
-            `• Cantos en dispositivo: ${yaExistian}\n` +
-            `• Cantos Descargados: ${descargados}\n` +
-            `• Cantos sin descargar: ${errores}`
-        );
-
-        // Refrescamos la tabla para que los colores ✅ y ❌ se actualicen
-        renderizarTablaCantos();
-
-    } catch (e) { 
-        alert("Error crítico durante la descarga masiva."); 
-        console.error(e);
-    } finally { 
-        divProgreso.style.display = "none"; 
-    }
+        alert("Sincronización terminada.");
+    } catch (e) { alert("Error masivo."); }
+    finally { divProgreso.style.display = "none"; }
 });
 
 // 15. EXPORTAR RESPALDO: Descarga el LocalStorage a JSON (Global).
@@ -334,37 +277,27 @@ window.exportarDatosLocales = function() {
     downloadAnchorNode.remove();
 };
 
-// 16. FILTRADO DE CANTOS: Muestra/oculta la 'X' y filtra filas
+// 16. FILTRADO DE CANTOS: Busca en tiempo real mientras escribes
 window.filtrarCantos = function() {
     const input = document.getElementById('inputBuscador');
-    const btnLimpiar = document.getElementById('btnLimpiarBuscador');
     const filtro = input.value.toUpperCase();
     const tabla = document.getElementById('tablaCantos');
     const filas = tabla.getElementsByClassName('fila-canto');
 
-    // Mostramos la 'X' solo si hay texto
-    if (btnLimpiar) {
-        btnLimpiar.style.display = input.value.length > 0 ? "block" : "none";
-    }
-
     for (let i = 0; i < filas.length; i++) {
+        // Obtenemos la primera celda (la del título)
         const celdaTitulo = filas[i].getElementsByTagName('td')[0];
         if (celdaTitulo) {
             const texto = celdaTitulo.textContent || celdaTitulo.innerText;
-            filas[i].style.display = texto.toUpperCase().indexOf(filtro) > -1 ? "" : "none";
+            if (texto.toUpperCase().indexOf(filtro) > -1) {
+                filas[i].style.display = ""; // Muestra la fila
+            } else {
+                filas[i].style.display = "none"; // Oculta la fila
+            }
         }
     }
 };
 
-// 17. LIMPIAR BUSCADOR: Borra el texto y restaura la tabla
-window.limpiarBuscador = function() {
-    const input = document.getElementById('inputBuscador');
-    if (input) {
-        input.value = "";
-        window.filtrarCantos(); // Ejecutamos el filtro vacío para mostrar todo
-        input.focus(); // Devolvemos el foco al buscador
-    }
-};
 
 
 /*

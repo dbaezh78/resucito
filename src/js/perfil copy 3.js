@@ -231,16 +231,9 @@ document.getElementById('btnSave')?.addEventListener('click', async () => {
     } catch (e) { alert("Error al guardar."); }
 });
 
-// 13. LOGOUT CON CONFIRMACIÓN
+// 13. LOGOUT: Cierra sesión.
 document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
-    const confirmar = confirm("¿Deseas Cerrar sesión?\n\nAl cerrar sesión, serás llevado a la página de inicio.");
-    if (confirmar) {
-        signOut(auth).then(() => { 
-            window.location.href = '../../index.html'; 
-        }).catch((error) => {
-            console.error("Error al cerrar sesión:", error);
-        });
-    }
+    signOut(auth).then(() => { window.location.href = '../../index.html'; });
 });
 
 // 14. DESCARGA MASIVA: Botón descargar todo con reporte final
