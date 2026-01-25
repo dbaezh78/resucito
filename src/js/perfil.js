@@ -334,15 +334,23 @@ window.exportarDatosLocales = function() {
     downloadAnchorNode.remove();
 };
 
-// 16. FILTRADO DE CANTOS: Muestra/oculta la 'X' y filtra filas
+// 16. FILTRADO INTELIGENTE: Ignora acentos, espacios, comas y símbolos
 window.filtrarCantos = function() {
     const input = document.getElementById('inputBuscador');
     const btnLimpiar = document.getElementById('btnLimpiarBuscador');
-    const filtro = input.value.toUpperCase();
-    const tabla = document.getElementById('tablaCantos');
-    const filas = tabla.getElementsByClassName('fila-canto');
+    
+    // Función auxiliar para "limpiar" el texto al máximo
+    const superNormalizar = (texto) => {
+        return texto.toLowerCase()
+                    .normalize("NFD") // Descompone caracteres con acentos
+                    .replace(/[\u0300-\u036f]/g, "") // Quita los acentos
+                    .replace(/[^a-z0-9]/g, ""); // Quita espacios, comas, puntos y símbolos
+    };
 
-    // Mostramos la 'X' solo si hay texto
+    const filtro = superNormalizar(input.value);
+    const filas = document.getElementsByClassName('fila-canto');
+
+    // Mostrar/ocultar la 'X' de limpieza
     if (btnLimpiar) {
         btnLimpiar.style.display = input.value.length > 0 ? "block" : "none";
     }
@@ -350,19 +358,26 @@ window.filtrarCantos = function() {
     for (let i = 0; i < filas.length; i++) {
         const celdaTitulo = filas[i].getElementsByTagName('td')[0];
         if (celdaTitulo) {
-            const texto = celdaTitulo.textContent || celdaTitulo.innerText;
-            filas[i].style.display = texto.toUpperCase().indexOf(filtro) > -1 ? "" : "none";
+            // Normalizamos el título del canto de la misma forma
+            const textoCanto = superNormalizar(celdaTitulo.textContent || celdaTitulo.innerText);
+            
+            // Si el título normalizado contiene el filtro normalizado, mostramos la fila
+            if (textoCanto.indexOf(filtro) > -1) {
+                filas[i].style.display = "";
+            } else {
+                filas[i].style.display = "none";
+            }
         }
     }
 };
 
-// 17. LIMPIAR BUSCADOR: Borra el texto y restaura la tabla
+// 17. LIMPIAR BUSCADOR: Borra el texto y restablece la tabla
 window.limpiarBuscador = function() {
     const input = document.getElementById('inputBuscador');
     if (input) {
         input.value = "";
-        window.filtrarCantos(); // Ejecutamos el filtro vacío para mostrar todo
-        input.focus(); // Devolvemos el foco al buscador
+        window.filtrarCantos(); // Al filtrar vacío, mostrará todo de nuevo
+        input.focus();
     }
 };
 
