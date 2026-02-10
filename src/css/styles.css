@@ -2,7 +2,8 @@ body {
     
     /* font-family: 'Arial', sans-serif; */
     font-family: apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto', sans-serif;
-    padding: 2px 5px 2px 0px;
+    padding: 2px 0px 2px 0px;
+    /*padding: 2px 5px 2px 0px;*/
 
     background-color: #87ceeb24;
 /*  line-height: 1.6;

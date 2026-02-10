@@ -107,7 +107,6 @@
 
     .contenedor-tabla {
     overflow-x: auto;
-    justify-items: center;
     /*margin-top: 20px;*/
 }
 
@@ -121,11 +120,6 @@
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-
-    @media (min-width: 384px) {padding: 2px;}
-    @media (min-width: 768px) {padding: 10px;}
-    @media (min-width: 992px) {padding: 10px;}
-
 }
 
 .tabla-gestion th {
@@ -157,19 +151,11 @@
     background: #bc0009;
     color: white;
     padding: 10px;
-
-    @media (min-width: 384px) {padding: 2px;}
-    @media (min-width: 768px) {padding: 10px;}
-    @media (min-width: 992px) {padding: 10px;}
 }
-
 .tabla-gestion td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-
-        @media (min-width: 384px) {padding: 4px;}
-
 }
 .tu-dato {
     color: #4CAF50;
@@ -245,7 +231,7 @@
         }
 
         .section-header {
-            padding: 4px 2px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -272,9 +258,9 @@
             color: #bc0009;
         }
 
-        @media (min-width: 384px) {.section-content {padding: 1px;}}
-        @media (min-width: 768px) {.section-content {padding: 20px;}}
-        @media (min-width: 992px) {.section-content {padding: 20px;}}
+        .section-content {
+            padding: 20px;
+        }
 
         /* Ajuste de contenedores internos */
         .perfil-container {
@@ -300,26 +286,13 @@
             display: flex;
             gap: 10px;
             align-items: center;
-
-            @media (min-width: 384px) {
-            display: flex;
-            gap: 0px;
-            flex-wrap: wrap;
-            font-size: smaller;
-            justify-content: flex-end;
-    }
         }
 
 .tabla-gestion b {
     display: inline-block;
-    min-width: auto;
+    min-width: 40px;
     text-align: center;
-    /* background: #fff5f5; /* Un fondo muy suave para resaltar tu cambio */
+    background: #fff5f5; /* Un fondo muy suave para resaltar tu cambio */
     padding: 2px 5px;
     border-radius: 4px;
-    
-    @media (min-width: 384px) {
-        padding: 1px;
-        padding: 1px 0px;
-    }
 }
