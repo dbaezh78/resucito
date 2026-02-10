@@ -44,7 +44,7 @@ async function renderizarTablaCantos() {
         // Buscador superior: Fusionamos el diseño con la funcionalidad de limpieza
         let html = `
             <div class="buscador-container" style="margin-bottom: 15px; position: relative; width: 98%;">
-                <input type="text" id="inputBuscador" placeholder="🔍 Buscar por nombre..." 
+                <input type="text" id="inputBuscador" placeholder="🔍 Buscar por título..." 
                        onkeyup="window.filtrarCantos()" 
                        style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; padding-right: 35px; box-sizing: border-box;">
                 <span id="btnLimpiarBuscador" onclick="window.limpiarBuscador()" 
@@ -66,12 +66,12 @@ async function renderizarTablaCantos() {
 
         cantos.forEach(canto => {
             // Ajustamos la ruta del enlace para que siempre funcione desde perfil
-            const enlaceCanto = `src/index.html?canto=${canto.id}`;
+            const enlaceCanto = `index.html?canto=${canto.id}`;
             
             html += `
                 <tr class="fila-canto" id="fila-${canto.id}">
                     <td style="text-align:left;">
-                        <a href="${enlaceCanto}" target="_blank" style="text-decoration:none; color:inherit; font-weight:bold;">
+                        <a href="${enlaceCanto}" style="text-decoration:none; color:inherit; font-weight:bold;">
                             ${canto.titulo}
                         </a>
                     </td>
@@ -103,22 +103,20 @@ async function renderizarTablaCantos() {
     }
 }
 
-// 4. COMPLETAR DATOS: Carga ultra rápida (Caché + LocalStorage + Nube opcional)
+// 4. COMPLETAR DATOS: Fusiona estado Offline (Caché) + Escudo de Firebase
 async function completarDatosLentamente(cantos) {
     const user = auth.currentUser;
     if (!user) return;
 
-    // Abrimos el caché una sola vez para todos los cantos
+    // Abrimos el caché para verificar qué cantos están descargados
     const cache = await caches.open('cantos-cache-v2.08');
     
-    // Verificamos si la sincronización está activa en tu nuevo switch
+    // Leemos si la sincronización con la nube está activada en el switch de Configuración
     const syncToggle = document.getElementById('syncToggle');
     const syncActiva = syncToggle ? syncToggle.checked : true;
 
-    // PROCESO 1: Carga instantánea de lo que hay en el teléfono
-    // Usamos map para que el navegador procese todos los cantos a la vez
-    const promesasLocales = cantos.map(async (canto) => {
-        // A. Revisar si el archivo CSS está en caché (✅/❌)
+    for (const canto of cantos) {
+        // --- PARTE 1: VERIFICACIÓN DE CACHÉ (ESTADO OFFLINE) ---
         const urlCanto = `src/css/pg/${canto.id}.css`;
         const estaCargado = await cache.match(urlCanto);
         const celdaStatus = document.getElementById(`status-${canto.id}`);
@@ -132,33 +130,28 @@ async function completarDatosLentamente(cantos) {
                 <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">
                     ${iconoEstado}
                     <input type="checkbox" ${estaCargado ? 'checked' : ''} 
-                           onchange="window.gestionarMemoria('${canto.id}', this.checked)">
+                           onchange="window.gestionarMemoria('${canto.id}', this.checked)" 
+                           title="Descargar para usar sin internet">
                 </div>`;
         }
 
-        // B. Revisar si tenemos Acorde/Cejilla en LocalStorage
+        // --- PARTE 2: DATOS PERSONALIZADOS (LOCALSTORAGE / FIREBASE) ---
         const localData = localStorage.getItem(`data-${canto.id}`);
+        
+        // 1. Si existe en el teléfono, lo inyectamos de inmediato (Costo 0)
         if (localData) {
-            // Si existe, lo pintamos de inmediato (Costo 0)
             inyectarDatosEnTabla(canto.id, JSON.parse(localData), true);
-            return { id: canto.id, necesitaNube: false };
+        } 
+        
+        // 2. Si NO está en el teléfono O si el usuario quiere sincronizar con la nube obligatoriamente
+        if (!localData || syncActiva) {
+            // Solo llamamos a Firebase si no tenemos el dato local o si el switch está ON
+            // Agregamos await para respetar la cuota y no saturar
+            await obtenerDatosExtraFirebase(canto.id, user.uid);
         }
-        return { id: canto.id, necesitaNube: true };
-    });
 
-    // Esperamos a que todo lo local se pinte (esto es casi instantáneo)
-    const resultados = await Promise.all(promesasLocales);
-
-    // PROCESO 2: Solo si el usuario quiere sincronizar, vamos a la nube
-    if (syncActiva) {
-        for (const res of resultados) {
-            if (res.necesitaNube) {
-                // Solo pedimos a Firebase los que no teníamos guardados
-                await obtenerDatosExtraFirebase(res.id, user.uid);
-                // Pausa mínima de 15ms para no saturar la conexión
-                await new Promise(r => setTimeout(r, 15)); 
-            }
-        }
+        // Pausa de cortesía para el procesador (100ms es un buen equilibrio)
+        await new Promise(res => setTimeout(res, 5));
     }
 }
 

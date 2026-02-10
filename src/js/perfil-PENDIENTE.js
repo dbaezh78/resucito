@@ -32,31 +32,24 @@ auth.onAuthStateChanged(async (user) => {
     }
 });
 
-// 3. RENDERIZADO DE TABLA: Incluye buscador con botón de limpieza y enlaces
+// 3. RENDERIZADO DE TABLA: Nombres con enlace al visor
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
-
     try {
         const response = await fetch('src/data/indicecantos.json');
         const cantos = await response.json();
-
-        // Buscador superior: Fusionamos el diseño con la funcionalidad de limpieza
+        
         let html = `
-            <div class="buscador-container" style="margin-bottom: 15px; position: relative; width: 98%;">
-                <input type="text" id="inputBuscador" placeholder="🔍 Buscar por nombre..." 
-                       onkeyup="window.filtrarCantos()" 
-                       style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; padding-right: 35px; box-sizing: border-box;">
-                <span id="btnLimpiarBuscador" onclick="window.limpiarBuscador()" 
-                      style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #999; display: none; font-weight: bold; font-size: 1.2em;">
-                    ×
-                </span>
+            <div class="buscador-container" style="margin-bottom: 15px; position: relative;">
+                <input type="text" id="inputBuscador" placeholder="🔍 Buscar canto..." onkeyup="window.filtrarCantos()" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+                <span id="btnLimpiarBuscador" onclick="window.limpiarBuscador()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #999; display: none; font-weight: bold;">×</span>
             </div>
             <table class="tabla-gestion" id="tablaCantos">
                 <thead>
                     <tr>
                         <th>Canto</th>
-                        <th>Estado / Descarga</th>
+                        <th>Estado</th>
                         <th>Uso</th>
                         <th>Cejilla (Or/Tu)</th>
                         <th>Acorde (Or/Tu)</th>
@@ -65,65 +58,40 @@ async function renderizarTablaCantos() {
                 <tbody id="cuerpo-tabla-perfil">`;
 
         cantos.forEach(canto => {
-            // Ajustamos la ruta del enlace para que siempre funcione desde perfil
-            const enlaceCanto = `src/index.html?canto=${canto.id}`;
-            
-            html += `
-                <tr class="fila-canto" id="fila-${canto.id}">
-                    <td style="text-align:left;">
-                        <a href="${enlaceCanto}" target="_blank" style="text-decoration:none; color:inherit; font-weight:bold;">
-                            ${canto.titulo}
-                        </a>
-                    </td>
-                    <td id="status-${canto.id}">⌛</td>
-                    <td id="uso-${canto.id}">--- 📅</td>
-                    <td>
-                        ${canto.cejilla ?? 0} / <b id="cejilla-tu-${canto.id}" style="color: #bc0009;">-</b>
-                    </td>
-                    <td>
-                        ${canto.acorde ?? 'N/A'} / <b id="acorde-tu-${canto.id}" style="color: #bc0009;">-</b>
-                    </td>
-                </tr>
-            `;
+            const enlaceCanto = `../../index.html?canto=${canto.id}`;
+            html += `<tr id="fila-${canto.id}" class="fila-canto">
+                <td style="text-align:left;">
+                    <a href="${enlaceCanto}" style="text-decoration:none; color: inherit; font-weight: bold;">
+                        ${canto.titulo} <span style="font-size: 0.8em; color: #007bff; opacity: 0.5;">🔗</span>
+                    </a>
+                </td>
+                <td id="status-${canto.id}">⌛</td>
+                <td id="uso-${canto.id}">--- 📅</td>
+                <td>${canto.cejilla || 0} / <b id="cejilla-tu-${canto.id}">-</b></td>
+                <td>${canto.acorde || 'N/A'} / <b id="acorde-tu-${canto.id}">-</b></td>
+            </tr>`;
         });
-
-        html += `
-                </tbody>
-            </table>
-        `;
-
+        html += `</tbody></table>`;
         contenedor.innerHTML = html;
-
-        // Lanzamos la carga de datos (Firebase + LocalStorage)
         completarDatosLentamente(cantos);
-
-    } catch (e) {
-        console.error("Error en tabla:", e);
-        contenedor.innerHTML = `<p style="text-align:center; color:#bc0009;">Error cargando la base de datos de cantos.</p>`;
-    }
+    } catch (e) { console.error(e); }
 }
 
-// 4. COMPLETAR DATOS: Carga ultra rápida (Caché + LocalStorage + Nube opcional)
+
+// 4. CARGA PROGRESIVA: Determina si el canto es Online u Offline
 async function completarDatosLentamente(cantos) {
     const user = auth.currentUser;
     if (!user) return;
-
-    // Abrimos el caché una sola vez para todos los cantos
     const cache = await caches.open('cantos-cache-v2.08');
     
-    // Verificamos si la sincronización está activa en tu nuevo switch
-    const syncToggle = document.getElementById('syncToggle');
-    const syncActiva = syncToggle ? syncToggle.checked : true;
-
-    // PROCESO 1: Carga instantánea de lo que hay en el teléfono
-    // Usamos map para que el navegador procese todos los cantos a la vez
-    const promesasLocales = cantos.map(async (canto) => {
-        // A. Revisar si el archivo CSS está en caché (✅/❌)
+    for (const canto of cantos) {
+        // --- PARTE OFFLINE ---
         const urlCanto = `src/css/pg/${canto.id}.css`;
         const estaCargado = await cache.match(urlCanto);
         const celdaStatus = document.getElementById(`status-${canto.id}`);
         
         if (celdaStatus) {
+            // Si está cargado ponemos un check verde, si no, un icono de nube/web
             const iconoEstado = estaCargado 
                 ? '<span title="Disponible Offline" style="color: #28a745;">✅ Online</span>' 
                 : '<span title="Solo Online" style="color: #ff0000;">❌ Offline</span>';
@@ -132,54 +100,44 @@ async function completarDatosLentamente(cantos) {
                 <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">
                     ${iconoEstado}
                     <input type="checkbox" ${estaCargado ? 'checked' : ''} 
-                           onchange="window.gestionarMemoria('${canto.id}', this.checked)">
+                           onchange="window.gestionarMemoria('${canto.id}', this.checked)" 
+                           title="Descargar para usar sin internet">
                 </div>`;
         }
 
-        // B. Revisar si tenemos Acorde/Cejilla en LocalStorage
+        // --- PARTE DATOS (LocalStorage / Firebase) ---
         const localData = localStorage.getItem(`data-${canto.id}`);
         if (localData) {
-            // Si existe, lo pintamos de inmediato (Costo 0)
             inyectarDatosEnTabla(canto.id, JSON.parse(localData), true);
-            return { id: canto.id, necesitaNube: false };
+        } else {
+            obtenerDatosExtraFirebase(canto.id, user.uid);
         }
-        return { id: canto.id, necesitaNube: true };
-    });
-
-    // Esperamos a que todo lo local se pinte (esto es casi instantáneo)
-    const resultados = await Promise.all(promesasLocales);
-
-    // PROCESO 2: Solo si el usuario quiere sincronizar, vamos a la nube
-    if (syncActiva) {
-        for (const res of resultados) {
-            if (res.necesitaNube) {
-                // Solo pedimos a Firebase los que no teníamos guardados
-                await obtenerDatosExtraFirebase(res.id, user.uid);
-                // Pausa mínima de 15ms para no saturar la conexión
-                await new Promise(r => setTimeout(r, 15)); 
-            }
-        }
+        
+        await new Promise(res => setTimeout(res, 100));
     }
 }
 
-// 5. INYECTAR DATOS: Pinta en pantalla y añade el PUNTO VERDE si es local.
+// 5. INYECTAR DATOS: Gestiona la visualización de cejilla y acorde
 function inyectarDatosEnTabla(cantoId, data, esLocal = false) {
     const elCej = document.getElementById(`cejilla-tu-${cantoId}`);
     const elAco = document.getElementById(`acorde-tu-${cantoId}`);
-    const elUso = document.getElementById(`uso-${cantoId}`);
-    if (elCej && data.cejilla) elCej.innerText = data.cejilla;
-    if (elAco && data.acorde) {
-        elAco.innerHTML = `${data.acorde} ${esLocal ? '<span style="color: #28a745; font-size: 0.8em; margin-left: 4px;">●</span>' : ''}`;
+
+    if (elCej && data.cejilla !== undefined) {
+        elCej.innerText = data.cejilla;
     }
-    if (elUso && data.uso) {
-        elUso.innerHTML = `<span class="fecha-link" onclick="window.abrirCalendario('${cantoId}')">${data.uso} 📅</span>`;
+    
+    if (elAco) {
+        // Si el valor es "0" o 0, lo tratamos como 'sin cambio' (-)
+        const valorLimpio = (data.acorde === "0" || data.acorde === 0) ? "-" : (data.acorde || "-");
+        elAco.innerHTML = `${valorLimpio} ${esLocal ? '<span style="color: #28a745; font-size: 0.8em; margin-left: 4px;">●</span>' : ''}`;
     }
 }
 
-// 6. OBTENER FIREBASE: Solo descarga si es necesario
+
+
+// 6. OBTENER FIREBASE: Sincroniza con la colección 'transportes'
 async function obtenerDatosExtraFirebase(cantoId, uid) {
     try {
-        // Aquí puedes añadir una lógica para no pedir datos si acabas de pedirlos hace 5 minutos
         const [docCej, docTra] = await Promise.all([
             getDoc(doc(db, "usuarios", uid, "cejillas", cantoId)),
             getDoc(doc(db, "usuarios", uid, "transportes", cantoId))
@@ -191,15 +149,9 @@ async function obtenerDatosExtraFirebase(cantoId, uid) {
 
         if (Object.keys(datos).length > 0) {
             inyectarDatosEnTabla(cantoId, datos, false);
-            // Guardamos en local para que la próxima vez no haga falta pedirlo
             localStorage.setItem(`data-${cantoId}`, JSON.stringify(datos));
         }
-    } catch (e) {
-        if (e.code === 'resource-exhausted') {
-            console.error("Cuota de Firebase agotada. Usando solo datos locales.");
-            document.getElementById('syncToggle').checked = false; // Desactivamos por seguridad
-        }
-    }
+    } catch (e) { console.warn("Fallo en sincronización:", cantoId); }
 }
 
 
@@ -437,17 +389,3 @@ Lógica de Tabla y Datos (Funciones 3, 4, 5 y 6).
 Funciones Globales (Window) (Funciones 7, 8, 9 y 15) -> Estas son las que activan los botones.
 Auxiliares y Eventos de Botón (Funciones 10 a 14). 
 */
-
-
-// 18 Guardar preferencia del switch en el teléfono
-document.getElementById('syncToggle').addEventListener('change', (e) => {
-    localStorage.setItem('preferencia_sync', e.target.checked);
-});
-
-// Al cargar, recuperar la preferencia
-const pref = localStorage.getItem('preferencia_sync');
-if (pref !== null) {
-    document.getElementById('syncToggle').checked = (pref === 'true');
-} else {
-    document.getElementById('syncToggle').checked = true; // Por defecto ON
-}
