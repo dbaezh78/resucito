@@ -1,5 +1,5 @@
     [
-        { "id": "alacenadelcordero", "titulo": "A la cena del Cordero", "cejilla": "0", "acorde": "La m"},
+        { "id": "alacenadelcordero", "titulo": "A la cena del Cordero", "cejilla": "", "acorde": "La m"},
         { "id": "alavictimapascual", "titulo": "A la víctima pascual", "cejilla": "5", "acorde": "La m"},
         { "id": "anadiedemosocasiondetropiezo", "titulo": "A nadie demos ocasión de tropiezo", "cejilla": "", "acorde": "La m"},
         { "id": "atilevantomisojos", "titulo": "A ti levanto mis ojos", "cejilla": "", "acorde": "Re m"},

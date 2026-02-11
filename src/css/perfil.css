@@ -428,3 +428,18 @@ input:checked + .slider:before {
     padding: 2px 0px 4px 0px;
     width: 100%;
 }
+
+/* Filas pares con un fondo ligeramente oscuro */
+.tabla-gestion tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.03); /* Un gris muy suave */
+}
+
+/* Filas impares blancas (por si acaso) */
+.tabla-gestion tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Efecto al pasar el mouse para no perder la vista */
+.tabla-gestion tbody tr:hover {
+    background-color: rgba(188, 0, 9, 0.05); /* Un tono rojizo muy suave al pasar el mouse */
+}

@@ -6,35 +6,10 @@ import { signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth
 let etapaGuardada = null;
 const CODIGO_ADMIN_SECRETO = "RE77"; 
 
-
-// Mapa de transporte para cantos que tienen como base La m (Original = 0)
-const MAPA_ACORDES = {
-    "0": "La m",
-    "1": "Si b m",
-    "2": "Si m",
-    "3": "Do m",
-    "4": "Do# m",
-    "5": "Re m",
-    "6": "Re# m",
-    "7": "Mi m",
-    "8": "Fa m",
-    "9": "Fa# m",
-    "10": "Sol m",
-    "11": "Sol# m"
-};
-
 // 1. INICIALIZACIÓN: Llena comunidades y países al cargar el DOM.
 document.addEventListener('DOMContentLoaded', async () => {
     llenarComunidades();
     await cargarPaisesEIP();
-
-    // NUEVO: Recuperar la preferencia del switch del teléfono
-    const pref = localStorage.getItem('preferencia_sync');
-    const toggle = document.getElementById('syncToggle');
-    if (toggle) {
-        // Si no hay preferencia guardada, por defecto lo ponemos en TRUE (encendido)
-        toggle.checked = (pref === null) ? true : (pref === 'true');
-    }
 });
 
 // 2. OBSERVADOR AUTH: Carga perfil y lanza la tabla si hay usuario.
@@ -57,7 +32,7 @@ auth.onAuthStateChanged(async (user) => {
     }
 });
 
-// 3. RENDERIZADO DE TABLA: Dibuja el buscador (100%) y la estructura de la tabla
+// 3. RENDERIZADO DE TABLA: Incluye buscador con botón de limpieza y enlaces
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
@@ -66,14 +41,16 @@ async function renderizarTablaCantos() {
         const response = await fetch('src/data/indicecantos.json');
         const cantos = await response.json();
 
-        // Buscador superior: Ahora con ancho al 100% y sin límites de píxeles
+        // Buscador superior: Fusionamos el diseño con la funcionalidad de limpieza
         let html = `
-            <div class="buscador-container" style="position: relative; width: 100%; margin-bottom: 15px;">
-                <input id="inputBuscador" type="text" placeholder="🔍 Buscar canto..." 
-                       oninput="window.filtrarCantos()" 
-                       style="width:100%; padding:10px 35px 10px 10px; border-radius:8px; border:1px solid #ccc; box-sizing: border-box;">
-                <button id="btnLimpiarBuscador" onclick="window.limpiarBuscador()" 
-                        style="position:absolute; right:10px; top:50%; transform: translateY(-50%); display:none; border:none; background:transparent; font-size:20px; cursor:pointer; color:#999; font-weight:bold;">×</button>
+            <div class="buscador-container" style="margin-bottom: 15px; position: relative; width: 98%;">
+                <input type="text" id="inputBuscador" placeholder="🔍 Buscar por nombre..." 
+                       onkeyup="window.filtrarCantos()" 
+                       style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; padding-right: 35px; box-sizing: border-box;">
+                <span id="btnLimpiarBuscador" onclick="window.limpiarBuscador()" 
+                      style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #999; display: none; font-weight: bold; font-size: 1.2em;">
+                    ×
+                </span>
             </div>
             <table class="tabla-gestion" id="tablaCantos">
                 <thead>
@@ -88,58 +65,68 @@ async function renderizarTablaCantos() {
                 <tbody id="cuerpo-tabla-perfil">`;
 
         cantos.forEach(canto => {
-            // Ruta corregida: src/index.html para navegar desde la raíz
+            // Ajustamos la ruta del enlace para que siempre funcione desde perfil
             const enlaceCanto = `src/index.html?canto=${canto.id}`;
             
             html += `
                 <tr class="fila-canto" id="fila-${canto.id}">
                     <td style="text-align:left;">
-                        <a href="${enlaceCanto}" style="text-decoration:none; color:inherit; font-weight:bold;">
+                        <a href="${enlaceCanto}" target="_blank" style="text-decoration:none; color:inherit; font-weight:bold;">
                             ${canto.titulo}
                         </a>
                     </td>
                     <td id="status-${canto.id}">⌛</td>
                     <td id="uso-${canto.id}">--- 📅</td>
-                    <td>${canto.cejilla ?? 0} / <b id="cejilla-tu-${canto.id}" style="color: #bc0009;">-</b></td>
-                    <td>${canto.acorde ?? 'N/A'} / <b id="acorde-tu-${canto.id}" style="color: #bc0009;">-</b></td>
-                </tr>`;
+                    <td>
+                        ${canto.cejilla ?? 0} / <b id="cejilla-tu-${canto.id}" style="color: #bc0009;">-</b>
+                    </td>
+                    <td>
+                        ${canto.acorde ?? 'N/A'} / <b id="acorde-tu-${canto.id}" style="color: #bc0009;">-</b>
+                    </td>
+                </tr>
+            `;
         });
 
-        html += `</tbody></table>`;
+        html += `
+                </tbody>
+            </table>
+        `;
+
         contenedor.innerHTML = html;
 
-        // Inicia la carga de datos local/remota (Función 4)
+        // Lanzamos la carga de datos (Firebase + LocalStorage)
         completarDatosLentamente(cantos);
 
     } catch (e) {
         console.error("Error en tabla:", e);
-        contenedor.innerHTML = `<p style="text-align:center; color:#bc0009;">Error cargando la base de datos.</p>`;
+        contenedor.innerHTML = `<p style="text-align:center; color:#bc0009;">Error cargando la base de datos de cantos.</p>`;
     }
 }
 
-
-// 4. COMPLETAR DATOS: El equilibrio perfecto entre velocidad y ahorro
+// 4. COMPLETAR DATOS: Carga ultra rápida (Caché + LocalStorage + Nube opcional)
 async function completarDatosLentamente(cantos) {
     const user = auth.currentUser;
     if (!user) return;
 
+    // Abrimos el caché una sola vez para todos los cantos
     const cache = await caches.open('cantos-cache-v2.08');
     
-    // 1. Detectamos el estado del interruptor de sincronización
+    // Verificamos si la sincronización está activa en tu nuevo switch
     const syncToggle = document.getElementById('syncToggle');
     const syncActiva = syncToggle ? syncToggle.checked : true;
 
-    // PROCESO 1: Carga instantánea desde el almacenamiento local (Caché y LocalStorage)
+    // PROCESO 1: Carga instantánea de lo que hay en el teléfono
+    // Usamos map para que el navegador procese todos los cantos a la vez
     const promesasLocales = cantos.map(async (canto) => {
-        // A. Verificar estado de descarga (Online/Offline) en el Service Worker
+        // A. Revisar si el archivo CSS está en caché (✅/❌)
         const urlCanto = `src/css/pg/${canto.id}.css`;
         const estaCargado = await cache.match(urlCanto);
         const celdaStatus = document.getElementById(`status-${canto.id}`);
         
         if (celdaStatus) {
             const iconoEstado = estaCargado 
-                ? '<span style="color: #28a745;">✅ Online</span>' 
-                : '<span style="color: #ff0000;">❌ Offline</span>';
+                ? '<span title="Disponible Offline" style="color: #28a745;">✅ Online</span>' 
+                : '<span title="Solo Online" style="color: #ff0000;">❌ Offline</span>';
             
             celdaStatus.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">
@@ -149,126 +136,84 @@ async function completarDatosLentamente(cantos) {
                 </div>`;
         }
 
-        // B. Cargar datos de acordes/cejilla guardados en LocalStorage (Escudo)
+        // B. Revisar si tenemos Acorde/Cejilla en LocalStorage
         const localData = localStorage.getItem(`data-${canto.id}`);
         if (localData) {
-            // Pintamos inmediatamente lo que ya conocemos
+            // Si existe, lo pintamos de inmediato (Costo 0)
             inyectarDatosEnTabla(canto.id, JSON.parse(localData), true);
+            return { id: canto.id, necesitaNube: false };
         }
-        
-        return { id: canto.id, tieneLocal: !!localData };
+        return { id: canto.id, necesitaNube: true };
     });
 
-    // Esperamos a que la tabla se llene con los datos locales (es casi instantáneo)
+    // Esperamos a que todo lo local se pinte (esto es casi instantáneo)
     const resultados = await Promise.all(promesasLocales);
 
-    // PROCESO 2: Sincronización con la nube (Solo si el switch está ON)
+    // PROCESO 2: Solo si el usuario quiere sincronizar, vamos a la nube
     if (syncActiva) {
         for (const res of resultados) {
-            await obtenerDatosExtraFirebase(res.id, user.uid);
-            
-            // Pausa de cortesía para no saturar la cuota de lectura de Firebase
-            await new Promise(r => setTimeout(r, 20)); 
+            if (res.necesitaNube) {
+                // Solo pedimos a Firebase los que no teníamos guardados
+                await obtenerDatosExtraFirebase(res.id, user.uid);
+                // Pausa mínima de 15ms para no saturar la conexión
+                await new Promise(r => setTimeout(r, 15)); 
+            }
         }
     }
 }
 
-
-// 5. INYECTAR DATOS: Blindada para que no falle la cejilla ni el acorde
+// 5. INYECTAR DATOS: Pinta en pantalla y añade el PUNTO VERDE si es local.
 function inyectarDatosEnTabla(cantoId, data, esLocal = false) {
     const elCej = document.getElementById(`cejilla-tu-${cantoId}`);
     const elAco = document.getElementById(`acorde-tu-${cantoId}`);
     const elUso = document.getElementById(`uso-${cantoId}`);
-
-    // --- CEJILLA ---
-    if (elCej) {
-        // Si el valor es "0", 0 o vacío, ponemos "-"
-        const valorCej = data.cejilla;
-        elCej.innerText = (valorCej == "0" || !valorCej) ? "-" : valorCej;
+    if (elCej && data.cejilla) elCej.innerText = data.cejilla;
+    if (elAco && data.acorde) {
+        elAco.innerHTML = `${data.acorde} ${esLocal ? '<span style="color: #28a745; font-size: 0.8em; margin-left: 4px;">●</span>' : ''}`;
     }
-    
-    // --- ACORDE (CÁLCULO DINÁMICO) ---
-    if (elAco) {
-        const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
-        const t = parseInt(data.acorde); // Convertimos el "8", "10", etc., a número real
-        
-        // Si el transporte es 0 o no es un número, mostramos "-"
-        if (isNaN(t) || t === 0) {
-            elAco.innerHTML = `- ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
-        } else {
-            // Lógica: La nota base es La (posición 9). 
-            // Sumamos el transporte y usamos el residuo de 12 para no salirnos del array.
-            const posicionFinal = (9 + t) % 12;
-            const notaFinal = cords[posicionFinal];
-            
-            // Imprimimos la nota + "m" (porque tus cantos son menores)
-            elAco.innerHTML = `${notaFinal} m ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
-        }
-    }
-
-    // --- FECHA DE USO ---
     if (elUso && data.uso) {
         elUso.innerHTML = `<span class="fecha-link" onclick="window.abrirCalendario('${cantoId}')">${data.uso} 📅</span>`;
     }
 }
 
-
-// 6. OBTENER FIREBASE: Ahora con refresco de fecha real
+// 6. OBTENER FIREBASE: Solo descarga si es necesario
 async function obtenerDatosExtraFirebase(cantoId, uid) {
     try {
-        const [docCej, docTra, docHist] = await Promise.all([
-            getDoc(doc(db, "usuarios", uid, "cejilla", cantoId)),      
-            getDoc(doc(db, "usuarios", uid, "transporte", cantoId)),   
-            getDoc(doc(db, "usuarios", uid, "transportacion", cantoId)) 
+        // Aquí puedes añadir una lógica para no pedir datos si acabas de pedirlos hace 5 minutos
+        const [docCej, docTra] = await Promise.all([
+            getDoc(doc(db, "usuarios", uid, "cejillas", cantoId)),
+            getDoc(doc(db, "usuarios", uid, "transportes", cantoId))
         ]);
 
         const datos = {};
-        
         if (docCej.exists()) datos.cejilla = docCej.data().valor;
         if (docTra.exists()) datos.acorde = docTra.data().valor;
-        
-        if (docHist.exists()) {
-            const d = docHist.data();
-            if (d.ultimaActualizacion) {
-                // Extraemos la fecha del objeto Timestamp de Firebase
-                const fechaDate = d.ultimaActualizacion.toDate();
-                // La formateamos a algo legible: ej. "20 ene 2026"
-                datos.uso = fechaDate.toLocaleDateString('es-ES', { 
-                    day: 'numeric', 
-                    month: 'short', 
-                    year: 'numeric' 
-                }); 
-            }
-        }
 
         if (Object.keys(datos).length > 0) {
-            // Pintamos los datos (esto actualizará la fecha en la celda)
             inyectarDatosEnTabla(cantoId, datos, false);
-            // Guardamos la nueva versión en el teléfono
+            // Guardamos en local para que la próxima vez no haga falta pedirlo
             localStorage.setItem(`data-${cantoId}`, JSON.stringify(datos));
         }
     } catch (e) {
-        console.warn("Error actualizando fecha para:", cantoId);
+        if (e.code === 'resource-exhausted') {
+            console.error("Cuota de Firebase agotada. Usando solo datos locales.");
+            document.getElementById('syncToggle').checked = false; // Desactivamos por seguridad
+        }
     }
 }
 
 
-
-// 7. TOGGLE SECTIONS: Abre/Cierra secciones y gira la flecha (collapsed)
-window.toggleSection = function(sectionId, wrapperId) {
-    const section = document.getElementById(sectionId);
+// 7. TOGGLE SECTION: Expande/Colapsa secciones (Global).
+window.toggleSection = function(contentId, wrapperId) {
+    const content = document.getElementById(contentId);
     const wrapper = document.getElementById(wrapperId);
-    
-    if (section && wrapper) {
-        // Alternamos la clase collapsed (para la flecha en CSS)
-        const isCollapsed = wrapper.classList.toggle('collapsed');
-        
-        // Usamos tu clase cfg-close para ocultar/mostrar el contenido
-        if (isCollapsed) {
-            section.classList.add('cfg-close');
-        } else {
-            section.classList.remove('cfg-close');
-        }
+    if (!content || !wrapper) return;
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        wrapper.classList.remove("collapsed");
+    } else {
+        content.style.display = "none";
+        wrapper.classList.add("collapsed");
     }
 };
 
@@ -441,7 +386,6 @@ window.exportarDatosLocales = function() {
 window.filtrarCantos = function() {
     const input = document.getElementById('inputBuscador');
     const btnLimpiar = document.getElementById('btnLimpiarBuscador');
-    if (!input) return;
     
     // Función auxiliar para "limpiar" el texto al máximo
     const superNormalizar = (texto) => {
@@ -495,20 +439,15 @@ Auxiliares y Eventos de Botón (Funciones 10 a 14).
 */
 
 
-// 18. Guardar preferencia y forzar refresco si se activa
+// 18 Guardar preferencia del switch en el teléfono
 document.getElementById('syncToggle').addEventListener('change', (e) => {
-    const activa = e.target.checked;
-    localStorage.setItem('preferencia_sync', activa);
-    
-    if (activa) {
-        // Al activar, borramos solo los datos de los cantos para refrescar desde Firebase
-        for (let i = localStorage.length - 1; i >= 0; i--) {
-            const clave = localStorage.key(i);
-            if (clave.startsWith('data-')) {
-                localStorage.removeItem(clave);
-            }
-        }
-        // Volvemos a renderizar para que la Función 4 pida todo de nuevo
-        renderizarTablaCantos();
-    }
+    localStorage.setItem('preferencia_sync', e.target.checked);
 });
+
+// Al cargar, recuperar la preferencia
+const pref = localStorage.getItem('preferencia_sync');
+if (pref !== null) {
+    document.getElementById('syncToggle').checked = (pref === 'true');
+} else {
+    document.getElementById('syncToggle').checked = true; // Por defecto ON
+}
