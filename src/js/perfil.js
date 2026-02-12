@@ -599,17 +599,20 @@ function generarGridNavegable(fechasActivas, mes, año) {
     const primerDiaSemana = new Date(año, mes, 1).getDay();
     let html = "";
 
-    ['D','L','M','M','J','V','S'].forEach(d => html += `<b style="font-size:0.7em; color:#bbb; margin-bottom:5px;">${d}</b>`);
+    // Días de la semana
+    ['D','L','M','M','J','V','S'].forEach(d => html += `<b style="font-size:0.7em; color:#bbb;">${d}</b>`);
 
+    // Celdas vacías
     for (let e = 0; e < primerDiaSemana; e++) html += `<div></div>`;
 
     for (let i = 1; i <= ultimoDia; i++) {
-        const clave = `${año}-${mes + 1}-${i}`;
-        const activo = fechasActivas.includes(clave);
+        // IMPORTANTE: Esta clave debe ser IGUAL a la que generas en abrirCalendario
+        const claveActual = `${año}-${mes + 1}-${i}`;
+        const activo = fechasActivas.includes(claveActual);
         
-        // ESTILO DE RECUADRO DORADO
+        // ESTILO DE RECUADRO DORADO (Cuadrado con bordes suaves)
         const estilo = activo 
-            ? "background:#d4af37; color:white; font-weight:bold; border-radius:5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" 
+            ? "background:#d4af37; color:white; font-weight:bold; border-radius:4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" 
             : "color:#444;";
             
         html += `<div style="padding:5px; font-size:0.9em; ${estilo}">${i}</div>`;
