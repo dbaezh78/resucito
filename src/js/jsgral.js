@@ -1245,45 +1245,32 @@ window.guardarCejilla = async function(cantoId, valor) {
 };
 
 
-// 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL)
+// 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL ACUMULATIVO)
 window.registrarFechaCambio = async function(cantoId) {
     try {
         if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
             const ahora = new Date(); 
+            // Usamos milisegundos para que cada clic sea un registro nuevo
             const fechaId = ahora.getTime().toString(); 
 
             // 1. Guardamos la última fecha (Raíz)
             await window.firebaseAPI.guardarDato(cantoId, ahora, 'transportacion');
             
             // 2. Guardamos en el HISTORIAL (Subcolección)
-            // Usamos una ruta directa que tu API pueda entender
+            // Esto es lo que permite que el calendario tenga muchos recuadros dorados
             await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, ahora, 'transportacion');
             
-            console.log("📅 Historial guardado correctamente para: " + cantoId);
+            console.log("📅 Nuevo punto en el historial para: " + cantoId);
         }
     } catch (e) {
         console.warn("Error en Sección 31:", e);
     }
 };
 
+// EXPOSICIÓN GLOBAL (Para que tus HTML vean las funciones)
+window.actualizarAcordes = actualizarAcordes;
+window.renderCanto = renderCanto;
 
 // EXPOSICIÓN GLOBAL ABSOLUTA
 window.actualizarAcordes = actualizarAcordes;
 window.renderCanto = renderCanto;
-
-// DESCONTINUADO
-    /*
-    // Lógica para la cejilla (corregida)
-    if (cejillaSelect) {
-        // Establecer el valor predeterminado si existe en los datos del canto
-        if (cantoSpecificData.cejilla !== undefined && cantoSpecificData.cejilla !== null && cantoSpecificData.cejilla !== "") {
-            cejillaSelect.value = cantoSpecificData.cejilla;
-        } else {
-            // Si no hay cejilla definida en el canto, o es vacía, establecer en "0"
-            cejillaSelect.value = "0";
-        }
-        // No se añade un event listener para cambiar el tono,
-        // ya que la cejilla es solo una referencia visual y no debe afectar la transposición.
-        // La transposición se maneja exclusivamente a través de la selección de acordes.
-    }
-*/

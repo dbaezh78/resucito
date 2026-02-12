@@ -199,118 +199,14 @@ function inyectarDatosEnTabla(cantoId, data, esLocal = false) {
 
 // 5.1 --- FECHA DE USO ---
     if (elUso && data.uso) {
-        // Asegúrate de que onclick llame a window.abrirCalendario
         elUso.innerHTML = `
             <span class="fecha-link" style="cursor:pointer; color: #007bff; font-weight: bold;" 
                   onclick="window.abrirCalendario('${cantoId}')">
                 ${data.uso} 📅
             </span>`;
     }
-} 
-
-// <--- CIERRE CORRECTO DE FUNCIÓN 5
-
-// 5.2 FUNCIÓN MAESTRA DEL CALENDARIO VISUAL
-window.abrirCalendario = async function(cantoId) {
-    const user = auth.currentUser;
-    if (!user) return;
-
-    try {
-        const { collection, getDocs } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-        
-        // 1. Obtener historial de Firebase
-        const refHistorial = collection(db, "usuarios", user.uid, "transportacion", cantoId, "historial");
-        const snapshot = await getDocs(refHistorial);
-        
-        let diasActivos = [];
-        snapshot.forEach(docSnap => {
-            const d = docSnap.data().valor;
-            if (d) {
-                const f = d.toDate ? d.toDate() : new Date(d);
-                // Formato YYYY-MM-DD para comparar
-                const iso = f.getFullYear() + "-" + String(f.getMonth() + 1).padStart(2, '0') + "-" + String(f.getDate()).padStart(2, '0');
-                diasActivos.push(iso);
-            }
-        });
-
-        // 2. Eliminar modal si ya existe uno abierto
-        const viejo = document.getElementById('calendar-modal');
-        if (viejo) viejo.remove();
-
-        // 3. Crear el HTML del Modal
-        const modalHtml = `
-            <div id="calendar-modal" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999999; display:flex; align-items:center; justify-content:center;">
-                <div style="background:white; padding:20px; border-radius:15px; width:300px; text-align:center; position:relative; font-family: sans-serif;">
-                    <button onclick="this.parentElement.parentElement.remove()" style="position:absolute; top:10px; right:15px; border:none; background:none; font-size:24px; cursor:pointer;">&times;</button>
-                    <h3 style="margin: 0 0 15px 0;">Historial de Uso</h3>
-                    <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px;">
-                        ${generarGridCalendario(diasActivos)}
-                    </div>
-                    <p style="margin-top:15px; font-size:12px; color:#666;">Días con <b style="color:#d4af37">●</b> tienen registros.</p>
-                </div>
-            </div>`;
-        document.body.insertAdjacentHTML('beforeend', modalHtml);
-
-    } catch (e) {
-        console.error("Error al cargar calendario:", e);
-    }
 };
-
-// Función auxiliar para dibujar los números y negritas
-function generarGridCalendario(fechasActivas) {
-    const hoy = new Date();
-    const año = hoy.getFullYear();
-    const mes = hoy.getMonth();
-    const ultimoDia = new Date(año, mes + 1, 0).getDate();
-    let html = "";
-
-    // Cabecera de días
-    ['D','L','M','M','J','V','S'].forEach(d => html += `<b style="font-size:12px; color:#ccc;">${d}</b>`);
-
-    for (let i = 1; i <= ultimoDia; i++) {
-        const actualStr = año + "-" + String(mes + 1).padStart(2, '0') + "-" + String(i).padStart(2, '0');
-        const tieneRegistro = fechasActivas.includes(actualStr);
-        
-        // Si tiene registro: Círculo dorado y negrita. Si no: Gris suave.
-        const estilo = tieneRegistro 
-            ? "background:#fff3cd; color:#856404; font-weight:bold; border-radius:50%; border:1px solid #ffeeba;" 
-            : "color:#ddd;";
-            
-        html += `<div style="padding:5px; font-size:14px; ${estilo}">${i}</div>`;
-    }
-    return html;
-}
-
-
-
-// Función auxiliar (Debe estar fuera de abrirCalendario)
-function generarMiniCalendarioHTML(fechasActivas) {
-    const hoy = new Date();
-    const año = hoy.getFullYear();
-    const mes = hoy.getMonth();
-    
-    // Días del mes actual
-    const ultimoDia = new Date(año, mes + 1, 0).getDate();
-    let html = "";
-    
-    // Nombres de días (opcional)
-    const diasSemana = ['D','L','M','X','J','V','S'];
-    diasSemana.forEach(d => html += `<b style="font-size:10px; color:#bbb;">${d}</b>`);
-
-    for (let i = 1; i <= ultimoDia; i++) {
-        const fechaStr = año + "-" + String(mes + 1).padStart(2, '0') + "-" + String(i).padStart(2, '0');
-        const activo = fechasActivas.includes(fechaStr);
-        
-        const estilo = activo 
-            ? "background:#fff3cd; color:#856404; font-weight:bold; border: 1px solid #ffeeba; border-radius:50%;" 
-            : "color:#eee;";
-            
-        html += `<div style="padding:5px; font-size:14px; ${estilo}">${i}</div>`;
-    }
-    return html;
-}
-
-// <--- CIERRE CORRECTO DE FUNCIÓN 5.2
+// <--- CIERRE CORRECTO DE FUNCIÓN 5
 
 
 // 6: OBTENER FIREBASE: Unificado para leer campo 'valor'
@@ -610,20 +506,113 @@ async function guardarCambioTransporte(cantoId, nuevoValor) {
     if (!user) return;
     try {
         const ahora = new Date();
-        const fechaId = ahora.getTime().toString();
+        const fechaId = ahora.getTime().toString(); 
 
-        // Guardar Tono
+        // A. Guardar Tono
         const refTransporte = doc(db, "usuarios", user.uid, "transporte", cantoId);
         await setDoc(refTransporte, { valor: nuevoValor }, { merge: true });
 
-        // Guardar Última Fecha (Raíz)
+        // B. Guardar Última Fecha (Raíz)
         const refFecha = doc(db, "usuarios", user.uid, "transportacion", cantoId);
         await setDoc(refFecha, { valor: ahora }, { merge: true });
 
-        // Guardar en Historial (Subcolección)
+        // C. Guardar en HISTORIAL (Subcolección para el calendario)
         const refHist = doc(db, "usuarios", user.uid, "transportacion", cantoId, "historial", fechaId);
         await setDoc(refHist, { valor: ahora }, { merge: true });
 
-        console.log("✅ Cambio y fecha de historial guardados.");
-    } catch (error) { console.error(error); }
+        console.log("✅ Cambio y punto de historial guardados correctamente.");
+    } catch (error) { 
+        console.error("Error al guardar transporte:", error); 
+    }
+}
+
+// --- 20: SISTEMA DE HISTORIAL VISUAL (NAVEGABLE) ---
+
+let fechasHistorialActivas = [];
+let mesVisualizado = new Date().getMonth();
+let añoVisualizado = new Date().getFullYear();
+
+window.abrirCalendario = async function(cantoId) {
+    const user = auth.currentUser;
+    if (!user) return;
+
+    try {
+        const { collection, getDocs } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+        const refHistorial = collection(db, "usuarios", user.uid, "transportacion", cantoId, "historial");
+        const snapshot = await getDocs(refHistorial);
+        
+        fechasHistorialActivas = [];
+        snapshot.forEach(docSnap => {
+            const d = docSnap.data().valor;
+            if (d) {
+                const f = d.toDate ? d.toDate() : new Date(d);
+                // Formato normalizado Año-Mes-Día para comparación exacta
+                fechasHistorialActivas.push(`${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`);
+            }
+        });
+
+        mesVisualizado = new Date().getMonth();
+        añoVisualizado = new Date().getFullYear();
+
+        let modal = document.getElementById('calendar-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'calendar-modal';
+            modal.style = "position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999999; display:flex; align-items:center; justify-content:center; font-family: sans-serif;";
+            document.body.appendChild(modal);
+        }
+
+        actualizarVistaCalendario();
+    } catch (e) { console.error("Error historial:", e); }
+};
+
+window.cambiarMes = function(direccion) {
+    mesVisualizado += direccion;
+    if (mesVisualizado < 0) { mesVisualizado = 11; añoVisualizado--; }
+    if (mesVisualizado > 11) { mesVisualizado = 0; añoVisualizado++; }
+    actualizarVistaCalendario();
+};
+
+function actualizarVistaCalendario() {
+    const modal = document.getElementById('calendar-modal');
+    const nombreMes = new Date(añoVisualizado, mesVisualizado).toLocaleString('es-ES', { month: 'long' }).toUpperCase();
+
+    modal.innerHTML = `
+        <div style="background:white; padding:20px; border-radius:15px; width:300px; text-align:center; position:relative; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+            <button onclick="this.parentElement.parentElement.remove()" style="position:absolute; top:10px; right:15px; border:none; background:none; font-size:24px; cursor:pointer; color:#999;">&times;</button>
+            
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                <button onclick="cambiarMes(-1)" style="border:none; background:#f0f0f0; border-radius:5px; padding:5px 10px; cursor:pointer; font-weight:bold;">&lt;</button>
+                <h3 style="margin:0; font-size:1em; color:#333;">${nombreMes} ${añoVisualizado}</h3>
+                <button onclick="cambiarMes(1)" style="border:none; background:#f0f0f0; border-radius:5px; padding:5px 10px; cursor:pointer; font-weight:bold;">&gt;</button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; background: #f9f9f9; padding: 10px; border-radius: 10px;">
+                ${generarGridNavegable(fechasHistorialActivas, mesVisualizado, añoVisualizado)}
+            </div>
+            <p style="margin-top:15px; font-size:10px; color:#888;">Los días con <b style="color:#d4af37">recuadro</b> indican actividad.</p>
+        </div>`;
+}
+
+function generarGridNavegable(fechasActivas, mes, año) {
+    const ultimoDia = new Date(año, mes + 1, 0).getDate();
+    const primerDiaSemana = new Date(año, mes, 1).getDay();
+    let html = "";
+
+    ['D','L','M','M','J','V','S'].forEach(d => html += `<b style="font-size:0.7em; color:#bbb; margin-bottom:5px;">${d}</b>`);
+
+    for (let e = 0; e < primerDiaSemana; e++) html += `<div></div>`;
+
+    for (let i = 1; i <= ultimoDia; i++) {
+        const clave = `${año}-${mes + 1}-${i}`;
+        const activo = fechasActivas.includes(clave);
+        
+        // ESTILO DE RECUADRO DORADO
+        const estilo = activo 
+            ? "background:#d4af37; color:white; font-weight:bold; border-radius:5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" 
+            : "color:#444;";
+            
+        html += `<div style="padding:5px; font-size:0.9em; ${estilo}">${i}</div>`;
+    }
+    return html;
 }
