@@ -180,143 +180,42 @@ function inyectarDatosEnTabla(cantoId, data, esLocal = false) {
     const elAco = document.getElementById(`acorde-tu-${cantoId}`);
     const elUso = document.getElementById(`uso-${cantoId}`);
 
+    // --- CEJILLA ---
     if (elCej) {
+        // Si el valor es "0", 0 o vacío, ponemos "-"
         const valorCej = data.cejilla;
         elCej.innerText = (valorCej == "0" || !valorCej) ? "-" : valorCej;
     }
     
+    // --- ACORDE (CÁLCULO DINÁMICO) ---
     if (elAco) {
         const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
-        const t = parseInt(data.acorde);
+        const t = parseInt(data.acorde); // Convertimos el "8", "10", etc., a número real
+        
+        // Si el transporte es 0 o no es un número, mostramos "-"
         if (isNaN(t) || t === 0) {
             elAco.innerHTML = `- ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
         } else {
+            // Lógica: La nota base es La (posición 9). 
+            // Sumamos el transporte y usamos el residuo de 12 para no salirnos del array.
             const posicionFinal = (9 + t) % 12;
             const notaFinal = cords[posicionFinal];
+            
+            // Imprimimos la nota + "m" (porque tus cantos son menores)
             elAco.innerHTML = `${notaFinal} m ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
         }
     }
 
-// 5.1 --- FECHA DE USO ---
+    // --- FECHA DE USO ---
     if (elUso && data.uso) {
-        // Asegúrate de que onclick llame a window.abrirCalendario
-        elUso.innerHTML = `
-            <span class="fecha-link" style="cursor:pointer; color: #007bff; font-weight: bold;" 
-                  onclick="window.abrirCalendario('${cantoId}')">
-                ${data.uso} 📅
-            </span>`;
+        elUso.innerHTML = `<span class="fecha-link" onclick="window.abrirCalendario('${cantoId}')">${data.uso} 📅</span>`;
     }
-} 
-
-// <--- CIERRE CORRECTO DE FUNCIÓN 5
-
-// 5.2 FUNCIÓN MAESTRA DEL CALENDARIO VISUAL
-window.abrirCalendario = async function(cantoId) {
-    const user = auth.currentUser;
-    if (!user) return;
-
-    try {
-        const { collection, getDocs } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-        
-        // 1. Obtener historial de Firebase
-        const refHistorial = collection(db, "usuarios", user.uid, "transportacion", cantoId, "historial");
-        const snapshot = await getDocs(refHistorial);
-        
-        let diasActivos = [];
-        snapshot.forEach(docSnap => {
-            const d = docSnap.data().valor;
-            if (d) {
-                const f = d.toDate ? d.toDate() : new Date(d);
-                // Formato YYYY-MM-DD para comparar
-                const iso = f.getFullYear() + "-" + String(f.getMonth() + 1).padStart(2, '0') + "-" + String(f.getDate()).padStart(2, '0');
-                diasActivos.push(iso);
-            }
-        });
-
-        // 2. Eliminar modal si ya existe uno abierto
-        const viejo = document.getElementById('calendar-modal');
-        if (viejo) viejo.remove();
-
-        // 3. Crear el HTML del Modal
-        const modalHtml = `
-            <div id="calendar-modal" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999999; display:flex; align-items:center; justify-content:center;">
-                <div style="background:white; padding:20px; border-radius:15px; width:300px; text-align:center; position:relative; font-family: sans-serif;">
-                    <button onclick="this.parentElement.parentElement.remove()" style="position:absolute; top:10px; right:15px; border:none; background:none; font-size:24px; cursor:pointer;">&times;</button>
-                    <h3 style="margin: 0 0 15px 0;">Historial de Uso</h3>
-                    <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px;">
-                        ${generarGridCalendario(diasActivos)}
-                    </div>
-                    <p style="margin-top:15px; font-size:12px; color:#666;">Días con <b style="color:#d4af37">●</b> tienen registros.</p>
-                </div>
-            </div>`;
-        document.body.insertAdjacentHTML('beforeend', modalHtml);
-
-    } catch (e) {
-        console.error("Error al cargar calendario:", e);
-    }
-};
-
-// Función auxiliar para dibujar los números y negritas
-function generarGridCalendario(fechasActivas) {
-    const hoy = new Date();
-    const año = hoy.getFullYear();
-    const mes = hoy.getMonth();
-    const ultimoDia = new Date(año, mes + 1, 0).getDate();
-    let html = "";
-
-    // Cabecera de días
-    ['D','L','M','M','J','V','S'].forEach(d => html += `<b style="font-size:12px; color:#ccc;">${d}</b>`);
-
-    for (let i = 1; i <= ultimoDia; i++) {
-        const actualStr = año + "-" + String(mes + 1).padStart(2, '0') + "-" + String(i).padStart(2, '0');
-        const tieneRegistro = fechasActivas.includes(actualStr);
-        
-        // Si tiene registro: Círculo dorado y negrita. Si no: Gris suave.
-        const estilo = tieneRegistro 
-            ? "background:#fff3cd; color:#856404; font-weight:bold; border-radius:50%; border:1px solid #ffeeba;" 
-            : "color:#ddd;";
-            
-        html += `<div style="padding:5px; font-size:14px; ${estilo}">${i}</div>`;
-    }
-    return html;
 }
 
 
-
-// Función auxiliar (Debe estar fuera de abrirCalendario)
-function generarMiniCalendarioHTML(fechasActivas) {
-    const hoy = new Date();
-    const año = hoy.getFullYear();
-    const mes = hoy.getMonth();
-    
-    // Días del mes actual
-    const ultimoDia = new Date(año, mes + 1, 0).getDate();
-    let html = "";
-    
-    // Nombres de días (opcional)
-    const diasSemana = ['D','L','M','X','J','V','S'];
-    diasSemana.forEach(d => html += `<b style="font-size:10px; color:#bbb;">${d}</b>`);
-
-    for (let i = 1; i <= ultimoDia; i++) {
-        const fechaStr = año + "-" + String(mes + 1).padStart(2, '0') + "-" + String(i).padStart(2, '0');
-        const activo = fechasActivas.includes(fechaStr);
-        
-        const estilo = activo 
-            ? "background:#fff3cd; color:#856404; font-weight:bold; border: 1px solid #ffeeba; border-radius:50%;" 
-            : "color:#eee;";
-            
-        html += `<div style="padding:5px; font-size:14px; ${estilo}">${i}</div>`;
-    }
-    return html;
-}
-
-// <--- CIERRE CORRECTO DE FUNCIÓN 5.2
-
-
-// 6: OBTENER FIREBASE: Unificado para leer campo 'valor'
+// 6: OBTENER FIREBASE: Ahora con refresco de fecha real (CORREGIDO)
 async function obtenerDatosExtraFirebase(cantoId, uid) {
     try {
-        const { getDoc, doc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         const [docCej, docTra, docHist] = await Promise.all([
             getDoc(doc(db, "usuarios", uid, "cejilla", cantoId)),      
             getDoc(doc(db, "usuarios", uid, "transporte", cantoId)),   
@@ -324,24 +223,36 @@ async function obtenerDatosExtraFirebase(cantoId, uid) {
         ]);
 
         const datos = {};
+        
         if (docCej.exists()) datos.cejilla = docCej.data().valor;
         if (docTra.exists()) datos.acorde = docTra.data().valor;
+        
         if (docHist.exists()) {
             const d = docHist.data();
+            // Solo nos interesa lo que esté en 'valor'
             if (d.valor) {
-                const f = d.valor.toDate ? d.valor.toDate() : new Date(d.valor);
-                datos.uso = f.toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }); 
+                // Convertimos el Timestamp a objeto Date
+                const fechaDate = d.valor.toDate ? d.valor.toDate() : new Date(d.valor);
+                
+                // Formato para la celda de la tabla
+                datos.uso = fechaDate.toLocaleDateString('es-ES', { 
+                    day: 'numeric', 
+                    month: 'short', 
+                    year: 'numeric' 
+                }); 
             }
         }
 
         if (Object.keys(datos).length > 0) {
+            // Actualiza la fila en la tabla
             inyectarDatosEnTabla(cantoId, datos, false);
+            // Actualiza la caché local
             localStorage.setItem(`data-${cantoId}`, JSON.stringify(datos));
         }
-    } catch (e) { console.warn("Error en Sección 6:", e); }
-}
-
-// FINAL DE LA SECCION 6
+    } catch (e) {
+        console.warn("Error actualizando fecha para:", cantoId);
+    }
+} // FINAL DE LA SECCION 6
 
 
 // 7. TOGGLE SECTIONS: Abre/Cierra secciones y gira la flecha (collapsed)
@@ -604,26 +515,32 @@ document.getElementById('syncToggle').addEventListener('change', (e) => {
 });
 
 
-// 19: REGISTRO DE CAMBIO (Escritura con Historial)
+// 19. REGISTRO DE CAMBIO (Escritura): Unificado a campo 'valor'
 async function guardarCambioTransporte(cantoId, nuevoValor) {
     const user = auth.currentUser;
     if (!user) return;
-    try {
-        const ahora = new Date();
-        const fechaId = ahora.getTime().toString();
 
-        // Guardar Tono
+    try {
+        // 1. Guardamos el tono
         const refTransporte = doc(db, "usuarios", user.uid, "transporte", cantoId);
         await setDoc(refTransporte, { valor: nuevoValor }, { merge: true });
 
-        // Guardar Última Fecha (Raíz)
+        // 2. Guardamos la fecha
+        // IMPORTANTE: Usamos 'valor' para que jsgral.js y perfil.js hablen el mismo idioma
         const refFecha = doc(db, "usuarios", user.uid, "transportacion", cantoId);
-        await setDoc(refFecha, { valor: ahora }, { merge: true });
+        await setDoc(refFecha, {
+            valor: new Date() 
+        }, { merge: true });
 
-        // Guardar en Historial (Subcolección)
-        const refHist = doc(db, "usuarios", user.uid, "transportacion", cantoId, "historial", fechaId);
-        await setDoc(refHist, { valor: ahora }, { merge: true });
+        console.log(`✅ Fecha guardada en 'valor' para evitar conflictos con el visor.`);
+        
+        // Actualizar LocalStorage para vista inmediata
+        const localData = JSON.parse(localStorage.getItem(`data-${cantoId}`)) || {};
+        localData.acorde = nuevoValor;
+        localData.uso = new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
+        localStorage.setItem(`data-${cantoId}`, JSON.stringify(localData));
 
-        console.log("✅ Cambio y fecha de historial guardados.");
-    } catch (error) { console.error(error); }
+    } catch (error) {
+        console.error("Error al registrar el cambio:", error);
+    }
 }

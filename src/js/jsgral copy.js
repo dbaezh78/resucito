@@ -154,7 +154,7 @@ const chordImageFilenames = [
 
 ];
 
-// 4: DEFINICION DE OTRAS VARIABLES
+// 4 DEFINICION DE OTRAS VARIABLES
 //const IMAGE_BASE_PATH = "/docs/ima/";
 //const IMAGE_BASE_PATH = "https://docs.resucito.do/ima/";
 const IMAGE_BASE_PATH = "/src/ima/";
@@ -531,45 +531,36 @@ const renderCanto = () => {
     console.log("Canto rendering complete.");
 };
 
-// 14: INICIO FUNCION MODAL
-const openChordSelectionModal = (currentDisplayedNoteClicked) => {
-    clickedDisplayedNoteSemitone = noteToSemitone[currentDisplayedNoteClicked];
-    chordListContainer.innerHTML = '';
+// 14 INICIO FUNCION MODAL
+            const openChordSelectionModal = (currentDisplayedNoteClicked) => {
+                clickedDisplayedNoteSemitone = noteToSemitone[currentDisplayedNoteClicked];
+                chordListContainer.innerHTML = '';
 
-    // Obtenemos el ID una sola vez al abrir el modal para mayor eficiencia
-    const params = new URLSearchParams(window.location.search);
-    const idCantoActual = params.get('canto');
+                cords.forEach(chord => {
+                    const chordItem = document.createElement('div');
+                    chordItem.classList.add('chord-item');
+                    chordItem.textContent = chord;
+                    chordItem.addEventListener('click', () => {
+                        const selectedChordFromModalSemitone = noteToSemitone[chord];
+                        const semitonesToShift = selectedChordFromModalSemitone - clickedDisplayedNoteSemitone;
 
-    cords.forEach(chord => {
-        const chordItem = document.createElement('div');
-        chordItem.classList.add('chord-item');
-        chordItem.textContent = chord;
-        chordItem.addEventListener('click', () => {
-            const selectedChordFromModalSemitone = noteToSemitone[chord];
-            const semitonesToShift = selectedChordFromModalSemitone - clickedDisplayedNoteSemitone;
+                        currentKeyOffset = (currentKeyOffset + semitonesToShift) % cords.length;
+                        if (currentKeyOffset < 0) currentKeyOffset += cords.length;
 
-            currentKeyOffset = (currentKeyOffset + semitonesToShift) % cords.length;
-            if (currentKeyOffset < 0) currentKeyOffset += cords.length;
+                        // GUARDAR TRANSPORTE (Independiente de la cejilla)
+                        const idCantoActual = new URLSearchParams(window.location.search).get('canto');
+                        if (window.firebaseAPI && idCantoActual) {
+                            window.firebaseAPI.guardarDato(idCantoActual, currentKeyOffset.toString(), 'transporte');
+                        }
 
-            // --- LÓGICA DE GUARDAR CON FECHA CONECTADA A SECCIÓN 29 ---
-            if (idCantoActual) {
-                // Llamamos a la Sección 29 para que guarde el tono Y la fecha (vía Sección 31)
-                if (typeof window.guardarTransporte === 'function') {
-                    window.guardarTransporte(idCantoActual, currentKeyOffset.toString());
-                } else if (window.firebaseAPI) {
-                    // Respaldo de seguridad
-                    window.firebaseAPI.guardarDato(idCantoActual, currentKeyOffset.toString(), 'transporte');
-                }
-            }
-
-            renderCanto(); 
-            closeChordSelectionModal(); 
-            updateShowAllAsambleaIcon(); 
-        });
-        chordListContainer.appendChild(chordItem);
-    });
-    chordSelectionModal.style.display = 'flex';
-};  // FIN FUNCION MODAL
+                        renderCanto(); 
+                        closeChordSelectionModal(); 
+                        updateShowAllAsambleaIcon(); 
+                    });
+                    chordListContainer.appendChild(chordItem);
+                });
+                chordSelectionModal.style.display = 'flex';
+            };  // FIN FUNCION MODAL
 
 
 
@@ -1081,7 +1072,7 @@ if (nCanElement) {
         }
     }
 
-// 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE (CON FECHA)
+// 27.26 LÓGICA DE PERSISTENCIA INDEPENDIENTE ---
     if (cejillaSelect) {
         const params = new URLSearchParams(window.location.search);
         const idCantoActual = params.get('canto');
@@ -1097,27 +1088,24 @@ if (nCanElement) {
             renderCanto();
         };
 
-        // Carga inicial
+        // Carga rápida inicial (Local)
         const localCejilla = localStorage.getItem(`cejilla_${idCantoActual}`);
         const localTransporte = localStorage.getItem(`transporte_${idCantoActual}`);
+        
         cejillaSelect.value = localCejilla || (cantoSpecificData.cejilla || "0");
         currentKeyOffset = parseInt(localTransporte) || 0;
 
-        // --- EL CAMBIO CRÍTICO AQUÍ ---
+        // Listener solo para la cejilla
         cejillaSelect.addEventListener('change', () => {
-            if (idCantoActual) {
-                // LLAMAMOS A LA SECCIÓN 30 (que a su vez llama a la 31 para la fecha)
-                if (typeof window.guardarCejilla === 'function') {
-                    window.guardarCejilla(idCantoActual, cejillaSelect.value);
-                } else if (window.firebaseAPI) {
-                    window.firebaseAPI.guardarDato(idCantoActual, cejillaSelect.value, 'cejilla');
-                }
+            if (window.firebaseAPI && idCantoActual) {
+                window.firebaseAPI.guardarDato(idCantoActual, cejillaSelect.value, 'cejilla');
             }
         });
 
+        // Renderizado inicial
         setTimeout(() => renderCanto(), 500);
     }
-
+    
     // 27.27 Parsear y almacenar los datos del canto actual
     // Asegurarse de que currentCantoData sea un objeto válido antes de intentar asignar propiedades.
     // Esto es una medida defensiva si por alguna razón la declaración global no se procesara a tiempo.
@@ -1218,7 +1206,7 @@ const cantoBackgroundMap = {
 };
 
 
-// 29: GUARDAR TRANSPORTE EN FIREBASE
+// 29 GUARDAR TRANSPORTE EN FIREBASE
 window.guardarTransporte = async function(cantoId, valor) {
     if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
         // Guarda el valor numérico
@@ -1231,7 +1219,7 @@ window.guardarTransporte = async function(cantoId, valor) {
     }
 };
 
-// 30: GUARDAR CEJILLA EN FIREBASE
+// 30 GUARDAR CEJILLA EN FIREBASE
 window.guardarCejilla = async function(cantoId, valor) {
     if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
         // Guarda la cejilla
@@ -1245,27 +1233,19 @@ window.guardarCejilla = async function(cantoId, valor) {
 };
 
 
-// 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL)
+// 31 REGISTRO DE CAMBIO (FECHA)
 window.registrarFechaCambio = async function(cantoId) {
     try {
         if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
             const ahora = new Date(); 
-            const fechaId = ahora.getTime().toString(); 
-
-            // 1. Guardamos la última fecha (Raíz)
+            // IMPORTANTE: El nombre 'transportacion' debe ser exacto
             await window.firebaseAPI.guardarDato(cantoId, ahora, 'transportacion');
-            
-            // 2. Guardamos en el HISTORIAL (Subcolección)
-            // Usamos una ruta directa que tu API pueda entender
-            await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, ahora, 'transportacion');
-            
-            console.log("📅 Historial guardado correctamente para: " + cantoId);
+            console.log("📅 Sincronización Exitosa: Fecha guardada para " + cantoId);
         }
     } catch (e) {
-        console.warn("Error en Sección 31:", e);
+        console.warn("Error en Sección 31 (Registro Fecha):", e);
     }
 };
-
 
 // EXPOSICIÓN GLOBAL ABSOLUTA
 window.actualizarAcordes = actualizarAcordes;
