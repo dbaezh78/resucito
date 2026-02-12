@@ -1245,22 +1245,31 @@ window.guardarCejilla = async function(cantoId, valor) {
 };
 
 
-// 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL ACUMULATIVO)
+// 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL DETALLADO)
 window.registrarFechaCambio = async function(cantoId) {
     try {
         if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
             const ahora = new Date(); 
-            // Usamos milisegundos para que cada clic sea un registro nuevo
             const fechaId = ahora.getTime().toString(); 
 
-            // 1. Guardamos la última fecha (Raíz)
+            // Obtenemos los valores actuales de la pantalla
+            const acordeActual = document.getElementById('transporteControl')?.value || "0";
+            const cejillaActual = document.getElementById('cejillaSelect')?.value || "0";
+
+            // 1. Guardamos la última fecha en la raíz
             await window.firebaseAPI.guardarDato(cantoId, ahora, 'transportacion');
             
-            // 2. Guardamos en el HISTORIAL (Subcolección)
-            // Esto es lo que permite que el calendario tenga muchos recuadros dorados
-            await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, ahora, 'transportacion');
+            // 2. Guardamos en el HISTORIAL con ACORDE y CEJILLA
+            // Guardamos un objeto con todos los datos
+            const datosHistorial = {
+                valor: ahora,
+                acorde: acordeActual,
+                cejilla: cejillaActual
+            };
             
-            console.log("📅 Nuevo punto en el historial para: " + cantoId);
+            await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datosHistorial, 'transportacion');
+            
+            console.log("📅 Historial detallado guardado (Tono: " + acordeActual + ")");
         }
     } catch (e) {
         console.warn("Error en Sección 31:", e);

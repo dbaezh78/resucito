@@ -443,3 +443,21 @@ input:checked + .slider:before {
 .tabla-gestion tbody tr:hover {
     background-color: rgba(188, 0, 9, 0.05); /* Un tono rojizo muy suave al pasar el mouse */
 }
+
+.xclose {
+    position:absolute; 
+    top:-17px; right:328px; 
+    border:none; 
+    background:none; 
+    font-size:24px; 
+    cursor:pointer; 
+    color:white;
+}
+
+.ttlo {
+    padding: 20px;
+    background: #bc0009;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

@@ -526,14 +526,13 @@ async function guardarCambioTransporte(cantoId, nuevoValor) {
     }
 }
 
-// --- 20: SISTEMA DE HISTORIAL VISUAL Y LISTADO ---
+// --- 20: SISTEMA DE HISTORIAL VISUAL (NAVEGABLE) ---
+
 let fechasHistorialActivas = [];
-let fechasOriginalesFull = []; 
 let mesVisualizado = new Date().getMonth();
 let añoVisualizado = new Date().getFullYear();
 let totalRegistrosCanto = 0; 
 
-// 20.1: APERTURA Y CARGA DE DATOS
 window.abrirCalendario = async function(cantoId) {
     const user = auth.currentUser;
     if (!user) return;
@@ -542,51 +541,50 @@ window.abrirCalendario = async function(cantoId) {
         const { collection, getDocs, doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
         fechasHistorialActivas = [];
-        fechasOriginalesFull = [];
         totalRegistrosCanto = 0;
 
+        // 1. LEER TODO DE UN GOLPE (Optimiza la cuota)
         const refHistorial = collection(db, "usuarios", user.uid, "transportacion", cantoId, "historial");
-        const refRaiz = doc(db, "usuarios", user.uid, "transportacion", cantoId);
-        const [snapshot, docRaiz] = await Promise.all([getDocs(refHistorial), getDoc(refRaiz)]);
+        const snapshot = await getDocs(refHistorial);
         
-        // 1. Procesar Historial (Subcolección)
         snapshot.forEach(docSnap => {
-            const data = docSnap.data();
-            const d = data.valor || data.ultimaActualizacion;
+            const d = docSnap.data().valor || docSnap.data().ultimaActualizacion;
             if (d) {
                 const f = d.toDate ? d.toDate() : new Date(d);
-                fechasHistorialActivas.push(`${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`);
-                
-                fechasOriginalesFull.push({
-                    fecha: f,
-                    acorde: data.acorde || "---",
-                    cejilla: data.cejilla || "0"
-                });
-                totalRegistrosCanto++;
-            }
-        });
-
-        // 2. Procesar Raíz (Fecha antigua)
-        if (docRaiz.exists()) {
-            const dataRaiz = docRaiz.data();
-            const fechaAntigua = dataRaiz.valor || dataRaiz.ultimaActualizacion;
-            if (fechaAntigua) {
-                const f = fechaAntigua.toDate ? fechaAntigua.toDate() : new Date(fechaAntigua);
-                const clave = `${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`;
-                
-                if (!fechasHistorialActivas.includes(clave)) {
-                    fechasHistorialActivas.push(clave);
-                    fechasOriginalesFull.push({
-                        fecha: f,
-                        acorde: dataRaiz.acorde || "---",
-                        cejilla: dataRaiz.cejilla || "0"
-                    });
+                if (!isNaN(f.getTime())) {
+                    fechasHistorialActivas.push(`${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`);
                     totalRegistrosCanto++;
                 }
             }
+        });
+
+        // 2. EL DETECTIVE DE RAÍZ (Para recuperar el 20 de enero y otras antiguas)
+        const refRaiz = doc(db, "usuarios", user.uid, "transportacion", cantoId);
+        const docRaiz = await getDoc(refRaiz);
+        
+        if (docRaiz.exists()) {
+            const data = docRaiz.data();
+            
+            // Revisamos TODOS los campos donde podría estar el 20 de enero
+            const fechasAProbar = [data.valor, data.ultimaActualizacion, data.fecha, data.uso];
+            
+            fechasAProbar.forEach(campo => {
+                if (campo) {
+                    const f = campo.toDate ? campo.toDate() : new Date(campo);
+                    if (!isNaN(f.getTime())) {
+                        const clave = `${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`;
+                        
+                        // Solo la añadimos si no está repetida
+                        if (!fechasHistorialActivas.includes(clave)) {
+                            fechasHistorialActivas.push(clave);
+                            totalRegistrosCanto++; 
+                        }
+                    }
+                }
+            });
         }
 
-        fechasOriginalesFull.sort((a, b) => b - a);
+        // Configuración inicial del Modal
         mesVisualizado = new Date().getMonth();
         añoVisualizado = new Date().getFullYear();
 
@@ -601,10 +599,13 @@ window.abrirCalendario = async function(cantoId) {
         document.addEventListener('keydown', manejarEscape);
         actualizarVistaCalendario();
 
-    } catch (e) { console.error("Error historial:", e); }
+    } catch (e) { 
+        console.error("Error en calendario:", e);
+        if(e.message.includes("quota")) alert("Firebase está saturado. Espera 1 minuto y vuelve a intentar.");
+    }
 };
 
-// 20.2: NAVEGACIÓN DE MESES
+// 20.2: NAVEGACIÓN
 window.cambiarMes = function(direccion) {
     mesVisualizado += direccion;
     if (mesVisualizado < 0) { mesVisualizado = 11; añoVisualizado--; }
@@ -612,7 +613,7 @@ window.cambiarMes = function(direccion) {
     actualizarVistaCalendario();
 };
 
-// 20.3: VISTA DEL CALENDARIO
+// 20.3: RENDERIZADO (Diseño con contador)
 function actualizarVistaCalendario() {
     const modal = document.getElementById('calendar-modal');
     const nombreMes = new Date(añoVisualizado, mesVisualizado).toLocaleString('es-ES', { month: 'long' }).toUpperCase();
@@ -620,6 +621,7 @@ function actualizarVistaCalendario() {
     modal.innerHTML = `
         <div id="calendar-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:flex; align-items:center; justify-content:center;">
             <div id="calendar-content" style="background:white; padding:20px; border-radius:15px; width:300px; text-align:center; position:relative; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                
                 <button onclick="cerrarCalendario()" class="xclose">&times;</button>
                 
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
@@ -632,74 +634,20 @@ function actualizarVistaCalendario() {
                     ${generarGridNavegable(fechasHistorialActivas, mesVisualizado, añoVisualizado)}
                 </div>
                 
-                <div style="margin-top:20px; border-top: 1px solid #eee; padding-top:15px;">
+                <div style="margin-top:20px; border-top: 2px solid #f9f9f9; padding-top:15px;">
                     <p style="margin:0; font-size:13px; color:#444;">
-                        Has transportado este canto 
-                        <span onclick="abrirListaDetallada()" style="color:#d4af37; font-weight:bold; font-size:16px; cursor:pointer; text-decoration:underline;">
-                            ${totalRegistrosCanto}
-                        </span> veces
+                        Has transportado este canto <b style="color:#d4af37; font-size:16px;">${totalRegistrosCanto}</b> veces
                     </p>
                 </div>
             </div>
         </div>`;
 
-    document.getElementById('calendar-overlay').onclick = (e) => {
+    document.getElementById('calendar-overlay').addEventListener('click', (e) => {
         if (e.target.id === 'calendar-overlay') cerrarCalendario();
-    };
+    });
 }
 
-// 20.4: LISTADO TÉCNICO DETALLADO (Única versión)
-window.abrirListaDetallada = function() {
-    let listaModal = document.getElementById('lista-detallada-modal');
-    if (!listaModal) {
-        listaModal = document.createElement('div');
-        listaModal.id = 'lista-detallada-modal';
-        listaModal.style = "position:fixed; top:0; left:0; width:100%; height:100%; z-index:1000000; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center;";
-        document.body.appendChild(listaModal);
-    }
-
-    const nombresAcordes = ["La m", "Si♭ m", "Si m", "Do m", "Do# m", "Re m", "Re# m", "Mi m", "Fa m", "Fa# m", "Sol m", "Sol# m"];
-
-    const itemsHtml = fechasOriginalesFull.map((reg, index) => {
-        const f = reg.fecha; 
-        const fechaTxt = f.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' });
-        const horaTxt = f.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-        
-        const t = parseInt(reg.acorde);
-        const acordeTxt = isNaN(t) ? "---" : nombresAcordes[t];
-        const cejillaTxt = reg.cejilla && reg.cejilla !== "0" ? reg.cejilla : "No";
-
-        return `
-        <div style="padding:12px; border-bottom:1px solid #eee; display:flex; flex-direction:column; gap:5px; background: white; text-align: left;">
-            <div style="display:flex; justify-content:space-between; font-size:13px;">
-                <span style="color:#888;">${fechaTxt} - ${horaTxt}</span>
-                <b style="color:#d4af37;">#${fechasOriginalesFull.length - index}</b>
-            </div>
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-                <span style="font-size:15px; font-weight:bold; color:#333;">🎸 ${acordeTxt}</span>
-                <span style="font-size:12px; background:#f0f0f0; padding:2px 8px; border-radius:10px; color:#666;">Cejilla: ${cejillaTxt}</span>
-            </div>
-        </div>`;
-    }).join('');
-
-    listaModal.innerHTML = `
-        <div id="lista-overlay" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
-            <div style="background:white; border-radius:15px; width:320px; max-height:80vh; overflow:hidden; display:flex; flex-direction:column; position:relative; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                <button onclick="document.getElementById('lista-detallada-modal').remove()" class="xclose">&times;</button>
-                <div class="ttlo">HISTORIAL DETALLADO</div>
-                <div style="flex-grow:1; overflow-y:auto; background:#fff;">
-                    ${itemsHtml || '<p style="padding:20px; color:#999; text-align:center;">No hay registros.</p>'}
-                </div>
-                <div style="padding:10px; font-size:11px; color:#999; text-align:center; background:#f9f9f9; border-top:1px solid #eee;">Desliza para ver más</div>
-            </div>
-        </div>`;
-
-    listaModal.onclick = (e) => {
-        if (e.target.id === 'lista-overlay') listaModal.remove();
-    };
-};
-
-// 20.5: CIERRE Y AUXILIARES
+// 20.4: CIERRE
 window.cerrarCalendario = function() {
     const modal = document.getElementById('calendar-modal');
     if (modal) modal.remove();
@@ -707,13 +655,10 @@ window.cerrarCalendario = function() {
 };
 
 function manejarEscape(e) {
-    if (e.key === "Escape") {
-        const lista = document.getElementById('lista-detallada-modal');
-        if (lista) lista.remove();
-        else cerrarCalendario();
-    }
+    if (e.key === "Escape") cerrarCalendario();
 }
 
+// 20.5: LÓGICA DEL GRID (Recuadro Dorado)
 function generarGridNavegable(fechasActivas, mes, año) {
     const ultimoDia = new Date(año, mes + 1, 0).getDate();
     const primerDiaSemana = new Date(año, mes, 1).getDay();
