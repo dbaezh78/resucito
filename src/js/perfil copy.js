@@ -500,7 +500,7 @@ document.getElementById('syncToggle').addEventListener('change', (e) => {
 });
 
 
-// 19: REGISTRO DE CAMBIO (Escritura con Historial)
+// 19: REGISTRO DE CAMBIO (Escritura con Historial Técnico en Perfil)
 async function guardarCambioTransporte(cantoId, nuevoValor) {
     const user = auth.currentUser;
     if (!user) return;
@@ -508,31 +508,44 @@ async function guardarCambioTransporte(cantoId, nuevoValor) {
         const ahora = new Date();
         const fechaId = ahora.getTime().toString(); 
 
-        // A. Guardar Tono
+        // BUSCAMOS LA CEJILLA: Para que el historial no quede incompleto
+        const refCejilla = doc(db, "usuarios", user.uid, "cejilla", cantoId);
+        const snapCejilla = await getDoc(refCejilla);
+        const cejillaActual = snapCejilla.exists() ? snapCejilla.data().valor : "0";
+
+        const datosTecnicos = { 
+            valor: ahora, 
+            acorde: nuevoValor, 
+            cejilla: cejillaActual 
+        };
+
+        // A. Actualizamos el Tono
         const refTransporte = doc(db, "usuarios", user.uid, "transporte", cantoId);
         await setDoc(refTransporte, { valor: nuevoValor }, { merge: true });
 
-        // B. Guardar Última Fecha (Raíz)
+        // B. Actualizamos la Raíz de Transportación
         const refFecha = doc(db, "usuarios", user.uid, "transportacion", cantoId);
-        await setDoc(refFecha, { valor: ahora }, { merge: true });
+        await setDoc(refFecha, datosTecnicos, { merge: true });
 
-        // C. Guardar en HISTORIAL (Subcolección para el calendario)
+        // C. Creamos el punto en el HISTORIAL
         const refHist = doc(db, "usuarios", user.uid, "transportacion", cantoId, "historial", fechaId);
-        await setDoc(refHist, { valor: ahora }, { merge: true });
+        await setDoc(refHist, datosTecnicos, { merge: true });
 
-        console.log("✅ Cambio y punto de historial guardados correctamente.");
+        console.log("✅ Historial técnico actualizado desde perfil");
     } catch (error) { 
-        console.error("Error al guardar transporte:", error); 
+        console.error("Error en Sección 19:", error); 
     }
 }
 
-// --- 20: SISTEMA DE HISTORIAL VISUAL (NAVEGABLE) ---
 
+// --- 20: SISTEMA DE HISTORIAL VISUAL Y LISTADO ---
 let fechasHistorialActivas = [];
+let fechasOriginalesFull = []; 
 let mesVisualizado = new Date().getMonth();
 let añoVisualizado = new Date().getFullYear();
 let totalRegistrosCanto = 0; 
 
+// 20.1: APERTURA Y CARGA DE DATOS
 window.abrirCalendario = async function(cantoId) {
     const user = auth.currentUser;
     if (!user) return;
@@ -541,40 +554,83 @@ window.abrirCalendario = async function(cantoId) {
         const { collection, getDocs, doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
         fechasHistorialActivas = [];
+        fechasOriginalesFull = [];
         totalRegistrosCanto = 0;
 
-        // 1. LEER HISTORIAL (Subcolección)
         const refHistorial = collection(db, "usuarios", user.uid, "transportacion", cantoId, "historial");
-        const snapshot = await getDocs(refHistorial);
+        const refRaiz = doc(db, "usuarios", user.uid, "transportacion", cantoId);
+        const [snapshot, docRaiz] = await Promise.all([getDocs(refHistorial), getDoc(refRaiz)]);
         
+        // 1. Procesar Historial
         snapshot.forEach(docSnap => {
-            const d = docSnap.data().valor;
+            const data = docSnap.data();
+            // Detective de fechas: buscamos en 'valor', 'ultimaActualizacion' o 'fecha'
+            const d = data.valor || data.ultimaActualizacion || (data.seconds ? data : null);
+            
             if (d) {
+                // Convertimos a objeto Date de JS de forma segura
                 const f = d.toDate ? d.toDate() : new Date(d);
-                fechasHistorialActivas.push(`${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`);
-                totalRegistrosCanto++; 
+                
+                if (!isNaN(f.getTime())) {
+                    // Guardamos para el calendario (formato texto YYYY-M-D)
+                    fechasHistorialActivas.push(`${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`);
+                    
+                    // GUARDAMOS EL OBJETO NORMALIZADO PARA LA LISTA
+                    fechasOriginalesFull.push({
+                        fecha: f,
+                        acorde: data.acorde !== undefined ? data.acorde : "---",
+                        cejilla: data.cejilla !== undefined ? data.cejilla : "0"
+                    });
+                    totalRegistrosCanto++;
+                }
             }
         });
 
-        // 2. LEER RAÍZ (Fecha antigua / ultimaActualizacion)
-        const refRaiz = doc(db, "usuarios", user.uid, "transportacion", cantoId);
-        const docRaiz = await getDoc(refRaiz);
-        
+        // 2. Procesar Raíz (Registros antiguos fuera de la subcolección)
         if (docRaiz.exists()) {
-            const data = docRaiz.data();
-            const fechaAntigua = data.valor || data.ultimaActualizacion;
+            const dataRaiz = docRaiz.data();
+            const dRaiz = dataRaiz.valor || dataRaiz.ultimaActualizacion;
             
-            if (fechaAntigua) {
-                const f = fechaAntigua.toDate ? fechaAntigua.toDate() : new Date(fechaAntigua);
-                const claveAntigua = `${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`;
-                
-                if (!fechasHistorialActivas.includes(claveAntigua)) {
-                    fechasHistorialActivas.push(claveAntigua);
-                    totalRegistrosCanto++; 
+            if (dRaiz) {
+                const f = dRaiz.toDate ? dRaiz.toDate() : new Date(dRaiz);
+                if (!isNaN(f.getTime())) {
+                    const clave = `${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`;
+                    if (!fechasHistorialActivas.includes(clave)) {
+                        fechasHistorialActivas.push(clave);
+                        fechasOriginalesFull.push({
+                            fecha: f,
+                            acorde: dataRaiz.acorde || "---",
+                            cejilla: dataRaiz.cejilla || "0"
+                        });
+                        totalRegistrosCanto++;
+                    }
                 }
             }
         }
 
+        // ORDENACIÓN CORRECTA (Más reciente primero)
+        fechasOriginalesFull.sort((a, b) => b.fecha - a.fecha);
+
+        // 20.3: Procesar Raíz (Fecha antigua)
+        if (docRaiz.exists()) {
+    const dataRaiz = docRaiz.data();
+    const fechaAntigua = dataRaiz.valor || dataRaiz.ultimaActualizacion;
+    if (fechaAntigua) {
+        const f = fechaAntigua.toDate ? fechaAntigua.toDate() : new Date(fechaAntigua);
+        const clave = `${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`;
+        if (!fechasHistorialActivas.includes(clave)) {
+            fechasHistorialActivas.push(clave);
+            fechasOriginalesFull.push({
+                fecha: f,
+                acorde: dataRaiz.acorde || "---",
+                cejilla: dataRaiz.cejilla || "0"
+            });
+            totalRegistrosCanto++;
+        }
+    }
+}
+
+        fechasOriginalesFull.sort((a, b) => b - a);
         mesVisualizado = new Date().getMonth();
         añoVisualizado = new Date().getFullYear();
 
@@ -592,7 +648,7 @@ window.abrirCalendario = async function(cantoId) {
     } catch (e) { console.error("Error historial:", e); }
 };
 
-// 20.2: NAVEGACIÓN DE MESES
+// 20.4: NAVEGACIÓN DE MESES
 window.cambiarMes = function(direccion) {
     mesVisualizado += direccion;
     if (mesVisualizado < 0) { mesVisualizado = 11; añoVisualizado--; }
@@ -600,7 +656,7 @@ window.cambiarMes = function(direccion) {
     actualizarVistaCalendario();
 };
 
-// 20.3: RENDERIZADO DEL HTML (UNIFICADO)
+// 20.5: VISTA DEL CALENDARIO
 function actualizarVistaCalendario() {
     const modal = document.getElementById('calendar-modal');
     const nombreMes = new Date(añoVisualizado, mesVisualizado).toLocaleString('es-ES', { month: 'long' }).toUpperCase();
@@ -608,34 +664,106 @@ function actualizarVistaCalendario() {
     modal.innerHTML = `
         <div id="calendar-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:flex; align-items:center; justify-content:center;">
             <div id="calendar-content" style="background:white; padding:20px; border-radius:15px; width:300px; text-align:center; position:relative; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
-                
                 <button onclick="cerrarCalendario()" class="xclose">&times;</button>
                 
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                    <button onclick="cambiarMes(-1)" style="border:none; background:#f0f0f0; border-radius:5px; padding:5px 10px; cursor:pointer; font-weight:bold;">&lt;</button>
-                    <h3 style="margin:0; font-size:1em; color:#333;">${nombreMes} ${añoVisualizado}</h3>
-                    <button onclick="cambiarMes(1)" style="border:none; background:#f0f0f0; border-radius:5px; padding:5px 10px; cursor:pointer; font-weight:bold;">&gt;</button>
+                    <button onclick="cambiarMes(-1)" style="border:none; background:#e0e0e0; border-radius:5px; padding:5px 12px; cursor:pointer; font-weight:bold;">&lt;</button>
+                    <h3 style="margin:0; font-size:1.1em; color:#333;">${nombreMes} ${añoVisualizado}</h3>
+                    <button onclick="cambiarMes(1)" style="border:none; background:#e0e0e0; border-radius:5px; padding:5px 12px; cursor:pointer; font-weight:bold;">&gt;</button>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; background: #f9f9f9; padding: 10px; border-radius: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; background: #fdfdfd; padding: 10px; border-radius: 10px; border: 1px solid #eee;">
                     ${generarGridNavegable(fechasHistorialActivas, mesVisualizado, añoVisualizado)}
                 </div>
                 
                 <div style="margin-top:20px; border-top: 1px solid #eee; padding-top:15px;">
-                    <p style="margin:0; font-size:13px; color:#555; font-weight: 500;">
-                        Has transportado este canto <span style="color:#d4af37; font-weight:bold; font-size:15px;">${totalRegistrosCanto}</span> veces
+                    <p style="margin:0; font-size:13px; color:#444;">
+                        Has transportado este canto 
+                        <span onclick="abrirListaDetallada()" style="color:#d4af37; font-weight:bold; font-size:16px; cursor:pointer; text-decoration:underline;">
+                            ${totalRegistrosCanto}
+                        </span> veces
                     </p>
-                    <p style="margin-top:8px; font-size:10px; color:#bbb;">Los recuadros indican los días de actividad.</p>
                 </div>
             </div>
         </div>`;
 
-    document.getElementById('calendar-overlay').addEventListener('click', (e) => {
+    document.getElementById('calendar-overlay').onclick = (e) => {
         if (e.target.id === 'calendar-overlay') cerrarCalendario();
-    });
+    };
 }
 
-// 20.4: CIERRE Y LIMPIEZA
+// 20.6: LISTADO TÉCNICO DETALLADO
+window.abrirListaDetallada = function() {
+    let listaModal = document.getElementById('lista-detallada-modal');
+    if (!listaModal) {
+        listaModal = document.createElement('div');
+        listaModal.id = 'lista-detallada-modal';
+        // z-index mayor que el del calendario para que aparezca encima
+        listaModal.style = "position:fixed; top:0; left:0; width:100%; height:100%; z-index:1000001; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; font-family: sans-serif;";
+        document.body.appendChild(listaModal);
+    }
+
+    const nombresAcordes = ["La m", "Si♭ m", "Si m", "Do m", "Do# m", "Re m", "Re# m", "Mi m", "Fa m", "Fa# m", "Sol m", "Sol# m"];
+
+    const itemsHtml = fechasOriginalesFull.map((reg, index) => {
+        const f = reg.fecha; // Extraemos la fecha del objeto normalizado
+        
+        // Verificación de seguridad extra
+        if (!f || isNaN(f.getTime())) return ""; 
+
+        const fechaTxt = f.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' });
+        const horaTxt = f.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+        
+        const t = parseInt(reg.acorde);
+        const acordeTxt = isNaN(t) ? "---" : (nombresAcordes[t] || "---");
+        const cejillaTxt = reg.cejilla && reg.cejilla !== "0" ? reg.cejilla : "No";
+        // ... resto del return del HTML
+
+        return `
+        <div style="padding:12px; border-bottom:1px solid #eee; display:flex; flex-direction:column; gap:5px; background: white; text-align: left;">
+            <div style="display:flex; justify-content:space-between; font-size:12px;">
+                <span style="color:#888;">${fechaTxt} - ${horaTxt}</span>
+                <b style="color:#d4af37; font-size:11px;">#${fechasOriginalesFull.length - index}</b>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:15px; font-weight:bold; color:#333;">🎸 ${acordeTxt}</span>
+                <span style="font-size:12px; background:#f5f5f5; padding:3px 10px; border-radius:12px; color:#666; border: 1px solid #eee;">
+                    Cejilla: <b>${cejillaTxt}</b>
+                </span>
+            </div>
+        </div>`;
+    }).join('');
+
+    listaModal.innerHTML = `
+        <div id="lista-overlay" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
+            <div style="background:white; border-radius:15px; width:320px; max-height:80vh; overflow:hidden; display:flex; flex-direction:column; position:relative; box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
+                
+                <button onclick="document.getElementById('lista-detallada-modal').remove()" class="xclose" style="z-index:10;">&times;</button>
+                
+                <div class="ttlo" style="padding:20px; background:#d4af37; color:white; font-weight:bold; text-align:center; font-size:1.1em; letter-spacing:1px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    HISTORIAL TÉCNICO
+                </div>
+
+                <div style="flex-grow:1; overflow-y:auto; background:#fff;">
+                    ${itemsHtml || '<div style="padding:40px; color:#bbb; text-align:center;">No se encontraron registros válidos</div>'}
+                </div>
+
+                <div style="padding:12px; font-size:10px; color:#aaa; text-align:center; background:#fcfcfc; border-top:1px solid #eee;">
+                    Desliza para ver registros anteriores
+                </div>
+            </div>
+        </div>`;
+
+    // Cierre al hacer clic fuera del recuadro blanco
+    listaModal.onclick = (e) => {
+        if (e.target.id === 'lista-overlay') {
+            listaModal.remove();
+        }
+    };
+};
+
+
+// 20.7: CIERRE Y AUXILIARES
 window.cerrarCalendario = function() {
     const modal = document.getElementById('calendar-modal');
     if (modal) modal.remove();
@@ -643,28 +771,26 @@ window.cerrarCalendario = function() {
 };
 
 function manejarEscape(e) {
-    if (e.key === "Escape") cerrarCalendario();
+    if (e.key === "Escape") {
+        const lista = document.getElementById('lista-detallada-modal');
+        if (lista) lista.remove();
+        else cerrarCalendario();
+    }
 }
 
-// 20.5: LÓGICA DEL GRID
 function generarGridNavegable(fechasActivas, mes, año) {
     const ultimoDia = new Date(año, mes + 1, 0).getDate();
     const primerDiaSemana = new Date(año, mes, 1).getDay();
     let html = "";
-
-    ['D','L','M','M','J','V','S'].forEach(d => html += `<b style="font-size:0.7em; color:#bbb;">${d}</b>`);
-
+    ['D','L','M','M','J','V','S'].forEach(d => html += `<b style="font-size:0.75em; color:#bbb; padding-bottom:5px;">${d}</b>`);
     for (let e = 0; e < primerDiaSemana; e++) html += `<div></div>`;
-
     for (let i = 1; i <= ultimoDia; i++) {
-        const claveActual = `${año}-${mes + 1}-${i}`;
-        const activo = fechasActivas.includes(claveActual);
-        
+        const clave = `${año}-${mes + 1}-${i}`;
+        const activo = fechasActivas.includes(clave);
         const estilo = activo 
             ? "background:#d4af37; color:white; font-weight:bold; border-radius:4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" 
-            : "color:#444;";
-            
-        html += `<div style="padding:5px; font-size:0.9em; ${estilo}">${i}</div>`;
+            : "color:#555;";
+        html += `<div style="padding:6px 0; font-size:0.95em; ${estilo}">${i}</div>`;
     }
     return html;
 }

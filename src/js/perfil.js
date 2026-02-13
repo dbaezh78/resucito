@@ -80,7 +80,7 @@ async function renderizarTablaCantos() {
                     <tr>
                         <th>Canto</th>
                         <th>Estado / Descarga</th>
-                        <th>Uso</th>
+                        <th>Usox/th>
                         <th>Cejilla (Or/Tu)</th>
                         <th>Acorde (Or/Tu)</th>
                     </tr>
@@ -209,7 +209,7 @@ function inyectarDatosEnTabla(cantoId, data, esLocal = false) {
 // <--- CIERRE CORRECTO DE FUNCIÓN 5
 
 
-// 6: OBTENER FIREBASE: Unificado para leer campo 'valor'
+// 6: OBTENER FIREBASE: Unificado para leer campo 'valor' (CORREGIDO PARA MAPAS)
 async function obtenerDatosExtraFirebase(cantoId, uid) {
     try {
         const { getDoc, doc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
@@ -222,11 +222,30 @@ async function obtenerDatosExtraFirebase(cantoId, uid) {
         const datos = {};
         if (docCej.exists()) datos.cejilla = docCej.data().valor;
         if (docTra.exists()) datos.acorde = docTra.data().valor;
+        
         if (docHist.exists()) {
             const d = docHist.data();
             if (d.valor) {
-                const f = d.valor.toDate ? d.valor.toDate() : new Date(d.valor);
-                datos.uso = f.toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }); 
+                let fechaFinal = null;
+
+                // DETECTOR PROFUNDO: Si 'valor' es un objeto, la fecha está en 'valor.valor'
+                if (typeof d.valor === 'object' && d.valor.valor) {
+                    const temp = d.valor.valor;
+                    fechaFinal = temp.toDate ? temp.toDate() : new Date(temp);
+                    
+                    // Aprovechamos para capturar acorde y cejilla si vienen en el mapa
+                    if (d.valor.cejilla !== undefined) datos.cejilla = d.valor.cejilla;
+                    if (d.valor.acorde !== undefined) datos.acorde = d.valor.acorde;
+                } 
+                // Si es el formato antiguo (fecha directa)
+                else {
+                    fechaFinal = d.valor.toDate ? d.valor.toDate() : new Date(d.valor);
+                }
+
+                // Si la fecha es válida, la formateamos para la tabla
+                if (fechaFinal && !isNaN(fechaFinal.getTime())) {
+                    datos.uso = fechaFinal.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' }); 
+                }
             }
         }
 
@@ -236,9 +255,7 @@ async function obtenerDatosExtraFirebase(cantoId, uid) {
         }
     } catch (e) { console.warn("Error en Sección 6:", e); }
 }
-
 // FINAL DE LA SECCION 6
-
 
 // 7. TOGGLE SECTIONS: Abre/Cierra secciones y gira la flecha (collapsed)
 window.toggleSection = function(sectionId, wrapperId) {
@@ -500,7 +517,7 @@ document.getElementById('syncToggle').addEventListener('change', (e) => {
 });
 
 
-// 19: REGISTRO DE CAMBIO (Escritura con Historial)
+// 19: REGISTRO DE CAMBIO (Escritura con Historial Técnico en Perfil)
 async function guardarCambioTransporte(cantoId, nuevoValor) {
     const user = auth.currentUser;
     if (!user) return;
@@ -508,23 +525,35 @@ async function guardarCambioTransporte(cantoId, nuevoValor) {
         const ahora = new Date();
         const fechaId = ahora.getTime().toString(); 
 
-        // A. Guardar Tono
+        // BUSCAMOS LA CEJILLA: Para que el historial no quede incompleto
+        const refCejilla = doc(db, "usuarios", user.uid, "cejilla", cantoId);
+        const snapCejilla = await getDoc(refCejilla);
+        const cejillaActual = snapCejilla.exists() ? snapCejilla.data().valor : "0";
+
+        const datosTecnicos = { 
+            valor: ahora, 
+            acorde: nuevoValor, 
+            cejilla: cejillaActual 
+        };
+
+        // A. Actualizamos el Tono
         const refTransporte = doc(db, "usuarios", user.uid, "transporte", cantoId);
         await setDoc(refTransporte, { valor: nuevoValor }, { merge: true });
 
-        // B. Guardar Última Fecha (Raíz)
+        // B. Actualizamos la Raíz de Transportación
         const refFecha = doc(db, "usuarios", user.uid, "transportacion", cantoId);
-        await setDoc(refFecha, { valor: ahora }, { merge: true });
+        await setDoc(refFecha, datosTecnicos, { merge: true });
 
-        // C. Guardar en HISTORIAL (Subcolección para el calendario)
+        // C. Creamos el punto en el HISTORIAL
         const refHist = doc(db, "usuarios", user.uid, "transportacion", cantoId, "historial", fechaId);
-        await setDoc(refHist, { valor: ahora }, { merge: true });
+        await setDoc(refHist, datosTecnicos, { merge: true });
 
-        console.log("✅ Cambio y punto de historial guardados correctamente.");
+        console.log("✅ Historial técnico actualizado desde perfil");
     } catch (error) { 
-        console.error("Error al guardar transporte:", error); 
+        console.error("Error en Sección 19:", error); 
     }
 }
+
 
 // --- 20: SISTEMA DE HISTORIAL VISUAL Y LISTADO ---
 let fechasHistorialActivas = [];
@@ -541,55 +570,6 @@ window.abrirCalendario = async function(cantoId) {
     try {
         const { collection, getDocs, doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
-        fechasHistorialActivas = [];
-        fechasOriginalesFull = [];
-        totalRegistrosCanto = 0;
-
-        const refHistorial = collection(db, "usuarios", user.uid, "transportacion", cantoId, "historial");
-        const refRaiz = doc(db, "usuarios", user.uid, "transportacion", cantoId);
-        const [snapshot, docRaiz] = await Promise.all([getDocs(refHistorial), getDoc(refRaiz)]);
-        
-        // 1. Procesar Historial (Subcolección)
-        snapshot.forEach(docSnap => {
-            const data = docSnap.data();
-            const d = data.valor || data.ultimaActualizacion;
-            if (d) {
-                const f = d.toDate ? d.toDate() : new Date(d);
-                fechasHistorialActivas.push(`${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`);
-                
-                fechasOriginalesFull.push({
-                    fecha: f,
-                    acorde: data.acorde || "---",
-                    cejilla: data.cejilla || "0"
-                });
-                totalRegistrosCanto++;
-            }
-        });
-
-        // 2. Procesar Raíz (Fecha antigua)
-        if (docRaiz.exists()) {
-            const dataRaiz = docRaiz.data();
-            const fechaAntigua = dataRaiz.valor || dataRaiz.ultimaActualizacion;
-            if (fechaAntigua) {
-                const f = fechaAntigua.toDate ? fechaAntigua.toDate() : new Date(fechaAntigua);
-                const clave = `${f.getFullYear()}-${f.getMonth() + 1}-${f.getDate()}`;
-                
-                if (!fechasHistorialActivas.includes(clave)) {
-                    fechasHistorialActivas.push(clave);
-                    fechasOriginalesFull.push({
-                        fecha: f,
-                        acorde: dataRaiz.acorde || "---",
-                        cejilla: dataRaiz.cejilla || "0"
-                    });
-                    totalRegistrosCanto++;
-                }
-            }
-        }
-
-        fechasOriginalesFull.sort((a, b) => b - a);
-        mesVisualizado = new Date().getMonth();
-        añoVisualizado = new Date().getFullYear();
-
         let modal = document.getElementById('calendar-modal');
         if (!modal) {
             modal = document.createElement('div');
@@ -598,13 +578,72 @@ window.abrirCalendario = async function(cantoId) {
             document.body.appendChild(modal);
         }
 
-        document.addEventListener('keydown', manejarEscape);
+        fechasHistorialActivas = [];
+        fechasOriginalesFull = [];
+        totalRegistrosCanto = 0;
+
+        const refHistorial = collection(db, "usuarios", user.uid, "transportacion", cantoId, "historial");
+        const refRaiz = doc(db, "usuarios", user.uid, "transportacion", cantoId);
+        const [snapshot, docRaiz] = await Promise.all([getDocs(refHistorial), getDoc(refRaiz)]);
+        
+        snapshot.forEach(docSnap => {
+            const data = docSnap.data();
+            let fechaFinal = null;
+            let acorde = "---";
+            let cejilla = "0";
+
+            // --- ACCESO A LA ESTRUCTURA DE MAPA ---
+            // Si 'valor' es un objeto y tiene dentro otro 'valor' (Tu caso actual)
+            if (data.valor && typeof data.valor === 'object' && data.valor.valor) {
+                const subMapa = data.valor;
+                acorde = subMapa.acorde !== undefined ? subMapa.acorde : "---";
+                cejilla = subMapa.cejilla !== undefined ? subMapa.cejilla : "0";
+                
+                // La fecha está en data.valor.valor
+                const d = subMapa.valor;
+                if (d.toDate) fechaFinal = d.toDate();
+                else if (d.seconds) fechaFinal = new Date(d.seconds * 1000);
+                else fechaFinal = new Date(d);
+            } 
+            // Si la estructura es plana (registros antiguos)
+            else {
+                const d = data.valor || data.ultimaActualizacion;
+                if (d) {
+                    if (d.toDate) fechaFinal = d.toDate();
+                    else if (d.seconds) fechaFinal = new Date(d.seconds * 1000);
+                    else fechaFinal = new Date(d);
+                }
+                acorde = data.acorde || "---";
+                cejilla = data.cejilla || "0";
+            }
+
+            // Solo si logramos extraer una fecha válida, la guardamos
+            if (fechaFinal && !isNaN(fechaFinal.getTime())) {
+                const clave = `${fechaFinal.getFullYear()}-${fechaFinal.getMonth() + 1}-${fechaFinal.getDate()}`;
+                fechasHistorialActivas.push(clave);
+                
+                // Guardamos el objeto normalizado para el listado (Sección 20.6)
+                fechasOriginalesFull.push({
+                    fecha: fechaFinal,
+                    acorde: acorde,
+                    cejilla: cejilla
+                });
+                totalRegistrosCanto++;
+            }
+        });
+
+        fechasOriginalesFull.sort((a, b) => b.fecha.getTime() - a.fecha.getTime());
         actualizarVistaCalendario();
 
-    } catch (e) { console.error("Error historial:", e); }
+        document.addEventListener('keydown', manejarEscape);
+
+    } catch (e) { console.error("Error crítico en 20.1:", e); }
 };
 
-// 20.2: NAVEGACIÓN DE MESES
+// FIN DE 20.1: APERTURA Y CARGA DE DATOS
+
+
+// 20.4: NAVEGACIÓN DE MESES
 window.cambiarMes = function(direccion) {
     mesVisualizado += direccion;
     if (mesVisualizado < 0) { mesVisualizado = 11; añoVisualizado--; }
@@ -612,9 +651,11 @@ window.cambiarMes = function(direccion) {
     actualizarVistaCalendario();
 };
 
-// 20.3: VISTA DEL CALENDARIO
+// 20.5: VISTA DEL CALENDARIO
 function actualizarVistaCalendario() {
     const modal = document.getElementById('calendar-modal');
+    if (!modal) return; // SEGURIDAD: Si no hay modal, no intentamos poner innerHTML
+
     const nombreMes = new Date(añoVisualizado, mesVisualizado).toLocaleString('es-ES', { month: 'long' }).toUpperCase();
 
     modal.innerHTML = `
@@ -648,72 +689,91 @@ function actualizarVistaCalendario() {
     };
 }
 
-// 20.4: LISTADO TÉCNICO DETALLADO (Única versión)
+// FIN 20.5: VISTA DEL CALENDARIO
+
+// 20.6: LISTADO TÉCNICO DETALLADO
 window.abrirListaDetallada = function() {
     let listaModal = document.getElementById('lista-detallada-modal');
     if (!listaModal) {
         listaModal = document.createElement('div');
         listaModal.id = 'lista-detallada-modal';
-        listaModal.style = "position:fixed; top:0; left:0; width:100%; height:100%; z-index:1000000; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center;";
+        listaModal.style = "position:fixed; top:0; left:0; width:100%; height:100%; z-index:1000001; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; font-family: sans-serif;";
         document.body.appendChild(listaModal);
     }
 
-    const nombresAcordes = ["La m", "Si♭ m", "Si m", "Do m", "Do# m", "Re m", "Re# m", "Mi m", "Fa m", "Fa# m", "Sol m", "Sol# m"];
+    const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 
     const itemsHtml = fechasOriginalesFull.map((reg, index) => {
-        const f = reg.fecha; 
-        const fechaTxt = f.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' });
-        const horaTxt = f.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-        
-        const t = parseInt(reg.acorde);
-        const acordeTxt = isNaN(t) ? "---" : nombresAcordes[t];
-        const cejillaTxt = reg.cejilla && reg.cejilla !== "0" ? reg.cejilla : "No";
+        const f = reg.fecha;
+        // Si f no es una fecha válida por algún motivo, mostramos aviso
+        if (!f || isNaN(f.getTime())) return `<div style="padding:10px; color:red;">Dato corrupto</div>`;
+
+        const dia = String(f.getDate()).padStart(2, '0');
+        const mesTxt = meses[f.getMonth()];
+        const año = f.getFullYear();
+        const hora = String(f.getHours()).padStart(2, '0');
+        const min = String(f.getMinutes()).padStart(2, '0');
+
+        const acordeTxt = MAPA_ACORDES[reg.acorde] || "---";
+        const cejillaTxt = (reg.cejilla && reg.cejilla !== "0") ? reg.cejilla : "No";
 
         return `
         <div style="padding:12px; border-bottom:1px solid #eee; display:flex; flex-direction:column; gap:5px; background: white; text-align: left;">
-            <div style="display:flex; justify-content:space-between; font-size:13px;">
-                <span style="color:#888;">${fechaTxt} - ${horaTxt}</span>
+            <div style="display:flex; justify-content:space-between; font-size:12px;">
+                <span style="color:#888;">${dia} ${mesTxt} ${año} - ${hora}:${min}</span>
                 <b style="color:#d4af37;">#${fechasOriginalesFull.length - index}</b>
             </div>
             <div style="display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:15px; font-weight:bold; color:#333;">🎸 ${acordeTxt}</span>
-                <span style="font-size:12px; background:#f0f0f0; padding:2px 8px; border-radius:10px; color:#666;">Cejilla: ${cejillaTxt}</span>
+                <span style="font-size:12px; background:#f5f5f5; padding:3px 10px; border-radius:12px; color:#666; border:1px solid #eee;">Cejilla: ${cejillaTxt}</span>
             </div>
         </div>`;
     }).join('');
 
     listaModal.innerHTML = `
         <div id="lista-overlay" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
-            <div style="background:white; border-radius:15px; width:320px; max-height:80vh; overflow:hidden; display:flex; flex-direction:column; position:relative; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <div style="background:white; border-radius:15px; width:320px; max-height:80vh; overflow:hidden; display:flex; flex-direction:column; position:relative; box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
                 <button onclick="document.getElementById('lista-detallada-modal').remove()" class="xclose">&times;</button>
-                <div class="ttlo">HISTORIAL DETALLADO</div>
-                <div style="flex-grow:1; overflow-y:auto; background:#fff;">
-                    ${itemsHtml || '<p style="padding:20px; color:#999; text-align:center;">No hay registros.</p>'}
-                </div>
-                <div style="padding:10px; font-size:11px; color:#999; text-align:center; background:#f9f9f9; border-top:1px solid #eee;">Desliza para ver más</div>
+                <div class="ttlo" style="padding:20px; background:#d4af37; color:white; font-weight:bold; text-align:center;">DETALLE TÉCNICO</div>
+                <div style="flex-grow:1; overflow-y:auto; background:#fff;">${itemsHtml || '<p style="padding:20px; text-align:center;">Sin registros</p>'}</div>
             </div>
         </div>`;
 
-    listaModal.onclick = (e) => {
-        if (e.target.id === 'lista-overlay') listaModal.remove();
-    };
+    listaModal.onclick = (e) => { if (e.target.id === 'lista-overlay') listaModal.remove(); };
 };
+// FIN 20.6 LISTADO TÉCNICO DETALLADO
 
-// 20.5: CIERRE Y AUXILIARES
+
+// 20.7: CIERRE Y AUXILIARES
 window.cerrarCalendario = function() {
     const modal = document.getElementById('calendar-modal');
     if (modal) modal.remove();
+    // Quitamos el escucha de la tecla Escape al cerrar
     document.removeEventListener('keydown', manejarEscape);
 };
+// FIN 20.7: CIERRE Y AUXILIARES
 
+// 20.8: MENSAJE ESCAPE
 function manejarEscape(e) {
     if (e.key === "Escape") {
         const lista = document.getElementById('lista-detallada-modal');
-        if (lista) lista.remove();
-        else cerrarCalendario();
+        const cal = document.getElementById('calendar-modal');
+
+        if (lista) {
+            lista.remove();
+        } else if (cal) {
+            // Intentamos llamar a la función global, si no, lo borramos directo
+            if (typeof window.cerrarCalendario === 'function') {
+                window.cerrarCalendario();
+            } else {
+                cal.remove();
+            }
+        }
     }
 }
+// FIN 20.8: MENSAJE ESCAPE
 
+// 20.9: FUNCION GENERAR GRID
 function generarGridNavegable(fechasActivas, mes, año) {
     const ultimoDia = new Date(año, mes + 1, 0).getDate();
     const primerDiaSemana = new Date(año, mes, 1).getDay();
@@ -730,3 +790,5 @@ function generarGridNavegable(fechasActivas, mes, año) {
     }
     return html;
 }
+
+// FIN 20.9: FUNCION GENERAR GRID

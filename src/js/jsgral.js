@@ -1245,36 +1245,33 @@ window.guardarCejilla = async function(cantoId, valor) {
 };
 
 
-// 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL DETALLADO)
-window.registrarFechaCambio = async function(cantoId) {
-    try {
-        if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
-            const ahora = new Date(); 
-            const fechaId = ahora.getTime().toString(); 
+        // 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL DETALLADO)
+        window.registrarFechaCambio = async function(cantoId) {
+            try {
+                if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
+                    const ahora = new Date(); 
+                    const fechaId = ahora.getTime().toString(); 
 
-            // Obtenemos los valores actuales de la pantalla
-            const acordeActual = document.getElementById('transporteControl')?.value || "0";
-            const cejillaActual = document.getElementById('cejillaSelect')?.value || "0";
+                    // Capturamos lo que hay en pantalla (Selectores del visor)
+                    const acordeActual = document.getElementById('transporteControl')?.value || "0";
+                    const cejillaActual = document.getElementById('cejillaSelect')?.value || "0";
 
-            // 1. Guardamos la última fecha en la raíz
-            await window.firebaseAPI.guardarDato(cantoId, ahora, 'transportacion');
-            
-            // 2. Guardamos en el HISTORIAL con ACORDE y CEJILLA
-            // Guardamos un objeto con todos los datos
-            const datosHistorial = {
-                valor: ahora,
-                acorde: acordeActual,
-                cejilla: cejillaActual
-            };
-            
-            await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datosHistorial, 'transportacion');
-            
-            console.log("📅 Historial detallado guardado (Tono: " + acordeActual + ")");
-        }
-    } catch (e) {
-        console.warn("Error en Sección 31:", e);
-    }
-};
+                    const datos = {
+                        valor: ahora, // Usamos 'valor' para mantener compatibilidad con tu sistema de guardado
+                        acorde: acordeActual,
+                        cejilla: cejillaActual
+                    };
+
+                    // Guardamos en ambos sitios
+                    await window.firebaseAPI.guardarDato(cantoId, datos, 'transportacion');
+                    await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datos, 'transportacion');
+                    
+                    console.log("📅 Historial Técnico guardado con éxito");
+                }
+            } catch (e) { console.warn("Error 31:", e); }
+        };
+// FIN 31: REGISTRO DE CAMBIO
+
 
 // EXPOSICIÓN GLOBAL (Para que tus HTML vean las funciones)
 window.actualizarAcordes = actualizarAcordes;
