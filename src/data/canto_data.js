@@ -13783,7 +13783,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Yo vengo a reunir,, (Mi,,10)", sC: "tc"},
-            { line: "YO VENGO A REUNIR,, ", sC: "ta as"},
+            { line: "YO VENGO A REUNIR, ", sC: "ta as"},
             { line: "a todas las naciones,, (La,,10)(Mi,,155)", sC: ""},
             { line: "A TODAS LAS NACIONES., (La,,10)(Mi,,186)", sC: "ta as"},
             { line: "Vendrán y verán mi gloria,, (Fa#,,60)(Si,7,212)", sC: ""},
