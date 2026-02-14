@@ -571,8 +571,6 @@ const openChordSelectionModal = (currentDisplayedNoteClicked) => {
     chordSelectionModal.style.display = 'flex';
 };  // FIN FUNCION MODAL
 
-
-
 // 15 Función para cerrar la modal de selección de acordes
 const closeChordSelectionModal = () => {
     if (chordSelectionModal) {

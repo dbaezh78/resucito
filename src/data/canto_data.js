@@ -13792,8 +13792,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "ta as"},
             { line: "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Y pondré en ellos una señal, (Do#,,14)", sC: ""},
-            { line: "y los enviaré a las naciones más lejanas,, (La,,20)(Mi,,250)", sC: ""},
+            { line: "Y pondré en ellos una señal, (Do#,m,14)", sC: ""},
+            { line: "y los enviaré a las naciones más lejanas,, (La,,20)(Mi,,345)", sC: ""},
             { line: "para que anuncien mi gloria,, (Si,7,120)(Mi,,239)", sC: ""},
             { line: "para que anuncien mi gloria., (Si,7,120)(Mi,,239)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
