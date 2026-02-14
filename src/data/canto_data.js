@@ -13775,7 +13775,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 3, incremento: 1 },  // Para tablet
+            tablet: { velocidad: 4, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=yoteamosenor",
