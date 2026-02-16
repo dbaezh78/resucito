@@ -85,7 +85,7 @@ const allCantosData = [
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 },
-            tablet: { velocidad: 7, incremento: 1 },
+            tablet: { velocidad: 4, incremento: 1 },
             desktop: { velocidad: 7, incremento: 1 },
             desktopsmall: { velocidad: 7, incremento: 1 }},
         // Propiedades para navegación entre cantos
@@ -13775,7 +13775,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
-            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            tablet: { velocidad: 4, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=yoteamosenor",
@@ -13783,7 +13783,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Yo vengo a reunir,, (Mi,,10)", sC: "tc"},
-            { line: "YO VENGO A REUNIR,, ", sC: "ta as"},
+            { line: "YO VENGO A REUNIR, ", sC: "ta as"},
             { line: "a todas las naciones,, (La,,10)(Mi,,155)", sC: ""},
             { line: "A TODAS LAS NACIONES., (La,,10)(Mi,,186)", sC: "ta as"},
             { line: "Vendrán y verán mi gloria,, (Fa#,,60)(Si,7,212)", sC: ""},
@@ -13792,8 +13792,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "ta as"},
             { line: "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Y pondré en ellos una señal, (Do#,,14)", sC: ""},
-            { line: "y los enviaré a las naciones más lejanas,, (La,,20)(Mi,,250)", sC: ""},
+            { line: "Y pondré en ellos una señal, (Do#,m,14)", sC: ""},
+            { line: "y los enviaré a las naciones más lejanas,, (La,,20)(Mi,,345)", sC: ""},
             { line: "para que anuncien mi gloria,, (Si,7,120)(Mi,,239)", sC: ""},
             { line: "para que anuncien mi gloria., (Si,7,120)(Mi,,239)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
