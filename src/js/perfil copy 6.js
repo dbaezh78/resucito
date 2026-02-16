@@ -165,11 +165,8 @@ async function renderizarTablaCantos() {
                 }
             }
 
+            const acordeVisual = datosRAM ? (MAPA_ACORDES[datosRAM.acorde] || "---") : "---";
             const cejillaVisual = datosRAM ? (datosRAM.cejilla || "0") : "0";
-            const acordeVisual = (datosRAM && datosRAM.acorde !== undefined) 
-            ? (MAPA_ACORDES[String(datosRAM.acorde)] || "---") 
-            : "---";
-            //const acordeVisual = datosRAM ? (MAPA_ACORDES[datosRAM.acorde] || "---") : "---";
             
             html += `
                 <tr class="fila-canto" id="fila-${canto.id}">
@@ -257,62 +254,36 @@ async function completarDatosLentamente(cantos) {
 
 
 
-// 5: INYECTAR DATOS: Blindada para que no falle la cejilla ni el acorde
-window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
+// 5. INYECTAR DATOS: Blindada para que no falle la cejilla ni el acorde
+function inyectarDatosEnTabla(cantoId, data, esLocal = false) {
     const elCej = document.getElementById(`cejilla-tu-${cantoId}`);
     const elAco = document.getElementById(`acorde-tu-${cantoId}`);
     const elUso = document.getElementById(`uso-${cantoId}`);
-    const fila = document.getElementById(`fila-${cantoId}`);
 
-    // --- 1. ACTUALIZAR CEJILLA ---
     if (elCej) {
-        const valorCej = data.cejilla || "0";
-        elCej.innerText = (valorCej === "0") ? "-" : valorCej;
+        const valorCej = data.cejilla;
+        elCej.innerText = (valorCej == "0" || !valorCej) ? "-" : valorCej;
     }
     
-    // --- 2. ACTUALIZAR ACORDE VISUAL ---
     if (elAco) {
         const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
-        
-        // Convertimos a número entero (Firebase manda "0", "5", etc.)
         const t = parseInt(data.acorde);
-        
-        // Si no es un número válido, ponemos guion
-        if (isNaN(t)) {
-            elAco.innerHTML = `- ${esLocal ? '<span style="color: #28a745;">●</span>' : ''}`;
+        if (isNaN(t) || t === 0) {
+            elAco.innerHTML = `- ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
         } else {
-            // CÁLCULO MAESTRO: 
-            // La m es la posición 9. Sumamos el transporte 't' y usamos %12 para no salirnos del array.
-            // Usamos Math.abs por si acaso llegara un número negativo.
             const posicionFinal = (9 + t) % 12;
             const notaFinal = cords[posicionFinal];
-            
             elAco.innerHTML = `${notaFinal} m ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
-            console.log(`Canto ${cantoId}: Transporte ${t} -> Nota ${notaFinal} m`);
         }
     }
 
-    // --- 3. ACTUALIZAR EL ENLACE (HREF) ---
-    try {
-        if (fila) {
-            const enlace = fila.querySelector('a');
-            if (enlace) {
-                // Forzamos valores seguros para la URL
-                const ton = (data.acorde !== undefined) ? data.acorde : "0";
-                const cej = (data.cejilla !== undefined) ? data.cejilla : "0";
-                enlace.href = `src/index.html?canto=${cantoId}&tonalidad=${ton}&cejilla=${cej}`;
-            }
-        }
-    } catch (err) { console.warn("Error enlace:", err); }
-
-    // --- 4. ACTUALIZAR FECHA ---
-    if (elUso && data.valor) {
-        const f = new Date(data.valor);
-        if (!isNaN(f.getTime())) {
-            const dia = String(f.getDate()).padStart(2, '0');
-            const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
-            elUso.innerHTML = `${dia} ${meses[f.getMonth()]} <span onclick="event.stopPropagation(); window.abrirCalendario('${cantoId}')" style="cursor:pointer;">📅</span>`;
-        }
+// 5.1 --- FECHA DE USO ---
+    if (elUso && data.uso) {
+        elUso.innerHTML = `
+            <span class="fecha-link" style="cursor:pointer; color: #007bff; font-weight: bold;" 
+                  onclick="window.abrirCalendario('${cantoId}')">
+                ${data.uso} 📅
+            </span>`;
     }
 };
 // <--- CIERRE CORRECTO DE FUNCIÓN 5
@@ -1050,65 +1021,3 @@ window.sincronizarTodoARam = async function() {
     }
 };
 // FIN 21: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// 5: INYECTAR DATOS: Blindada para que no falle la cejilla ni el acorde
-/*
-function inyectarDatosEnTabla(cantoId, data, esLocal = false) {
-    const elCej = document.getElementById(`cejilla-tu-${cantoId}`);
-    const elAco = document.getElementById(`acorde-tu-${cantoId}`);
-    const elUso = document.getElementById(`uso-${cantoId}`);
-
-    if (elCej) {
-        const valorCej = data.cejilla;
-        elCej.innerText = (valorCej == "0" || !valorCej) ? "-" : valorCej;
-    }
-    
-    if (elAco) {
-        const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
-        const t = parseInt(data.acorde);
-        if (isNaN(t) || t === 0) {
-            elAco.innerHTML = `- ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
-        } else {
-            const posicionFinal = (9 + t) % 12;
-            const notaFinal = cords[posicionFinal];
-            elAco.innerHTML = `${notaFinal} m ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
-        }
-    }
-
-// 5.1 --- FECHA DE USO ---
-    if (elUso && data.uso) {
-        elUso.innerHTML = `
-            <span class="fecha-link" style="cursor:pointer; color: #007bff; font-weight: bold;" 
-                  onclick="window.abrirCalendario('${cantoId}')">
-                ${data.uso} 📅
-            </span>`;
-    }
-};
-*/

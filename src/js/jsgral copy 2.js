@@ -5,9 +5,14 @@
 const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
 // Mapeo de nombres de notas a su índice de semitono (Do=0, Do#=1, etc.)
 const noteToSemitone = {};
+
 cords.forEach((note, index) => {
     noteToSemitone[note] = index;
 });
+
+
+
+
 
 // 2 Definición de los factores de escalado y posibles sobrescrituras de posición
 const positionConfigs = {
@@ -531,52 +536,34 @@ const renderCanto = () => {
     console.log("Canto rendering complete.");
 };
 
-// 14: INICIO FUNCION MODAL (Corregida para guardar en TRANSPORTACION / HISTORIAL)
+// 14: INICIO FUNCION MODAL
 const openChordSelectionModal = (currentDisplayedNoteClicked) => {
     clickedDisplayedNoteSemitone = noteToSemitone[currentDisplayedNoteClicked];
     chordListContainer.innerHTML = '';
 
+    // Obtenemos el ID una sola vez al abrir el modal para mayor eficiencia
     const params = new URLSearchParams(window.location.search);
-    let idCantoActual = params.get('canto');
-    if (idCantoActual) idCantoActual = idCantoActual.replace('.html', '');
+    const idCantoActual = params.get('canto');
 
     cords.forEach(chord => {
         const chordItem = document.createElement('div');
         chordItem.classList.add('chord-item');
         chordItem.textContent = chord;
-        
-        chordItem.addEventListener('click', async () => {
+        chordItem.addEventListener('click', () => {
             const selectedChordFromModalSemitone = noteToSemitone[chord];
             const semitonesToShift = selectedChordFromModalSemitone - clickedDisplayedNoteSemitone;
 
-            // Calculamos el nuevo desplazamiento (el valor que el perfil necesita)
             currentKeyOffset = (currentKeyOffset + semitonesToShift) % cords.length;
             if (currentKeyOffset < 0) currentKeyOffset += cords.length;
 
+            // --- LÓGICA DE GUARDAR CON FECHA CONECTADA A SECCIÓN 29 ---
             if (idCantoActual) {
-                // 1. SINCRONIZAMOS EL CONTROL VISUAL
-                const elControl = document.getElementById('transporteControl');
-                if (elControl) {
-                    elControl.value = currentKeyOffset.toString();
-                }
-
-                // 2. GUARDADO DIRECTO EN LA RUTA CORRECTA (transportacion)
-                // Usamos registrarCambioTecnico porque esa función ya apunta a 'transportacion' e 'historial'
-                if (typeof registrarCambioTecnico === 'function') {
-                    await registrarCambioTecnico(idCantoActual);
-                    console.log(`✅ Guardado en /transportacion/${idCantoActual}/historial/`);
-                } else {
-                    // Respaldo manual si la función no estuviera disponible
-                    const ahora = new Date();
-                    const datos = {
-                        valor: ahora,
-                        acorde: currentKeyOffset.toString(),
-                        cejilla: document.getElementById('cejillaControl')?.value || "0"
-                    };
-                    if (window.firebaseAPI) {
-                        await window.firebaseAPI.guardarDato(idCantoActual, datos, 'transportacion');
-                        await window.firebaseAPI.guardarDato(`${idCantoActual}/historial/${ahora.getTime()}`, datos, 'transportacion');
-                    }
+                // Llamamos a la Sección 29 para que guarde el tono Y la fecha (vía Sección 31)
+                if (typeof window.guardarTransporte === 'function') {
+                    window.guardarTransporte(idCantoActual, currentKeyOffset.toString());
+                } else if (window.firebaseAPI) {
+                    // Respaldo de seguridad
+                    window.firebaseAPI.guardarDato(idCantoActual, currentKeyOffset.toString(), 'transporte');
                 }
             }
 
@@ -588,6 +575,7 @@ const openChordSelectionModal = (currentDisplayedNoteClicked) => {
     });
     chordSelectionModal.style.display = 'flex';
 };  // FIN FUNCION MODAL
+
 
 
 // 15 Función para cerrar la modal de selección de acordes
@@ -642,6 +630,9 @@ const openChordImagesModal = () => {
 
     chordImagesModal.style.display = 'flex'; // Mostrar la modal
 };
+
+// FIN 16 Nueva función para abrir la modal de imágenes de acordes
+
 
 // 17 Nueva función para abrir la modal de imagen grande
 const openLargeImageModal = (imageSrc, imageName) => {

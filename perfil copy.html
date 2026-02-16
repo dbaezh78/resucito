@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <div class="perfil-section collapsed" id="wrapper-config">
+    <div class="perfil-section" id="wrapper-config">
         <div class="section-header" onclick="toggleSection('section-config', 'wrapper-config')">
             <div class="header-title-group">
                 <span class="material-symbols-outlined arrow-icon">expand_more</span>
@@ -34,40 +34,24 @@
                 <button id="btn-logout-perfil" class="material-symbols-outlined icon-button">logout</button>
             </div>
         </div>
-
-        <div id="section-config" class="section-content cfg-close">
-            <div id="profile-info" style="display: none; margin-bottom: 20px; padding: 15px; background: #f9f9f9; border-radius: 8px;">
-                <div style="display: flex; align-items: center; gap: 15px;">
-                    <img id="user-photo" src="" alt="Foto" style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid #bc0009;">
-                    <div>
-                        <h3 id="user-name" style="margin: 0; color: #333;"></h3>
-                        <p id="user-email" style="margin: 0; font-size: 0.9em; color: #666;"></p>
-                    </div>
-                </div>
-                <button onclick="window.logoutUsuario()" style="margin-top: 15px; padding: 8px 15px; background: #bc0009; color: white; border: none; border-radius: 4px; cursor: pointer;">Cerrar Sesión</button>
-            </div>
-
-            <!-- FORMULARIO-->
-            <div class="config-grid">
+        
+        <div id="section-config" class="section-content">
+            <div class="perfil-grid">
                 <div class="form-group">
                     <label>País</label>
-                    <select id="userCountry" onchange="llenarComunidades()">
-                        <option value="">Cargando países...</option>
-                    </select>
+                    <input type="text" id="userCountry" list="paisesList" placeholder="Escribe tu país...">
+                    <datalist id="paisesList"></datalist>
                 </div>
-
                 <div class="form-group">
                     <label>Parroquia</label>
                     <input type="text" id="userParroquia" placeholder="Nombre de tu parroquia...">
                 </div>
                 <div class="form-group">
                     <label>Comunidad</label>
-                    <select id="userComunidad">
-                        <option value="">Seleccione la comunidad</option>
-                    </select>
+                    <select id="userComunidad"></select>
                 </div>
                 <div class="form-group">
-                    <label>Etapa en el Camino</label>
+                    <label>Etapa</label>
                     <select id="userStep">
                         <option value="0">Precatecumenado</option>
                         <option value="1">Primer Escrutinio</option>
@@ -81,45 +65,54 @@
                     </select>
                 </div>
             </div>
-                        <!-- FORMULARIO-->
-
-            <button class="btn-guardar" onclick="guardarPerfil()">Guardar Cambios</button>
+            <button id="btnSave" class="btn-primario">💾 Guardar Datos de Perfil</button>
         </div>
     </div>
 
-    <div class="perfil-section collapsed" id="wrapper-cantos">
-        <div class="section-header" onclick="toggleSection('section-cantos', 'wrapper-cantos')">
+    <div class="perfil-section collapsed" id="wrapper-gestion">
+        <div class="section-header" onclick="toggleSection('section-gestion', 'wrapper-gestion')">
             <div class="header-title-group">
                 <span class="material-symbols-outlined arrow-icon">expand_more</span>
-                <h2>Gestión de Cantos</h2>
+                <h2>Gestión de Contenido</h2>
             </div>
         </div>
+<!--
+    <div id="section-gestion" class="section-content cfg-close">
+        -->
+        <div id="section-gestion" class="section-content">
+            <div class="gestion-offline-box">
+                <div class="acciones-offline">
 
-        <div id="section-cantos" class="section-content cfg-close">
-            
-            <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap;">
-                <button onclick="sincronizarTodoARam()" class="btn-descargar-todo" style="background-color: #4285F4;">
-                    <span class="material-symbols-outlined" style="vertical-align: middle; font-size: 18px;">cloud_sync</span> 
-                    Sincronizar Datos Nube
-                </button>
+                    <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap;">
+                    <button onclick="sincronizarTodoARam()" class="btn-descargar-todo" style="background-color: #4285F4;">
+                        <span class="material-symbols-outlined" style="vertical-align: middle; font-size: 18px;">cloud_sync</span> 
+                        Sincronizar Datos Nube
+                    </button>
 
-                <button id="btnDescargarTodo" onclick="gestionarDescargaTotal()" class="btn-descargar-todo">
+
+                    <button id="btnDescargarTodo" onclick="gestionarDescargaTotal()" class="btn-descargar-todo">
                     📥 Descargar todo para uso Offline
-                </button>
-            </div>
+                    </button>
 
-            <div id="progreso-nube-container" style="display:none; width:100%; max-width:400px; margin:10px auto; background:#eee; border-radius:10px; overflow:hidden; border:1px solid #ccc;">
-                <div id="barra-nube" style="width:0%; height:12px; background:linear-gradient(90deg, #4285F4, #34A853); transition: width 0.3s;"></div>
-            </div>
-            <p id="status-nube-texto" style="display:none; text-align:center; font-size:12px; color:#555; margin-top:5px;"></p>
+                </div>
 
-            <div id="progreso-descarga-container" style="display:none; width:100%; max-width:400px; margin:10px auto; background:#eee; border-radius:10px; overflow:hidden; border:1px solid #ccc;">
-                <div id="barra-progreso" style="width:0%; height:12px; background:linear-gradient(90deg, #FF9800, #F44336); transition: width 0.3s;"></div>
-            </div>
-            <p id="status-descarga-texto" style="display:none; text-align:center; font-size:12px; color:#555; margin-top:5px;"></p>
+                <div id="progreso-nube-container" style="display:none; width:100%; max-width:400px; margin:10px auto; background:#eee; border-radius:10px; overflow:hidden; border:1px solid #ccc;">
+                    <div id="barra-nube" style="width:0%; height:12px; background:linear-gradient(90deg, #4285F4, #34A853); transition: width 0.3s;"></div>
+                </div>
+                <p id="status-nube-texto" style="display:none; text-align:center; font-size:12px; color:#555; margin-top:5px;"></p>
 
-            <div id="lista-cantos-gestion">
-                <p style="text-align: center; color: #666;">Cargando lista de cantos...</p>
+                    <p style="font-size: 0.9rem; color: #667; margin-top: 10px;">
+                        Administra tus cantos offline y sincroniza acordes con la nube.
+                    </p>
+                    <div id="progreso-descarga" class="cfg-close" style="margin-top:10px;">
+                        <progress id="barra-progreso" value="0" max="100" style="width:100%;"></progress>
+                        <small id="texto-progreso">Preparando descarga...</small>
+                    </div>
+                </div>
+
+                <div id="lista-cantos-gestion" class="contenedor-tabla">
+                    <p style="text-align: center; padding: 20px;">Cargando base de datos de cantos...</p>
+                </div>
             </div>
         </div>
     </div>
@@ -133,7 +126,7 @@
         </div>
 
         <div id="section-settings" class="section-content cfg-close">
-            <div class="form-group">
+            <div class="config-item">
                 <label class="switch">
                     <input type="checkbox" id="syncToggle">
                     <span class="slider"></span>
@@ -152,18 +145,7 @@
             <div id="calendarioDinamico"></div>
         </div>
     </div>
-
     <script type="module" src="src/js/moduleGoogle.js"></script>
     <script type="module" src="src/js/perfil.js"></script>
-    <script>
-        function toggleSection(contentId, wrapperId) {
-            const content = document.getElementById(contentId);
-            const wrapper = document.getElementById(wrapperId);
-            if (content && wrapper) {
-                content.classList.toggle('cfg-close');
-                wrapper.classList.toggle('collapsed');
-            }
-        }
-    </script>
 </body>
 </html>

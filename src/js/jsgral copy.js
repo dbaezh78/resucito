@@ -531,52 +531,34 @@ const renderCanto = () => {
     console.log("Canto rendering complete.");
 };
 
-// 14: INICIO FUNCION MODAL (Corregida para guardar en TRANSPORTACION / HISTORIAL)
+// 14: INICIO FUNCION MODAL
 const openChordSelectionModal = (currentDisplayedNoteClicked) => {
     clickedDisplayedNoteSemitone = noteToSemitone[currentDisplayedNoteClicked];
     chordListContainer.innerHTML = '';
 
+    // Obtenemos el ID una sola vez al abrir el modal para mayor eficiencia
     const params = new URLSearchParams(window.location.search);
-    let idCantoActual = params.get('canto');
-    if (idCantoActual) idCantoActual = idCantoActual.replace('.html', '');
+    const idCantoActual = params.get('canto');
 
     cords.forEach(chord => {
         const chordItem = document.createElement('div');
         chordItem.classList.add('chord-item');
         chordItem.textContent = chord;
-        
-        chordItem.addEventListener('click', async () => {
+        chordItem.addEventListener('click', () => {
             const selectedChordFromModalSemitone = noteToSemitone[chord];
             const semitonesToShift = selectedChordFromModalSemitone - clickedDisplayedNoteSemitone;
 
-            // Calculamos el nuevo desplazamiento (el valor que el perfil necesita)
             currentKeyOffset = (currentKeyOffset + semitonesToShift) % cords.length;
             if (currentKeyOffset < 0) currentKeyOffset += cords.length;
 
+            // --- LÓGICA DE GUARDAR CON FECHA CONECTADA A SECCIÓN 29 ---
             if (idCantoActual) {
-                // 1. SINCRONIZAMOS EL CONTROL VISUAL
-                const elControl = document.getElementById('transporteControl');
-                if (elControl) {
-                    elControl.value = currentKeyOffset.toString();
-                }
-
-                // 2. GUARDADO DIRECTO EN LA RUTA CORRECTA (transportacion)
-                // Usamos registrarCambioTecnico porque esa función ya apunta a 'transportacion' e 'historial'
-                if (typeof registrarCambioTecnico === 'function') {
-                    await registrarCambioTecnico(idCantoActual);
-                    console.log(`✅ Guardado en /transportacion/${idCantoActual}/historial/`);
-                } else {
-                    // Respaldo manual si la función no estuviera disponible
-                    const ahora = new Date();
-                    const datos = {
-                        valor: ahora,
-                        acorde: currentKeyOffset.toString(),
-                        cejilla: document.getElementById('cejillaControl')?.value || "0"
-                    };
-                    if (window.firebaseAPI) {
-                        await window.firebaseAPI.guardarDato(idCantoActual, datos, 'transportacion');
-                        await window.firebaseAPI.guardarDato(`${idCantoActual}/historial/${ahora.getTime()}`, datos, 'transportacion');
-                    }
+                // Llamamos a la Sección 29 para que guarde el tono Y la fecha (vía Sección 31)
+                if (typeof window.guardarTransporte === 'function') {
+                    window.guardarTransporte(idCantoActual, currentKeyOffset.toString());
+                } else if (window.firebaseAPI) {
+                    // Respaldo de seguridad
+                    window.firebaseAPI.guardarDato(idCantoActual, currentKeyOffset.toString(), 'transporte');
                 }
             }
 
@@ -588,6 +570,7 @@ const openChordSelectionModal = (currentDisplayedNoteClicked) => {
     });
     chordSelectionModal.style.display = 'flex';
 };  // FIN FUNCION MODAL
+
 
 
 // 15 Función para cerrar la modal de selección de acordes
@@ -1263,37 +1246,29 @@ window.guardarCejilla = async function(cantoId, valor) {
 
 
         // 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL DETALLADO)
-        const registrarCambioTecnico = async (cantoId) => {
+        window.registrarFechaCambio = async function(cantoId) {
             try {
                 if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
                     const ahora = new Date(); 
                     const fechaId = ahora.getTime().toString(); 
 
-                    // CAPTURA SEGURA: Buscamos los IDs reales del visor de cantos
-                    const selAcorde = document.getElementById('transporteControl');
-                    const selCejilla = document.getElementById('cejillaControl') || document.getElementById('cejillaSelect');
-
-                    // Capturamos el valor actual o "0" si no existe
-                    const acordeActual = selAcorde ? String(selAcorde.value) : "0";
-                    const cejillaActual = selCejilla ? String(selCejilla.value) : "0";
+                    // Capturamos lo que hay en pantalla (Selectores del visor)
+                    const acordeActual = document.getElementById('transporteControl')?.value || "0";
+                    const cejillaActual = document.getElementById('cejillaSelect')?.value || "0";
 
                     const datos = {
-                        valor: ahora,
+                        valor: ahora, // Usamos 'valor' para mantener compatibilidad con tu sistema de guardado
                         acorde: acordeActual,
                         cejilla: cejillaActual
                     };
 
-                    // Guardamos en la raíz de transportación (para la tabla del perfil)
+                    // Guardamos en ambos sitios
                     await window.firebaseAPI.guardarDato(cantoId, datos, 'transportacion');
-                    
-                    // Guardamos en el historial (para el calendario del perfil)
                     await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datos, 'transportacion');
                     
-                    console.log(`✅ Sincronizado: Acorde ${acordeActual}, Cejilla ${cejillaActual}`);
+                    console.log("📅 Historial Técnico guardado con éxito");
                 }
-            } catch (e) { 
-                console.warn("Error en el registro técnico de la Sección 31:", e); 
-            }
+            } catch (e) { console.warn("Error 31:", e); }
         };
 // FIN 31: REGISTRO DE CAMBIO
 
