@@ -776,17 +776,21 @@ window.abrirCalendario = async function(cantoId) {
         }
 
         // 4. LLAMAR A LA VISTA (S20.5)
-        if (typeof actualizarVistaCalendario === 'function') {
-            actualizarVistaCalendario(); 
-        }
+                if (typeof actualizarVistaCalendario === 'function') {
+                    actualizarVistaCalendario(); 
+                }
 
-        document.addEventListener('keydown', manejarEscape);
+                // Permitir cerrar con la tecla Escape
+                document.addEventListener('keydown', manejarEscape);
+                console.log(`✅ Historial cargado: ${totalRegistrosCanto} registros.`);
 
-    } catch (e) { 
-        console.error("❌ Error en historial:", e);
-        if(modal) modal.style.display = 'none';
-    }
-};// FIN DE 20.1: APERTURA Y CARGA DE DATOS
+            } catch (e) { 
+                console.error("❌ Error en historial:", e);
+                const modal = document.getElementById('calendar-modal');
+                if(modal) modal.style.display = 'none';
+            }
+        };
+// FIN DE 20.1: APERTURA Y CARGA DE DATOS
 
 
 // 20.4: NAVEGACIÓN DE MESES
