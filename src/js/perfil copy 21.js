@@ -708,18 +708,15 @@ let mesVisualizado = new Date().getMonth();
 let añoVisualizado = new Date().getFullYear();
 let totalRegistrosCanto = 0; 
 
-// 20.1: APERTURA Y CARGA DE DATOS (REPARADO Y BLINDADO)
+// 20.1: APERTURA Y CARGA DE DATOS (REPARADO PARA IDS NUMÉRICOS)
 window.abrirCalendario = async function(cantoId) {
     const user = auth.currentUser;
     if (!user) return;
 
-    // Aseguramos que las variables globales existan para que S20.5 no falle
-    if (typeof window.mesVisualizado === 'undefined') window.mesVisualizado = new Date().getMonth();
-    if (typeof window.añoVisualizado === 'undefined') window.añoVisualizado = new Date().getFullYear();
-
     try {
-        const { collection, getDocs, query } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+        const { collection, getDocs, query, orderBy } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
+        // 1. Manejo del Modal (Fondo oscuro para evitar bloqueos)
         let modal = document.getElementById('calendar-modal');
         if (!modal) {
             modal = document.createElement('div');
@@ -728,62 +725,70 @@ window.abrirCalendario = async function(cantoId) {
             document.body.appendChild(modal);
         }
         modal.style.display = "flex";
-        modal.innerHTML = '<div style="background:white; padding:20px; border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">⌛ Cargando historial...</div>';
+        modal.innerHTML = '<div style="background:white; padding:20px; border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">⌛ Cargando historial de uso...</div>';
 
-        // Reset de datos
         fechasHistorialActivas = [];
         fechasOriginalesFull = [];
         totalRegistrosCanto = 0;
 
-        // 2. Leer la Sub-colección Historial
+        // 2. Leer la Sub-colección Historial (La ruta que me pasaste)
         const refHistorial = collection(db, "usuarios", user.uid, "dbdata", cantoId, "historial");
         const snapshot = await getDocs(refHistorial);
         
         snapshot.forEach(docSnap => {
             const data = docSnap.data();
-            const idDoc = docSnap.id.trim(); // Limpiamos el ID por seguridad
+            const idDocumento = docSnap.id; // Aquí está el "1771357294431"
 
-            // El ID es el timestamp (milisegundos)
-            let timestamp = parseInt(idDoc);
+            // --- LÓGICA MAESTRA: Convertimos el ID en Fecha ---
+            let timestamp = parseInt(idDocumento);
             let fechaFinal = new Date(timestamp);
 
-            if (!isNaN(fechaFinal.getTime())) {
-                // Clave exacta para que S20.5 encuentre el día en el grid
+            if (fechaFinal && !isNaN(fechaFinal.getTime())) {
+                // Generamos la clave YYYY-M-D para que el grid pinte los días
                 const clave = `${fechaFinal.getFullYear()}-${fechaFinal.getMonth() + 1}-${fechaFinal.getDate()}`;
                 fechasHistorialActivas.push(clave);
                 
+                // Guardamos para la lista detallada
                 fechasOriginalesFull.push({
                     fecha: fechaFinal,
-                    acorde: String(data.acorde !== undefined ? data.acorde : "0"),
-                    cejilla: String(data.cejilla !== undefined ? data.cejilla : "0")
+                    acorde: String(data.acorde || "0"),
+                    cejilla: String(data.cejilla || "0")
                 });
                 totalRegistrosCanto++;
             }
         });
 
-        // 3. Ajustar vista al último uso encontrado
+        // 3. POSICIONAMIENTO AUTOMÁTICO DEL MES
         if (fechasOriginalesFull.length > 0) {
-            fechasOriginalesFull.sort((a, b) => b.fecha - a.fecha);
-            const ultima = fechasOriginalesFull[0].fecha;
-            window.mesVisualizado = ultima.getMonth();
-            window.añoVisualizado = ultima.getFullYear();
-        }
-
-        // 4. Renderizar (Llamada a S20.5)
-        if (typeof actualizarVistaCalendario === 'function') {
-            actualizarVistaCalendario(); 
+            // Ordenamos: el más reciente primero
+            fechasOriginalesFull.sort((a, b) => b.fecha.getTime() - a.fecha.getTime());
+            
+            // Forzamos al calendario a mostrar el mes del último registro
+            const ultimaFecha = fechasOriginalesFull[0].fecha;
+            window.mesVisualizado = ultimaFecha.getMonth();
+            window.añoVisualizado = ultimaFecha.getFullYear();
         } else {
-            console.error("No se encontró la función actualizarVistaCalendario");
-            modal.innerHTML = '<div style="background:white; padding:20px; border-radius:10px;">Error: Vista no cargada.</div>';
+            // Si está vacío, mostramos el mes actual
+            const hoy = new Date();
+            window.mesVisualizado = hoy.getMonth();
+            window.añoVisualizado = hoy.getFullYear();
         }
 
-        document.addEventListener('keydown', manejarEscape);
+        // 4. LLAMAR A LA VISTA (S20.5)
+                if (typeof actualizarVistaCalendario === 'function') {
+                    actualizarVistaCalendario(); 
+                }
 
-    } catch (e) { 
-        console.error("❌ Error en historial:", e);
-        if (modal) modal.style.display = 'none';
-    }
-};
+                // Permitir cerrar con la tecla Escape
+                document.addEventListener('keydown', manejarEscape);
+                console.log(`✅ Historial cargado: ${totalRegistrosCanto} registros.`);
+
+            } catch (e) { 
+                console.error("❌ Error en historial:", e);
+                const modal = document.getElementById('calendar-modal');
+                if(modal) modal.style.display = 'none';
+            }
+        };
 // FIN DE 20.1: APERTURA Y CARGA DE DATOS
 
 
