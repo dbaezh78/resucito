@@ -531,7 +531,7 @@ const renderCanto = () => {
     console.log("Canto rendering complete.");
 };
 
-// 14: INICIO FUNCION MODAL (Corregida para guardar en TRANSPORTACION / HISTORIAL)
+// 14: INICIO FUNCION MODAL (Corregida para asegurar que NO guarde en 0)
 const openChordSelectionModal = (currentDisplayedNoteClicked) => {
     clickedDisplayedNoteSemitone = noteToSemitone[currentDisplayedNoteClicked];
     chordListContainer.innerHTML = '';
@@ -549,45 +549,46 @@ const openChordSelectionModal = (currentDisplayedNoteClicked) => {
             const selectedChordFromModalSemitone = noteToSemitone[chord];
             const semitonesToShift = selectedChordFromModalSemitone - clickedDisplayedNoteSemitone;
 
-            // Calculamos el nuevo desplazamiento (el valor que el perfil necesita)
+            // 1. Calculamos el nuevo desplazamiento
             currentKeyOffset = (currentKeyOffset + semitonesToShift) % cords.length;
             if (currentKeyOffset < 0) currentKeyOffset += cords.length;
 
             if (idCantoActual) {
-                // 1. SINCRONIZAMOS EL CONTROL VISUAL
+                // 2. Sincronizamos el control visual
                 const elControl = document.getElementById('transporteControl');
                 if (elControl) {
                     elControl.value = currentKeyOffset.toString();
                 }
 
-                // 2. GUARDADO DIRECTO EN LA RUTA CORRECTA (transportacion)
-                // Usamos registrarCambioTecnico porque esa función ya apunta a 'transportacion' e 'historial'
+                // 3. PERSISTENCIA LOCAL (Indispensable para recarga)
+                localStorage.setItem(`transporte_${idCantoActual}`, currentKeyOffset.toString());
+
+                // 4. GUARDADO A LA NUBE
+                // >>> CAMBIO CLAVE: Enviamos currentKeyOffset directamente como segundo argumento <<<
                 if (typeof registrarCambioTecnico === 'function') {
-                    await registrarCambioTecnico(idCantoActual);
-                    console.log(`✅ Guardado en /transportacion/${idCantoActual}/historial/`);
-                } else {
-                    // Respaldo manual si la función no estuviera disponible
+                    await registrarCambioTecnico(idCantoActual, currentKeyOffset);
+                } else if (window.firebaseAPI) {
                     const ahora = new Date();
-                    const datos = {
-                        valor: ahora,
+                    const datosDB = {
+                        fecha: ahora,
                         acorde: currentKeyOffset.toString(),
-                        cejilla: document.getElementById('cejillaControl')?.value || "0"
+                        cejilla: document.getElementById('cejillaControl')?.value || 
+                                 document.getElementById('cejillaSelect')?.value || "0"
                     };
-                    if (window.firebaseAPI) {
-                        await window.firebaseAPI.guardarDato(idCantoActual, datos, 'transportacion');
-                        await window.firebaseAPI.guardarDato(`${idCantoActual}/historial/${ahora.getTime()}`, datos, 'transportacion');
-                    }
+                    await window.firebaseAPI.guardarDato(idCantoActual, datosDB, 'dbdata');
+                    await window.firebaseAPI.guardarDato(`${idCantoActual}/historial/${ahora.getTime()}`, datosDB, 'dbdata');
                 }
             }
 
             renderCanto(); 
             closeChordSelectionModal(); 
-            updateShowAllAsambleaIcon(); 
+            if (typeof updateShowAllAsambleaIcon === 'function') updateShowAllAsambleaIcon(); 
         });
         chordListContainer.appendChild(chordItem);
     });
     chordSelectionModal.style.display = 'flex';
-};  // FIN FUNCION MODAL
+};
+  // FIN FUNCION MODAL
 
 
 // 15 Función para cerrar la modal de selección de acordes
@@ -1098,46 +1099,63 @@ if (nCanElement) {
         }
     }
 
-// 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE (CON FECHA)
-    if (cejillaSelect) {
-        const params = new URLSearchParams(window.location.search);
-        const idCantoActual = params.get('canto');
+// 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE (CONECTADA A DBDATA) update(2.17.2026:8.45)
+// Obtenemos el ID del canto desde la URL de forma segura
+const paramsURL = new URLSearchParams(window.location.search);
+const idCantoURL = paramsURL.get('canto') ? paramsURL.get('canto').replace('.html', '') : null;
 
-        window.actualizarTodoDesdeNube = async () => {
-            // 1. Recuperar Cejilla
-            const valCejilla = await window.firebaseAPI.obtenerDato(idCantoActual, 'cejilla');
-            if (valCejilla) cejillaSelect.value = valCejilla;
+if (cejillaSelect && idCantoURL) {
 
-            // 2. Recuperar Transporte (Acordes)
-            const valTransporte = await window.firebaseAPI.obtenerDato(idCantoActual, 'transporte');
-            currentKeyOffset = parseInt(valTransporte) || 0;
-            renderCanto();
-        };
-
-        // Carga inicial
-        const localCejilla = localStorage.getItem(`cejilla_${idCantoActual}`);
-        const localTransporte = localStorage.getItem(`transporte_${idCantoActual}`);
-        cejillaSelect.value = localCejilla || (cantoSpecificData.cejilla || "0");
-        currentKeyOffset = parseInt(localTransporte) || 0;
-
-        // --- EL CAMBIO CRÍTICO AQUÍ ---
-        cejillaSelect.addEventListener('change', () => {
-            if (idCantoActual) {
-                // LLAMAMOS A LA SECCIÓN 30 (que a su vez llama a la 31 para la fecha)
-                if (typeof window.guardarCejilla === 'function') {
-                    window.guardarCejilla(idCantoActual, cejillaSelect.value);
-                } else if (window.firebaseAPI) {
-                    window.firebaseAPI.guardarDato(idCantoActual, cejillaSelect.value, 'cejilla');
+    window.actualizarTodoDesdeNube = async () => {
+        try {
+            // Leemos el objeto único de dbdata
+            const dataDB = await window.firebaseAPI.obtenerDato(idCantoURL, 'dbdata');
+            
+            if (dataDB) {
+                // 1. Sincronizar Cejilla
+                if (dataDB.cejilla !== undefined) {
+                    cejillaSelect.value = dataDB.cejilla;
+                    localStorage.setItem(`cejilla_${idCantoURL}`, dataDB.cejilla);
                 }
+                // 2. Sincronizar Transporte (Acorde)
+                if (dataDB.acorde !== undefined) {
+                    currentKeyOffset = parseInt(dataDB.acorde) || 0;
+                    localStorage.setItem(`transporte_${idCantoURL}`, dataDB.acorde);
+                    
+                    const controlAco = document.getElementById('transporteControl');
+                    if (controlAco) controlAco.value = currentKeyOffset.toString();
+                }
+                
+                renderCanto();
+                console.log("✅ Datos recuperados de dbdata");
             }
-        });
+        } catch (error) {
+            console.warn("Error al recuperar de dbdata:", error);
+        }
+    };
 
-        setTimeout(() => renderCanto(), 500);
-    }
+    // --- CARGA INICIAL (Prioridad: LocalStorage -> Nube) ---
+    const localCejilla = localStorage.getItem(`cejilla_${idCantoURL}`);
+    const localTransporte = localStorage.getItem(`transporte_${idCantoURL}`);
+    
+    if (localCejilla !== null) cejillaSelect.value = localCejilla;
+    if (localTransporte !== null) currentKeyOffset = parseInt(localTransporte) || 0;
+
+    // --- EVENTO DE CAMBIO EN CEJILLA ---
+    cejillaSelect.addEventListener('change', () => {
+        if (typeof window.guardarCejilla === 'function') {
+            window.guardarCejilla(idCantoURL, cejillaSelect.value);
+        }
+        localStorage.setItem(`cejilla_${idCantoURL}`, cejillaSelect.value);
+    });
+
+    // Pequeño retardo para asegurar que las fuentes cargaron antes de renderizar
+    setTimeout(() => renderCanto(), 300);
+}
+// FIN 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE
+
 
     // 27.27 Parsear y almacenar los datos del canto actual
-    // Asegurarse de que currentCantoData sea un objeto válido antes de intentar asignar propiedades.
-    // Esto es una medida defensiva si por alguna razón la declaración global no se procesara a tiempo.
     if (typeof currentCantoData === 'undefined' || currentCantoData === null) {
         console.warn("currentCantoData no está definido o es nulo al inicio de initializeCantoPage, inicializando.");
         currentCantoData = { lizq: [], lder: [] };
@@ -1235,64 +1253,89 @@ const cantoBackgroundMap = {
 };
 
 
-// 29: GUARDAR TRANSPORTE EN FIREBASE
+// 29: GUARDAR TRANSPORTE EN DBDATA
 window.guardarTransporte = async function(cantoId, valor) {
     if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
-        // Guarda el valor numérico
-        await window.firebaseAPI.guardarDato(cantoId, valor, 'transporte');
         
-        // --- LLAMADA IMPRESCINDIBLE A LA SECCIÓN 31 ---
-        if (window.registrarFechaCambio) {
-            await window.registrarFechaCambio(cantoId);
+        // 1. ACTUALIZAMOS EL VALOR EN EL CONTROL (Para que la Sec 31 lo lea)
+        // El 'valor' aquí es el índice numérico (0, 2, 5, etc.)
+        const elTransporte = document.getElementById('transporteControl');
+        if (elTransporte) {
+            elTransporte.value = valor;
+        }
+
+        // 2. DISPARAMOS EL REGISTRO TÉCNICO UNIFICADO (Sección 31)
+        // Esto guardará el objeto {fecha, acorde, cejilla} en /dbdata/ y en el historial
+        if (typeof registrarCambioTecnico === 'function') {
+            await registrarCambioTecnico(cantoId);
+            console.log(`✅ Transporte ${valor} sincronizado en dbdata para ${cantoId}`);
         }
     }
-};
+}; 
 
-// 30: GUARDAR CEJILLA EN FIREBASE
+// FIN 29: GUARDAR TRANSPORTE EN DBDATA
+
+// 30: GUARDAR CEJILLA EN DBDATA
 window.guardarCejilla = async function(cantoId, valor) {
     if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
-        // Guarda la cejilla
-        await window.firebaseAPI.guardarDato(cantoId, valor, 'cejilla');
         
-        // --- LLAMADA IMPRESCINDIBLE A LA SECCIÓN 31 ---
-        if (window.registrarFechaCambio) {
-            await window.registrarFechaCambio(cantoId);
+        // 1. ACTUALIZAMOS EL VALOR EN EL CONTROL (Para que la Sec 31 lo lea)
+        const elCejilla = document.getElementById('cejillaControl') || document.getElementById('cejillaSelect');
+        if (elCejilla) {
+            elCejilla.value = valor;
+        }
+
+        // 2. DISPARAMOS EL REGISTRO TÉCNICO UNIFICADO (Sección 31)
+        // Esto guardará el objeto {fecha, acorde, cejilla} en /dbdata/ y en el historial
+        if (typeof registrarCambioTecnico === 'function') {
+            await registrarCambioTecnico(cantoId);
+            console.log(`✅ Cejilla ${valor} sincronizada en dbdata para ${cantoId}`);
         }
     }
 };
+// FIN 30: GUARDAR CEJILLA EN FIREBASE
 
 
-        // 31: REGISTRO DE CAMBIO (FECHA CON HISTORIAL DETALLADO)
-        const registrarCambioTecnico = async (cantoId) => {
+// 31: REGISTRO DE CAMBIO TÉCNICO (Versión Blindada para dbdata)
+        window.registrarCambioTecnico = async (cantoId, valorForzado = null) => {
             try {
                 if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
-                    const ahora = new Date(); 
-                    const fechaId = ahora.getTime().toString(); 
-
-                    // CAPTURA SEGURA: Buscamos los IDs reales del visor de cantos
+                    const ahora = new Date();
+                    const fechaId = ahora.getTime().toString();
+                    
+                    // LÓGICA DE DETECCIÓN DE ACORDE:
+                    // Si el modal nos manda un valor (valorForzado), usamos ese.
+                    // Si no, intentamos leer el input. Si no hay nada, por defecto es "0".
                     const selAcorde = document.getElementById('transporteControl');
-                    const selCejilla = document.getElementById('cejillaControl') || document.getElementById('cejillaSelect');
+                    let acordeActual = "0";
+                    
+                    if (valorForzado !== null) {
+                        acordeActual = String(valorForzado);
+                    } else if (selAcorde && selAcorde.value !== "") {
+                        acordeActual = String(selAcorde.value);
+                    }
 
-                    // Capturamos el valor actual o "0" si no existe
-                    const acordeActual = selAcorde ? String(selAcorde.value) : "0";
+                    // LÓGICA DE DETECCIÓN DE CEJILLA:
+                    const selCejilla = document.getElementById('cejillaControl') || document.getElementById('cejillaSelect');
                     const cejillaActual = selCejilla ? String(selCejilla.value) : "0";
 
-                    const datos = {
-                        valor: ahora,
+                    // Estructura dbdata unificada
+                    const datosDB = {
+                        fecha: ahora,
                         acorde: acordeActual,
                         cejilla: cejillaActual
                     };
 
-                    // Guardamos en la raíz de transportación (para la tabla del perfil)
-                    await window.firebaseAPI.guardarDato(cantoId, datos, 'transportacion');
+                    // 1. Guardamos en la raíz (Estado actual para la tabla del Perfil)
+                    await window.firebaseAPI.guardarDato(cantoId, datosDB, 'dbdata');
                     
-                    // Guardamos en el historial (para el calendario del perfil)
-                    await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datos, 'transportacion');
+                    // 2. Guardamos en el historial (Para los puntos del Calendario)
+                    await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datosDB, 'dbdata');
                     
-                    console.log(`✅ Sincronizado: Acorde ${acordeActual}, Cejilla ${cejillaActual}`);
+                    console.log(`✅ dbdata Sincronizado: ${cantoId} -> Acorde: ${acordeActual}, Cejilla: ${cejillaActual}`);
                 }
             } catch (e) { 
-                console.warn("Error en el registro técnico de la Sección 31:", e); 
+                console.warn("Error crítico en Sección 31:", e); 
             }
         };
 // FIN 31: REGISTRO DE CAMBIO

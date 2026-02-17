@@ -149,7 +149,7 @@ async function renderizarTablaCantos() {
             const datosRAM = ALMACEN_CANTOS[canto.id] || null;
             
             // Si hay RAM usamos el dato, si no, dejamos el espacio esperando
-            const cejillaVisual = datosRAM ? (datosRAM.cejilla === "0" ? "-" : datosRAM.cejilla) : "..."; 
+            const cejillaVisual = datosRAM ? (datosRAM.cejilla === "0" ? "-" : datosRAM.cejilla) : ""; 
             const numAcorde = datosRAM ? String(datosRAM.acorde) : null;
             const acordeTexto = (numAcorde !== null && MAPA_ACORDES[numAcorde]) ? MAPA_ACORDES[numAcorde] : "";
 
@@ -316,47 +316,44 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
 // <--- CIERRE CORRECTO DE FUNCIÓN 5
 
 
-// 6: OBTENER FIREBASE: Unificado para dbdata (Ruta Única y Segura)
+// 6: OBTENER FIREBASE: Unificado para leer desde dbdata (Ruta Única)
 async function obtenerDatosExtraFirebase(cantoId, uid) {
     try {
         const { getDoc, doc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
+        // Realizamos UNA SOLA llamada al documento unificado
         const docRef = doc(db, "usuarios", uid, "dbdata", cantoId);
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
             const rawData = docSnap.data();
             
-            // 1. Procesamos la fecha igual que en la 21
-            let fechaObjeto = null;
-            const d = rawData.fecha || rawData.valor; 
-            if (d) {
-                fechaObjeto = d.toDate ? d.toDate() : new Date(d);
-            }
-
-            // 2. Creamos el objeto EXACTAMENTE igual al de la Sección 21
-            const datosNormalizados = {
-                fecha: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null,
-                valor: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null, // Doble campo por seguridad
+            // Extraemos los campos directamente
+            const datos = {
                 acorde: String(rawData.acorde || "0"),
-                cejilla: String(rawData.cejilla || "0")
+                cejilla: String(rawData.cejilla || "0"),
+                fecha: rawData.fecha || null
             };
 
-            console.log(`✅ Sección 6 (dbdata) > Datos cargados para ${cantoId}:`, datosNormalizados);
+            // LOG de depuración para confirmar que lee dbdata
+            console.log(`✅ Sección 6 (dbdata) cargada para ${cantoId}:`, datos);
 
-            // 3. Guardamos en RAM
-            ALMACEN_CANTOS[cantoId] = datosNormalizados;
+            // 1. Guardar en RAM
+            ALMACEN_CANTOS[cantoId] = datos;
 
-            // 4. Guardamos en LocalStorage
-            localStorage.setItem(`data-${cantoId}`, JSON.stringify(datosNormalizados));
+            // 2. Guardar en LocalStorage (Escudo)
+            localStorage.setItem(`data-${cantoId}`, JSON.stringify(datos));
 
-            // 5. ¡ESTO ES LO QUE PINTA LA TABLA!
+            // 3. Pintar en la tabla inmediatamente
             if (typeof inyectarDatosEnTabla === 'function') {
-                inyectarDatosEnTabla(cantoId, datosNormalizados, false);
+                inyectarDatosEnTabla(cantoId, datos, false);
             }
+        } else {
+            // Si no existe en dbdata, podemos asumir valores por defecto o no hacer nada
+            // console.log(`ℹ️ El canto ${cantoId} no tiene datos en dbdata aún.`);
         }
     } catch (e) { 
-        console.warn("⚠️ Error en Sección 6:", e); 
+        console.warn("⚠️ Error en Sección 6 (dbdata):", e); 
     }
 }
 // FINAL DE LA SECCION 6
@@ -708,85 +705,74 @@ let mesVisualizado = new Date().getMonth();
 let añoVisualizado = new Date().getFullYear();
 let totalRegistrosCanto = 0; 
 
-// 20.1: APERTURA Y CARGA DE DATOS (REPARADO PARA IDS NUMÉRICOS)
-// 20.1: APERTURA Y CARGA DE DATOS (REPARADO PARA IDS NUMÉRICOS Y MES VISUAL)
+// 20.1: APERTURA Y CARGA DE DATOS (LECTURA DESDE DBDATA)
 window.abrirCalendario = async function(cantoId) {
     const user = auth.currentUser;
     if (!user) return;
 
     try {
-        const { collection, getDocs, query, orderBy } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+        const { collection, getDocs, doc, getDoc, query, orderBy } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
-        // 1. Manejo del Modal (Fondo oscuro para evitar bloqueos)
         let modal = document.getElementById('calendar-modal');
         if (!modal) {
             modal = document.createElement('div');
             modal.id = 'calendar-modal';
-            modal.style = "position:fixed; top:0; left:0; width:100%; height:100%; z-index:999999; display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,0.7); font-family: sans-serif;";
+            modal.style = "position:fixed; top:0; left:0; width:100%; height:100%; z-index:999999; display:flex; align-items:center; justify-content:center; font-family: sans-serif;";
             document.body.appendChild(modal);
         }
-        modal.style.display = "flex";
-        modal.innerHTML = '<div style="background:white; padding:20px; border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">⌛ Cargando historial de uso...</div>';
 
         fechasHistorialActivas = [];
         fechasOriginalesFull = [];
         totalRegistrosCanto = 0;
 
-        // 2. Leer la Sub-colección Historial (La ruta que me pasaste)
+        // --- NUEVA RUTA DBDATA ---
         const refHistorial = collection(db, "usuarios", user.uid, "dbdata", cantoId, "historial");
-        const snapshot = await getDocs(refHistorial);
+        // Traemos los datos ordenados por fecha de una vez
+        const q = query(refHistorial, orderBy("fecha", "desc"));
+        const snapshot = await getDocs(q);
         
         snapshot.forEach(docSnap => {
             const data = docSnap.data();
-            const idDocumento = docSnap.id; // Aquí está el "1771357294431"
+            
+            // Extracción directa de los 3 valores que definimos en jsgral.js
+            const d = data.fecha;
+            const acorde = data.acorde || "0";
+            const cejilla = data.cejilla || "0";
 
-            // --- LÓGICA MAESTRA: Convertimos el ID en Fecha ---
-            let timestamp = parseInt(idDocumento);
-            let fechaFinal = new Date(timestamp);
+            let fechaFinal = null;
+            if (d) {
+                if (d.toDate) fechaFinal = d.toDate();
+                else if (d.seconds) fechaFinal = new Date(d.seconds * 1000);
+                else fechaFinal = new Date(d);
+            }
 
             if (fechaFinal && !isNaN(fechaFinal.getTime())) {
-                // Generamos la clave YYYY-M-D para que el grid pinte los días
                 const clave = `${fechaFinal.getFullYear()}-${fechaFinal.getMonth() + 1}-${fechaFinal.getDate()}`;
                 fechasHistorialActivas.push(clave);
                 
-                // Guardamos para la lista detallada
+                // Guardamos para el listado inferior del calendario
                 fechasOriginalesFull.push({
                     fecha: fechaFinal,
-                    acorde: String(data.acorde || "0"),
-                    cejilla: String(data.cejilla || "0")
+                    acorde: acorde,
+                    cejilla: cejilla
                 });
                 totalRegistrosCanto++;
             }
         });
 
-        // 3. POSICIONAMIENTO AUTOMÁTICO DEL MES
-        if (fechasOriginalesFull.length > 0) {
-            // Ordenamos: el más reciente primero
-            fechasOriginalesFull.sort((a, b) => b.fecha.getTime() - a.fecha.getTime());
-            
-            // Forzamos al calendario a mostrar el mes del último registro
-            const ultimaFecha = fechasOriginalesFull[0].fecha;
-            window.mesVisualizado = ultimaFecha.getMonth();
-            window.añoVisualizado = ultimaFecha.getFullYear();
-        } else {
-            // Si está vacío, mostramos el mes actual
-            const hoy = new Date();
-            window.mesVisualizado = hoy.getMonth();
-            window.añoVisualizado = hoy.getFullYear();
-        }
-
-        // 4. LLAMAR A LA VISTA (S20.5)
-        if (typeof actualizarVistaCalendario === 'function') {
-            actualizarVistaCalendario(); 
-        }
-
+        // Ya vienen ordenados por la query, pero aseguramos por si acaso
+        fechasOriginalesFull.sort((a, b) => b.fecha.getTime() - a.fecha.getTime());
+        
+        actualizarVistaCalendario();
         document.addEventListener('keydown', manejarEscape);
 
+        console.log(`📅 Calendario cargado desde dbdata: ${totalRegistrosCanto} registros.`);
+
     } catch (e) { 
-        console.error("❌ Error en historial:", e);
-        if(modal) modal.style.display = 'none';
+        console.error("Error crítico al abrir calendario (dbdata):", e); 
     }
-};// FIN DE 20.1: APERTURA Y CARGA DE DATOS
+};
+// FIN DE 20.1: APERTURA Y CARGA DE DATOS
 
 
 // 20.4: NAVEGACIÓN DE MESES
@@ -797,18 +783,17 @@ window.cambiarMes = function(direccion) {
     actualizarVistaCalendario();
 };
 
-// 20.5: VISTA DEL CALENDARIO (CORREGIDO)
+// 20.5: VISTA DEL CALENDARIO
 function actualizarVistaCalendario() {
     const modal = document.getElementById('calendar-modal');
-    if (!modal) return; 
+    if (!modal) return; // SEGURIDAD: Si no hay modal, no intentamos poner innerHTML
 
-    // Obtenemos el nombre del mes actual para el encabezado
     const nombreMes = new Date(añoVisualizado, mesVisualizado).toLocaleString('es-ES', { month: 'long' }).toUpperCase();
 
     modal.innerHTML = `
         <div id="calendar-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:flex; align-items:center; justify-content:center;">
             <div id="calendar-content" style="background:white; padding:20px; border-radius:15px; width:300px; text-align:center; position:relative; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
-                <button onclick="cerrarCalendario()" class="xclose" style="position:absolute; top:10px; right:15px; border:none; background:none; font-size:24px; cursor:pointer;">&times;</button>
+                <button onclick="cerrarCalendario()" class="xclose">&times;</button>
                 
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
                     <button onclick="cambiarMes(-1)" style="border:none; background:#e0e0e0; border-radius:5px; padding:5px 12px; cursor:pointer; font-weight:bold;">&lt;</button>
@@ -822,21 +807,20 @@ function actualizarVistaCalendario() {
                 
                 <div style="margin-top:20px; border-top: 1px solid #eee; padding-top:15px;">
                     <p style="margin:0; font-size:13px; color:#444;">
-                        Has usado este canto 
-                        <span onclick="abrirListaDetallada()" style="color:#bc0009; font-weight:bold; font-size:18px; cursor:pointer; text-decoration:underline;">
+                        Has transportado este canto 
+                        <span onclick="abrirListaDetallada()" style="color:#d4af37; font-weight:bold; font-size:16px; cursor:pointer; text-decoration:underline;">
                             ${totalRegistrosCanto}
                         </span> veces
                     </p>
-                    <small style="color:gray; font-size:10px;">(Toca el número para ver el detalle)</small>
                 </div>
             </div>
         </div>`;
 
-    // Cerrar al hacer clic fuera
     document.getElementById('calendar-overlay').onclick = (e) => {
         if (e.target.id === 'calendar-overlay') cerrarCalendario();
     };
 }
+
 // FIN 20.5: VISTA DEL CALENDARIO
 
 // 20.6: LISTADO TÉCNICO DETALLADO
@@ -941,7 +925,7 @@ function generarGridNavegable(fechasActivas, mes, año) {
 
 // FIN 20.9: FUNCION GENERAR GRID
 
-// 21: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM (VERSIÓN FINAL CORREGIDA)
+// 21: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM (CORREGIDO A DBDATA)
 window.sincronizarTodoARam = async function() { 
     const user = auth.currentUser;
     if (!user) {
@@ -957,78 +941,66 @@ window.sincronizarTodoARam = async function() {
         if (container) container.style.display = 'block';
         if (texto) {
             texto.style.display = 'block';
-            texto.innerText = "Conectando con la nube...";
+            texto.innerText = "Conectando con dbdata...";
         }
         if (barra) {
             barra.style.width = '10%';
             barra.style.background = 'linear-gradient(90deg, #4285F4, #34A853)';
         }
 
-        // Importamos las herramientas necesarias de Firestore
         const { collection, getDocs } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
-        // Apuntamos a la colección donde se guardan los datos de cada canto
-        const colRef = collection(db, "usuarios", user.uid, "dbdata");
-        const querySnapshot = await getDocs(colRef);
+        const querySnapshot = await getDocs(collection(db, "usuarios", user.uid, "dbdata"));
         const total = querySnapshot.size;
-
+        
         if (total === 0) {
-            if (texto) texto.innerText = "No se encontraron registros.";
+            if (texto) texto.innerText = "No se encontraron registros en dbdata.";
             setTimeout(() => { if (container) container.style.display = 'none'; }, 3000);
             return;
         }
 
         let procesados = 0;
 
-        // Recorremos los documentos (cada documento es un canto)
         querySnapshot.forEach((docSnap) => {
-            const cantoId = docSnap.id; 
-            const docData = docSnap.data();
+            const cantoId = docSnap.id;
+            const rawData = docSnap.data();
             
-            // 🔍 LOG 1: Verificación de entrada
-            console.log(`📡 LOG 1 > Datos de dbdata [${cantoId}]:`, docData);
+            // 🔍 LOG 1: Ver datos crudos de la nueva colección
+            console.log(`📡 LOG 1 > Datos de dbdata [${cantoId}]:`, rawData);
 
-            // CORRECCIÓN CLAVE: Según tus logs, los datos reales (acorde/cejilla)
-            // están dentro de una propiedad llamada 'valor'
-            const rawData = docData.valor ? docData.valor : docData;
-
-            let fechaObjeto = null;
-            // Buscamos la fecha en la raíz o dentro de valor
-            const d = rawData.fecha || docData.fecha; 
+            let fechaFinal = null;
+            // En dbdata los campos son directos: fecha, acorde, cejilla
+            const d = rawData.fecha || rawData.valor; 
 
             if (d) {
-                // Si es Timestamp de Firebase usamos toDate(), si no, convertimos a fecha normal
-                fechaObjeto = (d && typeof d.toDate === 'function') ? d.toDate() : new Date(d);
+                fechaFinal = d.toDate ? d.toDate() : new Date(d);
             }
 
-            // NORMALIZACIÓN: Preparamos el objeto para la tabla
             const datosNormalizados = {
-                fecha: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null,
-                valor: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null,
+                valor: (fechaFinal && !isNaN(fechaFinal.getTime())) ? fechaFinal : null,
                 acorde: String(rawData.acorde || "0"),
                 cejilla: String(rawData.cejilla || "0")
             };
 
-            // 🧠 LOG 2: Aquí ya deberías ver los números correctos de acorde y cejilla
+            // 🧠 LOG 2: Ver cómo entra a la RAM
             console.log(`🧠 LOG 2 > RAM PROCESADA [${cantoId}]:`, datosNormalizados);
 
-            // Guardamos en la memoria del navegador y en LocalStorage
+            // Guardar en RAM y LocalStorage
             ALMACEN_CANTOS[cantoId] = datosNormalizados;
             localStorage.setItem(`data-${cantoId}`, JSON.stringify(datosNormalizados));
             
-            // 🎨 ACTUALIZACIÓN VISUAL: Inyectamos los datos en la tabla de perfil.html
+            // Actualizar tabla visualmente (Sección 5)
             if (typeof inyectarDatosEnTabla === 'function') {
                 inyectarDatosEnTabla(cantoId, datosNormalizados, false);
             }
 
-            // Actualizamos la barra de progreso
             procesados++;
             const porcentaje = Math.round((procesados / total) * 100);
             if (barra) barra.style.width = `${porcentaje}%`;
-            if (texto) texto.innerText = `Sincronizando: ${procesados} de ${total}...`;
+            if (texto) texto.innerText = `Sincronizando dbdata: ${procesados} de ${total}...`;
         });
 
-        if (texto) texto.innerText = "¡Sincronización completada!";
+        if (texto) texto.innerText = "¡Sincronización dbdata completada!";
         if (barra) barra.style.background = "#34A853"; 
 
         setTimeout(() => {
@@ -1038,7 +1010,7 @@ window.sincronizarTodoARam = async function() {
 
     } catch (e) {
         console.error("❌ Error en sincronización:", e);
-        if (texto) texto.innerText = "Error al conectar con la nube.";
+        if (texto) texto.innerText = "Error al conectar con dbdata.";
     }
 };
 // FIN 21: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM
