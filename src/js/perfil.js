@@ -6,7 +6,7 @@ import { signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth
 let etapaGuardada = null;
 const CODIGO_ADMIN_SECRETO = "RE77"; 
 let ALMACEN_CANTOS = {};
-
+window.cacheData = {}; 
 window.indiceCantosGlobal = [];
 
 // Cargamos el JSON de inmediato
@@ -135,6 +135,7 @@ auth.onAuthStateChanged(async (user) => {
 
 
 // 3: RENDERIZADO DE TABLA (Restaurada con Calendario y Estructura para Firebase)
+// 3: RENDERIZADO DE TABLA (CORREGIDO: 6 COLUMNAS)
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
@@ -152,24 +153,19 @@ async function renderizarTablaCantos() {
                 <thead>
                     <tr>
                         <th>Canto</th>
-                        <th>Estado</th>
-                        <th>Uso</th>
-                        <th>Cejilla (Or/Tu)</th>
-                        <th>Acorde (Or/Tu)</th>
-                    </tr>
+                        <th>Valoración</th> <th>Estado</th>     <th>Uso</th>        <th>Cejilla (Or/Tu)</th> <th>Acorde (Or/Tu)</th>  </tr>
                 </thead>
                 <tbody id="cuerpo-tabla-perfil">`;
 
         cantos.forEach(canto => {
-            // Buscamos en la RAM (por si ya cargó algo del LocalStorage)
             const datosRAM = ALMACEN_CANTOS[canto.id] || null;
             
-            // Si hay RAM usamos el dato, si no, dejamos el espacio esperando
             const cejillaVisual = datosRAM ? (datosRAM.cejilla === "0" ? "-" : datosRAM.cejilla) : "..."; 
             const numAcorde = datosRAM ? String(datosRAM.acorde) : null;
-            const acordeTexto = (numAcorde !== null && MAPA_ACORDES[numAcorde]) ? MAPA_ACORDES[numAcorde] : "";
+            
+            // Usamos tu lógica de MAPA_ACORDES o la que inyecta S5 después
+            const acordeTexto = (numAcorde !== null && MAPA_ACORDES[numAcorde]) ? MAPA_ACORDES[numAcorde] : "...";
 
-            // Procesamos fecha para el Uso si existe en RAM
             let fechaTexto = "---";
             if (datosRAM && (datosRAM.fecha || datosRAM.valor)) {
                 const fRaw = datosRAM.fecha || datosRAM.valor;
@@ -189,11 +185,16 @@ async function renderizarTablaCantos() {
                             ${canto.titulo}
                         </a>
                     </td>
+                    <td id="valoracion-${canto.id}">...</td>
+                    
                     <td id="status-${canto.id}">⌛</td>
+                    
                     <td id="uso-${canto.id}">
                         ${fechaTexto} <span onclick="event.stopPropagation(); window.abrirCalendario('${canto.id}')" style="cursor:pointer; font-size:16px;">📅</span>
                     </td>
+                    
                     <td>${canto.cejilla ?? 0} / <b id="cejilla-tu-${canto.id}" style="color: #bc0009;">${cejillaVisual}</b></td>
+                    
                     <td>${canto.acorde ?? 'N/A'} / <b id="acorde-tu-${canto.id}" style="color: #bc0009;">${acordeTexto}</b></td>
                 </tr>`;
         });
@@ -201,7 +202,6 @@ async function renderizarTablaCantos() {
         html += `</tbody></table>`;
         contenedor.innerHTML = html;
 
-        // Llamamos a la carga lenta para que Firebase rellene los huecos
         completarDatosLentamente(cantos);
 
     } catch (e) {
@@ -279,6 +279,22 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
     const elUso = document.getElementById(`uso-${cantoId}`);
     const fila = document.getElementById(`fila-${cantoId}`);
 
+       // 5.A Valoracion de Estrllas 
+        const elVal = document.getElementById(`valoracion-${cantoId}`);
+        if (elVal) {
+            // Aquí usamos la valoración que normalizamos en el paso anterior
+            const puntos = parseInt(data.valoracion) || 0; 
+            let estrellasHTML = '<div class="estrellas-contenedor" style="cursor:pointer; font-size: 18px;">';
+            
+            for (let i = 1; i <= 5; i++) {
+                const color = (i <= puntos) ? '#FFD700' : '#C0C0C0'; 
+                estrellasHTML += `<span onclick="guardarValoracion('${cantoId}', ${i})" style="color: ${color}; padding: 0 1px;">★</span>`;
+            }
+            
+            estrellasHTML += '</div>';
+            elVal.innerHTML = estrellasHTML;
+        }
+
     if (elCej) {
         const valorCej = data.cejilla || "0";
         elCej.innerText = (valorCej === "0") ? "-" : valorCej;
@@ -355,7 +371,8 @@ async function obtenerDatosExtraFirebase(cantoId, uid) {
                 fecha: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null,
                 valor: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null, // Doble campo por seguridad
                 acorde: String(rawData.acorde || "0"),
-                cejilla: String(rawData.cejilla || "0")
+                cejilla: String(rawData.cejilla || "0"),
+                valoracion: parseInt(rawData.valoracion || 0)
             };
 
             console.log(`✅ Sección 6 (dbdata) > Datos cargados para ${cantoId}:`, datosNormalizados);
@@ -1021,8 +1038,11 @@ window.sincronizarTodoARam = async function() {
                 fecha: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null,
                 valor: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null,
                 acorde: String(rawData.acorde || "0"),
-                cejilla: String(rawData.cejilla || "0")
+                cejilla: String(rawData.cejilla || "0"),
+
+                valoracion: parseInt(rawData.valoracion || 0)
             };
+            window.cacheData[cantoId] = datosNormalizados;
 
             // 🧠 LOG 2: Aquí ya deberías ver los números correctos de acorde y cejilla
             console.log(`🧠 LOG 2 > RAM PROCESADA [${cantoId}]:`, datosNormalizados);
@@ -1070,3 +1090,31 @@ auth.onAuthStateChanged((user) => {
         }
     }
 });
+
+// 23: GUARDAR VALORACION
+        window.guardarValoracion = async function(cantoId, puntos) {
+            const user = auth.currentUser;
+            if (!user) return;
+
+            try {
+                const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+                const docRef = doc(db, "usuarios", user.uid, "dbdata", cantoId);
+                
+                // Guardamos dentro del campo 'valor' para que coincida con tu base de datos
+                await setDoc(docRef, { 
+                    valor: { 
+                        valoracion: puntos 
+                    } 
+                }, { merge: true });
+                
+                // Actualizamos caché local para el brillo instantáneo
+                if (!window.cacheData[cantoId]) window.cacheData[cantoId] = {};
+                window.cacheData[cantoId].valoracion = puntos;
+                
+                window.inyectarDatosEnTabla(cantoId, window.cacheData[cantoId]);
+                
+                console.log(`✅ Valoración ${puntos} guardada en mapa 'valor' para: ${cantoId}`);
+            } catch (e) {
+                console.error("❌ Error al guardar valoración:", e);
+            }
+        };
