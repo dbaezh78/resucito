@@ -284,33 +284,28 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
         elCej.innerText = (valorCej === "0") ? "-" : valorCej;
     }
     
-        if (elAco) {
-            const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
-            const t = (data.acorde !== undefined) ? parseInt(data.acorde) : 0;
+    if (elAco) {
+        const cords = ["La", "Si♭", "Si", "Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#"];
+        const t = (data.acorde !== undefined && data.acorde !== null) ? parseInt(data.acorde) : NaN;
+        
+        // --- BLINDAJE DE LA "m" ---
+        const infoCanto = (typeof listaCantosGlobal !== 'undefined') ? listaCantosGlobal.find(c => c.id === cantoId) : null;
+        
+        // Verificamos si el original tiene "m" o "minor" de forma más segura
+        const acordeOriginalStr = infoCanto ? String(infoCanto.acorde) : "La m";
+        const esMenor = acordeOriginalStr.toLowerCase().includes("m");
 
-            // Buscamos en la variable global que cargamos arriba
-            const lista = window.indiceCantosGlobal || [];
-            const cantoMaestro = lista.find(c => String(c.id) === String(cantoId));
+        if (isNaN(t)) {
+            elAco.innerHTML = `- ${esLocal ? '<span style="color: #28a745;">●</span>' : ''}`;
+        } else {
+            const notaFinal = cords[t % 12];
+            // Si el original era "Re m", el rojo DEBE ser "Sol m" (con espacio)
+            const sufijo = esMenor ? " " : "";
+            
+            elAco.innerHTML = `${notaFinal}${sufijo} ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
+        }
+    }
 
-            if (!cantoMaestro) {
-                // Si el JSON aún no llega, ponemos un estado de carga
-                elAco.innerHTML = `<span style="color:gray;">Cargando...</span>`;
-            } else {
-                // Lógica de transporte que ya definimos
-                const acordeOriginalStr = cantoMaestro.acorde || "La m";
-                const esMenor = acordeOriginalStr.toLowerCase().includes("m");
-                const notaBasePura = acordeOriginalStr.split(" ")[0].replace("m", "").trim();
-                const indiceBase = cords.indexOf(notaBasePura);
-
-                if (indiceBase !== -1) {
-                    const posicionFinal = (indiceBase + t) % 12;
-                    const notaFinal = cords[posicionFinal];
-                    elAco.innerHTML = `<b style="color:red;">${notaFinal}${esMenor ? " m" : ""}</b>`;
-                } else {
-                    elAco.innerHTML = acordeOriginalStr;
-                }
-            }
-}
     if (fila) {
         const enlace = fila.querySelector('a');
         if (enlace) {
