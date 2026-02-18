@@ -256,40 +256,42 @@ async function completarDatosLentamente(cantos) {
 // FIN 4: COMPLETAR DATOS
 
 
-// 5: INYECTAR DATOS (LOGICA DIRECTA + BLINDAJE DE MENORES)
+// 5: INYECTAR DATOS: Blindada para leer correctamente dbdata
 window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
     const elCej = document.getElementById(`cejilla-tu-${cantoId}`);
     const elAco = document.getElementById(`acorde-tu-${cantoId}`);
     const elUso = document.getElementById(`uso-${cantoId}`);
     const fila = document.getElementById(`fila-${cantoId}`);
 
+    // --- 1. ACTUALIZAR CEJILLA ---
     if (elCej) {
         const valorCej = data.cejilla || "0";
         elCej.innerText = (valorCej === "0") ? "-" : valorCej;
     }
     
+    // --- 2. ACTUALIZAR ACORDE VISUAL ---
     if (elAco) {
-        const cords = ["La", "Si♭", "Si", "Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#"];
+        const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
+        
+        // Convertimos a número. Si data.acorde es "5", t será 5.
         const t = (data.acorde !== undefined && data.acorde !== null) ? parseInt(data.acorde) : NaN;
         
-        // --- BLINDAJE DE LA "m" ---
-        const infoCanto = (typeof listaCantosGlobal !== 'undefined') ? listaCantosGlobal.find(c => c.id === cantoId) : null;
-        
-        // Verificamos si el original tiene "m" o "minor" de forma más segura
-        const acordeOriginalStr = infoCanto ? String(infoCanto.acorde) : "La m";
-        const esMenor = acordeOriginalStr.toLowerCase().includes("m");
-
         if (isNaN(t)) {
             elAco.innerHTML = `- ${esLocal ? '<span style="color: #28a745;">●</span>' : ''}`;
         } else {
-            const notaFinal = cords[t % 12];
-            // Si el original era "Re m", el rojo DEBE ser "Sol m" (con espacio)
-            const sufijo = esMenor ? " " : "";
+            // CÁLCULO MAESTRO: La m es el índice 9.
+            // Si t es 5 (Re m): (9 + 5) = 14. 14 % 12 = 2.
+            // cords[2] es "Re". Resultado: "Re m".
+            const posicionFinal = (9 + t) % 12;
+            const notaFinal = cords[posicionFinal];
             
-            elAco.innerHTML = `${notaFinal}${sufijo} ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
+            elAco.innerHTML = `${notaFinal} m ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
+            // Consola para depuración:
+            // console.log(`Canto: ${cantoId} | Offset: ${t} | Nota: ${notaFinal}m`);
         }
     }
 
+    // --- 3. ACTUALIZAR EL ENLACE (HREF) ---
     if (fila) {
         const enlace = fila.querySelector('a');
         if (enlace) {
@@ -299,6 +301,8 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
         }
     }
 
+    // --- 4. ACTUALIZAR FECHA ---
+    // Usamos el campo 'fecha' que es el estándar de dbdata
     const fechaOrigen = data.fecha || data.valor; 
     if (elUso && fechaOrigen) {
         const f = (fechaOrigen.toDate) ? fechaOrigen.toDate() : new Date(fechaOrigen);
@@ -308,7 +312,8 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
             elUso.innerHTML = `${dia} ${mesesShort[f.getMonth()]} <span onclick="event.stopPropagation(); window.abrirCalendario('${cantoId}')" style="cursor:pointer; font-size:16px;">📅</span>`;
         }
     }
-};// <--- CIERRE CORRECTO DE FUNCIÓN 5
+};
+// <--- CIERRE CORRECTO DE FUNCIÓN 5
 
 
 // 6: OBTENER FIREBASE: Unificado para dbdata (Ruta Única y Segura)
@@ -861,7 +866,7 @@ window.abrirListaDetallada = function() {
             </div>
             <div style="display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:15px; font-weight:bold; color:#333;">🎸 ${acordeTxt}</span>
-                <span style="font-size:14px; background:#f5f5f5; padding:3px 10px; border-radius:12px; color:#666; border:1px solid #eee; font-weight: 900;">🗜️ ${cejillaTxt}</span>
+                <span style="font-size:12px; background:#f5f5f5; padding:3px 10px; border-radius:12px; color:#666; border:1px solid #eee;">Cejilla: ${cejillaTxt}</span>
             </div>
         </div>`;
     }).join('');
@@ -1045,7 +1050,7 @@ auth.onAuthStateChanged((user) => {
         
         // Verificamos que la función exista antes de llamarla para evitar errores
         if (typeof window.sincronizarTodoARam === 'function') {
-            window.sincronizarTodoARam();
+            window.sincronizarTodoARam();        }
+ 
         }
-    }
 });

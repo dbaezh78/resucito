@@ -256,40 +256,42 @@ async function completarDatosLentamente(cantos) {
 // FIN 4: COMPLETAR DATOS
 
 
-// 5: INYECTAR DATOS (LOGICA DIRECTA + BLINDAJE DE MENORES)
+// 5: INYECTAR DATOS: Blindada para leer correctamente dbdata
 window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
     const elCej = document.getElementById(`cejilla-tu-${cantoId}`);
     const elAco = document.getElementById(`acorde-tu-${cantoId}`);
     const elUso = document.getElementById(`uso-${cantoId}`);
     const fila = document.getElementById(`fila-${cantoId}`);
 
+    // --- 1. ACTUALIZAR CEJILLA ---
     if (elCej) {
         const valorCej = data.cejilla || "0";
         elCej.innerText = (valorCej === "0") ? "-" : valorCej;
     }
     
+    // --- 2. ACTUALIZAR ACORDE VISUAL ---
     if (elAco) {
-        const cords = ["La", "Si♭", "Si", "Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#"];
+        const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
+        
+        // Convertimos a número. Si data.acorde es "5", t será 5.
         const t = (data.acorde !== undefined && data.acorde !== null) ? parseInt(data.acorde) : NaN;
         
-        // --- BLINDAJE DE LA "m" ---
-        const infoCanto = (typeof listaCantosGlobal !== 'undefined') ? listaCantosGlobal.find(c => c.id === cantoId) : null;
-        
-        // Verificamos si el original tiene "m" o "minor" de forma más segura
-        const acordeOriginalStr = infoCanto ? String(infoCanto.acorde) : "La m";
-        const esMenor = acordeOriginalStr.toLowerCase().includes("m");
-
         if (isNaN(t)) {
             elAco.innerHTML = `- ${esLocal ? '<span style="color: #28a745;">●</span>' : ''}`;
         } else {
-            const notaFinal = cords[t % 12];
-            // Si el original era "Re m", el rojo DEBE ser "Sol m" (con espacio)
-            const sufijo = esMenor ? " " : "";
+            // CÁLCULO MAESTRO: La m es el índice 9.
+            // Si t es 5 (Re m): (9 + 5) = 14. 14 % 12 = 2.
+            // cords[2] es "Re". Resultado: "Re m".
+            const posicionFinal = (9 + t) % 12;
+            const notaFinal = cords[posicionFinal];
             
-            elAco.innerHTML = `${notaFinal}${sufijo} ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
+            elAco.innerHTML = `${notaFinal} m ${esLocal ? '<span style="color: #28a745; font-size: 0.8em;">●</span>' : ''}`;
+            // Consola para depuración:
+            // console.log(`Canto: ${cantoId} | Offset: ${t} | Nota: ${notaFinal}m`);
         }
     }
 
+    // --- 3. ACTUALIZAR EL ENLACE (HREF) ---
     if (fila) {
         const enlace = fila.querySelector('a');
         if (enlace) {
@@ -299,6 +301,8 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
         }
     }
 
+    // --- 4. ACTUALIZAR FECHA ---
+    // Usamos el campo 'fecha' que es el estándar de dbdata
     const fechaOrigen = data.fecha || data.valor; 
     if (elUso && fechaOrigen) {
         const f = (fechaOrigen.toDate) ? fechaOrigen.toDate() : new Date(fechaOrigen);
@@ -308,7 +312,8 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
             elUso.innerHTML = `${dia} ${mesesShort[f.getMonth()]} <span onclick="event.stopPropagation(); window.abrirCalendario('${cantoId}')" style="cursor:pointer; font-size:16px;">📅</span>`;
         }
     }
-};// <--- CIERRE CORRECTO DE FUNCIÓN 5
+};
+// <--- CIERRE CORRECTO DE FUNCIÓN 5
 
 
 // 6: OBTENER FIREBASE: Unificado para dbdata (Ruta Única y Segura)
@@ -704,14 +709,16 @@ let añoVisualizado = new Date().getFullYear();
 let totalRegistrosCanto = 0; 
 
 // 20.1: APERTURA Y CARGA DE DATOS (REPARADO Y BLINDADO)
-// 20.1: APERTURA Y CARGA DE DATOS (REPARADO PARA RUTA Y DATOS REALES)
-// 20.1: APERTURA Y CARGA DE DATOS (CORRECCIÓN NIVEL "VALOR")
 window.abrirCalendario = async function(cantoId) {
     const user = auth.currentUser;
     if (!user) return;
 
+    // Aseguramos que las variables globales existan para que S20.5 no falle
+    if (typeof window.mesVisualizado === 'undefined') window.mesVisualizado = new Date().getMonth();
+    if (typeof window.añoVisualizado === 'undefined') window.añoVisualizado = new Date().getFullYear();
+
     try {
-        const { collection, getDocs } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+        const { collection, getDocs, query } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
         let modal = document.getElementById('calendar-modal');
         if (!modal) {
@@ -721,54 +728,60 @@ window.abrirCalendario = async function(cantoId) {
             document.body.appendChild(modal);
         }
         modal.style.display = "flex";
-        modal.innerHTML = '<div style="background:white; padding:20px; border-radius:10px;">⌛ Cargando historial técnico...</div>';
+        modal.innerHTML = '<div style="background:white; padding:20px; border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">⌛ Cargando historial...</div>';
 
+        // Reset de datos
         fechasHistorialActivas = [];
         fechasOriginalesFull = [];
         totalRegistrosCanto = 0;
 
+        // 2. Leer la Sub-colección Historial
         const refHistorial = collection(db, "usuarios", user.uid, "dbdata", cantoId, "historial");
         const snapshot = await getDocs(refHistorial);
         
         snapshot.forEach(docSnap => {
             const data = docSnap.data();
-            const idDoc = docSnap.id; 
+            const idDoc = docSnap.id.trim(); // Limpiamos el ID por seguridad
 
-            // --- TRUCO MAESTRO: Entramos en 'valor' ---
-            // Como vimos en tu imagen, los datos están dentro de un campo llamado 'valor'
-            const infoReal = data.valor || {}; 
-
+            // El ID es el timestamp (milisegundos)
             let timestamp = parseInt(idDoc);
             let fechaFinal = new Date(timestamp);
 
             if (!isNaN(fechaFinal.getTime())) {
+                // Clave exacta para que S20.5 encuentre el día en el grid
                 const clave = `${fechaFinal.getFullYear()}-${fechaFinal.getMonth() + 1}-${fechaFinal.getDate()}`;
                 fechasHistorialActivas.push(clave);
                 
-                // Guardamos acorde y cejilla extrayéndolos de 'infoReal' (el campo valor)
                 fechasOriginalesFull.push({
                     fecha: fechaFinal,
-                    acorde: String(infoReal.acorde || "0"), 
-                    cejilla: String(infoReal.cejilla || "0")
+                    acorde: String(data.acorde !== undefined ? data.acorde : "0"),
+                    cejilla: String(data.cejilla !== undefined ? data.cejilla : "0")
                 });
                 totalRegistrosCanto++;
             }
         });
 
-        fechasOriginalesFull.sort((a, b) => b.fecha - a.fecha);
-
+        // 3. Ajustar vista al último uso encontrado
         if (fechasOriginalesFull.length > 0) {
+            fechasOriginalesFull.sort((a, b) => b.fecha - a.fecha);
             const ultima = fechasOriginalesFull[0].fecha;
             window.mesVisualizado = ultima.getMonth();
             window.añoVisualizado = ultima.getFullYear();
         }
 
+        // 4. Renderizar (Llamada a S20.5)
         if (typeof actualizarVistaCalendario === 'function') {
             actualizarVistaCalendario(); 
+        } else {
+            console.error("No se encontró la función actualizarVistaCalendario");
+            modal.innerHTML = '<div style="background:white; padding:20px; border-radius:10px;">Error: Vista no cargada.</div>';
         }
 
+        document.addEventListener('keydown', manejarEscape);
+
     } catch (e) { 
-        console.error("❌ Error cargando historial:", e);
+        console.error("❌ Error en historial:", e);
+        if (modal) modal.style.display = 'none';
     }
 };
 // FIN DE 20.1: APERTURA Y CARGA DE DATOS
@@ -861,7 +874,7 @@ window.abrirListaDetallada = function() {
             </div>
             <div style="display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:15px; font-weight:bold; color:#333;">🎸 ${acordeTxt}</span>
-                <span style="font-size:14px; background:#f5f5f5; padding:3px 10px; border-radius:12px; color:#666; border:1px solid #eee; font-weight: 900;">🗜️ ${cejillaTxt}</span>
+                <span style="font-size:12px; background:#f5f5f5; padding:3px 10px; border-radius:12px; color:#666; border:1px solid #eee;">Cejilla: ${cejillaTxt}</span>
             </div>
         </div>`;
     }).join('');
@@ -1036,16 +1049,3 @@ window.sincronizarTodoARam = async function() {
     }
 };
 // FIN 21: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM
-
-// 22 AUTO-SINCRONIZACIÓN AL ENTRAR
-// Este bloque detecta cuando Firebase termina de cargar el usuario y arranca la sincronía
-auth.onAuthStateChanged((user) => {
-    if (user) {
-        console.log("🚀 Usuario detectado, iniciando sincronización automática...");
-        
-        // Verificamos que la función exista antes de llamarla para evitar errores
-        if (typeof window.sincronizarTodoARam === 'function') {
-            window.sincronizarTodoARam();
-        }
-    }
-});
