@@ -134,7 +134,8 @@ auth.onAuthStateChanged(async (user) => {
 });// FIN 2. OBSERVADOR AUTHENTICACION
 
 
-// 3: RENDERIZADO DE TABLA 
+// 3: RENDERIZADO DE TABLA (Restaurada con Calendario y Estructura para Firebase)
+// 3: RENDERIZADO DE TABLA (CORREGIDO: 6 COLUMNAS)
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
@@ -146,15 +147,8 @@ async function renderizarTablaCantos() {
         let html = `
             <div class="buscador-container" style="position: relative; width: 100%; margin-bottom: 15px;">
                 <input id="inputBuscador" type="text" placeholder="🔍 Buscar canto..." oninput="window.filtrarCantos()" 
-                style="width:100%; max-width:100%; padding:10px 40px 10px 10px; border-radius:20px; border:1px solid #ccc; box-sizing: border-box;">
-    
-                <span onclick="window.limpiarBuscador()" 
-                    style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #888; font-size: 20px; font-weight: bold; display: none;" 
-                    id="btnLimpiar">
-                    &times;
-                </span>
+                       style="width:100%; padding:10px 35px 10px 10px; border-radius:8px; border:1px solid #ccc; box-sizing: border-box;">
             </div>
-            
             <table class="tabla-gestion" id="tablaCantos">
                 <thead>
                     <tr>
@@ -659,34 +653,16 @@ window.filtrarCantos = function() {
     }
 };
 
-// 17: FUNCIÓN PARA LIMPIAR EL BUSCADOR
+// 17. LIMPIAR BUSCADOR: Borra el texto y restablece la tabla
 window.limpiarBuscador = function() {
     const input = document.getElementById('inputBuscador');
-    const btn = document.getElementById('btnLimpiar');
-    
-    input.value = "";       // Limpiamos el texto
-    btn.style.display = "none"; // Ocultamos la X
-    window.filtrarCantos(); // Refrescamos la lista para que salgan todos
-    input.focus();          // Devolvemos el foco al input
+    if (input) {
+        input.value = "";
+        window.filtrarCantos(); // Al filtrar vacío, mostrará todo de nuevo
+        input.focus();
+    }
 };
 
-// MODIFICACIÓN EN TU FILTRAR CANTOS (Para que la X aparezca solo cuando escribes)
-const originalFiltrar = window.filtrarCantos;
-window.filtrarCantos = function() {
-    const input = document.getElementById('inputBuscador');
-    const btn = document.getElementById('btnLimpiar');
-    
-    // Si hay texto, mostramos la X. Si no, la ocultamos.
-    if (input.value.length > 0) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
-    
-    // Llamamos a la lógica original de filtrado
-    if (typeof originalFiltrar === 'function') originalFiltrar();
-};
-//FIN 17: FUNCIÓN PARA LIMPIAR EL BUSCADOR
 
 /*
 Imports y Globables.
@@ -1177,22 +1153,16 @@ auth.onAuthStateChanged((user) => {
             }
         };
 
-// 24: CONTROL DE COLAPSO TOTAL Y PERSISTENCIA (CORREGIDO)
-// 24: CONTROL DE COLAPSO Y SINCRONIZACIÓN (CORREGIDO)
+// 24: CONTROL DE COLAPSO INDIVIDUAL Y MAESTRO
 document.addEventListener('DOMContentLoaded', () => {
-    const configPaneles = {
-        'toggle-perfil':  { content: 'section-config',        wrapper: 'wrapper-config' },
-        'toggle-gestion': { content: 'lista-cantos-gestion-wrapper',  wrapper: 'wrapper-gestion' },
-        'toggle-settings': { content: 'section-settings',     wrapper: 'wrapper-settings' }
-    };
-
     const syncToggle = document.getElementById('syncToggle');
+    const togglePerfil = document.getElementById('toggle-perfil');
+    const toggleGestion = document.getElementById('toggle-gestion');
 
-    function aplicarEstadoPanel(idSwitch, mostrar) {
-        const refs = configPaneles[idSwitch];
-        if (!refs) return;
-        const content = document.getElementById(refs.content);
-        const wrapper = document.getElementById(refs.wrapper);
+    // Función para una sola sección
+    function setSeccion(contentId, wrapperId, mostrar) {
+        const content = document.getElementById(contentId);
+        const wrapper = document.getElementById(wrapperId);
         if (content && wrapper) {
             if (mostrar) {
                 content.classList.remove('cfg-close');
@@ -1204,64 +1174,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    async function guardarEstadoEnNube(idSwitch, estado) {
-        const user = auth.currentUser;
-        if (!user) return;
-        try {
-            const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-            const docRef = doc(db, "usuarios", user.uid, "configuracion", "paneles");
-            await setDoc(docRef, { [idSwitch]: estado }, { merge: true });
-        } catch (e) { console.error("Error al guardar:", e); }
+    // Eventos para switches individuales
+    if (togglePerfil) {
+        togglePerfil.addEventListener('change', (e) => {
+            setSeccion('section-config', 'wrapper-config', e.target.checked);
+        });
     }
 
-    // Eventos para los paneles (Mostrar/Ocultar)
-    Object.keys(configPaneles).forEach(id => {
-        const sw = document.getElementById(id);
-        if (sw) {
-            sw.addEventListener('change', (e) => {
-                const activo = e.target.checked;
-                aplicarEstadoPanel(id, activo);
-                guardarEstadoEnNube(id, activo);
-            });
-        }
-    });
+    if (toggleGestion) {
+        toggleGestion.addEventListener('change', (e) => {
+            setSeccion('lista-cantos-gestion', 'wrapper-gestion', e.target.checked);
+        });
+    }
 
-    // Lógica del Switch Maestro (Sincronización) - YA NO AFECTA A LOS DEMÁS
+    // El Switch Maestro (Sincronización) activa los otros dos
     if (syncToggle) {
         syncToggle.addEventListener('change', function() {
             const activo = this.checked;
-            localStorage.setItem('syncNube', activo);
-            guardarEstadoEnNube('syncToggle', activo); // Solo guarda su propio estado
+            
+            // Sincronizamos los otros switches
+            if (togglePerfil) {
+                togglePerfil.checked = activo;
+                setSeccion('section-config', 'wrapper-config', activo);
+            }
+            if (toggleGestion) {
+                toggleGestion.checked = activo;
+                setSeccion('lista-cantos-gestion', 'wrapper-gestion', activo);
+            }
 
             if (activo && typeof window.sincronizarTodoARam === 'function') {
                 window.sincronizarTodoARam();
             }
         });
     }
-
-    // Cargar estados iniciales
-    auth.onAuthStateChanged(async (user) => {
-        if (user) {
-            try {
-                const { doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-                const docRef = doc(db, "usuarios", user.uid, "configuracion", "paneles");
-                const snap = await getDoc(docRef);
-                if (snap.exists()) {
-                    const data = snap.data();
-                    // Cargar estados de paneles
-                    Object.keys(configPaneles).forEach(id => {
-                        const sw = document.getElementById(id);
-                        if (sw && data[id] !== undefined) {
-                            sw.checked = data[id];
-                            aplicarEstadoPanel(id, data[id]);
-                        }
-                    });
-                    // Cargar estado del sync maestro
-                    if (syncToggle && data['syncToggle'] !== undefined) {
-                        syncToggle.checked = data['syncToggle'];
-                    }
-                }
-            } catch (e) { console.log("Cargando vista..."); }
-        }
-    });
-});// FIN 24: CONTROL DE COLAPSO TOTAL CON SWITCH
+});
+// FIN 24: CONTROL DE COLAPSO TOTAL CON SWITCH

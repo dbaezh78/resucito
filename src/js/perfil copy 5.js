@@ -134,7 +134,8 @@ auth.onAuthStateChanged(async (user) => {
 });// FIN 2. OBSERVADOR AUTHENTICACION
 
 
-// 3: RENDERIZADO DE TABLA 
+// 3: RENDERIZADO DE TABLA (Restaurada con Calendario y Estructura para Firebase)
+// 3: RENDERIZADO DE TABLA (CORREGIDO: 6 COLUMNAS)
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
@@ -146,15 +147,8 @@ async function renderizarTablaCantos() {
         let html = `
             <div class="buscador-container" style="position: relative; width: 100%; margin-bottom: 15px;">
                 <input id="inputBuscador" type="text" placeholder="🔍 Buscar canto..." oninput="window.filtrarCantos()" 
-                style="width:100%; max-width:100%; padding:10px 40px 10px 10px; border-radius:20px; border:1px solid #ccc; box-sizing: border-box;">
-    
-                <span onclick="window.limpiarBuscador()" 
-                    style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #888; font-size: 20px; font-weight: bold; display: none;" 
-                    id="btnLimpiar">
-                    &times;
-                </span>
+                       style="width:100%; padding:10px 35px 10px 10px; border-radius:8px; border:1px solid #ccc; box-sizing: border-box;">
             </div>
-            
             <table class="tabla-gestion" id="tablaCantos">
                 <thead>
                     <tr>
@@ -166,11 +160,11 @@ async function renderizarTablaCantos() {
         cantos.forEach(canto => {
             const datosRAM = ALMACEN_CANTOS[canto.id] || null;
             
-            const cejillaVisual = datosRAM ? (datosRAM.cejilla === "0" ? "-" : datosRAM.cejilla) : ""; 
+            const cejillaVisual = datosRAM ? (datosRAM.cejilla === "0" ? "-" : datosRAM.cejilla) : "..."; 
             const numAcorde = datosRAM ? String(datosRAM.acorde) : null;
             
             // Usamos tu lógica de MAPA_ACORDES o la que inyecta S5 después
-            const acordeTexto = (numAcorde !== null && MAPA_ACORDES[numAcorde]) ? MAPA_ACORDES[numAcorde] : "";
+            const acordeTexto = (numAcorde !== null && MAPA_ACORDES[numAcorde]) ? MAPA_ACORDES[numAcorde] : "...";
 
             let fechaTexto = "---";
             if (datosRAM && (datosRAM.fecha || datosRAM.valor)) {
@@ -659,34 +653,16 @@ window.filtrarCantos = function() {
     }
 };
 
-// 17: FUNCIÓN PARA LIMPIAR EL BUSCADOR
+// 17. LIMPIAR BUSCADOR: Borra el texto y restablece la tabla
 window.limpiarBuscador = function() {
     const input = document.getElementById('inputBuscador');
-    const btn = document.getElementById('btnLimpiar');
-    
-    input.value = "";       // Limpiamos el texto
-    btn.style.display = "none"; // Ocultamos la X
-    window.filtrarCantos(); // Refrescamos la lista para que salgan todos
-    input.focus();          // Devolvemos el foco al input
+    if (input) {
+        input.value = "";
+        window.filtrarCantos(); // Al filtrar vacío, mostrará todo de nuevo
+        input.focus();
+    }
 };
 
-// MODIFICACIÓN EN TU FILTRAR CANTOS (Para que la X aparezca solo cuando escribes)
-const originalFiltrar = window.filtrarCantos;
-window.filtrarCantos = function() {
-    const input = document.getElementById('inputBuscador');
-    const btn = document.getElementById('btnLimpiar');
-    
-    // Si hay texto, mostramos la X. Si no, la ocultamos.
-    if (input.value.length > 0) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
-    
-    // Llamamos a la lógica original de filtrado
-    if (typeof originalFiltrar === 'function') originalFiltrar();
-};
-//FIN 17: FUNCIÓN PARA LIMPIAR EL BUSCADOR
 
 /*
 Imports y Globables.
@@ -887,15 +863,12 @@ function actualizarVistaCalendario() {
 }
 // FIN 20.5: VISTA DEL CALENDARIO
 
-// 20.6 LISTADO TÉCNICO DETALLADO (DISEÑO DAVID - TONO CORREGIDO)
+// 20.6 LISTADO TÉCNICO DETALLADO (DISEÑO DAVID - NOMBRE EN GRANDE)
 window.abrirListaDetallada = function() {
-    // 1. Buscamos el nombre del canto y su acorde base original
+    // 1. Buscamos el nombre del canto
     const idABuscar = window.ultimoCantoVisto; 
     const infoCanto = window.indiceCantosGlobal.find(c => String(c.id) === String(idABuscar));
     const tituloCanto = infoCanto ? infoCanto.titulo : "Canto seleccionado";
-    
-    // Recuperamos el acorde base del JSON (ej: "Re m", "Sol", etc.)
-    const acordeOriginalStr = infoCanto ? (infoCanto.acorde || "La m") : "La m";
 
     let listaModal = document.getElementById('lista-detallada-modal');
     if (!listaModal) {
@@ -907,9 +880,6 @@ window.abrirListaDetallada = function() {
 
     const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 
-    // Definición de notas para el cálculo de transporte
-    const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
-
     const itemsHtml = fechasOriginalesFull.map((reg, index) => {
         const f = reg.fecha;
         if (!f || isNaN(f.getTime())) return `<div style="padding:10px; color:red;">Dato no disponible</div>`;
@@ -920,19 +890,7 @@ window.abrirListaDetallada = function() {
         const hora = String(f.getHours()).padStart(2, '0');
         const min = String(f.getMinutes()).padStart(2, '0');
 
-        // --- LÓGICA DE TRANSPORTE DINÁMICO ---
-        let acordeTxt = acordeOriginalStr; 
-        const esMenor = acordeOriginalStr.toLowerCase().includes("m");
-        const notaBasePura = acordeOriginalStr.split(" ")[0].replace("m", "").trim();
-        const indiceBase = cords.indexOf(notaBasePura);
-
-        if (indiceBase !== -1) {
-            const t = parseInt(reg.acorde) || 0; // El valor de transporte guardado en Firebase
-            const posicionFinal = (indiceBase + t + 12) % 12; 
-            const notaFinal = cords[posicionFinal];
-            acordeTxt = `${notaFinal}${esMenor ? " m" : ""}`;
-        }
-
+        const acordeTxt = MAPA_ACORDES[reg.acorde] || "La m";
         const cejillaTxt = (reg.cejilla && reg.cejilla !== "0") ? reg.cejilla : "No";
 
         return `
@@ -948,13 +906,13 @@ window.abrirListaDetallada = function() {
         </div>`;
     }).join('');
 
-    // --- 3. INYECTAR HTML FINAL ---
+    // --- 3. INYECTAR HTML FINAL (NOMBRE ARRIBA Y EN GRANDE) ---
     listaModal.innerHTML = `
         <div id="lista-overlay" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
             <div style="background:white; border-radius:15px; width:320px; max-height:80vh; overflow:hidden; display:flex; flex-direction:column; position:relative; box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
                 
                 <button onclick="document.getElementById('lista-detallada-modal').remove()" 
-                        style="position:absolute; top:-3px; right:-3px; border:none; background:none; font-size:24px; cursor:pointer; color:white; z-index:11;">&times;</button>
+                        style="position:absolute; top:0px; right:0px; border:none; background:none; font-size:24px; cursor:pointer; color:white; z-index:11;">&times;</button>
                 
                 <div class="ttlo" style="padding:25px 20px 5px 20px; background:#d4af37; color:white; font-weight:bold; text-align:center; font-size: 20px; line-height: 1.2;">
                     ${tituloCanto.toUpperCase()}
@@ -1176,92 +1134,3 @@ auth.onAuthStateChanged((user) => {
                 console.error("❌ Error al guardar valoración:", e);
             }
         };
-
-// 24: CONTROL DE COLAPSO TOTAL Y PERSISTENCIA (CORREGIDO)
-// 24: CONTROL DE COLAPSO Y SINCRONIZACIÓN (CORREGIDO)
-document.addEventListener('DOMContentLoaded', () => {
-    const configPaneles = {
-        'toggle-perfil':  { content: 'section-config',        wrapper: 'wrapper-config' },
-        'toggle-gestion': { content: 'lista-cantos-gestion-wrapper',  wrapper: 'wrapper-gestion' },
-        'toggle-settings': { content: 'section-settings',     wrapper: 'wrapper-settings' }
-    };
-
-    const syncToggle = document.getElementById('syncToggle');
-
-    function aplicarEstadoPanel(idSwitch, mostrar) {
-        const refs = configPaneles[idSwitch];
-        if (!refs) return;
-        const content = document.getElementById(refs.content);
-        const wrapper = document.getElementById(refs.wrapper);
-        if (content && wrapper) {
-            if (mostrar) {
-                content.classList.remove('cfg-close');
-                wrapper.classList.remove('collapsed');
-            } else {
-                content.classList.add('cfg-close');
-                wrapper.classList.add('collapsed');
-            }
-        }
-    }
-
-    async function guardarEstadoEnNube(idSwitch, estado) {
-        const user = auth.currentUser;
-        if (!user) return;
-        try {
-            const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-            const docRef = doc(db, "usuarios", user.uid, "configuracion", "paneles");
-            await setDoc(docRef, { [idSwitch]: estado }, { merge: true });
-        } catch (e) { console.error("Error al guardar:", e); }
-    }
-
-    // Eventos para los paneles (Mostrar/Ocultar)
-    Object.keys(configPaneles).forEach(id => {
-        const sw = document.getElementById(id);
-        if (sw) {
-            sw.addEventListener('change', (e) => {
-                const activo = e.target.checked;
-                aplicarEstadoPanel(id, activo);
-                guardarEstadoEnNube(id, activo);
-            });
-        }
-    });
-
-    // Lógica del Switch Maestro (Sincronización) - YA NO AFECTA A LOS DEMÁS
-    if (syncToggle) {
-        syncToggle.addEventListener('change', function() {
-            const activo = this.checked;
-            localStorage.setItem('syncNube', activo);
-            guardarEstadoEnNube('syncToggle', activo); // Solo guarda su propio estado
-
-            if (activo && typeof window.sincronizarTodoARam === 'function') {
-                window.sincronizarTodoARam();
-            }
-        });
-    }
-
-    // Cargar estados iniciales
-    auth.onAuthStateChanged(async (user) => {
-        if (user) {
-            try {
-                const { doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-                const docRef = doc(db, "usuarios", user.uid, "configuracion", "paneles");
-                const snap = await getDoc(docRef);
-                if (snap.exists()) {
-                    const data = snap.data();
-                    // Cargar estados de paneles
-                    Object.keys(configPaneles).forEach(id => {
-                        const sw = document.getElementById(id);
-                        if (sw && data[id] !== undefined) {
-                            sw.checked = data[id];
-                            aplicarEstadoPanel(id, data[id]);
-                        }
-                    });
-                    // Cargar estado del sync maestro
-                    if (syncToggle && data['syncToggle'] !== undefined) {
-                        syncToggle.checked = data['syncToggle'];
-                    }
-                }
-            } catch (e) { console.log("Cargando vista..."); }
-        }
-    });
-});// FIN 24: CONTROL DE COLAPSO TOTAL CON SWITCH

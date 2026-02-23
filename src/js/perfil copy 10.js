@@ -154,7 +154,6 @@ async function renderizarTablaCantos() {
                     &times;
                 </span>
             </div>
-            
             <table class="tabla-gestion" id="tablaCantos">
                 <thead>
                     <tr>
@@ -659,34 +658,16 @@ window.filtrarCantos = function() {
     }
 };
 
-// 17: FUNCIÓN PARA LIMPIAR EL BUSCADOR
+// 17. LIMPIAR BUSCADOR: Borra el texto y restablece la tabla
 window.limpiarBuscador = function() {
     const input = document.getElementById('inputBuscador');
-    const btn = document.getElementById('btnLimpiar');
-    
-    input.value = "";       // Limpiamos el texto
-    btn.style.display = "none"; // Ocultamos la X
-    window.filtrarCantos(); // Refrescamos la lista para que salgan todos
-    input.focus();          // Devolvemos el foco al input
+    if (input) {
+        input.value = "";
+        window.filtrarCantos(); // Al filtrar vacío, mostrará todo de nuevo
+        input.focus();
+    }
 };
 
-// MODIFICACIÓN EN TU FILTRAR CANTOS (Para que la X aparezca solo cuando escribes)
-const originalFiltrar = window.filtrarCantos;
-window.filtrarCantos = function() {
-    const input = document.getElementById('inputBuscador');
-    const btn = document.getElementById('btnLimpiar');
-    
-    // Si hay texto, mostramos la X. Si no, la ocultamos.
-    if (input.value.length > 0) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
-    
-    // Llamamos a la lógica original de filtrado
-    if (typeof originalFiltrar === 'function') originalFiltrar();
-};
-//FIN 17: FUNCIÓN PARA LIMPIAR EL BUSCADOR
 
 /*
 Imports y Globables.
