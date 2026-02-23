@@ -846,3 +846,71 @@ border: 1px solid #52067d;
     color: red;
     font-weight: bolder;
 }
+
+.list {
+    color: black;
+    font-weight: bolder;   
+}
+
+
+
+
+.material-symbols-outlined.arrow {
+            transition: transform 0.3s;
+        }
+
+        .material-symbols-outlined {
+    display: flex;
+    align-content: center;
+    font-size: 24px;
+    line-height: 1;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+    color: var(--SangreDeCristo);
+    color: goldenrod;
+}
+
+/* Oculta las secciones privadas por defecto */
+#wrapper-nueva-lista, 
+#wrapper-mis-listas,
+.perfil-container { 
+    display: none; 
+}
+
+.icon-button {
+    /* Usamos un tamaño fijo suficiente para el círculo del hover */
+    width: 32px; 
+    height: 32px;
+    
+    /* Centrado perfecto del icono */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    color: black;
+    border: none;
+    background: transparent;
+    
+    /* Ajuste de posición sin usar top/left para evitar saltos */
+    vertical-align: middle; 
+    
+    /* Suavizamos la transición */
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    
+    /* El tamaño de fuente debe ser igual en ambos estados para no mover el layout */
+    font-size: 16px !important; 
+    padding: 0; /* Quitamos padding manual para que el tamaño sea exacto */
+}
+
+.icon-button:hover {
+    color: white;
+    background-color: red;
+    /* Ya no cambiamos font-size ni dimensiones aquí, así no se mueve */
+    text-decoration: none;
+}
