@@ -4,21 +4,30 @@ import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/
 
 // 1: Control de visibilidad y acceso
 onAuthStateChanged(auth, (user) => {
-    const btnLogout = document.getElementById('btn-logout-perfil');
     const seccionNueva = document.getElementById('wrapper-nueva-lista');
     const seccionMisListas = document.getElementById('wrapper-mis-listas');
-
-    // Siempre mostramos las secciones para permitir modo offline
-    if (seccionNueva) seccionNueva.style.display = 'block';
-    if (seccionMisListas) seccionMisListas.style.display = 'block';
+    const contenedorPerfil = document.querySelector('.perfil-container');
+    const btnLogout = document.getElementById('btn-logout-perfil');
 
     if (user) {
+        // MOSTRAR si hay sesión
+        if (seccionNueva) seccionNueva.style.display = 'block';
+        if (seccionMisListas) seccionMisListas.style.display = 'block';
+        if (contenedorPerfil) contenedorPerfil.style.display = 'block';
         if (btnLogout) btnLogout.style.display = 'inline-block';
-        console.log("Sesión activa sincronizando...");
+        
+        console.log("Acceso autorizado:", user.email);
     } else {
+        // OCULTAR Y REDIRIGIR si no hay sesión
         if (btnLogout) btnLogout.style.display = 'none';
-        // REDIRECCIÓN ELIMINADA: Ahora permitimos modo offline
-        console.log("Modo Equipo: Operando sin cuenta.");
+        
+        // Solo redirigir si estamos en una página privada (como select.html)
+        // Si estamos en index.html, no queremos que entre en un bucle de recarga
+        
+        /*
+        if (window.location.pathname.includes('select.html')) {
+            window.location.href = 'index.html';
+        }*/
     }
 });
 

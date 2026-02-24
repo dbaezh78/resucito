@@ -12,13 +12,14 @@ let snapshotActual = null;
 let listasLocalesCache = []; 
 
 // --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
+// Quita acentos, comas, puntos, convierte ñ en n y deja solo letras/números
 const normalizarTexto = (texto) => {
     if (!texto) return "";
     return texto.toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "") // Quita acentos
-        .replace(/ñ/g, "n")              // ñ -> n
-        .replace(/[^a-z0-9\s]/g, "")     // QUITA comas, puntos, guiones, etc.
+        .replace(/ñ/g, "n")
+        .replace(/[^a-z0-9\s]/g, "")    // Quita comas, puntos y símbolos
         .trim();
 };
 
@@ -122,63 +123,27 @@ function renderizarLista(lista) {
     });
 }
 
-// --- 5. BUSCADORES Y LIMPIEZA ---
+// --- 5. BUSCADORES (MORTALES Y FLEXIBLES) ---
 
-// A. Filtro de Selección de Cantos (Ultra flexible)
+// Buscador de Cantos: Busca por palabras sueltas e ignora todo error ortográfico
 window.filtrarSeleccion = () => {
-    const input = document.getElementById('inputBuscadorCantos');
-    const btnX = document.getElementById('btnLimpiarCantos');
-    if (!input) return;
-
-    // Control visual de la X
-    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
-
-    // Lógica de búsqueda por palabras sueltas
-    const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
+    const textoUsuario = document.getElementById('inputBuscador').value;
+    // Dividimos la búsqueda en palabras individuales y normalizamos cada una
+    const palabrasBusqueda = normalizarTexto(textoUsuario).split(/\s+/).filter(p => p.length > 0);
     
     const filtrados = todosLosCantos.filter(canto => {
         const tituloNormalizado = normalizarTexto(canto.titulo);
-        // Debe cumplir que TODAS las palabras escritas estén en el título
+        // El canto debe contener TODAS las palabras que el usuario escribió
         return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
     });
     
     renderizarLista(filtrados);
 };
 
-// Limpiar buscador de cantos
-window.limpiarBuscadorSeleccion = () => {
-    const input = document.getElementById('inputBuscadorCantos');
-    if (input) {
-        input.value = '';
-        window.filtrarSeleccion(); // Reset lista y oculta X
-        input.focus();
-    }
-};
-
-// B. Filtro de Mis Listados Guardados
 window.filtrarMisListas = () => {
-    const input = document.getElementById('inputBuscadorListas');
-    const btnX = document.getElementById('btnLimpiarListas');
-    if (!input) return;
-
-    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
-
-    const busqueda = normalizarTexto(input.value);
-    const filtradas = listasLocalesCache.filter(l => 
-        normalizarTexto(l.nombre).includes(busqueda)
-    );
-    
+    const busqueda = normalizarTexto(document.getElementById('inputBuscadorListas').value);
+    const filtradas = listasLocalesCache.filter(l => normalizarTexto(l.nombre).includes(busqueda));
     renderizarListasUI(filtradas);
-};
-
-// Limpiar buscador de mis listas
-window.limpiarBuscadorListas = () => {
-    const input = document.getElementById('inputBuscadorListas');
-    if (input) {
-        input.value = '';
-        window.filtrarMisListas(); // Reset lista y oculta X
-        input.focus();
-    }
 };
 
 // --- 6. LÓGICA DE NEGOCIO ---
@@ -338,6 +303,11 @@ window.confirmarCerrarVisor = () => {
     if (modal) modal.classList.add('cfg-close');
     document.getElementById('contenidoCantoVisor').innerHTML = '';
     document.body.style.overflow = 'auto';
+};
+
+window.limpiarBuscadorSeleccion = () => {
+    const input = document.getElementById('inputBuscador');
+    if (input) { input.value = ''; window.filtrarSeleccion(); input.focus(); }
 };
 
 window.toggleSection = (contentId, wrapperId) => {

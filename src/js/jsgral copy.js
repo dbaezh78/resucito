@@ -1357,30 +1357,31 @@ window.actualizarAcordes = actualizarAcordes;
 window.renderCanto = renderCanto;
 
 
-// FUNCIÓN 32: NAVEGACIÓN INTELIGENTE
-window.navegacionInteligente = () => {
-    // Verificamos si estamos "atrapados" en un iframe
-    const enIframe = (window.self !== window.top);
+//  32:"NAVEGACIÓN INTELIGENTE DESDE HOME"
 
-    if (enIframe) {
-        // Si estamos en un iframe, la única misión es CERRAR
-        console.log("Detectado entorno Visor (Iframe). Cerrando...");
-        
-        if (window.parent && typeof window.parent.confirmarCerrarVisor === 'function') {
+// FUNCIÓN 32: NAVEGACIÓN INTELIGENTE (Versión Iframe-Aware)
+window.navegacionInteligente = () => {
+    // 1. ¿Estamos metidos en un iframe?
+    const enVisor = (window.self !== window.top);
+
+    if (enVisor) {
+        // ESCENARIO: Estamos dentro de select.html (en el frame)
+        // Le pedimos al PADRE que ejecute su función de cerrar
+        if (window.parent && window.parent.confirmarCerrarVisor) {
             window.parent.confirmarCerrarVisor();
         } else {
-            // Si no encuentra la función del padre, fuerza la salida a la raíz
+            // Si por algo falla, mandamos todo a la raíz
             window.top.location.href = '/';
         }
     } else {
-        // Si NO estamos en un iframe, estamos en la web normal
-        const urlParams = new URLSearchParams(window.location.search);
+        // ESCENARIO: Estamos en el index normal (fuera de select.html)
+        const urlActual = window.location.href;
         
-        if (urlParams.has('canto')) {
-            // Si hay un canto cargado, volvemos a la raíz limpia
-            window.location.href = '/';
+        if (urlActual.includes('?canto=')) {
+            // Si estamos viendo un canto, volvemos al buscador limpio
+            window.location.href = '/'; 
         } else {
-            // Por seguridad, siempre raíz
+            // Si ya estamos en el buscador, refrescamos o vamos a raíz
             window.location.href = '/';
         }
     }

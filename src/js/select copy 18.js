@@ -16,9 +16,9 @@ const normalizarTexto = (texto) => {
     if (!texto) return "";
     return texto.toLowerCase()
         .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "") // Quita acentos
-        .replace(/ñ/g, "n")              // ñ -> n
-        .replace(/[^a-z0-9\s]/g, "")     // QUITA comas, puntos, guiones, etc.
+        .replace(/[\u0300-\u036f]/g, "") 
+        .replace(/ñ/g, "n")
+        .replace(/[^a-z0-9\s]/g, "")    
         .trim();
 };
 
@@ -123,62 +123,39 @@ function renderizarLista(lista) {
 }
 
 // --- 5. BUSCADORES Y LIMPIEZA ---
-
-// A. Filtro de Selección de Cantos (Ultra flexible)
 window.filtrarSeleccion = () => {
-    const input = document.getElementById('inputBuscadorCantos');
-    const btnX = document.getElementById('btnLimpiarCantos');
-    if (!input) return;
+    const input = document.getElementById('inputBuscador');
+    const btnLimpiar = document.getElementById('btnLimpiarBuscador');
+    const textoUsuario = input.value;
 
-    // Control visual de la X
-    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+    // Mostrar/Ocultar la X
+    if (btnLimpiar) {
+        btnLimpiar.style.display = textoUsuario.length > 0 ? 'block' : 'none';
+    }
 
-    // Lógica de búsqueda por palabras sueltas
-    const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
+    const palabrasBusqueda = normalizarTexto(textoUsuario).split(/\s+/).filter(p => p.length > 0);
     
     const filtrados = todosLosCantos.filter(canto => {
         const tituloNormalizado = normalizarTexto(canto.titulo);
-        // Debe cumplir que TODAS las palabras escritas estén en el título
         return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
     });
     
     renderizarLista(filtrados);
 };
 
-// Limpiar buscador de cantos
 window.limpiarBuscadorSeleccion = () => {
-    const input = document.getElementById('inputBuscadorCantos');
+    const input = document.getElementById('inputBuscador');
     if (input) {
         input.value = '';
-        window.filtrarSeleccion(); // Reset lista y oculta X
+        window.filtrarSeleccion(); // Refresca la lista y oculta la X
         input.focus();
     }
 };
 
-// B. Filtro de Mis Listados Guardados
 window.filtrarMisListas = () => {
-    const input = document.getElementById('inputBuscadorListas');
-    const btnX = document.getElementById('btnLimpiarListas');
-    if (!input) return;
-
-    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
-
-    const busqueda = normalizarTexto(input.value);
-    const filtradas = listasLocalesCache.filter(l => 
-        normalizarTexto(l.nombre).includes(busqueda)
-    );
-    
+    const busqueda = normalizarTexto(document.getElementById('inputBuscadorListas').value);
+    const filtradas = listasLocalesCache.filter(l => normalizarTexto(l.nombre).includes(busqueda));
     renderizarListasUI(filtradas);
-};
-
-// Limpiar buscador de mis listas
-window.limpiarBuscadorListas = () => {
-    const input = document.getElementById('inputBuscadorListas');
-    if (input) {
-        input.value = '';
-        window.filtrarMisListas(); // Reset lista y oculta X
-        input.focus();
-    }
 };
 
 // --- 6. LÓGICA DE NEGOCIO ---

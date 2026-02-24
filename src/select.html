@@ -11,92 +11,99 @@
 <body>
 
     <div class="perfil-container">
-        <div class="header-seleccion">
-            <a href="/perfil.html" class="material-symbols-outlined back-btn">arrow_back</a>
-            <h1>Gestión de Listas</h1>
+            <div class="header-seleccion">
+                <div class="title-group" style="display: flex; align-items: center; gap: 15px;">
+                    <a href="index.html" class="material-symbols-outlined back-btn">arrow_back</a>
+                    <h1 style="margin: 0;">Gestión de Listas</h1>
+                </div>
+
+                <div class="nav-icons" id="auth-status-container" style="display: flex; align-items: center; gap: 15px;">
+    <a href="/" 
+       id="boton-home"
+       class="material-symbols-outlined icon-button" 
+       style="text-decoration: none; cursor: pointer; color: #bc0009; font-size: 28px;">
+       home
+    </a>
+
+                    <button id="btn-logout-perfil" 
+                            class="material-symbols-outlined icon-button" 
+                            style="display:none; background:none; border:none; cursor:pointer; color: #bc0009; font-size: 28px;">logout</button>
+                </div>
+            </div>
+
+                        <div class="perfil-section collapsed" id="wrapper-nueva-lista">
+    <div class="section-header" onclick="window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista')" style="cursor: pointer;">
+        <div class="header-title-group">
+            <span class="material-symbols-outlined arrow-icon">expand_more</span>
+            <h2 style="font-size: 1.2rem; margin: 0;">Nueva Lista</h2>
         </div>
-
-        <div class="perfil-section" id="wrapper-nueva-lista">
-            <div class="section-header" onclick="toggleSection('content-nueva-lista', 'wrapper-nueva-lista')">
-                <div class="header-title-group">
-                    <span class="material-symbols-outlined arrow-icon">expand_more</span>
-                    <h2 style="font-size: 1.2rem; margin: 0;">Nueva Lista</h2>
-                </div>
-            </div>
-
-            <div id="content-nueva-lista" class="section-content">
-                <div class="form-group">
-                    <label>Nombre de la lista</label>
-                    <input type="text" id="nombreLista" placeholder="Ej. Cantos de Pascua...">
-                </div>
-
-                <div class="buscador-wrapper">
-                    <input id="inputBuscador" type="text" placeholder="🔍  Buscar para añadir..." oninput="filtrarSeleccion()">
-                    <span id="btnLimpiar" onclick="limpiarBuscadorSeleccion()">&times;</span>
-                </div>
-
-                <div id="contenedor-seleccion" class="lista-scroll">
-                    <p class="status-msg">Cargando cantos...</p>
-                </div>
-
-                <div id="cola-seleccion" class="cola-visual"></div>
-
-                <div class="contador-footer">
-                    <span id="contador-seleccion">0</span> cantos seleccionados
-                </div>
-
-                <button class="btn-accion" onclick="guardarListaFirebase()">
-                    <span class="material-symbols-outlined">cloud_upload</span>
-                    Guardar en Nube
-                </button>
-            </div>
-        </div>
-
-        <div class="perfil-section" id="wrapper-mis-listas" style="margin-top: 20px;">
-            <div class="section-header" onclick="toggleSection('content-mis-listas', 'wrapper-mis-listas')">
-                <div class="header-title-group">
-                    <span class="material-symbols-outlined arrow-icon">expand_more</span>
-                    <h2 style="font-size: 1.2rem; margin: 0;">Mis Listados</h2>
-                </div>
-            </div>
-
-            <div id="content-mis-listas" class="section-content">
-                <div id="lista-colecciones" class="listas-guardadas-container">
-                    <p class="status-msg">Cargando tus listados...</p>
-                </div>
-            </div>
-        </div>
-
     </div>
 
-
-
-
-    <script type="module" src="js/select.js"></script>
-    <script>
-        // Función simple para colapsar (como en perfil)
-        function toggleSection(contentId, wrapperId) {
-            const content = document.getElementById(contentId);
-            const wrapper = document.getElementById(wrapperId);
-            if (content && wrapper) {
-                content.classList.toggle('cfg-close');
-                wrapper.classList.toggle('collapsed');
-            }
-        }
-    </script>
-
-<div id="modalVisorCanto" class="modal-fullscreen cfg-close">
-    <div>
-            <div id="btnCerrarSeguro" onclick="confirmarCerrarVisor()" class="home-icon-container">
-        <span class="material-symbols-outlined dbhome">home</span>
-        <small id="txtConfirmar"></small>
-            </div>
-            
-    </div>
-    <div id="contenidoCantoVisor" class="modal-body-visor">
+    <div id="content-nueva-lista" class="section-content cfg-close">
+        <div class="form-group">
+            <label>Nombre de la lista</label>
+            <input type="text" id="nombreLista" placeholder="Ej. Cantos de Pascua...">
         </div>
+
+        <div class="buscador-input-container">
+            <span class="material-symbols-outlined search-icon">search</span>
+            <input type="text" id="inputBuscadorCantos" placeholder="Buscar canto por palabras..." oninput="window.filtrarSeleccion()">
+            <span id="btnLimpiarCantos" class="material-symbols-outlined close-icon" onclick="window.limpiarBuscadorSeleccion()" style="display: none;">close</span>
+        </div>
+
+        <div id="contenedor-seleccion" class="lista-scroll">
+            <p class="status-msg">Cargando cantos...</p>
+        </div>
+
+        <div id="cola-seleccion" class="cola-visual"></div>
+
+        <div class="contador-footer">
+            <span id="contador-seleccion">0</span> cantos seleccionados
+        </div>
+
+        <button class="btn-accion" onclick="window.guardarListaFirebase()">
+            <span class="material-symbols-outlined">cloud_upload</span>
+            Guardar en Nube
+        </button>
+    </div>
+</div>
+
+<div class="perfil-section" id="wrapper-mis-listas" style="margin-top: 20px;">
+    <div class="section-header" style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="header-title-group" onclick="window.toggleSection('content-mis-listas', 'wrapper-mis-listas')" style="cursor: pointer; display: flex; align-items: center; flex-grow: 1;">
+            <span class="material-symbols-outlined arrow-icon">expand_more</span>
+            <h2 style="font-size: 1.2rem; margin: 0;">Mis Listados</h2>
+        </div>
+
+        <div class="header-actions">
+            <label for="input-importar" class="btn-circular-import" title="Importar Lista (.resucito)">
+                <span class="material-symbols-outlined">file_upload</span>
+            </label>
+            <input type="file" id="input-importar" accept=".resucito" onchange="window.importarLista(event)" style="display: none;">
+        </div>
+    </div>
+
+    <div id="content-mis-listas" class="section-content">
+
+        <div class="buscador-input-container">
+            <span class="material-symbols-outlined search-icon">search</span>
+            <input type="text" id="inputBuscadorListas" placeholder="Filtrar mis listas..." oninput="window.filtrarMisListas()">
+            <span id="btnLimpiarListas" class="material-symbols-outlined close-icon" onclick="window.limpiarBuscadorListas()" style="display: none;">close</span>
+        </div>
+                
+        <div id="lista-colecciones" class="listas-guardadas-container"></div>
+    </div>
 </div>
 
 
+</div>
+
+    <div id="modalVisorCanto" class="modal-fullscreen cfg-close">
+        <div id="contenidoCantoVisor" class="modal-body-visor"></div>
+    </div>
+
+    <script type="module" src="js/select.js"></script>
+    <script type="module" src="js/logout.js"></script>
+    
 </body>
 </html>

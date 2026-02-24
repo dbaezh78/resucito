@@ -11,14 +11,14 @@ let todosLosCantos = [];
 let snapshotActual = null;
 let listasLocalesCache = []; 
 
-// --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
+// --- UTILIDAD: NORMALIZADOR DE TEXTO ---
 const normalizarTexto = (texto) => {
     if (!texto) return "";
     return texto.toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "") // Quita acentos
-        .replace(/ñ/g, "n")              // ñ -> n
-        .replace(/[^a-z0-9\s]/g, "")     // QUITA comas, puntos, guiones, etc.
+        .replace(/ñ/g, "n")
+        .replace(/[^a-z0-9\s]/g, "")    // Quita comas, puntos y símbolos
         .trim();
 };
 
@@ -122,66 +122,20 @@ function renderizarLista(lista) {
     });
 }
 
-// --- 5. BUSCADORES Y LIMPIEZA ---
-
-// A. Filtro de Selección de Cantos (Ultra flexible)
+// --- 5. BUSCADORES ---
 window.filtrarSeleccion = () => {
-    const input = document.getElementById('inputBuscadorCantos');
-    const btnX = document.getElementById('btnLimpiarCantos');
-    if (!input) return;
-
-    // Control visual de la X
-    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
-
-    // Lógica de búsqueda por palabras sueltas
-    const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
-    
-    const filtrados = todosLosCantos.filter(canto => {
-        const tituloNormalizado = normalizarTexto(canto.titulo);
-        // Debe cumplir que TODAS las palabras escritas estén en el título
-        return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
-    });
-    
+    const busquedaLimpia = normalizarTexto(document.getElementById('inputBuscador').value);
+    const filtrados = todosLosCantos.filter(c => normalizarTexto(c.titulo).includes(busquedaLimpia));
     renderizarLista(filtrados);
 };
 
-// Limpiar buscador de cantos
-window.limpiarBuscadorSeleccion = () => {
-    const input = document.getElementById('inputBuscadorCantos');
-    if (input) {
-        input.value = '';
-        window.filtrarSeleccion(); // Reset lista y oculta X
-        input.focus();
-    }
-};
-
-// B. Filtro de Mis Listados Guardados
 window.filtrarMisListas = () => {
-    const input = document.getElementById('inputBuscadorListas');
-    const btnX = document.getElementById('btnLimpiarListas');
-    if (!input) return;
-
-    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
-
-    const busqueda = normalizarTexto(input.value);
-    const filtradas = listasLocalesCache.filter(l => 
-        normalizarTexto(l.nombre).includes(busqueda)
-    );
-    
+    const busqueda = normalizarTexto(document.getElementById('inputBuscadorListas').value);
+    const filtradas = listasLocalesCache.filter(l => normalizarTexto(l.nombre).includes(busqueda));
     renderizarListasUI(filtradas);
 };
 
-// Limpiar buscador de mis listas
-window.limpiarBuscadorListas = () => {
-    const input = document.getElementById('inputBuscadorListas');
-    if (input) {
-        input.value = '';
-        window.filtrarMisListas(); // Reset lista y oculta X
-        input.focus();
-    }
-};
-
-// --- 6. LÓGICA DE NEGOCIO ---
+// --- 6. LÓGICA DE NEGOCIO (CON REFRESH) ---
 window.toggleCanto = (id) => {
     const stringId = String(id);
     const index = listaOrdenada.indexOf(stringId);
@@ -220,17 +174,19 @@ window.guardarListaFirebase = async () => {
     const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
     const nuevaLista = { id: listaId, nombre, ids_cantos: [...listaOrdenada], ultimaActualizacion: new Date().toISOString() };
 
+    // Guardar Local
     let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
     const idx = cache.findIndex(l => l.id === listaId);
     idx !== -1 ? cache[idx] = nuevaLista : cache.unshift(nuevaLista);
     localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
 
+    // Sincronizar y REFRESCAR
     if (user) {
         try { 
             await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { ...nuevaLista, ultimaActualizacion: serverTimestamp() }); 
         } catch (e) { console.warn("Offline."); }
     }
-    location.reload(); 
+    location.reload(); // Refresco mortal para asegurar vista limpia
 };
 
 window.eliminarLista = async (idLista, nombreLista) => {
@@ -239,11 +195,11 @@ window.eliminarLista = async (idLista, nombreLista) => {
         cache = cache.filter(l => l.id !== idLista);
         localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
         if (auth.currentUser) await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
-        location.reload();
+        location.reload(); // Refresco tras borrar
     }
 };
 
-// --- 7. SISTEMA DE COMPARTIR ---
+// --- 7. SISTEMA DE COMPARTIR (CON REFRESH AL IMPORTAR) ---
 window.compartirListaLink = (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
     if (!lista) return;
@@ -278,7 +234,7 @@ window.importarLista = (event) => {
             cache.unshift(l);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
             if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { ...l, ultimaActualizacion: serverTimestamp() });
-            location.reload();
+            location.reload(); // Refresco tras importar archivo
         } catch (err) { alert("Archivo no válido."); }
     };
     reader.readAsText(archivo);
@@ -340,6 +296,11 @@ window.confirmarCerrarVisor = () => {
     document.body.style.overflow = 'auto';
 };
 
+window.limpiarBuscadorSeleccion = () => {
+    const input = document.getElementById('inputBuscador');
+    if (input) { input.value = ''; window.filtrarSeleccion(); input.focus(); }
+};
+
 window.toggleSection = (contentId, wrapperId) => {
     const content = document.getElementById(contentId);
     const wrapper = document.getElementById(wrapperId);
@@ -362,7 +323,7 @@ window.toggleSection = (contentId, wrapperId) => {
                 cache.unshift(nl);
                 localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
                 if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", nl.id), { ...nl, ultimaActualizacion: serverTimestamp() });
-                window.location.href = window.location.pathname; 
+                window.location.href = window.location.pathname; // Recarga limpia quitando el share de la URL
             }
         } catch (e) { console.error("Error link"); }
     }
