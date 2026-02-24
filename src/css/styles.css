@@ -904,13 +904,12 @@ border: 1px solid #52067d;
     border-radius: 50%;
     
     /* El tamaño de fuente debe ser igual en ambos estados para no mover el layout */
-    font-size: 16px !important; 
     padding: 0; /* Quitamos padding manual para que el tamaño sea exacto */
 }
 
 .icon-button:hover {
     color: white;
-    background-color: red;
+    background-color: #780606;
     /* Ya no cambiamos font-size ni dimensiones aquí, así no se mueve */
     text-decoration: none;
 }

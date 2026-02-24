@@ -10,7 +10,7 @@
 
 .material-symbols-outlined:hover {
     color: var(--SangreDeCristo);
-    color: goldenrod;
+    color: white;
 }
 
 .perfil-container {
@@ -86,7 +86,7 @@
 .icon-button {
     background: none;
     border: none;
-    padding: 8px;
+    /* padding: 8px; */
     font-size: 28px;
     transition: color 0.3s;
     text-decoration: none;

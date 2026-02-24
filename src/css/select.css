@@ -10,11 +10,19 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
+
+    @media (min-width: 384px) {
+        padding: 1px;    
+     }
+
+    @media (min-width: 768px) {
+    }
+
 }
 
 .perfil-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 93%;
     background: white;
     padding: 25px;
     border-radius: 20px;
@@ -52,8 +60,23 @@ body {
     /* background-color: #780606;*/
     z-index: 9999;
     display: flex;
-    align-content: space-around;
+    align-content: space-around;   
     
+    @media (min-width: 384px) {
+        top: -2px;
+        left: -3px;
+    } 
+
+    @media (min-width: 768px) {
+        top: -2px;
+        left: -4px;
+    }
+
+    @media (min-width: 992px) {
+        top: -2px;
+        left: 30.7%;
+    } 
+
 }
 
 .dbhome:hover {
@@ -137,7 +160,22 @@ input[type="text"] {
     border-bottom: 1px solid #f9f9f9;
 }
 
-.item-canto span { font-size: 15px; color: #333; }
+.item-canto span { 
+    font-size: 20px; 
+    color: #333; 
+
+        @media (min-width: 384px) {
+            top: -2px;
+            left: -3px;
+            font-size: 18px; 
+    } 
+
+    @media (min-width: 768px) {
+            top: -2px;
+            left: -3px;
+            font-size: 23px; 
+    } 
+}
 
 /* Switches */
 .switch {

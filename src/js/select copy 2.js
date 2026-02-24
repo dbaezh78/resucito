@@ -255,19 +255,26 @@ window.abrirVisorCanto = (idCanto) => {
 
 // La lógica de cierre seguro (clicksCerrar ya debe estar declarada arriba)
 window.confirmarCerrarVisor = () => {
-    // 1. Ocultamos el modal
-    const modal = document.getElementById('modalVisorCanto');
-    if (modal) modal.classList.add('cfg-close');
+    const btn = document.getElementById('btnCerrarSeguro');
+    const txt = document.getElementById('txtConfirmar');
+    clicksCerrar++;
 
-    // 2. Limpiamos el contenido (para detener el audio del iframe si lo hubiera)
-    const contenido = document.getElementById('contenidoCantoVisor');
-    if (contenido) contenido.innerHTML = ''; 
-
-    // 3. Devolvemos el scroll a la página principal
-    document.body.style.overflow = 'auto';
-    
-    // 4. (Opcional) Reseteamos variables por si acaso
-    clicksCerrar = 0; 
+    if (clicksCerrar === 1) {
+        btn.classList.add('confirmando');
+        if(txt) txt.style.opacity = "1";
+        
+        setTimeout(() => {
+            btn.classList.remove('confirmando');
+            if(txt) txt.style.opacity = "0";
+            clicksCerrar = 0;
+        }, 2000);
+    } else if (clicksCerrar >= 2) {
+        document.getElementById('modalVisorCanto').classList.add('cfg-close');
+        document.getElementById('contenidoCantoVisor').innerHTML = ''; 
+        document.body.style.overflow = 'auto';
+        btn.classList.remove('confirmando');
+        clicksCerrar = 0;
+    }
 };
 // FINAL FUNCIÓN 5: Ir al primer canto
 
