@@ -10,7 +10,6 @@ let listaOrdenada = [];
 let todosLosCantos = [];
 let snapshotActual = null;
 let listasLocalesCache = []; 
-let bloqueoSnapshot = false;
 
 // --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
 const normalizarTexto = (texto) => {
@@ -50,24 +49,15 @@ fetch('data/indicecantos.json')
 onAuthStateChanged(auth, (user) => {
     if (user) {
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
-        
         onSnapshot(q, (snapshot) => {
-            // El escudo protege la UI mientras la importación trabaja
-            if (bloqueoSnapshot) return; 
-
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
-            
             snapshotActual = snapshot;
             listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
             renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
-
-        // 🔥 Se ejecuta SOLO cuando Firebase ya sabe quién eres
-        detectarLinkCompartido();
     }
 });
-
 
 // --- 4. FUNCIONES DE RENDERIZADO ---
 function crearTarjetaLista(idLista, data, contenedor) {
@@ -258,17 +248,10 @@ window.compartirListaLink = (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
     if (!lista) return;
     try {
-        // Codificación segura para no perder caracteres especiales
-        const datos = JSON.stringify({ n: lista.nombre, i: lista.ids_cantos });
-        const d64 = btoa(unescape(encodeURIComponent(datos)));
-        const url = `${window.location.origin}${window.location.pathname}?share=${d64}`;
-        
-        navigator.clipboard.writeText(url).then(() => {
-            alert("¡Enlace de compartido copiado al portapapeles!");
-        });
-    } catch (e) {
-        alert("Error al generar el enlace.");
-    }
+        const datosBase64 = btoa(unescape(encodeURIComponent(JSON.stringify({ n: lista.nombre, i: lista.ids_cantos }))));
+        const urlCompartir = `${window.location.origin}${window.location.pathname}?share=${datosBase64}`;
+        navigator.clipboard.writeText(urlCompartir).then(() => alert("¡Enlace copiado!"));
+    } catch (e) { alert("Error al generar enlace."); }
 };
 
 window.exportarLista = (idLista) => {
@@ -366,81 +349,21 @@ window.toggleSection = (contentId, wrapperId) => {
     }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO ---
-const detectarLinkCompartido = async () => {
+// Detección de compartido al arrancar
+(async () => {
     const params = new URLSearchParams(window.location.search);
     const share = params.get('share');
-    
     if (share) {
-        bloqueoSnapshot = true; 
         try {
-            // Decodificación directa
-            const jsonString = decodeURIComponent(atob(share));
-            const datosCanto = JSON.parse(jsonString);
-            
-            if (datosCanto.n && datosCanto.i) {
-                const idFinal = "imp-" + Date.now();
-                const nombreFinal = "🔗 " + datosCanto.n;
-
-                const nl = { 
-                    id: idFinal, 
-                    nombre: nombreFinal, 
-                    ids_cantos: datosCanto.i, 
-                    ultimaActualizacion: new Date().toISOString() 
-                };
-
-                // 1. Guardar en LocalStorage (Inmediato)
+            const d = JSON.parse(decodeURIComponent(escape(atob(share))));
+            if (confirm(`¿Importar lista compartida: "${d.n}"?`)) {
+                const nl = { id: "sh-" + Date.now(), nombre: "🔗 " + d.n, ids_cantos: d.i, ultimaActualizacion: new Date().toISOString() };
                 let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
                 cache.unshift(nl);
                 localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-
-                // 2. Guardar en Firebase (Aprovechando el auth activo)
-                if (auth.currentUser) {
-                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
-                    // AWAIT es clave: espera a la nube antes de refrescar
-                    await setDoc(docRef, { ...nl, ultimaActualizacion: serverTimestamp() });
-                    console.log("✅ Guardado en Firebase:", idFinal);
-                }
-
-                // 3. REFRESH OBLIGATORIO
-                // Usamos href para asegurar que la URL se limpie y la página cargue de nuevo
-                console.log("🔄 Ejecutando refresh...");
-                window.location.href = window.location.origin + window.location.pathname;
+                if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", nl.id), { ...nl, ultimaActualizacion: serverTimestamp() });
+                window.location.href = window.location.pathname; 
             }
-        } catch (e) {
-            console.error("❌ Error en importación:", e);
-            bloqueoSnapshot = false;
-            // Si algo falla, al menos quitamos el código de la URL
-            window.history.replaceState({}, document.title, window.location.pathname);
-        }
+        } catch (e) { console.error("Error link"); }
     }
-};
+})();

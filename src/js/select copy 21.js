@@ -50,24 +50,15 @@ fetch('data/indicecantos.json')
 onAuthStateChanged(auth, (user) => {
     if (user) {
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
-        
         onSnapshot(q, (snapshot) => {
-            // El escudo protege la UI mientras la importación trabaja
-            if (bloqueoSnapshot) return; 
-
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
-            
             snapshotActual = snapshot;
             listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
             renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
-
-        // 🔥 Se ejecuta SOLO cuando Firebase ya sabe quién eres
-        detectarLinkCompartido();
     }
 });
-
 
 // --- 4. FUNCIONES DE RENDERIZADO ---
 function crearTarjetaLista(idLista, data, contenedor) {
@@ -366,81 +357,62 @@ window.toggleSection = (contentId, wrapperId) => {
     }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO ---
+// // --- DETECCIÓN DE COMPARTIDO (URL) BLINDADA ---
 const detectarLinkCompartido = async () => {
     const params = new URLSearchParams(window.location.search);
     const share = params.get('share');
     
     if (share) {
-        bloqueoSnapshot = true; 
         try {
-            // Decodificación directa
-            const jsonString = decodeURIComponent(atob(share));
+            // Decodificamos de forma segura manejando caracteres especiales
+            const jsonString = decodeURIComponent(escape(atob(share)));
             const datosCanto = JSON.parse(jsonString);
             
-            if (datosCanto.n && datosCanto.i) {
-                const idFinal = "imp-" + Date.now();
-                const nombreFinal = "🔗 " + datosCanto.n;
+            // Si no tiene nombre o IDs, el link está corrupto
+            if (!datosCanto.n || !datosCanto.i) return;
 
+            // Preguntamos al usuario
+            const confirmar = confirm(`¿Quieres importar la lista: "${datosCanto.n}"?`);
+            
+            if (confirmar) {
                 const nl = { 
-                    id: idFinal, 
-                    nombre: nombreFinal, 
+                    id: "sh-" + Date.now(), 
+                    nombre: "🔗 " + datosCanto.n, 
                     ids_cantos: datosCanto.i, 
                     ultimaActualizacion: new Date().toISOString() 
                 };
 
-                // 1. Guardar en LocalStorage (Inmediato)
+                // 1. Guardar en Memoria y LocalStorage primero (Inmediato)
                 let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
                 cache.unshift(nl);
                 localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
 
-                // 2. Guardar en Firebase (Aprovechando el auth activo)
+                // 2. Si hay usuario, subimos a Firebase y ESPERAMOS que termine
                 if (auth.currentUser) {
-                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
-                    // AWAIT es clave: espera a la nube antes de refrescar
-                    await setDoc(docRef, { ...nl, ultimaActualizacion: serverTimestamp() });
-                    console.log("✅ Guardado en Firebase:", idFinal);
+                    console.log("Subiendo lista compartida a Firebase...");
+                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", nl.id);
+                    await setDoc(docRef, { 
+                        ...nl, 
+                        ultimaActualizacion: serverTimestamp() 
+                    });
+                    console.log("Sincronización completa.");
                 }
 
-                // 3. REFRESH OBLIGATORIO
-                // Usamos href para asegurar que la URL se limpie y la página cargue de nuevo
-                console.log("🔄 Ejecutando refresh...");
+                // 3. Limpiar la URL y RECARGAR para ver los cambios
+                // Usamos window.location.origin + pathname para quitar el ?share=...
+                alert("¡Lista importada con éxito!");
                 window.location.href = window.location.origin + window.location.pathname;
+            } else {
+                // Si cancela, también limpiamos la URL para que no vuelva a preguntar
+                window.history.replaceState({}, document.title, window.location.pathname);
             }
         } catch (e) {
-            console.error("❌ Error en importación:", e);
-            bloqueoSnapshot = false;
-            // Si algo falla, al menos quitamos el código de la URL
+            console.error("Error al decodificar el link compartido:", e);
+            alert("El enlace de compartido no es válido o está incompleto.");
             window.history.replaceState({}, document.title, window.location.pathname);
         }
     }
 };
+
+// Ejecutamos la detección
+detectarLinkCompartido();

@@ -47,14 +47,12 @@ fetch('data/indicecantos.json')
     .catch(err => console.error("Error al cargar JSON:", err));
 
 // --- 3. SINCRONIZACIÓN ONLINE ---
+// --- 3. SINCRONIZACIÓN ONLINE ---
 onAuthStateChanged(auth, (user) => {
     if (user) {
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
-        
         onSnapshot(q, (snapshot) => {
-            // El escudo protege la UI mientras la importación trabaja
             if (bloqueoSnapshot) return; 
-
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
             
             snapshotActual = snapshot;
@@ -63,11 +61,10 @@ onAuthStateChanged(auth, (user) => {
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
 
-        // 🔥 Se ejecuta SOLO cuando Firebase ya sabe quién eres
+        // 🔥 Ejecutar importación con el usuario ya validado
         detectarLinkCompartido();
     }
 });
-
 
 // --- 4. FUNCIONES DE RENDERIZADO ---
 function crearTarjetaLista(idLista, data, contenedor) {
@@ -365,34 +362,6 @@ window.toggleSection = (contentId, wrapperId) => {
         wrapper.classList.toggle('collapsed');
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO ---

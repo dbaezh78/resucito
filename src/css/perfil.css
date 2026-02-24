@@ -119,7 +119,11 @@
 .tabla-gestion {
     width: 100%;
     border-collapse: collapse;
-    font-size: 13px;
+
+    @media (min-width: 384px) {font-size: 12px;}
+    @media (min-width: 768px) {font-size: 16px;}
+    @media (min-width: 992px) {font-size: 16px;;}
+
 }
 
 .tabla-gestion th, .tabla-gestion td {

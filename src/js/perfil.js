@@ -159,7 +159,7 @@ async function renderizarTablaCantos() {
                 <thead>
                     <tr>
                         <th>Canto</th>
-                        <th>Valoración</th> <th>Estado</th>     <th>Uso</th>        <th>Cejilla (Or/Tu)</th> <th>Acorde (Or/Tu)</th>  </tr>
+                        <th>Rate</th> <th>Online</th>     <th>Uso</th>        <th>Cejilla (Or/Tu)</th> <th>Acorde (Or/Tu)</th>  </tr>
                 </thead>
                 <tbody id="cuerpo-tabla-perfil">`;
 
@@ -239,8 +239,13 @@ async function completarDatosLentamente(cantos) {
         
         if (celdaStatus) {
             const iconoEstado = estaCargado 
+                ? '<span style="color: #28a745;"></span>' 
+                : '<span style="color: #ff0000;"></span>';
+
+                /*
                 ? '<span style="color: #28a745;">✅ Online</span>' 
                 : '<span style="color: #ff0000;">❌ Offline</span>';
+                */
             
             celdaStatus.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">

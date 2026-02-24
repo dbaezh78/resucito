@@ -50,9 +50,9 @@ fetch('data/indicecantos.json')
 onAuthStateChanged(auth, (user) => {
     if (user) {
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
-        
         onSnapshot(q, (snapshot) => {
-            // El escudo protege la UI mientras la importación trabaja
+            // EL ESCUDO: Si estamos importando (bloqueoSnapshot === true), 
+            // ignoramos lo que venga de la nube para que no nos borre el dato local.
             if (bloqueoSnapshot) return; 
 
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
@@ -62,9 +62,6 @@ onAuthStateChanged(auth, (user) => {
             renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
-
-        // 🔥 Se ejecuta SOLO cuando Firebase ya sabe quién eres
-        detectarLinkCompartido();
     }
 });
 
@@ -366,81 +363,55 @@ window.toggleSection = (contentId, wrapperId) => {
     }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO ---
+// --- DETECCIÓN DE COMPARTIDO BLINDADA ---
 const detectarLinkCompartido = async () => {
     const params = new URLSearchParams(window.location.search);
     const share = params.get('share');
     
     if (share) {
-        bloqueoSnapshot = true; 
         try {
-            // Decodificación directa
-            const jsonString = decodeURIComponent(atob(share));
+            const jsonString = decodeURIComponent(escape(atob(share)));
             const datosCanto = JSON.parse(jsonString);
-            
-            if (datosCanto.n && datosCanto.i) {
-                const idFinal = "imp-" + Date.now();
-                const nombreFinal = "🔗 " + datosCanto.n;
+            if (!datosCanto.n || !datosCanto.i) return;
+
+            if (confirm(`¿Importar lista: "${datosCanto.n}"?`)) {
+                // 1. ACTIVAR ESCUDO (Taparle los oídos a Firebase)
+                bloqueoSnapshot = true; 
 
                 const nl = { 
-                    id: idFinal, 
-                    nombre: nombreFinal, 
+                    id: "sh-" + Date.now(), 
+                    nombre: "🔗 " + datosCanto.n, 
                     ids_cantos: datosCanto.i, 
                     ultimaActualizacion: new Date().toISOString() 
                 };
 
-                // 1. Guardar en LocalStorage (Inmediato)
+                // 2. Guardar Local (Para que el usuario lo vea de inmediato)
                 let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
                 cache.unshift(nl);
                 localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                renderizarListasUI(cache); 
 
-                // 2. Guardar en Firebase (Aprovechando el auth activo)
+                // 3. Subir a Firebase y ESPERAR confirmación real
                 if (auth.currentUser) {
-                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
-                    // AWAIT es clave: espera a la nube antes de refrescar
+                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", nl.id);
+                    // El 'await' obliga al navegador a terminar la subida antes de refrescar
                     await setDoc(docRef, { ...nl, ultimaActualizacion: serverTimestamp() });
-                    console.log("✅ Guardado en Firebase:", idFinal);
                 }
 
-                // 3. REFRESH OBLIGATORIO
-                // Usamos href para asegurar que la URL se limpie y la página cargue de nuevo
-                console.log("🔄 Ejecutando refresh...");
+                // 4. Solo cuando Firebase confirmó la subida, refrescamos a la URL limpia
+                alert("¡Lista importada con éxito!");
                 window.location.href = window.location.origin + window.location.pathname;
+            } else {
+                window.history.replaceState({}, document.title, window.location.pathname);
             }
         } catch (e) {
-            console.error("❌ Error en importación:", e);
-            bloqueoSnapshot = false;
-            // Si algo falla, al menos quitamos el código de la URL
+            console.error("Error en importación:", e);
             window.history.replaceState({}, document.title, window.location.pathname);
+        } finally {
+            // Por seguridad, liberamos el escudo después de un tiempo
+            setTimeout(() => { bloqueoSnapshot = false; }, 3000);
         }
     }
 };
+// Ejecutar al final del archivo
+detectarLinkCompartido();
