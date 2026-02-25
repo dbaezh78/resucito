@@ -26,7 +26,7 @@ onAuthStateChanged(auth, (user) => {
 document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
     if (confirm("¿Deseas cerrar la sesión?")) {
         signOut(auth).then(() => {
-            window.location.href = 'index.html';
+            window.location.href = '/index.html';
         }).catch((error) => console.error("Error:", error));
     }
 });

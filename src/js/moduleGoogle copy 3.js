@@ -11,7 +11,7 @@ const googleIconSVG = `
         <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
     </svg>`;
 
-// --- API DE GESTIÓN DE DATOS ---
+// --- API DE GESTIÓN DE DATOS (Se mantiene intacta) ---
 window.firebaseAPI = {
     guardarDato: async (cantoId, valor, tipo) => {
         const clave = `${tipo}_${cantoId}`;
@@ -47,27 +47,28 @@ window.firebaseAPI = {
 
 // --- GESTIÓN DE INTERFAZ DE USUARIO ---
 onAuthStateChanged(auth, async (user) => {
-    const authContainer = document.getElementById('auth-container');
-    if (!authContainer) return;
+    const btnLogin = document.getElementById('btn-login-google');
+    if (!btnLogin) return;
 
     if (user) {
-        // ESTADO: LOGUEADO - Foto y botón de salida alineados
-        authContainer.innerHTML = `
-            <div style="display: inline-flex; align-items: center; gap: 0px;">
-                <div id="btn-login-google" class="avatar" data-action="profile" style="cursor:pointer;">
+        // ESTADO: LOGUEADO
+        // Agregamos un contenedor flex para la foto y el botón de salida
+        btnLogin.parentElement.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <div id="btn-login-google" class="avatar" data-action="profile" title="Ver Perfil" style="cursor:pointer;">
                     <img src="${user.photoURL}" alt="Perfil" 
-                         style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #23a5f6; object-fit: cover; display: block;">
+                         style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #bc0009; object-fit: cover;">
                 </div>
-                <span id="btn-logout" class="material-symbols-outlined icon-button" 
-                      style="cursor:pointer; color: #bc0009; font-size: 24px; vertical-align: middle;" 
-                      title="Cerrar Sesión">
+                <button id="btn-logout" class="material-symbols-outlined" 
+                        style="background:none; border:none; cursor:pointer; color: #bc0009; font-size: 24px;" 
+                        title="Cerrar Sesión">
                     logout
-                </span>
+                </button>
             </div>
         `;
     } else {
-        // ESTADO: INVITADO - Icono de usuario con insignia de Google
-        authContainer.innerHTML = `
+        // ESTADO: INVITADO (Mantenemos tu código igual)
+        btnLogin.parentElement.innerHTML = `
             <button id="btn-login-google" class="avatarborde" data-action="login" title="Entrar con Google">
                 <div style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px;">
                     <span class="material-symbols-outlined" style="font-size: 34px; color: #bc0009;">account_circle</span>
@@ -80,15 +81,21 @@ onAuthStateChanged(auth, async (user) => {
     }
 });
 
-// --- LISTENER GLOBAL DE CLICS (UNIFICADO) ---
+// Listener global de clics actualizado
 document.addEventListener('click', async (e) => {
+    // Detectar clic en el botón de login o foto de perfil
     const btnLogin = e.target.closest('#btn-login-google');
+    // Detectar clic en el nuevo botón de logout
     const btnLogout = e.target.closest('#btn-logout');
 
     if (btnLogin) {
         const action = btnLogin.dataset.action;
         if (action === 'login') {
-            try { await loginConGoogle(); } catch (err) { console.error("Error Login:", err); }
+            try {
+                await loginConGoogle();
+            } catch (error) {
+                console.error("Fallo al iniciar sesión:", error);
+            }
         } else if (action === 'profile') {
             window.location.href = '/perfil.html';
         }
@@ -98,8 +105,11 @@ document.addEventListener('click', async (e) => {
         if (confirm("¿Deseas cerrar sesión?")) {
             try {
                 await signOut(auth);
+                // Opcional: recargar la página para limpiar estados locales
                 window.location.reload();
-            } catch (err) { console.error("Error Logout:", err); }
+            } catch (error) {
+                console.error("Error al cerrar sesión:", error);
+            }
         }
     }
 });

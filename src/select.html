@@ -13,18 +13,9 @@
     <div class="perfil-container">
             <div class="header-seleccion">
                 <div class="title-group" style="display: flex; align-items: center; gap: 15px;">
-                    <a href="index.html" class="material-symbols-outlined back-btn">arrow_back</a>
+                    <a href="#" onclick="history.back(); return false;" class="material-symbols-outlined back-btn">arrow_back</a>
                     <h1 style="margin: 0;">Gestión de Listas</h1>
                 </div>
-
-            <div class="nav-icons" id="auth-status-container" style="display: flex; align-items: center; gap: 15px;">
-                <button id="btn-login-google" class="material-symbols-outlined icon-button blueColor" 
-                    style="background:none; border:none; cursor:pointer; color: #bc0009; font-size: 28px;">
-                    account_circle
-                </button>
-
-                <img id="user-photo" src="" alt="Perfil" 
-                style="display:none; width: 32px; height: 32px; border-radius: 50%; border: 2px solid rgb(0, 166, 188);; cursor: pointer;">
 
                 <a href="/" 
                     id="boton-home"
@@ -33,12 +24,15 @@
                     home
                 </a>
 
-                <button id="btn-logout-perfil" 
-                    class="material-symbols-outlined icon-button" 
-                    style="display:none; background:none; border:none; cursor:pointer; color: #bc0009; font-size: 28px;">
-                    logout
-                </button>
-            </div>
+<!-- SESSION DE GOOGLE-->
+
+<div class="pright">
+        <b class="nav-auth" id="auth-container" style="display: inline-flex; align-items: center; vertical-align: middle;">
+            <button id="btn-login-google" class="avatarborde"></button>
+        </b>
+        </div>
+
+<!-- SESSION DE GOOGLE-->
 
 
             </div>
@@ -115,6 +109,8 @@
     </div>
 
     <script type="module" src="js/select.js"></script>
+    <script type="module" src="js/moduleGoogle.js"></script>
+
     <script type="module" src="js/logout.js"></script>
     
 </body>

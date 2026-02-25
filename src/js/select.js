@@ -621,6 +621,7 @@ document.getElementById('btn-login-google')?.addEventListener('click', async () 
     }
 });
 
+/* HE COMENTADO AQUI, PARA QUE NO SALGA DOS VECES EL MENSAJE DE CIERRE DE SESSION
 // Activar Logout
 document.getElementById('btn-logout-perfil')?.addEventListener('click', async () => {
     if (confirm("¿Cerrar sesión?")) {
@@ -632,4 +633,4 @@ document.getElementById('btn-logout-perfil')?.addEventListener('click', async ()
             console.error("Error al salir:", error);
         }
     }
-});
+});*/

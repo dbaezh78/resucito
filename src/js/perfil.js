@@ -248,7 +248,7 @@ async function completarDatosLentamente(cantos) {
                 */
             
             celdaStatus.innerHTML = `
-                <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">
+                <div style="display: flex; align-items: center; gap: 0px; justify-content: center;">
                     ${iconoEstado}
                     <input type="checkbox" ${estaCargado ? 'checked' : ''} 
                             onchange="window.gestionarMemoria('${canto.id}', this.checked)">

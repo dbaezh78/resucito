@@ -11,7 +11,7 @@ const googleIconSVG = `
         <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
     </svg>`;
 
-// --- API DE GESTIÓN DE DATOS ---
+// --- API DE GESTIÓN DE DATOS (Se mantiene intacta) ---
 window.firebaseAPI = {
     guardarDato: async (cantoId, valor, tipo) => {
         const clave = `${tipo}_${cantoId}`;
@@ -47,59 +47,51 @@ window.firebaseAPI = {
 
 // --- GESTIÓN DE INTERFAZ DE USUARIO ---
 onAuthStateChanged(auth, async (user) => {
-    const authContainer = document.getElementById('auth-container');
-    if (!authContainer) return;
+    // Buscamos el botón por el ID estándar 'btn-login-google'
+    const btnLogin = document.getElementById('btn-login-google');
+    if (!btnLogin) return;
 
     if (user) {
-        // ESTADO: LOGUEADO - Foto y botón de salida alineados
-        authContainer.innerHTML = `
-            <div style="display: inline-flex; align-items: center; gap: 0px;">
-                <div id="btn-login-google" class="avatar" data-action="profile" style="cursor:pointer;">
-                    <img src="${user.photoURL}" alt="Perfil" 
-                         style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #23a5f6; object-fit: cover; display: block;">
-                </div>
-                <span id="btn-logout" class="material-symbols-outlined icon-button" 
-                      style="cursor:pointer; color: #bc0009; font-size: 24px; vertical-align: middle;" 
-                      title="Cerrar Sesión">
-                    logout
-                </span>
+        // ESTADO: LOGUEADO (Mostramos foto de perfil)
+        btnLogin.innerHTML = `
+            <div class="avatar">
+                <img src="${user.photoURL}" alt="Perfil" 
+                     style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #bc0009; object-fit: cover;">
+                <span style="font-size: 1.2em; margin-left: 8px;"></span>
             </div>
         `;
+        btnLogin.title = `La paz, ${user.displayName.split(' ')[0]} (Configuración)`;
+        btnLogin.dataset.action = 'profile';
     } else {
-        // ESTADO: INVITADO - Icono de usuario con insignia de Google
-        authContainer.innerHTML = `
-            <button id="btn-login-google" class="avatarborde" data-action="login" title="Entrar con Google">
-                <div style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px;">
-                    <span class="material-symbols-outlined" style="font-size: 34px; color: #bc0009;">account_circle</span>
-                    <div style="position: absolute; bottom: -2px; right: -2px; background: white; border-radius: 50%; padding: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">
-                        ${googleIconSVG}
-                    </div>
+        // ESTADO: INVITADO (Icono account_circle + Insignia Google)
+        btnLogin.innerHTML = `
+            <div style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px;">
+                <span class="material-symbols-outlined" style="font-size: 34px; color: #bc0009;">account_circle</span>
+                <div style="position: absolute; bottom: -2px; right: -2px; background: white; border-radius: 50%; padding: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">
+                    ${googleIconSVG}
                 </div>
-            </button>
+            </div>
         `;
+        btnLogin.title = "Entrar con Google";
+        btnLogin.dataset.action = 'login';
     }
 });
 
-// --- LISTENER GLOBAL DE CLICS (UNIFICADO) ---
+// Listener global de clics
 document.addEventListener('click', async (e) => {
-    const btnLogin = e.target.closest('#btn-login-google');
-    const btnLogout = e.target.closest('#btn-logout');
+    const btn = e.target.closest('#btn-login-google');
+    if (!btn) return;
 
-    if (btnLogin) {
-        const action = btnLogin.dataset.action;
-        if (action === 'login') {
-            try { await loginConGoogle(); } catch (err) { console.error("Error Login:", err); }
-        } else if (action === 'profile') {
-            window.location.href = '/perfil.html';
-        }
-    }
+    const action = btn.dataset.action;
 
-    if (btnLogout) {
-        if (confirm("¿Deseas cerrar sesión?")) {
-            try {
-                await signOut(auth);
-                window.location.reload();
-            } catch (err) { console.error("Error Logout:", err); }
+    if (action === 'login') {
+        try {
+            await loginConGoogle();
+        } catch (error) {
+            console.error("Fallo al iniciar sesión:", error);
         }
+    } else if (action === 'profile') {
+        // Aquí puedes decidir: ir a perfil o abrir un menú de cerrar sesión
+        window.location.href = '/perfil.html'; // O la ruta que prefieras
     }
 });

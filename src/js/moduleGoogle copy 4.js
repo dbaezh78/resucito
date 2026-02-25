@@ -51,14 +51,14 @@ onAuthStateChanged(auth, async (user) => {
     if (!authContainer) return;
 
     if (user) {
-        // ESTADO: LOGUEADO - Foto y botón de salida alineados
+        // ESTADO: LOGUEADO
         authContainer.innerHTML = `
-            <div style="display: inline-flex; align-items: center; gap: 0px;">
-                <div id="btn-login-google" class="avatar" data-action="profile" style="cursor:pointer;">
+            <div style="display: inline-flex; align-items: center; gap: 8px;">
+                <div id="btn-login-google" class="avatar" data-action="profile" title="Ver Perfil" style="cursor:pointer;">
                     <img src="${user.photoURL}" alt="Perfil" 
-                         style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #23a5f6; object-fit: cover; display: block;">
+                         style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2bb4d7; object-fit: cover; display: block;">
                 </div>
-                <span id="btn-logout" class="material-symbols-outlined icon-button" 
+                <span id="btn-logout" class="material-symbols-outlined" 
                       style="cursor:pointer; color: #bc0009; font-size: 24px; vertical-align: middle;" 
                       title="Cerrar Sesión">
                     logout
@@ -66,7 +66,7 @@ onAuthStateChanged(auth, async (user) => {
             </div>
         `;
     } else {
-        // ESTADO: INVITADO - Icono de usuario con insignia de Google
+        // ESTADO: INVITADO
         authContainer.innerHTML = `
             <button id="btn-login-google" class="avatarborde" data-action="login" title="Entrar con Google">
                 <div style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px;">

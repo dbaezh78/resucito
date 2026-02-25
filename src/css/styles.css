@@ -298,7 +298,7 @@ border: 1px solid #52067d;
 .songs-list {
     display: grid;
     /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
-    /*gap: 8px;*/
+    /*gap: 0px;*/
     justify-items:stretch;
 }
 
@@ -887,7 +887,9 @@ border: 1px solid #52067d;
     height: 32px;
     
     /* Centrado perfecto del icono */
-    display: inline-flex;
+    /*display: inline-flex;*/
+    display: inline-table !important;
+    font-size: 250% !important;
     align-items: center;
     justify-content: center;
     
@@ -912,4 +914,65 @@ border: 1px solid #52067d;
     background-color: #780606;
     /* Ya no cambiamos font-size ni dimensiones aquí, así no se mueve */
     text-decoration: none;
+}
+
+.avatar {
+    position: relative;
+    display: flex;
+
+    /*align-items: center;
+    justify-content: center;*/
+
+    flex-direction: column;
+}
+
+.avatarborde {
+    background:none;
+    border:none; 
+    cursor:pointer; 
+    /*
+    position: relative;
+    padding:7px;
+    top: 10px;*/
+}
+
+
+.icon-button {
+    /* Usamos un tamaño fijo suficiente para el círculo del hover */
+    width: 40px; 
+    height: 40px;
+    
+    /* Centrado perfecto del icono */
+    /*display: inline-flex;*/
+    display: inline-table !important;
+    font-size: 200% !important;
+    align-items: center;
+    justify-content: center;
+    color: #02175b;
+    
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    
+    /* Ajuste de posición sin usar top/left para evitar saltos */
+    vertical-align: middle; 
+    
+    /* Suavizamos la transición */
+    transition: all 0.2s ease;
+    border-radius: 0%;
+    
+    /* El tamaño de fuente debe ser igual en ambos estados para no mover el layout */
+    padding: 0; /* Quitamos padding manual para que el tamaño sea exacto */
+    text-align: center;
+    line-height: unset !important;
+
+}
+
+.icon-button:hover {
+    background-color: #780606;
+    color: white !important;
+    /* Ya no cambiamos font-size ni dimensiones aquí, así no se mueve */
+    text-decoration: none;
+    text-align: center;
+    line-height: unset !important;
 }
