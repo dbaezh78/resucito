@@ -1211,16 +1211,14 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 
     .icon-button {
     /* Usamos un tamaño fijo suficiente para el círculo del hover */
-    width: 40px; 
-    height: 40px;
+    width: 43px; 
     
     /* Centrado perfecto del icono */
     /*display: inline-flex;*/
-    display: inline-table !important;
-    font-size: 200% !important;
+    font-size: 24px !important;
     align-items: center;
     justify-content: center;
-    color: #02175b;
+    color: white;
     
     cursor: pointer;
     border: none;
@@ -1231,7 +1229,7 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
     
     /* Suavizamos la transición */
     transition: all 0.2s ease;
-    border-radius: 0%;
+    /*border-radius: 50%;*/
     
     /* El tamaño de fuente debe ser igual en ambos estados para no mover el layout */
     padding: 0; /* Quitamos padding manual para que el tamaño sea exacto */
@@ -1241,10 +1239,12 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 }
 
 .icon-button:hover {
-    background-color: #780606;
-    color: white !important;
+    background-color: #ffffff;
+    color: var(--SangreDeCristo) !important;
     /* Ya no cambiamos font-size ni dimensiones aquí, así no se mueve */
     text-decoration: none;
     text-align: center;
     line-height: unset !important;
+    border-radius: 50%;
+
 }
