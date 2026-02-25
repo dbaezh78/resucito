@@ -641,13 +641,11 @@ self.addEventListener('install', (event) => {
 });
 
 
-// 3. EVENTO FETCH - Estrategia optimizada para uso Offline
+// 3. EVENTO FETCH
+// 3. EVENTO FETCH - Estrategia optimizada para Offline
 self.addEventListener('fetch', (event) => {
     event.respondWith(
-        // Agregamos { ignoreSearch: true } para que index.html?canto=xxx 
-        // funcione con el index.html guardado en caché
-        caches.match(event.request, { ignoreSearch: true }).then((cachedResponse) => {
-            
+        caches.match(event.request).then((cachedResponse) => {
             // Si el recurso está en el caché, lo servimos de inmediato (Cache First)
             if (cachedResponse) {
                 return cachedResponse;
@@ -655,7 +653,7 @@ self.addEventListener('fetch', (event) => {
 
             // Si no está en caché, intentamos ir a la red
             return fetch(event.request).then((networkResponse) => {
-                // Solo guardamos en caché dinámico si es una respuesta válida y de nuestro origen
+                // Solo guardamos en caché dinámico si es una respuesta válida de nuestro origen
                 if (networkResponse && networkResponse.status === 200 && event.request.url.startsWith(self.location.origin)) {
                     const responseToCache = networkResponse.clone();
                     caches.open(CACHE_NAME).then((cache) => {
@@ -664,7 +662,7 @@ self.addEventListener('fetch', (event) => {
                 }
                 return networkResponse;
             }).catch(() => {
-                // Si falla la red y el usuario está navegando a una página, mostrar offline.html
+                // Si falla la red y es una navegación (página), mostramos offline.html
                 if (event.request.mode === 'navigate') {
                     return caches.match(OFFLINE_URL);
                 }
@@ -672,6 +670,7 @@ self.addEventListener('fetch', (event) => {
         })
     );
 });
+
 
 // 4. EVENTO ACTIVATE
 self.addEventListener('activate', (event) => {

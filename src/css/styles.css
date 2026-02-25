@@ -888,7 +888,7 @@ border: 1px solid #52067d;
     
     /* Centrado perfecto del icono */
     /*display: inline-flex;*/
-    display: inline-table !important;
+    /*display: inline-table !important;*/
     font-size: 250% !important;
     align-items: center;
     justify-content: center;
@@ -944,7 +944,7 @@ border: 1px solid #52067d;
     
     /* Centrado perfecto del icono */
     /*display: inline-flex;*/
-    display: inline-table !important;
+    /*display: inline-table !important;*/
     font-size: 200% !important;
     align-items: center;
     justify-content: center;
@@ -959,7 +959,7 @@ border: 1px solid #52067d;
     
     /* Suavizamos la transición */
     transition: all 0.2s ease;
-    border-radius: 0%;
+    border-radius: 50%;
     
     /* El tamaño de fuente debe ser igual en ambos estados para no mover el layout */
     padding: 0; /* Quitamos padding manual para que el tamaño sea exacto */

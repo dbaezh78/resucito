@@ -555,43 +555,49 @@ window.gestionarDescargaTotal = async () => {
         const cantos = await response.json();
         total = cantos.length;
         
-        // Debe coincidir con CACHE_NAME en sworker.js
-        const cache = await caches.open('cantos-cache-v2.08');
-
-        // IMPORTANTE: Primero descargamos el archivo index.html una sola vez
-        // Este es el "molde" que se usa para todos los cantos
-        try {
-            const resIndex = await fetch('index.html');
-            if (resIndex.ok) await cache.put('index.html', resIndex);
-        } catch (e) { console.warn("Error al cachear index.html base"); }
+        // IMPORTANTE: El nombre del caché debe ser idéntico al de sworker.js
+        const CACHE_NAME = 'cantos-cache-v2.08';
+        const cache = await caches.open(CACHE_NAME);
 
         for (let i = 0; i < total; i++) {
             const cantoId = cantos[i].id;
             
-            // Descargamos el CSS específico de cada canto
-            const fileUrl = `src/css/pg/${cantoId}.css`;
-            
-            const coincidencia = await cache.match(fileUrl);
-            if (!coincidencia) {
-                try {
-                    const res = await fetch(fileUrl);
-                    if (res.ok) {
-                        await cache.put(fileUrl, res);
-                        descargados++;
-                    } else { errores++; }
-                } catch (e) { errores++; }
-            } else {
-                yaExistian++;
+            // Definimos las URLs exactas que el Visor necesita
+            const filesToCache = [
+                `/src/css/pg/${cantoId}.css`,
+                `/src/index.html?canto=${cantoId}`
+            ];
+
+            for (const fileUrl of filesToCache) {
+                const coincidencia = await cache.match(fileUrl);
+                if (!coincidencia) {
+                    try {
+                        const res = await fetch(fileUrl);
+                        if (res.ok) {
+                            await cache.put(fileUrl, res);
+                            descargados++;
+                        } else {
+                            errores++;
+                        }
+                    } catch (e) {
+                        errores++;
+                    }
+                } else {
+                    yaExistian++;
+                }
             }
 
             let porc = Math.round(((i + 1) / total) * 100);
             if (barra) barra.style.width = `${porc}%`; 
-            if (texto) texto.innerText = `Descargando recursos: ${i + 1} de ${total} (${porc}%)`;
+            if (texto) texto.innerText = `Descargando: ${i + 1} de ${total} (${porc}%)`;
             
+            // Pequeña pausa para no bloquear el navegador
             if (i % 20 === 0) await new Promise(r => setTimeout(r, 5));
         }
 
-        alert(`✅ ¡Listo! Ahora los cantos funcionan sin internet.\n\n• Procesados: ${total}\n• En memoria: ${yaExistian}\n• Nuevos: ${descargados}\n• Errores: ${errores}`);
+        alert(`✅ Descarga Terminada:\n\n• Cantos procesados: ${total}\n• Archivos en memoria: ${yaExistian}\n• Nuevos descargados: ${descargados}\n• Errores: ${errores}`);
+        
+        if (typeof renderizarTablaCantos === 'function') renderizarTablaCantos();
 
     } catch (e) { 
         alert("Error crítico durante la descarga."); 
@@ -600,11 +606,10 @@ window.gestionarDescargaTotal = async () => {
         if (divProgreso) divProgreso.style.display = "none";
         if (btn) {
             btn.disabled = false;
-            btn.innerHTML = "✅ Contenido Offline Listo";
+            btn.innerHTML = "✅ Todo descargado";
         }
     }
-};
-;// FIN 14: DESCARGA MASIVA
+};// FIN 14: DESCARGA MASIVA
 
 
 // 15: EXPORTAR RESPALDO: Descarga el LocalStorage a JSON (Global).

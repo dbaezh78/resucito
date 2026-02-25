@@ -555,43 +555,44 @@ window.gestionarDescargaTotal = async () => {
         const cantos = await response.json();
         total = cantos.length;
         
-        // Debe coincidir con CACHE_NAME en sworker.js
         const cache = await caches.open('cantos-cache-v2.08');
 
-        // IMPORTANTE: Primero descargamos el archivo index.html una sola vez
-        // Este es el "molde" que se usa para todos los cantos
-        try {
-            const resIndex = await fetch('index.html');
-            if (resIndex.ok) await cache.put('index.html', resIndex);
-        } catch (e) { console.warn("Error al cachear index.html base"); }
-
         for (let i = 0; i < total; i++) {
-            const cantoId = cantos[i].id;
-            
-            // Descargamos el CSS específico de cada canto
-            const fileUrl = `src/css/pg/${cantoId}.css`;
-            
-            const coincidencia = await cache.match(fileUrl);
-            if (!coincidencia) {
-                try {
-                    const res = await fetch(fileUrl);
-                    if (res.ok) {
-                        await cache.put(fileUrl, res);
-                        descargados++;
-                    } else { errores++; }
-                } catch (e) { errores++; }
-            } else {
-                yaExistian++;
+            // Descargamos tanto el CSS como el HTML del canto
+            const filesToCache = [
+                `src/css/pg/${cantos[i].id}.css`,
+                `src/index.html?canto=${cantos[i].id}.html`
+                //`src/css/pg/${cantos[i].id}.html`
+            ];
+
+            for (const fileUrl of filesToCache) {
+                const coincidencia = await cache.match(fileUrl);
+                if (!coincidencia) {
+                    try {
+                        const res = await fetch(fileUrl);
+                        if (res.ok) {
+                            await cache.put(fileUrl, res);
+                            descargados++;
+                        } else {
+                            errores++;
+                        }
+                    } catch (e) {
+                        errores++;
+                    }
+                } else {
+                    yaExistian++;
+                }
             }
 
             let porc = Math.round(((i + 1) / total) * 100);
             if (barra) barra.style.width = `${porc}%`; 
-            if (texto) texto.innerText = `Descargando recursos: ${i + 1} de ${total} (${porc}%)`;
+            if (texto) texto.innerText = `Descargando: ${i + 1} de ${total} (${porc}%)`;
             
-            if (i % 20 === 0) await new Promise(r => setTimeout(r, 5));
+            if (i % 15 === 0) await new Promise(r => setTimeout(r, 10));
         }
 
-        alert(`✅ ¡Listo! Ahora los cantos funcionan sin internet.\n\n• Procesados: ${total}\n• En memoria: ${yaExistian}\n• Nuevos: ${descargados}\n• Errores: ${errores}`);
+        alert(`✅ Descarga Terminada:\n\n• Procesados: ${total}\n• En memoria: ${yaExistian}\n• Nuevos: ${descargados}\n• Errores: ${errores}`);
+        renderizarTablaCantos();
 
     } catch (e) { 
         alert("Error crítico durante la descarga."); 
@@ -600,11 +601,11 @@ window.gestionarDescargaTotal = async () => {
         if (divProgreso) divProgreso.style.display = "none";
         if (btn) {
             btn.disabled = false;
-            btn.innerHTML = "✅ Contenido Offline Listo";
+            btn.innerHTML = "✅ Todo descargado";
         }
     }
 };
-;// FIN 14: DESCARGA MASIVA
+// FIN 14: DESCARGA MASIVA
 
 
 // 15: EXPORTAR RESPALDO: Descarga el LocalStorage a JSON (Global).
