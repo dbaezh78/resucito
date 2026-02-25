@@ -593,6 +593,9 @@ window.gestionarDescargaTotal = async () => {
 
         alert(`✅ ¡Listo! Ahora los cantos funcionan sin internet.\n\n• Procesados: ${total}\n• En memoria: ${yaExistian}\n• Nuevos: ${descargados}\n• Errores: ${errores}`);
 
+        // Recargando los cantos descargados
+        window.location.reload();
+
     } catch (e) { 
         alert("Error crítico durante la descarga."); 
         console.error(e);
