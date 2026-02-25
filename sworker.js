@@ -15,6 +15,7 @@ const urlsToCache = [
     'src/js/manifest.json',
     'src/js/app.js',
     'src/data/find.json',
+    'src/data/canto_data.js',
     
     // Sección JS
     'src/js/ai.js',
@@ -154,12 +155,9 @@ const urlsToCache = [
     // Archivos CSS
     
     // CSS
-    'src/css/dbCSS.css',
     'src/css/aisearch.css',
     'src/css/ainterleccional.css',
-    'src/css/cssc/asihablaelamen.css', // Del Service Worker anterior
     'src/css/ai.css',
-    'src/css/cssc/dbcssCantos.css',
     'src/css/search.css',
     'src/css/mensajekiko.css',
     'src/css/styles.css',
@@ -602,7 +600,7 @@ const urlsToCache = [
     'src/css/pg/teestoyllamandosenor.css',
     'src/css/pg/tehemanifestadomipecado.css',
     'src/css/pg/tueresmiesperanzasenor.css',
-    'src/css/pg/tuhascubiertodevergenzalamuerte.css',
+    'src/css/pg/tuhascubiertodeverguenzalamuerte.css',
     'src/css/pg/tuqueeresfiel.css',
     'src/css/pg/unagransenal.css',
     'src/css/pg/unretonobrotadeltroncodejese.css',
