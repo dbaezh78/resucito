@@ -1,104 +1,117 @@
-import { auth, db } from './firebase-auth.js';
+import { auth, db, loginConGoogle } from './firebase-auth.js';
 import { 
     doc, setDoc, serverTimestamp, deleteDoc, 
     collection, query, onSnapshot, orderBy 
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 
 // --- VARIABLES DE ESTADO ---
 let listaOrdenada = [];
 let todosLosCantos = [];
-let snapshotActual = null; // Guardará el objeto de Firebase o el simulado de Caché
-let clicksCerrar = 0;
+let snapshotActual = null;
+let listasLocalesCache = []; 
+let bloqueoSnapshot = false;
 
-// --- 1. CARGA DE BASE DE DATOS (JSON) ---
-fetch('data/indicecantos.json')
-    .then(res => res.json())
-    .then(data => {
-        todosLosCantos = data;
-        renderizarLista(todosLosCantos);
-    })
-    .catch(err => console.error("Error al cargar JSON:", err));
+// --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
+const normalizarTexto = (texto) => {
+    if (!texto) return "";
+    return texto.toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // Quita acentos
+        .replace(/ñ/g, "n")              // ñ -> n
+        .replace(/[^a-z0-9\s]/g, "")     // QUITA comas, puntos, guiones, etc.
+        .trim();
+};
 
-// --- 2. MOTOR DE PERSISTENCIA LOCAL (INMEDIATO) ---
+// --- 1. MOTOR DE PERSISTENCIA LOCAL ---
 const cargarDesdeEquipo = () => {
     try {
         const datosLocales = localStorage.getItem('cache_listas_personalizadas');
         if (datosLocales) {
-            const listas = JSON.parse(datosLocales);
-            console.log("Modo Equipo: Cargando datos locales...");
-            renderizarListasDesdeCache(listas);
-            
-            // Simulamos el snapshotActual para que toggleDetalleLista funcione Offline
-            snapshotActual = {
-                docs: listas.map(l => ({
-                    id: l.id,
-                    data: () => l
-                }))
-            };
+            listasLocalesCache = JSON.parse(datosLocales);
+            renderizarListasUI(listasLocalesCache);
+            snapshotActual = { docs: listasLocalesCache.map(l => ({ id: l.id, data: () => l })) };
         }
-    } catch (e) { console.error("Error leyendo caché:", e); }
+    } catch (e) { console.error("Error en caché local:", e); }
 };
 
-// Arrancamos el equipo al instante
 cargarDesdeEquipo();
 
-// --- 3. SINCRONIZACIÓN ONLINE INTELIGENTE ---
+// --- 2. CARGA DE BASE DE DATOS (JSON) ---
+fetch('data/indicecantos.json')
+    .then(res => res.json())
+    .then(data => { 
+        todosLosCantos = data; 
+        renderizarLista(todosLosCantos); 
+    })
+    .catch(err => console.error("Error al cargar JSON:", err));
+
+// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
 onAuthStateChanged(auth, (user) => {
+    const btnLogin = document.getElementById('btn-login-google');
     const btnLogout = document.getElementById('btn-logout-perfil');
+    const userPhoto = document.getElementById('user-photo');
+
     if (user) {
-        if (btnLogout) btnLogout.style.display = 'inline-block';
-        console.log("Usuario detectado: Sincronizando con la nube...");
+        console.log("👤 Sesión activa:", user.displayName);
+        
+        // UI de usuario
+        if (btnLogin) btnLogin.style.display = 'none';
+        if (btnLogout) btnLogout.style.display = 'block';
+        if (userPhoto) {
+            userPhoto.src = user.photoURL || '';
+            userPhoto.style.display = 'block';
+            userPhoto.title = user.displayName;
+        }
 
-        const q = query(
-            collection(db, "usuarios", user.uid, "listasPersonalizadas"),
-            orderBy("ultimaActualizacion", "desc")
-        );
-
+        // Escucha de listas
+        const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
         onSnapshot(q, (snapshot) => {
-            // Evitamos parpadeos si los datos vienen de la caché interna de Firebase
-            if (snapshot.metadata.fromCache && snapshotActual && snapshotActual.docs.length > 0) return;
-
-            snapshotActual = snapshot;
-            const listasParaCache = [];
-            const contenedor = document.getElementById('lista-colecciones');
-            if (!contenedor) return;
-
-            contenedor.innerHTML = snapshot.empty ? '<p class="status-msg">No tienes listas en la nube.</p>' : '';
+            if (bloqueoSnapshot) return; 
+            if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
             
-            snapshot.forEach((doc) => {
-                const data = doc.data();
-                listasParaCache.push({ id: doc.id, ...data });
-                crearTarjetaLista(doc.id, data, contenedor);
-            });
-
-            // Guardado eficiente en LocalStorage
-            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasParaCache));
+            snapshotActual = snapshot;
+            listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            renderizarListasUI(listasLocalesCache);
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
+
+        // Lanzar importación
+        detectarLinkCompartido();
+
     } else {
+        // No hay sesión
+        if (btnLogin) btnLogin.style.display = 'block';
         if (btnLogout) btnLogout.style.display = 'none';
-        console.warn("Sin sesión: Operando solo con datos del equipo.");
+        if (userPhoto) userPhoto.style.display = 'none';
+        renderizarListasUI([]); 
     }
 });
 
-// --- 4. FUNCIONES DE RENDERIZADO (REUTILIZABLES) ---
 
+// --- 4. FUNCIONES DE RENDERIZADO ---
 function crearTarjetaLista(idLista, data, contenedor) {
     const ids = data.ids_cantos || [];
     const nombreEscapado = data.nombre.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-    const idsJson = JSON.stringify(ids).replace(/"/g, '&quot;');
-
     const div = document.createElement('div');
     div.className = 'tarjeta-lista-wrapper';
     div.innerHTML = `
         <div class="tarjeta-lista" onclick="window.toggleDetalleLista('${idLista}')">
             <div class="info-lista"><strong>${data.nombre}</strong><span>${ids.length} cantos</span></div>
             <div class="acciones-lista" onclick="event.stopPropagation()">
-                <button class="btn-ver" onclick="window.cargarListaParaEditar('${idLista}', ${idsJson}, '${nombreEscapado}')">
+                <button class="btn-icono share" onclick="window.compartirListaLink('${idLista}')" title="Copiar enlace">
+                    <span class="material-symbols-outlined">link</span>
+                </button>
+                <button class="btn-icono export" onclick="window.exportarLista('${idLista}')" title="Descargar archivo">
+                    <span class="material-symbols-outlined">download</span>
+                </button>
+                <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')">
                     <span class="material-symbols-outlined">edit</span>
                 </button>
-                <span class="material-symbols-outlined icon-delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')" style="color: #bc0009; cursor: pointer; margin: 0 10px;">delete</span>
-                <span class="material-symbols-outlined arrow-icon" onclick="window.toggleDetalleLista('${idLista}')">expand_more</span>
+                <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
             </div>
         </div>
         <div id="detalle-${idLista}" class="detalle-lista-cantos cfg-close"></div>
@@ -106,9 +119,16 @@ function crearTarjetaLista(idLista, data, contenedor) {
     contenedor.appendChild(div);
 }
 
-function renderizarListasDesdeCache(listas) {
+function renderizarListasUI(listas) {
     const contenedor = document.getElementById('lista-colecciones');
-    if (contenedor) {
+    if (!contenedor) return;
+    if (listas.length === 0) {
+        contenedor.innerHTML = `
+            <div class="status-msg-vacia">
+                <p>No hay listas creadas.</p>
+                <a href="javascript:void(0)" onclick="window.irANuevaLista()" class="link-crear-lista">¿Deseas crearla?</a>
+            </div>`;
+    } else {
         contenedor.innerHTML = '';
         listas.forEach(l => crearTarjetaLista(l.id, l, contenedor));
     }
@@ -121,83 +141,83 @@ function renderizarLista(lista) {
     lista.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'item-canto';
+        const isChecked = listaOrdenada.includes(String(canto.id));
         div.onclick = () => window.toggleCanto(canto.id);
         div.innerHTML = `
             <span class="titulo-canto-seleccion">${canto.titulo}</span>
-            <label class="switch" onclick="event.stopPropagation()">
-                <input type="checkbox" data-id="${canto.id}" onchange="window.toggleCanto('${canto.id}')" 
-                       ${listaOrdenada.includes(String(canto.id)) ? 'checked' : ''}>
+            <label class="switch">
+                <input type="checkbox" data-id="${canto.id}" ${isChecked ? 'checked' : ''} readonly>
                 <span class="slider"></span>
-            </label>
-        `;
+            </label>`;
         contenedor.appendChild(div);
     });
 }
 
-// --- 5. LÓGICA DE NEGOCIO Y GUARDADO HÍBRIDO ---
+// --- 5. BUSCADORES Y LIMPIEZA ---
 
-window.guardarListaFirebase = async () => {
-    const nombre = document.getElementById('nombreLista').value.trim();
-    const user = auth.currentUser;
+// A. Filtro de Selección de Cantos (Ultra flexible)
+window.filtrarSeleccion = () => {
+    const input = document.getElementById('inputBuscadorCantos');
+    const btnX = document.getElementById('btnLimpiarCantos');
+    if (!input) return;
 
-    if (!nombre || listaOrdenada.length === 0) return alert("Nombre o lista vacía.");
+    // Control visual de la X
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
 
-    const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
-    const nuevaLista = {
-        id: listaId,
-        nombre: nombre,
-        ids_cantos: [...listaOrdenada],
-        ultimaActualizacion: new Date().toISOString()
-    };
+    // Lógica de búsqueda por palabras sueltas
+    const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
+    
+    const filtrados = todosLosCantos.filter(canto => {
+        const tituloNormalizado = normalizarTexto(canto.titulo);
+        // Debe cumplir que TODAS las palabras escritas estén en el título
+        return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
+    });
+    
+    renderizarLista(filtrados);
+};
 
-    // A. ACTUALIZACIÓN LOCAL (INMEDIATA)
-    let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
-    const idx = cache.findIndex(l => l.id === listaId);
-    idx !== -1 ? cache[idx] = nuevaLista : cache.unshift(nuevaLista);
-    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-    renderizarListasDesdeCache(cache); 
-
-    // B. SINCRONIZACIÓN ONLINE (SEGUNDO PLANO)
-    if (user) {
-        try {
-            await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), {
-                ...nuevaLista,
-                ultimaActualizacion: serverTimestamp()
-            });
-        } catch (e) { console.warn("Offline: Guardado solo en equipo local."); }
-    } else {
-        alert("Guardado en este equipo. Inicia sesión para subirla a la nube.");
+// Limpiar buscador de cantos
+window.limpiarBuscadorSeleccion = () => {
+    const input = document.getElementById('inputBuscadorCantos');
+    if (input) {
+        input.value = '';
+        window.filtrarSeleccion(); // Reset lista y oculta X
+        input.focus();
     }
 };
 
-window.eliminarLista = async (idLista, nombreLista) => {
-    const user = auth.currentUser;
-    if (confirm(`¿Eliminar la lista "${nombreLista}"?`)) {
-        // Eliminar de caché local
-        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
-        cache = cache.filter(l => l.id !== idLista);
-        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-        renderizarListasDesdeCache(cache);
+// B. Filtro de Mis Listados Guardados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
 
-        // Eliminar de nube
-        if (user) {
-            await deleteDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", idLista));
-        }
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    
+    renderizarListasUI(filtradas);
+};
+
+// Limpiar buscador de mis listas
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas(); // Reset lista y oculta X
+        input.focus();
     }
 };
 
-// --- 6. UTILIDADES Y VISOR ---
-
+// --- 6. LÓGICA DE NEGOCIO ---
 window.toggleCanto = (id) => {
     const stringId = String(id);
     const index = listaOrdenada.indexOf(stringId);
     index !== -1 ? listaOrdenada.splice(index, 1) : listaOrdenada.push(stringId);
     actualizarInterfazSeleccion();
-    const buscador = document.getElementById('inputBuscador');
-    if (buscador && buscador.value !== "") {
-        buscador.value = ""; 
-        renderizarLista(todosLosCantos); 
-    }
 };
 
 function actualizarInterfazSeleccion() {
@@ -205,39 +225,122 @@ function actualizarInterfazSeleccion() {
     if (contador) contador.innerText = listaOrdenada.length;
     const cola = document.getElementById('cola-seleccion');
     if (cola) {
-        cola.innerHTML = ''; 
+        cola.innerHTML = '';
         listaOrdenada.forEach((id, i) => {
             const canto = todosLosCantos.find(c => String(c.id) === id);
             if (canto) {
                 const tag = document.createElement('div');
                 tag.className = 'canto-tag';
                 tag.innerHTML = `<span>${i + 1}</span> ${canto.titulo}`;
-                tag.onclick = () => window.toggleCanto(id);
+                tag.onclick = (e) => { e.stopPropagation(); window.toggleCanto(id); };
                 cola.appendChild(tag);
             }
         });
     }
-    document.querySelectorAll('.item-canto input').forEach(input => {
-        input.checked = listaOrdenada.includes(String(input.getAttribute('data-id')));
+    document.querySelectorAll('.item-canto input[type="checkbox"]').forEach(input => {
+        const idInput = input.getAttribute('data-id');
+        input.checked = listaOrdenada.includes(String(idInput));
     });
 }
 
-window.toggleSection = (contentId, wrapperId) => {
-    const content = document.getElementById(contentId);
-    const wrapper = document.getElementById(wrapperId);
-    if (content && wrapper) {
-        content.classList.toggle('cfg-close');
-        wrapper.classList.toggle('collapsed');
+window.guardarListaFirebase = async () => {
+    const nombre = document.getElementById('nombreLista').value.trim();
+    const user = auth.currentUser;
+    if (!nombre || listaOrdenada.length === 0) return alert("Faltan datos.");
+
+    const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
+    const nuevaLista = { id: listaId, nombre, ids_cantos: [...listaOrdenada], ultimaActualizacion: new Date().toISOString() };
+
+    let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+    const idx = cache.findIndex(l => l.id === listaId);
+    idx !== -1 ? cache[idx] = nuevaLista : cache.unshift(nuevaLista);
+    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+
+    if (user) {
+        try { 
+            await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { ...nuevaLista, ultimaActualizacion: serverTimestamp() }); 
+        } catch (e) { console.warn("Offline."); }
+    }
+    location.reload(); 
+};
+
+window.eliminarLista = async (idLista, nombreLista) => {
+    if (confirm(`¿Eliminar "${nombreLista}"?`)) {
+        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+        cache = cache.filter(l => l.id !== idLista);
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+        if (auth.currentUser) await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
+        location.reload();
     }
 };
 
-window.cargarListaParaEditar = (docId, ids, nombre) => {
-    listaOrdenada = [...ids];
-    document.getElementById('nombreLista').value = nombre;
-    if(document.getElementById('content-nueva-lista').classList.contains('cfg-close')) window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
-    actualizarInterfazSeleccion();
-    renderizarLista(todosLosCantos);
+// --- 7. SISTEMA DE COMPARTIR ---
+window.compartirListaLink = (idLista) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista) return;
+    try {
+        // Limpiamos posibles caracteres extraños antes de serializar
+        const datos = JSON.stringify({ 
+            n: lista.nombre, 
+            i: lista.ids_cantos 
+        });
+        
+        // MÉTODO DE BYTES (UTF-8): Soporta emojis de carpetas y eslabones
+        const uint8Array = new TextEncoder().encode(datos);
+        const binString = Array.from(uint8Array, (b) => String.fromCharCode(b)).join("");
+        const d64 = btoa(binString);
+        
+        const url = `${window.location.origin}${window.location.pathname}?share=${d64}`;
+        
+        navigator.clipboard.writeText(url).then(() => {
+            alert("¡Enlace de compartido copiado!");
+        });
+    } catch (e) {
+        console.error("Error al compartir:", e);
+        alert("No se pudo generar el enlace.");
+    }
+};
+
+
+
+window.exportarLista = (idLista) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista) return;
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(lista));
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", `Resucito_${lista.nombre.replace(/\s+/g, '_')}.resucito`);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+};
+
+window.importarLista = (event) => {
+    const archivo = event.target.files[0];
+    if (!archivo) return;
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+        try {
+            const l = JSON.parse(e.target.result);
+            l.id = "imp-" + Date.now();
+            l.nombre = "📂 " + l.nombre;
+            let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+            cache.unshift(l);
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+            if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { ...l, ultimaActualizacion: serverTimestamp() });
+            location.reload();
+        } catch (err) { alert("Archivo no válido."); }
+    };
+    reader.readAsText(archivo);
+};
+
+// --- 8. UTILIDADES ---
+window.irANuevaLista = () => {
+    const contentNueva = document.getElementById('content-nueva-lista');
+    if (contentNueva && contentNueva.classList.contains('cfg-close')) {
+        window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => { document.getElementById('nombreLista')?.focus(); }, 500);
 };
 
 window.toggleDetalleLista = (idLista) => {
@@ -247,31 +350,27 @@ window.toggleDetalleLista = (idLista) => {
     document.querySelectorAll('.detalle-lista-cantos').forEach(d => d.classList.add('cfg-close'));
     if (estaCerrado) {
         detalleDiv.classList.remove('cfg-close');
-        // Buscar en snapshot (Firebase) o en el snapshot simulado (Caché)
-        let docData;
-        if (snapshotActual.docs) {
-            const docSnap = snapshotActual.docs.find(d => d.id === idLista);
-            docData = docSnap ? docSnap.data() : null;
-        }
-        
-        if (!docData) return;
-        const ids = docData.ids_cantos || [];
-        detalleDiv.innerHTML = ids.map((id, i) => {
+        const source = snapshotActual.docs || snapshotActual;
+        const docSnap = source.find(d => d.id === idLista);
+        const data = docSnap.data ? docSnap.data() : docSnap;
+        detalleDiv.innerHTML = data.ids_cantos.map((id, i) => {
             const c = todosLosCantos.find(can => String(can.id) === String(id));
             return `<div class="sub-item-canto" onclick="window.abrirVisorCanto('${id}')">
                 <span class="num">${i + 1}</span><span>${c ? c.titulo : id}</span>
-                <span class="material-symbols-outlined">menu_book</span>
             </div>`;
         }).join('');
     }
 };
 
-window.confirmarCerrarVisor = () => {
-    const modal = document.getElementById('modalVisorCanto');
-    const contenido = document.getElementById('contenidoCantoVisor');
-    if (modal) modal.classList.add('cfg-close');
-    if (contenido) contenido.innerHTML = ''; 
-    document.body.style.overflow = 'auto';
+window.cargarListaParaEditar = (docId, ids, nombre) => {
+    listaOrdenada = [...ids];
+    document.getElementById('nombreLista').value = nombre;
+    if (document.getElementById('content-nueva-lista').classList.contains('cfg-close')) {
+        window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
+    }
+    actualizarInterfazSeleccion();
+    renderizarLista(todosLosCantos);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
 window.abrirVisorCanto = (idCanto) => {
@@ -283,14 +382,93 @@ window.abrirVisorCanto = (idCanto) => {
     contenido.innerHTML = `<iframe src="./index.html?canto=${idCanto}" style="width:100%; height:100%; border:none; background: white;"></iframe>`;
 };
 
-// Buscador
-window.filtrarSeleccion = () => {
-    const busqueda = document.getElementById('inputBuscador').value.toLowerCase();
-    const filtrados = todosLosCantos.filter(c => c.titulo.toLowerCase().includes(busqueda));
-    renderizarLista(filtrados);
+window.confirmarCerrarVisor = () => {
+    const modal = document.getElementById('modalVisorCanto');
+    if (modal) modal.classList.add('cfg-close');
+    document.getElementById('contenidoCantoVisor').innerHTML = '';
+    document.body.style.overflow = 'auto';
 };
 
-window.limpiarBuscadorSeleccion = () => {
-    const input = document.getElementById('inputBuscador');
-    if (input) { input.value = ''; window.filtrarSeleccion(); input.focus(); }
+window.toggleSection = (contentId, wrapperId) => {
+    const content = document.getElementById(contentId);
+    const wrapper = document.getElementById(wrapperId);
+    if (content && wrapper) {
+        content.classList.toggle('cfg-close');
+        wrapper.classList.toggle('collapsed');
+    }
 };
+
+
+
+
+
+
+
+// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO Y SOPORTE DE ACENTOS ---
+const detectarLinkCompartido = async () => {
+    const params = new URLSearchParams(window.location.search);
+    const share = params.get('share');
+    
+    if (share) {
+        bloqueoSnapshot = true; 
+        try {
+            // DECODIFICACIÓN DE BYTES (UTF-8)
+            const binString = atob(share);
+            const uint8Array = Uint8Array.from(binString, (m) => m.charCodeAt(0));
+            const jsonString = new TextDecoder().decode(uint8Array);
+            const datosCanto = JSON.parse(jsonString);
+            
+            if (datosCanto.n && datosCanto.i) {
+                const idFinal = "imp-" + Date.now();
+                
+                // LÓGICA DE NOMBRE: Si ya tiene icono, lo dejamos. Si no, le ponemos el eslabón.
+                let nombreFinal = datosCanto.n;
+                if (!nombreFinal.includes("🔗") && !nombreFinal.includes("📂")) {
+                    nombreFinal = "🔗 " + nombreFinal;
+                }
+
+                const nl = { 
+                    id: idFinal, 
+                    nombre: nombreFinal, 
+                    ids_cantos: datosCanto.i, 
+                    ultimaActualizacion: new Date().toISOString() 
+                };
+
+                // 1. Guardado Local
+                let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+                cache.unshift(nl);
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+
+                // 2. Guardado en Firebase
+                const user = auth.currentUser;
+                if (user) {
+                    const docRef = doc(db, "usuarios", user.uid, "listasPersonalizadas", idFinal);
+                    // Usamos await para asegurar que llegue a la nube
+                    await setDoc(docRef, { ...nl, ultimaActualizacion: serverTimestamp() });
+                }
+
+                // 3. REFRESH: Limpia la URL y asienta los datos
+                window.location.href = window.location.origin + window.location.pathname;
+            }
+        } catch (e) {
+            console.error("❌ Error importando link:", e);
+            bloqueoSnapshot = false;
+            // Quitamos el share de la URL para evitar bucles de error
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    }
+};
+
+
+
+
+
+// Activar Login al presionar el icono de perfil
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+        // No hace falta recargar, onAuthStateChanged detectará el cambio y mostrará la foto
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});

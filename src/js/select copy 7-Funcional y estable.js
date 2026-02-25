@@ -1,9 +1,10 @@
-import { auth, db } from './firebase-auth.js';
+import { auth, db, loginConGoogle } from './firebase-auth.js';
 import { 
     doc, setDoc, serverTimestamp, deleteDoc, 
     collection, query, onSnapshot, orderBy 
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 
 // --- VARIABLES DE ESTADO ---
 let listaOrdenada = [];
@@ -46,19 +47,48 @@ fetch('data/indicecantos.json')
     })
     .catch(err => console.error("Error al cargar JSON:", err));
 
-// --- 3. SINCRONIZACIÓN ONLINE ---
+// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
 onAuthStateChanged(auth, (user) => {
+    const btnLogin = document.getElementById('btn-login-google');
+    const btnLogout = document.getElementById('btn-logout-perfil');
+    const userPhoto = document.getElementById('user-photo');
+
     if (user) {
+        console.log("👤 Sesión activa:", user.displayName);
+        
+        // UI de usuario
+        if (btnLogin) btnLogin.style.display = 'none';
+        if (btnLogout) btnLogout.style.display = 'block';
+        if (userPhoto) {
+            userPhoto.src = user.photoURL || '';
+            userPhoto.style.display = 'block';
+            userPhoto.title = user.displayName;
+        }
+
+        // Escucha de listas
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
         onSnapshot(q, (snapshot) => {
+            if (bloqueoSnapshot) return; 
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
+            
             snapshotActual = snapshot;
             listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
             renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
+
+        // Lanzar importación
+        detectarLinkCompartido();
+
+    } else {
+        // No hay sesión
+        if (btnLogin) btnLogin.style.display = 'block';
+        if (btnLogout) btnLogout.style.display = 'none';
+        if (userPhoto) userPhoto.style.display = 'none';
+        renderizarListasUI([]); 
     }
 });
+
 
 // --- 4. FUNCIONES DE RENDERIZADO ---
 function crearTarjetaLista(idLista, data, contenedor) {
@@ -125,33 +155,78 @@ function renderizarLista(lista) {
 
 // --- 5. BUSCADORES Y LIMPIEZA ---
 
-// A. Filtro de Selección de Cantos (Ultra flexible)
+// A. Filtro de Selección de Cantos
 window.filtrarSeleccion = () => {
     const input = document.getElementById('inputBuscadorCantos');
     const btnX = document.getElementById('btnLimpiarCantos');
     if (!input) return;
 
-    // Control visual de la X
     if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
 
-    // Lógica de búsqueda por palabras sueltas
     const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
     
     const filtrados = todosLosCantos.filter(canto => {
         const tituloNormalizado = normalizarTexto(canto.titulo);
-        // Debe cumplir que TODAS las palabras escritas estén en el título
         return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
     });
     
     renderizarLista(filtrados);
 };
 
-// Limpiar buscador de cantos
 window.limpiarBuscadorSeleccion = () => {
     const input = document.getElementById('inputBuscadorCantos');
     if (input) {
         input.value = '';
-        window.filtrarSeleccion(); // Reset lista y oculta X
+        window.filtrarSeleccion();
+        input.focus();
+    }
+};
+
+// B. Filtro de Mis Listados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    renderizarListasUI(filtradas);
+};
+
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas();
+        input.focus();
+    }
+};
+
+
+// B. Filtro de Mis Listados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    renderizarListasUI(filtradas);
+};
+
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas();
         input.focus();
     }
 };
@@ -249,18 +324,24 @@ window.compartirListaLink = (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
     if (!lista) return;
     try {
-        // Codificación segura para no perder caracteres especiales
-        const datos = JSON.stringify({ n: lista.nombre, i: lista.ids_cantos });
-        const d64 = btoa(unescape(encodeURIComponent(datos)));
-        const url = `${window.location.origin}${window.location.pathname}?share=${d64}`;
+        // Reducimos el objeto al mínimo para que la URL sea corta
+        const minData = JSON.stringify([lista.nombre, lista.ids_cantos]);
+        
+        // Codificación segura para acentos y emojis
+        const uint8Array = new TextEncoder().encode(minData);
+        const binString = Array.from(uint8Array, (b) => String.fromCharCode(b)).join("");
+        const d64 = btoa(binString);
+        
+        const url = `${window.location.origin}${window.location.pathname}?sh=${d64}`;
         
         navigator.clipboard.writeText(url).then(() => {
-            alert("¡Enlace de compartido copiado al portapapeles!");
+            alert("¡Enlace copiado! Ahora es más corto y estable.");
         });
     } catch (e) {
-        alert("Error al generar el enlace.");
+        console.error("Error al compartir:", e);
     }
 };
+
 
 window.exportarLista = (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
@@ -281,11 +362,22 @@ window.importarLista = (event) => {
         try {
             const l = JSON.parse(e.target.result);
             l.id = "imp-" + Date.now();
-            l.nombre = "📂 " + l.nombre;
+            
+            // Verificamos si ya tiene el icono para no duplicarlo
+            if (!l.nombre.includes("📂") && !l.nombre.includes("🔗")) {
+                l.nombre = "📂 " + l.nombre;
+            }
+
             let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
             cache.unshift(l);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-            if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { ...l, ultimaActualizacion: serverTimestamp() });
+            
+            if (auth.currentUser) {
+                await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { 
+                    ...l, 
+                    ultimaActualizacion: serverTimestamp() 
+                });
+            }
             location.reload();
         } catch (err) { alert("Archivo no válido."); }
     };
@@ -357,62 +449,99 @@ window.toggleSection = (contentId, wrapperId) => {
     }
 };
 
-// // --- DETECCIÓN DE COMPARTIDO (URL) BLINDADA ---
+
+
+
+
+
+
+// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO Y SOPORTE DE ACENTOS ---
 const detectarLinkCompartido = async () => {
     const params = new URLSearchParams(window.location.search);
-    const share = params.get('share');
+    const share = params.get('sh') || params.get('share');
     
     if (share) {
+        bloqueoSnapshot = true; 
         try {
-            // Decodificamos de forma segura manejando caracteres especiales
-            const jsonString = decodeURIComponent(escape(atob(share)));
-            const datosCanto = JSON.parse(jsonString);
+            const binString = atob(share);
+            const uint8Array = Uint8Array.from(binString, (m) => m.charCodeAt(0));
+            const decoded = new TextDecoder().decode(uint8Array);
+            const data = JSON.parse(decoded);
             
-            // Si no tiene nombre o IDs, el link está corrupto
-            if (!datosCanto.n || !datosCanto.i) return;
+            let nombreLista, idsCantos;
 
-            // Preguntamos al usuario
-            const confirmar = confirm(`¿Quieres importar la lista: "${datosCanto.n}"?`);
-            
-            if (confirmar) {
+            // Detectar formato (Nuevo array vs Objeto viejo)
+            if (Array.isArray(data)) {
+                [nombreLista, idsCantos] = data;
+            } else {
+                nombreLista = data.n || data.nombre;
+                idsCantos = data.i || data.ids_cantos;
+            }
+
+            if (nombreLista && idsCantos) {
+                const idFinal = "imp-" + Date.now();
+                let nombreLimpio = nombreLista.replace(/🔗/g, '').replace(/📂/g, '').trim();
+
                 const nl = { 
-                    id: "sh-" + Date.now(), 
-                    nombre: "🔗 " + datosCanto.n, 
-                    ids_cantos: datosCanto.i, 
+                    id: idFinal, 
+                    nombre: "🔗 " + nombreLimpio, 
+                    ids_cantos: idsCantos, 
                     ultimaActualizacion: new Date().toISOString() 
                 };
 
-                // 1. Guardar en Memoria y LocalStorage primero (Inmediato)
+                // Guardar Local
                 let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
                 cache.unshift(nl);
                 localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
 
-                // 2. Si hay usuario, subimos a Firebase y ESPERAMOS que termine
+                // Guardar Firebase
                 if (auth.currentUser) {
-                    console.log("Subiendo lista compartida a Firebase...");
-                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", nl.id);
-                    await setDoc(docRef, { 
-                        ...nl, 
-                        ultimaActualizacion: serverTimestamp() 
-                    });
-                    console.log("Sincronización completa.");
+                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
+                    await setDoc(docRef, { ...nl, ultimaActualizacion: serverTimestamp() });
                 }
 
-                // 3. Limpiar la URL y RECARGAR para ver los cambios
-                // Usamos window.location.origin + pathname para quitar el ?share=...
-                alert("¡Lista importada con éxito!");
+                // REFRESH
                 window.location.href = window.location.origin + window.location.pathname;
-            } else {
-                // Si cancela, también limpiamos la URL para que no vuelva a preguntar
-                window.history.replaceState({}, document.title, window.location.pathname);
             }
         } catch (e) {
-            console.error("Error al decodificar el link compartido:", e);
-            alert("El enlace de compartido no es válido o está incompleto.");
+            console.error("❌ Error en importación:", e);
+            bloqueoSnapshot = false;
             window.history.replaceState({}, document.title, window.location.pathname);
         }
     }
 };
 
-// Ejecutamos la detección
-detectarLinkCompartido();
+
+
+
+// Activar Login al presionar el icono de perfil
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+        // No hace falta recargar, onAuthStateChanged detectará el cambio y mostrará la foto
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});
+
+// Activar Login
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});
+
+// Activar Logout
+document.getElementById('btn-logout-perfil')?.addEventListener('click', async () => {
+    if (confirm("¿Cerrar sesión?")) {
+        try {
+            await signOut(auth);
+            localStorage.removeItem('cache_listas_personalizadas');
+            window.location.reload();
+        } catch (error) {
+            console.error("Error al salir:", error);
+        }
+    }
+});

@@ -1,9 +1,10 @@
-import { auth, db } from './firebase-auth.js';
+import { auth, db, loginConGoogle } from './firebase-auth.js';
 import { 
     doc, setDoc, serverTimestamp, deleteDoc, 
     collection, query, onSnapshot, orderBy 
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 
 // --- VARIABLES DE ESTADO ---
 let listaOrdenada = [];
@@ -46,15 +47,32 @@ fetch('data/indicecantos.json')
     })
     .catch(err => console.error("Error al cargar JSON:", err));
 
-// --- 3. SINCRONIZACIÓN ONLINE ---
+// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
+// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
 onAuthStateChanged(auth, (user) => {
-    if (user) {
-        const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
-        
-        onSnapshot(q, (snapshot) => {
-            // El escudo protege la UI mientras la importación trabaja
-            if (bloqueoSnapshot) return; 
+    const btnLogin = document.getElementById('btn-login-google');
+    const btnLogout = document.getElementById('btn-logout-perfil');
+    const userPhoto = document.getElementById('user-photo');
 
+    // ✅ LANZAR SIEMPRE AL INICIO (Para invitados y usuarios logueados)
+    detectarLinkCompartido();
+
+    if (user) {
+        console.log("👤 Sesión activa:", user.displayName);
+        
+        // UI de usuario
+        if (btnLogin) btnLogin.style.display = 'none';
+        if (btnLogout) btnLogout.style.display = 'block';
+        if (userPhoto) {
+            userPhoto.src = user.photoURL || '';
+            userPhoto.style.display = 'block';
+            userPhoto.title = user.displayName;
+        }
+
+        // Escucha de listas (Firestore)
+        const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
+        onSnapshot(q, (snapshot) => {
+            if (bloqueoSnapshot) return; 
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
             
             snapshotActual = snapshot;
@@ -63,11 +81,24 @@ onAuthStateChanged(auth, (user) => {
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
 
-        // 🔥 Se ejecuta SOLO cuando Firebase ya sabe quién eres
-        detectarLinkCompartido();
+        // ❌ BORRADO: Ya no llamamos detectarLinkCompartido() aquí dentro
+
+    } else {
+        // No hay sesión
+        if (btnLogin) btnLogin.style.display = 'block';
+        if (btnLogout) btnLogout.style.display = 'none';
+        if (userPhoto) userPhoto.style.display = 'none';
+        
+        // Si no hay sesión, mostramos lo que haya en LocalStorage (importaciones de invitados)
+        const datosLocales = localStorage.getItem('cache_listas_personalizadas');
+        if (datosLocales) {
+            listasLocalesCache = JSON.parse(datosLocales);
+            renderizarListasUI(listasLocalesCache);
+        } else {
+            renderizarListasUI([]); 
+        }
     }
 });
-
 
 // --- 4. FUNCIONES DE RENDERIZADO ---
 function crearTarjetaLista(idLista, data, contenedor) {
@@ -79,15 +110,22 @@ function crearTarjetaLista(idLista, data, contenedor) {
         <div class="tarjeta-lista" onclick="window.toggleDetalleLista('${idLista}')">
             <div class="info-lista"><strong>${data.nombre}</strong><span>${ids.length} cantos</span></div>
             <div class="acciones-lista" onclick="event.stopPropagation()">
-                <button class="btn-icono share" onclick="window.compartirListaLink('${idLista}')" title="Copiar enlace">
+                <button class="btn-icono share-universal" onclick="window.compartirUniversal('${idLista}')" title="Compartir">
+                    <span class="material-symbols-outlined">share</span>
+                </button>
+                
+                <button class="btn-icono link" onclick="window.copiarSoloLink('${idLista}')" title="Copiar enlace">
                     <span class="material-symbols-outlined">link</span>
                 </button>
+
                 <button class="btn-icono export" onclick="window.exportarLista('${idLista}')" title="Descargar archivo">
                     <span class="material-symbols-outlined">download</span>
                 </button>
+
                 <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')">
                     <span class="material-symbols-outlined">edit</span>
                 </button>
+
                 <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')">
                     <span class="material-symbols-outlined">delete</span>
                 </button>
@@ -134,33 +172,78 @@ function renderizarLista(lista) {
 
 // --- 5. BUSCADORES Y LIMPIEZA ---
 
-// A. Filtro de Selección de Cantos (Ultra flexible)
+// A. Filtro de Selección de Cantos
 window.filtrarSeleccion = () => {
     const input = document.getElementById('inputBuscadorCantos');
     const btnX = document.getElementById('btnLimpiarCantos');
     if (!input) return;
 
-    // Control visual de la X
     if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
 
-    // Lógica de búsqueda por palabras sueltas
     const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
     
     const filtrados = todosLosCantos.filter(canto => {
         const tituloNormalizado = normalizarTexto(canto.titulo);
-        // Debe cumplir que TODAS las palabras escritas estén en el título
         return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
     });
     
     renderizarLista(filtrados);
 };
 
-// Limpiar buscador de cantos
 window.limpiarBuscadorSeleccion = () => {
     const input = document.getElementById('inputBuscadorCantos');
     if (input) {
         input.value = '';
-        window.filtrarSeleccion(); // Reset lista y oculta X
+        window.filtrarSeleccion();
+        input.focus();
+    }
+};
+
+// B. Filtro de Mis Listados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    renderizarListasUI(filtradas);
+};
+
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas();
+        input.focus();
+    }
+};
+
+
+// B. Filtro de Mis Listados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    renderizarListasUI(filtradas);
+};
+
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas();
         input.focus();
     }
 };
@@ -254,22 +337,92 @@ window.eliminarLista = async (idLista, nombreLista) => {
 };
 
 // --- 7. SISTEMA DE COMPARTIR ---
-window.compartirListaLink = (idLista) => {
+// --- 7. SISTEMA DE COMPARTIR ---
+
+// FUNCIÓN A: Compartir Universal (Móvil / WhatsApp)
+window.compartirUniversal = async (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
     if (!lista) return;
+
     try {
-        // Codificación segura para no perder caracteres especiales
-        const datos = JSON.stringify({ n: lista.nombre, i: lista.ids_cantos });
-        const d64 = btoa(unescape(encodeURIComponent(datos)));
-        const url = `${window.location.origin}${window.location.pathname}?share=${d64}`;
+        const idCorto = Math.random().toString(36).substring(2, 8);
+        const docRef = doc(db, "listasCompartidas", idCorto);
         
-        navigator.clipboard.writeText(url).then(() => {
-            alert("¡Enlace de compartido copiado al portapapeles!");
+        await setDoc(docRef, {
+            n: lista.nombre,
+            i: lista.ids_cantos,
+            creado: serverTimestamp()
         });
-    } catch (e) {
-        alert("Error al generar el enlace.");
+
+        const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
+        const mensaje = `🎼 Lista: *${lista.nombre}*`;
+
+        if (navigator.share) {
+            // Abre el menú nativo en móviles (WhatsApp, Telegram, etc.)
+            await navigator.share({
+                title: lista.nombre,
+                text: mensaje,
+                url: urlFinal,
+            });
+        } else {
+            // Respaldo para PC: Abre WhatsApp Web
+            const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(mensaje + "\n" + urlFinal)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    } catch (e) { 
+        console.error("Error al compartir universal:", e); 
     }
 };
+
+// FUNCIÓN B: Solo Copiar Link (Icono de cadena)
+window.copiarSoloLink = async (idLista) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista) return;
+
+    try {
+        const idCorto = Math.random().toString(36).substring(2, 8);
+        const docRef = doc(db, "listasCompartidas", idCorto);
+        
+        await setDoc(docRef, {
+            n: lista.nombre,
+            i: lista.ids_cantos,
+            creado: serverTimestamp()
+        });
+
+        const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
+        
+        await navigator.clipboard.writeText(urlFinal);
+        alert("Enlace copiado al portapapeles");
+        
+    } catch (e) { 
+        console.error("Error al copiar link:", e);
+        alert("No se pudo generar el enlace.");
+    }
+};
+
+
+
+// --- FUNCIÓN 2: SOLO COPIAR EL LINK (Icono cadena) ---
+window.copiarSoloLink = async (idLista) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista) return;
+
+    try {
+        const idCorto = Math.random().toString(36).substring(2, 8);
+        await setDoc(doc(db, "listasCompartidas", idCorto), {
+            n: lista.nombre,
+            i: lista.ids_cantos,
+            creado: serverTimestamp()
+        });
+
+        const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
+        await navigator.clipboard.writeText(urlFinal);
+        alert("Enlace copiado al portapapeles");
+    } catch (e) { console.error("Error copy:", e); }
+};
+
+
+
 
 window.exportarLista = (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
@@ -290,11 +443,22 @@ window.importarLista = (event) => {
         try {
             const l = JSON.parse(e.target.result);
             l.id = "imp-" + Date.now();
-            l.nombre = "📂 " + l.nombre;
+            
+            // Verificamos si ya tiene el icono para no duplicarlo
+            if (!l.nombre.includes("📂") && !l.nombre.includes("🔗")) {
+                l.nombre = "📂 " + l.nombre;
+            }
+
             let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
             cache.unshift(l);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-            if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { ...l, ultimaActualizacion: serverTimestamp() });
+            
+            if (auth.currentUser) {
+                await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { 
+                    ...l, 
+                    ultimaActualizacion: serverTimestamp() 
+                });
+            }
             location.reload();
         } catch (err) { alert("Archivo no válido."); }
     };
@@ -372,75 +536,100 @@ window.toggleSection = (contentId, wrapperId) => {
 
 
 
+// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO Y SOPORTE DE ACENTOS ---
+import { getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO ---
 const detectarLinkCompartido = async () => {
     const params = new URLSearchParams(window.location.search);
-    const share = params.get('share');
-    
-    if (share) {
-        bloqueoSnapshot = true; 
-        try {
-            // Decodificación directa
-            const jsonString = decodeURIComponent(atob(share));
-            const datosCanto = JSON.parse(jsonString);
-            
-            if (datosCanto.n && datosCanto.i) {
-                const idFinal = "imp-" + Date.now();
-                const nombreFinal = "🔗 " + datosCanto.n;
+    const idCorto = params.get('v'); 
+    const shareLargo = params.get('sh') || params.get('share'); 
 
+    if (idCorto || shareLargo) {
+        bloqueoSnapshot = true;
+        try {
+            let datosCanto;
+
+            if (idCorto) {
+                // --- MODO CORTO: BUSCAR EN FIREBASE ---
+                const docRef = doc(db, "listasCompartidas", idCorto);
+                const docSnap = await getDoc(docRef);
+                if (docSnap.exists()) {
+                    datosCanto = docSnap.data();
+                } else {
+                    alert("El enlace ha expirado o no existe.");
+                    bloqueoSnapshot = false;
+                    return;
+                }
+            } else {
+                // --- MODO LARGO: DECODIFICAR URL (Soporte legado) ---
+                const binString = atob(shareLargo);
+                const uint8Array = Uint8Array.from(binString, (m) => m.charCodeAt(0));
+                const decoded = new TextDecoder().decode(uint8Array);
+                const data = JSON.parse(decoded);
+                datosCanto = Array.isArray(data) ? { n: data[0], i: data[1] } : data;
+            }
+
+            if (datosCanto && datosCanto.n && datosCanto.i) {
+                const idFinal = "imp-" + Date.now();
+                let nombreLimpio = datosCanto.n.replace(/🔗/g, '').replace(/📂/g, '').trim();
                 const nl = { 
                     id: idFinal, 
-                    nombre: nombreFinal, 
+                    nombre: "🔗 " + nombreLimpio, 
                     ids_cantos: datosCanto.i, 
                     ultimaActualizacion: new Date().toISOString() 
                 };
 
-                // 1. Guardar en LocalStorage (Inmediato)
+                // 1. Guardar local (Para todos, invitados y logueados)
                 let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
                 cache.unshift(nl);
                 localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
 
-                // 2. Guardar en Firebase (Aprovechando el auth activo)
+                // 2. Guardar en la nube (Solo si está logueado)
                 if (auth.currentUser) {
-                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
-                    // AWAIT es clave: espera a la nube antes de refrescar
-                    await setDoc(docRef, { ...nl, ultimaActualizacion: serverTimestamp() });
-                    console.log("✅ Guardado en Firebase:", idFinal);
+                    const userRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
+                    await setDoc(userRef, { ...nl, ultimaActualizacion: serverTimestamp() });
                 }
 
-                // 3. REFRESH OBLIGATORIO
-                // Usamos href para asegurar que la URL se limpie y la página cargue de nuevo
-                console.log("🔄 Ejecutando refresh...");
+                // 3. Limpiar URL y recargar
                 window.location.href = window.location.origin + window.location.pathname;
             }
         } catch (e) {
             console.error("❌ Error en importación:", e);
             bloqueoSnapshot = false;
-            // Si algo falla, al menos quitamos el código de la URL
             window.history.replaceState({}, document.title, window.location.pathname);
         }
     }
 };
+
+
+// Activar Login al presionar el icono de perfil
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+        // No hace falta recargar, onAuthStateChanged detectará el cambio y mostrará la foto
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});
+
+// Activar Login
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});
+
+// Activar Logout
+document.getElementById('btn-logout-perfil')?.addEventListener('click', async () => {
+    if (confirm("¿Cerrar sesión?")) {
+        try {
+            await signOut(auth);
+            localStorage.removeItem('cache_listas_personalizadas');
+            window.location.reload();
+        } catch (error) {
+            console.error("Error al salir:", error);
+        }
+    }
+});

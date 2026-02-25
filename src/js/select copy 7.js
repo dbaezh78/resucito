@@ -1,33 +1,35 @@
-import { auth, db } from './firebase-auth.js';
+import { auth, db, loginConGoogle } from './firebase-auth.js';
 import { 
     doc, setDoc, serverTimestamp, deleteDoc, 
     collection, query, onSnapshot, orderBy 
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 
 // --- VARIABLES DE ESTADO ---
 let listaOrdenada = [];
 let todosLosCantos = [];
 let snapshotActual = null;
 let listasLocalesCache = []; 
+let bloqueoSnapshot = false;
 
-// --- UTILIDAD: NORMALIZADOR DE TEXTO (IGNORA ACENTOS, Ñ, ESPACIOS) ---
+// --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
 const normalizarTexto = (texto) => {
+    if (!texto) return "";
     return texto.toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "") // Quita acentos
-        .replace(/ñ/g, "n")              // Trata la ñ como n
-        .replace(/\s+/g, '')             // Quita TODOS los espacios
+        .replace(/ñ/g, "n")              // ñ -> n
+        .replace(/[^a-z0-9\s]/g, "")     // QUITA comas, puntos, guiones, etc.
         .trim();
 };
 
-// --- 1. MOTOR DE PERSISTENCIA LOCAL (INMEDIATO) ---
+// --- 1. MOTOR DE PERSISTENCIA LOCAL ---
 const cargarDesdeEquipo = () => {
     try {
         const datosLocales = localStorage.getItem('cache_listas_personalizadas');
         if (datosLocales) {
             listasLocalesCache = JSON.parse(datosLocales);
-            console.log("Cargando datos desde el equipo (Offline)...");
             renderizarListasUI(listasLocalesCache);
             snapshotActual = { docs: listasLocalesCache.map(l => ({ id: l.id, data: () => l })) };
         }
@@ -39,22 +41,54 @@ cargarDesdeEquipo();
 // --- 2. CARGA DE BASE DE DATOS (JSON) ---
 fetch('data/indicecantos.json')
     .then(res => res.json())
-    .then(data => { todosLosCantos = data; renderizarLista(todosLosCantos); })
+    .then(data => { 
+        todosLosCantos = data; 
+        renderizarLista(todosLosCantos); 
+    })
     .catch(err => console.error("Error al cargar JSON:", err));
 
-// --- 3. SINCRONIZACIÓN ONLINE ---
+// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
 onAuthStateChanged(auth, (user) => {
+    const btnLogin = document.getElementById('btn-login-google');
+    const btnLogout = document.getElementById('btn-logout-perfil');
+    const userPhoto = document.getElementById('user-photo');
+
     if (user) {
+        console.log("👤 Sesión activa:", user.displayName);
+        
+        // UI de usuario
+        if (btnLogin) btnLogin.style.display = 'none';
+        if (btnLogout) btnLogout.style.display = 'block';
+        if (userPhoto) {
+            userPhoto.src = user.photoURL || '';
+            userPhoto.style.display = 'block';
+            userPhoto.title = user.displayName;
+        }
+
+        // Escucha de listas
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
         onSnapshot(q, (snapshot) => {
+            if (bloqueoSnapshot) return; 
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
+            
             snapshotActual = snapshot;
             listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
             renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
+
+        // Lanzar importación
+        detectarLinkCompartido();
+
+    } else {
+        // No hay sesión
+        if (btnLogin) btnLogin.style.display = 'block';
+        if (btnLogout) btnLogout.style.display = 'none';
+        if (userPhoto) userPhoto.style.display = 'none';
+        renderizarListasUI([]); 
     }
 });
+
 
 // --- 4. FUNCIONES DE RENDERIZADO ---
 function crearTarjetaLista(idLista, data, contenedor) {
@@ -66,11 +100,18 @@ function crearTarjetaLista(idLista, data, contenedor) {
         <div class="tarjeta-lista" onclick="window.toggleDetalleLista('${idLista}')">
             <div class="info-lista"><strong>${data.nombre}</strong><span>${ids.length} cantos</span></div>
             <div class="acciones-lista" onclick="event.stopPropagation()">
-                <button class="btn-ver" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')">
+                <button class="btn-icono share" onclick="window.compartirListaLink('${idLista}')" title="Copiar enlace">
+                    <span class="material-symbols-outlined">link</span>
+                </button>
+                <button class="btn-icono export" onclick="window.exportarLista('${idLista}')" title="Descargar archivo">
+                    <span class="material-symbols-outlined">download</span>
+                </button>
+                <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')">
                     <span class="material-symbols-outlined">edit</span>
                 </button>
-                <span class="material-symbols-outlined icon-delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')">delete</span>
-                <span class="material-symbols-outlined arrow-icon" onclick="window.toggleDetalleLista('${idLista}')">expand_more</span>
+                <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
             </div>
         </div>
         <div id="detalle-${idLista}" class="detalle-lista-cantos cfg-close"></div>
@@ -80,8 +121,15 @@ function crearTarjetaLista(idLista, data, contenedor) {
 
 function renderizarListasUI(listas) {
     const contenedor = document.getElementById('lista-colecciones');
-    if (contenedor) {
-        contenedor.innerHTML = listas.length === 0 ? '<p class="status-msg">No hay listas.</p>' : '';
+    if (!contenedor) return;
+    if (listas.length === 0) {
+        contenedor.innerHTML = `
+            <div class="status-msg-vacia">
+                <p>No hay listas creadas.</p>
+                <a href="javascript:void(0)" onclick="window.irANuevaLista()" class="link-crear-lista">¿Deseas crearla?</a>
+            </div>`;
+    } else {
+        contenedor.innerHTML = '';
         listas.forEach(l => crearTarjetaLista(l.id, l, contenedor));
     }
 }
@@ -90,40 +138,123 @@ function renderizarLista(lista) {
     const contenedor = document.getElementById('contenedor-seleccion');
     if (!contenedor) return;
     contenedor.innerHTML = '';
-
     lista.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'item-canto';
         const isChecked = listaOrdenada.includes(String(canto.id));
-        
-        // El clic en cualquier parte de la fila (incluyendo el switch)
-        // activará esta función una sola vez.
         div.onclick = () => window.toggleCanto(canto.id);
-
         div.innerHTML = `
             <span class="titulo-canto-seleccion">${canto.titulo}</span>
             <label class="switch">
-                <input type="checkbox" data-id="${canto.id}" 
-                       ${isChecked ? 'checked' : ''} 
-                       readonly>
+                <input type="checkbox" data-id="${canto.id}" ${isChecked ? 'checked' : ''} readonly>
                 <span class="slider"></span>
-            </label>
-        `;
+            </label>`;
         contenedor.appendChild(div);
     });
 }
 
-// --- 5. BUSCADORES INTELIGENTES ---
+// --- 5. BUSCADORES Y LIMPIEZA ---
+
+// A. Filtro de Selección de Cantos
 window.filtrarSeleccion = () => {
-    const busquedaLimpia = normalizarTexto(document.getElementById('inputBuscador').value);
-    const filtrados = todosLosCantos.filter(c => normalizarTexto(c.titulo).includes(busquedaLimpia));
+    const input = document.getElementById('inputBuscadorCantos');
+    const btnX = document.getElementById('btnLimpiarCantos');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
+    
+    const filtrados = todosLosCantos.filter(canto => {
+        const tituloNormalizado = normalizarTexto(canto.titulo);
+        return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
+    });
+    
     renderizarLista(filtrados);
 };
 
+window.limpiarBuscadorSeleccion = () => {
+    const input = document.getElementById('inputBuscadorCantos');
+    if (input) {
+        input.value = '';
+        window.filtrarSeleccion();
+        input.focus();
+    }
+};
+
+// B. Filtro de Mis Listados
 window.filtrarMisListas = () => {
-    const busqueda = normalizarTexto(document.getElementById('inputBuscadorListas').value);
-    const filtradas = listasLocalesCache.filter(l => normalizarTexto(l.nombre).includes(busqueda));
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
     renderizarListasUI(filtradas);
+};
+
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas();
+        input.focus();
+    }
+};
+
+
+// B. Filtro de Mis Listados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    renderizarListasUI(filtradas);
+};
+
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas();
+        input.focus();
+    }
+};
+
+// B. Filtro de Mis Listados Guardados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    
+    renderizarListasUI(filtradas);
+};
+
+// Limpiar buscador de mis listas
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas(); // Reset lista y oculta X
+        input.focus();
+    }
 };
 
 // --- 6. LÓGICA DE NEGOCIO ---
@@ -146,11 +277,15 @@ function actualizarInterfazSeleccion() {
                 const tag = document.createElement('div');
                 tag.className = 'canto-tag';
                 tag.innerHTML = `<span>${i + 1}</span> ${canto.titulo}`;
-                tag.onclick = () => window.toggleCanto(id);
+                tag.onclick = (e) => { e.stopPropagation(); window.toggleCanto(id); };
                 cola.appendChild(tag);
             }
         });
     }
+    document.querySelectorAll('.item-canto input[type="checkbox"]').forEach(input => {
+        const idInput = input.getAttribute('data-id');
+        input.checked = listaOrdenada.includes(String(idInput));
+    });
 }
 
 window.guardarListaFirebase = async () => {
@@ -161,26 +296,109 @@ window.guardarListaFirebase = async () => {
     const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
     const nuevaLista = { id: listaId, nombre, ids_cantos: [...listaOrdenada], ultimaActualizacion: new Date().toISOString() };
 
-    // Local
-    const idx = listasLocalesCache.findIndex(l => l.id === listaId);
-    idx !== -1 ? listasLocalesCache[idx] = nuevaLista : listasLocalesCache.unshift(nuevaLista);
-    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
-    renderizarListasUI(listasLocalesCache);
+    let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+    const idx = cache.findIndex(l => l.id === listaId);
+    idx !== -1 ? cache[idx] = nuevaLista : cache.unshift(nuevaLista);
+    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
 
-    // Online
     if (user) {
-        try { await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { ...nuevaLista, ultimaActualizacion: serverTimestamp() }); }
-        catch (e) { console.warn("Offline."); }
+        try { 
+            await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { ...nuevaLista, ultimaActualizacion: serverTimestamp() }); 
+        } catch (e) { console.warn("Offline."); }
     }
+    location.reload(); 
 };
 
 window.eliminarLista = async (idLista, nombreLista) => {
     if (confirm(`¿Eliminar "${nombreLista}"?`)) {
-        listasLocalesCache = listasLocalesCache.filter(l => l.id !== idLista);
-        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
-        renderizarListasUI(listasLocalesCache);
+        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+        cache = cache.filter(l => l.id !== idLista);
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
         if (auth.currentUser) await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
+        location.reload();
     }
+};
+
+// --- 7. SISTEMA DE COMPARTIR ---
+window.compartirListaLink = async (idLista) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista) return;
+
+    try {
+        // 1. Crear un ID corto aleatorio (ej: 4f2a9z)
+        const idCorto = Math.random().toString(36).substring(2, 8);
+        
+        // 2. Guardar los datos en una colección pública para que cualquiera los lea
+        const docRef = doc(db, "listasCompartidas", idCorto);
+        await setDoc(docRef, {
+            n: lista.nombre,
+            i: lista.ids_cantos,
+            creado: serverTimestamp()
+        });
+
+        // 3. Generar la URL corta usando el parámetro 'v'
+        const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
+
+        navigator.clipboard.writeText(urlFinal).then(() => {
+            alert("¡Enlace corto generado con éxito!");
+        });
+    } catch (e) {
+        console.error("Error al generar link corto:", e);
+        alert("Error al conectar con la base de datos.");
+    }
+};
+
+
+
+window.exportarLista = (idLista) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista) return;
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(lista));
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", `Resucito_${lista.nombre.replace(/\s+/g, '_')}.resucito`);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+};
+
+window.importarLista = (event) => {
+    const archivo = event.target.files[0];
+    if (!archivo) return;
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+        try {
+            const l = JSON.parse(e.target.result);
+            l.id = "imp-" + Date.now();
+            
+            // Verificamos si ya tiene el icono para no duplicarlo
+            if (!l.nombre.includes("📂") && !l.nombre.includes("🔗")) {
+                l.nombre = "📂 " + l.nombre;
+            }
+
+            let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+            cache.unshift(l);
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+            
+            if (auth.currentUser) {
+                await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { 
+                    ...l, 
+                    ultimaActualizacion: serverTimestamp() 
+                });
+            }
+            location.reload();
+        } catch (err) { alert("Archivo no válido."); }
+    };
+    reader.readAsText(archivo);
+};
+
+// --- 8. UTILIDADES ---
+window.irANuevaLista = () => {
+    const contentNueva = document.getElementById('content-nueva-lista');
+    if (contentNueva && contentNueva.classList.contains('cfg-close')) {
+        window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => { document.getElementById('nombreLista')?.focus(); }, 500);
 };
 
 window.toggleDetalleLista = (idLista) => {
@@ -190,7 +408,8 @@ window.toggleDetalleLista = (idLista) => {
     document.querySelectorAll('.detalle-lista-cantos').forEach(d => d.classList.add('cfg-close'));
     if (estaCerrado) {
         detalleDiv.classList.remove('cfg-close');
-        const docSnap = snapshotActual.docs.find(d => d.id === idLista);
+        const source = snapshotActual.docs || snapshotActual;
+        const docSnap = source.find(d => d.id === idLista);
         const data = docSnap.data ? docSnap.data() : docSnap;
         detalleDiv.innerHTML = data.ids_cantos.map((id, i) => {
             const c = todosLosCantos.find(can => String(can.id) === String(id));
@@ -204,13 +423,9 @@ window.toggleDetalleLista = (idLista) => {
 window.cargarListaParaEditar = (docId, ids, nombre) => {
     listaOrdenada = [...ids];
     document.getElementById('nombreLista').value = nombre;
-
-    // Verificamos si la sección está cerrada (tiene la clase cfg-close) para abrirla
-    const contentNueva = document.getElementById('content-nueva-lista');
-    if (contentNueva && contentNueva.classList.contains('cfg-close')) {
+    if (document.getElementById('content-nueva-lista').classList.contains('cfg-close')) {
         window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
     }
-
     actualizarInterfazSeleccion();
     renderizarLista(todosLosCantos);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -232,25 +447,117 @@ window.confirmarCerrarVisor = () => {
     document.body.style.overflow = 'auto';
 };
 
-window.limpiarBuscadorSeleccion = () => {
-    const input = document.getElementById('inputBuscador');
-    if (input) { input.value = ''; window.filtrarSeleccion(); input.focus(); }
-};
-
-// --- FUNCION DE DESPLAZAMIENTO GLOBAL ---
 window.toggleSection = (contentId, wrapperId) => {
     const content = document.getElementById(contentId);
     const wrapper = document.getElementById(wrapperId);
-    
     if (content && wrapper) {
-        // Alternamos las clases de CSS
         content.classList.toggle('cfg-close');
         wrapper.classList.toggle('collapsed');
-        
-        // Log para depuración en consola
-        console.log(`Sección ${contentId} alternada.`);
-    } else {
-        console.error("No se encontraron los elementos para desplazar:", contentId, wrapperId);
     }
 };
 
+
+
+
+
+
+
+// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO Y SOPORTE DE ACENTOS ---
+import { getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const detectarLinkCompartido = async () => {
+    const params = new URLSearchParams(window.location.search);
+    const idCorto = params.get('v'); // Buscamos el código corto
+    const shareLargo = params.get('sh') || params.get('share'); // Mantenemos soporte para links largos
+
+    if (idCorto || shareLargo) {
+        bloqueoSnapshot = true;
+        try {
+            let datosCanto;
+
+            if (idCorto) {
+                // --- MODO CORTO: BUSCAR EN FIREBASE ---
+                const docRef = doc(db, "listasCompartidas", idCorto);
+                const docSnap = await getDoc(docRef);
+                
+                if (docSnap.exists()) {
+                    datosCanto = docSnap.data();
+                } else {
+                    alert("El enlace ha expirado o no existe.");
+                    return;
+                }
+            } else {
+                // --- MODO LARGO: DECODIFICAR URL (Soporte legado) ---
+                const binString = atob(shareLargo);
+                const uint8Array = Uint8Array.from(binString, (m) => m.charCodeAt(0));
+                const decoded = new TextDecoder().decode(uint8Array);
+                const data = JSON.parse(decoded);
+                datosCanto = Array.isArray(data) ? { n: data[0], i: data[1] } : data;
+            }
+
+            if (datosCanto && datosCanto.n && datosCanto.i) {
+                const idFinal = "imp-" + Date.now();
+                let nombreLimpio = datosCanto.n.replace(/🔗/g, '').replace(/📂/g, '').trim();
+
+                const nl = { 
+                    id: idFinal, 
+                    nombre: "🔗 " + nombreLimpio, 
+                    ids_cantos: datosCanto.i, 
+                    ultimaActualizacion: new Date().toISOString() 
+                };
+
+                // Guardar local
+                let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+                cache.unshift(nl);
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+
+                // Guardar en el perfil del usuario si está logueado
+                if (auth.currentUser) {
+                    const userRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
+                    await setDoc(userRef, { ...nl, ultimaActualizacion: serverTimestamp() });
+                }
+
+                // Limpiar URL y recargar
+                window.location.href = window.location.origin + window.location.pathname;
+            }
+        } catch (e) {
+            console.error("❌ Error en importación:", e);
+            bloqueoSnapshot = false;
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    }
+};
+
+
+
+// Activar Login al presionar el icono de perfil
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+        // No hace falta recargar, onAuthStateChanged detectará el cambio y mostrará la foto
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});
+
+// Activar Login
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});
+
+// Activar Logout
+document.getElementById('btn-logout-perfil')?.addEventListener('click', async () => {
+    if (confirm("¿Cerrar sesión?")) {
+        try {
+            await signOut(auth);
+            localStorage.removeItem('cache_listas_personalizadas');
+            window.location.reload();
+        } catch (error) {
+            console.error("Error al salir:", error);
+        }
+    }
+});

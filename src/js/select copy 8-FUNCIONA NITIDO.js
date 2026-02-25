@@ -1,25 +1,26 @@
-import { auth, db } from './firebase-auth.js';
+import { auth, db, loginConGoogle } from './firebase-auth.js';
 import { 
     doc, setDoc, serverTimestamp, deleteDoc, 
     collection, query, onSnapshot, orderBy 
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 
 // --- VARIABLES DE ESTADO ---
 let listaOrdenada = [];
 let todosLosCantos = [];
 let snapshotActual = null;
 let listasLocalesCache = []; 
+let bloqueoSnapshot = false;
 
 // --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
-// Quita acentos, comas, puntos, convierte ñ en n y deja solo letras/números
 const normalizarTexto = (texto) => {
     if (!texto) return "";
     return texto.toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "") // Quita acentos
-        .replace(/ñ/g, "n")
-        .replace(/[^a-z0-9\s]/g, "")    // Quita comas, puntos y símbolos
+        .replace(/ñ/g, "n")              // ñ -> n
+        .replace(/[^a-z0-9\s]/g, "")     // QUITA comas, puntos, guiones, etc.
         .trim();
 };
 
@@ -46,17 +47,56 @@ fetch('data/indicecantos.json')
     })
     .catch(err => console.error("Error al cargar JSON:", err));
 
-// --- 3. SINCRONIZACIÓN ONLINE ---
+// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
+// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
 onAuthStateChanged(auth, (user) => {
+    const btnLogin = document.getElementById('btn-login-google');
+    const btnLogout = document.getElementById('btn-logout-perfil');
+    const userPhoto = document.getElementById('user-photo');
+
+    // ✅ LANZAR SIEMPRE AL INICIO (Para invitados y usuarios logueados)
+    detectarLinkCompartido();
+
     if (user) {
+        console.log("👤 Sesión activa:", user.displayName);
+        
+        // UI de usuario
+        if (btnLogin) btnLogin.style.display = 'none';
+        if (btnLogout) btnLogout.style.display = 'block';
+        if (userPhoto) {
+            userPhoto.src = user.photoURL || '';
+            userPhoto.style.display = 'block';
+            userPhoto.title = user.displayName;
+        }
+
+        // Escucha de listas (Firestore)
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
         onSnapshot(q, (snapshot) => {
+            if (bloqueoSnapshot) return; 
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
+            
             snapshotActual = snapshot;
             listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
             renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         });
+
+        // ❌ BORRADO: Ya no llamamos detectarLinkCompartido() aquí dentro
+
+    } else {
+        // No hay sesión
+        if (btnLogin) btnLogin.style.display = 'block';
+        if (btnLogout) btnLogout.style.display = 'none';
+        if (userPhoto) userPhoto.style.display = 'none';
+        
+        // Si no hay sesión, mostramos lo que haya en LocalStorage (importaciones de invitados)
+        const datosLocales = localStorage.getItem('cache_listas_personalizadas');
+        if (datosLocales) {
+            listasLocalesCache = JSON.parse(datosLocales);
+            renderizarListasUI(listasLocalesCache);
+        } else {
+            renderizarListasUI([]); 
+        }
     }
 });
 
@@ -123,27 +163,108 @@ function renderizarLista(lista) {
     });
 }
 
-// --- 5. BUSCADORES (MORTALES Y FLEXIBLES) ---
+// --- 5. BUSCADORES Y LIMPIEZA ---
 
-// Buscador de Cantos: Busca por palabras sueltas e ignora todo error ortográfico
+// A. Filtro de Selección de Cantos
 window.filtrarSeleccion = () => {
-    const textoUsuario = document.getElementById('inputBuscador').value;
-    // Dividimos la búsqueda en palabras individuales y normalizamos cada una
-    const palabrasBusqueda = normalizarTexto(textoUsuario).split(/\s+/).filter(p => p.length > 0);
+    const input = document.getElementById('inputBuscadorCantos');
+    const btnX = document.getElementById('btnLimpiarCantos');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
     
     const filtrados = todosLosCantos.filter(canto => {
         const tituloNormalizado = normalizarTexto(canto.titulo);
-        // El canto debe contener TODAS las palabras que el usuario escribió
         return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
     });
     
     renderizarLista(filtrados);
 };
 
+window.limpiarBuscadorSeleccion = () => {
+    const input = document.getElementById('inputBuscadorCantos');
+    if (input) {
+        input.value = '';
+        window.filtrarSeleccion();
+        input.focus();
+    }
+};
+
+// B. Filtro de Mis Listados
 window.filtrarMisListas = () => {
-    const busqueda = normalizarTexto(document.getElementById('inputBuscadorListas').value);
-    const filtradas = listasLocalesCache.filter(l => normalizarTexto(l.nombre).includes(busqueda));
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
     renderizarListasUI(filtradas);
+};
+
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas();
+        input.focus();
+    }
+};
+
+
+// B. Filtro de Mis Listados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    renderizarListasUI(filtradas);
+};
+
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas();
+        input.focus();
+    }
+};
+
+// B. Filtro de Mis Listados Guardados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    
+    renderizarListasUI(filtradas);
+};
+
+// Limpiar buscador de mis listas
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas(); // Reset lista y oculta X
+        input.focus();
+    }
 };
 
 // --- 6. LÓGICA DE NEGOCIO ---
@@ -209,15 +330,35 @@ window.eliminarLista = async (idLista, nombreLista) => {
 };
 
 // --- 7. SISTEMA DE COMPARTIR ---
-window.compartirListaLink = (idLista) => {
+window.compartirListaLink = async (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
     if (!lista) return;
+
     try {
-        const datosBase64 = btoa(unescape(encodeURIComponent(JSON.stringify({ n: lista.nombre, i: lista.ids_cantos }))));
-        const urlCompartir = `${window.location.origin}${window.location.pathname}?share=${datosBase64}`;
-        navigator.clipboard.writeText(urlCompartir).then(() => alert("¡Enlace copiado!"));
-    } catch (e) { alert("Error al generar enlace."); }
+        // 1. Crear un ID corto aleatorio (ej: 4f2a9z)
+        const idCorto = Math.random().toString(36).substring(2, 8);
+        
+        // 2. Guardar los datos en una colección pública para que cualquiera los lea
+        const docRef = doc(db, "listasCompartidas", idCorto);
+        await setDoc(docRef, {
+            n: lista.nombre,
+            i: lista.ids_cantos,
+            creado: serverTimestamp()
+        });
+
+        // 3. Generar la URL corta usando el parámetro 'v'
+        const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
+
+        navigator.clipboard.writeText(urlFinal).then(() => {
+            alert("¡Enlace para compartir copiado!");
+        });
+    } catch (e) {
+        console.error("Error al generar link corto:", e);
+        alert("Error al conectar con la base de datos.");
+    }
 };
+
+
 
 window.exportarLista = (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
@@ -238,11 +379,22 @@ window.importarLista = (event) => {
         try {
             const l = JSON.parse(e.target.result);
             l.id = "imp-" + Date.now();
-            l.nombre = "📂 " + l.nombre;
+            
+            // Verificamos si ya tiene el icono para no duplicarlo
+            if (!l.nombre.includes("📂") && !l.nombre.includes("🔗")) {
+                l.nombre = "📂 " + l.nombre;
+            }
+
             let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
             cache.unshift(l);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-            if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { ...l, ultimaActualizacion: serverTimestamp() });
+            
+            if (auth.currentUser) {
+                await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { 
+                    ...l, 
+                    ultimaActualizacion: serverTimestamp() 
+                });
+            }
             location.reload();
         } catch (err) { alert("Archivo no válido."); }
     };
@@ -305,11 +457,6 @@ window.confirmarCerrarVisor = () => {
     document.body.style.overflow = 'auto';
 };
 
-window.limpiarBuscadorSeleccion = () => {
-    const input = document.getElementById('inputBuscador');
-    if (input) { input.value = ''; window.filtrarSeleccion(); input.focus(); }
-};
-
 window.toggleSection = (contentId, wrapperId) => {
     const content = document.getElementById(contentId);
     const wrapper = document.getElementById(wrapperId);
@@ -319,21 +466,106 @@ window.toggleSection = (contentId, wrapperId) => {
     }
 };
 
-// Detección de compartido al arrancar
-(async () => {
+
+
+
+
+
+
+// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO Y SOPORTE DE ACENTOS ---
+import { getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const detectarLinkCompartido = async () => {
     const params = new URLSearchParams(window.location.search);
-    const share = params.get('share');
-    if (share) {
+    const idCorto = params.get('v'); 
+    const shareLargo = params.get('sh') || params.get('share'); 
+
+    if (idCorto || shareLargo) {
+        bloqueoSnapshot = true;
         try {
-            const d = JSON.parse(decodeURIComponent(escape(atob(share))));
-            if (confirm(`¿Importar lista compartida: "${d.n}"?`)) {
-                const nl = { id: "sh-" + Date.now(), nombre: "🔗 " + d.n, ids_cantos: d.i, ultimaActualizacion: new Date().toISOString() };
+            let datosCanto;
+
+            if (idCorto) {
+                // --- MODO CORTO: BUSCAR EN FIREBASE ---
+                const docRef = doc(db, "listasCompartidas", idCorto);
+                const docSnap = await getDoc(docRef);
+                if (docSnap.exists()) {
+                    datosCanto = docSnap.data();
+                } else {
+                    alert("El enlace ha expirado o no existe.");
+                    bloqueoSnapshot = false;
+                    return;
+                }
+            } else {
+                // --- MODO LARGO: DECODIFICAR URL (Soporte legado) ---
+                const binString = atob(shareLargo);
+                const uint8Array = Uint8Array.from(binString, (m) => m.charCodeAt(0));
+                const decoded = new TextDecoder().decode(uint8Array);
+                const data = JSON.parse(decoded);
+                datosCanto = Array.isArray(data) ? { n: data[0], i: data[1] } : data;
+            }
+
+            if (datosCanto && datosCanto.n && datosCanto.i) {
+                const idFinal = "imp-" + Date.now();
+                let nombreLimpio = datosCanto.n.replace(/🔗/g, '').replace(/📂/g, '').trim();
+                const nl = { 
+                    id: idFinal, 
+                    nombre: "🔗 " + nombreLimpio, 
+                    ids_cantos: datosCanto.i, 
+                    ultimaActualizacion: new Date().toISOString() 
+                };
+
+                // 1. Guardar local (Para todos, invitados y logueados)
                 let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
                 cache.unshift(nl);
                 localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-                if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", nl.id), { ...nl, ultimaActualizacion: serverTimestamp() });
-                window.location.href = window.location.pathname; 
+
+                // 2. Guardar en la nube (Solo si está logueado)
+                if (auth.currentUser) {
+                    const userRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
+                    await setDoc(userRef, { ...nl, ultimaActualizacion: serverTimestamp() });
+                }
+
+                // 3. Limpiar URL y recargar
+                window.location.href = window.location.origin + window.location.pathname;
             }
-        } catch (e) { console.error("Error link"); }
+        } catch (e) {
+            console.error("❌ Error en importación:", e);
+            bloqueoSnapshot = false;
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
     }
-})();
+};
+
+
+// Activar Login al presionar el icono de perfil
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+        // No hace falta recargar, onAuthStateChanged detectará el cambio y mostrará la foto
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});
+
+// Activar Login
+document.getElementById('btn-login-google')?.addEventListener('click', async () => {
+    try {
+        await loginConGoogle();
+    } catch (err) {
+        console.error("Fallo en el login:", err);
+    }
+});
+
+// Activar Logout
+document.getElementById('btn-logout-perfil')?.addEventListener('click', async () => {
+    if (confirm("¿Cerrar sesión?")) {
+        try {
+            await signOut(auth);
+            localStorage.removeItem('cache_listas_personalizadas');
+            window.location.reload();
+        } catch (error) {
+            console.error("Error al salir:", error);
+        }
+    }
+});

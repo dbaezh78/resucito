@@ -1,234 +1,447 @@
-import { auth, db } from './firebase-auth.js';
-import { doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { auth, db, loginConGoogle } from './firebase-auth.js';
+import { 
+    doc, setDoc, serverTimestamp, deleteDoc, 
+    collection, query, onSnapshot, orderBy 
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 
 // --- VARIABLES DE ESTADO ---
-let listaOrdenada = []; // Usamos solo esta para mantener el orden
+let listaOrdenada = [];
 let todosLosCantos = [];
+let snapshotActual = null;
+let listasLocalesCache = []; 
+let bloqueoSnapshot = false;
 
-// 1. CARGA DE DATOS
-fetch('data/indicecantos.json') // Asegúrate de que la ruta sea correcta
-    .then(res => {
-        if (!res.ok) throw new Error("No se pudo cargar el archivo de cantos");
-        return res.json();
-    })
-    .then(data => {
-        todosLosCantos = data;
-        console.log("Cantos cargados correctamente:", todosLosCantos.length);
-        renderizarLista(todosLosCantos);
-    })
-    .catch(err => {
-        console.error("Error al cargar JSON:", err);
-        const cont = document.getElementById('contenedor-seleccion');
-        if (cont) cont.innerHTML = '<p class="status-msg">Error al cargar la base de datos.</p>';
-    });
+// --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
+const normalizarTexto = (texto) => {
+    if (!texto) return "";
+    return texto.toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // Quita acentos
+        .replace(/ñ/g, "n")              // ñ -> n
+        .replace(/[^a-z0-9\s]/g, "")     // QUITA comas, puntos, guiones, etc.
+        .trim();
+};
 
-// FUNCIÓN PARA RENDERIZAR LA LISTA
+// --- 1. MOTOR DE PERSISTENCIA LOCAL ---
+const cargarDesdeEquipo = () => {
+    try {
+        const datosLocales = localStorage.getItem('cache_listas_personalizadas');
+        if (datosLocales) {
+            listasLocalesCache = JSON.parse(datosLocales);
+            renderizarListasUI(listasLocalesCache);
+            snapshotActual = { docs: listasLocalesCache.map(l => ({ id: l.id, data: () => l })) };
+        }
+    } catch (e) { console.error("Error en caché local:", e); }
+};
+
+cargarDesdeEquipo();
+
+// --- 2. CARGA DE BASE DE DATOS (JSON) ---
+fetch('data/indicecantos.json')
+    .then(res => res.json())
+    .then(data => { 
+        todosLosCantos = data; 
+        renderizarLista(todosLosCantos); 
+    })
+    .catch(err => console.error("Error al cargar JSON:", err));
+
+// --- 3. SINCRONIZACIÓN ONLINE ---
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
+        
+        onSnapshot(q, (snapshot) => {
+            // El escudo protege la UI mientras la importación trabaja
+            if (bloqueoSnapshot) return; 
+
+            if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
+            
+            snapshotActual = snapshot;
+            listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            renderizarListasUI(listasLocalesCache);
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+        });
+
+        // 🔥 Se ejecuta SOLO cuando Firebase ya sabe quién eres
+        detectarLinkCompartido();
+    }
+});
+
+
+// --- 4. FUNCIONES DE RENDERIZADO ---
+function crearTarjetaLista(idLista, data, contenedor) {
+    const ids = data.ids_cantos || [];
+    const nombreEscapado = data.nombre.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+    const div = document.createElement('div');
+    div.className = 'tarjeta-lista-wrapper';
+    div.innerHTML = `
+        <div class="tarjeta-lista" onclick="window.toggleDetalleLista('${idLista}')">
+            <div class="info-lista"><strong>${data.nombre}</strong><span>${ids.length} cantos</span></div>
+            <div class="acciones-lista" onclick="event.stopPropagation()">
+                <button class="btn-icono share" onclick="window.compartirListaLink('${idLista}')" title="Copiar enlace">
+                    <span class="material-symbols-outlined">link</span>
+                </button>
+                <button class="btn-icono export" onclick="window.exportarLista('${idLista}')" title="Descargar archivo">
+                    <span class="material-symbols-outlined">download</span>
+                </button>
+                <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')">
+                    <span class="material-symbols-outlined">edit</span>
+                </button>
+                <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
+            </div>
+        </div>
+        <div id="detalle-${idLista}" class="detalle-lista-cantos cfg-close"></div>
+    `;
+    contenedor.appendChild(div);
+}
+
+function renderizarListasUI(listas) {
+    const contenedor = document.getElementById('lista-colecciones');
+    if (!contenedor) return;
+    if (listas.length === 0) {
+        contenedor.innerHTML = `
+            <div class="status-msg-vacia">
+                <p>No hay listas creadas.</p>
+                <a href="javascript:void(0)" onclick="window.irANuevaLista()" class="link-crear-lista">¿Deseas crearla?</a>
+            </div>`;
+    } else {
+        contenedor.innerHTML = '';
+        listas.forEach(l => crearTarjetaLista(l.id, l, contenedor));
+    }
+}
+
 function renderizarLista(lista) {
     const contenedor = document.getElementById('contenedor-seleccion');
     if (!contenedor) return;
     contenedor.innerHTML = '';
-
-    if (lista.length === 0) {
-        contenedor.innerHTML = '<p class="status-msg">No se encontraron cantos.</p>';
-        return;
-    }
-
     lista.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'item-canto';
-        // Agregamos data-id para que la sincronización visual funcione
+        const isChecked = listaOrdenada.includes(String(canto.id));
+        div.onclick = () => window.toggleCanto(canto.id);
         div.innerHTML = `
-            <span>${canto.titulo}</span>
+            <span class="titulo-canto-seleccion">${canto.titulo}</span>
             <label class="switch">
-                <input type="checkbox" data-id="${canto.id}" onchange="window.toggleCanto('${canto.id}')" 
-                       ${listaOrdenada.includes(String(canto.id)) ? 'checked' : ''}>
+                <input type="checkbox" data-id="${canto.id}" ${isChecked ? 'checked' : ''} readonly>
                 <span class="slider"></span>
-            </label>
-        `;
+            </label>`;
         contenedor.appendChild(div);
     });
 }
 
-// FUNCIÓN 1: CONTROL DE SELECCIÓN, NUMERACIÓN Y FOCO
-window.toggleCanto = (id) => {
-    const stringId = String(id);
-    const index = listaOrdenada.indexOf(stringId);
+// --- 5. BUSCADORES Y LIMPIEZA ---
 
-    if (index !== -1) {
-        // Si el canto ya estaba seleccionado, lo quitamos
-        listaOrdenada.splice(index, 1);
-    } else {
-        // Si es nuevo, lo añadimos al final
-        listaOrdenada.push(stringId);
-    }
+// A. Filtro de Selección de Cantos (Ultra flexible)
+window.filtrarSeleccion = () => {
+    const input = document.getElementById('inputBuscadorCantos');
+    const btnX = document.getElementById('btnLimpiarCantos');
+    if (!input) return;
 
-    // Actualizamos toda la interfaz visual (Cola y Checks)
-    actualizarInterfazSeleccion();
+    // Control visual de la X
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    // Lógica de búsqueda por palabras sueltas
+    const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
     
-    // FOCO Y LIMPIEZA
-    const buscador = document.getElementById('inputBuscador');
-    if (buscador) {
-        buscador.value = ""; 
-        buscador.focus();
-        const btnX = document.getElementById('btnLimpiar');
-        if(btnX) btnX.style.display = "none";
-        
-        // Volvemos a mostrar la lista completa tras seleccionar
-        renderizarLista(todosLosCantos); 
+    const filtrados = todosLosCantos.filter(canto => {
+        const tituloNormalizado = normalizarTexto(canto.titulo);
+        // Debe cumplir que TODAS las palabras escritas estén en el título
+        return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
+    });
+    
+    renderizarLista(filtrados);
+};
+
+// Limpiar buscador de cantos
+window.limpiarBuscadorSeleccion = () => {
+    const input = document.getElementById('inputBuscadorCantos');
+    if (input) {
+        input.value = '';
+        window.filtrarSeleccion(); // Reset lista y oculta X
+        input.focus();
     }
 };
 
-// FUNCIÓN 2: RENDERIZADO DE BURBUJAS (COLA VISUAL)
+// B. Filtro de Mis Listados Guardados
+window.filtrarMisListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    const btnX = document.getElementById('btnLimpiarListas');
+    if (!input) return;
+
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+
+    const busqueda = normalizarTexto(input.value);
+    const filtradas = listasLocalesCache.filter(l => 
+        normalizarTexto(l.nombre).includes(busqueda)
+    );
+    
+    renderizarListasUI(filtradas);
+};
+
+// Limpiar buscador de mis listas
+window.limpiarBuscadorListas = () => {
+    const input = document.getElementById('inputBuscadorListas');
+    if (input) {
+        input.value = '';
+        window.filtrarMisListas(); // Reset lista y oculta X
+        input.focus();
+    }
+};
+
+// --- 6. LÓGICA DE NEGOCIO ---
+window.toggleCanto = (id) => {
+    const stringId = String(id);
+    const index = listaOrdenada.indexOf(stringId);
+    index !== -1 ? listaOrdenada.splice(index, 1) : listaOrdenada.push(stringId);
+    actualizarInterfazSeleccion();
+};
+
 function actualizarInterfazSeleccion() {
-    // 1. Actualizar contador
     const contador = document.getElementById('contador-seleccion');
     if (contador) contador.innerText = listaOrdenada.length;
-
-    // 2. Crear las burbujas numeradas
     const cola = document.getElementById('cola-seleccion');
     if (cola) {
-        cola.innerHTML = ''; 
-
+        cola.innerHTML = '';
         listaOrdenada.forEach((id, i) => {
             const canto = todosLosCantos.find(c => String(c.id) === id);
             if (canto) {
                 const tag = document.createElement('div');
                 tag.className = 'canto-tag';
                 tag.innerHTML = `<span>${i + 1}</span> ${canto.titulo}`;
-                tag.onclick = () => window.toggleCanto(id);
+                tag.onclick = (e) => { e.stopPropagation(); window.toggleCanto(id); };
                 cola.appendChild(tag);
             }
         });
     }
-
-    // 3. Sincronizar los checks de la lista que está en pantalla
-    const inputs = document.querySelectorAll('.item-canto input');
-    inputs.forEach(input => {
+    document.querySelectorAll('.item-canto input[type="checkbox"]').forEach(input => {
         const idInput = input.getAttribute('data-id');
         input.checked = listaOrdenada.includes(String(idInput));
     });
 }
 
-// BUSCADOR Y LIMPIEZA
-window.filtrarSeleccion = () => {
-    const busqueda = document.getElementById('inputBuscador').value.toLowerCase();
-    const btnLimpiar = document.getElementById('btnLimpiar');
-    
-    if(btnLimpiar) btnLimpiar.style.display = busqueda.length > 0 ? 'block' : 'none';
-    
-    const filtrados = todosLosCantos.filter(canto => 
-        canto.titulo.toLowerCase().includes(busqueda)
-    );
-    renderizarLista(filtrados);
-};
-
-window.limpiarBuscadorSeleccion = () => {
-    const input = document.getElementById('inputBuscador');
-    if (input) {
-        input.value = '';
-        window.filtrarSeleccion();
-        input.focus();
-    }
-};
-
-// GUARDAR EN FIREBASE
 window.guardarListaFirebase = async () => {
     const nombre = document.getElementById('nombreLista').value.trim();
     const user = auth.currentUser;
+    if (!nombre || listaOrdenada.length === 0) return alert("Faltan datos.");
 
-    if (!user) return alert("Inicia sesión para guardar listas.");
-    if (!nombre) return alert("Por favor, ponle un nombre a tu lista.");
-    if (listaOrdenada.length === 0) return alert("Selecciona al menos un canto.");
+    const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
+    const nuevaLista = { id: listaId, nombre, ids_cantos: [...listaOrdenada], ultimaActualizacion: new Date().toISOString() };
 
-    try {
-        const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
-        const docRef = doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId);
-        
-        await setDoc(docRef, {
-            nombre: nombre,
-            ids_cantos: listaOrdenada, // Guardamos el array ordenado directamente
-            ultimaActualizacion: serverTimestamp()
-        });
+    let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+    const idx = cache.findIndex(l => l.id === listaId);
+    idx !== -1 ? cache[idx] = nuevaLista : cache.unshift(nuevaLista);
+    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
 
-        alert(`¡Lista "${nombre}" guardada correctamente!`);
-        window.location.href = '/perfil.html';
-    } catch (e) {
-        console.error("Error al guardar:", e);
-        alert("Error al sincronizar con Firebase.");
+    if (user) {
+        try { 
+            await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { ...nuevaLista, ultimaActualizacion: serverTimestamp() }); 
+        } catch (e) { console.warn("Offline."); }
+    }
+    location.reload(); 
+};
+
+window.eliminarLista = async (idLista, nombreLista) => {
+    if (confirm(`¿Eliminar "${nombreLista}"?`)) {
+        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+        cache = cache.filter(l => l.id !== idLista);
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+        if (auth.currentUser) await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
+        location.reload();
     }
 };
 
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import { collection, query, onSnapshot, orderBy } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-
-// FUNCIÓN 3: CARGAR LISTADOS DESDE FIREBASE
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        const q = query(
-            collection(db, "usuarios", user.uid, "listasPersonalizadas"),
-            orderBy("ultimaActualizacion", "desc")
-        );
-
-        onSnapshot(q, (snapshot) => {
-            const contenedor = document.getElementById('lista-colecciones');
-            if (!contenedor) return;
-            contenedor.innerHTML = '';
-
-            if (snapshot.empty) {
-                contenedor.innerHTML = '<p class="status-msg">Aún no tienes listas creadas.</p>';
-                return;
-            }
-
-                        snapshot.forEach((doc) => {
-                const data = doc.data();
-                const idPrimerCanto = data.ids_cantos && data.ids_cantos.length > 0 ? data.ids_cantos[0] : null;
-                
-                const div = document.createElement('div');
-                div.className = 'tarjeta-lista';
-                div.innerHTML = `
-                    <div class="info-lista">
-                        <strong>${data.nombre}</strong>
-                        <span>${data.ids_cantos.length} cantos</span>
-                    </div>
-                    <div class="acciones-lista">
-                        ${idPrimerCanto ? `
-                            <button class="btn-ir" onclick="irAlPrimerCanto('${idPrimerCanto}')" title="Ver primer canto">
-                                <span class="material-symbols-outlined">play_circle</span>
-                            </button>` : ''}
-                        <button class="btn-ver" onclick="cargarListaParaEditar('${doc.id}', ${JSON.stringify(data.ids_cantos).replace(/"/g, '&quot;')}, '${data.nombre}')" title="Editar lista">
-                            <span class="material-symbols-outlined">edit</span>
-                        </button>
-                    </div>
-                `;
-                contenedor.appendChild(div);
-            });
+// --- 7. SISTEMA DE COMPARTIR ---
+window.compartirListaLink = (idLista) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista) return;
+    try {
+        // Codificación segura para no perder caracteres especiales
+        const datos = JSON.stringify({ n: lista.nombre, i: lista.ids_cantos });
+        const d64 = btoa(unescape(encodeURIComponent(datos)));
+        const url = `${window.location.origin}${window.location.pathname}?share=${d64}`;
+        
+        navigator.clipboard.writeText(url).then(() => {
+            alert("¡Enlace de compartido copiado al portapapeles!");
         });
+    } catch (e) {
+        alert("Error al generar el enlace.");
     }
-});
+};
 
-// FUNCIÓN 4: Cargar datos en la sección superior para editar
+window.exportarLista = (idLista) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista) return;
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(lista));
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", `Resucito_${lista.nombre.replace(/\s+/g, '_')}.resucito`);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+};
+
+window.importarLista = (event) => {
+    const archivo = event.target.files[0];
+    if (!archivo) return;
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+        try {
+            const l = JSON.parse(e.target.result);
+            l.id = "imp-" + Date.now();
+            l.nombre = "📂 " + l.nombre;
+            let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+            cache.unshift(l);
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+            if (auth.currentUser) await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { ...l, ultimaActualizacion: serverTimestamp() });
+            location.reload();
+        } catch (err) { alert("Archivo no válido."); }
+    };
+    reader.readAsText(archivo);
+};
+
+// --- 8. UTILIDADES ---
+window.irANuevaLista = () => {
+    const contentNueva = document.getElementById('content-nueva-lista');
+    if (contentNueva && contentNueva.classList.contains('cfg-close')) {
+        window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => { document.getElementById('nombreLista')?.focus(); }, 500);
+};
+
+window.toggleDetalleLista = (idLista) => {
+    const detalleDiv = document.getElementById(`detalle-${idLista}`);
+    if (!detalleDiv || !snapshotActual) return;
+    const estaCerrado = detalleDiv.classList.contains('cfg-close');
+    document.querySelectorAll('.detalle-lista-cantos').forEach(d => d.classList.add('cfg-close'));
+    if (estaCerrado) {
+        detalleDiv.classList.remove('cfg-close');
+        const source = snapshotActual.docs || snapshotActual;
+        const docSnap = source.find(d => d.id === idLista);
+        const data = docSnap.data ? docSnap.data() : docSnap;
+        detalleDiv.innerHTML = data.ids_cantos.map((id, i) => {
+            const c = todosLosCantos.find(can => String(can.id) === String(id));
+            return `<div class="sub-item-canto" onclick="window.abrirVisorCanto('${id}')">
+                <span class="num">${i + 1}</span><span>${c ? c.titulo : id}</span>
+            </div>`;
+        }).join('');
+    }
+};
+
 window.cargarListaParaEditar = (docId, ids, nombre) => {
-    // 1. Llenamos los datos
     listaOrdenada = [...ids];
     document.getElementById('nombreLista').value = nombre;
-    
-    // 2. Cerramos la sección de listados y abrimos la de nueva lista (edición)
-    toggleSection('content-mis-listas', 'wrapper-mis-listas');
-    if(document.getElementById('content-nueva-lista').classList.contains('cfg-close')) {
-        toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
+    if (document.getElementById('content-nueva-lista').classList.contains('cfg-close')) {
+        window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
     }
-    
-    // 3. Refrescamos la interfaz superior
     actualizarInterfazSeleccion();
-    renderizarLista(todosLosCantos); // Para que los checks se marquen
-    
-    // 4. Scroll suave hacia arriba
+    renderizarLista(todosLosCantos);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-// NUEVA FUNCIÓN: Ir al primer canto
-window.irAlPrimerCanto = (id) => {
-    // Aquí puedes redirigir a tu visualizador de cantos
-    // Ejemplo: window.location.href = `visor.html?id=${id}`;
-    alert("Navegando al primer canto: " + id);
+window.abrirVisorCanto = (idCanto) => {
+    const modal = document.getElementById('modalVisorCanto');
+    const contenido = document.getElementById('contenidoCantoVisor');
+    if (!modal || !contenido) return;
+    modal.classList.remove('cfg-close');
+    document.body.style.overflow = 'hidden';
+    contenido.innerHTML = `<iframe src="./index.html?canto=${idCanto}" style="width:100%; height:100%; border:none; background: white;"></iframe>`;
+};
+
+window.confirmarCerrarVisor = () => {
+    const modal = document.getElementById('modalVisorCanto');
+    if (modal) modal.classList.add('cfg-close');
+    document.getElementById('contenidoCantoVisor').innerHTML = '';
+    document.body.style.overflow = 'auto';
+};
+
+window.toggleSection = (contentId, wrapperId) => {
+    const content = document.getElementById(contentId);
+    const wrapper = document.getElementById(wrapperId);
+    if (content && wrapper) {
+        content.classList.toggle('cfg-close');
+        wrapper.classList.toggle('collapsed');
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO ---
+const detectarLinkCompartido = async () => {
+    const params = new URLSearchParams(window.location.search);
+    const share = params.get('share');
+    
+    if (share) {
+        bloqueoSnapshot = true; 
+        try {
+            // Decodificación directa
+            const jsonString = decodeURIComponent(atob(share));
+            const datosCanto = JSON.parse(jsonString);
+            
+            if (datosCanto.n && datosCanto.i) {
+                const idFinal = "imp-" + Date.now();
+                const nombreFinal = "🔗 " + datosCanto.n;
+
+                const nl = { 
+                    id: idFinal, 
+                    nombre: nombreFinal, 
+                    ids_cantos: datosCanto.i, 
+                    ultimaActualizacion: new Date().toISOString() 
+                };
+
+                // 1. Guardar en LocalStorage (Inmediato)
+                let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+                cache.unshift(nl);
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+
+                // 2. Guardar en Firebase (Aprovechando el auth activo)
+                if (auth.currentUser) {
+                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
+                    // AWAIT es clave: espera a la nube antes de refrescar
+                    await setDoc(docRef, { ...nl, ultimaActualizacion: serverTimestamp() });
+                    console.log("✅ Guardado en Firebase:", idFinal);
+                }
+
+                // 3. REFRESH OBLIGATORIO
+                // Usamos href para asegurar que la URL se limpie y la página cargue de nuevo
+                console.log("🔄 Ejecutando refresh...");
+                window.location.href = window.location.origin + window.location.pathname;
+            }
+        } catch (e) {
+            console.error("❌ Error en importación:", e);
+            bloqueoSnapshot = false;
+            // Si algo falla, al menos quitamos el código de la URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    }
 };

@@ -17,18 +17,30 @@
                     <h1 style="margin: 0;">Gestión de Listas</h1>
                 </div>
 
-                <div class="nav-icons" id="auth-status-container" style="display: flex; align-items: center; gap: 15px;">
-    <a href="/" 
-       id="boton-home"
-       class="material-symbols-outlined icon-button" 
-       style="text-decoration: none; cursor: pointer; color: #bc0009; font-size: 28px;">
-       home
-    </a>
+            <div class="nav-icons" id="auth-status-container" style="display: flex; align-items: center; gap: 15px;">
+                <button id="btn-login-google" class="material-symbols-outlined icon-button" 
+                    style="background:none; border:none; cursor:pointer; color: #bc0009; font-size: 28px;">
+                    account_circle
+                </button>
 
-                    <button id="btn-logout-perfil" 
-                            class="material-symbols-outlined icon-button" 
-                            style="display:none; background:none; border:none; cursor:pointer; color: #bc0009; font-size: 28px;">logout</button>
-                </div>
+                <img id="user-photo" src="" alt="Perfil" 
+                style="display:none; width: 32px; height: 32px; border-radius: 50%; border: 2px solid #bc0009; cursor: pointer;">
+
+                <a href="/" 
+                    id="boton-home"
+                    class="material-symbols-outlined icon-button" 
+                    style="text-decoration: none; cursor: pointer; color: #bc0009; font-size: 28px;">
+                    home
+                </a>
+
+                <button id="btn-logout-perfil" 
+                    class="material-symbols-outlined icon-button" 
+                    style="display:none; background:none; border:none; cursor:pointer; color: #bc0009; font-size: 28px;">
+                    logout
+                </button>
+            </div>
+
+
             </div>
 
                         <div class="perfil-section collapsed" id="wrapper-nueva-lista">
