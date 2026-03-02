@@ -1299,52 +1299,50 @@ window.guardarCejilla = async function(cantoId, valor) {
         }
     }
 };
-// FIN 30: GUARDAR CEJILLA EN FIREBASE
 
 
-// 31: REGISTRO DE CAMBIO TÉCNICO
-        window.registrarCambioTecnico = async (cantoId, valorForzado = null) => {
-            try {
-                if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
-                    const ahora = new Date();
-                    const fechaId = ahora.getTime().toString();
-                    
-                    // LÓGICA DE DETECCIÓN DE ACORDE:
-                    // Si el modal nos manda un valor (valorForzado), usamos ese.
-                    // Si no, intentamos leer el input. Si no hay nada, por defecto es "0".
-                    const selAcorde = document.getElementById('transporteControl');
-                    let acordeActual = "0";
-                    
-                    if (valorForzado !== null) {
-                        acordeActual = String(valorForzado);
-                    } else if (selAcorde && selAcorde.value !== "") {
-                        acordeActual = String(selAcorde.value);
-                    }
-
-                    // LÓGICA DE DETECCIÓN DE CEJILLA:
-                    const selCejilla = document.getElementById('cejillaControl') || document.getElementById('cejillaSelect');
-                    const cejillaActual = selCejilla ? String(selCejilla.value) : "0";
-
-                    // Estructura dbdata unificada
-                    const datosDB = {
-                        acorde: acordeActual,
-                        cejilla: cejillaActual,
-                        fecha: ahora
-                    };
-
-                    // 1. Guardamos en la raíz (Estado actual para la tabla del Perfil)
-                    await window.firebaseAPI.guardarDato(cantoId, datosDB, 'dbdata');
-                    
-                    // 2. Guardamos en el historial (Para los puntos del Calendario)
-                    await window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datosDB, 'dbdata');
-                    
-                    
-                    console.log(`✅ dbdata Sincronizado: ${cantoId} -> Acorde: ${acordeActual}, Cejilla: ${cejillaActual}`);
-                }
-            } catch (e) { 
-                console.warn("Error crítico en Sección 31:", e); 
+// 31: REGISTRO DE CAMBIO TÉCNICO (Versión Optimizada Offline)
+window.registrarCambioTecnico = (cantoId, valorForzado = null) => {
+    try {
+        if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
+            const ahora = new Date();
+            const fechaId = ahora.getTime().toString();
+            
+            // --- MANTENEMOS TU LÓGICA DE DETECCIÓN ---
+            const selAcorde = document.getElementById('transporteControl');
+            let acordeActual = "0";
+            
+            if (valorForzado !== null) {
+                acordeActual = String(valorForzado);
+            } else if (selAcorde && selAcorde.value !== "") {
+                acordeActual = String(selAcorde.value);
             }
-        };
+
+            const selCejilla = document.getElementById('cejillaControl') || document.getElementById('cejillaSelect');
+            const cejillaActual = selCejilla ? String(selCejilla.value) : "0";
+
+            // Estructura dbdata unificada (la que ya usas para Calendario y Perfil)
+            const datosDB = {
+                acorde: acordeActual,
+                cejilla: cejillaActual,
+                fecha: ahora
+            };
+
+            // --- CAMBIO CLAVE: Quitamos los 'await' ---
+            // 1. Guardamos el estado actual
+            window.firebaseAPI.guardarDato(cantoId, datosDB, 'dbdata');
+            
+            // 2. Guardamos en el historial para el Calendario
+            window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datosDB, 'dbdata');
+            
+            // Esto se ejecutará instantáneamente sin esperar a la nube
+            console.log(`✅ Registro inmediato: ${cantoId} -> Acorde: ${acordeActual}, Cejilla: ${cejillaActual}`);
+        }
+    } catch (e) { 
+        console.warn("Error crítico en Sección 31:", e); 
+    }
+};
+
 // FIN 31: REGISTRO DE CAMBIO
 
 
