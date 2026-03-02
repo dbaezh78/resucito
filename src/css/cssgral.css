@@ -816,7 +816,7 @@ hr {
     display: flex; /* Usar flexbox para que los enlaces se alineen en fila */
     flex-wrap: wrap; /* Permitir que los enlaces se envuelvan a la siguiente línea si no caben */
     gap: 1px; /* Espacio entre los elementos de categoría */
-    justify-content: flex-end; /* Alinear al inicio - Antes: flex-start */
+    justify-content: flex-start; /* Alinear al inicio - Antes: flex-start */
     align-content: flex-start;  /* antes: align-items: center;*/
     min-width: min-content;
     max-width: 100%;
