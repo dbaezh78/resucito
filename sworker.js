@@ -1,5 +1,5 @@
 // Define el nombre de la caché.
-const CACHE_NAME = 'cantos-cache-v2.08'; 
+const CACHE_NAME = 'cantos-cache-v2.09'; 
 // Define la URL de la página offline.
 const OFFLINE_URL = 'src/offline.html';
 

@@ -1099,59 +1099,65 @@ if (nCanElement) {
         }
     }
 
-// 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE (CONECTADA A DBDATA) update(2.17.2026:8.45)
-// Obtenemos el ID del canto desde la URL de forma segura
+// 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE (CONECTADA A DBDATA)
+// 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE (CONECTADA A DBDATA)
 const paramsURL = new URLSearchParams(window.location.search);
 const idCantoURL = paramsURL.get('canto') ? paramsURL.get('canto').replace('.html', '') : null;
 
 if (cejillaSelect && idCantoURL) {
 
+    // 1. FUNCIÓN DE SINCRONIZACIÓN
     window.actualizarTodoDesdeNube = async () => {
+        if (!window.firebaseAPI) return;
         try {
-            // Leemos el objeto único de dbdata
             const dataDB = await window.firebaseAPI.obtenerDato(idCantoURL, 'dbdata');
-            
             if (dataDB) {
-                // 1. Sincronizar Cejilla
                 if (dataDB.cejilla !== undefined) {
                     cejillaSelect.value = dataDB.cejilla;
                     localStorage.setItem(`cejilla_${idCantoURL}`, dataDB.cejilla);
                 }
-                // 2. Sincronizar Transporte (Acorde)
                 if (dataDB.acorde !== undefined) {
                     currentKeyOffset = parseInt(dataDB.acorde) || 0;
                     localStorage.setItem(`transporte_${idCantoURL}`, dataDB.acorde);
-                    
                     const controlAco = document.getElementById('transporteControl');
                     if (controlAco) controlAco.value = currentKeyOffset.toString();
                 }
-                
                 renderCanto();
-                console.log("✅ Datos recuperados de dbdata");
+                console.log("✅ Datos de nube aplicados");
             }
         } catch (error) {
             console.warn("Error al recuperar de dbdata:", error);
         }
     };
 
-    // --- CARGA INICIAL (Prioridad: LocalStorage -> Nube) ---
+    // 2. CARGA INICIAL (LocalStorage para velocidad instantánea)
     const localCejilla = localStorage.getItem(`cejilla_${idCantoURL}`);
     const localTransporte = localStorage.getItem(`transporte_${idCantoURL}`);
-    
     if (localCejilla !== null) cejillaSelect.value = localCejilla;
     if (localTransporte !== null) currentKeyOffset = parseInt(localTransporte) || 0;
 
-    // --- EVENTO DE CAMBIO EN CEJILLA ---
+    // 3. DISPARADOR AUTOMÁTICO (Esperar a que Firebase esté listo)
+    // Esto es lo que faltaba: perfil.js funciona porque espera al estado de Auth.
+    if (window.firebaseAPI && window.firebaseAPI.onAuthReady) {
+        window.firebaseAPI.onAuthReady(() => {
+            window.actualizarTodoDesdeNube();
+        });
+    } else {
+        // Fallback por si la API no tiene el listener
+        setTimeout(() => window.actualizarTodoDesdeNube(), 1500);
+    }
+
+    // 4. EVENTOS Y RENDER
     cejillaSelect.addEventListener('change', () => {
-        if (typeof window.guardarCejilla === 'function') {
-            window.guardarCejilla(idCantoURL, cejillaSelect.value);
+        if (typeof window.registrarCambioTecnico === 'function') {
+            window.registrarCambioTecnico(idCantoURL);
         }
-        localStorage.setItem(`cejilla_${idCantoURL}`, cejillaSelect.value);
     });
 
-    // Pequeño retardo para asegurar que las fuentes cargaron antes de renderizar
+    renderCanto(); 
     setTimeout(() => renderCanto(), 300);
 }
+
 // FIN 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE
 
 
@@ -1303,12 +1309,13 @@ window.guardarCejilla = async function(cantoId, valor) {
 
 // 31: REGISTRO DE CAMBIO TÉCNICO (Versión Optimizada Offline)
 window.registrarCambioTecnico = (cantoId, valorForzado = null) => {
+    // IMPORTANTE: Quitamos el 'async' de la función para evitar pausas
     try {
         if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
             const ahora = new Date();
             const fechaId = ahora.getTime().toString();
             
-            // --- MANTENEMOS TU LÓGICA DE DETECCIÓN ---
+            // --- LÓGICA DE DETECCIÓN DE ACORDE (Mantenemos tu lógica original) ---
             const selAcorde = document.getElementById('transporteControl');
             let acordeActual = "0";
             
@@ -1318,28 +1325,30 @@ window.registrarCambioTecnico = (cantoId, valorForzado = null) => {
                 acordeActual = String(selAcorde.value);
             }
 
+            // --- LÓGICA DE DETECCIÓN DE CEJILLA (Mantenemos tu lógica original) ---
             const selCejilla = document.getElementById('cejillaControl') || document.getElementById('cejillaSelect');
             const cejillaActual = selCejilla ? String(selCejilla.value) : "0";
 
-            // Estructura dbdata unificada (la que ya usas para Calendario y Perfil)
+            // Estructura dbdata unificada (La que usa el Perfil y Calendario)
             const datosDB = {
                 acorde: acordeActual,
                 cejilla: cejillaActual,
                 fecha: ahora
             };
 
-            // --- CAMBIO CLAVE: Quitamos los 'await' ---
-            // 1. Guardamos el estado actual
+            // --- CAMBIO CLAVE: Ejecución "Fuego y Olvido" (Sin await) ---
+            // Esto permite que el transporte (subir/bajar) sea instantáneo en la pantalla
+            
+            // 1. Guardamos el estado actual para el visor
             window.firebaseAPI.guardarDato(cantoId, datosDB, 'dbdata');
             
-            // 2. Guardamos en el historial para el Calendario
+            // 2. Guardamos en el historial para tus puntos del Calendario
             window.firebaseAPI.guardarDato(`${cantoId}/historial/${fechaId}`, datosDB, 'dbdata');
             
-            // Esto se ejecutará instantáneamente sin esperar a la nube
-            console.log(`✅ Registro inmediato: ${cantoId} -> Acorde: ${acordeActual}, Cejilla: ${cejillaActual}`);
+            console.log(`✅ Registro inmediato: ${cantoId} -> Acorde: ${acordeActual}`);
         }
     } catch (e) { 
-        console.warn("Error crítico en Sección 31:", e); 
+        console.warn("Error en Sección 31:", e); 
     }
 };
 

@@ -13,52 +13,42 @@ const googleIconSVG = `
 
 // --- API DE GESTIÓN DE DATOS ---
 window.firebaseAPI = {
-    guardarDato: (cantoId, valor, tipo) => { // Quitamos async para evitar confusiones
-        const clave = `${tipo}_${cantoId}`;
-        
-        // 1. LocalStorage es ley: Instantáneo
-        localStorage.setItem(clave, JSON.stringify(valor));
+    // Nueva función para avisar al visor cuando el usuario está logueado
+    onAuthReady: (callback) => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) callback(user);
+        });
+    },
 
+    guardarDato: (cantoId, valor, tipo) => {
+        const clave = `${tipo}_${cantoId}`;
+        localStorage.setItem(clave, JSON.stringify(valor));
         if (auth.currentUser) {
             const docRef = doc(db, "usuarios", auth.currentUser.uid, tipo, cantoId);
-            // Firebase maneja su propia cola offline automáticamente
-            setDoc(docRef, { valor: valor }, { merge: true })
-                .catch(err => console.warn("Modo offline: Sincronización pendiente."));
+            setDoc(docRef, { valor: valor }, { merge: true });
         }
     },
 
     obtenerDato: async (cantoId, tipo) => {
         const clave = `${tipo}_${cantoId}`;
         const localData = localStorage.getItem(clave);
-        const localParsed = localData ? JSON.parse(localData) : null;
-
-        // Si tenemos datos locales, los devolvemos YA. No esperamos a la nube.
-        if (localParsed) {
-            // Opcional: Actualizar en segundo plano sin bloquear el return
-            if (auth.currentUser && navigator.onLine) {
-                const docRef = doc(db, "usuarios", auth.currentUser.uid, tipo, cantoId);
-                getDoc(docRef).then(docSnap => {
-                    if (docSnap.exists()) {
-                        localStorage.setItem(clave, JSON.stringify(docSnap.data().valor));
-                    }
-                });
-            }
-            return localParsed;
-        }
-
-        // Si NO hay nada local, solo entonces esperamos a la nube
-        if (auth.currentUser && navigator.onLine) {
+        
+        // Si hay internet y usuario, PRIORIDAD NUBE (Como en perfil.js)
+        if (navigator.onLine && auth.currentUser) {
             try {
                 const docRef = doc(db, "usuarios", auth.currentUser.uid, tipo, cantoId);
                 const docSnap = await getDoc(docRef);
                 if (docSnap.exists()) {
-                    const data = docSnap.data().valor;
-                    localStorage.setItem(clave, JSON.stringify(data));
-                    return data;
+                    const nubeValor = docSnap.data().valor;
+                    localStorage.setItem(clave, JSON.stringify(nubeValor));
+                    return nubeValor;
                 }
-            } catch (e) { console.log("Error de red, nada local encontrado."); }
+            } catch (e) { console.error("Error nube:", e); }
         }
-        return null;
+        
+        // Si no hay red o no hay dato en nube, devolvemos local
+        try { return localData ? JSON.parse(localData) : null; } 
+        catch (e) { return localData; }
     }
 };
 
