@@ -1,5 +1,4 @@
-/* Creado por un siervo de Cristo: Carlos David 
-Debajo está el proyecto de poner el modo oscuro */
+/* Creado por un siervo de Cristo: Carlos David */
 
 #CristoReydereyesYSeñordeseñores {
     --CristoMiSeñor: white
@@ -1276,24 +1275,3 @@ body { background-color: var(--dynamic-body-background, #f4f4f4);}
 }
 
 
-
-/* PROYECTO MODO OSCURO
-
-LOS ACORDES
-.nota-posicionada
-color: lightskyblue;
-
-FONDO
-.main-wrapper, .container, .category-link
-background-color: --Color-del-fondo
-
-
-COLOR DE LAS LETRAS
-.letra
-color: #ffffff;
-
-COLOR DEL TITULO
-.dbt1
-color: lightskyblue;
-
-*/

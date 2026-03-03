@@ -1,4 +1,3 @@
-// --- 1. DEFINICIÓN DE CONFIGURACIONES (AQUÍ AGREGAS CAMBIOS) ---
 const opcionesConfig = [
     {
         id: 'global-set-font',

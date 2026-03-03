@@ -1,16 +1,17 @@
 (function() {
-    // 1. Inyectar los archivos CSS automáticamente (Corregido)
-    const linkNav = document.createElement('link');
-    linkNav.rel = 'stylesheet';
-    linkNav.href = '/src/css/navigator.css';
-    document.head.appendChild(linkNav);
+    // 1. Inyectar el archivo CSS automáticamente
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/src/css/navigator.css';
+    link.href = '/src/css/setting.css';
+    document.head.appendChild(link);
 
     const linkSettings = document.createElement('link');
     linkSettings.rel = 'stylesheet';
-    linkSettings.href = '/src/css/setting.css';
+    linkSettings.href = '/src/css/setting.css'; // Verifica que esta ruta sea la correcta
     document.head.appendChild(linkSettings);
 
-    // 2. Inyectar el archivo JS de ajustes
+    // 2. Inyectar el archivo JS de ajustes (Corregido)
     const scriptSettings = document.createElement('script');
     scriptSettings.src = '/src/js/setting.js';
     document.head.appendChild(scriptSettings);
@@ -140,9 +141,10 @@
     }
 })();
 
-// --- LÓGICA DE AJUSTES ---
+// --- LÓGICA DE AJUSTES
+// Listener para abrir el modal
 document.addEventListener('click', (e) => {
-    if (e.target.closest('#btn-open-settings')) {
+    if (e.target.closest('#btn-open-settings') || e.target.closest('#btn-open-settings-inner')) {
         e.preventDefault();
         abrirModalConfiguracion();
     }
@@ -171,19 +173,16 @@ function abrirModalConfiguracion() {
                 </button>
             </div>
             <div class="settings-content">
-                ${window.generarContenidoSettings ? window.generarContenidoSettings() : '<p>Cargando ajustes...</p>'} 
+                ${window.generarContenidoSettings()} 
             </div>
         </div>
     `;
     
     document.body.appendChild(modal);
-    // Bloquear scroll del body
-    document.body.classList.add('modal-open');
-    
     setTimeout(() => modal.classList.add('active'), 10);
     document.addEventListener('keydown', manejarEscapeSettings);
 }
-
+// Función para manejar la tecla Esc
 function manejarEscapeSettings(e) {
     if (e.key === "Escape") {
         cerrarModalConfiguracion();
@@ -194,9 +193,7 @@ window.cerrarModalConfiguracion = function() {
     const modal = document.getElementById('modal-global-settings');
     if (modal) {
         modal.classList.remove('active');
-        // Desbloquear scroll del body
-        document.body.classList.remove('modal-open');
-        
+        // Quitar el listener de escape al cerrar
         document.removeEventListener('keydown', manejarEscapeSettings);
         setTimeout(() => modal.remove(), 300);
     }
