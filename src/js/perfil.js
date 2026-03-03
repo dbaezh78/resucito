@@ -1,30 +1,140 @@
+// 1: INICIO DE PERFIL JS
 import { auth, db } from './firebase-auth.js';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-// --- VARIABLES GLOBALES ---
+// --- 1. VARIABLES GLOBALES ---
 let etapaGuardada = null;
 const CODIGO_ADMIN_SECRETO = "RE77"; 
 let ALMACEN_CANTOS = {};
 window.cacheData = {}; 
 window.indiceCantosGlobal = [];
 
-// Cargamos el JSON de inmediato
-fetch('src/data/indicecantos.json')
-    .then(response => response.json())
-    .then(data => {
-        window.indiceCantosGlobal = data;
-        console.log("✅ Base de datos de cantos cargada (JSON).");
+// 2: PROCESO DE CARGA EN SEGUNDO PLANO (SILENCIOSO)
+const cargarDatosBaseSilenciosos = async () => {
+    try {
+        // Cargar JSON de cantos
+        const response = await fetch('src/data/indicecantos.json');
+        window.indiceCantosGlobal = await response.json();
+        console.log("✅ Datos base cargados en segundo plano.");
+
+        // Llenar RAM desde LocalStorage (Carga instantánea)
+        Object.keys(localStorage).forEach(key => {
+            if (key.startsWith('data-')) {
+                const cantoId = key.replace('data-', '');
+                try {
+                    const localData = JSON.parse(localStorage.getItem(key));
+                    if (localData) ALMACEN_CANTOS[cantoId] = localData;
+                } catch (e) { }
+            }
+        });
+
+        // Preparar selectores (Países y Comunidades)
+        await cargarPaisesEIP();
+        llenarComunidades();
+    } catch (err) {
+        console.error("❌ Error en carga silenciosa:", err);
+    }
+};
+
+// Disparo inmediato de la carga silenciosa
+cargarDatosBaseSilenciosos();
+
+// 3: OBSERVADOR DE AUTENTICACIÓN (EL PORTERO)
+onAuthStateChanged(auth, async (user) => {
+    if (user) {
+        console.log("👤 Usuario verificado:", user.uid);
         
-        // Solo si el usuario ya está logueado, disparamos la sincronización
-        if (auth.currentUser && typeof window.sincronizarTodoARam === 'function') {
-            window.sincronizarTodoARam();
+        // Eliminamos el aviso de bloqueo si existe
+        const aviso = document.getElementById('overlay-auth-aviso');
+        if (aviso) aviso.remove();
+
+        // A. Cargamos perfil (País, Parroquia, etc.)
+        const docRef = doc(db, "usuarios", user.uid, "perfil", "config");
+        try {
+            const docSnap = await getDoc(docRef);
+            if (docSnap.exists()) {
+                aplicarDatosPerfilAInputs(docSnap.data()); 
+            }
+        } catch (e) { console.warn("Error perfil:", e); }
+
+        // B. ESPERAMOS a la nube (Sección 35)
+        // Esto evita que la tabla salga vacía o "congelada"
+        if (typeof window.sincronizarTodoARam === 'function') {
+            await window.sincronizarTodoARam(); 
         }
-    })
-    .catch(err => console.error("❌ Error cargando el índice de cantos:", err));
+
+        // C. Dibujamos la tabla
+        await renderizarTablaCantos();
+
+    } else {
+        // SI NO HAY SESIÓN: Bloqueo inmediato
+        if (window.location.pathname.includes('perfil.html')) {
+            mostrarBloqueoAcceso(); // Función de la Sección 4
+        }
+    }
+});
+
+// 4: Muestra el modal de bloqueo
+function mostrarBloqueoAcceso() {
+    if (document.getElementById('overlay-auth-aviso')) return;
+
+    const overlay = document.createElement('div');
+    overlay.id = "overlay-auth-aviso";
+    overlay.className = "auth-overlay"; // Usa la clase de perfil.css
+    overlay.style = "position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 10000; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(8px);";
+    overlay.innerHTML = `
+        <div class="auth-modal" style="background: white; padding: 40px 30px; border-radius: 20px; max-width: 380px; width: 90%; text-align: center; font-family: sans-serif; box-shadow: 0 15px 35px rgba(0,0,0,0.5);">
+            <span class="material-symbols-outlined" style="font-size: 70px; color: #bc0009;">lock_open</span>
+            <h2 style="margin: 20px 0 10px; color: #1d1d1f; font-size: 24px;">Cuenta Necesaria</h2>
+            <p style="color: #666; line-height: 1.6; margin-bottom: 30px; font-size: 16px;">
+            
+            Para entrar al perfil, necesitas usar tu cuenta de Google. Se sincronizaran tus acordes y cejillas con los cantos.
+            
+            </p>
 
 
-// Mapa de transporte para cantos que tienen como base La m (Original = 0)
+            <div class="auth-buttons" style="display: flex; flex-direction: column; gap: 15px;">
+                <button class="btn-auth-login" onclick="window.firebaseAPI.login()" style="background: #bc0009; color: white; border: none; padding: 15px; border-radius: 12px; font-weight: bold; font-size: 16px; cursor: pointer;">Iniciar Sesión con Google</button>
+                <button class="btn-auth-back" onclick="window.location.href='../../index.html'" style="background: #f0f0f2; color: #333; border: none; padding: 15px; border-radius: 12px; font-weight: bold; font-size: 16px; cursor: pointer;">Volver al Inicio</button>
+            </div>
+            <p class="auth-footer" style="margin-top: 25px; font-size: 13px; color: #999;">Puedes seguir usando el libro de canto sin cuenta, pero tus ajustes no se guardarán en la nube.</p>
+        </div>
+    `;
+    document.body.appendChild(overlay);
+}
+
+// 5: Función auxiliar para aplicar datos a selectores
+function aplicarDatosPerfilAInputs(data) {
+    const selPais = document.getElementById('userCountry');
+    const selParr = document.getElementById('userParroquia');
+    const selComu = document.getElementById('userComunidad');
+    const selStep = document.getElementById('userStep');
+
+    if (selParr) selParr.value = data.parroquia || "";
+    if (selStep) {
+        selStep.value = data.etapa || "0";
+        etapaGuardada = parseInt(data.etapa) || 0;
+    }
+
+    if (selPais && data.pais) {
+        const intP = setInterval(() => {
+            if (selPais.options.length > 1) {
+                selPais.value = data.pais;
+                clearInterval(intP);
+                llenarComunidades();
+                const intC = setInterval(() => {
+                    if (selComu && selComu.options.length > 1) {
+                        selComu.value = data.comunidad || "1";
+                        clearInterval(intC);
+                    }
+                }, 100);
+            }
+        }, 100);
+    }
+}
+
+ // 6: MAPA DE ACORDES
 const MAPA_ACORDES = {
     "0": "La m",
     "1": "Si b m",
@@ -40,7 +150,7 @@ const MAPA_ACORDES = {
     "11": "Sol# m"
 };
 
-// 1. INICIALIZACIÓN: Llena comunidades, países y CARGA LA RAM (ALMACEN_CANTOS)
+// 7: INICIALIZACIÓN: Llena comunidades, países y CARGA LA RAM (ALMACEN_CANTOS)
 document.addEventListener('DOMContentLoaded', async () => {
     llenarComunidades();
     await cargarPaisesEIP();
@@ -69,72 +179,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-// 2: OBSERVADOR AUTHENTICACION: Sincronización exacta con Firebase
-auth.onAuthStateChanged(async (user) => {
-    if (user) {
-        console.log("Usuario detectado:", user.uid);    // aqui tenemos que poner que cargue el usuario del quien inicia session
 
-        // 1. Cargamos países primero
-        await cargarPaisesEIP();
-
-        const docRef = doc(db, "usuarios", user.uid, "perfil", "config");
-        
-        try {
-            const docSnap = await getDoc(docRef);
-            
-            // Referencias con IDs originales
-            const selPais = document.getElementById('userCountry');
-            const selParr = document.getElementById('userParroquia');
-            const selComu = document.getElementById('userComunidad');
-            const selStep = document.getElementById('userStep');
-
-            if (docSnap.exists()) {
-                const data = docSnap.data();
-                
-                // Asignación de Parroquia
-                if (selParr) selParr.value = data.parroquia || "";
-
-                // Asignación de Etapa
-                if (selStep) {
-                    selStep.value = data.etapa || "0";
-                    etapaGuardada = parseInt(data.etapa) || 0;
-                }
-
-                // Sincronización de País y Comunidad
-                if (selPais && data.pais) {
-                    const intervalPais = setInterval(async () => {
-                        if (selPais.options.length > 1) {
-                            selPais.value = data.pais;
-                            clearInterval(intervalPais);
-                            
-                            await llenarComunidades();
-
-                            const intervalComu = setInterval(() => {
-                                if (selComu.options.length > 1) {
-                                    selComu.value = data.comunidad || "1";
-                                    clearInterval(intervalComu);
-                                }
-                            }, 100);
-                        }
-                    }, 100);
-                }
-            }
-        } catch (e) { 
-            console.warn("Error en sincronía:", e); 
-        }
-
-        await renderizarTablaCantos();
-    } else {
-        setTimeout(() => { 
-            if (window.location.pathname.includes('perfil.html')) {
-                window.location.href = "../../index.html"; 
-            }
-        }, 1500);
-    }
-});// FIN 2. OBSERVADOR AUTHENTICACION
-
-
-// 3: RENDERIZADO DE TABLA 
+// 11: RENDERIZADO DE TABLA 
 async function renderizarTablaCantos() {
     const contenedor = document.getElementById('lista-cantos-gestion');
     if (!contenedor) return;
@@ -214,11 +260,11 @@ async function renderizarTablaCantos() {
         console.error("Error en tabla:", e);
     }
 }
-// FIN 3. RENDERIZADO DE TABLA
+// FIN 11. RENDERIZADO DE TABLA
 
 
 
-// 4: COMPLETAR DATOS:
+// 12: COMPLETAR DATOS:
 async function completarDatosLentamente(cantos) {
     const user = auth.currentUser;
     if (!user) return;
@@ -280,10 +326,10 @@ async function completarDatosLentamente(cantos) {
     }
 }
 
-// FIN 4: COMPLETAR DATOS
+// FIN 12: COMPLETAR DATOS
 
 
-// 5: INYECTAR DATOS (LOGICA DIRECTA + BLINDAJE DE MENORES)
+// 13: INYECTAR DATOS (LOGICA DIRECTA + BLINDAJE DE MENORES)
 window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
     const elCej = document.getElementById(`cejilla-tu-${cantoId}`);
     const elAco = document.getElementById(`acorde-tu-${cantoId}`);
@@ -356,10 +402,10 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
             elUso.innerHTML = `${dia} ${mesesShort[f.getMonth()]} <span onclick="event.stopPropagation(); window.abrirCalendario('${cantoId}')" style="cursor:pointer; font-size:16px;">📅</span>`;
         }
     }
-};// <--- CIERRE CORRECTO DE FUNCIÓN 5
+};
 
 
-// 6: OBTENER FIREBASE: Unificado para dbdata (Ruta Única y Segura)
+// 14: OBTENER FIREBASE:
 async function obtenerDatosExtraFirebase(cantoId, uid) {
     try {
         const { getDoc, doc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
@@ -403,9 +449,8 @@ async function obtenerDatosExtraFirebase(cantoId, uid) {
         console.warn("⚠️ Error en Sección 6:", e); 
     }
 }
-// FINAL DE LA SECCION 6
 
-// 7. TOGGLE SECTIONS: Abre/Cierra secciones y gira la flecha (collapsed)
+// 15: TOGGLE SECTIONS: Abre/Cierra secciones y gira la flecha (collapsed)
 window.toggleSection = function(sectionId, wrapperId) {
     const section = document.getElementById(sectionId);
     const wrapper = document.getElementById(wrapperId);
@@ -423,7 +468,7 @@ window.toggleSection = function(sectionId, wrapperId) {
     }
 };
 
-// 8. GESTIONAR MEMORIA: Descarga o borra CSS (Global).
+// 16: GESTIONAR MEMORIA: Descarga o borra CSS (Global).
 window.gestionarMemoria = async (cantoId, cargar) => {
     const cache = await caches.open('cantos-cache-v2.08');
     const url = `src/css/pg/${cantoId}.css`;
@@ -437,7 +482,7 @@ window.gestionarMemoria = async (cantoId, cargar) => {
     }
 };
 
-// 10. LLENAR COMUNIDADES: Opciones del select.
+// 17: LLENAR COMUNIDADES: Opciones del select.
 function llenarComunidades() {
     const select = document.getElementById('userComunidad');
     if (!select) return;
@@ -448,7 +493,7 @@ function llenarComunidades() {
     }
 }
 
-// 11. CARGAR PAISES: Desde JSON local.
+// 18: CARGAR PAISES: Desde JSON local.
 async function cargarPaisesEIP() {
     const selectPais = document.getElementById('userCountry'); // ID original restaurado
     if (!selectPais) return;
@@ -473,10 +518,9 @@ async function cargarPaisesEIP() {
         selectPais.innerHTML = '<option value="">Error al cargar países</option>';
     }
 }
-// FIN 11. CARGAR PAISES
 
 
-// 12. GUARDAR PERFIL: Función global para enviar a Firebase.
+// 19. GUARDAR PERFIL: Función global para enviar a Firebase.
 window.guardarPerfil = async function() {
     const user = auth.currentUser;
     if (!user) {
@@ -514,10 +558,9 @@ window.guardarPerfil = async function() {
         alert("Error al conectar con la nube. Revisa tu conexión.");
     }
 };
-// FIN 12. GUARDAR PERFIL
 
 
-// 13. LOGOUT CON CONFIRMACIÓN
+// 19.1: LOGOUT CON CONFIRMACIÓN
 document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
     const confirmar = confirm("¿Deseas Cerrar sesión?\n\nAl cerrar sesión, serás llevado a la página de inicio.");
     if (confirmar) {
@@ -529,7 +572,44 @@ document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
     }
 });
 
-// 14: GESTIONAR DESCARGA TOTAL (Uso Offline con Barra y Reporte)
+// 20: SINCRONIZACIÓN DE DATOS (FIREBASE A RAM)
+window.sincronizarTodoARam = async function() { 
+    const user = auth.currentUser;
+    if (!user) return;
+
+    const container = document.getElementById('progreso-nube-container');
+    const barra = document.getElementById('barra-nube');
+
+    try {
+        if (container) container.style.display = 'block';
+        const { collection, getDocs } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+        
+        const colRef = collection(db, "usuarios", user.uid, "dbdata");
+        const querySnapshot = await getDocs(colRef);
+
+        querySnapshot.forEach((docSnap) => {
+            const cantoId = docSnap.id; 
+            const docData = docSnap.data();
+            const rawData = docData.valor ? docData.valor : docData;
+            
+            // Guardamos en la memoria global y local para que la tabla lo vea
+            const datos = {
+                acorde: String(rawData.acorde || "0"),
+                cejilla: String(rawData.cejilla || "0"),
+                fecha: rawData.fecha || null
+            };
+            ALMACEN_CANTOS[cantoId] = datos;
+            localStorage.setItem(`data-${cantoId}`, JSON.stringify(datos));
+        });
+        console.log("✅ Datos de Firebase listos en RAM.");
+    } catch (e) {
+        console.warn("Error en sincronización:", e);
+    } finally {
+        if (container) container.style.display = 'none';
+    }
+};
+
+// 21: GESTIONAR DESCARGA TOTAL (Uso Offline con Barra y Reporte)
 window.gestionarDescargaTotal = async () => {
     const divProgreso = document.getElementById('progreso-descarga-container');
     const barra = document.getElementById('barra-progreso');
@@ -607,10 +687,9 @@ window.gestionarDescargaTotal = async () => {
         }
     }
 };
-;// FIN 14: DESCARGA MASIVA
 
 
-// 15: EXPORTAR RESPALDO: Descarga el LocalStorage a JSON (Global).
+// 22: EXPORTAR RESPALDO: Descarga el LocalStorage a JSON (Global).
 window.exportarDatosLocales = function() {
     let datosExportar = {};
     for (let i = 0; i < localStorage.length; i++) {
@@ -628,7 +707,7 @@ window.exportarDatosLocales = function() {
     downloadAnchorNode.remove();
 };
 
-// 16. FILTRADO INTELIGENTE: Ignora acentos, espacios, comas y símbolos
+// 23. FILTRADO INTELIGENTE: Ignora acentos, espacios, comas y símbolos
 window.filtrarCantos = function() {
     const input = document.getElementById('inputBuscador');
     const btnLimpiar = document.getElementById('btnLimpiarBuscador');
@@ -666,7 +745,7 @@ window.filtrarCantos = function() {
     }
 };
 
-// 17: FUNCIÓN PARA LIMPIAR EL BUSCADOR
+// 24: FUNCIÓN PARA LIMPIAR EL BUSCADOR
 window.limpiarBuscador = function() {
     const input = document.getElementById('inputBuscador');
     const btn = document.getElementById('btnLimpiar');
@@ -693,18 +772,8 @@ window.filtrarCantos = function() {
     // Llamamos a la lógica original de filtrado
     if (typeof originalFiltrar === 'function') originalFiltrar();
 };
-//FIN 17: FUNCIÓN PARA LIMPIAR EL BUSCADOR
 
-/*
-Imports y Globables.
-Auth y Arranque (Funciones 1 y 2).
-Lógica de Tabla y Datos (Funciones 3, 4, 5 y 6).
-Funciones Globales (Window) (Funciones 7, 8, 9 y 15) -> Estas son las que activan los botones.
-Auxiliares y Eventos de Botón (Funciones 10 a 14). 
-*/
-
-
-// 18: Guardar preferencia y forzar refresco si se activa
+// 25: Guardar preferencia y forzar refresco si se activa
 document.getElementById('syncToggle').addEventListener('change', (e) => {
     const activa = e.target.checked;
     localStorage.setItem('preferencia_sync', activa);
@@ -723,7 +792,7 @@ document.getElementById('syncToggle').addEventListener('change', (e) => {
 });
 
 
-// 19: REGISTRO DE CAMBIO (Escritura en dbdata con Historial Unificado)
+// 26: REGISTRO DE CAMBIO (Escritura en dbdata con Historial Unificado)
 async function guardarCambioTransporte(cantoId, nuevoValor) {
     const user = auth.currentUser;
     if (!user) return;
@@ -762,17 +831,16 @@ async function guardarCambioTransporte(cantoId, nuevoValor) {
         console.error("Error en Sección 19 (dbdata):", error); 
     }
 }
-// FIN 19: REGISTRO DE CAMBIO
 
 
-// --- 20: SISTEMA DE HISTORIAL VISUAL Y LISTADO ---
+//  27: SISTEMA DE HISTORIAL VISUAL Y LISTADO ---
 let fechasHistorialActivas = [];
 let fechasOriginalesFull = []; 
 let mesVisualizado = new Date().getMonth();
 let añoVisualizado = new Date().getFullYear();
 let totalRegistrosCanto = 0; 
 
-// 20.1: APERTURA Y CARGA DE DATOS (CORRECCIÓN NIVEL "VALOR")
+// 28: APERTURA Y CARGA DE DATOS (CORRECCIÓN NIVEL "VALOR")
 window.abrirCalendario = async function(cantoId) {
     const user = auth.currentUser;
     if (!user) return;
@@ -841,10 +909,9 @@ window.abrirCalendario = async function(cantoId) {
         console.error("❌ Error cargando historial:", e);
     }
 };
-// FIN DE 20.1: APERTURA Y CARGA DE DATOS
 
 
-// 20.4: NAVEGACIÓN DE MESES
+// 29: NAVEGACIÓN DE MESES
 window.cambiarMes = function(direccion) {
     mesVisualizado += direccion;
     if (mesVisualizado < 0) { mesVisualizado = 11; añoVisualizado--; }
@@ -852,7 +919,7 @@ window.cambiarMes = function(direccion) {
     actualizarVistaCalendario();
 };
 
-// 20.5: VISTA DEL CALENDARIO (CORREGIDO)
+// 30: VISTA DEL CALENDARIO (CORREGIDO)
 function actualizarVistaCalendario() {
     const modal = document.getElementById('calendar-modal');
     if (!modal) return; 
@@ -892,9 +959,8 @@ function actualizarVistaCalendario() {
         if (e.target.id === 'calendar-overlay') cerrarCalendario();
     };
 }
-// FIN 20.5: VISTA DEL CALENDARIO
 
-// 20.6 LISTADO TÉCNICO DETALLADO (DISEÑO DAVID - TONO CORREGIDO)
+// 31: LISTADO TÉCNICO DETALLADO
 window.abrirListaDetallada = function() {
     // 1. Buscamos el nombre del canto y su acorde base original
     const idABuscar = window.ultimoCantoVisto; 
@@ -981,10 +1047,9 @@ window.abrirListaDetallada = function() {
         if (e.target.id === 'lista-overlay') listaModal.remove(); 
     };
 };
-// FIN 20.6 LISTADO TÉCNICO DETALLADO
 
 
-// 20.7: CIERRE Y LIMPIEZA
+// 32: CIERRE Y LIMPIEZA
 window.cerrarCalendario = function() {
     const modal = document.getElementById('calendar-modal');
     if (modal) {
@@ -993,9 +1058,8 @@ window.cerrarCalendario = function() {
     // IMPORTANTE: Dejamos de escuchar la tecla Escape
     document.removeEventListener('keydown', manejarEscape);
 };
-// FIN 20.7: CIERRE Y AUXILIARES
 
-// 20.8: MENSAJE ESCAPE
+// 33: MENSAJE ESCAPE
 function manejarEscape(e) {
     if (e.key === "Escape") {
         const lista = document.getElementById('lista-detallada-modal');
@@ -1016,9 +1080,8 @@ function manejarEscape(e) {
         }
     }
 }
-// FIN 20.8: MENSAJE ESCAPE// FIN 20.8: MENSAJE ESCAPE
 
-// 20.9: FUNCION GENERAR GRID
+// 34: FUNCION GENERAR GRID
 function generarGridNavegable(fechasActivas, mes, año) {
     const ultimoDia = new Date(año, mes + 1, 0).getDate();
     const primerDiaSemana = new Date(año, mes, 1).getDay();
@@ -1036,9 +1099,8 @@ function generarGridNavegable(fechasActivas, mes, año) {
     return html;
 }
 
-// FIN 20.9: FUNCION GENERAR GRID
-
-// 21: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM (VERSIÓN FINAL CORREGIDA)
+// 35: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM
+// 35: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM (VERSIÓN FUSIONADA Y FINAL)
 window.sincronizarTodoARam = async function() { 
     const user = auth.currentUser;
     if (!user) {
@@ -1051,6 +1113,7 @@ window.sincronizarTodoARam = async function() {
     const texto = document.getElementById('status-nube-texto');
 
     try {
+        // --- INICIO VISUAL (Tus estilos originales) ---
         if (container) container.style.display = 'block';
         if (texto) {
             texto.style.display = 'block';
@@ -1061,10 +1124,8 @@ window.sincronizarTodoARam = async function() {
             barra.style.background = 'linear-gradient(90deg, #4285F4, #34A853)';
         }
 
-        // Importamos las herramientas necesarias de Firestore
         const { collection, getDocs } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
         
-        // Apuntamos a la colección donde se guardan los datos de cada canto
         const colRef = collection(db, "usuarios", user.uid, "dbdata");
         const querySnapshot = await getDocs(colRef);
         const total = querySnapshot.size;
@@ -1072,56 +1133,49 @@ window.sincronizarTodoARam = async function() {
         if (total === 0) {
             if (texto) texto.innerText = "No se encontraron registros.";
             setTimeout(() => { if (container) container.style.display = 'none'; }, 3000);
-            return;
+            return true; // Retornamos true aunque esté vacío para que la tabla se dibuje
         }
 
         let procesados = 0;
 
-        // Recorremos los documentos (cada documento es un canto)
+        // --- PROCESAMIENTO DE DATOS ---
         querySnapshot.forEach((docSnap) => {
             const cantoId = docSnap.id; 
             const docData = docSnap.data();
             
-            // 🔍 LOG 1: Verificación de entrada
+            // Log de depuración que tenías
             console.log(`📡 LOG 1 > Datos de dbdata [${cantoId}]:`, docData);
 
-            // CORRECCIÓN CLAVE: Según tus logs, los datos reales (acorde/cejilla)
-            // están dentro de una propiedad llamada 'valor'
+            // Lógica de campo 'valor'
             const rawData = docData.valor ? docData.valor : docData;
 
             let fechaObjeto = null;
-            // Buscamos la fecha en la raíz o dentro de valor
             const d = rawData.fecha || docData.fecha; 
 
             if (d) {
-                // Si es Timestamp de Firebase usamos toDate(), si no, convertimos a fecha normal
                 fechaObjeto = (d && typeof d.toDate === 'function') ? d.toDate() : new Date(d);
             }
 
-            // NORMALIZACIÓN: Preparamos el objeto para la tabla
             const datosNormalizados = {
                 fecha: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null,
                 valor: (fechaObjeto && !isNaN(fechaObjeto.getTime())) ? fechaObjeto : null,
                 acorde: String(rawData.acorde || "0"),
                 cejilla: String(rawData.cejilla || "0"),
-
                 valoracion: parseInt(rawData.valoracion || 0)
             };
+
             window.cacheData[cantoId] = datosNormalizados;
 
-            // 🧠 LOG 2: Aquí ya deberías ver los números correctos de acorde y cejilla
-            console.log(`🧠 LOG 2 > RAM PROCESADA [${cantoId}]:`, datosNormalizados);
-
-            // Guardamos en la memoria del navegador y en LocalStorage
+            // Guardamos en RAM y LocalStorage
             ALMACEN_CANTOS[cantoId] = datosNormalizados;
             localStorage.setItem(`data-${cantoId}`, JSON.stringify(datosNormalizados));
             
-            // 🎨 ACTUALIZACIÓN VISUAL: Inyectamos los datos en la tabla de perfil.html
+            // Actualización visual en tiempo real (si la tabla ya existe)
             if (typeof inyectarDatosEnTabla === 'function') {
                 inyectarDatosEnTabla(cantoId, datosNormalizados, false);
             }
 
-            // Actualizamos la barra de progreso
+            // --- ACTUALIZACIÓN DE BARRA (Tus cálculos) ---
             procesados++;
             const porcentaje = Math.round((procesados / total) * 100);
             if (barra) barra.style.width = `${porcentaje}%`;
@@ -1131,19 +1185,24 @@ window.sincronizarTodoARam = async function() {
         if (texto) texto.innerText = "¡Sincronización completada!";
         if (barra) barra.style.background = "#34A853"; 
 
-        setTimeout(() => {
-            if (container) container.style.display = 'none';
-            if (barra) barra.style.width = '0%';
-        }, 2500);
+        console.log("✅ Sincronización completa: RAM actualizada.");
+        return true; // IMPORTANTE: Avisamos a la Sección 3 que terminamos
 
     } catch (e) {
         console.error("❌ Error en sincronización:", e);
         if (texto) texto.innerText = "Error al conectar con la nube.";
+        return false;
+    } finally {
+        // Cierre suave de la barra
+        setTimeout(() => {
+            if (container) container.style.display = 'none';
+            if (barra) barra.style.width = '0%';
+        }, 2500);
     }
 };
-// FIN 21: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM
 
-// 22 AUTO-SINCRONIZACIÓN AL ENTRAR
+
+// 36 AUTO-SINCRONIZACIÓN AL ENTRAR
 // Este bloque detecta cuando Firebase termina de cargar el usuario y arranca la sincronía
 auth.onAuthStateChanged((user) => {
     if (user) {
@@ -1156,7 +1215,7 @@ auth.onAuthStateChanged((user) => {
     }
 });
 
-// 23: GUARDAR VALORACION
+// 37: GUARDAR VALORACION
         window.guardarValoracion = async function(cantoId, puntos) {
             const user = auth.currentUser;
             if (!user) return;
@@ -1184,8 +1243,7 @@ auth.onAuthStateChanged((user) => {
             }
         };
 
-// 24: CONTROL DE COLAPSO TOTAL Y PERSISTENCIA (CORREGIDO)
-// 24: CONTROL DE COLAPSO Y SINCRONIZACIÓN (CORREGIDO)
+// 38: CONTROL DE COLAPSO Y SINCRONIZACIÓN
 document.addEventListener('DOMContentLoaded', () => {
     const configPaneles = {
         'toggle-perfil':  { content: 'section-config',        wrapper: 'wrapper-config' },
@@ -1273,10 +1331,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// FIN 24: CONTROL DE COLAPSO TOTAL CON SWITCH
 
-
-// FUNCION 25: --- FUNCIÓN PARA DESCARGA FÍSICA (OFFLINE REAL) ---
+// 39: FUNCIÓN PARA DESCARGA FÍSICA (OFFLINE REAL) ---
 async function descargarArchivosParaOffline(listaIds) {
     if (!('caches' in window)) return;
 
