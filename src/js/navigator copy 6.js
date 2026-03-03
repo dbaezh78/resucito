@@ -8,12 +8,12 @@
     // 2. Crear el HTML de la navegación
     const navHTML = `
         <div class="nav-bottom-bar">
-            
+
+
             <a href="/" class="nav-item">
                 <span class="material-symbols-outlined">home</span>
                 <span>Inicio</span>
             </a>
-
 
             <button class="nav-item" id="btn-nav-menu">
                 <span class="material-symbols-outlined">menu</span>
@@ -22,8 +22,8 @@
                     <a href="https://www.youtube.com/@CristoJesusReydereyes" target="_blank"><span class="material-symbols-outlined">youtube_activity</span> YouTube</a>
                     <a href="https://facebook.com" target="_blank"><span class="material-symbols-outlined">communities</span> Facebook</a>
                     <a href="/camino.html" target="_blank"><span class="material-symbols-outlined">prayer_times</span> Laudes</a>
-                    <a href="/pagina-cantor.html" target="_blank"><span class="material-symbols-outlined">book_2</span> Evangelio del Día</a>
-                    <a href="/comunidad-cantor.html"><span class="material-symbols-outlined">group</span> Comunidad Cantor</a>
+                    <a href="/pagina-cantor.html" target="_blank"><span class="material-symbols-outlined">book_2</span>Evangelio del Día</a>
+                    <a href="/comunidad-cantor.html">Comunidad Cantor</a>
                 </div>
             </button>
 
@@ -38,18 +38,10 @@
                 </div>
             </button>
 
-            <button class="nav-item" id="btn-nav-resucito">
-                <span class="material-symbols-outlined">menu_book</span>
-                <span>Resucitó</span>
-                <div class="nav-submenu" id="nav-submenu-resucito">
-                    <a href="/"><span class="material-symbols-outlined">home</span> Inicio</a>
-                    <a href="/src/select.html"><span class="material-symbols-outlined">playlist_add</span> Nueva Lista</a>
-                    <a href="/perfil.html"><span class="material-symbols-outlined">person</span> Perfil</a>
-                    <a href="/perfil.html"><span class="material-symbols-outlined">settings</span> Configuración</a>
-                    <a href="/src/html/intro.html"><span class="material-symbols-outlined">menu_book</span> Introducción</a>
-                    <a href="/catequesis.html"><span class="material-symbols-outlined">history_edu</span> Catequesis</a>
-                </div>
-            </button>
+            <a href="/perfil.html" class="nav-item">
+                <span class="material-symbols-outlined">settings</span>
+                <span>Ajuste</span>
+            </a>
 
             <a id="nav-google-auth" class="nav-item">
                 <span class="material-symbols-outlined" id="nav-auth-icon">account_circle</span>
@@ -65,14 +57,14 @@
 
     document.body.insertAdjacentHTML('beforeend', navHTML);
 
-    // 3. Lógica de los Submenús
+    // 3. Lógica de los Submenús (Menú y NeoCate)
     const setupSubmenu = (btnId, menuId) => {
         const btn = document.getElementById(btnId);
         const menu = document.getElementById(menuId);
         if (btn && menu) {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                // Cerrar otros submenús abiertos al abrir uno nuevo
+                // Opcional: Cerrar otros submenús abiertos
                 document.querySelectorAll('.nav-submenu').forEach(m => {
                     if (m !== menu) m.classList.remove('active');
                 });
@@ -83,14 +75,13 @@
 
     setupSubmenu('btn-nav-menu', 'nav-submenu');
     setupSubmenu('btn-nav-neocate', 'nav-submenu-neocate');
-    setupSubmenu('btn-nav-resucito', 'nav-submenu-resucito');
 
-    // Cerrar submenús al hacer clic fuera
+    // Cerrar si se hace clic fuera de cualquier submenú
     document.addEventListener('click', () => {
         document.querySelectorAll('.nav-submenu').forEach(m => m.classList.remove('active'));
     });
 
-    // 4. Lógica de Autenticación y Salida
+    // 4. Lógica de Autenticación y Salida (Mantenemos tu lógica intacta)
     const updateAuthUI = (user) => {
         const icon = document.getElementById('nav-auth-icon');
         const text = document.getElementById('nav-auth-text');
@@ -101,7 +92,7 @@
 
         if (user) {
             if (user.photoURL) {
-                icon.innerHTML = `<img src="${user.photoURL}" class="dbperfil" style="width:24px; height:24px; border-radius:50%; border:1px solid #ccc;">`;
+                icon.innerHTML = `<img src="${user.photoURL}" class="dbperfil">`;
             } else {
                 icon.innerText = "person";
             }

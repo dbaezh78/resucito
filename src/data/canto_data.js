@@ -12228,7 +12228,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
              desktop: { velocidad: 7, incremento: 1 },   // Para PC
         desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=teestoyllamandosenor",
-        sig: "/src/index.html?canto=tuhascubiertodevergüenzalamuerte",
+        sig: "/src/index.html?canto=tuhascubiertodeverguenzalamuerte",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "TE HE MANIFESTADO MI PECADO,, (La,m,20)(Re,m,225)", sC: "ta as"},
@@ -12295,7 +12295,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ║           TÚ HAS CUBIERTO DE VERGÜENZA LA MUERTE               ║
 ╚════════════════════════════════════════════════════════╝  */
    {
-        id: "tuhascubiertodevergüenzalamuerte",
+        id: "tuhascubiertodeverguenzalamuerte",
         tt: "Tú Has Cubierto De Vergüenza La Muerte",
         title: "Tú Has Cubierto De Vergüenza La Muerte",
         subtitle: "Homilía Pascual (Melltón de Sardes)",
@@ -12307,7 +12307,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "160",
         notes: "",
         mant: "No",
-        audioSrc: "https://audio.resucito.do/tuhascubiertodevergüenzalamuerte.mp3",
+        audioSrc: "https://audio.resucito.do/tuhascubiertodeverguenzalamuerte.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { velocidad: 6, incremento: 3 }, // Para celular
@@ -12395,7 +12395,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
               tablet: { velocidad: 7, incremento: 1 },  // Para tablet
              desktop: { velocidad: 7, incremento: 1 },   // Para PC
         desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/index.html?canto=tuhascubiertodevergüenzalamuerte",
+        ant: "/src/index.html?canto=tuhascubiertodeverguenzalamuerte",
         sig: "/src/index.html?canto=unretonobrotadeltroncodejese",
 // Contenido del lado izquierdo del canto,
     lizq: [

@@ -187,7 +187,7 @@ async function renderizarTablaCantos() {
             html += `
                 <tr class="fila-canto" id="fila-${canto.id}">
                     <td style="text-align:left;">
-                        <a href="${enlaceCanto}" id="enlace-${canto.id}" style="text-decoration:none; color:inherit; font-weight:bold;">
+                        <a href="${enlaceCanto}" id="enlace-${canto.id}" class="listcanto">
                             ${canto.titulo}
                         </a>
                     </td>
@@ -218,12 +218,12 @@ async function renderizarTablaCantos() {
 
 
 
-// 4: COMPLETAR DATOS: El equilibrio perfecto entre velocidad y ahorro (Optimizado para dbdata)
+// 4: COMPLETAR DATOS:
 async function completarDatosLentamente(cantos) {
     const user = auth.currentUser;
     if (!user) return;
 
-    const cache = await caches.open('cantos-cache-v2.08');
+    const cache = await caches.open('cantos-cache-v2.09');
     
     // 1. Detectamos el estado del interruptor de sincronización
     const syncToggle = document.getElementById('syncToggle');

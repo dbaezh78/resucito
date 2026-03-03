@@ -467,3 +467,10 @@ input:checked + .slider:before {
     padding-left: 4px;
 
 }
+
+.listcanto {
+    text-decoration:none;
+    color:inherit;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
