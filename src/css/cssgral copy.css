@@ -22,18 +22,7 @@
     --cat: #bde9ff;
     --eleccion: #CEFFCF;
 
-    /* MODO CLARO (Valores por defecto) */
-    --bg-principal: #ffffff;
-    --bg-contenedores: #f5f5f7;
-    --bg-header: #bc0009;
     
-    --texto-principal: #1d1d1f;
-    --texto-secundario: #666666;
-    --texto-blanco: #ffffff;
-    
-    --borde-divisor: #e5e5e5;
-    --accent: #bc0009;
-
 
     /* Variables de colores de fondo para el body (pueden ser más transparentes o diferentes) */
     --precat-body-bg: rgba(255, 255, 255, 0.2);
@@ -64,21 +53,9 @@
     --TrasfondoCanto-Catecumenado: rgba(189, 233, 255, 0.2); /* #bde9ff con 20% de opacidad */
     --TrasfondoCanto-Liturgico: rgba(255, 255, 203, 0.2); /* #FFFFCB con 20% de opacidad */
     --TrasfondoCanto-Eleccion: rgba(206, 255, 207, 0.2); /* #CEFFCF con 20% de opacidad */
-} /* FIN DE ROOT */
-
-/* MODO OSCURO (Valores que cambian) */
-body.dark-theme {
-    --bg-principal: #121212;
-    --bg-contenedores: #2c2c2e; /* El color que pediste */
-    --bg-header: #000000;
-    
-    --texto-principal: #f5f5f7;
-    --texto-secundario: #a1a1a6;
-    --texto-blanco: #ffffff;
-    
-    --borde-divisor: #3a3a3c;
-    --accent: #ff453a; /* Un rojo más vibrante para fondos oscuros */
 }
+
+
 /* REMOVIDO: Colores de fondo basados en clases en el body (antiguos) */
 /* body:has(.precat) {background-color: #282828;} */
 /* body:has(.liturgia) {background-color: #ffffe4;} */
@@ -109,9 +86,7 @@ user-select: none;
 -moz-user-select: none;
 -ms-user-select: none;
 
-    background-color: var(--bg-principal);
-    color: var(--texto-principal);
-    transition: background-color 0.3s ease, color 0.3s ease;
+
 
 }
 

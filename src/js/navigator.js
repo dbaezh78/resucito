@@ -111,7 +111,7 @@
 
         if (user) {
             icon.innerHTML = user.photoURL 
-                ? `<img src="${user.photoURL}" style="width:24px; height:24px; border-radius:50%; border:1px solid #ccc;">`
+                ? `<img src="${user.photoURL}" class="dbperfil">`
                 : `<span class="material-symbols-outlined">person</span>`;
             text.innerText = "Perfil";
             btnAuth.onclick = () => window.location.href = '/perfil.html';

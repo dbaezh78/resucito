@@ -13,7 +13,7 @@
 /* Aplicación global del tamaño de fuente */
 body {
     font-size: var(--font-size-base) !important;
-/*    background-color: #ffffff;*/
+    background-color: #ffffff;
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -119,7 +119,7 @@ body.dark-theme {
    5. CONTENIDO Y ITEMS DE AJUSTE
    ========================================================================== */
 #modal-global-settings .settings-content {
-    padding: 0px 0px 20px 0px;
+    padding: 10px 24px 40px 24px;
     max-height: 70vh;
     overflow-y: auto;
     scrollbar-width: thin; /* Firefox */
@@ -241,72 +241,4 @@ body.dark-theme #modal-global-settings select {
 body.dark-theme #modal-global-settings select option {
     background: #2c2c2e;
     color: white;
-}
-
-/* Barra de pestañas superior */
-.settings-tabs-bar {
-    display: flex;
-    overflow-x: auto;
-    background: #f1f1f1;
-    border-bottom: 1px solid #ddd;
-}
-
-.tab-btn {
-    flex: 1;
-    padding: 12px 1px;
-    border: none;
-    background: transparent;
-    background: lightskyblue;
-    border: 1px solid #83caf5;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 13px;
-    color: black;
-    gap: 4px;
-}
-
-.tab-btn.active {
-
-    color: white;
-    border-bottom: 3px solid #bc0009;
-    background: #eb0909;
-    border: 1px solid grey;
-}
-
-/* Paneles de contenido */
-.tab-panel {
-    display: none;
-    padding: 15px 20px;
-}
-
-.tab-panel.active {
-    display: block;
-}
-
-.setting-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.setting-row label {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.material-symbols-outlined {
-    color: white;
-    width: 40px;
-    height: 40px;
-}
-.material-symbols-outlined:hover {
-    background: white;
-    color: black;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
 }

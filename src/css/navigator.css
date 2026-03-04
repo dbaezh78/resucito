@@ -58,7 +58,9 @@
 }
 
 .nav-item .material-symbols-outlined:hover {
-    color: white;
+    background: white;
+    color: black;
+
 }
 
 /* Estilos del Menú Desplegable (Submenú) */
@@ -80,7 +82,7 @@
 }
 
 .nav-submenu a {
-    padding: 12px 15px;
+    padding: 15px 20px;
     text-decoration: none;
     color: #333;
     font-size: 14px;
@@ -128,6 +130,7 @@ body { padding-bottom: 70px; }
     width:40px;
     height:40px;
     border-radius:50%;
+    border:1px solid #ccc;
     object-fit: cover;
 }
 
@@ -163,9 +166,9 @@ body { padding-bottom: 70px; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0px solid #eee;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .btn-close-settings {
@@ -188,14 +191,14 @@ body { padding-bottom: 70px; }
     align-items: center;
     background: #f8f9fa; /* Gris muy claro/oscuro sutil */
     padding: 15px 20px;
-    margin: -20px -20px 20px -20px; /* Expande al borde del modal */
+    /*margin: -20px -20px 20px -20px; */ /* Expande al borde del modal */ 
     border-radius: 20px 20px 0 0;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 0px solid #e9ecef;
 }
 
 .settings-header h2 {
     font-size: 1.1rem;
-    color: #1a1a1a;
+    color: white;
     margin: 0;
     display: flex;
     align-items: center;
