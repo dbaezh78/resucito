@@ -300,13 +300,20 @@ body.dark-theme #modal-global-settings select option {
 
 .material-symbols-outlined {
     color: white;
+    color: black;
     width: 40px;
     height: 40px;
+    place-content: center;
+    text-align: center;
+
 }
 .material-symbols-outlined:hover {
     background: white;
-    color: black;
+    background: #c42525;
+    color: white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    place-content: center;
+    text-align: center;
 }

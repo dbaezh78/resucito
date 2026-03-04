@@ -1,7 +1,7 @@
 // ==========================================
 // MODULO: DEFINICION DE PESTAÑAS Y OPCIONES
 // ==========================================
-const tabsConfig = [
+window.tabsConfig = [
     {
         id: 'tab-general',
         label: 'General',
