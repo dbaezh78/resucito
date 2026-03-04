@@ -7,7 +7,41 @@ const tabsConfig = [
         label: 'General',
         icon: 'settings',
         secciones: [
-            { label: 'Idioma', tipo: 'select', options: ['Español', 'English', 'Italiano'] },
+            { 
+                id: 'global-set-lang',
+                label: 'Idioma', 
+                tipo: 'select', 
+                storageKey: 'pref-lang',
+                default: 'Español',
+                options: ['Español', 'English', 'Italiano', 'Português', 'Français', 'Latin', 'Ruso', 'Chino'],
+                accion: (val) => {
+                    const langActual = localStorage.getItem('pref-lang') || 'Español';
+                    if (val !== langActual) {
+                        localStorage.setItem('pref-lang', val);
+                        
+                        // Mapeo de Subdominios para redirección
+                        const mapaDominios = {
+                            'Español': 'https://resucito.do',
+                            'English': 'https://en.resucito.do',
+                            'Italiano': 'https://it.resucito.do',
+                            'Português': 'https://po.resucito.do',
+                            'Français': 'https://fr.resucito.do',
+                            'Latin': 'https://la.resucito.do',
+                            'Ruso': 'https://ru.resucito.do',
+                            'Chino': 'https://ch.resucito.do'
+                        };
+
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const cantoId = urlParams.get('canto');
+                        
+                        // Si el idioma no tiene subdominio asignado, vuelve al principal
+                        let nuevaUrl = (mapaDominios[val] || mapaDominios['Español']) + '/src/index.html';
+                        if (cantoId) nuevaUrl += '?canto=' + cantoId;
+
+                        window.location.href = nuevaUrl;
+                    }
+                }
+            },
             { 
                 id: 'global-set-font',
                 label: 'Fuente', 

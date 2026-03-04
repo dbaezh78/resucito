@@ -59,7 +59,7 @@
 
 .nav-item .material-symbols-outlined:hover {
     background: white;
-    color: black;
+    color: var(--SangreDeCristo);
 
 }
 

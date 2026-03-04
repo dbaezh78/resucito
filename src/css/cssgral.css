@@ -17,6 +17,7 @@ Debajo está el proyecto de poner el modo oscuro */
 
 :root {
     --SangreDeCristo: #780606;
+    --Acordes: #780606;
     --vblancas: white;
     --precat: white;
     --liturgia: #FFFFCB;
@@ -563,8 +564,8 @@ display: none;}
     /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
     font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
     font-weight: bold;
-/* color: var(--SangreDeCristo);*/
-    color: rgb(196 76 75);
+    color: var(--Acordes);
+    /*color: rgb(196 76 75);*/
     background-color: transparent;
     white-space: nowrap;
     transform: translateX(-50%);
