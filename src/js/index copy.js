@@ -108,32 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Asumiendo que allCantosData está importado o globalmente disponible
     const currentCanto = typeof allCantosData !== 'undefined' ? allCantosData.find(canto => canto.id === cantoIdToLoad) : null;
 
-if (currentCanto) {
-                console.log("Canto found:", currentCanto.title);
-                loadDynamicCSS(cantoIdToLoad);
 
-                // --- INICIO BLOQUE CEJILLA (Agregado sin borrar nada) ---
-                fetch('/src/data/indicecantos.json') 
-                    .then(response => response.json())
-                    .then(data => {
-                        const infoExtra = data.find(c => c.id === cantoIdToLoad);
-                        if (infoExtra) {
-                            const elContenedor = document.getElementById('info-traste-dinamico');
-                            const elBase = document.getElementById('traste-base');
-                            const elAcorde = document.getElementById('canto-acorde-base');
+    if (currentCanto) {
+        console.log("Canto found:", currentCanto.title);
+        // Llamada a la nueva función para cargar el CSS específico del canto
+        loadDynamicCSS(cantoIdToLoad);
 
-                            if (elContenedor) {
-                                if (elAcorde) elAcorde.innerText = infoExtra.acorde ? `${infoExtra.acorde}` : "";
-                                if (elBase) elBase.innerText = infoExtra.cejilla ||"";
-                                elContenedor.style.display = 'inline-flex';
-                            }
-                            // Llamada a Firebase para transporte guardado (perfil.js)
-                            if (typeof cargarInformacionCejilla === 'function') {
-                                cargarInformacionCejilla(cantoIdToLoad);
-                            }
-                        }
-                    })
-                    .catch(err => console.error("Error cargando datos de cejilla:", err));
+    if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
+        const hoy = new Date().toLocaleDateString();
+        window.firebaseAPI.guardarDato(cantoIdToLoad, hoy, 'historial_uso');
+    }
+
         
         // Procesar las categorías para incluir sus URLs
         const processedCategories = currentCanto.category.map(catName => {

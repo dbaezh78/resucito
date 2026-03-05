@@ -36,10 +36,35 @@
                         style="text-decoration: none; cursor: pointer;">home
                     </a>
 
-                <div class="toolbar mgap"> <!-- Añadida clase mgap aquí -->
+                <div class="toolbar mgap">
+
+                    
+<h1 id="cantoTitle"></h1>
+
+            <div id="info-traste-dinamico" class="info-traste-box" style="display:none;">
+                <div class="traste-item">
+                    <span class="icono-nota">♫</span>
+                    <span id="canto-acorde-base" class="acorde-referencia"></span>
+
+
+                    <img src="/src/ima/cejilla.png" alt="" class="icono-cejilla-img">
+<!--                    <span class="emoji-cejilla">🗜️</span>
+                    -->
+                    <strong id="traste-base"></strong>
+                    
+                </div>
+                
+                <div id="seccion-cambio" class="traste-item" style="display:none;">
+                    <span class="flecha-cambio">➔</span>
+                    <strong id="traste-sugerido"></strong>
+                </div>
+
+<span>/ </span>
+
+
 
                     <!-- Selector para cejilla/traste -->
-                    <select style="background-color: #780606; color: white; border: none;" id="cejillaSelect" class="cejilla toolbar-item" data-default="Cejilla">
+                    <select class="cinta" id="cejillaSelect" class="cejilla toolbar-item" data-default="Cejilla">
                         <option value="0">Cejilla</option>
                         <option value="1">1ᵒ traste</option>
                         <option value="2">2ᵒ traste</option>
@@ -51,6 +76,8 @@
                         <option value="8">8ᵒ traste</option>
                         <!-- Más opciones si es necesario -->
                     </select>
+
+                </div>
 
                     <!-- Icono de libro/vista -->
                      <a href="#" id="CallNotas" class="toolbar-item ibutton">

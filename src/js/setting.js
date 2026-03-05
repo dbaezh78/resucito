@@ -2,11 +2,16 @@
 // MODULO: DEFINICION DE PESTAÑAS Y OPCIONES
 // ==========================================
 window.tabsConfig = [
+// ==========================================
+// MODULO: TAB GENERAL
+// ==========================================
     {
         id: 'tab-general',
         label: 'General',
         icon: 'settings',
         secciones: [
+
+
             { 
                 id: 'global-set-lang',
                 label: 'Idioma', 
@@ -42,6 +47,109 @@ window.tabsConfig = [
                     }
                 }
             },
+
+// ==========================================
+// MANTENER PANTALLA ENCENDIDA
+// ==========================================
+
+            { 
+                id: 'global-set-wakelock',
+                label: 'Mantener pantalla encendida', 
+                tipo: 'switch',
+                storageKey: 'pref-wakelock',
+                default: false,
+                accion: async (val) => {
+                    if (val) {
+                        try {
+                            window.wakeLock = await navigator.wakeLock.request('screen');
+                            document.addEventListener('visibilitychange', window.reestablecerWakeLock);
+                        } catch (err) { console.error("WakeLock Error:", err); }
+                    } else {
+                        if (window.wakeLock) window.wakeLock.release();
+                        window.wakeLock = null;
+                        document.removeEventListener('visibilitychange', window.reestablecerWakeLock);
+                    }
+                    localStorage.setItem('pref-wakelock', val);
+                }
+            },
+
+
+// ==========================================
+// BOTON DE ACTUALIZAR
+// ==========================================
+
+            { 
+                id: 'btn-clear-cache',
+                label: 'Limpiar Caché y Datos', 
+                tipo: 'button',
+                color: '#bc0009',
+                accion: async () => {
+                    if(confirm("⚠ Esto limpiará todo y reiniciará la sesión. ¿Continuar?")) {
+                        localStorage.clear();
+
+                        if ('caches' in window) {
+                            const cacheNames = await caches.keys();
+                            await Promise.all(cacheNames.map(name => caches.delete(name)));
+                        }
+
+                        if ('indexedDB' in window) {
+                            const dbs = await indexedDB.databases();
+                            dbs.forEach(db => { if (db.name) indexedDB.deleteDatabase(db.name); });
+                        }
+
+                        // ACTIVAMOS AMBAS ESTRATEGIAS
+                        sessionStorage.setItem('pending_login', 'true');    // Intento automático
+                        sessionStorage.setItem('force_login_prompt', 'true'); // Refuerzo visual manual
+
+                        window.location.reload(true);
+                    }
+                }
+            },
+
+
+            { 
+                id: 'btn-force-update',
+                label: 'Actualizar Aplicación', 
+                tipo: 'button',
+                color: '#28a745', // Verde
+                accion: () => {
+                    window.location.reload(true); // Fuerza la descarga de archivos nuevos
+                }
+            }
+        ]
+    },
+
+
+
+// ==========================================
+// TAB O MODULO DE LOS CANTOS
+// ==========================================
+
+    {
+        id: 'tab-canto',
+        label: 'Canto',
+        icon: 'music_note',
+        secciones: [
+            { label: 'Mantenimiento', tipo: 'switch' },
+            { label: 'Velocidad', tipo: 'range' },
+            { label: 'URL Nota de Canto', tipo: 'text' },
+            { label: 'Audio', tipo: 'switch' },
+            { label: 'Nota', tipo: 'text' },
+            { label: 'Cejilla', tipo: 'text' },
+            { label: 'Categoría Principal', tipo: 'select', options: ['Precat', 'Cat', 'Liturgia', 'Elección'] },
+            { label: 'Categoría', tipo: 'text' }
+        ]
+    },
+    {
+        id: 'tab-tema',
+        label: 'Tema',
+        icon: 'palette',
+        secciones: [
+
+            // ==========================================
+// FUENTE, TAMAÑO
+// ==========================================
+
             { 
                 id: 'global-set-font',
                 label: 'Fuente', 
@@ -69,48 +177,7 @@ window.tabsConfig = [
                     localStorage.setItem('pref-dark-mode', val);
                 }
             },
-            { 
-                id: 'global-set-wakelock',
-                label: 'Mantener pantalla encendida', 
-                tipo: 'switch',
-                storageKey: 'pref-wakelock',
-                default: false,
-                accion: async (val) => {
-                    if (val) {
-                        try {
-                            window.wakeLock = await navigator.wakeLock.request('screen');
-                            document.addEventListener('visibilitychange', window.reestablecerWakeLock);
-                        } catch (err) { console.error("WakeLock Error:", err); }
-                    } else {
-                        if (window.wakeLock) window.wakeLock.release();
-                        window.wakeLock = null;
-                        document.removeEventListener('visibilitychange', window.reestablecerWakeLock);
-                    }
-                    localStorage.setItem('pref-wakelock', val);
-                }
-            }
-        ]
-    },
-    {
-        id: 'tab-canto',
-        label: 'Canto',
-        icon: 'music_note',
-        secciones: [
-            { label: 'Mantenimiento', tipo: 'switch' },
-            { label: 'Velocidad', tipo: 'range' },
-            { label: 'URL Nota de Canto', tipo: 'text' },
-            { label: 'Audio', tipo: 'switch' },
-            { label: 'Nota', tipo: 'text' },
-            { label: 'Cejilla', tipo: 'text' },
-            { label: 'Categoría Principal', tipo: 'select', options: ['Precat', 'Cat', 'Liturgia', 'Elección'] },
-            { label: 'Categoría', tipo: 'text' }
-        ]
-    },
-    {
-        id: 'tab-tema',
-        label: 'Tema',
-        icon: 'palette',
-        secciones: [
+
             { label: 'Cintillo / Cabecera', tipo: 'color' },
             { label: 'Texto Cabecera', tipo: 'color' },
             { label: 'Fondo del Canto', tipo: 'color' },
@@ -175,7 +242,14 @@ window.generarContenidoSettings = function() {
 // MODULO: RENDERIZADO DE CONTROLES
 // ==========================================
 function renderControl(opt, isChecked, valActual) {
+
+    if (opt.tipo === 'button') {
+        // Cambié opt.label.split(' ')[0] por opt.label para ver el nombre completo
+        return `<button class="btn-setting-action" style="background:${opt.color}" onclick="window.ejecutarAccionTabs('${opt.id}')">${opt.label}</button>`;
+        }
+
     const onchange = opt.accion ? `onchange="window.ejecutarAccionTabs('${opt.id}', this.type === 'checkbox' ? this.checked : this.value)"` : '';
+
 
     if (opt.tipo === 'switch') return `<label class="switch"><input type="checkbox" ${isChecked ? 'checked' : ''} ${onchange}><span class="slider"></span></label>`;
     
@@ -192,6 +266,7 @@ function renderControl(opt, isChecked, valActual) {
     if (opt.tipo === 'text') return `<input type="text" placeholder="..." value="${valActual || ''}" ${onchange}>`;
     if (opt.tipo === 'range') return `<input type="range" ${onchange}>`;
     return '';
+
 }
 
 // ==========================================

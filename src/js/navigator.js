@@ -1,5 +1,5 @@
 (function() {
-    // 1. Inyectar los archivos CSS automáticamente (Corregido)
+    // 1. Inyectar los archivos CSS inmediatamente
     const linkNav = document.createElement('link');
     linkNav.rel = 'stylesheet';
     linkNav.href = '/src/css/navigator.css';
@@ -15,7 +15,8 @@
     scriptSettings.src = '/src/js/setting.js';
     document.head.appendChild(scriptSettings);
 
-    // 3. Crear el HTML de la navegación
+    // 3. Crear el HTML de la navegación 
+    // Añadimos 'style="visibility: hidden"' para evitar el parpadeo sin estilos
     const navHTML = `
         <div class="nav-bottom-bar">
             <a href="/" class="nav-item">
@@ -76,6 +77,12 @@
     `;
 
     document.body.insertAdjacentHTML('beforeend', navHTML);
+
+    // Hacer visible la barra una vez inyectada
+    requestAnimationFrame(() => {
+        const navBar = document.querySelector('.nav-bottom-bar');
+        if (navBar) navBar.style.visibility = 'visible';
+    });
 
     // --- LÓGICA DE SUBMENÚS ---
     const setupSubmenu = (btnId, menuId) => {
@@ -167,7 +174,7 @@ function abrirModalConfiguracion() {
                     Configuración
                 </h2>
                 <button onclick="cerrarModalConfiguracion()" class="btn-close-settings">
-                    <span class="material-symbols-outlined">close</span>
+                    <span class="material-symbols-outlined close">close</span>
                 </button>
             </div>
             <div class="settings-content">
@@ -176,11 +183,16 @@ function abrirModalConfiguracion() {
         </div>
     `;
     
-    document.body.appendChild(modal);
     // Bloquear scroll del body
+    document.body.appendChild(modal);
     document.body.classList.add('modal-open');
     
-    setTimeout(() => modal.classList.add('active'), 10);
+// DISPARAR ANIMACIÓN DE SUBIDA
+    setTimeout(() => {
+        modal.classList.add('active'); // Activa el fondo oscuro
+        modal.querySelector('.settings-frame').classList.add('up'); // Sube el panel
+    }, 10);
+
     document.addEventListener('keydown', manejarEscapeSettings);
 }
 
@@ -193,11 +205,62 @@ function manejarEscapeSettings(e) {
 window.cerrarModalConfiguracion = function() {
     const modal = document.getElementById('modal-global-settings');
     if (modal) {
-        modal.classList.remove('active');
-        // Desbloquear scroll del body
-        document.body.classList.remove('modal-open');
+        modal.querySelector('.settings-frame').classList.remove('up'); // Baja el panel
+        modal.classList.remove('active'); // Quita el fondo
         
+        document.body.classList.remove('modal-open');
         document.removeEventListener('keydown', manejarEscapeSettings);
-        setTimeout(() => modal.remove(), 300);
+        
+        // Esperar a que termine la animación antes de borrar el HTML
+        setTimeout(() => modal.remove(), 400); 
     }
 };
+
+// ==========================================
+// MODULO: GESTIÓN DE LOGIN POST-LIMPIEZA (UNIFICADO)
+// ==========================================
+(function() {
+    window.addEventListener('load', () => {
+        const needsAutoLogin = sessionStorage.getItem('pending_login') === 'true';
+        const needsPrompt = sessionStorage.getItem('force_login_prompt') === 'true';
+
+        if (needsAutoLogin || needsPrompt) {
+            console.log("Iniciando protocolo de recuperación de sesión...");
+
+            // 1. Intentar Autologin (Estrategia Silenciosa/Popup)
+            if (needsAutoLogin) {
+                const loginInterval = setInterval(() => {
+                    if (window.firebaseAPI?.login) {
+                        clearInterval(loginInterval);
+                        sessionStorage.removeItem('pending_login');
+                        window.firebaseAPI.login();
+                    }
+                }, 500);
+                setTimeout(() => clearInterval(loginInterval), 5000);
+            }
+
+            // 2. Refuerzo Visual (Estrategia Manual)
+            // Esperamos 3 segundos para dar tiempo al autologin. 
+            // Si el usuario ya está logueado por el paso anterior, no mostramos el alert.
+            setTimeout(() => {
+                // Verificamos si aún necesitamos el prompt (si no se ha logueado ya)
+                if (sessionStorage.getItem('force_login_prompt') === 'true') {
+                    sessionStorage.removeItem('force_login_prompt');
+                    
+                    const btnAuth = document.getElementById('nav-google-auth');
+                    const isLogged = document.getElementById('nav-logout')?.style.display === 'flex';
+
+                    if (btnAuth && !isLogged) {
+                        btnAuth.style.background = "#bc0009";
+                        btnAuth.style.borderRadius = "8px";
+                        btnAuth.style.color = "white";
+                        btnAuth.style.transform = "scale(1.1)";
+                        btnAuth.style.transition = "all 0.5s ease";
+                        
+                        alert("⚠ Caché limpia. \n Si no viste la ventana de acceso, \n pulsa en el botón 'Entrar' (resaltado en rojo) para iniciar Sesión.");
+                    }
+                }
+            }, 3500); 
+        }
+    });
+})();

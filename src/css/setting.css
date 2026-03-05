@@ -21,8 +21,7 @@ body {
 /* Estado de bloqueo de scroll cuando el modal está abierto */
 body.modal-open {
     overflow: hidden;
-    position: fixed;
-    width: 100%;
+    /*position: fixed;*/
 }
 
 /* Modo Oscuro Global */
@@ -61,7 +60,6 @@ body.dark-theme {
    ========================================================================== */
 #modal-global-settings .settings-frame {
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
     background: var(--bg-modal-light);
     border-radius: 24px 24px 0 0;
@@ -70,6 +68,14 @@ body.dark-theme {
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     box-shadow: 0 -10px 25px rgba(0,0,0,0.2);
     overflow: hidden;
+
+    @media (min-width: 384px){max-width: 100%;}
+    @media (min-width: 768px){max-width: 100%;}
+    @media (min-width: 992px){max-width: 60%;}
+    
+}
+
+#modal-global-settings .settings-frame {
 }
 
 #modal-global-settings.active .settings-frame {
@@ -299,8 +305,8 @@ body.dark-theme #modal-global-settings select option {
 }
 
 .material-symbols-outlined {
-    color: white;
-    color: black;
+    color: inherit;
+/*    color: black;*/
     width: 40px;
     height: 40px;
     place-content: center;
@@ -317,3 +323,79 @@ body.dark-theme #modal-global-settings select option {
     place-content: center;
     text-align: center;
 }
+
+.material-symbols-outlined.close:hover {
+    height: 25px;
+}
+
+
+/* TAMAÑO DEL SETTING*/
+
+/* Ajuste de ancho del setting al 90% */
+.settings-frame {
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Estilo para los botones de limpieza y actualización */
+.btn-setting-action {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-setting-action:active {
+    transform: scale(0.95); /* Efecto de pulsado */
+    box-shadow: none;
+}
+
+
+/* DESPLAZAMIENTO DESDE ABAJO*/
+
+/* Contenedor del fondo */
+.settings-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0);
+    z-index: 10000;
+    display: flex;
+    align-items: flex-end; /* Lo pega abajo */
+    transition: background 0.3s ease;
+}
+
+.settings-overlay.active {
+    background: rgba(0,0,0,0.5);
+}
+
+/* El panel que sube */
+.settings-frame {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px 20px 0 0;
+    /* Empieza abajo de todo */
+    transform: translateY(100%); 
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Clase que activa la subida */
+.settings-frame.up {
+    transform: translateY(0);
+}
+
+
+
+/*
+    width: 90% !important; /* Forzamos el 90% del ancho de pantalla */
+/*    max-width: 500px;      /* Pero le ponemos un tope para que en PC no sea gigante *//*
+*/

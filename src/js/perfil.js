@@ -1354,3 +1354,69 @@ async function descargarArchivosParaOffline(listaIds) {
         console.error("❌ Fallo al guardar archivos en caché:", error);
     }
 }
+
+
+// 40: // Función para mostrar la cejilla combinando JSON y Firebase
+async function cargarInformacionCejilla(cantoId) {
+    const elContenedor = document.getElementById('info-traste-dinamico');
+    const elBase = document.getElementById('traste-base');
+    const elSugerido = document.getElementById('traste-sugerido');
+    const elSeccion = document.getElementById('seccion-cambio');
+
+    // Verificación de seguridad: ¿Existen los elementos en el HTML actual?
+    if (!elContenedor || !elBase) {
+        console.warn("Módulo Cejilla: No se encontraron los elementos HTML necesarios en esta página.");
+        return;
+    }
+
+    let cejillaOriginal = "0";
+
+    // --- 1. OBTENER DESDE EL JSON (indicecantos.json) ---
+    // Asegúrate de que 'allCantosData' es la variable global que contiene el JSON cargado
+    if (typeof allCantosData !== 'undefined' && Array.isArray(allCantosData)) {
+        const datosLocal = allCantosData.find(c => c.id === cantoId);
+        
+        if (datosLocal) {
+            // REVISIÓN CLAVE: En tu JSON el campo debe llamarse 'cejilla'
+            cejillaOriginal = datosLocal.cejilla || "0";
+            console.log(`Módulo Cejilla: Encontrada cejilla original ${cejillaOriginal} para el canto ${cantoId}`);
+        } else {
+            console.error(`Módulo Cejilla: El canto con ID ${cantoId} no se encontró en el JSON.`);
+        }
+    } else {
+        console.error("Módulo Cejilla: La variable global 'allCantosData' no está definida o no es un array.");
+    }
+    
+    // Pintamos la cejilla base y mostramos el contenedor principal
+    elBase.innerText = cejillaOriginal;
+    elContenedor.style.display = 'inline-flex'; // Usamos flex para alinear icono y número
+
+
+    // --- 2. OBTENER DESDE FIREBASE (Preferencia guardada del usuario) ---
+    // Solo intentamos si la API de Firebase está lista
+    if (window.firebaseAPI && typeof window.firebaseAPI.obtenerDato === 'function') {
+        try {
+            // 'preferencias_cantos' es el nombre de tu colección en Firestore
+            const prefUsuario = await window.firebaseAPI.obtenerDato(cantoId, 'preferencias_cantos');
+            
+            if (prefUsuario && prefUsuario.transporte !== undefined) {
+                // El transporte es un número relativo (ej: +2, -1 semitonos)
+                const transporte = parseInt(prefUsuario.transporte);
+                
+                // Si hay transporte guardado y es distinto de cero
+                if (transporte !== 0) {
+                    const nuevaCejilla = parseInt(cejillaOriginal) + transporte;
+                    
+                    // Mostramos la sugerencia calculada
+                    if (elSeccion && elSugerido) {
+                        elSeccion.style.display = 'flex'; // Usamos flex para alinear flecha y número
+                        elSugerido.innerText = nuevaCejilla;
+                        console.log(`Módulo Cejilla: Aplicado transporte de ${transporte} semitonos. Nueva cejilla sugerida: ${nuevaCejilla}`);
+                    }
+                }
+            }
+        } catch (err) {
+            console.error("Error al traer cejilla de Firebase:", err);
+        }
+    }
+}

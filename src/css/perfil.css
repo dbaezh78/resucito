@@ -560,3 +560,9 @@ input:checked + .slider:before {
     font-size: 13px;
     color: #999;
 }
+
+.cinta {
+    background-color: #780606; 
+    color: white; 
+    border: none;
+}
