@@ -214,33 +214,14 @@ if (currentCanto) {
 
 
 // Dentro de tu index.js, donde manejas el clic a un canto:
-function abrirCanto(cantoId) {
-    // ... tu lógica para abrir la página del canto ...
-    
-    // REGISTRO DE USO PARA EL CALENDARIO
-    if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
-        const hoy = new Date().toLocaleDateString(); // Ejemplo: "24/1/2026"
-        
-        // Guardamos la fecha en la colección 'historial_uso'
-        window.firebaseAPI.guardarDato(cantoId, hoy, 'historial_uso');
-        
-        console.log(`📅 Uso registrado: ${cantoId} el ${hoy}`);
-    }
-
-    // Finalmente rediriges al canto
-    window.location.href = `src/html/pantalla.html?canto=${cantoId}`;
-}
-
-// MODIFICACIÓN AL FINAL DEL ARCHIVO
 window.abrirCanto = function(cantoId) {
-    // REGISTRO DE USO PARA EL CALENDARIO
+    // 1. Registro de uso para el calendario (Firebase)
     if (window.firebaseAPI && typeof window.firebaseAPI.guardarDato === 'function') {
         const hoy = new Date().toLocaleDateString(); 
         window.firebaseAPI.guardarDato(cantoId, hoy, 'historial_uso');
-        console.log(`📅 Uso registrado: ${cantoId} el ${hoy}`);
+        console.log(`📅 Uso registrado: ${cantoId}`);
     }
 
-    // Redirección
+    // 2. Redirección limpia al canto
     window.location.href = `src/html/pantalla.html?canto=${cantoId}`;
-
-}
+};

@@ -14,17 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentCanto = allCantosData.find(canto => canto.id === cantoIdToLoad);
 
     // 4. Verificar la propiedad 'mant' del canto actual
-        //const prefMantGlobal = localStorage.getItem('pref-mant-active') !== 'false';
-        const prefMantGlobal = localStorage.getItem('pref-mant-active') == 'true';
-
-        if (!currentCanto || (currentCanto.mant !== "Si" && !prefMantGlobal)) {
-            console.log("Movimiento deshabilitado: Activa 'Mostrar Ubicación' en Settings.");
-            console.log("showAcorde.js deshabilitado: El canto no es 'Si' o el ajuste global está en 'No'.");
-            return; 
-        }
+    if (!currentCanto || currentCanto.mant !== "Si") {
+        console.log("showAcorde.js deshabilitado para este canto (mant: No o no definido).");
+        return; // Salir de la función si el mantenimiento no está habilitado
+    }
 
     console.log("showAcorde.js habilitado para este canto (mant: Si).");
-    console.log("Modo Edición (Movimiento) activado.");
 
     // Selecciona todos los elementos de acordes que tienen la clase 'nota-posicionada'
     const chordNotes = document.querySelectorAll('.nota-posicionada');

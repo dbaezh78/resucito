@@ -1011,37 +1011,78 @@ if (nCanElement) {
         });
     }
 
-    // 27.21 Lógica para el scroll automático
-    if (startScrollBtn && scrollIcon) {
-        // Determinar el tipo de dispositivo actual
-        const deviceType = getDeviceType(window.innerWidth);
-        let selectedScrollConfig = null;
+// 27.21 Función para obtener la velocidad (Prioridad: LocalStorage > JSON > Global)
+// --- 27.21 Lógica para el scroll automático mejorada ---
 
-        if (cantoSpecificData.scrollConfig) {
-            selectedScrollConfig = cantoSpecificData.scrollConfig[deviceType];
-        }
+// 1. Función para detectar dispositivo (Prioriza el ancho de ventana)
+function getDeviceType(width) {
+    if (width < 768) return 'mobile';
+    if (width < 992) return 'tablet';
+    return 'desktop';
+}
 
-        if (selectedScrollConfig) {
-            scrollSpeed = selectedScrollConfig.velocidad;
-            scrollIncrement = selectedScrollConfig.incremento;
-        } else {
-            console.warn(`No se encontró configuración de scroll para ${deviceType}. Usando valores por defecto.`);
-            // scrollSpeed y scrollIncrement ya tienen valores por defecto definidos globalmente.
-        }
+// 2. Función de obtención de configuración (Jerarquía: LocalStorage > Archivo > Global)
+const obtenerConfiguracionScroll = () => {
+    const params = new URLSearchParams(window.location.search);
+    const cantoId = params.get('canto');
+    const device = getDeviceType(window.innerWidth);
 
-        startScrollBtn.onclick = (event) => {
-            event.preventDefault();
-            if (isScrolling) {
-                stopAutoScroll();
-            } else {
-                startAutoScroll();
-            }
-        };
-    }
+    // Valores Globales (Red de seguridad)
+    const globalDefaults = {
+        mobile: { v: 6, i: 3 },
+        tablet: { v: 7, i: 1 },
+        desktop: { v: 7, i: 1 },
+        desktopsmall: { v: 7, i: 1 }
+    };
 
-    // 27.22 Función para iniciar el scroll automático
-    const startAutoScroll = () => {
-        if (isScrolling) return; // Evitar iniciar múltiples intervalos
+    // Valores del archivo (Si no existen en el objeto, usa los globales)
+    const fileDefaults = (typeof cantoSpecificData !== 'undefined' && cantoSpecificData.scrollConfig) 
+                         ? cantoSpecificData.scrollConfig 
+                         : globalDefaults;
+
+    // Valores de LocalStorage (Lo que el usuario ajustó en Settings)
+    const localVel = localStorage.getItem(`scroll_v_${device}_${cantoId}`);
+
+    // Aplicación de jerarquía
+    const vFinal = localVel ? parseInt(localVel) : (fileDefaults[device]?.v || fileDefaults[device]?.velocidad || globalDefaults[device].v);
+    const iFinal = fileDefaults[device]?.i || fileDefaults[device]?.incremento || globalDefaults[device].i;
+
+    return { velocidad: vFinal, incremento: iFinal };
+};
+
+// 3. Variables de control
+let isScrolling = false;
+let scrollInterval;
+const startScrollBtn = document.getElementById('start-scroll');
+const scrollIcon = startScrollBtn ? startScrollBtn.querySelector('.material-icons') : null;
+
+// 4. Funciones de acción
+const startAutoScroll = () => {
+    const config = obtenerConfiguracionScroll(); // Lee la velocidad configurada
+    isScrolling = true;
+    if (scrollIcon) scrollIcon.textContent = 'pause';
+
+    scrollInterval = setInterval(() => {
+        window.scrollBy(0, config.incremento);
+    }, config.velocidad * 10);
+};
+
+const stopAutoScroll = () => {
+    isScrolling = false;
+    if (scrollIcon) scrollIcon.textContent = 'play_arrow';
+    clearInterval(scrollInterval);
+};
+
+// 5. Vinculación al botón
+if (startScrollBtn) {
+    startScrollBtn.onclick = (e) => {
+        e.preventDefault();
+        if (isScrolling) stopAutoScroll();
+        else startAutoScroll();
+    };
+}
+
+// 27.22 Función para iniciar el scroll automático
 
         isScrolling = true;
         scrollIcon.textContent = 'pause'; // Cambiar icono a pausa
@@ -1459,3 +1500,10 @@ function habilitarMovimientoLibre(el, display) {
 console.log("Canto rendering complete.");
 adjustNotePositions(); // Esto posiciona los acordes como siempre
 toggleAcordeLocation(); // Esto muestra los números solo si el switch está en SI
+
+
+function getDeviceType(width) {
+    if (width < 768) return 'mobile';
+    if (width < 992) return 'tablet';
+    return 'desktop';
+}

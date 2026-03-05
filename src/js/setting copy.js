@@ -1,6 +1,3 @@
-const urlParams = new URLSearchParams(window.location.search);
-const currentCantoId = urlParams.get('canto');
-
 // ==========================================
 // MODULO: DEFINICION DE PESTAÑAS Y OPCIONES
 // ==========================================
@@ -138,78 +135,48 @@ window.tabsConfig = [
                 icon: 'music_note',
                 secciones: [
 
-// ******** FUNCION DE MANTENIMIENTO CORREGIDA ********
-{ 
-    id: 'set-mant-canto',
-    label: 'Mostrar Ubicación', 
-    tipo: 'switch', 
-    storageKey: 'pref-mant-active',
-    default: false,
-    accion: (val) => {
-        // 1. Si el usuario intenta encender el switch
-        if (val === true || val === 'true') {
-            
-            // Intentamos obtener el correo de la sesión activa
-            const userEmail = window.userEmailActivo || 
-                              (window.firebaseAPI && window.firebaseAPI.obtenerUsuarioActual()?.email);
+// ******** FUNCION DE MANTENIMIENTO ********
+                    { 
+                        id: 'set-mant-canto',
+                        label: 'Mostrar Ubicación', 
+                        tipo: 'switch',
+                        storageKey: 'pref-mant-active',
+                        default: false,
+                        accion: (val) => {
+                            if (val === true || val === 'true') {
+                                
+                                // Intentamos obtener el correo de varias formas para no fallar
+                                const userEmail = window.userEmailActivo || 
+                                                (window.firebaseAPI && window.firebaseAPI.obtenerUsuarioActual()?.email);
 
-            // Correo con error intencional para tu prueba de seguridad
-            const listaAutorizada = ["dbaezh78@gmail.com", "admin@resucito.do"];
+                                const listaAutorizada = ["dbaezh78@gmail.com", "admin@resucito.do"];
 
-            // Validación automática por correo
-            if (userEmail && listaAutorizada.includes(userEmail.toLowerCase())) {
-                localStorage.setItem('pref-mant-active', 'true');
-                if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
-                return; 
-            }
+                                // Si el correo coincide, activamos directo sin pedir clave
+                                if (userEmail && listaAutorizada.includes(userEmail.toLowerCase())) {
+                                    localStorage.setItem('pref-mant-active', 'true');
+                                    if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
+                                    return; 
+                                }
 
-            // 2. Validación por código si falla el correo
-            const pass = prompt("Acceso restringido. Introduce el código de editor:");
-            
-            if (pass === "7777") {
-                localStorage.setItem('pref-mant-active', 'true');
-                if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
-            } else {
-                // SI EL CÓDIGO ES INCORRECTO
-                alert("Código incorrecto o permisos insuficientes.");
-                localStorage.setItem('pref-mant-active', 'false');
-
-                // RESETEO VISUAL FORZADO
-                setTimeout(() => {
-                    // Buscamos el input por varios selectores posibles para no fallar
-                    const input = document.querySelector('input[data-key="pref-mant-active"]') || 
-                                  document.getElementById('set-mant-canto') || 
-                                  document.querySelector('[data-id="set-mant-canto"] input');
-                    
-                    if (input) {
-                        input.checked = false; // Apaga el check físicamente
-                        
-                        // Buscamos el contenedor padre (el que suele tener el color verde/activo)
-                        const container = input.closest('.switch') || 
-                                          input.closest('.option-item') || 
-                                          input.parentElement;
-                        
-                        if (container) {
-                            container.classList.remove('active'); // Quita el color de encendido
-                            container.classList.remove('on');
+                                // Si no hay correo autorizado, entonces sí pedimos la clave
+                                const pass = prompt("Acceso restringido. Introduce el código de editor:");
+                                if (pass === "7777") {
+                                    localStorage.setItem('pref-mant-active', 'true');
+                                    if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
+                                } else {
+                                    alert("No tienes permisos para editar.");
+                                    localStorage.setItem('pref-mant-active', 'false');
+                                    
+                                    // Apagamos el switch visualmente
+                                    const sw = document.querySelector('[data-id="set-mant-canto"] input');
+                                    if (sw) sw.checked = false;
+                                }
+                            } else {
+                                localStorage.setItem('pref-mant-active', 'false');
+                                if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
+                            }
                         }
-
-                        // Disparamos el evento para avisar a la interfaz del cambio
-                        input.dispatchEvent(new Event('change', { bubbles: true }));
-                    }
-
-                    // Limpiamos los números rojos del canto si se llegaron a pintar
-                    if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
-                }, 150);
-            }
-        } 
-        // 3. Si el usuario apaga el switch manualmente
-        else {
-            localStorage.setItem('pref-mant-active', 'false');
-            if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
-        }
-    }
-},
+                    },
                     { 
                         id: 'set-vel-canto',
                         label: 'Velocidad Autoscroll', 
@@ -219,62 +186,6 @@ window.tabsConfig = [
                         default: 5,
                         accion: (val) => localStorage.setItem('pref-auto-scroll-vel', val)
                     },
-
-
-// VELOCIDAD AUTO SCROLL
-
-
-// Dentro de tab-canto en setting.js
-// Dentro de la pestaña de cantos en setting.js
-// Obtener el ID del canto actual para cargar sus velocidades en las barras
-
-// Dentro de tab-canto en setting.js
-{
-    id: 'group-velocidad-canto',
-    label: 'Velocidad de Auto-Scroll',
-    tipo: 'group',
-    elementos: [
-        {
-            id: 'scroll-v-mobile',
-            label: '📱 Móvil',
-            tipo: 'range',
-            min: 1, max: 20, step: 1,
-            // Mostramos el valor guardado o el que viene por defecto
-            storageKey: `scroll_v_mobile_${currentCantoId}`,
-            accion: (val) => {
-                if (typeof window.guardarVelocidadCanto === 'function') {
-                    window.guardarVelocidadCanto('mobile', val);
-                }
-            }
-        },
-        {
-            id: 'scroll-v-tablet',
-            label: '平板 Tablet',
-            tipo: 'range',
-            min: 1, max: 20, step: 1,
-            storageKey: `scroll_v_tablet_${currentCantoId}`,
-            accion: (val) => {
-                if (typeof window.guardarVelocidadCanto === 'function') {
-                    window.guardarVelocidadCanto('tablet', val);
-                }
-            }
-        },
-        {
-            id: 'scroll-v-pc',
-            label: '💻 PC / Escritorio',
-            tipo: 'range',
-            min: 1, max: 20, step: 1,
-            storageKey: `scroll_v_desktop_${currentCantoId}`,
-            accion: (val) => {
-                if (typeof window.guardarVelocidadCanto === 'function') {
-                    window.guardarVelocidadCanto('desktop', val);
-                }
-            }
-        }
-    ]
-},
-
-
                     { 
                         id: 'set-url-nota',
                         label: 'URL Nota de Canto', 

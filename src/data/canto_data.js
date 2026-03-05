@@ -4,7 +4,16 @@ Posible fuente para acorde: sans-serif, 'system-ui', cursive, sans-serif
 font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
 
 Generar espacio: \u200B   , lo que est'a entre la coma es el espacio que se generó
+*/
+// Valores estándar para cualquier canto nuevo
+const DEFAULT_SCROLL_CONFIG = {
+    mobile: { velocidad: 6, incremento: 3 },
+    tablet: { velocidad: 7, incremento: 1 },
+    desktop: { velocidad: 7, incremento: 1 },
+    desktopsmall: { velocidad: 7, incremento: 1 }
+};
 
+/*
 ╔═══════════════════════════════════════════════════════════╗
 ║                A LA VICTIMA PASCUAL                       ║
 ╚═══════════════════════════════════════════════════════════╝  */
