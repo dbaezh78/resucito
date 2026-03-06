@@ -400,3 +400,25 @@ body.dark-theme #modal-global-settings select option {
 /*    max-width: 500px;      /* Pero le ponemos un tope para que en PC no sea gigante *//*
 */
 
+
+/* NOTAS DE PIE DE PAGINA*/
+
+#nCan a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del tema */
+    border-bottom: 1px dashed #bc0009; /* Línea discontinua roja debajo */
+    transition: all 0.3s ease;
+}
+
+#nCan a:hover {
+    color: #bc0009;
+    border-bottom: 1px solid #bc0009;
+}
+
+.nota-personal-label {
+    font-weight: bold;
+    color: #bc0009;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    margin-right: 4px;
+}

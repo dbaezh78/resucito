@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const currentCantoId = urlParams.get('canto');
+const currentCantoId = urlParams.get('canto') || 'global';
 
 // ==========================================
 // MODULO: DEFINICION DE PESTAÑAS Y OPCIONES
@@ -123,193 +123,157 @@ window.tabsConfig = [
         ]
     },
 
+                // ==========================================
+                // TAB O MODULO DE LOS CANTOS
+                // ==========================================
+                            {
+                                id: 'tab-canto',
+                                label: 'Canto',
+                                icon: 'music_note',
+                                secciones: [
 
+                // ******** FUNCION DE MANTENIMIENTO CORREGIDA ********
+                { 
+                    id: 'set-mant-canto',
+                    label: 'Mostrar Ubicación', 
+                    tipo: 'switch', 
+                    storageKey: 'pref-mant-active',
+                    default: false,
+                    accion: (val) => {
+                        // 1. Si el usuario intenta encender el switch
+                        if (val === true || val === 'true') {
+                            
+                            // Intentamos obtener el correo de la sesión activa
+                            const userEmail = window.userEmailActivo || 
+                                            (window.firebaseAPI && window.firebaseAPI.obtenerUsuarioActual()?.email);
 
+                            // Correo con error intencional para tu prueba de seguridad
+                            const listaAutorizada = ["dbaezh78@gmail.com", "admin@resucito.do"];
 
+                            // Validación automática por correo
+                            if (userEmail && listaAutorizada.includes(userEmail.toLowerCase())) {
+                                localStorage.setItem('pref-mant-active', 'true');
+                                if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
+                                return; 
+                            }
 
+                            // 2. Validación por código si falla el correo
+                            const pass = prompt("Acceso restringido. Introduce el código de editor:");
+                            
+                            if (pass === "7777") {
+                                localStorage.setItem('pref-mant-active', 'true');
+                                if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
+                            } else {
+                                // SI EL CÓDIGO ES INCORRECTO
+                                alert("Código incorrecto o permisos insuficientes.");
+                                localStorage.setItem('pref-mant-active', 'false');
 
+                                // RESETEO VISUAL FORZADO
+                                setTimeout(() => {
+                                    // Buscamos el input por varios selectores posibles para no fallar
+                                    const input = document.querySelector('input[data-key="pref-mant-active"]') || 
+                                                document.getElementById('set-mant-canto') || 
+                                                document.querySelector('[data-id="set-mant-canto"] input');
+                                    
+                                    if (input) {
+                                        input.checked = false; // Apaga el check físicamente
+                                        
+                                        // Buscamos el contenedor padre (el que suele tener el color verde/activo)
+                                        const container = input.closest('.switch') || 
+                                                        input.closest('.option-item') || 
+                                                        input.parentElement;
+                                        
+                                        if (container) {
+                                            container.classList.remove('active'); // Quita el color de encendido
+                                            container.classList.remove('on');
+                                        }
 
-// ==========================================
-// TAB O MODULO DE LOS CANTOS
-// ==========================================
-            {
-                id: 'tab-canto',
-                label: 'Canto',
-                icon: 'music_note',
-                secciones: [
+                                        // Disparamos el evento para avisar a la interfaz del cambio
+                                        input.dispatchEvent(new Event('change', { bubbles: true }));
+                                    }
 
-// ******** FUNCION DE MANTENIMIENTO CORREGIDA ********
-{ 
-    id: 'set-mant-canto',
-    label: 'Mostrar Ubicación', 
-    tipo: 'switch', 
-    storageKey: 'pref-mant-active',
-    default: false,
-    accion: (val) => {
-        // 1. Si el usuario intenta encender el switch
-        if (val === true || val === 'true') {
-            
-            // Intentamos obtener el correo de la sesión activa
-            const userEmail = window.userEmailActivo || 
-                              (window.firebaseAPI && window.firebaseAPI.obtenerUsuarioActual()?.email);
-
-            // Correo con error intencional para tu prueba de seguridad
-            const listaAutorizada = ["dbaezh78@gmail.com", "admin@resucito.do"];
-
-            // Validación automática por correo
-            if (userEmail && listaAutorizada.includes(userEmail.toLowerCase())) {
-                localStorage.setItem('pref-mant-active', 'true');
-                if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
-                return; 
-            }
-
-            // 2. Validación por código si falla el correo
-            const pass = prompt("Acceso restringido. Introduce el código de editor:");
-            
-            if (pass === "7777") {
-                localStorage.setItem('pref-mant-active', 'true');
-                if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
-            } else {
-                // SI EL CÓDIGO ES INCORRECTO
-                alert("Código incorrecto o permisos insuficientes.");
-                localStorage.setItem('pref-mant-active', 'false');
-
-                // RESETEO VISUAL FORZADO
-                setTimeout(() => {
-                    // Buscamos el input por varios selectores posibles para no fallar
-                    const input = document.querySelector('input[data-key="pref-mant-active"]') || 
-                                  document.getElementById('set-mant-canto') || 
-                                  document.querySelector('[data-id="set-mant-canto"] input');
-                    
-                    if (input) {
-                        input.checked = false; // Apaga el check físicamente
-                        
-                        // Buscamos el contenedor padre (el que suele tener el color verde/activo)
-                        const container = input.closest('.switch') || 
-                                          input.closest('.option-item') || 
-                                          input.parentElement;
-                        
-                        if (container) {
-                            container.classList.remove('active'); // Quita el color de encendido
-                            container.classList.remove('on');
+                                    // Limpiamos los números rojos del canto si se llegaron a pintar
+                                    if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
+                                }, 150);
+                            }
+                        } 
+                        // 3. Si el usuario apaga el switch manualmente
+                        else {
+                            localStorage.setItem('pref-mant-active', 'false');
+                            if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
                         }
-
-                        // Disparamos el evento para avisar a la interfaz del cambio
-                        input.dispatchEvent(new Event('change', { bubbles: true }));
                     }
+                },
 
-                    // Limpiamos los números rojos del canto si se llegaron a pintar
-                    if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
-                }, 150);
-            }
-        } 
-        // 3. Si el usuario apaga el switch manualmente
-        else {
-            localStorage.setItem('pref-mant-active', 'false');
-            if (typeof toggleAcordeLocation === 'function') toggleAcordeLocation();
+                // ==========================================
+                // VELOCIDAD AUTO SCROLL (DETECCIÓN AUTOMÁTICA)
+                // ==========================================
+// Busca estas secciones en tu window.tabsConfig
+{
+    id: 'set-scroll-v',
+    label: `Velocidad Canto (${(function() {
+        const w = window.innerWidth;
+        if (w < 768) return 'Móvil';
+        if (w < 992) return 'Tablet';
+        return 'PC';
+    })()})`,
+    tipo: 'range',
+    min: 1, max: 40, step: 1,
+    storageKey: `scroll_v_${(window.innerWidth < 768 ? 'mobile' : window.innerWidth < 992 ? 'tablet' : 'desktop')}_${currentCantoId}`,
+    // Agregamos esManual (por defecto false)
+    accion: (val, esManual = false) => {
+        const device = window.innerWidth < 768 ? 'mobile' : window.innerWidth < 992 ? 'tablet' : 'desktop';
+        if (window.guardarVelocidadCanto) {
+            // Pasamos el parámetro esManual a la función de Firebase
+            window.guardarVelocidadCanto(device, val, 'v', esManual);
         }
+        if (typeof window.refrescarScrollEnVivo === 'function') window.refrescarScrollEnVivo();
     }
 },
-                    { 
-                        id: 'set-vel-canto',
-                        label: 'Velocidad Autoscroll', 
-                        tipo: 'range',
-                        min: 1, max: 10,
-                        storageKey: 'pref-auto-scroll-vel',
-                        default: 5,
-                        accion: (val) => localStorage.setItem('pref-auto-scroll-vel', val)
-                    },
-
-
-// VELOCIDAD AUTO SCROLL
-
-
-// Dentro de tab-canto en setting.js
-// Dentro de la pestaña de cantos en setting.js
-// Obtener el ID del canto actual para cargar sus velocidades en las barras
-
-// Dentro de tab-canto en setting.js
 {
-    id: 'group-velocidad-canto',
-    label: 'Velocidad de Auto-Scroll',
-    tipo: 'group',
-    elementos: [
-        {
-            id: 'scroll-v-mobile',
-            label: '📱 Móvil',
-            tipo: 'range',
-            min: 1, max: 20, step: 1,
-            // Mostramos el valor guardado o el que viene por defecto
-            storageKey: `scroll_v_mobile_${currentCantoId}`,
-            accion: (val) => {
-                if (typeof window.guardarVelocidadCanto === 'function') {
-                    window.guardarVelocidadCanto('mobile', val);
-                }
-            }
-        },
-        {
-            id: 'scroll-v-tablet',
-            label: '平板 Tablet',
-            tipo: 'range',
-            min: 1, max: 20, step: 1,
-            storageKey: `scroll_v_tablet_${currentCantoId}`,
-            accion: (val) => {
-                if (typeof window.guardarVelocidadCanto === 'function') {
-                    window.guardarVelocidadCanto('tablet', val);
-                }
-            }
-        },
-        {
-            id: 'scroll-v-pc',
-            label: '💻 PC / Escritorio',
-            tipo: 'range',
-            min: 1, max: 20, step: 1,
-            storageKey: `scroll_v_desktop_${currentCantoId}`,
-            accion: (val) => {
-                if (typeof window.guardarVelocidadCanto === 'function') {
-                    window.guardarVelocidadCanto('desktop', val);
-                }
-            }
+    id: 'set-scroll-i',
+    label: 'Incremento Scroll (px)',
+    tipo: 'range',
+    min: 1, max: 15, step: 1,
+    storageKey: `scroll_i_${(window.innerWidth < 768 ? 'mobile' : window.innerWidth < 992 ? 'tablet' : 'desktop')}_${currentCantoId}`,
+    accion: (val, esManual = false) => {
+        const device = window.innerWidth < 768 ? 'mobile' : window.innerWidth < 992 ? 'tablet' : 'desktop';
+        if (window.guardarVelocidadCanto) {
+            window.guardarVelocidadCanto(device, val, 'i', esManual);
         }
-    ]
+        if (typeof window.refrescarScrollEnVivo === 'function') window.refrescarScrollEnVivo();
+    }
 },
 
 
-                    { 
-                        id: 'set-url-nota',
-                        label: 'URL Nota de Canto', 
-                        tipo: 'text',
-                        placeholder: 'https://...',
-                        storageKey: 'pref-url-pdf'
-                    },
-                    { 
-                        id: 'set-audio-canto',
-                        label: 'Reproductor de Audio', 
-                        tipo: 'switch',
-                        storageKey: 'pref-audio-visible',
-                        default: true,
-                        accion: (val) => {
-                            const audioPlayer = document.getElementById('canto-audio-player');
-                            if (audioPlayer) audioPlayer.style.display = val ? 'block' : 'none';
+
+                // ==========================================
+                // NOTA Y URL DE LA NOTA DEL CANTOR
+                // ==========================================
+
+                { 
+                    id: 'set-nota-personal',
+                    label: 'Nota Personal del Cantor', 
+                    tipo: 'text',
+                    storageKey: `nota_personal_${currentCantoId}`,
+                    accion: (val) => {
+                        // Llamamos a la nueva función que guarda en LocalStorage y Firebase a la vez
+                        if (window.guardarNotaPersonalCanto) {
+                            window.guardarNotaPersonalCanto(val, 'nota');
                         }
-                    },
-                    { 
-                        id: 'set-cejilla-canto',
-                        label: 'Cejilla Sugerida', 
-                        tipo: 'text',
-                        storageKey: 'pref-cejilla-user',
-                        accion: (val) => {
-                            const elSugerido = document.getElementById('traste-sugerido');
-                            if (elSugerido) elSugerido.innerText = val;
-                        }
-                    },
-                    { 
-                        id: 'set-cat-principal',
-                        label: 'Categoría Principal', 
-                        tipo: 'select', 
-                        options: ['Precat', 'Cat', 'Liturgia', 'Elección'],
-                        storageKey: 'pref-cat-main'
                     }
+                },
+                { 
+                    id: 'set-url-personal',
+                    label: 'Agregar URL a la nota Personal del cantor (YouTube/PDF)', 
+                    tipo: 'text',
+                    storageKey: `url_personal_${currentCantoId}`,
+                    accion: (val) => {
+                        if (window.guardarNotaPersonalCanto) {
+                            window.guardarNotaPersonalCanto(val, 'url');
+                        }
+                    }
+                },
                 ]
             },
 
@@ -400,12 +364,27 @@ window.generarContenidoSettings = function() {
     const tabsContent = tabsConfig.map((tab, index) => `
         <div id="${tab.id}" class="tab-panel ${index === 0 ? 'active' : ''}">
             ${tab.secciones.map(opt => {
+                // 1. Intentar obtener el valor del LocalStorage
                 const valorGuardado = opt.storageKey ? localStorage.getItem(opt.storageKey) : null;
-                const isChecked = opt.tipo === 'switch' ? (valorGuardado === 'true' || (valorGuardado === null && opt.default === true)) : false;
-                const valActual = valorGuardado || opt.default;
+                
+                // 2. FILTRO DE SEGURIDAD: 
+                // Si el valor es nulo o es la palabra "undefined"/"null" por error, 
+                // usamos el valor por defecto (opt.default) o una cadena vacía.
+                const valorLimpio = (valorGuardado === null || valorGuardado === "undefined" || valorGuardado === "null") 
+                                    ? (opt.default !== undefined ? opt.default : "") 
+                                    : valorGuardado;
+
+                // 3. Lógica para los interruptores (Switch)
+                // Comparamos contra el valor ya limpio
+                const isChecked = opt.tipo === 'switch' 
+                                  ? (valorLimpio === 'true' || valorLimpio === true) 
+                                  : false;
+
+                // 4. El valor final que se enviará al renderControl (Input, Select, Range, etc.)
+                const valActual = valorLimpio;
 
                 return `
-                <div class="setting-row">
+                <div class="setting-row" data-id="${opt.id}">
                     <label>${opt.label}</label>
                     <div class="setting-control">${renderControl(opt, isChecked, valActual)}</div>
                 </div>`;
@@ -420,14 +399,11 @@ window.generarContenidoSettings = function() {
 // MODULO: RENDERIZADO DE CONTROLES
 // ==========================================
 function renderControl(opt, isChecked, valActual) {
-
     if (opt.tipo === 'button') {
-        // Cambié opt.label.split(' ')[0] por opt.label para ver el nombre completo
         return `<button class="btn-setting-action" style="background:${opt.color}" onclick="window.ejecutarAccionTabs('${opt.id}')">${opt.label}</button>`;
-        }
+    }
 
     const onchange = opt.accion ? `onchange="window.ejecutarAccionTabs('${opt.id}', this.type === 'checkbox' ? this.checked : this.value)"` : '';
-
 
     if (opt.tipo === 'switch') return `<label class="switch"><input type="checkbox" ${isChecked ? 'checked' : ''} ${onchange}><span class="slider"></span></label>`;
     
@@ -442,10 +418,52 @@ function renderControl(opt, isChecked, valActual) {
     
     if (opt.tipo === 'color') return `<input type="color" value="${valActual || '#bc0009'}" ${onchange}>`;
     if (opt.tipo === 'text') return `<input type="text" placeholder="..." value="${valActual || ''}" ${onchange}>`;
-    if (opt.tipo === 'range') return `<input type="range" ${onchange}>`;
-    return '';
-
+    
+    // CONTROL DE RANGO VINCULADO (BARRA + NÚMERO)
+    if (opt.tipo === 'range') {
+        return `
+            <div class="range-controls-wrapper" style="display: flex; align-items: center; gap: 10px; width: 100%;">
+                <input type="range" 
+                    min="${opt.min}" max="${opt.max}" step="${opt.step || 1}" 
+                    value="${valActual}" 
+                    style="flex-grow: 1;"
+                    oninput="window.actualizarInputVinculado('${opt.id}', this.value)">
+                <input type="number" 
+                    min="${opt.min}" max="${opt.max}" 
+                    value="${valActual}" 
+                    style="width: 45px; text-align: center;"
+                    oninput="window.actualizarSliderVinculado('${opt.id}', this.value)">
+            </div>
+        `;
+    }
+else if (opt.tipo === 'audio-mixer') {
+    const radioVal = localStorage.getItem(opt.storageKeyRadio) || opt.defaultRadio;
+    
+    return `
+        <div class="audio-mixer-wrapper" style="display: flex; align-items: center; gap: 10px; width: 100%;">
+            <div style="display: flex; gap: 10px; white-space: nowrap;">
+                <label style="cursor: pointer; display: flex; align-items: center; gap: 4px;">
+                    <input type="radio" name="radio-${opt.id}" value="original" 
+                        ${radioVal === 'original' ? 'checked' : ''} 
+                        onchange="window.ejecutarAccionAudioMixer('${opt.id}')"> Default
+                </label>
+                <label style="cursor: pointer; display: flex; align-items: center; gap: 4px;">
+                    <input type="radio" name="radio-${opt.id}" value="personal" 
+                        ${radioVal === 'personal' ? 'checked' : ''} 
+                        onchange="window.ejecutarAccionAudioMixer('${opt.id}')"> Personal
+                </label>
+            </div>
+            <input type="text" id="input-${opt.id}" 
+                placeholder="${opt.placeholder}" 
+                value="${valActual}" 
+                style="flex-grow: 1; padding: 5px;"
+                oninput="window.ejecutarAccionAudioMixer('${opt.id}')">
+        </div>
+    `;
 }
+    return '';
+}
+
 
 // ==========================================
 // MODULO: LOGICA DE NAVEGACION Y EJECUCION
@@ -453,18 +471,57 @@ function renderControl(opt, isChecked, valActual) {
 window.cambiarTab = function(tabId) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById(tabId).classList.add('active');
-    event.currentTarget.classList.add('active');
+    const targetTab = document.getElementById(tabId);
+    if(targetTab) targetTab.classList.add('active');
+    if(event) event.currentTarget.classList.add('active');
 };
 
-window.ejecutarAccionTabs = (id, valor) => {
+window.ejecutarAccionTabs = (id, valor, esManual = false) => {
     let opcion;
     tabsConfig.forEach(tab => {
         const encontrada = tab.secciones.find(s => s.id === id);
         if (encontrada) opcion = encontrada;
     });
-    if (opcion && opcion.accion) opcion.accion(valor);
+
+if (opcion) {
+        const valorLimpio = (valor === undefined || valor === null || valor === "undefined") ? "" : valor;
+        
+        // Pasamos esManual a la función accion
+        if (opcion.accion) opcion.accion(valorLimpio, esManual);
+        
+        if (opcion.storageKey) {
+            localStorage.setItem(opcion.storageKey, valorLimpio);
+        }
+    }
 };
+
+// ==========================================
+// MODULO: VINCULACIÓN BARRA-NÚMERO
+// ==========================================
+window.actualizarInputVinculado = (id, val) => {
+    const contenedor = document.querySelector(`[data-id="${id}"]`);
+    if (contenedor) {
+        const numInput = contenedor.querySelector('input[type="number"]');
+        if (numInput) numInput.value = val;
+    }
+    // Enviamos TRUE porque el usuario está moviendo el slider
+    window.ejecutarAccionTabs(id, val, true); 
+};
+
+window.actualizarSliderVinculado = (id, val) => {
+    const contenedor = document.querySelector(`[data-id="${id}"]`);
+    if (contenedor) {
+        const slider = contenedor.querySelector('input[type="range"]');
+        if (slider) {
+            let n = parseInt(val);
+            if (n > slider.max) n = slider.max;
+            if (n < slider.min) n = slider.min;
+            slider.value = n;
+            window.ejecutarAccionTabs(id, n, true); // Enviamos TRUE
+        }
+    }
+};
+
 
 // ==========================================
 // MODULO: FUNCIONES DE LOS ATRIBUTOS
@@ -476,27 +533,103 @@ window.reestablecerWakeLock = async () => {
     }
 };
 
+
+
 // ==========================================
-// MODULO: PERSISTENCIA AL CARGAR
+// MODULO: PERSISTENCIA Y CARGA DINÁMICA
 // ==========================================
 (function aplicarPreferenciasGlobales() {
-    tabsConfig.forEach(tab => {
-        tab.secciones.forEach(opt => {
-            if (opt.accion && opt.storageKey) {
-                const val = localStorage.getItem(opt.storageKey) || opt.default;
-                const finalVal = opt.tipo === 'switch' ? val === 'true' : val;
-                
-                // Aplicar inmediatamente o esperar al DOM según el tipo
-                if (opt.id === 'global-set-dark' || opt.id === 'global-set-wakelock') {
-                    if (document.readyState === 'loading') {
-                        document.addEventListener('DOMContentLoaded', () => opt.accion(finalVal));
-                    } else {
-                        opt.accion(finalVal);
-                    }
-                } else {
+    const ejecutarCarga = () => {
+        tabsConfig.forEach(tab => {
+            tab.secciones.forEach(opt => {
+                if (opt.accion && opt.storageKey) {
+                    const key = typeof opt.storageKey === 'function' ? opt.storageKey() : opt.storageKey;
+                    const val = localStorage.getItem(key) || opt.default;
+                    const finalVal = opt.tipo === 'switch' ? val === 'true' : val;
                     opt.accion(finalVal);
                 }
-            }
+            });
         });
-    });
+    };
+
+    // Ejecución inicial inmediata
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', ejecutarCarga);
+    } else {
+        ejecutarCarga();
+    }
+
 })();
+
+// ==========================================
+// MODULO: MOVIMIENTO DE BAJADA DEL CANTO
+// ==========================================
+
+// Esta función es la que "mueve la bolita" del slider cuando llega el dato de Firebase
+// ==========================================
+// MODULO: SINCRONIZACIÓN DE DATOS (FIREBASE -> UI -> MOTOR)
+// ==========================================
+
+window.actualizarValoresUI = () => {
+    const device = window.innerWidth < 768 ? 'mobile' : window.innerWidth < 992 ? 'tablet' : 'desktop';
+    
+    // 1. Obtener datos de canto_data.js como respaldo
+    const datosCantoBase = (typeof allCantosData !== 'undefined') 
+        ? allCantosData.find(c => c.id === currentCantoId) 
+        : null;
+
+    const controles = [
+        { id: 'set-scroll-v', tipo: 'v' },
+        { id: 'set-scroll-i', tipo: 'i' }
+    ];
+
+            controles.forEach(control => {
+                const storageKey = `scroll_${control.tipo}_${device}_${currentCantoId}`;
+                
+                // 1. Intentamos obtener lo que descargó Firebase (Nube)
+                let valorNube = localStorage.getItem(storageKey);
+                let valorFinal = null;
+
+                // 2. REGLA DE ORO: Si existe en la nube y es mayor a 0, manda la nube.
+                // Convertimos a número para comparar con seguridad
+                const valorNubeNum = (valorNube !== null && valorNube !== "null") ? parseInt(valorNube) : 0;
+
+                if (valorNubeNum > 0) {
+                    valorFinal = valorNubeNum;
+                    console.log(`☁️ [Nube] Prioridad detectada para ${control.id}: ${valorFinal}`);
+                } 
+                // 3. Solo si la nube está vacía o es 0, usamos el respaldo del local (canto_data.js)
+                else if (datosCantoBase && datosCantoBase.scrollConfig) {
+                    const configBase = datosCantoBase.scrollConfig[device] || datosCantoBase.scrollConfig['desktop'];
+                    valorFinal = configBase[control.tipo];
+                    console.log(`📦 [Local] Nube vacía o 0, usando respaldo local: ${valorFinal}`);
+                }
+
+                if (valorFinal !== null) {
+                    const valNum = parseInt(valorFinal);
+                    
+                    // Actualización Visual
+                    const inputSlider = document.getElementById(control.id);
+                    if (inputSlider) {
+                        inputSlider.value = valNum;
+                        const contenedor = inputSlider.closest('.range-controls-wrapper');
+                        if (contenedor) {
+                            const numInput = contenedor.querySelector('input[type="number"]');
+                            if (numInput) numInput.value = valNum;
+                        }
+                    }
+
+                    // Aplicar al motor (FALSE para no re-subir el valor local a la nube)
+                    const seccion = window.tabsConfig.flatMap(t => t.secciones).find(s => s.id === control.id);
+                    if (seccion && typeof seccion.accion === 'function') {
+                        seccion.accion(valNum, false); 
+                    }
+                }
+            });
+};
+
+
+// Ejecución inicial tras un breve delay para que todo cargue
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(window.actualizarValoresUI, 500);
+});

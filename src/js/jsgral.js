@@ -839,34 +839,60 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
 
     if (dbnoElement) dbnoElement.textContent = cantoSpecificData.dbno;
     else console.error("Error: Elemento con ID #dbno no encontrado.");
+
+// ==========================================
+// 27.11 Actualización dinámica 
+// ==========================================
+window.renderizarNotasCanto = () => {
+    const nCanElement = document.getElementById('nCan');
+    if (!nCanElement) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const cantoId = params.get('canto') || 'global';
+
+    // 1. Datos del archivo
+    const notaOriginal = cantoSpecificData.nCan || "";
+    const urlOriginal = cantoSpecificData.nCanURL || "";
+
+    // 2. Lectura y Limpieza TOTAL de LocalStorage
+    // Aquí es donde evitamos que "undefined" o "null" se vuelvan texto
+    const rawNota = localStorage.getItem(`nota_personal_${cantoId}`);
+    const rawUrl = localStorage.getItem(`url_personal_${cantoId}`);
+
+    // FILTRO: Solo si es un texto real y no es la palabra "undefined"
+    const notaLimpia = (rawNota && rawNota !== "undefined" && rawNota !== "null") ? rawNota : "";
+    const urlLimpia = (rawUrl && rawUrl !== "undefined" && rawUrl !== "null") ? rawUrl : "";
+
+    // 3. Construcción del texto
+    let textoFinal = notaOriginal;
     
-    // 27.11 actualización de la nota del canto en pie de pagina para agregar URL
-
-/* if (nCanElement) nCanElement.textContent = cantoSpecificData.nCan;
-    else console.error("Error: Elemento con ID #nCan no encontrado.");*/
-
-if (nCanElement) {
-        // Limpiar el contenido previo
-        nCanElement.innerHTML = '';
-        if (cantoSpecificData.nCan && cantoSpecificData.nCanURL) {
-            // Si existen ambas propiedades, crear un enlace
-            const linkElement = document.createElement('a');
-            linkElement.href = cantoSpecificData.nCanURL;
-            linkElement.textContent = cantoSpecificData.nCan;
-            linkElement.target = '_blank';
-            linkElement.classList.add('ncan-link');
-            nCanElement.appendChild(linkElement);
-        } else if (cantoSpecificData.nCan) {
-            // Si solo existe nCan, mostrarlo como texto plano
-            nCanElement.textContent = cantoSpecificData.nCan;
-        }
-    } else {
-        console.error("Error: Elemento con ID #nCan no encontrado.");
+    // Solo añadimos el bloque personal si realmente hay texto limpio
+    if (notaLimpia.trim().length > 0) {
+        const separador = notaOriginal !== "" ? " | " : "";
+        textoFinal += `${separador}<span style="font-weight: bold; color: #bc0009;">Personal:</span> ${notaLimpia}`;
     }
-    
+
+    // 4. Jerarquía de URL
+    const urlFinal = urlLimpia.trim() !== "" ? urlLimpia : urlOriginal;
+
+    // 5. Renderizado final
+    if (textoFinal.trim() !== "" || urlFinal.trim() !== "") {
+        nCanElement.innerHTML = urlFinal !== "" 
+            ? `<a href="${urlFinal}" target="_blank" class="ncan-link" style="text-decoration:none; color:inherit;">${textoFinal}</a>`
+            : textoFinal;
+        nCanElement.style.display = 'block';
+    } else {
+        nCanElement.style.display = 'none';
+    }
+};
+
+// Ejecutamos la función inmediatamente
+window.renderizarNotasCanto();
     // actualización de la nota del canto en pie de pagina para agregar URL
-    
-    // 27.12 Actualizar el título de la pestaña del navegador (la etiqueta <title>)
+
+// =================================================================================
+// 27.12 Actualizar el título de la pestaña del navegador (la etiqueta <title>)
+// =================================================================================
     const pageTitleElement = document.getElementById('tt');
     if (pageTitleElement && cantoSpecificData.tt) {
         pageTitleElement.textContent = cantoSpecificData.tt;
@@ -874,9 +900,23 @@ if (nCanElement) {
         console.error("Error: Elemento con ID #tt no encontrado.");
     }
 
-    // 27.13 Configurar el reproductor de audio
-    if (cantoAudioPlayer && cantoSpecificData.audioSrc) {
-        cantoAudioPlayer.src = cantoSpecificData.audioSrc;
+
+// =================================================================================
+// 27.13 Configuración Dinámica del Reproductor de Audio
+// =================================================================================
+
+    // --- ESTO ES LO ÚNICO QUE AGREGAMOS ---
+    const fPref = localStorage.getItem(`audio_fuente_pref_${currentCantoId}`) || 'original';
+    const uPers = localStorage.getItem(`audio_personal_url_${currentCantoId}`);
+    
+    // Si el usuario eligió personal y hay una URL, usamos esa; si no, la de siempre.
+    let urlFinal = (fPref === 'personal' && uPers && uPers !== "undefined" && uPers.trim() !== "") 
+                   ? uPers 
+                   : cantoSpecificData.audioSrc;
+
+    // --- TU CÓDIGO ORIGINAL (usando ahora urlFinal) ---
+    if (cantoAudioPlayer && urlFinal) {
+        cantoAudioPlayer.src = urlFinal;
         cantoAudioPlayer.load(); // Cargar el nuevo audio
         cantoAudioPlayer.style.display = 'none'; // Asegurarse de que esté oculto al inicio
         if (audioIcon) {
@@ -890,6 +930,11 @@ if (nCanElement) {
         // Si no hay reproductor de audio, ocultar el botón de control
         audioControlBtn.style.display = 'none';
     }
+
+// Línea para que el menú de ajustes pueda refrescar la página al cambiar
+window.configurarReproductorAudio = () => { location.reload(); };
+
+
 
 
     // 27.14 Event listener para el botón de control de audio
@@ -1011,26 +1056,41 @@ if (nCanElement) {
         });
     }
 
-    // 27.21 Lógica para el scroll automático
-    if (startScrollBtn && scrollIcon) {
-        // Determinar el tipo de dispositivo actual
+// 27.21 Lógica para el scroll automático (DINÁMICA)
+    const obtenerConfiguracionActual = () => {
         const deviceType = getDeviceType(window.innerWidth);
-        let selectedScrollConfig = null;
+        const cantoId = new URLSearchParams(window.location.search).get('canto');
+        
+        // 1. Intentar leer del Setting (LocalStorage)
+        // Nota: El setting guarda como 'mobile', 'tablet' o 'desktop'. 
+        // Si tu deviceType es 'mobile-small', lo tratamos como 'mobile' para el setting.
+        const settingDevice = deviceType.includes('mobile') ? 'mobile' : 
+                             (deviceType.includes('desktop') ? 'desktop' : 'tablet');
 
-        if (cantoSpecificData.scrollConfig) {
-            selectedScrollConfig = cantoSpecificData.scrollConfig[deviceType];
-        }
+        const localV = localStorage.getItem(`scroll_v_${settingDevice}_${cantoId}`);
+        const localI = localStorage.getItem(`scroll_i_${settingDevice}_${cantoId}`);
 
-        if (selectedScrollConfig) {
-            scrollSpeed = selectedScrollConfig.velocidad;
-            scrollIncrement = selectedScrollConfig.incremento;
-        } else {
-            console.warn(`No se encontró configuración de scroll para ${deviceType}. Usando valores por defecto.`);
-            // scrollSpeed y scrollIncrement ya tienen valores por defecto definidos globalmente.
-        }
+        // 2. Obtener valores del archivo (canto_data.js) como respaldo
+        const configArchivo = (cantoSpecificData.scrollConfig && cantoSpecificData.scrollConfig[deviceType]) 
+                              ? cantoSpecificData.scrollConfig[deviceType] 
+                              : (cantoSpecificData.scrollConfig ? cantoSpecificData.scrollConfig['desktop'] : null);
 
+        // 3. Jerarquía final: LocalStorage > Archivo (v/i) > Archivo (velocidad/incremento) > Global
+        let vFinal = localV ? parseInt(localV) : (configArchivo ? (configArchivo.v || configArchivo.velocidad) : 7);
+        let iFinal = localI ? parseInt(localI) : (configArchivo ? (configArchivo.i || configArchivo.incremento) : 1);
+
+        return { v: vFinal, i: iFinal };
+    };
+
+    if (startScrollBtn && scrollIcon) {
         startScrollBtn.onclick = (event) => {
             event.preventDefault();
+            
+            // Justo antes de empezar, leemos los valores más frescos
+            const config = obtenerConfiguracionActual();
+            scrollSpeed = config.v;
+            scrollIncrement = config.i;
+
             if (isScrolling) {
                 stopAutoScroll();
             } else {
@@ -1039,34 +1099,56 @@ if (nCanElement) {
         };
     }
 
-    // 27.22 Función para iniciar el scroll automático
+// 27.22 Función para iniciar el scroll automático
     const startAutoScroll = () => {
-        if (isScrolling) return; // Evitar iniciar múltiples intervalos
+        if (isScrolling) return; 
 
         isScrolling = true;
-        scrollIcon.textContent = 'pause'; // Cambiar icono a pausa
+        scrollIcon.textContent = 'pause'; 
         
-        // Calcular el tiempo de intervalo para la velocidad deseada
-        // (1000 ms / scrollSpeed pixels/sec) * scrollIncrement pixels/step
-        const intervalTime = (1000 / scrollSpeed) * scrollIncrement; 
+        // El intervalo ahora usa directamente scrollSpeed (multiplicado por 10 para suavidad)
+        // Ejemplo: Si en el Setting pones 7, el intervalo será de 70ms.
+        const intervalTime = scrollSpeed * 10; 
 
         scrollInterval = setInterval(() => {
-            window.scrollBy(0, scrollIncrement); // Desplazar hacia abajo
-            // Detener el scroll si llegamos al final de la página
+            window.scrollBy(0, scrollIncrement); 
+            
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
                 stopAutoScroll();
             }
         }, intervalTime);
     };
 
-// 27.23 Función para detener el scroll automático
+// 27.23 A Función para detener el scroll automático
     const stopAutoScroll = () => {
         if (!isScrolling) return; // No hay scroll para detener
 
         isScrolling = false;
-        scrollIcon.textContent = 'south'; // Cambiar icono a flecha abajo
+        // Usamos 'south' si es lo que usas al inicio, o 'south' si prefieres la flecha
+        if (scrollIcon) scrollIcon.textContent = 'south'; 
         clearInterval(scrollInterval);
     };
+
+// 27.23 B Refresh - Función para aplicar cambios de velocidad sin detener el Play manualmente
+window.refrescarScrollEnVivo = () => {
+    if (isScrolling) {
+        clearInterval(scrollInterval); // Detenemos el motor actual
+        
+        // Obtenemos los nuevos valores del Setting
+        const valores = obtenerConfiguracionActual(); 
+        scrollSpeed = valores.v;
+        scrollIncrement = valores.i;
+
+        // Reiniciamos el motor con la nueva velocidad inmediatamente
+        const intervalTime = scrollSpeed * 10;
+        scrollInterval = setInterval(() => {
+            window.scrollBy(0, scrollIncrement);
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                stopAutoScroll();
+            }
+        }, intervalTime);
+    }
+};    
 
 // 27.24 Lógica para los botones de navegación anterior/siguiente
     if (prevCantoBtn) {
@@ -1395,8 +1477,6 @@ window.navegacionInteligente = () => {
 
 
 // 33 Función para mostrar/ocultar los números de ubicación del acorde
-// Función que muestra ubicación y habilita movimiento
-// Función que muestra ubicación y habilita movimiento
 const toggleAcordeLocation = () => {
     const activo = localStorage.getItem('pref-mant-active') === 'true';
     
@@ -1456,6 +1536,39 @@ function habilitarMovimientoLibre(el, display) {
     });
 }
 
+
+// --- Vigilante para actualizar notas al cerrar el panel ---
+const observarCierreSettings = () => {
+    // CAMBIA 'settings-panel' por el ID real de tu contenedor de ajustes
+    const panelSettings = document.getElementById('settings-panel') || document.querySelector('.settings-tabs-container'); 
+    
+    if (!panelSettings) {
+        console.warn("No se encontró el panel de ajustes para vigilar el cierre.");
+        return;
+    }
+
+    const observer = new MutationObserver(() => {
+        // Verificamos si el panel está visible
+        const estilo = window.getComputedStyle(panelSettings);
+        const esVisible = estilo.display !== 'none' && estilo.visibility !== 'hidden';
+        
+        // Guardamos el estado anterior para detectar el MOMENTO exacto del cierre
+        if (!esVisible && panelSettings.dataset.wasOpen === "true") {
+            panelSettings.dataset.wasOpen = "false";
+            console.log("Panel cerrado: Actualizando nota final...");
+            if (window.renderizarNotasCanto) window.renderizarNotasCanto();
+        } else if (esVisible) {
+            panelSettings.dataset.wasOpen = "true";
+        }
+    });
+
+    observer.observe(panelSettings, { attributes: true, subtree: true });
+};
+
+// Iniciar el vigilante al cargar
+document.addEventListener('DOMContentLoaded', observarCierreSettings);
+
 console.log("Canto rendering complete.");
 adjustNotePositions(); // Esto posiciona los acordes como siempre
-toggleAcordeLocation(); // Esto muestra los números solo si el switch está en SI
+toggleAcordeLocation(); // Esto muestra los números solo si el switch está en SI|
+

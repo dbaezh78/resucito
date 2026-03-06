@@ -10,10 +10,21 @@
     linkSettings.href = '/src/css/setting.css';
     document.head.appendChild(linkSettings);
 
-    // 2. Inyectar el archivo JS de ajustes
-    const scriptSettings = document.createElement('script');
-    scriptSettings.src = '/src/js/setting.js';
-    document.head.appendChild(scriptSettings);
+// 2. Inyectar archivos JS de ajustes y Firebase
+    const scriptsToLoad = [
+        { src: '/src/js/firebase-auth.js', type: 'module' },
+        { src: '/src/js/setting-firebase.js', type: 'module' },
+        { src: '/src/js/setting.js', type: 'text/javascript' }
+    ];
+
+    scriptsToLoad.forEach(s => {
+        const script = document.createElement('script');
+        script.src = s.src;
+        if (s.type === 'module') {
+            script.type = 'module';
+        }
+        document.head.appendChild(script);
+    });
 
     // 3. Crear el HTML de la navegación 
     // Añadimos 'style="visibility: hidden"' para evitar el parpadeo sin estilos
@@ -202,19 +213,27 @@ function manejarEscapeSettings(e) {
     }
 }
 
-window.cerrarModalConfiguracion = function() {
+function cerrarModalConfiguracion() {
     const modal = document.getElementById('modal-global-settings');
     if (modal) {
-        modal.querySelector('.settings-frame').classList.remove('up'); // Baja el panel
-        modal.classList.remove('active'); // Quita el fondo
-        
-        document.body.classList.remove('modal-open');
-        document.removeEventListener('keydown', manejarEscapeSettings);
-        
-        // Esperar a que termine la animación antes de borrar el HTML
-        setTimeout(() => modal.remove(), 400); 
+        // 1. Quitar clases de animación
+        modal.classList.remove('active');
+        modal.querySelector('.settings-frame').classList.remove('up');
+
+        // 2. REFRESCAR NOTAS AL CERRAR (Aquí está el truco)
+        if (window.renderizarNotasCanto) {
+            console.log("Cerrando: Limpiando y renderizando nota...");
+            window.renderizarNotasCanto();
+        }
+
+        // 3. Eliminar el modal después de la animación
+        setTimeout(() => {
+            modal.remove();
+            document.body.classList.remove('modal-open');
+            document.removeEventListener('keydown', manejarEscapeSettings);
+        }, 300);
     }
-};
+}
 
 // ==========================================
 // MODULO: GESTIÓN DE LOGIN POST-LIMPIEZA (UNIFICADO)
