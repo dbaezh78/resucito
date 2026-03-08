@@ -1,5 +1,12 @@
 // jsgral.js - JavaScript General para todos los cantos
 
+// Si jsgral no lo definió aún, lo intentamos definir aquí
+// jsgral.js - INICIO
+const paramsURL = new URLSearchParams(window.location.search);
+const idCantoActual = paramsURL.get('canto') || 'global';
+
+// Definimos la variable global UNA SOLA VEZ para todos
+window.currentCantoId = idCantoActual;
 
 // 1 Definición de los acordes y su mapeo a semitonos (desde Do)
 const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
@@ -841,7 +848,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     else console.error("Error: Elemento con ID #dbno no encontrado.");
 
 // ==========================================
-// 27.11 Actualización dinámica 
+// 27.11 Actualización dinámica corregida
 // ==========================================
 window.renderizarNotasCanto = () => {
     const nCanElement = document.getElementById('nCan');
@@ -854,37 +861,40 @@ window.renderizarNotasCanto = () => {
     const notaOriginal = cantoSpecificData.nCan || "";
     const urlOriginal = cantoSpecificData.nCanURL || "";
 
-    // 2. Lectura y Limpieza TOTAL de LocalStorage
-    // Aquí es donde evitamos que "undefined" o "null" se vuelvan texto
+    // 2. Lectura y Limpieza
     const rawNota = localStorage.getItem(`nota_personal_${cantoId}`);
     const rawUrl = localStorage.getItem(`url_personal_${cantoId}`);
 
-    // FILTRO: Solo si es un texto real y no es la palabra "undefined"
     const notaLimpia = (rawNota && rawNota !== "undefined" && rawNota !== "null") ? rawNota : "";
-    const urlLimpia = (rawUrl && rawUrl !== "undefined" && rawUrl !== "null") ? rawUrl : "";
+    const urlLimpia = (rawUrl && rawUrl !== "undefined" && rawUrl !== "null") ? rawUrl.trim() : "";
 
     // 3. Construcción del texto
     let textoFinal = notaOriginal;
-    
-    // Solo añadimos el bloque personal si realmente hay texto limpio
     if (notaLimpia.trim().length > 0) {
         const separador = notaOriginal !== "" ? " | " : "";
         textoFinal += `${separador}<span style="font-weight: bold; color: #bc0009;">Personal:</span> ${notaLimpia}`;
     }
 
-    // 4. Jerarquía de URL
-    const urlFinal = urlLimpia.trim() !== "" ? urlLimpia : urlOriginal;
+    // 4. Jerarquía y NORMALIZACIÓN DE URL (Aquí estaba el fallo)
+    let urlFinal = urlLimpia !== "" ? urlLimpia : urlOriginal;
 
-    // 5. Renderizado final
+    // Si la URL no está vacía y no tiene http, se lo ponemos para que no sea relativa
+    if (urlFinal !== "" && !/^https?:\/\//i.test(urlFinal)) {
+        urlFinal = `https://${urlFinal}`;
+    }
+
+    // 5. Renderizado final con target="_blank"
     if (textoFinal.trim() !== "" || urlFinal.trim() !== "") {
         nCanElement.innerHTML = urlFinal !== "" 
-            ? `<a href="${urlFinal}" target="_blank" class="ncan-link" style="text-decoration:none; color:inherit;">${textoFinal}</a>`
+            ? `<a href="${urlFinal}" target="_blank" rel="noopener noreferrer" class="ncan-link" style="text-decoration:none; color:inherit;">${textoFinal}</a>`
             : textoFinal;
         nCanElement.style.display = 'block';
     } else {
         nCanElement.style.display = 'none';
     }
 };
+
+
 
 // Ejecutamos la función inmediatamente
 window.renderizarNotasCanto();
@@ -904,36 +914,26 @@ window.renderizarNotasCanto();
 // =================================================================================
 // 27.13 Configuración Dinámica del Reproductor de Audio
 // =================================================================================
+// =================================================================================
+// 27.13 Configuración Dinámica del Reproductor de Audio
+// =================================================================================
+const idAudio = window.currentCantoId;
 
-    // --- ESTO ES LO ÚNICO QUE AGREGAMOS ---
-    const fPref = localStorage.getItem(`audio_fuente_pref_${currentCantoId}`) || 'original';
-    const uPers = localStorage.getItem(`audio_personal_url_${currentCantoId}`);
+if (idAudio) {
+    const fPref = localStorage.getItem(`audio_fuente_pref_${idAudio}`) || 'original';
+    const uPers = localStorage.getItem(`audio_personal_url_${idAudio}`);
     
-    // Si el usuario eligió personal y hay una URL, usamos esa; si no, la de siempre.
     let urlFinal = (fPref === 'personal' && uPers && uPers !== "undefined" && uPers.trim() !== "") 
-                   ? uPers 
-                   : cantoSpecificData.audioSrc;
+                    ? uPers 
+                    : (cantoSpecificData ? cantoSpecificData.audioSrc : null);
 
-    // --- TU CÓDIGO ORIGINAL (usando ahora urlFinal) ---
     if (cantoAudioPlayer && urlFinal) {
         cantoAudioPlayer.src = urlFinal;
-        cantoAudioPlayer.load(); // Cargar el nuevo audio
-        cantoAudioPlayer.style.display = 'none'; // Asegurarse de que esté oculto al inicio
-        if (audioIcon) {
-            audioIcon.textContent = 'play_circle'; // Asegurarse de que el icono sea de reproducción
-        }
-    } else if (cantoAudioPlayer) {
-        // Si no hay audioSrc para el canto actual, ocultar el reproductor y el botón
-        cantoAudioPlayer.style.display = 'none';
-        if (audioControlBtn) audioControlBtn.style.display = 'none';
-    } else if (audioControlBtn) {
-        // Si no hay reproductor de audio, ocultar el botón de control
-        audioControlBtn.style.display = 'none';
+        cantoAudioPlayer.load(); 
+        cantoAudioPlayer.style.display = 'none'; 
+        if (audioIcon) audioIcon.textContent = 'play_circle'; 
     }
-
-// Línea para que el menú de ajustes pueda refrescar la página al cambiar
-window.configurarReproductorAudio = () => { location.reload(); };
-
+}
 
 
 
