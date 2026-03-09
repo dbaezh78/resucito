@@ -67,6 +67,11 @@ const URLS_TO_CACHE = [
     'src/img/yoteamo3.png',
     'src/img/yoteamo4.png',
     'src/img/yoteamo5.png',
+
+    'src/img/carmen_hernandez.jpg',
+    'src/img/kiko_arguello.jpg',
+    'src/img/mariopezzi.jpg',
+    'src/img/maria_ascension.jpg',
     
     'src/font/font.woff2',
     'src/font/FranklinGothicMedium.ttf',
