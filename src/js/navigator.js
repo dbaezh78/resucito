@@ -52,24 +52,24 @@
                 <span>NeoCate</span>
                 <div class="nav-submenu" id="nav-submenu-neocate">
                     <a href="https://neocatechumenaleiter.org/noticias/" target="_blank"><span class="material-symbols-outlined">newspaper</span> Noticias</a>
-                    <a href="https://app.resucito.es/home" target="_blank"><span class="material-symbols-outlined">info</span> Cantos del Camino</a>
+                    <a href="https://app.resucito.es/home" target="_blank"><span class="material-symbols-outlined">library_music</span> Cantos del Camino</a>
                     <a href="https://www.facebook.com/groups/323608705177419" target="_blank"><span class="material-symbols-outlined">groups</span> Comunidades</a>
                     <a href="https://www.facebook.com/cantordelcaminoneocatecumenal" target="_blank"><span class="material-symbols-outlined">record_voice_over</span> Cantores</a>
 
                     <a href="https://carmenhernandez.org/" target="_blank"> 
-                    <img src="src/img/carmen_hernandez.jpg" alt="Carmen Hernández" class="img-perfil-link">
+                    <img src="/src/img/carmen_hernandez.jpg" alt="Carmen Hernández" class="img-perfil-link">
                     <span>Carmen Hernández</span></a>
 
                     <a href="https://neocatechumenaleiter.org/historia/kiko-arguello/" target="_blank"> 
-                    <img src="src/img/kiko_arguello.jpg" alt="Kiko Arguello" class="img-perfil-link">
+                    <img src="/src/img/kiko_arguello.jpg" alt="Kiko Arguello" class="img-perfil-link">
                     <span>Kiko Argüello</span></a>
 
                     <a href="https://neocatechumenaleiter.org/historia/mario-pezzi/" target="_blank">
-                    <img src="src/img/mariopezzi.jpg" alt="Mario Pezzi" class="img-perfil-link">
+                    <img src="/src/img/mariopezzi.jpg" alt="Mario Pezzi" class="img-perfil-link">
                     <span>Mario Pezzi</span></a>
                     
                     <a href="https://neocatechumenaleiter.org/historia/maria-ascension/" target="_blank">
-                    <img src="src/img/maria_ascension.jpg" alt="Maria Ascension" class="img-perfil-link">
+                    <img src="/src/img/maria_ascension.jpg" alt="Maria Ascension" class="img-perfil-link">
                     <span>Maria Ascension</span></a>
 
                 </div>
