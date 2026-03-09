@@ -43,18 +43,35 @@
                     <a href="https://www.facebook.com/groups/721999947892692" target="_blank"><span class="material-symbols-outlined">communities</span> Facebook</a>
                     <a href="https://dbaezh78.github.io/salterios/" target="_blank"><span class="material-symbols-outlined">prayer_times</span> Laudes</a>
                     <a href="https://dbaezh78.github.io/ev/" target="_blank"><span class="material-symbols-outlined">book_2</span> Evangelio del Día</a>
-                    <a href="#"><span class="material-symbols-outlined">group</span> Comunidad Cantor</a>
-                </div>
+
+                    </div>
             </button>
 
             <button class="nav-item" id="btn-nav-neocate">
                 <span class="material-symbols-outlined">church</span>
                 <span>NeoCate</span>
                 <div class="nav-submenu" id="nav-submenu-neocate">
-                    <a href="https://neocatechumenaleiter.org/noticias/"><span class="material-symbols-outlined">newspaper</span> Noticias</a>
-                    <a href="/info.html"><span class="material-symbols-outlined">info</span> Info</a>
-                    <a href="/comunidades.html"><span class="material-symbols-outlined">groups</span> Comunidades</a>
-                    <a href="/cantores.html"><span class="material-symbols-outlined">record_voice_over</span> Cantores</a>
+                    <a href="https://neocatechumenaleiter.org/noticias/" target="_blank"><span class="material-symbols-outlined">newspaper</span> Noticias</a>
+                    <a href="https://app.resucito.es/home" target="_blank"><span class="material-symbols-outlined">info</span> Cantos del Camino</a>
+                    <a href="https://www.facebook.com/groups/323608705177419" target="_blank"><span class="material-symbols-outlined">groups</span> Comunidades</a>
+                    <a href="https://www.facebook.com/cantordelcaminoneocatecumenal" target="_blank"><span class="material-symbols-outlined">record_voice_over</span> Cantores</a>
+
+                    <a href="https://carmenhernandez.org/" target="_blank"> 
+                    <img src="src/img/carmen_hernandez.jpg" alt="Carmen Hernández" class="img-perfil-link">
+                    <span>Carmen Hernández</span></a>
+
+                    <a href="https://neocatechumenaleiter.org/historia/kiko-arguello/" target="_blank"> 
+                    <img src="src/img/kiko_arguello.jpg" alt="Kiko Arguello" class="img-perfil-link">
+                    <span>Kiko Argüello</span></a>
+
+                    <a href="https://neocatechumenaleiter.org/historia/mario-pezzi/" target="_blank">
+                    <img src="src/img/mariopezzi.jpg" alt="Mario Pezzi" class="img-perfil-link">
+                    <span>Mario Pezzi</span></a>
+                    
+                    <a href="https://neocatechumenaleiter.org/historia/maria-ascension/" target="_blank">
+                    <img src="src/img/maria_ascension.jpg" alt="Maria Ascension" class="img-perfil-link">
+                    <span>Maria Ascension</span></a>
+
                 </div>
             </button>
 
@@ -66,7 +83,7 @@
                     <a href="/src/select.html"><span class="material-symbols-outlined">playlist_add</span> Nueva Lista</a>
                     <a href="/perfil.html"><span class="material-symbols-outlined">person</span> Perfil</a>
                     <a href="/src/html/intro.html"><span class="material-symbols-outlined">menu_book</span> Introducción</a>
-                    <a href="/catequesis.html"><span class="material-symbols-outlined">history_edu</span> Catequesis</a>
+                    <a href="#"><span class="material-symbols-outlined">history_edu</span> Catequesis</a>
                 </div>
             </button>
 

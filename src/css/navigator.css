@@ -209,3 +209,18 @@ body { padding-bottom: 70px; }
 .settings-content {
     padding: 0 10px 20px 10px;
 }
+
+
+/* FOTOS*/
+
+.img-perfil-link {
+    width: 24px;         /* Tamaño similar al icono material */
+    height: 24px;
+    border-radius: 50%;  /* La hace circular */
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 8px;   /* Espacio entre imagen y texto */
+    border: 1px solid #ccc;
+}
+
+/* Para asegurar que todo el enlace esté alineado */
