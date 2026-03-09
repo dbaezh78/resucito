@@ -13,6 +13,7 @@ let snapshotActual = null;
 let listasLocalesCache = []; 
 let bloqueoSnapshot = false;
 
+
 // --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
 const normalizarTexto = (texto) => {
     if (!texto) return "";

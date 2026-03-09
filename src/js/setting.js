@@ -1,3 +1,5 @@
+
+{
 const urlParams = new URLSearchParams(window.location.search);
 const currentCantoId = urlParams.get('canto') || 'global';
 
@@ -678,3 +680,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 1000); // Un segundo de cortesía para la nube
 });
+}

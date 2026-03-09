@@ -5,14 +5,31 @@ Debajo está el proyecto de poner el modo oscuro */
     --CristoMiSeñor: white
 }
 
-
 /* CSS PARA LIBRO DE CANTOS*/
       @font-face {font-family: 'Libre Franklin';src: url('../font/LibreFranklin-Bold.ttf') format('truetype');font-weight: 700; /* Bold */font-style: normal;font-display: swap; /* Mejor experiencia de carga */}
       @font-face {font-family: 'Material Symbols Outlined Local';font-style: normal;font-weight: 100 700;src: url('../font/font.woff2') format('woff2'); /* Ajusta la ruta según tu estructura */}
+      @font-face {font-family: 'Material Symbols Outlined';font-style: normal;font-weight: 100 700;src: url('src/font/material-symbols.woff2') format('woff2');
       @font-face {font-family: 'Fave';src: local('Fave Script Bold Pro'), local('Fave-Script-Bold-Pro'),url('../font/Fave-ScriptBoldPro.woff2') format('woff2'),url('../font/Fave-ScriptBoldPro.woff') format('woff'),url('../font/Fave-ScriptBoldPro.ttf') format('truetype');font-weight: 700;font-style: normal;}
       @font-face {font-family: 'Franklin Gothic Medium';src: url('../font/FranklinGothicMedium.ttf') format('truetype');font-weight: normal;font-style: normal;font-display: swap;}
       @font-face {font-family: Neocat; src: url('../font/Neocat-Regular_3.0.ttf') format('truetype'); font-display: swap; }
 
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
 
 
 :root {
@@ -93,7 +110,7 @@ body.dark-theme {
 
 body {
     width: 100%;
-    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-family: 'Franklin Gothic';
     background-color: #f4f4f4; /* Este será el fallback si no se aplica ninguna clase de categoría */
     color: #333;
     display: flex;
@@ -103,7 +120,8 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-
+    
+    /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
 /* Control de Usuario y manipulación
 */    
 user-select: none; 
