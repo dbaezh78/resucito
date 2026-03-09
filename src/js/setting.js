@@ -205,9 +205,44 @@ window.tabsConfig = [
                     }
                 },
 
-                // ==========================================
-                // VELOCIDAD AUTO SCROLL (DETECCIÓN AUTOMÁTICA)
-                // ==========================================
+
+{ 
+    id: 'btn-sync-cloud',
+    label: 'Sincronizar datos de la Nube', 
+    tipo: 'button',
+    icon: 'cloud_download', // Icono de una nube con flecha
+    accion: async () => {
+        const params = new URLSearchParams(window.location.search);
+        const cantoId = params.get('canto');
+        
+        if (cantoId && window.sincronizarConfiguracionDesdeFirebase) {
+            // 1. Efecto visual de "Cargando"
+            const btn = document.getElementById('btn-sync-cloud');
+            if (btn) btn.innerHTML = '<span class="material-symbols-outlined spinning">sync</span> Cargando...';
+
+            try {
+                // 2. Ejecutar la descarga que ya analizamos
+                await window.sincronizarConfiguracionDesdeFirebase(cantoId);
+                
+                // 3. Confirmación visual
+                if (btn) btn.innerHTML = '<span class="material-symbols-outlined">cloud_done</span> ¡Sincronizado!';
+                setTimeout(() => {
+                    if (btn) btn.innerHTML = '<span class="material-symbols-outlined">cloud_download</span> Sincronizar datos de la Nube';
+                }, 3000);
+
+            } catch (error) {
+                if (btn) btn.innerHTML = '<span class="material-symbols-outlined">error</span> Error';
+                console.error("Error manual sync:", error);
+            }
+        } else {
+            alert("Inicia sesión para sincronizar tus datos.");
+        }
+    }
+},
+
+// ==========================================
+// VELOCIDAD AUTO SCROLL (DETECCIÓN AUTOMÁTICA)
+// ==========================================
 // Busca estas secciones en tu window.tabsConfig
 {
     id: 'set-scroll-v',
@@ -399,10 +434,13 @@ window.generarContenidoSettings = function() {
 // MODULO: RENDERIZADO DE CONTROLES
 // ==========================================
 function renderControl(opt, isChecked, valActual) {
-    if (opt.tipo === 'button') {
-        return `<button class="btn-setting-action" style="background:${opt.color}" onclick="window.ejecutarAccionTabs('${opt.id}')">${opt.label}</button>`;
-    }
-
+if (opt.tipo === 'button') {
+    return `
+        <button id="${opt.id}" class="btn-setting-action" style="background:${opt.color || 'deepskyblue'}" onclick="window.ejecutarAccionTabs('${opt.id}')">
+            ${opt.icon ? `<span class="material-symbols-outlined">${opt.icon}</span>` : ''}
+            <span>${opt.label}</span>
+        </button>`;
+}
     const onchange = opt.accion ? `onchange="window.ejecutarAccionTabs('${opt.id}', this.type === 'checkbox' ? this.checked : this.value)"` : '';
 
     if (opt.tipo === 'switch') return `<label class="switch"><input type="checkbox" ${isChecked ? 'checked' : ''} ${onchange}><span class="slider"></span></label>`;
@@ -420,15 +458,17 @@ function renderControl(opt, isChecked, valActual) {
     if (opt.tipo === 'text') return `<input type="text" placeholder="..." value="${valActual || ''}" ${onchange}>`;
     
     // CONTROL DE RANGO VINCULADO (BARRA + NÚMERO)
-    if (opt.tipo === 'range') {
+if (opt.tipo === 'range') {
         return `
             <div class="range-controls-wrapper" style="display: flex; align-items: center; gap: 10px; width: 100%;">
                 <input type="range" 
+                    id="${opt.id}" 
                     min="${opt.min}" max="${opt.max}" step="${opt.step || 1}" 
                     value="${valActual}" 
                     style="flex-grow: 1;"
                     oninput="window.actualizarInputVinculado('${opt.id}', this.value)">
                 <input type="number" 
+                    id="${opt.id}-num"
                     min="${opt.min}" max="${opt.max}" 
                     value="${valActual}" 
                     style="width: 45px; text-align: center;"
@@ -570,10 +610,10 @@ window.reestablecerWakeLock = async () => {
 // MODULO: SINCRONIZACIÓN DE DATOS (FIREBASE -> UI -> MOTOR)
 // ==========================================
 
+
 window.actualizarValoresUI = () => {
     const device = window.innerWidth < 768 ? 'mobile' : window.innerWidth < 992 ? 'tablet' : 'desktop';
     
-    // 1. Obtener datos de canto_data.js como respaldo
     const datosCantoBase = (typeof allCantosData !== 'undefined') 
         ? allCantosData.find(c => c.id === currentCantoId) 
         : null;
@@ -583,53 +623,58 @@ window.actualizarValoresUI = () => {
         { id: 'set-scroll-i', tipo: 'i' }
     ];
 
-            controles.forEach(control => {
-                const storageKey = `scroll_${control.tipo}_${device}_${currentCantoId}`;
+    controles.forEach(control => {
+        const storageKey = `scroll_${control.tipo}_${device}_${currentCantoId}`;
+        
+        // 1. Intentamos obtener lo que descargó Firebase
+        let valorNube = localStorage.getItem(storageKey);
+        let valorFinal = null;
+
+        // 2. REGLA DE ORO: Si existe en LocalStorage (descargado previamente por Auth), manda la nube.
+        // Usamos !isNaN para permitir el valor 0.
+        if (valorNube !== null && valorNube !== "null" && !isNaN(parseInt(valorNube))) {
+            valorFinal = parseInt(valorNube);
+            console.log(`☁️ [Prioridad Nube] ${control.id}: ${valorFinal}`);
+        } 
+        // 3. Respaldo: Archivo local canto_data.js
+        else if (datosCantoBase && datosCantoBase.scrollConfig) {
+            const configBase = datosCantoBase.scrollConfig[device] || datosCantoBase.scrollConfig['desktop'];
+            valorFinal = configBase[control.tipo];
+            console.log(`📦 [Respaldo Local] ${control.id}: ${valorFinal}`);
+        }
+
+        if (valorFinal !== null) {
+            const valNum = parseInt(valorFinal);
+            const inputSlider = document.getElementById(control.id);
+            if (inputSlider) {
+                // 1. Movemos la barra
+                inputSlider.value = valNum; 
                 
-                // 1. Intentamos obtener lo que descargó Firebase (Nube)
-                let valorNube = localStorage.getItem(storageKey);
-                let valorFinal = null;
-
-                // 2. REGLA DE ORO: Si existe en la nube y es mayor a 0, manda la nube.
-                // Convertimos a número para comparar con seguridad
-                const valorNubeNum = (valorNube !== null && valorNube !== "null") ? parseInt(valorNube) : 0;
-
-                if (valorNubeNum > 0) {
-                    valorFinal = valorNubeNum;
-                    console.log(`☁️ [Nube] Prioridad detectada para ${control.id}: ${valorFinal}`);
-                } 
-                // 3. Solo si la nube está vacía o es 0, usamos el respaldo del local (canto_data.js)
-                else if (datosCantoBase && datosCantoBase.scrollConfig) {
-                    const configBase = datosCantoBase.scrollConfig[device] || datosCantoBase.scrollConfig['desktop'];
-                    valorFinal = configBase[control.tipo];
-                    console.log(`📦 [Local] Nube vacía o 0, usando respaldo local: ${valorFinal}`);
+                // 2. Buscamos el input de número que está en el mismo contenedor
+                const contenedor = inputSlider.closest('.range-controls-wrapper');
+                if (contenedor) {
+                    const numInput = contenedor.querySelector('input[type="number"]');
+                    if (numInput) numInput.value = valNum;
                 }
+                console.log(`🎯 UI Sincronizada: ${control.id} a ${valNum}`);
+            }
 
-                if (valorFinal !== null) {
-                    const valNum = parseInt(valorFinal);
-                    
-                    // Actualización Visual
-                    const inputSlider = document.getElementById(control.id);
-                    if (inputSlider) {
-                        inputSlider.value = valNum;
-                        const contenedor = inputSlider.closest('.range-controls-wrapper');
-                        if (contenedor) {
-                            const numInput = contenedor.querySelector('input[type="number"]');
-                            if (numInput) numInput.value = valNum;
-                        }
-                    }
-
-                    // Aplicar al motor (FALSE para no re-subir el valor local a la nube)
-                    const seccion = window.tabsConfig.flatMap(t => t.secciones).find(s => s.id === control.id);
-                    if (seccion && typeof seccion.accion === 'function') {
-                        seccion.accion(valNum, false); 
-                    }
-                }
-            });
+            // Aplicar al motor de scroll
+            const seccion = window.tabsConfig.flatMap(t => t.secciones).find(s => s.id === control.id);
+            if (seccion && typeof seccion.accion === 'function') {
+                seccion.accion(valNum, false); // false = no volver a subir a la nube
+            }
+        }
+    });
 };
 
-
-// Ejecución inicial tras un breve delay para que todo cargue
+// En setting.js
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(window.actualizarValoresUI, 500);
+    setTimeout(() => {
+        // Solo ejecuta la carga local si Firebase NO ha marcado el éxito todavía
+        if (!window._uiYaSincronizada) {
+            console.log("⚠️ Firebase tardó demasiado o no hay sesión, cargando local...");
+            window.actualizarValoresUI();
+        }
+    }, 1000); // Un segundo de cortesía para la nube
 });

@@ -422,3 +422,61 @@ body.dark-theme #modal-global-settings select option {
     font-size: 0.85em;
     margin-right: 4px;
 }
+
+
+/* */
+
+#btn-sync-cloud {
+    background: lightskyblue;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.spinning {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(359deg); }
+}
+
+/* Estilo general para los botones de acción en ajustes */
+.btn-setting-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espacio entre icono y texto */
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-setting-action:active {
+    transform: scale(0.98);
+}
+
+/* Animación para el icono de carga */
+.spinning {
+    display: inline-block;
+    animation: rotate-sync 1.5s linear infinite;
+}
+
+@keyframes rotate-sync {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

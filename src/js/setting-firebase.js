@@ -1,46 +1,55 @@
 // src/js/setting-firebase.js
 import { db, auth } from './firebase-auth.js';
-import { doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { doc, updateDoc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 /**
  * Limpia valores para evitar que "undefined" o "null" se suban a Firebase
  */
 const limpiarValor = (val) => (val === undefined || val === null || val === "undefined" || val === "null") ? "" : val;
 
-/**
- * Guarda la configuración de un canto (Velocidad o Incremento)
- */
-/**
- * Guarda la configuración de un canto (Solo sube a la nube si es manual)
- */
-// Dentro de guardarVelocidadCanto en setting-firebase.js
+/* Guarda la configuración de un canto (Velocidad o Incremento)  */
+
 export async function guardarVelocidadCanto(dispositivo, valor, tipo, esManual = false) {
     const params = new URLSearchParams(window.location.search);
     const cantoId = params.get('canto');
     if (!cantoId) return;
 
-    const valorNum = parseInt(valor);
-    if (isNaN(valorNum)) return; // Seguridad extra
-    
-    // Guardar localmente con la llave que espera setting.js
+    // 1. FORZAMOS EL TIPO NÚMERO AQUÍ
+    const valorNum = Number(valor); 
+    if (isNaN(valorNum)) return; 
+
+    // Guardado Local
     localStorage.setItem(`scroll_${tipo}_${dispositivo}_${cantoId}`, valorNum);
 
+    // 2. SUBIDA A FIREBASE
     if (auth.currentUser && esManual) {
         try {
             const docRef = doc(db, "usuarios", auth.currentUser.uid, "config_cantos", cantoId);
-            const campoUpdate = `scrollConfig.${dispositivo}.${tipo}`;
             
-            await setDoc(docRef, {
-                [campoUpdate]: valorNum,
+            // Creamos la ruta del campo: ej. "scrollConfig.desktop.v"
+            const campoDinamico = `scrollConfig.${dispositivo}.${tipo}`;
+
+            // USAMOS updateDoc para que entienda los puntos como niveles del objeto
+            await updateDoc(docRef, {
+                [campoDinamico]: valorNum, // Aquí enviamos el Number puro
                 ultimaActualizacion: new Date()
-            }, { merge: true });
-            
-            console.log(`☁️ [Firebase] Guardado en nube: ${dispositivo} ${tipo} = ${valorNum}`);
+            }).catch(async (error) => {
+                // Si el documento no existe (error 404), lo creamos con setDoc
+                if (error.code === 'not-found') {
+                    await setDoc(docRef, {
+                        scrollConfig: { [dispositivo]: { [tipo]: valorNum } },
+                        ultimaActualizacion: new Date()
+                    }, { merge: true });
+                }
+            });
+
+            console.log(`☁️ [Firebase] ${campoDinamico} guardado como número:`, valorNum);
         } catch (e) {
-            console.error("❌ Error Firebase:", e);
+            console.error("❌ Error al subir a Firebase:", e);
         }
     }
 }
+
 
 /**
  * Guarda la Nota Personal, URL de Recurso o URL de Audio en Firebase
@@ -50,7 +59,9 @@ export async function guardarNotaPersonalCanto(valor, campo) {
     const cantoId = params.get('canto');
     if (!cantoId) return;
 
-    const valorLimpio = limpiarValor(valor);
+    // 1. Usamos tu función limpiarValor para evitar basura en la base de datos
+    // Si valorLimpio devuelve "undefined" como texto, lo convertimos a ""
+    const valorLimpio = (valor === undefined || valor === null || valor === "undefined") ? "" : valor.trim();
     
     let storageKey = "";
     let keyFirebase = "";
@@ -66,16 +77,18 @@ export async function guardarNotaPersonalCanto(valor, campo) {
         keyFirebase = "audioPersonalUrl";
     }
 
-    // Guardar localmente
-    if (storageKey) localStorage.setItem(storageKey, valorLimpio);
+    // 2. Guardar localmente (esto asegura que la UI responda rápido)
+    if (storageKey) {
+        localStorage.setItem(storageKey, valorLimpio);
+    }
 
-    // 2. Guardar en Firebase
+    // 3. Guardar en Firebase (Sincronización en la nube)
     if (auth.currentUser && keyFirebase) {
         try {
             const docRef = doc(db, "usuarios", auth.currentUser.uid, "config_cantos", cantoId);
             
             await setDoc(docRef, {
-                [keyFirebase]: valorLimpio,
+                [keyFirebase]: valorLimpio, // Usamos el nombre de campo correcto para Firestore
                 ultimaActualizacion: new Date()
             }, { merge: true });
             
@@ -102,22 +115,20 @@ export async function sincronizarConfiguracionDesdeFirebase(cantoId) {
             // --- 1. Sincronizar Scroll (Velocidad e Incremento) ---
             const config = data.scrollConfig;
             if (config) {
-                console.log("☁️ [Firebase] Datos de scroll recibidos:", config);
                 ['mobile', 'tablet', 'desktop'].forEach(dev => {
                     if (config[dev]) {
                         if (config[dev].v !== undefined) {
-                            const valV = parseInt(config[dev].v);
-                            localStorage.setItem(`scroll_v_${dev}_${cantoId}`, valV);
-                            console.log(`🔢 [Nube -> Local] ${dev} Velocidad: ${valV}`);
+                            localStorage.setItem(`scroll_v_${dev}_${cantoId}`, config[dev].v);
                         }
                         if (config[dev].i !== undefined) {
-                            const valI = parseInt(config[dev].i);
-                            localStorage.setItem(`scroll_i_${dev}_${cantoId}`, valI);
-                            console.log(`🔢 [Nube -> Local] ${dev} Incremento: ${valI}`);
+                            localStorage.setItem(`scroll_i_${dev}_${cantoId}`, config[dev].i);
                         }
                     }
                 });
             }
+            console.log("✅ [LocalStorage] Sincronizado con éxito desde la nube.");
+            // Marcamos que la sincronización ocurrió para evitar que el setTimeout de setting.js pise los datos
+            window._uiYaSincronizada = true;
 
             // --- 2. Sincronizar Notas y URLs personales ---
             if (data.notaPersonal !== undefined) localStorage.setItem(`nota_personal_${cantoId}`, data.notaPersonal);
