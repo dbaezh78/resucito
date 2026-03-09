@@ -110,7 +110,7 @@ body.dark-theme {
 
 body {
     width: 100%;
-    font-family: 'Franklin Gothic';
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     background-color: #f4f4f4; /* Este será el fallback si no se aplica ninguna clase de categoría */
     color: #333;
     display: flex;
@@ -121,7 +121,6 @@ body {
     padding: 20px;
     box-sizing: border-box;
     
-    /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
 /* Control de Usuario y manipulación
 */    
 user-select: none; 
