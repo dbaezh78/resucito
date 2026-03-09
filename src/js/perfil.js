@@ -269,7 +269,7 @@ async function completarDatosLentamente(cantos) {
     const user = auth.currentUser;
     if (!user) return;
 
-    const cache = await caches.open('cantos-cache-v2.09');
+    const cache = await caches.open('cantos-cache-v2.10');
     
     // 1. Detectamos el estado del interruptor de sincronización
     const syncToggle = document.getElementById('syncToggle');
