@@ -134,63 +134,25 @@
 }
 </style>    <!--↑ GESTION DE CANTOS ↑-->
 
-
-    <div class="perfil-section collapsed" id="wrapper-settings">
-        <div class="section-header" onclick="toggleSection('section-settings', 'wrapper-settings')">
-            <div class="header-title-group">
-                <span class="material-symbols-outlined arrow-icon">expand_more</span>
-                <h2>Configuración</h2>
-            </div>
+<div class="perfil-section collapsed" id="wrapper-settings">
+    <div class="section-header" onclick="toggleSection('section-settings', 'wrapper-settings')">
+        <div class="header-title-group">
+            <span class="material-symbols-outlined arrow-icon">expand_more</span>
+            <h2>Configuración</h2>
         </div>
-
-        <!-- Interruptores -->
-
-        <div id="section-settings" class="section-content cfg-close">
-
-<!-- SINCRONIZACION AUTOMATICA-->
-
-        <div class="config-item">
-            <label class="switch">
-                <input type="checkbox" id="syncToggle">
-                <span class="slider"></span>
-            </label>
-            <span class="confg-margen">Sincronización automática (Nube)</span>
-        </div>
-<!-- SINCRONIZACION AUTOMATICA-->            
-
-<!-- MOSTRAR DATOS DE PERFIL-->
-        <div class="config-item">
-            <label class="switch">
-                <input type="checkbox" id="toggle-perfil">
-                <span class="slider"></span>
-            </label>
-            <span class="confg-margen">Mostrar Datos de Perfil</span>
-        </div>
-<!-- MOSTRAR DATOS DE PERFIL-->
-
-
-<!-- MOSTRAR GESTION DE CANTOS-->
-        <div class="config-item">
-            <label class="switch">
-                <input type="checkbox" id="toggle-gestion">
-                <span class="slider"></span>
-            </label>
-            <span class="confg-margen">Mostrar Gestión de Cantos</span>
-        </div>
-<!-- MOSTRAR GESTION DE CANTOS-->
-
-<!-- MOSTRAR CONFIGURACION-->
-        <div class="config-item">
-            <label class="switch">
-                <input type="checkbox" id="toggle-settings">
-                <span class="slider"></span>
-            </label>
-            <span class="confg-margen">Mostrar Configuración</span>
-        </div>
-<!-- MOSTRAR CONFIGURACION-->
-    
     </div>
-    <!-- Fin Interruptores -->
+
+    <div id="section-settings" class="section-content cfg-close">
+        <div style="display: none;">
+            <input type="checkbox" id="syncToggle">
+            <input type="checkbox" id="toggle-perfil">
+            <input type="checkbox" id="toggle-gestion">
+            <input type="checkbox" id="toggle-settings">
+        </div>
+
+        <div id="contenedor-controles-dinamicos"></div>
+    </div>
+</div>    <!-- Fin Interruptores -->
 
     <div id="modalCalendario" class="modal" style="display: none;">
         <div class="modal-content">
@@ -200,9 +162,35 @@
         </div>
     </div>
 
-    <script type="module" src="src/js/perfil.js"></script>
-    <script type="module" src="src/js/moduleGoogle.js"></script>
-    <script src="src/js/navigator.js"></script>
+    <div class="perfil-section collapsed" id="wrapper-resumen">
+    <div class="section-header" onclick="toggleSection('section-resumen', 'wrapper-resumen')">
+        <div class="header-title-group">
+            <span class="material-symbols-outlined arrow-icon">expand_more</span>
+            <h2>Estado del Sistema (Offline)</h2>
+        </div>
+    </div>
+
+    <div id="section-resumen" class="section-content cfg-close">
+        <div id="resumen-offline-container" class="paddingleft4px">
+            <p style="font-size: 0.9em; color: #666; margin-bottom: 15px;">
+                Validando recursos disponibles sin conexión...
+            </p>
+
+            <div id="status-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px;">
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="module" src="src/js/moduleGoogle.js"></script>
+<script src="src/js/navigator.js"></script>
+<script src="src/js/config.js"></script>
+<script type="module" src="src/js/perfil.js"></script>
+<script type="module" src="src/js/resumen.js"></script>
+
+
     <script>
         function toggleSection(contentId, wrapperId) {
             const content = document.getElementById(contentId);
@@ -215,3 +203,4 @@
     </script>
 </body>
 </html>
+

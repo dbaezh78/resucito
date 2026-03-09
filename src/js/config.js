@@ -1,5 +1,5 @@
 // Único lugar para cambiar la versión
-const APP_VERSION = '2.10';
+const APP_VERSION = '2.11';
 const CACHE_NAME = `cantos-cache-v${APP_VERSION}`;
 const OFFLINE_URL = 'src/offline.html';
 
@@ -660,7 +660,6 @@ const URLS_TO_CACHE = [
 // Recurso de JavaScripts
     'src/js/ai.js',
     'src/js/app.js',
-    'src/js/config copy.js',
     'src/js/config.js',
     'src/js/dbMainJS.js',
     'src/js/firebase rule.json',

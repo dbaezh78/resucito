@@ -2,6 +2,7 @@
 import { auth, db } from './firebase-auth.js';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { actualizarResumenOffline } from './resumen.js';
 
 // --- 1. VARIABLES GLOBALES ---
 let etapaGuardada = null;
@@ -269,7 +270,7 @@ async function completarDatosLentamente(cantos) {
     const user = auth.currentUser;
     if (!user) return;
 
-    const cache = await caches.open('cantos-cache-v2.10');
+    const cache = await caches.open(CACHE_NAME);
     
     // 1. Detectamos el estado del interruptor de sincronización
     const syncToggle = document.getElementById('syncToggle');
@@ -470,7 +471,9 @@ window.toggleSection = function(sectionId, wrapperId) {
 
 // 16: GESTIONAR MEMORIA: Descarga o borra CSS (Global).
 window.gestionarMemoria = async (cantoId, cargar) => {
-    const cache = await caches.open('cantos-cache-v2.08');
+
+    const cache = await caches.open(CACHE_NAME);
+
     const url = `src/css/pg/${cantoId}.css`;
     if (cargar) {
         try {
@@ -520,45 +523,58 @@ async function cargarPaisesEIP() {
 }
 
 
-// 19. GUARDAR PERFIL: Función global para enviar a Firebase.
+// 19. GUARDAR PERFIL: Versión Optimizada y Completa
 window.guardarPerfil = async function() {
+    console.log("Iniciando proceso de guardado...");
+
+    // 1. Intentar capturar los elementos del DOM con seguridad
+    const elPais = document.getElementById('userCountry');
+    const elParroquia = document.getElementById('userParroquia');
+    const elComunidad = document.getElementById('userComunidad');
+    const elStep = document.getElementById('userStep');
+
+    // 2. Crear el objeto de datos
+    const perfilData = {
+        pais: elPais ? elPais.value : "",
+        parroquia: elParroquia ? elParroquia.value : "",
+        comunidad: elComunidad ? elComunidad.value : "",
+        etapa: elStep ? elStep.value : "0",
+        ultimaActualizacion: new Date().toISOString()
+    };
+
+    // 3. GUARDADO LOCAL INMEDIATO (Esto quita el ROJO del resumen)
+    localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
+    console.log("✅ [LOCAL] Guardado en localStorage con éxito:", perfilData);
+
+    // 4. FORZAR ACTUALIZACIÓN DEL RESUMEN
+    if (typeof actualizarResumenOffline === 'function') {
+        actualizarResumenOffline();
+    }
+
+    // 5. GUARDADO EN FIREBASE (Nube)
     const user = auth.currentUser;
     if (!user) {
-        alert("Debes iniciar sesión para guardar cambios.");
+        alert("Perfil guardado en el teléfono, pero inicia sesión para subirlo a la nube.");
         return;
     }
 
-    // Capturamos los datos con los IDs originales que restauramos
-    const perfilData = {
-        pais: document.getElementById('userCountry').value,
-        parroquia: document.getElementById('userParroquia').value,
-        comunidad: document.getElementById('userComunidad').value,
-        etapa: document.getElementById('userStep').value,
-        ultimaActualizacion: new Date()
-    };
-
-    console.log("Intentando guardar datos:", perfilData);
-
     try {
-        // Ruta exacta confirmada: usuarios > UID > perfil > config
         const docRef = doc(db, "usuarios", user.uid, "perfil", "config");
-        
         await setDoc(docRef, perfilData, { merge: true });
-        
-        alert("¡Perfil actualizado con éxito! 🎸");
-
-        // Actualizamos la etapa en memoria para que la tabla se refresque correctamente
-        etapaGuardada = parseInt(perfilData.etapa);
-        if (typeof renderizarTablaCantos === 'function') {
-            await renderizarTablaCantos();
-        }
-
+        console.log("☁️ [NUBE] Sincronizado con Firebase.");
+        alert("¡Todo listo! Perfil guardado y sincronizado. 🎸");
     } catch (e) {
-        console.error("Error al guardar perfil:", e);
-        alert("Error al conectar con la nube. Revisa tu conexión.");
+        console.error("❌ Error en Firebase:", e);
+        alert("Guardado localmente. Error al subir a la nube (revisa tu conexión).");
     }
-};
 
+        setTimeout(() => {
+            if (typeof actualizarResumenOffline === 'function') {
+                actualizarResumenOffline();
+            }
+        }, 200);
+
+    };
 
 // 19.1: LOGOUT CON CONFIRMACIÓN
 document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
@@ -572,42 +588,6 @@ document.getElementById('btn-logout-perfil')?.addEventListener('click', () => {
     }
 });
 
-// 20: SINCRONIZACIÓN DE DATOS (FIREBASE A RAM)
-window.sincronizarTodoARam = async function() { 
-    const user = auth.currentUser;
-    if (!user) return;
-
-    const container = document.getElementById('progreso-nube-container');
-    const barra = document.getElementById('barra-nube');
-
-    try {
-        if (container) container.style.display = 'block';
-        const { collection, getDocs } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-        
-        const colRef = collection(db, "usuarios", user.uid, "dbdata");
-        const querySnapshot = await getDocs(colRef);
-
-        querySnapshot.forEach((docSnap) => {
-            const cantoId = docSnap.id; 
-            const docData = docSnap.data();
-            const rawData = docData.valor ? docData.valor : docData;
-            
-            // Guardamos en la memoria global y local para que la tabla lo vea
-            const datos = {
-                acorde: String(rawData.acorde || "0"),
-                cejilla: String(rawData.cejilla || "0"),
-                fecha: rawData.fecha || null
-            };
-            ALMACEN_CANTOS[cantoId] = datos;
-            localStorage.setItem(`data-${cantoId}`, JSON.stringify(datos));
-        });
-        console.log("✅ Datos de Firebase listos en RAM.");
-    } catch (e) {
-        console.warn("Error en sincronización:", e);
-    } finally {
-        if (container) container.style.display = 'none';
-    }
-};
 
 // 21: GESTIONAR DESCARGA TOTAL (Uso Offline con Barra y Reporte)
 window.gestionarDescargaTotal = async () => {
@@ -636,10 +616,8 @@ window.gestionarDescargaTotal = async () => {
         total = cantos.length;
         
         // Debe coincidir con CACHE_NAME en sworker.js
-        const cache = await caches.open('cantos-cache-v2.08');
+        const cache = await caches.open(CACHE_NAME);
 
-        // IMPORTANTE: Primero descargamos el archivo index.html una sola vez
-        // Este es el "molde" que se usa para todos los cantos
         try {
             const resIndex = await fetch('index.html');
             if (resIndex.ok) await cache.put('index.html', resIndex);
@@ -647,8 +625,6 @@ window.gestionarDescargaTotal = async () => {
 
         for (let i = 0; i < total; i++) {
             const cantoId = cantos[i].id;
-            
-            // Descargamos el CSS específico de cada canto
             const fileUrl = `src/css/pg/${cantoId}.css`;
             
             const coincidencia = await cache.match(fileUrl);
@@ -671,9 +647,16 @@ window.gestionarDescargaTotal = async () => {
             if (i % 20 === 0) await new Promise(r => setTimeout(r, 5));
         }
 
+        // --- AQUÍ LA INTEGRACIÓN ---
+        // Actualizamos el resumen antes del alert para que los datos estén frescos
+        if (typeof actualizarResumenOffline === "function") {
+            await actualizarResumenOffline();
+        }
+
         alert(`✅ ¡Listo! Ahora los cantos funcionan sin internet.\n\n• Procesados: ${total}\n• En memoria: ${yaExistian}\n• Nuevos: ${descargados}\n• Errores: ${errores}`);
 
-        // Recargando los cantos descargados
+        // OJO: Si usas window.location.reload(), el resumen se volverá a ejecutar 
+        // automáticamente al cargar la página por el listener en resumen.js
         window.location.reload();
 
     } catch (e) { 
@@ -1100,7 +1083,6 @@ function generarGridNavegable(fechasActivas, mes, año) {
 }
 
 // 35: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM
-// 35: COMUNICACIÓN ENTRE EQUIPO, NUBE Y RAM (VERSIÓN FUSIONADA Y FINAL)
 window.sincronizarTodoARam = async function() { 
     const user = auth.currentUser;
     if (!user) {
@@ -1338,8 +1320,9 @@ async function descargarArchivosParaOffline(listaIds) {
 
     try {
         // Usamos el mismo nombre de caché que tienes en sworker.js
-        const nombreCache = 'cantos-cache-v2.08'; 
-        const cache = await caches.open(nombreCache);
+
+        
+        const cache = await caches.open(CACHE_NAME);
         
         // Generamos las rutas exactas de los archivos HTML de los cantos
         const urlsParaGuardar = listaIds.map(id => `src/html/visor.html?canto=${id}`);
@@ -1419,4 +1402,188 @@ async function cargarInformacionCejilla(cantoId) {
             console.error("Error al traer cejilla de Firebase:", err);
         }
     }
+}
+
+
+// ==========================================
+// 1. CONFIGURACIÓN DE SECCIONES Y CONTROLES
+// ==========================================
+const SECCIONES_CONTROLES = [
+    {
+        titulo: "Preferencia de interfaz",
+        controles: [
+            { id: 'toggle-resumen', label: 'Estado del Sistema', originalId: 'wrapper-resumen' },
+            { id: 'syncToggle', label: 'Sincronización Nube', originalId: 'syncToggle' },
+            { id: 'toggle-perfil', label: 'Ver Datos Perfil', originalId: 'toggle-perfil' },
+            { id: 'toggle-gestion', label: 'Ver Gestión Cantos', originalId: 'toggle-gestion' },
+            { id: 'toggle-settings', label: 'Ver Configuracion', originalId: 'toggle-settings' }
+        ]
+    },
+    {
+        titulo: "Preferencia del sistema",
+        controles: [
+            { id: 'control-oscuro', label: 'Modo Oscuro', originalId: 'global-set-dark' },
+            { id: 'btn-limpiar', label: 'Limpiar Caché y Sesión', accion: () => ejecutarLimpiezaProfunda() }
+        ]
+    }
+];
+
+// ==========================================
+// 2. RENDERIZADO DINÁMICO POR SECCIONES
+// ==========================================
+const renderizarControlesDinamicos = () => {
+    const container = document.getElementById('contenedor-controles-dinamicos');
+    if (!container) return;
+
+    container.innerHTML = ""; 
+
+    SECCIONES_CONTROLES.forEach(seccion => {
+        const divSeccion = document.createElement('div');
+        divSeccion.className = "seccion-controles-compacta";
+
+        const htmlControles = seccion.controles.map(control => {
+            if (control.accion) {
+                return `
+                    <div class="fila-control-rapido">
+                        <span class="etiqueta-control">${control.label}</span>
+                        <button onclick="controlAccion('${control.id}')" class="btn-accion-min">Ejecutar</button>
+                    </div>
+                `;
+            }
+
+            const idRef = control.originalId || control.id;
+            const elOriginal = document.getElementById(idRef);
+            
+            // Prioridad al estado guardado para que no "salte" al recargar
+            const guardadoLocal = localStorage.getItem(`pref-control-${idRef}`);
+            let estaActivo = false;
+
+            if (guardadoLocal !== null) {
+                estaActivo = guardadoLocal === 'true';
+            } else if (elOriginal) {
+                estaActivo = elOriginal.tagName === 'INPUT' ? 
+                             elOriginal.checked : 
+                             !elOriginal.classList.contains('collapsed');
+            }
+
+            return `
+                <div class="fila-control-rapido">
+                    <span class="etiqueta-control">${control.label}</span>
+                    <label class="switch" style="transform: scale(0.7); margin: 0;">
+                        <input type="checkbox" id="btn-${control.id}" ${estaActivo ? 'checked' : ''} 
+                               onchange="activarControl('${idRef}')">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            `;
+        }).join('');
+
+        divSeccion.innerHTML = `
+            <span class="titulo-controles">${seccion.titulo}</span>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+                ${htmlControles}
+            </div>
+        `;
+        container.appendChild(divSeccion);
+    });
+};
+
+// ==========================================
+// 3. LOGICA DE ACCIONES Y EVENTOS
+// ==========================================
+
+window.controlAccion = (id) => {
+    let controlEncontrado = null;
+    SECCIONES_CONTROLES.forEach(sec => {
+        const c = sec.controles.find(ctrl => ctrl.id === id);
+        if (c) controlEncontrado = c;
+    });
+    if (controlEncontrado && typeof controlEncontrado.accion === 'function') {
+        controlEncontrado.accion();
+    }
+};
+
+window.activarControl = (id) => {
+    const el = document.getElementById(id);
+    let nuevoEstado;
+
+    // CASO A: Dark Mode
+    if (id === 'global-set-dark') {
+        nuevoEstado = localStorage.getItem('pref-dark-mode') !== 'true';
+        document.body.classList.toggle('dark-theme', nuevoEstado);
+        localStorage.setItem('pref-dark-mode', nuevoEstado);
+        const originalInput = document.getElementById('global-set-dark');
+        if (originalInput) originalInput.checked = nuevoEstado;
+        
+        // Guardamos con el ID de control para que el render lo reconozca
+        localStorage.setItem(`pref-control-${id}`, nuevoEstado);
+    } 
+    // CASO B: Otros controles (Inputs o Secciones)
+    else if (el) {
+        if (el.tagName === 'INPUT') {
+            el.click(); 
+            nuevoEstado = el.checked;
+        } else {
+            const contentId = id.replace('wrapper', 'section');
+            if (typeof toggleSection === 'function') {
+                toggleSection(contentId, id);
+                nuevoEstado = !el.classList.contains('collapsed');
+            }
+        }
+        localStorage.setItem(`pref-control-${id}`, nuevoEstado);
+    }
+
+    // SINCRONIZACIÓN
+    if (typeof guardarAjustesEnNube === 'function') {
+        guardarAjustesEnNube();
+    }
+    
+    if (typeof actualizarResumenOffline === 'function') {
+        setTimeout(actualizarResumenOffline, 200);
+    }
+};
+
+async function ejecutarLimpiezaProfunda() {
+    if (confirm("⚠️ ¡ATENCIÓN!\n\nSe borrarán todos los datos locales y se cerrará la sesión.\n\n¿Deseas continuar?")) {
+        try {
+            localStorage.clear();
+            sessionStorage.clear();
+            if ('caches' in window) {
+                const keys = await caches.keys();
+                await Promise.all(keys.map(key => caches.delete(key)));
+            }
+            window.location.href = 'index.html'; 
+        } catch (error) { console.error(error); }
+    }
+}
+
+async function guardarAjustesEnNube() {
+    const user = auth.currentUser;
+    if (!user) return;
+    
+    const ajustes = {};
+    SECCIONES_CONTROLES.forEach(sec => {
+        sec.controles.forEach(c => {
+            const id = c.originalId || c.id;
+            const valor = localStorage.getItem(`pref-control-${id}`);
+            if (valor !== null) {
+                ajustes[id] = (valor === 'true');
+            }
+        });
+    });
+
+    try {
+        const docRef = doc(db, "usuarios", user.uid, "configuracion", "preferencias");
+        await setDoc(docRef, ajustes, { merge: true });
+        console.log("☁️ Nube actualizada");
+    } catch (e) { 
+        console.error("Error nube:", e); 
+    }
+}
+
+// Inicialización
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderizarControlesDinamicos);
+} else {
+    renderizarControlesDinamicos();
 }

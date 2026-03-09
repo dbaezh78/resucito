@@ -11,7 +11,6 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
             console.log(`[SW] Cacheando archivos versión ${APP_VERSION}...`);
-            // Ahora URLS_TO_CACHE coincide con config.js
             return Promise.allSettled(
                 URLS_TO_CACHE.map(url => {
                     return cache.add(url).catch(err => console.warn(`[SW] Error en: ${url}`));
