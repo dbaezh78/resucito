@@ -337,8 +337,14 @@ body.dark-theme #modal-global-settings select option {
     height: 40px;
     place-content: center;
     text-align: center;
-
 }
+
+.home {color: white;}
+.home:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
 .material-symbols-outlined:hover {
     background: white;
     background: #c42525;
