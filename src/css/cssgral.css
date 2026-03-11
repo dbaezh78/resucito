@@ -927,7 +927,7 @@ hr {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    /*padding: 10px 5px 0px 5px;*/
+    padding-right: 20px;
 }
 
 .nCanto {
