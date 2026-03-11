@@ -922,7 +922,13 @@ hr {
     }
 }
 
-.cno {padding: 10px 5px 0px 5px;   }
+.cno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /*padding: 10px 5px 0px 5px;*/
+}
 
 .nCanto {
     color: red;
