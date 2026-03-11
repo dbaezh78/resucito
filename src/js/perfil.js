@@ -15,7 +15,7 @@ window.indiceCantosGlobal = [];
 const cargarDatosBaseSilenciosos = async () => {
     try {
         // Cargar JSON de cantos
-        const response = await fetch('src/data/indicecantos.json');
+        const response = await fetch('/src/data/indicecantos.json');
         window.indiceCantosGlobal = await response.json();
         console.log("✅ Datos base cargados en segundo plano.");
 
@@ -757,22 +757,30 @@ window.filtrarCantos = function() {
 };
 
 // 25: Guardar preferencia y forzar refresco si se activa
-document.getElementById('syncToggle').addEventListener('change', (e) => {
-    const activa = e.target.checked;
-    localStorage.setItem('preferencia_sync', activa);
-    
-    if (activa) {
-        // Al activar, borramos solo los datos de los cantos para refrescar desde Firebase
-        for (let i = localStorage.length - 1; i >= 0; i--) {
-            const clave = localStorage.key(i);
-            if (clave.startsWith('data-')) {
-                localStorage.removeItem(clave);
+// 25: Guardar preferencia y forzar refresco si se activa
+const btnSync = document.getElementById('syncToggle');
+
+// Agregamos este IF para que solo se ejecute si el botón EXISTE en la página
+if (btnSync) {
+    btnSync.addEventListener('change', (e) => {
+        const activa = e.target.checked;
+        localStorage.setItem('preferencia_sync', activa);
+        
+        if (activa) {
+            // Al activar, borramos solo los datos de los cantos para refrescar desde Firebase
+            for (let i = localStorage.length - 1; i >= 0; i--) {
+                const clave = localStorage.key(i);
+                if (clave && clave.startsWith('data-')) {
+                    localStorage.removeItem(clave);
+                }
+            }
+            // Volvemos a renderizar si la función existe
+            if (typeof renderizarTablaCantos === 'function') {
+                renderizarTablaCantos();
             }
         }
-        // Volvemos a renderizar para que la Función 4 pida todo de nuevo
-        renderizarTablaCantos();
-    }
-});
+    });
+}
 
 
 // 26: REGISTRO DE CAMBIO (Escritura en dbdata con Historial Unificado)
@@ -1339,7 +1347,7 @@ async function descargarArchivosParaOffline(listaIds) {
 }
 
 
-// 40: // Función para mostrar la cejilla combinando JSON y Firebase
+// Función para mostrar la cejilla combinando JSON y Firebase + Valoración
 async function cargarInformacionCejilla(cantoId) {
     const elContenedor = document.getElementById('info-traste-dinamico');
     const elBase = document.getElementById('traste-base');
@@ -1355,12 +1363,9 @@ async function cargarInformacionCejilla(cantoId) {
     let cejillaOriginal = "0";
 
     // --- 1. OBTENER DESDE EL JSON (indicecantos.json) ---
-    // Asegúrate de que 'allCantosData' es la variable global que contiene el JSON cargado
     if (typeof allCantosData !== 'undefined' && Array.isArray(allCantosData)) {
         const datosLocal = allCantosData.find(c => c.id === cantoId);
-        
         if (datosLocal) {
-            // REVISIÓN CLAVE: En tu JSON el campo debe llamarse 'cejilla'
             cejillaOriginal = datosLocal.cejilla || "0";
             console.log(`Módulo Cejilla: Encontrada cejilla original ${cejillaOriginal} para el canto ${cantoId}`);
         } else {
@@ -1372,34 +1377,41 @@ async function cargarInformacionCejilla(cantoId) {
     
     // Pintamos la cejilla base y mostramos el contenedor principal
     elBase.innerText = cejillaOriginal;
-    elContenedor.style.display = 'inline-flex'; // Usamos flex para alinear icono y número
+    elContenedor.style.display = 'inline-flex';
 
-
-    // --- 2. OBTENER DESDE FIREBASE (Preferencia guardada del usuario) ---
-    // Solo intentamos si la API de Firebase está lista
+    // --- 2. OBTENER DESDE FIREBASE (Preferencia guardada y Valoración) ---
     if (window.firebaseAPI && typeof window.firebaseAPI.obtenerDato === 'function') {
         try {
-            // 'preferencias_cantos' es el nombre de tu colección en Firestore
-            const prefUsuario = await window.firebaseAPI.obtenerDato(cantoId, 'preferencias_cantos');
+            // USAMOS LA RUTA dbdata PARA LAS ESTRELLAS
+            const prefUsuario = await window.firebaseAPI.obtenerDato(cantoId, 'dbdata');
             
-            if (prefUsuario && prefUsuario.transporte !== undefined) {
-                // El transporte es un número relativo (ej: +2, -1 semitonos)
-                const transporte = parseInt(prefUsuario.transporte);
-                
-                // Si hay transporte guardado y es distinto de cero
-                if (transporte !== 0) {
-                    const nuevaCejilla = parseInt(cejillaOriginal) + transporte;
-                    
-                    // Mostramos la sugerencia calculada
-                    if (elSeccion && elSugerido) {
-                        elSeccion.style.display = 'flex'; // Usamos flex para alinear flecha y número
-                        elSugerido.innerText = nuevaCejilla;
-                        console.log(`Módulo Cejilla: Aplicado transporte de ${transporte} semitonos. Nueva cejilla sugerida: ${nuevaCejilla}`);
+            if (prefUsuario) {
+                // --- INTEGRACIÓN DE ESTRELLAS ---
+                const puntos = prefUsuario.valoracion || 0;
+                if (typeof pintarEstrellasVisuales === 'function') {
+                    pintarEstrellasVisuales(puntos, cantoId);
+                }
+
+                // --- TU LÓGICA DE TRANSPORTE ORIGINAL ---
+                if (prefUsuario.transporte !== undefined) {
+                    const transporte = parseInt(prefUsuario.transporte);
+                    if (transporte !== 0) {
+                        const nuevaCejilla = parseInt(cejillaOriginal) + transporte;
+                        if (elSeccion && elSugerido) {
+                            elSeccion.style.display = 'flex';
+                            elSugerido.innerText = nuevaCejilla;
+                            console.log(`Módulo Cejilla: Aplicado transporte de ${transporte}. Sugerida: ${nuevaCejilla}`);
+                        }
                     }
+                }
+            } else {
+                // Si no hay datos en la nube, inicializamos estrellas en 0
+                if (typeof pintarEstrellasVisuales === 'function') {
+                    pintarEstrellasVisuales(0, cantoId);
                 }
             }
         } catch (err) {
-            console.error("Error al traer cejilla de Firebase:", err);
+            console.error("Error al traer datos de Firebase:", err);
         }
     }
 }
@@ -1587,3 +1599,4 @@ if (document.readyState === 'loading') {
 } else {
     renderizarControlesDinamicos();
 }
+

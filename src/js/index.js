@@ -112,29 +112,57 @@ if (currentCanto) {
                 console.log("Canto found:", currentCanto.title);
                 loadDynamicCSS(cantoIdToLoad);
 
-                // --- INICIO BLOQUE CEJILLA (Agregado sin borrar nada) ---
-                fetch('/src/data/indicecantos.json') 
-                    .then(response => response.json())
-                    .then(data => {
-                        const infoExtra = data.find(c => c.id === cantoIdToLoad);
-                        if (infoExtra) {
-                            const elContenedor = document.getElementById('info-traste-dinamico');
-                            const elBase = document.getElementById('traste-base');
-                            const elAcorde = document.getElementById('canto-acorde-base');
+// --- INICIO BLOQUE CEJILLA, ACORDE Y RATING O VALORACION ---
+fetch('/src/data/indicecantos.json') 
+    .then(response => response.json())
+    .then(data => {
+        const infoExtra = data.find(c => c.id === cantoIdToLoad);
+        if (infoExtra) {
+            const elContenedor = document.getElementById('info-traste-dinamico');
+            const elBase = document.getElementById('traste-base');
+            const elAcorde = document.getElementById('canto-acorde-base');
 
-                            if (elContenedor) {
-                                if (elAcorde) elAcorde.innerText = infoExtra.acorde ? `${infoExtra.acorde}` : "";
-                                if (elBase) elBase.innerText = infoExtra.cejilla ||"";
-                                elContenedor.style.display = 'inline-flex';
-                            }
-                            // Llamada a Firebase para transporte guardado (perfil.js)
-                            if (typeof cargarInformacionCejilla === 'function') {
-                                cargarInformacionCejilla(cantoIdToLoad);
-                            }
+            if (elContenedor) {
+                if (elAcorde) elAcorde.innerText = infoExtra.acorde ? `${infoExtra.acorde}` : "";
+                if (elBase) elBase.innerText = infoExtra.cejilla || "";
+
+                // --- CARGA DE ESTRELLAS COMPATIBLE ---
+                // 1. Buscamos en el objeto 'data-ID' (el que usa perfil.js)
+                const dataPerfil = JSON.parse(localStorage.getItem(`data-${cantoIdToLoad}`));
+                // 2. Buscamos en el backup 'valoracion_ID'
+                const valorBackup = localStorage.getItem(`valoracion_${cantoIdToLoad}`);
+                
+                let puntosFinales = 0;
+                if (dataPerfil && dataPerfil.valoracion !== undefined) {
+                    puntosFinales = dataPerfil.valoracion;
+                } else if (valorBackup !== null) {
+                    puntosFinales = parseInt(valorBackup);
+                } else {
+                    puntosFinales = infoExtra.valoracion || 0;
+                }
+
+                pintarEstrellasVisuales(puntosFinales, cantoIdToLoad);
+                elContenedor.style.display = 'inline-flex';
+            }
+
+            // --- SINCRONIZACIÓN CON FIREBASE ---
+            if (window.firebaseAPI && window.firebaseAPI.onAuthStateChanged) {
+                window.firebaseAPI.onAuthStateChanged(window.auth, (user) => {
+                    if (user) {
+                        console.log("✅ Sesión detectada, sincronizando con la nube...");
+                        if (typeof cargarInformacionCejilla === 'function') {
+                            cargarInformacionCejilla(cantoIdToLoad);
                         }
-                    })
-                    .catch(err => console.error("Error cargando datos de cejilla:", err));
-        
+                    } else {
+                        console.log("👤 Modo invitado.");
+                    }
+                });
+            }
+        }
+    })
+    .catch(err => console.error("Error cargando datos de cejilla:", err));                    
+
+                    
         // Procesar las categorías para incluir sus URLs
         const processedCategories = currentCanto.category.map(catName => {
             let baseUrl = "/index.html?";
@@ -225,3 +253,80 @@ window.abrirCanto = function(cantoId) {
     // 2. Redirección limpia al canto
     window.location.href = `src/html/pantalla.html?canto=${cantoId}`;
 };
+
+
+// ===============================================
+// PINTANDO LAS ESTRELLAS
+// ===============================================
+
+function pintarEstrellasVisuales(puntos, cantoId) {
+    const contenedor = document.getElementById('valoracion-index-contenedor');
+    if (!contenedor) return;
+
+    let html = '<div style="display: flex; gap: 3px; cursor: pointer; font-size: 20px;">';
+    for (let i = 1; i <= 5; i++) {
+        const color = (i <= puntos) ? '#FFD700' : '#C0C0C0';
+        // El onclick llama a la función de guardar que pondremos abajo
+        html += `<span onclick="guardarNuevaValoracion('${cantoId}', ${i})" style="color: ${color};">★</span>`;
+    }
+    html += '</div>';
+    
+    contenedor.innerHTML = html;
+}
+// ===============================================
+// CONECTOR DE VALORACIÓN (CON FILTRO DE RED)
+// ===============================================
+
+const miPuenteValoracion = function(cantoId, puntos) {
+    console.log("⭐ Click en estrella detectado:", puntos);
+
+    // 1. GUARDADO LOCAL (Siempre, pase lo que pase)
+    if (typeof pintarEstrellasVisuales === 'function') {
+        pintarEstrellasVisuales(puntos, cantoId);
+    }
+    
+    // Guardamos en ambos formatos por compatibilidad
+    localStorage.setItem(`valoracion_${cantoId}`, puntos);
+    
+    const dataExistente = JSON.parse(localStorage.getItem(`data-${cantoId}`)) || {};
+    localStorage.setItem(`data-${cantoId}`, JSON.stringify({
+        ...dataExistente,
+        valoracion: puntos,
+        offline: !navigator.onLine 
+    }));
+
+    // 2. FILTRO DE RED
+    if (navigator.onLine) {
+        if (typeof window.guardarValoracion === 'function') {
+            window.guardarValoracion(cantoId, puntos);
+            console.log("🚀 Online: Sincronizando con Firebase...");
+        }
+    } else {
+        console.log("📡 Offline: Guardado localmente. Sin errores de red.");
+    }
+};
+
+window.guardarNuevaValoracion = miPuenteValoracion;
+window.guardarValoracion = window.guardarValoracion || miPuenteValoracion;
+
+// ===============================================
+// CONECTOR DE VALORACIÓN (CON FILTRO DE RED)
+// ===============================================
+
+// ===============================================
+// VIGILANTE PARA SUBIR INFO
+// ===============================================
+
+// Escuchador de conexión recuperada
+window.addEventListener('online', () => {
+    console.log("🌐 ¡Internet recuperado! Revisando sincronizaciones pendientes...");
+    
+    // Buscamos en el almacenamiento si hay algo marcado como offline
+    const cantoIdActual = new URLSearchParams(window.location.search).get('canto');
+    if (cantoIdActual) {
+        const data = JSON.parse(localStorage.getItem(`data-${cantoIdActual}`));
+        if (data && data.offline) {
+            miPuenteValoracion(cantoIdActual, data.valoracion);
+        }
+    }
+});

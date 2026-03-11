@@ -27,10 +27,22 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const googleProvider = new GoogleAuthProvider();
 
-// ✅ EL PUENTE (Fundamental para que setting.js no dé error)
+// ================================================================
+// ✅ EL PUENTE ACTUALIZADO
+// ================================================================
+window.auth = auth; 
 window.firebaseAPI = {
-    obtenerUsuarioActual: () => auth.currentUser
+    auth: auth,
+    db: db,
+    // Usamos funciones flecha para que Firebase no pierda el contexto
+    doc: (...args) => doc(...args),
+    setDoc: (...args) => setDoc(...args),
+    onAuthStateChanged: (...args) => onAuthStateChanged(...args),
+    obtenerUsuarioActual: () => auth.currentUser,
+    login: loginConGoogle,
+    logout: logout
 };
+// ================================================================
 
 // ✅ FUNCIÓN LOGIN
 export async function loginConGoogle() {
