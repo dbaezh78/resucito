@@ -1,5 +1,5 @@
 // Único lugar para cambiar la versión
-const APP_VERSION = '2.11';
+const APP_VERSION = '2.12';
 const CACHE_NAME = `cantos-cache-v${APP_VERSION}`;
 const OFFLINE_URL = 'src/offline.html';
 
