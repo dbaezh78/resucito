@@ -25,45 +25,38 @@
     padding: 5px;
 }
 
+.dblink-ac {
+    display: block;
+    width: 100%;
+    overflow: hidden; /* Corta el texto cuando sale de la pantalla */
+    white-space: nowrap;
+}
+
 .marquee-text {
     font-family: 'Neocat-Regular_3.0';
     font-size: x-large;
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 20s linear infinite;
     color: darkgoldenrod;
-    margin-bottom: 20px;
-
-    @media (min-width: 384px){width: 364px;}@media (min-width: 768px){width: 768px;}@media (min-width: 992px){width: 990px;}
+    display: inline-block;
+    padding-left: 100%; /* FUERZA a que el texto empiece fuera, a la derecha */
+    animation: marquee 40s linear infinite; /* Ajusta los segundos según prefieras */
 }
 
-    @media (min-width: 384px) {
-        @keyframes marquee {
-            0% { transform: translateX(120%); }
-            100% { transform: translateX(-400%); }
-        }
+@keyframes marquee {
+    0% {
+        /* Empieza justo donde termina el borde derecho de la pantalla */
+        transform: translateX(0); 
     }
-
-    @media (min-width: 768px) {
-        @keyframes marquee {
-            0% { transform: translateX(110%); }
-            100% { transform: translateX(-197%); }
-        }
+    100% {
+        /* Se mueve hacia la izquierda: 
+           Su propio ancho (-100%) más el ancho de la pantalla que ya recorrió */
+        transform: translateX(-100%); 
     }
+}
 
-    @media (min-width: 992px) {
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-333%); }
-        }
-    }
-
-    @media (min-width: 2048px) {
-        @keyframes marquee {
-            0% { transform: translateX(110%); }
-            100% { transform: translateX(-400%); }
-        }
-     }
+/* Opcional: Pausa al poner el mouse */
+#cantoLink:hover .marquee-text {
+    animation-play-state: paused;
+}
 
 /* Estilo del modal que aparecerá */
 .modal-cantos {
