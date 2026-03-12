@@ -41,40 +41,79 @@ const cargarDatosBaseSilenciosos = async () => {
 // Disparo inmediato de la carga silenciosa
 cargarDatosBaseSilenciosos();
 
+// ==================================================
 // 3: OBSERVADOR DE AUTENTICACIÓN (EL PORTERO)
+// ==================================================
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         console.log("👤 Usuario verificado:", user.uid);
-        
-        // Eliminamos el aviso de bloqueo si existe
+
+        // Agregamos una pequeña espera de 500ms para asegurar que el DOM 
+        // y los inputs (como #userName) estén procesados por el navegador
+        setTimeout(async () => {
+            const docRefConfig = doc(db, "usuarios", user.uid, "perfil", "config");
+
+            try {
+                // 1. Siempre actualizamos el nombre principal en la raíz
+                // Prioridad: 1. Google (user.displayName) | 2. Input HTML | 3. "Usuario"
+                const nombreActual = user.displayName || document.getElementById('userName').value || "Usuario";
+                
+                await setDoc(docRefConfig, { 
+                    nombre: nombreActual,
+                    ultimaActualizacion: new Date().toISOString()
+                }, { merge: true });
+
+                // 2. LÓGICA DE REGISTRO ÚNICO POR SESIÓN
+                const yaRegistrado = sessionStorage.getItem('login_registrado_' + user.uid);
+
+                if (!yaRegistrado) {
+                    const fechaId = new Date().getTime();
+                    const docRefLogin = doc(db, "usuarios", user.uid, "perfil", "config", "inicioSesion", fechaId.toString());
+
+                    await setDoc(docRefLogin, {
+                        fecha: new Date().toLocaleString(),
+                        timestamp: fechaId
+                    });
+
+                    sessionStorage.setItem('login_registrado_' + user.uid, 'true');
+                    console.log("✅ Registro de inicio de sesión creado con éxito.");
+                }
+
+                // 3. Cargar datos en los inputs tras asegurar el registro
+                const docSnap = await getDoc(docRefConfig);
+                if (docSnap.exists()) {
+                    aplicarDatosPerfilAInputs(docSnap.data()); 
+                    window._uiYaSincronizada = true;
+                    console.log("✅ UI Sincronizada con éxito desde Firebase");
+                }
+
+            } catch (e) { 
+                console.error("❌ Error en Firebase al iniciar sesión:", e); 
+            }
+        }, 500); // 500ms es suficiente para que el navegador esté listo
+
+        // --- Procesos secundarios ---
         const aviso = document.getElementById('overlay-auth-aviso');
         if (aviso) aviso.remove();
 
-        // A. Cargamos perfil (País, Parroquia, etc.)
-        const docRef = doc(db, "usuarios", user.uid, "perfil", "config");
-        try {
-            const docSnap = await getDoc(docRef);
-            if (docSnap.exists()) {
-                aplicarDatosPerfilAInputs(docSnap.data()); 
-            }
-        } catch (e) { console.warn("Error perfil:", e); }
-
-        // B. ESPERAMOS a la nube (Sección 35)
-        // Esto evita que la tabla salga vacía o "congelada"
         if (typeof window.sincronizarTodoARam === 'function') {
             await window.sincronizarTodoARam(); 
         }
-
-        // C. Dibujamos la tabla
         await renderizarTablaCantos();
 
     } else {
-        // SI NO HAY SESIÓN: Bloqueo inmediato
         if (window.location.pathname.includes('perfil.html')) {
-            mostrarBloqueoAcceso(); // Función de la Sección 4
+            mostrarBloqueoAcceso();
         }
     }
 });
+
+
+// ==================================================
+// 3: OBSERVADOR DE AUTENTICACIÓN (EL PORTERO)
+// ==================================================
+
+
 
 // 4: Muestra el modal de bloqueo
 function mostrarBloqueoAcceso() {
@@ -107,10 +146,20 @@ function mostrarBloqueoAcceso() {
 
 // 5: Función auxiliar para aplicar datos a selectores
 function aplicarDatosPerfilAInputs(data) {
+    const selName = document.getElementById('userName');
     const selPais = document.getElementById('userCountry');
     const selParr = document.getElementById('userParroquia');
     const selComu = document.getElementById('userComunidad');
     const selStep = document.getElementById('userStep');
+
+    if (selName) {
+        // Obtenemos el usuario actual de Firebase
+        const user = auth.currentUser;
+        if (user && user.displayName) {
+            selName.value = user.displayName;
+            // Opcional: selName.readOnly = true; (Si no quieres que lo edite)
+        }
+    }
 
     if (selParr) selParr.value = data.parroquia || "";
     if (selStep) {
@@ -150,35 +199,6 @@ const MAPA_ACORDES = {
     "10": "Sol m",
     "11": "Sol# m"
 };
-
-// 7: INICIALIZACIÓN: Llena comunidades, países y CARGA LA RAM (ALMACEN_CANTOS)
-document.addEventListener('DOMContentLoaded', async () => {
-    llenarComunidades();
-    await cargarPaisesEIP();
-
-    // >>> NUEVO: LLENADO DE RAM DESDE LOCALSTORAGE <<<
-    // Esto recorre tu "Escudo" y lo mete a la RAM de un solo golpe
-    Object.keys(localStorage).forEach(key => {
-        if (key.startsWith('data-')) {
-            const cantoId = key.replace('data-', '');
-            try {
-                const localData = JSON.parse(localStorage.getItem(key));
-                if (localData) {
-                    ALMACEN_CANTOS[cantoId] = localData;
-                }
-            } catch (e) {
-                console.error("Error cargando RAM inicial:", e);
-            }
-        }
-    });
-
-    // Recuperar la preferencia del switch del teléfono
-    const pref = localStorage.getItem('preferencia_sync');
-    const toggle = document.getElementById('syncToggle');
-    if (toggle && pref !== null) {
-        toggle.checked = (pref === 'true');
-    }
-});
 
 
 // 11: RENDERIZADO DE TABLA 
@@ -528,6 +548,7 @@ window.guardarPerfil = async function() {
     console.log("Iniciando proceso de guardado...");
 
     // 1. Intentar capturar los elementos del DOM con seguridad
+    const elName = document.getElementById('userName');
     const elPais = document.getElementById('userCountry');
     const elParroquia = document.getElementById('userParroquia');
     const elComunidad = document.getElementById('userComunidad');
@@ -535,6 +556,7 @@ window.guardarPerfil = async function() {
 
     // 2. Crear el objeto de datos
     const perfilData = {
+        nombre: elName ? elName.value : "",
         pais: elPais ? elPais.value : "",
         parroquia: elParroquia ? elParroquia.value : "",
         comunidad: elComunidad ? elComunidad.value : "",
@@ -1233,15 +1255,34 @@ auth.onAuthStateChanged((user) => {
             }
         };
 
-// 38: CONTROL DE COLAPSO Y SINCRONIZACIÓN
-document.addEventListener('DOMContentLoaded', () => {
-    const configPaneles = {
-        'toggle-perfil':  { content: 'section-config',        wrapper: 'wrapper-config' },
-        'toggle-gestion': { content: 'lista-cantos-gestion-wrapper',  wrapper: 'wrapper-gestion' },
-        'toggle-settings': { content: 'section-settings',     wrapper: 'wrapper-settings' }
-    };
+// ================================================================
+//              INICIALIZACIÓN ÚNICA DEL SISTEMA 
+// ================================================================
+document.addEventListener('DOMContentLoaded', async () => {
+    console.log("🚀 Iniciando sistema de perfil...");
 
-    const syncToggle = document.getElementById('syncToggle');
+    // 1. CARGA DE DATOS BÁSICOS
+    llenarComunidades();
+    await cargarPaisesEIP();
+
+    // 2. LLENADO DE RAM (ALMACEN_CANTOS)
+    Object.keys(localStorage).forEach(key => {
+        if (key.startsWith('data-')) {
+            const cantoId = key.replace('data-', '');
+            try {
+                const localData = JSON.parse(localStorage.getItem(key));
+                if (localData) ALMACEN_CANTOS[cantoId] = localData;
+            } catch (e) { console.error("Error RAM:", e); }
+        }
+    });
+
+    // 3. CONFIGURACIÓN DE PANELES Y SWITCHES
+    const configPaneles = {
+        'toggle-resumen':  { content: 'status-grid',               wrapper: 'wrapper-resumen' },
+        'toggle-perfil':   { content: 'section-config',            wrapper: 'wrapper-config' },
+        'toggle-gestion':  { content: 'lista-cantos-gestion-wrapper', wrapper: 'wrapper-gestion' },
+        'toggle-settings': { content: 'section-settings',          wrapper: 'wrapper-settings' },
+    };
 
     function aplicarEstadoPanel(idSwitch, mostrar) {
         const refs = configPaneles[idSwitch];
@@ -1259,66 +1300,116 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    async function guardarEstadoEnNube(idSwitch, estado) {
-        const user = auth.currentUser;
-        if (!user) return;
-        try {
-            const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-            const docRef = doc(db, "usuarios", user.uid, "configuracion", "paneles");
-            await setDoc(docRef, { [idSwitch]: estado }, { merge: true });
-        } catch (e) { console.error("Error al guardar:", e); }
+    // 4. RECUPERACIÓN DE PREFERENCIAS (Prioridad: Local -> Nube)
+    const syncToggle = document.getElementById('syncToggle');
+    const prefLocalSincro = localStorage.getItem('preferencia_sync');
+    
+    if (syncToggle && prefLocalSincro !== null) {
+        syncToggle.checked = (prefLocalSincro === 'true');
     }
 
-    // Eventos para los paneles (Mostrar/Ocultar)
+    // 5. EVENTOS DE LOS PANELES (GUARDADO AUTOMÁTICO)
     Object.keys(configPaneles).forEach(id => {
         const sw = document.getElementById(id);
         if (sw) {
-            sw.addEventListener('change', (e) => {
+            sw.addEventListener('change', async (e) => {
                 const activo = e.target.checked;
                 aplicarEstadoPanel(id, activo);
-                guardarEstadoEnNube(id, activo);
+                
+                // Guardado automático en Nube
+                const user = auth.currentUser;
+                if (user) {
+                    try {
+                        const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+                        const docRef = doc(db, "usuarios", user.uid, "configuracion", "paneles");
+                        await setDoc(docRef, { [id]: activo }, { merge: true });
+                        console.log(`☁️ Panel ${id} guardado.`);
+                    } catch (err) { console.error("Error nube:", err); }
+                }
             });
         }
     });
 
-    // Lógica del Switch Maestro (Sincronización) - YA NO AFECTA A LOS DEMÁS
+    // Evento del Switch Maestro
     if (syncToggle) {
         syncToggle.addEventListener('change', function() {
             const activo = this.checked;
-            localStorage.setItem('syncNube', activo);
-            guardarEstadoEnNube('syncToggle', activo); // Solo guarda su propio estado
-
+            localStorage.setItem('preferencia_sync', activo);
+            // Sincronizar estado del switch en la nube
+            if (auth.currentUser) {
+                import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js").then(({doc, setDoc}) => {
+                    const docRef = doc(db, "usuarios", auth.currentUser.uid, "configuracion", "paneles");
+                    setDoc(docRef, { syncToggle: activo }, { merge: true });
+                });
+            }
             if (activo && typeof window.sincronizarTodoARam === 'function') {
                 window.sincronizarTodoARam();
             }
         });
     }
 
-    // Cargar estados iniciales
-    auth.onAuthStateChanged(async (user) => {
-        if (user) {
-            try {
-                const { doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
-                const docRef = doc(db, "usuarios", user.uid, "configuracion", "paneles");
-                const snap = await getDoc(docRef);
-                if (snap.exists()) {
-                    const data = snap.data();
-                    // Cargar estados de paneles
-                    Object.keys(configPaneles).forEach(id => {
-                        const sw = document.getElementById(id);
-                        if (sw && data[id] !== undefined) {
-                            sw.checked = data[id];
-                            aplicarEstadoPanel(id, data[id]);
+        // 6. CARGA FINAL DESDE LA NUBE (Fusión Paneles + Preferencias)
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                try {
+                    const { doc, getDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+                    
+                    // --- BLOQUE A: PANELES (Perfil, Gestión, Ajustes) ---
+                    const docRefPaneles = doc(db, "usuarios", user.uid, "configuracion", "paneles");
+                    const snapPaneles = await getDoc(docRefPaneles);
+                    
+                    if (snapPaneles.exists()) {
+                        const data = snapPaneles.data();
+                        Object.keys(configPaneles).forEach(id => {
+                            const sw = document.getElementById(id);
+                            if (sw && data[id] !== undefined) {
+                                sw.checked = data[id];
+                                aplicarEstadoPanel(id, data[id]);
+                            }
+                        });
+
+                        // Sincronizar el Switch Maestro (Sync)
+                        if (syncToggle && data['syncToggle'] !== undefined) {
+                            syncToggle.checked = data['syncToggle'];
+                            localStorage.setItem('preferencia_sync', data['syncToggle']);
                         }
-                    });
-                    // Cargar estado del sync maestro
-                    if (syncToggle && data['syncToggle'] !== undefined) {
-                        syncToggle.checked = data['syncToggle'];
                     }
-                }
-            } catch (e) { console.log("Cargando vista..."); }
+
+// --- BLOQUE B: PREFERENCIAS (Dentro del onAuthStateChanged) ---
+const docRefPrefs = doc(db, "usuarios", user.uid, "configuracion", "preferencias");
+const snapPrefs = await getDoc(docRefPrefs);
+
+if (snapPrefs.exists()) {
+    const ajustes = snapPrefs.data();
+    Object.keys(ajustes).forEach(id => {
+        const estado = ajustes[id];
+        
+        // Guardamos para los switches
+        localStorage.setItem(`pref-control-${id}`, estado);
+        
+        // Aplicamos la lógica de tu backup para el Dark Mode
+        if (id === 'global-set-dark') {
+            localStorage.setItem('pref-dark-mode', estado);
+            if (estado === true) {
+                document.body.classList.add('dark-theme');
+            } else {
+                document.body.classList.remove('dark-theme');
+            }
         }
     });
+
+    if (typeof renderizarControlesDinamicos === 'function') {
+        renderizarControlesDinamicos();
+    }
+}
+
+            } catch (e) {
+                    console.error("❌ Error al bajar configuración de la nube:", e);
+                }
+            }
+        });
+
+
 });
 
 
@@ -1424,7 +1515,6 @@ const SECCIONES_CONTROLES = [
     {
         titulo: "Preferencia de interfaz",
         controles: [
-            { id: 'toggle-resumen', label: 'Estado del Sistema', originalId: 'wrapper-resumen' },
             { id: 'syncToggle', label: 'Sincronización Nube', originalId: 'syncToggle' },
             { id: 'toggle-perfil', label: 'Ver Datos Perfil', originalId: 'toggle-perfil' },
             { id: 'toggle-gestion', label: 'Ver Gestión Cantos', originalId: 'toggle-gestion' },
@@ -1444,6 +1534,10 @@ const SECCIONES_CONTROLES = [
 // 2. RENDERIZADO DINÁMICO POR SECCIONES
 // ==========================================
 const renderizarControlesDinamicos = () => {
+
+    const darkLocal = localStorage.getItem('pref-dark-mode') === 'true';
+    document.body.classList.toggle('dark-theme', darkLocal);
+    
     const container = document.getElementById('contenedor-controles-dinamicos');
     if (!container) return;
 
@@ -1468,10 +1562,13 @@ const renderizarControlesDinamicos = () => {
             
             // Prioridad al estado guardado para que no "salte" al recargar
             const guardadoLocal = localStorage.getItem(`pref-control-${idRef}`);
+            
             let estaActivo = false;
-
+            
             if (guardadoLocal !== null) {
                 estaActivo = guardadoLocal === 'true';
+
+                
             } else if (elOriginal) {
                 estaActivo = elOriginal.tagName === 'INPUT' ? 
                              elOriginal.checked : 
@@ -1504,33 +1601,23 @@ const renderizarControlesDinamicos = () => {
 // 3. LOGICA DE ACCIONES Y EVENTOS
 // ==========================================
 
-window.controlAccion = (id) => {
-    let controlEncontrado = null;
-    SECCIONES_CONTROLES.forEach(sec => {
-        const c = sec.controles.find(ctrl => ctrl.id === id);
-        if (c) controlEncontrado = c;
-    });
-    if (controlEncontrado && typeof controlEncontrado.accion === 'function') {
-        controlEncontrado.accion();
-    }
-};
-
 window.activarControl = (id) => {
     const el = document.getElementById(id);
     let nuevoEstado;
 
-    // CASO A: Dark Mode
+    // CASO A: Dark Mode (Exacto a tu backup)
     if (id === 'global-set-dark') {
         nuevoEstado = localStorage.getItem('pref-dark-mode') !== 'true';
         document.body.classList.toggle('dark-theme', nuevoEstado);
         localStorage.setItem('pref-dark-mode', nuevoEstado);
+        
         const originalInput = document.getElementById('global-set-dark');
         if (originalInput) originalInput.checked = nuevoEstado;
         
         // Guardamos con el ID de control para que el render lo reconozca
         localStorage.setItem(`pref-control-${id}`, nuevoEstado);
     } 
-    // CASO B: Otros controles (Inputs o Secciones)
+    // CASO B: Otros controles (Exacto a tu backup)
     else if (el) {
         if (el.tagName === 'INPUT') {
             el.click(); 
@@ -1545,15 +1632,18 @@ window.activarControl = (id) => {
         localStorage.setItem(`pref-control-${id}`, nuevoEstado);
     }
 
-    // SINCRONIZACIÓN
-    if (typeof guardarAjustesEnNube === 'function') {
-        guardarAjustesEnNube();
+    // SINCRONIZACIÓN AUTOMÁTICA (Añadido para que se guarde solo)
+    if (typeof sincronizarPreferenciaNube === 'function') {
+        sincronizarPreferenciaNube(id, nuevoEstado);
     }
     
     if (typeof actualizarResumenOffline === 'function') {
         setTimeout(actualizarResumenOffline, 200);
     }
 };
+
+
+
 
 async function ejecutarLimpiezaProfunda() {
     if (confirm("⚠️ ¡ATENCIÓN!\n\nSe borrarán todos los datos locales y se cerrará la sesión.\n\n¿Deseas continuar?")) {
@@ -1600,3 +1690,20 @@ if (document.readyState === 'loading') {
     renderizarControlesDinamicos();
 }
 
+// =====================================================
+// --- NUEVO: FUNCIÓN PARA SINCRONIZACIÓN AUTOMÁTICA ---
+// =====================================================
+
+async function sincronizarPreferenciaNube(id, estado) {
+    const user = auth.currentUser;
+    if (!user) return;
+    try {
+        // Importamos dinámicamente lo necesario si no está disponible
+        const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js");
+        const docRef = doc(db, "usuarios", user.uid, "configuracion", "preferencias");
+        await setDoc(docRef, { [id]: estado }, { merge: true });
+        console.log(`☁️ Preferencia ${id} sincronizada en la nube.`);
+    } catch (e) { 
+        console.error("Error al sincronizar preferencia:", e); 
+    }
+}

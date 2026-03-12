@@ -78,7 +78,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/alavictimapascual.mp3",
         // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -133,7 +133,7 @@ const allCantosData = [
         cejilla: "",
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 },
+            mobile: { velocidad: 6, incremento: 1 },
             tablet: { velocidad: 7, incremento: 1 },
             desktop: { velocidad: 7, incremento: 1 },
             desktopsmall: { velocidad: 7, incremento: 1 }},
@@ -228,7 +228,7 @@ const allCantosData = [
         cejilla: "",
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 },
+            mobile: { velocidad: 6, incremento: 1 },
             tablet: { velocidad: 7, incremento: 1 },
             desktop: { velocidad: 7, incremento: 1 },
             desktopsmall: { velocidad: 7, incremento: 1 },
@@ -300,7 +300,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/atisenorenmiclamorimploro.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -370,7 +370,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/atisenorlevantomialma.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -425,7 +425,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/atisenorsedebelaalabanzaension.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -502,7 +502,7 @@ const allCantosData = [
         mant: "No",
         audioSrc: "https://audio.resucito.do/abbapadre.mp3",
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -557,7 +557,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/abraham.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -619,7 +619,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/aclamadalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -693,7 +693,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/aldespertar.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -790,7 +790,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/alabadalsenorenelcielo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -866,7 +866,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/alegriahanacidoelsalvador.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -970,7 +970,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/aleluyaalabadalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },  // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -1042,7 +1042,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/aleluyabendecidalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -1125,7 +1125,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/aleluyayallegoelreino.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=aleluyabendecidalsenor",
@@ -1195,7 +1195,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/alzaospuertas.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=aleluyayallegoelreino",
@@ -1277,7 +1277,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/amenamenamen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=alzaospuertas",
@@ -1385,7 +1385,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/amoalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=amenamenamen",
@@ -1457,7 +1457,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/aquedah.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=amoalsenor",
@@ -1524,7 +1524,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/asihablaelamen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=aquedah",
@@ -1602,7 +1602,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/avemariai.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=asihablaelamen",
@@ -1652,7 +1652,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/avemariaii.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=avemariai",
@@ -1702,7 +1702,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/babiloniacriminal.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=avemariaii(1984)",
@@ -1785,7 +1785,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/balaam.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=babiloniacriminal",
@@ -1885,7 +1885,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/bendecirealsenorentodotiempo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -1972,7 +1972,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/bendicealmamiaayahveh.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
         desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2030,7 +2030,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/benditaerestumaria.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2101,7 +2101,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/benditoeressenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2200,7 +2200,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/benditoseadios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2277,7 +2277,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/benedictus.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2360,7 +2360,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/cantadadios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2414,7 +2414,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/cantadalsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2466,7 +2466,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/canticodelostresjovenes.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2601,7 +2601,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/cantodemoises.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2793,7 +2793,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/cantodemoises.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -2989,7 +2989,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/caritaschristiurgetnos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3058,7 +3058,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/carmen63.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3124,7 +3124,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/comocondenadosamuerte.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3203,7 +3203,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/comoesmaravilloso.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3269,7 +3269,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/comolacierva.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3354,7 +3354,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/comoovejaqueve.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3429,7 +3429,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/consoladamipueblo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3481,7 +3481,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/cristoeslaluz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3540,7 +3540,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/cuandoelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3603,7 +3603,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/cuandoisraelsaliodeegipto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3655,7 +3655,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/dayenu.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3768,7 +3768,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/dayenu.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3844,7 +3844,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/deprofundis.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3910,7 +3910,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/decidlealosdecorazoncansado.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -3975,7 +3975,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/delantedelosangeles.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4066,7 +4066,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/diadereposo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4120,7 +4120,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/diceelsenoramisenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4197,7 +4197,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/dichosoelhombre.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4266,7 +4266,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/elcombateescatologico.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4337,7 +4337,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/elespiritudelsenorestasobremi.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4395,7 +4395,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/eljacaldelospastores.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4456,7 +4456,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/ellagarero.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4519,7 +4519,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/elmesiasleon.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4573,7 +4573,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/elneciopiensaquediosnoexiste.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4649,7 +4649,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/elpuebloquecaminabaenlastinieblas.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4722,7 +4722,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/elsenoranunciaunanoticia.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4782,7 +4782,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/elsenoresmipastor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -4881,7 +4881,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/elsenormehadado.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5069,7 +5069,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/enmediodeaquelgentio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5143,7 +5143,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/enunanocheoscura.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5215,7 +5215,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/eresdignodetomarellibro.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5285,7 +5285,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/ereshermoso.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5378,7 +5378,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/espaciente.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5464,7 +5464,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/escondemeenloocultodetutienda.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5557,7 +5557,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/escuchadislaslejanas.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5651,7 +5651,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/esteeseldiaenqueactuoelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5821,7 +5821,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/esteeselmandamientomio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5894,7 +5894,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/evenushalomalejem.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -5973,7 +5973,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/extiendomismanos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6031,7 +6031,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/exultadjustosenelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6096,7 +6096,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/felicidadparaelhombre.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6154,7 +6154,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/graciasayahveh.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6238,7 +6238,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/gritadjubilosos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6302,7 +6302,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/haciatimoradasanta.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6368,7 +6368,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/hastacuando.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6432,7 +6432,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/heaquimisiervo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6486,7 +6486,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/heaquiquevengopresto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6540,7 +6540,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/heesperadoenelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6642,7 +6642,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/hijasdejerusalen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6714,7 +6714,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/himnoacristoluz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6770,7 +6770,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/himnoalacaridad.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 4, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/index.html?canto=himnoacristoluz",
@@ -6835,7 +6835,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/himnoalakenosis.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6912,7 +6912,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/himnodeadviento.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -6963,7 +6963,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/himnodelaascension.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7030,7 +7030,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/himnodepascua.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7080,7 +7080,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/huyeamadomio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7131,7 +7131,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/idyanunciadamishermanos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7206,7 +7206,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/improperios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7290,7 +7290,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/jerusalenreconstruida.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7382,7 +7382,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/jesusrecorriatodaslasciudades.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7461,7 +7461,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/lacorderadedios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7559,7 +7559,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/laespada.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7637,7 +7637,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/lamarchaesdura.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7685,7 +7685,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/lasalve.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7741,7 +7741,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/lasiegadelasnaciones.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7828,7 +7828,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/lavozdemiamado.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7910,7 +7910,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/lasarmasdelaluz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -7978,7 +7978,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/laudasion1.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8071,7 +8071,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/laudasion2.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8160,7 +8160,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/levantomisojosalosmontes.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8236,7 +8236,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/lleguehastatupresenciamiclamor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8301,7 +8301,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/llevamealcielo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8396,7 +8396,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/magnificat.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8467,7 +8467,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/mariacasadebendicion.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8524,7 +8524,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/mariadejasnagora.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8592,7 +8592,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/mariamadredelaiglesia.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8670,7 +8670,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8726,7 +8726,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/mariapequenamaria.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8792,7 +8792,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/meensenaraselcaminodelavida.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8868,7 +8868,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/mehasseducidosenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -8949,7 +8949,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/miradqueestupendo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9044,7 +9044,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/misericordiadiosmio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9136,7 +9136,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9270,7 +9270,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/muchomehanperseguido.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9346,7 +9346,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/noestaaquiresucito.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9417,7 +9417,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/nohayenelparecer.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9494,7 +9494,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/nolimetangere.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9561,7 +9561,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/ohcieloslloveddeloalto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9647,7 +9647,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/ohdiosportunombresalvame.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9702,7 +9702,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/ohdiostueresmidios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9776,7 +9776,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/ohjesusamormio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9861,7 +9861,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/ohmuertedondeestatuvictoria.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -9948,7 +9948,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/ohSenornuestroDios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10008,7 +10008,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/ostomaredeentrelasnaciones.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10069,7 +10069,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/palomaincorrupta.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10145,7 +10145,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/pentecostes.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10247,7 +10247,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/porelamordemisamigos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10351,7 +10351,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/porqueestanocheesdiferente.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10424,7 +10424,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/porquelasgentesconjuran.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10510,7 +10510,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/porquemiyugoessuave.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10580,7 +10580,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/queamablessontusmoradas.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10660,7 +10660,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/queestupendoquealegria.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10721,7 +10721,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/quienesestaquesubedeldesierto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10783,7 +10783,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/quiennosseparara.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10856,7 +10856,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/quieroandarmadreajerusalen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -10917,7 +10917,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/quierocantar.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11020,7 +11020,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/resucito.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11098,7 +11098,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/resurrexit.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11178,7 +11178,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/salvereinadeloscielos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11232,7 +11232,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/seencontrarondosangeles.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11280,7 +11280,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/senorayudameanodudardeti.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11350,7 +11350,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/senornomecorrijasentucolera",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11422,7 +11422,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/sermondelamontana.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11495,7 +11495,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/shlomlejmariam.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11567,7 +11567,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/sielsenornoconstruyelacasa.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11640,7 +11640,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/sihabeisresucitadoconcristo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11722,7 +11722,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/sihoyescuchaissuvoz.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 3.5, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11800,7 +11800,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/simeherefugiadoenelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11860,7 +11860,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/sionmadredetodoslospueblos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11914,7 +11914,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/solaasolo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -11979,7 +11979,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/stabatmaterdolorosa.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12048,7 +12048,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/subediosentreaclamaciones.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12104,7 +12104,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/teestoyllamandosenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12185,7 +12185,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/tehemanifestadomipecado.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12272,7 +12272,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/tuhascubiertodevergüenzalamuerte.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12353,7 +12353,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/tuqueeresfiel.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12431,7 +12431,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/unretonobrotadeltroncodejese.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12519,7 +12519,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/unagransenal.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12613,7 +12613,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/uriuriura.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12687,7 +12687,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/vamosyapastores.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12772,7 +12772,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/vendellibano.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12859,7 +12859,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/venespiritusanto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -12967,7 +12967,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/venespiritusanto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13081,7 +13081,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/venhijodelhombre.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13204,7 +13204,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/venicreator.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13265,7 +13265,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/vieneelsenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13335,7 +13335,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/virgendelamaravilla.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13403,7 +13403,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/vividalegres.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13456,7 +13456,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/vosotrossoislaluzdelmundo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13512,7 +13512,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/yavienemidios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13594,7 +13594,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/yahvehtueresmidios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13652,7 +13652,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/yoteamosenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13728,7 +13728,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/yovengoareunir.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13791,7 +13791,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/zaqueo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13897,7 +13897,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "/audio/aclamacionesalaoraciondelosfieles.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -13957,7 +13957,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/aleluyapascual.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14008,7 +14008,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/antifonaparaelevangelio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14080,7 +14080,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/bendiciondelagua.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14184,7 +14184,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/bendiciondelagua.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14258,7 +14258,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/bendiciondelagua.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14317,7 +14317,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/celebracionpenitencial(bendicionpenitencial).mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14391,7 +14391,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/corderodedios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14450,7 +14450,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/credo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14508,7 +14508,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/gloriaadiosenloaltodelcielo.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14571,7 +14571,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/letaniasdelossantos.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14700,7 +14700,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/letaniaspenitencialesi.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14802,7 +14802,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/letaniaspenitencialesii.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -14998,7 +14998,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/padrenuestro.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -15048,7 +15048,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucarísticaiimodeloi.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 4.5, incremento: 0.4 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -15480,7 +15480,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip1.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -15802,7 +15802,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip2.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -15876,7 +15876,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloip3.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -15965,7 +15965,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloi.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -16381,7 +16381,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloi.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -16691,7 +16691,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloii.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -16766,7 +16766,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiimodeloii.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -16842,7 +16842,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -17307,7 +17307,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -17381,7 +17381,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -17455,7 +17455,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -17529,7 +17529,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/plegariaeucaristicaiv.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -17604,7 +17604,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/prefacioparaadvientoynavidad.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -17915,7 +17915,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/prefacioparaeltiempopascual.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18218,7 +18218,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/pregonpascual.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18339,7 +18339,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/pregonpascual.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18412,7 +18412,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/pregonpascual.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18485,7 +18485,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/salmodiaparaelevangelio.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18549,7 +18549,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/salmodiasparalaudes.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18635,7 +18635,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/santopalomeras65.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18696,7 +18696,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/santomelodiahebraica.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18761,7 +18761,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/santopalestina74.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18823,7 +18823,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/santoroma77.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18891,7 +18891,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/santo1982.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -18952,7 +18952,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/santo1988.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -19047,7 +19047,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/invocacionalespiritusanto.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -19085,7 +19085,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/ohluzgozosa.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -19132,7 +19132,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/himnoalacruzgloriosa.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -19215,7 +19215,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/jacob.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -19288,7 +19288,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "/audio/elmismodios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -19367,7 +19367,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "https://audio.resucito.do/noestaaquiresucito.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
@@ -19423,7 +19423,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         audioSrc: "/audio/belencampanasdebelen.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            mobile: { velocidad: 6, incremento: 1 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC

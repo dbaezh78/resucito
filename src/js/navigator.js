@@ -30,6 +30,13 @@
     // Añadimos 'style="visibility: hidden"' para evitar el parpadeo sin estilos
     const navHTML = `
         <div class="nav-bottom-bar">
+
+
+        <div class="nav-bottom-bar">
+        <div class="nav-version-display ver">
+            v${window.APP_VERSION}
+        </div>
+
             <a href="/" class="nav-item">
                 <span class="material-symbols-outlined">home</span>
                 <span>Inicio</span>

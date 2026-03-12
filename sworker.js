@@ -1,5 +1,3 @@
-// sworker.js
-
 // 1. Importación de la configuración única
 // Asegúrate de que esta ruta sea correcta según la ubicación de sworker.js
 importScripts('src/js/config.js');

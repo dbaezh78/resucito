@@ -264,3 +264,6 @@ toggleView.addEventListener('change', function() {
         });
     });
 });
+
+// El inicio es local, así que marcamos éxito inmediato
+window._uiYaSincronizada = true;

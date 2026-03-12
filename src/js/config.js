@@ -1,9 +1,19 @@
-// Único lugar para cambiar la versión
-const APP_VERSION = '2.12';
+// 1. DEFINIR primero las constantes
+const APP_VERSION = '2.12'; 
 const CACHE_NAME = `cantos-cache-v${APP_VERSION}`;
 const OFFLINE_URL = 'src/offline.html';
 
-// Exportamos para que otros scripts lo usen (opcional)
+// 2. HACERLAS GLOBALES de forma segura
+// Esto evita el error "window is not defined" en el Service Worker
+if (typeof window !== 'undefined') {
+    window.APP_VERSION = APP_VERSION;
+    window.CACHE_NAME = CACHE_NAME;
+} else if (typeof self !== 'undefined') {
+    self.APP_VERSION = APP_VERSION;
+    self.CACHE_NAME = CACHE_NAME;
+}
+
+// 3. Exportar para entornos que lo requieran
 if (typeof module !== 'undefined') {
     module.exports = { APP_VERSION, CACHE_NAME };
 }
@@ -686,3 +696,13 @@ const URLS_TO_CACHE = [
 // RECURSOS OTROS
     'src/src/css/ainterleccional.css',
     ];
+
+ // 4. Exportación para sworker.js y otros scripts
+if (typeof module !== 'undefined') {
+    module.exports = { APP_VERSION, CACHE_NAME, URLS_TO_CACHE };
+} else {
+    // Para el Service Worker, exportamos las variables al scope global
+    self.APP_VERSION = APP_VERSION;
+    self.CACHE_NAME = CACHE_NAME;
+    self.URLS_TO_CACHE = URLS_TO_CACHE;
+}

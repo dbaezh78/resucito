@@ -1,34 +1,48 @@
-// resumen.js - SOLO ESTADÍSTICAS DE SALUD
+// Resumen - SOLO ESTADÍSTICAS DE SALUD
 
 export async function actualizarResumenOffline() {
     const container = document.getElementById('status-grid');
     if (!container) return;
 
-    const nombreCacheActiva = (typeof CACHE_NAME !== 'undefined') ? CACHE_NAME : 'cantos-cache-v1';
+    const nombreCacheActiva = window.CACHE_NAME || 'cantos-cache-v2.12';
 
-    // --- DIAGNÓSTICO ---
-    const rawData = localStorage.getItem('user_profile_data');
-    let perfilValido = false;
-    if (rawData) {
-        try {
-            const parsed = JSON.parse(rawData);
-            if (parsed && (parsed.pais || parsed.parroquia)) perfilValido = true;
-        } catch (e) { console.error("Error JSON Perfil"); }
-    }
-
+    // 1. Diagnóstico de Datos y Red
     const [statusSW, numArchivos, numCantos] = await Promise.all([
         verificarServiceWorker(),
         contarContenidoCache(nombreCacheActiva, ''),
         contarContenidoCache(nombreCacheActiva, 'src/css/pg/')
     ]);
 
-    // RENDERIZADO CORREGIDO (Sin el </div> extra y sin llamar a controles)
+    // 2. Lógica Inteligente de Sincronización
+    let textoSincro = "Sin datos";
+    let isOkSincro = false;
+
+    if (navigator.onLine) {
+        textoSincro = "Sincronización Nube";
+        isOkSincro = true;
+    } else {
+        const tieneDatos = Object.keys(localStorage).some(k => k.startsWith('data-') || k.startsWith('valoracion_'));
+        if (tieneDatos) {
+            textoSincro = "Sincronización Local";
+            isOkSincro = true; // Sigue siendo verde porque los datos están seguros
+        } else {
+            textoSincro = "Sin conexión";
+            isOkSincro = false;
+        }
+    }
+
+    // 3. RENDERIZADO ÚNICO (Más eficiente)
     container.innerHTML = `
         ${crearItemResumen('Estado del Motor', statusSW ? 'En funcionamiento' : 'No instalado', statusSW)}
+        
+        ${crearItemResumen('Datos de Usuario', textoSincro, isOkSincro)} 
+        
         ${crearItemResumen('Archivos del Sistema', numArchivos > 10 ? 'Núcleo Listo' : 'Descarga incompleta', numArchivos > 10)}
-        ${crearItemResumen('Cantos Offline', `${numCantos} recursos guardados`, numCantos > 0)}
-        ${crearItemResumen('Datos de Usuario', perfilValido ? 'Sincronizado' : 'Solo local', perfilValido)}
+        
+        ${crearItemResumen('Cantos Offline', numCantos > 0 ? `${numCantos} recursos guardados` : 'Sin cantos guardados', numCantos > 0)}
     `;
+
+
 }
 
 // Funciones auxiliares necesarias para que no dé error
@@ -72,3 +86,8 @@ if (document.readyState === 'loading') {
 } else {
     actualizarResumenOffline();
 }
+
+
+// Escuchas automáticas para cambiar el texto sin recargar la página
+window.addEventListener('online', actualizarResumenOffline);
+window.addEventListener('offline', actualizarResumenOffline);

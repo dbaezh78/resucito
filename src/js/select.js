@@ -49,7 +49,6 @@ fetch('data/indicecantos.json')
     .catch(err => console.error("Error al cargar JSON:", err));
 
 // --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
-// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
 onAuthStateChanged(auth, (user) => {
     const btnLogin = document.getElementById('btn-login-google');
     const btnLogout = document.getElementById('btn-logout-perfil');
@@ -80,6 +79,10 @@ onAuthStateChanged(auth, (user) => {
             listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
             renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+
+            // ✅ AVISO A SETTINGS: Datos de la nube listos
+            window._uiYaSincronizada = true; 
+            console.log("✅ Listas sincronizadas");
         });
 
         // ❌ BORRADO: Ya no llamamos detectarLinkCompartido() aquí dentro
@@ -98,6 +101,10 @@ onAuthStateChanged(auth, (user) => {
         } else {
             renderizarListasUI([]); 
         }
+
+        // ✅ AVISO A SETTINGS: No hay nube, pero ya cargamos lo local
+        window._uiYaSincronizada = true;
+        console.log("ℹ️ Modo invitado: Cargado local");
     }
 });
 
@@ -375,55 +382,49 @@ window.compartirUniversal = async (idLista) => {
     }
 };
 
-// FUNCIÓN B: Solo Copiar Link (Icono de cadena)
+// =======================================
+// ---  COPIAR ENLACE DE COMPARTIR  ---
+// =======================================
 window.copiarSoloLink = async (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
-    if (!lista) return;
+    if (!lista) {
+        console.error("❌ Lista no encontrada para copiar");
+        return;
+    }
 
     try {
+        // 1. Generar ID único corto para el enlace
         const idCorto = Math.random().toString(36).substring(2, 8);
         const docRef = doc(db, "listasCompartidas", idCorto);
         
+        // 2. Guardar en Firebase para que otros puedan verlo
         await setDoc(docRef, {
             n: lista.nombre,
             i: lista.ids_cantos,
             creado: serverTimestamp()
         });
 
+        // 3. Construir la URL final
         const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
         
-        await navigator.clipboard.writeText(urlFinal);
-        alert("Enlace copiado al portapapeles");
+        // 4. Intentar copiar al portapapeles
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(urlFinal);
+            alert("✅ Enlace copiado al portapapeles. ¡Ya puedes pegarlo!");
+        } else {
+            // Respaldo por si el navegador bloquea clipboard API
+            throw new Error("Clipboard API no disponible");
+        }
         
     } catch (e) { 
-        console.error("Error al copiar link:", e);
-        alert("No se pudo generar el enlace.");
+        console.error("❌ Error al generar/copiar link:", e);
+        alert("No se pudo copiar automáticamente. Intenta compartir por WhatsApp.");
     }
 };
 
-
-
-// --- FUNCIÓN 2: SOLO COPIAR EL LINK (Icono cadena) ---
-window.copiarSoloLink = async (idLista) => {
-    const lista = listasLocalesCache.find(l => l.id === idLista);
-    if (!lista) return;
-
-    try {
-        const idCorto = Math.random().toString(36).substring(2, 8);
-        await setDoc(doc(db, "listasCompartidas", idCorto), {
-            n: lista.nombre,
-            i: lista.ids_cantos,
-            creado: serverTimestamp()
-        });
-
-        const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
-        await navigator.clipboard.writeText(urlFinal);
-        alert("Enlace copiado al portapapeles");
-    } catch (e) { console.error("Error copy:", e); }
-};
-
-
-
+// =======================================
+// ---  COPIAR ENLACE DE COMPARTIR  ---
+// =======================================
 
 window.exportarLista = (idLista) => {
     const lista = listasLocalesCache.find(l => l.id === idLista);
@@ -612,26 +613,3 @@ document.getElementById('btn-login-google')?.addEventListener('click', async () 
         console.error("Fallo en el login:", err);
     }
 });
-
-// Activar Login
-document.getElementById('btn-login-google')?.addEventListener('click', async () => {
-    try {
-        await loginConGoogle();
-    } catch (err) {
-        console.error("Fallo en el login:", err);
-    }
-});
-
-/* HE COMENTADO AQUI, PARA QUE NO SALGA DOS VECES EL MENSAJE DE CIERRE DE SESSION
-// Activar Logout
-document.getElementById('btn-logout-perfil')?.addEventListener('click', async () => {
-    if (confirm("¿Cerrar sesión?")) {
-        try {
-            await signOut(auth);
-            localStorage.removeItem('cache_listas_personalizadas');
-            window.location.reload();
-        } catch (error) {
-            console.error("Error al salir:", error);
-        }
-    }
-});*/

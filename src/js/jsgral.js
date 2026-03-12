@@ -1536,7 +1536,52 @@ function habilitarMovimientoLibre(el, display) {
     });
 }
 
+// ====================================================================================
+// --- Vigilante para actualizar notas al cerrar el panel ---
+// ====================================================================================
+const observarCierreSettings = () => {
+    // 1. Buscamos el ID real que definimos en el Navigator (modal-global-settings)
+    // Mantenemos los otros por compatibilidad como pediste
+    const panelSettings = document.getElementById('modal-global-settings') || 
+                          document.getElementById('settings-panel') || 
+                          document.querySelector('.settings-tabs-container'); 
+    
+    // 2. Si no existe, simplemente salimos en silencio. 
+    // No ponemos console.warn porque en index.html el panel no se crea hasta pulsar el botón.
+    if (!panelSettings) return; 
 
+    // 3. Si ya tiene un observador, no creamos otro
+    if (panelSettings.dataset.hasObserver === "true") return;
+
+    const observer = new MutationObserver(() => {
+        // Verificamos si el panel está visible
+        const estilo = window.getComputedStyle(panelSettings);
+        const esVisible = estilo.display !== 'none' && estilo.visibility !== 'hidden';
+        
+        // Detectamos el momento exacto en que pasa de abierto a cerrado
+        if (!esVisible && panelSettings.dataset.wasOpen === "true") {
+            panelSettings.dataset.wasOpen = "false";
+            console.log("Panel cerrado: Ejecutando actualizaciones...");
+            
+            // Aquí se ejecutan las funciones que dependen del cierre
+            if (window.renderizarNotasCanto) window.renderizarNotasCanto();
+            if (window.actualizarInterfazCanto) window.actualizarInterfazCanto(); 
+
+        } else if (esVisible) {
+            panelSettings.dataset.wasOpen = "true";
+        }
+    });
+
+    // Iniciamos la observación
+    observer.observe(panelSettings, { 
+        attributes: true, 
+        attributeFilter: ['style', 'class'] 
+    });
+    
+    // Marcamos que este panel ya está vigilado
+    panelSettings.dataset.hasObserver = "true";
+};
+/*
 // --- Vigilante para actualizar notas al cerrar el panel ---
 const observarCierreSettings = () => {
     // CAMBIA 'settings-panel' por el ID real de tu contenedor de ajustes
@@ -1564,6 +1609,7 @@ const observarCierreSettings = () => {
 
     observer.observe(panelSettings, { attributes: true, subtree: true });
 };
+*/
 
 // Iniciar el vigilante al cargar
 document.addEventListener('DOMContentLoaded', observarCierreSettings);

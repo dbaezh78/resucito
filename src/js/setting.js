@@ -210,9 +210,10 @@ window.tabsConfig = [
 
 { 
     id: 'btn-sync-cloud',
-    label: 'Sincronizar datos de la Nube', 
+    label: 'Sinc. ↓ Valores Velocidad ↓', 
     tipo: 'button',
     icon: 'cloud_download', // Icono de una nube con flecha
+    isDisabled: !(new URLSearchParams(window.location.search).has('canto')),
     accion: async () => {
         const params = new URLSearchParams(window.location.search);
         const cantoId = params.get('canto');
@@ -229,7 +230,7 @@ window.tabsConfig = [
                 // 3. Confirmación visual
                 if (btn) btn.innerHTML = '<span class="material-symbols-outlined">cloud_done</span> ¡Sincronizado!';
                 setTimeout(() => {
-                    if (btn) btn.innerHTML = '<span class="material-symbols-outlined">cloud_download</span> Sincronizar datos de la Nube';
+                    if (btn) btn.innerHTML = '<span class="material-symbols-outlined">cloud_download</span> Sinc. ↓ Valores Velocidad';
                 }, 3000);
 
             } catch (error) {
@@ -437,8 +438,16 @@ window.generarContenidoSettings = function() {
 // ==========================================
 function renderControl(opt, isChecked, valActual) {
 if (opt.tipo === 'button') {
+
+    const disabledAttr = opt.isDisabled ? 'disabled' : '';
+    const opacityStyle = opt.isDisabled ? 'opacity: 0.5; cursor: not-allowed;' : '';
+
     return `
-        <button id="${opt.id}" class="btn-setting-action" style="background:${opt.color || 'deepskyblue'}" onclick="window.ejecutarAccionTabs('${opt.id}')">
+        <button id="${opt.id}" 
+                class="btn-setting-action" 
+                style="background:${opt.color || 'deepskyblue'}; ${opacityStyle}" 
+                onclick="window.ejecutarAccionTabs('${opt.id}')"
+                ${disabledAttr}>
             ${opt.icon ? `<span class="material-symbols-outlined">${opt.icon}</span>` : ''}
             <span>${opt.label}</span>
         </button>`;
@@ -526,6 +535,9 @@ window.ejecutarAccionTabs = (id, valor, esManual = false) => {
     });
 
 if (opcion) {
+
+        if (opcion.tipo === 'button' && opcion.isDisabled) return; 
+
         const valorLimpio = (valor === undefined || valor === null || valor === "undefined") ? "" : valor;
         
         // Pasamos esManual a la función accion
@@ -678,6 +690,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("⚠️ Firebase tardó demasiado o no hay sesión, cargando local...");
             window.actualizarValoresUI();
         }
-    }, 1000); // Un segundo de cortesía para la nube
+    }, 2500); // Un segundo de cortesía para la nube
 });
 }

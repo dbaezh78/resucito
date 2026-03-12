@@ -59,29 +59,38 @@
             </div>
         </div>
 
+        <div class="uName">
+            <label>La paz de Cristo</label>
+            <input type="text" id="userName" readonly class="uName">
+        </div>
+
         <div class="paddingleft4px"> <!-- Formulario-->
         <div class="config-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); gap: 0px;">
+
+
+
+
             <div class="form-group">
-                <label>País</label>
+                <label class="uName scolor">País</label>
                 <select id="userCountry" onchange="llenarComunidades()">
                     <option value="">Cargando países...</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label>Parroquia</label>
+                <label class="uName scolor">Parroquia</label>
                 <input type="text" id="userParroquia" placeholder="Nombre de tu parroquia...">
             </div>
 
             <div class="form-group">
-                <label>Comunidad</label>
+                <label class="uName scolor">Comunidad</label>
                 <select id="userComunidad">
                     <option value="">Seleccione la comunidad</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label>Etapa en el Camino</label>
+                <label class="uName scolor">Etapa en el Camino</label>
                 <select id="userStep">
                     <option value="0">Precatecumenado</option>
                     <option value="1">Primer Escrutinio</option>
@@ -94,6 +103,7 @@
                     <option value="8">Renovación de las Promesas Bautismales</option>
                 </select>
             </div>
+            
         </div>
 
         </div> <!-- Formulario-->
@@ -187,8 +197,8 @@
 
 
 <script type="module" src="src/js/moduleGoogle.js"></script>
-<script src="src/js/navigator.js"></script>
 <script src="src/js/config.js"></script>
+<script src="src/js/navigator.js"></script>
 <script type="module" src="src/js/perfil.js"></script>
 <script type="module" src="src/js/resumen.js"></script>
 

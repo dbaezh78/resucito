@@ -512,3 +512,11 @@ body.dark-theme #modal-global-settings select option {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+/* Estilo para botones deshabilitados en Ajustes */
+.settings-frame button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    filter: grayscale(1);
+    pointer-events: none; /* Evita que el clic dispare nada */
+}

@@ -1,3 +1,56 @@
+:root {
+    --SangreDeCristo: #780606;
+    --Acordes: #780606;
+    --vblancas: white;
+    --precat: white;
+    --liturgia: #FFFFCB;
+    --cat: #bde9ff;
+    --eleccion: #CEFFCF;
+
+    /* MODO CLARO (Valores por defecto) */
+    --bg-principal: #ffffff;
+    --bg-contenedores: #f5f5f7;
+    --bg-header: #bc0009;
+    
+    --texto-principal: #1d1d1f;
+    --texto-secundario: #666666;
+    --texto-blanco: #ffffff;
+    
+    --borde-divisor: #e5e5e5;
+    --accent: #bc0009;
+
+
+    /* Variables de colores de fondo para el body (pueden ser más transparentes o diferentes) */
+    --precat-body-bg: rgba(255, 255, 255, 0.2);
+    --liturgia-body-bg: rgba(255, 255, 203, 0.2);
+    --cat-body-bg: rgba(189, 233, 255, 0.2);
+    --eleccion-body-bg: rgba(206, 255, 207, 0.2);
+
+
+    /* Nuevos colores de fondo para acordes */
+    --chord-color-do: #FF0000; /* Rojo Fuerte, base */
+    --chord-color-re: #FFA500; /* Naranja Energía, calidez */
+    --chord-color-mi: #FFFF00; /* Amarillo Brillante, luz */
+    --chord-color-fa: #138c13; /* Verde Frescura, equilibrio */
+    --chord-color-fas: #138c13; /* Verde Frescura, equilibrio */
+    --chord-color-sol: #1e7ec2; /* Azul Cielo Serenidad */
+    --chord-color-la: #800080; /* Violeta Misterio, profundidad */
+    --chord-color-si: #000000; /* Negro Oscuro, resolución */
+    --chord-color-default-text: white; /* Color de texto por defecto para los nombres de acordes */
+
+    /* Nuevas variables para los fondos de canto por categoría */
+    --FondoCanto-Precatecumenado: white;
+    --FondoCanto-Catecumenado: #bde9ff;
+    --FondoCanto-Liturgico: #FFFFCB;
+    --FondoCanto-Eleccion: #CEFFCF;
+
+    /* Trasfondos con 80% de transparencia */
+    --TrasfondoCanto-Precatecumenado: rgba(255, 255, 255, 0.2); /* white con 20% de opacidad */
+    --TrasfondoCanto-Catecumenado: rgba(189, 233, 255, 0.2); /* #bde9ff con 20% de opacidad */
+    --TrasfondoCanto-Liturgico: rgba(255, 255, 203, 0.2); /* #FFFFCB con 20% de opacidad */
+    --TrasfondoCanto-Eleccion: rgba(206, 255, 207, 0.2); /* #CEFFCF con 20% de opacidad */
+} /* FIN DE ROOT */
+
 .material-symbols-outlined {
     display: flex;
     align-content: center;
@@ -709,3 +762,33 @@ input:checked + .slider:before {
     text-overflow: ellipsis; /* Pone puntos suspensivos si es muy largo */
 }
 
+
+
+.uName {
+    background-color: transparent;
+    border: none; /* Mejor que 0px solid */
+    outline: none;
+    font-weight: bold;
+    color: #333; /* Asegura un color sólido */
+
+    /* Evita que se pueda sombrear/seleccionar el texto */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    /* LA CLAVE: El ratón lo ignora por completo. No sale la "mano" ni la "I" */
+    pointer-events: none; 
+
+    /* Por si acaso algún navegador no toma el pointer-events, forzamos el cursor */
+    cursor: default; 
+    
+    /* Elimina cualquier estilo nativo de input en móviles */
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.scolor {
+    color: var(--SangreDeCristo);
+
+}
