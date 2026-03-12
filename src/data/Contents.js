@@ -10,6 +10,12 @@ const am12 = "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(S
 const am2 = "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)";
 const am31 = "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)";
 const am32 = "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)";
+const gS11 = "Gloria al Señor, Gloria al Señor,, (Re,,154)(Mi,m,271)";
+const gS12 = "Gloria al Señor, Gloria al Señor,, (Re,,154)(Mi,m,271)";
+const gS13 = "Gloria al Señor, (Re,,154)(Mi,m,271)";
+const gS14 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Re,,154)(Mi,m,271)";
+const gS15 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Re,,154)(Mi,m,271)";
+const gS16 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Re,,154)(Mi,m,271)";
 
 // Tiempo Adviento
 const aitas1 = "Domingo I, Tiempo Adviento";

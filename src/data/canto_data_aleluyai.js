@@ -2223,7 +2223,7 @@ sig: "/src/ainterleccional.html?canto=aitcs2a",
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
        triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
-            { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
+            { line: gS11, sC: "tc"},{ line: am12, sC: "ta as bg"},{ line: "", sC: "adb1"},
             { line: `${aitcs1a1} (Mi,m,20)(Re,,181)(Mi,m,352)`, sC: "tc"},
             { line: `${aitcs1a2} (Re,,181)(Mi,m,352)`, sC: "bg"},
             { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
