@@ -5,7 +5,7 @@ export async function actualizarResumenOffline() {
     if (!container) return;
 
     // Leemos la versión del config.js
-    const appVersion = window.APP_VERSION || '2.12';
+    const appVersion = window.APP_VERSION;
     const nombreCacheActiva = window.CACHE_NAME || `cantos-cache-v${appVersion}`;
 
     // 1. Diagnóstico de Datos y Red
