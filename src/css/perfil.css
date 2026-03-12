@@ -792,3 +792,7 @@ input:checked + .slider:before {
     color: var(--SangreDeCristo);
 
 }
+
+.EstadoSys {
+    display: contents;
+}

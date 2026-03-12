@@ -4,7 +4,9 @@ export async function actualizarResumenOffline() {
     const container = document.getElementById('status-grid');
     if (!container) return;
 
-    const nombreCacheActiva = window.CACHE_NAME || 'cantos-cache-v2.12';
+    // Leemos la versión del config.js
+    const appVersion = window.APP_VERSION || '2.12';
+    const nombreCacheActiva = window.CACHE_NAME || `cantos-cache-v${appVersion}`;
 
     // 1. Diagnóstico de Datos y Red
     const [statusSW, numArchivos, numCantos] = await Promise.all([
@@ -40,6 +42,8 @@ export async function actualizarResumenOffline() {
         ${crearItemResumen('Archivos del Sistema', numArchivos > 10 ? 'Núcleo Listo' : 'Descarga incompleta', numArchivos > 10)}
         
         ${crearItemResumen('Cantos Offline', numCantos > 0 ? `${numCantos} recursos guardados` : 'Sin cantos guardados', numCantos > 0)}
+
+        ${crearItemResumen('Versión de la App', `Versión actual: v${appVersion}`, true, 'verified_user')}
     `;
 
 
