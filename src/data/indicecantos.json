@@ -231,5 +231,6 @@
         { "id": "yahvehtueresmidios", "titulo": "Yahveh, tú eres mi Dios", "cejilla": "", "acorde": "La","scrollConfig": {"mobile": { "v": 23, "i": 1 },"tablet": { "v": 7, "i": 1 },"desktop": { "v": 7, "i": 1 },"desktopsmall": { "v": 7, "i": 1 }}},
         { "id": "yoteamosenor", "titulo": "Yo te amo, Señor", "cejilla": "", "acorde": "Re","scrollConfig": {"mobile": { "v": 23, "i": 1 },"tablet": { "v": 7, "i": 1 },"desktop": { "v": 7, "i": 1 },"desktopsmall": { "v": 7, "i": 1 }}},
         { "id": "yovengoareunir", "titulo": "Yo vengo a reunir", "cejilla": "", "acorde": "Mi","scrollConfig": {"mobile": { "v": 23, "i": 1 },"tablet": { "v": 7, "i": 1 },"desktop": { "v": 7, "i": 1 },"desktopsmall": { "v": 7, "i": 1 }}},
-        { "id": "zaqueo", "titulo": "Zaqueo", "cejilla": "", "acorde": "La"}
+        { "id": "zaqueo", "titulo": "Zaqueo", "cejilla": "", "acorde": "La","scrollConfig": {"mobile": { "v": 23, "i": 1 },"tablet": { "v": 7, "i": 1 },"desktop": { "v": 7, "i": 1 },"desktopsmall": { "v": 7, "i": 1 }}},
+        { "id": "cantodelosnumeros", "titulo": "Canto de los Números", "cejilla": "", "acorde": "Mi","scrollConfig": {"mobile": { "v": 25, "i": 1 },"tablet": { "v": 20, "i": 1 },"desktop": { "v": 20, "i": 1 },"desktopsmall": { "v": 20, "i": 1 }}}
     ]
