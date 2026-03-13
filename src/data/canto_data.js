@@ -21491,6 +21491,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "DOS las tablas de la Alianza,, (Sol,,14)(Re,,116)", sC: ""},
             { line: "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)", sC: ""},
             { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
+            { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
@@ -21512,6 +21513,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,105)(Mi,m,239)", sC: ""},
             { line: "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)", sC: ""},
             { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
+            { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
@@ -21531,10 +21533,11 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Yo sé lo que es el SEIS. Yo sé lo que es el SEIS, (La,m,20)(Mi,m,192)(Si,7,271)(Mi,m,417)", sC: ""},
             { line: "SEIS los días de la creación,, (Sol,,14)(Re,,222)", sC: ""},
             { line: "CINCO, CINCO los libros de la Ley,, (Mi,m,20)(Si,7,99)(Mi,m,305)", sC: ""},
-            { line: "CUATRO, CUATRO son las NOCHES,, (Mi,m,20)(Si,7,14)(Mi,m,278)", sC: ""},
+            { line: "CUATRO, CUATRO son las NOCHES,, (Mi,m,20)(Si,7,114)(Mi,m,278)", sC: ""},
             { line: "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,90)(Mi,m,240)", sC: ""},
             { line: "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,113)(Mi,m,235)", sC: ""},
             { line: "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)", sC: ""},
+            { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
             { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
     ], lder: [
             { line: "¿Quién sabe qué es el SIETE?, (Mi,m,20)(Si,7,141)(Mi,m,239)", sC: "td as"},
@@ -21561,6 +21564,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,86)(Mi,m,238)", sC: ""},
             { line: "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,113)(Mi,m,238)", sC: ""},
             { line: "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)", sC: ""},
+            { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
             { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -21592,6 +21596,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "TRES, TRES son los patriarcas,, (Mi,m,20)(Si,7,89)(Mi,m,241)", sC: ""},
             { line: "DOS las tablas de la ALIANZA,, (Mi,m,20)(Si,7,115)(Mi,m,245)", sC: ""},
             { line: "UNO es nuestro Dios en el cielo y en la tierra, (Sol,,14)(Re,,269)", sC: ""},
+            { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
+            { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
+            { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
             { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
 
 ]}, // ULTIMA LINEA DEL CANTO: CANTO DE LOS NUMEROS
