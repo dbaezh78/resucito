@@ -21473,8 +21473,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
               tablet: { v: 7, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=tuqueeresfiel",
-        sig: "/resucito/src/index.html?canto=unagransenal",
+        ant: "/src/index.html?canto=porqueestanocheesdiferente",
+        sig: "/src/index.html?canto=seencontrarondosangeles",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "¿Quién sabe qué es el UNO?, (Mi,m,36)(Si,7,141)(Mi,m,236)", sC: "td as"},
