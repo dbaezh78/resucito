@@ -21457,7 +21457,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         tt: "Canto De Los Numeros",
         title: "Canto De Los Numeros",
         subtitle: "Tradición Hebrea",
-        category: ["Precatecumenado","Adviento","Navidad","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
+        category: ["Precatecumenado","Pascua","Pentecostés"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
