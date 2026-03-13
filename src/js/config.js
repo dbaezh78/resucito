@@ -307,6 +307,7 @@ const URLS_TO_CACHE = [
     'src/css/pg/cantadadios.css',
     'src/css/pg/cantadalsenor.css',
     'src/css/pg/canticodelostresjovenes.css',
+    'src/css/pg/cantodelosnumeros.css',
     'src/css/pg/cantodemoises.css',
     'src/css/pg/cantodemoises1.css',
     'src/css/pg/caritaschristiurgetnos.css',
