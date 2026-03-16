@@ -42,25 +42,26 @@ document.getElementById('buscador').addEventListener('input', (e) => {
 
 // 4. Mostrar el contenido en la parte derecha
 function mostrarDetalleCanto(canto) {
-    // Título y datos de cabecera
-    document.getElementById('titulo-display').innerText = canto.titulo;
+    const displayTitulo = document.getElementById('titulo-display');
+    displayTitulo.innerText = canto.titulo;
     
-    // Construir bloque de info (Fuente, Autor, Tono)
+    // Inyectamos el contenido
     document.getElementById('catequesis-cuerpo').innerHTML = `
-        <div class="info-header">
-            <p><strong>Fuente:</strong> ${canto.fuente_biblica}</p>
-            <p><strong>Autor:</strong> ${canto.autor} | <strong>Tono:</strong> ${canto.tono_original}</p>
+        <div class="info-header" style="margin-bottom: 20px; color: #777; font-size: 0.9em;">
+            <strong>Fuente:</strong> ${canto.fuente_biblica} | 
+            <strong>Autor:</strong> ${canto.autor} | 
+            <strong>Tono:</strong> ${canto.tono_original}
         </div>
-        <div class="texto-catequesis">
+        
+        <div class="bloques-significado">
             ${canto.catequesis}
         </div>
     `;
 
     // Procesar Letra y Acordes
-    // Esta regex busca [Am] y lo envuelve en un span para el CSS
     const letraProcesada = canto.letra_con_acordes.replace(/\[(.*?)\]/g, '<span class="acorde">$1</span>');
     document.getElementById('letra-cuerpo').innerHTML = letraProcesada;
 
-    // Scroll al inicio del contenido
-    document.querySelector('.content').scrollTo({ top: 0, behavior: 'smooth' });
+    // Resetear el scroll del contenedor principal al cambiar de canto
+    document.querySelector('.content').scrollTop = 0;
 }

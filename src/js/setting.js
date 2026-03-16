@@ -210,7 +210,7 @@ window.tabsConfig = [
 
 { 
     id: 'btn-sync-cloud',
-    label: 'Sinc. ↓ Valores Velocidad ↓', 
+    label: 'Sinc. ↓ Desplazamiento ↓', 
     tipo: 'button',
     icon: 'cloud_download', // Icono de una nube con flecha
     isDisabled: !(new URLSearchParams(window.location.search).has('canto')),
@@ -230,7 +230,7 @@ window.tabsConfig = [
                 // 3. Confirmación visual
                 if (btn) btn.innerHTML = '<span class="material-symbols-outlined">cloud_done</span> ¡Sincronizado!';
                 setTimeout(() => {
-                    if (btn) btn.innerHTML = '<span class="material-symbols-outlined">cloud_download</span> Sinc. ↓ Valores Velocidad';
+                    if (btn) btn.innerHTML = '<span class="material-symbols-outlined">cloud_download</span> Sinc. ↓ Desplazamiento ↓';
                 }, 3000);
 
             } catch (error) {
@@ -249,7 +249,7 @@ window.tabsConfig = [
 // Busca estas secciones en tu window.tabsConfig
 {
     id: 'set-scroll-v',
-    label: `Velocidad Canto (${(function() {
+    label: `Desplazamiento Canto (${(function() {
         const w = window.innerWidth;
         if (w < 768) return 'Móvil';
         if (w < 992) return 'Tablet';
