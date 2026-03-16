@@ -1,0 +1,123 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333; /* Gris oscuro como tu imagen */
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+#titulo-display {
+    color: #2c3e50;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Estilo para los acordes sobre el texto */
+.acorde {
+    color: #d32f2f;
+    font-weight: bold;
+    display: inline-block;
+    height: 0;
+    vertical-align: top;
+    position: relative;
+    top: -1.2em;
+}
+
+/* */
+
+#lista-cantos {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#lista-cantos li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#lista-cantos li:hover {
+    background-color: #444;
+}
+
+/* Estilo para los acordes que pusimos en el JS */
+.acorde {
+    color: #d32f2f;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    height: 0;
+    vertical-align: top;
+    top: -1em; /* Eleva el acorde sobre la letra */
+    margin-right: 2px;
+}
+
+#letra-cuerpo {
+    line-height: 2.5; /* Espacio para que quepan los acordes arriba */
+    font-family: monospace;
+    white-space: pre-wrap;
+    margin-top: 20px;
+}
+
+
+/* Sidebar Items */
+.item-canto-sidebar {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.item-canto-sidebar:hover {
+    background: #4a4a4a;
+}
+
+.sidebar-canto-titulo {
+    font-weight: bold;
+    font-size: 0.95em;
+    color: #fff;
+}
+
+.sidebar-canto-meta {
+    font-size: 0.75em;
+    color: #bbb;
+    margin-top: 4px;
+}
+
+/* Área de Letra y Acordes */
+#letra-cuerpo {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2.8; /* Espacio para que el acorde quepa arriba */
+    white-space: pre-wrap;
+    font-size: 1.1em;
+    color: #333;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.acorde {
+    color: #d32f2f; /* Rojo para los acordes */
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    height: 0;
+    vertical-align: top;
+    top: -1.2em; /* Lo sube justo encima de la sílaba */
+    margin-right: -2px;
+}

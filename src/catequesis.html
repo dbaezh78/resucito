@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canto y Catequesis</title>
-    <link rel="stylesheet" href="cat/src/cat.css">
+    <title>Catequesis - Cantos del Camino Neocatecumenal</title>
+        <link rel="stylesheet" href="/src/css/catequesis.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-    <div class="main-container">
-        <div class="sidebar">
-            <h1>CANTOS</h1>
-            <input type="text" id="searchInput" placeholder="Buscar canto...">
-            <div id="song-list">
-                <a href="#canto1" class="song-title" data-id="catequesis1">Título del Canto 1</a>
-                <a href="#canto2" class="song-title" data-id="catequesis2">Título del Canto 2</a>
-                </div>
-        </div>
 
-        <div id="content-container">
-            <div id="canto1" class="content-area">
-                <audio controls>
-                    <source src="cat/media/audio1.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-                <div class="content-text-container">
-                    <h2>Catequesis sobre el canto 1</h2>
-                    <img src="cat/docs/img/catequesis1.jpg" alt="Imagen referente al canto 1">
-                    <p id="catequesis-canto1"></p>
-                </div>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2>CANTOS</h2>
+            <div class="search-box">
+                <input type="text" id="buscador" placeholder="Buscar canto...">
             </div>
+            <ul id="lista-cantos">
+                </ul>
+        </aside>
 
-            <div id="canto2" class="content-area">
-                <audio controls>
-                    <source src="cat/media/audio2.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-                <div class="content-text-container">
-                    <h2>Catequesis sobre el canto 2</h2>
-                    <img src="cat/docs/img/catequesis2.jpg" alt="Imagen referente al canto 2">
-                    <p id="catequesis-canto2"></p>
+        <main class="content">
+            <header class="audio-player">
+                <audio id="reproductor" controls src=""></audio>
+            </header>
+            
+            <article id="detalle-canto">
+                <h1 id="titulo-display">Selecciona un canto para ver su catequesis</h1>
+                
+                <div class="image-container">
+                    <img id="imagen-canto" src="" alt="Ilustración" style="display:none;">
                 </div>
-            </div>
-        </div>
+
+                <section id="info-canto">
+                    <div id="catequesis-cuerpo">
+                        </div>
+                    
+                    <hr class="separator">
+                    
+                    <div class="lyrics-container">
+                        <h3>Letra y Acordes</h3>
+                        <pre id="letra-cuerpo"></pre>
+                    </div>
+                </section>
+            </article>
+        </main>
     </div>
 
-    <script src="cat/js/cat.js"></script>
+        <script src="js/catequesis.js"></script>
 </body>
 </html>
