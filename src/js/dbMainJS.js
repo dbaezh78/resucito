@@ -622,7 +622,7 @@ function normalizeText(text) {
 // Función para mostrar resultados con scroll lateral
 function mostrarResultados(resultados) {
     const contenedor = document.getElementById('resultadosBusqueda');
-    if (!contenedor) return; // Asegurar que el contenedor existe
+    if (!contenedor) return;
 
     contenedor.innerHTML = '';
 
@@ -632,20 +632,54 @@ function mostrarResultados(resultados) {
         return;
     }
 
-    // Crear contenedor principal
     const mainResults = document.createElement('div');
     mainResults.className = 'main-results';
 
-    // Mostrar todos los resultados en el contenedor principal con scroll
     resultados.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'resultado-item';
         div.innerHTML = `
             <strong>${canto.titulo}</strong>
             <br>
-            <small>${canto.salmo}</small>
+            <small>${canto.salmo || ''}</small>
         `;
-        div.onclick = () => window.location.href = canto.archivo;
+
+div.onclick = (e) => {
+            e.preventDefault();
+
+            // 1. Normalizamos los textos para la búsqueda (quitamos tildes y espacios)
+            const limpiar = (txt) => (txt || "").trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+            // 2. Buscamos el canto en la base de datos original (songs-data.js)
+            const datosBase = typeof songs !== 'undefined' ? songs.find(s => {
+                const t1 = limpiar(s.title);
+                const t2 = limpiar(canto.titulo);
+                // Comparamos por ID o por título normalizado
+                return (s.id === canto.id) || (t1 === t2) || (t1.includes(t2)) || (t2.includes(t1));
+            }) : null;
+            
+            // 3. LÓGICA DE APERTURA
+            // Forzamos la apertura externa si:
+            // - Tiene targetBlank en la DB
+            // - O su ID es 'librodecanto' o 'prontuario'
+            // - O su URL termina en .pdf
+            const esRecursoEspecial = datosBase && (
+                datosBase.targetBlank === true || 
+                datosBase.id === "prontuario" || 
+                datosBase.id === "librodecanto" ||
+                (datosBase.url && datosBase.url.toLowerCase().endsWith('.pdf'))
+            );
+
+            if (esRecursoEspecial) {
+                console.log("🚀 Abriendo recurso especial en pestaña nueva:", datosBase.title);
+                // Usamos window.open con la URL de la base de datos
+                window.open(datosBase.url, '_blank', 'noopener,noreferrer');
+            } else {
+                console.log("🎵 Abriendo canto normal:", canto.titulo);
+                window.location.href = canto.archivo || (datosBase ? datosBase.url : '#');
+            }
+        };
+        
         mainResults.appendChild(div);
     });
 
@@ -793,3 +827,5 @@ document.addEventListener('DOMContentLoaded', handleInstallClick);
 
 // Si ya tienes un document.addEventListener('DOMContentLoaded', inicializarAplicacion);
 // Simplemente integra el contenido de 'handleInstallClick' dentro de 'inicializarAplicacion'.
+
+

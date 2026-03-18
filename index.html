@@ -86,8 +86,12 @@
     <div class="controls">
         <div class="search-container">
             <button id="toggleFilters" class="filter-toggle-button"></button>
-            <input type="search" id="searchInput" placeholder="Buscar Canto..." autocomplete="on">
+            
+            <input type="search" id="searchInput" placeholder="Buscar Canto..." autocomplete="off">
+            
             <button id="clearSearch" title="Limpiar búsqueda"></button>
+
+            <div id="resultadosBusqueda" class="resultados-busqueda" style="display: none;"></div>
         </div>
         
         <div class="filters-container hidden">
@@ -153,17 +157,22 @@
         <p style="margin: 5px 0; color: #666;">Creada por un siervo inútil de Yahveh</p>
     </footer>
 
-    
-    <script src="src/js/serviceWorker.js"></script>
-    <script src="src/js/songs-data.js"></script>
-    <script src="src/js/app.js"></script>
-
-    <script src="src/js/dbMainJS.js"></script>
-    <script src="src/js/mensajekiko.js"></script>
-    <script type="module" src="src/js/moduleGoogle.js"></script>
-    <script type="module" src="src/js/logout.js"></script>
-    <script src="/src/js/config.js"></script>
-    <script src="src/js/navigator.js"></script>
+        <!-- LLAMADAS DE SCRIPT-->
+        
+        <script src="src/js/songs-data.js"></script>    <!-- Primer JS, ya que contiene los datos -->
+        <script src="src/js/config.js"></script>
+        
+        <script src="src/js/dbMainJS.js"></script>
+        
+        <script src="src/data/find.js"></script> 
+        <script src="src/js/app.js"></script>
+        
+        <script src="src/js/navigator.js"></script>
+        <script src="src/js/serviceWorker.js"></script>
+        
+        <script src="src/js/mensajekiko.js"></script>
+        <script type="module" src="src/js/moduleGoogle.js"></script>
+        <script type="module" src="src/js/logout.js"></script>
 
 
 

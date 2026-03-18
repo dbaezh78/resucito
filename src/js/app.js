@@ -146,42 +146,45 @@ toggleView.addEventListener('change', function() {
         }
     }
     
-    function filterSongs() {
-        let filteredSongs = [...songs];
-        
-        // Filtrar por categoría
-        if (activeFilters.category) {
-            filteredSongs = filteredSongs.filter(song => 
-                song.category && song.category.toLowerCase() === activeFilters.category.toLowerCase()
-            );
-        }
-        
-        // Filtrar por momentos litúrgicos
-        if (activeFilters.moments.length > 0) {
-            filteredSongs = filteredSongs.filter(song => 
-                song.moments && activeFilters.moments.some(activeMoment => 
-                    song.moments.some(songMoment => songMoment.toLowerCase() === activeMoment.toLowerCase())
-                )
-            );
-        }
-        
-        // Filtrar por búsqueda
-        const searchTerm = removeAccents(searchInput.value.toLowerCase());
-        if (searchTerm) {
-            filteredSongs = filteredSongs.filter(song => 
-                removeAccents(song.title.toLowerCase()).includes(searchTerm) || 
-                removeAccents(song.subtitle.toLowerCase()).includes(searchTerm) ||
-                (song.content && removeAccents(song.content.toLowerCase()).includes(searchTerm)) // Nuevo: buscar en el contenido
-            );
-        }
-        
+        function filterSongs() {
+        // 1. Capturamos y normalizamos la búsqueda del usuario
+        const rawSearch = searchInput.value.toLowerCase();
+        const busquedaLimpia = rawSearch.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Quita acentos
+        const busquedaTotalmentePegada = busquedaLimpia.replace(/\s/g, ""); // Quita todos los espacios
+
+        const filteredSongs = songs.filter(song => {
+            // --- LÓGICA DE FILTROS (Categoría y Momentos) ---
+            const matchesCategory = !activeFilters.category || 
+                                (song.category && song.category.toLowerCase() === activeFilters.category.toLowerCase());
+            
+            const matchesMoments = activeFilters.moments.length === 0 || 
+                                activeFilters.moments.every(m => 
+                                    song.moments && song.moments.some(sm => sm.toLowerCase() === m.toLowerCase())
+                                );
+
+            // --- LÓGICA DE BÚSQUEDA DAVID (Ultra Elástica) ---
+            // Normalizamos los campos del canto para comparar
+            const t = (song.title || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            const s = (song.subtitle || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            const c = (song.content || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+            const poolConEspacios = `${t} ${s} ${c}`;
+            const poolSinEspacios = poolConEspacios.replace(/\s/g, "");
+
+            // REGLA 1: Búsqueda tal cual (con los espacios que ponga el usuario)
+            const coincideNormal = poolConEspacios.includes(busquedaLimpia);
+
+            // REGLA 2: Búsqueda elástica (ignora espacios en usuario y en el canto)
+            // Esto arregla lo de "quienesesta que sube"
+            const coincideElastic = busquedaTotalmentePegada.length > 2 && 
+                                    poolSinEspacios.includes(busquedaTotalmentePegada);
+
+            const matchesSearch = !busquedaLimpia || coincideNormal || coincideElastic;
+
+            return matchesCategory && matchesMoments && matchesSearch;
+        });
+
         displaySongs(filteredSongs);
-        
-        // Ocultar filtros después de aplicar (esto es parte de tu lógica existente)
-        // if (activeFilters.category || activeFilters.moments.length > 0) {
-        //     filtersContainer.classList.add('hidden');
-        //     toggleFilters.innerHTML = '';
-        // }
     }
     
     function removeAccents(text) {

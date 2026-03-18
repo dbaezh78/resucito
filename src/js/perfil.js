@@ -11,30 +11,83 @@ let ALMACEN_CANTOS = {};
 window.cacheData = {}; 
 window.indiceCantosGlobal = [];
 
+// --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
+const normalizarTexto = (texto) => {
+    if (!texto) return "";
+    return texto.toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // Quita acentos
+        .replace(/ñ/g, "n")              // ñ -> n
+        .replace(/[^a-z0-9\s]/g, "")     // Quita símbolos, comas, puntos
+        .trim();
+};
+
+// Función para verificar si un canto debe ser visible en esta página
+const esVisibleEn = (canto, paginaActual) => {
+    const v = canto.visible;
+    // Si no tiene restricción (está vacío), se ve en todas partes
+    if (!v || v === "") return true; 
+    // Si es un array, comprobamos si incluye la página
+    if (Array.isArray(v)) return v.includes(paginaActual);
+    // Si es un string, comparamos directamente
+    return v === paginaActual;
+};
+
 // 2: PROCESO DE CARGA EN SEGUNDO PLANO (SILENCIOSO)
 const cargarDatosBaseSilenciosos = async () => {
+    console.log("🔍 Perfil: Vinculando base de datos de canciones (Lógica David)...");
     try {
-        // Cargar JSON de cantos
-        const response = await fetch('/src/data/indicecantos.json');
-        window.indiceCantosGlobal = await response.json();
-        console.log("✅ Datos base cargados en segundo plano.");
+        // 1. Vincular con songs-data.js (Ya cargado en memoria por el script en el HTML)
+        if (typeof songs !== 'undefined') {
 
-        // Llenar RAM desde LocalStorage (Carga instantánea)
+            window.indiceCantosGlobal = songs.filter(c => c.visible !== "index");
+            console.log("✅ Perfil: Datos filtrados cargados");
+
+
+            // Asignamos la variable global que usa find.js y el perfil
+            console.log(`✅ Perfil: ${window.indiceCantosGlobal.length} cantos cargados (excluyendo ítems de portada).`);
+            console.log("✅ Perfil: Conectado a 'songs-data.js'. Búsqueda elástica y por contenido activada.");
+        } else {
+            console.error("❌ ERROR CRÍTICO: No se encontró la variable 'songs'. Asegúrate de que songs-data.js esté antes de perfil.js en el HTML.");
+            window.indiceCantosGlobal = []; // Evita que la app se rompa
+        }
+
+        // 2. Cargar configuraciones personalizadas desde LocalStorage (RAM)
+        let cantosLocalesContador = 0;
         Object.keys(localStorage).forEach(key => {
             if (key.startsWith('data-')) {
                 const cantoId = key.replace('data-', '');
                 try {
                     const localData = JSON.parse(localStorage.getItem(key));
-                    if (localData) ALMACEN_CANTOS[cantoId] = localData;
-                } catch (e) { }
+                    if (localData) {
+                        ALMACEN_CANTOS[cantoId] = localData;
+                        cantosLocalesContador++;
+                    }
+                } catch (e) {
+                    console.warn(`⚠️ No se pudo cargar ajuste local para: ${key}`);
+                }
             }
         });
+        console.log(`📦 RAM: ${cantosLocalesContador} ajustes personalizados cargados.`);
 
-        // Preparar selectores (Países y Comunidades)
-        await cargarPaisesEIP();
-        llenarComunidades();
+        // 3. Preparar selectores de la interfaz de usuario (Países y Comunidades)
+        if (typeof cargarPaisesEIP === 'function') {
+            await cargarPaisesEIP();
+            console.log("🌍 Selectores de países listos.");
+        }
+        
+        if (typeof llenarComunidades === 'function') {
+            llenarComunidades();
+            console.log("👥 Selectores de comunidades listos.");
+        }
+
+        // 4. NOTIFICACIÓN PARA FIND.JS
+        // Esto le dice al buscador global que ya puede empezar a procesar la lista
+        window._datosPerfilListos = true;
+        console.log("🚀 Sistema de búsqueda sincronizado con el Perfil.");
+        
     } catch (err) {
-        console.error("❌ Error en carga silenciosa:", err);
+        console.error("❌ Error crítico en la inicialización del Perfil:", err);
     }
 };
 
@@ -207,12 +260,25 @@ async function renderizarTablaCantos() {
     if (!contenedor) return;
 
     try {
-        const response = await fetch('src/data/indicecantos.json');
-        const cantos = await response.json();
+        // 1. Obtenemos los cantos globales
+        let cantos = window.indiceCantosGlobal || [];
+
+        // 2. FILTRO DE VISIBILIDAD: Solo los que NO sean exclusivos de "index"
+        // Como estamos en perfil, filtramos los que tengan visible: "index"
+        cantos = cantos.filter(canto => {
+            // Si el canto dice que es solo para "index", aquí lo ocultamos
+            if (canto.visible === "index") return false;
+            return true;
+        });
+
+        if (cantos.length === 0) {
+            contenedor.innerHTML = "<p style='text-align:center;'>Cargando base de datos...</p>";
+            return;
+        }
 
         let html = `
             <div class="buscador-container" style="position: relative; width: 100%; margin-bottom: 15px;">
-                <input id="inputBuscador" type="text" placeholder="🔍 Buscar canto..." oninput="window.filtrarCantos()" 
+                <input id="inputBuscador" type="text" placeholder="🔍 Buscar por título o letra..." oninput="window.filtrarCantos()" 
                 style="width:100%; max-width:100%; padding:10px 40px 10px 10px; border-radius:20px; border:1px solid #ccc; box-sizing: border-box;">
     
                 <span onclick="window.limpiarBuscador()" 
@@ -226,7 +292,7 @@ async function renderizarTablaCantos() {
                 <thead>
                     <tr>
                         <th>Canto</th>
-                        <th>Rate</th> <th>Online</th>     <th>Uso</th>        <th>Cejilla (Or/Tu)</th> <th>Acorde (Or/Tu)</th>  </tr>
+                        <th>Rate</th> <th>Online</th>     <th>Uso</th>         <th>Cejilla (Or/Tu)</th> <th>Acorde (Or/Tu)</th>  </tr>
                 </thead>
                 <tbody id="cuerpo-tabla-perfil">`;
 
@@ -236,7 +302,6 @@ async function renderizarTablaCantos() {
             const cejillaVisual = datosRAM ? (datosRAM.cejilla === "0" ? "-" : datosRAM.cejilla) : ""; 
             const numAcorde = datosRAM ? String(datosRAM.acorde) : null;
             
-            // Usamos tu lógica de MAPA_ACORDES o la que inyecta S5 después
             const acordeTexto = (numAcorde !== null && MAPA_ACORDES[numAcorde]) ? MAPA_ACORDES[numAcorde] : "";
 
             let fechaTexto = "---";
@@ -251,23 +316,22 @@ async function renderizarTablaCantos() {
 
             const enlaceCanto = `src/index.html?canto=${canto.id}${numAcorde ? '&tonalidad='+numAcorde : ''}${datosRAM?.cejilla ? '&cejilla='+datosRAM.cejilla : ''}`;
 
+            // CAMBIO: Usamos canto.title en lugar de canto.titulo
+            const nombreMostrar = canto.title || canto.titulo || "Sin título";
+
             html += `
                 <tr class="fila-canto" id="fila-${canto.id}">
                     <td style="text-align:left;">
                         <a href="${enlaceCanto}" id="enlace-${canto.id}" class="listcanto">
-                            ${canto.titulo}
+                            ${nombreMostrar}
                         </a>
                     </td>
                     <td id="valoracion-${canto.id}">...</td>
-                    
                     <td id="status-${canto.id}">⌛</td>
-                    
                     <td id="uso-${canto.id}">
                         ${fechaTexto} <span onclick="event.stopPropagation(); window.abrirCalendario('${canto.id}')" style="cursor:pointer; font-size:16px;">📅</span>
                     </td>
-                    
                     <td>${canto.cejilla ?? 0} / <b id="cejilla-tu-${canto.id}" style="color: #bc0009;">${cejillaVisual}</b></td>
-                    
                     <td>${canto.acorde ?? 'N/A'} / <b id="acorde-tu-${canto.id}" style="color: #bc0009;">${acordeTexto}</b></td>
                 </tr>`;
         });
@@ -280,8 +344,7 @@ async function renderizarTablaCantos() {
     } catch (e) {
         console.error("Error en tabla:", e);
     }
-}
-// FIN 11. RENDERIZADO DE TABLA
+}// FIN 11. RENDERIZADO DE TABLA
 
 
 
@@ -712,53 +775,77 @@ window.exportarDatosLocales = function() {
     downloadAnchorNode.remove();
 };
 
-// 23. FILTRADO INTELIGENTE: Ignora acentos, espacios, comas y símbolos
-window.filtrarCantos = function() {
+// 12: MOTOR DE BÚSQUEDA DE LA TABLA (Lógica de Precisión David Final)
+window.filtrarCantos = () => {
     const input = document.getElementById('inputBuscador');
-    const btnLimpiar = document.getElementById('btnLimpiarBuscador');
+    const btn = document.getElementById('btnLimpiar');
     if (!input) return;
+
+    const busquedaRaw = input.value.toLowerCase();
     
-    // Función auxiliar para "limpiar" el texto al máximo
-    const superNormalizar = (texto) => {
-        return texto.toLowerCase()
-                    .normalize("NFD") // Descompone caracteres con acentos
-                    .replace(/[\u0300-\u036f]/g, "") // Quita los acentos
-                    .replace(/[^a-z0-9]/g, ""); // Quita espacios, comas, puntos y símbolos
-    };
+    // Gestión visual del botón de limpiar
+    if (btn) btn.style.display = busquedaRaw.length > 0 ? "block" : "none";
 
-    const filtro = superNormalizar(input.value);
-    const filas = document.getElementsByClassName('fila-canto');
-
-    // Mostrar/ocultar la 'X' de limpieza
-    if (btnLimpiar) {
-        btnLimpiar.style.display = input.value.length > 0 ? "block" : "none";
+    // Normalización de la búsqueda (quita acentos y símbolos)
+    const busquedaLimpia = normalizarTexto(busquedaRaw);
+    
+    // Si no hay búsqueda, mostrar todo y salir
+    if (busquedaLimpia === "") {
+        document.querySelectorAll('#cuerpo-tabla-perfil tr').forEach(f => f.style.display = "");
+        return;
     }
 
-    for (let i = 0; i < filas.length; i++) {
-        const celdaTitulo = filas[i].getElementsByTagName('td')[0];
-        if (celdaTitulo) {
-            // Normalizamos el título del canto de la misma forma
-            const textoCanto = superNormalizar(celdaTitulo.textContent || celdaTitulo.innerText);
-            
-            // Si el título normalizado contiene el filtro normalizado, mostramos la fila
-            if (textoCanto.indexOf(filtro) > -1) {
-                filas[i].style.display = "";
-            } else {
-                filas[i].style.display = "none";
-            }
+    const palabras = busquedaLimpia.split(/\s+/).filter(p => p.length > 0);
+    const filas = document.querySelectorAll('#cuerpo-tabla-perfil tr');
+
+    filas.forEach(fila => {
+        const id = fila.id.replace('fila-', '');
+        const canto = window.indiceCantosGlobal.find(c => String(c.id) === id);
+        
+        if (!canto) return;
+
+        // Preparamos el texto (Título + Letra)
+        const t = normalizarTexto(canto.title || "");
+        const c = normalizarTexto(canto.content || ""); 
+        const pool = `${t} ${c}`;
+
+        // --- LÓGICA DE FILTRADO CONTINUO ---
+        
+        // 1. Coincidencia de frase exacta (ESTO ES LO QUE BUSCAS)
+        // Si buscas "como en", solo coincidirá si el texto tiene "como en" literal.
+        const coincideFraseContinua = pool.includes(busquedaLimpia);
+
+        // 2. Coincidencia de palabras sueltas (SOLO PARA PALABRAS LARGAS)
+        // Solo permitimos palabras salteadas si el usuario escribe términos importantes (ej: "Abraham desierto")
+        // Ignoramos palabras de menos de 4 letras para evitar el error de "como en"
+        const palabrasImportantes = palabras.filter(p => p.length > 3);
+        const coincidePalabrasSeparadas = palabrasImportantes.length > 1 && palabrasImportantes.every(p => pool.includes(p));
+
+        // DECISIÓN FINAL
+        // Mostramos si:
+        // - La frase es continua (ej: "como en" juntos)
+        // - O si son varias palabras LARGAS separadas (ej: "Espiritu Santo")
+        if (coincideFraseContinua || coincidePalabrasSeparadas) {
+            fila.style.display = "";
+        } else {
+            fila.style.display = "none";
         }
-    }
+    });
 };
+
 
 // 24: FUNCIÓN PARA LIMPIAR EL BUSCADOR
 window.limpiarBuscador = function() {
     const input = document.getElementById('inputBuscador');
     const btn = document.getElementById('btnLimpiar');
     
-    input.value = "";       // Limpiamos el texto
-    btn.style.display = "none"; // Ocultamos la X
-    window.filtrarCantos(); // Refrescamos la lista para que salgan todos
-    input.focus();          // Devolvemos el foco al input
+    if (input) {
+        input.value = "";           // Limpiamos el texto
+        if (btn) btn.style.display = "none"; // Ocultamos la X
+        
+        window.filtrarCantos();     // Refrescamos la lista para que salgan todos
+        input.focus();              // Devolvemos el foco al input para seguir buscando
+    }
 };
 
 // MODIFICACIÓN EN TU FILTRAR CANTOS (Para que la X aparezca solo cuando escribes)

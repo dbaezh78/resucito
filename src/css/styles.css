@@ -1023,3 +1023,36 @@ border: 1px solid #52067d;
     text-align: center;
     line-height: unset !important;
 }
+
+
+/* NUEVOS ESTILOS*/
+
+/* Estilo para que los resultados floten en el index principal */
+.search-container {
+    position: relative; /* Necesario para que el hijo absoluto se posicione bien */
+}
+
+#resultadosBusqueda {
+    position: absolute;
+    top: 100%; /* Aparece justo debajo del input */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 999;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 0 0 8px 8px;
+}
+
+.resultado-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: #333;
+}
+
+.resultado-item:hover {
+    background-color: #f0f0f0;
+}

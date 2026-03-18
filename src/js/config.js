@@ -1,5 +1,5 @@
 // 1. DEFINIR primero las constantes
-const APP_VERSION = '1.1'; 
+const APP_VERSION = '1.2'; 
 const CACHE_NAME = `cantos-cache-v${APP_VERSION}`;
 const OFFLINE_URL = 'src/offline.html';
 

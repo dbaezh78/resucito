@@ -1,101 +1,187 @@
-/* ****************************************
-FUNCION DE BUSCADOR MEJORADA David was here
-******************************************/
-document.getElementById('DavidLoBusca')?.addEventListener('input', async function(e) {
-    const query = normalizeText(e.target.value.trim());
+/* **************************************************
+   MOTOR DE BÚSQUEDA SECUENCIAL - Edición David (Final)
+   - Compatible con index principal y visor de cantos.
+   - Anti-Acentos, Anti-Signos, Anti-Mayúsculas.
+   - Anti-Espacios (letoco = le toco) - SOLO SECUENCIAL.
+************************************************** */
+
+// 1. Detectar automáticamente qué input está presente en el HTML actual
+const inputID = document.getElementById('DavidLoBusca') ? 'DavidLoBusca' : 'searchInput';
+
+document.getElementById(inputID)?.addEventListener('input', function(e) {
+    const valorInput = e.target.value;
     const resultadosDiv = document.getElementById('resultadosBusqueda');
 
-    if (!resultadosDiv) { // Añadir verificación para resultadosDiv también
-        console.warn("Elemento 'resultadosBusqueda' no encontrado. El buscador no funcionará.");
-        return;
-    }
+    if (!resultadosDiv) return;
 
-    if (query.length < 1) {
+    // Si está vacío, escondemos los resultados
+    if (valorInput.trim().length < 1) {
         resultadosDiv.style.display = 'none';
         resultadosDiv.innerHTML = '';
         return;
     }
 
-    try {
-        // La URL para fetch se mantiene con el parámetro para evitar problemas de caché del navegador,
-        // el Service Worker se encarga de ignorarlo para la búsqueda en caché.
-        //const response = await fetch(`/src/data/find.json?v=${Date.now()}`);
-        const response = await fetch('/src/data/find.json');
+    // 2. Limpieza total de la búsqueda
+    const busquedaLimpia = limpiarTextoMaestro(valorInput);
+    const busquedaPegada = busquedaLimpia.replace(/\s/g, "");
 
-        if (!response.ok) {
-            throw new Error(`Error HTTP ${response.status}`);
-        }
+    // 3. Filtrar usando la librería global 'songs'
+    const resultados = filtrarCantosUltra(busquedaLimpia, busquedaPegada);
 
-        const cantos = await response.json();
-
-        // Normalizar y buscar
-        const resultados = cantos.filter(canto => {
-            const tituloNormalizado = normalizeText(canto.titulo);
-            const letraNormalizada = normalizeText(canto.letra);
-
-            return tituloNormalizado.includes(query) ||
-                   letraNormalizada.includes(query);
-        });
-
-        mostrarResultados(resultados);
-    } catch (error) {
-        console.error("Error en búsqueda:", error);
-        resultadosDiv.innerHTML = `
-            <div class="resultado-item">
-                Error al cargar: ${error.message}<br>
-                <small>Ruta intentada: /src/data/find.json</small>
-            </div>`;
-        resultadosDiv.style.display = 'block';
-    }
+    // 4. Mostrar en pantalla
+    mostrarResultadosFinal(resultados);
 });
 
-// Función para normalizar texto (quitar acentos, comas, etc.)
-function normalizeText(text) {
-    return text.toLowerCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // quita acentos
-        .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, ""); // quita signos de puntuación
+/**
+ * Normalización de texto: quita acentos, signos y lo hace minúscula.
+ */
+function limpiarTextoMaestro(texto) {
+    if (!texto) return "";
+    return texto.toString().toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // Quita acentos
+        .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "") // Quita signos
+        .trim();
 }
 
-// Función para mostrar resultados con scroll lateral
-function mostrarResultados(resultados) {
-    const contenedor = document.getElementById('resultadosBusqueda');
-    if (!contenedor) return; // Asegurar que el contenedor existe
+/**
+ * Lógica de Filtrado Secuencial (Anti-Palabras Saltadas)
+ */
+function filtrarCantosUltra(fraseNormal, frasePegada) {
+    if (typeof songs === 'undefined') {
+        console.error("Error: 'songs' no está cargado.");
+        return [];
+    }
 
+    return songs.filter(canto => {
+        // Ignorar si el canto está marcado como no visible
+        if (canto.visible === "no") return false;
+
+        // Limpiamos los campos del objeto songs-data.js
+        const t = limpiarTextoMaestro(canto.title || "");
+        const s = limpiarTextoMaestro(canto.subtitle || "");
+        const c = limpiarTextoMaestro(canto.content || "");
+
+        // Creamos los bloques de búsqueda
+        const poolConEspacios = `${t} ${s} ${c}`;
+        const poolSinEspacios = poolConEspacios.replace(/\s/g, "");
+
+        // REGLA DE ORO: Debe ser secuencial
+        // Caso A: Aparece la frase con espacios originales
+        const coincideNormal = poolConEspacios.includes(fraseNormal);
+        
+        // Caso B: Aparece la frase pegada (letoco -> le toco)
+        // Pedimos mínimo 3 letras para el modo pegado para evitar falsos positivos
+        const coincidePegado = frasePegada.length > 2 && poolSinEspacios.includes(frasePegada);
+
+        return coincideNormal || coincidePegado;
+    });
+}
+
+// ==========================================================
+// Renderizado de resultados - CORREGIDO para PDF y Prontuario
+// ==========================================================
+
+/* **************************************************
+   MOTOR DE BÚSQUEDA SECUENCIAL - Edición David (Final)
+************************************************** */
+
+document.getElementById(inputID)?.addEventListener('input', function(e) {
+    const valorInput = e.target.value;
+    const resultadosDiv = document.getElementById('resultadosBusqueda');
+
+    if (!resultadosDiv) return;
+
+    if (valorInput.trim().length < 1) {
+        resultadosDiv.style.display = 'none';
+        resultadosDiv.innerHTML = '';
+        return;
+    }
+
+    const busquedaLimpia = limpiarTextoMaestro(valorInput);
+    const busquedaPegada = busquedaLimpia.replace(/\s/g, "");
+    const resultados = filtrarCantosUltra(busquedaLimpia, busquedaPegada);
+
+    mostrarResultadosFinal(resultados);
+});
+
+function limpiarTextoMaestro(texto) {
+    if (!texto) return "";
+    return texto.toString().toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+        .trim();
+}
+
+function filtrarCantosUltra(fraseNormal, frasePegada) {
+    if (typeof songs === 'undefined') return [];
+    return songs.filter(canto => {
+        if (canto.visible === "no") return false;
+        const t = limpiarTextoMaestro(canto.title || "");
+        const s = limpiarTextoMaestro(canto.subtitle || "");
+        const c = limpiarTextoMaestro(canto.content || "");
+        const poolConEspacios = `${t} ${s} ${c}`;
+        const poolSinEspacios = poolConEspacios.replace(/\s/g, "");
+        return poolConEspacios.includes(fraseNormal) || (frasePegada.length > 2 && poolSinEspacios.includes(frasePegada));
+    });
+}
+
+// ==========================================================
+// RENDERIZADO - LA SOLUCIÓN LIMPIA
+// ==========================================================
+function mostrarResultadosFinal(resultados) {
+    const contenedor = document.getElementById('resultadosBusqueda');
+    if (!contenedor) return;
     contenedor.innerHTML = '';
 
     if (resultados.length === 0) {
-        contenedor.innerHTML = '<div class="resultado-item">No hay coincidencias</div>';
+        contenedor.innerHTML = '<div class="resultado-item">Sin coincidencias</div>';
         contenedor.style.display = 'block';
         return;
     }
 
-    // Crear contenedor principal
     const mainResults = document.createElement('div');
     mainResults.className = 'main-results';
 
-    // Mostrar todos los resultados en el contenedor principal con scroll
     resultados.forEach(canto => {
-        const div = document.createElement('div');
-        div.className = 'resultado-item';
-        div.innerHTML = `
-            <strong>${canto.titulo}</strong>
+        const item = document.createElement('a');
+        item.className = 'resultado-item';
+        item.style.display = "block";
+        item.style.textDecoration = "none";
+        item.style.color = "inherit";
+        
+        // El navegador usa el href directamente
+        item.href = canto.url;
+
+        // Si en songs-data.js dice targetBlank: true, el navegador abre pestaña nueva solo
+        if (canto.targetBlank === true || canto.targetBlank === "true") {
+            item.target = "_blank";
+            item.rel = "noopener noreferrer";
+        } else {
+            item.target = "_self";
+        }
+
+        item.innerHTML = `
+            <strong>${canto.title}</strong>
             <br>
-            <small>${canto.salmo}</small>
+            <small>${canto.subtitle || ""}</small>
         `;
-        div.onclick = () => window.location.href = canto.archivo;
-        mainResults.appendChild(div);
+
+        // SIN ONCLICK, SIN PREVENTDEFAULT. 
+        // Dejamos que el navegador haga su trabajo natural.
+        
+        mainResults.appendChild(item);
     });
 
     contenedor.appendChild(mainResults);
     contenedor.style.display = 'block';
 }
 
-// Cerrar resultados al hacer clic fuera
-document.addEventListener('click', function(e) {
-    const buscador = document.querySelector('.buscador-cantos');
-    const resultados = document.getElementById('resultadosBusqueda');
-
-    if (resultados && buscador && !buscador.contains(e.target)) { // Verificar que ambos elementos existen
-        resultados.style.display = 'none';
-    }
+    document.addEventListener('click', function(e) {
+        const contenedorBuscador = document.querySelector('.buscador-cantos') || document.querySelector('.search-container');
+        const res = document.getElementById('resultadosBusqueda');
+        if (res && contenedorBuscador && !contenedorBuscador.contains(e.target)) {
+            res.style.display = 'none';
+        }
 });

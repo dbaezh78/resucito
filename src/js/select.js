@@ -13,6 +13,18 @@ let snapshotActual = null;
 let listasLocalesCache = []; 
 let bloqueoSnapshot = false;
 
+// Usamos los datos de songs-data.js filtrando lo que es solo para el index
+todosLosCantos = typeof songs !== 'undefined' 
+    ? songs.filter(canto => canto.visible !== "index") 
+    : [];
+
+// Ejecutar el renderizado inicial
+document.addEventListener('DOMContentLoaded', () => {
+    if (todosLosCantos.length > 0) {
+        renderizarLista(todosLosCantos);
+    }
+});
+
 
 // --- UTILIDAD: NORMALIZADOR DE TEXTO AVANZADO ---
 const normalizarTexto = (texto) => {
@@ -39,14 +51,7 @@ const cargarDesdeEquipo = () => {
 
 cargarDesdeEquipo();
 
-// --- 2. CARGA DE BASE DE DATOS (JSON) ---
-fetch('data/indicecantos.json')
-    .then(res => res.json())
-    .then(data => { 
-        todosLosCantos = data; 
-        renderizarLista(todosLosCantos); 
-    })
-    .catch(err => console.error("Error al cargar JSON:", err));
+
 
 // --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
 onAuthStateChanged(auth, (user) => {
@@ -166,10 +171,13 @@ function renderizarLista(lista) {
     lista.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'item-canto';
+        // CAMBIO AQUÍ: Usamos .title (de songs-data.js)
+        const nombreAMostrar = canto.title || "Sin título"; 
+        
         const isChecked = listaOrdenada.includes(String(canto.id));
         div.onclick = () => window.toggleCanto(canto.id);
         div.innerHTML = `
-            <span class="titulo-canto-seleccion">${canto.titulo}</span>
+            <span class="titulo-canto-seleccion">${nombreAMostrar}</span>
             <label class="switch">
                 <input type="checkbox" data-id="${canto.id}" ${isChecked ? 'checked' : ''} readonly>
                 <span class="slider"></span>
@@ -181,6 +189,7 @@ function renderizarLista(lista) {
 // --- 5. BUSCADORES Y LIMPIEZA ---
 
 // A. Filtro de Selección de Cantos
+// --- ACTUALIZACIÓN: BUSCADOR ELÁSTICO PARA SELECCIÓN (David Edition) ---
 window.filtrarSeleccion = () => {
     const input = document.getElementById('inputBuscadorCantos');
     const btnX = document.getElementById('btnLimpiarCantos');
@@ -188,15 +197,34 @@ window.filtrarSeleccion = () => {
 
     if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
 
-    const palabrasBusqueda = normalizarTexto(input.value).split(/\s+/).filter(p => p.length > 0);
-    
+    // 1. Normalizamos la búsqueda (Lógica David)
+    const busquedaRaw = input.value.toLowerCase();
+    const busquedaLimpia = normalizarTexto(busquedaRaw);
+    const busquedaPegada = busquedaLimpia.replace(/\s/g, "");
+
+    // 2. Filtramos sobre 'todosLosCantos' (que ahora tiene el contenido)
     const filtrados = todosLosCantos.filter(canto => {
-        const tituloNormalizado = normalizarTexto(canto.titulo);
-        return palabrasBusqueda.every(palabra => tituloNormalizado.includes(palabra));
+        // Normalizamos los campos del objeto de songs-data.js
+        const t = normalizarTexto(canto.title || "");       // Nota: en songs-data.js es 'title'
+        const s = normalizarTexto(canto.subtitle || "");    // También buscamos en subtítulos
+        const c = normalizarTexto(canto.content || "");     // ¡Aquí está la letra!
+
+        const poolConEspacios = `${t} ${s} ${c}`;
+        const poolSinEspacios = poolConEspacios.replace(/\s/g, "");
+
+        // Regla: Coincidencia por palabras sueltas
+        const palabras = busquedaLimpia.split(/\s+/).filter(p => p.length > 0);
+        const coincidePalabras = palabras.length > 0 && palabras.every(p => poolConEspacios.includes(p));
+
+        // Regla: Coincidencia elástica (pegar "quienesesta que sube")
+        const coincideElastic = busquedaPegada.length > 2 && poolSinEspacios.includes(busquedaPegada);
+
+        return busquedaLimpia === "" || coincidePalabras || coincideElastic;
     });
     
     renderizarLista(filtrados);
 };
+
 
 window.limpiarBuscadorSeleccion = () => {
     const input = document.getElementById('inputBuscadorCantos');
@@ -301,7 +329,7 @@ function actualizarInterfazSeleccion() {
             if (canto) {
                 const tag = document.createElement('div');
                 tag.className = 'canto-tag';
-                tag.innerHTML = `<span>${i + 1}</span> ${canto.titulo}`;
+                tag.innerHTML = `<span>${i + 1}</span> ${canto.title}`;
                 tag.onclick = (e) => { e.stopPropagation(); window.toggleCanto(id); };
                 cola.appendChild(tag);
             }
@@ -344,7 +372,6 @@ window.eliminarLista = async (idLista, nombreLista) => {
     }
 };
 
-// --- 7. SISTEMA DE COMPARTIR ---
 // --- 7. SISTEMA DE COMPARTIR ---
 
 // FUNCIÓN A: Compartir Universal (Móvil / WhatsApp)
@@ -490,7 +517,7 @@ window.toggleDetalleLista = (idLista) => {
         detalleDiv.innerHTML = data.ids_cantos.map((id, i) => {
             const c = todosLosCantos.find(can => String(can.id) === String(id));
             return `<div class="sub-item-canto" onclick="window.abrirVisorCanto('${id}')">
-                <span class="num">${i + 1}</span><span>${c ? c.titulo : id}</span>
+                <span class="num">${i + 1}</span><span>${c ? c.title : id}</span>
             </div>`;
         }).join('');
     }

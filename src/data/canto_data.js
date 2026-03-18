@@ -1,4 +1,4 @@
-/* Info del archivo en dbaezh.docx
+     /* Info del archivo en dbaezh.docx
 resucito\src\data\Explicacion Cantos.docx
 Posible fuente para acorde: sans-serif, 'system-ui', cursive, sans-serif
 font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
@@ -11,7 +11,7 @@ Generar espacio: \u200B   , lo que est'a entre la coma es el espacio que se gene
 const DEFAULT_SCROLL_CONFIG = {
 
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }
      };
@@ -41,7 +41,7 @@ const allCantosData = [
         // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         // Propiedades para navegación entre cantos
@@ -97,7 +97,7 @@ const allCantosData = [
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 4, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         // Propiedades para navegación entre cantos
@@ -192,7 +192,7 @@ const allCantosData = [
         // propiedad para la velocidad de desplazamiento segun equipo
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         // Propiedades para navegación entre cantos
@@ -263,7 +263,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=atilevantomisojos",
@@ -333,7 +333,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=atisenorenmiclamorimploro",
@@ -388,11 +388,11 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=atisenorlevantomialma",
-        sig: "/src/index.html?canto=abbapadre",
+        sig: "/src/index.html?canto=atuluzsenorvemoslaluz",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "A ti, Señor, se debe la alabanza, en Sión., (Re,m,15)(La,7,364)", sC: "tc"},
@@ -468,11 +468,11 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
-        ant: "/resucito/src/index.html?canto=dichosoelhombre",
-        sig: "/resucito/src/index.html?canto=elespiritudelsenorestasobremi",
+        ant: "/src/index.html?canto=atisenorsedebelaalabanzaension",
+        sig: "/src/index.html?canto=abbapadre",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "A tu luz, Señor, vemos la luz., (Mi,m,15)(La,m,127)(Mi,m,260)", sC: "tc"},
@@ -553,10 +553,10 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/abbapadre.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
-        ant: "/src/index.html?canto=atisenorsedebelaalabanzaension",
+        ant: "/src/index.html?canto=atuluzsenorvemoslaluz",
         sig: "/src/index.html?canto=abraham",
 // Contenido del lado izquierdo del canto,
     lizq: [
@@ -608,7 +608,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=abbapadre",
@@ -670,7 +670,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=abraham",
@@ -744,7 +744,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=aclamadalsenor",
@@ -841,7 +841,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=aldespertar",
@@ -917,7 +917,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=alabadalsenorenelcielo",
@@ -1021,7 +1021,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=alegriahanacidoelsalvador",
@@ -1093,7 +1093,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=aleluyaalabadalsenor",
@@ -1175,7 +1175,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/aleluyayallegoelreino.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC        
         ant: "/src/index.html?canto=aleluyabendecidalsenor",
@@ -1245,7 +1245,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/alzaospuertas.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=aleluyayallegoelreino",
@@ -1327,7 +1327,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/amenamenamen.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=alzaospuertas",
@@ -1435,7 +1435,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/amoalsenor.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=amenamenamen",
@@ -1508,7 +1508,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=amoalsenor",
@@ -1575,7 +1575,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/asihablaelamen.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=aquedah",
@@ -1653,7 +1653,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/avemariai.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=asihablaelamen",
@@ -1703,7 +1703,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/avemariaii.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=avemariai",
@@ -1753,7 +1753,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/babiloniacriminal.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=avemariaii(1984)",
@@ -1836,7 +1836,7 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/balaam.mp3",
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=babiloniacriminal",
@@ -1937,7 +1937,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=balaam",
@@ -2024,7 +2024,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=bendecirealsenorentodotiempo",
@@ -2082,7 +2082,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=bendicealmamiaayahveh",
@@ -2153,7 +2153,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=benditaerestumaria",
@@ -2252,7 +2252,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=benditoeressenor",
@@ -2329,7 +2329,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=benditoseadios",
@@ -2412,7 +2412,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=benedictus",
@@ -2466,7 +2466,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=cantadadios",
@@ -2518,7 +2518,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=cantadalsenor",
@@ -2653,7 +2653,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=canticodelostresjovenes",
@@ -2845,7 +2845,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=canticodelostresjovenes",
@@ -3041,7 +3041,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=cantodemoises",
@@ -3110,7 +3110,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=caritaschristiurgetnos",
@@ -3176,7 +3176,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=carmen63",
@@ -3255,7 +3255,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=comocondenadosamuerte",
@@ -3321,7 +3321,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=comoesmaravilloso",
@@ -3406,7 +3406,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=comolacierva",
@@ -3481,7 +3481,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=comoovejaqueve",
@@ -3533,7 +3533,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=consoladamipueblo",
@@ -3592,7 +3592,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=cristoeslaluz",
@@ -3655,7 +3655,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=cuandoelsenor",
@@ -3707,7 +3707,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=cuandoisraelsaliodeegipto",
@@ -3820,7 +3820,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=dayenu",
@@ -3896,7 +3896,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=dayenu",
@@ -3962,7 +3962,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=deprofundis",
@@ -4027,7 +4027,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=decidlealosdecorazoncansado",
@@ -4118,7 +4118,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=delantedelosangeles",
@@ -4172,7 +4172,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=diadereposo",
@@ -4249,7 +4249,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=diceelsenoramisenor",
@@ -4318,7 +4318,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=dichosoelhombre",
@@ -4389,7 +4389,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elcombateescatologico",
@@ -4447,7 +4447,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elespiritudelsenorestasobremi",
@@ -4508,7 +4508,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=eljacaldelospastores",
@@ -4571,7 +4571,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ellagarero",
@@ -4625,7 +4625,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elmesiasleon",
@@ -4701,7 +4701,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elneciopiensaquediosnoexiste",
@@ -4774,7 +4774,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elpuebloquecaminabaenlastinieblas",
@@ -4834,7 +4834,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elsenoranunciaunanoticia",
@@ -4933,7 +4933,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elsenoresmipastor",
@@ -5121,7 +5121,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elielilamasabactani",
@@ -5195,7 +5195,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=enmediodeaquelgentio",
@@ -5267,7 +5267,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=enunanocheoscura",
@@ -5337,7 +5337,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=eresdignodetomarellibro",
@@ -5430,7 +5430,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ereshermoso",
@@ -5516,7 +5516,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=espaciente",
@@ -5609,7 +5609,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=escondemeenloocultodetutienda",
@@ -5703,7 +5703,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=escuchadislaslejanas",
@@ -5873,7 +5873,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=esteeseldiaenqueactuoelsenor",
@@ -5946,7 +5946,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=esteeselmandamientomio",
@@ -6025,7 +6025,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=evenushalomalejem",
@@ -6083,7 +6083,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=extiendomismanos",
@@ -6148,7 +6148,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=exultadjustosenelsenor",
@@ -6206,7 +6206,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=felicidadparaelhombre",
@@ -6290,7 +6290,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=graciasayahveh",
@@ -6354,7 +6354,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=gritadjubilosos",
@@ -6420,7 +6420,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=haciatimoradasanta",
@@ -6484,7 +6484,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=hastacuando",
@@ -6538,7 +6538,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=heaquimisiervo",
@@ -6592,7 +6592,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=heaquiquevengopresto",
@@ -6694,7 +6694,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=heesperadoenelsenor",
@@ -6766,7 +6766,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=hijasdejerusalen",
@@ -6822,7 +6822,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=himnoacristoluz",
@@ -6888,7 +6888,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=himnoalacaridad",
@@ -6965,7 +6965,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=himnoalakenosis",
@@ -7016,7 +7016,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=himnodeadviento",
@@ -7083,7 +7083,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=himnodelaascension",
@@ -7133,7 +7133,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=himnodepascua",
@@ -7184,7 +7184,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=huyeamadomio",
@@ -7259,7 +7259,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=idyanunciadamishermanos",
@@ -7343,7 +7343,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=improperios",
@@ -7435,7 +7435,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=jerusalenreconstruida",
@@ -7514,7 +7514,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=jesusrecorriatodaslasciudades",
@@ -7612,7 +7612,7 @@ const allCantosData = [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=lacorderadedios",
@@ -7690,7 +7690,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=laespada",
@@ -7738,7 +7738,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=lamarchaesdura",
@@ -7794,7 +7794,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=lasalve",
@@ -7881,7 +7881,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=lasiegadelasnaciones",
@@ -7963,7 +7963,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=lavozdemiamado",
@@ -8031,7 +8031,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=lasarmasdelaluz",
@@ -8124,7 +8124,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=laudasion",
@@ -8213,7 +8213,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=laudasionc",
@@ -8289,7 +8289,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=levantomisojosalosmontes",
@@ -8354,7 +8354,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=lleguehastatupresenciamiclamor",
@@ -8449,7 +8449,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=llevamealcielo",
@@ -8520,7 +8520,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=magnificat",
@@ -8577,7 +8577,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=mariacasadebendicion",
@@ -8645,7 +8645,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=mariadejasnagora",
@@ -8723,7 +8723,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=mariamadredelaiglesia",
@@ -8779,7 +8779,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=mariamadredelcaminoardiente",
@@ -8845,7 +8845,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=mariapequenamaria",
@@ -8921,7 +8921,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=meensenaraselcaminodelavida",
@@ -9002,7 +9002,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=mehasseducidosenor",
@@ -9097,7 +9097,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=miradqueestupendo",
@@ -9188,7 +9188,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=misericordiadiosmio",
@@ -9322,7 +9322,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=misericordiamiamisericordia",
@@ -9398,7 +9398,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=muchomehanperseguido",
@@ -9469,7 +9469,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=noestaaquiresucito",
@@ -9546,7 +9546,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=nohayenelparecer",
@@ -9613,7 +9613,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=nolimetangere",
@@ -9699,7 +9699,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ohcieloslloveddeloalto",
@@ -9754,7 +9754,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ohdiosportunombre",
@@ -9828,7 +9828,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ohdiostueresmidios",
@@ -9913,7 +9913,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ohjesusamormio",
@@ -10000,7 +10000,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ohmuerte¿dondeestatuvictoria?",
@@ -10060,7 +10060,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ohsenornuestrodios",
@@ -10121,7 +10121,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ostomaredeentrelasnaciones",
@@ -10197,7 +10197,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=palomaincorrupta",
@@ -10299,7 +10299,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=pentecostes",
@@ -10403,7 +10403,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=porelamordemisamigos",
@@ -10476,7 +10476,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=porqueestanocheesdiferente",
@@ -10562,7 +10562,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=porquelasgentesconjuran",
@@ -10632,7 +10632,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=porquemiyugoessuave",
@@ -10712,7 +10712,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=queamablessontusmoradas",
@@ -10773,7 +10773,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=queestupendoquealegria",
@@ -10835,7 +10835,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=quienesestaquesubedeldesierto",
@@ -10908,7 +10908,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=quiennosseparara",
@@ -10969,7 +10969,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=quieroandarmadreajerusalen",
@@ -11072,7 +11072,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=quierocantar",
@@ -11150,7 +11150,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=resucito",
@@ -11230,7 +11230,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=resurrexit",
@@ -11284,7 +11284,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=salvereinadeloscielos",
@@ -11332,7 +11332,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=seencontrarondosangeles",
@@ -11402,7 +11402,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=senorayudameanodudardeti",
@@ -11474,7 +11474,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=senornomecorrijasentucolera",
@@ -11547,7 +11547,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=sermondelamontana",
@@ -11619,7 +11619,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=shlomlejmariam",
@@ -11692,7 +11692,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=sielsenornoconstruyelacasa",
@@ -11852,7 +11852,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=sihoyescuchaissuvoz",
@@ -11912,7 +11912,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=simeherefugiadoenelsenor",
@@ -11966,7 +11966,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=sionmadredetodoslospueblos",
@@ -12031,7 +12031,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=solaasolo",
@@ -12100,7 +12100,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=stabatmaterdolorosa",
@@ -12156,7 +12156,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=subediosentreaclamaciones",
@@ -12237,7 +12237,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=teestoyllamandosenor",
@@ -12324,7 +12324,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=tehemanifestadomipecado",
@@ -12405,7 +12405,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=tuhascubiertodeverguenzalamuerte",
@@ -12483,7 +12483,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=tuqueeresfiel",
@@ -12571,7 +12571,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=unretonobrotadeltroncodejese",
@@ -12672,7 +12672,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=unagransenal",
@@ -12746,7 +12746,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=uriuriura",
@@ -12831,7 +12831,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=vamosyapastores",
@@ -12918,7 +12918,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=vendellibano",
@@ -13026,7 +13026,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=vendellibano",
@@ -13140,7 +13140,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=venespiritusanto",
@@ -13263,7 +13263,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=venhijodelhombre",
@@ -13324,7 +13324,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=venicreator",
@@ -13394,7 +13394,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=vieneelsenor",
@@ -13462,7 +13462,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=virgendelamaravilla",
@@ -13515,7 +13515,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=vividalegres",
@@ -13571,7 +13571,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=vosotrossoislaluzdelmundo",
@@ -13653,7 +13653,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=yavienemidios",
@@ -13711,7 +13711,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=yahvehtueresmidios",
@@ -13850,7 +13850,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=yovengoareunir",
@@ -13957,7 +13957,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=zaqueo",
@@ -14014,7 +14014,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/ai.html",
@@ -14065,7 +14065,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=aleluyapascual",
@@ -14137,7 +14137,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=antifonaparaelevangelio",
@@ -14241,7 +14241,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=bendiciondelagua",
@@ -14315,7 +14315,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=bendiciondelaguap1",
@@ -14374,7 +14374,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=bendiciondelagua",
@@ -14448,7 +14448,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=celebracionpenitencial",
@@ -14507,7 +14507,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=corderodedios",
@@ -14565,7 +14565,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=credo",
@@ -14628,7 +14628,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=gloriaadiosenloaltodelcielo",
@@ -14757,7 +14757,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=letaniasdelossantos",
@@ -14859,7 +14859,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=letaniaspenitencialesi",
@@ -15055,7 +15055,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=letaniaspenitencialesii",
@@ -15537,7 +15537,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloi",
@@ -15859,7 +15859,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloip1",
@@ -15933,7 +15933,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloip2",
@@ -16022,7 +16022,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloip3",
@@ -16438,7 +16438,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloii",
@@ -16748,7 +16748,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloiip1",
@@ -16823,7 +16823,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloiip2",
@@ -16899,7 +16899,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiimodeloiip3",
@@ -17364,7 +17364,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiv",
@@ -17438,7 +17438,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaivp1",
@@ -17512,7 +17512,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaivp2",
@@ -17586,7 +17586,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaivp3",
@@ -17661,7 +17661,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=plegariaeucaristicaiv",
@@ -17972,7 +17972,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=prefacioparaadvientoynavidad",
@@ -18275,7 +18275,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=prefacioparaeltiempopascual",
@@ -18396,7 +18396,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=pregonpascual",
@@ -18469,7 +18469,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=pregonpascualp1",
@@ -18542,7 +18542,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=pregonpascualp2",
@@ -18602,7 +18602,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=salmodiaparaelevangelio",
@@ -18661,7 +18661,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=salmodiaparaelrosario",
@@ -18745,7 +18745,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=salmodiaparaelsalmoresponsorial",
@@ -18824,7 +18824,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=salmodiasparalaoraciondelosfieles",
@@ -18908,7 +18908,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=salmodiasparalaudes1",
@@ -18990,7 +18990,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=salmodiasparalaudes2",
@@ -19051,7 +19051,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=santopalomeras65",
@@ -19116,7 +19116,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=santomelodiahebraica",
@@ -19178,7 +19178,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=santopalestina74",
@@ -19246,7 +19246,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=santoroma77",
@@ -19307,7 +19307,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=santo1982",
@@ -19364,7 +19364,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=santo1988",
@@ -19481,7 +19481,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=tedeum",
@@ -19560,7 +19560,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=comoelimpulsoquesientelaira",
@@ -19642,7 +19642,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=cuandodormia",
@@ -19738,11 +19738,11 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "224",
         notes: "",
         mant: "No",
-        audioSrc: "http://audio.resucito.do/elmismoDios.mp3",
+        audioSrc: "https://audio.resucito.do/elmismoDios.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=debora",
@@ -19815,7 +19815,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elmismodios",
@@ -19889,7 +19889,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=elsembrador",
@@ -19940,7 +19940,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=heaquiquenuestroespejoeselsenor",
@@ -20024,7 +20024,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=himnoalacruzgloriosa",
@@ -20097,7 +20097,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=jacob",
@@ -20188,7 +20188,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ningunopuedeserviradossenores",
@@ -20275,7 +20275,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=noresistaisalmal",
@@ -20344,7 +20344,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=nosufrasporlosmalvados",
@@ -20399,7 +20399,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ohsenormicorazonyanoesambicioso",
@@ -20466,7 +20466,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=senortumeescrutasyconoces",
@@ -20554,7 +20554,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=shemaisrael",
@@ -20621,7 +20621,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=sientatesolitarioysilencioso",
@@ -20679,7 +20679,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=tueresmiesperanzasenor",
@@ -20753,7 +20753,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=alacenadelcordero",
@@ -20828,7 +20828,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=adondeteescondisteamado",
@@ -20925,7 +20925,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=comodestilalamiel",
@@ -20992,7 +20992,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=comolirioentreloscardos",
@@ -21067,7 +21067,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=hermosaeresamigamia",
@@ -21141,7 +21141,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=lapalomavolo",
@@ -21220,7 +21220,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=merobasteelcorazon",
@@ -21314,7 +21314,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=prefacioparaeltiempopascual",
@@ -21386,7 +21386,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ialeluyas22",
@@ -21430,7 +21430,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=ohluzgozosa",
@@ -21470,7 +21470,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 7, i: 1 },  // Para tablet
+              tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=porqueestanocheesdiferente",

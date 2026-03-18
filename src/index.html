@@ -117,7 +117,7 @@
 
                     <div class="buscador-cantos">
                         <input type="search" id="DavidLoBusca" placeholder="Buscar..." autocomplete="off" class="toolbar-item search-input" >
-                        <div id="resultadosBusqueda" class="resultados-busqueda"></div>
+                        <div id="resultadosBusqueda" class="resultados-busqueda" style="display: none;"></div>
                     </div>
                 </div>
             </div>
@@ -189,18 +189,23 @@
             <img id="largeChordImage" src="" alt="Acorde ampliado">
         </div>
     </div>
+
+    
+    <!-- LLAMADAS DE SCRIPT-->
+    
     <script src="./data/canto_data.js"></script> <!-- Primer JS, ya que contiene los datos -->
-    <script src="./data/find.js"></script>
+    <script src="js/songs-data.js"></script>
+    <script src="./js/config.js"></script>
+    
     <script src="./js/jsgral.js"></script>
     <script src="./js/showAcorde.js"></script>
+    <script src="js/navigator.js"></script>
+    
     <script type="module" src="./js/moduleGoogle.js"></script>
     <script type="module" src="js/perfil.js"></script>
-    <script src="./data/indicecantos.json"></script>
-    <script src="./js/config.js"></script>
+    
+    <script src="./data/find.js"></script>
     <script src="./js/index.js"></script>
-    <script src="js/navigator.js"></script>
-
-
 
 
     <!-- posicionando acordes-->
