@@ -239,24 +239,57 @@ function manejarEscapeSettings(e) {
 
 function cerrarModalConfiguracion() {
     const modal = document.getElementById('modal-global-settings');
-    if (modal) {
-        // 1. Quitar clases de animación
-        modal.classList.remove('active');
-        modal.querySelector('.settings-frame').classList.remove('up');
-
-        // 2. REFRESCAR NOTAS AL CERRAR (Aquí está el truco)
-        if (window.renderizarNotasCanto) {
-            console.log("Cerrando: Limpiando y renderizando nota...");
-            window.renderizarNotasCanto();
-        }
-
-        // 3. Eliminar el modal después de la animación
-        setTimeout(() => {
-            modal.remove();
-            document.body.classList.remove('modal-open');
-            document.removeEventListener('keydown', manejarEscapeSettings);
-        }, 300);
+    
+    // Validación inicial
+    if (!modal) {
+        console.warn("⚠️ [Ajustes] Intento de cerrar modal, pero no se encontró en el DOM.");
+        return;
     }
+
+    console.log("🎬 %cIniciando proceso de cierre y sincronización...", "color: #007bff; font-weight: bold;");
+
+    // 1. GUARDAR EN FIREBASE (Subida a la nube)
+    // Esto asegura que 'global-set-dark', 'syncToggle' y 'pref-expandir-todo' suban a la base de datos
+    if (window.guardarPreferenciasGlobales) {
+        console.log("☁️ %cSincronizando preferencias con Firebase...", "color: #28a745;");
+        window.guardarPreferenciasGlobales();
+    } else {
+        console.error("❌ %cError: 'window.guardarPreferenciasGlobales' no está definida.", "color: red;");
+    }
+
+    // 2. REFRESCAR INTERFAZ (Sin recargar página)
+    // Refresco de Notas/Acordes
+    if (window.renderizarNotasCanto) {
+        console.log("🎸 %cRefrescando acordes y visualización de notas...", "color: #6f42c1;");
+        window.renderizarNotasCanto();
+    }
+    
+    // Refresco de Expansión de Estrofas (La nueva lógica)
+    if (window.aplicarExpansionVisual) {
+        console.log("📖 %cAplicando estado de expansión (Expandir Todo)...", "color: #fd7e14;");
+        window.aplicarExpansionVisual();
+    }
+
+    // 3. ANIMACIÓN DE CIERRE VISUAL
+    console.log("⏳ %cAplicando animaciones de salida...", "color: #6c757d;");
+    modal.classList.remove('active');
+    const frame = modal.querySelector('.settings-frame');
+    if (frame) {
+        frame.classList.remove('up');
+    }
+
+    // 4. LIMPIEZA FINAL DEL DOM
+    setTimeout(() => {
+        modal.remove();
+        document.body.classList.remove('modal-open');
+        
+        // Limpiar el evento de teclado
+        if (typeof manejarEscapeSettings === 'function') {
+            document.removeEventListener('keydown', manejarEscapeSettings);
+        }
+        
+        console.log("✅ %cModal cerrado y limpiado correctamente.", "color: #28a745; font-weight: bold;");
+    }, 300); // 300ms coincide con la transición CSS
 }
 
 // ==========================================

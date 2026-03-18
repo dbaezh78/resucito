@@ -401,9 +401,14 @@ if (lineaParsed.color) {
 const renderCantoSection = (container, parsedData) => {
     container.innerHTML = ''; // Limpiar contenido del contenedor
 
+    // 1. LEER LA PREFERENCIA GLOBAL DESDE SETTINGS
+    // Buscamos el valor que guarda tu switch ('pref-expandir-todo')
+    const siempreExpandir = localStorage.getItem('pref-expandir-todo') === 'true';
+
     parsedData.forEach(entry => {
 
         // ⬇️ CORRECCIÓN: Lógica para renderizar una Imagen con Acordes ⬇️
+        
         if (entry.type === "image") {
             const lineaDiv = document.createElement('div');
             lineaDiv.classList.add('linea-canto'); // Contenedor de línea general
@@ -483,7 +488,9 @@ const renderCantoSection = (container, parsedData) => {
             const triggerLetraSpan = triggerDiv.querySelector('.letra');
 
             // Determinar el estado actual del bloque: si ya está en el mapa, usar ese estado; si no, usar el estado inicial
-            let isCurrentlyExpanded = collapsibleStates.has(entry.id) ? collapsibleStates.get(entry.id) : (entry.initialState === "expanded");
+            let isCurrentlyExpanded = collapsibleStates.has(entry.id) ? collapsibleStates.get(entry.id) : (siempreExpandir ? true : entry.initialState === "expanded");
+            
+            //let isCurrentlyExpanded = collapsibleStates.has(entry.id) ? collapsibleStates.get(entry.id) : (entry.initialState === "expanded");
             triggerDiv.dataset.isExpanded = isCurrentlyExpanded.toString();
 
             // Aplicar el display y el texto del disparador según el estado
@@ -1561,7 +1568,12 @@ const observarCierreSettings = () => {
         // Detectamos el momento exacto en que pasa de abierto a cerrado
         if (!esVisible && panelSettings.dataset.wasOpen === "true") {
             panelSettings.dataset.wasOpen = "false";
+            
+            if (window.guardarPreferenciasGlobales) {
+                window.guardarPreferenciasGlobales();
+            }
             console.log("Panel cerrado: Ejecutando actualizaciones...");
+
             
             // Aquí se ejecutan las funciones que dependen del cierre
             if (window.renderizarNotasCanto) window.renderizarNotasCanto();
@@ -1611,7 +1623,40 @@ const observarCierreSettings = () => {
 };
 */
 
+
+//=========================
+// Reaccion al expacion
+//=========================
+
+window.aplicarExpansionVisual = function() {
+    const expandir = localStorage.getItem('pref-expandir-todo') === 'true';
+    // Buscamos las estrofas (ajusta '.estrofa' según tu clase CSS real)
+    const estrofas = document.querySelectorAll('.estrofa, .verse-container');
+    
+    estrofas.forEach(el => {
+        if (expandir) {
+            el.style.maxHeight = "none"; 
+            el.classList.add('expandida');
+        } else {
+            el.style.maxHeight = ""; // O el valor que tengas por defecto
+            el.classList.remove('expandida');
+        }
+    });
+    console.log("✨ Expansión visual actualizada.");
+};
+
+
+
+
+
+
+
+
+
+
+
 // Iniciar el vigilante al cargar
+
 document.addEventListener('DOMContentLoaded', observarCierreSettings);
 
 console.log("Canto rendering complete.");

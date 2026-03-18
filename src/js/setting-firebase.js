@@ -147,7 +147,49 @@ export async function sincronizarConfiguracionDesdeFirebase(cantoId) {
     }
 }
 
+
+// =====================================================================
+// Guarda las preferencias globales (Idioma, Modo Oscuro, Expandir Todo)
+// en la ruta: usuarios/UID/configuracion/preferencias
+// =====================================================================
+export async function guardarPreferenciasGlobales() {
+    if (!auth.currentUser) return;
+
+    // Mapeamos lo que hay en LocalStorage a las llaves reales de tu Firebase
+    const preferencias = {
+        // Llaves originales de tu backup/imagen:
+        "global-set-dark": localStorage.getItem('pref-dark-mode') === 'true',
+        "syncToggle": localStorage.getItem('syncToggle') === 'true',
+        "toggle-gestion": localStorage.getItem('toggle-gestion') === 'true',
+        "toggle-perfil": localStorage.getItem('toggle-perfil') === 'true',
+        "toggle-settings": localStorage.getItem('toggle-settings') === 'true',
+        "wrapper-resumen": localStorage.getItem('wrapper-resumen') === 'true',
+        
+        // La nueva llave que estamos añadiendo:
+        "pref-expandir-todo": localStorage.getItem('pref-expandir-todo') === 'true',
+        
+        // Otros ajustes:
+        "pref-lang": localStorage.getItem('pref-lang') || 'Español',
+        "ultimaActualizacion": new Date()
+    };
+
+    try {
+        const docRef = doc(db, "usuarios", auth.currentUser.uid, "configuracion", "preferencias");
+        
+        // IMPORTANTE: merge: true evita borrar cualquier otra llave que no hayamos puesto aquí
+        await setDoc(docRef, preferencias, { merge: true });
+        
+        console.log("☁️ [Firebase] Preferencias unificadas sincronizadas correctamente.");
+    } catch (e) {
+        console.error("❌ Error al sincronizar con Firebase:", e);
+    }
+}
+
+// Aseguramos la exposición global
+// Exponerla al objeto window
+
 // Exponer funciones al objeto window para acceso global
+window.guardarPreferenciasGlobales = guardarPreferenciasGlobales;
 window.guardarVelocidadCanto = guardarVelocidadCanto;
 window.guardarNotaPersonalCanto = guardarNotaPersonalCanto;
 window.sincronizarConfiguracionDesdeFirebase = sincronizarConfiguracionDesdeFirebase;

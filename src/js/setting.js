@@ -206,6 +206,17 @@ window.tabsConfig = [
                         }
                     }
                 },
+                {
+    id: 'set-expandir-canto',
+    label: 'Expandir Todo por Defecto', 
+    tipo: 'switch', 
+    storageKey: 'pref-expandir-todo',
+    default: false,
+    accion: (val) => {
+        localStorage.setItem('pref-expandir-todo', val);
+        console.log("Configuración guardada: Expandir todo =", val);
+    }
+},
 
 
 { 
@@ -693,3 +704,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2500); // Un segundo de cortesía para la nube
 });
 }
+
