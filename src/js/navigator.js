@@ -234,6 +234,7 @@ function abrirModalConfiguracion() {
 function manejarEscapeSettings(e) {
     if (e.key === "Escape") {
         cerrarModalConfiguracion();
+        window.location.reload();
     }
 }
 
@@ -277,19 +278,37 @@ function cerrarModalConfiguracion() {
     if (frame) {
         frame.classList.remove('up');
     }
+    
+        // 4. LIMPIEZA FINAL DEL DOM
+        const modalParaCerrar = modal; // Capturamos la referencia actual
 
-    // 4. LIMPIEZA FINAL DEL DOM
-    setTimeout(() => {
-        modal.remove();
-        document.body.classList.remove('modal-open');
-        
-        // Limpiar el evento de teclado
-        if (typeof manejarEscapeSettings === 'function') {
-            document.removeEventListener('keydown', manejarEscapeSettings);
-        }
-        
-        console.log("✅ %cModal cerrado y limpiado correctamente.", "color: #28a745; font-weight: bold;");
-    }, 300); // 300ms coincide con la transición CSS
+        setTimeout(() => {
+                    if (modalParaCerrar) {
+                        modalParaCerrar.remove();
+                        document.body.classList.remove('modal-open');
+                    }
+                    
+                    // Limpiar el evento de teclado
+                    if (typeof manejarEscapeSettings === 'function') {
+                        document.removeEventListener('keydown', manejarEscapeSettings);
+                    }
+                    
+                    console.log("✅ %cModal cerrado y limpiado.", "color: #28a745; font-weight: bold;");
+                    
+                    // Verificamos la bandera global
+                    if (window.cambioEnExpandir === true) {
+                        console.log("🔄 Recargando por cambio en Expandir...");
+                        // IMPORTANTE: Primero recarga, el reset se hace solo al volver a cargar la web
+                        window.cambioEnExpandir = false;
+
+                        //Recarga por haber cambiado el expansor.
+                        window.location.reload(); 
+                        console.log("🔔 Cambio detectado: Se Recargó la página 🔄!");
+                    } else {
+                        console.log("✅ Sin cambios en 'Expandir'");
+                        console.log("✅ Cierre silencioso y sin recarga.");
+                    }
+        }, 300); // 300ms coincide con la transición CSS
 }
 
 // ==========================================

@@ -1,3 +1,10 @@
+// ================================================
+// DECLARANDO VARIABLE
+// ================================================
+
+window.valorOriginalExpandir = localStorage.getItem('pref-expandir-todo') === 'true';
+window.cambioEnExpandir = false;
+
 // ==========================================
 // PROTECCIÓN INICIAL CONTRA SOBREESCRITURA
 // ==========================================
@@ -222,6 +229,14 @@ window.tabsConfig = [
                     hidden: currentCantoId === 'global',
                     accion: (val) => {
                         localStorage.setItem('pref-expandir-todo', val);
+
+                        window.cambioEnExpandir = (val !== window.valorOriginalExpandir);
+
+                        console.log("🧐 ¿Es diferente al original?:", window.cambioEnExpandir);
+                        console.log("🔔 Valor actual:", val, "| Valor inicial era:", window.valorOriginalExpandir);
+
+                        console.log("🔔 Cambio en expandir detectado:", val);
+                        console.log("Cambio registrado:", val);
                         console.log("Configuración guardada: Expandir todo =", val);
                     }
                 },
@@ -700,7 +715,7 @@ window.actualizarValoresUI = () => {
         }
     });
 
-
+/*
     // ==========================================
     // Mover Switch de expandir
     // ==========================================
@@ -724,7 +739,37 @@ window.actualizarValoresUI = () => {
         }, 100); 
     }
 
+    */
+
+    // ==========================================
+    // Mover Switch de expandir (CORREGIDO)
+    // ==========================================
+    const expandirTodoStorage = localStorage.getItem('pref-expandir-todo');
+    
+    // USAMOS EL ID QUE DEFINISTE EN TABSCONFIG: 'set-expandir-canto'
+    // El input checkbox suele estar dentro de una etiqueta con ese data-id
+    const filaExpandir = document.querySelector('[data-id="set-expandir-canto"]');
+    const checkExpandir = filaExpandir ? filaExpandir.querySelector('input[type="checkbox"]') : null;
+
+    if (checkExpandir && expandirTodoStorage !== null) {
+        const estadoBool = (expandirTodoStorage === 'true');
+        
+        setTimeout(() => {
+            checkExpandir.checked = estadoBool;
+            
+            // Esto asegura que el color del switch cambie visualmente
+            const slider = checkExpandir.parentElement;
+            if (slider) {
+                estadoBool ? slider.classList.add('active') : slider.classList.remove('active');
+            }
+
+            console.log("🔧 UI: Switch 'Expandir Todo' sincronizado a:", estadoBool);
+        }, 100); 
+    }
+
+    
 };
+
 
 // ======================================================
 // Esperando carga de la nube

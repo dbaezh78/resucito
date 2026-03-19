@@ -180,7 +180,7 @@ export async function sincronizarConfiguracionDesdeFirebase(cantoId) {
         setTimeout(() => {
             window.bloqueoSincronizacion = false;
             console.log("🔓 Bloqueo GLOBAL desactivado");
-        }, 1500);
+        }, 0);
     }
 }
 
