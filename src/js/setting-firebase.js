@@ -2,6 +2,8 @@
 import { db, auth } from './firebase-auth.js';
 import { doc, updateDoc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
+let bloqueoSincronizacion = false;
+
 /**
  * Limpia valores para evitar que "undefined" o "null" se suban a Firebase
  */
@@ -105,7 +107,12 @@ export async function guardarNotaPersonalCanto(valor, campo) {
 export async function sincronizarConfiguracionDesdeFirebase(cantoId) {
     if (!auth.currentUser || !cantoId) return;
 
+    window.bloqueoSincronizacion = true; 
+    console.log("🔒 Bloqueo GLOBAL activado");
+
     try {
+
+        // --- PARTE A: Datos del Canto (Scroll, Notas, etc.) ---
         const docRef = doc(db, "usuarios", auth.currentUser.uid, "config_cantos", cantoId);
         const docSnap = await getDoc(docRef);
 
@@ -128,6 +135,31 @@ export async function sincronizarConfiguracionDesdeFirebase(cantoId) {
             }
             console.log("✅ [LocalStorage] Sincronizado con éxito desde la nube.");
             // Marcamos que la sincronización ocurrió para evitar que el setTimeout de setting.js pise los datos
+
+
+            // --- PARTE B: Preferencias Globales (Expandir Todo, Idioma, etc.) ---
+        const prefRef = doc(db, "usuarios", auth.currentUser.uid, "configuracion", "preferencias");
+        const prefSnap = await getDoc(prefRef);
+
+        if (prefSnap.exists()) {
+            const prefs = prefSnap.data();
+            
+            // Descargamos específicamente 'pref-expandir-todo'
+            if (prefs["pref-expandir-todo"] !== undefined) {
+                localStorage.setItem('pref-expandir-todo', prefs["pref-expandir-todo"]);
+                console.log("📂 [Firebase] Estado de 'Expandir Todo' sincronizado:", prefs["pref-expandir-todo"]);
+            }
+            
+            // También puedes bajar el idioma si quieres asegurar consistencia
+            if (prefs["pref-lang"]) localStorage.setItem('pref-lang', prefs["pref-lang"]);
+
+            if (prefs["pref-font-size"]) localStorage.setItem("pref-font-size", prefs["pref-font-size"]);
+
+            console.log("🌍 [Preferencias] Idioma y estilos sincronizados.");
+        }
+
+        // FINALIZACIÓN --- PARTE B: Preferencias Globales (Expandir Todo, Idioma, etc.) ---
+
             window._uiYaSincronizada = true;
 
             // --- 2. Sincronizar Notas y URLs personales ---
@@ -144,6 +176,11 @@ export async function sincronizarConfiguracionDesdeFirebase(cantoId) {
         }
     } catch (e) {
         console.error("❌ Error al descargar configuración:", e);
+    } finally {
+        setTimeout(() => {
+            window.bloqueoSincronizacion = false;
+            console.log("🔓 Bloqueo GLOBAL desactivado");
+        }, 1500);
     }
 }
 
@@ -153,6 +190,12 @@ export async function sincronizarConfiguracionDesdeFirebase(cantoId) {
 // en la ruta: usuarios/UID/configuracion/preferencias
 // =====================================================================
 export async function guardarPreferenciasGlobales() {
+
+    if (bloqueoSincronizacion) {
+        console.log("🚫 Subida cancelada: Se está sincronizando desde la nube.");
+        return; 
+    }
+
     if (!auth.currentUser) return;
 
     // Mapeamos lo que hay en LocalStorage a las llaves reales de tu Firebase

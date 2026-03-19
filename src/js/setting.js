@@ -1,3 +1,10 @@
+// ==========================================
+// PROTECCIÓN INICIAL CONTRA SOBREESCRITURA
+// ==========================================
+if (typeof window.bloqueoSincronizacion === 'undefined') {
+    window.bloqueoSincronizacion = true; // Bloqueamos por defecto al cargar
+    console.log("🛡️ [Sistema] Bloqueo inicial activado preventivamente.");
+}
 
 {
 const urlParams = new URLSearchParams(window.location.search);
@@ -207,16 +214,17 @@ window.tabsConfig = [
                     }
                 },
                 {
-    id: 'set-expandir-canto',
-    label: 'Expandir Todo por Defecto', 
-    tipo: 'switch', 
-    storageKey: 'pref-expandir-todo',
-    default: false,
-    accion: (val) => {
-        localStorage.setItem('pref-expandir-todo', val);
-        console.log("Configuración guardada: Expandir todo =", val);
-    }
-},
+                    id: 'set-expandir-canto',
+                    label: 'Expandir Todo por Defecto', 
+                    tipo: 'switch', 
+                    storageKey: 'pref-expandir-todo',
+                    default: false,
+                    hidden: currentCantoId === 'global',
+                    accion: (val) => {
+                        localStorage.setItem('pref-expandir-todo', val);
+                        console.log("Configuración guardada: Expandir todo =", val);
+                    }
+                },
 
 
 { 
@@ -412,7 +420,7 @@ window.generarContenidoSettings = function() {
 
     const tabsContent = tabsConfig.map((tab, index) => `
         <div id="${tab.id}" class="tab-panel ${index === 0 ? 'active' : ''}">
-            ${tab.secciones.map(opt => {
+            ${tab.secciones.filter(opt => !opt.hidden).map(opt => {
                 // 1. Intentar obtener el valor del LocalStorage
                 const valorGuardado = opt.storageKey ? localStorage.getItem(opt.storageKey) : null;
                 
@@ -691,17 +699,53 @@ window.actualizarValoresUI = () => {
             }
         }
     });
+
+
+    // ==========================================
+    // Mover Switch de expandir
+    // ==========================================
+    const expandirTodoStorage = localStorage.getItem('pref-expandir-todo');
+    const checkExpandir = document.getElementById('pref-expandir-todo'); 
+
+    if (checkExpandir && expandirTodoStorage !== null) {
+        const estadoBool = (expandirTodoStorage === 'true');
+        
+        // Forzamos un micro-delay para que el DOM se asiente
+        setTimeout(() => {
+            checkExpandir.checked = estadoBool;
+            
+            // Disparamos el evento nativo
+            checkExpandir.dispatchEvent(new Event('change', { bubbles: true }));
+            
+            // Si usas jQuery o algún framework que necesite trigger manual:
+            // $(checkExpandir).trigger('change'); 
+
+            console.log("🔧 UI: Switch 'Expandir Todo' forzado a:", estadoBool);
+        }, 100); 
+    }
+
 };
 
-// En setting.js
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        // Solo ejecuta la carga local si Firebase NO ha marcado el éxito todavía
-        if (!window._uiYaSincronizada) {
-            console.log("⚠️ Firebase tardó demasiado o no hay sesión, cargando local...");
-            window.actualizarValoresUI();
-        }
-    }, 2500); // Un segundo de cortesía para la nube
-});
+// ======================================================
+// Esperando carga de la nube
+// ======================================================
+        document.addEventListener('DOMContentLoaded', () => {
+            // Damos un margen de 2.5 segundos para que Firebase responda
+            setTimeout(() => {
+                // REVISIÓN DE LA BANDERA:
+                // Si Firebase ya sincronizó (true), detenemos la carga local.
+                if (window._uiYaSincronizada) {
+                    console.log("🛡️ [Local] Firebase ganó la carrera. Cancelando carga local para no pisar datos nuevos.");
+                    return; 
+                }
+
+                // Si Firebase NO ha respondido tras 2.5s, cargamos lo que haya en LocalStorage
+                console.log("⚠️ [Local] Firebase tardó o no hay sesión. Aplicando valores locales...");
+                if (typeof window.actualizarValoresUI === 'function') {
+                    window.actualizarValoresUI();
+                }
+            }, 2500); 
+        });
 }
+
 
