@@ -137,8 +137,7 @@ const allCantosData = [
                     { line: "LAS TRIBULACIONES,  (La,m,148)", sC: "as" },
                     { line: "NECESIDADES, ANGUSTIAS Y FATIGAS. (Re,m,18)(Mi,,322)", sC: "as" },
                 ]},
-        ],
-        lder: [
+        ], lder: [
             { line: "Hermanos, os hemos hablado con franqueza, (La,7,13)(Re,m,392)", sC: "tc" },
             { line: "os hemos hablado en toda verdad. (Mi,,301)", sC: "" },
             { line: "No unciros al yugo desigual con los paganos. (Re,m,15) (Mi,,385)" },
@@ -13691,9 +13690,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: YAHVEH, TÚ ERES MI DIOS
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔══════════════════════════════════════════╗
 ║           YO TE AMO, SEÑOR               ║
-╚════════════════════════════════════════════════════════╝  */
+╚══════════════════════════════════════════╝  */
    {
         id: "yoteamosenor",
         tt: "Yo Te Amo, Señor",
@@ -13767,9 +13766,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: YO TE AMO, SEÑOR
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔═══════════════════════════════════════════╗
 ║           YO VENGO A REUNIR               ║
-╚════════════════════════════════════════════════════════╝  */
+╚═══════════════════════════════════════════╝  */
    {
         id: "yovengoareunir",
         tt: "Yo Vengo A Reunir",
@@ -21201,7 +21200,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // SIGUIENTE CANTO DEBAJO
 /*
 ╔════════════════════════════════════════════════════════╗
-║           SUBA EL ESPOSO AL LEÑO DE SU TÁLAMO                ║
+║           SUBA EL ESPOSO AL LEÑO DE SU TÁLAMO          ║
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "subaelesposoallenodesutalamo",
@@ -21267,32 +21266,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // SIGUIENTE CANTO DEBAJO
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //CANTOS ESPECIALES
-
-
 /*
 ╔══════════════════════════════════╗
 ║           Salmo 96               ║
@@ -21382,7 +21356,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         dbno: "310",
         notes: "",
         mant: "No",
-        audioSrc: "https://audio.resucito.do/ohluzgozosa.mp3",
+        audioSrc: "https://audio.resucito.do/ohluzgozosa.mp3",        // pendiente canto...
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
               mobile: { v: 23, i: 1 }, // Para celular
@@ -21404,11 +21378,10 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Santo y feliz, (Sol,,13)(Do,,106)", sC: ""},
             { line: "Jesucristo, (Sol,,48)", sC: "as"},
 
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: OH LUZ GOZOSA
+    ], lder: []
+     }, // ULTIMA LINEA DEL CANTO: OH LUZ GOZOSA
 // SIGUIENTE CANTO DEBAJO
 
-// INCOVACION AL ESPIRITU SANTO
 /*
 ╔══════════════════════════════════════════════════════╗
 ║           INVOCACIÓN AL ESPIRITU SANTO               ║
@@ -21418,12 +21391,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         tt: "Invocación Al Espiritu Santo",
         title: "Invocación Al Espiritu Santo",
         subtitle: "Celebración",
-        category: ["Precatecumenado","Celebración",""],
+        category: ["Precatecumenado","Celebración"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "3",
         nCan: "",
         nCanURL: "",
-        dbno: "311",
+        dbno: "211",
         notes: "",
         mant: "No",
         audioSrc: "https://audio.resucito.do/invocacionalespiritusanto.mp3",
@@ -21444,14 +21417,15 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "OH SEÑOR, ENVIA TU ESPIRITU,, (Mi,m,19)(La,m,133)(Mi,m,311)", sC: "ta as"},
             { line: "QUE RENUEVE LA FAZ, (Sol,,13)(Do,,152)(La,m,237)", sC: "as"},
             { line: "DE LA TIERRA, (Mi,m,46)(Si,7,83)(Mi,m,137)", sC: "as"},
-    ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: INVOCACIÓN AL ESPIRITU SANTO
+    ], lder: []
+},
+// ULTIMA LINEA DEL CANTO: INVOCACIÓN AL ESPIRITU SANTO
 // SIGUIENTE CANTO DEBAJO
 
 /*
-╔════════════════════════════════════════════════════════╗
+╔══════════════════════════════════════════════╗
 ║           CANTO DE LOS NUMEROS               ║
-╚════════════════════════════════════════════════════════╝  */
+╚══════════════════════════════════════════════╝  */
    {
         id: "cantodelosnumeros",
         tt: "Canto De Los Numeros",
@@ -21464,7 +21438,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         nCanURL: "",
         dbno: "300",
         notes: "",
-        mant: "Si",
+        mant: "No",
         audioSrc: "https://audio.resucito.do/cantodelosnumeros.mp3",
 
 // Nueva propiedad para la velocidad de desplazamiento

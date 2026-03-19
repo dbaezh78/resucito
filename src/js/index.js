@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "adviento", "navidad", "pascua", "pentecostes",
         "virgen-maria",
         "aclamacion", "salmodias", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
-        "cuaresma"
+        "cuaresma", "celebracion"
     ];
 
     // Mapeo de nombres normalizados a sus nombres canónicos para CATEGORÍAS
@@ -59,7 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "nuevo-testamento": "Nuevo Testamento",
         "antiguo-testamento": "Antiguo Testamento",
         "cuaresma": "Cuaresma",
+        "celebracion": "Celebración"
     };
+
 
     // *** INICIO DE CÓDIGO NUEVO PARA CARGAR CSS DINÁMICO ***
     // Función para crear y agregar dinámicamente un link de CSS al head

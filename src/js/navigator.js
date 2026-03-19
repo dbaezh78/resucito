@@ -297,16 +297,16 @@ function cerrarModalConfiguracion() {
                     
                     // Verificamos la bandera global
                     if (window.cambioEnExpandir === true) {
-                        console.log("🔄 Recargando por cambio en Expandir...");
                         // IMPORTANTE: Primero recarga, el reset se hace solo al volver a cargar la web
                         window.cambioEnExpandir = false;
-
+                        console.log("🔘 Boton Expandir cambió, se recargando la pagina 🔄...");
+                        
                         //Recarga por haber cambiado el expansor.
                         window.location.reload(); 
+
                         console.log("🔔 Cambio detectado: Se Recargó la página 🔄!");
                     } else {
-                        console.log("✅ Sin cambios en 'Expandir'");
-                        console.log("✅ Cierre silencioso y sin recarga.");
+                        console.log("🔘 Boton Expandir no ha cambiado, Cierre silencioso y sin recarga.");
                     }
         }, 300); // 300ms coincide con la transición CSS
 }
