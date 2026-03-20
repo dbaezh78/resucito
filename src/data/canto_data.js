@@ -13721,14 +13721,14 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "tú eres mi liberador, tú eres mi Dios., (Sol,,14)(Fa#,,327)", sC: ""},
             { line: "Yo te amo, yo te amo, Señor., (Sol,,63)(Fa#,,255)", sC: ""},
             { line: "", sC: "mheight0"}, // Espacio Generado para separar contenido
-            { line: "[Violin *]", sC: "fontstyle", color: "red"}, // Espacio Generado para separar contenido
+            { line: "[Violin *]", sC: "fontstyle", color: "var(--Rojo-Leccionario)"}, // Espacio Generado para separar contenido
             { line: "", sC: "mheight2"}, // Espacio Generado para separar contenido
             { line: "LAS OLAS DE LA MUERTE ME ENVOLVÍAN,, (Re,,11)(Si,m,369)", sC: "ta as"},
             { line: "ME ESPANTABAN LAS TROMBAS DE BELIAL,, (Sol,,117)(Re,,399)", sC: "as"},
             { line: "ME RODEABAN LOS LAZOS DEL SEOL,, (La,,96)(Sol,,338)", sC: "as"},
             { line: "HABÍA CAÍDO EN LOS CEPOS DE LA MUERTE., (Re,,379)", sC: "as"},
             { line: "", sC: "mheight0"}, // Espacio Generado para separar contenido
-            { line: "[Violin **]", sC: "fontstyle", color: "red"}, // Espacio Generado para separar contenido
+            { line: "[Violin **]", sC: "fontstyle", color: "var(--Rojo-Leccionario)"}, // Espacio Generado para separar contenido
             { line: "", sC: "mheight2"}, // Espacio Generado para separar contenido
             { line: "Clamé al Señor en mi angustia,, (Fa#,,15)", sC: "tc"},
             { line: "a mi Dios, a mi Dios invoqué,, (Si,m,263)", sC: ""},
@@ -13964,21 +13964,21 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Contenido del lado izquierdo del canto,
     lizq: [ 
             { line: "", sC: "cantosliturgicos", color: "#544d47"},
-            { line: "Modelo I ", sC: "as left", color: "rgb(196 76 75)"},
+            { line: "Modelo I ", sC: "as left", color: "var(--Rojo-Leccionario)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Te lo pedimos Señor., (Sol,,15)(Re,,193)(Sol,,236)", sC: "tc"},
             { line: "TE LO PEDIMOS SEÑOR., (La,m,15)(Mi,m,194)(Si,7,240)(Mi,m,287)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Modelo II ", sC: "as left", color: "rgb(196 76 75)"},
+            { line: "Modelo II ", sC: "as left", color: "var(--Rojo-Leccionario)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ESCÚCHANOS, OH SEÑOR., (Mi,m,15)(Re,,154)(Mi,m,229)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Modelo III ", sC: "as left", color: "rgb(196 76 75)"},
-            { line: "Misma música Modelo I", sC: "mmmi", color: "gray"},
+            { line: "Modelo III ", sC: "as left", color: "var(--Rojo-Leccionario)"},
+            { line: "Misma música Modelo I", sC: "mmmi", color: "var(--Referencia-Texto)"},
             { line: "ACUÉRDATE DE NOSOTROS,, (Sol,,15)(Re,,209)(Sol,,240)", sC: "ta as"},
             { line: "AHORA QUE ESTÁS EN TU REINO., (La m,,15)(Mi m,,262)(Si 7,,305)(Mi m,,345)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Modelo IV ", sC: "as left", color: "rgb(196 76 75)"},
+            { line: "Modelo IV ", sC: "as left", color: "var(--Rojo-Leccionario)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "OYE, PADRE, EL GRITO DE TU PUEBLO, (Mi,m,15)(La,m,70)(Si,7,139)(Mi,m,310)", sC: "ta as"},
     ], lder: [
@@ -14071,8 +14071,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=bendiciondelagua",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Modelo I", sC: "as", color: "rgb(196 76 75)"},
-            { line: "La estrofa que hace el cantor se canta con la, melodía del «Aleluya interleccional - Modelo I».", sC: "fsize", color: "gray"},
+            { line: "Modelo I", sC: "as", color: "var(--Rojo-Leccionario)"},
+            { line: "La estrofa que hace el cantor se canta con la, melodía del «Aleluya interleccional - Modelo I».", sC: "fsize", color: "var(--Referencia-Texto)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Gloria a ti, oh Cristo,, (Sol,,14)(Do,,158)", sC: "tc"},
             { line: "Rey de eterna gloria,, (Re,,162)", sC: ""},
@@ -14091,8 +14091,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "REY DE ETERNA GLORIA,, (Re,,194)", sC: "as"},
             { line: "REY DE ETERNA GLORIA., (Sol,,194)", sC: "as"},  ]},
     ], lder: [
-            { line: "Modelo II", sC: "as", color: "rgb(196 76 75)"},
-            { line: "Toda la antífona se canta con la misma melodía del «Aleluya interleccional - Modelo I».", sC: "fsize", color: "gray"},
+            { line: "Modelo II", sC: "as", color: "var(--Rojo-Leccionario)"},
+            { line: "Toda la antífona se canta con la misma melodía del «Aleluya interleccional - Modelo I».", sC: "fsize", color: "var(--Referencia-Texto)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Gloria al Señor, gloria al Señor,, (Sol,,14)", sC: "tc"},
             { line: "gloria al Señor, gloria al Señor,, (Do,,121)(Re,,272)", sC: ""},
@@ -14454,7 +14454,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=credo",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "ESPAÑOL", sC: "as", color: "red"},
+            { line: "ESPAÑOL", sC: "as", color: "var(--Rojo-Leccionario)"},
             { line: "", sC: "hr"},
             { line: "Cordero de Dios,, (La,m,20)", sC: "tc"},
             { line: "que quitas el pecado del mundo,, (Sol,,69)(La,m,264)", sC: ""},
@@ -14469,7 +14469,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "DANOS LA PAZ,, (Fa,,18)(Mi,,121)", sC: "as"},
             { line: "DANOS LA PAZ., (Fa,,18)(Mi,,121)", sC: "as"},
     ], lder: [
-            { line: "LATÍN", sC: "as", color: "red"},    
+            { line: "LATÍN", sC: "as", color: "var(--Rojo-Leccionario)"},    
             { line: "", sC: "",},    
             { line: "Agnus Dei,, (La,m,20)", sC: "tc"},
             { line: "qui tollis peccata mundi:, (Sol,,47)(La,m,264)", sC: ""},
@@ -14691,8 +14691,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)", sC: "as sub"},
             { line: "Santa Teresa de Jesús. ", sC: ""},
             { line: "\u200B      \"              \"              \" ", sC: "sub"},
-            { line: "\u200B  En las letanías se pueden añadir algunos nombres de santos, \n especialmente el del titular de la iglesia y los de los patronos \n del lugar y de los que van a ser bautizados. ", sC: "redc", color: "red"},
-//          { line: "En las letanías se pueden añadir algunos nombres de santos, especialmente el del titular de la iglesia y los de los patronos del lugar y de los que van a ser bautizados. ", sC: "redc", color: "red"},
+            { line: "\u200B  En las letanías se pueden añadir algunos nombres de santos, \n especialmente el del titular de la iglesia y los de los patronos \n del lugar y de los que van a ser bautizados. ", sC: "redc", color: "var(--Rojo-Leccionario)"},
+//          { line: "En las letanías se pueden añadir algunos nombres de santos, especialmente el del titular de la iglesia y los de los patronos del lugar y de los que van a ser bautizados. ", sC: "redc", color: "var(--Rojo-Leccionario)"},
             { line: "Santos y santas de Dios, ", sC: "height"},
             { line: "RUEGA POR NOSOTROS.,", sC: "as sub"},
             { line: "", sC: "",},
@@ -14712,15 +14712,15 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "\u200B         \"              \" ", sC: "sub"},
             { line: "Nosotros que somos pecadores., (Sol,,14)(Mi,m,272)", sC: "tc"},
             { line: "TE ROGAMOS, ÓYENOS., (Do,,12)(Re,7,171)", sC: "as sub der"},
-            { line: "Si hay bautizados, ", sC: "redc", color: "red"},
+            { line: "Si hay bautizados, ", sC: "redc", color: "var(--Rojo-Leccionario)"},
             { line: "Para que regeneres a, (Sol,,14)", sC: "tc"},
-            { line: "... N/. ", sC: "sub2", color: "red"},
+            { line: "... N/. ", sC: "sub2", color: "var(--Rojo-Leccionario)"},
             { line: "\u200B                 con la gracia del Bautismo., (Mi,m,334)", sC: "height"},
             { line: "\u200B             \"              \" ", sC: "sub"},
             { line: "Para que regeneres a estos, (Sol,,14)", sC: "tc"},
             { line: "\u200B   elegidos con la gracia del Bautismo., (Mi,m,335)", sC: "height"},
             { line: "\u200B             \"              \" ", sC: "sub"},
-            { line: "Si no hay bautizados, ", sC: "redc", color: "red"},
+            { line: "Si no hay bautizados, ", sC: "redc", color: "var(--Rojo-Leccionario)"},
             { line: "Para que santifiques esta agua, (Sol,,14)", sC: "tc"},
             { line: "\u200B   en la que renacerán tus nuevos hijos., (Mi,m,342)", sC: "height"},
             { line: "\u200B             \"              \" ", sC: "sub"},
@@ -15112,7 +15112,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Prefacio*", sC: "ttgray", color: "gray"},
+            { line: "Prefacio*", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "El Señor esté con vosotros., (Sol,,11)(La,m,211)", sC: "pa"},
             { line: "Y CON TU ESPÍRITU., (Sol,,12)(La ,m,142)", sC: "ta"},
@@ -15156,7 +15156,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // *******************************************************************************************
 
 // SANTO PALOMERA 65 - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_santo65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_santo65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -15193,7 +15193,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "asamblea_SantoHebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SantoHebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -15238,7 +15238,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // SANTO Palestina 74 - PENDIENTE
 
-            { type: "collapsible-block", id: "asamblea_SantoPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SantoPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
             { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
@@ -15274,7 +15274,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Roma 77 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_SANTORoma77", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SANTORoma77", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
@@ -15325,7 +15325,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
 
             { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
             { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
@@ -15359,7 +15359,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_Salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_Salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
@@ -15396,19 +15396,19 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Transición, ", sC: "ttgray", color: "gray"},
+            { line: "Transición, ", sC: "ttgray", color: "var(--Referencia-Texto)"},
             
             { line: "Santo eres en verdad, Señor,, ", sC: "nSpace atext", color: "#C24F4D"},
             { line: "fuente de toda santidad:, ", sC: "nSpace atext", color: "#C24F4D"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Santifica estos dones con la efusión, ", sC: "pa nSpace atext", color: "#C24F4D"},
             { line: "de tu Espíritu, de manera que sean para, ", sC: "nSpace atext", color: "#C24F4D"},
             { line: "nosotros Cuerpo y ✠ Sangre, ", sC: "nSpace atext", color: "#C24F4D"},
             { line: "de Jesucristo,nuestro Señor., ", sC: "nSpace atext", color: "#C24F4D"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Relato de la Institución,", sC: "ttgray", color: "gray"},
+            { line: "Relato de la Institución,", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
             { line: "El cual, cuando iba a ser entregado a su Pasión,, (Re,m,21)", sC: "pa"},
@@ -15432,7 +15432,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "para el perdón de los pecados., (Re,m,255)", sC: ""},
             { line: "Haced esto como mi memorial., (La,7,83)(Re,m,280)", sC: ""},
 
-            { line: "Aclamación,", sC: "ttgray", color: "gray"},
+            { line: "Aclamación,", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Este es el sacramento de nuestra fe., (Sol,m,23)(La,7,339)", sC: "pa"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Re,m,19)", sC: "ta as"},
@@ -15441,7 +15441,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "¡MARANA THÁ!, (La,7,126)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡Ven, Señor Jesús!, (Re,m,19)", sC: "tc"},
-            { line: "Memorial y Ofrenda", sC: "ttgray", color: "gray"},
+            { line: "Memorial y Ofrenda", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Así, pues, Padre, al celebrar ahora, (Sol,,15)", sC: "pa"},
             { line: "el memorial de la muerte, ", sC: ""},
             { line: "y resurrección de tu Hijo,, (Mi,m,215)", sC: ""},
@@ -15449,7 +15449,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y el cáliz de salvación,, (Mi,m,19)", sC: ""},
             { line: "y te damos gracias porque nos haces dignos, (La,m,19)(Mi,m,206)", sC: ""},
             { line: "de servirte en tu presencia., ", sC: ""},
-            { line: "Epíclesis, ", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis, ", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Te pedimos humildemente, (Sol,,13)", sC: ""},
             { line: "que el Espíritu Santo congregue en la unidad, (Si,m,15)", sC: ""},
             { line: "a cuantos participamos, (La,m,15)", sC: ""},
@@ -15469,7 +15469,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y de todos los que han muerto, (La,m,19)", sC: ""},
             { line: "en tu misericordia; (Mi,m,132)", sC: ""},
             { line: "admítelos a contemplar la luz de tu rostro., (Sol,,13)(Si,m,212)(Mi,m,360)", sC: ""},
-            { line: "Conmemoración de los Santos", sC: "ttgray", color: "gray"},
+            { line: "Conmemoración de los Santos", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Ten misericordia de todos nosotros,, (Sol,,15)(Mi,m,250)", sC: ""},
             { line: "y así, con María, la Virgen Madre de Dios,, (La,m,15)", sC: ""},
             { line: "su esposo San José, los apóstoles,(Mi,m,15)(La,m,250)", sC: ""},
@@ -15480,7 +15480,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y cantar tus alabanzas., (La,,15)(Mi,m,167) ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Doxología y Conclusión de la Plegaria Eucarística", sC: "ttgray", color: "gray"},
+            { line: "Doxología y Conclusión de la Plegaria Eucarística", sC: "ttgray", color: "var(--Referencia-Texto)"},
 
             { line: "Por Cristo, con Cristo y en Cristo,(Sol,,15)", sC: "pa"},
             { line: "a ti, Dios Padre omnipotente, (Si,m,15)", sC: ""},
@@ -15490,8 +15490,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "AMÉN, AMÉN, AMÉN., (Sol,,15)(Si,m,101)(La,,135)(Mi,m,181)", sC: "ta as"},
             { line: "", sC: "space1941"}, // Espacio Generado para separar contenido
 
-            { line: "Cuando el 'Memorial y la Ofrenda' se hace recitada,", sC: "ttgray", color: "gray"},
-            { line: "puede cantarse la Doxología con la siguiente melodía:", sC: "ttgray", color: "gray"},
+            { line: "Cuando el 'Memorial y la Ofrenda' se hace recitada,", sC: "ttgray", color: "var(--Referencia-Texto)"},
+            { line: "puede cantarse la Doxología con la siguiente melodía:", sC: "ttgray", color: "var(--Referencia-Texto)"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,15)(Re,7,272)", sC: "pa"},
@@ -15543,7 +15543,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=plegariaeucaristicaiimodeloip2",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Prefacio", sC: "ttgray", color: "gray"},
+            { line: "Prefacio", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "El Señor esté con vosotros., (Sol,,11)(La,m,211)", sC: "pa"},
             { line: "Y CON TU ESPÍRITU., (Sol,,12)(La ,m,142)", sC: "ta"},
             { line: "Levantemos el corazón., (Fa,,12)(Mi,,206)", sC: "pa"},
@@ -15588,7 +15588,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // *******************************************************************************************
 
 // SANTO PALOMERA 65 - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -15625,7 +15625,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -15670,7 +15670,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // SANTO Palestina 74 - PENDIENTE
 
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
             { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
@@ -15706,7 +15706,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Roma 77 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
@@ -15757,7 +15757,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
 
             { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
             { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
@@ -15791,7 +15791,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
@@ -15827,10 +15827,10 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // ******************************************************************************************            
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Transición, ", sC: "ttgray", color: "gray"},
+            { line: "Transición, ", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Santo eres en verdad, Señor,, ", sC: "nSpace", color: "#C24F4D"},
             { line: "fuente de toda santidad:, ", sC: "nSpace", color: "#C24F4D"},
-            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Santifica estos dones con la efusión, ", sC: "pa nSpace", color: "#C24F4D"},
             { line: "de tu Espíritu, de manera que sean para, ", sC: "nSpace", color: "#C24F4D"},
             { line: "nosotros Cuerpo y ✠ Sangre, ", sC: "nSpace", color: "#C24F4D"},
@@ -15865,7 +15865,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=plegariaeucaristicaiimodeloip3",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Relato de la Institución,", sC: "ttgray", color: "gray"},
+            { line: "Relato de la Institución,", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "El cual, cuando iba a ser entregado a su Pasión,, (Re,m,21)", sC: "pa"},
             { line: "voluntariamente aceptada, tomó el pan,, ", sC: ""},
             { line: "y elevando los ojos a Ti, Padre, Padre,, ", sC: ""},
@@ -15887,7 +15887,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "para el perdón de los pecados., (Re,m,255)", sC: ""},
             { line: "Haced esto como mi memorial., (La,7,83)(Re,m,280)", sC: ""},
     ], lder: [
-            { line: "Aclamación,", sC: "ttgray", color: "gray"},
+            { line: "Aclamación,", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Este es el sacramento de nuestra fe., (Sol,m,23)(La,7,339)", sC: "pa"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Re,m,19)", sC: "ta as"},
@@ -15896,7 +15896,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "¡MARANA THÁ!, (La,7,126)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡Ven, Señor Jesús!, (Re,m,19)", sC: "tc"},
-            { line: "Memorial y Ofrenda", sC: "ttgray", color: "gray"},
+            { line: "Memorial y Ofrenda", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Así, pues, Padre, al celebrar ahora, (Sol,,15)", sC: "pa"},
             { line: "el memorial de la muerte, ", sC: ""},
             { line: "y resurrección de tu Hijo,, (Mi,m,215)", sC: ""},
@@ -15904,7 +15904,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y el cáliz de salvación,, (Mi,m,19)", sC: ""},
             { line: "y te damos gracias porque nos haces dignos, (La,m,19)(Mi,m,206)", sC: ""},
             { line: "de servirte en tu presencia., ", sC: ""},
-            { line: "Epíclesis", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Te pedimos humildemente, (Sol,,13)", sC: ""},
             { line: "que el Espíritu Santo congregue en la unidad, (Si,m,15)", sC: ""},
             { line: "a cuantos participamos, (La,m,15)", sC: ""},
@@ -15953,7 +15953,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y de todos los que han muerto, (La,m,19)", sC: ""},
             { line: "en tu misericordia; (Mi,m,132)", sC: ""},
             { line: "admítelos a contemplar la luz de tu rostro., (Sol,,13)(Si,m,212)(Mi,m,360)", sC: ""},
-            { line: "Conmemoración de los Santos", sC: "ttgray", color: "gray"},
+            { line: "Conmemoración de los Santos", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Ten misericordia de todos nosotros,, (Sol,,15)(Mi,m,250)", sC: ""},
             { line: "y así, con María, la Virgen Madre de Dios,, (La,m,15)", sC: ""},
             { line: "su esposo San José, los apóstoles,(Mi,m,15)(La,m,250)", sC: ""},
@@ -15964,7 +15964,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y cantar tus alabanzas., (La,,15)(Mi,m,167) ", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
     ], lder: [
-            { line: "Doxología y Conclusión de la Plegaria Eucarística", sC: "ttgray", color: "gray"},
+            { line: "Doxología y Conclusión de la Plegaria Eucarística", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Por Cristo, con Cristo y en Cristo,(Sol,,15)", sC: "pa"},
             { line: "a ti, Dios Padre omnipotente, (Si,m,15)", sC: ""},
             { line: "en la unidad del Espíritu Santo, (La,m,15)", sC: ""},
@@ -15973,8 +15973,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "AMÉN, AMÉN, AMÉN., (Sol,,15)(Si,m,101)(La,,135)(Mi,m,181)", sC: "ta as"},
             { line: "", sC: "space1941"}, // Espacio Generado para separar contenido
 
-            { line: "Cuando el 'Memorial y la Ofrenda' se hace recitada,", sC: "ttgray", color: "gray"},
-            { line: "puede cantarse la Doxología con la siguiente melodía:", sC: "ttgray", color: "gray"},
+            { line: "Cuando el 'Memorial y la Ofrenda' se hace recitada,", sC: "ttgray", color: "var(--Referencia-Texto)"},
+            { line: "puede cantarse la Doxología con la siguiente melodía:", sC: "ttgray", color: "var(--Referencia-Texto)"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,15)(Re,7,272)", sC: "pa"},
@@ -16070,7 +16070,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // *******************************************************************************************
 
 // SANTO PALOMERA 65 - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_SantoPalomeras65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SantoPalomeras65", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -16107,7 +16107,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "asamblea_SANTOMelodíahebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SANTOMelodíahebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -16152,7 +16152,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // SANTO Palestina 74 - PENDIENTE
 
-            { type: "collapsible-block", id: "asamblea_SANTOPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SANTOPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
             { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
@@ -16188,7 +16188,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Roma 77 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_SANTORoma77", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SANTORoma77", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
@@ -16239,7 +16239,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_SANTO1982", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
 
             { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
             { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
@@ -16273,7 +16273,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_Salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_Salmo_1988", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
@@ -16312,19 +16312,19 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
             // Segunda parte del canto completo
 
-            { line: "Transición, ", sC: "ttgray", color: "gray"},
-            { line: "Con la melodía de «El Señor anuncia una noticia». , ", sC: "ttgray top1 tx", color: "gray"},
+            { line: "Transición, ", sC: "ttgray", color: "var(--Referencia-Texto)"},
+            { line: "Con la melodía de «El Señor anuncia una noticia». , ", sC: "ttgray top1 tx", color: "var(--Referencia-Texto)"},
             { line: "Santo eres en verdad, Señor,, (Sol,,14)", sC: "pa"},
             { line: "fuente de toda santidad:, (Mi,m,213)", sC: ""},
-            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "santifica estos dones, (La,m,20)", sC: ""},
             { line: "con la efusión de tu Espíritu,, (Mi,m,20)", sC: ""},
             { line: "de manera que sean para nosotros, (Sol,,14)", sC: ""},
             { line: "Cuerpo y,(Si,m,20)", sC: ""},
-            { line: "✠", sC: "sub cruz", color: "red"},
+            { line: "✠", sC: "sub cruz", color: "var(--Rojo-Leccionario)"},
             { line: "Sangre", sC: "sub sangre"},
             { line: "de Jesucristo, Nuestro Señor., (Mi,m,90)", sC: ""},
-            { line: "Relato de la Institución", sC: "ttgray", color: "gray"},
+            { line: "Relato de la Institución", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "El cual, cuando iba a ser entregado a su Pasión,, (Sol,,14)", sC: "pa"},
             { line: "voluntariamente aceptada,, (Mi,m,223)", sC: ""},
             { line: "tomó pan,, (La,m,20)", sC: ""},
@@ -16350,7 +16350,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "para el perdón, (La,,20)", sC: ""},
             { line: "de los pecados., (Mi,m,20)", sC: ""},
             { line: "Haced esto en conmemoración mía., (Sol,,14)(Si,m,129)(Mi,m,320)", sC: ""},
-            { line: "Aclamación, ", sC: "ttgray", color: "gray"},
+            { line: "Aclamación, ", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Este es el sacramento de nuestra fe., (Sol,,14)", sC: "pa"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Sol,,14)", sC: "ta as"},
@@ -16360,25 +16360,25 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
             // TERCERA parte del canto completo
 
-            { line: "Memorial y Ofrenda", sC: "ttgray", color: "gray"},
+            { line: "Memorial y Ofrenda", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Así, pues, Padre, al celebrar ahora el memorial, (Sol,,14)", sC: "pa"},
             { line: "de la muerte y resurrección de tu Hijo,, (Mi,m,336)", sC: ""},
             { line: "te ofrecemos el pan de vida, (La,m,20)", sC: ""},
             { line: "y el cáliz de salvación,, (Mi,m,20)", sC: ""},
             { line: "y te damos gracias, (La,m,20)", sC: ""},
             { line: "porque nos haces dignos de servirte en tu presencia., (Mi,m,20)", sC: ""},
-            { line: "Epíclesis", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Te pedimos humildemente, (Sol,,14)", sC: ""},
             { line: "que el Espíritu Santo congregue en la unidad, (Si,m,20)", sC: ""},
             { line: "a cuantos participamos, (La,m,20)", sC: ""},
             { line: "del Cuerpo y Sangre de Cristo., (Mi,m,20)", sC: ""},
-            { line: "Intercesiones", sC: "ttgray", color: "gray"},
+            { line: "Intercesiones", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Acuérdate, Señor, de tu Iglesia, (Sol,,14)", sC: "pa"},
             { line: "extendida por toda la tierra;, (Mi,m,227)", sC: ""},
             { line: "y con el Papa ... (La,m,20)", sC: ""},
-            { line: "N/, ", sC: "adl1 sub", color: "red"},
+            { line: "N/, ", sC: "adl1 sub", color: "var(--Rojo-Leccionario)"},
             { line: "con nuestro obispo ..., (Mi,m,20)", sC: ""},
-            { line: "N/, ", sC: "adl2 sub", color: "red"},
+            { line: "N/, ", sC: "adl2 sub", color: "var(--Rojo-Leccionario)"},
             { line: "y de todos los que en ella cuidan de tu pueblo,, (La,m,20)", sC: ""},
             { line: "llévala a su perfección por la caridad., (Sol,,14)(Si,m,196)(Mi,m,336)", sC: ""},
             { line: "Acuérdate también de nuestros hermanos, (Sol,,14)", sC: ""},
@@ -16386,7 +16386,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y de todos los que han muerto, (La,m,20)", sC: ""},
             { line: "en tu misericordia;, (Mi,m,133)", sC: ""},
             { line: "admítelos a contemplar la luz de tu rostro., (Sol,,14)(Si,m,211)(Mi,m,366)", sC: ""},
-            { line: "Conmemoración de los Santos", sC: "ttgray", color: "gray"},
+            { line: "Conmemoración de los Santos", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Ten misericordia de todos nosotros,, (Sol,,14)(Mi,m,289)", sC: ""},
             { line: "y así, con María, la Virgen Madre de Dios,, (La,m,20)", sC: ""},
             { line: "su esposo San José,, (Mi,m,177)", sC: ""},
@@ -16396,7 +16396,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "merezcamos, por tu Hijo Jesucristo,, (Sol,,14)", sC: ""},
             { line: "compartir la vida eterna, (Si,m,85)", sC: ""},
             { line: "y cantar tus alabanzas., (La,,62)(Mi,m,166)", sC: ""},
-            { line: "Doxología y Conclusión de la Plegaria Eucarística", sC: "ttgray", color: "gray"},
+            { line: "Doxología y Conclusión de la Plegaria Eucarística", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Ten misericordia de todos nosotros,, (Sol,,14)", sC: ""},
             { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,14)", sC: "pa"},
             { line: "a ti, Dios Padre omnipotente,, (Si,m,20)", sC: ""},
@@ -16487,7 +16487,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // *******************************************************************************************
 
 // SANTO PALOMERA 65 - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -16524,7 +16524,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -16569,7 +16569,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // SANTO Palestina 74 - PENDIENTE
 
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
             { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
@@ -16605,7 +16605,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Roma 77 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
@@ -16656,7 +16656,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
 
             { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
             { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
@@ -16690,7 +16690,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
@@ -16754,19 +16754,19 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=plegariaeucaristicaiimodeloiip3",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Transición, ", sC: "ttgray", color: "gray"},
-            { line: "Con la melodía de «El Señor anuncia una noticia». , ", sC: "ttgray top1 tx", color: "gray"},
+            { line: "Transición, ", sC: "ttgray", color: "var(--Referencia-Texto)"},
+            { line: "Con la melodía de «El Señor anuncia una noticia». , ", sC: "ttgray top1 tx", color: "var(--Referencia-Texto)"},
             { line: "Santo eres en verdad, Señor,, (Sol,,14)", sC: "pa"},
             { line: "fuente de toda santidad:, (Mi,m,213)", sC: ""},
-            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "santifica estos dones, (La,m,20)", sC: ""},
             { line: "con la efusión de tu Espíritu,, (Mi,m,20)", sC: ""},
             { line: "de manera que sean para nosotros, (Sol,,14)", sC: ""},
             { line: "Cuerpo y,(Si,m,20)", sC: ""},
-            { line: "✠", sC: "sub cruz", color: "red"},
+            { line: "✠", sC: "sub cruz", color: "var(--Rojo-Leccionario)"},
             { line: "Sangre", sC: "sub sangre"},
             { line: "de Jesucristo, Nuestro Señor., (Mi,m,90)", sC: ""},
-            { line: "Relato de la Institución", sC: "ttgray", color: "gray"},
+            { line: "Relato de la Institución", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "El cual, cuando iba a ser entregado a su Pasión,, (Sol,,14)", sC: "pa"},
             { line: "voluntariamente aceptada,, (Mi,m,223)", sC: ""},
             { line: "tomó pan,, (La,m,20)", sC: ""},
@@ -16792,7 +16792,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "para el perdón, (La,,20)", sC: ""},
             { line: "de los pecados., (Mi,m,20)", sC: ""},
             { line: "Haced esto en conmemoración mía., (Sol,,14)(Si,m,129)(Mi,m,320)", sC: ""},
-            { line: "Aclamación, ", sC: "ttgray", color: "gray"},
+            { line: "Aclamación, ", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Este es el sacramento de nuestra fe., (Sol,,14)", sC: "pa"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Sol,,14)", sC: "ta as"},
@@ -16830,25 +16830,25 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Memorial y Ofrenda", sC: "ttgray", color: "gray"},
+            { line: "Memorial y Ofrenda", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Así, pues, Padre, al celebrar ahora el memorial, (Sol,,14)", sC: "pa"},
             { line: "de la muerte y resurrección de tu Hijo,, (Mi,m,336)", sC: ""},
             { line: "te ofrecemos el pan de vida, (La,m,20)", sC: ""},
             { line: "y el cáliz de salvación,, (Mi,m,20)", sC: ""},
             { line: "y te damos gracias, (La,m,20)", sC: ""},
             { line: "porque nos haces dignos de servirte en tu presencia., (Mi,m,20)", sC: ""},
-            { line: "Epíclesis", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Te pedimos humildemente, (Sol,,14)", sC: ""},
             { line: "que el Espíritu Santo congregue en la unidad, (Si,m,20)", sC: ""},
             { line: "a cuantos participamos, (La,m,20)", sC: ""},
             { line: "del Cuerpo y Sangre de Cristo., (Mi,m,20)", sC: ""},
-            { line: "Intercesiones", sC: "ttgray", color: "gray"},
+            { line: "Intercesiones", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Acuérdate, Señor, de tu Iglesia, (Sol,,14)", sC: "pa"},
             { line: "extendida por toda la tierra;, (Mi,m,227)", sC: ""},
             { line: "y con el Papa ... (La,m,20)", sC: ""},
-            { line: "N/, ", sC: "adl1 sub", color: "red"},
+            { line: "N/, ", sC: "adl1 sub", color: "var(--Rojo-Leccionario)"},
             { line: "con nuestro obispo ..., (Mi,m,20)", sC: ""},
-            { line: "N/, ", sC: "adl2 sub", color: "red"},
+            { line: "N/, ", sC: "adl2 sub", color: "var(--Rojo-Leccionario)"},
             { line: "y de todos los que en ella cuidan de tu pueblo,, (La,m,20)", sC: ""},
             { line: "llévala a su perfección por la caridad., (Sol,,14)(Si,m,196)(Mi,m,336)", sC: ""},
             { line: "Acuérdate también de nuestros hermanos, (Sol,,14)", sC: ""},
@@ -16857,7 +16857,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y de todos los que han muerto, (La,m,20)", sC: ""},
             { line: "en tu misericordia;, (Mi,m,133)", sC: ""},
             { line: "admítelos a contemplar la luz de tu rostro., (Sol,,14)(Si,m,211)(Mi,m,366)", sC: ""},
-            { line: "Conmemoración de los Santos", sC: "ttgray", color: "gray"},
+            { line: "Conmemoración de los Santos", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Ten misericordia de todos nosotros,, (Sol,,14)(Mi,m,289)", sC: ""},
             { line: "y así, con María, la Virgen Madre de Dios,, (La,m,20)", sC: ""},
             { line: "su esposo San José,, (Mi,m,177)", sC: ""},
@@ -16867,7 +16867,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "merezcamos, por tu Hijo Jesucristo,, (Sol,,14)", sC: ""},
             { line: "compartir la vida eterna, (Si,m,85)", sC: ""},
             { line: "y cantar tus alabanzas., (La,,62)(Mi,m,166)", sC: ""},
-            { line: "Doxología y Conclusión de la Plegaria Eucarística", sC: "ttgray", color: "gray"},
+            { line: "Doxología y Conclusión de la Plegaria Eucarística", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Ten misericordia de todos nosotros,, (Sol,,14)", sC: ""},
             { line: "Por Cristo, con Cristo y en Cristo,, (Sol,,14)", sC: "pa"},
             { line: "a ti, Dios Padre omnipotente,, (Si,m,20)", sC: ""},
@@ -16906,7 +16906,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=plegariaeucaristicaivp1",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Prefacio, ", sC: "ttpeq", color: "gray"},
+            { line: "Prefacio, ", sC: "ttpeq", color: "var(--Referencia-Texto)"},
             { line: "El Señor esté con vosotros., (Sol,,14)(La,m,215)", sC: "pa"},
             { line: "Y CON TU ESPÍRITU., (Sol,,14)(La,m,142)", sC: "ta as"},
             { line: "Levantemos el corazón., (Fa,,12)(Mi,,205)", sC: "pa"},
@@ -16940,7 +16940,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // *******************************************************************************************
 
 // SANTO PALOMERA 65 - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -16977,7 +16977,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -17022,7 +17022,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // SANTO Palestina 74 - PENDIENTE
 
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
             { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
@@ -17058,7 +17058,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Roma 77 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO., (Sol,,16)(La,m,173)", sC: "as r11"},
@@ -17109,7 +17109,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
 
             { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
             { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
@@ -17143,7 +17143,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
@@ -17178,7 +17178,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // ******************************* FIN PROCLAMACIÓN DEL SANTO *******************************
 // ******************************************************************************************
 
-            { line: "Transición, ", sC: "ttgray", color: "gray"},
+            { line: "Transición, ", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Te alabamos, Padre santo, porque eres grande, (La,m,20)(Do,,403)", sC: "pa"},
             { line: "y porque hiciste todas las cosas, (Re,,119)", sC: ""},
             { line: "con sabiduría y amor., (La,m,189)", sC: ""},
@@ -17234,7 +17234,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "a fin de santificar todas las cosas,, ", sC: ""},
             { line: "llevando a plenitud su obra en el mundo., (La,m,44)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Y este mismo Espíritu, (Do,,10)", sC: "pa"},
             { line: "santifique, Señor,, (Re,,11)", sC: ""},
             { line: "estas ofrendas,, (La,m,92)", sC: ""},
@@ -17245,7 +17245,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // III TERCERA PARTE DEL IV PREFACIO
 
-            { line: "Relato de la Institución", sC: "ttgray", color: "gray"},
+            { line: "Relato de la Institución", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Porque él mismo, llegada la hora, (Do,,10)", sC: "pa"},
             { line: "en que había de ser glorificado por ti, Padre santo,, (La,m,354)", sC: ""},
             { line: "habiendo amado a los suyos, (Do,,10)", sC: ""},
@@ -17277,7 +17277,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Do,,10)", sC: "ta as"},
             { line: "PROCLAMAMOS TU RESURRECCIÓN,, (La,m,326)", sC: "as r7"},
             { line: "¡VEN, SEÑOR JESÚS!, (Fa,,10)(Mi,,168)", sC: "as"},
-            { line: "Memorial y Ofrenda", sC: "ttgray", color: "gray"},
+            { line: "Memorial y Ofrenda", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Por eso, nosotros, Señor, al celebrar ahora, (La,m,20)", sC: "pa"},
             { line: "el memorial de nuestra redención,, (Sol,,182)(La,m,310)", sC: ""},
             { line: "recordamos la muerte de Cristo, (Fa,,10)", sC: ""},
@@ -17301,7 +17301,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "seamos en Cristo, víctima para tu alabanza., (Mi,,25)", sC: ""},
             { line: "ALABANZA DE TU GLORIA,, (Mi7,,13)", sC: "ta as"},
             { line: "ALABANZA DE TU GLORIA., ", sC: "as"},
-            { line: "Intercesiones", sC: "ttgray", color: "gray"},
+            { line: "Intercesiones", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Acuérdate, Señor, de todos aquellos, (La,m,20)(Do,,218)", sC: ""},
             { line: "por quienes te ofrecemos este sacrificio;, ", sC: ""},
             { line: "de tu servidor el Papa...,(Re,m,22)", sC: ""},
@@ -17316,7 +17316,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "en la paz de Cristo, ", sC: ""},
             { line: "y de todos los difuntos cuya fe solo tú conociste., (Re,m,22)(Mi,,423)", sC: ""},
 
-            { line: "Conmemoración de los Santos", sC: "ttgray", color: "gray"},
+            { line: "Conmemoración de los Santos", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Padre misericordioso,, (La,m,20)", sC: ""},
             { line: "que todos tus hijos nos reunamos, (Re,m,22)", sC: ""},
             { line: "en la heredad de tu reino, ", sC: ""},
@@ -17328,7 +17328,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "te glorifiquemos por Cristo, Señor nuestro,, (Mi,,353)", sC: ""},
             { line: "por quien concedes al mundo, ", sC: ""},
             { line: "todos los bienes., (La,m,114)", sC: ""},
-            { line: "Doxología y Conclusión de la Plegaria Eucarística,", sC: "ttgray", color: "gray"},
+            { line: "Doxología y Conclusión de la Plegaria Eucarística,", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Por Cristo, con Cristo y en Cristo,, (Mi7,,16)", sC: ""},
             { line: "a ti Dios Padre omnipotente,, (Fa,,10)", sC: ""},
             { line: "en la unidad del Espíritu Santo,, (Mi7,,253)", sC: ""},
@@ -17370,7 +17370,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=plegariaeucaristicaivp2",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Prefacio", sC: "ttgray", color: "gray"},
+            { line: "Prefacio", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "El Señor esté con vosotros., (Sol,,14)(La,m,215)", sC: "pa"},
             { line: "Y CON TU ESPÍRITU., (Sol,,14)(La,m,142)", sC: "ta as"},
             { line: "Levantemos el corazón., (Fa,,12)(Mi,,205)", sC: "pa"},
@@ -17398,7 +17398,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "aclamamos tu nombre cantando:, (Re,,60)(Mi,,272)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "SANTO, SANTO, SANTO... ", sC: "as"},
-            { line: "Transición ", sC: "ttgray", color: "gray"},
+            { line: "Transición ", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Te alabamos, Padre santo, porque eres grande, (La,m,20)(Do,,403)", sC: "pa"},
             { line: "y porque hiciste todas las cosas, (Re,,119)", sC: ""},
             { line: "con sabiduría y amor., (La,m,189)", sC: ""},
@@ -17480,7 +17480,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "a fin de santificar todas las cosas,, ", sC: ""},
             { line: "llevando a plenitud su obra en el mundo., (La,m,44)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "gray"},
+            { line: "Epíclesis. Oración Consecratoria", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Y este mismo Espíritu, (Do,,10)", sC: "pa"},
             { line: "santifique, Señor,, (Re,,11)", sC: ""},
             { line: "estas ofrendas,, (La,m,92)", sC: ""},
@@ -17518,7 +17518,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=plegariaeucaristicaivp4",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Relato de la Institución", sC: "ttgray", color: "gray"},
+            { line: "Relato de la Institución", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Porque él mismo, llegada la hora, (Do,,10)", sC: "pa"},
             { line: "en que había de ser glorificado por ti, Padre santo,, (La,m,354)", sC: ""},
             { line: "habiendo amado a los suyos, (Do,,10)", sC: ""},
@@ -17550,7 +17550,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ANUNCIAMOS TU MUERTE, SEÑOR,, (Do,,10)", sC: "ta as"},
             { line: "PROCLAMAMOS TU RESURRECCIÓN,, (La,m,326)", sC: "as r1"},
             { line: "¡VEN, SEÑOR JESÚS!, (Fa,,10)(Mi,,168)", sC: "as"},
-            { line: "Memorial y Ofrenda", sC: "ttgray", color: "gray"},
+            { line: "Memorial y Ofrenda", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Por eso, nosotros, Señor, al celebrar ahora, (La,m,20)", sC: "pa"},
             { line: "el memorial de nuestra redención,, (Sol,,182)(La,m,310)", sC: ""},
             { line: "recordamos la muerte de Cristo, (Fa,,10)", sC: ""},
@@ -17601,7 +17601,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "seamos en Cristo, víctima para tu alabanza., (Mi,,25)", sC: ""},
             { line: "ALABANZA DE TU GLORIA,, (Mi7,,13)", sC: "ta as"},
             { line: "ALABANZA DE TU GLORIA. ", sC: "as"},
-            { line: "Intercesiones", sC: "ttgray", color: "gray"},
+            { line: "Intercesiones", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Acuérdate, Señor, de todos aquellos, (La,m,20)(Do,,218)", sC: ""},
             { line: "por quienes te ofrecemos este sacrificio; ", sC: ""},
             { line: "de tu servidor el Papa...,(Re,m,22)", sC: ""},
@@ -17616,7 +17616,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "en la paz de Cristo, ", sC: ""},
             { line: "y de todos los difuntos cuya fe solo tú conociste., (Re,m,22)(Mi,,423)", sC: ""},
     ], lder: [
-            { line: "Conmemoración de los Santos", sC: "ttgray", color: "gray"},
+            { line: "Conmemoración de los Santos", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Padre misericordioso,, (La,m,20)", sC: ""},
             { line: "que todos tus hijos nos reunamos, (Re,m,22)", sC: ""},
             { line: "en la heredad de tu reino, ", sC: ""},
@@ -17628,7 +17628,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "te glorifiquemos por Cristo, Señor nuestro,, (Mi,,353)", sC: ""},
             { line: "por quien concedes al mundo, ", sC: ""},
             { line: "todos los bienes., (La,m,114)", sC: ""},
-            { line: "Doxología y Conclusión de la Plegaria Eucarística,", sC: "ttgray", color: "gray"},
+            { line: "Doxología y Conclusión de la Plegaria Eucarística,", sC: "ttgray", color: "var(--Referencia-Texto)"},
             { line: "Por Cristo, con Cristo y en Cristo,, (Mi7,,16)", sC: ""},
             { line: "a ti Dios Padre omnipotente,, (Fa,,10)", sC: ""},
             { line: "en la unidad del Espíritu Santo,, (Mi7,,253)", sC: ""},
@@ -17708,7 +17708,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // ******************************** REPERTORIO PARA LOS SANTO ********************************
 // *******************************************************************************************
 // SANTO PALOMERA 65 - COMPLETADO
-        { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+        { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
         { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
         { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
         { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -17745,7 +17745,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -17790,7 +17790,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // SANTO Palestina 74 - PENDIENTE
 
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
             { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
@@ -17826,7 +17826,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Roma 77 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
@@ -17877,7 +17877,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
 
             { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
             { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
@@ -17911,7 +17911,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
@@ -18012,7 +18012,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 // ******************************** REPERTORIO PARA LOS SANTO ********************************
 // *******************************************************************************************
 // SANTO PALOMERA 65 - COMPLETADO
-        { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "red", lines: [
+        { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_1", initialState: "collapsed", triggerLine: "SANTO Palomeras 65", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
         { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
         { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
         { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -18049,7 +18049,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Melodía hebraica - COMPLETO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_2", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
             { line: "DIOS DEL UNIVERSO,, (Si,7,154)", sC: "as"},
@@ -18094,7 +18094,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 // SANTO Palestina 74 - PENDIENTE
 
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_3", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO,, (Sol,m,21)", sC: "as"},
             { line: "SANTO, SANTO, SANTO,, (La,,18)", sC: "as"},
@@ -18130,7 +18130,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 
 // SANTO Roma 77 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_4", initialState: "collapsed", triggerLine: "SANTO Roma 77", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             
             { line: "SANTO, SANTO, SANTO, (La,m,18)", sC: "ta as"},
             { line: "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)", sC: "as r11"},
@@ -18181,7 +18181,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1982 - PENDIENTE
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_5", initialState: "collapsed", triggerLine: "SANTO 1982", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
 
             { line: "SANTO,SANTO,SANTO, (La,m,20)", sC: "ta as"},
             { line: "ES EL SEÑOR., (Sol,,13)(La,m,106)", sC: "as"},
@@ -18215,7 +18215,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO 1982
 
 // SANTO 1988  - COMPLETADO
-            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "red", lines: [
+            { type: "collapsible-block", id: "asamblea_plegariaeucaristicaiv_6", initialState: "collapsed", triggerLine: "SANTO 1988", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "", sC: ""}, // Espacio Generado para separar contenido
             { line: "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)", sC: "tc"},
             { line: "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)", sC: "ta as"},
@@ -18608,7 +18608,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=salmodiaparaelsalmoresponsorial",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "PADRE NUESTRO ", sC: "ttred", color: "red"},
+            { line: "PADRE NUESTRO ", sC: "ttred", color: "var(--Rojo-Leccionario)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Padre nuestro, que estás en el cielo,, (Mi,m,20)", sC: "tc"},
             { line: "santificado sea tu Nombre; ", sC: ""},
@@ -18621,7 +18621,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "NO NOS DEJES CAER EN LA TENTACIÓN, ", sC: "as"},
             { line: "Y LÍBRANOS DEL MAL, AMÉN., (Mi,m,245)(Si,7,289)(Mi,m,331)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "AVE MARÍA ", sC: "ttred", color: "red"},
+            { line: "AVE MARÍA ", sC: "ttred", color: "var(--Rojo-Leccionario)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Dios te Salve, María,, (Mi,m,18)", sC: "tc"},
             { line: "llena eres de gracia, el Señor es contigo", sC: ""},
@@ -18631,7 +18631,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "RUEGA POR NOSOTROS, PECADORES, AHORA ", sC: "as"},
             { line: "Y EN LA HORA DE NUESTRA MUERTE. AMÉN., (Mi,m,390)(Si,7,432)(Mi,m,474)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "GLORIA ",sC: "ttred", color: "red"},
+            { line: "GLORIA ",sC: "ttred", color: "var(--Rojo-Leccionario)"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Sol,,14)(Re,,381)(Sol,,413)", sC: "tc"},
             { line: "COMO ERA EN EL PRINCIPIO, AHORA Y SIEMPRE,(La,m,20)", sC: "ta as"},
@@ -18667,7 +18667,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=salmodiasparalaoraciondelosfieles",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Modelo I, ", sC: "", color: "red" },
+            { line: "Modelo I, ", sC: "", color: "var(--Rojo-Leccionario)" },
             { line: "XXII Domingo del Tiempo ordinario - Ciclo A -\n Salmo 63 [62] ", sC: "ttpeq"},
             { line: "MI ALMA ESTÁ SEDIENTA DE TI,, (Mi,m,20)(La,m,292)", sC: "tc as"},
             { line: "SEÑOR, DIOS MÍO;, (Si,7,152)", sC: "as  r1"},
@@ -18693,7 +18693,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "SEÑOR, DIOS MÍO;, (Si,7,152)", sC: "as  r1"},
             { line: "MI ALMA ESTÁ SEDIENTA DE TI., (Do,,39)(Si,7,292)", sC: "as"},  ]},
     ], lder: [
-            { line: "Modelo II, ", sC: "", color: "red"},
+            { line: "Modelo II, ", sC: "", color: "var(--Rojo-Leccionario)"},
             { line: "IV Domingo de Pascua - Ciclo A -\n Sal 23 [22] ", sC: "ttpeq"},
             { line: "EL SEÑOR ES MI PASTOR,, (Sol,,14)", sC: "ta as"},
             { line: "NADA ME FALTA;, ", sC: "as r2"},
@@ -18754,7 +18754,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Oremos, hermanos,, (Mi,m,20)", sC: "tc"},
             { line: "por la Iglesia santa de Dios,, ", sC: "subx"},
             { line: "por su servidor el Papa ", sC: "subx"},
-            { line: "N/., ", sC: "sub", color: "red"},
+            { line: "N/., ", sC: "sub", color: "var(--Rojo-Leccionario)"},
             { line: "por los obispos, los sacerdotes, diáconos, ", sC: "subx"},
             { line: "y todo tu pueblo santo:, (Sol,,174)", sC: ""},
             { line: "para que partícipen de los bienes celestiales, ", sC: ""},
@@ -18830,7 +18830,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=salmodiasparalaudes2",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "SALMODIA I, ", sC: "negrita", color:"red"},
+            { line: "SALMODIA I, ", sC: "negrita", color:"var(--Rojo-Leccionario)"},
             { line: "Sal 64 [63] ", sC: "sub", color:"gray"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "A ti acude todo mortal, (Sol,m,25)(La,7,202)", sC: "tc"},
@@ -18838,7 +18838,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Nuestros delitos nos abruman,, (Re,m,22)(La,7,233)", sC: "tc"},
             { line: "PERO TÚ LOS PERDONAS., (Si♭,7,17)(La,7,191)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "SALMODIA II, ", sC: "negrita", color:"red"},
+            { line: "SALMODIA II, ", sC: "negrita", color:"var(--Rojo-Leccionario)"},
             { line: "Is 38, ", sC: "sub", color:"gray"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Levantan y enrollan mi vida, (La,m,20)(Sol,,236)", sC: "tc"},
@@ -18850,7 +18850,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ME QUIEBRAS LOS HUESOS COMO UN LEÓN,, (Sol,,14)(La,m,398)", sC: "ta as"},
             { line: "DÍA Y NOCHE ME ESTÁS ACABANDO., (Sol,,14)(La,m,295)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "SALMODIA III, ", sC: "negrita", color:"red"},
+            { line: "SALMODIA III, ", sC: "negrita", color:"var(--Rojo-Leccionario)"},
             { line: "Sal 43 [42], ", sC: "sub", color:"gray"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Tú eres mi Dios y protector,, (Re,m,22)(Sol,m,244)", sC: "tc"},
@@ -18858,7 +18858,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "¿POR QUÉ VOY ANDANDO SOMBRÍO,, (Re,m,22)(Sol,m,329)", sC: "ta as"},
             { line: "HOSTIGADO POR MI ENEMIGO?, (Re,m,259)", sC: "as"},
     ], lder: [
-            { line: "SALMODIA IV, ", sC: "negrita", color:"red"},
+            { line: "SALMODIA IV, ", sC: "negrita", color:"var(--Rojo-Leccionario)"},
             { line: "Dt 32", sC: "sub", color:"gray"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Escuchad, cielos, y hablaré,, (La,m,20)(Mi,,251)", sC: "tc"},
@@ -18866,7 +18866,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "DESCIENDA COMO LLUVIA MI DOCTRINA,, (La,m,20)(Mi,,360)", sC: "ta as"},
             { line: "DESTILE COMO ROCÍO MI PALABRA., (Re,m,22)(Mi,,294)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "SALMODIA V, ", sC: "negrita", color:"red"},
+            { line: "SALMODIA V, ", sC: "negrita", color:"var(--Rojo-Leccionario)"},
             { line: "Sal 46 [45], ", sC: "sub", color:"gray"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Dios es nuestro refugio y nuestra fuerza,, (Mi,m,20)(Sol,,346)", sC: "tc"},
@@ -18914,7 +18914,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=santopalomeras65",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "SALMODIA VI ", sC: "negrita", color: "#cf2d2d"},
+            { line: "SALMODIA VI ", sC: "negrita", color: "var(--Rojo-Leccionario)"},
             { line: "Sal 49 [48] ", sC: "sub", color:"gray"},
             { line: "Con la melodía de «El Señor anuncia una noticia»., ", sC: "tt s1"},
             { line: "MI BOCA HABLARÁ SABIAMENTE;, (Sol,,14)(Mi,m,214)", sC: "ta as"},
@@ -18922,7 +18922,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "prestaré oído al proverbio, (La,m,20)(Mi,m,151)", sC: "tc"},
             { line: "Y propondré mi problema al son de la cítara., (Sol,,14)(Si,m,206)(Mi,m,383)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "SALMODIA VII ", sC: "negrita", color: "#cf2d2d"},
+            { line: "SALMODIA VII ", sC: "negrita", color: "var(--Rojo-Leccionario)"},
             { line: "Ap 11", sC: "sub1", color:"gray"},
             { line: "Gracias te damos, Señor Dios omnipotente,, (Mi,m,20)(Sol,,376)", sC: "tc"},
             { line: "EL QUE ERES Y EL QUE ERAS,, (Re,,22)(Mi,m,244)", sC: "ta as"},
@@ -18932,7 +18932,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y el reinado de nuestro Dios,, (La,m,242)(Mi,m,286)", sC: ""},
             { line: "Y LA POTESTAD DE SU CRISTO., (Sol,,14)(Re,,246)(Mi,m,282)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "SALMODIA VIII ", sC: "negrita", color: "#cf2d2d"},
+            { line: "SALMODIA VIII ", sC: "negrita", color: "var(--Rojo-Leccionario)"},
             { line: "Sal 96 [95]", sC: "sub1", color:"gray"},
             { line: "El Señor reina la tierra goza,, (Sol,,14)", sC: "tc"},
             { line: "se alegran las islas innumerables., (Do,,10)(Sol,,278)", sC: ""},
@@ -18945,7 +18945,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
         ], lder: [
 
-            { line: "SALMODIA IX ", sC: "negrita", color: "#cf2d2d"},
+            { line: "SALMODIA IX ", sC: "negrita", color: "var(--Rojo-Leccionario)"},
             { line: "Sal 149 ", sC: "sub", color:"gray"},
             { line: "Cantad al Señor un cántico nuevo,, (Mi,m,20)", sC: "tc"},
             { line: "resuene su alabanza en la asamblea de los fieles., (Re,,14)(Mi,m,440)", sC: "width"},
@@ -18957,7 +18957,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PORQUE EL SEÑOR AMA A SU PUEBLO, (Mi,m,20)", sC: "ta as"},
             { line: "Y ADORNA CON LA VICTORIA A LOS HUMILDES., (Do,,10)(Si,m,391)(Mi,m,432)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "SALMODIA X ", sC: "negrita", color: "#cf2d2d"},
+            { line: "SALMODIA X ", sC: "negrita", color: "var(--Rojo-Leccionario)"},
             { line: "Sb 9 ", sC: "sub", color:"gray"},
             { line: "Dios de los padres y Señor de la misericordia, (Re,m,22)(La,7,388)", sC: "tc"},
             { line: "QUE CON TU PALABRA HICISTE TODAS LAS COSAS,, ", sC: "ta as"},

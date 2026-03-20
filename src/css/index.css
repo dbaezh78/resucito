@@ -1,30 +1,30 @@
 /* Este archivo contendrá estilos específicos para todos los cantos (ej. A la Víctima Pascual) */
 /* Puedes añadir sobrescrituras o estilos únicos aquí */
+/* VARIABLES DE TEMA */
+:root {
+    --bg-page: #ffffff;
+    --bg-card: #ffffff;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --border-color: #eeeeee;
+    --modal-overlay: rgba(0,0,0,0.7);
+    --gold-accent: #d4af37;
 
-.cristo {
-    /*z-index: 999;*/
-    position: fixed;
-    align-self: normal;
-    opacity: 0.4; /* Adjust the opacity value (0.0 - 1.0) */
-    z-index: 9999;
+    --bis-color: #c6c5c59e;
 
-    @media (min-width: 344px){
-        width: 30%;
-        top: 6%;
-        margin-left: -35px;
-    }
-
-    @media (min-width: 768px){
-        width: 16%;
-        top: initial;
-    }
-    @media (min-width: 992px){
-        width: 8em;
-        top: initial;
-        margin-left: -47px;
-    }
 }
 
+body.dark-theme {
+    --bg-page: #121212;         /* Fondo profundo */
+    --bg-card: #1e1e1e;         /* Fondo de tarjetas/modales */
+    --text-main: #f5f5f5;       /* Blanco suave */
+    --text-muted: #b0b0b0;      /* Gris lectura */
+    --border-color: #333333;    /* Bordes sutiles */
+    --modal-overlay: rgba(0,0,0,0.85);
+    --gold-accent: #e5c05b;     /* Dorado más vivo para contraste */
+
+    --bis-color: #c6c5c59e;
+}
 
 /* Ejemplo: Si quieres un color de fondo diferente solo para este canto */
 /* body { background-color: #f0f8ff; } */
@@ -38,12 +38,12 @@
 /* Las propiedades comunes que no dependen de media queries van aquí */
 .r1::before, .r2::before, .r3::before, .r4::before, .r5::before, .r6::before, .r7::before, .r8::before, .r9::before, .r10::before, .r11::before, .r12::before
 {
-    content: " BIS A."; /* Movido aquí */
-    position: absolute; /* Movido aquí */
-    align-content: center; /* Movido aquí */
-    border-left: 2px solid #3b333369; /* Movido aquí */
-    color: #3b333369; /* Movido aquí */
-    width: max-content; /* Movido aquí */
+    content: " BIS A."; 
+    position: absolute; 
+    align-content: center; 
+    border-left: 2px solid var(--bis-color);
+    color: var(--bis-color);
+    width: max-content;
     font: icon;
     font-weight: bold;
 }
@@ -339,7 +339,7 @@
                 .sub {margin-top: -36px;} /* 384px */
             }
             @media (min-width: 768px) {
-                .sub {margin-top: -57px;} /* 768px */
+                .sub {margin-top: -23px;} /* 768px */
             }
             @media (min-width: 992px) {
                 .sub {margin-top: -46px;} /* 992px */

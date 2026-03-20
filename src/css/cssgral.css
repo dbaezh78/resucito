@@ -1,8 +1,47 @@
 /* Creado por un siervo de Cristo: Carlos David 
 Debajo está el proyecto de poner el modo oscuro */
 
-#CristoReydereyesYSeñordeseñores {
-    --CristoMiSeñor: white
+#CristoReydereyesYSeñordeseñores { --CristoMiSeñor: white }
+
+/* Estilo base para AMBAS imágenes */
+/* 1. Estilos base para ambas imágenes (posicionamiento igual) */
+.cristo {
+    width: 10px;
+    position: fixed;
+    align-self: normal;
+    z-index: 9999;
+    /* Transición suave para el efecto de "aparecer" */
+    transition: opacity 0.8s ease-in-out, filter 0.8s ease-in-out;
+    cursor: pointer;
+}
+    @media (min-width: 344px){.cristo { width: 30%; top: 6%; margin-left: -35px; }}
+    @media (min-width: 768px){.cristo { width: 16%; top: initial; }}
+    @media (min-width: 992px){.cristo { width: 8em; top: initial; margin-left: -47px; }}
+
+
+/* --- LÓGICA DE INTERCAMBIO Y TRANSFIGURACIÓN --- */
+
+/* MODO CLARO (Estado inicial) */
+.cristo-claro {
+    opacity: 0.7; /* Opacidad sutil para el modo claro */
+    cursor: pointer;
+}
+.cristo-oscuro {
+    opacity: 0.7; 
+    cursor: pointer;
+}
+
+/* MODO OSCURO (Cuando el body tiene .dark-theme) */
+body.dark-theme .cristo-claro {
+    opacity: 0.7; /* Desaparece el cristo negro */
+}
+
+body.dark-theme .cristo-oscuro {
+    opacity: 0.8; /* Aparece con más fuerza */
+    
+    /* EFECTO TRANSFIGURADO: 
+       Brillo fuerte y resplandor dorado (Aura) */
+    filter: brightness(1.8) drop-shadow(0 0 15px rgba(229, 192, 91, 0.9));
 }
 
 
@@ -14,26 +53,9 @@ Debajo está el proyecto de poner el modo oscuro */
       @font-face {font-family: 'Franklin Gothic Medium';src: url('../font/FranklinGothicMedium.ttf') format('truetype');font-weight: normal;font-style: normal;font-display: swap;}
       @font-face {font-family: Neocat; src: url('../font/Neocat-Regular_3.0.ttf') format('truetype'); font-display: swap; }
 
-.material-symbols-outlined {
-  font-family: 'Material Symbols Outlined';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-}
-
-
 :root {
     --SangreDeCristo: #780606;
-    --Acordes: #780606;
+    --Acorde: #780606;
     --vblancas: white;
     --precat: white;
     --liturgia: #FFFFCB;
@@ -44,20 +66,31 @@ Debajo está el proyecto de poner el modo oscuro */
     --bg-principal: #ffffff;
     --bg-contenedores: #f5f5f7;
     --bg-header: #bc0009;
+    --bg-body-canto: #f4f4f4;
+    --bg-transparente: transparent;
     
+    --texto-cantor: #333;
     --texto-principal: #1d1d1f;
     --texto-secundario: #666666;
     --texto-blanco: #ffffff;
+    --Indicador-Cantor-Asamble: #3b333369;
+    --text-titulo: #5a575a;
+    
+
+    --Blanco-Negro: black;
+    --category-link: #780606;
+    --category-link-hover: white;
     
     --borde-divisor: #e5e5e5;
     --accent: #bc0009;
-
 
     /* Variables de colores de fondo para el body (pueden ser más transparentes o diferentes) */
     --precat-body-bg: rgba(255, 255, 255, 0.2);
     --liturgia-body-bg: rgba(255, 255, 203, 0.2);
     --cat-body-bg: rgba(189, 233, 255, 0.2);
     --eleccion-body-bg: rgba(206, 255, 207, 0.2);
+
+    --Rojo-Leccionario:#cf2d2d;
 
 
     /* Nuevos colores de fondo para acordes */
@@ -82,21 +115,55 @@ Debajo está el proyecto de poner el modo oscuro */
     --TrasfondoCanto-Catecumenado: rgba(189, 233, 255, 0.2); /* #bde9ff con 20% de opacidad */
     --TrasfondoCanto-Liturgico: rgba(255, 255, 203, 0.2); /* #FFFFCB con 20% de opacidad */
     --TrasfondoCanto-Eleccion: rgba(206, 255, 207, 0.2); /* #CEFFCF con 20% de opacidad */
+
+    --Cristal-Cristo: inherit;
 } /* FIN DE ROOT */
 
-/* MODO OSCURO (Valores que cambian) */
+/* MODO OSCURO (Valores que camb0ian) */
 body.dark-theme {
+
+    --SangreDeCristo: #0fadfc;
+    /*--SangreDeCristo: #bde9ff;*/
+    --Acorde: #6bb3e7;
+    --vblancas: white;
+    --precat: rgb(51 51 51);
+    --liturgia: #786e46;
+    /*--liturgia: #707213;*/
+    --cat: #135672;
+    --eleccion: #137213;
+
     --bg-principal: #121212;
     --bg-contenedores: #2c2c2e; /* El color que pediste */
     --bg-header: #000000;
-    
+    --bg-body-canto: #667;
+
+    --Blanco-Negro: white;
+    --category-link: #6bb3e7;
+
+    --texto-cantor: #ffffff;
     --texto-principal: #f5f5f7;
     --texto-secundario: #a1a1a6;
     --texto-blanco: #ffffff;
-    
+    --Indicador-Cantor-Asamble: #ccc;
+    --text-titulo: rgba(255, 255, 255, 0.8);
+
     --borde-divisor: #3a3a3c;
     --accent: #ff453a; /* Un rojo más vibrante para fondos oscuros */
+
+
+    --Rojo-Leccionario:#ff7b7b;
+    --Referencia-Texto: #ffc1c1;
+    --Cristal-Cristo: #251a1a;
 }
+
+/* Usar la variable dinámica establecida por JS para el fondo del body y principal */
+body { background-color: var(--dynamic-body-background, #f4f4f4);}
+
+.main-wrapper, .container, .category-link {background-color: var(--dynamic-main-background, white);}    
+/*
+.main-wrapper, .container, .category-link {background-color: var(--precat);}
+*/
+
 /* REMOVIDO: Colores de fondo basados en clases en el body (antiguos) */
 /* body:has(.precat) {background-color: #282828;} */
 /* body:has(.liturgia) {background-color: #ffffe4;} */
@@ -105,12 +172,26 @@ body.dark-theme {
 
 /* NUEVO: Clases para aplicar los fondos al body según la categoría del canto */
 
-
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
 
 body {
     width: 100%;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-    background-color: #f4f4f4; /* Este será el fallback si no se aplica ninguna clase de categoría */
+    background-color: var(--bg-body-canto); /* Este será el fallback si no se aplica ninguna clase de categoría */
     color: #333;
     display: flex;
     justify-content: center;
@@ -182,7 +263,7 @@ display: none;}
     box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.1);
     width: 100%; /* Default for smaller screens */
     /* NUEVO: Fondo por defecto, se sobrescribirá por las clases cat- */
-    background-color: white;
+    /* background-color: var(--bg-principal)*/
 }
 
 /* NUEVO: Clases para aplicar los fondos al main-wrapper según la categoría del canto */
@@ -400,7 +481,7 @@ display: none;}
 .dbt1 {
     text-transform: uppercase;  /* Convierte cualquier texto a Mayuscula*/
     text-align: center;
-    color: rgb(196 76 75);
+    color: var(--SangreDeCristo);
     margin-top: 60px;
     /*margin: 0px;*/
 }
@@ -424,7 +505,7 @@ display: none;}
 }
 
 .dbs2 {
-    color: #5a575a;
+    color: var(--text-titulo);
     margin: 0px;
     font-size: medium;
     font-weight: bold;
@@ -576,12 +657,9 @@ display: none;}
 
 .nota-posicionada {
     position: absolute;
-    /*top: 0; Antes posicion del acorde*/
-    /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
     font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic Medium', Arial;
     font-weight: bold;
-    color: var(--Acordes);
-    /*color: rgb(196 76 75);*/
+    color: var(--Acorde);
     background-color: transparent;
     white-space: nowrap;
     transform: translateX(-50%);
@@ -589,6 +667,9 @@ display: none;}
     z-index: 10;
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
+
+    /*top: 0; Antes posicion del acorde*/
+    /*font-family: 'Franklin Gothic Medium', Arial, sans-serif;*/
 }
 
 @media (min-width: 384px) {.nota-posicionada {top: 0px;}}
@@ -660,7 +741,7 @@ display: none;}
 .letra {
     font-size: 20.8px; /* Converted from 1.3em */
     line-height: 1.6;
-    color: #2c3e50;
+    color: var(--texto-cantor);
     white-space: pre-wrap;
 }
 
@@ -790,7 +871,7 @@ display: none;}
 
 /* Color GRIS para la mayoría */
 .ta::before, .tc::before, .td::before, .tn::before, .tca::before, .ta1::before, .ta2::before, .ta3::before, .niño::before, .hombres::before, .mujeres::before, .bis::before, .pa::before, .tc1::before, .tc2::before
-{color: #3b333369; /* Gris semitransparente */}
+{color: var(--Indicador-Cantor-Asamble) /* Gris semitransparente  #3b333369 */}
 
 .aleluya::before {font-weight: bolder;}
 
@@ -874,8 +955,9 @@ hr {
 
 .category-link {
     display: inline-block; /* Para que cada categoría ocupe su propio espacio */
-    background-color: var(--vblancas);
-    color: var(--SangreDeCristo);
+    background-color: var(--bg-transparente);
+    color: var(--category-link);
+    
     padding: 5px 10px;
     border-radius: 0px;
     text-decoration: none;
@@ -885,7 +967,7 @@ hr {
 
 .category-link:hover {
     background-color: var(--SangreDeCristo);
-    color: var(--vblancas);
+    color: var(--category-link-hover);
 }
 
 
@@ -932,7 +1014,7 @@ hr {
 }
 
 .nCanto {
-    color: red;
+    color: var(--Referencia-Texto);
     font-family: 'Franklin Gothic Medium';
     font-size: medium;
     text-align: start;        /* ESTE SE HA PUESTO PARA JUSTIFICAR EL CONTENIDO DE LOS COMENTARIOS*/
@@ -1166,10 +1248,6 @@ hr {
     align-content: center;
 
 }
-
-/* Usar la variable dinámica establecida por JS para el fondo del body y principal */
-body { background-color: var(--dynamic-body-background, #f4f4f4);}
-.main-wrapper, .container, .category-link {background-color: var(--dynamic-main-background, white);}
 
 .ncan-link {
     text-decoration: none;

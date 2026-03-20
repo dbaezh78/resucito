@@ -23,10 +23,11 @@
             .ast4::before {margin-top: -3px;margin-left: 195px;}
             .tx {margin-top: -26px; font-size: small;}
             .cruz {margin-left: 120px;}
-            .sangre {margin-left: 155px;}
+            .sangre {margin-left: 160px;}
             .izq {margin-left: -33px;font-size: larger;}
             .top1 {top:1px}
             .f15 .letra{font-size: 8px;}
+            .sub {margin-top: -57px;}
         }
         @media (min-width: 992px) {
             .container {margin-left: 12%;}
