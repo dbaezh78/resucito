@@ -19,6 +19,7 @@
     --borde-divisor: #e5e5e5;
     --accent: #bc0009;
 
+    --cacorde: red;
 
     /* Variables de colores de fondo para el body (pueden ser más transparentes o diferentes) */
     --precat-body-bg: rgba(255, 255, 255, 0.2);
@@ -172,11 +173,12 @@
 .tabla-gestion {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
 
     @media (min-width: 384px) {font-size: 12px;}
     @media (min-width: 768px) {font-size: 16px;}
     @media (min-width: 992px) {font-size: 16px;;}
-
 }
 
 .tabla-gestion th, .tabla-gestion td {
@@ -190,10 +192,54 @@
 
 }
 
+/**/
+.tabla-gestion th {
+    background: #bc0009;
+    color: white;
+    padding: 10px;
+
+    @media (min-width: 384px) {padding: 2px;}
+    @media (min-width: 768px) {padding: 10px;}
+    @media (min-width: 992px) {padding: 10px;}
+}
+
+
+/**/
+
 .tabla-gestion th {
     background-color: #bc0009;
     color: white;
 }
+
+.tabla-gestion b {
+    display: inline-block;
+    min-width: auto;
+    text-align: center;
+    /* background: #fff5f5; /* Un fondo muy suave para resaltar tu cambio */
+    padding: 2px 5px;
+    border-radius: 4px;
+    
+    @media (min-width: 384px) {
+        padding: 1px;
+        padding: 1px 0px;
+    }
+}
+
+/* Filas pares con un fondo ligeramente oscuro */
+.tabla-gestion tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.03); /* Un gris muy suave */
+}
+
+/* Filas impares blancas (por si acaso) */
+.tabla-gestion tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Efecto al pasar el mouse para no perder la vista */
+.tabla-gestion tbody tr:hover {
+    background-color: rgba(188, 0, 9, 0.05); /* Un tono rojizo muy suave al pasar el mouse */
+}
+
 
 .tu-dato {
     font-weight: bold;
@@ -209,30 +255,6 @@
 
 /*  Tabla del listado de los cantos*/
 
-.tabla-gestion {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    background: white;
-}
-.tabla-gestion th {
-    background: #bc0009;
-    color: white;
-    padding: 10px;
-
-    @media (min-width: 384px) {padding: 2px;}
-    @media (min-width: 768px) {padding: 10px;}
-    @media (min-width: 992px) {padding: 10px;}
-}
-
-.tabla-gestion td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-
-        @media (min-width: 384px) {padding: 4px;}
-
-}
 .tu-dato {
     color: #4CAF50;
     font-weight: bold;
@@ -353,21 +375,6 @@
     }
         }
 
-.tabla-gestion b {
-    display: inline-block;
-    min-width: auto;
-    text-align: center;
-    /* background: #fff5f5; /* Un fondo muy suave para resaltar tu cambio */
-    padding: 2px 5px;
-    border-radius: 4px;
-    
-    @media (min-width: 384px) {
-        padding: 1px;
-        padding: 1px 0px;
-    }
-}
-
-
 /* --- ESTILOS BOTÓN GOOGLE --- */
 .google-btn-container {
     display: flex;
@@ -483,21 +490,6 @@ input:checked + .slider:before {
 .btn-primario {
     padding: 2px 0px 4px 0px;
     width: 100%;
-}
-
-/* Filas pares con un fondo ligeramente oscuro */
-.tabla-gestion tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.03); /* Un gris muy suave */
-}
-
-/* Filas impares blancas (por si acaso) */
-.tabla-gestion tbody tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-/* Efecto al pasar el mouse para no perder la vista */
-.tabla-gestion tbody tr:hover {
-    background-color: rgba(188, 0, 9, 0.05); /* Un tono rojizo muy suave al pasar el mouse */
 }
 
 .xclose {
@@ -795,4 +787,11 @@ input:checked + .slider:before {
 
 .EstadoSys {
     display: contents;
+}
+
+
+.cacorde {  
+    /* Este maneja el color del acorde cambiado en perfil*/
+    color:red;
+
 }

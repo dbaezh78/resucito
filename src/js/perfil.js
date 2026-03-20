@@ -462,7 +462,7 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
                 if (indiceBase !== -1) {
                     const posicionFinal = (indiceBase + t) % 12;
                     const notaFinal = cords[posicionFinal];
-                    elAco.innerHTML = `<b style="color:red;">${notaFinal}${esMenor ? " m" : ""}</b>`;
+                    elAco.innerHTML = `<b class="cacorde" >${notaFinal}${esMenor ? " m" : ""}</b>`;
                 } else {
                     elAco.innerHTML = acordeOriginalStr;
                 }
