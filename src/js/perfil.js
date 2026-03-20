@@ -1065,7 +1065,7 @@ window.abrirListaDetallada = function() {
     // 1. Buscamos el nombre del canto y su acorde base original
     const idABuscar = window.ultimoCantoVisto; 
     const infoCanto = window.indiceCantosGlobal.find(c => String(c.id) === String(idABuscar));
-    const tituloCanto = infoCanto ? infoCanto.titulo : "Canto seleccionado";
+    const tituloCanto = infoCanto ? infoCanto.title : "Canto seleccionado";
     
     // Recuperamos el acorde base del JSON (ej: "Re m", "Sol", etc.)
     const acordeOriginalStr = infoCanto ? (infoCanto.acorde || "La m") : "La m";
@@ -1194,7 +1194,15 @@ function generarGridNavegable(fechasActivas, mes, año) {
         const estilo = activo 
             ? "background:#d4af37; color:white; font-weight:bold; border-radius:4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" 
             : "color:#555;";
-        html += `<div style="padding:6px 0; font-size:0.95em; ${estilo}">${i}</div>`;
+
+            // ===========================================================
+            // Aqui añadimos el evento para hacer clic sobre el dia dorado
+            // ===========================================================
+            const eventoClick = activo 
+            ? `onclick="window.verReporteDelDia(${i}, ${mes}, ${año})"` 
+            : "";
+
+            html += `<div ${eventoClick} style="padding:6px 0; font-size:0.95em; cursor: pointer; ${estilo}">${i}</div>`;
     }
     return html;
 }
@@ -1794,3 +1802,104 @@ async function sincronizarPreferenciaNube(id, estado) {
         console.error("Error al sincronizar preferencia:", e); 
     }
 }
+
+
+// ==========================================================
+// Funion para ver los acordes por dia
+// ==========================================================
+
+window.verReporteDelDia = function(dia, mes, año) {
+    // 1. Filtrar registros del día seleccionado
+    const registrosDelDia = fechasOriginalesFull.filter(item => {
+        return item.fecha.getDate() === dia && 
+               item.fecha.getMonth() === mes && 
+               item.fecha.getFullYear() === año;
+    });
+
+    if (registrosDelDia.length === 0) return;
+
+    // 2. Buscar info del canto para el transporte (igual que en tu otra función)
+    const idABuscar = window.ultimoCantoVisto; 
+    const infoCanto = window.indiceCantosGlobal.find(c => String(c.id) === String(idABuscar));
+    const tituloCanto = infoCanto ? infoCanto.title : "Reporte";
+    const acordeOriginalStr = infoCanto ? (infoCanto.acorde || "La m") : "La m";
+    const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
+
+    // 3. Crear el modal con tu CSS original
+    let reporteModal = document.getElementById('reporte-dia-modal');
+    if (!reporteModal) {
+        reporteModal = document.createElement('div');
+        reporteModal.id = 'reporte-dia-modal';
+        // Usamos el mismo z-index y fondo oscuro
+        reporteModal.style = "position:fixed; top:0; left:0; width:100%; height:100%; z-index:1000005; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; font-family: sans-serif;";
+        document.body.appendChild(reporteModal);
+    }
+
+// 4. Generar los items (usando tu misma lógica de transporte dinámico)
+    const itemsHtml = registrosDelDia.map((reg, index) => {
+        const f = reg.fecha;
+
+        // --- CAMBIO AQUÍ: Formato 12 horas (3:57 pm) ---
+        const hora12 = f.toLocaleTimeString('en-US', { 
+            hour: 'numeric', 
+            minute: '2-digit', 
+            hour12: true 
+        }).toLowerCase(); 
+
+        let acordeTxt = acordeOriginalStr; 
+        const esMenor = acordeOriginalStr.toLowerCase().includes("m");
+        const notaBasePura = acordeOriginalStr.split(" ")[0].replace("m", "").trim();
+        const indiceBase = cords.indexOf(notaBasePura);
+
+        if (indiceBase !== -1) {
+            const t = parseInt(reg.acorde) || 0;
+            const posicionFinal = (indiceBase + t + 12) % 12; 
+            const notaFinal = cords[posicionFinal];
+            acordeTxt = `${notaFinal}${esMenor ? " m" : ""}`;
+        }
+
+        const cejillaTxt = (reg.cejilla && reg.cejilla !== "0") ? reg.cejilla : "No";
+
+        return `
+        <div style="padding:12px; border-bottom:1px solid #eee; display:flex; flex-direction:column; gap:5px; background: white; text-align: left;">
+            <div style="display:flex; justify-content:space-between; font-size:11px; color:#888;">
+                <span style="text-transform: uppercase;">${hora12}</span> <b style="color:#d4af37;">#${index + 1}</b>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:15px; font-weight:bold; color:#333;">🎸 ${acordeTxt}</span>
+                <span style="font-size:13px; background:#f5f5f5; padding:3px 10px; border-radius:12px; color:#666; border:1px solid #eee; font-weight: 900;">🗜️ ${cejillaTxt}</span>
+            </div>
+        </div>`;
+    }).join('');
+
+
+    // 5. Inyectar el HTML con el esquema de colores dorado y blanco
+    const nombreMes = new Intl.DateTimeFormat('es-ES', { month: 'short' }).format(new Date(año, mes));
+    const fechaTitulo = `${dia} ${nombreMes.toUpperCase()} ${año}`;
+
+    reporteModal.innerHTML = `
+        <div id="reporte-overlay" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
+            <div style="background:white; border-radius:15px; width:320px; max-height:80vh; overflow:hidden; display:flex; flex-direction:column; position:relative; box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
+                
+                <button onclick="document.getElementById('reporte-dia-modal').remove()" 
+                        style="position:absolute; top:5px; right:10px; border:none; background:none; font-size:28px; cursor:pointer; color:white; z-index:11;">&times;</button>
+                
+                <div style="padding:25px 20px 5px 20px; background:#d4af37; color:white; font-weight:bold; text-align:center; font-size: 18px; line-height: 1.2;">
+                    ${tituloCanto.toUpperCase()}
+                </div>
+
+                <div style="background:#d4af37; color:rgba(255,255,255,0.9); padding:0 20px 20px 20px; text-align:center; font-size:12px; letter-spacing: 1px; font-weight: bold;">
+                    ACTIVIDAD: ${fechaTitulo}
+                </div>
+
+                <div style="flex-grow:1; overflow-y:auto; background:#fff;">
+                    ${itemsHtml}
+                </div>
+            </div>
+        </div>`;
+
+    // Cerrar al hacer clic fuera
+    reporteModal.onclick = (e) => { 
+        if (e.target.id === 'reporte-overlay') reporteModal.remove(); 
+    };
+};
