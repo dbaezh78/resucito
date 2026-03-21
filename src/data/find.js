@@ -149,7 +149,7 @@ function mostrarResultadosFinal(resultados) {
         item.className = 'resultado-item';
         item.style.display = "block";
         item.style.textDecoration = "none";
-        item.style.color = "inherit";
+        //item.style.color = "inherit";     // Esto no conviene, no deja ver el color del canto en la busqueda
         
         // El navegador usa el href directamente
         item.href = canto.url;

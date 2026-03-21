@@ -26,10 +26,16 @@
 :root {
     
     --Cristal-Cristo: #00000040;
+    --Mensaje-Kiko-Fondo: #2196f3;
+    --Blanco-Negro: white;
+    --cwh: black;
 }
 
 body.dark-theme { 
     --Cristal-Cristo: #1d1414;
+    --Mensaje-Kiko-Fondo: gray;
+    --Blanco-Negro: black;
+    --cwh: white;
 }
 
 
@@ -649,12 +655,11 @@ border: 1px solid #52067d;
     border: 3px double;
     font-size: large;
     font-family: cursive;
-
-    background: #2196f3;
+    background: var(--Mensaje-Kiko-Fondo);
+    color: var(--Blanco-Negro);
     font-size: large;
     font-family: cursive;
-    color: white;
-}
+    }
 
 /* Muestra el mensaje cuando el checkbox está marcado */
 #mostrar-mensaje:checked ~ .mensaje-kiko {
@@ -901,7 +906,7 @@ border: 1px solid #52067d;
 }
 
 .cwh {      /* Color Blanco*/
-    color: black;
+    color: var(--cwb);
     font-weight: bolder;
 }
 
