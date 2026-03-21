@@ -10006,9 +10006,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=ostomaredeentrelasnaciones",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "¡OH SEÑOR, NUESTRO DIOS,, (Re,m,22)", sC: "ta as"},
+            { line: "¡OH SEÑOR, NUESTRO DIOS,, (Re,m,22)(La,7,134)(Re,m,237)", sC: "ta as"},
             { line: "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)", sC: "as"},
-            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,357)", sC: "as"},
+            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,245)", sC: "as"},
             { line: "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Con la boca de los niños pequeños, (Sol,m,14)(La,7,291)", sC: "tc"},
@@ -10016,9 +10016,10 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "y reduces al silencio enemigos y rebeldes., (Si♭,,52)(La,7,350)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
-       triggerLine: "¡OH SEÑOR, NUESTRO DIOS, (Re,m,22)", sC: "ta as", lines: [
+       triggerLine: "¡OH SEÑOR, NUESTRO DIOS, (Re,m,22)(La,7,134)(Re,m,237)", sC: "ta as", lines: [
             { line: "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)", sC: "as"},
-            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,357)", sC: "as"},
+            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,245)", sC: "as"},
+//            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,357)", sC: "as"},
             { line: "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Si contemplo el cielo, obra de tus manos,, (Sol,m,24)(La,7,347)", sC: "tc"},
@@ -10031,9 +10032,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "todo lo has sometido bajo sus pies., (Si♭,,18)(La,7,326)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
-       triggerLine: "¡OH SEÑOR, NUESTRO DIOS, (Re,m,22)", sC: "ta as", lines: [
+       triggerLine: "¡OH SEÑOR, NUESTRO DIOS, (Re,m,22)(La,7,134)(Re,m,237)", sC: "ta as", lines: [
             { line: "QUÉ ADMIRABLE ES TU NOMBRE, (Fa,,117)", sC: "as"},
-            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,357)", sC: "as"},
+            { line: "POR TODA LA TIERRA, TU NOMBRE,, (La,7,160)(Sol,m,245  )", sC: "as"},
             { line: "HASTA EL CIELO SE ELEVA TU AMOR!, (La,7,327)", sC: "as"},  ]},
     ], lder: [
 ]}, // ULTIMA LINEA DEL CANTO: OH SEÑOR, NUESTRO DIOS

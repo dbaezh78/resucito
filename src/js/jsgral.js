@@ -1448,10 +1448,6 @@ window.registrarCambioTecnico = (cantoId, valorForzado = null) => {
 window.actualizarAcordes = actualizarAcordes;
 window.renderCanto = renderCanto;
 
-// EXPOSICIÓN GLOBAL ABSOLUTA
-window.actualizarAcordes = actualizarAcordes;
-window.renderCanto = renderCanto;
-
 
 // FUNCIÓN 32: NAVEGACIÓN INTELIGENTE
 window.navegacionInteligente = () => {
@@ -1662,4 +1658,5 @@ document.addEventListener('DOMContentLoaded', observarCierreSettings);
 console.log("Canto rendering complete.");
 adjustNotePositions(); // Esto posiciona los acordes como siempre
 toggleAcordeLocation(); // Esto muestra los números solo si el switch está en SI|
+
 
