@@ -950,3 +950,13 @@ input:checked + .slider:before { transform: translateX(22px); }
 .pright {
     margin-left: auto;
 }
+
+
+/* BLOQUEO DE PULL-TO-REFRESH (Refresco al tirar hacia abajo) */
+html, body {
+    /* Esta línea es la que hace la magia: permite scroll pero bloquea el refresco */
+    overscroll-behavior-y: contain;
+    
+    /* Asegura que el scroll sea fluido en iPhone/iPad */
+    -webkit-overflow-scrolling: touch;
+}
