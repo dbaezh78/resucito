@@ -3338,7 +3338,7 @@ const allCantosData = [
             { line: "¿Dónde está tu Dios?», ", sC: ""},
             { line: "Y cuando yo recuerdo, (Si,7,170)", sC: ""},
             { line: "el alma se me llena de tristeza,", sC: ""},
-            { line: "cómo marchaba en medio, ", sC: ""},
+            { line: "cómo marchaba en medio ", sC: ""},
             { line: "de un pueblo en fiesta., (Mi,,180)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¿Por qué te abates, alma mía,, (Sol#,,15)", sC: ""},
@@ -3355,7 +3355,7 @@ const allCantosData = [
             { line: "QUE VOLVERÁS A ALABARLO. (Sol#,,231)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "¡Cuántas veces le he dicho a mi roca:, (Mi,,15)", sC: "tc"},
-            { line: "¿Por qué me has abandonado?!, ", sC: ""},
+            { line: "¿Por qué me has abandonado?! ", sC: ""},
             { line: "¿Por qué camino triste, ", sC: ""},
             { line: "oprimido por mis enemigos?, (Fa#,m,226)", sC: ""},
             { line: "Se me rompen los huesos", sC: ""},
@@ -3372,14 +3372,14 @@ const allCantosData = [
             { line: "por qué tú gimes dentro de mí?, (Do#,m,286)", sC: ""},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_2", initialState: "collapsed",
-       triggerLine: "ESPERA EN DIOS, ESPERA EN DIOS,, (Fa#,m,143)(Si,7,322)", sC: "ta as", lines: [
+       triggerLine: "ESPERA EN DIOS, ESPERA EN DIOS, (Fa#,m,143)(Si,7,322)", sC: "ta as", lines: [
             { line: "QUE VOLVERÁS A ALABARLO. (Mi,,233)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_3", initialState: "collapsed",
        triggerLine: "Porque Él, Él es tu salvación, (Do#,m,27)(Do#,7,117)(Fa#,m,249)", sC: "tc", lines: [
             { line: "Él es tu Dios, Él es tu Dios., (Si,7,15)(Do#,m,102)(La,,141)(Sol#,,227)", sC: ""},  ]},
             { type: "collapsible-block", id: "asamblea_4", initialState: "collapsed",
-       triggerLine: "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,143)(Sol#,,318)", sC: "ta as", lines: [
+       triggerLine: "ESPERA EN DIOS, ESPERA EN DIOS, (La,,143)(Sol#,,318)", sC: "ta as", lines: [
             { line: "ESPERA EN DIOS, ESPERA EN DIOS,, (La,,141)(Si,,319)(Si,,360)(Si♭,,386)(La,,412)", sC: "as"},
             { line: "QUE VOLVERÁS A ALABARLO. (Sol#,,231)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: COMO LA CIERVA

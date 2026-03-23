@@ -98,53 +98,76 @@ window.tabsConfig = [
 // BOTON DE ACTUALIZAR
 // ==========================================
 
+			{ 
+				id: 'btn-clear-cache',
+				label: 'Limpiar Caché y Datos', 
+				tipo: 'button',
+				color: '#bc0009',
+				accion: async () => {
+                    if(confirm("⚠ Limpiar Cache y 🔃👤 Reiniciar Sesión. ¿Continuar?")) {
+						
+						// 1. PRIMERO: Cerrar sesión en Firebase (Fundamental)
+						if (window.firebaseAPI && window.firebaseAPI.logout) {
+							try {
+								await window.firebaseAPI.logout();
+								console.log("Sesión de Firebase cerrada correctamente.");
+							} catch (e) {
+								console.error("Error al cerrar sesión:", e);
+							}
+						}
+
+						// 2. Limpiar LocalStorage (Preferencias, acordes, cejillas)
+						localStorage.clear();
+
+						// 3. Limpiar Caché de la PWA (Archivos offline)
+						if ('caches' in window) {
+							const cacheNames = await caches.keys();
+							await Promise.all(cacheNames.map(name => caches.delete(name)));
+						}
+
+						// 4. Limpiar IndexedDB (Bases de datos internas)
+						if ('indexedDB' in window) {
+							const dbs = await indexedDB.databases();
+							dbs.forEach(db => { if (db.name) indexedDB.deleteDatabase(db.name); });
+						}
+
+						// 5. Preparar el re-login
+						sessionStorage.setItem('pending_login', 'true');
+						sessionStorage.setItem('force_login_prompt', 'true');
+
+						// 6. Recarga total desde el servidor
+						window.location.reload(true);
+					}
+				}
+			},
+
             { 
-                id: 'btn-clear-cache',
-                label: 'Limpiar Caché y Datos', 
-                tipo: 'button',
-                color: '#bc0009',
-                accion: async () => {
-                    if(confirm("⚠ Esto limpiará todo y reiniciará la sesión. ¿Continuar?")) {
-
-                        // 1. PRIMERO: Cerrar sesión en Firebase (Fundamental)
-                        if (window.firebaseAPI && window.firebaseAPI.logout) {
-                            try {
-                                await window.firebaseAPI.logout();
-                                console.log("Sesión de Firebase cerrada correctamente.");
-                            } catch (e) {
-                                console.error("Error al cerrar sesión:", e);
-                            }
-                        }
-
-                        localStorage.clear();
-
-                        if ('caches' in window) {
-                            const cacheNames = await caches.keys();
-                            await Promise.all(cacheNames.map(name => caches.delete(name)));
-                        }
-
-                        if ('indexedDB' in window) {
-                            const dbs = await indexedDB.databases();
-                            dbs.forEach(db => { if (db.name) indexedDB.deleteDatabase(db.name); });
-                        }
-
-                        // ACTIVAMOS AMBAS ESTRATEGIAS
-                        sessionStorage.setItem('pending_login', 'true');    // Intento automático
-                        sessionStorage.setItem('force_login_prompt', 'true'); // Refuerzo visual manual
-
-                        window.location.reload(true);
-                    }
-                }
-            },
-
-
-            { 
-                id: 'btn-force-update',
-                label: 'Actualizar Aplicación', 
+                id: 'btn-clear-settings',
+                label: 'Limpiar Ajustes', 
                 tipo: 'button',
                 color: '#28a745', // Verde
                 accion: () => {
-                    window.location.reload(true); // Fuerza la descarga de archivos nuevos
+                    // Ejecución directa al pulsar
+                    if (confirm("¿Deseas limpiar la configuración local y volver a sincronizar con la nube? (No se borrarán tus cantos, solo se refrescarán los ajustes)")) {
+                        
+                        console.log("🧹 Iniciando limpieza de LocalStorage...");
+                        
+                        // Borramos solo lo que nos interesa para no cerrar la sesión del usuario
+                        Object.keys(localStorage).forEach(key => {
+                            if (key.startsWith('pref-') || 
+                                key.startsWith('scroll_') || 
+                                key.startsWith('nota_personal_') ||
+                                key.startsWith('url_personal_') ||
+                                key.startsWith('audio_personal_url_')) {
+                                localStorage.removeItem(key);
+                            }
+                        });
+
+                        console.log("✅ Limpieza completada. Recargando...");
+                        
+                        // Recargamos la página para que Firebase vuelva a bajar todo de cero
+                        window.location.reload();
+                    }
                 }
             }
         ]
