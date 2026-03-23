@@ -65,8 +65,13 @@ body.dark-theme .cristo-oscuro {
       @font-face {font-family: Neocat; src: url('../font/Neocat-Regular_3.0.ttf') format('truetype'); font-display: swap; }
 
 :root {
-    --SangreDeCristo: #780606;
+    --SangreDeCristo: #d01212;
+    --Titulo-SangreDeCristo: #780606;
+    /*--SangreDeCristo: #780606;
     --Acorde: #780606;
+    */
+    /*--Acorde: #d01212;*/
+    --Acorde: #d01212;
     --vblancas: white;
     --precat: white;
     --liturgia: #FFFFCB;
@@ -134,6 +139,8 @@ body.dark-theme .cristo-oscuro {
 body.dark-theme {
 
     --SangreDeCristo: #0fadfc;
+    --Titulo-SangreDeCristo: #0fadfc;
+
     /*--SangreDeCristo: #bde9ff;*/
     --Acorde: #6bb3e7;
     --vblancas: white;
@@ -334,7 +341,7 @@ display: none;}
     display: flex;
     width: 100%;
     padding: 0px;
-    background-color: var(--SangreDeCristo);
+    background-color: var(--Titulo-SangreDeCristo);
     position: fixed; /* Fixed for mobile/tablet */
     top: 0;
     left: 0;

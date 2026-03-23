@@ -9,7 +9,6 @@
     --border-color: #eeeeee;
     --modal-overlay: rgba(0,0,0,0.7);
     --gold-accent: #d4af37;
-
     --bis-color: #c6c5c59e;
 
 }
@@ -395,7 +394,7 @@ body.dark-theme {
     padding: 2px 0px;
     width: 60px;
     border-radius: 2px;
-    background: var(--SangreDeCristo);
+    background: var(--Titulo-SangreDeCristo);
     border: 0;
     color: white;
 }
