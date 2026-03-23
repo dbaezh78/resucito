@@ -105,6 +105,17 @@ window.tabsConfig = [
                 color: '#bc0009',
                 accion: async () => {
                     if(confirm("⚠ Esto limpiará todo y reiniciará la sesión. ¿Continuar?")) {
+
+                        // 1. PRIMERO: Cerrar sesión en Firebase (Fundamental)
+                        if (window.firebaseAPI && window.firebaseAPI.logout) {
+                            try {
+                                await window.firebaseAPI.logout();
+                                console.log("Sesión de Firebase cerrada correctamente.");
+                            } catch (e) {
+                                console.error("Error al cerrar sesión:", e);
+                            }
+                        }
+
                         localStorage.clear();
 
                         if ('caches' in window) {
