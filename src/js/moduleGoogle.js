@@ -23,18 +23,25 @@ window.firebaseAPI = {
     },
 
     // 2. Cerrar sesión
-    logout: async () => {
-        if (confirm("¿Deseas cerrar sesión?")) {
+        logout: async () => {
             try {
+                // 1. Cerramos sesión y ESPERAMOS la respuesta del servidor
                 await signOut(auth);
-                // Opcional: limpiar datos locales al salir
-                // localStorage.clear(); 
-                window.location.reload();
+                console.log("Sesión cerrada con éxito");
+
+                // 2. Limpiamos LocalStorage (Evita que el usuario vea datos previos al recargar)
+                localStorage.clear(); 
+
+                // 3. Redirigimos al inicio en lugar de recargar la misma página
+                // Esto garantiza que la app "nazca" de nuevo sin estados previos
+                window.location.href = "index.html"; 
+                
             } catch (error) {
                 console.error("Error al cerrar sesión:", error);
+                // En caso de error, forzamos recarga para intentar limpiar el estado
+                window.location.reload();
             }
-        }
-    },
+        },
 
     // 3. Escuchador de autenticación para componentes externos (como navigator.js)
     onAuthReady: (callback) => {
