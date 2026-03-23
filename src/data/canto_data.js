@@ -3335,7 +3335,7 @@ const allCantosData = [
             { line: "Mis lágrimas son mi pan noche y día, ", sC: ""},
             { line: "mientras mis enemigos me dicen todo el día: ", sC: ""},
             { line: "«¿Dónde está tu Dios? ¿Dónde está tu Dios?, (Fa#,m,184)", sC: ""},
-            { line: "¿Dónde está tu Dios?», ", sC: ""},
+            { line: "¿Dónde está tu Dios?». ", sC: ""},
             { line: "Y cuando yo recuerdo, (Si,7,170)", sC: ""},
             { line: "el alma se me llena de tristeza,", sC: ""},
             { line: "cómo marchaba en medio ", sC: ""},
