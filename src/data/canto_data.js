@@ -8,7 +8,13 @@ Generar espacio: \u200B   , lo que est'a entre la coma es el espacio que se gene
 // Valores estándar para cualquier canto nuevo
 // Al principio del archivo canto_data.js
 
+const DEFAULT_SCROLL_CONFIG = {
 
+              mobile: { v: 23, i: 1 }, // Para celular
+              tablet: { v: 25, i: 1 },  // Para tablet
+             desktop: { v: 7, i: 1 },   // Para PC
+        desktopsmall: { v: 7, i: 1 }
+     };
 
 /*
 ╔═══════════════════════════════════════════════════════════╗
