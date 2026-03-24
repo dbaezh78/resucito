@@ -330,6 +330,7 @@ const URLS_TO_CACHE = [
     'src/css/pg/cuandoisraelsaliodeegipto.css',
     'src/css/pg/dayenu.css',
     'src/css/pg/dayenu2.css',
+    'src/css/pg/dayenucompleto.css',
     'src/css/pg/debora.css',
     'src/css/pg/decidlealosdecorazoncansado.css',
     'src/css/pg/delantedelosangeles.css',

@@ -8,13 +8,7 @@ Generar espacio: \u200B   , lo que est'a entre la coma es el espacio que se gene
 // Valores estándar para cualquier canto nuevo
 // Al principio del archivo canto_data.js
 
-const DEFAULT_SCROLL_CONFIG = {
 
-              mobile: { v: 23, i: 1 }, // Para celular
-              tablet: { v: 25, i: 1 },  // Para tablet
-             desktop: { v: 7, i: 1 },   // Para PC
-        desktopsmall: { v: 7, i: 1 }
-     };
 
 /*
 ╔═══════════════════════════════════════════════════════════╗
@@ -171,8 +165,8 @@ const allCantosData = [
                     { line: "NECESIDADES, ANGUSTIAS Y FATIGAS. (Re,m,18)(Mi,,322)", sC: "as" },
                 ]},
 
-            { line: "En pureza, paciencia y bondad, (Re,m,15) (Mi,,271)", sC: "mt tc" },
-            { line: "en el Espíritu Santo, y en el poder de Dios. (Fa,,141) (Mi,,375)" },
+            { line: "En pureza, paciencia y bondad, (Re,m,15)(Mi,,271)", sC: "mt tc" },
+            { line: "en el Espíritu Santo, y en el poder de Dios. (Fa,,141)(Mi,,375)" },
         ]},
         /*
 ╔════════════════════════════════════════════════════╗
@@ -236,11 +230,7 @@ const allCantosData = [
                     { line: "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)", sC: "as b2" },
                 ]},
         ],
-        lder: [
-
-        ]
-    }
-    ,
+        lder: []},
 /*
 ╔════════════════════════════════════════════════════════════════╗
 ║                A TI, SEÑOR, EN MI CLAMOR IMPLORO               ║
@@ -448,7 +438,7 @@ const allCantosData = [
 
 /*
 ╔════════════════════════════════════════════════════════╗
-║           A TU LUZ, SEÑOR, VEMOS LA LUZ               ║
+║           A TU LUZ, SEÑOR, VEMOS LA LUZ                ║
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "atuluzsenorvemoslaluz",
@@ -614,7 +604,7 @@ const allCantosData = [
         sig: "/src/index.html?canto=aclamadalsenor",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Hacía calor aquel día, (La,m,15)m", sC: "tc"},
+            { line: "Hacía calor aquel día, (La,m,15)", sC: "tc"},
             { line: "cuando Abraham, (Re,m,28)(Mi,,139)", sC: ""},
             { line: "estaba sentado delante de su tienda., (La,m,307)", sC: ""},
             { line: "Hacía calor aquel día, ", sC: "mt"},
@@ -650,9 +640,9 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: ABRAHAM
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
+╔═══════════════════════════════════════════════╗
 ║                ACLAMAD AL SEÑOR               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╚═══════════════════════════════════════════════╝  */
    {
         id: "aclamadalsenor",
         tt: "Aclamad Al Señor",
@@ -1000,9 +990,9 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: ALEGRÍA, HA NACIDO EL SALVADOR
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
-║                ALELUYA, ALABAD AL SEÑOR               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╔══════════════════════════════════════════════════╗
+║                ALELUYA, ALABAD AL SEÑOR          ║
+╚══════════════════════════════════════════════════╝  */
    {
         id: "aleluyaalabadalsenor",
         tt: "Aleluya, Alabad Al Señor",
@@ -1155,9 +1145,9 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA, BENDECID AL SEÑOR
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
+╔═════════════════════════════════════════════════════════╗
 ║                ALELUYA, YA LLEGÓ EL REINO               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╚═════════════════════════════════════════════════════════╝  */
    {
         id: "aleluyayallegoelreino",
         tt: "Aleluya, Ya Llegó El Reino",
@@ -1225,9 +1215,9 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: ALELUYA, YA LLEGÓ EL REINO
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════════════╗
+╔══════════════════════════════════════════════╗
 ║                ALZAOS, PUERTAS               ║
-╚════════════════════════════════════════════════════════════════╝  */
+╚══════════════════════════════════════════════╝  */
    {
         id: "alzaospuertas",
         tt: "Alzaos, Puertas",
@@ -3679,7 +3669,7 @@ const allCantosData = [
             { line: "COLINAS, COMO CORDEROS?, (MI,,228)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "TIEMBLA TIERRA, TIEMBLA,, (La,,12)", sC: "as"},
-            { line: "DELANTE DE DIOS QUE PASA,, (Fa#,m,154)Si(m,,250)", sC: "as"},
+            { line: "DELANTE DE DIOS QUE PASA,, (Fa#,m,154)(Si,m,244)", sC: "as"},
             { line: "DELANTE DEL DIOS DE JACOB,, (Re,,12)(La,,266)", sC: "as"},
             { line: "QUE HACE BROTAR DE LA ROCA EL AGUA., (Sol,,63)(Fa#,,352)", sC: "as a321"},
     ], lder: [
@@ -3693,7 +3683,7 @@ const allCantosData = [
         id: "dayenu",
         tt: "Dayenú",
         title: "Dayenú",
-        subtitle: "De la Hagadá de Pésaj hebrea",
+        subtitle: "De la Hagadá de Pésaj hebrea | Parte 1",
         category: ["PreCatecumenado","Paz","Pascua","Pentecostés"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
@@ -3804,9 +3794,9 @@ const allCantosData = [
 ╚════════════════════════════════╝  */
    {
         id: "dayenu2",
-        tt: "Dayenú",
+        tt: "Dayenu2",
         title: "Dayenú",
-        subtitle: "De la Hagadá de Pésaj hebrea",
+        subtitle: "De la Hagadá de Pésaj hebrea | Parte 2",
         category: ["PreCatecumenado","Paz","Pascua","Pentecostés"],
         catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
@@ -3818,12 +3808,12 @@ const allCantosData = [
         audioSrc: "https://audio.resucito.do/dayenu.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
-              mobile: { v: 23, i: 1 }, // Para celular
+              mobile: { v: 23, i: 1 },  // Para celular
               tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
-        desktopsmall: { v: 7, i: 1 }},   // Para PC
+        desktopsmall: { v: 7, i: 1 }},  // Para PC
         ant: "/src/index.html?canto=dayenu",
-        sig: "/src/index.html?canto=deprofundis",
+        sig: "/src/index.html?canto=dayenucompleto",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Si hubiera construido en nosotros su templo, (Re,,178)(Do,,366)", sC: "tc"},
@@ -3874,6 +3864,185 @@ const allCantosData = [
             { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,101)(Do,,200)(Mi,m,269)", sC: "ta as"},
 ]}, // ULTIMA LINEA DEL CANTO: DAYENÚ
 // SIGUIENTE CANTO DEBAJO
+
+/*
+╔════════════════════════════════╗
+║           DAYENÚ               ║
+╚════════════════════════════════╝  */
+   {
+        id: "dayenucompleto",
+        tt: "Dayenú",
+        title: "Dayenú",
+        subtitle: "De la Hagadá de Pésaj hebrea (Completo)",
+        category: ["PreCatecumenado","Paz","Pascua","Pentecostés"],
+        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "45",
+        notes: "",
+        mant: "No",
+        audioSrc: "https://audio.resucito.do/dayenu.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+              mobile: { v: 23, i: 1 }, // Para celular
+              tablet: { v: 25, i: 1 },  // Para tablet
+             desktop: { v: 7, i: 1 },   // Para PC
+        desktopsmall: { v: 7, i: 1 }},   // Para PC
+        ant: "/src/index.html?canto=dayenu2",
+        sig: "/src/index.html?canto=deprofundis",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "Cuántos bienes nos ha dado el Señor., (Mi,m,18)(La,m,107)(Mi,m,343)", sC: "tc"},
+            { line: "CUÁNTOS BIENES, (La,m,126)", sC: "ta as"},
+            { line: "NOS HA DADO EL SEÑOR., (Mi,m,218)", sC: "as"},
+            { line: "Cuántos bienes nos ha dado el Señor., (Re,,108)(Do,,240)(Mi,m,344)", sC: "tc"},
+            { line: "CUÁNTOS BIENES, (Re,,123)", sC: "ta as"},
+            { line: "NOS HA DADO EL SEÑOR., (Do,,106)(Mi,m,219)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si Cristo nos hubiera hecho salir de Egipto, (La,m,222)(Si,7,370)", sC: "tc"},
+            { line: "y no hubiera hecho justicia del Faraón:, (Mi,m,345)", sC: ""},
+            { line: "ESO NOS HABRÍA BASTADO,, (Re,,11)(Do,,228)", sC: "ta as"},
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Si hubiera hecho justicia del Faraón, (Re,,122)(Do,,324)", sC: "tc"},
+            { line: "y no nos hubiera librado de todos los ídolos:, (Si,7,202)(Mi,m,372)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si nos hubiera librado de todos los ídolos, (Mi,m,15)(La,m,175)(Si,7,350)", sC: ""},
+            { line: "y no nos hubiera dado todas sus riquezas:, (Mi,m,358)", sC: ""},
+
+            { type: "collapsible-block", id: "asamblea_anadie_2", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Si nos hubiera dado todas sus riquezas, (Re,,161)(Do,,303)", sC: ""},
+            { line: "y no hubiera abierto el mar para nosotros:, (Si,7,158)(Mi,m,357)", sC: ""},
+
+            { type: "collapsible-block", id: "asamblea_anadie_3", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+
+            { line: "Si hubiera abierto el mar para nosotros, (Mi,m,15)(La,m,136)(Si,7,333)", sC: "tc"},
+            { line: "y no hubiera hundido a nuestros opresores:, (Mi,m,376)", sC: ""},
+
+            { type: "collapsible-block", id: "asamblea_anadie_4", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "Si hubiera hundido a nuestros opresores, (Re,,150)(Do,,353)", sC: "tc"},
+            { line: "y no nos hubiera abierto un camino en el desierto:, (Si,7,199)(Mi,m,440)", sC: "full"},
+            { type: "collapsible-block", id: "asamblea_anadie_5", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si nos hubiera abierto un camino en el desierto, (Mi,m,11)(La,m,175)(Si,7,423)", sC: "tc"},
+            { line: "y no nos hubiera nutrido con el pan de la vida:, (Mi,m,411)", sC: ""},
+
+            
+            { type: "collapsible-block", id: "asamblea_anadie_6", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si nos hubiera nutrido con el pan de la vida, (Re,,10)(Do,,184)", sC: "tc"},
+            { line: "y no nos hubiera dado el día del Señor:, (Si,7,183)(Mi,m,351)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_7", initialState: "collapsed",
+     triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+               ], lder: [
+
+            { line: "Si nos hubiera dado el día del Señor, (Mi,m,20)(La,m,162)(Si,7,331)", sC: "tc"},
+            { line: "y no nos hubiera sellado una nueva Alianza:, (Mi,m,376)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_8", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si hubiera hecho con nosotros una nueva Alianza, (Re,,245)(Do,,428)", sC: "tc"},
+            { line: "y no nos hubiera hecho entrar en su Iglesia:, (Si,7,182)(Mi,m,376)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_9", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Si nos hubiera hecho entrar en su Iglesia, (Mi,m,20)(La,m,163)(Si,7,358)", sC: "tc"},
+            { line: "y no hubiera construido en nosotros su templo:, (Mi,m,393)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_10", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+
+            { line: "Si hubiera construido en nosotros su templo, (Re,,178)(Do,,366)", sC: "tc"},
+            { line: "y no lo hubiera llenado de su Santo Espíritu:, (Si,7,186)(Mi,m,375)", sC: ""},
+            { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
+       triggerLine: "ESO NOS HABRÍA BASTADO, (Re,,11)(Do,,228)", sC: "ta as", lines: [
+            { line: "NOS HABRÍA BASTADO., (Mi,m,187)", sC: "as"},
+            { line: "DAYENÚ, DAYENÚ, DAYENÚ., (Re,,78)(Do,,165)(Mi,m,250)", sC: "as"},  ]},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Cuánto más tenemos que dar gracias al Señor., (La,m,150)(Mi,m,426)", sC: "tc"},
+            { line: "CUÁNTO MÁS TENEMOS, (La,m,180)", sC: "ta as"},
+            { line: "QUE DAR GRACIAS AL SEÑOR., (Mi,m,261)", sC: "as"},
+            { line: "Cuánto más tenemos que dar gracias al Señor., (Re,,153)(Do,,314)(Mi,m,432)", sC: "tc"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "CUÁNTO MÁS TENEMOS, (Re,,176)", sC: "ta as"},
+            { line: "QUE DAR GRACIAS AL SEÑOR., (Do,,123)(Mi,m,261)", sC: "as"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "Que nos ha hecho salir de Egipto., (La,m,130)(Mi,m,280)", sC: "r1"},
+            { line: "Que ha hecho justicia del Faraón., (La,m,91)(Mi,m,291)", sC: "r1"},
+            { line: "Que nos ha librado de todos los enemigo, (Re,,150)(Do,,226)(Mi,m,359)", sC: "r1"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "Que nos ha dado todas sus riqueza, (La,m,132)(Mi,m,303)", sC: "r1"},
+            { line: "Que ha abierto el mar para nosotro, (La,m,106)(Mi,m,301)", sC: "r1"},
+            { line: "Que ha hundido a nuestros opresore, (Re,,122)(Do,,203)(Mi,m,316)", sC: "r1"},
+            { line: "", sC: "tc1"}, // Espacio Generado para separar contenido
+            { line: "Que nos ha dado un camino en el desierto., (La,m,131)(Mi,m,368)", sC: "r1"},
+            { line: "Que nos ha nutrido con el pan de la vida., (La,m,152)(Mi,m,360)", sC: "r1"},
+            { line: "Que nos ha dado el día del Señor., (Re,,130)(Do,,202)(Mi,m,301)", sC: "r1"},
+            { line: "Que nos ha hecho una nueva Alianza., (La,m,129)(Mi,m,316)", sC: "r1"},
+            { line: "Que nos ha hecho entrar en su Iglesia., (La,m,129)(Mi,m,325)", sC: "r1"},
+            { line: "Que ha construido en nosotros su templo., (Re,,149)(Do,,250)(Mi,m,339)", sC: "r1"},
+            { line: "Y lo ha llenado de su Espíritu Santo, (Re,,106)(Do,,296)", sC: "tc"},
+            { line: "en el perdón de los pecados., (Si,7,102)(Mi,m,237)", sC: ""},
+            { line: "", sC: "tc2"}, // Espacio Generado para separar contenido
+            { line: "Cristo nuestra Pascua está resucitado., (Mi,m,21)(La,m,159)(Mi,m,332)", sC: "tc"},
+            { line: "CRISTO NUESTRA PASCUA, (La,m,193)", sC: "ta as"},
+            { line: "ESTÁ RESUCITADO., (Mi,m,144)", sC: "as"},
+            { line: "Cristo nuestra Pascua está resucitado., (Re,,154)(Do,,247)(Mi,m,332)", sC: "tc"},
+            { line: "CRISTO NUESTRA PASCUA, (Re,,191)", sC: "ta as"},
+            { line: "ESTÁ RESUCITADO., (Do,,45)(Mi,m,144)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Aleluya, aleluya., (La,m,43)(Mi,m,95)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA., (La,m,55)(Mi,m,113)", sC: "ta as"},
+            { line: "Aleluya, aleluya, aleluya, (La,m,94)(Mi,m,176)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (La,m,112)(Mi,m,206)", sC: "ta as"},
+            { line: "Aleluya, aleluya, aleluya., (Re,,86)(Do,,166)(Mi,m,217)", sC: "tc"},
+            { line: "ALELUYA, ALELUYA, ALELUYA., (Re,,101)(Do,,200)(Mi,m,269)", sC: "ta as"},
+
+
+]     }, // ULTIMA LINEA DEL CANTO: DAYENÚ
+
+
+
 /*
 ╔══════════════════════════════════════╗
 ║           DE PROFUNDIS               ║
@@ -3898,7 +4067,7 @@ const allCantosData = [
               tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
-        ant: "/src/index.html?canto=dayenu",
+        ant: "/src/index.html?canto=dayenucompleto",
         sig: "/src/index.html?canto=decidlealosdecorazoncansado",
 // Contenido del lado izquierdo del canto,
     lizq: [
@@ -3915,8 +4084,8 @@ const allCantosData = [
             { line: "Si llevas cuentas de los pecados, Señor,, (Sol,,14)(Fa,,355)(La,m,393)", sC: "tc"},
             { line: "¿quién se salvará?, ¿quién se salvará?, (Fa,7,355)(Mi,7,388)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Mas cerca de ti está el perdón,, (Fa,m,15)(Mi,7,250)", sC: "tc"},
-            { line: "sólo en ti se encuentra el amor., (Fa,7,85)la(La,m,283)", sC: ""},
+            { line: "Mas cerca de ti está el perdón,, (Fa,m,71)(Mi,7,275)", sC: "tc"},
+            { line: "sólo en ti se encuentra el amor., (Fa,7,85)(La,m,283)", sC: ""},
             { line: "MAS CERCA DE TI ESTÁ EL PERDÓN,, (Fa,,69)(Mi,7,324)", sC: "tc as"},
             { line: "SÓLO EN TI SE ENCUENTRA EL AMOR., (Fa,7,103)(La,m,337)", sC: "as"},
     ], lder: [
@@ -5151,7 +5320,7 @@ const allCantosData = [
             { line: "mas al tocar tu vestido, (Sol,,193)", sC: ""},
             { line: "el flujo de sangre se curó»., (Fa,,40)(Mi,,233)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "«Hija, tu fe,, (La,m,27)Sol", sC: ""},
+            { line: "«Hija, tu fe,, (La,m,27)(Sol,,94)", sC: ""},
             { line: "tu fe te ha salvado»., (Fa,,38)(Mi,,149)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "collapsed",
@@ -12848,7 +13017,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ven del Líbano, ven., (Do,,10)(Re,,86)(Mi,m,168)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "BUSQUÉ EL AMOR DEL ALMA MÍA,, (Sol,,153)(La,,303)", sC: "ta as"},
-            { line: "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)Mi(m,,257)", sC: "as"},
+            { line: "LO BUSQUÉ SIN ENCONTRARLO., (La,m,96)(Mi,m,257)", sC: "as"},
             { line: "ENCONTRÉ EL AMOR DE MI VIDA,, (Sol,,98)(La,,282)", sC: "as"},
             { line: "LO HE ABRAZADO Y NO LO DEJARÉ JAMÁS., (Do,,136)(Re,,284)(Mi,m,392)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -13758,12 +13927,12 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "ME RODEABAN LOS LAZOS DEL SEOL,, (La,,96)(Sol,,338)", sC: "as"},
             { line: "HABÍA CAÍDO EN LOS CEPOS DE LA MUERTE., (Re,,379)", sC: "as"},     ]},
             { line: "", sC: "adb"}, // Espacio Generado para separar contenido
-            { img: "/src/img/yoteamo1.png",chords: "(Si,m,93)(La,,348)",sC: "img ast" },
-            { img: "/src/img/yoteamo2.png",chords: "(Si,m,71)(La,,281)(Si,m,380)",sC: "img" },
-            { img: "/src/img/yoteamo3.png",chords: "(Sol,,65)(Fa#,,173)(Sol,,236)(Fa#,,430)",sC: "img" },
+            { img: "/src/img/yoteamo1.png", chords: "(Si,m,93)(La,,348)",sC: "img ast" },
+            { img: "/src/img/yoteamo2.png", chords: "(Si,m,71)(La,,281)(Si,m,380)",sC: "img" },
+            { img: "/src/img/yoteamo3.png", chords: "(Sol,,65)(Fa#,,173)(Sol,,236)(Fa#,,430)",sC: "img" },
             { line: "", sC: "adb"}, // Espacio Generado para separar contenido
-            { img: "/src/img/yoteamo4.png",chords: "(Si,m,88)(Sol,,213)(La,,382)",sC: "img astd" },
-            { img: "/src/img/yoteamo5.png",chords: "(Sol,,67)(Fa#,,188)(Sol,,301)(Fa#,,425)",sC: "img" },
+            { img: "/src/img/yoteamo4.png", chords: "(Si,m,88)(Sol,,213)(La,,382)",sC: "img astd" },
+            { img: "/src/img/yoteamo5.png", chords: "(Sol,,67)(Fa#,,188)(Sol,,301)(Fa#,,425)",sC: "img" },
 ]}, // ULTIMA LINEA DEL CANTO: YO TE AMO, SEÑOR
 // SIGUIENTE CANTO DEBAJO
 /*
@@ -14103,7 +14272,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Do,,159)(Re,,348)", sC: "as"},
             { line: "GLORIA AL SEÑOR., (Sol,,157)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "En el esplendor de la nube,, (Mi,m,20)Re", sC: "tc"},
+            { line: "En el esplendor de la nube,, (Mi,m,20)(Re,,223)", sC: "tc"},
             { line: "se oyó la voz del Padre:, (Mi,m,177)", sC: ""},
             { line: "Este es mi Hijo amado, escuchadle,, (Re,,183)(Mi,m,300)", sC: ""},
             { line: "este es mi Hijo amado, escuchadle»., (Re,,179)(Mi,m,302)", sC: ""},
@@ -20586,7 +20755,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "que viene del Señor?, (Fa#,,176)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "SIÉNTATE SOLITARIO Y SILENCIOSO,, (Re, ,12)(Fa#,m,302)", sC: "ta as"},
-            { line: "PORQUE DIOS TE LO HA IMPUESTO., (Si,m,119)Re", sC: "as"},
+            { line: "PORQUE DIOS TE LO HA IMPUESTO., (Si,m,119)(Re,,291)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "HUMILLA TU BOCA EN EL POLVO,, (Fa#,m,265)", sC: "as"},
             { line: "QUIZÁ HAYA ESPERANZA. (Si,m,43)(Re,,198)", sC: "as"},
@@ -20859,9 +21028,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "PORQUE LA VIDA INMORTAL, (Fa,,252)", sC: "ta as"},
             { line: "HA PUESTO SU TIENDA, ", sC: "as"},
             { line: "DENTRO DE NOSOTROS., (Mi,,171)", sC: "as"},
-            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,Fa,109)Mi", sC: "as"},
+            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,,96)(Fa,,121)(Mi,,204)", sC: "as"},
             { line: "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)", sC: "as"},
-            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,Fa,110)Mi", sC: "as"},
+            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,,96)(Fa,,121)(Mi,,204)", sC: "as"},
             { line: "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_miel_1", initialState: "collapsed",
@@ -20888,9 +21057,10 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
        triggerLine: "PORQUE LA VIDA INMORTAL, (Fa,,252)", sC: "ta as", lines: [
             { line: "HA PUESTO SU TIENDA, ", sC: "as"},
             { line: "DENTRO DE NOSOTROS., (Mi,,171)", sC: "as"},
-            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,Fa,109)Mi", sC: "as"},
+            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,,96)(Fa,,121)(Mi,,204)", sC: "as"},
             { line: "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)", sC: "as"},
-            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,Fa,110)Mi", sC: "as"},
+
+            { line: "AALELUYA, AALELUYA,, (Fa,,10)(Mi,,96)(Fa,,121)(Mi,,204)", sC: "as"},
             { line: "AAALELÚU,ALELÚ,ALELUYA., (Fa,,10)(Mi,,254)", sC: "as"},  ]},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { type: "collapsible-block", id: "asamblea_miel_3", initialState: "collapsed",
@@ -21479,7 +21649,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "UNO es nuestro Dios en el cielo y en la tierra., (Mi,m,20)(Si,7,271)(Mi,m,395)", sC: "ta as"},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-// CONTINUAR AQUI
+
             { line: "¿Quién sabe qué es el CUATRO?, (Mi,m,20)(Si,7,141)(Mi,m,239)", sC: "td as"},
             { line: "¿Quién sabe qué es el CUATRO?, (Si,7,141)(Mi,m,237)", sC: "td as"},
             { line: "Yo sé lo que es el Cuatro.Yo sé lo que es el Cuatro, (La,m,20)(Mi,m,196)(Si,7,293)(Mi,m,433)", sC: ""},
