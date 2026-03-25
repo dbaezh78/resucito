@@ -111,62 +111,60 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentCanto = typeof allCantosData !== 'undefined' ? allCantosData.find(canto => canto.id === cantoIdToLoad) : null;
 
 if (currentCanto) {
+                console.log("Canto found:", currentCanto.title);
+                loadDynamicCSS(cantoIdToLoad);
 
-console.log("Canto found:", currentCanto.title);
-            loadDynamicCSS(cantoIdToLoad);
+// --- INICIO BLOQUE CEJILLA, ACORDE Y RATING O VALORACION ---
+fetch('/src/data/indicecantos.json') 
+    .then(response => response.json())
+    .then(data => {
+        const infoExtra = data.find(c => c.id === cantoIdToLoad);
+        if (infoExtra) {
+            const elContenedor = document.getElementById('info-traste-dinamico');
+            const elBase = document.getElementById('traste-base');
+            const elAcorde = document.getElementById('canto-acorde-base');
 
-            // --- INICIO BLOQUE CEJILLA, ACORDE Y RATING O VALORACION (CORREGIDO) ---
-            
-            // Usamos directamente la variable 'songs' o 'allCantosData'
-            const dataLib = (typeof songs !== 'undefined') ? songs : allCantosData;
-            const infoExtra = dataLib.find(c => c.id === cantoIdToLoad);
+            if (elContenedor) {
+                if (elAcorde) elAcorde.innerText = infoExtra.acorde ? `${infoExtra.acorde}` : "";
+                if (elBase) elBase.innerText = infoExtra.cejilla || "";
 
-            if (infoExtra) {
-                const elContenedor = document.getElementById('info-traste-dinamico');
-                const elBase = document.getElementById('traste-base');
-                const elAcorde = document.getElementById('canto-acorde-base');
-
-                if (elContenedor) {
-                    if (elAcorde) elAcorde.innerText = infoExtra.acorde ? `${infoExtra.acorde}` : "";
-                    if (elBase) elBase.innerText = infoExtra.cejilla || "";
-
-                    // --- CARGA DE ESTRELLAS COMPATIBLE ---
-                    const dataPerfil = JSON.parse(localStorage.getItem(`data-${cantoIdToLoad}`));
-                    const valorBackup = localStorage.getItem(`valoracion_${cantoIdToLoad}`);
-                    
-                    let puntosFinales = 0;
-                    if (dataPerfil && dataPerfil.valoracion !== undefined) {
-                        puntosFinales = dataPerfil.valoracion;
-                    } else if (valorBackup !== null) {
-                        puntosFinales = parseInt(valorBackup);
-                    } else {
-                        puntosFinales = infoExtra.valoracion || 0;
-                    }
-
-                    pintarEstrellasVisuales(puntosFinales, cantoIdToLoad);
-                    elContenedor.style.display = 'inline-flex';
+                // --- CARGA DE ESTRELLAS COMPATIBLE ---
+                // 1. Buscamos en el objeto 'data-ID' (el que usa perfil.js)
+                const dataPerfil = JSON.parse(localStorage.getItem(`data-${cantoIdToLoad}`));
+                // 2. Buscamos en el backup 'valoracion_ID'
+                const valorBackup = localStorage.getItem(`valoracion_${cantoIdToLoad}`);
+                
+                let puntosFinales = 0;
+                if (dataPerfil && dataPerfil.valoracion !== undefined) {
+                    puntosFinales = dataPerfil.valoracion;
+                } else if (valorBackup !== null) {
+                    puntosFinales = parseInt(valorBackup);
+                } else {
+                    puntosFinales = infoExtra.valoracion || 0;
                 }
 
-                // --- SINCRONIZACIÓN CON FIREBASE ---
-                if (window.firebaseAPI && window.firebaseAPI.onAuthStateChanged) {
-                    window.firebaseAPI.onAuthStateChanged(window.auth, (user) => {
-                        if (user) {
-                            console.log("✅ Sesión detectada, sincronizando con la nube...");
-                            if (typeof cargarInformacionCejilla === 'function') {
-                                cargarInformacionCejilla(cantoIdToLoad);
-                            }
-                        } else {
-                            console.log("👤 Modo invitado.");
-                        }
-                    });
-                }
-            } else {
-                console.warn("⚠️ No se encontró información extra en la librería para:", cantoIdToLoad);
+                pintarEstrellasVisuales(puntosFinales, cantoIdToLoad);
+                elContenedor.style.display = 'inline-flex';
             }
-            // --- FIN BLOQUE CEJILLA, ACORDE Y VALORACION ---
-            
-            
-            
+
+            // --- SINCRONIZACIÓN CON FIREBASE ---
+            if (window.firebaseAPI && window.firebaseAPI.onAuthStateChanged) {
+                window.firebaseAPI.onAuthStateChanged(window.auth, (user) => {
+                    if (user) {
+                        console.log("✅ Sesión detectada, sincronizando con la nube...");
+                        if (typeof cargarInformacionCejilla === 'function') {
+                            cargarInformacionCejilla(cantoIdToLoad);
+                        }
+                    } else {
+                        console.log("👤 Modo invitado.");
+                    }
+                });
+            }
+        }
+    })
+    .catch(err => console.error("Error cargando datos de cejilla:", err));                    
+
+                    
         // Procesar las categorías para incluir sus URLs
         const processedCategories = currentCanto.category.map(catName => {
             let baseUrl = "/index.html?";

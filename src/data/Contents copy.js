@@ -29,12 +29,14 @@ const aetns1 = "Domingo I, Tiempo Navidad";
 const aetns2 = "Domingo II, Tiempo Navidad";
 const aetns3 = "Domingo III, Tiempo Navidad";
 const aetns4 = "Domingo IV, Tiempo Navidad";
+
 const aetns25dicmv = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aetns25dicmm = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aetns25dicma = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aetns25dicmd = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aetnssf = "Fiesta de la Sagrada Familia";    //Aleluya - Sagrada Familia
-const aetns6 = " La Epifanía del Señor";    //Aleluya - Sagrada Familia
+const aetns6 = "La Epifanía del Señor";    //Aleluya - Sagrada Familia
+const aetn1e = "Santa Maria Madre de Dios";    //Aleluya - Sagrada Familia
 
 // Tiempo Ordinario
 const aetos1 = "Domingo I, Tiempo Ordinario";
@@ -156,10 +158,10 @@ let aetnssfa2 = "en vuestro corazón;";
 let aetnssfa3 = "la palabra de Cristo habite entre vosotros";
 let aetnssfa4 = "en toda su riqueza.";
 
-const aetns1a = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
-let aetns1a1 = "En distintas ocasiones habló Dios antiguamente";
-let aetns1a2 = "a nuestros padres por los profetas;";
-let aetns1a3 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
+const aetn1ea = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
+let aetn1ea1 = "En distintas ocasiones habló Dios antiguamente";
+let aetn1ea2 = "a nuestros padres por los profetas;";
+let aetn1ea3 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
 
 const aetns2a = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
 let aetns2a1 = "Gloria a ti, Cristo, proclamado a los paganos.";
@@ -486,9 +488,9 @@ const aetnssfb = "Col 3, 15a. 16a - La Sagrada Familia";
 let aetnssfb1 = "Que la paz de Cristo actúe de árbitro en vuestro corazón;";
 let aetnssfb2 = "la palabra de Cristo habite entre vosotros en toda su riqueza.";
 
-const aetns1enerob = "Hb 1, 1-2";
-let aetns1enerob1 = "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas;";
-let aetns1enerob2 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
+const aetn1eb = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
+let aetn1eb1 = "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas;";
+let aetn1eb2 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
 
 const aetns2domingob = "Cf. 1Tm 3, 16 - 2º Domingo después de Navidad";
 let aetns2domingob1 = "Gloria a ti, Cristo, proclamado a los paganos.";
@@ -791,10 +793,10 @@ let aetnssfc2 = "en vuestro corazón;";
 let aetnssfc3 = "la palabra de Cristo habite entre vosotros";
 let aetnssfc4 = "en toda su riqueza.";
 
-const aetns1eneroc = "Hebreos 1, 1-2";
-let aetns1eneroc1 = "En distintas ocasiones habló Dios antiguamente";
-let aetns1eneroc2 = "a nuestros padres por los profetas;";
-let aetns1eneroc3 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
+const aetn1ec = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
+let aetn1ec1 = "En distintas ocasiones habló Dios antiguamente";
+let aetn1ec2 = "a nuestros padres por los profetas;";
+let aetn1ec3 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
 
 const aetns2domingoc = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
 let aetns2domingoc1 = "Gloria a ti, Cristo, proclamado a los paganos.";

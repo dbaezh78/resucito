@@ -1,0 +1,136 @@
+/* --- 1. CONFIGURACIÓN DE COLORES LITÚRGICOS (ESTRICTA) --- */
+/* Usamos !important para asegurar que el fondo NUNCA cambie a blanco por error */
+.bg-adviento  { background-color: #6a1b9a !important; color: white !important; }
+.bg-navidad   { background-color: #c62828 !important; color: white !important; }
+.bg-ordinario { background-color: #eeeeee !important; color: #555 !important; }
+.bg-cuaresma  { background-color: #4a148c !important; color: white !important; }
+.bg-pascua    { background-color: #1565c0 !important; color: white !important; }
+
+/* --- 2. CICLOS ABC (DORADO -> BLANCO AL PASAR EL MOUSE) --- */
+.ciclo-item {
+    margin-bottom: 8px;
+    background: white;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ciclo-item > summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+    /* DORADO POR DEFECTO */
+    background: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    color: #4a3703;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #eee;
+}
+
+.ciclo-item > summary::-webkit-details-marker { display: none; }
+
+/* EFECTO AL PASAR EL MOUSE POR EL CICLO */
+.ciclo-item:hover {
+    transform: translateY(-5px);
+    z-index: 20;
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.6); 
+}
+
+/* Solo el summary del ciclo cambia a blanco, no lo de adentro */
+.ciclo-item:hover > summary {
+    background: white !important;
+    color: #bf953f; 
+}
+
+/* --- 3. TIEMPOS (SIEMPRE CON SU COLOR + SOMBRA EN HOVER) --- */
+.tiempo-item {
+    transition: all 0.3s ease;
+    margin: 4px 0;
+}
+
+.tiempo-item summary::-webkit-details-marker { display: none; }
+
+.tiempo-banner {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* El tiempo se levanta y brilla con SU color al pasar el mouse */
+.tiempo-item:hover {
+    transform: translateY(-5px);
+    z-index: 30; /* Por encima del ciclo */
+}
+
+.tiempo-item:hover .tiempo-banner {
+    box-shadow: 0 10px 20px var(--color-tiempo);
+    filter: brightness(1.1);
+}
+
+.arrow-tiempo {
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+}
+.tiempo-item[open] .arrow-tiempo { transform: rotate(180deg); }
+
+/* --- 4. CANTOS (LISTA INTERNA) --- */
+.canto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px 14px 25px;
+    background: white;
+    border-bottom: 1px solid #f2f2f2;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.canto-item::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background-color: var(--color-tiempo);
+}
+
+.canto-item:hover {
+    transform: translateY(-4px);
+    z-index: 40;
+    box-shadow: 0 10px 20px var(--color-tiempo);
+    padding-left: 30px;
+}
+
+.canto-item:hover .canto-titulo,
+.canto-item:hover .icon-chevron {
+    color: var(--color-tiempo);
+}
+
+/* --- 5. DETALLES DE ICONOS Y TEXTO --- */
+.title-box { display: flex; align-items: center; gap: 12px; }
+.arrow { transition: transform 0.3s; color: inherit; }
+.ciclo-item[open] > summary .arrow { transform: rotate(180deg); }
+.canto-titulo { font-weight: 600; color: #333; }
+.canto-sub { font-size: 0.8rem; color: #999; font-weight: normal; }
+.icon-chevron { color: #ccc; transition: transform 0.3s; }
+.canto-item:hover .icon-chevron { transform: translateX(5px); }
+
+/* Asegura que el título y el sub-título estén en líneas separadas */
+.canto-info {
+    display: flex;
+    flex-direction: column; /* Esto pone uno debajo del otro */
+    align-items: flex-start; /* Alinea a la izquierda */
+    gap: 2px; /* Un pequeño espacio entre los dos textos */
+}
