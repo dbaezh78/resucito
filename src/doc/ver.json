@@ -20,11 +20,21 @@
     "autor": "Carlos David"
   },
 
-  {"id": "v",
+  {"id": "v1.3",
     "titulo": "",
     "Contanido": [
-        "",
-        "",
+        "Quitar refresh desde tablet y celular",
+        "Unificar el buscador en todos los buscadores de la app",
+        ""
+    ],
+    "autor": ""
+},
+
+  {"id": "v1.4",
+    "titulo": "",
+    "Contanido": [
+        "1. Ocultar navigator con boton a la derecha",
+        "2. ",
         ""
     ],
     "autor": ""

@@ -28,95 +28,90 @@
 
     // 3. Crear el HTML de la navegación 
     // Añadimos 'style="visibility: hidden"' para evitar el parpadeo sin estilos
-// 3. Crear el HTML de la navegación 
     const navHTML = `
-        <div id="nav-wrapper">
-            <div id="nav-toggle" onclick="toggleNavbar()">
-                <span class="material-symbols-outlined" id="toggle-icon">keyboard_arrow_down</span>
-            </div>
 
-            <div class="nav-bottom-bar" id="main-navbar">
-                <div class="nav-version-display ver">
-                    v${window.APP_VERSION}
+    
+        <div class="nav-bottom-bar">
+
+
+        <div class="nav-bottom-bar">
+        <div class="nav-version-display ver">
+            v${window.APP_VERSION}
+        </div>
+
+            <a href="/" class="nav-item">
+                <span class="material-symbols-outlined">home</span>
+                <span>Inicio</span>
+            </a>
+
+            <button class="nav-item" id="btn-nav-menu">
+                <span class="material-symbols-outlined">menu</span>
+                <span>Menú</span>
+                <div class="nav-submenu" id="nav-submenu">
+                    <a href="https://www.youtube.com/@CristoJesusReydereyes" target="_blank"><span class="material-symbols-outlined">youtube_activity</span> YouTube</a>
+                    <a href="https://www.facebook.com/groups/721999947892692" target="_blank"><span class="material-symbols-outlined">communities</span> Facebook</a>
+                    <a href="https://dbaezh78.github.io/salterios/" target="_blank"><span class="material-symbols-outlined">prayer_times</span> Laudes</a>
+                    <a href="https://dbaezh78.github.io/ev/" target="_blank"><span class="material-symbols-outlined">book_2</span> Evangelio del Día</a>
+
+                    </div>
+            </button>
+
+            <button class="nav-item" id="btn-nav-neocate">
+                <span class="material-symbols-outlined">church</span>
+                <span>NeoCate</span>
+                <div class="nav-submenu" id="nav-submenu-neocate">
+                    <a href="https://neocatechumenaleiter.org/noticias/" target="_blank"><span class="material-symbols-outlined">newspaper</span> Noticias</a>
+                    <a href="https://app.resucito.es/home" target="_blank"><span class="material-symbols-outlined">library_music</span> Cantos del Camino</a>
+                    <a href="https://www.facebook.com/groups/323608705177419" target="_blank"><span class="material-symbols-outlined">groups</span> Comunidades</a>
+                    <a href="https://www.facebook.com/cantordelcaminoneocatecumenal" target="_blank"><span class="material-symbols-outlined">record_voice_over</span> Cantores</a>
+
+                    <a href="https://carmenhernandez.org/" target="_blank"> 
+                    <img src="/src/img/carmen_hernandez.jpg" alt="Carmen Hernández" class="img-perfil-link">
+                    <span>Carmen Hernández</span></a>
+
+                    <a href="https://neocatechumenaleiter.org/historia/kiko-arguello/" target="_blank"> 
+                    <img src="/src/img/kiko_arguello.jpg" alt="Kiko Arguello" class="img-perfil-link">
+                    <span>Kiko Argüello</span></a>
+
+                    <a href="https://neocatechumenaleiter.org/historia/mario-pezzi/" target="_blank">
+                    <img src="/src/img/mariopezzi.jpg" alt="Mario Pezzi" class="img-perfil-link">
+                    <span>Mario Pezzi</span></a>
+                    
+                    <a href="https://neocatechumenaleiter.org/historia/maria-ascension/" target="_blank">
+                    <img src="/src/img/maria_ascension.jpg" alt="Maria Ascension" class="img-perfil-link">
+                    <span>Maria Ascension</span></a>
+
                 </div>
+            </button>
 
-                <a href="/" class="nav-item">
-                    <span class="material-symbols-outlined">home</span>
-                    <span>Inicio</span>
-                </a>
+            <button class="nav-item" id="btn-nav-resucito">
+                <span class="material-symbols-outlined">menu_book</span>
+                <span>Resucitó</span>
+                <div class="nav-submenu" id="nav-submenu-resucito">
+                    <a href="/"><span class="material-symbols-outlined">home</span> Inicio</a>
+                    <a href="/perfil.html"><span class="material-symbols-outlined">person</span> Perfil</a>
+                    <a href="/src/select.html"><span class="material-symbols-outlined">playlist_add</span>Gestión Listas</a>
+                    <a href="/src/html/intro.html"><span class="material-symbols-outlined">menu_book</span> Introducción</a>
+                    <a href="/src/catequesis.html"><span class="material-symbols-outlined">history_edu</span> Catequesis</a>
+                </div>
+            </button>
 
-                <button class="nav-item" id="btn-nav-menu">
-                    <span class="material-symbols-outlined">menu</span>
-                    <span>Menú</span>
-                    <div class="nav-submenu" id="nav-submenu">
-                        <a href="https://www.youtube.com/@CristoJesusReydereyes" target="_blank"><span class="material-symbols-outlined">youtube_activity</span> YouTube</a>
-                        <a href="https://www.facebook.com/groups/721999947892692" target="_blank"><span class="material-symbols-outlined">communities</span> Facebook</a>
-                        <a href="https://dbaezh78.github.io/salterios/" target="_blank"><span class="material-symbols-outlined">prayer_times</span> Laudes</a>
-                        <a href="https://dbaezh78.github.io/ev/" target="_blank"><span class="material-symbols-outlined">book_2</span> Evangelio del Día</a>
-                    </div>
-                </button>
+            <button class="nav-item" id="btn-open-settings">
+                <span class="material-symbols-outlined">settings</span>
+                <span>Ajustes</span>
+            </button>
 
-                <button class="nav-item" id="btn-nav-neocate">
-                    <span class="material-symbols-outlined">church</span>
-                    <span>NeoCate</span>
-                    <div class="nav-submenu" id="nav-submenu-neocate">
-                        <a href="https://neocatechumenaleiter.org/noticias/" target="_blank"><span class="material-symbols-outlined">newspaper</span> Noticias</a>
-                        <a href="https://app.resucito.es/home" target="_blank"><span class="material-symbols-outlined">library_music</span> Cantos del Camino</a>
-                        <a href="https://www.facebook.com/groups/323608705177419" target="_blank"><span class="material-symbols-outlined">groups</span> Comunidades</a>
-                        <a href="https://www.facebook.com/cantordelcaminoneocatecumenal" target="_blank"><span class="material-symbols-outlined">record_voice_over</span> Cantores</a>
-                        
-                        <a href="https://carmenhernandez.org/" target="_blank"> 
-                            <img src="/src/img/carmen_hernandez.jpg" alt="Carmen Hernández" class="img-perfil-link">
-                            <span>Carmen Hernández</span>
-                        </a>
+            <a id="nav-google-auth" class="nav-item">
+                <span class="material-symbols-outlined" id="nav-auth-icon">account_circle</span>
+                <span id="nav-auth-text">Entrar</span>
+            </a>
 
-                        <a href="https://neocatechumenaleiter.org/historia/kiko-arguello/" target="_blank"> 
-                            <img src="/src/img/kiko_arguello.jpg" alt="Kiko Arguello" class="img-perfil-link">
-                            <span>Kiko Argüello</span>
-                        </a>
-
-                        <a href="https://neocatechumenaleiter.org/historia/mario-pezzi/" target="_blank">
-                            <img src="/src/img/mariopezzi.jpg" alt="Mario Pezzi" class="img-perfil-link">
-                            <span>Mario Pezzi</span>
-                        </a>
-                        
-                        <a href="https://neocatechumenaleiter.org/historia/maria-ascension/" target="_blank">
-                            <img src="/src/img/maria_ascension.jpg" alt="Maria Ascension" class="img-perfil-link">
-                            <span>Maria Ascension</span>
-                        </a>
-                    </div>
-                </button>
-
-                <button class="nav-item" id="btn-nav-resucito">
-                    <span class="material-symbols-outlined">menu_book</span>
-                    <span>Resucitó</span>
-                    <div class="nav-submenu" id="nav-submenu-resucito">
-                        <a href="/"><span class="material-symbols-outlined">home</span> Inicio</a>
-                        <a href="/perfil.html"><span class="material-symbols-outlined">person</span> Perfil</a>
-                        <a href="/src/select.html"><span class="material-symbols-outlined">playlist_add</span>Gestión Listas</a>
-                        <a href="/src/html/intro.html"><span class="material-symbols-outlined">menu_book</span> Introducción</a>
-                        <a href="/src/catequesis.html"><span class="material-symbols-outlined">history_edu</span> Catequesis</a>
-                    </div>
-                </button>
-
-                <button class="nav-item" id="btn-open-settings">
-                    <span class="material-symbols-outlined">settings</span>
-                    <span>Ajustes</span>
-                </button>
-
-                <a id="nav-google-auth" class="nav-item">
-                    <span class="material-symbols-outlined" id="nav-auth-icon">account_circle</span>
-                    <span id="nav-auth-text">Entrar</span>
-                </a>
-
-                <a id="nav-logout" class="nav-item" style="display:none;">
-                    <span class="material-symbols-outlined">logout</span>
-                    <span>Salir</span>
-                </a>
-            </div>
+            <a id="nav-logout" class="nav-item" style="display:none;">
+                <span class="material-symbols-outlined">logout</span>
+                <span>Salir</span>
+            </a>
         </div>
     `;
-
 
     document.body.insertAdjacentHTML('beforeend', navHTML);
 
@@ -165,13 +160,9 @@
             text.innerText = "Perfil";
             btnAuth.onclick = () => window.location.href = '/perfil.html';
             btnLogout.style.display = "flex";
-            
             btnLogout.onclick = async () => {
-            if (confirm("👤 Desea cerrar sesión?")) { //lo agregué aqui
-
                 if (window.firebaseAPI?.logout) await window.firebaseAPI.logout();
                 else location.reload();
-                } //agregué esta llave
             };
         } else {
             icon.innerHTML = "account_circle";
@@ -375,12 +366,12 @@ function cerrarModalConfiguracion() {
 // Funcion de Ocultar y Mostrar
 // =============================================================
 function toggleNavbar() {
-    const wrapper = document.getElementById('nav-wrapper');
-    const icon = document.getElementById('toggle-icon');
-    
-    // Ocultamos el wrapper completo
-    wrapper.classList.toggle('hidden');
-    
-    // Giramos la flecha
-    icon.classList.toggle('rotate-180');
+  const navbar = document.getElementById('main-navbar');
+  const icon = document.getElementById('toggle-icon');
+
+  // Alternar la visibilidad de la barra
+  navbar.classList.toggle('hidden');
+
+  // Rotar el icono (para que apunte hacia arriba o abajo)
+  icon.classList.toggle('rotate-180');
 }

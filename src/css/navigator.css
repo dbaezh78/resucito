@@ -38,7 +38,7 @@
     border: none;
     padding: 5px;
     width: 100%;
-    top: -6px;
+    top: 4px;
 }
 
 .nav-item:hover {
@@ -246,8 +246,10 @@ body { padding-bottom: 70px; }
 
         @media(min-width: 384px){
             font-size: 11px;
-            top: 47px; 
+            top: 0px; 
             left: -5px;
+            background: transparent;
+
         }
 
         @media(min-width: 768px){
@@ -262,4 +264,75 @@ body { padding-bottom: 70px; }
             left: -5px;
         }
 
+}
+
+
+/* La barra de navegación */
+/* Contenedor que agrupa flecha + barra */
+#nav-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea la flecha a la derecha como en tu imagen */
+}
+
+/* El botoncito de la flecha */
+/* Este es el contenedor que se mueve hacia abajo */
+/* Este es el contenedor que se mueve hacia abajo */
+#nav-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Cuando añadimos la clase .hidden al wrapper, todo baja */
+#nav-wrapper.hidden {
+    transform: translateY(60px); /* 60px es la altura de tu nav-bottom-bar */
+}
+
+/* El botón de la flecha */
+#nav-toggle {
+    position: absolute;
+    top: -26px; /* Se coloca justo encima de la barra */
+    right: 0px;  /* Alineado a la IZQUIERDA */
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(128, 169, 230, 0.3);
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    width: 45px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    opacity: 0.5;
+}
+
+#nav-toggle .material-symbols-outlined:hover {
+    background: transparent !important;
+}
+
+/* Estilo del icono y rotación */
+#toggle-icon {
+    transition: transform 0.3s ease;
+    color: var(--SangreDeCristo); /* Usando tu variable de color */
+    font-weight: bold;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* Ajuste preventivo para la barra */
+.nav-bottom-bar {
+    position: relative !important; /* Importante para que no flote sola */
+    border-top: 1px solid rgba(128, 169, 230, 0.9);
 }

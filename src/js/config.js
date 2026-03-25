@@ -332,6 +332,9 @@ const URLS_TO_CACHE = [
     'src/css/pg/dayenu2.css',
     'src/css/pg/dayenucompleto.css',
     'src/css/pg/debora.css',
+    
+    'src/css/pg/cuandoelsenorx.css',
+    
     'src/css/pg/decidlealosdecorazoncansado.css',
     'src/css/pg/delantedelosangeles.css',
     'src/css/pg/deprofundis.css',

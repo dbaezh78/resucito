@@ -3629,6 +3629,7 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: CUANDO EL SEÑOR
 // SIGUIENTE CANTO DEBAJO
 
+
 /*
 ╔════════════════════════════════════════════════════════╗
 ║           CUANDO ISRAEL SALIÓ DE EGIPTO                ║
