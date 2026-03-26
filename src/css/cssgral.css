@@ -1399,6 +1399,25 @@ hr {
 
 }
 
+.anota {
+    left: 0px;
+    width: fit-content;
+    top: 40px;
+    color: gray;
+    opacity: 0.4;
+}
+
+.bnota {
+    top: 14px;
+    left: 172px;
+    
+}
+
+.cnota {
+    color: gray;
+    opacity: 0.4;
+
+}
 
 
 /* PROYECTO MODO OSCURO
@@ -1421,3 +1440,4 @@ COLOR DEL TITULO
 color: lightskyblue;
 
 */
+

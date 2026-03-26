@@ -10,12 +10,25 @@ const am12 = "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(S
 const am2 = "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)";
 const am31 = "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)";
 const am32 = "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)";
-const gS11 = "Gloria al Señor, Gloria al Señor,, (Re,,154)(Mi,m,271)";
-const gS12 = "Gloria al Señor, Gloria al Señor,, (Re,,154)(Mi,m,271)";
-const gS13 = "Gloria al Señor, (Re,,154)(Mi,m,271)";
-const gS14 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Re,,154)(Mi,m,271)";
-const gS15 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Re,,154)(Mi,m,271)";
-const gS16 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Re,,154)(Mi,m,271)";
+
+const gSi1 = "Gloria a ti, oh Cristo,, (Sol,,11)(Do,,155)";
+const gSi2 = "Rey de eterna gloria,, (Re,,162)";
+const gSi3 = "Rey de eterna gloria,, (Sol,,162)";
+
+const gSi4 = "GLORIA A TI, OH CRISTO,, (Sol,,15)(Do,,190)";
+const gSi5 = "GLORIA A TI, OH CRISTO, (Sol,,15)(Do,,190)";
+const gSi6 = "REY DE ETERNA GLORIA,, (Re,,190)";
+const gSi7 = "REY DE ETERNA GLORIA,, (Sol,,190)";
+
+const gSd1 = "Gloria al Señor, Gloria al Señor,, (Sol,,15)";
+const gSd2 = "Gloria al Señor, Gloria al Señor,, (Do,,123)(Re,,284)";
+const gSd3 = "Gloria al Señor., (Sol,,127)";
+
+const gSd4 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Sol,,15)";
+const gSd5 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR, (Sol,,15)";
+const gSd6 = "GLORIA AL SEÑOR, GLORIA AL SEÑOR,, (Do,,147)(Re,,346)";
+const gSd7 = "GLORIA AL SEÑOR., (Sol,,147)";
+
 
 // Tiempo Adviento
 const aetas1 = "Domingo I, Tiempo Adviento";
@@ -35,9 +48,10 @@ const aetns25dicma = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la v
 const aetns25dicmd = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aetnssf = "Fiesta de la Sagrada Familia";    //Aleluya - Sagrada Familia
 const aetns6 = " La Epifanía del Señor";    //Aleluya - Sagrada Familia
+const aetn1e = "Santa Maria Madre de Dios";
 
 // Tiempo Ordinario
-const aetos1 = "Domingo I, Tiempo Ordinario";
+const aetos1 = "BAUTISMO DEL SEÑOR, Domingo I, Tiempo Ordinario";
 const aetos2 = "Domingo II, Tiempo Ordinario";
 const aetos3 = "Domingo III, Tiempo Ordinario";
 const aetos4 = "Domingo IV, Tiempo Ordinario";
@@ -90,7 +104,7 @@ const aetcs2 = "Domingo II, Tiempo Cuaresma";
 const aetcs3 = "Domingo III, Tiempo Cuaresma";
 const aetcs4 = "Domingo IV, Tiempo Cuaresma";
 const aetcs5 = "Domingo V, Tiempo Cuaresma";
-const aetcs6 = "Domingo VI, Tiempo Cuaresma";
+const aetcs6 = "Domingo de Ramos";
 
 const aetcsjs = "Jueves Santo";
 const aetcsvs = "Viernes Santo";
@@ -156,10 +170,13 @@ let aetnssfa2 = "en vuestro corazón;";
 let aetnssfa3 = "la palabra de Cristo habite entre vosotros";
 let aetnssfa4 = "en toda su riqueza.";
 
-const aetns1a = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
-let aetns1a1 = "En distintas ocasiones habló Dios antiguamente";
-let aetns1a2 = "a nuestros padres por los profetas;";
-let aetns1a3 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
+//aetn1ea = Aclamación Evangelica Tiempo Navidad 1 Enero año A
+//Santa Maria Madre de Dios
+const aetn1ea = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
+let aetn1ea1 = "Aleluya, aleluya.";
+let aetn1ea2 = "En distintas ocasiones habló Dios antiguamente";
+let aetn1ea3 = "a nuestros padres por los profetas;";
+let aetn1ea4 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
 
 const aetns2a = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
 let aetns2a1 = "Gloria a ti, Cristo, proclamado a los paganos.";
@@ -486,9 +503,10 @@ const aetnssfb = "Col 3, 15a. 16a - La Sagrada Familia";
 let aetnssfb1 = "Que la paz de Cristo actúe de árbitro en vuestro corazón;";
 let aetnssfb2 = "la palabra de Cristo habite entre vosotros en toda su riqueza.";
 
-const aetns1enerob = "Hb 1, 1-2";
-let aetns1enerob1 = "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas;";
-let aetns1enerob2 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
+//Santa Maria Madre de Dios
+const aetn1eb = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
+let aetn1eb1 = "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas;";
+let aetn1eb2 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
 
 const aetns2domingob = "Cf. 1Tm 3, 16 - 2º Domingo después de Navidad";
 let aetns2domingob1 = "Gloria a ti, Cristo, proclamado a los paganos.";
@@ -791,10 +809,13 @@ let aetnssfc2 = "en vuestro corazón;";
 let aetnssfc3 = "la palabra de Cristo habite entre vosotros";
 let aetnssfc4 = "en toda su riqueza.";
 
-const aetns1eneroc = "Hebreos 1, 1-2";
-let aetns1eneroc1 = "En distintas ocasiones habló Dios antiguamente";
-let aetns1eneroc2 = "a nuestros padres por los profetas;";
-let aetns1eneroc3 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
+
+//aetn1ea = Aclamación Evangelica Tiempo Navidad 1 Enero año C
+//Santa Maria Madre de Dios
+const aetn1ec = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
+let aetn1ec1 = "En distintas ocasiones habló Dios antiguamente";
+let aetn1ec2 = "a nuestros padres por los profetas;";
+let aetn1ec3 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
 
 const aetns2domingoc = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
 let aetns2domingoc1 = "Gloria a ti, Cristo, proclamado a los paganos.";
