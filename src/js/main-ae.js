@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "aetns1eneroa",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
                         { id: "aetns2a",		nombre: "Semana II", 				sub: "2º Domingo después de Navidad" },
                         { id: "aetn6ea", 		nombre: "6 de Enero", 				sub: "Epifanía del Señor" },
-                        { id: "aetnbautismoa",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
+                        { id: "aetos1a",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
                     ]
                 },
                 {
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "aetns1enerob",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
                         { id: "aetns2b",		nombre: "Semana II", 				sub: "2º Domingo después de Navidad" },
                         { id: "aetn6eb", 		nombre: "6 de Enero", 				sub: "Epifanía del Señor" },
-                        { id: "aetnbautismob",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
+                        { id: "aetos1b",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
                     ]
                 },
                 {
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "aetns1eneroc",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
                         { id: "aetns2c",		nombre: "Semana II", 				sub: "2º Domingo después de Navidad" },
                         { id: "aetn6ec", 		nombre: "6 de Enero", 				sub: "Epifanía del Señor" },
-                        { id: "aetnbautismoc",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
+                        { id: "aetos1a",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
                     ]
                 },
                 {
