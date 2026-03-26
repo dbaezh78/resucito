@@ -1,10 +1,14 @@
 /* --- 1. CONFIGURACIÓN DE COLORES LITÚRGICOS (ESTRICTA) --- */
 /* Usamos !important para asegurar que el fondo NUNCA cambie a blanco por error */
+body {
+        background: #ffffcb;
+}
+
 .bg-adviento  { background-color: #6a1b9a !important; color: white !important; }
 .bg-navidad   { background-color: #c62828 !important; color: white !important; }
-.bg-ordinario { background-color: #eeeeee !important; color: #555 !important; }
+.bg-ordinario { background-color: #65af00 !important; color: white !important; }
 .bg-cuaresma  { background-color: #4a148c !important; color: white !important; }
-.bg-pascua    { background-color: #1565c0 !important; color: white !important; }
+.bg-pascua    { background-color: #ffffff !important; color: goldenrod !important; }
 
 /* --- 2. CICLOS ABC (DORADO -> BLANCO AL PASAR EL MOUSE) --- */
 .ciclo-item {
@@ -133,4 +137,38 @@
     flex-direction: column; /* Esto pone uno debajo del otro */
     align-items: flex-start; /* Alinea a la izquierda */
     gap: 2px; /* Un pequeño espacio entre los dos textos */
+}
+
+.search-container {
+    width: max-content;
+}
+
+
+/* El contenedor debe ocupar el 100% */
+.search-container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Opcional: para que no pegue a los bordes del móvil */
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+}
+
+/* BUSCADOR*/
+/* El input debe estirarse para llenar el contenedor */
+#DavidLoBusca {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Muy importante para que no se salga de la pantalla */
+}
+
+/* Los resultados también deben seguir el ancho */
+#resultadosBusqueda {
+    width: 100%;
+    background: white;
+    /* Si quieres que flote sobre el contenido: */
+    position: absolute; 
+    z-index: 1000;
 }

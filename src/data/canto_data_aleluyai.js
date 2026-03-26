@@ -27,7 +27,7 @@
                     tablet: { velocidad: 7, incremento: 1 },  // Para tablet
                     desktop: { velocidad: 7, incremento: 1 },   // Para PC
                     desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-               ant: "/",
+               ant: "/index-ae.html",
                sig: "/src/index.html?canto=aetas2a",
           // Vaciando contenido,
           lizq: [
@@ -35,7 +35,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas1a1}`, sC: "tc"},
                     { line: `${aetas1a2}`, sC: ""},
@@ -48,7 +48,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas1a1}`, sC: "tc"},
                     { line: `${aetas1a2}`, sC: "tc"},
@@ -60,7 +60,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas1a1}`, sC: "tc"},
                     { line: `${aetas1a2}`, sC: "bg"},
@@ -95,7 +95,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas2a1}`, sC: "tc"},
                     { line: `${aetas2a2}`, sC: ""},
@@ -108,7 +108,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas2a1}`, sC: "tc"},
                     { line: `${aetas2a2}`, sC: "tc"},
@@ -120,7 +120,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas2a1}`, sC: "tc"},
                     { line: `${aetas2a2}`, sC: "bg"},
@@ -156,7 +156,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas3a1}`, sC: "tc"},
                     { line: `${aetas3a2}`, sC: ""},
@@ -169,7 +169,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas3a1}`, sC: "tc"},
                     { line: `${aetas3a2}`, sC: "tc"},
@@ -181,7 +181,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas3a1}`, sC: "tc"},
                     { line: `${aetas3a2}`, sC: "bg"},
@@ -217,7 +217,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas4a1}`, sC: "tc"},
                     { line: `${aetas4a2}`, sC: ""},
@@ -231,7 +231,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas4a1}`, sC: "tc"},
                     { line: `${aetas4a2}`, sC: "tc"},
@@ -244,7 +244,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas4a1}`, sC: "tc"},
                     { line: `${aetas4a2}`, sC: "bg"},
@@ -281,7 +281,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmva1}`, sC: "tc"},
                     { line: `${aetns25dicmva2}`, sC: ""},
@@ -294,7 +294,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmva1}`, sC: "tc"},
                     { line: `${aetns25dicmva2}`, sC: "tc"},
@@ -306,7 +306,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmva1}`, sC: "tc"},
                     { line: `${aetns25dicmva2}`, sC: "bg"},
@@ -342,7 +342,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmma1}`, sC: "tc"},
                     { line: `${aetns25dicmma2}`, sC: ""},
@@ -356,7 +356,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmma1}`, sC: "tc"},
                     { line: `${aetns25dicmma2}`, sC: "tc"},
@@ -369,7 +369,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmma1}`, sC: "tc"},
                     { line: `${aetns25dicmma2}`, sC: "bg"},
@@ -406,7 +406,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmaa1}`, sC: "tc"},
                     { line: `${aetns25dicmaa2}`, sC: ""},
@@ -419,7 +419,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmaa1}`, sC: "tc"},
                     { line: `${aetns25dicmaa2}`, sC: "tc"},
@@ -431,7 +431,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmaa1}`, sC: "tc"},
                     { line: `${aetns25dicmaa2}`, sC: "bg"},
@@ -467,7 +467,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmda1}`, sC: "tc"},
                     { line: `${aetns25dicmda2}`, sC: ""},
@@ -481,7 +481,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmda1}`, sC: "tc"},
                     { line: `${aetns25dicmda2}`, sC: "tc"},
@@ -494,7 +494,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmda1}`, sC: "tc"},
                     { line: `${aetns25dicmda2}`, sC: "bg"},
@@ -533,7 +533,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetnssfa1}`, sC: "tc"},
                     { line: `${aetnssfa2}`, sC: ""},
@@ -548,7 +548,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetnssfa1}`, sC: "tc"},
                     { line: `${aetnssfa2}`, sC: "tc"},
@@ -562,7 +562,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetnssfa1}`, sC: "tc"},
                     { line: `${aetnssfa2}`, sC: "bg"},
@@ -602,7 +602,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetn1ea1}`, sC: "tc"},
                     { line: `${aetn1ea2}`, sC: ""},
@@ -616,7 +616,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetn1ea1}`, sC: "tc"},
                     { line: `${aetn1ea2}`, sC: "tc"},
@@ -629,7 +629,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetn1ea1}`, sC: "tc"},
                     { line: `${aetn1ea2}`, sC: "bg"},
@@ -666,7 +666,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns2a1}`, sC: "tc"},
                     { line: `${aetns2a2}`, sC: ""},
@@ -679,7 +679,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns2a1}`, sC: "tc"},
                     { line: `${aetns2a2}`, sC: "tc"},
@@ -691,7 +691,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns2a1}`, sC: "tc"},
                     { line: `${aetns2a2}`, sC: "bg"},
@@ -729,7 +729,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns6a1}`, sC: "tc"},
                     { line: `${aetns6a2}`, sC: ""},
@@ -742,7 +742,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns6a1}`, sC: "tc"},
                     { line: `${aetns6a2}`, sC: "tc"},
@@ -754,7 +754,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns6a1}`, sC: "tc"},
                     { line: `${aetns6a2}`, sC: "bg"},
@@ -792,7 +792,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos1a1}`, sC: "tc"},
                     { line: `${aetos1a2}`, sC: ""},
@@ -806,7 +806,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos1a1}`, sC: "tc"},
                     { line: `${aetos1a2}`, sC: "tc"},
@@ -819,7 +819,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos1a1}`, sC: "tc"},
                     { line: `${aetos1a2}`, sC: "bg"},
@@ -856,7 +856,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos2a1}`, sC: "tc"},
                     { line: `${aetos2a2}`, sC: ""},
@@ -869,7 +869,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos2a1}`, sC: "tc"},
                     { line: `${aetos2a2}`, sC: "tc"},
@@ -881,7 +881,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos2a1}`, sC: "tc"},
                     { line: `${aetos2a2}`, sC: "bg"},
@@ -917,7 +917,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos3a1}`, sC: "tc"},
                     { line: `${aetos3a2}`, sC: ""},
@@ -930,7 +930,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos3a1}`, sC: "tc"},
                     { line: `${aetos3a2}`, sC: "tc"},
@@ -942,7 +942,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos3a1}`, sC: "tc"},
                     { line: `${aetos3a2}`, sC: "bg"},
@@ -978,7 +978,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos4a1}`, sC: "tc"},
                     { line: `${aetos4a2}`, sC: ""},
@@ -991,7 +991,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos4a1}`, sC: "tc"},
                     { line: `${aetos4a2}`, sC: "tc"},
@@ -1003,7 +1003,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos4a1}`, sC: "tc"},
                     { line: `${aetos4a2}`, sC: "bg"},
@@ -1039,7 +1039,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos5a1}`, sC: "tc"},
                     { line: `${aetos5a2}`, sC: ""},
@@ -1053,7 +1053,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos5a1}`, sC: "tc"},
                     { line: `${aetos5a2}`, sC: "tc"},
@@ -1066,7 +1066,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos5a1}`, sC: "tc"},
                     { line: `${aetos5a2}`, sC: "bg"},
@@ -1103,7 +1103,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos6a1}`, sC: "tc"},
                     { line: `${aetos6a2}`, sC: ""},
@@ -1117,7 +1117,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos6a1}`, sC: "tc"},
                     { line: `${aetos6a2}`, sC: "tc"},
@@ -1130,7 +1130,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos6a1}`, sC: "tc"},
                     { line: `${aetos6a2}`, sC: "bg"},
@@ -1167,7 +1167,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos7a1}`, sC: "tc"},
                     { line: `${aetos7a2}`, sC: ""},
@@ -1181,7 +1181,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos7a1}`, sC: "tc"},
                     { line: `${aetos7a2}`, sC: "tc"},
@@ -1194,7 +1194,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos7a1}`, sC: "tc"},
                     { line: `${aetos7a2}`, sC: "bg"},
@@ -1231,7 +1231,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos8a1}`, sC: "tc"},
                     { line: `${aetos8a2}`, sC: ""},
@@ -1244,7 +1244,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos8a1}`, sC: "tc"},
                     { line: `${aetos8a2}`, sC: "tc"},
@@ -1256,7 +1256,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos8a1}`, sC: "tc"},
                     { line: `${aetos8a2}`, sC: "bg"},
@@ -1292,7 +1292,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos9a1}`, sC: "tc"},
                     { line: `${aetos9a2}`, sC: ""},
@@ -1307,7 +1307,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos9a1}`, sC: "tc"},
                     { line: `${aetos9a2}`, sC: ""},
@@ -1321,7 +1321,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos9a1}`, sC: "tc"},
                     { line: `${aetos9a2}`, sC: "bg"},
@@ -1359,7 +1359,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos10a1}`, sC: "tc"},
                     { line: `${aetos10a2}`, sC: "bg"},
@@ -1373,7 +1373,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos10a1}`, sC: "tc"},
                     { line: `${aetos10a2}`, sC: "bg"},
@@ -1386,7 +1386,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos10a1}`, sC: "tc"},
                     { line: `${aetos10a2}`, sC: "bg"},
@@ -1423,7 +1423,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos11a1}`, sC: "tc"},
                     { line: `${aetos11a2}`, sC: "bg"},
@@ -1436,7 +1436,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos11a1}`, sC: "tc"},
                     { line: `${aetos11a2}`, sC: "bg"},
@@ -1448,7 +1448,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos11a1}`, sC: "tc"},
                     { line: `${aetos11a2}`, sC: "bg"},
@@ -1484,7 +1484,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos12a1}`, sC: "tc"},
                     { line: `${aetos12a2}`, sC: "bg"},
@@ -1498,7 +1498,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos12a1}`, sC: "tc"},
                     { line: `${aetos12a2}`, sC: "bg"},
@@ -1511,7 +1511,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos12a1}`, sC: "tc"},
                     { line: `${aetos12a2}`, sC: "bg"},
@@ -1548,7 +1548,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos13a1}`, sC: "tc"},
                     { line: `${aetos13a2}`, sC: "bg"},
@@ -1564,7 +1564,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos13a1}`, sC: "tc"},
                     { line: `${aetos13a2}`, sC: "bg"},
@@ -1579,7 +1579,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos13a1}`, sC: "tc"},
                     { line: `${aetos13a2}`, sC: "bg"},
@@ -1618,7 +1618,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos14a1}`, sC: "tc"},
                     { line: `${aetos14a2}`, sC: "bg"},
@@ -1632,7 +1632,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos14a1}`, sC: "tc"},
                     { line: `${aetos14a2}`, sC: "bg"},
@@ -1645,7 +1645,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos14a1}`, sC: "tc"},
                     { line: `${aetos14a2}`, sC: "bg"},
@@ -1682,7 +1682,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos15a1}`, sC: "tc"},
                     { line: `${aetos15a2}`, sC: "bg"},
@@ -1696,7 +1696,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos15a1}`, sC: "tc"},
                     { line: `${aetos15a2}`, sC: "bg"},
@@ -1709,7 +1709,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos15a1}`, sC: "tc"},
                     { line: `${aetos15a2}`, sC: "bg"},
@@ -1746,7 +1746,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos16a1}`, sC: "tc"},
                     { line: `${aetos16a2}`, sC: "bg"},
@@ -1760,7 +1760,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos16a1}`, sC: "tc"},
                     { line: `${aetos16a2}`, sC: "bg"},
@@ -1773,7 +1773,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetosvsa1}`, sC: "tc"},
                     { line: `${aetosvsa2}`, sC: "bg"},
@@ -1811,7 +1811,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos17a1}`, sC: "tc"},
                     { line: `${aetos17a2}`, sC: "bg"},
@@ -1826,7 +1826,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos17a1}`, sC: "tc"},
                     { line: `${aetos17a2}`, sC: "bg"},
@@ -1840,7 +1840,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos17a1}`, sC: "tc"},
                     { line: `${aetos17a2}`, sC: "bg"},
@@ -1879,7 +1879,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos18a1}`, sC: "tc"},
                     { line: `${aetos18a2}`, sC: "bg"},
@@ -1892,7 +1892,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos18a1}`, sC: "tc"},
                     { line: `${aetos18a2}`, sC: "bg"},
@@ -1904,7 +1904,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos18a1}`, sC: "tc"},
                     { line: `${aetos18a2}`, sC: "bg"},
@@ -1940,7 +1940,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos19a1}`, sC: "tc"},
                     { line: `${aetos19a2}`, sC: "bg"},
@@ -1953,7 +1953,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos19a1}`, sC: "tc"},
                     { line: `${aetos19a2}`, sC: "bg"},
@@ -1965,7 +1965,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos19a1}`, sC: "tc"},
                     { line: `${aetos19a2}`, sC: "bg"},
@@ -2001,7 +2001,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos20a1}`, sC: "tc"},
                     { line: `${aetos20a2}`, sC: "bg"},
@@ -2014,7 +2014,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos20a1}`, sC: "tc"},
                     { line: `${aetos20a2}`, sC: "bg"},
@@ -2026,7 +2026,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos20a1}`, sC: "tc"},
                     { line: `${aetos20a2}`, sC: "bg"},
@@ -2062,7 +2062,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos21a1}`, sC: "tc"},
                     { line: `${aetos21a2}`, sC: "bg"},
@@ -2076,7 +2076,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos21a1}`, sC: "tc"},
                     { line: `${aetos21a2}`, sC: "bg"},
@@ -2089,7 +2089,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos16a1}`, sC: "tc"},
                     { line: `${aetos16a2}`, sC: "bg"},
@@ -2126,7 +2126,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos22a1}`, sC: "tc"},
                     { line: `${aetos22a2}`, sC: "bg"},
@@ -2140,7 +2140,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos22a1}`, sC: "tc"},
                     { line: `${aetos22a2}`, sC: "bg"},
@@ -2153,7 +2153,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos21a1}`, sC: "tc"},
                     { line: `${aetos21a2}`, sC: "bg"},
@@ -2190,7 +2190,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos23a1}`, sC: "tc"},
                     { line: `${aetos23a2}`, sC: "bg"},
@@ -2204,7 +2204,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos23a1}`, sC: "tc"},
                     { line: `${aetos23a2}`, sC: "bg"},
@@ -2217,7 +2217,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos22a1}`, sC: "tc"},
                     { line: `${aetos22a2}`, sC: "bg"},
@@ -2254,7 +2254,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos24a1}`, sC: "tc"},
                     { line: `${aetos24a2}`, sC: "bg"},
@@ -2269,7 +2269,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos24a1}`, sC: "tc"},
                     { line: `${aetos24a2}`, sC: "bg"},
@@ -2283,7 +2283,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos24a1}`, sC: "tc"},
                     { line: `${aetos24a2}`, sC: "bg"},
@@ -2321,7 +2321,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos25a1}`, sC: "tc"},
                     { line: `${aetos25a2}`, sC: "bg"},
@@ -2334,7 +2334,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos25a1}`, sC: "tc"},
                     { line: `${aetos25a2}`, sC: "bg"},
@@ -2346,7 +2346,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos25a1}`, sC: "tc"},
                     { line: `${aetos25a2}`, sC: "bg"},
@@ -2382,7 +2382,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos26a1}`, sC: "tc"},
                     { line: `${aetos26a2}`, sC: "bg"},
@@ -2396,7 +2396,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos26a1}`, sC: "tc"},
                     { line: `${aetos26a2}`, sC: "bg"},
@@ -2409,7 +2409,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos23a1}`, sC: "tc"},
                     { line: `${aetos23a2}`, sC: "bg"},
@@ -2446,7 +2446,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos27a1}`, sC: "tc"},
                     { line: `${aetos27a2}`, sC: "bg"},
@@ -2460,7 +2460,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos27a1}`, sC: "tc"},
                     { line: `${aetos27a2}`, sC: "bg"},
@@ -2473,7 +2473,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos26a1}`, sC: "tc"},
                     { line: `${aetos26a2}`, sC: "bg"},
@@ -2510,7 +2510,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos28a1}`, sC: "tc"},
                     { line: `${aetos28a2}`, sC: "bg"},
@@ -2525,7 +2525,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos28a1}`, sC: "tc"},
                     { line: `${aetos28a2}`, sC: "bg"},
@@ -2539,7 +2539,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos28a1}`, sC: "tc"},
                     { line: `${aetos28a2}`, sC: "bg"},
@@ -2577,7 +2577,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos29a1}`, sC: "tc"},
                     { line: `${aetos29a2}`, sC: "bg"},
@@ -2590,7 +2590,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos29a1}`, sC: "tc"},
                     { line: `${aetos29a2}`, sC: "bg"},
@@ -2602,7 +2602,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos29a1}`, sC: "tc"},
                     { line: `${aetos29a2}`, sC: "bg"},
@@ -2638,7 +2638,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos30a1}`, sC: "tc"},
                     { line: `${aetos30a2}`, sC: "bg"},
@@ -2651,7 +2651,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos30a1}`, sC: "tc"},
                     { line: `${aetos30a2}`, sC: "bg"},
@@ -2663,7 +2663,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos30a1}`, sC: "tc"},
                     { line: `${aetos30a2}`, sC: "bg"},
@@ -2699,7 +2699,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos31a1}`, sC: "tc"},
                     { line: `${aetos31a2}`, sC: "bg"},
@@ -2712,7 +2712,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos31a1}`, sC: "tc"},
                     { line: `${aetos31a2}`, sC: "bg"},
@@ -2724,7 +2724,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos31a1}`, sC: "tc"},
                     { line: `${aetos31a2}`, sC: "bg"},
@@ -2760,7 +2760,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos32a1}`, sC: "tc"},
                     { line: `${aetos32a2}`, sC: "bg"},
@@ -2773,7 +2773,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos32a1}`, sC: "tc"},
                     { line: `${aetos32a2}`, sC: "bg"},
@@ -2785,7 +2785,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos32a1}`, sC: "tc"},
                     { line: `${aetos32a2}`, sC: "bg"},
@@ -2821,7 +2821,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos33a1}`, sC: "tc"},
                     { line: `${aetos33a2}`, sC: "bg"},
@@ -2835,7 +2835,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos33a1}`, sC: "tc"},
                     { line: `${aetos33a2}`, sC: "bg"},
@@ -2848,7 +2848,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos27a1}`, sC: "tc"},
                     { line: `${aetos27a2}`, sC: "bg"},
@@ -2885,7 +2885,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos34a1}`, sC: "tc"},
                     { line: `${aetos34a2}`, sC: "bg"},
@@ -2900,7 +2900,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos34a1}`, sC: "tc"},
                     { line: `${aetos34a2}`, sC: "bg"},
@@ -2914,7 +2914,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos34a1}`, sC: "tc"},
                     { line: `${aetos34a2}`, sC: "bg"},
@@ -2953,7 +2953,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetosscsca1}`, sC: "tc"},
                     { line: `${aetosscsca2}`, sC: "bg"},
@@ -2968,7 +2968,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetosscsca1}`, sC: "tc"},
                     { line: `${aetosscsca2}`, sC: "bg"},
@@ -2982,7 +2982,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetosscsca1}`, sC: "tc"},
                     { line: `${aetosscsca2}`, sC: "bg"},
@@ -3020,7 +3020,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetosvsa1}`, sC: "tc"},
                     { line: `${aetosvsa2}`, sC: "bg"},
@@ -3034,7 +3034,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetosvsa1}`, sC: "tc"},
                     { line: `${aetosvsa2}`, sC: "bg"},
@@ -3047,7 +3047,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos33a1}`, sC: "tc"},
                     { line: `${aetos33a2}`, sC: "bg"},
@@ -3096,7 +3096,7 @@
                     { line: gSi6, sC: "as bg"},
                     { line: gSi7, sC: "as bg"},
 
-                    { line: "Usar los acordes:", sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
                     
                     { line: `${aetcs1a1}`, sC: "tc"},
                     { line: `${aetcs1a2}`, sC: "bg"},                    
@@ -3124,7 +3124,7 @@
                     { line: gSd6, sC: "as bg"},
                     { line: gSd7, sC: "as bg"},
 
-                    { line: "Usar los acordes:", sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcs1a1}`, sC: "tc"},
                     { line: `${aetcs1a2}`, sC: "bg"},
@@ -3167,7 +3167,7 @@
                     { line: "La estrofa que hace el cantor se canta con la \n melodía del «Aleluya interleccional - Modelo I». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSi1, sC: "tc bg"},{ line: gSi2, sC: "bg"},{ line: gSi3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSi4, sC: "ta as bg"},{ line: gSi6, sC: "as bg"},{ line: gSi7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcs2a1}`, sC: "tc"},
                     { line: `${aetcs2a2}`, sC: "bg"},
@@ -3184,7 +3184,7 @@
                     { line: "Toda la antífona se canta con la misma melodía \n del «Aleluya interleccional - Modelo I».». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSd1, sC: "tc bg"},{ line: gSd2, sC: "bg"},{ line: gSd3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSd4, sC: "ta as bg"},{ line: gSd6, sC: "as bg"},{ line: gSd7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
                     
                     { line: `${aetcs2a1}`, sC: "tc"},
                     { line: `${aetcs2a2}`, sC: "bg"},
@@ -3225,7 +3225,7 @@
                     { line: "La estrofa que hace el cantor se canta con la \n melodía del «Aleluya interleccional - Modelo I». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSi1, sC: "tc bg"},{ line: gSi2, sC: "bg"},{ line: gSi3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSi4, sC: "ta as bg"},{ line: gSi6, sC: "as bg"},{ line: gSi7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota",color: "gray"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcs3a1}`, sC: "tc"},
                     { line: `${aetcs3a2}`, sC: "bg"},
@@ -3242,7 +3242,7 @@
                     { line: "Toda la antífona se canta con la misma melodía \n del «Aleluya interleccional - Modelo I».». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSd1, sC: "tc bg"},{ line: gSd2, sC: "bg"},{ line: gSd3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSd4, sC: "ta as bg"},{ line: gSd6, sC: "as bg"},{ line: gSd7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcs3a1}`, sC: "tc"},
                     { line: `${aetcs3a2}`, sC: "bg"},
@@ -3282,7 +3282,7 @@
                     { line: "La estrofa que hace el cantor se canta con la \n melodía del «Aleluya interleccional - Modelo I». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSi1, sC: "tc bg"},{ line: gSi2, sC: "bg"},{ line: gSi3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSi4, sC: "ta as bg"},{ line: gSi6, sC: "as bg"},{ line: gSi7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
                     
                     { line: `${aetcs4a1}`, sC: "tc"},
                     { line: `${aetcs4a2}`, sC: "bg"},
@@ -3300,7 +3300,7 @@
                     { line: "Toda la antífona se canta con la misma melodía \n del «Aleluya interleccional - Modelo I».». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSd1, sC: "tc bg"},{ line: gSd2, sC: "bg"},{ line: gSd3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSd4, sC: "ta as bg"},{ line: gSd6, sC: "as bg"},{ line: gSd7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
                     
                     { line: `${aetcs4a1}`, sC: "tc"},
                     { line: `${aetcs4a2}`, sC: "bg"},
@@ -3341,7 +3341,7 @@
                     { line: "La estrofa que hace el cantor se canta con la \n melodía del «Aleluya interleccional - Modelo I». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSi1, sC: "tc bg"},{ line: gSi2, sC: "bg"},{ line: gSi3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSi4, sC: "ta as bg"},{ line: gSi6, sC: "as bg"},{ line: gSi7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
                     
                     { line: `${aetcs5a1}`, sC: "tc"},
                     { line: `${aetcs5a2}`, sC: "bg"},
@@ -3359,7 +3359,7 @@
                     { line: "Toda la antífona se canta con la misma melodía \n del «Aleluya interleccional - Modelo I».». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSd1, sC: "tc bg"},{ line: gSd2, sC: "bg"},{ line: gSd3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSd4, sC: "ta as bg"},{ line: gSd6, sC: "as bg"},{ line: gSd7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
                     
                     { line: `${aetcs5a1}`, sC: "tc"},
                     { line: `${aetcs5a2}`, sC: "bg"},
@@ -3400,7 +3400,7 @@
                     { line: "La estrofa que hace el cantor se canta con la \n melodía del «Aleluya interleccional - Modelo I». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSi1, sC: "tc bg"},{ line: gSi2, sC: "bg"},{ line: gSi3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSi4, sC: "ta as bg"},{ line: gSi6, sC: "as bg"},{ line: gSi7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcs6a1}`, sC: "tc"},
                     { line: `${aetcs6a2}`, sC: "bg"},
@@ -3419,7 +3419,7 @@
                     { line: "Toda la antífona se canta con la misma melodía \n del «Aleluya interleccional - Modelo I».». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSd1, sC: "tc bg"},{ line: gSd2, sC: "bg"},{ line: gSd3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSd4, sC: "ta as bg"},{ line: gSd6, sC: "as bg"},{ line: gSd7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcs6a1}`, sC: "tc"},
                     { line: `${aetcs6a2}`, sC: "bg"},
@@ -3462,7 +3462,7 @@
                     { line: "La estrofa que hace el cantor se canta con la \n melodía del «Aleluya interleccional - Modelo I». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSi1, sC: "tc bg"},{ line: gSi2, sC: "bg"},{ line: gSi3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSi4, sC: "ta as bg"},{ line: gSi6, sC: "as bg"},{ line: gSi7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcsjsa1}`, sC: "tc"},
                     { line: `${aetcsjsa2}`, sC: "bg"},
@@ -3481,7 +3481,7 @@
                     { line: "Toda la antífona se canta con la misma melodía \n del «Aleluya interleccional - Modelo I».». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSd1, sC: "tc bg"},{ line: gSd2, sC: "bg"},{ line: gSd3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSd4, sC: "ta as bg"},{ line: gSd6, sC: "as bg"},{ line: gSd7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcsjsa1}`, sC: "tc"},
                     { line: `${aetcsjsa2}`, sC: "bg"},
@@ -3523,7 +3523,7 @@
                     { line: "La estrofa que hace el cantor se canta con la \n melodía del «Aleluya interleccional - Modelo I». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSi1, sC: "tc bg"},{ line: gSi2, sC: "bg"},{ line: gSi3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSi4, sC: "ta as bg"},{ line: gSi6, sC: "as bg"},{ line: gSi7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcsvsa1}`, sC: "tc"},
                     { line: `${aetcsvsa2}`, sC: "bg"},
@@ -3542,7 +3542,7 @@
                     { line: "Toda la antífona se canta con la misma melodía \n del «Aleluya interleccional - Modelo I».». ", sC: "cnota"},{ line: "", sC: "adb1"},
                     { line: gSd1, sC: "tc bg"},{ line: gSd2, sC: "bg"},{ line: gSd3, sC: "bg"},{ line: "", sC: "adb1"},
                     { line: gSd4, sC: "ta as bg"},{ line: gSd6, sC: "as bg"},{ line: gSd7, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: "(Mi,m,20)(Re,,70)", sC: "bnota"},
 
                     { line: `${aetcsvsa1}`, sC: "tc"},
                     { line: `${aetcsvsa2}`, sC: "bg"},
@@ -3635,7 +3635,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps1a1}`, sC: "tc"},
                     { line: `${aetps1a2}`, sC: "bg"},
@@ -3649,7 +3649,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
                     
                     { line: `${aetps1a1}`, sC: "tc"},
                     { line: `${aetps1a2}`, sC: "bg"},
@@ -3664,7 +3664,7 @@
                     { line: "", sC: "adb1"},
 
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps1a1}`, sC: "tc"},
                     { line: `${aetps1a2}`, sC: "bg"},
@@ -3699,7 +3699,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps2a1}`, sC: "tc"},
                     { line: `${aetps2a2}`, sC: "bg"},
@@ -3713,7 +3713,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetps2a1}`, sC: "tc"},
                     { line: `${aetps2a2}`, sC: "bg"},
@@ -3726,7 +3726,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps2a1}`, sC: "tc"},
                     { line: `${aetps2a2}`, sC: "bg"},
@@ -3761,7 +3761,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps3a1}`, sC: "tc"},
                     { line: `${aetps3a2}`, sC: "bg"},
@@ -3774,7 +3774,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetps3a1}`, sC: "tc"},
                     { line: `${aetps3a2}`, sC: "bg"},
@@ -3786,7 +3786,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps3a1}`, sC: "tc"},
                     { line: `${aetps3a2}`, sC: "bg"},
@@ -3820,7 +3820,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps4a1}`, sC: "tc"},
                     { line: `${aetps4a2}`, sC: "bg"},
@@ -3834,7 +3834,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetps4a1}`, sC: "tc"},
                     { line: `${aetps4a2}`, sC: "bg"},
@@ -3847,7 +3847,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps4a1}`, sC: "tc"},
                     { line: `${aetps4a2}`, sC: "bg"},
@@ -3882,7 +3882,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps5a1}`, sC: "tc"},
                     { line: `${aetps5a2}`, sC: "bg"},
@@ -3896,7 +3896,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetps5a1}`, sC: "tc"},
                     { line: `${aetps5a2}`, sC: "bg"},
@@ -3909,7 +3909,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps5a1}`, sC: "tc"},
                     { line: `${aetps5a2}`, sC: "bg"},
@@ -3944,7 +3944,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps6a1}`, sC: "tc"},
                     { line: `${aetps6a2}`, sC: "bg"},
@@ -3959,7 +3959,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetps6a1}`, sC: "tc"},
                     { line: `${aetps6a2}`, sC: "bg"},
@@ -3973,7 +3973,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps6a1}`, sC: "tc"},
                     { line: `${aetps6a2}`, sC: "bg"},
@@ -4009,7 +4009,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps7a1}`, sC: "tc"},
                     { line: `${aetps7a2}`, sC: "bg"},
@@ -4024,7 +4024,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetps7a1}`, sC: "tc"},
                     { line: `${aetps7a2}`, sC: "bg"},
@@ -4038,7 +4038,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps7a1}`, sC: "tc"},
                     { line: `${aetps7a2}`, sC: "bg"},
@@ -4074,7 +4074,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetpsasa1}`, sC: "tc"},
                     { line: `${aetpsasa2}`, sC: "bg"},
@@ -4089,7 +4089,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetpsasa1}`, sC: "tc"},
                     { line: `${aetpsasa2}`, sC: "bg"},
@@ -4103,7 +4103,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetpsasa1}`, sC: "tc"},
                     { line: `${aetpsasa2}`, sC: "bg"},
@@ -4139,7 +4139,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps8a1}`, sC: "tc"},
                     { line: `${aetps8a2}`, sC: "bg"},
@@ -4153,7 +4153,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetps8a1}`, sC: "tc"},
                     { line: `${aetps8a2}`, sC: "bg"},
@@ -4166,7 +4166,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps8a1}`, sC: "tc"},
                     { line: `${aetps8a2}`, sC: "bg"},
@@ -4201,7 +4201,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetps9a1}`, sC: "tc"},
                     { line: `${aetps9a2}`, sC: "bg"},
@@ -4214,7 +4214,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetps9a1}`, sC: "tc"},
                     { line: `${aetps9a2}`, sC: "bg"},
@@ -4226,7 +4226,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetps9a1}`, sC: "tc"},
                     { line: `${aetps9a2}`, sC: "bg"},
@@ -4268,7 +4268,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas1b1}`, sC: "tc"},
                     { line: `${aetas1b2}`, sC: "bg"},
@@ -4281,7 +4281,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas1b1}`, sC: "tc"},
                     { line: `${aetas1b2}`, sC: "bg"},
@@ -4293,7 +4293,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas1b1}`, sC: "tc"},
                     { line: `${aetas1b2}`, sC: "bg"},
@@ -4327,7 +4327,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas2b1}`, sC: "tc"},
                     { line: `${aetas2b2}`, sC: "bg"},
@@ -4340,7 +4340,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas2b1}`, sC: "tc"},
                     { line: `${aetas2b2}`, sC: "bg"},
@@ -4352,7 +4352,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas2b1}`, sC: "tc"},
                     { line: `${aetas2b2}`, sC: "bg"},
@@ -4386,7 +4386,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas3b1}`, sC: "tc"},
                     { line: `${aetas3b2}`, sC: "bg"},
@@ -4399,7 +4399,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas3b1}`, sC: "tc"},
                     { line: `${aetas3b2}`, sC: "bg"},
@@ -4411,7 +4411,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas3b1}`, sC: "tc"},
                     { line: `${aetas3b2}`, sC: "bg"},
@@ -4445,7 +4445,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas4b1}`, sC: "tc"},
                     { line: `${aetas4b2}`, sC: "bg"},
@@ -4458,7 +4458,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas4b1}`, sC: "tc"},
                     { line: `${aetas4b2}`, sC: "bg"},
@@ -4470,7 +4470,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas4b1}`, sC: "tc"},
                     { line: `${aetas4b2}`, sC: "bg"},
@@ -4504,7 +4504,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmvb1}`, sC: "tc"},
                     { line: `${aetns25dicmvb2}`, sC: "bg"},
@@ -4517,7 +4517,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmvb1}`, sC: "tc"},
                     { line: `${aetns25dicmvb2}`, sC: "bg"},
@@ -4529,7 +4529,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmvb1}`, sC: "tc"},
                     { line: `${aetns25dicmvb2}`, sC: "bg"},
@@ -4563,7 +4563,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmmb1}`, sC: "tc"},
                     { line: `${aetns25dicmmb2}`, sC: "bg"},
@@ -4576,7 +4576,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmmb1}`, sC: "tc"},
                     { line: `${aetns25dicmmb2}`, sC: "bg"},
@@ -4588,7 +4588,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmmb1}`, sC: "tc"},
                     { line: `${aetns25dicmmb2}`, sC: "bg"},
@@ -4622,7 +4622,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmab1}`, sC: "tc"},
                     { line: `${aetns25dicmab2}`, sC: "bg"},
@@ -4635,7 +4635,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmab1}`, sC: "tc"},
                     { line: `${aetns25dicmab2}`, sC: "bg"},
@@ -4647,7 +4647,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmab1}`, sC: "tc"},
                     { line: `${aetns25dicmab2}`, sC: "bg"},
@@ -4681,7 +4681,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmdb1}`, sC: "tc"},
                     { line: `${aetns25dicmdb2}`, sC: "bg"},
@@ -4694,7 +4694,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmdb1}`, sC: "tc"},
                     { line: `${aetns25dicmdb2}`, sC: "bg"},
@@ -4706,7 +4706,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmdb1}`, sC: "tc"},
                     { line: `${aetns25dicmdb2}`, sC: "bg"},
@@ -4740,7 +4740,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetnssfb1}`, sC: "tc"},
                     { line: `${aetnssfb2}`, sC: "bg"},
@@ -4753,7 +4753,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetnssfb1}`, sC: "tc"},
                     { line: `${aetnssfb2}`, sC: "bg"},
@@ -4765,7 +4765,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetnssfb1}`, sC: "tc"},
                     { line: `${aetnssfb2}`, sC: "bg"},
@@ -4801,7 +4801,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetn1eb1}`, sC: "tc"},
                     { line: `${aetn1eb2}`, sC: "bg"},
@@ -4814,7 +4814,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetn1eb1}`, sC: "tc"},
                     { line: `${aetn1eb2}`, sC: "bg"},
@@ -4826,7 +4826,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetn1eb1}`, sC: "tc"},
                     { line: `${aetn1eb2}`, sC: "bg"},
@@ -4890,7 +4890,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas1c1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
                     { line: `${aetas1c2}`, sC: "bg"},
@@ -4903,7 +4903,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas1c1}`, sC: "tc"},
                     { line: `${aetas1c2}`, sC: "bg"},
@@ -4915,7 +4915,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas1c1}`, sC: "tc"},
                     { line: `${aetas1c2}`, sC: "bg"},
@@ -4952,7 +4952,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas2c1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
                     { line: `${aetas2c2}`, sC: "bg"},
@@ -4965,7 +4965,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas2c1}`, sC: "tc"},
                     { line: `${aetas2c2}`, sC: "bg"},
@@ -4977,7 +4977,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas2c1}`, sC: "tc"},
                     { line: `${aetas2c2}`, sC: "bg"},
@@ -5014,7 +5014,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas3c1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
                     { line: `${aetas3c2}`, sC: "bg"},
@@ -5027,7 +5027,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas3c1}`, sC: "tc"},
                     { line: `${aetas3c2}`, sC: "bg"},
@@ -5039,7 +5039,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas3c1}`, sC: "tc"},
                     { line: `${aetas3c2}`, sC: "bg"},
@@ -5076,7 +5076,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetas4c1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
                     { line: `${aetas4c2}`, sC: "bg"},
@@ -5089,7 +5089,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetas4c1}`, sC: "tc"},
                     { line: `${aetas4c2}`, sC: "bg"},
@@ -5101,7 +5101,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetas4c1}`, sC: "tc"},
                     { line: `${aetas4c2}`, sC: "bg"},
@@ -5138,7 +5138,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmvc1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
                     { line: `${aetns25dicmvc2}`, sC: "bg"},
@@ -5151,7 +5151,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmvc1}`, sC: "tc"},
                     { line: `${aetns25dicmvc2}`, sC: "bg"},
@@ -5163,7 +5163,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmvc1}`, sC: "tc"},
                     { line: `${aetns25dicmvc2}`, sC: "bg"},
@@ -5200,7 +5200,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmmc1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
                     { line: `${aetns25dicmmc2}`, sC: "bg"},
@@ -5214,7 +5214,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmmc1}`, sC: "tc"},
                     { line: `${aetns25dicmmc2}`, sC: "bg"},
@@ -5227,7 +5227,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmmc1}`, sC: "tc"},
                     { line: `${aetns25dicmmc2}`, sC: "bg"},
@@ -5266,7 +5266,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmac1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
                     { line: `${aetns25dicmac2}`, sC: "bg"},
@@ -5279,7 +5279,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmac1}`, sC: "tc"},
                     { line: `${aetns25dicmac2}`, sC: "bg"},
@@ -5291,7 +5291,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmac1}`, sC: "tc"},
                     { line: `${aetns25dicmac2}`, sC: "bg"},
@@ -5328,7 +5328,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetns25dicmdc1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
                     { line: `${aetns25dicmdc2}`, sC: "bg"},
@@ -5342,7 +5342,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetns25dicmdc1}`, sC: "tc"},
                     { line: `${aetns25dicmdc2}`, sC: "bg"},
@@ -5355,7 +5355,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetns25dicmdc1}`, sC: "tc"},
                     { line: `${aetns25dicmdc2}`, sC: "bg"},
@@ -5393,7 +5393,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetnssfc1}`, sC: "tc"},
                     { line: `${aetnssfc2}`, sC: "bg"},
@@ -5408,7 +5408,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetnssfc1}`, sC: "tc"},
                     { line: `${aetnssfc2}`, sC: "bg"},
@@ -5422,7 +5422,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetnssfc1} (Mi,m,20)(La,,178)(Mi,m,342)`, sC: "tc"},
                     { line: `${aetnssfc2} (La,,151)(Mi,m,252)`, sC: "bg"},
@@ -5461,7 +5461,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetn1ec1}`, sC: "tc"},
                     { line: `${aetn1ec2}`, sC: "bg"},
@@ -5475,7 +5475,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetn1ec1}`, sC: "tc"},
                     { line: `${aetn1ec2}`, sC: "bg"},
@@ -5488,7 +5488,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetn1ec1} (Mi,m,20)(La,,178)(Mi,m,342)`, sC: "tc"},
                     { line: `${aetn1ec2} (La,,151)(Mi,m,252)`, sC: "bg"},
@@ -5540,7 +5540,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos24c1}`, sC: "tc"},
                     { line: `${aetos24c2}`, sC: "bg"},
@@ -5553,7 +5553,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos24c1}`, sC: "tc"},
                     { line: `${aetos24c2}`, sC: "bg"},
@@ -5565,7 +5565,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos24c1} (Mi,m,20)(La,m,192)(Mi,m,326)`, sC: "tc"},
                     { line: `${aetos24c2} (La,m,151)(Mi,m,292)`, sC: "bg"},
@@ -5603,7 +5603,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos25c1}`, sC: "tc"},
                     { line: `${aetos25c2}`, sC: "bg"},
@@ -5616,7 +5616,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos25c1}`, sC: "tc"},
                     { line: `${aetos25c2}`, sC: "bg"},
@@ -5628,7 +5628,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos25c1} (Mi,m,20)(La,m,192)(Mi,m,326)`, sC: "tc"},
                     { line: `${aetos25c2} (La,m,151)(Mi,m,292)`, sC: "bg"},
@@ -5663,7 +5663,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos26c1}`, sC: "tc"},
                     { line: `${aetos26c2}`, sC: "bg"},
@@ -5676,7 +5676,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos26c1}`, sC: "tc"},
                     { line: `${aetos26c2}`, sC: "bg"},
@@ -5688,7 +5688,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos26c1}`, sC: "tc"},
                     { line: `${aetos26c2}`, sC: "bg"},
@@ -5723,7 +5723,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos27c1}`, sC: "tc"},
                     { line: `${aetos27c2}`, sC: "bg"},
@@ -5736,7 +5736,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos27c1}`, sC: "tc"},
                     { line: `${aetos27c2}`, sC: "bg"},
@@ -5748,7 +5748,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos27c1} (Mi,m,20)(La,m,178)(Mi,m,404)`, sC: "tc"},
                     { line: `${aetos27c2} (La,m,163)(Mi,m,532)`, sC: "bg"},
@@ -5783,7 +5783,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos28c1}`, sC: "tc"},
                     { line: `${aetos28c2}`, sC: "bg"},
@@ -5796,7 +5796,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos28c1}`, sC: "tc"},
                     { line: `${aetos28c2}`, sC: "bg"},
@@ -5808,7 +5808,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos28c1}`, sC: "tc"},
                     { line: `${aetos28c2}`, sC: "bg"},
@@ -5844,7 +5844,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos29c1}`, sC: "tc"},
                     { line: `${aetos29c2}`, sC: "bg"},
@@ -5857,7 +5857,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos29c1}`, sC: "tc"},
                     { line: `${aetos29c2}`, sC: "bg"},
@@ -5869,7 +5869,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos29c1}`, sC: "tc"},
                     { line: `${aetos29c2}`, sC: "bg"},
@@ -5905,7 +5905,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos30c1}`, sC: "tc"},
                     { line: `${aetos30c2}`, sC: "bg"},
@@ -5918,7 +5918,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos30c1}`, sC: "tc"},
                     { line: `${aetos30c2}`, sC: "bg"},
@@ -5930,7 +5930,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos30c1}`, sC: "tc"},
                     { line: `${aetos30c2}`, sC: "bg"},
@@ -5965,7 +5965,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos31c1}`, sC: "tc"},
                     { line: `${aetos31c2}`, sC: "bg"},
@@ -5979,7 +5979,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos31c1}`, sC: "tc"},
                     { line: `${aetos31c2}`, sC: "bg"},
@@ -5992,7 +5992,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos31c1}`, sC: "tc"},
                     { line: `${aetos31c2}`, sC: "bg"},
@@ -6028,7 +6028,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos32c1}`, sC: "tc"},
                     { line: `${aetos32c2}`, sC: "bg"},
@@ -6041,7 +6041,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos32c1}`, sC: "tc"},
                     { line: `${aetos32c2}`, sC: "bg"},
@@ -6053,7 +6053,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos32c1}`, sC: "tc"},
                     { line: `${aetos32c2}`, sC: "bg"},
@@ -6088,7 +6088,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos33c1}`, sC: "tc"},
                     { line: `${aetos33c2}`, sC: "bg"},
@@ -6101,7 +6101,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos33c1}`, sC: "tc"},
                     { line: `${aetos33c2}`, sC: "bg"},
@@ -6113,7 +6113,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos33c1}`, sC: "tc"},
                     { line: `${aetos33c2}`, sC: "bg"},
@@ -6148,7 +6148,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetos34c1}`, sC: "tc"},
                     { line: `${aetos34c2}`, sC: "bg"},
@@ -6161,7 +6161,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetos34c1}`, sC: "tc"},
                     { line: `${aetos34c2}`, sC: "bg"},
@@ -6173,7 +6173,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetos34c1}`, sC: "tc"},
                     { line: `${aetos34c2}`, sC: "bg"},
@@ -6208,7 +6208,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetosscscc1}`, sC: "tc"},
                     { line: `${aetosscscc2}`, sC: "bg"},
@@ -6223,7 +6223,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetosscscc1}`, sC: "tc"},
                     { line: `${aetosscscc2}`, sC: "bg"},
@@ -6237,7 +6237,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetosscscc1}`, sC: "tc"},
                     { line: `${aetosscscc2}`, sC: "bg"},
@@ -6280,7 +6280,7 @@
                triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(Re,,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
                     { line: `${aetfs14s1}`, sC: "tc"},
                     { line: `${aetfs14s2}`, sC: "bg"},
@@ -6293,7 +6293,7 @@
                     { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
 
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Do,,20)(Mi,,70)(La,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
                     { line: `${aetfs14s1}`, sC: "tc"},
                     { line: `${aetfs14s2}`, sC: "bg"},
@@ -6305,7 +6305,7 @@
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
-                    { line: "Usar los acordes:", sC: "anota"},{ line: "(Mi,m,20)(La,m,70)(Mi,m,130)", sC: "bnota"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetfs14s1}`, sC: "tc"},
                     { line: `${aetfs14s2} (La,m,151)(Mi,m,366)`, sC: "bg"},

@@ -1087,3 +1087,8 @@ let aetps8c3 = "y enciende en ellos la llama de tu amor";
 const aetps9c = "Apocalipsis 1, 8 - La Santísima Trinidad";
 let aetps9c1 = "Gloria al Padre, y al Hijo, y al Espíritu Santo,";
 let aetps9c2 = "al Dios que es, que era y que viene.";
+
+let txtmsg = "Acordes:";
+let modelo1 = "(Mi,m,10)(Re,,80)(Mi,m,150)";
+let modelo2 = "(Do,,10)(Mi,,80)(La,m,150)";
+let modelo3 = "(Mi,m,10)(La,m,80)(Mi,m,150)";

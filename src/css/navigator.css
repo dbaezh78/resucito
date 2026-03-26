@@ -334,5 +334,5 @@ body { padding-bottom: 70px; }
 /* Ajuste preventivo para la barra */
 .nav-bottom-bar {
     position: relative !important; /* Importante para que no flote sola */
-    border-top: 1px solid rgba(128, 169, 230, 0.9);
+    border-top: 1px solid var(--SangreDeCristo);
 }

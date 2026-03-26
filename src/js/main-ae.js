@@ -304,7 +304,7 @@ function generarIndice() {
                         const colorHex = {
                             "Adviento": "#6a1b9a",
                             "Navidad":  "#c62828",
-                            "Ordinario": "#9e9e9e",
+                            "Ordinario": "#65af00",
                             "Cuaresma": "#4a148c",
                             "Pascua":   "#1565c0"
                         }[t.nombre] || "#ccc";
