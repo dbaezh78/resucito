@@ -1402,16 +1402,22 @@ hr {
 .anota {
     left: 0px;
     width: fit-content;
-    top: 40px;
     color: gray;
-    opacity: 0.4;
-}
+    opacity: 0.15;
 
-.bnota {
-    top: 14px;
-    left: 172px;
-    
 }
+    @media (min-width: 384px){.anota {top: 33px}}
+    @media (min-width: 768px){.anota {top: 7px}}
+    @media (min-width: 992px){.anota {top: 37px}}
+
+
+
+
+.bnota {    /*pendiente */  }
+    @media (min-width: 384px){.bnota {margin-left: 125px; top: 11px}}
+    @media (min-width: 768px){.bnota {margin-left: 231px; top: -25px}}
+    @media (min-width: 992px){.bnota {margin-left: 172px; top: 12px}}
+    
 
 .cnota {
     color: gray;
