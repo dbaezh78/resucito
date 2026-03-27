@@ -508,7 +508,7 @@
           // SIGUIENTE CANTO DEBAJO
 
 
-          /*╔══════════════════════════════════════════════════════════════════╗
+             /*╔══════════════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO NAVIDAD SAGRADA FAMILIA AÑO A  ║
           ╚══════════════════════════════════════════════════════════════════╝  */
           {
@@ -576,7 +576,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
           // SIGUIENTE CANTO DEBAJO
 
-          /*╔══════════════════════════════════════════════════════════════════════════╗
+             /*╔══════════════════════════════════════════════════════════════════════════╗
           ║  ACLAMACIÓN EVANGELIO TIEMPO NAVIDAD ALELUYA HB 1, 1-2 SEMANA 1 AÑO A    ║
           ║  SANTA MARIA MADRE DE DIOS                                               ║
           ╚══════════════════════════════════════════════════════════════════════════╝  */
@@ -954,7 +954,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA III
           // SIGUIENTE CANTO DEBAJO
         /*╔════════════════════════════════════════════════════════╗
-          ║   ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA IV    ║
+          ║   ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA IV  ║
           ╚════════════════════════════════════════════════════════╝  */
           {
                id: "aetos4a",
@@ -2796,7 +2796,7 @@
           ], lder: [
           ]}, // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXXII
           // SIGUIENTE CANTO DEBAJO
-        /*╔═══════════════════════════════════════════════════════════╗
+           /*╔═══════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXXIII ║
           ╚═══════════════════════════════════════════════════════════╝  */
           {
@@ -2928,7 +2928,7 @@
           ]}, // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXXIV
           // SIGUIENTE CANTO DEBAJO
 
-          /*╔═════════════════════════════════════════════════════════════════╗
+             /*╔═════════════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO SANTISIMO CUERPO Y SANGRE DE CRISTO  ║
           ╚═════════════════════════════════════════════════════════════════╝  */
           {
@@ -3373,7 +3373,7 @@
           // ULTIMA LINEA DEL CANTO: TIEMPO CUARESMA SEMANA V
           // SIGUIENTE CANTO DEBAJO
 
-        /*╔═══════════════════════════════════════════════════════════════╗
+           /*╔═══════════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO CUARESMA DOMINGO DE RAMOS   ║
           ╚═══════════════════════════════════════════════════════════════╝  */
           {
@@ -3435,7 +3435,7 @@
           // SIGUIENTE CANTO DEBAJO
 
 
-        /*╔════════════════════════════════════════════╗
+           /*╔════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO JUEVES SANTO    ║
           ╚════════════════════════════════════════════╝  */
           {
@@ -3496,7 +3496,7 @@
           // ULTIMA LINEA DEL CANTO: JUEVES SANTO
           // SIGUIENTE CANTO DEBAJO
 
-        /*╔═════════════════════════════════════════════╗
+           /*╔═════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO VIERNES SANTO    ║
           ╚═════════════════════════════════════════════╝  */
           {
@@ -3557,7 +3557,7 @@
           // ULTIMA LINEA DEL CANTO: VIERNES SANTO
           // SIGUIENTE CANTO DEBAJO
 
-        /*╔══════════════════════════════════════════════╗
+           /*╔══════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO VIGILIA PASCUAL   ║
           ╚══════════════════════════════════════════════╝  */
    {
@@ -3610,7 +3610,7 @@
 // ULTIMA LINEA DEL CANTO: TIEMPO PASCUA SEMANA VII
 
 
-        /*╔═════════════════════════════════════════════════════╗
+           /*╔═════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO PASCUA SEMANA I   ║
           ╚═════════════════════════════════════════════════════╝  */
           {
@@ -3674,7 +3674,7 @@
                     { line: "ALELUYA ... (Mi,m,16)", sC: "ta as"},]},
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO PASCUA SEMANA I
-          /*╔══════════════════════════════════════════════════════════╗
+             /*╔══════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO PASCUA SEMANA II AÑO A ║
           ╚══════════════════════════════════════════════════════════╝  */
           {
@@ -4738,7 +4738,7 @@
           // SIGUIENTE CANTO DEBAJO
 
 
-          /*╔══════════════════════════════════════════════════════════════════╗
+             /*╔══════════════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO NAVIDAD SAGRADA FAMILIA AÑO A  ║
           ╚══════════════════════════════════════════════════════════════════╝  */
           {
@@ -4800,7 +4800,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
           // SIGUIENTE CANTO DEBAJO
 
-        /*╔══════════════════════════════════════════════════════════════════════════╗
+           /*╔══════════════════════════════════════════════════════════════════════════╗
           ║  ACLAMACIÓN EVANGELIO TIEMPO NAVIDAD ALELUYA HB 1, 1-2 SEMANA 1 AÑO B    ║
           ║  SANTA MARIA MADRE DE DIOS                                               ║
           ╚══════════════════════════════════════════════════════════════════════════╝  */
@@ -4987,7 +4987,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD EPIFANIA
           // SIGUIENTE CANTO DEBAJO
 
-          /*╔═════════════════════════════════════════════════════════════╗
+             /*╔═════════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA I  AÑO A ║
           ║   EL BAUTISMO DEL SEÑOR                                     ║
           ╚═════════════════════════════════════════════════════════════╝  */
@@ -6957,7 +6957,7 @@
           ], lder: [
           ]}, // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXXII
           // SIGUIENTE CANTO DEBAJO
-        /*╔═══════════════════════════════════════════════════════════╗
+           /*╔═══════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXXIII ║
           ╚═══════════════════════════════════════════════════════════╝  */
           {
@@ -7080,7 +7080,7 @@
           ]}, // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXXIV
           // SIGUIENTE CANTO DEBAJO
 
-          /*╔═════════════════════════════════════════════════════════════════╗
+             /*╔═════════════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO SANTISIMO CUERPO Y SANGRE DE CRISTO  ║
           ╚═════════════════════════════════════════════════════════════════╝  */
           {
@@ -7525,7 +7525,7 @@
           // ULTIMA LINEA DEL CANTO: TIEMPO CUARESMA SEMANA V
           // SIGUIENTE CANTO DEBAJO
 
-        /*╔═══════════════════════════════════════════════════════════════╗
+           /*╔═══════════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO CUARESMA DOMINGO DE RAMOS   ║
           ╚═══════════════════════════════════════════════════════════════╝  */
           {
@@ -7587,7 +7587,7 @@
           // SIGUIENTE CANTO DEBAJO
 
 
-        /*╔════════════════════════════════════════════╗
+           /*╔════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO JUEVES SANTO    ║
           ╚════════════════════════════════════════════╝  */
           {
@@ -7648,7 +7648,7 @@
           // ULTIMA LINEA DEL CANTO: JUEVES SANTO
           // SIGUIENTE CANTO DEBAJO
 
-        /*╔═════════════════════════════════════════════╗
+           /*╔═════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO VIERNES SANTO    ║
           ╚═════════════════════════════════════════════╝  */
           {
@@ -7709,7 +7709,7 @@
           // ULTIMA LINEA DEL CANTO: VIERNES SANTO
           // SIGUIENTE CANTO DEBAJO
 
-        /*╔══════════════════════════════════════════════╗
+           /*╔══════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO VIGILIA PASCUAL   ║
           ╚══════════════════════════════════════════════╝  */
    {
@@ -7762,7 +7762,7 @@
 // ULTIMA LINEA DEL CANTO: TIEMPO PASCUA SEMANA VII
 
 
-        /*╔═════════════════════════════════════════════════════╗
+           /*╔═════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO PASCUA SEMANA I   ║
           ╚═════════════════════════════════════════════════════╝  */
           {
@@ -7826,7 +7826,7 @@
                     { line: "ALELUYA ... (Mi,m,16)", sC: "ta as"},]},
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO PASCUA SEMANA I
-          /*╔══════════════════════════════════════════════════════════╗
+             /*╔══════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO PASCUA SEMANA II AÑO A ║
           ╚══════════════════════════════════════════════════════════╝  */
           {
@@ -8420,7 +8420,7 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetas1c1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+                    { line: `${aetas1c1}`, sC: "tc"},
                     { line: `${aetas1c2}`, sC: "bg"},
 
                     { line: "", sC: "adb1"},
@@ -8439,7 +8439,7 @@
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
 
-                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "collapsed",
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded", // collapsed / expanded
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
@@ -8482,7 +8482,7 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetas2c1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+                    { line: `${aetas2c1}`, sC: "tc"},
                     { line: `${aetas2c2}`, sC: "bg"},
 
                     { line: "", sC: "adb1"},
@@ -8501,7 +8501,7 @@
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
 
-                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "collapsed",
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded", // collapsed / expanded
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
@@ -8544,7 +8544,7 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetas3c1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+                    { line: `${aetas3c1}`, sC: "tc"},
                     { line: `${aetas3c2}`, sC: "bg"},
 
                     { line: "", sC: "adb1"},
@@ -8563,7 +8563,7 @@
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
 
-                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "collapsed",
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded", // collapsed / expanded
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
@@ -8606,7 +8606,7 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetas4c1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+                    { line: `${aetas4c1}`, sC: "tc"},
                     { line: `${aetas4c2}`, sC: "bg"},
 
                     { line: "", sC: "adb1"},
@@ -8625,7 +8625,7 @@
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
 
-                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "collapsed",
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded", // collapsed / expanded
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
@@ -8668,7 +8668,7 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetns25dicmvc1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+                    { line: `${aetns25dicmvc1}`, sC: "tc"},
                     { line: `${aetns25dicmvc2}`, sC: "bg"},
 
                     { line: "", sC: "adb1"},
@@ -8687,7 +8687,7 @@
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
 
-                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "collapsed",
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded", // collapsed / expanded
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
@@ -8703,7 +8703,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA IV
           // SIGUIENTE CANTO DEBAJO
 
-          /*╔═══════════════════════════════════════════════════════╗
+             /*╔═══════════════════════════════════════════════════════╗
           ║ 25 DE DICIEMBRE | MISA DE LA MEDIA NOCHE              ║
           ╚═══════════════════════════════════════════════════════╝  */
           {
@@ -8730,7 +8730,7 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetns25dicmmc1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+                    { line: `${aetns25dicmmc1}`, sC: "tc"},
                     { line: `${aetns25dicmmc2}`, sC: "bg"},
                     { line: `${aetns25dicmmc3}`, sC: "bg"},
 
@@ -8751,7 +8751,7 @@
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
 
-                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "collapsed",
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded", // collapsed / expanded
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
@@ -8796,7 +8796,7 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetns25dicmac1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+                    { line: `${aetns25dicmac1}`, sC: "tc"},
                     { line: `${aetns25dicmac2}`, sC: "bg"},
 
                     { line: "", sC: "adb1"},
@@ -8815,7 +8815,7 @@
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
 
-                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "collapsed",
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded", // collapsed / expanded
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
@@ -8831,7 +8831,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA IV
           // SIGUIENTE CANTO DEBAJO
 
-          /*╔═══════════════════════════════════════════════════════╗
+             /*╔═══════════════════════════════════════════════════════╗
           ║ 25 DE DICIEMBRE | Aleluya - Misa del día              ║
           ╚═══════════════════════════════════════════════════════╝  */
           {
@@ -8858,7 +8858,7 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetns25dicmdc1} (Mi,m,10)(Re,,181)(Mi,m,352)`, sC: "tc"},
+                    { line: `${aetns25dicmdc1}`, sC: "tc"},
                     { line: `${aetns25dicmdc2}`, sC: "bg"},
                     { line: `${aetns25dicmdc3}`, sC: "bg"},
 
@@ -8879,7 +8879,7 @@
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
 
-                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "collapsed",
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded", // collapsed / expanded
                triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
                     { line: "", sC: "adb1"},
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
@@ -8952,9 +8952,9 @@
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
                     { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
-                    { line: `${aetnssfc1} (Mi,m,20)(La,,178)(Mi,m,342)`, sC: "tc"},
-                    { line: `${aetnssfc2} (La,,151)(Mi,m,252)`, sC: "bg"},
-                    { line: `${aetnssfc3} (La,,151)(Mi,m,252)`, sC: "bg"},
+                    { line: `${aetnssfc1}`, sC: "tc"},
+                    { line: `${aetnssfc2}`, sC: "bg"},
+                    { line: `${aetnssfc3}`, sC: "bg"},
                     { line: `${aetnssfc4}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
@@ -8963,7 +8963,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA 1
 
 
-        /*╔══════════════════════════════════════════════════════════════════════════╗
+           /*╔══════════════════════════════════════════════════════════════════════════╗
           ║  ACLAMACIÓN EVANGELIO TIEMPO NAVIDAD ALELUYA HB 1, 1-2 SEMANA 1 AÑO C    ║
           ║  SANTA MARIA MADRE DE DIOS                                               ║
           ╚══════════════════════════════════════════════════════════════════════════╝  */
@@ -9018,9 +9018,9 @@
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
                     { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
-                    { line: `${aetn1ec1} (Mi,m,20)(La,,178)(Mi,m,342)`, sC: "tc"},
-                    { line: `${aetn1ec2} (La,,151)(Mi,m,252)`, sC: "bg"},
-                    { line: `${aetn1ec3} (La,,151)(Mi,m,252)`, sC: "bg"},
+                    { line: `${aetn1ec1}`, sC: "tc"},
+                    { line: `${aetn1ec2}`, sC: "bg"},
+                    { line: `${aetn1ec3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Mi,m,16)", sC: "ta as"},]},
@@ -10445,7 +10445,7 @@
 
 
 
-          /*╔════════════════════════════════════════════════════════════════╗
+             /*╔════════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXIV AÑO C    ║
           ╚════════════════════════════════════════════════════════════════╝  */
           {
@@ -10497,8 +10497,8 @@
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
                     { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
-                    { line: `${aetos24c1} (Mi,m,20)(La,m,192)(Mi,m,326)`, sC: "tc"},
-                    { line: `${aetos24c2} (La,m,151)(Mi,m,292)`, sC: "bg"},
+                    { line: `${aetos24c1}`, sC: "tc"},
+                    { line: `${aetos24c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Mi,m,16)", sC: "ta as"},]},
@@ -10508,7 +10508,7 @@
 
 
 
-          /*╔═════════════════════════════════════════════════════════════╗
+             /*╔═════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXV AÑO C  ║
           ╚═════════════════════════════════════════════════════════════╝  */
           {
@@ -10560,15 +10560,15 @@
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
                     { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
-                    { line: `${aetos25c1} (Mi,m,20)(La,m,192)(Mi,m,326)`, sC: "tc"},
-                    { line: `${aetos25c2} (La,m,151)(Mi,m,292)`, sC: "bg"},
+                    { line: `${aetos25c1}`, sC: "tc"},
+                    { line: `${aetos25c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Mi,m,16)", sC: "ta as"},]},
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXV
 
-          /*╔══════════════════════════════════════════════════════════════╗
+             /*╔══════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXVI AÑO C  ║
           ╚══════════════════════════════════════════════════════════════╝  */
           {
@@ -10628,7 +10628,7 @@
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXVI
 
-          /*╔═══════════════════════════════════════════════════════════════╗
+             /*╔═══════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXVII AÑO C  ║
           ╚═══════════════════════════════════════════════════════════════╝  */
           {
@@ -10680,15 +10680,15 @@
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
                     { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
-                    { line: `${aetos27c1} (Mi,m,20)(La,m,178)(Mi,m,404)`, sC: "tc"},
-                    { line: `${aetos27c2} (La,m,163)(Mi,m,532)`, sC: "bg"},
+                    { line: `${aetos27c1}`, sC: "tc"},
+                    { line: `${aetos27c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Mi,m,16)", sC: "ta as"},]},
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXVII
 
-          /*╔═══════════════════════════════════════════════════════════════╗
+             /*╔═══════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXVIII AÑO C ║
           ╚═══════════════════════════════════════════════════════════════╝  */
           {
@@ -10749,7 +10749,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXVIII
 
 
-          /*╔═══════════════════════════════════════════════════════════════╗
+             /*╔═══════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXIX AÑO C   ║
           ╚═══════════════════════════════════════════════════════════════╝  */
           {
@@ -10810,7 +10810,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXIX
 
 
-          /*╔═════════════════════════════════════════════════════════════╗
+             /*╔═════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXX AÑO C  ║
           ╚═════════════════════════════════════════════════════════════╝  */
           {
@@ -10870,7 +10870,7 @@
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXX
 
-          /*╔═════════════════════════════════════════════════════════════╗
+             /*╔═════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXXI AÑO C ║
           ╚═════════════════════════════════════════════════════════════╝  */
           {
@@ -10933,7 +10933,7 @@
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXXI
 
-          /*╔══════════════════════════════════════════════════════════════╗
+              /*╔══════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXXII AÑO C ║
           ╚══════════════════════════════════════════════════════════════╝  */
           {
@@ -10993,7 +10993,7 @@
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXXII
 
-          /*╔════════════════════════════════════════════════════════════════╗
+              /*╔════════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXXIII AÑO C  ║
           ╚════════════════════════════════════════════════════════════════╝  */
           {
@@ -11053,7 +11053,7 @@
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXXIII
 
-          /*╔═══════════════════════════════════════════════════════════════╗
+              /*╔═══════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO ORDINARIO SEMANA XXXIV AÑO C  ║
           ╚═══════════════════════════════════════════════════════════════╝  */
           {
@@ -11113,7 +11113,7 @@
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XXXIV
 
-          /*╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+              /*╔══════════════════════════════════════════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO TIEMPO SANTISIMO CUERPO Y SANGRE DE NUESTRO SEÑOR JESUCRISTO AÑO C  ║
           ╚══════════════════════════════════════════════════════════════════════════════════════════════╝  */
           {
@@ -11130,8 +11130,8 @@
                     tablet: { velocidad: 7, incremento: 1 },  // Para tablet
                     desktop: { velocidad: 7, incremento: 1 },   // Para PC
                     desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-                         ant: "/src/index.html?canto=aetos33c",
-                         sig: "/src/index.html?canto=aetos35c",
+                         ant: "/src/index.html?canto=aetos34c",
+                         sig: "/src/index.html?canto=aetfs14s",
           // Vaciando contenido,
           lizq: [
                     { type: "collapsible-block", id: "asamblea_ae_1", initialState: "collapsed", // collapsed / expanded
@@ -11185,7 +11185,7 @@
 
 
           // FIESTAS DEL SEÑOR
-          /*╔═══════════════════════════════════════════════════════════╗
+                /*╔═══════════════════════════════════════════════════════════╗
           ║ ACLAMACIÓN DEL EVANGELIO 14 DE SEPTIEMBRE EXALTACIÓN ✟    ║
           ╚═══════════════════════════════════════════════════════════╝  */
           {
@@ -11238,7 +11238,7 @@
                     { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
                     { line: `${aetfs14s1}`, sC: "tc"},
-                    { line: `${aetfs14s2} (La,m,151)(Mi,m,366)`, sC: "bg"},
+                    { line: `${aetfs14s2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},

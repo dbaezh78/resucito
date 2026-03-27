@@ -1,5 +1,11 @@
 /* --- 1. CONFIGURACIÓN DE COLORES LITÚRGICOS (ESTRICTA) --- */
 /* Usamos !important para asegurar que el fondo NUNCA cambie a blanco por error */
+:root
+{
+    --SangreDeCristo: #d01212;
+}
+
+
 body {
         background: #ffffcb;
 }
@@ -164,11 +170,127 @@ body {
     box-sizing: border-box; /* Muy importante para que no se salga de la pantalla */
 }
 
+
+.fneocat {
+    font-family: neocat;
+    color: var(--SangreDeCristo);
+    font-size: xx-large;
+    text-align: center;
+
+}
+
 /* Los resultados también deben seguir el ancho */
+/* Contenedor del buscador (Asegúrate de que el input y el div de resultados estén dentro de un div con esta clase) */
+.search-container {
+    position: relative; /* Esto es vital para que el absolute funcione */
+    width: 100%;
+    z-index: 9999; /* Muy alto para superar el índice */
+}
 #resultadosBusqueda {
     width: 100%;
     background: white;
-    /* Si quieres que flote sobre el contenido: */
     position: absolute; 
-    z-index: 1000;
+    top: 100%; 
+    left: 0;
+    
+    /* ELEVACIÓN */
+    z-index: 10000; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3); 
+    
+    /* ASPECTO */
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+/* LA MARCA ENTRE REGISTROS: Estilo para cada elemento de la lista */
+#resultadosBusqueda div {
+    padding: 12px 16px;
+    border-bottom: 1px solid #edf2f7; /* La "marca" o línea divisoria */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column; /* Título arriba, subtítulo abajo */
+    gap: 4px;
+}
+
+/* Quitar la línea al último elemento para que no choque con el borde redondeado */
+#resultadosBusqueda div:last-child {
+    border-bottom: none;
+}
+
+/* EFECTO AL PASAR EL MOUSE: Resalta el registro */
+#resultadosBusqueda div:hover {
+    background-color: #f8fafc; /* Un gris muy azulado y limpio */
+    padding-left: 20px; /* Pequeño desplazamiento a la derecha al seleccionar */
+    border-left: 4px solid #bf953f; /* Marca lateral dorada (opcional, combina con tus ciclos) */
+}
+
+/* Estilo para los textos dentro del resultado */
+.res-titulo {
+    font-weight: bold;
+    color: #2d3748;
+    font-size: 0.95rem;
+}
+
+.res-sub {
+    font-size: 0.8rem;
+    color: #718096;
+}
+
+/* Asegura que el contenedor donde generas este índice no tape al buscador */
+#indice-aclamaciones {
+    position: relative;
+    z-index: 1; /* Nivel bajo */
+}
+
+/* El contenedor del buscador debe ser el rey de la página */
+.search-container {
+    position: relative;
+    z-index: 9999 !important; 
+}
+
+#resultadosBusqueda {
+    z-index: 10000 !important;
+}
+
+
+/* Estilo para los registros encontrados en el buscador */
+/* El contenedor padre */
+#resultadosBusqueda {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    /* ... tus otros estilos de posicionamiento ... */
+}
+
+/* LA MARCA INDIVIDUAL: Usamos una clase específica */
+.item-resultado {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee; /* Línea divisoria entre ellos */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+    display: block; /* Para que ocupe todo el ancho */
+}
+
+/* Solo se marca el que tiene el mouse encima */
+.item-resultado:hover {
+    background-color: #f0f7ff !important; 
+    border-left: 5px solid #6a1b9a; /* La marca de color solo a la izquierda */
+}
+
+/* Estilos de texto para que no se hereden marcas raras */
+.res-titulo {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.res-sub {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
 }
