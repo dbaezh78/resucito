@@ -508,9 +508,9 @@ const aetn1eb = "Hebreos 1, 1-2 - Santa Maria Madre de Dios";
 let aetn1eb1 = "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas;";
 let aetn1eb2 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
 
-const aetns2domingob = "Cf. 1Tm 3, 16 - 2º Domingo después de Navidad";
-let aetns2domingob1 = "Gloria a ti, Cristo, proclamado a los paganos.";
-let aetns2domingob2 = "Gloria a ti, Cristo, creído en el mundo.";
+const aetns2b = "Cf. 1Tm 3, 16 - 2º Domingo después de Navidad";
+let aetns2b1 = "Gloria a ti, Cristo, proclamado a los paganos.";
+let aetns2b2 = "Gloria a ti, Cristo, creído en el mundo.";
 
 const aetns6b = "Mt 2, 2 - Epifanía del Señor";
 let aetns6b1 = "Hemos visto salir su estrella";
