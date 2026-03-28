@@ -26,6 +26,7 @@
 }
 
 .dblink-ac {
+    position: fixed;
     display: block;
     width: 100%;
     overflow: hidden; /* Corta el texto cuando sale de la pantalla */
