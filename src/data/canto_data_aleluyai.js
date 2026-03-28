@@ -659,7 +659,7 @@
                     desktop: { velocidad: 7, incremento: 1 },   // Para PC
                     desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
           ant: "/src/index.html?canto=aetn1ea",
-          sig: "/src/index.html?canto=aetns6a",
+          sig: "/src/index.html?canto=aetn6ea",
           // Vaciando contenido,
           lizq: [
                     { type: "collapsible-block", id: "asamblea_ae_1", initialState: "collapsed",
@@ -707,11 +707,11 @@
         /*╔════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO NAVIDAD EPIFANIA     ║
           ╚════════════════════════════════════════════════════════╝  */
-          {
-               id: "aetns6a",
-               tt: aetns6,
-               title: aetns6,
-          subtitle: añoa+", "+aetns6a,
+          {         
+               id: "aetn6ea",
+               tt: aetn6e,
+               title: aetn6e,
+          subtitle: añoa+", "+aetn6ea,
           category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
                mant: "No",
           audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
@@ -731,8 +731,8 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetns6a1}`, sC: "tc"},
-                    { line: `${aetns6a2}`, sC: ""},
+                    { line: `${aetn6ea1}`, sC: "tc"},
+                    { line: `${aetn6ea2}`, sC: ""},
 
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
@@ -744,8 +744,8 @@
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
-                    { line: `${aetns6a1}`, sC: "tc"},
-                    { line: `${aetns6a2}`, sC: "tc"},
+                    { line: `${aetn6ea1}`, sC: "tc"},
+                    { line: `${aetn6ea2}`, sC: "tc"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
@@ -756,8 +756,8 @@
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
                     { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
-                    { line: `${aetns6a1}`, sC: "tc"},
-                    { line: `${aetns6a2}`, sC: "bg"},
+                    { line: `${aetn6ea1}`, sC: "tc"},
+                    { line: `${aetn6ea2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
@@ -784,7 +784,7 @@
                     tablet: { velocidad: 7, incremento: 1 },  // Para tablet
                     desktop: { velocidad: 7, incremento: 1 },   // Para PC
                     desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-          ant: "/src/index.html?canto=aetns6a",
+          ant: "/src/index.html?canto=aetn6ea",
           sig: "/src/index.html?canto=aetos2a",
           // Vaciando contenido,
           lizq: [
@@ -4880,7 +4880,7 @@
                     desktop: { velocidad: 7, incremento: 1 },   // Para PC
                     desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
           ant: "/src/index.html?canto=aetn1eb",
-          sig: "/src/index.html?canto=aetns6b",
+          sig: "/src/index.html?canto=aetn6eb",
           // Vaciando contenido,
           lizq: [
                     { type: "collapsible-block", id: "asamblea_ae_1", initialState: "collapsed",
@@ -4929,10 +4929,10 @@
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO NAVIDAD EPIFANIA     ║
           ╚════════════════════════════════════════════════════════╝  */
           {
-               id: "aetns6b",
-               tt: aetns6,
-               title: aetns6,
-          subtitle: añob+", "+aetns6b,
+               id: "aetn6eb",
+               tt: aetn6e,
+               title: aetn6e,
+          subtitle: añob+", "+aetn6eb,
           category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
                mant: "No",
           audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
@@ -4952,8 +4952,8 @@
                     { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
 
-                    { line: `${aetns6b1}`, sC: "tc"},
-                    { line: `${aetns6b2}`, sC: ""},
+                    { line: `${aetn6eb1}`, sC: "tc"},
+                    { line: `${aetn6eb2}`, sC: ""},
 
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
@@ -4965,8 +4965,8 @@
                     { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
                     { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
 
-                    { line: `${aetns6b1}`, sC: "tc"},
-                    { line: `${aetns6b2}`, sC: "tc"},
+                    { line: `${aetn6eb1}`, sC: "tc"},
+                    { line: `${aetn6eb2}`, sC: "tc"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
@@ -4977,8 +4977,8 @@
                     { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
                     { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
 
-                    { line: `${aetns6b1}`, sC: "tc"},
-                    { line: `${aetns6b2}`, sC: "bg"},
+                    { line: `${aetn6eb1}`, sC: "tc"},
+                    { line: `${aetn6eb2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
                     { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
@@ -5005,7 +5005,7 @@
                     tablet: { velocidad: 7, incremento: 1 },  // Para tablet
                     desktop: { velocidad: 7, incremento: 1 },   // Para PC
                     desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-          ant: "/src/index.html?canto=aetns6b",
+          ant: "/src/index.html?canto=aetn6eb",
           sig: "/src/index.html?canto=aetos2b",
           // Vaciando contenido,
           lizq: [
@@ -8831,7 +8831,7 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA IV
           // SIGUIENTE CANTO DEBAJO
 
-             /*╔═══════════════════════════════════════════════════════╗
+        /*╔═══════════════════════════════════════════════════════╗
           ║ 25 DE DICIEMBRE | Aleluya - Misa del día              ║
           ╚═══════════════════════════════════════════════════════╝  */
           {
@@ -9042,7 +9042,7 @@
                     tablet: { velocidad: 7, incremento: 1 },  // Para tablet
                     desktop: { velocidad: 7, incremento: 1 },   // Para PC
                     desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-          ant: "/src/index.html?canto=aetns6c",
+          ant: "/src/index.html?canto=aetn6ec",
           sig: "/src/index.html?canto=aetos2c",
           // Vaciando contenido,
           lizq: [

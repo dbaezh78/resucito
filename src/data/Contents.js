@@ -47,7 +47,7 @@ const aetns25dicmm = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la v
 const aetns25dicma = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aetns25dicmd = "25 Diciembre, Tiempo Navidad";    //Aleluya - Misa de la vigilia
 const aetnssf = "Fiesta de la Sagrada Familia";    //Aleluya - Sagrada Familia
-const aetns6 = " La Epifanía del Señor";    //Aleluya - Sagrada Familia
+const aetn6e = " La Epifanía del Señor";    //Aleluya - Sagrada Familia
 const aetn1e = "Santa Maria Madre de Dios";
 
 // Tiempo Ordinario
@@ -182,9 +182,9 @@ const aetns2a = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
 let aetns2a1 = "Gloria a ti, Cristo, proclamado a los paganos.";
 let aetns2a2 = "Gloria a ti, Cristo, creído en el mundo.";
 
-const aetns6a = "Mateo 2, 2 - Epifanía del Señor";
-let aetns6a1 = "Hemos visto salir su estrella";
-let aetns6a2 = "y venimos a adorar al Señor.";
+const aetn6ea = "Mateo 2, 2 - Epifanía del Señor";
+let aetn6ea1 = "Hemos visto salir su estrella";
+let aetn6ea2 = "y venimos a adorar al Señor.";
 
 const aetos1a = "Marcos 9, 7";
 let aetos1a1 = "Se abrió el cielo,";
@@ -512,9 +512,9 @@ const aetns2b = "Cf. 1Tm 3, 16 - 2º Domingo después de Navidad";
 let aetns2b1 = "Gloria a ti, Cristo, proclamado a los paganos.";
 let aetns2b2 = "Gloria a ti, Cristo, creído en el mundo.";
 
-const aetns6b = "Mt 2, 2 - Epifanía del Señor";
-let aetns6b1 = "Hemos visto salir su estrella";
-let aetns6b2 = "y venimos a adorar al Señor.";
+const aetn6eb = "Mt 2, 2 - Epifanía del Señor";
+let aetn6eb1 = "Hemos visto salir su estrella";
+let aetn6eb2 = "y venimos a adorar al Señor.";
 
 const aetos1b = "Cf. Mc 9, 7";
 let aetos1b1 = "Se abrió el cielo, y se oyó la voz del Padre:";
@@ -821,9 +821,9 @@ const aetns2domingoc = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
 let aetns2domingoc1 = "Gloria a ti, Cristo, proclamado a los paganos.";
 let aetns2domingoc2 = "Gloria a ti, Cristo, creído en el mundo.";
 
-const aetns6c = "Mateo 2, 2 - Epifanía del Señor";
-let aetns6c1 = "Hemos visto salir su estrella";
-let aetns6c2 = "y venimos a adorar al Señor.";
+const aetn6ec = "Mateo 2, 2 - Epifanía del Señor";
+let aetn6ec1 = "Hemos visto salir su estrella";
+let aetn6ec2 = "y venimos a adorar al Señor.";
 
 const aetos1c = "Marcos 9, 7 - El Bautismo del Señor";
 let aetos1c1 = "Se abrió el cielo,";

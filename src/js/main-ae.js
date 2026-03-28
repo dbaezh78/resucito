@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     semanas: [
                         { id: "aetns25dicmva",		nombre: "25 Diciembre", 			sub: "Natividad del Señor" },
                         { id: "aetnssfa",	nombre: "Último domingo Diciembre", sub: "La Sagrada Familia" },
-                        { id: "aetns1eneroa",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
+                        { id: "aetn1ea",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
                         { id: "aetns2a",		nombre: "Semana II", 				sub: "2º Domingo después de Navidad" },
                         { id: "aetn6ea", 		nombre: "6 de Enero", 				sub: "Epifanía del Señor" },
                         { id: "aetos1a",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
@@ -79,12 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     nombre: "Cuaresma",
                     semanas: [
-                        { id: "aecs1a", nombre: "Semana I",		sub: "I Domingo Tiempo de Cuaresma" },
-                        { id: "aecs2a", nombre: "Semana II",	sub: "II Domingo Tiempo de Cuaresma" },
-                        { id: "aecs3a", nombre: "Semana III",	sub: "III Domingo Tiempo de Cuaresma" },
-                        { id: "aecs4a", nombre: "Semana IV",	sub: "IV Domingo Tiempo de Cuaresma" },
-                        { id: "aecs5a", nombre: "Semana V",		sub: "V Domingo Tiempo de Cuaresma" },
-                        { id: "aecs6a", nombre: "Semana VI",	sub: "Domingo de Ramos" },
+                        { id: "aetcs1a", nombre: "Semana I",		sub: "I Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs2a", nombre: "Semana II",	sub: "II Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs3a", nombre: "Semana III",	sub: "III Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs4a", nombre: "Semana IV",	sub: "IV Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs5a", nombre: "Semana V",		sub: "V Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs6a", nombre: "Semana VI",	sub: "Domingo de Ramos" },
                     ]
                 },
                                 {
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "aetps5a", nombre: "Semana V",	sub: "V Domingo de Pascua" },
                         { id: "aetps6a", nombre: "Semana VI",	sub: "VI Domingo de Pascua" },
                         { id: "aetps7a", nombre: "Semana VII",	sub: "VII Domingo de Pascua" },
-                        { id: "pentecostesa", nombre: "Pendecostes",	sub: "Solemnidad - Tiempo Pascual" },
+                        { id: "aetps8a", nombre: "Pendecostes",	sub: "Solemnidad - Tiempo Pascual" },
                     ]
                 }
 
@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     nombre: "Navidad",
                     semanas: [
                         { id: "aetns25dicmvb",	nombre: "25 Diciembre", 			sub: "Natividad del Señor" },
-                        { id: "aetnfamiliab",	nombre: "Último domingo Diciembre", sub: "La Sagrada Familia" },
-                        { id: "aetns1enerob",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
+                        { id: "aetnssfb",	nombre: "Último domingo Diciembre", sub: "La Sagrada Familia" },
+                        { id: "aetn1ea",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
                         { id: "aetns2b",		nombre: "Semana II", 				sub: "2º Domingo después de Navidad" },
                         { id: "aetn6eb", 		nombre: "6 de Enero", 				sub: "Epifanía del Señor" },
                         { id: "aetos1b",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
@@ -168,12 +168,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     nombre: "Cuaresma",
                     semanas: [
-                        { id: "aecs1b", nombre: "Semana I",		sub: "I Domingo Tiempo de Cuaresma" },
-                        { id: "aecs2a", nombre: "Semana II",	sub: "II Domingo Tiempo de Cuaresma" },
-                        { id: "aecs3b", nombre: "Semana III",	sub: "III Domingo Tiempo de Cuaresma" },
-                        { id: "aecs4b", nombre: "Semana IV",	sub: "IV Domingo Tiempo de Cuaresma" },
-                        { id: "aecs5b", nombre: "Semana V",		sub: "V Domingo Tiempo de Cuaresma" },
-                        { id: "aecs6b", nombre: "Semana VI",	sub: "Domingo de Ramos" },
+                        { id: "aetcs1b", nombre: "Semana I",		sub: "I Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs2a", nombre: "Semana II",	sub: "II Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs3b", nombre: "Semana III",	sub: "III Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs4b", nombre: "Semana IV",	sub: "IV Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs5b", nombre: "Semana V",		sub: "V Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs6b", nombre: "Semana VI",	sub: "Domingo de Ramos" },
                     ]
                 },
                                 {
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "aetps5b", nombre: "Semana V",	sub: "V Domingo de Pascua" },
                         { id: "aetps6b", nombre: "Semana VI",	sub: "VI Domingo de Pascua" },
                         { id: "aetps7b", nombre: "Semana VII",	sub: "VII Domingo de Pascua" },
-                        { id: "pentecostesb", nombre: "Pendecostes",	sub: "Solemnidad - Tiempo Pascual" },
+                        { id: "aetps8b", nombre: "Pendecostes",	sub: "Solemnidad - Tiempo Pascual" },
                     ]
 
                 }
@@ -210,8 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     nombre: "Navidad",
                     semanas: [
                         { id: "aetns25dicmvc",	nombre: "25 Diciembre", 			sub: "Natividad del Señor" },
-                        { id: "aetnssfb",   	nombre: "Último domingo Diciembre", sub: "La Sagrada Familia" },
-                        { id: "aetns1eneroc",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
+                        { id: "aetnssfc",   	nombre: "Último domingo Diciembre", sub: "La Sagrada Familia" },
+                        { id: "aetn1ec",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
                         { id: "aetns2c",		nombre: "Semana II", 				sub: "2º Domingo después de Navidad" },
                         { id: "aetn6ec", 		nombre: "6 de Enero", 				sub: "Epifanía del Señor" },
                         { id: "aetos1a",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
@@ -260,12 +260,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     nombre: "Cuaresma",
                     semanas: [
-                        { id: "aecs1c", nombre: "Semana I",		sub: "I Domingo Tiempo de Cuaresma" },
-                        { id: "aecs2c", nombre: "Semana II",	sub: "II Domingo Tiempo de Cuaresma" },
-                        { id: "aecs3c", nombre: "Semana III",	sub: "III Domingo Tiempo de Cuaresma" },
-                        { id: "aecs4c", nombre: "Semana IV",	sub: "IV Domingo Tiempo de Cuaresma" },
-                        { id: "aecs5c", nombre: "Semana V",		sub: "V Domingo Tiempo de Cuaresma" },
-                        { id: "aecs6c", nombre: "Semana VI",	sub: "Domingo de Ramos" },
+                        { id: "aetcs1c", nombre: "Semana I",		sub: "I Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs2c", nombre: "Semana II",	sub: "II Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs3c", nombre: "Semana III",	sub: "III Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs4c", nombre: "Semana IV",	sub: "IV Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs5c", nombre: "Semana V",		sub: "V Domingo Tiempo de Cuaresma" },
+                        { id: "aetcs6c", nombre: "Semana VI",	sub: "Domingo de Ramos" },
                     ]
                 },
                                 {
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "aetps5c", nombre: "Semana V",	sub: "V Domingo de Pascua" },
                         { id: "aetps6c", nombre: "Semana VI",	sub: "VI Domingo de Pascua" },
                         { id: "aetps7c", nombre: "Semana VII",	sub: "VII Domingo de Pascua" },
-                        { id: "pentecostesc", nombre: "Pendecostes",	sub: "Solemnidad - Tiempo Pascual" },
+                        { id: "aetps8c", nombre: "Pendecostes",	sub: "Solemnidad - Tiempo Pascual" },
                     ]
                 }
 
