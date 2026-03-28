@@ -1,5 +1,13 @@
 /* --- 1. CONFIGURACIÓN DE COLORES LITÚRGICOS (ESTRICTA) --- */
 /* Usamos !important para asegurar que el fondo NUNCA cambie a blanco por error */
+
+.cristo {
+    width: 33vw;
+    position: fixed;
+}
+
+
+
 :root
 {
     --SangreDeCristo: #d01212;
@@ -174,8 +182,17 @@ body {
 .fneocat {
     font-family: neocat;
     color: var(--SangreDeCristo);
-    font-size: xx-large;
+    font-size: 4vw;
     text-align: center;
+
+    position: fixed;
+    
+    position: fixed;
+    width: 62%;
+    text-align: center;
+    right: 0%;
+    top: 60px;
+
 
 }
 
@@ -293,4 +310,27 @@ body {
     display: block;
     font-size: 0.85rem;
     color: #666;
+}
+
+.encabezado {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    padding-bottom: 100px;
+    
+    @media (min-width: 384px){padding-bottom: 100px;}
+    @media (min-width: 768px){padding-bottom: 230px;}
+    @media (min-width: 992px){padding-bottom: 345px;}
+}
+
+.songs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0px;
+    justify-items: stretch;
+}
+
+.material-symbols-outlined:hover {
+    background: #4a7fd9 !important;
+    color: white !important;
 }
