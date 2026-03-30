@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedor = document.getElementById('indice-aclamaciones');
     if (!contenedor) return;
 
-    // 1. CONFIGURACIÓN DE COLORES (CON SEMANA SANTA)
+    // 1. CONFIGURACIÓN DE COLORES
     const coloresTiempos = {
         "Adviento": "bg-adviento",
         "Navidad":  "bg-navidad",
         "Ordinario": "bg-ordinario",
         "Cuaresma": "bg-cuaresma",
-        "sSanta":   "bg-santa",
-        "Pascua":   "bg-pascua"
+        "Pascua":   "bg-pascua",
+        "sSanta":   "bg-santa"
     };
 
     const colorHexMap = {
@@ -17,25 +17,31 @@ document.addEventListener('DOMContentLoaded', () => {
         "Navidad":  "#c62828",
         "Ordinario": "#65af00",
         "Cuaresma": "#4a148c",
-        "Semana Santa":   "#bc0009",
-        "Pascua":   "#1565c0"
+        "Pascua":   "#1565c0",
+        "Semana Santa":   "#4a148c"
     };
-
-    // 2. INYECTAR BOTÓN ÚNICO (ESTILO PERFIL)
+    
+    // 2. INYECTAR BOTONES DINÁMICAMENTE
     const accionesHTML = `
-        <div class="ae-actions-container" style="margin-bottom: 20px; display: flex; justify-content: center;">
-            <button id="btn-download-ae" class="btn-ae-sync" style="display: flex; align-items: center; gap: 8px; transition: all 0.3s;">
-                <span class="material-symbols-outlined">download_for_offline</span>
-                <span id="btn-text-ae">Descargar para uso offline</span>
+        <div class="ae-actions-container" style="margin-bottom: 20px; display: flex; gap: 10px; justify-content: center;">
+            <button id="btn-sync-ae" class="btn-ae-sync">
+                <span class="material-symbols-outlined">cloud_sync</span>
+                Sincronizar nube
+            </button>
+            <button id="btn-offline-ae" class="btn-ae-offline">
+                <span class="material-symbols-outlined">wifi_off</span>
+                Usar offline
             </button>
         </div>
     `;
     contenedor.insertAdjacentHTML('beforebegin', accionesHTML);
 
-    const btnDownload = document.getElementById('btn-download-ae');
-    const btnText = document.getElementById('btn-text-ae');
+    const btnSync = document.getElementById('btn-sync-ae');
+    const btnOffline = document.getElementById('btn-offline-ae');
 
-    // 3. ESTRUCTURA DE DATOS (AQUÍ VA TU MAPA DE CANTOS)
+    // ================================================================
+    // 1. AQUÍ PONES LA ESTRUCTURA (El mapa de los cantos)
+    // ================================================================
     const estructuraAEV = [
         {
             ciclo: "CICLO A",
@@ -115,12 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     nombre: "Semana Santa",
                     semanas: [
                         { id: "aetcs6a", nombre: "Domingo de Ramos",	            sub: "Semana VI" },
-                        { id: "aetcsjsa", nombre: "Jueves Santo",		            sub: "Semana Santa" },
-                        { id: "aetcsvsa", nombre: "Viernes Santo",	                sub: "Semana Santa" },
+                        { id: "aetcs1a", nombre: "Jueves Santo",		            sub: "Semana Santa" },
+                        { id: "aetcs2a", nombre: "Viernes Santo",	                sub: "Semana Santa" },
                         { id: "aetcsssa", nombre: "Vigilia Pascual - Sabado Santo",  sub: "Sabado Santo" },
+                        { id: "aetps1a", nombre: "Domingo de Resurección",	        sub: "I Domingo Tiempo de Cuaresma" },
                     ]
-                },                
-                                {
+                },
+                {
                     nombre: "Pascua",
                     semanas: [
                         { id: "aetps1a", nombre: "Semana I",	sub: "I Domingo de Pascua - Octava de Pascua" },
@@ -213,12 +220,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     nombre: "Semana Santa",
                     semanas: [
                         { id: "aetcs6b", nombre: "Domingo de Ramos",	            sub: "Semana VI" },
-                        { id: "aetcsjsb", nombre: "Jueves Santo",		            sub: "Semana Santa" },
-                        { id: "aetcsvsc", nombre: "Viernes Santo",	                sub: "Semana Santa" },
+                        { id: "aetcs1b", nombre: "Jueves Santo",		            sub: "Semana Santa" },
+                        { id: "aetcs2b", nombre: "Viernes Santo",	                sub: "Semana Santa" },
                         { id: "aetcsssa", nombre: "Vigilia Pascual - Sabado Santo",  sub: "Sabado Santo" },
+                        { id: "aetps1b", nombre: "Domingo de Resurección",	        sub: "I Domingo Tiempo de Cuaresma" },
                     ]
-                },                
-                                {
+                },
+                {
                     nombre: "Pascua",
                     semanas: [
                         { id: "aetps1b", nombre: "Semana I",	sub: "I Domingo de Pascua - Octava de Pascua" },
@@ -307,23 +315,22 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "aetcs3c", nombre: "Semana III",	sub: "III Domingo Tiempo de Cuaresma" },
                         { id: "aetcs4c", nombre: "Semana IV",	sub: "IV Domingo Tiempo de Cuaresma" },
                         { id: "aetcs5c", nombre: "Semana V",		sub: "V Domingo Tiempo de Cuaresma" },
-                        { id: "aetcs6c", nombre: "Semana VI",	sub: "Domingo de Ramos" },
                     ]
                 },
                 {
                     nombre: "Semana Santa",
                     semanas: [
                         { id: "aetcs6c", nombre: "Domingo de Ramos",	            sub: "Semana VI" },
-                        { id: "aetcsjsc", nombre: "Jueves Santo",		            sub: "Semana Santa" },
-                        { id: "aetcsvsc", nombre: "Viernes Santo",	                sub: "Semana Santa" },
+                        { id: "aetcs1c", nombre: "Jueves Santo",		            sub: "Semana Santa" },
+                        { id: "aetcs2c", nombre: "Viernes Santo",	                sub: "Semana Santa" },
                         { id: "aetcsssa", nombre: "Vigilia Pascual - Sabado Santo",  sub: "Sabado Santo" },
+                        { id: "aetps1c", nombre: "Domingo de Resurección",	        sub: "I Domingo Tiempo de Cuaresma" },
                     ]
-                },                
-                {
+                },
+                                {
                     nombre: "Pascua",
                     semanas: [
-                        { id: "aetps1c", nombre: "Semana I",	sub: "I Domingo de Pascua - Octava de Pascua" },
-                        { id: "aetps2c", nombre: "Semana II",	sub: "II Domingo de Pascua" },
+                        { id: "aetps2c", nombre: "Octava de Pascua",	sub: "II Domingo de Pascua" },
                         { id: "aetps3c", nombre: "Semana III",	sub: "III Domingo de Pascua" },
                         { id: "aetps4c", nombre: "Semana IV",	sub: "IV Domingo de Pascua" },
                         { id: "aetps5c", nombre: "Semana V",	sub: "V Domingo de Pascua" },
@@ -338,43 +345,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    // 4. FUNCIÓN DE DESCARGA (1 SEGUNDOS AL 100% Y BOTÓN VERDE)
-    async function ejecutarDescarga() {
-        if (!confirm("¿Descargar todos los cantos para uso offline?")) return;
-
+// 4. FUNCIÓN DE DESCARGA
+    async function ejecutarDescargaAEV() {
         const screen = document.getElementById('loading-screen');
         const bar = document.getElementById('loading-bar');
         const text = document.getElementById('loading-text');
 
-        if (screen) { screen.style.display = 'flex'; screen.style.opacity = '1'; }
-        if (bar) bar.style.width = '100%';
+        if (!screen || !bar) return;
+
+        screen.style.display = 'flex';
+        screen.style.opacity = '1';
+        bar.style.width = '100%';
         if (text) text.innerText = "Descargando aclamaciones para uso offline... 100%";
 
-        const total = (typeof allCantosData !== 'undefined') ? allCantosData.length : 0;
+        const totalCantos = (typeof allCantosData !== 'undefined') ? allCantosData.length : 0;
+        await new Promise(resolve => setTimeout(resolve, 3000));
 
-        await new Promise(r => setTimeout(r, 1000));
-
-        if (screen) screen.style.opacity = '0';
+        screen.style.opacity = '0';
         setTimeout(() => {
-            if (screen) screen.style.display = 'none';
-            
-            // CAMBIO A VERDE
-            btnText.innerText = "Descargado";
-            btnDownload.style.color = "#28a745"; 
-            btnDownload.style.borderColor = "#28a745";
-            btnDownload.disabled = true;
-
-            alert(`📥 Resultado de la Descarga\n\n• Aclamaciones procesadas: ${total}\n• Descargadas con éxito: ${total}\n• Pendientes: 0\n\nTodas las aclamaciones están listas.`);
+            screen.style.display = 'none';
+            alert(`📥 Resultado de la Descarga\n\n• Aclamaciones procesadas: ${totalCantos}\n• Descargadas con éxito: ${totalCantos}\n• Pendientes: 0\n\nTodas las aclamaciones están listas para usar offline.`);
         }, 500);
     }
 
-    if (btnDownload) btnDownload.addEventListener('click', ejecutarDescarga);
+    // 5. ASIGNAR EVENTOS
+    const preguntaPerfil = "¿Descargar todos los cantos para uso offline?";
+    [btnSync, btnOffline].forEach(btn => {
+        if (btn) btn.addEventListener('click', () => {
+            if (confirm(preguntaPerfil)) ejecutarDescargaAEV();
+        });
+    });
 
-    // 5. GENERAR EL ÍNDICE VISUAL
+    // 6. GENERAR EL ÍNDICE VISUAL CON COLORES
     function generarIndice() {
         if (typeof allCantosData === 'undefined') return;
         let html = '';
-        
         estructuraAEV.forEach(item => {
             html += `
                 <details class="ciclo-item">
@@ -384,28 +389,28 @@ document.addEventListener('DOMContentLoaded', () => {
                     </summary>
                     <div class="content">
                         ${item.tiempos.map(t => {
-                            const hex = colorHexMap[t.nombre] || "#ccc";
-                            const claseBg = coloresTiempos[t.nombre] || "";
+                            const colorHex = colorHexMap[t.nombre] || "#ccc";
+                            const bgClase = coloresTiempos[t.nombre] || "";
                             return `
-                                <details class="tiempo-item" style="--color-tiempo: ${hex};">
-                                    <summary class="tiempo-banner ${claseBg}">
-                                        ${t.nombre.toUpperCase()}
-                                        <span class="material-symbols-outlined arrow-tiempo">expand_more</span>
-                                    </summary>
-                                    <div class="songs-list">
-                                        ${t.semanas.map(s => {
-                                            const d = allCantosData.find(c => c.id === s.id);
-                                            return `
-                                                <a href="/src/index.html?canto=${s.id}" class="canto-item" style="--color-tiempo: ${hex}; text-decoration:none;">
-                                                    <div class="canto-info">
-                                                        <span class="canto-titulo">${d ? d.title : s.nombre}</span>
-                                                        <span class="canto-sub">${d ? (d.subtitle || s.sub) : s.sub}</span>
-                                                    </div>
-                                                    <span class="material-symbols-outlined icon-chevron">chevron_right</span>
-                                                </a>`;
-                                        }).join('')}
-                                    </div>
-                                </details>`;
+                            <details class="tiempo-item" style="--color-tiempo: ${colorHex}">
+                                <summary class="tiempo-banner ${bgClase}">
+                                    ${t.nombre.toUpperCase()}
+                                    <span class="material-symbols-outlined arrow-tiempo">expand_more</span>
+                                </summary>
+                                <div class="songs-list">
+                                    ${t.semanas.map(s => {
+                                        const d = allCantosData.find(c => c.id === s.id);
+                                        return `
+                                            <a href="/src/index.html?canto=${s.id}" class="canto-item" style="--color-tiempo: ${colorHex}">
+                                                <div class="canto-info">
+                                                    <span class="canto-titulo">${d ? d.title : s.nombre}</span>
+                                                    <span class="canto-sub">${d ? (d.subtitle || s.sub) : s.sub}</span>
+                                                </div>
+                                                <span class="material-symbols-outlined icon-chevron">chevron_right</span>
+                                            </a>`;
+                                    }).join('')}
+                                </div>
+                            </details>`;
                         }).join('')}
                     </div>
                 </details>`;
@@ -413,32 +418,12 @@ document.addEventListener('DOMContentLoaded', () => {
         contenedor.innerHTML = html;
     }
 
-// ================================================================
-    // 6. LÓGICA DE CIERRE AUTOMÁTICO (ACORDEÓN)
-    // ================================================================
+    // Acordeón automático
     document.addEventListener('click', (e) => {
-        // Buscamos si lo que se clickeó es un 'summary'
-        const summary = e.target.closest('summary');
-        if (!summary) return;
-
-        const details = summary.parentElement;
-        
-        // Lógica para TIEMPOS (Adviento, Navidad...)
-        if (details.classList.contains('tiempo-item')) {
-            const parentContent = details.closest('.content');
-            const allTiempos = parentContent.querySelectorAll('.tiempo-item');
-            
-            allTiempos.forEach(el => {
-                if (el !== details) el.removeAttribute('open');
-            });
-        }
-
-        // Lógica para CICLOS (Ciclo A, B, C)
-        if (details.classList.contains('ciclo-item')) {
-            const allCiclos = document.querySelectorAll('.ciclo-item');
-            
-            allCiclos.forEach(el => {
-                if (el !== details) el.removeAttribute('open');
+        if (e.target.closest('.tiempo-item[open] summary')) {
+            const actual = e.target.closest('.tiempo-item');
+            document.querySelectorAll('.tiempo-item[open]').forEach(el => {
+                if (el !== actual) el.removeAttribute('open');
             });
         }
     });

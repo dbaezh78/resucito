@@ -817,9 +817,9 @@ let aetn1ec1 = "En distintas ocasiones habló Dios antiguamente";
 let aetn1ec2 = "a nuestros padres por los profetas;";
 let aetn1ec3 = "ahora, en esta etapa final, nos ha hablado por el Hijo.";
 
-const aetns2domingoc = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
-let aetns2domingoc1 = "Gloria a ti, Cristo, proclamado a los paganos.";
-let aetns2domingoc2 = "Gloria a ti, Cristo, creído en el mundo.";
+const aetns2c = "1 Timoteo 3, 16 - 2º Domingo después de Navidad";
+let aetns2c1 = "Gloria a ti, Cristo, proclamado a los paganos.";
+let aetns2c2 = "Gloria a ti, Cristo, creído en el mundo.";
 
 const aetn6ec = "Mateo 2, 2 - Epifanía del Señor";
 let aetn6ec1 = "Hemos visto salir su estrella";
