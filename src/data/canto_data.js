@@ -15368,8 +15368,9 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "SANTO ES EL SEÑOR., (Mi,,180)", sC: "as"},
 ]}, // ULTIMA LINEA DEL CANTO: SANTO PALOMERAS 65 
 
-
+// =====================================
 // SANTO Melodía hebraica - COMPLETO
+// =====================================
             { type: "collapsible-block", id: "asamblea_SantoHebraica", initialState: "collapsed", triggerLine: "SANTO Melodía hebraica", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)", sC: "ta as"},
             { line: "SANTO ES EL SEÑOR,, (Mi,,181)", sC: "as"},
@@ -15410,10 +15411,11 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)", sC: "as"},
             { line: "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)", sC: "as"},
 
+          ]}, // ULTIMA LINEA DEL CANTO: // SANTO Melodía hebraica
 
-]}, // ULTIMA LINEA DEL CANTO: // SANTO Melodía hebraica
-
+// =====================================
 // SANTO Palestina 74 - PENDIENTE
+// =====================================
 
             { type: "collapsible-block", id: "asamblea_SantoPalestina74", initialState: "collapsed", triggerLine: "SANTO Palestina 74", sC: "Santo", color: "var(--Rojo-Leccionario)", lines: [
             { line: "SANTO, SANTO, SANTO,, (Re,m,22)", sC: "ta as"},
@@ -15447,7 +15449,11 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
-]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
+          ]},
+// ==============================================
+// SANTO Palestina 74 - PENDIENTE
+// ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
+// ==============================================
 
 
 // SANTO Roma 77 - PENDIENTE
@@ -15682,8 +15688,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "AMÉN, AMÉN, AMÉN., (Re,,35)(Sol,,176)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-        ], lder: [
-]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
+        ], lder: [ ]}, // ULTIMA LINEA DEL CANTO: PLEGARIA EUCARÍSTICA II
 // SIGUIENTE CANTO DEBAJO
 
 
