@@ -1,70 +1,127 @@
+/**
+ * RESUCITÓ - Loader Inteligente
+ * Bloquea el scroll y oculta deformidades de carga inyectando una máscara global.
+ */
 (function() {
-    // 1. INYECTAR EL CSS DEL LOADER
+    // 1. BLOQUEO E INYECCIÓN DE ESTILOS
+    // Añadimos la clase 'loading' al body de inmediato
+    document.body.classList.add('loading');
+
     const style = document.createElement('style');
+    style.id = 'loader-style-dynamic';
     style.innerHTML = `
+        /* Bloqueo de scroll mientras carga */
+        body.loading { 
+            overflow: hidden !important; 
+            height: 100vh !important; 
+            margin: 0 !important;
+        }
+
+        /* Pantalla de carga */
         #loading-screen {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: white; z-index: 999999; display: flex;
-            flex-direction: column; align-items: center; justify-content: center;
-            transition: opacity 0.5s ease-out; font-family: sans-serif;
+            position: fixed; 
+            top: 0; left: 0; 
+            width: 100vw; height: 100vh;
+            background: white; 
+            z-index: 9999999; 
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            transition: opacity 0.6s ease-in-out; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         .loader-bar-container {
-            width: 200px; height: 4px; background: #eee;
-            border-radius: 10px; overflow: hidden; margin-top: 20px;
+            width: 220px; 
+            height: 5px; 
+            background: #f0f0f0;
+            border-radius: 10px; 
+            overflow: hidden; 
+            margin-top: 25px;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
         }
+
         #loading-bar {
-            width: 0%; height: 100%; background: #bc0009;
-            transition: width 0.3s;
+            width: 0%; 
+            height: 100%; 
+            background: #bc0009; /* Rojo Sangre de Cristo */
+            transition: width 0.4s ease-out;
         }
-        #loading-text { margin-top: 10px; font-size: 14px; color: #666; }
-        .loader-logo { width: 80px; animation: pulse 1.5s infinite ease-in-out; }
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 0.8; }
-            50% { transform: scale(1.05); opacity: 1; }
-            100% { transform: scale(1); opacity: 0.8; }
+
+        #loading-text { 
+            margin-top: 12px; 
+            font-size: 14px; 
+            color: #888; 
+            font-weight: 500;
+        }
+
+        .loader-logo { 
+            width: 90px; 
+            height: auto;
+            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.1));
+            animation: pulse-resucito 1.8s infinite ease-in-out; 
+        }
+
+        @keyframes pulse-resucito {
+            0% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.08); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.9; }
         }
     `;
     document.head.appendChild(style);
 
-    // 2. INYECTAR EL HTML DEL LOADER
+    // 2. INYECCIÓN DEL HTML (Asegura que sea lo primero en el body)
     const loaderHTML = `
         <div id="loading-screen">
-            <img src="/src/img/cristo.png" class="loader-logo" alt="Resucitó">
-            <div style="font-family: 'Neocat', serif; color: #bc0009; font-size: 24px; margin-top:10px;">RESUCITÓ</div>
+            <img src="/src/img/cristo.png" class="loader-logo" alt="Logo">
+            <div style="font-family: 'Neocat', serif; color: #bc0009; font-size: 28px; margin-top:15px; letter-spacing: 1px;">RESUCITÓ</div>
             <div class="loader-bar-container">
                 <div id="loading-bar"></div>
             </div>
-            <div id="loading-text">0%</div>
+            <div id="loading-text">Iniciando... 0%</div>
         </div>
     `;
     document.body.insertAdjacentHTML('afterbegin', loaderHTML);
 
-    // 3. LÓGICA DE PROGRESO
+    // 3. LÓGICA DE PROGRESO Y CONTROL
     let progress = 0;
     const bar = document.getElementById('loading-bar');
     const text = document.getElementById('loading-text');
 
+    // Simulador de carga inicial rápida para dar feedback
     const interval = setInterval(() => {
-        if (progress < 90) {
-            progress += Math.random() * 12;
+        if (progress < 85) {
+            progress += Math.random() * 10;
             actualizarUI(progress);
         }
-    }, 100);
+    }, 120);
 
     function actualizarUI(val) {
-        if (bar) bar.style.width = Math.min(val, 100) + '%';
-        if (text) text.innerText = Math.round(Math.min(val, 100)) + '%';
+        const total = Math.round(Math.min(val, 100));
+        if (bar) bar.style.width = total + '%';
+        if (text) text.innerText = 'Cargando cantos... ' + total + '%';
     }
 
+    // 4. CIERRE (Evento 'load' asegura que CSS, JS e imágenes estén listos)
     window.addEventListener('load', () => {
         clearInterval(interval);
         actualizarUI(100);
+        
         setTimeout(() => {
             const screen = document.getElementById('loading-screen');
             if (screen) {
                 screen.style.opacity = '0';
-                setTimeout(() => screen.remove(), 500); // Lo borra del DOM para liberar memoria
+                
+                // Liberamos el body para que se pueda hacer scroll
+                document.body.classList.remove('loading');
+                
+                // Limpieza total del DOM tras la animación
+                setTimeout(() => {
+                    screen.remove();
+                    style.remove();
+                }, 600);
             }
-        }, 400);
+        }, 500); 
     });
 })();

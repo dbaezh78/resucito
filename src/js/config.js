@@ -26,6 +26,7 @@ const URLS_TO_CACHE = [
     'index.html',
     'joven.html',
     'perfil.html',
+    'index-ae.html',
     'sworker.js',
 
     // Area de Recursos SRC
@@ -49,6 +50,7 @@ const URLS_TO_CACHE = [
     'src/css/cgoogle.css',
     'src/css/cssgral.css',
     'src/css/index.css',
+    'src/css/index-ae.css',
     'src/css/joven.css',
     'src/css/mensajekiko.css',
     'src/css/navigator.css',
