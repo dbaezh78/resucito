@@ -686,6 +686,7 @@ const URLS_TO_CACHE = [
     'src/js/jsgral.js',
     'src/js/jsgral_ainterleccional.js',
     'src/js/jsgral_joven.js',
+    'src/js/loader.js',
     'src/js/logout.js',
     'src/js/manifest.json',
     'src/js/mensajekiko.js',
