@@ -1,33 +1,41 @@
 // Aleluyas Segun Semana - // aleluyainterleccional
 
-const allCantosData = [
+
+
+          // Si la variable no existe todavía, la creamos como un array vacío
+          if (typeof allCantosData === 'undefined') {
+          window.allCantosData = [];
+          }
+
+          allCantosData.push(
+
  
    
 /*
-╔════════════════════════════════════════════════════════╗
-║           NO ESTÁ AQUÍ, RESUCITÓ               ║
-╚════════════════════════════════════════════════════════╝  */
+╔════════════════════════════════════════════════╗
+║      Que detalle Señor has tenico conmigo      ║
+╚════════════════════════════════════════════════╝  */
    {
         id: "quedetallesenor",
         tt: "Que detalle Señor has tenico conmigo",
         title: "Que detalle Señor has tenico conmigo",
         subtitle: "Brotes de Olivo",
         category: ["Precatecumenado","Pascua","Pentecostés","Nuevo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
         dbno: "1",
         notes: "",
         mant: "No",
-        audioSrc: "https://audio.resucito.do/noestaaquiresucito.mp3",
+        audioSrc: "https://audio.resucito.do/quedetallesenor.mp3",
 // Nueva propiedad para la velocidad de desplazamiento
         scrollConfig: {
             mobile: { velocidad: 6, incremento: 3 }, // Para celular
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/joven.html?canto=muchomehanperseguido",
+        ant: "/index-joven.html",
         sig: "/src/joven.html?canto=nohayenelparecer",
 // Contenido del lado izquierdo del canto,
     lizq: [
@@ -61,19 +69,19 @@ const allCantosData = [
 
 /*
 ╔════════════════════════════════════════════════════════╗
-║           Belén, campanas de Belén,               ║
+║           Belén, campanas de Belén,                    ║
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "belencampanasdebelen",
         tt: "Belén, Campanas De Belén,",
         title: "Belén, Campanas De Belén,",
         subtitle: "Villancico",
-        category: ["Precatecumenado","Adviento","Navidad","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        category: ["Católico","Adviento","Navidad","Comunión"],
+        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
-        dbno: "162",
+        dbno: "2",
         notes: "",
         mant: "No",
         audioSrc: "/audio/belencampanasdebelen.mp3",
@@ -139,7 +147,7 @@ const allCantosData = [
         title: "Los Peces En El Río",
         subtitle: "Villancicos",
         category: ["Precatecumenado","Vírgen María","Adviento","Navidad","Pascua","Pentecostés","Final","Nuevo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -212,7 +220,7 @@ const allCantosData = [
         title: "Con Mi Burrito Sabanero",
         subtitle: "Villancicos",
         category: ["Precatecumenado","Adviento","Navidad","Catolicos","Villancicos"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -272,7 +280,7 @@ const allCantosData = [
         title: "Somos Un Pueblo Que Camina",
         subtitle: "Cancionero 54",
         category: ["Precatecumenado","Final","Nuevo Testamento"],
-        catCanto: "Precatecumenado",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -286,8 +294,8 @@ const allCantosData = [
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/joven.html?canto=conmiburritosabanero",
-        sig: "/src/joven.html?canto=unagransenal",
+        ant: "/src/index.html?canto=conmiburritosabanero",
+        sig: "/src/index.html?canto=hablame",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "SOMOS UN PUEBLO QUE CAMINA, (Sol,,13)(Mi,m,272)", sC: "ta as"},
@@ -347,5 +355,90 @@ const allCantosData = [
 ]}, // ULTIMA LINEA DEL CANTO: SOMOS UN PUEBLO QUE CAMINA
 // SIGUIENTE CANTO DEBAJO
 
+/*
+╔═════════════════════════════════╗
+║           Hablamé               ║
+╚═════════════════════════════════╝  */
+   {
+        id: "hablame",
+        tt: "Hablamé",
+        title: "Hablamé",
+        subtitle: "Cantar de los Cantares 2,8-17",
+        category: ["Catolico","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
+        catCanto: "Catolico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "101",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/hablame.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=somosunpuebloquecamina",
+        sig: "/src/index.html?canto=somosunpuebloquecamina",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Yo siento Señor, (Re,,12)(Si,m,160)", sC: "tc"},
+            { line: "que tu me amas, (Sol,,15)(La,,161)", sC: ""},
 
-] //LLAVE DE CIERRE DEL CANTO
+            { line: "yo siento señor, (Re,,12)(Si,m,157)", sC: ""},
+            { line: "que te puedo amar(Sol,,15)(La,,185)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "hablame señor, (Re,,12)(Si,m,160)", sC: ""},
+            { line: "que tu siervo escucha (Sol,,11)(La,,211)", sC: ""},
+            { line: "hablame que quieres de mi, (Re,,12)(La,,84)(Sol,,125)(La,,264)", sC: ""},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "Señor tu has sido grande para mi, (Re,,12)(Fa#,m,229)(Sol,,319)", sC: ""},
+            { line: "en el desierto de mi vida, Hablame., (Mi,m,20)(Sol,,209)(La,,333)", sC: ""},
+            
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "Yo quiero estar dispuesto a todo, (Re,,12)(Si,m,137)(Sol,,172)(La,,298)", sC: ""},
+            { line: "toma mi ser mi corazón es para ti, (Re,,12)(Si,m,147)(Sol,,189)(La,,321)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+
+            { line: "POR ESO CANTO TU MARAVILLAS, (Re,,12)(Si,m,219)", sC: "ta as"},
+            { line: "POR ESO CANTO TU AMOR, (Sol,,15)(La,,183)", sC: "as"},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { line: "POR ESO CANTO TU MARAVILLAS, (Re,,12)(Si,m,219)", sC: "as"},
+            { line: "POR ESO CANTO TU AMOR, (Sol,,15)(La,,183)", sC: "as"},
+            
+    ], lder: [
+            { line: "Te alabo señor por tu grandesa, (Re,,12)(Si,m,127)(Sol,,181)(La,,286)", sC: "tc"},
+            { line: "mil gracias te doy por tu grande amor, (Re,,12)(Si,m,137)(Sol,,229)(La,,342)", sC: ""},
+            { line: "heme aqui señor para acompañarte, (Re,,12)(Si,m,150)(Sol,,194)(La,,309)", sC: ""},
+            { line: "heme aqui que quieres de mi, (Re,,12)(Si,m,87)(Sol,,181)(La,,277)", sC: ""},
+
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            
+            { type: "collapsible-block", id: "asamblea_hablame_1", initialState: "collapsed",
+       triggerLine: "POR ESO CANTO TU MARAVILLAS, (Re,,12)(Si,m,219)", sC: "mt as ta", lines: [
+            { line: "POR ESO CANTO TU AMOR, (Sol,,15)(La,,183)", sC: "as"},
+                        
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "POR ESO CANTO TU MARAVILLAS, (Re,,12)(Si,m,219)", sC: "as"},
+            { line: "POR ESO CANTO TU AMOR, (Sol,,15)(La,,183)", sC: "as"},
+        ]},            
+
+
+            
+
+        ]}, // ULTIMA LINEA DEL CANTO: Hablamé
+// SIGUIENTE CANTO DEBAJO
+
+
+
+          ) //LLAVE DE CIERRE DEL CANTO

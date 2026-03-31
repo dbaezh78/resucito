@@ -18134,7 +18134,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
 
 /*
 ╔════════════════════════════════════════════════════════╗
-║           PREFACIO PARA EL TIEMPO PASCUAL               ║
+║           PREFACIO PARA EL TIEMPO PASCUAL              ║
 ╚════════════════════════════════════════════════════════╝  */
    {
         id: "prefacioparaeltiempopascual",
@@ -21474,8 +21474,8 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
               tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
-        ant: "/src/index.html?canto=prefacioparaeltiempopascual",
-        sig: "/src/index.html?canto=salmodiasparalaoraciondelosfieles",
+        ant: "/src/index.html?canto=subaelesposoallenodesutalamo",
+        sig: "/src/index.html?canto=ohluzgozosa",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "El Señor reina, la tierra goza,, (Sol,,14)", sC: "tc"},
@@ -21546,7 +21546,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
               tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
-        ant: "/src/index.html?canto=ialeluyas22",
+        ant: "/src/index.html?canto=salmo96",
         sig: "/src/index.html?canto=iespiritusanto",
 // Contenido del lado izquierdo del canto,
     lizq: [
