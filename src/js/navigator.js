@@ -91,7 +91,8 @@
                     <span class="material-symbols-outlined">menu_book</span>
                     <span>Resucitó</span>
                     <div class="nav-submenu" id="nav-submenu-resucito">
-                        <a href="/"><span class="material-symbols-outlined">home</span> Inicio</a>
+                        <a href="/"><span class="material-symbols-outlined">home</span> Camino</a>
+                        <a href="/index-joven.html"><span class="material-symbols-outlined">home</span> Mi Canto es Joven</a>
                         <a href="/index-ae.html"><span class="material-symbols-outlined">synagogue</span> Aclamación EV. </a>
                         <a href="/perfil.html"><span class="material-symbols-outlined">person</span> Perfil</a>
                         <a href="/src/select.html"><span class="material-symbols-outlined">playlist_add</span>Gestión Listas</a>

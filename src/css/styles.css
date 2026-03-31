@@ -8,7 +8,7 @@
 
 
 
-@media (min-width: 384px) {.cristo {top: 2.5%; width: 26%; }}
+@media (min-width: 384px) {.cristo {top: 5.5%; width: 26%; }}
 @media (min-width: 768px) {.cristo {top: 2.5%; width: 26%; }}
 @media (min-width: 992px) {.cristo {top: 2.5%; width: 26%; }}
 
@@ -136,7 +136,9 @@ input {
     letter-spacing: normal;
     margin-bottom: 0%;
     padding-top: 7%;
+
 }
+
     @media(min-width: 384px){
         .tResucito {margin-top: 0%;}
     }
@@ -146,6 +148,25 @@ input {
     @media(min-width: 992px){
         .tResucito {margin-top: 0%;}
     }
+
+
+    .Cantoral {
+    position: relative;
+    font-family: Neocat;
+    color: #bc00ae;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin-bottom: 2%;
+
+}
+
+@media (max-width: 384px) {.Cantoral{padding-top: 5%;}}
+@media (max-width: 768px) {.Cantoral{padding-top: 2%;}}
+@media (max-width: 992px) {.Cantoral{padding-top: 2%;}}
+
+
 
 .introData{
     font-family: Neocat;
@@ -1048,4 +1069,43 @@ border: 1px solid #52067d;
 
 .resultado-item:hover {
     background-color: #f0f0f0;
+}
+
+
+/* Mi canto es joven*/
+
+.contenedor-titulo-joven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /*padding: 30px;*/
+    /* Un fondo oscuro temporal para que veas el texto blanco */
+}
+
+.titulo-joven-estilo {
+    /* Usamos una fuente Serif elegante (Georgia o Spectral) */
+    font-family: cursive, sans-serif;
+    color: #ffffff; /* Blanco Puro */
+    font-size: 5vw; /* Tamaño grande y visible */
+    font-style: italic; /* Cursiva elegante */
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 1px; /* Espaciado generoso */
+    
+    /* --- LA CLAVE: SOMBRA NEGRA PRONUNCIADA --- */
+    /* Desplazamiento X, Y, Difuminado, Color */
+    text-shadow: 
+        2px 2px 0px #000000,   /* Sombra dura nítida */
+        4px 4px 8px rgba(0,0,0,0.5); /* Sombra suave de fondo */
+        
+    /* Pequeña animación de entrada suave */
+    animation: slideInDown 1.2s ease-out;
+}
+
+/* Animación opcional */
+@keyframes slideInDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }

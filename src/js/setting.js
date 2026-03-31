@@ -98,48 +98,58 @@ window.tabsConfig = [
 // BOTON DE ACTUALIZAR
 // ==========================================
 
-			{ 
-				id: 'btn-clear-cache',
-				label: 'Limpiar Caché y Datos', 
-				tipo: 'button',
-				color: '#bc0009',
-				accion: async () => {
+{ 
+                id: 'btn-clear-cache',
+                label: 'Limpiar Caché y Datos', 
+                tipo: 'button',
+                color: '#bc0009',
+                accion: async () => {
+                    // --- NUEVA SEGURIDAD POR FALTA DE INTERNET ---
+                    if (!navigator.onLine) {
+                        const avisoOffline = confirm("🚫 NO TIENES INTERNET.\n\nSi limpias la caché ahora, perderás el acceso offline a los cantos. ¿Deseas continuar...?");
+                        if (!avisoOffline) return;
+
+                        const avisoCritico = confirm("🌐📶 AVISO DE CONEXIÓN:\n\nSin Internet / DATA / RED no podrás volver a cargar la aplicación.\n\n⚠️ Asegúrate PRIMERO de que estas conectado a internet.\n\n¿Quieres Continuar?...?");                        if (!avisoCritico) return;
+                    }
+
+                    // --- TU BLOQUE ORIGINAL TAL CUAL ME LO PEDISTE ---
                     if(confirm("⚠ Limpiar Cache y 🔃👤 Reiniciar Sesión. ¿Continuar?")) {
-						
-						// 1. PRIMERO: Cerrar sesión en Firebase (Fundamental)
-						if (window.firebaseAPI && window.firebaseAPI.logout) {
-							try {
-								await window.firebaseAPI.logout();
-								console.log("Sesión de Firebase cerrada correctamente.");
-							} catch (e) {
-								console.error("Error al cerrar sesión:", e);
-							}
-						}
+                        
+                        // 1. PRIMERO: Cerrar sesión en Firebase (Fundamental)
+                        if (window.firebaseAPI && window.firebaseAPI.logout) {
+                            try {
+                                await window.firebaseAPI.logout();
+                                console.log("Sesión de Firebase cerrada correctamente.");
+                            } catch (e) {
+                                console.error("Error al cerrar sesión:", e);
+                            }
+                        }
 
-						// 2. Limpiar LocalStorage (Preferencias, acordes, cejillas)
-						localStorage.clear();
+                        // 2. Limpiar LocalStorage (Preferencias, acordes, cejillas)
+                        localStorage.clear();
 
-						// 3. Limpiar Caché de la PWA (Archivos offline)
-						if ('caches' in window) {
-							const cacheNames = await caches.keys();
-							await Promise.all(cacheNames.map(name => caches.delete(name)));
-						}
+                        // 3. Limpiar Caché de la PWA (Archivos offline)
+                        if ('caches' in window) {
+                            const cacheNames = await caches.keys();
+                            await Promise.all(cacheNames.map(name => caches.delete(name)));
+                        }
 
-						// 4. Limpiar IndexedDB (Bases de datos internas)
-						if ('indexedDB' in window) {
-							const dbs = await indexedDB.databases();
-							dbs.forEach(db => { if (db.name) indexedDB.deleteDatabase(db.name); });
-						}
+                        // 4. Limpiar IndexedDB (Bases de datos internas)
+                        if ('indexedDB' in window) {
+                            const dbs = await indexedDB.databases();
+                            dbs.forEach(db => { if (db.name) indexedDB.deleteDatabase(db.name); });
+                        }
 
-						// 5. Preparar el re-login
-						sessionStorage.setItem('pending_login', 'true');
-						sessionStorage.setItem('force_login_prompt', 'true');
+                        // 5. Preparar el re-login
+                        sessionStorage.setItem('pending_login', 'true');
+                        sessionStorage.setItem('force_login_prompt', 'true');
 
-						// 6. Recarga total desde el servidor
-						window.location.reload(true);
-					}
-				}
-			},
+                        // 6. Recarga total desde el servidor
+                        window.location.reload(true);
+                    }
+                }
+            },
+
 
             { 
                 id: 'btn-clear-settings',

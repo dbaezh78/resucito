@@ -1449,34 +1449,45 @@ window.actualizarAcordes = actualizarAcordes;
 window.renderCanto = renderCanto;
 
 
-// FUNCIÓN 32: NAVEGACIÓN INTELIGENTE
+// ============================================
+// ==== FUNCIÓN 32: NAVEGACIÓN INTELIGENTE ====
+// ============================================
 window.navegacionInteligente = () => {
-    // Verificamos si estamos "atrapados" en un iframe
+    // Verificamos si estamos en un iframe (modo visor)
     const enIframe = (window.self !== window.top);
 
     if (enIframe) {
-        // Si estamos en un iframe, la única misión es CERRAR
-        console.log("Detectado entorno Visor (Iframe). Cerrando...");
-        
         if (window.parent && typeof window.parent.confirmarCerrarVisor === 'function') {
             window.parent.confirmarCerrarVisor();
         } else {
-            // Si no encuentra la función del padre, fuerza la salida a la raíz
             window.top.location.href = '/';
         }
     } else {
-        // Si NO estamos en un iframe, estamos en la web normal
         const urlParams = new URLSearchParams(window.location.search);
-        
-        if (urlParams.has('canto')) {
-            // Si hay un canto cargado, volvemos a la raíz limpia
-            window.location.href = '/';
-        } else {
-            // Por seguridad, siempre raíz
+        const idCanto = urlParams.get('canto');
+
+        // Buscamos el canto en la base de datos para ver sus propiedades
+        const cantoData = (typeof allCantosData !== 'undefined' && idCanto) 
+            ? allCantosData.find(c => c.id === idCanto) 
+            : null;
+
+        // --- INICIO LÓGICA DE RUTAS ---
+
+        // 1. REGLA: Aclamaciones antes del Evangelio (ID empieza con 'aet')
+        if (idCanto && idCanto.startsWith('aet')) {
+            window.location.href = '/index-ae.html';
+        } 
+        // 2. REGLA: Cancionero Joven (Categoría "Católico")
+        else if (cantoData && (cantoData.catCanto === "Católico" || cantoData.catCanto === "Catolico")) {
+            window.location.href = '/index-joven.html';
+        } 
+        // 3. REGLA: Canto normal del Camino o si no hay parámetro 'canto'
+        else {
             window.location.href = '/';
         }
     }
 };
+
 
 
 // 33 Función para mostrar/ocultar los números de ubicación del acorde

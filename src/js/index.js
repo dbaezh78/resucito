@@ -112,6 +112,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 if (currentCanto) {
 
+// ==================================================
+// ======== NUEVO: GESTIÓN DEL LOGO DINÁMICO ========
+// ==================================================
+        const imgLogo = document.getElementById('logo-cristo');
+        if (imgLogo) {
+            // Verificamos si la propiedad catCanto es "Catolico"
+            const categoria = currentCanto.catCanto ? currentCanto.catCanto.toLowerCase() : "";
+            
+            if (categoria === "catolico" || categoria === "católico") {
+                imgLogo.src = "/src/img/Cristo_1.png";
+            } else {
+                imgLogo.src = "/src/img/cristo.png";
+            }
+        }
+
 console.log("Canto found:", currentCanto.title);
             loadDynamicCSS(cantoIdToLoad);
 
@@ -335,3 +350,23 @@ window.addEventListener('online', () => {
     }
 });
 
+
+
+
+
+// ===============================================================
+// Función para cambiar el logo de Cristo según la categoría
+// ===============================================================
+function gestionarLogoResucito(cantoActual) {
+    const imgLogo = document.getElementById('logo-cristo'); // Corregido el nombre aquí
+    if (!imgLogo || !cantoActual) return;
+
+    // Normalizamos a minúsculas para evitar errores
+    const categoria = cantoActual.catCanto ? cantoActual.catCanto.toLowerCase() : "";
+
+    if (categoria === "catolico" || categoria === "católico") {
+        imgLogo.src = "/src/img/Cristo_1.png";
+    } else {
+        imgLogo.src = "/src/img/cristo.png";
+    }
+}
