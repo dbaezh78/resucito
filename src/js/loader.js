@@ -90,38 +90,38 @@
     const text = document.getElementById('loading-text');
 
     // Simulador de carga inicial rápida para dar feedback
+    /*
     const interval = setInterval(() => {
         if (progress < 85) {
             progress += Math.random() * 10;
             actualizarUI(progress);
         }
     }, 120);
+    */
 
     function actualizarUI(val) {
         const total = Math.round(Math.min(val, 100));
         if (bar) bar.style.width = total + '%';
-        if (text) text.innerText = 'Cargando cantos... ' + total + '%';
+        if (text) text.innerText = 'Cargando... ' + total + '%';
     }
 
+    //==================================================================================
     // 4. CIERRE (Evento 'load' asegura que CSS, JS e imágenes estén listos)
-    window.addEventListener('load', () => {
-        clearInterval(interval);
-        actualizarUI(100);
-        
-        setTimeout(() => {
+    //==================================================================================
+        window.addEventListener('load', () => {
+            actualizarUI(100);
+            
             const screen = document.getElementById('loading-screen');
             if (screen) {
-                screen.style.opacity = '0';
+                screen.style.opacity = '0'; // Aquí empieza a desvanecerse (tarda 0.6s)
                 
-                // Liberamos el body para que se pueda hacer scroll
                 document.body.classList.remove('loading');
                 
-                // Limpieza total del DOM tras la animación
+                // Esperamos 600ms para borrarlo del HTML, así la animación se ve completa
                 setTimeout(() => {
                     screen.remove();
-                    style.remove();
-                }, 600);
+                    // style.remove(); // Opcional, mejor dejar los estilos por si acaso
+                }, 1000); // 600ms igual que tu transition en el CSS
             }
-        }, 500); 
-    });
+        });
 })();

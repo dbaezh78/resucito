@@ -2,9 +2,13 @@
 /* Usamos !important para asegurar que el fondo NUNCA cambie a blanco por error */
 
 .cristo {
-    width: 33vw;
     position: fixed;
 }
+
+    @media (min-width: 384px){.cristo {width: 26vw}}
+    @media (min-width: 768px){.cristo {width: 26vw}}
+    @media (min-width: 992px){.cristo {width: 21.4vw}}
+
 
 
 
@@ -84,6 +88,7 @@ body {
     align-items: center;
     position: relative;
     transition: all 0.3s ease;
+    border: 1px solid goldenrod;
 }
 
 /* El tiempo se levanta y brilla con SU color al pasar el mouse */
@@ -183,19 +188,21 @@ body {
 .fneocat {
     font-family: neocat;
     color: var(--SangreDeCristo);
-    font-size: 3.4vw;
+    font-size: 2.4vw;
     text-align: center;
 
-    position: fixed;
-    
     position: fixed;
     width: 62%;
     text-align: center;
-    right: 0%;
-    top: 60px;
-
-
+    right: 7%;
+    top: 6%;
 }
+
+@media (min-width: 384px){.fneocat {top: 6%;}}
+@media (min-width: 768px){.fneocat {top: 7%;}}
+@media (min-width: 992px){.fneocat {top: 7%;}}
+
+
 
 /* Los resultados también deben seguir el ancho */
 /* Contenedor del buscador (Asegúrate de que el input y el div de resultados estén dentro de un div con esta clase) */
@@ -281,6 +288,7 @@ body {
     display: flex;
     flex-direction: column;
     background: white;
+    top: 54px;
     /* ... tus otros estilos de posicionamiento ... */
 }
 
@@ -318,15 +326,15 @@ body {
     flex-flow: column;
     flex-wrap: nowrap;
     padding-bottom: 100px;
-    
-    @media (min-width: 384px){padding-bottom: 100px;}
-    @media (min-width: 768px){padding-bottom: 230px;}
-    @media (min-width: 992px){padding-bottom: 30%;}
 }
+    
+    @media (min-width: 384px){.encabezado {padding-bottom: 22.5%;}}
+    @media (min-width: 768px){.encabezado {padding-bottom: 23.5%;}}
+    @media (min-width: 992px){.encabezado {padding-bottom: 19.5%;}}
 
 .songs-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 0px;
     justify-items: stretch;
 }
@@ -349,30 +357,67 @@ body {
 }
 
 .btn-ae-sync, .btn-ae-offline {
-    flex: 1;
-    max-width: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 12px;
-    border-radius: 12px;
+    justify-content: flex-start; /* Alineado a la izquierda para el icono */
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 0px; /* Un poco redondeado queda mejor para este efecto */
     border: none;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 14px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Transición más fluida */
+    font-size: 75%;
+    
+    position: absolute;
+    left: 20px;
+    margin-top: -34px;
+
+    /* ESTADO CONTRAÍDO */
+    width: 60px;       /* Ancho suficiente solo para el icono */
+    white-space: nowrap; /* Evita que el texto salte de línea */
+    overflow: hidden;    /* Esconde el texto */
 }
 
-/* Botón Sincronizar (Azul/Celeste como en perfil) */
+/* Efecto al pasar el mouse */
+.btn-ae-sync:hover, .btn-ae-offline:hover {
+    width: 220px;      /* Ancho total expandido (ajusta según tu texto) */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo específico para el icono para que siempre esté visible y centrado en el círculo */
+.btn-ae-sync .material-symbols-outlined, 
+.btn-ae-offline .material-symbols-outlined {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.btn-ae-sync .material-symbols-outlined, 
+.btn-ae-offline .material-symbols-outlined:hover {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Colores */
 .btn-ae-sync {
     background-color: #e8f0fe;
     color: #1a73e8;
 }
 
+.btn-ae-offline {
+    background-color: #f1f3f4;
+    color: #5f6368;
+}
+
 .btn-ae-sync:active {
     background-color: #d2e3fc;
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
 /* Botón Offline (Gris suave / Resucitó Rojo) */
