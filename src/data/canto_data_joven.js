@@ -387,12 +387,12 @@
             { line: "Yo siento Señor, (Re,,12)(Si,m,160)", sC: "tc"},
             { line: "que tu me amas, (Sol,,15)(La,,161)", sC: ""},
 
-            { line: "yo siento señor, (Re,,12)(Si,m,157)", sC: ""},
+            { line: "yo siento Señor, (Re,,12)(Si,m,157)", sC: ""},
             { line: "que te puedo amar(Sol,,15)(La,,185)", sC: ""},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             
-            { line: "hablame señor, (Re,,12)(Si,m,160)", sC: ""},
+            { line: "hablame Señor, (Re,,12)(Si,m,160)", sC: ""},
             { line: "que tu siervo escucha (Sol,,11)(La,,211)", sC: ""},
             { line: "hablame que quieres de mi, (Re,,12)(La,,84)(Sol,,125)(La,,264)", sC: ""},
             
@@ -417,9 +417,9 @@
             { line: "POR ESO CANTO TU AMOR, (Sol,,15)(La,,183)", sC: "as"},
             
     ], lder: [
-            { line: "Te alabo señor por tu grandesa, (Re,,12)(Si,m,127)(Sol,,181)(La,,286)", sC: "tc"},
+            { line: "Te alabo Señor por tu grandesa, (Re,,12)(Si,m,127)(Sol,,181)(La,,286)", sC: "tc"},
             { line: "mil gracias te doy por tu grande amor, (Re,,12)(Si,m,137)(Sol,,229)(La,,342)", sC: ""},
-            { line: "heme aqui señor para acompañarte, (Re,,12)(Si,m,150)(Sol,,194)(La,,309)", sC: ""},
+            { line: "heme aqui Señor para acompañarte, (Re,,12)(Si,m,150)(Sol,,194)(La,,309)", sC: ""},
             { line: "heme aqui que quieres de mi, (Re,,12)(Si,m,87)(Sol,,181)(La,,277)", sC: ""},
 
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
