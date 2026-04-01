@@ -363,7 +363,7 @@
         id: "hablame",
         tt: "Hablamé",
         title: "Hablamé",
-        subtitle: "Cantar de los Cantares 2,8-17",
+        subtitle: "Canticos Catolicos",
         category: ["Catolico","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
         catCanto: "Catolico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
