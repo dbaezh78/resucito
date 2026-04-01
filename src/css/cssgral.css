@@ -25,8 +25,8 @@ Debajo está el proyecto de poner el modo oscuro */
     cursor: pointer;
     opacity: 0.5
 }
-    @media (min-width: 344px){.cristo { width: 30%; top: 6%; margin-left: -35px; }}
-    @media (min-width: 768px){.cristo { width: 16%; top: initial; }}
+    @media (min-width: 364px){.cristo { width: 29%; top: 6%; margin-left: -28px; }}
+    @media (min-width: 768px){.cristo { width: 16%; top: 5%; }}
     @media (min-width: 992px){.cristo { width: 8em; top: 4%;}}
 
 
