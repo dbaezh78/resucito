@@ -36,7 +36,7 @@
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/index-joven.html",
-        sig: "/src/joven.html?canto=nohayenelparecer",
+        sig: "/src/index.html?canto=belencampanasdebelen",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "QUE DETALLE, SEÑOR, HAS TENIDO CONMIGO, (Sol,,14)(Re,7,174)(Sol,,420)", sC: "ta as"},
@@ -91,7 +91,7 @@
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/joven.html?canto=belencampanasdebelen",
+        ant: "/src/joven.html?canto=quedetallesenor",
         sig: "/src/joven.html?canto=lospecesenelrio",
 // Contenido del lado izquierdo del canto,
     lizq: [
@@ -235,7 +235,7 @@
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
         ant: "/src/joven.html?canto=lospecesenelrio",
-        sig: "/src/joven.html?canto=unagransenal",
+        sig: "/src/joven.html?canto=somosunpuebloquecamina",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Con mi burrito sabanero voy camino de Belén,, (Sol,m,25)(Do,m,200)(Re,m,300)(Sol,m,428)", sC: "tc"},
