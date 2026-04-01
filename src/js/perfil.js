@@ -732,7 +732,6 @@ window.gestionarDescargaTotal = async () => {
             if (i % 20 === 0) await new Promise(r => setTimeout(r, 5));
         }
 
-        // --- AQUÍ LA INTEGRACIÓN ---
         // Actualizamos el resumen antes del alert para que los datos estén frescos
         if (typeof actualizarResumenOffline === "function") {
             await actualizarResumenOffline();
