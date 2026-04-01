@@ -91,8 +91,8 @@
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/joven.html?canto=quedetallesenor",
-        sig: "/src/joven.html?canto=lospecesenelrio",
+        ant: "/src/index.html?canto=quedetallesenor",
+        sig: "/src/index.html?canto=lospecesenelrio",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
@@ -161,8 +161,8 @@
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/joven.html?canto=belencampanasdebelen",
-        sig: "/src/joven.html?canto=conmiburritosabanero",
+        ant: "/src/index.html?canto=belencampanasdebelen",
+        sig: "/src/index.html?canto=conmiburritosabanero",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { type: "collapsible-block", id: "asamblea_anadie_1", initialState: "expanded",
@@ -234,8 +234,8 @@
             tablet: { velocidad: 7, incremento: 1 },  // Para tablet
             desktop: { velocidad: 7, incremento: 1 },   // Para PC
             desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
-        ant: "/src/joven.html?canto=lospecesenelrio",
-        sig: "/src/joven.html?canto=somosunpuebloquecamina",
+        ant: "/src/index.html?canto=lospecesenelrio",
+        sig: "/src/index.html?canto=somosunpuebloquecamina",
 // Contenido del lado izquierdo del canto,
     lizq: [
             { line: "Con mi burrito sabanero voy camino de Belén,, (Sol,m,25)(Do,m,200)(Re,m,300)(Sol,m,428)", sC: "tc"},
