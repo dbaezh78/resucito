@@ -843,6 +843,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     const dbt1Element = document.querySelector('.dbt1');
     const dbs2Element = document.querySelector('.dbs2');
     const dbnoElement = document.getElementById('dbno');
+    const caracterElement = document.getElementById('caracter');
     const nCanElement = document.getElementById('nCan');
 
     if (dbt1Element) dbt1Element.textContent = cantoSpecificData.title;
@@ -853,6 +854,9 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
 
     if (dbnoElement) dbnoElement.textContent = cantoSpecificData.dbno;
     else console.error("Error: Elemento con ID #dbno no encontrado.");
+
+    if (caracterElement) caracterElement.textContent = cantoSpecificData.caracter;
+    else console.error("Error: Elemento con ID #caracter no encontrado.");
 
 // ==========================================
 // 27.11 Actualización dinámica corregida

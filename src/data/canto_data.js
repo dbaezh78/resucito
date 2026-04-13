@@ -19105,7 +19105,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Y propondré mi problema al son de la cítara., (Sol,,14)(Si,m,206)(Mi,m,383)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "SALMODIA VII ", sC: "negrita", color: "var(--Rojo-Leccionario)"},
-            { line: "Ap 11", sC: "sub1", color:"gray"},
+            { line: "Ap 11", sC: "sub", color:"gray"},
             { line: "Gracias te damos, Señor Dios omnipotente,, (Mi,m,20)(Sol,,376)", sC: "tc"},
             { line: "EL QUE ERES Y EL QUE ERAS,, (Re,,22)(Mi,m,244)", sC: "ta as"},
             { line: "porque has asumido el gran poder,, (Mi,m,20)(Sol,,315)", sC: "tc"},
@@ -19115,7 +19115,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "Y LA POTESTAD DE SU CRISTO., (Sol,,14)(Re,,246)(Mi,m,282)", sC: "ta as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "SALMODIA VIII ", sC: "negrita", color: "var(--Rojo-Leccionario)"},
-            { line: "Sal 96 [95]", sC: "sub1", color:"gray"},
+            { line: "Sal 96 [95]", sC: "sub", color:"gray"},
             { line: "El Señor reina la tierra goza,, (Sol,,14)", sC: "tc"},
             { line: "se alegran las islas innumerables., (Do,,10)(Sol,,278)", sC: ""},
             { line: "TINIEBLA Y NUBE LO RODEAN,, (Sol,,14)", sC: "ta as"},

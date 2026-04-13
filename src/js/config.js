@@ -535,6 +535,7 @@ const URLS_TO_CACHE = [
     'src/data/canto_data_aleluyai.js',
     'src/data/canto_data_catolicos.js',
     'src/data/canto_data_joven.js',
+    'src/data/canto_data_salmos.js',
     'src/data/Contents.js',
     'src/data/find.js',
     'src/data/find.json',

@@ -174,6 +174,7 @@
         subtitle: "SANTO ES EL SEÑOR, NUESTRO DIOS.",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        caracter: "Melodia 2 (Menor)",
         cejilla: "",
         nCan: "",
         nCanURL: "",

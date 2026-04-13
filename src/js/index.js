@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "ninos", // *** CAMBIO AQUÍ: Usar "ninos" sin 'ñ' ***
         "entrada", "paz", "fraccion-del-pan", "comunion", "final",
         "adviento", "navidad", "pascua", "pentecostes",
-        "virgen-maria",
+        "virgen-maria","Indice",
         "aclamacion", "salmodias", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
         "cuaresma", "celebracion"
     ];
@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "pascua": "Pascua",
         "pentecostes": "Pentecostés",
         "virgen-maria": "Vírgen María",
+        "indice": "Indice",
         "aclamacion": "Aclamación",
         "Salmodias": "Salmodias",
         "salmodias": "Salmodias",
