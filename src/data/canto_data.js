@@ -21769,7 +21769,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         id: "salmo5",
         tt: "Salmodias",
         title: "Salmodias",
-        subtitle: "Celebración",
+        subtitle: "Salmo 5, 2-10. 12-13 - ORACIÓN DE LA MAÑANA DE UN JUSTO PERSEGUIDO",
         category: ["Precatecumenado","Celebración"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
@@ -21789,9 +21789,6 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
         sig: "/src/index.html?canto=#",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Salmo 5, 2-10. 12-13 - \nORACIÓN DE LA MAÑANA DE UN JUSTO PERSEGUIDO", sC: "ta as", color: "red"},
-            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-
             { line: "Señor, escucha mis palabras,, (Sol,m,14)(La,7,250)", sC: "tc"},
             { line: "atiende a mis gemidos,, (Sol,m,14)(La,7,250)", sC: ""},
             { line: "haz caso de mis gritos de auxilio,, (Re,m,22)(La,7,250)", sC: "ta as"},
