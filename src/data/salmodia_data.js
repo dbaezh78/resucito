@@ -8,7 +8,7 @@
 
 /*
 ╔════════════════════════════════════════════╗
-║           SALLMOS LAUDES  5                ║
+║           SALMOS LAUDES  5                 ║
 ╚════════════════════════════════════════════╝  */
    {
         id: "salmo5",
@@ -17,6 +17,7 @@
         subtitle: "ORACIÓN DE LA MAÑANA DE UN JUSTO PERSEGUIDO - Salmo 5, 2-10. 12-13",
         category: ["Precatecumenado","Celebración"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        caracter: "Salmodia 7", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -98,6 +99,7 @@
         subtitle: "EL BUEN PASTOR ES EL DIOS ALTISIMO Y SAPIENTÍSIMO - Is 40, 10-17",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        caracter: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -283,6 +285,7 @@
         subtitle: "Salmo 86 - HIMNO A JERUSALÉN, MADRE DE TODOS LOS PUEBLOS.",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        caracter: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -337,6 +340,7 @@
         subtitle: "Salmo 118, 145-152 TE INVOCO DE TODO CORAZÓN",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        caracter: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -397,6 +401,7 @@
         subtitle: "ANGUSTIA DE UN MORIBUNDO Y ALEGRÍA DE LA CURACIÓN - Is 38, 10-14. 17-20",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        caracter: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
