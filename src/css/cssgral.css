@@ -133,6 +133,8 @@ body.dark-theme .cristo-oscuro {
     --TrasfondoCanto-Eleccion: rgba(206, 255, 207, 0.2); /* #CEFFCF con 20% de opacidad */
 
     --Cristal-Cristo: inherit;
+
+    --chord-color-salmodia: #FFFF00; /* Amarillo */
 } /* FIN DE ROOT */
 
 /* MODO OSCURO (Valores que camb0ian) */
@@ -717,7 +719,7 @@ display: none;}
 
 .modal-content {
     background-color: #fff;
-    padding: 30px;
+    padding: 4px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     max-width: 400px;
@@ -1156,6 +1158,13 @@ hr {
 .chord-image-item.chord-color-la { background-color: var(--chord-color-la); }
 .chord-image-item.chord-color-la6 { background-color: var(--chord-color-la); }
 .chord-image-item.chord-color-si { background-color: var(--chord-color-si); }
+.chord-image-item.chord-color-salmodia { background-color: var(--chord-color-salmodia); }
+.chord-image-item.chord-color-salmodia1 { background-color: var(--chord-color-salmodia); }
+
+.chord-image-item.chord-color-salodia { background-color: var(--chord-color-salmodia); }
+.chord-image-item.chord-color-salodia1 { background-color: var(--chord-color-salmodia); }
+.chord-image-item.chord-color-sal { background-color: var(--chord-color-salmodia); }
+
 
 /* Sobrescribir el color del texto para los acordes de Mi a negro */
 
@@ -1163,24 +1172,70 @@ hr {
 .chord-image-item.chord-color-mi6 span {color: black;}
 .chord-image-item.chord-color-mia span {color: black;}
 .chord-image-item.chord-color-miaj span {color: black;}
+.chord-image-item.chord-color-salmodia span {color: black;}
+.chord-image-item.chord-color-salodia span {color: black;}
+.chord-image-item.chord-color-salodia1 span {color: black;}
+.chord-image-item.chord-color-sal span {color: black;}
 
 
 /* Estilos para la nueva modal de imagen grande */
-.modal-content.large-image-content {
+.modal-content.chord-color-salmodia {
     max-width: 90vw; /* Más ancho para la imagen grande */
-    max-height: 90vh; /* Más alto para la imagen grande */
-    padding: 10px; /* Reducir padding para que la imagen ocupe más espacio */
+    
+}
+.modal-content.large-image-content {
+
+    max-width: 40%;
+    /*max-height: auto; */
+
+/*  max-width: 90vw; /* Más ancho para la imagen grande */
+/*  max-height: 90vh; /* Más alto para la imagen grande */
+    /*padding: 10px; /* Reducir padding para que la imagen ocupe más espacio */
     background-color: transparent; /* Fondo transparente para la imagen */
     box-shadow: none; /* Sin sombra para la imagen */
 }
+/*    @media (min-width: 384px) {.modal-content.large-image-content {
+        max-width: 95%;
+        padding: 1px;
+        background: white;
+        border-radius: 12px 12px 12px 12px;
+    }}*/
+    @media (min-width: 384px) {.modal-content.large-image-content {max-width: 100%;}}
+    @media (min-width: 768px) {.modal-content.large-image-content {max-width: 80%;}}
+
+    @media (min-width: 992px) {.modal-content.large-image-content {
+        
+        max-width: 50%;
+        width: max-content;
+        
+    }}
+
 
 #largeChordImage {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
     display: block;
-    margin: auto; /* Centrar la imagen */
+    /*margin: auto; /* Centrar la imagen */
+    place-self: center;
 }
+    @media (min-width: 384px) {#largeChordImage {
+        max-width: 95%;
+        background: white;
+        padding: 4px;
+        border-radius: 7px;
+    }}
+    @media (min-width: 768px) {#largeChordImage {
+        max-width: 95%;
+        background: white;
+        padding: 4px;
+        border-radius: 7px;
+    }}
+    @media (min-width: 992px) {#largeChordImage {max-width: 650px;}}
+    
+
+
+
 
 
 .mso1, .mso2 {

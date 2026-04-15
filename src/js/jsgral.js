@@ -91,7 +91,7 @@ const chordImageFilenames = [
     "dot3.jpg",
     "dom.jpg",
     "do7.jpg",
-    "do72.jpg",
+    "do7x2.jpg",
     "dos.jpg", 
     "dos7.jpg", 
     "dosm.jpg", 
@@ -126,7 +126,7 @@ const chordImageFilenames = [
     "fas7.jpg", 
 
     "sol.jpg", 
-    "sol2.jpg", 
+    "solx2.jpg", 
     "sol3.jpg", 
     "solm.jpg", 
     "solm6.jpg", 
@@ -139,7 +139,7 @@ const chordImageFilenames = [
     "solsdim7.jpg", 
 
     "la.jpg", 
-    "la2.jpg", 
+    "lax2.jpg", 
     "la3.jpg", 
     "la6.jpg",
     "la7.jpg", 
@@ -151,13 +151,33 @@ const chordImageFilenames = [
     
     "si.jpg", 
     "si7.jpg", 
-    "si72.jpg", 
+    "si7x2.jpg", 
     "sib.jpg", 
     "sib7.jpg", 
     "sibm.jpg", 
     "sim.jpg",
-    
+    /*
+    salmodia1
+    salodia1
+    */
 
+    "salmodia1.jpg",
+    "salmodia2.jpg",
+    "salmodia3.jpg",
+    "salmodia4.jpg",
+    "salmodia5.jpg",
+    "salmodia6.jpg",
+    "salmodia7.jpg",
+    "salmodia8.jpg",
+    "salmodia9.jpg",
+    "salmodia10.jpg",
+    "salmodia11.jpg",
+    "salmodia12.jpg",
+    "salmodia13.jpg",
+    "salmodia14.jpg",
+    "salmodia15.jpg",
+    "salmodia16.jpg",
+    "salmodia17.jpg",
 
 ];
 
@@ -182,10 +202,18 @@ let nextCantoBtn;
 // 5 Función para obtener el nombre legible del acorde a partir del nombre del archivo
 const getDisplayNameFromFilename = (filename) => {
     let name = filename.split('.')[0];
+
+    // --- REGLA ESPECIAL PARA SALMODIA ---
+    // Si el nombre empieza por "salmodia", lo tratamos aparte
+    if (name.startsWith('salmodia')) {
+        // Reemplaza "salmodia" por "Salmodia " y deja el número intacto
+        return name.replace('salmodia', 'Salmodia');
+    }
+    
     // Reemplazar 's' por '#' para sostenidos (ej. 'dos' -> 'Do#')
     name = name.replace(/s$/, '#');
     name = name.replace(/s7$/, '#7');
-    name = name.replace(/2$/, '');
+    name = name.replace(/x2$/, '');
     name = name.replace(/sm$/, '#m');
     name = name.replace(/t3$/, '');
     name = name.replace(/s1$/, '#');
@@ -626,9 +654,18 @@ const openChordImagesModal = () => {
         const chordImageItem = document.createElement('div');
         chordImageItem.classList.add('chord-image-item');
 
+        // En salmodia me está quitando la m y tengo que hacer una excepción de este nuevo codigo
+        if (chordName.toLowerCase().includes("salmodia")) {
+                // Si es salmodia, solo quitamos el espacio para la clase, pero dejamos la 'm'
+                baseNoteForColor = "salmodia"; 
+            } else {
+                // Si es un acorde normal, seguimos con tu lógica original
+                baseNoteForColor = chordName.replace(/[#♭m79]/g, '').toLowerCase();
+            }
+
         // Determinar la nota base para la clase de color
-        let baseNoteForColor = chordName.replace(/[#♭m79]/g, ''); // Eliminar #, ♭, m, 7, 9 para obtener la nota base (Do, Re, Mi, etc.)
-        baseNoteForColor = baseNoteForColor.toLowerCase(); // Convertir a minúsculas para la clase CSS
+        /*let baseNoteForColor = chordName.replace(/[#♭m79]/g, ''); // Eliminar #, ♭, m, 7, 9 para obtener la nota base (Do, Re, Mi, etc.)
+        baseNoteForColor = baseNoteForColor.toLowerCase(); // Convertir a minúsculas para la clase CSS*/
 
         // Añadir una clase basada en la nota base para el estilo de color
         chordImageItem.classList.add(`chord-color-${baseNoteForColor}`);
