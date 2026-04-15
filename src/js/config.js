@@ -2,6 +2,7 @@
 const APP_VERSION = '1.31'; 
 const CACHE_NAME = `cantos-cache-v${APP_VERSION}`;
 const OFFLINE_URL = 'src/offline.html';
+const fecha_vers = '4/15/2026';
 
 // 2. HACERLAS GLOBALES de forma segura
 // Esto evita el error "window is not defined" en el Service Worker
