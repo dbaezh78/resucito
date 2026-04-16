@@ -718,8 +718,9 @@ display: none;}
 }
 
 .modal-content {
+    /*background: var(--dynamic-body-background, white);    */
     background-color: #fff;
-    padding: 4px;
+    padding: 9px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     max-width: 400px;
@@ -733,11 +734,12 @@ display: none;}
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     gap: 10px;
-    margin-bottom: 20px;
+    background: var(--dynamic-body-background, white);
 }
 
 .chord-item {
-    background-color: #f0f0f0;
+    background-color: var(--dynamic-body-background, white);
+    /*background-color: var(--liturgia);*/
     padding: 10px 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -747,14 +749,24 @@ display: none;}
     color: #333;
 }
 
+
 .chord-item:hover {
-    background-color: #e0e0e0;
+    background-color: var(--SangreDeCristo);
+    color: white;
     transform: translateY(-2px);
 }
 
 .chord-item:active {
     background-color: #d0d0d0;
     transform: translateY(0);
+}
+
+
+
+#salmodiaOptionsList .chord-item:hover {
+    color: var(--Blanco-Negro);
+    background-color: gold;
+    
 }
 
 /* Media queries para ajustar el tamaño de fuente según el ancho de la pantalla */
@@ -977,7 +989,8 @@ hr {
 .category-link {
     display: inline-block; /* Para que cada categoría ocupe su propio espacio */
     background-color: var(--bg-transparente);
-    color: var(--category-link);
+    color: var(--Titulo-SangreDeCristo);
+    align-self:center;
     
     padding: 5px 10px;
     border-radius: 0px;
@@ -987,7 +1000,7 @@ hr {
 }
 
 .category-link:hover {
-    background-color: var(--SangreDeCristo);
+    background-color: var(--Titulo-SangreDeCristo);
     color: var(--category-link-hover);
 }
 

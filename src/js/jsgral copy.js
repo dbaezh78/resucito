@@ -11,9 +11,11 @@ window.currentCantoId = idCantoActual;
 // 1 Definición de los acordes y su mapeo a semitonos (desde Do)
 const cords = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Si♭", "Si"];
 // Mapeo de nombres de notas a su índice de semitono (Do=0, Do#=1, etc.)
-const noteToSemitone = {};
+//const noteToSemitone = {};
+window.noteToSemitone = {}; // Asegúrate de que tenga window.
 cords.forEach((note, index) => {
-    noteToSemitone[note] = index;
+    window.noteToSemitone[note] = index;
+    //noteToSemitone[note] = index;
 });
 
 // 2 Definición de los factores de escalado y posibles sobrescrituras de posición
@@ -244,11 +246,13 @@ const getDisplayNameFromFilename = (filename) => {
 
 // 6 Función para transponer una nota
 const transposeNote = (originalNote, semitoneDifference) => {
-    const originalSemitone = noteToSemitone[originalNote];
+    const originalSemitone = window.noteToSemitone[originalNote]; // Añadido window.
+    //const originalSemitone = noteToSemitone[originalNote];
     if (originalSemitone === undefined) {
         return originalNote;
     }
     let newSemitone = (originalSemitone + semitoneDifference) % cords.length;
+    let newSemitone = (originalSemitone + window.currentKeyOffset) % cords.length;
     if (newSemitone < 0) {
         newSemitone += cords.length;
     }
@@ -880,6 +884,7 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     const dbt1Element = document.querySelector('.dbt1');
     const dbs2Element = document.querySelector('.dbs2');
     const dbnoElement = document.getElementById('dbno');
+    const salmodiaElement = document.getElementById('salmodia');
     const nCanElement = document.getElementById('nCan');
 
     if (dbt1Element) dbt1Element.textContent = cantoSpecificData.title;
@@ -891,6 +896,8 @@ const initializeCantoPage = (cantoSpecificData, processedCategories) => {
     if (dbnoElement) dbnoElement.textContent = cantoSpecificData.dbno;
     else console.error("Error: Elemento con ID #dbno no encontrado.");
 
+    if (salmodiaElement) salmodiaElement.textContent = cantoSpecificData.salmodia;
+    else console.error("Error: Elemento con ID #salmodia no encontrado.");
 
 // ==========================================
 // 27.11 Actualización dinámica corregida
@@ -1688,21 +1695,51 @@ window.aplicarExpansionVisual = function() {
 };
 
 
-// Cerrar el modal de salmodia al hacer clic fuera del contenido
-// Función unificada para cerrar el modal de salmodia (clic fuera o Escape)
-function cerrarModalSalmodia(event) {
-    const modalSalmodia = document.getElementById('salmodiaModal');
-    if (!modalSalmodia || modalSalmodia.style.display !== 'flex') return;
 
-    // Detectar clic en el fondo (overlay) O tecla Escape
-    if (event.target === modalSalmodia || event.key === 'Escape') {
-        modalSalmodia.style.display = 'none';
+
+
+//  16/4/2026
+
+window.cambiarTonoPorSalmodia = function(num) {
+    // Los nombres de las notas DEBEN ser idénticos a los del array 'cords'
+    const tonosSalmodias = {
+        "1": "Re#",
+        "2": "Mi",
+        "3": "Fa",
+        "4": "Fa#",
+        "5": "Sol",
+        "6": "Sol#",
+        "7": "La",
+        "8": "Si♭", // Usando el carácter exacto de tu array
+        "17": "Si"
+    };
+
+    const notaDestino = tonosSalmodias[num];
+    
+    // Accedemos a noteToSemitone que se llenó con el array 'cords'
+    if (notaDestino && typeof window.noteToSemitone[notaDestino] !== 'undefined') {
+        const nuevoOffset = window.noteToSemitone[notaDestino];
+        
+        // Actualizamos la variable global que mueve todo el sistema
+        window.currentKeyOffset = nuevoOffset;
+        
+        // Opcional: Resetear cejilla visual a 0
+        const selectorCejilla = document.getElementById('cejillaSelect');
+        if (selectorCejilla) selectorCejilla.value = "0";
+
+        // Renderizar de nuevo el canto con el nuevo tono
+        if (typeof window.actualizarAcordes === 'function') {
+            window.actualizarAcordes();
+            console.log(`✅ Salmodia ${num} activa: Tono ${notaDestino} (Valor: ${nuevoOffset})`);
+        }
+    } else {
+        console.error("❌ Error: La nota " + notaDestino + " no existe en el array cords.");
     }
-}
+};
 
-// Asignar los escuchadores a la ventana global
-window.addEventListener('click', cerrarModalSalmodia);
-window.addEventListener('keydown', cerrarModalSalmodia);
+
+//  16/4/2026
+
 
 
 
@@ -1713,4 +1750,5 @@ document.addEventListener('DOMContentLoaded', observarCierreSettings);
 console.log("Canto rendering complete.");
 adjustNotePositions(); // Esto posiciona los acordes como siempre
 toggleAcordeLocation(); // Esto muestra los números solo si el switch está en SI|
+
 

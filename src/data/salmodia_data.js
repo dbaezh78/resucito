@@ -17,7 +17,7 @@
         subtitle: "ORACIÓN DE LA MAÑANA DE UN JUSTO PERSEGUIDO - Salmo 5, 2-10. 12-13",
         category: ["Precatecumenado","Celebración"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        caracter: "Salmodia 7", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
+        salmodia: "1,2,4,5,7,17 | Cuaresma, Súplica", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -35,55 +35,56 @@
         sig: "/src/index.html?canto=#",
 // Contenido del lado izquierdo del canto,
     lizq: [
-            { line: "Señor, escucha mis palabras,, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "atiende a mis gemidos,, (Sol,m,14)(La,7,250)", sC: ""},
+            { line: "Señor, escucha mis palabras,, (Sol,m,23)(La,7,250)", sC: "tc"},
+            { line: "atiende a mis gemidos,, (Sol,m,23)(La,7,250)", sC: ""},
             { line: "haz caso de mis gritos de auxilio,, (Re,m,22)(La,7,250)", sC: "ta as"},
             { line: "Rey mío y Dios mío., (Sib,7,)(La,7,250)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "A ti te suplico, Señor;, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "por la mañana escucharás mi voz,, (Sol,m,14)(La,7,250)", sC: ""},
+            { line: "A ti te suplico, Señor;, (Sol,m,23)(La,7,250)", sC: "tc"},
+            { line: "por la mañana escucharás mi voz,, (Sol,m,23)(La,7,250)", sC: ""},
             { line: "por la mañana te expongo mi causa,, (Re,m,22)(La,7,250)", sC: "ta as"},
             { line: "y me quedo aguardando., (Sib,7,)(La,7,250)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Tú no eres un Dios que ame la maldad,, (Sol,m,14)(La,7,250)", sC: "tc"},
+            { line: "Tú no eres un Dios que ame la maldad,, (Sol,m,23)(La,7,250)", sC: "tc"},
             { line: "ni el malvado es tu huésped,, (Re,m,22)(La,7,250)", sC: ""},
             { line: "ni el arrogante se mantiene en tu presencia., (Sib,7,)(La,7,250)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Detestas a los malhechores,, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "destruyes a los mentirosos;, (Sol,m,14)(La,7,250)", sC: ""},
-            { line: "al hombre sanguinario y traicionero, (Re,m,22)(La,7,250)", sC: "ta as"},
-            { line: "lo aborrece el Señor., (Sib,7,)(La,7,250)", sC: "as"},
+            { line: "Detestas a los malhechores,, (Sol,m,23)(La,7,250)", sC: "ta as"},
+            { line: "destruyes a los mentirosos;, (Sol,m,23)(La,7,250)", sC: "as"},
+            { line: "al hombre sanguinario y traicionero, (Re,m,22)(La,7,250)", sC: "tc"},
+            { line: "lo aborrece el Señor., (Sib,7,)(La,7,250)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
-            { line: "Pero yo, por tu gran bondad,, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "entraré en tu casa,, (Sol,m,14)(La,7,250)", sC: ""},
-            { line: "me postraré ante tu templo santo, (Re,m,22)(La,7,250)", sC: "ta as"},
-            { line: "con toda reverencia., (Sib,7,)(La,7,250)", sC: "as"},
+            { line: "Pero yo, por tu gran bondad,, (Sol,m,23)(La,7,250)", sC: "ta as"},
+            { line: "entraré en tu casa,, (Sol,m,23)(La,7,250)", sC: "as"},
+            { line: "me postraré ante tu templo santo, (Re,m,22)(La,7,250)", sC: "tc"},
+            { line: "con toda reverencia., (Sib,7,)(La,7,250)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
 
     ], lder: [
-            { line: "Señor, guíame con tu justicia,, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "porque tengo enemigos;, (Re,m,22)(La,7,250)", sC: ""},
-            { line: "alláname tu camino., (Sib,7,)(La,7,250)", sC: "ta as"},
+            { line: "Señor, guíame con tu justicia,, (Sol,m,23)(La,7,250)", sC: "ta as"},
+            { line: "porque tengo enemigos;, (Re,m,22)(La,7,250)", sC: "as"},
+            { line: "alláname tu camino., (Sib,7,)(La,7,250)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "En su boca no hay sinceridad,, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "su corazón es perverso;, (Sol,m,14)(La,7,250)", sC: ""},
+            { line: "En su boca no hay sinceridad,, (Sol,m,23)(La,7,250)", sC: "tc"},
+            { line: "su corazón es perverso;, (Sol,m,23)(La,7,250)", sC: ""},
             { line: "su garganta es un sepulcro abierto,, (Re,m,22)(La,7,250)", sC: "ta as"},
             { line: "mientras halagan con la lengua., (Sib,7,)(La,7,250)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Que se alegren los que se acogen a ti,, (Sol,m,14)(La,7,250)", sC: "tc"},
-            { line: "con júbilo eterno;, (Sol,m,14)(La,7,250)", sC: ""},
+            { line: "Que se alegren los que se acogen a ti,, (Sol,m,23)(La,7,250)", sC: "tc"},
+            { line: "con júbilo eterno;, (Sol,m,23)(La,7,250)", sC: ""},
             { line: "protégelos, para que se llenen de gozo, (Re,m,22)(La,7,250)", sC: "ta as"},
             { line: "los que aman tu nombre., (Sib,7,)(La,7,250)", sC: "as"},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Porque tú, Señor, bendices al justo,, (Sol,m,14)(La,7,250)", sC: "tc"},
+            { line: "Porque tú, Señor, bendices al justo,, (Sol,m,23)(La,7,250)", sC: "tc"},
             { line: "y como un escudo lo rodea tu favor., (Sib,7,)(La,7,250)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
-            { line: "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Sol,m,14)(La,7,250)", sC: "ta as"},
-            { line: "Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén., (Sib,7,)(La,7,250)", sC: "as"},
+            { line: "Gloria al Padre, y al Hijo, y al Espíritu Santo., (Sol,m,23)(La,7,250)", sC: "ta as"},
+            { line: "Como era en el principio, ahora y siempre, (Sib,7,20)", sC: "as"},
+            { line: "por los siglos de los siglos. Amén., (La,7,260)", sC: "as"},
     ]
 },
 
@@ -99,7 +100,7 @@
         subtitle: "EL BUEN PASTOR ES EL DIOS ALTISIMO Y SAPIENTÍSIMO - Is 40, 10-17",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        caracter: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
+        salmodia: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -176,7 +177,7 @@
         subtitle: "SANTO ES EL SEÑOR, NUESTRO DIOS.",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        caracter: "Melodia 2 (Menor)",
+        salmodia: "2",
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -279,13 +280,13 @@
 ║           SALMOS 86 LAUDES                 ║
 ╚════════════════════════════════════════════╝  */
    {
-        id: "Salmo86",
+        id: "salmo86",
         tt: "Salmodias",
-        title: "Salmodias",
+        title: "Salmo 86",
         subtitle: "Salmo 86 - HIMNO A JERUSALÉN, MADRE DE TODOS LOS PUEBLOS.",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        caracter: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
+        salmodia: "1,2,3", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -317,6 +318,7 @@
             { line: "Se dirá de Sión: «Uno por uno, (La,m,20)(Mi,m,250)", sC: "tc"},
             { line: "todos han nacido en ella;, (La,m,20)(Mi,m,213)", sC: ""},
             { line: "el Altísimo en persona la ha fundado.», (Re,,22)(La,m,332)", sC: ""},
+    ], lder: [
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "El Señor escribirá en el registro de los pueblos:, (La,m,20)(Mi,m,417)", sC: "ta as"},
             { line: "«Éste ha nacido allí.», (Re,,22)(La,m,166)", sC: "as"},
@@ -324,8 +326,10 @@
             { line: "«Todas mis fuentes están en ti.», (Re,,22)(La,m,264)", sC: ""},
             { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
             { line: "Gloria al Padre, y al Hijo, y al Espíritu Santo., (La,m,20)(Mi,m,208)(La,m,251)(Mi,m,384)", sC: "ta as"},
-            { line: "Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén., (La,m,20)(Mi,m,376)(Re,,426)(La,m,658)", sC: "tc"},
-    ], lder: []
+            { line: "Como era en el principio, ahora y siempre, (La,m,20)(Mi,m,376)", sC: "tc"},
+            { line: "por los siglos de los siglos. Amén., (Re,,20)(La,m,280)", sC: "tc"},
+
+    ]
 },
 
 
@@ -340,7 +344,7 @@
         subtitle: "Salmo 118, 145-152 TE INVOCO DE TODO CORAZÓN",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        caracter: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
+        salmodia: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -401,7 +405,7 @@
         subtitle: "ANGUSTIA DE UN MORIBUNDO Y ALEGRÍA DE LA CURACIÓN - Is 38, 10-14. 17-20",
         category: ["Liturgia"],
         catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
-        caracter: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
+        salmodia: "", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
         cejilla: "",
         nCan: "",
         nCanURL: "",

@@ -31,6 +31,12 @@ body.dark-theme {
 
 /*1ra configuracion r1, r2 */
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
 .r1, .r2, .r3, .r4, .r5, .r6, .r7, .r8, .r9, .r10, .r11, .r12 {position: relative;min-height: 0px;}
 
 /*2da configuracion r1, r2 */
@@ -425,4 +431,71 @@ html, body {
     
     /* Asegura que el scroll sea fluido en iPhone/iPad */
     -webkit-overflow-scrolling: touch;
+}
+
+
+/* CSS para el modal de Salmodia*/
+
+#salmodiaModal .modal-content {
+    max-width: 400px;
+    text-align: center;
+}
+
+.btn-salmodia-trigger {
+    background: transparent  ;
+    color: var(--Titulo-SangreDeCristo);
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.btn-salmodia-trigger:hover {
+    background: var(--Titulo-SangreDeCristo);
+    color: white;
+}
+
+
+/* Modal Salmodia*/
+/* Mejora visual para el visor de imágenes de salmodia */
+#salmodiaImageContainer {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+#salmodiaImageContainer img {
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+#salmodiaImageContainer img:hover {
+    transform: scale(1.02); /* Un pequeño zoom al pasar el ratón */
+}
+
+/* */
+
+#salmodiaModal .modal-content {
+    max-height: 90vh !important; /* Que ocupe casi toda la pantalla si es necesario */
+    overflow-y: auto !important;  /* Que permita hacer scroll si la imagen es grande */
+}
+
+#salmodiaImageContainer {
+    display: block !important;
+    visibility: visible !important;
+    min-height: 200px; /* Forzamos un espacio */
+}
+
+
+.rutaImg {
+    width:100%; 
+    max-width:380px; 
+    border-radius:5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    display:block; 
+    margin:0 auto;
 }

@@ -1714,3 +1714,37 @@ console.log("Canto rendering complete.");
 adjustNotePositions(); // Esto posiciona los acordes como siempre
 toggleAcordeLocation(); // Esto muestra los números solo si el switch está en SI|
 
+
+// Función para procesar la cadena y llenar el modal de forma INFORMATIVA con Imágenes
+window.abrirElModalDeSalmodias = function(dataSalmodia) {
+    const modal = document.getElementById('salmodiaModal');
+    const lista = document.getElementById('salmodiaOptionsList');
+    
+    // Contenedor simple para la imagen
+    let imgContainer = document.getElementById('salmodiaImageContainer');
+    if (!imgContainer) {
+        imgContainer = document.createElement('div');
+        imgContainer.id = 'salmodiaImageContainer';
+        modal.querySelector('.modal-content').appendChild(imgContainer);
+    }
+
+    lista.innerHTML = ''; 
+    imgContainer.innerHTML = '';
+
+    const numeros = dataSalmodia.split('|')[0].match(/\d+/g);
+
+    if (numeros) {
+        numeros.forEach(n => {
+            const item = document.createElement('div');
+            item.className = 'chord-item';
+            item.innerHTML = `<strong>Salmodia ${n}</strong>`;
+            
+            item.onclick = () => {
+                // Solo pone la imagen y ya
+                imgContainer.innerHTML = `<img src="/src/ima/salmodia${n}.jpg" style="width:100%; margin-top:10px; border-radius:5px;">`;
+            };
+            lista.appendChild(item);
+        });
+    }
+    modal.style.display = 'flex';
+};

@@ -258,6 +258,84 @@ console.log("Canto found:", currentCanto.title);
         document.getElementById('dbno').textContent = "";
         document.getElementById('tt').textContent = "Canto no encontrado";
     }
+
+
+    //16/04/2026
+
+// 1. LÓGICA DEL BOTÓN (Poner esto donde se cargan los datos del canto)
+const cantoActualInfo = allCantosData.find(c => c.id === currentCantoId);
+
+if (cantoActualInfo && cantoActualInfo.salmodia) {
+    const catContainer = document.getElementById('cantoCategories');
+    if (catContainer) {
+        // Creamos el botón "Salmodias"
+        const btnSalmodia = document.createElement('button');
+        btnSalmodia.className = 'btn-salmodia-trigger';
+        btnSalmodia.style.marginLeft = "10px";
+        btnSalmodia.innerHTML = '<span class="material-symbols-outlined" style="vertical-align: middle;">library_music</span> Salmodias';
+        
+        // Al darle clic, llama a la función de abajo
+        btnSalmodia.onclick = () => abrirElModalDeSalmodias(cantoActualInfo.salmodia);
+        catContainer.appendChild(btnSalmodia);
+    }
+}
+
+// 2. LÓGICA DEL MODAL E IMAGEN (Ajustada para expansión dinámica)
+function abrirElModalDeSalmodias(dataSalmodia) {
+    const modal = document.getElementById('salmodiaModal');
+    const lista = document.getElementById('salmodiaOptionsList');
+    
+    if (!modal || !lista) return;
+
+    const modalContent = modal.querySelector('.modal-content');
+
+    // 1. Buscamos o creamos el contenedor de la imagen
+    let imgContainer = document.getElementById('salmodiaImageContainer');
+    if (!imgContainer) {
+        imgContainer = document.createElement('div');
+        imgContainer.id = 'salmodiaImageContainer';
+        modalContent.appendChild(imgContainer);
+    }
+
+    // 2. RESET TOTAL: Quitamos cualquier estilo que genere la "barriga"
+    lista.innerHTML = ''; 
+    imgContainer.innerHTML = '';
+    imgContainer.style.cssText = "display:none; padding:0; margin:0; min-height:0; border:none; background:transparent;";
+
+    const numeros = dataSalmodia.split('|')[0].match(/\d+/g);
+
+    if (numeros) {
+        numeros.forEach(n => {
+            const item = document.createElement('div');
+            item.className = 'chord-item';
+            item.style.cursor = 'pointer'; 
+            item.innerHTML = `<strong>Salmodia ${n}</strong>`;
+            
+            item.onclick = () => {
+                const rutaImg = `/src/ima/salmodia${n}.jpg`; 
+                
+                // 3. ACTIVACIÓN: Solo ahora le damos forma y espacio
+                imgContainer.style.display = 'block';
+                imgContainer.style.marginTop = '20px';
+                imgContainer.style.padding = '10px';
+                imgContainer.style.backgroundColor = '#f9f9f9';
+                imgContainer.style.borderRadius = '8px';
+
+                imgContainer.innerHTML = `
+                    <img src="${rutaImg}" 
+                         class="rutaImg"
+                         onerror="this.parentElement.innerHTML='<p style=color:red;padding:10px;>No se encontró la imagen</p>'">
+                `;
+            };
+            
+            lista.appendChild(item);
+        });
+    }
+    modal.style.display = 'flex';
+}
+//
+    //16/04/2026
+
 });
 
 
@@ -371,3 +449,10 @@ function gestionarLogoResucito(cantoActual) {
         imgLogo.src = "/src/img/cristo.png";
     }
 }
+
+window.addEventListener('click', (e) => {
+    const modalNum = document.getElementById('salmodiaModal');
+    if (e.target === modalNum) {
+        modalNum.style.display = 'none';
+    }
+});
