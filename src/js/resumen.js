@@ -45,8 +45,6 @@ export async function actualizarResumenOffline() {
 
         ${crearItemResumen('Versión de la App', `Versión actual: v${appVersion}`, true, 'verified_user')}
     `;
-
-
 }
 
 // Funciones auxiliares necesarias para que no dé error

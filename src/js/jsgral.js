@@ -91,7 +91,7 @@ const chordImageFilenames = [
     "dot3.jpg",
     "dom.jpg",
     "do7.jpg",
-    "do7x2.jpg",
+    "do7_2.jpg",
     "dos.jpg", 
     "dos7.jpg", 
     "dosm.jpg", 
@@ -126,7 +126,7 @@ const chordImageFilenames = [
     "fas7.jpg", 
 
     "sol.jpg", 
-    "solx2.jpg", 
+    "sol_2.jpg", 
     "sol3.jpg", 
     "solm.jpg", 
     "solm6.jpg", 
@@ -136,10 +136,10 @@ const chordImageFilenames = [
     "sols.jpg", 
     "solsm.jpg",
     "sols7.jpg", 
-    "solsdim7.jpg", 
+    "solsdim7.jpg",
 
     "la.jpg", 
-    "lax2.jpg", 
+    "la_2.jpg", 
     "la3.jpg", 
     "la6.jpg",
     "la7.jpg", 
@@ -151,7 +151,7 @@ const chordImageFilenames = [
     
     "si.jpg", 
     "si7.jpg", 
-    "si7x2.jpg", 
+    "si7_2.jpg", 
     "sib.jpg", 
     "sib7.jpg", 
     "sibm.jpg", 
@@ -213,7 +213,7 @@ const getDisplayNameFromFilename = (filename) => {
     // Reemplazar 's' por '#' para sostenidos (ej. 'dos' -> 'Do#')
     name = name.replace(/s$/, '#');
     name = name.replace(/s7$/, '#7');
-    name = name.replace(/x2$/, '');
+    name = name.replace(/_2$/, '');
     name = name.replace(/sm$/, '#m');
     name = name.replace(/t3$/, '');
     name = name.replace(/s1$/, '#');
@@ -228,7 +228,7 @@ const getDisplayNameFromFilename = (filename) => {
     name = name.replace(/sol7_1$/, 'sol7');
     name = name.replace(/solm6$/, 'solm6');
     name = name.replace(/dosdim7$/, 'do#dim7');
-    name = name.replace(/solsdim7$/, 'dim7');
+    name = name.replace(/solsdim7$/, 'solsdim7');
     name = name.replace(/la3$/, 'la');
     name = name.replace(/mi7_1/, 'mi7');
     // Reemplazar 'b' por '♭' para bemoles (ej. 'sib' -> 'Si♭')

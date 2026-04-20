@@ -1,0 +1,117 @@
+La paz de Cristo Resucitado
+
+Quiero presentar esta aplicación que se ha ido desarrollando, esu na aplicacion que se puede instalar o usar de forma online o offline en google chrome.
+
+Pues arriba tenemos un cintillo con un mensaje.
+seguimos con icono de Cristo Resucitado, si le damos sobre el icono refrescará la pagina.
+
+a la derecha seguimos con un cuadro de chequeo o check list que si le damos nos mostrará en los cantos las etapas en la que se puede hacer los canto, como las etapas, si vemos en A la cena del cordero podemos ver que su cinta dice Himno Ad cenan Agni providi
+
+son los filtros donde se encutra cada canto.
+
+luego seguimos con el buscador, en el mismo vemos una lupa a la izquierda y un reciclaje a la derecha, debajo de lista. 
+
+con al lupa si presionamos sobre ella, veras una serie de utilidades que nos facilitará encontrar los cantos, con filtros por etapa o filtros por cantos.
+si le volvemos a dar a la lupa, se ocultarán los fitlros.
+
+en el primer filtro vemos PreCatecumenado, luego catecumenado, Elección, Liturgia y Otros cantos Catolicos.
+
+luego otros filtros, como.
+los cantos a la virgen.
+Indice de cantos
+cantos de los niños
+Cantos de Entrada
+Cantos de Paz
+y demas filtros.
+
+luego tenemos dos enlace uno con el libro de cantos en pdf 2024 y otro con una herramiento que mide la pantalla.
+actualmente la aplicación está hecha para tres pantallas
+384px que son los celulares
+768px que son las tables
+992px que son los ordenadores o laptop
+
+Para busdar en el campo de busqueda tenemos varias opciones.
+1- puedes buscar por el nombre del canto
+2- puedes buscar con el nombre del canto sin espacio
+3- puedes buscar con el contenido del canto, les perse y eso nos muestra el canto de moises.
+4- puedes buscar con la cita o subtitulo del canto, como "secuencia de " y buscará lo que inicie con ese conjunto de palabra.
+5- En el lado derecho que está el reciclaje puedes darle y limpiará la busqueda, tambien puedes darle tres toques y la limpiará la busqueda.
+
+6- luego tenemos una cinta de navegación situada en la parte de abajo de la aplicación, la misma se oculta en un boton que se encuentra a la deracha, se oculta y se muestra en el mismo boton.
+
+7- luego tenemos el boton de inicio, que nos lleva al indice del canto.
+
+8- seguimos con el menu, que nos mostrará las opciones que hemos trabajado hasta ahora, contenido de youtube, de facebook, como un canal, Laudes que es una pagina con la liturgia de las horas, donde tambien está el evangelio del dia y en las lecturas del oficio de las horas puedes escuchar las lecturas 1 y 2 segun el año. luego tenemos evangelio del dia que nos muestra el evangelio de cada dia con el padre Eugenio Fernandez, el domingo aun está en desarrollo.
+
+9- Luego seguimos con NeoCate "Camino Neocatecumenal", mostrando primero la pagina oficial del camino con la noticias, seguimos con cantos del camino, resucito.es, con los cantos digitales del camino, seguimos con comunidades que es un grupo de facebook con mas de 27mil miembros, luego con el grupo de cantores del camino, con mas de 8300 seguidores, luego tenemos la pagina de Carmen, con su biografia, otras informaciónes relacionadas con carmen, luego tenemos una breve biografia de Kiko Argüello, seguida con la del padre Mario y finalizando con la biogracia de Maria Ascensión.
+
++Resucito
+Ahora seguimos con la parte de resucito, 
+donde tenemos de arriba para abajo las siguientes funciones.
+	+ Icono de inicio que nos lleva al indice de la pagina, 
+	+ Luego tenemos el inicio de otro libro de cantos catolicos, 
+	+ Luego viene el indice de la aclamación evangelica, que es la antofina antes del evangelio.,
+	+ seguimos con perfil, que es la parte donde se encutra el avance o interracción de los cantos que va teniendo el cantor, como otras informaciones que solo el cantor puede ver, 
+	+ Luego seguimos con la gestion de listas: donde podemos manejar desde listas con un solo cantos, como lista con innumerables cantos., 
+	+ Luego tenemos la introdución que es la misma introducción que nos presenta el libro de canto y su prontuario., 
+	+ Luego seguimos con caquesis, la cual actualmente está en desarrollo y busca mostrar la catequesis del canto dada por kiko en las diferentes catequesis a traves de los años., 
+	+ Luego tenemos el boton de Instalar App, en la cual puedes tener el libro de canto virtual en una app en tu equipo y gestionar el modo offline
+
+10- seguimos con ajustes, aqui encontramos 4 pestañas, 
+	+ La primera general.
+		+ General tiene la primera opcion que está actualmente en desarrollo, con el idioma del canto, con el deseo de ponerlo en diferentes idiomas.
+		+ La opcion de Mantener la pantalla encendida, si habilitas esa función y estas en una celular o una table y la misma se apaga en un minuto, como es mi caso, puedes habilitarlo y mientras estes en la aplicación, la pantalla no se oscurecerá.
+
+		+ Limpiar cache y datos, a traves del desarrollo de la aplicación como la misma guarda todo el contenido offline, se vio necesario crear esta función para actualizar la pagina elimando datos viejos y que asuma los nuevos cambios o actualizaciones.
+
+		+ Luego tenemos limpiar ajustes. que limpia archivos de sistema con los que el navegador se queda, que son archivos un poco mas profundos propio de la configuracion y el navegador.
+
+	+ La segunda pestaña CANTO, que contiene algunas opciones referentes al canto, estas opciones solo son funcionales dentro de los cantos.
+		
+	+ La primera opcion tenemos una funcion propia de la programación y que solo es permita a mi usuario.
+	
+	+ Seguimos con expandir todo por defecto, los cantos como sabemos tienen partes que son de la asamblea y que están contraidas, esta opcion pone por defecto que se contraiga o que se expanda.
+	
+	+ Seguimos con la sincronización de desplazamiento, la cual sincroniza el desplazamiento con la nube, con la finalidad de actualizarlo en otro equipo igual, como celulares, tables, ordenadores, ya que cada equipo maneja diferentes velocidades., celulares con celulares, tables con table y asi, considerando que tiene un valor por defecto y que puede ser manipulado en la cuenta de cada usuario individualmente.
+
+	+ Luego sigue nota personal del canto, aqui podemos agregar una información personal al canto, donde podemos poner cualquier comentario 
+	
+	+ Luego podemos ponerle un enlace a la nota persona, ya sea un video de youtube o cualquier url orientada al a nota personal o como quieran.
+	
++ Luego seguimos con Tema.
+	
+	+ Esta es la sección de cambiar ciertas fuentes y colores.
+		+ Tenemos la opcion de ponenrlo en modo oscuro.
+		+ El tamaño de la fuente, 
+		+ El color del texto de cabecera, el cual aun está en desarrollo, esperemos tenerlo listo muy pronto.
+
++ Luego seguimos la seccion de perfil
+	+ En el cual tenemos varias opciones propias del perfil del usuario. si habilitamos cada uno de estas opciones, pondrá por defecto su funcion.
+
+	+ Sincronizacion con la nube, está habilita o deshabilita la sincronizacion con la nube la cual para sincronizar con la nube deberia estár habilitada.
+	+ Descarga automatica, nos ayuda a descargar el contenido de la nube automaticamente, cuando estemos iniciado.
+	- Sincronización automatica. nos ayuda a que el sistema se mantenga sincronizado con la nube.
+
+
++ Luego de AJUSTES tenemos entrar/Salir la cual, cuando hemos iniciado seccion con google nos muestra el usuario el perfil o imagen del usuario de google.
+
+
+Ahora vamos a inicio y revisar todas las funciones.
++ 
+
+ya hemos dado una pincelana superficial de lo que tiene la aplicacion, ahora vamos a mencionar todo y el modo de uso, pero mas rapido.
+
+si entramos a un canto como, A nadie demos ocasión de tropiezo.
+
++ En la parte superior vemos una cinta roja iniciando con un boton de volver atras, la cual nos lleva a la pagina anterior.
+
++ continua con el acorde original del canto y este no se cambia.
+
++ seguimos con la cejilla, la cual puede estar en un traste o en ninguno, y como en este canto, no lleva traste, puede ser colocado por el cantor, por lo que despues del acorte del canto va la posición de la cejilla, luego viene una barra que divide la cejilla original con la cejilla que el cantor puede usar, la cual va desde 0 hasta el octavo traste.
+
++ Luego seguimos con un icono que es un simbolo musical, la cual muestra el prontuario y salmodias que tienen los cantos del libro y las salmodias.
+
++ Luego vemos un libro que tiene una pagina escrita y otra no, la cual para laptop y ordenadores, puede ayudarlo a dividir las dos columnas del canto, para los celulares y tables, esto no aplica, ya que viene ya dividida debajo el derecho del izquierdo.
+
++ Continuamos con el ojo, este ojo es para mostrar la parte de la asamblea completa, la cual viene por defecto contraida y se puede poner por defecto en el usuario de cuada cuenta por defectop expandida.
+para ver esa parte nos vamos a ajuste, cantos > Expandir todo por defecto.

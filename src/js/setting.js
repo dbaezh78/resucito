@@ -455,9 +455,9 @@ window.tabsConfig = [
             { label: 'Sincronizar nube', tipo: 'switch' },
             { label: 'Descarga automática', tipo: 'switch' },
             { label: 'Sincronización Automática', tipo: 'switch' },
-            { label: 'Mostrar datos perfil', tipo: 'switch' },
+/*            { label: 'Mostrar datos perfil', tipo: 'switch' },
             { label: 'Gestión de Cantos', tipo: 'switch' },
-            { label: 'Configuración', tipo: 'switch' }
+            { label: 'Configuración', tipo: 'switch' }*/
         ]
     }
 ];

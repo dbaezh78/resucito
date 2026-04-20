@@ -116,6 +116,7 @@ body.dark-theme .cristo-oscuro {
     --chord-color-fa: #138c13; /* Verde Frescura, equilibrio */
     --chord-color-fas: #138c13; /* Verde Frescura, equilibrio */
     --chord-color-sol: #1e7ec2; /* Azul Cielo Serenidad */
+    --chord-color-solsdi: #1e7ec2; /* Azul Cielo Serenidad */
     --chord-color-la: #800080; /* Violeta Misterio, profundidad */
     --chord-color-si: #000000; /* Negro Oscuro, resolución */
     --chord-color-default-text: white; /* Color de texto por defecto para los nombres de acordes */
@@ -1153,30 +1154,31 @@ hr {
 }
 
 /* Clases para los colores de fondo de los acordes */
-.chord-image-item.chord-color-do { background-color: var(--chord-color-do); }
-.chord-image-item.chord-color-dodi { background-color: var(--chord-color-do); }
-.chord-image-item.chord-color-re { background-color: var(--chord-color-re); }
-.chord-image-item.chord-color-readd { background-color: var(--chord-color-re); }
-.chord-image-item.chord-color-mi { background-color: var(--chord-color-mi); }
-.chord-image-item.chord-color-mi6 { background-color: var(--chord-color-mi); }
-.chord-image-item.chord-color-miaj { background-color: var(--chord-color-mi); }
-.chord-image-item.chord-color-mimaj7 { background-color: var(--chord-color-mi); }
-.chord-image-item.chord-color-fa { background-color: var(--chord-color-fa); }
-.chord-image-item.chord-color-faaj { background-color: var(--chord-color-fa); }
-.chord-image-item.chord-color-faaj13 { background-color: var(--chord-color-fa); }
-.chord-image-item.chord-color-fa5-di { background-color: var(--chord-color-fa); }
-.chord-image-item.chord-color-sol { background-color: var(--chord-color-sol); }
-.chord-image-item.chord-color-sol6 { background-color: var(--chord-color-sol); }
-.chord-image-item.chord-color-di { background-color: var(--chord-color-sol); }
-.chord-image-item.chord-color-la { background-color: var(--chord-color-la); }
-.chord-image-item.chord-color-la6 { background-color: var(--chord-color-la); }
-.chord-image-item.chord-color-si { background-color: var(--chord-color-si); }
-.chord-image-item.chord-color-salmodia { background-color: var(--chord-color-salmodia); }
+.chord-image-item.chord-color-do        { background-color: var(--chord-color-do); }
+.chord-image-item.chord-color-dodi      { background-color: var(--chord-color-do); }
+.chord-image-item.chord-color-re        { background-color: var(--chord-color-re); }
+.chord-image-item.chord-color-readd     { background-color: var(--chord-color-re); }
+.chord-image-item.chord-color-mi        { background-color: var(--chord-color-mi); }
+.chord-image-item.chord-color-mi6       { background-color: var(--chord-color-mi); }
+.chord-image-item.chord-color-miaj      { background-color: var(--chord-color-mi); }
+.chord-image-item.chord-color-mimaj7    { background-color: var(--chord-color-mi); }
+.chord-image-item.chord-color-fa        { background-color: var(--chord-color-fa); }
+.chord-image-item.chord-color-faaj      { background-color: var(--chord-color-fa); }
+.chord-image-item.chord-color-faaj13    { background-color: var(--chord-color-fa); }
+.chord-image-item.chord-color-fa5-di    { background-color: var(--chord-color-fa); }
+.chord-image-item.chord-color-sol       { background-color: var(--chord-color-sol); }
+.chord-image-item.chord-color-sol6      { background-color: var(--chord-color-sol); }
+.chord-image-item.chord-color-solsdi    { background-color: var(--chord-color-sol); }
+.chord-image-item.chord-color-di        { background-color: var(--chord-color-sol); }
+.chord-image-item.chord-color-la        { background-color: var(--chord-color-la); }
+.chord-image-item.chord-color-la6       { background-color: var(--chord-color-la); }
+.chord-image-item.chord-color-si        { background-color: var(--chord-color-si); }
+.chord-image-item.chord-color-salmodia  { background-color: var(--chord-color-salmodia); }
 .chord-image-item.chord-color-salmodia1 { background-color: var(--chord-color-salmodia); }
 
-.chord-image-item.chord-color-salodia { background-color: var(--chord-color-salmodia); }
-.chord-image-item.chord-color-salodia1 { background-color: var(--chord-color-salmodia); }
-.chord-image-item.chord-color-sal { background-color: var(--chord-color-salmodia); }
+.chord-image-item.chord-color-salodia   { background-color: var(--chord-color-salmodia); }
+.chord-image-item.chord-color-salodia1  { background-color: var(--chord-color-salmodia); }
+.chord-image-item.chord-color-sal       { background-color: var(--chord-color-salmodia); }
 
 
 /* Sobrescribir el color del texto para los acordes de Mi a negro */

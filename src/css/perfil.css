@@ -272,7 +272,11 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             overflow: hidden;
             border: 1px solid #eee;
+            
         }
+.perfil-section.collapsed .arrow-icon {
+    transform: rotate(-90deg); /* O el ángulo que use tu icono para indicar 'cerrado' */
+}
 
         .section-content {
             padding: 15px;
@@ -298,15 +302,7 @@
             transform: rotate(-90deg);
         }
 
-        .perfil-section {
-            margin-bottom: 20px;
-            border-radius: 12px;
-            background: #fff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            overflow: hidden;
-            border: 1px solid #eee;
-        }
-
+        
         .section-header {
             padding: 15px 20px;
             display: flex;
@@ -321,6 +317,7 @@
 
         .section-header:hover {
             background: #f5f5f5;
+            display: block;
         }
 
         .section-header h2 {
@@ -355,6 +352,7 @@
             transition: transform 0.3s ease;
             color: #bc0009;
             display: inline-block;
+            overflow: hidden;
         }
 
         .collapsed .arrow-icon {
@@ -484,9 +482,6 @@ input:checked + .slider:before {
     display: none;
 }
 
-.perfil-section.collapsed .arrow-icon {
-    transform: rotate(-90deg); /* O el ángulo que use tu icono para indicar 'cerrado' */
-}
 
 .btn-primario {
     padding: 2px 0px 4px 0px;

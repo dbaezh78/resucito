@@ -49,6 +49,7 @@
                     <span class="material-symbols-outlined">menu</span>
                     <span>Menú</span>
                     <div class="nav-submenu" id="nav-submenu">
+                    
                         <a href="https://www.youtube.com/@CristoJesusReydereyes" target="_blank"><span class="material-symbols-outlined">youtube_activity</span> YouTube</a>
                         <a href="https://www.facebook.com/groups/721999947892692" target="_blank"><span class="material-symbols-outlined">communities</span> Facebook</a>
                         <a href="https://dbaezh78.github.io/salterios/" target="_blank"><span class="material-symbols-outlined">prayer_times</span> Laudes</a>
@@ -98,6 +99,7 @@
                         <a href="/src/select.html"><span class="material-symbols-outlined">playlist_add</span>Gestión Listas</a>
                         <a href="/src/html/intro.html"><span class="material-symbols-outlined">menu_book</span> Introducción</a>
                         <a href="/src/catequesis.html"><span class="material-symbols-outlined">history_edu</span> Catequesis</a>
+                        <a href="#" target="_blank" id="installButton"><span class="material-symbols-outlined">download_for_offline</span>Instalar App</a>
                     </div>
                 </button>
 

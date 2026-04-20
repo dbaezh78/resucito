@@ -534,6 +534,7 @@ async function obtenerDatosExtraFirebase(cantoId, uid) {
     }
 }
 
+
 // 15: TOGGLE SECTIONS: Abre/Cierra secciones y gira la flecha (collapsed)
 window.toggleSection = function(sectionId, wrapperId) {
     const section = document.getElementById(sectionId);
@@ -1372,10 +1373,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 3. CONFIGURACIÓN DE PANELES Y SWITCHES
     const configPaneles = {
-        'toggle-resumen':  { content: 'status-grid',               wrapper: 'wrapper-resumen' },
-        'toggle-perfil':   { content: 'section-config',            wrapper: 'wrapper-config' },
-        'toggle-gestion':  { content: 'lista-cantos-gestion-wrapper', wrapper: 'wrapper-gestion' },
-        'toggle-settings': { content: 'section-settings',          wrapper: 'wrapper-settings' },
+        'toggle-resumen':  { content: 'status-grid',                    wrapper: 'wrapper-resumen' },
+        'toggle-perfil':   { content: 'section-config',                 wrapper: 'wrapper-config' },
+        'toggle-gestion':  { content: 'lista-cantos-gestion-wrapper',   wrapper: 'wrapper-gestion' },
+        'toggle-settings': { content: 'section-settings',               wrapper: 'wrapper-settings' },
     };
 
     function aplicarEstadoPanel(idSwitch, mostrar) {
@@ -1609,17 +1610,17 @@ const SECCIONES_CONTROLES = [
     {
         titulo: "Preferencia de interfaz",
         controles: [
-            { id: 'syncToggle', label: 'Sincronización Nube', originalId: 'syncToggle' },
-            { id: 'toggle-perfil', label: 'Ver Datos Perfil', originalId: 'toggle-perfil' },
-            { id: 'toggle-gestion', label: 'Ver Gestión Cantos', originalId: 'toggle-gestion' },
-            { id: 'toggle-settings', label: 'Ver Configuracion', originalId: 'toggle-settings' }
+            { id: 'syncToggle',         label: 'Sincronización Nube',   originalId: 'syncToggle' },
+            { id: 'toggle-perfil',      label: 'Ver Datos Perfil',      originalId: 'toggle-perfil' },
+            { id: 'toggle-gestion',     label: 'Ver Gestión Cantos',    originalId: 'toggle-gestion' },
+            { id: 'toggle-settings',    label: 'Ver Configuracion',     originalId: 'toggle-settings' }
         ]
     },
     {
         titulo: "Preferencia del sistema",
         controles: [
-            { id: 'control-oscuro', label: 'Modo Oscuro', originalId: 'global-set-dark' },
-            { id: 'btn-limpiar', label: 'Limpiar Caché y Sesión', accion: () => ejecutarLimpiezaProfunda() }
+            { id: 'control-oscuro',     label: 'Modo Oscuro',               originalId: 'global-set-dark' },
+            { id: 'btn-limpiar',        label: 'Limpiar Caché y Sesión',    accion: () => ejecutarLimpiezaProfunda() }
         ]
     }
 ];
