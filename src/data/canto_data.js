@@ -3896,7 +3896,7 @@ const allCantosData = [
               tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
-        ant: "/src/index.html?canto=dayenu2",
+        ant: "/src/index.html?canto=cuandoisraelsaliodeegipto",
         sig: "/src/index.html?canto=deprofundis",
 // Contenido del lado izquierdo del canto,
     lizq: [
