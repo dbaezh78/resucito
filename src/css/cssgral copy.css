@@ -340,52 +340,49 @@ display: none;}
     margin-bottom: 1px;
 }
 
-.top-row-controls {
-    display: flex;
-    width: 100%;
-    background-color: var(--Titulo-SangreDeCristo);
-    position: fixed; /* Fixed for mobile/tablet */
-    top: 0;
-    left: auto;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    justify-content: space-between;
-    justify-self: anchor-center;
+            .top-row-controls {
+                display: flex;
+                width: 100%;
+                padding: 0px;
+                background-color: var(--Titulo-SangreDeCristo);
+                position: fixed; /* Fixed for mobile/tablet */
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                justify-content: space-between;
 
-    /* padding: 0px; */
-    /* padding: 0px 40px 0px 0px;*/
-    /* left: 0;*/
-    /*width: 998px;*/
-    
-    @media (min-width: 768px) {
-        font-size: larger;
-    }
-    
-    @media (min-width: 992px) {
-        width: 1080px;
-        position: fixed;
-        justify-content: space-between;
-        padding: 0px 40px 0px 0px;
-        left: auto;
-        /*width: 998px;*/
-        width: 1080px;
-        justify-self: anchor-center;
-    }
-}
+                @media (min-width: 768px) {
+                                            font-size: larger;
+                                          }
+                
+                @media (min-width: 992px) {
 
+                }
+            }
         
+            .top-row-controls {
+                position: fixed;
+                justify-content: space-between;
+                padding: 0px 40px 0px 0px;
+                left: auto;
+                /*width: 998px;*/
+                width: 1080px;
+                justify-self: anchor-center;
+            }
 /*
     .top-row-controls {
-       position: relative; /* Relative for desktop */
-    /* justify-content: space-between;
-       padding: 0px 40px 0px 0px;
-       left: -20px;
+        position: relative; /* Relative for desktop */
+  /* justify-content: space-between;
+        padding: 0px 40px 0px 0px;
+        left: -20px;
     }
-
+        */
+}
 
 .home-icon-container {
-    /* Specific styles for home icon container if needed  }     
-    */
+    /* Specific styles for home icon container if needed */
+}
 
 .icon-button {
     display: inline-flex;

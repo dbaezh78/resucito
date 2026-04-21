@@ -447,6 +447,24 @@
 
 
 
-{"id":"abc","titulo": "Titulo que va a desplegarse en la busqueda.","salmo": "Categoria","letra": "Lo_que_va_abuscarenel_campo_de_busqueda.","archivo": "/src/ainterleccional.html?canto=aitos25c"}
+{"id":"abc","titulo": "Titulo que va a desplegarse en la busqueda.","salmo": "Categoria","letra": "Lo_que_va_abuscarenel_campo_de_busqueda.","archivo": "/src/ainterleccional.html?canto=aitos25c"},
+
+
+
+
+{
+    "id":"aleluyainterleccional",
+    "titulo": "Exaltación a la Cruz | Aleluya Interleccional",
+    "salmo": "Liturgia",
+    "letra": "Te adoramos, oh Cristo, y te bendecimos porque con tu cruz has redimido el mundo., exaltacion a la cruz, exaltacionalacruz, aicruz 14/9 14 septiembre 14 9",
+    "archivo": "/src/ainterleccional.html?canto=aitfs14s"},
+
+
+    {
+    "id":"aitfs14s",
+    "titulo": "f14s | Año S, TF, Semana: 14, Aleluya Interleccional.",
+    "salmo": "Liturgia",
+    "letra": "f14s",
+    "archivo": "/src/ainterleccional.html?canto=aitfs14s"}
 
 ]

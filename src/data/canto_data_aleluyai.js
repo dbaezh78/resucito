@@ -132,7 +132,7 @@
                     { line: `${aetas2a2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA II
@@ -193,7 +193,7 @@
                     { line: `${aetas3a2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA III
@@ -257,7 +257,7 @@
                     { line: `${aetas4a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA IV
@@ -318,7 +318,7 @@
                     { line: `${aetns25dicmva2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -382,7 +382,7 @@
                     { line: `${aetns25dicmma3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -443,7 +443,7 @@
                     { line: `${aetns25dicmaa2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -507,14 +507,14 @@
                     { line: `${aetns25dicmda3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
           // SIGUIENTE CANTO DEBAJO
 
 
-             /*╔══════════════════════════════════════════════════════════════════╗
+        /*╔══════════════════════════════════════════════════════════════════╗
           ║   ACLAMACIÓN DEL EVANGELIO TIEMPO NAVIDAD SAGRADA FAMILIA AÑO A  ║
           ╚══════════════════════════════════════════════════════════════════╝  */
           {
@@ -576,13 +576,13 @@
                     { line: `${aetnssfa4}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
           // SIGUIENTE CANTO DEBAJO
 
-             /*╔══════════════════════════════════════════════════════════════════════════╗
+        /*╔══════════════════════════════════════════════════════════════════════════╗
           ║  ACLAMACIÓN EVANGELIO TIEMPO NAVIDAD ALELUYA HB 1, 1-2 SEMANA 1 AÑO A    ║
           ║  SANTA MARIA MADRE DE DIOS                                               ║
           ╚══════════════════════════════════════════════════════════════════════════╝  */
@@ -642,7 +642,7 @@
                     { line: `${aetn1ea3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
@@ -703,7 +703,7 @@
                     { line: `${aetns2a2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA II
@@ -766,7 +766,7 @@
                     { line: `${aetn6ea2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD EPIFANIA
@@ -832,7 +832,7 @@
                     { line: `${aetos1a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA I
@@ -893,7 +893,7 @@
                     { line: `${aetos2a2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA II
@@ -954,7 +954,7 @@
                     { line: `${aetos3a2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA III
@@ -1015,7 +1015,7 @@
                     { line: `${aetos4a2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA IV
@@ -1079,7 +1079,7 @@
                     { line: `${aetos5a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA V
@@ -1143,7 +1143,7 @@
                     { line: `${aetos6a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VI
@@ -1207,7 +1207,7 @@
                     { line: `${aetos7a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VII
@@ -1268,7 +1268,7 @@
                     { line: `${aetos8a2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VIII
@@ -1335,7 +1335,7 @@
                     { line: `${aetos9a4}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA IX
@@ -1399,7 +1399,7 @@
                     { line: `${aetos10a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA X
@@ -1460,7 +1460,7 @@
                     { line: `${aetos11a2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XI
@@ -1524,7 +1524,7 @@
                     { line: `${aetos12a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XII
@@ -1594,7 +1594,7 @@
                     { line: `${aetos13a5}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XIII
@@ -1658,7 +1658,7 @@
                     { line: `${aetos14a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XIV
@@ -1722,7 +1722,7 @@
                     { line: `${aetos15a3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XV
@@ -4367,7 +4367,7 @@
                     { line: `${aetas2b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA II
@@ -4429,7 +4429,7 @@
                     { line: `${aetas3b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA III
@@ -4490,7 +4490,7 @@
                     { line: `${aetas4b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA IV
@@ -4551,7 +4551,7 @@
                     { line: `${aetns25dicmvb2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -4612,7 +4612,7 @@
                     { line: `${aetns25dicmmb2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -4673,7 +4673,7 @@
                     { line: `${aetns25dicmab2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -4737,7 +4737,7 @@
                     { line: `${aetns25dicmdb3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
@@ -4800,7 +4800,7 @@
                     { line: `${aetnssfb2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
@@ -4863,7 +4863,7 @@
                     { line: `${aetn1eb2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
@@ -4924,7 +4924,7 @@
                     { line: `${aetns2b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA II
@@ -4987,7 +4987,7 @@
                     { line: `${aetn6eb2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD EPIFANIA
@@ -5050,7 +5050,7 @@
                     { line: `${aetos1b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA I
@@ -5111,7 +5111,7 @@
                     { line: `${aetos2b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA II
@@ -5172,7 +5172,7 @@
                     { line: `${aetos3b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA III
@@ -5233,7 +5233,7 @@
                     { line: `${aetos4b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA IV
@@ -5294,7 +5294,7 @@
                     { line: `${aetos5b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA V
@@ -5355,7 +5355,7 @@
                     { line: `${aetos6b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VI
@@ -5416,7 +5416,7 @@
                     { line: `${aetos7b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VII
@@ -5477,7 +5477,7 @@
                     { line: `${aetos8b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VIII
@@ -5538,7 +5538,7 @@
                     { line: `${aetos9b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA IX
@@ -5602,7 +5602,7 @@
                     { line: `${aetos10b3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA X
@@ -5663,7 +5663,7 @@
                     { line: `${aetos11b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XI
@@ -5724,7 +5724,7 @@
                     { line: `${aetos12b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XII
@@ -5785,7 +5785,7 @@
                     { line: `${aetos13b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XIII
@@ -5846,7 +5846,7 @@
                     { line: `${aetos14b2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XIV
@@ -5910,7 +5910,7 @@
                     { line: `${aetos15b3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XV
@@ -8514,7 +8514,7 @@
                     { line: `${aetas2c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA II
@@ -8575,7 +8575,7 @@
                     { line: `${aetas3c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA III
@@ -8636,7 +8636,7 @@
                     { line: `${aetas4c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ADVIENTO SEMANA IV
@@ -8697,7 +8697,7 @@
                     { line: `${aetns25dicmvc2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -8761,7 +8761,7 @@
                     { line: `${aetns25dicmmc3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -8822,7 +8822,7 @@
                     { line: `${aetns25dicmac2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD 25 DICIEMBRE SEMANA I
@@ -8886,7 +8886,7 @@
                     { line: `${aetns25dicmdc3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
@@ -8955,7 +8955,7 @@
                     { line: `${aetnssfc4}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
@@ -9018,7 +9018,7 @@
                     { line: `${aetn1ec2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA I
@@ -9079,7 +9079,7 @@
                     { line: `${aetns2c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD SEMANA II
@@ -9142,7 +9142,7 @@
                     { line: `${aetn6ec2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO NAVIDAD EPIFANIA
@@ -9208,7 +9208,7 @@
                     { line: `${aetos1c3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA I
@@ -9269,7 +9269,7 @@
                     { line: `${aetos2c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA II
@@ -9330,7 +9330,7 @@
                     { line: `${aetos3c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA III
@@ -9391,7 +9391,7 @@
                     { line: `${aetos4c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA IV
@@ -9455,7 +9455,7 @@
                     { line: `${aetos5c3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA V
@@ -9519,7 +9519,7 @@
                     { line: `${aetos6c3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VI
@@ -9583,7 +9583,7 @@
                     { line: `${aetos7c3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VII
@@ -9644,7 +9644,7 @@
                     { line: `${aetos8c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA VIII
@@ -9711,7 +9711,7 @@
                     { line: `${aetos9c4}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA IX
@@ -9772,7 +9772,7 @@
                     { line: `${aetos10c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA X
@@ -9833,7 +9833,7 @@
                     { line: `${aetos11c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XI
@@ -9897,7 +9897,7 @@
                     { line: `${aetos12c3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XII
@@ -9958,7 +9958,7 @@
                     { line: `${aetos13c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XIII
@@ -10022,7 +10022,7 @@
                     { line: `${aetos14c3}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XIV
@@ -10083,7 +10083,7 @@
                     { line: `${aetos15c2}`, sC: "bg"},
                     
                     { line: "", sC: "adb1"},
-                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
 
                     ], lder: []},
  // ULTIMA LINEA DEL CANTO: TIEMPO ORDINARIO SEMANA XV
@@ -12560,5 +12560,108 @@
  // ULTIMA LINEA DEL CANTO: TIEMPO PASCUA SEMANA IX
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         /*╔══════════════════════════════════════════════════════════════════╗
+          ║   ACLAMACIÓN DEL EVANGELIO TIEMPO NAVIDAD SAGRADA FAMILIA AÑO A  ║
+          ╚══════════════════════════════════════════════════════════════════╝  */
+          {
+               id: "aetfs14s",
+               tt: aetfs14s,
+               title: aetfs14s,
+          subtitle: añoa+", "+aetfs14s,
+          category: ["Liturgia"],catCanto: "Liturgia",cejilla: "3",nCan: "",nCanURL: "",dbno: "180",notes: "",
+               mant: "No",
+          audioSrc: "https://audio.resucito.do/aleluyainterleccional.mp3",
+          // Nueva propiedad para la velocidad de desplazamiento
+          scrollConfig: {
+                    mobile: { velocidad: 6, incremento: 3 }, // Para celular
+                    tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+                    desktop: { velocidad: 7, incremento: 1 },   // Para PC
+                    desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+          ant: "/src/index.html?canto=aetns25dicmda",
+          sig: "/src/index.html?canto=aetn1ea",
+          // Vaciando contenido,
+          lizq: [
+                    { type: "collapsible-block", id: "asamblea_ae_1", initialState: "collapsed",
+               triggerLine: "Modelo I", sC: "as mod1", color: "red", lines: [
+                    { line: "", sC: "adb1"},
+                    { line: am11, sC: "tc"},{ line: am12, sC: "ta as bg"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo1, sC: "bnota"},
+
+                    { line: `${aetfs14s1}`, sC: "tc"},
+                    { line: `${aetfs14s2}`, sC: ""},
+
+                    { line: "", sC: "adb1"},
+                    { line: "ALELUYA ... (Sol,,11)", sC: "ta as"},{ line: "", sC: "adb1"},]},
+
+                    { type: "collapsible-block", id: "asamblea_ae_2", initialState: "collapsed",
+               triggerLine: "Modelo II", sC: "as mod2", color: "red", lines: [
+                    { line: "Con la música del «Aleluya, ya llegó el Reino».", sC: "fssmall", color: "gray"},
+
+                    { line: am2, sC: "ta as"},{ line: am2, sC: "as bg"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo2, sC: "bnota"},
+
+                    { line: `${aetfs14s1}`, sC: "tc"},
+                    { line: `${aetfs14s2}`, sC: "tc"},
+                    
+                    { line: "", sC: "adb1"},
+                    { line: "ALELUYA ... (Do,,11)", sC: "ta as"},]}, 
+
+                    { type: "collapsible-block", id: "asamblea_ae_3", initialState: "expanded",
+               triggerLine: "Modelo III", sC: "as mod3", color: "red", lines: [
+                    { line: "", sC: "adb1"},
+                    { line: am31, sC: "tc"},{ line: am32, sC: "ta as"},
+                    { line: txtmsg, sC: "anota"},{ line: modelo3, sC: "bnota"},
+
+                    { line: `${aetfs14s1}`, sC: "tc"},
+                    { line: `${aetfs14s2}`, sC: "bg"},
+                    
+                    { line: "", sC: "adb1"},
+                    { line: "ALELUYA ... (Mi,m,19)", sC: "ta as"},]},
+
+                    ], lder: []},
 
           ); //LLAVE DE CIERRE DEL CANTO

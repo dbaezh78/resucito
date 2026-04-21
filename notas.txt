@@ -113,5 +113,20 @@ si entramos a un canto como, A nadie demos ocasión de tropiezo.
 
 + Luego vemos un libro que tiene una pagina escrita y otra no, la cual para laptop y ordenadores, puede ayudarlo a dividir las dos columnas del canto, para los celulares y tables, esto no aplica, ya que viene ya dividida debajo el derecho del izquierdo.
 
-+ Continuamos con el ojo, este ojo es para mostrar la parte de la asamblea completa, la cual viene por defecto contraida y se puede poner por defecto en el usuario de cuada cuenta por defectop expandida.
-para ver esa parte nos vamos a ajuste, cantos > Expandir todo por defecto.
++ Continuamos con el icono que parece un ojo, este ojo es para mostrar u ocultar la parte de la asamblea, la cual viene por defecto contraida y se puede poner por defecto en el usuario de cuada cuenta por defectop expandida.
+para ver esa parte nos vamos a ajuste > cantos > Expandir todo por defecto y una vez activado asi se queda en el dispositivo y se guarda a la nube.
+
++ Continuamos con el reproductor, este icono con una fecha dentro del circulo, la cual contiene el canto con mejor calidad y más fiel que hemos encontrado en su mayoria Kiko Argüello.
+
++ Luego seguimos con el icono de desplazamiento lento, este icono  cuando estamos en el celular o en la table, nos va desplazando lentamente o segun la velocidad que le configuremos, las misma la podemos realizar en AJUSTES > CANTO > DESPLAZAMIENTO CANTO E INCREMENTO SCROLL.
+
+	+ Con desplazamiento canto podemos controlar la velocidad que lleva el canto desde 1 hasta 40.
+	+ Con incremento scroll controlamos los bloques es pixeles como sube el canto, el cual va de 1 al 15, en 1 será igual a un bloque de 1 px y en 15 será igual a 15px, un px es un pixel equivalente menos de 0.03 cm y 15px igual a 0.4 cm, para que tengan una idea del bloque de desplazamiento y puedan sacarle provecho en cada canto, ya que es una información independiente de cada canto.
+	
++ Luego continuamos con la fecha de la derecha y la de la izquierda, la cual nos lleva a canto anterior y al canto siguiente, segun el orden de las etapas y los cantos liturgicos.
+
++ Luego tenemos el campo de buscar, donde como en el indice aqui tambien podemos buscar cualquier canto y aclamación previa al evangelio, ya sea con el nombre del canto con y sin espacio y con el contenido del canto con y sin espacio, 
+	+ Si vamos a buscar una aclamación previa al evangelio, o conocido como Aleluya Interleccional, lo podemos hacer poniendo a1a, eso sería Adviento semana 1 año A = a1a, o c1a = Cuaresma Semana 1 Año A.
+
++ El icono de Cristo que está al principio del canto si precionamos sobre el, refrescará la página, en caso de ser necesario.
+

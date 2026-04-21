@@ -1,11 +1,16 @@
 /* **************************************************
    MOTOR DE BÚSQUEDA SECUENCIAL - Edición David (Final)
-   - Compatible con index principal y visor de cantos.
-   - Anti-Acentos, Anti-Signos, Anti-Mayúsculas.
-   - Anti-Espacios (letoco = le toco) - SOLO SECUENCIAL.
+   - Unificación de fuentes: songs + songsAev
+   - Limpieza de código duplicado
 ************************************************** */
 
-// 1. Detectar automáticamente qué input está presente en el HTML actual
+// 1. Unificamos ambos arreglos. Si uno no existe, usa un array vacío.
+const allSongs = [
+    ...(typeof songs !== 'undefined' ? songs : []), 
+    ...(typeof songsaEv !== 'undefined' ? songsaEv : [])
+];
+
+// 2. Detectar input
 const inputID = document.getElementById('DavidLoBusca') ? 'DavidLoBusca' : 'searchInput';
 
 document.getElementById(inputID)?.addEventListener('input', function(e) {
@@ -14,21 +19,18 @@ document.getElementById(inputID)?.addEventListener('input', function(e) {
 
     if (!resultadosDiv) return;
 
-    // Si está vacío, escondemos los resultados
     if (valorInput.trim().length < 1) {
         resultadosDiv.style.display = 'none';
         resultadosDiv.innerHTML = '';
         return;
     }
 
-    // 2. Limpieza total de la búsqueda
     const busquedaLimpia = limpiarTextoMaestro(valorInput);
     const busquedaPegada = busquedaLimpia.replace(/\s/g, "");
 
-    // 3. Filtrar usando la librería global 'songs'
+    // Filtramos usando la lista unificada
     const resultados = filtrarCantosUltra(busquedaLimpia, busquedaPegada);
 
-    // 4. Mostrar en pantalla
     mostrarResultadosFinal(resultados);
 });
 
@@ -45,91 +47,32 @@ function limpiarTextoMaestro(texto) {
 }
 
 /**
- * Lógica de Filtrado Secuencial (Anti-Palabras Saltadas)
+ * Lógica de Filtrado Secuencial
  */
 function filtrarCantosUltra(fraseNormal, frasePegada) {
-    if (typeof songs === 'undefined') {
-        console.error("Error: 'songs' no está cargado.");
-        return [];
-    }
-
-    return songs.filter(canto => {
-        // Ignorar si el canto está marcado como no visible
+    // Usamos allSongs, que contiene tanto songs como songsAev
+    return allSongs.filter(canto => {
         if (canto.visible === "no") return false;
 
-        // Limpiamos los campos del objeto songs-data.js
         const t = limpiarTextoMaestro(canto.title || "");
         const s = limpiarTextoMaestro(canto.subtitle || "");
         const c = limpiarTextoMaestro(canto.content || "");
 
-        // Creamos los bloques de búsqueda
         const poolConEspacios = `${t} ${s} ${c}`;
         const poolSinEspacios = poolConEspacios.replace(/\s/g, "");
 
-        // REGLA DE ORO: Debe ser secuencial
-        // Caso A: Aparece la frase con espacios originales
+        // Reglas de coincidencia
         const coincideNormal = poolConEspacios.includes(fraseNormal);
-        
-        // Caso B: Aparece la frase pegada (letoco -> le toco)
-        // Pedimos mínimo 3 letras para el modo pegado para evitar falsos positivos
         const coincidePegado = frasePegada.length > 2 && poolSinEspacios.includes(frasePegada);
 
+        // Aquí está la lógica que necesitabas
         return coincideNormal || coincidePegado;
     });
 }
 
-// ==========================================================
-// Renderizado de resultados - CORREGIDO para PDF y Prontuario
-// ==========================================================
-
-/* **************************************************
-   MOTOR DE BÚSQUEDA SECUENCIAL - Edición David (Final)
-************************************************** */
-
-document.getElementById(inputID)?.addEventListener('input', function(e) {
-    const valorInput = e.target.value;
-    const resultadosDiv = document.getElementById('resultadosBusqueda');
-
-    if (!resultadosDiv) return;
-
-    if (valorInput.trim().length < 1) {
-        resultadosDiv.style.display = 'none';
-        resultadosDiv.innerHTML = '';
-        return;
-    }
-
-    const busquedaLimpia = limpiarTextoMaestro(valorInput);
-    const busquedaPegada = busquedaLimpia.replace(/\s/g, "");
-    const resultados = filtrarCantosUltra(busquedaLimpia, busquedaPegada);
-
-    mostrarResultadosFinal(resultados);
-});
-
-function limpiarTextoMaestro(texto) {
-    if (!texto) return "";
-    return texto.toString().toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
-        .trim();
-}
-
-function filtrarCantosUltra(fraseNormal, frasePegada) {
-    if (typeof songs === 'undefined') return [];
-    return songs.filter(canto => {
-        if (canto.visible === "no") return false;
-        const t = limpiarTextoMaestro(canto.title || "");
-        const s = limpiarTextoMaestro(canto.subtitle || "");
-        const c = limpiarTextoMaestro(canto.content || "");
-        const poolConEspacios = `${t} ${s} ${c}`;
-        const poolSinEspacios = poolConEspacios.replace(/\s/g, "");
-        return poolConEspacios.includes(fraseNormal) || (frasePegada.length > 2 && poolSinEspacios.includes(frasePegada));
-    });
-}
-
-// ==========================================================
-// RENDERIZADO - LA SOLUCIÓN LIMPIA
-// ==========================================================
+/**
+ * Renderizado de resultados
+ */
 function mostrarResultadosFinal(resultados) {
     const contenedor = document.getElementById('resultadosBusqueda');
     if (!contenedor) return;
@@ -149,12 +92,8 @@ function mostrarResultadosFinal(resultados) {
         item.className = 'resultado-item';
         item.style.display = "block";
         item.style.textDecoration = "none";
-        //item.style.color = "inherit";     // Esto no conviene, no deja ver el color del canto en la busqueda
-        
-        // El navegador usa el href directamente
         item.href = canto.url;
 
-        // Si en songs-data.js dice targetBlank: true, el navegador abre pestaña nueva solo
         if (canto.targetBlank === true || canto.targetBlank === "true") {
             item.target = "_blank";
             item.rel = "noopener noreferrer";
@@ -162,15 +101,7 @@ function mostrarResultadosFinal(resultados) {
             item.target = "_self";
         }
 
-        item.innerHTML = `
-            <strong>${canto.title}</strong>
-            <br>
-            <small>${canto.subtitle || ""}</small>
-        `;
-
-        // SIN ONCLICK, SIN PREVENTDEFAULT. 
-        // Dejamos que el navegador haga su trabajo natural.
-        
+        item.innerHTML = `<strong>${canto.title}</strong><br><small>${canto.subtitle || ""}</small>`;
         mainResults.appendChild(item);
     });
 
@@ -178,10 +109,11 @@ function mostrarResultadosFinal(resultados) {
     contenedor.style.display = 'block';
 }
 
-    document.addEventListener('click', function(e) {
-        const contenedorBuscador = document.querySelector('.buscador-cantos') || document.querySelector('.search-container');
-        const res = document.getElementById('resultadosBusqueda');
-        if (res && contenedorBuscador && !contenedorBuscador.contains(e.target)) {
-            res.style.display = 'none';
-        }
+// Cerrar resultados al hacer clic fuera
+document.addEventListener('click', function(e) {
+    const contenedorBuscador = document.querySelector('.buscador-cantos') || document.querySelector('.search-container');
+    const res = document.getElementById('resultadosBusqueda');
+    if (res && contenedorBuscador && !contenedorBuscador.contains(e.target)) {
+        res.style.display = 'none';
+    }
 });
