@@ -183,29 +183,22 @@ window.tabsConfig = [
 
             { 
                 id: 'global-set-autohide',
-                label: 'Auto-Ocultar Barra de navegación (30s)', 
+                label: 'Auto ocultar navegación luego de (30s)', 
                 tipo: 'switch',
                 storageKey: 'pref-autohide-nav',
                 default: false,
                 accion: (val) => {
-                    // 1. Guardamos el estado
+                    // 1. Guardamos el estado localmente
                     localStorage.setItem('pref-autohide-nav', val);
                     
-                    // 2. LOG: Informamos del cambio y el tiempo (30s)
-                    const tiempoEspera = 30;
-                    console.log(val 
-                        ? `✅ Auto-ocultar: ACTIVADO. Tiempo de espera: ${tiempoEspera}s` 
-                        : "❌ Auto-ocultar: DESACTIVADO"
-                    );
-
-                    // 3. Lógica del timer
+                    // 2. Lógica visual: Si se activa, iniciamos el timer. Si se apaga, lo detenemos.
                     if (val) {
                         startAutoHideTimer();
                     } else {
                         clearTimeout(autoHideTimer);
                     }
 
-                    // 4. Sincronización con Firebase
+                    // 3. Sincronizamos con la nube (Firebase)
                     if (typeof window.guardarPreferenciasGlobales === 'function') {
                         window.guardarPreferenciasGlobales();
                     }
@@ -297,7 +290,7 @@ window.tabsConfig = [
                 },
                 {
                     id: 'set-expandir-canto',
-                    label: 'Expandir todo por defecto', 
+                    label: 'Expandir Todo por Defecto', 
                     tipo: 'switch', 
                     storageKey: 'pref-expandir-todo',
                     default: false,

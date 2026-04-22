@@ -76,19 +76,25 @@ onAuthStateChanged(auth, (user) => {
 
         // Escucha de listas (Firestore)
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
-        onSnapshot(q, (snapshot) => {
-            if (bloqueoSnapshot) return; 
-            if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
-            
-            snapshotActual = snapshot;
-            listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-            renderizarListasUI(listasLocalesCache);
-            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+            onSnapshot(q, (snapshot) => {
+                if (bloqueoSnapshot) return; 
+                if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
+                
+                snapshotActual = snapshot;
+                
+                // CAMBIO AQUÍ: Agregamos el origin: 'cloud' al mapear los datos de Firebase
+                listasLocalesCache = snapshot.docs.map(doc => ({ 
+                    id: doc.id, 
+                    ...doc.data(), 
+                    origin: 'cloud' 
+                }));
 
-            // ✅ AVISO A SETTINGS: Datos de la nube listos
-            window._uiYaSincronizada = true; 
-            console.log("✅ Listas sincronizadas");
-        });
+                renderizarListasUI(listasLocalesCache);
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+
+                window._uiYaSincronizada = true; 
+                console.log("✅ Listas sincronizadas");
+            });
 
         // ❌ BORRADO: Ya no llamamos detectarLinkCompartido() aquí dentro
 
@@ -113,35 +119,33 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
+// *******************************************************************
 // --- 4. FUNCIONES DE RENDERIZADO ---
+// 1. Modificamos la creación de tarjeta para que acepte el icono
+// *******************************************************************
+
 function crearTarjetaLista(idLista, data, contenedor) {
+    if (!data) return;
     const ids = data.ids_cantos || [];
-    const nombreEscapado = data.nombre.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+    const nombre = data.nombre || "Sin nombre";
+    const nombreEscapado = nombre.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+    
+    const esNube = data.origin === 'cloud';
+    const icono = esNube ? '☁️' : '🏠';
+    
     const div = document.createElement('div');
     div.className = 'tarjeta-lista-wrapper';
     div.innerHTML = `
         <div class="tarjeta-lista" onclick="window.toggleDetalleLista('${idLista}')">
-            <div class="info-lista"><strong>${data.nombre}</strong><span>${ids.length} cantos</span></div>
+            <div class="info-lista">
+                <strong>${nombre}</strong>
+                <span style="margin-left: 8px; font-size: 0.9em;">${icono}</span>
+                <span>${ids.length} cantos</span>
+            </div>
             <div class="acciones-lista" onclick="event.stopPropagation()">
-                <button class="btn-icono share-universal" onclick="window.compartirUniversal('${idLista}')" title="Compartir">
-                    <span class="material-symbols-outlined">share</span>
-                </button>
-                
-                <button class="btn-icono link" onclick="window.copiarSoloLink('${idLista}')" title="Copiar enlace">
-                    <span class="material-symbols-outlined">link</span>
-                </button>
-
-                <button class="btn-icono export" onclick="window.exportarLista('${idLista}')" title="Descargar archivo">
-                    <span class="material-symbols-outlined">download</span>
-                </button>
-
-                <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')">
-                    <span class="material-symbols-outlined">edit</span>
-                </button>
-
-                <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')">
-                    <span class="material-symbols-outlined">delete</span>
-                </button>
+                <button class="btn-icono share-universal" onclick="window.compartirUniversal('${idLista}')" title="Compartir"><span class="material-symbols-outlined">share</span></button>
+                <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')"><span class="material-symbols-outlined">edit</span></button>
+                <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')"><span class="material-symbols-outlined">delete</span></button>
             </div>
         </div>
         <div id="detalle-${idLista}" class="detalle-lista-cantos cfg-close"></div>
@@ -149,10 +153,19 @@ function crearTarjetaLista(idLista, data, contenedor) {
     contenedor.appendChild(div);
 }
 
+
+
+// 2. Modificamos el renderizado para que asigne el icono correcto
 function renderizarListasUI(listas) {
     const contenedor = document.getElementById('lista-colecciones');
-    if (!contenedor) return;
-    if (listas.length === 0) {
+    if (!contenedor) {
+        console.error("❌ Error: Contenedor 'lista-colecciones' no encontrado en el DOM.");
+        return;
+    }
+    
+    console.log(`🔄 Renderizando UI: ${listas ? listas.length : 0} listas encontradas.`);
+
+    if (!listas || listas.length === 0) {
         contenedor.innerHTML = `
             <div class="status-msg-vacia">
                 <p>No hay listas creadas.</p>
@@ -161,7 +174,34 @@ function renderizarListasUI(listas) {
     } else {
         contenedor.innerHTML = '';
         listas.forEach(l => crearTarjetaLista(l.id, l, contenedor));
+        console.log("✅ Renderizado completado.");
     }
+}
+
+
+
+// Nueva versión de la tarjeta que acepta el icono
+function crearTarjetaListaPersonalizada(idLista, data, contenedor, icono) {
+    const ids = data.ids_cantos || [];
+    const nombreEscapado = data.nombre.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+    const div = document.createElement('div');
+    div.className = 'tarjeta-lista-wrapper';
+    div.innerHTML = `
+        <div class="tarjeta-lista" onclick="window.toggleDetalleLista('${idLista}')">
+            <div class="info-lista">
+                <strong>${data.nombre}</strong> 
+                <span style="margin-left: 8px;">${icono}</span>
+                <span>${ids.length} cantos</span>
+            </div>
+            <div class="acciones-lista" onclick="event.stopPropagation()">
+                <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
+            </div>
+        </div>
+        <div id="detalle-${idLista}" class="detalle-lista-cantos cfg-close"></div>
+    `;
+    contenedor.appendChild(div);
 }
 
 function renderizarLista(lista) {
@@ -342,56 +382,72 @@ function actualizarInterfazSeleccion() {
 }
 
 window.guardarListaFirebase = async () => {
-    const nombre = document.getElementById('nombreLista').value.trim();
-    const user = auth.currentUser;
-    if (!nombre || listaOrdenada.length === 0) return alert("Faltan datos.");
+    const nombre = document.getElementById('nombreLista').value.trim();
+    const user = auth.currentUser;
+    if (!nombre || listaOrdenada.length === 0) return alert("Faltan datos.");
 
-    const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
-    const nuevaLista = { id: listaId, nombre, ids_cantos: [...listaOrdenada], ultimaActualizacion: new Date().toISOString() };
+    const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
+    
+    // VALIDACIÓN: Evitar sobrescribir sin permiso
+    let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+    const existe = cache.find(l => l.id === listaId);
 
-    // 1. Guardado Local (Instantáneo)
-    let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
-    const idx = cache.findIndex(l => l.id === listaId);
-    idx !== -1 ? cache[idx] = nuevaLista : cache.unshift(nuevaLista);
-    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+    if (existe) {
+        alert("⚠️ Ya existe una lista con este nombre. Cambia el nombre para crear una nueva.");
+        return;
+    }
 
-    // 2. REFRESH VISUAL RÁPIDO (En lugar de location.reload())
-    // Asumiendo que tienes una función que dibuja las listas en tu HTML
-    if (typeof window.renderizarListas === 'function') {
-        window.renderizarListas(); 
-    } else {
-        console.warn("Necesitas una función renderizarListas() para actualizar sin recargar");
-    }
+    const nuevaLista = { 
+        id: listaId, 
+        nombre, 
+        ids_cantos: [...listaOrdenada], 
+        ultimaActualizacion: new Date().toISOString(),
+        origin: 'local' // Marcador inicial
+    };
 
-    // 3. Sincronización en segundo plano (No usamos await para no bloquear la UI)
-    if (user) {
-        setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { 
-            ...nuevaLista, 
-            ultimaActualizacion: serverTimestamp() 
-        })
-        .then(() => console.log("Sincronización a la nube exitosa"))
-        .catch(e => console.warn("Offline, se guardó solo localmente."));
-    }
+    // 1. Guardar local
+    cache.unshift(nuevaLista);
+    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+    
+    // ACTUALIZAR UI MANUALMENTE
+    renderizarListasUI(cache);
 
-    // Opcional: Feedback visual suave (tipo Toast) en lugar de una alerta bloqueante
-    console.log("Lista guardada exitosamente.");
-
-    // Feedback suave
-        const btnGuardar = document.querySelector('.btn-accion');
-        const textoOriginal = btnGuardar.innerHTML;
-        btnGuardar.innerHTML = "✅ Guardado";
-        setTimeout(() => btnGuardar.innerHTML = textoOriginal, 2000);
+    // 2. Guardar en nube
+    if (user) {
+        try {
+            await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { 
+                ...nuevaLista, 
+                origin: 'cloud', // Al subir, marcamos como nube
+                ultimaActualizacion: serverTimestamp() 
+            });
+            console.log("Sincronización a la nube exitosa");
+            
+            // Opcional: Actualizar el cache local a 'cloud' tras el éxito
+            const cacheActualizado = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+            const index = cacheActualizado.findIndex(l => l.id === listaId);
+            if(index !== -1) {
+                cacheActualizado[index].origin = 'cloud';
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cacheActualizado));
+                renderizarListasUI(cacheActualizado); // Refrescar icono 🏠 -> ☁️
+            }
+        } catch (e) { console.warn("Offline."); }
+    }
 };
+
 
 window.eliminarLista = async (idLista, nombreLista) => {
-    if (confirm(`¿Eliminar "${nombreLista}"?`)) {
-        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
-        cache = cache.filter(l => l.id !== idLista);
-        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-        if (auth.currentUser) await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
-        location.reload();
-    }
+    if (confirm(`¿Eliminar "${nombreLista}"?`)) {
+        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+        cache = cache.filter(l => l.id !== idLista);
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+        
+        if (auth.currentUser) await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
+        
+        // ACTUALIZACIÓN MANUAL
+        renderizarListasUI(cache);
+    }
 };
+
 
 // --- 7. SISTEMA DE COMPARTIR ---
 
@@ -509,7 +565,28 @@ window.importarLista = (event) => {
                     ultimaActualizacion: serverTimestamp() 
                 });
             }
-            location.reload();
+
+            // cambiado por el codigo de abajo
+            //              location.reload();
+
+                        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+            cache.unshift(l);
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+
+            // 2. AHORA: Refresca la vista (esto es lo que pedías poner)
+            renderizarListasUI(cache); 
+
+            // 3. Guardar en nube si aplica
+            if (auth.currentUser) {
+                await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { 
+                    ...l, 
+                    origin: 'cloud', // IMPORTANTE: Marca como nube al subir
+                    ultimaActualizacion: serverTimestamp() 
+                });
+            }
+
+
+
         } catch (err) { alert("Archivo no válido."); }
     };
     reader.readAsText(archivo);

@@ -349,38 +349,17 @@ window.guardarListaFirebase = async () => {
     const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
     const nuevaLista = { id: listaId, nombre, ids_cantos: [...listaOrdenada], ultimaActualizacion: new Date().toISOString() };
 
-    // 1. Guardado Local (Instantáneo)
     let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
     const idx = cache.findIndex(l => l.id === listaId);
     idx !== -1 ? cache[idx] = nuevaLista : cache.unshift(nuevaLista);
     localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
 
-    // 2. REFRESH VISUAL RÁPIDO (En lugar de location.reload())
-    // Asumiendo que tienes una función que dibuja las listas en tu HTML
-    if (typeof window.renderizarListas === 'function') {
-        window.renderizarListas(); 
-    } else {
-        console.warn("Necesitas una función renderizarListas() para actualizar sin recargar");
-    }
-
-    // 3. Sincronización en segundo plano (No usamos await para no bloquear la UI)
     if (user) {
-        setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { 
-            ...nuevaLista, 
-            ultimaActualizacion: serverTimestamp() 
-        })
-        .then(() => console.log("Sincronización a la nube exitosa"))
-        .catch(e => console.warn("Offline, se guardó solo localmente."));
+        try { 
+            await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { ...nuevaLista, ultimaActualizacion: serverTimestamp() }); 
+        } catch (e) { console.warn("Offline."); }
     }
-
-    // Opcional: Feedback visual suave (tipo Toast) en lugar de una alerta bloqueante
-    console.log("Lista guardada exitosamente.");
-
-    // Feedback suave
-        const btnGuardar = document.querySelector('.btn-accion');
-        const textoOriginal = btnGuardar.innerHTML;
-        btnGuardar.innerHTML = "✅ Guardado";
-        setTimeout(() => btnGuardar.innerHTML = textoOriginal, 2000);
+    location.reload(); 
 };
 
 window.eliminarLista = async (idLista, nombreLista) => {

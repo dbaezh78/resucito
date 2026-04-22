@@ -210,6 +210,9 @@ export async function guardarPreferenciasGlobales() {
         
         // La nueva llave que estamos añadiendo:
         "pref-expandir-todo": localStorage.getItem('pref-expandir-todo') === 'true',
+
+        // Función para guardar los 30 segundos para que se oculte el navegador
+        "pref-autohide-nav": localStorage.getItem('pref-autohide-nav') === 'true',
         
         // Otros ajustes:
         "pref-lang": localStorage.getItem('pref-lang') || 'Español',

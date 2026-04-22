@@ -1044,7 +1044,7 @@ function actualizarVistaCalendario() {
                 
                 <div style="margin-top:20px; border-top: 1px solid #eee; padding-top:15px;">
                     <p style="margin:0; font-size:13px; color:#444;">
-                        Has usado este canto 
+                        Has cambiado el Acordes o Cejilla 
                         <span onclick="abrirListaDetallada()" style="color:#bc0009; font-weight:bold; font-size:18px; cursor:pointer; text-decoration:underline;">
                             ${totalRegistrosCanto}
                         </span> veces
@@ -1620,7 +1620,7 @@ const SECCIONES_CONTROLES = [
         titulo: "Preferencia del sistema",
         controles: [
             { id: 'control-oscuro',     label: 'Modo Oscuro',               originalId: 'global-set-dark' },
-            { id: 'btn-limpiar',        label: 'Limpiar Caché y Sesión',    accion: () => ejecutarLimpiezaProfunda() }
+            { id: 'btn-limpiar',        label: 'Limpiar Caché y Cerrar Sesión',    accion: () => ejecutarLimpiezaProfunda() }
         ]
     }
 ];

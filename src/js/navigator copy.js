@@ -221,7 +221,7 @@ function abrirModalConfiguracion() {
             <div class="settings-header">
                 <h2>
                     <span class="material-symbols-outlined" style="color:#bc0009">settings</span>
-                    Configuraciones / Ajustes / Settings
+                    Configuración
                 </h2>
                 <button onclick="cerrarModalConfiguracion()" class="btn-close-settings">
                     <span class="material-symbols-outlined close">close</span>
@@ -376,35 +376,8 @@ function cerrarModalConfiguracion() {
 })();
 
 // =============================================================
-// Variable para el temporizador
 // Funcion de Ocultar y Mostrar
 // =============================================================
-let autoHideTimer;
-
-function startAutoHideTimer() {
-    const isEnabled = localStorage.getItem('pref-autohide-nav') === 'true';
-    if (!isEnabled) return;
-
-    // Reiniciamos el contador
-    clearTimeout(autoHideTimer);
-    
-    // Opcional: Solo descomenta el log de abajo si quieres ver cuándo se reinicia el contador al mover el mouse/scroll
-    // console.log("🔄 Contador de auto-ocultar reiniciado (30s)...");
-    
-    autoHideTimer = setTimeout(() => {
-        const wrapper = document.getElementById('nav-wrapper');
-        if (wrapper && !wrapper.classList.contains('hidden')) {
-            console.log("⏱️ Tiempo cumplido (30s): Ocultando navegación.");
-            toggleNavbar();
-        }
-    }, 30000); 
-}
-
-// Escuchamos actividad del usuario para reiniciar el contador
-document.addEventListener('mousemove', startAutoHideTimer);
-document.addEventListener('touchstart', startAutoHideTimer);
-document.addEventListener('scroll', startAutoHideTimer);
-
 function toggleNavbar() {
     const wrapper = document.getElementById('nav-wrapper');
     const icon = document.getElementById('toggle-icon');

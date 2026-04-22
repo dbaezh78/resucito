@@ -24,26 +24,27 @@ Cantos de Entrada
 Cantos de Paz
 y demas filtros.
 
-luego tenemos dos enlace uno con el libro de cantos en pdf 2024 y otro con una herramiento que mide la pantalla.
+Luego tenemos dos enlace uno con el libro de cantos en pdf 2024 y otro con una herramiento que mide la pantalla.
 actualmente la aplicación está hecha para tres pantallas
 384px que son los celulares
 768px que son las tables
 992px que son los ordenadores o laptop
 
-Para busdar en el campo de busqueda tenemos varias opciones.
-1- puedes buscar por el nombre del canto
-2- puedes buscar con el nombre del canto sin espacio
-3- puedes buscar con el contenido del canto, les perse y eso nos muestra el canto de moises.
-4- puedes buscar con la cita o subtitulo del canto, como "secuencia de " y buscará lo que inicie con ese conjunto de palabra.
-5- En el lado derecho que está el reciclaje puedes darle y limpiará la busqueda, tambien puedes darle tres toques y la limpiará la busqueda.
++ Para busdar en el campo de busqueda tenemos varias opciones.
+	1- puedes buscar por el nombre del canto
+	2- puedes buscar con el nombre del canto sin espacio
+	3- puedes buscar con el contenido del canto, les perse y eso nos muestra el canto de moises.
+	4- puedes buscar con la cita o subtitulo del canto, como "secuencia de " y buscará lo que inicie con ese conjunto de palabra.
+	5- En el lado derecho que está el reciclaje puedes darle y limpiará la busqueda, tambien puedes darle tres toques y la limpiará la busqueda.
 
-6- luego tenemos una cinta de navegación situada en la parte de abajo de la aplicación, la misma se oculta en un boton que se encuentra a la deracha, se oculta y se muestra en el mismo boton.
++ Área de Navegación
+	1- Aqui tenemos una barra barra de navegación situada en la parte de abajo de la aplicación, la misma se oculta en un boton que se encuentra a la deracha, se oculta y se muestra en el mismo boton, la misma puede habilitarse por defecto para que se oculte en 30 segundo llendo a AJUSTES > Auto ocultar navegación luego de (30s) 30 segundos., una vez habilitada esta opción se ocultará automaticamente, guardando la opcion en la cuenta de google.
 
-7- luego tenemos el boton de inicio, que nos lleva al indice del canto.
+	2- Continuamos con el boton de inicio, que nos lleva al indice del canto.
 
-8- seguimos con el menu, que nos mostrará las opciones que hemos trabajado hasta ahora, contenido de youtube, de facebook, como un canal, Laudes que es una pagina con la liturgia de las horas, donde tambien está el evangelio del dia y en las lecturas del oficio de las horas puedes escuchar las lecturas 1 y 2 segun el año. luego tenemos evangelio del dia que nos muestra el evangelio de cada dia con el padre Eugenio Fernandez, el domingo aun está en desarrollo.
+	3- Seguimos con el menu, que contiene las herramientas que hemos trabajado hasta ahora, como el contenido que subiremos a youtube, a facebook, como un canal, Liturgia de las horas (Laudes), donde tambien está el evangelio del dia y en las lecturas del oficio de las horas puedes escuchar las lecturas 1 y 2 segun el año. Luego tenemos le herramienta de evangelio del dia que nos muestra el evangelio de cada dia con el padre Eugenio Fernandez, el domingo aun está en desarrollo.
 
-9- Luego seguimos con NeoCate "Camino Neocatecumenal", mostrando primero la pagina oficial del camino con la noticias, seguimos con cantos del camino, resucito.es, con los cantos digitales del camino, seguimos con comunidades que es un grupo de facebook con mas de 27mil miembros, luego con el grupo de cantores del camino, con mas de 8300 seguidores, luego tenemos la pagina de Carmen, con su biografia, otras informaciónes relacionadas con carmen, luego tenemos una breve biografia de Kiko Argüello, seguida con la del padre Mario y finalizando con la biogracia de Maria Ascensión.
+	3- Luego seguimos con NeoCate "Camino Neocatecumenal", mostrando primero la pagina oficial del camino con la noticias, seguimos con cantos del camino, resucito.es, con los cantos digitales del camino, seguimos con comunidades que es un grupo de facebook con mas de 27mil miembros, luego con el grupo de cantores del camino, con mas de 8300 seguidores, luego tenemos la pagina de Carmen, con su biografia, otras informaciónes relacionadas con carmen, luego tenemos una breve biografia de Kiko Argüello, seguida con la del padre Mario y finalizando con la biogracia de Maria Ascensión.
 
 +Resucito
 Ahora seguimos con la parte de resucito, 
@@ -57,7 +58,7 @@ donde tenemos de arriba para abajo las siguientes funciones.
 	+ Luego seguimos con caquesis, la cual actualmente está en desarrollo y busca mostrar la catequesis del canto dada por kiko en las diferentes catequesis a traves de los años., 
 	+ Luego tenemos el boton de Instalar App, en la cual puedes tener el libro de canto virtual en una app en tu equipo y gestionar el modo offline
 
-10- seguimos con ajustes, aqui encontramos 4 pestañas, 
++ Seguimos con ajustes, aqui encontramos 4 pestañas, 
 	+ La primera general.
 		+ General tiene la primera opcion que está actualmente en desarrollo, con el idioma del canto, con el deseo de ponerlo en diferentes idiomas.
 		+ La opcion de Mantener la pantalla encendida, si habilitas esa función y estas en una celular o una table y la misma se apaga en un minuto, como es mi caso, puedes habilitarlo y mientras estes en la aplicación, la pantalla no se oscurecerá.
@@ -65,10 +66,12 @@ donde tenemos de arriba para abajo las siguientes funciones.
 		+ Limpiar cache y datos, a traves del desarrollo de la aplicación como la misma guarda todo el contenido offline, se vio necesario crear esta función para actualizar la pagina elimando datos viejos y que asuma los nuevos cambios o actualizaciones.
 
 		+ Luego tenemos limpiar ajustes. que limpia archivos de sistema con los que el navegador se queda, que son archivos un poco mas profundos propio de la configuracion y el navegador.
+		
+		+ Continuamos con Auto-Ocultar Barra de Navegación (30s)
 
 	+ La segunda pestaña CANTO, que contiene algunas opciones referentes al canto, estas opciones solo son funcionales dentro de los cantos.
 		
-	+ La primera opcion tenemos una funcion propia de la programación y que solo es permita a mi usuario.
+	+ La primera opcion tenemos una funcion propia de la programación y que solo es permitida para mi usuario de desarrollador.
 	
 	+ Seguimos con expandir todo por defecto, los cantos como sabemos tienen partes que son de la asamblea y que están contraidas, esta opcion pone por defecto que se contraiga o que se expanda.
 	
@@ -78,14 +81,14 @@ donde tenemos de arriba para abajo las siguientes funciones.
 	
 	+ Luego podemos ponerle un enlace a la nota persona, ya sea un video de youtube o cualquier url orientada al a nota personal o como quieran.
 	
-+ Luego seguimos con Tema.
++ Continuamos con la pestaña de Tema.
 	
 	+ Esta es la sección de cambiar ciertas fuentes y colores.
 		+ Tenemos la opcion de ponenrlo en modo oscuro.
 		+ El tamaño de la fuente, 
 		+ El color del texto de cabecera, el cual aun está en desarrollo, esperemos tenerlo listo muy pronto.
 
-+ Luego seguimos la seccion de perfil
++ Luego seguimos la seccion de PERFIL
 	+ En el cual tenemos varias opciones propias del perfil del usuario. si habilitamos cada uno de estas opciones, pondrá por defecto su funcion.
 
 	+ Sincronizacion con la nube, está habilita o deshabilita la sincronizacion con la nube la cual para sincronizar con la nube deberia estár habilitada.
@@ -93,40 +96,114 @@ donde tenemos de arriba para abajo las siguientes funciones.
 	- Sincronización automatica. nos ayuda a que el sistema se mantenga sincronizado con la nube.
 
 
-+ Luego de AJUSTES tenemos entrar/Salir la cual, cuando hemos iniciado seccion con google nos muestra el usuario el perfil o imagen del usuario de google.
++ Para salir de los Ajustes presionamos en la X o fuera del cuadro de Ajuste.
 
++ Luego de AJUSTES tenemos entrar/Salir la cual, cuando hemos iniciado seccion con google nos muestra el perfil del usuario que tenemos en google.
 
-Ahora vamos a inicio y revisar todas las funciones.
-+ 
++ Ahora vamos a inicio y revisar todas las funciones.
 
-ya hemos dado una pincelana superficial de lo que tiene la aplicacion, ahora vamos a mencionar todo y el modo de uso, pero mas rapido.
+- ya hemos dado una pincelana superficial de lo que tiene la aplicacion, ahora vamos a hablar del modo de uso.
 
-si entramos a un canto como, A nadie demos ocasión de tropiezo.
++ Si entramos a un canto como, A nadie demos ocasión de tropiezo.
 
-+ En la parte superior vemos una cinta roja iniciando con un boton de volver atras, la cual nos lleva a la pagina anterior.
+	+ En la parte superior vemos una cinta roja iniciando con un boton de volver atras, la cual nos lleva a la pagina de inicio y cuando estamos en Gestion de lista, pues nos lleva desde el canto hacia allá.
 
-+ continua con el acorde original del canto y este no se cambia.
+	+ Sigue el acorde original del canto, este valor es informativo y no se cambia.
 
-+ seguimos con la cejilla, la cual puede estar en un traste o en ninguno, y como en este canto, no lleva traste, puede ser colocado por el cantor, por lo que despues del acorte del canto va la posición de la cejilla, luego viene una barra que divide la cejilla original con la cejilla que el cantor puede usar, la cual va desde 0 hasta el octavo traste.
+	+ seguimos con la cejilla, la cual puede estar en un traste o en ninguno, y como en este canto, no lleva traste, puede ser colocado por el cantor, por lo que despues del acorte del canto va la posición de la cejilla, luego viene una barra que divide la cejilla original con la cejilla que el cantor puede usar, la cual va desde 0 hasta el 8vo traste.
 
-+ Luego seguimos con un icono que es un simbolo musical, la cual muestra el prontuario y salmodias que tienen los cantos del libro y las salmodias.
+	+ Luego seguimos con un icono que es un simbolo musical, la cual muestra el prontuario y salmodias que tienen los cantos del libro y las salmodias.
 
-+ Luego vemos un libro que tiene una pagina escrita y otra no, la cual para laptop y ordenadores, puede ayudarlo a dividir las dos columnas del canto, para los celulares y tables, esto no aplica, ya que viene ya dividida debajo el derecho del izquierdo.
+	+ Luego vemos un libro que tiene una pagina escrita y otra no, la cual para laptop y ordenadores, puede ayudarlo a dividir las dos columnas del canto, para los celulares y tables, esto no aplica, ya que viene ya dividida debajo el derecho del izquierdo.
 
-+ Continuamos con el icono que parece un ojo, este ojo es para mostrar u ocultar la parte de la asamblea, la cual viene por defecto contraida y se puede poner por defecto en el usuario de cuada cuenta por defectop expandida.
-para ver esa parte nos vamos a ajuste > cantos > Expandir todo por defecto y una vez activado asi se queda en el dispositivo y se guarda a la nube.
+	+ Continuamos con el icono que parece un ojo, este ojo es para mostrar u ocultar la parte de la asamblea, la cual viene por defecto contraida y se puede poner por defecto en el usuario de cuada cuenta por defectop expandida.
+	para ver esa parte nos vamos a ajuste > cantos > Expandir todo por defecto y una vez activado asi se queda en el dispositivo y se guarda a la nube.
 
-+ Continuamos con el reproductor, este icono con una fecha dentro del circulo, la cual contiene el canto con mejor calidad y más fiel que hemos encontrado en su mayoria Kiko Argüello.
+	+ Continuamos con el reproductor, este icono con una fecha dentro del circulo, la cual contiene el canto con mejor calidad y más fiel que hemos encontrado en su mayoria Kiko Argüello.
 
-+ Luego seguimos con el icono de desplazamiento lento, este icono  cuando estamos en el celular o en la table, nos va desplazando lentamente o segun la velocidad que le configuremos, las misma la podemos realizar en AJUSTES > CANTO > DESPLAZAMIENTO CANTO E INCREMENTO SCROLL.
+	+ Luego seguimos con el icono de desplazamiento lento, este icono  cuando estamos en el celular o en la table, nos va desplazando lentamente o segun la velocidad que le configuremos, las misma la podemos realizar en AJUSTES > CANTO > DESPLAZAMIENTO CANTO E INCREMENTO SCROLL.
 
-	+ Con desplazamiento canto podemos controlar la velocidad que lleva el canto desde 1 hasta 40.
-	+ Con incremento scroll controlamos los bloques es pixeles como sube el canto, el cual va de 1 al 15, en 1 será igual a un bloque de 1 px y en 15 será igual a 15px, un px es un pixel equivalente menos de 0.03 cm y 15px igual a 0.4 cm, para que tengan una idea del bloque de desplazamiento y puedan sacarle provecho en cada canto, ya que es una información independiente de cada canto.
+		+ Con desplazamiento canto podemos controlar la velocidad que lleva el canto desde 1 hasta 40.
+		+ Con incremento scroll controlamos los bloques es pixeles como sube el canto, el cual va de 1 al 15, en 1 será igual a un bloque de 1 px y en 15 será igual a 15px, un px es un pixel equivalente menos de 0.03 cm y 15px igual a 0.4 cm, para que tengan una idea del bloque de desplazamiento y puedan sacarle provecho en cada canto, ya que es una información independiente de cada canto.
+		
+	+ Luego continuamos con la fecha de la derecha y la de la izquierda, la cual nos lleva a canto anterior y al canto siguiente, segun el orden de las etapas y los cantos liturgicos.
+
+	+ Luego tenemos el campo de buscar, donde como en el indice aqui tambien podemos buscar cualquier canto y aclamación previa al evangelio, ya sea con el nombre del canto con y sin espacio y con el contenido del canto con y sin espacio, 
+		+ Si vamos a buscar una aclamación previa al evangelio, o conocido como Aleluya Interleccional, lo podemos hacer poniendo a1a, eso sería Adviento semana 1 año A = a1a, o c1a = Cuaresma Semana 1 Año A.
+
+	+ El icono de Cristo que está al principio del canto si precionamos sobre el, refrescará la página, en caso de ser necesario.
+
+	+ Luego vemos el nombre del canto, y tu cita o referencia del canto.
 	
-+ Luego continuamos con la fecha de la derecha y la de la izquierda, la cual nos lleva a canto anterior y al canto siguiente, segun el orden de las etapas y los cantos liturgicos.
+	+ Luego vemos el contenido del canto, dividido en dos columnas en la mayoria de los cantos, si nos fijamos en rojo está el acorde correspondiente a cada parte del canto, pues este acorde contiene la función de poder cambiar el traste a cualquier otro traste basico, desde cualquier acorde que contiene el canto en su contenido.
+	
+	+ Seguimos con la parte de la asamblea, donde podemos expandir o contraer el texto que le corresponde llevar a la asamblea, con la finalidad de mostrar los acorde y el contenido que le corresponde llevar la asamblea, esto lo podemos hacer uno a uno con las partes de las asambleas o podemos darle al ojo que está arriba que lo hará todo junto. En > AJUSTES en la parte de > CANTO tenemos esta opción llamada "Expandir todo por defecto" que establece por defecto la opcion de expandir toda la parte de la asamblea por defecto en todos los cantos, la cual se guarda en la cuenta y aplica a todos los dispositivos donde esté la cuenta.
+	
+	+ Luego continuamos con notas personales.
+		- Las notas personales: Esta opción puede ser muy util para poner una nota al canto y una url, con la finalidad de buscar un canto en youtube, un pdf en la web y otras URL que el cantor desee.
+		- Para ello, podemos irnos a > AJUSTES > CANTO
+		- Debajo encontraremos la opción de Nota personal del Cantor, donde podemos poner cualquier comentario
+		- y debajo encontramos Agregar URL a la nota personal del canto, donde podemos poner la url que necesitamos, la URL puede ser simple o compuesta, me explico, puedes poner youtube.com/watch?v=XuqRrcDWxxg o puedes poner la url completa copiada desde cualquier navegador: https://www.youtube.com/watch?v=XuqRrcDWxxg
+		
+	
+	+ Luego al final del canto, entontramos unos filtros, si nos vamos al canto: A nadie demos ocasión de tropiezo, y nos vamos al final vemos algunos filtros como: "Precatecumenado", "Fracción del Pan", "Nuevo Testamento", si le damos sobre uno de esos filtros, nos llevará al INDICE haciendo un filtro con los cantos correspondientes a Fracción del Pan.
+	
+	+ Luego seguimos con una auto evaluación que nos podemos hacer representada por 5 estrellas, la misma lleva una puntución individual en cada canto.
+	
+Ahora nos vamos a Resucitó en la barra de navegación.
 
-+ Luego tenemos el campo de buscar, donde como en el indice aqui tambien podemos buscar cualquier canto y aclamación previa al evangelio, ya sea con el nombre del canto con y sin espacio y con el contenido del canto con y sin espacio, 
-	+ Si vamos a buscar una aclamación previa al evangelio, o conocido como Aleluya Interleccional, lo podemos hacer poniendo a1a, eso sería Adviento semana 1 año A = a1a, o c1a = Cuaresma Semana 1 Año A.
-
-+ El icono de Cristo que está al principio del canto si precionamos sobre el, refrescará la página, en caso de ser necesario.
-
+	+ En este menú de Resucitó vemos tres enlaces, 
+		+ El primero llamado Camino que nos lleva al INDICE.
+		+ Luego Mi canto es joven, que nos lleva a los cantos catolicos.
+		+ Luego Aclamación previo al Evangelica o Aleluya Interleccional, que nos lleva a los aclamaciones previa al evangelio.
+	
++ EN LAS FUNCIONES INICIAMOS CON PERFIL.
+	+ Continuamos con PERFIL: Si nos vamos a perfil, es necesario estár iniciado para poder usar esta parte del canto, ya que es donde se almacenan los datos con google y el seguimiento y uso de la aplicacion del canto con tu cuenta.
+	
+	+ al principio vemos.
+		+ Datos de perfil, Gestión de cantos, Configuración, Estado del sistem.
+		estaremos explicando cada uno, los mismos están contraidos por defecto.
+		
+			+ Datos de Perfil, donde tenemos.
+				- El nombre de la cuenta, con la que ha iniciado el hermano.
+				Luego tenemos otras opciones opcionales.
+				- Pais.
+				- Parroquia.
+				- Comunidad.
+				- Etapa en el camino.
+				y un boton de guardar para que se guarden los cambios.
+				
+			+ Gestión de Cantos, donde tenemos.
+				- Boton de: Sincronizar Nube: donde podemos sincronizar los datos de la nube con el dispositivo donde estemos iniciado.
+				- Luego tenemos el boton de: Usar Offline: que descarga todo el contenido de todos los cantos del camino.
+				
+				- Debajo tenemos un buscador donde podemos buscar los cantos por titulo y  contenido, y cuando escribimos aparece una x la cual podemos borrar la busqueda que hemos hecho.
+				
+				- Luego tenemos una cinta roja con la orientación de los cantos que podemos gestionar, tales como: Canto, Rate o Valoración, Online, Uso, Cejilla y acorde.
+				
+					+ Canto: podemos ver los cantos en orden alfabetico.
+					+ Rate/Valoración: nos muestra la valoración de los cantos segun su existencia.
+					+ Online: nos muestra si el canto está presencial aunque no tengamos red o internet con un cotejo, si el cotejo no está habilitado, quiere decir que el canto no se puede usar offline o sin internet.
+					+ Uso: Aqui nos muestra un calendario en el que hemos hecho cambios al canto, tal como el acorde o la cejilla, mostrando el dia que lo hemos hecho. Tambien debajo las incidencias o las veces que lo hemos cambiado el acorde o la cejilla.
+					+ Luego seguimos con Cejilla: Aqui tenemos la cejilla original(OR) y Tu Cejilla(Tu). la misma la divide una barra oblicua mostrando primero la cejilla del canto y luego / tu cejilla.
+					+ Luego seguimos con ACORDE (Or/Tu): que nos muestra el acorde en el va el canto y luego el acorde si lo has cambiado.
+					
+				+ Configuración:
+					Donde tenemos algunas opciones que podemos cambiar su función por defecto.
+					+ PREFERENCIA DE INTERFAZ
+						+ Sincronizar con la nube.
+						Para que por defecto aparezca expandido tenemos las siguientes opciones.
+						+ ver Datos perfil.
+						+ Ver Gestión cantos.
+						+ Ver Configuración.
+					+ PREFERENCIA DEL SISTEMA.
+						+ Modo Oscuro. (segun su nombre)
+						+ Limpiar cache y cerrar sesión
+				+ Estado del Sistema:
+					aqui de forma informativa, podemos ver el estado del libro de canto.
+					+ Estado del Motor: si está todo bien.
+					+ Si está sincronizando con la nube.
+					+ Estado de los Archivos del sistema.
+					+ Estado de los Canto Offline, los cuales muestra todo el contenido que usan los cantos como estilo, javaScript y demas.
+					+ Versión de la aplicación: nos muestra la versión que tenemos corriendo de la aplicación.
+					
