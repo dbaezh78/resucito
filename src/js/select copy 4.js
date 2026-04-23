@@ -137,11 +137,11 @@ function crearTarjetaLista(idLista, data, contenedor) {
                 <span>${ids.length} cantos</span>
             </div>
             <div class="acciones-lista" onclick="event.stopPropagation()">
-                <button class="btn-icono share-universal" onclick="window.compartirUniversal('${idLista}')" title="Compartir"><span class="material-symbols-outlined arrow-icon">share</span></button>
-                <button class="btn-icono link" onclick="window.copiarSoloLink('${idLista}')" title="Copiar enlace"><span class="material-symbols-outlined arrow-icon">link</span></button>
-                <button class="btn-icono export" onclick="window.exportarLista('${idLista}')" title="Descargar archivo"><span class="material-symbols-outlined arrow-icon">download</span></button>
-                <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')"><span class="material-symbols-outlined arrow-icon">edit</span></button>
-                <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')"><span class="material-symbols-outlined arrow-icon">delete</span></button>
+                <button class="btn-icono share-universal" onclick="window.compartirUniversal('${idLista}')" title="Compartir"><span class="material-symbols-outlined">share</span></button>
+                <button class="btn-icono link" onclick="window.copiarSoloLink('${idLista}')" title="Copiar enlace"><span class="material-symbols-outlined">link</span></button>
+                <button class="btn-icono export" onclick="window.exportarLista('${idLista}')" title="Descargar archivo"><span class="material-symbols-outlined">download</span></button>
+                <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}')"><span class="material-symbols-outlined">edit</span></button>
+                <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')"><span class="material-symbols-outlined">delete</span></button>
             </div>
         </div>
         <div id="detalle-${idLista}" class="detalle-lista-cantos cfg-close"></div>
@@ -348,25 +348,23 @@ function actualizarInterfazSeleccion() {
     });
 }
 
-// Funcion de guardar Firebase
-window.guardarListaFirebase = async (btn) => {
-    // 1. Obtener valores y validar
+window.guardarListaFirebase = async () => {
     const nombre = document.getElementById('nombreLista').value.trim();
     const user = auth.currentUser;
     if (!nombre || listaOrdenada.length === 0) return alert("Faltan datos.");
 
     const listaId = nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
     
-    // 2. Validación de duplicados
+    // --- LÓGICA DE VALIDACIÓN MEJORADA ---
     let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
     const existe = cache.find(l => l.id === listaId);
 
+    // Solo validamos "Ya existe" si NO estamos en modo edición (o si cambiamos el nombre a uno de otra lista)
     if (existe && window.editingId !== listaId) {
-        alert("⚠️ Ya existe una lista con este nombre.");
+        alert("⚠️ Ya existe una lista con este nombre. Cambia el nombre para crear una nueva.");
         return;
     }
 
-    // 3. Preparar lista
     const nuevaLista = { 
         id: listaId, 
         nombre, 
@@ -375,20 +373,19 @@ window.guardarListaFirebase = async (btn) => {
         origin: 'local' 
     };
 
-    // 4. Guardar local y actualizar UI
-    cache = cache.filter(l => l.id !== listaId && l.id !== window.editingId);
+    // Si estábamos editando y el ID cambió (cambiamos nombre), borramos el viejo del caché
+    if (window.editingId && window.editingId !== listaId) {
+        cache = cache.filter(l => l.id !== window.editingId);
+    }
+
+// 1. Guardar en local
     cache.unshift(nuevaLista);
     localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
     
-    renderizarListasUI(cache); // Refresca las tarjetas
-    
-    // 5. LIMPIEZA TOTAL (Nombre, Edición y Selección de cantos)
-    document.getElementById('nombreLista').value = '';
-    window.editingId = null;
-    listaOrdenada = [];
-    actualizarInterfazSeleccion(); // Esto vacía los checkboxes
+    window.editingId = null; 
+    renderizarListasUI(cache);
 
-    // 6. Sincronizar en nube
+    // 3. Guardar en nube
     if (user) {
         try {
             await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { 
@@ -402,43 +399,25 @@ window.guardarListaFirebase = async (btn) => {
         }
     }
 
-    // 7. Feedback visual robusto (usando el botón que pasamos por parámetro)
-    if (btn) {
-        const contenidoOriginal = btn.innerHTML; // Guardamos el icono y el texto
-        btn.innerHTML = "✅ Guardado";
-        setTimeout(() => {
-            btn.innerHTML = contenidoOriginal; // Restauramos el icono y el texto
-        }, 2000);
+    // Feedback suave
+    console.log("Lista guardada exitosamente.");
+    const btnGuardar = document.querySelector('.btn-accion');
+    if(btnGuardar) {
+        const textoOriginal = btnGuardar.innerHTML;
+        btnGuardar.innerHTML = "✅ Guardado";
+        setTimeout(() => btnGuardar.innerHTML = textoOriginal, 2000);
     }
 };
 
 
 
 window.eliminarLista = async (idLista, nombreLista) => {
-    // 1. Confirmación
-    if (!confirm(`¿Eliminar "${nombreLista}"?`)) return;
-
-    // 2. Actualizar el caché local
-    let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
-    
-    // Filtramos para quitar la lista eliminada
-    cache = cache.filter(l => l.id !== idLista);
-    
-    // Guardamos el nuevo estado en local
-    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-
-    // 3. ACTUALIZAR UI AL INSTANTE (Sin refrescar la página)
-    // Esto es el equivalente a "borrar el nodo" pero de forma automática y segura
-    renderizarListasUI(cache); 
-
-    // 4. Eliminar de Firebase (en segundo plano)
-    if (auth.currentUser) {
-        try {
-            await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
-            console.log("🔥 Eliminado de la nube correctamente");
-        } catch (e) {
-            console.error("Error al eliminar de Firebase:", e);
-        }
+    if (confirm(`¿Eliminar "${nombreLista}"?`)) {
+        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+        cache = cache.filter(l => l.id !== idLista);
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+        if (auth.currentUser) await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
+        location.reload();
     }
 };
 

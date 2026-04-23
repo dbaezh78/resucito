@@ -252,7 +252,7 @@ input:checked + .slider { background-color: var(--SangreDeCristo); }
 input:checked + .slider:before { transform: translateX(22px); }
 
 .contador-footer {
-    margin-top: 20px;
+    margin-top: 2px;
     text-align: center;
     font-weight: bold;
     color: var(--SangreDeCristo);
@@ -260,8 +260,8 @@ input:checked + .slider:before { transform: translateX(22px); }
 
 .btn-accion {
     width: 100%;
-    margin-top: 15px;
-    padding: 15px;
+    margin-top: 4px;
+    padding: 0.5px;
     background-color: #4285F4;
     color: white;
     border: none;

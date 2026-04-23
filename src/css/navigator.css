@@ -61,8 +61,10 @@
 .nav-item .material-symbols-outlined:hover {
     background: white;
     color: var(--SangreDeCristo);
-
 }
+
+.collapsed .arrow-icon { transform: rotate(-90deg); transition: 0.3s; }
+.arrow-icon { transition: 0.3s; }
 
 /* Estilos del Menú Desplegable (Submenú) */
 .nav-submenu {

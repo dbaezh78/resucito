@@ -32,7 +32,7 @@
     const navHTML = `
         <div id="nav-wrapper">
             <div id="nav-toggle" onclick="toggleNavbar()">
-                <span class="material-symbols-outlined" id="toggle-icon">keyboard_arrow_down</span>
+                <span class="material-symbols-outlined arrow-icon" id="toggle-icon">keyboard_arrow_down</span>
             </div>
 
             <div class="nav-bottom-bar" id="main-navbar">
@@ -41,30 +41,30 @@
                 </div>
 
                 <a href="/" class="nav-item">
-                    <span class="material-symbols-outlined">home</span>
+                    <span class="material-symbols-outlined arrow-icon">home</span>
                     <span>Inicio</span>
                 </a>
 
                 <button class="nav-item" id="btn-nav-menu">
-                    <span class="material-symbols-outlined">menu</span>
+                    <span class="material-symbols-outlined arrow-icon">menu</span>
                     <span>Menú</span>
                     <div class="nav-submenu" id="nav-submenu">
                     
-                        <a href="https://www.youtube.com/@CristoJesusReydereyes" target="_blank"><span class="material-symbols-outlined">youtube_activity</span> YouTube</a>
-                        <a href="https://www.facebook.com/groups/721999947892692" target="_blank"><span class="material-symbols-outlined">communities</span> Facebook</a>
-                        <a href="https://dbaezh78.github.io/salterios/" target="_blank"><span class="material-symbols-outlined">prayer_times</span> Laudes</a>
-                        <a href="https://dbaezh78.github.io/ev/" target="_blank"><span class="material-symbols-outlined">book_2</span> Evangelio del Día</a>
+                        <a href="https://www.youtube.com/@CristoJesusReydereyes" target="_blank"><span class="material-symbols-outlined arrow-icon">youtube_activity</span> YouTube</a>
+                        <a href="https://www.facebook.com/groups/721999947892692" target="_blank"><span class="material-symbols-outlined arrow-icon">communities</span> Facebook</a>
+                        <a href="https://dbaezh78.github.io/salterios/" target="_blank"><span class="material-symbols-outlined arrow-icon">prayer_times</span> Laudes</a>
+                        <a href="https://dbaezh78.github.io/ev/" target="_blank"><span class="material-symbols-outlined arrow-icon">book_2</span> Evangelio del Día</a>
                     </div>
                 </button>
 
                 <button class="nav-item" id="btn-nav-neocate">
-                    <span class="material-symbols-outlined">church</span>
+                    <span class="material-symbols-outlined arrow-icon">church</span>
                     <span>NeoCate</span>
                     <div class="nav-submenu" id="nav-submenu-neocate">
-                        <a href="https://neocatechumenaleiter.org/noticias/" target="_blank"><span class="material-symbols-outlined">newspaper</span> Noticias</a>
-                        <a href="https://app.resucito.es/home" target="_blank"><span class="material-symbols-outlined">library_music</span> Cantos del Camino</a>
-                        <a href="https://www.facebook.com/groups/323608705177419" target="_blank"><span class="material-symbols-outlined">groups</span> Comunidades</a>
-                        <a href="https://www.facebook.com/cantordelcaminoneocatecumenal" target="_blank"><span class="material-symbols-outlined">record_voice_over</span> Cantores</a>
+                        <a href="https://neocatechumenaleiter.org/noticias/" target="_blank"><span class="material-symbols-outlined arrow-icon">newspaper</span> Noticias</a>
+                        <a href="https://app.resucito.es/home" target="_blank"><span class="material-symbols-outlined arrow-icon">library_music</span> Cantos del Camino</a>
+                        <a href="https://www.facebook.com/groups/323608705177419" target="_blank"><span class="material-symbols-outlined arrow-icon">groups</span> Comunidades</a>
+                        <a href="https://www.facebook.com/cantordelcaminoneocatecumenal" target="_blank"><span class="material-symbols-outlined arrow-icon">record_voice_over</span> Cantores</a>
                         
                         <a href="https://carmenhernandez.org/" target="_blank"> 
                             <img src="/src/img/carmen_hernandez.jpg" alt="Carmen Hernández" class="img-perfil-link">
@@ -89,32 +89,32 @@
                 </button>
 
                 <button class="nav-item" id="btn-nav-resucito">
-                    <span class="material-symbols-outlined">menu_book</span>
+                    <span class="material-symbols-outlined arrow-icon">menu_book</span>
                     <span>Resucitó</span>
                     <div class="nav-submenu" id="nav-submenu-resucito">
-                        <a href="/"><span class="material-symbols-outlined">home</span> Camino</a>
-                        <a href="/index-joven.html"><span class="material-symbols-outlined">home</span> Mi Canto es Joven</a>
-                        <a href="/index-ae.html"><span class="material-symbols-outlined">synagogue</span> Aclamación EV. </a>
-                        <a href="/perfil.html"><span class="material-symbols-outlined">person</span> Perfil</a>
-                        <a href="/src/select.html"><span class="material-symbols-outlined">playlist_add</span>Gestión Listas</a>
-                        <a href="/src/html/intro.html"><span class="material-symbols-outlined">menu_book</span> Introducción</a>
-                        <a href="/src/catequesis.html"><span class="material-symbols-outlined">history_edu</span> Catequesis</a>
-                        <a href="#" target="_blank" id="installButton"><span class="material-symbols-outlined">download_for_offline</span>Instalar App</a>
+                        <a href="/"><span class="material-symbols-outlined arrow-icon">home</span> Camino</a>
+                        <a href="/index-joven.html"><span class="material-symbols-outlined arrow-icon">home</span> Mi Canto es Joven</a>
+                        <a href="/index-ae.html"><span class="material-symbols-outlined arrow-icon">synagogue</span> Aclamación EV. </a>
+                        <a href="/perfil.html"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
+                        <a href="/src/select.html"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Gestión Listas</a>
+                        <a href="/src/html/intro.html"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>
+                        <a href="/src/catequesis.html"><span class="material-symbols-outlined arrow-icon">history_edu</span> Catequesis</a>
+                        <a href="#" target="_blank" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
                     </div>
                 </button>
 
                 <button class="nav-item" id="btn-open-settings">
-                    <span class="material-symbols-outlined">settings</span>
+                    <span class="material-symbols-outlined arrow-icon">settings</span>
                     <span>Ajustes</span>
                 </button>
 
                 <a id="nav-google-auth" class="nav-item">
-                    <span class="material-symbols-outlined" id="nav-auth-icon">account_circle</span>
+                    <span class="material-symbols-outlined arrow-icon" id="nav-auth-icon">account_circle</span>
                     <span id="nav-auth-text">Entrar</span>
                 </a>
 
                 <a id="nav-logout" class="nav-item" style="display:none;">
-                    <span class="material-symbols-outlined">logout</span>
+                    <span class="material-symbols-outlined arrow-icon">logout</span>
                     <span>Salir</span>
                 </a>
             </div>
@@ -165,7 +165,7 @@
         if (user) {
             icon.innerHTML = user.photoURL 
                 ? `<img src="${user.photoURL}" class="dbperfil">`
-                : `<span class="material-symbols-outlined">person</span>`;
+                : `<span class="material-symbols-outlined arrow-icon">person</span>`;
             text.innerText = "Perfil";
             btnAuth.onclick = () => window.location.href = '/perfil.html';
             btnLogout.style.display = "flex";
@@ -220,11 +220,11 @@ function abrirModalConfiguracion() {
         <div class="settings-frame">
             <div class="settings-header">
                 <h2>
-                    <span class="material-symbols-outlined" style="color:#bc0009">settings</span>
+                    <span class="material-symbols-outlined arrow-icon" style="color:#bc0009">settings</span>
                     Configuraciones / Ajustes / Settings
                 </h2>
                 <button onclick="cerrarModalConfiguracion()" class="btn-close-settings">
-                    <span class="material-symbols-outlined close">close</span>
+                    <span class="material-symbols-outlined arrow-icon close">close</span>
                 </button>
             </div>
             <div class="settings-content">

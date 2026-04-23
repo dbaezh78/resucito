@@ -15,7 +15,7 @@
     <div class="perfil-container">
             <div class="header-seleccion">
                 <div class="title-group" style="display: flex; align-items: center; gap: 15px;">
-                    <a href="#" onclick="history.back(); return false;" class="material-symbols-outlined back-btn">arrow_back</a>
+                    <a href="#" onclick="history.back(); return false;" class="material-symbols-outlined back-btn arrow-icon">arrow_back</a>
                     <h1 style="margin: 0;">Gestión de Listas</h1>
                 </div>
             </div>
@@ -35,9 +35,9 @@
         </div>
 
         <div class="buscador-input-container">
-            <span class="material-symbols-outlined search-icon">search</span>
+            <span class="material-symbols-outlined search-icon arrow-icon">search</span>
             <input type="text" id="inputBuscadorCantos" placeholder="Buscar canto por palabras..." oninput="window.filtrarSeleccion()">
-            <span id="btnLimpiarCantos" class="material-symbols-outlined close-icon" onclick="window.limpiarBuscadorSeleccion()" style="display: none;">close</span>
+            <span id="btnLimpiarCantos" class="material-symbols-outlined close-icon arrow-icon " onclick="window.limpiarBuscadorSeleccion()" style="display: none;">close</span>
         </div>
 
         <div id="contenedor-seleccion" class="lista-scroll">
@@ -50,7 +50,7 @@
             <span id="contador-seleccion">0</span> cantos seleccionados
         </div>
 
-        <button class="btn-accion" onclick="window.guardarListaFirebase()">
+        <button class="btn-accion" onclick="window.guardarListaFirebase(this)">
             <span class="material-symbols-outlined">cloud_upload</span>
             Guardar en Nube
         </button>
@@ -75,7 +75,7 @@
     <div id="content-mis-listas" class="section-content">
 
         <div class="buscador-input-container">
-            <span class="material-symbols-outlined search-icon">search</span>
+            <span class="material-symbols-outlined search-icon arrow-icon">search</span>
             <input type="text" id="inputBuscadorListas" placeholder="Filtrar mis listas..." oninput="window.filtrarMisListas()">
             <span id="btnLimpiarListas" class="material-symbols-outlined close-icon" onclick="window.limpiarBuscadorListas()" style="display: none;">close</span>
         </div>

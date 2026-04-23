@@ -389,6 +389,22 @@ body.dark-theme #modal-global-settings select option {
     text-align: center;
 }
 
+.collapsed .arrow-icon { transform: rotate(-90deg); transition: 0.3s; }
+.arrow-icon { transition: 0.6s; }
+
+
+/**************
+.collapsed .arrow-icon {
+    /* transform: rotate(-90deg); */
+/*      }
+
+.collapsed .arrow-icon {
+    /* transform: rotate(-90deg); */
+    /* transition: 0.3s;
+
+
+***************/
+
 .material-symbols-outlined.close:hover {
     height: 25px;
 }

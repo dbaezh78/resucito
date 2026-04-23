@@ -499,3 +499,6 @@ html, body {
     display:block; 
     margin:0 auto;
 }
+
+.collapsed .arrow-icon { transform: rotate(-90deg); transition: 0.3s; }
+.arrow-icon { transition: 0.3s; }
