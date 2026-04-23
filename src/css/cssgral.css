@@ -1010,7 +1010,6 @@ hr {
     color: var(--category-link-hover);
 }
 
-
 .pie {
     @media (min-width: 384px){
         width: 100%;
@@ -1033,15 +1032,17 @@ hr {
 
 
 .dbr { /*Raya dbaez*/
+    height: 27px;
     border-top: 1px ridge var(--SangreDeCristo);
     border-bottom: none;
     border-left: none;
     border-right: none;
-            border-top-width: thick;
+    border-top-width: thick;
+
 
 
     @media (min-width: 992px) {
-        padding: 10px 21px 10px 21px;
+        padding: 4px 21px 10px 21px;
     }
 }
 
@@ -1258,7 +1259,7 @@ hr {
 
 
 
-.mso1, .mso2 {
+.mso1, .mso2, .mso3 {
   font-family: 'Material Symbols Outlined Local';
   font-weight: normal;
   font-style: normal;
@@ -1274,9 +1275,32 @@ hr {
   /*border: 1px solid rgb(255, 255, 255);*/
   border-radius: 2em;
   cursor: pointer;
-  font-size: 149%;
-  color: white;
 }
+
+.mso1, .mso2 {
+    font-size: 149%;
+    color: white;
+}
+
+.mso3 {
+    transition: 0.6s;
+    font-size: 33px;
+    color: var(--Titulo-SangreDeCristo);
+    border-radius: 0%;
+    
+}
+
+.mso3:hover { 
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: var(--Titulo-SangreDeCristo);
+    align-content: center;
+    color: white;
+
+
+}
+
 
 .mso1:hover {
     color: var(--SangreDeCristo);
@@ -1308,11 +1332,14 @@ hr {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 25px;
-    height: 25px;
+    width: auto; /*25px;*/
+    height: auto; /*25px;*/
     border-radius: 50%;
     text-decoration: none;
     transition: background-color 0.2s ease;
+
+    
+    transition: 0.6s;
 }
 
 .ibutton:hover {
@@ -1353,6 +1380,10 @@ hr {
 .container { /* Lienzo transparente para no solapar el borde*/
     background: transparent;
 }
+
+.collapsed .arrow-icon { transform: rotate(-90deg); transition: 0.3s; }
+.arrow-icon { transition: 0.6s; }
+
 
 .fontstyle {font-style: italic;}
 .fontsizelarge {font-size: large;}
@@ -1525,3 +1556,51 @@ color: lightskyblue;
 
 */
 
+/* NOTAS DEL CANTOR
+*/
+
+/* Ajustado a tus nuevos nombres de clase */
+.NodaModal-overlay {
+    position: fixed; 
+    top: 0; left: 0; 
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex; /* Se mantiene 'flex' para centrar */
+    justify-content: center; 
+    align-items: center;
+    z-index: 9999;
+}
+
+.NotaModal-content {
+    background: white; 
+    padding: 20px; 
+    border-radius: 12px; 
+    width: 90%; 
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.NotaModal-content textarea {
+    width: 97%;
+    height: 110px;
+    /*margin: 15px 0;*/
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+.NotaModal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.NotaTitulo {
+    background-color: var(--Titulo-SangreDeCristo);
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    border: 1px solid gray;
+}

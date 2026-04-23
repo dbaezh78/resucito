@@ -95,11 +95,11 @@
 
                     <!-- Icono de libro/vista -->
                      <a href="#" id="CallNotas" class="toolbar-item ibutton">
-                        <span class="mso1">music_note</span>
+                        <span class="mso1 arrow-icon">music_note</span>
                     </a>
                     
                     <a href="#" id="toggleVista" class="toolbar-item ibutton">
-                        <span class="mso1">menu_book</span>
+                        <span class="mso1 arrow-icon">menu_book</span>
                     </a>
                     
                     <!-- Nuevo botón para mostrar/ocultar toda la asamblea -->
@@ -109,7 +109,7 @@
 
                     <!-- Icono de control de audio -->
                     <a href="#reproductor-audio" id="audio-control-btn" class="toolbar-item ibutton audio-control">
-                        <span class="mso1 audio-icon">play_circle</span>
+                        <span class="mso1 audio-icon arrow-icon">play_circle</span>
                     </a>
 
                     <!-- Icono de desplazamiento (scroll) -->
@@ -160,42 +160,45 @@
         <div class="pie dbr">
             <div class="dbsize" id="cantoCategories"></div>
 
+            <!-- NOTAS DEL CANTO -->
+            <button onclick="abrirEditorNotas()" style="background:none; border:none; padding:0; cursor:pointer;">
+                <b class="mso3 arrow-icon">edit_note</b></button>
+                
 
-<!--
-    <div id="valoracion-index-contenedor"></div>
-    
-    <div ><div class="cno" id="dbno"></div></div>
-    
-    -->
+                <div id="modalNotas" class="NodaModal-overlay" style="display:none;">
+                    <div class="NotaModal-content">
+                        <div class="NotaTitulo" id="tituloModalCanto">Nota canto del Cantor</div>
+                        
+                        <textarea id="txtNotasCantor" maxlength="255" placeholder="Escribe tu nota aquí..."></textarea>
+                        <div class="NotaModal-buttons">
+                            <button onclick="cerrarModalNotas()">Cancelar</button>
+                            <button onclick="guardarNotasEnFirebase()" class="btn-guardar">Guardar</button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- VALORACION DEL CANTO-->
             <div class="val_num">
-
                 <span id="valoracion-index-contenedor"></span>
 
-
-      <!--         <span id="salmodia"></span>  -->
-
-
-<div id="salmodiaModal" class="modal-overlay">
-    <div class="modal-content salmodia-modal-content">
-        <h2>Salmodias que usan este salmo</h2>
-        
-        <div id="salmodiaOptionsList" class="chord-image-list salmodia-list">
+        <div id="salmodiaModal" class="modal-overlay">
+            <div class="modal-content salmodia-modal-content">
+                <h2>Salmodias que usan este salmo</h2>
+                
+                <div id="salmodiaOptionsList" class="chord-image-list salmodia-list">
+                    </div>
+                <div id="salmodiaImageContainer" class="salmodia-image-viewer" style="display:none;">
+                    <img id="salmodiaCurrentImg" src="" alt="Visualización de Salmodia">
+                </div>
             </div>
-
-        <div id="salmodiaImageContainer" class="salmodia-image-viewer" style="display:none;">
-            <img id="salmodiaCurrentImg" src="" alt="Visualización de Salmodia">
         </div>
-    </div>
-</div>
-
-
+                <!-- NUMERO DEL CANTO-->
                 <span class="cno" id="dbno">  </span>
             </div>
-
         </div>
-
     </div>
+
+
     <!-- Modal para la selección de acordes -->
     <div id="chordSelectionModal" class="modal-overlay">
         <div class="modal-content">

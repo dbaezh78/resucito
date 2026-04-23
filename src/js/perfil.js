@@ -420,7 +420,7 @@ window.inyectarDatosEnTabla = function(cantoId, data, esLocal = false) {
     const elUso = document.getElementById(`uso-${cantoId}`);
     const fila = document.getElementById(`fila-${cantoId}`);
 
-       // 5.A Valoracion de Estrllas 
+       // 5.A Valoracion de Estrellas 
         const elVal = document.getElementById(`valoracion-${cantoId}`);
         if (elVal) {
             // Aquí usamos la valoración que normalizamos en el paso anterior
@@ -1028,28 +1028,28 @@ function actualizarVistaCalendario() {
     const nombreMes = new Date(añoVisualizado, mesVisualizado).toLocaleString('es-ES', { month: 'long' }).toUpperCase();
 
     modal.innerHTML = `
-        <div id="calendar-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:flex; align-items:center; justify-content:center;">
-            <div id="calendar-content" style="background:white; padding:20px; border-radius:15px; width:300px; text-align:center; position:relative; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+        <div id="calendar-overlay" class="perfil-a1">
+            <div id="calendar-content" class="perfil-a2">
                 <button onclick="cerrarCalendario()" class="xclose">&times;</button>
                 
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                    <button onclick="cambiarMes(-1)" style="border:none; background:#e0e0e0; border-radius:5px; padding:5px 12px; cursor:pointer; font-weight:bold;">&lt;</button>
-                    <h3 style="margin:0; font-size:1.1em; color:#333;">${nombreMes} ${añoVisualizado}</h3>
-                    <button onclick="cambiarMes(1)" style="border:none; background:#e0e0e0; border-radius:5px; padding:5px 12px; cursor:pointer; font-weight:bold;">&gt;</button>
+                <div class="perfil-b1">
+                    <button onclick="cambiarMes(-1)" class="perfil-b2">&lt;</button>
+                    <h3 class="perfil-b3">${nombreMes} ${añoVisualizado}</h3>
+                    <button onclick="cambiarMes(1)" class="perfil-b4">&gt;</button>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; background: #fdfdfd; padding: 10px; border-radius: 10px; border: 1px solid #eee;">
+                <div class="perfil-c1">
                     ${generarGridNavegable(fechasHistorialActivas, mesVisualizado, añoVisualizado)}
                 </div>
                 
-                <div style="margin-top:20px; border-top: 1px solid #eee; padding-top:15px;">
-                    <p style="margin:0; font-size:13px; color:#444;">
+                <div class="perfil-d1">
+                    <p class="perfil-d2">
                         Has cambiado el Acordes o Cejilla 
-                        <span onclick="abrirListaDetallada()" style="color:#bc0009; font-weight:bold; font-size:18px; cursor:pointer; text-decoration:underline;">
+                        <span onclick="abrirListaDetallada()" class=perfil-d3>
                             ${totalRegistrosCanto}
                         </span> veces
                     </p>
-                    <small style="color:gray; font-size:10px;">(Toca el número para ver el detalle)</small>
+                    <small class="perfil-d4">(Toca el número para ver el detalle)</small>
                 </div>
             </div>
         </div>`;
@@ -1109,36 +1109,36 @@ window.abrirListaDetallada = function() {
         const cejillaTxt = (reg.cejilla && reg.cejilla !== "0") ? reg.cejilla : "No";
 
         return `
-        <div style="padding:12px; border-bottom:1px solid #eee; display:flex; flex-direction:column; gap:5px; background: white; text-align: left;">
-            <div style="display:flex; justify-content:space-between; font-size:12px;">
-                <span style="color:#888;">${dia} ${mesTxt} ${año} - ${hora}:${min}</span>
-                <b style="color:#d4af37;">#${fechasOriginalesFull.length - index}</b>
+        <div class="perfil-e1">
+            <div class="perfil-e2">
+                <span class="perfil-e3">${dia} ${mesTxt} ${año} - ${hora}:${min}</span>
+                <b class="perfil-e4">#${fechasOriginalesFull.length - index}</b>
             </div>
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-                <span style="font-size:15px; font-weight:bold; color:#333;">🎸 ${acordeTxt}</span>
-                <span style="font-size:14px; background:#f5f5f5; padding:3px 10px; border-radius:12px; color:#666; border:1px solid #eee; font-weight: 900;">🗜️ ${cejillaTxt}</span>
+            <div class="perfil-e5">
+                <span class="perfil-e6">🎸 ${acordeTxt}</span>
+                <span class="perfil-e7">🗜️ ${cejillaTxt}</span>
             </div>
         </div>`;
     }).join('');
 
     // --- 3. INYECTAR HTML FINAL ---
     listaModal.innerHTML = `
-        <div id="lista-overlay" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
-            <div style="background:white; border-radius:15px; width:320px; max-height:80vh; overflow:hidden; display:flex; flex-direction:column; position:relative; box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
+        <div id="lista-overlay" class="perfil-f1">
+            <div class="perfil-f2">
                 
                 <button onclick="document.getElementById('lista-detallada-modal').remove()" 
-                        style="position:absolute; top:-3px; right:-3px; border:none; background:none; font-size:24px; cursor:pointer; color:white; z-index:11;">&times;</button>
+                       class="perfil-f3" >&times;</button>
                 
-                <div class="ttlo" style="padding:25px 20px 5px 20px; background:#d4af37; color:white; font-weight:bold; text-align:center; font-size: 20px; line-height: 1.2;">
+                <div class="ttlo perfil-f4">
                     ${tituloCanto.toUpperCase()}
                 </div>
 
-                <div style="background:#d4af37; color:rgba(255,255,255,0.8); padding:0 20px 20px 20px; text-align:center; font-size:13px; letter-spacing: 1px; font-weight: lighter;">
+                <div class="perfil-f5">
                     TU HISTORIAL
                 </div>
 
-                <div style="flex-grow:1; overflow-y:auto; background:#fff;">
-                    ${itemsHtml || '<p style="padding:20px; text-align:center; color:gray;">Sin registros en el historial</p>'}
+                <div class="perfil-f6">
+                    ${itemsHtml || '<p class="perfil-f7">Sin registros en el historial</p>'}
                 </div>
             </div>
         </div>`;

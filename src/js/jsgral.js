@@ -5,6 +5,10 @@
 const paramsURL = new URLSearchParams(window.location.search);
 const idCantoActual = paramsURL.get('canto') || 'global';
 
+// Configuración para las notas del cantor
+const LIMIT_NOTAS = 255; 
+let notasCantorActual = localStorage.getItem(`notas_${window.currentCantoId}`) || "";
+
 // Definimos la variable global UNA SOLA VEZ para todos
 window.currentCantoId = idCantoActual;
 
@@ -614,7 +618,7 @@ const openChordSelectionModal = (currentDisplayedNoteClicked) => {
                     const datosDB = {
                         fecha: ahora,
                         acorde: currentKeyOffset.toString(),
-                        cejilla: document.getElementById('cejillaControl')?.value || 
+                        cejilla: document.getElementById('cejillaControl')?.value ||
                                  document.getElementById('cejillaSelect')?.value || "0"
                     };
                     await window.firebaseAPI.guardarDato(idCantoActual, datosDB, 'dbdata');
@@ -1224,7 +1228,6 @@ window.refrescarScrollEnVivo = () => {
     }
 
 // 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE (CONECTADA A DBDATA)
-// 27.26: LÓGICA DE PERSISTENCIA INDEPENDIENTE (CONECTADA A DBDATA)
 const paramsURL = new URLSearchParams(window.location.search);
 const idCantoURL = paramsURL.get('canto') ? paramsURL.get('canto').replace('.html', '') : null;
 
@@ -1714,3 +1717,154 @@ console.log("Canto rendering complete.");
 adjustNotePositions(); // Esto posiciona los acordes como siempre
 toggleAcordeLocation(); // Esto muestra los números solo si el switch está en SI|
 
+
+// Función para abrir el editor (usaremos un prompt simple por ahora)
+function abrirEditorNotas() {
+    const nuevaNota = prompt("Escribe tu nota para este canto (máx " + LIMIT_NOTAS + " caracteres):", notasCantorActual);
+    
+    if (nuevaNota !== null) {
+        // Validar límite
+        if (nuevaNota.length > LIMIT_NOTAS) {
+            alert("La nota es demasiado larga. Máximo " + LIMIT_NOTAS + " caracteres.");
+            return;
+        }
+        
+        notasCantorActual = nuevaNota;
+        localStorage.setItem(`notas_${window.currentCantoId}`, notasCantorActual);
+        
+        // Si ya tienes una función para guardar en Firebase (como registrarCambioTecnico), llámala aquí
+        console.log("Nota guardada:", notasCantorActual);
+        // Opcional: forzar guardado inmediato si tienes la referencia a firebase
+    }
+}
+
+
+// Notas del cantor
+
+// --- Lógica para el Modal de Notas ---
+
+// 1. Abrir el modal y cargar la nota existente
+async function abrirEditorNotas() {
+    const modal = document.getElementById('modalNotas');
+    const textarea = document.getElementById('txtNotasCantor');
+    const tituloModal = document.getElementById('tituloModalCanto');
+
+    // BUSCAR EL TÍTULO EN LA PÁGINA
+    // Cambia '.titulo-canto' por la clase real de tu etiqueta donde se muestra el nombre
+    const tituloPagina = document.querySelector('.titulo-canto')?.innerText 
+                         || document.getElementById('tt')?.innerText 
+                         || "Canto Seleccionado";
+
+    tituloModal.innerText = `Notas para: ${tituloPagina}`;
+
+    // ... resto de la lógica ...
+    modal.style.display = 'flex';
+    textarea.focus();
+}
+
+// 1. Abrir y Cargar (Lectura)
+async function abrirEditorNotas() {
+    const modal = document.getElementById('modalNotas');
+    const textarea = document.getElementById('txtNotasCantor');
+    const tituloModal = document.getElementById('tituloModalCanto');
+
+    // Definir título
+    const baseDeDatos = window.songs || []; 
+    const cantoEncontrado = baseDeDatos.find(c => c.id === idCantoActual);
+    const tituloReal = cantoEncontrado ? cantoEncontrado.title : idCantoActual.replace(/-/g, ' ');
+    tituloModal.innerText = `Notas para: ${tituloReal}`;
+
+    // Mostrar modal y poner foco
+    modal.style.display = 'flex';
+    textarea.focus();
+
+    // Carga de datos: Intentar Firebase, si falla o está vacío, mirar LocalStorage
+    try {
+        const data = await window.firebaseAPI.obtenerDato(idCantoActual, 'dbdata');
+        
+        if (data && data.notasCantor) {
+            textarea.value = data.notasCantor;
+            console.log("Cargado desde Firebase");
+        } else {
+            // Si Firebase no tiene el campo, intentamos recuperar del LocalStorage
+            const notaLocal = localStorage.getItem(`notas_${idCantoActual}`);
+            textarea.value = notaLocal || "";
+            console.log("Cargado desde LocalStorage (o vacío)");
+        }
+    } catch (e) {
+        console.error("Error al obtener de Firebase:", e);
+        // Fallback total a LocalStorage
+        textarea.value = localStorage.getItem(`notas_${idCantoActual}`) || "";
+    }
+}
+
+// 2. Guardar y actualizar (Escritura)
+async function guardarNotasEnFirebase() {
+    const nuevaNota = document.getElementById('txtNotasCantor').value;
+    
+    // A. GUARDADO LOCAL (Siempre ocurre primero)
+    const claveLocal = `notas_${idCantoActual}`;
+    localStorage.setItem(claveLocal, nuevaNota);
+    
+    // B. SINCRONIZACIÓN A LA NUBE
+    if (navigator.onLine) {
+        try {
+            // Traer datos actuales para no borrar lo demás
+            let datos = await window.firebaseAPI.obtenerDato(idCantoActual, 'dbdata') || {};
+            
+            // Actualizar solo lo que nos interesa
+            datos.notasCantor = nuevaNota;
+            datos.fecha = new Date().toISOString();
+            
+            // Guardar
+            await window.firebaseAPI.guardarDato(idCantoActual, datos, 'dbdata');
+            console.log("Sincronizado con Firebase exitosamente.");
+        } catch (error) {
+            console.warn("Error al subir a Firebase, guardado solo en local:", error);
+        }
+    }
+
+    // C. ACTUALIZAR UI
+    const display = document.getElementById('displayNotas');
+    if (display) display.innerText = nuevaNota;
+    
+    cerrarModalNotas();
+}
+
+// 3. Cerrar
+function cerrarModalNotas() {
+    document.getElementById('modalNotas').style.display = 'none';
+}
+
+// 4. Carga inicial (para que se vea al entrar al canto)
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const data = await window.firebaseAPI.obtenerDato(idCantoActual, 'dbdata');
+        if (data?.notasCantor) {
+            document.getElementById('displayNotas').innerText = data.notasCantor;
+        }
+    } catch (e) {
+        console.log("No se pudo cargar la nota inicial.");
+    }
+});
+
+
+// --- Eventos globales para cerrar el modal ---
+
+// 1. Cerrar con la tecla Escape
+window.addEventListener('keydown', (event) => {
+    const modal = document.getElementById('modalNotas');
+    // Verifica si el modal existe y si está visible antes de intentar cerrarlo
+    if (modal && modal.style.display === 'flex' && event.key === 'Escape') {
+        cerrarModalNotas();
+    }
+});
+
+// 2. Cerrar haciendo clic fuera del recuadro (en el fondo oscuro)
+window.addEventListener('click', (event) => {
+    const modal = document.getElementById('modalNotas');
+    // Si el usuario hace clic exactamente en el overlay (fondo), se cierra
+    if (modal && event.target === modal) {
+        cerrarModalNotas();
+    }
+});

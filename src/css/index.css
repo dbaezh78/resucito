@@ -424,6 +424,12 @@ body.dark-theme {
     margin-top: -3px;
 }
 
+.val_num:hover {
+ border-radius: 50%;
+ color: red;
+
+}
+
 /* BLOQUEO DE PULL-TO-REFRESH (Refresco al tirar hacia abajo) */
 html, body {
     /* Esta línea es la que hace la magia: permite scroll pero bloquea el refresco */
@@ -490,7 +496,6 @@ html, body {
     min-height: 200px; /* Forzamos un espacio */
 }
 
-
 .rutaImg {
     width:100%; 
     max-width:380px; 
@@ -500,5 +505,18 @@ html, body {
     margin:0 auto;
 }
 
-.collapsed .arrow-icon { transform: rotate(-90deg); transition: 0.3s; }
 .arrow-icon { transition: 0.3s; }
+
+
+.estrella {
+    cursor: pointer;
+    transition: transform 0.1s ease, filter 0.1s ease;
+    display: inline-block;
+}
+
+.estrella:hover {
+    transform: scale(1.4); /* Aumenta el tamaño */
+    filter: brightness(1.5); /* Aumenta el brillo (da el efecto de sombreado/luz) */
+    color: var(--Titulo-SangreDeCristo) !important;
+    /*color: rgb(0, 115, 255) !important;*/
+}

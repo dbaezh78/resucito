@@ -363,9 +363,9 @@ function pintarEstrellasVisuales(puntos, cantoId) {
 
     let html = '<div style="display: flex; gap: 3px; cursor: pointer; font-size: 20px;">';
     for (let i = 1; i <= 5; i++) {
-        const color = (i <= puntos) ? '#FFD700' : '#C0C0C0';
+        const color = (i <= puntos) ? '#FFD700' : '#51656b';
         // El onclick llama a la función de guardar que pondremos abajo
-        html += `<span onclick="guardarNuevaValoracion('${cantoId}', ${i})" style="color: ${color};">★</span>`;
+        html += `<span class="estrella" onclick="guardarNuevaValoracion('${cantoId}', ${i})" style="color: ${color};">★</span>`;
     }
     html += '</div>';
     
