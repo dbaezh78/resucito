@@ -121,7 +121,7 @@
                 setTimeout(() => {
                     screen.remove();
                     // style.remove(); // Opcional, mejor dejar los estilos por si acaso
-                }, 1000); // 600ms igual que tu transition en el CSS
+                }, 10); // 600ms igual que tu transition en el CSS
             }
         });
 })();
