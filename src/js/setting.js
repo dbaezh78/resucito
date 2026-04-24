@@ -211,6 +211,29 @@ window.tabsConfig = [
                     }
                 }
             },
+
+{ 
+    id: 'global-logs-enabled', // Cambié el ID para que sea más claro
+    label: 'Habilitar Log Consola', 
+    tipo: 'switch',
+    storageKey: 'pref-logs-habilitados',
+    default: false, // Por defecto está apagado (silenciado)
+    accion: (val) => {
+        // 1. Guardamos el estado (true/false)
+        localStorage.setItem('pref-logs-habilitados', val);
+        
+        // 2. Ejecución Segura
+        if (typeof window.controlarLogs === 'function') {
+            window.controlarLogs(val);
+            console.log(val ? "🔊 Consola HABILITADA." : "🔇 Consola SILENCIADA.");
+        } else {
+            console.warn("⚠️ Sistema de logs cargando...");
+        }
+    }
+},
+
+
+
         ]
     },
 

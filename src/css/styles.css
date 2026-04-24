@@ -346,14 +346,14 @@ border: 1px solid #FFEB3B;
 }
 
 
-.category-filter[data-category="Catolicos"] {
+.category-filter[data-category="Católicos"] {
     width: fit-content;
     max-width: fit-content;
     background-color: #a73bff;
     color: #ffffff;
 }
 
-.category-filter[data-category="Catolicos"]:hover {
+.category-filter[data-category="Católicos"]:hover {
     background-color: white;
 color: black;
 border: 1px solid #52067d;
@@ -459,7 +459,7 @@ border: 1px solid #52067d;
     box-shadow: 5px 5px 12px #FFEB3B;
 }
 
-.song-card[data-category="Catolicos"] {
+.song-card[data-category="Católicos"] {
     border: 1px solid #6b21f3;
     border-left: 8px solid #6b21f3;
     box-shadow: 5px 5px 12px #6b21f3;

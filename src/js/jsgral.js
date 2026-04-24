@@ -2,6 +2,7 @@
 
 // Si jsgral no lo definió aún, lo intentamos definir aquí
 // jsgral.js - INICIO
+
 const paramsURL = new URLSearchParams(window.location.search);
 const idCantoActual = paramsURL.get('canto') || 'global';
 

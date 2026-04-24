@@ -20,14 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Listas de categorías y momentos para determinar el tipo de URL
     // Estas listas almacenan los nombres NORMALIZADOS para una comparación consistente.
-    const categoriesList = ["precatecumenado", "catecumenado", "eleccion", "liturgia"];
+    const categoriesList = ["precatecumenado", "catecumenado", "eleccion", "liturgia","Catolicos"];
     const momentsList = [
         "ninos", // *** CAMBIO AQUÍ: Usar "ninos" sin 'ñ' ***
         "entrada", "paz", "fraccion-del-pan", "comunion", "final",
         "adviento", "navidad", "pascua", "pentecostes",
         "virgen-maria","Indice",
         "aclamacion", "salmodias", "penitencial", "salmodia", "nuevo-testamento", "antiguo-testamento",
-        "cuaresma", "celebracion"
+        "cuaresma", "celebracion", "Católicos"
     ];
 
     // Mapeo de nombres normalizados a sus nombres canónicos para CATEGORÍAS
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "catecumenado": "Catecumenado",
         "eleccion": "Elección",
         "liturgia": "Liturgia",
-        "Catolicos": "Catolicos",
+        "Catolicos": "Católicos",
     };
 
     // Mapeo de nombres normalizados a sus nombres canónicos para MOMENTOS

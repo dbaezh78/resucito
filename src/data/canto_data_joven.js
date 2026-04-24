@@ -20,8 +20,8 @@
         tt: "Que detalle Señor has tenico conmigo",
         title: "Que detalle Señor has tenico conmigo",
         subtitle: "Brotes de Olivo",
-        category: ["Precatecumenado","Pascua","Pentecostés","Nuevo Testamento"],
-        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        category: ["Católicos"],
+        catCanto: "Católicos",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -76,8 +76,8 @@
         tt: "Belén, Campanas De Belén,",
         title: "Belén, Campanas De Belén,",
         subtitle: "Villancico",
-        category: ["Católico","Adviento","Navidad","Comunión"],
-        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        category: ["Católicos","Navidad"],
+        catCanto: "Católicos",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -146,8 +146,8 @@
         tt: "Los Peces En El Río",
         title: "Los Peces En El Río",
         subtitle: "Villancicos",
-        category: ["Precatecumenado","Vírgen María","Adviento","Navidad","Pascua","Pentecostés","Final","Nuevo Testamento"],
-        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        category: ["Católicos"],
+        catCanto: "Católicos",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -219,8 +219,8 @@
         tt: "Con Mi Burrito Sabanero",
         title: "Con Mi Burrito Sabanero",
         subtitle: "Villancicos",
-        category: ["Precatecumenado","Adviento","Navidad","Catolicos","Villancicos"],
-        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        category: ["Católicos","Adviento","Navidad","Villancicos"],
+        catCanto: "Católicos",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -271,16 +271,16 @@
 ]}, // ULTIMA LINEA DEL CANTO: Con mi burrito sabanero
 // SIGUIENTE CANTO DEBAJO
 /*
-╔════════════════════════════════════════════════════════╗
+╔════════════════════════════════════════════════════╗
 ║           SOMOS UN PUEBLO QUE CAMINA               ║
-╚════════════════════════════════════════════════════════╝  */
+╚════════════════════════════════════════════════════╝  */
    {
         id: "somosunpuebloquecamina",
         tt: "Somos Un Pueblo Que Camina",
         title: "Somos Un Pueblo Que Camina",
         subtitle: "Cancionero 54",
-        category: ["Precatecumenado","Final","Nuevo Testamento"],
-        catCanto: "Católico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        category: ["Católicos"],
+        catCanto: "Católicos",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",
@@ -364,8 +364,8 @@
         tt: "Hablamé",
         title: "Hablamé",
         subtitle: "Canticos Catolicos",
-        category: ["Catolico","Pascua","Pentecostés","Comunión","Antiguo Testamento"],
-        catCanto: "Catolico",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        category: ["Católicos"],
+        catCanto: "Católicos",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
         cejilla: "",
         nCan: "",
         nCanURL: "",

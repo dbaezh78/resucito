@@ -1251,7 +1251,7 @@ window.sincronizarTodoARam = async function() {
             const docData = docSnap.data();
             
             // Log de depuración que tenías
-            console.log(`📡 LOG 1 > Datos de dbdata [${cantoId}]:`, docData);
+//            console.log(`📡 LOG 1 > Datos de dbdata [${cantoId}]:`, docData);
 
             // Lógica de campo 'valor'
             const rawData = docData.valor ? docData.valor : docData;
