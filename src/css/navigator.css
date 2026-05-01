@@ -48,13 +48,14 @@ body.dark-theme {
     border: none;
     padding: 5px;
     width: 100%;
-    top: 4px;
+    top: 2px;
 }
 
 .nav-item:hover {
     background-color: var(--sCristo);
     color: var(--BlancoNegro);
     font-weight: bolder;
+    border: 1px solid darkgoldenrod
 
 }
 

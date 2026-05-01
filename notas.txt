@@ -39,7 +39,7 @@ actualmente la aplicación está hecha para tres pantallas
 	5- En el lado derecho que está el reciclaje puedes darle y limpiará la busqueda, tambien puedes darle tres toques y la limpiará la busqueda.
 
 + Área de Navegación
-	1- Aqui tenemos una barra barra de navegación situada en la parte de abajo de la aplicación, la misma se oculta en un boton que se encuentra a la deracha, se oculta y se muestra en el mismo boton, la misma puede habilitarse por defecto para que se oculte en 30 segundo llendo a AJUSTES > Auto ocultar navegación luego de (30s) 30 segundos., una vez habilitada esta opción se ocultará automaticamente, guardando la opcion en la cuenta de google.
+	1- Aqui tenemos una barra de navegación situada en la parte de abajo de la aplicación, la misma se oculta en un boton que se encuentra a la deracha, se oculta y se muestra en el mismo boton, la misma puede habilitarse por defecto para que se oculte en 30 segundo llendo a AJUSTES > Auto ocultar navegación luego de (30s) 30 segundos., una vez habilitada esta opción se ocultará automaticamente, guardando la opcion en la cuenta de google.
 
 	2- Continuamos con el boton de inicio, que nos lleva al indice del canto.
 
@@ -220,15 +220,40 @@ Ahora nos vamos a Resucitó en la barra de navegación.
 	
 	+ Luego vamos al buscador, donde podemos buscar los cantos que le queremos asignar a la lista que vamos a crear, podemos seleccionar desde un canto hasta todos los cantos que queramos.
 	
-	+ Luego le damos a Guardar, 
+	+ Luego le damos a Guardar, eso pondrá el listado debajo con el nombre y los cantos seleccionados.
+	
+	debajo tenemos Mis Listados.
+		+ dentro de Mis Listados veremos un icono que nos ayuda a importar listados guardado desde esta aplicación.
+		+ veremos tambien un buscador, por si manejamos un gran volumen de listados.
+		+ Luego veremos los nombre de los listados que podamos tener con el numero de canto que tiene cada listado.
+		si presionamos sobre el listado se desplegarán todos los cantos que tiene ese listado.
+		+ A la derecha de cada listado podremos ver algunos iconos que representan la funcion de lo que podemos hacer con el listado.
+		
+		+ Compartir: vemos el icono de compartir, en el que podemos compartir ese listado con quien nosotros queramos que vea ese listado.
+		
+		+ Copiar: vemos un icono que nos genera un enlace con una URL del listado.
+		
+		+ Descarga: luego vemos el icono de descarga donde podemos descargar el listado con los cantos en un archivo para poder luego subirlo en otro equipo o en el mismo equipo con el icono de subida que aparece al inicio de Mis Listados.
+		
+		+ Editar: luego en forma de lapiz podemos ver este icono que nos permite editar el canto que tenemos en nuestro equipo.
+		
+		+ Borrar: Luego tenemos el icono de borrar, el cual borra el listado que está en nuestro libro de canto.
+		
+		
++ INTRODUCCION
+
+
++ CATEQUESIS
+
++ INSTALAR APP
+
++ AJUSTES
+	Aqui tenemos todo lo que tiene que ver con la configuracion de la aplicacion.
+		+ GENERAL
+		+ CANTO
+		+ TEMA
+		+ PERFIL
 	
 	
 	
 	
-	
-	Iniciando con Nueva lista, le damos en el campo sobre el nombre y vemos que se expande.
-	En el primer campo lo usamos para ponerle un nombre al listado que queremos crear
-	
-	y nos sale un buscador y un listado con los cantos.
-	
-		+ En el buscador

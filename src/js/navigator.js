@@ -77,8 +77,8 @@
                         </a>
 
                         <a href="https://neocatechumenaleiter.org/historia/mario-pezzi/" target="_blank">
-                            <img src="/src/img/mariopezzi.jpg" alt="Mario Pezzi" class="img-perfil-link">
-                            <span>Mario Pezzi</span>
+                            <img src="/src/img/mariopezzi.jpg" alt="P. Mario Pezzi" class="img-perfil-link">
+                            <span>P. Mario Pezzi</span>
                         </a>
                         
                         <a href="https://neocatechumenaleiter.org/historia/maria-ascension/" target="_blank">
