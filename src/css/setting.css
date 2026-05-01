@@ -39,7 +39,8 @@
 }
 
 /* MODO OSCURO (Valores que camb0ian) */
-/*
+
+/*  NO SE PORQUE ESTÁ DOCUMENTADO, PERO REVISAREMOS LUEGO */
 body.dark-theme {
 
 
@@ -68,7 +69,10 @@ body.dark-theme {
     --accent: #ff453a;
 }
 
-*/
+/*     */
+
+
+
 /* Aplicación global del tamaño de fuente */
 body {
     font-size: var(--font-size-base) !important;

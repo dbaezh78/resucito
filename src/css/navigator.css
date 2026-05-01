@@ -1,13 +1,23 @@
 :root {
     --SangreDeCristo: #d01212;
+    --Titulo-SangreDeCristo: #780606;
+    --Titulo-SangreDeCristo: #390404;
+    --sCristo: #390404;
+    
+
 /*    --SangreDeCristo: #780606;*/
     --vblancas: white;
     --precat: white;
     --liturgia: #FFFFCB;
     --cat: #bde9ff;
     --eleccion: #CEFFCF;
+    --BlancoNegro: white;
+
 }
 
+body.dark-theme {
+    --BlancoNegro: black;
+}
 
 .nav-bottom-bar {
     position: fixed;
@@ -42,16 +52,16 @@
 }
 
 .nav-item:hover {
-    background-color: #d4cdcd;
-    color: var(--SangreDeCristo);
+    background-color: var(--sCristo);
+    color: var(--BlancoNegro);
     font-weight: bolder;
 
 }
 
-
 .nav-item .material-symbols-outlined {
     font-size: 2.5rem;
-    color: black;
+    /*color: var(--Titulo-SangreDeCristo);
+    /*    color: black;*/
 
         @media(min-width: 384px){
             font-size: 2rem;
@@ -60,7 +70,7 @@
 
 .nav-item .material-symbols-outlined:hover {
     background: white;
-    color: var(--SangreDeCristo);
+    color: var(--sCristo);
 }
 
 .collapsed .arrow-icon { transform: rotate(-90deg); transition: 0.3s; }
@@ -97,7 +107,7 @@
 
 .nav-submenu a:last-child { border-bottom: none; }
 .nav-submenu a:hover { 
-    background: var(--SangreDeCristo);
+    background: var(--sCristo);
     color: var(--precat);
  }
 

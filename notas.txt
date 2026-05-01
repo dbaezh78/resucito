@@ -1,22 +1,23 @@
-La paz de Cristo Resucitado
+La paz y el amor de Cristo Resucitado con todos.
 
-Quiero presentar esta aplicación que se ha ido desarrollando, esu na aplicacion que se puede instalar o usar de forma online o offline en google chrome.
+Quiero presentar esta aplicación que se ha ido desarrollando, es una aplicacion que se puede instalar o usar de forma online o offline en google chrome o cualquier navegador.
 
-Pues arriba tenemos un cintillo con un mensaje.
-seguimos con icono de Cristo Resucitado, si le damos sobre el icono refrescará la pagina.
+Iniciemos.
 
-a la derecha seguimos con un cuadro de chequeo o check list que si le damos nos mostrará en los cantos las etapas en la que se puede hacer los canto, como las etapas, si vemos en A la cena del cordero podemos ver que su cinta dice Himno Ad cenan Agni providi
+Arriba tenemos un cintillo con un mensaje.
+seguimos con el icono de Cristo Resucitado, el cual si le damos sobre el icono refrescará la pagina.
 
-son los filtros donde se encutra cada canto.
+a la derecha seguimos con un check box llamado LISTA que si le damos nos mostrará en cada canto del indice de cantos las etapas y filtros que tiene cada canto.
+Si vemos en A LA CENA DEL CORDERO, podemos ver que su cinta dice Himno Ad cenan Agni providi, ELECCION, PASCUA, PENTECOSTES, ENTRADA, dando a entender que este es un canto propio de la etapa del camino ELECCION, que se recomienda en pascua, pentecostes y como canto de entrada. Los filtros donde se encutra cada canto.
 
-luego seguimos con el buscador, en el mismo vemos una lupa a la izquierda y un reciclaje a la derecha, debajo de lista. 
+Luego seguimos con el buscador, en el mismo vemos una lupa a la izquierda y un reciclaje a la derecha, debajo de lista.
 
-con al lupa si presionamos sobre ella, veras una serie de utilidades que nos facilitará encontrar los cantos, con filtros por etapa o filtros por cantos.
+Si presionamos sobre la lupa, veras una serie de utilidades que nos facilitará encontrar los cantos, con filtros por etapa o filtros por cantos.
 si le volvemos a dar a la lupa, se ocultarán los fitlros.
 
 en el primer filtro vemos PreCatecumenado, luego catecumenado, Elección, Liturgia y Otros cantos Catolicos.
 
-luego otros filtros, como.
+Luego tenemos otros filtros, como.
 los cantos a la virgen.
 Indice de cantos
 cantos de los niños
@@ -206,4 +207,28 @@ Ahora nos vamos a Resucitó en la barra de navegación.
 					+ Estado de los Archivos del sistema.
 					+ Estado de los Canto Offline, los cuales muestra todo el contenido que usan los cantos como estilo, javaScript y demas.
 					+ Versión de la aplicación: nos muestra la versión que tenemos corriendo de la aplicación.
-					
+
++ SEGUIJMOS CON GESTIÓN DE LISTAS.
+	Dentro de Gestion de listas tenemos dos secciones.
+		+ Nueva Lista
+		+ Mis Listados
+		
+	En esta parte del libro de canto, podemos gestionar listados para eucaristia, convivencia, celebraciones, ensayos y demás formas como queramos utilizar el libro de canto.
+	
+	+ Vamos a crear un listado: para ello vamos a desplegar Nueva Lista.
+	y debajo de Nombre de la lista. en el campo que dice: Ej. Cantos de Pascua... y le ponemos el nombre que prefiramos, Ensayo de mis cantos a mejorar grupo 1.
+	
+	+ Luego vamos al buscador, donde podemos buscar los cantos que le queremos asignar a la lista que vamos a crear, podemos seleccionar desde un canto hasta todos los cantos que queramos.
+	
+	+ Luego le damos a Guardar, 
+	
+	
+	
+	
+	
+	Iniciando con Nueva lista, le damos en el campo sobre el nombre y vemos que se expande.
+	En el primer campo lo usamos para ponerle un nombre al listado que queremos crear
+	
+	y nos sale un buscador y un listado con los cantos.
+	
+		+ En el buscador
