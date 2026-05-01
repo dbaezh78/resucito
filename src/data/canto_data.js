@@ -15446,7 +15446,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
-            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
           ]},
@@ -15881,7 +15881,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
-            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
@@ -16363,7 +16363,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
-            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
@@ -16780,7 +16780,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
-            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
@@ -17233,7 +17233,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
-            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
@@ -18001,7 +18001,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
-            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
@@ -18305,7 +18305,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
-            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"}, 
 
 ]}, // ULTIMA LINEA DEL CANTO: // SANTO Palestina 74
@@ -19333,7 +19333,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
             { line: "HOSANNA, HOSANNA., (La,,25)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Re,m,21)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (La,,23)", sC: "as"},
-            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,m,293)", sC: "as"},
+            { line: "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)", sC: "as"},
             { line: "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)", sC: "as"},  ]},
 ]}, // ULTIMA LINEA DEL CANTO: SANTO PALESTINA 74
 // SIGUIENTE CANTO DEBAJO
