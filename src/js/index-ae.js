@@ -214,8 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     semanas: [
                         { id: "aetcs6b", nombre: "Domingo de Ramos",	            sub: "Semana VI" },
                         { id: "aetcsjsb", nombre: "Jueves Santo",		            sub: "Semana Santa" },
-                        { id: "aetcsvsc", nombre: "Viernes Santo",	                sub: "Semana Santa" },
-                        { id: "aetcsssa", nombre: "Vigilia Pascual - Sabado Santo",  sub: "Sabado Santo" },
+                        { id: "aetcsvsb", nombre: "Viernes Santo",	                sub: "Semana Santa" },
+                        { id: "aetcsssb", nombre: "Vigilia Pascual - Sabado Santo",  sub: "Sabado Santo" },
                     ]
                 },                
                                 {
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "aetn1ec",		nombre: "1 de Enero", 				sub: "Santa María Madre de Dios" },
                         { id: "aetns2c",		nombre: "Semana II", 				sub: "2º Domingo después de Navidad" },
                         { id: "aetn6ec", 		nombre: "6 de Enero", 				sub: "Epifanía del Señor" },
-                        { id: "aetos1a",	nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
+                        { id: "aetos1c",	    nombre: "Bautismo del Señor", 		sub: "Solemnidad" },
                     ]
                 },
                 {
@@ -313,10 +313,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     nombre: "Semana Santa",
                     semanas: [
-                        { id: "aetcs6c", nombre: "Domingo de Ramos",	            sub: "Semana VI" },
-                        { id: "aetcsjsc", nombre: "Jueves Santo",		            sub: "Semana Santa" },
-                        { id: "aetcsvsc", nombre: "Viernes Santo",	                sub: "Semana Santa" },
-                        { id: "aetcsssa", nombre: "Vigilia Pascual - Sabado Santo",  sub: "Sabado Santo" },
+                        { id: "aetcs6c", nombre: "Domingo de Ramos",	             sub: "Semana VI" },
+                        { id: "aetcsjsc", nombre: "Jueves Santo",		             sub: "Semana Santa" },
+                        { id: "aetcsvsc", nombre: "Viernes Santo",	                 sub: "Semana Santa" },
+                        { id: "aetcsssc", nombre: "Vigilia Pascual - Sabado Santo",  sub: "Sabado Santo" },
                     ]
                 },                
                 {
