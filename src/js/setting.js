@@ -490,7 +490,7 @@ window.tabsConfig = [
                 }
             },
 
-            { label: 'Cintillo / Cabecera', tipo: 'color' },
+/*            { label: 'Cintillo / Cabecera', tipo: 'color' },
             { label: 'Texto Cabecera', tipo: 'color' },
             { label: 'Fondo del Canto', tipo: 'color' },
             { label: 'Título', tipo: 'color' },
@@ -499,6 +499,7 @@ window.tabsConfig = [
             { label: 'Acorde', tipo: 'color' },
             { label: 'Categoría Pie', tipo: 'color' },
             { label: 'Número Canto', tipo: 'color' }
+*/
         ]
     },
     {
