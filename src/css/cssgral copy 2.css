@@ -255,15 +255,6 @@ display: none;}
                 width: 98%;     /* normalizando posicion del contenido: no quitar*/
             }
         }
-
-        @media(min-width: 360px){
-            .container {
-                padding: 0px 3px 20px 12px;
-                text-align: center;
-                width: stretch;     /* normalizando posicion del contenido: no quitar*/
-            }
-        }
-
         @media(min-width: 384px){
             .container {
                 padding: 0px 3px 20px 3px;
@@ -365,7 +356,24 @@ display: none;}
     /* padding: 0px 40px 0px 0px;*/
     /* left: 0;*/
     /*width: 998px;*/
+
     
+    @media (min-width: 360px) {
+        padding: 5px 7px;
+        width: stretch;
+        font-size: larger;
+
+        .toolbar select, .toolbar .search-input {
+            width: 50px;
+        }
+
+    hr {
+        width: 360px;
+        margin-left: -42px;
+    }
+       }
+    
+
     @media (min-width: 768px) {
         font-size: larger;
     }
@@ -521,14 +529,6 @@ display: none;}
     /*margin: 0px;*/
 }
 
-@media (min-width: 360px)  {
-    .dbt1 {
-        font-size: 1.25rem; /* Converted from 1.2rem */
-        margin-top: 65px;
-    }
-}
-
-
 @media (min-width: 384px)  {
     .dbt1 {
         font-size: 1.5rem; /* Converted from 1.2rem */
@@ -554,14 +554,6 @@ display: none;}
     font-weight: bold;
     text-align: center;
     font-style: italic;
-}
-
-@media (min-width: 360px) {
-    .dbs2 {
-        font-size: 0.9rem;
-        width: 95%;
-        justify-self: center;
-    }
 }
 
 @media (min-width: 384px) {
@@ -674,10 +666,6 @@ display: none;}
     text-align: left;
     padding-top: 10px;
     min-height: 33px;
-
-    @media (min-width: 360px) {
-        width: fit-content;
-    }
 
     @media (min-width: 384px) {
         min-height: 26px;
@@ -849,10 +837,6 @@ display: none;}
     .nota-posicionada { font-size: 14.4px; }
 }
 
-@media (min-width: 360px) {
-    .nota-posicionada { top: 0px; }
-}
-
 @media (min-width: 384px) {
     .letra { font-size: 16px; }
     .nota-posicionada { font-size: 14.4px; }
@@ -875,11 +859,7 @@ display: none;}
         padding-left: 0px; /* Converted from 0em */
         min-height: 24px; /* Converted from 1.5em */
         width: 99%;
-
-        @media (min-width: 360px) {width: fit-content;}
     }
-
-
 
 /* Estilos COMPARTIDOS por todos los ::before */
 .ta::before, .tc::before, .td::before, .tn::before, .tca::before, .ta1::before, .ta2::before, .ta3::before, .niño::before,
@@ -893,16 +873,6 @@ display: none;}
     line-height: 1.3;
     font-weight: bold;
     white-space: nowrap;
-}
-
-@media (min-width: 360px) {
-    .ta::before, .tc::before, .td::before, .tn::before, .ta1::before, .ta2::before, .ta3::before, 
-    .niño::before, .hombres::before, .mujeres::before, .melisma::before, 
-    .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
-    .aleluya::before, .stp::before, .ctp::before, .rpn::before
-    {
-       width: fit-content; 
-    }
 }
 
 /* Media queries para los ::before */
@@ -995,11 +965,24 @@ hr {
     }
 }
 
-/*  CONTORL Y TAMAÑO DE PANTALLA*/ 
-@media (min-width: 360px) {hr {width: 360px;margin-left: -42px;}}
-@media (min-width: 384px) {hr {width: 341px;margin-left: 0px;}}
-@media (min-width: 768px) {hr {width: 758px;margin-left: 0px;}}
-@media (min-width: 992px) {hr {width: 100%;margin-right: 0px;}}
+@media (min-width: 384px) {
+    hr {
+        width: 341px;
+        margin-left: 0px;
+    }
+}
+@media (min-width: 768px) {
+    hr {
+        width: 758px;
+        margin-left: 0px;
+    }
+}
+@media (min-width: 992px) {
+    hr {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
 
 .pie{
     width: 100%;
@@ -1314,9 +1297,6 @@ hr {
 .mso1, .mso2 {
     font-size: 149%;
     color: white;
-
-    @media (min-width: 360px) {font-size: 100%;}
-
 }
 
 .mso3 {

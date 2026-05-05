@@ -21,6 +21,7 @@
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     width: 150px; /* Ancho por defecto */
     transition: width 0.5s ease;
+
 }
 
 .search-input:focus {
@@ -30,15 +31,15 @@
     width: 200px; /* Expandir al enfocar */
 }
 
+@media(min-width: 360px){
+    .search-input {width: 50px;}
+    .search-input:focus {width: 100px;}
+}
+
 /* Media queries para el campo de búsqueda */
 @media(min-width: 384px){
-    .search-input {
-        width: 60px;
-    }
-
-    .search-input:focus {
-        width: 100px;
-    }
+    .search-input {width: 60px;}
+    .search-input:focus {width: 100px;}
 }
 
 @media (min-width: 768px) {
