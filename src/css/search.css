@@ -43,20 +43,12 @@
 }
 
 @media (min-width: 768px) {
-    .search-input {
-        width: 80px;
-    }
-    .search-input:focus {
-        width: 200px;
-    }
+    .search-input {width: 80px;}
+    .search-input:focus {width: 150px;}
 }
 @media (min-width: 992px) {
-    .search-input {
-        width: 100px;
-    }
-    .search-input:focus {
-        width: 200px;
-    }
+    .search-input {width: 100px;}
+    .search-input:focus {width: 200px;}
 }
 
 /* Contenedor de resultados de búsqueda */

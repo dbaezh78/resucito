@@ -17,7 +17,8 @@ Debajo está el proyecto de poner el modo oscuro */
 /* 1. Estilos base para ambas imágenes (posicionamiento igual) */
 .cristo {
     width: 10px;
-    position: fixed;
+    position: sticky;
+/*    position: fixed;*/
     align-self: normal;
     z-index: 9999;
     /* Transición suave para el efecto de "aparecer" */
@@ -25,9 +26,11 @@ Debajo está el proyecto de poner el modo oscuro */
     cursor: pointer;
     opacity: 0.5
 }
-    @media (min-width: 364px){.cristo { width: 29%; top: 6%; margin-left: -28px; }}
-    @media (min-width: 768px){.cristo { width: 16%; top: 5%; }}
-    @media (min-width: 992px){.cristo { width: 8em; top: 7%;}}
+    @media (min-width: 360px){.cristo { width: 97px; top: 50px; left: 0px; }}
+    @media (min-width: 384px){.cristo { width: 111px; top: 45px; left: 0px; }}
+    @media (min-width: 768px){.cristo { width: 120px; top: 55px; }}
+    @media (min-width: 992px){.cristo { width: 8em; top: 54px; left: 300px}}
+
 
 
 /* --- LÓGICA DE INTERCAMBIO Y TRANSFIGURACIÓN --- */
@@ -366,6 +369,10 @@ display: none;}
     /* left: 0;*/
     /*width: 998px;*/
     
+    @media (min-width: 360px) {
+        width: stretch;
+    }
+
     @media (min-width: 768px) {
         font-size: larger;
     }
@@ -674,9 +681,10 @@ display: none;}
     text-align: left;
     padding-top: 10px;
     min-height: 33px;
-
+    
     @media (min-width: 360px) {
         width: fit-content;
+        min-height: 25px;
     }
 
     @media (min-width: 384px) {
@@ -901,8 +909,16 @@ display: none;}
     .melisma1::before, .bis::before, .pa::before, .tc1::before, .tc2::before,
     .aleluya::before, .stp::before, .ctp::before, .rpn::before
     {
-       width: fit-content; 
+        width: fit-content; 
+        font-size: x-small;
+        left: -11px;
+        top: 18px;
     }
+    .tca::before {
+        font-size: 14.4px; /* Converted from 0.9rem */
+        margin-top: 14px;
+        left: -35px;
+     }
 }
 
 /* Media queries para los ::before */
@@ -1066,7 +1082,7 @@ hr {
 
 
 .dbr { /*Raya dbaez*/
-    height: 27px;
+    /*height: 27px;*/
     border-top: 1px ridge var(--SangreDeCristo);
     border-bottom: none;
     border-left: none;
@@ -1314,11 +1330,14 @@ hr {
 .mso1, .mso2 {
     font-size: 149%;
     color: white;
-
-    @media (min-width: 360px) {font-size: 100%;}
-
 }
 
+@media (min-width: 360px) {.mso1, .mso2{font-size: 16px;}}
+@media (min-width: 384px) {.mso1, .mso2{font-size: 25px;}}
+@media (min-width: 768px) {.mso1, .mso2{font-size: 30px;}}
+@media (min-width: 992px) {.mso1, .mso2{font-size: 40px;}}
+
+    
 .mso3 {
     transition: 0.6s;
     font-size: 33px;
@@ -1467,12 +1486,21 @@ hr {
             font-weight: bold;
             white-space: nowrap; /* Mantiene el texto en una sola línea */
             font-weight: 800;
-        }
 
-.cantosprecatecumenado , .cantoscatecumenado, .cantosliturgicos, .cantoseleccion {
-    position: relative;
-    min-height: 24px; /* Mantenemos el mínimo, pero considerá darle un alto fijo o en porcentaje si es necesario */
-    width: 99%;
+        }
+        
+        .cantosprecatecumenado , .cantoscatecumenado, .cantosliturgicos, .cantoseleccion {
+            position: relative;
+            min-height: 24px; /* Mantenemos el mínimo, pero considerá darle un alto fijo o en porcentaje si es necesario */
+            width: 99%;
+            
+            
+            @media (min-width: 360px) {
+                width: fit-content;
+                left: 94px;
+                bottom: 128px;
+                    }
+
 }
 
     .cantosprecatecumenado::before {content: "PRECATECUMENADO";}
