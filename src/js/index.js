@@ -113,21 +113,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 if (currentCanto) {
 
-// ==================================================
-// ======== NUEVO: GESTIÓN DEL LOGO DINÁMICO ========
-// ==================================================
+        // ==================================================
+        // ======== GESTIÓN DEL LOGO DINÁMICO (CORREGIDO) ===
+        // ==================================================
         const imgLogo = document.getElementById('logo-cristo');
-        if (imgLogo) {
-            // Verificamos si la propiedad catCanto es "Catolico"
+        if (imgLogo && currentCanto) {
             const categoria = currentCanto.catCanto ? currentCanto.catCanto.toLowerCase() : "";
             
-            if (categoria === "catolico" || categoria === "católico") {
+            // Al no tener la "s", acepta tanto "católico" como "católicos"
+            if (categoria.includes("catolico") || categoria.includes("católico")) {
                 imgLogo.src = "/src/img/Cristo_1.png";
             } else {
                 imgLogo.src = "/src/img/cristo.png";
             }
         }
-
 console.log("Canto found:", currentCanto.title);
             loadDynamicCSS(cantoIdToLoad);
 
@@ -456,3 +455,5 @@ window.addEventListener('click', (e) => {
         modalNum.style.display = 'none';
     }
 });
+
+

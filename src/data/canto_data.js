@@ -14137,7 +14137,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
         ant: "/src/index.html?canto=zaqueo",
-        sig: "/src/ai.html",
+        sig: "/src/index.html?canto=aleluyapascual",
 // Contenido del lado izquierdo del canto,
     lizq: [ 
             { line: "", sC: "cantosliturgicos", color: "#544d47"},
@@ -14193,7 +14193,7 @@ triggerLine: "ESPADA, ESPADA, (La,m,20)(Mi,7,134)", sC: "ta as", lines: [
               tablet: { v: 25, i: 1 },  // Para tablet
              desktop: { v: 7, i: 1 },   // Para PC
         desktopsmall: { v: 7, i: 1 }},   // Para PC
-        ant: "/src/ai.html",
+        ant: "/src/index.html?canto=aclamacionesalaoraciondelosfieles",
         sig: "/src/index.html?canto=antifonaparaelevangelio",
 // Contenido del lado izquierdo del canto,
     lizq: [
