@@ -95,6 +95,7 @@
                         <a href="/"><span class="material-symbols-outlined arrow-icon">home</span> Camino</a>
                         <a href="/index-joven.html"><span class="material-symbols-outlined arrow-icon">home</span> Mi Canto es Joven</a>
                         <a href="/index-ae.html"><span class="material-symbols-outlined arrow-icon">synagogue</span> Aclamación EV. </a>
+                        <a href="/salmos.html"><span class="material-symbols-outlined arrow-icon">music_note</span> Salmodias </a>
                         <a href="/perfil.html"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
                         <a href="/src/select.html"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Gestión Listas</a>
                         <a href="/src/html/intro.html"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>

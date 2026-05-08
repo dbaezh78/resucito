@@ -332,6 +332,62 @@
     ]
 },
 
+/*
+╔══════════════════════════════════╗
+║           SALMO 92               ║
+╚══════════════════════════════════╝  */
+   {
+        id: "salmo92",
+        tt: "Salmo 92",
+        title: "Salmo 92",
+        subtitle: "Salmo 92 - GLORIA DEL DIOS CREADOR",
+        category: ["Liturgia"],
+        catCanto: "Liturgia",   // Precatecumenado | Catecumenado | Liturgia | Eleccion
+        salmodia: "1,2,3", // Aqui ponemos al melodia que lleva: Melodia 2 (Menor) melodia del 1 al 14 o algo asi
+        cejilla: "",
+        nCan: "",
+        nCanURL: "",
+        dbno: "300",
+        notes: "",
+        mant: "Si",
+        audioSrc: "https://audio.resucito.do/salmo92.mp3",
+// Nueva propiedad para la velocidad de desplazamiento
+        scrollConfig: {
+            mobile: { velocidad: 6, incremento: 3 }, // Para celular
+            tablet: { velocidad: 7, incremento: 1 },  // Para tablet
+            desktop: { velocidad: 7, incremento: 1 },   // Para PC
+            desktopsmall: { velocidad: 7, incremento: 1 }},   // Para PC
+        ant: "/src/index.html?canto=salmo91",
+        sig: "/src/index.html?canto=salmo93",
+// Contenido del lado izquierdo del canto,
+    lizq: [
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "El Señor reina vestido de majestad,, (La,m,20)(Mi,m,250)", sC: "tc"},
+            { line: "el Señor, vestido y ceñido de poder:, (La,m,20)(Mi,m,250)", sC: ""},
+            { line: "así está firme el orbe y no vacila., (Re,,22)(La,m,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tu trono está firme desde siempre,, (La,m,20)(Mi,m,250)", sC: "ta as"},
+            { line: "y tú eres eterno., (Re,,22)(La,m,250)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Levantan los ríos, Señor,, (La,m,20)(Mi,m,250)", sC: "tc"},
+            { line: "levantan los ríos su voz,, (La,m,20)(Mi,m,250)", sC: ""},
+            { line: "levantan los ríos su fragor;, (Re,,22)(La,m,250)", sC: ""},
+        ], lder: [
+            { line: "pero más que la voz de aguas caudalosas,, (La,m,20)(Mi,m,250)", sC: "ta as"},
+            { line: "más potente que el oleaje del mar,, (La,m,20)(Mi,m,250)", sC: "as"},
+            { line: "más potente en el cielo es el Señor., (Re,,22)(La,m,250)", sC: "as"},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Tus mandatos son fieles y seguros;, (La,m,20)(Mi,m,250)", sC: "tc"},
+            { line: "la santidad es el adorno de tu casa,, (La,m,20)(Mi,m,250)", sC: ""},
+            { line: "Señor, por días sin término., (Re,,22)(La,m,250)", sC: ""},
+            { line: "", sC: "adb1"}, // Espacio Generado para separar contenido
+            { line: "Gloria al Padre, y al Hijo, y al Espíritu Santo., (La,m,20)(Mi,m,208)(La,m,251)(Mi,m,384)", sC: "ta as"},
+            { line: "Como era en el principio, ahora y siempre, (La,m,20)(Mi,m,376)", sC: "tc"},
+            { line: "por los siglos de los siglos. Amén., (Re,,20)(La,m,280)", sC: ""},
+]}, // ULTIMA LINEA DEL CANTO: SALMO 92
+// SIGUIENTE CANTO DEBAJO
+
+
 
 /*
 ╔════════════════════════════════════════════╗
