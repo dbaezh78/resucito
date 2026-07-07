@@ -34,6 +34,18 @@
             <input type="text" id="nombreLista" placeholder="Ej. Cantos de Pascua...">
         </div>
 
+        <!---->
+        <div class="selector-momentos">
+            <button onclick="window.setMomento('Entrada')">Entrada</button>
+            <button class="btn-momento" onclick="window.setMomento('Libre')">1, 2, 3...</button>
+            <button onclick="window.setMomento('Paz')">Paz</button>
+            <button onclick="window.setMomento('Comunión')">Comunión</button>
+            <button onclick="window.setMomento('Final')">Final</button>
+    </div>
+        <!---->
+
+
+
         <div class="buscador-input-container">
             <span class="material-symbols-outlined search-icon arrow-icon">search</span>
             <input type="text" id="inputBuscadorCantos" placeholder="Buscar canto por palabras..." oninput="window.filtrarSeleccion()">
