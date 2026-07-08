@@ -19,6 +19,7 @@ const MAPA_ETIQUETAS = {
     "Entrada": "E",
     "Paz": "P",
     "Comunión": "C",
+    "Litúrgico": "L",
     "Final": "F"
 };
 
@@ -367,7 +368,13 @@ window.toggleCanto = (id) => {
     }
 
     // --- RE-ORDENAMIENTO AUTOMÁTICO ---
-    const prioridad = { 'E': 1, 'P': 3, 'C': 4, 'F': 5 }; // '1,2,3' serán prioridad 2
+    const prioridad = { 
+        'E': 1, 
+        'P': 2, 
+        'L': 3, 
+        'C': 4, 
+        'F': 5 
+    }; // '1,2,3' serán prioridad 2
     
     listaOrdenada.sort((a, b) => {
         const getPeso = (item) => {
