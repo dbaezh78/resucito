@@ -6,12 +6,25 @@ import {
 import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 
-// --- VARIABLES DE ESTADO ---
+// --- ZONA DE VARIABLES ---
 let listaOrdenada = [];
 let todosLosCantos = [];
 let snapshotActual = null;
 let listasLocalesCache = []; 
 let bloqueoSnapshot = false;
+
+// --- NUEVO ESTADO PARA MOMENTOS ---
+let momentoSeleccionado = 'Libre'; // Por defecto, modo numérico
+const MAPA_ETIQUETAS = {
+    "Entrada": "E",
+    "Paz": "P",
+    "Comunión": "C",
+    "Final": "F"
+};
+
+
+// --- ZONA DE VARIABLES
+
 
 // Usamos los datos de songs-data.js filtrando lo que es solo para el index
 todosLosCantos = typeof songs !== 'undefined' 
@@ -175,13 +188,15 @@ function renderizarLista(lista) {
     const contenedor = document.getElementById('contenedor-seleccion');
     if (!contenedor) return;
     contenedor.innerHTML = '';
+    
     lista.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'item-canto';
-        // CAMBIO AQUÍ: Usamos .title (de songs-data.js)
         const nombreAMostrar = canto.title || "Sin título"; 
         
-        const isChecked = listaOrdenada.includes(String(canto.id));
+        // CORRECCIÓN AQUÍ: Usamos .some() para buscar en la lista de OBJETOS
+        const isChecked = listaOrdenada.some(item => String(item.id) === String(canto.id));
+        
         div.onclick = () => window.toggleCanto(canto.id);
         div.innerHTML = `
             <span class="titulo-canto-seleccion">${nombreAMostrar}</span>
@@ -318,13 +333,59 @@ window.limpiarBuscadorListas = () => {
 };
 
 // --- 6. LÓGICA DE NEGOCIO ---
+/*
 window.toggleCanto = (id) => {
     const stringId = String(id);
     const index = listaOrdenada.indexOf(stringId);
     index !== -1 ? listaOrdenada.splice(index, 1) : listaOrdenada.push(stringId);
     actualizarInterfazSeleccion();
 };
+*/
 
+window.toggleCanto = (id) => {
+    const stringId = String(id);
+    const index = listaOrdenada.findIndex(item => String(item.id) === stringId);
+
+    if (index !== -1) {
+        listaOrdenada.splice(index, 1);
+    } else {
+        let etiqueta;
+        if (momentoSeleccionado === 'Libre') {
+            // Buscamos el menor número libre (1, 2, 3...)
+            const numericos = listaOrdenada.filter(item => !['E', 'P', 'C', 'F'].includes(item.etiqueta))
+                                           .map(item => parseInt(item.etiqueta))
+                                           .sort((a, b) => a - b);
+            
+            let num = 1;
+            while (numericos.includes(num)) num++;
+            etiqueta = num.toString();
+        } else {
+            etiqueta = MAPA_ETIQUETAS[momentoSeleccionado];
+        }
+        
+        listaOrdenada.push({ id: stringId, etiqueta: etiqueta });
+    }
+
+    // --- RE-ORDENAMIENTO AUTOMÁTICO ---
+    const prioridad = { 'E': 1, 'P': 3, 'C': 4, 'F': 5 }; // '1,2,3' serán prioridad 2
+    
+    listaOrdenada.sort((a, b) => {
+        const getPeso = (item) => {
+            if (prioridad[item.etiqueta]) return prioridad[item.etiqueta];
+            return 2; // Si es numérico, peso 2
+        };
+
+        const pesoA = getPeso(a);
+        const pesoB = getPeso(b);
+
+        if (pesoA !== pesoB) return pesoA - pesoB;
+        // Si tienen el mismo peso (ej: ambos son números), ordenarlos por valor numérico
+        return parseInt(a.etiqueta || 0) - parseInt(b.etiqueta || 0);
+    });
+
+    actualizarInterfazSeleccion();
+};
+/*
 function actualizarInterfazSeleccion() {
     const contador = document.getElementById('contador-seleccion');
     if (contador) contador.innerText = listaOrdenada.length;
@@ -347,6 +408,54 @@ function actualizarInterfazSeleccion() {
         input.checked = listaOrdenada.includes(String(idInput));
     });
 }
+*/
+
+function actualizarInterfazSeleccion() {
+    const contador = document.getElementById('contador-seleccion');
+    if (contador) contador.innerText = listaOrdenada.length;
+    
+    const cola = document.getElementById('cola-seleccion');
+    if (cola) {
+        cola.innerHTML = '';
+        
+        listaOrdenada.forEach((item) => {
+            // 1. Extraemos el ID de forma segura
+            const idCanto = (typeof item === 'object' && item !== null) ? item.id : item;
+            const etiqueta = (typeof item === 'object' && item !== null) ? item.etiqueta : "N";
+            
+            // 2. Buscamos el objeto del canto en 'todosLosCantos'
+            const canto = todosLosCantos.find(c => String(c.id) === String(idCanto));
+            
+            if (canto) {
+                const tag = document.createElement('div');
+                tag.className = 'canto-tag';
+                
+                // 3. AQUÍ ESTÁ LA CLAVE: 
+                // Accedemos a las propiedades por separado. 
+                // NUNCA imprimas el objeto entero.
+                tag.innerHTML = `<span>${etiqueta}</span> ${canto.title}`;
+                
+                tag.onclick = (e) => { 
+                    e.stopPropagation(); 
+                    window.toggleCanto(idCanto); 
+                };
+                cola.appendChild(tag);
+            }
+        });
+    }
+
+    // Actualizar checkboxes
+    document.querySelectorAll('.item-canto input[type="checkbox"]').forEach(input => {
+        const idInput = input.getAttribute('data-id');
+        const existe = listaOrdenada.some(item => {
+            const id = typeof item === 'object' ? item.id : item;
+            return String(id) === String(idInput);
+        });
+        input.checked = existe;
+    });
+}
+
+
 
 // Funcion de guardar Firebase
 window.guardarListaFirebase = async (btn) => {
@@ -366,11 +475,17 @@ window.guardarListaFirebase = async (btn) => {
         return;
     }
 
-    // 3. Preparar lista
+    // 3. Preparar lista (Integración de la limpieza de datos)
+    // Convertimos nuestra lista de trabajo al formato que Firebase espera (id y tag)
+    const listaLimpia = listaOrdenada.map(item => ({
+        id: typeof item === 'object' ? item.id : item,
+        tag: typeof item === 'object' ? item.etiqueta : "N"
+    }));
+
     const nuevaLista = { 
         id: listaId, 
         nombre, 
-        ids_cantos: [...listaOrdenada], 
+        ids_cantos: listaLimpia, // Guardamos la lista ya limpia
         ultimaActualizacion: new Date().toISOString(),
         origin: 'local' 
     };
@@ -402,12 +517,12 @@ window.guardarListaFirebase = async (btn) => {
         }
     }
 
-    // 7. Feedback visual robusto (usando el botón que pasamos por parámetro)
+    // 7. Feedback visual
     if (btn) {
-        const contenidoOriginal = btn.innerHTML; // Guardamos el icono y el texto
+        const contenidoOriginal = btn.innerHTML;
         btn.innerHTML = "✅ Guardado";
         setTimeout(() => {
-            btn.innerHTML = contenidoOriginal; // Restauramos el icono y el texto
+            btn.innerHTML = contenidoOriginal;
         }, 2000);
     }
 };
@@ -574,20 +689,40 @@ window.irANuevaLista = () => {
     setTimeout(() => { document.getElementById('nombreLista')?.focus(); }, 500);
 };
 
+
 window.toggleDetalleLista = (idLista) => {
     const detalleDiv = document.getElementById(`detalle-${idLista}`);
-    if (!detalleDiv || !snapshotActual) return;
+    
+    // Si no encuentra el elemento en el HTML, nos salimos amablemente
+    if (!detalleDiv) {
+        console.error(`No se encontró el elemento con ID: detalle-${idLista}`);
+        return;
+    }
+    
+    // Ahora que estamos seguros que existe, podemos usarlo
     const estaCerrado = detalleDiv.classList.contains('cfg-close');
+    
+    // Cerramos los demás
     document.querySelectorAll('.detalle-lista-cantos').forEach(d => d.classList.add('cfg-close'));
+    
     if (estaCerrado) {
         detalleDiv.classList.remove('cfg-close');
-        const source = snapshotActual.docs || snapshotActual;
-        const docSnap = source.find(d => d.id === idLista);
-        const data = docSnap.data ? docSnap.data() : docSnap;
-        detalleDiv.innerHTML = data.ids_cantos.map((id, i) => {
+        
+        // Obtenemos los datos de la lista (asegurando acceso a los datos)
+        const lista = listasLocalesCache.find(l => l.id === idLista);
+        if (!lista) return;
+
+        // Renderizamos los cantos
+        detalleDiv.innerHTML = lista.ids_cantos.map((item, i) => {
+            // Manejamos si el item es objeto {id, tag} o string antiguo
+            const id = (typeof item === 'object' && item !== null) ? item.id : item;
+            const etiqueta = (typeof item === 'object' && item !== null) ? item.tag : (i + 1);
+            
             const c = todosLosCantos.find(can => String(can.id) === String(id));
+            
+            // Retornamos el HTML, evitando pasar el objeto 'c' directamente
             return `<div class="sub-item-canto" onclick="window.abrirVisorCanto('${id}')">
-                <span class="num">${i + 1}</span><span>${c ? c.title : id}</span>
+                <span class="num">${etiqueta}</span><span>${c ? c.title : "Canto desconocido"}</span>
             </div>`;
         }).join('');
     }
@@ -595,13 +730,28 @@ window.toggleDetalleLista = (idLista) => {
 
 window.cargarListaParaEditar = (docId, ids, nombre) => {
     window.editingId = docId;
-    listaOrdenada = [...ids];
+    
+    // Convertimos los IDs (sean objetos o strings) a objetos consistentes {id, etiqueta}
+    listaOrdenada = ids.map(item => {
+        if (typeof item === 'object' && item !== null) {
+            return { 
+                id: String(item.id), 
+                etiqueta: item.etiqueta || item.tag || "N" 
+            };
+        }
+        return { id: String(item), etiqueta: "N" };
+    });
+
     document.getElementById('nombreLista').value = nombre;
+    
     if (document.getElementById('content-nueva-lista').classList.contains('cfg-close')) {
         window.toggleSection('content-nueva-lista', 'wrapper-nueva-lista');
     }
-    actualizarInterfazSeleccion();
-    renderizarLista(todosLosCantos);
+    
+    // IMPORTANTE: Primero actualizamos la vista de la lista, luego renderizamos los checkboxes
+    actualizarInterfazSeleccion(); 
+    renderizarLista(todosLosCantos); 
+    
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
@@ -711,3 +861,22 @@ document.getElementById('btn-login-google')?.addEventListener('click', async () 
         console.error("Fallo en el login:", err);
     }
 });
+
+
+// ZONA DE MOMENTOS
+window.setMomento = (elemento, momento) => {
+    // 1. Actualizamos la lógica
+    momentoSeleccionado = momento;
+    console.log("Momento activo:", momentoSeleccionado);
+
+    // 2. Actualizamos la parte visual (si se pasó el elemento)
+    if (elemento) {
+        // Quitamos 'active' de todos los hermanos
+        const padre = elemento.parentElement;
+        padre.querySelectorAll('.opcion-momento').forEach(el => el.classList.remove('active'));
+        
+        // Ponemos 'active' al seleccionado
+        elemento.classList.add('active');
+    }
+};
+

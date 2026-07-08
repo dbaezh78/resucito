@@ -35,13 +35,13 @@
         </div>
 
         <!---->
-        <div class="selector-momentos">
-            <button onclick="window.setMomento('Entrada')">Entrada</button>
-            <button class="btn-momento" onclick="window.setMomento('Libre')">1, 2, 3...</button>
-            <button onclick="window.setMomento('Paz')">Paz</button>
-            <button onclick="window.setMomento('Comunión')">Comunión</button>
-            <button onclick="window.setMomento('Final')">Final</button>
-    </div>
+        <div class="selector-momentos" id="contenedor-momentos">
+            <div class="opcion-momento" onclick="window.setMomento(this, 'Entrada')">Entrada</div>
+            <div class="opcion-momento active" onclick="window.setMomento(this, 'Libre')">1, 2, 3...</div>
+            <div class="opcion-momento" onclick="window.setMomento(this, 'Paz')">Paz</div>
+            <div class="opcion-momento" onclick="window.setMomento(this, 'Comunión')">Comunión</div>
+            <div class="opcion-momento" onclick="window.setMomento(this, 'Final')">Final</div>
+        </div>
         <!---->
 
 
