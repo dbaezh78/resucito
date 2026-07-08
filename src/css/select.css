@@ -987,3 +987,12 @@ input:checked + .slider:before { transform: translateX(22px); }
     border-color: #02175b;
     font-weight: bold;
 }
+
+/* Los cantos que no son del momento se ven más tenues */
+.canto-fondo {
+    opacity: 0.5;
+    background-color: #f0f0f0;
+}
+.canto-fondo:hover {
+    opacity: 0.8;
+}

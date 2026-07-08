@@ -18,8 +18,8 @@ let momentoSeleccionado = 'Libre'; // Por defecto, modo numérico
 const MAPA_ETIQUETAS = {
     "Entrada": "E",
     "Paz": "P",
+    "Liturgia": "L",
     "Comunión": "C",
-    "Litúrgico": "L",
     "Final": "F"
 };
 
@@ -189,13 +189,34 @@ function renderizarLista(lista) {
     const contenedor = document.getElementById('contenedor-seleccion');
     if (!contenedor) return;
     contenedor.innerHTML = '';
-    
-    lista.forEach(canto => {
+
+    // 1. Crear una copia y ordenarla según el momento activo
+    // Esto coloca los cantos que incluyen el momentoSeleccionado al principio
+    const listaOrdenadaParaMostrar = [...lista].sort((a, b) => {
+        if (momentoSeleccionado === 'Libre') return 0;
+        
+        const esDelMomentoA = a.moments && a.moments.includes(momentoSeleccionado);
+        const esDelMomentoB = b.moments && b.moments.includes(momentoSeleccionado);
+
+        if (esDelMomentoA && !esDelMomentoB) return -1; // A va primero
+        if (!esDelMomentoA && esDelMomentoB) return 1;  // B va primero
+        return 0;
+    });
+
+    // 2. Pintar la lista ya ordenada
+    listaOrdenadaParaMostrar.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'item-canto';
-        const nombreAMostrar = canto.title || "Sin título"; 
         
-        // CORRECCIÓN AQUÍ: Usamos .some() para buscar en la lista de OBJETOS
+        // Estilo visual: opacidad si NO es del momento (opcional, ayuda a identificar)
+        const esDelMomento = canto.moments && canto.moments.includes(momentoSeleccionado);
+        if (momentoSeleccionado !== 'Libre' && !esDelMomento) {
+            div.style.opacity = "0.6";
+        }
+
+        const nombreAMostrar = canto.title || "Sin título";
+        
+        // Verificamos si el canto está en la lista de seleccionados
         const isChecked = listaOrdenada.some(item => String(item.id) === String(canto.id));
         
         div.onclick = () => window.toggleCanto(canto.id);
@@ -787,12 +808,6 @@ window.toggleSection = (contentId, wrapperId) => {
     }
 };
 
-
-
-
-
-
-
 // --- DETECCIÓN DE COMPARTIDO CON REFRESH FORZOSO Y SOPORTE DE ACENTOS ---
 import { getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
@@ -885,5 +900,7 @@ window.setMomento = (elemento, momento) => {
         // Ponemos 'active' al seleccionado
         elemento.classList.add('active');
     }
+    // Llamar a renderizar con la lista completa
+    renderizarLista(todosLosCantos);
 };
 
