@@ -98,54 +98,139 @@ window.tabsConfig = [
 // BOTON DE ACTUALIZAR
 // ==========================================
 
-{ 
+            { 
                 id: 'btn-clear-cache',
                 label: 'Limpiar Caché y Datos', 
                 tipo: 'button',
                 color: '#bc0009',
                 accion: async () => {
-                    // --- NUEVA SEGURIDAD POR FALTA DE INTERNET ---
+                    // 1. Validar conexión activa (es necesario para volver a descargar)
                     if (!navigator.onLine) {
-                        const avisoOffline = confirm("🚫 NO TIENES INTERNET.\n\nSi limpias la caché ahora, perderás el acceso offline a los cantos. ¿Deseas continuar...?");
-                        if (!avisoOffline) return;
-
-                        const avisoCritico = confirm("🌐📶 AVISO DE CONEXIÓN:\n\nSin Internet / DATA / RED no podrás volver a cargar la aplicación.\n\n⚠️ Asegúrate PRIMERO de que estas conectado a internet.\n\n¿Quieres Continuar?...?");                        if (!avisoCritico) return;
+                        alert("🚫 SE REQUIERE INTERNET.\n\nPara limpiar la caché y volver a descargar todos los cantos de forma segura necesitas una conexión activa a internet.");
+                        return;
                     }
 
-                    // --- TU BLOQUE ORIGINAL TAL CUAL ME LO PEDISTE ---
-                    if(confirm("⚠ Limpiar Cache y 🔃👤 Reiniciar Sesión. ¿Continuar?")) {
+                    // 2. Confirmación informativa
+                    if (confirm("Esta acción borrará y volverá a descargar limpia toda la caché de cantos y páginas de la aplicación.\n\n• Tu sesión de Google/Firebase, tus listados y configuraciones personales NO se verán afectados.\n\n¿Deseas continuar?")) {
                         
-                        // 1. PRIMERO: Cerrar sesión en Firebase (Fundamental)
-                        if (window.firebaseAPI && window.firebaseAPI.logout) {
-                            try {
-                                await window.firebaseAPI.logout();
-                                console.log("Sesión de Firebase cerrada correctamente.");
-                            } catch (e) {
-                                console.error("Error al cerrar sesión:", e);
+                        // A. Crear e insertar el modal de progreso en el DOM
+                        const modalId = 'modal-progreso-cache-db';
+                        let modal = document.getElementById(modalId);
+                        if (!modal) {
+                            modal = document.createElement('div');
+                            modal.id = modalId;
+                            modal.style.cssText = `
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(0, 0, 0, 0.85);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                z-index: 99999;
+                                font-family: sans-serif;
+                                color: white;
+                                backdrop-filter: blur(5px);
+                            `;
+                            modal.innerHTML = `
+                                <div style="background: #1e1e1e; padding: 30px; border-radius: 16px; width: 90%; max-width: 400px; text-align: center; border: 1px solid #333; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                                    <h3 style="margin-top: 0; color: #bc0009; font-size: 1.3em; letter-spacing: 0.5px;">Limpieza y Recarga de Caché</h3>
+                                    <p id="msg-progreso-cache" style="font-size: 0.95em; margin: 15px 0; color: #ccc;">Preparando limpieza...</p>
+                                    <div style="width: 100%; background: #333; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 20px; border: 1px solid #444;">
+                                        <div id="barra-progreso-cache" style="width: 0%; height: 100%; background: linear-gradient(90deg, #bc0009, #ff5252); transition: width 0.1s;"></div>
+                                    </div>
+                                    <div id="sub-msg-progreso-cache" style="font-size: 0.85em; color: #888; font-weight: bold;">No cierres la aplicación</div>
+                                </div>
+                            `;
+                            document.body.appendChild(modal);
+                        }
+
+                        const msgTexto = document.getElementById('msg-progreso-cache');
+                        const barraProgreso = document.getElementById('barra-progreso-cache');
+
+                        const actualizarProgreso = (txt, pct) => {
+                            if (msgTexto) msgTexto.innerText = txt;
+                            if (barraProgreso) barraProgreso.style.width = `${pct}%`;
+                        };
+
+                        try {
+                            // B. Limpieza de Caché Storage
+                            actualizarProgreso("Limpiando archivos de caché viejos...", 10);
+                            if ('caches' in window) {
+                                const cacheNames = await caches.keys();
+                                await Promise.all(cacheNames.map(name => caches.delete(name)));
                             }
+
+                            // C. Desregistrar Service Workers viejos
+                            actualizarProgreso("Restableciendo Service Worker...", 20);
+                            if ('serviceWorker' in navigator) {
+                                const registrations = await navigator.serviceWorker.getRegistrations();
+                                for (let registration of registrations) {
+                                    await registration.unregister();
+                                }
+                            }
+
+                            // D. Descargar el índice de cantos de forma segura usando ruta absoluta
+                            actualizarProgreso("Obteniendo índice de cantos...", 30);
+                            const response = await fetch('/src/data/indicecantos.json');
+                            if (!response.ok) throw new Error("No se pudo obtener el índice del servidor.");
+                            const cantos = await response.json();
+                            const total = cantos.length;
+
+                            // E. Abrir la nueva caché
+                            const cacheName = window.CACHE_NAME || 'cantos-cache-v1.31';
+                            const cache = await caches.open(cacheName);
+
+                            // Cachear páginas base
+                            try {
+                                const resIndex = await fetch('/');
+                                if (resIndex.ok) await cache.put('/', resIndex);
+                                const resIndexHtml = await fetch('/index.html');
+                                if (resIndexHtml.ok) await cache.put('/index.html', resIndexHtml);
+                            } catch (e) { console.warn("Error cacheando index base:", e); }
+
+                            // F. Descargar los recursos .css de cada canto
+                            for (let i = 0; i < total; i++) {
+                                const cantoId = cantos[i].id;
+                                const fileUrl = `/src/css/pg/${cantoId}.css`;
+                                
+                                try {
+                                    const res = await fetch(fileUrl);
+                                    if (res.ok) {
+                                        await cache.put(fileUrl, res);
+                                    }
+                                } catch (err) {
+                                    console.warn("No se pudo cachear estilo del canto:", cantoId, err);
+                                }
+
+                                // Mapear progreso entre 35% y 95%
+                                const pct = Math.round(35 + ((i + 1) / total) * 60);
+                                actualizarProgreso(`Descargando cantos: ${i + 1} de ${total} (${pct}%)`, pct);
+
+                                // Permitir actualizaciones suaves del DOM
+                                if (i % 25 === 0) {
+                                    await new Promise(resolve => setTimeout(resolve, 8));
+                                }
+                            }
+
+                            actualizarProgreso("Reinstalación completa. Finalizando...", 98);
+                            await new Promise(resolve => setTimeout(resolve, 600));
+
+                            // G. Remover modal
+                            modal.remove();
+
+                            alert("✅ ¡Caché y datos de cantos actualizados con éxito!\n\nSe han descargado de forma limpia todas las páginas y canciones. Tu sesión y listados están intactos.");
+                            
+                            // Recargar para arrancar limpio con el nuevo Service Worker
+                            window.location.reload();
+
+                        } catch (err) {
+                            if (modal) modal.remove();
+                            console.error("Fallo al reconstruir la caché:", err);
+                            alert("❌ Ocurrió un error al reconstruir la caché:\n\n" + err.message + "\n\nAsegúrate de tener buena señal e intenta de nuevo.");
                         }
-
-                        // 2. Limpiar LocalStorage (Preferencias, acordes, cejillas)
-                        localStorage.clear();
-
-                        // 3. Limpiar Caché de la PWA (Archivos offline)
-                        if ('caches' in window) {
-                            const cacheNames = await caches.keys();
-                            await Promise.all(cacheNames.map(name => caches.delete(name)));
-                        }
-
-                        // 4. Limpiar IndexedDB (Bases de datos internas)
-                        if ('indexedDB' in window) {
-                            const dbs = await indexedDB.databases();
-                            dbs.forEach(db => { if (db.name) indexedDB.deleteDatabase(db.name); });
-                        }
-
-                        // 5. Preparar el re-login
-                        sessionStorage.setItem('pending_login', 'true');
-                        sessionStorage.setItem('force_login_prompt', 'true');
-
-                        // 6. Recarga total desde el servidor
-                        window.location.reload(true);
                     }
                 }
             },

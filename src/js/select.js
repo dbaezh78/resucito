@@ -67,19 +67,99 @@ cargarDesdeEquipo();
 
 
 
-// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL ---
+// --- 3. SINCRONIZACIÓN ONLINE Y GESTIÓN DE PERFIL (OFFLINE-FIRST) ---
+let sincronizando = false;
+
+async function ejecutarSincronizacionFondo() {
+    const user = auth.currentUser;
+    if (!user || sincronizando) return;
+    sincronizando = true;
+    console.log("🔄 Iniciando sincronización de fondo...");
+
+    try {
+        // A. Procesar eliminaciones pendientes
+        let pendingDeletions = JSON.parse(localStorage.getItem('cache_listas_eliminadas_pendientes') || "[]");
+        let deletionsUpdated = false;
+
+        if (pendingDeletions.length > 0 && navigator.onLine) {
+            for (let i = pendingDeletions.length - 1; i >= 0; i--) {
+                const idLista = pendingDeletions[i];
+                try {
+                    await deleteDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", idLista));
+                    console.log(`🔥 Sincronizada eliminación offline: ${idLista}`);
+                    pendingDeletions.splice(i, 1);
+                    deletionsUpdated = true;
+                } catch (e) {
+                    console.warn(`No se pudo sincronizar eliminación de la lista ${idLista}:`, e);
+                }
+            }
+        }
+        if (deletionsUpdated) {
+            localStorage.setItem('cache_listas_eliminadas_pendientes', JSON.stringify(pendingDeletions));
+        }
+
+        // B. Procesar subidas/actualizaciones pendientes
+        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+        let huboCambios = false;
+
+        if (navigator.onLine) {
+            for (let i = 0; i < cache.length; i++) {
+                const lista = cache[i];
+                if (lista.pendingSync) {
+                    try {
+                        const listaLimpia = lista.ids_cantos.map(item => ({
+                            id: typeof item === 'object' ? item.id : item,
+                            tag: typeof item === 'object' ? item.etiqueta || item.tag : "N"
+                        }));
+
+                        await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", lista.id), { 
+                            id: lista.id,
+                            nombre: lista.nombre,
+                            ids_cantos: listaLimpia,
+                            ultimaActualizacion: new Date().toISOString(),
+                            origin: 'cloud' 
+                        });
+
+                        console.log(`☁️ Sincronizada lista offline: ${lista.nombre}`);
+                        
+                        lista.origin = 'cloud';
+                        delete lista.pendingSync;
+                        huboCambios = true;
+                    } catch (e) {
+                        console.warn(`No se pudo sincronizar la lista ${lista.nombre}:`, e);
+                    }
+                }
+            }
+        }
+
+        if (huboCambios) {
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+            listasLocalesCache = cache;
+            renderizarListasUI(cache);
+        }
+    } catch (e) {
+        console.error("Error durante la sincronización de fondo:", e);
+    } finally {
+        sincronizando = false;
+    }
+}
+
+// Escuchar reconexión del navegador
+window.addEventListener('online', () => {
+    console.log("🌐 Conexión restablecida. Sincronizando datos...");
+    ejecutarSincronizacionFondo();
+});
+
 onAuthStateChanged(auth, (user) => {
     const btnLogin = document.getElementById('btn-login-google');
     const btnLogout = document.getElementById('btn-logout-perfil');
     const userPhoto = document.getElementById('user-photo');
 
-    // ✅ LANZAR SIEMPRE AL INICIO (Para invitados y usuarios logueados)
     detectarLinkCompartido();
 
     if (user) {
         console.log("👤 Sesión activa:", user.displayName);
         
-        // UI de usuario
         if (btnLogin) btnLogin.style.display = 'none';
         if (btnLogout) btnLogout.style.display = 'block';
         if (userPhoto) {
@@ -88,31 +168,47 @@ onAuthStateChanged(auth, (user) => {
             userPhoto.title = user.displayName;
         }
 
-        // Escucha de listas (Firestore)
         const q = query(collection(db, "usuarios", user.uid, "listasPersonalizadas"), orderBy("ultimaActualizacion", "desc"));
         onSnapshot(q, (snapshot) => {
             if (bloqueoSnapshot) return; 
             if (snapshot.metadata.fromCache && listasLocalesCache.length > 0) return;
             
             snapshotActual = snapshot;
-            listasLocalesCache = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            
+            const cloudLists = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            const pendingDeletions = JSON.parse(localStorage.getItem('cache_listas_eliminadas_pendientes') || "[]");
+            const filteredCloudLists = cloudLists.filter(l => !pendingDeletions.includes(l.id));
+            
+            let localCache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+            const pendingLists = localCache.filter(l => l.pendingSync === true);
+            
+            const mergedLists = [...filteredCloudLists];
+            pendingLists.forEach(pending => {
+                const index = mergedLists.findIndex(l => l.id === pending.id);
+                if (index !== -1) {
+                    mergedLists[index] = pending;
+                } else {
+                    mergedLists.unshift(pending);
+                }
+            });
+
+            listasLocalesCache = mergedLists;
             renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
 
-            // ✅ AVISO A SETTINGS: Datos de la nube listos
             window._uiYaSincronizada = true; 
             console.log("✅ Listas sincronizadas");
+
+            if (pendingLists.length > 0 || pendingDeletions.length > 0) {
+                ejecutarSincronizacionFondo();
+            }
         });
 
-        // ❌ BORRADO: Ya no llamamos detectarLinkCompartido() aquí dentro
-
     } else {
-        // No hay sesión
         if (btnLogin) btnLogin.style.display = 'block';
         if (btnLogout) btnLogout.style.display = 'none';
         if (userPhoto) userPhoto.style.display = 'none';
         
-        // Si no hay sesión, mostramos lo que haya en LocalStorage (importaciones de invitados)
         const datosLocales = localStorage.getItem('cache_listas_personalizadas');
         if (datosLocales) {
             listasLocalesCache = JSON.parse(datosLocales);
@@ -121,7 +217,6 @@ onAuthStateChanged(auth, (user) => {
             renderizarListasUI([]); 
         }
 
-        // ✅ AVISO A SETTINGS: No hay nube, pero ya cargamos lo local
         window._uiYaSincronizada = true;
         console.log("ℹ️ Modo invitado: Cargado local");
     }
@@ -515,13 +610,15 @@ window.guardarListaFirebase = async (btn) => {
         nombre, 
         ids_cantos: listaLimpia, // Guardamos la lista ya limpia
         ultimaActualizacion: new Date().toISOString(),
-        origin: 'local' 
+        origin: 'local',
+        pendingSync: user ? true : false
     };
 
     // 4. Guardar local y actualizar UI
     cache = cache.filter(l => l.id !== listaId && l.id !== window.editingId);
     cache.unshift(nuevaLista);
     localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+    listasLocalesCache = cache; // Actualización instantánea de la variable global de cache
     
     renderizarListasUI(cache); // Refresca las tarjetas
     
@@ -531,18 +628,9 @@ window.guardarListaFirebase = async (btn) => {
     listaOrdenada = [];
     actualizarInterfazSeleccion(); // Esto vacía los checkboxes
 
-    // 6. Sincronizar en nube
+    // 6. Sincronizar en nube (en segundo plano, sin bloquear la UI)
     if (user) {
-        try {
-            await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", listaId), { 
-                ...nuevaLista, 
-                origin: 'cloud', 
-                ultimaActualizacion: serverTimestamp() 
-            });
-            console.log("☁️ Sincronización a la nube exitosa");
-        } catch (e) { 
-            console.warn("Offline, guardado solo local."); 
-        }
+        ejecutarSincronizacionFondo();
     }
 
     // 7. Feedback visual
@@ -569,19 +657,20 @@ window.eliminarLista = async (idLista, nombreLista) => {
     
     // Guardamos el nuevo estado en local
     localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+    listasLocalesCache = cache; // Actualización instantánea de la variable global de cache
 
     // 3. ACTUALIZAR UI AL INSTANTE (Sin refrescar la página)
     // Esto es el equivalente a "borrar el nodo" pero de forma automática y segura
     renderizarListasUI(cache); 
 
-    // 4. Eliminar de Firebase (en segundo plano)
+    // 4. Registrar eliminación pendiente y sincronizar de fondo (en segundo plano)
     if (auth.currentUser) {
-        try {
-            await deleteDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idLista));
-            console.log("🔥 Eliminado de la nube correctamente");
-        } catch (e) {
-            console.error("Error al eliminar de Firebase:", e);
+        let pendingDeletions = JSON.parse(localStorage.getItem('cache_listas_eliminadas_pendientes') || "[]");
+        if (!pendingDeletions.includes(idLista)) {
+            pendingDeletions.push(idLista);
+            localStorage.setItem('cache_listas_eliminadas_pendientes', JSON.stringify(pendingDeletions));
         }
+        ejecutarSincronizacionFondo();
     }
 };
 
@@ -681,7 +770,7 @@ window.importarLista = (event) => {
     const archivo = event.target.files[0];
     if (!archivo) return;
     const reader = new FileReader();
-    reader.onload = async (e) => {
+    reader.onload = (e) => {
         try {
             const l = JSON.parse(e.target.result);
             l.id = "imp-" + Date.now();
@@ -691,16 +780,17 @@ window.importarLista = (event) => {
                 l.nombre = "📂 " + l.nombre;
             }
 
+            const user = auth.currentUser;
+            l.origin = 'local';
+            if (user) {
+                l.pendingSync = true;
+            }
+
             let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
             cache.unshift(l);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+            listasLocalesCache = cache; // Actualizar variable global de cache
             
-            if (auth.currentUser) {
-                await setDoc(doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", l.id), { 
-                    ...l, 
-                    ultimaActualizacion: serverTimestamp() 
-                });
-            }
             location.reload();
         } catch (err) { alert("Archivo no válido."); }
     };
@@ -848,21 +938,18 @@ const detectarLinkCompartido = async () => {
                     id: idFinal, 
                     nombre: "🔗 " + nombreLimpio, 
                     ids_cantos: datosCanto.i, 
-                    ultimaActualizacion: new Date().toISOString() 
+                    ultimaActualizacion: new Date().toISOString(),
+                    origin: 'local',
+                    pendingSync: auth.currentUser ? true : false
                 };
 
                 // 1. Guardar local (Para todos, invitados y logueados)
                 let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
                 cache.unshift(nl);
                 localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                listasLocalesCache = cache; // Actualizar variable global de cache
 
-                // 2. Guardar en la nube (Solo si está logueado)
-                if (auth.currentUser) {
-                    const userRef = doc(db, "usuarios", auth.currentUser.uid, "listasPersonalizadas", idFinal);
-                    await setDoc(userRef, { ...nl, ultimaActualizacion: serverTimestamp() });
-                }
-
-                // 3. Limpiar URL y recargar
+                // 2. Limpiar URL y recargar
                 window.location.href = window.location.origin + window.location.pathname;
             }
         } catch (e) {

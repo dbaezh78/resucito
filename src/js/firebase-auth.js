@@ -7,6 +7,9 @@ import {
     signOut 
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { 
+    initializeFirestore, 
+    persistentLocalCache, 
+    persistentMultipleTabManager,
     getFirestore, 
     doc, 
     setDoc 
@@ -24,7 +27,20 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const db = getFirestore(app);
+
+let dbTemp;
+try {
+    dbTemp = initializeFirestore(app, {
+        localCache: persistentLocalCache({
+            tabManager: persistentMultipleTabManager()
+        })
+    });
+    console.log("🔥 Firestore offline persistence enabled.");
+} catch (e) {
+    console.warn("Failed to initialize Firestore with persistent cache:", e);
+    dbTemp = getFirestore(app);
+}
+export const db = dbTemp;
 export const googleProvider = new GoogleAuthProvider();
 
 // ================================================================

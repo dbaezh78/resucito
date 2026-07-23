@@ -52,8 +52,9 @@
                     
                         <a href="https://www.youtube.com/@CristoJesusReydereyes" target="_blank"><span class="material-symbols-outlined arrow-icon">youtube_activity</span> YouTube</a>
                         <a href="https://www.facebook.com/groups/721999947892692" target="_blank"><span class="material-symbols-outlined arrow-icon">communities</span> Facebook</a>
-                        <a href="https://dbaezh78.github.io/salterios/" target="_blank"><span class="material-symbols-outlined arrow-icon">prayer_times</span> Laudes</a>
                         <a href="https://dbaezh78.github.io/ev/" target="_blank"><span class="material-symbols-outlined arrow-icon">book_2</span> Evangelio del Día</a>
+                        <a href="https://dbaezh78.github.io/salterios/" target="_blank"><span class="material-symbols-outlined arrow-icon">prayer_times</span> Laudes</a>
+                        <a href="https://biblia.resucito.do/" target="_blank"><span class="material-symbols-outlined arrow-icon">book_2</span> Biblia de Jerusalen con Paralelos</a>
                     </div>
                 </button>
 
