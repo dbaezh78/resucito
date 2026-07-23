@@ -239,6 +239,11 @@ function abrirModalConfiguracion() {
     document.body.appendChild(modal);
     document.body.classList.add('modal-open');
     
+    // Traducir dinámicamente el contenido del modal de ajustes
+    if (typeof window.translateDOM === 'function') {
+        window.translateDOM(modal);
+    }
+    
 // DISPARAR ANIMACIÓN DE SUBIDA
     setTimeout(() => {
         modal.classList.add('active'); // Activa el fondo oscuro

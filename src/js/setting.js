@@ -42,27 +42,7 @@ window.tabsConfig = [
                     const langActual = localStorage.getItem('pref-lang') || 'Español';
                     if (val !== langActual) {
                         localStorage.setItem('pref-lang', val);
-                        
-                        // Mapeo de Subdominios para redirección
-                        const mapaDominios = {
-                            'Español': 'https://resucito.do',
-                            'English': 'https://en.resucito.do',
-                            'Italiano': 'https://it.resucito.do',
-                            'Português': 'https://po.resucito.do',
-                            'Français': 'https://fr.resucito.do',
-                            'Latin': 'https://la.resucito.do',
-                            'Ruso': 'https://ru.resucito.do',
-                            'Chino': 'https://ch.resucito.do'
-                        };
-
-                        const urlParams = new URLSearchParams(window.location.search);
-                        const cantoId = urlParams.get('canto');
-                        
-                        // Si el idioma no tiene subdominio asignado, vuelve al principal
-                        let nuevaUrl = (mapaDominios[val] || mapaDominios['Español']) + '/';
-                        if (cantoId) nuevaUrl += '?canto=' + cantoId;
-
-                        window.location.href = nuevaUrl;
+                        window.location.reload();
                     }
                 }
             },
@@ -611,7 +591,7 @@ window.generarContenidoSettings = function() {
             ${tabsConfig.map((tab, index) => `
                 <button class="tab-btn ${index === 0 ? 'active' : ''}" onclick="window.cambiarTab('${tab.id}')">
                     <span class="material-symbols-outlined">${tab.icon}</span>
-                    <span>${tab.label}</span>
+                    <span>${window.t ? window.t(tab.label) : tab.label}</span>
                 </button>
             `).join('')}
         </div>
@@ -621,7 +601,14 @@ window.generarContenidoSettings = function() {
         <div id="${tab.id}" class="tab-panel ${index === 0 ? 'active' : ''}">
             ${tab.secciones.filter(opt => !opt.hidden).map(opt => {
                 // 1. Intentar obtener el valor del LocalStorage
-                const valorGuardado = opt.storageKey ? localStorage.getItem(opt.storageKey) : null;
+                let valorGuardado = opt.storageKey ? localStorage.getItem(opt.storageKey) : null;
+                
+                // Fallback de idioma basado en el hostname del subdominio si no hay valor local
+                if (opt.id === 'global-set-lang' && !valorGuardado) {
+                    if (typeof window.obtenerIdiomaActual === 'function') {
+                        valorGuardado = window.obtenerIdiomaActual();
+                    }
+                }
                 
                 // 2. FILTRO DE SEGURIDAD: 
                 // Si el valor es nulo o es la palabra "undefined"/"null" por error, 
@@ -641,7 +628,7 @@ window.generarContenidoSettings = function() {
 
                 return `
                 <div class="setting-row" data-id="${opt.id}">
-                    <label>${opt.label}</label>
+                    <label>${window.t ? window.t(opt.label) : opt.label}</label>
                     <div class="setting-control">${renderControl(opt, isChecked, valActual)}</div>
                 </div>`;
             }).join('')}

@@ -1690,6 +1690,11 @@ const renderizarControlesDinamicos = () => {
         `;
         container.appendChild(divSeccion);
     });
+
+    // Traducir los controles dinámicos del perfil
+    if (typeof window.translateDOM === 'function') {
+        window.translateDOM(container);
+    }
 };
 
 // ==========================================
