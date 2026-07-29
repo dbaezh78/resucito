@@ -232,47 +232,12 @@
     <script src="./js/LogControl.js" defer></script>
     
     <script src="data/Contents.js" defer></script>                    <!-- Nivel 1 -->
-    <!-- Cargador Dinámico de Base de Datos de Cantos por Idioma -->
-    <script>
-        (function() {
-            const lang = localStorage.getItem('pref-lang') || 'Español';
-            const suffixes = {
-                'English': '_en',
-                'Italiano': '_it',
-                'Português': '_pt',
-                'Français': '_fr',
-                'Latin': '_la',
-                'Ruso': '_ru',
-                'Chino': '_zh'
-            };
-            const suffix = suffixes[lang] || '';
+    <script src="./data/canto_data.js" defer></script> <!-- Primer JS, ya que contiene los datos -->
+    <script src="./data/canto_data_aleluyai.js" defer></script>   <!-- Listo-->
+    <script src="./data/canto_data_joven.js" defer></script>      <!-- Listo-->
+    <script src="./data/salmodia_data.js" defer></script>         <!-- Listo-->
 
-            function loadDynamicScript(defaultSrc, langSrc) {
-                const s = document.createElement('script');
-                s.async = false;
-                if (suffix) {
-                    s.src = langSrc;
-                    s.onerror = function() {
-                        console.warn(`Archivo ${langSrc} no encontrado. Cargando versión en español por defecto.`);
-                        const fallback = document.createElement('script');
-                        fallback.src = defaultSrc;
-                        fallback.async = false;
-                        document.head.appendChild(fallback);
-                    };
-                } else {
-                    s.src = defaultSrc;
-                }
-                document.head.appendChild(s);
-            }
-
-            // Cargar en el orden original respetando dependencias
-            loadDynamicScript('./data/canto_data.js', `./data/canto_data${suffix}.js`);
-            loadDynamicScript('./data/canto_data_aleluyai.js', './data/canto_data_aleluyai.js');
-            loadDynamicScript('./data/canto_data_joven.js', './data/canto_data_joven.js');
-            loadDynamicScript('./data/salmodia_data.js', `./data/salmodia_data${suffix}.js`);
-            loadDynamicScript('js/songs-data.js', `js/songs-data${suffix}.js`);
-        })();
-    </script>
+    <script src="js/songs-data.js" defer></script>
     <script src="js/songs-data-aev.js" defer></script>
     <script src="./js/config.js" defer></script>
     

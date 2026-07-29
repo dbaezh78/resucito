@@ -215,37 +215,7 @@
         <!-- LLAMADAS DE SCRIPT-->
         <script src="src/js/LogControl.js" defer></script>
 
-        <!-- Cargador Dinámico de Base de Datos de Cantos por Idioma -->
-        <script>
-            (function() {
-                const lang = localStorage.getItem('pref-lang') || 'Español';
-                const suffixes = {
-                    'English': '_en',
-                    'Italiano': '_it',
-                    'Português': '_pt',
-                    'Français': '_fr',
-                    'Latin': '_la',
-                    'Ruso': '_ru',
-                    'Chino': '_zh'
-                };
-                const suffix = suffixes[lang] || '';
-                const s = document.createElement('script');
-                s.async = false;
-                if (suffix) {
-                    s.src = `src/js/songs-data${suffix}.js`;
-                    s.onerror = function() {
-                        console.warn(`src/js/songs-data${suffix}.js no encontrado. Usando versión por defecto en español.`);
-                        const fallback = document.createElement('script');
-                        fallback.src = 'src/js/songs-data.js';
-                        fallback.async = false;
-                        document.head.appendChild(fallback);
-                    };
-                } else {
-                    s.src = 'src/js/songs-data.js';
-                }
-                document.head.appendChild(s);
-            })();
-        </script>
+        <script src="src/js/songs-data.js" defer></script>
         <script src="src/data/find.js" defer></script>
         
         <script src="src/js/config.js" defer></script>

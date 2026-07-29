@@ -51,37 +51,7 @@
 
     <script src="src/data/Contents.js"></script> 
 
-    <!-- Cargador Dinámico de Base de Datos de Cantos por Idioma -->
-    <script>
-        (function() {
-            const lang = localStorage.getItem('pref-lang') || 'Español';
-            const suffixes = {
-                'English': '_en',
-                'Italiano': '_it',
-                'Português': '_pt',
-                'Français': '_fr',
-                'Latin': '_la',
-                'Ruso': '_ru',
-                'Chino': '_zh'
-            };
-            const suffix = suffixes[lang] || '';
-            const s = document.createElement('script');
-            s.async = false;
-            if (suffix) {
-                s.src = `src/js/songs-data-aev${suffix}.js`;
-                s.onerror = function() {
-                    console.warn(`src/js/songs-data-aev${suffix}.js no encontrado. Usando versión por defecto en español.`);
-                    const fallback = document.createElement('script');
-                    fallback.src = 'src/js/songs-data-aev.js';
-                    fallback.async = false;
-                    document.head.appendChild(fallback);
-                };
-            } else {
-                s.src = 'src/js/songs-data-aev.js';
-            }
-            document.head.appendChild(s);
-        })();
-    </script>
+    <script src="src/js/songs-data-aev.js"></script>
     <script src="src/data/canto_data_aleluyai.js"></script>
     
     <script src="src/js/config.js"></script>

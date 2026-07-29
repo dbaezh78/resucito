@@ -1,5 +1,5 @@
 // 1. DEFINIR primero las constantes
-const APP_VERSION = '1.38'; 
+const APP_VERSION = '1.36'; 
 const CACHE_NAME = `cantos-cache-v${APP_VERSION}`;
 const OFFLINE_URL = 'src/offline.html';
 const fecha_vers = '7/23/2026';
@@ -837,67 +837,3 @@ if (typeof window !== 'undefined') {
         setTimeout(() => window.translateDOM(), 50);
     }
 }
-
-// ==========================================
-// INTEGRACIÓN DINÁMICA DE GOOGLE TRANSLATE (ONLINE FALLBACK)
-// ==========================================
-(function() {
-    if (typeof window === 'undefined') return;
-
-    const lang = localStorage.getItem('pref-lang') || 'Español';
-    const langCodes = {
-        'English': 'en',
-        'Italiano': 'it',
-        'Português': 'pt',
-        'Français': 'fr',
-        'Latin': 'la',
-        'Ruso': 'ru',
-        'Chino': 'zh-CN'
-    };
-
-    const targetLangCode = langCodes[lang];
-    
-    // Solo cargamos Google Translate si el idioma no es español y estamos online
-    if (targetLangCode && navigator.onLine) {
-        // 1. Crear el contenedor oculto necesario para la API de Google
-        const translateDiv = document.createElement('div');
-        translateDiv.id = 'google_translate_element';
-        translateDiv.style.display = 'none';
-        
-        if (document.body) {
-            document.body.appendChild(translateDiv);
-        } else {
-            document.addEventListener('DOMContentLoaded', () => {
-                document.body.appendChild(translateDiv);
-            });
-        }
-
-        // 2. Definir la función global callback de Google
-        window.googleTranslateElementInit = function() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es',
-                autoDisplay: false
-            }, 'google_translate_element');
-
-            // 3. Forzar el cambio de idioma una vez inicializado
-            const checkCombo = setInterval(() => {
-                const selectCombo = document.querySelector('.goog-te-combo');
-                if (selectCombo) {
-                    selectCombo.value = targetLangCode;
-                    selectCombo.dispatchEvent(new Event('change'));
-                    clearInterval(checkCombo);
-                }
-            }, 100);
-            
-            // Límite de seguridad para detener la comprobación
-            setTimeout(() => clearInterval(checkCombo), 8000);
-        };
-
-        // 4. Inyectar dinámicamente el script de Google Translate
-        const script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-        script.async = true;
-        document.head.appendChild(script);
-    }
-})();
