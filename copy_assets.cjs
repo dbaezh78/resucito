@@ -42,7 +42,7 @@ folders.forEach(folder => {
 });
 
 // Copy individual files
-const files = ['manifest.json', 'sw.js', '.nojekyll'];
+const files = ['manifest.json', 'sw.js', '.nojekyll', 'CNAME'];
 files.forEach(file => {
     const src = path.resolve(__dirname, file);
     const dest = path.resolve(distPath, file);
