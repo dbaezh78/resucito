@@ -1,0 +1,3302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import './navegador.css';
+
+/* --- Declaración de Fuente Local Franklin Gothic Medium --- */
+@font-face {
+  font-family: 'Franklin Gothic Medium';
+  src: url('../fonts/framd.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Medium';
+  src: url('../fonts/framdit.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- variables del sistema de diseño --- */
+:root {
+
+  --SangreCristo: #3d0706;
+  /* Tema Claro (Defecto) */
+  --cBlanco: #ffffff;
+  
+  --myblue: rgb(34 127 222);
+  --bg-color: hsl(210deg 100% 95.35%);
+  --text-color: hsl(220, 25%, 15%);
+  --text-categoria: hsl(348deg 1.98% 39.61% / 65%);
+  --text-subtitulo: hsl(199.46deg 21.25% 30.63% / 66%);
+  --bg-text-campo: hsl(220, 25%, 15%);
+  --text-muted: hsl(220, 15%, 45%);
+  --accent-color: #d01212;
+  --accent-glow: rgba(208, 18, 18, 0.2);
+
+  --cant-border: #f8f8f8;
+  
+  --panel-bg: rgba(255, 255, 255, 0.931);
+  /*--panel-bg: rgba(255, 255, 255, 0.7);*/
+  --panel-border: rgba(0, 0, 0, 0.08);
+  --panel-hover-border: rgba(208, 18, 18, 0.3);
+  
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.12);
+  
+  --chord-color: #d01212;
+  --chord-color-alt: #d01212;
+  --Rojo-Leccionario: #d01212;
+  --font-zoom: 1;
+  --font-family-lyrics: 'Franklin Gothic Medium', Arial, sans-serif;
+  --font-size-lyrics: 22.4px;
+  
+  /* Fondos de etapa para modo claro */
+  --stage-bg-pre: #ffffff;
+  --stage-bg-cate: #bde9ff;
+  --stage-bg-ele: #ceffcf;
+  --stage-bg-lit: #fffde7;
+  --stage-bg-cat: #f3e5f5;
+
+  /*db*/
+  --btn-db-unir: #4166d0;
+  --btn-db-unir-hover: #294182;
+  
+  --btn-db-sust: #309d24;
+  --btn-db-sust-hover: #2d7a15;
+
+
+  --card-bg: white;
+  --color-pre-active: #edf3f7;
+
+}
+
+/* --- Variantes de Temas --- */
+.theme-light {
+  /* Hereda las propiedades predeterminadas de :root */
+}
+
+.theme-dark {
+
+  --SangreCristo: #8c2a2a;
+  --bg-color: hsl(220, 20%, 10%);
+  --bg-text-campo: hsl(220, 25%, 15%);
+  --cant-border: #4c4b4b;
+  /*Revisar text-color que sale blanco y con el fondo no se ve*/
+  --text-color: hsl(220, 20%, 95%);
+  --text-categoria: hsl(192.07deg 3.12% 54.79%);
+  --text-subtitulo: hsl(199.46deg 53.83% 64.24%);
+
+  --text-muted: hsl(220, 10%, 65%);
+  --accent-color: #567ec4;
+  --accent-glow: rgba(208, 18, 18, 0.35);
+  
+  --panel-bg: hsla(220, 20%, 15%, 0.65);
+  --panel-border: hsla(222, 29%, 93%, 0.5);
+/*  --panel-border: hsla(220, 20%, 25%, 0.5);*/
+  --panel-hover-border: rgba(208, 18, 18, 0.4);
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
+  
+  --chord-color: #98b5e7;
+  --chord-color-alt: #98b5e7;
+  
+  /* Fondos de etapa para modo oscuro */
+  --stage-bg-pre: hsla(220, 20%, 15%, 0.65);
+  --stage-bg-cate: rgba(13, 40, 75, 0.45);
+  --stage-bg-ele: rgba(24, 46, 24, 0.45);
+  --stage-bg-lit: rgba(46, 42, 15, 0.45);
+  --stage-bg-cat: rgba(37, 18, 51, 0.45);
+
+  /*db*/
+  --card-bg: slategrey;
+}
+
+.theme-sepia {
+  --bg-color: hsl(35, 35%, 90%);
+  --text-color: hsl(35, 40%, 15%);
+  --text-categoria: hsl(192.07deg 3.12% 54.79%);
+  --text-muted: hsl(35, 20%, 40%);
+  --accent-color: #d01212;
+  --accent-glow: rgba(208, 18, 18, 0.2);
+  
+  --panel-bg: rgba(244, 230, 210, 0.75);
+  --panel-border: rgba(139, 90, 43, 0.15);
+  --panel-hover-border: rgba(208, 18, 18, 0.3);
+  
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.1);
+  
+  --chord-color: #d01212;
+  --chord-color-alt: #d01212;
+  --Rojo-Leccionario: #d01212;
+
+  /* Colores de etapas configurables */
+  --color-pre: #6c757d;
+  --color-cate: #2196f3;
+  --color-ele: #8bc34a;
+  --color-lit: #FFEB3B;
+  
+  /* Fondos de etapa para modo sepia */
+  --stage-bg-pre: #faf4e8;
+  --stage-bg-cate: #c5e3f5;
+  --stage-bg-ele: #cae6cb;
+  --stage-bg-lit: #eae1c3;
+  --stage-bg-cat: #ded0de;
+}
+
+.material-symbols-outlined {
+  text-align: center;
+  align-content: center;
+}
+
+/* Colores de categorías litúrgicas */
+.badge-precatecumenado { background-color: var(--color-pre); color: white; }
+.badge-catecumenado { background-color: var(--color-cate); color: white; }
+.badge-eleccion { background-color: var(--color-ele); color: white; }
+.badge-liturgia { background-color: var(--color-lit); color: #212529; }
+.badge-catolicos { background-color: #6f42c1; color: white; }
+.badge-otros { background-color: #20c997; color: white; }
+
+/* Reset de estilos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+html, body {
+  overscroll-behavior-y: contain;
+}
+
+body {
+  font-family: var(--font-family-lyrics);
+  font-size: var(--font-size-lyrics, 22.4px);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Botones con micro-animaciones */
+button, .btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  /*border-radius: 8px;   NLQ*/
+  font-weight: 500;
+  gap: 0px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active, .btn:active {
+  transform: scale(0.96);
+}
+
+/* --- Layout de la SPA --- */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: var(--app-max-width, 1200px);
+  margin: 0 auto;
+  --app-padding: 16px;
+  padding: var(--app-padding);
+}
+
+header {
+  /*margin-bottom: 24px;*/
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.title-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.title-banner img.logo-app {
+  height: 56px;
+  border-radius: 12px;
+  /*box-shadow: var(--shadow-sm);*/
+}
+
+.title-banner h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  letter-spacing: -0.5px;
+  background: linear-gradient(357deg, var(--text-color) 0%, var(--accent-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marquee-banner {
+  /* HE SUPRIMIDO ESTO 
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  */
+  position: relative;
+  top: -72px;
+  padding: 6px 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee-scroll 45s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+/* --- Dashboard / Buscador --- */
+.dashboard-view {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-and-settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dashboard-settings-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s, transform 0.3s;
+}
+
+.dashboard-settings-btn:hover {
+  background-color: var(--panel-border);
+  transform: rotate(30deg);
+}
+
+.search-box-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background-color: var(--panel-bg);
+  border: 2px solid var(--panel-border);
+  border-radius: 24px;
+  padding: 2px 14px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.search-box-container:focus-within {
+  border-color: #3b82f6; /* Borde azul de foco */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.btn-inside-search {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  padding-left: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.btn-inside-search:hover {
+  opacity: 1;
+}
+
+.search-input {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 10px 0 !important;
+  font-size: 1.05rem;
+  color: var(--text-color);
+  width: 100%;
+}
+
+.clear-search-btn {
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.clear-search-btn:hover {
+  opacity: 1;
+}
+
+/* Panel de filtros */
+.filters-toggle-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.btn-filter-toggle {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.btn-filter-toggle.active {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.filters-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: slide-down 0.25s ease-out;
+}
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.filter-section h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.filter-buttons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.filter-pill {
+  padding: 6px 14px;
+  border-radius: 1px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  background-color: hsla(0, 0%, 50%, 0.08);
+  color: var(--text-color);
+  transition: all 0.15s ease-in-out;
+}
+
+.filter-pill:hover {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border-color: var(--accent-color) !important;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Botones de etapa coloreados por defecto */
+.stage-pill-pre {
+  background-color: var(--color-pre, #ffffff);
+  color: var(--text-pre, #212529);
+  border-color: var(--color-pre, #cdd3d9);
+}
+.stage-pill-pre.active {
+  /*background-color: var(--color-pre-active, #edf3f7) !important;*/
+  background-color: #ffffff !important;
+  border-color: var(--color-pre-active, #495057) !important;
+  color: var(--text-pre, #ffffff) !important;
+  box-shadow: 0 0 0 3px rgba(108,117,125,0.35), var(--shadow-sm);
+  transform: scale(1.04);
+}
+
+.stage-pill-cate {
+  background-color: var(--color-cate, #2196f3);
+  color: var(--text-cate, #fff);
+  border-color: var(--color-cate, #2196f3);
+}
+.stage-pill-cate.active {
+  background-color: var(--color-cate-active, #1976d2) !important;
+  border-color: var(--color-cate-active, #1976d2) !important;
+  color: var(--text-cate, #fff) !important;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.35), var(--shadow-sm);
+  transform: scale(1.04);
+}
+
+.stage-pill-ele {
+  background-color: var(--color-ele, #8bc34a);
+  color: var(--text-ele, #fff);
+  border-color: var(--color-ele, #8bc34a);
+}
+.stage-pill-ele.active {
+  background-color: var(--color-ele-active, #558b2f) !important;
+  border-color: var(--color-ele-active, #558b2f) !important;
+  color: var(--text-ele, #fff) !important;
+  box-shadow: 0 0 0 3px rgba(139,195,74,0.35), var(--shadow-sm);
+  transform: scale(1.04);
+}
+
+.stage-pill-lit {
+  background-color: var(--color-lit, #FFEB3B);
+  color: var(--text-lit, #212529);
+  border-color: var(--color-lit, #FFEB3B);
+}
+.stage-pill-lit.active {
+  background-color: var(--color-lit-active, #f9a825) !important;
+  border-color: var(--color-lit-active, #f9a825) !important;
+  color: var(--text-lit, #212529) !important;
+  box-shadow: 0 0 0 3px rgba(255,235,59,0.45), var(--shadow-sm);
+  transform: scale(1.04);
+}
+
+.stage-pill-cat {
+  background-color: var(--color-cat, #6f42c1);
+  color: var(--text-cat, #fff);
+  border-color: var(--color-cat, #6f42c1);
+}
+.stage-pill-cat.active {
+  background-color: var(--color-cat-active, #4a1d96) !important;
+  border-color: var(--color-cat-active, #4a1d96) !important;
+  color: var(--text-cat, #fff) !important;
+  box-shadow: 0 0 0 3px rgba(111,66,193,0.35), var(--shadow-sm);
+  transform: scale(1.04);
+}
+
+/* Override del .filter-pill.active genérico para que no sobreescriba las pill de etapa */
+.filter-pill.active:not(.stage-pill-pre):not(.stage-pill-cate):not(.stage-pill-ele):not(.stage-pill-lit):not(.stage-pill-cat) {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-sm);
+}
+
+#btn-filter-indice.active {
+  background-color: #b71c1c !important;
+  border-color: #b71c1c !important;
+  color: white !important;
+}
+
+/* --- Pie de Página del Canto (Visor Footer Bar) --- */
+.viewer-song-footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: var(--current-stage-bg, #e8f8e8);
+  border-top: 2.5px solid var(--accent-color, #d01212);
+  margin-top: 20px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 0px; /*8px;*/
+  flex-wrap: wrap;
+}
+
+.footer-moment-pill {
+  padding: 7px 7px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--SangreCristo, #3d0706);
+  border: none !important;
+  outline: none;
+  /*border-radius: 4px;   NLQ */
+  transition: all 0.2s ease;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-moment-pill:hover {
+  background-color: var(--SangreCristo, #3d0706) !important;
+  color: #ffffff !important;
+  border: none !important;
+  text-decoration: none !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(61, 7, 6, 0.25);
+}
+
+.footer-bar-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-color, #333);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.footer-icon-btn:hover {
+  background: rgb(61 7 6);
+  color: var(--cBlanco, white);
+}
+
+.footer-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-rating-stars {
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer-rating-stars span {
+  font-size: 1.25rem;
+  color: #C0C0C0;
+  transition: color 0.15s, transform 0.1s;
+}
+
+.footer-rating-stars span:hover {
+  transform: scale(1.2);
+  color: gold !important;
+}
+
+.footer-song-number {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-color, #212529);
+  min-width: 28px;
+  text-align: right;
+}
+
+/* --- Sección Personalizar Botones (tabla con encabezados de columna) --- */
+.btn-table-header,
+.btn-table-row {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 34px);
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+}
+
+.btn-table-header {
+  border-bottom: 1px solid var(--panel-border);
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+}
+
+.btn-table-col-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-table-stage-col {
+  /* empty first column header */
+}
+
+.btn-table-row {
+  border-bottom: 1px solid var(--panel-border);
+  padding: 6px 0;
+}
+
+.btn-table-row:last-child {
+  border-bottom: none;
+}
+
+.nav-table-header,
+.nav-table-row {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 34px);
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.nav-table-header {
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+}
+
+.nav-table-row:last-child {
+  border-bottom: none;
+}
+
+.btn-pill-preview {
+  width: 34px;
+  height: 34px;
+  /*border-radius: 50%;   NLQ*/
+  border: 2px solid rgba(128, 128, 128, 0.4) !important;
+  box-shadow: var(--shadow-sm);
+  justify-self: center;
+  color: var(--text-color);
+}
+
+.btn-pill-preview span {
+  font-size: 0.95rem !important;
+}
+
+/* Listado de cantos */
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1px;
+  margin-top: 10px;
+}
+
+.song-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--panel-bg);
+  border: 1.5px solid var(--panel-border);
+  /*  border-radius: 14px;    NO QUIERO ESTO  */
+  padding: 16px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+}
+
+.song-card:hover {
+  transform: translateY(-3px); /* Elevado suave */
+  border-color: var(--stage-color, var(--accent-color)) !important; /* Borde completo del color de la etapa */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 0 15px var(--stage-color); /* Iluminación / resplandor del color de la etapa */
+  z-index: 10; /* Eleva el elemento por encima de sus vecinos para que se dibuje encima del resto */
+}
+
+/* Canto seleccionado en la lista (activo) */
+.song-card.active {
+  border-color: var(--stage-color, var(--accent-color)) !important;
+  border-bottom: 4px solid var(--stage-color, var(--accent-color)) !important;
+  box-shadow: 0 16px 36px -8px var(--stage-color, var(--accent-glow)) !important;
+  transform: translateY(-8px); /* Levantado más pronunciado */
+  z-index: 15; /* Asegura estar arriba de todos */
+}
+
+.song-card-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.song-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.song-card-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+
+.song-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.badge-audio {
+  background-color: var(--accent-glow);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.badge-capo {
+  background-color: hsla(0, 0%, 50%, 0.15);
+  color: var(--text-color);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* --- Visualizador del Canto (Song Viewer) --- */
+.song-viewer-view {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  animation: fade-in 0.3s ease;
+  border: 1px solid var(--cant-border)
+
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Toolbar superior del visor */
+.viewer-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  padding: 10px 16px;
+  backdrop-filter: blur(10px);
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0px;
+  z-index: 50;
+}
+
+.toolbar-left, .toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toolbar-center {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6px;
+  overflow: hidden;
+}
+
+.toolbar-title-text {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif, 'Franklin Gothic', Arial;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.toolbar-center h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.toolbar-center p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 50%, 0.05);
+  border: 1px solid var(--panel-border);
+  color: var(--text-color);
+}
+
+.btn-icon:hover {
+  background-color: hsla(0, 0%, 50%, 0.15);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.btn-icon.active {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+/* Barra de transposición */
+.transpose-controls {
+  display: flex;
+  align-items: center;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  padding: 2px;
+  gap: 4px;
+}
+
+.key-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  min-width: 48px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Control de scroll */
+.scroll-speed-panel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.scroll-slider {
+  width: 80px;
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+  accent-color: var(--accent-color);
+}
+
+/* Contenido del Canto (Letras y Acordes) */
+.canto-columns-container {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 16px;
+  width: 100%;
+  background-color: var(--current-stage-bg, var(--panel-bg));
+  /*border: 1px solid var(--panel-border);  NO QUIERO ESTO  */
+  border-radius: 8px;
+  padding: 20px 32px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.canto-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* previene desbordamiento flex */
+}
+
+.canto-columns-container.single-column {
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Ajustes de columnas responsivas (Móviles y Tablets) */
+@media (max-width: 1024px) {
+  #split-layout-btn {
+    display: none !important;
+  }
+  .canto-columns-container {
+    flex-direction: column !important;
+    gap: 16px;
+    padding: 16px 12px; /* Reducir padding horizontal en móviles/tablets para ganar espacio */
+  }
+}
+
+.linea-canto {
+  position: relative;
+  font-family: var(--font-family-lyrics);
+  font-weight: 400;
+  font-size: calc(1.4rem * var(--font-zoom));
+  /*font-size: calc(1.1rem * var(--font-zoom));*/
+  line-height: 2.3; /* Espacio vertical ampliado para acordes */
+  min-height: 2.2rem;
+  white-space: pre-wrap;
+  padding-left: clamp(27px, 6vw, 40px); /* Espacio fluido para marcadores A. y C. en cualquier dispositivo TYC */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Negrita para las partes de la asamblea */
+.linea-canto.as {
+  font-weight: 700;
+}
+
+/* Marcador A. para la asamblea */
+.linea-canto.ta::before {
+  content: "A.";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  font-weight: 700;
+  color: var(--text-muted);
+  opacity: 0.65;
+}
+
+/* Marcador C. para el cantor */
+.linea-canto.tc::before {
+  content: "C.";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  font-weight: 700;
+  color: var(--text-muted);
+  opacity: 0.65;
+}
+
+.chord-anchor-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Bloques colapsables de asamblea */
+.collapsible-block-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 12px 0;
+}
+
+.collapsible-lines-wrapper {
+  flex-grow: 0;/* de 1 a 0, para que los Bis se pongan a cierda distancia del texto*/
+  min-width: 0;
+}
+
+.collapsible-bis-side {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.bis-line {
+  width: 2px;
+  background-color: #adafb4;
+  align-self: stretch;
+  margin-right: 12px;
+}
+
+.bis-text {
+  font-family: var(--font-family-lyrics);
+  font-weight: 700;
+  color: #adafb4;
+  font-size: calc(1.05rem * var(--font-zoom));
+  white-space: nowrap;
+}
+
+.collapsible-trigger {
+  cursor: pointer;
+  font-weight: 700;
+  color: inherit;
+}
+
+.collapsible-content {
+  margin-top: 8px;
+}
+
+/* Acordes posicionados (Anclados con precisión de caracteres) */
+.nota-posicionada {
+  position: absolute;
+  top: -12px; /* Forzado exactamente a -12px */
+  left: 0;
+  font-family: sans-serif, cursive, 'system-ui', 'Franklin Gothic', Arial;
+  font-weight: 700;
+  font-size: calc(16px * var(--font-zoom)); /* Exactamente 17.6px en PC por defecto */
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  white-space: nowrap;
+  background-color: transparent; /* Fondo transparente */
+  /*padding: 0 4px;     NLQ*/
+  border-radius: 4px;
+  transition: left 0.15s ease, font-size 0.2s ease, transform 0.15s ease;
+}
+
+.chord-pos-num {
+  font-size: 0.55em;
+  font-weight: 500;
+  margin-left: 2px;
+  opacity: 0.65;
+  vertical-align: super;
+  pointer-events: none;
+}
+
+/* Ocultar número de posición en modo normal, mostrar solo en modo edición */
+.nota-posicionada:not(.edit-mode-active) .chord-pos-num {
+  display: none;
+}
+
+/* Color para los acordes de la asamblea (opuesto) y cantor (principal) */
+.linea-canto.as .nota-posicionada {
+  color: var(--chord-color-alt, #d01212);
+}
+
+.linea-canto:not(.as) .nota-posicionada {
+  color: var(--chord-color, #d01212);
+}
+
+.nota-posicionada:hover {
+  /*transform: translate(-10%, -2px) scale(1.1);    NLQ*/
+  /*box-shadow: var(--shadow-sm);*/
+  color: var(--accent-color);
+}
+
+/* Estilos para desplazar acordes en modo edición */
+.nota-posicionada.edit-mode-active {
+  /*padding: 2px 6px;*/
+  /*background-color: var(--panel-bg);
+  border: 1px dashed var(--accent-color);
+  */
+  border: 1px dashed #d0121226;
+  border-radius: 0px;
+  display: inline-block;
+  cursor: grab;
+  user-select: none;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.nota-posicionada.edit-mode-active.dragging {
+  cursor: grabbing;
+  opacity: 0.85;
+  z-index: 100;
+  box-shadow: var(--shadow-md);
+  transition: none !important; /* Desactivar transiciones durante el arrastre para mayor fluidez */
+}
+
+.char-pos {
+  display: inline;
+  white-space: pre;
+}
+
+/* Línea de imagen (para cantos escaneados o especiales) */
+.linea-imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.linea-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Audio Player */
+.audio-player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(61, 7, 6, 0.75) !important; /* Vino oscuro semi-transparente */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #2e0505;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0 !important; /* Extremos rectangulares */
+  
+  /* Animación de despliegue */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 2.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                 opacity 2.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                 padding 2.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.audio-player-container.open {
+  opacity: 1;
+  padding: 15px 0px;
+  height: 25px;
+  width: 100%;
+}
+
+.audio-player-container audio {
+  width: 100%;
+  height: 40px;
+  background-color: #f1f3f4;
+  flex-shrink: 0; /* Evita que el control de audio se encoja o deforme durante la transición */
+}
+
+/* --- Panel de Notas del Cantor --- */
+.notes-cantor-section {
+  margin-top: 24px;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.notes-cantor-section h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notes-textarea {
+  width: 100%;
+  height: 80px;
+  background-color: hsla(0, 0%, 50%, 0.05);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--text-color);
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+}
+
+.notes-textarea:focus {
+  border-color: var(--accent-color);
+}
+
+/* --- Modales --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fade-in 0.2s ease-out;
+}
+
+.modal-content {
+  background-color: var(--bg-color);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 10px;
+  width: 90%;
+  height: 90%;
+  max-width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  animation: scale-up 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+
+@keyframes scale-up {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.modal-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.chord-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.chord-select-btn {
+  border: 1px solid var(--panel-border);
+  background-color: var(--panel-bg);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+}
+
+.chord-select-btn:hover {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+.chord-diagram-view {
+  text-align: center;
+}
+
+.chord-diagram-view img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--panel-border);
+  margin-top: 12px;
+}
+
+/* --- Ajustes Panel --- */
+.settings-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--panel-border);
+  padding-bottom: 12px;
+}
+
+.setting-label h4 {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.setting-label p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.setting-control {
+  display: flex;
+  gap: 0px;
+}
+
+/* --- Botones de selección en el panel de Ajustes --- */
+.theme-btn,
+.list-style-btn {
+  padding: 7px 7px;
+  border-radius: 0px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: 1px solid var(--panel-border);
+  background-color: hsla(0, 0%, 50%, 0.08);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.theme-btn:hover,
+.list-style-btn:hover {
+  background-color: hsla(0, 0%, 50%, 0.15);
+  border-color: var(--accent-color);
+}
+
+.theme-btn.active,
+.list-style-btn.active {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Personalización de botones específicos dentro del modal de Ajustes */
+#settings-modal .btn.theme-btn,
+#settings-modal .theme-btn {
+  background-color: var(--settings-btn-bg, #d01212) !important;
+  color: var(--settings-btn-text, #ffffff) !important;
+  border: 1.5px solid var(--settings-btn-bg, #d01212) !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  width: auto !important; /* Ancho dinámico para botones de acción */
+}
+
+#settings-modal .btn.theme-btn:hover,
+#settings-modal .theme-btn:hover {
+  background-color: var(--settings-btn-text, #ffffff) !important;
+  color: var(--settings-btn-bg, #d01212) !important;
+  border-color: var(--settings-btn-bg, #d01212) !important;
+}
+
+#settings-modal .btn.theme-btn.active,
+#settings-modal .theme-btn.active {
+  background-color: var(--settings-btn-bg, #d01212) !important;
+  color: var(--settings-btn-text, #ffffff) !important;
+  border-color: var(--settings-btn-bg, #d01212) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+/* --- Botones selectores/toggles con estados inactivos (gris) y activos (color personalizado) --- */
+#settings-modal .btn.theme-btn[data-theme],
+#settings-modal .list-style-btn,
+#settings-modal .btn.theme-btn[data-bold],
+#settings-modal .btn.theme-btn#preparar-bold-on,
+#settings-modal .btn.theme-btn#preparar-bold-off,
+#settings-modal .btn.theme-btn#perfil-bold-on,
+#settings-modal .btn.theme-btn#perfil-bold-off {
+  background-color: hsla(0, 0%, 50%, 0.08) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--panel-border) !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  width: auto !important;
+}
+
+/* Forzar que los selectores de tema (1) y estilo de lista (2) tengan exactamente un ancho de 70px */
+#settings-modal .btn.theme-btn[data-theme],
+#settings-modal .list-style-btn {
+  width: 70px !important;
+}
+
+#settings-modal .btn.theme-btn[data-theme]:hover,
+#settings-modal .list-style-btn:hover,
+#settings-modal .btn.theme-btn[data-bold]:hover,
+#settings-modal .btn.theme-btn#preparar-bold-on:hover,
+#settings-modal .btn.theme-btn#preparar-bold-off:hover,
+#settings-modal .btn.theme-btn#perfil-bold-on:hover,
+#settings-modal .btn.theme-btn#perfil-bold-off:hover {
+  background-color: hsla(0, 0%, 50%, 0.15) !important;
+  border-color: var(--accent-color) !important;
+  color: var(--text-color) !important;
+}
+
+#settings-modal .btn.theme-btn[data-theme].active,
+#settings-modal .list-style-btn.active,
+#settings-modal .btn.theme-btn[data-bold].active,
+#settings-modal .btn.theme-btn#preparar-bold-on.active,
+#settings-modal .btn.theme-btn#preparar-bold-off.active,
+#settings-modal .btn.theme-btn#perfil-bold-on.active,
+#settings-modal .btn.theme-btn#perfil-bold-off.active {
+  background-color: var(--settings-btn-bg, #d01212) !important;
+  color: var(--settings-btn-text, #ffffff) !important;
+  border-color: var(--settings-btn-bg, #d01212) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+/* --- Impresión --- */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    --bg-color: white;
+    --text-color: black;
+    --chord-color: black;
+  }
+  
+  .app-container {
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  header, .viewer-sticky-header, .notes-cantor-section, footer {
+    display: none !important;
+  }
+  
+  .canto-columns-container {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 40px !important;
+  }
+  
+  .canto-column {
+    flex: 1 !important;
+  }
+  
+  .nota-posicionada {
+    background-color: transparent !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Pie de página */
+footer {
+  margin-top: 48px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  padding: 16px 0;
+  border-top: 1px solid var(--panel-border);
+}
+
+/* --- Contenedor Flex Superior del Dashboard (Imagen de Cristo y Controles) --- */
+.dashboard-top-flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  padding-top: var(--app-padding);
+  margin-top: calc(-1 * var(--app-padding));
+  padding-bottom: 25px;
+  border-bottom: 1px dashed var(--panel-border);
+}
+
+.dashboard-top-flex.not-sticky {
+  position: relative !important;
+  top: auto !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.dashboard-left-image-container {
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-christ-img-pc {
+  width: 210px;
+  height: 210px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: transform 0.3s ease;
+  margin-right: -82px;
+  margin-bottom: -10px;
+  z-index: 1;
+}
+.dashboard-christ-img-pc:hover {
+  transform: scale(1.05);
+}
+.dashboard-christ-img-mobile {
+  display: none;
+}
+.theme-dark .dashboard-christ-img-pc,
+.theme-sepia .dashboard-christ-img-pc,
+.theme-dark .dashboard-christ-img-mobile,
+.theme-sepia .dashboard-christ-img-mobile {
+  /*filter: invert(1) brightness(0.95) contrast(1.1);*/
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 31px;
+  margin-left: 35px;
+}
+
+.dashboard-right-controls {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* --- Pestañas de Libros (Book Tabs) --- */
+.book-tabs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;
+  width: 100%;
+  border-bottom: 1px solid var(--panel-border);
+  padding-bottom: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-wrap: wrap;
+}
+
+.book-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.book-tab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.book-tab:hover {
+  color: var(--text-color);
+  background-color: hsla(0, 0%, 50%, 0.08);
+}
+
+.book-tab.active {
+  color: white;
+  background-color: var(--accent-color);
+  box-shadow: var(--shadow-sm), 0 0 10px var(--accent-glow);
+}
+
+/* --- Vista de Catequesis --- */
+.catequesis-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 1 / -1;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.catequesis-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.catequesis-card h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+
+.catequesis-card p {
+  line-height: 1.6;
+  font-size: 0.98rem;
+  text-align: justify;
+  margin-bottom: 12px;
+}
+
+.catequesis-card blockquote {
+  border-left: 3.5px solid var(--accent-color);
+  padding-left: 12px;
+  margin: 12px 0;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.btn-icon.active-star span {
+  font-variation-settings: 'FILL' 1;
+  color: #ffc107 !important;
+}
+
+.btn-icon.active-edit span {
+  font-variation-settings: 'FILL' 1;
+  color: var(--accent-color, #1a73e8) !important;
+}
+
+/* --- Selectores en Modal de Acordes --- */
+.chord-picker-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.chord-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-picker, .btn-type-picker {
+  padding: 10px 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--panel-border);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  text-align: center;
+  
+  box-shadow: 0 4px 14px var(--card-bg);
+}
+
+.btn-picker:hover, .btn-type-picker:hover {
+  background-color: hsla(0, 0%, 50%, 0.08);
+  border-color: var(--accent-color);
+  transform: translateY(-1px);
+}
+
+.btn-picker.active, .btn-type-picker.active {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* En tema claro para que quede idéntico a la imagen */
+.theme-light .btn-picker, .theme-light .btn-type-picker {
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  color: #202020;
+}
+
+.theme-light .btn-picker:hover, .theme-light .btn-type-picker:hover {
+  background-color: #f7f7f7;
+  border-color: #999999;
+}
+
+.theme-light .btn-picker.active, .theme-light .btn-type-picker.active {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* Fila de información de acordes y cejillas (Canto y Cantor) en el modal */
+.chord-picker-info-row {
+  margin-top: 15px;
+  border-top: 1px dashed var(--panel-border);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.chord-picker-info-col {
+  flex: 1;
+}
+
+.chord-picker-info-col-border {
+  flex: 1;
+  border-left: 1.5px solid var(--panel-border);
+  padding-left: 4px;
+}
+
+.chord-picker-info-col-capo-selector {
+  flex: 1.2;
+  border-left: 1.5px solid var(--panel-border);
+  padding-left: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chord-picker-info-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.chord-picker-info-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-color);
+  margin-top: 4px;
+}
+
+.chord-picker-info-value.accent {
+  color: var(--accent-color);
+}
+
+.chord-picker-capo-select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--panel-bg);
+  color: var(--text-color);
+  border: 1.5px solid var(--panel-border);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  max-width: 100px;
+  margin-top: 4px;
+}
+
+
+/* --- Rediseño de la Barra de Opciones y Cabecera --- */
+
+.song-viewer-view {
+  margin: -16px -16px -16px -16px;
+  background-color: var(--current-stage-bg, var(--bg-color));
+  transition: background-color 0.3s ease;
+  /*min-height: calc(100vh - 32px);*/
+  padding-bottom: 0px;  /*32px*/
+  align-self: center;
+
+
+  
+}
+
+/* Cabecera pegajosa que contiene toolbar y audio */
+.viewer-sticky-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Toolbar superior del visor (Estilo original del libro) */
+.viewer-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--SangreCristo);
+  
+  color: #ffffff !important;
+  border-bottom: 2px solid #2e0505;
+  padding: 1px 2px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+}
+
+.viewer-toolbar .btn-icon {
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  opacity: 0.85;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+}
+
+.viewer-toolbar .btn-icon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.viewer-toolbar .btn-icon.active {
+  color: #ffc107 !important; /* Resaltado amarillo para botones activos */
+}
+
+/* Indicador de Tono y Cejilla */
+.tone-capo-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 4px 12px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+  user-select: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.tone-capo-display:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.tone-music-note {
+  font-size: 1.15rem;
+  color: #ffffff !important;
+}
+
+.key-badge-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.cejilla-icon-img {
+  height: 18px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.capo-badge-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  /*opacity: 0.9;*/
+}
+
+/* Buscador rápido de la barra superior */
+.toolbar-search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.toolbar-search-input {
+  background-color: #ffffff !important;
+  color: #202020 !important;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 110px;
+  transition: width 0.25s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.toolbar-search-input::placeholder {
+  color: #777777 !important;
+}
+
+.toolbar-search-input:focus {
+  width: 170px;
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+/* Tablet (601px - 992px): Empezar en 100px, Terminar en 170px al hacer clic */
+@media (min-width: 601px) and (max-width: 992px) {
+  .toolbar-search-input {
+    width: 100px !important;
+    font-size: 0.85rem !important;
+    transition: width 0.25s ease !important;
+  }
+  .toolbar-search-input:focus {
+    width: 170px !important;
+  }
+}
+
+/* Celular / Móvil (hasta 600px): Empezar en 70px con font-size 11px, Terminar en 90px al hacer clic */
+@media (max-width: 600px) {
+  .toolbar-search-input {
+    width: 70px !important;
+    font-size: 11px !important;
+    padding: 4px 6px !important;
+    transition: width 0.25s ease !important;
+  }
+  .toolbar-search-input:focus {
+    width: 90px !important;
+  }
+}
+
+.search-suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  margin-top: 6px;
+  width: 250px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(10px);
+}
+
+/* Personalización y visualización garantizada de la barra de scroll */
+.search-suggestions-dropdown::-webkit-scrollbar {
+  width: 6px;
+  display: block;
+}
+
+.search-suggestions-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.search-suggestions-dropdown::-webkit-scrollbar-thumb {
+  background: var(--panel-border);
+  border-radius: 3px;
+}
+
+.search-suggestions-dropdown::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+.search-suggestion-item {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--panel-border);
+  text-align: left;
+}
+
+.search-suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.search-suggestion-item:hover,
+.search-suggestion-item.active {
+  background-color: var(--accent-glow);
+  color: var(--accent-color);
+}
+
+/* Popover de velocidad de scroll */
+.speed-popover {
+  position: absolute;
+  top: 100%;
+  /*right: 180px;*/
+  right: auto;
+  background-color: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 999;
+  box-shadow: var(--shadow-md);
+  margin-top: 6px;
+}
+
+/* Cabecera del canto estilo libro original */
+.canto-header-block {
+  display: grid;
+  grid-template-columns: 140px 1fr 140px;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  padding: 0px 5px;
+  border-bottom: 4px solid var(--current-stage-color, var(--panel-border));
+  box-shadow: 0 10px 20px -10px var(--current-stage-color, rgba(0, 0, 0, 0.1));
+  background-color: var(--current-stage-bg, var(--panel-bg));
+  backdrop-filter: blur(8px);
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.canto-header-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.canto-header-img {
+  width: 130px;
+  object-fit: contain;
+  opacity: 0.4;
+}
+
+/* Invertir imagen de cristo en modo oscuro */
+.theme-dark .canto-header-img, .theme-sepia .canto-header-img {
+  /*filter: invert(1) brightness(0.95) contrast(1.1);*/
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.canto-header-center {
+  text-align: center;
+}
+
+.canto-header-stage {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  color: var(--text-categoria);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.canto-header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--song-title-color, var(--accent-color));
+  margin: 4px 0;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.canto-header-subtitle {
+  font-size: 1.2rem;
+  /*font-style: italic;*/
+  color: var(--text-subtitulo);
+  line-height: 1.4;
+  text-align: center;
+  font-weight: bold;
+    
+    
+}
+
+.canto-header-right {
+  /* Vacío para balancear */
+}
+
+/* Ajustes adicionales del scroll speed slider en popover */
+.speed-popover .scroll-slider {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-top-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .dashboard-left-image-container {
+    display: none;
+  }
+  
+  .dashboard-christ-img-mobile {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    margin: 10px auto 20px auto;
+    width: 165px;
+    height: 207px;
+    z-index: 0;
+    opacity: 0.7;
+  }
+
+  .viewer-toolbar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    gap: 4px !important;
+    padding: 6px 8px !important;
+    overflow: visible !important;
+  }
+
+  .toolbar-left {
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Ocultar el gatillo de escritorio en móvil para que solo aparezca 1 único botón de acorde */
+  #tone-capo-trigger {
+    display: none !important;
+  }
+
+  /* Contenedor transparente en celular */
+  .tone-capo-display-compact {
+    background: transparent !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    min-width: auto !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 2px !important;
+  }
+
+  /* Únicamente el acorde (ej: La) tiene el fondo rojo rectangular redondeado */
+  .key-badge-text,
+  #tone-dropdown-trigger-key {
+    background-color: #d01212 !important;
+    color: #ffffff !important;
+    font-size: 0.85rem !important;
+    font-weight: 800 !important;
+    padding: 3px 6px !important;
+    border-radius: 6px !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+  }
+
+  /* En celulares (exclusivo para celular): ocultar nota musical ♪, cejilla y número de traste */
+  .tone-capo-display span.tone-music-note,
+  .tone-capo-display span.material-symbols-outlined,
+  .tone-capo-display-compact span.material-symbols-outlined,
+  .capo-badge-text,
+  .capo-badge-container,
+  .tone-capo-display img.cejilla-icon-img,
+  .tone-capo-display-compact img.cejilla-icon-img,
+  #tone-dropdown-trigger-capo {
+    display: none !important;
+  }
+
+  /* Centro: Título en barra al hacer scroll en móviles */
+  .toolbar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0 4px;
+  }
+  #toolbar-sticky-title {
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0 4px;
+  }
+
+  .toolbar-title-text,
+  #toolbar-sticky-title-text {
+    font-size: 0.82rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    text-align: center !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .toolbar-right {
+    display: flex !important;
+    align-items: center !important;
+    gap: 2px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .toolbar-dropdown-content .btn-icon,
+  .toolbar-dropdown-content button {
+    display: flex !important;
+  }
+
+  .toolbar-dropdown-content .toolbar-search-container {
+    display: flex !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 6px 8px;
+  }
+
+  .toolbar-dropdown-content .toolbar-search-input {
+    width: 100% !important;
+    box-sizing: border-box;
+    font-size: 16px !important;
+  }
+
+  #toolbar-dropdown-container {
+    display: flex !important;
+  }
+  
+  .canto-header-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 12px;
+  }
+  
+  .canto-header-left {
+    flex-shrink: 0;
+  }
+  
+  .canto-header-center {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .canto-header-right {
+    display: none;
+  }
+  
+  .canto-header-img {
+    max-height: 50px;
+    max-width: 50px;
+  }
+  
+  .canto-header-title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+/* --- Modos de visualización de la lista de cantos (Página Principal) --- */
+
+/* 1. Modo Tarjetas (cards) */
+.songs-grid.style-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.songs-grid.style-cards .song-card {
+  border-left: 6px solid var(--stage-color, var(--panel-border));
+}
+
+/* 2. Modo Lista Detallada (detailed) */
+.songs-grid.style-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.songs-grid.style-detailed .song-card {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 8px solid var(--stage-color, var(--panel-border));
+  /*  border-radius: 6px; NO QUIERO ESTO*/
+  padding: 16px 20px;
+}
+
+/* 3. Modo Lista Simple (simple) */
+.songs-grid.style-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background-color: var(--panel-bg);
+}
+.songs-grid.style-simple .song-card {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 20px;
+  /*border: 1px solid var(--stage-color, var(--panel-border));*/
+  border-left: 10px solid var(--stage-color, var(--panel-border));
+  border-radius: 0;
+  /*box-shadow: none;  HE QUITADO ESTO, NO PONER */
+  backdrop-filter: none;
+  margin-bottom: -1px;
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.2s ease, background-color 0.2s ease;
+  
+}
+.songs-grid.style-simple .song-card:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.songs-grid.style-simple .song-card:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-bottom: 0;
+}
+.songs-grid.style-simple .song-card:hover {
+  border-color: var(--stage-color) !important;
+  border-left: 8px solid var(--stage-color) !important;
+  transform: translateY(-3px);
+  /*box-shadow: 0 6px 16px -6px var(--stage-color) !important;*/
+  z-index: 10;
+}
+.songs-grid.style-simple .song-card.active {
+  border-color: var(--stage-color) !important;
+  border-left: 8px solid var(--stage-color) !important;
+  border-bottom: 4px solid var(--stage-color) !important;
+  box-shadow: 0 16px 36px -8px var(--stage-color) !important;
+  transform: translateY(-8px); /* Levantado activo de 8px */
+  z-index: 15;
+}
+.songs-grid.style-simple .song-card-subtitle,
+.songs-grid.style-simple .song-card-badges,
+.songs-grid.style-simple .song-card-number {
+  display: none !important;
+}
+.songs-grid.style-simple .song-card-title {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Sobrescribir borde de buscador en tema claro */
+.theme-light .search-box-container {
+  border-color: #a8caff !important;
+  background-color: #ffffff !important;
+}
+
+.theme-light .dashboard-settings-btn span {
+  color: #544d47 !important;
+}
+
+.theme-light .btn-inside-search {
+  color: #202020 !important;
+}
+
+.theme-light .search-input {
+  color: #202020 !important;
+}
+
+/* --- Tabs del Modal de Ajustes --- */
+.settings-tabs {
+  display: flex;
+  border-bottom: 1.5px solid var(--panel-border);
+  margin-bottom: 8px;
+  gap: 12px;
+  
+  
+}
+
+.settings-tab-btn {
+  flex: 1;
+  padding: 8px 4px;
+  font-weight: 400 !important;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  border-bottom: 3px solid transparent;
+  font-size: 0.8rem !important;
+  transition: all 0.15s ease;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.settings-tab-btn span.material-symbols-outlined {
+  font-size: 1.25rem;
+}
+
+.settings-tab-btn:hover {
+  color: var(--text-color);
+}
+
+.settings-tab-btn.active {
+  color: var(--accent-color);
+  font-weight: 400 !important;
+  border-bottom-color: var(--accent-color);
+}
+
+.settings-panel-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* --- Personalización de Colores de Etapa --- */
+.stage-colors-customizer {
+  margin-top: 14px;
+  border-top: 1.5px dashed var(--panel-border);
+  padding-top: 14px;
+}
+
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 0;
+}
+
+.collapsible-header:hover {
+  opacity: 0.85;
+}
+
+.collapsible-header h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--text-color);
+}
+
+.collapsible-header .toggle-icon {
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.collapsible-content {
+  margin-top: 12px;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, margin-top 0.3s ease;
+  opacity: 1;
+}
+
+/* Evitar que se corten los acordes y que haya separación excesiva en los bloques de la asamblea */
+.collapsible-block-container .collapsible-content {
+  overflow: visible;
+  margin-top: 0;
+}
+
+.stage-colors-customizer.collapsed .collapsible-content {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  pointer-events: none;
+}
+
+.stage-colors-customizer.collapsed .toggle-icon {
+  transform: rotate(-90deg);
+}
+
+.stage-color-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.stage-color-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.color-swatches {
+  display: flex;
+  gap: 8px;
+}
+
+.color-swatch-btn {
+  width: 30px;
+  height: 30px;
+  /*border-radius: 50%;   NLQ*/
+  border: 2px solid rgba(128, 128, 128, 0.35);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s, outline 0.15s;
+  box-sizing: border-box;
+}
+
+.color-swatch-btn:hover {
+  transform: scale(1.15);
+}
+
+.color-swatch-btn.active {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  transform: scale(1.1);
+}
+
+.color-picker-label-btn {
+  width: 30px;
+  height: 30px;
+  /*border-radius: 50%;   NLQ */
+  border: 2px solid rgba(128, 128, 128, 0.35);
+  background-color: var(--panel-bg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s, outline 0.15s, background-color 0.15s;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.color-picker-label-btn:hover {
+  transform: scale(1.15);
+}
+
+.color-picker-label-btn.color-picker-square {
+  border-radius: 4px; /* Cuadrado con bordes levemente redondeados */
+}
+
+.color-picker-label-btn.active {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  transform: scale(1.1);
+}
+
+.color-picker-label-btn span {
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--text-color);
+  pointer-events: none;
+}
+
+.color-picker-label-btn input[type="color"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  pointer-events: auto;
+  display: block !important;
+}
+
+/* Contenedor del contenido del canto para transiciones */
+.canto-content-transition-wrapper {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* ========== Toggle Switch (Interruptor tipo iOS) ========== */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: #11e05a;
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(24px);
+}
+
+.toggle-switch input:focus + .toggle-slider {
+  box-shadow: 0 0 0 2px rgba(var(--accent-color-rgb, 76, 175, 80), 0.3);
+}
+
+.b1 {
+  
+}
+
+.bdcd {
+  margin-top: -24px;
+}
+
+
+.Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
+  { position: relative;width: fit-content;font-weight: bolder;left: 290px;}
+
+.Bendecid, .Bendecid1 { margin-top: -46px;}
+.Bendecid2, .Bendecid3, .Bendecid4 { margin-top: -51px;}
+
+.Bendecid {top: 51px}
+.Bendecid1 {top: 28px}
+.Bendecid2 {top: 52px}
+.Bendecid3 {top: 79px;}     
+.Bendecid4 {top: 55px;}
+
+.canto-slideX1 {
+  display: flex; 
+  width: calc(300% + 80px); 
+  gap: 40px; 
+  transform: translate3d(calc(-100% / 3 - 13.333px), 0, 0); 
+  transition: none; 
+  user-select: none;
+}
+
+.canto-slideX2 
+{
+  width: calc((100% - 80px) / 3); 
+  flex-shrink: 0; 
+  opacity: 0.8; 
+  box-sizing: border-box; 
+  padding: 0 10px;
+}
+
+.canto-slideX3 {
+  width: calc((100% - 80px) / 3); 
+  flex-shrink: 0; 
+  box-sizing: border-box; 
+  padding: 0 10px;
+}
+
+
+/* --- Menú Desplegable Responsivo de la Barra de Herramientas (Derecha) --- */
+.toolbar-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1001;
+}
+
+.toolbar-dropdown-content {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  left: auto;
+  background-color: var(--panel-bg);
+  border: 1.5px solid var(--panel-border);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  border-radius: 8px;
+  padding: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: 280px;
+}
+
+.toolbar-dropdown-content.show {
+  display: flex !important;
+  flex-direction: column;
+}
+
+/* Botones y paneles dentro del menú desplegable */
+.toolbar-dropdown-content .btn-icon {
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: transparent;
+  color: var(--text-color);
+  border: none;
+  transition: background-color 0.15s ease;
+}
+
+/* Panel de velocidad dentro del menú */
+.toolbar-dropdown-content .scroll-speed-panel {
+  width: auto;
+  height: auto;
+  background: transparent !important;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  border: none;
+}
+
+.toolbar-dropdown-content .btn-icon:hover {
+  background-color: var(--panel-border);
+}
+
+/* Estilo para los iconos de Material Symbols */
+.toolbar-dropdown-content .btn-icon span.material-symbols-outlined {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+
+.toolbar-dropdown-content .btn-icon.active-star span {
+  color: #ffc107 !important;
+}
+
+.toolbar-dropdown-content .btn-icon.active-edit span {
+  color: var(--accent-color) !important;
+}
+
+/* Controladores de velocidad dentro del panel */
+.toolbar-dropdown-content .scroll-speed-panel-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.toolbar-dropdown-content .scroll-speed-panel-controls .btn-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--panel-border);
+}
+
+.toolbar-dropdown-content .scroll-speed-panel-controls .btn-icon:hover {
+  background-color: var(--panel-border-hover, rgba(128,128,128,0.25));
+}
+
+/* Popover de velocidad inline dentro del menú */
+.toolbar-dropdown-content .scroll-speed-panel .speed-popover {
+  position: static;
+  display: block !important;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 6px 0 0 0;
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.toolbar-dropdown-content .scroll-speed-panel .speed-popover .scroll-slider {
+  width: 100%;
+  margin: 0;
+}
+
+/* --- Menú Desplegable de Tono/Cejilla (Izquierda) --- */
+.tone-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.tone-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: auto;
+  background-color: var(--panel-bg);
+  border: 1.5px solid var(--panel-border);
+  box-shadow: var(--shadow-md);
+  z-index: 1000;
+  border-radius: 8px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.tone-dropdown-content.show {
+  display: block;
+}
+
+.tone-capo-display-compact {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  /*background-color: var(--accent-color);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;*/
+  padding: 4px 10px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif, system-ui;
+  font-size: 0.85rem;
+  font-weight: 700;
+  height: 32px;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.tone-capo-display-compact:hover {
+  filter: brightness(1.15);
+}
+
+.tone-capo-display-compact span.material-symbols-outlined {
+  font-size: 1rem;
+  color: white;
+}
+
+.tone-capo-display-compact img.cejilla-icon-img {
+  height: 12px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+  margin-left: 2px;
+}
+
+
+.opIcon {
+  display: flex; 
+  flex-direction: column; 
+  gap: 0px; 
+  background: rgba(0,0,0,0.03); 
+  padding: 0 12px 0 12px; 
+  border-radius: 12px; 
+  border: 1px solid var(--panel-border);
+}
+
+/* Prevenir problemas de foco y zoom en campos de texto en móviles y tablets */
+@media (max-width: 992px) {
+  input[type="text"],
+  input[type="number"],
+  input[type="search"],
+  .search-input,
+  select,
+  textarea {
+    font-size: 16px !important;
+    -webkit-user-select: text !important;
+    user-select: text !important;
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+  }
+
+  .toolbar-search-input {
+    -webkit-user-select: text !important;
+    user-select: text !important;
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+  }
+}
+
+.cLog {
+  
+  background: #1e1e1e; 
+  color: #00ff66; 
+  font-family: 'Consolas', 'Courier New', monospace; 
+  font-size: 17px; 
+  padding: 10px; 
+  border-radius: 8px; 
+  max-height: 512px; 
+  overflow-y: auto; 
+  white-space: normal; 
+  word-break: break-word; 
+  border: 1px solid #333; 
+  line-height: 1.4;
+}
+
+.cScroll {
+  display: flex; 
+  gap: 24px; 
+  padding: 16px 0; 
+  flex-wrap: wrap;
+}
+
+/* --- Pestañas tipo Carpeta para Submódulos Usuario (Cuenta y Acceso) --- */
+.user-subtabs {
+  display: flex;
+  gap: 0px;
+  border-bottom: 2px solid var(--panel-border);
+  margin-bottom: 0px;
+  padding: 0 4px;
+  position: relative;
+}
+
+.user-subtab-btn {
+  position: relative;
+  top: 2px;
+  padding: 6px 16px;
+  flex-grow: 1;
+  max-width: 180px;
+  justify-content: center;
+  border-radius: 10px 10px 0 0 !important;
+  border: 1.5px solid var(--panel-border) !important;
+  border-bottom: none !important;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.user-subtab-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--text-color);
+}
+
+.user-subtab-btn.active {
+  background: var(--panel-bg, #ffffff) !important;
+  color: var(--accent-color, #d01212) !important;
+  border-color: var(--panel-border) !important;
+  border-top: 3px solid var(--accent-color, #d01212) !important;
+  font-weight: 700;
+  z-index: 2;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.user-subtab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--panel-bg, #ffffff);
+}
+
+/* --- Pestañas tipo Carpeta para Submódulos Tema --- */
+.theme-subtabs {
+  display: flex;
+  gap: 0px;
+  border-bottom: 2px solid var(--panel-border);
+  margin-bottom: 16px;
+  padding: 0 4px;
+  position: relative;
+  width: 100%;
+}
+
+.theme-subtab-btn {
+  position: relative;
+  top: 2px;
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 10px 10px 0 0 !important;
+  border: 1.5px solid var(--panel-border) !important;
+  border-bottom: none !important;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.theme-subtab-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--text-color);
+}
+
+.theme-subtab-btn.active {
+  background: var(--panel-bg, #ffffff) !important;
+  color: var(--accent-color, #d01212) !important;
+  border-color: var(--panel-border) !important;
+  border-top: 3px solid var(--accent-color, #d01212) !important;
+  font-weight: 700;
+  z-index: 2;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.theme-subtab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--panel-bg, #ffffff);
+}
+
+/* --- Pestañas tipo Carpeta para Submódulos Personalizar Función --- */
+.func-subtabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  border-bottom: 2px solid var(--panel-border);
+  margin-bottom: 16px;
+  padding: 0 2px;
+  position: relative;
+  width: 100%;
+}
+
+.func-subtab-btn {
+  position: relative;
+  top: 2px;
+  flex: 1 1 30%; /* 3 por fila en móvil, se estiran uniformemente */
+  min-width: 80px;
+  padding: 5px 4px;
+  border-radius: 8px 8px 0 0 !important;
+  border: 1px solid var(--panel-border) !important;
+  border-bottom: none !important;
+  background: rgba(0, 0, 0, 0.03);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.76rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.func-subtab-btn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--text-color);
+}
+
+.func-subtab-btn.active {
+  background: var(--panel-bg, #ffffff) !important;
+  color: var(--accent-color, #d01212) !important;
+  border-color: var(--panel-border) !important;
+  border-top: 2.5px solid var(--accent-color, #d01212) !important;
+  font-weight: 700;
+  z-index: 2;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.func-subtab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--panel-bg, #ffffff);
+}
+
+.campoCel {
+  flex-grow: 1;
+  padding: 10px 14px;
+  border-radius: 10px; 
+  border: 1.5px solid var(--panel-border, #ccc); 
+  background: #ffffff !important; 
+  color: #212529 !important;
+  font-size: 0.9rem; 
+  outline: none; 
+  box-sizing: border-box;
+  width: inherit;
+}
+
+.dacorde {
+  max-width: 440px; 
+  padding: 24px; 
+  border-radius: 18px; 
+  text-align: center;
+  max-height: max-content;
+}
+
+/* Clase para Desplazamiento*/
+.despClass {
+  font-size: 0.65rem; 
+  font-weight: 700; 
+  font-style: italic; 
+  color: #555; 
+  background: #fff; 
+  border: 1px solid var(--panel-border); 
+  padding: 1px 4px; 
+  border-radius: 4px; 
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05); 
+  width: 45px; 
+  text-align: center; 
+  outline: none;
+
+  width: 53px;
+  height: 25px;
+
+}
+
+
+.tb_usoapp {
+  padding: 10px 12px; 
+  font-weight: 700; 
+  width: 160px; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  background: hsl(210deg 70.59% 93.33%);
+  z-index: 1;
+}
+
+
+/*ESTO SIEMPRE TIENE QUE ESTAR DE ULTIMO*/
+/* 2/3  min-width: 3 8 4px */
+@media (min-width: 384px) {
+.Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
+  { position: relative;width: fit-content;font-weight: bolder;left: 235px;}
+
+  .Bendecid, .Bendecid1 { margin-top: -46px;}
+  .Bendecid2, .Bendecid3, .Bendecid4 { margin-top: -51px;}
+
+  .Bendecid {top: 30px}    /*  106px*/
+  .Bendecid1 {top: 9px}
+  .Bendecid2 {top: 32px}
+  .Bendecid3 {top: 60px;}     
+  .Bendecid4 {top: 35px;}
+  .Bendecid1m {top: 52px;}
+  .modal-content{max-width: 85%;}
+
+  /*TAMAÑO DE LA PANTALLA CELULAR db*/
+  .song-viewer-view {width: 383px;}
+  .settings-tabs {gap: 5px;}
+
+  .canto-columns-container {padding: 16px 0px;}
+  .canto-slideX3 {padding: 0 0px;}
+
+  .viewer-toolbar {
+    flex-wrap: nowrap;
+    gap: 0px;
+    overflow: visible;
+    padding: 6px 8px;
+  }
+
+  .toolbar-left, .toolbar-right {gap: 0px !important;}
+  
+  .toolbar-left .btn-icon, .toolbar-right .btn-icon {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+.toolbar-dropdown-content {
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  .book-tabs {gap: 0px;}
+
+  .key-badge-text, #tone-dropdown-trigger-key {
+    padding: 5px 1px !important;
+    border-radius: 0px !important;
+  }
+  
+  .btn-icon {width: 20px;}
+  .toolbar-left .viewer-toolbar {gap: 0px !important;}
+  .app-container {
+    --app-padding: 4px;
+    padding: var(--app-padding);
+  }
+
+    .viewer-toolbar {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .songs-grid.style-cards {gap: 2px;}
+    .dashboard-view {gap: 2px;}
+
+    .dashboard-top-flex {margin-bottom: 2px;}
+
+
+
+    .dashboard-christ-img-mobile {
+      width: 130px;
+      height: 163px;
+      margin: 5px auto 10px auto;
+    }
+  .book-tabs {margin-bottom: 0px;}
+  .canto-content-transition-wrapper {margin-left: 5px;}
+
+
+  .theme-dark .dashboard-christ-img-pc,
+.theme-sepia .dashboard-christ-img-pc,
+.theme-dark .dashboard-christ-img-mobile,
+.theme-sepia .dashboard-christ-img-mobile {
+  margin-left: auto;
+}
+
+.dashboard-top-flex {padding-bottom: 5px;}
+
+.songs-grid.style-simple .song-card {padding: 10px 10px;}
+.songs-grid.style-simple .song-card-title {font-size: medium;}
+    
+  }   /* **************** FIN DE 384px*/
+
+@media (min-width: 768px) {
+.Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
+  { position: relative;width: fit-content;font-weight: bolder;left: 466px;}
+
+  /*.Bendecid, .Bendecid1 { margin-top: -46px;}*/
+  .Bendecid, .Bendecid1 {margin-top: -109px;}
+  .Bendecid2, .Bendecid3, .Bendecid4 { margin-top: -51px;}
+
+  .Bendecid {top: 106px}
+  .Bendecid1 {top: 83px}
+  .Bendecid2 {top: 107px}
+  .Bendecid3 {top: 134px;}     
+  .Bendecid4 {top: 110px;}
+  .Bendecid1m {top: 52px;}
+
+  .book-tabs {gap: 0px;}
+  .dashboard-left-image-container {display: flex;}
+  .modal-content{max-width: 65%;}
+  .song-viewer-view {width: 812px;}
+
+  .canto-columns-container {padding: 16px 12px; }
+  .btn-icon {width: 40px;}
+  .app-container {
+    --app-padding: 4px;
+    padding: var(--app-padding);
+  }
+  .func-subtabs {flex-wrap: nowrap;}
+
+
+.dashboard-christ-img-pc {
+    width: 166px;
+    margin-right: 0px;
+
+}
+}
+
+@media (min-width: 992px) {
+  .Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
+  { position: relative;width: fit-content;font-weight: bolder;left: 290px;}
+
+  .Bendecid, .Bendecid1 { margin-top: -46px;}
+  .Bendecid2, .Bendecid3, .Bendecid4 { margin-top: -51px;}
+
+  .Bendecid {top: 51px}
+  .Bendecid1 {top: 28px}
+  .Bendecid2 {top: 52px}
+  .Bendecid3 {top: 79px;}     
+  .Bendecid4 {top: 55px;}
+  .modal-content{max-width: 33%;max-height: 74%;overflow-y: initial;border: 1px solid;}
+  .song-viewer-view {width: 1024px;}
+
+  .canto-columns-container {padding: 16px 40px;  }
+  .btn-icon {width: 40px;}
+
+.dashboard-christ-img {
+        width: 215px;
+        height: 200px;
+        left: 15%;
+        top: 3%;
+    }
+}
+
+

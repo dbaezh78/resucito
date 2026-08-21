@@ -1,991 +1,338 @@
-:root {
-    --SangreDeCristo: #d01212;
-/*    --SangreDeCristo: #780606;*/
-    --Acordes: #780606;
-    --vblancas: white;
-    --precat: white;
-    --liturgia: #FFFFCB;
-    --cat: #bde9ff;
-    --eleccion: #CEFFCF;
-
-    /* MODO CLARO (Valores por defecto) */
-    --bg-principal: #ffffff;
-    --bg-contenedores: #f5f5f7;
-    --bg-header: #bc0009;
-    
-    --texto-principal: #1d1d1f;
-    --texto-secundario: #666666;
-    --texto-blanco: #ffffff;
-    
-    --borde-divisor: #e5e5e5;
-    --accent: #bc0009;
-
-    --cacorde: red;
-
-    /* Variables de colores de fondo para el body (pueden ser más transparentes o diferentes) */
-    --precat-body-bg: rgba(255, 255, 255, 0.2);
-    --liturgia-body-bg: rgba(255, 255, 203, 0.2);
-    --cat-body-bg: rgba(189, 233, 255, 0.2);
-    --eleccion-body-bg: rgba(206, 255, 207, 0.2);
-
-
-    /* Nuevos colores de fondo para acordes */
-    --chord-color-do: #FF0000; /* Rojo Fuerte, base */
-    --chord-color-re: #FFA500; /* Naranja Energía, calidez */
-    --chord-color-mi: #FFFF00; /* Amarillo Brillante, luz */
-    --chord-color-fa: #138c13; /* Verde Frescura, equilibrio */
-    --chord-color-fas: #138c13; /* Verde Frescura, equilibrio */
-    --chord-color-sol: #1e7ec2; /* Azul Cielo Serenidad */
-    --chord-color-la: #800080; /* Violeta Misterio, profundidad */
-    --chord-color-si: #000000; /* Negro Oscuro, resolución */
-    --chord-color-default-text: white; /* Color de texto por defecto para los nombres de acordes */
-
-    /* Nuevas variables para los fondos de canto por categoría */
-    --FondoCanto-Precatecumenado: white;
-    --FondoCanto-Catecumenado: #bde9ff;
-    --FondoCanto-Liturgico: #FFFFCB;
-    --FondoCanto-Eleccion: #CEFFCF;
-
-    /* Trasfondos con 80% de transparencia */
-    --TrasfondoCanto-Precatecumenado: rgba(255, 255, 255, 0.2); /* white con 20% de opacidad */
-    --TrasfondoCanto-Catecumenado: rgba(189, 233, 255, 0.2); /* #bde9ff con 20% de opacidad */
-    --TrasfondoCanto-Liturgico: rgba(255, 255, 203, 0.2); /* #FFFFCB con 20% de opacidad */
-    --TrasfondoCanto-Eleccion: rgba(206, 255, 207, 0.2); /* #CEFFCF con 20% de opacidad */
-} /* FIN DE ROOT */
-
-.material-symbols-outlined {
-    display: flex;
-    align-content: center;
-    font-size: 24px;
-    line-height: 1;
-    color: black;
-    text-align: center;
-    cursor: pointer;
-}
-
-.material-symbols-outlined:hover {
-    color: var(--SangreDeCristo);
-    color: white;
-}
+/* === ESTILOS DE PERFIL DE SALMISTA (V2) === */
 
 .perfil-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            /* max-width: 500px;*/
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            padding-top: 4px;
-        }
-        label {
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #bc0009;
-            font-size: 14px;
-        }
-        input, select {
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 88%;
-            text-align: left;
-            max-width: 98%;
-        }
-
-
-        .btn-save {
-            background-color: #bc0009;
-            color: white;
-            border: none;
-            padding: 15px;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .admin-lock {
-            background: #fff3f3;
-            border: 1px dashed red;
-            padding: 10px;
-            margin-top: 10px;
-            display: none;
-        }
-
-        .cLogout {
-            background: none; 
-            border: 1px solid #ccc; 
-            color: gray; 
-            width: fit-content; 
-            margin-top: 20px; 
-            padding: 10px; 
-            border-radius: 8px; 
-            cursor: pointer;
-        }
-
-        .navigation-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 12px 80px 12px;
+  font-family: inherit;
+  color: var(--text-color, #212529);
 }
 
-.icon-button {
-    background: none;
-    border: none;
-    /* padding: 8px; */
-    font-size: 28px;
-    transition: color 0.3s;
-    text-decoration: none;
+.perfil-title-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--panel-border, rgba(0,0,0,0.1));
 }
 
-.logout-btn {
-    color: #bc0009; /* Rojo sangre para la salida */
+.perfil-title-bar h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-color, #d01212);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.logout-btn:hover {
-    color: #000;
-    transform: scale(1.1);
+/* Secciones Colapsables */
+.perfil-section {
+  background: var(--panel-bg, #ffffff);
+  border: 1px solid var(--panel-border, rgba(0, 0, 0, 0.1));
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm, 0 2px 10px rgba(0,0,0,0.06));
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid var(--panel-border, rgba(0, 0, 0, 0.08));
+  transition: background 0.2s;
+}
 
-    .letra {
-        font-size: x-large !important;
-    }
+.section-header:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
 
+.header-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.header-title-group h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-color, #333);
+}
 
-    /* css de listado de cantos*/
+.arrow-icon {
+  transition: transform 0.3s ease;
+  color: var(--accent-color, #d01212);
+}
 
-    .contenedor-tabla {
-    overflow-x: auto;
-    justify-items: center;
-    /*margin-top: 20px;*/
+.perfil-section.collapsed .arrow-icon {
+  transform: rotate(-90deg);
+}
+
+.section-content {
+  padding: 20px;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+}
+
+@media (min-width: 384px) {.section-content {padding: 7px;}}
+@media (min-width: 768px) {.section-content {padding: 20px;}}
+
+.section-content.cfg-close {
+  display: none;
+}
+
+/* Tarjeta de Usuario / Perfil Header */
+.profile-info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #8ab4f830;
+  border: 1px solid rgb(18 25 208 / 15%);
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color, #d01212);
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-info-details h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-color, #212529);
+}
+
+.profile-info-details p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted, #666);
+}
+
+/* Formulario de Perfil */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted, #555);
+}
+
+.form-group input,
+.form-group select,
+#inputBuscador {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--panel-border, #ccc);
+  background: #ffffff !important;
+  color: #212529 !important;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#inputBuscador::placeholder,
+.form-group input::placeholder {
+  color: #777777 !important;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--accent-color, #d01212);
+  box-shadow: 0 0 0 3px rgba(208, 18, 18, 0.15);
+}
+
+/* Estilo especial de lectura sin borde ni fondo para Nombre del Salmista */
+#userName,
+.input-user-name {
+  font-size: 1.5rem !important;
+  color: var(--accent-color, #d01212) !important;
+  font-weight: 700 !important;
+  border: none !important;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 4px 0 !important;
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.btn-guardar {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--myblue, rgb(34 127 222));
+  box-shadow: 0 4px 14px rgb(59 150 229 / 66%);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.15s, background 0.2s;
+}
+
+.btn-guardar:hover {
+  transform: translateY(-1px);
+  background: rgb(24 106 191);
+}
+
+/* Botones de Gestión de Cantos */
+.btn-action-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-action {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s, opacity 0.2s;
+}
+
+.btn-action:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.btn-sync-cloud {
+  background: #4285F4;
+}
+
+.btn-download-offline {
+  background: #e65100;
+}
+
+/* Tabla de Gestión */
+.tabla-wrapper {
+  overflow-x: auto;
 }
 
 .tabla-gestion {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    background: white;
-
-    @media (min-width: 384px) {font-size: 12px;}
-    @media (min-width: 768px) {font-size: 16px;}
-    @media (min-width: 992px) {font-size: 16px;;}
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.85rem;
 }
-
-.tabla-gestion th, .tabla-gestion td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-
-    @media (min-width: 384px) {padding: 2px;}
-    @media (min-width: 768px) {padding: 10px;}
-    @media (min-width: 992px) {padding: 10px;}
-
-}
-
-/**/
-.tabla-gestion th {
-    background: #bc0009;
-    color: white;
-    padding: 10px;
-
-    @media (min-width: 384px) {padding: 2px;}
-    @media (min-width: 768px) {padding: 10px;}
-    @media (min-width: 992px) {padding: 10px;}
-}
-
-
-/**/
 
 .tabla-gestion th {
-    background-color: #bc0009;
-    color: white;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text-color, #333);
+  padding: 10px 12px;
+  text-align: right;
+  font-weight: 700;
+  border-bottom: 2px solid var(--panel-border, #ddd);
 }
 
-.tabla-gestion b {
-    display: inline-block;
-    min-width: auto;
-    text-align: center;
-    /* background: #fff5f5; /* Un fondo muy suave para resaltar tu cambio */
-    padding: 2px 5px;
-    border-radius: 4px;
-    
-    @media (min-width: 384px) {
-        padding: 1px;
-        padding: 1px 0px;
-    }
+.tabla-gestion td {
+  padding: 10px 12px;
+  text-align: right;
+  border-bottom: 1px solid var(--panel-border, #eee);
+  color: var(--text-color, #212529);
 }
 
-/* Filas pares con un fondo ligeramente oscuro */
-.tabla-gestion tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.03); /* Un gris muy suave */
-}
-
-/* Filas impares blancas (por si acaso) */
-.tabla-gestion tbody tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-/* Efecto al pasar el mouse para no perder la vista */
-.tabla-gestion tbody tr:hover {
-    background-color: rgba(188, 0, 9, 0.05); /* Un tono rojizo muy suave al pasar el mouse */
-}
-
-
-.tu-dato {
-    font-weight: bold;
-    color: #4CAF50; /* Verde para identificar que son datos del cantor */
-}
-
-.fecha-uso {
-    cursor: pointer;
-    text-decoration: underline;
-    color: #007bff;
-}
-
-
-/*  Tabla del listado de los cantos*/
-
-.tu-dato {
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-
-
-/* ACTUALIZACION*/
-
-.perfil-section {
-            margin-bottom: 15px;
-            border-radius: 12px;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            border: 1px solid #eee;
-            
-        }
-.perfil-section.collapsed .arrow-icon {
-    transform: rotate(-90deg); /* O el ángulo que use tu icono para indicar 'cerrado' */
-}
-
-        .section-content {
-            padding: 15px;
-            border-top: 1px solid #f0f0f0;
-            transition: all 0.3s ease;
-        }
-
-        /* Ajuste para que los contenedores antiguos no dupliquen sombras */
-        .perfil-container {
-            box-shadow: none !important;
-            margin: 0 !important;
-            padding: 10px !important;
-            max-width: 100% !important;
-            border: none !important;
-        }
-
-        .material-symbols-outlined.arrow {
-            transition: transform 0.3s;
-        }
-        
-        /* Clase para rotar la flecha cuando está cerrado */
-        .collapsed .arrow {
-            transform: rotate(-90deg);
-        }
-
-        
-        .section-header {
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            background: #fdfdfd;
-            user-select: none;
-            transition: background 0.3s;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .section-header:hover {
-            background: #f5f5f5;
-            display: block;
-        }
-
-        .section-header h2 {
-            margin: 0;
-            font-size: 1.25rem;
-            font-family: 'Neocat';
-            color: #bc0009;
-        }
-
-        .header-title-group {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        @media (min-width: 384px) {.section-content {padding: 1px;}}
-        @media (min-width: 768px) {.section-content {padding: 20px;}}
-        @media (min-width: 992px) {.section-content {padding: 20px;}}
-
-
-
-        /* Ajuste de contenedores internos */
-        .perfil-container {
-            box-shadow: none !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            max-width: 100% !important;
-            border: none !important;
-        }
-
-        .arrow-icon {
-            transition: transform 0.3s ease;
-            color: #bc0009;
-            display: inline-block;
-            overflow: hidden;
-        }
-
-        .collapsed .arrow-icon {
-            transform: rotate(-90deg);
-        }
-
-        /* Espaciado para los iconos de navegación */
-        .nav-icons {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-
-            @media (min-width: 384px) {
-            display: flex;
-            gap: 0px;
-            flex-wrap: wrap;
-            font-size: smaller;
-            justify-content: flex-end;
-    }
-        }
-
-/* --- ESTILOS BOTÓN GOOGLE --- */
-.google-btn-container {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #dadce0;
-    border-radius: 4px;
-    padding: 2px 10px;
-    cursor: pointer;
-    font-family: 'Roboto', arial, sans-serif;
-    transition: background-color .2s;
-}
-
-.google-btn-container:hover {
-    background-color: #f8f9fa;
-    box-shadow: 0 1px 3px rgba(60,64,67,0.3);
-}
-
-.btn-text {
-    font-size: 14px;
-    font-weight: 500;
-    color: #3c4043;
-    margin-right: 8px;
-}
-
-.google-icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-}
-
-.google-icon {
-    width: 18px;
-    height: 18px;
-}
-
-
-/* --- ESTILOS SWITCH (CONFIGURACIÓN) --- */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-}
-
-.switch {
-    transform: scale(0.8);      /* Lo hace un poco más sutil como en tu dibujo */
-    flex-shrink: 0;             /* Evita que el botón se aplaste */
-}
-
-.switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 24px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 18px; width: 18px;
-    left: 3px; bottom: 3px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: #28a745;
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-.config-item {
-    display: flex;
-    justify-content: flex-start; /* Alinea todo a la izquierda */
-    align-items: center;         /* Centra verticalmente */
-    padding: 10px 15px;
-    background: #fff;
-    margin-bottom: 8px;
-    border-radius: 10px;
-    gap: 15px;                   /* Crea el espacio exacto entre texto y switch */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-
-.confg-margen {
-    font-size: 0.95em;
-    color: #333;
-    font-weight: 500;
-    white-space: nowrap;        /* Evita que el texto se rompa en dos líneas */
-}
-
-.cfg-close {
-    display: none;
-}
-
-
-.btn-primario {
-    padding: 2px 0px 4px 0px;
-    width: 100%;
-}
-
-.xclose {
-    position:absolute; 
-    top:-15px; right:-15px; 
-    border:none; 
-    background:none; 
-    font-size:24px; 
-    cursor:pointer; 
-    color:white;
-}
-
-.ttlo {
-    padding: 20px;
-    background: #bc0009;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-.estrellas-contenedor span {
-    transition: transform 0.2s;
-    display: inline-block;
-}
-
-.estrellas-contenedor span:hover {
-    transform: scale(1.3);
-    color: #FFD700 !important; /* Brillo al pasar el mouse */
-}
-
-
-
-.paddingleft4px {
-    padding-left: 4px;
-
+.tabla-gestion tr:hover {
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .listcanto {
-    text-decoration:none;
-    color:inherit;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  text-decoration: none;
+  color: var(--text-color, #212529);
+  transition: color 0.15s;
+  font-size: larger;
 }
 
-
-/* nuevas opciones*/
-/* Aviso de Área Privada (Overlay) */
-.auth-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+.listcanto:hover {
+  text-decoration: none;
+  color: var(--SangreCristo);
 }
 
-.auth-modal {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 20px;
-    max-width: 380px;
-    width: 90%;
-    text-align: center;
-    font-family: sans-serif;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+.estrellas-contenedor span {
+  font-size: 1.1rem;
+  user-select: none;
+  transition: transform 0.1s;
 }
 
-.auth-modal .icon {
-    font-size: 70px;
-    color: #bc0009;
+.estrellas-contenedor span:hover {
+  transform: scale(1.2);
 }
 
-.auth-modal h2 {
-    margin: 20px 0 10px;
-    color: #1d1d1f;
-    font-size: 24px;
+/* Modales */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
 }
 
-.auth-modal p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    font-size: 16px;
+.modal-content-card {
+  background: var(--panel-bg, #ffffff);
+  color: var(--text-color, #212529);
+  padding: 24px;
+  border-radius: 20px;
+  max-width: 440px;
+  width: 90%;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+  border: 1px solid var(--panel-border, rgba(0,0,0,0.1));
 }
 
-.auth-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.cCalendar {
+  
+  
+  
+  padding: 5px 12px; 
+  font-size: 1.15rem; 
+  font-weight: 800; 
+  color: var(--text-color); 
+  letter-spacing: 0.5px;
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+  gap: 6px;
 }
-
-.btn-auth-login {
-    background: #bc0009;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 12px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.btn-auth-login:active {
-    transform: scale(0.95);
-}
-
-.btn-auth-back {
-    background: #f0f0f2;
-    color: #333;
-    border: none;
-    padding: 15px;
-    border-radius: 12px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.auth-footer {
-    margin-top: 25px;
-    font-size: 13px;
-    color: #999;
-}
-
-.cinta {
-    background-color: #780606; 
-    color: white; 
-    border: none;
-}
-
-
-/* Contenedor principal de los controles rápidos */
-/* La caja gris de fondo */
-.seccion-controles-compacta {
-    background-color: #f4f4f4; 
-    border-radius: 12px;
-    padding: 15px;
-    border: 1px solid #e0e0e0;
-    margin: 10px 5px;
-}
-
-/* El título "Preferencia de interfaz" */
-.titulo-controles {
-    display: block;
-    font-size: 0.72em;
-    color: #888;
-    margin-bottom: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* Fila de cada control */
-.fila-control-rapido {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.fila-control-rapido:last-child {
-    margin-bottom: 0;
-}
-
-/* Texto del control */
-.etiqueta-control {
-    font-size: 0.85em;
-    color: #444;
-    font-weight: 500;
-    min-width: 145px; /* Esto alinea todos los switches en columna */
-}
-
-
-/* Botón pequeño para acciones dentro de la caja gris */
-.btn-accion-min {
-    background: #e0e0e0;
-    border: none;
-    border-radius: 4px;
-    padding: 2px 8px;
-    font-size: 0.75em;
-    color: #666;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.btn-accion-min:hover {
-    background: #d0d0d0;
-    color: #333;
-}
-
-
-/* perfil.css - Versión de Dos Columnas */
-
-/* 1. Contenedor principal que guarda las secciones (Ajuste IMPORTANTE) */
-#contenedor-controles-dinamicos {
-    display: flex;
-    flex-wrap: initial; /* Permite que bajen si no caben (móvil) */
-    gap: 15px;       /* Espacio entre las dos cajas grises */
-    margin-top: 15px;
-    padding: 0 5px;  /* Pequeño margen lateral */
-    justify-content: space-between; /* Separa las cajas al máximo */
-    width: fit-content;
-}
-
-/* 2. Estilo de cada caja gris (Sección) */
-.seccion-controles-compacta {
-    background-color: #f4f4f4; /* Gris suave */
-    border-radius: 12px;
-    padding: 15px;
-    border: 1px solid #eaeaea;
-    
-    /* Cálculo para 2 columnas con gap: */
-    flex: 1 1 calc(50% - 15px); /* Toma el 50% menos el espacio del gap */
-    min-width: auto;           /* Evita que se aplaste mucho en móvil */
-    /*min-width: 280px;           /* Evita que se aplaste mucho en móvil */
-    box-sizing: border-box;     /* Incluye padding en el cálculo de ancho */
-    
-    margin-bottom: 0 !important; /* Quitamos el margen inferior antiguo */
-}
-
-/* 3. Título de la sección (Ajuste estético) */
-.titulo-controles {
-    display: block;
-    font-size: 0.72em;
-    color: #888;
-    margin-bottom: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid #e0e0e0; /* Pequeña línea divisoria inferior */
-    padding-bottom: 5px;
-}
-
-/* 4. Fila de cada control (Compacto) */
-.fila-control-rapido {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px; /* Menos espacio entre filas para compactar */
-}
-
-.fila-control-rapido:last-child {
-    margin-bottom: 0;
-}
-
-/* 5. Texto del control (Alineación) */
-.etiqueta-control {
-    font-size: 0.82em; /* Un poquito más pequeña para que quepa bien en columna */
-    color: #333;
-    font-weight: 500;
-    min-width: 135px; /* Ajuste para alinear los switches */
-    white-space: nowrap; /* Evita que el texto se rompa en 2 líneas */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Pone puntos suspensivos si es muy largo */
-}
-
-
-
-.uName {
-    background-color: transparent;
-    border: none; /* Mejor que 0px solid */
-    outline: none;
-    font-weight: bold;
-    color: #333; /* Asegura un color sólido */
-
-    /* Evita que se pueda sombrear/seleccionar el texto */
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-
-    /* LA CLAVE: El ratón lo ignora por completo. No sale la "mano" ni la "I" */
-    pointer-events: none; 
-
-    /* Por si acaso algún navegador no toma el pointer-events, forzamos el cursor */
-    cursor: default; 
-    
-    /* Elimina cualquier estilo nativo de input en móviles */
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-.scolor {
-    color: var(--SangreDeCristo);
-
-}
-
-.EstadoSys {
-    display: contents;
-}
-
-
-.cacorde {  
-    /* Este maneja el color del acorde cambiado en perfil*/
-    color:red;
-
-}
-
-
-.perfil-a1 {
-    position:absolute; 
-    top:0; 
-    left:0; 
-    width:100%; 
-    height:100%; 
-    background:rgba(0,0,0,0.8); 
-    display:flex; 
-    align-items:center; 
-    justify-content:center;
-}
-
-.perfil-a2 {
-     background:white; 
-     padding:20px; 
-     border-radius:15px; 
-     width:300px; 
-     text-align:center; 
-     position:relative; 
-     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-}
-
-.perfil-b1 {
-    display:flex; 
-    justify-content:space-between; 
-    align-items:center; 
-    margin-bottom:15px;
-}
-.perfil-b2 {
-    border:none; 
-    background:#e0e0e0; 
-    border-radius:5px; 
-    padding:5px 12px; 
-    cursor:pointer; 
-    font-weight:bold;
-}
-
-.perfil-b3 {
-     margin:0; 
-     font-size:1.1em; 
-     color:#333;
-}
-
-.perfil-b4 {
-     border:none; 
-     background:#e0e0e0; 
-     border-radius:5px; 
-     padding:5px 12px; 
-     cursor:pointer; 
-     font-weight:bold;
-}
-
-.perfil-c1 {
-    display: grid; 
-    grid-template-columns: repeat(7, 1fr); 
-    gap: 5px; 
-    background: #fdfdfd; 
-    padding: 10px; 
-    border-radius: 10px; 
-    border: 1px solid #eee;
-}
-
-.perfil-d1 {
-    margin-top:20px; 
-    border-top: 1px solid #eee; 
-    padding-top:15px;
-}
-
-.perfil-d2 {
-    margin:0; 
-    font-size:13px; 
-    color:#444;
-}
-
-.perfil-d3 {
-    color:#bc0009; 
-    font-weight:bold; 
-    font-size:18px; 
-    cursor:pointer; 
-    text-decoration:underline;
-}
-
-.perfil-d4 {
-    color:gray; 
-    font-size:10px;
-}
-
-
-.perfil-e1 {
-    padding:12px; 
-    border-bottom:1px solid #eee; 
-    display:flex; 
-    flex-direction:column; 
-    gap:5px; 
-    background: white; 
-    text-align: left;
-    
-}
-
-.perfil-e2 {
-    display:flex; 
-    justify-content:space-between; 
-    font-size:12px;
-}
-
-.perfil-e3 {
-    color:#888;
-}
-
-.perfil-e4 {
-    color:#d4af37;
-}
-
-.perfil-e5 {
-    display:flex; 
-    justify-content:space-between; 
-    align-items:center;
-}
-
-.perfil-e6 { 
-    font-size:15px; 
-    font-weight:bold; 
-    color:#333;
-}
-
-.perfil-e7 {
-    font-size:14px; 
-    background:#f5f5f5; 
-    padding:3px 10px; 
-    border-radius:12px; 
-    color:#666; 
-    border:1px solid #eee; 
-    font-weight: 900;
-}
-
-
-.perfil-f1 {
-     width:100%; 
-     height:100%; 
-     display:flex; 
-     align-items:center; 
-     justify-content:center;
-}
-.perfil-f2 {
-    background:white; 
-    border-radius:15px; 
-    width:320px; 
-    max-height:80vh; 
-    overflow:hidden; 
-    display:flex; 
-    flex-direction:column; 
-    position:relative; 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-}
-
-.perfil-f3 {
-    position:absolute; 
-    top:-3px; 
-    right:-3px; 
-    border:none; 
-    background:none; 
-    font-size:24px; 
-    cursor:pointer; 
-    color:white; 
-    z-index:11;
-}
-.perfil-f4 {
-    padding:25px 20px 5px 20px; 
-    background:#d4af37; 
-    color:white; 
-    font-weight:bold; 
-    text-align:center; 
-    font-size: 20px; 
-    line-height: 1.2;
-}
-.perfil-f5 {
-    background:#d4af37; 
-    color:rgba(255,255,255,0.8); 
-    padding:0 20px 20px 20px; 
-    text-align:center; 
-    font-size:13px; 
-    letter-spacing: 1px; 
-    font-weight: lighter;
-}
-.perfil-f6 {
-    flex-grow:1; 
-    overflow-y:auto; 
-    background:#fff;
-}
-.perfil-f7 {
-    padding:20px; 
-    text-align:center; 
-    color:gray;
-}
-.perfil-f8 {}
-.perfil-f9 {}

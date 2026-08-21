@@ -1,231 +1,396 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESUCITÓ - Cantos Neocatecumenales</title>
-    <link rel="icon"        href="src/img/ico.ico" type="image/x-icon">
-    <link rel="manifest"    href="src/js/manifest.json">
-    <link rel="stylesheet"  href="src/css/styles.css">
-    <link rel="stylesheet"  href="src/css/mensajekiko.css">
-    <link rel="stylesheet"  href="src/css/cgoogle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>RESUCITÓ - Cantos Neocatecumenales</title>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/navegador.css">
 </head>
-<body>
-
-    <script src="src/js/loader.js"></script>
-
+<body class="theme-light">
+  <div class="app-container">
+    
+    <!-- BANNER DE ENCABEZADO -->
     <header>
-<a href="#" id="cantoLink">
-    <b class="dblink dblink-ac">
-        <span class="marquee-text">
-            Amad a vuestros enemigos, ¡Vengo pronto!, el cantor hace un servicio que lo ayuda a Él y a toda la comunidad, es un servicio de humildad sencillez y alabanza que lo pone en contacto con la palabra y los salmos de manera constante y perseverante gracias a la práctica, el carisma del cantor hace del hermano un siervo fiel, si por Dios se deja ayudar.
+      <div class="title-banner">
+        <img class="logo-app" src="img/logo_cantos.png" alt="Camino Neocatecumenal" onclick="location.reload();" style="cursor: pointer;">
+        <h1>RESUCITÓ</h1>
+      </div>
+      <div class="marquee-banner">
+        <span class="marquee-content">
+          "Amad a vuestros enemigos, ¡Vengo pronto!, el cantor hace un servicio que lo ayuda a Él y a toda la comunidad, es un servicio de humildad sencillez y alabanza..."
         </span>
-    </b>
-</a>
-    
-
-    <div id="Inicio"> </div>
-    <a href="">
-        <div class="tResucito">
-            RESUCITÓ 
-            <br>
-                    <img class="cristo" align="left" src="/src/img/cristo.png" alt="Cristo Resucitado">
-                    <img class="cima" src="/src/img/logo_cantos.png" alt="Camino neocatecumenal">
-              </div>
-            </a>
+      </div>
     </header>
-<!--
-    <div>
-        <label><input class=""  type="checkbox" id="toggleView"><span>Ver como lista</span></label>
-        <label><input class=""  type="checkbox" id="kikomsg-tv"><span>Kiko Argüello</span></label>
-    </div>
--->
 
-
-<div class="bgdif">
-    <label for="toggleView">
-        <input type="checkbox" id="toggleView">
-        <span class="cwh" >Lista</span>
-    </label>
-    
-    <!--
-        <input type="checkbox" id="mostrar-mensaje">
-        <label for="mostrar-mensaje" class="cwh">Kiko Argüello</label>
-        
-        <input type="checkbox" id="mostrar-mensaje-jp2">
-        <label class="cwh" for="mostrar-mensaje-jp2">Juan Pablo II</label>
-        
-        <a href="/src/html/intro.html" class="cwh">Intro</a>
-        -->
-
-
-<!-- Mensaje Kiko oculto inicialmente -->
-<div class="mensaje-kiko">
-    <span class="MsgClass">Cantos del Camino Neocatecumenal</span>
-    <p style="text-align: justify;">
-        En el CAMINO NEOCATECUMENAL vemos aparecer hoy un servicio humilde y esencial, cual es el del Cantor.<br>
-
-        El cantor, en este itinerario de educación de la fe, tiene la misión de ayudar a crear la comunidad litúrgica o, mejor, de recrearla; de convertir tantas veces una pluralidad en una unidad de culto: <i>«A una sola voz, con un solo corazón y con una sola alma».</i><br>
-
-        Culto espiritual que se expresa en la acción litúrgica de la comunidad, fuente constante, en nuestro caminar histórico, de lo más profundamente inocente: el sentimiento de nuestra maldad iluminado por lo inefable del amor de ALGUIEN que nos ama así, que nos ama, aunque hayamos sido sus enemigos; fuente de la conversión, fuente de la FE.
-        <br><b><i>Kiko Argüello</i></b>
-    </p>
-</div>
-
-<!-- Mensaje Kiko oculto inicialmente -->
-<div class="msg-jp2">
-    <span class="MsgClass">A LOS CANTORES</span>
-    <p style="text-align: justify;">
-        «Dirijo un saludo cordial a los cantores-salmistas de las Comunidades Neocatecumenales. Queridísimos: el misterio de Cristo Resucitado, que os disponéis a celebrar con vuestros cantos, sea testimoniado también con vuestra vida, de manera que quede exaltado ante el mundo por el acorde armonioso de las palabras y de las obras de Aquel que "muriendo destruyó la muerte, y resucitando, restauró la vida".
-        <br>
-        A todos vosotros y a vuestros seres queridos, mi Bendición Apostólica».
-        <br><b><i>S. JUAN PABLO II</i></b>
-    </p>
-</div>
-
-</div>
-
-    
-    <div class="controls">
-        <div class="search-container">
-            <button id="toggleFilters" class="filter-toggle-button"></button>
-            
-            <input type="search" id="searchInput" placeholder="Buscar Canto..." autocomplete="off">
-            
-            <button id="clearSearch" title="Limpiar búsqueda"></button>
-
-            <div id="resultadosBusqueda" class="resultados-busqueda" style="display: none;"></div>
+    <!-- VISTA 1: DASHBOARD / BUSCADOR -->
+    <div id="dashboard-view" class="view dashboard-view">
+      <img src="img/christ.png" alt="Cristo" class="dashboard-christ-img-mobile">
+      <!-- Flex contenedor superior para la imagen de Cristo fija a la izquierda y controles a la derecha -->
+      <div class="dashboard-top-flex">
+        <div class="dashboard-left-image-container">
+          <img src="img/christ.png" alt="Cristo" class="dashboard-christ-img-pc">
         </div>
-        
-        <div class="filters-container hidden">
-            <div class="filters">
+        <div class="dashboard-right-controls">
+          <!-- Pestañas de Libros (Book Tabs) -->
+          <div class="book-tabs">
+            <button class="book-tab active" data-book="resucito">Resucitó</button>
+            <button class="book-tab" data-book="joven">Canto Joven</button>
+            <button class="book-tab" data-book="aclamaciones">Aclamaciones</button>
+            <button class="book-tab" data-book="salmodias">Salmodias</button>
+            <button class="book-tab" data-book="catequesis">Catequesis</button>
+            <button class="book-tab" data-book="extras" id="book-tab-extras" style="display: none;">Extras</button>
+            <button class="book-tab" data-book="favoritos">Favoritos</button>
+          </div>
 
-                <div class="dbboton">
+          <!-- Buscador y Configuración -->
+          <div class="search-and-settings-row">
+            <!-- Botón de ajustes en la página principal -->
 
-                    <!--
-                    <a href="https://dbaezh78.github.io/salterios/" target="_blank" class="border dblink dblink-laudes">Laudes</a>
-                    <a href="https://dbaezh78.github.io/ev/index.html" target="_blank" class="border dblink dblink-ev">Evangelio</a>
-                    <a href="https://www.youtube.com/@CristoJesusReydereyes" target="_blank" class="border dblink dblink-yt">youtube</a>
-                    <a href="https://www.facebook.com/groups/evangelios" target="_blank" class="border dblink dblink-fb">facebook</a>
-                    <a href="#" target="_blank" id="installButton" class="border dblink dblink-fb installApp">Install App</a>
-                    -->
 
-                    <a class="precat" id="catg"></a>
-                    </div>
-
-                    <!-- Agrega este nuevo div para el toggle de vista -->
-                    <!-- antes→ <div class="view-toggle">-->
-                
-                <h3>Etapas del Camino</h3>
-                <div class="category-filters">
-                    <button class="category-filter" data-category="Precatecumenado">Precatecumenado</button>
-                    <button class="category-filter" data-category="Catecumenado">Catecumenado</button>
-                    <button class="category-filter" data-category="Eleccion">Elección</button>
-                    <button class="category-filter" data-category="Liturgia">Liturgia</button>
-                    <button class="category-filter" data-category="Catolicos">Otros Cantos Católicos</button>
-                </div>
-
-                <h3>Filtros de los Cantos</h3>
-                <div class="moment-filters">
-                    <button class="moment-filter" data-moment="Indice">Indice de Cantos</button>
-                    <button class="moment-filter" data-moment="Vírgen María">Vírgen María</button>
-                    <button class="moment-filter" data-moment="Entrada">Entrada</button>
-                    <button class="moment-filter" data-moment="Comunión">Comunión</button>
-                    <button class="moment-filter" data-moment="Celebración">Celebración</button>
-                    <button class="moment-filter" data-moment="Paz">Paz</button>
-                    <button class="moment-filter" data-moment="Final">Final</button>
-                    <button class="moment-filter" data-moment="Niños">Niños</button>
-                    <button class="moment-filter" data-moment="Fracción del Pan">Fracción del Pan</button>
-                    <button class="moment-filter" data-moment="Salmodias">Salmodias</button>
-                    <button class="moment-filter" data-moment="Adviento">Adviento</button>
-                    <button class="moment-filter" data-moment="Navidad">Navidad</button>
-                    <button class="moment-filter" data-moment="Pascua">Pascua</button>
-                    <button class="moment-filter" data-moment="Pentecostés">Pentecostés</button>
-                    <button class="moment-filter" data-moment="Aclamación">Aclamación</button>
-                    <button class="moment-filter" data-moment="Penitencial">Penitencial</button>
-                    <button class="moment-filter" data-moment="Nuevo Testamento">Nuevo Testamento</button>
-                    <button class="moment-filter" data-moment="Antiguo Testamento">Antiguo Testamento</button>
-                    <button class="moment-filter" data-moment="Villancicos">Villancicos</button>
-                    <button class="moment-filter" data-moment="Católicos">Católicos</button>
-                </div>
-                <a style="font-size: small;" href="https://docs.resucito.do/resucito.pdf" target="_blank">Libro en PDF</a>
-                <a style="font-size: small;" href="/src/html/pantalla.html" target="_blank">Medir pantalla</a>
+            <!-- Contenedor del Buscador -->
+            <div class="search-box-container">
+              <!-- Botón de Toggle Filtros (dentro del buscador) -->
+              <button id="toggle-filters-btn" class="btn-inside-search" title="Filtros de Búsqueda">
+                <span class="material-symbols-outlined">filter_list</span>
+              </button>
+              
+              <input type="search" id="search-input" class="search-input" placeholder="Buscar canto..." autocomplete="off">
+              
+              <span class="material-symbols-outlined clear-search-btn" id="clear-search-btn" style="display: none;">close</span>
             </div>
+
+            
+
+          </div>
         </div>
+      </div>
+
+      <!-- Panel de Filtros -->
+      <div id="filters-panel" class="filters-panel" style="display: none;">
+        <!-- Etapas -->
+        <div class="filter-section">
+          <h3>Etapas del Camino</h3>
+          <div class="filter-buttons-grid" id="stage-filters-container">
+            <button class="btn filter-pill stage-pill-pre" data-stage="Precatecumenado">Precatecumenado</button>
+            <button class="btn filter-pill stage-pill-cate" data-stage="Catecumenado">Catecumenado</button>
+            <button class="btn filter-pill stage-pill-ele" data-stage="Eleccion">Elección</button>
+            <button class="btn filter-pill stage-pill-lit" data-stage="Liturgia">Liturgia</button>
+            <button class="btn filter-pill stage-pill-cat" data-stage="Catolicos">Otros Católicos</button>
+          </div>
+        </div>
+
+        <!-- Filtros de los Cantos -->
+        <div class="filter-section">
+          <h3>Filtros de los Cantos</h3>
+          <div class="filter-buttons-grid" id="moment-filters-container">
+            <button class="btn filter-pill active" id="btn-filter-indice" data-moment="Indice de Cantos">Indice de Cantos</button>
+            <button class="btn filter-pill" data-moment="Vírgen María">Vírgen María</button>
+            <button class="btn filter-pill" data-moment="Entrada">Entrada</button>
+            <button class="btn filter-pill" data-moment="Comunión">Comunión</button>
+            <button class="btn filter-pill" data-moment="Celebración">Celebración</button>
+            <button class="btn filter-pill" data-moment="Paz">Paz</button>
+            <button class="btn filter-pill" data-moment="Final">Final</button>
+            <button class="btn filter-pill" data-moment="Niños">Niños</button>
+            <button class="btn filter-pill" data-moment="Fracción del Pan">Fracción del Pan</button>
+            <button class="btn filter-pill" data-moment="Salmodias">Salmodias</button>
+            <button class="btn filter-pill" data-moment="Adviento">Adviento</button>
+            <button class="btn filter-pill" data-moment="Navidad">Navidad</button>
+            <button class="btn filter-pill" data-moment="Pascua">Pascua</button>
+            <button class="btn filter-pill" data-moment="Pentecostés">Pentecostés</button>
+            <button class="btn filter-pill" data-moment="Aclamación">Aclamación</button>
+            <button class="btn filter-pill" data-moment="Penitencial">Penitencial</button>
+            <button class="btn filter-pill" data-moment="Nuevo Testamento">Nuevo Testamento</button>
+            <button class="btn filter-pill" data-moment="Antiguo Testamento">Antiguo Testamento</button>
+            <button class="btn filter-pill" data-moment="Villancicos">Villancicos</button>
+            <button class="btn filter-pill" data-moment="Católicos">Católicos</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de Canciones -->
+      <div id="songs-grid" class="songs-grid">
+        <!-- Tarjetas dinámicas -->
+      </div>
     </div>
 
-    <div class="songs-list">
-        <!-- Los cantos se cargarán aquí dinámicamente -->
+    <!-- VISTA 2: VISUALIZADOR DE CANTO -->
+    <div id="song-viewer-view" class="view song-viewer-view" style="display: none;">
+      
+      <!-- Cabecera fija del visor (Toolbar y reproductor de audio) -->
+      <div class="viewer-sticky-header">
+        <!-- Toolbar del visor -->
+        <div class="viewer-toolbar">
+          <!-- Izquierda: Volver y pantalla de Tono/Cejilla -->
+          <div class="toolbar-left">
+            <button id="viewer-back-btn" class="btn btn-icon" title="Volver al buscador">
+              <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            
+            <div class="tone-capo-display" id="tone-capo-trigger" title="Cambiar tono o cejilla">
+              <span class="material-symbols-outlined tone-music-note">music_note</span>
+              <span id="key-badge" class="key-badge-text">La</span>
+              <img src="ima/cejilla.png" alt="Cejilla" class="cejilla-icon-img">
+              <span id="capo-badge" class="capo-badge-text">5/ 5º traste</span>
+            </div>
+
+            <!-- Disparador de Tono/Cejilla compacto para móviles/tablets -->
+            <button id="tone-dropdown-trigger" class="tone-capo-display-compact" style="display: none;" title="Cambiar tono o cejilla">
+              <span class="material-symbols-outlined" style="font-size: 1rem;">music_note</span>
+              <span id="tone-dropdown-trigger-key" class="key-badge-text">La</span>
+              <img src="ima/cejilla.png" alt="Cejilla" class="cejilla-icon-img" style="height: 14px; width: auto; margin-left: 2px;">
+              <span id="tone-dropdown-trigger-capo" class="capo-badge-text">5</span>
+            </button>
+
+            <button id="toolbar-chord-edit-btn" class="btn btn-icon" title="Editar acordes" style="margin-left: 8px; display: none;">
+              <span class="material-symbols-outlined" id="toolbar-chord-edit-icon">edit_note</span>
+            </button>
+            <button id="toolbar-save-chord-btn" class="btn btn-icon" title="Guardar posiciones" style="margin-left: 8px; display: none; color: #11e05a;">
+              <span class="material-symbols-outlined" id="toolbar-save-chord-icon">save</span>
+            </button>
+          </div>
+
+          <!-- Centro: Título pegajoso cuando se desplaza hacia abajo -->
+          <div class="toolbar-center" id="toolbar-sticky-title" style="display: none;">
+            <span class="toolbar-title-text" id="toolbar-sticky-title-text"></span>
+          </div>
+
+          <!-- Derecha: Iconos de control, navegación y buscador rápido -->
+          <div class="toolbar-right">
+            <!-- Abrir Modal de Acordes -->
+            <button id="chord-modal-trigger-btn" class="btn btn-icon" title="Transportar / Ver acordes">
+              <span class="material-symbols-outlined">music_note</span>
+            </button>
+
+            <!-- Favorito (Star) -->
+            <button id="favorite-btn" class="btn btn-icon" title="Favorito" style="margin-left: 8px;">
+              <span class="material-symbols-outlined" id="favorite-icon">star</span>
+            </button>
+
+            <!-- Dividir pantalla (Book icon) -->
+            <button id="split-layout-btn" class="btn btn-icon" title="Alternar vista en 2 columnas">
+              <span class="material-symbols-outlined">menu_book</span>
+            </button>
+
+            <!-- Asamblea Toggle -->
+            <button id="asamblea-toggle-btn" class="btn btn-icon" title="Alternar partes de asamblea">
+              <span class="material-symbols-outlined">visibility</span>
+            </button>
+
+            <!-- Reproducción de Audio -->
+            <button id="audio-play-btn" class="btn btn-icon" title="Reproducir audio" style="display: none;">
+              <span class="material-symbols-outlined">play_arrow</span>
+            </button>
+
+            <!-- Auto-scroll -->
+            <button id="scroll-play-btn" class="btn btn-icon" title="Iniciar auto-desplazamiento">
+              <span class="material-symbols-outlined">south</span>
+            </button>
+
+            <!-- Navegación de Cantos -->
+            <button id="prev-song-btn" class="btn btn-icon" title="Canto anterior">
+              <span class="material-symbols-outlined">arrow_left</span>
+            </button>
+            <button id="next-song-btn" class="btn btn-icon" title="Canto siguiente">
+              <span class="material-symbols-outlined">arrow_right</span>
+            </button>
+
+            <!-- Menú Desplegable para Móviles/Tablets (En la esquina donde estaba settings) -->
+            <div id="toolbar-dropdown-container" class="toolbar-dropdown" style="display: none;">
+              <button id="toolbar-dropdown-trigger" class="btn btn-icon" title="Menú de herramientas">
+                <span class="material-symbols-outlined">menu</span>
+              </button>
+              <div id="toolbar-dropdown-content" class="toolbar-dropdown-content">
+                <button id="settings-open-btn" class="btn btn-icon" title="Ajustes visuales">
+                  <span class="material-symbols-outlined">settings</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Buscador rápido siempre de primero en la esquina derecha superior -->
+            <div id="toolbar-search-container" class="toolbar-search-container" style="position: relative; flex-shrink: 0; order: 9999;">
+              <input type="text" id="toolbar-search-input" class="toolbar-search-input" placeholder="Buscar..." autocomplete="off">
+              <div id="toolbar-search-suggestions" class="search-suggestions-dropdown" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reproductor de Audio -->
+        <div id="viewer-audio-container" class="audio-player-container">
+          <audio id="viewer-audio-player" controls preload="metadata"></audio>
+        </div>
+      </div>
+
+      <!-- Contenedor deslizante de tres diapositivas (carrusel interactivo) -->
+      <div id="canto-carousel-viewport" style="width: 100%; overflow: hidden; position: relative;">
+        <div id="canto-slider-container" class="canto-slideX1">
+          <div id="canto-slide-prev" class="canto-slide canto-slideX2"></div>
+          
+          <div id="canto-slide-active" class="canto-slide canto-slideX3">
+            <!-- Contenedor del contenido del canto para transiciones -->
+            <div id="canto-content-transition-wrapper" class="canto-content-transition-wrapper">
+              <!-- Cabecera del canto (Título e imagen de Cristo estilo libro) -->
+              <div id="canto-header-block" class="canto-header-block"></div>
+
+              <!-- Contenedor del Canto de dos columnas -->
+              <div id="canto-columns" class="canto-columns-container">
+                <div id="canto-left-col" class="canto-column"></div>
+                <div id="canto-right-col" class="canto-column"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="canto-slide-next" class="canto-slide" style="width: calc((100% - 80px) / 3); flex-shrink: 0; opacity: 0.8; box-sizing: border-box; padding: 0 10px;"></div>
+        </div>
+      </div>
+
+      <!-- Pie de página del Visor del Canto (Categorías, Nota Modal, Valoración y Número) -->
+      <div id="viewer-song-footer-bar" class="viewer-song-footer-bar">
+        <div class="footer-bar-left" id="footer-moments-list">
+          <!-- Se llena dinámicamente con las categorías/momentos del canto -->
+        </div>
+
+        <div class="footer-bar-center">
+          <button id="song-footer-note-btn" class="footer-icon-btn" title="Añadir / Editar nota personal">
+            <span class="material-symbols-outlined" style="font-size: 26px;">edit_note</span>
+          </button>
+        </div>
+
+        <div class="footer-bar-right">
+          <div class="footer-rating-stars" id="footer-rating-stars">
+            <!-- 5 estrellas interactivas -->
+          </div>
+          <span class="footer-song-number" id="footer-song-number"></span>
+        </div>
+      </div>
+
+      <!-- Notas del Cantor (Oculto/Opcional para compatibilidad) -->
+      <div class="notes-cantor-section" style="display: none;">
+        <textarea id="notes-textarea" class="notes-textarea"></textarea>
+      </div>
     </div>
 
-    <div id="final"> </div>
-
-    <footer style="background-color: #f1f1f1; padding: 20px; text-align: center; margin-top: 30px;">
-        <h5><a href="#Inicio" style="text-decoration: none; color: #333;">Ir Arriba ↑</a></h5>
-        <p style="margin: 10px 0; color: #666;">Guía replicada de los cantos del Camino Neocatecumental.</p>
-        <p style="margin: 5px 0; color: #666;">Creada por un siervo inútil de Yahveh</p>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p>RESUCITÓ v2.0 • Diseñado para la comunidad neocatecumenal</p>
+      <p>Soporte sin conexión activado • Funciona 100% offline</p>
     </footer>
 
-        <!-- LLAMADAS DE SCRIPT-->
+  </div>
 
-        <script src="src/js/LogControl.js" defer></script>
-        
-        <!-- Cargador Dinámico de Base de Datos de Cantos por Idioma -->
-        <script>
-            (function() {
-                const lang = localStorage.getItem('pref-lang') || 'Español';
-                const suffixes = {
-                    'English': '_en',
-                    'Italiano': '_it',
-                    'Português': '_pt',
-                    'Français': '_fr',
-                    'Latin': '_la',
-                    'Ruso': '_ru',
-                    'Chino': '_zh'
-                };
-                const suffix = suffixes[lang] || '';
-                const s = document.createElement('script');
-                s.async = false;
-                if (suffix) {
-                    s.src = `src/js/songs-data${suffix}.js`;
-                    s.onerror = function() {
-                        console.warn(`src/js/songs-data${suffix}.js no encontrado. Usando versión por defecto en español.`);
-                        const fallback = document.createElement('script');
-                        fallback.src = 'src/js/songs-data.js';
-                        fallback.async = false;
-                        document.head.appendChild(fallback);
-                    };
-                } else {
-                    s.src = 'src/js/songs-data.js';
-                }
-                document.head.appendChild(s);
-            })();
-        </script>
-        <script src="src/js/config.js" defer></script>
-        
-        <script src="src/js/dbMainJS.js" defer></script>
-        
-        <script src="src/data/find.js" defer></script> 
-        <script src="src/js/app.js" defer></script>
-        
-        <script src="src/js/navigator.js" defer></script>
-        <script src="src/js/serviceWorker.js" defer></script>
-        
-        <script src="src/js/mensajekiko.js" defer></script>
-        <script type="module" src="src/js/moduleGoogle.js" defer></script>
-        <script type="module" src="src/js/logout.js" defer></script>
+  <!-- MODAL: NOTA PERSONAL DEL CANTOR -->
+  <div id="song-note-modal" class="modal-overlay" style="display: none; z-index: 100005;">
+    <div class="modal-content-card" style="max-width: 440px; width: 90%; padding: 24px; border-radius: 20px; text-align: center; background: var(--panel-bg, #ffffff); color: var(--text-color, #212529); border: 1px solid var(--panel-border, rgba(0,0,0,0.15)); box-shadow: 0 16px 40px rgba(0,0,0,0.4);">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 16px;">
+        <h3 style="margin: 0; display: flex; align-items: center; gap: 8px; font-size: 1.15rem; color: var(--accent-color, #d01212);">
+          <span class="material-symbols-outlined">edit_note</span> Nota del Cantor
+        </h3>
+        <button id="close-song-note-modal" style="background: transparent; border: none; font-size: 1.4rem; cursor: pointer; color: var(--text-color);">&times;</button>
+      </div>
+      
+      <p style="font-size: 0.85rem; color: var(--text-muted, #666); margin-bottom: 12px; text-align: left;">
+        Escribe aquí tus anotaciones técnicas, cejillas opcionales o recordatorios para este canto:
+      </p>
+      
+      <textarea id="modal-notes-textarea" style="width: 100%; height: 120px; padding: 12px; border-radius: 12px; border: 1.5px solid var(--panel-border, #ccc); background: var(--input-bg, #fff); color: var(--text-color); font-family: inherit; font-size: 0.9rem; resize: vertical; box-sizing: border-box; outline: none; margin-bottom: 16px;" placeholder="Ejemplo: Salmo para la Comunión, tono suave..."></textarea>
 
+      <button id="btn-save-song-note" style="width: 100%; padding: 10px; border-radius: 12px; border: none; background: var(--accent-color, #d01212); color: #fff; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+        <span class="material-symbols-outlined">save</span> Guardar Nota
+      </button>
+    </div>
+  </div>
 
+  <!-- MODAL: DIAGRAMA DE ACORDE -->
+  <div id="chord-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content dacorde">
+      <div class="modal-header" style="justify-content: center; border: none; padding: 0; margin-bottom: 15px;">
+        <h2 id="chord-modal-title" style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--text-color); margin: 0;">Transportar Acorde</h2>
+        <button id="chord-modal-close" class="btn btn-icon" style="display: none;">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      
+      <p id="chord-modal-subtitle" style="display: none;"></p>
 
-<div id="g_id_onload"
-     data-client_id="TU_CLIENT_ID.apps.googleusercontent.com"
-     data-context="signin"
-     data-ux_mode="popup"
-     data-auto_prompt="true"
-     data-auto_select="false">
-</div>
+      <!-- Selector de Nota Base -->
+      <div class="chord-picker-row">
+        <label id="chord-picker-label" style="display: none;"></label>
+        <div class="chord-picker-grid" id="modal-chord-note-picker">
+          <button class="btn btn-picker" data-note="Do">Do</button>
+          <button class="btn btn-picker" data-note="Do#">Do#</button>
+          <button class="btn btn-picker" data-note="Re">Re</button>
+          <button class="btn btn-picker" data-note="Re#">Re#</button>
+          <button class="btn btn-picker" data-note="Mi">Mi</button>
+          <button class="btn btn-picker" data-note="Fa">Fa</button>
+          <button class="btn btn-picker" data-note="Fa#">Fa#</button>
+          <button class="btn btn-picker" data-note="Sol">Sol</button>
+          <button class="btn btn-picker" data-note="Sol#">Sol#</button>
+          <button class="btn btn-picker" data-note="La">La</button>
+          <button class="btn btn-picker" data-note="Sib">Sib</button>
+          <button class="btn btn-picker" data-note="Si">Si</button>
+        </div>
+      </div>
+      
+      <!-- Selector de Tipo/Variación -->
+      <div class="chord-picker-row" style="margin-top: 15px; border-top: 1px dashed var(--panel-border); padding-top: 12px;">
+        <h4 style="font-size: 0.85rem; margin-bottom: 8px; font-weight: 600; color: var(--text-color); opacity: 0.8;">Variación:</h4>
+        <div class="chord-picker-grid" id="modal-chord-type-picker" style="grid-template-columns: repeat(5, 1fr); gap: 6px;">
+          <button class="btn btn-type-picker" data-type="">Mayor</button>
+          <button class="btn btn-type-picker" data-type="m">m</button>
+          <button class="btn btn-type-picker" data-type="7">7</button>
+          <button class="btn btn-type-picker" data-type="m7">m7</button>
+          <button class="btn btn-type-picker" data-type="maj7">maj7</button>
+        </div>
+      </div>
+      
+      <!-- Acordes y Cejillas (Canto y Cantor) -->
+      <div class="chord-picker-info-row">
+        <div class="chord-picker-info-col">
+          <div class="chord-picker-info-label">Acorde Canto</div>
+          <div id="modal-canto-original-chord" class="chord-picker-info-value accent">La m</div>
+        </div>
+        
+        <div class="chord-picker-info-col-border">
+          <div class="chord-picker-info-label">Cejilla Canto</div>
+          <div id="modal-canto-original-capo" class="chord-picker-info-value">Sin cejilla</div>
+        </div>
+        
+        <div class="chord-picker-info-col-border">
+          <div class="chord-picker-info-label">Acorde Cantor</div>
+          <div id="modal-cantor-current-chord" class="chord-picker-info-value accent">La m</div>
+        </div>
 
+        <div class="chord-picker-info-col-capo-selector">
+          <div class="chord-picker-info-label">Cejilla Cantor</div>
+          <select id="modal-capo-select" class="chord-picker-capo-select">
+            <option value="0">Sin cejilla</option>
+            <option value="1">1º traste</option>
+            <option value="2">2º traste</option>
+            <option value="3">3º traste</option>
+            <option value="4">4º traste</option>
+            <option value="5">5º traste</option>
+            <option value="6">6º traste</option>
+            <option value="7">7º traste</option>
+            <option value="8">8º traste</option>
+            <option value="9">9º traste</option>
+            <option value="10">10º traste</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="chord-diagram-view" style="margin-top: 15px; border-top: 1px solid var(--panel-border); padding-top: 15px;">
+        <h4 id="chord-diagram-title" style="font-size: 0.95rem; margin-bottom: 8px; text-align: center; color: var(--accent-color); font-weight: 700;">Digitación del acorde:</h4>
+        <img id="chord-diagram-img" src="" alt="Cargando diagrama..." style="max-height: 240px; display: block; margin: 0 auto; border-radius: 8px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: AJUSTES -->
+  <!-- AJUSTES MODAL: Cargado dinámicamente desde data/ajustes_modal.html -->
+  <!-- SCRIPT PRINCIPAL -->
+  <script type="module" src="src/main.js?v=80"></script>
 </body>
 </html>
