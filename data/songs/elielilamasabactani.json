@@ -54,15 +54,15 @@
     },
     {
       "line": "¡Qué lejos te siento de mis gritos!, (Si,7,15)",
-      "sC": "tc ptop00"
+      "sC": "tc s1"
     },
     {
       "line": "De día clamo, y no respondes,",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "grito de noche, y no hay reposo para mí.,(Mi,m,372) ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "type": "collapsible-block",
@@ -91,26 +91,26 @@
     },
     {
       "line": "¡Mas tú eres el Santo,, (Si,7,15)",
-      "sC": "tc ptop00"
+      "sC": "tc s1"
     },
     {
       "line": "tú que vives en medio de mi pueblo!, ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "A ti clamaron nuestros padres, ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "y tú les ayudaste,",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "en ti confiaron y nunca quedaron confundidos.(Mi,m,398)",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
-      "line": "Entonces yo, ¿por qué no me ayudas?, (La,m,313)",
+      "line": "Entonces yo, ¿por qué no me ayudas?, (Mi,7,150)(La,m,285)",
       "sC": ""
     },
     {
@@ -123,23 +123,23 @@
     },
     {
       "line": "desprecio de la gente, asco del pueblo, ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "todos los que me ven de mí se ríen, ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "menean la cabeza y dicen: ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "«Se confió a Dios, ¡que él lo libre,",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "que él le salve, si tanto dice que le ama!»,  (Mi,m,351)",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "Sí, que tú me amas, sí, que tú me quieres,, (La,m,358)",
@@ -155,7 +155,7 @@
     },
     {
       "line": "desde el vientre de mi madre tú ya eras mi Dios., (Mi,m,436)",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "type": "collapsible-block",
@@ -184,7 +184,7 @@
     },
     {
       "line": "todos mis huesos se dislocan, ",
-      "sC": "ptop00"
+      "sC": "s1"
     }
   ],
   "lder": [
@@ -194,11 +194,11 @@
     },
     {
       "line": "Mi paladar está seco como teja,",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "y mi lengua está pegada a la garganta. (Mi,m,333)",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "type": "collapsible-block",
@@ -227,23 +227,23 @@
     },
     {
       "line": "una banda de malhechores me acomete,, ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "taladran mis manos y mis pies. ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "Se pueden contar mis huesos; ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "me observan y me miran,",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "se reparten mis vestidos, se sortean mi túnica. (Mi,m,397)",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "¡Mas tú, Dios mío, no estés lejos!, (La,m,278)",
@@ -259,11 +259,11 @@
     },
     {
       "line": "libra mi vida de las fauces del león,",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "libra mi alma de los cuernos de los búfalos.(Mi,m,362) ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "¡Anunciaré, yo, tu nombre a mis hermanos,, (La,m,362)",
@@ -279,7 +279,7 @@
     },
     {
       "line": "raza de Jacob, glorificad a Yahveh,, ",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "temedle, pueblo de Israel»., (Mi,m,229)",
@@ -311,7 +311,7 @@
     },
     {
       "line": "los que buscan a Yahveh lo encontrarán:, (Mi,m,376)",
-      "sC": "ptop00"
+      "sC": "s1"
     },
     {
       "line": "¡su corazón, su corazón, vivirá para siempre!, (Si,7,91)(Mi,m,359) ",

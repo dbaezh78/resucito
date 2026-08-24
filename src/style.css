@@ -1003,6 +1003,18 @@ header {
   opacity: 0.65;
 }
 
+/* Marcador C. para el cantor */
+.linea-canto.me-exultad::before {
+    content: "[melisma]";
+    position: absolute;
+    left: 311px;
+    top: 3px;
+    font-weight: 700;
+    color: var(--chord-color-alt);
+    opacity: 0.65;
+    font-size: medium;
+}
+
 .chord-anchor-wrapper {
   position: relative;
   display: inline-block;
@@ -3303,3 +3315,31 @@ footer {
 .s1 {
   margin-top: -22px;
 }
+
+.ab1, .ab2, .ab3, .ab4, .ab9, .ab10, .ab11, .ab12 {
+  width: fit-content;
+  margin-top: -42px;
+}
+
+.ab5 {margin-top: -54px;}
+.ab6 {margin-top: -11px;}
+.ab7 {margin-top: -53px;}
+.ab8 {margin-top: -11px;}
+
+.ab1 {left: 165px;}
+.ab2 {left: 93px;}
+.ab3 {left: 93px;}
+.ab4 {left: 65px;}
+.ab5, .ab6 {left: 227px;}
+.ab7, .ab8 {left: 256px;}
+.ab9 {left: 114px;}
+.ab10, .ab11, .ab12 {left: 190px;}
+.ab11 {left: 124px;}
+.ab12 {left: 110px;}
+.abc {
+      margin-top: -41px;
+      /*z-index: -1;*/
+      background: white;
+}
+
+.pred {z-index: 99;}

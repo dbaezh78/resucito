@@ -33,7 +33,7 @@
   "sig": "/src/index.html?canto=esteeselmandamientomio",
   "lizq": [
     {
-      "line": "No he de morir,, (La,m,19)",
+      "line": "No he de morir,, (La,m,0)",
       "sC": "tc"
     },
     {
@@ -49,7 +49,7 @@
       "sC": "ta as ab1"
     },
     {
-      "line": "para cantar, (Fa,,96)",
+      "line": "para cantar, (Fa,,100)",
       "sC": ""
     },
     {
@@ -61,7 +61,7 @@
       "sC": "adb1"
     },
     {
-      "line": "Me castigó,, (La,m ,20)",
+      "line": "Me castigó,, (La,m ,0)",
       "sC": ""
     },
     {
@@ -147,10 +147,7 @@
         }
       ]
     },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
+    
     {
       "line": "Mejor es confiar en el Señor, (Do,,10)",
       "sC": ""
@@ -218,11 +215,11 @@
       "sC": "as ab11"
     },
     {
-      "line": "pero el Señor, (Fa,,112)",
+      "line": "pero el Señor, (Fa,,105)",
       "sC": ""
     },
     {
-      "line": "ME AYUDÓ., (Mi,,97)",
+      "line": "ME AYUDÓ., (Mi,,70)",
       "sC": "as ab12"
     },
     {
@@ -230,19 +227,19 @@
       "sC": "adb1"
     },
     {
-      "line": "Escuchad: hay cantos de victoria, (Do,,10)",
+      "line": "Escuchad: hay cantos de victoria, (Do,,0)",
       "sC": ""
     },
     {
-      "line": "EN LAS TIENDAS DE LOS JUSTOS:, (Fa,,96)(Mi,,258)",
+      "line": "EN LAS TIENDAS DE LOS JUSTOS:, (Fa,,90)(Mi,,230)",
       "sC": "as"
     },
     {
-      "line": "«La diestra del Señor es poderosa,, (Do,,10)",
+      "line": "«La diestra del Señor es poderosa,, (Do,,0)",
       "sC": ""
     },
     {
-      "line": "ES EXCELSA LA DIESTRA DEL SEÑOR»., (Fa,,74)(Mi,,333)",
+      "line": "ES EXCELSA LA DIESTRA DEL SEÑOR»., (Fa,,55)(Mi,,290)",
       "sC": "as"
     },
     {
@@ -253,57 +250,63 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_4",
       "initialState": "collapsed",
-      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,19)",
+      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,0)",
       "sC": "tc as",
       "lines": [
-        {
-          "line": "QUE VIVIRÉ,",
-          "sC": "as ab14 bgtop"
-        },
-        {
-          "line": "No he de morir,",
-          "sC": "tc"
-        },
-        {
-          "line": "QUE VIVIRÉ, ",
-          "sC": "as ab14"
-        },
-        {
-          "line": "para cantar, (Fa,,96)",
-          "sC": ""
-        },
-        {
-          "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)",
-          "sC": "as ab2"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Me castigó,, (La,m ,20)",
-          "sC": ""
-        },
-        {
-          "line": "ME CASTIGÓ. ",
-          "sC": "as ab3"
-        },
-        {
-          "line": "Me castigó, ",
-          "sC": ""
-        },
-        {
-          "line": "ME CASTIGÓ, ",
-          "sC": "as ab3"
-        },
-        {
-          "line": "pero no, (Fa,,64)",
-          "sC": ""
-        },
-        {
-          "line": "ME DEJÓ EN LA MUERTE., (Mi,,193)",
-          "sC": "as ab4"
-        }
+
+    {
+      "line": "No he de morir,, (La,m,0)",
+      "sC": "tc abc "
+    },
+    {
+      "line": "QUE VIVIRÉ,",
+      "sC": "ta as ab1 pred"
+    },
+    {
+      "line": "No he de morir,",
+      "sC": "tc"
+    },
+    {
+      "line": "QUE VIVIRÉ, ",
+      "sC": "ta as ab1"
+    },
+    {
+      "line": "para cantar, (Fa,,100)",
+      "sC": ""
+    },
+    {
+      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,210)",
+      "sC": "as ab2"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me castigó,, (La,m ,0)",
+      "sC": ""
+    },
+    {
+      "line": "ME CASTIGÓ. ",
+      "sC": "as ab3"
+    },
+    {
+      "line": "Me castigó, ",
+      "sC": ""
+    },
+    {
+      "line": "ME CASTIGÓ, ",
+      "sC": "as ab3"
+    },
+    {
+      "line": "pero no, (Fa,,55)",
+      "sC": ""
+    },
+    {
+      "line": "ME DEJÓ EN LA MUERTE., (Mi,,190)",
+      "sC": "as ab4"
+    }
+        
       ]
     },
     {
@@ -311,19 +314,19 @@
       "sC": "adb1"
     },
     {
-      "line": "Abridme las puertas del triunfo, (La,m,21)",
+      "line": "Abridme las puertas del triunfo, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "Y ENTRARÉ PARA DAR GRACIAS AL SEÑOR., (Fa,,108)(Mi,,394)",
+      "line": "Y ENTRARÉ PARA DAR GRACIAS AL SEÑOR., (Fa,,55)(Mi,,190)",
       "sC": "as"
     },
     {
-      "line": "Esta es la puerta del Señor:, (Fa,,10)(Mi,,244)",
+      "line": "Esta es la puerta del Señor:, (Fa,,0)(Mi,,350)",
       "sC": ""
     },
     {
-      "line": "LOS VENCEDORES ENTRARÁN POR ELLA., (Fa,,130)(Mi,,348)",
+      "line": "LOS VENCEDORES ENTRARÁN POR ELLA., (Fa,,100)(Mi,,240)",
       "sC": "as"
     },
     {
@@ -331,27 +334,27 @@
       "sC": "adb1"
     },
     {
-      "line": "La piedra que desecharon los arquitectos, (Do,,10)",
+      "line": "La piedra que desecharon los arquitectos, (Do,,0)",
       "sC": ""
     },
     {
-      "line": "ES AHORA LA PIEDRA ANGULAR., (Fa,,67)(Mi,,289)",
+      "line": "ES AHORA LA PIEDRA ANGULAR., (Fa,,50)(Mi,,235)",
       "sC": "as"
     },
     {
-      "line": "Es el Señor quien lo ha hecho,, (Fa,,10)(Mi,,238)",
+      "line": "Es el Señor quien lo ha hecho,, (Fa,,0)(Mi,,245)",
       "sC": ""
     },
     {
-      "line": "HA SIDO UN MILAGRO PATENTE., (Fa,,46)(Mi,,259)",
+      "line": "HA SIDO UN MILAGRO PATENTE., (Fa,,30)(Mi,,215)",
       "sC": "as"
     },
     {
-      "line": "Este es el día en que actuó el Señor:, (Do,,10)",
+      "line": "Este es el día en que actuó el Señor:, (Do,,0)",
       "sC": ""
     },
     {
-      "line": "SEA NUESTRA ALEGRÍA Y NUESTRO GOZO., (Fa,,20)(Mi,,369)",
+      "line": "SEA NUESTRA ALEGRÍA Y NUESTRO GOZO., (Fa,,0)(Mi,,310)",
       "sC": "as"
     },
     {
@@ -360,59 +363,68 @@
     },
     {
       "type": "collapsible-block",
-      "id": "asamblea_anadie_5",
+      "id": "asamblea_anadie_4",
       "initialState": "collapsed",
-      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,19)",
+      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,0)",
       "sC": "tc as",
       "lines": [
-        {
-          "line": "QUE VIVIRÉ,",
-          "sC": "as ab14 bgtop"
-        },
-        {
-          "line": "No he de morir,",
-          "sC": "tc"
-        },
-        {
-          "line": "QUE VIVIRÉ, ",
-          "sC": "as ab14"
-        },
-        {
-          "line": "para cantar, (Fa,,96)",
-          "sC": ""
-        },
-        {
-          "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)",
-          "sC": "as ab2"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Me castigó,, (La,m ,20)",
-          "sC": ""
-        },
-        {
-          "line": "ME CASTIGÓ. ",
-          "sC": "as ab3"
-        },
-        {
-          "line": "Me castigó, ",
-          "sC": ""
-        },
-        {
-          "line": "ME CASTIGÓ, ",
-          "sC": "as ab3"
-        },
-        {
-          "line": "pero no, (Fa,,64)",
-          "sC": ""
-        },
-        {
-          "line": "ME DEJÓ EN LA MUERTE., (Mi,,193)",
-          "sC": "as ab4"
-        }
+
+    {
+      "line": "No he de morir,, (La,m,0)",
+      "sC": "tc abc "
+    },
+    {
+      "line": "QUE VIVIRÉ,",
+      "sC": "ta as ab1 pred"
+    },
+    {
+      "line": "No he de morir,",
+      "sC": "tc"
+    },
+    {
+      "line": "QUE VIVIRÉ, ",
+      "sC": "ta as ab1"
+    },
+    {
+      "line": "para cantar, (Fa,,100)",
+      "sC": ""
+    },
+    {
+      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)",
+      "sC": "as ab2"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me castigó,, (La,m ,0)",
+      "sC": ""
+    },
+    {
+      "line": "ME CASTIGÓ. ",
+      "sC": "as ab3"
+    },
+    {
+      "line": "Me castigó, ",
+      "sC": ""
+    },
+    {
+      "line": "ME CASTIGÓ, ",
+      "sC": "as ab3"
+    },
+    {
+      "line": "pero no, (Fa,,64)",
+      "sC": ""
+    },
+    {
+      "line": "ME DEJÓ EN LA MUERTE., (Mi,,193)",
+      "sC": "as ab4"
+    }
+
+
+
+        
       ]
     }
   ],
