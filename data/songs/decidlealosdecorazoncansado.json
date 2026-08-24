@@ -22,15 +22,15 @@
   "audioSrc": "https://audio.resucito.do/decidlealosdecorazoncansado.mp3",
   "scrollConfig": {
     "mobile": {
-      "v": 23,
+      "v": 123,
       "i": 1
     },
     "tablet": {
-      "v": 25,
+      "v": 125,
       "i": 1
     },
     "desktopsmall": {
-      "v": 7,
+      "v": 125,
       "i": 1
     }
   },

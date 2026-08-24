@@ -18,15 +18,15 @@
   "audioSrc": "https://audio.resucito.do/debora.mp3",
   "scrollConfig": {
     "mobile": {
-      "v": 23,
+      "v": 130,
       "i": 1
     },
     "tablet": {
-      "v": 25,
+      "v": 130,
       "i": 1
     },
     "desktopsmall": {
-      "v": 7,
+      "v": 130,
       "i": 1
     }
   },
@@ -99,7 +99,7 @@
     },
     {
       "line": "En los días de Samgar, hijo de Anat,, (Re,7,22)",
-      "sC": "tc"
+      "sC": "tc mt-22"
     },
     {
       "line": "en los días de Yael, ",
@@ -214,7 +214,7 @@
     },
     {
       "line": "Desde los cielos lucharon las estrellas, ",
-      "sC": ""
+      "sC": "tc"
     },
     {
       "line": "DESDE LOS CIELOS, ",
