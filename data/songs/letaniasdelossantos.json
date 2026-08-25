@@ -37,7 +37,7 @@
     },
     {
       "line": "SEÑOR TEN PIEDAD.",
-      "sC": "ta sub"
+      "sC": "ta stp as"
     },
     {
       "line": "Cristo, ten piedad. ",
@@ -45,7 +45,7 @@
     },
     {
       "line": "CRISTO TEN PIEDAD. ",
-      "sC": "as sub"
+      "sC": "as stp"
     },
     {
       "line": "Señor, ten piedad. ",
@@ -53,19 +53,23 @@
     },
     {
       "line": "SEÑOR TEN PIEDAD.",
-      "sC": "as sub"
+      "sC": "as stp"
     },
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Santa María, Madre de Dios., (Sol,,14)(Mi,m,246)",
+      "line": "Santa María,, (Sol,,0)",
       "sC": "tc"
     },
     {
-      "line": "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)",
-      "sC": "as sub"
+      "line": "Madre de Dios., (Mi,m,90)",
+      "sC": ""
+    },
+    {
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
     },
     {
       "line": "San Miguel. ",
@@ -73,23 +77,23 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
-      "line": "Santos ángeles de Dios., (Sol,,14)(Mi,m,206)",
+      "line": "Santos ángeles de Dios., (Sol,,0)(Mi,m,206)",
       "sC": ""
     },
     {
-      "line": "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)",
-      "sC": "as sub"
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
     },
     {
-      "line": "San Juan Bautista., (Sol,,14)(Mi,m,150)",
+      "line": "San Juan Bautista., (Sol,,0)(Mi,m,150)",
       "sC": ""
     },
     {
-      "line": "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)",
-      "sC": "as sub"
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
     },
     {
       "line": "San José. ",
@@ -97,23 +101,23 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
-      "line": "Santos Pedro y Pablo., (Sol,,14)(Mi,m,168)",
+      "line": "Santos Pedro y Pablo., (Sol,,0)(Mi,m,168)",
       "sC": ""
     },
     {
-      "line": "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)",
-      "sC": "as sub"
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
     },
     {
-      "line": "San Andrés., (Sol,,14)(Mi,m,93)",
+      "line": "San Andrés., (Sol,,0)(Mi,m,93)",
       "sC": ""
     },
     {
-      "line": "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)",
-      "sC": "as sub"
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
     },
     {
       "line": "San Juan. ",
@@ -121,7 +125,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "Santa María Magdalena. ",
@@ -129,7 +133,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Esteban. ",
@@ -137,7 +141,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Ignacio de Antioquía. ",
@@ -145,7 +149,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Lorenzo. ",
@@ -153,23 +157,27 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
-      "line": "Santas Perpetua y Felicidad., (Sol,,14)(Mi,m,248)",
+      "line": "Santas Perpetua y, (Sol,,0)",
+      "sC": ""
+    },
+        {
+      "line": "Felicidad., (Mi,m,90)",
+      "sC": "r15"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS. (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "Santa Inés. (Sol,,0)(Mi,m,83)",
       "sC": ""
     },
     {
-      "line": "RUEGA POR NOSOTROS. (Do,,12)(Re,7,171)",
-      "sC": "as sub"
-    },
-    {
-      "line": "Santa Inés. (Sol,,14)(Mi,m,83)",
-      "sC": ""
-    },
-    {
-      "line": "RUEGA POR NOSOTROS. (Do,,12)(Re,7,171)",
-      "sC": "as sub"
+      "line": "RUEGA POR NOSOTROS. (Do,,0)(Re,7,120)",
+      "sC": "as stp"
     },
     {
       "line": "San Gregorio. ",
@@ -177,7 +185,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Agustín. ",
@@ -185,7 +193,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Atanasio. ",
@@ -193,7 +201,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Basilio. ",
@@ -201,7 +209,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Martín. ",
@@ -209,7 +217,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Benito. ",
@@ -217,15 +225,22 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
-      "line": "Santos Francisco y Domingo. (Sol,,14)(Mi,m,233)",
+      "line": "Santos Francisco y, (Sol,,0)",
       "sC": ""
     },
+
+        {
+      "line": "Domingo., (Mi,m,15)",
+      "sC": "r15"
+    },
+
+
     {
-      "line": "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)",
-      "sC": "sub"
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "stp"
     },
     {
       "line": "San Francisco Javier. ",
@@ -233,19 +248,19 @@
     },
     {
       "line": "RUEGA POR NOSOTROS.",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "San Juan María Vianney. ",
       "sC": "height"
     },
     {
-      "line": "Santa Catalina de Siena., (Sol,,14)(Mi,m,84)",
+      "line": "Santa Catalina de Siena., (Sol,,0)(Mi,m,84)",
       "sC": "tc"
     },
     {
-      "line": "RUEGA POR NOSOTROS., (Do,,12)(Re,7,171)",
-      "sC": "as sub"
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
     },
     {
       "line": "Santa Teresa de Jesús. ",
@@ -253,7 +268,7 @@
     },
     {
       "line": "​      \"              \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "​  En las letanías se pueden añadir algunos nombres de santos, \n especialmente el del titular de la iglesia y los de los patronos \n del lugar y de los que van a ser bautizados. ",
@@ -266,19 +281,19 @@
     },
     {
       "line": "RUEGA POR NOSOTROS.,",
-      "sC": "as sub"
+      "sC": "as stp"
     },
     {
       "line": "",
       "sC": ""
     },
     {
-      "line": "Muéstrate propicio., (Sol,,14)(Mi,m,149)",
+      "line": "Muéstrate propicio., (Sol,,0)(Mi,m,149)",
       "sC": ""
     },
     {
-      "line": "LÍBRANOS, SEÑOR., (Do,,12)(Re,7,171)",
-      "sC": "ta as sub"
+      "line": "LÍBRANOS, SEÑOR., (Do,,0)(Re,7,120)",
+      "sC": "ta as stp"
     },
     {
       "line": "De todo mal. ",
@@ -286,7 +301,7 @@
     },
     {
       "line": "​         \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "De todo pecado. ",
@@ -294,7 +309,7 @@
     },
     {
       "line": "​         \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "De la muerte eterna. ",
@@ -302,7 +317,7 @@
     },
     {
       "line": "​         \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "Por tu encarnación. ",
@@ -310,7 +325,7 @@
     },
     {
       "line": "​         \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "Por tu muerte y resurrección. ",
@@ -318,7 +333,7 @@
     },
     {
       "line": "​         \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "Por el envío del Espíritu Santo. ",
@@ -326,94 +341,94 @@
     },
     {
       "line": "​         \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
-      "line": "Nosotros que somos pecadores., (Sol,,14)(Mi,m,272)",
+      "line": "Nosotros que somos pecadores., (Sol,,0)(Mi,m,272)",
       "sC": "tc"
     },
     {
-      "line": "TE ROGAMOS, ÓYENOS., (Do,,12)(Re,7,171)",
+      "line": "TE ROGAMOS, ÓYENOS., (Do,,0)(Re,7,120)",
       "sC": "as sub der"
     },
     {
       "line": "Si hay bautizados, ",
-      "sC": "redc",
+      "sC": "redc msg-l38",
       "color": "var(--Rojo-Leccionario)"
     },
     {
-      "line": "Para que regeneres a, (Sol,,14)",
+      "line": "Para que regeneres a, (Sol,,0)",
       "sC": "tc"
     },
     {
       "line": "... N/. ",
-      "sC": "sub2",
+      "sC": "Name1",
       "color": "var(--Rojo-Leccionario)"
     },
     {
-      "line": "​                 con la gracia del Bautismo., (Mi,m,334)",
+      "line": "con la gracia del Bautismo., (Mi,m,334)",
       "sC": "height"
     },
     {
       "line": "​             \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
-      "line": "Para que regeneres a estos, (Sol,,14)",
+      "line": "Para que regeneres a estos, (Sol,,0)",
       "sC": "tc"
     },
     {
-      "line": "​   elegidos con la gracia del Bautismo., (Mi,m,335)",
+      "line": "​elegidos con la gracia del Bautismo., (Mi,m,335)",
       "sC": "height"
     },
     {
       "line": "​             \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
       "line": "Si no hay bautizados, ",
-      "sC": "redc",
+      "sC": "redc msg-l38",
       "color": "var(--Rojo-Leccionario)"
     },
     {
-      "line": "Para que santifiques esta agua, (Sol,,14)",
+      "line": "Para que santifiques esta agua, (Sol,,0)",
       "sC": "tc"
     },
     {
-      "line": "​   en la que renacerán tus nuevos hijos., (Mi,m,342)",
+      "line": "​en la que renacerán tus nuevos hijos., (Mi,m,342)",
       "sC": "height"
     },
     {
       "line": "​             \"              \" ",
-      "sC": "sub"
+      "sC": "stp"
     },
     {
-      "line": "Jesús hijo de Dios vivo., (Sol,,14)(Mi,m,117)",
+      "line": "Jesús hijo de Dios vivo., (Sol,,0)(Mi,m,117)",
       "sC": "tc"
     },
     {
-      "line": "TE ROGAMOS, ÓYENOS., (Do,,12)(Re,7,171)",
-      "sC": "ta as sub"
+      "line": "TE ROGAMOS, ÓYENOS., (Do,,0)(Re,7,120)",
+      "sC": "ta as stp"
     },
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Cristo, óyenos., (Sol,,14)(Mi,m,127)",
+      "line": "Cristo, óyenos., (Sol,,0)(Mi,m,127)",
       "sC": "tc"
     },
     {
-      "line": "CRISTO, ÓYENOS., (Do,,12)(Re,7,171)",
-      "sC": "ta as sub"
+      "line": "CRISTO, ÓYENOS., (Do,,0)(Re,7,120)",
+      "sC": "ta as stp"
     },
     {
-      "line": "Cristo, escúchanos., (Sol,,14)(Mi,m,127)",
+      "line": "Cristo, escúchanos., (Sol,,0)(Mi,m,127)",
       "sC": "tc"
     },
     {
-      "line": "CRISTO, ESCÚCHANOS., (Do,,12)(Re,7,171)",
-      "sC": "ta as sub"
+      "line": "CRISTO, ESCÚCHANOS., (Do,,0)(Re,7,120)",
+      "sC": "ta as stp"
     }
   ],
   "lder": [],

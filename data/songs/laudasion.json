@@ -31,7 +31,7 @@
     }
   },
   "ant": "/src/index.html?canto=lasarmasdelaluz",
-  "sig": "/src/index.html?canto=laudasionc",
+  "sig": "/src/index.html?canto=levantomisojosalosmontes",
   "lizq": [
     {
       "line": "Alaba, Sión, al Salvador,, (La,m,20)(Re,m,216)",
@@ -50,15 +50,15 @@
       "sC": "adb1"
     },
     {
-      "line": "ESTE ES EL PAN DE LOS ÁNGELES,, (La,m,20)(Re,m,250)",
+      "line": "ESTE ES EL PAN DE LOS ÁNGELES,, (La,m,0)(Re,m,220)",
       "sC": "ta as"
     },
     {
-      "line": "PAN DE LOS QUE HACEN CAMINO., (La,m,288)",
+      "line": "PAN DE LOS QUE HACEN CAMINO., (La,m,230)",
       "sC": "as"
     },
     {
-      "line": "ESTE ES EL PAN DE LOS HIJOS., (Mi,,10)",
+      "line": "ESTE ES EL PAN DE LOS HIJOS., (Mi,,0)",
       "sC": "as"
     },
     {
@@ -74,11 +74,11 @@
       "sC": ""
     },
     {
-      "line": "este es el tema del canto, ",
+      "line": "este es el tema del canto, (Mi,,204) ",
       "sC": ""
     },
     {
-      "line": "y el objeto de alabanza., (Mi,,204)",
+      "line": "y el objeto de alabanza.",
       "sC": ""
     },
     {
@@ -89,15 +89,15 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
           "sC": "as"
         },
         {
-          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
           "sC": "as"
         }
       ]
@@ -111,7 +111,7 @@
       "sC": "tc"
     },
     {
-      "line": "al grupo de doce hermanos, (Lam,,217)",
+      "line": "al grupo de doce hermanos, (La,m,217)",
       "sC": ""
     },
     {
@@ -136,29 +136,29 @@
     },
     {
       "type": "collapsible-block",
-      "id": "asamblea_anadie_2",
+      "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
           "sC": "as"
         },
         {
-          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
           "sC": "as"
         }
       ]
-    }
-  ],
-  "lder": [
+    },
+
+   
     {
-      "line": "Es el banquete del nuevo Rey, (La,m,20)(Re,m,266)",
+      "line": "Es el banquete del nuevo Rey, (La,m,0)(Re,m,250)",
       "sC": "tc"
     },
     {
-      "line": "la nueva Pascua y nueva Ley, (La,m,256)",
+      "line": "la nueva Pascua y nueva Ley, (La,m,230)",
       "sC": ""
     },
     {
@@ -170,7 +170,7 @@
       "sC": "adb1"
     },
     {
-      "line": "Lo antiguo se verá nuevo, (La,m,20)(Re,m,204)",
+      "line": "Lo antiguo se verá nuevo, (La,m,0)(Re,m,195)",
       "sC": ""
     },
     {
@@ -178,7 +178,7 @@
       "sC": ""
     },
     {
-      "line": "¡Es todo luz, ya no hay tinieblas!, (Mi,,91)",
+      "line": "¡Es todo luz, ya no hay tinieblas!, (Mi,,90)",
       "sC": ""
     },
     {
@@ -187,17 +187,17 @@
     },
     {
       "type": "collapsible-block",
-      "id": "asamblea_anadie_3",
+      "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
           "sC": "as"
         },
         {
-          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
           "sC": "as"
         }
       ]
@@ -207,27 +207,27 @@
       "sC": "adb1"
     },
     {
-      "line": "Cristo deja en su memoria, (La,m,20)(Re,m,216)",
+      "line": "Cristo deja en su memoria, (La,m,0)(Re,m,200)",
       "sC": "tc"
     },
     {
-      "line": "lo que hizo en Santa Cena, (La,m,215)",
+      "line": "lo que hizo en Santa Cena, (La,m,210)",
       "sC": ""
     },
     {
-      "line": "nosotros lo renovamos. (Mi,,167)",
+      "line": "nosotros lo renovamos. (Mi,,165)",
       "sC": ""
     },
     {
-      "line": "Obedientes a su palabra, (La,m,20)(Re,m,194)",
+      "line": "Obedientes a su palabra, (La,m,0)(Re,m,170)",
       "sC": ""
     },
     {
-      "line": "consagramos pan y vino, (La,m,201)",
+      "line": "consagramos pan y vino, (La,m,175)",
       "sC": ""
     },
     {
-      "line": "¡Hostia de la salvación!, (Mi,,24)",
+      "line": "¡Hostia de la salvación!, (Mi,,20)",
       "sC": ""
     },
     {
@@ -236,17 +236,17 @@
     },
     {
       "type": "collapsible-block",
-      "id": "asamblea_anadie_4",
+      "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
           "sC": "as"
         },
         {
-          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
           "sC": "as"
         }
       ]
@@ -256,15 +256,15 @@
       "sC": "adb1"
     },
     {
-      "line": "Es cierto a los cristianos, (La,m,20)(Re,m,188)",
+      "line": "Es cierto a los cristianos, (La,m,0)(Re,m,195)",
       "sC": "tc"
     },
     {
-      "line": "que se transforma el pan en carne,, (La,m,292)",
+      "line": "que se transforma el pan en carne,, (La,m,275)",
       "sC": ""
     },
     {
-      "line": "y que el vino se hace sangre. (Mi,,88)",
+      "line": "y que el vino se hace sangre. (Mi,,90)",
       "sC": ""
     },
     {
@@ -273,21 +273,261 @@
     },
     {
       "type": "collapsible-block",
-      "id": "asamblea_anadie_5",
+      "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,20)(Re,m,250)",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,288)",
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
           "sC": "as"
         },
         {
-          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,10)",
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
           "sC": "as"
         }
       ]
     }
   ],
+
+  "lder": [
+
+    {
+      "line": "Tú no ves, tú no comprendes;, (La,m,0)(Re,m,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "mas la fe te lo confirma, (La,m,185)",
+      "sC": ""
+    },
+    {
+      "line": "más allá de la razón., (Mi,,65)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es signo lo que aparece,, (La,m,0)(Re,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "y esconde un gran misterio,, (La,m,200)",
+      "sC": ""
+    },
+    {
+      "line": "una realidad sublime., (Mi,,95)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Comes carne, bebes sangre,, (La,m,0)(Re,m,185)",
+      "sC": ""
+    },
+    {
+      "line": "en las dos especies;, (La,m,130)",
+      "sC": ""
+    },
+    {
+      "line": "pero queda Cristo entero., (Mi,,65)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El que come solo parte,, (La,m,0)(Re,m,170)",
+      "sC": "tc"
+    },
+    {
+      "line": "ni separa ni divide,, (La,m,140)",
+      "sC": ""
+    },
+    {
+      "line": "en tanto que lo recibe., (Mi,,30)",
+      "sC": ""
+    },
+    {
+      "line": "Que sean uno, que sean mil,, (La,m,0)(Re,m,230)",
+      "sC": ""
+    },
+    {
+      "line": "igualmente lo reciben, (La,m,160)",
+      "sC": ""
+    },
+    {
+      "line": "y nunca se consume., (Mi,,30)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
+          "sC": "as"
+        }
+      ]
+    },
+
+    {
+      "line": "Buen pastor, pan verdadero,, (La,m,0)(Re,m,240)",
+      "sC": "tc"
+    },
+    {
+      "line": "de nosotros ten piedad., (La,m,190)",
+      "sC": ""
+    },
+    {
+      "line": "Danos los bienes eternos, (Mi,,190)",
+      "sC": ""
+    },
+    {
+      "line": "en la tierra de los vivos., ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Oh, Señor, que todo sabes!, (La,m,0)(Re,m,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡Oh, Señor, que todo puedes!, (La,m,220)",
+      "sC": ""
+    },
+    {
+      "line": "¡Que nos sacias en la tierra!, (Mi,,100)",
+      "sC": ""
+    },
+    {
+      "line": "Conduce a tus hermanos, (La,m,0)(Re,m,170)",
+      "sC": ""
+    },
+    {
+      "line": "a la cena del cielo;, (La,m,140)",
+      "sC": ""
+    },
+    {
+      "line": "en el gozo de los santos., (Mi,,70)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ESTE ES EL PAN DE LOS ÁNGELES, (La,m,0)(Re,m,220)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "PAN DE LOS QUE HACEN CAMINO. (La,m,230)",
+          "sC": "as"
+        },
+        {
+          "line": "ESTE ES EL PAN DE LOS HIJOS. (Mi,,0)",
+          "sC": "as"
+        }
+      ]
+    },
+
+    {
+      "line": "Nota:",
+      "sC": "sp1 nota"
+    },
+    {
+      "line": "En la convivencia de itinerantes de España del año, 2003, Kiko cantó este himno en la Eucaristía como, canto de entrada. En aquella ocasión, utilizó como, estribillo el texto en latín que reproducimos a, continuación, con el fin de que pueda ser utilizado, por los salmistas si así lo consideráis apropiado para, la celebración.",
+      "sC": "small"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LAUDA, SION, SALVATOREM,, (La,m,0)(Re,m,190)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "LAUDA DUCEM ET PASTOREM (La,m,190)",
+          "sC": "as"
+        },
+        {
+          "line": "IN HYMNIS ET CANTICIS. (Mi,,0)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+
   "sourceBook": "resucito"
 }

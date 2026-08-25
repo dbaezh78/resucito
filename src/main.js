@@ -1038,6 +1038,29 @@ function setupViewerSongFooter(songId) {
     const songNo = songMeta.dbno || songMeta.idi || currentCanto?.dbno || '';
     footerSongNumber.textContent = songNo ? songNo : '';
   }
+
+  // 5. Nota oficial del canto (notes / nCan)
+  const officialNotesDiv = document.getElementById('viewer-song-official-notes');
+  if (officialNotesDiv) {
+    const rawNotes = songMeta.notes || songMeta.nCan || currentCanto?.notes || currentCanto?.nCan || '';
+    const cleanNotes = typeof rawNotes === 'string' ? rawNotes.trim() : '';
+
+    if (cleanNotes && cleanNotes !== 'canto') {
+      officialNotesDiv.innerHTML = cleanNotes.replace(/\n/g, '<br>');
+      
+      const customColor = songMeta.notesColor || songMeta.nCanColor || currentCanto?.notesColor || currentCanto?.nCanColor || '';
+      if (customColor) {
+        officialNotesDiv.style.color = customColor;
+      } else {
+        officialNotesDiv.style.color = '';
+      }
+      
+      officialNotesDiv.style.display = 'block';
+    } else {
+      officialNotesDiv.innerHTML = '';
+      officialNotesDiv.style.display = 'none';
+    }
+  }
 }
 
 function renderFooterStars(songId, puntos) {

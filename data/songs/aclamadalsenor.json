@@ -10,9 +10,10 @@
   ],
   "catCanto": "Precatecumenado",
   "cejilla": "",
-  "nCan": "* Melisma",
+  "nCan": "",
   "dbno": "9",
-  "notes": "",
+  "notes": "* Melisa",
+  "notesColor": "var(--chord-color-alt)",
   "mant": "No",
   "audioSrc": "https://audio.resucito.do/aclamadalsenor.mp3",
   "scrollConfig": {
@@ -42,11 +43,11 @@
     },
     {
       "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,58)(Sol,,154)(La,,297)",
-      "sC": "as"
+      "sC": "as db20"
     },
     {
-      "line": "Acercaos a Él *, (Re,m,55)(La,7,138)",
-      "sC": "tc mt"
+      "line": "Acercaos a Él, (Re,m,55)(La,7,138)",
+      "sC": "tc mt asterisco"
     },
     {
       "line": "con gritos de júbilo., (Re,m,175)",
@@ -65,13 +66,13 @@
         },
         {
           "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
-          "sC": "as"
+          "sC": "as db20"
         }
       ]
     },
     {
-      "line": "Porque el Señor es nuestro Dios *, (Re,m,15)(La,7,250)",
-      "sC": "tc mt"
+      "line": "Porque el Señor es nuestro Dios, (Re,m,15)(La,7,250)",
+      "sC": "tc mt asterisco"
     },
     {
       "line": "y nosotros su pueblo., (Re,m,15)",
@@ -90,13 +91,13 @@
         },
         {
           "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
-          "sC": "as"
+          "sC": "as db20"
         }
       ]
     },
     {
-      "line": "¡Entrad por sus puertas *, (Re,m,15)(La,7,234)",
-      "sC": "tc mt"
+      "line": "¡Entrad por sus puertas, (Re,m,15)(La,7,234)",
+      "sC": "tc mt asterisco"
     },
     {
       "line": "con himnos de alegría!, (Re,m,205)",
@@ -115,15 +116,15 @@
         },
         {
           "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
-          "sC": "as"
+          "sC": "as db20"
         }
       ]
     }
   ],
   "lder": [
     {
-      "line": "Bendecid su nombre *, (Re,m,73)(La,7,207)",
-      "sC": "mt tc"
+      "line": "Bendecid su nombre, (Re,m,73)(La,7,207)",
+      "sC": "mt tc asterisco"
     },
     {
       "line": "dándole gracias, (Re,m,135)",
@@ -142,17 +143,17 @@
         },
         {
           "line": "SERVID AL SEÑOR CON ALEGRÍA., (Fa,,15)(Sol,,154)(La,,297)",
-          "sC": "as"
+          "sC": "as db20"
         }
       ]
     },
     {
       "line": "Porque es bueno el Señor,(Re,m,15)(La,7,254)",
-      "sC": "mt tc"
+      "sC": "mt tc asterisco"
     },
     {
-      "line": "es eterno su amor *,",
-      "sC": "ast95"
+      "line": "es eterno su amor,",
+      "sC": "ast95 asterisco"
     },
     {
       "line": "con nosotros., (Re,m,103)",

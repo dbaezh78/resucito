@@ -7,18 +7,18 @@ export const CHROMATIC_SCALE = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "So
 
 // Mapeo inverso para resolver equivalencias en bemoles y sostenidos
 const CHORD_TO_SEMITONE = {
-    "Do": 0, "DO": 0,
-    "Do#": 1, "DO#": 1, "Reb": 1, "Re♭": 1, "REB": 1,
-    "Re": 2, "RE": 2,
-    "Re#": 3, "RE#": 3, "Mib": 3, "Mi♭": 3, "MIB": 3,
-    "Mi": 4, "MI": 4,
-    "Fa": 5, "FA": 5,
-    "Fa#": 6, "FA#": 6, "Solb": 6, "Sol♭": 6, "SOLB": 6,
-    "Sol": 7, "SOL": 7,
-    "Sol#": 8, "SOL#": 8, "Lab": 8, "La♭": 8, "LAB": 8,
-    "La": 9, "LA": 9,
-    "Si♭": 10, "Sib": 10, "SIB": 10, "Si♭": 10,
-    "Si": 11, "SI": 11
+    "Do": 0, "DO": 0, "do": 0,
+    "Do#": 1, "DO#": 1, "do#": 1, "Reb": 1, "Re♭": 1, "REB": 1, "reb": 1, "re♭": 1,
+    "Re": 2, "RE": 2, "re": 2,
+    "Re#": 3, "RE#": 3, "re#": 3, "Mib": 3, "Mi♭": 3, "MIB": 3, "mib": 3, "mi♭": 3,
+    "Mi": 4, "MI": 4, "mi": 4,
+    "Fa": 5, "FA": 5, "fa": 5,
+    "Fa#": 6, "FA#": 6, "fa#": 6, "Solb": 6, "Sol♭": 6, "SOLB": 6, "solb": 6, "sol♭": 6,
+    "Sol": 7, "SOL": 7, "sol": 7,
+    "Sol#": 8, "SOL#": 8, "sol#": 8, "Lab": 8, "La♭": 8, "LAB": 8, "lab": 8, "la♭": 8,
+    "La": 9, "LA": 9, "la": 9,
+    "Si♭": 10, "Sib": 10, "SIB": 10, "si♭": 10, "sib": 10,
+    "Si": 11, "SI": 11, "si": 11
 };
 
 /**
@@ -100,8 +100,8 @@ export function parseChord(chordStr) {
     
     // Lista de las 12 notas cromáticas ordenadas por longitud descendente para evitar falsas coincidencias
     const notesOrder = [
-        "Do#", "Re#", "Fa#", "Sol#", "Si♭", "Sib", "DO#", "RE#", "FA#", "SOL#", "SIB", 
-        "Do", "Re", "Mi", "Fa", "Sol", "La", "Si", "DO", "RE", "MI", "FA", "SOL", "LA", "SI"
+        "Do#", "Re#", "Fa#", "Sol#", "Si♭", "Sib", "DO#", "RE#", "FA#", "SOL#", "SIB", "do#", "re#", "fa#", "sol#", "si♭", "sib",
+        "Do", "Re", "Mi", "Fa", "Sol", "La", "Si", "DO", "RE", "MI", "FA", "SOL", "LA", "SI", "do", "re", "mi", "fa", "sol", "la", "si"
     ];
     
     for (const note of notesOrder) {

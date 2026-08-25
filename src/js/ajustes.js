@@ -532,7 +532,14 @@ window.updateNavInputs = function() {
   });
 };
 
+let currentSettingsTab = 'general';
+let currentThemeSubmodule = 'visual';
+let currentThemeFunctionModule = 'toolbar';
+let currentUserSubmodule = 'account';
+let currentGeneralSubmodule = 'comun';
+
 window.openSettingsTab = function(tabName = 'general') {
+  currentSettingsTab = tabName;
   const tabBtns = document.querySelectorAll('.settings-tab-btn');
   tabBtns.forEach((b) => {
     b.classList.toggle('active', b.dataset.tab === tabName);
@@ -573,21 +580,34 @@ window.openSettingsTab = function(tabName = 'general') {
 };
 
 window.abrirModalConfiguracion = function() {
-  window.openSettingsTab('general');
+  const modal = document.getElementById('settings-modal');
+  if (modal && (modal.style.display === 'flex' || modal.style.display === 'block')) {
+    // Si ya está abierto, actuar como toggle cerrándolo (guardando cambios)
+    modal.style.display = 'none';
+    if (typeof window.guardarAjustesEnNube === 'function') {
+      window.guardarAjustesEnNube();
+    }
+    return;
+  }
+
+  window.openSettingsTab(currentSettingsTab);
   if (typeof window.populateBisSongList === 'function') {
     try { window.populateBisSongList(); } catch (e) {}
   }
   if (typeof window.switchThemeSubmodule === 'function') {
-    window.switchThemeSubmodule('visual');
+    window.switchThemeSubmodule(currentThemeSubmodule);
   }
   if (typeof window.switchThemeFunctionModule === 'function') {
-    window.switchThemeFunctionModule('toolbar');
+    window.switchThemeFunctionModule(currentThemeFunctionModule);
   }
-  const accountBtn = document.getElementById('user-subtab-account-btn');
-  if (accountBtn) {
-    accountBtn.click();
+  if (typeof window.switchGeneralSubmodule === 'function') {
+    window.switchGeneralSubmodule(currentGeneralSubmodule);
   }
-  const modal = document.getElementById('settings-modal');
+  const targetUserBtn = document.querySelector(`.user-subtab-btn[data-subtab="${currentUserSubmodule}"]`) || 
+                        document.getElementById('user-subtab-account-btn');
+  if (targetUserBtn) {
+    targetUserBtn.click();
+  }
   if (modal) modal.style.display = 'flex';
 };
 
@@ -649,8 +669,15 @@ let wakeLock = null;
 window.requestWakeLock = async function() {
   try {
     if ('wakeLock' in navigator) {
+      if (wakeLock) {
+        try { await wakeLock.release(); } catch(e) {}
+      }
       wakeLock = await navigator.wakeLock.request('screen');
       console.log('Screen Wake Lock is active');
+      wakeLock.addEventListener('release', () => {
+        console.log('Screen Wake Lock was released');
+        wakeLock = null;
+      });
     }
   } catch (err) {
     console.warn('Wake Lock request failed:', err);
@@ -659,13 +686,13 @@ window.requestWakeLock = async function() {
 
 window.releaseWakeLock = function() {
   if (wakeLock !== null) {
-    wakeLock.release();
+    try { wakeLock.release(); } catch(e) {}
     wakeLock = null;
   }
 };
 
 window.handleVisibilityChange = async function() {
-  if (wakeLock !== null && document.visibilityState === 'visible') {
+  if (document.visibilityState === 'visible') {
     const isWakeLockPrefActive = localStorage.getItem('pref-wakelock') === 'true';
     if (isWakeLockPrefActive) {
       await window.requestWakeLock();
@@ -716,6 +743,52 @@ window.initAutoHideNavPreference = function() {
     });
   }
 };
+
+// Zoom con los dedos (Pinch-to-zoom)
+let zoomFingerEnabled = true;
+
+window.initZoomFingerPreference = function() {
+  const isZoomFingerActive = localStorage.getItem('pref-zoom-finger') !== 'false'; // Por defecto true
+  const zoomFingerToggle = document.getElementById('zoom-finger-toggle');
+  
+  const applyZoomFinger = (enabled) => {
+    zoomFingerEnabled = enabled;
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    if (metaViewport) {
+      if (enabled) {
+        metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, viewport-fit=cover');
+      } else {
+        metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover');
+      }
+    }
+  };
+
+  if (zoomFingerToggle) {
+    zoomFingerToggle.checked = isZoomFingerActive;
+    applyZoomFinger(isZoomFingerActive);
+    
+    zoomFingerToggle.addEventListener('change', (e) => {
+      const active = e.target.checked;
+      localStorage.setItem('pref-zoom-finger', active ? 'true' : 'false');
+      applyZoomFinger(active);
+    });
+  } else {
+    applyZoomFinger(isZoomFingerActive);
+  }
+};
+
+// Prevenir zoom multitáctil si está deshabilitado
+document.addEventListener('touchstart', (e) => {
+  if (e.touches.length > 1 && !zoomFingerEnabled) {
+    e.preventDefault();
+  }
+}, { passive: false });
+
+document.addEventListener('gesturestart', (e) => {
+  if (!zoomFingerEnabled) {
+    e.preventDefault();
+  }
+}, { passive: false });
 
 // Estilos de cabecera de grupo de categoría (Preparación y Perfil)
 window.applyCatHeaderStyles = function() {
@@ -867,6 +940,10 @@ window.initAjustes = async function() {
     if (cantoEquipoToggle) {
       cantoEquipoToggle.checked = localStorage.getItem('cantoEquipoOffline') === 'true';
     }
+    const zoomFingerToggle = document.getElementById('zoom-finger-toggle');
+    if (zoomFingerToggle) {
+      zoomFingerToggle.checked = localStorage.getItem('pref-zoom-finger') !== 'false';
+    }
     if (typeof updateCantoEquipoBadge === 'function') {
       updateCantoEquipoBadge();
     }
@@ -927,6 +1004,7 @@ window.initAjustes = async function() {
 
   window.initWakeLockPreference();
   window.initAutoHideNavPreference();
+  window.initZoomFingerPreference();
 
   // --- SUBMÓDULO INICIO ---
   const closeFiltersToggle = document.getElementById('close-filters-on-select-toggle');
@@ -1179,6 +1257,7 @@ window.initAjustes = async function() {
 
   // Manejo de subpestañas dentro del Módulo General (Gral Común y Cloud)
   window.switchGeneralSubmodule = function(subtab) {
+    currentGeneralSubmodule = subtab;
     const btns = document.querySelectorAll('.general-subtab-btn');
     btns.forEach(b => {
       b.classList.toggle('active', b.dataset.subtab === subtab);
@@ -1324,16 +1403,45 @@ window.initAjustes = async function() {
       e.stopPropagation();
       const btn = e.target;
       const urls = JSON.parse(btn.dataset.urls || '[]');
-      if (urls.length === 0) return;
+      const total = urls.length;
+      if (total === 0) return;
       
       btn.disabled = true;
-      btn.textContent = 'Cargando todos...';
+      btn.textContent = 'Cargando...';
       
+      const progressContainer = document.getElementById('status-progress-container');
+      const progressText = document.getElementById('status-progress-text');
+      const progressPercent = document.getElementById('status-progress-percent');
+      const progressBar = document.getElementById('status-progress-bar');
+      
+      if (progressContainer) {
+        progressContainer.style.display = 'block';
+      }
+      if (progressBar) progressBar.style.width = '0%';
+      if (progressPercent) progressPercent.textContent = '0%';
+      if (progressText) progressText.textContent = `Descargando: 0 de ${total} recursos...`;
+      
+      let count = 0;
       for (const url of urls) {
         await loadResourceIntoCache(url);
+        count++;
+        const percent = Math.round((count / total) * 100);
+        
+        if (progressBar) progressBar.style.width = `${percent}%`;
+        if (progressPercent) progressPercent.textContent = `${percent}%`;
+        if (progressText) progressText.textContent = `Descargando: ${count} de ${total} recursos...`;
       }
       
-      window.recalcularEstadoRecursos();
+      if (progressText) progressText.textContent = '¡Descarga completada!';
+      
+      setTimeout(() => {
+        if (progressContainer) progressContainer.style.display = 'none';
+        if (progressBar) progressBar.style.width = '0%';
+        if (progressPercent) progressPercent.textContent = '0%';
+        btn.disabled = false;
+        btn.textContent = 'Cargar todos los faltantes';
+        window.recalcularEstadoRecursos();
+      }, 1800);
     }
     
     if (e.target && e.target.id === 'btn-status-refresh') {
@@ -2245,6 +2353,7 @@ window.initAjustes = async function() {
 
   // Manejo de la navegación de subpestañas de Tema
   window.switchThemeSubmodule = function(subtab) {
+    currentThemeSubmodule = subtab;
     const btns = document.querySelectorAll('.theme-subtab-btn');
     btns.forEach(b => {
       b.classList.toggle('active', b.dataset.subtab === subtab);
@@ -2266,6 +2375,7 @@ window.initAjustes = async function() {
 
   // Manejo de la navegación de subpestañas de Función (Personalizar Función)
   window.switchThemeFunctionModule = function(funcKey) {
+    currentThemeFunctionModule = funcKey;
     const btns = document.querySelectorAll('.func-subtab-btn');
     btns.forEach(b => {
       b.classList.toggle('active', b.dataset.func === funcKey);
@@ -2313,6 +2423,7 @@ window.initAjustes = async function() {
   userSubtabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const subtab = btn.dataset.subtab;
+      currentUserSubmodule = subtab;
       userSubtabBtns.forEach(b => b.classList.toggle('active', b.dataset.subtab === subtab));
 
       const subpanels = document.querySelectorAll('.user-subpanel');
