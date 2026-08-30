@@ -19,7 +19,8 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, 'index.html'),
         perfil: path.resolve(__dirname, 'perfil.html'),
-        preparar: path.resolve(__dirname, 'preparar.html')
+        preparar: path.resolve(__dirname, 'preparar.html'),
+        expancion: path.resolve(__dirname, 'expancion.html')
       }
     }
   },

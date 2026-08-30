@@ -27,6 +27,7 @@ export const PERMISSIONS = {
   VIEW_SETTINGS_SONG: "view_settings_song",       // Ajustes > Canto
   VIEW_SETTINGS_USER: "view_settings_user",       // Ajustes > Usuario
   VIEW_SETTINGS_DATA: "view_settings_data",       // Ajustes > Datos
+  VIEW_SETTINGS_PAGINAS: "view_settings_paginas", // Ajustes > Páginas
   VIEW_SETTINGS_LOG: "view_settings_log",         // Ajustes > Log
   VIEW_BOOKS: "view_books",                       // Ver Libros de Cantos
   CONTROL_CANTO: "control_canto",
@@ -53,6 +54,7 @@ export const PERMISSION_LABELS = {
   "view_settings_song": "Ver Ajustes: Canto",
   "view_settings_user": "Ver Ajustes: Usuario",
   "view_settings_data": "Ver Ajustes: Datos",
+  "view_settings_paginas": "Ajustes: Páginas",
   "view_settings_log": "Ver Ajustes: Log",
   "view_books": "Ver Libros de Cantos",
   "control_canto": "Control Canto",
@@ -1430,6 +1432,7 @@ const PERMISSION_TREE = [
     ]
   },
   { key: "view_settings_data", label: "Ajustes: Datos" },
+  { key: "view_settings_paginas", label: "Ajustes: Páginas" },
   {
     key: "view_settings_log",
     label: "Ajustes: Log",

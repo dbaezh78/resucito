@@ -29,6 +29,10 @@
           <span class="material-symbols-outlined">database</span>
           <span>Datos</span>
         </button>
+        <button class="settings-tab-btn" data-tab="paginas">
+          <span class="material-symbols-outlined">auto_stories</span>
+          <span>Páginas</span>
+        </button>
         <button class="settings-tab-btn" data-tab="log">
           <span class="material-symbols-outlined">terminal</span>
           <span>Log</span>
@@ -36,6 +40,34 @@
       </div>
 
       <div class="settings-grid">
+        <!-- Panel Páginas -->
+        <div id="settings-panel-paginas" class="settings-panel-group" style="display: none; padding: 16px;">
+          <div style="margin-bottom: 16px;">
+            <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+              <span class="material-symbols-outlined" style="color: var(--accent-color);">auto_stories</span>
+              Páginas de Configuración
+            </h4>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Accede a las páginas y herramientas especiales de personalización del sistema.</p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <!-- Tarjeta para expancion.html -->
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: rgba(0,0,0,0.02); border: 1px solid var(--panel-border); border-radius: 12px; gap: 12px; flex-wrap: wrap;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span class="material-symbols-outlined" style="font-size: 1.8rem; color: var(--accent-color);">unfold_more</span>
+                <div>
+                  <h5 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Expansión de Cantos</h5>
+                  <p style="margin: 2px 0 0 0; font-size: 0.78rem; color: var(--text-muted);">Tabla de cantos que sustituyen y superponen la respuesta completa al desplegar.</p>
+                </div>
+              </div>
+              <a href="expancion.html" class="btn theme-btn" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; font-size: 0.85rem; font-weight: 700; text-decoration: none; border-radius: 8px;">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem;">open_in_new</span>
+                Abrir Página
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- Panel Datos -->
         <div id="settings-panel-datos" class="settings-panel-group" style="display: none;">
           <div class="setting-row" style="flex-direction: column; align-items: flex-start; gap: 12px;">

@@ -14,6 +14,7 @@
   "dbno": "234",
   "notes": "",
   "mant": "No",
+  "expansion": true,
   "audioSrc": "https://audio.resucito.do/shemaisrael.mp3",
   "scrollConfig": {
     "mobile": {
@@ -45,11 +46,11 @@
       "sC": "adb1"
     },
     {
-      "line": "SHEMÁ ISRAEL, SHEMÁ ISRAEL,, (La,m,20)(Sol,,220)",
+      "line": "SHEMÁ ISRAEL, SHEMÁ ISRAEL,, (La,m,0)(Sol,,175)",
       "sC": "ta as"
     },
     {
-      "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)",
+      "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,40)(La,m,240)",
       "sC": "as"
     },
     {
@@ -57,15 +58,15 @@
       "sC": "adb1"
     },
     {
-      "line": "ESCUCHA ISRAEL, ESCUCHA ISRAEL,, (La,m,20)(Sol,,224)",
+      "line": "ESCUCHA ISRAEL, ESCUCHA ISRAEL,, (La,m,0)(Sol,,185)",
       "sC": "as ast"
     },
     {
-      "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)",
+      "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,60)",
       "sC": "as"
     },
     {
-      "line": "EL SEÑOR ES UNO., (La,m,147)",
+      "line": "EL SEÑOR ES UNO., (La,m,115)",
       "sC": "as"
     },
     {
@@ -116,15 +117,15 @@
       "type": "collapsible-block",
       "id": "asamblea_shema_1",
       "initialState": "collapsed",
-      "triggerLine": "SHEMÁ ISRAEL, (La,m,20)",
+      "triggerLine": "SHEMÁ ISRAEL, (La,m,0)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "SHEMÁ ISRAEL, (Sol,,64)",
+          "line": "SHEMÁ ISRAEL, SHEMÁ ISRAEL,, (La,m,0)(Sol,,175)",
           "sC": "as sub"
         },
         {
-          "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)",
+          "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,40)(La,m,240)",
           "sC": "as"
         },
         {
@@ -137,19 +138,22 @@
       "type": "collapsible-block",
       "id": "asamblea_shema_2",
       "initialState": "collapsed",
-      "triggerLine": "ESCUCHA ISRAEL, (La,m,20)",
+      "triggerLine": "ESCUCHA ISRAEL, (La,m,0)",
+      
       "sC": "as",
       "lines": [
+
         {
-          "line": "ESCUCHA ISRAEL, (Sol,,46)",
-          "sC": "as sub1"
+          "line": "ESCUCHA ISRAEL, ESCUCHA ISRAEL,, (La,m,0)(Sol,,185)",
+          "sC": "as sub"
         },
+
         {
-          "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)",
+          "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,60)",
           "sC": "as"
         },
         {
-          "line": "EL SEÑOR ES UNO., (La,m,147)",
+          "line": "EL SEÑOR ES UNO., (La,m,115)",
           "sC": "as"
         }
       ]
@@ -196,15 +200,15 @@
       "type": "collapsible-block",
       "id": "asamblea_shema_1",
       "initialState": "collapsed",
-      "triggerLine": "SHEMÁ ISRAEL, (La,m,20)",
+      "triggerLine": "SHEMÁ ISRAEL, (La,m,0)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "SHEMÁ ISRAEL, (Sol,,64)",
+          "line": "SHEMÁ ISRAEL, SHEMÁ ISRAEL,, (La,m,0)(Sol,,175)",
           "sC": "as sub"
         },
         {
-          "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,67)(La,m,300)",
+          "line": "ADONAI ELOHENU, ADONAI EJAD., (Fa,,40)(La,m,240)",
           "sC": "as"
         },
         {
@@ -217,19 +221,20 @@
       "type": "collapsible-block",
       "id": "asamblea_shema_2",
       "initialState": "collapsed",
-      "triggerLine": "ESCUCHA ISRAEL, (La,m,20)",
+      "triggerLine": "ESCUCHA ISRAEL, (La,m,0)",
       "sC": "as",
       "lines": [
         {
-          "line": "ESCUCHA ISRAEL, (Sol,,46)",
-          "sC": "as sub1"
+          "line": "ESCUCHA ISRAEL, ESCUCHA ISRAEL,, (La,m,0)(Sol,,185)",
+          "sC": "as sub"
         },
         {
-          "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,77)",
+          "line": "EL SEÑOR ES NUESTRO DIOS,, (Fa,,60)",
           "sC": "as"
         },
         {
           "line": "EL SEÑOR ES UNO., (La,m,147)",
+          
           "sC": "as"
         }
       ]

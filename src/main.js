@@ -375,15 +375,17 @@ export function updateAccessControlVisibility() {
   const settingsTabTheme = document.querySelector('.settings-tab-btn[data-tab="theme"]');
   const settingsTabSong = document.querySelector('.settings-tab-btn[data-tab="canto"]');
   const settingsTabUser = document.querySelector('.settings-tab-btn[data-tab="user"]');
+  const settingsTabData = document.querySelector('.settings-tab-btn[data-tab="datos"]');
+  const settingsTabPaginas = document.querySelector('.settings-tab-btn[data-tab="paginas"]');
   const settingsTabLog = document.querySelector('.settings-tab-btn[data-tab="log"]');
   const settingsPanelLog = document.getElementById('settings-panel-log');
-  const settingsTabData = document.querySelector('.settings-tab-btn[data-tab="datos"]');
 
   const canViewGeneral = isCurrentUserAdmin() || hasPermission('view_settings_general') || canViewGeneralComun || canViewGeneralCloud;
   const canViewTheme = isCurrentUserAdmin() || hasPermission('view_settings_theme') || canViewThemeVisual || canViewThemeInicio || canViewThemePreparacion || canViewThemePerfil;
   const canViewSong = isCurrentUserAdmin() || hasPermission('view_settings_song');
   const canViewUser = isCurrentUserAdmin() || hasPermission('view_settings_user') || canViewUserCuenta || canViewAccessSection || canViewUsage;
   const canViewData = isCurrentUserAdmin() || hasPermission('view_settings_data');
+  const canViewPaginas = isCurrentUserAdmin() || hasPermission('view_settings_paginas');
   const canViewLogSection = isCurrentUserAdmin() || hasPermission('view_settings_log') || canViewLogs || canViewStatus;
 
   if (settingsTabGeneral) settingsTabGeneral.style.display = canViewGeneral ? 'flex' : 'none';
@@ -391,6 +393,7 @@ export function updateAccessControlVisibility() {
   if (settingsTabSong) settingsTabSong.style.display = canViewSong ? 'flex' : 'none';
   if (settingsTabUser) settingsTabUser.style.display = canViewUser ? 'flex' : 'none';
   if (settingsTabData) settingsTabData.style.display = canViewData ? 'flex' : 'none';
+  if (settingsTabPaginas) settingsTabPaginas.style.display = canViewPaginas ? 'flex' : 'none';
   if (settingsTabLog) settingsTabLog.style.display = canViewLogSection ? 'flex' : 'none';
 
   // Redireccionar si el usuario actual se encuentra en una pestaña deshabilitada
@@ -403,6 +406,7 @@ export function updateAccessControlVisibility() {
     else if (activeTab === 'canto' && !canViewSong) allowed = false;
     else if (activeTab === 'user' && !canViewUser) allowed = false;
     else if (activeTab === 'datos' && !canViewData) allowed = false;
+    else if (activeTab === 'paginas' && !canViewPaginas) allowed = false;
     else if (activeTab === 'log' && !canViewLogSection) allowed = false;
 
     if (!allowed) {
@@ -412,6 +416,7 @@ export function updateAccessControlVisibility() {
       else if (canViewSong) targetTab = 'canto';
       else if (canViewUser) targetTab = 'user';
       else if (canViewData) targetTab = 'datos';
+      else if (canViewPaginas) targetTab = 'paginas';
       else if (canViewLogSection) targetTab = 'log';
 
       if (targetTab && typeof window.openSettingsTab === 'function') {
@@ -752,6 +757,7 @@ async function loadSongView(songId) {
       loadedSongsCache[songId] = songData;
     }
     currentCanto = songData;
+    window.currentCanto = currentCanto;
     
     // Aplicar zoom según dispositivo (tc) respetando la preferencia personalizada si existe
     applyZoom(getDefaultZoom());
@@ -1189,6 +1195,14 @@ function renderSection(container, lines, side) {
       containerDiv.className = 'collapsible-block-container';
       containerDiv.dataset.blockId = item.id;
       
+      const isConfiguredForExpansion = typeof window.isSongExpansionEnabled === 'function' && currentCanto 
+                                       ? window.isSongExpansionEnabled(currentCanto.id) 
+                                       : (currentCanto && currentCanto.expansion === true);
+      const hasSub = isConfiguredForExpansion && item.lines && item.lines.length > 0;
+      if (hasSub) {
+        containerDiv.classList.add('has-sub');
+      }
+      
       const linesWrapper = document.createElement('div');
       linesWrapper.className = 'collapsible-lines-wrapper';
       
@@ -1206,29 +1220,59 @@ function renderSection(container, lines, side) {
       const contentDiv = document.createElement('div');
       contentDiv.className = 'collapsible-content';
       
+      const triggerHasTa = triggerLine.classList.contains('ta') || (item.sC && item.sC.includes('ta'));
+      
       item.lines.forEach((subLine, subLineIdx) => {
-        contentDiv.appendChild(renderLine(subLine, side, lineIdx, subLineIdx));
+        const subLineEl = renderLine(subLine, side, lineIdx, subLineIdx);
+        if (hasSub && subLineIdx === 0 && triggerHasTa && !subLineEl.classList.contains('ta')) {
+          subLineEl.classList.add('ta');
+        }
+        contentDiv.appendChild(subLineEl);
       });
       
       // Manejar estado inicial de colapso
       const isExpanded = allAsambleaExpanded || item.initialState === 'expanded';
       contentDiv.style.display = isExpanded ? 'block' : 'none';
-      
-      const triggerLetra = triggerLine.querySelector('.letra');
-      if (!isExpanded && triggerLetra && !triggerLetra.textContent.endsWith('...')) {
-        triggerLetra.textContent += '...';
+      if (hasSub) {
+        triggerLine.style.display = isExpanded ? 'none' : 'block';
       }
       
-      triggerLine.addEventListener('click', () => {
+      const triggerLetra = triggerLine.querySelector('.letra');
+      let dotsSpan = null;
+      if (triggerLetra) {
+        dotsSpan = document.createElement('span');
+        dotsSpan.className = 'collapsible-dots-indicator';
+        dotsSpan.textContent = '...';
+        if (!isExpanded) {
+          triggerLetra.appendChild(dotsSpan);
+        }
+      }
+      
+      const toggleCollapse = () => {
         const currentlyVisible = contentDiv.style.display !== 'none';
-        contentDiv.style.display = currentlyVisible ? 'none' : 'block';
-        const letraSpan = triggerLine.querySelector('.letra');
-        if (letraSpan) {
-          if (currentlyVisible) {
-            if (!letraSpan.textContent.endsWith('...')) letraSpan.textContent += '...';
-          } else {
-            letraSpan.textContent = letraSpan.textContent.replace('...', '');
+        if (currentlyVisible) {
+          contentDiv.style.display = 'none';
+          if (hasSub) {
+            triggerLine.style.display = 'block';
           }
+          if (triggerLetra && dotsSpan && !triggerLetra.contains(dotsSpan)) {
+            triggerLetra.appendChild(dotsSpan);
+          }
+        } else {
+          contentDiv.style.display = 'block';
+          if (hasSub) {
+            triggerLine.style.display = 'none';
+          }
+          if (triggerLetra && dotsSpan && triggerLetra.contains(dotsSpan)) {
+            triggerLetra.removeChild(dotsSpan);
+          }
+        }
+      };
+      
+      triggerLine.addEventListener('click', toggleCollapse);
+      contentDiv.addEventListener('click', (e) => {
+        if (!isChordEditMode && hasSub) {
+          toggleCollapse();
         }
       });
       
@@ -1400,6 +1444,11 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
   // Ordenar acordes por posición
   matches.sort((a, b) => a.position - b.position);
   
+  // Crear span de letra principal para contener todo
+  const letraSpan = document.createElement('span');
+  letraSpan.className = 'letra';
+  if (textColor) letraSpan.style.color = textColor;
+  
   // Renderizar letra con acordes insertados como wrappers inline
   let lastIndex = 0;
   matches.forEach(match => {
@@ -1409,7 +1458,7 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
     // Texto previo al acorde
     if (charIndex > lastIndex) {
       const textNode = document.createTextNode(cleanLetra.substring(lastIndex, charIndex));
-      lineDiv.appendChild(textNode);
+      letraSpan.appendChild(textNode);
     }
     
     // Carácter en la posición (o espacio/vacío si ya fue consumido o fuera de rango)
@@ -1445,7 +1494,7 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
     wrapper.appendChild(chordSpan);
     wrapper.appendChild(document.createTextNode(char));
     
-    lineDiv.appendChild(wrapper);
+    letraSpan.appendChild(wrapper);
     if (char !== '') {
       lastIndex = charIndex + 1; // saltar el carácter que metimos al wrapper
     }
@@ -1454,8 +1503,10 @@ function renderLine(lineItem, side, lineIdx, subLineIdx) {
   // Agregar resto del texto
   if (lastIndex < cleanLetra.length) {
     const remainingText = document.createTextNode(cleanLetra.substring(lastIndex));
-    lineDiv.appendChild(remainingText);
+    letraSpan.appendChild(remainingText);
   }
+  
+  lineDiv.appendChild(letraSpan);
   
   // Aplicar color de texto si corresponde
   if (textColor) {
@@ -2544,19 +2595,30 @@ function generarHtmlCanto(song) {
 
 function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
   if (lineItem.type === "collapsible-block") {
-    const triggerHtml = generarHtmlLineaItem(song, lineItem.triggerLine, side, lineIdx, -1, keyOffset, 'collapsible-trigger ' + (lineItem.sC || ''));
-    const subLinesHtml = lineItem.lines.map((l, subIdx) => 
-      generarHtmlLineaItem(song, l, side, lineIdx, subIdx, keyOffset)
-    ).join('');
-    
+    const isConfiguredForExpansion = typeof window.isSongExpansionEnabled === 'function' && song 
+                                     ? window.isSongExpansionEnabled(song.id) 
+                                     : (song && song.expansion === true);
+    const hasSub = isConfiguredForExpansion && lineItem.lines && lineItem.lines.length > 0;
     const isExpanded = allAsambleaExpanded || lineItem.initialState === 'expanded';
-    const displayStyle = isExpanded ? 'block' : 'none';
+    const triggerDisplayStyle = (hasSub && isExpanded) ? 'display: none;' : '';
+    const contentDisplayStyle = isExpanded ? 'block' : 'none';
+
+    const triggerHtml = generarHtmlLineaItem(song, lineItem.triggerLine, side, lineIdx, -1, keyOffset, 'collapsible-trigger ' + (lineItem.sC || ''), triggerDisplayStyle);
+    const triggerHasTa = lineItem.sC?.includes('ta') || (typeof lineItem.triggerLine === 'object' && lineItem.triggerLine?.sC?.includes('ta'));
+
+    const subLinesHtml = lineItem.lines.map((l, subIdx) => {
+      let extraClass = '';
+      if (hasSub && subIdx === 0 && triggerHasTa && !(typeof l === 'object' && l.sC?.includes('ta'))) {
+        extraClass = 'ta';
+      }
+      return generarHtmlLineaItem(song, l, side, lineIdx, subIdx, keyOffset, extraClass);
+    }).join('');
     
     return `
-      <div class="collapsible-block-container">
+      <div class="collapsible-block-container ${hasSub ? 'has-sub' : ''}">
         <div class="collapsible-lines-wrapper">
           ${triggerHtml}
-          <div class="collapsible-content" style="display: ${displayStyle};">
+          <div class="collapsible-content" style="display: ${contentDisplayStyle};">
             ${subLinesHtml}
           </div>
         </div>
@@ -2573,10 +2635,13 @@ function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
   }
 }
 
-function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffset, extraClasses = '') {
+function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffset, extraClasses = '', extraStyle = '') {
   const content = typeof lineItem === 'string' ? lineItem : (lineItem.line || '');
   const sectionClass = ((lineItem.sC || '') + ' ' + extraClasses).trim();
   const textColor = lineItem.color || '';
+  let customStyle = textColor ? `color: ${textColor};` : '';
+  if (extraStyle) customStyle = (customStyle + ' ' + extraStyle).trim();
+  const styleAttr = customStyle ? `style="${customStyle}"` : '';
   
   const firstParenIndex = content.indexOf('(');
   let rawLetra = firstParenIndex !== -1 ? content.substring(0, firstParenIndex) : content;
@@ -2613,8 +2678,8 @@ function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffs
   const matches = resolveChordPositionsForPreview(song, side, lineIdx, subLineIdx, baseChords);
   
   if (matches.length === 0) {
-    const styleAttr = textColor ? `style="color: ${textColor};"` : '';
-    return `<div class="linea-canto ${sectionClass}"><span class="letra" ${styleAttr}>${cleanLetra}</span></div>`;
+    const textColorAttr = textColor ? `style="color: ${textColor};"` : '';
+    return `<div class="linea-canto ${sectionClass}" ${styleAttr}><span class="letra" ${textColorAttr}>${cleanLetra}</span></div>`;
   }
   
   let spansHtml = '';
@@ -2645,7 +2710,6 @@ function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffs
     spansHtml += `<span>${cleanLetra.substring(lastPos)}</span>`;
   }
   
-  const styleAttr = textColor ? `style="color: ${textColor};"` : '';
   return `<div class="linea-canto ${sectionClass}" ${styleAttr}>${spansHtml}</div>`;
 }
 
@@ -3437,16 +3501,24 @@ function setupEventListeners() {
         iconSpan.textContent = allAsambleaExpanded ? 'visibility' : 'visibility_off';
       }
 
-      document.querySelectorAll('.collapsible-content').forEach(content => {
-        content.style.display = allAsambleaExpanded ? 'block' : 'none';
-      });
-      document.querySelectorAll('.collapsible-trigger').forEach(trigger => {
-        const letraSpan = trigger.querySelector('.letra');
-        if (letraSpan && letraSpan.textContent) {
-          if (allAsambleaExpanded) {
-            letraSpan.textContent = letraSpan.textContent.replace('...', '');
-          } else {
-            if (!letraSpan.textContent.endsWith('...')) letraSpan.textContent += '...';
+      document.querySelectorAll('.collapsible-block-container').forEach(container => {
+        const content = container.querySelector('.collapsible-content');
+        const trigger = container.querySelector('.collapsible-trigger');
+        const hasSub = container.classList.contains('has-sub');
+        if (content) {
+          content.style.display = allAsambleaExpanded ? 'block' : 'none';
+        }
+        if (trigger) {
+          if (hasSub) {
+            trigger.style.display = allAsambleaExpanded ? 'none' : 'block';
+          }
+          const letraSpan = trigger.querySelector('.letra');
+          if (letraSpan && letraSpan.textContent) {
+            if (allAsambleaExpanded) {
+              letraSpan.textContent = letraSpan.textContent.replace(/\.\.\.$/, '').replace('...', '');
+            } else {
+              if (!letraSpan.textContent.endsWith('...')) letraSpan.textContent += '...';
+            }
           }
         }
       });

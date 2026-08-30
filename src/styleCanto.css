@@ -1,0 +1,26 @@
+.srtp{
+    margin-top: -53px;
+    left: 237px;
+}
+
+@media (min-width: 384px){
+ .srtp{
+    margin-top: -43px;
+    left: 178px;
+    }   
+}
+
+@media (min-width: 768px){
+ .srtp{
+    margin-top: -77px;
+    left: 321px;
+    }   
+}
+
+@media (min-width: 992px){
+ .srtp{
+    margin-top: -52px;
+    left: 240px;
+    }   
+}
+

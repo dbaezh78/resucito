@@ -14,6 +14,7 @@
   "dbno": "192",
   "notes": "",
   "mant": "No",
+  "expansion": true,
   "audioSrc": "https://audio.resucito.do/letaniaspenitencialesii.mp3",
   "scrollConfig": {
     "mobile": {
@@ -41,8 +42,17 @@
       "sC": ""
     },
     {
-      "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,177)(La,m,257)(Si,7,387)",
-      "sC": "ta as"
+      "type": "collapsible-block",
+      "id": "asamblea_lpenitencial_0",
+      "initialState": "collapsed",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,177)",
+      "sC": "ta as top1",
+      "lines": [
+        {
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,177)(La,m,257)(Si,7,387)",
+          "sC": "as sub"
+        }
+      ]
     },
     {
       "line": "Señor, ten piedad., (Do,,10)(Si,7,158)",

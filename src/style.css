@@ -1063,7 +1063,11 @@ header {
 }
 
 .collapsible-content {
-  margin-top: 8px;
+  margin-top: 0;
+}
+
+.collapsible-block-container.has-sub .collapsible-content {
+  cursor: pointer;
 }
 
 /* Acordes posicionados (Anclados con precisión de caracteres) */
@@ -3160,6 +3164,9 @@ footer {
 /*ESTO SIEMPRE TIENE QUE ESTAR DE ULTIMO*/
 /* 2/3  min-width: 3 8 4px */
 @media (min-width: 384px) {
+
+    header {margin-bottom: -50px;}
+
 .Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
   { position: relative;width: fit-content;font-weight: bolder;left: 235px;}
 
@@ -3229,8 +3236,8 @@ footer {
 
 
     .dashboard-christ-img-mobile {
-      width: 130px;
-      height: 163px;
+      width: 100px;
+      height: 100px;
       margin: 5px auto 10px auto;
     }
   .book-tabs {margin-bottom: 0px;}
@@ -3271,6 +3278,9 @@ footer {
   }   /* **************** FIN DE 384px*/
 
 @media (min-width: 768px) {
+
+      header {margin-bottom: 0px;}
+
 .Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
   { position: relative;width: fit-content;font-weight: bolder;left: 466px;}
 

@@ -153,6 +153,8 @@ export async function cargarPosicionesGlobales(cantoId) {
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
       const data = docSnap.data();
+      if (!window.globalPositionsCache) window.globalPositionsCache = {};
+      window.globalPositionsCache[cantoId] = data;
       return {
         lizq: deserializarLineas(data.lizq),
         lder: deserializarLineas(data.lder)
@@ -365,9 +367,56 @@ export function canCurrentUserSeeSong(songId) {
   return userStage >= requiredStage;
 }
 
-window.canCurrentUserSeeSong = canCurrentUserSeeSong;
-window.listenToGlobalPositions = listenToGlobalPositions;
+// --- Control de Expansión de Cantos (Superposición) ---
+window.expansionSongsCache = {};
 
-// Iniciar la escucha inmediatamente
+export function listenToExpansionSongs() {
+  try {
+    const local = localStorage.getItem('expansion_songs_config');
+    if (local) {
+      try {
+        const parsed = JSON.parse(local);
+        if (parsed && parsed.songs) window.expansionSongsCache = parsed.songs;
+      } catch (e) {}
+    }
+  } catch (e) {
+    console.warn("⚠️ [Firebase] Error al iniciar listenToExpansionSongs:", e);
+  }
+}
+
+export function isSongExpansionEnabled(songId) {
+  if (!songId) return false;
+  // 1. Verificar en globalPositionsCache de Firebase (mayor prioridad si está definido)
+  if (window.globalPositionsCache && window.globalPositionsCache[songId] && window.globalPositionsCache[songId].expansion !== undefined) {
+    return window.globalPositionsCache[songId].expansion === true;
+  }
+  // 2. Verificar en localStorage directamente (sincronizado con expancion.html)
+  try {
+    const local = localStorage.getItem('expansion_songs_config');
+    if (local) {
+      const parsed = JSON.parse(local);
+      if (parsed && parsed.songs && parsed.songs[songId] !== undefined) {
+        return parsed.songs[songId] === true;
+      }
+    }
+  } catch (e) {}
+
+  // 3. Verificar en expansionSongsCache en memoria
+  if (window.expansionSongsCache && window.expansionSongsCache[songId] !== undefined) {
+    return window.expansionSongsCache[songId] === true;
+  }
+
+  // 4. Fallback al JSON del canto activo si tiene "expansion": true
+  if (window.currentCanto && window.currentCanto.id === songId && window.currentCanto.expansion === true) {
+    return true;
+  }
+  return false;
+}
+
+window.isSongExpansionEnabled = isSongExpansionEnabled;
+window.listenToExpansionSongs = listenToExpansionSongs;
+
+// Iniciar escuchas inmediatamente
 listenToGlobalPositions();
+listenToExpansionSongs();
 
