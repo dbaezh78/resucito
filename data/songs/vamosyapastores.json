@@ -35,11 +35,11 @@
   "sig": "/src/index.html?canto=vendellibano",
   "lizq": [
     {
-      "line": "VAMOS YA, PASTORES , (Mi,m,20)",
+      "line": "VAMOS YA, PASTORES , (Mi,m,0)",
       "sC": "ta as"
     },
     {
-      "line": "VAMOS A BELÉN,, (Si,7,141)",
+      "line": "VAMOS A BELÉN,, (Si,7,100)",
       "sC": "as"
     },
     {
@@ -47,7 +47,7 @@
       "sC": "as"
     },
     {
-      "line": "SE LLAMA EMMANUEL., (Mi,m,201)",
+      "line": "SE LLAMA EMMANUEL., (Mi,m,140)",
       "sC": "as"
     },
     {
@@ -55,7 +55,7 @@
       "sC": "as"
     },
     {
-      "line": "SE LLAMA EMMANUEL,, (Si,7,197)",
+      "line": "SE LLAMA EMMANUEL,, (Si,7,145)",
       "sC": "as"
     },
     {
@@ -63,15 +63,15 @@
       "sC": "as"
     },
     {
-      "line": "VAMOS A BELÉN., (Mi,m,140)",
+      "line": "VAMOS A BELÉN., (Mi,m,100)",
       "sC": "as"
     },
     {
-      "line": "PA RA RAM PAM PAM,, (Si,7,187)",
+      "line": "PA RA RAM PAM PAM,, (Si,7,140)",
       "sC": "as r1"
     },
     {
-      "line": "PA RA RAM PAM PAM., (Mi,m,188)",
+      "line": "PA RA RAM PAM PAM., (Mi,m,140)",
       "sC": "as"
     },
     {
@@ -79,19 +79,19 @@
       "sC": "adb1"
     },
     {
-      "line": "Los pobres ya cantan,, (Mi,m,20)",
+      "line": "Los pobres ya cantan,, (Mi,m,0)(Si,7,150)",
       "sC": "tc"
     },
     {
-      "line": "los niños ya ríen., (Si,7,153)",
+      "line": "los niños ya ríen., (Mi,m,125)",
       "sC": ""
     },
     {
-      "line": "Los pobres ya cantan,, (Mi,m,150)",
+      "line": "Los pobres ya cantan,, (Si,7,135)",
       "sC": ""
     },
     {
-      "line": "los niños ya ríen., (Si,7,20)",
+      "line": "los niños ya ríen., (Mi,m,125)",
       "sC": ""
     },
     {
@@ -99,19 +99,19 @@
       "sC": "adb1"
     },
     {
-      "line": "ALEGRÍA, ALEGRÍA,, (Mi,m,20)(Si,7,169)",
+      "line": "ALEGRÍA, ALEGRÍA,, (Mi,m,0)(Si,7,130)",
       "sC": "ta as"
     },
     {
-      "line": "ALEGRÍA, ALEGRÍA., (Mi,m,165)",
+      "line": "ALEGRÍA, ALEGRÍA., (Mi,m,130)",
       "sC": "as"
     },
     {
-      "line": "ALEGRÍA, ALEGRÍA:, (Si,7,165)",
+      "line": "ALEGRÍA, ALEGRÍA:, (Si,7,130)",
       "sC": "as"
     },
     {
-      "line": "HA NACIDO EL SALVADOR., (Mi,m,226)",
+      "line": "HA NACIDO EL SALVADOR., (Mi,m,180)",
       "sC": "as"
     }
   ],
@@ -120,11 +120,11 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VAMOS YA, PASTORES, (Mi,m,20)",
+      "triggerLine": "VAMOS YA, PASTORES, (Mi,m,0)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "VAMOS A BELÉN,, (Si,7,141)",
+          "line": "VAMOS A BELÉN,, (Si,7,100)",
           "sC": "as"
         },
         {
@@ -132,7 +132,7 @@
           "sC": "as"
         },
         {
-          "line": "SE LLAMA EMMANUEL., (Mi,m,201)",
+          "line": "SE LLAMA EMMANUEL., (Mi,m,140)",
           "sC": "as"
         },
         {
@@ -140,7 +140,7 @@
           "sC": "as"
         },
         {
-          "line": "SE LLAMA EMMANUEL,, (Si,7,197)",
+          "line": "SE LLAMA EMMANUEL,, (Si,7,145)",
           "sC": "as"
         },
         {
@@ -148,15 +148,15 @@
           "sC": "as"
         },
         {
-          "line": "VAMOS A BELÉN., (Mi,m,140)",
+          "line": "VAMOS A BELÉN., (Mi,m,100)",
           "sC": "as"
         },
         {
-          "line": "PA RA RAM PAM PAM,, (Si,7,187)",
+          "line": "PA RA RAM PAM PAM,, (Si,7,140)",
           "sC": "as r1"
         },
         {
-          "line": "PA RA RAM PAM PAM., (Mi,m,188)",
+          "line": "PA RA RAM PAM PAM., (Mi,m,140)",
           "sC": "as"
         }
       ]
@@ -166,19 +166,19 @@
       "sC": "adb1"
     },
     {
-      "line": "Su madre, María,, (Mi,m,20)(Si,7,143)",
+      "line": "Su madre, María,, (Mi,m,0)(Si,7,115)",
       "sC": "tc"
     },
     {
-      "line": "su padre, José., (Mi,m,128)",
+      "line": "su padre, José., (Mi,m,115)",
       "sC": ""
     },
     {
-      "line": "Ha nacido un niño,, (Si,7,147)",
+      "line": "Ha nacido un niño,, (Si,7,125)",
       "sC": ""
     },
     {
-      "line": "se llama Emmanuel., (Mi,m,178)",
+      "line": "se llama Emmanuel., (Mi,m,140)",
       "sC": ""
     },
     {
@@ -189,19 +189,19 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "ALEGRÍA, ALEGRÍA, (Mi,m,20)(Si,7,169)",
+      "triggerLine": "ALEGRÍA, ALEGRÍA, (Mi,m,0)(Si,7,115)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "ALEGRÍA, ALEGRÍA., (Si,7,165)",
+          "line": "ALEGRÍA, ALEGRÍA., (Si,7,130)",
           "sC": "as"
         },
         {
-          "line": "ALEGRÍA, ALEGRÍA:, (Mi,m,165)",
+          "line": "ALEGRÍA, ALEGRÍA:, (Mi,m,130)",
           "sC": "as"
         },
         {
-          "line": "HA NACIDO EL SALVADOR, (Mi,m,226)",
+          "line": "HA NACIDO EL SALVADOR, (Mi,m,180)",
           "sC": "as"
         }
       ]
@@ -214,11 +214,11 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VAMOS YA, PASTORES, (Mi,m,20)",
+      "triggerLine": "VAMOS YA, PASTORES, (Mi,m,0)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "VAMOS A BELÉN,, (Si,7,141)",
+          "line": "VAMOS A BELÉN,, (Si,7,100)",
           "sC": "as"
         },
         {
@@ -226,7 +226,7 @@
           "sC": "as"
         },
         {
-          "line": "SE LLAMA EMMANUEL., (Mi,m,201)",
+          "line": "SE LLAMA EMMANUEL., (Mi,m,140)",
           "sC": "as"
         },
         {
@@ -234,7 +234,7 @@
           "sC": "as"
         },
         {
-          "line": "SE LLAMA EMMANUEL,, (Si,7,197)",
+          "line": "SE LLAMA EMMANUEL,, (Si,7,145)",
           "sC": "as"
         },
         {
@@ -242,15 +242,15 @@
           "sC": "as"
         },
         {
-          "line": "VAMOS A BELÉN., (Mi,m,140)",
+          "line": "VAMOS A BELÉN., (Mi,m,100)",
           "sC": "as"
         },
         {
-          "line": "PA RA RAM PAM PAM,, (Si,7,187)",
+          "line": "PA RA RAM PAM PAM,, (Si,7,140)",
           "sC": "as r1"
         },
         {
-          "line": "PA RA RAM PAM PAM., (Mi,m,188)",
+          "line": "PA RA RAM PAM PAM., (Mi,m,140)",
           "sC": "as"
         }
       ]

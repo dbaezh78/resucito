@@ -24,3 +24,23 @@
     }   
 }
 
+
+
+.linea-canto.ast1::after {
+    content: "*";
+    font-weight: bold;
+    font-size: 0.7em;
+    color: var(--chord-color);
+    top: 7px;
+    left: 129px;
+    position: absolute;
+}
+
+/* Cuando se combinan con asterisco/melisma, la letra mantiene el color del tema y solo el final se colorea */
+.linea-canto.ast1.cRojo .letra {
+  color: var(--text-color) !important;
+}
+
+.linea-canto.ast1.cAzul .letra{
+  color: var(--text-color) !important;
+}

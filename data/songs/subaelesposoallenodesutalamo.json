@@ -40,7 +40,7 @@
       "sC": "as r1"
     },
     {
-      "line": "SUBA NUESTRO ESPOSO,, (Re,m,204)",
+      "line": "SUBA NUESTRO ESPOSO,, (Re,m,150)",
       "sC": "as"
     },
     {
@@ -95,7 +95,7 @@
       "type": "collapsible-block",
       "id": "asamblea_esposo_1",
       "initialState": "collapsed",
-      "triggerLine": "SUBA EL ESPOSO, (Mi,,20)(Re,m,137)",
+      "triggerLine": "SUBA EL ESPOSO, (La,m,20)(Re,m,137)",
       "sC": "ta as",
       "lines": [
         {
@@ -103,7 +103,7 @@
           "sC": "as r1"
         },
         {
-          "line": "SUBA NUESTRO ESPOSO,, (Mi,,22)(La,m,235)",
+          "line": "SUBA NUESTRO ESPOSO,, (Re,m,150)",
           "sC": "as"
         },
         {
@@ -158,19 +158,19 @@
       "type": "collapsible-block",
       "id": "asamblea_esposo_2",
       "initialState": "collapsed",
-      "triggerLine": "SUBA EL ESPOSO, (Mi,,20)(Re,m,137)",
+      "triggerLine": "SUBA EL ESPOSO, (La,m,0)(Re,m,100)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "SUBA, AL LEÑO DE SU TÁLAMO;, (La,m,20)(Re,m,236)",
+          "line": "SUBA, AL LEÑO DE SU TÁLAMO;, (Mi,,10)(La,m,200)",
           "sC": "as r1"
         },
         {
-          "line": "SUBA NUESTRO ESPOSO,, (Mi,,20)(La,m,200)",
+          "line": "SUBA NUESTRO ESPOSO,, (Re,m,150)",
           "sC": "as"
         },
         {
-          "line": "AL LECHO, AL LECHO DE SU TÁLAMO., (Re,m,60)(La,m,291)",
+          "line": "AL LECHO, AL LECHO DE SU TÁLAMO., (Mi,,40)(La,m,250)",
           "sC": "as"
         }
       ]

@@ -793,10 +793,11 @@ async function loadSongView(songId) {
           <img src="img/christ.png" alt="Cristo" class="canto-header-img">
         </div>
         <div class="canto-header-center">
-          <div class="canto-header-stage">${stage}</div>
-          <h1 class="canto-header-title">${title}</h1>
-          <div class="canto-header-subtitle">${subtitle}</div>
+        <div></div>
+        <h1 class="canto-header-title">${title}</h1>
+        <div class="canto-header-subtitle">${subtitle}</div>
         </div>
+        <div class="canto-header-stage">${stage}</div>
         <div class="canto-header-right"></div>
       `;
     }

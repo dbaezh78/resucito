@@ -926,7 +926,8 @@ header {
 .canto-columns-container {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  /*gap: 32px;*/
+  gap: 4px;
   margin-top: 16px;
   width: 100%;
   background-color: var(--current-stage-bg, var(--panel-bg));
@@ -2063,12 +2064,13 @@ footer {
 .canto-header-stage {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.6rem;
   letter-spacing: 1px;
   color: var(--text-categoria);
   margin-bottom: 4px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: -100px;
 }
 
 .canto-header-title {
@@ -3340,7 +3342,8 @@ footer {
   .modal-content{max-width: 50%;max-height: 74%;overflow-y: initial;border: 1px solid;}
   .song-viewer-view {width: 1024px;}
 
-  .canto-columns-container {padding: 16px 40px;  }
+  /*.canto-columns-container {padding: 16px 40px;  } cambiado para aumentar el tamaño del lienzo*/
+  .canto-columns-container {padding: 16px 4px 16px 16px;  }
   .btn-icon {width: 40px;}
 
 .dashboard-christ-img {

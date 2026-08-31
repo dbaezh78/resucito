@@ -10,6 +10,7 @@
   "catCanto": "Precatecumenado",
   "cejilla": "1",
   "nCan": "* Melisma",
+  "notesColor": "var(--chord-color-alt)",
   "nCanURL": "",
   "dbno": "151",
   "notes": "",
@@ -193,7 +194,7 @@
     },
     {
       "line": "Y cuando  aparezca Cristo,, (La,m,20)(Si,7,214)",
-      "sC": "tc ast2"
+      "sC": "tc ast1"
     },
     {
       "line": "que es vuestra vida,, (La,m,20)(Si,7,158)",
