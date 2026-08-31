@@ -12,6 +12,7 @@
   "catCanto": "Precatecumenado",
   "cejilla": "",
   "nCan": "* Melisma",
+  "notesColor": "var(--chord-color-alt)",
   "nCanURL": "",
   "dbno": "168",
   "notes": "",
@@ -35,11 +36,11 @@
   "sig": "/src/index.html?canto=venicreator",
   "lizq": [
     {
-      "line": "Ven, Hijo del Hombre,, (Mi,m,20)(La,m,144)",
+      "line": "Ven, Hijo del Hombre,, (Mi,m,0)(La,m,140)",
       "sC": "tc"
     },
     {
-      "line": "ven, ¡Señor Jesús!, (Si,7,17)(Mi,m,146)",
+      "line": "ven, ¡Señor Jesús!, (Si,7,0)(Mi,m,135)",
       "sC": ""
     },
     {
@@ -47,15 +48,15 @@
       "sC": "adb1"
     },
     {
-      "line": "Ven,, (Mi,m,20)",
+      "line": "Ven,, (Mi,m,0)",
       "sC": "tc"
     },
     {
       "line": "VEN, ",
-      "sC": "ta as a2"
+      "sC": "ta as señorJesus"
     },
     {
-      "line": "Siervo de los pobres,, (La,m,149)",
+      "line": "Siervo de los pobres,, (La,m,140)",
       "sC": "tc"
     },
     {
@@ -63,31 +64,31 @@
       "sC": "ta as"
     },
     {
-      "line": "ven,, (Si,7,17)",
+      "line": "ven,, (Si,7,0)",
       "sC": "tc"
     },
     {
       "line": "VEN, ",
-      "sC": "ta as a2"
+      "sC": "ta as señorJesus"
     },
     {
-      "line": "¡Señor Jesús!, (Mi,m,101)",
+      "line": "¡Señor Jesús!, (Mi,m,85)",
       "sC": "tc"
     },
     {
       "line": "¡SEÑOR JESÚS!, ",
-      "sC": "ta as a2"
+      "sC": "ta as señorJesus"
     },
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "El Espíritu dice: ¡Ven!, (Do,,10)(Mi,m,178)",
+      "line": "El Espíritu dice: ¡Ven!, (Do,,0)(Mi,m,190)",
       "sC": "tc"
     },
     {
-      "line": "El que escucha diga: ¡Ven!, (Do,,102)(Si,7,230)",
+      "line": "El que escucha diga: ¡Ven!, (Do,,95)(Si,7,225)",
       "sC": ""
     },
     {
@@ -99,81 +100,81 @@
       "sC": "adb1"
     },
     {
-      "line": "Ven,, (Mi,m,20)",
+      "line": "Ven,, (Mi,m,0)",
       "sC": "tc"
     },
     {
       "line": "VEN, ",
-      "sC": "ta as a2"
+      "sC": "ta as señorJesus"
     },
     {
-      "line": "amor mío,, (La,m,77)",
-      "sC": "tc"
+      "line": "amor mío,, (La,m,50)",
+      "sC": ""
     },
     {
       "line": "AMOR MÍO, ",
-      "sC": "ta as a2"
+      "sC": "as señorJesus"
     },
     {
-      "line": "ven,, (Si,7,17)",
+      "line": "ven,, (Si,7,0)",
       "sC": ""
     },
     {
       "line": "VEN, ",
-      "sC": "ta as a2"
+      "sC": "as señorJesus"
     },
     {
-      "line": "¡Señor Jesús!, (Mi,m,108)",
+      "line": "¡Señor Jesús!, (Mi,m,85)",
       "sC": ""
     },
     {
       "line": "¡SEÑOR JESÚS!, ",
-      "sC": "ta as a2"
+      "sC": "as señorJesus"
     },
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Calma,, (Mi,m,20)",
+      "line": "Calma,, (Mi,m,0)",
       "sC": "tc"
     },
     {
       "line": "CALMA, ",
-      "sC": "ta as a2"
+      "sC": "ta as señorJesus"
     },
     {
-      "line": "tú este fuego,, (La,m,92)",
+      "line": "tú este fuego,, (La,m,85)",
       "sC": ""
     },
     {
       "line": "TÚ ESTE FUEGO,",
-      "sC": "ta as a2"
+      "sC": "as señorJesus"
     },
     {
-      "line": "ven,, (Si,7,17)",
+      "line": "ven,, (Si,7,0)",
       "sC": ""
     },
     {
       "line": "VEN, ",
-      "sC": "ta as a2"
+      "sC": "as señorJesus"
     },
     {
-      "line": "¡Señor Jesús!, (Mi,m,100)",
+      "line": "¡Señor Jesús!, (Mi,m,85)",
       "sC": ""
     },
     {
       "line": "¡SEÑOR JESÚS!,",
-      "sC": "ta as a2"
+      "sC": "as señorJesus"
     }
   ],
   "lder": [
     {
-      "line": "La Esposa dice: ¡Ven!, (Do,,10)(Mi,m,176)",
+      "line": "La Esposa dice: ¡Ven!, (Do,,0)(Mi,m,190)",
       "sC": "tc"
     },
     {
-      "line": "Y el que escucha diga: ¡Ven!, (Do,,177)(Si,7,245)",
+      "line": "Y el que escucha diga: ¡Ven!, (Do,,110)(Si,7,240)",
       "sC": ""
     },
     {
@@ -185,36 +186,36 @@
       "sC": "adb1"
     },
     {
-      "line": "Vieni,, (Mi,m,20)",
+      "line": "Vieni,, (Mi,m,0)",
       "sC": "tc"
     },
     {
       "line": "VIENI, ",
-      "sC": "ta as a2"
+      "sC": "ta as señorJesus"
     },
     {
-      "line": "Figlio dell'uomo,, (La,m,114)",
+      "line": "Figlio dell'uomo,, (La,m,110)",
       "sC": ""
     },
     {
       "line": "FIGLIO DELL'UOMO, ",
-      "sC": "as a2"
+      "sC": "as señorJesus"
     },
     {
-      "line": "vieni,, (Si,7,17)",
+      "line": "vieni,, (Si,7,0)",
       "sC": ""
     },
     {
       "line": "VIENI, ",
-      "sC": "as a2"
+      "sC": "as señorJesus"
     },
     {
-      "line": "Signore Gesú!, (Mi,m,114)",
+      "line": "Signore Gesú!, (Mi,m,85)",
       "sC": ""
     },
     {
       "line": "SIGNORE GESÚ!, ",
-      "sC": "as a2"
+      "sC": "as señorJesus"
     },
     {
       "line": "",
@@ -226,7 +227,7 @@
     },
     {
       "line": "VIENS,",
-      "sC": "ta as a2"
+      "sC": "ta as señorJesus"
     },
     {
       "line": "Fils de l'homme, ",
@@ -234,7 +235,7 @@
     },
     {
       "line": "FILS DE L'HOMME, ",
-      "sC": "as a2"
+      "sC": "as señorJesus"
     },
     {
       "line": "viens, ",
@@ -242,7 +243,7 @@
     },
     {
       "line": "VIENS, ",
-      "sC": "as a2"
+      "sC": "as señorJesus"
     },
     {
       "line": "Seigneur Jesús! ",
@@ -250,35 +251,35 @@
     },
     {
       "line": "SEIGNEUR JESÚS! ",
-      "sC": "as a2"
+      "sC": "as señorJesus"
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": ""
     },
     {
       "line": "Come, ",
-      "sC": "tc t0 b1"
+      "sC": "tc t1 b1"
     },
     {
       "line": "COME, ",
-      "sC": "ta as a2 t0"
+      "sC": "ta as señorJesus"
     },
     {
       "line": "Son of the Man, ",
-      "sC": "t0 b1"
+      "sC": "b1"
     },
     {
       "line": "SON OF THE MAN, ",
-      "sC": "as a2 t0"
+      "sC": "as señorJesus"
     },
     {
       "line": "come, ",
-      "sC": "t0 b1"
+      "sC": "b1"
     },
     {
       "line": "COME, ",
-      "sC": "as a2 t0"
+      "sC": "as señorJesus"
     },
     {
       "line": "Lord Jesús! ",
@@ -286,98 +287,89 @@
     },
     {
       "line": "LORD JESÚS! ",
-      "sC": "as a2"
+      "sC": "as señorJesus"
     },
     {
       "line": "",
       "sC": "adb1"
     },
     {
-      "line": "Ven,, (Mi,m,20)",
+      "line": "Ven,, (Mi,m,0)",
       "sC": "tc"
     },
     {
       "line": "VEN, ",
-      "sC": "ta as a2"
+      "sC": "ta as señorJesus"
     },
     {
-      "line": "Hijo del Hombre,, (La,m,98)",
+      "line": "Hijo del Hombre,, (La,m,90)",
       "sC": ""
     },
     {
       "line": "HIJO DEL HOMBRE, ",
-      "sC": "as a2"
+      "sC": "as señorJesus"
     },
     {
-      "line": "¡Ven!, (Si,7,17)",
+      "line": "¡Ven!, (Si,7,10)",
       "sC": ""
     },
     {
       "line": "¡VEN!, ",
-      "sC": "as a2"
+      "sC": "as vhha2"
     },
     {
-      "line": "¡Ven! (Si,7,17)",
+      "line": "¡Ven! (Si,7,10)",
       "sC": "tc"
     },
     {
       "line": "¡VEN! ",
-      "sC": "as a4"
+      "sC": "as vhha3"
     },
     {
       "line": "¡Ven! ",
-      "sC": "a5"
+      "sC": "a5 vhha4"
     },
     {
       "line": "¡VEN! ",
-      "sC": "as a6"
+      "sC": "as vhha5"
     },
     {
       "line": "¡Ven! ",
-      "sC": "a7"
+      "sC": "vhha6"
     },
     {
       "line": "¡VEN! ... ",
-      "sC": "as a8"
+      "sC": "as vhha7 asterisco"
     },
-    {
-      "line": "",
-      "sC": "ast"
-    },
+
     {
       "line": "¡Señor! ",
       "sC": ""
     },
     {
       "line": "¡SEÑOR! ",
-      "sC": "as a9"
+      "sC": "as vhhb3"
     },
     {
       "line": "Signore! ",
-      "sC": "a10"
+      "sC": "vhhb4"
     },
     {
       "line": "SIGNORE! ... ",
-      "sC": "as a11"
+      "sC": "as vhhb5 asterisco"
     },
-    {
-      "line": "",
-      "sC": "ast1"
-    },
+
     {
       "line": "¡Ven! Vieni! Viens! Come! ¡Ven!, ",
-      "sC": ""
+      "sC": "asterisco"
     },
     {
       "line": "¡VEN! ... ",
-      "sC": "as a12"
+      "sC": "as vhhb6"
     },
+
     {
-      "line": "",
-      "sC": "ast2"
-    },
-    {
-      "line": "¡SEÑOR JESÚS!, (Mi,m,121)",
+      "line": "¡SEÑOR JESÚS!, (Mi,m,90)",
       "sC": "ta as"
     }
   ],

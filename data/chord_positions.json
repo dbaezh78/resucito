@@ -58890,5 +58890,620 @@
         ]
       }
     ]
+  },
+  "venespiritusanto": {
+    "lizq": [
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 14.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 21
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 18.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 18
+        }
+      ],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 19.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 17.5
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 14.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 21
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 14.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 20.5
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 14.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 21
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 14.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 21
+            }
+          ]
+        ]
+      }
+    ],
+    "lder": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 21
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 14.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 21
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 21
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 21
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Do",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa",
+            "type": "",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 21
+            }
+          ]
+        ]
+      },
+      []
+    ]
+  },
+  "venhijodelhombre": {
+    "lizq": [
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 14
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 13.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 14
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 8.5
+        }
+      ],
+      [],
+      [],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 19
+        }
+      ],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 9.5
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 22.5
+        }
+      ],
+      [],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 9
+        }
+      ],
+      [],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 8.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 8.5
+        }
+      ],
+      []
+    ],
+    "lder": [
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 17
+        }
+      ],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 11
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 24
+        }
+      ],
+      [],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 11
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 8.5
+        }
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 9
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 1
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 1
+        }
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 9
+        }
+      ]
+    ]
   }
 }

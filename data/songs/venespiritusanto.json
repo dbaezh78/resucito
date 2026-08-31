@@ -38,7 +38,7 @@
       "sC": "ta as"
     },
     {
-      "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+      "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,210)",
       "sC": "as"
     },
     {
@@ -69,29 +69,29 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,210)",
           "sC": "as"
         }
       ]
     },
     {
-      "line": "Ven, dulce refrigerio, ",
+      "line": "Ven, dulce refrigerio, (Do,,0)(Fa,,165)",
       "sC": "tc ptop0"
     },
     {
-      "line": "en la fatiga tú eres descanso; ",
+      "line": "en la fatiga tú eres descanso; (Mi,,245)",
       "sC": "ptop0"
     },
     {
-      "line": "en el calor tú eres nuestro alivio; ",
+      "line": "en el calor tú eres nuestro alivio; (Do,,0)(Fa,,295)",
       "sC": "ptop0"
     },
     {
-      "line": "en el llanto eres consuelo. ",
+      "line": "en el llanto eres consuelo. (Mi,,175)",
       "sC": "ptop0"
     },
     {
@@ -102,29 +102,29 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,210)",
           "sC": "as"
         }
       ]
     },
     {
-      "line": "Oh luz dichosísima, ",
+      "line": "Oh luz dichosísima, (Do,,0)(Fa,,185)",
       "sC": "tc ptop0"
     },
     {
-      "line": "inunda de tu resplandor, ",
+      "line": "inunda de tu resplandor, (Mi,,180)",
       "sC": "ptop0"
     },
     {
-      "line": "lo íntimo del corazón de tus fieles, ",
+      "line": "lo íntimo del corazón de tus fieles, (Do,,0)(Fa,,295)",
       "sC": "ptop0"
     },
     {
-      "line": "llega hasta el fondo del alma. ",
+      "line": "llega hasta el fondo del alma. (Mi,,260)",
       "sC": "ptop0"
     },
     {
@@ -135,7 +135,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
@@ -145,19 +145,19 @@
       ]
     },
     {
-      "line": "Sin tu luz nada hay puro en el hombre, ",
+      "line": "Sin tu luz nada hay puro en el hombre, (Do,,0)(Fa,,320)",
       "sC": "tc ptop0"
     },
     {
-      "line": "nada hay inocente. ",
+      "line": "nada hay inocente. (Mi,,135)",
       "sC": "ptop0"
     },
     {
-      "line": "Mira la fuerza del pecado, ",
+      "line": "Mira la fuerza del pecado, (Do,,0)(Fa,,195)",
       "sC": "ptop0"
     },
     {
-      "line": "cuando tú no estás con nosotros. ",
+      "line": "cuando tú no estás con nosotros. (Mi,,255)",
       "sC": "ptop0"
     },
     {
@@ -168,11 +168,11 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,210)",
           "sC": "as"
         }
       ]
@@ -180,19 +180,19 @@
   ],
   "lder": [
     {
-      "line": "Lava lo que está sucio, ",
+      "line": "Lava lo que está sucio, (Do,,0)(Fa,,185)",
       "sC": "tc ptop0"
     },
     {
-      "line": "riega lo que está árido, ",
+      "line": "riega lo que está árido, (Mi,,180)",
       "sC": "ptop0"
     },
     {
-      "line": "sana lo que está enfermo. ",
+      "line": "sana lo que está enfermo. (Do,,0)(Fa,,195)",
       "sC": "ptop0"
     },
     {
-      "line": "Convierte al duro y al rígido. ",
+      "line": "Convierte al duro y al rígido. (Mi,,240)",
       "sC": "ptop0"
     },
     {
@@ -203,7 +203,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
@@ -213,19 +213,19 @@
       ]
     },
     {
-      "line": "Inflama lo que está tibio, ",
+      "line": "Inflama lo que está tibio, (Do,,0)(Fa,,185)",
       "sC": "tc ptop0"
     },
     {
-      "line": "encamina al que se ha extraviado. ",
+      "line": "encamina al que se ha extraviado. (Mi,,265)",
       "sC": "ptop0"
     },
     {
-      "line": "Danos tus siete dones, ",
+      "line": "Danos tus siete dones, (Do,,0)(Fa,,195)",
       "sC": "ptop0"
     },
     {
-      "line": "danos tu amor y tu alegría. ",
+      "line": "danos tu amor y tu alegría. (Mi,,215)",
       "sC": "ptop0"
     },
     {
@@ -236,29 +236,29 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,210)",
           "sC": "as"
         }
       ]
     },
     {
-      "line": "Danos virtud y premio, ",
+      "line": "Danos virtud y premio, (Do,,0)(Fa,,185)",
       "sC": "tc ptop0"
     },
     {
-      "line": "danos la alegría de la salvación, ",
+      "line": "danos la alegría de la salvación, (Mi,,270)",
       "sC": "ptop0"
     },
     {
-      "line": "danos una muerte santa, ",
+      "line": "danos una muerte santa, (Do,,0)(Fa,,195)",
       "sC": "ptop0"
     },
     {
-      "line": "danos el gozo eterno. ",
+      "line": "danos el gozo eterno. (Mi,,175)",
       "sC": "ptop0"
     },
     {
@@ -269,29 +269,29 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,210)",
           "sC": "as"
         }
       ]
     },
     {
-      "line": "Danos sabiduría y entendimiento,, ",
+      "line": "Danos sabiduría y entendimiento,, (Do,,0)(Fa,,240)",
       "sC": "tc ptop0"
     },
     {
-      "line": "danos ciencia y piedad, ",
+      "line": "danos ciencia y piedad, (Mi,,180)",
       "sC": "ptop0"
     },
     {
-      "line": "danos consejo y fortaleza, ",
+      "line": "danos consejo y fortaleza, (Do,,0)(Fa,,195)",
       "sC": "ptop0"
     },
     {
-      "line": "danos el temor de Dios. ",
+      "line": "danos el temor de Dios. (Mi,,175)",
       "sC": "ptop0"
     },
     {
@@ -302,29 +302,29 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,210)",
           "sC": "as"
         }
       ]
     },
     {
-      "line": "Danos tus santos frutos: ",
+      "line": "Danos tus santos frutos: (Do,,0)(Fa,,185)",
       "sC": "tc ptop0"
     },
     {
-      "line": "danos paciencia y bondad, ",
+      "line": "danos paciencia y bondad, (Mi,,180)",
       "sC": "ptop0"
     },
     {
-      "line": "danos amor y alegría, ",
+      "line": "danos amor y alegría, (Do,,0)(Fa,,195)",
       "sC": "ptop0"
     },
     {
-      "line": "danos justicia y verdad. ",
+      "line": "danos justicia y verdad. (Mi,,175)",
       "sC": "ptop0"
     },
     {
@@ -335,11 +335,11 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,10)(Fa,,164)",
+      "triggerLine": "VEN, ESPÍRITU SANTO, (Do,,0)(Fa,,145)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,235)",
+          "line": "ENVÍA UN RAYO DE TU LUZ., (Mi,,210)",
           "sC": "as"
         }
       ]
