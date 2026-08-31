@@ -34,7 +34,7 @@
   "sig": "/src/index.html?canto=mariamadredelaiglesia",
   "lizq": [
     {
-      "line": "MARÍA DE JASNA GÓRA, (La,,10)",
+      "line": "MARÍA DE JASNA GÓRA, (La,,0)",
       "sC": "ta as"
     },
     {
@@ -42,10 +42,7 @@
       "sC": "as msm",
       "color": "rgb(255 0 0 / 42%)"
     },
-    {
-      "line": "",
-      "sC": "ast"
-    },
+
     {
       "line": "MATER ABSCONDITA,",
       "sC": "as"
@@ -55,11 +52,11 @@
       "sC": "as"
     },
     {
-      "line": "TU, REDEMPTORIS MATER,, (Sol,m,22) ",
+      "line": "TU, REDEMPTORIS MATER,, (Sol,m,0) ",
       "sC": "as"
     },
     {
-      "line": "ORA PRO NOBIS., (La,,122)",
+      "line": "ORA PRO NOBIS., (La,,80)",
       "sC": "as"
     },
     {
@@ -67,19 +64,19 @@
       "sC": "adb1"
     },
     {
-      "line": "Surge como Débora,, (Re,m,22)",
+      "line": "Surge como Débora,, (Re,m,0)",
       "sC": "tc"
     },
     {
-      "line": "sálvanos como Judit,, (Sol,m,23)(La,,186)",
+      "line": "sálvanos como Judit,, (Sol,m,0)(La,,165)",
       "sC": ""
     },
     {
-      "line": "canta como Ana,, (Sol,m,22)",
+      "line": "canta como Ana,, (Sol,m,0)",
       "sC": ""
     },
     {
-      "line": "intercede como Ester., (La,,191)",
+      "line": "intercede como Ester., (La,,250)",
       "sC": ""
     },
     {
@@ -90,7 +87,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "MARÍA DE JASNA GÓRA, (La,,10)",
+      "triggerLine": "MARÍA DE JASNA GÓRA, (La,,0)",
       "sC": "ta as",
       "lines": [
         {
@@ -98,10 +95,7 @@
           "sC": "as msm",
           "color": "rgb(255 0 0 / 42%)"
         },
-        {
-          "line": "",
-          "sC": "ast"
-        },
+
         {
           "line": "MATER ABSCONDITA,, ",
           "sC": "as"
@@ -111,11 +105,11 @@
           "sC": "as"
         },
         {
-          "line": "TU, REDEMPTORIS MATER,, (Sol,m,22)",
+          "line": "TU, REDEMPTORIS MATER,, (Sol,m,0)",
           "sC": "as"
         },
         {
-          "line": "ORA PRO NOBIS., (La,,122)",
+          "line": "ORA PRO NOBIS., (La,,90)",
           "sC": "as"
         }
       ]
@@ -125,11 +119,11 @@
       "sC": "adb1"
     },
     {
-      "line": "Madre del Cielo,, (Re,m,22)",
+      "line": "Madre del Cielo,, (Re,m,0)",
       "sC": "tc"
     },
     {
-      "line": "enséñanos a seguir las huellas de Cristo,, (Sol,m,22)",
+      "line": "enséñanos a seguir las huellas de Cristo,, (Sol,m,0)",
       "sC": ""
     },
     {
@@ -145,7 +139,7 @@
       "sC": ""
     },
     {
-      "line": "de la siempre Virgen María., (La,,251)",
+      "line": "de la siempre Virgen María., (La,,250)",
       "sC": ""
     },
     {
@@ -156,7 +150,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_2",
       "initialState": "collapsed",
-      "triggerLine": "MARÍA DE JASNA GÓRA, (La,,10)",
+      "triggerLine": "MARÍA DE JASNA GÓRA, (La,,0)",
       "sC": "ta as",
       "lines": [
         {
@@ -164,10 +158,7 @@
           "sC": "as msm",
           "color": "rgb(255 0 0 / 42%)"
         },
-        {
-          "line": "",
-          "sC": "ast"
-        },
+
         {
           "line": "MATER ABSCONDITA,, ",
           "sC": "as"
@@ -177,11 +168,11 @@
           "sC": "as"
         },
         {
-          "line": "TU, REDEMPTORIS MATER,, (Sol,m,22)",
+          "line": "TU, REDEMPTORIS MATER,, (Sol,m,0)",
           "sC": "as"
         },
         {
-          "line": "ORA PRO NOBIS., (La,,122)",
+          "line": "ORA PRO NOBIS., (La,,90)",
           "sC": "as"
         }
       ]

@@ -1655,29 +1655,89 @@ async function saveChordPositionsAction() {
     
     let localSaved = false;
     
-    // 1. Intentar guardado local en el archivo físico (Entorno de desarrollo)
-    try {
-      const response = await fetch('/api/save-positions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          songId: songId,
-          lizq: parsed.lizq,
-          lder: parsed.lder
-        })
-      });
-      if (response.ok) {
-        localSaved = true;
-        console.log("💾 Guardado local en JSON exitoso.");
+    // 1. Intentar guardado local en el archivo físico solo en entorno de desarrollo local (localhost / 127.0.0.1)
+    const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (isLocalDev) {
+      try {
+        const response = await fetch('/api/save-positions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            songId: songId,
+            lizq: parsed.lizq,
+            lder: parsed.lder
+          })
+        });
+        if (response.ok) {
+          localSaved = true;
+          console.log("💾 Guardado local en JSON exitoso.");
+        }
+      } catch (e) {
+        console.warn("⚠️ Servidor local no disponible. Guardando en Firebase Firestore.");
       }
-    } catch (e) {
-      console.warn("⚠️ Servidor local no disponible o producción. Guardando solo en Firebase Firestore.");
     }
     
     // 2. Guardar en Firebase Firestore (Posiciones globales de administrador)
     await publicarPosicionesGlobales(songId, parsed);
+    
+    // Comparar parsed contra defaultChordPositions previo o contra el JSON para detectar exactamente qué se movió
+    const baseObj = defaultChordPositions && defaultChordPositions[songId] ? defaultChordPositions[songId] : {
+      lizq: extractCurrentSongChords(currentCanto.lizq, 'lizq'),
+      lder: extractCurrentSongChords(currentCanto.lder, 'lder')
+    };
+
+    const changedChords = [];
+    ['lizq', 'lder'].forEach(s => {
+      if (parsed[s] && baseObj[s]) {
+        parsed[s].forEach((item, lIdx) => {
+          const baseItem = baseObj[s][lIdx];
+          if (item && item.type === 'collapsible-block' && baseItem && baseItem.type === 'collapsible-block') {
+            // Comparar triggerLine
+            if (item.triggerLine && baseItem.triggerLine) {
+              item.triggerLine.forEach((c, cIdx) => {
+                const baseC = baseItem.triggerLine[cIdx];
+                const basePos = baseC ? baseC.pos : undefined;
+                if (basePos !== undefined && basePos !== c.pos) {
+                  changedChords.push(`  └─ [${s.toUpperCase()} L:${lIdx+1} Trigger]: '${c.name}${c.type || ''}' movido de ${basePos * 10} a ${c.pos * 10}`);
+                }
+              });
+            }
+            // Comparar subLíneas
+            if (item.lines && baseItem.lines) {
+              item.lines.forEach((subL, sIdx) => {
+                const baseSubL = baseItem.lines[sIdx];
+                if (subL && baseSubL) {
+                  subL.forEach((c, cIdx) => {
+                    const baseC = baseSubL[cIdx];
+                    const basePos = baseC ? baseC.pos : undefined;
+                    if (basePos !== undefined && basePos !== c.pos) {
+                      changedChords.push(`  └─ [${s.toUpperCase()} L:${lIdx+1} Sub:${sIdx+1}]: '${c.name}${c.type || ''}' movido de ${basePos * 10} a ${c.pos * 10}`);
+                    }
+                  });
+                }
+              });
+            }
+          } else if (Array.isArray(item) && Array.isArray(baseItem)) {
+            item.forEach((c, cIdx) => {
+              const baseC = baseItem[cIdx];
+              const basePos = baseC ? baseC.pos : undefined;
+              if (basePos !== undefined && basePos !== c.pos) {
+                changedChords.push(`  └─ [${s.toUpperCase()} L:${lIdx+1}]: '${c.name}${c.type || ''}' movido de ${basePos * 10} a ${c.pos * 10}`);
+              }
+            });
+          }
+        });
+      }
+    });
+
+    if (changedChords.length > 0) {
+      console.log(`✅ [Acordes Guardados] Canto: ${currentCanto.title || songId} (ID: ${songId}) - ${changedChords.length} acorde(s) modificados:`);
+      changedChords.forEach(msg => console.log(msg));
+    } else {
+      console.log(`✅ [Acordes Guardados] Canto: ${currentCanto.title || songId} (ID: ${songId})`);
+    }
     
     // Actualizar base de datos en memoria y limpiar localStorage
     if (!defaultChordPositions) defaultChordPositions = {};
@@ -1829,8 +1889,13 @@ function saveChordPosition(side, lineIdx, subLineIdx, chordIdx, newPos) {
 
   const lineChords = getLine(customPositions);
   if (lineChords && lineChords[chordIdx]) {
+    const oldPos = lineChords[chordIdx].pos !== undefined ? lineChords[chordIdx].pos : 'base';
+    const noteName = lineChords[chordIdx].name || 'Nota';
     lineChords[chordIdx].pos = newPos;
     localStorage.setItem(customKey, JSON.stringify(customPositions));
+    
+    console.log(`🎵 [Acordes] ${currentCanto.title || songId} (${side.toUpperCase()} L:${lineIdx + 1}): '${noteName}' movido de posición ${oldPos * 10} a ${newPos * 10}`);
+    
     if (typeof guardarPosicionesEnNube === 'function') {
       guardarPosicionesEnNube(songId, customPositions);
     }
@@ -3727,9 +3792,27 @@ function setupEventListeners() {
   const origWarn = console.warn;
   const origErr = console.error;
 
+  function safeStringify(obj) {
+    if (obj === null || obj === undefined) return String(obj);
+    if (typeof obj !== 'object') return String(obj);
+    if (obj instanceof Error) return obj.stack || obj.message || String(obj);
+    try {
+      const seen = new WeakSet();
+      return JSON.stringify(obj, (key, value) => {
+        if (typeof value === 'object' && value !== null) {
+          if (seen.has(value)) return '[Circular]';
+          seen.add(value);
+        }
+        return value;
+      });
+    } catch (e) {
+      return String(obj);
+    }
+  }
+
   console.log = function(...args) {
     origLog.apply(console, args);
-    const msg = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+    const msg = args.map(safeStringify).join(' ');
     let cat = 'General';
     if (msg.includes('Buscador') || msg.includes('🔍')) cat = 'Buscador';
     else if (msg.includes('Firebase') || msg.includes('🔥') || msg.includes('Permisos')) cat = 'Firebase';
@@ -3739,13 +3822,13 @@ function setupEventListeners() {
 
   console.warn = function(...args) {
     origWarn.apply(console, args);
-    const msg = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+    const msg = args.map(safeStringify).join(' ');
     window.addAppLog('General', '⚠️ ' + msg);
   };
 
   console.error = function(...args) {
     origErr.apply(console, args);
-    const msg = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+    const msg = args.map(safeStringify).join(' ');
     window.addAppLog('General', '❌ ' + msg);
   };
 
