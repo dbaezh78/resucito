@@ -7,7 +7,7 @@
   <link rel="icon" href="img/ico.ico" type="image/x-icon">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#000000">
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/style.css?v=86">
   <link rel="stylesheet" href="src/styleCanto.css">
   <link rel="stylesheet" href="src/navegador.css">
 </head>
@@ -66,6 +66,31 @@
 
             
 
+          </div>
+        </div>
+
+        <!-- Barra de Filtros Exclusiva para Aclamaciones (Ciclos y Tiempos Litúrgicos) -->
+        <div id="aclamaciones-filter-bar" class="aclamaciones-filter-bar" style="display: none;">
+          <div class="aclamaciones-filter-group">
+            <span class="aclamaciones-filter-label">Ciclo:</span>
+            <div class="aclamaciones-pills" id="aclamaciones-ciclos-container">
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill active" data-ciclo="Ciclo A">Ciclo A</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo B">Ciclo B</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo C">Ciclo C</button>
+            </div>
+          </div>
+          <div class="aclamaciones-filter-group">
+            <span class="aclamaciones-filter-label">Tiempo:</span>
+            <div class="aclamaciones-pills" id="aclamaciones-tiempos-container">
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Adviento">Adviento</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Navidad">Navidad</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Cuaresma">Cuaresma</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Pascua">Pascua</button>
+              <button class="btn filter-pill aclamaciones-pill active" data-tiempo="Tiempo Ordinario">Ordinario</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Solemnidades y Fiestas">Fiestas</button>
+            </div>
           </div>
         </div>
       </div>
@@ -395,6 +420,6 @@
   <!-- MODAL: AJUSTES -->
   <!-- AJUSTES MODAL: Cargado dinámicamente desde data/ajustes_modal.html -->
   <!-- SCRIPT PRINCIPAL -->
-  <script type="module" src="src/main.js?v=80"></script>
+  <script type="module" src="src/main.js?v=86"></script>
 </body>
 </html>

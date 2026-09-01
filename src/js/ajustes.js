@@ -2819,8 +2819,272 @@ window.initAjustes = async function() {
     });
   }
 
+  // Submódulo Canto vs Liturgia
+  let currentCantoSubmodule = 'canto';
+  window.switchCantoSubmodule = function(submodule) {
+    currentCantoSubmodule = submodule;
+    document.querySelectorAll('.canto-subtab-btn').forEach(btn => {
+      const isCurrent = btn.dataset.subtab === submodule;
+      btn.classList.toggle('active', isCurrent);
+      btn.style.borderBottom = isCurrent ? '2.5px solid var(--accent-color)' : 'none';
+      btn.style.fontWeight = isCurrent ? '700' : '600';
+      btn.style.color = isCurrent ? 'var(--accent-color)' : 'var(--text-muted)';
+    });
+
+    const cantoContent = document.getElementById('canto-submodule-canto-content');
+    const liturgiaContent = document.getElementById('canto-submodule-liturgia-content');
+    if (cantoContent) cantoContent.style.display = submodule === 'canto' ? 'block' : 'none';
+    if (liturgiaContent) liturgiaContent.style.display = submodule === 'liturgia' ? 'block' : 'none';
+
+    if (submodule === 'liturgia') {
+      window.refreshLiturgiaStatus();
+    }
+  };
+
+  document.querySelectorAll('.canto-subtab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.switchCantoSubmodule(btn.dataset.subtab);
+    });
+  });
+
+  // --- Lógica del Módulo Liturgia (Ciclo, Tiempo, Semana y Firebase) ---
+  const liturgiaSemanasPorTiempo = {
+    'Adviento': [
+      { id: '1', name: 'Domingo I de Adviento' },
+      { id: '2', name: 'Domingo II de Adviento' },
+      { id: '3', name: 'Domingo III de Adviento (Gaudete)' },
+      { id: '4', name: 'Domingo IV de Adviento' }
+    ],
+    'Navidad': [
+      { id: '25dicmv', name: '25 Dic - Misa de la Vigilia' },
+      { id: '25dicmm', name: '25 Dic - Misa de Medianoche' },
+      { id: '25dicma', name: '25 Dic - Misa de la Aurora' },
+      { id: '25dicmd', name: '25 Dic - Misa del Día' },
+      { id: 'ssf', name: 'Sagrada Familia' },
+      { id: '1e', name: 'Santa María Madre de Dios (1 Ene)' },
+      { id: '6e', name: 'Epifanía del Señor (6 Ene)' }
+    ],
+    'Cuaresma': [
+      { id: 'ceniza', name: 'Miércoles de Ceniza' },
+      { id: '1', name: 'Domingo I de Cuaresma' },
+      { id: '2', name: 'Domingo II de Cuaresma' },
+      { id: '3', name: 'Domingo III de Cuaresma' },
+      { id: '4', name: 'Domingo IV de Cuaresma (Laetare)' },
+      { id: '5', name: 'Domingo V de Cuaresma' },
+      { id: '6', name: 'Domingo de Ramos' },
+      { id: 'js', name: 'Jueves Santo (Cena del Señor)' },
+      { id: 'vs', name: 'Viernes Santo (Pasión del Señor)' },
+      { id: 'ss', name: 'Sábado Santo' }
+    ],
+    'Pascua': [
+      { id: '1', name: 'Domingo de Pascua (Resurrección)' },
+      { id: '2', name: 'Domingo II de Pascua (Divina Misericordia)' },
+      { id: '3', name: 'Domingo III de Pascua' },
+      { id: '4', name: 'Domingo IV de Pascua (Buen Pastor)' },
+      { id: '5', name: 'Domingo V de Pascua' },
+      { id: '6', name: 'Domingo VI de Pascua' },
+      { id: 'asc', name: 'Ascensión del Señor' },
+      { id: 'pent', name: 'Domingo de Pentecostés' }
+    ],
+    'Tiempo Ordinario': [
+      { id: '1', name: 'Bautismo del Señor (Domingo I)' },
+      ...Array.from({ length: 33 }, (_, i) => {
+        const num = i + 2;
+        const romanos = ['II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII','XXIV','XXV','XXVI','XXVII','XXVIII','XXIX','XXX','XXXI','XXXII','XXXIII','XXXIV'];
+        return { id: String(num), name: `Domingo ${romanos[i] || num} del T. Ordinario` };
+      }),
+      { id: 'trinidad', name: 'Santísima Trinidad' },
+      { id: 'corpus', name: 'Corpus Christi' },
+      { id: 'corazon', name: 'Sagrado Corazón de Jesús' },
+      { id: '34', name: 'Jesucristo Rey del Universo (Semana XXXIV)' }
+    ],
+    'Solemnidades y Fiestas': [
+      { id: 'fiesta_generica', name: 'Fiesta / Solemnidad Especial' }
+    ]
+  };
+
+  window.actualizarSelectSemanasLiturgia = function() {
+    const selectTiempo = document.getElementById('liturgia-select-tiempo');
+    const selectSemana = document.getElementById('liturgia-select-semana');
+    if (!selectTiempo || !selectSemana) return;
+
+    const tiempo = selectTiempo.value;
+    selectSemana.innerHTML = '<option value="auto">Automático (Según Fecha)</option>';
+
+    if (tiempo !== 'auto' && liturgiaSemanasPorTiempo[tiempo]) {
+      liturgiaSemanasPorTiempo[tiempo].forEach(item => {
+        const opt = document.createElement('option');
+        opt.value = item.id;
+        opt.textContent = item.name;
+        selectSemana.appendChild(opt);
+      });
+    }
+  };
+
+  window.refreshLiturgiaStatus = function() {
+    const label = document.getElementById('liturgia-status-label');
+    const badge = document.getElementById('liturgia-mode-badge');
+    const selectCiclo = document.getElementById('liturgia-select-ciclo');
+    const selectTiempo = document.getElementById('liturgia-select-tiempo');
+    const selectSemana = document.getElementById('liturgia-select-semana');
+
+    const overrideStr = localStorage.getItem('liturgia_override');
+    let override = null;
+    if (overrideStr) {
+      try {
+        override = JSON.parse(overrideStr);
+        // Verificar si expiró
+        if (override.expiresAt && Date.now() > override.expiresAt) {
+          localStorage.removeItem('liturgia_override');
+          override = null;
+        }
+      } catch (e) {
+        override = null;
+      }
+    }
+
+    if (override && override.active) {
+      if (label) label.textContent = `${override.semanaNombre || override.tiempo} (${override.ciclo})`;
+      if (badge) {
+        badge.textContent = 'Manual (Esta Semana)';
+        badge.style.background = '#d01212';
+        badge.style.color = '#fff';
+      }
+      if (selectCiclo) selectCiclo.value = override.ciclo || 'auto';
+      if (selectTiempo) {
+        selectTiempo.value = override.tiempo || 'auto';
+        window.actualizarSelectSemanasLiturgia();
+      }
+      if (selectSemana) selectSemana.value = override.semanaId || 'auto';
+    } else {
+      const currentId = (typeof window.obtenerIdAclamacionSemanaActual === 'function') 
+        ? window.obtenerIdAclamacionSemanaActual() : 'aetos22a';
+      const info = (typeof window.clasificarAclamacion === 'function') 
+        ? window.clasificarAclamacion({ id: currentId, title: 'Semana Actual', subtitle: '' })
+        : { celebracion: 'Domingo XXII del T. Ordinario', ciclo: 'Ciclo A' };
+
+      if (label) label.textContent = `${info.celebracion} (${info.ciclo})`;
+      if (badge) {
+        badge.textContent = 'Automático (Oficial)';
+        badge.style.background = '#eab308';
+        badge.style.color = '#000';
+      }
+    }
+  };
+
+  const selectTiempoEl = document.getElementById('liturgia-select-tiempo');
+  if (selectTiempoEl) {
+    selectTiempoEl.addEventListener('change', window.actualizarSelectSemanasLiturgia);
+  }
+
+  const btnGuardarLiturgia = document.getElementById('btn-guardar-liturgia');
+  if (btnGuardarLiturgia) {
+    btnGuardarLiturgia.addEventListener('click', async () => {
+      const ciclo = document.getElementById('liturgia-select-ciclo')?.value || 'auto';
+      const tiempo = document.getElementById('liturgia-select-tiempo')?.value || 'auto';
+      const semanaId = document.getElementById('liturgia-select-semana')?.value || 'auto';
+      const semanaNombre = document.getElementById('liturgia-select-semana')?.selectedOptions[0]?.textContent || '';
+
+      if (ciclo === 'auto' && tiempo === 'auto' && semanaId === 'auto') {
+        localStorage.removeItem('liturgia_override');
+        try {
+          await setDoc(doc(db, 'config', 'liturgia'), { active: false, updatedAt: Date.now() });
+        } catch (e) {
+          console.warn('Error al guardar en Firebase:', e);
+        }
+        window.refreshLiturgiaStatus();
+        if (typeof window.handleSearchAndFilters === 'function') window.handleSearchAndFilters();
+        alert('Configuración Litúrgica restablecida a modo Automático.');
+        return;
+      }
+
+      // Calcular fecha de expiración: Próximo sábado a las 3:00 PM (15:00)
+      const now = new Date();
+      const nextSat = new Date(now);
+      const daysUntilSat = (6 - now.getDay() + 7) % 7 || 7;
+      nextSat.setDate(now.getDate() + daysUntilSat);
+      nextSat.setHours(15, 0, 0, 0);
+
+      // Determinar ID del canto de aclamación correspondiente
+      let songId = '';
+      let cicloLetra = (ciclo === 'Ciclo A' ? 'a' : ciclo === 'Ciclo B' ? 'b' : ciclo === 'Ciclo C' ? 'c' : 's');
+      if (tiempo === 'Adviento') songId = `aetas${semanaId}${cicloLetra}`;
+      else if (tiempo === 'Navidad') songId = `aetns${semanaId}${cicloLetra}`;
+      else if (tiempo === 'Cuaresma') songId = `aetcs${semanaId}${cicloLetra}`;
+      else if (tiempo === 'Pascua') songId = `aetps${semanaId}${cicloLetra}`;
+      else if (tiempo === 'Tiempo Ordinario') songId = `aetos${semanaId}${cicloLetra}`;
+      else songId = `aetfs1s`;
+
+      const overrideData = {
+        active: true,
+        ciclo,
+        tiempo,
+        semanaId,
+        semanaNombre,
+        songId,
+        expiresAt: nextSat.getTime(),
+        updatedAt: Date.now()
+      };
+
+      localStorage.setItem('liturgia_override', JSON.stringify(overrideData));
+
+      try {
+        await setDoc(doc(db, 'config', 'liturgia'), overrideData);
+      } catch (e) {
+        console.warn('Error al guardar en Firebase:', e);
+      }
+
+      window.refreshLiturgiaStatus();
+      if (typeof window.handleSearchAndFilters === 'function') window.handleSearchAndFilters();
+      alert('Configuración Litúrgica guardada exitosamente. Se aplicará durante esta semana.');
+    });
+  }
+
+  const btnResetLiturgia = document.getElementById('btn-reset-liturgia');
+  if (btnResetLiturgia) {
+    btnResetLiturgia.addEventListener('click', async () => {
+      localStorage.removeItem('liturgia_override');
+      const selectCiclo = document.getElementById('liturgia-select-ciclo');
+      const selectTiempo = document.getElementById('liturgia-select-tiempo');
+      const selectSemana = document.getElementById('liturgia-select-semana');
+      if (selectCiclo) selectCiclo.value = 'auto';
+      if (selectTiempo) selectTiempo.value = 'auto';
+      if (selectSemana) selectSemana.value = 'auto';
+
+      try {
+        await setDoc(doc(db, 'config', 'liturgia'), { active: false, updatedAt: Date.now() });
+      } catch (e) {
+        console.warn('Error al restablecer en Firebase:', e);
+      }
+
+      window.refreshLiturgiaStatus();
+      if (typeof window.handleSearchAndFilters === 'function') window.handleSearchAndFilters();
+      alert('Configuración Litúrgica restablecida a modo Automático.');
+    });
+  }
+
+  // Cargar configuración de Firebase al inicio si existe
+  async function cargarLiturgiaDesdeFirebase() {
+    try {
+      const snap = await getDoc(doc(db, 'config', 'liturgia'));
+      if (snap.exists()) {
+        const data = snap.data();
+        if (data && data.active && (!data.expiresAt || Date.now() <= data.expiresAt)) {
+          localStorage.setItem('liturgia_override', JSON.stringify(data));
+          if (typeof window.handleSearchAndFilters === 'function') window.handleSearchAndFilters();
+        } else if (data && data.expiresAt && Date.now() > data.expiresAt) {
+          localStorage.removeItem('liturgia_override');
+        }
+      }
+    } catch (e) {
+      console.warn('Error al consultar config/liturgia de Firebase:', e);
+    }
+  }
+  cargarLiturgiaDesdeFirebase();
+
   // Forzar el estado por defecto al iniciar
   window.switchThemeSubmodule('visual');
   window.switchThemeFunctionModule('toolbar');
   window.switchGeneralSubmodule('comun');
+  window.switchCantoSubmodule('canto');
 };

@@ -56,7 +56,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Mi,m,10)(Re,,80)(Mi,m,150)",
+          "line": "(Mi,m,0)(Re,,10)(Mi,m,20)",
           "sC": "bnota"
         },
         {
@@ -115,7 +115,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Do,,10)(Mi,,80)(La,m,150)",
+          "line": "(Do,,0)(Mi,,10)(La,m,20)",
           "sC": "bnota"
         },
         {
@@ -157,11 +157,11 @@
           "sC": "adb1"
         },
         {
-          "line": "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)",
+          "line": "Aleluya, aleluya, aleluya., (Mi,m,0)(Re,,122)(Mi,m,232)",
           "sC": "tc"
         },
         {
-          "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)",
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,130)(Mi,m,225)",
           "sC": "ta as"
         },
         {
@@ -169,7 +169,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Mi,m,10)(La,m,80)(Mi,m,150)",
+          "line": "(Mi,m,0)(La,m,10)(Mi,m,20)",
           "sC": "bnota"
         },
         {

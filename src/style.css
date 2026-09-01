@@ -523,6 +523,149 @@ header {
   color: white !important;
 }
 
+/* --- Barra de Filtros para Aclamaciones --- */
+.aclamaciones-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 12px 14px;
+  background: var(--panel-bg, #ffffff);
+  border: 1px solid var(--panel-border, #e2e8f0);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.aclamaciones-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.aclamaciones-filter-label {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text-color, #1e293b);
+  min-width: 55px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.aclamaciones-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.aclamaciones-pill {
+  padding: 5px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: 20px;
+  background: var(--input-bg, #f1f5f9);
+  color: var(--text-muted, #64748b);
+  border: 1px solid var(--panel-border, #cbd5e1);
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.aclamaciones-pill:hover {
+  background: var(--hover-bg, #e2e8f0);
+  color: var(--text-color, #0f172a);
+}
+
+.aclamaciones-pill.active {
+  background: var(--accent-color, #d01212) !important;
+  color: #ffffff !important;
+  border-color: var(--accent-color, #d01212) !important;
+  box-shadow: 0 2px 6px rgba(208, 18, 18, 0.3);
+}
+
+/* Badge especial de Aclamaciones en tarjetas */
+.badge-aclamacion-ciclo {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.badge-aclamacion-tiempo {
+  background-color: #d01212 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+/* Destacado para la semana litúrgica actual en Aclamaciones */
+.songs-grid .song-card.canto-semana-actual,
+.songs-grid.style-simple .song-card.canto-semana-actual,
+.songs-grid.style-cards .song-card.canto-semana-actual,
+.songs-grid.style-detailed .song-card.canto-semana-actual {
+  border: 2px solid #eab308 !important;
+  border-left: 10px solid #eab308 !important;
+  background-color: #fffef2 !important;
+  border-radius: 8px !important;
+  margin-bottom: 16px !important;
+  box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.35), 0 4px 12px rgba(234, 179, 8, 0.15) !important;
+  position: relative;
+  z-index: 5;
+}
+
+body.theme-dark .songs-grid .song-card.canto-semana-actual,
+body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
+  border: 2px solid #eab308 !important;
+  border-left: 10px solid #eab308 !important;
+  background-color: #2a2205 !important;
+  box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.35), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+.badge-semana-actual {
+  background-color: #eab308 !important;
+  color: #000000 !important;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.tag-semana-actual-simple {
+  font-size: 0.75em;
+  font-weight: 800;
+  color: #ca8a04;
+  background: rgba(234, 179, 8, 0.18);
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* Separador debajo de la aclamación de la semana actual */
+.aclamacion-separator-wrapper {
+  grid-column: 1 / -1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0 12px 0;
+  user-select: none;
+}
+
+.aclamacion-separator-line {
+  flex-grow: 1;
+  height: 1px;
+  background: var(--panel-border, #e2e8f0);
+}
+
+.aclamacion-separator-text {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted, #64748b);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 12px;
+  background: var(--input-bg, #f1f5f9);
+  border-radius: 12px;
+  border: 1px solid var(--panel-border, #cbd5e1);
+}
+
 /* --- Pie de Página del Canto (Visor Footer Bar) --- */
 .viewer-song-footer-bar {
   display: flex;

@@ -65,6 +65,21 @@
                 Abrir Página
               </a>
             </div>
+
+            <!-- Tarjeta para cliturgico.html -->
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: rgba(0,0,0,0.02); border: 1px solid var(--panel-border); border-radius: 12px; gap: 12px; flex-wrap: wrap;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span class="material-symbols-outlined" style="font-size: 1.8rem; color: var(--accent-color);">church</span>
+                <div>
+                  <h5 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Esquema Calendario Litúrgico</h5>
+                  <p style="margin: 2px 0 0 0; font-size: 0.78rem; color: var(--text-muted);">Guía completa de Ciclos A, B, C, tiempos litúrgicos y aclamaciones por semana.</p>
+                </div>
+              </div>
+              <a href="cliturgico.html" class="btn theme-btn" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; font-size: 0.85rem; font-weight: 700; text-decoration: none; border-radius: 8px;">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem;">open_in_new</span>
+                Abrir Página
+              </a>
+            </div>
           </div>
         </div>
 
@@ -1131,119 +1146,230 @@
 
         <!-- Panel Canto -->
         <div id="settings-panel-canto" class="settings-panel-group" style="display: none; padding: 16px;">
-          <!-- Fila Indicador BIS (arriba) -->
-          <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); margin-bottom: 0px;">
-            <div class="setting-label">
-              <h4>Indicador BIS</h4>
-            </div>
-            <div class="setting-control">
-              <label class="toggle-switch">
-                <input type="checkbox" id="bis-toggle">
-                <span class="toggle-slider"></span>
-              </label>
-            </div>
+          <!-- Selector de Submódulos dentro de Canto (Canto, Liturgia) -->
+          <div class="canto-subtabs" style="display: flex; gap: 8px; border-bottom: 1.5px solid var(--panel-border); padding-bottom: 12px; margin-bottom: 16px;">
+            <button class="canto-subtab-btn active" data-subtab="canto" id="canto-subtab-canto-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; border-bottom: 2.5px solid var(--accent-color); font-weight: 700; color: var(--accent-color); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">music_note</span>
+              Canto
+            </button>
+            <button class="canto-subtab-btn" data-subtab="liturgia" id="canto-subtab-liturgia-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">church</span>
+              Liturgia
+            </button>
           </div>
 
-          <!-- Fila Loop Reproducción -->
-          <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); margin-bottom: 0px;">
-            <div class="setting-label">
-              <h4>Bucle de Reproducción</h4>
-              <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Volver a reproducir automáticamente al terminar</p>
-            </div>
-            <div class="setting-control">
-              <label class="toggle-switch">
-                <input type="checkbox" id="audio-loop-toggle">
-                <span class="toggle-slider"></span>
-              </label>
-            </div>
-          </div>
-
-          <!-- Fila Ecualizador (Colapsable) -->
-          <div class="setting-row" id="eq-accordion-container" style="flex-direction: column; align-items: stretch; border-bottom: 1px solid var(--panel-border); padding: 12px 0; margin-bottom: 12px;">
-            <div style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;" id="eq-accordion-header">
+          <!-- Contenido Submódulo: Canto -->
+          <div id="canto-submodule-canto-content" class="canto-submodule-panel" style="display: block;">
+            <!-- Fila Indicador BIS (arriba) -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); margin-bottom: 0px;">
               <div class="setting-label">
-                <h4 style="margin: 0; display: flex; align-items: center; gap: 8px;">
-                  <span class="material-symbols-outlined" style="font-size: 1.2rem; color: var(--accent-color, #d01212);">equalizer</span>
-                  Ecualizador de Audio
-                </h4>
+                <h4>Indicador BIS</h4>
               </div>
-              <span id="eq-collapse-icon" class="material-symbols-outlined" style="transition: transform 0.2s; color: var(--text-muted);">expand_more</span>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="bis-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
             </div>
-            
-            <div id="eq-controls-container" style="display: none; flex-direction: column; gap: 12px; margin-top: 12px; padding: 4px 2px;">
-              <!-- Bajos -->
-              <div style="display: flex; flex-direction: column; gap: 4px;">
-                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
-                  <span>Bajos (Bass)</span>
-                  <span id="eq-bass-val" style="color: var(--accent-color, #d01212);">0 dB</span>
-                </div>
-                <input type="range" id="eq-bass-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
-              </div>
-              
-              <!-- Medios -->
-              <div style="display: flex; flex-direction: column; gap: 4px;">
-                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
-                  <span>Medios (Mid)</span>
-                  <span id="eq-mid-val" style="color: var(--accent-color, #d01212);">0 dB</span>
-                </div>
-                <input type="range" id="eq-mid-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
-              </div>
-              
-              <!-- Agudos -->
-              <div style="display: flex; flex-direction: column; gap: 4px;">
-                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
-                  <span>Agudos (Treble)</span>
-                  <span id="eq-treble-val" style="color: var(--accent-color, #d01212);">0 dB</span>
-                </div>
-                <input type="range" id="eq-treble-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
-              </div>
-              
-              <button id="eq-reset-btn" class="btn" style="align-self: flex-end; font-size: 0.75rem; padding: 4px 10px; background: var(--panel-border, #eee); border: none; border-radius: 6px; color: var(--text-color); cursor: pointer; font-weight: bold;">Restablecer</button>
-            </div>
-          </div>
 
-          <!-- Dos columnas: Desplazamiento e Incremento (Mitad y Mitad) -->
-          <div class="cScroll">
-            
-            <!-- Columna Desplazamiento Canto (Lado Izquierdo) -->
-            <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
-              <div style="display: flex; align-items: flex-end; justify-content: space-between; min-height: 48px;">
-                <span style="font-weight: 700; font-size: 1rem; color: var(--text-color); max-width: 130px; line-height: 1.2;">Desplazamiento</span>
-                <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
-                  <div style="display: flex; align-items: center; gap: 4px;">
-                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); white-space: nowrap;">Aumentar a:</span>
-                    <input type="number" id="scroll-interval-limit" min="1" value="1000" class="despClass">
+            <!-- Fila Loop Reproducción -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border); margin-bottom: 0px;">
+              <div class="setting-label">
+                <h4>Bucle de Reproducción</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Volver a reproducir automáticamente al terminar</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="audio-loop-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Fila Ecualizador (Colapsable) -->
+            <div class="setting-row" id="eq-accordion-container" style="flex-direction: column; align-items: stretch; border-bottom: 1px solid var(--panel-border); padding: 12px 0; margin-bottom: 12px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;" id="eq-accordion-header">
+                <div class="setting-label">
+                  <h4 style="margin: 0; display: flex; align-items: center; gap: 8px;">
+                    <span class="material-symbols-outlined" style="font-size: 1.2rem; color: var(--accent-color, #d01212);">equalizer</span>
+                    Ecualizador de Audio
+                  </h4>
+                </div>
+                <span id="eq-collapse-icon" class="material-symbols-outlined" style="transition: transform 0.2s; color: var(--text-muted);">expand_more</span>
+              </div>
+              
+              <div id="eq-controls-container" style="display: none; flex-direction: column; gap: 12px; margin-top: 12px; padding: 4px 2px;">
+                <!-- Bajos -->
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
+                    <span>Bajos (Bass)</span>
+                    <span id="eq-bass-val" style="color: var(--accent-color, #d01212);">0 dB</span>
                   </div>
-                  <input type="number" id="scroll-interval-input" min="1" max="1000" value="40" style="width: 55px; text-align: center; padding: 4px; border: 1px solid var(--panel-border); border-radius: 6px; background: #fff; color: #000; font-weight: bold; font-size: 0.95rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                  <input type="range" id="eq-bass-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
                 </div>
-              </div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <button id="scroll-interval-minus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">-</button>
-                <input type="range" id="scroll-interval-slider" min="1" max="1000" value="40" style="flex-grow: 1; accent-color: #d01212; height: 4px; border-radius: 2px; cursor: pointer;">
-                <button id="scroll-interval-plus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">+</button>
-              </div>
-            </div>
-
-            <!-- Columna Incremento Scroll (Lado Derecho) -->
-            <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
-              <div style="display: flex; align-items: flex-end; justify-content: space-between; min-height: 48px;">
-                <span style="font-weight: 700; font-size: 1rem; color: var(--text-color); max-width: 140px; line-height: 1.2;">Incremento</span>
-                <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
-                  <div style="display: flex; align-items: center; gap: 4px;">
-                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); white-space: nowrap;">Aumentar a:</span>
-                    <input type="number" id="scroll-step-limit" min="1" value="100" class="despClass">
+                
+                <!-- Medios -->
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
+                    <span>Medios (Mid)</span>
+                    <span id="eq-mid-val" style="color: var(--accent-color, #d01212);">0 dB</span>
                   </div>
-                  <input type="number" id="scroll-step-input" min="1" max="100" value="1" style="width: 55px; text-align: center; padding: 4px; border: 1px solid var(--panel-border); border-radius: 6px; background: #fff; color: #000; font-weight: bold; font-size: 0.95rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                  <input type="range" id="eq-mid-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
                 </div>
-              </div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <button id="scroll-step-minus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">-</button>
-                <input type="range" id="scroll-step-slider" min="1" max="100" value="1" style="flex-grow: 1; accent-color: #d01212; height: 4px; border-radius: 2px; cursor: pointer;">
-                <button id="scroll-step-plus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">+</button>
+                
+                <!-- Agudos -->
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-color);">
+                    <span>Agudos (Treble)</span>
+                    <span id="eq-treble-val" style="color: var(--accent-color, #d01212);">0 dB</span>
+                  </div>
+                  <input type="range" id="eq-treble-slider" min="-12" max="12" value="0" step="1" style="accent-color: var(--accent-color, #d01212); cursor: pointer; width: 100%;">
+                </div>
+                
+                <button id="eq-reset-btn" class="btn" style="align-self: flex-end; font-size: 0.75rem; padding: 4px 10px; background: var(--panel-border, #eee); border: none; border-radius: 6px; color: var(--text-color); cursor: pointer; font-weight: bold;">Restablecer</button>
               </div>
             </div>
 
-          </div>
+            <!-- Dos columnas: Desplazamiento e Incremento (Mitad y Mitad) -->
+            <div class="cScroll">
+              
+              <!-- Columna Desplazamiento Canto (Lado Izquierdo) -->
+              <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+                <div style="display: flex; align-items: flex-end; justify-content: space-between; min-height: 48px;">
+                  <span style="font-weight: 700; font-size: 1rem; color: var(--text-color); max-width: 130px; line-height: 1.2;">Desplazamiento</span>
+                  <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
+                    <div style="display: flex; align-items: center; gap: 4px;">
+                      <span style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); white-space: nowrap;">Aumentar a:</span>
+                      <input type="number" id="scroll-interval-limit" min="1" value="1000" class="despClass">
+                    </div>
+                    <input type="number" id="scroll-interval-input" min="1" max="1000" value="40" style="width: 55px; text-align: center; padding: 4px; border: 1px solid var(--panel-border); border-radius: 6px; background: #fff; color: #000; font-weight: bold; font-size: 0.95rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <button id="scroll-interval-minus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">-</button>
+                  <input type="range" id="scroll-interval-slider" min="1" max="1000" value="40" style="flex-grow: 1; accent-color: #d01212; height: 4px; border-radius: 2px; cursor: pointer;">
+                  <button id="scroll-interval-plus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">+</button>
+                </div>
+              </div>
+
+              <!-- Columna Incremento Scroll (Lado Derecho) -->
+              <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+                <div style="display: flex; align-items: flex-end; justify-content: space-between; min-height: 48px;">
+                  <span style="font-weight: 700; font-size: 1rem; color: var(--text-color); max-width: 140px; line-height: 1.2;">Incremento</span>
+                  <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
+                    <div style="display: flex; align-items: center; gap: 4px;">
+                      <span style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); white-space: nowrap;">Aumentar a:</span>
+                      <input type="number" id="scroll-step-limit" min="1" value="100" class="despClass">
+                    </div>
+                    <input type="number" id="scroll-step-input" min="1" max="100" value="1" style="width: 55px; text-align: center; padding: 4px; border: 1px solid var(--panel-border); border-radius: 6px; background: #fff; color: #000; font-weight: bold; font-size: 0.95rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <button id="scroll-step-minus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">-</button>
+                  <input type="range" id="scroll-step-slider" min="1" max="100" value="1" style="flex-grow: 1; accent-color: #d01212; height: 4px; border-radius: 2px; cursor: pointer;">
+                  <button id="scroll-step-plus-btn" class="btn" style="width: 32px; height: 32px; min-width: 32px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; border-radius: 6px; background: #e0e5eb; border: none; color: #333; cursor: pointer;">+</button>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- Fin de canto-submodule-canto-content -->
+
+          <!-- Contenido Submódulo: Liturgia -->
+          <div id="canto-submodule-liturgia-content" class="canto-submodule-panel" style="display: none;">
+            <div style="margin-bottom: 16px;">
+              <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                <span class="material-symbols-outlined" style="color: var(--accent-color);">church</span>
+                Ajuste del Tiempo Litúrgico Actual
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">
+                Puedes fijar manualmente el ciclo, tiempo o fiesta para la semana actual. Al pasar la semana volverá automáticamente al orden normal del calendario.
+              </p>
+            </div>
+
+            <!-- Estado Actual -->
+            <div id="liturgia-current-status-box" style="padding: 12px 16px; border-radius: 10px; background: rgba(234, 179, 8, 0.1); border: 1.5px solid #eab308; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+              <div>
+                <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #854d0e; display: block;">Semana en Uso:</span>
+                <strong id="liturgia-status-label" style="font-size: 0.95rem; color: var(--text-color);">Cargando...</strong>
+              </div>
+              <span id="liturgia-mode-badge" class="badge" style="background: #eab308; color: #000; font-weight: 700;">Automático</span>
+            </div>
+
+            <!-- Selectores de Configuración Litúrgica -->
+            <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px;">
+              <!-- Selector Ciclo -->
+              <div class="setting-row" style="margin-bottom: 0; padding: 10px 0; border-bottom: 1px solid var(--panel-border);">
+                <div class="setting-label">
+                  <h4 style="margin: 0; font-size: 0.9rem;">Ciclo Litúrgico</h4>
+                </div>
+                <div class="setting-control" style="flex: 1.5;">
+                  <select id="liturgia-select-ciclo" class="theme-select" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600;">
+                    <option value="auto">Automático (Según Fecha)</option>
+                    <option value="Ciclo A">Ciclo A</option>
+                    <option value="Ciclo B">Ciclo B</option>
+                    <option value="Ciclo C">Ciclo C</option>
+                    <option value="Fiesta">Fiesta / Solemnidad</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Selector Tiempo -->
+              <div class="setting-row" style="margin-bottom: 0; padding: 10px 0; border-bottom: 1px solid var(--panel-border);">
+                <div class="setting-label">
+                  <h4 style="margin: 0; font-size: 0.9rem;">Tiempo Litúrgico</h4>
+                </div>
+                <div class="setting-control" style="flex: 1.5;">
+                  <select id="liturgia-select-tiempo" class="theme-select" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600;">
+                    <option value="auto">Automático (Según Fecha)</option>
+                    <option value="Adviento">Adviento</option>
+                    <option value="Navidad">Navidad</option>
+                    <option value="Cuaresma">Cuaresma</option>
+                    <option value="Pascua">Pascua</option>
+                    <option value="Tiempo Ordinario">Tiempo Ordinario</option>
+                    <option value="Solemnidades y Fiestas">Solemnidades y Fiestas</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Selector Semana / Celebración -->
+              <div class="setting-row" style="margin-bottom: 0; padding: 10px 0; border-bottom: 1px solid var(--panel-border);">
+                <div class="setting-label">
+                  <h4 style="margin: 0; font-size: 0.9rem;">Semana / Celebración</h4>
+                </div>
+                <div class="setting-control" style="flex: 1.5;">
+                  <select id="liturgia-select-semana" class="theme-select" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600;">
+                    <option value="auto">Automático (Según Fecha)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div style="display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; margin-bottom: 20px;">
+              <button id="btn-reset-liturgia" class="btn" style="padding: 8px 16px; border: 1px solid var(--panel-border); font-size: 0.85rem; font-weight: 600; border-radius: 8px;">
+                Restablecer a Automático
+              </button>
+              <button id="btn-guardar-liturgia" class="btn theme-btn" style="padding: 8px 18px; font-size: 0.85rem; font-weight: 700; border-radius: 8px; background: var(--accent-color, #d01212); color: #fff;">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem; vertical-align: middle;">save</span>
+                Guardar en Cloud
+              </button>
+            </div>
+
+            <!-- Enlace a Esquema Completo -->
+            <div style="padding: 14px 16px; background: rgba(0,0,0,0.02); border: 1px solid var(--panel-border); border-radius: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span class="material-symbols-outlined" style="color: var(--accent-color); font-size: 1.5rem;">auto_stories</span>
+                <div>
+                  <h5 style="margin: 0; font-size: 0.9rem; font-weight: 700;">Ver Esquema Litúrgico Completo</h5>
+                  <p style="margin: 2px 0 0 0; font-size: 0.75rem; color: var(--text-muted);">Tabla interactiva con todos los tiempos, semanas y ciclos (cliturgico.html)</p>
+                </div>
+              </div>
+              <a href="cliturgico.html" class="btn theme-btn" style="padding: 6px 14px; font-size: 0.8rem; font-weight: 700; border-radius: 6px; text-decoration: none;">
+                Abrir Esquema
+              </a>
+            </div>
+          </div><!-- Fin de canto-submodule-liturgia-content -->
         </div>
 
         <!-- Panel Usuario (con Submódulos Cuenta y Acceso) -->

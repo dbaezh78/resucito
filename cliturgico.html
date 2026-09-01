@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Calendario y Esquema Litúrgico - Aclamaciones</title>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <style>
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-color, #f8fafc);
+      color: var(--text-color, #1e293b);
+    }
+    .liturgia-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .liturgia-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--panel-border, #e2e8f0);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .liturgia-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .liturgia-title h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: var(--accent-color, #d01212);
+      font-weight: 800;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: var(--accent-color, #d01212);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .btn-back:hover {
+      opacity: 0.9;
+    }
+    .season-card {
+      background: var(--panel-bg, #ffffff);
+      border: 1px solid var(--panel-border, #e2e8f0);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .season-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1.5px solid var(--panel-border, #e2e8f0);
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+    .season-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .season-badge {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      color: #fff;
+    }
+    .badge-adviento { background: #6b21a8; }
+    .badge-navidad { background: #eab308; color: #000; }
+    .badge-cuaresma { background: #7e22ce; }
+    .badge-pascua { background: #ea580c; }
+    .badge-ordinario { background: #16a34a; }
+    .badge-fiestas { background: #dc2626; }
+
+    .weeks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 10px;
+    }
+    .week-item {
+      padding: 10px 14px;
+      background: var(--input-bg, #f8fafc);
+      border: 1px solid var(--panel-border, #e2e8f0);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .week-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-color, #0f172a);
+    }
+    .week-cycles {
+      display: flex;
+      gap: 6px;
+      font-size: 0.75rem;
+    }
+    .cycle-tag {
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      font-weight: 700;
+      color: #334155;
+    }
+    .cycle-a { background: #dbeafe; color: #1d4ed8; }
+    .cycle-b { background: #dcfce7; color: #15803d; }
+    .cycle-c { background: #fef3c7; color: #b45309; }
+  </style>
+</head>
+<body class="theme-light">
+  <div class="liturgia-container">
+    <div class="liturgia-header">
+      <div class="liturgia-title">
+        <span class="material-symbols-outlined" style="font-size: 2.2rem; color: #d01212;">church</span>
+        <div>
+          <h1>Esquema del Calendario Litúrgico</h1>
+          <p style="margin: 2px 0 0 0; font-size: 0.85rem; color: #64748b;">Estructura de Ciclos A, B, C y Tiempos para Aclamaciones</p>
+        </div>
+      </div>
+      <a href="index.html#aclamaciones" class="btn-back">
+        <span class="material-symbols-outlined">arrow_back</span>
+        Volver a Aclamaciones
+      </a>
+    </div>
+
+    <!-- 1. Adviento -->
+    <div class="season-card">
+      <div class="season-header">
+        <h2 class="season-title" style="color: #6b21a8;">
+          <span class="material-symbols-outlined">candle</span>
+          1. Tiempo de Adviento
+        </h2>
+        <span class="season-badge badge-adviento">4 Semanas</span>
+      </div>
+      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">Comienza el domingo más cercano al 30 de noviembre y dura 4 semanas hasta la víspera de Navidad.</p>
+      <div class="weeks-grid">
+        <div class="week-item">
+          <span class="week-name">Domingo I de Adviento</span>
+          <div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div>
+        </div>
+        <div class="week-item">
+          <span class="week-name">Domingo II de Adviento</span>
+          <div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div>
+        </div>
+        <div class="week-item">
+          <span class="week-name">Domingo III de Adviento (Gaudete)</span>
+          <div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div>
+        </div>
+        <div class="week-item">
+          <span class="week-name">Domingo IV de Adviento</span>
+          <div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Navidad -->
+    <div class="season-card">
+      <div class="season-header">
+        <h2 class="season-title" style="color: #ca8a04;">
+          <span class="material-symbols-outlined">star</span>
+          2. Tiempo de Navidad
+        </h2>
+        <span class="season-badge badge-navidad">2 Semanas y Fiestas</span>
+      </div>
+      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">Desde la Vigilia de Navidad (24 dic) hasta el Bautismo del Señor.</p>
+      <div class="weeks-grid">
+        <div class="week-item"><span class="week-name">25 Dic - Misa de la Vigilia</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+        <div class="week-item"><span class="week-name">25 Dic - Misa de Medianoche</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+        <div class="week-item"><span class="week-name">25 Dic - Misa de la Aurora</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+        <div class="week-item"><span class="week-name">25 Dic - Misa del Día</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+        <div class="week-item"><span class="week-name">Sagrada Familia</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Santa María Madre de Dios (1 Ene)</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+        <div class="week-item"><span class="week-name">Epifanía del Señor (6 Ene)</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+      </div>
+    </div>
+
+    <!-- 3. Cuaresma -->
+    <div class="season-card">
+      <div class="season-header">
+        <h2 class="season-title" style="color: #7e22ce;">
+          <span class="material-symbols-outlined">cross</span>
+          3. Tiempo de Cuaresma y Semana Santa
+        </h2>
+        <span class="season-badge badge-cuaresma">6 Semanas</span>
+      </div>
+      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">Desde el Miércoles de Ceniza hasta el Triduo Pascual.</p>
+      <div class="weeks-grid">
+        <div class="week-item"><span class="week-name">Miércoles de Ceniza</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo I de Cuaresma</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo II de Cuaresma</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo III de Cuaresma</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo IV de Cuaresma (Laetare)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo V de Cuaresma</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo de Ramos</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Jueves Santo (Cena del Señor)</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+        <div class="week-item"><span class="week-name">Viernes Santo (Pasión del Señor)</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+        <div class="week-item"><span class="week-name">Sábado Santo</span><div class="week-cycles"><span class="cycle-tag cycle-a">A/B/C</span></div></div>
+      </div>
+    </div>
+
+    <!-- 4. Pascua -->
+    <div class="season-card">
+      <div class="season-header">
+        <h2 class="season-title" style="color: #ea580c;">
+          <span class="material-symbols-outlined">wb_sunny</span>
+          4. Tiempo de Pascua
+        </h2>
+        <span class="season-badge badge-pascua">7 Semanas y Pentecostés</span>
+      </div>
+      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">50 días de gozo desde la Vigilia Pascual hasta Pentecostés.</p>
+      <div class="weeks-grid">
+        <div class="week-item"><span class="week-name">Domingo de Pascua (Resurrección)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo II de Pascua (Divina Misericordia)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo III de Pascua</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo IV de Pascua (Buen Pastor)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo V de Pascua</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo VI de Pascua</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Ascensión del Señor</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo de Pentecostés</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+      </div>
+    </div>
+
+    <!-- 5. Tiempo Ordinario -->
+    <div class="season-card">
+      <div class="season-header">
+        <h2 class="season-title" style="color: #16a34a;">
+          <span class="material-symbols-outlined">calendar_today</span>
+          5. Tiempo Ordinario
+        </h2>
+        <span class="season-badge badge-ordinario">34 Semanas</span>
+      </div>
+      <p style="font-size: 0.85rem; color: #64748b; margin-top: 0;">Dividido en dos etapas (tras Navidad y tras Pentecostés) hasta Cristo Rey (Semana 34).</p>
+      <div class="weeks-grid">
+        <div class="week-item"><span class="week-name">Bautismo del Señor (Domingo I)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Domingo II al XXXIII del T. Ordinario</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Santísima Trinidad</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Corpus Christi</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Sagrado Corazón de Jesús</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+        <div class="week-item"><span class="week-name">Jesucristo Rey del Universo (Semana XXXIV)</span><div class="week-cycles"><span class="cycle-tag cycle-a">Ciclo A</span><span class="cycle-tag cycle-b">Ciclo B</span><span class="cycle-tag cycle-c">Ciclo C</span></div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

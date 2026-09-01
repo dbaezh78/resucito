@@ -47,6 +47,8 @@ let activeStage = null;
 let activeMoments = [];
 let allAsambleaExpanded = true;
 let currentBook = 'resucito';
+let activeAclamacionCiclo = 'Ciclo A';
+let activeAclamacionTiempo = 'Tiempo Ordinario';
 // favorites e isAdmin ahora son globales e inicializados en ajustes.js
 let catequesisData = null;
 let defaultChordPositions = {};
@@ -625,6 +627,11 @@ function routeSPA() {
 }
 
 async function sincronizarCantoDesdeFirebase(songId) {
+  // Para cantos de Aclamaciones (songs-ae / aet*), no sincronizar posiciones desde Firebase (usan su propio archivo fuente)
+  if (songId && songId.startsWith('aet')) {
+    return;
+  }
+
   // 1. Cargar posiciones globales oficiales de acordes si existen en Firestore
   try {
     const globalPos = await cargarPosicionesGlobales(songId);
@@ -1524,6 +1531,27 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
     position: c.originalPos
   }));
 
+  // Para cantos de Aclamaciones (songs-ae / aet*), usar EXCLUSIVAMENTE los acordes y posiciones del archivo JSON fuente
+  if (currentCanto.id && currentCanto.id.startsWith('aet')) {
+    return baseChords.map(chord => {
+      let pos = chord.originalPos;
+      if (cleanLetra.length > 0) {
+        if (pos >= cleanLetra.length) {
+          pos = pos / 10;
+        }
+      } else {
+        if (pos >= 10) {
+          pos = pos / 10;
+        }
+      }
+      return {
+        noteName: chord.name,
+        noteType: chord.type,
+        position: Math.max(0, pos)
+      };
+    });
+  }
+
   const customKey = `custom-positions-${currentCanto.id}`;
   const customStore = localStorage.getItem(customKey);
   let customPositions = null;
@@ -2384,6 +2412,268 @@ function getStageColor(stageName) {
   return '#20c997';
 }
 
+// --- Clasificación Litúrgica para Aclamaciones (Ciclos y Tiempos) ---
+export function clasificarAclamacion(item) {
+  const id = (item.id || '').toLowerCase();
+  const sub = (item.subtitle || '').toLowerCase();
+  const tit = (item.title || '').toLowerCase();
+  
+  let ciclo = 'Común';
+  if (id.endsWith('a') || sub.includes('año a') || sub.includes('ciclo a')) ciclo = 'Ciclo A';
+  else if (id.endsWith('b') || sub.includes('año b') || sub.includes('ciclo b')) ciclo = 'Ciclo B';
+  else if (id.endsWith('c') || sub.includes('año c') || sub.includes('ciclo c')) ciclo = 'Ciclo C';
+  else if (id.endsWith('s')) ciclo = 'Solemnidades';
+  
+  let tiempo = 'Otro';
+  let tiempoOrden = 99;
+  let orden = 999;
+  let semana = '';
+  let celebracion = item.title;
+
+  // Adviento (4 semanas)
+  if (id.startsWith('aetas') || tit.includes('adviento') || sub.includes('adviento')) {
+    tiempo = 'Adviento';
+    tiempoOrden = 1;
+    const m = id.match(/aetas(\d+)/) || tit.match(/domingo\s+([ivx]+)/i);
+    const semNum = m ? (m[1] === '1' || m[1].toLowerCase() === 'i' ? 1 : m[1] === '2' || m[1].toLowerCase() === 'ii' ? 2 : m[1] === '3' || m[1].toLowerCase() === 'iii' ? 3 : 4) : 1;
+    const romanos = ['I', 'II', 'III', 'IV'];
+    semana = `Domingo ${romanos[semNum - 1] || semNum} de Adviento`;
+    celebracion = `Domingo ${romanos[semNum - 1] || semNum} de Adviento`;
+    orden = 100 + semNum;
+  }
+  // Navidad (2 semanas y fiestas)
+  else if (id.startsWith('aetn') || tit.includes('navidad') || tit.includes('25 diciembre') || tit.includes('epifanía') || tit.includes('santa maría') || tit.includes('sagrada familia')) {
+    tiempo = 'Navidad';
+    tiempoOrden = 2;
+    if (id.includes('25dicmv')) { semana = '25 Dic - Misa de la Vigilia'; celebracion = '25 Dic - Misa de la Vigilia'; orden = 201; }
+    else if (id.includes('25dicmm')) { semana = '25 Dic - Misa de Medianoche'; celebracion = '25 Dic - Misa de Medianoche'; orden = 202; }
+    else if (id.includes('25dicma')) { semana = '25 Dic - Misa de la Aurora'; celebracion = '25 Dic - Misa de la Aurora'; orden = 203; }
+    else if (id.includes('25dicmd')) { semana = '25 Dic - Misa del Día'; celebracion = '25 Dic - Misa del Día'; orden = 204; }
+    else if (id.includes('ssf') || tit.includes('sagrada familia')) { semana = 'Sagrada Familia'; celebracion = 'Sagrada Familia'; orden = 205; }
+    else if (id.includes('1e') || tit.includes('1 enero') || tit.includes('santa maría')) { semana = 'Santa María Madre de Dios (1 Ene)'; celebracion = 'Santa María Madre de Dios (1 Ene)'; orden = 206; }
+    else if (id.includes('6e') || tit.includes('epifanía') || tit.includes('6 enero')) { semana = 'Epifanía del Señor (6 Ene)'; celebracion = 'Epifanía del Señor (6 Ene)'; orden = 207; }
+    else { semana = 'Tiempo de Navidad'; celebracion = item.title; orden = 208; }
+  }
+  // Cuaresma (6 semanas y Semana Santa)
+  else if (id.startsWith('aetcs') || id.startsWith('aetcsv') || id.startsWith('aetcss') || tit.includes('cuaresma') || tit.includes('ceniza') || tit.includes('ramos') || tit.includes('santo') || tit.includes('santa')) {
+    tiempo = 'Cuaresma';
+    tiempoOrden = 3;
+    const m = id.match(/aetcs(\d+)/);
+    if (m) {
+      const sNum = parseInt(m[1]);
+      const romanos = ['I', 'II', 'III', 'IV', 'V', 'VI'];
+      semana = `Domingo ${romanos[sNum - 1] || sNum} de Cuaresma`;
+      celebracion = `Domingo ${romanos[sNum - 1] || sNum} de Cuaresma`;
+      orden = 300 + sNum;
+    } else if (id.includes('js') || tit.includes('jueves santo')) {
+      semana = 'Jueves Santo';
+      celebracion = 'Jueves Santo (Cena del Señor)';
+      orden = 310;
+    } else if (id.includes('vs') || id.startsWith('aetcsv') || tit.includes('viernes santo')) {
+      semana = 'Viernes Santo';
+      celebracion = 'Viernes Santo (Pasión del Señor)';
+      orden = 311;
+    } else if (id.includes('ss') || id.startsWith('aetcss') || tit.includes('sábado santo')) {
+      semana = 'Sábado Santo';
+      celebracion = 'Sábado Santo';
+      orden = 312;
+    } else if (tit.includes('ceniza')) {
+      semana = 'Miércoles de Ceniza';
+      celebracion = 'Miércoles de Ceniza';
+      orden = 299;
+    } else if (tit.includes('ramos')) {
+      semana = 'Domingo de Ramos';
+      celebracion = 'Domingo de Ramos';
+      orden = 306;
+    } else {
+      semana = 'Cuaresma';
+      celebracion = item.title;
+      orden = 305;
+    }
+  }
+  // Pascua (7 semanas y Pentecostés)
+  else if (id.startsWith('aetps') || tit.includes('pascua') || tit.includes('pascual') || tit.includes('pentecostés') || tit.includes('ascensión')) {
+    tiempo = 'Pascua';
+    tiempoOrden = 4;
+    const m = id.match(/aetps(\d+)/);
+    if (m) {
+      const sNum = parseInt(m[1]);
+      const romanos = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'];
+      semana = `Domingo ${romanos[sNum - 1] || sNum} de Pascua`;
+      celebracion = `Domingo ${romanos[sNum - 1] || sNum} de Pascua`;
+      orden = 400 + sNum;
+    } else if (tit.includes('aleluya pascual') || id.includes('vigilia')) {
+      semana = 'Vigilia Pascual';
+      celebracion = 'Vigilia Pascual';
+      orden = 401;
+    } else if (tit.includes('ascensión') || id.includes('asc')) {
+      semana = 'Ascensión del Señor';
+      celebracion = 'Ascensión del Señor';
+      orden = 407;
+    } else if (tit.includes('pentecostés') || id.includes('pent')) {
+      semana = 'Domingo de Pentecostés';
+      celebracion = 'Domingo de Pentecostés';
+      orden = 408;
+    } else {
+      semana = 'Tiempo Pascual';
+      celebracion = item.title;
+      orden = 405;
+    }
+  }
+  // Tiempo Ordinario (34 semanas y Solemnidades)
+  else if (id.startsWith('aetos') || tit.includes('ordinario')) {
+    tiempo = 'Tiempo Ordinario';
+    tiempoOrden = 5;
+    const m = id.match(/aetos(\d+)/);
+    if (m) {
+      const sNum = parseInt(m[1]);
+      const romanos = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII','XXIV','XXV','XXVI','XXVII','XXVIII','XXIX','XXX','XXXI','XXXII','XXXIII','XXXIV'];
+      semana = `Domingo ${romanos[sNum - 1] || sNum} del T. Ordinario`;
+      celebracion = `Domingo ${romanos[sNum - 1] || sNum} del T. Ordinario`;
+      orden = 500 + sNum;
+    } else if (tit.includes('bautismo')) {
+      semana = 'Bautismo del Señor (Domingo I)';
+      celebracion = 'Bautismo del Señor (Domingo I)';
+      orden = 501;
+    } else if (tit.includes('trinidad')) {
+      semana = 'Santísima Trinidad';
+      celebracion = 'Santísima Trinidad';
+      orden = 535;
+    } else if (tit.includes('corpus') || tit.includes('cuerpo')) {
+      semana = 'Corpus Christi';
+      celebracion = 'Corpus Christi';
+      orden = 536;
+    } else if (tit.includes('sagrado corazón') || tit.includes('corazon')) {
+      semana = 'Sagrado Corazón de Jesús';
+      celebracion = 'Sagrado Corazón de Jesús';
+      orden = 537;
+    } else if (tit.includes('cristo rey') || tit.includes('rey del universo')) {
+      semana = 'Jesucristo Rey del Universo';
+      celebracion = 'Jesucristo Rey del Universo (Semana XXXIV)';
+      orden = 534;
+    } else {
+      semana = 'Tiempo Ordinario';
+      celebracion = item.title;
+      orden = 510;
+    }
+  }
+  // Fiestas / Solemnidades
+  else if (id.startsWith('aetfs') || tit.includes('fiesta') || tit.includes('solemnidad')) {
+    tiempo = 'Solemnidades y Fiestas';
+    tiempoOrden = 6;
+    semana = item.title;
+    celebracion = item.title;
+    orden = 600;
+  }
+
+  return { ciclo, tiempo, tiempoOrden, semana, celebracion, orden };
+}
+// --- Cálculo del Tiempo Litúrgico y Semana Actual ---
+function calcularDomingoPascua(year) {
+  const a = year % 19;
+  const b = Math.floor(year / 100);
+  const c = year % 100;
+  const d = Math.floor(b / 4);
+  const e = b % 4;
+  const f = Math.floor((b + 8) / 25);
+  const g = Math.floor((b - f + 1) / 3);
+  const h = (19 * a + b - d - g + 15) % 30;
+  const i = Math.floor(c / 4);
+  const k = c % 4;
+  const l = (32 + 2 * e + 2 * i - h - k) % 7;
+  const m = Math.floor((a + 11 * h + 22 * l) / 451);
+  const month = Math.floor((h + l - 7 * m + 114) / 31);
+  const day = ((h + l - 7 * m + 114) % 31) + 1;
+  return new Date(year, month - 1, day);
+}
+
+function calcularCicloLiturgico(date) {
+  const year = date.getFullYear();
+  const nov30 = new Date(year, 10, 30);
+  const dayOfWeek = nov30.getDay();
+  const adviento1 = new Date(year, 10, 30 - ((dayOfWeek === 0) ? 0 : dayOfWeek));
+  const liturgicalYear = (date >= adviento1) ? year + 1 : year;
+  const mod = liturgicalYear % 3;
+  if (mod === 1) return 'a'; // Ciclo A (ej: 2020, 2023, 2026...)
+  if (mod === 2) return 'b'; // Ciclo B (ej: 2021, 2024, 2027...)
+  return 'c';                 // Ciclo C (ej: 2022, 2025, 2028...)
+}
+
+export function obtenerIdAclamacionSemanaActual(currentDate = new Date()) {
+  // 1. Comprobar si hay una anulación manual guardada (desde Ajustes > Liturgia) que aún esté vigente
+  const overrideStr = localStorage.getItem('liturgia_override');
+  if (overrideStr) {
+    try {
+      const override = JSON.parse(overrideStr);
+      if (override && override.active && override.songId) {
+        if (!override.expiresAt || Date.now() <= override.expiresAt) {
+          return override.songId;
+        } else {
+          // Ha expirado la semana configurada, limpiar y volver a cálculo automático
+          localStorage.removeItem('liturgia_override');
+        }
+      }
+    } catch (e) {
+      console.warn('Error al leer liturgia_override:', e);
+    }
+  }
+
+  // 2. Ajuste litúrgico de vísperas: Si es sábado a partir de las 3:00 PM (15:00 hrs),
+  // se celebra la Eucaristía del Domingo siguiente (pasa a la semana siguiente).
+  const d = new Date(currentDate.getTime());
+  if (d.getDay() === 6 && d.getHours() >= 15) {
+    d.setDate(d.getDate() + 1);
+  }
+
+  const year = d.getFullYear();
+  const cicloLetra = calcularCicloLiturgico(d);
+  
+  const pascua = calcularDomingoPascua(year);
+  const miercolesCeniza = new Date(pascua);
+  miercolesCeniza.setDate(pascua.getDate() - 46);
+  const pentecostes = new Date(pascua);
+  pentecostes.setDate(pascua.getDate() + 49);
+  
+  const nov30 = new Date(year, 10, 30);
+  const dayOfWeek = nov30.getDay();
+  let adviento1 = new Date(year, 10, 30 - ((dayOfWeek === 0) ? 0 : dayOfWeek));
+
+  // 1. Adviento
+  if (d >= adviento1 && d < new Date(year, 11, 25)) {
+    const diffWeeks = Math.floor((d - adviento1) / (7 * 24 * 60 * 60 * 1000)) + 1;
+    const sem = Math.min(4, Math.max(1, diffWeeks));
+    return `aetas${sem}${cicloLetra}`;
+  }
+
+  // 2. Navidad
+  if (d >= new Date(year, 11, 25) || d < new Date(year, 0, 6)) {
+    return `aetns25dicmda`;
+  }
+
+  // 3. Cuaresma
+  if (d >= miercolesCeniza && d < pascua) {
+    const diffDays = Math.floor((d - miercolesCeniza) / (24 * 60 * 60 * 1000));
+    const semCuaresma = Math.floor((diffDays - 4) / 7) + 1;
+    if (semCuaresma <= 0) return `aetcs1${cicloLetra}`;
+    if (semCuaresma >= 6) return `aetcs6${cicloLetra}`;
+    return `aetcs${semCuaresma}${cicloLetra}`;
+  }
+
+  // 4. Pascua
+  if (d >= pascua && d <= pentecostes) {
+    const diffWeeks = Math.floor((d - pascua) / (7 * 24 * 60 * 60 * 1000)) + 1;
+    const semPascua = Math.min(7, Math.max(1, diffWeeks));
+    return `aetps${semPascua}${cicloLetra}`;
+  }
+
+  // 5. Tiempo Ordinario
+  const diffWeeksToAdvent = Math.floor((adviento1 - d) / (7 * 24 * 60 * 60 * 1000));
+  const weekNumber = 34 - diffWeeksToAdvent;
+  const semOrdinario = Math.min(34, Math.max(1, weekNumber));
+  return `aetos${semOrdinario}${cicloLetra}`;
+}
+window.obtenerIdAclamacionSemanaActual = obtenerIdAclamacionSemanaActual;
+
 // --- Buscador y Renderizado de Lista ---
 function renderSongsList(songsList) {
   window.renderSongsList = renderSongsList;
@@ -2395,8 +2685,11 @@ function renderSongsList(songsList) {
     songsGrid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--text-muted);">No se encontraron cantos con los filtros actuales.</div>`;
     return;
   }
+
+  const currentLiturgicalId = (currentBook === 'aclamaciones') ? obtenerIdAclamacionSemanaActual() : null;
+  let hasRenderedSeparator = false;
   
-  songsList.forEach(song => {
+  songsList.forEach((song, idx) => {
     const card = document.createElement('a');
     card.className = 'song-card';
     if (currentCanto && song.id === currentCanto.id) {
@@ -2406,7 +2699,7 @@ function renderSongsList(songsList) {
     
     // Obtener color/estilo de la etapa
     let stageClass = 'badge-otros';
-    const cleanStage = song.stage.toLowerCase();
+    const cleanStage = (song.stage || '').toLowerCase();
     if (cleanStage.includes('pre')) stageClass = 'badge-precatecumenado';
     else if (cleanStage.includes('cate')) stageClass = 'badge-catecumenado';
     else if (cleanStage.includes('ele')) stageClass = 'badge-eleccion';
@@ -2416,21 +2709,59 @@ function renderSongsList(songsList) {
     // Asignar el color de etapa como variable de CSS
     card.style.setProperty('--stage-color', getStageColor(song.stage));
     
-    card.innerHTML = `
-      <div class="song-card-number">
-        <span>Canto #${song.dbno || 'S/N'}</span>
-        <span class="badge ${stageClass}">${song.stage}</span>
-      </div>
-      <div class="song-card-title">${song.title}</div>
-      <div class="song-card-subtitle">${song.subtitle}</div>
-      <div class="song-card-badges">
-        ${song.hasAudio ? '<span class="badge badge-audio">Audio</span>' : ''}
-        ${song.cejilla ? `<span class="badge badge-capo">Cejilla: ${song.cejilla}</span>` : ''}
-        ${song.acorde ? `<span class="badge badge-capo">${song.acorde}</span>` : ''}
-      </div>
-    `;
-    
-    songsGrid.appendChild(card);
+    if (currentBook === 'aclamaciones' || song.sourceBook === 'aclamaciones') {
+      const info = clasificarAclamacion(song);
+      const isCurrentWeek = (song.id === currentLiturgicalId);
+      if (isCurrentWeek) {
+        card.classList.add('canto-semana-actual');
+      }
+
+      card.innerHTML = `
+        <div class="song-card-number">
+          <span>Aclamación #${song.dbno || '180'}</span>
+          <span class="badge badge-aclamacion-ciclo">${info.ciclo}</span>
+          <span class="badge badge-aclamacion-tiempo">${info.tiempo}</span>
+          ${isCurrentWeek ? '<span class="badge badge-semana-actual">✨ SEMANA ACTUAL</span>' : ''}
+        </div>
+        <div class="song-card-title">${info.celebracion} <span style="font-size: 0.85em; font-weight: 700; color: #0284c7; margin-left: 6px;">(${info.ciclo})</span> ${isCurrentWeek ? '<span class="tag-semana-actual-simple">★ ACTUAL</span>' : ''}</div>
+        <div class="song-card-subtitle">${song.subtitle || ''}</div>
+        <div class="song-card-badges">
+          ${song.hasAudio ? '<span class="badge badge-audio">Audio</span>' : ''}
+          ${song.cejilla ? `<span class="badge badge-capo">Cejilla: ${song.cejilla}</span>` : ''}
+          ${song.acorde ? `<span class="badge badge-capo">${song.acorde}</span>` : ''}
+        </div>
+      `;
+
+      songsGrid.appendChild(card);
+
+      // Si el primer canto es el de la semana actual, agregar un separador después de él
+      if (isCurrentWeek && idx === 0 && songsList.length > 1 && !hasRenderedSeparator) {
+        hasRenderedSeparator = true;
+        const sep = document.createElement('div');
+        sep.className = 'aclamacion-separator-wrapper';
+        sep.innerHTML = `
+          <div class="aclamacion-separator-line"></div>
+          <span class="aclamacion-separator-text">Todas las Aclamaciones del Tiempo</span>
+          <div class="aclamacion-separator-line"></div>
+        `;
+        songsGrid.appendChild(sep);
+      }
+    } else {
+      card.innerHTML = `
+        <div class="song-card-number">
+          <span>Canto #${song.dbno || 'S/N'}</span>
+          <span class="badge ${stageClass}">${song.stage}</span>
+        </div>
+        <div class="song-card-title">${song.title}</div>
+        <div class="song-card-subtitle">${song.subtitle}</div>
+        <div class="song-card-badges">
+          ${song.hasAudio ? '<span class="badge badge-audio">Audio</span>' : ''}
+          ${song.cejilla ? `<span class="badge badge-capo">Cejilla: ${song.cejilla}</span>` : ''}
+          ${song.acorde ? `<span class="badge badge-capo">${song.acorde}</span>` : ''}
+        </div>
+      `;
+      songsGrid.appendChild(card);
+    }
   });
 }
 
@@ -2475,11 +2806,13 @@ async function handleSearchAndFilters() {
   const searchBox = document.querySelector('.search-box-container');
   const searchRow = document.querySelector('.search-and-settings-row');
   const filtersToggleSec = document.querySelector('.filters-toggle-section');
+  const aclamacionesFilterBar = document.getElementById('aclamaciones-filter-bar');
 
   if (currentBook === 'catequesis') {
     if (searchBox) searchBox.style.display = 'none';
     if (searchRow) searchRow.style.display = 'none';
     if (filtersToggleSec) filtersToggleSec.style.display = 'none';
+    if (aclamacionesFilterBar) aclamacionesFilterBar.style.display = 'none';
     filtersPanel.style.display = 'none';
     if (toggleFiltersBtn) toggleFiltersBtn.classList.remove('active');
     
@@ -2489,6 +2822,68 @@ async function handleSearchAndFilters() {
   
   if (searchBox) searchBox.style.display = 'flex';
   if (searchRow) searchRow.style.display = 'flex';
+
+  // Manejo exclusivo para Aclamaciones (Ciclos y Tiempos Litúrgicos)
+  if (currentBook === 'aclamaciones') {
+    if (filtersToggleSec) filtersToggleSec.style.display = 'none';
+    if (filtersPanel) filtersPanel.style.display = 'none';
+    if (toggleFiltersBtn) toggleFiltersBtn.classList.remove('active');
+    if (aclamacionesFilterBar) aclamacionesFilterBar.style.display = 'flex';
+
+    let aclamacionesList = allSongs.filter(song => (song.sourceBook || 'resucito') === 'aclamaciones');
+
+    // Filtrar por Ciclo
+    if (activeAclamacionCiclo !== 'Todos') {
+      aclamacionesList = aclamacionesList.filter(song => {
+        const info = clasificarAclamacion(song);
+        return info.ciclo === activeAclamacionCiclo;
+      });
+    }
+
+    // Filtrar por Tiempo Litúrgico
+    if (activeAclamacionTiempo !== 'Todos') {
+      aclamacionesList = aclamacionesList.filter(song => {
+        const info = clasificarAclamacion(song);
+        return info.tiempo === activeAclamacionTiempo;
+      });
+    }
+
+    // Filtrar por texto de búsqueda
+    const query = searchInput ? searchInput.value : '';
+    filteredSongs = searchSongs(aclamacionesList, query, null, []);
+    window.filteredSongs = filteredSongs;
+
+    // Ordenar Aclamaciones: Ciclo (A -> B -> C) -> Tiempo Litúrgico (Adviento -> Navidad -> Cuaresma -> Pascua -> Ordinario) -> Semana
+    filteredSongs.sort((a, b) => {
+      const infoA = clasificarAclamacion(a);
+      const infoB = clasificarAclamacion(b);
+      
+      // Si estamos en 'Todos' los ciclos, agrupar primero por ciclo
+      if (activeAclamacionCiclo === 'Todos' && infoA.ciclo !== infoB.ciclo) {
+        return infoA.ciclo.localeCompare(infoB.ciclo);
+      }
+      // Ordenar por tiempo litúrgico
+      if (infoA.tiempoOrden !== infoB.tiempoOrden) {
+        return infoA.tiempoOrden - infoB.tiempoOrden;
+      }
+      // Ordenar cronológicamente por semana
+      return infoA.orden - infoB.orden;
+    });
+
+    // Colocar la semana litúrgica actual en la primera posición si coincide con los filtros
+    const currentLiturgicalId = obtenerIdAclamacionSemanaActual();
+    const currentIdx = filteredSongs.findIndex(s => s.id === currentLiturgicalId);
+    if (currentIdx > 0) {
+      const currentItem = filteredSongs.splice(currentIdx, 1)[0];
+      filteredSongs.unshift(currentItem);
+    }
+
+    renderSongsList(filteredSongs);
+    return;
+  }
+
+  // Comportamiento normal para los demás libros
+  if (aclamacionesFilterBar) aclamacionesFilterBar.style.display = 'none';
   if (filtersToggleSec) filtersToggleSec.style.display = 'block';
   
   let sourceList = allSongs;
@@ -2861,10 +3256,51 @@ function setupEventListeners() {
       momentFiltersContainer.querySelectorAll('.filter-pill').forEach(b => {
         b.classList.toggle('active', b.id === 'btn-filter-indice');
       });
+
+      // Reiniciar filtros de Aclamaciones por defecto a Ciclo A y Tiempo Ordinario
+      activeAclamacionCiclo = 'Ciclo A';
+      activeAclamacionTiempo = 'Tiempo Ordinario';
+      const aclamCiclosCont = document.getElementById('aclamaciones-ciclos-container');
+      if (aclamCiclosCont) {
+        aclamCiclosCont.querySelectorAll('.aclamaciones-pill').forEach(b => {
+          b.classList.toggle('active', b.dataset.ciclo === 'Ciclo A');
+        });
+      }
+      const aclamTiemposCont = document.getElementById('aclamaciones-tiempos-container');
+      if (aclamTiemposCont) {
+        aclamTiemposCont.querySelectorAll('.aclamaciones-pill').forEach(b => {
+          b.classList.toggle('active', b.dataset.tiempo === 'Tiempo Ordinario');
+        });
+      }
       
       handleSearchAndFilters();
     });
   });
+
+  // Listeners para filtros de Aclamaciones (Ciclo y Tiempo Litúrgico)
+  const aclamacionesCiclosContainer = document.getElementById('aclamaciones-ciclos-container');
+  if (aclamacionesCiclosContainer) {
+    aclamacionesCiclosContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.aclamaciones-pill');
+      if (!btn) return;
+      activeAclamacionCiclo = btn.dataset.ciclo || 'Todos';
+      aclamacionesCiclosContainer.querySelectorAll('.aclamaciones-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      handleSearchAndFilters();
+    });
+  }
+
+  const aclamacionesTiemposContainer = document.getElementById('aclamaciones-tiempos-container');
+  if (aclamacionesTiemposContainer) {
+    aclamacionesTiemposContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.aclamaciones-pill');
+      if (!btn) return;
+      activeAclamacionTiempo = btn.dataset.tiempo || 'Todos';
+      aclamacionesTiemposContainer.querySelectorAll('.aclamaciones-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      handleSearchAndFilters();
+    });
+  }
 
   // Buscador e inputs
   if (searchInput) {
