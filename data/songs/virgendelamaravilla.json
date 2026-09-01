@@ -35,7 +35,7 @@
   "sig": "/src/index.html?canto=vividalegres",
   "lizq": [
     {
-      "line": "MARÍA, HIJA DE TU HIJO,, (Si,m,0)(Mi,m,70)(Si,m,175)",
+      "line": "MARÍA, HIJA DE TU HIJO,, (Si,m,0)(Mi,m,70)(Si,m,180)",
       "sC": "tc as"
     },
     {
@@ -48,30 +48,26 @@
     },
     {
       "line": "VIRGEN DE LA MARAVILLA., (Sol,,0)(Fa#,,170)",
-      "sC": "as asterisco"
+      "sC": "as asterisco1"
     },
     {
       "line": "",
       "sC": "ast"
     },
     {
-      "line": "",
-      "sC": "ast1"
-    },
-    {
-      "line": "María, tú la creatura, (Si,m,20)(Mi,m,81)(Si,m,166)",
+      "line": "María, tú la creatura, (Si,m,0)(Mi,m,60)(Si,m,160)",
       "sC": "tc"
     },
     {
-      "line": "que has dado a luz al Creador,, (Mi,m,98)(Si,m,272)",
+      "line": "que has dado a luz al Creador,, (Mi,m,80)(Si,m,255)",
       "sC": ""
     },
     {
-      "line": "tú eres la sierva, (Sol,,37)",
+      "line": "tú eres la sierva, (Sol,,20)",
       "sC": ""
     },
     {
-      "line": "que ha concebido al Señor., (Fa#,,15)",
+      "line": "que ha concebido al Señor., (Fa#,,220)",
       "sC": ""
     },
     {
@@ -82,7 +78,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "MARÍA, HIJA DE TU HIJO,, (Si,m,0)(Mi,m,70)(Si,m,175)",
+      "triggerLine": "MARÍA, HIJA DE TU HIJO,, (Si,m,0)(Mi,m,70)(Si,m,180)",
       "sC": "ta as",
       "lines": [
         {
@@ -95,7 +91,7 @@
         },
         {
           "line": "VIRGEN DE LA MARAVILLA., (Sol,,0)(Fa#,,170)",
-          "sC": "as asterisco"
+          "sC": "as asterisco1"
         }
       ]
     },
@@ -104,15 +100,15 @@
       "sC": "adb1"
     },
     {
-      "line": "María, hecha de tierra,, (Si,m,20)(Mi,m,86)(Si,m,180)",
+      "line": "María, hecha de tierra,, (Si,m,0)(Mi,m,70)(Si,m,160)",
       "sC": "tc"
     },
     {
-      "line": "tú eres la gloriosa,, (Mi,m,20)(Si,m,142)",
+      "line": "tú eres la gloriosa,, (Mi,m,20)(Si,m,140)",
       "sC": ""
     },
     {
-      "line": "gloriosa imagen del cielo., (Sol,,46)(Fa#,,216)",
+      "line": "gloriosa imagen del cielo., (Sol,,40)(Fa#,,205)",
       "sC": ""
     },
     {
@@ -123,11 +119,11 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "MARÍA, HIJA DE TU HIJO,, (Si,m,0)(Mi,m,70)(Si,m,175)",
+      "triggerLine": "MARÍA, HIJA DE TU HIJO,, (Si,m,0)(Mi,m,70)(Si,m,180)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "MADRE DE JESÚS, (Mi,m,27)",
+          "line": "MADRE DE JESÚS, (Mi,m,0)",
           "sC": "as r1"
         },
         {
@@ -136,30 +132,30 @@
         },
         {
           "line": "VIRGEN DE LA MARAVILLA., (Sol,,0)(Fa#,,170)",
-          "sC": "as asterisco"
+          "sC": "as asterisco1"
         }
       ]
     }
   ],
   "lder": [
     {
-      "line": "María, siendo la pequeña, (Si,m,20)(Mi,m,82)(Si,m,212)",
+      "line": "María, siendo la pequeña, (Si,m,0)(Mi,m,70)(Si,m,200)",
       "sC": "tc"
     },
     {
-      "line": "tú eres la más grande,, (Mi,m,20)(Si,m,169)",
+      "line": "tú eres la más grande,, (Mi,m,0)(Si,m,160)",
       "sC": ""
     },
     {
-      "line": "siendo Hija de Dios eres su Madre,, (Sol,,19)(Fa#,,286)",
+      "line": "siendo Hija de Dios eres su Madre,, (Sol,,5)(Fa#,,285)",
       "sC": ""
     },
     {
-      "line": "siendo Hija de Dios eres su Madre., (Mi,m,20)(Fa#,,286)",
+      "line": "siendo Hija de Dios eres su Madre., (Mi,m,0)(Fa#,,285)",
       "sC": ""
     },
     {
-      "line": "Virgen de la maravilla., (Sol,,14)(Fa#,,178)",
+      "line": "VIRGEN DE LA MARAVILLA., (Sol,,0)(Fa#,,165)",
       "sC": ""
     },
     {
@@ -170,11 +166,11 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "MARÍA, HIJA DE TU HIJO,, (Si,m,0)(Mi,m,70)(Si,m,175)",
+      "triggerLine": "MARÍA, HIJA DE TU HIJO,, (Si,m,0)(Mi,m,70)(Si,m,180)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "MADRE DE JESÚS, (Mi,m,27)",
+          "line": "MADRE DE JESÚS, (Mi,m,0)",
           "sC": "as r1"
         },
         {
@@ -183,7 +179,7 @@
         },
         {
           "line": "VIRGEN DE LA MARAVILLA., (Sol,,0)(Fa#,,170)",
-          "sC": "as asterisco"
+          "sC": "as asterisco1"
         }
       ]
     }

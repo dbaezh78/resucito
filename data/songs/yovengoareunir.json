@@ -35,7 +35,7 @@
   "sig": "/src/index.html?canto=zaqueo",
   "lizq": [
     {
-      "line": "Yo vengo a reunir,, (Mi,,10)",
+      "line": "Yo vengo a reunir,, (Mi,,0)",
       "sC": "tc"
     },
     {
@@ -43,19 +43,19 @@
       "sC": "ta as"
     },
     {
-      "line": "a todas las naciones,, (La,,10)(Mi,,155)",
+      "line": "a todas las naciones,, (La,,0)(Mi,,150)",
       "sC": ""
     },
     {
-      "line": "A TODAS LAS NACIONES., (La,,10)(Mi,,186)",
+      "line": "A TODAS LAS NACIONES., (La,,0)(Mi,,155)",
       "sC": "ta as"
     },
     {
-      "line": "Vendrán y verán mi gloria,, (Fa#,,60)(Si,7,212)",
+      "line": "Vendrán y verán mi gloria,, (Fa#,,35)(Si,7,195)",
       "sC": ""
     },
     {
-      "line": "VENDRÁN Y VERÁN MI GLORIA., (La,,74)(Mi,,252)",
+      "line": "VENDRÁN Y VERÁN MI GLORIA., (La,,45)(Mi,,205)",
       "sC": "ta as"
     },
     {
@@ -63,11 +63,11 @@
       "sC": "adb1"
     },
     {
-      "line": "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+      "line": "GLORIA, GLORIA, GLORIA., (La,,15)(Mi,,40)(La,,95)(Mi,,120)(Si,7,170)(Mi,,200)",
       "sC": "ta as"
     },
     {
-      "line": "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+      "line": "GLORIA, GLORIA, GLORIA., (La,,15)(Mi,,40)(La,,95)(Mi,,120)(Si,7,170)(Mi,,200)",
       "sC": "as"
     },
     {
@@ -98,11 +98,11 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "GLORIA, GLORIA, GLORIA, (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+      "triggerLine": "GLORIA, GLORIA, GLORIA., (La,,15)(Mi,,40)(La,,95)(Mi,,120)(Si,7,170)(Mi,,200)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+          "line": "GLORIA, GLORIA, GLORIA., (La,,15)(Mi,,40)(La,,95)(Mi,,120)(Si,7,170)(Mi,,200)",
           "sC": "as"
         }
       ]
@@ -149,11 +149,11 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "GLORIA, GLORIA, GLORIA, (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+      "triggerLine": "GLORIA, GLORIA, GLORIA., (La,,15)(Mi,,40)(La,,95)(Mi,,120)(Si,7,170)(Mi,,200)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "GLORIA, GLORIA, GLORIA., (La,,31)(Mi,,66)(La,,116)(Mi,,151)(Si,7,202)(Mi,,237)",
+          "line": "GLORIA, GLORIA, GLORIA., (La,,15)(Mi,,40)(La,,95)(Mi,,120)(Si,7,170)(Mi,,200)",
           "sC": "as"
         }
       ]

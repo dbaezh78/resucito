@@ -59984,5 +59984,2525 @@
         ]
       }
     ]
+  },
+  "virgendelamaravilla": {
+    "lizq": [
+      [
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 7
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 18
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 9
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 17
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 6
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 16
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 8
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 25.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 2
+        }
+      ],
+      [
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 22
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "Mi",
+            "type": "m",
+            "pos": 7
+          },
+          {
+            "name": "Si",
+            "type": "m",
+            "pos": 18
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 0
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "m",
+              "pos": 9
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Fa#",
+              "type": "",
+              "pos": 17
+            }
+          ]
+        ]
+      },
+      [],
+      [
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 16
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 7
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 2
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 14
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 4
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 20.5
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "Mi",
+            "type": "m",
+            "pos": 7
+          },
+          {
+            "name": "Si",
+            "type": "m",
+            "pos": 18
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 3
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "m",
+              "pos": 9
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Fa#",
+              "type": "",
+              "pos": 17
+            }
+          ]
+        ]
+      }
+    ],
+    "lder": [
+      [
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 20
+        },
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 7
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 16
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 0.5
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 28.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 28.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 16.5
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "Mi",
+            "type": "m",
+            "pos": 7
+          },
+          {
+            "name": "Si",
+            "type": "m",
+            "pos": 18
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 3
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "m",
+              "pos": 9
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Fa#",
+              "type": "",
+              "pos": 17
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "vividalegres": {
+    "lizq": [
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 29
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "7",
+          "pos": 0
+        },
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 29.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 11
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 11
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 11
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "La",
+          "type": "7",
+          "pos": 12.5
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 17.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 10
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 11.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 10.5
+        }
+      ],
+      [],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 0
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 28.5
+            }
+          ],
+          [
+            {
+              "name": "La",
+              "type": "7",
+              "pos": 0
+            },
+            {
+              "name": "Re",
+              "type": "m",
+              "pos": 29.5
+            }
+          ],
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 11
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 11
+            }
+          ],
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 11
+            }
+          ]
+        ]
+      }
+    ],
+    "lder": []
+  },
+  "vosotrossoislaluzdelmundo": {
+    "lizq": [
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 5.5
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 27.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 13
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 8.5
+        },
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 25
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 12
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 26.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 25
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 26.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 25
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 19
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 28
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 19
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 39
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 8
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 18
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 2
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 15.5
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 47
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 5.5
+          },
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 25.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Re",
+              "type": "m",
+              "pos": 13
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 8.5
+            },
+            {
+              "name": "Re",
+              "type": "m",
+              "pos": 0
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 25
+            }
+          ],
+          [
+            {
+              "name": "Re",
+              "type": "m",
+              "pos": 0
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 12
+            }
+          ]
+        ]
+      },
+      []
+    ],
+    "lder": []
+  },
+  "yahvehtueresmidios": {
+    "lizq": [
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 21.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 13
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 14
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 11.5
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 21.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 13
+            }
+          ]
+        ]
+      },
+      [],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 15.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 15.5
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 13.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 13.5
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 21.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 13
+            }
+          ]
+        ]
+      }
+    ],
+    "lder": [
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 7.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 18
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 18.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 14.5
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 21.5
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 13
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "yavienemidios": {
+    "lizq": [
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 27.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 22
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 30.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 28
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 27
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 20.5
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Mi",
+            "type": "m",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 0
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 27.5
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 22
+            }
+          ]
+        ]
+      },
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 34.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 36.5
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 27
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 22
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_2",
+        "triggerLine": [
+          {
+            "name": "Mi",
+            "type": "m",
+            "pos": 2
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 0
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 27.5
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 22
+            }
+          ]
+        ]
+      }
+    ],
+    "lder": [
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 29.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 36
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 27
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 22
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_3",
+        "triggerLine": [
+          {
+            "name": "Mi",
+            "type": "m",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 0
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 27.5
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 22
+            }
+          ]
+        ]
+      },
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 39.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 33
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 31
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_4",
+        "triggerLine": [
+          {
+            "name": "Mi",
+            "type": "m",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 0
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 27.5
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "m",
+              "pos": 22
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "yoteamosenor": {
+    "lizq": [
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 13
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 27.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 33.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 5
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 24
+        }
+      ],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 8
+        },
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 32
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 6.5
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 27
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 32.5
+        }
+      ],
+      [],
+      [],
+      [],
+      [
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 25.5
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 25
+        }
+      ],
+      [
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 22.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 5
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 5.5
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 29.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 29
+        }
+      ]
+    ],
+    "lder": [
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 29
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 7
+        },
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 28.5
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 5.5
+        }
+      ],
+      [
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 29
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Re",
+            "type": "",
+            "pos": 0
+          },
+          {
+            "name": "Fa#",
+            "type": "",
+            "pos": 13
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Re",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Fa#",
+              "type": "",
+              "pos": 13
+            },
+            {
+              "name": "Si",
+              "type": "m",
+              "pos": 27.5
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Fa#",
+              "type": "",
+              "pos": 33.5
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 4.5
+            },
+            {
+              "name": "Fa#",
+              "type": "",
+              "pos": 24
+            }
+          ]
+        ]
+      },
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Re",
+            "type": "",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Re",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Si",
+              "type": "m",
+              "pos": 30
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 7.5
+            },
+            {
+              "name": "Re",
+              "type": "",
+              "pos": 31.5
+            }
+          ],
+          [
+            {
+              "name": "La",
+              "type": "",
+              "pos": 6.5
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 27
+            }
+          ],
+          [
+            {
+              "name": "Re",
+              "type": "",
+              "pos": 32.5
+            }
+          ]
+        ]
+      },
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "yovengoareunir": {
+    "lizq": [
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 15
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 16
+        }
+      ],
+      [
+        {
+          "name": "Fa#",
+          "type": "",
+          "pos": 4
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 20
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 5
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 21
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 12
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 1.5
+        },
+        {
+          "name": "La",
+          "type": "",
+          "pos": 4
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 9.5
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 17
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 20
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 12
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 1.5
+        },
+        {
+          "name": "La",
+          "type": "",
+          "pos": 4
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 9.5
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 17
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 20
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Do#",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 35
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 12
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 22
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 12
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 22
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "",
+            "pos": 12
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 1.5
+          },
+          {
+            "name": "La",
+            "type": "",
+            "pos": 4
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 9.5
+          },
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 17
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 20
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "",
+              "pos": 12
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 1.5
+            },
+            {
+              "name": "La",
+              "type": "",
+              "pos": 4
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 9.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 17
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 20
+            }
+          ]
+        ]
+      }
+    ],
+    "lder": [
+      [
+        {
+          "name": "Sol#",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "La",
+          "type": "",
+          "pos": 24.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 22
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 9.5
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 19.5
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 9.5
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 19.5
+        }
+      ],
+      [
+        {
+          "name": "Do#",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Sol#",
+          "type": "",
+          "pos": 20.5
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Sol#",
+          "type": "",
+          "pos": 16
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "",
+          "pos": 5.5
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 30
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 5.5
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 30
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "",
+            "pos": 12
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 1.5
+          },
+          {
+            "name": "La",
+            "type": "",
+            "pos": 4
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 9.5
+          },
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 17
+          },
+          {
+            "name": "Mi",
+            "type": "",
+            "pos": 20
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "",
+              "pos": 12
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 1.5
+            },
+            {
+              "name": "La",
+              "type": "",
+              "pos": 4
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 9.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 17
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 20
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "zaqueo": {
+    "lizq": [
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 17
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 13
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 18
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 33
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 24
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 27
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 18
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 22
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 19
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 40
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 4
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 28
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 0
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 17
+            }
+          ],
+          [
+            {
+              "name": "Fa",
+              "type": "",
+              "pos": 13
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 20
+            }
+          ]
+        ]
+      }
+    ],
+    "lder": [
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 25
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 21
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 31
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 43
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 8
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 46
+        }
+      ],
+      [],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 35
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 36
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 35
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 36
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 37
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 37
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 17
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 0
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 17
+            }
+          ],
+          [
+            {
+              "name": "Fa",
+              "type": "",
+              "pos": 12
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 17.5
+            }
+          ],
+          [],
+          [
+            {
+              "name": "La",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 36
+            }
+          ],
+          [
+            {
+              "name": "Fa",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 12
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "m",
+          "pos": 0
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 6
+        }
+      ],
+      [
+        {
+          "name": "Fa",
+          "type": "",
+          "pos": 5
+        },
+        {
+          "name": "Mi",
+          "type": "",
+          "pos": 30
+        }
+      ],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 0
+          },
+          {
+            "name": "La",
+            "type": "m",
+            "pos": 20
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 0
+            }
+          ],
+          [
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 17
+            }
+          ],
+          [
+            {
+              "name": "Fa",
+              "type": "",
+              "pos": 12.5
+            }
+          ],
+          [
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 17
+            }
+          ],
+          [],
+          [
+            {
+              "name": "La",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 35
+            }
+          ],
+          [
+            {
+              "name": "Fa",
+              "type": "",
+              "pos": 0.5
+            },
+            {
+              "name": "Mi",
+              "type": "",
+              "pos": 36
+            }
+          ]
+        ]
+      }
+    ]
   }
 }

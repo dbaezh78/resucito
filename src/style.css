@@ -1155,7 +1155,7 @@ header {
 }
 
 .linea-imagen img {
-  max-width: 100%;
+  max-width: 88%;
   height: auto;
   border-radius: 8px;
   border: 1px solid var(--panel-border);
@@ -3277,6 +3277,7 @@ footer {
 }
 
 
+
   }   /* **************** FIN DE 384px*/
 
 @media (min-width: 768px) {
@@ -3431,6 +3432,28 @@ footer {
   font-size: 0.8em;
   color: var(--chord-color);
 }
+
+.linea-canto.asterisco1::after {
+  content: " **";
+  font-weight: bold;
+  font-size: 0.7em;
+  color: var(--chord-color);
+}
+
+.linea-canto.asterisc::before {
+  content: " *";
+  font-weight: bold;
+  font-size: 0.8em;
+  color: var(--chord-color);
+}
+
+.linea-canto.asterisc1::before {
+  content: " **";
+  font-weight: bold;
+  font-size: 0.7em;
+  color: var(--chord-color);
+}
+
 
 .linea-canto.melisma::after {
   content: " (melisma)";

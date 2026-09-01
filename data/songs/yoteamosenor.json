@@ -198,7 +198,7 @@
     {
       "img": "/src/img/yoteamo1.png",
       "chords": "(Si,m,93)(La,,348)",
-      "sC": "img ast"
+      "sC": "img"
     },
     {
       "img": "/src/img/yoteamo2.png",
@@ -208,7 +208,7 @@
     {
       "img": "/src/img/yoteamo3.png",
       "chords": "(Sol,,65)(Fa#,,173)(Sol,,236)(Fa#,,430)",
-      "sC": "img"
+      "sC": "img asterisc"
     },
     {
       "line": "",
