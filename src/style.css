@@ -2070,7 +2070,8 @@ footer {
   margin-bottom: 4px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -100px;
+  margin-top: 0px;
+  text-align: end;
 }
 
 .canto-header-title {
@@ -3278,6 +3279,7 @@ footer {
 
 
 
+
   }   /* **************** FIN DE 384px*/
 
 @media (min-width: 768px) {
@@ -3497,8 +3499,8 @@ footer {
 /* Estilo para las notas oficiales del canto (mostradas encima del footer bar) */
 .viewer-song-official-notes {
   padding: 8px 16px;
-  font-family: sans-serif, system-ui, 'Montserrat';
-  font-size: 0.92rem;
+  /*font-family: sans-serif, system-ui, 'Montserrat';*/
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-color, #202020);
   background-color: var(--current-stage-bg, #f6fdf6);
@@ -3512,7 +3514,7 @@ footer {
 @media (min-width: 768px) {
   .viewer-song-official-notes {
     padding: 5px 10px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 

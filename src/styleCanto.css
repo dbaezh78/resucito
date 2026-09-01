@@ -7,21 +7,27 @@
  .srtp{
     margin-top: -43px;
     left: 178px;
-    }   
+    }
+
+    .linea-canto.ast-vsoislaluzdelmundo::after {left: 124px;}
 }
 
 @media (min-width: 768px){
  .srtp{
     margin-top: -77px;
     left: 321px;
-    }   
+    }
+
+    .linea-canto.ast-vsoislaluzdelmundo::after {left: 198px;}
 }
 
 @media (min-width: 992px){
  .srtp{
     margin-top: -52px;
     left: 240px;
-    }   
+    }
+
+    .linea-canto.ast-vsoislaluzdelmundo::after {left: 136px;}
 }
 
 
@@ -70,3 +76,15 @@
 .t2 {margin-top: -74px;}
 
 .b1 {margin-top: -24px;}
+
+
+
+.linea-canto.ast-vsoislaluzdelmundo::after {
+ 
+    content: "*";
+    font-weight: bold;
+    font-size: 0.7em;
+    color: var(--chord-color);
+    top: 0px;
+    position: absolute;
+}

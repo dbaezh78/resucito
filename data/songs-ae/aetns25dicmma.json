@@ -52,11 +52,11 @@
           "sC": "ta as bg"
         },
         {
-          "line": "Acordes:",
+          "line": "Acordes: ",
           "sC": "anota"
         },
         {
-          "line": "(Mi,m,10)(Re,,80)(Mi,m,150)",
+          "line": "(Mi,m,0)(Re,,100)(Mi,m,200)",
           "sC": "bnota"
         },
         {
@@ -111,7 +111,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Do,,10)(Mi,,80)(La,m,150)",
+          "line": "(Do,,0)(Mi,,100)(La,m,200)",
           "sC": "bnota"
         },
         {

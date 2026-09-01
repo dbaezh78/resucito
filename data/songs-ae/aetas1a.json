@@ -44,11 +44,11 @@
           "sC": "adb1"
         },
         {
-          "line": "Aleluya, aleluya, aleluya, aleluya., (Sol,,11)(Do,,200)(Re,,230)(Sol,,301)",
+          "line": "Aleluya, aleluya, aleluya, aleluya., (Sol,,0)(Do,,205)(Re,,235)(Sol,,320)",
           "sC": "tc"
         },
         {
-          "line": "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,11)(Do,,245)(Re,,275)(Sol,,369)",
+          "line": "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,0)(Do,,215)(Re,,240)(Sol,,325)",
           "sC": "ta as bg"
         },
         {
@@ -72,7 +72,7 @@
           "sC": "adb1"
         },
         {
-          "line": "ALELUYA ... (Sol,,11)",
+          "line": "ALELUYA ... (Sol,,0)",
           "sC": "ta as"
         },
         {
@@ -95,11 +95,11 @@
           "color": "gray"
         },
         {
-          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)",
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,0)(Mi,,130)(La,m,230)",
           "sC": "ta as"
         },
         {
-          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,10)(Mi,,152)(La,m,275)",
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,0)(Mi,,130)(La,m,230)",
           "sC": "as bg"
         },
         {
@@ -107,7 +107,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Do,,10)(Mi,,80)(La,m,150)",
+          "line": "(Do,,0)(Mi,,100)(La,m,200)",
           "sC": "bnota"
         },
         {
@@ -123,7 +123,7 @@
           "sC": "adb1"
         },
         {
-          "line": "ALELUYA ... (Do,,11)",
+          "line": "ALELUYA ... (Do,,0)",
           "sC": "ta as"
         }
       ]
@@ -141,11 +141,11 @@
           "sC": "adb1"
         },
         {
-          "line": "Aleluya, aleluya, aleluya., (Mi,m,21)(Re,,122)(Mi,m,219)",
+          "line": "Aleluya, aleluya, aleluya., (Mi,m,0)(Re,,120)(Mi,m,225)",
           "sC": "tc"
         },
         {
-          "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,154)(Mi,m,271)",
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,125)(Mi,m,225)",
           "sC": "ta as"
         },
         {
@@ -153,7 +153,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Mi,m,10)(La,m,80)(Mi,m,150)",
+          "line": "(Mi,m,0)(La,m,100)(Mi,m,200)",
           "sC": "bnota"
         },
         {
@@ -169,7 +169,7 @@
           "sC": "adb1"
         },
         {
-          "line": "ALELUYA ... (Mi,m,16)",
+          "line": "ALELUYA ... (Mi,m,0)",
           "sC": "ta as"
         }
       ]

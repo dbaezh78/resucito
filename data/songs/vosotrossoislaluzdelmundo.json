@@ -33,19 +33,16 @@
   "sig": "/src/index.html?canto=yavienemidios",
   "lizq": [
     {
-      "line": "VOSOTROS   SOIS LA LUZ DEL MUNDO,, (La,m,20)(Mi,,83)(La,m,317)",
-      "sC": "ta as"
+      "line": "VOSOTROS   SOIS LA LUZ DEL MUNDO,, (La,m,0)(Mi,,60)(La,m,275)",
+      "sC": "ta as ast-vsoislaluzdelmundo"
     },
+
     {
-      "line": "",
-      "sC": "ast"
-    },
-    {
-      "line": "SOIS LA LUZ, LA LUZ DEL MUNDO,, (Re,m,22)(Mi,,100)(Re,m,150)(Mi,,272)",
+      "line": "SOIS LA LUZ, LA LUZ DEL MUNDO,, (Re,m,0)(Mi,,85)(Re,m,130)(Mi,,250)",
       "sC": "as"
     },
     {
-      "line": "LA LUZ DEL MUNDO., (Re,m,22)(Mi,,142)",
+      "line": "LA LUZ DEL MUNDO., (Re,m,0)(Mi,,120)",
       "sC": "as"
     },
     {
@@ -53,39 +50,19 @@
       "sC": "adb1"
     },
     {
-      "line": "No puede ocultarse una ciudad, (La,m,20)(Mi,,279)",
+      "line": "No puede ocultarse una ciudad, (La,m,0)(Mi,,265)",
       "sC": "tc"
     },
     {
-      "line": "situada en la cima de un monte;, (La,m,267)",
+      "line": "situada en la cima de un monte;, (La,m,250)",
       "sC": ""
     },
     {
-      "line": "no puede ocultarse una ciudad, (Mi,,277)",
+      "line": "no puede ocultarse una ciudad, (Mi,,265)",
       "sC": ""
     },
     {
-      "line": "situada en la cima de un monte., (La,m,268)",
-      "sC": ""
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "Ni se enciende una lámpara,, (Mi,,200)",
-      "sC": ""
-    },
-    {
-      "line": "para ponerla debajo del celemín,, (La,m,295)",
-      "sC": ""
-    },
-    {
-      "line": "sino sobre el candelero,, (Re,m,20)(Mi,,197)",
-      "sC": ""
-    },
-    {
-      "line": "para que ilumine a los que están en la casa., (Re,m,22)(Mi,,392) ",
+      "line": "situada en la cima de un monte., (La,m,265)",
       "sC": ""
     },
     {
@@ -93,19 +70,39 @@
       "sC": "adb1"
     },
     {
-      "line": "Brille así vuestra luz, (Do,,10)(Mi,,76)(La,m,178)",
+      "line": "Ni se enciende una lámpara,, (Mi,,190)",
       "sC": ""
     },
     {
-      "line": "delante de los hombres,, (Fa,,33)(Mi,,158)",
+      "line": "para ponerla debajo del celemín,, (La,m,280)",
       "sC": ""
     },
     {
-      "line": "para que vean vuestras buenas obras, (Re,m,22)(Mi,,313)",
+      "line": "sino sobre el candelero,, (Re,m,0)(Mi,,200)",
       "sC": ""
     },
     {
-      "line": "y glorifiquen a vuestro Padre que está en los cielos., (Fa,,10)(Mi,,452)",
+      "line": "para que ilumine a los que están en la casa., (Re,m,0)(Mi,,400) ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Brille así vuestra luz, (Do,,0)(Mi,,80)(La,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "delante de los hombres,, (Fa,,25)(Mi,,155)",
+      "sC": ""
+    },
+    {
+      "line": "para que vean vuestras buenas obras, (Re,m,0)(Mi,,295)",
+      "sC": ""
+    },
+    {
+      "line": "y glorifiquen a vuestro Padre que está en los cielos., (Fa,,0)(Mi,,470)",
       "sC": ""
     },
     {
@@ -116,15 +113,15 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "VOSOTROS SOIS LA LUZ DEL MUNDO (La,m,20)(Mi,,83)(La,m,317)",
+      "triggerLine": "VOSOTROS SOIS LA LUZ DEL MUNDO (La,m,0)(Mi,,60)(La,m,255)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "SOIS LA LUZ, LA LUZ DEL MUNDO,, (Re,m,22)(Mi,,100)(Re,m,150)(Mi,,272)",
+          "line": "SOIS LA LUZ, LA LUZ DEL MUNDO,, (Re,m,0)(Mi,,90)(Re,m,160)(Mi,,250)",
           "sC": "as"
         },
         {
-          "line": "LA LUZ DEL MUNDO., (Re,m,22)(Mi,,142)",
+          "line": "LA LUZ DEL MUNDO., (Re,m,0)(Mi,,120)",
           "sC": "as"
         }
       ]
