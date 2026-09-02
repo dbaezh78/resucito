@@ -2,11 +2,12 @@ import { registerServiceWorker } from './pwa.js';
 import './navegador.js';
 import './js/ajustes.js';
 import './js/datos.js';
-import { searchSongs } from './search.js';
+import { searchSongs, normalizeText } from './search.js';
 import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';
 import { transposeNote, normalizeChord, CHROMATIC_SCALE, parseChord } from './chords.js';
 import { songs } from './songs-data.js';
 import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, getCurrentUser } from './auth.js';
+import { db, doc, setDoc, getDoc, deleteDoc, collection, getDocs } from './firebase.js';
 
 // Exponer API de autenticación globalmente para el navegador
 window.firebaseAPI = {
@@ -515,8 +516,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     ]);
     allSongs = await indexRes.json();
     window.allSongs = allSongs;
+
+    // Enriquecer el searchPool de Aclamaciones con números romanos, arábigos y nombres litúrgicos
+    allSongs.forEach(song => {
+      if ((song.sourceBook || '') === 'aclamaciones' || (song.id && song.id.startsWith('aet'))) {
+        const info = clasificarAclamacion(song);
+        const m = (song.id || '').match(/^aet(?:as|ns|cs|ps|os)(\d+)/i);
+        let extra = ` ${info.ciclo} ${info.tiempo} ${info.semana} ${info.celebracion} `;
+        if (m) {
+          const sNum = parseInt(m[1], 10);
+          const roman = (['i','ii','iii','iv','v','vi','vii','viii','ix','x','xi','xii','xiii','xiv','xv','xvi','xvii','xviii','xix','xx','xxi','xxii','xxiii','xxiv','xxv','xxvi','xxvii','xxviii','xxix','xxx','xxxi','xxxii','xxxiii','xxxiv'])[sNum - 1] || '';
+          extra += ` semana ${sNum} semana ${roman} domingo ${sNum} domingo ${roman} ${sNum} ${roman} `;
+        }
+        song.searchPool = ((song.searchPool || '') + ' ' + normalizeText(extra)).trim();
+      }
+    });
+
     // Ordenar alfabéticamente por la primera letra del título (ignorando símbolos iniciales como ¡ o ¿)
     sortSongsAlphabetically(allSongs);
+    cargarCatequesis(); // Cargar base de datos teológica y catequesis
     handleSearchAndFilters();
     updateExtrasTabVisibility();
     
@@ -543,6 +561,12 @@ function routeSPA() {
   
   // Detener scroll al cambiar de pantalla
   stopAutoScroll();
+
+  if (hash.startsWith('#catequesis=')) {
+    const songId = hash.replace('#catequesis=', '');
+    abrirVisorCatequesis(songId);
+    return;
+  }
   
   if (hash.startsWith('#canto=')) {
     const songId = hash.replace('#canto=', '');
@@ -796,16 +820,19 @@ async function loadSongView(songId) {
       const subtitle = currentCanto.subtitle || '';
       
       cantoHeaderBlock.innerHTML = `
-        <div class="canto-header-left">
-          <img src="img/christ.png" alt="Cristo" class="canto-header-img">
-            </div>
-
-        <div class="canto-header-center">
+        <div class="canto-header-top">
           <div class="canto-header-stage">${stage}</div>
-          <h1 class="canto-header-title">${title}</h1>
-          <div class="canto-header-subtitle">${subtitle}</div>
-            </div>
-        <div class="canto-header-right"></div>
+        </div>
+        <div class="canto-header-main">
+          <div class="canto-header-left">
+            <img src="img/christ.png" alt="Cristo" class="canto-header-img">
+          </div>
+          <div class="canto-header-center">
+            <h1 class="canto-header-title">${title}</h1>
+            <div class="canto-header-subtitle">${subtitle}</div>
+          </div>
+          <div class="canto-header-right"></div>
+        </div>
       `;
     }
     
@@ -2709,7 +2736,70 @@ function renderSongsList(songsList) {
     // Asignar el color de etapa como variable de CSS
     card.style.setProperty('--stage-color', getStageColor(song.stage));
     
-    if (currentBook === 'aclamaciones' || song.sourceBook === 'aclamaciones') {
+    if (currentBook === 'catequesis') {
+      if (idx === 0) {
+        let totalWithCat = 0;
+        songsList.forEach(s => {
+          if (obtenerCatequesisDeCanto(s.id)) totalWithCat++;
+        });
+
+        const canEdit = canEditCatequesis();
+        const actionButtonHtml = canEdit
+          ? `<button id="btn-open-cat-form-banner" class="btn theme-btn" style="padding: 6px 14px; font-weight: 700; font-size: 0.82rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+              <span class="material-symbols-outlined" style="font-size: 1.1rem;">edit_note</span>
+              + Añadir / Editar Catequesis
+            </button>`
+          : `<span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); background: var(--panel-bg); padding: 5px 12px; border-radius: 6px; border: 1px solid var(--panel-border);">📖 Solo Lectura</span>`;
+
+        const banner = document.createElement('div');
+        banner.className = 'catequesis-banner-bar';
+        banner.innerHTML = `
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212); font-size: 1.6rem;">auto_stories</span>
+            <div>
+              <strong style="font-size: 0.95rem; color: var(--text-color); display: block;">Índice de Catequesis de Cantos</strong>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">${totalWithCat} de ${songsList.length} cantos con catequesis</span>
+            </div>
+          </div>
+          ${actionButtonHtml}
+        `;
+        songsGrid.appendChild(banner);
+
+        const btnBanner = banner.querySelector('#btn-open-cat-form-banner');
+        if (btnBanner) {
+          btnBanner.addEventListener('click', () => abrirFormularioCatequesis());
+        }
+      }
+
+      card.href = `#catequesis=${song.id}`;
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        abrirVisorCatequesis(song.id);
+      });
+
+      const cat = obtenerCatequesisDeCanto(song.id);
+      const hasCat = cat && (cat.significado_teologico || cat.tema || cat.esencia_cristo || cat.testimonio || cat.citas_paralelos || cat.autor);
+
+      const statusBadge = hasCat
+        ? `<span class="catequesis-status-badge has-cat"><span class="material-symbols-outlined" style="font-size: 0.9rem;">check_circle</span> Catequesis</span>`
+        : `<span class="catequesis-status-badge no-cat"><span class="material-symbols-outlined" style="font-size: 0.9rem;">pending</span> Pendiente</span>`;
+
+      card.innerHTML = `
+        <div class="song-card-number">
+          <span>Canto #${song.dbno || 'S/N'}</span>
+          <span class="badge ${stageClass}">${song.stage || 'General'}</span>
+          ${statusBadge}
+        </div>
+        <div class="song-card-title">${song.title || song.tt}</div>
+        <div class="song-card-subtitle">${song.subtitle || ''}</div>
+        <div class="song-card-badges">
+          ${song.hasAudio ? '<span class="badge badge-audio">Audio</span>' : ''}
+          ${cat && cat.autor ? `<span class="badge badge-capo">👤 ${cat.autor}</span>` : ''}
+          ${cat && cat.citas_paralelos ? `<span class="badge badge-capo" style="color: #2563eb; border-color: #2563eb;">📖 Citas</span>` : ''}
+        </div>
+      `;
+      songsGrid.appendChild(card);
+    } else if (currentBook === 'aclamaciones' || song.sourceBook === 'aclamaciones') {
       const info = clasificarAclamacion(song);
       const isCurrentWeek = (song.id === currentLiturgicalId);
       if (isCurrentWeek) {
@@ -2765,42 +2855,479 @@ function renderSongsList(songsList) {
   });
 }
 
-async function renderCatequesis() {
-  songsGrid.innerHTML = '';
-  
-  if (!catequesisData) {
-    songsGrid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--text-muted);">Cargando catequesis...</div>`;
-    try {
-      const response = await fetch('data/catequesis.json');
-      catequesisData = await response.json();
-    } catch (e) {
-      console.error('Error al cargar catequesis:', e);
-      songsGrid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: red;">No se pudo cargar la catequesis.</div>`;
-      return;
+// --- MÓDULO DE CATEQUESIS ---
+let allCatequesisMap = {};
+window.allCatequesisMap = allCatequesisMap;
+
+function canEditCatequesis() {
+  if (typeof isCurrentUserAdmin === 'function' && isCurrentUserAdmin()) return true;
+  if (typeof hasPermission === 'function' && hasPermission('edit_catequesis')) return true;
+  return false;
+}
+window.canEditCatequesis = canEditCatequesis;
+
+function normalizeCatequesisKey(str) {
+  if (!str) return '';
+  return str.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]/g, '');
+}
+
+function obtenerCatequesisDeCanto(songId) {
+  if (!songId) return null;
+  const cleanId = songId.trim();
+  const normId = normalizeCatequesisKey(cleanId);
+
+  if (allCatequesisMap[cleanId]) return allCatequesisMap[cleanId];
+  if (allCatequesisMap[normId]) return allCatequesisMap[normId];
+
+  for (const key in allCatequesisMap) {
+    if (normalizeCatequesisKey(key) === normId) {
+      return allCatequesisMap[key];
     }
   }
-  
-  songsGrid.innerHTML = '';
-  const container = document.createElement('div');
-  container.className = 'catequesis-container';
-  
-  catequesisData.forEach(item => {
-    const card = document.createElement('div');
-    card.className = 'catequesis-card';
-    
-    const htmlContent = item.catequesis || '';
-    const author = item.autor ? `<p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;"><b>Autor:</b> ${item.autor} | <b>Fuente:</b> ${item.fuente_biblica || 'Litúrgica'}</p>` : '';
-    
-    card.innerHTML = `
-      <h2>${item.titulo || item.title || 'Sin Título'}</h2>
-      ${author}
-      <div class="catequesis-body">${htmlContent}</div>
-    `;
-    container.appendChild(card);
-  });
-  
-  songsGrid.appendChild(container);
+
+  const song = allSongs.find(s => s.id === songId);
+  if (song) {
+    const titleNorm = normalizeCatequesisKey(song.title || song.tt);
+    for (const key in allCatequesisMap) {
+      const item = allCatequesisMap[key];
+      if (normalizeCatequesisKey(item.cantoTitulo || item.titulo || item.title || key) === titleNorm) {
+        return item;
+      }
+    }
+  }
+
+  return null;
 }
+window.obtenerCatequesisDeCanto = obtenerCatequesisDeCanto;
+
+async function cargarCatequesis() {
+  // 1. Cargar datos cacheados
+  try {
+    const saved = localStorage.getItem('resucito_all_catequesis');
+    if (saved) {
+      allCatequesisMap = JSON.parse(saved);
+      window.allCatequesisMap = allCatequesisMap;
+    }
+  } catch (e) {}
+
+  // 2. Semilla desde catequesis.json si está vacío
+  if (Object.keys(allCatequesisMap).length === 0) {
+    try {
+      const res = await fetch('data/catequesis.json');
+      if (res.ok) {
+        const jsonList = await res.json();
+        if (Array.isArray(jsonList)) {
+          jsonList.forEach(item => {
+            const key = item.id || normalizeCatequesisKey(item.titulo || item.title);
+            allCatequesisMap[key] = {
+              cantoId: key,
+              cantoTitulo: item.titulo || item.title || '',
+              autor: item.autor || 'Kiko Argüello',
+              fuente: item.fuente_biblica || '',
+              tema: '',
+              significado_teologico: item.catequesis || '',
+              esencia_cristo: '',
+              testimonio: '',
+              citas_paralelos: item.fuente_biblica || '',
+              otros: ''
+            };
+          });
+          window.allCatequesisMap = allCatequesisMap;
+          localStorage.setItem('resucito_all_catequesis', JSON.stringify(allCatequesisMap));
+        }
+      }
+    } catch (e) {
+      console.warn('Aviso: no se pudo cargar catequesis.json inicial:', e);
+    }
+  }
+
+  // 3. Sincronizar desde Firebase Firestore
+  try {
+    const snap = await getDocs(collection(db, 'catequesis'));
+    if (snap && !snap.empty) {
+      snap.forEach(docSnap => {
+        const data = docSnap.data();
+        if (data && (data.cantoId || docSnap.id)) {
+          const key = data.cantoId || docSnap.id;
+          allCatequesisMap[key] = { ...allCatequesisMap[key], ...data };
+        }
+      });
+      window.allCatequesisMap = allCatequesisMap;
+      localStorage.setItem('resucito_all_catequesis', JSON.stringify(allCatequesisMap));
+      if (currentBook === 'catequesis' && typeof window.handleSearchAndFilters === 'function') {
+        window.handleSearchAndFilters();
+      }
+    }
+  } catch (e) {
+    console.debug('Firestore catequesis sync offline o sin permisos:', e.message);
+  }
+}
+window.cargarCatequesis = cargarCatequesis;
+
+async function guardarCatequesisEnFirebase(songId, data) {
+  if (!songId) return;
+  const key = songId.trim();
+  allCatequesisMap[key] = { ...data, cantoId: key, updatedAt: Date.now() };
+  window.allCatequesisMap = allCatequesisMap;
+  localStorage.setItem('resucito_all_catequesis', JSON.stringify(allCatequesisMap));
+
+  try {
+    await setDoc(doc(db, 'catequesis', key), allCatequesisMap[key]);
+  } catch (e) {
+    console.warn('Aviso: guardado localmente, error en Firebase:', e.message);
+  }
+
+  if (currentBook === 'catequesis' && typeof window.handleSearchAndFilters === 'function') {
+    window.handleSearchAndFilters();
+  }
+}
+window.guardarCatequesisEnFirebase = guardarCatequesisEnFirebase;
+
+async function eliminarCatequesisDeFirebase(songId) {
+  if (!songId) return;
+  const key = songId.trim();
+  delete allCatequesisMap[key];
+  window.allCatequesisMap = allCatequesisMap;
+  localStorage.setItem('resucito_all_catequesis', JSON.stringify(allCatequesisMap));
+
+  try {
+    await deleteDoc(doc(db, 'catequesis', key));
+  } catch (e) {
+    console.warn('Aviso: eliminada localmente, error en Firebase:', e.message);
+  }
+
+  if (currentBook === 'catequesis' && typeof window.handleSearchAndFilters === 'function') {
+    window.handleSearchAndFilters();
+  }
+}
+window.eliminarCatequesisDeFirebase = eliminarCatequesisDeFirebase;
+
+function formatBiblicalCitationsHtml(citasStr) {
+  if (!citasStr || !citasStr.trim()) return '<span style="color: var(--text-muted); font-style: italic;">No hay citas registradas.</span>';
+
+  const citas = citasStr.split(/[,;\n\r]+/).map(c => c.trim()).filter(Boolean);
+  if (citas.length === 0) return '';
+
+  return `<div class="cat-bible-pills-container">` + citas.map(cita => {
+    const url = `https://biblia.resucito.do/?cita=${encodeURIComponent(cita)}`;
+    return `
+      <a href="${url}" target="_blank" rel="noopener noreferrer" class="cat-bible-pill" title="Abrir '${cita}' en la Biblia de Jerusalén Digital">
+        <span class="material-symbols-outlined">menu_book</span>
+        <span>${cita}</span>
+        <span class="material-symbols-outlined" style="font-size: 0.85rem; opacity: 0.7;">open_in_new</span>
+      </a>
+    `;
+  }).join('') + `</div>`;
+}
+
+function abrirVisorCatequesis(songId) {
+  const modal = document.getElementById('catequesis-viewer-modal');
+  const titleEl = document.getElementById('cat-view-canto-title');
+  const subtitleEl = document.getElementById('cat-view-canto-subtitle');
+  const bodyEl = document.getElementById('cat-view-body');
+  const btnEdit = document.getElementById('cat-view-btn-edit');
+  const btnClose = document.getElementById('cat-view-btn-close');
+
+  if (!modal || !bodyEl) return;
+
+  const song = allSongs.find(s => s.id === songId) || { id: songId, title: songId, subtitle: '' };
+  const cat = obtenerCatequesisDeCanto(songId);
+  const canEdit = canEditCatequesis();
+
+  titleEl.textContent = song.title || song.tt || songId;
+  subtitleEl.textContent = song.subtitle || ((song.stage || song.catCanto || '').toUpperCase());
+
+  if (btnEdit) {
+    btnEdit.style.display = canEdit ? 'inline-flex' : 'none';
+    btnEdit.onclick = () => {
+      cerrarVisorCatequesis();
+      abrirFormularioCatequesis(songId);
+    };
+  }
+
+  if (btnClose) {
+    btnClose.onclick = cerrarVisorCatequesis;
+  }
+
+  modal.onclick = (e) => {
+    if (e.target === modal) cerrarVisorCatequesis();
+  };
+
+  if (!cat || (!cat.significado_teologico && !cat.tema && !cat.esencia_cristo && !cat.testimonio && !cat.citas_paralelos && !cat.otros && !cat.autor)) {
+    const emptyBtnHtml = canEdit ? `
+      <button id="btn-cat-empty-create" class="btn theme-btn" style="padding: 10px 22px; font-weight: 700; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+        <span class="material-symbols-outlined">add_circle</span>
+        Completar Catequesis de este Canto
+      </button>
+    ` : '';
+
+    bodyEl.innerHTML = `
+      <div style="text-align: center; padding: 40px 20px; background: var(--input-bg); border-radius: 12px; border: 1.5px dashed var(--panel-border);">
+        <span class="material-symbols-outlined" style="font-size: 3.5rem; color: var(--text-muted); margin-bottom: 12px; display: block;">auto_stories</span>
+        <h4 style="margin: 0 0 8px 0; font-size: 1.15rem; font-weight: 700;">Aún no hay catequesis registrada</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 480px; margin: 0 auto 20px auto; line-height: 1.5;">
+          ${canEdit ? 'Puedes completar el autor, fuente, significado teológico, tema o esencia, testimonio, esencia de Cristo y citas bíblicas para este canto.' : 'La catequesis para este canto aún no ha sido redactada.'}
+        </p>
+        ${emptyBtnHtml}
+      </div>
+    `;
+    const btnCreate = document.getElementById('btn-cat-empty-create');
+    if (btnCreate) {
+      btnCreate.onclick = () => {
+        cerrarVisorCatequesis();
+        abrirFormularioCatequesis(songId);
+      };
+    }
+  } else {
+    let html = '';
+
+    if (cat.autor || cat.fuente) {
+      html += `
+        <div style="display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; background: var(--input-bg); padding: 12px 16px; border-radius: 10px; border: 1px solid var(--panel-border);">
+          ${cat.autor ? `<div><span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); display: block;">Autor</span><span style="font-size: 0.95rem; font-weight: 700;">👤 ${cat.autor}</span></div>` : ''}
+          ${cat.fuente ? `<div><span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); display: block;">Fuente</span><span style="font-size: 0.95rem; font-weight: 600;">📜 ${cat.fuente}</span></div>` : ''}
+        </div>
+      `;
+    }
+
+    if (cat.tema) {
+      html += `
+        <div class="cat-section-card">
+          <div class="cat-section-header">
+            <span class="material-symbols-outlined">lightbulb</span>
+            Tema o Esencia del Canto
+          </div>
+          <div class="cat-section-content">${cat.tema}</div>
+        </div>
+      `;
+    }
+
+    if (cat.significado_teologico) {
+      html += `
+        <div class="cat-section-card">
+          <div class="cat-section-header">
+            <span class="material-symbols-outlined">church</span>
+            Significado Teológico
+          </div>
+          <div class="cat-section-content">${cat.significado_teologico}</div>
+        </div>
+      `;
+    }
+
+    if (cat.esencia_cristo) {
+      html += `
+        <div class="cat-section-card">
+          <div class="cat-section-header">
+            <span class="material-symbols-outlined">cross</span>
+            Esencia de Cristo en el Canto
+          </div>
+          <div class="cat-section-content">${cat.esencia_cristo}</div>
+        </div>
+      `;
+    }
+
+    if (cat.testimonio) {
+      html += `
+        <div class="cat-section-card">
+          <div class="cat-section-header">
+            <span class="material-symbols-outlined">diversity_3</span>
+            Testimonio
+          </div>
+          <div class="cat-section-content">${cat.testimonio}</div>
+        </div>
+      `;
+    }
+
+    if (cat.citas_paralelos) {
+      html += `
+        <div class="cat-section-card" style="border-left-color: #2563eb;">
+          <div class="cat-section-header" style="color: #2563eb;">
+            <span class="material-symbols-outlined">menu_book</span>
+            Citas del Canto y sus Paralelos
+          </div>
+          ${formatBiblicalCitationsHtml(cat.citas_paralelos)}
+        </div>
+      `;
+    }
+
+    if (cat.otros) {
+      html += `
+        <div class="cat-section-card" style="border-left-color: var(--panel-border);">
+          <div class="cat-section-header" style="color: var(--text-color);">
+            <span class="material-symbols-outlined">info</span>
+            Otros
+          </div>
+          <div class="cat-section-content">${cat.otros}</div>
+        </div>
+      `;
+    }
+
+    bodyEl.innerHTML = html;
+  }
+
+  modal.style.display = 'flex';
+}
+window.abrirVisorCatequesis = abrirVisorCatequesis;
+
+function cerrarVisorCatequesis() {
+  const modal = document.getElementById('catequesis-viewer-modal');
+  if (modal) modal.style.display = 'none';
+}
+window.cerrarVisorCatequesis = cerrarVisorCatequesis;
+
+function llenarSelectorCantosFormulario(selectedSongId) {
+  const select = document.getElementById('cat-form-select-canto');
+  if (!select) return;
+
+  const uniqueSongs = [];
+  const seenIds = new Set();
+  (allSongs || []).forEach(s => {
+    if (s.id && !seenIds.has(s.id) && s.id !== 'cancionero') {
+      seenIds.add(s.id);
+      uniqueSongs.push(s);
+    }
+  });
+
+  uniqueSongs.sort((a, b) => (a.title || a.tt || '').localeCompare(b.title || b.tt || '', 'es', { sensitivity: 'base' }));
+
+  select.innerHTML = `<option value="">-- Selecciona un canto (${uniqueSongs.length} disponibles) --</option>` +
+    uniqueSongs.map(s => {
+      const hasCat = Boolean(obtenerCatequesisDeCanto(s.id));
+      const prefix = hasCat ? '📖 ' : '📝 ';
+      return `<option value="${s.id}" ${s.id === selectedSongId ? 'selected' : ''}>${prefix}${s.title || s.tt} (${(s.stage || s.catCanto || 'General').toUpperCase()})</option>`;
+    }).join('');
+}
+
+function abrirFormularioCatequesis(songId) {
+  if (!canEditCatequesis()) {
+    alert('No tienes permisos asignados para editar o redactar catequesis. Contacta a un administrador.');
+    return;
+  }
+
+  const modal = document.getElementById('catequesis-form-modal');
+  const form = document.getElementById('catequesis-form');
+  const selectCanto = document.getElementById('cat-form-select-canto');
+  const inputAutor = document.getElementById('cat-form-autor');
+  const inputFuente = document.getElementById('cat-form-fuente');
+  const inputTema = document.getElementById('cat-form-tema');
+  const inputTeologia = document.getElementById('cat-form-teologia');
+  const inputCristo = document.getElementById('cat-form-cristo');
+  const inputTestimonio = document.getElementById('cat-form-testimonio');
+  const inputCitas = document.getElementById('cat-form-citas');
+  const inputOtros = document.getElementById('cat-form-otros');
+  const btnDelete = document.getElementById('cat-form-btn-delete');
+  const btnClose = document.getElementById('cat-form-btn-close');
+  const btnCancel = document.getElementById('cat-form-btn-cancel');
+
+  if (!modal) return;
+
+  llenarSelectorCantosFormulario(songId);
+
+  function cargarDatosFormulario(id) {
+    if (!id) {
+      inputAutor.value = '';
+      inputFuente.value = '';
+      inputTema.value = '';
+      inputTeologia.value = '';
+      inputCristo.value = '';
+      inputTestimonio.value = '';
+      inputCitas.value = '';
+      inputOtros.value = '';
+      if (btnDelete) btnDelete.style.display = 'none';
+      return;
+    }
+
+    const cat = obtenerCatequesisDeCanto(id);
+    const song = allSongs.find(s => s.id === id);
+
+    if (cat) {
+      inputAutor.value = cat.autor || '';
+      inputFuente.value = cat.fuente || '';
+      inputTema.value = cat.tema || '';
+      inputTeologia.value = cat.significado_teologico || '';
+      inputCristo.value = cat.esencia_cristo || '';
+      inputTestimonio.value = cat.testimonio || '';
+      inputCitas.value = cat.citas_paralelos || '';
+      inputOtros.value = cat.otros || '';
+      if (btnDelete) btnDelete.style.display = 'inline-flex';
+    } else {
+      inputAutor.value = 'Kiko Argüello';
+      inputFuente.value = (song && song.subtitle) ? song.subtitle : '';
+      inputTema.value = '';
+      inputTeologia.value = '';
+      inputCristo.value = '';
+      inputTestimonio.value = '';
+      inputCitas.value = (song && song.subtitle) ? song.subtitle : '';
+      inputOtros.value = '';
+      if (btnDelete) btnDelete.style.display = 'none';
+    }
+  }
+
+  if (selectCanto) {
+    const targetId = songId || (selectCanto.options[1] ? selectCanto.options[1].value : '');
+    selectCanto.value = targetId;
+    cargarDatosFormulario(targetId);
+    selectCanto.onchange = () => cargarDatosFormulario(selectCanto.value);
+  }
+
+  if (btnClose) btnClose.onclick = cerrarFormularioCatequesis;
+  if (btnCancel) btnCancel.onclick = cerrarFormularioCatequesis;
+  modal.onclick = (e) => {
+    if (e.target === modal) cerrarFormularioCatequesis();
+  };
+
+  if (btnDelete) {
+    btnDelete.onclick = async () => {
+      const id = selectCanto.value;
+      if (!id) return;
+      if (confirm('¿Estás seguro de que deseas eliminar la catequesis de este canto?')) {
+        await eliminarCatequesisDeFirebase(id);
+        cargarDatosFormulario(id);
+        alert('Catequesis eliminada exitosamente.');
+      }
+    };
+  }
+
+  if (form) {
+    form.onsubmit = async (e) => {
+      e.preventDefault();
+      const id = selectCanto.value;
+      if (!id) {
+        alert('Por favor selecciona un canto.');
+        return;
+      }
+      const song = allSongs.find(s => s.id === id);
+      const data = {
+        cantoId: id,
+        cantoTitulo: song ? (song.title || song.tt) : id,
+        autor: inputAutor.value.trim(),
+        fuente: inputFuente.value.trim(),
+        tema: inputTema.value.trim(),
+        significado_teologico: inputTeologia.value.trim(),
+        esencia_cristo: inputCristo.value.trim(),
+        testimonio: inputTestimonio.value.trim(),
+        citas_paralelos: inputCitas.value.trim(),
+        otros: inputOtros.value.trim()
+      };
+
+      await guardarCatequesisEnFirebase(id, data);
+      alert('¡Catequesis guardada exitosamente en Firebase!');
+      cerrarFormularioCatequesis();
+      abrirVisorCatequesis(id);
+    };
+  }
+
+  modal.style.display = 'flex';
+}
+window.abrirFormularioCatequesis = abrirFormularioCatequesis;
+
+function cerrarFormularioCatequesis() {
+  const modal = document.getElementById('catequesis-form-modal');
+  if (modal) modal.style.display = 'none';
+}
+window.cerrarFormularioCatequesis = cerrarFormularioCatequesis;
 
 async function handleSearchAndFilters() {
   const searchBox = document.querySelector('.search-box-container');
@@ -2808,20 +3335,25 @@ async function handleSearchAndFilters() {
   const filtersToggleSec = document.querySelector('.filters-toggle-section');
   const aclamacionesFilterBar = document.getElementById('aclamaciones-filter-bar');
 
-  if (currentBook === 'catequesis') {
-    if (searchBox) searchBox.style.display = 'none';
-    if (searchRow) searchRow.style.display = 'none';
-    if (filtersToggleSec) filtersToggleSec.style.display = 'none';
-    if (aclamacionesFilterBar) aclamacionesFilterBar.style.display = 'none';
-    filtersPanel.style.display = 'none';
-    if (toggleFiltersBtn) toggleFiltersBtn.classList.remove('active');
-    
-    await renderCatequesis();
-    return;
-  }
-  
   if (searchBox) searchBox.style.display = 'flex';
   if (searchRow) searchRow.style.display = 'flex';
+
+  // Manejo de Catequesis (Muestra el índice con opción de visor de catequesis)
+  if (currentBook === 'catequesis') {
+    if (aclamacionesFilterBar) aclamacionesFilterBar.style.display = 'none';
+    if (filtersToggleSec) filtersToggleSec.style.display = 'block';
+
+    let sourceList = allSongs.filter(song => (song.sourceBook || 'resucito') === 'resucito');
+    if (sourceList.length === 0) sourceList = allSongs;
+
+    const query = searchInput ? searchInput.value : '';
+    filteredSongs = searchSongs(sourceList, query, activeStage, activeMoments);
+    window.filteredSongs = filteredSongs;
+
+    sortSongsAlphabetically(filteredSongs);
+    renderSongsList(filteredSongs);
+    return;
+  }
 
   // Manejo exclusivo para Aclamaciones (Ciclos y Tiempos Litúrgicos)
   if (currentBook === 'aclamaciones') {
@@ -2995,15 +3527,19 @@ function generarHtmlCantoBasico(song) {
   
   return `
     <div class="canto-header-block" style="border-bottom-color: var(--stage-color-${song.catCanto}, var(--panel-border));">
-      <div class="canto-header-left">
-        <img src="img/christ.png" alt="Cristo" class="canto-header-img">
-      </div>
-      <div class="canto-header-center">
+      <div class="canto-header-top">
         <div class="canto-header-stage">${stage}</div>
-        <h1 class="canto-header-title">${title}</h1>
-        <div class="canto-header-subtitle">${subtitle}</div>
       </div>
-      <div class="canto-header-right"></div>
+      <div class="canto-header-main">
+        <div class="canto-header-left">
+          <img src="img/christ.png" alt="Cristo" class="canto-header-img">
+        </div>
+        <div class="canto-header-center">
+          <h1 class="canto-header-title">${title}</h1>
+          <div class="canto-header-subtitle">${subtitle}</div>
+        </div>
+        <div class="canto-header-right"></div>
+      </div>
     </div>
     <div class="canto-columns-container">
       <div class="canto-column" style="text-align: center; color: var(--text-muted); font-style: italic; padding-top: 60px;">
@@ -3037,15 +3573,19 @@ function generarHtmlCanto(song) {
   
   return `
     <div class="canto-header-block" style="border-bottom-color: var(--stage-color-${song.catCanto}, var(--panel-border));">
-      <div class="canto-header-left">
-        <img src="img/christ.png" alt="Cristo" class="canto-header-img">
-      </div>
-      <div class="canto-header-center">
+      <div class="canto-header-top">
         <div class="canto-header-stage">${stage}</div>
-        <h1 class="canto-header-title">${title}</h1>
-        <div class="canto-header-subtitle">${subtitle}</div>
       </div>
-      <div class="canto-header-right"></div>
+      <div class="canto-header-main">
+        <div class="canto-header-left">
+          <img src="img/christ.png" alt="Cristo" class="canto-header-img">
+        </div>
+        <div class="canto-header-center">
+          <h1 class="canto-header-title">${title}</h1>
+          <div class="canto-header-subtitle">${subtitle}</div>
+        </div>
+        <div class="canto-header-right"></div>
+      </div>
     </div>
     <div class="canto-columns-container">
       <div class="canto-column">${leftHtml}</div>

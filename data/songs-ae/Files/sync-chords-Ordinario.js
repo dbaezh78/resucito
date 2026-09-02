@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const TARGET_DIR = path.resolve('C:/db/Github/resucito/data/songs-ae');
-const BASE_FILE = 'aetcs1a.json';
+const BASE_FILE = 'aetas1a.json';
 
 // Expresión regular para capturar la secuencia de acordes al final de la línea o sola
 const CHORD_REGEX = /(\s*,\s*)?(\([A-Za-zÁ-Úá-ú0-9#b/, ]+\))+$/;

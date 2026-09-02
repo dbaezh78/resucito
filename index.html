@@ -7,7 +7,7 @@
   <link rel="icon" href="img/ico.ico" type="image/x-icon">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#000000">
-  <link rel="stylesheet" href="src/style.css?v=86">
+  <link rel="stylesheet" href="src/style.css?v=91">
   <link rel="stylesheet" href="src/styleCanto.css">
   <link rel="stylesheet" href="src/navegador.css">
 </head>
@@ -417,9 +417,131 @@
     </div>
   </div>
 
+  <!-- MODAL: VISOR DE CATEQUESIS -->
+  <div id="catequesis-viewer-modal" class="modal-overlay" style="display: none; z-index: 100005;">
+    <div class="modal-content catequesis-viewer-content" style="max-width: 850px; max-height: 90vh; overflow-y: auto; border-radius: 16px;">
+      <div class="modal-header" style="position: sticky; top: 0; background: var(--panel-bg); z-index: 10; border-bottom: 1.5px solid var(--panel-border); padding: 16px 20px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="material-symbols-outlined" style="font-size: 1.8rem; color: var(--accent-color, #d01212);">auto_stories</span>
+          <div>
+            <h3 id="cat-view-canto-title" style="margin: 0; font-size: 1.25rem; font-weight: 800;">Título del Canto</h3>
+            <span id="cat-view-canto-subtitle" style="font-size: 0.82rem; color: var(--text-muted);">Cita Bíblica</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button id="cat-view-btn-edit" class="btn theme-btn" style="padding: 6px 12px; font-size: 0.8rem; font-weight: 700; border-radius: 8px; display: inline-flex; align-items: center; gap: 4px;">
+            <span class="material-symbols-outlined" style="font-size: 1.1rem;">edit</span>
+            Editar
+          </button>
+          <button id="cat-view-btn-close" class="modal-close" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-color);">&times;</button>
+        </div>
+      </div>
+      <div id="cat-view-body" class="catequesis-view-body" style="padding: 20px;">
+        <!-- Contenido dinámico renderizado por JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: FORMULARIO DE CATEQUESIS -->
+  <div id="catequesis-form-modal" class="modal-overlay" style="display: none; z-index: 100005;">
+    <div class="modal-content catequesis-form-content" style="max-width: 800px; max-height: 90vh; overflow-y: auto; border-radius: 16px;">
+      <div class="modal-header" style="position: sticky; top: 0; background: var(--panel-bg); z-index: 10; border-bottom: 1.5px solid var(--panel-border); padding: 16px 20px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="material-symbols-outlined" style="font-size: 1.8rem; color: var(--accent-color, #d01212);">edit_note</span>
+          <div>
+            <h3 style="margin: 0; font-size: 1.2rem; font-weight: 800;">Formulario de Catequesis</h3>
+            <p style="margin: 2px 0 0 0; font-size: 0.8rem; color: var(--text-muted);">Completa la información teológica y bíblica del canto</p>
+          </div>
+        </div>
+        <button id="cat-form-btn-close" class="modal-close" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-color);">&times;</button>
+      </div>
+
+      <form id="catequesis-form" style="padding: 20px; display: flex; flex-direction: column; gap: 16px;">
+        <!-- Selector de Canto -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.88rem; display: block; margin-bottom: 6px;">Seleccionar Canto:</label>
+          <select id="cat-form-select-canto" class="theme-select" style="width: 100%; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 700; font-size: 0.95rem;">
+            <!-- Opciones cargadas dinámicamente -->
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+          <!-- Autor -->
+          <div class="form-group">
+            <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Autor:</label>
+            <input type="text" id="cat-form-autor" placeholder="Ej: Kiko Argüello" class="theme-input" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box;">
+          </div>
+
+          <!-- Fuente -->
+          <div class="form-group">
+            <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Fuente:</label>
+            <input type="text" id="cat-form-fuente" placeholder="Ej: 2 Corintios / Liturgia de las Horas" class="theme-input" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box;">
+          </div>
+        </div>
+
+        <!-- Tema o esencia del canto -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Tema o esencia del canto:</label>
+          <textarea id="cat-form-tema" rows="3" placeholder="Describe el tema central o esencia del canto..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Significado Teológico -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Significado Teológico:</label>
+          <textarea id="cat-form-teologia" rows="4" placeholder="Profundización teológica y catequética..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Esencia de Cristo en el canto -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Esencia de Cristo en el canto:</label>
+          <textarea id="cat-form-cristo" rows="3" placeholder="Presencia y manifestación de Jesucristo en la letra y misterio..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Testimonio -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Testimonio:</label>
+          <textarea id="cat-form-testimonio" rows="3" placeholder="Experiencias, vivencia comunitaria o testimonios..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Citas del canto y sus paralelos -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">
+            Citas del canto y sus paralelos:
+            <span style="font-size: 0.75rem; font-weight: normal; color: var(--text-muted);">(Separadas por comas o punto y coma, ej: 2Co 6,3; Sal 110,1; Mt 5,1-12)</span>
+          </label>
+          <textarea id="cat-form-citas" rows="2" placeholder="Ej: 2Co 6,3; Sal 110,1; Mt 5,1-12; Jn 14,6" class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Otros -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Otros:</label>
+          <textarea id="cat-form-otros" rows="2" placeholder="Notas adicionales, notas ambientales o momentos litúrgicos sugeridos..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Botones de Acción -->
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+          <button type="button" id="cat-form-btn-delete" class="btn" style="background: rgba(220, 38, 38, 0.1); color: #dc2626; border: 1px solid #dc2626; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; display: none;">
+            <span class="material-symbols-outlined" style="font-size: 1.1rem; vertical-align: middle;">delete</span>
+            Eliminar Catequesis
+          </button>
+          
+          <div style="display: flex; gap: 10px; margin-left: auto;">
+            <button type="button" id="cat-form-btn-cancel" class="btn" style="padding: 8px 16px; border-radius: 8px; border: 1px solid var(--panel-border); font-weight: 600;">
+              Cancelar
+            </button>
+            <button type="submit" id="cat-form-btn-save" class="btn theme-btn" style="padding: 8px 20px; border-radius: 8px; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
+              <span class="material-symbols-outlined" style="font-size: 1.1rem;">save</span>
+              Guardar en Firebase
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- MODAL: AJUSTES -->
   <!-- AJUSTES MODAL: Cargado dinámicamente desde data/ajustes_modal.html -->
   <!-- SCRIPT PRINCIPAL -->
-  <script type="module" src="src/main.js?v=86"></script>
+  <script type="module" src="src/main.js?v=91"></script>
 </body>
 </html>

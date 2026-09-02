@@ -38,6 +38,7 @@ export const PERMISSIONS = {
   BOOK_ACLAMACIONES: "book_aclamaciones",
   BOOK_SALMODIAS: "book_salmodias",
   BOOK_CATEQUESIS: "book_catequesis",
+  EDIT_CATEQUESIS: "edit_catequesis", // Permiso para redactar y editar catequesis
   BOOK_FAVORITOS: "book_favoritos",
   BOOK_EXTRAS: "book_extras" // Permiso exclusivo para el libro Extras
 };
@@ -65,6 +66,7 @@ export const PERMISSION_LABELS = {
   "book_aclamaciones": "Ver Libro Aclamaciones",
   "book_salmodias": "Ver Libro Salmodias",
   "book_catequesis": "Ver Libro Catequesis",
+  "edit_catequesis": "Editar Catequesis de Cantos",
   "book_favoritos": "Ver Favoritos",
   "book_extras": "Ver Libro Extras (Exclusivo)"
 };

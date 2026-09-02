@@ -3029,9 +3029,11 @@ window.initAjustes = async function() {
       localStorage.setItem('liturgia_override', JSON.stringify(overrideData));
 
       try {
-        await setDoc(doc(db, 'config', 'liturgia'), overrideData);
+        if (auth.currentUser) {
+          await setDoc(doc(db, 'config', 'liturgia'), overrideData);
+        }
       } catch (e) {
-        console.warn('Error al guardar en Firebase:', e);
+        // Silencioso si no hay permisos en Firestore
       }
 
       window.refreshLiturgiaStatus();
@@ -3052,9 +3054,11 @@ window.initAjustes = async function() {
       if (selectSemana) selectSemana.value = 'auto';
 
       try {
-        await setDoc(doc(db, 'config', 'liturgia'), { active: false, updatedAt: Date.now() });
+        if (auth.currentUser) {
+          await setDoc(doc(db, 'config', 'liturgia'), { active: false, updatedAt: Date.now() });
+        }
       } catch (e) {
-        console.warn('Error al restablecer en Firebase:', e);
+        // Silencioso si no hay permisos en Firestore
       }
 
       window.refreshLiturgiaStatus();
@@ -3066,21 +3070,25 @@ window.initAjustes = async function() {
   // Cargar configuración de Firebase al inicio si existe
   async function cargarLiturgiaDesdeFirebase() {
     try {
-      const snap = await getDoc(doc(db, 'config', 'liturgia'));
-      if (snap.exists()) {
-        const data = snap.data();
-        if (data && data.active && (!data.expiresAt || Date.now() <= data.expiresAt)) {
-          localStorage.setItem('liturgia_override', JSON.stringify(data));
-          if (typeof window.handleSearchAndFilters === 'function') window.handleSearchAndFilters();
-        } else if (data && data.expiresAt && Date.now() > data.expiresAt) {
-          localStorage.removeItem('liturgia_override');
+      if (auth.currentUser) {
+        const snap = await getDoc(doc(db, 'config', 'liturgia'));
+        if (snap && snap.exists()) {
+          const data = snap.data();
+          if (data && data.active && (!data.expiresAt || Date.now() <= data.expiresAt)) {
+            localStorage.setItem('liturgia_override', JSON.stringify(data));
+            if (typeof window.handleSearchAndFilters === 'function') window.handleSearchAndFilters();
+          } else if (data && data.expiresAt && Date.now() > data.expiresAt) {
+            localStorage.removeItem('liturgia_override');
+          }
         }
       }
     } catch (e) {
-      console.warn('Error al consultar config/liturgia de Firebase:', e);
+      // Silencioso si no hay permisos en Firestore
     }
   }
-  cargarLiturgiaDesdeFirebase();
+  auth.onAuthStateChanged((user) => {
+    if (user) cargarLiturgiaDesdeFirebase();
+  });
 
   // Forzar el estado por defecto al iniciar
   window.switchThemeSubmodule('visual');

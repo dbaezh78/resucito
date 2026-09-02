@@ -56,7 +56,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Mi,m,0)(Re,,10)(Mi,m,20)",
+          "line": "(Mi,m,0)(Re,,100)(Mi,m,200)",
           "sC": "bnota"
         },
         {
@@ -70,10 +70,6 @@
         {
           "line": "y enciende en ellos la llama de tu amor",
           "sC": "bg"
-        },
-        {
-          "line": "(Sol,,0)",
-          "sC": "adb1"
         },
         {
           "line": "ALELUYA ... ",
@@ -111,7 +107,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Do,,0)(Mi,,10)(La,m,20)",
+          "line": "(Do,,0)(Mi,,100)(La,m,200)",
           "sC": "bnota"
         },
         {
@@ -125,10 +121,6 @@
         {
           "line": "y enciende en ellos la llama de tu amor",
           "sC": "bg"
-        },
-        {
-          "line": "(Do,,0)",
-          "sC": "adb1"
         },
         {
           "line": "ALELUYA ... (Do,,11)",
@@ -161,7 +153,7 @@
           "sC": "anota"
         },
         {
-          "line": "(Mi,m,0)(La,m,10)(Mi,m,20)",
+          "line": "(Mi,m,0)(La,m,100)(Mi,m,200)",
           "sC": "bnota"
         },
         {
@@ -175,10 +167,6 @@
         {
           "line": "y enciende en ellos la llama de tu amor",
           "sC": "bg"
-        },
-        {
-          "line": "(Mi,m,0)",
-          "sC": "adb1"
         },
         {
           "line": "ALELUYA ... (Mi,m,16)",
