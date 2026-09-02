@@ -2819,7 +2819,7 @@ window.initAjustes = async function() {
     });
   }
 
-  // Submódulo Canto vs Liturgia
+  // Submódulo Canto vs Liturgia vs Catequesis
   let currentCantoSubmodule = 'canto';
   window.switchCantoSubmodule = function(submodule) {
     currentCantoSubmodule = submodule;
@@ -2833,11 +2833,120 @@ window.initAjustes = async function() {
 
     const cantoContent = document.getElementById('canto-submodule-canto-content');
     const liturgiaContent = document.getElementById('canto-submodule-liturgia-content');
+    const catequesisContent = document.getElementById('canto-submodule-catequesis-content');
     if (cantoContent) cantoContent.style.display = submodule === 'canto' ? 'block' : 'none';
     if (liturgiaContent) liturgiaContent.style.display = submodule === 'liturgia' ? 'block' : 'none';
+    if (catequesisContent) catequesisContent.style.display = submodule === 'catequesis' ? 'block' : 'none';
 
     if (submodule === 'liturgia') {
       window.refreshLiturgiaStatus();
+    } else if (submodule === 'catequesis') {
+      window.initCatequesisVoiceSettings();
+    }
+  };
+
+  window.initCatequesisVoiceSettings = function() {
+    const voiceSelect = document.getElementById('tts-voice-select');
+    const rateSlider = document.getElementById('tts-rate-slider');
+    const rateLabel = document.getElementById('tts-rate-value-label');
+    const btnTest = document.getElementById('btn-test-tts-voice');
+    const btnTestText = document.getElementById('btn-test-tts-text');
+
+    if (!voiceSelect || !rateSlider) return;
+
+    const savedRate = localStorage.getItem('resucito_tts_rate') || '0.95';
+    rateSlider.value = savedRate;
+    if (rateLabel) rateLabel.textContent = `${parseFloat(savedRate).toFixed(2)}x`;
+
+    rateSlider.oninput = () => {
+      const val = rateSlider.value;
+      if (rateLabel) rateLabel.textContent = `${parseFloat(val).toFixed(2)}x`;
+      localStorage.setItem('resucito_tts_rate', val);
+    };
+
+    function populateVoices() {
+      if (!('speechSynthesis' in window)) {
+        voiceSelect.innerHTML = '<option value="">Síntesis de voz no soportada en este navegador</option>';
+        return;
+      }
+
+      const voices = window.speechSynthesis.getVoices();
+      if (!voices || voices.length === 0) {
+        voiceSelect.innerHTML = '<option value="">Cargando voces del sistema...</option>';
+        return;
+      }
+
+      const savedVoiceURI = localStorage.getItem('resucito_tts_voice_uri') || '';
+
+      // Ordenar: primero voces en español, luego el resto
+      const spanishVoices = voices.filter(v => v.lang.startsWith('es') || v.lang.includes('ES') || v.lang.includes('MX'));
+      const otherVoices = voices.filter(v => !v.lang.startsWith('es') && !v.lang.includes('ES') && !v.lang.includes('MX'));
+
+      let html = '';
+      if (spanishVoices.length > 0) {
+        html += '<optgroup label="Voces en Español (Recomendadas)">';
+        spanishVoices.forEach(v => {
+          const isSelected = v.voiceURI === savedVoiceURI || (!savedVoiceURI && (v.default || v.lang === 'es-ES'));
+          html += `<option value="${v.voiceURI}" ${isSelected ? 'selected' : ''}>${v.name} (${v.lang}) ${v.default ? '★ Por defecto' : ''}</option>`;
+        });
+        html += '</optgroup>';
+      }
+
+      if (otherVoices.length > 0) {
+        html += '<optgroup label="Otras Voces del Sistema">';
+        otherVoices.forEach(v => {
+          const isSelected = v.voiceURI === savedVoiceURI;
+          html += `<option value="${v.voiceURI}" ${isSelected ? 'selected' : ''}>${v.name} (${v.lang})</option>`;
+        });
+        html += '</optgroup>';
+      }
+
+      voiceSelect.innerHTML = html;
+    }
+
+    populateVoices();
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = populateVoices;
+    }
+
+    voiceSelect.onchange = () => {
+      localStorage.setItem('resucito_tts_voice_uri', voiceSelect.value);
+    };
+
+    if (btnTest) {
+      btnTest.onclick = () => {
+        if (!('speechSynthesis' in window)) return;
+
+        if (window.speechSynthesis.speaking) {
+          window.speechSynthesis.cancel();
+          if (btnTestText) btnTestText.textContent = 'Probar Voz Seleccionada';
+          btnTest.style.background = '#0284c7';
+          return;
+        }
+
+        const utter = new SpeechSynthesisUtterance("La paz de Cristo esté con vosotros. Esta es una prueba de la voz configurada para la catequesis.");
+        utter.rate = parseFloat(rateSlider.value) || 0.95;
+
+        const voices = window.speechSynthesis.getVoices();
+        const selectedURI = voiceSelect.value;
+        const voice = voices.find(v => v.voiceURI === selectedURI);
+        if (voice) {
+          utter.voice = voice;
+          utter.lang = voice.lang || 'es-ES';
+        }
+
+        utter.onstart = () => {
+          if (btnTestText) btnTestText.textContent = 'Detener Prueba';
+          btnTest.style.background = '#dc2626';
+        };
+
+        utter.onend = utter.onerror = () => {
+          if (btnTestText) btnTestText.textContent = 'Probar Voz Seleccionada';
+          btnTest.style.background = '#0284c7';
+        };
+
+        window.speechSynthesis.speak(utter);
+      };
     }
   };
 

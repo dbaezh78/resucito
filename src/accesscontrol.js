@@ -1905,7 +1905,6 @@ export function updateAddSongStageButtonState() {
 
 // Inicializar módulo y escuchadores silenciosos en vivo con Firebase Cloud
 initAccessControl();
-listenToRegisteredUsersFromFirebase();
 listenToGroupConfigFromFirebase();
 
 window.hasPermission = hasPermission;

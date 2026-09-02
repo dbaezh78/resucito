@@ -313,28 +313,46 @@ window.cargarHistorialCantoDesdeNube = cargarHistorialCantoDesdeNube;
 
 // --- Control de Etapas de Cantos ---
 window.globalPositionsCache = {};
+try {
+  const cachedPos = localStorage.getItem('resucito_global_positions_cache');
+  if (cachedPos) {
+    window.globalPositionsCache = JSON.parse(cachedPos);
+  }
+} catch (e) {}
 
-export function listenToGlobalPositions() {
+let lastGlobalPositionsSync = 0;
+
+export async function syncGlobalPositionsFromFirebase(force = false) {
+  const now = Date.now();
+  // Solo sincronizar si han pasado más de 12 horas o es forzado
+  if (!force && (now - lastGlobalPositionsSync < 12 * 60 * 60 * 1000)) {
+    return;
+  }
+  lastGlobalPositionsSync = now;
+
   try {
     const colRef = collection(db, "global_positions");
-    onSnapshot(colRef, (snapshot) => {
-      snapshot.forEach((doc) => {
-        window.globalPositionsCache[doc.id] = doc.data();
+    const snapshot = await getDocs(colRef);
+    if (snapshot && !snapshot.empty) {
+      snapshot.forEach((docSnap) => {
+        window.globalPositionsCache[docSnap.id] = docSnap.data();
       });
-      // Forzar recálculo del buscador y catálogo
+      localStorage.setItem('resucito_global_positions_cache', JSON.stringify(window.globalPositionsCache));
       if (typeof window.handleSearchAndFilters === 'function') {
         window.handleSearchAndFilters();
       }
-      // Forzar renderizado de la tabla de etapas si está visible
       if (typeof window.renderSongStagesTable === 'function') {
         window.renderSongStagesTable();
       }
-    }, (error) => {
-      console.warn("⚠️ [Firebase] Error escuchando global_positions:", error);
-    });
+    }
   } catch (e) {
-    console.warn("⚠️ [Firebase] Error al iniciar listenToGlobalPositions:", e);
+    console.debug("⚠️ [Firebase] global_positions sync offline:", e.message);
   }
+}
+
+export function listenToGlobalPositions() {
+  // Carga inicial optimizada con caché local sin saturar lecturas
+  syncGlobalPositionsFromFirebase();
 }
 
 export function canCurrentUserSeeSong(songId) {

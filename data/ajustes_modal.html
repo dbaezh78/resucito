@@ -1146,7 +1146,7 @@
 
         <!-- Panel Canto -->
         <div id="settings-panel-canto" class="settings-panel-group" style="display: none; padding: 16px;">
-          <!-- Selector de Submódulos dentro de Canto (Canto, Liturgia) -->
+          <!-- Selector de Submódulos dentro de Canto (Canto, Liturgia, Catequesis) -->
           <div class="canto-subtabs" style="display: flex; gap: 8px; border-bottom: 1.5px solid var(--panel-border); padding-bottom: 12px; margin-bottom: 16px;">
             <button class="canto-subtab-btn active" data-subtab="canto" id="canto-subtab-canto-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; border-bottom: 2.5px solid var(--accent-color); font-weight: 700; color: var(--accent-color); cursor: pointer; transition: all 0.2s;">
               <span class="material-symbols-outlined" style="font-size: 1.15rem;">music_note</span>
@@ -1155,6 +1155,10 @@
             <button class="canto-subtab-btn" data-subtab="liturgia" id="canto-subtab-liturgia-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s;">
               <span class="material-symbols-outlined" style="font-size: 1.15rem;">church</span>
               Liturgia
+            </button>
+            <button class="canto-subtab-btn" data-subtab="catequesis" id="canto-subtab-catequesis-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">auto_stories</span>
+              Catequesis
             </button>
           </div>
 
@@ -1370,6 +1374,89 @@
               </a>
             </div>
           </div><!-- Fin de canto-submodule-liturgia-content -->
+
+          <!-- Contenido Submódulo: Catequesis (Opciones de Lectura y Voces) -->
+          <div id="canto-submodule-catequesis-content" class="canto-submodule-panel" style="display: none;">
+            <div style="margin-bottom: 16px;">
+              <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                <span class="material-symbols-outlined" style="color: var(--accent-color);">auto_stories</span>
+                Lector de Voz de Catequesis (Text-to-Speech)
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">
+                Personaliza la voz, velocidad y opciones de lectura automática de las catequesis de los cantos.
+              </p>
+            </div>
+
+            <!-- Selector de Voz -->
+            <div class="setting-row" style="margin-bottom: 0; padding: 12px 0; border-bottom: 1px solid var(--panel-border);">
+              <div class="setting-label">
+                <h4>Voz del Lector</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Selecciona entre las diferentes voces instaladas en tu sistema</p>
+              </div>
+              <div class="setting-control" style="flex: 1.5;">
+                <select id="tts-voice-select" class="theme-select" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600;">
+                  <option value="">Cargando voces del sistema...</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Velocidad de Lectura -->
+            <div class="setting-row" style="margin-bottom: 0; padding: 12px 0; border-bottom: 1px solid var(--panel-border);">
+              <div class="setting-label">
+                <h4>Velocidad de Lectura</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">Cadencia de locución al leer la catequesis</p>
+              </div>
+              <div class="setting-control" style="flex: 1.5; display: flex; align-items: center; gap: 10px;">
+                <input type="range" id="tts-rate-slider" min="0.5" max="1.6" step="0.05" value="0.95" style="flex-grow: 1; accent-color: var(--accent-color, #d01212); cursor: pointer;">
+                <span id="tts-rate-value-label" style="min-width: 48px; text-align: center; font-weight: 700; font-size: 0.85rem; padding: 4px 8px; background: var(--input-bg); border: 1px solid var(--panel-border); border-radius: 6px;">0.95x</span>
+              </div>
+            </div>
+
+            <!-- Fila Botón de Prueba -->
+            <div style="display: flex; justify-content: flex-end; margin: 16px 0;">
+              <button id="btn-test-tts-voice" class="btn" style="padding: 8px 16px; font-size: 0.85rem; font-weight: 700; border-radius: 8px; background: #0284c7; color: #fff; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+                <span class="material-symbols-outlined" style="font-size: 1.2rem;">volume_up</span>
+                <span id="btn-test-tts-text">Probar Voz Seleccionada</span>
+              </button>
+            </div>
+
+            <!-- Guía y Enlaces para Descargar Voces Adicionales -->
+            <div style="background: var(--input-bg); border: 1.5px solid var(--panel-border); border-radius: 12px; padding: 16px; margin-top: 10px;">
+              <h5 style="margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 700; display: flex; align-items: center; gap: 8px; color: var(--text-color);">
+                <span class="material-symbols-outlined" style="color: #0284c7;">download</span>
+                ¿Cómo descargar y agregar más voces a tu dispositivo?
+              </h5>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.4;">
+                El navegador utiliza las voces nativas instaladas en tu sistema operativo. Puedes instalar paquetes de voz en español adicionales para obtener locuciones naturales y fluidas:
+              </p>
+
+              <!-- Opciones por Sistema Operativo -->
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <!-- Windows -->
+                <div style="padding: 10px 12px; background: var(--panel-bg); border-radius: 8px; border: 1px solid var(--panel-border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                  <div>
+                    <strong style="font-size: 0.85rem; display: block;">💻 Windows 10 / 11</strong>
+                    <span style="font-size: 0.75rem; color: var(--text-muted);">Configuración > Hora e idioma > Voz > 'Agregar voces' (ej: Helena, Laura, Sabina)</span>
+                  </div>
+                  <a href="ms-settings:speech" class="btn theme-btn" style="padding: 5px 12px; font-size: 0.75rem; font-weight: 700; text-decoration: none; border-radius: 6px;">
+                    Abrir Ajustes de Voz
+                  </a>
+                </div>
+
+                <!-- Android -->
+                <div style="padding: 10px 12px; background: var(--panel-bg); border-radius: 8px; border: 1px solid var(--panel-border);">
+                  <strong style="font-size: 0.85rem; display: block;">📱 Android (Google TTS)</strong>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">Ajustes > Accesibilidad > Salida de Texto a Voz > Motor de Google ⚙️ > 'Instalar datos de voz en Español'</span>
+                </div>
+
+                <!-- iOS / Apple -->
+                <div style="padding: 10px 12px; background: var(--panel-bg); border-radius: 8px; border: 1px solid var(--panel-border);">
+                  <strong style="font-size: 0.85rem; display: block;">🍎 iPhone / iPad / Mac</strong>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">Ajustes > Accesibilidad > Contenido Leído > Voces > Español > Descarga voces mejoradas de Siri</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- Fin de canto-submodule-catequesis-content -->
         </div>
 
         <!-- Panel Usuario (con Submódulos Cuenta y Acceso) -->

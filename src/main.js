@@ -2902,7 +2902,7 @@ function obtenerCatequesisDeCanto(songId) {
 }
 window.obtenerCatequesisDeCanto = obtenerCatequesisDeCanto;
 
-async function cargarCatequesis() {
+async function cargarCatequesis(force = false) {
   // 1. Cargar datos cacheados
   try {
     const saved = localStorage.getItem('resucito_all_catequesis');
@@ -2943,7 +2943,13 @@ async function cargarCatequesis() {
     }
   }
 
-  // 3. Sincronizar desde Firebase Firestore
+  // 3. Sincronizar desde Firebase Firestore solo si es necesario (evitar consumo de cuota)
+  const now = Date.now();
+  const lastSync = parseInt(localStorage.getItem('resucito_catequesis_last_sync') || '0', 10);
+  if (!force && (now - lastSync < 6 * 60 * 60 * 1000) && Object.keys(allCatequesisMap).length > 0) {
+    return;
+  }
+
   try {
     const snap = await getDocs(collection(db, 'catequesis'));
     if (snap && !snap.empty) {
@@ -2956,6 +2962,7 @@ async function cargarCatequesis() {
       });
       window.allCatequesisMap = allCatequesisMap;
       localStorage.setItem('resucito_all_catequesis', JSON.stringify(allCatequesisMap));
+      localStorage.setItem('resucito_catequesis_last_sync', String(now));
       if (currentBook === 'catequesis' && typeof window.handleSearchAndFilters === 'function') {
         window.handleSearchAndFilters();
       }
@@ -3064,6 +3071,14 @@ function formatBiblicalCitationsHtml(citasStr) {
   }).join('') + `</div>`;
 }
 
+let currentSpeechState = {
+  songId: null,
+  fullText: '',
+  currentCharIndex: 0,
+  isSpeaking: false,
+  timerId: null
+};
+
 function abrirVisorCatequesis(songId) {
   const modal = document.getElementById('catequesis-viewer-modal');
   const titleEl = document.getElementById('cat-view-canto-title');
@@ -3071,6 +3086,11 @@ function abrirVisorCatequesis(songId) {
   const bodyEl = document.getElementById('cat-view-body');
   const btnEdit = document.getElementById('cat-view-btn-edit');
   const btnClose = document.getElementById('cat-view-btn-close');
+  const btnListen = document.getElementById('cat-view-btn-listen');
+  const iconListen = document.getElementById('cat-view-listen-icon');
+  const textListen = document.getElementById('cat-view-listen-text');
+  const progressTrack = document.getElementById('cat-speech-progress-track');
+  const progressBar = document.getElementById('cat-speech-progress-bar');
 
   if (!modal || !bodyEl) return;
 
@@ -3080,6 +3100,266 @@ function abrirVisorCatequesis(songId) {
 
   titleEl.textContent = song.title || song.tt || songId;
   subtitleEl.textContent = song.subtitle || ((song.stage || song.catCanto || '').toUpperCase());
+
+  function resetBotonAudio() {
+    if (btnListen) {
+      btnListen.style.background = '#0284c7';
+      btnListen.classList.remove('speaking');
+    }
+    if (iconListen) iconListen.textContent = 'volume_up';
+    if (textListen) {
+      if (currentSpeechState.songId === songId && currentSpeechState.currentCharIndex > 0 && currentSpeechState.currentCharIndex < currentSpeechState.fullText.length) {
+        textListen.textContent = 'Continuar';
+        if (iconListen) iconListen.textContent = 'play_arrow';
+      } else {
+        textListen.textContent = 'Escuchar';
+      }
+    }
+  }
+
+  // Si cambiamos de canto, reiniciar estado de lectura
+  if (currentSpeechState.songId !== songId) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+    if (currentSpeechState.timerId) clearInterval(currentSpeechState.timerId);
+    currentSpeechState.songId = songId;
+    currentSpeechState.fullText = '';
+    currentSpeechState.currentCharIndex = 0;
+    currentSpeechState.isSpeaking = false;
+    if (progressBar) progressBar.style.width = '0%';
+    if (progressTrack) progressTrack.style.display = 'none';
+  } else {
+    // Si es el mismo canto y hay progreso guardado, reflejar la barra verde
+    if (currentSpeechState.fullText && currentSpeechState.currentCharIndex > 0) {
+      const savedPercent = Math.min(100, Math.max(0, (currentSpeechState.currentCharIndex / currentSpeechState.fullText.length) * 100));
+      if (progressBar) progressBar.style.width = savedPercent + '%';
+      if (progressTrack) progressTrack.style.display = 'block';
+    }
+  }
+
+  // Reflejar estado actual si está hablando
+  if (window.speechSynthesis && window.speechSynthesis.speaking && currentSpeechState.isSpeaking) {
+    if (btnListen) {
+      btnListen.style.background = '#dc2626';
+      btnListen.classList.add('speaking');
+    }
+    if (iconListen) iconListen.textContent = 'stop';
+    if (textListen) textListen.textContent = 'Detener';
+    if (progressTrack) progressTrack.style.display = 'block';
+  } else {
+    resetBotonAudio();
+  }
+
+  function prepararTextoCompleto() {
+    if (!currentSpeechState.fullText || currentSpeechState.songId !== songId) {
+      let textoParaLeer = `Catequesis del canto: ${song.title || song.tt || songId}. `;
+      if (cat) {
+        if (cat.autor) textoParaLeer += `Autor: ${cat.autor}. `;
+        if (cat.fuente) textoParaLeer += `Fuente: ${cat.fuente}. `;
+        if (cat.tema) textoParaLeer += `Tema o esencia del canto: ${cat.tema}. `;
+        if (cat.significado_teologico) textoParaLeer += `Significado Teológico: ${cat.significado_teologico}. `;
+        if (cat.esencia_cristo) textoParaLeer += `Esencia de Cristo en el canto: ${cat.esencia_cristo}. `;
+        if (cat.testimonio) textoParaLeer += `Testimonio: ${cat.testimonio}. `;
+        if (cat.otros) textoParaLeer += `Otros: ${cat.otros}. `;
+      } else {
+        textoParaLeer += 'Aún no hay catequesis registrada para este canto.';
+      }
+      textoParaLeer = textoParaLeer.replace(/<[^>]*>/g, ' ').replace(/[«»]/g, '').replace(/\s+/g, ' ').trim();
+      currentSpeechState.fullText = textoParaLeer;
+      currentSpeechState.songId = songId;
+    }
+  }
+
+  // Preparar texto inicial para que la barra siempre esté lista para adelantar/retroceder
+  prepararTextoCompleto();
+  if (progressTrack) progressTrack.style.display = 'block';
+
+  function reproducirVoz() {
+    prepararTextoCompleto();
+    if (currentSpeechState.currentCharIndex >= currentSpeechState.fullText.length) {
+      currentSpeechState.currentCharIndex = 0;
+    }
+
+    const startChar = currentSpeechState.currentCharIndex || 0;
+    let remainingText = currentSpeechState.fullText.slice(startChar);
+    if (!remainingText.trim()) {
+      currentSpeechState.currentCharIndex = 0;
+      remainingText = currentSpeechState.fullText;
+    }
+
+    const savedRate = parseFloat(localStorage.getItem('resucito_tts_rate') || '0.95');
+    const savedVoiceURI = localStorage.getItem('resucito_tts_voice_uri') || '';
+
+    const utterance = new SpeechSynthesisUtterance(remainingText);
+    utterance.lang = 'es-ES';
+    utterance.rate = savedRate;
+
+    // Asignar voz configurada por el usuario o por defecto en español
+    const voices = window.speechSynthesis.getVoices();
+    let chosenVoice = null;
+    if (savedVoiceURI) {
+      chosenVoice = voices.find(v => v.voiceURI === savedVoiceURI);
+    }
+    if (!chosenVoice) {
+      chosenVoice = voices.find(v => v.lang.startsWith('es') || v.lang.includes('ES') || v.lang.includes('MX'));
+    }
+    if (chosenVoice) {
+      utterance.voice = chosenVoice;
+      utterance.lang = chosenVoice.lang || 'es-ES';
+    }
+
+    // Seguimiento en tiempo real de los límites de palabras (boundary)
+    utterance.onboundary = (e) => {
+      if (e.charIndex !== undefined) {
+        const absoluteChar = startChar + e.charIndex;
+        currentSpeechState.currentCharIndex = absoluteChar;
+        const percent = Math.min(100, Math.max(0, (absoluteChar / currentSpeechState.fullText.length) * 100));
+        if (progressBar) progressBar.style.width = percent + '%';
+        if (progressTrack) progressTrack.style.display = 'block';
+      }
+    };
+
+    utterance.onstart = () => {
+      currentSpeechState.isSpeaking = true;
+      if (btnListen) {
+        btnListen.style.background = '#dc2626';
+        btnListen.classList.add('speaking');
+      }
+      if (iconListen) iconListen.textContent = 'stop';
+      if (textListen) textListen.textContent = 'Detener';
+      if (progressTrack) progressTrack.style.display = 'block';
+
+      // Animación suave continua entre eventos
+      const approxWords = remainingText.split(/\s+/).length;
+      const estimatedDurationMs = Math.max(1500, (approxWords / (135 * savedRate)) * 60 * 1000);
+      const startTime = Date.now();
+      const startPercent = (startChar / currentSpeechState.fullText.length) * 100;
+      const remainingPercent = Math.max(0, 100 - startPercent);
+
+      if (currentSpeechState.timerId) clearInterval(currentSpeechState.timerId);
+      currentSpeechState.timerId = setInterval(() => {
+        if (!window.speechSynthesis.speaking || !currentSpeechState.isSpeaking) {
+          clearInterval(currentSpeechState.timerId);
+          return;
+        }
+        const elapsed = Date.now() - startTime;
+        const fraction = Math.min(1, elapsed / estimatedDurationMs);
+        const currentTotalPercent = Math.min(99.5, startPercent + (fraction * remainingPercent));
+        if (progressBar) progressBar.style.width = currentTotalPercent + '%';
+      }, 100);
+    };
+
+    utterance.onend = () => {
+      if (currentSpeechState.timerId) clearInterval(currentSpeechState.timerId);
+      currentSpeechState.isSpeaking = false;
+      currentSpeechState.currentCharIndex = 0;
+      if (progressBar) progressBar.style.width = '100%';
+      setTimeout(() => {
+        if (progressBar) progressBar.style.width = '0%';
+      }, 800);
+      resetBotonAudio();
+    };
+
+    utterance.onerror = () => {
+      if (currentSpeechState.timerId) clearInterval(currentSpeechState.timerId);
+      currentSpeechState.isSpeaking = false;
+      resetBotonAudio();
+    };
+
+    window.speechSynthesis.speak(utterance);
+  }
+
+  // Adelantar o retroceder la locución al hacer clic o arrastrar la raya verde
+  function seekToClientX(clientX) {
+    prepararTextoCompleto();
+    if (!progressTrack || !currentSpeechState.fullText) return;
+    const rect = progressTrack.getBoundingClientRect();
+    const ratio = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
+    let targetChar = Math.floor(ratio * currentSpeechState.fullText.length);
+
+    // Ajustar al inicio de la palabra más próxima
+    if (targetChar > 0 && targetChar < currentSpeechState.fullText.length) {
+      const prevSpace = currentSpeechState.fullText.lastIndexOf(' ', targetChar);
+      if (prevSpace !== -1 && targetChar - prevSpace < 20) {
+        targetChar = prevSpace + 1;
+      }
+    }
+
+    currentSpeechState.currentCharIndex = targetChar;
+    const newPercent = (targetChar / currentSpeechState.fullText.length) * 100;
+    if (progressBar) progressBar.style.width = newPercent + '%';
+    if (progressTrack) progressTrack.style.display = 'block';
+
+    const wasSpeaking = currentSpeechState.isSpeaking;
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+    if (currentSpeechState.timerId) clearInterval(currentSpeechState.timerId);
+
+    if (wasSpeaking) {
+      reproducirVoz();
+    } else {
+      currentSpeechState.isSpeaking = false;
+      resetBotonAudio();
+    }
+  }
+
+  if (progressTrack) {
+    let isDraggingTrack = false;
+
+    progressTrack.onmousedown = (e) => {
+      isDraggingTrack = true;
+      seekToClientX(e.clientX);
+    };
+
+    window.onmousemove = (e) => {
+      if (isDraggingTrack) {
+        seekToClientX(e.clientX);
+      }
+    };
+
+    window.onmouseup = () => {
+      isDraggingTrack = false;
+    };
+
+    progressTrack.ontouchstart = (e) => {
+      if (e.touches && e.touches[0]) {
+        isDraggingTrack = true;
+        seekToClientX(e.touches[0].clientX);
+      }
+    };
+
+    window.ontouchmove = (e) => {
+      if (isDraggingTrack && e.touches && e.touches[0]) {
+        seekToClientX(e.touches[0].clientX);
+      }
+    };
+
+    window.ontouchend = () => {
+      isDraggingTrack = false;
+    };
+  }
+
+  if (btnListen) {
+    btnListen.onclick = () => {
+      if (!('speechSynthesis' in window)) {
+        alert('Tu navegador no soporta lectura de texto por voz.');
+        return;
+      }
+
+      if (window.speechSynthesis.speaking && currentSpeechState.isSpeaking) {
+        // Pausar y mantener posición actual
+        window.speechSynthesis.cancel();
+        currentSpeechState.isSpeaking = false;
+        if (currentSpeechState.timerId) clearInterval(currentSpeechState.timerId);
+        resetBotonAudio();
+        return;
+      }
+
+      reproducirVoz();
+    };
+  }
 
   if (btnEdit) {
     btnEdit.style.display = canEdit ? 'inline-flex' : 'none';
@@ -3214,6 +3494,11 @@ function abrirVisorCatequesis(songId) {
 window.abrirVisorCatequesis = abrirVisorCatequesis;
 
 function cerrarVisorCatequesis() {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+  if (currentSpeechState.timerId) clearInterval(currentSpeechState.timerId);
+  currentSpeechState.isSpeaking = false;
   const modal = document.getElementById('catequesis-viewer-modal');
   if (modal) modal.style.display = 'none';
 }
@@ -4056,6 +4341,17 @@ function setupEventListeners() {
   if (toneCapoTrigger) toneCapoTrigger.addEventListener('click', openChordModal);
   const toneDropdownTriggerBtn = document.getElementById('tone-dropdown-trigger');
   if (toneDropdownTriggerBtn) toneDropdownTriggerBtn.addEventListener('click', openChordModal);
+
+  // Botón de Catequesis del Canto
+  const toolbarCatequesisBtn = document.getElementById('toolbar-catequesis-btn');
+  if (toolbarCatequesisBtn) {
+    toolbarCatequesisBtn.addEventListener('click', () => {
+      const activeSongId = currentCanto?.id || currentCanto?.songId;
+      if (activeSongId) {
+        abrirVisorCatequesis(activeSongId);
+      }
+    });
+  }
 
   // Botón de acordes / transposición
   if (chordModalTriggerBtn) {
@@ -5808,6 +6104,7 @@ function setupEventListeners() {
   // --- Personalización Dinámica y Reordenamiento de Iconos (Celular, Tablet, PC) ---
   const ICON_LABELS = {
     search: { label: 'Buscador Rápido', icon: 'search' },
+    catequesis: { label: 'Catequesis del Canto (📖)', icon: 'auto_stories' },
     chord: { label: 'Transportar / Acordes (♪)', icon: 'music_note' },
     favorite: { label: 'Marcar Favorito (★)', icon: 'star' },
     split: { label: 'Vista en 2 Columnas (📖)', icon: 'menu_book' },
@@ -5821,6 +6118,7 @@ function setupEventListeners() {
 
   const DEFAULT_TOOLBAR_CONFIG = {
     mobile: [
+      { key: 'catequesis', inMenu: true },
       { key: 'chord', inMenu: true },
       { key: 'favorite', inMenu: true },
       { key: 'asamblea', inMenu: true },
@@ -5833,6 +6131,7 @@ function setupEventListeners() {
       { key: 'search', inMenu: true }
     ],
     tablet: [
+      { key: 'catequesis', inMenu: false },
       { key: 'chord', inMenu: true },
       { key: 'favorite', inMenu: false },
       { key: 'asamblea', inMenu: false },
@@ -5846,6 +6145,7 @@ function setupEventListeners() {
     ],
     pc: [
       { key: 'search', inMenu: false },
+      { key: 'catequesis', inMenu: false },
       { key: 'chord', inMenu: false },
       { key: 'favorite', inMenu: false },
       { key: 'split', inMenu: false },
@@ -6077,6 +6377,7 @@ function setupEventListeners() {
 
     const iconElements = {
       search: document.querySelector('.toolbar-search-container'),
+      catequesis: document.getElementById('toolbar-catequesis-btn'),
       chord: document.getElementById('chord-modal-trigger-btn'),
       favorite: document.getElementById('favorite-btn'),
       split: document.getElementById('split-layout-btn'),

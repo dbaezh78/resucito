@@ -40,7 +40,19 @@ service cloud.firestore {
       allow write: if true; 
     }
 
-    // 7. Bloqueo por defecto para cualquier otra colección no especificada
+    // 7. Colección de Catequesis (Lectura pública, escritura para usuarios autenticados)
+    match /catequesis/{cantoId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // 8. Colección de Configuración general y Liturgia (Lectura pública, escritura para usuarios autenticados)
+    match /config/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // 9. Bloqueo por defecto para cualquier otra colección no especificada
     match /{document=**} {
       allow read, write: if false;
     }
