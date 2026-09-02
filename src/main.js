@@ -2903,7 +2903,7 @@ function obtenerCatequesisDeCanto(songId) {
 window.obtenerCatequesisDeCanto = obtenerCatequesisDeCanto;
 
 async function cargarCatequesis(force = false) {
-  // 1. Cargar datos cacheados
+  // 1. Cargar datos cacheados desde localStorage
   try {
     const saved = localStorage.getItem('resucito_all_catequesis');
     if (saved) {
@@ -2912,39 +2912,42 @@ async function cargarCatequesis(force = false) {
     }
   } catch (e) {}
 
-  // 2. Semilla desde catequesis.json si está vacío o tiene pocos datos antiguos
-  if (Object.keys(allCatequesisMap).length < 10) {
-    try {
-      const res = await fetch('data/catequesis.json');
-      if (res.ok) {
-        const jsonList = await res.json();
-        if (Array.isArray(jsonList)) {
-          jsonList.forEach(item => {
-            const key = item.cantoId || item.id || normalizeCatequesisKey(item.cantoTitulo || item.titulo || item.title);
-            allCatequesisMap[key] = {
-              ...(allCatequesisMap[key] || {}),
-              cantoId: key,
-              cantoTitulo: item.cantoTitulo || item.titulo || item.title || '',
-              autor: item.autor || 'Kiko Argüello',
-              fuente: item.fuente || item.fuente_biblica || '',
-              tema: item.tema || '',
-              significado_teologico: item.significado_teologico || item.catequesis || '',
-              esencia_cristo: item.esencia_cristo || '',
-              testimonio: item.testimonio || '',
-              citas_paralelos: item.citas_paralelos || item.fuente_biblica || '',
-              otros: item.otros || ''
-            };
-          });
-          window.allCatequesisMap = allCatequesisMap;
-          localStorage.setItem('resucito_all_catequesis', JSON.stringify(allCatequesisMap));
+  // 2. Cargar/Fusionar siempre desde data/catequesis.json como base local garantizada
+  try {
+    const res = await fetch('data/catequesis.json');
+    if (res.ok) {
+      const jsonList = await res.json();
+      if (Array.isArray(jsonList)) {
+        jsonList.forEach(item => {
+          const key = item.cantoId || item.id || normalizeCatequesisKey(item.cantoTitulo || item.titulo || item.title);
+          // Usar datos de data/catequesis.json como base y sobreponer si hay datos previos válidos
+          const existing = allCatequesisMap[key] || {};
+          allCatequesisMap[key] = {
+            cantoId: key,
+            cantoTitulo: item.cantoTitulo || item.titulo || item.title || existing.cantoTitulo || '',
+            autor: item.autor || existing.autor || 'Kiko Argüello',
+            fuente: item.fuente || item.fuente_biblica || existing.fuente || '',
+            tema: item.tema || existing.tema || '',
+            significado_teologico: item.significado_teologico || item.catequesis || existing.significado_teologico || '',
+            esencia_cristo: item.esencia_cristo || existing.esencia_cristo || '',
+            testimonio: item.testimonio || existing.testimonio || '',
+            citas_paralelos: item.citas_paralelos || item.fuente_biblica || existing.citas_paralelos || '',
+            otros: item.otros || existing.otros || '',
+            ...existing
+          };
+        });
+        window.allCatequesisMap = allCatequesisMap;
+        localStorage.setItem('resucito_all_catequesis', JSON.stringify(allCatequesisMap));
+        if (currentBook === 'catequesis' && typeof window.handleSearchAndFilters === 'function') {
+          window.handleSearchAndFilters();
         }
       }
-    } catch (e) {
-      console.warn('Aviso: no se pudo cargar catequesis.json inicial:', e);
     }
+  } catch (e) {
+    console.warn('Aviso al cargar data/catequesis.json:', e);
   }
 
-  // 3. Sincronizar desde Firebase Firestore solo si es necesario (evitar consumo de cuota)
+  // 3. Sincronizar desde Firebase Firestore en segundo plano (si la cuota y conexión están disponibles)
   const now = Date.now();
   const lastSync = parseInt(localStorage.getItem('resucito_catequesis_last_sync') || '0', 10);
   if (!force && (now - lastSync < 6 * 60 * 60 * 1000) && Object.keys(allCatequesisMap).length > 0) {
@@ -2969,7 +2972,7 @@ async function cargarCatequesis(force = false) {
       }
     }
   } catch (e) {
-    console.debug('Firestore catequesis sync offline o sin permisos:', e.message);
+    console.debug('Firebase catequesis offline o cuota temporal alcanzada. Utilizando base de datos local data/catequesis.json');
   }
 }
 window.cargarCatequesis = cargarCatequesis;
