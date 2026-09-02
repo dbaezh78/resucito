@@ -2920,20 +2920,18 @@ async function cargarCatequesis(force = false) {
       if (Array.isArray(jsonList)) {
         jsonList.forEach(item => {
           const key = item.cantoId || item.id || normalizeCatequesisKey(item.cantoTitulo || item.titulo || item.title);
-          // Usar datos de data/catequesis.json como base y sobreponer si hay datos previos válidos
           const existing = allCatequesisMap[key] || {};
           allCatequesisMap[key] = {
             cantoId: key,
-            cantoTitulo: item.cantoTitulo || item.titulo || item.title || existing.cantoTitulo || '',
-            autor: item.autor || existing.autor || 'Kiko Argüello',
-            fuente: item.fuente || item.fuente_biblica || existing.fuente || '',
-            tema: item.tema || existing.tema || '',
-            significado_teologico: item.significado_teologico || item.catequesis || existing.significado_teologico || '',
-            esencia_cristo: item.esencia_cristo || existing.esencia_cristo || '',
-            testimonio: item.testimonio || existing.testimonio || '',
-            citas_paralelos: item.citas_paralelos || item.fuente_biblica || existing.citas_paralelos || '',
-            otros: item.otros || existing.otros || '',
-            ...existing
+            cantoTitulo: existing.cantoTitulo || item.cantoTitulo || item.titulo || item.title || '',
+            autor: existing.autor || item.autor || 'Kiko Argüello',
+            fuente: existing.fuente || item.fuente || item.fuente_biblica || '',
+            tema: existing.tema || item.tema || '',
+            significado_teologico: existing.significado_teologico || item.significado_teologico || item.catequesis || '',
+            esencia_cristo: existing.esencia_cristo || item.esencia_cristo || '',
+            testimonio: existing.testimonio || item.testimonio || '',
+            citas_paralelos: existing.citas_paralelos || item.citas_paralelos || item.fuente_biblica || '',
+            otros: existing.otros || item.otros || ''
           };
         });
         window.allCatequesisMap = allCatequesisMap;
