@@ -3662,11 +3662,11 @@ footer {
 .pred {z-index: 99;}
 
 
-@media (min-width: 1200px) {.modal-content{max-width: 43vw;}}
-@media (min-width: 1500px) {.modal-content{max-width: 35vw;}}
-@media (min-width: 1700px) {.modal-content{max-width: 30vw;}}
-@media (min-width: 2000px) {.modal-content{max-width: 27vw;}}
-@media (min-width: 2200px) {.modal-content{max-width: 25vw;}}
+@media (min-width: 1200px) {.modal-content{max-width: max-content;}}
+@media (min-width: 1500px) {.modal-content{max-width: max-content;}}
+@media (min-width: 1700px) {.modal-content{max-width: max-content;}}
+@media (min-width: 2000px) {.modal-content{max-width: max-content;}}
+@media (min-width: 2200px) {.modal-content{max-width: max-content;}}
 
 .small {
   text-align: justify;

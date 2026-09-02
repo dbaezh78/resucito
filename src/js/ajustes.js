@@ -2948,6 +2948,189 @@ window.initAjustes = async function() {
         window.speechSynthesis.speak(utter);
       };
     }
+
+    // --- Lógica de Importación y Exportación de CSV de Catequesis ---
+    const fileInput = document.getElementById('input-importar-csv-catequesis');
+    const btnSelectCSV = document.getElementById('btn-seleccionar-csv-catequesis');
+    const btnExportCSV = document.getElementById('btn-exportar-csv-catequesis');
+    const statusBox = document.getElementById('catequesis-import-status');
+
+    function parseCSVData(text) {
+      text = text.replace(/^\uFEFF/, '');
+      const rows = [];
+      let row = [];
+      let current = '';
+      let inQuotes = false;
+      
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        const next = text[i+1];
+        
+        if (char === '"') {
+          if (inQuotes && next === '"') {
+            current += '"';
+            i++;
+          } else {
+            inQuotes = !inQuotes;
+          }
+        } else if (char === ',' && !inQuotes) {
+          row.push(current.trim());
+          current = '';
+        } else if ((char === '\r' || char === '\n') && !inQuotes) {
+          if (char === '\r' && next === '\n') i++;
+          row.push(current.trim());
+          if (row.some(field => field.length > 0)) {
+            rows.push(row);
+          }
+          row = [];
+          current = '';
+        } else {
+          current += char;
+        }
+      }
+      if (current.length > 0 || row.length > 0) {
+        row.push(current.trim());
+        if (row.some(field => field.length > 0)) rows.push(row);
+      }
+      return rows;
+    }
+
+    function normalizeSongKey(str) {
+      return (str || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]/g, '');
+    }
+
+    if (btnSelectCSV && fileInput) {
+      btnSelectCSV.onclick = () => {
+        fileInput.value = '';
+        fileInput.click();
+      };
+
+      fileInput.onchange = async (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+
+        if (statusBox) {
+          statusBox.style.display = 'block';
+          statusBox.style.background = '#eff6ff';
+          statusBox.style.color = '#1d4ed8';
+          statusBox.style.border = '1px solid #bfdbfe';
+          statusBox.innerHTML = '⏳ Procesando archivo CSV...';
+        }
+
+        try {
+          const text = await file.text();
+          const rows = parseCSVData(text);
+          if (rows.length < 2) {
+            throw new Error('El archivo CSV está vacío o no tiene registros válidos.');
+          }
+
+          const songs = window.allSongs || [];
+          const songMapByNorm = new Map();
+          songs.forEach(s => {
+            songMapByNorm.set(normalizeSongKey(s.id), s);
+            songMapByNorm.set(normalizeSongKey(s.title || s.tt), s);
+          });
+
+          const currentMap = window.allCatequesisMap || {};
+          let importedCount = 0;
+
+          for (let r = 1; r < rows.length; r++) {
+            const row = rows[r];
+            if (!row || row.length === 0 || !row[0]) continue;
+            const [canto, autor, fuente, tema, significado_teologico, esencia_cristo, testimonio, citas_paralelos, otros] = row;
+            const norm = normalizeSongKey(canto);
+            const song = songMapByNorm.get(norm);
+            const cantoId = song ? song.id : norm;
+            const cantoTitulo = song ? (song.title || song.tt) : canto;
+
+            currentMap[cantoId] = {
+              ...(currentMap[cantoId] || {}),
+              cantoId,
+              cantoTitulo,
+              autor: autor || '',
+              fuente: fuente || '',
+              tema: tema || '',
+              significado_teologico: significado_teologico || '',
+              esencia_cristo: esencia_cristo || '',
+              testimonio: testimonio || '',
+              citas_paralelos: citas_paralelos || '',
+              otros: otros || '',
+              updatedAt: Date.now()
+            };
+            importedCount++;
+          }
+
+          window.allCatequesisMap = currentMap;
+          localStorage.setItem('resucito_all_catequesis', JSON.stringify(currentMap));
+
+          if (statusBox) {
+            statusBox.style.background = '#f0fdf4';
+            statusBox.style.color = '#15803d';
+            statusBox.style.border = '1px solid #bbf7d0';
+            statusBox.innerHTML = `✅ <strong>${importedCount} catequesis importadas con éxito</strong> en la memoria local y listas para consultar.`;
+          }
+
+          if (typeof window.handleSearchAndFilters === 'function') {
+            window.handleSearchAndFilters();
+          }
+        } catch (err) {
+          if (statusBox) {
+            statusBox.style.background = '#fef2f2';
+            statusBox.style.color = '#b91c1c';
+            statusBox.style.border = '1px solid #fecaca';
+            statusBox.innerHTML = `❌ Error al importar CSV: ${err.message}`;
+          }
+        }
+      };
+    }
+
+    if (btnExportCSV) {
+      btnExportCSV.onclick = () => {
+        const currentMap = window.allCatequesisMap || {};
+        const keys = Object.keys(currentMap);
+        if (keys.length === 0) {
+          alert('No hay catequesis registradas para exportar.');
+          return;
+        }
+
+        const headers = ['Canto', 'Autor', 'Fuente', 'Tema o esencia del canto', 'Significado Teológico', 'Esencia de Cristo en el canto', 'Testimonio', 'Citas del canto y sus paralelos', 'Otros'];
+        
+        function escapeCSV(val) {
+          if (val === null || val === undefined) return '""';
+          const str = String(val).replace(/"/g, '""');
+          return `"${str}"`;
+        }
+
+        const lines = [headers.join(',')];
+        keys.forEach(k => {
+          const c = currentMap[k];
+          const row = [
+            escapeCSV(c.cantoTitulo || c.titulo || c.title || k),
+            escapeCSV(c.autor || ''),
+            escapeCSV(c.fuente || ''),
+            escapeCSV(c.tema || ''),
+            escapeCSV(c.significado_teologico || ''),
+            escapeCSV(c.esencia_cristo || ''),
+            escapeCSV(c.testimonio || ''),
+            escapeCSV(c.citas_paralelos || ''),
+            escapeCSV(c.otros || '')
+          ];
+          lines.push(row.join(','));
+        });
+
+        const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `catequesis_cantos_backup_${new Date().toISOString().slice(0, 10)}.csv`;
+        a.click();
+        URL.revokeObjectURL(url);
+      };
+    }
   };
 
   document.querySelectorAll('.canto-subtab-btn').forEach(btn => {

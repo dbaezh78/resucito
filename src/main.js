@@ -2912,26 +2912,27 @@ async function cargarCatequesis(force = false) {
     }
   } catch (e) {}
 
-  // 2. Semilla desde catequesis.json si está vacío
-  if (Object.keys(allCatequesisMap).length === 0) {
+  // 2. Semilla desde catequesis.json si está vacío o tiene pocos datos antiguos
+  if (Object.keys(allCatequesisMap).length < 10) {
     try {
       const res = await fetch('data/catequesis.json');
       if (res.ok) {
         const jsonList = await res.json();
         if (Array.isArray(jsonList)) {
           jsonList.forEach(item => {
-            const key = item.id || normalizeCatequesisKey(item.titulo || item.title);
+            const key = item.cantoId || item.id || normalizeCatequesisKey(item.cantoTitulo || item.titulo || item.title);
             allCatequesisMap[key] = {
+              ...(allCatequesisMap[key] || {}),
               cantoId: key,
-              cantoTitulo: item.titulo || item.title || '',
+              cantoTitulo: item.cantoTitulo || item.titulo || item.title || '',
               autor: item.autor || 'Kiko Argüello',
-              fuente: item.fuente_biblica || '',
-              tema: '',
-              significado_teologico: item.catequesis || '',
-              esencia_cristo: '',
-              testimonio: '',
-              citas_paralelos: item.fuente_biblica || '',
-              otros: ''
+              fuente: item.fuente || item.fuente_biblica || '',
+              tema: item.tema || '',
+              significado_teologico: item.significado_teologico || item.catequesis || '',
+              esencia_cristo: item.esencia_cristo || '',
+              testimonio: item.testimonio || '',
+              citas_paralelos: item.citas_paralelos || item.fuente_biblica || '',
+              otros: item.otros || ''
             };
           });
           window.allCatequesisMap = allCatequesisMap;

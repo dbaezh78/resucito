@@ -1456,6 +1456,32 @@
                 </div>
               </div>
             </div>
+
+            <!-- Importación y Sincronización de Base de Datos de Catequesis -->
+            <div style="background: var(--input-bg); border: 1.5px solid var(--panel-border); border-radius: 12px; padding: 16px; margin-top: 16px;">
+              <h5 style="margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 700; display: flex; align-items: center; gap: 8px; color: var(--text-color);">
+                <span class="material-symbols-outlined" style="color: var(--accent-color);">upload_file</span>
+                Importar Base de Datos de Catequesis (CSV)
+              </h5>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.4;">
+                Carga el archivo <code>catequesisCantos.csv</code> para actualizar automáticamente las catequesis, significados teológicos, autores, testimonios y citas de todos los cantos.
+              </p>
+
+              <input type="file" id="input-importar-csv-catequesis" accept=".csv" style="display: none;">
+              
+              <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                <button id="btn-seleccionar-csv-catequesis" class="btn theme-btn" style="padding: 8px 16px; font-size: 0.85rem; font-weight: 700; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+                  <span class="material-symbols-outlined" style="font-size: 1.2rem;">folder_open</span>
+                  Seleccionar e Importar CSV
+                </button>
+                <button id="btn-exportar-csv-catequesis" class="btn" style="padding: 8px 16px; font-size: 0.85rem; font-weight: 700; border-radius: 8px; background: var(--panel-bg); border: 1px solid var(--panel-border); color: var(--text-color); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+                  <span class="material-symbols-outlined" style="font-size: 1.2rem;">download</span>
+                  Exportar Respaldo CSV
+                </button>
+              </div>
+
+              <div id="catequesis-import-status" style="display: none; margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 600;"></div>
+            </div>
           </div><!-- Fin de canto-submodule-catequesis-content -->
         </div>
 
