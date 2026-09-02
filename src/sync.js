@@ -167,6 +167,76 @@ export async function cargarPosicionesGlobales(cantoId) {
 }
 
 // Sincroniza todos los ajustes de la aplicación con Firestore
+export async function guardarFavoritosEnNube(favoritosArray) {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  try {
+    const list = Array.isArray(favoritosArray) ? favoritosArray : Array.from(window.favorites || []);
+    // 1. Guardar en documento específico de favoritos
+    const docRef = doc(db, "usuarios", user.uid, "configuracion", "favoritos");
+    await setDoc(docRef, {
+      lista: list,
+      ultimaActualizacion: new Date()
+    }, { merge: true });
+
+    // 2. Guardar también dentro de ajustes para carga rápida
+    const docRefAjustes = doc(db, "usuarios", user.uid, "configuracion", "ajustes");
+    await setDoc(docRefAjustes, {
+      favoritos: list,
+      ultimaActualizacion: new Date()
+    }, { merge: true });
+
+    console.log(`☁️ [Firebase] Favoritos (${list.length} cantos) guardados en la nube.`);
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudieron guardar los favoritos en la nube:", e.message || e);
+  }
+}
+
+export async function cargarFavoritosDesdeNube() {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  try {
+    const docRef = doc(db, "usuarios", user.uid, "configuracion", "favoritos");
+    const docSnap = await getDoc(docRef);
+
+    let cloudList = null;
+    if (docSnap.exists()) {
+      cloudList = docSnap.data().lista;
+    } else {
+      const docRefAjustes = doc(db, "usuarios", user.uid, "configuracion", "ajustes");
+      const snapAjustes = await getDoc(docRefAjustes);
+      if (snapAjustes.exists() && snapAjustes.data().favoritos) {
+        cloudList = snapAjustes.data().favoritos;
+      }
+    }
+
+    if (Array.isArray(cloudList)) {
+      if (!window.favorites) {
+        window.favorites = new Set();
+      }
+      cloudList.forEach(id => window.favorites.add(id));
+      localStorage.setItem('favorites', JSON.stringify([...window.favorites]));
+
+      if (window.currentBook === 'favoritos' && typeof window.handleSearchAndFilters === 'function') {
+        window.handleSearchAndFilters();
+      }
+
+      // Actualizar el estado visual del botón favorito si hay un canto abierto
+      const favoriteBtn = document.getElementById('favorite-btn');
+      if (favoriteBtn && window.currentCanto) {
+        favoriteBtn.classList.toggle('active-star', window.favorites.has(window.currentCanto.id));
+      }
+
+      console.log(`📥 [Firebase] Favoritos (${cloudList.length} cantos) sincronizados desde la nube.`);
+    }
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudieron cargar los favoritos desde la nube:", e.message || e);
+  }
+}
+
+// Sincroniza todos los ajustes de la aplicación con Firestore
 export async function guardarAjustesEnNube() {
   const user = auth.currentUser;
   if (!user) return;
@@ -190,10 +260,12 @@ export async function guardarAjustesEnNube() {
       perfilHeaderFontSize: localStorage.getItem('perfil-header-font-size') || '16',
       perfilHeaderFontWeight: localStorage.getItem('perfil-header-font-weight') || '700',
 
+      favoritos: Array.from(window.favorites || []),
+
       ultimaActualizacion: new Date()
     };
 
-    await setDoc(docRef, ajustes);
+    await setDoc(docRef, ajustes, { merge: true });
     console.log("☁️ [Firebase] Ajustes personales guardados en la nube.");
   } catch (e) {
     console.warn("⚠️ [Firebase] No se pudieron guardar los ajustes en la nube:", e.message || e);
@@ -227,8 +299,17 @@ export async function cargarAjustesDesdeNube() {
       if (data.perfilHeaderFontSize) localStorage.setItem('perfil-header-font-size', data.perfilHeaderFontSize);
       if (data.perfilHeaderFontWeight) localStorage.setItem('perfil-header-font-weight', data.perfilHeaderFontWeight);
 
+      if (Array.isArray(data.favoritos)) {
+        if (!window.favorites) window.favorites = new Set();
+        data.favoritos.forEach(id => window.favorites.add(id));
+        localStorage.setItem('favorites', JSON.stringify([...window.favorites]));
+      }
+
       console.log("📥 [Firebase] Ajustes personales descargados de la nube.");
     }
+
+    // Cargar también lista dedicada de favoritos
+    await cargarFavoritosDesdeNube();
   } catch (e) {
     console.warn("⚠️ [Firebase] No se pudieron cargar los ajustes desde la nube:", e.message || e);
   }
@@ -306,6 +387,8 @@ export async function cargarHistorialCantoDesdeNube(cantoId) {
 // Exponer globalmente
 window.guardarAjustesEnNube = guardarAjustesEnNube;
 window.cargarAjustesDesdeNube = cargarAjustesDesdeNube;
+window.guardarFavoritosEnNube = guardarFavoritosEnNube;
+window.cargarFavoritosDesdeNube = cargarFavoritosDesdeNube;
 window.guardarPosicionesEnNube = guardarPosicionesEnNube;
 window.cargarPosicionesDesdeNube = cargarPosicionesDesdeNube;
 window.guardarHistorialCantoEnNube = guardarHistorialCantoEnNube;

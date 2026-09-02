@@ -4975,6 +4975,11 @@ function setupEventListeners() {
       }
       localStorage.setItem('favorites', JSON.stringify([...favorites]));
       
+      // Sincronizar favoritos en Firebase Cloud
+      if (typeof window.guardarFavoritosEnNube === 'function') {
+        window.guardarFavoritosEnNube([...favorites]);
+      }
+
       if (currentBook === 'favoritos') {
         handleSearchAndFilters();
       }
