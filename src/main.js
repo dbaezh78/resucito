@@ -3004,18 +3004,60 @@ async function eliminarCatequesisDeFirebase(songId) {
 }
 window.eliminarCatequesisDeFirebase = eliminarCatequesisDeFirebase;
 
+function extractBiblicalEntries(rawText) {
+  if (!rawText) return [];
+  
+  // Dividir primero por saltos de línea o punto y coma
+  const rawSegments = rawText.split(/[\r\n;]+/);
+  const entries = [];
+
+  for (const seg of rawSegments) {
+    const trimmed = seg.trim();
+    if (!trimmed) continue;
+
+    // Si tiene '/', separar las citas divididas por barra
+    const subParts = trimmed.split(/\s*\/\s*/);
+    for (const part of subParts) {
+      const pTrimmed = part.trim();
+      if (!pTrimmed) continue;
+
+      // Comprobar si contiene una cita bíblica real:
+      // Caso 1: Tiene paréntesis con cita (ej: Apocalipsis (Ap 19,9), (1Co 10,1-2), (Ex 14,21-31))
+      const hasParenCita = /\([123]?\s*[a-zA-ZáéíóúñÁÉÍÓÚÑ]+\s*\d+[^)]*\)/.test(pTrimmed);
+      // Caso 2: Cita directa estándar con número de libro/nombre y capítulo (ej: 1Co 10,1-2, Sal 110,1, Mt 5,1-12)
+      const hasDirectCita = /\b[123]?\s*(?:gn|ex|sal|mt|mc|lc|jn|hch|rm|1co|2co|ga|ef|flp|col|1ts|2ts|1tm|2tm|tt|flm|hb|st|1p|2p|1jn|2jn|3jn|jud|ap|is|jr|ez|dn|os|jl|am|ab|jon|mi|na|ha|so|ag|za|ml|job|pr|cant|sab|si|ba|tb|jd|est|1m|2m|esd|ne|rut|cantares|eclesiastes|proverbios|genesis|exodo|levitico|numeros|deuteronomio|apocalipsis|hebreos|corintios|romanos|mateo|marcos|lucas|juan)\s+\d+\s*[,:]\s*[\d\s\-\.,al]+/i.test(pTrimmed);
+
+      if (hasParenCita || hasDirectCita) {
+        entries.push(pTrimmed);
+      }
+    }
+  }
+
+  return entries;
+}
+
+function extractTargetBiblicalQuery(citaFull) {
+  if (!citaFull) return '';
+  const m = citaFull.match(/\(([^)]+)\)/);
+  if (m && m[1].trim()) return m[1].trim();
+  // Si no tiene paréntesis, extraer solo la parte de la cita antes de dos puntos o comillas si hay texto
+  const clean = citaFull.split(/[:«]/)[0].trim();
+  return clean;
+}
+
 function formatBiblicalCitationsHtml(citasStr) {
   if (!citasStr || !citasStr.trim()) return '<span style="color: var(--text-muted); font-style: italic;">No hay citas registradas.</span>';
 
-  const citas = citasStr.split(/[,;\n\r]+/).map(c => c.trim()).filter(Boolean);
-  if (citas.length === 0) return '';
+  const citas = extractBiblicalEntries(citasStr);
+  if (citas.length === 0) return '<span style="color: var(--text-muted); font-style: italic;">No se detectaron citas bíblicas estructuradas.</span>';
 
-  return `<div class="cat-bible-pills-container">` + citas.map(cita => {
-    const url = `https://biblia.resucito.do/?cita=${encodeURIComponent(cita)}`;
+  return `<div class="cat-bible-pills-container">` + citas.map(citaDisplay => {
+    const targetQuery = extractTargetBiblicalQuery(citaDisplay);
+    const url = `https://biblia.resucito.do/?cita=${encodeURIComponent(targetQuery)}`;
     return `
-      <a href="${url}" target="_blank" rel="noopener noreferrer" class="cat-bible-pill" title="Abrir '${cita}' en la Biblia de Jerusalén Digital">
+      <a href="${url}" target="_blank" rel="noopener noreferrer" class="cat-bible-pill" title="Abrir '${targetQuery}' en la Biblia de Jerusalén Digital">
         <span class="material-symbols-outlined">menu_book</span>
-        <span>${cita}</span>
+        <span>${citaDisplay}</span>
         <span class="material-symbols-outlined" style="font-size: 0.85rem; opacity: 0.7;">open_in_new</span>
       </a>
     `;
@@ -3120,7 +3162,7 @@ function abrirVisorCatequesis(songId) {
       html += `
         <div class="cat-section-card">
           <div class="cat-section-header">
-            <span class="material-symbols-outlined">cross</span>
+            <span class="material-symbols-outlined">crown</span>
             Esencia de Cristo en el Canto
           </div>
           <div class="cat-section-content">${cat.esencia_cristo}</div>
