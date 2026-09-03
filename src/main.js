@@ -1,6 +1,6 @@
 import { registerServiceWorker } from './pwa.js';
 import './navegador.js';
-import './js/ajustes.js';
+import './js/ajustes.js?v=107';
 import './js/datos.js';
 import { searchSongs, normalizeText } from './search.js';
 import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';
@@ -2976,14 +2976,16 @@ async function cargarCatequesis(force = false) {
 window.cargarCatequesis = cargarCatequesis;
 
 async function guardarCatequesisEnFirebase(songId, data) {
-  if (!songId) return;
+  if (!songId) return false;
   const key = songId.trim();
   allCatequesisMap[key] = { ...data, cantoId: key, updatedAt: Date.now() };
   window.allCatequesisMap = allCatequesisMap;
   localStorage.setItem('resucito_all_catequesis', JSON.stringify(allCatequesisMap));
 
+  let success = false;
   try {
     await setDoc(doc(db, 'catequesis', key), allCatequesisMap[key]);
+    success = true;
   } catch (e) {
     console.warn('Aviso: guardado localmente, error en Firebase:', e.message);
   }
@@ -2991,6 +2993,7 @@ async function guardarCatequesisEnFirebase(songId, data) {
   if (currentBook === 'catequesis' && typeof window.handleSearchAndFilters === 'function') {
     window.handleSearchAndFilters();
   }
+  return success;
 }
 window.guardarCatequesisEnFirebase = guardarCatequesisEnFirebase;
 

@@ -862,7 +862,7 @@ window.initAjustes = async function() {
     if (!settingsModalPromise) {
       settingsModalPromise = (async () => {
         try {
-          const response = await fetch('data/ajustes_modal.html');
+          const response = await fetch('data/ajustes_modal.html?v=107');
           if (response.ok) {
             const html = await response.text();
             const tempDiv = document.createElement('div');
@@ -3129,6 +3129,109 @@ window.initAjustes = async function() {
         a.download = `catequesis_cantos_backup_${new Date().toISOString().slice(0, 10)}.csv`;
         a.click();
         URL.revokeObjectURL(url);
+      };
+    }
+
+    // --- Subir todas las catequesis a Firebase Cloud ---
+    const btnUploadAllFirebase = document.getElementById('btn-subir-todas-catequesis-firebase');
+    const btnUploadAllText = document.getElementById('btn-subir-catequesis-text');
+
+    if (btnUploadAllFirebase) {
+      btnUploadAllFirebase.onclick = async () => {
+        let currentMap = window.allCatequesisMap || {};
+        let keys = Object.keys(currentMap);
+
+        // Si el mapa en memoria está vacío, intentar cargar desde data/catequesis.json
+        if (keys.length === 0) {
+          try {
+            const res = await fetch('data/catequesis.json');
+            if (res.ok) {
+              const list = await res.json();
+              if (Array.isArray(list)) {
+                list.forEach(item => {
+                  const k = item.cantoId || item.id || normalizeSongKey(item.cantoTitulo || item.titulo || item.title);
+                  currentMap[k] = item;
+                });
+                window.allCatequesisMap = currentMap;
+                keys = Object.keys(currentMap);
+              }
+            }
+          } catch (e) {}
+        }
+
+        if (keys.length === 0) {
+          if (statusBox) {
+            statusBox.style.display = 'block';
+            statusBox.style.background = '#fef2f2';
+            statusBox.style.color = '#b91c1c';
+            statusBox.style.border = '1px solid #fecaca';
+            statusBox.innerHTML = '❌ No hay catequesis disponibles para subir. Importa primero un archivo CSV o recarga la app.';
+          }
+          return;
+        }
+
+        const total = keys.length;
+        if (!confirm(`¿Deseas subir ${total} catequesis a Firebase Cloud? Esta acción respaldará toda la base de datos en la nube.`)) {
+          return;
+        }
+
+        btnUploadAllFirebase.disabled = true;
+        btnUploadAllFirebase.style.opacity = '0.7';
+        if (btnUploadAllText) btnUploadAllText.textContent = 'Subiendo a Firebase...';
+
+        if (statusBox) {
+          statusBox.style.display = 'block';
+          statusBox.style.background = '#eff6ff';
+          statusBox.style.color = '#1d4ed8';
+          statusBox.style.border = '1px solid #bfdbfe';
+          statusBox.innerHTML = `⏳ Subiendo 0 de ${total} catequesis a Firebase Cloud...`;
+        }
+
+        let uploaded = 0;
+        let errors = 0;
+        let lastErrorMsg = '';
+
+        for (let i = 0; i < keys.length; i++) {
+          const k = keys[i];
+          const item = currentMap[k];
+          try {
+            if (typeof window.guardarCatequesisEnFirebase === 'function') {
+              const ok = await window.guardarCatequesisEnFirebase(k, item);
+              if (ok) uploaded++;
+              else errors++;
+            } else {
+              const docRef = doc(db, 'catequesis', k);
+              await setDoc(docRef, { ...item, updatedAt: Date.now() }, { merge: true });
+              uploaded++;
+            }
+          } catch (err) {
+            errors++;
+            lastErrorMsg = err.message || String(err);
+          }
+
+          // Actualizar progreso periódicamente
+          if (statusBox && (i % 10 === 0 || i === keys.length - 1)) {
+            statusBox.innerHTML = `⏳ Subiendo ${i + 1} de ${total} catequesis a Firebase Cloud (${uploaded} exitosos)...`;
+          }
+        }
+
+        btnUploadAllFirebase.disabled = false;
+        btnUploadAllFirebase.style.opacity = '1';
+        if (btnUploadAllText) btnUploadAllText.textContent = 'Subir Todo a Firebase Cloud';
+
+        if (statusBox) {
+          if (errors === 0) {
+            statusBox.style.background = '#f0fdf4';
+            statusBox.style.color = '#15803d';
+            statusBox.style.border = '1px solid #bbf7d0';
+            statusBox.innerHTML = `✅ <strong>¡Éxito! Las ${uploaded} catequesis fueron subidas y respaldadas correctamente en Firebase Cloud.</strong>`;
+          } else {
+            statusBox.style.background = '#fffbeb';
+            statusBox.style.color = '#b45309';
+            statusBox.style.border = '1px solid #fde68a';
+            statusBox.innerHTML = `⚠️ Se subieron <strong>${uploaded} de ${total}</strong> catequesis. Hubo ${errors} avisos (posible límite de cuota o permisos: ${lastErrorMsg}).`;
+          }
+        }
       };
     }
   };
