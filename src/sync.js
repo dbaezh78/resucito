@@ -308,8 +308,9 @@ export async function cargarAjustesDesdeNube() {
       console.log("📥 [Firebase] Ajustes personales descargados de la nube.");
     }
 
-    // Cargar también lista dedicada de favoritos
+    // Cargar también lista dedicada de favoritos y zooms personalizados
     await cargarFavoritosDesdeNube();
+    await cargarZoomsDesdeNube();
   } catch (e) {
     console.warn("⚠️ [Firebase] No se pudieron cargar los ajustes desde la nube:", e.message || e);
   }
@@ -384,6 +385,49 @@ export async function cargarHistorialCantoDesdeNube(cantoId) {
   return null;
 }
 
+// Sincroniza zooms personalizados de cantos por dispositivo en Firestore
+export async function guardarZoomCantoEnNube(songId, zoomData) {
+  const user = auth.currentUser;
+  if (!user) return;
+  try {
+    const docRef = doc(db, "usuarios", user.uid, "configuracion", "song_zooms");
+    const update = {};
+    if (songId) {
+      if (zoomData) {
+        update[songId] = zoomData;
+      } else {
+        update[songId] = deleteField();
+      }
+    }
+    await setDoc(docRef, update, { merge: true });
+    console.log(`☁️ [Firebase] Zoom de canto ${songId} sincronizado en la nube.`);
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudo guardar el zoom del canto en la nube:", e.message || e);
+  }
+}
+
+export async function cargarZoomsDesdeNube() {
+  const user = auth.currentUser;
+  if (!user) return;
+  try {
+    const docRef = doc(db, "usuarios", user.uid, "configuracion", "song_zooms");
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+      const cloudZooms = docSnap.data() || {};
+      let localZooms = {};
+      try {
+        localZooms = JSON.parse(localStorage.getItem('resucito_song_zooms') || '{}');
+      } catch (e) { localZooms = {}; }
+
+      const merged = { ...cloudZooms, ...localZooms };
+      localStorage.setItem('resucito_song_zooms', JSON.stringify(merged));
+      console.log("📥 [Firebase] Zooms de cantos descargados de la nube.");
+    }
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudieron cargar los zooms de cantos:", e.message || e);
+  }
+}
+
 // Exponer globalmente
 window.guardarAjustesEnNube = guardarAjustesEnNube;
 window.cargarAjustesDesdeNube = cargarAjustesDesdeNube;
@@ -393,6 +437,8 @@ window.guardarPosicionesEnNube = guardarPosicionesEnNube;
 window.cargarPosicionesDesdeNube = cargarPosicionesDesdeNube;
 window.guardarHistorialCantoEnNube = guardarHistorialCantoEnNube;
 window.cargarHistorialCantoDesdeNube = cargarHistorialCantoDesdeNube;
+window.guardarZoomCantoEnNube = guardarZoomCantoEnNube;
+window.cargarZoomsDesdeNube = cargarZoomsDesdeNube;
 
 // --- Control de Etapas de Cantos ---
 window.globalPositionsCache = {};

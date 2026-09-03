@@ -39,6 +39,7 @@ export const PERMISSIONS = {
   BOOK_SALMODIAS: "book_salmodias",
   BOOK_CATEQUESIS: "book_catequesis",
   EDIT_CATEQUESIS: "edit_catequesis", // Permiso para redactar y editar catequesis
+  MANAGE_PAGE_INSPECTION: "manage_page_inspection", // Permiso exclusivo para Ajustes > Log > Manejo (Inspección)
   BOOK_FAVORITOS: "book_favoritos",
   BOOK_EXTRAS: "book_extras" // Permiso exclusivo para el libro Extras
 };
@@ -50,6 +51,7 @@ export const PERMISSION_LABELS = {
   "view_logs": "Ver Logs de Diagnóstico",
   "view_usage": "Ver Uso de la Aplicación (Uso App)",
   "view_status": "Ver Estado de Canto Resucitó",
+  "manage_page_inspection": "Manejo de Inspección de Página (Log > Manejo)",
   "view_settings_general": "Ver Ajustes: General",
   "view_settings_theme": "Ver Ajustes: Tema",
   "view_settings_song": "Ver Ajustes: Canto",
@@ -1440,7 +1442,8 @@ const PERMISSION_TREE = [
     label: "Ajustes: Log",
     children: [
       { key: "view_logs", label: "LOG" },
-      { key: "view_status", label: "Estado Resucitó" }
+      { key: "view_status", label: "Estado Resucitó" },
+      { key: "manage_page_inspection", label: "Manejo (Inspección)" }
     ]
   }
 ];

@@ -1399,9 +1399,9 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
   border: 1px solid var(--panel-border);
   border-radius: 16px;
   padding: 10px;
-  width: 90%;
+  /*width: 90%;*/
   height: 90%;
-  max-width: 500px;
+  /*max-width: 500px;*/
   /*max-height: 70vh;*/
   max-height: fit-content;
   overflow-y: auto;
@@ -3424,7 +3424,7 @@ footer {
   .Bendecid3 {top: 60px;}     
   .Bendecid4 {top: 35px;}
   .Bendecid1m {top: 52px;}
-  .modal-content{max-width: 85%; max-height: 79%;}
+  .modal-content{max-width: max-content; max-height: 79%;}
 
   /*TAMAÑO DE LA PANTALLA CELULAR db*/
   .song-viewer-view {width: 383px;}
@@ -3547,7 +3547,13 @@ footer {
 
   .book-tabs {gap: 0px;}
   .dashboard-left-image-container {display: flex;}
-  .modal-content{max-width: 65%;max-height: 80%;}
+  .modal-content{
+    max-width: 660px;
+    width: 660px;
+    max-height: 80%;
+
+
+  }
   .song-viewer-view {width: 812px;}
 
   .canto-columns-container {padding: 16px 12px; }

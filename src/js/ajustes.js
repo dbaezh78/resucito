@@ -66,17 +66,170 @@ Object.defineProperty(window, 'songListStyle', {
   enumerable: true
 });
 
+window.getDeviceCategory = function() {
+  const w = window.innerWidth;
+  if (w < 768) return 'mobile';
+  if (w <= 1024) return 'tablet';
+  return 'pc';
+};
+
+window.getDefaultBaseZoomForDevice = function(device) {
+  device = device || window.getDeviceCategory();
+  if (device === 'mobile') return 0.8; // 📱 Celular (< 768px) => 80%
+  if (device === 'tablet') return 1.5; // 📟 Tablet (768-1024px) => 150%
+  return 1.0;                         // 🖥️ PC/Laptop (> 1024px) => 100%
+};
+
+window.getDefaultZoom = function(songId) {
+  const targetSongId = songId || window.currentCanto?.id || window.currentCanto?.songId;
+  const device = window.getDeviceCategory();
+
+  // 1. Si el canto específico tiene un zoom personalizado guardado para este tipo de dispositivo
+  if (targetSongId) {
+    try {
+      const songZooms = JSON.parse(localStorage.getItem('resucito_song_zooms') || '{}');
+      if (songZooms[targetSongId] && songZooms[targetSongId][device] !== undefined) {
+        return parseFloat(songZooms[targetSongId][device]);
+      }
+    } catch(e) {}
+  }
+
+  // 2. Si hay un zoom guardado por tipo de dispositivo
+  const savedDeviceZoom = localStorage.getItem('font-zoom-' + device);
+  if (savedDeviceZoom) return parseFloat(savedDeviceZoom);
+
+  // 3. Si hay un zoom guardado globalmente
+  if (localStorage.getItem('font-zoom-custom') === 'true') {
+    const saved = localStorage.getItem('font-zoom');
+    if (saved) return parseFloat(saved);
+  }
+
+  // 4. Valor por defecto del dispositivo
+  return window.getDefaultBaseZoomForDevice(device);
+};
+
+window.getZoomForSong = function(songId, device) {
+  return window.getDefaultZoom(songId);
+};
+
+window.applyZoom = function(factor) {
+  const zoom = Math.max(0.4, Math.min(2.5, factor));
+  document.documentElement.style.setProperty('--font-zoom', zoom);
+  const settingsZoomBadge = document.getElementById('settings-zoom-badge');
+  if (settingsZoomBadge) {
+    settingsZoomBadge.textContent = `${Math.round(zoom * 100)}%`;
+  }
+};
+
+window.updateZoomUIState = function() {
+  const currentSong = window.currentCanto;
+  const currentSongId = currentSong?.id || currentSong?.songId;
+  const device = window.getDeviceCategory();
+  const badge = document.getElementById('settings-zoom-badge');
+  const desc = document.getElementById('settings-zoom-context-desc');
+  const resetBtn = document.getElementById('settings-zoom-reset-btn');
+
+  const currentZoom = window.getDefaultZoom(currentSongId);
+  if (badge) badge.textContent = `${Math.round(currentZoom * 100)}%`;
+
+  const deviceName = device === 'mobile' ? 'Celular' : (device === 'tablet' ? 'Tablet' : 'PC');
+
+  let hasCustomSongZoom = false;
+  if (currentSongId) {
+    try {
+      const songZooms = JSON.parse(localStorage.getItem('resucito_song_zooms') || '{}');
+      if (songZooms[currentSongId] && songZooms[currentSongId][device] !== undefined) {
+        hasCustomSongZoom = true;
+      }
+    } catch(e) {}
+  }
+
+  if (desc) {
+    if (currentSong) {
+      const songTitle = currentSong.title || currentSong.tt || currentSongId;
+      if (hasCustomSongZoom) {
+        desc.innerHTML = `Zoom para <strong>${songTitle}</strong> en <strong>${deviceName}</strong> (Personalizado)`;
+      } else {
+        desc.innerHTML = `Zoom para <strong>${songTitle}</strong> en <strong>${deviceName}</strong> (Por defecto)`;
+      }
+    } else {
+      desc.textContent = `Ajusta el zoom de la letra para ${deviceName}`;
+    }
+  }
+
+  if (resetBtn) {
+    resetBtn.style.display = hasCustomSongZoom ? 'inline-flex' : 'none';
+  }
+};
+
+window.saveSongZoom = function(songId, zoom, device) {
+  device = device || window.getDeviceCategory();
+  const cleanZoom = Math.round(Math.max(0.4, Math.min(2.5, zoom)) * 10) / 10;
+
+  if (songId) {
+    let songZooms = {};
+    try {
+      songZooms = JSON.parse(localStorage.getItem('resucito_song_zooms') || '{}');
+    } catch(e) { songZooms = {}; }
+
+    if (!songZooms[songId]) songZooms[songId] = {};
+    songZooms[songId][device] = cleanZoom;
+    localStorage.setItem('resucito_song_zooms', JSON.stringify(songZooms));
+
+    if (typeof window.guardarZoomCantoEnNube === 'function') {
+      window.guardarZoomCantoEnNube(songId, songZooms[songId]);
+    }
+  } else {
+    localStorage.setItem('font-zoom-' + device, cleanZoom);
+    localStorage.setItem('font-zoom', cleanZoom);
+    localStorage.setItem('font-zoom-custom', 'true');
+  }
+
+  window.applyZoom(cleanZoom);
+  window.updateZoomUIState();
+};
+
+window.resetSongZoom = function(songId, device) {
+  device = device || window.getDeviceCategory();
+  const targetSongId = songId || window.currentCanto?.id || window.currentCanto?.songId;
+
+  if (targetSongId) {
+    let songZooms = {};
+    try {
+      songZooms = JSON.parse(localStorage.getItem('resucito_song_zooms') || '{}');
+    } catch(e) { songZooms = {}; }
+
+    if (songZooms[targetSongId]) {
+      delete songZooms[targetSongId][device];
+      if (Object.keys(songZooms[targetSongId]).length === 0) {
+        delete songZooms[targetSongId];
+      }
+      localStorage.setItem('resucito_song_zooms', JSON.stringify(songZooms));
+
+      if (typeof window.guardarZoomCantoEnNube === 'function') {
+        window.guardarZoomCantoEnNube(targetSongId, songZooms[targetSongId] || null);
+      }
+    }
+  }
+
+  const defaultZoom = window.getDefaultZoom(targetSongId);
+  window.applyZoom(defaultZoom);
+  window.updateZoomUIState();
+};
+
+window.updateZoom = function(factor) {
+  const currentSongId = window.currentCanto?.id || window.currentCanto?.songId;
+  const cleanZoom = Math.round(Math.max(0.4, Math.min(2.5, factor)) * 10) / 10;
+  window.saveSongZoom(currentSongId, cleanZoom);
+};
+
 Object.defineProperty(window, 'zoomFactor', {
   get() {
-    if (localStorage.getItem('font-zoom-custom') === 'true') {
-      const saved = localStorage.getItem('font-zoom');
-      if (saved) return parseFloat(saved);
-    }
-    return window.getDefaultZoom ? window.getDefaultZoom() : 1.0;
+    const currentSongId = window.currentCanto?.id || window.currentCanto?.songId;
+    return window.getDefaultZoom ? window.getDefaultZoom(currentSongId) : 1.0;
   },
   set(v) {
-    localStorage.setItem('font-zoom', v);
-    localStorage.setItem('font-zoom-custom', 'true');
+    window.updateZoom(v);
   },
   configurable: true,
   enumerable: true
@@ -114,33 +267,6 @@ window.FONT_MAP = {
   'pristina': "'Pristina', cursive, serif",
   'segoe-print': "'Segoe Print', cursive, sans-serif",
   'viner-hand': "'Viner Hand ITC', cursive, serif"
-};
-
-// 2. Funciones globales de aplicación de estilos y temas
-
-window.getDefaultZoom = function() {
-  if (localStorage.getItem('font-zoom-custom') === 'true') {
-    const saved = localStorage.getItem('font-zoom');
-    if (saved) return parseFloat(saved);
-  }
-  const w = window.innerWidth;
-  if (w < 768)   return 0.8;   // 📱 Celular (< 768px) => 80%
-  if (w <= 1024) return 1.5;   // 📟 Tablet  (768-1024px) => 150%
-  return 1.0;                  // 🖥️ PC/Laptop (> 1024px) => 100%
-};
-
-window.applyZoom = function(factor) {
-  const zoom = Math.max(0.6, Math.min(2.0, factor));
-  document.documentElement.style.setProperty('--font-zoom', zoom);
-  const settingsZoomBadge = document.getElementById('settings-zoom-badge');
-  if (settingsZoomBadge) {
-    settingsZoomBadge.textContent = `${Math.round(zoom * 100)}%`;
-  }
-};
-
-window.updateZoom = function(factor) {
-  window.zoomFactor = factor; // Usa el setter que guarda en localStorage
-  window.applyZoom(factor);
 };
 
 window.applyFontFamily = function(key) {
@@ -608,6 +734,9 @@ window.abrirModalConfiguracion = function() {
   if (targetUserBtn) {
     targetUserBtn.click();
   }
+  if (typeof window.updateZoomUIState === 'function') {
+    window.updateZoomUIState();
+  }
   if (modal) modal.style.display = 'flex';
 };
 
@@ -862,7 +991,7 @@ window.initAjustes = async function() {
     if (!settingsModalPromise) {
       settingsModalPromise = (async () => {
         try {
-          const response = await fetch('data/ajustes_modal.html?v=107');
+          const response = await fetch('data/ajustes_modal.html?v=114');
           if (response.ok) {
             const html = await response.text();
             const tempDiv = document.createElement('div');
@@ -1238,6 +1367,7 @@ window.initAjustes = async function() {
   // Botones de zoom en ajustes
   const settingsZoomOutBtn = document.getElementById('settings-zoom-out-btn');
   const settingsZoomInBtn = document.getElementById('settings-zoom-in-btn');
+  const settingsZoomResetBtn = document.getElementById('settings-zoom-reset-btn');
   if (settingsZoomOutBtn) {
     settingsZoomOutBtn.addEventListener('click', () => {
       window.updateZoom(window.zoomFactor - 0.1);
@@ -1246,6 +1376,11 @@ window.initAjustes = async function() {
   if (settingsZoomInBtn) {
     settingsZoomInBtn.addEventListener('click', () => {
       window.updateZoom(window.zoomFactor + 0.1);
+    });
+  }
+  if (settingsZoomResetBtn) {
+    settingsZoomResetBtn.addEventListener('click', () => {
+      window.resetSongZoom();
     });
   }
 
@@ -1291,7 +1426,7 @@ window.initAjustes = async function() {
     });
   });
 
-  // Manejo de subpestañas dentro del Módulo LOG (LOG y Estado Resucitó)
+  // Manejo de subpestañas dentro del Módulo LOG (LOG, Estado Resucitó y Manejo)
   window.switchLogSubmodule = function(subtab) {
     const btns = document.querySelectorAll('.log-subtab-btn');
     btns.forEach(b => {
@@ -1309,7 +1444,8 @@ window.initAjustes = async function() {
 
     const panels = {
       'console': document.getElementById('log-submodule-console-content'),
-      'status': document.getElementById('log-submodule-status-content')
+      'status': document.getElementById('log-submodule-status-content'),
+      'manejo': document.getElementById('log-submodule-manejo-content')
     };
 
     for (const [key, el] of Object.entries(panels)) {
@@ -1320,6 +1456,10 @@ window.initAjustes = async function() {
 
     if (subtab === 'status') {
       window.recalcularEstadoRecursos();
+    } else if (subtab === 'manejo') {
+      if (typeof window.initManejoInspeccionSettings === 'function') {
+        window.initManejoInspeccionSettings();
+      }
     }
   };
 
@@ -1329,6 +1469,159 @@ window.initAjustes = async function() {
       window.switchLogSubmodule(btn.dataset.subtab);
     });
   });
+
+  // --- Lógica del Módulo Manejo (Bloqueo de Inspección de Página / DevTools) ---
+  let devToolsProtectionInterval = null;
+
+  function mostrarAvisoInspeccionBloqueada() {
+    let toast = document.getElementById('toast-inspeccion-bloqueada');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'toast-inspeccion-bloqueada';
+      toast.style.cssText = `
+        position: fixed;
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-20px);
+        background: #dc2626;
+        color: #ffffff;
+        padding: 12px 24px;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+        z-index: 9999999;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        pointer-events: none;
+        font-family: sans-serif;
+      `;
+      toast.innerHTML = `
+        <span class="material-symbols-outlined" style="font-size: 1.3rem;">shield_lock</span>
+        <span>¡La inspección de la página está bloqueada!</span>
+      `;
+      document.body.appendChild(toast);
+    }
+    
+    requestAnimationFrame(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateX(-50%) translateY(0)';
+    });
+    
+    clearTimeout(toast.__timer);
+    toast.__timer = setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateX(-50%) translateY(-20px)';
+    }, 2800);
+  }
+
+  function aplicarBloqueoInspeccion(bloquear) {
+    if (bloquear) {
+      if (!window.__resucitoPreventInspectHandler) {
+        window.__resucitoPreventInspectHandler = function(e) {
+          // Bloquear F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U, Ctrl+S
+          if (
+            e.keyCode === 123 || // F12
+            (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || // Ctrl+Shift+I / J / C
+            (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83)) // Ctrl+U / Ctrl+S
+          ) {
+            e.preventDefault();
+            e.stopPropagation();
+            mostrarAvisoInspeccionBloqueada();
+            return false;
+          }
+        };
+      }
+      if (!window.__resucitoPreventContextMenuHandler) {
+        window.__resucitoPreventContextMenuHandler = function(e) {
+          // Permitir clic derecho si es en campos de texto editables
+          if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable)) {
+            return true;
+          }
+          e.preventDefault();
+          mostrarAvisoInspeccionBloqueada();
+          return false;
+        };
+      }
+      window.addEventListener('keydown', window.__resucitoPreventInspectHandler, true);
+      window.addEventListener('contextmenu', window.__resucitoPreventContextMenuHandler, true);
+
+      // Trampa activa anti-DevTools con mensaje explícito
+      if (!devToolsProtectionInterval) {
+        const debuggerCode = 
+          '/* ========================================================= */\n' +
+          '/* ⚠️ ¡LA INSPECCIÓN DE LA PÁGINA ESTÁ BLOQUEADA!           */\n' +
+          '/* ========================================================= */\n' +
+          'debugger;\n' +
+          'return "¡La inspección de la página está bloqueada!";';
+
+        const triggerDebuggerTrap = () => {
+          try {
+            const start = performance.now();
+            const fn = new Function(debuggerCode);
+            fn();
+            const end = performance.now();
+            if (end - start > 100) {
+              try {
+                console.clear();
+                console.warn('%c⚠️ ¡La inspección de la página está bloqueada!', 'color: #fff; background: #dc2626; font-size: 16px; font-weight: bold; padding: 10px 16px; border-radius: 8px;');
+              } catch (err) {}
+            }
+          } catch (err) {}
+        };
+        triggerDebuggerTrap();
+        devToolsProtectionInterval = setInterval(triggerDebuggerTrap, 300);
+      }
+
+      console.log('🔒 Protección de inspección de página activada (Anti-DevTools & Debugger Trap activo).');
+    } else {
+      if (window.__resucitoPreventInspectHandler) {
+        window.removeEventListener('keydown', window.__resucitoPreventInspectHandler, true);
+        window.__resucitoPreventInspectHandler = null;
+      }
+      if (window.__resucitoPreventContextMenuHandler) {
+        window.removeEventListener('contextmenu', window.__resucitoPreventContextMenuHandler, true);
+        window.__resucitoPreventContextMenuHandler = null;
+      }
+      if (devToolsProtectionInterval) {
+        clearInterval(devToolsProtectionInterval);
+        devToolsProtectionInterval = null;
+      }
+      console.log('🔓 Protección de inspección de página desactivada (Inspección permitida).');
+    }
+  }
+  window.aplicarBloqueoInspeccion = aplicarBloqueoInspeccion;
+
+  // Inicializar estado guardado
+  const initialBloqueo = localStorage.getItem('resucito_bloquear_inspeccion') === 'true';
+  aplicarBloqueoInspeccion(initialBloqueo);
+
+  window.initManejoInspeccionSettings = function() {
+    const switchEl = document.getElementById('switch-bloqueo-inspeccion');
+    const labelEl = document.getElementById('label-estado-bloqueo-inspeccion');
+
+    if (switchEl) {
+      const isBlocked = localStorage.getItem('resucito_bloquear_inspeccion') === 'true';
+      switchEl.checked = isBlocked;
+      if (labelEl) {
+        labelEl.textContent = isBlocked ? 'Habilitado (Bloqueado)' : 'Deshabilitado (Permitido)';
+        labelEl.style.color = isBlocked ? 'var(--accent-color, #d54d5e)' : 'var(--text-muted)';
+      }
+
+      switchEl.onchange = () => {
+        const checked = switchEl.checked;
+        localStorage.setItem('resucito_bloquear_inspeccion', checked ? 'true' : 'false');
+        if (labelEl) {
+          labelEl.textContent = checked ? 'Habilitado (Bloqueado)' : 'Deshabilitado (Permitido)';
+          labelEl.style.color = checked ? 'var(--accent-color, #d54d5e)' : 'var(--text-muted)';
+        }
+        aplicarBloqueoInspeccion(checked);
+      };
+    }
+  };
 
   // --- MÓDULO ESTADO RESUCITÓ ---
   async function loadResourceIntoCache(url) {

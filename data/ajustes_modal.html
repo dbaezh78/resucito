@@ -1013,13 +1013,16 @@
             <!-- Fila Tamaño de Letra -->
             <div class="setting-row">
               <div class="setting-label">
-                <h4>Tamaño de Letra</h4>
-                <p>Ajusta el tamaño del texto del canto</p>
+                <h4>Tamaño de Letra (Zoom)</h4>
+                <p id="settings-zoom-context-desc">Ajusta el tamaño del texto del canto</p>
               </div>
               <div class="setting-control" style="display: flex; align-items: center; gap: 8px;">
                 <button id="settings-zoom-out-btn" class="btn btn-icon" style="width: 32px; height: 32px; padding: 0;" title="Reducir letra">-</button>
                 <span id="settings-zoom-badge" style="font-weight: 700; min-width: 45px; text-align: center;">100%</span>
                 <button id="settings-zoom-in-btn" class="btn btn-icon" style="width: 32px; height: 32px; padding: 0;" title="Aumentar letra">+</button>
+                <button id="settings-zoom-reset-btn" class="btn btn-icon" style="display: none; width: 32px; height: 32px; padding: 0; color: var(--accent-color);" title="Restablecer zoom por defecto del canto">
+                  <span class="material-symbols-outlined" style="font-size: 1.15rem;">restart_alt</span>
+                </button>
               </div>
             </div>
 
@@ -1778,6 +1781,10 @@
               <span class="material-symbols-outlined" style="font-size: 1.15rem;">fact_check</span>
               Estado Resucitó
             </button>
+            <button class="log-subtab-btn" data-subtab="manejo" id="log-subtab-manejo-btn" style="display: none; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">shield_lock</span>
+              Manejo
+            </button>
           </div>
 
           <!-- Contenido Submódulo: LOG Console -->
@@ -1861,6 +1868,40 @@
                   Ninguno
                 </div>
               </details>
+            </div>
+          </div>
+
+          <!-- Contenido Submódulo: Manejo (Inspección y Seguridad de la Página) -->
+          <div id="log-submodule-manejo-content" class="log-submodule-panel" style="display: none; padding: 8px 0;">
+            <div style="background: var(--input-bg); border: 1.5px solid var(--panel-border); border-radius: 12px; padding: 18px; margin-bottom: 16px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 260px;">
+                  <h4 style="margin: 0 0 6px 0; font-size: 1rem; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                    <span class="material-symbols-outlined" style="color: var(--accent-color);">developer_mode_tv</span>
+                    Manejo de Inspección de la Página (DevTools)
+                  </h4>
+                  <p style="margin: 0; font-size: 0.82rem; color: var(--text-muted); line-height: 1.4;">
+                    Habilita o deshabilita la protección contra inspección del navegador. Cuando está <strong>habilitado</strong>, restringe el menú contextual (clic derecho) y los atajos de teclado de desarrollador (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U).
+                  </p>
+                </div>
+                
+                <!-- Switch de control -->
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span id="label-estado-bloqueo-inspeccion" style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">Deshabilitado</span>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="switch-bloqueo-inspeccion">
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Información de Seguridad Exclusiva -->
+            <div style="padding: 12px 16px; background: rgba(2, 132, 199, 0.08); border-left: 4px solid #0284c7; border-radius: 8px; display: flex; align-items: flex-start; gap: 10px;">
+              <span class="material-symbols-outlined" style="color: #0284c7; font-size: 1.3rem; margin-top: 2px;">admin_panel_settings</span>
+              <div style="font-size: 0.8rem; color: var(--text-color); line-height: 1.4;">
+                <strong>Control Exclusivo de Administrador:</strong> Esta opción y submódulo solo son visibles y configurables por la cuenta administradora configurada en el sistema.
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { registerServiceWorker } from './pwa.js';
 import './navegador.js';
-import './js/ajustes.js?v=107';
+import './js/ajustes.js?v=114';
 import './js/datos.js';
 import { searchSongs, normalizeText } from './search.js';
 import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';
@@ -352,12 +352,14 @@ export function updateAccessControlVisibility() {
   // --- LOG SUBTABS ---
   const logSubtabConsoleBtn = document.getElementById('log-subtab-console-btn');
   const logSubtabStatusBtn = document.getElementById('log-subtab-status-btn');
-
+  const logSubtabManejoBtn = document.getElementById('log-subtab-manejo-btn');
   const canViewLogs = isCurrentUserAdmin() || hasPermission('view_logs');
   const canViewStatus = isCurrentUserAdmin() || hasPermission('view_status');
+  const canManageInspection = isCurrentUserAdmin() || hasPermission('manage_page_inspection');
 
   if (logSubtabConsoleBtn) logSubtabConsoleBtn.style.display = canViewLogs ? 'flex' : 'none';
   if (logSubtabStatusBtn) logSubtabStatusBtn.style.display = canViewStatus ? 'flex' : 'none';
+  if (logSubtabManejoBtn) logSubtabManejoBtn.style.display = canManageInspection ? 'flex' : 'none';
 
   // Redirección Log
   const activeLogSubtab = document.querySelector('.log-subtab-btn.active');
@@ -366,10 +368,12 @@ export function updateAccessControlVisibility() {
     let allowed = true;
     if (activeSub === 'console' && !canViewLogs) allowed = false;
     else if (activeSub === 'status' && !canViewStatus) allowed = false;
+    else if (activeSub === 'manejo' && !canManageInspection) allowed = false;
 
     if (!allowed) {
       if (canViewLogs && typeof window.switchLogSubmodule === 'function') window.switchLogSubmodule('console');
       else if (canViewStatus && typeof window.switchLogSubmodule === 'function') window.switchLogSubmodule('status');
+      else if (canManageInspection && typeof window.switchLogSubmodule === 'function') window.switchLogSubmodule('manejo');
     }
   }
 
@@ -389,7 +393,7 @@ export function updateAccessControlVisibility() {
   const canViewUser = isCurrentUserAdmin() || hasPermission('view_settings_user') || canViewUserCuenta || canViewAccessSection || canViewUsage;
   const canViewData = isCurrentUserAdmin() || hasPermission('view_settings_data');
   const canViewPaginas = isCurrentUserAdmin() || hasPermission('view_settings_paginas');
-  const canViewLogSection = isCurrentUserAdmin() || hasPermission('view_settings_log') || canViewLogs || canViewStatus;
+  const canViewLogSection = isCurrentUserAdmin() || hasPermission('view_settings_log') || canViewLogs || canViewStatus || canManageInspection;
 
   if (settingsTabGeneral) settingsTabGeneral.style.display = canViewGeneral ? 'flex' : 'none';
   if (settingsTabTheme) settingsTabTheme.style.display = canViewTheme ? 'flex' : 'none';
@@ -790,8 +794,9 @@ async function loadSongView(songId) {
     currentCanto = songData;
     window.currentCanto = currentCanto;
     
-    // Aplicar zoom según dispositivo (tc) respetando la preferencia personalizada si existe
-    applyZoom(getDefaultZoom());
+    // Aplicar zoom según dispositivo respetando la preferencia personalizada del canto si existe
+    const songZoom = window.getZoomForSong ? window.getZoomForSong(songId) : (window.getDefaultZoom ? window.getDefaultZoom(songId) : 1.0);
+    applyZoom(songZoom);
     
     // Asignar el color de etapa actual a nivel de body para la cabecera y el sombreado
     const stageColor = getStageColor(currentCanto.catCanto || currentCanto.stage);
