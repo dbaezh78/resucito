@@ -1,6 +1,6 @@
 import { registerServiceWorker } from './pwa.js';
 import './navegador.js';
-import './js/ajustes.js?v=114';
+import './js/ajustes.js?v=125';
 import './js/datos.js';
 import { searchSongs, normalizeText } from './search.js';
 import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';
@@ -1246,13 +1246,8 @@ function renderSection(container, lines, side) {
       const linesWrapper = document.createElement('div');
       linesWrapper.className = 'collapsible-lines-wrapper';
       
-      const triggerLine = renderLine(item.triggerLine, side, lineIdx, -1);
+      const triggerLine = renderLine(item.triggerLine, side, lineIdx, -1, item.sC);
       triggerLine.classList.add('collapsible-trigger');
-      if (item.sC) {
-        item.sC.split(' ').forEach(cls => {
-          if (cls) triggerLine.classList.add(cls);
-        });
-      }
       if (item.color) {
         triggerLine.style.color = item.color;
       }
@@ -1261,9 +1256,15 @@ function renderSection(container, lines, side) {
       contentDiv.className = 'collapsible-content';
       
       const triggerHasTa = triggerLine.classList.contains('ta') || (item.sC && item.sC.includes('ta'));
+      const triggerHasBisa = item.sC && (item.sC.includes('bisa') || item.sC.includes('bis'));
       
       item.lines.forEach((subLine, subLineIdx) => {
-        const subLineEl = renderLine(subLine, side, lineIdx, subLineIdx);
+        let subSC = (typeof subLine === 'object' && subLine.sC) ? subLine.sC : '';
+        if (hasSub && subLineIdx === 0 && triggerHasBisa && !subSC.includes('bis')) {
+          const bisClasses = item.sC.split(' ').filter(c => c.includes('bis')).join(' ');
+          subSC = (subSC + ' ' + bisClasses).trim();
+        }
+        const subLineEl = renderLine(subLine, side, lineIdx, subLineIdx, subSC);
         if (hasSub && subLineIdx === 0 && triggerHasTa && !subLineEl.classList.contains('ta')) {
           subLineEl.classList.add('ta');
         }
@@ -1354,17 +1355,33 @@ function renderSection(container, lines, side) {
   });
 }
 
-function renderLine(lineItem, side, lineIdx, subLineIdx) {
+function renderLine(lineItem, side, lineIdx, subLineIdx, customSC) {
   const lineDiv = document.createElement('div');
   lineDiv.className = 'linea-canto';
   
   const content = typeof lineItem === 'string' ? lineItem : (lineItem.line || '');
-  const sectionClass = lineItem.sC || '';
+  const sectionClass = customSC || lineItem.sC || '';
   const textColor = lineItem.color || '';
   
   if (sectionClass) {
     sectionClass.split(' ').forEach(cls => {
-      if (cls) lineDiv.classList.add(cls);
+      if (cls) {
+        lineDiv.classList.add(cls);
+        
+        // Soporte dinámico para hbis[N], lbis[N], tbis[N] escalado con el zoom del canto
+        const hMatch = cls.match(/^hbis(-?\d+)$/);
+        if (hMatch) {
+          lineDiv.style.setProperty('--bis-height', `calc(${hMatch[1]}px * var(--font-zoom, 1))`);
+        }
+        const lMatch = cls.match(/^lbis(-?\d+)$/);
+        if (lMatch) {
+          lineDiv.style.setProperty('--bis-left', `calc(${lMatch[1]}px * var(--font-zoom, 1))`);
+        }
+        const tMatch = cls.match(/^tbis(-?\d+)$/);
+        if (tMatch) {
+          lineDiv.style.setProperty('--bis-top', `calc(${tMatch[1]}px * var(--font-zoom, 1))`);
+        }
+      }
     });
   }
   
@@ -1602,6 +1619,16 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
     if (subLineIdx !== undefined && subLineIdx >= 0) {
       if (item.type === 'collapsible-block' && item.lines) {
         return item.lines[subLineIdx];
+      }
+      if (item.BIS || item.bis || item.type === 'bis-block') {
+        const subLines = Array.isArray(item.BIS) ? item.BIS : (Array.isArray(item.bis) ? item.bis : (item.lines || []));
+        return subLines[subLineIdx];
+      }
+      if (Array.isArray(item) && subLineIdx === 0) {
+        return item;
+      }
+      if (db[side][lineIdx + subLineIdx] && Array.isArray(db[side][lineIdx + subLineIdx])) {
+        return db[side][lineIdx + subLineIdx];
       }
       return null;
     } else {
@@ -1939,6 +1966,10 @@ function saveChordPosition(side, lineIdx, subLineIdx, chordIdx, newPos) {
       if (item.type === 'collapsible-block' && item.lines) {
         return item.lines[subLineIdx];
       }
+      if (item.BIS || item.bis || item.type === 'bis-block') {
+        const subLines = Array.isArray(item.BIS) ? item.BIS : (Array.isArray(item.bis) ? item.bis : (item.lines || []));
+        return subLines[subLineIdx];
+      }
       return null;
     } else {
       if (item.type === 'collapsible-block') {
@@ -1992,6 +2023,10 @@ function saveSingleChordEdit(chosenNote, chosenType) {
       if (item.type === 'collapsible-block' && item.lines) {
         return item.lines[subLineIdx];
       }
+      if (item.BIS || item.bis || item.type === 'bis-block') {
+        const subLines = Array.isArray(item.BIS) ? item.BIS : (Array.isArray(item.bis) ? item.bis : (item.lines || []));
+        return subLines[subLineIdx];
+      }
       return null;
     } else {
       if (item.type === 'collapsible-block') {
@@ -2026,6 +2061,13 @@ function extractCurrentSongChords(section, side) {
         id: item.id,
         triggerLine: extractChordsFromLineItem(item.triggerLine, side, lineIdx, -1),
         lines: item.lines.map((line, subLineIdx) => extractChordsFromLineItem(line, side, lineIdx, subLineIdx))
+      };
+    } else if (item.BIS || item.bis || item.type === 'bis-block') {
+      const subLines = Array.isArray(item.BIS) ? item.BIS : (Array.isArray(item.bis) ? item.bis : (item.lines || []));
+      return {
+        type: 'bis-block',
+        bis: item.BIS || item.bis,
+        lines: subLines.map((line, subLineIdx) => extractChordsFromLineItem(line, side, lineIdx, subLineIdx))
       };
     } else {
       return extractChordsFromLineItem(item, side, lineIdx);

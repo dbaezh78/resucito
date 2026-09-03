@@ -34,14 +34,17 @@
   "mant": "No",
   "audioSrc": "https://audio.resucito.do/atilevantomisojos.mp3",
   "lizq": [
+
+
     {
-      "line": "A TI LEVANTO MIS OJOS, (Re,m,16)(La,7,189)",
-      "sC": "as tc"
+      "line": "A TI LEVANTO MIS OJOS, (Re,m,0)(La,7,160)",
+      "sC": "as tc bisa hbis93 lbis350"
     },
     {
-      "line": "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)",
+      "line": "A TI QUE HABITAS EN EL CIELO. (Sol,m,10)(La,7,235)",
       "sC": "as b2"
     },
+
     {
       "line": "Como los ojos de los siervos,  (Re,m,15)",
       "sC": "tc mt"
@@ -104,11 +107,11 @@
       "id": "asamblea_atilevantomisojos",
       "initialState": "collapsed",
       "triggerLine": "A TI LEVANTO MIS OJOS (Re,m,16)(La,7,189)",
-      "sC": "mt as ta",
+      "sC": "mt as ta bisa hbis93 lbis350",
       "lines": [
         {
           "line": "A TI QUE HABITAS EN EL CIELO. (Sol,m,28)(La,7,260)",
-          "sC": "as b2"
+          "sC": "as"
         }
       ]
     }

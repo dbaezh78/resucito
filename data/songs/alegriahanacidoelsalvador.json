@@ -36,15 +36,15 @@
   "lizq": [
     {
       "line": "Un ángel vino del cielo, (Re,m,18)",
-      "sC": "b12-1"
+      "sC": "tc bisa hbis90 lbis310 tbis0"
     },
     {
       "line": "trayendo una gran noticia: ",
-      "sC": "tc"
+      "sC": ""
     },
     {
       "line": "¡Hoy os ha nacido,(Sol,m,15)(Re,m,139)",
-      "sC": "b12-1"
+      "sC": "tc bisa hbis90 lbis310 tbis0"
     },
     {
       "line": "ha nacido el Salvador!, (La,,64)(Re,m,194)",
@@ -56,11 +56,11 @@
     },
     {
       "line": "¡ALEGRÍA, ALEGRÍA, ALEGRÍA,(Fa,,75)(La,,264)",
-      "sC": "as ta"
+      "sC": "as ta bisa hbis200 lbis340 tbis10"
     },
     {
       "line": "HA NACIDO EL SALVADOR, (Si♭,,78)",
-      "sC": "as b12-2"
+      "sC": "as "
     },
     {
       "line": "ACOSTADO EN UN PESEBRE!, (Do,,68)",
@@ -76,7 +76,7 @@
     },
     {
       "line": "¡Fajado con lindos pañales, (Re,m,15)",
-      "sC": "b12-1"
+      "sC": "bisa hbis80 lbis340 tbis10"
     },
     {
       "line": "y acostado en un pesebre!, ",
@@ -84,7 +84,7 @@
     },
     {
       "line": "Esta será la señal, (Sol,m,20)(Re,m,151)",
-      "sC": "b12-1"
+      "sC": "bisa hbis80 lbis340 tbis10"
     },
     {
       "line": "de que Él es el Señor. (La,,79)(Re,m,187)",
@@ -121,7 +121,7 @@
     },
     {
       "line": "Al establo de Belén, (Re,m,15)",
-      "sC": "b12-1"
+      "sC": "tc bisa hbis90 lbis310 tbis0"
     },
     {
       "line": "han llegado los pastores., ",
@@ -129,7 +129,7 @@
     },
     {
       "line": "Vienen trayendo regalos, (Sol,m,15)(Re,m,195)",
-      "sC": "b12-1"
+      "sC": "tc bisa hbis90 lbis310 tbis0"
     },
     {
       "line": "a Jesús el Salvador., (La,,52)(Re,m,168)",
@@ -164,7 +164,7 @@
   "lder": [
     {
       "line": "Encontraron a María,(Re,m,15)",
-      "sC": "b12-1"
+      "sC": "tc bisa hbis90 lbis310 tbis0"
     },
     {
       "line": "encontraron a José., ",
@@ -172,7 +172,7 @@
     },
     {
       "line": "El buey, el asno y el niño,(Sol,m,15)(Re,m,208)",
-      "sC": "b12-1"
+      "sC": "tc bisa hbis90 lbis310 tbis0"
     },
     {
       "line": "que se llamará Emmanuel., (La,,85)(Re,m,234)",
@@ -209,7 +209,7 @@
     },
     {
       "line": "El buey reconoce a su dueño,(Re,m,15)",
-      "sC": "b12-1"
+      "sC": "tc bisa hbis90 lbis310 tbis0"
     },
     {
       "line": "el borrico su pesebre., ",
@@ -217,7 +217,7 @@
     },
     {
       "line": "Pero Israel no conoce,(Sol,m,15)(Re,m,174)",
-      "sC": "b12-1"
+      "sC": "tc bisa hbis90 lbis310 tbis0"
     },
     {
       "line": "no conoce a su Señor., (La,,71)(Re,m,189)",

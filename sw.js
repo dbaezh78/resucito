@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v265'; // Incrementado para forzar actualización inmediata
+const CACHE_NAME = 'resucito-cache-v276'; // Incrementado para forzar actualización inmediata
 const STATIC_ASSETS = [
   './',
   'index.html',

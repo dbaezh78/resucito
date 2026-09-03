@@ -68,7 +68,7 @@ Object.defineProperty(window, 'songListStyle', {
 
 window.getDeviceCategory = function() {
   const w = window.innerWidth;
-  if (w < 768) return 'mobile';
+  if (w <= 768) return 'mobile';
   if (w <= 1024) return 'tablet';
   return 'pc';
 };
@@ -991,7 +991,7 @@ window.initAjustes = async function() {
     if (!settingsModalPromise) {
       settingsModalPromise = (async () => {
         try {
-          const response = await fetch('data/ajustes_modal.html?v=114');
+          const response = await fetch('data/ajustes_modal.html?v=125');
           if (response.ok) {
             const html = await response.text();
             const tempDiv = document.createElement('div');
