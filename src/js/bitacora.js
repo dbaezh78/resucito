@@ -182,14 +182,18 @@ function cargarEventos() {
         });
 
         if (firestoreEvents.length > 0) {
-          // Fusionar eventos evitando duplicados por timestampNum y usuarioId
-          const map = new Map();
-          firestoreEvents.forEach(ev => map.set(`${ev.timestampNum}_${ev.usuarioId}`, ev));
-          allEvents.forEach(ev => {
-            const key = `${ev.timestampNum}_${ev.usuarioId}`;
-            if (!map.has(key)) map.set(key, ev);
-          });
-          allEvents = Array.from(map.values()).sort((a, b) => b.timestampNum - a.timestampNum);
+          // Usar directamente los eventos activos de Firestore para reflejar eliminaciones en tiempo real
+          const fsKeys = new Set(firestoreEvents.map(ev => `${ev.timestampNum}_${ev.usuarioId}`));
+          
+          // Mantener locales solo si están pendientes o si no existen aún en Firestore
+          const local = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]');
+          const validLocals = local.filter(l => fsKeys.has(`${l.timestampNum}_${l.usuarioId}`));
+          
+          allEvents = firestoreEvents;
+          localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(validLocals));
+        } else {
+          allEvents = [];
+          localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify([]));
         }
 
         popularUsuariosSelect();
@@ -583,12 +587,23 @@ function resolverDetalleTono(ev) {
 
 function generarResumenDiferenciasHTML(eventos) {
   const counts = new Map();
+  let totalTonos = 0;
+
   eventos.forEach(ev => {
     const det = resolverDetalleTono(ev) || '😎';
-    counts.set(det, (counts.get(det) || 0) + 1);
+    if (ev.tipo === 'tono' || ev.tipo === 'acorde' || det.startsWith('🎼') || det.includes('Tono') || det.includes('Acorde')) {
+      totalTonos++;
+    } else {
+      counts.set(det, (counts.get(det) || 0) + 1);
+    }
   });
 
   let html = '<div class="summary-badges-container">';
+  
+  if (totalTonos > 0) {
+    html += `<span class="detalle-badge tono" title="${totalTonos} cambio(s) de tono/acorde">🎼 ${totalTonos > 1 ? `×${totalTonos}` : ''}</span>`;
+  }
+
   counts.forEach((qty, det) => {
     if (det === '😎') {
       html += `<span class="detalle-badge visita" title="${qty} visitas sin cambios">😎 ${qty > 1 ? `×${qty}` : ''}</span>`;
@@ -596,10 +611,6 @@ function generarResumenDiferenciasHTML(eventos) {
       html += `<span class="detalle-badge traste" title="${det}">${det} ${qty > 1 ? `×${qty}` : ''}</span>`;
     } else if (det.includes('⭐')) {
       html += `<span class="detalle-badge estrella" title="Valoración: ${det}">${det} ${qty > 1 ? `×${qty}` : ''}</span>`;
-    } else if (det.startsWith('🎼') || det.includes('Tono')) {
-      html += `<span class="detalle-badge tono" title="${det}">${det} ${qty > 1 ? `×${qty}` : ''}</span>`;
-    } else if (det.includes('Acorde')) {
-      html += `<span class="detalle-badge acorde" title="${det}">${det} ${qty > 1 ? `×${qty}` : ''}</span>`;
     } else {
       html += `<span class="detalle-badge" title="${det}">${det} ${qty > 1 ? `×${qty}` : ''}</span>`;
     }

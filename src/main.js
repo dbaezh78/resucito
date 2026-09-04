@@ -7,7 +7,7 @@ import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';
 import { transposeNote, normalizeChord, CHROMATIC_SCALE, parseChord } from './chords.js';
 import { songs } from './songs-data.js';
 import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, getCurrentUser } from './auth.js';
-import { db, doc, setDoc, getDoc, deleteDoc, collection, getDocs } from './firebase.js';
+import { db, doc, setDoc, getDoc, deleteDoc, collection, getDocs, addDoc, onSnapshot, query, orderBy, limit } from './firebase.js';
 
 // Exponer API de autenticación globalmente para el navegador
 window.firebaseAPI = {
@@ -5173,19 +5173,94 @@ function setupEventListeners() {
   // --- Módulo de Logs de Diagnóstico ---
   window.appLogs = window.appLogs || [];
 
+  // Obtener fecha actual en formato YYYY-MM-DD
+  function getLocalDateStr(dateObj = new Date()) {
+    const y = dateObj.getFullYear();
+    const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+    const d = String(dateObj.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  }
+
+  let selectedLogDateStr = getLocalDateStr(); // Por defecto inicia mostrando SOLO el día de hoy
+
+  // Cargar logs guardados en Firebase Firestore (colección 'app_logs')
+  function initFirebaseAppLogsSync() {
+    if (!db) return;
+    try {
+      const colRef = collection(db, "app_logs");
+      const q = query(colRef, orderBy("timestampNum", "desc"), limit(400));
+      onSnapshot(q, (snapshot) => {
+        const remoteLogs = [];
+        snapshot.forEach((doc) => {
+          remoteLogs.push({ id: doc.id, ...doc.data() });
+        });
+        if (remoteLogs.length > 0) {
+          // Fusionar con los logs locales evitando duplicados
+          const map = new Map();
+          remoteLogs.forEach(l => map.set(l.uniqueKey || `${l.timestampNum}_${l.message}`, l));
+          window.appLogs.forEach(l => {
+            const k = l.uniqueKey || `${l.timestampNum}_${l.message}`;
+            if (!map.has(k)) map.set(k, l);
+          });
+          window.appLogs = Array.from(map.values()).sort((a, b) => (a.timestampNum || 0) - (b.timestampNum || 0));
+          if (window.appLogs.length > 500) window.appLogs = window.appLogs.slice(-500);
+          if (window.renderAppLogs) window.renderAppLogs();
+        }
+      }, (err) => {
+        // Silencioso para evitar loop de logs
+      });
+    } catch (e) {
+      // Silencioso
+    }
+  }
+
+  // Inicializar sincronización en tiempo real de logs desde Firebase
+  setTimeout(() => {
+    initFirebaseAppLogsSync();
+  }, 1500);
+
   window.addAppLog = function(category, message, details = null) {
     const now = new Date();
     const timeStr = now.toTimeString().split(' ')[0] + '.' + String(now.getMilliseconds()).padStart(3, '0');
+    const dateStr = getLocalDateStr(now);
+    const tsNum = now.getTime();
+    const uniqueKey = `${tsNum}_${Math.random().toString(36).substring(2, 7)}`;
+
+    const user = getCurrentUser();
+    const userEmail = user ? user.email : (localStorage.getItem('resucito_usuario_email') || 'anonimo@resucito.do');
+
     const entry = {
-      id: Date.now() + Math.random(),
+      id: uniqueKey,
+      uniqueKey: uniqueKey,
       time: timeStr,
+      dateStr: dateStr,
+      timestampNum: tsNum,
       category: category || 'General',
       message: message || '',
+      userEmail: userEmail,
       details: details ? (typeof details === 'object' ? JSON.stringify(details, null, 2) : String(details)) : ''
     };
+
     window.appLogs.push(entry);
-    if (window.appLogs.length > 300) window.appLogs.shift();
+    if (window.appLogs.length > 500) window.appLogs.shift();
     if (window.renderAppLogs) window.renderAppLogs();
+
+    // Guardar asíncronamente en Firestore (colección 'app_logs')
+    if (db && navigator.onLine) {
+      try {
+        const colRef = collection(db, "app_logs");
+        addDoc(colRef, {
+          uniqueKey: entry.uniqueKey,
+          time: entry.time,
+          dateStr: entry.dateStr,
+          timestampNum: entry.timestampNum,
+          category: entry.category,
+          message: entry.message,
+          userEmail: entry.userEmail,
+          details: entry.details
+        }).catch(() => {});
+      } catch (e) {}
+    }
   };
 
   const origLog = console.log;
@@ -5217,6 +5292,7 @@ function setupEventListeners() {
     if (msg.includes('Buscador') || msg.includes('🔍')) cat = 'Buscador';
     else if (msg.includes('Firebase') || msg.includes('🔥') || msg.includes('Permisos')) cat = 'Firebase';
     else if (msg.includes('Service Worker') || msg.includes('sw.js')) cat = 'PWA';
+    else if (msg.includes('Bitácora') || msg.includes('📋')) cat = 'Bitácora';
     window.addAppLog(cat, msg);
   };
 
@@ -5235,19 +5311,31 @@ function setupEventListeners() {
   window.renderAppLogs = function() {
     const container = document.getElementById('logs-viewer-container');
     const catSelect = document.getElementById('logs-category-select');
+    const dateInput = document.getElementById('logs-date-input');
     if (!container) return;
 
+    if (dateInput && !dateInput.value && selectedLogDateStr) {
+      dateInput.value = selectedLogDateStr;
+    }
+
     const selectedCat = catSelect ? catSelect.value : 'all';
-    const filtered = window.appLogs.filter(item => selectedCat === 'all' || item.category === selectedCat);
+    
+    // Filtrar por categoría y por fecha seleccionada
+    const filtered = window.appLogs.filter(item => {
+      const matchCat = (selectedCat === 'all' || item.category === selectedCat);
+      const matchDate = (!selectedLogDateStr || selectedLogDateStr === 'all' || item.dateStr === selectedLogDateStr);
+      return matchCat && matchDate;
+    });
 
     if (filtered.length === 0) {
-      container.innerHTML = '<span style="color: #888;">No hay registros en esta categoría.</span>';
+      const msgFecha = selectedLogDateStr && selectedLogDateStr !== 'all' ? ` para el día ${selectedLogDateStr}` : '';
+      container.innerHTML = `<span style="color: #888;">No hay registros${msgFecha} en esta categoría.</span>`;
       return;
     }
 
     container.innerHTML = filtered.map(item => `
       <div style="margin-bottom: 6px; border-bottom: 1px dashed #333; padding-bottom: 4px;">
-        <span style="color: #888;">[${item.time}]</span> 
+        <span style="color: #888;">[${item.dateStr || ''} ${item.time}]</span> 
         <span style="color: #ffc107; font-weight: bold;">[${item.category}]</span> 
         <span style="color: #00ff66;">${item.message}</span>
         ${item.details ? `<pre style="margin: 2px 0 0 10px; color: #64b5f6; font-size: 0.7rem;">${item.details}</pre>` : ''}
@@ -5257,9 +5345,37 @@ function setupEventListeners() {
     container.scrollTop = container.scrollHeight;
   };
 
+  // Listeners de controles de filtros de logs (Categoría y Fecha)
   const logsCategorySelect = document.getElementById('logs-category-select');
   if (logsCategorySelect) {
     logsCategorySelect.addEventListener('change', window.renderAppLogs);
+  }
+
+  const logsDateInput = document.getElementById('logs-date-input');
+  if (logsDateInput) {
+    logsDateInput.value = selectedLogDateStr;
+    logsDateInput.addEventListener('change', (e) => {
+      selectedLogDateStr = e.target.value;
+      window.renderAppLogs();
+    });
+  }
+
+  const logsTodayBtn = document.getElementById('logs-today-btn');
+  if (logsTodayBtn) {
+    logsTodayBtn.addEventListener('click', () => {
+      selectedLogDateStr = getLocalDateStr();
+      if (logsDateInput) logsDateInput.value = selectedLogDateStr;
+      window.renderAppLogs();
+    });
+  }
+
+  const logsAllDatesBtn = document.getElementById('logs-all-dates-btn');
+  if (logsAllDatesBtn) {
+    logsAllDatesBtn.addEventListener('click', () => {
+      selectedLogDateStr = 'all';
+      if (logsDateInput) logsDateInput.value = '';
+      window.renderAppLogs();
+    });
   }
 
   const clearLogsBtn = document.getElementById('clear-logs-btn');
@@ -5274,8 +5390,12 @@ function setupEventListeners() {
   if (copyLogsBtn) {
     copyLogsBtn.addEventListener('click', () => {
       const selectedCat = logsCategorySelect ? logsCategorySelect.value : 'all';
-      const filtered = window.appLogs.filter(item => selectedCat === 'all' || item.category === selectedCat);
-      const text = filtered.map(item => `[${item.time}] [${item.category}] ${item.message} ${item.details || ''}`).join('\n');
+      const filtered = window.appLogs.filter(item => {
+        const matchCat = (selectedCat === 'all' || item.category === selectedCat);
+        const matchDate = (!selectedLogDateStr || selectedLogDateStr === 'all' || item.dateStr === selectedLogDateStr);
+        return matchCat && matchDate;
+      });
+      const text = filtered.map(item => `[${item.dateStr || ''} ${item.time}] [${item.category}] ${item.message} ${item.details || ''}`).join('\n');
       navigator.clipboard.writeText(text).then(() => {
         copyLogsBtn.textContent = '¡Copiados!';
         setTimeout(() => copyLogsBtn.textContent = 'Copiar Logs', 2000);

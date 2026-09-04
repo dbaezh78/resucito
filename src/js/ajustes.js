@@ -1947,7 +1947,7 @@ window.initAjustes = async function() {
   async function loadResourceIntoCache(url) {
     try {
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v208';
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v304';
       const cache = await caches.open(cacheName);
       
       const res = await fetch(url);
@@ -2064,6 +2064,95 @@ window.initAjustes = async function() {
     }
   });
 
+  // Helper para garantizar que window.allSongs esté disponible para offline y estado
+  async function getOrFetchAllSongs() {
+    if (window.allSongs && Array.isArray(window.allSongs) && window.allSongs.length > 0) {
+      return window.allSongs;
+    }
+    try {
+      const res = await fetch('data/songs-index.json');
+      if (res.ok) {
+        const data = await res.json();
+        window.allSongs = data;
+        return data;
+      }
+    } catch (e) {
+      console.warn("Error cargando songs-index.json:", e);
+    }
+    return [];
+  }
+
+  // Helper para recopilar todos los recursos de la aplicación (HTMLs, JS, CSS, JSONs, Cantos y Assets)
+  async function getAllAppResources() {
+    const htmlResources = [
+      { label: 'Inicio o Index.html', url: 'index.html' },
+      { label: 'Perfil Cuenta (HTML)', url: 'perfil.html' },
+      { label: 'Preparar Cantos (HTML)', url: 'preparar.html' },
+      { label: 'Bitácora de Uso (HTML)', url: 'bitacora.html' },
+      { label: 'Expansión de Libros (HTML)', url: 'expancion.html' },
+      { label: 'Ciclo Litúrgico (HTML)', url: 'cliturgico.html' },
+      { label: 'Ajustes de la App (HTML)', url: 'data/ajustes_modal.html' }
+    ];
+
+    const jsonResources = [
+      { label: 'Índice de Búsqueda (JSON)', url: 'data/songs-index.json' },
+      { label: 'Posiciones de Acordes (JSON)', url: 'data/chord_positions.json' },
+      { label: 'Catequesis (JSON)', url: 'data/catequesis.json' },
+      { label: 'Paises y Diócesis (JSON)', url: 'data/paises.json' }
+    ];
+
+    const htmlsToParse = ['index.html', 'perfil.html', 'preparar.html', 'bitacora.html', 'expancion.html', 'cliturgico.html'];
+    const jsSet = new Set();
+    const cssSet = new Set();
+    const assetSet = new Set();
+
+    jsSet.add('sw.js');
+    assetSet.add('manifest.json');
+
+    for (const htmlPath of htmlsToParse) {
+      try {
+        const res = await fetch(htmlPath);
+        if (res.ok) {
+          const text = await res.text();
+          const jsMatches = text.matchAll(/src="([^"]+\.js)"/g);
+          for (const m of jsMatches) jsSet.add(m[1].replace(/^\.\//, ''));
+          const cssMatches = text.matchAll(/href="([^"]+\.css)"/g);
+          for (const m of cssMatches) cssSet.add(m[1].replace(/^\.\//, ''));
+          const imgMatches = text.matchAll(/src="([^"]+\.(png|jpg|jpeg|gif|ico|svg))"/g);
+          for (const m of imgMatches) assetSet.add(m[1].replace(/^\.\//, ''));
+          const preloadMatches = text.matchAll(/href="([^"]+\.(js|css))"/g);
+          for (const m of preloadMatches) {
+            if (m[2] === 'js') jsSet.add(m[1].replace(/^\.\//, ''));
+            else if (m[2] === 'css') cssSet.add(m[1].replace(/^\.\//, ''));
+          }
+        }
+      } catch (e) {
+        console.warn('Error escaneando HTML:', htmlPath, e);
+      }
+    }
+
+    const jsResources = Array.from(jsSet).map(url => ({ url }));
+    const cssResources = Array.from(cssSet).map(url => ({ url }));
+    const assetResources = Array.from(assetSet).map(url => ({ url }));
+
+    const songs = await getOrFetchAllSongs();
+    const songResources = songs.map(s => {
+      const id = s.id;
+      const folder = (id && id.startsWith('aet')) ? 'data/songs-ae' : 'data/songs';
+      return { url: `${folder}/${id}.json?offline=true` };
+    });
+
+    return {
+      htmlResources,
+      jsonResources,
+      jsResources,
+      cssResources,
+      assetResources,
+      songResources,
+      songs
+    };
+  }
+
   window.recalcularEstadoRecursos = async function() {
     const listEl = document.getElementById('status-resources-list');
     const totalRatioEl = document.getElementById('status-total-ratio');
@@ -2076,100 +2165,49 @@ window.initAjustes = async function() {
     listEl.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 20px 0;">Escaneando recursos en la caché local...</div>';
 
     try {
-      // 1. Obtener recursos estáticos de las páginas HTML
-      const htmlResources = [
-        { label: 'Inicio o Index.html', url: 'index.html' },
-        { label: 'Perfil Cuenta (HTML)', url: 'perfil.html' },
-        { label: 'Preparar Cantos (HTML)', url: 'preparar.html' },
-        { label: 'Ajustes de la App (HTML)', url: 'data/ajustes_modal.html' }
-      ];
-
-      // JSONs de datos estáticos
-      const jsonResources = [
-        { label: 'Índice de Búsqueda (JSON)', url: 'data/songs-index.json' },
-        { label: 'Posiciones de Acordes (JSON)', url: 'data/chord_positions.json' },
-        { label: 'Catequesis (JSON)', url: 'data/catequesis.json' },
-        { label: 'Paises y Diócesis (JSON)', url: 'data/paises.json' }
-      ];
-
-      // Descubrir JS, CSS e imágenes analizando los HTMLs locales
-      const htmlsToParse = ['index.html', 'perfil.html', 'preparar.html'];
-      const jsSet = new Set();
-      const cssSet = new Set();
-      const assetSet = new Set(); // Imágenes, fuentes, manifest
-
-      // Agregar Service Worker
-      jsSet.add('sw.js');
-      assetSet.add('manifest.json');
-
-      for (const htmlPath of htmlsToParse) {
-        try {
-          const res = await fetch(htmlPath);
-          if (res.ok) {
-            const text = await res.text();
-            // Buscar JS
-            const jsMatches = text.matchAll(/src="([^"]+\.js)"/g);
-            for (const m of jsMatches) {
-              jsSet.add(m[1].replace(/^\.\//, ''));
-            }
-            // Buscar CSS
-            const cssMatches = text.matchAll(/href="([^"]+\.css)"/g);
-            for (const m of cssMatches) {
-              cssSet.add(m[1].replace(/^\.\//, ''));
-            }
-            // Buscar imágenes
-            const imgMatches = text.matchAll(/src="([^"]+\.(png|jpg|jpeg|gif|ico|svg))"/g);
-            for (const m of imgMatches) {
-              assetSet.add(m[1].replace(/^\.\//, ''));
-            }
-            // Buscar preloads de JS/CSS
-            const preloadMatches = text.matchAll(/href="([^"]+\.(js|css))"/g);
-            for (const m of preloadMatches) {
-              if (m[2] === 'js') jsSet.add(m[1].replace(/^\.\//, ''));
-              else if (m[2] === 'css') cssSet.add(m[1].replace(/^\.\//, ''));
-            }
-          }
-        } catch (e) {
-          console.warn('Error escaneando HTML:', htmlPath, e);
-        }
-      }
-
-      // Convertir Sets a arrays
-      const jsResources = Array.from(jsSet).map(url => ({ url }));
-      const cssResources = Array.from(cssSet).map(url => ({ url }));
-      const assetResources = Array.from(assetSet).map(url => ({ url }));
-
-      // JSONs de Cantos
-      const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
-      const songResources = songIds.map(id => {
-        const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
-        return { url: `${folder}/${id}.json?offline=true` };
-      });
+      const {
+        htmlResources,
+        jsonResources,
+        jsResources,
+        cssResources,
+        assetResources,
+        songResources
+      } = await getAllAppResources();
 
       // 2. Conectar a la caché
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v208';
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v304';
       const cache = await caches.open(cacheName);
       
       // Obtener todas las claves cacheadas para búsqueda rápida
       const cachedRequests = await cache.keys();
-      const cachedUrls = new Set(cachedRequests.map(r => {
+      const cachedUrls = new Set();
+      cachedRequests.forEach(r => {
         const urlObj = new URL(r.url, window.location.href);
-        // Retornamos la ruta relativa limpia
         let path = urlObj.pathname;
         if (path.startsWith('/')) {
           path = path.substring(1);
         }
-        return path + urlObj.search;
-      }));
+        cachedUrls.add(path + urlObj.search);
+        cachedUrls.add(path); // También registrar sin query string
+      });
 
-      // Helper para comprobar existencia en caché
+      // Helper para comprobar existencia en caché (tolerante a ?offline=true y ?v=...)
       const checkCached = (relUrl) => {
         let cleanRel = relUrl.replace(/^\.\//, '');
         if (cleanRel.startsWith('/')) {
           cleanRel = cleanRel.substring(1);
         }
-        return cachedUrls.has(cleanRel);
+        if (cachedUrls.has(cleanRel)) return true;
+        
+        // Probar sin query string
+        const baseRel = cleanRel.split('?')[0];
+        if (cachedUrls.has(baseRel)) return true;
+
+        // Probar con ?offline=true
+        if (cachedUrls.has(`${baseRel}?offline=true`)) return true;
+
+        return false;
       };
 
       // 3. Evaluar el estado de cada categoría
@@ -2316,7 +2354,7 @@ window.initAjustes = async function() {
     if (status) {
       status.textContent = statusText;
       // Remover negrita si es el mensaje de éxito de descarga o sincronización
-      if (statusText === "¡Todos los cantos descargados offline con éxito!" || statusText === "¡Tus cejillas y notas se activaron de forma offline!") {
+      if (statusText === "¡Todos los recursos y cantos descargados offline con éxito!" || statusText === "¡Tus cejillas y notas se activaron de forma offline!") {
         status.style.fontWeight = 'normal';
       } else {
         status.style.fontWeight = '600';
@@ -2363,56 +2401,74 @@ window.initAjustes = async function() {
       const isChecked = cantoEquipoToggle.checked;
       if (isChecked) {
 
-        // ACTIVAR: Descargar todos los cantos
+        // ACTIVAR: Descargar todos los cantos y todos los recursos de la aplicación
         cantoEquipoToggle.disabled = true;
         try {
-          updateCloudProgress("Iniciando descarga...", 0);
+          updateCloudProgress("Iniciando escaneo y descarga...", 0);
           
           const keys = await caches.keys();
-          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v208';
+          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v304';
           const cache = await caches.open(cacheName);
           
-          const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
-          if (songIds.length === 0) {
-            throw new Error("No hay cantos cargados en la aplicación para descargar.");
+          const resourcesData = await getAllAppResources();
+          
+          // Crear lista completa de URLs a cachear
+          const allUrlsToCache = [];
+          
+          // 1. HTMLs
+          resourcesData.htmlResources.forEach(r => allUrlsToCache.push(r.url));
+          // 2. JSONs
+          resourcesData.jsonResources.forEach(r => allUrlsToCache.push(r.url));
+          // 3. JS
+          resourcesData.jsResources.forEach(r => allUrlsToCache.push(r.url));
+          // 4. CSS
+          resourcesData.cssResources.forEach(r => allUrlsToCache.push(r.url));
+          // 5. Assets
+          resourcesData.assetResources.forEach(r => allUrlsToCache.push(r.url));
+          // 6. Cantos JSON
+          resourcesData.songResources.forEach(r => allUrlsToCache.push(r.url));
+
+          // Eliminar duplicados
+          const uniqueUrls = Array.from(new Set(allUrlsToCache));
+          const total = uniqueUrls.length;
+
+          if (total === 0) {
+            throw new Error("No hay recursos identificados para descargar.");
           }
           
           let downloaded = 0;
-          const total = songIds.length;
           const batchSize = 15;
           
           for (let i = 0; i < total; i += batchSize) {
-            const batch = songIds.slice(i, i + batchSize);
-            await Promise.all(batch.map(async (id) => {
-              const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
-              const url = `${folder}/${id}.json?offline=true`;
+            const batch = uniqueUrls.slice(i, i + batchSize);
+            await Promise.all(batch.map(async (url) => {
               try {
                 const res = await fetch(url);
                 if (res.ok) {
                   await cache.put(url, res.clone());
                 }
               } catch (err) {
-                console.warn(`Error descargando canto ${id}:`, err);
+                console.warn(`Error descargando recurso ${url}:`, err);
               }
               downloaded++;
             }));
             
             const pct = Math.min(100, Math.round((downloaded / total) * 100));
-            updateCloudProgress(`Descargando cantos (${downloaded}/${total})...`, pct);
+            updateCloudProgress(`Descargando recursos (${downloaded}/${total})...`, pct);
           }
           
           localStorage.setItem('cantoEquipoOffline', 'true');
-          updateCloudProgress("¡Todos los cantos descargados offline con éxito!", 100);
+          updateCloudProgress("¡Todos los recursos y cantos descargados offline con éxito!", 100);
         } catch (err) {
           console.error(err);
           if (window.mostrarAlerta) {
             window.mostrarAlerta({
               titulo: 'Error',
-              mensaje: 'Error al descargar cantos: ' + err.message,
+              mensaje: 'Error al descargar recursos: ' + err.message,
               icono: 'error'
             });
           } else {
-            alert("Error al descargar cantos: " + err.message);
+            alert("Error al descargar recursos: " + err.message);
           }
           updateCloudProgress("Error en la descarga", 0);
           cantoEquipoToggle.checked = false;
@@ -2428,10 +2484,11 @@ window.initAjustes = async function() {
           try {
             updateCloudProgress("Eliminando cantos guardados...", 20);
             const keys = await caches.keys();
-            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v208';
+            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v304';
             const cache = await caches.open(cacheName);
             
-            const songIds = window.allSongs ? window.allSongs.map(s => s.id) : [];
+            const songs = await getOrFetchAllSongs();
+            const songIds = songs.map(s => s.id);
             let deleted = 0;
             
             for (const id of songIds) {
@@ -2458,6 +2515,7 @@ window.initAjustes = async function() {
             }
             cantoEquipoToggle.checked = true;
             updateCantoEquipoBadge();
+
           } finally {
             cantoEquipoToggle.disabled = false;
             hideCloudProgress();

@@ -1822,35 +1822,47 @@
             </button>
           </div>
 
-          <!-- Contenido Submódulo: LOG Console -->
-          <div id="log-submodule-console-content" class="log-submodule-panel" style="display: block;">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-              <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); display: flex; align-items: center; gap: 6px;">
-                <span class="material-symbols-outlined" style="color: var(--accent-color);">terminal</span>
-                Logs de Diagnóstico
-              </h4>
-              <div style="display: flex; gap: 6px;">
-                <button class="btn theme-btn" id="copy-logs-btn" style="font-size: 0.75rem; padding: 4px 10px;">Copiar Logs</button>
-                <button class="btn theme-btn" id="clear-logs-btn" style="font-size: 0.75rem; padding: 4px 10px; background: #dc3545; color: #fff;">Limpiar</button>
+            <!-- Contenido Submódulo: LOG Console -->
+            <div id="log-submodule-console-content" class="log-submodule-panel" style="display: block;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+                <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); display: flex; align-items: center; gap: 6px;">
+                  <span class="material-symbols-outlined" style="color: var(--accent-color);">terminal</span>
+                  Logs de Diagnóstico
+                </h4>
+                <div style="display: flex; gap: 6px;">
+                  <button class="btn theme-btn" id="copy-logs-btn" style="font-size: 0.75rem; padding: 4px 10px;">Copiar Logs</button>
+                  <button class="btn theme-btn" id="clear-logs-btn" style="font-size: 0.75rem; padding: 4px 10px; background: #dc3545; color: #fff;">Limpiar</button>
+                </div>
+              </div>
+
+              <!-- Filtros: Categoría y Fecha con Calendario -->
+              <div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 150px;">
+                  <label style="font-size: 0.82rem; font-weight: 700; color: var(--text-color); display: block; margin-bottom: 4px;">Categoría:</label>
+                  <select id="logs-category-select" class="theme-select" style="width: 100%; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600;">
+                    <option value="all">Ver Todos los Logs</option>
+                    <option value="Buscador">Buscador (Eventos y Foco)</option>
+                    <option value="Firebase">Firebase / Nube</option>
+                    <option value="PWA">Service Worker / PWA</option>
+                    <option value="Bitácora">Bitácora / Actividades</option>
+                    <option value="Interfaz">Interfaz y Eventos UI</option>
+                    <option value="General">General / Sistema</option>
+                  </select>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                  <label style="font-size: 0.82rem; font-weight: 700; color: var(--text-color); display: block; margin-bottom: 4px;">Fecha (Día):</label>
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <input type="date" id="logs-date-input" class="theme-input" style="flex: 1; padding: 5px 8px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600; font-family: inherit;">
+                    <button type="button" id="logs-today-btn" class="btn" style="padding: 5px 8px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--panel-border); border-radius: 6px;" title="Ver logs de hoy">Hoy</button>
+                    <button type="button" id="logs-all-dates-btn" class="btn" style="padding: 5px 8px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--panel-border); border-radius: 6px;" title="Ver todos los días">Todos</button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="logs-viewer-container" class="cLog">
+                Esperando registros de diagnóstico...
               </div>
             </div>
-
-            <div style="margin-bottom: 10px;">
-              <label style="font-size: 0.82rem; font-weight: 700; color: var(--text-color); display: block; margin-bottom: 4px;">Filtrar por Categoría:</label>
-              <select id="logs-category-select" class="theme-select" style="width: 100%; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 600;">
-                <option value="all">Ver Todos los Logs</option>
-                <option value="Buscador">Buscador (Eventos y Foco)</option>
-                <option value="Firebase">Firebase / Nube</option>
-                <option value="PWA">Service Worker / PWA</option>
-                <option value="Interfaz">Interfaz y Eventos UI</option>
-                <option value="General">General / Sistema</option>
-              </select>
-            </div>
-
-            <div id="logs-viewer-container" class="cLog">
-              Esperando registros de diagnóstico...
-            </div>
-          </div>
 
           <!-- Contenido Submódulo: Estado Resucitó -->
           <div id="log-submodule-status-content" class="log-submodule-panel" style="display: none; padding: 8px 0;">
