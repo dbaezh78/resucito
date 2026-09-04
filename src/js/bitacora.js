@@ -645,11 +645,9 @@ function crearSubFilaAnidada(ev, isLast, groupId) {
   tdHora.style.fontSize = '0.82rem';
   tdHora.textContent = formatearHoraMilitar(ev);
 
-  // Usuario
+  // Usuario (en blanco en subfilas anidadas para denotar pertenencia al registro padre)
   const tdUser = document.createElement('td');
-  tdUser.style.fontSize = '0.82rem';
-  const nombreSubUser = formatearNombreUsuario(ev.usuarioNombre || ev.usuarioEmail);
-  tdUser.textContent = `👤 ${nombreSubUser}`;
+  tdUser.textContent = '';
 
   row.appendChild(tdCanto);
   row.appendChild(tdDetalle);
