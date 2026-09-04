@@ -1,4 +1,5 @@
-import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
+import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, isAuthInitialized } from './auth.js';
+import { hasPermission } from './accesscontrol.js';
 
 (function () {
   // Evitar inyecciones duplicadas
@@ -70,6 +71,11 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
             <button class="account-action-item" id="account-action-perfil">
               <span class="material-symbols-outlined">badge</span>
               <span>Perfil Cuenta</span>
+            </button>
+
+            <button class="account-action-item" id="account-action-bitacora">
+              <span class="material-symbols-outlined">history</span>
+              <span>Bitácora de Actividad</span>
             </button>
 
             <button class="account-action-item" id="account-action-actualizar">
@@ -151,10 +157,11 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
           <span>Resucitó</span>
           <div class="nav-submenu" id="nav-submenu-resucito">
             <a href="#" id="nav-resucito-camino"><span class="material-symbols-outlined arrow-icon">home</span> Inicio</a>
-            <a href="perfil.html"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
-            <a href="preparar.html"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
-            <a href="/src/html/intro.html"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>
-            <a href="https://docs.resucito.do/resucito.pdf" target="_blank"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
+            <a href="perfil.html" id="nav-resucito-perfil"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
+            <a href="preparar.html" id="nav-resucito-preparar"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
+            <a href="bitacora.html" id="nav-resucito-bitacora"><span class="material-symbols-outlined arrow-icon">history</span> Bitácora</a>
+            <a href="/src/html/intro.html" id="nav-resucito-intro"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>
+            <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
           </div>
         </button>
@@ -229,7 +236,7 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
           <span class="material-symbols-outlined" id="custom-confirm-icon" style="font-size: 32px;">help_outline</span>
         </div>
         <h3 id="custom-confirm-title" style="margin: 0 0 8px 0; font-size: 1.25rem; color: var(--text-color);">Confirmar</h3>
-        <p id="custom-confirm-message" style="margin: 0 0 22px 0; font-size: 0.95rem; color: var(--text-muted, #666); line-height: 1.4;">
+        <p id="custom-confirm-message" style="margin: 0 0 22px 0; font-size: 0.95rem; color: var(--text-muted, #666); line-height: 1.4; white-space: pre-line;">
           ¿Estás seguro?
         </p>
 
@@ -487,15 +494,20 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
         const accountCard = document.getElementById('account-popup-card');
         if (accountCard) accountCard.classList.add('hidden');
 
-        const modal = document.getElementById('settings-modal');
-        if (modal) {
-          if (typeof window.abrirModalConfiguracion === 'function') {
-            window.abrirModalConfiguracion();
-          } else {
-            modal.style.display = 'flex';
-          }
+        if (typeof window.abrirModalConfiguracion === 'function') {
+          window.abrirModalConfiguracion();
         } else {
-          window.location.href = './index.html#ajustes';
+          import('./js/ajustes.js').then(() => {
+            if (typeof window.abrirModalConfiguracion === 'function') {
+              window.abrirModalConfiguracion();
+            } else {
+              const modal = document.getElementById('settings-modal');
+              if (modal) modal.style.display = 'flex';
+            }
+          }).catch(err => {
+            console.warn("No se pudo cargar ajustes in-situ:", err);
+            window.location.href = './index.html#ajustes';
+          });
         }
       });
     }
@@ -553,6 +565,14 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
       prepararBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         window.location.href = 'preparar.html';
+      });
+    }
+
+    const bitacoraBtn = document.getElementById('account-action-bitacora');
+    if (bitacoraBtn) {
+      bitacoraBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        window.location.href = 'bitacora.html';
       });
     }
 
@@ -715,10 +735,87 @@ import { onAuthStateChanged, loginMock, logoutMock } from './auth.js';
       }
     };
 
-    onAuthStateChanged(updateAuthUI);
-    if (window.firebaseAPI?.onAuthReady) {
-      window.firebaseAPI.onAuthReady(updateAuthUI);
+    // Control de visibilidad de páginas según Permisos (Ajustes: Páginas)
+    function updateNavPagesVisibility() {
+      const isAdmin = isCurrentUserAdmin();
+
+      const canInicio = isAdmin || hasPermission('page_inicio');
+      const canPerfil = isAdmin || hasPermission('page_perfil');
+      const canPreparar = isAdmin || hasPermission('page_preparar');
+      const canBitacora = isAdmin || hasPermission('page_bitacora');
+      const canIntro = isAdmin || hasPermission('page_introduccion');
+      const canPdf = isAdmin || hasPermission('page_resucito_pdf');
+      const canInstalar = isAdmin || hasPermission('page_instalar_app');
+
+      // Botón Inicio en barra inferior
+      const btnInicio = document.getElementById('btn-nav-inicio');
+      if (btnInicio) btnInicio.style.display = canInicio ? 'flex' : 'none';
+
+      // Enlaces en Submenú Resucitó
+      const navResucitoCamino = document.getElementById('nav-resucito-camino');
+      const navResucitoPerfil = document.getElementById('nav-resucito-perfil');
+      const navResucitoPreparar = document.getElementById('nav-resucito-preparar');
+      const navResucitoBitacora = document.getElementById('nav-resucito-bitacora');
+      const navResucitoIntro = document.getElementById('nav-resucito-intro');
+      const navResucitoPdf = document.getElementById('nav-resucito-pdf');
+      const navResucitoInstalar = document.getElementById('installButton');
+
+      if (navResucitoCamino) navResucitoCamino.style.display = canInicio ? 'flex' : 'none';
+      if (navResucitoPerfil) navResucitoPerfil.style.display = canPerfil ? 'flex' : 'none';
+      if (navResucitoPreparar) navResucitoPreparar.style.display = canPreparar ? 'flex' : 'none';
+      if (navResucitoBitacora) navResucitoBitacora.style.display = canBitacora ? 'flex' : 'none';
+      if (navResucitoIntro) navResucitoIntro.style.display = canIntro ? 'flex' : 'none';
+      if (navResucitoPdf) navResucitoPdf.style.display = canPdf ? 'flex' : 'none';
+      if (navResucitoInstalar) navResucitoInstalar.style.display = canInstalar ? 'flex' : 'none';
+
+      // Acciones en Popup de Cuenta
+      const accountActionPreparar = document.getElementById('account-action-preparar');
+      const accountActionPerfil = document.getElementById('account-action-perfil');
+      const accountActionBitacora = document.getElementById('account-action-bitacora');
+      const accountPopupManage = document.getElementById('account-popup-manage');
+
+      if (accountActionPreparar) accountActionPreparar.style.display = canPreparar ? 'flex' : 'none';
+      if (accountActionPerfil) accountActionPerfil.style.display = canPerfil ? 'flex' : 'none';
+      if (accountActionBitacora) accountActionBitacora.style.display = canBitacora ? 'flex' : 'none';
+      if (accountPopupManage) accountPopupManage.style.display = canPerfil ? 'block' : 'none';
+
+      // Verificar si la página actual tiene permiso o debe redirigir al inicio
+      checkCurrentPagePermissionAndRedirect();
     }
+
+    function checkCurrentPagePermissionAndRedirect() {
+      // Si Firebase Auth aún no ha resuelto la sesión, no redirigir prematuramente
+      if (!isAuthInitialized()) return;
+
+      const pathname = window.location.pathname.toLowerCase();
+      const isAdmin = isCurrentUserAdmin();
+      if (isAdmin) return;
+
+      if (pathname.includes('perfil.html') && !hasPermission('page_perfil')) {
+        console.warn("Acceso denegado a perfil.html por permisos. Redirigiendo a Inicio...");
+        window.location.replace('./index.html');
+      } else if (pathname.includes('preparar.html') && !hasPermission('page_preparar')) {
+        console.warn("Acceso denegado a preparar.html por permisos. Redirigiendo a Inicio...");
+        window.location.replace('./index.html');
+      } else if (pathname.includes('bitacora.html') && !hasPermission('page_bitacora')) {
+        console.warn("Acceso denegado a bitacora.html por permisos. Redirigiendo a Inicio...");
+        window.location.replace('./index.html');
+      } else if (pathname.includes('intro.html') && !hasPermission('page_introduccion')) {
+        console.warn("Acceso denegado a intro.html por permisos. Redirigiendo a Inicio...");
+        window.location.replace('/index.html');
+      }
+    }
+
+    window.updateNavPagesVisibility = updateNavPagesVisibility;
+    window.checkCurrentPagePermissionAndRedirect = checkCurrentPagePermissionAndRedirect;
+
+    // Ejecución inicial para renderizar botones de navegación
+    updateNavPagesVisibility();
+
+    onAuthStateChanged((user) => {
+      updateAuthUI(user);
+      updateNavPagesVisibility();
+    });
 
     // Lógica del botón de instalar PWA
     const installBtn = document.getElementById('installButton');

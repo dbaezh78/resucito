@@ -40,8 +40,20 @@ export const PERMISSIONS = {
   BOOK_CATEQUESIS: "book_catequesis",
   EDIT_CATEQUESIS: "edit_catequesis", // Permiso para redactar y editar catequesis
   MANAGE_PAGE_INSPECTION: "manage_page_inspection", // Permiso exclusivo para Ajustes > Log > Manejo (Inspección)
+  DELETE_BITACORA: "delete_bitacora", // Permiso para eliminar registros de la bitácora
   BOOK_FAVORITOS: "book_favoritos",
-  BOOK_EXTRAS: "book_extras" // Permiso exclusivo para el libro Extras
+  BOOK_EXTRAS: "book_extras", // Permiso exclusivo para el libro Extras
+  PAGE_INICIO: "page_inicio",
+  PAGE_PERFIL: "page_perfil",
+  PAGE_PREPARAR: "page_preparar",
+  PAGE_BITACORA: "page_bitacora",
+  PAGE_INTRODUCCION: "page_introduccion",
+  PAGE_RESUCITO_PDF: "page_resucito_pdf",
+  PAGE_INSTALAR_APP: "page_instalar_app",
+  PAGE_OPCIONES_PAGINAS: "page_opciones_paginas",
+  VIEW_SONG_CANTO: "view_song_canto",
+  VIEW_SONG_LITURGIA: "view_song_liturgia",
+  VIEW_SONG_CATEQUESIS: "view_song_catequesis"
 };
 
 // Descripciones amigables para los permisos
@@ -52,12 +64,24 @@ export const PERMISSION_LABELS = {
   "view_usage": "Ver Uso de la Aplicación (Uso App)",
   "view_status": "Ver Estado de Canto Resucitó",
   "manage_page_inspection": "Manejo de Inspección de Página (Log > Manejo)",
+  "delete_bitacora": "Eliminar Registros de la Bitácora",
   "view_settings_general": "Ver Ajustes: General",
   "view_settings_theme": "Ver Ajustes: Tema",
-  "view_settings_song": "Ver Ajustes: Canto",
+  "view_settings_song": "Ajustes: Canto",
+  "view_song_canto": "Canto",
+  "view_song_liturgia": "Liturgia",
+  "view_song_catequesis": "Catequesis",
   "view_settings_user": "Ver Ajustes: Usuario",
   "view_settings_data": "Ver Ajustes: Datos",
   "view_settings_paginas": "Ajustes: Páginas",
+  "page_inicio": "Inicio",
+  "page_perfil": "Perfil",
+  "page_preparar": "Preparar Cantos",
+  "page_bitacora": "Bitácora",
+  "page_introduccion": "Introducción",
+  "page_resucito_pdf": "Resucitó PDF",
+  "page_instalar_app": "Instalar App",
+  "page_opciones_paginas": "Opciones de páginas",
   "view_settings_log": "Ver Ajustes: Log",
   "view_books": "Ver Libros de Cantos",
   "control_canto": "Control Canto",
@@ -139,7 +163,19 @@ export function initAccessControl() {
     PERMISSIONS.BOOK_ACLAMACIONES,
     PERMISSIONS.BOOK_SALMODIAS,
     PERMISSIONS.BOOK_CATEQUESIS,
-    PERMISSIONS.BOOK_FAVORITOS
+    PERMISSIONS.BOOK_FAVORITOS,
+    PERMISSIONS.PAGE_INICIO,
+    PERMISSIONS.PAGE_PERFIL,
+    PERMISSIONS.PAGE_PREPARAR,
+    PERMISSIONS.PAGE_BITACORA,
+    PERMISSIONS.PAGE_INTRODUCCION,
+    PERMISSIONS.PAGE_RESUCITO_PDF,
+    PERMISSIONS.PAGE_INSTALAR_APP,
+    PERMISSIONS.PAGE_OPCIONES_PAGINAS,
+    PERMISSIONS.VIEW_SETTINGS_SONG,
+    PERMISSIONS.VIEW_SONG_CANTO,
+    PERMISSIONS.VIEW_SONG_LITURGIA,
+    PERMISSIONS.VIEW_SONG_CATEQUESIS
   ], "Cantores registrados en la comunidad");
 
   // Crear Grupo de Invitados
@@ -149,10 +185,22 @@ export function initAccessControl() {
     PERMISSIONS.VIEW_SETTINGS_GENERAL,
     PERMISSIONS.VIEW_SETTINGS_THEME,
     PERMISSIONS.VIEW_SETTINGS_SONG,
+    PERMISSIONS.VIEW_SONG_CANTO,
+    PERMISSIONS.VIEW_SONG_LITURGIA,
+    PERMISSIONS.VIEW_SONG_CATEQUESIS,
     PERMISSIONS.VIEW_SETTINGS_USER,
     PERMISSIONS.VIEW_SETTINGS_DATA,
+    PERMISSIONS.VIEW_SETTINGS_PAGINAS,
     PERMISSIONS.VIEW_SETTINGS_LOG,
-    PERMISSIONS.VIEW_BOOKS
+    PERMISSIONS.VIEW_BOOKS,
+    PERMISSIONS.PAGE_INICIO,
+    PERMISSIONS.PAGE_PERFIL,
+    PERMISSIONS.PAGE_PREPARAR,
+    PERMISSIONS.PAGE_BITACORA,
+    PERMISSIONS.PAGE_INTRODUCCION,
+    PERMISSIONS.PAGE_RESUCITO_PDF,
+    PERMISSIONS.PAGE_INSTALAR_APP,
+    PERMISSIONS.PAGE_OPCIONES_PAGINAS
   ], "Usuarios sin inicio de sesión");
   
   // El grupo Cantores incluye al grupo Invitados (Subgrupo anidado)
@@ -275,9 +323,12 @@ export function listenToGroupConfigFromFirebase() {
             }
           });
           saveAccessControl();
-          // Actualización silenciosa de visibilidad de libros en la ventana principal
+          // Actualización silenciosa de visibilidad de libros y ajustes en la ventana principal
           if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
             window.updateBookTabsVisibility();
+          }
+          if (typeof window !== 'undefined' && window.updateAccessControlVisibility) {
+            window.updateAccessControlVisibility();
           }
           renderAccessControlUI();
         }
@@ -377,9 +428,12 @@ export async function syncAllAccessControlFromFirebase() {
   // 3. Guardar estado local
   saveAccessControl();
 
-  // 4. Actualizar visibilidad de libros en la pantalla principal
+  // 4. Actualizar visibilidad de libros y ajustes en la pantalla principal
   if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
     window.updateBookTabsVisibility();
+  }
+  if (typeof window !== 'undefined' && window.updateAccessControlVisibility) {
+    window.updateAccessControlVisibility();
   }
 
   // 5. Renderizar interfaz de Control de Acceso
@@ -876,6 +930,24 @@ export function hasPermission(permissionKey, customUser = null) {
 }
 
 /**
+ * Obtiene el valor numérico de la etapa del usuario actual desde su perfil.
+ */
+export function getUserEtapaValue() {
+  try {
+    const local = localStorage.getItem('user_profile_data');
+    if (local) {
+      const parsed = JSON.parse(local);
+      if (parsed && (parsed.etapa !== undefined || parsed.etapaCamino !== undefined)) {
+        return parseFloat(parsed.etapa ?? parsed.etapaCamino) || 0;
+      }
+    }
+  } catch (e) {
+    console.warn("Error leyendo etapa del usuario:", e);
+  }
+  return 0;
+}
+
+/**
  * Evalúa si el Hermano actual (autenticado o invitado) tiene acceso al libro indicado.
  */
 export function canAccessBook(bookId) {
@@ -890,6 +962,13 @@ export function canAccessBook(bookId) {
 
   if (bookId === 'extras') {
     return hasPermission(PERMISSIONS.BOOK_EXTRAS);
+  }
+
+  if (bookId === 'salmodias') {
+    if (!hasPermission(PERMISSIONS.BOOK_SALMODIAS)) return false;
+    // Requiere etapa de Iniciación a la Oración en adelante (etapa >= 3)
+    const etapa = getUserEtapaValue();
+    return etapa >= 3;
   }
 
   const permKey = `book_${bookId}`;
@@ -1415,7 +1494,15 @@ const PERMISSION_TREE = [
       { key: "view_theme_perfil", label: "Perfil" }
     ]
   },
-  { key: "view_settings_song_dup", label: "Ajustes: Canto", value: "view_settings_song" },
+  {
+    key: "view_settings_song",
+    label: "Ajustes: Canto",
+    children: [
+      { key: "view_song_canto", label: "Canto" },
+      { key: "view_song_liturgia", label: "Liturgia" },
+      { key: "view_song_catequesis", label: "Catequesis" }
+    ]
+  },
   {
     key: "view_settings_user",
     label: "Ajustes: Usuario",
@@ -1436,7 +1523,20 @@ const PERMISSION_TREE = [
     ]
   },
   { key: "view_settings_data", label: "Ajustes: Datos" },
-  { key: "view_settings_paginas", label: "Ajustes: Páginas" },
+  {
+    key: "view_settings_paginas",
+    label: "Ajustes: Páginas",
+    children: [
+      { key: "page_inicio", label: "Inicio" },
+      { key: "page_perfil", label: "Perfil" },
+      { key: "page_preparar", label: "Preparar Cantos" },
+      { key: "page_bitacora", label: "Bitácora" },
+      { key: "page_introduccion", label: "Introducción" },
+      { key: "page_resucito_pdf", label: "Resucitó PDF" },
+      { key: "page_instalar_app", label: "Instalar App" },
+      { key: "page_opciones_paginas", label: "Opciones de páginas" }
+    ]
+  },
   {
     key: "view_settings_log",
     label: "Ajustes: Log",
@@ -1646,6 +1746,12 @@ function renderPermissionsPanel() {
 
         saveGroupConfigToCloud();
         renderPermissionsPanel();
+        if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
+          window.updateBookTabsVisibility();
+        }
+        if (typeof window !== 'undefined' && window.updateAccessControlVisibility) {
+          window.updateAccessControlVisibility();
+        }
       }
     });
   });

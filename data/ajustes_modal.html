@@ -80,6 +80,41 @@
                 Abrir Página
               </a>
             </div>
+
+            <!-- Tarjeta para bitacora.html (Módulo Bitácora) -->
+            <div style="display: flex; flex-direction: column; padding: 14px 16px; background: rgba(0,0,0,0.02); border: 1px solid var(--panel-border); border-radius: 12px; gap: 12px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="material-symbols-outlined" style="font-size: 1.8rem; color: var(--accent-color);">history</span>
+                  <div>
+                    <h5 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Bitácora de Actividad</h5>
+                    <p style="margin: 2px 0 0 0; font-size: 0.78rem; color: var(--text-muted);">Registro de visitas, cambios de tono, cejilla y actividad diaria de los cantores.</p>
+                  </div>
+                </div>
+                <a href="bitacora.html" class="btn theme-btn" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; font-size: 0.85rem; font-weight: 700; text-decoration: none; border-radius: 8px;">
+                  <span class="material-symbols-outlined" style="font-size: 1.1rem;">open_in_new</span>
+                  Abrir Página
+                </a>
+              </div>
+
+              <!-- Control para activar / desactivar botón de eliminar -->
+              <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; border-top: 1px dashed var(--panel-border); gap: 12px; flex-wrap: wrap;">
+                <div>
+                  <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-color); display: flex; align-items: center; gap: 6px;">
+                    <span class="material-symbols-outlined" style="font-size: 1.1rem; color: #dc2626;">delete</span>
+                    Botón de Eliminar Registros
+                  </span>
+                  <p style="margin: 2px 0 0 0; font-size: 0.75rem; color: var(--text-muted);">Muestra u oculta el icono de reciclaje en la tabla de bitácora para borrar registros.</p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span id="label-estado-bitacora-delete" style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);">Deshabilitado</span>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="switch-bitacora-delete">
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

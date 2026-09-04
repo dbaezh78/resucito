@@ -1,7 +1,8 @@
 // src/js/ajustes.js
 // Centralización de todos los ajustes y preferencias de la aplicación.
 import { auth, db, doc, getDoc, setDoc, collection, getDocs } from '../firebase.js';
-import { getCurrentUser } from '../auth.js';
+import { getCurrentUser, isCurrentUserAdmin, onAuthStateChanged, loginMock, logoutMock } from '../auth.js';
+import { setupAccessControlUI, getAccessControlState, hasPermission } from '../accesscontrol.js';
 
 // --- Indicador de Estado del Canto Offline ---
 export function updateCantoEquipoBadge() {
@@ -703,9 +704,16 @@ window.openSettingsTab = function(tabName = 'general') {
   if (tabName === 'datos' && window.renderDatosModule) {
     window.renderDatosModule();
   }
+  if (tabName === 'paginas' && window.initBitacoraSettings) {
+    window.initBitacoraSettings();
+  }
 };
 
-window.abrirModalConfiguracion = function() {
+window.abrirModalConfiguracion = async function() {
+  if (!document.getElementById('settings-modal') && typeof window.initAjustes === 'function') {
+    await window.initAjustes();
+  }
+
   const modal = document.getElementById('settings-modal');
   if (modal && (modal.style.display === 'flex' || modal.style.display === 'block')) {
     // Si ya está abierto, actuar como toggle cerrándolo (guardando cambios)
@@ -991,7 +999,7 @@ window.initAjustes = async function() {
     if (!settingsModalPromise) {
       settingsModalPromise = (async () => {
         try {
-          const response = await fetch('data/ajustes_modal.html?v=125');
+          const response = await fetch('data/ajustes_modal.html?v=129');
           if (response.ok) {
             const html = await response.text();
             const tempDiv = document.createElement('div');
@@ -1599,6 +1607,29 @@ window.initAjustes = async function() {
   const initialBloqueo = localStorage.getItem('resucito_bloquear_inspeccion') === 'true';
   aplicarBloqueoInspeccion(initialBloqueo);
 
+  window.initBitacoraSettings = function() {
+    const switchEl = document.getElementById('switch-bitacora-delete');
+    const labelEl = document.getElementById('label-estado-bitacora-delete');
+
+    if (switchEl) {
+      const isEnabled = localStorage.getItem('resucito_bitacora_show_delete') === 'true';
+      switchEl.checked = isEnabled;
+      if (labelEl) {
+        labelEl.textContent = isEnabled ? 'Habilitado (Visible)' : 'Deshabilitado (Oculto)';
+        labelEl.style.color = isEnabled ? 'var(--accent-color, #dc2626)' : 'var(--text-muted)';
+      }
+
+      switchEl.onchange = () => {
+        const checked = switchEl.checked;
+        localStorage.setItem('resucito_bitacora_show_delete', checked ? 'true' : 'false');
+        if (labelEl) {
+          labelEl.textContent = checked ? 'Habilitado (Visible)' : 'Deshabilitado (Oculto)';
+          labelEl.style.color = checked ? 'var(--accent-color, #dc2626)' : 'var(--text-muted)';
+        }
+      };
+    }
+  };
+
   window.initManejoInspeccionSettings = function() {
     const switchEl = document.getElementById('switch-bloqueo-inspeccion');
     const labelEl = document.getElementById('label-estado-bloqueo-inspeccion');
@@ -1622,6 +1653,295 @@ window.initAjustes = async function() {
       };
     }
   };
+
+  // --- MÓDULO CONTROL DE ACCESO Y VISIBILIDAD DE AJUSTES ---
+  function updateAccessControlVisibilityInternal() {
+    const user = getCurrentUser() || auth.currentUser;
+    const isAdmin = isCurrentUserAdmin();
+
+    const canViewMembers = isAdmin || hasPermission('view_access_miembros');
+    const canViewGroups = isAdmin || hasPermission('view_access_grupos');
+    const canViewInternalMembers = isAdmin || hasPermission('view_access_miembros_internos');
+    const canViewPermissions = isAdmin || hasPermission('view_access_permisos');
+    const canViewInspector = isAdmin || hasPermission('view_access_inspector');
+    const canViewSongStages = isAdmin || hasPermission('edit_song_stages');
+    const canViewAccessSection = isAdmin || hasPermission('manage_access') || canViewMembers || canViewGroups || canViewInternalMembers || canViewPermissions || canViewInspector || canViewSongStages;
+
+    const canViewGeneralComun = isAdmin || hasPermission('view_general_comun');
+    const canViewGeneralCloud = isAdmin || hasPermission('view_general_cloud');
+    const canViewThemeVisual = isAdmin || hasPermission('view_theme_visual');
+    const canViewThemeInicio = isAdmin || hasPermission('view_theme_inicio');
+    const canViewThemePreparacion = isAdmin || hasPermission('view_theme_preparacion');
+    const canViewThemePerfil = isAdmin || hasPermission('view_theme_perfil');
+    const canViewUserCuenta = isAdmin || hasPermission('view_user_cuenta');
+    const canViewUsage = isAdmin || hasPermission('view_usage');
+    const canViewLogs = isAdmin || hasPermission('view_logs');
+    const canViewStatus = isAdmin || hasPermission('view_status');
+    const canManageInspection = isAdmin || hasPermission('manage_page_inspection');
+    const canViewSongCanto = isAdmin || hasPermission('view_song_canto');
+    const canViewSongLiturgia = isAdmin || hasPermission('view_song_liturgia');
+    // Si el usuario no tiene permiso para ver Libro Catequesis, tampoco debe ver Ajustes > Canto > Catequesis
+    const hasBookCatequesis = isAdmin || hasPermission('book_catequesis');
+    const canViewSongCatequesis = hasBookCatequesis && (isAdmin || hasPermission('view_song_catequesis'));
+
+    // Visibilidad de subpestañas dentro de Canto
+    const cantoSubtabCantoBtn = document.getElementById('canto-subtab-canto-btn');
+    const cantoSubtabLiturgiaBtn = document.getElementById('canto-subtab-liturgia-btn');
+    const cantoSubtabCatequesisBtn = document.getElementById('canto-subtab-catequesis-btn');
+
+    if (cantoSubtabCantoBtn) cantoSubtabCantoBtn.style.display = canViewSongCanto ? 'inline-flex' : 'none';
+    if (cantoSubtabLiturgiaBtn) cantoSubtabLiturgiaBtn.style.display = canViewSongLiturgia ? 'inline-flex' : 'none';
+    if (cantoSubtabCatequesisBtn) cantoSubtabCatequesisBtn.style.display = canViewSongCatequesis ? 'inline-flex' : 'none';
+
+    // Si el submódulo activo de Canto ya no está disponible, seleccionar el primero disponible
+    const activeCantoSubtab = document.querySelector('.canto-subtab-btn.active');
+    if (activeCantoSubtab && activeCantoSubtab.style.display === 'none') {
+      const firstAvailableCantoBtn = [cantoSubtabCantoBtn, cantoSubtabLiturgiaBtn, cantoSubtabCatequesisBtn].find(b => b && b.style.display !== 'none');
+      if (firstAvailableCantoBtn) {
+        firstAvailableCantoBtn.click();
+      }
+    }
+
+    // Visibilidad de subpestaña Cuenta en Usuario
+    const userSubtabAccountBtn = document.getElementById('user-subtab-account-btn');
+    if (userSubtabAccountBtn) {
+      userSubtabAccountBtn.style.display = canViewUserCuenta ? 'inline-flex' : 'none';
+    }
+
+    // Visibilidad de subpestaña Uso App en Usuario
+    const userSubtabUsageBtn = document.getElementById('user-subtab-usage-btn');
+    if (userSubtabUsageBtn) {
+      userSubtabUsageBtn.style.display = canViewUsage ? 'inline-flex' : 'none';
+    }
+
+    // Visibilidad de subpestaña Acceso en Usuario
+    const userSubtabAccessBtn = document.getElementById('user-subtab-access-btn');
+    if (userSubtabAccessBtn) {
+      userSubtabAccessBtn.style.display = canViewAccessSection ? 'inline-flex' : 'none';
+    }
+
+    // Si el submódulo activo de Usuario ya no está disponible, seleccionar el primero disponible
+    const activeUserSubtab = document.querySelector('.user-subtab-btn.active');
+    if (activeUserSubtab && activeUserSubtab.style.display === 'none') {
+      const firstAvailableUserBtn = [userSubtabAccountBtn, userSubtabAccessBtn, userSubtabUsageBtn].find(b => b && b.style.display !== 'none');
+      if (firstAvailableUserBtn) {
+        firstAvailableUserBtn.click();
+      }
+    }
+
+    // Subpestañas internas dentro de Acceso
+    const accessSubtabMembers = document.querySelector('.access-subtab-btn[data-subtab="members"]');
+    const accessSubtabGroups = document.querySelector('.access-subtab-btn[data-subtab="groups"]');
+    const accessSubtabInternalMembers = document.querySelector('.access-subtab-btn[data-subtab="internal-members"]');
+    const accessSubtabPermissions = document.querySelector('.access-subtab-btn[data-subtab="permissions"]');
+    const accessSubtabInspector = document.querySelector('.access-subtab-btn[data-subtab="inspector"]');
+    const accessSubtabSongStages = document.querySelector('.access-subtab-btn[data-subtab="song-stages"]');
+
+    if (accessSubtabMembers) accessSubtabMembers.style.display = (isAdmin || canViewMembers) ? 'inline-block' : 'none';
+    if (accessSubtabGroups) accessSubtabGroups.style.display = (isAdmin || canViewGroups) ? 'inline-block' : 'none';
+    if (accessSubtabInternalMembers) accessSubtabInternalMembers.style.display = (isAdmin || canViewInternalMembers) ? 'inline-block' : 'none';
+    if (accessSubtabPermissions) accessSubtabPermissions.style.display = (isAdmin || canViewPermissions) ? 'inline-block' : 'none';
+    if (accessSubtabInspector) accessSubtabInspector.style.display = (isAdmin || canViewInspector) ? 'inline-block' : 'none';
+    if (accessSubtabSongStages) accessSubtabSongStages.style.display = (isAdmin || canViewSongStages) ? 'inline-block' : 'none';
+
+    // Subpestañas de LOG (Console, Status y Manejo)
+    const logSubtabConsoleBtn = document.getElementById('log-subtab-console-btn');
+    const logSubtabStatusBtn = document.getElementById('log-subtab-status-btn');
+    const logSubtabManejoBtn = document.getElementById('log-subtab-manejo-btn');
+
+    if (logSubtabConsoleBtn) logSubtabConsoleBtn.style.display = (isAdmin || canViewLogs) ? 'flex' : 'none';
+    if (logSubtabStatusBtn) logSubtabStatusBtn.style.display = (isAdmin || canViewStatus) ? 'flex' : 'none';
+    if (logSubtabManejoBtn) logSubtabManejoBtn.style.display = (isAdmin || canManageInspection) ? 'flex' : 'none';
+
+    // Pestañas principales
+    const settingsTabGeneral = document.querySelector('.settings-tab-btn[data-tab="general"]');
+    const settingsTabTheme = document.querySelector('.settings-tab-btn[data-tab="theme"]');
+    const settingsTabSong = document.querySelector('.settings-tab-btn[data-tab="canto"]');
+    const settingsTabUser = document.querySelector('.settings-tab-btn[data-tab="user"]');
+    const settingsTabData = document.querySelector('.settings-tab-btn[data-tab="datos"]');
+    const settingsTabPaginas = document.querySelector('.settings-tab-btn[data-tab="paginas"]');
+    const settingsTabLog = document.querySelector('.settings-tab-btn[data-tab="log"]');
+
+    const canViewGeneral = isAdmin || hasPermission('view_settings_general') || canViewGeneralComun || canViewGeneralCloud;
+    const canViewTheme = isAdmin || hasPermission('view_settings_theme') || canViewThemeVisual || canViewThemeInicio || canViewThemePreparacion || canViewThemePerfil;
+    const canViewSong = isAdmin || hasPermission('view_settings_song') || canViewSongCanto || canViewSongLiturgia || canViewSongCatequesis;
+    const canViewUser = isAdmin || hasPermission('view_settings_user') || canViewUserCuenta || canViewAccessSection || canViewUsage;
+    const canViewData = isAdmin || hasPermission('view_settings_data');
+    const canViewPaginas = isAdmin || hasPermission('page_opciones_paginas');
+    const canViewLogSection = isAdmin || hasPermission('view_settings_log') || canViewLogs || canViewStatus || canManageInspection;
+
+    if (settingsTabGeneral) settingsTabGeneral.style.display = canViewGeneral ? 'flex' : 'none';
+    if (settingsTabTheme) settingsTabTheme.style.display = canViewTheme ? 'flex' : 'none';
+    if (settingsTabSong) settingsTabSong.style.display = canViewSong ? 'flex' : 'none';
+    if (settingsTabUser) settingsTabUser.style.display = canViewUser ? 'flex' : 'none';
+    if (settingsTabData) settingsTabData.style.display = canViewData ? 'flex' : 'none';
+    if (settingsTabPaginas) settingsTabPaginas.style.display = canViewPaginas ? 'flex' : 'none';
+    if (settingsTabLog) settingsTabLog.style.display = canViewLogSection ? 'flex' : 'none';
+
+    // Actualizar sección de cuenta en Modal
+    const authUnauthenticated = document.getElementById('auth-unauthenticated');
+    const authAuthenticated = document.getElementById('auth-authenticated');
+    const authUserEmail = document.getElementById('auth-user-email');
+    const authAdminBadge = document.getElementById('auth-admin-badge');
+    const authRegularBadge = document.getElementById('auth-regular-badge');
+    const authAdminActions = document.getElementById('auth-admin-actions');
+    const authUserPhoto = document.getElementById('auth-user-photo');
+    const authUserIcon = document.getElementById('auth-user-icon');
+    const authUserWelcome = document.getElementById('auth-user-welcome');
+
+    if (user) {
+      if (authUnauthenticated) authUnauthenticated.style.display = 'none';
+      if (authAuthenticated) authAuthenticated.style.display = 'block';
+
+      if (user.photoURL && authUserPhoto) {
+        authUserPhoto.src = user.photoURL;
+        authUserPhoto.style.display = 'block';
+        if (authUserIcon) authUserIcon.style.display = 'none';
+      } else {
+        if (authUserPhoto) authUserPhoto.style.display = 'none';
+        if (authUserIcon) authUserIcon.style.display = 'block';
+      }
+
+      if (authUserWelcome) {
+        const displayName = user.displayName || (user.email ? user.email.split('@')[0] : 'Hermano');
+        authUserWelcome.textContent = `Bienvenido: ${displayName}`;
+      }
+
+      if (authUserEmail) authUserEmail.textContent = user.email;
+      if (authAdminBadge) authAdminBadge.style.display = isAdmin ? 'inline-flex' : 'none';
+      if (authRegularBadge) {
+        authRegularBadge.style.display = isAdmin ? 'none' : 'inline-flex';
+        try {
+          const state = getAccessControlState();
+          const emailKey = user.email ? user.email.toLowerCase().trim() : '';
+          const userGroups = state ? state.userDirectGroups[emailKey] : null;
+          if (userGroups && userGroups.size > 0) {
+            const gid = Array.from(userGroups)[0];
+            const groupObj = state.groups[gid];
+            const groupName = groupObj ? groupObj.name : 'Cantor';
+            authRegularBadge.innerHTML = `<span class="material-symbols-outlined" style="font-size: 1rem;">person</span> Hermano (${groupName})`;
+          } else {
+            authRegularBadge.innerHTML = `<span class="material-symbols-outlined" style="font-size: 1rem;">person</span> Hermano Cantor`;
+          }
+        } catch (e) {
+          authRegularBadge.innerHTML = `<span class="material-symbols-outlined" style="font-size: 1rem;">person</span> Hermano Cantor`;
+        }
+      }
+      if (authAdminActions) authAdminActions.style.display = isAdmin ? 'block' : 'none';
+    } else {
+      if (authUnauthenticated) authUnauthenticated.style.display = 'block';
+      if (authAuthenticated) authAuthenticated.style.display = 'none';
+      if (authAdminActions) authAdminActions.style.display = 'none';
+    }
+
+    if (typeof window.updateNavPagesVisibility === 'function') {
+      window.updateNavPagesVisibility();
+    }
+  }
+  window.updateAccessControlVisibility = updateAccessControlVisibilityInternal;
+
+  // Vincular eventos de Cuenta e inicio/cierre de sesión
+  function bindUserAccountEvents() {
+    const authLoginBtn = document.getElementById('auth-login-btn');
+    const authLogoutBtn = document.getElementById('auth-logout-btn');
+    const authUpdateBtn = document.getElementById('auth-update-btn');
+
+    if (authLoginBtn && !authLoginBtn.__resucitoBound) {
+      authLoginBtn.__resucitoBound = true;
+      authLoginBtn.addEventListener('click', async () => {
+        try {
+          authLoginBtn.disabled = true;
+          authLoginBtn.textContent = 'Conectando...';
+          await loginMock();
+        } catch (err) {
+          console.error('Error al iniciar sesión:', err);
+          const ignoredCodes = ['auth/popup-closed-by-user', 'auth/cancelled-popup-request'];
+          if (err && !ignoredCodes.includes(err.code)) {
+            alert('Error al iniciar sesión: ' + (err.message || err));
+          }
+        } finally {
+          authLoginBtn.disabled = false;
+          const unauthEl = document.getElementById('auth-unauthenticated');
+          if (unauthEl && unauthEl.style.display !== 'none') {
+            authLoginBtn.innerHTML = `
+              <svg viewBox="0 0 24 24" width="18" height="18" style="background: white; border-radius: 50%; padding: 2px;">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+              </svg>
+              Iniciar Sesión con Google
+            `;
+          }
+        }
+      });
+    }
+
+    if (authLogoutBtn && !authLogoutBtn.__resucitoBound) {
+      authLogoutBtn.__resucitoBound = true;
+      authLogoutBtn.addEventListener('click', () => {
+        logoutMock();
+      });
+    }
+
+    if (authUpdateBtn && !authUpdateBtn.__resucitoBound) {
+      authUpdateBtn.__resucitoBound = true;
+      authUpdateBtn.addEventListener('click', async () => {
+        if (!navigator.onLine) {
+          if (window.mostrarAlerta) {
+            window.mostrarAlerta({
+              titulo: 'Sin Conexión',
+              mensaje: 'No puede Actualizar sin internet',
+              icono: 'wifi_off'
+            });
+          } else {
+            alert("⚠️ No puede Actualizar sin internet");
+          }
+          return;
+        }
+        try {
+          if (window.mostrarProgreso) {
+            window.mostrarProgreso({
+              titulo: 'Actualizando App',
+              mensaje: 'Limpiando caché completa y forzando recarga...',
+              icono: 'system_update'
+            });
+          }
+
+          authUpdateBtn.disabled = true;
+          authUpdateBtn.textContent = 'Actualizando...';
+          
+          if ('caches' in window) {
+            const cacheKeys = await caches.keys();
+            await Promise.all(cacheKeys.map(key => caches.delete(key)));
+          }
+          
+          if ('serviceWorker' in navigator) {
+            const registrations = await navigator.serviceWorker.getRegistrations();
+            for (let reg of registrations) {
+              await reg.unregister();
+            }
+          }
+
+          localStorage.removeItem('resucito_update_available');
+          setTimeout(() => {
+            window.location.reload(true);
+          }, 600);
+        } catch(e) {
+          console.error("Error al actualizar la app:", e);
+          window.location.reload(true);
+        }
+      });
+    }
+  }
+
+  // Configurar interfaz de Control de Acceso y autenticación
+  setupAccessControlUI();
+  bindUserAccountEvents();
+  updateAccessControlVisibilityInternal();
+  onAuthStateChanged(() => {
+    updateAccessControlVisibilityInternal();
+  });
 
   // --- MÓDULO ESTADO RESUCITÓ ---
   async function loadResourceIntoCache(url) {

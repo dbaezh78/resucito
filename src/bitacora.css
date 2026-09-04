@@ -1,0 +1,673 @@
+/* src/vitacora.css - Estilos para la Bitácora de Actividad y Calendario */
+
+:root {
+  --vit-bg-main: #f8fafc;
+  --vit-card-bg: #ffffff;
+  --vit-border: #e2e8f0;
+  --vit-text: #0f172a;
+  --vit-text-muted: #64748b;
+  --vit-primary: #8b0000; /* Rojo Resucitó */
+  --vit-primary-hover: #a10000;
+  --vit-primary-light: #fee2e2;
+  --vit-accent: #2563eb;
+  --vit-badge-bg: #f1f5f9;
+  --vit-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode {
+  --vit-bg-main: #0f172a;
+  --vit-card-bg: #1e293b;
+  --vit-border: #334155;
+  --vit-text: #f8fafc;
+  --vit-text-muted: #94a3b8;
+  --vit-badge-bg: #334155;
+  --vit-primary-light: #450a0a;
+  --vit-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.vitacora-container {
+  max-width: 100%; /*1380px;*/
+  margin: 0 auto;
+  padding: 0.5rem 0.5rem 4.5rem 0.5rem;
+  /*padding: 1.5rem 1.5rem 6.5rem 0.5rem;*/
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--vit-text);
+}
+
+/* Header & Barra Superior */
+.vitacora-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--vit-border);
+}
+
+.vitacora-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.vitacora-title-group h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--vit-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vitacora-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-vitacora {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--vit-border);
+  background: var(--vit-card-bg);
+  color: var(--vit-text);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-vitacora:hover {
+  background: var(--vit-badge-bg);
+  border-color: var(--vit-text-muted);
+}
+
+.btn-vitacora.primary {
+  background: var(--vit-primary);
+  color: #ffffff;
+  border-color: var(--vit-primary);
+}
+
+.btn-vitacora.primary:hover {
+  background: var(--vit-primary-hover);
+}
+
+/* Layout Principal: Calendario a la Izquierda, Tabla a la Derecha */
+.vitacora-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 991px) {
+  .vitacora-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Panel del Calendario */
+.calendar-card {
+  background: var(--vit-card-bg);
+  border: 1px solid var(--vit-border);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  box-shadow: var(--vit-shadow);
+  transition: all 0.25s ease;
+}
+
+.calendar-toggle-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.35rem 0;
+  user-select: none;
+}
+
+.calendar-toggle-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--vit-primary);
+}
+
+.calendar-selected-badge {
+  background: var(--vit-primary-light);
+  color: var(--vit-primary);
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.calendar-toggle-arrow {
+  color: var(--vit-text-muted);
+  transition: transform 0.25s ease;
+  font-size: 1.5rem;
+}
+
+.calendar-card.collapsed .calendar-toggle-arrow {
+  transform: rotate(0deg);
+}
+
+.calendar-card:not(.collapsed) .calendar-toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.calendar-collapsible-body {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--vit-border);
+  display: block;
+}
+
+.calendar-card.collapsed .calendar-collapsible-body {
+  display: none;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.calendar-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+}
+
+.calendar-nav-btn {
+  background: transparent;
+  border: 1px solid var(--vit-border);
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--vit-text);
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.calendar-nav-btn:hover {
+  background: var(--vit-badge-bg);
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--vit-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.15s ease;
+  user-select: none;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.cal-day:hover {
+  background: var(--vit-badge-bg);
+}
+
+.cal-day.other-month {
+  color: var(--vit-text-muted);
+  opacity: 0.35;
+}
+
+.cal-day.today {
+  border-color: var(--vit-primary);
+  font-weight: 800;
+}
+
+.cal-day.selected {
+  background: var(--vit-primary) !important;
+  color: #ffffff !important;
+}
+
+.cal-day.has-activity::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--vit-accent);
+}
+
+.cal-day.selected.has-activity::after {
+  background: #ffffff;
+}
+
+.calendar-quick-filters {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.quick-filter-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid var(--vit-border);
+  color: var(--vit-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+
+.quick-filter-btn:hover, .quick-filter-btn.active {
+  background: var(--vit-primary-light);
+  color: var(--vit-primary);
+  border-color: var(--vit-primary);
+}
+
+/* Panel de la Tabla de Eventos */
+.events-card {
+  background: var(--vit-card-bg);
+  border: 1px solid var(--vit-border);
+  border-radius: 12px;
+  padding: 0.5rem;     /*1.25rem; */
+  box-shadow: var(--vit-shadow);
+  min-height: 500px;
+  width: 100%;
+}
+  
+@media (min-width: 384px) {.events-card, .calendar-card {width: 100%;}}
+@media (min-width: 768px) {.events-card, .calendar-card {width: 100%;}}
+
+
+/* Filtros y Búsqueda Superior */
+.table-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.search-box-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--vit-border);
+  background: var(--vit-bg-main);
+  color: var(--vit-text);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: var(--vit-primary);
+}
+
+.user-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-select {
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--vit-border);
+  background: var(--vit-bg-main);
+  color: var(--vit-text);
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+  width: 84%;
+}
+
+/* Tabla de Bitácora */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--vit-border);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.vitacora-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.vitacora-table th {
+  background: var(--vit-badge-bg);
+  padding: 0.5rem 0.5rem;
+  font-weight: 700;
+  color: var(--vit-text-muted);
+  border-bottom: 1px solid var(--vit-border);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.vitacora-table td {
+  border-bottom: 1px solid var(--vit-border);
+  vertical-align: middle;
+  padding: 0.45rem 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .vitacora-table td {
+    padding: 0.45rem 0.5rem;
+  }
+}
+
+.vitacora-table tbody tr:hover {
+  background: var(--vit-badge-bg);
+}
+
+.vitacora-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Filas Agrupadas y Anidadas */
+.group-parent-row {
+  cursor: pointer;
+  background: var(--vit-card-bg);
+  transition: background 0.15s ease;
+}
+
+.group-parent-row:hover {
+  background: var(--vit-badge-bg) !important;
+}
+
+.group-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  margin-right: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--vit-text-muted);
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+.group-parent-row.expanded .group-toggle-icon {
+  transform: rotate(90deg);
+}
+
+.group-count-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--vit-primary-light);
+  color: var(--vit-primary);
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.summary-badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.nested-subrow {
+  background: var(--vit-bg-main) !important;
+  font-size: 0.86rem;
+  transition: all 0.2s ease;
+}
+
+.nested-subrow td {
+  /*padding: 0.55rem 1rem !important;*/
+  padding: 0rem 1rem !important;
+  border-bottom: 1px dashed var(--vit-border) !important;
+}
+
+.nested-subrow.hidden {
+  display: none;
+}
+
+.nested-tree-icon {
+  color: var(--vit-text-muted);
+  opacity: 0.6;
+  margin-right: 6px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/* Estilos de Celdas */
+.canto-link {
+  font-weight: 700;
+  color: var(--vit-primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.canto-link:hover {
+  text-decoration: underline;
+}
+
+.detalle-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.3rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  background: var(--vit-badge-bg);
+  border: 1px solid var(--vit-border);
+  color: var(--vit-text);
+}
+
+.detalle-badge.visita {
+  font-size: 1.25rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.detalle-badge.traste {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fde68a;
+}
+
+body.dark-mode .detalle-badge.traste {
+  background: #78350f;
+  color: #fef3c7;
+  border-color: #92400e;
+}
+
+.detalle-badge.estrella {
+  background: #fffbeb;
+  color: #b45309;
+  border-color: #fcd34d;
+}
+
+body.dark-mode .detalle-badge.estrella {
+  background: #78350f;
+  color: #fde68a;
+  border-color: #b45309;
+}
+
+.detalle-badge.tono {
+  background: #f3e8ff;
+  color: #6b21a8;
+  border-color: #d8b4fe;
+}
+
+body.dark-mode .detalle-badge.tono {
+  background: #581c87;
+  color: #f3e8ff;
+  border-color: #7e22ce;
+}
+
+.detalle-badge.acorde {
+  background: #dbeafe;
+  color: #1e40af;
+  border-color: #bfdbfe;
+}
+
+body.dark-mode .detalle-badge.acorde {
+  background: #1e3a8a;
+  color: #dbeafe;
+  border-color: #1d4ed8;
+}
+
+.detalle-badge.lista {
+  background: #dcfce7;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+
+body.dark-mode .detalle-badge.lista {
+  background: #14532d;
+  color: #dcfce7;
+  border-color: #15803d;
+}
+
+.user-cell {
+  cursor: context-menu;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.user-cell:hover {
+  color: var(--vit-accent);
+}
+
+/* Estado Vacío / Loading */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--vit-text-muted);
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Menú Contextual Clic Derecho */
+.context-menu {
+  position: fixed;
+  background: var(--vit-card-bg);
+  border: 1px solid var(--vit-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 0.4rem;
+  z-index: 10000;
+  display: none;
+  min-width: 180px;
+}
+
+.context-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--vit-text);
+  transition: background 0.15s;
+}
+
+.context-menu-item:hover {
+  background: var(--vit-primary);
+  color: #ffffff;
+}
+
+/* Botón de Borrar / Reciclaje en Bitácora */
+.btn-delete-bitacora {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  color: var(--vit-text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  font-size: 1.1rem;
+}
+
+.btn-delete-bitacora:hover {
+  background: rgba(220, 38, 38, 0.12);
+  color: #dc2626;
+  transform: scale(1.1);
+}
+
+.col-actions {
+  width: 45px;
+  text-align: center !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}

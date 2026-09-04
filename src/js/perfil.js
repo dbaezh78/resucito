@@ -139,6 +139,7 @@ function initAuthState() {
 
         if (perfilData) {
           aplicarDatosPerfil(perfilData);
+          localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
         } else {
           const localProfile = localStorage.getItem('user_profile_data');
           if (localProfile) aplicarDatosPerfil(JSON.parse(localProfile));

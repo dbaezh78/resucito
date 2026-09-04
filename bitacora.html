@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Bitácora de Actividad - Resucitó</title>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8b0000">
+  <link rel="stylesheet" href="src/style.css?v=136">
+  <link rel="stylesheet" href="src/navegador.css?v=136">
+  <link rel="stylesheet" href="src/bitacora.css?v=136">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+</head>
+<body>
+  <div class="vitacora-container">
+    <!-- Header Principal -->
+    <header class="vitacora-header">
+      <div class="vitacora-title-group">
+        <h1>📊 Bitácora de Actividad</h1>
+        <span id="events-count-badge" style="background: var(--vit-badge-bg); padding: 0.25rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">Cargando...</span>
+      </div>
+      <div class="vitacora-actions">
+        <a href="index.html" class="btn-vitacora primary">
+          <span>📖</span> Volver al Libro de Canto
+        </a>
+      </div>
+    </header>
+
+    <!-- Layout Dividido: Calendario (Izq) + Tabla (Der) -->
+    <div class="vitacora-layout">
+      <!-- Panel Calendario -->
+      <aside class="calendar-card collapsed" id="calendar-card">
+        <div class="calendar-toggle-header" id="calendar-toggle-header" title="Haz clic para desplegar u ocultar el calendario">
+          <div class="calendar-toggle-title">
+            <span class="material-symbols-outlined">calendar_month</span>
+            <span>Calendario</span>
+            <span id="calendar-selected-badge" class="calendar-selected-badge">Hoy</span>
+          </div>
+          <span class="material-symbols-outlined calendar-toggle-arrow" id="calendar-toggle-arrow">expand_more</span>
+        </div>
+
+        <div class="calendar-collapsible-body" id="calendar-collapsible-body">
+          <div class="calendar-header">
+            <button id="cal-prev" class="calendar-nav-btn" title="Mes anterior">‹</button>
+            <span id="calendar-title" class="calendar-title">Cargando...</span>
+            <button id="cal-next" class="calendar-nav-btn" title="Mes siguiente">›</button>
+          </div>
+          
+          <div class="calendar-weekdays">
+            <span>Lun</span>
+            <span>Mar</span>
+            <span>Mié</span>
+            <span>Jue</span>
+            <span>Vie</span>
+            <span>Sáb</span>
+            <span>Dom</span>
+          </div>
+          
+          <div id="calendar-days" class="calendar-days">
+            <!-- Días inyectados dinámicamente -->
+          </div>
+
+          <div class="calendar-quick-filters">
+            <button class="quick-filter-btn active" data-filter="today">
+              <span>📅 Hoy</span>
+              <small>Solo hoy</small>
+            </button>
+            <button class="quick-filter-btn" data-filter="yesterday">
+              <span>⏪ Ayer</span>
+              <small>Día anterior</small>
+            </button>
+            <button class="quick-filter-btn" data-filter="all">
+              <span>🌐 Ver Todo el Historial</span>
+              <small>Sin filtro de fecha</small>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Panel Tabla de Eventos -->
+      <main class="events-card">
+        <div class="table-toolbar">
+          <div class="search-box-group">
+            <input type="text" id="search-input" class="search-input" placeholder="🔍 Buscar por canto, detalle o usuario...">
+          </div>
+          
+          <div id="user-filter-group" class="user-filter-group" style="display: none;">
+            <label for="user-select" style="font-size: 0.85rem; font-weight: 700; color: var(--vit-text-muted);">Usuario:</label>
+            <select id="user-select" class="user-select">
+              <option value="all">Todos los usuarios</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="vitacora-table">
+            <thead>
+              <tr id="table-header-row">
+                <th style="width: auto;">Canto</th>      <!-- 30%-->
+                <th style="width: auto;">Detalle</th>    <!-- 25%-->
+                <th style="width: auto;">Fecha</th>      <!-- 15%-->
+                <th style="width: auto;">Hora</th>       <!-- 15%-->
+                <th style="width: 15%;">Usuario</th>
+                <th id="th-col-actions" class="col-actions" style="display: none; width: 5%;">🗑️</th>
+              </tr>
+            </thead>
+            <tbody id="events-table-body">
+              <!-- Filas inyectadas por JS -->
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Menú Contextual para Clic Derecho sobre Usuario -->
+  <div id="context-menu" class="context-menu">
+    <div id="ctx-filter-user" class="context-menu-item">
+      <span>👤</span> <span id="ctx-user-label">Filtrar por este usuario</span>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="src/navegador.js?v=137"></script>
+  <script type="module" src="src/js/bitacora.js?v=137"></script>
+</body>
+</html>

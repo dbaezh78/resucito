@@ -14,11 +14,18 @@ const ADMIN_EMAILS = ['dbaezh78@gmail.com'];
 let currentUser = null;
 const authStateListeners = [];
 
+let authInitialized = false;
+
 // Escuchar cambios reales de Firebase Auth
 onFirebaseAuthStateChanged(auth, (user) => {
   currentUser = user;
+  authInitialized = true;
   notifyListeners();
 });
+
+export function isAuthInitialized() {
+  return authInitialized;
+}
 
 export function getCurrentUser() {
   return currentUser;
@@ -31,8 +38,10 @@ export function isCurrentUserAdmin() {
 
 export function onAuthStateChanged(callback) {
   authStateListeners.push(callback);
-  // Llamar inmediatamente con el estado actual del usuario
-  callback(currentUser);
+  // Si auth ya fue inicializado, llamar inmediatamente con el estado actual
+  if (authInitialized) {
+    callback(currentUser);
+  }
 }
 
 function notifyListeners() {

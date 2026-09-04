@@ -18,11 +18,13 @@ import {
   getDoc,
   deleteDoc,
   collection,
+  addDoc,
   getDocs,
   onSnapshot,
   query,
   orderBy,
-  limit
+  limit,
+  serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -62,12 +64,14 @@ export {
   setDoc, 
   getDoc, 
   deleteDoc,
-  collection, 
+  collection,
+  addDoc,
   getDocs, 
   onSnapshot, 
   query, 
   orderBy, 
   limit,
+  serverTimestamp,
   signInWithPopup, 
   signOut, 
   onAuthStateChanged 
