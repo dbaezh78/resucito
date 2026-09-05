@@ -1,0 +1,10 @@
+{
+  "latestVersion": "2.1.02",
+  "minVersion": "2.1.00",
+  "updateTitle": "Nueva Versión Disponible",
+  "updateMessage": "Actualiza a la última versión para disfrutar de nuevas funciones y mejoras.",
+  "releaseNotes": [
+    "Mejoras de rendimiento y sincronización",
+    "Avisos visuales de actualización en tiempo real"
+  ]
+}

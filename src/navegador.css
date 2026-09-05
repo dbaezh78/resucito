@@ -95,6 +95,7 @@
   opacity: 0.7;
   pointer-events: none;
   z-index: 10;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -104,6 +105,183 @@
     font-size: 11px;
   }
 }
+
+/* Estilos cuando hay una actualización disponible dentro del Menú Cuenta -> Actualizar App */
+.account-action-item.has-update-ready {
+  background: rgba(40, 167, 69, 0.12) !important;
+  border: 1px solid rgba(0, 230, 118, 0.45) !important;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.25);
+  animation: pulseAccountUpdateBtn 2.4s infinite ease-in-out;
+}
+
+.account-action-item.has-update-ready:hover {
+  background: rgba(40, 167, 69, 0.22) !important;
+}
+
+/* El círculo/halo dorado con verde interior dentro del botón */
+.account-update-halo-ring {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/img/golden_ring.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 8px #ffd700, 0 0 12px #00e676;
+  animation: spinGlowHalo 3.5s linear infinite;
+  flex-shrink: 0;
+}
+
+.account-update-halo-ring::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00e676;
+  box-shadow: 0 0 6px #00e676;
+}
+
+.account-update-badge-pill {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: #ffd700;
+  color: #121212;
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+  letter-spacing: 0.3px;
+}
+
+@keyframes pulseAccountUpdateBtn {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 12px rgba(0, 230, 118, 0.2);
+    border-color: rgba(255, 215, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(0, 230, 118, 0.6), 0 0 20px rgba(255, 215, 0, 0.4);
+    border-color: rgba(0, 230, 118, 0.75);
+  }
+}
+
+
+
+@keyframes spinGlowHalo {
+  0% {
+    filter: hue-rotate(0deg) drop-shadow(0 0 4px #ffd700);
+    transform: rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(65deg) drop-shadow(0 0 7px #00e676);
+    transform: rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(0deg) drop-shadow(0 0 4px #ffd700);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulseGlowBorder {
+  0%, 100% {
+    box-shadow: 0 0 6px rgba(255, 215, 0, 0.5), 0 0 12px rgba(0, 230, 118, 0.3);
+    border-color: rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(0, 230, 118, 0.8), 0 0 18px rgba(255, 215, 0, 0.5);
+    border-color: rgba(0, 230, 118, 0.8);
+  }
+}
+
+/* Modal y Banner Destacado de Actualización */
+.app-update-badge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.app-update-badge-ring {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/img/golden_ring.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7), 0 0 25px rgba(0, 230, 118, 0.6);
+  animation: haloPulseBig 2.8s infinite ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.app-update-badge-inner {
+  background: rgba(18, 18, 18, 0.85);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+.app-update-badge-inner .ver-txt {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.app-update-banner-btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #1db954, #128c46);
+  color: #ffffff !important;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #2ecc71;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(29, 185, 84, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s;
+  text-decoration: none;
+}
+
+.app-update-banner-btn:hover {
+  transform: scale(1.04);
+  background: linear-gradient(135deg, #22d363, #15a050);
+  box-shadow: 0 6px 18px rgba(29, 185, 84, 0.6);
+}
+
+@keyframes haloPulseBig {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6), 0 0 25px rgba(0, 230, 118, 0.4);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 230, 118, 0.8), 0 0 35px rgba(255, 215, 0, 0.7);
+    filter: hue-rotate(50deg);
+  }
+}
+
 
 /* Botones de navegación principal */
 .nav-item {

@@ -1,0 +1,180 @@
+{
+  "id": "aetos29b",
+  "tt": "Domingo XXIX, Tiempo Ordinario",
+  "title": "Domingo XXIX, Tiempo Ordinario",
+  "subtitle": "Aleluya InterLeccional, Modelo I, II, III - Año B, Marcos 10, 45",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "180",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/aleluyainterleccional.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=aetos28b",
+  "sig": "/src/index.html?canto=aetos30b",
+  "lizq": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_ae_1",
+      "initialState": "collapsed",
+      "triggerLine": "Modelo I",
+      "sC": "as mod1",
+      "color": "red",
+      "lines": [
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Aleluya, aleluya, aleluya, aleluya., (Sol,,0)(Do,,205)(Re,,235)(Sol,,320)",
+          "sC": "tc"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA, ALELUYA., (Sol,,0)(Do,,215)(Re,,240)(Sol,,325)",
+          "sC": "ta as bg"
+        },
+        {
+          "line": "Acordes:",
+          "sC": "anota"
+        },
+        {
+          "line": "(Mi,m,0)(Re,,100)(Mi,m,200)",
+          "sC": "bnota"
+        },
+        {
+          "line": "El Hijo del hombre ha venido para servir",
+          "sC": "tc"
+        },
+        {
+          "line": "y dar su vida en rescate por todos.",
+          "sC": "bg"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ALELUYA ... (Sol,,0)",
+          "sC": "ta as"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_ae_2",
+      "initialState": "collapsed",
+      "triggerLine": "Modelo II",
+      "sC": "as mod2",
+      "color": "red",
+      "lines": [
+        {
+          "line": "Con la música del «Aleluya, ya llegó el Reino».",
+          "sC": "fssmall",
+          "color": "gray"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,0)(Mi,,130)(La,m,230)",
+          "sC": "ta as"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Do,,0)(Mi,,130)(La,m,230)",
+          "sC": "as bg"
+        },
+        {
+          "line": "Acordes:",
+          "sC": "anota"
+        },
+        {
+          "line": "(Do,,0)(Mi,,100)(La,m,200)",
+          "sC": "bnota"
+        },
+        {
+          "line": "El Hijo del hombre ha venido para servir",
+          "sC": "tc"
+        },
+        {
+          "line": "y dar su vida en rescate por todos.",
+          "sC": "bg"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ALELUYA ... (Do,,0)",
+          "sC": "ta as"
+        }
+      ]
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_ae_3",
+      "initialState": "expanded",
+      "triggerLine": "Modelo III",
+      "sC": "as mod3",
+      "color": "red",
+      "lines": [
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "Aleluya, aleluya, aleluya., (Mi,m,0)(Re,,120)(Mi,m,225)",
+          "sC": "tc"
+        },
+        {
+          "line": "ALELUYA, ALELUYA, ALELUYA., (Re,,125)(Mi,m,225)",
+          "sC": "ta as"
+        },
+        {
+          "line": "Acordes:",
+          "sC": "anota"
+        },
+        {
+          "line": "(Mi,m,0)(La,m,100)(Mi,m,200)",
+          "sC": "bnota"
+        },
+        {
+          "line": "El Hijo del hombre ha venido para servir",
+          "sC": "tc"
+        },
+        {
+          "line": "y dar su vida en rescate por todos.",
+          "sC": "bg"
+        },
+        {
+          "line": "",
+          "sC": "adb1"
+        },
+        {
+          "line": "ALELUYA ... (Mi,m,0)",
+          "sC": "ta as"
+        }
+      ]
+    }
+  ],
+  "lder": [],
+  "sourceBook": "aclamaciones"
+}

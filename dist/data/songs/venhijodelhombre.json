@@ -1,0 +1,377 @@
+{
+  "id": "venhijodelhombre",
+  "tt": "Ven, Hijo Del Hombre",
+  "title": "Ven, Hijo Del Hombre",
+  "subtitle": "Apocalipsis 21,17ss",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* Melisma",
+  "notesColor": "var(--chord-color-alt)",
+  "nCanURL": "",
+  "dbno": "168",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/venhijodelhombre.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=venespiritusanto",
+  "sig": "/src/index.html?canto=venicreator",
+  "lizq": [
+    {
+      "line": "Ven, Hijo del Hombre,, (Mi,m,0)(La,m,140)",
+      "sC": "tc"
+    },
+    {
+      "line": "ven, ¡Señor Jesús!, (Si,7,0)(Mi,m,135)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ven,, (Mi,m,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "VEN, ",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "Siervo de los pobres,, (La,m,140)",
+      "sC": "tc"
+    },
+    {
+      "line": "SIERVO DE LOS POBRES; ",
+      "sC": "ta as"
+    },
+    {
+      "line": "ven,, (Si,7,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "VEN, ",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "¡Señor Jesús!, (Mi,m,85)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡SEÑOR JESÚS!, ",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Espíritu dice: ¡Ven!, (Do,,0)(Mi,m,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "El que escucha diga: ¡Ven!, (Do,,95)(Si,7,225)",
+      "sC": ""
+    },
+    {
+      "line": "¡VEN! ¡VEN! ¡VEN!, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ven,, (Mi,m,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "VEN, ",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "amor mío,, (La,m,50)",
+      "sC": ""
+    },
+    {
+      "line": "AMOR MÍO, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "ven,, (Si,7,0)",
+      "sC": ""
+    },
+    {
+      "line": "VEN, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "¡Señor Jesús!, (Mi,m,85)",
+      "sC": ""
+    },
+    {
+      "line": "¡SEÑOR JESÚS!, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Calma,, (Mi,m,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "CALMA, ",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "tú este fuego,, (La,m,85)",
+      "sC": ""
+    },
+    {
+      "line": "TÚ ESTE FUEGO,",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "ven,, (Si,7,0)",
+      "sC": ""
+    },
+    {
+      "line": "VEN, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "¡Señor Jesús!, (Mi,m,85)",
+      "sC": ""
+    },
+    {
+      "line": "¡SEÑOR JESÚS!,",
+      "sC": "as señorJesus"
+    }
+  ],
+  "lder": [
+    {
+      "line": "La Esposa dice: ¡Ven!, (Do,,0)(Mi,m,190)",
+      "sC": "tc"
+    },
+    {
+      "line": "Y el que escucha diga: ¡Ven!, (Do,,110)(Si,7,240)",
+      "sC": ""
+    },
+    {
+      "line": "¡VEN! ¡VEN! ¡VEN! ",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Vieni,, (Mi,m,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "VIENI, ",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "Figlio dell'uomo,, (La,m,110)",
+      "sC": ""
+    },
+    {
+      "line": "FIGLIO DELL'UOMO, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "vieni,, (Si,7,0)",
+      "sC": ""
+    },
+    {
+      "line": "VIENI, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "Signore Gesú!, (Mi,m,85)",
+      "sC": ""
+    },
+    {
+      "line": "SIGNORE GESÚ!, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Viens,",
+      "sC": "tc t0"
+    },
+    {
+      "line": "VIENS,",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "Fils de l'homme, ",
+      "sC": "t0 b1"
+    },
+    {
+      "line": "FILS DE L'HOMME, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "viens, ",
+      "sC": "t0 b1"
+    },
+    {
+      "line": "VIENS, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "Seigneur Jesús! ",
+      "sC": "t0 b1"
+    },
+    {
+      "line": "SEIGNEUR JESÚS! ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "",
+      "sC": ""
+    },
+    {
+      "line": "Come, ",
+      "sC": "tc t1 b1"
+    },
+    {
+      "line": "COME, ",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "Son of the Man, ",
+      "sC": "b1"
+    },
+    {
+      "line": "SON OF THE MAN, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "come, ",
+      "sC": "b1"
+    },
+    {
+      "line": "COME, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "Lord Jesús! ",
+      "sC": "b1"
+    },
+    {
+      "line": "LORD JESÚS! ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ven,, (Mi,m,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "VEN, ",
+      "sC": "ta as señorJesus"
+    },
+    {
+      "line": "Hijo del Hombre,, (La,m,90)",
+      "sC": ""
+    },
+    {
+      "line": "HIJO DEL HOMBRE, ",
+      "sC": "as señorJesus"
+    },
+    {
+      "line": "¡Ven!, (Si,7,10)",
+      "sC": ""
+    },
+    {
+      "line": "¡VEN!, ",
+      "sC": "as vhha2"
+    },
+    {
+      "line": "¡Ven! (Si,7,10)",
+      "sC": "tc"
+    },
+    {
+      "line": "¡VEN! ",
+      "sC": "as vhha3"
+    },
+    {
+      "line": "¡Ven! ",
+      "sC": "a5 vhha4"
+    },
+    {
+      "line": "¡VEN! ",
+      "sC": "as vhha5"
+    },
+    {
+      "line": "¡Ven! ",
+      "sC": "vhha6"
+    },
+    {
+      "line": "¡VEN! ... ",
+      "sC": "as vhha7 asterisco"
+    },
+
+    {
+      "line": "¡Señor! ",
+      "sC": ""
+    },
+    {
+      "line": "¡SEÑOR! ",
+      "sC": "as vhhb3"
+    },
+    {
+      "line": "Signore! ",
+      "sC": "vhhb4"
+    },
+    {
+      "line": "SIGNORE! ... ",
+      "sC": "as vhhb5 asterisco"
+    },
+
+    {
+      "line": "¡Ven! Vieni! Viens! Come! ¡Ven!, ",
+      "sC": "asterisco"
+    },
+    {
+      "line": "¡VEN! ... ",
+      "sC": "as vhhb6"
+    },
+
+    {
+      "line": "¡SEÑOR JESÚS!, (Mi,m,90)",
+      "sC": "ta as"
+    }
+  ],
+  "sourceBook": "resucito"
+}

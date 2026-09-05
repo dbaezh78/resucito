@@ -1,0 +1,260 @@
+{
+  "id": "vamosyapastores",
+  "tt": "Vamos Ya, Pastores",
+  "title": "Vamos Ya, Pastores",
+  "subtitle": "Villancico (Kiko Argüello)",
+  "category": [
+    "Precatecumenado",
+    "Adviento",
+    "Navidad",
+    "Niños"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "165",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/vamosyapastores.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=uriuriura",
+  "sig": "/src/index.html?canto=vendellibano",
+  "lizq": [
+    {
+      "line": "VAMOS YA, PASTORES , (Mi,m,0)",
+      "sC": "ta as"
+    },
+    {
+      "line": "VAMOS A BELÉN,, (Si,7,100)",
+      "sC": "as"
+    },
+    {
+      "line": "QUE HA NACIDO UN NIÑO, ",
+      "sC": "as"
+    },
+    {
+      "line": "SE LLAMA EMMANUEL., (Mi,m,140)",
+      "sC": "as"
+    },
+    {
+      "line": "SE LLAMA EMMANUEL,",
+      "sC": "as"
+    },
+    {
+      "line": "SE LLAMA EMMANUEL,, (Si,7,145)",
+      "sC": "as"
+    },
+    {
+      "line": "VAMOS YA, PASTORES,",
+      "sC": "as"
+    },
+    {
+      "line": "VAMOS A BELÉN., (Mi,m,100)",
+      "sC": "as"
+    },
+    {
+      "line": "PA RA RAM PAM PAM,, (Si,7,140)",
+      "sC": "as r1"
+    },
+    {
+      "line": "PA RA RAM PAM PAM., (Mi,m,140)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los pobres ya cantan,, (Mi,m,0)(Si,7,150)",
+      "sC": "tc"
+    },
+    {
+      "line": "los niños ya ríen., (Mi,m,125)",
+      "sC": ""
+    },
+    {
+      "line": "Los pobres ya cantan,, (Si,7,135)",
+      "sC": ""
+    },
+    {
+      "line": "los niños ya ríen., (Mi,m,125)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "ALEGRÍA, ALEGRÍA,, (Mi,m,0)(Si,7,130)",
+      "sC": "ta as"
+    },
+    {
+      "line": "ALEGRÍA, ALEGRÍA., (Mi,m,130)",
+      "sC": "as"
+    },
+    {
+      "line": "ALEGRÍA, ALEGRÍA:, (Si,7,130)",
+      "sC": "as"
+    },
+    {
+      "line": "HA NACIDO EL SALVADOR., (Mi,m,180)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VAMOS YA, PASTORES, (Mi,m,0)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "VAMOS A BELÉN,, (Si,7,100)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HA NACIDO UN NIÑO, ",
+          "sC": "as"
+        },
+        {
+          "line": "SE LLAMA EMMANUEL., (Mi,m,140)",
+          "sC": "as"
+        },
+        {
+          "line": "SE LLAMA EMMANUEL,",
+          "sC": "as"
+        },
+        {
+          "line": "SE LLAMA EMMANUEL,, (Si,7,145)",
+          "sC": "as"
+        },
+        {
+          "line": "VAMOS YA, PASTORES,",
+          "sC": "as"
+        },
+        {
+          "line": "VAMOS A BELÉN., (Mi,m,100)",
+          "sC": "as"
+        },
+        {
+          "line": "PA RA RAM PAM PAM,, (Si,7,140)",
+          "sC": "as r1"
+        },
+        {
+          "line": "PA RA RAM PAM PAM., (Mi,m,140)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Su madre, María,, (Mi,m,0)(Si,7,115)",
+      "sC": "tc"
+    },
+    {
+      "line": "su padre, José., (Mi,m,115)",
+      "sC": ""
+    },
+    {
+      "line": "Ha nacido un niño,, (Si,7,125)",
+      "sC": ""
+    },
+    {
+      "line": "se llama Emmanuel., (Mi,m,140)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "ALEGRÍA, ALEGRÍA, (Mi,m,0)(Si,7,115)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "ALEGRÍA, ALEGRÍA., (Si,7,130)",
+          "sC": "as"
+        },
+        {
+          "line": "ALEGRÍA, ALEGRÍA:, (Mi,m,130)",
+          "sC": "as"
+        },
+        {
+          "line": "HA NACIDO EL SALVADOR, (Mi,m,180)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VAMOS YA, PASTORES, (Mi,m,0)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "VAMOS A BELÉN,, (Si,7,100)",
+          "sC": "as"
+        },
+        {
+          "line": "QUE HA NACIDO UN NIÑO, ",
+          "sC": "as"
+        },
+        {
+          "line": "SE LLAMA EMMANUEL., (Mi,m,140)",
+          "sC": "as"
+        },
+        {
+          "line": "SE LLAMA EMMANUEL,",
+          "sC": "as"
+        },
+        {
+          "line": "SE LLAMA EMMANUEL,, (Si,7,145)",
+          "sC": "as"
+        },
+        {
+          "line": "VAMOS YA, PASTORES,",
+          "sC": "as"
+        },
+        {
+          "line": "VAMOS A BELÉN., (Mi,m,100)",
+          "sC": "as"
+        },
+        {
+          "line": "PA RA RAM PAM PAM,, (Si,7,140)",
+          "sC": "as r1"
+        },
+        {
+          "line": "PA RA RAM PAM PAM., (Mi,m,140)",
+          "sC": "as"
+        }
+      ]
+    }
+  ],
+  "sourceBook": "resucito"
+}

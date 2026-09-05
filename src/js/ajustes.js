@@ -2056,13 +2056,78 @@ window.initAjustes = async function() {
         window.recalcularEstadoRecursos();
       }, 1800);
     }
-    
-    if (e.target && e.target.id === 'btn-status-refresh') {
-      e.preventDefault();
-      e.stopPropagation();
-      window.recalcularEstadoRecursos();
-    }
   });
+    
+  window.loadResourceIntoCache = loadResourceIntoCache;
+
+  // Función global reutilizable para descargar todos los faltantes (usada en Ajustes y en el Actualizador)
+  window.cargarTodosLosRecursosFaltantes = async function (onProgressCallback) {
+    try {
+      const keys = await caches.keys();
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v311';
+      const cache = await caches.open(cacheName);
+      
+      const resourcesData = await getAllAppResources();
+      
+      const allUrls = [];
+      resourcesData.htmlResources.forEach(r => allUrls.push(r.url));
+      resourcesData.jsonResources.forEach(r => allUrls.push(r.url));
+      resourcesData.jsResources.forEach(r => allUrls.push(r.url));
+      resourcesData.cssResources.forEach(r => allUrls.push(r.url));
+      resourcesData.assetResources.forEach(r => allUrls.push(r.url));
+      resourcesData.songResources.forEach(r => allUrls.push(r.url));
+      
+      const cachedRequests = await cache.keys();
+      const cachedUrls = new Set();
+      cachedRequests.forEach(r => {
+        const urlObj = new URL(r.url, window.location.href);
+        let path = urlObj.pathname.replace(/^\//, '');
+        cachedUrls.add(path + urlObj.search);
+        cachedUrls.add(path);
+      });
+      
+      const missingUrls = Array.from(new Set(allUrls)).filter(u => {
+        const clean = u.replace(/^\.\//, '').replace(/^\//, '');
+        const base = clean.split('?')[0];
+        return !cachedUrls.has(clean) && !cachedUrls.has(base) && !cachedUrls.has(`${base}?offline=true`);
+      });
+      
+      const total = missingUrls.length;
+      if (total === 0) {
+        if (onProgressCallback) onProgressCallback({ current: 0, total: 0, percent: 100, status: '¡Todos los recursos ya están en caché!' });
+        return true;
+      }
+      
+      let count = 0;
+      const batchSize = 12;
+      for (let i = 0; i < total; i += batchSize) {
+        const batch = missingUrls.slice(i, i + batchSize);
+        await Promise.all(batch.map(async (url) => {
+          await loadResourceIntoCache(url);
+          count++;
+        }));
+        
+        const pct = Math.min(100, Math.round((count / total) * 100));
+        if (onProgressCallback) {
+          onProgressCallback({
+            current: Math.min(count, total),
+            total,
+            percent: pct,
+            status: `Descargando: ${Math.min(count, total)} de ${total} recursos...`
+          });
+        }
+      }
+      
+      if (typeof window.recalcularEstadoRecursos === 'function') {
+        window.recalcularEstadoRecursos();
+      }
+      return true;
+    } catch (e) {
+      console.error('Error al cargar recursos faltantes:', e);
+      return false;
+    }
+  };
+
 
   // Helper para garantizar que window.allSongs esté disponible para offline y estado
   async function getOrFetchAllSongs() {

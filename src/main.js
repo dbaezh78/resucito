@@ -1,6 +1,6 @@
 import { registerServiceWorker } from './pwa.js';
-import './navegador.js';
-import './js/ajustes.js?v=129';
+import './navegador.js?v=135';
+import './js/ajustes.js?v=135';
 import './js/datos.js';
 import { searchSongs, normalizeText } from './search.js';
 import { getSongScrollConfig, saveSongScrollConfig } from './scroll.js';

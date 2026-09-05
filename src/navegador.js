@@ -27,7 +27,7 @@ import { hasPermission } from './accesscontrol.js';
     }
   });
 
-  const appVersion = window.APP_VERSION || '2.0';
+  const appVersion = window.APP_VERSION || localStorage.getItem('resucito_installed_version') || '2.1.00';
 
   // 1. Estructura HTML del navegador
   const navHTML = `
@@ -200,7 +200,7 @@ import { hasPermission } from './accesscontrol.js';
           
           <div class="version-log-item" style="margin-bottom: 16px; background: rgba(0,0,0,0.03); padding: 12px; border-radius: 12px; border: 1px solid var(--panel-border);">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <strong style="color: var(--accent-color, #d01212); font-size: 0.95rem;">v2.0 (Versión Actual)</strong>
+              <strong style="color: var(--accent-color, #d01212); font-size: 0.95rem;">v${appVersion} (Versión Actual)</strong>
               <small style="color: var(--text-muted); font-size: 0.75rem;">2026</small>
             </div>
             <ul style="margin: 0; padding-left: 18px; font-size: 0.83rem; color: var(--text-color); line-height: 1.5;">
@@ -576,52 +576,12 @@ import { hasPermission } from './accesscontrol.js';
       });
     }
 
-    // Modal de confirmación para Actualizar App -> Ventana de Progreso Redonda
+    // Botón para Actualizar App -> Ventana de Progreso Redonda
     if (actualizarBtn) {
       actualizarBtn.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        
-        if (!navigator.onLine) {
-          if (window.mostrarAlerta) {
-            window.mostrarAlerta({
-              titulo: 'Sin Conexión',
-              mensaje: 'No puede Actualizar sin internet',
-              icono: 'wifi_off'
-            });
-          } else {
-            alert("⚠️ No puede Actualizar sin internet");
-          }
-          return;
-        }
-
-        if (accountCard) accountCard.classList.add('hidden');
-
-        window.mostrarConfirmacion({
-          titulo: 'Actualizar App',
-          mensaje: '¿Desea actualizar ahora a la última versión?',
-          icono: 'system_update',
-          textoSi: 'Sí',
-          textoNo: 'No',
-          onConfirm: async () => {
-            window.mostrarProgreso({
-              titulo: 'Actualizando App',
-              mensaje: 'Actualizando la aplicación a la última versión...',
-              icono: 'sync'
-            });
-
-            if ('serviceWorker' in navigator) {
-              try {
-                const reg = await navigator.serviceWorker.getRegistration();
-                if (reg) await reg.update();
-              } catch (err) {}
-            }
-
-            setTimeout(() => {
-              window.location.reload(true);
-            }, 1000);
-          }
-        });
+        ejecutarProcesoActualizacion();
       });
     }
 
@@ -662,6 +622,238 @@ import { hasPermission } from './accesscontrol.js';
         appInfoModal.style.display = 'none';
       });
     }
+
+    // --- Sistema de Detección y Descarga de Actualizaciones ---
+    const ejecutarProcesoActualizacion = () => {
+      if (!navigator.onLine) {
+        if (window.mostrarAlerta) {
+          window.mostrarAlerta({
+            titulo: 'Sin Conexión',
+            mensaje: 'No puede Actualizar sin internet',
+            icono: 'wifi_off'
+          });
+        } else {
+          alert("⚠️ No puede Actualizar sin internet");
+        }
+        return;
+      }
+
+      if (accountCard) accountCard.classList.add('hidden');
+      if (appInfoModal) appInfoModal.style.display = 'none';
+
+      const versionNueva = window._latestRemoteVersion || 'Nueva versión';
+      const versionActual = appVersion || '2.0';
+
+      window.mostrarConfirmacion({
+        titulo: 'Actualizar Aplicación',
+        mensaje: `¿Desea actualizar de la versión v${versionActual} a la v${versionNueva}? Sus datos personales y cantos se conservarán intactos.`,
+        icono: 'system_update',
+        textoSi: 'Sí, Actualizar',
+        textoNo: 'Cancelar',
+        onConfirm: async () => {
+          // Lista de archivos críticos que se van a verificar/descargar con barra de progreso
+          const archivosAActualizar = [
+            'version.json',
+            'sw.js',
+            'index.html',
+            'src/main.js',
+            'src/navegador.js',
+            'src/navegador.css',
+            'src/style.css',
+            'data/songs-index.json',
+            'data/ajustes_modal.html'
+          ];
+
+          let completados = 0;
+          const total = archivosAActualizar.length;
+
+          window.mostrarProgreso({
+            titulo: 'Actualizando App',
+            mensaje: `Comparando v${versionActual} ➔ v${versionNueva}\nIniciando descarga de archivos...`,
+            icono: 'sync',
+            porcentaje: 5
+          });
+
+          // 1. Descarga de archivos centrales de la app
+          for (const archivo of archivosAActualizar) {
+            try {
+              await fetch(archivo + '?t=' + Date.now(), { cache: 'reload' });
+            } catch (err) {
+              console.warn(`Aviso al descargar ${archivo}:`, err);
+            }
+
+            completados++;
+            const pct = Math.round((completados / total) * 40); // 40% para archivos centrales
+            window.mostrarProgreso({
+              titulo: 'Actualizando Sistema',
+              mensaje: `Descargando: ${archivo} (${completados}/${total})`,
+              icono: 'download',
+              porcentaje: pct
+            });
+
+            await new Promise(r => setTimeout(r, 60));
+          }
+
+          // 2. FASE FINAL: Cargar absolutamente todos los recursos y cantos faltantes con el motor de Ajustes
+          try {
+            window.mostrarProgreso({
+              titulo: 'Sincronizando Todo el Cancionero',
+              mensaje: 'Analizando y descargando todos los recursos faltantes...',
+              icono: 'cloud_sync',
+              porcentaje: 35
+            });
+
+            if (typeof window.cargarTodosLosRecursosFaltantes === 'function') {
+              await window.cargarTodosLosRecursosFaltantes((prog) => {
+                const globalPct = 35 + Math.round((prog.percent / 100) * 60); // Escala de 35% a 95%
+                window.mostrarProgreso({
+                  titulo: 'Descargando Recursos Faltantes',
+                  mensaje: `${prog.status || ''} (${prog.current || 0}/${prog.total || 0})`,
+                  icono: 'download',
+                  porcentaje: globalPct
+                });
+              });
+            } else {
+              // Fallback directo con los cantos
+              const keys = await caches.keys();
+              const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v311';
+              const cache = await caches.open(cacheName);
+              const indexRes = await fetch('data/songs-index.json?t=' + Date.now());
+              if (indexRes.ok) {
+                const songs = await indexRes.clone().json();
+                await cache.put('data/songs-index.json', indexRes);
+                for (let i = 0; i < songs.length; i += 10) {
+                  const slice = songs.slice(i, i + 10);
+                  await Promise.all(slice.map(async s => {
+                    const folder = (s.id && s.id.startsWith('aet')) ? 'data/songs-ae' : 'data/songs';
+                    const u = `${folder}/${s.id}.json?offline=true`;
+                    try {
+                      const cr = await fetch(u);
+                      if (cr.ok) await cache.put(u, cr);
+                    } catch(e) {}
+                  }));
+                }
+              }
+            }
+          } catch (errRecursos) {
+            console.warn('Aviso en fase de sincronización de recursos:', errRecursos);
+          }
+
+          // 3. Notificar al Service Worker para tomar los archivos nuevos
+          if ('serviceWorker' in navigator) {
+            try {
+              const reg = await navigator.serviceWorker.getRegistration();
+              if (reg) {
+                if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+                await reg.update();
+              }
+            } catch (err) {}
+          }
+
+          // 4. Guardar registro de la versión instalada para que se actualice la vista
+          if (window._latestRemoteVersion) {
+            localStorage.setItem('resucito_installed_version', window._latestRemoteVersion);
+          }
+
+          window.mostrarProgreso({
+            titulo: '¡Actualización Lista!',
+            mensaje: `Todo el contenido y la versión v${versionNueva} están listos. Reiniciando...`,
+            icono: 'check_circle',
+            porcentaje: 100
+          });
+
+          setTimeout(() => {
+            window.location.reload();
+          }, 900);
+        }
+      });
+    };
+
+    // Función auxiliar para comparar versiones del formato X.Y.ZZ (ej. 2.1.01 vs 2.1.00)
+    function esVersionSuperior(versionRemota, versionLocal) {
+      if (!versionRemota || !versionLocal) return false;
+      const partesR = String(versionRemota).replace(/^v/i, '').split('.').map(n => parseInt(n, 10) || 0);
+      const partesL = String(versionLocal).replace(/^v/i, '').split('.').map(n => parseInt(n, 10) || 0);
+
+      const maxLen = Math.max(partesR.length, partesL.length);
+      for (let i = 0; i < maxLen; i++) {
+        const vr = partesR[i] || 0;
+        const vl = partesL[i] || 0;
+        if (vr > vl) return true;
+        if (vr < vl) return false;
+      }
+      return false;
+    }
+
+    // Comprobar remotamente si hay una nueva versión (vía version.json)
+    async function checkRemoteVersionForUpdates() {
+      try {
+        const fetchUrl = (window.location.origin || '') + '/version.json?t=' + Date.now();
+        console.log('🔍 Comprobando versión remota en:', fetchUrl);
+        const res = await fetch(fetchUrl, { cache: 'no-store' });
+        if (!res.ok) {
+          console.warn('⚠️ No se pudo obtener version.json, status:', res.status);
+          return;
+        }
+        const info = await res.json();
+        console.log('📦 Info de versión recibida:', info, 'Versión local instalada:', appVersion);
+        
+        if (info && info.latestVersion && esVersionSuperior(info.latestVersion, appVersion)) {
+          console.log(`✨ ¡Nueva versión detectada!: v${info.latestVersion} (Actual: v${appVersion})`);
+          window._latestRemoteVersion = info.latestVersion;
+
+          // Destacar el botón "Actualizar App" DENTRO del menú Cuenta con la marca y el halo dorado/verde
+          if (actualizarBtn) {
+            actualizarBtn.classList.add('has-update-ready');
+            actualizarBtn.innerHTML = `
+              <div class="account-update-halo-ring" title="¡Nueva versión disponible v${info.latestVersion}!"></div>
+              <span style="font-weight: 700; color: #00e676;">Actualizar App</span>
+              <span class="account-update-badge-pill">v${info.latestVersion}</span>
+            `;
+          }
+
+          // Activar placa destacada dentro de "Info de la App"
+          const appInfoBody = document.querySelector('#app-info-modal .settings-body');
+          if (appInfoBody && !document.getElementById('app-update-live-card')) {
+            const updateCard = document.createElement('div');
+            updateCard.id = 'app-update-live-card';
+            updateCard.className = 'app-update-badge-container';
+            updateCard.style.cssText = 'margin-bottom: 20px; background: rgba(0,0,0,0.04); padding: 16px; border-radius: 18px; border: 1px solid rgba(255, 215, 0, 0.4);';
+            updateCard.innerHTML = `
+              <div class="app-update-badge-ring" id="btn-ring-update-modal" title="Pulsar para actualizar">
+                <div class="app-update-badge-inner">
+                  <span class="ver-txt">v${info.latestVersion}</span>
+                </div>
+              </div>
+              <button type="button" class="app-update-banner-btn" id="btn-banner-update-modal">
+                <span class="material-symbols-outlined" style="font-size: 1.2rem;">upgrade</span>
+                Actualiza a v${info.latestVersion}
+              </button>
+              <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 6px;">
+                Versión actual: v${appVersion} ➔ Nueva: v${info.latestVersion}
+              </div>
+            `;
+            
+            const logoSec = appInfoBody.firstElementChild;
+            if (logoSec) {
+              logoSec.insertAdjacentElement('afterend', updateCard);
+            } else {
+              appInfoBody.prepend(updateCard);
+            }
+
+            document.getElementById('btn-ring-update-modal')?.addEventListener('click', ejecutarProcesoActualizacion);
+            document.getElementById('btn-banner-update-modal')?.addEventListener('click', ejecutarProcesoActualizacion);
+          }
+        }
+      } catch (err) {
+        console.warn('No se pudo verificar actualización remota:', err);
+      }
+    }
+
+    // Ejecutar la comprobación tras cargar el navegador
+    setTimeout(checkRemoteVersionForUpdates, 1500);
+
+
 
     // Cierre de ventanas al hacer clic fuera
     document.addEventListener('click', (e) => {

@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "db.resucito.app",
+      "sha256_cert_fingerprints": [
+        "38:3A:B9:9C:CA:BC:3B:78:69:05:7F:27:0B:38:84:C4:C8:18:11:55:47:00:06:D3:3F:6C:2B:2C:2B:49:3E:64"
+      ]
+    }
+  }
+]
