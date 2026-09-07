@@ -74,7 +74,7 @@
       "sC": "adb1"
     },
     {
-      "line": "JERUSALÉN, JERUSALÉN, (Mi,m,20)",
+      "line": "JERUSALÉN, JERUSALÉN, (Mi,m,0)",
       "sC": "ta as"
     },
     {
@@ -116,11 +116,11 @@
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
       "triggerLine": "Por el amor... ...paz contigo, (Mi,m,20)",
-      "sC": "tc",
+      "sC": "tc nonegrita",
       "lines": [
         {
           "line": "Por el amor de mis amigos, (Mi,m,20)(La,m,221)",
-          "sC": "sub1"
+          "sC": "tc sub1"
         },
         {
           "line": "por el amor de mis hermanos, (Mi,m,246)",
@@ -164,9 +164,14 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,20)",
+      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,0)",
       "sC": "ta as",
       "lines": [
+        {
+          "line": "JERUSALÉN, JERUSALÉN, (Mi,m,0)",
+          "sC": "as"
+        },
+
         {
           "line": "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)",
           "sC": "as"
@@ -210,11 +215,11 @@
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
       "triggerLine": "Por el amor... ...paz contigo, (Mi,m,20)",
-      "sC": "tc",
+      "sC": "tc nonegrita",
       "lines": [
         {
           "line": "Por el amor de mis amigos, (Mi,m,20)(La,m,221)",
-          "sC": "sub1"
+          "sC": "tc sub1"
         },
         {
           "line": "por el amor de mis hermanos, (Mi,m,246)",
@@ -258,9 +263,13 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,20)",
+      "triggerLine": "JERUSALÉN, JERUSALÉN, (Mi,m,0)",
       "sC": "ta as",
       "lines": [
+        {
+          "line": "JERUSALÉN, JERUSALÉN, (Mi,m,0)",
+          "sC": "as"
+        },
         {
           "line": "DE NUEVO REEDIFICADA., (La,m,72)(Mi,m,200)",
           "sC": "as"

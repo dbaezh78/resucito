@@ -35,11 +35,11 @@
   "sig": "/src/index.html?canto=queamablessontusmoradas",
   "lizq": [
     {
-      "line": "Venid a mí vosotros todos, (Do,,10)(Mi,,203)",
+      "line": "Venid a mí vosotros todos, (Do,,0)(Mi,,200)",
       "sC": "tc"
     },
     {
-      "line": "que estáis cansados y agobiados,, (La,m,275)",
+      "line": "que estáis cansados y agobiados,, (La,m,250)",
       "sC": ""
     },
     {
@@ -110,9 +110,13 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "Venid a mí, (Do,,10)",
-      "sC": "tc",
+      "triggerLine": "Venid a mí, (Do,,0)",
+      "sC": "tc nonegrita",
       "lines": [
+        {
+          "line": "Venid a mí vosotros todos, (Do,,10)(Mi,,200)",
+          "sC": "tc"
+        },
         {
           "line": "que estáis cansados y agobiados,, (La,m,275)",
           "sC": ""
@@ -159,11 +163,15 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "PORQUE MI YUGO ES SUAVE, (Do,,10)(Mi,,242)",
+      "triggerLine": "PORQUE MI YUGO ES SUAVE, (Do,,0)(Mi,,200)",
       "sC": "ta as",
       "lines": [
         {
-          "line": "PORQUE MI YUGO ES SUAVE, (Fa,,241)",
+          "line": "PORQUE MI YUGO ES SUAVE, (Do,,0)(Mi,,200)",
+          "sC": "as"
+        },
+        {
+          "line": "PORQUE MI YUGO ES SUAVE, (Fa,,195)",
           "sC": "as"
         },
         {

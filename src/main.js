@@ -1270,6 +1270,79 @@ function renderSongContent() {
 
 function renderSection(container, lines, side) {
   lines.forEach((item, lineIdx) => {
+    if (item.type === "variant-group") {
+      // Bloque de selección de variantes litúrgicas (ej: Santos en Plegaria)
+      const containerDiv = document.createElement('div');
+      containerDiv.className = 'variant-group-container';
+      containerDiv.dataset.groupId = item.id;
+
+      const headerDiv = document.createElement('div');
+      headerDiv.className = 'variant-group-header' + (item.sC ? ' ' + item.sC : '');
+      if (item.color) {
+        headerDiv.style.color = item.color;
+      }
+
+      const selectEl = document.createElement('select');
+      selectEl.className = 'variant-select-inline';
+      selectEl.setAttribute('aria-label', item.label || 'Seleccionar variante');
+
+      (item.variants || []).forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v.id;
+        opt.textContent = v.name || v.triggerLine || v.title || v.id;
+        selectEl.appendChild(opt);
+      });
+
+      const storageKey = 'resucito_variant_' + (currentCanto ? currentCanto.id : '') + '_' + item.id;
+      const savedVariantId = (typeof localStorage !== 'undefined') ? localStorage.getItem(storageKey) : null;
+      if (savedVariantId && item.variants.some(v => v.id === savedVariantId)) {
+        selectEl.value = savedVariantId;
+      } else if (item.variants && item.variants.length > 0) {
+        selectEl.value = item.variants[0].id;
+      }
+
+      headerDiv.appendChild(selectEl);
+      containerDiv.appendChild(headerDiv);
+
+      const bodyDiv = document.createElement('div');
+      bodyDiv.className = 'variant-group-body';
+
+      (item.variants || []).forEach((v) => {
+        const varContainer = document.createElement('div');
+        varContainer.className = 'variant-item-container';
+        varContainer.dataset.variantId = v.id;
+        varContainer.style.display = (v.id === selectEl.value) ? 'block' : 'none';
+
+        (v.lines || []).forEach((subLine, subLineIdx) => {
+          let subSC = (typeof subLine === 'object' && subLine.sC) ? subLine.sC : '';
+          const subLineEl = renderLine(subLine, side, lineIdx, subLineIdx, subSC);
+          varContainer.appendChild(subLineEl);
+        });
+
+        bodyDiv.appendChild(varContainer);
+      });
+
+      selectEl.addEventListener('change', (e) => {
+        const selectedId = e.target.value;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem(storageKey, selectedId);
+        }
+        
+        bodyDiv.querySelectorAll('.variant-item-container').forEach(el => {
+          el.style.display = (el.dataset.variantId === selectedId) ? 'block' : 'none';
+        });
+
+        if (typeof window.repositionChords === 'function') {
+          setTimeout(() => window.repositionChords(), 20);
+        }
+        window.dispatchEvent(new Event('resize'));
+      });
+
+      containerDiv.appendChild(bodyDiv);
+      container.appendChild(containerDiv);
+      return;
+    }
+
     if (item.type === "collapsible-block") {
       // Bloque colapsable (Asamblea)
       const containerDiv = document.createElement('div');
@@ -1661,6 +1734,15 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
       if (item.type === 'collapsible-block' && item.lines) {
         return item.lines[subLineIdx];
       }
+      if (item.type === 'variant-group' && item.variants) {
+        const storageKey = 'resucito_variant_' + (currentCanto ? currentCanto.id : '') + '_' + item.id;
+        const savedId = (typeof localStorage !== 'undefined') ? localStorage.getItem(storageKey) : null;
+        const activeVar = item.variants.find(v => v.id === savedId) || item.variants[0];
+        if (activeVar && activeVar.lines) {
+          return activeVar.lines[subLineIdx];
+        }
+        return null;
+      }
       if (item.BIS || item.bis || item.type === 'bis-block') {
         const subLines = Array.isArray(item.BIS) ? item.BIS : (Array.isArray(item.bis) ? item.bis : (item.lines || []));
         return subLines[subLineIdx];
@@ -2007,6 +2089,15 @@ function saveChordPosition(side, lineIdx, subLineIdx, chordIdx, newPos) {
       if (item.type === 'collapsible-block' && item.lines) {
         return item.lines[subLineIdx];
       }
+      if (item.type === 'variant-group' && item.variants) {
+        const storageKey = 'resucito_variant_' + (currentCanto ? currentCanto.id : '') + '_' + item.id;
+        const savedId = (typeof localStorage !== 'undefined') ? localStorage.getItem(storageKey) : null;
+        const activeVar = item.variants.find(v => v.id === savedId) || item.variants[0];
+        if (activeVar && activeVar.lines) {
+          return activeVar.lines[subLineIdx];
+        }
+        return null;
+      }
       if (item.BIS || item.bis || item.type === 'bis-block') {
         const subLines = Array.isArray(item.BIS) ? item.BIS : (Array.isArray(item.bis) ? item.bis : (item.lines || []));
         return subLines[subLineIdx];
@@ -2064,6 +2155,15 @@ function saveSingleChordEdit(chosenNote, chosenType) {
       if (item.type === 'collapsible-block' && item.lines) {
         return item.lines[subLineIdx];
       }
+      if (item.type === 'variant-group' && item.variants) {
+        const storageKey = 'resucito_variant_' + (currentCanto ? currentCanto.id : '') + '_' + item.id;
+        const savedId = (typeof localStorage !== 'undefined') ? localStorage.getItem(storageKey) : null;
+        const activeVar = item.variants.find(v => v.id === savedId) || item.variants[0];
+        if (activeVar && activeVar.lines) {
+          return activeVar.lines[subLineIdx];
+        }
+        return null;
+      }
       if (item.BIS || item.bis || item.type === 'bis-block') {
         const subLines = Array.isArray(item.BIS) ? item.BIS : (Array.isArray(item.bis) ? item.bis : (item.lines || []));
         return subLines[subLineIdx];
@@ -2107,6 +2207,16 @@ function extractCurrentSongChords(section, side) {
         id: item.id,
         triggerLine: extractChordsFromLineItem(item.triggerLine, side, lineIdx, -1),
         lines: item.lines.map((line, subLineIdx) => extractChordsFromLineItem(line, side, lineIdx, subLineIdx))
+      };
+    } else if (item.type === 'variant-group' && item.variants) {
+      return {
+        type: 'variant-group',
+        id: item.id,
+        variants: item.variants.map(v => ({
+          id: v.id,
+          name: v.name,
+          lines: (v.lines || []).map((line, subLineIdx) => extractChordsFromLineItem(line, side, lineIdx, subLineIdx))
+        }))
       };
     } else if (item.BIS || item.bis || item.type === 'bis-block') {
       const subLines = Array.isArray(item.BIS) ? item.BIS : (Array.isArray(item.bis) ? item.bis : (item.lines || []));
@@ -2172,11 +2282,22 @@ function getCleanLyrics(side, lineIdx, subLineIdx) {
   if (subLineIdx !== undefined && subLineIdx >= 0) {
     if (item.type === 'collapsible-block' && item.lines) {
       lineItem = item.lines[subLineIdx];
+    } else if (item.type === 'variant-group' && item.variants) {
+      const storageKey = 'resucito_variant_' + (currentCanto ? currentCanto.id : '') + '_' + item.id;
+      const savedId = (typeof localStorage !== 'undefined') ? localStorage.getItem(storageKey) : null;
+      const activeVar = item.variants.find(v => v.id === savedId) || item.variants[0];
+      if (activeVar && activeVar.lines && activeVar.lines[subLineIdx]) {
+        lineItem = activeVar.lines[subLineIdx];
+      } else {
+        return '';
+      }
     } else {
       return '';
     }
   } else if (item.type === 'collapsible-block') {
     lineItem = item.triggerLine;
+  } else if (item.type === 'variant-group') {
+    return '';
   }
   
   const content = typeof lineItem === 'string' ? lineItem : (lineItem.line || '');
@@ -4056,6 +4177,27 @@ function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
         <div class="collapsible-bis-side">
           <div class="bis-line"></div>
           <div class="bis-text">BIS A.</div>
+        </div>
+      </div>
+    `;
+  } else if (lineItem.type === "variant-group") {
+    const storageKey = 'resucito_variant_' + (song ? song.id : '') + '_' + lineItem.id;
+    const savedId = (typeof localStorage !== 'undefined') ? localStorage.getItem(storageKey) : null;
+    const activeVar = (lineItem.variants || []).find(v => v.id === savedId) || (lineItem.variants ? lineItem.variants[0] : null);
+    if (!activeVar) return '';
+
+    const subLinesHtml = (activeVar.lines || []).map((l, subIdx) => {
+      let subSC = (typeof l === 'object' && l.sC) ? l.sC : '';
+      return generarHtmlLineaItem(song, l, side, lineIdx, subIdx, keyOffset, subSC);
+    }).join('');
+
+    return `
+      <div class="variant-group-container">
+        <div class="variant-group-header" style="color: ${lineItem.color || 'var(--Rojo-Leccionario)'}; font-weight: 700; margin: 0.3rem 0;">
+          ${escapeHtml(activeVar.name || activeVar.title || 'Santo')}
+        </div>
+        <div class="variant-group-content">
+          ${subLinesHtml}
         </div>
       </div>
     `;
