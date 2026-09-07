@@ -1,6 +1,25 @@
-﻿# Historial de Actualizaciones - Resucitó
+# Historial de Actualizaciones - Resucitó
 
 Este archivo registra los cambios de cada versión de forma clara y directa.
+
+---
+
+## [v2.1.04] - 2026
+- Unificación total de almacenamiento de acordes posicionales en `/global_positions/` como única fuente de verdad.
+- Descontinuación del guardado y lectura conflictiva en `/usuarios/USUARIO/posiciones/`.
+- Nueva función administrativa y botón para **Respaldar Posiciones de Usuario** desde Firestore: genera `data/chord_positions-backup.json`, descarga el archivo localmente y reporta comparativa de cantos únicos vs globales.
+- Integración del botón de respaldo tanto en el modal de **Ajustes > Cuenta (Acciones de Administrador)** como en **Mantenimiento de Cantos (`mantcantos.html`)**.
+
+---
+
+## [v2.1.03] - 2026
+- Nueva página de Mantenimiento de Cantos (`mantcantos.html`).
+- Columna dedicada para números de cantos (`N°`).
+- Filtrado por columnas mediante selección múltiple con casillas de verificación (checkboxes), buscador interno y botones de seleccionar/deseleccionar todo.
+- Control de Etapas en el Camino Neocatecumenal por canto en tiempo real.
+- Verificación de acordes posicionados (`PosAcorde`), notas del cantor, favoritos y estado en Service Worker.
+- Menú contextual interactivo (clic derecho) para ocultar y filtrar por columnas.
+- Nuevo permiso `page_mantcantos` ("Mantenimiento Páginas") con acceso exclusivo para administradores.
 
 ---
 

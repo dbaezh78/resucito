@@ -51,6 +51,7 @@ export const PERMISSIONS = {
   PAGE_RESUCITO_PDF: "page_resucito_pdf",
   PAGE_INSTALAR_APP: "page_instalar_app",
   PAGE_OPCIONES_PAGINAS: "page_opciones_paginas",
+  PAGE_MANTCANTOS: "page_mantcantos",
   VIEW_SONG_CANTO: "view_song_canto",
   VIEW_SONG_LITURGIA: "view_song_liturgia",
   VIEW_SONG_CATEQUESIS: "view_song_catequesis"
@@ -82,6 +83,7 @@ export const PERMISSION_LABELS = {
   "page_resucito_pdf": "Resucitó PDF",
   "page_instalar_app": "Instalar App",
   "page_opciones_paginas": "Opciones de páginas",
+  "page_mantcantos": "Mantenimiento Páginas",
   "view_settings_log": "Ver Ajustes: Log",
   "view_books": "Ver Libros de Cantos",
   "control_canto": "Control Canto",
@@ -1534,7 +1536,8 @@ const PERMISSION_TREE = [
       { key: "page_introduccion", label: "Introducción" },
       { key: "page_resucito_pdf", label: "Resucitó PDF" },
       { key: "page_instalar_app", label: "Instalar App" },
-      { key: "page_opciones_paginas", label: "Opciones de páginas" }
+      { key: "page_opciones_paginas", label: "Opciones de páginas" },
+      { key: "page_mantcantos", label: "Mantenimiento Páginas" }
     ]
   },
   {

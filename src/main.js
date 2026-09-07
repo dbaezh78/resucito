@@ -26,7 +26,8 @@ import {
   publicarPosicionesGlobales, 
   cargarPosicionesGlobales,
   guardarHistorialCantoEnNube,
-  cargarHistorialCantoDesdeNube
+  cargarHistorialCantoDesdeNube,
+  respaldarPosicionesUsuario
 } from './sync.js';
 import { 
   registrarEntradaCanto, 
@@ -670,13 +671,23 @@ async function sincronizarCantoDesdeFirebase(songId) {
     return;
   }
 
-  // 1. Cargar posiciones globales oficiales de acordes si existen en Firestore
+  // 1. Cargar posiciones globales oficiales de acordes si existen en Firestore (solo si no existen en el archivo local)
   try {
-    const globalPos = await cargarPosicionesGlobales(songId);
-    if (globalPos && (globalPos.lizq.length > 0 || globalPos.lder.length > 0)) {
-      if (!defaultChordPositions) defaultChordPositions = {};
-      defaultChordPositions[songId] = globalPos;
-      console.log(`📥 [Firebase] Posiciones globales aplicadas para el canto: ${songId}`);
+    const hasLocalPos = defaultChordPositions && defaultChordPositions[songId] && (
+      (Array.isArray(defaultChordPositions[songId].lizq) && defaultChordPositions[songId].lizq.length > 0) ||
+      (Array.isArray(defaultChordPositions[songId].lder) && defaultChordPositions[songId].lder.length > 0)
+    );
+
+    // Solo si el archivo local NO tiene posiciones para este canto, consultamos global_positions como respaldo
+    if (!hasLocalPos) {
+      const globalPos = await cargarPosicionesGlobales(songId);
+      if (globalPos && (globalPos.lizq.length > 0 || globalPos.lder.length > 0)) {
+        if (!defaultChordPositions) defaultChordPositions = {};
+        defaultChordPositions[songId] = globalPos;
+        console.log(`📥 [Firebase] Posiciones globales de respaldo aplicadas para el canto: ${songId}`);
+      }
+    } else {
+      console.log(`📌 [Local] Predominan las posiciones de data/chord_positions.json para: ${songId}`);
     }
   } catch (e) {
     console.error("Error al sincronizar posiciones globales:", e);
@@ -733,16 +744,7 @@ async function sincronizarCantoDesdeFirebase(songId) {
       console.error("Error al sincronizar nota del cantor desde la nube:", e);
     }
     
-    // 2c. Descargar posiciones personalizadas
-    try {
-      const personalPos = await cargarPosicionesDesdeNube(songId);
-      if (personalPos && (personalPos.lizq.length > 0 || personalPos.lder.length > 0)) {
-        localStorage.setItem(`custom-positions-${songId}`, JSON.stringify(personalPos));
-        console.log("📥 [Firebase] Posiciones personalizadas cargadas de la nube.");
-      }
-    } catch (e) {
-      console.error("Error al sincronizar posiciones personalizadas desde la nube:", e);
-    }
+    // 2c. Posiciones de acordes unificadas: ahora se alimentan exclusivamente de global_positions y defaultChordPositions (paso 1)
   }
 }
 
@@ -1182,31 +1184,53 @@ function abrirModalNotaCanto(songId) {
   textarea.value = localStorage.getItem(`notes_${songId}`) || '';
 
   const handleSave = (e) => {
-    e.stopPropagation();
+    if (e) e.stopPropagation();
     const val = textarea.value;
     localStorage.setItem(`notes_${songId}`, val);
     if (typeof guardarNotaEnNube === 'function') {
       guardarNotaEnNube(songId, val);
     }
-    modal.style.display = 'none';
-    cleanup();
+    closeModal();
   };
 
   const handleClose = (e) => {
-    e.stopPropagation();
-    modal.style.display = 'none';
-    cleanup();
+    if (e) e.stopPropagation();
+    closeModal();
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      e.stopPropagation();
+      closeModal();
+    }
   };
 
   const cleanup = () => {
     if (btnSave) btnSave.removeEventListener('click', handleSave);
     if (btnClose) btnClose.removeEventListener('click', handleClose);
+    modal.removeEventListener('click', handleOverlayClick);
+    document.removeEventListener('keydown', handleKeyDown);
+  };
+
+  const closeModal = () => {
+    modal.style.display = 'none';
+    cleanup();
   };
 
   if (btnSave) btnSave.addEventListener('click', handleSave);
   if (btnClose) btnClose.addEventListener('click', handleClose);
+  modal.addEventListener('click', handleOverlayClick);
+  document.addEventListener('keydown', handleKeyDown);
 
   modal.style.display = 'flex';
+  // Foco al textarea para que el usuario pueda escribir de inmediato
+  setTimeout(() => textarea.focus(), 50);
 }
 
 // --- Renderizado de Canción ---
@@ -6145,7 +6169,39 @@ function setupEventListeners() {
         alert('Error al sincronizar: ' + err.message);
       } finally {
         authPullPositionsBtn.disabled = false;
-        authPullPositionsBtn.innerHTML = '<span class="material-symbols-outlined">cloud_download</span> Sincronizar desde Firebase';
+        authPullPositionsBtn.innerHTML = '<span class="material-symbols-outlined">cloud_download</span> Sincronizar desde Firebase (Global)';
+      }
+    });
+  }
+
+  const authBackupPositionsBtn = document.getElementById('auth-backup-user-positions-btn');
+  if (authBackupPositionsBtn) {
+    authBackupPositionsBtn.addEventListener('click', async () => {
+      try {
+        authBackupPositionsBtn.disabled = true;
+        authBackupPositionsBtn.innerHTML = '<span class="material-symbols-outlined">sync</span> Respaldando...';
+        
+        const result = await respaldarPosicionesUsuario();
+        
+        let msg = `✅ Respaldo de Posiciones de Usuario completado:\n\n`;
+        msg += `• Total de cantos encontrados en /usuarios/USUARIO/posiciones/: ${result.total}\n`;
+        msg += `• Ya presentes en Global: ${result.alreadyInGlobal.length}\n`;
+        msg += `• Únicos en Usuario (no estaban en global): ${result.onlyInUser.length}\n`;
+        if (result.onlyInUser.length > 0) {
+          msg += `  (Cantos únicos: ${result.onlyInUser.join(', ')})\n`;
+        }
+        if (result.savedOnDisk) {
+          msg += `\n💾 Guardado exitosamente en: data/chord_positions-backup.json`;
+        }
+        msg += `\n📥 Se ha descargado también el archivo en tu navegador.`;
+
+        alert(msg);
+      } catch (err) {
+        console.error('Error al respaldar posiciones:', err);
+        alert('Error al respaldar: ' + err.message);
+      } finally {
+        authBackupPositionsBtn.disabled = false;
+        authBackupPositionsBtn.innerHTML = '<span class="material-symbols-outlined" style="color: var(--accent-color);">save_as</span> Respaldar Posiciones de Usuario';
       }
     });
   }

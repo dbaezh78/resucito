@@ -115,6 +115,21 @@
                 </div>
               </div>
             </div>
+
+            <!-- Tarjeta para mantcantos.html (Mantenimiento de Cantos) -->
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: rgba(0,0,0,0.02); border: 1px solid var(--panel-border); border-radius: 12px; gap: 12px; flex-wrap: wrap;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span class="material-symbols-outlined" style="font-size: 1.8rem; color: var(--accent-color);">build</span>
+                <div>
+                  <h5 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--text-color);">Mantenimiento de Cantos</h5>
+                  <p style="margin: 2px 0 0 0; font-size: 0.78rem; color: var(--text-muted);">Tabla general de cantos con etapas, posiciones, notas, favoritos y caché offline.</p>
+                </div>
+              </div>
+              <a href="mantcantos.html" class="btn theme-btn" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; font-size: 0.85rem; font-weight: 700; text-decoration: none; border-radius: 8px;">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem;">open_in_new</span>
+                Abrir Página
+              </a>
+            </div>
           </div>
         </div>
 
@@ -1594,11 +1609,15 @@
                 </div>
                 
                 <!-- Acciones de Administrador -->
-                <div id="auth-admin-actions" style="display: none; margin-top: 16px; border-top: 1.5px dashed var(--panel-border); padding-top: 16px; width: 100%; justify-items: center;">
-                  <h4 style="font-size: 0.9rem; margin-bottom: 8px; font-weight: 700;">Acciones de Administrador</h4>
+                <div id="auth-admin-actions" style="display: none; margin-top: 16px; border-top: 1.5px dashed var(--panel-border); padding-top: 16px; width: 100%; justify-items: center; display: flex; flex-direction: column; gap: 8px;">
+                  <h4 style="font-size: 0.9rem; margin-bottom: 4px; font-weight: 700; text-align: center;">Acciones de Administrador</h4>
                   <button id="auth-pull-positions-btn" class="btn theme-btn" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; font-weight: 600;">
                     <span class="material-symbols-outlined">cloud_download</span>
-                    Sincronizar desde Firebase
+                    Sincronizar desde Firebase (Global)
+                  </button>
+                  <button id="auth-backup-user-positions-btn" class="btn btn-secondary" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; font-weight: 600; border: 1px solid var(--panel-border);">
+                    <span class="material-symbols-outlined" style="color: var(--accent-color);">save_as</span>
+                    Respaldar Posiciones de Usuario
                   </button>
                 </div>
               </div>

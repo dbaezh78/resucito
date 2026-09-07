@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mantenimiento de Cantos - Resucitó</title>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8b0000">
+  <link rel="stylesheet" href="src/style.css?v=139">
+  <link rel="stylesheet" href="src/navegador.css?v=139">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    body {
+      font-family: var(--font-family-lyrics, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+      background: var(--bg-color, #f4f6f8);
+      color: var(--text-color, #212529);
+      margin: 0;
+      padding: 16px;
+      padding-bottom: 90px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .mant-container {
+      max-width: 1280px;
+      width: 100%;
+      background: var(--panel-bg, #ffffff);
+      border: 1px solid var(--panel-border, #e0e0e0);
+      border-radius: 16px;
+      padding: 20px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1.5px solid var(--panel-border, #e0e0e0);
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-title h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--text-color, #212529);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: var(--accent-color, #d01212);
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-action:hover {
+      opacity: 0.9;
+    }
+
+    .btn-secondary {
+      background: rgba(0,0,0,0.05);
+      color: var(--text-color, #212529);
+      border: 1px solid var(--panel-border, #ccc);
+    }
+
+    .search-filter-bar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+      background: rgba(0,0,0,0.02);
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--panel-border, #e5e7eb);
+    }
+
+    .search-input-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .search-input-wrap input {
+      width: 100%;
+      padding: 8px 32px 8px 36px;
+      border-radius: 8px;
+      border: 1px solid var(--panel-border, #ccc);
+      background: var(--panel-bg, #fff);
+      color: var(--text-color, #000);
+      font-size: 0.88rem;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .search-input-wrap .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.15rem;
+      color: var(--text-muted, #888);
+      pointer-events: none;
+    }
+
+    .search-input-wrap .clear-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      color: var(--text-muted, #888);
+      cursor: pointer;
+      display: none;
+    }
+
+    .badge-count {
+      font-size: 0.8rem;
+      font-weight: 700;
+      background: rgba(208, 18, 18, 0.12);
+      color: var(--accent-color, #d01212);
+      padding: 6px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .hidden-columns-bar {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      background: #fff3cd;
+      color: #856404;
+      padding: 8px 14px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 0.82rem;
+      border: 1px solid #ffeeba;
+    }
+
+    .hidden-columns-bar button {
+      background: #856404;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+
+    /* Tabla interactiva */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--panel-border, #e0e0e0);
+      border-radius: 12px;
+      background: var(--panel-bg, #ffffff);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+
+    thead th {
+      background: rgba(0,0,0,0.04);
+      color: var(--text-color, #212529);
+      padding: 12px 10px;
+      font-weight: 700;
+      border-bottom: 2px solid var(--panel-border, #ccc);
+      user-select: none;
+      cursor: context-menu;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    thead th:hover {
+      background: rgba(0,0,0,0.07);
+    }
+
+    thead th .col-header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    thead th .filter-indicator {
+      font-size: 0.95rem;
+      color: var(--accent-color, #d01212);
+      display: none;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--panel-border, #eee);
+      transition: background 0.15s;
+    }
+
+    tbody tr:hover {
+      background: rgba(0,0,0,0.02);
+    }
+
+    td {
+      padding: 10px;
+      vertical-align: middle;
+    }
+
+    /* Badges y controles de celda */
+    .badge-pos {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .badge-pos.si {
+      background: #d4edda;
+      color: #155724;
+    }
+    .badge-pos.no {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .badge-sw {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+    }
+    .badge-sw.cached {
+      background: #d4edda;
+      color: #155724;
+    }
+    .badge-sw.missing {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .badge-chord {
+      display: inline-block;
+      font-weight: 800;
+      color: var(--accent-color, #d01212);
+      font-size: 0.92rem;
+      background: rgba(208, 18, 18, 0.08);
+      padding: 2px 8px;
+      border-radius: 6px;
+      text-align: center;
+      min-width: 24px;
+    }
+
+    .stage-select {
+      width: 100%;
+      min-width: 160px;
+      max-width: 220px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--panel-border, #ccc);
+      background: var(--panel-bg, #fff);
+      color: var(--text-color, #000);
+      font-size: 0.82rem;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .notes-snippet {
+      max-width: 180px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 0.8rem;
+      color: var(--text-muted, #666);
+      font-style: italic;
+    }
+    .notes-snippet.has-notes {
+      color: var(--text-color, #212529);
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .fav-checkbox {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: #d4af37;
+    }
+
+    /* Menú Contextual Flotante */
+    .context-menu {
+      display: none;
+      position: fixed;
+      z-index: 10000;
+      background: var(--panel-bg, #ffffff);
+      border: 1px solid var(--panel-border, #ccc);
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+      padding: 6px 0;
+      min-width: 190px;
+    }
+
+    .context-menu-item {
+      padding: 9px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-color, #212529);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .context-menu-item:hover {
+      background: var(--accent-color, #d01212);
+      color: #ffffff;
+    }
+
+    .context-menu-item:hover .material-symbols-outlined {
+      color: #ffffff;
+    }
+
+    .context-menu-item .material-symbols-outlined {
+      font-size: 1.15rem;
+      color: var(--text-muted, #666);
+    }
+
+    .context-menu-separator {
+      height: 1px;
+      background: var(--panel-border, #e0e0e0);
+      margin: 4px 0;
+    }
+
+    /* Modal de filtro por columna con lista de selección múltiple */
+    .filter-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 10001;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .filter-modal-content {
+      background: var(--panel-bg, #ffffff);
+      border-radius: 14px;
+      max-width: 440px;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.28);
+      border: 1px solid var(--panel-border, #ccc);
+      display: flex;
+      flex-direction: column;
+      max-height: 85vh;
+    }
+
+    .filter-options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow-y: auto;
+      max-height: 320px;
+      padding: 4px;
+      border: 1px solid var(--panel-border, #e0e0e0);
+      border-radius: 8px;
+      background: rgba(0,0,0,0.015);
+      margin-bottom: 14px;
+    }
+
+    .filter-option-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 7px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s;
+    }
+
+    .filter-option-item:hover {
+      background: rgba(0,0,0,0.04);
+    }
+
+    .filter-option-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.86rem;
+      color: var(--text-color, #212529);
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .filter-option-count {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted, #777);
+      background: rgba(0,0,0,0.06);
+      padding: 2px 7px;
+      border-radius: 10px;
+    }
+
+    .badge-number {
+      display: inline-block;
+      font-weight: 800;
+      color: var(--accent-color, #d01212);
+      font-size: 0.95rem;
+      background: rgba(208, 18, 18, 0.08);
+      padding: 2px 8px;
+      border-radius: 6px;
+      text-align: center;
+      min-width: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="mant-container">
+    <!-- Header -->
+    <header class="header-section">
+      <div class="header-title">
+        <span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-color, #d01212);">build</span>
+        <div>
+          <h1>Mantenimiento de Cantos</h1>
+          <div style="font-size: 0.82rem; color: var(--text-muted, #666); margin-top: 2px;">
+            Supervisión global de cantos, etapas, acordes posicionales, notas, favoritos y caché offline
+          </div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="btn-backup-user-pos" class="btn-action btn-secondary" title="Respaldar Posiciones de Usuario de Firebase (/usuarios/USUARIO/posiciones) a chord_positions-backup.json" style="display: none;">
+          <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">save_as</span>
+          Respaldar Posiciones
+        </button>
+        <button id="btn-refresh-data" class="btn-action btn-secondary" title="Recargar datos y caché">
+          <span class="material-symbols-outlined">autorenew</span>
+          Refrescar
+        </button>
+        <a href="index.html" class="btn-action">
+          <span class="material-symbols-outlined">menu_book</span>
+          Volver a Cantos
+        </a>
+      </div>
+    </header>
+
+    <!-- Barra de Búsqueda y Filtro General -->
+    <div class="search-filter-bar">
+      <div class="search-input-wrap">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" id="mant-search-input" placeholder="Buscar canto por título, número (#) o acorde...">
+        <span class="material-symbols-outlined clear-btn" id="mant-search-clear">close</span>
+      </div>
+      <span id="mant-count-badge" class="badge-count">Cargando cantos...</span>
+    </div>
+
+    <!-- Barra de Columnas Ocultas (notificación para restaurar) -->
+    <div id="hidden-columns-bar" class="hidden-columns-bar">
+      <span class="material-symbols-outlined" style="font-size: 1.15rem;">visibility_off</span>
+      <span>Hay columnas ocultas: <strong id="hidden-columns-list"></strong></span>
+      <button id="btn-restore-columns">Mostrar Todas</button>
+    </div>
+
+    <!-- Tabla Principal -->
+    <div class="table-responsive">
+      <table id="mant-table">
+        <thead>
+          <tr id="mant-table-header-row">
+            <th data-col="numero" style="width: 70px; text-align: center;" title="Clic derecho para opciones">
+              <div class="col-header-content" style="justify-content: center;">
+                <span>N°</span>
+                <span class="material-symbols-outlined filter-indicator" data-col-indicator="numero">filter_alt</span>
+              </div>
+            </th>
+            <th data-col="nombre" title="Clic derecho para opciones">
+              <div class="col-header-content">
+                <span>Nombre del Canto</span>
+                <span class="material-symbols-outlined filter-indicator" data-col-indicator="nombre">filter_alt</span>
+              </div>
+            </th>
+            <th data-col="categoria" style="width: 220px;" title="Clic derecho para opciones">
+              <div class="col-header-content">
+                <span>Categoría / Etapa</span>
+                <span class="material-symbols-outlined filter-indicator" data-col-indicator="categoria">filter_alt</span>
+              </div>
+            </th>
+            <th data-col="acorde" style="width: 90px; text-align: center;" title="Clic derecho para opciones">
+              <div class="col-header-content" style="justify-content: center;">
+                <span>Acorde</span>
+                <span class="material-symbols-outlined filter-indicator" data-col-indicator="acorde">filter_alt</span>
+              </div>
+            </th>
+            <th data-col="posacorde" style="width: 110px; text-align: center;" title="Clic derecho para opciones">
+              <div class="col-header-content" style="justify-content: center;">
+                <span>PosAcorde</span>
+                <span class="material-symbols-outlined filter-indicator" data-col-indicator="posacorde">filter_alt</span>
+              </div>
+            </th>
+            <th data-col="notas" style="width: 170px;" title="Clic derecho para opciones">
+              <div class="col-header-content">
+                <span>Notas del Canto</span>
+                <span class="material-symbols-outlined filter-indicator" data-col-indicator="notas">filter_alt</span>
+              </div>
+            </th>
+            <th data-col="favorito" style="width: 90px; text-align: center;" title="Clic derecho para opciones">
+              <div class="col-header-content" style="justify-content: center;">
+                <span>Favorito</span>
+                <span class="material-symbols-outlined filter-indicator" data-col-indicator="favorito">filter_alt</span>
+              </div>
+            </th>
+            <th data-col="sw" style="width: 100px; text-align: center;" title="Clic derecho para opciones">
+              <div class="col-header-content" style="justify-content: center;">
+                <span>Caché SW</span>
+                <span class="material-symbols-outlined filter-indicator" data-col-indicator="sw">filter_alt</span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="mant-table-body">
+          <tr>
+            <td colspan="7" style="text-align: center; padding: 40px; color: var(--text-muted, #777);">
+              <div style="font-size: 1.1rem; font-weight: 600;">Cargando cantos del cancionero...</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Menú Contextual de Columna (Clic Derecho) -->
+  <div id="col-context-menu" class="context-menu">
+    <div class="context-menu-item" id="ctx-hide-col">
+      <span class="material-symbols-outlined">visibility_off</span>
+      <span>Ocultar columna</span>
+    </div>
+    <div class="context-menu-item" id="ctx-filter-col">
+      <span class="material-symbols-outlined">filter_alt</span>
+      <span>Filtrar por esta columna</span>
+    </div>
+    <div class="context-menu-separator"></div>
+    <div class="context-menu-item" id="ctx-show-all-cols">
+      <span class="material-symbols-outlined">view_column</span>
+      <span>Mostrar todas las columnas</span>
+    </div>
+  </div>
+
+  <!-- Modal Filtro por Columna (Selección de Opciones) -->
+  <div id="modal-filter-col" class="filter-modal-overlay">
+    <div class="filter-modal-content">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <h3 id="modal-filter-title" style="margin: 0; font-size: 1.05rem; display: flex; align-items: center; gap: 6px;">
+          <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">filter_alt</span>
+          Filtrar Columna
+        </h3>
+        <button id="modal-filter-close" style="background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--text-color); line-height: 1;">&times;</button>
+      </div>
+      <p id="modal-filter-desc" style="font-size: 0.8rem; color: var(--text-muted); margin: 0 0 10px 0;">
+        Selecciona las opciones que deseas visualizar:
+      </p>
+      
+      <!-- Buscador interno rápido dentro de las opciones -->
+      <div style="position: relative; margin-bottom: 8px;">
+        <span class="material-symbols-outlined" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); font-size: 1.05rem; color: var(--text-muted); pointer-events: none;">search</span>
+        <input type="text" id="modal-filter-search" placeholder="Buscar opción..." style="width: 100%; padding: 6px 10px 6px 30px; border-radius: 6px; border: 1px solid var(--panel-border, #ccc); font-size: 0.82rem; outline: none; box-sizing: border-box; background: var(--panel-bg); color: var(--text-color);">
+      </div>
+
+      <!-- Acciones de selección masiva -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 0.78rem;">
+        <div style="display: flex; gap: 8px;">
+          <button id="modal-filter-select-all" type="button" style="background: none; border: none; color: var(--accent-color, #d01212); cursor: pointer; font-weight: 700; padding: 0;">Seleccionar Todo</button>
+          <span style="color: var(--text-muted);">|</span>
+          <button id="modal-filter-deselect-all" type="button" style="background: none; border: none; color: var(--text-muted); cursor: pointer; font-weight: 600; padding: 0;">Deseleccionar Todo</button>
+        </div>
+        <span id="modal-filter-selected-count" style="color: var(--text-muted); font-weight: 600;">0 seleccionados</span>
+      </div>
+
+      <!-- Lista de Opciones con Checkboxes -->
+      <div id="modal-filter-options-list" class="filter-options-list">
+        <!-- Opciones inyectadas dinámicamente -->
+      </div>
+
+      <!-- Botones de Acción -->
+      <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: auto; padding-top: 10px; border-top: 1px solid var(--panel-border);">
+        <button id="modal-filter-btn-clear" class="btn-action btn-secondary" style="padding: 6px 12px; font-size: 0.82rem;">
+          Limpiar Filtro
+        </button>
+        <button id="modal-filter-btn-apply" class="btn-action" style="padding: 6px 16px; font-size: 0.82rem;">
+          Aplicar Filtro
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lógica Principal -->
+  <script type="module">
+    import { isCurrentUserAdmin, onAuthStateChanged } from "./src/auth.js";
+    import { hasPermission } from "./src/accesscontrol.js";
+    import { db, doc, setDoc } from "./src/firebase.js";
+    import { syncGlobalPositionsFromFirebase, respaldarPosicionesUsuario } from "./src/sync.js";
+
+    // 10 Etapas del Camino Neocatecumenal
+    const ETAPAS_LIST = [
+      { value: "0", label: "Precatecumenado" },
+      { value: "1", label: "Primer Escrutinio" },
+      { value: "1.5", label: "SHEMA" },
+      { value: "2", label: "Segundo Escrutinio" },
+      { value: "3", label: "Iniciación a la Oración" },
+      { value: "4", label: "Traditio Symboli" },
+      { value: "5", label: "Redditio Symboli" },
+      { value: "6", label: "Padre Nuestro" },
+      { value: "7", label: "Elección" },
+      { value: "8", label: "Renovación de las Promesas Bautismales" }
+    ];
+
+    const COLUMN_LABELS = {
+      numero: "Número (N°)",
+      nombre: "Nombre del Canto",
+      categoria: "Categoría / Etapa",
+      acorde: "Acorde",
+      posacorde: "PosAcorde",
+      notas: "Notas del Canto",
+      favorito: "Favorito",
+      sw: "Caché SW"
+    };
+
+    let allSongs = [];
+    let chordPositionsDb = {};
+    let cachedUrlsSet = new Set();
+    let hiddenColumns = new Set(JSON.parse(localStorage.getItem('mant_hidden_columns') || '[]'));
+    let columnFilters = {}; // col -> Set of selected raw values
+    let currentContextCol = null;
+
+    // Favoritos Set
+    let favoritesSet = new Set();
+    try {
+      const savedFavs = localStorage.getItem('favorites');
+      if (savedFavs) favoritesSet = new Set(JSON.parse(savedFavs));
+    } catch(e) {}
+
+    // 1. Verificación de Seguridad y Permisos
+    function checkAccessSecurity() {
+      onAuthStateChanged((user) => {
+        const isAdmin = isCurrentUserAdmin();
+        const canAccess = isAdmin || hasPermission('page_mantcantos');
+        if (!canAccess) {
+          console.warn("Acceso no autorizado a Mantenimiento de Cantos. Redirigiendo a Inicio...");
+          window.location.replace('./index.html');
+        }
+        const backupBtn = document.getElementById('btn-backup-user-pos');
+        if (backupBtn) {
+          backupBtn.style.display = isAdmin ? 'inline-flex' : 'none';
+        }
+      });
+    }
+
+    // 2. Cargar Datos Principales
+    async function loadAllData() {
+      try {
+        // A. Cargar chord_positions.json
+        try {
+          const resPositions = await fetch('data/chord_positions.json');
+          if (resPositions.ok) {
+            chordPositionsDb = await resPositions.json();
+          }
+        } catch (e) {
+          console.warn("Error cargando data/chord_positions.json:", e);
+        }
+
+        // B. Cargar Service Worker Cache Keys
+        try {
+          cachedUrlsSet.clear();
+          const keys = await caches.keys();
+          const cacheName = keys.find(k => k.startsWith('resucito-cache-'));
+          if (cacheName) {
+            const cache = await caches.open(cacheName);
+            const cachedRequests = await cache.keys();
+            cachedRequests.forEach(r => {
+              const urlObj = new URL(r.url, window.location.href);
+              let path = urlObj.pathname;
+              if (path.startsWith('/')) path = path.substring(1);
+              cachedUrlsSet.add(path);
+              cachedUrlsSet.add(path.split('?')[0]);
+            });
+          }
+        } catch (e) {
+          console.warn("Error leyendo Service Worker Cache:", e);
+        }
+
+        // C. Sincronizar etapas desde Firebase
+        try {
+          await syncGlobalPositionsFromFirebase(true);
+        } catch (e) {}
+
+        // D. Cargar songs-index.json
+        const resSongs = await fetch('data/songs-index.json');
+        if (resSongs.ok) {
+          allSongs = await resSongs.json();
+        }
+
+        applyColumnVisibility();
+        renderTable();
+
+      } catch (err) {
+        console.error("Error al cargar datos en mantcantos:", err);
+        const tbody = document.getElementById('mant-table-body');
+        if (tbody) {
+          tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: #dc3545; padding: 20px;">Error al cargar datos: ${err.message}</td></tr>`;
+        }
+      }
+    }
+
+    // Helper: Extraer el valor representativo de una columna para un canto
+    function getSongColumnValue(song, col) {
+      const songId = song.id || '';
+      if (col === 'numero') return song.dbno ? song.dbno.toString() : 'S/N';
+      if (col === 'nombre') return song.title || '';
+      if (col === 'categoria') {
+        const stageVal = getSongStage(songId);
+        const stageObj = ETAPAS_LIST.find(e => e.value === stageVal);
+        return stageObj ? stageObj.label : 'Precatecumenado';
+      }
+      if (col === 'acorde') return song.acorde || '-';
+      if (col === 'posacorde') return chordPositionsDb[songId] ? 'Sí' : 'No';
+      if (col === 'notas') {
+        const notes = getSongNotes(songId);
+        return notes ? 'Con notas' : 'Sin notas';
+      }
+      if (col === 'favorito') return favoritesSet.has(songId) ? 'Favorito' : 'No favorito';
+      if (col === 'sw') return isSongInSWCache(songId) ? 'En caché' : 'Faltante';
+      return '';
+    }
+
+    // Helper: Determinar si el canto está en cache de SW
+    function isSongInSWCache(songId) {
+      if (!songId) return false;
+      const folder = songId.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+      const path1 = `${folder}/${songId}.json`;
+      return cachedUrlsSet.has(path1);
+    }
+
+    // Helper: Obtener notas del canto
+    function getSongNotes(songId) {
+      const n = localStorage.getItem(`notes_${songId}`);
+      return n ? n.trim() : '';
+    }
+
+    // Helper: Obtener etapa actual del canto
+    function getSongStage(songId) {
+      if (window.globalPositionsCache && window.globalPositionsCache[songId] && window.globalPositionsCache[songId].etapa !== undefined) {
+        return window.globalPositionsCache[songId].etapa.toString();
+      }
+      return "0"; // Precatecumenado por defecto
+    }
+
+    // Helper: Guardar etapa en Firebase y memoria
+    async function saveSongStage(songId, newStage) {
+      if (!window.globalPositionsCache) window.globalPositionsCache = {};
+      if (!window.globalPositionsCache[songId]) window.globalPositionsCache[songId] = {};
+      window.globalPositionsCache[songId].etapa = newStage;
+      localStorage.setItem('resucito_global_positions_cache', JSON.stringify(window.globalPositionsCache));
+
+      try {
+        const docRef = doc(db, "global_positions", songId);
+        await setDoc(docRef, { etapa: newStage }, { merge: true });
+        console.log(`Etapa actualizada para ${songId} -> ${newStage}`);
+      } catch (e) {
+        console.warn("Error guardando etapa en Firebase:", e);
+      }
+    }
+
+    // Helper: Alternar favorito
+    function toggleSongFavorite(songId, isFav) {
+      if (isFav) {
+        favoritesSet.add(songId);
+      } else {
+        favoritesSet.delete(songId);
+      }
+      localStorage.setItem('favorites', JSON.stringify(Array.from(favoritesSet)));
+      if (window.favorites) {
+        if (isFav) window.favorites.add(songId);
+        else window.favorites.delete(songId);
+      }
+      if (typeof window.guardarFavoritosEnNube === 'function') {
+        window.guardarFavoritosEnNube([...favoritesSet]);
+      }
+    }
+
+    // 3. Renderizar Tabla con Filtros
+    function renderTable() {
+      const tbody = document.getElementById('mant-table-body');
+      const countBadge = document.getElementById('mant-count-badge');
+      const globalSearch = (document.getElementById('mant-search-input')?.value || '').toLowerCase().trim();
+
+      if (!tbody) return;
+
+      const filtered = allSongs.filter(song => {
+        const songId = song.id || '';
+        const title = (song.title || '').toLowerCase();
+        const dbno = (song.dbno || '').toString().toLowerCase();
+        const chord = (song.acorde || '').toLowerCase();
+        const notes = getSongNotes(songId).toLowerCase();
+        const stageVal = getSongStage(songId);
+        const stageObj = ETAPAS_LIST.find(e => e.value === stageVal);
+        const stageLabel = (stageObj ? stageObj.label : '').toLowerCase();
+
+        // Filtro Global
+        if (globalSearch) {
+          const matchGlobal = title.includes(globalSearch) ||
+                              dbno.includes(globalSearch) ||
+                              chord.includes(globalSearch) ||
+                              notes.includes(globalSearch) ||
+                              stageLabel.includes(globalSearch);
+          if (!matchGlobal) return false;
+        }
+
+        // Filtros específicos por columna (usando el conjunto de valores seleccionados)
+        for (const [col, selectedSet] of Object.entries(columnFilters)) {
+          if (!selectedSet || selectedSet.size === 0) continue;
+          const val = getSongColumnValue(song, col);
+          if (!selectedSet.has(val)) return false;
+        }
+
+        return true;
+      });
+
+      if (countBadge) {
+        countBadge.innerText = `${filtered.length} de ${allSongs.length} cantos`;
+      }
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; padding: 30px; color: var(--text-muted);">No se encontraron cantos con los criterios actuales.</td></tr>`;
+        return;
+      }
+
+      const rowsHtml = filtered.map(song => {
+        const songId = song.id;
+        const currentStage = getSongStage(songId);
+        const hasPos = !!chordPositionsDb[songId];
+        const notes = getSongNotes(songId);
+        const isFav = favoritesSet.has(songId);
+        const inSW = isSongInSWCache(songId);
+
+        const stageSelectOptions = ETAPAS_LIST.map(e => `
+          <option value="${e.value}" ${e.value === currentStage ? 'selected' : ''}>${e.label}</option>
+        `).join('');
+
+        return `
+          <tr data-song-id="${songId}">
+            <!-- Número del Canto -->
+            <td data-col="numero" style="text-align: center;">
+              <span class="badge-number">${song.dbno ? `#${song.dbno}` : 'S/N'}</span>
+            </td>
+
+            <!-- Nombre del Canto -->
+            <td data-col="nombre">
+              <div style="font-weight: 700; color: var(--text-color);">
+                <a href="index.html#canto=${songId}" style="text-decoration: none; color: inherit;" title="Abrir canto">
+                  ${song.title}
+                </a>
+              </div>
+              <div style="font-size: 0.72rem; color: var(--text-muted);">${songId}</div>
+            </td>
+
+            <!-- Categoría / Etapa -->
+            <td data-col="categoria">
+              <select class="stage-select" data-song-id="${songId}">
+                ${stageSelectOptions}
+              </select>
+            </td>
+
+            <!-- Acorde -->
+            <td data-col="acorde" style="text-align: center;">
+              <span class="badge-chord">${song.acorde || '-'}</span>
+            </td>
+
+            <!-- PosAcorde -->
+            <td data-col="posacorde" style="text-align: center;">
+              ${hasPos
+                ? `<span class="badge-pos si"><span class="material-symbols-outlined" style="font-size: 0.9rem;">check</span> Sí</span>`
+                : `<span class="badge-pos no"><span class="material-symbols-outlined" style="font-size: 0.9rem;">close</span> No</span>`
+              }
+            </td>
+
+            <!-- Notas del Canto -->
+            <td data-col="notas">
+              <div class="notes-snippet ${notes ? 'has-notes' : ''}" title="${notes ? notes.replace(/"/g, '&quot;') : 'Sin notas'}">
+                ${notes ? notes : '<span style="color: var(--text-muted); opacity: 0.6;">(Sin notas)</span>'}
+              </div>
+            </td>
+
+            <!-- Favorito -->
+            <td data-col="favorito" style="text-align: center;">
+              <input type="checkbox" class="fav-checkbox" data-song-id="${songId}" ${isFav ? 'checked' : ''} title="${isFav ? 'Quitar de favoritos' : 'Marcar favorito'}">
+            </td>
+
+            <!-- Cargado en Service Worker -->
+            <td data-col="sw" style="text-align: center;">
+              ${inSW
+                ? `<span class="badge-sw cached" title="Cargado en caché offline"><span class="material-symbols-outlined">done</span></span>`
+                : `<span class="badge-sw missing" title="No está en caché offline"><span class="material-symbols-outlined">close</span></span>`
+              }
+            </td>
+          </tr>
+        `;
+      }).join('');
+
+      tbody.innerHTML = rowsHtml;
+
+      // Listeners para cambio de etapa
+      tbody.querySelectorAll('.stage-select').forEach(sel => {
+        sel.addEventListener('change', async (e) => {
+          const songId = sel.dataset.songId;
+          const newStage = e.target.value;
+          await saveSongStage(songId, newStage);
+        });
+      });
+
+      // Listeners para favoritos
+      tbody.querySelectorAll('.fav-checkbox').forEach(cb => {
+        cb.addEventListener('change', (e) => {
+          const songId = cb.dataset.songId;
+          toggleSongFavorite(songId, e.target.checked);
+        });
+      });
+
+      applyColumnVisibility();
+    }
+
+    // 4. Control de Visibilidad de Columnas
+    function applyColumnVisibility() {
+      const allCols = ['numero', 'nombre', 'categoria', 'acorde', 'posacorde', 'notas', 'favorito', 'sw'];
+      allCols.forEach(col => {
+        const isHidden = hiddenColumns.has(col);
+        const th = document.querySelector(`th[data-col="${col}"]`);
+        if (th) th.style.display = isHidden ? 'none' : '';
+
+        const tds = document.querySelectorAll(`td[data-col="${col}"]`);
+        tds.forEach(td => td.style.display = isHidden ? 'none' : '');
+      });
+
+      // Actualizar indicadores de filtro en cabeceras
+      allCols.forEach(col => {
+        const ind = document.querySelector(`.filter-indicator[data-col-indicator="${col}"]`);
+        if (ind) {
+          ind.style.display = columnFilters[col] ? 'inline-block' : 'none';
+        }
+      });
+
+      // Barra de columnas ocultas
+      const hiddenBar = document.getElementById('hidden-columns-bar');
+      const hiddenListEl = document.getElementById('hidden-columns-list');
+      if (hiddenBar && hiddenListEl) {
+        if (hiddenColumns.size > 0) {
+          const names = Array.from(hiddenColumns).map(c => COLUMN_LABELS[c] || c).join(', ');
+          hiddenListEl.innerText = names;
+          hiddenBar.style.display = 'flex';
+        } else {
+          hiddenBar.style.display = 'none';
+        }
+      }
+
+      localStorage.setItem('mant_hidden_columns', JSON.stringify(Array.from(hiddenColumns)));
+    }
+
+    function hideColumn(colName) {
+      if (!colName) return;
+      hiddenColumns.add(colName);
+      applyColumnVisibility();
+    }
+
+    function restoreAllColumns() {
+      hiddenColumns.clear();
+      applyColumnVisibility();
+    }
+
+    // 5. Menú Contextual (Clic Derecho en Cabeceras)
+    const contextMenu = document.getElementById('col-context-menu');
+    const headerRow = document.getElementById('mant-table-header-row');
+
+    if (headerRow) {
+      headerRow.addEventListener('contextmenu', (e) => {
+        const th = e.target.closest('th');
+        if (!th) return;
+        e.preventDefault();
+
+        currentContextCol = th.dataset.col;
+        if (!currentContextCol) return;
+
+        // Posicionar menú
+        const x = Math.min(e.clientX, window.innerWidth - 210);
+        const y = Math.min(e.clientY, window.innerHeight - 150);
+
+        contextMenu.style.left = `${x}px`;
+        contextMenu.style.top = `${y}px`;
+        contextMenu.style.display = 'block';
+      });
+    }
+
+    // Cerrar menú al hacer clic afuera
+    document.addEventListener('click', (e) => {
+      if (contextMenu && !contextMenu.contains(e.target)) {
+        contextMenu.style.display = 'none';
+      }
+    });
+
+    document.getElementById('ctx-hide-col')?.addEventListener('click', () => {
+      if (currentContextCol) {
+        hideColumn(currentContextCol);
+      }
+      contextMenu.style.display = 'none';
+    });
+
+    document.getElementById('ctx-show-all-cols')?.addEventListener('click', () => {
+      restoreAllColumns();
+      contextMenu.style.display = 'none';
+    });
+
+    document.getElementById('btn-restore-columns')?.addEventListener('click', () => {
+      restoreAllColumns();
+    });
+
+    // 6. Filtrar por Columna (Modal con Selección de Opciones y Checkboxes)
+    const modalFilter = document.getElementById('modal-filter-col');
+    const modalFilterTitle = document.getElementById('modal-filter-title');
+    const modalFilterDesc = document.getElementById('modal-filter-desc');
+    const modalFilterSearch = document.getElementById('modal-filter-search');
+    const modalFilterOptionsList = document.getElementById('modal-filter-options-list');
+    const modalFilterSelectedCount = document.getElementById('modal-filter-selected-count');
+    const modalFilterSelectAll = document.getElementById('modal-filter-select-all');
+    const modalFilterDeselectAll = document.getElementById('modal-filter-deselect-all');
+    const modalFilterClose = document.getElementById('modal-filter-close');
+    const modalFilterApply = document.getElementById('modal-filter-btn-apply');
+    const modalFilterClear = document.getElementById('modal-filter-btn-clear');
+
+    let currentColumnUniqueOptions = []; // Array of { val, count }
+    let tempSelectedOptions = new Set();
+
+    function updateFilterModalSelectedCount() {
+      if (modalFilterSelectedCount) {
+        modalFilterSelectedCount.innerText = `${tempSelectedOptions.size} de ${currentColumnUniqueOptions.length} seleccionados`;
+      }
+    }
+
+    function renderFilterModalOptions(searchQuery = '') {
+      if (!modalFilterOptionsList) return;
+      const q = searchQuery.toLowerCase().trim();
+      const filteredOptions = currentColumnUniqueOptions.filter(opt => {
+        if (!q) return true;
+        return opt.val.toLowerCase().includes(q);
+      });
+
+      if (filteredOptions.length === 0) {
+        modalFilterOptionsList.innerHTML = `<div style="padding: 16px; text-align: center; color: var(--text-muted); font-size: 0.82rem;">No hay opciones que coincidan</div>`;
+        return;
+      }
+
+      modalFilterOptionsList.innerHTML = filteredOptions.map(opt => {
+        const isChecked = tempSelectedOptions.has(opt.val);
+        const safeVal = opt.val.replace(/"/g, '&quot;');
+        return `
+          <div class="filter-option-item" data-val="${safeVal}">
+            <label class="filter-option-label">
+              <input type="checkbox" class="filter-option-checkbox" data-val="${safeVal}" ${isChecked ? 'checked' : ''} style="width: 16px; height: 16px; accent-color: var(--accent-color, #d01212); cursor: pointer;">
+              <span>${opt.val}</span>
+            </label>
+            <span class="filter-option-count">${opt.count}</span>
+          </div>
+        `;
+      }).join('');
+
+      // Listeners de checkboxes
+      modalFilterOptionsList.querySelectorAll('.filter-option-checkbox').forEach(cb => {
+        cb.addEventListener('change', (e) => {
+          const v = cb.dataset.val;
+          if (cb.checked) tempSelectedOptions.add(v);
+          else tempSelectedOptions.delete(v);
+          updateFilterModalSelectedCount();
+        });
+      });
+    }
+
+    document.getElementById('ctx-filter-col')?.addEventListener('click', () => {
+      contextMenu.style.display = 'none';
+      if (!currentContextCol) return;
+
+      const colTitle = COLUMN_LABELS[currentContextCol] || currentContextCol;
+      modalFilterTitle.innerHTML = `<span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">filter_alt</span> Filtrar por ${colTitle}`;
+      modalFilterDesc.innerText = `Selecciona los valores de "${colTitle}" que deseas visualizar en la tabla:`;
+      if (modalFilterSearch) modalFilterSearch.value = '';
+
+      // Obtener todas las opciones únicas y sus conteos para esta columna
+      const countsMap = new Map();
+      allSongs.forEach(s => {
+        const val = getSongColumnValue(s, currentContextCol);
+        countsMap.set(val, (countsMap.get(val) || 0) + 1);
+      });
+
+      currentColumnUniqueOptions = Array.from(countsMap.entries()).map(([val, count]) => ({ val, count }));
+      
+      // Ordenar opciones naturalmente (si son números, numéricamente)
+      currentColumnUniqueOptions.sort((a, b) => {
+        const numA = parseInt(a.val.replace(/\D/g, ''), 10);
+        const numB = parseInt(b.val.replace(/\D/g, ''), 10);
+        if (!isNaN(numA) && !isNaN(numB) && currentContextCol === 'numero') {
+          return numA - numB;
+        }
+        return a.val.localeCompare(b.val, 'es', { numeric: true });
+      });
+
+      // Inicializar selección temporal con el filtro previo o con todos
+      if (columnFilters[currentContextCol] && columnFilters[currentContextCol].size > 0) {
+        tempSelectedOptions = new Set(columnFilters[currentContextCol]);
+      } else {
+        tempSelectedOptions = new Set(currentColumnUniqueOptions.map(o => o.val));
+      }
+
+      renderFilterModalOptions();
+      updateFilterModalSelectedCount();
+
+      modalFilter.style.display = 'flex';
+      setTimeout(() => modalFilterSearch?.focus(), 50);
+    });
+
+    modalFilterSearch?.addEventListener('input', () => {
+      renderFilterModalOptions(modalFilterSearch.value);
+    });
+
+    modalFilterSelectAll?.addEventListener('click', () => {
+      currentColumnUniqueOptions.forEach(o => tempSelectedOptions.add(o.val));
+      renderFilterModalOptions(modalFilterSearch ? modalFilterSearch.value : '');
+      updateFilterModalSelectedCount();
+    });
+
+    modalFilterDeselectAll?.addEventListener('click', () => {
+      tempSelectedOptions.clear();
+      renderFilterModalOptions(modalFilterSearch ? modalFilterSearch.value : '');
+      updateFilterModalSelectedCount();
+    });
+
+    modalFilterClose?.addEventListener('click', () => {
+      modalFilter.style.display = 'none';
+    });
+
+    modalFilterClear?.addEventListener('click', () => {
+      if (currentContextCol) {
+        delete columnFilters[currentContextCol];
+      }
+      modalFilter.style.display = 'none';
+      renderTable();
+    });
+
+    modalFilterApply?.addEventListener('click', () => {
+      if (currentContextCol) {
+        // Si seleccionó todas las opciones, equivale a no filtrar esa columna
+        if (tempSelectedOptions.size === currentColumnUniqueOptions.length) {
+          delete columnFilters[currentContextCol];
+        } else {
+          columnFilters[currentContextCol] = new Set(tempSelectedOptions);
+        }
+      }
+      modalFilter.style.display = 'none';
+      renderTable();
+    });
+
+    // 7. Buscador General
+    const searchInput = document.getElementById('mant-search-input');
+    const searchClear = document.getElementById('mant-search-clear');
+
+    searchInput?.addEventListener('input', () => {
+      if (searchClear) searchClear.style.display = searchInput.value ? 'block' : 'none';
+      renderTable();
+    });
+
+    searchClear?.addEventListener('click', () => {
+      searchInput.value = '';
+      searchClear.style.display = 'none';
+      renderTable();
+    });
+
+    // 8. Botón Refrescar
+    document.getElementById('btn-refresh-data')?.addEventListener('click', () => {
+      loadAllData();
+    });
+
+    // 9. Botón Respaldar Posiciones de Usuario
+    document.getElementById('btn-backup-user-pos')?.addEventListener('click', async () => {
+      const btn = document.getElementById('btn-backup-user-pos');
+      try {
+        btn.disabled = true;
+        btn.innerHTML = '<span class="material-symbols-outlined">sync</span> Respaldando...';
+        const result = await respaldarPosicionesUsuario();
+        
+        let msg = `✅ Respaldo de Posiciones de Usuario completado:\n\n`;
+        msg += `• Total de cantos encontrados en /usuarios/USUARIO/posiciones/: ${result.total}\n`;
+        msg += `• Ya presentes en Global: ${result.alreadyInGlobal.length}\n`;
+        msg += `• Únicos en Usuario (no estaban en global): ${result.onlyInUser.length}\n`;
+        if (result.onlyInUser.length > 0) {
+          msg += `  (Cantos únicos: ${result.onlyInUser.join(', ')})\n`;
+        }
+        if (result.savedOnDisk) {
+          msg += `\n💾 Guardado exitosamente en: data/chord_positions-backup.json`;
+        }
+        msg += `\n📥 Se ha descargado también el archivo en tu navegador.`;
+
+        alert(msg);
+      } catch (err) {
+        console.error('Error al respaldar posiciones:', err);
+        alert('Error al respaldar: ' + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">save_as</span> Respaldar Posiciones';
+      }
+    });
+
+    // Inicializar
+    checkAccessSecurity();
+    loadAllData();
+  </script>
+  <script type="module" src="src/navegador.js?v=139"></script>
+</body>
+</html>

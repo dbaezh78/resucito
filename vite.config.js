@@ -20,7 +20,8 @@ export default defineConfig({
         main: path.resolve(__dirname, 'index.html'),
         perfil: path.resolve(__dirname, 'perfil.html'),
         preparar: path.resolve(__dirname, 'preparar.html'),
-        expancion: path.resolve(__dirname, 'expancion.html')
+        expancion: path.resolve(__dirname, 'expancion.html'),
+        mantcantos: path.resolve(__dirname, 'mantcantos.html')
       }
     }
   },
@@ -119,6 +120,29 @@ export default defineConfig({
               res.setHeader('Content-Type', 'application/json');
               res.end(JSON.stringify({ error: e.message }));
             }
+          } else if (req.url === '/api/save-backup-positions' && req.method === 'POST') {
+            let body = '';
+            req.on('data', chunk => {
+              body += chunk;
+            });
+            req.on('end', () => {
+              try {
+                const data = JSON.parse(body);
+                const filePath = path.resolve(__dirname, 'data', 'chord_positions-backup.json');
+                const dirPath = path.dirname(filePath);
+                if (!fs.existsSync(dirPath)) {
+                  fs.mkdirSync(dirPath, { recursive: true });
+                }
+                fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
+                console.log(`[Server] Guardado archivo de respaldo: data/chord_positions-backup.json con ${Object.keys(data).length} cantos.`);
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ success: true, count: Object.keys(data).length }));
+              } catch (e) {
+                res.statusCode = 500;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ error: e.message }));
+              }
+            });
           } else {
             next();
           }

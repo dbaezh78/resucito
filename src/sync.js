@@ -75,46 +75,6 @@ export async function cargarNotaDesdeNube(cantoId) {
   return null;
 }
 
-// Sincroniza posiciones de acordes personalizadas
-export async function guardarPosicionesEnNube(cantoId, posiciones) {
-  const user = auth.currentUser;
-  if (!user) return;
-  
-  try {
-    const docRef = doc(db, "usuarios", user.uid, "posiciones", cantoId);
-    // Firestore no permite arrays anidados: serializamos cada línea como string JSON
-    await setDoc(docRef, {
-      lizq: serializarLineas(posiciones.lizq),
-      lder: serializarLineas(posiciones.lder),
-      ultimaActualizacion: new Date()
-    });
-    console.log(`☁️ [Firebase] Posiciones personalizadas guardadas para el canto ${cantoId}`);
-  } catch (e) {
-    console.warn("⚠️ [Firebase] No se pudieron guardar posiciones (permisos/offline):", e.message || e);
-  }
-}
-
-// Carga posiciones de acordes personalizadas
-export async function cargarPosicionesDesdeNube(cantoId) {
-  const user = auth.currentUser;
-  if (!user) return null;
-  
-  try {
-    const docRef = doc(db, "usuarios", user.uid, "posiciones", cantoId);
-    const docSnap = await getDoc(docRef);
-    if (docSnap.exists()) {
-      const data = docSnap.data();
-      return {
-        lizq: deserializarLineas(data.lizq),
-        lder: deserializarLineas(data.lder)
-      };
-    }
-  } catch (e) {
-    console.warn("⚠️ [Firebase] No se pudieron cargar posiciones (permisos/offline):", e.message || e);
-  }
-  return null;
-}
-
 // Convierte las líneas a un array de strings JSON (serialización plana para Firestore)
 function serializarLineas(lines) {
   if (!Array.isArray(lines)) return [];
@@ -130,7 +90,7 @@ function deserializarLineas(lines) {
   });
 }
 
-// Sincroniza posiciones globales (Administrador)
+// Sincroniza posiciones globales (Administrador o Edición oficial)
 export async function publicarPosicionesGlobales(cantoId, posiciones) {
   try {
     const docRef = doc(db, "global_positions", cantoId);
@@ -141,8 +101,127 @@ export async function publicarPosicionesGlobales(cantoId, posiciones) {
       ultimaActualizacion: new Date()
     });
     console.log(`☁️ [Firebase Admin] Posiciones globales publicadas para el canto ${cantoId}`);
+    
+    // Actualizar también en caché en memoria
+    if (!window.globalPositionsCache) window.globalPositionsCache = {};
+    window.globalPositionsCache[cantoId] = {
+      lizq: serializarLineas(posiciones.lizq),
+      lder: serializarLineas(posiciones.lder)
+    };
   } catch (e) {
     console.warn("⚠️ [Firebase Admin] No se pudieron publicar posiciones globales (permisos/offline):", e.message || e);
+  }
+}
+
+// Guarda posiciones de acordes directamente en global_positions (ÚNICA FUENTE DE VERDAD)
+export async function guardarPosicionesEnNube(cantoId, posiciones) {
+  const user = auth.currentUser;
+  if (!user) return;
+  // Ahora todas las posiciones de acordes se guardan directamente en global_positions
+  await publicarPosicionesGlobales(cantoId, posiciones);
+}
+
+// Carga posiciones de acordes personalizadas (DESCONTINUADA: ahora sólo lee global_positions)
+export async function cargarPosicionesDesdeNube(cantoId) {
+  // Descontinuado el uso de /usuarios/{uid}/posiciones/ para evitar conflictos de sobreescritura
+  return null;
+}
+
+// Descarga y respalda todas las posiciones de /usuarios/{uid}/posiciones/ en chord_positions-backup.json
+export async function respaldarPosicionesUsuario() {
+  const user = auth.currentUser;
+  if (!user) {
+    throw new Error("Debes iniciar sesión para acceder a las posiciones de tu usuario en Firebase.");
+  }
+
+  try {
+    const colRef = collection(db, "usuarios", user.uid, "posiciones");
+    const snapshot = await getDocs(colRef);
+    
+    if (snapshot.empty) {
+      return {
+        total: 0,
+        songs: {},
+        onlyInUser: [],
+        alreadyInGlobal: [],
+        message: "No se encontraron cantos en /usuarios/" + user.uid + "/posiciones/"
+      };
+    }
+
+    const backupData = {};
+    const userSongIds = [];
+
+    snapshot.forEach(docSnap => {
+      const cantoId = docSnap.id;
+      const data = docSnap.data();
+      userSongIds.push(cantoId);
+      backupData[cantoId] = {
+        lizq: deserializarLineas(data.lizq),
+        lder: deserializarLineas(data.lder)
+      };
+    });
+
+    // Comparar contra global_positions / chord_positions.json
+    let globalKeys = new Set();
+    if (window.globalPositionsCache) {
+      globalKeys = new Set(Object.keys(window.globalPositionsCache));
+    }
+    // Si defaultChordPositions está disponible en ventana
+    if (window.defaultChordPositions) {
+      Object.keys(window.defaultChordPositions).forEach(k => globalKeys.add(k));
+    }
+
+    const onlyInUser = [];
+    const alreadyInGlobal = [];
+
+    userSongIds.forEach(id => {
+      if (globalKeys.has(id)) {
+        alreadyInGlobal.push(id);
+      } else {
+        onlyInUser.push(id);
+      }
+    });
+
+    // 1. Enviar al endpoint local de Vite para guardarlo en data/chord_positions-backup.json
+    let savedOnDisk = false;
+    try {
+      const res = await fetch('/api/save-backup-positions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(backupData)
+      });
+      if (res.ok) {
+        savedOnDisk = true;
+      }
+    } catch (e) {
+      console.warn("⚠️ Servidor local no disponible para escribir directamente en disco:", e);
+    }
+
+    // 2. Disparar también la descarga en el navegador como archivo .json
+    try {
+      const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'chord_positions-backup.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      console.warn("⚠️ No se pudo disparar la descarga automática:", e);
+    }
+
+    return {
+      total: userSongIds.length,
+      songs: backupData,
+      onlyInUser,
+      alreadyInGlobal,
+      savedOnDisk
+    };
+  } catch (err) {
+    console.error("Error al respaldar posiciones de usuario:", err);
+    throw err;
   }
 }
 

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visor y Extractor de Posiciones de Usuario</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #f4f6f8;
+      color: #212529;
+    }
+    .card {
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+    h1 { margin-top: 0; color: #8b0000; font-size: 1.4rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      background: #8b0000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+    .btn:disabled { background: #bbb; cursor: not-allowed; }
+    .btn-secondary { background: #0066cc; }
+    .btn-copy { background: #28a745; }
+    .status-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+    .status-badge.ok { background: #e6f4ea; color: #137333; }
+    .status-badge.waiting { background: #fef7e0; color: #b06000; }
+    #log {
+      margin-top: 14px;
+      background: #1e1e1e;
+      color: #00ff66;
+      padding: 14px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      white-space: pre-wrap;
+      max-height: 220px;
+      overflow-y: auto;
+      display: none;
+    }
+    #preview-container {
+      display: none;
+      margin-top: 18px;
+    }
+    textarea {
+      width: 100%;
+      height: 380px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 0.82rem;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #fafafa;
+      box-sizing: border-box;
+      white-space: pre;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+    .comparison-table th, .comparison-table td {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .comparison-table th { background: #eee; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+    .badge-ok { background: #d4edda; color: #155724; }
+    .badge-diff { background: #fff3cd; color: #856404; }
+    .badge-new { background: #cce5ff; color: #004085; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🔍 Visor y Extractor de Posiciones de Usuario</h1>
+    <p>Colección objetivo en Firebase Firestore:</p>
+    <code style="background: #eee; padding: 6px 10px; border-radius: 6px; display: block; margin-bottom: 14px; font-weight: bold;">
+      /usuarios/i7n3X441GQPufALUMJsRTluIFW32/posiciones/
+    </code>
+
+    <div id="auth-status" class="status-badge waiting">Verificando sesión de Firebase...</div>
+
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
+      <button id="btn-login" class="btn btn-secondary" style="display: none;">Iniciar Sesión con Google</button>
+      <button id="btn-extract" class="btn" style="display: none;">▶️ Extraer y Visualizar Posiciones</button>
+      <button id="btn-download" class="btn" style="background: #28a745; display: none;">💾 Descargar chord_positions-backup.json</button>
+      <button id="btn-copy" class="btn btn-copy" style="background: #6c757d; display: none;">📋 Copiar JSON al Portapapeles</button>
+      <button id="btn-clean" class="btn" style="background: #dc3545; display: none;" title="Elimina los documentos de tu subcolección personal para que solo se use global_positions">🗑️ Vaciar /usuarios/.../posiciones</button>
+    </div>
+
+    <div id="log"></div>
+  </div>
+
+  <div id="preview-container" class="card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <h2 style="margin: 0; font-size: 1.15rem; color: #8b0000;">
+        Contenido JSON Generado (<span id="cantos-count">0</span> cantos encontrados)
+      </h2>
+    </div>
+    <p style="font-size: 0.85rem; color: #666; margin-top: 0;">
+      Este JSON tiene exactamente la misma estructura de <code>data/chord_positions.json</code>.
+    </p>
+
+    <div id="comparison-summary" style="margin-bottom: 16px;"></div>
+
+    <div id="diff-details-container" style="margin-bottom: 20px; display: none;">
+      <h3 style="font-size: 1rem; color: #856404; margin-bottom: 8px;">
+        ⚠️ Cantos con diferencias de posición entre tu Usuario y Global:
+      </h3>
+      <div id="diff-list"></div>
+    </div>
+
+    <h3 style="font-size: 0.95rem; color: #555; margin-bottom: 6px;">JSON Completo:</h3>
+    <textarea id="json-output" readonly></textarea>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+    import { getFirestore, collection, getDocs, doc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCnUXqn8MXgy00Bk1lb1D_n-pxlZmcJ124",
+      authDomain: "cristoresucito.firebaseapp.com",
+      projectId: "cristoresucito",
+      storageBucket: "cristoresucito.firebasestorage.app",
+      messagingSenderId: "558116648057",
+      appId: "1:558116648057:web:15db4912b0a840daa7d0a8"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const provider = new GoogleAuthProvider();
+
+    const authStatus = document.getElementById('auth-status');
+    const btnLogin = document.getElementById('btn-login');
+    const btnExtract = document.getElementById('btn-extract');
+    const btnDownload = document.getElementById('btn-download');
+    const btnCopy = document.getElementById('btn-copy');
+    const logBox = document.getElementById('log');
+    const previewContainer = document.getElementById('preview-container');
+    const jsonOutput = document.getElementById('json-output');
+    const cantosCount = document.getElementById('cantos-count');
+    const compSummary = document.getElementById('comparison-summary');
+
+    let currentBackupData = null;
+    let globalPositionsDb = null;
+
+    // Cargar chord_positions.json global actual para comparar
+    try {
+      fetch('data/chord_positions.json').then(r => r.json()).then(data => {
+        globalPositionsDb = data;
+      }).catch(() => {});
+    } catch(e) {}
+
+    function log(msg) {
+      logBox.style.display = 'block';
+      logBox.textContent += msg + '\n';
+      logBox.scrollTop = logBox.scrollHeight;
+    }
+
+    const ADMIN_EMAILS = ['dbaezh78@gmail.com'];
+
+    function deserializarLineas(lines) {
+      if (!Array.isArray(lines)) return [];
+      return lines.map(item => {
+        try { return typeof item === 'string' ? JSON.parse(item) : item; }
+        catch (e) { return item; }
+      });
+    }
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const userEmail = (user.email || '').toLowerCase().trim();
+        if (!ADMIN_EMAILS.includes(userEmail)) {
+          authStatus.className = 'status-badge';
+          authStatus.style.background = '#f8d7da';
+          authStatus.style.color = '#721c24';
+          authStatus.textContent = `Acceso denegado: ${user.email} no tiene permisos administrativos.`;
+          btnLogin.style.display = 'none';
+          btnExtract.style.display = 'none';
+          btnDownload.style.display = 'none';
+          btnCopy.style.display = 'none';
+          previewContainer.style.display = 'none';
+          return;
+        }
+
+        authStatus.className = 'status-badge ok';
+        authStatus.textContent = `Sesión iniciada: ${user.email} (UID: ${user.uid}) - Administrador Autorizado`;
+        btnLogin.style.display = 'none';
+        btnExtract.style.display = 'inline-flex';
+      } else {
+        authStatus.className = 'status-badge waiting';
+        authStatus.textContent = 'No hay sesión activa. Inicia sesión con la cuenta de administrador.';
+        btnLogin.style.display = 'inline-flex';
+        btnExtract.style.display = 'none';
+        btnDownload.style.display = 'none';
+        btnCopy.style.display = 'none';
+        previewContainer.style.display = 'none';
+      }
+    });
+
+    btnLogin.addEventListener('click', async () => {
+      try {
+        await signInWithPopup(auth, provider);
+      } catch (e) {
+        alert("Error al iniciar sesión: " + e.message);
+      }
+    });
+
+    btnExtract.addEventListener('click', async () => {
+      const user = auth.currentUser;
+      if (!user) return;
+      const userEmail = (user.email || '').toLowerCase().trim();
+      if (!ADMIN_EMAILS.includes(userEmail)) {
+        alert("Acceso denegado.");
+        return;
+      }
+
+      btnExtract.disabled = true;
+      btnExtract.textContent = "Extrayendo cantos...";
+      logBox.textContent = "";
+      log(`Conectando a /usuarios/${user.uid}/posiciones/ ...`);
+
+      try {
+        const colRef = collection(db, "usuarios", user.uid, "posiciones");
+        const snap = await getDocs(colRef);
+
+        log(`Total documentos encontrados en la colección: ${snap.size}`);
+
+        const backupDb = {};
+        snap.forEach(docSnap => {
+          const songId = docSnap.id;
+          const data = docSnap.data();
+          backupDb[songId] = {
+            lizq: deserializarLineas(data.lizq),
+            lder: deserializarLineas(data.lder)
+          };
+          log(`  ✓ Canto: ${songId}`);
+        });
+
+        currentBackupData = backupDb;
+        const totalKeys = Object.keys(backupDb).length;
+        cantosCount.textContent = totalKeys;
+
+        const jsonString = JSON.stringify(backupDb, null, 2);
+        jsonOutput.value = jsonString;
+        previewContainer.style.display = 'block';
+        btnDownload.style.display = 'inline-flex';
+        btnCopy.style.display = 'inline-flex';
+        if (totalKeys > 0) {
+          btnClean.style.display = 'inline-flex';
+        }
+
+        // Realizar comparativa con global_positions
+        if (globalPositionsDb) {
+          let identicalCount = 0;
+          let diffCount = 0;
+          let onlyUserCount = 0;
+
+          const diffSongsList = [];
+
+          Object.keys(backupDb).forEach(id => {
+            if (!globalPositionsDb[id]) {
+              onlyUserCount++;
+            } else {
+              const uObj = backupDb[id];
+              const gObj = globalPositionsDb[id];
+              const uStr = JSON.stringify(uObj);
+              const gStr = JSON.stringify(gObj);
+              if (uStr === gStr) {
+                identicalCount++;
+              } else {
+                diffCount++;
+                // Comparar línea por línea y acorde por acorde
+                const diffLines = [];
+                ['lizq', 'lder'].forEach(side => {
+                  const uSide = uObj[side] || [];
+                  const gSide = gObj[side] || [];
+                  const maxL = Math.max(uSide.length, gSide.length);
+                  for (let lIdx = 0; lIdx < maxL; lIdx++) {
+                    const uL = uSide[lIdx] || [];
+                    const gL = gSide[lIdx] || [];
+                    if (JSON.stringify(uL) !== JSON.stringify(gL)) {
+                      // Describir diferencias
+                      const sideName = side === 'lizq' ? 'Col. Izquierda' : 'Col. Derecha';
+                      diffLines.push({
+                        side: sideName,
+                        lineIdx: lIdx + 1,
+                        userChords: uL,
+                        globalChords: gL
+                      });
+                    }
+                  }
+                });
+                diffSongsList.push({ id, diffLines });
+              }
+            }
+          });
+
+          compSummary.innerHTML = `
+            <div style="display: flex; gap: 12px; margin-top: 8px; flex-wrap: wrap;">
+              <span class="badge badge-ok">✅ Idénticos a global: ${identicalCount}</span>
+              <span class="badge badge-diff">⚠️ Con diferencias de posición: ${diffCount}</span>
+              <span class="badge badge-new">🆕 Solo presentes en tu usuario: ${onlyUserCount}</span>
+            </div>
+          `;
+
+          const diffDetailsContainer = document.getElementById('diff-details-container');
+          const diffList = document.getElementById('diff-list');
+          if (diffCount > 0) {
+            diffDetailsContainer.style.display = 'block';
+            let html = '';
+            diffSongsList.forEach(item => {
+              html += `
+                <div style="background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 16px; margin-bottom: 12px;">
+                  <div style="font-weight: 800; font-size: 1rem; color: #856404; margin-bottom: 6px;">
+                    🎵 Canto ID: <code>${item.id}</code> (${item.diffLines.length} línea(s) con diferencias)
+                  </div>
+                  <table class="comparison-table">
+                    <thead>
+                      <tr>
+                        <th style="width: 140px;">Ubicación</th>
+                        <th>Posición en tu Usuario (/usuarios/.../posiciones)</th>
+                        <th>Posición en Global (/global_positions)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+              `;
+              item.diffLines.forEach(d => {
+                const formatChords = (chList) => {
+                  if (!Array.isArray(chList) || chList.length === 0) return '<em style="color: #999;">(Sin acordes)</em>';
+                  return chList.map(c => {
+                    const name = c.name || '';
+                    const type = c.type || '';
+                    const pos = c.pos !== undefined ? c.pos : '';
+                    return `<strong>${name}${type}</strong> en pos <code>${pos}</code>`;
+                  }).join(' | ');
+                };
+
+                html += `
+                  <tr>
+                    <td><strong>${d.side}</strong> L:${d.lineIdx}</td>
+                    <td style="color: #004085; background: #f0f7ff;">${formatChords(d.userChords)}</td>
+                    <td style="color: #721c24; background: #fff5f5;">${formatChords(d.globalChords)}</td>
+                  </tr>
+                `;
+              });
+              html += `
+                    </tbody>
+                  </table>
+                </div>
+              `;
+            });
+            diffList.innerHTML = html;
+          } else {
+            diffDetailsContainer.style.display = 'none';
+          }
+        }
+
+        log(`\n🎉 Extracción completada con éxito. Ya puedes ver el detalle de los cantos con diferencias arriba.`);
+      } catch (err) {
+        log(`❌ Error: ${err.message}`);
+        console.error(err);
+      } finally {
+        btnExtract.disabled = false;
+        btnExtract.textContent = "▶️ Extraer y Visualizar Posiciones";
+      }
+    });
+
+    btnDownload.addEventListener('click', () => {
+      if (!currentBackupData) return;
+      const blob = new Blob([JSON.stringify(currentBackupData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'chord_positions-backup.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+
+    const btnClean = document.getElementById('btn-clean');
+
+    btnCopy.addEventListener('click', () => {
+      jsonOutput.select();
+      navigator.clipboard.writeText(jsonOutput.value);
+      alert("¡JSON copiado al portapapeles con éxito!");
+    });
+
+    btnClean.addEventListener('click', async () => {
+      const user = auth.currentUser;
+      if (!user) return;
+      const userEmail = (user.email || '').toLowerCase().trim();
+      if (!ADMIN_EMAILS.includes(userEmail)) {
+        alert("Acceso denegado.");
+        return;
+      }
+
+      if (!currentBackupData || Object.keys(currentBackupData).length === 0) {
+        alert("Primero haz clic en 'Extraer y Visualizar Posiciones' para asegurar que los datos estén leídos y respaldados.");
+        return;
+      }
+
+      const totalDocs = Object.keys(currentBackupData).length;
+      const confirmar = confirm(`⚠️ ADVERTENCIA DE ELIMINACIÓN:\n\n¿Estás seguro de que deseas eliminar permanentemente los ${totalDocs} cantos de la colección personal:\n/usuarios/${user.uid}/posiciones/?\n\nAsegúrate de haber descargado o guardado 'chord_positions-backup.json' antes de continuar.\n\nAl borrarlos, la aplicación solo utilizará data/chord_positions.json (local) y /global_positions/ (nube).`);
+
+      if (!confirmar) return;
+
+      btnClean.disabled = true;
+      btnClean.textContent = "Eliminando documentos...";
+      log(`\nIniciando eliminación de ${totalDocs} documentos en /usuarios/${user.uid}/posiciones/ ...`);
+
+      try {
+        let deletedCount = 0;
+        for (const songId of Object.keys(currentBackupData)) {
+          const docRef = doc(db, "usuarios", user.uid, "posiciones", songId);
+          await deleteDoc(docRef);
+          deletedCount++;
+          log(`  🗑️ Eliminado: ${songId} (${deletedCount}/${totalDocs})`);
+        }
+
+        log(`\n✅ ¡Colección personal vaciada con éxito! Total eliminados: ${deletedCount}.`);
+        alert(`¡Completado! Se eliminaron los ${deletedCount} cantos de tu colección personal en Firebase.\nAhora la aplicación solo usará data/chord_positions.json y /global_positions/.`);
+        btnClean.style.display = 'none';
+      } catch (err) {
+        log(`❌ Error al eliminar: ${err.message}`);
+        alert("Error al eliminar: " + err.message);
+      } finally {
+        btnClean.disabled = false;
+        btnClean.textContent = "🗑️ Vaciar /usuarios/.../posiciones";
+      }
+    });
+  </script>
+</body>
+</html>

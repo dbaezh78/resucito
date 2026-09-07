@@ -82,7 +82,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "expanded",
-      "triggerLine": "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
+      "triggerLine": "DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
       "sC": "ta as",
       "lines": [
         {
@@ -141,7 +141,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
+      "triggerLine": "DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
       "sC": "ta as",
       "lines": [
         {
@@ -198,7 +198,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "A DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
+      "triggerLine": "DIOS TE SALVE, MARÍA, (Si,m,15)(Mi,m,225)",
       "sC": "ta as",
       "lines": [
         {

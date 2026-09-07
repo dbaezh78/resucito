@@ -162,6 +162,7 @@ import { hasPermission } from './accesscontrol.js';
             <a href="bitacora.html" id="nav-resucito-bitacora"><span class="material-symbols-outlined arrow-icon">history</span> Bitácora</a>
             <a href="/src/html/intro.html" id="nav-resucito-intro"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>
             <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
+            <a href="mantcantos.html" id="nav-resucito-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
           </div>
         </button>
@@ -938,6 +939,7 @@ import { hasPermission } from './accesscontrol.js';
       const canIntro = isAdmin || hasPermission('page_introduccion');
       const canPdf = isAdmin || hasPermission('page_resucito_pdf');
       const canInstalar = isAdmin || hasPermission('page_instalar_app');
+      const canMantcantos = isAdmin || hasPermission('page_mantcantos');
 
       // Botón Inicio en barra inferior
       const btnInicio = document.getElementById('btn-nav-inicio');
@@ -950,6 +952,7 @@ import { hasPermission } from './accesscontrol.js';
       const navResucitoBitacora = document.getElementById('nav-resucito-bitacora');
       const navResucitoIntro = document.getElementById('nav-resucito-intro');
       const navResucitoPdf = document.getElementById('nav-resucito-pdf');
+      const navResucitoMantcantos = document.getElementById('nav-resucito-mantcantos');
       const navResucitoInstalar = document.getElementById('installButton');
 
       if (navResucitoCamino) navResucitoCamino.style.display = canInicio ? 'flex' : 'none';
@@ -958,6 +961,7 @@ import { hasPermission } from './accesscontrol.js';
       if (navResucitoBitacora) navResucitoBitacora.style.display = canBitacora ? 'flex' : 'none';
       if (navResucitoIntro) navResucitoIntro.style.display = canIntro ? 'flex' : 'none';
       if (navResucitoPdf) navResucitoPdf.style.display = canPdf ? 'flex' : 'none';
+      if (navResucitoMantcantos) navResucitoMantcantos.style.display = canMantcantos ? 'flex' : 'none';
       if (navResucitoInstalar) navResucitoInstalar.style.display = canInstalar ? 'flex' : 'none';
 
       // Acciones en Popup de Cuenta
@@ -995,6 +999,9 @@ import { hasPermission } from './accesscontrol.js';
       } else if (pathname.includes('intro.html') && !hasPermission('page_introduccion')) {
         console.warn("Acceso denegado a intro.html por permisos. Redirigiendo a Inicio...");
         window.location.replace('/index.html');
+      } else if (pathname.includes('mantcantos.html') && !hasPermission('page_mantcantos')) {
+        console.warn("Acceso denegado a mantcantos.html por permisos. Redirigiendo a Inicio...");
+        window.location.replace('./index.html');
       }
     }
 

@@ -2166,7 +2166,7 @@ window.initAjustes = async function() {
       { label: 'Paises y Diócesis (JSON)', url: 'data/paises.json' }
     ];
 
-    const htmlsToParse = ['index.html', 'perfil.html', 'preparar.html', 'bitacora.html', 'expancion.html', 'cliturgico.html'];
+    const htmlsToParse = ['index.html', 'perfil.html', 'preparar.html', 'bitacora.html', 'expancion.html', 'cliturgico.html', 'mantcantos.html'];
     const jsSet = new Set();
     const cssSet = new Set();
     const assetSet = new Set();
