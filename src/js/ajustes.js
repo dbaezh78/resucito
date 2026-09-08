@@ -1679,10 +1679,17 @@ window.initAjustes = async function() {
     const canViewStatus = isAdmin || hasPermission('view_status');
     const canManageInspection = isAdmin || hasPermission('manage_page_inspection');
     const canViewSongCanto = isAdmin || hasPermission('view_song_canto');
+    const canViewSongJsonChords = isAdmin || hasPermission('view_song_json_chords');
     const canViewSongLiturgia = isAdmin || hasPermission('view_song_liturgia');
     // Si el usuario no tiene permiso para ver Libro Catequesis, tampoco debe ver Ajustes > Canto > Catequesis
     const hasBookCatequesis = isAdmin || hasPermission('book_catequesis');
     const canViewSongCatequesis = hasBookCatequesis && (isAdmin || hasPermission('view_song_catequesis'));
+
+    // Visibilidad de fila "Acordes en JSON" dentro de Ajustes > Canto > Canto
+    const jsonChordsRow = document.getElementById('json-chords-setting-row');
+    if (jsonChordsRow) {
+      jsonChordsRow.style.display = canViewSongJsonChords ? 'flex' : 'none';
+    }
 
     // Visibilidad de subpestañas dentro de Canto
     const cantoSubtabCantoBtn = document.getElementById('canto-subtab-canto-btn');

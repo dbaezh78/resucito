@@ -32,27 +32,27 @@
   "sig": "/src/index.html?canto=plegariaeucaristicaiimodeloiip1",
   "lizq": [
     {
-      "line": "El Señor esté con vosotros., (La,m,20)(Sol,,119)(La,m,212)",
+      "line": "El Señor esté con vosotros., (La,m,0)(Sol,,105)(La,m,200)",
       "sC": "pa"
     },
     {
-      "line": "Y CON TU ESPÍRITU., (Sol,,39)(La,m,141)",
+      "line": "Y CON TU ESPÍRITU., (Sol,,25)(La,m,105)",
       "sC": "ta as"
     },
     {
-      "line": "Levantemos el corazón., (Sol,,204)",
+      "line": "Levantemos el corazón., (Sol,,180)",
       "sC": "pa"
     },
     {
-      "line": "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (La,m,389)",
+      "line": "LO TENEMOS LEVANTADO HACIA EL SEÑOR., (La,m,320)",
       "sC": "ta as"
     },
     {
-      "line": "Demos gracias al Señor, nuestro Dios., (Sol,,14)(La,m,336)",
+      "line": "Demos gracias al Señor, nuestro Dios., (Sol,,0)(La,m,320)",
       "sC": "pa"
     },
     {
-      "line": "ES JUSTO Y NECESARIO., (Sol,,14)(La,m,186)",
+      "line": "ES JUSTO Y NECESARIO., (Sol,,0)(La,m,150)",
       "sC": "ta as"
     },
     {
@@ -60,27 +60,27 @@
       "sC": "adb1"
     },
     {
-      "line": "Verdaderamente,, (La,m,20)",
-      "sC": "pa ast"
+      "line": "Verdaderamente,, (La,m,0)",
+      "sC": "pa asterisco"
     },
     {
-      "line": "es justo y necesario,, (Sol,,44)",
+      "line": "es justo y necesario,, (Sol,,30)",
       "sC": ""
     },
     {
-      "line": "es nuestro deber y fuente de salvación, (La,m,352)",
+      "line": "es nuestro deber y fuente de salvación, (La,m,340)",
       "sC": ""
     },
     {
-      "line": "darte gracias, siempre y en todo lugar., (Sol,,14)(La,m,158)",
+      "line": "darte gracias, siempre y en todo lugar., (Sol,,0)(La,m,150)",
       "sC": ""
     },
     {
-      "line": "A ti, Padre Santo, ",
-      "sC": "ast1"
+      "line": "A ti, Padre Santo,, ",
+      "sC": "asterisco"
     },
     {
-      "line": "por Jesucristo, tu amadísimo Hijo., (Sol,,104)(La,m,303)",
+      "line": "por Jesucristo, tu amadísimo Hijo., (Sol,,185)(La,m,290)",
       "sC": ""
     },
     {
@@ -88,27 +88,27 @@
       "sC": "adb1"
     },
     {
-      "line": "Por Él, que es tu Palabra viviente,, (Sol,,279)",
-      "sC": "ast2"
+      "line": "Por Él, que es tu Palabra viviente,, (Sol,,285)",
+      "sC": "astx1"
     },
     {
-      "line": "hiciste todas las cosas;, (La,m,182)",
+      "line": "hiciste todas las cosas;, (La,m,175)",
       "sC": ""
     },
     {
-      "line": "tú nos lo enviaste Salvador y Redentor, (Fa,,131)(La,m,195)",
+      "line": "tú nos lo enviaste Salvador y Redentor, (Fa,,130)(La,m,190)",
       "sC": ""
     },
     {
-      "line": "hecho hombre por obra del Espíritu Santo,, (Sol,,14)",
+      "line": "hecho hombre por obra del Espíritu Santo,, (Sol,,0)",
       "sC": ""
     },
     {
-      "line": "y nacido de la Virgen María,, (La,m,246)",
+      "line": "y nacido de la Virgen María,, (La,m,230)",
       "sC": ""
     },
     {
-      "line": "para cumplir tu voluntad, (Sol,,14)(La,m,221)",
+      "line": "para cumplir tu voluntad, (Sol,,0)(La,m,205)",
       "sC": ""
     },
     {
@@ -121,14 +121,14 @@
     },
     {
       "line": "Él,",
-      "sC": "ast3"
+      "sC": "asterisco"
     },
     {
-      "line": "extendió sus brazos en la cruz,, (Sol,,75)(La,m,270)",
+      "line": "extendió sus brazos en la cruz,, (Sol,,60)(La,m,265)",
       "sC": ""
     },
     {
-      "line": "muriendo destruyó la muerte.,(Sol,,50)(La,m,251) ",
+      "line": "muriendo destruyó la muerte.,(Sol,,25)(La,m,220) ",
       "sC": ""
     },
     {
@@ -136,15 +136,15 @@
       "sC": ""
     },
     {
-      "line": "la resurrección.,(Sol,,14)(La,m,126) ",
+      "line": "la resurrección.,(Sol,,0)(La,m,115) ",
       "sC": ""
     },
     {
-      "line": "Y PROCLAMÓ, (La,m,20)",
+      "line": "Y PROCLAMÓ, (La,m,0)",
       "sC": "as r1"
     },
     {
-      "line": "LA RESURRECCIÓN., (Sol,,14)(La,m,164)",
+      "line": "LA RESURRECCIÓN., (Sol,,0)(La,m,115)",
       "sC": "as"
     },
     {
@@ -152,7 +152,7 @@
       "sC": "adb1"
     },
     {
-      "line": "Por este misterio de salvación,, (La,m,20)",
+      "line": "Por este misterio de salvación,, (La,m,0)",
       "sC": ""
     },
     {
@@ -160,11 +160,11 @@
       "sC": ""
     },
     {
-      "line": "cantamos a una sola voz, (Sol,,14)",
+      "line": "cantamos a una sola voz, (Sol,,0)",
       "sC": ""
     },
     {
-      "line": "el himno de tu gloria:, (La,m,168)",
+      "line": "el himno de tu gloria:, (La,m,155)",
       "sC": ""
     },
     {
@@ -176,786 +176,338 @@
       "sC": "ta as"
     },
     {
-      "type": "collapsible-block",
-      "id": "asamblea_SantoPalomeras65",
-      "initialState": "collapsed",
-      "triggerLine": "SANTO Palomeras 65",
+      "type": "variant-group",
+      "id": "asamblea_santos_plegaria",
+      "label": "SANTO",
       "sC": "Santo",
       "color": "var(--Rojo-Leccionario)",
-      "lines": [
-        {
-          "line": "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR,, (Mi,,181)",
-          "sC": "as"
-        },
-        {
-          "line": "DIOS DEL UNIVERSO,, (Si,7,154)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR., (Mi,,180)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Llenos están los cielos, (Do,,11)",
-          "sC": "tc"
-        },
-        {
-          "line": "y la tierra de tu gloria., (Si,7,178)",
-          "sC": ""
-        },
-        {
-          "line": "Hosanna, hosanna, hosanna,, (Do,,11)",
-          "sC": ""
-        },
-        {
-          "line": "hosanna en las alturas., (Si,7,180)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR,, (Mi,,181)",
-          "sC": "as"
-        },
-        {
-          "line": "DIOS DEL UNIVERSO,, (Si,7,154)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR., (Mi,,180)",
-          "sC": "as"
-        },
-        {
-          "line": "Bendito es el que viene, (Mi,m,15)",
-          "sC": "tc"
-        },
-        {
-          "line": "en nombre del Señor,, (Si,7,15)",
-          "sC": ""
-        },
-        {
-          "line": "bendito es el que viene, ",
-          "sC": ""
-        },
-        {
-          "line": "en nombre del Señor., (Mi,m,15)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA EN LAS ALTURAS,, (Mi,m,15)",
-          "sC": "ta as"
-        },
-        {
-          "line": "BENDITO ES EL QUE VIENE,, (Si,7,219)",
-          "sC": "as"
-        },
-        {
-          "line": "BENDITO ES EL QUE VIENE, ",
-          "sC": "as"
-        },
-        {
-          "line": "EN NOMBRE DEL SEÑOR., (Mi,,215)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR,, (Mi,,181)",
-          "sC": "as"
-        },
-        {
-          "line": "DIOS DEL UNIVERSO,, (Si,7,154)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR., (Mi,,180)",
-          "sC": "as"
-        }
-      ]
-    },
-    {
-      "type": "collapsible-block",
-      "id": "asamblea_SANTOMelodíahebraica",
-      "initialState": "collapsed",
-      "triggerLine": "SANTO Melodía hebraica",
-      "sC": "Santo",
-      "color": "var(--Rojo-Leccionario)",
-      "lines": [
-        {
-          "line": "SANTO, SANTO, SANTO,, (Mi,,11)(Si,7,169)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR,, (Mi,,181)",
-          "sC": "as"
-        },
-        {
-          "line": "DIOS DEL UNIVERSO,, (Si,7,154)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR., (Mi,,180)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Re,m,23)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Los cielos y la tierra, (Re,m,20)(Sol,m,110)(Re,m,164)",
-          "sC": "tc"
-        },
-        {
-          "line": "están llenos de Ti., (Sol,m,24)(Re,m,163)",
-          "sC": ""
-        },
-        {
-          "line": "LOS CIELOS Y LA TIERRA, (Sol,m,129)(Re,m,189)",
-          "sC": "ta as"
-        },
-        {
-          "line": "ESTÁN LLENOS DE TI., (Sol,m,23)(Re,m,197)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Hosanna en el cielo,, (Sol,m,104)(Re,m,165)",
-          "sC": "tc"
-        },
-        {
-          "line": "hosanna., (Sol,m,21)(Re,m,75)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA EN EL CIELO,, (Sol,m,122)(Re,m,187)",
-          "sC": "ta as"
-        },
-        {
-          "line": "HOSANNA., (Sol,m,21)(Re,m,90)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO, ES SANTO, SANTO, ES SANTO..., (Re,m,23)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Bendito el que viene,, (Re,m,21)(Sol,m,97)(Re,m,162)",
-          "sC": "tc"
-        },
-        {
-          "line": "en el nombre del Señor., (Sol,m,22)(Re,m,210)",
-          "sC": ""
-        },
-        {
-          "line": "A BENDITO EL QUE VIENE,, (Re,m,20)(Sol,m,123)(Re,m,208)",
-          "sC": "ta as"
-        },
-        {
-          "line": "EN EL NOMBRE DEL SEÑOR., (Sol,m,24)(Re,m,242)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Hosanna en el cielo,, (Sol,m,104)(Re,m,165)",
-          "sC": "tc"
-        },
-        {
-          "line": "hosanna., (Sol,m,22)(Re,m,75)",
-          "sC": ""
-        },
-        {
-          "line": "HOSANNA EN EL CIELO,, (Sol,m,126)(Re,m,190)",
-          "sC": "ta as"
-        },
-        {
-          "line": "HOSANNA., (Sol,m,22)(Re,m,89)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "SANTO, ES SANTO, SANTO, ES SANTO..., (Re,m,23)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,15)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,24)(Re,m,326)",
-          "sC": "as"
-        }
-      ]
-    },
-    {
-      "type": "collapsible-block",
-      "id": "asamblea_SANTOPalestina74",
-      "initialState": "collapsed",
-      "triggerLine": "SANTO Palestina 74",
-      "sC": "Santo",
-      "color": "var(--Rojo-Leccionario)",
-      "lines": [
-        {
-          "line": "SANTO, SANTO, SANTO,, (Re,m,22)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO,, (Sol,m,21)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO,, (La,,18)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO ES EL SEÑOR., (Sol,m,22)(La,,175)",
-          "sC": "as"
-        },
-        {
-          "line": "YAHVEH SEBAOTH,, (Sol,m,22)(La,,144)",
-          "sC": "as"
-        },
-        {
-          "line": "YAHVEH SEBAOTH., (Sol,m,21)(La,,143)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Los cielos, (Re,m,21)(Sol,m,74)",
-          "sC": "tc"
-        },
-        {
-          "line": "y la tierra, (Re,m,58)",
-          "sC": ""
-        },
-        {
-          "line": "están llenos,, (Sol,m,77)",
-          "sC": ""
-        },
-        {
-          "line": "están llenos de Ti., (La,,160)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (Re,m,20)",
-          "sC": "ta as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA., (La,,25)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (Re,m,21)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (La,,23)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA EN LO ALTO DEL CIELO,, (Sol,m,52)(La,,293)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA., (Sol,m,49)(La,,209)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Bendito, (Re,m,21)(Sol,m,72)",
-          "sC": "tc"
-        },
-        {
-          "line": "es el que viene,, (Re,m,111)",
-          "sC": ""
-        },
-        {
-          "line": "en el nombre,, (Sol,m,65)",
-          "sC": ""
-        },
-        {
-          "line": "en el nombre del Señor., (La,,205)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (Re,m,20)",
-          "sC": "ta as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA., (La,,25)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (Re,m,21)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (La,,23)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,52)(La,,293)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (Sol,m,49)(La,,209)",
-          "sC": "as"
-        }
-      ]
-    },
-    {
-      "type": "collapsible-block",
-      "id": "asamblea_SANTORoma77",
-      "initialState": "collapsed",
-      "triggerLine": "SANTO Roma 77",
-      "sC": "Santo",
-      "color": "var(--Rojo-Leccionario)",
-      "lines": [
-        {
-          "line": "SANTO, SANTO, SANTO, (La,m,18)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)",
-          "sC": "as r11"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Los cielos y la tierra, (La,m,21)(Sol,,63)(La,m,158)",
-          "sC": "tc"
-        },
-        {
-          "line": "están llenos, están llenos de Ti., (Sol,,75)(La,m,287)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
-          "sC": "ta as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "EN LO ALTO DEL CIELO. (Fa,,71)(Mi,,188)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "EN LO ALTO DEL CIELO. (La,m,185)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO, (La,m,18)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)",
-          "sC": "as r11"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Bendito es el que viene,, (La,m,18)(Sol,,55)(La,m,189)",
-          "sC": "tc"
-        },
-        {
-          "line": "en el nombre, en el nombre del Señor., (Sol,,67)(La,m,346)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
-          "sC": "ta as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Mi,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,50)(Sol,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,15)(Mi,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (Fa,,15)(Sol,,157)",
-          "sC": "as"
-        },
-        {
-          "line": "EN LO ALTO DEL CIELO., (La,m,185)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO, (La,m,18)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO. (Sol,,16)(La,m,173)",
-          "sC": "as r11"
-        }
-      ]
-    },
-    {
-      "type": "collapsible-block",
-      "id": "asamblea_SANTO1982",
-      "initialState": "collapsed",
-      "triggerLine": "SANTO 1982",
-      "sC": "Santo",
-      "color": "var(--Rojo-Leccionario)",
-      "lines": [
-        {
-          "line": "SANTO,SANTO,SANTO, (La,m,20)",
-          "sC": "ta as"
-        },
-        {
-          "line": "ES EL SEÑOR., (Sol,,13)(La,m,106)",
-          "sC": "as"
-        },
-        {
-          "line": "SANTO,SANTO,SANTO, (La,m,20)",
-          "sC": "as"
-        },
-        {
-          "line": "ES EL SEÑOR,, (Sol,,10)(La,m,106)",
-          "sC": "as"
-        },
-        {
-          "line": "DIOS DEL UNIVERSO., (Sol,,27)(La,m,150)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Los cielos y la tierra, (Fa,,13)(Mi,,157)",
-          "sC": "tc"
-        },
-        {
-          "line": "están llenos de tu Gloria., (Fa,,76)(Mi,,205)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (La,m,19)",
-          "sC": "ta as"
-        },
-        {
-          "line": "HOSANNA,HOSANNA, (Re,m,22)",
-          "sC": "as"
-        },
-        {
-          "line": "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (La,m,19)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA,HOSANNA, (Re,m,21)",
-          "sC": "as"
-        },
-        {
-          "line": "EN LO ALTO DEL CIELO., (Fa,,72)(Mi,,188)",
-          "sC": "as"
-        },
-        {
-          "line": "Bendito es el que viene, (La,m,21)",
-          "sC": "tc"
-        },
-        {
-          "line": "en el nombre del Señor,, (Re,m,72)(Mi,,211)",
-          "sC": ""
-        },
-        {
-          "line": "en el nombre del Señor., (Re,m,72)(Mi,,211)",
-          "sC": ""
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA, (La,m,19)",
-          "sC": "ta as"
-        },
-        {
-          "line": "HOSANNA,HOSANNA, (Rem,,22)",
-          "sC": "as"
-        },
-        {
-          "line": "EN LO ALTO DEL CIELO., (Fa,,71)(Mi,,188)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "HOSANNA, HOSANNA,, (La,m,19)",
-          "sC": "as"
-        },
-        {
-          "line": "HOSANNA,HOSANNA, (Rem,,21)",
-          "sC": "as"
-        },
-        {
-          "line": "EN LO ALTO DEL CIELO., (Fa,,72)(Mi,,188)",
-          "sC": "as"
-        }
-      ]
-    },
-    {
-      "type": "collapsible-block",
-      "id": "asamblea_Salmo_1988",
-      "initialState": "collapsed",
-      "triggerLine": "SANTO 1988",
-      "sC": "Santo",
-      "color": "var(--Rojo-Leccionario)",
-      "lines": [
-        {
-          "line": "",
-          "sC": ""
-        },
-        {
-          "line": "Santo, Santo, Santo., (La,m,18)(Sol,,78)(La,m,152)",
-          "sC": "tc"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO., (Sol,,84)(La,m,162)",
-          "sC": "ta as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Los cielos y la tierra, (La,m,19)(Sol,,150)",
-          "sC": "tc"
-        },
-        {
-          "line": "están llenos de tu Gloria., (La,m,15)",
-          "sC": ""
-        },
-        {
-          "line": "LOS CIELOS Y LA TIERRA, (Sol,,197)",
-          "sC": "ta as"
-        },
-        {
-          "line": "ESTÁN LLENOS DE TU GLORIA., (La,m,181)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Hosanna en lo alto del Cielo., (Fa,,45)(Mi,,240)",
-          "sC": "tc"
-        },
-        {
-          "line": "HOSANNA EN LO ALTO DEL CIELO., (Fa,,46)(Mi,,288)",
-          "sC": "ta as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO., (La,m,20)(Sol,,90)(La,m,173)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO., (Sol,,90)(La,m,175)",
-          "sC": "as"
-        },
-        {
-          "line": "Bendito es el que viene, (La,m,15)(Sol,,193)",
-          "sC": "tc"
-        },
-        {
-          "line": "en el nombre del Señor., (La,m,212)",
-          "sC": ""
-        },
-        {
-          "line": "BENDITO ES EL QUE VIENE, (Sol,,223)",
-          "sC": "ta as"
-        },
-        {
-          "line": "EN EL NOMBRE DEL SEÑOR., (La,m,244)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Hosanna en lo alto del Cielo., (Fa,,38)(Mi,,242)",
-          "sC": "tc"
-        },
-        {
-          "line": "HOSANNA EN LO ALTO DEL CIELO., (Fa,,48)(Mi,,291)",
-          "sC": "ta as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO., (La,m,20)(Sol,,90)(La,m,173)",
-          "sC": "ta as"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO., (Sol,,90)(La,m,175)",
-          "sC": "as"
-        },
-        {
-          "line": "",
-          "sC": "adb1"
-        },
-        {
-          "line": "Santo, Santo, Santo., (Fa,,14)(Mi,,143)",
-          "sC": "tc"
-        },
-        {
-          "line": "SANTO, SANTO, SANTO., (Fa,,13)(Mi,,163)",
-          "sC": "ta as"
+      "variants": [
+        {
+          "id": "asamblea_santo65",
+          "name": "SANTO Palomeras 65",
+          "sC": "Santo",
+          "color": "var(--Rojo-Leccionario)",
+          "lines": [
+            {"line": "SANTO, SANTO, SANTO,, (Mi,,0)(Si,7,145)","sC": "ta as"},
+            {"line": "SANTO ES EL SEÑOR,, (Mi,,150)","sC": "as"},
+            {"line": "DIOS DEL UNIVERSO,, (Si,7,125)","sC": "as"},
+            {"line": "SANTO ES EL SEÑOR., (Mi,,150)","sC": "as"},
+
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "Llenos están los cielos, (Do,,0)","sC": "tc"},
+            {"line": "y la tierra de tu gloria., (Si,7,185)","sC": ""},
+            {"line": "Hosanna, hosanna, hosanna,, (Do,,0)","sC": ""},
+            {"line": "hosanna en las alturas., (Si,7,160)","sC": ""},
+
+        
+    {"line": "","sC": ""},
+
+            
+            {"line": "SANTO, SANTO, SANTO,, (Mi,,0)(Si,7,145)","sC": "ta as"},
+            {"line": "SANTO ES EL SEÑOR,, (Mi,,150)","sC": "as"},
+            {"line": "DIOS DEL UNIVERSO,, (Si,7,125)","sC": "as"},
+            {"line": "SANTO ES EL SEÑOR., (Mi,,150)","sC": "as"},
+            
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "Bendito es el que viene, (Mi,m,0)","sC": "tc"},
+            {"line": "en nombre del Señor,, (Si,7,165)","sC": ""},
+            {"line": "bendito es el que viene, ","sC": ""},
+            {"line": "en nombre del Señor., (Mi,m,155)","sC": ""},
+
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "HOSANNA EN LAS ALTURAS,, (Mi,m,0)","sC": "ta as"},
+            {"line": "BENDITO ES EL QUE VIENE,, (Si,7,185)","sC": "as"},
+            {"line": "BENDITO ES EL QUE VIENE, ","sC": "as"},
+            {"line": "EN NOMBRE DEL SEÑOR., (Mi,,170)","sC": "as"},
+            
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "SANTO, SANTO, SANTO,, (Mi,,0)(Si,7,145)","sC": "ta as"},
+            {"line": "SANTO ES EL SEÑOR,, (Mi,,150)","sC": "as"},
+            {"line": "DIOS DEL UNIVERSO,, (Si,7,125)","sC": "as"},
+            {"line": "SANTO ES EL SEÑOR., (Mi,,150)","sC": "as"}
+          ]
+        },
+        {
+          "id": "asamblea_SantoHebraica",
+          "name": "SANTO Melodía hebraica",
+          "sC": "Santo",
+          "color": "var(--Rojo-Leccionario)",
+          "lines": [
+           
+            {"line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Re,m,0)","sC": "ta as"},
+            {"line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,0)","sC": "as"},
+            {"line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,0)(Re,m,270)","sC": "as"},
+
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "Los cielos y la tierra, (Re,m,0)(Sol,m,95)(Re,m,165)","sC": "tc"},
+            {"line": "están llenos de Ti., (Sol,m,0)(Re,m,150)","sC": ""},
+            {"line": "LOS CIELOS Y LA TIERRA, (Sol,m,95)(Re,m,160)","sC": "ta as"},
+            {"line": "ESTÁN LLENOS DE TI., (Sol,m,0)(Re,m,145)","sC": "as"},
+
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "Hosanna en el cielo,, (Sol,m,65)(Re,m,140)","sC": "tc"},
+            {"line": "hosanna., (Sol,m,0)(Re,m,50)","sC": ""},
+            {"line": "HOSANNA EN EL CIELO,, (Sol,m,65)(Re,m,140)","sC": "ta as"},
+            {"line": "HOSANNA., (Sol,m,0)(Re,m,50)","sC": "as"},
+
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Re,m,0)","sC": "ta as"},
+            {"line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,0)","sC": "as"},
+            {"line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,0)(Re,m,270)","sC": "as"},
+            
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "Bendito el que viene,, (Re,m,0)(Sol,m,65)(Re,m,150)","sC": "tc"},
+            {"line": "en el nombre del Señor., (Sol,m,0)(Re,m,190)","sC": ""},
+            {"line": "BENDITO EL QUE VIENE,, (Re,m,0)(Sol,m,65)(Re,m,155)","sC": "ta as"},
+            {"line": "EN EL NOMBRE DEL SEÑOR., (Sol,m,0)(Re,m,190)","sC": "as"},
+
+        
+    {"line": "","sC": ""},
+
+            {"line": "Hosanna en el cielo,, (Sol,m,65)(Re,m,140)","sC": "tc"},
+            {"line": "hosanna., (Sol,m,0)(Re,m,50)","sC": ""},
+            {"line": "HOSANNA EN EL CIELO,, (Sol,m,65)(Re,m,140)","sC": "ta as"},
+            {"line": "HOSANNA., (Sol,m,0)(Re,m,50)","sC": "as"},
+
+        
+    {"line": "","sC": ""},
+
+
+            {"line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Re,m,0)","sC": "ta as"},
+            {"line": "SANTO, ES SANTO, SANTO, ES SANTO;, (Fa,,0)","sC": "as"},
+            {"line": "SANTO, ES SANTO; YAHVEH SEBAOTH., (Sol,m,0)(Re,m,270)","sC": "as"}
+          ]
+        },
+        {
+          "id": "asamblea_SantoPalestina74",
+          "name": "SANTO Palestina 74",
+          "sC": "Santo",
+          "color": "var(--Rojo-Leccionario)",
+          "lines": [
+            {"line": "SANTO, SANTO, SANTO,, (Re,m,0)","sC": "ta as"},
+            {"line": "SANTO, SANTO, SANTO,, (Sol,m,0)","sC": "as"},
+            {"line": "SANTO, SANTO, SANTO,, (La,,0)","sC": "as"},
+            {"line": "SANTO ES EL SEÑOR., (Sol,m,0)(La,,150)","sC": "as"},
+            {"line": "YAHVEH SEBAOTH,, (Sol,m,0)(La,,110)","sC": "as"},
+            {"line": "YAHVEH SEBAOTH., (Sol,m,0)(La,,110)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Los cielos, (Re,m,0)(Sol,m,45)","sC": "tc"},
+            {"line": "y la tierra, (Re,m,45)","sC": ""},
+            {"line": "están llenos,, (Sol,m,50)","sC": ""},
+            {"line": "están llenos de Ti., (La,,160)","sC": ""},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA,, (Re,m,0)","sC": "ta as"},
+            {"line": "HOSANNA, HOSANNA., (La,,0)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA,, (Re,m,0)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA,, (La,,0)","sC": "as"},
+            {"line": "HOSANNA EN LO ALTO DEL CIELO,, (Sol,m,0)(La,,250)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA., (Sol,m,0)(La,,150)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Bendito, (Re,m,0)(Sol,m,35)","sC": "tc"},
+            {"line": "es el que viene,, (Re,m,95)","sC": ""},
+            {"line": "en el nombre,, (Sol,m,50)","sC": ""},
+            {"line": "en el nombre del Señor., (La,,195)","sC": ""},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA,, (Re,m,0)","sC": "ta as"},
+            {"line": "HOSANNA, HOSANNA., (La,,0)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA,, (Re,m,0)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA,, (La,,0)","sC": "as"},
+            {"line": "HOSANNA EN LO ALTO DEL CIELO,   (Sol,m,0)(La,,250)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA,, (Sol,m,0)(La,,150)","sC": "as"}
+          ]
+        },
+
+        {
+          "id": "asamblea_SANTORoma77",
+          "name": "SANTO Roma 77",
+          "sC": "Santo",
+          "color": "var(--Rojo-Leccionario)",
+          "lines": [
+            {"line": "SANTO, SANTO, SANTO, (La,m,0)","sC": "ta as bisa hbis87 lbis282 tbis10"},
+            {"line": "SANTO, SANTO, SANTO. (Sol,,0)(La,m,135)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Los cielos y la tierra, (La,m,0)(Sol,,45)(La,m,160)","sC": "tc"},
+            {"line": "están llenos, están llenos de Ti., (Sol,,55)(La,m,290)","sC": ""},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Mi,,120)","sC": "ta as"},
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Mi,,120)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Sol,,120)","sC": "as"},
+            {"line": "EN LO ALTO DEL CIELO. (Fa,,50)(Mi,,170)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Mi,,150)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Mi,,150)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Sol,,150)","sC": "as"},
+            {"line": "EN LO ALTO DEL CIELO. (La,m,155)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "SANTO, SANTO, SANTO, (La,m,0)","sC": "ta as bisa hbis87 lbis282 tbis10"},
+            {"line": "SANTO, SANTO, SANTO. (Sol,,0)(La,m,140)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Bendito es el que viene,, (La,m,0)(Sol,,35)(La,m,180)","sC": "tc"},
+            {"line": "en el nombre, en el nombre del Señor., (Sol,,60)(La,m,330)","sC": ""},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Mi,,120)","sC": "ta as"},
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Mi,,120)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Sol,,120)","sC": "as"},
+            {"line": "EN LO ALTO DEL CIELO. (Fa,,50)(Mi,,170)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Mi,,150)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Mi,,150)","sC": "as"},
+            {"line": "HOSANNA, HOSANNA, (Fa,,30)(Sol,,150)","sC": "as"},
+            {"line": "EN LO ALTO DEL CIELO. (La,m,155)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "SANTO, SANTO, SANTO, (La,m,0)","sC": "ta as bisa hbis87 lbis282 tbis10"},
+            {"line": "SANTO, SANTO, SANTO. (Sol,,0)(La,m,140)","sC": "as "}
+          ]
+        },
+        {
+          "id": "asamblea_SANTO1982",
+          "name": "SANTO 1982",
+          "sC": "Santo",
+          "color": "var(--Rojo-Leccionario)",
+          "lines": [
+            {"line": "SANTO,SANTO,SANTO, (La,m,0)","sC": "ta as"},
+            {"line": "ES EL SEÑOR., (Sol,,0)(La,m,80)","sC": "as"},
+            {"line": "SANTO,SANTO,SANTO, (La,m,0)","sC": "as"},
+            {"line": "ES EL SEÑOR,, (Sol,,0)(La,m,80)","sC": "as"},
+            {"line": "DIOS DEL UNIVERSO., (Sol,,10)(La,m,120)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Los cielos y la tierra, (Fa,,0)(Mi,,165)","sC": "tc"},
+            {"line": "están llenos de tu Gloria., (Fa,,65)(Mi,,200)","sC": ""},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA,, (La,m,0)","sC": "ta as"},
+            {"line": "HOSANNA,HOSANNA, (Re,m,0)","sC": "as"},
+            {"line": "EN LO ALTO DEL CIELO., (Fa,,55)(Mi,,160)","sC": "as"},
+        
+    {"line": "","sC": ""},
+    
+          {"line": "HOSANNA, HOSANNA,, (La,m,0)","sC": "as"},
+          {"line": "HOSANNA,HOSANNA, (Re,m,0)","sC": "as"},
+          {"line": "EN LO ALTO DEL CIELO., (Fa,,55)(Mi,,160)","sC": "as"},
+
+    {"line": "","sC": ""},
+
+            {"line": "Bendito es el que viene, (La,m,0)","sC": "tc"},
+            {"line": "en el nombre del Señor,, (Re,m,55)(Mi,,200)","sC": ""},
+            {"line": "en el nombre del Señor., (Re,m,55)(Mi,,200)","sC": ""},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA, (La,m,0)","sC": "ta as"},
+            {"line": "HOSANNA,HOSANNA, (Rem,,0)","sC": "as"},
+            {"line": "EN LO ALTO DEL CIELO., (Fa,,60)(Mi,,165)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "HOSANNA, HOSANNA,, (La,m,0)","sC": "as"},
+            {"line": "HOSANNA,HOSANNA, (Rem,,0)","sC": "as"},
+            {"line": "EN LO ALTO DEL CIELO., (Fa,,60)(Mi,,165)","sC": "as"}
+          ]
+        },
+        {
+          "id": "asamblea_Salmo_1988",
+          "name": "SANTO 1988",
+          "sC": "Santo",
+          "color": "var(--Rojo-Leccionario)",
+          "lines": [
+        
+
+            {"line": "Santo, Santo, Santo., (La,m,0)(Sol,,70)(La,m,140)","sC": "tc"},
+            {"line": "SANTO, SANTO, SANTO., (Sol,,70)(La,m,145)","sC": "ta as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Los cielos y la tierra, (La,m,0)(Sol,,160)","sC": "tc"},
+            {"line": "están llenos de tu Gloria., (La,m,190)","sC": ""},
+            {"line": "LOS CIELOS Y LA TIERRA, (Sol,,165)","sC": "ta as"},
+            {"line": "ESTÁN LLENOS DE TU GLORIA., (La,m,200)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Hosanna en lo alto del Cielo., (Fa,,45)(Mi,,240)","sC": "tc"},
+            {"line": "HOSANNA EN LO ALTO DEL CIELO., (Fa,,46)(Mi,,288)","sC": "ta as"},
+        
+    {"line": "","sC": ""},
+    
+            {"line": "SANTO, SANTO, SANTO., (La,m,0)(Sol,,70)(La,m,145)","sC": "ta as"},
+            {"line": "SANTO, SANTO, SANTO., (Sol,,70)(La,m,140)","sC": "as"},
+
+    {"line": "","sC": ""},
+
+            {"line": "Bendito es el que viene, (La,m,0)(Sol,,185)","sC": "tc"},
+            {"line": "en el nombre del Señor., (La,m,190)","sC": ""},
+
+    {"line": "","sC": ""},
+
+            {"line": "BENDITO ES EL QUE VIENE, (Sol,,185)","sC": "ta as"},
+            {"line": "EN EL NOMBRE DEL SEÑOR., (La,m,190)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Hosanna en lo alto del Cielo., (Fa,,45)(Mi,,240)","sC": "tc"},
+            {"line": "HOSANNA EN LO ALTO DEL CIELO., (Fa,,46)(Mi,,288)","sC": "ta as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "SANTO, SANTO, SANTO., (La,m,0)(Sol,,75)(La,m,145)","sC": "ta as"},
+            {"line": "SANTO, SANTO, SANTO., (Sol,,65)(La,m,140)","sC": "as"},
+        
+    {"line": "","sC": ""},
+
+            {"line": "Santo, Santo, Santo., (Fa,,0)(Mi,,145)","sC": "tc"},
+            {"line": "SANTO, SANTO, SANTO., (Fa,,0)(Mi,,145)","sC": "ta as"}
+          ]
         }
       ]
     },
@@ -970,11 +522,11 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "Santo eres en verdad, Señor,, (Sol,,14)",
+      "line": "Santo eres en verdad, Señor,, (Sol,,0)",
       "sC": "pa"
     },
     {
-      "line": "fuente de toda santidad:, (Mi,m,213)",
+      "line": "fuente de toda santidad:, (Mi,m,200)",
       "sC": ""
     },
     {
@@ -983,19 +535,19 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "santifica estos dones, (La,m,20)",
+      "line": "santifica estos dones, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "con la efusión de tu Espíritu,, (Mi,m,20)",
+      "line": "con la efusión de tu Espíritu,, (Mi,m,0)",
       "sC": ""
     },
     {
-      "line": "de manera que sean para nosotros, (Sol,,14)",
+      "line": "de manera que sean para nosotros, (Sol,,0)",
       "sC": ""
     },
     {
-      "line": "Cuerpo y,(Si,m,20)",
+      "line": "Cuerpo y,(Si,m,0)",
       "sC": ""
     },
     {
@@ -1210,16 +762,16 @@
     },
     {
       "line": "N/, ",
-      "sC": "adl1 sub",
+      "sC": "sn1a",
       "color": "var(--Rojo-Leccionario)"
     },
     {
       "line": "con nuestro obispo ..., (Mi,m,20)",
-      "sC": ""
+      "sC": "sn2a"
     },
     {
       "line": "N/, ",
-      "sC": "adl2 sub",
+      "sC": "sn3a",
       "color": "var(--Rojo-Leccionario)"
     },
     {
@@ -1318,6 +870,10 @@
     },
     {
       "line": "por los siglos de los siglos., (Sol,,14)",
+      "sC": ""
+    },
+    {
+      "line": "",
       "sC": ""
     },
     {

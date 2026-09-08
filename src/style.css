@@ -1119,6 +1119,7 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+
 }
 
 /* Negrita para las partes de la asamblea */
@@ -3497,6 +3498,8 @@ footer {
 /* 2/3  min-width: 3 8 4px */
 @media (min-width: 384px) {
 
+
+
     header {margin-bottom: -50px;}
 
 .Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
@@ -3633,6 +3636,8 @@ footer {
 
 @media (min-width: 768px) {
 
+
+
       header {margin-bottom: 0px;}
 
 .Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
@@ -3703,6 +3708,8 @@ footer {
 }
 
 @media (min-width: 992px) {
+
+
   .Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
   { position: relative;width: fit-content;font-weight: bolder;left: 290px;}
 
@@ -3817,6 +3824,16 @@ footer {
   font-weight: bold;
   font-size: 0.7em;
   color: var(--chord-color);
+}
+
+.linea-canto.astx1::after {
+  content: " *";
+  font-weight: bold;
+  font-size: 0.7em;
+  color: var(--chord-color);
+  position: absolute;
+  left: 94px;
+  top: 7px;
 }
 
 .linea-canto.asterisco1::after {

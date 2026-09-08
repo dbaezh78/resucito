@@ -57504,14 +57504,14 @@
                 {
                   "name": "Fa",
                   "type": "",
-                  "pos": 0
+                  "pos": 1.5
                 }
               ],
               [
                 {
                   "name": "Sol",
                   "type": "m",
-                  "pos": 0
+                  "pos": 3
                 },
                 {
                   "name": "Re",
@@ -57578,7 +57578,7 @@
                 {
                   "name": "Sol",
                   "type": "m",
-                  "pos": 7
+                  "pos": 0
                 },
                 {
                   "name": "Re",
@@ -57641,12 +57641,12 @@
                 {
                   "name": "Sol",
                   "type": "m",
-                  "pos": 0
+                  "pos": 40.5
                 },
                 {
                   "name": "Re",
                   "type": "m",
-                  "pos": 27
+                  "pos": 12
                 }
               ],
               [],
@@ -58718,7 +58718,7 @@
                 {
                   "name": "Fa",
                   "type": "",
-                  "pos": 20
+                  "pos": 3
                 },
                 {
                   "name": "Mi",
@@ -59294,12 +59294,12 @@
         {
           "name": "Sol",
           "type": "",
-          "pos": 0
+          "pos": 44.5
         },
         {
           "name": "Re",
           "type": "7",
-          "pos": 29
+          "pos": 0
         }
       ],
       [

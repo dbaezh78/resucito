@@ -53,6 +53,7 @@ export const PERMISSIONS = {
   PAGE_OPCIONES_PAGINAS: "page_opciones_paginas",
   PAGE_MANTCANTOS: "page_mantcantos",
   VIEW_SONG_CANTO: "view_song_canto",
+  VIEW_SONG_JSON_CHORDS: "view_song_json_chords",
   VIEW_SONG_LITURGIA: "view_song_liturgia",
   VIEW_SONG_CATEQUESIS: "view_song_catequesis"
 };
@@ -70,6 +71,7 @@ export const PERMISSION_LABELS = {
   "view_settings_theme": "Ver Ajustes: Tema",
   "view_settings_song": "Ajustes: Canto",
   "view_song_canto": "Canto",
+  "view_song_json_chords": "Acordes en JSON",
   "view_song_liturgia": "Liturgia",
   "view_song_catequesis": "Catequesis",
   "view_settings_user": "Ver Ajustes: Usuario",
@@ -1501,6 +1503,7 @@ const PERMISSION_TREE = [
     label: "Ajustes: Canto",
     children: [
       { key: "view_song_canto", label: "Canto" },
+      { key: "view_song_json_chords", label: "Acordes en JSON" },
       { key: "view_song_liturgia", label: "Liturgia" },
       { key: "view_song_catequesis", label: "Catequesis" }
     ]

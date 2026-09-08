@@ -17,7 +17,7 @@ window.firebaseAPI = {
   getCurrentUser: getCurrentUser
 };
 import { canAccessBook, initAccessControl, setupAccessControlUI, trackLoggedInUser, hasPermission, getAccessControlState, listenToOwnUserPermissionsSilently } from './accesscontrol.js';
-import { cantoConfig, loadBisConfig, saveBisConfig, isBisEnabled, setBisForSong } from './canto.js';
+import { cantoConfig, loadBisConfig, saveBisConfig, isBisEnabled, setBisForSong, isJsonChordsEnabled, setJsonChordsForSong } from './canto.js';
 import { 
   guardarNotaEnNube, 
   cargarNotaDesdeNube, 
@@ -452,6 +452,13 @@ export function updateAccessControlVisibility() {
   const showChordEditing = canEditChords();
   if (chordEditSettingRow) chordEditSettingRow.style.display = showChordEditing ? 'flex' : 'none';
   if (toolbarChordEditBtn) toolbarChordEditBtn.style.display = showChordEditing ? 'inline-flex' : 'none';
+
+  // Actualizar visibilidad de "Acordes en JSON" (exclusivo admin / permiso view_song_json_chords)
+  const canViewJsonChords = isCurrentUserAdmin() || hasPermission('view_song_json_chords');
+  const jsonChordsRow = document.getElementById('json-chords-setting-row');
+  if (jsonChordsRow) {
+    jsonChordsRow.style.display = canViewJsonChords ? 'flex' : 'none';
+  }
 }
 window.updateAccessControlVisibility = updateAccessControlVisibility;
 
@@ -666,8 +673,8 @@ function routeSPA() {
 }
 
 async function sincronizarCantoDesdeFirebase(songId) {
-  // Para cantos de Aclamaciones (songs-ae / aet*), no sincronizar posiciones desde Firebase (usan su propio archivo fuente)
-  if (songId && songId.startsWith('aet')) {
+  // Si "Acordes en JSON" está activo para este canto, no sobrescribir posiciones con Firebase
+  if (isJsonChordsEnabled(songId)) {
     return;
   }
 
@@ -1495,6 +1502,8 @@ function renderLine(lineItem, side, lineIdx, subLineIdx, customSC) {
         if (tMatch) {
           lineDiv.style.setProperty('--bis-top', `calc(${tMatch[1]}px * var(--font-zoom, 1))`);
         }
+
+
       }
     });
   }
@@ -1694,17 +1703,18 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
     position: c.originalPos
   }));
 
-  // Para cantos de Aclamaciones (songs-ae / aet*), usar EXCLUSIVAMENTE los acordes y posiciones del archivo JSON fuente
-  if (currentCanto.id && currentCanto.id.startsWith('aet')) {
+  // Si "Acordes en JSON" está activo, usar EXCLUSIVAMENTE los acordes y posiciones del archivo JSON fuente
+  if (currentCanto.id && isJsonChordsEnabled(currentCanto.id)) {
+    const isScaledLine = baseChords.some(c => c.originalPos >= 30 || (cleanLetra.length > 0 && c.originalPos >= cleanLetra.length));
     return baseChords.map(chord => {
       let pos = chord.originalPos;
       if (cleanLetra.length > 0) {
-        if (pos >= cleanLetra.length) {
-          pos = pos / 10;
+        if (pos >= cleanLetra.length || isScaledLine) {
+          pos = Math.round(pos / 10);
         }
       } else {
-        if (pos >= 10) {
-          pos = pos / 10;
+        if (pos >= 10 || isScaledLine) {
+          pos = Math.round(pos / 10);
         }
       }
       return {
@@ -1772,10 +1782,11 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
 
   return baseChords.map((chord, chordIdx) => {
     let pos = chord.originalPos;
+    const isScaledLine = !savedLineChords && baseChords.some(c => c.originalPos >= 30 || (cleanLetra.length > 0 && c.originalPos >= cleanLetra.length));
     if (savedLineChords && savedLineChords[chordIdx] !== undefined) {
       pos = savedLineChords[chordIdx].pos;
     } else {
-      if (cleanLetra.length > 0 && pos >= cleanLetra.length) {
+      if (cleanLetra.length > 0 && (pos >= cleanLetra.length || isScaledLine)) {
         const scaled = Math.round(pos / 10);
         if (scaled < cleanLetra.length) {
           pos = scaled;
@@ -2248,23 +2259,28 @@ function extractChordsFromLineItem(lineItem, side, lineIdx, subLineIdx) {
     const chordsString = content.substring(firstParenIndex);
     const noteMatches = chordsString.match(/\(([^)]+)\)/g);
     if (noteMatches) {
-      noteMatches.forEach(noteBlock => {
+      const parsedChords = noteMatches.map(noteBlock => {
         const parts = noteBlock.substring(1, noteBlock.length - 1).split(',');
-        const noteName = parts[0] ? parts[0].trim() : '';
-        const noteType = parts[1] ? parts[1].trim() : '';
-        const rawPosition = parseFloat(parts[2]) || 0;
-        if (noteName) {
-          let pos = Math.round(rawPosition);
-          if (cleanLetra.length > 0 && pos >= cleanLetra.length) {
-            const scaled = Math.round(pos / 10);
-            if (scaled < cleanLetra.length) {
-              pos = scaled;
-            } else {
-              pos = cleanLetra.length - 1;
-            }
+        return {
+          name: parts[0] ? parts[0].trim() : '',
+          type: parts[1] ? parts[1].trim() : '',
+          rawPosition: parseFloat(parts[2]) || 0
+        };
+      }).filter(c => c.name);
+
+      const isScaledLine = parsedChords.some(c => c.rawPosition >= 30 || (cleanLetra.length > 0 && c.rawPosition >= cleanLetra.length));
+
+      parsedChords.forEach(c => {
+        let pos = Math.round(c.rawPosition);
+        if (cleanLetra.length > 0 && (pos >= cleanLetra.length || isScaledLine)) {
+          const scaled = Math.round(pos / 10);
+          if (scaled < cleanLetra.length) {
+            pos = scaled;
+          } else {
+            pos = cleanLetra.length - 1;
           }
-          chords.push({ name: noteName, type: noteType, pos: pos });
         }
+        chords.push({ name: c.name, type: c.type, pos: pos });
       });
     }
   }
@@ -4191,10 +4207,17 @@ function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
       return generarHtmlLineaItem(song, l, side, lineIdx, subIdx, keyOffset, subSC);
     }).join('');
 
+    const varTitle = String(activeVar.name || activeVar.title || 'Santo')
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
     return `
       <div class="variant-group-container">
         <div class="variant-group-header" style="color: ${lineItem.color || 'var(--Rojo-Leccionario)'}; font-weight: 700; margin: 0.3rem 0;">
-          ${escapeHtml(activeVar.name || activeVar.title || 'Santo')}
+          ${varTitle}
         </div>
         <div class="variant-group-content">
           ${subLinesHtml}
@@ -4206,6 +4229,16 @@ function generarHtmlLinea(song, lineItem, side, lineIdx, keyOffset) {
   } else {
     return generarHtmlLineaItem(song, lineItem, side, lineIdx, undefined, keyOffset);
   }
+}
+
+function escapeHtml(text) {
+  if (!text) return '';
+  return String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 function generarHtmlLineaItem(song, lineItem, side, lineIdx, subLineIdx, keyOffset, extraClasses = '', extraStyle = '') {
@@ -5592,11 +5625,16 @@ function setupEventListeners() {
   attachSearchDiagnostics(searchInput, 'Principal (#search-input)');
   attachSearchDiagnostics(toolbarSearchInput, 'Barra Superior (#toolbar-search-input)');
 
-  // Sincronizar el toggle BIS con el canto actual
+  // Sincronizar los toggles de Canto (BIS y Acordes en JSON) con el canto actual
   function populateBisSongList() {
     const bisToggle = document.getElementById('bis-toggle');
-    if (!bisToggle) return;
-    bisToggle.checked = currentCanto ? isBisEnabled(currentCanto.id) : false;
+    if (bisToggle) {
+      bisToggle.checked = currentCanto ? isBisEnabled(currentCanto.id) : false;
+    }
+    const jsonChordsToggle = document.getElementById('json-chords-toggle');
+    if (jsonChordsToggle) {
+      jsonChordsToggle.checked = currentCanto ? isJsonChordsEnabled(currentCanto.id) : false;
+    }
   }
   window.populateBisSongList = populateBisSongList;
 
@@ -5606,6 +5644,16 @@ function setupEventListeners() {
     bisToggleInput.addEventListener('change', (e) => {
       if (!currentCanto) return;
       setBisForSong(currentCanto.id, e.target.checked);
+      renderSongContent();
+    });
+  }
+
+  // Listener del toggle Acordes en JSON
+  const jsonChordsToggleInput = document.getElementById('json-chords-toggle');
+  if (jsonChordsToggleInput) {
+    jsonChordsToggleInput.addEventListener('change', (e) => {
+      if (!currentCanto) return;
+      setJsonChordsForSong(currentCanto.id, e.target.checked);
       renderSongContent();
     });
   }

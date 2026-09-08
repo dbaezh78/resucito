@@ -369,8 +369,6 @@
           "color": "var(--Rojo-Leccionario)",
           "lines": [
         
-    {"line": "","sC": ""},
-
             {"line": "Santo, Santo, Santo., (La,m,0)(Sol,,70)(La,m,140)","sC": "tc"},
             {"line": "SANTO, SANTO, SANTO., (Sol,,70)(La,m,145)","sC": "ta as"},
         
@@ -403,8 +401,8 @@
         
     {"line": "","sC": ""},
 
-            {"line": "Hosanna en lo alto del Cielo., (Fa,,20)(Mi,,240)","sC": "tc"},
-            {"line": "HOSANNA EN LO ALTO DEL CIELO., (Fa,,30)(Mi,,245)","sC": "ta as"},
+            {"line": "Hosanna en lo alto del Cielo., (Fa,,25)(Mi,,240)","sC": "tc"},
+            {"line": "HOSANNA EN LO ALTO DEL CIELO., (Fa,,25)(Mi,,240)","sC": "ta as"},
         
     {"line": "","sC": ""},
 

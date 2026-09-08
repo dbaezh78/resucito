@@ -112,35 +112,70 @@
 
 @media (min-width: 384px){
     .sn1, .sn2, .sn3 {margin-top: -36px;}
-
     .sn1{left: 92px;}
     .sn2{left: 108px;}
     .sn3{left: 233px;}
+
+    .sn1a, .sn2a, .sn3a {margin-top: -42px;}
+    .sn1a{left: 122px;}
+    .sn2a{left: 146px;}
+    .sn3a{left: 312px;}
+
+
+
 
     .ttgray {
         left: -29px;
         font-size: medium;
     }
+
+    .sub{margin-top: -42px;}
+    .sangre{left: 93px;}
 }
 
 @media (min-width: 768px){
     .sn1, .sn2, .sn3 {margin-top: -78px;}
-
     .sn1{left: 235px;}
     .sn2{left: 280px;}
     .sn3{left: 594px;}
+
+    .sn1a, .sn2a, .sn3a {margin-top: -78px;}
+    .sn1a{left: 225px;}
+    .sn2a{left: 266px;}
+    .sn3a{left: 576px;}    
 
     .ttgray {
         left: -35px;
         font-size: unset;
     }
+
+    .sub{margin-top: -76px;}
+
+    .sangre{left: 184px;}
+
 }
 
 @media (min-width: 992px){
    
     .sn1, .sn2, .sn3 {margin-top: -52px;}
+    .sn1a, .sn2a, .sn3a {margin-top: -52px;}
 
     .sn1{left: 158px;}
     .sn2{left: 190px;}
     .sn3{left: 399px;}
+
+    .sn1a{left: 158px;}
+    .sn2a{left: 190px;}
+    .sn3a{left: 399px;}
+
+    .sub{margin-top: -52px;}
+
+    /*plegariaeucaristicaiimodeloii*/
+    .sangre{left: 117px;}
+}
+
+
+.pos1 {
+    left: 10px;
+    position: absolute;
 }
