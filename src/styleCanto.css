@@ -99,3 +99,48 @@
 .nonegrita {
     font-weight: normal;
 }
+
+.ttgray {
+    font-variant: petite-caps;
+    left: -35px;
+}
+
+.nSpace {
+    margin-bottom: -25px
+}
+
+
+@media (min-width: 384px){
+    .sn1, .sn2, .sn3 {margin-top: -36px;}
+
+    .sn1{left: 92px;}
+    .sn2{left: 108px;}
+    .sn3{left: 233px;}
+
+    .ttgray {
+        left: -29px;
+        font-size: medium;
+    }
+}
+
+@media (min-width: 768px){
+    .sn1, .sn2, .sn3 {margin-top: -78px;}
+
+    .sn1{left: 235px;}
+    .sn2{left: 280px;}
+    .sn3{left: 594px;}
+
+    .ttgray {
+        left: -35px;
+        font-size: unset;
+    }
+}
+
+@media (min-width: 992px){
+   
+    .sn1, .sn2, .sn3 {margin-top: -52px;}
+
+    .sn1{left: 158px;}
+    .sn2{left: 190px;}
+    .sn3{left: 399px;}
+}
