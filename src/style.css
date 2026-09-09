@@ -3680,7 +3680,7 @@ footer {
       padding-top: 0;
       line-height: normal;
       font-family: var(--font-family-lyrics, sans-serif);
-      font-size: calc(1.05rem * var(--font-zoom, 1));
+      font-size: calc(1.5rem * var(--font-zoom, 1));
       font-weight: 700;
       border-left: 3px solid #c6c5c59e;
       align-items: center;
@@ -3761,17 +3761,20 @@ footer {
 
   /* Restaurar BIS horizontal en pantallas de tablet y PC (>= 768px) */
   .linea-canto.bisa::after,
+  .linea-canto.bisa.bis-overflow-vertical::after,
   .linea-canto.bis::after,
   .linea-canto.bisc::after {
     left: var(--bis-left, auto);
     max-width: none;
+    content: " BIS A.";
     writing-mode: horizontal-tb;
     text-orientation: mixed;
     letter-spacing: normal;
     padding-left: 6px;
     padding-top: 0;
     line-height: normal;
-    font-size: inherit;
+    font-family: var(--font-family-lyrics, sans-serif);
+    font-size: calc(1.5rem * var(--font-zoom, 1));
     border-left: 3px solid #c6c5c59e;
     align-items: center;
   }
