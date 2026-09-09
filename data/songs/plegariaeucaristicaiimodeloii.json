@@ -552,7 +552,7 @@
     },
     {
       "line": "✠",
-      "sC": "sub cruz",
+      "sC": "sub cruz2",
       "color": "var(--Rojo-Leccionario)"
     },
     {
@@ -560,7 +560,7 @@
       "sC": "sub sangre"
     },
     {
-      "line": "de Jesucristo, Nuestro Señor., (Mi,m,90)",
+      "line": "de Jesucristo, Nuestro Señor., (Mi,m,65)",
       "sC": ""
     },
     {
@@ -569,59 +569,27 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "El cual, cuando iba a ser entregado a su Pasión,, (Sol,,14)",
+      "line": "El cual, cuando iba a ser entregado a su Pasión,, (Sol,,0)",
       "sC": "pa"
     },
     {
-      "line": "voluntariamente aceptada,, (Mi,m,223)",
+      "line": "voluntariamente aceptada,, (Mi,m,195)",
       "sC": ""
     },
     {
-      "line": "tomó pan,, (La,m,20)",
+      "line": "tomó pan,, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "dándote gracias,, (Mi,m,20)",
+      "line": "dándote gracias,, (Mi,m,0)",
       "sC": ""
     },
     {
-      "line": "lo partió, (La,m,20)",
+      "line": "lo partió, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "y lo dio a sus discípulos, diciendo:, (Mi,m,20)",
-      "sC": ""
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "Tomad y comed todos de él,, (Sol,,14)",
-      "sC": ""
-    },
-    {
-      "line": "porque esto es mi Cuerpo,, (Si,m,20)",
-      "sC": ""
-    },
-    {
-      "line": "que será entregado por vosotros., (Mi,m,156)",
-      "sC": ""
-    },
-    {
-      "line": "Del mismo modo, acabada la cena,, (Sol,,14)",
-      "sC": ""
-    },
-    {
-      "line": "tomó el cáliz,, (Mi,m,99)",
-      "sC": ""
-    },
-    {
-      "line": "y dándote gracias de nuevo,, (La,m,20)",
-      "sC": ""
-    },
-    {
-      "line": "lo pasó a sus discípulos, diciendo:, (Mi,m,20)",
+      "line": "y lo dio a sus discípulos, diciendo:, (Mi,m,0)",
       "sC": ""
     },
     {
@@ -629,19 +597,51 @@
       "sC": "adb1"
     },
     {
-      "line": "Tomad y bebed todos de él,, (Sol,,14)",
+      "line": "Tomad y comed todos de él,, (Sol,,0)",
       "sC": ""
     },
     {
-      "line": "éste es el cáliz de mi Sangre,, (Si,m,20)",
+      "line": "porque esto es mi Cuerpo,, (Si,m,0)",
       "sC": ""
     },
     {
-      "line": "Sangre de la alianza nueva y eterna,, (La,m,20)(Mi,m,307)",
+      "line": "que será entregado por vosotros., (Mi,m,140)",
       "sC": ""
     },
     {
-      "line": "que será derramada por vosotros, (Sol,,14)",
+      "line": "Del mismo modo, acabada la cena,, (Sol,,0)",
+      "sC": ""
+    },
+    {
+      "line": "tomó el cáliz,, (Mi,m,80)",
+      "sC": ""
+    },
+    {
+      "line": "y dándote gracias de nuevo,, (La,m,0)",
+      "sC": ""
+    },
+    {
+      "line": "lo pasó a sus discípulos, diciendo:, (Mi,m,0)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tomad y bebed todos de él,, (Sol,,0)",
+      "sC": ""
+    },
+    {
+      "line": "éste es el cáliz de mi Sangre,, (Si,m,0)",
+      "sC": ""
+    },
+    {
+      "line": "Sangre de la alianza nueva y eterna,, (La,m,0)(Mi,m,295)",
+      "sC": ""
+    },
+    {
+      "line": "que será derramada por vosotros, (Sol,,0)",
       "sC": ""
     },
     {
@@ -649,19 +649,19 @@
       "sC": ""
     },
     {
-      "line": "para el perdón, (Si,m,20)",
+      "line": "para el perdón, (Si,m,105)",
+      "sC": "asterisco"
+    },
+    {
+      "line": "para el perdón, (La,,115)",
       "sC": ""
     },
     {
-      "line": "para el perdón, (La,,20)",
+      "line": "de los pecados., (Mi,m,85)",
       "sC": ""
     },
     {
-      "line": "de los pecados., (Mi,m,20)",
-      "sC": ""
-    },
-    {
-      "line": "Haced esto en conmemoración mía., (Sol,,14)(Si,m,129)(Mi,m,320)",
+      "line": "Haced esto en conmemoración mía., (Sol,,0)(Si,m,105)(Mi,m,280)",
       "sC": ""
     },
     {
@@ -670,7 +670,7 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "Este es el sacramento de nuestra fe., (Sol,,14)",
+      "line": "Este es el sacramento de nuestra fe., (Sol,,0)",
       "sC": "pa"
     },
     {
@@ -678,19 +678,19 @@
       "sC": "adb1"
     },
     {
-      "line": "ANUNCIAMOS TU MUERTE, SEÑOR,, (Sol,,14)",
+      "line": "ANUNCIAMOS TU MUERTE, SEÑOR,, (Sol,,0)",
       "sC": "ta as"
     },
     {
-      "line": "PROCLAMAMOS TU RESURRECCIÓN,, (Si,m,20)",
+      "line": "PROCLAMAMOS TU RESURRECCIÓN,, (Si,m,0)",
       "sC": "as"
     },
     {
-      "line": "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,102)",
+      "line": "¡VEN, SEÑOR JESÚS!, (La,,0)(Mi,m,80)",
       "sC": "as"
     },
     {
-      "line": "¡VEN, SEÑOR JESÚS!, (La,,20)(Mi,m,102)",
+      "line": "¡VEN, SEÑOR JESÚS!, (La,,0)(Mi,m,80)",
       "sC": "as"
     },
     {
@@ -699,27 +699,27 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "Así, pues, Padre, al celebrar ahora el memorial, (Sol,,14)",
+      "line": "Así, pues, Padre, al celebrar ahora el memorial, (Sol,,0)",
       "sC": "pa"
     },
     {
-      "line": "de la muerte y resurrección de tu Hijo,, (Mi,m,336)",
+      "line": "de la muerte y resurrección de tu Hijo,, (Mi,m,330)",
       "sC": ""
     },
     {
-      "line": "te ofrecemos el pan de vida, (La,m,20)",
+      "line": "te ofrecemos el pan de vida, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "y el cáliz de salvación,, (Mi,m,20)",
+      "line": "y el cáliz de salvación,, (Mi,m,0)",
       "sC": ""
     },
     {
-      "line": "y te damos gracias, (La,m,20)",
+      "line": "y te damos gracias, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "porque nos haces dignos de servirte en tu presencia., (Mi,m,20)",
+      "line": "porque nos haces dignos de servirte en tu presencia., (Mi,m,0)",
       "sC": ""
     },
     {
@@ -728,19 +728,19 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "Te pedimos humildemente, (Sol,,14)",
+      "line": "Te pedimos humildemente, (Sol,,0)",
       "sC": ""
     },
     {
-      "line": "que el Espíritu Santo congregue en la unidad, (Si,m,20)",
+      "line": "que el Espíritu Santo congregue en la unidad, (Si,m,0)",
       "sC": ""
     },
     {
-      "line": "a cuantos participamos, (La,m,20)",
+      "line": "a cuantos participamos, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "del Cuerpo y Sangre de Cristo., (Mi,m,20)",
+      "line": "del Cuerpo y Sangre de Cristo., (Mi,m,0)",
       "sC": ""
     },
     {
@@ -749,15 +749,15 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "Acuérdate, Señor, de tu Iglesia, (Sol,,14)",
+      "line": "Acuérdate, Señor, de tu Iglesia, (Sol,,0)",
       "sC": "pa"
     },
     {
-      "line": "extendida por toda la tierra;, (Mi,m,227)",
+      "line": "extendida por toda la tierra;, (Mi,m,220)",
       "sC": ""
     },
     {
-      "line": "y con el Papa ... (La,m,20)",
+      "line": "y con el Papa ... (La,m,0)",
       "sC": ""
     },
     {
@@ -766,7 +766,7 @@
       "color": "var(--Rojo-Leccionario)"
     },
     {
-      "line": "con nuestro obispo ..., (Mi,m,20)",
+      "line": "con nuestro obispo ..., (Mi,m,50)",
       "sC": "sn2a"
     },
     {
@@ -775,31 +775,31 @@
       "color": "var(--Rojo-Leccionario)"
     },
     {
-      "line": "y de todos los que en ella cuidan de tu pueblo,, (La,m,20)",
+      "line": "y de todos los que en ella cuidan de tu pueblo,, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "llévala a su perfección por la caridad., (Sol,,14)(Si,m,196)(Mi,m,336)",
+      "line": "llévala a su perfección por la caridad., (Sol,,0)(Si,m,195)(Mi,m,350)",
       "sC": ""
     },
     {
-      "line": "Acuérdate también de nuestros hermanos, (Sol,,14)",
+      "line": "Acuérdate también de nuestros hermanos, (Sol,,0)",
       "sC": ""
     },
     {
-      "line": "que durmieron en la esperanza de la resurrección,, (Si,m,20)",
+      "line": "que durmieron en la esperanza de la resurrección,, (Si,m,0)",
       "sC": "width"
     },
     {
-      "line": "y de todos los que han muerto, (La,m,20)",
+      "line": "y de todos los que han muerto, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "en tu misericordia;, (Mi,m,133)",
+      "line": "en tu misericordia;, (Mi,m,115)",
       "sC": ""
     },
     {
-      "line": "admítelos a contemplar la luz de tu rostro., (Sol,,14)(Si,m,211)(Mi,m,366)",
+      "line": "admítelos a contemplar la luz de tu rostro., (Sol,,0)(Si,m,180)(Mi,m,365)",
       "sC": ""
     },
     {
@@ -808,23 +808,23 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "Ten misericordia de todos nosotros,, (Sol,,14)(Mi,m,289)",
+      "line": "Ten misericordia de todos nosotros,, (Sol,,0)(Mi,m,275)",
       "sC": ""
     },
     {
-      "line": "y así, con María, la Virgen Madre de Dios,, (La,m,20)",
+      "line": "y así, con María, la Virgen Madre de Dios,, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "su esposo San José,, (Mi,m,177)",
+      "line": "su esposo San José,, (Mi,m,155)",
       "sC": ""
     },
     {
-      "line": "los apóstoles, (La,m,20)",
+      "line": "los apóstoles, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "y cuantos vivieron en tu amistad, (Mi,m,20)",
+      "line": "y cuantos vivieron en tu amistad, (Mi,m,0)",
       "sC": ""
     },
     {
@@ -832,15 +832,15 @@
       "sC": ""
     },
     {
-      "line": "merezcamos, por tu Hijo Jesucristo,, (Sol,,14)",
+      "line": "merezcamos, por tu Hijo Jesucristo,, (Sol,,0)",
       "sC": ""
     },
     {
-      "line": "compartir la vida eterna, (Si,m,85)",
+      "line": "compartir la vida eterna, (Si,m,50)",
       "sC": ""
     },
     {
-      "line": "y cantar tus alabanzas., (La,,62)(Mi,m,166)",
+      "line": "y cantar tus alabanzas., (La,,55)(Mi,m,160)",
       "sC": ""
     },
     {
@@ -849,27 +849,27 @@
       "color": "var(--Referencia-Texto)"
     },
     {
-      "line": "Ten misericordia de todos nosotros,, (Sol,,14)",
+      "line": "Ten misericordia de todos nosotros,, (Sol,,0)",
       "sC": ""
     },
     {
-      "line": "Por Cristo, con Cristo y en Cristo,, (Sol,,14)",
+      "line": "Por Cristo, con Cristo y en Cristo,, (Sol,,0)",
       "sC": "pa"
     },
     {
-      "line": "a ti, Dios Padre omnipotente,, (Si,m,20)",
+      "line": "a ti, Dios Padre omnipotente,, (Si,m,0)",
       "sC": ""
     },
     {
-      "line": "en la unidad del Espíritu Santo,, (La,m,20)",
+      "line": "en la unidad del Espíritu Santo,, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "todo honor y toda gloria, (Mi,m,20)",
+      "line": "todo honor y toda gloria, (Mi,m,0)",
       "sC": ""
     },
     {
-      "line": "por los siglos de los siglos., (Sol,,14)",
+      "line": "por los siglos de los siglos., (Sol,,0)",
       "sC": ""
     },
     {
@@ -877,7 +877,7 @@
       "sC": ""
     },
     {
-      "line": "AMÉN, AMÉN, AMÉN., (Sol,,14)(Si,m,102)(La,,137)(Mi,m,178)",
+      "line": "AMÉN, AMÉN, AMÉN., (Sol,,0)(Si,m,70)(La,,100)(Mi,m,135)",
       "sC": "ta as"
     }
   ],

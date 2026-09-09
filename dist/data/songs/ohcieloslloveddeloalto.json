@@ -35,7 +35,7 @@
   "sig": "/src/index.html?canto=ohdiosportunombre",
   "lizq": [
     {
-      "line": "OH CIELOS, LLOVED DE LO ALTO,, (La,m,20)(Fa,,264)",
+      "line": "OH CIELOS, LLOVED DE LO ALTO,, (La,m,0)(Fa,,240)",
       "sC": "ta as"
     },
     {
@@ -55,27 +55,27 @@
       "sC": "adb1"
     },
     {
-      "line": "Somos desierto, somos arena., (La,m,20)(Sol,,254)",
+      "line": "Somos desierto, somos arena., (La,m,0)(Sol,,230)",
       "sC": "tc"
     },
     {
-      "line": "Marana thá,, (Mi,,104)",
+      "line": "Marana thá,, (Mi,,90)",
       "sC": "tc"
     },
     {
-      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "line": "MARANA THÁ., (Sol,,0)(Mi,,85)",
       "sC": "ta as jte"
     },
     {
-      "line": "Somos el viento, nadie nos oye., (La,m,20)(Sol,,250)",
+      "line": "Somos el viento, nadie nos oye., (La,m,0)(Sol,,270)",
       "sC": "tc"
     },
     {
-      "line": "Marana thá,, (Mi,,104)",
+      "line": "Marana thá,, (Mi,,90)",
       "sC": "tc"
     },
     {
-      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "line": "MARANA THÁ., (Sol,,0)(Mi,,85)",
       "sC": "ta as jte"
     },
     {
@@ -86,7 +86,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)",
+      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,0)(Fa,,240)",
       "sC": "ta as",
       "lines": [
         {
@@ -108,27 +108,27 @@
       "sC": "adb1"
     },
     {
-      "line": "Somos tinieblas, nadie nos guía., (La,m,20)(Sol,,250)",
+      "line": "Somos tinieblas, nadie nos guía., (La,m,0)(Sol,,230)",
       "sC": "tc"
     },
     {
-      "line": "Marana thá,, (Mi,,104)",
+      "line": "Marana thá,, (Mi,,90)",
       "sC": "tc"
     },
     {
-      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "line": "MARANA THÁ., (Sol,,0)(Mi,,85)",
       "sC": "ta as jte"
     },
     {
-      "line": "Somos cadenas, nadie nos libra., (La,m,20)(Sol,,250)",
+      "line": "Somos cadenas, nadie nos libra., (La,m,0)(Sol,,270)",
       "sC": "tc"
     },
     {
-      "line": "Marana thá,, (Mi,,104)",
+      "line": "Marana thá,, (Mi,,90)",
       "sC": "tc"
     },
     {
-      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "line": "MARANA THÁ., (Sol,,0)(Mi,,85)",
       "sC": "ta as jte"
     },
     {
@@ -139,7 +139,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_2",
       "initialState": "collapsed",
-      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)",
+      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO,, (La,m,0)(Fa,,240)",
       "sC": "ta as",
       "lines": [
         {
@@ -163,11 +163,11 @@
       "sC": "tc"
     },
     {
-      "line": "Marana thá,, (Mi,,104)",
+      "line": "Marana thá,, (Mi,,90)",
       "sC": "tc"
     },
     {
-      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "line": "MARANA THÁ., (Sol,,0)(Mi,,85)",
       "sC": "ta as jte"
     },
     {
@@ -175,11 +175,11 @@
       "sC": "ta as"
     },
     {
-      "line": "Marana thá,, (Mi,,104)",
+      "line": "Marana thá,, (Mi,,90)",
       "sC": "tc"
     },
     {
-      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "line": "MARANA THÁ., (Sol,,0)(Mi,,85)",
       "sC": "ta as jte"
     },
     {
@@ -190,7 +190,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_3",
       "initialState": "collapsed",
-      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)",
+      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO,, (La,m,0)(Fa,,240)",
       "sC": "ta as",
       "lines": [
         {
@@ -216,11 +216,11 @@
       "sC": "tc"
     },
     {
-      "line": "Marana thá,, (Mi,,104)",
+      "line": "Marana thá,, (Mi,,90)",
       "sC": "tc"
     },
     {
-      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "line": "MARANA THÁ., (Sol,,0)(Mi,,85)",
       "sC": "ta as jte"
     },
     {
@@ -228,11 +228,11 @@
       "sC": "tc"
     },
     {
-      "line": "Marana thá,, (Mi,,104)",
+      "line": "Marana thá,, (Mi,,90)",
       "sC": "tc"
     },
     {
-      "line": "MARANA THÁ., (Sol,,14)(Mi,,124)",
+      "line": "MARANA THÁ., (Sol,,0)(Mi,,85)",
       "sC": "ta as jte"
     },
     {
@@ -243,7 +243,7 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_4",
       "initialState": "collapsed",
-      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO, (La,m,20)(Fa,,264)",
+      "triggerLine": "OH CIELOS, LLOVED DE LO ALTO,, (La,m,0)(Fa,,240)",
       "sC": "ta as",
       "lines": [
         {

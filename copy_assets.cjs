@@ -41,6 +41,17 @@ folders.forEach(folder => {
     }
 });
 
+// Asegurar que src (css, img, lib, etc.) esté presente en dist/src/
+const srcDirsToCopy = ['css', 'img', 'lib'];
+srcDirsToCopy.forEach(sub => {
+    const sDir = path.resolve(__dirname, 'src', sub);
+    const dDir = path.resolve(distPath, 'src', sub);
+    if (fs.existsSync(sDir)) {
+        console.log(`Copiando src/${sub} a dist/src/${sub}...`);
+        copyFolderRecursiveSync(sDir, dDir);
+    }
+});
+
 // Copy individual files
 const files = ['manifest.json', 'sw.js', '.nojekyll', 'CNAME', 'version.json'];
 files.forEach(file => {

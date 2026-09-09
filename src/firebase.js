@@ -61,15 +61,84 @@ try {
 }
 
 export const db = dbTemp;
+
+// Interceptores para registrar en los logs cada vez que se guarda o modifica algo en Firebase
+async function setDocWithLogging(docRef, data, options) {
+  const path = docRef?.path || 'desconocido';
+  try {
+    const res = await setDoc(docRef, data, options);
+    if (path !== 'app_logs' && !path.startsWith('app_logs/')) {
+      const summary = typeof data === 'object' && data ? Object.keys(data).join(', ') : '';
+      console.log(`💾 [Firebase] Guardado en Firestore (${path}): [${summary}]`);
+    }
+    return res;
+  } catch (err) {
+    if (path !== 'app_logs' && !path.startsWith('app_logs/')) {
+      console.error(`❌ [Firebase] Error al guardar en (${path}):`, err.message || err);
+    }
+    throw err;
+  }
+}
+
+async function addDocWithLogging(colRef, data) {
+  const path = colRef?.path || colRef?.id || 'desconocido';
+  try {
+    const res = await addDoc(colRef, data);
+    if (path !== 'app_logs' && !path.startsWith('app_logs/')) {
+      const summary = typeof data === 'object' && data ? Object.keys(data).join(', ') : '';
+      console.log(`💾 [Firebase] Agregado a Firestore (${path}/${res?.id || ''}): [${summary}]`);
+    }
+    return res;
+  } catch (err) {
+    if (path !== 'app_logs' && !path.startsWith('app_logs/')) {
+      console.error(`❌ [Firebase] Error al agregar a (${path}):`, err.message || err);
+    }
+    throw err;
+  }
+}
+
+async function updateDocWithLogging(docRef, data) {
+  const path = docRef?.path || 'desconocido';
+  try {
+    const res = await updateDoc(docRef, data);
+    if (path !== 'app_logs' && !path.startsWith('app_logs/')) {
+      const summary = typeof data === 'object' && data ? Object.keys(data).join(', ') : '';
+      console.log(`💾 [Firebase] Actualizado en Firestore (${path}): [${summary}]`);
+    }
+    return res;
+  } catch (err) {
+    if (path !== 'app_logs' && !path.startsWith('app_logs/')) {
+      console.error(`❌ [Firebase] Error al actualizar (${path}):`, err.message || err);
+    }
+    throw err;
+  }
+}
+
+async function deleteDocWithLogging(docRef) {
+  const path = docRef?.path || 'desconocido';
+  try {
+    const res = await deleteDoc(docRef);
+    if (path !== 'app_logs' && !path.startsWith('app_logs/')) {
+      console.log(`🗑️ [Firebase] Eliminado de Firestore (${path})`);
+    }
+    return res;
+  } catch (err) {
+    if (path !== 'app_logs' && !path.startsWith('app_logs/')) {
+      console.error(`❌ [Firebase] Error al eliminar de (${path}):`, err.message || err);
+    }
+    throw err;
+  }
+}
+
 export { 
   doc, 
-  setDoc, 
+  setDocWithLogging as setDoc, 
   getDoc, 
-  updateDoc,
-  deleteDoc,
+  updateDocWithLogging as updateDoc,
+  deleteDocWithLogging as deleteDoc,
   deleteField,
   collection,
-  addDoc,
+  addDocWithLogging as addDoc,
   getDocs, 
   onSnapshot, 
   query, 

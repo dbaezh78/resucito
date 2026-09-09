@@ -801,66 +801,173 @@ window.importNotes = function() {
   input.click();
 };
 
-// Wake Lock (Pantalla encendida)
+// Wake Lock (Pantalla encendida) robusto y resistente
 let wakeLock = null;
-window.requestWakeLock = async function() {
+let wakeLockFallbackVideo = null;
+let wakeLockRetryTimer = null;
+
+// Crear un elemento de video invisible con un loop minúsculo para navegadores o WebViews que no soporten o revoquen el WakeLock
+function ensureWakeLockVideoFallback() {
+  if (wakeLockFallbackVideo) return wakeLockFallbackVideo;
   try {
-    if ('wakeLock' in navigator) {
+    const video = document.createElement('video');
+    video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
+    video.setAttribute('muted', '');
+    video.muted = true;
+    video.loop = true;
+    video.style.position = 'fixed';
+    video.style.left = '-9999px';
+    video.style.top = '-9999px';
+    video.style.width = '1px';
+    video.style.height = '1px';
+    video.style.opacity = '0.001';
+    video.style.pointerEvents = 'none';
+    // Video MP4 base64 ultraligero de 1 pixel transparente (~1 seg en bucle)
+    video.src = 'data:video/mp4;base64,AAAAHGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAAIZnJlZQAAAAhmZGF0AAAAABAAAwABAAAABgAIAAAAEG1vb3YAAABsbXZoZAAAAAB3f8vcd3/L3AAAfQAAAH0AAAABAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAc3RyawAAAEB0cmtoAAAACHd/y9x3f8vcAAAAAAEAAAAAAAAAfQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA';
+    document.body.appendChild(video);
+    wakeLockFallbackVideo = video;
+    return video;
+  } catch (e) {
+    return null;
+  }
+}
+
+window.requestWakeLock = async function() {
+  const isWakeLockPrefActive = localStorage.getItem('pref-wakelock') === 'true';
+  if (!isWakeLockPrefActive) return;
+
+  // 1. Intentar API estándar de Screen Wake Lock
+  if ('wakeLock' in navigator && navigator.wakeLock && typeof navigator.wakeLock.request === 'function') {
+    try {
+      if (wakeLock && !wakeLock.released) {
+        return; // Ya está activo
+      }
       if (wakeLock) {
         try { await wakeLock.release(); } catch(e) {}
       }
       wakeLock = await navigator.wakeLock.request('screen');
-      console.log('Screen Wake Lock is active');
+      console.log('💡 [Ajustes] Screen Wake Lock activado correctamente');
+      
       wakeLock.addEventListener('release', () => {
-        console.log('Screen Wake Lock was released');
+        console.log('💡 [Ajustes] Screen Wake Lock fue liberado');
         wakeLock = null;
+        // Si la preferencia sigue activa y el documento sigue visible, intentar re-adquirir
+        if (localStorage.getItem('pref-wakelock') === 'true' && document.visibilityState === 'visible') {
+          clearTimeout(wakeLockRetryTimer);
+          wakeLockRetryTimer = setTimeout(() => {
+            if (document.visibilityState === 'visible') {
+              window.requestWakeLock();
+            }
+          }, 1000);
+        }
       });
+      return;
+    } catch (err) {
+      console.warn('💡 [Ajustes] Wake Lock API estándar no concedido o error:', err.message || err);
     }
-  } catch (err) {
-    console.warn('Wake Lock request failed:', err);
   }
+
+  // 2. Fallback con video en bucle para iOS o navegadores que fallen
+  try {
+    const video = ensureWakeLockVideoFallback();
+    if (video && video.paused) {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          console.log('💡 [Ajustes] Wake Lock fallback (video loop) activo');
+        }).catch(err => {
+          console.warn('💡 [Ajustes] Fallback video loop no pudo auto-reproducirse:', err.message || err);
+        });
+      }
+    }
+  } catch(e) {}
 };
 
 window.releaseWakeLock = function() {
+  clearTimeout(wakeLockRetryTimer);
   if (wakeLock !== null) {
     try { wakeLock.release(); } catch(e) {}
     wakeLock = null;
   }
+  if (wakeLockFallbackVideo) {
+    try {
+      wakeLockFallbackVideo.pause();
+    } catch(e) {}
+  }
+  console.log('💡 [Ajustes] Screen Wake Lock desactivado completamente');
 };
 
+// Re-adquisición automática al volver a la pestaña, ventana o interactuar
 window.handleVisibilityChange = async function() {
   if (document.visibilityState === 'visible') {
     const isWakeLockPrefActive = localStorage.getItem('pref-wakelock') === 'true';
     if (isWakeLockPrefActive) {
       await window.requestWakeLock();
     }
+  } else {
+    // Cuando el usuario sale de la pestaña o bloquea, pausar fallback si existía
+    if (wakeLockFallbackVideo) {
+      try { wakeLockFallbackVideo.pause(); } catch(e) {}
+    }
   }
 };
+
+let wakeLockUserInteractionAttached = false;
+function attachWakeLockInteractionListeners() {
+  if (wakeLockUserInteractionAttached) return;
+  wakeLockUserInteractionAttached = true;
+
+  // Reactivar si se perdió tras apagado de pantalla y el usuario toca la pantalla
+  const tryReacquireOnInteraction = () => {
+    if (localStorage.getItem('pref-wakelock') === 'true') {
+      if (!wakeLock || wakeLock.released) {
+        window.requestWakeLock();
+      }
+    }
+  };
+
+  ['pointerdown', 'touchstart', 'focus'].forEach(evtName => {
+    window.addEventListener(evtName, tryReacquireOnInteraction, { passive: true });
+  });
+  window.addEventListener('pageshow', () => {
+    if (localStorage.getItem('pref-wakelock') === 'true') {
+      window.requestWakeLock();
+    }
+  });
+}
 
 window.initWakeLockPreference = function() {
   const isWakeLockPrefActive = localStorage.getItem('pref-wakelock') === 'true';
   const wakelockToggle = document.getElementById('wakelock-toggle');
   
+  // Siempre asegurar escuchadores de ciclo de vida
+  document.removeEventListener('visibilitychange', window.handleVisibilityChange);
+  document.addEventListener('visibilitychange', window.handleVisibilityChange);
+  attachWakeLockInteractionListeners();
+
+  if (isWakeLockPrefActive) {
+    window.requestWakeLock();
+  }
+
   if (wakelockToggle) {
     wakelockToggle.checked = isWakeLockPrefActive;
     
-    if (isWakeLockPrefActive) {
-      window.requestWakeLock();
-      document.addEventListener('visibilitychange', window.handleVisibilityChange);
+    // Evitar múltiples listeners en el toggle
+    if (!wakelockToggle.dataset.hasListener) {
+      wakelockToggle.dataset.hasListener = 'true';
+      wakelockToggle.addEventListener('change', async (e) => {
+        const active = e.target.checked;
+        localStorage.setItem('pref-wakelock', active ? 'true' : 'false');
+        console.log(`💡 [Ajustes] Mantener Pantalla Encendida (Wake Lock): ${active ? 'Activado' : 'Desactivado'}`);
+        
+        if (active) {
+          await window.requestWakeLock();
+        } else {
+          window.releaseWakeLock();
+        }
+      });
     }
-
-    wakelockToggle.addEventListener('change', async (e) => {
-      const active = e.target.checked;
-      localStorage.setItem('pref-wakelock', active ? 'true' : 'false');
-      
-      if (active) {
-        await window.requestWakeLock();
-        document.addEventListener('visibilitychange', window.handleVisibilityChange);
-      } else {
-        window.releaseWakeLock();
-        document.removeEventListener('visibilitychange', window.handleVisibilityChange);
-      }
-    });
   }
 };
 
@@ -874,6 +981,7 @@ window.initAutoHideNavPreference = function() {
     autohideToggle.addEventListener('change', (e) => {
       const active = e.target.checked;
       localStorage.setItem('pref-autohide-nav', active ? 'true' : 'false');
+      console.log(`🧭 [Ajustes] Ocultar Automáticamente Navegador: ${active ? 'Activado (30 seg)' : 'Desactivado'}`);
       if (typeof window.startAutoHideTimer === 'function') {
         window.startAutoHideTimer();
       }
@@ -907,6 +1015,7 @@ window.initZoomFingerPreference = function() {
     zoomFingerToggle.addEventListener('change', (e) => {
       const active = e.target.checked;
       localStorage.setItem('pref-zoom-finger', active ? 'true' : 'false');
+      console.log(`🔍 [Ajustes] Zoom con los dedos (Pinch-to-zoom): ${active ? 'Activado' : 'Desactivado'}`);
       applyZoomFinger(active);
     });
   } else {
@@ -1081,6 +1190,14 @@ window.initAjustes = async function() {
     if (zoomFingerToggle) {
       zoomFingerToggle.checked = localStorage.getItem('pref-zoom-finger') !== 'false';
     }
+    const wakelockToggle = document.getElementById('wakelock-toggle');
+    if (wakelockToggle) {
+      wakelockToggle.checked = localStorage.getItem('pref-wakelock') === 'true';
+    }
+    const autohideToggle = document.getElementById('autohide-nav-toggle');
+    if (autohideToggle) {
+      autohideToggle.checked = localStorage.getItem('pref-autohide-nav') === 'true';
+    }
     if (typeof updateCantoEquipoBadge === 'function') {
       updateCantoEquipoBadge();
     }
@@ -1150,6 +1267,7 @@ window.initAjustes = async function() {
     closeFiltersToggle.checked = isCloseOnSelect;
     closeFiltersToggle.addEventListener('change', (e) => {
       localStorage.setItem('closeFiltersOnSelect', e.target.checked);
+      console.log(`🔘 [Ajustes] Cerrar Filtros al Seleccionar: ${e.target.checked ? 'Activado' : 'Desactivado'}`);
     });
   }
 
@@ -1159,6 +1277,7 @@ window.initAjustes = async function() {
     multiMomentToggle.checked = isMultiMoment;
     multiMomentToggle.addEventListener('change', (e) => {
       localStorage.setItem('multiMomentFilter', e.target.checked);
+      console.log(`🔘 [Ajustes] Filtro Multimomento: ${e.target.checked ? 'Activado' : 'Desactivado'}`);
       if (typeof window.limpiarFiltrosIndex === 'function') {
         window.limpiarFiltrosIndex();
       }
@@ -1171,6 +1290,7 @@ window.initAjustes = async function() {
     combineStageMomentToggle.checked = isCombine;
     combineStageMomentToggle.addEventListener('change', (e) => {
       localStorage.setItem('combineStageMomentFilter', e.target.checked);
+      console.log(`🔘 [Ajustes] Combinar Etapa y Momento: ${e.target.checked ? 'Activado' : 'Desactivado'}`);
       if (typeof window.limpiarFiltrosIndex === 'function') {
         window.limpiarFiltrosIndex();
       }
@@ -1183,6 +1303,7 @@ window.initAjustes = async function() {
     keepStageToggle.checked = isKeepActive;
     keepStageToggle.addEventListener('change', (e) => {
       localStorage.setItem('keepStageFilterActive', e.target.checked);
+      console.log(`🔘 [Ajustes] Mantener Filtro de Etapa Activo: ${e.target.checked ? 'Activado' : 'Desactivado'}`);
     });
   }
 
@@ -1195,6 +1316,7 @@ window.initAjustes = async function() {
     }
     stickySearchToggle.addEventListener('change', (e) => {
       localStorage.setItem('stickySearch', e.target.checked);
+      console.log(`🔘 [Ajustes] Buscador Fijo Superior: ${e.target.checked ? 'Activado' : 'Desactivado'}`);
       if (typeof window.applyStickySearchPreference === 'function') {
         window.applyStickySearchPreference();
       }
@@ -1691,6 +1813,13 @@ window.initAjustes = async function() {
       jsonChordsRow.style.display = canViewSongJsonChords ? 'flex' : 'none';
     }
 
+    // Visibilidad de tarjeta "Respaldo del Sistema" en Ajustes > Páginas
+    const cardRespaldo = document.getElementById('card-setting-respaldo');
+    if (cardRespaldo) {
+      const canViewRespaldo = isAdmin || hasPermission('page_respaldo');
+      cardRespaldo.style.display = canViewRespaldo ? 'flex' : 'none';
+    }
+
     // Visibilidad de subpestañas dentro de Canto
     const cantoSubtabCantoBtn = document.getElementById('canto-subtab-canto-btn');
     const cantoSubtabLiturgiaBtn = document.getElementById('canto-subtab-liturgia-btn');
@@ -2173,7 +2302,7 @@ window.initAjustes = async function() {
       { label: 'Paises y Diócesis (JSON)', url: 'data/paises.json' }
     ];
 
-    const htmlsToParse = ['index.html', 'perfil.html', 'preparar.html', 'bitacora.html', 'expancion.html', 'cliturgico.html', 'mantcantos.html'];
+    const htmlsToParse = ['index.html', 'perfil.html', 'preparar.html', 'bitacora.html', 'expancion.html', 'cliturgico.html', 'mantcantos.html', 'respaldo.html'];
     const jsSet = new Set();
     const cssSet = new Set();
     const assetSet = new Set();

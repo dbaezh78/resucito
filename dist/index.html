@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>RESUCITÓ - Cantos Neocatecumenales</title>
+  <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
+  <link rel="manifest" href="./assets/manifest-Dpg-bcG-.json">
+  <meta name="theme-color" content="#000000">
+  <script type="module" crossorigin src="./assets/main-DahnpWur.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/preload-helper-PeQqBfsS.js">
+  <link rel="modulepreload" crossorigin href="./assets/bitacoraLogger-D-4sveWh.js">
+  <link rel="modulepreload" crossorigin href="./assets/sync-D_Aow4CG.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-vLt7BhZF.css">
+</head>
+<body class="theme-light">
+  <div class="app-container">
+    
+    <!-- BANNER DE ENCABEZADO -->
+    <header>
+      <div class="title-banner">
+        <img class="logo-app" src="./assets/logo_cantos-N_KLkJXN.png" alt="Camino Neocatecumenal" onclick="location.reload();" style="cursor: pointer;">
+        <h1>RESUCITÓ</h1>
+      </div>
+      <div class="marquee-banner">
+        <span class="marquee-content">
+          "Amad a vuestros enemigos, ¡Vengo pronto!, el cantor hace un servicio que lo ayuda a Él y a toda la comunidad, es un servicio de humildad sencillez y alabanza..."
+        </span>
+      </div>
+    </header>
+
+    <!-- VISTA 1: DASHBOARD / BUSCADOR -->
+    <div id="dashboard-view" class="view dashboard-view">
+      <img src="./assets/christ-B1J2MPVh.png" alt="Cristo" class="dashboard-christ-img-mobile">
+      <!-- Flex contenedor superior para la imagen de Cristo fija a la izquierda y controles a la derecha -->
+      <div class="dashboard-top-flex">
+        <div class="dashboard-left-image-container">
+          <img src="./assets/christ-B1J2MPVh.png" alt="Cristo" class="dashboard-christ-img-pc">
+        </div>
+        <div class="dashboard-right-controls">
+          <!-- Pestañas de Libros (Book Tabs) -->
+          <div class="book-tabs">
+            <button class="book-tab active" data-book="resucito">Resucitó</button>
+            <button class="book-tab" data-book="joven">Canto Joven</button>
+            <button class="book-tab" data-book="aclamaciones">Aclamaciones</button>
+            <button class="book-tab" data-book="salmodias">Salmodias</button>
+            <button class="book-tab" data-book="catequesis">Catequesis</button>
+            <button class="book-tab" data-book="extras" id="book-tab-extras" style="display: none;">Extras</button>
+            <button class="book-tab" data-book="favoritos">Favoritos</button>
+          </div>
+
+          <!-- Buscador y Configuración -->
+          <div class="search-and-settings-row">
+            <!-- Botón de ajustes en la página principal -->
+
+
+            <!-- Contenedor del Buscador -->
+            <div class="search-box-container">
+              <!-- Botón de Toggle Filtros (dentro del buscador) -->
+              <button id="toggle-filters-btn" class="btn-inside-search" title="Filtros de Búsqueda">
+                <span class="material-symbols-outlined">filter_list</span>
+              </button>
+              
+              <input type="search" id="search-input" class="search-input" placeholder="Buscar canto..." autocomplete="off">
+              
+              <span class="material-symbols-outlined clear-search-btn" id="clear-search-btn" style="display: none;">close</span>
+            </div>
+
+            
+
+          </div>
+        </div>
+
+        <!-- Barra de Filtros Exclusiva para Aclamaciones (Ciclos y Tiempos Litúrgicos) -->
+        <div id="aclamaciones-filter-bar" class="aclamaciones-filter-bar" style="display: none;">
+          <div class="aclamaciones-filter-group">
+            <span class="aclamaciones-filter-label">Ciclo:</span>
+            <div class="aclamaciones-pills" id="aclamaciones-ciclos-container">
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill active" data-ciclo="Ciclo A">Ciclo A</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo B">Ciclo B</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo C">Ciclo C</button>
+            </div>
+          </div>
+          <div class="aclamaciones-filter-group">
+            <span class="aclamaciones-filter-label">Tiempo:</span>
+            <div class="aclamaciones-pills" id="aclamaciones-tiempos-container">
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Adviento">Adviento</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Navidad">Navidad</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Cuaresma">Cuaresma</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Pascua">Pascua</button>
+              <button class="btn filter-pill aclamaciones-pill active" data-tiempo="Tiempo Ordinario">Ordinario</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Solemnidades y Fiestas">Fiestas</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel de Filtros -->
+      <div id="filters-panel" class="filters-panel" style="display: none;">
+        <!-- Etapas -->
+        <div class="filter-section">
+          <h3>Etapas del Camino</h3>
+          <div class="filter-buttons-grid" id="stage-filters-container">
+            <button class="btn filter-pill stage-pill-pre" data-stage="Precatecumenado">Precatecumenado</button>
+            <button class="btn filter-pill stage-pill-cate" data-stage="Catecumenado">Catecumenado</button>
+            <button class="btn filter-pill stage-pill-ele" data-stage="Eleccion">Elección</button>
+            <button class="btn filter-pill stage-pill-lit" data-stage="Liturgia">Liturgia</button>
+            <button class="btn filter-pill stage-pill-cat" data-stage="Catolicos">Otros Católicos</button>
+          </div>
+        </div>
+
+        <!-- Filtros de los Cantos -->
+        <div class="filter-section">
+          <h3>Filtros de los Cantos</h3>
+          <div class="filter-buttons-grid" id="moment-filters-container">
+            <button class="btn filter-pill active" id="btn-filter-indice" data-moment="Indice de Cantos">Indice de Cantos</button>
+            <button class="btn filter-pill" data-moment="Vírgen María">Vírgen María</button>
+            <button class="btn filter-pill" data-moment="Entrada">Entrada</button>
+            <button class="btn filter-pill" data-moment="Comunión">Comunión</button>
+            <button class="btn filter-pill" data-moment="Celebración">Celebración</button>
+            <button class="btn filter-pill" data-moment="Paz">Paz</button>
+            <button class="btn filter-pill" data-moment="Final">Final</button>
+            <button class="btn filter-pill" data-moment="Niños">Niños</button>
+            <button class="btn filter-pill" data-moment="Fracción del Pan">Fracción del Pan</button>
+            <button class="btn filter-pill" data-moment="Salmodias">Salmodias</button>
+            <button class="btn filter-pill" data-moment="Adviento">Adviento</button>
+            <button class="btn filter-pill" data-moment="Navidad">Navidad</button>
+            <button class="btn filter-pill" data-moment="Pascua">Pascua</button>
+            <button class="btn filter-pill" data-moment="Pentecostés">Pentecostés</button>
+            <button class="btn filter-pill" data-moment="Aclamación">Aclamación</button>
+            <button class="btn filter-pill" data-moment="Penitencial">Penitencial</button>
+            <button class="btn filter-pill" data-moment="Nuevo Testamento">Nuevo Testamento</button>
+            <button class="btn filter-pill" data-moment="Antiguo Testamento">Antiguo Testamento</button>
+            <button class="btn filter-pill" data-moment="Villancicos">Villancicos</button>
+            <button class="btn filter-pill" data-moment="Católicos">Católicos</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de Canciones -->
+      <div id="songs-grid" class="songs-grid">
+        <!-- Tarjetas dinámicas -->
+      </div>
+    </div>
+
+    <!-- VISTA 2: VISUALIZADOR DE CANTO -->
+    <div id="song-viewer-view" class="view song-viewer-view" style="display: none;">
+      
+      <!-- Cabecera fija del visor (Toolbar y reproductor de audio) -->
+      <div class="viewer-sticky-header">
+        <!-- Toolbar del visor -->
+        <div class="viewer-toolbar">
+          <!-- Izquierda: Volver y pantalla de Tono/Cejilla -->
+          <div class="toolbar-left">
+            <button id="viewer-back-btn" class="btn btn-icon" title="Volver al buscador">
+              <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            
+            <div class="tone-capo-display" id="tone-capo-trigger" title="Cambiar tono o cejilla">
+              <span class="material-symbols-outlined tone-music-note">music_note</span>
+              <span id="key-badge" class="key-badge-text">La</span>
+              <img src="./assets/cejilla-BcUte3T8.png" alt="Cejilla" class="cejilla-icon-img">
+              <span id="capo-badge" class="capo-badge-text">5/ 5º traste</span>
+            </div>
+
+            <!-- Disparador de Tono/Cejilla compacto para móviles/tablets -->
+            <button id="tone-dropdown-trigger" class="tone-capo-display-compact" style="display: none;" title="Cambiar tono o cejilla">
+              <span class="material-symbols-outlined" style="font-size: 1rem;">music_note</span>
+              <span id="tone-dropdown-trigger-key" class="key-badge-text">La</span>
+              <img src="./assets/cejilla-BcUte3T8.png" alt="Cejilla" class="cejilla-icon-img" style="height: 14px; width: auto; margin-left: 2px;">
+              <span id="tone-dropdown-trigger-capo" class="capo-badge-text">5</span>
+            </button>
+
+            <button id="toolbar-chord-edit-btn" class="btn btn-icon" title="Editar acordes" style="margin-left: 8px; display: none;">
+              <span class="material-symbols-outlined" id="toolbar-chord-edit-icon">edit_note</span>
+            </button>
+            <button id="toolbar-save-chord-btn" class="btn btn-icon" title="Guardar posiciones" style="margin-left: 8px; display: none; color: #11e05a;">
+              <span class="material-symbols-outlined" id="toolbar-save-chord-icon">save</span>
+            </button>
+          </div>
+
+          <!-- Centro: Título pegajoso cuando se desplaza hacia abajo -->
+          <div class="toolbar-center" id="toolbar-sticky-title" style="display: none;">
+            <span class="toolbar-title-text" id="toolbar-sticky-title-text"></span>
+          </div>
+
+          <!-- Derecha: Iconos de control, navegación y buscador rápido -->
+          <div class="toolbar-right">
+            <!-- Catequesis del Canto -->
+            <button id="toolbar-catequesis-btn" class="btn btn-icon" title="Ver Catequesis del Canto">
+              <span class="material-symbols-outlined">auto_stories</span>
+            </button>
+
+            <!-- Abrir Modal de Acordes -->
+            <button id="chord-modal-trigger-btn" class="btn btn-icon" title="Transportar / Ver acordes">
+              <span class="material-symbols-outlined">music_note</span>
+            </button>
+
+            <!-- Favorito (Star) -->
+            <button id="favorite-btn" class="btn btn-icon" title="Favorito" style="margin-left: 8px;">
+              <span class="material-symbols-outlined" id="favorite-icon">star</span>
+            </button>
+
+            <!-- Dividir pantalla (Book icon) -->
+            <button id="split-layout-btn" class="btn btn-icon" title="Alternar vista en 2 columnas">
+              <span class="material-symbols-outlined">menu_book</span>
+            </button>
+
+            <!-- Asamblea Toggle -->
+            <button id="asamblea-toggle-btn" class="btn btn-icon" title="Alternar partes de asamblea">
+              <span class="material-symbols-outlined">visibility</span>
+            </button>
+
+            <!-- Reproducción de Audio -->
+            <button id="audio-play-btn" class="btn btn-icon" title="Reproducir audio" style="display: none;">
+              <span class="material-symbols-outlined">play_arrow</span>
+            </button>
+
+            <!-- Auto-scroll -->
+            <button id="scroll-play-btn" class="btn btn-icon" title="Iniciar auto-desplazamiento">
+              <span class="material-symbols-outlined">south</span>
+            </button>
+
+            <!-- Navegación de Cantos -->
+            <button id="prev-song-btn" class="btn btn-icon" title="Canto anterior">
+              <span class="material-symbols-outlined">arrow_left</span>
+            </button>
+            <button id="next-song-btn" class="btn btn-icon" title="Canto siguiente">
+              <span class="material-symbols-outlined">arrow_right</span>
+            </button>
+
+            <!-- Menú Desplegable para Móviles/Tablets (En la esquina donde estaba settings) -->
+            <div id="toolbar-dropdown-container" class="toolbar-dropdown" style="display: none;">
+              <button id="toolbar-dropdown-trigger" class="btn btn-icon" title="Menú de herramientas">
+                <span class="material-symbols-outlined">menu</span>
+              </button>
+              <div id="toolbar-dropdown-content" class="toolbar-dropdown-content">
+                <button id="settings-open-btn" class="btn btn-icon" title="Ajustes visuales">
+                  <span class="material-symbols-outlined">settings</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Buscador rápido siempre de primero en la esquina derecha superior -->
+            <div id="toolbar-search-container" class="toolbar-search-container" style="position: relative; flex-shrink: 0; order: 9999;">
+              <input type="text" id="toolbar-search-input" class="toolbar-search-input" placeholder="Buscar..." autocomplete="off">
+              <div id="toolbar-search-suggestions" class="search-suggestions-dropdown" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reproductor de Audio -->
+        <div id="viewer-audio-container" class="audio-player-container">
+          <audio id="viewer-audio-player" controls preload="metadata"></audio>
+        </div>
+      </div>
+
+      <!-- Contenedor deslizante de tres diapositivas (carrusel interactivo) -->
+      <div id="canto-carousel-viewport" style="width: 100%; overflow: hidden; position: relative;">
+        <div id="canto-slider-container" class="canto-slideX1">
+          <div id="canto-slide-prev" class="canto-slide canto-slideX2"></div>
+          
+          <div id="canto-slide-active" class="canto-slide canto-slideX3">
+            <!-- Contenedor del contenido del canto para transiciones -->
+            <div id="canto-content-transition-wrapper" class="canto-content-transition-wrapper">
+              <!-- Cabecera del canto (Título e imagen de Cristo estilo libro) -->
+              <div id="canto-header-block" class="canto-header-block"></div>
+
+              <!-- Contenedor del Canto de dos columnas -->
+              <div id="canto-columns" class="canto-columns-container">
+                <div id="canto-left-col" class="canto-column"></div>
+                <div id="canto-right-col" class="canto-column"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="canto-slide-next" class="canto-slide" style="width: calc((100% - 80px) / 3); flex-shrink: 0; opacity: 0.8; box-sizing: border-box; padding: 0 10px;"></div>
+        </div>
+      </div>
+
+      <!-- Notas oficiales del canto si están definidas en el JSON -->
+      <div id="viewer-song-official-notes" class="viewer-song-official-notes" style="display: none;"></div>
+
+      <!-- Pie de página del Visor del Canto (Categorías, Nota Modal, Valoración y Número) -->
+      <div id="viewer-song-footer-bar" class="viewer-song-footer-bar">
+        <div class="footer-bar-left" id="footer-moments-list">
+          <!-- Se llena dinámicamente con las categorías/momentos del canto -->
+        </div>
+
+        <div class="footer-bar-center">
+          <button id="song-footer-note-btn" class="footer-icon-btn" title="Añadir / Editar nota personal">
+            <span class="material-symbols-outlined" style="font-size: 26px;">edit_note</span>
+          </button>
+        </div>
+
+        <div class="footer-bar-right">
+          <div class="footer-rating-stars" id="footer-rating-stars">
+            <!-- 5 estrellas interactivas -->
+          </div>
+          <span class="footer-song-number" id="footer-song-number"></span>
+        </div>
+      </div>
+
+      <!-- Notas del Cantor (Oculto/Opcional para compatibilidad) -->
+      <div class="notes-cantor-section" style="display: none;">
+        <textarea id="notes-textarea" class="notes-textarea"></textarea>
+      </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p>RESUCITÓ v2.0 • Diseñado para la comunidad neocatecumenal</p>
+      <p>Soporte sin conexión activado • Funciona 100% offline</p>
+    </footer>
+
+  </div>
+
+  <!-- MODAL: NOTA PERSONAL DEL CANTOR -->
+  <div id="song-note-modal" class="modal-overlay" style="display: none; z-index: 100005;">
+    <div class="modal-content-card" style="max-width: 440px; width: 90%; padding: 24px; border-radius: 20px; text-align: center; background: var(--panel-bg, #ffffff); color: var(--text-color, #212529); border: 1px solid var(--panel-border, rgba(0,0,0,0.15)); box-shadow: 0 16px 40px rgba(0,0,0,0.4);">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--panel-border); padding-bottom: 10px; margin-bottom: 16px;">
+        <h3 style="margin: 0; display: flex; align-items: center; gap: 8px; font-size: 1.15rem; color: var(--accent-color, #d01212);">
+          <span class="material-symbols-outlined">edit_note</span> Nota del Cantor
+        </h3>
+        <button id="close-song-note-modal" style="background: transparent; border: none; font-size: 1.4rem; cursor: pointer; color: var(--text-color);">&times;</button>
+      </div>
+      
+      <p style="font-size: 0.85rem; color: var(--text-muted, #666); margin-bottom: 12px; text-align: left;">
+        Escribe aquí tus anotaciones técnicas, cejillas opcionales o recordatorios para este canto:
+      </p>
+      
+      <textarea id="modal-notes-textarea" style="width: 100%; height: 120px; padding: 12px; border-radius: 12px; border: 1.5px solid var(--panel-border, #ccc); background: var(--input-bg, #fff); color: var(--text-color); font-family: inherit; font-size: 0.9rem; resize: vertical; box-sizing: border-box; outline: none; margin-bottom: 16px;" placeholder="Ejemplo: Salmo para la Comunión, tono suave..."></textarea>
+
+      <button id="btn-save-song-note" style="width: 100%; padding: 10px; border-radius: 12px; border: none; background: var(--accent-color, #d01212); color: #fff; font-weight: 700; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+        <span class="material-symbols-outlined">save</span> Guardar Nota
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL: DIAGRAMA DE ACORDE -->
+  <div id="chord-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content dacorde">
+      <div class="modal-header" style="justify-content: center; border: none; padding: 0; margin-bottom: 15px;">
+        <h2 id="chord-modal-title" style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--text-color); margin: 0;">Transportar Acorde</h2>
+        <button id="chord-modal-close" class="btn btn-icon" style="display: none;">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      
+      <p id="chord-modal-subtitle" style="display: none;"></p>
+
+      <!-- Selector de Nota Base -->
+      <div class="chord-picker-row">
+        <label id="chord-picker-label" style="display: none;"></label>
+        <div class="chord-picker-grid" id="modal-chord-note-picker">
+          <button class="btn btn-picker" data-note="Do">Do</button>
+          <button class="btn btn-picker" data-note="Do#">Do#</button>
+          <button class="btn btn-picker" data-note="Re">Re</button>
+          <button class="btn btn-picker" data-note="Re#">Re#</button>
+          <button class="btn btn-picker" data-note="Mi">Mi</button>
+          <button class="btn btn-picker" data-note="Fa">Fa</button>
+          <button class="btn btn-picker" data-note="Fa#">Fa#</button>
+          <button class="btn btn-picker" data-note="Sol">Sol</button>
+          <button class="btn btn-picker" data-note="Sol#">Sol#</button>
+          <button class="btn btn-picker" data-note="La">La</button>
+          <button class="btn btn-picker" data-note="Sib">Sib</button>
+          <button class="btn btn-picker" data-note="Si">Si</button>
+        </div>
+      </div>
+      
+      <!-- Selector de Tipo/Variación -->
+      <div class="chord-picker-row" style="margin-top: 15px; border-top: 1px dashed var(--panel-border); padding-top: 12px;">
+        <h4 style="font-size: 0.85rem; margin-bottom: 8px; font-weight: 600; color: var(--text-color); opacity: 0.8;">Variación:</h4>
+        <div class="chord-picker-grid" id="modal-chord-type-picker" style="grid-template-columns: repeat(5, 1fr); gap: 6px;">
+          <button class="btn btn-type-picker" data-type="">Mayor</button>
+          <button class="btn btn-type-picker" data-type="m">m</button>
+          <button class="btn btn-type-picker" data-type="7">7</button>
+          <button class="btn btn-type-picker" data-type="m7">m7</button>
+          <button class="btn btn-type-picker" data-type="maj7">maj7</button>
+        </div>
+      </div>
+      
+      <!-- Acordes y Cejillas (Canto y Cantor) -->
+      <div class="chord-picker-info-row">
+        <div class="chord-picker-info-col">
+          <div class="chord-picker-info-label">Acorde Canto</div>
+          <div id="modal-canto-original-chord" class="chord-picker-info-value accent">La m</div>
+        </div>
+        
+        <div class="chord-picker-info-col-border">
+          <div class="chord-picker-info-label">Cejilla Canto</div>
+          <div id="modal-canto-original-capo" class="chord-picker-info-value">Sin cejilla</div>
+        </div>
+        
+        <div class="chord-picker-info-col-border">
+          <div class="chord-picker-info-label">Acorde Cantor</div>
+          <div id="modal-cantor-current-chord" class="chord-picker-info-value accent">La m</div>
+        </div>
+
+        <div class="chord-picker-info-col-capo-selector">
+          <div class="chord-picker-info-label">Cejilla Cantor</div>
+          <select id="modal-capo-select" class="chord-picker-capo-select">
+            <option value="0">Sin cejilla</option>
+            <option value="1">1º traste</option>
+            <option value="2">2º traste</option>
+            <option value="3">3º traste</option>
+            <option value="4">4º traste</option>
+            <option value="5">5º traste</option>
+            <option value="6">6º traste</option>
+            <option value="7">7º traste</option>
+            <option value="8">8º traste</option>
+            <option value="9">9º traste</option>
+            <option value="10">10º traste</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="chord-diagram-view" style="margin-top: 15px; border-top: 1px solid var(--panel-border); padding-top: 15px;">
+        <h4 id="chord-diagram-title" style="font-size: 0.95rem; margin-bottom: 8px; text-align: center; color: var(--accent-color); font-weight: 700;">Digitación del acorde:</h4>
+        <img id="chord-diagram-img" src="" alt="Cargando diagrama..." style="max-height: 240px; display: block; margin: 0 auto; border-radius: 8px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: VISOR DE CATEQUESIS -->
+  <div id="catequesis-viewer-modal" class="modal-overlay" style="display: none; z-index: 100005;">
+    <div class="modal-content catequesis-viewer-content" style="max-width: 850px; max-height: 90vh; overflow-y: auto; border-radius: 16px;">
+      <div class="modal-header" style="position: sticky; top: 0; background: var(--panel-bg); z-index: 10; border-bottom: 1.5px solid var(--panel-border); padding: 16px 20px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="material-symbols-outlined" style="font-size: 1.8rem; color: var(--accent-color, #d01212);">auto_stories</span>
+          <div>
+            <h3 id="cat-view-canto-title" style="margin: 0; font-size: 1.25rem; font-weight: 800;">Título del Canto</h3>
+            <span id="cat-view-canto-subtitle" style="font-size: 0.82rem; color: var(--text-muted);">Cita Bíblica</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button id="cat-view-btn-listen" class="btn" style="padding: 6px 12px; font-size: 0.8rem; font-weight: 700; border-radius: 8px; display: inline-flex; align-items: center; gap: 5px; background: #0284c7; color: #fff; border: none; cursor: pointer; transition: all 0.2s;" title="Escuchar catequesis en voz alta">
+            <span id="cat-view-listen-icon" class="material-symbols-outlined" style="font-size: 1.15rem;">volume_up</span>
+            <span id="cat-view-listen-text">Escuchar</span>
+          </button>
+          <button id="cat-view-btn-edit" class="btn theme-btn" style="padding: 6px 12px; font-size: 0.8rem; font-weight: 700; border-radius: 8px; display: inline-flex; align-items: center; gap: 4px;">
+            <span class="material-symbols-outlined" style="font-size: 1.1rem;">edit</span>
+            Editar
+          </button>
+          <button id="cat-view-btn-close" class="modal-close" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-color);">&times;</button>
+        </div>
+        <!-- Barra Interactiva de Progreso de Lectura (Raya Verde Buscadora) -->
+        <div id="cat-speech-progress-track" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 7px; background: rgba(0,0,0,0.08); cursor: pointer; display: none; z-index: 12;" title="Haz clic o arrastra para adelantar o retroceder la lectura">
+          <div id="cat-speech-progress-bar" style="position: relative; width: 0%; height: 100%; background: #22c55e; transition: width 0.08s linear; box-shadow: 0 0 6px rgba(34, 197, 94, 0.7);">
+            <div id="cat-speech-progress-thumb" style="position: absolute; right: -5px; top: 50%; transform: translateY(-50%); width: 12px; height: 12px; background: #ffffff; border: 2.5px solid #16a34a; border-radius: 50%; box-shadow: 0 1px 4px rgba(0,0,0,0.35); pointer-events: none;"></div>
+          </div>
+        </div>
+      </div>
+      <div id="cat-view-body" class="catequesis-view-body" style="padding: 20px;">
+        <!-- Contenido dinámico renderizado por JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: FORMULARIO DE CATEQUESIS -->
+  <div id="catequesis-form-modal" class="modal-overlay" style="display: none; z-index: 100005;">
+    <div class="modal-content catequesis-form-content" style="max-width: 800px; max-height: 90vh; overflow-y: auto; border-radius: 16px;">
+      <div class="modal-header" style="position: sticky; top: 0; background: var(--panel-bg); z-index: 10; border-bottom: 1.5px solid var(--panel-border); padding: 16px 20px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="material-symbols-outlined" style="font-size: 1.8rem; color: var(--accent-color, #d01212);">edit_note</span>
+          <div>
+            <h3 style="margin: 0; font-size: 1.2rem; font-weight: 800;">Formulario de Catequesis</h3>
+            <p style="margin: 2px 0 0 0; font-size: 0.8rem; color: var(--text-muted);">Completa la información teológica y bíblica del canto</p>
+          </div>
+        </div>
+        <button id="cat-form-btn-close" class="modal-close" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-color);">&times;</button>
+      </div>
+
+      <form id="catequesis-form" style="padding: 20px; display: flex; flex-direction: column; gap: 16px;">
+        <!-- Selector de Canto -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.88rem; display: block; margin-bottom: 6px;">Seleccionar Canto:</label>
+          <select id="cat-form-select-canto" class="theme-select" style="width: 100%; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); font-weight: 700; font-size: 0.95rem;">
+            <!-- Opciones cargadas dinámicamente -->
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+          <!-- Autor -->
+          <div class="form-group">
+            <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Autor:</label>
+            <input type="text" id="cat-form-autor" placeholder="Ej: Kiko Argüello" class="theme-input" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box;">
+          </div>
+
+          <!-- Fuente -->
+          <div class="form-group">
+            <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Fuente:</label>
+            <input type="text" id="cat-form-fuente" placeholder="Ej: 2 Corintios / Liturgia de las Horas" class="theme-input" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box;">
+          </div>
+        </div>
+
+        <!-- Tema o esencia del canto -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Tema o esencia del canto:</label>
+          <textarea id="cat-form-tema" rows="3" placeholder="Describe el tema central o esencia del canto..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Significado Teológico -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Significado Teológico:</label>
+          <textarea id="cat-form-teologia" rows="4" placeholder="Profundización teológica y catequética..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Esencia de Cristo en el canto -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Esencia de Cristo en el canto:</label>
+          <textarea id="cat-form-cristo" rows="3" placeholder="Presencia y manifestación de Jesucristo en la letra y misterio..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Testimonio -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Testimonio:</label>
+          <textarea id="cat-form-testimonio" rows="3" placeholder="Experiencias, vivencia comunitaria o testimonios..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Citas del canto y sus paralelos -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">
+            Citas del canto y sus paralelos:
+            <span style="font-size: 0.75rem; font-weight: normal; color: var(--text-muted);">(Ej: 1 Corintios (1Co 10,1-2); Salmo 110 (Sal 110,1); Mateo (Mt 5,1-12))</span>
+          </label>
+          <textarea id="cat-form-citas" rows="2" placeholder="Ej: 1 Corintios (1Co 10,1-2); Salmo 110 (Sal 110,1); Mateo (Mt 5,1-12)" class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Otros -->
+        <div class="form-group">
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Otros:</label>
+          <textarea id="cat-form-otros" rows="2" placeholder="Notas adicionales, notas ambientales o momentos litúrgicos sugeridos..." class="theme-textarea" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--panel-border); background: var(--input-bg); color: var(--text-color); box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <!-- Botones de Acción -->
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+          <button type="button" id="cat-form-btn-delete" class="btn" style="background: rgba(220, 38, 38, 0.1); color: #dc2626; border: 1px solid #dc2626; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; display: none;">
+            <span class="material-symbols-outlined" style="font-size: 1.1rem; vertical-align: middle;">delete</span>
+            Eliminar Catequesis
+          </button>
+          
+          <div style="display: flex; gap: 10px; margin-left: auto;">
+            <button type="button" id="cat-form-btn-cancel" class="btn" style="padding: 8px 16px; border-radius: 8px; border: 1px solid var(--panel-border); font-weight: 600;">
+              Cancelar
+            </button>
+            <button type="submit" id="cat-form-btn-save" class="btn theme-btn" style="padding: 8px 20px; border-radius: 8px; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
+              <span class="material-symbols-outlined" style="font-size: 1.1rem;">save</span>
+              Guardar en Firebase
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: AJUSTES -->
+  <!-- AJUSTES MODAL: Cargado dinámicamente desde data/ajustes_modal.html -->
+  <!-- SCRIPT PRINCIPAL -->
+</body>
+</html>

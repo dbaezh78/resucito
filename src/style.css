@@ -51,6 +51,7 @@
   --chord-color-alt: #d01212;
   --Rojo-Leccionario: #d01212;
   --Referencia-Texto: #6c757d;
+  --persona: #6c757d61;
   --font-zoom: 1;
   --font-family-lyrics: 'Franklin Gothic Medium', Arial, sans-serif;
   --font-size-lyrics: 22.4px;
@@ -1208,7 +1209,7 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
 }
 
 .bis-line {
-  width: 2px;
+  width: 3px;
   background-color: #c6c5c59e;
   align-self: stretch;
   margin-right: 12px;
@@ -1218,7 +1219,7 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
   font-family: var(--font-family-lyrics);
   font-weight: 700;
   color: #c6c5c59e;
-  font-size: calc(1.05rem * var(--font-zoom));
+  font-size: calc(1.45rem * var(--font-zoom));
   white-space: nowrap;
 }
 
@@ -1234,16 +1235,15 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
   align-items: center;
   border-left: 3px solid #c6c5c59e;
   color: #c6c5c59e;
-  
   width: max-content;
-  font: icon;
+  font-family: var(--font-family-lyrics, sans-serif);
+  font-size: calc(1.1rem * var(--font-zoom, 1));
+  font-weight: 700;
   padding-left: 6px;
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
   z-index: 2;
-  font-weight: bold;
-  
 }
 
 .linea-canto.bis::after {
@@ -1284,6 +1284,19 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
   user-select: none;
   white-space: nowrap;
   z-index: 2;
+}
+
+/* Soporte para altura automática del indicador BIS */
+.linea-canto.hbisauto::after,
+.linea-canto.hbis-auto::after {
+  height: var(--bis-height, 100%);
+  box-sizing: border-box;
+}
+
+.collapsible-lines-wrapper.hbisauto::after,
+.collapsible-lines-wrapper.hbis-auto::after {
+  height: var(--bis-height, 100%);
+  box-sizing: border-box;
 }
 
 .collapsible-trigger {
@@ -3630,7 +3643,48 @@ footer {
 
     .bis-bracket-left {
       left: -3px;
-  }
+    }
+
+    /* En celulares (384px), posicionar BIS con --bis-left-mobile */
+    .linea-canto.bisa::after,
+    .linea-canto.bis::after,
+    .linea-canto.bisc::after {
+      left: var(--bis-left-mobile, var(--bis-left, auto));
+      max-width: calc(100vw - 20px);
+    }
+
+    /* BIS A en vertical ÚNICAMENTE cuando no quepa horizontalmente en la pantalla (lbis grande) */
+    .linea-canto.bisa.bis-overflow-vertical::after {
+      content: " BIS A";
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      letter-spacing: 2px;
+      padding-left: 4px;
+      padding-top: 4px;
+      line-height: 1;
+      font-size: calc(0.95rem * var(--font-zoom, 1));
+      font-family: var(--font-family-lyrics, sans-serif);
+      font-weight: 700;
+      border-left: 3px solid #c6c5c59e;
+      border-top: none;
+      align-items: flex-start;
+    }
+
+    /* Cuando quepa normalmente (lbis <= 310px), se mantiene horizontal */
+    .linea-canto.bisa:not(.bis-overflow-vertical)::after {
+      content: " BIS A.";
+      writing-mode: horizontal-tb;
+      text-orientation: mixed;
+      letter-spacing: normal;
+      padding-left: 6px;
+      padding-top: 0;
+      line-height: normal;
+      font-family: var(--font-family-lyrics, sans-serif);
+      font-size: calc(1.05rem * var(--font-zoom, 1));
+      font-weight: 700;
+      border-left: 3px solid #c6c5c59e;
+      align-items: center;
+    }
 
   }   /* **************** FIN DE 384px*/
 
@@ -3705,6 +3759,23 @@ footer {
         right: -3px;
   }
 
+  /* Restaurar BIS horizontal en pantallas de tablet y PC (>= 768px) */
+  .linea-canto.bisa::after,
+  .linea-canto.bis::after,
+  .linea-canto.bisc::after {
+    left: var(--bis-left, auto);
+    max-width: none;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    letter-spacing: normal;
+    padding-left: 6px;
+    padding-top: 0;
+    line-height: normal;
+    font-size: inherit;
+    border-left: 3px solid #c6c5c59e;
+    align-items: center;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -3722,10 +3793,10 @@ footer {
   .Bendecid3 {top: 79px;}     
   .Bendecid4 {top: 55px;}
   .modal-content{max-width: 50%;max-height: 74%;overflow-y: initial;border: 1px solid;}
-  .song-viewer-view {width: 1024px;}
+  .app-container {max-width: var(--app-max-width, 1320px);}
+  .song-viewer-view {width: 1280px;}
 
-  /*.canto-columns-container {padding: 16px 40px;  } cambiado para aumentar el tamaño del lienzo*/
-  .canto-columns-container {padding: 16px 4px 16px 16px;  }
+  .canto-columns-container { padding: 16px 4px 16px 40px; }
   .btn-icon {width: 40px;}
 
 .dashboard-christ-img {
@@ -3834,6 +3905,29 @@ footer {
   position: absolute;
   left: 94px;
   top: 7px;
+}
+
+.linea-canto.alabadlo::after {
+  content: "  ¡ALABADLO";
+  font-weight: bold;
+  position: absolute;
+  color: var(--text-color);
+
+  @media (min-width: 384px) {left: 270px;}
+  @media (min-width: 768px) {left: 525px;}
+  @media (min-width: 992px) {left: 384px;}
+}
+
+.linea-canto.mujeres::before {
+  content: "Mujeres:   ";
+  font-size: 0.9em;
+  color: var(--persona);
+}
+
+.linea-canto.hombres::before {
+  content: "Hombres: ";
+  font-size: 0.9em;
+  color: var(--persona);
 }
 
 .linea-canto.asterisco1::after {

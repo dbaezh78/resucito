@@ -639,6 +639,37 @@ export function isSongExpansionEnabled(songId) {
   return false;
 }
 
+export async function guardarExpansionCantoEnNube(songId, enabled) {
+  if (!songId) return;
+  try {
+    // 1. Guardar en caché y localStorage local
+    if (!window.expansionSongsCache) window.expansionSongsCache = {};
+    window.expansionSongsCache[songId] = enabled;
+
+    let expansionConfig = { songs: {} };
+    try {
+      const local = localStorage.getItem('expansion_songs_config');
+      if (local) expansionConfig = JSON.parse(local);
+    } catch(e) {}
+    if (!expansionConfig.songs) expansionConfig.songs = {};
+    expansionConfig.songs[songId] = enabled;
+    localStorage.setItem('expansion_songs_config', JSON.stringify(expansionConfig));
+
+    // 2. Guardar en globalPositionsCache
+    if (!window.globalPositionsCache) window.globalPositionsCache = {};
+    if (!window.globalPositionsCache[songId]) window.globalPositionsCache[songId] = {};
+    window.globalPositionsCache[songId].expansion = enabled;
+
+    // 3. Persistir en Firestore en global_positions/{songId}
+    const docRef = doc(db, "global_positions", songId);
+    await setDoc(docRef, { expansion: enabled }, { merge: true });
+    console.log(`☁️ [Firebase] Expansión/Contracción para '${songId}' guardada: ${enabled ? 'Expandido' : 'Contraído'}`);
+  } catch (err) {
+    console.warn("⚠️ [Firebase] No se pudo guardar la expansión del canto en la nube:", err);
+  }
+}
+
+window.guardarExpansionCantoEnNube = guardarExpansionCantoEnNube;
 window.isSongExpansionEnabled = isSongExpansionEnabled;
 window.listenToExpansionSongs = listenToExpansionSongs;
 

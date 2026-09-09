@@ -27,7 +27,9 @@ import {
   cargarPosicionesGlobales,
   guardarHistorialCantoEnNube,
   cargarHistorialCantoDesdeNube,
-  respaldarPosicionesUsuario
+  respaldarPosicionesUsuario,
+  guardarExpansionCantoEnNube,
+  isSongExpansionEnabled
 } from './sync.js';
 import { 
   registrarEntradaCanto, 
@@ -1379,6 +1381,7 @@ function renderSection(container, lines, side) {
       const triggerHasTa = triggerLine.classList.contains('ta') || (item.sC && item.sC.includes('ta'));
       const triggerHasBisa = item.sC && (item.sC.includes('bisa') || item.sC.includes('bis'));
       
+      let firstSubLineEl = null;
       item.lines.forEach((subLine, subLineIdx) => {
         let subSC = (typeof subLine === 'object' && subLine.sC) ? subLine.sC : '';
         if (hasSub && subLineIdx === 0 && triggerHasBisa && !subSC.includes('bis')) {
@@ -1386,17 +1389,38 @@ function renderSection(container, lines, side) {
           subSC = (subSC + ' ' + bisClasses).trim();
         }
         const subLineEl = renderLine(subLine, side, lineIdx, subLineIdx, subSC);
+        if (hasSub && subLineIdx === 0) {
+          firstSubLineEl = subLineEl;
+        }
         if (hasSub && subLineIdx === 0 && triggerHasTa && !subLineEl.classList.contains('ta')) {
           subLineEl.classList.add('ta');
         }
         contentDiv.appendChild(subLineEl);
       });
       
+      const hasHbisAuto = (item.sC && (item.sC.includes('hbisauto') || item.sC.includes('hbis-auto')));
+      const updateCollapsibleBisAutoHeight = () => {
+        if (!hasHbisAuto || !firstSubLineEl) return;
+        requestAnimationFrame(() => {
+          if (contentDiv.style.display !== 'none') {
+            const h = contentDiv.offsetHeight || contentDiv.scrollHeight;
+            if (h > 0) {
+              firstSubLineEl.style.setProperty('--bis-height', `${h}px`);
+            }
+          } else {
+            firstSubLineEl.style.setProperty('--bis-height', '100%');
+          }
+        });
+      };
+
       // Manejar estado inicial de colapso
       const isExpanded = allAsambleaExpanded || item.initialState === 'expanded';
       contentDiv.style.display = isExpanded ? 'block' : 'none';
       if (hasSub) {
         triggerLine.style.display = isExpanded ? 'none' : 'block';
+      }
+      if (hasHbisAuto) {
+        updateCollapsibleBisAutoHeight();
       }
       
       const triggerLetra = triggerLine.querySelector('.letra');
@@ -1428,6 +1452,9 @@ function renderSection(container, lines, side) {
           if (triggerLetra && dotsSpan && triggerLetra.contains(dotsSpan)) {
             triggerLetra.removeChild(dotsSpan);
           }
+        }
+        if (hasHbisAuto) {
+          updateCollapsibleBisAutoHeight();
         }
       };
       
@@ -1489,14 +1516,32 @@ function renderLine(lineItem, side, lineIdx, subLineIdx, customSC) {
       if (cls) {
         lineDiv.classList.add(cls);
         
-        // Soporte dinámico para hbis[N], lbis[N], tbis[N] escalado con el zoom del canto
+        // Soporte dinámico para hbis[N], hbisauto, lbis[N], tbis[N] escalado con el zoom del canto
+        if (cls === 'hbisauto' || cls === 'hbis-auto') {
+          lineDiv.style.setProperty('--bis-height', '100%');
+          lineDiv.classList.add('hbisauto');
+        }
         const hMatch = cls.match(/^hbis(-?\d+)$/);
         if (hMatch) {
           lineDiv.style.setProperty('--bis-height', `calc(${hMatch[1]}px * var(--font-zoom, 1))`);
         }
         const lMatch = cls.match(/^lbis(-?\d+)$/);
         if (lMatch) {
+          const lVal = parseInt(lMatch[1], 10);
+          lineDiv.style.setProperty('--bis-left-base', `${lVal}px`);
+          // En pantallas de celular (base estándar de 384px de ancho de pantalla):
+          // Se calcula la medida proporcional exacta con base en la pantalla móvil de 384px.
+          // Para que lbis428 resulte en 400px en celular (428 * (384 / 410.88) = 400px),
+          // cualquier otra medida (ej: 250, 300, 360) se adapta con la misma base: lVal * (384 / 410.88) ≈ lVal * (400 / 428)
+          const lMobileVal = Math.round(lVal * (384 / 410.88));
+          lineDiv.style.setProperty('--bis-left-mobile', `calc(${lMobileVal}px * var(--font-zoom, 1))`);
           lineDiv.style.setProperty('--bis-left', `calc(${lMatch[1]}px * var(--font-zoom, 1))`);
+          
+          // Si en móvil el lbis es grande (ej: > 310px) y no cabe horizontal (" BIS A." mide ~55-65px, 310+65 = 375px),
+          // marcar la línea con clase bis-vertical para que solo en móvil se muestre vertical
+          if (lVal > 310) {
+            lineDiv.classList.add('bis-overflow-vertical');
+          }
         }
         const tMatch = cls.match(/^tbis(-?\d+)$/);
         if (tMatch) {
@@ -5492,6 +5537,7 @@ function setupEventListeners() {
     else if (msg.includes('Firebase') || msg.includes('🔥') || msg.includes('Permisos')) cat = 'Firebase';
     else if (msg.includes('Service Worker') || msg.includes('sw.js')) cat = 'PWA';
     else if (msg.includes('Bitácora') || msg.includes('📋')) cat = 'Bitácora';
+    else if (msg.includes('Ajustes') || msg.includes('Interfaz') || msg.includes('Navegador') || msg.includes('🧭') || msg.includes('🔘') || msg.includes('💡')) cat = 'Interfaz';
     window.addAppLog(cat, msg);
   };
 
@@ -5533,11 +5579,13 @@ function setupEventListeners() {
     }
 
     container.innerHTML = filtered.map(item => `
-      <div style="margin-bottom: 6px; border-bottom: 1px dashed #333; padding-bottom: 4px;">
-        <span style="color: #888;">[${item.dateStr || ''} ${item.time}]</span> 
-        <span style="color: #ffc107; font-weight: bold;">[${item.category}]</span> 
-        <span style="color: #00ff66;">${item.message}</span>
-        ${item.details ? `<pre style="margin: 2px 0 0 10px; color: #64b5f6; font-size: 0.7rem;">${item.details}</pre>` : ''}
+      <div style="margin-bottom: 8px; border-bottom: 1px dashed #333; padding-bottom: 6px; line-height: 1.4;">
+        <div>
+          <span style="color: #888;">[${item.dateStr || ''} ${item.time}]</span> 
+          <span style="color: #ffc107; font-weight: bold;">[${item.category}]</span>
+        </div>
+        <div style="color: #00ff66; margin-top: 2px; word-break: break-word; white-space: pre-wrap;">${item.message}</div>
+        ${item.details ? `<pre style="margin: 4px 0 0 10px; color: #64b5f6; font-size: 0.7rem; white-space: pre-wrap; word-break: break-all;">${item.details}</pre>` : ''}
       </div>
     `).join('');
 
@@ -5594,7 +5642,7 @@ function setupEventListeners() {
         const matchDate = (!selectedLogDateStr || selectedLogDateStr === 'all' || item.dateStr === selectedLogDateStr);
         return matchCat && matchDate;
       });
-      const text = filtered.map(item => `[${item.dateStr || ''} ${item.time}] [${item.category}] ${item.message} ${item.details || ''}`).join('\n');
+      const text = filtered.map(item => `[${item.dateStr || ''} ${item.time}] [${item.category}]\n${item.message}${item.details ? '\n' + item.details : ''}`).join('\n\n');
       navigator.clipboard.writeText(text).then(() => {
         copyLogsBtn.textContent = '¡Copiados!';
         setTimeout(() => copyLogsBtn.textContent = 'Copiar Logs', 2000);
@@ -5625,11 +5673,15 @@ function setupEventListeners() {
   attachSearchDiagnostics(searchInput, 'Principal (#search-input)');
   attachSearchDiagnostics(toolbarSearchInput, 'Barra Superior (#toolbar-search-input)');
 
-  // Sincronizar los toggles de Canto (BIS y Acordes en JSON) con el canto actual
+  // Sincronizar los toggles de Cantos > Canto (BIS, Contracción/Expansión y Acordes en JSON) con el canto actual
   function populateBisSongList() {
     const bisToggle = document.getElementById('bis-toggle');
     if (bisToggle) {
       bisToggle.checked = currentCanto ? isBisEnabled(currentCanto.id) : false;
+    }
+    const expansionToggle = document.getElementById('expansion-toggle');
+    if (expansionToggle) {
+      expansionToggle.checked = currentCanto ? isSongExpansionEnabled(currentCanto.id) : false;
     }
     const jsonChordsToggle = document.getElementById('json-chords-toggle');
     if (jsonChordsToggle) {
@@ -5643,7 +5695,22 @@ function setupEventListeners() {
   if (bisToggleInput) {
     bisToggleInput.addEventListener('change', (e) => {
       if (!currentCanto) return;
-      setBisForSong(currentCanto.id, e.target.checked);
+      const active = e.target.checked;
+      setBisForSong(currentCanto.id, active);
+      console.log(`🎵 [Cantos] Indicador BIS para "${currentCanto.title || currentCanto.id}": ${active ? 'Activado' : 'Desactivado'}`);
+      renderSongContent();
+    });
+  }
+
+  // Listener del toggle Contracción / Expansión (por canto individual, guardado en Firebase)
+  const expansionToggleInput = document.getElementById('expansion-toggle');
+  if (expansionToggleInput) {
+    expansionToggleInput.addEventListener('change', async (e) => {
+      if (!currentCanto) return;
+      const enabled = e.target.checked;
+      const songTitle = currentCanto.title || currentCanto.tt || currentCanto.id;
+      console.log(`📖 [Cantos] Contracción/Expansión para "${songTitle}": ${enabled ? 'Expandido (Superpuesto)' : 'Contraído'}`);
+      await guardarExpansionCantoEnNube(currentCanto.id, enabled);
       renderSongContent();
     });
   }
@@ -5653,7 +5720,9 @@ function setupEventListeners() {
   if (jsonChordsToggleInput) {
     jsonChordsToggleInput.addEventListener('change', (e) => {
       if (!currentCanto) return;
-      setJsonChordsForSong(currentCanto.id, e.target.checked);
+      const active = e.target.checked;
+      setJsonChordsForSong(currentCanto.id, active);
+      console.log(`🎸 [Cantos] Acordes en JSON para "${currentCanto.title || currentCanto.id}": ${active ? 'Activado' : 'Desactivado'}`);
       renderSongContent();
     });
   }

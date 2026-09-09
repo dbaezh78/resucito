@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v314'; // Incrementado para forzar actualización inmediata
+const CACHE_NAME = 'resucito-cache-v325'; // Incrementado para forzar actualización inmediata
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -9,6 +9,8 @@ const STATIC_ASSETS = [
   'cliturgico.html',
   'bitacora.html',
   'mantcantos.html',
+  'respaldo.html',
+  'src/lib/jszip.min.js',
   'src/bitacora.css',
   'src/js/bitacora.js',
   'src/bitacoraLogger.js',

@@ -11,6 +11,7 @@
   "catCanto": "Precatecumenado",
   "cejilla": "",
   "nCan": "* Se repite todo el canto subiendo medio tono cada vez.",
+  "notesColor": "var(--chord-color-alt)",
   "nCanURL": "",
   "dbno": "145",
   "notes": "",
@@ -99,7 +100,7 @@
     },
     {
       "line": "ESTÁ LA GLORIA DE DIOS»., (La,m,221)",
-      "sC": "as ast"
+      "sC": "as asterisco"
     }
   ],
   "lder": [],

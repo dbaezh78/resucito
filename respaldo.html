@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Respaldo del Sistema - Resucitó</title>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8b0000">
+  <link rel="stylesheet" href="src/style.css?v=140">
+  <link rel="stylesheet" href="src/navegador.css?v=140">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="src/lib/jszip.min.js"></script>
+  <style>
+    body {
+      font-family: var(--font-family-lyrics, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+      background: var(--bg-color, #f4f6f8);
+      color: var(--text-color, #212529);
+      margin: 0;
+      padding: 16px;
+      padding-bottom: 90px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .respaldo-container {
+      max-width: 1200px;
+      width: 100%;
+      background: var(--panel-bg, #ffffff);
+      border: 1px solid var(--panel-border, #e0e0e0);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1.5px solid var(--panel-border, #e0e0e0);
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-title h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--text-color, #212529);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge-version {
+      background: rgba(208, 18, 18, 0.1);
+      color: var(--accent-color, #d01212);
+      border: 1px solid var(--accent-color, #d01212);
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: var(--accent-color, #d01212);
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+
+    .btn-action:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+
+    .btn-action:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-secondary {
+      background: rgba(0,0,0,0.05);
+      color: var(--text-color, #212529);
+      border: 1px solid var(--panel-border, #ccc);
+      box-shadow: none;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(0,0,0,0.09);
+    }
+
+    /* Info card banner */
+    .info-card {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--panel-border, #e5e7eb);
+      border-left: 4px solid var(--accent-color, #d01212);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .info-card .material-symbols-outlined {
+      color: var(--accent-color, #d01212);
+      font-size: 1.5rem;
+      margin-top: 1px;
+    }
+
+    .info-card-content {
+      font-size: 0.85rem;
+      line-height: 1.45;
+      color: var(--text-color, #212529);
+    }
+
+    .info-card-content strong {
+      color: var(--text-color, #212529);
+    }
+
+    /* Estado de generación de progreso */
+    .progress-box {
+      display: none;
+      background: var(--input-bg, #ffffff);
+      border: 1.5px solid var(--panel-border, #e0e0e0);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .progress-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .spinner {
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .progress-bar-wrap {
+      width: 100%;
+      height: 8px;
+      background: var(--panel-border, #e0e0e0);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 30%;
+      background: var(--accent-color, #d01212);
+      border-radius: 4px;
+      animation: indeterminate 1.5s infinite ease-in-out;
+    }
+
+    @keyframes indeterminate {
+      0% { transform: translateX(-100%); width: 30%; }
+      50% { width: 60%; }
+      100% { transform: translateX(350%); width: 30%; }
+    }
+
+    /* Tabla */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--panel-border, #e0e0e0);
+      border-radius: 12px;
+      background: var(--panel-bg, #ffffff);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.88rem;
+      min-width: 720px;
+    }
+
+    thead th {
+      background: rgba(0,0,0,0.04);
+      color: var(--text-color, #212529);
+      padding: 12px 14px;
+      font-weight: 700;
+      border-bottom: 2px solid var(--panel-border, #ccc);
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--panel-border, #eee);
+      transition: background 0.15s;
+    }
+
+    tbody tr:hover {
+      background: rgba(0,0,0,0.02);
+    }
+
+    tbody td {
+      padding: 12px 14px;
+      vertical-align: middle;
+      color: var(--text-color, #212529);
+    }
+
+    .file-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      color: var(--accent-color, #d01212);
+      font-family: monospace;
+      font-size: 0.88rem;
+    }
+
+    .location-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.05);
+      color: var(--text-color, #333);
+      font-family: monospace;
+      font-size: 0.78rem;
+      max-width: 280px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: #0284c7;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .btn-download:hover {
+      opacity: 0.9;
+    }
+
+    .btn-delete {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 10px;
+      background: transparent;
+      color: #e53935;
+      border: 1px solid rgba(229, 57, 53, 0.4);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-left: 6px;
+    }
+
+    .btn-delete:hover {
+      background: rgba(229, 57, 53, 0.1);
+      border-color: #e53935;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted, #888);
+      font-size: 0.92rem;
+    }
+
+    .empty-state .material-symbols-outlined {
+      font-size: 3rem;
+      color: var(--text-muted, #aaa);
+      margin-bottom: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body class="theme-light">
+
+  <div class="respaldo-container">
+    <!-- Encabezado Principal -->
+    <header class="header-section">
+      <div class="header-title">
+        <span class="material-symbols-outlined" style="font-size: 2rem; color: var(--accent-color);">archive</span>
+        <div>
+          <h1>
+            Respaldo del Sistema (7z)
+            <span class="badge-version" id="current-version-badge">v2.1.04</span>
+          </h1>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Copia de seguridad completa con posiciones actualizadas desde Firebase</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn-action btn-secondary">
+          <span class="material-symbols-outlined">arrow_back</span>
+          Volver al Inicio
+        </a>
+        <button id="btn-generate-backup" class="btn-action">
+          <span class="material-symbols-outlined">add_circle</span>
+          Generar Respaldo Ahora
+        </button>
+      </div>
+    </header>
+
+    <!-- Información del proceso -->
+    <div class="info-card">
+      <span class="material-symbols-outlined">info</span>
+      <div class="info-card-content">
+        Cada respaldo comprime toda la aplicación en un archivo <strong>.7z</strong> con el nombre exacto <strong>resucito_LAFECHADELDIAHORAMILITAR</strong> (ej: <code>resucito_090926732.7z</code>).
+        Antes de empaquetar, el sistema <strong>sincroniza en vivo los acordes y posiciones desde Firebase</strong> para garantizar que el archivo descargable contenga la versión más reciente y exacta.
+      </div>
+    </div>
+
+    <!-- Indicador de Progreso -->
+    <div id="progress-box" class="progress-box">
+      <div class="progress-header">
+        <span id="progress-status-text">
+          <span class="material-symbols-outlined spinner">sync</span>
+          Sincronizando con Firebase y comprimiendo el sistema en 7z...
+        </span>
+        <span id="progress-subtext" style="font-size: 0.8rem; color: var(--text-muted); font-weight: normal;">Espere unos segundos...</span>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progress-fill-bar"></div>
+      </div>
+    </div>
+
+    <!-- Tabla de Respaldos -->
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre del Archivo</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Versión del Sistema</th>
+            <th>Tamaño</th>
+            <th>Ubicación</th>
+            <th style="text-align: right;">Acción</th>
+          </tr>
+        </thead>
+        <tbody id="backups-table-body">
+          <tr>
+            <td colspan="7" class="empty-state">
+              <span class="material-symbols-outlined">inventory_2</span>
+              Cargando historial de respaldos...
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Navegador Inferior -->
+  <script type="module" src="src/navegador.js?v=140"></script>
+
+  <!-- Script de la Página de Respaldo -->
+  <script type="module">
+    import { isCurrentUserAdmin, onAuthStateChanged, isAuthInitialized } from "./src/auth.js";
+    import { hasPermission } from "./src/accesscontrol.js";
+    import { db, collection, getDocs } from "./src/firebase.js";
+
+    const STORAGE_KEY = 'resucito_backups_history';
+
+    // 1. Control de Seguridad de Acceso
+    function checkAccessSecurity() {
+      onAuthStateChanged((user) => {
+        if (!isAuthInitialized()) return;
+        const isAdmin = isCurrentUserAdmin();
+        const canAccess = isAdmin || hasPermission('page_respaldo');
+        if (!canAccess) {
+          console.warn("Acceso denegado a respaldo.html por permisos. Redirigiendo a Inicio...");
+          window.location.replace('./index.html');
+        }
+      });
+    }
+
+    // 2. Cargar Versión Actual
+    async function loadCurrentVersion() {
+      try {
+        const res = await fetch('version.json?t=' + Date.now());
+        if (res.ok) {
+          const data = await res.json();
+          if (data.latestVersion) {
+            const vStr = 'v' + data.latestVersion;
+            document.getElementById('current-version-badge').textContent = vStr;
+            return vStr;
+          }
+        }
+      } catch (e) {
+        console.warn("No se pudo leer version.json:", e);
+      }
+      return 'v2.1.04';
+    }
+
+    // 3. Persistencia de Archivos y Metadatos con IndexedDB
+    const IDB_NAME = 'ResucitoBackupDB';
+    const IDB_VERSION = 1;
+    const IDB_STORE = 'backups';
+
+    function openBackupDB() {
+      return new Promise((resolve, reject) => {
+        const req = indexedDB.open(IDB_NAME, IDB_VERSION);
+        req.onupgradeneeded = (e) => {
+          const db = e.target.result;
+          if (!db.objectStoreNames.contains(IDB_STORE)) {
+            db.createObjectStore(IDB_STORE, { keyPath: 'filename' });
+          }
+        };
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error);
+      });
+    }
+
+    async function storeBackupInIDB(backupItem, blob) {
+      try {
+        const idb = await openBackupDB();
+        const tx = idb.transaction(IDB_STORE, 'readwrite');
+        const store = tx.objectStore(IDB_STORE);
+        store.put({
+          filename: backupItem.filename,
+          blob: blob,
+          date: backupItem.date,
+          time: backupItem.time,
+          timestamp: backupItem.timestamp,
+          version: backupItem.version,
+          sizeBytes: backupItem.sizeBytes,
+          sizeFormatted: backupItem.sizeFormatted,
+          location: backupItem.location || 'C:\\db\\Github\\backup\\resucito\\Backup'
+        });
+        return new Promise((resolve, reject) => {
+          tx.oncomplete = () => resolve(true);
+          tx.onerror = () => reject(tx.error);
+        });
+      } catch (e) {
+        console.warn("No se pudo guardar blob en IndexedDB:", e);
+      }
+    }
+
+    async function getBackupBlobFromIDB(filename) {
+      try {
+        const idb = await openBackupDB();
+        const tx = idb.transaction(IDB_STORE, 'readonly');
+        const store = tx.objectStore(IDB_STORE);
+        const req = store.get(filename);
+        return new Promise((resolve, reject) => {
+          req.onsuccess = () => {
+            if (req.result && req.result.blob) {
+              resolve(req.result.blob);
+            } else {
+              resolve(null);
+            }
+          };
+          req.onerror = () => reject(req.error);
+        });
+      } catch (e) {
+        console.warn("Error leyendo blob de IndexedDB:", e);
+        return null;
+      }
+    }
+
+    async function deleteBackupFromIDB(filename) {
+      try {
+        const idb = await openBackupDB();
+        const tx = idb.transaction(IDB_STORE, 'readwrite');
+        const store = tx.objectStore(IDB_STORE);
+        store.delete(filename);
+      } catch (e) {
+        console.warn("Error eliminando de IndexedDB:", e);
+      }
+    }
+
+    // Historial de respaldos (metadatos rápidos en localStorage)
+    function getStoredBackups() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const list = JSON.parse(raw);
+          if (Array.isArray(list)) return list;
+        }
+      } catch (e) {
+        console.warn("Error al leer historial de respaldos:", e);
+      }
+      return [];
+    }
+
+    function saveStoredBackups(list) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      } catch (e) {
+        console.warn("Error al guardar historial de respaldos:", e);
+      }
+    }
+
+    // Función Inteligente para Descargar / Guardar Archivo
+    async function triggerSmartDownload(blob, filename) {
+      let savedLocation = 'C:\\db\\Github\\backup\\resucito\\Backup';
+
+      // 1. Intentar con showSaveFilePicker (abre explorador de archivos nativo)
+      if (typeof window.showSaveFilePicker === 'function') {
+        try {
+          const handle = await window.showSaveFilePicker({
+            suggestedName: filename,
+            types: [
+              {
+                description: 'Archivo comprimido 7z / ZIP',
+                accept: {
+                  'application/x-7z-compressed': ['.7z'],
+                  'application/zip': ['.7z', '.zip']
+                }
+              }
+            ]
+          });
+          const writable = await handle.createWritable();
+          await writable.write(blob);
+          await writable.close();
+          savedLocation = 'C:\\db\\Github\\backup\\resucito\\Backup';
+          return { success: true, location: savedLocation };
+        } catch (err) {
+          // Si el usuario canceló el diálogo, no forzamos fallback duplicado
+          if (err.name === 'AbortError') {
+            console.log("El usuario cerró o canceló el selector de guardado.");
+            return { success: false, aborted: true };
+          }
+          console.warn("showSaveFilePicker no completado, usando método de descarga estándar:", err);
+        }
+      }
+
+      // 2. Fallback estándar para cualquier navegador / dispositivo móvil
+      const downloadUrl = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = downloadUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(downloadUrl), 60000);
+      return { success: true, location: savedLocation };
+    }
+
+    // Renderizar Tabla de Respaldos
+    function renderBackupsTable() {
+      const tbody = document.getElementById('backups-table-body');
+      const backups = getStoredBackups();
+
+      if (!backups || backups.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="7" class="empty-state">
+              <span class="material-symbols-outlined">folder_open</span>
+              No hay respaldos generados todavía. Haz clic en <strong>"Generar Respaldo Ahora"</strong> para crear el primero.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      tbody.innerHTML = backups.map((b, idx) => {
+        const locationPath = b.location || 'C:\\db\\Github\\backup\\resucito\\Backup';
+        return `
+        <tr>
+          <td>
+            <span class="file-pill">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">folder_zip</span>
+              ${b.filename}
+            </span>
+          </td>
+          <td>${b.date}</td>
+          <td>${b.time}</td>
+          <td><span class="badge-version">${b.version || 'v2.1.04'}</span></td>
+          <td><strong>${b.sizeFormatted || ((b.sizeBytes / (1024*1024)).toFixed(2) + ' MB')}</strong></td>
+          <td>
+            <span class="location-pill" title="${locationPath}">
+              <span class="material-symbols-outlined" style="font-size: 1rem; color: #0284c7;">folder</span>
+              ${locationPath}
+            </span>
+          </td>
+          <td style="text-align: right;">
+            <button class="btn-download" data-action="download-again" data-filename="${b.filename}">
+              <span class="material-symbols-outlined" style="font-size: 1rem;">download</span>
+              Descargar 7z
+            </button>
+            <button class="btn-delete" title="Eliminar del historial" data-action="delete-item" data-index="${idx}" data-filename="${b.filename}">
+              <span class="material-symbols-outlined" style="font-size: 1.05rem;">delete</span>
+            </button>
+          </td>
+        </tr>
+      `;
+      }).join('');
+
+      // Asignar eventos a botones de descarga recurrente
+      tbody.querySelectorAll('button[data-action="download-again"]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const fname = btn.getAttribute('data-filename');
+          btn.disabled = true;
+          const origContent = btn.innerHTML;
+          btn.innerHTML = '<span class="material-symbols-outlined spinner" style="font-size: 1rem;">sync</span> Preparando...';
+          
+          try {
+            const cachedBlob = await getBackupBlobFromIDB(fname);
+            if (cachedBlob) {
+              await triggerSmartDownload(cachedBlob, fname);
+            } else {
+              alert(`El archivo ${fname} no se encuentra almacenado en la memoria local de este navegador. Haz clic en "Generar Respaldo Ahora" para obtener una copia actualizada.`);
+            }
+          } catch (e) {
+            console.error("Error al re-descargar:", e);
+            alert("No se pudo completar la descarga: " + e.message);
+          } finally {
+            btn.disabled = false;
+            btn.innerHTML = origContent;
+          }
+        });
+      });
+
+      // Asignar eventos para eliminar del historial
+      tbody.querySelectorAll('button[data-action="delete-item"]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const index = parseInt(btn.getAttribute('data-index'));
+          const fname = btn.getAttribute('data-filename');
+          if (confirm(`¿Deseas eliminar ${fname} del historial de respaldos?`)) {
+            const currentList = getStoredBackups();
+            currentList.splice(index, 1);
+            saveStoredBackups(currentList);
+            await deleteBackupFromIDB(fname);
+            renderBackupsTable();
+          }
+        });
+      });
+    }
+
+    // 4. Descargar posiciones globales frescas desde Firebase
+    async function fetchLivePositionsFromFirebase() {
+      try {
+        console.log("🔥 Consultando Firestore: global_positions...");
+        const colRef = collection(db, "global_positions");
+        const snapshot = await getDocs(colRef);
+        const positionsDb = {};
+
+        if (snapshot && !snapshot.empty) {
+          snapshot.forEach(docSnap => {
+            positionsDb[docSnap.id] = docSnap.data();
+          });
+          console.log(`✅ [Firebase] ${Object.keys(positionsDb).length} posiciones obtenidas en vivo.`);
+          return positionsDb;
+        }
+      } catch (e) {
+        console.warn("⚠️ No se pudo obtener posiciones en vivo de Firestore, usando archivo local:", e);
+      }
+      return null;
+    }
+
+    // 5. Descargar archivo auxiliar como texto o arrayBuffer
+    async function fetchAsset(url, asBinary = false) {
+      try {
+        const res = await fetch(url + (url.includes('?') ? '&' : '?') + 't=' + Date.now());
+        if (!res.ok) return null;
+        return asBinary ? await res.arrayBuffer() : await res.text();
+      } catch (e) {
+        return null;
+      }
+    }
+
+    // 6. Generar Nuevo Respaldo 100% en el Navegador
+    async function generateBackup() {
+      const btn = document.getElementById('btn-generate-backup');
+      const progressBox = document.getElementById('progress-box');
+      const statusText = document.getElementById('progress-status-text');
+      const subText = document.getElementById('progress-subtext');
+      const fillBar = document.getElementById('progress-fill-bar');
+
+      if (typeof JSZip === 'undefined') {
+        alert("❌ Error: La librería de compresión JSZip no está cargada.");
+        return;
+      }
+
+      try {
+        btn.disabled = true;
+        progressBox.style.display = 'block';
+        if (fillBar) fillBar.style.width = '10%';
+
+        // Paso 1: Sincronizar Firebase
+        statusText.innerHTML = '<span class="material-symbols-outlined spinner">sync</span> 1/5: Sincronizando acordes y posiciones desde Firebase...';
+        subText.textContent = 'Consultando colección global_positions...';
+
+        const livePositions = await fetchLivePositionsFromFirebase();
+        if (fillBar) fillBar.style.width = '25%';
+
+        // Paso 2: Crear instancia JSZip y empaquetar archivos base del sistema
+        statusText.innerHTML = '<span class="material-symbols-outlined spinner">sync</span> 2/5: Recopilando páginas, scripts y estilos del sistema...';
+        subText.textContent = 'Empaquetando estructura principal...';
+
+        const zip = new JSZip();
+
+        // 2.1 Archivos Raíz y Configuración Relevante
+        const rootFiles = [
+          'index.html', 'perfil.html', 'preparar.html', 'expancion.html',
+          'cliturgico.html', 'bitacora.html', 'mantcantos.html', 'respaldo.html',
+          'manifest.json', 'sw.js', 'version.json', 'CNAME', '.nojekyll',
+          'ACTUALIZACIONES.md', 'CAMBIOS_2026-09-08.md', 'HOWTO.md',
+          'package.json', 'package-lock.json', 'vite.config.js', 'firestore.rules',
+          'favicon.svg', 'icons.svg', 'compile_data.cjs', 'copy_assets.cjs',
+          'update_index_chords.cjs', 'pull_positions.js', 'respaldar_posiciones.html',
+          'PositionChrordDown.bat', 'run bajar Position Acorde.bat',
+          '.well-known/assetlinks.json'
+        ];
+
+        for (const file of rootFiles) {
+          const content = await fetchAsset(file);
+          if (content !== null) zip.file(file, content);
+        }
+
+        // 2.2 Scripts y Estilos en src/
+        const srcFiles = [
+          'src/main.js', 'src/style.css', 'src/navegador.js', 'src/navegador.css',
+          'src/sync.js', 'src/chords.js', 'src/auth.js', 'src/firebase.js',
+          'src/accesscontrol.js', 'src/canto.js', 'src/search.js', 'src/scroll.js',
+          'src/pwa.js', 'src/counter.js', 'src/songs-data.js', 'src/styleCanto.css',
+          'src/bitacora.css', 'src/bitacoraLogger.js',
+          'src/js/ajustes.js', 'src/js/bitacora.js', 'src/js/datos.js',
+          'src/js/perfil.js', 'src/js/preparar.js', 'src/lib/jszip.min.js'
+        ];
+
+        for (const file of srcFiles) {
+          const content = await fetchAsset(file);
+          if (content !== null) zip.file(file, content);
+        }
+
+        // 2.3 Carpeta data/
+        const dataFiles = [
+          'data/songs-index.json', 'data/catequesis.json',
+          'data/paises.json', 'data/ajustes_modal.html'
+        ];
+
+        for (const file of dataFiles) {
+          const content = await fetchAsset(file);
+          if (content !== null) zip.file(file, content);
+        }
+
+        // Si obtuvimos posiciones de Firebase, inyectamos en data/chord_positions.json
+        if (livePositions && Object.keys(livePositions).length > 0) {
+          zip.file('data/chord_positions.json', JSON.stringify(livePositions, null, 2));
+        } else {
+          const chordContent = await fetchAsset('data/chord_positions.json');
+          if (chordContent !== null) zip.file('data/chord_positions.json', chordContent);
+        }
+
+        if (fillBar) fillBar.style.width = '45%';
+
+        // Paso 3: Empaquetar cantos individuales (data/songs/)
+        statusText.innerHTML = '<span class="material-symbols-outlined spinner">sync</span> 3/5: Empaquetando cantos individuales (data/songs/)...';
+        let songsCount = 0;
+        try {
+          const songsIndexRaw = await fetchAsset('data/songs-index.json');
+          if (songsIndexRaw) {
+            const indexList = JSON.parse(songsIndexRaw);
+            if (Array.isArray(indexList)) {
+              let loaded = 0;
+              const batchSize = 25;
+              for (let i = 0; i < indexList.length; i += batchSize) {
+                const chunk = indexList.slice(i, i + batchSize);
+                await Promise.all(chunk.map(async (item) => {
+                  if (item && item.id) {
+                    const songPath = `data/songs/${item.id}.json`;
+                    const sContent = await fetchAsset(songPath);
+                    if (sContent !== null) {
+                      zip.file(songPath, sContent);
+                      songsCount++;
+                    }
+                  }
+                }));
+                loaded += chunk.length;
+                subText.textContent = `Descargando cantos: ${loaded} de ${indexList.length}...`;
+              }
+            }
+          }
+        } catch (e) {
+          console.warn("Error leyendo data/songs-index.json para empaquetar cantos:", e);
+        }
+
+        if (fillBar) fillBar.style.width = '65%';
+
+        // Paso 4: Empaquetar carpetas completas requeridas:
+        // src/css, src/img, data/songs-ae, ima, img
+        statusText.innerHTML = '<span class="material-symbols-outlined spinner">sync</span> 4/5: Empaquetando carpetas completas (src/css, src/img, data/songs-ae, ima, img)...';
+        subText.textContent = 'Cargando lista de archivos del cancionero...';
+
+        try {
+          const allFilesRaw = await fetchAsset('data/backup_all_files.json');
+          if (allFilesRaw) {
+            const allFilesList = JSON.parse(allFilesRaw);
+            if (Array.isArray(allFilesList)) {
+              let packedCount = 0;
+              const batchSize = 30;
+              for (let i = 0; i < allFilesList.length; i += batchSize) {
+                const chunk = allFilesList.slice(i, i + batchSize);
+                await Promise.all(chunk.map(async (filePath) => {
+                  const isBinary = /\.(png|jpg|jpeg|gif|ico|ttf|woff|woff2|eot|webp)$/i.test(filePath);
+                  const content = await fetchAsset(filePath, isBinary);
+                  if (content !== null) {
+                    if (isBinary) {
+                      zip.file(filePath, content, { binary: true });
+                    } else {
+                      zip.file(filePath, content);
+                    }
+                    packedCount++;
+                  }
+                }));
+                const pct = 65 + Math.round((packedCount / allFilesList.length) * 25);
+                if (fillBar) fillBar.style.width = `${pct}%`;
+                subText.textContent = `Empaquetando recursos: ${packedCount} de ${allFilesList.length}...`;
+              }
+              console.log(`✅ Empaquetados ${packedCount} archivos de carpetas requeridas.`);
+            }
+          }
+        } catch (e) {
+          console.warn("Error cargando data/backup_all_files.json:", e);
+        }
+
+        // Fuentes adicionales
+        const fontsList = ['fonts/framd.ttf', 'fonts/framdit.ttf'];
+        for (const f of fontsList) {
+          const buf = await fetchAsset(f, true);
+          if (buf !== null) zip.file(f, buf, { binary: true });
+        }
+
+        if (fillBar) fillBar.style.width = '90%';
+
+        // Paso 5: Generar archivo comprimido
+        statusText.innerHTML = '<span class="material-symbols-outlined spinner">sync</span> 5/5: Comprimiendo archivo de respaldo...';
+        subText.textContent = 'Generando compresión 7z...';
+
+        const blob = await zip.generateAsync({
+          type: "blob",
+          compression: "DEFLATE",
+          compressionOptions: { level: 9 }
+        });
+
+        if (fillBar) fillBar.style.width = '100%';
+
+        // Formatear nombre: resucito_LAFECHADELDIAHORAMILITAR (ej: resucito_090926732.7z)
+        const now = new Date();
+        const dd = String(now.getDate()).padStart(2, '0');
+        const mm = String(now.getMonth() + 1).padStart(2, '0');
+        const yy = String(now.getFullYear()).slice(-2);
+        const hh = String(now.getHours()).padStart(2, '0');
+        const min = String(now.getMinutes()).padStart(2, '0');
+        const milTime = `${hh}${min}`;
+        const dateCode = `${dd}${mm}${yy}${milTime}`;
+        const filename = `resucito_${dateCode}.7z`;
+
+        const curVer = await loadCurrentVersion();
+        const sizeBytes = blob.size;
+        const sizeMB = (sizeBytes / (1024 * 1024)).toFixed(2) + ' MB';
+
+        const defaultLocation = 'C:\\db\\Github\\backup\\resucito\\Backup';
+
+        // Disparar diálogo de guardado / descarga
+        const dlResult = await triggerSmartDownload(blob, filename);
+        const finalLocation = (dlResult && dlResult.location) ? dlResult.location : defaultLocation;
+
+        // Guardar registro en historial y almacenar Blob en IndexedDB
+        const newBackup = {
+          filename,
+          date: `${dd}/${mm}/${now.getFullYear()}`,
+          time: `${hh}:${min}`,
+          timestamp: now.getTime(),
+          version: curVer,
+          sizeBytes: sizeBytes,
+          sizeFormatted: sizeMB,
+          location: finalLocation
+        };
+
+        await storeBackupInIDB(newBackup, blob);
+
+        const existingList = getStoredBackups();
+        existingList.unshift(newBackup);
+        saveStoredBackups(existingList);
+
+        renderBackupsTable();
+
+        statusText.innerHTML = '<span class="material-symbols-outlined" style="color: #28a745;">check_circle</span> ¡Respaldo generado con éxito!';
+        subText.textContent = `Archivo: ${filename} (${sizeMB}) guardado en ${finalLocation}`;
+
+        setTimeout(() => {
+          progressBox.style.display = 'none';
+          if (fillBar) fillBar.style.width = '0%';
+        }, 6000);
+
+      } catch (err) {
+        console.error("Error al generar respaldo en el cliente:", err);
+        alert("❌ Error al generar respaldo: " + err.message);
+        progressBox.style.display = 'none';
+        if (fillBar) fillBar.style.width = '0%';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    // Inicializar
+    document.addEventListener('DOMContentLoaded', () => {
+      checkAccessSecurity();
+      loadCurrentVersion();
+      renderBackupsTable();
+
+      const btnGen = document.getElementById('btn-generate-backup');
+      if (btnGen) {
+        btnGen.addEventListener('click', generateBackup);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -32,12 +32,8 @@
   "sig": "/src/index.html?canto=bendiciondelaguap1",
   "lizq": [
     {
-      "line": "",
-      "sC": "ast"
-    },
-    {
-      "line": "Oh Dios, (Mi,m,20)",
-      "sC": "pa"
+      "line": "Oh Dios, (Mi,m,0)",
+      "sC": "pa asterisco"
     },
     {
       "line": "que por medio de los signos sacramentales, (La,m,20)(Si,7,384)",
@@ -57,10 +53,10 @@
     },
     {
       "line": "De muchos modos, ",
-      "sC": "ast1"
+      "sC": "asterisco"
     },
     {
-      "line": "a través de los tiempos, (La,m,20)",
+      "line": "a través de los tiempos, (La,m,0)",
       "sC": ""
     },
     {
@@ -68,7 +64,7 @@
       "sC": ""
     },
     {
-      "line": "para que fuese signo del Bautismo., (Si,7,288)",
+      "line": "para que fuese signo del Bautismo., (Si,7,275)",
       "sC": ""
     },
     {
@@ -76,11 +72,11 @@
       "sC": "adb1"
     },
     {
-      "line": "Desde los orígenes tu Espíritu, (Mi,m,20)",
-      "sC": "ast2"
+      "line": "Desde los orígenes tu Espíritu, (Mi,m,0)",
+      "sC": "asterisco"
     },
     {
-      "line": "aleteaba sobre las aguas,,(La,m,20)(Si,7,250) ",
+      "line": "aleteaba sobre las aguas,,(La,m,20)(Si,7,185) ",
       "sC": ""
     },
     {
@@ -93,34 +89,34 @@
     },
     {
       "line": "Y también en el Diluvio, (Mi,m,20)",
-      "sC": "ast3"
+      "sC": "asterisco"
     },
     {
       "line": "has prefigurado el Bautismo,,(La,m,20)(Si,7,230)",
       "sC": ""
     },
     {
-      "line": "para que hoy como ayer, (Mi,m,218)",
+      "line": "para que hoy como ayer, (Mi,m,185)",
       "sC": ""
     },
     {
-      "line": "el agua señalase el fin del pecado, (Re,,33)(Do,,201)",
+      "line": "el agua señalase el fin del pecado, (Re,,30)(Do,,195)",
       "sC": ""
     },
     {
-      "line": "y el inicio de la Vida Nueva.,  (Si,7,226)",
+      "line": "y el inicio de la Vida Nueva.,  (Si,7,240)",
       "sC": ""
     },
     {
-      "line": "Tú, has liberado de la esclavitud, (Mi,m,20)",
+      "line": "Tú, has liberado de la esclavitud, (Mi,m,240)",
       "sC": ""
     },
     {
-      "line": "a los hijos de Abraham, (Re,,190)",
+      "line": "a los hijos de Abraham, (Re,,195)",
       "sC": ""
     },
     {
-      "line": "haciéndoles pasar ilesos el Mar Rojo,(Mi,m,283) ",
+      "line": "haciéndoles pasar ilesos el Mar Rojo,(Mi,m,320) ",
       "sC": ""
     },
     {
@@ -128,7 +124,7 @@
       "sC": ""
     },
     {
-      "line": "del futuro pueblo de bautizados., (Re,,127)(Mi,m,263)",
+      "line": "del futuro pueblo de bautizados., (Re,,125)(Mi,m,250)",
       "sC": ""
     },
     {
@@ -136,15 +132,15 @@
       "sC": "adb1"
     },
     {
-      "line": "Por fin, en la plenitud de los tiempos,, (Re,,289)",
+      "line": "Por fin, en la plenitud de los tiempos,, (Re,,320)",
       "sC": ""
     },
     {
-      "line": "tu Hijo, bautizado en el agua del Jordán,, (Mi,m,39)(Re,,360)",
+      "line": "tu Hijo, bautizado en el agua del Jordán,, (Mi,m,25)(Re,,380)",
       "sC": ""
     },
     {
-      "line": "fue consagrado por el Espíritu Santo., (Do,,119)(Si,7,310)",
+      "line": "fue consagrado por el Espíritu Santo., (Do,,100)(Si,7,310)",
       "sC": ""
     },
     {
@@ -152,15 +148,15 @@
       "sC": "adb1"
     },
     {
-      "line": "LEVANTADO EN LA CRUZ,, (Mi,m,20)(Re,,210)",
+      "line": "LEVANTADO EN LA CRUZ,, (Mi,m,0)(Re,,175)",
       "sC": "pa as"
     },
     {
-      "line": "DE SU COSTADO SALIÓ, (Do,,210)",
+      "line": "DE SU COSTADO SALIÓ, (Do,,170)",
       "sC": "as r1"
     },
     {
-      "line": "SANGRE Y AGUA., (Si,7,119)",
+      "line": "SANGRE Y AGUA., (Si,7,90)",
       "sC": "as"
     },
     {
@@ -168,19 +164,19 @@
       "sC": "adb1"
     },
     {
-      "line": "Y después de su resurrección, (Mi,m,20)(Re,,210)",
+      "line": "Y después de su resurrección, (Mi,m,0)(Re,,250)",
       "sC": "pa"
     },
     {
-      "line": "ordenó a sus discípulos:, (Mi,m,168)",
+      "line": "ordenó a sus discípulos:, (Mi,m,155)",
       "sC": ""
     },
     {
-      "line": "«Id y anunciad el Evangelio, (Re,,221)",
+      "line": "«Id y anunciad el Evangelio, (Re,,225)",
       "sC": ""
     },
     {
-      "line": "a todos los pueblos,, (Mi,m,134)",
+      "line": "a todos los pueblos,, (Mi,m,125)",
       "sC": ""
     },
     {
@@ -188,53 +184,37 @@
       "sC": "adb1"
     },
     {
-      "line": "BAUTIZÁNDOLOS, (Mi,m,20)",
-      "sC": "pa as"
+      "line": "BAUTIZÁNDOLOS, (Mi,m,0)",
+      "sC": "pa as bisa hbis180 lbis331 tbis10"
     },
     {
-      "line": "EN EL NOMBRE DEL PADRE,, (Re,,217)",
-      "sC": "as r2"
+      "line": "EN EL NOMBRE DEL PADRE,, (Re,,180)",
+      "sC": "ta as"
     },
     {
-      "line": "Y DEL HIJO,, (Do,,78)",
+      "line": "Y DEL HIJO,, (Do,,65)",
       "sC": "as"
     },
     {
-      "line": "Y DEL ESPÍRITU SANTO., (Si,7,177)",
+      "line": "Y DEL ESPÍRITU SANTO., (Si,7,160)",
       "sC": "as"
     }
   ],
   "lder": [
     {
-      "line": "Ahora, ahora Padre,, (Mi,m,20)",
+      "line": "Ahora, ahora Padre,, (Mi,m,0)",
       "sC": "pa"
     },
     {
-      "line": "mira con amor a tu Iglesia, (Re,,218)",
+      "line": "mira con amor a tu Iglesia, (Re,,210)",
       "sC": ""
     },
     {
-      "line": "y haz brotar para ella, (Do,,177)",
+      "line": "y haz brotar para ella, (Do,,175)",
       "sC": ""
     },
     {
-      "line": "la fuente del Bautismo., (Si,7,173)",
-      "sC": ""
-    },
-    {
-      "line": "",
-      "sC": "adb1"
-    },
-    {
-      "line": "Infunde en esta agua,, (Mi,m,20)(Re,,164)",
-      "sC": ""
-    },
-    {
-      "line": "por obra del Espíritu Santo,, (Do,,206)",
-      "sC": ""
-    },
-    {
-      "line": "la gracia de tu Único Hijo,, (Si,7,212)",
+      "line": "la fuente del Bautismo., (Si,7,165)",
       "sC": ""
     },
     {
@@ -242,35 +222,51 @@
       "sC": "adb1"
     },
     {
-      "line": "para que por el Sacramento del Bautismo, (Mi,m,70)(Re,,353)",
+      "line": "Infunde en esta agua,, (Mi,m,0)(Re,,160)",
       "sC": ""
     },
     {
-      "line": "el hombre, hecho a tu imagen,, (Mi,m,246)",
+      "line": "por obra del Espíritu Santo,, (Do,,220)",
       "sC": ""
     },
     {
-      "line": "sea lavado de todos sus pecados, (Re,,273)",
+      "line": "la gracia de tu Único Hijo,, (Si,7,215)",
       "sC": ""
     },
     {
-      "line": "y del agua y del Espíritu Santo, (Do,,247)",
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "para que por el Sacramento del Bautismo, (Mi,m,50)(Re,,340)",
       "sC": ""
     },
     {
-      "line": "renazca como nueva criatura., (Si,7,251)",
+      "line": "el hombre, hecho a tu imagen,, (Mi,m,235)",
       "sC": ""
     },
     {
-      "line": "Descienda, Padre,, (Mi,m,20)",
-      "sC": "ast4"
-    },
-    {
-      "line": "en esta agua, por obra de tu Hijo,, (La,m,20)(Si,7,291)",
+      "line": "sea lavado de todos sus pecados, (Re,,265)",
       "sC": ""
     },
     {
-      "line": "la potencia del Espíritu Santo., (Mi,m,242)",
+      "line": "y del agua y del Espíritu Santo, (Do,,265)",
+      "sC": ""
+    },
+    {
+      "line": "renazca como nueva criatura., (Si,7,230)",
+      "sC": ""
+    },
+    {
+      "line": "Descienda, Padre,, (Mi,m,0)",
+      "sC": "asterisco"
+    },
+    {
+      "line": "en esta agua, por obra de tu Hijo,, (La,m,0)(Si,7,290)",
+      "sC": ""
+    },
+    {
+      "line": "la potencia del Espíritu Santo., (Mi,m,250)",
       "sC": ""
     },
     {
@@ -282,7 +278,7 @@
       "sC": ""
     },
     {
-      "line": "el Bautismo, sean sepultados con Cristo., (Re,,73)(Mi,m,347)",
+      "line": "el Bautismo, sean sepultados con Cristo., (Re,,60)(Mi,m,335)",
       "sC": ""
     },
     {
@@ -290,19 +286,19 @@
       "sC": "adb1"
     },
     {
-      "line": "¡Y MUERTOS CON ÉL,, (Mi,m,20)",
-      "sC": "ta as"
+      "line": "¡Y MUERTOS CON ÉL,, (Mi,m,0)",
+      "sC": "ta as bisa hbis180 lbis272 tbis10"
     },
     {
-      "line": "RESURJAN, BISA., (Re,,48)",
+      "line": "RESURJAN., (Re,,30)",
       "sC": "as r3"
     },
     {
-      "line": "RESUCITEN, (Do,,70)",
+      "line": "RESUCITEN, (Do,,45)",
       "sC": "as"
     },
     {
-      "line": "A LA VIDA INMORTAL!, (Si,7,189)",
+      "line": "A LA VIDA INMORTAL!, (Si,7,155)",
       "sC": "as"
     },
     {
@@ -310,11 +306,11 @@
       "sC": "adb1"
     },
     {
-      "line": "Por Cristo, Nuestro Señor., (Mi,m,226)",
+      "line": "Por Cristo, Nuestro Señor., (Mi,m,220)",
       "sC": "pa"
     },
     {
-      "line": "AMÉN, AMÉN, AMÉN., (Mi,m,20)(Re,,111)(Mi,m,182)",
+      "line": "AMÉN, AMÉN, AMÉN., (Mi,m,0)(Re,,80)(Mi,m,135)",
       "sC": "ta as"
     }
   ],
