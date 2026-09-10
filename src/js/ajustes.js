@@ -1,6 +1,6 @@
 // src/js/ajustes.js
 // Centralización de todos los ajustes y preferencias de la aplicación.
-import { auth, db, doc, getDoc, setDoc, collection, getDocs } from '../firebase.js';
+import { auth, db, doc, getDoc, setDoc, collection, getDocs, onSnapshot } from '../firebase.js';
 import { getCurrentUser, isCurrentUserAdmin, onAuthStateChanged, loginMock, logoutMock } from '../auth.js';
 import { setupAccessControlUI, getAccessControlState, hasPermission } from '../accesscontrol.js';
 
@@ -1731,9 +1731,55 @@ window.initAjustes = async function() {
   }
   window.aplicarBloqueoInspeccion = aplicarBloqueoInspeccion;
 
-  // Inicializar estado guardado
+  // Evalúa si este usuario específico debe tener bloqueada la inspección
+  function actualizarEstadoInspeccionGlobal(bloqueoActivo) {
+    const isAdmin = isCurrentUserAdmin();
+    const canBypassInspection = isAdmin || hasPermission('manage_page_inspection');
+
+    if (bloqueoActivo) {
+      if (canBypassInspection) {
+        // Los administradores y usuarios con permiso especial NO se bloquean a sí mismos
+        aplicarBloqueoInspeccion(false);
+        console.log('🛡️ Manejo Inspección: Activo globalmente, pero NO te bloquea por ser Administrador o tener permiso de inspección.');
+      } else {
+        // Bloquear a todos los demás usuarios
+        aplicarBloqueoInspeccion(true);
+      }
+    } else {
+      aplicarBloqueoInspeccion(false);
+    }
+  }
+
+  // Inicializar estado guardado local
   const initialBloqueo = localStorage.getItem('resucito_bloquear_inspeccion') === 'true';
-  aplicarBloqueoInspeccion(initialBloqueo);
+  actualizarEstadoInspeccionGlobal(initialBloqueo);
+
+  // Escuchar configuración global de inspección desde Firebase en tiempo real
+  try {
+    onSnapshot(doc(db, "system_config", "general_settings"), (docSnap) => {
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+        if (data && typeof data.bloquearInspeccion === 'boolean') {
+          const isBlocked = data.bloquearInspeccion;
+          localStorage.setItem('resucito_bloquear_inspeccion', isBlocked ? 'true' : 'false');
+          
+          const switchEl = document.getElementById('switch-bloqueo-inspeccion');
+          const labelEl = document.getElementById('label-estado-bloqueo-inspeccion');
+          if (switchEl) switchEl.checked = isBlocked;
+          if (labelEl) {
+            labelEl.textContent = isBlocked ? 'Habilitado (Bloqueado)' : 'Deshabilitado (Permitido)';
+            labelEl.style.color = isBlocked ? 'var(--accent-color, #d54d5e)' : 'var(--text-muted)';
+          }
+
+          actualizarEstadoInspeccionGlobal(isBlocked);
+        }
+      }
+    }, (err) => {
+      console.warn("Aviso al escuchar configuración de inspección en Firebase:", err);
+    });
+  } catch (e) {
+    console.warn("Error iniciando escucha de inspección en Firebase:", e);
+  }
 
   window.initBitacoraSettings = function() {
     const switchEl = document.getElementById('switch-bitacora-delete');
@@ -1770,14 +1816,24 @@ window.initAjustes = async function() {
         labelEl.style.color = isBlocked ? 'var(--accent-color, #d54d5e)' : 'var(--text-muted)';
       }
 
-      switchEl.onchange = () => {
+      switchEl.onchange = async () => {
         const checked = switchEl.checked;
         localStorage.setItem('resucito_bloquear_inspeccion', checked ? 'true' : 'false');
         if (labelEl) {
           labelEl.textContent = checked ? 'Habilitado (Bloqueado)' : 'Deshabilitado (Permitido)';
           labelEl.style.color = checked ? 'var(--accent-color, #d54d5e)' : 'var(--text-muted)';
         }
-        aplicarBloqueoInspeccion(checked);
+        actualizarEstadoInspeccionGlobal(checked);
+
+        // Sincronizar en Firebase Cloud en system_config/general_settings
+        try {
+          await setDoc(doc(db, "system_config", "general_settings"), {
+            bloquearInspeccion: checked,
+            updatedAt: new Date().toISOString()
+          }, { merge: true });
+        } catch (e) {
+          console.warn("Error al guardar bloqueo de inspección en Firebase:", e);
+        }
       };
     }
   };

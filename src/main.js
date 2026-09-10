@@ -5519,12 +5519,12 @@ function setupEventListeners() {
     return str;
   }
 
-  // Cargar logs guardados en Firebase Firestore (colección 'app_logs')
+  // Cargar logs guardados en Firebase Firestore (colección 'app_logs' - límite reducido para ahorro de cuota)
   function initFirebaseAppLogsSync() {
     if (!db) return;
     try {
       const colRef = collection(db, "app_logs");
-      const q = query(colRef, orderBy("timestampNum", "desc"), limit(400));
+      const q = query(colRef, orderBy("timestampNum", "desc"), limit(50));
       onSnapshot(q, (snapshot) => {
         const remoteLogs = [];
         snapshot.forEach((doc) => {
@@ -5586,8 +5586,12 @@ function setupEventListeners() {
     if (window.appLogs.length > 500) window.appLogs.shift();
     if (window.renderAppLogs) window.renderAppLogs();
 
-    // Guardar asíncronamente en Firestore (colección 'app_logs')
-    if (db && navigator.onLine) {
+    // Guardar en Firestore SOLO si es un error o advertencia crítica (no logs cotidianos)
+    // para evitar saturar y agotar la cuota gratuita de lecturas/escrituras de Firebase.
+    const isCritical = (category === 'Error') || 
+                       (message && (message.startsWith('❌') || message.includes('FirebaseError') || message.includes('Quota exceeded') || message.includes('Uncaught')));
+
+    if (isCritical && db && navigator.onLine) {
       try {
         const colRef = collection(db, "app_logs");
         addDoc(colRef, {

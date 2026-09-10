@@ -78,14 +78,14 @@ import { hasPermission } from './accesscontrol.js';
               <span>Bitácora de Actividad</span>
             </button>
 
-            <button class="account-action-item" id="account-action-actualizar">
-              <span class="material-symbols-outlined">system_update</span>
-              <span>Actualizar App</span>
-            </button>
-
             <button class="account-action-item" id="account-action-chat">
               <span class="material-symbols-outlined">chat</span>
               <span>Asistencia y Chat</span>
+            </button>
+
+            <button class="account-action-item" id="account-action-actualizar">
+              <span class="material-symbols-outlined">system_update</span>
+              <span>Actualizar App</span>
             </button>
           </div>
 
