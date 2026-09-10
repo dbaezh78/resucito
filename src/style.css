@@ -1203,9 +1203,11 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
 .collapsible-bis-side {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 0px;
   flex-shrink: 0;
   user-select: none;
+  left: 10px;
+  position: relative;
 }
 
 .bis-line {
@@ -2117,7 +2119,8 @@ footer {
   padding-bottom: 0px;  /*32px*/
   align-self: center;
 
-
+@media (min-width: 384px) {margin: 23px -16px -16px -16px;}
+@media (min-width: 768px) {margin: -16px -16px -16px -16px;}
   
 }
 
@@ -2362,6 +2365,13 @@ footer {
   padding: 0 4px 2px 4px;
 }
 
+.canto-header-top-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
 .canto-header-stage {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -2372,6 +2382,156 @@ footer {
   text-align: right;
   margin: 0;
   padding: 0;
+}
+
+/* Distintivo/botón interactivo de lista activa en la cabecera */
+.canto-header-playlist-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--accent-color-light, rgba(208, 18, 18, 0.08));
+  color: var(--accent-color, #d01212);
+  border: 1px solid var(--accent-color, rgba(208, 18, 18, 0.3));
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  user-select: none;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.canto-header-playlist-badge:hover {
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(208, 18, 18, 0.25);
+}
+
+.canto-header-playlist-badge .material-symbols-outlined {
+  font-size: 0.88rem;
+  flex-shrink: 0;
+}
+
+#modal-playlist-activa-header-info:hover {
+  background: var(--accent-color-light, rgba(208, 18, 18, 0.08)) !important;
+}
+
+/* Botones redondos de acción dentro del modal de playlist activa */
+.btn-icono-playlist {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-color, #333);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+  padding: 0;
+}
+
+.btn-icono-playlist span {
+  font-size: 18px;
+}
+
+.btn-icono-playlist.share-universal:hover {
+  background: #d4af37;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.4);
+}
+
+.btn-icono-playlist.link:hover {
+  background: #0d6efd;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.4);
+}
+
+.btn-icono-playlist.export:hover {
+  background: #28a745;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.btn-icono-playlist.edit:hover {
+  background: #fd7e14;
+  color: #ffffff;
+  transform: scale(1.12);
+  box-shadow: 0 4px 10px rgba(253, 126, 20, 0.4);
+}
+
+@media (max-width: 480px) {
+  .btn-icono-playlist {
+    width: 30px;
+    height: 30px;
+  }
+  .btn-icono-playlist span {
+    font-size: 16px;
+  }
+}
+
+/* Estilos de los ítems de cantos dentro del modal de lista activa */
+.modal-playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--input-bg, rgba(0,0,0,0.02));
+  border: 1.5px solid var(--panel-border, #ddd);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.modal-playlist-item:hover {
+  background: rgba(208, 18, 18, 0.05);
+  border-color: var(--accent-color, #d01212);
+  transform: translateX(2px);
+}
+
+.modal-playlist-item.active {
+  background: rgba(208, 18, 18, 0.1);
+  border-color: var(--accent-color, #d01212);
+  font-weight: 700;
+}
+
+.modal-playlist-item .item-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.modal-playlist-item .item-title {
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal-playlist-item .item-status {
+  font-size: 1.1rem;
+  color: var(--accent-color, #d01212);
 }
 
 .canto-header-main {
@@ -3662,12 +3822,14 @@ footer {
       padding-left: 4px;
       padding-top: 4px;
       line-height: 1;
-      font-size: calc(0.95rem * var(--font-zoom, 1));
+      font-size: calc(1.3rem * var(--font-zoom, 1));
       font-family: var(--font-family-lyrics, sans-serif);
       font-weight: 700;
       border-left: 3px solid #c6c5c59e;
       border-top: none;
-      align-items: flex-start;
+      letter-spacing: -2px;
+      display: flex;
+      justify-content: center;
     }
 
     /* Cuando quepa normalmente (lbis <= 310px), se mantiene horizontal */
@@ -3686,13 +3848,54 @@ footer {
       align-items: center;
     }
 
+
+
+    /*Este es el día en que actuo el Señor*/
+    .ab1, .ab2, .ab3, .ab4, .ab9, .ab10, .ab11, .ab12 {
+      width: fit-content;
+      margin-top: -41px;
+}
+
+
+.ab1 {left: 155px;}
+.ab2 {left: 99px;}
+.ab3 {left: 97px;}
+.ab4 {left: 66px;}
+
+.ab5 {margin-top: -90px;}
+.ab5, .ab6 {left: 34px;}
+
+.ab61, .ab62{left: 222px; font-size: revert-rule;}
+.ab61 {margin-top: -50px;}
+.ab62 {margin-top: -19px;}
+
+.ab71, .ab72 {left: 250px; font-size: revert-rule;}
+.ab71 {margin-top: -53px;}
+.ab72 {margin-top: -19px;}
+
+.ab13 {margin-top: -15px;}
+
+.ab7 {margin-top: -89px;}
+.ab7, .ab8 {left: 77px;}
+
+.ab8 {margin-top: -11px;}
+
+.ab9 {left: 117px;}
+.ab10, .ab11, .ab12 {left: 188px;}
+.ab11 {left: 127px;}
+.ab12 {left: 111px;}
+.abc {
+      margin-top: -77px;
+      /*z-index: -1;*/
+      background: white;
+}
+
+
   }   /* **************** FIN DE 384px*/
 
 @media (min-width: 768px) {
 
-
-
-      header {margin-bottom: 0px;}
+  header {margin-bottom: 0px;}
 
 .Bendecid, .Bendecid1, .Bendecid2, .Bendecid3, .Bendecid4
   { position: relative;width: fit-content;font-weight: bolder;left: 466px;}
@@ -3714,7 +3917,6 @@ footer {
     max-width: 660px;
     width: 660px;
     max-height: 80%;
-
 
   }
   .song-viewer-view {width: 812px;}
@@ -3746,7 +3948,7 @@ footer {
       .canto-header-img {
         max-height: 100px;
         max-width: 100px;
-        margin-left: -20px;
+        margin-left: 0px;
     }
 
 
@@ -3778,6 +3980,46 @@ footer {
     border-left: 3px solid #c6c5c59e;
     align-items: center;
   }
+
+
+.ab1, .ab2, .ab3, .ab4, .ab9, .ab10, .ab11, .ab12 {
+  width: fit-content;
+  margin-top: -77px;
+}
+
+.ab5 {margin-top: -90px;}
+
+
+.ab61, .ab62{left: 423px;}
+.ab61 {margin-top: -90px;}
+.ab62 {margin-top: -49px;}
+
+.ab71, .ab72 {left: 478px;}
+.ab71 {margin-top: -91px;}
+.ab72 {margin-top: -49px;}
+
+.ab13 {margin-top: -15px;}
+
+.ab7 {margin-top: -89px;}
+.ab8 {margin-top: -11px;}
+
+.ab1 {left: 279px;}
+.ab2 {left: 186px;}
+.ab3 {left: 197px;}
+.ab4 {left: 125px;}
+.ab5, .ab6 {left: 434px;}
+.ab7, .ab8 {left: 477px;}
+.ab9 {left: 217px;}
+.ab10, .ab11, .ab12 {left: 353px;}
+.ab11 {left: 250px;}
+.ab12 {left: 207px;}
+.abc {
+      margin-top: -77px;
+      /*z-index: -1;*/
+      background: white;
+}
+
+
 
 }
 
@@ -3832,6 +4074,40 @@ footer {
       .bis-bracket-line {
         right: -3px;
       }
+
+  .ab1, .ab2, .ab3, .ab4, .ab9, .ab10, .ab11, .ab12 {
+    width: fit-content;
+    margin-top: -51px;
+  }
+
+.ab5 {margin-top: -63px;}
+
+.ab61 {margin-top: -62px;left: 287px; font-size: revert-rule;}
+.ab62 {margin-top: -31px;left: 287px; font-size: revert-rule;}
+
+.ab71 {margin-top: -64px;left: 320px; font-size: revert-rule;}
+.ab72 {margin-top: -33px;left: 320px; font-size: revert-rule;}
+
+
+.ab7 {margin-top: -65px;}
+.ab8 {margin-top: -11px;}
+
+.ab1 {left: 197px;}
+.ab2 {left: 124px;}
+.ab3 {left: 197px;}
+.ab4 {left: 84px;}
+.ab5, .ab6 {left: 287px;}
+.ab7, .ab8 {left: 320px;}
+.ab9 {left: 141px;}
+.ab10, .ab11, .ab12 {left: 233px;}
+.ab11 {left: 156px;}
+.ab12 {left: 140px;}
+.abc {
+      margin-top: -41px;
+      /*z-index: -1;*/
+      background: white;
+}
+
     
 } /* Fin de 992ppx*/
 
@@ -3840,31 +4116,6 @@ footer {
   margin-top: -22px;
 }
 
-.ab1, .ab2, .ab3, .ab4, .ab9, .ab10, .ab11, .ab12 {
-  width: fit-content;
-  margin-top: -42px;
-}
-
-.ab5 {margin-top: -54px;}
-.ab6 {margin-top: -11px;}
-.ab7 {margin-top: -53px;}
-.ab8 {margin-top: -11px;}
-
-.ab1 {left: 165px;}
-.ab2 {left: 93px;}
-.ab3 {left: 93px;}
-.ab4 {left: 65px;}
-.ab5, .ab6 {left: 227px;}
-.ab7, .ab8 {left: 256px;}
-.ab9 {left: 114px;}
-.ab10, .ab11, .ab12 {left: 190px;}
-.ab11 {left: 124px;}
-.ab12 {left: 110px;}
-.abc {
-      margin-top: -41px;
-      /*z-index: -1;*/
-      background: white;
-}
 
 .pred {z-index: 99;}
 
@@ -3956,10 +4207,12 @@ footer {
 
 
 .linea-canto.melisma::after {
-  content: " (melisma)";
+  content: " [melisma]";
   font-style: italic;
-  font-size: 0.85em;
+  font-size: 0.80em;
   font-weight: normal;
+      color: var(--chord-color-alt);
+
 }
 
 /* Colores para las líneas de canto */
@@ -4014,6 +4267,18 @@ footer {
     padding: 5px 10px;
     font-size: 0.8rem;
   }
+}
+
+.official-notes-link {
+  color: inherit;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.official-notes-link:hover {
+  opacity: 0.8;
 }
 
 

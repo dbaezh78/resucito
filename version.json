@@ -1,10 +1,13 @@
 {
-  "latestVersion": "2.1.04",
+  "latestVersion": "2.1.05",
   "minVersion": "2.1.00",
   "updateTitle": "Nueva Versión Disponible",
   "updateMessage": "Actualiza a la última versión para disfrutar de nuevas funciones y mejoras.",
   "releaseNotes": [
-    "Unificación de acordes posicionales en /global_positions/ como única fuente de verdad",
-    "Función de respaldo de posiciones personales (/usuarios/USUARIO/posiciones) a chord_positions-backup.json"
+    "Categorías contraídas por defecto en preparación de cantos",
+    "Distintivo interactivo de lista activa en la cabecera del visor de cantos",
+    "Navegación directa con expansión automática de la lista desde el visor",
+    "Botones de acción en modal de lista (compartir, enlace, exportar y editar)",
+    "Importación inteligente de enlaces compartidos con resolución de duplicados y URL descriptiva"
   ]
 }

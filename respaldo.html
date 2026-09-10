@@ -332,7 +332,7 @@
         <div>
           <h1>
             Respaldo del Sistema (7z)
-            <span class="badge-version" id="current-version-badge">v2.1.04</span>
+            <span class="badge-version" id="current-version-badge">v2.1.05</span>
           </h1>
           <span style="font-size: 0.8rem; color: var(--text-muted);">Copia de seguridad completa con posiciones actualizadas desde Firebase</span>
         </div>
@@ -437,7 +437,7 @@
       } catch (e) {
         console.warn("No se pudo leer version.json:", e);
       }
-      return 'v2.1.04';
+      return 'v2.1.05';
     }
 
     // 3. Persistencia de Archivos y Metadatos con IndexedDB
@@ -614,7 +614,7 @@
           </td>
           <td>${b.date}</td>
           <td>${b.time}</td>
-          <td><span class="badge-version">${b.version || 'v2.1.04'}</span></td>
+          <td><span class="badge-version">${b.version || 'v2.1.05'}</span></td>
           <td><strong>${b.sizeFormatted || ((b.sizeBytes / (1024*1024)).toFixed(2) + ' MB')}</strong></td>
           <td>
             <span class="location-pill" title="${locationPath}">

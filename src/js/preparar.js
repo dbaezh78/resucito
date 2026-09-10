@@ -18,6 +18,8 @@ let bloqueoSnapshot = false;
 
 // --- ESTADO DE FILTRADO Y MOMENTOS LITÚRGICOS ---
 let filtroCategoriaSeleccionada = 'Todos';
+let categoriaForzadaAbierta = null;
+let listaForzadaAbierta = null;
 let momentoSeleccionado = 'Libre';
 const MAPA_ETIQUETAS = {
     "Entrada": "E",
@@ -75,6 +77,26 @@ const normalizarTexto = (texto) => {
         .replace(/[^a-z0-9\s]/g, "")
         .trim();
 };
+
+let editarListaIdForzada = null;
+// Leer parámetros de URL para expandir categoría y lista específica si viene desde el visor
+try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const catParam = urlParams.get('cat');
+    const listaIdParam = urlParams.get('listaId');
+    const editarParam = urlParams.get('editarId');
+    if (catParam) {
+        categoriaForzadaAbierta = decodeURIComponent(catParam);
+    }
+    if (listaIdParam) {
+        listaForzadaAbierta = decodeURIComponent(listaIdParam);
+    }
+    if (editarParam) {
+        editarListaIdForzada = decodeURIComponent(editarParam);
+    }
+} catch (e) {
+    console.error("Error al procesar parámetros URL en preparar.js:", e);
+}
 
 // --- MOTOR DE CACHÉ LOCAL (OFFLINE-FIRST) ---
 const cargarDesdeEquipo = () => {
@@ -265,6 +287,7 @@ function crearTarjetaLista(idLista, data, contenedor) {
     
     const div = document.createElement('div');
     div.className = 'tarjeta-lista-wrapper';
+    div.id = `tarjeta-lista-${idLista}`;
     div.innerHTML = `
         <div class="tarjeta-lista" onclick="window.toggleDetalleLista('${idLista}')">
             <div class="info-lista">
@@ -339,7 +362,10 @@ function renderizarListasUI(listas) {
         grupoWrapper.className = 'categoria-grupo-wrapper';
         const groupId = `cat-grupo-${catName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "-")}`;
         
-        const estaColapsado = (filtroCategoriaSeleccionada !== 'Todos' && catName !== filtroCategoriaSeleccionada);
+        let estaColapsado = (filtroCategoriaSeleccionada === 'Todos') ? true : (catName !== filtroCategoriaSeleccionada);
+        if (categoriaForzadaAbierta && catName.toLowerCase() === categoriaForzadaAbierta.toLowerCase()) {
+            estaColapsado = false;
+        }
 
         grupoWrapper.innerHTML = `
             <div class="categoria-grupo-header" onclick="window.toggleCategoriaGrupo('${groupId}')">
@@ -365,6 +391,39 @@ function renderizarListasUI(listas) {
 
     if (!mostroAlguna) {
         contenedor.innerHTML = `<p style="text-align: center; padding: 20px; color: var(--text-muted);">No se encontraron listas en esta categoría.</p>`;
+    } else if (listaForzadaAbierta) {
+        // Desplazarse suavemente y desplegar la lista seleccionada
+        setTimeout(() => {
+            if (editarListaIdForzada) {
+                const listaAEditar = listasLocalesCache.find(l => l.id === editarListaIdForzada);
+                if (listaAEditar) {
+                    window.cargarListaParaEditar(
+                        listaAEditar.id, 
+                        listaAEditar.ids_cantos || [], 
+                        listaAEditar.nombre || '', 
+                        listaAEditar.categoria || ''
+                    );
+                    editarListaIdForzada = null;
+                    return;
+                }
+            }
+
+            const elLista = document.getElementById(`tarjeta-lista-${listaForzadaAbierta}`);
+            if (elLista) {
+                elLista.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                elLista.style.outline = '2px solid var(--accent-color, #d01212)';
+                elLista.style.borderRadius = '6px';
+                elLista.style.transition = 'outline 0.3s ease';
+                setTimeout(() => {
+                    elLista.style.outline = 'none';
+                }, 2500);
+
+                const detalle = document.getElementById(`detalle-${listaForzadaAbierta}`);
+                if (detalle && detalle.classList.contains('cfg-close')) {
+                    window.toggleDetalleLista(listaForzadaAbierta);
+                }
+            }
+        }, 120);
     }
 }
 
@@ -570,29 +629,74 @@ function solicitarDecisionListaExistente(nombreLista) {
 
         const modal = document.getElementById('modal-conflicto-lista');
         const spanNombre = document.getElementById('modal-nombre-lista-existente');
+        const btnDuplicar = document.getElementById('btn-conflicto-duplicar');
+        const btnRenombrar = document.getElementById('btn-conflicto-renombrar');
         const btnUnir = document.getElementById('btn-conflicto-unir');
-        const btnSustituir = document.getElementById('btn-conflicto-sustituir');
         const btnCancelar = document.getElementById('btn-conflicto-cancelar');
+        const containerRenombrar = document.getElementById('modal-conflicto-renombrar-container');
+        const inputNuevoNombre = document.getElementById('input-conflicto-nuevo-nombre');
 
-        if (!modal || !btnUnir || !btnSustituir || !btnCancelar) {
+        if (!modal || !btnDuplicar || !btnRenombrar || !btnUnir || !btnCancelar) {
             console.warn("Modal de conflicto no encontrado, usando confirm fallback.");
-            const res = confirm(`⚠️ Ya existe una lista con el nombre "${nombreLista}". ¿Deseas sobrescribirla?`);
-            return resolve(res ? 'sustituir' : 'cancelar');
+            const res = confirm(`⚠️ Ya existe una lista con el nombre "${nombreLista}". ¿Deseas crear una copia?`);
+            return resolve({ accion: res ? 'duplicar' : 'cancelar' });
         }
 
         if (spanNombre) spanNombre.textContent = nombreLista;
+        if (containerRenombrar) containerRenombrar.style.display = 'none';
+        if (inputNuevoNombre) inputNuevoNombre.value = '';
+
         modal.style.display = 'flex';
 
         const cleanup = () => {
             modal.style.display = 'none';
+            if (containerRenombrar) containerRenombrar.style.display = 'none';
+            btnDuplicar.onclick = null;
+            btnRenombrar.onclick = null;
             btnUnir.onclick = null;
-            btnSustituir.onclick = null;
             btnCancelar.onclick = null;
         };
 
-        btnUnir.onclick = (e) => { e.preventDefault(); cleanup(); resolve('unir'); };
-        btnSustituir.onclick = (e) => { e.preventDefault(); cleanup(); resolve('sustituir'); };
-        btnCancelar.onclick = (e) => { e.preventDefault(); cleanup(); resolve('cancelar'); };
+        btnDuplicar.onclick = (e) => { 
+            e.preventDefault(); 
+            cleanup(); 
+            resolve({ accion: 'duplicar' }); 
+        };
+
+        btnRenombrar.onclick = (e) => { 
+            e.preventDefault();
+            if (containerRenombrar && containerRenombrar.style.display === 'none') {
+                containerRenombrar.style.display = 'block';
+                if (inputNuevoNombre) {
+                    inputNuevoNombre.value = `${nombreLista} (2)`;
+                    inputNuevoNombre.focus();
+                    inputNuevoNombre.select();
+                }
+                btnRenombrar.innerHTML = `<span class="material-symbols-outlined">check</span> Confirmar nombre`;
+                return;
+            }
+
+            const nuevoVal = (inputNuevoNombre ? inputNuevoNombre.value.trim() : '');
+            if (!nuevoVal) {
+                alert("Por favor escribe un nombre válido.");
+                return;
+            }
+            btnRenombrar.innerHTML = `<span class="material-symbols-outlined">edit</span> Cambiar nombre`;
+            cleanup(); 
+            resolve({ accion: 'renombrar', nuevoNombre: nuevoVal }); 
+        };
+
+        btnUnir.onclick = (e) => { 
+            e.preventDefault(); 
+            cleanup(); 
+            resolve({ accion: 'unir' }); 
+        };
+
+        btnCancelar.onclick = (e) => { 
+            e.preventDefault(); 
+            cleanup(); 
+            resolve({ accion: 'cancelar' }); 
+        };
     });
 }
 
@@ -664,11 +768,20 @@ window.guardarListaFirebase = async (btn) => {
         tag: typeof item === 'object' ? item.etiqueta || item.tag : "N"
     }));
 
+    let nombreFinal = nombre;
+    let listaIdFinal = listaId;
+
     if (existe && window.editingId !== existe.id && window.editingId !== listaId) {
         const decision = await solicitarDecisionListaExistente(nombre);
-        if (decision === 'cancelar') return;
+        if (decision.accion === 'cancelar') return;
 
-        if (decision === 'unir') {
+        if (decision.accion === 'duplicar') {
+            nombreFinal = `${nombre} (Copia)`;
+            listaIdFinal = `${listaId}-copia-${Date.now().toString(36)}`;
+        } else if (decision.accion === 'renombrar' && decision.nuevoNombre) {
+            nombreFinal = decision.nuevoNombre;
+            listaIdFinal = nombreFinal.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
+        } else if (decision.accion === 'unir') {
             const cantosExistentes = Array.isArray(existe.ids_cantos) ? existe.ids_cantos : [];
             const idsProcesados = new Set(cantosExistentes.map(c => String(typeof c === 'object' ? c.id : c)));
             
@@ -681,11 +794,13 @@ window.guardarListaFirebase = async (btn) => {
             });
 
             finalIdsCantos = [...cantosExistentes, ...cantosNuevos];
+            listaIdFinal = existe.id;
+            nombreFinal = existe.nombre;
         }
     }
 
     // Si se estaba editando una lista previa cuyo ID original cambió
-    if (window.editingId && window.editingId !== listaId) {
+    if (window.editingId && window.editingId !== listaIdFinal) {
         let pendingDeletions = JSON.parse(localStorage.getItem('cache_listas_eliminadas_pendientes') || "[]");
         if (!pendingDeletions.includes(window.editingId)) {
             pendingDeletions.push(window.editingId);
@@ -701,8 +816,8 @@ window.guardarListaFirebase = async (btn) => {
     }
 
     const nuevaLista = { 
-        id: listaId, 
-        nombre, 
+        id: listaIdFinal, 
+        nombre: nombreFinal, 
         categoria,
         ids_cantos: finalIdsCantos, 
         ultimaActualizacion: new Date().toISOString(),
@@ -710,7 +825,7 @@ window.guardarListaFirebase = async (btn) => {
         pendingSync: user ? true : false
     };
 
-    cache = cache.filter(l => l.id !== listaId && l.id !== window.editingId);
+    cache = cache.filter(l => l.id !== listaIdFinal && l.id !== window.editingId);
     cache.unshift(nuevaLista);
     localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
     listasLocalesCache = cache;
@@ -969,7 +1084,7 @@ window.toggleDetalleLista = (idLista) => {
             const etiqueta = (typeof item === 'object' && item !== null) ? item.tag : (i + 1);
             const c = todosLosCantos.find(can => String(can.id) === String(id));
             
-            return `<div class="sub-item-canto" onclick="window.abrirVisorCanto('${id}')">
+            return `<div class="sub-item-canto" onclick="window.abrirVisorCantoDesdeLista('${id}', '${idLista}')">
                 <span class="num">${etiqueta}</span><span>${c ? (c.title || c.titulo) : "Canto desconocido"}</span>
             </div>`;
         }).join('');
@@ -1001,6 +1116,23 @@ window.cargarListaParaEditar = (docId, ids, nombre, categoria) => {
     renderizarLista(todosLosCantos); 
     
     window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+window.abrirVisorCantoDesdeLista = (idCanto, idLista) => {
+    try {
+        const lista = listasLocalesCache.find(l => l.id === idLista);
+        if (lista) {
+            sessionStorage.setItem('resucito_active_playlist', JSON.stringify({
+                id: lista.id,
+                nombre: lista.nombre,
+                categoria: lista.categoria || '',
+                ids_cantos: lista.ids_cantos
+            }));
+        }
+    } catch (e) {
+        console.error("Error guardando lista activa en sessionStorage:", e);
+    }
+    window.location.href = `./index.html#canto=${idCanto}`;
 };
 
 window.abrirVisorCanto = (idCanto) => {
@@ -1040,25 +1172,86 @@ const detectarLinkCompartido = async () => {
             if (docSnap.exists()) {
                 const datosCanto = docSnap.data();
                 if (datosCanto && datosCanto.n && datosCanto.i) {
-                    const idFinal = "imp-" + Date.now();
-                    let nombreLimpio = datosCanto.n.replace(/🔗/g, '').replace(/📂/g, '').trim();
-                    const nl = { 
-                        id: idFinal, 
-                        nombre: "🔗 " + nombreLimpio, 
-                        categoria: datosCanto.c || "Otros",
-                        ids_cantos: datosCanto.i, 
-                        ultimaActualizacion: new Date().toISOString(),
-                        origin: 'local',
-                        pendingSync: auth.currentUser ? true : false
-                    };
-
                     let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
-                    cache.unshift(nl);
-                    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-                    listasLocalesCache = cache;
+                    const listadoBase = (Array.isArray(listasLocalesCache) && listasLocalesCache.length > 0) ? listasLocalesCache : cache;
 
-                    window.history.replaceState({}, document.title, window.location.pathname);
-                    renderizarListasUI(cache);
+                    let nombreLimpio = datosCanto.n.replace(/🔗/g, '').replace(/📂/g, '').trim();
+                    const categoria = datosCanto.c || "Otros";
+                    const nombreBaseNorm = normalizarTexto(nombreLimpio);
+
+                    // Buscar si existe lista local con nombre similar
+                    const existe = listadoBase.find(l => {
+                        const lNorm = normalizarTexto(l.nombre ? l.nombre.replace(/🔗/g, '').replace(/📂/g, '') : '');
+                        return lNorm === nombreBaseNorm;
+                    });
+
+                    let nombreFinal = "🔗 " + nombreLimpio;
+                    let idFinal = "imp-" + Date.now();
+                    let finalIdsCantos = datosCanto.i;
+                    let targetLista = null;
+
+                    if (existe) {
+                        const decision = await solicitarDecisionListaExistente(existe.nombre || nombreLimpio);
+                        
+                        if (decision.accion === 'cancelar') {
+                            // Cancelar importación, solo enfocar la existente
+                            targetLista = existe;
+                        } else if (decision.accion === 'duplicar') {
+                            nombreFinal = `🔗 ${nombreLimpio} (Copia)`;
+                            idFinal = `imp-${Date.now()}`;
+                        } else if (decision.accion === 'renombrar' && decision.nuevoNombre) {
+                            nombreFinal = decision.nuevoNombre.startsWith('🔗') ? decision.nuevoNombre : `🔗 ${decision.nuevoNombre}`;
+                            idFinal = `imp-${Date.now()}`;
+                        } else if (decision.accion === 'unir') {
+                            const cantosExistentes = Array.isArray(existe.ids_cantos) ? existe.ids_cantos : [];
+                            const idsProcesados = new Set(cantosExistentes.map(c => String(typeof c === 'object' ? c.id : c)));
+                            
+                            const cantosNuevos = [];
+                            (datosCanto.i || []).forEach(item => {
+                                const itemStrId = String(typeof item === 'object' ? item.id : item);
+                                if (!idsProcesados.has(itemStrId)) {
+                                    cantosNuevos.push(item);
+                                }
+                            });
+
+                            finalIdsCantos = [...cantosExistentes, ...cantosNuevos];
+                            idFinal = existe.id;
+                            nombreFinal = existe.nombre;
+                        }
+                    }
+
+                    if (!targetLista) {
+                        targetLista = { 
+                            id: idFinal, 
+                            nombre: nombreFinal, 
+                            categoria: categoria,
+                            ids_cantos: finalIdsCantos, 
+                            ultimaActualizacion: new Date().toISOString(),
+                            origin: 'local',
+                            pendingSync: auth.currentUser ? true : false
+                        };
+
+                        cache = cache.filter(l => l.id !== idFinal);
+                        cache.unshift(targetLista);
+                        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                        listasLocalesCache = cache;
+
+                        if (auth.currentUser) {
+                            ejecutarSincronizacionFondo();
+                        }
+                    }
+
+                    // Actualizar URL a formato descriptivo con categoría, listaId y ancla
+                    const catSlug = (targetLista.categoria || "Otros").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "-");
+                    const nuevaUrl = `${window.location.pathname}?cat=${encodeURIComponent(targetLista.categoria || "Otros")}&listaId=${encodeURIComponent(targetLista.id)}#cat-grupo-${catSlug}`;
+                    window.history.replaceState({}, document.title, nuevaUrl);
+
+                    // Forzar expansión y resaltado
+                    categoriaForzadaAbierta = targetLista.categoria || "Otros";
+                    listaForzadaAbierta = targetLista.id;
+
+                    renderizarListasUI(listasLocalesCache);
+                    mostrarNotificacionVerde("Lista importada correctamente");
                 }
             } else {
                 alert("El enlace compartido no existe o ha expirado.");

@@ -1108,7 +1108,7 @@ window.initAjustes = async function() {
     if (!settingsModalPromise) {
       settingsModalPromise = (async () => {
         try {
-          const response = await fetch('data/ajustes_modal.html?v=129');
+          const response = await fetch('data/ajustes_modal.html?v=138');
           if (response.ok) {
             const html = await response.text();
             const tempDiv = document.createElement('div');

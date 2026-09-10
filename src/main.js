@@ -842,15 +842,62 @@ async function loadSongView(songId) {
       card.classList.toggle('active', isCurrent);
     });
     
+    // Sincronizar lista activa desde sessionStorage si existe
+    let activeCustomPlaylist = null;
+    try {
+      const storedPlaylist = sessionStorage.getItem('resucito_active_playlist');
+      if (storedPlaylist) {
+        activeCustomPlaylist = JSON.parse(storedPlaylist);
+        if (activeCustomPlaylist && Array.isArray(activeCustomPlaylist.ids_cantos)) {
+          // Verificar si el canto actual pertenece a esta lista
+          const perteneceALista = activeCustomPlaylist.ids_cantos.some(item => {
+            const cId = (typeof item === 'object' && item !== null) ? item.id : item;
+            return String(cId) === String(songId);
+          });
+          if (perteneceALista) {
+            // Mapear activeSongsPlaylist con los objetos de los cantos en el orden de la lista
+            const playlistSongs = [];
+            activeCustomPlaylist.ids_cantos.forEach((item, idx) => {
+              const cId = (typeof item === 'object' && item !== null) ? item.id : item;
+              const tag = (typeof item === 'object' && item !== null) ? (item.tag || item.etiqueta || (idx + 1)) : (idx + 1);
+              const found = allSongs.find(s => String(s.id) === String(cId));
+              if (found) {
+                playlistSongs.push({ ...found, playlistTag: tag });
+              } else {
+                playlistSongs.push({ id: String(cId), title: 'Canto ' + cId, playlistTag: tag });
+              }
+            });
+            activeSongsPlaylist = playlistSongs;
+          } else {
+            // Si el usuario navegó a un canto fuera de la lista, ya no está en esa lista
+            // sessionStorage.removeItem('resucito_active_playlist');
+            activeCustomPlaylist = null;
+          }
+        }
+      }
+    } catch (e) {
+      console.error("Error al leer lista activa de sessionStorage:", e);
+    }
+
     // Configurar cabecera del visor (Christ block y título de libro)
     if (cantoHeaderBlock) {
       const stage = (currentCanto.catCanto || '').toUpperCase();
       const title = (currentCanto.title || currentCanto.tt || '').toUpperCase();
       const subtitle = currentCanto.subtitle || '';
       
+      const playlistBadgeHtml = activeCustomPlaylist ? `
+        <div class="canto-header-playlist-badge" id="canto-header-playlist-btn" onclick="window.abrirModalPlaylistActiva()" title="Ver cantos de la lista: ${activeCustomPlaylist.nombre}">
+          <span class="material-symbols-outlined">queue_music</span>
+          <span>${activeCustomPlaylist.nombre}</span>
+        </div>
+      ` : '';
+
       cantoHeaderBlock.innerHTML = `
         <div class="canto-header-top">
-          <div class="canto-header-stage">${stage}</div>
+          <div class="canto-header-top-col">
+            <div class="canto-header-stage">${stage}</div>
+            ${playlistBadgeHtml}
+          </div>
         </div>
         <div class="canto-header-main">
           <div class="canto-header-left">
@@ -1116,7 +1163,18 @@ function setupViewerSongFooter(songId) {
     const cleanNotes = typeof rawNotes === 'string' ? rawNotes.trim() : '';
 
     if (cleanNotes && cleanNotes !== 'canto') {
-      officialNotesDiv.innerHTML = cleanNotes.replace(/\n/g, '<br>');
+      const rawUrl = songMeta.nCanURL || songMeta.notesURL || currentCanto?.nCanURL || currentCanto?.notesURL || '';
+      let cleanUrl = typeof rawUrl === 'string' ? rawUrl.trim() : '';
+
+      if (cleanUrl) {
+        // Asegurar esquema seguro (https:) si inicia con protocolo relativo '//'
+        if (cleanUrl.startsWith('//')) {
+          cleanUrl = 'https:' + cleanUrl;
+        }
+        officialNotesDiv.innerHTML = `<a href="${cleanUrl}" target="_blank" rel="noopener noreferrer" class="official-notes-link">${cleanNotes.replace(/\n/g, '<br>')}</a>`;
+      } else {
+        officialNotesDiv.innerHTML = cleanNotes.replace(/\n/g, '<br>');
+      }
       
       const customColor = songMeta.notesColor || songMeta.nCanColor || currentCanto?.notesColor || currentCanto?.nCanColor || '';
       if (customColor) {
@@ -5427,6 +5485,40 @@ function setupEventListeners() {
 
   let selectedLogDateStr = getLocalDateStr(); // Por defecto inicia mostrando SOLO el día de hoy
 
+  // Normalizar cualquier formato de fecha a YYYY-MM-DD
+  function normalizeDateStr(dateStr, tsNum) {
+    if (!dateStr && tsNum) {
+      const d = new Date(Number(tsNum));
+      if (!isNaN(d.getTime())) {
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return `${y}-${m}-${day}`;
+      }
+    }
+    if (!dateStr) return '';
+    const str = String(dateStr).trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(str)) return str;
+    // Si viene en formato DD/MM/YYYY o DD-MM-YYYY
+    const parts = str.split(/[\/\-]/);
+    if (parts.length === 3) {
+      if (parts[0].length === 4) {
+        return `${parts[0]}-${parts[1].padStart(2, '0')}-${parts[2].padStart(2, '0')}`;
+      }
+      return `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
+    }
+    if (tsNum) {
+      const d = new Date(Number(tsNum));
+      if (!isNaN(d.getTime())) {
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return `${y}-${m}-${day}`;
+      }
+    }
+    return str;
+  }
+
   // Cargar logs guardados en Firebase Firestore (colección 'app_logs')
   function initFirebaseAppLogsSync() {
     if (!db) return;
@@ -5436,7 +5528,9 @@ function setupEventListeners() {
       onSnapshot(q, (snapshot) => {
         const remoteLogs = [];
         snapshot.forEach((doc) => {
-          remoteLogs.push({ id: doc.id, ...doc.data() });
+          const data = doc.data();
+          const dStr = normalizeDateStr(data.dateStr, data.timestampNum);
+          remoteLogs.push({ id: doc.id, ...data, dateStr: dStr });
         });
         if (remoteLogs.length > 0) {
           // Fusionar con los logs locales evitando duplicados
@@ -5444,7 +5538,10 @@ function setupEventListeners() {
           remoteLogs.forEach(l => map.set(l.uniqueKey || `${l.timestampNum}_${l.message}`, l));
           window.appLogs.forEach(l => {
             const k = l.uniqueKey || `${l.timestampNum}_${l.message}`;
-            if (!map.has(k)) map.set(k, l);
+            if (!map.has(k)) {
+              l.dateStr = normalizeDateStr(l.dateStr, l.timestampNum);
+              map.set(k, l);
+            }
           });
           window.appLogs = Array.from(map.values()).sort((a, b) => (a.timestampNum || 0) - (b.timestampNum || 0));
           if (window.appLogs.length > 500) window.appLogs = window.appLogs.slice(-500);
@@ -5559,8 +5656,15 @@ function setupEventListeners() {
     const dateInput = document.getElementById('logs-date-input');
     if (!container) return;
 
-    if (dateInput && !dateInput.value && selectedLogDateStr) {
-      dateInput.value = selectedLogDateStr;
+    if (window.attachLogControls) window.attachLogControls();
+
+    // Solo sincronizar el input de fecha si el usuario no está interactuando activamente con él
+    if (dateInput && document.activeElement !== dateInput) {
+      if (selectedLogDateStr === 'all') {
+        if (dateInput.value !== '') dateInput.value = '';
+      } else if (selectedLogDateStr) {
+        if (dateInput.value !== selectedLogDateStr) dateInput.value = selectedLogDateStr;
+      }
     }
 
     const selectedCat = catSelect ? catSelect.value : 'all';
@@ -5568,7 +5672,8 @@ function setupEventListeners() {
     // Filtrar por categoría y por fecha seleccionada
     const filtered = window.appLogs.filter(item => {
       const matchCat = (selectedCat === 'all' || item.category === selectedCat);
-      const matchDate = (!selectedLogDateStr || selectedLogDateStr === 'all' || item.dateStr === selectedLogDateStr);
+      const itemDate = normalizeDateStr(item.dateStr, item.timestampNum);
+      const matchDate = (!selectedLogDateStr || selectedLogDateStr === 'all' || itemDate === selectedLogDateStr);
       return matchCat && matchDate;
     });
 
@@ -5592,65 +5697,91 @@ function setupEventListeners() {
     container.scrollTop = container.scrollHeight;
   };
 
-  // Listeners de controles de filtros de logs (Categoría y Fecha)
-  const logsCategorySelect = document.getElementById('logs-category-select');
-  if (logsCategorySelect) {
-    logsCategorySelect.addEventListener('change', window.renderAppLogs);
-  }
-
-  const logsDateInput = document.getElementById('logs-date-input');
-  if (logsDateInput) {
-    logsDateInput.value = selectedLogDateStr;
-    logsDateInput.addEventListener('change', (e) => {
-      selectedLogDateStr = e.target.value;
-      window.renderAppLogs();
-    });
-  }
-
-  const logsTodayBtn = document.getElementById('logs-today-btn');
-  if (logsTodayBtn) {
-    logsTodayBtn.addEventListener('click', () => {
-      selectedLogDateStr = getLocalDateStr();
-      if (logsDateInput) logsDateInput.value = selectedLogDateStr;
-      window.renderAppLogs();
-    });
-  }
-
-  const logsAllDatesBtn = document.getElementById('logs-all-dates-btn');
-  if (logsAllDatesBtn) {
-    logsAllDatesBtn.addEventListener('click', () => {
-      selectedLogDateStr = 'all';
-      if (logsDateInput) logsDateInput.value = '';
-      window.renderAppLogs();
-    });
-  }
-
-  const clearLogsBtn = document.getElementById('clear-logs-btn');
-  if (clearLogsBtn) {
-    clearLogsBtn.addEventListener('click', () => {
-      window.appLogs = [];
-      window.renderAppLogs();
-    });
-  }
-
-  const copyLogsBtn = document.getElementById('copy-logs-btn');
-  if (copyLogsBtn) {
-    copyLogsBtn.addEventListener('click', () => {
-      const selectedCat = logsCategorySelect ? logsCategorySelect.value : 'all';
-      const filtered = window.appLogs.filter(item => {
-        const matchCat = (selectedCat === 'all' || item.category === selectedCat);
-        const matchDate = (!selectedLogDateStr || selectedLogDateStr === 'all' || item.dateStr === selectedLogDateStr);
-        return matchCat && matchDate;
+  // Función para vincular los controles de filtros de logs (Categoría, Fecha, Hoy, Todos, Limpiar, Copiar)
+  window.attachLogControls = function() {
+    const logsCategorySelect = document.getElementById('logs-category-select');
+    if (logsCategorySelect && !logsCategorySelect.__attached) {
+      logsCategorySelect.__attached = true;
+      logsCategorySelect.addEventListener('change', () => {
+        if (window.renderAppLogs) window.renderAppLogs();
       });
-      const text = filtered.map(item => `[${item.dateStr || ''} ${item.time}] [${item.category}]\n${item.message}${item.details ? '\n' + item.details : ''}`).join('\n\n');
-      navigator.clipboard.writeText(text).then(() => {
-        copyLogsBtn.textContent = '¡Copiados!';
-        setTimeout(() => copyLogsBtn.textContent = 'Copiar Logs', 2000);
-      }).catch(err => {
-        alert('No se pudo copiar: ' + err);
+    }
+
+    const logsDateInput = document.getElementById('logs-date-input');
+    if (logsDateInput && !logsDateInput.__attached) {
+      logsDateInput.__attached = true;
+      if (selectedLogDateStr === 'all') {
+        logsDateInput.value = '';
+      } else if (selectedLogDateStr) {
+        logsDateInput.value = selectedLogDateStr;
+      }
+      const handleDateChange = (e) => {
+        if (!e.target.value) {
+          selectedLogDateStr = 'all';
+        } else {
+          selectedLogDateStr = normalizeDateStr(e.target.value);
+        }
+        if (window.renderAppLogs) window.renderAppLogs();
+      };
+      logsDateInput.addEventListener('change', handleDateChange);
+      logsDateInput.addEventListener('input', handleDateChange);
+    }
+
+    const logsTodayBtn = document.getElementById('logs-today-btn');
+    if (logsTodayBtn && !logsTodayBtn.__attached) {
+      logsTodayBtn.__attached = true;
+      logsTodayBtn.addEventListener('click', () => {
+        selectedLogDateStr = getLocalDateStr();
+        const dateInput = document.getElementById('logs-date-input');
+        if (dateInput) dateInput.value = selectedLogDateStr;
+        if (window.renderAppLogs) window.renderAppLogs();
       });
-    });
-  }
+    }
+
+    const logsAllDatesBtn = document.getElementById('logs-all-dates-btn');
+    if (logsAllDatesBtn && !logsAllDatesBtn.__attached) {
+      logsAllDatesBtn.__attached = true;
+      logsAllDatesBtn.addEventListener('click', () => {
+        selectedLogDateStr = 'all';
+        const dateInput = document.getElementById('logs-date-input');
+        if (dateInput) dateInput.value = '';
+        if (window.renderAppLogs) window.renderAppLogs();
+      });
+    }
+
+    const clearLogsBtn = document.getElementById('clear-logs-btn');
+    if (clearLogsBtn && !clearLogsBtn.__attached) {
+      clearLogsBtn.__attached = true;
+      clearLogsBtn.addEventListener('click', () => {
+        window.appLogs = [];
+        if (window.renderAppLogs) window.renderAppLogs();
+      });
+    }
+
+    const copyLogsBtn = document.getElementById('copy-logs-btn');
+    if (copyLogsBtn && !copyLogsBtn.__attached) {
+      copyLogsBtn.__attached = true;
+      copyLogsBtn.addEventListener('click', () => {
+        const catSelect = document.getElementById('logs-category-select');
+        const selectedCat = catSelect ? catSelect.value : 'all';
+        const filtered = window.appLogs.filter(item => {
+          const matchCat = (selectedCat === 'all' || item.category === selectedCat);
+          const matchDate = (!selectedLogDateStr || selectedLogDateStr === 'all' || item.dateStr === selectedLogDateStr);
+          return matchCat && matchDate;
+        });
+        const text = filtered.map(item => `[${item.dateStr || ''} ${item.time}] [${item.category}]\n${item.message}${item.details ? '\n' + item.details : ''}`).join('\n\n');
+        navigator.clipboard.writeText(text).then(() => {
+          copyLogsBtn.textContent = '¡Copiados!';
+          setTimeout(() => copyLogsBtn.textContent = 'Copiar Logs', 2000);
+        }).catch(err => {
+          alert('No se pudo copiar: ' + err);
+        });
+      });
+    }
+  };
+
+  // Intentar conectar los controles inicialmente si ya existen en el DOM
+  window.attachLogControls();
 
   // Logger de diagnóstico para inspeccionar el comportamiento táctil del buscador
   const attachSearchDiagnostics = (inputEl, label) => {
@@ -6936,3 +7067,193 @@ function setupEventListeners() {
 }
 
 // Las funciones de zoom, fuentes, temas y preferencias han sido movidas a ajustes.js y expuestas globalmente.
+
+// --- Modal de Lista Activa de Cantos (Preparación) ---
+window.abrirModalPlaylistActiva = function() {
+  const modal = document.getElementById('modal-playlist-activa');
+  const titulo = document.getElementById('modal-playlist-activa-titulo');
+  const sub = document.getElementById('modal-playlist-activa-sub');
+  const listaContenedor = document.getElementById('modal-playlist-activa-lista');
+  if (!modal || !listaContenedor) return;
+
+  let activeCustomPlaylist = null;
+  try {
+    const stored = sessionStorage.getItem('resucito_active_playlist');
+    if (stored) activeCustomPlaylist = JSON.parse(stored);
+  } catch (e) {}
+
+  if (!activeCustomPlaylist || !Array.isArray(activeCustomPlaylist.ids_cantos)) {
+    return;
+  }
+
+  if (titulo) titulo.textContent = activeCustomPlaylist.nombre || 'Lista de Cantos';
+  if (sub) sub.textContent = `${activeCustomPlaylist.categoria ? activeCustomPlaylist.categoria + ' • ' : ''}${activeCustomPlaylist.ids_cantos.length} cantos`;
+
+  const currentSongId = currentCanto?.id || '';
+
+  listaContenedor.innerHTML = activeCustomPlaylist.ids_cantos.map((item, idx) => {
+    const cId = (typeof item === 'object' && item !== null) ? String(item.id) : String(item);
+    const tag = (typeof item === 'object' && item !== null) ? (item.tag || item.etiqueta || (idx + 1)) : (idx + 1);
+    const songMeta = allSongs.find(s => String(s.id) === cId);
+    const nombreCanto = songMeta ? (songMeta.titulo || songMeta.title) : ('Canto ' + cId);
+    const esActivo = (cId === String(currentSongId));
+
+    return `
+      <div class="modal-playlist-item ${esActivo ? 'active' : ''}" onclick="window.seleccionarCantoDesdeModalPlaylist('${cId}')">
+        <span class="item-tag">${tag}</span>
+        <span class="item-title">${nombreCanto}</span>
+        ${esActivo ? '<span class="material-symbols-outlined item-status">play_circle</span>' : ''}
+      </div>
+    `;
+  }).join('');
+
+  modal.style.display = 'flex';
+};
+
+window.cerrarModalPlaylistActiva = function() {
+  const modal = document.getElementById('modal-playlist-activa');
+  if (modal) modal.style.display = 'none';
+};
+
+window.seleccionarCantoDesdeModalPlaylist = function(idCanto) {
+  window.cerrarModalPlaylistActiva();
+  window.location.hash = `#canto=${idCanto}`;
+};
+
+window.irAListaEnPreparar = function() {
+  let activeCustomPlaylist = null;
+  try {
+    const stored = sessionStorage.getItem('resucito_active_playlist');
+    if (stored) activeCustomPlaylist = JSON.parse(stored);
+  } catch (e) {}
+
+  window.cerrarModalPlaylistActiva();
+
+  if (activeCustomPlaylist) {
+    const cat = encodeURIComponent(activeCustomPlaylist.categoria || '');
+    const listId = encodeURIComponent(activeCustomPlaylist.id || '');
+    window.location.href = `./preparar.html?cat=${cat}&listaId=${listId}#cat-grupo-${(activeCustomPlaylist.categoria || 'Otros').toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "-")}`;
+  } else {
+    window.location.href = './preparar.html';
+  }
+};
+
+// Acciones desde el encabezado del modal de playlist activa
+window.obtenerListaActivaCache = function() {
+  try {
+    const stored = sessionStorage.getItem('resucito_active_playlist');
+    if (stored) {
+      const playlist = JSON.parse(stored);
+      // Buscar la versión más completa en cache_listas_personalizadas si existe
+      const cacheLocalStr = localStorage.getItem('cache_listas_personalizadas');
+      if (cacheLocalStr) {
+        const cacheLocal = JSON.parse(cacheLocalStr);
+        const encontrada = cacheLocal.find(l => l.id === playlist.id);
+        if (encontrada) return encontrada;
+      }
+      return playlist;
+    }
+  } catch (e) {
+    console.error("Error al obtener lista activa de cache:", e);
+  }
+  return null;
+};
+
+window.compartirUniversalDesdeModal = async function() {
+  const lista = window.obtenerListaActivaCache();
+  if (!lista) return;
+
+  try {
+    const idCorto = Math.random().toString(36).substring(2, 8);
+    const docRef = doc(db, "listasCompartidas", idCorto);
+    
+    await setDoc(docRef, {
+      n: lista.nombre,
+      c: lista.categoria || "Otros",
+      i: lista.ids_cantos,
+      creado: new Date().toISOString()
+    });
+
+    const urlFinal = `${window.location.origin}${window.location.pathname.replace('index.html', '')}preparar.html?v=${idCorto}`;
+    const mensaje = `🎼 Lista de Cantos (${lista.categoria || 'Celebración'}): *${lista.nombre}*`;
+
+    if (navigator.share) {
+      await navigator.share({
+        title: lista.nombre,
+        text: mensaje,
+        url: urlFinal,
+      });
+    } else {
+      const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(mensaje + "\n" + urlFinal)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  } catch (e) {
+    console.error("Error al compartir lista desde modal:", e);
+  }
+};
+
+window.copiarSoloLinkDesdeModal = async function() {
+  const lista = window.obtenerListaActivaCache();
+  if (!lista) return;
+
+  try {
+    const idCorto = Math.random().toString(36).substring(2, 8);
+    const docRef = doc(db, "listasCompartidas", idCorto);
+    
+    await setDoc(docRef, {
+      n: lista.nombre,
+      c: lista.categoria || "Otros",
+      i: lista.ids_cantos,
+      creado: new Date().toISOString()
+    });
+
+    const urlFinal = `${window.location.origin}${window.location.pathname.replace('index.html', '')}preparar.html?v=${idCorto}`;
+    
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(urlFinal);
+      alert("✅ Enlace copiado al portapapeles. ¡Listo para enviar!");
+    } else {
+      throw new Error("Clipboard API no disponible");
+    }
+  } catch (e) {
+    console.error("Error al copiar enlace desde modal:", e);
+    alert("No se pudo copiar el enlace automáticamente.");
+  }
+};
+
+window.exportarListaDesdeModal = function() {
+  const lista = window.obtenerListaActivaCache();
+  if (!lista) return;
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(lista));
+  const downloadAnchorNode = document.createElement('a');
+  downloadAnchorNode.setAttribute("href", dataStr);
+  downloadAnchorNode.setAttribute("download", `Resucito_${(lista.nombre || 'Lista').replace(/\s+/g, '_')}.resucito`);
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
+};
+
+window.editarListaDesdeModal = function() {
+  const lista = window.obtenerListaActivaCache();
+  window.cerrarModalPlaylistActiva();
+  if (lista) {
+    const cat = encodeURIComponent(lista.categoria || '');
+    const listId = encodeURIComponent(lista.id || '');
+    window.location.href = `./preparar.html?cat=${cat}&listaId=${listId}&editarId=${listId}`;
+  } else {
+    window.location.href = './preparar.html';
+  }
+};
+
+// Listeners para cerrar el modal de playlist activa
+const modalPlaylistCloseBtn = document.getElementById('modal-playlist-activa-close');
+if (modalPlaylistCloseBtn) {
+  modalPlaylistCloseBtn.addEventListener('click', window.cerrarModalPlaylistActiva);
+}
+const modalPlaylistOverlay = document.getElementById('modal-playlist-activa');
+if (modalPlaylistOverlay) {
+  modalPlaylistOverlay.addEventListener('click', (e) => {
+    if (e.target === modalPlaylistOverlay) {
+      window.cerrarModalPlaylistActiva();
+    }
+  });
+}

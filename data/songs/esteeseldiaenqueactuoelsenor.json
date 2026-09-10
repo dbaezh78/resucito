@@ -49,11 +49,11 @@
       "sC": "ta as ab1"
     },
     {
-      "line": "para cantar, (Fa,,100)",
+      "line": "para cantar, (Fa,,80)",
       "sC": ""
     },
     {
-      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)",
+      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,190)",
       "sC": "as ab2"
     },
     {
@@ -77,11 +77,11 @@
       "sC": "as ab3"
     },
     {
-      "line": "pero no, (Fa,,64)",
+      "line": "pero no, (Fa,,55)",
       "sC": ""
     },
     {
-      "line": "ME DEJÓ EN LA MUERTE., (Mi,,193)",
+      "line": "ME DEJÓ EN LA MUERTE., (Mi,,160)",
       "sC": "as ab4"
     },
     {
@@ -89,79 +89,73 @@
       "sC": "adb1"
     },
     {
-      "line": "Dad gracias al Señor porque es bueno,, (La,m,20)",
+      "line": "Dad gracias al Señor porque es bueno,, (La,m,0)",
       "sC": ""
     },
     {
-      "line": "PORQUE ES ETERNA SU MISERICORDIA., (Fa,,146)(Mi,,325)",
+      "line": "PORQUE ES ETERNA SU MISERICORDIA., (Fa,,120)(Mi,,270)",
       "sC": "as"
     },
     {
-      "line": "Que lo diga la casa de Israel:, (La,m,20)",
+      "line": "Que lo diga la casa de Israel:, (La,m,0)",
       "sC": ""
     },
     {
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "ES ETERNA, (Fa,,63)",
-      "sC": "as ab5",
+      "triggerLine": "ES ETERNA, (Fa,,45)",
+      "sC": "as ab61",
       "lines": [
-        {
-          "line": "SU MISERICORDIA., (Mi,,123)",
-          "sC": "as ab6"
-        }
+        {"line": "ES ETERNA, (Fa,,45)","sC": "as ab61"},
+        {"line": "SU MISERICORDIA., (Mi,,100)","sC": "as ab62"}
       ]
     },
     {
-      "line": "Que lo diga la casa de Aarón:, (La,m,15)",
+      "line": "Que lo diga la casa de Aarón:, (La,m,0)",
       "sC": ""
     },
     {
       "type": "collapsible-block",
       "id": "asamblea_anadie_2",
       "initialState": "collapsed",
-      "triggerLine": "ES ETERNA, (Fa,,63)",
-      "sC": "as ab5",
+      "triggerLine": "ES ETERNA, (Fa,,45)",
+      "sC": "as ab61",
       "lines": [
-        {
-          "line": "SU MISERICORDIA., (Mi,,123)",
-          "sC": "as ab6"
-        }
+        {"line": "ES ETERNA, (Fa,,45)","sC": "as ab61"},
+        {"line": "SU MISERICORDIA., (Mi,,100)","sC": "as ab62"}
       ]
     },
     {
-      "line": "Que lo digan los fieles del Señor:, (La,m,15)",
+      "line": "Que lo digan los fieles del Señor:, (La,m,0)",
       "sC": ""
     },
     {
       "type": "collapsible-block",
       "id": "asamblea_anadie_3",
       "initialState": "collapsed",
-      "triggerLine": "ES ETERNA, (Fa,,63)",
-      "sC": "as ab7",
+      "triggerLine": "ES ETERNA, (Fa,,45)",
+      "sC": "as ab71",
       "lines": [
-        {
-          "line": "SU MISERICORDIA., (Mi,,129)",
-          "sC": "as ab8"
-        }
+        {"line": "ES ETERNA, (Fa,,45)","sC": "as ab71"},
+        {"line": "SU MISERICORDIA., (Mi,,100)","sC": "as ab72"}
       ]
     },
     
     {
-      "line": "Mejor es confiar en el Señor, (Do,,10)",
+      "line": "Mejor es confiar en el Señor, (Do,,0)",
       "sC": ""
     },
     {
-      "line": "QUE FIARSE DE LOS HOMBRES,, (Fa,,68)(Mi,,221)",
+      "line": "QUE FIARSE DE LOS HOMBRES,, (Fa,,50)(Mi,,190)",
       "sC": "as"
     },
     {
-      "line": "mejor es apoyarse en el Señor, (Do,,10)",
+      "line": "mejor es apoyarse en el Señor, (Do,,0)",
       "sC": ""
     },
     {
-      "line": "QUE CONFIAR EN LOS INTELIGENTES., (Fa,,111)(Mi,,297)",
+      "line": "QUE CONFIAR EN LOS INTELIGENTES., (Fa,,85)(Mi,,260)",
       "sC": "as"
     },
     {
@@ -169,7 +163,7 @@
       "sC": "adb1"
     },
     {
-      "line": "me rodeaban,,(La,m,20)",
+      "line": "me rodeaban,,(La,m,0)",
       "sC": ""
     },
     {
@@ -185,11 +179,11 @@
       "sC": "as ab9"
     },
     {
-      "line": "en el nombre del Señor, (Fa,,66)",
+      "line": "en el nombre del Señor, (Fa,,70)",
       "sC": ""
     },
     {
-      "line": "LOS RECHACÉ., (Mi,,129)",
+      "line": "LOS RECHACÉ., (Mi,,100)",
       "sC": "as ab10"
     },
     {
@@ -199,7 +193,7 @@
   ],
   "lder": [
     {
-      "line": "Me empujaban,, (Lam,,15)",
+      "line": "Me empujaban,, (La,m,0)",
       "sC": ""
     },
     {
@@ -238,25 +232,27 @@
       "line": "«La diestra del Señor es poderosa,, (Do,,0)",
       "sC": ""
     },
-    {
-      "line": "ES EXCELSA LA DIESTRA DEL SEÑOR»., (Fa,,55)(Mi,,290)",
-      "sC": "as"
-    },
-    {
+        {
       "line": "",
       "sC": "adb1"
     },
     {
+      "line": "ES EXCELSA LA DIESTRA DEL SEÑOR»., (Fa,,60)(Mi,,290)",
+      "sC": "as"
+    },
+    {"line": "","sC": "adb1"},
+    {
       "type": "collapsible-block",
       "id": "asamblea_anadie_4",
       "initialState": "collapsed",
-      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,0)",
+      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,0)(Mi,,320)",
       "sC": "tc as",
       "lines": [
-
+        
+      {"line": "","sC": "adb1"},
     {
       "line": "No he de morir,, (La,m,0)",
-      "sC": "tc abc "
+      "sC": "tc ab13"
     },
     {
       "line": "QUE VIVIRÉ,",
@@ -271,11 +267,11 @@
       "sC": "ta as ab1"
     },
     {
-      "line": "para cantar, (Fa,,100)",
+      "line": "para cantar, (Fa,,85)",
       "sC": ""
     },
     {
-      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,210)",
+      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,190)",
       "sC": "as ab2"
     },
     {
@@ -303,7 +299,7 @@
       "sC": ""
     },
     {
-      "line": "ME DEJÓ EN LA MUERTE., (Mi,,190)",
+      "line": "ME DEJÓ EN LA MUERTE., (Mi,,160)",
       "sC": "as ab4"
     }
         
@@ -318,11 +314,11 @@
       "sC": ""
     },
     {
-      "line": "Y ENTRARÉ PARA DAR GRACIAS AL SEÑOR., (Fa,,55)(Mi,,190)",
+      "line": "Y ENTRARÉ PARA DAR GRACIAS AL SEÑOR., (Fa,,80)(Mi,,325)",
       "sC": "as"
     },
     {
-      "line": "Esta es la puerta del Señor:, (Fa,,0)(Mi,,350)",
+      "line": "Esta es la puerta del Señor:, (Fa,,0)(Mi,,250)",
       "sC": ""
     },
     {
@@ -338,7 +334,7 @@
       "sC": ""
     },
     {
-      "line": "ES AHORA LA PIEDRA ANGULAR., (Fa,,50)(Mi,,235)",
+      "line": "ES AHORA LA PIEDRA ANGULAR., (Fa,,50)(Mi,,240)",
       "sC": "as"
     },
     {
@@ -346,7 +342,7 @@
       "sC": ""
     },
     {
-      "line": "HA SIDO UN MILAGRO PATENTE., (Fa,,30)(Mi,,215)",
+      "line": "HA SIDO UN MILAGRO PATENTE., (Fa,,35)(Mi,,220)",
       "sC": "as"
     },
     {
@@ -354,7 +350,7 @@
       "sC": ""
     },
     {
-      "line": "SEA NUESTRA ALEGRÍA Y NUESTRO GOZO., (Fa,,0)(Mi,,310)",
+      "line": "SEA NUESTRA ALEGRÍA Y NUESTRO GOZO., (Fa,,10)(Mi,,310)",
       "sC": "as"
     },
     {
@@ -365,13 +361,13 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_4",
       "initialState": "collapsed",
-      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,0)",
+      "triggerLine": "No he de morir...    ...EN LA MUERTE  (La,m,0)(Mi,,320)",
       "sC": "tc as",
       "lines": [
 
     {
       "line": "No he de morir,, (La,m,0)",
-      "sC": "tc abc "
+      "sC": "tc"
     },
     {
       "line": "QUE VIVIRÉ,",
@@ -386,11 +382,11 @@
       "sC": "ta as ab1"
     },
     {
-      "line": "para cantar, (Fa,,100)",
+      "line": "para cantar, (Fa,,80)",
       "sC": ""
     },
     {
-      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,236)",
+      "line": "LAS HAZAÑAS DEL SEÑOR., (Mi,,190)",
       "sC": "as ab2"
     },
     {
@@ -414,11 +410,11 @@
       "sC": "as ab3"
     },
     {
-      "line": "pero no, (Fa,,64)",
+      "line": "pero no, (Fa,,60)",
       "sC": ""
     },
     {
-      "line": "ME DEJÓ EN LA MUERTE., (Mi,,193)",
+      "line": "ME DEJÓ EN LA MUERTE., (Mi,,160)",
       "sC": "as ab4"
     }
 

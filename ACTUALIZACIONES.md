@@ -4,6 +4,15 @@ Este archivo registra los cambios de cada versión de forma clara y directa.
 
 ---
 
+## [v2.1.05] - 2026
+- Categorías contraídas por defecto al ingresar a la preparación de cantos (`preparar.html`).
+- Nuevo distintivo interactivo de lista activa en la cabecera del visor de cantos (`index.html`) debajo de la etapa litúrgica.
+- Ventana modal interactiva de cantos de la lista activa con salto directo y navegación secuencial (botones y gestos táctiles).
+- Acciones directas integradas en el modal de la lista activa: compartir, copiar enlace, descargar archivo y editar.
+- Navegación bidireccional inmediata: pulsar el título de la lista en el visor redirige a `preparar.html` expandiendo automáticamente su categoría y enfocando la lista.
+
+---
+
 ## [v2.1.04] - 2026
 - Unificación total de almacenamiento de acordes posicionales en `/global_positions/` como única fuente de verdad.
 - Descontinuación del guardado y lectura conflictiva en `/usuarios/USUARIO/posiciones/`.

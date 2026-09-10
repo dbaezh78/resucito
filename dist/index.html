@@ -7,11 +7,11 @@
   <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
   <link rel="manifest" href="./assets/manifest-Dpg-bcG-.json">
   <meta name="theme-color" content="#000000">
-  <script type="module" crossorigin src="./assets/main-C3BbFd2i.js"></script>
+  <script type="module" crossorigin src="./assets/main-Bw1Mnwky.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/preload-helper-PeQqBfsS.js">
-  <link rel="modulepreload" crossorigin href="./assets/bitacoraLogger-D-4sveWh.js">
+  <link rel="modulepreload" crossorigin href="./assets/bitacoraLogger-4VbghWqZ.js">
   <link rel="modulepreload" crossorigin href="./assets/sync-D_Aow4CG.js">
-  <link rel="stylesheet" crossorigin href="./assets/main-DLV4eYnX.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-CGgyo7DG.css">
 </head>
 <body class="theme-light">
   <div class="app-container">
@@ -553,6 +553,37 @@
           </div>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- MODAL: LISTA DE CANTOS ACTIVA -->
+  <div id="modal-playlist-activa" class="modal-overlay" style="display: none; z-index: 100006;">
+    <div class="modal-content" style="max-width: 520px; max-height: 85vh; border-radius: 16px; display: flex; flex-direction: column; overflow: hidden; background: var(--modal-bg, var(--panel-bg)); border: 1.5px solid var(--panel-border);">
+      <div class="modal-header" style="display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border-bottom: 1.5px solid var(--panel-border); background: var(--panel-bg);">
+        <div id="modal-playlist-activa-header-info" onclick="window.irAListaEnPreparar()" style="display: flex; align-items: center; gap: 10px; cursor: pointer; border-radius: 8px; padding: 4px 6px; margin: -4px -6px; transition: background 0.15s ease;" title="Ver esta lista en Listados Guardados (Preparación)">
+          <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212); font-size: 1.6rem;">queue_music</span>
+          <div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <h3 id="modal-playlist-activa-titulo" style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-color);">Lista Activa</h3>
+              <span class="material-symbols-outlined" style="font-size: 0.95rem; color: var(--accent-color, #d01212); opacity: 0.8;">open_in_new</span>
+            </div>
+            <span id="modal-playlist-activa-sub" style="font-size: 0.75rem; color: var(--text-muted);">Cantos de la celebración</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <!-- Botones de Acción de la Lista -->
+          <div class="modal-playlist-actions" style="display: flex; align-items: center; gap: 6px;">
+            <button type="button" class="btn-icono-playlist share-universal" onclick="window.compartirUniversalDesdeModal()" title="Compartir"><span class="material-symbols-outlined">share</span></button>
+            <button type="button" class="btn-icono-playlist link" onclick="window.copiarSoloLinkDesdeModal()" title="Copiar enlace"><span class="material-symbols-outlined">link</span></button>
+            <button type="button" class="btn-icono-playlist export" onclick="window.exportarListaDesdeModal()" title="Descargar archivo"><span class="material-symbols-outlined">download</span></button>
+            <button type="button" class="btn-icono-playlist edit" onclick="window.editarListaDesdeModal()" title="Editar"><span class="material-symbols-outlined">edit</span></button>
+          </div>
+          <button id="modal-playlist-activa-close" class="modal-close" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-color); line-height: 1; padding: 4px; display: flex; align-items: center; justify-content: center;">&times;</button>
+        </div>
+      </div>
+      <div id="modal-playlist-activa-lista" style="padding: 14px 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px;">
+        <!-- Cantos renderizados dinámicamente -->
+      </div>
     </div>
   </div>
 

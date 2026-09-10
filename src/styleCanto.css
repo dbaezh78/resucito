@@ -96,7 +96,7 @@
     left: 165px;
 }
 
-.nonegrita {
+.nonegrita, .normal {
     font-weight: normal;
 }
 

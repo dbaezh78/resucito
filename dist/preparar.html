@@ -6,13 +6,13 @@
   <title>Preparación de cantos para la celebración - Resucitó</title>
   <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/preparar-C3FnoiOT.js"></script>
+  <script type="module" crossorigin src="./assets/preparar-DeXI97Py.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/preload-helper-PeQqBfsS.js">
-  <link rel="modulepreload" crossorigin href="./assets/bitacoraLogger-D-4sveWh.js">
+  <link rel="modulepreload" crossorigin href="./assets/bitacoraLogger-4VbghWqZ.js">
   <link rel="modulepreload" crossorigin href="./assets/sync-D_Aow4CG.js">
-  <link rel="modulepreload" crossorigin href="./assets/perfil-CT7ru-Ym.js">
-  <link rel="stylesheet" crossorigin href="./assets/perfil-BYYR2hDl.css">
-  <link rel="stylesheet" crossorigin href="./assets/preparar-BwBL2t80.css">
+  <link rel="modulepreload" crossorigin href="./assets/perfil-BmpucE5T.js">
+  <link rel="stylesheet" crossorigin href="./assets/perfil-BIHcXzgi.css">
+  <link rel="stylesheet" crossorigin href="./assets/preparar-Cz79fXf6.css">
 </head>
 <body>
 
@@ -167,23 +167,32 @@
   <!-- AJUSTES MODAL: Cargado dinámicamente desde data/ajustes_modal.html -->
   <!-- Modal Conflicto Lista Existente -->
   <div id="modal-conflicto-lista" class="modal-overlay" style="display: none; z-index: 100020;">
-    <div class="modal-content-card" style="max-width: 420px; width: 90%; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 16px 40px rgba(0,0,0,0.35); background: var(--panel-bg, #ffffff);">
+    <div class="modal-content-card" style="max-width: 440px; width: 90%; padding: 24px; border-radius: 16px; text-align: center; box-shadow: 0 16px 40px rgba(0,0,0,0.35); background: var(--panel-bg, #ffffff);">
       <div style="width: 56px; height: 56px; margin: 0 auto 16px auto; border-radius: 50%; background: rgba(255, 193, 7, 0.15); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 193, 7, 0.4);">
         <span class="material-symbols-outlined" style="font-size: 32px; color: #ffc107;">warning</span>
       </div>
       <h3 style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 700; color: var(--text-color, #212529);">Lista Ya Existente</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted, #6c757d); margin-bottom: 20px; line-height: 1.4;">
+      <p style="font-size: 0.9rem; color: var(--text-muted, #6c757d); margin-bottom: 16px; line-height: 1.4;">
         ⚠️ Ya existe una lista con el nombre <strong id="modal-nombre-lista-existente" style="color: var(--accent-color, #d01212);"></strong>. ¿Qué deseas hacer?
       </p>
+
+      <!-- Input para cambiar de nombre si se selecciona esa opción -->
+      <div id="modal-conflicto-renombrar-container" style="display: none; margin-bottom: 16px; text-align: left;">
+        <label for="input-conflicto-nuevo-nombre" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted, #6c757d); display: block; margin-bottom: 6px;">Nuevo nombre para la lista:</label>
+        <input type="text" id="input-conflicto-nuevo-nombre" class="input-estilizado" style="width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--panel-border, #ccc); font-size: 0.95rem;" placeholder="Ej: Mi lista (nueva)">
+      </div>
       
-      <div class="btn-aviso">
-        <button id="btn-conflicto-unir" class="btn btn-unir" >
-          <span class="material-symbols-outlined">call_merge</span> Unir
+      <div class="btn-aviso btn-aviso-conflicto">
+        <button id="btn-conflicto-duplicar" class="btn btn-duplicar" title="Crear una copia manteniendo la original">
+          <span class="material-symbols-outlined">content_copy</span> Duplicarlo
         </button>
-        <button id="btn-conflicto-sustituir" class="btn btn-sust" >
-          <span class="material-symbols-outlined">sync</span> Sustituir
+        <button id="btn-conflicto-renombrar" class="btn btn-renombrar" title="Elegir otro nombre">
+          <span class="material-symbols-outlined">edit</span> Cambiar nombre
         </button>
-        <button id="btn-conflicto-cancelar" class="btn btn-cancel" >
+        <button id="btn-conflicto-unir" class="btn btn-unir" title="Añadir los cantos a la lista existente">
+          <span class="material-symbols-outlined">call_merge</span> Unirlo / Fusionarlo
+        </button>
+        <button id="btn-conflicto-cancelar" class="btn btn-cancel" title="Cancelar operación">
           Cancelar
         </button>
       </div>
