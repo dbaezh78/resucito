@@ -1,4 +1,4 @@
-import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, isAuthInitialized } from './auth.js';
+import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, isAuthInitialized, getCurrentUser } from './auth.js';
 import { hasPermission } from './accesscontrol.js';
 
 (function () {
@@ -82,6 +82,11 @@ import { hasPermission } from './accesscontrol.js';
               <span class="material-symbols-outlined">system_update</span>
               <span>Actualizar App</span>
             </button>
+
+            <button class="account-action-item" id="account-action-chat">
+              <span class="material-symbols-outlined">chat</span>
+              <span>Asistencia y Chat</span>
+            </button>
           </div>
 
           <div class="account-actions-logout">
@@ -93,7 +98,7 @@ import { hasPermission } from './accesscontrol.js';
         </div>
 
         <div class="account-popup-footer">
-          <a href="#" class="account-footer-link">Política de Privacidad</a>
+          <a href="privacidad.html" class="account-footer-link">Política de Privacidad</a>
           <span class="account-footer-dot">•</span>
           <a href="#" id="account-info-app-link" class="account-footer-link">Info de la App</a>
         </div>
@@ -164,6 +169,8 @@ import { hasPermission } from './accesscontrol.js';
             <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
             <a href="mantcantos.html" id="nav-resucito-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
             <a href="respaldo.html" id="nav-resucito-respaldo"><span class="material-symbols-outlined arrow-icon">archive</span> Respaldo</a>
+            <a href="src/chat.html" id="nav-resucito-chat"><span class="material-symbols-outlined arrow-icon">chat</span> Asistencia y Chat</a>
+            <a href="privacidad.html" id="nav-resucito-privacidad"><span class="material-symbols-outlined arrow-icon">policy</span> Política de Privacidad</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
           </div>
         </button>
@@ -444,8 +451,9 @@ import { hasPermission } from './accesscontrol.js';
       const accountCard = document.getElementById('account-popup-card');
       if (accountCard) accountCard.classList.add('hidden');
 
-      if (window.location.pathname.includes('perfil.html') || !document.getElementById('dashboard-view')) {
-        window.location.href = './';
+      const isUnderSrc = window.location.pathname.includes('/src/');
+      if (window.location.pathname.includes('perfil.html') || window.location.pathname.includes('chat.html') || !document.getElementById('dashboard-view')) {
+        window.location.href = isUnderSrc ? '../index.html' : './index.html';
         return;
       }
 
@@ -555,9 +563,11 @@ import { hasPermission } from './accesscontrol.js';
     const appInfoModal = document.getElementById('app-info-modal');
     const closeAppInfoModal = document.getElementById('close-app-info-modal');
 
+    const isUnderSrc = window.location.pathname.includes('/src/');
+
     const goToPerfil = (e) => {
       e.stopPropagation();
-      window.location.href = '/perfil.html';
+      window.location.href = isUnderSrc ? '../perfil.html' : 'perfil.html';
     };
 
     if (manageBtn) manageBtn.addEventListener('click', goToPerfil);
@@ -566,7 +576,7 @@ import { hasPermission } from './accesscontrol.js';
     if (prepararBtn) {
       prepararBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        window.location.href = 'preparar.html';
+        window.location.href = isUnderSrc ? '../preparar.html' : 'preparar.html';
       });
     }
 
@@ -574,7 +584,7 @@ import { hasPermission } from './accesscontrol.js';
     if (bitacoraBtn) {
       bitacoraBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        window.location.href = 'bitacora.html';
+        window.location.href = isUnderSrc ? '../bitacora.html' : 'bitacora.html';
       });
     }
 
@@ -584,6 +594,17 @@ import { hasPermission } from './accesscontrol.js';
         e.preventDefault();
         e.stopPropagation();
         ejecutarProcesoActualizacion();
+      });
+    }
+
+    const chatBtn = document.getElementById('account-action-chat');
+    if (chatBtn) {
+      chatBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (accountCard) accountCard.classList.add('hidden');
+        // Redirigir a la ruta adecuada según la ubicación actual
+        window.location.href = isUnderSrc ? 'chat.html' : 'src/chat.html';
       });
     }
 
@@ -942,6 +963,8 @@ import { hasPermission } from './accesscontrol.js';
       const canInstalar = isAdmin || hasPermission('page_instalar_app');
       const canMantcantos = isAdmin || hasPermission('page_mantcantos');
       const canRespaldo = isAdmin || hasPermission('page_respaldo');
+      const user = getCurrentUser() || window.firebaseAPI?.getCurrentUser?.();
+      const canChat = isAdmin || (Boolean(user) && hasPermission('page_chat'));
 
       // Botón Inicio en barra inferior
       const btnInicio = document.getElementById('btn-nav-inicio');
@@ -956,6 +979,7 @@ import { hasPermission } from './accesscontrol.js';
       const navResucitoPdf = document.getElementById('nav-resucito-pdf');
       const navResucitoMantcantos = document.getElementById('nav-resucito-mantcantos');
       const navResucitoRespaldo = document.getElementById('nav-resucito-respaldo');
+      const navResucitoChat = document.getElementById('nav-resucito-chat');
       const navResucitoInstalar = document.getElementById('installButton');
 
       if (navResucitoCamino) navResucitoCamino.style.display = canInicio ? 'flex' : 'none';
@@ -966,17 +990,20 @@ import { hasPermission } from './accesscontrol.js';
       if (navResucitoPdf) navResucitoPdf.style.display = canPdf ? 'flex' : 'none';
       if (navResucitoMantcantos) navResucitoMantcantos.style.display = canMantcantos ? 'flex' : 'none';
       if (navResucitoRespaldo) navResucitoRespaldo.style.display = canRespaldo ? 'flex' : 'none';
+      if (navResucitoChat) navResucitoChat.style.display = canChat ? 'flex' : 'none';
       if (navResucitoInstalar) navResucitoInstalar.style.display = canInstalar ? 'flex' : 'none';
 
       // Acciones en Popup de Cuenta
       const accountActionPreparar = document.getElementById('account-action-preparar');
       const accountActionPerfil = document.getElementById('account-action-perfil');
       const accountActionBitacora = document.getElementById('account-action-bitacora');
+      const accountActionChat = document.getElementById('account-action-chat');
       const accountPopupManage = document.getElementById('account-popup-manage');
 
       if (accountActionPreparar) accountActionPreparar.style.display = canPreparar ? 'flex' : 'none';
       if (accountActionPerfil) accountActionPerfil.style.display = canPerfil ? 'flex' : 'none';
       if (accountActionBitacora) accountActionBitacora.style.display = canBitacora ? 'flex' : 'none';
+      if (accountActionChat) accountActionChat.style.display = canChat ? 'flex' : 'none';
       if (accountPopupManage) accountPopupManage.style.display = canPerfil ? 'block' : 'none';
 
       // Verificar si la página actual tiene permiso o debe redirigir al inicio
@@ -1009,6 +1036,12 @@ import { hasPermission } from './accesscontrol.js';
       } else if (pathname.includes('respaldo.html') && !hasPermission('page_respaldo')) {
         console.warn("Acceso denegado a respaldo.html por permisos. Redirigiendo a Inicio...");
         window.location.replace('./index.html');
+      } else if (pathname.includes('chat.html')) {
+        const loggedUser = getCurrentUser() || window.firebaseAPI?.getCurrentUser?.();
+        if (!loggedUser || !hasPermission('page_chat')) {
+          console.warn("Acceso denegado a chat.html para usuarios no autenticados o sin permisos.");
+          // Si no está autenticado se maneja con modal de login o regreso al inicio
+        }
       }
     }
 
@@ -1057,6 +1090,20 @@ import { hasPermission } from './accesscontrol.js';
             });
           } else {
             alert('Para instalar la aplicación, abre el menú de tu navegador y selecciona "Instalar aplicación" o "Agregar a la pantalla de inicio" (en iPhone, presiona el botón "Compartir" y luego "Agregar a pantalla de inicio").');
+          }
+        }
+      });
+    }
+
+    // Si estamos dentro de una subcarpeta (ej. /src/chat.html), normalizar los enlaces del navegador
+    if (isUnderSrc) {
+      document.querySelectorAll('#nav-submenu-resucito a, .account-popup-footer a').forEach(a => {
+        const href = a.getAttribute('href');
+        if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('/') && !href.startsWith('../')) {
+          if (href.startsWith('src/')) {
+            a.setAttribute('href', href.replace('src/', ''));
+          } else {
+            a.setAttribute('href', '../' + href);
           }
         }
       });

@@ -4,6 +4,17 @@ Este archivo registra los cambios de cada versión de forma clara y directa.
 
 ---
 
+## [v2.1.06] - 2026
+- Nuevo sistema de Asistencia y Chat en vivo estilo WhatsApp Web (`src/chat.html` y `chat.html`).
+- Panel de control de conversaciones y buscador de usuarios en tiempo real para el Administrador.
+- Canal privado de asistencia directa para cada hermano cantor sin visibilidad sobre otros usuarios.
+- Regla de 5 minutos: edición y eliminación para todos dentro de los primeros 5 minutos; pasado este plazo el mensaje queda permanente y solo se permite eliminar para sí mismo.
+- Adjuntos exclusivos de imágenes con compresión en el cliente y previsualización.
+- Selector de emojis categorizados idéntico a WhatsApp.
+- Nueva página de Política de Privacidad (`privacidad.html`) con diseño integrado y enlace en el pie de cuenta y menú.
+
+---
+
 ## [v2.1.05] - 2026
 - Categorías contraídas por defecto al ingresar a la preparación de cantos (`preparar.html`).
 - Nuevo distintivo interactivo de lista activa en la cabecera del visor de cantos (`index.html`) debajo de la etapa litúrgica.

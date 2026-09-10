@@ -23,7 +23,9 @@ export default defineConfig({
         preparar: path.resolve(__dirname, 'preparar.html'),
         expancion: path.resolve(__dirname, 'expancion.html'),
         mantcantos: path.resolve(__dirname, 'mantcantos.html'),
-        respaldo: path.resolve(__dirname, 'respaldo.html')
+        respaldo: path.resolve(__dirname, 'respaldo.html'),
+        privacidad: path.resolve(__dirname, 'privacidad.html'),
+        chat: path.resolve(__dirname, 'src/chat.html')
       }
     }
   },
@@ -173,7 +175,7 @@ export default defineConfig({
                     date: mtime.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' }),
                     time: mtime.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', hour12: false }),
                     timestamp: stat.mtimeMs,
-                    version: 'v2.1.05',
+                    version: 'v2.1.06',
                     sizeBytes: stat.size,
                     sizeFormatted: (stat.size / (1024 * 1024)).toFixed(2) + ' MB'
                   };
@@ -234,7 +236,7 @@ export default defineConfig({
               }
 
               // 2. Leer versión actual del sistema
-              let currentVersion = 'v2.1.05';
+              let currentVersion = 'v2.1.06';
               try {
                 const versionPath = path.resolve(__dirname, 'version.json');
                 if (fs.existsSync(versionPath)) {

@@ -53,6 +53,8 @@ export const PERMISSIONS = {
   PAGE_OPCIONES_PAGINAS: "page_opciones_paginas",
   PAGE_MANTCANTOS: "page_mantcantos",
   PAGE_RESPALDO: "page_respaldo",
+  PAGE_CHAT: "page_chat",
+  VIEW_ALL_CHATS: "view_all_chats",
   VIEW_SONG_CANTO: "view_song_canto",
   VIEW_SONG_JSON_CHORDS: "view_song_json_chords",
   VIEW_SONG_LITURGIA: "view_song_liturgia",
@@ -88,6 +90,8 @@ export const PERMISSION_LABELS = {
   "page_opciones_paginas": "Opciones de páginas",
   "page_mantcantos": "Mantenimiento Páginas",
   "page_respaldo": "Respaldo",
+  "page_chat": "Asistencia y Chat",
+  "view_all_chats": "Ver Todos los Chats (Asistencia)",
   "view_settings_log": "Ver Ajustes: Log",
   "view_books": "Ver Libros de Cantos",
   "control_canto": "Control Canto",
@@ -178,6 +182,7 @@ export function initAccessControl() {
     PERMISSIONS.PAGE_RESUCITO_PDF,
     PERMISSIONS.PAGE_INSTALAR_APP,
     PERMISSIONS.PAGE_OPCIONES_PAGINAS,
+    PERMISSIONS.PAGE_CHAT,
     PERMISSIONS.VIEW_SETTINGS_SONG,
     PERMISSIONS.VIEW_SONG_CANTO,
     PERMISSIONS.VIEW_SONG_LITURGIA,
@@ -1543,7 +1548,14 @@ const PERMISSION_TREE = [
       { key: "page_instalar_app", label: "Instalar App" },
       { key: "page_opciones_paginas", label: "Opciones de páginas" },
       { key: "page_mantcantos", label: "Mantenimiento Páginas" },
-      { key: "page_respaldo", label: "Respaldo" }
+      { key: "page_respaldo", label: "Respaldo" },
+      { 
+        key: "page_chat", 
+        label: "Asistencia y Chat",
+        children: [
+          { key: "view_all_chats", label: "Ver Todos los Chats (Asistencia)" }
+        ]
+      }
     ]
   },
   {

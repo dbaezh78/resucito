@@ -41,7 +41,7 @@ folders.forEach(folder => {
     }
 });
 
-// Asegurar que src (css, img, lib, etc.) esté presente en dist/src/
+// Asegurar que src (css, img, lib, data, etc.) esté presente en dist/src/
 const srcDirsToCopy = ['css', 'img', 'lib'];
 srcDirsToCopy.forEach(sub => {
     const sDir = path.resolve(__dirname, 'src', sub);
@@ -52,8 +52,16 @@ srcDirsToCopy.forEach(sub => {
     }
 });
 
+// Asegurar copia de data también a dist/src/data por si alguna vista en /src/ hace fetch('data/...')
+const srcDataDest = path.resolve(distPath, 'src', 'data');
+const dataFolderSrc = path.resolve(__dirname, 'data');
+if (fs.existsSync(dataFolderSrc)) {
+    console.log('Copiando data a dist/src/data para compatibilidad con rutas relativas...');
+    copyFolderRecursiveSync(dataFolderSrc, srcDataDest);
+}
+
 // Copy individual files
-const files = ['manifest.json', 'sw.js', '.nojekyll', 'CNAME', 'version.json'];
+const files = ['manifest.json', 'sw.js', '.nojekyll', 'CNAME', 'version.json', 'chat.html'];
 files.forEach(file => {
     const src = path.resolve(__dirname, file);
     const dest = path.resolve(distPath, file);

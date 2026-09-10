@@ -1,0 +1,136 @@
+{
+  "id": "vosotrossoislaluzdelmundo",
+  "tt": "Vosotros Sois La Luz Del Mundo",
+  "title": "Vosotros Sois La Luz Del Mundo",
+  "subtitle": "Mateo 5,14ss ",
+  "category": [
+    "Precatecumenado",
+    "Nuevo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "* La asamblea puede dividirse para cantar este comienzo en polifonía a tres voces",
+  "nCanURL": "",
+  "dbno": "173",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/vosotrossoislaluzdelmundo.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=vividalegres",
+  "sig": "/src/index.html?canto=yavienemidios",
+  "lizq": [
+    {
+      "line": "VOSOTROS   SOIS LA LUZ DEL MUNDO,, (La,m,0)(Mi,,60)(La,m,275)",
+      "sC": "ta as ast-vsoislaluzdelmundo"
+    },
+
+    {
+      "line": "SOIS LA LUZ, LA LUZ DEL MUNDO,, (Re,m,0)(Mi,,85)(Re,m,130)(Mi,,250)",
+      "sC": "as"
+    },
+    {
+      "line": "LA LUZ DEL MUNDO., (Re,m,0)(Mi,,120)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No puede ocultarse una ciudad, (La,m,0)(Mi,,265)",
+      "sC": "tc"
+    },
+    {
+      "line": "situada en la cima de un monte;, (La,m,250)",
+      "sC": ""
+    },
+    {
+      "line": "no puede ocultarse una ciudad, (Mi,,265)",
+      "sC": ""
+    },
+    {
+      "line": "situada en la cima de un monte., (La,m,265)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ni se enciende una lámpara,, (Mi,,190)",
+      "sC": ""
+    },
+    {
+      "line": "para ponerla debajo del celemín,, (La,m,280)",
+      "sC": ""
+    },
+    {
+      "line": "sino sobre el candelero,, (Re,m,0)(Mi,,200)",
+      "sC": ""
+    },
+    {
+      "line": "para que ilumine a los que están en la casa., (Re,m,0)(Mi,,400) ",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Brille así vuestra luz, (Do,,0)(Mi,,80)(La,m,180)",
+      "sC": ""
+    },
+    {
+      "line": "delante de los hombres,, (Fa,,25)(Mi,,155)",
+      "sC": ""
+    },
+    {
+      "line": "para que vean vuestras buenas obras, (Re,m,0)(Mi,,295)",
+      "sC": ""
+    },
+    {
+      "line": "y glorifiquen a vuestro Padre que está en los cielos., (Fa,,0)(Mi,,470)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "VOSOTROS SOIS LA LUZ DEL MUNDO (La,m,0)(Mi,,60)(La,m,255)",
+      "sC": "ta as",
+      "lines": [
+        {
+          "line": "SOIS LA LUZ, LA LUZ DEL MUNDO,, (Re,m,0)(Mi,,90)(Re,m,160)(Mi,,250)",
+          "sC": "as"
+        },
+        {
+          "line": "LA LUZ DEL MUNDO., (Re,m,0)(Mi,,120)",
+          "sC": "as"
+        }
+      ]
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

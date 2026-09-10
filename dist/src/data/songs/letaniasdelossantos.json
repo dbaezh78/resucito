@@ -1,0 +1,436 @@
+{
+  "id": "letaniasdelossantos",
+  "tt": "Letanías De Los Santos",
+  "title": "Letanías De Los Santos",
+  "subtitle": "De la liturgia bautismal de la Vigilia Pascual",
+  "category": [
+    "Liturgia"
+  ],
+  "catCanto": "Liturgia",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "189",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/letaniasdelossantos.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=gloriaadiosenloaltodelcielo",
+  "sig": "/src/index.html?canto=letaniaspenitencialesi",
+  "lizq": [
+    {
+      "line": "Señor, ten piedad. (Mi,m,20)",
+      "sC": "tc height"
+    },
+    {
+      "line": "SEÑOR TEN PIEDAD.",
+      "sC": "ta stp as"
+    },
+    {
+      "line": "Cristo, ten piedad. ",
+      "sC": "height"
+    },
+    {
+      "line": "CRISTO TEN PIEDAD. ",
+      "sC": "as stp"
+    },
+    {
+      "line": "Señor, ten piedad. ",
+      "sC": "height"
+    },
+    {
+      "line": "SEÑOR TEN PIEDAD.",
+      "sC": "as stp"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Santa María,, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "Madre de Dios., (Mi,m,90)",
+      "sC": ""
+    },
+    {
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "San Miguel. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Santos ángeles de Dios., (Sol,,0)(Mi,m,206)",
+      "sC": ""
+    },
+    {
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "San Juan Bautista., (Sol,,0)(Mi,m,150)",
+      "sC": ""
+    },
+    {
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "San José. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Santos Pedro y Pablo., (Sol,,0)(Mi,m,168)",
+      "sC": ""
+    },
+    {
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "San Andrés., (Sol,,0)(Mi,m,93)",
+      "sC": ""
+    },
+    {
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "San Juan. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Santa María Magdalena. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "San Esteban. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "San Ignacio de Antioquía. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "San Lorenzo. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Santas Perpetua y, (Sol,,0)",
+      "sC": ""
+    },
+        {
+      "line": "Felicidad., (Mi,m,90)",
+      "sC": "r15"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS. (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "Santa Inés. (Sol,,0)(Mi,m,83)",
+      "sC": ""
+    },
+    {
+      "line": "RUEGA POR NOSOTROS. (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "San Gregorio. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "San Agustín. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "San Atanasio. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "San Basilio. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "San Martín. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "San Benito. ",
+      "sC": "height"
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Santos Francisco y, (Sol,,0)",
+      "sC": ""
+    },
+
+        {
+      "line": "Domingo., (Mi,m,15)",
+      "sC": "r15"
+    },
+
+
+    {
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "stp"
+    },
+    {
+      "line": "San Francisco Javier. ",
+      "sC": "height"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS.",
+      "sC": "stp"
+    },
+    {
+      "line": "San Juan María Vianney. ",
+      "sC": "height"
+    },
+    {
+      "line": "Santa Catalina de Siena., (Sol,,0)(Mi,m,84)",
+      "sC": "tc"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "sC": "as stp"
+    },
+    {
+      "line": "Santa Teresa de Jesús. ",
+      "sC": ""
+    },
+    {
+      "line": "​      \"              \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "​  En las letanías se pueden añadir algunos nombres de santos, \n especialmente el del titular de la iglesia y los de los patronos \n del lugar y de los que van a ser bautizados. ",
+      "sC": "redc",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Santos y santas de Dios, ",
+      "sC": "height"
+    },
+    {
+      "line": "RUEGA POR NOSOTROS.,",
+      "sC": "as stp"
+    },
+    {
+      "line": "",
+      "sC": ""
+    },
+    {
+      "line": "Muéstrate propicio., (Sol,,0)(Mi,m,149)",
+      "sC": ""
+    },
+    {
+      "line": "LÍBRANOS, SEÑOR., (Do,,0)(Re,7,120)",
+      "sC": "ta as stp"
+    },
+    {
+      "line": "De todo mal. ",
+      "sC": "height"
+    },
+    {
+      "line": "​         \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "De todo pecado. ",
+      "sC": "height"
+    },
+    {
+      "line": "​         \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "De la muerte eterna. ",
+      "sC": "height"
+    },
+    {
+      "line": "​         \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Por tu encarnación. ",
+      "sC": "height"
+    },
+    {
+      "line": "​         \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Por tu muerte y resurrección. ",
+      "sC": "height"
+    },
+    {
+      "line": "​         \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Por el envío del Espíritu Santo. ",
+      "sC": "height"
+    },
+    {
+      "line": "​         \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Nosotros que somos pecadores., (Sol,,0)(Mi,m,272)",
+      "sC": "tc"
+    },
+    {
+      "line": "TE ROGAMOS, ÓYENOS., (Do,,0)(Re,7,120)",
+      "sC": "as sub der"
+    },
+    {
+      "line": "Si hay bautizados, ",
+      "sC": "redc msg-l38",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Para que regeneres a, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "... N/. ",
+      "sC": "Name1",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "con la gracia del Bautismo., (Mi,m,334)",
+      "sC": "height"
+    },
+    {
+      "line": "​             \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Para que regeneres a estos, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "​elegidos con la gracia del Bautismo., (Mi,m,335)",
+      "sC": "height"
+    },
+    {
+      "line": "​             \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Si no hay bautizados, ",
+      "sC": "redc msg-l38",
+      "color": "var(--Rojo-Leccionario)"
+    },
+    {
+      "line": "Para que santifiques esta agua, (Sol,,0)",
+      "sC": "tc"
+    },
+    {
+      "line": "​en la que renacerán tus nuevos hijos., (Mi,m,342)",
+      "sC": "height"
+    },
+    {
+      "line": "​             \"              \" ",
+      "sC": "stp"
+    },
+    {
+      "line": "Jesús hijo de Dios vivo., (Sol,,0)(Mi,m,117)",
+      "sC": "tc"
+    },
+    {
+      "line": "TE ROGAMOS, ÓYENOS., (Do,,0)(Re,7,120)",
+      "sC": "ta as stp"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cristo, óyenos., (Sol,,0)(Mi,m,127)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO, ÓYENOS., (Do,,0)(Re,7,120)",
+      "sC": "ta as stp"
+    },
+    {
+      "line": "Cristo, escúchanos., (Sol,,0)(Mi,m,127)",
+      "sC": "tc"
+    },
+    {
+      "line": "CRISTO, ESCÚCHANOS., (Do,,0)(Re,7,120)",
+      "sC": "ta as stp"
+    }
+  ],
+  "lder": [],
+  "sourceBook": "resucito"
+}

@@ -33,28 +33,57 @@ service cloud.firestore {
 
     // 6. Reglas para el registro de uso de la aplicación (Uso App)
     match /registro_uso/{deviceId} {
-      // Permite leer si el usuario está autenticado en la aplicación
       allow read: if request.auth != null; 
-      
-      // Permite crear y actualizar a cualquier visitante (para registrar accesos de invitados)
       allow write: if true; 
     }
 
-    // 7. Colección de Catequesis (Lectura pública, escritura para usuarios autenticados)
+    // 7. Colección de Catequesis (Lectura pública para todos, escritura para usuarios autenticados)
     match /catequesis/{cantoId} {
       allow read: if true;
       allow write: if request.auth != null;
     }
 
-    // 9. Colección de Bitácora de Actividades (Lectura/registro para todos, eliminación para autenticados)
-    match /bitacora/{docId} {
-      allow read, create: if true;
-      allow update, delete: if request.auth != null;
+    // 8. Colección de Configuración general y Liturgia (Lectura pública, escritura para usuarios autenticados)
+    match /config/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
     }
 
-    // 10. Bloqueo por defecto para cualquier otra colección no especificada
+    // 9. Colección de BITÁCORA (Permite registrar a cualquier usuario/cantor y leer según autenticación)
+    match /bitacora/{logId} {
+      allow create: if true;
+      allow read: if request.auth != null;
+      allow update, delete: if request.auth != null && request.auth.token.email == 'dbaezh78@gmail.com';
+    }
+
+    // 10. Colección de ASISTENCIA Y CHAT EN VIVO (Soporte WhatsApp Web)
+    // - Los documentos principales son el encabezado del chat por usuario
+    match /support_chats/{chatId} {
+      allow read, write: if request.auth != null && (
+        request.auth.token.email == 'dbaezh78@gmail.com' || 
+        request.auth.uid == chatId || 
+        (resource != null && resource.data.userId == request.auth.uid) ||
+        (request.resource != null && request.resource.data.userId == request.auth.uid)
+      );
+
+      // Subcolección de mensajes del chat
+      match /messages/{messageId} {
+        allow read, write: if request.auth != null && (
+          request.auth.token.email == 'dbaezh78@gmail.com' || 
+          request.auth.uid == chatId
+        );
+      }
+    }
+
+    // 11. Guardar Registros de log en firebase
+    match /app_logs/{docId} {
+      allow read, write: if true; // o if request.auth != null;
+    }
+
+    // 12. Bloqueo por defecto para cualquier otra colección no especificada
     match /{document=**} {
       allow read, write: if false;
     }
+    
   }
 }

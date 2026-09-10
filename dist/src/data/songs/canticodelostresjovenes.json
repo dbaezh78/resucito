@@ -1,0 +1,213 @@
+{
+  "id": "canticodelostresjovenes",
+  "tt": "Cántico De Los Tres Jóvenes",
+  "title": "Cántico De Los Tres Jóvenes",
+  "subtitle": "Daniel 3,57-58",
+  "category": [
+    "PreCatecumenado",
+    "Salmodias",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "33",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/canticodelostresjovenes.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=cantadalsenor",
+  "sig": "/src/index.html?canto=cantodemoises",
+  "lizq": [
+    {
+      "line": "Criaturas todas del Señor,,(La,m,15)",
+      "sC": "tc"
+    },
+    
+    {
+      "line": "BENDECID AL SEÑOR., (Mi,7,88)(La,m,181)",
+      "sC": "ta as"
+    },
+
+    {
+      "line": "Ensalzadlo, (Mi,7,69)",
+      "sC": "tc"
+    },
+
+    {
+      "line": "CON HIMNOS POR LOS SIGLOS., (La,m,185)",
+      "sC": "ta as"
+    },
+
+
+
+  { "line": "BENDECID...",  "sC": "ta Bendecid"  },
+  { "line": "BENDECID...",  "sC": "Bendecid3"  },
+
+  
+    {"line": "Ángeles del Señor, ","sC": "tc"},
+    {"line": "Cielos,","sC": "bdcd"},
+
+
+    {"line": "","sC": ""},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+    {"line": "Aguas del espacio,","sC": "bdcd"},
+    {"line": "Ejércitos del Señor,","sC": "bdcd"},
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+    {"line": "Sol y Luna,","sC": "bdcd"},
+    {"line": "Astros del Cielo,","sC": "bdcd"},
+
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+
+    {"line": "Fuego y calor,","sC": "bdcd"},
+    {"line": "Fríos y heladas,","sC": "bdcd"},
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+    {"line": "Rocíos y nevadas,","sC": "bdcd"},
+    {"line": "Témpanos y hielos,","sC": "bdcd"},
+
+
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+    {"line": "Escarchas y nieves,","sC": "bdcd"},
+    {"line": "Noche y día,","sC": "bdcd"},
+
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+    {"line": "Luz y tinieblas,","sC": "bdcd"},
+    {"line": "Rayos y nubes,","sC": "bdcd"},
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "Bendiga la tierra al Señor,, (Mi,7,56)","sC": "tc"},
+
+    {"line": "LO ENSALCE, ","sC": "ta as"},
+
+    {"line": "CON HIMNOS POR LOS SIGLOS., (La,m,185)","sC": "as"}
+
+
+  ],
+
+
+  "lder": [
+
+    { "line": "BENDECID...,,(Mi,7,359)",  "sC": "ta Bendecid2"  },
+    { "line": "BENDIGA...",  "sC": "Bendecid3"  },
+
+
+    {"line": "Montes y cumbres,,(La,m,0)","sC": "tc"},
+    {"line": "Cuanto germina en la tierra,","sC": "bdcd"},
+
+
+    {"line": "","sC": "tc1"},
+
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+
+    {"line": "Manantiales,","sC": "bdcd"},
+    {"line": "Mares y ríos,","sC": "bdcd"},
+
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+    
+
+    {"line": "Cetáceos y peces,","sC": "bdcd"},
+    {"line": "Aves del cielo,","sC": "bdcd"},
+
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+
+    {"line": "Fieras y ganados,","sC": "bdcd"},
+    
+    {"line": "Ensalzadlo, (Mi,7,50)","sC": "tc"},
+
+
+    {"line": "CON HIMNOS POR LOS SIGLOS, (La,m,185)","sC": "ta as"},
+
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...,,(Mi,7,50) ",  "sC": "Bendecid1"  },
+    { "line": "BENDIGA...,",  "sC": "Bendecid4"  },
+
+    {"line": "Hijos de los hombres,,(La,m,0)","sC": "bdcd"},
+    {"line": "Bendiga Israel al Señor,","sC": "bdcd"},
+
+    {"line": "","sC": "ta1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+
+    {"line": "Sacerdotes del Señor,","sC": "bdcd"},
+    {"line": "Siervos del Señor,","sC": "bdcd"},
+
+
+    {"line": "","sC": "adb1"},
+
+    { "line": "BENDECID...",  "sC": "Bendecid1"  },
+    { "line": "BENDECID...",  "sC": "Bendecid4"  },
+
+    {"line": "Almas y espíritus justos,","sC": "bdcd"},
+    {"line": "Santos y humildes de corazón,","sC": "bdcd"},
+
+    {"line": "","sC": "adb1"},
+
+        { "line": "BENDECID...",  "sC": "Bendecid1 Bendecid1m"  },
+
+    {"line": "Ananías, Azarías y Misael,","sC": "bdcd"},
+
+    {"line": "Ensalzadlo, (Mi,7,70)","sC": "tc"},
+
+    {"line": "CON HIMNOS POR LOS SIGLOS, (La,m,185)","sC": "ta as"}
+
+
+  ],
+  "sourceBook": "resucito"
+}

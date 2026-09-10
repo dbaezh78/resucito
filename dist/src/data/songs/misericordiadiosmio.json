@@ -1,0 +1,277 @@
+{
+  "id": "misericordiadiosmio",
+  "tt": "Misericordia, Dios Mío",
+  "title": "Misericordia, Dios Mío",
+  "subtitle": "Salmo 51 (50)",
+  "category": [
+    "Precatecumenado",
+    "Cuaresma",
+    "Penitencial",
+    "Antiguo Testamento"
+  ],
+  "catCanto": "Precatecumenado",
+  "cejilla": "",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "117",
+  "notes": "",
+  "mant": "No",
+  "audioSrc": "https://audio.resucito.do/misericordiadiosmio.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "v": 23,
+      "i": 1
+    },
+    "tablet": {
+      "v": 25,
+      "i": 1
+    },
+    "desktopsmall": {
+      "v": 7,
+      "i": 1
+    }
+  },
+  "ant": "/src/index.html?canto=miradqueestupendo",
+  "sig": "/src/index.html?canto=misericordiamiamisericordia",
+  "lizq": [
+    {
+      "line": "Misericordia, Dios mío, por tu bondad, (Re,m,22)(Sol,m,346)",
+      "sC": "tc"
+    },
+    {
+      "line": "POR TU INMENSA COMPASIÓN, ",
+      "sC": "ta as"
+    },
+    {
+      "line": "BORRA MI CULPA; (Re,m,90)",
+      "sC": "as"
+    },
+    {
+      "line": "lava del todo mi delito, (Sol,m,160)",
+      "sC": "tc"
+    },
+    {
+      "line": "LIMPIA MI PECADO. (Re,m,120)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pues yo reconozco mi culpa, (Re,m,0)(Sol,m,220)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "TENGO SIEMPRE PRESENTE MI PECADO: (Re,m,280) ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "contra Ti, contra Ti sólo pequé, (Sol,m,270) ",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "COMETÍ LA MALDAD QUE ABORRECES. (Re,m,245)",
+      "sC": "ta as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En la sentencia tendrás razón, (Sol,m,255)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "EN EL JUICIO RESULTARÁS INOCENTE. (Re,m,270)",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "Mira, en la culpa nací, (Sol,m,180)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "PECADOR ME CONCIBIÓ MI MADRE. (Re,m,240)",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te gusta un corazón sincero, (Sol,m,230)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "Y EN MI INTERIOR, ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "ME INCULCAS SABIDURÍA.(Re,m,150)",
+      "sC": "as ptop0"
+    },
+    {
+      "line": "Rocíame con el hisopo: quedaré limpio; (Sol,m,330)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "LÁVAME: QUEDARÉ, ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "MÁS BLANCO QUE LA NIEVE. (Re,m,190)",
+      "sC": "as ptop0"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hazme oír el gozo y la alegría, (Sol,m,260)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "QUE SE ALEGREN, ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "LOS HUESOS QUEBRANTADOS. (Re,m,165)",
+      "sC": "as ptop0"
+    },
+    {
+      "line": "Aparta de mi pecado tu vista, (Sol,m,230)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "BORRA EN MÍ TODA CULPA. (Re,m,185)",
+      "sC": "ta as ptop0"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Oh Dios, crea en mí un corazón puro, (Re,m,0)(Sol,m,310)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "RENUÉVAME POR DENTRO, ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "CON ESPÍRITU FIRME; (Re,m,145)",
+      "sC": "as ptop0"
+    },
+    {
+      "line": "no me arrojes lejos de tu rostro, (Sol,m,270)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "NO ME QUITES TU SANTO ESPÍRITU. (Re,m,245)",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Devuélveme la alegría de tu salvación, (Sol,m,330)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "AFIÁNZAME CON ESPÍRITU GENEROSO; (Re,m,260)",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "enseñaré a los malvados tus caminos, (Sol,m,310)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "LOS PECADORES VOLVERÁN A TI. (Re,m,230)",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Líbrame de la sangre, oh Dios, ",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "Dios, Salvador mío, (Sol,m,145)",
+      "sC": "ptop0"
+    },
+    {
+      "line": "Y CANTARÁ MI LENGUA TU JUSTICIA. (Re,m,250)",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "Señor, me abrirás los labios, (Sol,m,240)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "Y MI BOCA PROCLAMARÁ TU ALABANZA. (Re,m,270)",
+      "sC": "as ptop0"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los sacrificios no te satisfacen: (Sol,m,270)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "SI TE OFRECIERA UN HOLOCAUSTO, ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "TÚ NO LO QUERRÍAS. (Re,m,120)",
+      "sC": "as"
+    },
+    {
+      "line": "Mi sacrificio es un espíritu quebrantado; (Sol,m,360)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "UN CORAZÓN QUEBRANTADO Y, ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "HUMILLADO, TÚ NO LO DESPRECIAS. (Re,m,240)",
+      "sC": "as ptop0"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, por tu bondad, favorece a Sión, (Sol,m,320)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "RECONSTRUYE, ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "LAS MURALLAS DE JERUSALÉN: (Re,m,195)",
+      "sC": "as ptop0"
+    },
+    {
+      "line": "Entonces aceptarás los sacrificios rituales,",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "ofrendas y holocaustos, (Sol,m,170)",
+      "sC": "tc ptop0"
+    },
+    {
+      "line": "SOBRE TU ALTAR, ",
+      "sC": "ta as ptop0"
+    },
+    {
+      "line": "SE INMOLARÁN NOVILLOS. (Re,m,150)",
+      "sC": "as ptop0"
+    }
+  ],
+  "sourceBook": "resucito"
+}

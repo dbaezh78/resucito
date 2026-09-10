@@ -1108,7 +1108,13 @@ window.initAjustes = async function() {
     if (!settingsModalPromise) {
       settingsModalPromise = (async () => {
         try {
-          const response = await fetch('data/ajustes_modal.html?v=138');
+          const isUnderSrc = window.location.pathname.includes('/src/');
+          const modalUrl = (isUnderSrc ? '../data/ajustes_modal.html' : 'data/ajustes_modal.html') + '?v=138';
+          let response = await fetch(modalUrl);
+          if (!response.ok && isUnderSrc) {
+            // Reintento con ruta relativa directa
+            response = await fetch('/data/ajustes_modal.html?v=138');
+          }
           if (response.ok) {
             const html = await response.text();
             const tempDiv = document.createElement('div');

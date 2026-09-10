@@ -1499,7 +1499,7 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
   background-color: var(--bg-color);
   border: 1px solid var(--panel-border);
   border-radius: 16px;
-  padding: 10px;
+  padding: 14px;
   /*width: 90%;*/
   height: 90%;
   /*max-width: 500px;*/

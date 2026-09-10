@@ -1,13 +1,15 @@
 {
-  "latestVersion": "2.1.05",
+  "latestVersion": "2.1.06",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible",
+  "updateTitle": "Nueva Versión Disponible (v2.1.06)",
   "updateMessage": "Actualiza a la última versión para disfrutar de nuevas funciones y mejoras.",
   "releaseNotes": [
-    "Categorías contraídas por defecto en preparación de cantos",
-    "Distintivo interactivo de lista activa en la cabecera del visor de cantos",
-    "Navegación directa con expansión automática de la lista desde el visor",
-    "Botones de acción en modal de lista (compartir, enlace, exportar y editar)",
-    "Importación inteligente de enlaces compartidos con resolución de duplicados y URL descriptiva"
+    "Nuevo sistema de Asistencia y Chat en vivo estilo WhatsApp Web (chat.html)",
+    "Bandeja de conversaciones y buscador en tiempo real para el administrador",
+    "Canal privado y directo para cada cantor con el administrador",
+    "Reglas de edición y eliminación de mensajes (5 minutos)",
+    "Adjuntos exclusivos de fotos/imágenes con compresión automática y lightbox",
+    "Panel de emojis completo de WhatsApp",
+    "Nueva página de Política de Privacidad (privacidad.html)"
   ]
 }
