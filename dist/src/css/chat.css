@@ -703,9 +703,9 @@ html, body {
 }
 
 .wa-dropdown-menu {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
+  position: fixed;
+  top: calc(3% + 8px);
+  right: 3px;
   background-color: var(--wa-modal-bg, #ffffff) !important;
   border-radius: 10px;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0, 0, 0, 0.08);
