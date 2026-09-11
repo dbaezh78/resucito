@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v333'; // Actualización con Chat de Asistencia estilo WhatsApp
+const CACHE_NAME = 'resucito-cache-v334'; // chat.html movido a raíz
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -12,7 +12,7 @@ const STATIC_ASSETS = [
   'respaldo.html',
   'privacidad.html',
   'chat.html',
-  'src/chat.html',
+  'firebase.html',
   'src/css/chat.css',
   'src/js/chat.js',
   'src/lib/jszip.min.js',

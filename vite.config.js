@@ -26,7 +26,7 @@ export default defineConfig({
         respaldo: path.resolve(__dirname, 'respaldo.html'),
         firebase: path.resolve(__dirname, 'firebase.html'),
         privacidad: path.resolve(__dirname, 'privacidad.html'),
-        chat: path.resolve(__dirname, 'src/chat.html')
+        chat: path.resolve(__dirname, 'chat.html')
       }
     }
   },

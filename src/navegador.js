@@ -169,7 +169,7 @@ import { hasPermission } from './accesscontrol.js';
             <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
             <a href="mantcantos.html" id="nav-resucito-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
             <a href="respaldo.html" id="nav-resucito-respaldo"><span class="material-symbols-outlined arrow-icon">archive</span> Respaldo</a>
-            <a href="src/chat.html" id="nav-resucito-chat"><span class="material-symbols-outlined arrow-icon">chat</span> Asistencia y Chat</a>
+            <a href="chat.html" id="nav-resucito-chat"><span class="material-symbols-outlined arrow-icon">chat</span> Asistencia y Chat</a>
             <a href="privacidad.html" id="nav-resucito-privacidad"><span class="material-symbols-outlined arrow-icon">policy</span> Política de Privacidad</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
           </div>
@@ -604,7 +604,7 @@ import { hasPermission } from './accesscontrol.js';
         e.stopPropagation();
         if (accountCard) accountCard.classList.add('hidden');
         // Redirigir a la ruta adecuada según la ubicación actual
-        window.location.href = isUnderSrc ? 'chat.html' : 'src/chat.html';
+        window.location.href = isUnderSrc ? '../chat.html' : 'chat.html';
       });
     }
 
