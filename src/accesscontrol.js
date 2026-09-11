@@ -53,6 +53,7 @@ export const PERMISSIONS = {
   PAGE_OPCIONES_PAGINAS: "page_opciones_paginas",
   PAGE_MANTCANTOS: "page_mantcantos",
   PAGE_RESPALDO: "page_respaldo",
+  PAGE_FIREBASE: "page_firebase",
   PAGE_CHAT: "page_chat",
   VIEW_ALL_CHATS: "view_all_chats",
   VIEW_SONG_CANTO: "view_song_canto",
@@ -90,6 +91,7 @@ export const PERMISSION_LABELS = {
   "page_opciones_paginas": "Opciones de páginas",
   "page_mantcantos": "Mantenimiento Páginas",
   "page_respaldo": "Respaldo",
+  "page_firebase": "Consumo de Firebase",
   "page_chat": "Asistencia y Chat",
   "view_all_chats": "Ver Todos los Chats (Asistencia)",
   "view_settings_log": "Ver Ajustes: Log",
@@ -1549,6 +1551,7 @@ const PERMISSION_TREE = [
       { key: "page_opciones_paginas", label: "Opciones de páginas" },
       { key: "page_mantcantos", label: "Mantenimiento Páginas" },
       { key: "page_respaldo", label: "Respaldo" },
+      { key: "page_firebase", label: "Consumo de Firebase" },
       { 
         key: "page_chat", 
         label: "Asistencia y Chat",

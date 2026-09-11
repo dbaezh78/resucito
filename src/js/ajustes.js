@@ -1882,6 +1882,13 @@ window.initAjustes = async function() {
       cardRespaldo.style.display = canViewRespaldo ? 'flex' : 'none';
     }
 
+    // Visibilidad de tarjeta "Consumo de Firebase" en Ajustes > Páginas
+    const cardFirebase = document.getElementById('card-setting-firebase');
+    if (cardFirebase) {
+      const canViewFirebase = isAdmin || hasPermission('page_firebase');
+      cardFirebase.style.display = canViewFirebase ? 'flex' : 'none';
+    }
+
     // Visibilidad de subpestañas dentro de Canto
     const cantoSubtabCantoBtn = document.getElementById('canto-subtab-canto-btn');
     const cantoSubtabLiturgiaBtn = document.getElementById('canto-subtab-liturgia-btn');

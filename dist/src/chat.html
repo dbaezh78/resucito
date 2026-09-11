@@ -17,10 +17,10 @@
       });
     })();
   </script>
-  <script type="module" crossorigin src="../assets/chat-eABPgEYK.js"></script>
-  <link rel="modulepreload" crossorigin href="../assets/preload-helper-DV2Wdh56.js">
-  <link rel="modulepreload" crossorigin href="../assets/navegador-sdMExAsb.js">
-  <link rel="stylesheet" crossorigin href="../assets/chat-Yx5lgyt2.css">
+  <script type="module" crossorigin src="../assets/chat-B3-7EXc-.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/preload-helper-44F9sIZn.js">
+  <link rel="modulepreload" crossorigin href="../assets/navegador-1d3Pg623.js">
+  <link rel="stylesheet" crossorigin href="../assets/chat-DsE2dX4w.css">
   <link rel="stylesheet" crossorigin href="../assets/expancion-B-iQbb46.css">
 </head>
 <body class="theme-light">
@@ -42,9 +42,23 @@
           <a href="../index.html" class="wa-icon-btn" title="Volver al Inicio de Resucitó">
             <span class="material-symbols-outlined">home</span>
           </a>
-          <button class="wa-icon-btn" id="btn-refresh-chats" title="Actualizar Chats">
-            <span class="material-symbols-outlined">refresh</span>
-          </button>
+          <div class="wa-menu-anchor">
+            <button class="wa-icon-btn" id="btn-sidebar-menu" title="Menú de opciones">
+              <span class="material-symbols-outlined">more_vert</span>
+            </button>
+            <div class="wa-dropdown-menu" id="dropdown-sidebar-menu">
+              <div class="wa-dropdown-switch-item">
+                <div class="wa-dropdown-switch-label">
+                  <span class="material-symbols-outlined wa-dropdown-icon" id="sidebar-theme-icon">dark_mode</span>
+                  <span>Modo Oscuro</span>
+                </div>
+                <label class="wa-toggle-switch">
+                  <input type="checkbox" class="switch-theme-input" id="switch-theme-sidebar">
+                  <span class="wa-toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -89,9 +103,23 @@
         </div>
 
         <div class="wa-sidebar-header-actions">
-          <button class="wa-icon-btn" id="btn-info-chat" title="Info de Asistencia">
-            <span class="material-symbols-outlined">more_vert</span>
-          </button>
+          <div class="wa-menu-anchor">
+            <button class="wa-icon-btn" id="btn-info-chat" title="Opciones">
+              <span class="material-symbols-outlined">more_vert</span>
+            </button>
+            <div class="wa-dropdown-menu" id="dropdown-chat-menu">
+              <div class="wa-dropdown-switch-item">
+                <div class="wa-dropdown-switch-label">
+                  <span class="material-symbols-outlined wa-dropdown-icon" id="chat-theme-icon">dark_mode</span>
+                  <span>Modo Oscuro</span>
+                </div>
+                <label class="wa-toggle-switch">
+                  <input type="checkbox" class="switch-theme-input" id="switch-theme-chat">
+                  <span class="wa-toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 

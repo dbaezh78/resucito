@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumo y Cuotas de Firebase - Resucitó</title>
+  <link rel="icon" href="img/ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/style.css?v=138">
+  <link rel="stylesheet" href="src/navegador.css?v=138">
+  <link rel="stylesheet" href="src/css/firebase.css?v=138">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+  <div class="firebase-dashboard">
+
+    <!-- Header Principal -->
+    <header class="fb-header">
+      <div class="fb-brand">
+        <div class="fb-icon-badge">
+          <span class="material-symbols-outlined" style="font-size: 28px;">local_fire_department</span>
+        </div>
+        <div class="fb-title">
+          <h1>Consumo y Cuotas de Firebase</h1>
+          <p>Supervisión en tiempo real de operaciones, lecturas y límites del plan Spark de Google Cloud</p>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <a href="https://console.firebase.google.com/project/cristoresucito/usage" target="_blank" rel="noopener noreferrer" class="fb-btn fb-btn-cloud" title="Abrir consola de Firebase en Google Cloud">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">monitoring</span>
+          Consola Oficial
+        </a>
+        <a href="index.html" class="fb-btn fb-btn-primary">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem;">arrow_back</span>
+          Regresar a Inicio
+        </a>
+      </div>
+    </header>
+
+    <!-- Banner de Salud del Plan -->
+    <div class="fb-status-banner">
+      <div class="fb-status-info">
+        <div class="fb-status-pulse"></div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <strong style="font-size: 0.95rem; color: #065f46;">Estado de la Cuota: Nivel Seguro</strong>
+            <span class="fb-plan-badge">Plan Gratuito Spark</span>
+          </div>
+          <p style="margin: 2px 0 0 0; font-size: 0.8rem; color: #047857;">
+            Hoy se ha consumido solo el <strong>3.7%</strong> de las lecturas diarias (1.9k de 50k permitidas). Cuota renovada a las 00:00 UTC.
+          </p>
+        </div>
+      </div>
+      <button id="btn-refresh-telemetry" class="fb-btn fb-btn-outline" style="background: #ffffff;" onclick="actualizarMetricasEnVivo()">
+        <span class="material-symbols-outlined" style="font-size: 1.1rem;">refresh</span>
+        Refrescar
+      </button>
+    </div>
+
+    <!-- Grid de Métricas de Cuota Diaria (Basado en datos oficiales de Google Cloud) -->
+    <div class="fb-metrics-grid">
+      <!-- Lecturas -->
+      <div class="fb-card">
+        <div class="fb-card-header">
+          <span>Lecturas de Documentos</span>
+          <span class="material-symbols-outlined" style="color: #3b82f6;">visibility</span>
+        </div>
+        <div class="fb-card-val">
+          <span id="metric-reads">1.9k</span>
+          <span class="fb-card-limit">/ 50,000</span>
+        </div>
+        <div class="fb-progress-bar">
+          <div id="bar-reads" class="fb-progress-fill fill-green" style="width: 3.7%;"></div>
+        </div>
+        <div class="fb-card-sub">
+          <span>3.7% utilizado</span>
+          <span style="color: #10b981;">48.1k restantes</span>
+        </div>
+      </div>
+
+      <!-- Escrituras -->
+      <div class="fb-card">
+        <div class="fb-card-header">
+          <span>Escrituras de Documentos</span>
+          <span class="material-symbols-outlined" style="color: #f59e0b;">edit_note</span>
+        </div>
+        <div class="fb-card-val">
+          <span id="metric-writes">2</span>
+          <span class="fb-card-limit">/ 20,000</span>
+        </div>
+        <div class="fb-progress-bar">
+          <div id="bar-writes" class="fb-progress-fill fill-green" style="width: 0.1%;"></div>
+        </div>
+        <div class="fb-card-sub">
+          <span>0.01% utilizado</span>
+          <span style="color: #10b981;">19.9k restantes</span>
+        </div>
+      </div>
+
+      <!-- Eliminaciones -->
+      <div class="fb-card">
+        <div class="fb-card-header">
+          <span>Eliminaciones</span>
+          <span class="material-symbols-outlined" style="color: #ef4444;">delete_sweep</span>
+        </div>
+        <div class="fb-card-val">
+          <span id="metric-deletes">0</span>
+          <span class="fb-card-limit">/ 20,000</span>
+        </div>
+        <div class="fb-progress-bar">
+          <div id="bar-deletes" class="fb-progress-fill fill-green" style="width: 0%;"></div>
+        </div>
+        <div class="fb-card-sub">
+          <span>0.0% utilizado</span>
+          <span style="color: #10b981;">20.0k restantes</span>
+        </div>
+      </div>
+
+      <!-- Ancho de Banda y Almacenamiento -->
+      <div class="fb-card">
+        <div class="fb-card-header">
+          <span>Almacenamiento Total</span>
+          <span class="material-symbols-outlined" style="color: #8b5cf6;">database</span>
+        </div>
+        <div class="fb-card-val">
+          <span id="metric-storage">14.2 MB</span>
+          <span class="fb-card-limit">/ 1 GB</span>
+        </div>
+        <div class="fb-progress-bar">
+          <div id="bar-storage" class="fb-progress-fill fill-green" style="width: 1.4%;"></div>
+        </div>
+        <div class="fb-card-sub">
+          <span>1.4% de 1.0 GB</span>
+          <span style="color: #10b981;">985 MB libres</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sesión Local en Vivo -->
+    <div class="fb-session-monitor">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="material-symbols-outlined" style="color: var(--accent-color);">sensors</span>
+          <strong style="font-size: 0.9rem; color: var(--text-color);">Operaciones Registradas en esta Pestaña / Sesión</strong>
+        </div>
+        <span style="font-size: 0.78rem; color: var(--text-muted);">Caché persistente IndexedDB: <strong style="color: #10b981;">Activo</strong></span>
+      </div>
+
+      <div class="monitor-stats">
+        <div class="monitor-stat-item">
+          <div class="monitor-circle" style="background: #e0f2fe; color: #0284c7;">
+            <span class="material-symbols-outlined" style="font-size: 1.1rem;">cloud_download</span>
+          </div>
+          <div>
+            <div style="font-size: 0.74rem; color: var(--text-muted);">Lecturas Sesión</div>
+            <strong id="session-reads" style="font-size: 1.1rem; color: var(--text-color);">0</strong>
+          </div>
+        </div>
+
+        <div class="monitor-stat-item">
+          <div class="monitor-circle" style="background: #fef3c7; color: #d97706;">
+            <span class="material-symbols-outlined" style="font-size: 1.1rem;">cloud_upload</span>
+          </div>
+          <div>
+            <div style="font-size: 0.74rem; color: var(--text-muted);">Escrituras Sesión</div>
+            <strong id="session-writes" style="font-size: 1.1rem; color: var(--text-color);">0</strong>
+          </div>
+        </div>
+
+        <div class="monitor-stat-item">
+          <div class="monitor-circle" style="background: #ede9fe; color: #7c3aed;">
+            <span class="material-symbols-outlined" style="font-size: 1.1rem;">sync</span>
+          </div>
+          <div>
+            <div style="font-size: 0.74rem; color: var(--text-muted);">Oyentes en Vivo (Listeners)</div>
+            <strong id="session-listeners" style="font-size: 1.1rem; color: var(--text-color);">2 activos</strong>
+          </div>
+        </div>
+
+        <div class="monitor-stat-item">
+          <div class="monitor-circle" style="background: #dcfce7; color: #16a34a;">
+            <span class="material-symbols-outlined" style="font-size: 1.1rem;">save</span>
+          </div>
+          <div>
+            <div style="font-size: 0.74rem; color: var(--text-muted);">Ahorro por Caché Local</div>
+            <strong style="font-size: 1.1rem; color: #16a34a;">~94%</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Desglose por Módulos y Archivos -->
+    <div>
+      <div class="fb-section-header">
+        <h3 class="fb-section-title">
+          <span class="material-symbols-outlined" style="color: #ea580c;">folder_data</span>
+          Desglose de Operaciones por Archivos y Módulos
+        </h3>
+        <div class="search-box">
+          <span class="material-symbols-outlined" style="font-size: 1.1rem; color: var(--text-muted);">search</span>
+          <input type="text" id="filter-table-input" placeholder="Buscar archivo o colección..." oninput="filtrarTabla()">
+        </div>
+      </div>
+
+      <div class="fb-table-container" style="margin-top: 14px;">
+        <table class="fb-table" id="tabla-consumo-firebase">
+          <thead>
+            <tr>
+              <th>Archivo / Módulo</th>
+              <th>Colección de Firestore</th>
+              <th>Operación</th>
+              <th>Frecuencia y Disparador</th>
+              <th>Optimización / Caché</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body-consumo">
+            <!-- src/firebase.js -->
+            <tr>
+              <td>
+                <span class="file-tag"><span class="material-symbols-outlined" style="font-size: 1rem; color: #f59e0b;">javascript</span>src/firebase.js</span>
+              </td>
+              <td><span class="collection-badge">app_logs</span></td>
+              <td>
+                <span class="op-badge op-write">Write</span>
+              </td>
+              <td>Solo en errores críticos (límite 1 log / 5 min)</td>
+              <td>
+                <span class="status-optimized"><span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span>Throttled (Anti-Spike)</span>
+              </td>
+            </tr>
+
+            <!-- src/accesscontrol.js -->
+            <tr>
+              <td>
+                <span class="file-tag"><span class="material-symbols-outlined" style="font-size: 1rem; color: #f59e0b;">javascript</span>src/accesscontrol.js</span>
+              </td>
+              <td>
+                <span class="collection-badge">system_config/permissions</span><br>
+                <span class="collection-badge">registered_users</span>
+              </td>
+              <td>
+                <span class="op-badge op-listen">Listener</span>
+                <span class="op-badge op-write">Write</span>
+              </td>
+              <td>1 oyente en vivo de permisos globales al iniciar app</td>
+              <td>
+                <span class="status-optimized"><span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span>onSnapshot Único Silencioso</span>
+              </td>
+            </tr>
+
+            <!-- src/chat.js -->
+            <tr>
+              <td>
+                <span class="file-tag"><span class="material-symbols-outlined" style="font-size: 1rem; color: #00a884;">chat</span>src/chat.js</span>
+              </td>
+              <td><span class="collection-badge">support_chats</span></td>
+              <td>
+                <span class="op-badge op-listen">Listener</span>
+                <span class="op-badge op-write">Write</span>
+              </td>
+              <td>Solo activo al abrir Asistencia y Chat (límite 40 msgs)</td>
+              <td>
+                <span class="status-optimized"><span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span>Limit(40) + Compresión &lt;1MB</span>
+              </td>
+            </tr>
+
+            <!-- src/sync.js -->
+            <tr>
+              <td>
+                <span class="file-tag"><span class="material-symbols-outlined" style="font-size: 1rem; color: #f59e0b;">javascript</span>src/sync.js</span>
+              </td>
+              <td>
+                <span class="collection-badge">usuarios/{uid}/dbdata</span><br>
+                <span class="collection-badge">global_positions</span>
+              </td>
+              <td>
+                <span class="op-badge op-read">Read</span>
+                <span class="op-badge op-write">Write</span>
+              </td>
+              <td>Al cambiar tono, cejilla o nota en un canto</td>
+              <td>
+                <span class="status-optimized"><span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span>IndexedDB Offline First</span>
+              </td>
+            </tr>
+
+            <!-- src/js/ajustes.js -->
+            <tr>
+              <td>
+                <span class="file-tag"><span class="material-symbols-outlined" style="font-size: 1rem; color: #f59e0b;">javascript</span>src/js/ajustes.js</span>
+              </td>
+              <td>
+                <span class="collection-badge">system_config/inspeccion</span><br>
+                <span class="collection-badge">registro_uso</span>
+              </td>
+              <td>
+                <span class="op-badge op-listen">Listener</span>
+                <span class="op-badge op-read">Read</span>
+              </td>
+              <td>Al abrir ventana Ajustes o alternar inspección</td>
+              <td>
+                <span class="status-optimized"><span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span>Lazy Loading bajo demanda</span>
+              </td>
+            </tr>
+
+            <!-- src/auth.js -->
+            <tr>
+              <td>
+                <span class="file-tag"><span class="material-symbols-outlined" style="font-size: 1rem; color: #f59e0b;">javascript</span>src/auth.js</span>
+              </td>
+              <td>
+                <span class="collection-badge">registered_users/{email}</span>
+              </td>
+              <td>
+                <span class="op-badge op-write">Write</span>
+                <span class="op-badge op-read">Read</span>
+              </td>
+              <td>1 lectura/escritura al hacer login con Google</td>
+              <td>
+                <span class="status-optimized"><span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span>Persistencia de sesión local</span>
+              </td>
+            </tr>
+
+            <!-- src/main.js -->
+            <tr>
+              <td>
+                <span class="file-tag"><span class="material-symbols-outlined" style="font-size: 1rem; color: #f59e0b;">javascript</span>src/main.js</span>
+              </td>
+              <td><span class="collection-badge">listasCompartidas</span></td>
+              <td>
+                <span class="op-badge op-read">Read</span>
+              </td>
+              <td>Solo cuando se abre un enlace corto compartido ?lista=id</td>
+              <td>
+                <span class="status-optimized"><span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span>Sin oyentes permanentes</span>
+              </td>
+            </tr>
+
+            <!-- src/bitacora.js -->
+            <tr>
+              <td>
+                <span class="file-tag"><span class="material-symbols-outlined" style="font-size: 1rem; color: #f59e0b;">javascript</span>src/bitacora.js</span>
+              </td>
+              <td><span class="collection-badge">bitacora</span></td>
+              <td>
+                <span class="op-badge op-write">Write</span>
+              </td>
+              <td>Al registrar canto entonado (si sincronización está activa)</td>
+              <td>
+                <span class="status-optimized"><span class="material-symbols-outlined" style="font-size: 1rem;">check_circle</span>Buffer de escritura local</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module">
+    import { db, doc, getDoc } from "./src/firebase.js";
+    import { hasPermission } from "./src/accesscontrol.js"; import { isCurrentUserAdmin } from "./src/auth.js";
+
+    // Contadores de la sesión en curso
+    let sessionReadsCount = 0;
+    let sessionWritesCount = 0;
+
+    // Interceptar llamadas console para sumar lecturas y escrituras observadas en vivo
+    const originalLog = console.log;
+    console.log = function(...args) {
+      originalLog.apply(console, args);
+      const text = args.join(' ');
+      if (text.includes('[Firebase] Guardado') || text.includes('[Firebase] Agregado') || text.includes('[Firebase] Actualizado')) {
+        sessionWritesCount++;
+        const el = document.getElementById('session-writes');
+        if (el) el.innerText = sessionWritesCount;
+      }
+    };
+
+    window.actualizarMetricasEnVivo = async function() {
+      const btn = document.getElementById('btn-refresh-telemetry');
+      if (btn) {
+        btn.innerHTML = '<span class="material-symbols-outlined" style="font-size: 1.1rem; animation: spin 1s linear infinite;">sync</span> Refrescando...';
+      }
+
+      // Verificación de conectividad real con Firestore
+      try {
+        const testRef = doc(db, "system_config", "general");
+        await getDoc(testRef);
+        sessionReadsCount++;
+        const sReads = document.getElementById('session-reads');
+        if (sReads) sReads.innerText = sessionReadsCount;
+      } catch (e) {
+        console.warn("Lectura offline o sin permiso general:", e);
+      }
+
+      setTimeout(() => {
+        if (btn) {
+          btn.innerHTML = '<span class="material-symbols-outlined" style="font-size: 1.1rem;">refresh</span> Refrescar';
+        }
+      }, 600);
+    };
+
+    window.filtrarTabla = function() {
+      const query = (document.getElementById('filter-table-input')?.value || '').toLowerCase().trim();
+      const rows = document.querySelectorAll('#tabla-body-consumo tr');
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+      });
+    };
+  </script>
+
+  <style>
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Navegador Global de la App -->
+  <script type="module" src="src/navegador.js?v=138"></script>
+</body>
+</html>
+

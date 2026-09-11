@@ -935,6 +935,99 @@ function setupDomEvents() {
   document.getElementById('btn-save-edit')?.addEventListener('click', guardarEdicionMensaje);
   document.getElementById('btn-close-lightbox')?.addEventListener('click', cerrarModales);
   document.getElementById('wa-lightbox')?.addEventListener('click', cerrarModales);
+
+  // Menús de 3 puntos (Sidebar y Chat activo) y Control de Tema (Claro / Oscuro)
+  setupThemeAndHeaderMenus();
+}
+
+function setupThemeAndHeaderMenus() {
+  const btnSidebarMenu = document.getElementById('btn-sidebar-menu');
+  const dropdownSidebarMenu = document.getElementById('dropdown-sidebar-menu');
+  const btnChatMenu = document.getElementById('btn-info-chat');
+  const dropdownChatMenu = document.getElementById('dropdown-chat-menu');
+
+  const switchSidebar = document.getElementById('switch-theme-sidebar');
+  const switchChat = document.getElementById('switch-theme-chat');
+
+  // Inicializar estado del tema: por defecto 'light' (Modo Claro)
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  const isDark = currentTheme === 'dark';
+
+  aplicarTemaChat(isDark ? 'dark' : 'light');
+
+  function updateSwitchInputs(dark) {
+    if (switchSidebar) switchSidebar.checked = dark;
+    if (switchChat) switchChat.checked = dark;
+
+    const iconName = dark ? 'light_mode' : 'dark_mode';
+    const textLabel = dark ? 'Modo Claro' : 'Modo Oscuro';
+
+    const sidebarIcon = document.getElementById('sidebar-theme-icon');
+    const chatIcon = document.getElementById('chat-theme-icon');
+    if (sidebarIcon) sidebarIcon.textContent = iconName;
+    if (chatIcon) chatIcon.textContent = iconName;
+
+    const sidebarLabel = switchSidebar?.closest('.wa-dropdown-switch-item')?.querySelector('span:not(.material-symbols-outlined)');
+    const chatLabel = switchChat?.closest('.wa-dropdown-switch-item')?.querySelector('span:not(.material-symbols-outlined)');
+    if (sidebarLabel) sidebarLabel.textContent = textLabel;
+    if (chatLabel) chatLabel.textContent = textLabel;
+  }
+
+  updateSwitchInputs(isDark);
+
+  function toggleTema(e) {
+    const shouldBeDark = e.target.checked;
+    const newTheme = shouldBeDark ? 'dark' : 'light';
+    localStorage.setItem('theme', newTheme);
+    aplicarTemaChat(newTheme);
+    updateSwitchInputs(shouldBeDark);
+  }
+
+  switchSidebar?.addEventListener('change', toggleTema);
+  switchChat?.addEventListener('change', toggleTema);
+
+  // Toggle de visibilidad de los menús desplegables
+  btnSidebarMenu?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdownChatMenu?.classList.remove('show');
+    dropdownSidebarMenu?.classList.toggle('show');
+  });
+
+  btnChatMenu?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdownSidebarMenu?.classList.remove('show');
+    dropdownChatMenu?.classList.toggle('show');
+  });
+
+  // Cerrar menús al hacer click fuera
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.wa-menu-anchor')) {
+      dropdownSidebarMenu?.classList.remove('show');
+      dropdownChatMenu?.classList.remove('show');
+    }
+  });
+
+  // Cerrar menús al presionar Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdownSidebarMenu?.classList.remove('show');
+      dropdownChatMenu?.classList.remove('show');
+    }
+  });
+}
+
+function aplicarTemaChat(theme) {
+  if (theme === 'dark') {
+    document.documentElement.classList.add('theme-dark');
+    document.documentElement.classList.remove('theme-light', 'theme-sepia');
+    document.body.classList.add('theme-dark');
+    document.body.classList.remove('theme-light', 'theme-sepia');
+  } else {
+    document.documentElement.classList.add('theme-light');
+    document.documentElement.classList.remove('theme-dark', 'theme-sepia');
+    document.body.classList.add('theme-light');
+    document.body.classList.remove('theme-dark', 'theme-sepia');
+  }
 }
 
 function formatearHora(ts) {

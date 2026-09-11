@@ -1036,6 +1036,9 @@ import { hasPermission } from './accesscontrol.js';
       } else if (pathname.includes('respaldo.html') && !hasPermission('page_respaldo')) {
         console.warn("Acceso denegado a respaldo.html por permisos. Redirigiendo a Inicio...");
         window.location.replace('./index.html');
+      } else if (pathname.includes('firebase.html') && !hasPermission('page_firebase')) {
+        console.warn("Acceso denegado a firebase.html por permisos. Redirigiendo a Inicio...");
+        window.location.replace('./index.html');
       } else if (pathname.includes('chat.html')) {
         const loggedUser = getCurrentUser() || window.firebaseAPI?.getCurrentUser?.();
         if (!loggedUser || !hasPermission('page_chat')) {

@@ -24,6 +24,7 @@ export default defineConfig({
         expancion: path.resolve(__dirname, 'expancion.html'),
         mantcantos: path.resolve(__dirname, 'mantcantos.html'),
         respaldo: path.resolve(__dirname, 'respaldo.html'),
+        firebase: path.resolve(__dirname, 'firebase.html'),
         privacidad: path.resolve(__dirname, 'privacidad.html'),
         chat: path.resolve(__dirname, 'src/chat.html')
       }
