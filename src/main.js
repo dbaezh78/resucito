@@ -719,6 +719,15 @@ async function sincronizarCantoDesdeFirebase(songId) {
         const modalCapoSelect = document.getElementById('modal-capo-select');
         if (modalCapoSelect) modalCapoSelect.value = selectedCapo;
 
+        // Guardar en localStorage para mantener siempre la última configuración local sincronizada
+        const key = `canto-config-${songId}`;
+        let dataObj = {};
+        try {
+          dataObj = JSON.parse(localStorage.getItem(key) || '{}');
+        } catch (e) {}
+        dataObj.acorde = String(historial.acorde);
+        dataObj.cejilla = String(historial.cejilla);
+
         // Sincronizar nota personal y valoración del historial (Versión 1)
         if (historial.notasCantor !== undefined && historial.notasCantor !== '') {
           localStorage.setItem(`notes_${songId}`, historial.notasCantor);
@@ -726,15 +735,10 @@ async function sincronizarCantoDesdeFirebase(songId) {
           if (notesTextarea) notesTextarea.value = historial.notasCantor;
         }
         if (historial.valoracion !== undefined && historial.valoracion > 0) {
-          const key = `canto-config-${songId}`;
-          let dataObj = {};
-          try {
-            dataObj = JSON.parse(localStorage.getItem(key) || '{}');
-          } catch (e) {}
           dataObj.valoracion = historial.valoracion;
-          localStorage.setItem(key, JSON.stringify(dataObj));
           renderFooterStars(songId, historial.valoracion);
         }
+        localStorage.setItem(key, JSON.stringify(dataObj));
         
         console.log(`📥 [Firebase] Historial completo cargado de la nube: acorde = ${historial.acorde}, cejilla = ${historial.cejilla}`);
       }
@@ -940,21 +944,32 @@ async function loadSongView(songId) {
     const parsed = parseChord(originalChordStr);
     originalSongKey = parsed.noteName;
     originalSongTypeSuffix = parsed.typeSuffix;
-    currentKeyOffset = 0; // Reiniciar offset
+
+    // Leer configuración local si existe previamente (acorde transportado y cejilla)
+    const localKey = `canto-config-${songId}`;
+    let localSavedConfig = null;
+    try {
+      const stored = localStorage.getItem(localKey);
+      if (stored) localSavedConfig = JSON.parse(stored);
+    } catch (e) {}
+
+    // Si existe localmente, inicializar con lo local; si no, con el valor original
+    const initialKeyOffset = (localSavedConfig && localSavedConfig.acorde !== undefined) ? (parseInt(localSavedConfig.acorde) || 0) : 0;
+    const initialCapo = (localSavedConfig && localSavedConfig.cejilla !== undefined) ? (parseInt(localSavedConfig.cejilla) || 0) : (parseInt(originalCapoStr) || 0);
+
+    currentKeyOffset = initialKeyOffset;
     updateTransposeBadge();
     
-    // Cejilla original
-    const defaultCapo = parseInt(originalCapoStr) || 0;
-    capoSelect.value = defaultCapo;
+    capoSelect.value = initialCapo;
     
     const activeCapoBadge = document.getElementById('capo-badge');
     if (activeCapoBadge) {
-      activeCapoBadge.textContent = formatCapoText(defaultCapo);
+      activeCapoBadge.textContent = formatCapoText(initialCapo);
     }
     
     const modalCapoSelect = document.getElementById('modal-capo-select');
     if (modalCapoSelect) {
-      modalCapoSelect.value = defaultCapo;
+      modalCapoSelect.value = initialCapo;
     }
 
     updateChordPanel();
@@ -1009,6 +1024,7 @@ async function loadSongView(songId) {
       updateTransposeBadge();
       notesTextarea.value = localStorage.getItem(`notes_${songId}`) || '';
       renderSongContent();
+      setupViewerSongFooter(songId);
     });
     
     // Configurar pie de página del canto (categorías, nota modal, estrellas y número dbno)
@@ -2588,13 +2604,25 @@ function guardarHistorialCanto() {
     console.warn("⚠️ [guardarHistorialCanto] No hay currentCanto activo.");
     return;
   }
+
+  const cejillaValue = capoSelect ? (parseInt(capoSelect.value) || 0) : 0;
+
+  // Actualizar siempre el almacenamiento local para que se mantengan los datos
+  const key = `canto-config-${currentCanto.id}`;
+  let dataObj = {};
+  try {
+    dataObj = JSON.parse(localStorage.getItem(key) || '{}');
+  } catch (e) {}
+  dataObj.acorde = String(currentKeyOffset);
+  dataObj.cejilla = String(cejillaValue);
+  localStorage.setItem(key, JSON.stringify(dataObj));
+
   const user = getCurrentUser();
   if (!user) {
     console.warn("⚠️ [guardarHistorialCanto] No hay usuario autenticado.");
     return;
   }
   
-  const cejillaValue = capoSelect ? (parseInt(capoSelect.value) || 0) : 0;
   console.log(`💾 [guardarHistorialCanto] Enviando a Firebase: acordeOffset=${currentKeyOffset}, cejillaValue=${cejillaValue}`);
   
   if (typeof window.guardarHistorialCantoEnNube === 'function') {
@@ -6607,8 +6635,17 @@ function setupEventListeners() {
       trackLoggedInUser(user);
       listenToOwnUserPermissionsSilently(user);
       
-      // Descargar y aplicar preferencias personales de Ajustes desde la nube
-      if (typeof window.cargarAjustesDesdeNube === 'function') {
+      // Descargar y aplicar todos los datos del usuario desde la nube (perfil, ajustes, cantos, cejillas, notas, estrellas)
+      if (typeof window.cargarTodoElUsuarioDesdeNube === 'function') {
+        window.cargarTodoElUsuarioDesdeNube(user).then(() => {
+          if (typeof window.initAjustes === 'function') {
+            window.initAjustes();
+          }
+          if (typeof window.handleSearchAndFilters === 'function') {
+            window.handleSearchAndFilters();
+          }
+        });
+      } else if (typeof window.cargarAjustesDesdeNube === 'function') {
         window.cargarAjustesDesdeNube().then(() => {
           if (typeof window.initAjustes === 'function') {
             window.initAjustes();

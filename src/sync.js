@@ -433,12 +433,30 @@ export async function guardarHistorialCantoEnNube(cantoId, acordeOffset, cejilla
   }
 }
 
-// Descarga el historial más reciente de cejilla y acorde del canto
+// Descarga la configuración guardada de cejilla, acorde, nota y valoración del canto
 export async function cargarHistorialCantoDesdeNube(cantoId) {
   const user = auth.currentUser;
   if (!user) return null;
 
   try {
+    // 1. Intentar leer directamente de la raíz de dbdata: /usuarios/{uid}/dbdata/{cantoId}
+    const docRefRaiz = doc(db, "usuarios", user.uid, "dbdata", cantoId);
+    const docSnapRaiz = await getDoc(docRefRaiz);
+
+    if (docSnapRaiz.exists()) {
+      const dataRaiz = docSnapRaiz.data();
+      const val = dataRaiz.valor || dataRaiz;
+      if (val && (val.acorde !== undefined || val.cejilla !== undefined || val.key !== undefined || val.capo !== undefined)) {
+        return {
+          acorde: parseInt(val.acorde ?? val.key ?? 0) || 0,
+          cejilla: parseInt(val.cejilla ?? val.capo ?? 0) || 0,
+          notasCantor: val.notasCantor || val.notesCantor || "",
+          valoracion: parseInt(val.valoracion) || 0
+        };
+      }
+    }
+
+    // 2. Si no está en la raíz, consultar la subcolección historial como respaldo
     const colRef = collection(db, "usuarios", user.uid, "dbdata", cantoId, "historial");
     const querySnapshot = await getDocs(colRef);
 
@@ -449,12 +467,13 @@ export async function cargarHistorialCantoDesdeNube(cantoId) {
       
       const docSnap = docs[0];
       const data = docSnap.data();
-      if (data && data.valor) {
+      const val = data.valor || data;
+      if (val) {
         return {
-          acorde: parseInt(data.valor.acorde) || 0,
-          cejilla: parseInt(data.valor.cejilla) || 0,
-          notasCantor: data.valor.notasCantor || "",
-          valoracion: parseInt(data.valor.valoracion) || 0
+          acorde: parseInt(val.acorde ?? val.key ?? 0) || 0,
+          cejilla: parseInt(val.cejilla ?? val.capo ?? 0) || 0,
+          notasCantor: val.notasCantor || val.notesCantor || "",
+          valoracion: parseInt(val.valoracion) || 0
         };
       }
     }
@@ -507,9 +526,122 @@ export async function cargarZoomsDesdeNube() {
   }
 }
 
+// Descarga integral de todo el usuario desde Firebase al iniciar sesión:
+// 1. Perfil (/usuarios/{uid}/perfil/config)
+// 2. Ajustes generales, favoritos y zooms (/usuarios/{uid}/configuracion/...)
+// 3. Colección completa de cantos personalizados (/usuarios/{uid}/dbdata)
+export async function cargarTodoElUsuarioDesdeNube(userParam) {
+  const user = userParam || auth.currentUser;
+  if (!user) return;
+
+  console.log(`📥 [Firebase] Iniciando sincronización integral de datos para usuario: ${user.email || user.uid}`);
+
+  // 1. Descargar Perfil del usuario
+  try {
+    const docRefPerfil = doc(db, "usuarios", user.uid, "perfil", "config");
+    const snapPerfil = await getDoc(docRefPerfil);
+    if (snapPerfil.exists()) {
+      const perfilData = snapPerfil.data();
+      localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
+      if (typeof window.aplicarDatosPerfil === 'function') {
+        window.aplicarDatosPerfil(perfilData);
+      }
+      console.log("📥 [Firebase] Perfil de usuario descargado y aplicado.");
+    }
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudo descargar el perfil del usuario:", e.message || e);
+  }
+
+  // 2. Descargar Ajustes, Favoritos y Zooms
+  try {
+    await cargarAjustesDesdeNube();
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudieron descargar ajustes/favoritos:", e.message || e);
+  }
+
+  // 3. Descargar todos los cantos personalizados en dbdata (acordes, cejillas, notas de cantor, valoración)
+  try {
+    const dbdataRef = collection(db, "usuarios", user.uid, "dbdata");
+    const snapDbdata = await getDocs(dbdataRef);
+    if (!snapDbdata.empty) {
+      let count = 0;
+      snapDbdata.forEach(docSnap => {
+        const songId = docSnap.id;
+        const dataDoc = docSnap.data();
+        const val = dataDoc.valor || dataDoc;
+        if (!val) return;
+
+        // Formar configuración del canto
+        const localKey = `canto-config-${songId}`;
+        let localConfig = {};
+        try {
+          localConfig = JSON.parse(localStorage.getItem(localKey) || '{}');
+        } catch (e) { localConfig = {}; }
+
+        if (val.acorde !== undefined || val.key !== undefined) {
+          localConfig.acorde = String(val.acorde ?? val.key ?? "0");
+        }
+        if (val.cejilla !== undefined || val.capo !== undefined) {
+          localConfig.cejilla = String(val.cejilla ?? val.capo ?? "0");
+        }
+        if (val.valoracion !== undefined) {
+          localConfig.valoracion = parseInt(val.valoracion) || 0;
+        }
+
+        localStorage.setItem(localKey, JSON.stringify(localConfig));
+
+        // Notas del cantor
+        const notas = val.notasCantor || val.notesCantor;
+        if (notas !== undefined && notas !== null) {
+          localStorage.setItem(`notes_${songId}`, String(notas));
+        }
+
+        count++;
+      });
+      console.log(`📥 [Firebase] ${count} cantos sincronizados desde la nube a almacenamiento local (acorde, cejilla, notas, estrellas).`);
+    }
+  } catch (e) {
+    console.warn("⚠️ [Firebase] No se pudo descargar dbdata de cantos:", e.message || e);
+  }
+
+  // 4. Si hay un canto actualmente abierto en pantalla, refrescar sus controles inmediatamente
+  try {
+    if (window.currentCanto && window.currentCanto.id) {
+      const activeId = window.currentCanto.id;
+      const cfgStr = localStorage.getItem(`canto-config-${activeId}`);
+      if (cfgStr) {
+        const cfg = JSON.parse(cfgStr);
+        if (cfg.acorde !== undefined && typeof window.setCurrentKeyOffset === 'function') {
+          window.setCurrentKeyOffset(parseInt(cfg.acorde) || 0);
+        }
+        if (cfg.cejilla !== undefined) {
+          const capoEl = document.getElementById('capo-select');
+          if (capoEl) capoEl.value = cfg.cejilla;
+          const modalCapoEl = document.getElementById('modal-capo-select');
+          if (modalCapoEl) modalCapoEl.value = cfg.cejilla;
+          const badgeEl = document.getElementById('capo-badge');
+          if (badgeEl && typeof window.formatCapoText === 'function') {
+            badgeEl.textContent = window.formatCapoText(cfg.cejilla);
+          }
+        }
+      }
+      const notesEl = document.getElementById('notes-textarea');
+      if (notesEl) {
+        notesEl.value = localStorage.getItem(`notes_${activeId}`) || '';
+      }
+      if (typeof window.updateTransposeBadge === 'function') window.updateTransposeBadge();
+      if (typeof window.renderSongContent === 'function') window.renderSongContent();
+      if (typeof window.setupViewerSongFooter === 'function') window.setupViewerSongFooter(activeId);
+    }
+  } catch (e) {
+    console.debug("⚠️ Error al refrescar canto activo tras sincronización:", e);
+  }
+}
+
 // Exponer globalmente
 window.guardarAjustesEnNube = guardarAjustesEnNube;
 window.cargarAjustesDesdeNube = cargarAjustesDesdeNube;
+window.cargarTodoElUsuarioDesdeNube = cargarTodoElUsuarioDesdeNube;
 window.guardarFavoritosEnNube = guardarFavoritosEnNube;
 window.cargarFavoritosDesdeNube = cargarFavoritosDesdeNube;
 window.guardarPosicionesEnNube = guardarPosicionesEnNube;
