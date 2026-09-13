@@ -4,6 +4,13 @@ Este archivo registra los cambios de cada versión de forma clara y directa.
 
 ---
 
+## [v2.1.07] - 2026
+- Adaptación y optimización de lienzo de cantos para celulares con resolución de 411px de ancho (ej. 411 x 777 px).
+- Eliminación de bordes laterales vacíos asegurando que el contenido del canto ocupe el ancho adecuado de pantalla.
+- Consistencia del visor, toolbar y navegación en dispositivos móviles modernos.
+
+---
+
 ## [v2.1.06] - 2026
 - Nuevo sistema de Asistencia y Chat en vivo estilo WhatsApp Web (`src/chat.html` y `chat.html`).
 - Panel de control de conversaciones y buscador de usuarios en tiempo real para el Administrador.

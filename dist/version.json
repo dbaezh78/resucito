@@ -1,15 +1,14 @@
 {
-  "latestVersion": "2.1.06",
+  "latestVersion": "2.1.07",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.06)",
+  "updateTitle": "Nueva Versión Disponible (v2.1.07)",
   "updateMessage": "Actualiza a la última versión para disfrutar de nuevas funciones y mejoras.",
   "releaseNotes": [
+    "Soporte y adaptación completa de lienzo para pantallas móviles de 411px x 777px.",
+    "Ajuste automático de márgenes para evitar bordes laterales vacíos en nuevos dispositivos móviles.",
     "Nuevo sistema de Asistencia y Chat en vivo estilo WhatsApp Web (chat.html)",
     "Bandeja de conversaciones y buscador en tiempo real para el administrador",
     "Canal privado y directo para cada cantor con el administrador",
-    "Reglas de edición y eliminación de mensajes (5 minutos)",
-    "Adjuntos exclusivos de fotos/imágenes con compresión automática y lightbox",
-    "Panel de emojis completo de WhatsApp",
     "Nueva página de Política de Privacidad (privacidad.html)"
   ]
 }

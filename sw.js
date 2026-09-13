@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v334'; // chat.html movido a raíz
+const CACHE_NAME = 'resucito-cache-v335'; // v2.1.07 soporte pantalla 411px
 const STATIC_ASSETS = [
   './',
   'index.html',

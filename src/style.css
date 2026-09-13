@@ -2210,7 +2210,7 @@ footer {
 }
 
 .capo-badge-text {
-  font-size: 1.1sem;
+  font-size: 1.2rem;
   font-weight: 600;
   /*opacity: 0.9;*/
 }
@@ -3892,6 +3892,11 @@ footer {
 
 
   }   /* **************** FIN DE 384px*/
+
+@media (min-width: 411px) {
+  /*TAMAÑO DE LA PANTALLA CELULAR 411px db*/
+  .song-viewer-view {width: 410px;}
+}
 
 @media (min-width: 768px) {
 
