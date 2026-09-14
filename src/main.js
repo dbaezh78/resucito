@@ -680,26 +680,33 @@ async function sincronizarCantoDesdeFirebase(songId) {
     return;
   }
 
-  // 1. Cargar posiciones globales oficiales de acordes si existen en Firestore (solo si no existen en el archivo local)
+  // 1. Cargar posiciones globales oficiales de acordes desde Firestore (la nube)
   try {
-    const hasLocalPos = defaultChordPositions && defaultChordPositions[songId] && (
-      (Array.isArray(defaultChordPositions[songId].lizq) && defaultChordPositions[songId].lizq.length > 0) ||
-      (Array.isArray(defaultChordPositions[songId].lder) && defaultChordPositions[songId].lder.length > 0)
-    );
-
-    // Solo si el archivo local NO tiene posiciones para este canto, consultamos global_positions como respaldo
-    if (!hasLocalPos) {
-      const globalPos = await cargarPosicionesGlobales(songId);
-      if (globalPos && (globalPos.lizq.length > 0 || globalPos.lder.length > 0)) {
-        if (!defaultChordPositions) defaultChordPositions = {};
-        defaultChordPositions[songId] = globalPos;
-        console.log(`📥 [Firebase] Posiciones globales de respaldo aplicadas para el canto: ${songId}`);
-      }
+    const globalPos = await cargarPosicionesGlobales(songId);
+    if (globalPos && (globalPos.lizq.length > 0 || globalPos.lder.length > 0)) {
+      if (!defaultChordPositions) defaultChordPositions = {};
+      defaultChordPositions[songId] = globalPos;
+      console.log(`📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: ${songId}`);
     } else {
-      console.log(`📌 [Local] Predominan las posiciones de data/chord_positions.json para: ${songId}`);
+      // Si no encuentra acorde en la nube, cargar los acordes del canto
+      console.log(`🎵 [Canto] No se encontraron posiciones en la nube para "${songId}". Cargando acordes del canto.`);
+      if (!defaultChordPositions) defaultChordPositions = {};
+      if (currentCanto && currentCanto.id === songId) {
+        defaultChordPositions[songId] = {
+          lizq: extractCurrentSongChords(currentCanto.lizq, 'lizq'),
+          lder: extractCurrentSongChords(currentCanto.lder, 'lder')
+        };
+      }
     }
   } catch (e) {
     console.error("Error al sincronizar posiciones globales:", e);
+    if (currentCanto && currentCanto.id === songId && (!defaultChordPositions || !defaultChordPositions[songId])) {
+      if (!defaultChordPositions) defaultChordPositions = {};
+      defaultChordPositions[songId] = {
+        lizq: extractCurrentSongChords(currentCanto.lizq, 'lizq'),
+        lder: extractCurrentSongChords(currentCanto.lder, 'lder')
+      };
+    }
   }
 
   // 2. Si el usuario está autenticado, descargar sus datos personales
@@ -1015,6 +1022,20 @@ async function loadSongView(songId) {
     viewerAudioContainer.classList.remove('open');
     if (audioPlayBtn) audioPlayBtn.classList.remove('active');
     
+    // Si no existen posiciones en memoria o hay desajuste de líneas, cargar los acordes nativos del canto
+    if (!defaultChordPositions) defaultChordPositions = {};
+    const songPos = defaultChordPositions[songId];
+    const isMismatched = songPos && (
+      (currentCanto.lizq && songPos.lizq && currentCanto.lizq.length !== songPos.lizq.length) ||
+      (currentCanto.lder && songPos.lder && currentCanto.lder.length !== songPos.lder.length)
+    );
+    if (!songPos || isMismatched) {
+      defaultChordPositions[songId] = {
+        lizq: extractCurrentSongChords(currentCanto.lizq, 'lizq'),
+        lder: extractCurrentSongChords(currentCanto.lder, 'lder')
+      };
+    }
+
     // Renderizar letras y acordes locales primero para máxima velocidad
     renderSongContent();
     
@@ -1901,12 +1922,13 @@ function resolveChordPositions(side, lineIdx, subLineIdx, baseChords, cleanLetra
 
   return baseChords.map((chord, chordIdx) => {
     let pos = chord.originalPos;
-    const isScaledLine = !savedLineChords && baseChords.some(c => c.originalPos >= 30 || (cleanLetra.length > 0 && c.originalPos >= cleanLetra.length));
-    if (savedLineChords && savedLineChords[chordIdx] !== undefined) {
+    const hasValidSavedChord = savedLineChords && savedLineChords[chordIdx] !== undefined && savedLineChords[chordIdx].pos !== undefined;
+    if (hasValidSavedChord) {
       pos = savedLineChords[chordIdx].pos;
     } else {
+      const isScaledLine = baseChords.some(c => c.originalPos >= 30 || (cleanLetra.length > 0 && c.originalPos >= cleanLetra.length));
       if (cleanLetra.length > 0 && (pos >= cleanLetra.length || isScaledLine)) {
-        const scaled = Math.round(pos / 10);
+        const scaled = Math.round((chord.originalPos / 10) * 2) / 2;
         if (scaled < cleanLetra.length) {
           pos = scaled;
         } else {
@@ -2203,8 +2225,8 @@ function saveChordPosition(side, lineIdx, subLineIdx, chordIdx, newPos) {
     customPositions = JSON.parse(customPositions);
   } else {
     const baseDb = defaultChordPositions && defaultChordPositions[songId] ? defaultChordPositions[songId] : null;
-    const hasBaseLizq = baseDb && Array.isArray(baseDb.lizq) && baseDb.lizq.length > 0;
-    const hasBaseLder = baseDb && Array.isArray(baseDb.lder) && baseDb.lder.length > 0;
+    const hasBaseLizq = baseDb && Array.isArray(baseDb.lizq) && baseDb.lizq.length === (currentCanto.lizq ? currentCanto.lizq.length : 0);
+    const hasBaseLder = baseDb && Array.isArray(baseDb.lder) && baseDb.lder.length === (currentCanto.lder ? currentCanto.lder.length : 0);
     customPositions = {
       lizq: hasBaseLizq ? JSON.parse(JSON.stringify(baseDb.lizq)) : extractCurrentSongChords(currentCanto.lizq, 'lizq'),
       lder: hasBaseLder ? JSON.parse(JSON.stringify(baseDb.lder)) : extractCurrentSongChords(currentCanto.lder, 'lder')
@@ -2269,8 +2291,8 @@ function saveSingleChordEdit(chosenNote, chosenType) {
     customPositions = JSON.parse(customPositions);
   } else {
     const baseDb = defaultChordPositions && defaultChordPositions[songId] ? defaultChordPositions[songId] : null;
-    const hasBaseLizq = baseDb && Array.isArray(baseDb.lizq) && baseDb.lizq.length > 0;
-    const hasBaseLder = baseDb && Array.isArray(baseDb.lder) && baseDb.lder.length > 0;
+    const hasBaseLizq = baseDb && Array.isArray(baseDb.lizq) && baseDb.lizq.length === (currentCanto.lizq ? currentCanto.lizq.length : 0);
+    const hasBaseLder = baseDb && Array.isArray(baseDb.lder) && baseDb.lder.length === (currentCanto.lder ? currentCanto.lder.length : 0);
     customPositions = {
       lizq: hasBaseLizq ? JSON.parse(JSON.stringify(baseDb.lizq)) : extractCurrentSongChords(currentCanto.lizq, 'lizq'),
       lder: hasBaseLder ? JSON.parse(JSON.stringify(baseDb.lder)) : extractCurrentSongChords(currentCanto.lder, 'lder')
@@ -2392,7 +2414,7 @@ function extractChordsFromLineItem(lineItem, side, lineIdx, subLineIdx) {
       parsedChords.forEach(c => {
         let pos = Math.round(c.rawPosition);
         if (cleanLetra.length > 0 && (pos >= cleanLetra.length || isScaledLine)) {
-          const scaled = Math.round(pos / 10);
+          const scaled = Math.round((c.rawPosition / 10) * 2) / 2;
           if (scaled < cleanLetra.length) {
             pos = scaled;
           } else {

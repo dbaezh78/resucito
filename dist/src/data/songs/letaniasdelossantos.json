@@ -31,9 +31,13 @@
   "ant": "/src/index.html?canto=gloriaadiosenloaltodelcielo",
   "sig": "/src/index.html?canto=letaniaspenitencialesi",
   "lizq": [
+    
+        {"line": "","sC": "adb1"},
+        {"line": "","sC": "adb1"},
+
     {
-      "line": "Señor, ten piedad. (Mi,m,20)",
-      "sC": "tc height"
+      "line": "Señor, ten piedad. (Mi,m,0)",
+      "sC": "tc "
     },
     {
       "line": "SEÑOR TEN PIEDAD.",
@@ -65,7 +69,7 @@
     },
     {
       "line": "Madre de Dios., (Mi,m,90)",
-      "sC": ""
+      "sC": "smmd"
     },
     {
       "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
@@ -73,14 +77,14 @@
     },
     {
       "line": "San Miguel. ",
-      "sC": "height"
+      "sC": ""
     },
     {
       "line": "​      \"              \"              \" ",
       "sC": "stp"
     },
     {
-      "line": "Santos ángeles de Dios., (Sol,,0)(Mi,m,206)",
+      "line": "Santos ángeles de Dios., (Sol,,0)(Mi,m,180)",
       "sC": ""
     },
     {
@@ -88,7 +92,7 @@
       "sC": "as stp"
     },
     {
-      "line": "San Juan Bautista., (Sol,,0)(Mi,m,150)",
+      "line": "San Juan Bautista., (Sol,,0)(Mi,m,110)",
       "sC": ""
     },
     {
@@ -104,7 +108,7 @@
       "sC": "stp"
     },
     {
-      "line": "Santos Pedro y Pablo., (Sol,,0)(Mi,m,168)",
+      "line": "Santos Pedro y Pablo., (Sol,,0)(Mi,m,150)",
       "sC": ""
     },
     {
@@ -112,7 +116,7 @@
       "sC": "as stp"
     },
     {
-      "line": "San Andrés., (Sol,,0)(Mi,m,93)",
+      "line": "San Andrés., (Sol,,0)(Mi,m,60)",
       "sC": ""
     },
     {
@@ -160,19 +164,16 @@
       "sC": "stp"
     },
     {
-      "line": "Santas Perpetua y, (Sol,,0)",
+      "line": "Santas Perpetua y Felicidad, (Sol,,0)(Mi,m,230)",
       "sC": ""
     },
-        {
-      "line": "Felicidad., (Mi,m,90)",
-      "sC": "r15"
-    },
+
     {
       "line": "RUEGA POR NOSOTROS. (Do,,0)(Re,7,120)",
       "sC": "as stp"
     },
     {
-      "line": "Santa Inés. (Sol,,0)(Mi,m,83)",
+      "line": "Santa Inés. (Sol,,0)(Mi,m,60)",
       "sC": ""
     },
     {
@@ -228,18 +229,13 @@
       "sC": "stp"
     },
     {
-      "line": "Santos Francisco y, (Sol,,0)",
+      "line": "Santos Francisco y Domingo, (Sol,,0)(Mi,m,210)",
       "sC": ""
     },
 
-        {
-      "line": "Domingo., (Mi,m,15)",
-      "sC": "r15"
-    },
-
-
+      
     {
-      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,120)",
+      "line": "RUEGA POR NOSOTROS., (Do,,0)(Re,7,60)",
       "sC": "stp"
     },
     {
@@ -272,9 +268,15 @@
     },
     {
       "line": "​  En las letanías se pueden añadir algunos nombres de santos, \n especialmente el del titular de la iglesia y los de los patronos \n del lugar y de los que van a ser bautizados. ",
-      "sC": "redc",
+      "sC": "lineheight",
       "color": "var(--Rojo-Leccionario)"
     },
+
+        {
+      "line": "",
+      "sC": ""
+    },
+
     {
       "line": "Santos y santas de Dios, ",
       "sC": "height"
@@ -288,7 +290,7 @@
       "sC": ""
     },
     {
-      "line": "Muéstrate propicio., (Sol,,0)(Mi,m,149)",
+      "line": "Muéstrate propicio., (Sol,,0)(Mi,m,125)",
       "sC": ""
     },
     {
@@ -344,12 +346,12 @@
       "sC": "stp"
     },
     {
-      "line": "Nosotros que somos pecadores., (Sol,,0)(Mi,m,272)",
+      "line": "Nosotros que somos pecadores., (Sol,,0)(Mi,m,230)",
       "sC": "tc"
     },
     {
       "line": "TE ROGAMOS, ÓYENOS., (Do,,0)(Re,7,120)",
-      "sC": "as sub der"
+      "sC": "ta stp as"
     },
     {
       "line": "Si hay bautizados, ",
@@ -366,8 +368,8 @@
       "color": "var(--Rojo-Leccionario)"
     },
     {
-      "line": "con la gracia del Bautismo., (Mi,m,334)",
-      "sC": "height"
+      "line": "con la gracia del Bautismo., (Mi,m,0)",
+      "sC": ""
     },
     {
       "line": "​             \"              \" ",
@@ -378,8 +380,8 @@
       "sC": "tc"
     },
     {
-      "line": "​elegidos con la gracia del Bautismo., (Mi,m,335)",
-      "sC": "height"
+      "line": "​elegidos con la gracia del Bautismo., (Mi,m,300)",
+      "sC": ""
     },
     {
       "line": "​             \"              \" ",
@@ -395,19 +397,19 @@
       "sC": "tc"
     },
     {
-      "line": "​en la que renacerán tus nuevos hijos., (Mi,m,342)",
-      "sC": "height"
+      "line": "​en la que renacerán tus nuevos hijos., (Mi,m,320)",
+      "sC": ""
     },
     {
       "line": "​             \"              \" ",
       "sC": "stp"
     },
     {
-      "line": "Jesús hijo de Dios vivo., (Sol,,0)(Mi,m,117)",
+      "line": "Jesús hijo de Dios vivo., (Sol,,0)(Mi,m,185)",
       "sC": "tc"
     },
     {
-      "line": "TE ROGAMOS, ÓYENOS., (Do,,0)(Re,7,120)",
+      "line": "TE ROGAMOS, ÓYENOS., (Do,,0)(Re,7,140)",
       "sC": "ta as stp"
     },
     {
@@ -415,19 +417,19 @@
       "sC": "adb1"
     },
     {
-      "line": "Cristo, óyenos., (Sol,,0)(Mi,m,127)",
+      "line": "Cristo, óyenos., (Sol,,0)(Mi,m,105)",
       "sC": "tc"
     },
     {
-      "line": "CRISTO, ÓYENOS., (Do,,0)(Re,7,120)",
+      "line": "CRISTO, ÓYENOS., (Do,,0)(Re,7,110)",
       "sC": "ta as stp"
     },
     {
-      "line": "Cristo, escúchanos., (Sol,,0)(Mi,m,127)",
+      "line": "Cristo, escúchanos., (Sol,,0)(Mi,m,105)",
       "sC": "tc"
     },
     {
-      "line": "CRISTO, ESCÚCHANOS., (Do,,0)(Re,7,120)",
+      "line": "CRISTO, ESCÚCHANOS., (Do,,0)(Re,7,110)",
       "sC": "ta as stp"
     }
   ],
