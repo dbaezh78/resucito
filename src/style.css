@@ -3942,8 +3942,12 @@ footer {
     margin-left: 160px;
 }
 
-.top1{
-  top: 34px;
+.top1{top: 34px;}
+
+/*top de Letanias II - top1-lii*/
+.top1-lii {
+  top: 0px;
+  z-index: 1;
 }
 
 }
@@ -4167,6 +4171,10 @@ footer {
       background: white;
 }
 
+.top1-lii {
+  top: 0px;
+  z-index: 1;
+}
     
 } /* Fin de 992ppx*/
 
@@ -4432,4 +4440,8 @@ footer {
   line-height: 1.2;
   text-align: justify;
   padding: 17px;
+}
+
+.spa10 {
+  line-height: 1.2;
 }
