@@ -45592,55 +45592,69 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 20
         }
       ],
       [
         {
           "name": "La",
           "type": "m",
-          "pos": 24.5
+          "pos": 27
         }
       ],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_0",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 14
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 14
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [],
       [
         {
-          "name": "Si",
-          "type": "7",
-          "pos": 14
-        },
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 22
+          "name": "Do",
+          "type": "",
+          "pos": 1
         },
         {
           "name": "Si",
           "type": "7",
-          "pos": 33
+          "pos": 16
         }
       ],
       [
         {
           "name": "Do",
           "type": "",
-          "pos": 2.5
+          "pos": 5
         },
         {
           "name": "Si",
           "type": "7",
-          "pos": 14.5
-        }
-      ],
-      [
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 3
-        },
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 14.5
+          "pos": 17.5
         }
       ],
       [],
@@ -45648,14 +45662,14 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 20
         }
       ],
       [
         {
           "name": "La",
           "type": "m",
-          "pos": 10.5
+          "pos": 11.5
         }
       ],
       [],
@@ -45679,12 +45693,12 @@
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -45693,12 +45707,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 26
+          "pos": 20.5
         }
       ],
       [],
@@ -45709,7 +45723,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -45717,17 +45731,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -45736,12 +45750,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 35
+          "pos": 30
         }
       ],
       [],
@@ -45752,7 +45766,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -45760,17 +45774,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -45779,12 +45793,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 32
+          "pos": 30
         }
       ],
       [],
@@ -45795,7 +45809,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -45803,17 +45817,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -45822,12 +45836,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 27.5
+          "pos": 23
         }
       ],
       [],
@@ -45838,7 +45852,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -45846,17 +45860,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -45865,12 +45879,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 34.5
+          "pos": 31.5
         }
       ],
       [],
@@ -45881,7 +45895,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -45889,17 +45903,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -45908,12 +45922,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 42
+          "pos": 41
         }
       ],
       [],
@@ -45924,7 +45938,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 13.5
+            "pos": 15
           }
         ],
         "lines": [
@@ -45932,17 +45946,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 17.5
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -45951,12 +45965,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 49
+          "pos": 46
         }
       ],
       [],
@@ -45967,7 +45981,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -45975,17 +45989,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -45995,36 +46009,36 @@
         {
           "name": "Do",
           "type": "",
-          "pos": 2
+          "pos": 1
         },
         {
           "name": "Si",
           "type": "7",
-          "pos": 14.5
+          "pos": 5.5
         }
       ],
       [
         {
           "name": "Do",
           "type": "",
-          "pos": 3
+          "pos": 5
         },
         {
           "name": "Si",
           "type": "7",
-          "pos": 14.5
+          "pos": 15.5
         }
       ],
       [
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 23.5
+          "pos": 21
         }
       ],
       [],
@@ -46035,7 +46049,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -46043,17 +46057,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -46062,379 +46076,7 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
-        },
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 27
-        }
-      ],
-      [],
-      {
-        "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_10",
-        "triggerLine": [
-          {
-            "name": "Si",
-            "type": "7",
-            "pos": 14
-          }
-        ],
-        "lines": [
-          [
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 14
-            },
-            {
-              "name": "La",
-              "type": "m",
-              "pos": 22
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 33
-            }
-          ]
-        ]
-      },
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        },
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 33.5
-        }
-      ],
-      [],
-      {
-        "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_11",
-        "triggerLine": [
-          {
-            "name": "Si",
-            "type": "7",
-            "pos": 14
-          }
-        ],
-        "lines": [
-          [
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 14
-            },
-            {
-              "name": "La",
-              "type": "m",
-              "pos": 22
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 33
-            }
-          ]
-        ]
-      },
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        },
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 36
-        }
-      ],
-      [],
-      {
-        "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_12",
-        "triggerLine": [
-          {
-            "name": "Si",
-            "type": "7",
-            "pos": 14
-          }
-        ],
-        "lines": [
-          [
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 14
-            },
-            {
-              "name": "La",
-              "type": "m",
-              "pos": 22
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 33
-            }
-          ]
-        ]
-      },
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        },
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 22
-        }
-      ],
-      [],
-      {
-        "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_13",
-        "triggerLine": [
-          {
-            "name": "Si",
-            "type": "7",
-            "pos": 14
-          }
-        ],
-        "lines": [
-          [
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 14
-            },
-            {
-              "name": "La",
-              "type": "m",
-              "pos": 22
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 33
-            }
-          ]
-        ]
-      },
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        },
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 26.5
-        }
-      ],
-      [],
-      {
-        "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_14",
-        "triggerLine": [
-          {
-            "name": "Si",
-            "type": "7",
-            "pos": 14
-          }
-        ],
-        "lines": [
-          [
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 14
-            },
-            {
-              "name": "La",
-              "type": "m",
-              "pos": 22
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 33
-            }
-          ]
-        ]
-      },
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        },
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 33.5
-        }
-      ],
-      [],
-      {
-        "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_15",
-        "triggerLine": [
-          {
-            "name": "Si",
-            "type": "7",
-            "pos": 14
-          }
-        ],
-        "lines": [
-          [
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 14
-            },
-            {
-              "name": "La",
-              "type": "m",
-              "pos": 22
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 33
-            }
-          ]
-        ]
-      },
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        },
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 33.5
-        }
-      ],
-      [],
-      {
-        "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_16",
-        "triggerLine": [
-          {
-            "name": "Si",
-            "type": "7",
-            "pos": 14
-          }
-        ],
-        "lines": [
-          [
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 14
-            },
-            {
-              "name": "La",
-              "type": "m",
-              "pos": 22
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 33
-            }
-          ]
-        ]
-      },
-      [],
-      [
-        {
-          "name": "Do",
-          "type": "",
           "pos": 2
-        },
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 14.5
-        }
-      ],
-      [
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 3
-        },
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 14.5
-        }
-      ],
-      [],
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
-        }
-      ],
-      [
-        {
-          "name": "La",
-          "type": "m",
-          "pos": 28
-        }
-      ],
-      [],
-      {
-        "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_17",
-        "triggerLine": [
-          {
-            "name": "Si",
-            "type": "7",
-            "pos": 14
-          }
-        ],
-        "lines": [
-          [
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 14
-            },
-            {
-              "name": "La",
-              "type": "m",
-              "pos": 22
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 33
-            }
-          ]
-        ]
-      },
-      [
-        {
-          "name": "Mi",
-          "type": "m",
-          "pos": 0
         },
         {
           "name": "La",
@@ -46445,12 +46087,12 @@
       [],
       {
         "type": "collapsible-block",
-        "id": "asamblea_lpenitencial_18",
+        "id": "asamblea_lpenitencial_10",
         "triggerLine": [
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -46458,17 +46100,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -46477,12 +46119,384 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 23.5
+          "pos": 32
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_11",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 15
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 2
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 34
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_12",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 15
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 2
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 19
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_13",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 15
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 2
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 25
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_14",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 15
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 2
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 32
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_15",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 15
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 2
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 31.5
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_16",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 15
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 1
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 5.5
+        }
+      ],
+      [
+        {
+          "name": "Do",
+          "type": "",
+          "pos": 5
+        },
+        {
+          "name": "Si",
+          "type": "7",
+          "pos": 15.5
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 20
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 27
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_17",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 15
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 2
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 21
+        }
+      ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_lpenitencial_18",
+        "triggerLine": [
+          {
+            "name": "Si",
+            "type": "7",
+            "pos": 15
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 15
+            },
+            {
+              "name": "La",
+              "type": "m",
+              "pos": 25.5
+            },
+            {
+              "name": "Si",
+              "type": "7",
+              "pos": 36
+            }
+          ]
+        ]
+      },
+      [
+        {
+          "name": "Mi",
+          "type": "m",
+          "pos": 2
+        },
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 21
         }
       ],
       [],
@@ -46493,7 +46507,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -46501,17 +46515,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -46520,12 +46534,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 20
+          "pos": 16.5
         }
       ],
       [],
@@ -46536,7 +46550,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -46544,17 +46558,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 13.5
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -46563,12 +46577,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 34.5
+          "pos": 31.5
         }
       ],
       [],
@@ -46579,7 +46593,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -46587,17 +46601,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -46606,12 +46620,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 23.5
+          "pos": 23
         }
       ],
       [],
@@ -46622,7 +46636,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -46630,17 +46644,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -46649,12 +46663,12 @@
         {
           "name": "Mi",
           "type": "m",
-          "pos": 0
+          "pos": 2
         },
         {
           "name": "La",
           "type": "m",
-          "pos": 39
+          "pos": 34.5
         }
       ],
       [],
@@ -46665,7 +46679,7 @@
           {
             "name": "Si",
             "type": "7",
-            "pos": 14
+            "pos": 15
           }
         ],
         "lines": [
@@ -46673,17 +46687,17 @@
             {
               "name": "Si",
               "type": "7",
-              "pos": 14
+              "pos": 15
             },
             {
               "name": "La",
               "type": "m",
-              "pos": 22
+              "pos": 25.5
             },
             {
               "name": "Si",
               "type": "7",
-              "pos": 33
+              "pos": 36
             }
           ]
         ]
@@ -46693,24 +46707,24 @@
         {
           "name": "Do",
           "type": "",
-          "pos": 2
+          "pos": 1
         },
         {
           "name": "Si",
           "type": "7",
-          "pos": 14
+          "pos": 5.5
         }
       ],
       [
         {
           "name": "Do",
           "type": "",
-          "pos": 3
+          "pos": 5
         },
         {
           "name": "Si",
           "type": "7",
-          "pos": 13
+          "pos": 15.5
         }
       ]
     ],
