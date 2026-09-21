@@ -130,6 +130,7 @@
     }
 
     .sub{margin-top: -42px;}
+    .ssem{left:195px;margin-top: -41px;}
     .sangre{left: 93px;}
 }
 
@@ -153,6 +154,9 @@
 
     .sangre{left: 184px;}
 
+    .ssem{left:350px;margin-top: -78px;}
+
+
 }
 
 @media (min-width: 992px){
@@ -172,6 +176,10 @@
 
     /*plegariaeucaristicaiimodeloii*/
     .sangre{left: 117px;}
+
+    .ssem{left:230px;margin-top: -52px;}
+
+
 }
 
 
