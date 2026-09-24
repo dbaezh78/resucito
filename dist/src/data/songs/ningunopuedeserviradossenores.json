@@ -171,7 +171,7 @@
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
       "triggerLine": "Ninguno puede servir a dos señores, (Mi,m,20)(Re,,99)(Do,,245)",
-      "sC": "tc",
+      "sC": "tc normal",
       "lines": [
         {
           "line": "porque amando a uno desprecia al otro., (Re,,22)(Do,,188)(Mi,m,276)",

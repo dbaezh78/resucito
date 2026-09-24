@@ -5823,388 +5823,359 @@
       [],
       [
         {
-          "name": "Re",
+          "name": "Sol",
           "type": "",
           "pos": 0
         },
         {
-          "name": "Do",
-          "type": "7",
-          "pos": 7
-        },
-        {
           "name": "Re",
+          "type": "",
+          "pos": 6.5
+        }
+      ],
+      [
+        {
+          "name": "Mi",
           "type": "m",
-          "pos": 20.5
+          "pos": 0
         }
       ],
       [
         {
           "name": "Si",
-          "type": "7",
+          "type": "m",
           "pos": 0
-        },
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 16
-        }
-      ],
-      [
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 17
         }
       ],
       [],
       [
         {
-          "name": "Fa",
+          "name": "Do",
           "type": "",
           "pos": 0
         },
         {
-          "name": "Do",
+          "name": "Sol",
           "type": "",
           "pos": 7
-        },
+        }
+      ],
+      [
         {
-          "name": "Re",
+          "name": "La",
           "type": "m",
-          "pos": 26
-        }
-      ],
-      [
-        {
-          "name": "Si",
-          "type": "7",
           "pos": 0
-        },
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 18.5
-        }
-      ],
-      [
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 0
-        },
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 13
-        }
-      ],
-      [],
-      [
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 0
-        },
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 18
         }
       ],
       [
         {
           "name": "Re",
-          "type": "m",
-          "pos": 4
-        },
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 14.5
+          "type": "",
+          "pos": 0
         }
       ],
       [],
       [
         {
-          "name": "Fa",
+          "name": "Sol",
           "type": "",
-          "pos": 5.5
-        },
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [],
+      [
         {
           "name": "Do",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Sol",
           "type": "",
           "pos": 23
         }
       ],
+      [],
+      [],
       [
         {
-          "name": "Fa",
-          "type": "",
-          "pos": 6
+          "name": "Si",
+          "type": "m",
+          "pos": 0
         },
         {
           "name": "Do",
           "type": "",
-          "pos": 15
+          "pos": 24
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 0
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 16
         }
       ],
       [],
       [
         {
-          "name": "Re",
-          "type": "m",
+          "name": "Sol",
+          "type": "",
           "pos": 0
         },
         {
-          "name": "Si",
-          "type": "7",
-          "pos": 15
-        },
-        {
-          "name": "Fa",
+          "name": "Re",
           "type": "",
-          "pos": 24
-        },
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 35
+          "pos": 7
         }
       ],
       [
         {
-          "name": "Fa",
+          "name": "Mi",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Si",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [],
+      [
+        {
+          "name": "Do",
           "type": "",
-          "pos": 16
+          "pos": 0
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 6
+        }
+      ],
+      [
+        {
+          "name": "La",
+          "type": "m",
+          "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 0
         }
       ]
     ],
     "lder": [
-      [
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 1
-        },
-        {
-          "name": "Do",
-          "type": "7",
-          "pos": 12.5
-        },
-        {
-          "name": "Re",
-          "type": "m",
-          "pos": 18
-        }
-      ],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 13.5
-        },
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 20
-        }
-      ],
-      [
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 17
-        }
-      ],
-      [
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 1
-        },
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 8.5
-        },
-        {
-          "name": "Re",
-          "type": "m",
-          "pos": 18
-        }
-      ],
       [],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 1
-        },
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 15
-        }
-      ],
-      [
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 0
-        },
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 15
-        }
-      ],
       {
         "type": "collapsible-block",
         "id": "asamblea_anadie_1",
         "triggerLine": [
           {
-            "name": "Fa",
+            "name": "Sol",
             "type": "",
             "pos": 0
-          },
-          {
-            "name": "Do",
-            "type": "",
-            "pos": 18
           }
         ],
         "lines": [
           [
             {
-              "name": "Fa",
-              "type": "",
-              "pos": 4
-            },
-            {
-              "name": "Do",
-              "type": "",
-              "pos": 14.5
+              "name": "Si",
+              "type": "m",
+              "pos": 0
             }
           ],
+          [],
           [
             {
-              "name": "Fa",
+              "name": "Do",
               "type": "",
-              "pos": 6
+              "pos": 0
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 23
+            }
+          ],
+          [],
+          [],
+          [
+            {
+              "name": "Si",
+              "type": "m",
+              "pos": 0
             },
             {
               "name": "Do",
               "type": "",
-              "pos": 23
+              "pos": 24
             }
           ],
           [
             {
               "name": "Re",
-              "type": "m",
-              "pos": 6
-            },
-            {
-              "name": "Si",
-              "type": "7",
-              "pos": 15
-            },
-            {
-              "name": "Fa",
-              "type": "",
-              "pos": 24
-            },
-            {
-              "name": "Do",
-              "type": "",
-              "pos": 35
-            }
-          ],
-          [
-            {
-              "name": "Fa",
               "type": "",
               "pos": 0
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 16
             }
           ]
         ]
       },
+      [],
       [
         {
-          "name": "Fa",
+          "name": "Sol",
           "type": "",
           "pos": 0
         },
         {
-          "name": "Do",
-          "type": "7",
-          "pos": 7
-        },
-        {
           "name": "Re",
+          "type": "",
+          "pos": 6
+        }
+      ],
+      [
+        {
+          "name": "Mi",
           "type": "m",
-          "pos": 21
+          "pos": 0
         }
       ],
       [
         {
           "name": "Si",
-          "type": "7",
+          "type": "m",
           "pos": 0
-        },
-        {
-          "name": "Fa",
-          "type": "",
-          "pos": 16.5
         }
       ],
+      [],
       [
         {
           "name": "Do",
           "type": "",
-          "pos": 19
+          "pos": 0
+        },
+        {
+          "name": "Sol",
+          "type": "",
+          "pos": 6.5
         }
       ],
       [
         {
-          "name": "Fa",
-          "type": "",
+          "name": "La",
+          "type": "m",
           "pos": 0
-        },
-        {
-          "name": "Do",
-          "type": "",
-          "pos": 7
-        },
+        }
+      ],
+      [
         {
           "name": "Re",
-          "type": "m",
-          "pos": 22
-        }
-      ],
-      [
-        {
-          "name": "Si",
-          "type": "7",
-          "pos": 0
-        },
-        {
-          "name": "Fa",
           "type": "",
-          "pos": 15
+          "pos": 0
         }
       ],
+      [],
+      {
+        "type": "collapsible-block",
+        "id": "asamblea_anadie_1",
+        "triggerLine": [
+          {
+            "name": "Sol",
+            "type": "",
+            "pos": 0
+          }
+        ],
+        "lines": [
+          [
+            {
+              "name": "Si",
+              "type": "m",
+              "pos": 0
+            }
+          ],
+          [],
+          [
+            {
+              "name": "Do",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 23
+            }
+          ],
+          [],
+          [],
+          [
+            {
+              "name": "Si",
+              "type": "m",
+              "pos": 0
+            },
+            {
+              "name": "Do",
+              "type": "",
+              "pos": 24
+            }
+          ],
+          [
+            {
+              "name": "Re",
+              "type": "",
+              "pos": 0
+            },
+            {
+              "name": "Sol",
+              "type": "",
+              "pos": 16
+            }
+          ]
+        ]
+      },
+      [],
       [
         {
           "name": "Do",
           "type": "",
           "pos": 0
+        }
+      ],
+      [
+        {
+          "name": "Re",
+          "type": "",
+          "pos": 0
         },
         {
-          "name": "Fa",
+          "name": "Sol",
           "type": "",
-          "pos": 17
+          "pos": 16
         }
       ]
     ]

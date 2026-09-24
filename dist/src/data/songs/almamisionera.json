@@ -8,6 +8,7 @@
   ],
   "catCanto": "Católicos",
   "cejilla": "1",
+  "acorde": "Sol",
   "nCan": "",
   "nCanURL": "",
   "dbno": "102",
@@ -52,7 +53,7 @@
 
     {"line": "","sC": "adb1"},
 
-    {"line": "NECESITEN MIS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
+    {"line": "NECESITEN TUS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
     {"line": "DONDE FALTE LA ESPERANZA, ","sC": "as"},
 
     {"line": "","sC": "adb1"},
@@ -89,7 +90,7 @@
 
         {"line": "","sC": "adb1"},
 
-        {"line": "NECESITEN MIS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
+        {"line": "NECESITEN TUS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
         {"line": "DONDE FALTE LA ESPERANZA, ","sC": "as"},
 
         {"line": "","sC": "adb1"},
@@ -125,7 +126,7 @@
 
         {"line": "","sC": "adb1"},
 
-        {"line": "NECESITEN MIS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
+        {"line": "NECESITEN TUS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
         {"line": "DONDE FALTE LA ESPERANZA, ","sC": "as"},
 
         {"line": "","sC": "adb1"},
