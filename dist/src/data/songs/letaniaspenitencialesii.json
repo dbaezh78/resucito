@@ -46,7 +46,7 @@
       "id": "asamblea_lpenitencial_0",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,177)",
-      "sC": "ta as top1",
+      "sC": "ta as top1-lii",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,177)(La,m,257)(Si,7,387)",
@@ -54,6 +54,9 @@
         }
       ]
     },
+
+        {"line": "","sC": "spa10"},
+
     {
       "line": "Señor, ten piedad., (Do,,10)(Si,7,158)",
       "sC": "tc"
@@ -64,7 +67,7 @@
     },
     {
       "line": "",
-      "sC": "adb1"
+      "sC": "spa10"
     },
     {
       "line": "Por los pecados que hemos cometido ..., (Mi,m,20)",
@@ -83,7 +86,7 @@
       "id": "asamblea_lpenitencial_1",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1",
+      "sC": "ta as top1-lii",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -104,7 +107,7 @@
       "id": "asamblea_lpenitencial_2",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -125,7 +128,7 @@
       "id": "asamblea_lpenitencial_3",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -146,7 +149,7 @@
       "id": "asamblea_lpenitencial_4",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -167,7 +170,7 @@
       "id": "asamblea_lpenitencial_5",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -188,7 +191,7 @@
       "id": "asamblea_lpenitencial_6",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -209,7 +212,7 @@
       "id": "asamblea_lpenitencial_7",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -230,7 +233,7 @@
       "id": "asamblea_lpenitencial_8",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -263,7 +266,7 @@
       "id": "asamblea_lpenitencial_9",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -284,7 +287,7 @@
       "id": "asamblea_lpenitencial_10",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -305,7 +308,7 @@
       "id": "asamblea_lpenitencial_11",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -326,7 +329,7 @@
       "id": "asamblea_lpenitencial_12",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -347,7 +350,7 @@
       "id": "asamblea_lpenitencial_13",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -368,7 +371,7 @@
       "id": "asamblea_lpenitencial_14",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -389,7 +392,7 @@
       "id": "asamblea_lpenitencial_15",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -410,7 +413,7 @@
       "id": "asamblea_lpenitencial_16",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -451,7 +454,7 @@
       "id": "asamblea_lpenitencial_17",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -472,7 +475,7 @@
       "id": "asamblea_lpenitencial_18",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -493,7 +496,7 @@
       "id": "asamblea_lpenitencial_19",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -514,7 +517,7 @@
       "id": "asamblea_lpenitencial_20",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -535,7 +538,7 @@
       "id": "asamblea_lpenitencial_21",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -556,7 +559,7 @@
       "id": "asamblea_lpenitencial_22",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",
@@ -577,7 +580,7 @@
       "id": "asamblea_lpenitencial_23",
       "initialState": "collapsed",
       "triggerLine": "TEN PIEDAD DE MÍ (Si,7,173)",
-      "sC": "ta as top1 sub",
+      "sC": "ta as top1-lii sub",
       "lines": [
         {
           "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,173)(La,m,257)(Si,7,389)",

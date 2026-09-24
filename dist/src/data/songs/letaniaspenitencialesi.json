@@ -2,7 +2,7 @@
   "id": "letaniaspenitencialesi",
   "tt": "Letanías Penitenciales I",
   "title": "Letanías Penitenciales I",
-  "subtitle": "Letanía para la Celebración Penitencial – modelo abreviado",
+  "top1-liititle": "Letanía para la Celebración Penitencial – modelo abreviado",
   "category": [
     "Liturgia",
     "Penitencial"
@@ -41,12 +41,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_0",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -74,12 +74,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_1",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -99,12 +99,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_2",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -124,12 +124,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_3",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,257)(Si,7,389)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,257)(Si,7,389)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -149,12 +149,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_4",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -174,12 +174,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_5",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -211,12 +211,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_6",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -236,12 +236,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_7",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -261,12 +261,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_8",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -286,12 +286,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_9",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },
@@ -311,12 +311,12 @@
       "type": "collapsible-block",
       "id": "asamblea_anadie_10",
       "initialState": "collapsed",
-      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,135)",
-      "sC": "ta as top1",
+      "triggerLine": "TEN PIEDAD DE MÍ (Si,7,140)",
+      "sC": "ta as top1-lii",
       "lines": [
         {
-          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,135)(La,m,220)(Si,7,330)",
-          "sC": "as sub"
+          "line": "TEN PIEDAD DE MÍ, QUE SOY UN PECADOR., (Si,7,140)(La,m,220)(Si,7,330)",
+          "sC": "as top1-lii"
         }
       ]
     },

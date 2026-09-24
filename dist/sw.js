@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v335'; // v2.1.07 soporte pantalla 411px
+const CACHE_NAME = 'resucito-cache-v336'; // v2.1.08 cantos catolicos fondo blanco e imagen cristo 1
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -13,6 +13,8 @@ const STATIC_ASSETS = [
   'privacidad.html',
   'chat.html',
   'firebase.html',
+  'img/christ.png',
+  'img/Cristo_1.png',
   'src/css/chat.css',
   'src/js/chat.js',
   'src/lib/jszip.min.js',

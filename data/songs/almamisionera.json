@@ -1,0 +1,148 @@
+{
+  "id": "almamisionera",
+  "tt": "Alma Misionera",
+  "title": "Alma Misionera",
+  "subtitle": "Canticos Catolicos",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "1",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "102",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/almamisionera.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=somosunpuebloquecamina",
+  "sig": "/src/index.html?canto=somosunpuebloquecamina",
+  "lizq": [
+
+            {"line": "","sC": "adb1"},
+
+
+    {"line": "Señor, toma mi vida nueva, (Sol,,0)(Re,,70)","sC": "tc"},
+    {"line": "antes de que la espera (Mi,m,0)","sC": ""},
+    {"line": "desgaste años en mí. (Si,m,0)","sC": ""},
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "Estoy, dispuesto a lo que quieras, (Do,,0)(Sol,,70)","sC": ""},
+    {"line": "no importa lo que sea, (La,m,0)","sC": ""},
+    {"line": "Tú llámame a servir. (Re,,0)","sC": ""},
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "LLÉVAME DONDE LOS HOMBRES, (Sol,,0)","sC": "ta as"},
+    {"line": "NECESITEN TUS PALABRAS, (Si,m,0)","sC": "as"},
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "NECESITEN MIS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
+    {"line": "DONDE FALTE LA ESPERANZA, ","sC": "as"},
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "DONDE FALTE LA ALEGRÍA, SIMPLEMENTE,, (Si,m,0)(Do,,240)","sC": "as"},
+    {"line": "POR NO SABER DE TI. (Re,,0)(Sol,,160)","sC": "as"},
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "Te doy Mi corazón sincero, (Sol,,0)(Re,,70)","sC": "tc"},
+    {"line": "Para gritar sin miedo, (Mi,m,0)","sC": ""},
+    {"line": "Lo hermoso que es Tu amor. (Si,m,0)","sC": ""},
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "Señor Tengo alma misionera, (Do,,0)(Sol,,60)","sC": ""},
+    {"line": "Condúceme a la tierra, (La,m,0)","sC": ""},
+    {"line": "Que tenga sed de Dios. (Re,,0)","sC": ""}
+
+  ],
+  "lder": [
+
+        {"line": "","sC": "adb1"},
+
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LLÉVAME DONDE LOS HOMBRES,(Sol,,0)",
+      "sC": "as ta",
+      "lines": [
+
+        {"line": "NECESITEN TUS PALABRAS, (Si,m,0)","sC": "as"},
+
+        {"line": "","sC": "adb1"},
+
+        {"line": "NECESITEN MIS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
+        {"line": "DONDE FALTE LA ESPERANZA, ","sC": "as"},
+
+        {"line": "","sC": "adb1"},
+
+        {"line": "DONDE FALTE LA ALEGRÍA, SIMPLEMENTE,, (Si,m,0)(Do,,240)","sC": "as"},
+        {"line": "POR NO SABER DE TI. (Re,,0)(Sol,,160)","sC": "as"}
+      ]
+    },
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "Y así en marcha iré cantando, (Sol,,0)(Re,,60)","sC": "tc"},
+    {"line": "Por pueblos predicando, (Mi,m,0)","sC": ""},
+    {"line": "Tu grandeza, Señor. (Si,m,0)","sC": ""},
+
+    {"line": "","sC": "adb1"},
+
+    {"line": "Tendré mis brazos sin cansancio, (Do,,0)(Sol,,65)","sC": ""},
+    {"line": "Tu historia entre mis labios, (La,m,0)","sC": ""},
+    {"line": "Y fuerza en la oración. (Re,,0)","sC": ""},
+
+    {"line": "","sC": "adb1"},
+
+{
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LLÉVAME DONDE LOS HOMBRES,(Sol,,0)",
+      "sC": "as ta",
+      "lines": [
+
+        {"line": "NECESITEN TUS PALABRAS, (Si,m,0)","sC": "as"},
+
+        {"line": "","sC": "adb1"},
+
+        {"line": "NECESITEN MIS GANAS DE VIVIR. (Do,,0)(Sol,,230)","sC": "as"},
+        {"line": "DONDE FALTE LA ESPERANZA, ","sC": "as"},
+
+        {"line": "","sC": "adb1"},
+
+        {"line": "DONDE FALTE LA ALEGRÍA, SIMPLEMENTE,, (Si,m,0)(Do,,240)","sC": "as"},
+        {"line": "POR NO SABER DE TI. (Re,,0)(Sol,,160)","sC": "as"}
+
+
+      ]
+    },
+
+        {"line": "","sC": "adb1"},
+
+
+        {"line": "SIMPLEMENTE,, (Do,,0)","sC": "as"},
+        {"line": "POR NO SABER DE TI. (Re,,0)(Sol,,160)","sC": "as"}
+
+  ],
+  "sourceBook": "joven"
+}

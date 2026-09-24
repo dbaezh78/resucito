@@ -61,7 +61,7 @@
   --stage-bg-cate: #bde9ff;
   --stage-bg-ele: #ceffcf;
   --stage-bg-lit: #fffde7;
-  --stage-bg-cat: #f3e5f5;
+  --stage-bg-cat: #ffffff;
 
   /*db*/
   --btn-db-unir: #4166d0;
@@ -150,7 +150,7 @@
   --stage-bg-cate: #c5e3f5;
   --stage-bg-ele: #cae6cb;
   --stage-bg-lit: #eae1c3;
-  --stage-bg-cat: #ded0de;
+  --stage-bg-cat: #faf4e8;
 }
 
 .material-symbols-outlined {

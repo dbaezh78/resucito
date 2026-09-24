@@ -236,7 +236,8 @@ export async function cargarPosicionesGlobales(cantoId) {
       window.globalPositionsCache[cantoId] = data;
       return {
         lizq: deserializarLineas(data.lizq),
-        lder: deserializarLineas(data.lder)
+        lder: deserializarLineas(data.lder),
+        jsonChords: data.jsonChords === true
       };
     }
   } catch (e) {
@@ -801,9 +802,31 @@ export async function guardarExpansionCantoEnNube(songId, enabled) {
   }
 }
 
+// --- Control Universal de "Acordes en JSON" en Firebase ---
+export async function guardarJsonChordsCantoEnNube(songId, enabled) {
+  if (!songId) return;
+  try {
+    // 1. Guardar en memoria de globalPositionsCache y localStorage
+    if (!window.globalPositionsCache) window.globalPositionsCache = {};
+    if (!window.globalPositionsCache[songId]) window.globalPositionsCache[songId] = {};
+    window.globalPositionsCache[songId].jsonChords = enabled;
+    try {
+      localStorage.setItem('resucito_global_positions_cache', JSON.stringify(window.globalPositionsCache));
+    } catch (e) {}
+
+    // 2. Persistir en Firestore en global_positions/{songId} para disponibilidad universal
+    const docRef = doc(db, "global_positions", songId);
+    await setDoc(docRef, { jsonChords: enabled }, { merge: true });
+    console.log(`☁️ [Firebase] Acordes en JSON para '${songId}' guardado en la nube: ${enabled ? 'Activado' : 'Desactivado'}`);
+  } catch (err) {
+    console.warn("⚠️ [Firebase] No se pudo guardar Acordes en JSON del canto en la nube:", err);
+  }
+}
+
 window.guardarExpansionCantoEnNube = guardarExpansionCantoEnNube;
 window.isSongExpansionEnabled = isSongExpansionEnabled;
 window.listenToExpansionSongs = listenToExpansionSongs;
+window.guardarJsonChordsCantoEnNube = guardarJsonChordsCantoEnNube;
 
 // Iniciar escuchas inmediatamente
 listenToGlobalPositions();

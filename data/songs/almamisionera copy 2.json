@@ -1,0 +1,221 @@
+{
+  "id": "almamisionera",
+  "tt": "Alma Misionera",
+  "title": "Alma Misionera",
+  "subtitle": "Canticos Catolicos",
+  "category": [
+    "Católicos"
+  ],
+  "catCanto": "Católicos",
+  "cejilla": "1",
+  "nCan": "",
+  "nCanURL": "",
+  "dbno": "102",
+  "notes": "",
+  "mant": "Si",
+  "audioSrc": "https://audio.resucito.do/catolico/almamisionera.mp3",
+  "scrollConfig": {
+    "mobile": {
+      "velocidad": 6,
+      "incremento": 3
+    },
+    "tablet": {
+      "velocidad": 7,
+      "incremento": 1
+    },
+    "desktopsmall": {
+      "velocidad": 7,
+      "incremento": 1
+    }
+  },
+  "ant": "/src/index.html?canto=somosunpuebloquecamina",
+  "sig": "/src/index.html?canto=somosunpuebloquecamina",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, toma mi vida nueva, (Fa,,0)(Do,7,60)(Re,m,200)",
+      "sC": "tc"
+    },
+    {
+      "line": "antes de que la espera (Si,7,15)(Fa,,161)",
+      "sC": ""
+    },
+    {
+      "line": "desgaste años en mí. (Do,,157)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Estoy, dispuesto a lo que quieras, (Fa,,12)(Do,,84)(Re,m,125)",
+      "sC": ""
+    },
+    {
+      "line": "no importa lo que sea, (Si,7,11)(Fa,,211)",
+      "sC": ""
+    },
+    {
+      "line": "Tú llámame a servir. (Do,,12)(Fa,,264)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "LLÉVAME DONDE LOS HOMBRES, (Fa,,12)(Do,,229)",
+      "sC": "ta as"
+    },
+    {
+      "line": "NECESITEN TUS PALABRAS, (Re,m,40)(Si,7,180)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "NECESITEN MIS GANAS DE VIVIR. (Fa,,12)(Do,,137)",
+      "sC": "as"
+    },
+    {
+      "line": "DONDE FALTE LA ESPERANZA, (Fa,,12)(Do,,147)",
+      "sC": "as"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "DONDE FALTE LA ALEGRÍA, SIMPLEMENTE,, (Re,m,12)(Si,7,219)(Fa,,183)(Do,,200)",
+      "sC": "as"
+    },
+    {
+      "line": "POR NO SABER DE TI. (Fa,,15)",
+      "sC": "as"
+    }
+  ],
+  "lder": [
+    {
+      "line": "Te doy, mi corazón sincero, (Fa,,12)(Do,7,127)(Re,m,181)",
+      "sC": "tc"
+    },
+    {
+      "line": "para gritar sin miedo (Si,7,137)(Fa,,229)",
+      "sC": ""
+    },
+    {
+      "line": "tu grandeza Señor. (Do,,309)",
+      "sC": ""
+    },
+    {
+      "line": "Tendré, mis manos sin cansancio. (Fa,,12)(Do,,87)(Re,m,181)",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tu historia entre mis labios, (Si,7,12)(Fa,,150)",
+      "sC": ""
+    },
+    {
+      "line": "y fuerza en la oración. (Do,,0)(Fa,,150)",
+      "sC": ""
+    },
+
+
+    {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LLÉVAME DONDE LOS HOMBRES,(Fa,,0)(Do,,180)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "NECESITEN TUS PALABRAS, (Re,m,40)(Si,7,145)",
+          "sC": "as"
+        },
+        {
+          "line": "NECESITEN MIS GANAS DE VIVIR.,,(Fa,,60)(Do,,230)",
+          "sC": "as"
+        },
+        {
+          "line": "DONDE FALTE LA ESPERANZA,,,(Fa,,60)(Do,,150)",
+          "sC": "as"
+        },
+        {
+          "line": "DONDE FALTE LA ALEGRÍA, SIMPLEMENTE,, (Re,m,0)(Si,7,150)(Fa,,240)(Do,,350)",
+          "sC": "as"
+        },
+        {
+          "line": "POR NO SABER DE TI.(Fa,,100)",
+          "sC": "as"
+        }
+      ]
+    },
+
+    {
+      "line": "Y así, en marcha iré cantando, (Fa,,12)(Do,7,137)(Re,m,172)",
+      "sC": ""
+    },
+    {
+      "line": "por calles predicando, (Si,7,147)(Fa,,189)",
+      "sC": ""
+    },
+    {
+      "line": "lo bello que es tu amor. (Do,,321)",
+      "sC": ""
+    },
+    {
+      "line": "Señor, tengo alma misionera, (Fa,,12)(Do,,219)(Re,m,183)",
+      "sC": ""
+    },
+    {
+      "line": "condúceme a la tierra (Si,7,15)(Fa,,183)",
+      "sC": ""
+    },
+    {
+      "line": "que tenga sed de Dios. (Do,,15)(Fa,,183)",
+      "sC": ""
+    },
+
+        {
+      "type": "collapsible-block",
+      "id": "asamblea_anadie_1",
+      "initialState": "collapsed",
+      "triggerLine": "LLÉVAME DONDE LOS HOMBRES,(Fa,,0)(Do,,180)",
+      "sC": "as ta",
+      "lines": [
+        {
+          "line": "NECESITEN TUS PALABRAS, (Re,m,40)(Si,7,145)",
+          "sC": "as"
+        },
+        {
+          "line": "NECESITEN MIS GANAS DE VIVIR.,,(Fa,,60)(Do,,230)",
+          "sC": "as"
+        },
+        {
+          "line": "DONDE FALTE LA ESPERANZA,,,(Fa,,60)(Do,,150)",
+          "sC": "as"
+        },
+        {
+          "line": "DONDE FALTE LA ALEGRÍA, SIMPLEMENTE,, (Re,m,0)(Si,7,150)(Fa,,240)(Do,,350)",
+          "sC": "as"
+        },
+        {
+          "line": "POR NO SABER DE TI.(Fa,,100)",
+          "sC": "as"
+        }
+      ]
+    }
+
+  ],
+  "sourceBook": "joven"
+}

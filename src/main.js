@@ -29,7 +29,8 @@ import {
   cargarHistorialCantoDesdeNube,
   respaldarPosicionesUsuario,
   guardarExpansionCantoEnNube,
-  isSongExpansionEnabled
+  isSongExpansionEnabled,
+  guardarJsonChordsCantoEnNube
 } from './sync.js';
 import { 
   registrarEntradaCanto, 
@@ -675,14 +676,41 @@ function routeSPA() {
 }
 
 async function sincronizarCantoDesdeFirebase(songId) {
-  // Si "Acordes en JSON" está activo para este canto, no sobrescribir posiciones con Firebase
+  // Si "Acordes en JSON" está activo para este canto, asegurar acordes del JSON y no sobrescribir con Firebase
   if (isJsonChordsEnabled(songId)) {
+    currentKeyOffset = 0;
+    updateTransposeBadge();
+    const songFromData = songs.find(s => s.id === songId);
+    const origCapo = parseInt(songFromData?.cejilla || currentCanto?.cejilla || '0') || 0;
+    if (capoSelect) capoSelect.value = origCapo;
+    const activeCapoBadge = document.getElementById('capo-badge');
+    if (activeCapoBadge) activeCapoBadge.textContent = formatCapoText(origCapo);
+    const modalCapoSelect = document.getElementById('modal-capo-select');
+    if (modalCapoSelect) modalCapoSelect.value = origCapo;
     return;
   }
 
   // 1. Cargar posiciones globales oficiales de acordes desde Firestore (la nube)
   try {
     const globalPos = await cargarPosicionesGlobales(songId);
+    if (globalPos && globalPos.jsonChords === true) {
+      console.log(`🎸 [Firebase] Acordes en JSON está activo universalmente en la nube para "${songId}".`);
+      if (!window.globalPositionsCache) window.globalPositionsCache = {};
+      if (!window.globalPositionsCache[songId]) window.globalPositionsCache[songId] = {};
+      window.globalPositionsCache[songId].jsonChords = true;
+      currentKeyOffset = 0;
+      updateTransposeBadge();
+      const songFromData = songs.find(s => s.id === songId);
+      const origCapo = parseInt(songFromData?.cejilla || currentCanto?.cejilla || '0') || 0;
+      if (capoSelect) capoSelect.value = origCapo;
+      const activeCapoBadge = document.getElementById('capo-badge');
+      if (activeCapoBadge) activeCapoBadge.textContent = formatCapoText(origCapo);
+      const modalCapoSelect = document.getElementById('modal-capo-select');
+      if (modalCapoSelect) modalCapoSelect.value = origCapo;
+      if (window.populateBisSongList) window.populateBisSongList();
+      renderSongContent();
+      return;
+    }
     if (globalPos && (globalPos.lizq.length > 0 || globalPos.lder.length > 0)) {
       if (!defaultChordPositions) defaultChordPositions = {};
       defaultChordPositions[songId] = globalPos;
@@ -903,6 +931,8 @@ async function loadSongView(songId) {
         </div>
       ` : '';
 
+      const christImgSrc = isCatolicoSong(currentCanto) ? 'img/Cristo_1.png' : 'img/christ.png';
+
       cantoHeaderBlock.innerHTML = `
         <div class="canto-header-top">
           <div class="canto-header-top-col">
@@ -912,7 +942,7 @@ async function loadSongView(songId) {
         </div>
         <div class="canto-header-main">
           <div class="canto-header-left">
-            <img src="img/christ.png" alt="Cristo" class="canto-header-img">
+            <img src="${christImgSrc}" alt="Cristo" class="canto-header-img">
           </div>
           <div class="canto-header-center">
             <h1 class="canto-header-title">${title}</h1>
@@ -960,9 +990,13 @@ async function loadSongView(songId) {
       if (stored) localSavedConfig = JSON.parse(stored);
     } catch (e) {}
 
-    // Si existe localmente, inicializar con lo local; si no, con el valor original
-    const initialKeyOffset = (localSavedConfig && localSavedConfig.acorde !== undefined) ? (parseInt(localSavedConfig.acorde) || 0) : 0;
-    const initialCapo = (localSavedConfig && localSavedConfig.cejilla !== undefined) ? (parseInt(localSavedConfig.cejilla) || 0) : (parseInt(originalCapoStr) || 0);
+    // Si existe localmente, inicializar con lo local; si "Acordes en JSON" está activo, respetar estrictamente el archivo JSON
+    let initialKeyOffset = 0;
+    let initialCapo = (parseInt(originalCapoStr) || 0);
+    if (!isJsonChordsEnabled(songId)) {
+      initialKeyOffset = (localSavedConfig && localSavedConfig.acorde !== undefined) ? (parseInt(localSavedConfig.acorde) || 0) : 0;
+      initialCapo = (localSavedConfig && localSavedConfig.cejilla !== undefined) ? (parseInt(localSavedConfig.cejilla) || 0) : (parseInt(originalCapoStr) || 0);
+    }
 
     currentKeyOffset = initialKeyOffset;
     updateTransposeBadge();
@@ -980,6 +1014,13 @@ async function loadSongView(songId) {
     }
 
     updateChordPanel();
+
+    // Si el usuario es administrador y tiene este canto marcado como Acordes en JSON localmente, asegurar su sincronización en Firebase
+    if (isCurrentUserAdmin() && cantoConfig.jsonChordsMap && cantoConfig.jsonChordsMap[songId] === true) {
+      if (!window.globalPositionsCache || !window.globalPositionsCache[songId] || window.globalPositionsCache[songId].jsonChords !== true) {
+        guardarJsonChordsCantoEnNube(songId, true);
+      }
+    }
     
     // Cargar notas del cantor
     notesTextarea.value = localStorage.getItem(`notes_${songId}`) || '';
@@ -2827,6 +2868,26 @@ function getStageColor(stageName) {
   return '#20c997';
 }
 
+export function isCatolicoSong(song) {
+  if (!song) return false;
+  const normalize = (str) => (str || '').toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  const catCanto = normalize(song.catCanto);
+  const stage = normalize(song.stage);
+  
+  if (catCanto.includes('catolic') || (stage.includes('catolic') && !stage.includes('catecu'))) {
+    return true;
+  }
+  if (Array.isArray(song.category)) {
+    return song.category.some(c => {
+      const norm = normalize(String(c));
+      return norm.includes('catolic') && !norm.includes('catecu');
+    });
+  }
+  return false;
+}
+window.isCatolicoSong = isCatolicoSong;
+
+
 // --- Clasificación Litúrgica para Aclamaciones (Ciclos y Tiempos) ---
 export function clasificarAclamacion(item) {
   const id = (item.id || '').toLowerCase();
@@ -4244,15 +4305,17 @@ function generarHtmlCantoBasico(song) {
   const stage = (song.catCanto || '').toUpperCase();
   const title = (song.title || song.tt || '').toUpperCase();
   const subtitle = song.subtitle || '';
+  const christImgSrc = isCatolicoSong(song) ? 'img/Cristo_1.png' : 'img/christ.png';
+  const stageColor = getStageColor(song.catCanto || song.stage);
   
   return `
-    <div class="canto-header-block" style="border-bottom-color: var(--stage-color-${song.catCanto}, var(--panel-border));">
+    <div class="canto-header-block" style="border-bottom-color: ${stageColor};">
       <div class="canto-header-top">
         <div class="canto-header-stage">${stage}</div>
       </div>
       <div class="canto-header-main">
         <div class="canto-header-left">
-          <img src="img/christ.png" alt="Cristo" class="canto-header-img">
+          <img src="${christImgSrc}" alt="Cristo" class="canto-header-img">
         </div>
         <div class="canto-header-center">
           <h1 class="canto-header-title">${title}</h1>
@@ -4275,6 +4338,8 @@ function generarHtmlCanto(song) {
   const stage = (song.catCanto || '').toUpperCase();
   const title = (song.title || song.tt || '').toUpperCase();
   const subtitle = song.subtitle || '';
+  const christImgSrc = isCatolicoSong(song) ? 'img/Cristo_1.png' : 'img/christ.png';
+  const stageColor = getStageColor(song.catCanto || song.stage);
   
   // Recuperar offset de tono de esta canción en localStorage
   const savedKeyOffset = parseInt(localStorage.getItem(`keyOffset_${song.id}`)) || 0;
@@ -4292,13 +4357,13 @@ function generarHtmlCanto(song) {
   const rightColStyle = rightHtml ? '' : 'display: none;';
   
   return `
-    <div class="canto-header-block" style="border-bottom-color: var(--stage-color-${song.catCanto}, var(--panel-border));">
+    <div class="canto-header-block" style="border-bottom-color: ${stageColor};">
       <div class="canto-header-top">
         <div class="canto-header-stage">${stage}</div>
       </div>
       <div class="canto-header-main">
         <div class="canto-header-left">
-          <img src="img/christ.png" alt="Cristo" class="canto-header-img">
+          <img src="${christImgSrc}" alt="Cristo" class="canto-header-img">
         </div>
         <div class="canto-header-center">
           <h1 class="canto-header-title">${title}</h1>
@@ -4478,6 +4543,14 @@ function resolveChordPositionsForPreview(song, side, lineIdx, subLineIdx, baseCh
     noteType: c.type,
     position: c.originalPos
   }));
+
+  if (song.id && isJsonChordsEnabled(song.id)) {
+    return baseChords.map(c => ({
+      noteName: c.name,
+      noteType: c.type,
+      position: c.originalPos >= 10 ? Math.round(c.originalPos / 10) : c.originalPos
+    }));
+  }
 
   const customKey = `custom-positions-${song.id}`;
   const customStore = localStorage.getItem(customKey);
@@ -5900,14 +5973,25 @@ function setupEventListeners() {
     });
   }
 
-  // Listener del toggle Acordes en JSON
+  // Listener del toggle Acordes en JSON (Sincronizado universalmente con Firebase)
   const jsonChordsToggleInput = document.getElementById('json-chords-toggle');
   if (jsonChordsToggleInput) {
-    jsonChordsToggleInput.addEventListener('change', (e) => {
+    jsonChordsToggleInput.addEventListener('change', async (e) => {
       if (!currentCanto) return;
       const active = e.target.checked;
-      setJsonChordsForSong(currentCanto.id, active);
-      console.log(`🎸 [Cantos] Acordes en JSON para "${currentCanto.title || currentCanto.id}": ${active ? 'Activado' : 'Desactivado'}`);
+      await setJsonChordsForSong(currentCanto.id, active);
+      console.log(`🎸 [Cantos] Acordes en JSON para "${currentCanto.title || currentCanto.id}": ${active ? 'Activado (Universal)' : 'Desactivado'}`);
+      if (active) {
+        currentKeyOffset = 0;
+        updateTransposeBadge();
+        const songFromData = songs.find(s => s.id === currentCanto.id);
+        const origCapo = parseInt(songFromData?.cejilla || currentCanto?.cejilla || '0') || 0;
+        if (capoSelect) capoSelect.value = origCapo;
+        const activeCapoBadge = document.getElementById('capo-badge');
+        if (activeCapoBadge) activeCapoBadge.textContent = formatCapoText(origCapo);
+        const modalCapoSelect = document.getElementById('modal-capo-select');
+        if (modalCapoSelect) modalCapoSelect.value = origCapo;
+      }
       renderSongContent();
     });
   }
