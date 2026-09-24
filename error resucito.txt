@@ -1,0 +1,2103 @@
+para que revises los errores que tenemos en resucito por favor
+
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+firebase.js:57 🔥 Firestore offline persistence enabled.
+accesscontrol.js:350 🤫 Escuchando permisos de grupos silenciosamente en vivo desde Firebase Cloud.
+ajustes.js?v=135:1729 🔓 Protección de inspección de página desactivada (Inspección permitida).
+pwa.js:10 Service Worker registrado con éxito. Scope: https://es.laantillana.com/
+navegador.js?v=135:12 📥 PWA: beforeinstallprompt guardado.
+index.html#canto=letaniaspenitencialesii:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+main.js?v=139:5684 📥 [Firebase] Iniciando sincronización integral de datos para usuario: dbaezh78@gmail.com
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+audio.resucito.do/letaniaspenitencialesii.mp3:1  GET https://audio.resucito.do/letaniaspenitencialesii.mp3 404 (Not Found)
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+main.js?v=139:5684 🔓 Protección de inspección de página desactivada (Inspección permitida).
+main.js?v=139:5684 🤫 Permisos de Hermano actualizados silenciosamente desde Firebase Cloud para: dbaezh78@gmail.com
+main.js?v=139:5684 📥 [Firebase] Perfil de usuario descargado y aplicado.
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: letaniaspenitencialesii
+main.js?v=139:5684 🔍 Comprobando versión remota en: https://es.laantillana.com/version.json?t=1790007631492
+The FetchEvent for "https://es.laantillana.com/version.json?t=1790007631492" resulted in a network error response: the promise was rejected.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+navegador.js?v=135:816  GET https://es.laantillana.com/version.json?t=1790007631492 net::ERR_FAILED
+checkRemoteVersionForUpdates @ navegador.js?v=135:816
+setTimeout
+setupNavListeners @ navegador.js?v=135:877
+injectNav @ navegador.js?v=135:431
+(anonymous) @ navegador.js?v=135:437
+(anonymous) @ navegador.js?v=135:1206
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+main.js?v=139:5696 No se pudo verificar actualización remota: TypeError: Failed to fetch
+    at checkRemoteVersionForUpdates (navegador.js?v=135:816:27)
+console.warn @ main.js?v=139:5696
+checkRemoteVersionForUpdates @ navegador.js?v=135:872
+setTimeout
+setupNavListeners @ navegador.js?v=135:877
+injectNav @ navegador.js?v=135:431
+(anonymous) @ navegador.js?v=135:437
+(anonymous) @ navegador.js?v=135:1206
+main.js?v=139:5684 📥 [Firebase] Ajustes personales descargados de la nube.
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (registered_users/dbaezh78_gmail_com): [email, displayName, group, banned, lastLogin]
+main.js?v=139:5684 🔥 Hermano registrado guardado en Firebase Cloud: dbaezh78@gmail.com
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (registro_uso/dev_vqcv8e7stk_1789163380655): [uid, nombre, email, ip, pais, dispositivo, lastActive]
+main.js?v=139:5684 📊 Registro de uso de la app sincronizado con Firebase.
+main.js?v=139:5684 📥 [Firebase] Favoritos (10 cantos) sincronizados desde la nube.
+main.js?v=139:5684 📥 [Firebase] Zooms de cantos descargados de la nube.
+main.js?v=139:5684 📥 [Firebase] 100 cantos sincronizados desde la nube a almacenamiento local (acorde, cejilla, notas, estrellas).
+
+
+
+firebase.js:57 🔥 Firestore offline persistence enabled.
+accesscontrol.js:350 🤫 Escuchando permisos de grupos silenciosamente en vivo desde Firebase Cloud.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+navegador.js?v=139:12 📥 PWA: beforeinstallprompt guardado.
+mantcantos.html:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+navegador.js?v=139:815 🔍 Comprobando versión remota en: https://es.laantillana.com/version.json?t=1790007770953
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+navegador.js?v=139:816  GET https://es.laantillana.com/version.json?t=1790007770953 net::ERR_FAILED
+checkRemoteVersionForUpdates @ navegador.js?v=139:816
+setTimeout
+setupNavListeners @ navegador.js?v=139:877
+injectNav @ navegador.js?v=139:431
+(anonymous) @ navegador.js?v=139:437
+(anonymous) @ navegador.js?v=139:1206
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+navegador.js?v=139:872 No se pudo verificar actualización remota: TypeError: Failed to fetch
+    at checkRemoteVersionForUpdates (navegador.js?v=139:816:27)
+checkRemoteVersionForUpdates @ navegador.js?v=139:872
+setTimeout
+setupNavListeners @ navegador.js?v=139:877
+injectNav @ navegador.js?v=139:431
+(anonymous) @ navegador.js?v=139:437
+(anonymous) @ navegador.js?v=139:1206
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+
+
+y mientras cambiaba los acordes me dio estos errores
+
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+firebase.js:57 🔥 Firestore offline persistence enabled.
+accesscontrol.js:350 🤫 Escuchando permisos de grupos silenciosamente en vivo desde Firebase Cloud.
+ajustes.js?v=135:1729 🔓 Protección de inspección de página desactivada (Inspección permitida).
+pwa.js:10 Service Worker registrado con éxito. Scope: https://es.laantillana.com/
+navegador.js?v=135:12 📥 PWA: beforeinstallprompt guardado.
+index.html#canto=santomelodiahebraica:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+main.js?v=139:5684 📥 [Firebase] Iniciando sincronización integral de datos para usuario: dbaezh78@gmail.com
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+santomelodiahebraica.mp3:1  GET https://audio.resucito.do/santomelodiahebraica.mp3 404 (Not Found)
+main.js?v=139:5684 🔓 Protección de inspección de página desactivada (Inspección permitida).
+main.js?v=139:5684 🤫 Permisos de Hermano actualizados silenciosamente desde Firebase Cloud para: dbaezh78@gmail.com
+main.js?v=139:5684 📥 [Firebase] Perfil de usuario descargado y aplicado.
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santomelodiahebraica
+main.js?v=139:5684 🔍 Comprobando versión remota en: https://es.laantillana.com/version.json?t=1790008591009
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (registered_users/dbaezh78_gmail_com): [email, displayName, group, banned, lastLogin]
+main.js?v=139:5684 🔥 Hermano registrado guardado en Firebase Cloud: dbaezh78@gmail.com
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (registro_uso/dev_vqcv8e7stk_1789163380655): [uid, nombre, email, ip, pais, dispositivo, lastActive]
+main.js?v=139:5684 📊 Registro de uso de la app sincronizado con Firebase.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+navegador.js?v=135:816  GET https://es.laantillana.com/version.json?t=1790008591009 net::ERR_FAILED
+checkRemoteVersionForUpdates @ navegador.js?v=135:816
+setTimeout
+setupNavListeners @ navegador.js?v=135:877
+injectNav @ navegador.js?v=135:431
+(anonymous) @ navegador.js?v=135:437
+(anonymous) @ navegador.js?v=135:1206
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+main.js?v=139:5696 No se pudo verificar actualización remota: TypeError: Failed to fetch
+    at checkRemoteVersionForUpdates (navegador.js?v=135:816:27)
+console.warn @ main.js?v=139:5696
+checkRemoteVersionForUpdates @ navegador.js?v=135:872
+setTimeout
+setupNavListeners @ navegador.js?v=135:877
+injectNav @ navegador.js?v=135:431
+(anonymous) @ navegador.js?v=135:437
+(anonymous) @ navegador.js?v=135:1206
+main.js?v=139:5684 📥 [Firebase] Ajustes personales descargados de la nube.
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 7, cejilla = 0
+main.js?v=139:5684 📥 [Firebase] Favoritos (10 cantos) sincronizados desde la nube.
+main.js?v=139:5684 📥 [Firebase] Zooms de cantos descargados de la nube.
+main.js?v=139:5684 📥 [Firebase] 100 cantos sincronizados desde la nube a almacenamiento local (acorde, cejilla, notas, estrellas).
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+showChordDiagram @ main.js?v=139:2780
+openChordModal @ main.js?v=139:4769
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+ima/la.jpg:1  GET https://es.laantillana.com/ima/la.jpg net::ERR_FAILED
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+showChordDiagram @ main.js?v=139:2780
+openChordModal @ main.js?v=139:4769
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+ima/la.jpg:1  GET https://es.laantillana.com/ima/la.jpg net::ERR_FAILED
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+showChordDiagram @ main.js?v=139:2780
+openChordModal @ main.js?v=139:4769
+ima/la.jpg:1  GET https://es.laantillana.com/ima/la.jpg net::ERR_FAILED
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+showChordDiagram @ main.js?v=139:2780
+openChordModal @ main.js?v=139:4769
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+ima/la.jpg:1  GET https://es.laantillana.com/ima/la.jpg net::ERR_FAILED
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+main.js?v=139:5684 💾 [guardarHistorialCanto] Inicio del proceso para: santomelodiahebraica
+main.js?v=139:5684 💾 [guardarHistorialCanto] Enviando a Firebase: acordeOffset=0, cejillaValue=0
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+(anonymous) @ main.js?v=139:5498
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+ima/re.jpg:1  GET https://es.laantillana.com/ima/re.jpg net::ERR_FAILED
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+(anonymous) @ main.js?v=139:5498
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+ima/re.jpg:1  GET https://es.laantillana.com/ima/re.jpg net::ERR_FAILED
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (usuarios/i7n3X441GQPufALUMJsRTluIFW32/dbdata/santomelodiahebraica): [valor]
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/SibXtgxT0MRvFFuCypCd): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 🎼 Re (Carlos David Baez)
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (usuarios/i7n3X441GQPufALUMJsRTluIFW32/dbdata/santomelodiahebraica/historial/1790008695918): [valor]
+main.js?v=139:5684 ☁️ [Firebase] Historial de canto santomelodiahebraica guardado: acorde=0, cejilla=0, notasCantor=no, valoración=0
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:2): 'Fa' movido de posición 150 a 10
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:2): 'Fa' movido de posición 10 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:3): 'Sol' movido de posición 25 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:3): 'Re' movido de posición 310 a 270
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:5): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:5): 'Sol' movido de posición 110 a 95
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:6): 'Sol' movido de posición 25 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:6): 'Re' movido de posición 165 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:7): 'Sol' movido de posición 130 a 95
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:7): 'Re' movido de posición 190 a 165
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:8): 'Sol' movido de posición 25 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:8): 'Re' movido de posición 180 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'Sol' movido de posición 105 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'Sol' movido de posición 0 a 70
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'Sol' movido de posición 70 a 65
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'Re' movido de posición 165 a 135
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:11): 'Sol' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:11): 'Re' movido de posición 75 a 45
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:13): 'Sol' movido de posición 120 a 65
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:13): 'Re' movido de posición 185 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:14): 'Sol' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:14): 'Re' movido de posición 70 a 50
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'Re' movido de posición 230 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'Fa' movido de posición 150 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'Sol' movido de posición 25 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'Re' movido de posición 310 a 270
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:3): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:3): 'Sol' movido de posición 95 a 65
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:3): 'Re' movido de posición 160 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:4): 'Sol' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:4): 'Re' movido de posición 210 a 185
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Sol' movido de posición 125 a 85
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Re' movido de posición 210 a 175
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Sol' movido de posición 25 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Re' movido de posición 220 a 190
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:8): 'Sol' movido de posición 105 a 65
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:8): 'Re' movido de posición 165 a 135
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:8): 'Re' movido de posición 135 a 140
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:9): 'Sol' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:9): 'Re' movido de posición 75 a 45
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:13): 'Re' movido de posición 230 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:13): 'Fa' movido de posición 150 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:13): 'Sol' movido de posición 25 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:13): 'Re' movido de posición 310 a 270
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santomelodiahebraica): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santomelodiahebraica
+main.js?v=139:5684 ✅ [Acordes Guardados] Canto: Santo (ID: santomelodiahebraica) - 41 acorde(s) modificados:
+main.js?v=139:5684   └─ [LIZQ L:2]: 'Fa' movido de 150 a 5
+main.js?v=139:5684   └─ [LIZQ L:3]: 'Solm' movido de 25 a 0
+main.js?v=139:5684   └─ [LIZQ L:3]: 'Rem' movido de 310 a 270
+main.js?v=139:5684   └─ [LIZQ L:5]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:5]: 'Solm' movido de 110 a 95
+main.js?v=139:5684   └─ [LIZQ L:6]: 'Solm' movido de 25 a 0
+main.js?v=139:5684   └─ [LIZQ L:6]: 'Rem' movido de 165 a 145
+main.js?v=139:5684   └─ [LIZQ L:7]: 'Solm' movido de 130 a 95
+main.js?v=139:5684   └─ [LIZQ L:7]: 'Rem' movido de 190 a 165
+main.js?v=139:5684   └─ [LIZQ L:8]: 'Solm' movido de 25 a 0
+main.js?v=139:5684   └─ [LIZQ L:8]: 'Rem' movido de 180 a 145
+main.js?v=139:5684   └─ [LIZQ L:10]: 'Solm' movido de 105 a 65
+main.js?v=139:5684   └─ [LIZQ L:10]: 'Rem' movido de 165 a 135
+main.js?v=139:5684   └─ [LIZQ L:11]: 'Solm' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:11]: 'Rem' movido de 75 a 45
+main.js?v=139:5684   └─ [LIZQ L:13]: 'Solm' movido de 120 a 65
+main.js?v=139:5684   └─ [LIZQ L:13]: 'Rem' movido de 185 a 145
+main.js?v=139:5684   └─ [LIZQ L:14]: 'Solm' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:14]: 'Rem' movido de 70 a 50
+main.js?v=139:5684   └─ [LDER L:1 Trigger]: 'Rem' movido de 230 a 0
+main.js?v=139:5684   └─ [LDER L:1 Sub:1]: 'Fa' movido de 150 a 5
+main.js?v=139:5684   └─ [LDER L:1 Sub:2]: 'Solm' movido de 25 a 0
+main.js?v=139:5684   └─ [LDER L:1 Sub:2]: 'Rem' movido de 310 a 270
+main.js?v=139:5684   └─ [LDER L:3]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:3]: 'Solm' movido de 95 a 65
+main.js?v=139:5684   └─ [LDER L:3]: 'Rem' movido de 160 a 145
+main.js?v=139:5684   └─ [LDER L:4]: 'Solm' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:4]: 'Rem' movido de 210 a 185
+main.js?v=139:5684   └─ [LDER L:5]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:5]: 'Solm' movido de 125 a 85
+main.js?v=139:5684   └─ [LDER L:5]: 'Rem' movido de 210 a 175
+main.js?v=139:5684   └─ [LDER L:6]: 'Solm' movido de 25 a 0
+main.js?v=139:5684   └─ [LDER L:6]: 'Rem' movido de 220 a 190
+main.js?v=139:5684   └─ [LDER L:8]: 'Solm' movido de 105 a 65
+main.js?v=139:5684   └─ [LDER L:8]: 'Rem' movido de 165 a 140
+main.js?v=139:5684   └─ [LDER L:9]: 'Solm' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:9]: 'Rem' movido de 75 a 45
+main.js?v=139:5684   └─ [LDER L:13 Trigger]: 'Rem' movido de 230 a 0
+main.js?v=139:5684   └─ [LDER L:13 Sub:1]: 'Fa' movido de 150 a 5
+main.js?v=139:5684   └─ [LDER L:13 Sub:2]: 'Solm' movido de 25 a 0
+main.js?v=139:5684   └─ [LDER L:13 Sub:2]: 'Rem' movido de 310 a 270
+santo1988.mp3:1  GET https://audio.resucito.do/santo1988.mp3 404 (Not Found)
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santo1988". Cargando acordes del canto.
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+audio.resucito.do/santo1982.mp3:1  GET https://audio.resucito.do/santo1982.mp3 net::ERR_ABORTED 404 (Not Found)
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santo1982". Cargando acordes del canto.
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/m0d640Hat0pBTHQFqQJC): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+sw.js:129 [Service Worker] Error al actualizar en background: TypeError: Failed to fetch
+    at sw.js:123:11
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: salvereinadeloscielos
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/8iMA3ZLJoVjNhgXMmFz5): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 0
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+audio.resucito.do/santo1982.mp3:1  GET https://audio.resucito.do/santo1982.mp3 net::ERR_ABORTED 404 (Not Found)
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santo1982". Cargando acordes del canto.
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/b2KzrejOakUNTH4kcYtk): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Salve, Reina De Los Cielos ➔ 😎 (Carlos David Baez)
+santo1988.mp3:1  GET https://audio.resucito.do/santo1988.mp3 404 (Not Found)
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/DfBG8wWM5KZMW5m4DjZq): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santo1988". Cargando acordes del canto.
+santomelodiahebraica.mp3:1  GET https://audio.resucito.do/santomelodiahebraica.mp3 net::ERR_ABORTED 404 (Not Found)
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/YYX99OOidi9miKAkKGKi): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santomelodiahebraica
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 0
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santopalestina74". Cargando acordes del canto.
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/MiX4tjRbE12pSrYhhEHj): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 7, cejilla = 4
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:1): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:2): 'Sol' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:3): 'La' movido de posición 180 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (usuarios/i7n3X441GQPufALUMJsRTluIFW32/config_cantos/santopalestina74): [notaPersonal, ultimaActualizacion]
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (usuarios/i7n3X441GQPufALUMJsRTluIFW32/dbdata/santopalestina74): [valor]
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (usuarios/i7n3X441GQPufALUMJsRTluIFW32/dbdata/santopalestina74/historial/1790008947386): [valor]
+main.js?v=139:5684 ☁️ [Firebase] Nota personal guardada y sincronizada en dbdata/historial para santopalestina74
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+showChordDiagram @ main.js?v=139:2780
+openChordModal @ main.js?v=139:4769
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+/ima/la.jpg:1  GET https://es.laantillana.com/ima/la.jpg net::ERR_FAILED
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+showChordDiagram @ main.js?v=139:2780
+openChordModal @ main.js?v=139:4769
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+/ima/la.jpg:1  GET https://es.laantillana.com/ima/la.jpg net::ERR_FAILED
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+main.js?v=139:5684 💾 [guardarHistorialCanto] Inicio del proceso para: santopalestina74
+main.js?v=139:5684 💾 [guardarHistorialCanto] Enviando a Firebase: acordeOffset=0, cejillaValue=4
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+(anonymous) @ main.js?v=139:5498
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+/ima/re.jpg:1  GET https://es.laantillana.com/ima/re.jpg net::ERR_FAILED
+Image
+updateModalChordDiagram @ main.js?v=139:2764
+(anonymous) @ main.js?v=139:5498
+sw.js:144 [Service Worker] Error de red: TypeError: Failed to fetch
+    at sw.js:134:16
+(anonymous) @ sw.js:144
+Promise.catch
+(anonymous) @ sw.js:143
+Promise.then
+(anonymous) @ sw.js:120
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+/ima/re.jpg:1  GET https://es.laantillana.com/ima/re.jpg net::ERR_FAILED
+Image
+chordDiagramImg.onerror @ main.js?v=139:2767
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+sw.js:1 Uncaught (in promise) TypeError: Failed to convert value to 'Response'.
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (usuarios/i7n3X441GQPufALUMJsRTluIFW32/dbdata/santopalestina74): [valor]
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/WJSTSr0B83mvwXEQuiXa): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 🎼 Re (Carlos David Baez)
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (usuarios/i7n3X441GQPufALUMJsRTluIFW32/dbdata/santopalestina74/historial/1790009234585): [valor]
+main.js?v=139:5684 ☁️ [Firebase] Historial de canto santopalestina74 guardado: acorde=0, cejilla=4, notasCantor=sí, valoración=4
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:4): 'Sol' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:5): 'Sol' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:6): 'Sol' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:6): 'La' movido de posición 145 a 110
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:5): 'La' movido de posición 145 a 110
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:4): 'La' movido de posición 175 a 150
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:8): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:8): 'Sol' movido de posición 75 a 45
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:9): 'Re' movido de posición 60 a 40
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'Sol' movido de posición 75 a 50
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:11): 'La' movido de posición 160 a 160
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:13): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:14): 'La' movido de posición 25 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:15): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:16): 'La' movido de posición 25 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:17): 'Sol' movido de posición 50 a 15
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:18): 'Sol' movido de posición 50 a 15
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:17): 'La' movido de posición 280 a 245
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:18): 'La' movido de posición 160 a 150
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'Sol' movido de posición 60 a 35
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:2): 'Re' movido de posición 110 a 95
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:3): 'Sol' movido de posición 65 a 50
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:4): 'La' movido de posición 205 a 195
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'La' movido de posición 25 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'La' movido de posición 25 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Sol' movido de posición 50 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'La' movido de posición 270 a 245
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Sol' movido de posición 50 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'La' movido de posición 160 a 150
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Sol' movido de posición 0 a 15
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Sol' movido de posición 0 a 15
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santopalestina74): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santopalestina74
+main.js?v=139:5684 ✅ [Acordes Guardados] Canto: Santo (ID: santopalestina74) - 34 acorde(s) modificados:
+main.js?v=139:5684   └─ [LIZQ L:1]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:2]: 'Solm' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:3]: 'La' movido de 180 a 0
+main.js?v=139:5684   └─ [LIZQ L:4]: 'Solm' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:4]: 'La' movido de 175 a 150
+main.js?v=139:5684   └─ [LIZQ L:5]: 'Solm' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:5]: 'La' movido de 145 a 110
+main.js?v=139:5684   └─ [LIZQ L:6]: 'Solm' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:6]: 'La' movido de 145 a 110
+main.js?v=139:5684   └─ [LIZQ L:8]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:8]: 'Solm' movido de 75 a 45
+main.js?v=139:5684   └─ [LIZQ L:9]: 'Rem' movido de 60 a 40
+main.js?v=139:5684   └─ [LIZQ L:10]: 'Solm' movido de 75 a 50
+main.js?v=139:5684   └─ [LIZQ L:13]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:14]: 'La' movido de 25 a 5
+main.js?v=139:5684   └─ [LIZQ L:15]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:16]: 'La' movido de 25 a 5
+main.js?v=139:5684   └─ [LIZQ L:17]: 'Solm' movido de 50 a 15
+main.js?v=139:5684   └─ [LIZQ L:17]: 'La' movido de 280 a 245
+main.js?v=139:5684   └─ [LIZQ L:18]: 'Solm' movido de 50 a 15
+main.js?v=139:5684   └─ [LIZQ L:18]: 'La' movido de 160 a 150
+main.js?v=139:5684   └─ [LDER L:1]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:1]: 'Solm' movido de 60 a 35
+main.js?v=139:5684   └─ [LDER L:2]: 'Rem' movido de 110 a 95
+main.js?v=139:5684   └─ [LDER L:3]: 'Solm' movido de 65 a 50
+main.js?v=139:5684   └─ [LDER L:4]: 'La' movido de 205 a 195
+main.js?v=139:5684   └─ [LDER L:6 Trigger]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:6 Sub:1]: 'La' movido de 25 a 0
+main.js?v=139:5684   └─ [LDER L:6 Sub:2]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:6 Sub:3]: 'La' movido de 25 a 0
+main.js?v=139:5684   └─ [LDER L:6 Sub:4]: 'Solm' movido de 50 a 15
+main.js?v=139:5684   └─ [LDER L:6 Sub:4]: 'La' movido de 270 a 245
+main.js?v=139:5684   └─ [LDER L:6 Sub:5]: 'Solm' movido de 50 a 15
+main.js?v=139:5684   └─ [LDER L:6 Sub:5]: 'La' movido de 160 a 150
+main.js?v=139:5702 [2026-09-21T16:49:25.561Z]  @firebase/firestore: Firestore (10.7.1): Failed to obtain primary lease for action 'Apply remote event'.
+console.error @ main.js?v=139:5702
+(anonymous) @ base.js:1
+(anonymous) @ log.ts:25
+map @ log.ts:66
+(anonymous) @ indexeddb_persistence.ts:811
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+gi @ indexeddb_persistence.ts:548
+(anonymous) @ indexeddb_persistence.ts:810
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+fi @ indexeddb_persistence.ts:435
+(anonymous) @ indexeddb_persistence.ts:809
+runTransaction @ simple_db.ts:419
+await in runTransaction
+runTransaction @ indexeddb_persistence.ts:788
+(anonymous) @ local_store_impl.ts:571
+(anonymous) @ sync_engine_impl.ts:505
+__PRIVATE_watchChangeAggregator @ remote_store.ts:495
+__PRIVATE_onWatchStreamChange @ remote_store.ts:59
+await in __PRIVATE_onWatchStreamChange
+(anonymous) @ persistent_stream.ts:655
+(anonymous) @ persistent_stream.ts:529
+(anonymous) @ persistent_stream.ts:574
+then @ async_queue_impl.ts:137
+__PRIVATE_operationInProgress @ async_queue_impl.ts:327
+Promise.then
+op @ async_queue_impl.ts:188
+enqueue @ async_queue_impl.ts:135
+enqueueAndForget @ async_queue_impl.ts:96
+(anonymous) @ persistent_stream.ts:572
+(anonymous) @ persistent_stream.ts:527
+Vo @ webchannel_connection.ts:56
+(anonymous) @ webchannel_connection.ts:397
+(anonymous) @ webchannel_connection.ts:298
+B$1 @ eventtarget.js:91
+C$1 @ eventtarget.js:490
+(anonymous) @ webchannelbasetransport.js:429
+(anonymous) @ structs.js:194
+rc @ channelrequest.js:950
+(anonymous) @ channelrequest.js:626
+(anonymous) @ channelrequest.js:656
+B$1 @ eventtarget.js:91
+C$1 @ eventtarget.js:490
+Ad @ xhrio.js:922
+(anonymous) @ xhrio.js:1052
+this @ xhrio.js:1050
+od @ fetchxmlhttpfactory.js:237
+(anonymous) @ fetchxmlhttpfactory.js:419
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalomeras65
+audio.resucito.do/santopalomeras65.mp3:1  GET https://audio.resucito.do/santopalomeras65.mp3 404 (Not Found)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalestina74
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/W6jxoTFMhQF7mGfy0aLZ): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 4
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+santomelodiahebraica.mp3:1  GET https://audio.resucito.do/santomelodiahebraica.mp3 404 (Not Found)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santomelodiahebraica
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/KLtqlkxiYXdmmZiMsjLl): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 0
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalestina74
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/9t8b8cNNOGPJlysCg53d): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 4
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+santopalomeras65.mp3:1  GET https://audio.resucito.do/santopalomeras65.mp3 404 (Not Found)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalomeras65
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/XlyXEx7r2OFcMZeZGwQO): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santoroma77". Cargando acordes del canto.
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/dZZf4gCzS8eweiIHXOPU): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:1): 'La' movido de posición 180 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:2): 'Sol' movido de posición 15 a 10
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:2): 'Sol' movido de posición 10 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:2): 'La' movido de posición 175 a 140
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:4): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:4): 'Sol' movido de posición 65 a 45
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:4): 'La' movido de posición 160 a 160
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:5): 'Sol' movido de posición 75 a 60
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:5): 'La' movido de posición 285 a 290
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:7): 'Fa' movido de posición 50 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:7): 'Mi' movido de posición 155 a 115
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:8): 'Fa' movido de posición 50 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:9): 'Fa' movido de posición 50 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:10): 'Fa' movido de posición 70 a 55
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:8): 'Mi' movido de posición 155 a 120
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:7): 'Mi' movido de posición 115 a 120
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:9): 'Sol' movido de posición 155 a 110
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:10): 'Mi' movido de posición 190 a 165
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:12): 'Mi' movido de posición 155 a 120
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:13): 'Mi' movido de posición 155 a 120
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:14): 'Sol' movido de posición 155 a 110
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LIZQ L:15): 'La' movido de posición 185 a 155
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:1): 'La' movido de posición 180 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:1): 'Sol' movido de posición 15 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:1): 'La' movido de posición 175 a 140
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:3): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:3): 'Sol' movido de posición 55 a 35
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:3): 'La' movido de posición 190 a 180
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:4): 'Sol' movido de posición 65 a 60
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:4): 'La' movido de posición 345 a 325
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Fa' movido de posición 50 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Fa' movido de posición 50 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Fa' movido de posición 50 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Fa' movido de posición 70 a 55
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Mi' movido de posición 190 a 170
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Sol' movido de posición 155 a 110
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Mi' movido de posición 155 a 120
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Mi' movido de posición 155 a 120
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Fa' movido de posición 15 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Fa' movido de posición 15 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Fa' movido de posición 15 a 30
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Mi' movido de posición 155 a 120
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Mi' movido de posición 155 a 120
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'Sol' movido de posición 155 a 110
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:6): 'La' movido de posición 185 a 155
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:8): 'La' movido de posición 180 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:8): 'Sol' movido de posición 15 a 10
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:8): 'La' movido de posición 175 a 135
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 ✅ [Acordes Guardados] Canto: Santo Roma 77 (ID: santoroma77) - 45 acorde(s) modificados:
+main.js?v=139:5684   └─ [LIZQ L:1]: 'Lam' movido de 180 a 0
+main.js?v=139:5684   └─ [LIZQ L:2]: 'Sol' movido de 15 a 5
+main.js?v=139:5684   └─ [LIZQ L:2]: 'Lam' movido de 175 a 140
+main.js?v=139:5684   └─ [LIZQ L:4]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:4]: 'Sol' movido de 65 a 45
+main.js?v=139:5684   └─ [LIZQ L:5]: 'Sol' movido de 75 a 60
+main.js?v=139:5684   └─ [LIZQ L:5]: 'Lam' movido de 285 a 290
+main.js?v=139:5684   └─ [LIZQ L:7]: 'Fa' movido de 50 a 30
+main.js?v=139:5684   └─ [LIZQ L:7]: 'Mi' movido de 155 a 120
+main.js?v=139:5684   └─ [LIZQ L:8]: 'Fa' movido de 50 a 30
+main.js?v=139:5684   └─ [LIZQ L:8]: 'Mi' movido de 155 a 120
+main.js?v=139:5684   └─ [LIZQ L:9]: 'Fa' movido de 50 a 30
+main.js?v=139:5684   └─ [LIZQ L:9]: 'Sol' movido de 155 a 110
+main.js?v=139:5684   └─ [LIZQ L:10]: 'Fa' movido de 70 a 55
+main.js?v=139:5684   └─ [LIZQ L:10]: 'Mi' movido de 190 a 165
+main.js?v=139:5684   └─ [LIZQ L:12]: 'Mi' movido de 155 a 120
+main.js?v=139:5684   └─ [LIZQ L:13]: 'Mi' movido de 155 a 120
+main.js?v=139:5684   └─ [LIZQ L:14]: 'Sol' movido de 155 a 110
+main.js?v=139:5684   └─ [LIZQ L:15]: 'Lam' movido de 185 a 155
+main.js?v=139:5684   └─ [LDER L:1 Trigger]: 'Lam' movido de 180 a 0
+main.js?v=139:5684   └─ [LDER L:1 Sub:1]: 'Sol' movido de 15 a 5
+main.js?v=139:5684   └─ [LDER L:1 Sub:1]: 'Lam' movido de 175 a 140
+main.js?v=139:5684   └─ [LDER L:3]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:3]: 'Sol' movido de 55 a 35
+main.js?v=139:5684   └─ [LDER L:3]: 'Lam' movido de 190 a 180
+main.js?v=139:5684   └─ [LDER L:4]: 'Sol' movido de 65 a 60
+main.js?v=139:5684   └─ [LDER L:4]: 'Lam' movido de 345 a 325
+main.js?v=139:5684   └─ [LDER L:6 Trigger]: 'Fa' movido de 50 a 30
+main.js?v=139:5684   └─ [LDER L:6 Trigger]: 'Mi' movido de 155 a 120
+main.js?v=139:5684   └─ [LDER L:6 Sub:1]: 'Fa' movido de 50 a 30
+main.js?v=139:5684   └─ [LDER L:6 Sub:1]: 'Mi' movido de 155 a 120
+main.js?v=139:5684   └─ [LDER L:6 Sub:2]: 'Fa' movido de 50 a 30
+main.js?v=139:5684   └─ [LDER L:6 Sub:2]: 'Sol' movido de 155 a 110
+main.js?v=139:5684   └─ [LDER L:6 Sub:3]: 'Fa' movido de 70 a 55
+main.js?v=139:5684   └─ [LDER L:6 Sub:3]: 'Mi' movido de 190 a 170
+main.js?v=139:5684   └─ [LDER L:6 Sub:5]: 'Fa' movido de 15 a 30
+main.js?v=139:5684   └─ [LDER L:6 Sub:5]: 'Mi' movido de 155 a 120
+main.js?v=139:5684   └─ [LDER L:6 Sub:6]: 'Fa' movido de 15 a 30
+main.js?v=139:5684   └─ [LDER L:6 Sub:6]: 'Mi' movido de 155 a 120
+main.js?v=139:5684   └─ [LDER L:6 Sub:7]: 'Fa' movido de 15 a 30
+main.js?v=139:5684   └─ [LDER L:6 Sub:7]: 'Sol' movido de 155 a 110
+main.js?v=139:5684   └─ [LDER L:6 Sub:8]: 'Lam' movido de 185 a 155
+main.js?v=139:5684   └─ [LDER L:8 Trigger]: 'Lam' movido de 180 a 0
+main.js?v=139:5684   └─ [LDER L:8 Sub:1]: 'Sol' movido de 15 a 10
+main.js?v=139:5684   └─ [LDER L:8 Sub:1]: 'Lam' movido de 175 a 135
+main.js?v=139:5702 [2026-09-21T16:53:23.556Z]  @firebase/firestore: Firestore (10.7.1): Failed to obtain primary lease for action 'Backfill Indexes'.
+console.error @ main.js?v=139:5702
+(anonymous) @ base.js:1
+(anonymous) @ log.ts:25
+map @ log.ts:66
+(anonymous) @ indexeddb_persistence.ts:811
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+gi @ indexeddb_persistence.ts:548
+(anonymous) @ indexeddb_persistence.ts:810
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+fi @ indexeddb_persistence.ts:435
+(anonymous) @ indexeddb_persistence.ts:809
+runTransaction @ simple_db.ts:419
+await in runTransaction
+runTransaction @ indexeddb_persistence.ts:788
+te @ index_backfiller.ts:126
+(anonymous) @ index_backfiller.ts:91
+(anonymous) @ async_queue.ts:200
+then @ async_queue_impl.ts:137
+__PRIVATE_operationInProgress @ async_queue_impl.ts:327
+Promise.then
+op @ async_queue_impl.ts:188
+enqueue @ async_queue_impl.ts:135
+enqueueAndForget @ async_queue_impl.ts:96
+handleDelayElapsed @ async_queue.ts:194
+(anonymous) @ async_queue.ts:168
+setTimeout
+start @ async_queue.ts:160
+createAndSchedule @ async_queue.ts:160
+enqueueAfterDelay @ async_queue_impl.ts:230
+ee @ index_backfiller.ts:85
+(anonymous) @ index_backfiller.ts:109
+await in (anonymous)
+(anonymous) @ async_queue.ts:200
+then @ async_queue_impl.ts:137
+__PRIVATE_operationInProgress @ async_queue_impl.ts:327
+Promise.then
+op @ async_queue_impl.ts:188
+enqueue @ async_queue_impl.ts:135
+enqueueAndForget @ async_queue_impl.ts:96
+handleDelayElapsed @ async_queue.ts:194
+(anonymous) @ async_queue.ts:168
+fetchxmlhttpfactory.js:272  GET https://firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=_HpPH10kcKALP8g7bR4Q4584nj4g3IqWb5M1ksa6llku_v1_MdsHEA&VER=8&database=projects%2Fcristoresucito%2Fdatabases%2F(default)&RID=rpc&SID=PbgEnf9ic81KIoufHb3BRA&AID=37&CI=0&TYPE=xmlhttp&zx=etjqqqqt861i&t=1 400 (Bad Request)
+(anonymous) @ fetchxmlhttpfactory.js:272
+(anonymous) @ xhrio.js:739
+requestUri_ @ webchanneldebug.js:83
+httpHeadersOverwriteParam_ @ webchannelbase.js:2079
+(anonymous) @ webchannelbase.js:1718
+(anonymous) @ freelist.js:55
+Promise.then
+(anonymous) @ run.js:115
+(anonymous) @ webchannelbase.js:1686
+backChannelRequest_ @ webchannelbase.js:639
+(anonymous) @ xhrio.js:1358
+(anonymous) @ channelrequest.js:656
+B$1 @ eventtarget.js:91
+C$1 @ eventtarget.js:490
+Ad @ xhrio.js:922
+(anonymous) @ xhrio.js:1052
+this @ xhrio.js:1050
+od @ fetchxmlhttpfactory.js:237
+pd @ fetchxmlhttpfactory.js:559
+(anonymous) @ fetchxmlhttpfactory.js:410
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+main.js?v=139:5684 🤫 Permisos de Hermano actualizados silenciosamente desde Firebase Cloud para: dbaezh78@gmail.com
+main.js?v=139:5684 🎵 [Acordes] Santo Roma 77 (LDER L:8): 'Sol' movido de posición 10 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santoroma77): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santoroma77
+main.js?v=139:5684 ✅ [Acordes Guardados] Canto: Santo Roma 77 (ID: santoroma77) - 1 acorde(s) modificados:
+main.js?v=139:5684   └─ [LDER L:8 Sub:1]: 'Sol' movido de 10 a 5
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/Dok3oDsrOmUDx4iUNUWj): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo Roma 77 ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalomeras65
+santopalomeras65.mp3:1  GET https://audio.resucito.do/santopalomeras65.mp3 404 (Not Found)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santoroma77
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/sLOIVKdTTpy2PeWAVW0U): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: seencontrarondosangeles
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/O5Rl6sQkaKAB8H6vgeh0): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo Roma 77 ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santoroma77
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/GQe59hiJTQM6Wwcm7vDI): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Se Encontraron Dos Ángeles ➔ 😎 (Carlos David Baez)
+santopalomeras65.mp3:1  GET https://audio.resucito.do/santopalomeras65.mp3 net::ERR_ABORTED 404 (Not Found)
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/DVDd5WDr9jNgAoMSJD1h): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo Roma 77 ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalomeras65
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalestina74
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/6aQ3QFkk0G8JBi5ZLxB8): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 4
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+santomelodiahebraica.mp3:1  GET https://audio.resucito.do/santomelodiahebraica.mp3 404 (Not Found)
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/bO6w3hmCVw5ylbGDqhWy): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santomelodiahebraica
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 0
+santo1988.mp3:1  GET https://audio.resucito.do/santo1988.mp3 404 (Not Found)
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santo1988". Cargando acordes del canto.
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/7UwvI4fO4EuYfJRNKw0G): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+santo1982.mp3:1  GET https://audio.resucito.do/santo1982.mp3 404 (Not Found)
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santo1982". Cargando acordes del canto.
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/R5uNEhDf8pIGE1PX68LP): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:1): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:2): 'Sol' movido de posición 15 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:2): 'La' movido de posición 105 a 80
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:3): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:4): 'Sol' movido de posición 10 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:4): 'La' movido de posición 105 a 80
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:5): 'Sol' movido de posición 25 a 10
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:5): 'La' movido de posición 150 a 115
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:7): 'Fa' movido de posición 15 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:7): 'Mi' movido de posición 155 a 170
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:8): 'Fa' movido de posición 75 a 70
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:8): 'Mi' movido de posición 205 a 205
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:11): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:12): 'Fa' movido de posición 70 a 55
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:12): 'Mi' movido de posición 190 a 165
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:14): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:15): 'Re' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:16): 'Fa' movido de posición 70 a 55
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:16): 'Mi' movido de posición 190 a 165
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'La' movido de posición 210 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:2): 'Re' movido de posición 70 a 55
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:2): 'Mi' movido de posición 210 a 200
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:3): 'Re' movido de posición 70 a 55
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:3): 'Mi' movido de posición 210 a 200
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Rem' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Fa' movido de posición 70 a 50
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Mi' movido de posición 190 a 165
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Rem' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Fa' movido de posición 70 a 55
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:5): 'Mi' movido de posición 190 a 160
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1982): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1982
+main.js?v=139:5684 ✅ [Acordes Guardados] Canto: Santo (ID: santo1982) - 32 acorde(s) modificados:
+main.js?v=139:5684   └─ [LIZQ L:1]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:2]: 'Sol' movido de 15 a 0
+main.js?v=139:5684   └─ [LIZQ L:2]: 'Lam' movido de 105 a 80
+main.js?v=139:5684   └─ [LIZQ L:3]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:4]: 'Sol' movido de 10 a 0
+main.js?v=139:5684   └─ [LIZQ L:4]: 'Lam' movido de 105 a 80
+main.js?v=139:5684   └─ [LIZQ L:5]: 'Sol' movido de 25 a 10
+main.js?v=139:5684   └─ [LIZQ L:5]: 'Lam' movido de 150 a 115
+main.js?v=139:5684   └─ [LIZQ L:7]: 'Fa' movido de 15 a 0
+main.js?v=139:5684   └─ [LIZQ L:7]: 'Mi' movido de 155 a 170
+main.js?v=139:5684   └─ [LIZQ L:8]: 'Fa' movido de 75 a 70
+main.js?v=139:5684   └─ [LIZQ L:10]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:11]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:12]: 'Fa' movido de 70 a 55
+main.js?v=139:5684   └─ [LIZQ L:12]: 'Mi' movido de 190 a 165
+main.js?v=139:5684   └─ [LIZQ L:14]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:15]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:16]: 'Fa' movido de 70 a 55
+main.js?v=139:5684   └─ [LIZQ L:16]: 'Mi' movido de 190 a 165
+main.js?v=139:5684   └─ [LDER L:1]: 'Lam' movido de 210 a 0
+main.js?v=139:5684   └─ [LDER L:2]: 'Rem' movido de 70 a 55
+main.js?v=139:5684   └─ [LDER L:2]: 'Mi' movido de 210 a 200
+main.js?v=139:5684   └─ [LDER L:3]: 'Rem' movido de 70 a 55
+main.js?v=139:5684   └─ [LDER L:3]: 'Mi' movido de 210 a 200
+main.js?v=139:5684   └─ [LDER L:5 Trigger]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:5 Sub:1]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:5 Sub:2]: 'Fa' movido de 70 a 50
+main.js?v=139:5684   └─ [LDER L:5 Sub:2]: 'Mi' movido de 190 a 165
+main.js?v=139:5684   └─ [LDER L:5 Sub:4]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:5 Sub:5]: 'Rem' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:5 Sub:6]: 'Fa' movido de 70 a 55
+main.js?v=139:5684   └─ [LDER L:5 Sub:6]: 'Mi' movido de 190 a 160
+main.js?v=139:5702 [2026-09-21T17:30:05.849Z]  @firebase/firestore: Firestore (10.7.1): Failed to obtain primary lease for action 'Apply remote event'.
+console.error @ main.js?v=139:5702
+(anonymous) @ base.js:1
+(anonymous) @ log.ts:25
+map @ log.ts:66
+(anonymous) @ indexeddb_persistence.ts:811
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+gi @ indexeddb_persistence.ts:548
+(anonymous) @ indexeddb_persistence.ts:810
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+fi @ indexeddb_persistence.ts:435
+(anonymous) @ indexeddb_persistence.ts:809
+runTransaction @ simple_db.ts:419
+await in runTransaction
+runTransaction @ indexeddb_persistence.ts:788
+(anonymous) @ local_store_impl.ts:571
+(anonymous) @ sync_engine_impl.ts:505
+__PRIVATE_watchChangeAggregator @ remote_store.ts:495
+__PRIVATE_onWatchStreamChange @ remote_store.ts:59
+await in __PRIVATE_onWatchStreamChange
+(anonymous) @ persistent_stream.ts:655
+(anonymous) @ persistent_stream.ts:529
+(anonymous) @ persistent_stream.ts:574
+then @ async_queue_impl.ts:137
+__PRIVATE_operationInProgress @ async_queue_impl.ts:327
+Promise.then
+op @ async_queue_impl.ts:188
+enqueue @ async_queue_impl.ts:135
+enqueueAndForget @ async_queue_impl.ts:96
+(anonymous) @ persistent_stream.ts:572
+(anonymous) @ persistent_stream.ts:527
+Vo @ webchannel_connection.ts:56
+(anonymous) @ webchannel_connection.ts:397
+(anonymous) @ webchannel_connection.ts:298
+B$1 @ eventtarget.js:91
+C$1 @ eventtarget.js:490
+(anonymous) @ webchannelbasetransport.js:429
+(anonymous) @ structs.js:194
+rc @ channelrequest.js:950
+(anonymous) @ channelrequest.js:626
+(anonymous) @ channelrequest.js:656
+B$1 @ eventtarget.js:91
+C$1 @ eventtarget.js:490
+Ad @ xhrio.js:922
+(anonymous) @ xhrio.js:1052
+this @ xhrio.js:1050
+od @ fetchxmlhttpfactory.js:237
+(anonymous) @ fetchxmlhttpfactory.js:419
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:358
+Promise.then
+(anonymous) @ fetchxmlhttpfactory.js:272
+(anonymous) @ xhrio.js:739
+requestUri_ @ webchanneldebug.js:83
+httpHeadersOverwriteParam_ @ webchannelbase.js:2079
+(anonymous) @ webchannelbase.js:1718
+(anonymous) @ freelist.js:55
+Promise.then
+(anonymous) @ run.js:115
+(anonymous) @ webchannelbase.js:1686
+backChannelRequest_ @ webchannelbase.js:639
+(anonymous) @ xhrio.js:1358
+(anonymous) @ channelrequest.js:656
+B$1 @ eventtarget.js:91
+C$1 @ eventtarget.js:490
+Ad @ xhrio.js:922
+(anonymous) @ xhrio.js:1052
+this @ xhrio.js:1050
+od @ fetchxmlhttpfactory.js:237
+pd @ fetchxmlhttpfactory.js:559
+(anonymous) @ fetchxmlhttpfactory.js:410
+Promise.then
+handleSendFailure_ @ fetchxmlhttpfactory.js:468
+(anonymous) @ fetchxmlhttpfactory.js:425
+main.js?v=139:5702 [2026-09-21T17:30:05.865Z]  @firebase/firestore: Firestore (10.7.1): Failed to obtain primary lease for action 'Backfill Indexes'.
+console.error @ main.js?v=139:5702
+(anonymous) @ base.js:1
+(anonymous) @ log.ts:25
+map @ log.ts:66
+(anonymous) @ indexeddb_persistence.ts:811
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+gi @ indexeddb_persistence.ts:548
+(anonymous) @ indexeddb_persistence.ts:810
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+fi @ indexeddb_persistence.ts:435
+(anonymous) @ indexeddb_persistence.ts:809
+runTransaction @ simple_db.ts:419
+await in runTransaction
+runTransaction @ indexeddb_persistence.ts:788
+te @ index_backfiller.ts:126
+(anonymous) @ index_backfiller.ts:91
+(anonymous) @ async_queue.ts:200
+then @ async_queue_impl.ts:137
+__PRIVATE_operationInProgress @ async_queue_impl.ts:327
+Promise.then
+op @ async_queue_impl.ts:188
+enqueue @ async_queue_impl.ts:135
+enqueueAndForget @ async_queue_impl.ts:96
+handleDelayElapsed @ async_queue.ts:194
+(anonymous) @ async_queue.ts:168
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/cfie6Grcql9MGF9aTKf1): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: salvereinadeloscielos
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 0
+santo1982.mp3:1  GET https://audio.resucito.do/santo1982.mp3 404 (Not Found)
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santo1982
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/RY7M20lIYlvSxiq3TlUp): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Salve, Reina De Los Cielos ➔ 😎 (Carlos David Baez)
+santo1988.mp3:1  GET https://audio.resucito.do/santo1988.mp3 net::ERR_ABORTED 404 (Not Found)
+main.js?v=139:5684 🎵 [Canto] No se encontraron posiciones en la nube para "santo1988". Cargando acordes del canto.
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/adWBUms1Lh3ugu2NKyIQ): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:1): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:1): 'Sol' movido de posición 80 a 70
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:1): 'La' movido de posición 150 a 140
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:2): 'Sol' movido de posición 85 a 70
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:2): 'La' movido de posición 160 a 140
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:4): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:4): 'Sol' movido de posición 150 a 155
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:5): 'La' movido de posición 150 a 195
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:6): 'Sol' movido de posición 195 a 165
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:7): 'La' movido de posición 180 a 200
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:9): 'Fa' movido de posición 45 a 25
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:9): 'Mi' movido de posición 240 a 235
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'Fa' movido de posición 45 a 25
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'Mi' movido de posición 280 a 245
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:10): 'Mi' movido de posición 245 a 245
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:12): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:12): 'Sol' movido de posición 90 a 75
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:12): 'La' movido de posición 175 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:13): 'Sol' movido de posición 90 a 75
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LIZQ L:13): 'La' movido de posición 175 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'La' movido de posición 15 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:1): 'Sol' movido de posición 195 a 185
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:2): 'La' movido de posición 210 a 185
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:3): 'Sol' movido de posición 225 a 190
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:4): 'La' movido de posición 220 a 190
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Fa' movido de posición 40 a 25
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:6): 'Mi' movido de posición 240 a 240
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:7): 'Fa' movido de posición 50 a 25
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:7): 'Mi' movido de posición 280 a 240
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:9): 'La' movido de posición 20 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:9): 'Sol' movido de posición 90 a 75
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:9): 'La' movido de posición 175 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:10): 'Sol' movido de posición 90 a 70
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:10): 'La' movido de posición 175 a 140
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:12): 'Fa' movido de posición 15 a 0
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:12): 'Mi' movido de posición 145 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:13): 'Fa' movido de posición 15 a 5
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 🎵 [Acordes] Santo (LDER L:13): 'Mi' movido de posición 165 a 145
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 💾 [Firebase] Guardado en Firestore (global_positions/santo1988): [lizq, lder, ultimaActualizacion]
+main.js?v=139:5684 ☁️ [Firebase Admin] Posiciones globales publicadas para el canto santo1988
+main.js?v=139:5684 ✅ [Acordes Guardados] Canto: Santo (ID: santo1988) - 35 acorde(s) modificados:
+main.js?v=139:5684   └─ [LIZQ L:1]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:1]: 'Sol' movido de 80 a 70
+main.js?v=139:5684   └─ [LIZQ L:1]: 'Lam' movido de 150 a 140
+main.js?v=139:5684   └─ [LIZQ L:2]: 'Sol' movido de 85 a 70
+main.js?v=139:5684   └─ [LIZQ L:2]: 'Lam' movido de 160 a 140
+main.js?v=139:5684   └─ [LIZQ L:4]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:4]: 'Sol' movido de 150 a 155
+main.js?v=139:5684   └─ [LIZQ L:5]: 'Lam' movido de 150 a 195
+main.js?v=139:5684   └─ [LIZQ L:6]: 'Sol' movido de 195 a 165
+main.js?v=139:5684   └─ [LIZQ L:7]: 'Lam' movido de 180 a 200
+main.js?v=139:5684   └─ [LIZQ L:9]: 'Fa' movido de 45 a 25
+main.js?v=139:5684   └─ [LIZQ L:9]: 'Mi' movido de 240 a 235
+main.js?v=139:5684   └─ [LIZQ L:10]: 'Fa' movido de 45 a 25
+main.js?v=139:5684   └─ [LIZQ L:10]: 'Mi' movido de 280 a 245
+main.js?v=139:5684   └─ [LIZQ L:12]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LIZQ L:12]: 'Sol' movido de 90 a 75
+main.js?v=139:5684   └─ [LIZQ L:12]: 'Lam' movido de 175 a 145
+main.js?v=139:5684   └─ [LIZQ L:13]: 'Sol' movido de 90 a 75
+main.js?v=139:5684   └─ [LIZQ L:13]: 'Lam' movido de 175 a 145
+main.js?v=139:5684   └─ [LDER L:1]: 'Lam' movido de 15 a 0
+main.js?v=139:5684   └─ [LDER L:1]: 'Sol' movido de 195 a 185
+main.js?v=139:5684   └─ [LDER L:2]: 'Lam' movido de 210 a 185
+main.js?v=139:5684   └─ [LDER L:3]: 'Sol' movido de 225 a 190
+main.js?v=139:5684   └─ [LDER L:4]: 'Lam' movido de 220 a 190
+main.js?v=139:5684   └─ [LDER L:6]: 'Fa' movido de 40 a 25
+main.js?v=139:5684   └─ [LDER L:7]: 'Fa' movido de 50 a 25
+main.js?v=139:5684   └─ [LDER L:7]: 'Mi' movido de 280 a 240
+main.js?v=139:5684   └─ [LDER L:9]: 'Lam' movido de 20 a 0
+main.js?v=139:5684   └─ [LDER L:9]: 'Sol' movido de 90 a 75
+main.js?v=139:5684   └─ [LDER L:9]: 'Lam' movido de 175 a 145
+main.js?v=139:5684   └─ [LDER L:10]: 'Sol' movido de 90 a 70
+main.js?v=139:5684   └─ [LDER L:10]: 'Lam' movido de 175 a 140
+main.js?v=139:5684   └─ [LDER L:12]: 'Fa' movido de 15 a 0
+main.js?v=139:5684   └─ [LDER L:13]: 'Fa' movido de 15 a 5
+main.js?v=139:5684   └─ [LDER L:13]: 'Mi' movido de 165 a 145
+main.js?v=139:5702 [2026-09-21T17:33:31.178Z]  @firebase/firestore: Firestore (10.7.1): Failed to obtain primary lease for action 'Backfill Indexes'.
+console.error @ main.js?v=139:5702
+(anonymous) @ base.js:1
+(anonymous) @ log.ts:25
+map @ log.ts:66
+(anonymous) @ indexeddb_persistence.ts:811
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+gi @ indexeddb_persistence.ts:548
+(anonymous) @ indexeddb_persistence.ts:810
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+(anonymous) @ persistence_promise.ts:103
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ persistence_promise.ts:143
+wrapUserFunction @ persistence_promise.ts:122
+value @ persistence_promise.ts:139
+next @ persistence_promise.ts:99
+(anonymous) @ persistence_promise.ts:104
+(anonymous) @ persistence_promise.ts:70
+(anonymous) @ simple_db.ts:903
+IndexedDB
+get @ simple_db.ts:633
+fi @ indexeddb_persistence.ts:435
+(anonymous) @ indexeddb_persistence.ts:809
+runTransaction @ simple_db.ts:419
+await in runTransaction
+runTransaction @ indexeddb_persistence.ts:788
+te @ index_backfiller.ts:126
+(anonymous) @ index_backfiller.ts:91
+(anonymous) @ async_queue.ts:200
+then @ async_queue_impl.ts:137
+__PRIVATE_operationInProgress @ async_queue_impl.ts:327
+Promise.then
+op @ async_queue_impl.ts:188
+enqueue @ async_queue_impl.ts:135
+enqueueAndForget @ async_queue_impl.ts:96
+handleDelayElapsed @ async_queue.ts:194
+(anonymous) @ async_queue.ts:168
+setTimeout
+start @ async_queue.ts:160
+createAndSchedule @ async_queue.ts:160
+enqueueAfterDelay @ async_queue_impl.ts:230
+ee @ index_backfiller.ts:85
+(anonymous) @ index_backfiller.ts:109
+await in (anonymous)
+(anonymous) @ async_queue.ts:200
+then @ async_queue_impl.ts:137
+__PRIVATE_operationInProgress @ async_queue_impl.ts:327
+Promise.then
+op @ async_queue_impl.ts:188
+enqueue @ async_queue_impl.ts:135
+enqueueAndForget @ async_queue_impl.ts:96
+handleDelayElapsed @ async_queue.ts:194
+(anonymous) @ async_queue.ts:168
+santomelodiahebraica.mp3:1  GET https://audio.resucito.do/santomelodiahebraica.mp3 404 (Not Found)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santomelodiahebraica
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 0
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/9vg752X95FuPPWohRHoZ): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalestina74
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/geHXUsZcKPFgmkyGWtQI): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)
+main.js?v=139:5684 📥 [Firebase] Historial completo cargado de la nube: acorde = 0, cejilla = 4
+main.js?v=139:5684 📥 [Firebase] Nota del cantor cargada de la nube.
+santopalomeras65.mp3:1  GET https://audio.resucito.do/santopalomeras65.mp3 404 (Not Found)
+main.js?v=139:5684 📥 [Firebase] Posiciones globales de la nube aplicadas para el canto: santopalomeras65
+main.js?v=139:5684 💾 [Firebase] Agregado a Firestore (bitacora/zwNxrHtzNtaDgtcOzWAs): [cantoId, cantoTitulo, tipo, detalle, fechaStr, horaStr, timestampNum, usuarioId, usuarioEmail, usuarioNombre, datosExtra, createdAt]
+main.js?v=139:5684 📋 [Bitácora] Registrado: Santo ➔ 😎 (Carlos David Baez)

@@ -2,7 +2,7 @@
   "id": "elsembrador",
   "tt": "El Sembrador ",
   "title": "El Sembrador ",
-  "subtitle": "Marcos 4,3ss",
+  "ssemtitle": "Marcos 4,3ss",
   "category": [
     "Catecumenado",
     "Nuevo Testamento"
@@ -156,7 +156,7 @@
     },
     {
       "line": "¡QUE OIGA!",
-      "sC": "ta as sub width"
+      "sC": "ta as ssem width"
     },
     {
       "line": "",
@@ -168,7 +168,7 @@
     },
     {
       "line": "NO SEAS CAMINO., (Sol,m,24)(Re,m,142)",
-      "sC": "ta as sub width"
+      "sC": "ta as ssem width"
     },
     {
       "line": "No seas la piedra,, (Sol,m,24)(Re,m,130)",
@@ -176,7 +176,7 @@
     },
     {
       "line": "NO SEAS LA PIEDRA., (Sol,m,24)(Re,m,143)",
-      "sC": "ta as sub width"
+      "sC": "ta as ssem width"
     },
     {
       "line": "No seas espino,, (Sol,m,24)(Re,m,129)",
@@ -184,7 +184,7 @@
     },
     {
       "line": "NO SEAS ESPINO., (Sol,m,24)(Re,m,136)",
-      "sC": "ta as sub width"
+      "sC": "ta as ssem width"
     },
     {
       "line": "",
