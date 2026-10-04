@@ -1,8 +1,8 @@
 {
-  "latestVersion": "2.1.12",
+  "latestVersion": "2.1.13",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.12)",
-  "updateMessage": "Listas compartidas de solo lectura para receptores y actualización silenciosa.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.13)",
+  "updateMessage": "Sincronización en vivo silenciosa sin interrupciones.",
   "releaseNotes": [
     "Sincronización en tiempo real de enlaces compartidos para todos los usuarios.",
     "Actualización automática de listas en receptores sin duplicados.",
