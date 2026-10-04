@@ -3,10 +3,19 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // 1. Colección de enlaces cortos (PÚBLICA)
+    // 1. Colección de enlaces cortos (PÚBLICA para lectura y creación; actualización por el dueño del enlace o admin)
     match /listasCompartidas/{idCorto} {
       allow read, create: if true; 
-      allow update, delete: if false;
+      allow update: if request.auth != null && (
+        resource.data.ownerUid == request.auth.uid || 
+        resource.data.ownerUid == 'anonimo' || 
+        !('ownerUid' in resource.data) ||
+        request.auth.token.email == 'dbaezh78@gmail.com'
+      ) || request.auth == null;
+      allow delete: if request.auth != null && (
+        resource.data.ownerUid == request.auth.uid || 
+        request.auth.token.email == 'dbaezh78@gmail.com'
+      );
     }
 
     // 2. Colección de usuarios (PRIVADA - Sincroniza tonos, notas y posiciones personales)
