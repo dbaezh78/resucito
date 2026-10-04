@@ -27,7 +27,8 @@ export default defineConfig({
         firebase: path.resolve(__dirname, 'firebase.html'),
         privacidad: path.resolve(__dirname, 'privacidad.html'),
         chat: path.resolve(__dirname, 'chat.html'),
-        parroquia: path.resolve(__dirname, 'parroquia.html')
+        parroquia: path.resolve(__dirname, 'parroquia.html'),
+        datosparroquia: path.resolve(__dirname, 'datosparroquia.html')
       }
     }
   },

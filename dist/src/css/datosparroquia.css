@@ -1,0 +1,282 @@
+/* src/css/datosparroquia.css - Estilos para la página y formulario de datosparroquia.html */
+
+.datosparroquia-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 16px 12px 80px 12px;
+  font-family: inherit;
+  color: var(--text-color, #212529);
+}
+
+.datosparroquia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--panel-border, rgba(0,0,0,0.1));
+}
+
+.datosparroquia-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent-color, #d01212);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.retorno-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(208, 18, 18, 0.08);
+  color: var(--accent-color, #d01212);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+}
+
+.retorno-banner:hover {
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+}
+
+.datosparroquia-card {
+  background: var(--panel-bg, #ffffff);
+  border: 1px solid var(--panel-border, #e5e7eb);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.datosparroquia-card h2 {
+  margin: 0 0 16px 0;
+  font-size: 1.2rem;
+  color: var(--text-color, #111827);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-grid-parroquia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.campo-parroquia {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo-parroquia label {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text-color, #374151);
+}
+
+.campo-parroquia label span.req {
+  color: var(--accent-color, #d01212);
+  font-weight: 800;
+  margin-left: 2px;
+}
+
+.input-parroquia {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--panel-border, #d1d5db);
+  background: #ffffff;
+  color: var(--text-color, #111827);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-parroquia:focus {
+  border-color: var(--accent-color, #d01212);
+  box-shadow: 0 0 0 3px rgba(208, 18, 18, 0.12);
+}
+
+.pais-search-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pais-filter-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px 8px 32px;
+  border-radius: 8px;
+  border: 1.5px solid var(--panel-border, #d1d5db);
+  background: #f9fafb;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.pais-search-ico {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  font-size: 18px;
+  color: var(--text-muted, #9ca3af);
+  pointer-events: none;
+}
+
+.box-import-csv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: rgba(208, 18, 18, 0.05);
+  border: 1.5px dashed var(--accent-color, #d01212);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+}
+
+.box-import-csv-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box-import-csv-info span.icon {
+  font-size: 28px;
+  color: var(--accent-color, #d01212);
+}
+
+.box-import-csv-info h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-color, #111827);
+}
+
+.box-import-csv-info p {
+  margin: 2px 0 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted, #6b7280);
+}
+
+.btn-csv {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1.5px solid var(--panel-border, #d1d5db);
+  background: #ffffff;
+  color: var(--text-color, #374151);
+  transition: all 0.2s ease;
+}
+
+.btn-csv:hover {
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  border-color: var(--accent-color, #d01212);
+}
+
+.btn-csv.primario {
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+  border-color: var(--accent-color, #d01212);
+}
+
+.btn-csv.primario:hover {
+  background: #b01010;
+}
+
+/* Tarjeta individual de parroquia en listado */
+.tarjeta-parroquia-item {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--panel-border, #e5e7eb);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.tarjeta-parroquia-item:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: #d1d5db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.tarjeta-parroquia-info h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.05rem;
+  color: var(--text-color, #111827);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tarjeta-parroquia-detalles {
+  font-size: 0.82rem;
+  color: var(--text-muted, #6b7280);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge-parroquia-pais {
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.76rem;
+}
+
+.badge-parroquia-sector {
+  background: #fef3c7;
+  color: #92400e;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.76rem;
+}
+
+.badge-codigo-parroquia {
+  font-family: monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-color, #333);
+  padding: 2px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.badge-codigo-parroquia:hover {
+  background: var(--accent-color, #d01212);
+  color: #ffffff;
+}

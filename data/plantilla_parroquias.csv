@@ -1,7 +1,7 @@
-Pais,Parroquia,Direccion,Parroco,CantorEncargadoEmail
-República Dominicana,San Juan Bautista,Calle Duarte #12,P. Manuel García,dbaezh78@gmail.com
-República Dominicana,Nuestra Señora de la Altagracia,Av. Independencia km 8,P. Antonio Ruiz,
-España,Santa María la Blanca,Calle Mayor 45,P. Francisco Pérez,
-Estados Unidos,St. Dominic,2100 Bush St,Fr. John Smith,
-Colombia,Cristo Rey,Carrera 7 #40-20,P. Carlos Mendoza,
-México,San José Obrero,Av. Insurgentes Sur 300,P. Pedro Hernández,
+Pais,Parroquia,Sector,Direccion,Parroco,CantorEncargadoEmail
+República Dominicana,San Juan Bautista,Bella Vista,Calle Duarte #12,P. Manuel García,dbaezh78@gmail.com
+República Dominicana,Nuestra Señora de la Altagracia,Honduras,Av. Independencia km 8,P. Antonio Ruiz,
+España,Santa María la Blanca,Centro,Calle Mayor 45,P. Francisco Pérez,
+Estados Unidos,St. Dominic,Pacific Heights,2100 Bush St,Fr. John Smith,
+Colombia,Cristo Rey,Chapinero,Carrera 7 #40-20,P. Carlos Mendoza,
+México,San José Obrero,Del Valle,Av. Insurgentes Sur 300,P. Pedro Hernández,

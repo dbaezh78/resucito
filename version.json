@@ -1,12 +1,12 @@
 {
-  "latestVersion": "2.1.17",
+  "latestVersion": "2.1.18",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.17)",
-  "updateMessage": "Formulario de Parroquias con selector de países, asignación de cantor encargado e importación CSV.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.18)",
+  "updateMessage": "Formulario dedicado datosparroquia.html y selector de Parroquias integrado en Perfil.",
   "releaseNotes": [
-    "Formulario completo de parroquias: País con buscador (República Dominicana primero), Parroquia, Dirección, Párroco y Cantor Encargado.",
-    "Selector de Cantor Encargado poblado con los usuarios iniciados en la aplicación.",
-    "Importación masiva de parroquias desde archivo CSV y descarga de plantilla de formato.",
-    "Generación automática de códigos de 16 caracteres y sincronización en tiempo real."
+    "Nuevo formulario independiente datosparroquia.html con País (RD primero + buscador), Parroquia, Sector/Distrito/Barrio (obligatorio), Dirección, Párroco y Cantor Encargado.",
+    "Campo Parroquia en Perfil convertido en selector con detección de parroquias existentes y opción para crear.",
+    "Importación masiva de parroquias desde CSV y plantilla descargable con soporte de Sector.",
+    "Generación automática de códigos de acceso de 16 caracteres y sincronización con Firestore."
   ]
 }

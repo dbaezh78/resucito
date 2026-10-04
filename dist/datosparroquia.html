@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Datos de Parroquia - Resucitó</title>
+  <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/datosparroquia-CkAKdab7.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/preload-helper-44F9sIZn.js">
+  <link rel="modulepreload" crossorigin href="./assets/navegador-BwC_8PM7.js">
+  <link rel="stylesheet" crossorigin href="./assets/datosparroquia-BujIIXS1.css">
+  <link rel="stylesheet" crossorigin href="./assets/expancion-BjQ0Yl74.css">
+  <link rel="stylesheet" crossorigin href="./assets/perfil-C66_GY40.css">
+</head>
+<body>
+
+  <main class="datosparroquia-container">
+    <!-- Header principal -->
+    <div class="datosparroquia-header">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="#" id="btn-volver-atras" class="material-symbols-outlined back-btn" style="text-decoration: none; color: inherit; cursor: pointer; font-size: 28px;" title="Volver">arrow_back</a>
+        <h1>
+          <span class="material-symbols-outlined" style="font-size: 32px; color: var(--accent-color, #d01212);">church</span>
+          Datos de Parroquia
+        </h1>
+      </div>
+      <div id="usuario-sesion-parroquia" style="display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--text-muted, #666);">
+        <!-- Avatar y nombre de usuario activo -->
+      </div>
+    </div>
+
+    <!-- Banner dinámico de retorno si vino desde perfil.html -->
+    <div id="banner-retorno-wrapper" style="display: none; margin-bottom: 16px;">
+      <a href="perfil.html" id="link-banner-retorno" class="retorno-banner">
+        <span class="material-symbols-outlined" style="font-size: 18px;">arrow_back</span>
+        Volver a Mi Perfil
+      </a>
+    </div>
+
+    <!-- Caja de Importación Masiva CSV -->
+    <div class="box-import-csv">
+      <div class="box-import-csv-info">
+        <span class="material-symbols-outlined icon">csv</span>
+        <div>
+          <h4>Importación Masiva de Parroquias</h4>
+          <p>Sube tu lista de parroquias en formato CSV o descarga la plantilla oficial de ejemplo.</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button type="button" class="btn-csv" id="btn-descargar-plantilla-csv" title="Descargar plantilla CSV">
+          <span class="material-symbols-outlined" style="font-size: 18px;">download</span>
+          Descargar Plantilla CSV
+        </button>
+        <button type="button" class="btn-csv primario" id="btn-importar-csv-trigger" title="Subir archivo CSV">
+          <span class="material-symbols-outlined" style="font-size: 18px;">upload_file</span>
+          Importar Parroquias CSV
+        </button>
+        <input type="file" id="input-archivo-csv-parroquias" accept=".csv,text/csv" style="display: none;">
+      </div>
+    </div>
+
+    <!-- Tarjeta: Formulario de Registro / Edición de Parroquia -->
+    <div class="datosparroquia-card">
+      <h2>
+        <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">edit_note</span>
+        <span id="form-titulo-parroquia">Registrar Nueva Parroquia</span>
+      </h2>
+
+      <p style="font-size: 0.88rem; color: var(--text-muted, #6b7280); margin-top: -6px; margin-bottom: 20px;">
+        Los campos marcados con <span style="color: var(--accent-color, #d01212); font-weight: 800;">*</span> son obligatorios.
+      </p>
+
+      <form id="form-registro-datosparroquia" autocomplete="off">
+        <input type="hidden" id="parroquia-id-editando" value="">
+
+        <div class="form-grid-parroquia">
+          <!-- 1. PAÍS (Obligatorio) con buscador integrado -->
+          <div class="campo-parroquia" style="grid-column: 1 / -1;">
+            <label for="parroquia-pais-select">
+              País <span class="req">*</span>
+            </label>
+            <div class="pais-search-wrapper">
+              <div style="position: relative;">
+                <span class="material-symbols-outlined pais-search-ico">search</span>
+                <input type="text" id="filtro-pais-input" class="pais-filter-input" placeholder="Buscar país (ej: República Dominicana, España, Colombia...)" autocomplete="off">
+              </div>
+              <select id="parroquia-pais-select" class="input-parroquia" required>
+                <option value="">-- Selecciona el País --</option>
+              </select>
+            </div>
+            <small style="color: var(--text-muted, #6b7280); font-size: 0.78rem;">
+              República Dominicana se muestra de primero; escribe en el buscador para filtrar rápidamente entre todos los países.
+            </small>
+          </div>
+
+          <!-- 2. NOMBRE DE LA PARROQUIA (Obligatorio) -->
+          <div class="campo-parroquia">
+            <label for="parroquia-nombre-input">
+              Nombre de la Parroquia <span class="req">*</span>
+            </label>
+            <input type="text" id="parroquia-nombre-input" class="input-parroquia" placeholder="Ej: San Juan Bautista" required>
+          </div>
+
+          <!-- 3. SECTOR / DISTRITO / BARRIO (Obligatorio) -->
+          <div class="campo-parroquia">
+            <label for="parroquia-sector-input">
+              Sector / Distrito / Barrio <span class="req">*</span>
+            </label>
+            <input type="text" id="parroquia-sector-input" class="input-parroquia" placeholder="Ej: Bella Vista / Zona Colonial / Centro" required>
+          </div>
+
+          <!-- 4. DIRECCIÓN (Opcional) -->
+          <div class="campo-parroquia">
+            <label for="parroquia-direccion-input">
+              Dirección <span style="font-weight: normal; color: var(--text-muted, #6b7280); font-size: 0.8rem;">(Opcional)</span>
+            </label>
+            <input type="text" id="parroquia-direccion-input" class="input-parroquia" placeholder="Ej: Calle Principal #12 (Opcional)">
+          </div>
+
+          <!-- 5. PÁRROCO (No obligatorio / Opcional) -->
+          <div class="campo-parroquia">
+            <label for="parroquia-parroco-input">
+              Párroco <span style="font-weight: normal; color: var(--text-muted, #6b7280); font-size: 0.8rem;">(No obligatorio)</span>
+            </label>
+            <input type="text" id="parroquia-parroco-input" class="input-parroquia" placeholder="Ej: P. Manuel García (Opcional)">
+          </div>
+
+          <!-- 6. CANTOR ENCARGADO (Select de usuarios iniciados) -->
+          <div class="campo-parroquia" style="grid-column: 1 / -1;">
+            <label for="parroquia-cantor-encargado-select">
+              Cantor Encargado <span style="font-weight: normal; color: var(--text-muted, #6b7280); font-size: 0.8rem;">(Usuarios iniciados en la app)</span>
+            </label>
+            <select id="parroquia-cantor-encargado-select" class="input-parroquia">
+              <option value="">-- Seleccionar Cantor Encargado (Opcional) --</option>
+              <!-- Poblado dinámicamente con usuarios registrados en Firestore -->
+            </select>
+            <small style="color: var(--text-muted, #6b7280); font-size: 0.78rem;">
+              Lista generada automáticamente a partir de los usuarios que han iniciado sesión en el sistema.
+            </small>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end; align-items: center; flex-wrap: wrap; margin-top: 10px;">
+          <button type="button" id="btn-cancelar-edicion" class="btn-csv" style="display: none;">
+            <span class="material-symbols-outlined" style="font-size: 18px;">close</span>
+            Cancelar Edición
+          </button>
+          <button type="button" id="btn-limpiar-formulario" class="btn-csv">
+            <span class="material-symbols-outlined" style="font-size: 18px;">restart_alt</span>
+            Limpiar
+          </button>
+          <button type="submit" id="btn-guardar-parroquia-submit" class="btn-csv primario">
+            <span class="material-symbols-outlined" style="font-size: 18px;">save</span>
+            <span id="btn-guardar-texto">Guardar Parroquia</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Tarjeta: Listado y Búsqueda de Parroquias Registradas -->
+    <div class="datosparroquia-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
+        <h2 style="margin: 0;">
+          <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">church</span>
+          Parroquias Registradas (<span id="total-parroquias-badge">0</span>)
+        </h2>
+        <button type="button" id="btn-refrescar-lista" class="btn-csv" title="Actualizar lista">
+          <span class="material-symbols-outlined" style="font-size: 18px;">refresh</span>
+          Actualizar
+        </button>
+      </div>
+
+      <!-- Buscador de parroquias -->
+      <div style="position: relative; margin-bottom: 20px;">
+        <span class="material-symbols-outlined" style="position: absolute; left: 12px; top: 12px; color: var(--text-muted, #9ca3af);">search</span>
+        <input type="text" id="buscador-parroquias-input" class="input-parroquia" style="padding-left: 40px;" placeholder="Buscar por parroquia, país, sector, párroco o cantor encargado...">
+      </div>
+
+      <!-- Contenedor dinámico de tarjetas de parroquias -->
+      <div id="contenedor-listado-parroquias">
+        <div style="text-align: center; color: var(--text-muted, #6b7280); padding: 30px;">
+          <div class="spinner" style="border: 3px solid rgba(0,0,0,0.1); border-top: 3px solid var(--accent-color, #d01212); border-radius: 50%; width: 28px; height: 28px; animation: spin 1s linear infinite; margin: 0 auto 10px;"></div>
+          Cargando parroquias registradas...
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal de Alerta y Notificación -->
+  <div id="modal-notif-parroquia" class="modal-overlay" style="display: none; z-index: 100050;">
+    <div class="modal-content-card" style="max-width: 400px; width: 92%; padding: 26px 20px; border-radius: 20px; text-align: center; box-shadow: 0 20px 45px rgba(0,0,0,0.3); background: var(--panel-bg, #ffffff);">
+      <div id="modal-notif-icon-wrapper" style="width: 58px; height: 58px; margin: 0 auto 14px auto; border-radius: 50%; background: rgba(208, 18, 18, 0.1); display: flex; align-items: center; justify-content: center;">
+        <span id="modal-notif-icon" class="material-symbols-outlined" style="font-size: 32px; color: var(--accent-color, #d01212);">info</span>
+      </div>
+      <h3 id="modal-notif-titulo" style="margin: 0 0 10px 0; font-size: 1.25rem; font-weight: 800; color: var(--text-color, #111827);">Aviso</h3>
+      <p id="modal-notif-mensaje" style="font-size: 0.92rem; color: var(--text-muted, #4b5563); margin-bottom: 22px; line-height: 1.45;"></p>
+      <div style="display: flex; gap: 8px; justify-content: center;">
+        <button id="modal-notif-btn-cancelar" class="btn-csv" style="display: none; padding: 10px 18px;">Cancelar</button>
+        <button id="modal-notif-btn-ok" class="btn-csv primario" style="padding: 10px 24px;">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Scripts del sistema -->
+</body>
+</html>

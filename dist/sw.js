@@ -1,11 +1,12 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v347'; // v2.1.17 formulario de registro de parroquias e importacion csv
+const CACHE_NAME = 'resucito-cache-v348'; // v2.1.18 datosparroquia.html con sector, pais, encargado y selector en perfil
 const STATIC_ASSETS = [
   './',
   'index.html',
   'perfil.html',
   'preparar.html',
   'parroquia.html',
+  'datosparroquia.html',
   'expancion.html',
   'cliturgico.html',
   'bitacora.html',
@@ -20,6 +21,8 @@ const STATIC_ASSETS = [
   'src/js/chat.js',
   'src/css/parroquia.css',
   'src/js/parroquia.js',
+  'src/css/datosparroquia.css',
+  'src/js/datosparroquia.js',
   'src/lib/jszip.min.js',
   'src/bitacora.css',
   'src/js/bitacora.js',

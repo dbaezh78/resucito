@@ -45,10 +45,14 @@ const normalizarTexto = (texto) => {
     .trim();
 };
 
+// Cache de parroquias para perfil
+let parroquiasPerfilCache = [];
+
 // Carga inicial al cargar el DOM
 document.addEventListener('DOMContentLoaded', async () => {
   setupCollapsibles();
   await cargarPaises();
+  await cargarParroquiasPerfil();
   llenarComunidades();
   initAuthState();
 });
@@ -72,25 +76,121 @@ function setupCollapsibles() {
   });
 }
 
-// Cargar Países desde data/paises.json
+// Cargar Países desde data/paises.json con República Dominicana de primero
 async function cargarPaises() {
   const selectPais = document.getElementById('userCountry');
+  const linkCrear = document.getElementById('link-crear-parroquia');
   if (!selectPais) return;
 
   try {
     const res = await fetch('./data/paises.json');
     if (!res.ok) throw new Error('No se pudo cargar paises.json');
-    const paises = await res.json();
-    selectPais.innerHTML = '<option value="">Selecciona tu país</option>';
-    paises.forEach(p => {
-      const opt = document.createElement('option');
-      opt.value = p.nombre;
-      opt.textContent = p.nombre;
-      selectPais.appendChild(opt);
+    const data = await res.json();
+    const nombres = data.map(p => (p.nombre || p)).filter(Boolean);
+
+    // Separar República Dominicana en primer lugar
+    const idxRD = nombres.findIndex(n => normalizarTexto(n).includes('dominicana'));
+    let nombreRD = "República Dominicana";
+    if (idxRD !== -1) {
+      nombreRD = nombres.splice(idxRD, 1)[0];
+    }
+
+    // Ordenar alfabéticamente el resto
+    nombres.sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+
+    const listaPaises = [nombreRD, ...nombres];
+
+    selectPais.innerHTML = '<option value="">-- Selecciona tu país --</option>' +
+      listaPaises.map(p => {
+        const isRD = normalizarTexto(p).includes('dominicana');
+        const prefix = isRD ? '🇩🇴 ' : '';
+        return `<option value="${p}">${prefix}${p}</option>`;
+      }).join('');
+
+    // Listener de cambio de país para sincronizar parroquias y enlace de crear
+    selectPais.addEventListener('change', () => {
+      const pais = selectPais.value;
+      if (linkCrear) {
+        linkCrear.href = `datosparroquia.html?pais=${encodeURIComponent(pais)}&retorno=perfil.html`;
+      }
+      cargarParroquiasPerfil(pais);
     });
+
   } catch (e) {
     console.error("Error cargando países:", e);
     selectPais.innerHTML = '<option value="">Error al cargar países</option>';
+  }
+}
+
+// Cargar Parroquias desde Firestore para el perfil
+async function cargarParroquiasPerfil(paisFiltro = '', valorSeleccionado = '') {
+  const selectParr = document.getElementById('userParroquia');
+  const selectPais = document.getElementById('userCountry');
+  const linkCrear = document.getElementById('link-crear-parroquia');
+  if (!selectParr) return;
+
+  const paisActual = paisFiltro || (selectPais ? selectPais.value : '');
+  if (linkCrear) {
+    linkCrear.href = `datosparroquia.html?pais=${encodeURIComponent(paisActual)}&retorno=perfil.html`;
+  }
+
+  try {
+    if (parroquiasPerfilCache.length === 0) {
+      const snap = await getDocs(collection(db, "parroquias"));
+      parroquiasPerfilCache = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      parroquiasPerfilCache.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || '', 'es', { sensitivity: 'base' }));
+    }
+
+    let parroquiasFiltradas = parroquiasPerfilCache;
+    if (paisActual) {
+      parroquiasFiltradas = parroquiasPerfilCache.filter(p => {
+        return normalizarTexto(p.pais || p.ciudad || '') === normalizarTexto(paisActual);
+      });
+    }
+
+    let optionsHtml = '<option value="">-- Selecciona tu parroquia --</option>';
+
+    if (parroquiasFiltradas.length > 0) {
+      optionsHtml += parroquiasFiltradas.map(p => {
+        const sectorText = p.sector ? ` (${p.sector})` : '';
+        const paisText = !paisActual && p.pais ? ` - ${p.pais}` : '';
+        return `<option value="${p.nombre}">${p.nombre}${sectorText}${paisText}</option>`;
+      }).join('');
+    } else if (paisActual) {
+      optionsHtml += `<option value="" disabled>No hay parroquias registradas para ${paisActual}</option>`;
+    }
+
+    // Opción para crear nueva si no existe
+    optionsHtml += '<option value="__CREAR__">➕ Mi parroquia no existe (Crear Parroquia)...</option>';
+
+    selectParr.innerHTML = optionsHtml;
+
+    // Si el usuario tenía una parroquia guardada previamente que no está en la lista oficial
+    if (valorSeleccionado && valorSeleccionado !== '__CREAR__') {
+      const existeOpcion = Array.from(selectParr.options).some(o => o.value === valorSeleccionado);
+      if (!existeOpcion) {
+        const optPrev = document.createElement('option');
+        optPrev.value = valorSeleccionado;
+        optPrev.textContent = `${valorSeleccionado} (Guardada)`;
+        selectParr.insertBefore(optPrev, selectParr.lastElementChild);
+      }
+      selectParr.value = valorSeleccionado;
+    }
+
+    // Configurar listener para cuando seleccione "__CREAR__"
+    if (!selectParr.dataset.hasCrearListener) {
+      selectParr.dataset.hasCrearListener = "true";
+      selectParr.addEventListener('change', () => {
+        if (selectParr.value === '__CREAR__') {
+          const pais = selectPais ? selectPais.value : '';
+          window.location.href = `datosparroquia.html?pais=${encodeURIComponent(pais)}&retorno=perfil.html`;
+        }
+      });
+    }
+
+  } catch (err) {
+    console.warn("Error cargando parroquias para perfil:", err);
+    selectParr.innerHTML = '<option value="">-- Error cargando parroquias --</option><option value="__CREAR__">➕ Crear Parroquia...</option>';
   }
 }
 
@@ -138,11 +238,11 @@ function initAuthState() {
         }
 
         if (perfilData) {
-          aplicarDatosPerfil(perfilData);
+          await aplicarDatosPerfil(perfilData);
           localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
         } else {
           const localProfile = localStorage.getItem('user_profile_data');
-          if (localProfile) aplicarDatosPerfil(JSON.parse(localProfile));
+          if (localProfile) await aplicarDatosPerfil(JSON.parse(localProfile));
         }
 
         // 2. Registrar inicio de sesión en /usuarios/{uid}/perfil/config/inicioSesion
@@ -211,7 +311,7 @@ function mostrarBloqueoAcceso() {
   });
 }
 
-function aplicarDatosPerfil(data) {
+async function aplicarDatosPerfil(data) {
   if (!data) return;
   const selPais = document.getElementById('userCountry');
   const selParr = document.getElementById('userParroquia');
@@ -219,7 +319,10 @@ function aplicarDatosPerfil(data) {
   const selStep = document.getElementById('userStep');
 
   if (selPais && data.pais) selPais.value = data.pais;
-  if (selParr && (data.parroquia || data.nombreParroquia)) selParr.value = data.parroquia || data.nombreParroquia;
+
+  const parroquiaGuardada = data.parroquia || data.nombreParroquia || '';
+  await cargarParroquiasPerfil(data.pais || (selPais ? selPais.value : ''), parroquiaGuardada);
+
   if (selComu && (data.comunidad || data.numeroComunidad)) selComu.value = data.comunidad || data.numeroComunidad;
   if (selStep && (data.etapa !== undefined || data.etapaCamino !== undefined)) selStep.value = data.etapa ?? data.etapaCamino;
 }
@@ -232,10 +335,13 @@ window.guardarPerfil = async function () {
   const elComunidad = document.getElementById('userComunidad');
   const elStep = document.getElementById('userStep');
 
+  let valParroquia = elParroquia ? elParroquia.value : "";
+  if (valParroquia === "__CREAR__") valParroquia = "";
+
   const perfilData = {
     nombre: elName ? elName.value : "",
     pais: elPais ? elPais.value : "",
-    parroquia: elParroquia ? elParroquia.value : "",
+    parroquia: valParroquia,
     comunidad: elComunidad ? elComunidad.value : "",
     etapa: elStep ? elStep.value : "0",
     ultimaActualizacion: new Date().toISOString()
