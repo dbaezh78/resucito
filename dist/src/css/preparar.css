@@ -737,3 +737,59 @@
   gap: 8px; 
   transition: background 0.2s;
 }
+
+/* Badges y Candado para Listas Compartidas */
+.badge-pin-duenio {
+  font-size: 0.75rem;
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.badge-pin-duenio:hover {
+  background: #fde68a;
+  color: #78350f;
+  transform: scale(1.05);
+}
+
+.badge-unlocked {
+  font-size: 0.72rem;
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.badge-unlocked:hover {
+  background: #d1fae5;
+  color: #065f46;
+  transform: scale(1.05);
+}
+
+.btn-icono.candado-bloqueado {
+  background: transparent;
+  color: #64748b;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.btn-icono.candado-bloqueado:hover {
+  background: #f1f5f9;
+  color: #334155;
+  border-color: #cbd5e1;
+  transform: scale(1.1);
+}

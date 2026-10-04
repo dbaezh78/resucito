@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v342'; // v2.1.13 actualizacion automatica robusta sin modal y escucha url v
+const CACHE_NAME = 'resucito-cache-v343'; // v2.1.14 desbloqueo de edicion con pin y doble clic en candado
 const STATIC_ASSETS = [
   './',
   'index.html',

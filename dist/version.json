@@ -1,12 +1,11 @@
 {
-  "latestVersion": "2.1.13",
+  "latestVersion": "2.1.14",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.13)",
-  "updateMessage": "Sincronización en vivo silenciosa sin interrupciones.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.14)",
+  "updateMessage": "Desbloqueo de edición con PIN y doble clic en el candado.",
   "releaseNotes": [
-    "Sincronización en tiempo real de enlaces compartidos para todos los usuarios.",
-    "Actualización automática de listas en receptores sin duplicados.",
-    "Conservación de tonos, cejillas y notas de cantos fijados por el dueño.",
-    "Opción de actualizar lista existente en modal de conflictos."
+    "PIN de autorización visible en las listas del creador/dueño.",
+    "Doble clic en el candado para receptores para introducir el PIN y habilitar edición.",
+    "Sincronización en tiempo real de cambios editados con PIN."
   ]
 }

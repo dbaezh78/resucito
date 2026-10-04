@@ -370,29 +370,202 @@ window.setFiltroCategoria = (elemento, cat) => {
     renderizarListasUI(listasLocalesCache);
 };
 
-// --- UTILIDAD DE VERIFICACIÓN DE PROPIETARIO DE LISTA ---
-export function esDuenioDeLista(lista) {
+// --- UTILIDADES DE PERMISOS, PIN Y PROPIEDAD DE LISTAS ---
+
+export function estaListaDesbloqueada(lista) {
+    if (!lista) return false;
+    if (lista.desbloqueada) return true;
+    if (localStorage.getItem('desbloqueada_' + lista.id) === 'true') return true;
+    if (lista.sharedLinkId && localStorage.getItem('desbloqueada_' + lista.sharedLinkId) === 'true') return true;
+    return false;
+}
+window.estaListaDesbloqueada = estaListaDesbloqueada;
+
+export function esCreadorOriginal(lista) {
     if (!lista) return false;
     const user = auth.currentUser;
-    const esCompartida = !!(lista.isShared || (lista.nombre && lista.nombre.startsWith('🔗')) || lista.sharedLinkId || String(lista.id).startsWith('imp-'));
-    if (!esCompartida) return true;
-
     // Administrador general
     if (user && user.email === 'dbaezh78@gmail.com') return true;
+
+    // Si es lista importada desde enlace ajeno
+    if (lista.esImportada || String(lista.id).startsWith('imp-')) {
+        if (user && lista.ownerUid && user.uid === lista.ownerUid) return true;
+        return false;
+    }
 
     // Usuario autenticado creador del enlace
     if (user && lista.ownerUid && user.uid === lista.ownerUid) return true;
 
     // Lista creada originalmente en este dispositivo/sesión (no importada desde enlace ajeno)
-    if (!lista.esImportada && !String(lista.id).startsWith('imp-')) {
-        if (!lista.ownerUid || lista.ownerUid === (user?.uid || 'anonimo')) {
-            return true;
-        }
+    if (!lista.ownerUid || lista.ownerUid === (user?.uid || 'anonimo')) {
+        return true;
     }
 
     return false;
 }
+window.esCreadorOriginal = esCreadorOriginal;
+
+export function obtenerPinLista(lista, idCorto) {
+    if (lista && lista.editPin) return String(lista.editPin);
+    const key = idCorto || (lista && (lista.sharedLinkId || lista.id));
+    if (key) {
+        const pinGuardado = localStorage.getItem('lista_pin_' + key);
+        if (pinGuardado) return pinGuardado;
+    }
+    // Generar PIN determinista de 4 dígitos basado en el identificador
+    const seed = String(key || (lista && lista.nombre) || 'resucito');
+    let hash = 0;
+    for (let i = 0; i < seed.length; i++) {
+        hash = ((hash << 5) - hash) + seed.charCodeAt(i);
+        hash |= 0;
+    }
+    const pin = String(Math.abs(hash) % 9000 + 1000);
+    if (key) {
+        try { localStorage.setItem('lista_pin_' + key, pin); } catch(e) {}
+    }
+    if (lista) {
+        lista.editPin = pin;
+    }
+    return pin;
+}
+window.obtenerPinLista = obtenerPinLista;
+
+export function esDuenioDeLista(lista) {
+    if (!lista) return false;
+    const esCompartida = !!(lista.isShared || (lista.nombre && lista.nombre.startsWith('🔗')) || lista.sharedLinkId || String(lista.id).startsWith('imp-'));
+    if (!esCompartida) return true;
+
+    // Si ha sido desbloqueada con PIN
+    if (estaListaDesbloqueada(lista)) return true;
+
+    // Si es creador original
+    if (esCreadorOriginal(lista)) return true;
+
+    return false;
+}
 window.esDuenioDeLista = esDuenioDeLista;
+
+let ultimoClickCandado = 0;
+let timerClickCandado = null;
+
+window.clickCandado = (idLista) => {
+    const ahora = Date.now();
+    if (ahora - ultimoClickCandado < 500) {
+        clearTimeout(timerClickCandado);
+        ultimoClickCandado = 0;
+        window.solicitarDesbloqueoLista(idLista);
+    } else {
+        ultimoClickCandado = ahora;
+        clearTimeout(timerClickCandado);
+        timerClickCandado = setTimeout(() => {
+            mostrarNotificacionTip("🔒 Haz doble clic en el candado para desbloquear la edición con código.");
+        }, 300);
+    }
+};
+
+window.solicitarDesbloqueoLista = (idLista) => {
+    const lista = (listasLocalesCache || []).find(l => l.id === idLista);
+    if (!lista) return;
+
+    const pinEsperado = obtenerPinLista(lista, lista.sharedLinkId);
+    const pinIngresado = prompt("🔑 Introduce el código de 4 dígitos proporcionado por el dueño para editar esta lista:");
+    
+    if (pinIngresado === null) return;
+    const pinLimpio = pinIngresado.trim();
+    if (!pinLimpio) return;
+
+    if (pinLimpio === pinEsperado) {
+        lista.desbloqueada = true;
+        try {
+            localStorage.setItem('desbloqueada_' + lista.id, 'true');
+            if (lista.sharedLinkId) {
+                localStorage.setItem('desbloqueada_' + lista.sharedLinkId, 'true');
+            }
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+        } catch(e) {}
+
+        renderizarListasUI(listasLocalesCache);
+        mostrarNotificacionVerde("🔓 ¡Lista desbloqueada! Ahora puedes editarla.");
+    } else {
+        mostrarAlertaCustom(`El código introducido ("${pinLimpio}") no coincide con el de esta lista. Solicita el código de 4 dígitos al creador.`, "Código Incorrecto", "error");
+    }
+};
+
+window.bloquearLista = (idLista) => {
+    const lista = (listasLocalesCache || []).find(l => l.id === idLista);
+    if (!lista) return;
+
+    if (confirm(`¿Deseas volver a bloquear la lista "${lista.nombre}" en este dispositivo como solo lectura?`)) {
+        lista.desbloqueada = false;
+        try {
+            localStorage.removeItem('desbloqueada_' + lista.id);
+            if (lista.sharedLinkId) {
+                localStorage.removeItem('desbloqueada_' + lista.sharedLinkId);
+            }
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+        } catch(e) {}
+
+        renderizarListasUI(listasLocalesCache);
+        mostrarNotificacionTip("🔒 Lista en modo solo lectura.");
+    }
+};
+
+window.copiarPinLista = async (pin) => {
+    try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(pin);
+            mostrarNotificacionVerde(`🔑 Código ${pin} copiado`);
+        } else {
+            prompt("Código de autorización para compartir:", pin);
+        }
+    } catch(e) {
+        prompt("Código de autorización para compartir:", pin);
+    }
+};
+
+function mostrarNotificacionTip(mensaje, icono = "lock") {
+    let toast = document.getElementById('toast-notificacion-tip');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'toast-notificacion-tip';
+        toast.style.cssText = `
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-20px);
+            background: #1e293b;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            z-index: 99999;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-align: center;
+            max-width: 90vw;
+        `;
+        document.body.appendChild(toast);
+    }
+
+    toast.innerHTML = `<span class="material-symbols-outlined" style="font-size: 19px; color: #38bdf8;">${icono}</span> ${mensaje}`;
+    
+    requestAnimationFrame(() => {
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateX(-50%) translateY(0)';
+    });
+
+    clearTimeout(toast._timeout);
+    toast._timeout = setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateX(-50%) translateY(-20px)';
+    }, 3500);
+}
 
 function crearTarjetaLista(idLista, data, contenedor) {
     if (!data) return;
@@ -409,10 +582,22 @@ function crearTarjetaLista(idLista, data, contenedor) {
         ? `<span class="badge-link-id" style="font-size: 0.72rem; background: #e0f2fe; color: #0284c7; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 2px;" title="Enlace compartido activo: ?v=${data.sharedLinkId}">🔗 ${data.sharedLinkId}</span>` 
         : '';
 
-    const esDuenio = esDuenioDeLista(data);
-    const botonEditar = esDuenio
+    const esCreador = esCreadorOriginal(data);
+    const estaDesbloqueada = !esCreador && estaListaDesbloqueada(data);
+    const puedeEditar = esDuenioDeLista(data);
+    const pin = (esCreador || estaDesbloqueada) ? obtenerPinLista(data, data.sharedLinkId) : (data.editPin || null);
+
+    const pinBadge = (esCreador && (data.sharedLinkId || data.isShared))
+        ? `<span class="badge-pin-duenio" onclick="event.stopPropagation(); window.copiarPinLista('${pin}')" title="Código de autorización para permitir editar esta lista a otros (Haz clic para copiar)" style="font-size: 0.72rem; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; padding: 2px 7px; border-radius: 4px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;">🔑 PIN: ${pin}</span>`
+        : '';
+
+    const unlockedBadge = estaDesbloqueada
+        ? `<span class="badge-unlocked" onclick="event.stopPropagation(); window.bloquearLista('${idLista}')" style="font-size: 0.70rem; background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 2px; cursor: pointer;" title="Edición desbloqueada con PIN (Haz clic para volver a bloquear)">🔓 Desbloqueada</span>`
+        : '';
+
+    const botonEditar = puedeEditar
         ? `<button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}', '${catEscapada}')" title="Editar"><span class="material-symbols-outlined">edit</span></button>`
-        : `<span class="btn-icono-disabled" title="Lista compartida de solo lectura (solo el creador puede editarla)" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; color: #94a3b8; cursor: default;"><span class="material-symbols-outlined" style="font-size: 1.15rem;">lock</span></span>`;
+        : `<button type="button" class="btn-icono candado-bloqueado" ondblclick="window.solicitarDesbloqueoLista('${idLista}')" onclick="window.clickCandado('${idLista}')" title="Lista de solo lectura. Haz DOBLE CLIC en el candado para desbloquear la edición con código" style="cursor: pointer; color: #64748b; background: transparent; border: none; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px;"><span class="material-symbols-outlined" style="font-size: 1.15rem;">lock</span></button>`;
     
     const div = document.createElement('div');
     div.className = 'tarjeta-lista-wrapper';
@@ -423,6 +608,8 @@ function crearTarjetaLista(idLista, data, contenedor) {
                 <strong>${nombre}</strong>
                 <span title="${esNube ? 'Sincronizada' : 'Local'}">${icono}</span>
                 ${sharedBadge}
+                ${pinBadge}
+                ${unlockedBadge}
                 <span>${ids.length} cantos</span>
             </div>
             <div class="acciones-lista" onclick="event.stopPropagation()">
@@ -504,6 +691,8 @@ function sincronizarEscuchasEnlaceCompartido() {
                         sharedLinkId: linkId,
                         ownerUid: data.ownerUid,
                         ownerName: data.ownerName,
+                        editPin: data.editPin || obtenerPinLista(null, linkId),
+                        desbloqueada: !!(localStorage.getItem('desbloqueada_' + nuevoId) === 'true' || localStorage.getItem('desbloqueada_' + linkId) === 'true'),
                         esImportada: !esCreador
                     };
                     cache.unshift(target);
@@ -516,7 +705,7 @@ function sincronizarEscuchasEnlaceCompartido() {
                 const nombreNuevo = data.n ? (data.n.startsWith('🔗') ? data.n : `🔗 ${data.n}`) : target.nombre;
                 const catNueva = data.c || target.categoria;
 
-                if (strActual !== strNuevo || target.nombre !== nombreNuevo || target.categoria !== catNueva || target.sharedLinkId !== linkId) {
+                if (strActual !== strNuevo || target.nombre !== nombreNuevo || target.categoria !== catNueva || target.sharedLinkId !== linkId || (data.editPin && target.editPin !== data.editPin)) {
                     console.log(`✨ Sincronización en vivo silenciosa aplicada para "${target.nombre}" (${nuevosCantos.length} cantos)`);
                     target.ids_cantos = nuevosCantos;
                     target.nombre = nombreNuevo;
@@ -525,6 +714,10 @@ function sincronizarEscuchasEnlaceCompartido() {
                     target.isShared = true;
                     target.ownerUid = data.ownerUid || target.ownerUid;
                     target.ownerName = data.ownerName || target.ownerName;
+                    target.editPin = data.editPin || target.editPin || obtenerPinLista(target, linkId);
+                    if (localStorage.getItem('desbloqueada_' + target.id) === 'true' || localStorage.getItem('desbloqueada_' + linkId) === 'true') {
+                        target.desbloqueada = true;
+                    }
                     target.ultimaActualizacion = new Date().toISOString();
                         
                         localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
@@ -1182,6 +1375,9 @@ window.guardarListaFirebase = async (btn) => {
         if (sharedLinkId) isShared = true;
     }
 
+    const pin = obtenerPinLista(listaPrevia || existe, sharedLinkId);
+    const estaDesbloqueada = estaListaDesbloqueada(listaPrevia || existe);
+
     const nuevaLista = { 
         id: listaIdFinal, 
         nombre: nombreFinal, 
@@ -1191,8 +1387,16 @@ window.guardarListaFirebase = async (btn) => {
         origin: 'local',
         pendingSync: user ? true : false,
         isShared: isShared,
-        sharedLinkId: sharedLinkId
+        sharedLinkId: sharedLinkId,
+        editPin: pin,
+        desbloqueada: estaDesbloqueada
     };
+
+    if (listaPrevia) {
+        if (listaPrevia.ownerUid) nuevaLista.ownerUid = listaPrevia.ownerUid;
+        if (listaPrevia.ownerName) nuevaLista.ownerName = listaPrevia.ownerName;
+        if (listaPrevia.esImportada !== undefined) nuevaLista.esImportada = listaPrevia.esImportada;
+    }
 
     if (sharedLinkId) {
         const listaExistente = listadoBase.find(l => l.sharedLinkId === sharedLinkId || l.id === sharedLinkId);
@@ -1202,30 +1406,38 @@ window.guardarListaFirebase = async (btn) => {
             try {
                 const sharedDocRef = doc(db, "listasCompartidas", sharedLinkId);
                 const allowed = finalIdsCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
-            await setDoc(sharedDocRef, {
-                n: nombreFinal,
-                c: categoria || "Otros",
-                i: finalIdsCantos,
-                actualizado: serverTimestamp(),
-                ownerUid: user?.uid || 'anonimo',
-                ownerName: user?.displayName || user?.email || '',
-                allowedSongIds: allowed
-            }, { merge: true });
+                
+                const datosDoc = {
+                    n: nombreFinal,
+                    c: categoria || "Otros",
+                    i: finalIdsCantos,
+                    editPin: pin,
+                    actualizado: serverTimestamp(),
+                    allowedSongIds: allowed
+                };
 
-            if (normalizarTexto(nombreFinal) === 'test' && sharedLinkId !== 'f8cuyo') {
-                try {
-                    await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
-                        n: nombreFinal,
-                        c: categoria || "Otros",
-                        i: finalIdsCantos,
-                        actualizado: serverTimestamp(),
-                        allowedSongIds: allowed
-                    }, { merge: true });
-                } catch(e) {}
+                if (esCreadorOriginal(listaExistente || listaPrevia)) {
+                    datosDoc.ownerUid = user?.uid || 'anonimo';
+                    datosDoc.ownerName = user?.displayName || user?.email || '';
+                }
+
+                await setDoc(sharedDocRef, datosDoc, { merge: true });
+
+                if (normalizarTexto(nombreFinal) === 'test' && sharedLinkId !== 'f8cuyo') {
+                    try {
+                        await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
+                            n: nombreFinal,
+                            c: categoria || "Otros",
+                            i: finalIdsCantos,
+                            editPin: pin,
+                            actualizado: serverTimestamp(),
+                            allowedSongIds: allowed
+                        }, { merge: true });
+                    } catch(e) {}
+                }
+            } catch (e) {
+                console.warn("Error actualizando enlace compartido en Firebase al guardar:", e);
             }
-        } catch (e) {
-            console.warn("Error actualizando enlace compartido en Firebase al guardar:", e);
-        }
         }
     }
 
@@ -1333,20 +1545,26 @@ window.compartirUniversal = async (idLista) => {
         const esDuenio = esDuenioDeLista(lista);
 
         if (esDuenio) {
+            const pin = obtenerPinLista(lista, idCorto);
+            lista.editPin = pin;
             const docRef = doc(db, "listasCompartidas", idCorto);
             const enrichedCantos = enriquecerCantosConConfiguracion(lista.ids_cantos);
             const allowed = enrichedCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
 
-            await setDoc(docRef, {
+            const datosDoc = {
                 n: lista.nombre,
                 c: lista.categoria || "Otros",
                 i: enrichedCantos,
-                creado: serverTimestamp(),
+                editPin: pin,
                 actualizado: serverTimestamp(),
-                ownerUid: user?.uid || 'anonimo',
-                ownerName: user?.displayName || user?.email || '',
                 allowedSongIds: allowed
-            }, { merge: true });
+            };
+            if (esCreadorOriginal(lista)) {
+                datosDoc.ownerUid = user?.uid || 'anonimo';
+                datosDoc.ownerName = user?.displayName || user?.email || '';
+            }
+
+            await setDoc(docRef, datosDoc, { merge: true });
 
             if (normalizarTexto(lista.nombre) === 'test' && idCorto !== 'f8cuyo') {
                 try {
@@ -1354,6 +1572,7 @@ window.compartirUniversal = async (idLista) => {
                         n: lista.nombre,
                         c: lista.categoria || "Otros",
                         i: enrichedCantos,
+                        editPin: pin,
                         actualizado: serverTimestamp(),
                         allowedSongIds: allowed
                     }, { merge: true });
@@ -1402,20 +1621,26 @@ window.copiarSoloLink = async (idLista) => {
         const esDuenio = esDuenioDeLista(lista);
 
         if (esDuenio) {
+            const pin = obtenerPinLista(lista, idCorto);
+            lista.editPin = pin;
             const docRef = doc(db, "listasCompartidas", idCorto);
             const enrichedCantos = enriquecerCantosConConfiguracion(lista.ids_cantos);
             const allowed = enrichedCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
 
-            await setDoc(docRef, {
+            const datosDoc = {
                 n: lista.nombre,
                 c: lista.categoria || "Otros",
                 i: enrichedCantos,
-                creado: serverTimestamp(),
+                editPin: pin,
                 actualizado: serverTimestamp(),
-                ownerUid: user?.uid || 'anonimo',
-                ownerName: user?.displayName || user?.email || '',
                 allowedSongIds: allowed
-            }, { merge: true });
+            };
+            if (esCreadorOriginal(lista)) {
+                datosDoc.ownerUid = user?.uid || 'anonimo';
+                datosDoc.ownerName = user?.displayName || user?.email || '';
+            }
+
+            await setDoc(docRef, datosDoc, { merge: true });
 
             if (normalizarTexto(lista.nombre) === 'test' && idCorto !== 'f8cuyo') {
                 try {
@@ -1423,6 +1648,7 @@ window.copiarSoloLink = async (idLista) => {
                         n: lista.nombre,
                         c: lista.categoria || "Otros",
                         i: enrichedCantos,
+                        editPin: pin,
                         actualizado: serverTimestamp(),
                         allowedSongIds: allowed
                     }, { merge: true });
@@ -1444,12 +1670,13 @@ window.copiarSoloLink = async (idLista) => {
         }
 
         const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
+        const pin = obtenerPinLista(lista, idCorto);
         
         if (navigator.clipboard && navigator.clipboard.writeText) {
             await navigator.clipboard.writeText(urlFinal);
-            alert(`✅ Enlace copiado al portapapeles:\n${urlFinal}`);
+            alert(`✅ Enlace copiado al portapapeles:\n${urlFinal}\n\n🔑 PIN de edición: ${pin}`);
         } else {
-            prompt("Copia este enlace compartido:", urlFinal);
+            prompt(`Copia este enlace compartido (PIN de edición: ${pin}):`, urlFinal);
         }
     } catch (e) { 
         console.error("Error al copiar link:", e); 
@@ -1762,6 +1989,10 @@ async function detectarLinkCompartido(usuarioActual) {
             listaCoincidente.sharedLinkId = idCorto;
             listaCoincidente.ownerUid = datosCanto.ownerUid;
             listaCoincidente.ownerName = datosCanto.ownerName;
+            listaCoincidente.editPin = datosCanto.editPin || listaCoincidente.editPin || obtenerPinLista(listaCoincidente, idCorto);
+            if (localStorage.getItem('desbloqueada_' + listaCoincidente.id) === 'true' || localStorage.getItem('desbloqueada_' + idCorto) === 'true') {
+                listaCoincidente.desbloqueada = true;
+            }
             listaCoincidente.esImportada = !esCreadorDelEnlace;
             listaCoincidente.pendingSync = !!user;
 
@@ -1806,6 +2037,8 @@ async function detectarLinkCompartido(usuarioActual) {
                 sharedLinkId: idCorto,
                 ownerUid: datosCanto.ownerUid,
                 ownerName: datosCanto.ownerName,
+                editPin: datosCanto.editPin || obtenerPinLista(null, idCorto),
+                desbloqueada: !!(localStorage.getItem('desbloqueada_' + nuevoId) === 'true' || localStorage.getItem('desbloqueada_' + idCorto) === 'true'),
                 esImportada: !esCreadorDelEnlace
             };
             cache = cache.filter(l => l.id !== nuevoId);
