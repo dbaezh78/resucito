@@ -1,10 +1,12 @@
 {
-  "latestVersion": "2.1.15",
+  "latestVersion": "2.1.16",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.15)",
-  "updateMessage": "Códigos de listas y autorización exclusivamente de 4 dígitos numéricos.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.16)",
+  "updateMessage": "Módulo de Parroquia para preparaciones de Eucaristía y asignación de cantores.",
   "releaseNotes": [
-    "Códigos de listas compartidas y PIN exclusivamente numéricos de 4 dígitos.",
-    "Compatibilidad con listas previas y desbloqueo directo con PIN de 4 dígitos."
+    "Nuevo módulo de Parroquia con código de acceso de 16 caracteres y gestión de miembros.",
+    "Preparación litúrgica comunitaria y asignación individual de cantores por canto.",
+    "Sincronización en vivo con Autoguardado en tiempo real.",
+    "Optimización de códigos PIN en listas de preparación."
   ]
 }

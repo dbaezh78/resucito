@@ -1,10 +1,11 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v344'; // v2.1.15 codigos de lista exclusivamente de 4 digitos numericos
+const CACHE_NAME = 'resucito-cache-v346'; // v2.1.16 modulo de parroquia y preparaciones de eucaristia
 const STATIC_ASSETS = [
   './',
   'index.html',
   'perfil.html',
   'preparar.html',
+  'parroquia.html',
   'expancion.html',
   'cliturgico.html',
   'bitacora.html',
@@ -17,6 +18,8 @@ const STATIC_ASSETS = [
   'img/Cristo_1.png',
   'src/css/chat.css',
   'src/js/chat.js',
+  'src/css/parroquia.css',
+  'src/js/parroquia.js',
   'src/lib/jszip.min.js',
   'src/bitacora.css',
   'src/js/bitacora.js',

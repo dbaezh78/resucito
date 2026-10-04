@@ -615,10 +615,6 @@ function crearTarjetaLista(idLista, data, contenedor) {
         ? data.sharedLinkId
         : obtenerPinLista(data, data.sharedLinkId);
 
-    const sharedBadge = data.sharedLinkId 
-        ? `<span class="badge-link-id" style="font-size: 0.72rem; background: #e0f2fe; color: #0284c7; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 2px;" title="Código de la lista: ${codigo4Digitos}">🔗 ${codigo4Digitos}</span>` 
-        : '';
-
     const esCreador = esCreadorOriginal(data);
     const estaDesbloqueada = !esCreador && estaListaDesbloqueada(data);
     const puedeEditar = esDuenioDeLista(data);
@@ -644,7 +640,6 @@ function crearTarjetaLista(idLista, data, contenedor) {
             <div class="info-lista">
                 <strong>${nombre}</strong>
                 <span title="${esNube ? 'Sincronizada' : 'Local'}">${icono}</span>
-                ${sharedBadge}
                 ${pinBadge}
                 ${unlockedBadge}
                 <span>${ids.length} cantos</span>
