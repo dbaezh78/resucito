@@ -3,11 +3,13 @@
 import { auth, db } from '../firebase.js';
 import { 
     doc, setDoc, getDoc, deleteDoc, 
-    collection, query, onSnapshot, orderBy, serverTimestamp 
+    collection, query, onSnapshot, orderBy, serverTimestamp,
+    where, getDocs, limit 
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { songs } from '../songs-data.js';
 import { obtenerTiposCelebracion, BUILTIN_TIPOS } from './datos.js';
+import { parseChord, transposeNote } from '../chords.js';
 
 // --- ZONA DE VARIABLES DE ESTADO ---
 let listaOrdenada = [];
@@ -15,6 +17,69 @@ let todosLosCantos = [];
 let listasLocalesCache = [];
 let sincronizando = false;
 let bloqueoSnapshot = false;
+let importandoLink = false;
+
+// --- UTILIDADES DE TRANSPOSICIÓN Y ENRIQUECIMIENTO DE CANTOS ---
+export function calcularTonoTranspuesto(songId, acordeOffset) {
+    const offset = parseInt(acordeOffset) || 0;
+    const song = (Array.isArray(todosLosCantos) && todosLosCantos.length > 0 ? todosLosCantos : songs).find(s => String(s.id) === String(songId));
+    const baseChordStr = (song && song.acorde) ? song.acorde : 'La';
+    if (offset === 0) return baseChordStr;
+    const parsed = parseChord(baseChordStr);
+    const trans = transposeNote(parsed.noteName, offset);
+    return trans + (parsed.typeSuffix ? (' ' + parsed.typeSuffix) : '');
+}
+
+export function enriquecerCantosConConfiguracion(cantos) {
+    if (!Array.isArray(cantos)) return [];
+    const pool = (Array.isArray(todosLosCantos) && todosLosCantos.length > 0 ? todosLosCantos : songs);
+    return cantos.map(item => {
+        const id = String(typeof item === 'object' && item !== null ? item.id : item);
+        const tag = (typeof item === 'object' && item !== null ? (item.etiqueta || item.tag) : "N") || "N";
+        
+        let acorde = (typeof item === 'object' && item !== null && item.acorde !== undefined && item.acorde !== null) ? String(item.acorde) : null;
+        let cejilla = (typeof item === 'object' && item !== null && item.cejilla !== undefined && item.cejilla !== null) ? String(item.cejilla) : null;
+        let nota = (typeof item === 'object' && item !== null && item.nota !== undefined && item.nota !== null) ? String(item.nota) : null;
+        let tono = (typeof item === 'object' && item !== null && item.tono) ? String(item.tono) : null;
+
+        // Si falta acorde o cejilla, intentar leer de la configuración guardada localmente por el usuario
+        if (acorde === null || cejilla === null) {
+            try {
+                const localConf = JSON.parse(localStorage.getItem(`canto-config-${id}`) || '{}');
+                if (acorde === null && localConf.acorde !== undefined) {
+                    acorde = String(localConf.acorde);
+                }
+                if (cejilla === null && localConf.cejilla !== undefined) {
+                    cejilla = String(localConf.cejilla);
+                }
+            } catch (e) {}
+        }
+
+        // Si cejilla sigue sin existir, buscar valor por defecto en catálogo del canto
+        if (cejilla === null) {
+            const cMeta = pool.find(c => String(c.id) === id);
+            cejilla = (cMeta && cMeta.cejilla) ? String(cMeta.cejilla) : "0";
+        }
+
+        if (acorde === null) {
+            acorde = "0";
+        }
+
+        if (nota === null) {
+            const localNota = localStorage.getItem(`notes_${id}`);
+            nota = localNota ? localNota : "";
+        }
+
+        if (!tono) {
+            tono = calcularTonoTranspuesto(id, acorde);
+        }
+
+        const res = { id, tag, acorde, cejilla };
+        if (nota) res.nota = nota;
+        if (tono) res.tono = tono;
+        return res;
+    });
+}
 
 // --- ESTADO DE FILTRADO Y MOMENTOS LITÚRGICOS ---
 let filtroCategoriaSeleccionada = 'Todos';
@@ -59,7 +124,6 @@ export function poblarSelectYFiltrosCelebracion() {
 
 window.addEventListener('tiposCelebracionChanged', () => {
     poblarSelectYFiltrosCelebracion();
-    renderizarListasUI(listasLocalesCache);
 });
 
 // Cargar cantos excluyendo los visibilidad "index" si aplicara
@@ -111,7 +175,15 @@ const cargarDesdeEquipo = () => {
     }
 };
 
-cargarDesdeEquipo();
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        cargarDesdeEquipo();
+        detectarLinkCompartido();
+    });
+} else {
+    cargarDesdeEquipo();
+    detectarLinkCompartido();
+}
 
 // --- SINCRONIZACIÓN FIREBASE EN SEGUNDO PLANO ---
 async function ejecutarSincronizacionFondo() {
@@ -151,18 +223,30 @@ async function ejecutarSincronizacionFondo() {
                 const lista = cache[i];
                 if (lista.pendingSync) {
                     try {
-                        const listaLimpia = lista.ids_cantos.map(item => ({
-                            id: typeof item === 'object' ? item.id : item,
-                            tag: typeof item === 'object' ? item.etiqueta || item.tag : "N"
-                        }));
+                        const listaLimpia = lista.ids_cantos.map(item => {
+                            if (typeof item !== 'object' || item === null) {
+                                return { id: String(item), tag: "N" };
+                            }
+                            const res = {
+                                id: String(item.id),
+                                tag: item.etiqueta || item.tag || "N"
+                            };
+                            if (item.acorde !== undefined && item.acorde !== null) res.acorde = String(item.acorde);
+                            if (item.cejilla !== undefined && item.cejilla !== null) res.cejilla = String(item.cejilla);
+                            if (item.nota) res.nota = String(item.nota);
+                            if (item.tono) res.tono = String(item.tono);
+                            return res;
+                        });
 
                         await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", lista.id), { 
                             id: lista.id,
                             nombre: lista.nombre,
                             categoria: lista.categoria || "Otros",
                             ids_cantos: listaLimpia,
-                            ultimaActualizacion: new Date().toISOString(),
-                            origin: 'cloud' 
+                            ultimaActualizacion: lista.ultimaActualizacion || new Date().toISOString(),
+                            origin: 'cloud',
+                            isShared: !!lista.isShared,
+                            sharedLinkId: lista.sharedLinkId || null
                         });
 
                         console.log(`☁️ Sincronizada lista offline: ${lista.nombre}`);
@@ -194,8 +278,8 @@ window.addEventListener('online', () => {
 });
 
 // Escuchar cambios de autenticación
-onAuthStateChanged(auth, (user) => {
-    detectarLinkCompartido();
+onAuthStateChanged(auth, async (user) => {
+    await detectarLinkCompartido(user);
 
     if (user) {
         console.log("👤 Sesión activa:", user.displayName);
@@ -242,9 +326,17 @@ onAuthStateChanged(auth, (user) => {
             const mergedLists = Array.from(mapaListas.values());
             mergedLists.sort((a, b) => new Date(b.ultimaActualizacion || 0) - new Date(a.ultimaActualizacion || 0));
 
+            // Solo re-renderizar la UI si los datos difieren de lo que ya se está mostrando
+            const prevStr = JSON.stringify(listasLocalesCache);
+            const nextStr = JSON.stringify(mergedLists);
+            const dataChanged = (prevStr !== nextStr);
+
             listasLocalesCache = mergedLists;
-            renderizarListasUI(listasLocalesCache);
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+
+            if (dataChanged) {
+                renderizarListasUI(listasLocalesCache);
+            }
 
             const pendingLists = localCache.filter(l => l.pendingSync === true);
             if (pendingLists.length > 0 || pendingDeletions.length > 0) {
@@ -254,9 +346,13 @@ onAuthStateChanged(auth, (user) => {
     } else {
         const datosLocales = localStorage.getItem('cache_listas_personalizadas');
         if (datosLocales) {
-            listasLocalesCache = JSON.parse(datosLocales);
-            renderizarListasUI(listasLocalesCache);
-        } else {
+            const parsed = JSON.parse(datosLocales);
+            if (JSON.stringify(parsed) !== JSON.stringify(listasLocalesCache)) {
+                listasLocalesCache = parsed;
+                renderizarListasUI(listasLocalesCache);
+            }
+        } else if (listasLocalesCache.length > 0) {
+            listasLocalesCache = [];
             renderizarListasUI([]);
         }
     }
@@ -362,7 +458,11 @@ function renderizarListasUI(listas) {
         grupoWrapper.className = 'categoria-grupo-wrapper';
         const groupId = `cat-grupo-${catName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "-")}`;
         
+        const existingGroup = document.getElementById(groupId);
         let estaColapsado = (filtroCategoriaSeleccionada === 'Todos') ? true : (catName !== filtroCategoriaSeleccionada);
+        if (existingGroup) {
+            estaColapsado = existingGroup.classList.contains('collapsed');
+        }
         if (categoriaForzadaAbierta && catName.toLowerCase() === categoriaForzadaAbierta.toLowerCase()) {
             estaColapsado = false;
         }
@@ -404,6 +504,8 @@ function renderizarListasUI(listas) {
                         listaAEditar.categoria || ''
                     );
                     editarListaIdForzada = null;
+                    listaForzadaAbierta = null;
+                    categoriaForzadaAbierta = null;
                     return;
                 }
             }
@@ -423,6 +525,8 @@ function renderizarListasUI(listas) {
                     window.toggleDetalleLista(listaForzadaAbierta);
                 }
             }
+            listaForzadaAbierta = null;
+            categoriaForzadaAbierta = null;
         }, 120);
     }
 }
@@ -599,9 +703,20 @@ function actualizarInterfazSeleccion() {
             const canto = todosLosCantos.find(c => String(c.id) === String(idCanto));
             
             if (canto) {
+                let tonoDisplay = '';
+                if (typeof item === 'object' && item !== null && item.tono) {
+                    tonoDisplay = item.tono;
+                } else {
+                    try {
+                        const conf = JSON.parse(localStorage.getItem(`canto-config-${idCanto}`) || '{}');
+                        const offset = conf.acorde || 0;
+                        tonoDisplay = calcularTonoTranspuesto(idCanto, offset);
+                    } catch (e) {}
+                }
+
                 const tag = document.createElement('div');
                 tag.className = 'canto-tag';
-                tag.innerHTML = `<span>${etiqueta}</span> ${canto.title || canto.titulo}`;
+                tag.innerHTML = `<span>${etiqueta}</span> ${canto.title || canto.titulo} ${tonoDisplay ? `<small style="opacity:0.75; font-weight:600; margin-left:4px;">(${tonoDisplay})</small>` : ''}`;
                 tag.onclick = (e) => { 
                     e.stopPropagation(); 
                     window.toggleCanto(idCanto); 
@@ -629,6 +744,7 @@ function solicitarDecisionListaExistente(nombreLista) {
 
         const modal = document.getElementById('modal-conflicto-lista');
         const spanNombre = document.getElementById('modal-nombre-lista-existente');
+        const btnActualizar = document.getElementById('btn-conflicto-actualizar');
         const btnDuplicar = document.getElementById('btn-conflicto-duplicar');
         const btnRenombrar = document.getElementById('btn-conflicto-renombrar');
         const btnUnir = document.getElementById('btn-conflicto-unir');
@@ -638,8 +754,8 @@ function solicitarDecisionListaExistente(nombreLista) {
 
         if (!modal || !btnDuplicar || !btnRenombrar || !btnUnir || !btnCancelar) {
             console.warn("Modal de conflicto no encontrado, usando confirm fallback.");
-            const res = confirm(`⚠️ Ya existe una lista con el nombre "${nombreLista}". ¿Deseas crear una copia?`);
-            return resolve({ accion: res ? 'duplicar' : 'cancelar' });
+            const res = confirm(`⚠️ Ya existe una lista con el nombre "${nombreLista}". ¿Deseas actualizarla con los datos recibidos?`);
+            return resolve({ accion: res ? 'actualizar' : 'cancelar' });
         }
 
         if (spanNombre) spanNombre.textContent = nombreLista;
@@ -651,11 +767,20 @@ function solicitarDecisionListaExistente(nombreLista) {
         const cleanup = () => {
             modal.style.display = 'none';
             if (containerRenombrar) containerRenombrar.style.display = 'none';
+            if (btnActualizar) btnActualizar.onclick = null;
             btnDuplicar.onclick = null;
             btnRenombrar.onclick = null;
             btnUnir.onclick = null;
             btnCancelar.onclick = null;
         };
+
+        if (btnActualizar) {
+            btnActualizar.onclick = (e) => {
+                e.preventDefault();
+                cleanup();
+                resolve({ accion: 'actualizar' });
+            };
+        }
 
         btnDuplicar.onclick = (e) => { 
             e.preventDefault(); 
@@ -734,6 +859,34 @@ window.mostrarAlertaCustom = (mensaje, titulo = "Atención", icono = "warning") 
     });
 };
 
+// --- OBTENER O REUTILIZAR ID CORTO DE ENLACE COMPARTIDO ---
+async function obtenerOReutilizarIdCorto(lista, user) {
+    if (lista && lista.sharedLinkId) return lista.sharedLinkId;
+    if (user && lista && lista.nombre) {
+        try {
+            const qOwner = query(
+                collection(db, "listasCompartidas"),
+                where("ownerUid", "==", user.uid),
+                limit(30)
+            );
+            const ownerSnaps = await getDocs(qOwner);
+            const lNorm = normalizarTexto(lista.nombre.replace(/🔗/g, '').replace(/📂/g, ''));
+            const match = ownerSnaps.docs.find(d => {
+                const data = d.data();
+                const dNorm = normalizarTexto(data.n ? data.n.replace(/🔗/g, '').replace(/📂/g, '') : '');
+                return dNorm === lNorm;
+            });
+            if (match) {
+                console.log(`🔗 Reutilizando enlace compartido previo: ${match.id} para lista "${lista.nombre}"`);
+                return match.id;
+            }
+        } catch(e) {
+            console.warn("No se pudo buscar link compartido previo:", e);
+        }
+    }
+    return (lista && lista.sharedLinkId) || Math.random().toString(36).substring(2, 8);
+}
+
 // --- GUARDAR LISTA ---
 window.guardarListaFirebase = async (btn) => {
     const nombreInput = document.getElementById('nombreLista');
@@ -763,10 +916,7 @@ window.guardarListaFirebase = async (btn) => {
         (l.nombre && normalizarTexto(l.nombre) === nombreNormalizado)
     );
 
-    let finalIdsCantos = listaOrdenada.map(item => ({
-        id: typeof item === 'object' ? item.id : item,
-        tag: typeof item === 'object' ? item.etiqueta || item.tag : "N"
-    }));
+    let finalIdsCantos = enriquecerCantosConConfiguracion(listaOrdenada);
 
     let nombreFinal = nombre;
     let listaIdFinal = listaId;
@@ -775,7 +925,10 @@ window.guardarListaFirebase = async (btn) => {
         const decision = await solicitarDecisionListaExistente(nombre);
         if (decision.accion === 'cancelar') return;
 
-        if (decision.accion === 'duplicar') {
+        if (decision.accion === 'actualizar') {
+            nombreFinal = existe.nombre;
+            listaIdFinal = existe.id;
+        } else if (decision.accion === 'duplicar') {
             nombreFinal = `${nombre} (Copia)`;
             listaIdFinal = `${listaId}-copia-${Date.now().toString(36)}`;
         } else if (decision.accion === 'renombrar' && decision.nuevoNombre) {
@@ -793,7 +946,7 @@ window.guardarListaFirebase = async (btn) => {
                 }
             });
 
-            finalIdsCantos = [...cantosExistentes, ...cantosNuevos];
+            finalIdsCantos = enriquecerCantosConConfiguracion([...cantosExistentes, ...cantosNuevos]);
             listaIdFinal = existe.id;
             nombreFinal = existe.nombre;
         }
@@ -815,6 +968,15 @@ window.guardarListaFirebase = async (btn) => {
         }
     }
 
+    const listaPrevia = listadoBase.find(l => l.id === listaIdFinal || l.id === window.editingId);
+    let isShared = !!((listaPrevia && listaPrevia.isShared) || (existe && existe.isShared));
+    let sharedLinkId = (listaPrevia && listaPrevia.sharedLinkId) || (existe && existe.sharedLinkId) || null;
+
+    if (!sharedLinkId && user) {
+        sharedLinkId = await obtenerOReutilizarIdCorto({ nombre: nombreFinal }, user);
+        if (sharedLinkId) isShared = true;
+    }
+
     const nuevaLista = { 
         id: listaIdFinal, 
         nombre: nombreFinal, 
@@ -822,8 +984,28 @@ window.guardarListaFirebase = async (btn) => {
         ids_cantos: finalIdsCantos, 
         ultimaActualizacion: new Date().toISOString(),
         origin: 'local',
-        pendingSync: user ? true : false
+        pendingSync: user ? true : false,
+        isShared: isShared,
+        sharedLinkId: sharedLinkId
     };
+
+    if (sharedLinkId) {
+        try {
+            const sharedDocRef = doc(db, "listasCompartidas", sharedLinkId);
+            const allowed = finalIdsCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
+            setDoc(sharedDocRef, {
+                n: nombreFinal,
+                c: categoria || "Otros",
+                i: finalIdsCantos,
+                creado: serverTimestamp(),
+                ownerUid: user?.uid || 'anonimo',
+                ownerName: user?.displayName || user?.email || '',
+                allowedSongIds: allowed
+            }, { merge: true });
+        } catch (e) {
+            console.warn("Error actualizando enlace compartido en Firebase al guardar:", e);
+        }
+    }
 
     cache = cache.filter(l => l.id !== listaIdFinal && l.id !== window.editingId);
     cache.unshift(nuevaLista);
@@ -924,15 +1106,33 @@ window.compartirUniversal = async (idLista) => {
     if (!lista) return;
 
     try {
-        const idCorto = Math.random().toString(36).substring(2, 8);
+        const user = auth.currentUser;
+        const idCorto = await obtenerOReutilizarIdCorto(lista, user);
         const docRef = doc(db, "listasCompartidas", idCorto);
         
+        const enrichedCantos = enriquecerCantosConConfiguracion(lista.ids_cantos);
+        const allowed = enrichedCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
+
         await setDoc(docRef, {
             n: lista.nombre,
             c: lista.categoria || "Otros",
-            i: lista.ids_cantos,
-            creado: serverTimestamp()
+            i: enrichedCantos,
+            creado: serverTimestamp(),
+            ownerUid: user?.uid || 'anonimo',
+            ownerName: user?.displayName || user?.email || '',
+            allowedSongIds: allowed
         });
+
+        // Actualizar la lista en caché con los cantos enriquecidos y el link ID
+        lista.ids_cantos = enrichedCantos;
+        lista.isShared = true;
+        lista.sharedLinkId = idCorto;
+        lista.pendingSync = !!user;
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+
+        if (user) {
+            ejecutarSincronizacionFondo();
+        }
 
         const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
         const mensaje = `🎼 Lista de Cantos (${lista.categoria || 'Celebración'}): *${lista.nombre}*`;
@@ -957,15 +1157,33 @@ window.copiarSoloLink = async (idLista) => {
     if (!lista) return;
 
     try {
-        const idCorto = Math.random().toString(36).substring(2, 8);
+        const user = auth.currentUser;
+        const idCorto = await obtenerOReutilizarIdCorto(lista, user);
         const docRef = doc(db, "listasCompartidas", idCorto);
         
+        const enrichedCantos = enriquecerCantosConConfiguracion(lista.ids_cantos);
+        const allowed = enrichedCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
+
         await setDoc(docRef, {
             n: lista.nombre,
             c: lista.categoria || "Otros",
-            i: lista.ids_cantos,
-            creado: serverTimestamp()
+            i: enrichedCantos,
+            creado: serverTimestamp(),
+            ownerUid: user?.uid || 'anonimo',
+            ownerName: user?.displayName || user?.email || '',
+            allowedSongIds: allowed
         });
+
+        // Actualizar la lista en caché con los cantos enriquecidos y el link ID
+        lista.ids_cantos = enrichedCantos;
+        lista.isShared = true;
+        lista.sharedLinkId = idCorto;
+        lista.pendingSync = !!user;
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+
+        if (user) {
+            ejecutarSincronizacionFondo();
+        }
 
         const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
         
@@ -976,7 +1194,7 @@ window.copiarSoloLink = async (idLista) => {
             throw new Error("Clipboard API no disponible");
         }
     } catch (e) { 
-        console.error("Error al copiar link:", e);
+        console.error("Error al copiar link:", e); 
         alert("No se pudo copiar el enlace automáticamente.");
     }
 };
@@ -1081,11 +1299,26 @@ window.toggleDetalleLista = (idLista) => {
 
         detalleDiv.innerHTML = lista.ids_cantos.map((item, i) => {
             const id = (typeof item === 'object' && item !== null) ? item.id : item;
-            const etiqueta = (typeof item === 'object' && item !== null) ? item.tag : (i + 1);
+            const etiqueta = (typeof item === 'object' && item !== null) ? (item.tag || item.etiqueta || (i + 1)) : (i + 1);
             const c = todosLosCantos.find(can => String(can.id) === String(id));
             
+            let metaBadges = '';
+            if (typeof item === 'object' && item !== null) {
+                if (item.tono) {
+                    metaBadges += `<span class="badge-sub-tono">${item.tono}</span>`;
+                }
+                if (item.cejilla && item.cejilla !== '0') {
+                    metaBadges += `<span class="badge-sub-capo">Cej. ${item.cejilla}</span>`;
+                }
+                if (item.nota) {
+                    metaBadges += `<span title="Tiene notas personales" style="font-size: 0.85rem; margin-left: 4px;">📝</span>`;
+                }
+            }
+
             return `<div class="sub-item-canto" onclick="window.abrirVisorCantoDesdeLista('${id}', '${idLista}')">
-                <span class="num">${etiqueta}</span><span>${c ? (c.title || c.titulo) : "Canto desconocido"}</span>
+                <span class="num">${etiqueta}</span>
+                <span style="flex-grow: 1;">${c ? (c.title || c.titulo) : "Canto desconocido"}</span>
+                ${metaBadges}
             </div>`;
         }).join('');
     }
@@ -1098,7 +1331,11 @@ window.cargarListaParaEditar = (docId, ids, nombre, categoria) => {
         if (typeof item === 'object' && item !== null) {
             return { 
                 id: String(item.id), 
-                etiqueta: item.etiqueta || item.tag || "N" 
+                etiqueta: item.etiqueta || item.tag || "N",
+                acorde: item.acorde,
+                cejilla: item.cejilla,
+                nota: item.nota,
+                tono: item.tono
             };
         }
         return { id: String(item), etiqueta: "N" };
@@ -1122,12 +1359,19 @@ window.abrirVisorCantoDesdeLista = (idCanto, idLista) => {
     try {
         const lista = listasLocalesCache.find(l => l.id === idLista);
         if (lista) {
+            const isShared = !!(lista.isShared || (lista.nombre && lista.nombre.includes('🔗')) || String(idLista).startsWith('imp-'));
             sessionStorage.setItem('resucito_active_playlist', JSON.stringify({
                 id: lista.id,
                 nombre: lista.nombre,
                 categoria: lista.categoria || '',
-                ids_cantos: lista.ids_cantos
+                ids_cantos: lista.ids_cantos,
+                isShared: isShared,
+                sharedLinkId: lista.sharedLinkId || ''
             }));
+
+            // Guardar autorización de acceso exclusiva para los cantos de esta lista
+            const allowed = (lista.ids_cantos || []).map(x => String(typeof x === 'object' && x !== null ? x.id : x));
+            sessionStorage.setItem('resucito_shared_allowed_songs', JSON.stringify(allowed));
         }
     } catch (e) {
         console.error("Error guardando lista activa en sessionStorage:", e);
@@ -1160,109 +1404,287 @@ window.toggleSection = (contentId, wrapperId) => {
 };
 
 // Auto importación de links compartidos
-const detectarLinkCompartido = async () => {
+async function detectarLinkCompartido(usuarioActual) {
     const params = new URLSearchParams(window.location.search);
     const idCorto = params.get('v'); 
 
-    if (idCorto) {
-        bloqueoSnapshot = true;
-        try {
-            const docRef = doc(db, "listasCompartidas", idCorto);
-            const docSnap = await getDoc(docRef);
-            if (docSnap.exists()) {
-                const datosCanto = docSnap.data();
-                if (datosCanto && datosCanto.n && datosCanto.i) {
-                    let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
-                    const listadoBase = (Array.isArray(listasLocalesCache) && listasLocalesCache.length > 0) ? listasLocalesCache : cache;
+    if (!idCorto) return;
+    if (importandoLink) return;
+    importandoLink = true;
+    bloqueoSnapshot = true;
 
-                    let nombreLimpio = datosCanto.n.replace(/🔗/g, '').replace(/📂/g, '').trim();
-                    const categoria = datosCanto.c || "Otros";
-                    const nombreBaseNorm = normalizarTexto(nombreLimpio);
-
-                    // Buscar si existe lista local con nombre similar
-                    const existe = listadoBase.find(l => {
-                        const lNorm = normalizarTexto(l.nombre ? l.nombre.replace(/🔗/g, '').replace(/📂/g, '') : '');
-                        return lNorm === nombreBaseNorm;
-                    });
-
-                    let nombreFinal = "🔗 " + nombreLimpio;
-                    let idFinal = "imp-" + Date.now();
-                    let finalIdsCantos = datosCanto.i;
-                    let targetLista = null;
-
-                    if (existe) {
-                        const decision = await solicitarDecisionListaExistente(existe.nombre || nombreLimpio);
-                        
-                        if (decision.accion === 'cancelar') {
-                            // Cancelar importación, solo enfocar la existente
-                            targetLista = existe;
-                        } else if (decision.accion === 'duplicar') {
-                            nombreFinal = `🔗 ${nombreLimpio} (Copia)`;
-                            idFinal = `imp-${Date.now()}`;
-                        } else if (decision.accion === 'renombrar' && decision.nuevoNombre) {
-                            nombreFinal = decision.nuevoNombre.startsWith('🔗') ? decision.nuevoNombre : `🔗 ${decision.nuevoNombre}`;
-                            idFinal = `imp-${Date.now()}`;
-                        } else if (decision.accion === 'unir') {
-                            const cantosExistentes = Array.isArray(existe.ids_cantos) ? existe.ids_cantos : [];
-                            const idsProcesados = new Set(cantosExistentes.map(c => String(typeof c === 'object' ? c.id : c)));
-                            
-                            const cantosNuevos = [];
-                            (datosCanto.i || []).forEach(item => {
-                                const itemStrId = String(typeof item === 'object' ? item.id : item);
-                                if (!idsProcesados.has(itemStrId)) {
-                                    cantosNuevos.push(item);
-                                }
-                            });
-
-                            finalIdsCantos = [...cantosExistentes, ...cantosNuevos];
-                            idFinal = existe.id;
-                            nombreFinal = existe.nombre;
-                        }
-                    }
-
-                    if (!targetLista) {
-                        targetLista = { 
-                            id: idFinal, 
-                            nombre: nombreFinal, 
-                            categoria: categoria,
-                            ids_cantos: finalIdsCantos, 
-                            ultimaActualizacion: new Date().toISOString(),
-                            origin: 'local',
-                            pendingSync: auth.currentUser ? true : false
-                        };
-
-                        cache = cache.filter(l => l.id !== idFinal);
-                        cache.unshift(targetLista);
-                        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
-                        listasLocalesCache = cache;
-
-                        if (auth.currentUser) {
-                            ejecutarSincronizacionFondo();
-                        }
-                    }
-
-                    // Actualizar URL a formato descriptivo con categoría, listaId y ancla
-                    const catSlug = (targetLista.categoria || "Otros").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "-");
-                    const nuevaUrl = `${window.location.pathname}?cat=${encodeURIComponent(targetLista.categoria || "Otros")}&listaId=${encodeURIComponent(targetLista.id)}#cat-grupo-${catSlug}`;
-                    window.history.replaceState({}, document.title, nuevaUrl);
-
-                    // Forzar expansión y resaltado
-                    categoriaForzadaAbierta = targetLista.categoria || "Otros";
-                    listaForzadaAbierta = targetLista.id;
-
-                    renderizarListasUI(listasLocalesCache);
-                    mostrarNotificacionVerde("Lista importada correctamente");
-                }
-            } else {
-                alert("El enlace compartido no existe o ha expirado.");
-                bloqueoSnapshot = false;
-            }
-        } catch (e) {
-            console.error("Error al importar link compartido:", e);
-            bloqueoSnapshot = false;
+    try {
+        const docRef = doc(db, "listasCompartidas", idCorto);
+        const docSnap = await getDoc(docRef);
+        if (!docSnap.exists()) {
+            alert("El enlace compartido no existe o ha expirado.");
+            return;
         }
+
+        const datosCanto = docSnap.data();
+        if (!datosCanto || !datosCanto.n || !datosCanto.i) {
+            console.warn("Datos de lista compartida inválidos.");
+            return;
+        }
+
+        const user = usuarioActual || auth.currentUser;
+        let cache = JSON.parse(localStorage.getItem('cache_listas_personalizadas') || "[]");
+        let listadoBase = (Array.isArray(listasLocalesCache) && listasLocalesCache.length > 0) ? listasLocalesCache : cache;
+
+        let nombreLimpio = datosCanto.n.replace(/🔗/g, '').replace(/📂/g, '').trim();
+        const categoria = datosCanto.c || "Otros";
+        const nombreBaseNorm = normalizarTexto(nombreLimpio);
+
+        // 1. Buscar coincidencia de lista:
+        //    A) Coincidencia directa por sharedLinkId === idCorto
+        //    B) Coincidencia de lista previamente compartida/importada (isShared, icono 🔗 o ID imp-) con el mismo nombre normalizado
+        //    C) Coincidencia de lista local con el mismo nombre normalizado
+        let existeCompartida = listadoBase.find(l => l.sharedLinkId === idCorto);
+        if (!existeCompartida) {
+            existeCompartida = listadoBase.find(l => {
+                const esListaImportada = l.isShared || (l.nombre && l.nombre.startsWith('🔗')) || String(l.id).startsWith('imp-');
+                if (!esListaImportada) return false;
+                const lNorm = normalizarTexto(l.nombre ? l.nombre.replace(/🔗/g, '').replace(/📂/g, '') : '');
+                return lNorm === nombreBaseNorm;
+            });
+        }
+
+        const existeLocal = !existeCompartida ? listadoBase.find(l => {
+            const lNorm = normalizarTexto(l.nombre ? l.nombre.replace(/🔗/g, '').replace(/📂/g, '') : '');
+            return lNorm === nombreBaseNorm;
+        }) : null;
+
+        let finalIdsCantos = enriquecerCantosConConfiguracion(datosCanto.i);
+        let targetLista = null;
+
+        // Si el usuario autenticado es el creador/dueño original de este enlace:
+        const esCreadorDelEnlace = !!(user && datosCanto.ownerUid && datosCanto.ownerUid === user.uid);
+        const listaDelCreador = esCreadorDelEnlace ? listadoBase.find(l => {
+            const lNorm = normalizarTexto(l.nombre ? l.nombre.replace(/🔗/g, '').replace(/📂/g, '') : '');
+            return lNorm === nombreBaseNorm || l.id === idCorto || l.sharedLinkId === idCorto;
+        }) : null;
+
+        if (esCreadorDelEnlace && listaDelCreador && Array.isArray(listaDelCreador.ids_cantos)) {
+            // El creador está abriendo su propio enlace: mantener actualizada la nube con los cantos locales del creador
+            finalIdsCantos = enriquecerCantosConConfiguracion(listaDelCreador.ids_cantos);
+            listaDelCreador.sharedLinkId = idCorto;
+            listaDelCreador.isShared = true;
+            try {
+                await setDoc(docRef, {
+                    n: listaDelCreador.nombre,
+                    c: listaDelCreador.categoria || categoria || "Otros",
+                    i: finalIdsCantos,
+                    allowedSongIds: finalIdsCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item))
+                }, { merge: true });
+                console.log(`☁️ Enlace compartido ${idCorto} sincronizado por el dueño con sus ${finalIdsCantos.length} cantos.`);
+            } catch (e) {
+                console.warn("Error actualizando enlace compartido como creador:", e);
+            }
+        }
+
+        if (existeCompartida) {
+            // Ya teníamos esta lista compartida importada:
+            // SE ACTUALIZA AUTOMÁTICAMENTE para reflejar los cantos y configuraciones del dueño del enlace!
+            existeCompartida.nombre = `🔗 ${nombreLimpio}`;
+            existeCompartida.categoria = categoria;
+            existeCompartida.ids_cantos = finalIdsCantos;
+            existeCompartida.ultimaActualizacion = new Date().toISOString();
+            existeCompartida.origin = 'local';
+            existeCompartida.isShared = true;
+            existeCompartida.sharedLinkId = idCorto;
+            existeCompartida.pendingSync = !!user;
+
+            targetLista = existeCompartida;
+
+            cache = cache.filter(l => l.id !== targetLista.id);
+            cache.unshift(targetLista);
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+            listasLocalesCache = cache;
+
+            if (user) {
+                try {
+                    await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", targetLista.id), {
+                        id: targetLista.id,
+                        nombre: targetLista.nombre,
+                        categoria: targetLista.categoria || "Otros",
+                        ids_cantos: finalIdsCantos,
+                        ultimaActualizacion: targetLista.ultimaActualizacion,
+                        origin: 'cloud',
+                        isShared: true,
+                        sharedLinkId: idCorto
+                    });
+                    targetLista.origin = 'cloud';
+                    delete targetLista.pendingSync;
+                    localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                } catch (e) {
+                    console.warn("Error sincronizando lista compartida actualizada en Firestore:", e);
+                }
+            }
+
+            mostrarNotificacionVerde(`Lista "${nombreLimpio}" actualizada (${finalIdsCantos.length} cantos)`);
+        } else if (existeLocal) {
+            // Existe una lista personal local propia con el mismo nombre
+            const decision = await solicitarDecisionListaExistente(existeLocal.nombre || nombreLimpio);
+
+            if (decision.accion === 'cancelar') {
+                targetLista = existeLocal;
+            } else if (decision.accion === 'actualizar') {
+                existeLocal.ids_cantos = finalIdsCantos;
+                existeLocal.categoria = categoria;
+                existeLocal.ultimaActualizacion = new Date().toISOString();
+                existeLocal.origin = 'local';
+                existeLocal.isShared = true;
+                existeLocal.sharedLinkId = idCorto;
+                existeLocal.pendingSync = !!user;
+                targetLista = existeLocal;
+
+                cache = cache.filter(l => l.id !== targetLista.id);
+                cache.unshift(targetLista);
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                listasLocalesCache = cache;
+
+                if (user) {
+                    try {
+                        await setDoc(doc(db, "usuarios", user.uid, "listasPersonalizadas", targetLista.id), {
+                            id: targetLista.id,
+                            nombre: targetLista.nombre,
+                            categoria: targetLista.categoria || "Otros",
+                            ids_cantos: finalIdsCantos,
+                            ultimaActualizacion: targetLista.ultimaActualizacion,
+                            origin: 'cloud',
+                            isShared: true,
+                            sharedLinkId: idCorto
+                        });
+                        targetLista.origin = 'cloud';
+                        delete targetLista.pendingSync;
+                        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                    } catch (e) {
+                        console.warn("Error sincronizando lista actualizada:", e);
+                    }
+                }
+                mostrarNotificacionVerde(`Lista actualizada (${finalIdsCantos.length} cantos)`);
+            } else if (decision.accion === 'duplicar') {
+                const nuevoId = `imp-${Date.now()}`;
+                targetLista = {
+                    id: nuevoId,
+                    nombre: `🔗 ${nombreLimpio} (Copia)`,
+                    categoria: categoria,
+                    ids_cantos: finalIdsCantos,
+                    ultimaActualizacion: new Date().toISOString(),
+                    origin: 'local',
+                    pendingSync: !!user,
+                    isShared: true,
+                    sharedLinkId: idCorto
+                };
+                cache.unshift(targetLista);
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                listasLocalesCache = cache;
+                if (user) {
+                    ejecutarSincronizacionFondo();
+                }
+                mostrarNotificacionVerde("Lista importada como copia");
+            } else if (decision.accion === 'renombrar' && decision.nuevoNombre) {
+                const nuevoId = `imp-${Date.now()}`;
+                const nombreConIcono = decision.nuevoNombre.startsWith('🔗') ? decision.nuevoNombre : `🔗 ${decision.nuevoNombre}`;
+                targetLista = {
+                    id: nuevoId,
+                    nombre: nombreConIcono,
+                    categoria: categoria,
+                    ids_cantos: finalIdsCantos,
+                    ultimaActualizacion: new Date().toISOString(),
+                    origin: 'local',
+                    pendingSync: !!user,
+                    isShared: true,
+                    sharedLinkId: idCorto
+                };
+                cache.unshift(targetLista);
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                listasLocalesCache = cache;
+                if (user) {
+                    ejecutarSincronizacionFondo();
+                }
+                mostrarNotificacionVerde("Lista importada");
+            } else if (decision.accion === 'unir') {
+                const cantosExistentes = Array.isArray(existeLocal.ids_cantos) ? existeLocal.ids_cantos : [];
+                const idsProcesados = new Set(cantosExistentes.map(c => String(typeof c === 'object' ? c.id : c)));
+                const cantosNuevos = [];
+                finalIdsCantos.forEach(item => {
+                    const itemStrId = String(typeof item === 'object' ? item.id : item);
+                    if (!idsProcesados.has(itemStrId)) {
+                        cantosNuevos.push(item);
+                    }
+                });
+                existeLocal.ids_cantos = enriquecerCantosConConfiguracion([...cantosExistentes, ...cantosNuevos]);
+                existeLocal.ultimaActualizacion = new Date().toISOString();
+                existeLocal.origin = 'local';
+                existeLocal.pendingSync = !!user;
+                targetLista = existeLocal;
+
+                cache = cache.filter(l => l.id !== targetLista.id);
+                cache.unshift(targetLista);
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+                listasLocalesCache = cache;
+                if (user) {
+                    ejecutarSincronizacionFondo();
+                }
+                mostrarNotificacionVerde("Cantos combinados");
+            }
+        } else {
+            // Importación limpia de nueva lista compartida
+            const nuevoId = `imp-${Date.now()}`;
+            targetLista = {
+                id: nuevoId,
+                nombre: `🔗 ${nombreLimpio}`,
+                categoria: categoria,
+                ids_cantos: finalIdsCantos,
+                ultimaActualizacion: new Date().toISOString(),
+                origin: 'local',
+                pendingSync: !!user,
+                isShared: true,
+                sharedLinkId: idCorto
+            };
+            cache = cache.filter(l => l.id !== nuevoId);
+            cache.unshift(targetLista);
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+            listasLocalesCache = cache;
+
+            if (user) {
+                ejecutarSincronizacionFondo();
+            }
+            mostrarNotificacionVerde("Lista importada correctamente");
+        }
+
+        if (targetLista) {
+            // Guardar permisos en sessionStorage para todos los cantos de esta lista compartida
+            const allowedSongIds = (datosCanto.allowedSongIds || targetLista.ids_cantos.map(c => String(typeof c === 'object' && c !== null ? c.id : c))).map(String);
+            sessionStorage.setItem('resucito_shared_link_id', idCorto);
+            sessionStorage.setItem('resucito_shared_allowed_songs', JSON.stringify(allowedSongIds));
+            sessionStorage.setItem('resucito_active_playlist', JSON.stringify({
+                id: targetLista.id,
+                nombre: targetLista.nombre,
+                categoria: targetLista.categoria || '',
+                ids_cantos: targetLista.ids_cantos,
+                isShared: true,
+                sharedLinkId: idCorto
+            }));
+
+            // Actualizar URL a formato descriptivo con categoría, listaId y ancla
+            const catSlug = (targetLista.categoria || "Otros").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/g, "-");
+            const nuevaUrl = `${window.location.pathname}?cat=${encodeURIComponent(targetLista.categoria || "Otros")}&listaId=${encodeURIComponent(targetLista.id)}#cat-grupo-${catSlug}`;
+            window.history.replaceState({}, document.title, nuevaUrl);
+
+            categoriaForzadaAbierta = targetLista.categoria || "Otros";
+            listaForzadaAbierta = targetLista.id;
+
+            renderizarListasUI(listasLocalesCache);
+        }
+    } catch (e) {
+        console.error("Error al importar link compartido:", e);
+    } finally {
+        bloqueoSnapshot = false;
+        importandoLink = false;
     }
-};
+}
 
 // Selección de Momentos
 window.setMomento = (elemento, momento) => {

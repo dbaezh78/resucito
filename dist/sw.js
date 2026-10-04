@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v336'; // v2.1.08 cantos catolicos fondo blanco e imagen cristo 1
+const CACHE_NAME = 'resucito-cache-v337'; // v2.1.08 actualizacion dinamica listas compartidas
 const STATIC_ASSETS = [
   './',
   'index.html',

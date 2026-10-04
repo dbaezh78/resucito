@@ -30,8 +30,10 @@ import {
   respaldarPosicionesUsuario,
   guardarExpansionCantoEnNube,
   isSongExpansionEnabled,
-  guardarJsonChordsCantoEnNube
+  guardarJsonChordsCantoEnNube,
+  canCurrentUserSeeSong
 } from './sync.js';
+window.canCurrentUserSeeSong = canCurrentUserSeeSong;
 import { 
   registrarEntradaCanto, 
   registrarCambioTraste, 
@@ -514,6 +516,14 @@ window.limpiarFiltrosIndex = function() {
 
 // --- Inicialización ---
 document.addEventListener('DOMContentLoaded', async () => {
+  // Si se abre un enlace compartido con ?v= en index.html, redirigir inmediatamente a preparar.html
+  const urlParams = new URLSearchParams(window.location.search);
+  const vParam = urlParams.get('v');
+  if (vParam) {
+    window.location.replace('./preparar.html?v=' + encodeURIComponent(vParam));
+    return;
+  }
+
   // Registrar Service Worker
   registerServiceWorker();
   
@@ -990,12 +1000,31 @@ async function loadSongView(songId) {
       if (stored) localSavedConfig = JSON.parse(stored);
     } catch (e) {}
 
-    // Si existe localmente, inicializar con lo local; si "Acordes en JSON" está activo, respetar estrictamente el archivo JSON
+    // Buscar si el canto tiene configuración asignada en la playlist activa (del enlace compartido)
+    let sharedSongConfig = null;
+    if (activeCustomPlaylist && Array.isArray(activeCustomPlaylist.ids_cantos)) {
+      sharedSongConfig = activeCustomPlaylist.ids_cantos.find(item => {
+        const cId = (typeof item === 'object' && item !== null) ? item.id : item;
+        return String(cId) === String(songId);
+      });
+    }
+
+    // Si existe localmente, inicializar con lo local; si viene de lista compartida, aplicar la del creador del enlace
     let initialKeyOffset = 0;
     let initialCapo = (parseInt(originalCapoStr) || 0);
     if (!isJsonChordsEnabled(songId)) {
-      initialKeyOffset = (localSavedConfig && localSavedConfig.acorde !== undefined) ? (parseInt(localSavedConfig.acorde) || 0) : 0;
-      initialCapo = (localSavedConfig && localSavedConfig.cejilla !== undefined) ? (parseInt(localSavedConfig.cejilla) || 0) : (parseInt(originalCapoStr) || 0);
+      if (sharedSongConfig && (sharedSongConfig.acorde !== undefined || sharedSongConfig.cejilla !== undefined)) {
+        // PRIORIDAD: Si viene de una lista compartida, aplicar el tono y cejilla del dueño del enlace
+        initialKeyOffset = (sharedSongConfig.acorde !== undefined && sharedSongConfig.acorde !== null)
+          ? (parseInt(sharedSongConfig.acorde) || 0)
+          : ((localSavedConfig && localSavedConfig.acorde !== undefined) ? (parseInt(localSavedConfig.acorde) || 0) : 0);
+        initialCapo = (sharedSongConfig.cejilla !== undefined && sharedSongConfig.cejilla !== null)
+          ? (parseInt(sharedSongConfig.cejilla) || 0)
+          : ((localSavedConfig && localSavedConfig.cejilla !== undefined) ? (parseInt(localSavedConfig.cejilla) || 0) : (parseInt(originalCapoStr) || 0));
+      } else {
+        initialKeyOffset = (localSavedConfig && localSavedConfig.acorde !== undefined) ? (parseInt(localSavedConfig.acorde) || 0) : 0;
+        initialCapo = (localSavedConfig && localSavedConfig.cejilla !== undefined) ? (parseInt(localSavedConfig.cejilla) || 0) : (parseInt(originalCapoStr) || 0);
+      }
     }
 
     currentKeyOffset = initialKeyOffset;
@@ -1022,8 +1051,18 @@ async function loadSongView(songId) {
       }
     }
     
-    // Cargar notas del cantor
-    notesTextarea.value = localStorage.getItem(`notes_${songId}`) || '';
+    // Cargar notas del cantor (respetando nota compartida del enlace si existe)
+    const localNota = localStorage.getItem(`notes_${songId}`) || '';
+    if (sharedSongConfig && sharedSongConfig.nota) {
+      const sharedNota = String(sharedSongConfig.nota).trim();
+      if (!localNota || localNota.trim() === sharedNota) {
+        notesTextarea.value = sharedNota;
+      } else {
+        notesTextarea.value = `📝 [Nota del enlace compartido]:\n${sharedNota}\n\n📝 [Tu nota personal]:\n${localNota}`;
+      }
+    } else {
+      notesTextarea.value = localNota;
+    }
     
     // Configurar estrella de favoritos
     favoriteBtn.classList.toggle('active-star', favorites.has(songId));
@@ -7245,11 +7284,25 @@ window.abrirModalPlaylistActiva = function() {
     const nombreCanto = songMeta ? (songMeta.titulo || songMeta.title) : ('Canto ' + cId);
     const esActivo = (cId === String(currentSongId));
 
+    let metaBadges = '';
+    if (typeof item === 'object' && item !== null) {
+      if (item.tono) {
+        metaBadges += `<span class="modal-playlist-badge-tono">${item.tono}</span>`;
+      }
+      if (item.cejilla && item.cejilla !== '0') {
+        metaBadges += `<span class="modal-playlist-badge-capo">Cej. ${item.cejilla}</span>`;
+      }
+      if (item.nota) {
+        metaBadges += `<span title="Notas incluidas" style="font-size: 0.85rem; margin-left: 4px;">📝</span>`;
+      }
+    }
+
     return `
       <div class="modal-playlist-item ${esActivo ? 'active' : ''}" onclick="window.seleccionarCantoDesdeModalPlaylist('${cId}')">
         <span class="item-tag">${tag}</span>
-        <span class="item-title">${nombreCanto}</span>
-        ${esActivo ? '<span class="material-symbols-outlined item-status">play_circle</span>' : ''}
+        <span class="item-title" style="flex-grow: 1;">${nombreCanto}</span>
+        ${metaBadges}
+        ${esActivo ? '<span class="material-symbols-outlined item-status" style="margin-left: 8px;">play_circle</span>' : ''}
       </div>
     `;
   }).join('');
@@ -7306,20 +7359,91 @@ window.obtenerListaActivaCache = function() {
   return null;
 };
 
+function enriquecerCantosLista(cantos) {
+  if (!Array.isArray(cantos)) return [];
+  return cantos.map(item => {
+    const id = String(typeof item === 'object' && item !== null ? item.id : item);
+    const tag = (typeof item === 'object' && item !== null ? (item.etiqueta || item.tag) : "N") || "N";
+    let acorde = (typeof item === 'object' && item !== null && item.acorde !== undefined && item.acorde !== null) ? String(item.acorde) : null;
+    let cejilla = (typeof item === 'object' && item !== null && item.cejilla !== undefined && item.cejilla !== null) ? String(item.cejilla) : null;
+    let nota = (typeof item === 'object' && item !== null && item.nota !== undefined && item.nota !== null) ? String(item.nota) : null;
+    let tono = (typeof item === 'object' && item !== null && item.tono) ? String(item.tono) : null;
+
+    if (acorde === null || cejilla === null) {
+      try {
+        const localConf = JSON.parse(localStorage.getItem(`canto-config-${id}`) || '{}');
+        if (acorde === null && localConf.acorde !== undefined) acorde = String(localConf.acorde);
+        if (cejilla === null && localConf.cejilla !== undefined) cejilla = String(localConf.cejilla);
+      } catch (e) {}
+    }
+
+    if (cejilla === null) {
+      const songMeta = allSongs.find(s => String(s.id) === id);
+      cejilla = (songMeta && songMeta.cejilla) ? String(songMeta.cejilla) : "0";
+    }
+
+    if (acorde === null) acorde = "0";
+
+    if (nota === null) {
+      nota = localStorage.getItem(`notes_${id}`) || "";
+    }
+
+    if (!tono) {
+      const songMeta = allSongs.find(s => String(s.id) === id);
+      const baseChord = (songMeta && songMeta.acorde) ? songMeta.acorde : 'La';
+      const offset = parseInt(acorde) || 0;
+      if (offset === 0) {
+        tono = baseChord;
+      } else {
+        const parsed = parseChord(baseChord);
+        const trans = transposeNote(parsed.noteName, offset);
+        tono = trans + (parsed.typeSuffix ? (' ' + parsed.typeSuffix) : '');
+      }
+    }
+
+    const res = { id, tag, acorde, cejilla };
+    if (nota) res.nota = nota;
+    if (tono) res.tono = tono;
+    return res;
+  });
+}
+
 window.compartirUniversalDesdeModal = async function() {
   const lista = window.obtenerListaActivaCache();
   if (!lista) return;
 
   try {
-    const idCorto = Math.random().toString(36).substring(2, 8);
+    const idCorto = lista.sharedLinkId || Math.random().toString(36).substring(2, 8);
     const docRef = doc(db, "listasCompartidas", idCorto);
-    
+    const enrichedCantos = enriquecerCantosLista(lista.ids_cantos);
+    const allowed = enrichedCantos.map(item => item.id);
+    const user = (typeof getCurrentUser === 'function') ? getCurrentUser() : auth.currentUser;
+
     await setDoc(docRef, {
       n: lista.nombre,
       c: lista.categoria || "Otros",
-      i: lista.ids_cantos,
-      creado: new Date().toISOString()
+      i: enrichedCantos,
+      creado: new Date().toISOString(),
+      ownerUid: user?.uid || 'anonimo',
+      ownerName: user?.displayName || user?.email || '',
+      allowedSongIds: allowed
     });
+
+    // Actualizar lista en cache activa
+    lista.ids_cantos = enrichedCantos;
+    lista.isShared = true;
+    lista.sharedLinkId = idCorto;
+    sessionStorage.setItem('resucito_active_playlist', JSON.stringify(lista));
+
+    // Actualizar también en cache local persistente si existe
+    try {
+      const cacheStr = localStorage.getItem('cache_listas_personalizadas');
+      if (cacheStr) {
+        let cache = JSON.parse(cacheStr);
+        cache = cache.map(l => l.id === lista.id ? { ...l, ids_cantos: enrichedCantos, isShared: true, sharedLinkId: idCorto, pendingSync: !!user } : l);
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+      }
+    } catch (e) {}
 
     const urlFinal = `${window.location.origin}${window.location.pathname.replace('index.html', '')}preparar.html?v=${idCorto}`;
     const mensaje = `🎼 Lista de Cantos (${lista.categoria || 'Celebración'}): *${lista.nombre}*`;
@@ -7344,15 +7468,37 @@ window.copiarSoloLinkDesdeModal = async function() {
   if (!lista) return;
 
   try {
-    const idCorto = Math.random().toString(36).substring(2, 8);
+    const idCorto = lista.sharedLinkId || Math.random().toString(36).substring(2, 8);
     const docRef = doc(db, "listasCompartidas", idCorto);
-    
+    const enrichedCantos = enriquecerCantosLista(lista.ids_cantos);
+    const allowed = enrichedCantos.map(item => item.id);
+    const user = (typeof getCurrentUser === 'function') ? getCurrentUser() : auth.currentUser;
+
     await setDoc(docRef, {
       n: lista.nombre,
       c: lista.categoria || "Otros",
-      i: lista.ids_cantos,
-      creado: new Date().toISOString()
+      i: enrichedCantos,
+      creado: new Date().toISOString(),
+      ownerUid: user?.uid || 'anonimo',
+      ownerName: user?.displayName || user?.email || '',
+      allowedSongIds: allowed
     });
+
+    // Actualizar lista en cache activa
+    lista.ids_cantos = enrichedCantos;
+    lista.isShared = true;
+    lista.sharedLinkId = idCorto;
+    sessionStorage.setItem('resucito_active_playlist', JSON.stringify(lista));
+
+    // Actualizar también en cache local persistente si existe
+    try {
+      const cacheStr = localStorage.getItem('cache_listas_personalizadas');
+      if (cacheStr) {
+        let cache = JSON.parse(cacheStr);
+        cache = cache.map(l => l.id === lista.id ? { ...l, ids_cantos: enrichedCantos, isShared: true, sharedLinkId: idCorto, pendingSync: !!user } : l);
+        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(cache));
+      }
+    } catch (e) {}
 
     const urlFinal = `${window.location.origin}${window.location.pathname.replace('index.html', '')}preparar.html?v=${idCorto}`;
     

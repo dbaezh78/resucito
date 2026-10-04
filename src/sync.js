@@ -697,12 +697,40 @@ export function listenToGlobalPositions() {
 }
 
 export function canCurrentUserSeeSong(songId) {
-  // Administradores se saltan cualquier restricción de etapa
+  if (!songId) return false;
+
+  // 1. Administradores se saltan cualquier restricción de etapa
   if (window.isCurrentUserAdmin && window.isCurrentUserAdmin()) {
     return true;
   }
+
+  // 2. Si el canto proviene de un enlace compartido o lista activa compartida, PERMITIR acceso
+  try {
+    const sId = String(songId);
+    const sharedAllowedStr = sessionStorage.getItem('resucito_shared_allowed_songs');
+    if (sharedAllowedStr) {
+      const allowedList = JSON.parse(sharedAllowedStr);
+      if (Array.isArray(allowedList) && allowedList.some(id => String(id) === sId)) {
+        return true;
+      }
+    }
+
+    const activePlaylistStr = sessionStorage.getItem('resucito_active_playlist');
+    if (activePlaylistStr) {
+      const activePl = JSON.parse(activePlaylistStr);
+      if (activePl && Array.isArray(activePl.ids_cantos)) {
+        const inPlaylist = activePl.ids_cantos.some(item => {
+          const cId = (typeof item === 'object' && item !== null) ? item.id : item;
+          return String(cId) === sId;
+        });
+        if (inPlaylist) return true;
+      }
+    }
+  } catch (e) {
+    console.warn("⚠️ Error evaluando acceso por enlace compartido:", e);
+  }
   
-  // Obtener etapa del perfil del usuario (default: 0 - Precatecumenado)
+  // 3. Obtener etapa del perfil del usuario (default: 0 - Precatecumenado)
   let userStage = 0;
   const profileStr = localStorage.getItem('user_profile_data');
   if (profileStr) {
@@ -714,7 +742,7 @@ export function canCurrentUserSeeSong(songId) {
     } catch (e) {}
   }
   
-  // Obtener etapa requerida del canto
+  // 4. Obtener etapa requerida del canto
   let requiredStage = 0;
   if (window.globalPositionsCache && window.globalPositionsCache[songId]) {
     const customData = window.globalPositionsCache[songId];
@@ -725,6 +753,7 @@ export function canCurrentUserSeeSong(songId) {
   
   return userStage >= requiredStage;
 }
+window.canCurrentUserSeeSong = canCurrentUserSeeSong;
 
 // --- Control de Expansión de Cantos (Superposición) ---
 window.expansionSongsCache = {};

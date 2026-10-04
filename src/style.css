@@ -2546,6 +2546,28 @@ footer {
   color: var(--accent-color, #d01212);
 }
 
+.modal-playlist-badge-tono {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--text-color, #212529);
+  margin-left: 6px;
+  flex-shrink: 0;
+}
+
+.modal-playlist-badge-capo {
+  font-size: 0.72rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(208, 18, 18, 0.1);
+  color: var(--accent-color, #d01212);
+  font-weight: 600;
+  margin-left: 4px;
+  flex-shrink: 0;
+}
+
 .canto-header-main {
   display: grid;
   grid-template-columns: 140px 1fr 140px;

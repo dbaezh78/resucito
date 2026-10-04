@@ -67,7 +67,11 @@ files.forEach(file => {
     const dest = path.resolve(distPath, file);
     if (fs.existsSync(src)) {
         console.log(`Copiando archivo ${file}...`);
-        fs.copyFileSync(src, dest);
+        try {
+            fs.copyFileSync(src, dest);
+        } catch (e) {
+            console.warn(`Aviso: no se pudo sobrescribir ${file} en dist:`, e.message);
+        }
     }
 });
 
