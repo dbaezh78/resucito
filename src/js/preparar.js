@@ -18,6 +18,7 @@ let listasLocalesCache = [];
 let sincronizando = false;
 let bloqueoSnapshot = false;
 let importandoLink = false;
+const listenersListasCompartidas = new Map();
 
 // --- UTILIDADES DE TRANSPOSICIÓN Y ENRIQUECIMIENTO DE CANTOS ---
 export function calcularTonoTranspuesto(songId, acordeOffset) {
@@ -409,8 +410,6 @@ function crearTarjetaLista(idLista, data, contenedor) {
 }
 
 // --- ESCUCHA EN TIEMPO REAL DE LISTAS COMPARTIDAS (LIVE REAL-TIME SYNC) ---
-const listenersListasCompartidas = new Map();
-
 function sincronizarEscuchasEnlaceCompartido() {
     const listado = listasLocalesCache || [];
     const sharedIdsActivos = new Set();
