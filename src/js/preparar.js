@@ -370,6 +370,30 @@ window.setFiltroCategoria = (elemento, cat) => {
     renderizarListasUI(listasLocalesCache);
 };
 
+// --- UTILIDAD DE VERIFICACIÓN DE PROPIETARIO DE LISTA ---
+export function esDuenioDeLista(lista) {
+    if (!lista) return false;
+    const user = auth.currentUser;
+    const esCompartida = !!(lista.isShared || (lista.nombre && lista.nombre.startsWith('🔗')) || lista.sharedLinkId || String(lista.id).startsWith('imp-'));
+    if (!esCompartida) return true;
+
+    // Administrador general
+    if (user && user.email === 'dbaezh78@gmail.com') return true;
+
+    // Usuario autenticado creador del enlace
+    if (user && lista.ownerUid && user.uid === lista.ownerUid) return true;
+
+    // Lista creada originalmente en este dispositivo/sesión (no importada desde enlace ajeno)
+    if (!lista.esImportada && !String(lista.id).startsWith('imp-')) {
+        if (!lista.ownerUid || lista.ownerUid === (user?.uid || 'anonimo')) {
+            return true;
+        }
+    }
+
+    return false;
+}
+window.esDuenioDeLista = esDuenioDeLista;
+
 function crearTarjetaLista(idLista, data, contenedor) {
     if (!data) return;
 
@@ -384,6 +408,11 @@ function crearTarjetaLista(idLista, data, contenedor) {
     const sharedBadge = data.sharedLinkId 
         ? `<span class="badge-link-id" style="font-size: 0.72rem; background: #e0f2fe; color: #0284c7; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 2px;" title="Enlace compartido activo: ?v=${data.sharedLinkId}">🔗 ${data.sharedLinkId}</span>` 
         : '';
+
+    const esDuenio = esDuenioDeLista(data);
+    const botonEditar = esDuenio
+        ? `<button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}', '${catEscapada}')" title="Editar"><span class="material-symbols-outlined">edit</span></button>`
+        : `<span class="btn-icono-disabled" title="Lista compartida de solo lectura (solo el creador puede editarla)" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; color: #94a3b8; cursor: default;"><span class="material-symbols-outlined" style="font-size: 1.15rem;">lock</span></span>`;
     
     const div = document.createElement('div');
     div.className = 'tarjeta-lista-wrapper';
@@ -400,7 +429,7 @@ function crearTarjetaLista(idLista, data, contenedor) {
                 <button class="btn-icono share-universal" onclick="window.compartirUniversal('${idLista}')" title="Compartir"><span class="material-symbols-outlined">share</span></button>
                 <button class="btn-icono link" onclick="window.copiarSoloLink('${idLista}')" title="Copiar enlace"><span class="material-symbols-outlined">link</span></button>
                 <button class="btn-icono export" onclick="window.exportarLista('${idLista}')" title="Descargar archivo"><span class="material-symbols-outlined">download</span></button>
-                <button class="btn-icono edit" onclick="window.cargarListaParaEditar('${idLista}', ${JSON.stringify(ids).replace(/"/g, '&quot;')}, '${nombreEscapado}', '${catEscapada}')" title="Editar"><span class="material-symbols-outlined">edit</span></button>
+                ${botonEditar}
                 <button class="btn-icono delete" onclick="window.eliminarLista('${idLista}', '${nombreEscapado}')" title="Eliminar"><span class="material-symbols-outlined">delete</span></button>
             </div>
         </div>
@@ -506,7 +535,7 @@ function sincronizarEscuchasEnlaceCompartido() {
                             }
                         }
 
-                        mostrarNotificacionVerde(`☁️ Lista "${target.nombre.replace(/🔗/g, '').trim()}" actualizada en vivo (${nuevosCantos.length} cantos)`);
+                        // Actualización silenciosa sin mensajes ni avisos
                     }
                 }, (error) => {
                     console.warn(`Error en escucha de enlace compartido ${linkId}:`, error);
@@ -1121,9 +1150,13 @@ window.guardarListaFirebase = async (btn) => {
     };
 
     if (sharedLinkId) {
-        try {
-            const sharedDocRef = doc(db, "listasCompartidas", sharedLinkId);
-            const allowed = finalIdsCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
+        const listaExistente = listadoBase.find(l => l.sharedLinkId === sharedLinkId || l.id === sharedLinkId);
+        const puedeModificarCompartida = !listaExistente || esDuenioDeLista(listaExistente);
+
+        if (puedeModificarCompartida) {
+            try {
+                const sharedDocRef = doc(db, "listasCompartidas", sharedLinkId);
+                const allowed = finalIdsCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
             await setDoc(sharedDocRef, {
                 n: nombreFinal,
                 c: categoria || "Otros",
@@ -1147,6 +1180,7 @@ window.guardarListaFirebase = async (btn) => {
             }
         } catch (e) {
             console.warn("Error actualizando enlace compartido en Firebase al guardar:", e);
+        }
         }
     }
 
@@ -1251,46 +1285,48 @@ window.compartirUniversal = async (idLista) => {
     try {
         const user = auth.currentUser;
         const idCorto = await obtenerOReutilizarIdCorto(lista, user);
-        const docRef = doc(db, "listasCompartidas", idCorto);
-        
-        const enrichedCantos = enriquecerCantosConConfiguracion(lista.ids_cantos);
-        const allowed = enrichedCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
+        const esDuenio = esDuenioDeLista(lista);
 
-        await setDoc(docRef, {
-            n: lista.nombre,
-            c: lista.categoria || "Otros",
-            i: enrichedCantos,
-            creado: serverTimestamp(),
-            actualizado: serverTimestamp(),
-            ownerUid: user?.uid || 'anonimo',
-            ownerName: user?.displayName || user?.email || '',
-            allowedSongIds: allowed
-        }, { merge: true });
+        if (esDuenio) {
+            const docRef = doc(db, "listasCompartidas", idCorto);
+            const enrichedCantos = enriquecerCantosConConfiguracion(lista.ids_cantos);
+            const allowed = enrichedCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
 
-        if (normalizarTexto(lista.nombre) === 'test' && idCorto !== 'f8cuyo') {
-            try {
-                await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
-                    n: lista.nombre,
-                    c: lista.categoria || "Otros",
-                    i: enrichedCantos,
-                    actualizado: serverTimestamp(),
-                    allowedSongIds: allowed
-                }, { merge: true });
-            } catch(e) {}
-        }
+            await setDoc(docRef, {
+                n: lista.nombre,
+                c: lista.categoria || "Otros",
+                i: enrichedCantos,
+                creado: serverTimestamp(),
+                actualizado: serverTimestamp(),
+                ownerUid: user?.uid || 'anonimo',
+                ownerName: user?.displayName || user?.email || '',
+                allowedSongIds: allowed
+            }, { merge: true });
 
-        // Actualizar la lista en caché con los cantos enriquecidos y el link ID
-        lista.ids_cantos = enrichedCantos;
-        lista.isShared = true;
-        lista.sharedLinkId = idCorto;
-        lista.pendingSync = !!user;
-        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+            if (normalizarTexto(lista.nombre) === 'test' && idCorto !== 'f8cuyo') {
+                try {
+                    await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
+                        n: lista.nombre,
+                        c: lista.categoria || "Otros",
+                        i: enrichedCantos,
+                        actualizado: serverTimestamp(),
+                        allowedSongIds: allowed
+                    }, { merge: true });
+                } catch(e) {}
+            }
 
-        sincronizarEscuchasEnlaceCompartido();
-        renderizarListasUI(listasLocalesCache);
+            lista.ids_cantos = enrichedCantos;
+            lista.isShared = true;
+            lista.sharedLinkId = idCorto;
+            lista.pendingSync = !!user;
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
 
-        if (user) {
-            ejecutarSincronizacionFondo();
+            sincronizarEscuchasEnlaceCompartido();
+            renderizarListasUI(listasLocalesCache);
+
+            if (user) {
+                ejecutarSincronizacionFondo();
+            }
         }
 
         const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
@@ -1318,46 +1354,48 @@ window.copiarSoloLink = async (idLista) => {
     try {
         const user = auth.currentUser;
         const idCorto = await obtenerOReutilizarIdCorto(lista, user);
-        const docRef = doc(db, "listasCompartidas", idCorto);
-        
-        const enrichedCantos = enriquecerCantosConConfiguracion(lista.ids_cantos);
-        const allowed = enrichedCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
+        const esDuenio = esDuenioDeLista(lista);
 
-        await setDoc(docRef, {
-            n: lista.nombre,
-            c: lista.categoria || "Otros",
-            i: enrichedCantos,
-            creado: serverTimestamp(),
-            actualizado: serverTimestamp(),
-            ownerUid: user?.uid || 'anonimo',
-            ownerName: user?.displayName || user?.email || '',
-            allowedSongIds: allowed
-        }, { merge: true });
+        if (esDuenio) {
+            const docRef = doc(db, "listasCompartidas", idCorto);
+            const enrichedCantos = enriquecerCantosConConfiguracion(lista.ids_cantos);
+            const allowed = enrichedCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
 
-        if (normalizarTexto(lista.nombre) === 'test' && idCorto !== 'f8cuyo') {
-            try {
-                await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
-                    n: lista.nombre,
-                    c: lista.categoria || "Otros",
-                    i: enrichedCantos,
-                    actualizado: serverTimestamp(),
-                    allowedSongIds: allowed
-                }, { merge: true });
-            } catch(e) {}
-        }
+            await setDoc(docRef, {
+                n: lista.nombre,
+                c: lista.categoria || "Otros",
+                i: enrichedCantos,
+                creado: serverTimestamp(),
+                actualizado: serverTimestamp(),
+                ownerUid: user?.uid || 'anonimo',
+                ownerName: user?.displayName || user?.email || '',
+                allowedSongIds: allowed
+            }, { merge: true });
 
-        // Actualizar la lista en caché con los cantos enriquecidos y el link ID
-        lista.ids_cantos = enrichedCantos;
-        lista.isShared = true;
-        lista.sharedLinkId = idCorto;
-        lista.pendingSync = !!user;
-        localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+            if (normalizarTexto(lista.nombre) === 'test' && idCorto !== 'f8cuyo') {
+                try {
+                    await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
+                        n: lista.nombre,
+                        c: lista.categoria || "Otros",
+                        i: enrichedCantos,
+                        actualizado: serverTimestamp(),
+                        allowedSongIds: allowed
+                    }, { merge: true });
+                } catch(e) {}
+            }
 
-        sincronizarEscuchasEnlaceCompartido();
-        renderizarListasUI(listasLocalesCache);
+            lista.ids_cantos = enrichedCantos;
+            lista.isShared = true;
+            lista.sharedLinkId = idCorto;
+            lista.pendingSync = !!user;
+            localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
 
-        if (user) {
-            ejecutarSincronizacionFondo();
+            sincronizarEscuchasEnlaceCompartido();
+            renderizarListasUI(listasLocalesCache);
+
+            if (user) {
+                ejecutarSincronizacionFondo();
+            }
         }
 
         const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
@@ -1500,6 +1538,12 @@ window.toggleDetalleLista = (idLista) => {
 };
 
 window.cargarListaParaEditar = (docId, ids, nombre, categoria) => {
+    const lista = (listasLocalesCache || []).find(l => l.id === docId);
+    if (lista && !esDuenioDeLista(lista)) {
+        mostrarAlertaCustom("Esta lista fue compartida por su creador y es de solo lectura. Solo el dueño puede modificarla.", "Solo Lectura", "lock");
+        return;
+    }
+
     window.editingId = docId;
     
     listaOrdenada = ids.map(item => {
@@ -1670,6 +1714,9 @@ async function detectarLinkCompartido(usuarioActual) {
             existeCompartida.origin = 'local';
             existeCompartida.isShared = true;
             existeCompartida.sharedLinkId = idCorto;
+            existeCompartida.ownerUid = datosCanto.ownerUid;
+            existeCompartida.ownerName = datosCanto.ownerName;
+            existeCompartida.esImportada = !esCreadorDelEnlace;
             existeCompartida.pendingSync = !!user;
 
             targetLista = existeCompartida;
@@ -1698,8 +1745,6 @@ async function detectarLinkCompartido(usuarioActual) {
                     console.warn("Error sincronizando lista compartida actualizada en Firestore:", e);
                 }
             }
-
-            mostrarNotificacionVerde(`Lista "${nombreLimpio}" actualizada (${finalIdsCantos.length} cantos)`);
         } else if (existeLocal) {
             // Existe una lista personal local propia con el mismo nombre
             const decision = await solicitarDecisionListaExistente(existeLocal.nombre || nombreLimpio);
@@ -1819,7 +1864,10 @@ async function detectarLinkCompartido(usuarioActual) {
                 origin: 'local',
                 pendingSync: !!user,
                 isShared: true,
-                sharedLinkId: idCorto
+                sharedLinkId: idCorto,
+                ownerUid: datosCanto.ownerUid,
+                ownerName: datosCanto.ownerName,
+                esImportada: !esCreadorDelEnlace
             };
             cache = cache.filter(l => l.id !== nuevoId);
             cache.unshift(targetLista);
