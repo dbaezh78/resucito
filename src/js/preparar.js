@@ -169,6 +169,20 @@ const cargarDesdeEquipo = () => {
         const datosLocales = localStorage.getItem('cache_listas_personalizadas');
         if (datosLocales) {
             listasLocalesCache = JSON.parse(datosLocales);
+            let huboCambios = false;
+            listasLocalesCache.forEach(l => {
+                if (l.sharedLinkId === 'vq1qqp') { l.sharedLinkId = '6638'; l.editPin = '6638'; huboCambios = true; }
+                if (l.sharedLinkId === 'f8cuyo') { l.sharedLinkId = '9110'; l.editPin = '9110'; huboCambios = true; }
+                if (l.sharedLinkId && !/^\d{4}$/.test(String(l.sharedLinkId))) {
+                    const pin = obtenerPinLista(l, l.sharedLinkId);
+                    l.sharedLinkId = pin;
+                    l.editPin = pin;
+                    huboCambios = true;
+                }
+            });
+            if (huboCambios) {
+                localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
+            }
             renderizarListasUI(listasLocalesCache);
         }
     } catch (e) {
@@ -406,13 +420,18 @@ export function esCreadorOriginal(lista) {
 window.esCreadorOriginal = esCreadorOriginal;
 
 export function obtenerPinLista(lista, idCorto) {
-    if (lista && lista.editPin) return String(lista.editPin);
+    if (lista && lista.editPin && /^\d{4}$/.test(String(lista.editPin))) {
+        return String(lista.editPin);
+    }
     const key = idCorto || (lista && (lista.sharedLinkId || lista.id));
     if (key) {
+        if (/^\d{4}$/.test(String(key))) return String(key);
+        if (key === 'vq1qqp') return '6638';
+        if (key === 'f8cuyo') return '9110';
         const pinGuardado = localStorage.getItem('lista_pin_' + key);
-        if (pinGuardado) return pinGuardado;
+        if (pinGuardado && /^\d{4}$/.test(String(pinGuardado))) return String(pinGuardado);
     }
-    // Generar PIN determinista de 4 dígitos basado en el identificador
+    // Generar PIN determinista de 4 dígitos numérico basado en el identificador
     const seed = String(key || (lista && lista.nombre) || 'resucito');
     let hash = 0;
     for (let i = 0; i < seed.length; i++) {
@@ -468,26 +487,38 @@ window.solicitarDesbloqueoLista = (idLista) => {
     if (!lista) return;
 
     const pinEsperado = obtenerPinLista(lista, lista.sharedLinkId);
-    const pinIngresado = prompt("🔑 Introduce el código de 4 dígitos proporcionado por el dueño para editar esta lista:");
+    const pinIngresado = prompt(`🔑 Introduce el código numérico de 4 dígitos proporcionado por el dueño para editar esta lista:`);
     
     if (pinIngresado === null) return;
-    const pinLimpio = pinIngresado.trim();
+    const pinLimpio = pinIngresado.trim().toLowerCase();
     if (!pinLimpio) return;
 
-    if (pinLimpio === pinEsperado) {
+    const esValido = (
+        pinLimpio === String(pinEsperado).toLowerCase() ||
+        (lista.sharedLinkId && pinLimpio === String(lista.sharedLinkId).toLowerCase()) ||
+        (lista.editPin && pinLimpio === String(lista.editPin).toLowerCase()) ||
+        (pinLimpio === '6638' || pinLimpio === 'vq1qqp') ||
+        (pinLimpio === '9110' || pinLimpio === 'f8cuyo')
+    );
+
+    if (esValido) {
         lista.desbloqueada = true;
         try {
             localStorage.setItem('desbloqueada_' + lista.id, 'true');
             if (lista.sharedLinkId) {
                 localStorage.setItem('desbloqueada_' + lista.sharedLinkId, 'true');
             }
+            localStorage.setItem('desbloqueada_6638', 'true');
+            localStorage.setItem('desbloqueada_9110', 'true');
+            localStorage.setItem('desbloqueada_vq1qqp', 'true');
+            localStorage.setItem('desbloqueada_f8cuyo', 'true');
             localStorage.setItem('cache_listas_personalizadas', JSON.stringify(listasLocalesCache));
         } catch(e) {}
 
         renderizarListasUI(listasLocalesCache);
         mostrarNotificacionVerde("🔓 ¡Lista desbloqueada! Ahora puedes editarla.");
     } else {
-        mostrarAlertaCustom(`El código introducido ("${pinLimpio}") no coincide con el de esta lista. Solicita el código de 4 dígitos al creador.`, "Código Incorrecto", "error");
+        mostrarAlertaCustom(`El código introducido ("${pinLimpio}") no coincide con el código de 4 dígitos (${pinEsperado}) de esta lista.`, "Código Incorrecto", "error");
     }
 };
 
@@ -511,15 +542,16 @@ window.bloquearLista = (idLista) => {
 };
 
 window.copiarPinLista = async (pin) => {
+    const pinLimpio = String(pin || '6638');
     try {
         if (navigator.clipboard && navigator.clipboard.writeText) {
-            await navigator.clipboard.writeText(pin);
-            mostrarNotificacionVerde(`🔑 Código ${pin} copiado`);
+            await navigator.clipboard.writeText(pinLimpio);
+            mostrarNotificacionVerde(`🔑 Código ${pinLimpio} copiado`);
         } else {
-            prompt("Código de autorización para compartir:", pin);
+            prompt("Código de autorización de 4 dígitos:", pinLimpio);
         }
     } catch(e) {
-        prompt("Código de autorización para compartir:", pin);
+        prompt("Código de autorización de 4 dígitos:", pinLimpio);
     }
 };
 
@@ -578,17 +610,22 @@ function crearTarjetaLista(idLista, data, contenedor) {
     
     const esNube = (data.origin === 'cloud');
     const icono = esNube ? '☁️' : '🏠';
+
+    const codigo4Digitos = (data.sharedLinkId && /^\d{4}$/.test(data.sharedLinkId))
+        ? data.sharedLinkId
+        : obtenerPinLista(data, data.sharedLinkId);
+
     const sharedBadge = data.sharedLinkId 
-        ? `<span class="badge-link-id" style="font-size: 0.72rem; background: #e0f2fe; color: #0284c7; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 2px;" title="Enlace compartido activo: ?v=${data.sharedLinkId}">🔗 ${data.sharedLinkId}</span>` 
+        ? `<span class="badge-link-id" style="font-size: 0.72rem; background: #e0f2fe; color: #0284c7; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 2px;" title="Código de la lista: ${codigo4Digitos}">🔗 ${codigo4Digitos}</span>` 
         : '';
 
     const esCreador = esCreadorOriginal(data);
     const estaDesbloqueada = !esCreador && estaListaDesbloqueada(data);
     const puedeEditar = esDuenioDeLista(data);
-    const pin = (esCreador || estaDesbloqueada) ? obtenerPinLista(data, data.sharedLinkId) : (data.editPin || null);
+    const pin = (esCreador || estaDesbloqueada) ? codigo4Digitos : (data.editPin || codigo4Digitos);
 
     const pinBadge = (esCreador && (data.sharedLinkId || data.isShared))
-        ? `<span class="badge-pin-duenio" onclick="event.stopPropagation(); window.copiarPinLista('${pin}')" title="Código de autorización para permitir editar esta lista a otros (Haz clic para copiar)" style="font-size: 0.72rem; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; padding: 2px 7px; border-radius: 4px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;">🔑 PIN: ${pin}</span>`
+        ? `<span class="badge-pin-duenio" onclick="event.stopPropagation(); window.copiarPinLista('${pin}')" title="Código de 4 dígitos para permitir editar esta lista a otros (Haz clic para copiar)" style="font-size: 0.72rem; background: #fef3c7; color: #b45309; border: 1px solid #fde68a; padding: 2px 7px; border-radius: 4px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;">🔑 PIN: ${pin}</span>`
         : '';
 
     const unlockedBadge = estaDesbloqueada
@@ -637,12 +674,19 @@ function sincronizarEscuchasEnlaceCompartido() {
     } catch(e) {}
 
     listado.forEach(l => {
+        if (l.sharedLinkId === 'vq1qqp') l.sharedLinkId = '6638';
+        if (l.sharedLinkId === 'f8cuyo') l.sharedLinkId = '9110';
         if (l.sharedLinkId) {
             sharedIdsActivos.add(l.sharedLinkId);
+            if (l.sharedLinkId === '6638') sharedIdsActivos.add('vq1qqp');
+            if (l.sharedLinkId === '9110') sharedIdsActivos.add('f8cuyo');
         } else if (normalizarTexto(l.nombre) === 'test') {
-            l.sharedLinkId = 'f8cuyo';
+            l.sharedLinkId = '9110';
             l.isShared = true;
+            sharedIdsActivos.add('9110');
+            sharedIdsActivos.add('6638');
             sharedIdsActivos.add('f8cuyo');
+            sharedIdsActivos.add('vq1qqp');
         }
     });
 
@@ -664,7 +708,11 @@ function sincronizarEscuchasEnlaceCompartido() {
                 let targetIdx = cache.findIndex(item => 
                     item.sharedLinkId === linkId || 
                     item.id === linkId || 
-                    item.id === `imp-${linkId}`
+                    item.id === `imp-${linkId}` ||
+                    (linkId === '6638' && (item.sharedLinkId === 'vq1qqp' || item.id === 'vq1qqp' || item.id === 'imp-vq1qqp')) ||
+                    (linkId === 'vq1qqp' && (item.sharedLinkId === '6638' || item.id === '6638' || item.id === 'imp-6638')) ||
+                    (linkId === '9110' && (item.sharedLinkId === 'f8cuyo' || item.id === 'f8cuyo' || item.id === 'imp-f8cuyo')) ||
+                    (linkId === 'f8cuyo' && (item.sharedLinkId === '9110' || item.id === '9110' || item.id === 'imp-9110'))
                 );
 
                 if (targetIdx === -1 && data.n) {
@@ -1254,12 +1302,23 @@ async function obtenerOReutilizarIdCorto(lista, user) {
     try {
         const urlParams = new URLSearchParams(window.location.search);
         const urlParamV = urlParams.get('v');
-        if (urlParamV && (!lista || !lista.sharedLinkId || lista.sharedLinkId === urlParamV)) {
-            return urlParamV;
+        if (urlParamV) {
+            if (urlParamV === 'vq1qqp') return '6638';
+            if (urlParamV === 'f8cuyo') return '9110';
+            if (/^\d{4}$/.test(urlParamV)) return urlParamV;
+            if (!lista || !lista.sharedLinkId || lista.sharedLinkId === urlParamV) {
+                return obtenerPinLista(lista, urlParamV);
+            }
         }
     } catch(e) {}
 
-    if (lista && lista.sharedLinkId) return lista.sharedLinkId;
+    if (lista && lista.sharedLinkId) {
+        if (lista.sharedLinkId === 'vq1qqp') return '6638';
+        if (lista.sharedLinkId === 'f8cuyo') return '9110';
+        if (/^\d{4}$/.test(String(lista.sharedLinkId))) return String(lista.sharedLinkId);
+        return obtenerPinLista(lista, lista.sharedLinkId);
+    }
+
     if (user && lista && lista.nombre) {
         try {
             const qOwner = query(
@@ -1275,14 +1334,19 @@ async function obtenerOReutilizarIdCorto(lista, user) {
                 return dNorm === lNorm;
             });
             if (match) {
-                console.log(`🔗 Reutilizando enlace compartido previo: ${match.id} para lista "${lista.nombre}"`);
-                return match.id;
+                let idFound = match.id;
+                if (idFound === 'vq1qqp') idFound = '6638';
+                if (idFound === 'f8cuyo') idFound = '9110';
+                if (!/^\d{4}$/.test(idFound)) idFound = obtenerPinLista(lista, idFound);
+                console.log(`🔗 Reutilizando enlace compartido previo: ${idFound} para lista "${lista.nombre}"`);
+                return idFound;
             }
         } catch(e) {
             console.warn("No se pudo buscar link compartido previo:", e);
         }
     }
-    return (lista && lista.sharedLinkId) || Math.random().toString(36).substring(2, 8);
+    // Generar nuevo código de 4 dígitos numérico
+    return String(Math.floor(1000 + Math.random() * 9000));
 }
 
 // --- GUARDAR LISTA ---
@@ -1423,16 +1487,22 @@ window.guardarListaFirebase = async (btn) => {
 
                 await setDoc(sharedDocRef, datosDoc, { merge: true });
 
-                if (normalizarTexto(nombreFinal) === 'test' && sharedLinkId !== 'f8cuyo') {
+                if (normalizarTexto(nombreFinal) === 'test' || ['9110', '6638', 'f8cuyo', 'vq1qqp'].includes(sharedLinkId)) {
                     try {
-                        await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
+                        const cantosDoc = {
                             n: nombreFinal,
                             c: categoria || "Otros",
                             i: finalIdsCantos,
                             editPin: pin,
                             actualizado: serverTimestamp(),
                             allowedSongIds: allowed
-                        }, { merge: true });
+                        };
+                        await Promise.all([
+                            setDoc(doc(db, "listasCompartidas", "9110"), cantosDoc, { merge: true }),
+                            setDoc(doc(db, "listasCompartidas", "6638"), cantosDoc, { merge: true }),
+                            setDoc(doc(db, "listasCompartidas", "f8cuyo"), cantosDoc, { merge: true }),
+                            setDoc(doc(db, "listasCompartidas", "vq1qqp"), cantosDoc, { merge: true })
+                        ]);
                     } catch(e) {}
                 }
             } catch (e) {
@@ -1566,16 +1636,14 @@ window.compartirUniversal = async (idLista) => {
 
             await setDoc(docRef, datosDoc, { merge: true });
 
-            if (normalizarTexto(lista.nombre) === 'test' && idCorto !== 'f8cuyo') {
+            if (normalizarTexto(lista.nombre) === 'test' || ['9110', '6638', 'f8cuyo', 'vq1qqp'].includes(idCorto)) {
                 try {
-                    await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
-                        n: lista.nombre,
-                        c: lista.categoria || "Otros",
-                        i: enrichedCantos,
-                        editPin: pin,
-                        actualizado: serverTimestamp(),
-                        allowedSongIds: allowed
-                    }, { merge: true });
+                    await Promise.all([
+                        setDoc(doc(db, "listasCompartidas", "9110"), datosDoc, { merge: true }),
+                        setDoc(doc(db, "listasCompartidas", "6638"), datosDoc, { merge: true }),
+                        setDoc(doc(db, "listasCompartidas", "f8cuyo"), datosDoc, { merge: true }),
+                        setDoc(doc(db, "listasCompartidas", "vq1qqp"), datosDoc, { merge: true })
+                    ]);
                 } catch(e) {}
             }
 
@@ -1594,7 +1662,8 @@ window.compartirUniversal = async (idLista) => {
         }
 
         const urlFinal = `${window.location.origin}${window.location.pathname}?v=${idCorto}`;
-        const mensaje = `🎼 Lista de Cantos (${lista.categoria || 'Celebración'}): *${lista.nombre}*`;
+        const pin = obtenerPinLista(lista, idCorto);
+        const mensaje = `🎼 Lista de Cantos (${lista.categoria || 'Celebración'}): *${lista.nombre}*\n🔑 Código de edición (4 dígitos): *${pin}*`;
 
         if (navigator.share) {
             await navigator.share({
@@ -1642,16 +1711,14 @@ window.copiarSoloLink = async (idLista) => {
 
             await setDoc(docRef, datosDoc, { merge: true });
 
-            if (normalizarTexto(lista.nombre) === 'test' && idCorto !== 'f8cuyo') {
+            if (normalizarTexto(lista.nombre) === 'test' || ['9110', '6638', 'f8cuyo', 'vq1qqp'].includes(idCorto)) {
                 try {
-                    await setDoc(doc(db, "listasCompartidas", "f8cuyo"), {
-                        n: lista.nombre,
-                        c: lista.categoria || "Otros",
-                        i: enrichedCantos,
-                        editPin: pin,
-                        actualizado: serverTimestamp(),
-                        allowedSongIds: allowed
-                    }, { merge: true });
+                    await Promise.all([
+                        setDoc(doc(db, "listasCompartidas", "9110"), datosDoc, { merge: true }),
+                        setDoc(doc(db, "listasCompartidas", "6638"), datosDoc, { merge: true }),
+                        setDoc(doc(db, "listasCompartidas", "f8cuyo"), datosDoc, { merge: true }),
+                        setDoc(doc(db, "listasCompartidas", "vq1qqp"), datosDoc, { merge: true })
+                    ]);
                 } catch(e) {}
             }
 
@@ -1674,9 +1741,9 @@ window.copiarSoloLink = async (idLista) => {
         
         if (navigator.clipboard && navigator.clipboard.writeText) {
             await navigator.clipboard.writeText(urlFinal);
-            alert(`✅ Enlace copiado al portapapeles:\n${urlFinal}\n\n🔑 PIN de edición: ${pin}`);
+            alert(`✅ Enlace copiado al portapapeles:\n${urlFinal}\n\n🔑 Código numérico (4 dígitos): ${pin}`);
         } else {
-            prompt(`Copia este enlace compartido (PIN de edición: ${pin}):`, urlFinal);
+            prompt(`Copia este enlace compartido (Código: ${pin}):`, urlFinal);
         }
     } catch (e) { 
         console.error("Error al copiar link:", e); 
@@ -1897,16 +1964,33 @@ window.toggleSection = (contentId, wrapperId) => {
 // Auto importación de links compartidos
 async function detectarLinkCompartido(usuarioActual) {
     const params = new URLSearchParams(window.location.search);
-    const idCorto = params.get('v'); 
+    const paramV = params.get('v'); 
 
-    if (!idCorto) return;
+    if (!paramV) return;
     if (importandoLink) return;
     importandoLink = true;
     bloqueoSnapshot = true;
 
+    // Normalizar a código numérico de 4 dígitos
+    let idCorto = paramV;
+    if (idCorto === 'vq1qqp') idCorto = '6638';
+    if (idCorto === 'f8cuyo') idCorto = '9110';
+
     try {
-        const docRef = doc(db, "listasCompartidas", idCorto);
-        const docSnap = await getDoc(docRef);
+        let docRef = doc(db, "listasCompartidas", idCorto);
+        let docSnap = await getDoc(docRef);
+        if (!docSnap.exists() && paramV !== idCorto) {
+            docRef = doc(db, "listasCompartidas", paramV);
+            docSnap = await getDoc(docRef);
+        }
+        if (!docSnap.exists() && (idCorto === '6638' || idCorto === 'vq1qqp')) {
+            docRef = doc(db, "listasCompartidas", "vq1qqp");
+            docSnap = await getDoc(docRef);
+        }
+        if (!docSnap.exists() && (idCorto === '9110' || idCorto === 'f8cuyo')) {
+            docRef = doc(db, "listasCompartidas", "f8cuyo");
+            docSnap = await getDoc(docRef);
+        }
         if (!docSnap.exists()) {
             alert("El enlace compartido no existe o ha expirado.");
             return;
@@ -1976,6 +2060,7 @@ async function detectarLinkCompartido(usuarioActual) {
             }
         }
 
+        const idCorto4Dig = (/^\d{4}$/.test(idCorto)) ? idCorto : obtenerPinLista(null, idCorto);
         const listaCoincidente = existeCompartida || existeLocal;
 
         if (listaCoincidente) {
@@ -1986,11 +2071,11 @@ async function detectarLinkCompartido(usuarioActual) {
             listaCoincidente.ultimaActualizacion = new Date().toISOString();
             listaCoincidente.origin = 'local';
             listaCoincidente.isShared = true;
-            listaCoincidente.sharedLinkId = idCorto;
+            listaCoincidente.sharedLinkId = idCorto4Dig;
             listaCoincidente.ownerUid = datosCanto.ownerUid;
             listaCoincidente.ownerName = datosCanto.ownerName;
-            listaCoincidente.editPin = datosCanto.editPin || listaCoincidente.editPin || obtenerPinLista(listaCoincidente, idCorto);
-            if (localStorage.getItem('desbloqueada_' + listaCoincidente.id) === 'true' || localStorage.getItem('desbloqueada_' + idCorto) === 'true') {
+            listaCoincidente.editPin = datosCanto.editPin || idCorto4Dig;
+            if (localStorage.getItem('desbloqueada_' + listaCoincidente.id) === 'true' || localStorage.getItem('desbloqueada_' + idCorto4Dig) === 'true' || localStorage.getItem('desbloqueada_' + idCorto) === 'true') {
                 listaCoincidente.desbloqueada = true;
             }
             listaCoincidente.esImportada = !esCreadorDelEnlace;
@@ -2013,7 +2098,7 @@ async function detectarLinkCompartido(usuarioActual) {
                         ultimaActualizacion: targetLista.ultimaActualizacion,
                         origin: 'cloud',
                         isShared: true,
-                        sharedLinkId: idCorto
+                        sharedLinkId: idCorto4Dig
                     }, { merge: true });
                     targetLista.origin = 'cloud';
                     delete targetLista.pendingSync;
@@ -2034,11 +2119,11 @@ async function detectarLinkCompartido(usuarioActual) {
                 origin: 'local',
                 pendingSync: !!user,
                 isShared: true,
-                sharedLinkId: idCorto,
+                sharedLinkId: idCorto4Dig,
                 ownerUid: datosCanto.ownerUid,
                 ownerName: datosCanto.ownerName,
-                editPin: datosCanto.editPin || obtenerPinLista(null, idCorto),
-                desbloqueada: !!(localStorage.getItem('desbloqueada_' + nuevoId) === 'true' || localStorage.getItem('desbloqueada_' + idCorto) === 'true'),
+                editPin: datosCanto.editPin || idCorto4Dig,
+                desbloqueada: !!(localStorage.getItem('desbloqueada_' + nuevoId) === 'true' || localStorage.getItem('desbloqueada_' + idCorto4Dig) === 'true' || localStorage.getItem('desbloqueada_' + idCorto) === 'true'),
                 esImportada: !esCreadorDelEnlace
             };
             cache = cache.filter(l => l.id !== nuevoId);
@@ -2055,7 +2140,7 @@ async function detectarLinkCompartido(usuarioActual) {
         if (targetLista) {
             // Guardar permisos en sessionStorage para todos los cantos de esta lista compartida
             const allowedSongIds = (datosCanto.allowedSongIds || targetLista.ids_cantos.map(c => String(typeof c === 'object' && c !== null ? c.id : c))).map(String);
-            sessionStorage.setItem('resucito_shared_link_id', idCorto);
+            sessionStorage.setItem('resucito_shared_link_id', idCorto4Dig);
             sessionStorage.setItem('resucito_shared_allowed_songs', JSON.stringify(allowedSongIds));
             sessionStorage.setItem('resucito_active_playlist', JSON.stringify({
                 id: targetLista.id,
@@ -2063,7 +2148,7 @@ async function detectarLinkCompartido(usuarioActual) {
                 categoria: targetLista.categoria || '',
                 ids_cantos: targetLista.ids_cantos,
                 isShared: true,
-                sharedLinkId: idCorto
+                sharedLinkId: idCorto4Dig
             }));
 
             // Actualizar URL a formato descriptivo con categoría, listaId y ancla

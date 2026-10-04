@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v343'; // v2.1.14 desbloqueo de edicion con pin y doble clic en candado
+const CACHE_NAME = 'resucito-cache-v344'; // v2.1.15 codigos de lista exclusivamente de 4 digitos numericos
 const STATIC_ASSETS = [
   './',
   'index.html',

@@ -1,11 +1,10 @@
 {
-  "latestVersion": "2.1.14",
+  "latestVersion": "2.1.15",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.14)",
-  "updateMessage": "Desbloqueo de edición con PIN y doble clic en el candado.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.15)",
+  "updateMessage": "Códigos de listas y autorización exclusivamente de 4 dígitos numéricos.",
   "releaseNotes": [
-    "PIN de autorización visible en las listas del creador/dueño.",
-    "Doble clic en el candado para receptores para introducir el PIN y habilitar edición.",
-    "Sincronización en tiempo real de cambios editados con PIN."
+    "Códigos de listas compartidas y PIN exclusivamente numéricos de 4 dígitos.",
+    "Compatibilidad con listas previas y desbloqueo directo con PIN de 4 dígitos."
   ]
 }
