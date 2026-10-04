@@ -1,8 +1,8 @@
 {
-  "latestVersion": "2.1.09",
+  "latestVersion": "2.1.10",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.09)",
-  "updateMessage": "Sincronización en vivo y actualización de enlaces compartidos.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.10)",
+  "updateMessage": "Sincronización en tiempo real (en vivo) de listas compartidas.",
   "releaseNotes": [
     "Sincronización en tiempo real de enlaces compartidos para todos los usuarios.",
     "Actualización automática de listas en receptores sin duplicados.",
