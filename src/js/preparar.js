@@ -993,11 +993,11 @@ window.guardarListaFirebase = async (btn) => {
         try {
             const sharedDocRef = doc(db, "listasCompartidas", sharedLinkId);
             const allowed = finalIdsCantos.map(item => String(typeof item === 'object' && item !== null ? item.id : item));
-            setDoc(sharedDocRef, {
+            await setDoc(sharedDocRef, {
                 n: nombreFinal,
                 c: categoria || "Otros",
                 i: finalIdsCantos,
-                creado: serverTimestamp(),
+                actualizado: serverTimestamp(),
                 ownerUid: user?.uid || 'anonimo',
                 ownerName: user?.displayName || user?.email || '',
                 allowedSongIds: allowed
@@ -1458,7 +1458,10 @@ async function detectarLinkCompartido(usuarioActual) {
         let targetLista = null;
 
         // Si el usuario autenticado es el creador/dueño original de este enlace:
-        const esCreadorDelEnlace = !!(user && datosCanto.ownerUid && datosCanto.ownerUid === user.uid);
+        const esCreadorDelEnlace = !!(user && (
+            (datosCanto.ownerUid && datosCanto.ownerUid === user.uid) ||
+            user.email === 'dbaezh78@gmail.com'
+        ));
         const listaDelCreador = esCreadorDelEnlace ? listadoBase.find(l => {
             const lNorm = normalizarTexto(l.nombre ? l.nombre.replace(/🔗/g, '').replace(/📂/g, '') : '');
             return lNorm === nombreBaseNorm || l.id === idCorto || l.sharedLinkId === idCorto;
