@@ -6,11 +6,11 @@
   <title>Parroquia - Preparación de Eucaristías - Resucitó</title>
   <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/parroquia-DxS3RG89.js"></script>
+  <script type="module" crossorigin src="./assets/parroquia-DUbuBH9R.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/preload-helper-44F9sIZn.js">
   <link rel="modulepreload" crossorigin href="./assets/songs-data-DMudPMhN.js">
   <link rel="modulepreload" crossorigin href="./assets/navegador-BwC_8PM7.js">
-  <link rel="stylesheet" crossorigin href="./assets/parroquia-Cw2RMZIS.css">
+  <link rel="stylesheet" crossorigin href="./assets/parroquia-m9u4Pylk.css">
   <link rel="stylesheet" crossorigin href="./assets/expancion-BjQ0Yl74.css">
   <link rel="stylesheet" crossorigin href="./assets/perfil-C66_GY40.css">
   <link rel="stylesheet" crossorigin href="./assets/preparar-CbwLyR1u.css">
@@ -106,9 +106,9 @@
 
       <!-- Zona de Administrador / Crear Parroquia -->
       <div id="box-admin-crear-parroquia" style="margin-top: 28px; padding-top: 16px; border-top: 1px dashed var(--panel-border, #e5e7eb);">
-        <button id="btn-abrir-crear-parroquia" class="btn-parroquia-top" style="width: 100%; justify-content: center; background: rgba(208, 18, 18, 0.08); color: var(--accent-color, #d01212); border-color: rgba(208, 18, 18, 0.2);">
-          <span class="material-symbols-outlined">add_circle</span>
-          Crear Nueva Parroquia
+        <button id="btn-abrir-crear-parroquia" class="btn-parroquia-top" style="width: 100%; justify-content: center; background: rgba(208, 18, 18, 0.08); color: var(--accent-color, #d01212); border-color: rgba(208, 18, 18, 0.2); font-weight: 700;">
+          <span class="material-symbols-outlined">domain_add</span>
+          Formulario de Parroquias e Importación CSV
         </button>
       </div>
     </div>
@@ -145,10 +145,16 @@
             <span id="badge-solicitudes-pendientes" style="display: none; background: var(--accent-color, #d01212); color: #fff; font-size: 0.72rem; padding: 1px 6px; border-radius: 10px; margin-left: 2px;">0</span>
           </button>
 
-          <!-- Botón Cambiar o Crear Parroquia -->
+          <!-- Botón Cambiar Parroquia -->
           <button id="btn-cambiar-parroquia" class="btn-parroquia-top" title="Cambiar a otra parroquia">
             <span class="material-symbols-outlined">swap_horiz</span>
             Parroquias
+          </button>
+
+          <!-- Botón Administrar / Importar Parroquias -->
+          <button id="btn-abrir-admin-parroquias" class="btn-parroquia-top" title="Formulario de Parroquias e Importación CSV">
+            <span class="material-symbols-outlined">domain</span>
+            Gestionar Parroquias
           </button>
         </div>
       </div>
@@ -428,37 +434,118 @@
   </div>
 
   <!-- ========================================== -->
-  <!-- MODAL: CREAR NUEVA PARROQUIA              -->
+  <!-- MODAL: REGISTRO, GESTIÓN E IMPORTACIÓN DE PARROQUIAS -->
   <!-- ========================================== -->
-  <div id="modal-crear-parroquia" class="modal-overlay" style="display: none; z-index: 100020;">
-    <div class="modal-content-card modal-parroquia-box" style="max-width: 480px;">
-      <h3 style="margin: 0 0 12px 0; font-size: 1.25rem; display: flex; align-items: center; gap: 8px;">
-        <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">church</span>
-        Crear Nueva Parroquia
-      </h3>
-
-      <div style="margin-bottom: 12px;">
-        <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Nombre de la Parroquia:</label>
-        <input type="text" id="input-crear-parroquia-nombre" placeholder="Ej. Parroquia San Juan Bautista" style="width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border, #ccc); font-size: 0.95rem;">
-      </div>
-
-      <div style="margin-bottom: 12px;">
-        <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Ciudad / Diócesis:</label>
-        <input type="text" id="input-crear-parroquia-ciudad" placeholder="Ej. Santo Domingo, Madrid..." style="width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border, #ccc); font-size: 0.95rem;">
-      </div>
-
-      <p style="font-size: 0.82rem; color: var(--text-muted, #6b7280); line-height: 1.4; margin-bottom: 18px;">
-        Al crear la parroquia, se generará automáticamente un <strong>código de 16 caracteres</strong> exclusivo para invitar a los cantores. Tú quedarás registrado como Encargado principal.
-      </p>
-
-      <div style="display: flex; gap: 10px; justify-content: flex-end;">
-        <button class="btn btn-cancel" onclick="document.getElementById('modal-crear-parroquia').style.display='none'">
-          Cancelar
-        </button>
-        <button id="btn-confirmar-crear-parroquia" class="btn-accion" style="padding: 10px 20px;">
-          Crear Parroquia
+  <div id="modal-admin-parroquias" class="modal-overlay" style="display: none; z-index: 100020;">
+    <div class="modal-content-card modal-admin-parroquias-box">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1.5px solid var(--panel-border, #f3f4f6); padding-bottom: 10px;">
+        <h3 style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 8px;">
+          <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">church</span>
+          Registro y Gestión de Parroquias
+        </h3>
+        <button type="button" onclick="document.getElementById('modal-admin-parroquias').style.display='none'" style="background: none; border: none; cursor: pointer;">
+          <span class="material-symbols-outlined" style="font-size: 24px; color: var(--text-muted, #6b7280);">close</span>
         </button>
       </div>
+
+      <!-- Banner de Importación CSV -->
+      <div class="box-import-csv-banner">
+        <div class="box-import-csv-banner-title">
+          <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212); font-size: 22px;">upload_file</span>
+          <span>Importación Masiva de Parroquias</span>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button type="button" id="btn-descargar-plantilla-csv" class="btn-csv-action" onclick="window.descargarPlantillaCsvParroquias()">
+            <span class="material-symbols-outlined" style="font-size: 16px;">download</span>
+            Descargar Plantilla CSV
+          </button>
+          <button type="button" id="btn-subir-csv-parroquias" class="btn-csv-action primary" onclick="document.getElementById('input-archivo-csv-parroquias').click()">
+            <span class="material-symbols-outlined" style="font-size: 16px;">file_upload</span>
+            Importar Parroquias (CSV)
+          </button>
+          <input type="file" id="input-archivo-csv-parroquias" accept=".csv" style="display: none;" onchange="window.procesarArchivoCsvParroquias(event)">
+        </div>
+      </div>
+
+      <!-- FORMULARIO DE PARROQUIA -->
+      <form id="form-registro-parroquia" onsubmit="window.guardarParroquiaDesdeFormulario(event)">
+        <input type="hidden" id="parroquia-id-editando" value="">
+
+        <div class="parroquia-form-grid">
+          <!-- 1. País (Select con buscador, RD primero y alfabético) -->
+          <div class="parroquia-form-group">
+            <label for="parroquia-pais-select">País: <span class="req">*</span></label>
+            <div class="pais-search-box">
+              <span class="material-symbols-outlined pais-search-icon">search</span>
+              <input type="text" id="filtro-pais-input" class="pais-search-input" placeholder="Buscar país..." oninput="window.filtrarSelectPaises(this.value)">
+              <select id="parroquia-pais-select" class="parroquia-form-input" required>
+                <!-- Se pobla dinámicamente con República Dominicana de primero -->
+              </select>
+            </div>
+          </div>
+
+          <!-- 2. Parroquia (Nombre) -->
+          <div class="parroquia-form-group">
+            <label for="parroquia-nombre-input">Parroquia: <span class="req">*</span></label>
+            <input type="text" id="parroquia-nombre-input" class="parroquia-form-input" placeholder="Nombre de la Parroquia" required autocomplete="off">
+          </div>
+
+          <!-- 3. Dirección -->
+          <div class="parroquia-form-group">
+            <label for="parroquia-direccion-input">Dirección:</label>
+            <input type="text" id="parroquia-direccion-input" class="parroquia-form-input" placeholder="Calle, número, sector o diócesis">
+          </div>
+
+          <!-- 4. Párroco -->
+          <div class="parroquia-form-group">
+            <label for="parroquia-parroco-input">Párroco:</label>
+            <input type="text" id="parroquia-parroco-input" class="parroquia-form-input" placeholder="Nombre del párroco">
+          </div>
+
+          <!-- 5. Cantor Encargado (Select con usuarios de la app) -->
+          <div class="parroquia-form-group" style="grid-column: 1 / -1;">
+            <label for="parroquia-cantor-encargado-select">Cantor Encargado (Usuario de la App):</label>
+            <select id="parroquia-cantor-encargado-select" class="parroquia-form-input">
+              <option value="">-- Seleccionar Cantor Encargado (Opcional) --</option>
+              <!-- Poblado dinámicamente con registered_users -->
+            </select>
+            <small style="color: var(--text-muted, #6b7280); font-size: 0.78rem;">
+              Selecciona el usuario que quedará como encargado de la parroquia en la aplicación.
+            </small>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; justify-content: flex-end; align-items: center; margin-bottom: 24px;">
+          <button type="button" class="btn btn-cancel" onclick="window.limpiarFormularioParroquia()">
+            Limpiar / Nuevo
+          </button>
+          <button type="submit" id="btn-guardar-parroquia-submit" class="btn-accion" style="padding: 10px 20px;">
+            <span class="material-symbols-outlined">save</span>
+            Guardar Parroquia
+          </button>
+        </div>
+      </form>
+
+      <!-- LISTADO DE PARROQUIAS REGISTRADAS -->
+      <div style="border-top: 1.5px solid var(--panel-border, #e5e7eb); padding-top: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h4 style="margin: 0; font-size: 1.05rem; display: flex; align-items: center; gap: 6px;">
+            <span class="material-symbols-outlined" style="font-size: 20px; color: var(--accent-color, #d01212);">list_alt</span>
+            Parroquias Registradas (<span id="total-parroquias-admin">0</span>)
+          </h4>
+        </div>
+
+        <div class="buscador-input-container" style="margin-bottom: 12px;">
+          <span class="material-symbols-outlined search-icon">search</span>
+          <input type="text" id="buscador-admin-parroquias" placeholder="Buscar por parroquia, país, párroco o cantor..." oninput="window.filtrarListadoAdminParroquias()">
+          <span id="btnLimpiarBuscadorAdminParroquias" class="material-symbols-outlined close-icon" onclick="window.limpiarBuscadorAdminParroquias()" style="display: none;">close</span>
+        </div>
+
+        <div id="contenedor-listado-admin-parroquias" style="max-height: 280px; overflow-y: auto;">
+          <!-- Poblado dinámicamente -->
+        </div>
+      </div>
+
     </div>
   </div>
 

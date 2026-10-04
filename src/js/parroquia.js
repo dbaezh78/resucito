@@ -388,58 +388,530 @@ window.solicitarAccesoParroquia = async () => {
     }
 };
 
-// --- CREAR NUEVA PARROQUIA (ADMIN / ENCARGADO) ---
-window.crearNuevaParroquia = async () => {
-    const inputNombre = document.getElementById('input-crear-parroquia-nombre');
-    const inputCiudad = document.getElementById('input-crear-parroquia-ciudad');
+// --- GESTIÓN DE PAÍSES Y FORMULARIO DE PARROQUIAS ---
+let listaPaisesGlobal = [];
+
+async function cargarCatalogoPaises() {
+    if (listaPaisesGlobal.length > 0) return listaPaisesGlobal;
+    try {
+        const res = await fetch('./data/paises.json');
+        if (!res.ok) throw new Error("No se pudo cargar paises.json");
+        const data = await res.json();
+        const nombres = data.map(p => p.nombre || p).filter(Boolean);
+
+        // Separar "República Dominicana" para colocarlo en primer lugar
+        const rdIndex = nombres.findIndex(n => normalizarTexto(n).includes('dominicana'));
+        let rdName = "República Dominicana";
+        if (rdIndex !== -1) {
+            rdName = nombres.splice(rdIndex, 1)[0];
+        }
+
+        // Ordenar alfabéticamente el resto
+        nombres.sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+
+        listaPaisesGlobal = [rdName, ...nombres];
+        renderizarOpcionesPaises(listaPaisesGlobal);
+        return listaPaisesGlobal;
+    } catch(e) {
+        console.warn("Error cargando países:", e);
+        listaPaisesGlobal = ["República Dominicana", "España", "Estados Unidos", "Colombia", "México", "Argentina", "Chile", "Perú", "Venezuela"];
+        renderizarOpcionesPaises(listaPaisesGlobal);
+        return listaPaisesGlobal;
+    }
+}
+
+function renderizarOpcionesPaises(paises, valorSeleccionado = '') {
+    const select = document.getElementById('parroquia-pais-select');
+    if (!select) return;
+
+    select.innerHTML = '<option value="">-- Selecciona el País --</option>' +
+        paises.map(p => {
+            const isRD = normalizarTexto(p).includes('dominicana');
+            const prefix = isRD ? '🇩🇴 ' : '';
+            const isSel = valorSeleccionado ? (valorSeleccionado === p) : isRD;
+            return `<option value="${p}" ${isSel ? 'selected' : ''}>${prefix}${p}</option>`;
+        }).join('');
+}
+
+window.filtrarSelectPaises = (query) => {
+    const qNorm = normalizarTexto(query);
+    const select = document.getElementById('parroquia-pais-select');
+    if (!select || listaPaisesGlobal.length === 0) return;
+
+    const valorPrevio = select.value;
+    const filtrados = listaPaisesGlobal.filter(p => normalizarTexto(p).includes(qNorm));
+    renderizarOpcionesPaises(filtrados.length > 0 ? filtrados : listaPaisesGlobal, valorPrevio);
+};
+
+// Cargar usuarios iniciados / registrados para el selector de Cantor Encargado
+async function cargarUsuariosRegistradosParaEncargado() {
+    try {
+        if (usuariosRegistradosCache.length === 0) {
+            const snap = await getDocs(collection(db, "registered_users"));
+            usuariosRegistradosCache = snap.docs.map(d => d.data()).filter(u => u && u.email && !u.deleted);
+        }
+
+        const select = document.getElementById('parroquia-cantor-encargado-select');
+        if (select) {
+            const valActual = select.value;
+            select.innerHTML = '<option value="">-- Seleccionar Cantor Encargado (Opcional) --</option>' +
+                usuariosRegistradosCache.map(u => {
+                    const label = u.displayName ? `${u.displayName} (${u.email})` : u.email;
+                    return `<option value="${u.email}" ${valActual === u.email ? 'selected' : ''}>${label}</option>`;
+                }).join('');
+        }
+    } catch(e) {
+        console.warn("No se pudieron cargar usuarios para encargado:", e);
+    }
+}
+
+// Abrir modal de administración de parroquias
+window.abrirModalAdminParroquias = async (parrIdAEditar = null) => {
+    const modal = document.getElementById('modal-admin-parroquias');
+    if (!modal) return;
+
+    modal.style.display = 'flex';
+    await cargarCatalogoPaises();
+    await cargarUsuariosRegistradosParaEncargado();
+    await cargarTodasLasParroquias();
+    renderizarListadoAdminParroquias();
+
+    if (parrIdAEditar) {
+        window.editarParroquiaDesdeAdmin(parrIdAEditar);
+    } else {
+        window.limpiarFormularioParroquia();
+    }
+};
+
+window.limpiarFormularioParroquia = () => {
+    const idInput = document.getElementById('parroquia-id-editando');
+    const inputNombre = document.getElementById('parroquia-nombre-input');
+    const inputDir = document.getElementById('parroquia-direccion-input');
+    const inputParroco = document.getElementById('parroquia-parroco-input');
+    const selectPais = document.getElementById('parroquia-pais-select');
+    const filtroPais = document.getElementById('filtro-pais-input');
+    const selectCantor = document.getElementById('parroquia-cantor-encargado-select');
+    const btnSubmit = document.getElementById('btn-guardar-parroquia-submit');
+
+    if (idInput) idInput.value = '';
+    if (inputNombre) inputNombre.value = '';
+    if (inputDir) inputDir.value = '';
+    if (inputParroco) inputParroco.value = '';
+    if (filtroPais) filtroPais.value = '';
+    if (selectPais) {
+        renderizarOpcionesPaises(listaPaisesGlobal, 'República Dominicana');
+    }
+    if (selectCantor) selectCantor.value = '';
+    if (btnSubmit) {
+        btnSubmit.innerHTML = `<span class="material-symbols-outlined">save</span> Guardar Parroquia`;
+    }
+};
+
+window.guardarParroquiaDesdeFormulario = async (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+
+    const idEditando = document.getElementById('parroquia-id-editando')?.value || '';
+    const selectPais = document.getElementById('parroquia-pais-select');
+    const inputNombre = document.getElementById('parroquia-nombre-input');
+    const inputDir = document.getElementById('parroquia-direccion-input');
+    const inputParroco = document.getElementById('parroquia-parroco-input');
+    const selectCantor = document.getElementById('parroquia-cantor-encargado-select');
+
+    const pais = selectPais ? selectPais.value.trim() : '';
     const nombre = inputNombre ? inputNombre.value.trim() : '';
-    const ciudad = inputCiudad ? inputCiudad.value.trim() : '';
+    const direccion = inputDir ? inputDir.value.trim() : '';
+    const parroco = inputParroco ? inputParroco.value.trim() : '';
+    const cantorEmail = selectCantor ? selectCantor.value.trim() : '';
+
+    if (!pais) {
+        mostrarAlerta("Por favor selecciona un país.", "País Requerido", "public");
+        return;
+    }
 
     if (!nombre) {
-        mostrarAlerta("Ingresa un nombre para la parroquia.", "Nombre Requerido", "edit_note");
+        mostrarAlerta("Por favor ingresa el nombre de la parroquia.", "Nombre Requerido", "church");
         return;
     }
 
     if (!usuarioActual) {
-        mostrarAlerta("Debes iniciar sesión para crear una parroquia.", "Sesión requerida", "account_circle");
+        mostrarAlerta("Debes iniciar sesión para registrar o editar una parroquia.", "Sesión Requerida", "account_circle");
         return;
     }
 
-    const nuevoId = 'parr_' + Date.now().toString(36);
-    const codigo16 = generarCodigo16();
+    // Buscar detalles del usuario cantor encargado si fue seleccionado
+    let cantorNombre = '';
+    if (cantorEmail) {
+        const u = usuariosRegistradosCache.find(x => x.email?.toLowerCase().trim() === cantorEmail.toLowerCase().trim());
+        cantorNombre = u ? (u.displayName || cantorEmail.split('@')[0]) : cantorEmail.split('@')[0];
+    }
 
-    const nuevaParr = {
+    const nuevoId = idEditando || ('parr_' + Date.now().toString(36));
+    const parroquiaExistente = idEditando ? todasLasParroquias.find(p => p.id === idEditando) : null;
+    const codigo16 = parroquiaExistente?.codigoAcceso || generarCodigo16();
+
+    // Armar lista de miembros
+    let miembros = parroquiaExistente?.miembros || [];
+    if (cantorEmail) {
+        // Remover si ya existía para actualizar con rol encargado
+        miembros = miembros.filter(m => m.email?.toLowerCase().trim() !== cantorEmail.toLowerCase().trim());
+        miembros.unshift({
+            email: cantorEmail,
+            displayName: cantorNombre,
+            rol: 'encargado',
+            fechaIngreso: new Date().toISOString()
+        });
+    }
+
+    // Asegurarse de que el creador esté incluido
+    if (usuarioActual.email && !miembros.some(m => m.email?.toLowerCase().trim() === usuarioActual.email.toLowerCase().trim())) {
+        miembros.push({
+            uid: usuarioActual.uid,
+            email: usuarioActual.email,
+            displayName: usuarioActual.displayName || usuarioActual.email.split('@')[0],
+            rol: 'encargado',
+            fechaIngreso: new Date().toISOString()
+        });
+    }
+
+    const docData = {
         id: nuevoId,
         nombre: nombre,
-        ciudad: ciudad,
+        pais: pais,
+        ciudad: pais, // compatibilidad
+        direccion: direccion,
+        parroco: parroco,
+        cantorEncargado: cantorNombre,
+        cantorEncargadoEmail: cantorEmail,
         codigoAcceso: codigo16,
-        creadorUid: usuarioActual.uid,
-        creadorEmail: usuarioActual.email,
-        creadoEn: serverTimestamp(),
-        miembros: [
-            {
-                uid: usuarioActual.uid,
-                email: usuarioActual.email,
-                displayName: usuarioActual.displayName || usuarioActual.email.split('@')[0],
-                rol: 'encargado',
-                fechaIngreso: new Date().toISOString()
-            }
-        ],
-        solicitudesPendientes: []
+        actualizado: new Date().toISOString(),
+        miembros: miembros,
+        solicitudesPendientes: parroquiaExistente?.solicitudesPendientes || []
     };
 
-    try {
-        await setDoc(doc(db, "parroquias", nuevoId), nuevaParr);
-        document.getElementById('modal-crear-parroquia').style.display = 'none';
-        if (inputNombre) inputNombre.value = '';
-        if (inputCiudad) inputCiudad.value = '';
-
-        activarParroquia(nuevaParr);
-        mostrarAlerta(`Parroquia "${nombre}" creada con éxito. Tu código de acceso es: ${codigo16}`, "Parroquia Creada", "church");
-    } catch (e) {
-        console.error("Error al crear parroquia:", e);
-        mostrarAlerta("Error al crear parroquia: " + e.message, "Error", "error");
+    if (!idEditando) {
+        docData.creadorUid = usuarioActual.uid;
+        docData.creadorEmail = usuarioActual.email;
+        docData.creadoEn = serverTimestamp();
     }
+
+    try {
+        await setDoc(doc(db, "parroquias", nuevoId), docData, { merge: true });
+        mostrarToastVerde(`Parroquia "${nombre}" guardada con éxito`);
+        
+        await cargarTodasLasParroquias();
+        renderizarListadoAdminParroquias();
+        window.limpiarFormularioParroquia();
+
+        // Si no hay parroquia activa o es la que se acaba de guardar/editar
+        if (!parroquiaActiva || parroquiaActiva.id === nuevoId) {
+            activarParroquia(docData);
+        }
+    } catch(e) {
+        console.error("Error guardando parroquia:", e);
+        mostrarAlerta("Error al guardar parroquia: " + e.message, "Error", "error");
+    }
+};
+
+window.editarParroquiaDesdeAdmin = (parrId) => {
+    const parr = todasLasParroquias.find(p => p.id === parrId);
+    if (!parr) return;
+
+    const idInput = document.getElementById('parroquia-id-editando');
+    const inputNombre = document.getElementById('parroquia-nombre-input');
+    const inputDir = document.getElementById('parroquia-direccion-input');
+    const inputParroco = document.getElementById('parroquia-parroco-input');
+    const selectPais = document.getElementById('parroquia-pais-select');
+    const selectCantor = document.getElementById('parroquia-cantor-encargado-select');
+    const btnSubmit = document.getElementById('btn-guardar-parroquia-submit');
+
+    if (idInput) idInput.value = parr.id;
+    if (inputNombre) inputNombre.value = parr.nombre || '';
+    if (inputDir) inputDir.value = parr.direccion || '';
+    if (inputParroco) inputParroco.value = parr.parroco || '';
+    if (selectPais && parr.pais) {
+        renderizarOpcionesPaises(listaPaisesGlobal, parr.pais);
+    }
+    if (selectCantor) {
+        selectCantor.value = parr.cantorEncargadoEmail || '';
+    }
+    if (btnSubmit) {
+        btnSubmit.innerHTML = `<span class="material-symbols-outlined">edit</span> Actualizar Parroquia`;
+    }
+
+    const form = document.getElementById('form-registro-parroquia');
+    if (form) form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+window.seleccionarParroquiaDesdeAdmin = (parrId) => {
+    const parr = todasLasParroquias.find(p => p.id === parrId);
+    if (parr) {
+        activarParroquia(parr);
+        document.getElementById('modal-admin-parroquias').style.display = 'none';
+        mostrarToastVerde(`Parroquia activa: ${parr.nombre}`);
+    }
+};
+
+window.eliminarParroquiaDesdeAdmin = async (parrId, nombre) => {
+    if (!confirm(`¿Eliminar definitivamente la parroquia "${nombre}" y todas sus preparaciones?`)) return;
+    try {
+        await deleteDoc(doc(db, "parroquias", parrId));
+        await cargarTodasLasParroquias();
+        renderizarListadoAdminParroquias();
+        mostrarToastVerde("Parroquia eliminada");
+
+        if (parroquiaActiva && parroquiaActiva.id === parrId) {
+            parroquiaActiva = null;
+            localStorage.removeItem('parroquia_activa_id');
+            mostrarVista('sin-parroquia');
+        }
+    } catch(e) {
+        mostrarAlerta("Error al eliminar parroquia: " + e.message, "Error", "error");
+    }
+};
+
+window.filtrarListadoAdminParroquias = () => {
+    const input = document.getElementById('buscador-admin-parroquias');
+    const btnX = document.getElementById('btnLimpiarBuscadorAdminParroquias');
+    if (!input) return;
+    if (btnX) btnX.style.display = input.value.length > 0 ? 'block' : 'none';
+    renderizarListadoAdminParroquias(input.value);
+};
+
+window.limpiarBuscadorAdminParroquias = () => {
+    const input = document.getElementById('buscador-admin-parroquias');
+    if (input) {
+        input.value = '';
+        window.filtrarListadoAdminParroquias();
+        input.focus();
+    }
+};
+
+function renderizarListadoAdminParroquias(filtro = '') {
+    const contenedor = document.getElementById('contenedor-listado-admin-parroquias');
+    const badgeTotal = document.getElementById('total-parroquias-admin');
+    if (!contenedor) return;
+
+    if (badgeTotal) badgeTotal.textContent = todasLasParroquias.length;
+
+    if (todasLasParroquias.length === 0) {
+        contenedor.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 20px;">No hay parroquias registradas aún.</p>`;
+        return;
+    }
+
+    const filtroNorm = normalizarTexto(filtro);
+    const filtradas = todasLasParroquias.filter(p => {
+        const n = normalizarTexto(p.nombre || '');
+        const pais = normalizarTexto(p.pais || p.ciudad || '');
+        const par = normalizarTexto(p.parroco || '');
+        const cant = normalizarTexto(p.cantorEncargado || p.cantorEncargadoEmail || '');
+        return filtroNorm === '' || n.includes(filtroNorm) || pais.includes(filtroNorm) || par.includes(filtroNorm) || cant.includes(filtroNorm);
+    });
+
+    if (filtradas.length === 0) {
+        contenedor.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 20px;">No se encontraron parroquias con ese filtro.</p>`;
+        return;
+    }
+
+    contenedor.innerHTML = filtradas.map(p => {
+        const esActiva = parroquiaActiva && parroquiaActiva.id === p.id;
+        const pais = p.pais || p.ciudad || 'Sin país';
+        const cantor = p.cantorEncargado ? `${p.cantorEncargado} ${p.cantorEncargadoEmail ? `(${p.cantorEncargadoEmail})` : ''}` : (p.cantorEncargadoEmail || 'Sin encargado');
+        const codigo16 = p.codigoAcceso || 'SIN-CÓDIGO';
+
+        return `
+            <div class="parroquia-card-item ${esActiva ? 'activa' : ''}">
+                <div class="parroquia-card-info" style="flex-grow: 1;">
+                    <h4>
+                        <span class="material-symbols-outlined" style="font-size: 18px; color: var(--accent-color, #d01212);">church</span>
+                        ${p.nombre}
+                        ${esActiva ? `<span style="font-size: 0.72rem; background: #dcfce7; color: #166534; padding: 2px 6px; border-radius: 4px; font-weight: 700;">ACTIVA</span>` : ''}
+                    </h4>
+                    <div class="parroquia-card-sub">
+                        <span>🌍 <b>${pais}</b></span>
+                        ${p.direccion ? `<span>• 📍 ${p.direccion}</span>` : ''}
+                        ${p.parroco ? `<span>• ✝️ ${p.parroco}</span>` : ''}
+                        <span>• 🎤 ${cantor}</span>
+                    </div>
+                    <div style="margin-top: 4px;">
+                        <span class="badge-codigo-item" title="Haga clic para copiar código de 16 caracteres" onclick="navigator.clipboard.writeText('${codigo16}'); window.mostrarToastVerde('Código copiado: ${codigo16}');">
+                            🔑 ${codigo16}
+                            <span class="material-symbols-outlined" style="font-size: 14px;">content_copy</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 6px; align-items: center;">
+                    ${!esActiva ? `
+                        <button type="button" class="btn-parroquia-top" style="padding: 6px 10px;" title="Activar esta parroquia" onclick="window.seleccionarParroquiaDesdeAdmin('${p.id}')">
+                            <span class="material-symbols-outlined" style="font-size: 16px;">check</span> Activar
+                        </button>
+                    ` : ''}
+                    <button type="button" class="btn-parroquia-top" style="padding: 6px 10px;" title="Editar parroquia" onclick="window.editarParroquiaDesdeAdmin('${p.id}')">
+                        <span class="material-symbols-outlined" style="font-size: 16px;">edit</span>
+                    </button>
+                    <button type="button" class="btn-parroquia-top" style="padding: 6px 10px; color: #b91c1c;" title="Eliminar parroquia" onclick="window.eliminarParroquiaDesdeAdmin('${p.id}', '${p.nombre}')">
+                        <span class="material-symbols-outlined" style="font-size: 16px;">delete</span>
+                    </button>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+// Descargar plantilla CSV de Parroquias
+window.descargarPlantillaCsvParroquias = () => {
+    const csvContent = "\uFEFF" + 
+        "Pais,Parroquia,Direccion,Parroco,CantorEncargadoEmail\n" +
+        "República Dominicana,San Juan Bautista,Calle Duarte #12,P. Manuel García,dbaezh78@gmail.com\n" +
+        "República Dominicana,Nuestra Señora de la Altagracia,Av. Independencia km 8,P. Antonio Ruiz,\n" +
+        "España,Santa María la Blanca,Calle Mayor 45,P. Francisco Pérez,\n" +
+        "Estados Unidos,St. Dominic,2100 Bush St,Fr. John Smith,\n" +
+        "Colombia,Cristo Rey,Carrera 7 #40-20,P. Carlos Mendoza,\n" +
+        "México,San José Obrero,Av. Insurgentes Sur 300,P. Pedro Hernández,\n";
+
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", "plantilla_parroquias.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+};
+
+// Procesar importación de archivo CSV de Parroquias
+window.procesarArchivoCsvParroquias = async (event) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+        try {
+            const text = e.target.result;
+            const lineas = text.split(/\r?\n/).filter(line => line.trim().length > 0);
+
+            if (lineas.length < 2) {
+                mostrarAlerta("El archivo CSV debe tener al menos una cabecera y una fila de datos.", "CSV Inválido", "error");
+                return;
+            }
+
+            // Detectar delimitador (coma o punto y coma)
+            const primeraLinea = lineas[0];
+            const delimitador = (primeraLinea.includes(';') && (primeraLinea.split(';').length >= primeraLinea.split(',').length)) ? ';' : ',';
+
+            // Función para dividir respetando comillas
+            const parseCsvLine = (line) => {
+                const result = [];
+                let cur = '';
+                let inQuotes = false;
+                for (let i = 0; i < line.length; i++) {
+                    const c = line[i];
+                    if (c === '"') {
+                        if (inQuotes && line[i + 1] === '"') {
+                            cur += '"';
+                            i++;
+                        } else {
+                            inQuotes = !inQuotes;
+                        }
+                    } else if (c === delimitador && !inQuotes) {
+                        result.push(cur.trim());
+                        cur = '';
+                    } else {
+                        cur += c;
+                    }
+                }
+                result.push(cur.trim());
+                return result;
+            };
+
+            const headers = parseCsvLine(lineas[0]).map(h => normalizarTexto(h));
+            const idxPais = headers.findIndex(h => h.includes('pais'));
+            const idxParroquia = headers.findIndex(h => h.includes('parroquia') || h.includes('nombre'));
+            const idxDir = headers.findIndex(h => h.includes('direccion') || h.includes('dir'));
+            const idxParroco = headers.findIndex(h => h.includes('parroco'));
+            const idxCantor = headers.findIndex(h => h.includes('cantor') || h.includes('email') || h.includes('encargado'));
+
+            if (idxPais === -1 || idxParroquia === -1) {
+                mostrarAlerta("La cabecera del archivo CSV debe incluir las columnas obligatorias 'Pais' y 'Parroquia'.", "Cabeceras Faltantes", "error");
+                return;
+            }
+
+            let importadas = 0;
+            let omitidas = 0;
+
+            for (let i = 1; i < lineas.length; i++) {
+                const cols = parseCsvLine(lineas[i]);
+                const pais = cols[idxPais] ? cols[idxPais].trim() : '';
+                const parroquia = cols[idxParroquia] ? cols[idxParroquia].trim() : '';
+                const direccion = (idxDir !== -1 && cols[idxDir]) ? cols[idxDir].trim() : '';
+                const parroco = (idxParroco !== -1 && cols[idxParroco]) ? cols[idxParroco].trim() : '';
+                const cantorEmail = (idxCantor !== -1 && cols[idxCantor]) ? cols[idxCantor].trim().toLowerCase() : '';
+
+                // Validación: País y Parroquia son obligatorios
+                if (!pais || !parroquia) {
+                    omitidas++;
+                    continue;
+                }
+
+                const nuevoId = 'parr_' + Date.now().toString(36) + '_' + i;
+                const codigo16 = generarCodigo16();
+
+                let miembros = [];
+                if (cantorEmail) {
+                    miembros.push({
+                        email: cantorEmail,
+                        displayName: cantorEmail.split('@')[0],
+                        rol: 'encargado',
+                        fechaIngreso: new Date().toISOString()
+                    });
+                }
+                if (usuarioActual?.email && cantorEmail !== usuarioActual.email.toLowerCase()) {
+                    miembros.push({
+                        uid: usuarioActual.uid,
+                        email: usuarioActual.email,
+                        displayName: usuarioActual.displayName || usuarioActual.email.split('@')[0],
+                        rol: 'encargado',
+                        fechaIngreso: new Date().toISOString()
+                    });
+                }
+
+                await setDoc(doc(db, "parroquias", nuevoId), {
+                    id: nuevoId,
+                    nombre: parroquia,
+                    pais: pais,
+                    ciudad: pais,
+                    direccion: direccion,
+                    parroco: parroco,
+                    cantorEncargado: cantorEmail ? cantorEmail.split('@')[0] : '',
+                    cantorEncargadoEmail: cantorEmail,
+                    codigoAcceso: codigo16,
+                    creadorUid: usuarioActual?.uid || 'importador',
+                    creadorEmail: usuarioActual?.email || '',
+                    creadoEn: serverTimestamp(),
+                    actualizado: new Date().toISOString(),
+                    miembros: miembros,
+                    solicitudesPendientes: []
+                }, { merge: true });
+
+                importadas++;
+            }
+
+            await cargarTodasLasParroquias();
+            renderizarListadoAdminParroquias();
+            event.target.value = ''; // Reset input file
+
+            mostrarAlerta(
+                `Importación finalizada con éxito:\n• ${importadas} parroquias agregadas correctamente.\n${omitidas > 0 ? `• ${omitidas} filas omitidas por no tener País o Parroquia.` : ''}`,
+                "Importación Exitosa",
+                "check_circle"
+            );
+        } catch(err) {
+            console.error("Error importando CSV de parroquias:", err);
+            mostrarAlerta("Error al procesar el archivo CSV: " + err.message, "Error en Importación", "error");
+        }
+    };
+    reader.readAsText(file, "UTF-8");
 };
 
 // --- MODAL CÓDIGO DE 16 CARACTERES ---
@@ -1472,15 +1944,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnSolicitar = document.getElementById('btn-solicitar-acceso');
     if (btnSolicitar) btnSolicitar.addEventListener('click', window.solicitarAccesoParroquia);
 
-    const btnAbrirCrear = document.getElementById('btn-abrir-crear-parroquia');
-    if (btnAbrirCrear) {
-        btnAbrirCrear.addEventListener('click', () => {
-            document.getElementById('modal-crear-parroquia').style.display = 'flex';
-        });
-    }
+    const btnAbrirAdmin = document.getElementById('btn-abrir-admin-parroquias');
+    if (btnAbrirAdmin) btnAbrirAdmin.addEventListener('click', () => window.abrirModalAdminParroquias());
 
-    const btnConfirmarCrear = document.getElementById('btn-confirmar-crear-parroquia');
-    if (btnConfirmarCrear) btnConfirmarCrear.addEventListener('click', window.crearNuevaParroquia);
+    const btnAbrirCrear = document.getElementById('btn-abrir-crear-parroquia');
+    if (btnAbrirCrear) btnAbrirCrear.addEventListener('click', () => window.abrirModalAdminParroquias());
 
     const btnVerCodigo = document.getElementById('btn-ver-codigo-16');
     if (btnVerCodigo) btnVerCodigo.addEventListener('click', window.abrirModalCodigo16);

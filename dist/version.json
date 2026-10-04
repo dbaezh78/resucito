@@ -1,12 +1,12 @@
 {
-  "latestVersion": "2.1.16",
+  "latestVersion": "2.1.17",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.16)",
-  "updateMessage": "Módulo de Parroquia para preparaciones de Eucaristía y asignación de cantores.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.17)",
+  "updateMessage": "Formulario de Parroquias con selector de países, asignación de cantor encargado e importación CSV.",
   "releaseNotes": [
-    "Nuevo módulo de Parroquia con código de acceso de 16 caracteres y gestión de miembros.",
-    "Preparación litúrgica comunitaria y asignación individual de cantores por canto.",
-    "Sincronización en vivo con Autoguardado en tiempo real.",
-    "Optimización de códigos PIN en listas de preparación."
+    "Formulario completo de parroquias: País con buscador (República Dominicana primero), Parroquia, Dirección, Párroco y Cantor Encargado.",
+    "Selector de Cantor Encargado poblado con los usuarios iniciados en la aplicación.",
+    "Importación masiva de parroquias desde archivo CSV y descarga de plantilla de formato.",
+    "Generación automática de códigos de 16 caracteres y sincronización en tiempo real."
   ]
 }

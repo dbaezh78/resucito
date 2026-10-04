@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v346'; // v2.1.16 modulo de parroquia y preparaciones de eucaristia
+const CACHE_NAME = 'resucito-cache-v347'; // v2.1.17 formulario de registro de parroquias e importacion csv
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -36,6 +36,7 @@ const STATIC_ASSETS = [
   'data/chord_positions.json',
   'data/catequesis.json',
   'data/paises.json',
+  'data/plantilla_parroquias.csv',
   'data/ajustes_modal.html'
 ];
 
