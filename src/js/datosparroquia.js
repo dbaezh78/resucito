@@ -279,7 +279,12 @@ async function cargarUsuariosRegistrados() {
     select.style.opacity = '0.75';
     select.style.cursor = 'not-allowed';
     if (infoText) {
-      infoText.innerHTML = `🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. <a href="chat.html" target="_blank" style="color: #b45309; text-decoration: underline; font-weight: 700;">https://resucito.do/chat.html</a>`;
+      infoText.innerHTML = `
+        <button type="button" class="btn-solicitar-resp-chip" onclick="window.mostrarMensajeResponsabilidad()" style="background: #fffbeb; color: #b45309; border: 1px solid #fde68a; border-radius: 20px; padding: 4px 12px; font-size: 0.76rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; margin-top: 4px;">
+          <span class="material-symbols-outlined" style="font-size: 14px; color: #d97706;">lock</span>
+          <span>Solicite la responsabilidad</span>
+        </button>
+      `;
       infoText.style.color = '#b45309';
     }
   } else {
@@ -393,6 +398,32 @@ async function cargarTodasLasParroquias() {
   }
 }
 
+// Modal Ambulante: Solicite la Responsabilidad
+window.mostrarMensajeResponsabilidad = (parrIdOrNombre = '') => {
+  const modal = document.getElementById('modal-ambulante-responsabilidad');
+  const txtParroquia = document.getElementById('txt-ambulante-parroquia-nombre');
+  let nombre = parrIdOrNombre;
+  const encontrada = listaParroquiasCache.find(p => p.id === parrIdOrNombre);
+  if (encontrada) nombre = encontrada.nombre || '';
+  if (txtParroquia) {
+    if (nombre) {
+      txtParroquia.textContent = nombre;
+      txtParroquia.style.display = 'block';
+    } else {
+      txtParroquia.style.display = 'none';
+    }
+  }
+  if (modal) {
+    modal.style.display = 'flex';
+  } else {
+    mostrarNotif(
+      "Solicite la Responsabilidad",
+      "🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. https://resucito.do/chat.html",
+      "lock"
+    );
+  }
+};
+
 // Renderizar tarjetas de parroquias con buscador
 function renderizarListadoParroquias(filtro = '') {
   const contenedor = document.getElementById('contenedor-listado-parroquias');
@@ -447,22 +478,13 @@ function renderizarListadoParroquias(filtro = '') {
           </span>
         </div>
       `;
-    } else if (!p.cantorEncargadoEmail) {
-      bloqueCodigoHtml = `
-        <div style="margin-top: 8px;">
-          <span style="display: inline-flex; align-items: flex-start; gap: 6px; padding: 6px 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; color: #b45309; font-size: 0.76rem; font-weight: 500; line-height: 1.4;">
-            <span class="material-symbols-outlined" style="font-size: 16px; color: #d97706; flex-shrink: 0; margin-top: 1px;">lock</span>
-            <span>🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. <a href="chat.html" target="_blank" style="color: #b45309; text-decoration: underline; font-weight: 700;">https://resucito.do/chat.html</a></span>
-          </span>
-        </div>
-      `;
     } else {
       bloqueCodigoHtml = `
         <div style="margin-top: 8px;">
-          <span style="display: inline-flex; align-items: flex-start; gap: 6px; padding: 6px 10px; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 8px; color: #4b5563; font-size: 0.76rem; font-weight: 500; line-height: 1.4;">
-            <span class="material-symbols-outlined" style="font-size: 16px; color: #6b7280; flex-shrink: 0; margin-top: 1px;">lock</span>
-            <span>🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. <a href="chat.html" target="_blank" style="color: inherit; text-decoration: underline; font-weight: 700;">https://resucito.do/chat.html</a></span>
-          </span>
+          <button type="button" class="btn-solicitar-resp-chip" onclick="window.mostrarMensajeResponsabilidad('${p.id}')" style="background: #fffbeb; color: #b45309; border: 1px solid #fde68a; border-radius: 20px; padding: 4px 12px; font-size: 0.76rem; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: all 0.2s ease;">
+            <span class="material-symbols-outlined" style="font-size: 14px; color: #d97706;">lock</span>
+            <span>Solicite la responsabilidad</span>
+          </button>
         </div>
       `;
     }
@@ -827,11 +849,7 @@ window.copiarCodigoParroquia = (codigo, parrId = '') => {
   const user = usuarioActual || getCurrentUser() || auth.currentUser;
   const parr = listaParroquiasCache.find(p => (parrId && p.id === parrId) || p.codigoAcceso === codigo);
   if (!puedeVerCodigoParroquia(parr, user)) {
-    mostrarNotif(
-      "Acceso Restringido",
-      `🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. https://resucito.do/chat.html`,
-      "lock"
-    );
+    window.mostrarMensajeResponsabilidad(parr?.id || parr?.nombre);
     return;
   }
   navigator.clipboard.writeText(codigo).then(() => {

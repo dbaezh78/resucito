@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v355'; // v2.1.25 Gestión global de solicitudes y escucha en tiempo real
+const CACHE_NAME = 'resucito-cache-v356'; // v2.1.26 Mensaje ambulante responsabilidad y reordenamiento preparacion
 const STATIC_ASSETS = [
   './',
   'index.html',
