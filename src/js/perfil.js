@@ -152,7 +152,10 @@ async function cargarParroquiasPerfil(paisFiltro = '', valorSeleccionado = '') {
 
     if (parroquiasFiltradas.length > 0) {
       optionsHtml += parroquiasFiltradas.map(p => {
-        const sectorText = p.sector ? ` (${p.sector})` : '';
+        const sectorParts = [];
+        if (p.sector) sectorParts.push(p.sector);
+        if (p.provincia) sectorParts.push(p.provincia);
+        const sectorText = sectorParts.length > 0 ? ` (${sectorParts.join(', ')})` : '';
         const paisText = !paisActual && p.pais ? ` - ${p.pais}` : '';
         return `<option value="${p.nombre}">${p.nombre}${sectorText}${paisText}</option>`;
       }).join('');

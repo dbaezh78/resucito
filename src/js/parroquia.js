@@ -728,7 +728,9 @@ function renderizarListadoAdminParroquias(filtro = '') {
                     </h4>
                     <div class="parroquia-card-sub">
                         <span>🌍 <b>${pais}</b></span>
-                        ${p.direccion ? `<span>• 📍 ${p.direccion}</span>` : ''}
+                        ${p.provincia ? `<span>• 🏛️ ${p.provincia}</span>` : ''}
+                        ${p.sector ? `<span>• 📍 ${p.sector}</span>` : ''}
+                        ${p.direccion ? `<span>• 🏢 ${p.direccion}</span>` : ''}
                         ${p.parroco ? `<span>• ✝️ ${p.parroco}</span>` : ''}
                         <span>• 🎤 ${cantor}</span>
                     </div>

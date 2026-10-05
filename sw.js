@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v349'; // v2.1.19 Formulario Parroquia en menú Resucitó y corrección de auth listener
+const CACHE_NAME = 'resucito-cache-v350'; // v2.1.20 Incorporación del campo Provincia en parroquias y CSV
 const STATIC_ASSETS = [
   './',
   'index.html',

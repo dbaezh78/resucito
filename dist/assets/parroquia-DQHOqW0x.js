@@ -15,7 +15,9 @@ import{d as e,g as t,v as n}from"./preload-helper-NIwTN0me.js";import{a as r,i,t
                     </h4>
                     <div class="parroquia-card-sub">
                         <span>🌍 <b>${n}</b></span>
-                        ${e.direccion?`<span>• 📍 ${e.direccion}</span>`:``}
+                        ${e.provincia?`<span>• 🏛️ ${e.provincia}</span>`:``}
+                        ${e.sector?`<span>• 📍 ${e.sector}</span>`:``}
+                        ${e.direccion?`<span>• 🏢 ${e.direccion}</span>`:``}
                         ${e.parroco?`<span>• ✝️ ${e.parroco}</span>`:``}
                         <span>• 🎤 ${r}</span>
                     </div>

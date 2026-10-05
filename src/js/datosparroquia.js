@@ -304,11 +304,12 @@ function renderizarListadoParroquias(filtro = '') {
     if (!fNorm) return true;
     const nom = normalizarTexto(p.nombre || '');
     const pai = normalizarTexto(p.pais || '');
+    const pro = normalizarTexto(p.provincia || '');
     const sec = normalizarTexto(p.sector || '');
     const dir = normalizarTexto(p.direccion || '');
     const par = normalizarTexto(p.parroco || '');
     const can = normalizarTexto(p.cantorEncargado || p.cantorEncargadoEmail || '');
-    return nom.includes(fNorm) || pai.includes(fNorm) || sec.includes(fNorm) || dir.includes(fNorm) || par.includes(fNorm) || can.includes(fNorm);
+    return nom.includes(fNorm) || pai.includes(fNorm) || pro.includes(fNorm) || sec.includes(fNorm) || dir.includes(fNorm) || par.includes(fNorm) || can.includes(fNorm);
   });
 
   if (filtradas.length === 0) {
@@ -319,6 +320,7 @@ function renderizarListadoParroquias(filtro = '') {
   contenedor.innerHTML = filtradas.map(p => {
     const codigo16 = p.codigoAcceso || 'SIN-CÓDIGO';
     const pais = p.pais || 'Sin país';
+    const provincia = p.provincia || '';
     const sector = p.sector || 'Sin sector';
     const cantor = p.cantorEncargado ? `${p.cantorEncargado} ${p.cantorEncargadoEmail ? `(${p.cantorEncargadoEmail})` : ''}` : (p.cantorEncargadoEmail || 'Sin encargado asignado');
 
@@ -331,6 +333,7 @@ function renderizarListadoParroquias(filtro = '') {
           </h3>
           <div class="tarjeta-parroquia-detalles">
             <span class="badge-parroquia-pais">🌍 ${pais}</span>
+            ${provincia ? `<span class="badge-parroquia-provincia">🏛️ ${provincia}</span>` : ''}
             <span class="badge-parroquia-sector">📍 ${sector}</span>
             ${p.direccion ? `<span>• 🏢 ${p.direccion}</span>` : ''}
             ${p.parroco ? `<span>• ✝️ Párroco: <b>${p.parroco}</b></span>` : ''}
@@ -368,6 +371,7 @@ async function guardarParroquiaDesdeFormulario(e) {
 
   const idEditando = document.getElementById('parroquia-id-editando')?.value || '';
   const selectPais = document.getElementById('parroquia-pais-select');
+  const inputProvincia = document.getElementById('parroquia-provincia-input');
   const inputNombre = document.getElementById('parroquia-nombre-input');
   const inputSector = document.getElementById('parroquia-sector-input');
   const inputDir = document.getElementById('parroquia-direccion-input');
@@ -375,6 +379,7 @@ async function guardarParroquiaDesdeFormulario(e) {
   const selectCantor = document.getElementById('parroquia-cantor-encargado-select');
 
   const pais = selectPais ? selectPais.value.trim() : '';
+  const provincia = inputProvincia ? inputProvincia.value.trim() : '';
   const nombre = inputNombre ? inputNombre.value.trim() : '';
   const sector = inputSector ? inputSector.value.trim() : '';
   const direccion = inputDir ? inputDir.value.trim() : '';
@@ -385,6 +390,12 @@ async function guardarParroquiaDesdeFormulario(e) {
   if (!pais) {
     mostrarNotif("País Requerido", "Por favor selecciona el país de la parroquia.", "public");
     selectPais?.focus();
+    return;
+  }
+
+  if (!provincia) {
+    mostrarNotif("Provincia Requerida", "Por favor ingresa la provincia, estado o región de la parroquia.", "location_city");
+    inputProvincia?.focus();
     return;
   }
 
@@ -444,6 +455,7 @@ async function guardarParroquiaDesdeFormulario(e) {
     id: docId,
     nombre: nombre,
     pais: pais,
+    provincia: provincia,
     sector: sector,
     direccion: direccion,
     parroco: parroco,
@@ -504,6 +516,7 @@ window.cargarParroquiaParaEditar = (parrId) => {
   if (!parr) return;
 
   const idInput = document.getElementById('parroquia-id-editando');
+  const inputProvincia = document.getElementById('parroquia-provincia-input');
   const inputNombre = document.getElementById('parroquia-nombre-input');
   const inputSector = document.getElementById('parroquia-sector-input');
   const inputDir = document.getElementById('parroquia-direccion-input');
@@ -515,6 +528,7 @@ window.cargarParroquiaParaEditar = (parrId) => {
   const btnCancelar = document.getElementById('btn-cancelar-edicion');
 
   if (idInput) idInput.value = parr.id;
+  if (inputProvincia) inputProvincia.value = parr.provincia || '';
   if (inputNombre) inputNombre.value = parr.nombre || '';
   if (inputSector) inputSector.value = parr.sector || '';
   if (inputDir) inputDir.value = parr.direccion || '';
@@ -538,6 +552,7 @@ window.cargarParroquiaParaEditar = (parrId) => {
 // Limpiar formulario y resetear estado de edición
 window.limpiarFormularioParroquia = () => {
   const idInput = document.getElementById('parroquia-id-editando');
+  const inputProvincia = document.getElementById('parroquia-provincia-input');
   const inputNombre = document.getElementById('parroquia-nombre-input');
   const inputSector = document.getElementById('parroquia-sector-input');
   const inputDir = document.getElementById('parroquia-direccion-input');
@@ -550,6 +565,7 @@ window.limpiarFormularioParroquia = () => {
   const btnCancelar = document.getElementById('btn-cancelar-edicion');
 
   if (idInput) idInput.value = '';
+  if (inputProvincia) inputProvincia.value = '';
   if (inputNombre) inputNombre.value = '';
   if (inputSector) inputSector.value = '';
   if (inputDir) inputDir.value = '';
@@ -625,16 +641,18 @@ window.copiarCodigoParroquia = (codigo) => {
   });
 };
 
-// Descargar plantilla CSV con formato oficial
+// Descargar plantilla CSV con formato oficial (incluyendo Provincia)
 window.descargarPlantillaCsvParroquias = () => {
   const csvContent = "\uFEFF" +
-    "Pais,Parroquia,Sector,Direccion,Parroco,CantorEncargadoEmail\n" +
-    "República Dominicana,San Juan Bautista,Bella Vista,Calle Duarte #12,P. Manuel García,dbaezh78@gmail.com\n" +
-    "República Dominicana,Nuestra Señora de la Altagracia,Honduras,Av. Independencia km 8,P. Antonio Ruiz,\n" +
-    "España,Santa María la Blanca,Centro,Calle Mayor 45,P. Francisco Pérez,\n" +
-    "Estados Unidos,St. Dominic,Pacific Heights,2100 Bush St,Fr. John Smith,\n" +
-    "Colombia,Cristo Rey,Chapinero,Carrera 7 #40-20,P. Carlos Mendoza,\n" +
-    "México,San José Obrero,Del Valle,Av. Insurgentes Sur 300,P. Pedro Hernández,\n";
+    "Pais,Provincia,Parroquia,Sector,Direccion,Parroco,CantorEncargadoEmail\n" +
+    "República Dominicana,Distrito Nacional,Catedral Primada de América (Santa María de la Encarnación),Zona Colonial,Calle Arzobispo Meriño,,dbaezh78@gmail.com\n" +
+    "República Dominicana,Distrito Nacional,San Juan Bautista,Bella Vista,Calle Duarte #12,P. Manuel García,\n" +
+    "República Dominicana,Distrito Nacional,Nuestra Señora de la Altagracia,Honduras,Av. Independencia km 8,P. Antonio Ruiz,\n" +
+    "República Dominicana,Santo Domingo Este,San Vicente de Paúl,Los Mina,Av. San Vicente de Paúl,,\n" +
+    "España,Madrid,Santa María la Blanca,Centro,Calle Mayor 45,P. Francisco Pérez,\n" +
+    "Estados Unidos,California,St. Dominic,Pacific Heights,2100 Bush St,Fr. John Smith,\n" +
+    "Colombia,Bogotá,Cristo Rey,Chapinero,Carrera 7 #40-20,P. Carlos Mendoza,\n" +
+    "México,Ciudad de México,San José Obrero,Del Valle,Av. Insurgentes Sur 300,P. Pedro Hernández,\n";
 
   const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
@@ -700,6 +718,7 @@ window.procesarArchivoCsvParroquias = async (event) => {
 
       const headers = parseCsvLine(lineas[0]).map(h => normalizarTexto(h));
       const idxPais = headers.findIndex(h => h.includes('pais'));
+      const idxProvincia = headers.findIndex(h => h.includes('provincia') || h.includes('estado') || h.includes('region') || h.includes('departamento') || h.includes('ciudad'));
       const idxParroquia = headers.findIndex(h => h.includes('parroquia') || h.includes('nombre'));
       const idxSector = headers.findIndex(h => h.includes('sector') || h.includes('distrito') || h.includes('barrio'));
       const idxDir = headers.findIndex(h => h.includes('direccion') || h.includes('dir'));
@@ -717,6 +736,7 @@ window.procesarArchivoCsvParroquias = async (event) => {
       for (let i = 1; i < lineas.length; i++) {
         const cols = parseCsvLine(lineas[i]);
         const pais = cols[idxPais] ? cols[idxPais].trim() : '';
+        const provincia = (idxProvincia !== -1 && cols[idxProvincia]) ? cols[idxProvincia].trim() : '';
         const parroquia = cols[idxParroquia] ? cols[idxParroquia].trim() : '';
         const sector = (idxSector !== -1 && cols[idxSector]) ? cols[idxSector].trim() : '';
         const direccion = (idxDir !== -1 && cols[idxDir]) ? cols[idxDir].trim() : '';
@@ -759,6 +779,7 @@ window.procesarArchivoCsvParroquias = async (event) => {
           id: nuevoId,
           nombre: parroquia,
           pais: pais,
+          provincia: provincia,
           sector: sector,
           direccion: direccion,
           parroco: parroco,

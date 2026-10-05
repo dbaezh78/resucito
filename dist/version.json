@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.19",
+  "latestVersion": "2.1.20",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.19)",
-  "updateMessage": "Acceso a Formulario Parroquia en el menú Resucitó y optimizaciones de conexión.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.20)",
+  "updateMessage": "Incorporación del campo Provincia en datos de Parroquia y plantillas CSV.",
   "releaseNotes": [
-    "Enlace directo 'Formulario Parroquia' agregado debajo de Parroquia en el menú principal Resucitó.",
-    "Corrección en el listener de estado de autenticación (auth listener) para mayor estabilidad.",
-    "Reglas de seguridad de Firestore optimizadas para acceso a la colección de parroquias."
+    "Nuevo campo 'Provincia / Estado / Región' integrado en el formulario de datosparroquia.html.",
+    "Formato CSV oficial actualizado con columna 'Provincia': Pais,Provincia,Parroquia,Sector,Direccion,Parroco,CantorEncargadoEmail.",
+    "Buscador y selector de parroquias en perfil adaptados para mostrar provincia y sector."
   ]
 }

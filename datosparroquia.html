@@ -92,7 +92,15 @@
             </small>
           </div>
 
-          <!-- 2. NOMBRE DE LA PARROQUIA (Obligatorio) -->
+          <!-- 2. PROVINCIA / ESTADO / REGIÓN (Obligatorio) -->
+          <div class="campo-parroquia">
+            <label for="parroquia-provincia-input">
+              Provincia / Estado / Región <span class="req">*</span>
+            </label>
+            <input type="text" id="parroquia-provincia-input" class="input-parroquia" placeholder="Ej: Santo Domingo / Distrito Nacional / Madrid" required>
+          </div>
+
+          <!-- 3. NOMBRE DE LA PARROQUIA (Obligatorio) -->
           <div class="campo-parroquia">
             <label for="parroquia-nombre-input">
               Nombre de la Parroquia <span class="req">*</span>
@@ -100,7 +108,7 @@
             <input type="text" id="parroquia-nombre-input" class="input-parroquia" placeholder="Ej: San Juan Bautista" required>
           </div>
 
-          <!-- 3. SECTOR / DISTRITO / BARRIO (Obligatorio) -->
+          <!-- 4. SECTOR / DISTRITO / BARRIO (Obligatorio) -->
           <div class="campo-parroquia">
             <label for="parroquia-sector-input">
               Sector / Distrito / Barrio <span class="req">*</span>
@@ -108,7 +116,7 @@
             <input type="text" id="parroquia-sector-input" class="input-parroquia" placeholder="Ej: Bella Vista / Zona Colonial / Centro" required>
           </div>
 
-          <!-- 4. DIRECCIÓN (Opcional) -->
+          <!-- 5. DIRECCIÓN (Opcional) -->
           <div class="campo-parroquia">
             <label for="parroquia-direccion-input">
               Dirección <span style="font-weight: normal; color: var(--text-muted, #6b7280); font-size: 0.8rem;">(Opcional)</span>
@@ -116,7 +124,7 @@
             <input type="text" id="parroquia-direccion-input" class="input-parroquia" placeholder="Ej: Calle Principal #12 (Opcional)">
           </div>
 
-          <!-- 5. PÁRROCO (No obligatorio / Opcional) -->
+          <!-- 6. PÁRROCO (No obligatorio / Opcional) -->
           <div class="campo-parroquia">
             <label for="parroquia-parroco-input">
               Párroco <span style="font-weight: normal; color: var(--text-muted, #6b7280); font-size: 0.8rem;">(No obligatorio)</span>
@@ -124,7 +132,7 @@
             <input type="text" id="parroquia-parroco-input" class="input-parroquia" placeholder="Ej: P. Manuel García (Opcional)">
           </div>
 
-          <!-- 6. CANTOR ENCARGADO (Select de usuarios iniciados) -->
+          <!-- 7. CANTOR ENCARGADO (Select de usuarios iniciados) -->
           <div class="campo-parroquia" style="grid-column: 1 / -1;">
             <label for="parroquia-cantor-encargado-select">
               Cantor Encargado <span style="font-weight: normal; color: var(--text-muted, #6b7280); font-size: 0.8rem;">(Usuarios iniciados en la app)</span>
@@ -172,7 +180,7 @@
       <!-- Buscador de parroquias -->
       <div style="position: relative; margin-bottom: 20px;">
         <span class="material-symbols-outlined" style="position: absolute; left: 12px; top: 12px; color: var(--text-muted, #9ca3af);">search</span>
-        <input type="text" id="buscador-parroquias-input" class="input-parroquia" style="padding-left: 40px;" placeholder="Buscar por parroquia, país, sector, párroco o cantor encargado...">
+        <input type="text" id="buscador-parroquias-input" class="input-parroquia" style="padding-left: 40px;" placeholder="Buscar por parroquia, país, provincia, sector, párroco o cantor...">
       </div>
 
       <!-- Contenedor dinámico de tarjetas de parroquias -->
