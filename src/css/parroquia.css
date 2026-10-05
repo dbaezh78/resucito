@@ -767,3 +767,15 @@
 }
 
 
+.xbuscar {
+  width: 100%; 
+  background: #ffffff !important;
+  box-sizing: border-box;
+  border: 1.5px solid var(--panel-border, #ccc);
+  border-radius: 25px;
+  color: #212529 !important;
+  font-size: 1.0rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  padding: 10px 25px 10px 25px;
+}
