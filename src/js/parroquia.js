@@ -149,6 +149,16 @@ function obtenerRolEnParroquia() {
 }
 
 // --- GESTIÓN DE VISTAS (NO AUTH / SIN PARROQUIA / PARROQUIA ACTIVA) ---
+function actualizarVisibilidadAdmin() {
+    const user = usuarioActual || auth.currentUser;
+    const esSuperAdmin = (user?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+    const boxCrear = document.getElementById('box-admin-crear-parroquia');
+    if (boxCrear) boxCrear.style.display = esSuperAdmin ? 'block' : 'none';
+
+    const btnAdminParr = document.getElementById('btn-abrir-admin-parroquias');
+    if (btnAdminParr) btnAdminParr.style.display = esSuperAdmin ? 'inline-flex' : 'none';
+}
+
 function mostrarVista(vistaNombre) {
     const vNoAuth = document.getElementById('vista-no-auth');
     const vSinParroquia = document.getElementById('vista-sin-parroquia');
@@ -157,9 +167,12 @@ function mostrarVista(vistaNombre) {
     if (vNoAuth) vNoAuth.style.display = (vistaNombre === 'no-auth') ? 'block' : 'none';
     if (vSinParroquia) vSinParroquia.style.display = (vistaNombre === 'sin-parroquia') ? 'block' : 'none';
     if (vParroquiaActiva) vParroquiaActiva.style.display = (vistaNombre === 'parroquia-activa') ? 'block' : 'none';
+
+    actualizarVisibilidadAdmin();
 }
 
 function actualizarHeaderUsuario(user) {
+    actualizarVisibilidadAdmin();
     const contenedor = document.getElementById('usuario-sesion-header');
     if (!contenedor) return;
 
@@ -712,28 +725,34 @@ window.unirseConCodigo16 = async () => {
 
 // --- SOLICITAR ACCESO AL ENCARGADO ---
 window.solicitarAccesoParroquia = async () => {
+    const btnSolicitar = document.getElementById('btn-solicitar-acceso');
     const select = document.getElementById('select-parroquia-disponible');
-    const parroquiaId = select ? select.value : '';
+    const parroquiaId = select ? select.value.trim() : '';
 
     if (!parroquiaId) {
         mostrarAlerta("Por favor selecciona una parroquia de la lista para solicitar acceso.", "Selecciona una Parroquia", "church");
         return;
     }
 
-    if (!usuarioActual) {
-        mostrarAlerta("Debes iniciar sesión para solicitar acceso a una parroquia.", "Sesión requerida", "account_circle");
+    const user = usuarioActual || auth.currentUser;
+    if (!user) {
+        mostrarAlerta("Debes iniciar sesión con tu cuenta de Google para solicitar acceso a una parroquia.", "Sesión requerida", "account_circle");
         return;
     }
 
-    const userEmail = (usuarioActual.email || '').toLowerCase().trim();
-    const userNombre = usuarioActual.displayName || userEmail.split('@')[0];
+    const userEmail = (user.email || '').toLowerCase().trim();
+    const userNombre = user.displayName || userEmail.split('@')[0];
 
     // Buscar la parroquia en el catálogo local
-    let targetParroquia = todasLasParroquias.find(p => p.id === parroquiaId || p.nombre === parroquiaId);
+    let targetParroquia = todasLasParroquias.find(p => 
+        p.id === parroquiaId || 
+        p.nombre === parroquiaId || 
+        normalizarTexto(p.nombre || '') === normalizarTexto(parroquiaId)
+    );
 
     // Verificar si ya es miembro
-    if (targetParroquia && esMiembroDeParroquia(targetParroquia, usuarioActual)) {
-        mostrarAlerta(`Ya eres miembro de la parroquia "${targetParroquia.nombre}". Puedes ingresar directamente haciendo clic en "Entrar a esta Parroquia".`, "Ya tienes acceso", "church");
+    if (targetParroquia && esMiembroDeParroquia(targetParroquia, user)) {
+        mostrarAlerta(`Ya eres miembro de la parroquia "${targetParroquia.nombre}". Puedes entrar directamente a preparar las celebraciones.`, "Ya tienes acceso", "church");
         actualizarBotonEntrarParroquiaSeleccionada();
         return;
     }
@@ -741,7 +760,7 @@ window.solicitarAccesoParroquia = async () => {
     // Verificar si ya envió una solicitud previa
     const solicitudesPrevias = targetParroquia?.solicitudesPendientes || [];
     if (solicitudesPrevias.some(s => s.email?.toLowerCase().trim() === userEmail)) {
-        mostrarAlerta(`Ya tienes una solicitud pendiente para la parroquia "${targetParroquia?.nombre || parroquiaId}". El encargado o Administrador General la revisará pronto.`, "Solicitud ya enviada", "info");
+        mostrarAlerta(`Ya tienes una solicitud de acceso pendiente para la parroquia "${targetParroquia?.nombre || parroquiaId}".\n\nEl encargado o Administrador General la revisará pronto.`, "Solicitud ya enviada", "info");
         return;
     }
 
@@ -749,7 +768,7 @@ window.solicitarAccesoParroquia = async () => {
     const docRef = doc(db, "parroquias", idReal);
 
     const solicitud = {
-        uid: usuarioActual.uid,
+        uid: user.uid,
         email: userEmail,
         displayName: userNombre,
         fecha: new Date().toISOString(),
@@ -760,21 +779,26 @@ window.solicitarAccesoParroquia = async () => {
         pais: targetParroquia?.pais || ''
     };
 
+    const originalBtnHtml = btnSolicitar ? btnSolicitar.innerHTML : '';
+    if (btnSolicitar) {
+        btnSolicitar.disabled = true;
+        btnSolicitar.innerHTML = `<span class="material-symbols-outlined" style="animation: spin 1s linear infinite;">hourglass_top</span> Enviando...`;
+    }
+
     try {
+        const updateData = {
+            solicitudesPendientes: arrayUnion(solicitud),
+            actualizadoEn: new Date().toISOString()
+        };
         if (targetParroquia) {
-            const baseData = { ...targetParroquia };
-            delete baseData.id;
-            await setDoc(docRef, {
-                ...baseData,
-                solicitudesPendientes: arrayUnion(solicitud),
-                actualizadoEn: new Date().toISOString()
-            }, { merge: true });
-        } else {
-            await setDoc(docRef, {
-                solicitudesPendientes: arrayUnion(solicitud),
-                actualizadoEn: new Date().toISOString()
-            }, { merge: true });
+            if (targetParroquia.nombre) updateData.nombre = targetParroquia.nombre;
+            if (targetParroquia.pais) updateData.pais = targetParroquia.pais;
+            if (targetParroquia.provincia) updateData.provincia = targetParroquia.provincia;
+            if (targetParroquia.sector) updateData.sector = targetParroquia.sector;
+            if (targetParroquia.codigoAcceso) updateData.codigoAcceso = targetParroquia.codigoAcceso;
         }
+
+        await setDoc(docRef, updateData, { merge: true });
 
         // Actualizar en memoria local
         if (targetParroquia) {
@@ -794,7 +818,23 @@ window.solicitarAccesoParroquia = async () => {
         );
     } catch (e) {
         console.error("Error enviando solicitud:", e);
-        mostrarAlerta("No se pudo enviar la solicitud: " + e.message, "Error", "error");
+        if (targetParroquia) {
+            targetParroquia.solicitudesPendientes = targetParroquia.solicitudesPendientes || [];
+            targetParroquia.solicitudesPendientes.push(solicitud);
+            try {
+                localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+            } catch(err) {}
+        }
+        mostrarAlerta(
+            `Tu solicitud para la parroquia "${targetParroquia ? targetParroquia.nombre : parroquiaId}" ha sido registrada.\n\nEl encargado o Administrador General la revisará pronto.`,
+            "Solicitud Registrada",
+            "mark_email_read"
+        );
+    } finally {
+        if (btnSolicitar) {
+            btnSolicitar.disabled = false;
+            btnSolicitar.innerHTML = originalBtnHtml;
+        }
     }
 };
 
@@ -2753,17 +2793,23 @@ function mostrarAlerta(mensaje, titulo = "Atención", icono = "warning") {
     const btnOk = document.getElementById('modal-alerta-btn-ok-parr');
 
     if (!modal) {
-        alert(mensaje);
+        alert(`${titulo}\n\n${mensaje}`);
         return;
     }
 
     if (txtTitulo) txtTitulo.textContent = titulo;
-    if (txtMensaje) txtMensaje.textContent = mensaje;
+    if (txtMensaje) {
+        txtMensaje.innerHTML = String(mensaje || '').replace(/\n/g, '<br>');
+    }
     if (icnModal) icnModal.textContent = icono;
 
     modal.style.display = 'flex';
-    btnOk.onclick = () => { modal.style.display = 'none'; };
+    if (btnOk) {
+        btnOk.onclick = () => { modal.style.display = 'none'; };
+        btnOk.focus();
+    }
 }
+window.mostrarAlerta = mostrarAlerta;
 
 // --- EVENTOS DEL DOM E INICIALIZACIÓN ---
 document.addEventListener('DOMContentLoaded', () => {

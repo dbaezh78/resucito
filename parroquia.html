@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Parroquia - Preparación de Eucaristías - Resucitó</title>
+  <title>Cantos Eucaristía - Preparación de Eucaristías - Resucitó</title>
   <link rel="icon" href="img/ico.ico" type="image/x-icon">
   <link rel="stylesheet" href="./src/style.css">
   <link rel="stylesheet" href="./src/navegador.css">
@@ -21,7 +21,7 @@
         <a href="#" onclick="history.back(); return false;" class="material-symbols-outlined back-btn" title="Volver atrás">arrow_back</a>
         <h1 style="font-size: 1.35rem;">
           <span class="material-symbols-outlined" style="font-size: 2.2rem; color: var(--accent-color, #d01212);">church</span>
-          Parroquia - Preparación de Eucaristías
+          Cantos Eucaristía
         </h1>
       </div>
       <div id="usuario-sesion-header" style="display: flex; align-items: center; gap: 8px;">
@@ -102,7 +102,7 @@
           <span class="material-symbols-outlined">church</span>
           Entrar a esta Parroquia
         </button>
-        <button id="btn-solicitar-acceso" class="btn-parroquia-top" style="padding: 10px 18px;">
+        <button id="btn-solicitar-acceso" class="btn-parroquia-top" style="padding: 10px 18px;" onclick="window.solicitarAccesoParroquia()">
           <span class="material-symbols-outlined">send</span>
           Solicitar Acceso al Encargado
         </button>
@@ -121,8 +121,8 @@
         </div>
       </div>
 
-      <!-- Zona de Administrador / Crear Parroquia -->
-      <div id="box-admin-crear-parroquia" style="margin-top: 28px; padding-top: 16px; border-top: 1px dashed var(--panel-border, #e5e7eb);">
+      <!-- Zona de Administrador / Crear Parroquia (Solo para Super Admin) -->
+      <div id="box-admin-crear-parroquia" style="margin-top: 28px; padding-top: 16px; border-top: 1px dashed var(--panel-border, #e5e7eb); display: none;">
         <button id="btn-abrir-crear-parroquia" class="btn-parroquia-top" style="width: 100%; justify-content: center; background: rgba(208, 18, 18, 0.08); color: var(--accent-color, #d01212); border-color: rgba(208, 18, 18, 0.2); font-weight: 700;">
           <span class="material-symbols-outlined">domain_add</span>
           Formulario de Parroquias e Importación CSV
@@ -168,8 +168,8 @@
             Parroquias
           </button>
 
-          <!-- Botón Administrar / Importar Parroquias -->
-          <button id="btn-abrir-admin-parroquias" class="btn-parroquia-top" title="Formulario de Parroquias e Importación CSV">
+          <!-- Botón Administrar / Importar Parroquias (Solo Super Admin) -->
+          <button id="btn-abrir-admin-parroquias" class="btn-parroquia-top" title="Formulario de Parroquias e Importación CSV" style="display: none;">
             <span class="material-symbols-outlined">domain</span>
             Gestionar Parroquias
           </button>
@@ -612,7 +612,7 @@
   </div>
 
   <!-- Modal de Alerta / Advertencia Personalizado -->
-  <div id="modal-alerta-parroquia" class="modal-overlay" style="display: none; z-index: 100030;">
+  <div id="modal-alerta-parroquia" class="modal-overlay" style="display: none; z-index: 100099;" onclick="if(event.target === this) this.style.display='none'">
     <div class="modal-content-card" style="max-width: 380px; width: 90%; padding: 28px 24px; border-radius: 24px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); background: var(--panel-bg, #ffffff);">
       <div id="modal-alerta-icon-bg-parr" style="width: 64px; height: 64px; margin: 0 auto 16px auto; border-radius: 50%; background: rgba(208, 18, 18, 0.1); display: flex; align-items: center; justify-content: center;">
         <span id="modal-alerta-icon-parr" class="material-symbols-outlined" style="font-size: 32px; color: var(--accent-color, #d01212);">warning</span>

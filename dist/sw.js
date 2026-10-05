@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v356'; // v2.1.26 Mensaje ambulante responsabilidad y reordenamiento preparacion
+const CACHE_NAME = 'resucito-cache-v357'; // v2.1.27 Solicitud acceso aviso, admin-only formulario y Cantos Eucaristia
 const STATIC_ASSETS = [
   './',
   'index.html',

@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.26",
+  "latestVersion": "2.1.27",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.26)",
-  "updateMessage": "Diseño optimizado de preparación litúrgica y aviso minimizado de responsabilidad con mensaje ambulante.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.27)",
+  "updateMessage": "Aviso garantizado al solicitar acceso, restricción exclusiva de formulario de parroquias y renombramiento a Cantos Eucaristía.",
   "releaseNotes": [
-    "Aviso de responsabilidad de canto minimizado en tarjetas con modal flotante ambulante.",
-    "Reorganización de la preparación litúrgica: selector de momentos litúrgicos arriba y nombre más compacto.",
-    "Formulario de preparación simplificado sin campo visible de fecha de celebración."
+    "Aviso garantizado y estado de envío al hacer clic en 'Solicitar Acceso al Encargado'.",
+    "Restricción de 'Formulario de Parroquias e Importación CSV' visible exclusivamente para el Administrador General.",
+    "Renombrado de la sección en el menú a 'Cantos Eucaristía'."
   ]
 }

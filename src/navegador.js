@@ -164,8 +164,8 @@ import { hasPermission } from './accesscontrol.js';
             <a href="#" id="nav-resucito-camino"><span class="material-symbols-outlined arrow-icon">home</span> Inicio</a>
             <a href="perfil.html" id="nav-resucito-perfil"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
             <a href="preparar.html" id="nav-resucito-preparar"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
-            <a href="parroquia.html" id="nav-resucito-parroquia"><span class="material-symbols-outlined arrow-icon">church</span> Parroquia</a>
-            <a href="datosparroquia.html" id="nav-resucito-datosparroquia"><span class="material-symbols-outlined arrow-icon">edit_location_alt</span> Formulario Parroquia</a>
+            <a href="parroquia.html" id="nav-resucito-parroquia"><span class="material-symbols-outlined arrow-icon">church</span> Cantos Eucaristía</a>
+            <a href="datosparroquia.html" id="nav-resucito-datosparroquia" style="display: none;"><span class="material-symbols-outlined arrow-icon">edit_location_alt</span> Formulario Parroquia</a>
             <a href="bitacora.html" id="nav-resucito-bitacora"><span class="material-symbols-outlined arrow-icon">history</span> Bitácora</a>
             <a href="/src/html/intro.html" id="nav-resucito-intro"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>
             <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
@@ -980,6 +980,7 @@ import { hasPermission } from './accesscontrol.js';
       const navResucitoIntro = document.getElementById('nav-resucito-intro');
       const navResucitoPdf = document.getElementById('nav-resucito-pdf');
       const navResucitoMantcantos = document.getElementById('nav-resucito-mantcantos');
+      const navResucitoDatosparroquia = document.getElementById('nav-resucito-datosparroquia');
       const navResucitoRespaldo = document.getElementById('nav-resucito-respaldo');
       const navResucitoChat = document.getElementById('nav-resucito-chat');
       const navResucitoInstalar = document.getElementById('installButton');
@@ -991,6 +992,7 @@ import { hasPermission } from './accesscontrol.js';
       if (navResucitoIntro) navResucitoIntro.style.display = canIntro ? 'flex' : 'none';
       if (navResucitoPdf) navResucitoPdf.style.display = canPdf ? 'flex' : 'none';
       if (navResucitoMantcantos) navResucitoMantcantos.style.display = canMantcantos ? 'flex' : 'none';
+      if (navResucitoDatosparroquia) navResucitoDatosparroquia.style.display = isAdmin ? 'flex' : 'none';
       if (navResucitoRespaldo) navResucitoRespaldo.style.display = canRespaldo ? 'flex' : 'none';
       if (navResucitoChat) navResucitoChat.style.display = canChat ? 'flex' : 'none';
       if (navResucitoInstalar) navResucitoInstalar.style.display = canInstalar ? 'flex' : 'none';
