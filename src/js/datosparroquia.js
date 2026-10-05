@@ -411,6 +411,25 @@ async function guardarParroquiaDesdeFormulario(e) {
     return;
   }
 
+  // Validación de unicidad: No pueden haber dos parroquias con el mismo nombre y el mismo sector
+  const yaExiste = listaParroquiasCache.some(p => {
+    if (idEditando && p.id === idEditando) return false;
+    const mismoNombre = normalizarTexto(p.nombre) === normalizarTexto(nombre);
+    const mismoSector = normalizarTexto(p.sector) === normalizarTexto(sector);
+    const mismoPais = (!p.pais || !pais) ? true : (normalizarTexto(p.pais) === normalizarTexto(pais));
+    return mismoNombre && mismoSector && mismoPais;
+  });
+
+  if (yaExiste) {
+    mostrarNotif(
+      "Parroquia Ya Registrada",
+      `No se puede guardar: Ya existe una parroquia con el nombre "${nombre}" en el sector "${sector}". Dos parroquias pueden tener el mismo nombre únicamente si pertenecen a sectores diferentes.`,
+      "warning"
+    );
+    inputSector?.focus();
+    return;
+  }
+
   const user = usuarioActual || getCurrentUser() || auth.currentUser;
   if (!user) {
     mostrarNotif("Sesión Requerida", "Debes iniciar sesión con tu cuenta de Google para guardar o modificar parroquias en el sistema.", "lock");
@@ -732,6 +751,12 @@ window.procesarArchivoCsvParroquias = async (event) => {
 
       let importadas = 0;
       let omitidas = 0;
+      let duplicadasOmitidas = 0;
+
+      // Registrar claves únicas de parroquias ya existentes: (pais + nombre + sector)
+      const clavesExistentes = new Set(
+        listaParroquiasCache.map(p => `${normalizarTexto(p.pais || '')}___${normalizarTexto(p.nombre || '')}___${normalizarTexto(p.sector || '')}`)
+      );
 
       for (let i = 1; i < lineas.length; i++) {
         const cols = parseCsvLine(lineas[i]);
@@ -748,6 +773,15 @@ window.procesarArchivoCsvParroquias = async (event) => {
           omitidas++;
           continue;
         }
+
+        // Validación de unicidad: No permitir mismo nombre y mismo sector
+        const clave = `${normalizarTexto(pais)}___${normalizarTexto(parroquia)}___${normalizarTexto(sector)}`;
+        if (clavesExistentes.has(clave)) {
+          duplicadasOmitidas++;
+          omitidas++;
+          continue;
+        }
+        clavesExistentes.add(clave);
 
         const nuevoId = 'parr_' + Date.now().toString(36) + '_' + i;
         const codigo16 = generarCodigo16();
@@ -799,7 +833,15 @@ window.procesarArchivoCsvParroquias = async (event) => {
       }
 
       await cargarTodasLasParroquias();
-      mostrarNotif("Importación Completada", `Se importaron ${importadas} parroquias correctamente.${omitidas > 0 ? ` (${omitidas} filas omitidas por faltar País, Parroquia o Sector).` : ''}`, "cloud_done");
+      let detalleOmitidas = '';
+      if (duplicadasOmitidas > 0) {
+        detalleOmitidas += ` (${duplicadasOmitidas} omitidas por tener el mismo nombre y sector que otra parroquia).`;
+      }
+      const incompletas = omitidas - duplicadasOmitidas;
+      if (incompletas > 0) {
+        detalleOmitidas += ` (${incompletas} omitidas por campos obligatorios faltantes).`;
+      }
+      mostrarNotif("Importación Completada", `Se importaron ${importadas} parroquias correctamente.${detalleOmitidas}`, "cloud_done");
     } catch (err) {
       console.error("Error importando CSV:", err);
       mostrarNotif("Error al Importar", err.message, "error");

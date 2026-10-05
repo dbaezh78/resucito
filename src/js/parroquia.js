@@ -533,6 +533,21 @@ window.guardarParroquiaDesdeFormulario = async (e) => {
         return;
     }
 
+    const inputSector = document.getElementById('parroquia-sector-input');
+    const sector = inputSector ? inputSector.value.trim() : '';
+    if (sector) {
+        const duplicada = todasLasParroquias.some(p => {
+            if (idEditando && p.id === idEditando) return false;
+            return normalizarTexto(p.nombre) === normalizarTexto(nombre) &&
+                   normalizarTexto(p.sector || '') === normalizarTexto(sector) &&
+                   (!p.pais || !pais || normalizarTexto(p.pais) === normalizarTexto(pais));
+        });
+        if (duplicada) {
+            mostrarAlerta(`Ya existe una parroquia con el nombre "${nombre}" en el sector "${sector}". Dos parroquias pueden tener el mismo nombre únicamente si pertenecen a sectores diferentes.`, "Parroquia Ya Registrada", "warning");
+            return;
+        }
+    }
+
     if (!usuarioActual) {
         mostrarAlerta("Debes iniciar sesión para registrar o editar una parroquia.", "Sesión Requerida", "account_circle");
         return;

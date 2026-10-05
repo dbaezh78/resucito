@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v350'; // v2.1.20 Incorporación del campo Provincia en parroquias y CSV
+const CACHE_NAME = 'resucito-cache-v351'; // v2.1.21 Validación de unicidad de nombre de parroquia por sector
 const STATIC_ASSETS = [
   './',
   'index.html',
