@@ -1,11 +1,10 @@
 {
-  "latestVersion": "2.1.27",
+  "latestVersion": "2.1.28",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.27)",
-  "updateMessage": "Aviso garantizado al solicitar acceso, restricción exclusiva de formulario de parroquias y renombramiento a Cantos Eucaristía.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.28)",
+  "updateMessage": "Botón minimizado 'Encargado de Canto' con modal flotante en Perfil para optimizar el espacio.",
   "releaseNotes": [
-    "Aviso garantizado y estado de envío al hacer clic en 'Solicitar Acceso al Encargado'.",
-    "Restricción de 'Formulario de Parroquias e Importación CSV' visible exclusivamente para el Administrador General.",
-    "Renombrado de la sección en el menú a 'Cantos Eucaristía'."
+    "Mensaje de asignación de encargado en Perfil reemplazado por botón compacto 'Encargado de Canto'.",
+    "Apertura de ventana flotante con el texto completo y acceso directo a chat de soporte."
   ]
 }

@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v357'; // v2.1.27 Solicitud acceso aviso, admin-only formulario y Cantos Eucaristia
+const CACHE_NAME = 'resucito-cache-v358'; // v2.1.28 Chip Encargado de Canto en Perfil
 const STATIC_ASSETS = [
   './',
   'index.html',
