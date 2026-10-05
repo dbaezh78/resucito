@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.21",
+  "latestVersion": "2.1.22",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.21)",
-  "updateMessage": "Validación de unicidad: nombres iguales permitidos únicamente en sectores diferentes.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.22)",
+  "updateMessage": "Seguridad de Parroquias: códigos de 16 caracteres visibles únicamente para el Cantor Encargado y el Administrador.",
   "releaseNotes": [
-    "Regla de unicidad implementada en formulario de parroquias: se prohíbe duplicar nombre y sector en un mismo país.",
-    "El importador CSV descarta automáticamente filas con el mismo nombre y sector para evitar colisiones.",
-    "Mensajes de alerta claros que orientan al usuario sobre la regla de sectores diferentes."
+    "Restricción de visualización y copia del código de 16 caracteres exclusivamente para el Cantor Encargado designado y el Administrador Principal.",
+    "Bloque informativo en parroquias sin encargado para orientar a los cantores a contactar al Administrador (dbaezh78@gmail.com).",
+    "Protección del selector de Cantor Encargado para que solo el Administrador Principal pueda designarlo."
   ]
 }

@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v351'; // v2.1.21 Validación de unicidad de nombre de parroquia por sector
+const CACHE_NAME = 'resucito-cache-v352'; // v2.1.22 Control de acceso de códigos de 16 caracteres por encargado
 const STATIC_ASSETS = [
   './',
   'index.html',

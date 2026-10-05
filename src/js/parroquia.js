@@ -95,18 +95,33 @@ export function calcularTonoTranspuesto(songId, acordeOffset) {
 }
 
 // --- VERIFICACIÓN DE ROLES ---
+export function puedeVerCodigoDeParroquia(parr, user) {
+    if (!parr || !user) return false;
+    const email = (user.email || '').toLowerCase().trim();
+    if (email === SUPER_ADMIN_EMAIL) return true;
+
+    // Verificar si es el Cantor Encargado explícito
+    if (parr.cantorEncargadoEmail && parr.cantorEncargadoEmail.toLowerCase().trim() === email) {
+        return true;
+    }
+
+    // Verificar en lista de miembros si tiene rol encargado o admin
+    if (Array.isArray(parr.miembros)) {
+        const miembro = parr.miembros.find(m => 
+            (m.uid && m.uid === user.uid) || 
+            (m.email && m.email.toLowerCase().trim() === email)
+        );
+        if (miembro && (miembro.rol === 'encargado' || miembro.rol === 'admin')) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 function esAdminOEncargado() {
-    if (!usuarioActual) return false;
-    if (usuarioActual.email?.toLowerCase().trim() === SUPER_ADMIN_EMAIL) return true;
-    if (!parroquiaActiva) return false;
-    if (parroquiaActiva.creadorUid === usuarioActual.uid || parroquiaActiva.creadorEmail === usuarioActual.email) return true;
-    
-    // Verificar en lista de miembros si tiene rol encargado
-    const miembro = (parroquiaActiva.miembros || []).find(m => 
-        (m.uid && m.uid === usuarioActual.uid) || 
-        (m.email && m.email.toLowerCase().trim() === usuarioActual.email?.toLowerCase().trim())
-    );
-    return miembro && miembro.rol === 'encargado';
+    if (!usuarioActual || !parroquiaActiva) return false;
+    return puedeVerCodigoDeParroquia(parroquiaActiva, usuarioActual);
 }
 
 function esMiembroDeParroquia(parr, user) {
@@ -124,11 +139,12 @@ function obtenerRolEnParroquia() {
     if (!usuarioActual) return 'invitado';
     if (usuarioActual.email?.toLowerCase().trim() === SUPER_ADMIN_EMAIL) return 'encargado';
     if (!parroquiaActiva) return 'invitado';
-    if (parroquiaActiva.creadorUid === usuarioActual.uid || parroquiaActiva.creadorEmail === usuarioActual.email) return 'encargado';
+    if (parroquiaActiva.cantorEncargadoEmail && parroquiaActiva.cantorEncargadoEmail.toLowerCase().trim() === usuarioActual.email?.toLowerCase().trim()) return 'encargado';
     const miembro = (parroquiaActiva.miembros || []).find(m => 
         (m.uid && m.uid === usuarioActual.uid) || 
         (m.email && m.email.toLowerCase().trim() === usuarioActual.email?.toLowerCase().trim())
     );
+    if (miembro && (miembro.rol === 'encargado' || miembro.rol === 'admin')) return 'encargado';
     return miembro ? (miembro.rol || 'cantor') : 'miembro';
 }
 
@@ -452,9 +468,15 @@ async function cargarUsuariosRegistradosParaEncargado() {
         }
 
         const select = document.getElementById('parroquia-cantor-encargado-select');
+        const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+
         if (select) {
+            select.disabled = !esSuperAdmin;
+            select.style.opacity = esSuperAdmin ? '1' : '0.75';
+            select.style.cursor = esSuperAdmin ? 'default' : 'not-allowed';
+
             const valActual = select.value;
-            select.innerHTML = '<option value="">-- Seleccionar Cantor Encargado (Opcional) --</option>' +
+            select.innerHTML = '<option value="">-- Sin Cantor Encargado (Opcional) --</option>' +
                 usuariosRegistradosCache.map(u => {
                     const label = u.displayName ? `${u.displayName} (${u.email})` : u.email;
                     return `<option value="${u.email}" ${valActual === u.email ? 'selected' : ''}>${label}</option>`;
@@ -492,6 +514,7 @@ window.limpiarFormularioParroquia = () => {
     const filtroPais = document.getElementById('filtro-pais-input');
     const selectCantor = document.getElementById('parroquia-cantor-encargado-select');
     const btnSubmit = document.getElementById('btn-guardar-parroquia-submit');
+    const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
 
     if (idInput) idInput.value = '';
     if (inputNombre) inputNombre.value = '';
@@ -501,7 +524,10 @@ window.limpiarFormularioParroquia = () => {
     if (selectPais) {
         renderizarOpcionesPaises(listaPaisesGlobal, 'República Dominicana');
     }
-    if (selectCantor) selectCantor.value = '';
+    if (selectCantor) {
+        selectCantor.value = '';
+        selectCantor.disabled = !esSuperAdmin;
+    }
     if (btnSubmit) {
         btnSubmit.innerHTML = `<span class="material-symbols-outlined">save</span> Guardar Parroquia`;
     }
@@ -553,37 +579,47 @@ window.guardarParroquiaDesdeFormulario = async (e) => {
         return;
     }
 
-    // Buscar detalles del usuario cantor encargado si fue seleccionado
-    let cantorNombre = '';
-    if (cantorEmail) {
-        const u = usuariosRegistradosCache.find(x => x.email?.toLowerCase().trim() === cantorEmail.toLowerCase().trim());
-        cantorNombre = u ? (u.displayName || cantorEmail.split('@')[0]) : cantorEmail.split('@')[0];
-    }
-
+    const esSuperAdmin = (usuarioActual.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
     const nuevoId = idEditando || ('parr_' + Date.now().toString(36));
     const parroquiaExistente = idEditando ? todasLasParroquias.find(p => p.id === idEditando) : null;
     const codigo16 = parroquiaExistente?.codigoAcceso || generarCodigo16();
 
+    // Solo el Super Admin puede asignar o modificar el cantor encargado
+    let cantorEmailFinal = '';
+    let cantorNombreFinal = '';
+
+    if (esSuperAdmin) {
+        cantorEmailFinal = cantorEmail;
+        if (cantorEmailFinal) {
+            const u = usuariosRegistradosCache.find(x => x.email?.toLowerCase().trim() === cantorEmailFinal.toLowerCase().trim());
+            cantorNombreFinal = u ? (u.displayName || cantorEmailFinal.split('@')[0]) : cantorEmailFinal.split('@')[0];
+        }
+    } else {
+        // Preservar si ya existía
+        cantorEmailFinal = parroquiaExistente?.cantorEncargadoEmail || '';
+        cantorNombreFinal = parroquiaExistente?.cantorEncargado || '';
+    }
+
     // Armar lista de miembros
     let miembros = parroquiaExistente?.miembros || [];
-    if (cantorEmail) {
+    if (esSuperAdmin && cantorEmailFinal) {
         // Remover si ya existía para actualizar con rol encargado
-        miembros = miembros.filter(m => m.email?.toLowerCase().trim() !== cantorEmail.toLowerCase().trim());
+        miembros = miembros.filter(m => m.email?.toLowerCase().trim() !== cantorEmailFinal.toLowerCase().trim());
         miembros.unshift({
-            email: cantorEmail,
-            displayName: cantorNombre,
+            email: cantorEmailFinal,
+            displayName: cantorNombreFinal,
             rol: 'encargado',
             fechaIngreso: new Date().toISOString()
         });
     }
 
-    // Asegurarse de que el creador esté incluido
+    // Asegurarse de que el usuario actual esté incluido
     if (usuarioActual.email && !miembros.some(m => m.email?.toLowerCase().trim() === usuarioActual.email.toLowerCase().trim())) {
         miembros.push({
             uid: usuarioActual.uid,
             email: usuarioActual.email,
             displayName: usuarioActual.displayName || usuarioActual.email.split('@')[0],
-            rol: 'encargado',
+            rol: esSuperAdmin ? 'encargado' : 'miembro',
             fechaIngreso: new Date().toISOString()
         });
     }
@@ -595,8 +631,8 @@ window.guardarParroquiaDesdeFormulario = async (e) => {
         ciudad: pais, // compatibilidad
         direccion: direccion,
         parroco: parroco,
-        cantorEncargado: cantorNombre,
-        cantorEncargadoEmail: cantorEmail,
+        cantorEncargado: cantorNombreFinal,
+        cantorEncargadoEmail: cantorEmailFinal,
         codigoAcceso: codigo16,
         actualizado: new Date().toISOString(),
         miembros: miembros,
@@ -631,6 +667,7 @@ window.editarParroquiaDesdeAdmin = (parrId) => {
     const parr = todasLasParroquias.find(p => p.id === parrId);
     if (!parr) return;
 
+    const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
     const idInput = document.getElementById('parroquia-id-editando');
     const inputNombre = document.getElementById('parroquia-nombre-input');
     const inputDir = document.getElementById('parroquia-direccion-input');
@@ -648,6 +685,7 @@ window.editarParroquiaDesdeAdmin = (parrId) => {
     }
     if (selectCantor) {
         selectCantor.value = parr.cantorEncargadoEmail || '';
+        selectCantor.disabled = !esSuperAdmin;
     }
     if (btnSubmit) {
         btnSubmit.innerHTML = `<span class="material-symbols-outlined">edit</span> Actualizar Parroquia`;
@@ -667,6 +705,11 @@ window.seleccionarParroquiaDesdeAdmin = (parrId) => {
 };
 
 window.eliminarParroquiaDesdeAdmin = async (parrId, nombre) => {
+    const parr = todasLasParroquias.find(p => p.id === parrId);
+    if (!puedeVerCodigoDeParroquia(parr, usuarioActual)) {
+        mostrarAlerta("Solo el Administrador Principal o el Cantor Encargado pueden eliminar esta parroquia.", "Acceso Restringido", "lock");
+        return;
+    }
     if (!confirm(`¿Eliminar definitivamente la parroquia "${nombre}" y todas sus preparaciones?`)) return;
     try {
         await deleteDoc(doc(db, "parroquias", parrId));
@@ -701,6 +744,19 @@ window.limpiarBuscadorAdminParroquias = () => {
     }
 };
 
+window.copiarCodigo16DeParroquia = (parrId, codigo) => {
+    const parr = todasLasParroquias.find(p => p.id === parrId || p.codigoAcceso === codigo);
+    if (!puedeVerCodigoDeParroquia(parr, usuarioActual)) {
+        mostrarAlerta(`Solo el Cantor Encargado de la parroquia y el Administrador principal pueden ver y copiar el código de 16 caracteres. Si eres cantor de esta parroquia y no tiene encargado asignado, habla con el Administrador (${SUPER_ADMIN_EMAIL}) para ser designado.`, "Acceso Restringido", "lock");
+        return;
+    }
+    navigator.clipboard.writeText(codigo).then(() => {
+        window.mostrarToastVerde(`Código copiado: ${codigo}`);
+    }).catch(() => {
+        prompt("Copia el código manualmente:", codigo);
+    });
+};
+
 function renderizarListadoAdminParroquias(filtro = '') {
     const contenedor = document.getElementById('contenedor-listado-admin-parroquias');
     const badgeTotal = document.getElementById('total-parroquias-admin');
@@ -732,6 +788,40 @@ function renderizarListadoAdminParroquias(filtro = '') {
         const pais = p.pais || p.ciudad || 'Sin país';
         const cantor = p.cantorEncargado ? `${p.cantorEncargado} ${p.cantorEncargadoEmail ? `(${p.cantorEncargadoEmail})` : ''}` : (p.cantorEncargadoEmail || 'Sin encargado');
         const codigo16 = p.codigoAcceso || 'SIN-CÓDIGO';
+        const puedeVer = puedeVerCodigoDeParroquia(p, usuarioActual);
+
+        let htmlCodigo = '';
+        if (puedeVer) {
+            htmlCodigo = `
+                <div style="margin-top: 4px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                    <span class="badge-codigo-item" title="Haga clic para copiar código de 16 caracteres" onclick="window.copiarCodigo16DeParroquia('${p.id}', '${codigo16}')">
+                        🔑 ${codigo16}
+                        <span class="material-symbols-outlined" style="font-size: 14px;">content_copy</span>
+                    </span>
+                    <span style="font-size: 0.72rem; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 2px 6px; border-radius: 4px; font-weight: 600;">
+                        Acceso Encargado
+                    </span>
+                </div>
+            `;
+        } else if (!p.cantorEncargadoEmail) {
+            htmlCodigo = `
+                <div style="margin-top: 4px;">
+                    <span style="font-size: 0.72rem; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 3px 8px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
+                        <span class="material-symbols-outlined" style="font-size: 13px; color: #d97706;">lock</span>
+                        Sin cantor encargado. Contactar a ${SUPER_ADMIN_EMAIL}
+                    </span>
+                </div>
+            `;
+        } else {
+            htmlCodigo = `
+                <div style="margin-top: 4px;">
+                    <span style="font-size: 0.72rem; color: #6b7280; background: #f3f4f6; border: 1px solid #e5e7eb; padding: 3px 8px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
+                        <span class="material-symbols-outlined" style="font-size: 13px; color: #9ca3af;">lock</span>
+                        Código visible solo para el Encargado y Administrador.
+                    </span>
+                </div>
+            `;
+        }
 
         return `
             <div class="parroquia-card-item ${esActiva ? 'activa' : ''}">
@@ -749,12 +839,7 @@ function renderizarListadoAdminParroquias(filtro = '') {
                         ${p.parroco ? `<span>• ✝️ ${p.parroco}</span>` : ''}
                         <span>• 🎤 ${cantor}</span>
                     </div>
-                    <div style="margin-top: 4px;">
-                        <span class="badge-codigo-item" title="Haga clic para copiar código de 16 caracteres" onclick="navigator.clipboard.writeText('${codigo16}'); window.mostrarToastVerde('Código copiado: ${codigo16}');">
-                            🔑 ${codigo16}
-                            <span class="material-symbols-outlined" style="font-size: 14px;">content_copy</span>
-                        </span>
-                    </div>
+                    ${htmlCodigo}
                 </div>
 
                 <div style="display: flex; gap: 6px; align-items: center;">
@@ -875,7 +960,8 @@ window.procesarArchivoCsvParroquias = async (event) => {
                 const codigo16 = generarCodigo16();
 
                 let miembros = [];
-                if (cantorEmail) {
+                const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+                if (cantorEmail && esSuperAdmin) {
                     miembros.push({
                         email: cantorEmail,
                         displayName: cantorEmail.split('@')[0],
@@ -888,7 +974,7 @@ window.procesarArchivoCsvParroquias = async (event) => {
                         uid: usuarioActual.uid,
                         email: usuarioActual.email,
                         displayName: usuarioActual.displayName || usuarioActual.email.split('@')[0],
-                        rol: 'encargado',
+                        rol: esSuperAdmin ? 'encargado' : 'miembro',
                         fechaIngreso: new Date().toISOString()
                     });
                 }
@@ -900,8 +986,8 @@ window.procesarArchivoCsvParroquias = async (event) => {
                     ciudad: pais,
                     direccion: direccion,
                     parroco: parroco,
-                    cantorEncargado: cantorEmail ? cantorEmail.split('@')[0] : '',
-                    cantorEncargadoEmail: cantorEmail,
+                    cantorEncargado: (esSuperAdmin && cantorEmail) ? cantorEmail.split('@')[0] : '',
+                    cantorEncargadoEmail: (esSuperAdmin && cantorEmail) ? cantorEmail : '',
                     codigoAcceso: codigo16,
                     creadorUid: usuarioActual?.uid || 'importador',
                     creadorEmail: usuarioActual?.email || '',
@@ -934,6 +1020,10 @@ window.procesarArchivoCsvParroquias = async (event) => {
 // --- MODAL CÓDIGO DE 16 CARACTERES ---
 window.abrirModalCodigo16 = () => {
     if (!parroquiaActiva) return;
+    if (!esAdminOEncargado()) {
+        mostrarAlerta(`Solo el Cantor Encargado y el Administrador principal (${SUPER_ADMIN_EMAIL}) pueden ver el código de acceso de 16 caracteres.`, "Acceso Restringido", "lock");
+        return;
+    }
     const modal = document.getElementById('modal-codigo-16');
     const txtCodigo = document.getElementById('display-codigo-16-texto');
     const boxRegenerar = document.getElementById('box-regenerar-codigo');
@@ -946,6 +1036,10 @@ window.abrirModalCodigo16 = () => {
 
 window.copiarCodigo16 = () => {
     if (!parroquiaActiva || !parroquiaActiva.codigoAcceso) return;
+    if (!esAdminOEncargado()) {
+        mostrarAlerta(`Solo el Cantor Encargado y el Administrador principal pueden copiar el código de 16 caracteres.`, "Acceso Restringido", "lock");
+        return;
+    }
     navigator.clipboard.writeText(parroquiaActiva.codigoAcceso).then(() => {
         mostrarToastVerde("Código copiado al portapapeles");
     }).catch(err => {
@@ -955,6 +1049,10 @@ window.copiarCodigo16 = () => {
 
 window.compartirCodigoWhatsApp = () => {
     if (!parroquiaActiva || !parroquiaActiva.codigoAcceso) return;
+    if (!esAdminOEncargado()) {
+        mostrarAlerta(`Solo el Cantor Encargado y el Administrador principal pueden compartir el código de 16 caracteres.`, "Acceso Restringido", "lock");
+        return;
+    }
     const mensaje = `🕊️ *Acceso a la Parroquia ${parroquiaActiva.nombre}*\n\n` +
         `Para unirte a las preparaciones de cantos de nuestra comunidad en la app Resucitó, ingresa este código de 16 caracteres:\n\n` +
         `🔑 *${parroquiaActiva.codigoAcceso}*\n\n` +
@@ -966,6 +1064,10 @@ window.compartirCodigoWhatsApp = () => {
 
 window.regenerarCodigo16 = async () => {
     if (!parroquiaActiva) return;
+    if (!esAdminOEncargado()) {
+        mostrarAlerta("Solo el Cantor Encargado y el Administrador principal pueden regenerar el código.", "Acceso Restringido", "lock");
+        return;
+    }
     if (!confirm("⚠️ ¿Deseas regenerar el código de 16 caracteres? El código anterior quedará invalidado.")) return;
 
     const nuevoCod = generarCodigo16();
