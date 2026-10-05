@@ -124,7 +124,7 @@
 
 .buscador-input-container input {
   width: 100%;
-  padding: 10px 42px 10px 40px;
+  padding: 5px 42px 5px 40px;
   border-radius: 25px;
   border: 1.5px solid var(--panel-border, #ccc);
   background: #ffffff !important;
@@ -185,16 +185,18 @@
 }
 
 @media (min-width: 384px) {.lista-scroll {max-height: 196px;}}
-@media (min-width: 768px) {.lista-scroll {max-height: 340px;}}
+@media (min-width: 411px) {.lista-scroll {max-height: 340px;}}
+@media (min-width: 768px) {.lista-scroll {max-height: 250px;}}
+@media (min-width: 992px) {.lista-scroll {max-height: 292px;}}
 
 
 .item-canto {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 14px;
+  padding: 6px 14px;
   border-radius: 0px;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   background: var(--panel-bg, #ffffff);
   border: 1px solid rgba(0, 0, 0, 0.04);
   cursor: pointer;
@@ -792,4 +794,4 @@
   color: #334155;
   border-color: #cbd5e1;
   transform: scale(1.1);
-}
+}

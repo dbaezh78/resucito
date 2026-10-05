@@ -9,8 +9,8 @@
   background: var(--panel-bg, #ffffff);
   border: 1px solid var(--panel-border, #e0e0e0);
   border-radius: 16px;
-  padding: 14px 20px;
-  margin-bottom: 20px;
+  padding: 4px 20px;
+  margin-bottom: 5px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
