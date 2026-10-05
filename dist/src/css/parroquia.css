@@ -9,8 +9,8 @@
   background: var(--panel-bg, #ffffff);
   border: 1px solid var(--panel-border, #e0e0e0);
   border-radius: 16px;
-  padding: 14px 20px;
-  margin-bottom: 20px;
+  padding: 4px 20px;
+  margin-bottom: 5px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
@@ -445,9 +445,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 0;
+  padding: 4px 0;
   font-size: 0.88rem;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+  gap: 10px;
 }
 
 .prep-canto-item-view:last-child {
@@ -458,6 +459,25 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 8px;
+  transition: background 0.15s ease, transform 0.1s ease;
+  user-select: none;
+}
+
+.prep-canto-left:hover {
+  background: rgba(208, 18, 18, 0.06);
+}
+
+.prep-canto-left:active {
+  transform: scale(0.99);
+}
+
+.prep-canto-left:hover .link-canto-lista {
+  color: var(--accent-color, #d01212);
 }
 
 .prep-cantor-pill {
@@ -470,6 +490,18 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  transition: transform 0.1s ease, background 0.15s ease;
+}
+
+.prep-cantor-pill.interactivo:hover {
+  background: #ddd6fe;
+  box-shadow: 0 1px 3px rgba(109, 40, 217, 0.2);
+}
+
+.lbl-sin-cantor {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted, #777);
 }
 
 /* Modales */
@@ -767,3 +799,264 @@
 }
 
 
+.xbuscar {
+  width: 100%; 
+  background: #ffffff !important;
+  box-sizing: border-box;
+  border: 1.5px solid var(--panel-border, #ccc);
+  border-radius: 25px;
+  color: #212529 !important;
+  font-size: 1.0rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  padding: 10px 25px 10px 25px;
+}
+
+/* === BOTONES GRABAR Y CANCELAR EN 25% DE ANCHO UNO AL LADO DEL OTRO (IMAGEN 1) === */
+.prep-form-actions-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  width: 100%;
+}
+
+.btn-prep-grabar,
+.btn-prep-cancelar {
+  width: 25% !important;
+  min-width: 140px;
+  box-sizing: border-box;
+  padding: 10px 14px !important;
+  font-size: 0.9rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  border-radius: 6px !important;
+  text-align: center;
+}
+
+.btn-prep-cancelar {
+  background: #e5e7eb !important;
+  color: #374151 !important;
+  border: 1px solid #d1d5db !important;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-prep-cancelar:hover {
+  background: #d1d5db !important;
+  color: #111827 !important;
+}
+
+/* === LISTA SCROLL RESIZABLE SOLO VERTICALMENTE (FLECHA VERDE / MAX-HEIGHT 192px) === */
+.lista-scroll-parroquia {
+  max-height: 400px !important;
+  resize: vertical !important;
+  overflow-y: auto !important;
+  min-height: 120px;
+}
+
+@media (min-width: 384px){.lista-scroll-parroquia {max-height: 150px !important;min-height: 120px;}}
+@media (min-width: 411px){.lista-scroll-parroquia {max-height: 200px !important;min-height: 120px;}}
+@media (min-width: 768px){.lista-scroll-parroquia {max-height: 280px !important;min-height: 120px;}}
+@media (min-width: 992px){.lista-scroll-parroquia {max-height: 400px !important;min-height: 130px;}}
+
+
+/* === FILAS CON BANDAS (ZEBRA STRIPING / IMAGEN 5) === */
+#contenedor-seleccion-parroquia .item-canto:nth-child(even) {
+  background: rgba(0, 0, 0, 0.025) !important;
+}
+
+#contenedor-seleccion-parroquia .item-canto:nth-child(odd) {
+  background: var(--panel-bg, #ffffff) !important;
+}
+
+#contenedor-seleccion-parroquia .item-canto:hover {
+  background: rgba(208, 18, 18, 0.06) !important;
+}
+
+.prep-cantos-detalle .prep-canto-item-view:nth-child(even) {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.prep-cantos-detalle .prep-canto-item-view:nth-child(odd) {
+  background: transparent;
+}
+
+.prep-canto-item-view {
+  padding: 8px 10px !important;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.prep-canto-item-view:hover {
+  background: rgba(208, 18, 18, 0.04) !important;
+}
+
+/* === CIRCULO ROJO CON TEXTO BLANCO PARA E, P, L, C, F Y NÚMEROS (IMAGEN 4) === */
+.badge-posicion-circulo {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  background: #d01212;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.76rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(208, 18, 18, 0.35);
+  font-family: 'Franklin Gothic Medium', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Enlaces a los cantos desde la lista */
+.link-canto-lista {
+  color: var(--text-color, #111827);
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.15s ease;
+  font-size: 1.05rem; /* Tamaño para tablet y PC */
+}
+
+.link-canto-lista:hover {
+  color: var(--accent-color, #d01212);
+  text-decoration: none;
+}
+
+/* Botón rápido o lápiz para asignar cantor */
+.btn-asignar-cantor-inline {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.15s ease, color 0.15s ease;
+  color: var(--text-muted, #6b7280);
+}
+
+.btn-asignar-cantor-inline:hover {
+  background: rgba(208, 18, 18, 0.08);
+  color: var(--accent-color, #d01212);
+}
+
+/* === RESPONSIVE: CELULAR (411px o menos) LETRA UN POCO MÁS PEQUEÑA (IMAGEN 2) === */
+@media (max-width: 411px) {
+  .link-canto-lista {
+    font-size: 0.88rem !important;
+  }
+  .prep-canto-left {
+    gap: 6px !important;
+  }
+  .badge-posicion-circulo {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    font-size: 0.7rem !important;
+  }
+  .btn-asignar-cantor-inline {
+    font-size: 0.78rem !important;
+    padding: 2px 4px !important;
+  }
+  .prep-cantor-pill {
+    font-size: 0.74rem !important;
+    padding: 2px 6px !important;
+  }
+  .lbl-sin-cantor {
+    font-size: 0.76rem !important;
+  }
+  .prep-canto-item-view {
+    padding: 6px 4px !important;
+    font-size: 0.82rem !important;
+  }
+}
+
+.badge-asistente {
+  background: #fef08a;
+  color: #854d0e;
+  border: 1px solid #fde047;
+}
+
+/* Select / Input inline para asignación directa de cantor en la fila */
+.select-cantor-inline-directo {
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1.5px solid var(--accent-color, #d01212);
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: var(--text-color, #111827);
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(208, 18, 18, 0.15);
+  max-width: 170px;
+}
+
+.input-cantor-inline-directo {
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1.5px solid var(--accent-color, #d01212);
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: var(--text-color, #111827);
+  outline: none;
+  max-width: 150px;
+}
+
+.btn-guardar-inline-cantor {
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 3px 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.btn-guardar-inline-cantor:hover {
+  background: #15803d;
+}
+
+.btn-cancelar-inline-cantor {
+  background: transparent;
+  color: var(--text-muted, #6b7280);
+  border: none;
+  border-radius: 6px;
+  padding: 3px 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+
+.btn-cancelar-inline-cantor:hover {
+  color: #ef4444;
+}
+
+@media (max-width: 411px) {
+  .select-cantor-inline-directo {
+    font-size: 0.78rem !important;
+    max-width: 130px !important;
+    padding: 2px 4px !important;
+  }
+  .input-cantor-inline-directo {
+    font-size: 0.78rem !important;
+    max-width: 110px !important;
+    padding: 2px 4px !important;
+  }
+}

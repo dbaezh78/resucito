@@ -187,7 +187,7 @@
 @media (min-width: 384px) {.lista-scroll {max-height: 196px;}}
 @media (min-width: 411px) {.lista-scroll {max-height: 340px;}}
 @media (min-width: 768px) {.lista-scroll {max-height: 250px;}}
-@media (min-width: 992px) {.lista-scroll {max-height: 292px;}}
+@media (min-width: 992px) {.lista-scroll {max-height: 400px;}}
 
 
 .item-canto {

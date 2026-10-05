@@ -46,7 +46,7 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 
-// Configurar e inicializar Firestore con caché persistente (habilitando uso sin conexión)
+// Configurar e inicializar Firestore con caché persistente y recuperación ante caché dañada
 let dbTemp;
 try {
   dbTemp = initializeFirestore(app, {
@@ -56,8 +56,12 @@ try {
   });
   console.log("🔥 Firestore offline persistence enabled.");
 } catch (e) {
-  console.warn("Failed to initialize Firestore with persistent cache, falling back:", e);
-  dbTemp = getFirestore(app);
+  console.warn("Failed to initialize Firestore with persistent cache, falling back to default:", e);
+  try {
+    dbTemp = getFirestore(app);
+  } catch(err2) {
+    console.error("Critical Firestore init error:", err2);
+  }
 }
 
 export const db = dbTemp;

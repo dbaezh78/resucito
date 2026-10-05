@@ -398,6 +398,14 @@ import { hasPermission } from './accesscontrol.js';
       messageEl.innerText = mensaje;
       iconEl.innerText = icono;
 
+      if (icono === 'sync') {
+        iconEl.classList.add('spin-icon');
+        iconEl.style.animation = 'spin 1.5s linear infinite';
+      } else {
+        iconEl.classList.remove('spin-icon');
+        iconEl.style.animation = 'none';
+      }
+
       if (fillEl) {
         if (typeof porcentaje === 'number') {
           fillEl.style.animation = 'none';
@@ -712,7 +720,7 @@ import { hasPermission } from './accesscontrol.js';
             window.mostrarProgreso({
               titulo: 'Actualizando Sistema',
               mensaje: `Descargando: ${archivo} (${completados}/${total})`,
-              icono: 'download',
+              icono: 'sync',
               porcentaje: pct
             });
 
@@ -724,7 +732,7 @@ import { hasPermission } from './accesscontrol.js';
             window.mostrarProgreso({
               titulo: 'Sincronizando Todo el Cancionero',
               mensaje: 'Analizando y descargando todos los recursos faltantes...',
-              icono: 'cloud_sync',
+              icono: 'sync',
               porcentaje: 35
             });
 
@@ -734,7 +742,7 @@ import { hasPermission } from './accesscontrol.js';
                 window.mostrarProgreso({
                   titulo: 'Descargando Recursos Faltantes',
                   mensaje: `${prog.status || ''} (${prog.current || 0}/${prog.total || 0})`,
-                  icono: 'download',
+                  icono: 'sync',
                   porcentaje: globalPct
                 });
               });

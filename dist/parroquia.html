@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Cantos Eucaristía - Preparación de Eucaristías - Resucitó</title>
-  <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/parroquia-FVfjm5sA.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/preload-helper-NIwTN0me.js">
-  <link rel="modulepreload" crossorigin href="./assets/songs-data-DMudPMhN.js">
-  <link rel="modulepreload" crossorigin href="./assets/navegador-C8ltCokL.js">
-  <link rel="stylesheet" crossorigin href="./assets/parroquia-CmakBl2i.css">
-  <link rel="stylesheet" crossorigin href="./assets/expancion-BjQ0Yl74.css">
+  <script type="module" crossorigin src="./assets/parroquia-B8zRhfS2.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/preload-helper-DsiLuOB8.js">
+  <link rel="modulepreload" crossorigin href="./assets/songs-data-BjOYZCsz.js">
+  <link rel="modulepreload" crossorigin href="./assets/navegador-oIdCJX7A.js">
+  <link rel="stylesheet" crossorigin href="./assets/parroquia-zc-dNagJ.css">
+  <link rel="stylesheet" crossorigin href="./assets/expancion-ByfdLdvy.css">
   <link rel="stylesheet" crossorigin href="./assets/perfil-DTrVksNE.css">
-  <link rel="stylesheet" crossorigin href="./assets/preparar-CbwLyR1u.css">
+  <link rel="stylesheet" crossorigin href="./assets/preparar-Ck9Nfx66.css">
 </head>
 <body>
 
@@ -190,38 +190,43 @@
         </div>
 
         <div id="content-prep-form" class="section-content">
-          <!-- Selector de Momentos Litúrgicos (Arriba) -->
-          <label style="font-weight: 700; font-size: 0.85rem; margin-bottom: 6px; display: block; color: var(--text-muted, #666);">
-            Momento Litúrgico para Selección:
-          </label>
-          <div class="selector-momentos" id="contenedor-momentos-parroquia" style="margin-bottom: 12px;">
-            <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Entrada')">
-              <span class="material-symbols-outlined" style="font-size: 18px;">login</span> Entrada (E)
+          <!-- Cabecera de Formulario: Nombre a la izquierda y Momento a la derecha (Imagen 1) -->
+          <div class="prep-form-header-row" style="display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; margin-bottom: 14px;">
+            <!-- Nombre de la Preparación (Izquierda) -->
+            <div style="flex: 1; min-width: 220px; max-width: 320px;">
+              <label style="font-weight: 700; font-size: 0.82rem; margin-bottom: 4px; display: block; color: var(--text-color, #374151);">
+                Nombre de la Eucaristia:
+              </label>
+              <input type="text" id="prep-nombre" placeholder="Ej. TO.S27, Pascua Vigilia..." class="xbuscar">
+              <input type="hidden" id="prep-fecha" value="">
             </div>
-            <div class="opcion-momento active" onclick="window.setMomentoParroquia(this, 'Libre')">
-              <span class="material-symbols-outlined" style="font-size: 18px;">format_list_numbered</span> 1, 2, 3... (Libre)
-            </div>
-            <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Paz')">
-              <span class="material-symbols-outlined" style="font-size: 18px;">handshake</span> Paz (P)
-            </div>
-            <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Liturgia')">
-              <span class="material-symbols-outlined" style="font-size: 18px;">menu_book</span> Liturgia (L)
-            </div>
-            <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Comunión')">
-              <span class="material-symbols-outlined" style="font-size: 18px;">restaurant</span> Comunión (C)
-            </div>
-            <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Final')">
-              <span class="material-symbols-outlined" style="font-size: 18px;">logout</span> Final (F)
-            </div>
-          </div>
 
-          <!-- Nombre de la Preparación (Más pequeño, sin fecha visible) -->
-          <div style="margin-bottom: 14px; max-width: 280px;">
-            <label style="font-weight: 700; font-size: 0.82rem; margin-bottom: 4px; display: block; color: var(--text-color, #374151);">
-              Nombre de la Preparación:
-            </label>
-            <input type="text" id="prep-nombre" placeholder="Ej. TO.S27, Pascua Vigilia..." style="width: 100%; box-sizing: border-box; padding: 7px 12px; font-size: 0.88rem; border-radius: 8px;">
-            <input type="hidden" id="prep-fecha" value="">
+            <!-- Selector de Momentos Litúrgicos (Derecha) -->
+            <div style="flex: 2; min-width: 280px;">
+              <label style="font-weight: 700; font-size: 0.82rem; margin-bottom: 4px; display: block; color: var(--text-muted, #666);">
+                Momento Litúrgico para Selección:
+              </label>
+              <div class="selector-momentos" id="contenedor-momentos-parroquia" style="margin-bottom: 0; justify-content: flex-start;">
+                <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Entrada')">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">login</span> Entrada (E)
+                </div>
+                <div class="opcion-momento active" onclick="window.setMomentoParroquia(this, 'Libre')">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">format_list_numbered</span> 1,2,3
+                </div>
+                <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Paz')">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">handshake</span> Paz (P)
+                </div>
+                <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Liturgia')">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">menu_book</span> Liturgico (L)
+                </div>
+                <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Comunión')">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">restaurant</span> Comunión (C)
+                </div>
+                <div class="opcion-momento" onclick="window.setMomentoParroquia(this, 'Final')">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">logout</span> Final (F)
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Buscador de Cantos en Vivo -->
@@ -231,8 +236,8 @@
             <span id="btnLimpiarCantosParroquia" class="material-symbols-outlined close-icon" onclick="window.limpiarBuscadorSeleccionParroquia()" style="display: none;">close</span>
           </div>
 
-          <!-- Contenedor con Scroll de Cantos -->
-          <div id="contenedor-seleccion-parroquia" class="lista-scroll">
+          <!-- Contenedor con Scroll de Cantos (Resizable verticalmente con flecha en la esquina) -->
+          <div id="contenedor-seleccion-parroquia" class="lista-scroll lista-scroll-parroquia">
             <p style="text-align: center; padding: 20px; color: var(--text-muted);">Cargando catálogo de cantos...</p>
           </div>
 
@@ -249,13 +254,13 @@
             <span id="contador-seleccion-parroquia">0</span> cantos seleccionados
           </div>
 
-          <!-- Botones de Acción -->
-          <div style="display: flex; gap: 12px; justify-content: center; align-items: center; margin-top: 18px; flex-wrap: wrap;">
-            <button class="btn-accion" id="btn-grabar-prep" onclick="window.grabarPreparacion()" style="min-width: 170px;">
+          <!-- Botones de Acción (Ancho 25% uno al lado del otro) -->
+          <div class="prep-form-actions-row" style="display: flex; gap: 12px; justify-content: center; align-items: center; margin-top: 18px;">
+            <button class="btn-accion btn-prep-grabar" id="btn-grabar-prep" onclick="window.grabarPreparacion()">
               <span class="material-symbols-outlined">save</span>
               Grabar Preparación
             </button>
-            <button class="btn-cancelar-lista btn-db-cancel" id="btn-cancelar-prep" onclick="window.cancelarEdicionPreparacion()">
+            <button class="btn-cancelar-lista btn-db-cancel btn-prep-cancelar" id="btn-cancelar-prep" onclick="window.cancelarEdicionPreparacion()">
               <span class="material-symbols-outlined">close</span>
               Cancelar
             </button>
@@ -305,7 +310,7 @@
             <span class="material-symbols-outlined arrow-icon" id="arrow-lista-preparaciones">expand_more</span>
             <h2 style="font-size: 1.2rem; margin: 0;">Preparaciones de la Parroquia</h2>
           </div>
-          <span id="contador-preparaciones-badge" class="badge-count">0 preparaciones</span>
+          <span id="contador-preparaciones-badge" class="badge-count">0 listas</span>
         </div>
 
         <div id="content-lista-preparaciones" class="section-content">
@@ -446,9 +451,10 @@
         <div style="margin-bottom: 16px;">
           <label style="font-weight: 700; font-size: 0.82rem; display: block; margin-bottom: 4px;">Rol en la Parroquia:</label>
           <select id="select-nuevo-miembro-rol" style="width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border, #ccc); font-size: 0.95rem; background: #fff;">
-            <option value="cantor">Cantor (puede preparar y asignarse cantos)</option>
+            <option value="cantor">Cantor (puede ver y colaborar)</option>
+            <option value="asistente">Asistente (asistente del encargado de cantos)</option>
+            <option value="encargado">Encargado (responsable de cantos de la parroquia)</option>
             <option value="miembro">Miembro / Asamblea (solo lectura)</option>
-            <option value="encargado">Encargado (administrador de la parroquia)</option>
           </select>
         </div>
 
@@ -556,7 +562,7 @@
 
       <!-- LISTADO DE PARROQUIAS REGISTRADAS -->
       <div style="border-top: 1.5px solid var(--panel-border, #e5e7eb); padding-top: 16px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <div style="justify-content: space-between; align-items: center; margin-bottom: 10px;">
           <h4 style="margin: 0; font-size: 1.05rem; display: flex; align-items: center; gap: 6px;">
             <span class="material-symbols-outlined" style="font-size: 20px; color: var(--accent-color, #d01212);">list_alt</span>
             Parroquias Registradas (<span id="total-parroquias-admin">0</span>)
@@ -614,6 +620,49 @@
     </div>
   </div>
 
+  <!-- MODAL: ASIGNACIÓN RÁPIDA DE CANTOR DESDE LA LISTA (LÁPIZ / SIN CANTOR) -->
+  <div id="modal-asignar-cantor-rapido" class="modal-overlay" style="display: none; z-index: 100050;" onclick="if(event.target === this) this.style.display='none'">
+    <div class="modal-content-card modal-parroquia-box" style="max-width: 440px; text-align: left; padding: 22px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--panel-border, #eee); padding-bottom: 8px;">
+        <h3 style="margin: 0; font-size: 1.15rem; display: flex; align-items: center; gap: 8px;">
+          <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212);">edit</span>
+          Asignar Cantor
+        </h3>
+        <button type="button" class="btn-cancelar-lista" style="background: none; border: none; cursor: pointer; font-size: 20px;" onclick="document.getElementById('modal-asignar-cantor-rapido').style.display='none'">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <div style="margin-bottom: 14px;">
+        <div style="font-size: 0.8rem; color: var(--text-muted, #666); font-weight: 600;">Canto:</div>
+        <div id="modal-rapido-canto-titulo" style="font-size: 1rem; font-weight: 700; color: var(--text-color, #111); margin-top: 2px;"></div>
+        <div id="modal-rapido-prep-info" style="font-size: 0.78rem; color: var(--text-muted, #666); margin-top: 2px;"></div>
+      </div>
+
+      <div style="margin-bottom: 14px;">
+        <label for="select-rapido-cantor" style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 6px;">Seleccionar Cantor de la Parroquia:</label>
+        <select id="select-rapido-cantor" style="width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border, #ccc); font-size: 0.95rem; background: #fff; font-weight: 600;">
+          <option value="">-- Sin cantor --</option>
+        </select>
+      </div>
+
+      <div id="box-rapido-otro-cantor" style="margin-bottom: 18px; display: none;">
+        <label for="input-rapido-otro-cantor" style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 6px;">O escribir nombre del cantor:</label>
+        <input type="text" id="input-rapido-otro-cantor" placeholder="Nombre del cantor..." style="width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--panel-border, #ccc); font-size: 0.95rem;">
+      </div>
+
+      <div style="display: flex; gap: 10px; justify-content: flex-end;">
+        <button type="button" class="btn btn-cancel" style="border-radius: 8px; padding: 8px 16px;" onclick="document.getElementById('modal-asignar-cantor-rapido').style.display='none'">
+          Cancelar
+        </button>
+        <button type="button" class="btn-accion" id="btn-guardar-asignacion-rapida" style="border-radius: 8px; padding: 8px 18px;">
+          <span class="material-symbols-outlined" style="font-size: 18px;">save</span>
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal de Alerta / Advertencia Personalizado -->
   <div id="modal-alerta-parroquia" class="modal-overlay" style="display: none; z-index: 100099;" onclick="if(event.target === this) this.style.display='none'">
     <div class="modal-content-card" style="max-width: 380px; width: 90%; padding: 28px 24px; border-radius: 24px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); background: var(--panel-bg, #ffffff);">
@@ -629,6 +678,6 @@
     </div>
   </div>
 
-  <!-- MÓDULOS DE SCRIPTS -->
+  <!-- MÓDULOS DE SCRIPTS -->
 </body>
 </html>

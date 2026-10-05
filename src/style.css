@@ -2430,6 +2430,27 @@ footer {
   flex-shrink: 0;
 }
 
+.canto-header-cantor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #ede9fe;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+  user-select: none;
+}
+
+body.theme-dark .canto-header-cantor-badge {
+  background: #2e1065;
+  color: #c4b5fd;
+  border-color: #4c1d95;
+}
+
 #modal-playlist-activa-header-info:hover {
   background: var(--accent-color-light, rgba(208, 18, 18, 0.08)) !important;
 }
@@ -2544,6 +2565,66 @@ footer {
 .modal-playlist-item .item-status {
   font-size: 1.1rem;
   color: var(--accent-color, #d01212);
+}
+
+.modal-playlist-badge-cantor {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: #ede9fe;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+body.theme-dark .modal-playlist-badge-cantor {
+  background: #2e1065;
+  color: #c4b5fd;
+  border-color: #4c1d95;
+}
+
+.modal-playlist-badge-sin-cantor {
+  font-size: 0.75rem;
+  color: var(--text-muted, #888);
+  background: rgba(0, 0, 0, 0.04);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-style: italic;
+  margin-left: 6px;
+  flex-shrink: 0;
+}
+
+body.theme-dark .modal-playlist-badge-sin-cantor {
+  background: rgba(255, 255, 255, 0.08);
+  color: #aaa;
+}
+
+.modal-playlist-tipo-banner {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+body.theme-dark .modal-playlist-tipo-banner.banner-eucaristia {
+  background: rgba(208, 18, 18, 0.16) !important;
+}
+
+body.theme-dark .modal-playlist-tipo-banner.banner-sencilla {
+  background: rgba(2, 132, 199, 0.16) !important;
+}
+
+body.theme-dark .badge-tipo-lista.badge-eucaristia {
+  background: rgba(208, 18, 18, 0.25) !important;
+  color: #ff6b6b !important;
+}
+
+body.theme-dark .badge-tipo-lista.badge-sencilla {
+  background: rgba(2, 132, 199, 0.25) !important;
+  color: #38bdf8 !important;
 }
 
 .modal-playlist-badge-tono {

@@ -894,7 +894,13 @@ async function loadSongView(songId) {
     // Sincronizar lista activa desde sessionStorage si existe
     let activeCustomPlaylist = null;
     try {
-      const storedPlaylist = sessionStorage.getItem('resucito_active_playlist');
+      let storedPlaylist = sessionStorage.getItem('resucito_active_playlist');
+      if (!storedPlaylist) {
+        storedPlaylist = localStorage.getItem('resucito_active_playlist_backup');
+        if (storedPlaylist) {
+          sessionStorage.setItem('resucito_active_playlist', storedPlaylist);
+        }
+      }
       if (storedPlaylist) {
         activeCustomPlaylist = JSON.parse(storedPlaylist);
         if (activeCustomPlaylist && Array.isArray(activeCustomPlaylist.ids_cantos)) {
@@ -909,11 +915,12 @@ async function loadSongView(songId) {
             activeCustomPlaylist.ids_cantos.forEach((item, idx) => {
               const cId = (typeof item === 'object' && item !== null) ? item.id : item;
               const tag = (typeof item === 'object' && item !== null) ? (item.tag || item.etiqueta || (idx + 1)) : (idx + 1);
+              const cantor = (typeof item === 'object' && item !== null) ? (item.cantor || '') : '';
               const found = allSongs.find(s => String(s.id) === String(cId));
               if (found) {
-                playlistSongs.push({ ...found, playlistTag: tag });
+                playlistSongs.push({ ...found, playlistTag: tag, cantor });
               } else {
-                playlistSongs.push({ id: String(cId), title: 'Canto ' + cId, playlistTag: tag });
+                playlistSongs.push({ id: String(cId), title: 'Canto ' + cId, playlistTag: tag, cantor });
               }
             });
             activeSongsPlaylist = playlistSongs;
@@ -934,9 +941,33 @@ async function loadSongView(songId) {
       const title = (currentCanto.title || currentCanto.tt || '').toUpperCase();
       const subtitle = currentCanto.subtitle || '';
       
+      let cantorDeEsteCanto = '';
+      if (activeCustomPlaylist && Array.isArray(activeCustomPlaylist.ids_cantos)) {
+        const itemActual = activeCustomPlaylist.ids_cantos.find(item => {
+          const cId = (typeof item === 'object' && item !== null) ? item.id : item;
+          return String(cId) === String(songId);
+        });
+        if (itemActual && typeof itemActual === 'object' && itemActual.cantor) {
+          cantorDeEsteCanto = itemActual.cantor;
+        }
+      }
+
+      const cantorBadgeHtml = cantorDeEsteCanto ? `
+        <div class="canto-header-cantor-badge" title="Cantor asignado: ${cantorDeEsteCanto}">
+          <span class="material-symbols-outlined" style="font-size: 0.88rem;">mic</span>
+          <span>${cantorDeEsteCanto}</span>
+        </div>
+      ` : '';
+
+      const isEucaristia = Boolean(activeCustomPlaylist?.isParroquia || activeCustomPlaylist?.isEucaristia || activeCustomPlaylist?.tipo === 'eucaristia');
+      const playlistIcon = isEucaristia ? 'church' : 'queue_music';
+      const playlistTooltip = isEucaristia 
+        ? `Cantos Eucaristía: ${activeCustomPlaylist.nombre}` 
+        : `Ver cantos de la lista: ${activeCustomPlaylist.nombre}`;
+
       const playlistBadgeHtml = activeCustomPlaylist ? `
-        <div class="canto-header-playlist-badge" id="canto-header-playlist-btn" onclick="window.abrirModalPlaylistActiva()" title="Ver cantos de la lista: ${activeCustomPlaylist.nombre}">
-          <span class="material-symbols-outlined">queue_music</span>
+        <div class="canto-header-playlist-badge ${isEucaristia ? 'playlist-badge-eucaristia' : 'playlist-badge-sencilla'}" id="canto-header-playlist-btn" onclick="window.abrirModalPlaylistActiva()" title="${playlistTooltip}">
+          <span class="material-symbols-outlined">${playlistIcon}</span>
           <span>${activeCustomPlaylist.nombre}</span>
         </div>
       ` : '';
@@ -947,7 +978,10 @@ async function loadSongView(songId) {
         <div class="canto-header-top">
           <div class="canto-header-top-col">
             <div class="canto-header-stage">${stage}</div>
-            ${playlistBadgeHtml}
+            <div style="display: flex; align-items: center; gap: 6px; justify-content: flex-end; flex-wrap: wrap;">
+              ${cantorBadgeHtml}
+              ${playlistBadgeHtml}
+            </div>
           </div>
         </div>
         <div class="canto-header-main">
@@ -6661,7 +6695,7 @@ function setupEventListeners() {
           window.mostrarProgreso({
             titulo: 'Actualizando App',
             mensaje: 'Limpiando caché completa y forzando recarga (Ctrl + Shift + R)...',
-            icono: 'system_update'
+            icono: 'sync'
           });
         }
 
@@ -7260,11 +7294,19 @@ window.abrirModalPlaylistActiva = function() {
   const titulo = document.getElementById('modal-playlist-activa-titulo');
   const sub = document.getElementById('modal-playlist-activa-sub');
   const listaContenedor = document.getElementById('modal-playlist-activa-lista');
+  const headerInfo = document.getElementById('modal-playlist-activa-header-info');
+  const headerIcon = headerInfo ? headerInfo.querySelector('.material-symbols-outlined') : null;
   if (!modal || !listaContenedor) return;
 
   let activeCustomPlaylist = null;
   try {
-    const stored = sessionStorage.getItem('resucito_active_playlist');
+    let stored = sessionStorage.getItem('resucito_active_playlist');
+    if (!stored) {
+      stored = localStorage.getItem('resucito_active_playlist_backup');
+      if (stored) {
+        sessionStorage.setItem('resucito_active_playlist', stored);
+      }
+    }
     if (stored) activeCustomPlaylist = JSON.parse(stored);
   } catch (e) {}
 
@@ -7272,12 +7314,59 @@ window.abrirModalPlaylistActiva = function() {
     return;
   }
 
-  if (titulo) titulo.textContent = activeCustomPlaylist.nombre || 'Lista de Cantos';
-  if (sub) sub.textContent = `${activeCustomPlaylist.categoria ? activeCustomPlaylist.categoria + ' • ' : ''}${activeCustomPlaylist.ids_cantos.length} cantos`;
+  const isEucaristia = Boolean(activeCustomPlaylist.isParroquia || activeCustomPlaylist.isEucaristia || activeCustomPlaylist.tipo === 'eucaristia');
+
+  if (headerIcon) {
+    headerIcon.textContent = isEucaristia ? 'church' : 'queue_music';
+    headerIcon.style.color = isEucaristia ? 'var(--accent-color, #d01212)' : '#0284c7';
+  }
+
+  if (headerInfo) {
+    headerInfo.title = isEucaristia 
+      ? `Ir a Cantos Eucaristía en Parroquia (${activeCustomPlaylist.nombre || ''})` 
+      : `Ver esta lista en Preparar Cantos (${activeCustomPlaylist.nombre || ''})`;
+  }
+
+  if (titulo) {
+    titulo.innerHTML = `
+      <span>${activeCustomPlaylist.nombre || (isEucaristia ? 'Cantos Eucaristía' : 'Lista de Cantos')}</span>
+      <span class="badge-tipo-lista ${isEucaristia ? 'badge-eucaristia' : 'badge-sencilla'}" style="font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 6px; margin-left: 6px; ${isEucaristia ? 'background: rgba(208, 18, 18, 0.12); color: #d01212;' : 'background: rgba(2, 132, 199, 0.12); color: #0284c7;'}">
+        ${isEucaristia ? 'Eucaristía' : 'Celebración Sencilla'}
+      </span>
+    `;
+  }
+
+  if (sub) {
+    if (isEucaristia) {
+      const parr = activeCustomPlaylist.parroquiaNombre ? ` • Parroquia: ${activeCustomPlaylist.parroquiaNombre}` : '';
+      sub.textContent = `Cantos Eucaristía${parr} • ${activeCustomPlaylist.ids_cantos.length} cantos`;
+    } else {
+      sub.textContent = `Celebración Sencilla • ${activeCustomPlaylist.categoria || 'Cantos'} • ${activeCustomPlaylist.ids_cantos.length} cantos`;
+    }
+  }
 
   const currentSongId = currentCanto?.id || '';
 
-  listaContenedor.innerHTML = activeCustomPlaylist.ids_cantos.map((item, idx) => {
+  // Banner diferenciador en la parte superior del listado
+  const bannerDiferenciador = isEucaristia ? `
+    <div class="modal-playlist-tipo-banner banner-eucaristia" style="display: flex; align-items: center; justify-content: space-between; background: rgba(208, 18, 18, 0.08); border-left: 4px solid var(--accent-color, #d01212); padding: 8px 12px; border-radius: 8px; margin-bottom: 8px;">
+      <span style="font-size: 0.82rem; font-weight: 700; color: var(--accent-color, #d01212); display: flex; align-items: center; gap: 6px;">
+        <span class="material-symbols-outlined" style="font-size: 18px;">church</span>
+        Cantos de la Eucaristía
+      </span>
+      <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">${activeCustomPlaylist.parroquiaNombre || 'Parroquia'}</span>
+    </div>
+  ` : `
+    <div class="modal-playlist-tipo-banner banner-sencilla" style="display: flex; align-items: center; justify-content: space-between; background: rgba(2, 132, 199, 0.08); border-left: 4px solid #0284c7; padding: 8px 12px; border-radius: 8px; margin-bottom: 8px;">
+      <span style="font-size: 0.82rem; font-weight: 700; color: #0284c7; display: flex; align-items: center; gap: 6px;">
+        <span class="material-symbols-outlined" style="font-size: 18px;">queue_music</span>
+        Celebración Sencilla
+      </span>
+      <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">${activeCustomPlaylist.categoria || 'Preparación Personal'}</span>
+    </div>
+  `;
+
+  const itemsHtml = activeCustomPlaylist.ids_cantos.map((item, idx) => {
     const cId = (typeof item === 'object' && item !== null) ? String(item.id) : String(item);
     const tag = (typeof item === 'object' && item !== null) ? (item.tag || item.etiqueta || (idx + 1)) : (idx + 1);
     const songMeta = allSongs.find(s => String(s.id) === cId);
@@ -7286,6 +7375,13 @@ window.abrirModalPlaylistActiva = function() {
 
     let metaBadges = '';
     if (typeof item === 'object' && item !== null) {
+      if (isEucaristia) {
+        if (item.cantor) {
+          metaBadges += `<span class="modal-playlist-badge-cantor" title="Cantor asignado: ${item.cantor}"><span class="material-symbols-outlined" style="font-size: 14px;">mic</span>${item.cantor}</span>`;
+        } else {
+          metaBadges += `<span class="modal-playlist-badge-sin-cantor">Sin cantor</span>`;
+        }
+      }
       if (item.tono) {
         metaBadges += `<span class="modal-playlist-badge-tono">${item.tono}</span>`;
       }
@@ -7297,9 +7393,13 @@ window.abrirModalPlaylistActiva = function() {
       }
     }
 
+    const tagStyle = isEucaristia 
+      ? 'border-radius: 50%; width: 28px; height: 28px; background: var(--accent-color, #d01212); color: #fff; font-weight: 800;' 
+      : 'border-radius: 8px; width: 28px; height: 28px; background: #0284c7; color: #fff; font-weight: 800;';
+
     return `
-      <div class="modal-playlist-item ${esActivo ? 'active' : ''}" onclick="window.seleccionarCantoDesdeModalPlaylist('${cId}')">
-        <span class="item-tag">${tag}</span>
+      <div class="modal-playlist-item ${esActivo ? 'active' : ''} ${isEucaristia ? 'item-eucaristia' : 'item-sencilla'}" onclick="window.seleccionarCantoDesdeModalPlaylist('${cId}')">
+        <span class="item-tag" style="${tagStyle}">${tag}</span>
         <span class="item-title" style="flex-grow: 1;">${nombreCanto}</span>
         ${metaBadges}
         ${esActivo ? '<span class="material-symbols-outlined item-status" style="margin-left: 8px;">play_circle</span>' : ''}
@@ -7307,6 +7407,7 @@ window.abrirModalPlaylistActiva = function() {
     `;
   }).join('');
 
+  listaContenedor.innerHTML = bannerDiferenciador + itemsHtml;
   modal.style.display = 'flex';
 };
 
@@ -7323,11 +7424,20 @@ window.seleccionarCantoDesdeModalPlaylist = function(idCanto) {
 window.irAListaEnPreparar = function() {
   let activeCustomPlaylist = null;
   try {
-    const stored = sessionStorage.getItem('resucito_active_playlist');
+    let stored = sessionStorage.getItem('resucito_active_playlist');
+    if (!stored) stored = localStorage.getItem('resucito_active_playlist_backup');
     if (stored) activeCustomPlaylist = JSON.parse(stored);
   } catch (e) {}
 
   window.cerrarModalPlaylistActiva();
+
+  const isEucaristia = Boolean(activeCustomPlaylist?.isParroquia || activeCustomPlaylist?.isEucaristia || activeCustomPlaylist?.tipo === 'eucaristia');
+
+  if (isEucaristia) {
+    const prepId = activeCustomPlaylist?.id ? encodeURIComponent(activeCustomPlaylist.id) : '';
+    window.location.href = `./parroquia.html${prepId ? '?prepId=' + prepId + '#prep-tarjeta-' + prepId : ''}`;
+    return;
+  }
 
   if (activeCustomPlaylist) {
     const cat = encodeURIComponent(activeCustomPlaylist.categoria || '');
@@ -7404,6 +7514,7 @@ function enriquecerCantosLista(cantos) {
     const res = { id, tag, acorde, cejilla };
     if (nota) res.nota = nota;
     if (tono) res.tono = tono;
+    if (typeof item === 'object' && item !== null && item.cantor) res.cantor = item.cantor;
     return res;
   });
 }
@@ -7526,8 +7637,24 @@ window.exportarListaDesdeModal = function() {
 };
 
 window.editarListaDesdeModal = function() {
-  const lista = window.obtenerListaActivaCache();
+  let activeCustomPlaylist = null;
+  try {
+    let stored = sessionStorage.getItem('resucito_active_playlist');
+    if (!stored) stored = localStorage.getItem('resucito_active_playlist_backup');
+    if (stored) activeCustomPlaylist = JSON.parse(stored);
+  } catch (e) {}
+
+  const lista = activeCustomPlaylist || window.obtenerListaActivaCache();
   window.cerrarModalPlaylistActiva();
+
+  const isEucaristia = Boolean(lista?.isParroquia || lista?.isEucaristia || lista?.tipo === 'eucaristia');
+
+  if (isEucaristia) {
+    const prepId = lista?.id ? encodeURIComponent(lista.id) : '';
+    window.location.href = `./parroquia.html?editarPrep=${prepId}`;
+    return;
+  }
+
   if (lista) {
     const cat = encodeURIComponent(lista.categoria || '');
     const listId = encodeURIComponent(lista.id || '');

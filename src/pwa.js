@@ -21,7 +21,7 @@ export function registerServiceWorker() {
                             window.mostrarProgreso({
                                 titulo: 'Actualizando App',
                                 mensaje: 'Instalando la nueva versión en segundo plano...',
-                                icono: 'system_update'
+                                icono: 'sync'
                             });
                         }
                         newWorker.addEventListener('statechange', () => {

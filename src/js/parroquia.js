@@ -119,9 +119,42 @@ export function puedeVerCodigoDeParroquia(parr, user) {
     return false;
 }
 
+// Verificar si un usuario es Encargado o Asistente asignado
+export function esEncargadoOAsistente(parr, user) {
+    if (!user) return false;
+    const email = (user.email || '').toLowerCase().trim();
+    if (email === SUPER_ADMIN_EMAIL) return true;
+    if (!parr) return false;
+
+    // Verificar si es el Cantor Encargado explícito
+    if (parr.cantorEncargadoEmail && parr.cantorEncargadoEmail.toLowerCase().trim() === email) {
+        return true;
+    }
+
+    // Verificar en lista de miembros si tiene rol encargado, admin o asistente
+    if (Array.isArray(parr.miembros)) {
+        const miembro = parr.miembros.find(m => 
+            (m.uid && m.uid === user.uid) || 
+            (m.email && m.email.toLowerCase().trim() === email)
+        );
+        if (miembro && (miembro.rol === 'encargado' || miembro.rol === 'admin' || miembro.rol === 'asistente')) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 function esAdminOEncargado() {
-    if (!usuarioActual || !parroquiaActiva) return false;
-    return puedeVerCodigoDeParroquia(parroquiaActiva, usuarioActual);
+    const user = usuarioActual || auth.currentUser;
+    if (!user || !parroquiaActiva) return false;
+    return puedeVerCodigoDeParroquia(parroquiaActiva, user);
+}
+
+function puedeGestionarPreparacionesYCantores() {
+    const user = usuarioActual || auth.currentUser;
+    if (!user || !parroquiaActiva) return false;
+    return esEncargadoOAsistente(parroquiaActiva, user);
 }
 
 function esMiembroDeParroquia(parr, user) {
@@ -136,16 +169,78 @@ function esMiembroDeParroquia(parr, user) {
 }
 
 function obtenerRolEnParroquia() {
-    if (!usuarioActual) return 'invitado';
-    if (usuarioActual.email?.toLowerCase().trim() === SUPER_ADMIN_EMAIL) return 'encargado';
+    const user = usuarioActual || auth.currentUser;
+    if (!user) return 'invitado';
     if (!parroquiaActiva) return 'invitado';
-    if (parroquiaActiva.cantorEncargadoEmail && parroquiaActiva.cantorEncargadoEmail.toLowerCase().trim() === usuarioActual.email?.toLowerCase().trim()) return 'encargado';
+
+    const email = (user.email || '').toLowerCase().trim();
+
+    // El Administrador General solicitó explícitamente figurar visualmente como 'cantor'
+    // en la parroquia, manteniendo el 100% de los privilegios administrativos en toda la aplicación.
+    if (email === SUPER_ADMIN_EMAIL) {
+        return 'cantor';
+    }
+
+    if (parroquiaActiva.cantorEncargadoEmail && parroquiaActiva.cantorEncargadoEmail.toLowerCase().trim() === email) {
+        return 'encargado';
+    }
+
     const miembro = (parroquiaActiva.miembros || []).find(m => 
-        (m.uid && m.uid === usuarioActual.uid) || 
-        (m.email && m.email.toLowerCase().trim() === usuarioActual.email?.toLowerCase().trim())
+        (m.uid && m.uid === user.uid) || 
+        (m.email && m.email.toLowerCase().trim() === email)
     );
+
     if (miembro && (miembro.rol === 'encargado' || miembro.rol === 'admin')) return 'encargado';
-    return miembro ? (miembro.rol || 'cantor') : 'miembro';
+    if (miembro && miembro.rol === 'asistente') return 'asistente';
+    return miembro ? (miembro.rol || 'cantor') : 'cantor';
+}
+
+// Obtener catálogo unificado de nombres de cantores disponibles en la parroquia activa
+export function obtenerListaNombresCantores() {
+    const cantoresSet = new Set();
+
+    // 1. Cantor encargado registrado en la parroquia
+    if (parroquiaActiva?.cantorEncargadoNombre) {
+        const nom = parroquiaActiva.cantorEncargadoNombre.trim();
+        if (nom) cantoresSet.add(nom);
+    }
+
+    // 2. Miembros registrados de la parroquia
+    if (Array.isArray(parroquiaActiva?.miembros)) {
+        parroquiaActiva.miembros.forEach(m => {
+            const nom = m.displayName || m.nombre || (m.email ? m.email.split('@')[0] : '');
+            if (nom && typeof nom === 'string' && nom.trim()) {
+                cantoresSet.add(nom.trim());
+            }
+        });
+    }
+
+    // 3. Usuario actual en sesión
+    const user = usuarioActual || auth.currentUser;
+    if (user) {
+        const miNombre = user.displayName || (user.email ? user.email.split('@')[0] : '');
+        if (miNombre && typeof miNombre === 'string' && miNombre.trim()) {
+            cantoresSet.add(miNombre.trim());
+        }
+    }
+
+    // 4. Cantores previamente registrados en cualquier preparación de la parroquia
+    if (Array.isArray(preparacionesParroquia)) {
+        preparacionesParroquia.forEach(p => {
+            (p.cantos || []).forEach(c => {
+                if (c && c.cantor && typeof c.cantor === 'string') {
+                    const cTrim = c.cantor.trim();
+                    if (cTrim && cTrim !== 'Sin cantor') {
+                        cantoresSet.add(cTrim);
+                    }
+                }
+            });
+        });
+    }
+
+    const lista = Array.from(cantoresSet).filter(Boolean);
+    lista.sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+    return lista;
 }
 
 // --- GESTIÓN DE VISTAS (NO AUTH / SIN PARROQUIA / PARROQUIA ACTIVA) ---
@@ -504,27 +599,41 @@ function activarParroquia(parr) {
     perfilData.ultimaActualizacion = new Date().toISOString();
     localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
 
-    // Si el usuario está autenticado, sincronizar con Firestore
+    // Si el usuario está autenticado, sincronizar con Firestore protegiendo de fallos de caché IndexedDB
     const user = usuarioActual || getCurrentUser() || auth.currentUser;
-    if (user) {
-        setDoc(doc(db, "usuarios", user.uid, "perfil", "config"), {
-            parroquia: parr.nombre,
-            pais: parr.pais || '',
-            ultimaActualizacion: new Date().toISOString()
-        }, { merge: true }).catch(err => console.warn(err));
+    if (user && db) {
+        try {
+            setDoc(doc(db, "usuarios", user.uid, "perfil", "config"), {
+                parroquia: parr.nombre,
+                pais: parr.pais || '',
+                ultimaActualizacion: new Date().toISOString()
+            }, { merge: true }).catch(err => {
+                console.warn("Aviso al guardar perfil en Firestore:", err?.message || err);
+            });
+        } catch(e) {
+            console.warn("Excepción al preparar setDoc en Firestore:", e);
+        }
     }
 
     // Cancelar escuchas previas si existen
-    if (unsubscribeParroquiaSnap) unsubscribeParroquiaSnap();
-    if (unsubscribePrepsSnap) unsubscribePrepsSnap();
+    if (unsubscribeParroquiaSnap) {
+        try { unsubscribeParroquiaSnap(); } catch(e) {}
+    }
+    if (unsubscribePrepsSnap) {
+        try { unsubscribePrepsSnap(); } catch(e) {}
+    }
 
     // 1. Escuchar cambios de la parroquia en vivo
-    unsubscribeParroquiaSnap = onSnapshot(doc(db, "parroquias", parr.id), (docSnap) => {
-        if (docSnap.exists()) {
-            parroquiaActiva = { id: docSnap.id, ...docSnap.data() };
-            renderizarBarraParroquiaActiva();
-        }
-    }, (err) => console.warn("Error escuchando parroquia:", err));
+    try {
+        unsubscribeParroquiaSnap = onSnapshot(doc(db, "parroquias", parr.id), (docSnap) => {
+            if (docSnap.exists()) {
+                parroquiaActiva = { id: docSnap.id, ...docSnap.data() };
+                renderizarBarraParroquiaActiva();
+            }
+        }, (err) => console.warn("Aviso escuchando parroquia:", err));
+    } catch(errSnap) {
+        console.warn("Excepción al registrar onSnapshot de parroquia:", errSnap);
+    }
 
     // 2. Escuchar preparaciones de la parroquia en vivo
     const qPreps = query(collection(db, "parroquias", parr.id, "preparaciones"), orderBy("fecha", "desc"));
@@ -564,11 +673,18 @@ function renderizarBarraParroquiaActiva() {
     }
 
     const puedeAdministrar = esAdminOEncargado();
+    const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+
     if (btnCodigo) btnCodigo.style.display = puedeAdministrar ? 'inline-flex' : 'none';
     if (btnMiembros) btnMiembros.style.display = puedeAdministrar ? 'inline-flex' : 'none';
 
-    // Badge solicitudes pendientes
-    const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+    // Botón "Parroquias" (Cambiar de parroquia): 
+    // Una vez que el usuario pertenece a una parroquia, ya no es necesario mostrar este botón
+    // ni que vuelva a la pantalla de unirse/código; solo el Super Admin puede alternar libremente entre parroquias
+    const btnCambiarParr = document.getElementById('btn-cambiar-parroquia');
+    if (btnCambiarParr) {
+        btnCambiarParr.style.display = esSuperAdmin ? 'inline-flex' : 'none';
+    }
     let totalPendientes = 0;
     if (esSuperAdmin) {
         todasLasParroquias.forEach(p => {
@@ -590,17 +706,16 @@ function renderizarBarraParroquiaActiva() {
         }
     }
 
-    // Actualizar también banner en vista-sin-parroquia si correspondiera
-    const bannerSinParr = document.getElementById('banner-sin-parroquia-solicitudes');
-    const txtSinParr = document.getElementById('banner-sin-parroquia-texto');
-    if (bannerSinParr) {
-        if (esSuperAdmin && totalPendientes > 0) {
-            bannerSinParr.style.display = 'block';
-            if (txtSinParr) {
-                txtSinParr.innerHTML = `Tienes <b>${totalPendientes}</b> solicitud(es) de acceso pendiente(s) por revisar.`;
-            }
+    // Ocultar o mostrar y contraer por defecto el formulario de Crear o Editar Preparación
+    const wrapperPrep = document.getElementById('wrapper-prep-form');
+    const puedeCrear = puedeGestionarPreparacionesYCantores();
+    if (wrapperPrep) {
+        if (!puedeCrear) {
+            wrapperPrep.style.display = 'none';
         } else {
-            bannerSinParr.style.display = 'none';
+            wrapperPrep.style.display = 'block';
+            // Contraído por defecto (con flecha apuntando a expand_more)
+            window.contraerSeccionPrepForm();
         }
     }
 }
@@ -1829,22 +1944,38 @@ function renderizarPestaniasMiembros() {
         if (listaMiembros.length === 0) {
             contenedorMiem.innerHTML = subtituloMiem + `<p style="text-align: center; color: var(--text-muted); padding: 24px;">No hay miembros registrados aún.</p>`;
         } else {
-            contenedorMiem.innerHTML = subtituloMiem + listaMiembros.map(m => `
-                <div class="miembro-fila">
+            const puedeCambiarRoles = esAdminOEncargado();
+            contenedorMiem.innerHTML = subtituloMiem + listaMiembros.map(m => {
+                const esEncargadoParr = m.rol === 'encargado' || m.rol === 'admin';
+                const badgeClass = esEncargadoParr ? 'badge-encargado' : (m.rol === 'asistente' ? 'badge-asistente' : 'badge-cantor');
+                const badgeLabel = esEncargadoParr ? 'ENCARGADO' : (m.rol === 'asistente' ? 'ASISTENTE' : 'CANTOR');
+
+                return `
+                <div class="miembro-fila" style="background: rgba(0,0,0,0.02); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px;">
                     <div class="miembro-fila-info">
-                        <span class="miembro-fila-nombre">${m.displayName || m.email}</span>
-                        <span class="miembro-fila-email">${m.email}</span>
+                        <span class="miembro-fila-nombre" style="font-size: 0.95rem; font-weight: 700; color: #1e293b;">${m.displayName || m.email}</span>
+                        <span class="miembro-fila-email" style="font-size: 0.8rem; color: #64748b;">${m.email}</span>
                     </div>
                     <div style="display: flex; align-items: center; gap: 8px;">
-                        <span class="parroquia-badge-rol badge-${m.rol || 'cantor'}">${m.rol || 'cantor'}</span>
-                        ${m.email !== usuarioActual?.email ? `
-                            <button class="btn-parroquia-top" style="padding: 4px 8px; color: #b91c1c;" title="Eliminar miembro" onclick="window.eliminarMiembroParroquia('${m.email}', '${parroquiaSeleccionadaActual?.id}')">
+                        ${puedeCambiarRoles && !esEncargadoParr ? `
+                            <select onchange="window.cambiarRolMiembroParroquia('${m.email}', this.value, '${parroquiaSeleccionadaActual?.id}')" style="font-size: 0.78rem; font-weight: 700; padding: 3px 6px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">
+                                <option value="cantor" ${m.rol === 'cantor' || !m.rol ? 'selected' : ''}>CANTOR</option>
+                                <option value="asistente" ${m.rol === 'asistente' ? 'selected' : ''}>ASISTENTE</option>
+                            </select>
+                        ` : `
+                            <span class="parroquia-badge-rol ${badgeClass}" style="letter-spacing: 0.5px; font-weight: 800; padding: 4px 10px; border-radius: 8px;">
+                                ${badgeLabel}
+                            </span>
+                        `}
+                        ${m.email !== usuarioActual?.email && puedeCambiarRoles ? `
+                            <button class="btn-parroquia-top" style="padding: 4px 8px; color: #b91c1c; border-radius: 8px;" title="Eliminar miembro" onclick="window.eliminarMiembroParroquia('${m.email}', '${parroquiaSeleccionadaActual?.id}')">
                                 <span class="material-symbols-outlined" style="font-size: 16px;">delete</span>
                             </button>
                         ` : ''}
                     </div>
                 </div>
-            `).join('');
+            `;
+            }).join('');
         }
     }
 }
@@ -2008,6 +2139,43 @@ window.agregarMiembroDirecto = async () => {
         mostrarToastVerde(`Hermano ${email} agregado como ${rol}`);
     } catch (e) {
         mostrarAlerta("Error agregando miembro: " + e.message, "Error", "error");
+    }
+};
+
+window.cambiarRolMiembroParroquia = async (email, nuevoRol, parroquiaId = null) => {
+    const targetId = parroquiaId || parroquiaActiva?.id;
+    if (!targetId) return;
+
+    const targetParr = todasLasParroquias.find(p => p.id === targetId) || parroquiaActiva;
+    const emailNorm = (email || '').toLowerCase().trim();
+
+    try {
+        const miembrosActualizados = (targetParr.miembros || []).map(m => {
+            if (m.email?.toLowerCase().trim() === emailNorm) {
+                return { ...m, rol: nuevoRol };
+            }
+            return m;
+        });
+
+        await updateDoc(doc(db, "parroquias", targetId), {
+            miembros: miembrosActualizados
+        });
+
+        targetParr.miembros = miembrosActualizados;
+        if (parroquiaActiva && parroquiaActiva.id === targetId) {
+            parroquiaActiva.miembros = miembrosActualizados;
+            renderizarBarraParroquiaActiva();
+        }
+
+        try {
+            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+        } catch(e) {}
+
+        renderizarPestaniasMiembros();
+        mostrarToastVerde(`Rol de ${email} actualizado a ${nuevoRol.toUpperCase()}`);
+    } catch(e) {
+        console.error("Error al actualizar rol:", e);
+        mostrarAlerta("Error al actualizar rol: " + e.message, "Error", "error");
     }
 };
 
@@ -2240,10 +2408,35 @@ window.grabarPreparacion = async () => {
         return;
     }
 
+    // Validación de nombres duplicados en la misma parroquia:
+    // Si ya existe una preparación con el mismo nombre y no es la misma que se está editando,
+    // se le agrega el año actual al final (ej: "TOS27 - 2026")
+    let nombreFinal = nombre;
+    const anioActual = new Date().getFullYear();
+    const yaExisteNombre = preparacionesParroquia.some(p => {
+        if (preparacionActiva && p.id === preparacionActiva.id) return false;
+        return normalizarTexto(p.nombre || '') === normalizarTexto(nombreFinal);
+    });
+
+    if (yaExisteNombre) {
+        if (!nombreFinal.includes(String(anioActual))) {
+            nombreFinal = `${nombreFinal} - ${anioActual}`;
+        } else {
+            let contador = 2;
+            let tempNombre = `${nombreFinal} (${contador})`;
+            while (preparacionesParroquia.some(p => (!preparacionActiva || p.id !== preparacionActiva.id) && normalizarTexto(p.nombre || '') === normalizarTexto(tempNombre))) {
+                contador++;
+                tempNombre = `${nombreFinal} (${contador})`;
+            }
+            nombreFinal = tempNombre;
+        }
+        if (inputNombre) inputNombre.value = nombreFinal;
+    }
+
     const prepId = preparacionActiva ? preparacionActiva.id : `prep_${Date.now()}`;
     const prepData = {
         id: prepId,
-        nombre: nombre,
+        nombre: nombreFinal,
         fecha: fecha,
         cantos: cantosSeleccionados,
         creadorUid: usuarioActual?.uid || 'anonimo',
@@ -2293,9 +2486,8 @@ function renderizarAreaAsignacionCantores() {
     if (lblNombre) lblNombre.textContent = preparacionActiva.nombre;
     box.style.display = 'block';
 
-    // Obtener nombres de cantores / miembros de la parroquia
-    const miembros = parroquiaActiva?.miembros || [];
-    const listaCantores = miembros.map(m => m.displayName || m.email.split('@')[0]);
+    // Obtener nombres de cantores / miembros de la parroquia de forma unificada
+    const listaCantores = obtenerListaNombresCantores();
 
     contenedorFilas.innerHTML = cantosSeleccionados.map((item, index) => {
         const c = todosLosCantos.find(can => String(can.id) === String(item.id));
@@ -2483,17 +2675,28 @@ function renderizarListaPreparaciones(filtro = '') {
     const badgeCount = document.getElementById('contador-preparaciones-badge');
     if (!contenedor) return;
 
+    // Preservar qué listas estaban desplegadas para que no se contraigan al actualizar
+    const abiertas = new Set();
+    document.querySelectorAll('.prep-cantos-detalle').forEach(el => {
+        if (el.style.display === 'block') {
+            const id = el.id.replace('detalle-prep-', '');
+            abiertas.add(String(id));
+        }
+    });
+
     if (!preparacionesParroquia || preparacionesParroquia.length === 0) {
         contenedor.innerHTML = `
             <div style="text-align: center; padding: 32px 16px; color: var(--text-muted, #6b7280);">
                 <span class="material-symbols-outlined" style="font-size: 48px; opacity: 0.4;">playlist_remove</span>
-                <p style="margin: 8px 0 0 0; font-size: 0.95rem;">No hay preparaciones registradas aún en esta parroquia.</p>
+                <p style="margin: 8px 0 0 0; font-size: 0.95rem;">No hay listas de cantos registradas aún en esta parroquia.</p>
+                ${puedeGestionarPreparacionesYCantores() ? `
                 <button class="btn-accion" style="margin-top: 14px;" onclick="window.expandirSeccionPrepForm()">
-                    Crear Primera Preparación
+                    Crear Primera Lista
                 </button>
+                ` : ''}
             </div>
         `;
-        if (badgeCount) badgeCount.textContent = '0 preparaciones';
+        if (badgeCount) badgeCount.textContent = '0 listas';
         return;
     }
 
@@ -2505,12 +2708,16 @@ function renderizarListaPreparaciones(filtro = '') {
         return filtroNorm === '' || n.includes(filtroNorm) || f.includes(filtroNorm) || cantoresStr.includes(filtroNorm);
     });
 
-    if (badgeCount) badgeCount.textContent = `${filtradas.length} ${filtradas.length === 1 ? 'preparación' : 'preparaciones'}`;
+    if (badgeCount) {
+        badgeCount.textContent = `${filtradas.length} ${filtradas.length === 1 ? 'Lista' : 'listas'}`;
+    }
 
     if (filtradas.length === 0) {
-        contenedor.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 20px;">No se encontraron preparaciones con ese filtro.</p>`;
+        contenedor.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 20px;">No se encontraron listas con ese filtro.</p>`;
         return;
     }
+
+    const puedeEditar = puedeGestionarPreparacionesYCantores();
 
     contenedor.innerHTML = filtradas.map(prep => {
         const cantos = prep.cantos || [];
@@ -2518,6 +2725,7 @@ function renderizarListaPreparaciones(filtro = '') {
             .filter(c => c.cantor)
             .map(c => c.cantor);
         const cantoresUnicos = Array.from(new Set(resumenCantores));
+        const estaAbierta = abiertas.has(String(prep.id));
 
         return `
             <div class="prep-tarjeta" id="prep-tarjeta-${prep.id}">
@@ -2536,44 +2744,68 @@ function renderizarListaPreparaciones(filtro = '') {
                     </div>
 
                     <div class="prep-tarjeta-acciones" onclick="event.stopPropagation()">
+                        ${puedeEditar ? `
                         <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Editar y asignar cantores" onclick="window.cargarPreparacionParaEditar('${prep.id}')">
                             <span class="material-symbols-outlined" style="font-size: 16px;">edit</span>
                         </button>
+                        ` : ''}
                         <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Ver en Visor" onclick="window.abrirPreparacionEnVisor('${prep.id}')">
                             <span class="material-symbols-outlined" style="font-size: 16px;">visibility</span>
                         </button>
                         <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Compartir en WhatsApp" onclick="window.compartirPreparacionWhatsApp('${prep.id}')">
                             <span class="material-symbols-outlined" style="font-size: 16px;">share</span>
                         </button>
+                        ${puedeEditar ? `
                         <button class="btn-parroquia-top" style="padding: 6px 10px; color: #b91c1c;" title="Eliminar preparación" onclick="window.eliminarPreparacion('${prep.id}', '${prep.nombre}')">
                             <span class="material-symbols-outlined" style="font-size: 16px;">delete</span>
                         </button>
+                        ` : ''}
                     </div>
                 </div>
 
-                <!-- Detalle desplegable de cantos y cantores asignados -->
-                <div id="detalle-prep-${prep.id}" class="prep-cantos-detalle" style="display: none;">
-                    ${cantos.map(item => {
+                <!-- Detalle desplegable de cantos y cantores asignados (Filas con bandas) -->
+                <div id="detalle-prep-${prep.id}" class="prep-cantos-detalle" style="display: ${estaAbierta ? 'block' : 'none'};">
+                    ${cantos.map((item, idxCanto) => {
                         const c = todosLosCantos.find(can => String(can.id) === String(item.id));
                         const titulo = c ? (c.title || c.titulo) : "Canto Desconocido";
                         const tonoStr = item.tono ? `Tono: ${item.tono}` : '';
                         const cejStr = (item.cejilla && item.cejilla !== "0") ? `Cej. ${item.cejilla}` : '';
                         const meta = [tonoStr, cejStr].filter(Boolean).join(' | ');
 
+                        const safeTitle = (titulo || '').replace(/"/g, '&quot;');
                         return `
                             <div class="prep-canto-item-view">
-                                <div class="prep-canto-left">
-                                    <span class="badge-posicion">${item.etiqueta}</span>
-                                    <strong>${titulo}</strong>
+                                <div class="prep-canto-left" onclick="window.abrirCantoDePreparacionEnVisor('${prep.id}', '${item.id}')" title="Abrir '${safeTitle}' en el visor">
+                                    <span class="badge-posicion-circulo" title="Momento Litúrgico">${item.etiqueta}</span>
+                                    <span class="link-canto-lista">
+                                        ${titulo}
+                                    </span>
                                     ${meta ? `<span style="font-size: 0.8rem; color: #666; margin-left: 4px;">(${meta})</span>` : ''}
                                 </div>
-                                <div>
+                                <div id="canto-cantor-slot-${prep.id}-${idxCanto}" class="prep-canto-cantor-slot" onclick="event.stopPropagation()" style="display: flex; align-items: center; gap: 6px;">
                                     ${item.cantor ? `
-                                        <span class="prep-cantor-pill">
+                                        <span class="prep-cantor-pill ${puedeEditar ? 'interactivo' : ''}" 
+                                              title="${puedeEditar ? 'Doble clic para cambiar cantor' : 'Cantor asignado'}"
+                                              ${puedeEditar ? `ondblclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})"` : ''}
+                                              style="${puedeEditar ? 'cursor: pointer; user-select: none;' : ''}">
                                             <span class="material-symbols-outlined" style="font-size: 14px;">mic</span>
                                             ${item.cantor}
                                         </span>
-                                    ` : `<span style="font-size: 0.78rem; color: var(--text-muted, #999);">Sin cantor</span>`}
+                                        ${puedeEditar ? `
+                                        <button type="button" class="btn-asignar-cantor-inline" title="Cambiar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
+                                            <span class="material-symbols-outlined" style="font-size: 15px;">edit</span>
+                                        </button>
+                                        ` : ''}
+                                    ` : `
+                                        ${puedeEditar ? `
+                                        <button type="button" class="btn-asignar-cantor-inline btn-sin-cantor" title="Clic para asignar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
+                                            <span class="lbl-sin-cantor">Sin cantor</span>
+                                            <span class="material-symbols-outlined" style="font-size: 16px; color: var(--accent-color, #d01212);">edit</span>
+                                        </button>
+                                        ` : `
+                                        <span class="lbl-sin-cantor" style="color: var(--text-muted, #999);">Sin cantor</span>
+                                        `}
+                                    `}
                                 </div>
                             </div>
                         `;
@@ -2582,6 +2814,25 @@ function renderizarListaPreparaciones(filtro = '') {
             </div>
         `;
     }).join('');
+
+    // Atender parámetros de URL (si regresamos de index.html con prepId o editarPrep)
+    setTimeout(() => {
+        try {
+            const urlParams = new URLSearchParams(window.location.search);
+            const editarPrepId = urlParams.get('editarPrep');
+            const prepId = urlParams.get('prepId') || (window.location.hash.startsWith('#prep-tarjeta-') ? window.location.hash.replace('#prep-tarjeta-', '') : null);
+
+            if (editarPrepId) {
+                window.expandirSeccionPrepForm();
+                window.cargarPreparacionParaEditar(editarPrepId);
+            } else if (prepId) {
+                const detalle = document.getElementById(`detalle-prep-${prepId}`);
+                if (detalle) detalle.style.display = 'block';
+                const tarjeta = document.getElementById(`prep-tarjeta-${prepId}`);
+                if (tarjeta) tarjeta.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        } catch(e) {}
+    }, 120);
 }
 
 window.toggleDetallePreparacion = (id) => {
@@ -2637,6 +2888,261 @@ window.cargarPreparacionParaEditar = (prepId) => {
     }
 };
 
+window.renderizarListaPreparaciones = (filtro = '') => renderizarListaPreparaciones(filtro);
+window.renderizarPreparaciones = (filtro = '') => renderizarListaPreparaciones(filtro);
+
+// --- ASIGNACIÓN DE CANTOR DIRECTA INLINE / MODAL (UN CLIC SI ESTÁ VACÍO, DOBLE CLIC SI ESTÁ ASIGNADO) ---
+let prepIdAsignacionRapida = null;
+let indexCantoAsignacionRapida = null;
+
+window.cancelarSelectCantorInline = (prepId, idxCanto) => {
+    const prep = preparacionesParroquia.find(p => String(p.id) === String(prepId));
+    const slot = document.getElementById(`canto-cantor-slot-${prepId}-${idxCanto}`);
+    if (!slot || !prep || !prep.cantos || !prep.cantos[idxCanto]) {
+        renderizarListaPreparaciones();
+        return;
+    }
+    const item = prep.cantos[idxCanto];
+    const puedeEditar = puedeGestionarPreparacionesYCantores();
+
+    slot.innerHTML = item.cantor ? `
+        <span class="prep-cantor-pill ${puedeEditar ? 'interactivo' : ''}" 
+              title="${puedeEditar ? 'Doble clic para cambiar cantor' : 'Cantor asignado'}"
+              ${puedeEditar ? `ondblclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})"` : ''}
+              style="${puedeEditar ? 'cursor: pointer; user-select: none;' : ''}">
+            <span class="material-symbols-outlined" style="font-size: 14px;">mic</span>
+            ${item.cantor}
+        </span>
+        ${puedeEditar ? `
+        <button type="button" class="btn-asignar-cantor-inline" title="Cambiar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
+            <span class="material-symbols-outlined" style="font-size: 15px;">edit</span>
+        </button>
+        ` : ''}
+    ` : `
+        ${puedeEditar ? `
+        <button type="button" class="btn-asignar-cantor-inline btn-sin-cantor" title="Clic para asignar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
+            <span class="lbl-sin-cantor">Sin cantor</span>
+            <span class="material-symbols-outlined" style="font-size: 16px; color: var(--accent-color, #d01212);">edit</span>
+        </button>
+        ` : `
+        <span class="lbl-sin-cantor" style="color: var(--text-muted, #999);">Sin cantor</span>
+        `}
+    `;
+};
+
+window.activarSelectCantorInline = (prepId, idxCanto) => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Solo el Encargado de Cantos de la Parroquia, sus asistentes asignados y el Administrador pueden asignar cantores.", "Acceso Restringido", "lock");
+        return;
+    }
+
+    const prep = preparacionesParroquia.find(p => String(p.id) === String(prepId));
+    if (!prep || !prep.cantos || !prep.cantos[idxCanto]) return;
+
+    const slot = document.getElementById(`canto-cantor-slot-${prepId}-${idxCanto}`);
+    if (!slot) return;
+
+    const itemCanto = prep.cantos[idxCanto];
+    const cantorActual = itemCanto.cantor || '';
+    const listaCantores = obtenerListaNombresCantores();
+
+    slot.innerHTML = `
+        <div style="display: flex; align-items: center; gap: 4px;" onclick="event.stopPropagation();">
+            <select id="inline-sel-cantor-${prepId}-${idxCanto}" 
+                    class="select-cantor-inline-directo"
+                    onchange="window.onCambiarSelectInlineCantor('${prepId}', ${idxCanto}, this.value)">
+                <option value="" ${!cantorActual ? 'selected' : ''}>-- Sin cantor --</option>
+                ${listaCantores.map(c => `
+                    <option value="${c}" ${c === cantorActual ? 'selected' : ''}>${c}</option>
+                `).join('')}
+                <option value="__OTRO__">+ Escribir otro...</option>
+                <option value="__MODAL__">🔍 Más opciones...</option>
+            </select>
+            <button type="button" class="btn-cancelar-inline-cantor" title="Cerrar" onclick="event.stopPropagation(); window.cancelarSelectCantorInline('${prepId}', ${idxCanto});">
+                <span class="material-symbols-outlined" style="font-size: 15px;">close</span>
+            </button>
+        </div>
+    `;
+
+    const selectEl = document.getElementById(`inline-sel-cantor-${prepId}-${idxCanto}`);
+    if (selectEl) {
+        selectEl.focus();
+        try {
+            if (typeof selectEl.showPicker === 'function') {
+                selectEl.showPicker();
+            }
+        } catch(e) {}
+    }
+};
+
+window.onCambiarSelectInlineCantor = async (prepId, idxCanto, valor) => {
+    if (valor === '__MODAL__') {
+        window.abrirModalAsignacionRapida(prepId, idxCanto);
+        return;
+    }
+    if (valor === '__OTRO__') {
+        window.mostrarInputOtroCantorInline(prepId, idxCanto);
+        return;
+    }
+    await window.guardarCantorCantoDirecto(prepId, idxCanto, valor);
+};
+
+window.mostrarInputOtroCantorInline = (prepId, idxCanto) => {
+    const slot = document.getElementById(`canto-cantor-slot-${prepId}-${idxCanto}`);
+    if (!slot) return;
+
+    slot.innerHTML = `
+        <div style="display: flex; align-items: center; gap: 4px;" onclick="event.stopPropagation();">
+            <input type="text" id="inline-inp-otro-${prepId}-${idxCanto}"
+                   class="input-cantor-inline-directo"
+                   placeholder="Nombre del cantor..."
+                   onkeydown="if(event.key==='Enter') window.guardarCantorCantoDirecto('${prepId}', ${idxCanto}, this.value); else if(event.key==='Escape') window.cancelarSelectCantorInline('${prepId}', ${idxCanto});">
+            <button type="button" class="btn-guardar-inline-cantor" title="Guardar"
+                    onclick="event.stopPropagation(); window.guardarCantorCantoDirecto('${prepId}', ${idxCanto}, document.getElementById('inline-inp-otro-${prepId}-${idxCanto}').value);">
+                <span class="material-symbols-outlined" style="font-size: 16px;">check</span>
+            </button>
+            <button type="button" class="btn-cancelar-inline-cantor" title="Cancelar" onclick="event.stopPropagation(); window.cancelarSelectCantorInline('${prepId}', ${idxCanto});">
+                <span class="material-symbols-outlined" style="font-size: 15px;">close</span>
+            </button>
+        </div>
+    `;
+
+    const inp = document.getElementById(`inline-inp-otro-${prepId}-${idxCanto}`);
+    if (inp) inp.focus();
+};
+
+window.guardarCantorCantoDirecto = async (prepId, idxCanto, nuevoCantor) => {
+    nuevoCantor = (nuevoCantor || '').trim();
+    if (!parroquiaActiva) return;
+
+    try {
+        const prepTarget = preparacionesParroquia.find(p => String(p.id) === String(prepId));
+        if (!prepTarget) return;
+
+        const cantosClonados = JSON.parse(JSON.stringify(prepTarget.cantos || []));
+        if (cantosClonados[idxCanto]) {
+            cantosClonados[idxCanto].cantor = nuevoCantor;
+        }
+
+        await updateDoc(doc(db, "parroquias", parroquiaActiva.id, "preparaciones", String(prepId)), {
+            cantos: cantosClonados,
+            actualizado: new Date().toISOString()
+        });
+
+        prepTarget.cantos = cantosClonados;
+        if (preparacionActiva && String(preparacionActiva.id) === String(prepId)) {
+            cantosSeleccionados = JSON.parse(JSON.stringify(cantosClonados));
+            renderizarAreaAsignacionCantores();
+        }
+
+        renderizarListaPreparaciones();
+        mostrarToastVerde(nuevoCantor ? `Cantor asignado: "${nuevoCantor}"` : "Cantor desasignado");
+    } catch(e) {
+        console.error("Error guardando cantor:", e);
+        mostrarAlerta("Error al asignar cantor: " + e.message, "Error", "error");
+        renderizarListaPreparaciones();
+    }
+};
+
+window.abrirModalAsignacionRapida = (prepId, cantoIndex) => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Solo el Encargado de Cantos de la Parroquia, sus asistentes asignados y el Administrador pueden asignar cantores.", "Acceso Restringido", "lock");
+        return;
+    }
+
+    const prep = preparacionesParroquia.find(p => String(p.id) === String(prepId));
+    if (!prep || !prep.cantos || !prep.cantos[cantoIndex]) return;
+
+    prepIdAsignacionRapida = String(prepId);
+    indexCantoAsignacionRapida = cantoIndex;
+
+    const itemCanto = prep.cantos[cantoIndex];
+    const cMeta = todosLosCantos.find(can => String(can.id) === String(itemCanto.id));
+    const titulo = cMeta ? (cMeta.title || cMeta.titulo) : "Canto";
+
+    const modal = document.getElementById('modal-asignar-cantor-rapido');
+    const lblTitulo = document.getElementById('modal-rapido-canto-titulo');
+    const lblPrep = document.getElementById('modal-rapido-prep-info');
+    const select = document.getElementById('select-rapido-cantor');
+    const boxOtro = document.getElementById('box-rapido-otro-cantor');
+    const inputOtro = document.getElementById('input-rapido-otro-cantor');
+
+    if (lblTitulo) lblTitulo.textContent = `[${itemCanto.etiqueta}] ${titulo}`;
+    if (lblPrep) lblPrep.textContent = `Lista: ${prep.nombre} • ${prep.fecha || ''}`;
+
+    // Obtener miembros/cantores de la parroquia usando la función unificada
+    const listaCantores = obtenerListaNombresCantores();
+    const cantorActual = itemCanto.cantor || '';
+    const esPersonalizado = cantorActual && !listaCantores.includes(cantorActual);
+
+    if (select) {
+        select.innerHTML = [
+            `<option value="">-- Sin cantor --</option>`,
+            ...listaCantores.map(cantor => `
+                <option value="${cantor}" ${cantorActual === cantor ? 'selected' : ''}>${cantor}</option>
+            `),
+            `<option value="__OTRO__" ${esPersonalizado ? 'selected' : ''}>+ Escribir otro cantor...</option>`
+        ].join('');
+
+        select.onchange = () => {
+            if (boxOtro) {
+                boxOtro.style.display = (select.value === '__OTRO__') ? 'block' : 'none';
+            }
+            if (select.value === '__OTRO__' && inputOtro) {
+                inputOtro.focus();
+            }
+        };
+    }
+
+    if (boxOtro) {
+        boxOtro.style.display = esPersonalizado ? 'block' : 'none';
+    }
+    if (inputOtro) {
+        inputOtro.value = esPersonalizado ? cantorActual : '';
+    }
+
+    // Botón Guardar asignación rápida
+    const btnGuardar = document.getElementById('btn-guardar-asignacion-rapida');
+    if (btnGuardar) {
+        btnGuardar.onclick = async () => {
+            let nuevoCantor = select ? select.value : '';
+            if (nuevoCantor === '__OTRO__') {
+                nuevoCantor = inputOtro ? inputOtro.value.trim() : '';
+            }
+
+            try {
+                const prepTarget = preparacionesParroquia.find(p => String(p.id) === String(prepIdAsignacionRapida));
+                if (!prepTarget || !parroquiaActiva) return;
+
+                const cantosClonados = JSON.parse(JSON.stringify(prepTarget.cantos || []));
+                if (cantosClonados[indexCantoAsignacionRapida]) {
+                    cantosClonados[indexCantoAsignacionRapida].cantor = nuevoCantor;
+                }
+
+                await updateDoc(doc(db, "parroquias", parroquiaActiva.id, "preparaciones", String(prepIdAsignacionRapida)), {
+                    cantos: cantosClonados,
+                    actualizado: new Date().toISOString()
+                });
+
+                prepTarget.cantos = cantosClonados;
+                if (preparacionActiva && String(preparacionActiva.id) === String(prepIdAsignacionRapida)) {
+                    cantosSeleccionados = JSON.parse(JSON.stringify(cantosClonados));
+                    renderizarAreaAsignacionCantores();
+                }
+
+                renderizarListaPreparaciones();
+                if (modal) modal.style.display = 'none';
+                mostrarToastVerde(`Cantor ${nuevoCantor ? `"${nuevoCantor}"` : 'desasignado'} guardado`);
+            } catch(e) {
+                console.error("Error guardando cantor rápido:", e);
+                mostrarAlerta("Error al asignar cantor: " + e.message, "Error", "error");
+            }
+        };
+    }
+
+    if (modal) modal.style.display = 'flex';
+};
+
 // Eliminar preparación
 window.eliminarPreparacion = async (prepId, nombre) => {
     if (!confirm(`¿Eliminar la preparación "${nombre}"?`)) return;
@@ -2653,31 +3159,64 @@ window.eliminarPreparacion = async (prepId, nombre) => {
     }
 };
 
-// Abrir preparación en Visor
+// Abrir canto específico de una preparación en el Visor
+window.abrirCantoDePreparacionEnVisor = (prepId, cantoId) => {
+    const prep = preparacionesParroquia.find(p => String(p.id) === String(prepId));
+    if (prep && Array.isArray(prep.cantos)) {
+        const enrichedCantos = prep.cantos.map((item, idx) => ({
+            id: String(item.id),
+            etiqueta: item.etiqueta || (idx + 1),
+            tag: item.etiqueta || (idx + 1),
+            cantor: item.cantor || '',
+            tono: item.tono || '',
+            cejilla: item.cejilla || '',
+            acorde: item.acorde || '',
+            nota: item.nota || ''
+        }));
+
+        const playlistObj = {
+            id: prep.id,
+            nombre: prep.nombre || 'Cantos Eucaristía',
+            categoria: 'Eucaristía',
+            tipo: 'eucaristia',
+            ids_cantos: enrichedCantos,
+            isParroquia: true,
+            isEucaristia: true,
+            parroquiaId: parroquiaActiva?.id || '',
+            parroquiaNombre: parroquiaActiva?.nombre || ''
+        };
+
+        try {
+            sessionStorage.setItem('resucito_active_playlist', JSON.stringify(playlistObj));
+            localStorage.setItem('resucito_active_playlist_backup', JSON.stringify(playlistObj));
+            const allowed = enrichedCantos.map(c => String(c.id));
+            sessionStorage.setItem('resucito_shared_allowed_songs', JSON.stringify(allowed));
+        } catch(e) {
+            console.warn("Error guardando active_playlist:", e);
+        }
+    }
+    window.location.href = `./index.html#canto=${cantoId}`;
+};
+
+// Abrir preparación completa en Visor (iniciando en el primer canto)
 window.abrirPreparacionEnVisor = (prepId) => {
-    const prep = preparacionesParroquia.find(p => p.id === prepId);
+    const prep = preparacionesParroquia.find(p => String(p.id) === String(prepId));
     if (!prep || !prep.cantos || prep.cantos.length === 0) return;
 
-    try {
-        sessionStorage.setItem('resucito_active_playlist', JSON.stringify({
-            id: prep.id,
-            nombre: `🕊️ ${prep.nombre} (${parroquiaActiva?.nombre || 'Parroquia'})`,
-            categoria: 'Eucaristía',
-            ids_cantos: prep.cantos,
-            isParroquia: true
-        }));
-        const allowed = prep.cantos.map(c => String(c.id));
-        sessionStorage.setItem('resucito_shared_allowed_songs', JSON.stringify(allowed));
-
-        const primerCantoId = prep.cantos[0].id;
-        window.location.href = `./index.html#canto=${primerCantoId}`;
-    } catch (e) {
-        console.error("Error abriendo visor:", e);
-    }
+    window.abrirCantoDePreparacionEnVisor(prep.id, prep.cantos[0].id);
 };
 
 window.abrirCantoEnVisor = (cantoId) => {
-    window.location.href = `./index.html#canto=${cantoId}`;
+    if (preparacionActiva && Array.isArray(preparacionActiva.cantos)) {
+        window.abrirCantoDePreparacionEnVisor(preparacionActiva.id, cantoId);
+    } else {
+        const prepFound = preparacionesParroquia.find(p => (p.cantos || []).some(c => String(c.id) === String(cantoId)));
+        if (prepFound) {
+            window.abrirCantoDePreparacionEnVisor(prepFound.id, cantoId);
+        } else {
+            window.location.href = `./index.html#canto=${cantoId}`;
+        }
+    }
 };
 
 // Compartir preparación por WhatsApp
@@ -2708,6 +3247,11 @@ window.compartirPreparacionWhatsApp = (prepId) => {
 
 // --- UTILIDADES DE INTERFAZ Y COLAPSO ---
 window.toggleSectionParroquia = (contentId, wrapperId) => {
+    if (wrapperId === 'wrapper-prep-form' && !puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Solo el Encargado de Cantos de la Parroquia, sus asistentes asignados y el Administrador pueden crear o editar preparaciones.", "Acceso Restringido", "lock");
+        return;
+    }
+
     const content = document.getElementById(contentId);
     const wrapper = document.getElementById(wrapperId);
     if (content && wrapper) {
@@ -2725,10 +3269,17 @@ window.toggleSectionParroquia = (contentId, wrapperId) => {
 };
 
 window.expandirSeccionPrepForm = () => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Solo el Encargado de Cantos de la Parroquia, sus asistentes asignados y el Administrador pueden crear o editar preparaciones.", "Acceso Restringido", "lock");
+        return;
+    }
     const content = document.getElementById('content-prep-form');
     const wrapper = document.getElementById('wrapper-prep-form');
     if (content) content.classList.remove('cfg-close');
-    if (wrapper) wrapper.classList.remove('collapsed');
+    if (wrapper) {
+        wrapper.style.display = 'block';
+        wrapper.classList.remove('collapsed');
+    }
     const arrow = document.getElementById('arrow-prep-form');
     if (arrow) arrow.textContent = 'expand_less';
 };

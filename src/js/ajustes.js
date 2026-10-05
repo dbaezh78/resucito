@@ -2109,7 +2109,7 @@ window.initAjustes = async function() {
             window.mostrarProgreso({
               titulo: 'Actualizando App',
               mensaje: 'Limpiando caché completa y forzando recarga...',
-              icono: 'system_update'
+              icono: 'sync'
             });
           }
 
