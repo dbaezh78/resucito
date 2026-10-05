@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v348'; // v2.1.18 datosparroquia.html con sector, pais, encargado y selector en perfil
+const CACHE_NAME = 'resucito-cache-v349'; // v2.1.19 Formulario Parroquia en menú Resucitó y corrección de auth listener
 const STATIC_ASSETS = [
   './',
   'index.html',

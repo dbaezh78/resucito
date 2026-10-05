@@ -1,12 +1,11 @@
 {
-  "latestVersion": "2.1.18",
+  "latestVersion": "2.1.19",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.18)",
-  "updateMessage": "Formulario dedicado datosparroquia.html y selector de Parroquias integrado en Perfil.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.19)",
+  "updateMessage": "Acceso a Formulario Parroquia en el menú Resucitó y optimizaciones de conexión.",
   "releaseNotes": [
-    "Nuevo formulario independiente datosparroquia.html con País (RD primero + buscador), Parroquia, Sector/Distrito/Barrio (obligatorio), Dirección, Párroco y Cantor Encargado.",
-    "Campo Parroquia en Perfil convertido en selector con detección de parroquias existentes y opción para crear.",
-    "Importación masiva de parroquias desde CSV y plantilla descargable con soporte de Sector.",
-    "Generación automática de códigos de acceso de 16 caracteres y sincronización con Firestore."
+    "Enlace directo 'Formulario Parroquia' agregado debajo de Parroquia en el menú principal Resucitó.",
+    "Corrección en el listener de estado de autenticación (auth listener) para mayor estabilidad.",
+    "Reglas de seguridad de Firestore optimizadas para acceso a la colección de parroquias."
   ]
 }

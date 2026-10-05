@@ -36,16 +36,30 @@ export function isCurrentUserAdmin() {
   return ADMIN_EMAILS.includes(currentUser.email.toLowerCase().trim());
 }
 
-export function onAuthStateChanged(callback) {
+export function onAuthStateChanged(authOrCallback, maybeCallback) {
+  const callback = typeof authOrCallback === 'function' ? authOrCallback : maybeCallback;
+  if (typeof callback !== 'function') return;
   authStateListeners.push(callback);
   // Si auth ya fue inicializado, llamar inmediatamente con el estado actual
   if (authInitialized) {
-    callback(currentUser);
+    try {
+      callback(currentUser);
+    } catch (e) {
+      console.warn("Error en auth listener callback:", e);
+    }
   }
 }
 
 function notifyListeners() {
-  authStateListeners.forEach(callback => callback(currentUser));
+  authStateListeners.forEach(callback => {
+    if (typeof callback === 'function') {
+      try {
+        callback(currentUser);
+      } catch (e) {
+        console.warn("Error notificando auth listener:", e);
+      }
+    }
+  });
 }
 
 // Iniciar sesión real con Google Popup

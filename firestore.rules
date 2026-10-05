@@ -23,9 +23,10 @@ service cloud.firestore {
       allow write: if request.auth != null && request.auth.token.email == 'dbaezh78@gmail.com';
     }
 
-    // 4. Colección de usuarios registrados para Control de Acceso
+    // 4. Colección de usuarios registrados para Control de Acceso (Lectura pública para selectores, escritura para autenticados)
     match /registered_users/{userDoc} {
-      allow read, write: if request.auth != null;
+      allow read: if true;
+      allow write: if request.auth != null;
     }
 
     // 5. Configuración de permisos y grupos del sistema (Lectura PÚBLICA para Invitados, escritura para Administrador/Autenticado)
@@ -83,15 +84,26 @@ service cloud.firestore {
       allow read, write: if true; // o if request.auth != null;
     }
 
-    // 13. Colección de PARROQUIAS y Preparaciones de Eucaristía
+    // 12. Colección de PARROQUIAS y Preparaciones de Eucaristía
+    // - Lectura pública (para selector en perfil y vistas compartidas)
+    // - Creación y edición para usuarios autenticados
+    // - Eliminación para creador o Administrador Principal
     match /parroquias/{parroquiaId} {
-      allow read, write: if request.auth != null;
+      allow read: if true;
+      allow create, update: if request.auth != null;
+      allow delete: if request.auth != null && (
+        request.auth.token.email == 'dbaezh78@gmail.com' ||
+        (resource != null && resource.data.creadorUid == request.auth.uid)
+      );
+
+      // Subcolecciones de parroquia (preparaciones, miembros, avisos, etc.)
       match /{document=**} {
-        allow read, write: if request.auth != null;
+        allow read: if true;
+        allow write: if request.auth != null;
       }
     }
 
-    // 12. Bloqueo por defecto para cualquier otra colección no especificada
+    // 13. Bloqueo por defecto para cualquier otra colección no especificada
     match /{document=**} {
       allow read, write: if false;
     }

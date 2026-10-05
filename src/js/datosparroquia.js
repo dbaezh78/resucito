@@ -41,10 +41,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   configurarEventosUI();
 
   // Escuchar estado de autenticación
-  onAuthStateChanged(auth, async (user) => {
+  onAuthStateChanged(async (user) => {
     usuarioActual = user;
     actualizarHeaderUsuario(user);
     await cargarUsuariosRegistrados();
+    // Si la lista de parroquias aún no se ha cargado o estaba vacía por permisos previos
+    if (listaParroquiasCache.length === 0) {
+      await cargarTodasLasParroquias();
+    }
   });
 
   // Cargar catálogos y datos
@@ -266,7 +270,19 @@ async function cargarTodasLasParroquias() {
     renderizarListadoParroquias();
   } catch (err) {
     console.error("Error al cargar parroquias:", err);
-    contenedor.innerHTML = `<p style="text-align: center; color: #dc2626; padding: 20px;">Error al cargar las parroquias: ${err.message}</p>`;
+    if (err?.code === 'permission-denied' || err?.message?.includes('permissions')) {
+      contenedor.innerHTML = `
+        <div style="text-align: center; color: #b91c1c; padding: 20px; background: rgba(220, 38, 38, 0.05); border-radius: 12px; border: 1px solid rgba(220, 38, 38, 0.2);">
+          <span class="material-symbols-outlined" style="font-size: 32px; color: #dc2626;">lock</span>
+          <h4 style="margin: 8px 0 4px;">Permisos de Firestore Requeridos</h4>
+          <p style="font-size: 0.85rem; margin: 0; color: var(--text-muted, #666);">
+            La colección <b>parroquias</b> requiere permisos en Firebase Cloud. Actualiza y publica las reglas de Firestore en la consola de Firebase.
+          </p>
+        </div>
+      `;
+    } else {
+      contenedor.innerHTML = `<p style="text-align: center; color: #dc2626; padding: 20px;">Error al cargar las parroquias: ${err.message}</p>`;
+    }
   }
 }
 
