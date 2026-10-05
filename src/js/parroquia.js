@@ -181,6 +181,79 @@ function actualizarHeaderUsuario(user) {
 }
 
 // --- CARGAR PARROQUIAS DESDE FIRESTORE CON RESPALDO LOCAL ---
+let unsubscribeColeccionParroquiasSnap = null;
+
+export function iniciarEscuchaColeccionParroquias() {
+    if (unsubscribeColeccionParroquiasSnap) return;
+    try {
+        const q = collection(db, "parroquias");
+        unsubscribeColeccionParroquiasSnap = onSnapshot(q, (snapshot) => {
+            const remotas = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+            if (remotas.length > 0) {
+                const mapa = new Map();
+                todasLasParroquias.forEach(p => {
+                    if (p.id) mapa.set(p.id, p);
+                });
+                remotas.forEach(p => {
+                    const local = mapa.get(p.id) || {};
+                    mapa.set(p.id, { ...local, ...p });
+                });
+
+                // Deduplicar también por clave normalizada (nombre + sector)
+                const mapaClave = new Map();
+                for (const p of mapa.values()) {
+                    const clave = `${normalizarTexto(p.nombre)}|${normalizarTexto(p.sector || '')}`;
+                    mapaClave.set(clave, p);
+                }
+
+                todasLasParroquias = Array.from(mapaClave.values());
+                todasLasParroquias.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || '', 'es', { sensitivity: 'base' }));
+
+                try {
+                    localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+                } catch(e) {}
+
+                // Actualizar parroquiaActiva si está en memoria
+                if (parroquiaActiva) {
+                    const freshActiva = todasLasParroquias.find(p => p.id === parroquiaActiva.id);
+                    if (freshActiva) {
+                        parroquiaActiva = { ...parroquiaActiva, ...freshActiva };
+                    }
+                }
+
+                // Si un usuario estaba sin parroquia y acaba de ser aceptado como miembro, activar automáticamente
+                if (!parroquiaActiva && usuarioActual && (usuarioActual.email || '').toLowerCase().trim() !== SUPER_ADMIN_EMAIL) {
+                    const recienAprobada = todasLasParroquias.find(p => esMiembroDeParroquia(p, usuarioActual));
+                    if (recienAprobada) {
+                        activarParroquia(recienAprobada);
+                    }
+                }
+
+                poblarSelectParroquiasDisponibles();
+                renderizarBarraParroquiaActiva();
+                actualizarBotonEntrarParroquiaSeleccionada();
+
+                // Actualizar modal de miembros si está abierto
+                const modalM = document.getElementById('modal-gestionar-miembros');
+                if (modalM && modalM.style.display === 'flex') {
+                    poblarSelectorParroquiaModalMiembros();
+                    renderizarPestaniasMiembros();
+                }
+
+                // Actualizar modal de gestión de parroquias si está abierto
+                const modalA = document.getElementById('modal-admin-parroquias');
+                if (modalA && modalA.style.display === 'flex') {
+                    renderizarListadoAdminParroquias();
+                }
+            }
+        }, (err) => {
+            console.warn("Aviso en escucha en vivo de colección parroquias:", err);
+        });
+    } catch (e) {
+        console.warn("No se pudo iniciar escucha de parroquias:", e);
+    }
+}
+
 async function cargarTodasLasParroquias() {
     // 1. Cargar inmediatamente desde cache o json
     if (todasLasParroquias.length === 0) {
@@ -211,17 +284,39 @@ async function cargarTodasLasParroquias() {
         const remotas = snap.docs.map(d => ({ id: d.id, ...d.data() }));
         if (remotas.length > 0) {
             const mapa = new Map();
-            todasLasParroquias.forEach(p => mapa.set(`${p.nombre || ''}|${p.sector || ''}`, p));
-            remotas.forEach(p => mapa.set(`${p.nombre || ''}|${p.sector || ''}`, p));
-            todasLasParroquias = Array.from(mapa.values());
+            todasLasParroquias.forEach(p => {
+                if (p.id) mapa.set(p.id, p);
+            });
+            remotas.forEach(p => {
+                const local = mapa.get(p.id) || {};
+                mapa.set(p.id, { ...local, ...p });
+            });
+
+            const mapaClave = new Map();
+            for (const p of mapa.values()) {
+                const clave = `${normalizarTexto(p.nombre)}|${normalizarTexto(p.sector || '')}`;
+                mapaClave.set(clave, p);
+            }
+
+            todasLasParroquias = Array.from(mapaClave.values());
+            todasLasParroquias.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || '', 'es', { sensitivity: 'base' }));
+
+            try {
+                localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+            } catch(e) {}
+
+            // Actualizar parroquiaActiva si existe
+            if (parroquiaActiva) {
+                const fresh = todasLasParroquias.find(p => p.id === parroquiaActiva.id);
+                if (fresh) {
+                    parroquiaActiva = { ...parroquiaActiva, ...fresh };
+                }
+            }
         }
 
-        todasLasParroquias.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || '', 'es', { sensitivity: 'base' }));
-        try {
-            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
-        } catch(e) {}
-
         poblarSelectParroquiasDisponibles();
+        renderizarBarraParroquiaActiva();
+        actualizarBotonEntrarParroquiaSeleccionada();
         return todasLasParroquias;
     } catch (e) {
         if (e.message !== 'timeout') console.warn("Error sincronizando lista de parroquias con Firestore:", e);
@@ -460,13 +555,39 @@ function renderizarBarraParroquiaActiva() {
     if (btnMiembros) btnMiembros.style.display = puedeAdministrar ? 'inline-flex' : 'none';
 
     // Badge solicitudes pendientes
-    const pendientes = (parroquiaActiva.solicitudesPendientes || []).length;
+    const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+    let totalPendientes = 0;
+    if (esSuperAdmin) {
+        todasLasParroquias.forEach(p => {
+            totalPendientes += (p.solicitudesPendientes || []).length;
+        });
+    } else if (parroquiaActiva) {
+        totalPendientes = (parroquiaActiva.solicitudesPendientes || []).length;
+    }
+
     if (badgeSolicitudes) {
-        if (puedeAdministrar && pendientes > 0) {
-            badgeSolicitudes.textContent = pendientes;
+        if (puedeAdministrar && totalPendientes > 0) {
+            badgeSolicitudes.textContent = totalPendientes;
             badgeSolicitudes.style.display = 'inline-block';
+            badgeSolicitudes.title = esSuperAdmin 
+                ? `${totalPendientes} solicitud(es) de acceso pendiente(s) en el sistema`
+                : `${totalPendientes} solicitud(es) pendiente(s) en tu parroquia`;
         } else {
             badgeSolicitudes.style.display = 'none';
+        }
+    }
+
+    // Actualizar también banner en vista-sin-parroquia si correspondiera
+    const bannerSinParr = document.getElementById('banner-sin-parroquia-solicitudes');
+    const txtSinParr = document.getElementById('banner-sin-parroquia-texto');
+    if (bannerSinParr) {
+        if (esSuperAdmin && totalPendientes > 0) {
+            bannerSinParr.style.display = 'block';
+            if (txtSinParr) {
+                txtSinParr.innerHTML = `Tienes <b>${totalPendientes}</b> solicitud(es) de acceso pendiente(s) por revisar.`;
+            }
+        } else {
+            bannerSinParr.style.display = 'none';
         }
     }
 }
@@ -604,19 +725,73 @@ window.solicitarAccesoParroquia = async () => {
         return;
     }
 
+    const userEmail = (usuarioActual.email || '').toLowerCase().trim();
+    const userNombre = usuarioActual.displayName || userEmail.split('@')[0];
+
+    // Buscar la parroquia en el catálogo local
+    let targetParroquia = todasLasParroquias.find(p => p.id === parroquiaId || p.nombre === parroquiaId);
+
+    // Verificar si ya es miembro
+    if (targetParroquia && esMiembroDeParroquia(targetParroquia, usuarioActual)) {
+        mostrarAlerta(`Ya eres miembro de la parroquia "${targetParroquia.nombre}". Puedes ingresar directamente haciendo clic en "Entrar a esta Parroquia".`, "Ya tienes acceso", "church");
+        actualizarBotonEntrarParroquiaSeleccionada();
+        return;
+    }
+
+    // Verificar si ya envió una solicitud previa
+    const solicitudesPrevias = targetParroquia?.solicitudesPendientes || [];
+    if (solicitudesPrevias.some(s => s.email?.toLowerCase().trim() === userEmail)) {
+        mostrarAlerta(`Ya tienes una solicitud pendiente para la parroquia "${targetParroquia?.nombre || parroquiaId}". El encargado o Administrador General la revisará pronto.`, "Solicitud ya enviada", "info");
+        return;
+    }
+
+    const idReal = targetParroquia?.id || parroquiaId;
+    const docRef = doc(db, "parroquias", idReal);
+
+    const solicitud = {
+        uid: usuarioActual.uid,
+        email: userEmail,
+        displayName: userNombre,
+        fecha: new Date().toISOString(),
+        parroquiaId: idReal,
+        parroquiaNombre: targetParroquia?.nombre || parroquiaId,
+        sector: targetParroquia?.sector || '',
+        provincia: targetParroquia?.provincia || '',
+        pais: targetParroquia?.pais || ''
+    };
+
     try {
-        const solicitud = {
-            uid: usuarioActual.uid,
-            email: usuarioActual.email,
-            displayName: usuarioActual.displayName || usuarioActual.email.split('@')[0],
-            fecha: new Date().toISOString()
-        };
+        if (targetParroquia) {
+            const baseData = { ...targetParroquia };
+            delete baseData.id;
+            await setDoc(docRef, {
+                ...baseData,
+                solicitudesPendientes: arrayUnion(solicitud),
+                actualizadoEn: new Date().toISOString()
+            }, { merge: true });
+        } else {
+            await setDoc(docRef, {
+                solicitudesPendientes: arrayUnion(solicitud),
+                actualizadoEn: new Date().toISOString()
+            }, { merge: true });
+        }
 
-        await updateDoc(doc(db, "parroquias", parroquiaId), {
-            solicitudesPendientes: arrayUnion(solicitud)
-        });
+        // Actualizar en memoria local
+        if (targetParroquia) {
+            targetParroquia.solicitudesPendientes = targetParroquia.solicitudesPendientes || [];
+            targetParroquia.solicitudesPendientes.push(solicitud);
+        }
+        try {
+            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+        } catch(e) {}
 
-        mostrarAlerta("Tu solicitud ha sido enviada al encargado de la parroquia. Cuando seas aceptado, podrás ingresar inmediatamente.", "Solicitud Enviada", "mark_email_read");
+        renderizarBarraParroquiaActiva();
+
+        mostrarAlerta(
+            `Tu solicitud para la parroquia "${targetParroquia ? targetParroquia.nombre : parroquiaId}" ha sido enviada exitosamente al encargado y al Administrador General.\n\nTan pronto sea aprobada, podrás ingresar automáticamente.`,
+            "Solicitud Enviada",
+            "mark_email_read"
+        );
     } catch (e) {
         console.error("Error enviando solicitud:", e);
         mostrarAlerta("No se pudo enviar la solicitud: " + e.message, "Error", "error");
@@ -983,6 +1158,25 @@ function renderizarListadoAdminParroquias(filtro = '') {
 
     if (badgeTotal) badgeTotal.textContent = todasLasParroquias.length;
 
+    // Banner global de solicitudes si hay alguna pendiente en cualquier parroquia
+    let totalPendientesGlobal = 0;
+    todasLasParroquias.forEach(p => {
+        totalPendientesGlobal += (p.solicitudesPendientes || []).length;
+    });
+
+    const bannerAdmin = document.getElementById('banner-solicitudes-admin-global');
+    const bannerTxt = document.getElementById('banner-solicitudes-admin-texto');
+    if (bannerAdmin) {
+        if (totalPendientesGlobal > 0) {
+            bannerAdmin.style.display = 'flex';
+            if (bannerTxt) {
+                bannerTxt.innerHTML = `Tienes <b>${totalPendientesGlobal}</b> solicitud(es) de acceso pendiente(s) por revisar.`;
+            }
+        } else {
+            bannerAdmin.style.display = 'none';
+        }
+    }
+
     if (todasLasParroquias.length === 0) {
         contenedor.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 20px;">No hay parroquias registradas aún.</p>`;
         return;
@@ -1042,6 +1236,19 @@ function renderizarListadoAdminParroquias(filtro = '') {
             `;
         }
 
+        const numPendientes = (p.solicitudesPendientes || []).length;
+        let htmlBadgePendientes = '';
+        if (numPendientes > 0) {
+            htmlBadgePendientes = `
+                <div style="margin-top: 6px;">
+                    <button type="button" class="btn-parroquia-top" style="background: #fef2f2; color: #dc2626; border-color: #fca5a5; font-weight: 700; font-size: 0.78rem; padding: 4px 10px; display: inline-flex; align-items: center; gap: 4px;" onclick="window.abrirModalMiembrosConFiltro('${p.id}')">
+                        <span class="material-symbols-outlined" style="font-size: 15px; color: #dc2626;">mark_email_unread</span>
+                        ${numPendientes} Solicitud${numPendientes > 1 ? 'es' : ''} Pendiente${numPendientes > 1 ? 's' : ''} - Revisar
+                    </button>
+                </div>
+            `;
+        }
+
         return `
             <div class="parroquia-card-item ${esActiva ? 'activa' : ''}">
                 <div class="parroquia-card-info" style="flex-grow: 1;">
@@ -1059,6 +1266,7 @@ function renderizarListadoAdminParroquias(filtro = '') {
                         <span>• 🎤 ${cantor}</span>
                     </div>
                     ${htmlCodigo}
+                    ${htmlBadgePendientes}
                 </div>
 
                 <div style="display: flex; gap: 6px; align-items: center;">
@@ -1304,10 +1512,72 @@ window.regenerarCodigo16 = async () => {
 };
 
 // --- GESTIÓN DE MIEMBROS Y SOLICITUDES ---
-window.abrirModalMiembros = async () => {
-    if (!parroquiaActiva) return;
+let filtroParroquiaModalMiembros = '__TODAS__';
+
+function formatearFechaLegible(isoStr) {
+    if (!isoStr) return '';
+    try {
+        const d = new Date(isoStr);
+        if (isNaN(d.getTime())) return isoStr;
+        return d.toLocaleDateString('es-DO', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    } catch(e) {
+        return isoStr;
+    }
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    return text.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+}
+
+window.abrirModalMiembrosConFiltro = async (parrId) => {
+    filtroParroquiaModalMiembros = parrId || '__TODAS__';
+    const modalAdmin = document.getElementById('modal-admin-parroquias');
+    if (modalAdmin) modalAdmin.style.display = 'none';
+    await window.abrirModalMiembros(filtroParroquiaModalMiembros);
+};
+
+window.abrirModalMiembros = async (parroquiaIdFiltro = null) => {
+    if (typeof parroquiaIdFiltro !== 'string') parroquiaIdFiltro = null;
+    const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+    if (!parroquiaActiva && !esSuperAdmin) return;
+
+    // Recargar parroquias desde Firestore para asegurar que las solicitudes estén al día
+    await cargarTodasLasParroquias();
+
+    // Contar total de pendientes en todas las parroquias
+    let totalPendientesGlobal = 0;
+    todasLasParroquias.forEach(p => {
+        totalPendientesGlobal += (p.solicitudesPendientes || []).length;
+    });
+
+    if (parroquiaIdFiltro) {
+        filtroParroquiaModalMiembros = parroquiaIdFiltro;
+    } else if (esSuperAdmin) {
+        const pendientesEnActiva = (parroquiaActiva?.solicitudesPendientes || []).length;
+        if (pendientesEnActiva > 0) {
+            filtroParroquiaModalMiembros = parroquiaActiva.id;
+        } else if (totalPendientesGlobal > 0) {
+            filtroParroquiaModalMiembros = '__TODAS__';
+        } else if (parroquiaActiva) {
+            filtroParroquiaModalMiembros = parroquiaActiva.id;
+        } else {
+            filtroParroquiaModalMiembros = '__TODAS__';
+        }
+    } else {
+        filtroParroquiaModalMiembros = parroquiaActiva?.id || '';
+    }
+
     const modal = document.getElementById('modal-gestionar-miembros');
     window.cambiarTabMiembros('solicitudes');
+
+    poblarSelectorParroquiaModalMiembros();
     renderizarPestaniasMiembros();
     if (modal) modal.style.display = 'flex';
 
@@ -1315,7 +1585,7 @@ window.abrirModalMiembros = async () => {
     if (usuariosRegistradosCache.length === 0) {
         try {
             const snap = await getDocs(collection(db, "registered_users"));
-            usuariosRegistradosCache = snap.docs.map(d => d.data()).filter(u => u && u.email);
+            usuariosRegistradosCache = snap.docs.map(d => d.data()).filter(u => u && u.email && !u.deleted);
             const dl = document.getElementById('datalist-usuarios-registrados');
             if (dl) {
                 dl.innerHTML = usuariosRegistradosCache.map(u => `
@@ -1341,49 +1611,175 @@ window.cambiarTabMiembros = (tab) => {
     if (tab === 'agregar' && btns[2]) btns[2].classList.add('active');
 };
 
-function renderizarPestaniasMiembros() {
-    if (!parroquiaActiva) return;
+function poblarSelectorParroquiaModalMiembros() {
+    const boxSelector = document.getElementById('box-selector-parroquia-miembros');
+    const select = document.getElementById('select-parroquia-filtro-miembros');
+    const badgeGlobal = document.getElementById('badge-filtro-solicitudes-global');
+    if (!boxSelector || !select) return;
 
-    const solicitudes = parroquiaActiva.solicitudesPendientes || [];
-    const miembros = parroquiaActiva.miembros || [];
+    const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+    if (!esSuperAdmin) {
+        boxSelector.style.display = 'none';
+        return;
+    }
+
+    boxSelector.style.display = 'block';
+
+    let totalPendientesGlobal = 0;
+    todasLasParroquias.forEach(p => {
+        totalPendientesGlobal += (p.solicitudesPendientes || []).length;
+    });
+
+    if (badgeGlobal) {
+        if (totalPendientesGlobal > 0) {
+            badgeGlobal.textContent = `${totalPendientesGlobal} pendiente(s)`;
+            badgeGlobal.style.display = 'inline-block';
+        } else {
+            badgeGlobal.style.display = 'none';
+        }
+    }
+
+    let options = `<option value="__TODAS__" ${filtroParroquiaModalMiembros === '__TODAS__' ? 'selected' : ''}>🌐 Todas las Parroquias (${totalPendientesGlobal} solicitudes pendientes)</option>`;
+
+    options += todasLasParroquias.map(p => {
+        const numP = (p.solicitudesPendientes || []).length;
+        const numBadge = numP > 0 ? ` 🔔 [${numP} pendiente${numP > 1 ? 's' : ''}]` : '';
+        const sectorText = p.sector ? ` (${p.sector})` : '';
+        const isSel = (filtroParroquiaModalMiembros === p.id);
+        return `<option value="${p.id}" ${isSel ? 'selected' : ''}>🏛️ ${p.nombre}${sectorText}${numBadge}</option>`;
+    }).join('');
+
+    select.innerHTML = options;
+
+    if (!select.dataset.hasChangeListener) {
+        select.dataset.hasChangeListener = "true";
+        select.addEventListener('change', () => {
+            filtroParroquiaModalMiembros = select.value;
+            renderizarPestaniasMiembros();
+        });
+    }
+}
+
+function renderizarPestaniasMiembros() {
+    const esSuperAdmin = (usuarioActual?.email || '').toLowerCase().trim() === SUPER_ADMIN_EMAIL;
+    const filtro = filtroParroquiaModalMiembros;
+
+    let listaSolicitudes = [];
+    let listaMiembros = [];
+    let parroquiaSeleccionadaActual = null;
+
+    if (filtro === '__TODAS__' && esSuperAdmin) {
+        todasLasParroquias.forEach(p => {
+            const pendientes = p.solicitudesPendientes || [];
+            pendientes.forEach(s => {
+                listaSolicitudes.push({
+                    ...s,
+                    parroquiaId: p.id,
+                    parroquiaNombre: p.nombre,
+                    parroquiaSector: p.sector || '',
+                    parroquiaProvincia: p.provincia || '',
+                    parroquiaPais: p.pais || ''
+                });
+            });
+        });
+
+        parroquiaSeleccionadaActual = parroquiaActiva || todasLasParroquias[0];
+        listaMiembros = parroquiaSeleccionadaActual ? (parroquiaSeleccionadaActual.miembros || []) : [];
+    } else {
+        parroquiaSeleccionadaActual = todasLasParroquias.find(p => p.id === filtro) || parroquiaActiva;
+        if (parroquiaSeleccionadaActual) {
+            const pend = parroquiaSeleccionadaActual.solicitudesPendientes || [];
+            listaSolicitudes = pend.map(s => ({
+                ...s,
+                parroquiaId: parroquiaSeleccionadaActual.id,
+                parroquiaNombre: parroquiaSeleccionadaActual.nombre,
+                parroquiaSector: parroquiaSeleccionadaActual.sector || '',
+                parroquiaProvincia: parroquiaSeleccionadaActual.provincia || '',
+                parroquiaPais: parroquiaSeleccionadaActual.pais || ''
+            }));
+            listaMiembros = parroquiaSeleccionadaActual.miembros || [];
+        }
+    }
+
+    // Ordenar: más recientes primero
+    listaSolicitudes.sort((a, b) => (b.fecha || '').localeCompare(a.fecha || ''));
 
     const numSol = document.getElementById('tab-num-solicitudes');
     const numMiem = document.getElementById('tab-num-miembros');
-    if (numSol) numSol.textContent = solicitudes.length;
-    if (numMiem) numMiem.textContent = miembros.length;
+    if (numSol) numSol.textContent = listaSolicitudes.length;
+    if (numMiem) numMiem.textContent = listaMiembros.length;
 
     // Render solicitudes
     const contenedorSol = document.getElementById('lista-solicitudes-pendientes');
     if (contenedorSol) {
-        if (solicitudes.length === 0) {
-            contenedorSol.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 24px;">No hay solicitudes pendientes.</p>`;
+        if (listaSolicitudes.length === 0) {
+            const msg = (filtro === '__TODAS__')
+                ? "No hay solicitudes pendientes en ninguna parroquia."
+                : `No hay solicitudes pendientes para ${parroquiaSeleccionadaActual ? parroquiaSeleccionadaActual.nombre : 'esta parroquia'}.`;
+            contenedorSol.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 28px;">${msg}</p>`;
         } else {
-            contenedorSol.innerHTML = solicitudes.map((s, idx) => `
-                <div class="miembro-fila">
-                    <div class="miembro-fila-info">
-                        <span class="miembro-fila-nombre">${s.displayName || s.email}</span>
-                        <span class="miembro-fila-email">${s.email}</span>
+            contenedorSol.innerHTML = listaSolicitudes.map((s) => {
+                const nombreParr = s.parroquiaNombre || 'Parroquia';
+                const sectorParr = s.parroquiaSector ? ` • ${s.parroquiaSector}` : '';
+                const provParr = s.parroquiaProvincia ? ` • ${s.parroquiaProvincia}` : '';
+                const paisParr = s.parroquiaPais ? ` (${s.parroquiaPais})` : '';
+                const fechaTxt = formatearFechaLegible(s.fecha);
+                const parrId = s.parroquiaId;
+
+                return `
+                    <div class="miembro-fila" style="flex-direction: column; align-items: stretch; gap: 8px; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; margin-bottom: 12px; background: #ffffff;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; flex-wrap: wrap;">
+                            <div class="miembro-fila-info">
+                                <span class="miembro-fila-nombre" style="font-size: 0.96rem; font-weight: 700; color: #1e293b;">
+                                    ${s.displayName || s.email}
+                                </span>
+                                <span class="miembro-fila-email" style="font-size: 0.83rem; color: #475569;">
+                                    ✉️ ${s.email}
+                                </span>
+                            </div>
+                            <span style="font-size: 0.74rem; color: #64748b; font-weight: 500; background: #f1f5f9; padding: 3px 8px; border-radius: 6px;">
+                                🕒 ${fechaTxt}
+                            </span>
+                        </div>
+
+                        <!-- Parroquia solicitada -->
+                        <div style="display: flex; align-items: center; gap: 6px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 6px 10px; border-radius: 6px; font-size: 0.84rem; color: #1e293b;">
+                            <span class="material-symbols-outlined" style="font-size: 16px; color: var(--accent-color, #d01212);">church</span>
+                            <span>Parroquia Solicitada: <b>${nombreParr}</b>${sectorParr}${provParr}${paisParr}</span>
+                        </div>
+
+                        <!-- Botones de Acción -->
+                        <div style="display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; flex-wrap: wrap;">
+                            <button type="button" class="btn-parroquia-top" style="background: #dcfce7; color: #15803d; border-color: #86efac; padding: 6px 14px; font-weight: 700; font-size: 0.84rem;" onclick="window.aceptarSolicitud('${s.email}', '${escapeHtml(s.displayName || '')}', '${parrId}')">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">check</span> Aceptar como Cantor
+                            </button>
+                            <button type="button" class="btn-parroquia-top" style="background: #fee2e2; color: #b91c1c; border-color: #fca5a5; padding: 6px 12px; font-weight: 700; font-size: 0.84rem;" onclick="window.rechazarSolicitud('${s.email}', '${parrId}')">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">close</span> Rechazar
+                            </button>
+                            ${(esSuperAdmin && parroquiaActiva?.id !== parrId) ? `
+                            <button type="button" class="btn-parroquia-top" style="padding: 6px 10px; font-size: 0.82rem;" title="Activar esta parroquia en pantalla principal" onclick="window.seleccionarParroquiaDesdeAdmin('${parrId}')">
+                                <span class="material-symbols-outlined" style="font-size: 16px;">church</span> Ir a Parroquia
+                            </button>
+                            ` : ''}
+                        </div>
                     </div>
-                    <div style="display: flex; gap: 6px;">
-                        <button class="btn-parroquia-top" style="background: #dcfce7; color: #15803d; border-color: #86efac; padding: 6px 10px;" onclick="window.aceptarSolicitud('${s.email}', '${s.displayName || ''}')">
-                            <span class="material-symbols-outlined" style="font-size: 16px;">check</span> Aceptar
-                        </button>
-                        <button class="btn-parroquia-top" style="background: #fee2e2; color: #b91c1c; border-color: #fca5a5; padding: 6px 10px;" onclick="window.rechazarSolicitud('${s.email}')">
-                            <span class="material-symbols-outlined" style="font-size: 16px;">close</span>
-                        </button>
-                    </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
     }
 
     // Render miembros
     const contenedorMiem = document.getElementById('lista-miembros-activos');
     if (contenedorMiem) {
-        if (miembros.length === 0) {
-            contenedorMiem.innerHTML = `<p style="text-align: center; color: var(--text-muted); padding: 24px;">No hay miembros registrados.</p>`;
+        const nombreHeader = parroquiaSeleccionadaActual ? parroquiaSeleccionadaActual.nombre : '';
+        const subtituloMiem = (esSuperAdmin && filtro === '__TODAS__')
+            ? `<div style="font-size: 0.8rem; color: #64748b; margin-bottom: 10px;">Mostrando miembros de: <b>${nombreHeader}</b> (selecciona otra parroquia arriba para ver sus miembros)</div>`
+            : '';
+
+        if (listaMiembros.length === 0) {
+            contenedorMiem.innerHTML = subtituloMiem + `<p style="text-align: center; color: var(--text-muted); padding: 24px;">No hay miembros registrados aún.</p>`;
         } else {
-            contenedorMiem.innerHTML = miembros.map(m => `
+            contenedorMiem.innerHTML = subtituloMiem + listaMiembros.map(m => `
                 <div class="miembro-fila">
                     <div class="miembro-fila-info">
                         <span class="miembro-fila-nombre">${m.displayName || m.email}</span>
@@ -1392,7 +1788,7 @@ function renderizarPestaniasMiembros() {
                     <div style="display: flex; align-items: center; gap: 8px;">
                         <span class="parroquia-badge-rol badge-${m.rol || 'cantor'}">${m.rol || 'cantor'}</span>
                         ${m.email !== usuarioActual?.email ? `
-                            <button class="btn-parroquia-top" style="padding: 4px 8px; color: #b91c1c;" title="Eliminar miembro" onclick="window.eliminarMiembroParroquia('${m.email}')">
+                            <button class="btn-parroquia-top" style="padding: 4px 8px; color: #b91c1c;" title="Eliminar miembro" onclick="window.eliminarMiembroParroquia('${m.email}', '${parroquiaSeleccionadaActual?.id}')">
                                 <span class="material-symbols-outlined" style="font-size: 16px;">delete</span>
                             </button>
                         ` : ''}
@@ -1403,40 +1799,111 @@ function renderizarPestaniasMiembros() {
     }
 }
 
-window.aceptarSolicitud = async (email, displayName) => {
-    if (!parroquiaActiva) return;
+window.aceptarSolicitud = async (email, displayName, parroquiaId = null) => {
+    const targetId = parroquiaId || parroquiaActiva?.id;
+    if (!targetId) {
+        mostrarAlerta("No se pudo identificar la parroquia de la solicitud.", "Error", "error");
+        return;
+    }
+
+    const targetParr = todasLasParroquias.find(p => p.id === targetId);
+    const nombreParr = targetParr ? targetParr.nombre : targetId;
+
+    const emailNorm = (email || '').toLowerCase().trim();
     const nuevoMiembro = {
-        email: email,
-        displayName: displayName || email.split('@')[0],
+        email: emailNorm,
+        displayName: displayName || emailNorm.split('@')[0],
         rol: 'cantor',
         fechaIngreso: new Date().toISOString()
     };
 
     try {
-        await updateDoc(doc(db, "parroquias", parroquiaActiva.id), {
+        const remaining = (targetParr?.solicitudesPendientes || []).filter(
+            s => s.email?.toLowerCase().trim() !== emailNorm
+        );
+
+        await updateDoc(doc(db, "parroquias", targetId), {
             miembros: arrayUnion(nuevoMiembro),
-            solicitudesPendientes: (parroquiaActiva.solicitudesPendientes || []).filter(s => s.email !== email)
+            solicitudesPendientes: remaining
         });
-        mostrarToastVerde(`Solicitud de ${email} aceptada`);
+
+        if (targetParr) {
+            targetParr.solicitudesPendientes = remaining;
+            targetParr.miembros = targetParr.miembros || [];
+            if (!targetParr.miembros.some(m => m.email?.toLowerCase().trim() === emailNorm)) {
+                targetParr.miembros.push(nuevoMiembro);
+            }
+        }
+        if (parroquiaActiva && parroquiaActiva.id === targetId) {
+            parroquiaActiva.solicitudesPendientes = remaining;
+            parroquiaActiva.miembros = targetParr?.miembros || [];
+        }
+
+        try {
+            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+        } catch(e) {}
+
+        renderizarPestaniasMiembros();
+        renderizarBarraParroquiaActiva();
+        poblarSelectorParroquiaModalMiembros();
+
+        mostrarToastVerde(`Hermano ${displayName || emailNorm} aceptado como cantor en ${nombreParr}`);
     } catch (e) {
+        console.error("Error al aceptar solicitud:", e);
         mostrarAlerta("Error al aceptar solicitud: " + e.message, "Error", "error");
     }
 };
 
-window.rechazarSolicitud = async (email) => {
-    if (!parroquiaActiva) return;
+window.rechazarSolicitud = async (email, parroquiaId = null) => {
+    const targetId = parroquiaId || parroquiaActiva?.id;
+    if (!targetId) return;
+
+    const targetParr = todasLasParroquias.find(p => p.id === targetId);
+    const emailNorm = (email || '').toLowerCase().trim();
+
     try {
-        await updateDoc(doc(db, "parroquias", parroquiaActiva.id), {
-            solicitudesPendientes: (parroquiaActiva.solicitudesPendientes || []).filter(s => s.email !== email)
+        const remaining = (targetParr?.solicitudesPendientes || []).filter(
+            s => s.email?.toLowerCase().trim() !== emailNorm
+        );
+
+        await updateDoc(doc(db, "parroquias", targetId), {
+            solicitudesPendientes: remaining
         });
+
+        if (targetParr) {
+            targetParr.solicitudesPendientes = remaining;
+        }
+        if (parroquiaActiva && parroquiaActiva.id === targetId) {
+            parroquiaActiva.solicitudesPendientes = remaining;
+        }
+
+        try {
+            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+        } catch(e) {}
+
+        renderizarPestaniasMiembros();
+        renderizarBarraParroquiaActiva();
+        poblarSelectorParroquiaModalMiembros();
+
         mostrarToastVerde("Solicitud rechazada");
     } catch (e) {
+        console.error("Error al rechazar solicitud:", e);
         mostrarAlerta("Error al rechazar solicitud: " + e.message, "Error", "error");
     }
 };
 
 window.agregarMiembroDirecto = async () => {
-    if (!parroquiaActiva) return;
+    const targetId = (filtroParroquiaModalMiembros && filtroParroquiaModalMiembros !== '__TODAS__') 
+        ? filtroParroquiaModalMiembros 
+        : parroquiaActiva?.id;
+
+    if (!targetId) {
+        mostrarAlerta("Por favor selecciona una parroquia específica arriba para añadir al miembro.", "Selecciona una Parroquia", "church");
+        return;
+    }
+
+    const targetParr = todasLasParroquias.find(p => p.id === targetId) || parroquiaActiva;
+
     const inputEmail = document.getElementById('input-nuevo-miembro-email');
     const inputNombre = document.getElementById('input-nuevo-miembro-nombre');
     const selectRol = document.getElementById('select-nuevo-miembro-rol');
@@ -1450,8 +1917,7 @@ window.agregarMiembroDirecto = async () => {
         return;
     }
 
-    // Verificar si ya pertenece
-    const existe = (parroquiaActiva.miembros || []).some(m => m.email?.toLowerCase().trim() === email);
+    const existe = (targetParr.miembros || []).some(m => m.email?.toLowerCase().trim() === email);
     if (existe) {
         mostrarAlerta("Este usuario ya es miembro de la parroquia.", "Ya registrado", "info");
         return;
@@ -1465,30 +1931,60 @@ window.agregarMiembroDirecto = async () => {
     };
 
     try {
-        await updateDoc(doc(db, "parroquias", parroquiaActiva.id), {
+        const remaining = (targetParr.solicitudesPendientes || []).filter(s => s.email?.toLowerCase().trim() !== email);
+
+        await updateDoc(doc(db, "parroquias", targetId), {
             miembros: arrayUnion(nuevoMiembro),
-            solicitudesPendientes: (parroquiaActiva.solicitudesPendientes || []).filter(s => s.email !== email)
+            solicitudesPendientes: remaining
         });
+
+        targetParr.miembros = targetParr.miembros || [];
+        targetParr.miembros.push(nuevoMiembro);
+        targetParr.solicitudesPendientes = remaining;
+
+        if (parroquiaActiva && parroquiaActiva.id === targetId) {
+            parroquiaActiva.miembros = targetParr.miembros;
+            parroquiaActiva.solicitudesPendientes = remaining;
+        }
+
+        try {
+            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+        } catch(e) {}
 
         if (inputEmail) inputEmail.value = '';
         if (inputNombre) inputNombre.value = '';
         window.cambiarTabMiembros('miembros');
+        renderizarPestaniasMiembros();
         mostrarToastVerde(`Hermano ${email} agregado como ${rol}`);
     } catch (e) {
         mostrarAlerta("Error agregando miembro: " + e.message, "Error", "error");
     }
 };
 
-window.eliminarMiembroParroquia = async (email) => {
-    if (!parroquiaActiva) return;
+window.eliminarMiembroParroquia = async (email, parroquiaId = null) => {
+    const targetId = parroquiaId || parroquiaActiva?.id;
+    if (!targetId) return;
+
+    const targetParr = todasLasParroquias.find(p => p.id === targetId) || parroquiaActiva;
     if (!confirm(`¿Eliminar a ${email} de la parroquia?`)) return;
 
     try {
-        const miembro = (parroquiaActiva.miembros || []).find(m => m.email === email);
+        const miembro = (targetParr.miembros || []).find(m => m.email?.toLowerCase().trim() === email.toLowerCase().trim());
         if (miembro) {
-            await updateDoc(doc(db, "parroquias", parroquiaActiva.id), {
+            await updateDoc(doc(db, "parroquias", targetId), {
                 miembros: arrayRemove(miembro)
             });
+
+            targetParr.miembros = (targetParr.miembros || []).filter(m => m.email?.toLowerCase().trim() !== email.toLowerCase().trim());
+            if (parroquiaActiva && parroquiaActiva.id === targetId) {
+                parroquiaActiva.miembros = targetParr.miembros;
+            }
+
+            try {
+                localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+            } catch(e) {}
+
+            renderizarPestaniasMiembros();
             mostrarToastVerde("Miembro eliminado");
         }
     } catch (e) {
@@ -2301,7 +2797,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnRegenerarCodigo) btnRegenerarCodigo.addEventListener('click', window.regenerarCodigo16);
 
     const btnMiembros = document.getElementById('btn-gestionar-miembros');
-    if (btnMiembros) btnMiembros.addEventListener('click', window.abrirModalMiembros);
+    if (btnMiembros) btnMiembros.addEventListener('click', () => window.abrirModalMiembros());
 
     const btnConfirmarAgregarMiem = document.getElementById('btn-confirmar-agregar-miembro');
     if (btnConfirmarAgregarMiem) btnConfirmarAgregarMiem.addEventListener('click', window.agregarMiembroDirecto);
@@ -2314,6 +2810,9 @@ document.addEventListener('DOMContentLoaded', () => {
             poblarSelectParroquiasDisponibles();
         });
     }
+
+    // Iniciar escucha en tiempo real de la colección de parroquias para solicitudes y cambios
+    iniciarEscuchaColeccionParroquias();
 
     // Inicializar catálogo de cantos
     if (todosLosCantos.length > 0) {

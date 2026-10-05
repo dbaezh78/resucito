@@ -1,11 +1,12 @@
 {
-  "latestVersion": "2.1.24",
+  "latestVersion": "2.1.25",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.24)",
-  "updateMessage": "Sincronización automática y bidireccional de Parroquia entre Perfil y el módulo Parroquia.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.25)",
+  "updateMessage": "Gestión global de solicitudes de acceso para el Administrador General y escucha en tiempo real de parroquias.",
   "releaseNotes": [
-    "Sincronización en tiempo real: al seleccionar o guardar tu parroquia en Mi Perfil, se preselecciona automáticamente en el módulo de Parroquia.",
-    "Sincronización inversa: al cambiar o seleccionar tu parroquia en /parroquia.html, se actualiza inmediatamente en tu Perfil de Salmista.",
-    "Botón de entrada directa para miembros y encargados en la parroquia seleccionada."
+    "Vista y aprobación de solicitudes pendientes de todas las parroquias para el Administrador General.",
+    "Selector multiparroquia en el modal de Cantores y Miembros con indicador de solicitudes pendientes por parroquia.",
+    "Badges en tiempo real en la barra principal y listado de gestión cuando hay solicitudes pendientes.",
+    "Persistencia segura y garantizada de solicitudes de acceso en Firestore y memoria local."
   ]
 }
