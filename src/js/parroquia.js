@@ -242,10 +242,139 @@ function poblarSelectParroquiasDisponibles() {
         return;
     }
 
-    select.innerHTML = `<option value="">-- Selecciona una Parroquia --</option>` + 
-        todasLasParroquias.map(p => `
-            <option value="${p.id}">${p.nombre} ${p.ciudad ? `(${p.ciudad})` : ''}</option>
-        `).join('');
+    // 1. Obtener la parroquia guardada en el perfil del usuario (desde localStorage o perfil)
+    let nombreParroquiaPerfil = '';
+    let idParroquiaGuardada = localStorage.getItem('parroquia_activa_id') || '';
+
+    try {
+        const rawPerfil = localStorage.getItem('user_profile_data');
+        if (rawPerfil) {
+            const pData = JSON.parse(rawPerfil);
+            nombreParroquiaPerfil = pData.parroquia || '';
+        }
+    } catch(e) {}
+
+    if (!nombreParroquiaPerfil) {
+        nombreParroquiaPerfil = localStorage.getItem('parroquia_perfil_nombre') || localStorage.getItem('parroquia_activa_nombre') || '';
+    }
+
+    // 2. Buscar si alguna coincide exactamente con la del perfil
+    let encontrada = null;
+    if (nombreParroquiaPerfil) {
+        const normP = normalizarTexto(nombreParroquiaPerfil);
+        encontrada = todasLasParroquias.find(p => {
+            const normNom = normalizarTexto(p.nombre || '');
+            return normNom === normP || normNom.includes(normP) || normP.includes(normNom);
+        });
+    }
+
+    if (!encontrada && idParroquiaGuardada) {
+        encontrada = todasLasParroquias.find(p => p.id === idParroquiaGuardada);
+    }
+
+    let idSeleccionado = encontrada ? encontrada.id : '';
+
+    let optionsHtml = `<option value="">-- Selecciona una Parroquia --</option>`;
+
+    optionsHtml += todasLasParroquias.map(p => {
+        const sectorParts = [];
+        if (p.sector) sectorParts.push(p.sector);
+        if (p.provincia) sectorParts.push(p.provincia);
+        else if (p.ciudad) sectorParts.push(p.ciudad);
+        const sectorText = sectorParts.length > 0 ? ` (${sectorParts.join(', ')})` : '';
+        const paisText = p.pais ? ` - ${p.pais}` : '';
+        const isSel = (encontrada && p.id === encontrada.id);
+        return `<option value="${p.id}" ${isSel ? 'selected' : ''}>${p.nombre}${sectorText}${paisText}</option>`;
+    }).join('');
+
+    // Si la parroquia del perfil no está en el catálogo, agregarla como opción seleccionada
+    if (nombreParroquiaPerfil && !encontrada) {
+        optionsHtml += `<option value="${nombreParroquiaPerfil}" selected>${nombreParroquiaPerfil} (Perfil)</option>`;
+        idSeleccionado = nombreParroquiaPerfil;
+    }
+
+    select.innerHTML = optionsHtml;
+
+    if (idSeleccionado) {
+        select.value = idSeleccionado;
+    }
+
+    actualizarBotonEntrarParroquiaSeleccionada();
+
+    // 3. Listener de cambio para sincronizar de Parroquia hacia Perfil ("y viceversa")
+    if (!select.dataset.hasSyncPerfilListener) {
+        select.dataset.hasSyncPerfilListener = "true";
+        select.addEventListener('change', async () => {
+            const val = select.value;
+            if (!val) {
+                actualizarBotonEntrarParroquiaSeleccionada();
+                return;
+            }
+
+            const pSeleccionada = todasLasParroquias.find(p => p.id === val || p.nombre === val);
+            const nombreFinal = pSeleccionada ? pSeleccionada.nombre : val;
+            const paisFinal = pSeleccionada ? (pSeleccionada.pais || '') : '';
+
+            // Sincronizar en localStorage
+            localStorage.setItem('parroquia_perfil_nombre', nombreFinal);
+            localStorage.setItem('parroquia_activa_nombre', nombreFinal);
+            if (pSeleccionada) {
+                localStorage.setItem('parroquia_activa_id', pSeleccionada.id);
+            }
+
+            // Sincronizar en user_profile_data para perfil.html
+            try {
+                let perfilData = {};
+                const local = localStorage.getItem('user_profile_data');
+                if (local) perfilData = JSON.parse(local);
+                perfilData.parroquia = nombreFinal;
+                if (paisFinal) perfilData.pais = paisFinal;
+                perfilData.ultimaActualizacion = new Date().toISOString();
+                localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
+            } catch(e) {}
+
+            // Sincronizar en Firestore si el usuario está autenticado
+            const user = usuarioActual || getCurrentUser() || auth.currentUser;
+            if (user) {
+                try {
+                    await setDoc(doc(db, "usuarios", user.uid, "perfil", "config"), {
+                        parroquia: nombreFinal,
+                        pais: paisFinal,
+                        ultimaActualizacion: new Date().toISOString()
+                    }, { merge: true });
+                } catch(e) {
+                    console.warn("Error sincronizando parroquia a perfil en Firestore:", e);
+                }
+            }
+
+            actualizarBotonEntrarParroquiaSeleccionada();
+        });
+    }
+}
+
+// Actualizar visibilidad del botón para entrar si es miembro/creador de la parroquia seleccionada
+function actualizarBotonEntrarParroquiaSeleccionada() {
+    const select = document.getElementById('select-parroquia-disponible');
+    const btnEntrar = document.getElementById('btn-entrar-parroquia-seleccionada');
+    if (!select || !btnEntrar) return;
+
+    const val = select.value;
+    if (!val) {
+        btnEntrar.style.display = 'none';
+        return;
+    }
+
+    const user = usuarioActual || getCurrentUser() || auth.currentUser;
+    const parr = todasLasParroquias.find(p => p.id === val || p.nombre === val);
+
+    if (parr && user && (esMiembroDeParroquia(parr, user) || user.email?.toLowerCase().trim() === SUPER_ADMIN_EMAIL)) {
+        btnEntrar.style.display = 'inline-flex';
+        btnEntrar.onclick = () => {
+            activarParroquia(parr);
+        };
+    } else {
+        btnEntrar.style.display = 'none';
+    }
 }
 
 // --- CONECTAR Y ESCUCHAR PARROQUIA ACTIVA ---
@@ -253,6 +382,29 @@ function activarParroquia(parr) {
     if (!parr || !parr.id) return;
     parroquiaActiva = parr;
     localStorage.setItem('parroquia_activa_id', parr.id);
+    localStorage.setItem('parroquia_activa_nombre', parr.nombre);
+    localStorage.setItem('parroquia_perfil_nombre', parr.nombre);
+
+    // Sincronizar también con el perfil del usuario para perfil.html
+    let perfilData = {};
+    try {
+        const raw = localStorage.getItem('user_profile_data');
+        if (raw) perfilData = JSON.parse(raw);
+    } catch(e) {}
+    perfilData.parroquia = parr.nombre;
+    if (parr.pais) perfilData.pais = parr.pais;
+    perfilData.ultimaActualizacion = new Date().toISOString();
+    localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
+
+    // Si el usuario está autenticado, sincronizar con Firestore
+    const user = usuarioActual || getCurrentUser() || auth.currentUser;
+    if (user) {
+        setDoc(doc(db, "usuarios", user.uid, "perfil", "config"), {
+            parroquia: parr.nombre,
+            pais: parr.pais || '',
+            ultimaActualizacion: new Date().toISOString()
+        }, { merge: true }).catch(err => console.warn(err));
+    }
 
     // Cancelar escuchas previas si existen
     if (unsubscribeParroquiaSnap) unsubscribeParroquiaSnap();
@@ -338,21 +490,48 @@ async function resolverParroquiaUsuario(user) {
         }
     }
 
-    // 2. Buscar si el usuario ya es miembro o creador de alguna parroquia
+    // 2. Buscar si la parroquia asignada en el perfil del usuario coincide y tiene permiso
+    let parroquiaPerfilNombre = '';
+    try {
+        const raw = localStorage.getItem('user_profile_data');
+        if (raw) {
+            const pData = JSON.parse(raw);
+            parroquiaPerfilNombre = pData.parroquia || '';
+        }
+    } catch(e) {}
+
+    if (!parroquiaPerfilNombre) {
+        parroquiaPerfilNombre = localStorage.getItem('parroquia_perfil_nombre') || localStorage.getItem('parroquia_activa_nombre') || '';
+    }
+
+    if (parroquiaPerfilNombre) {
+        const normP = normalizarTexto(parroquiaPerfilNombre);
+        const foundPerfil = todas.find(p => {
+            const normNom = normalizarTexto(p.nombre || '');
+            return normNom === normP || normNom.includes(normP) || normP.includes(normNom);
+        });
+        if (foundPerfil && (esMiembroDeParroquia(foundPerfil, user) || user.email?.toLowerCase().trim() === SUPER_ADMIN_EMAIL)) {
+            activarParroquia(foundPerfil);
+            return;
+        }
+    }
+
+    // 3. Buscar si el usuario ya es miembro o creador de alguna parroquia
     const parroquiaDelUsuario = todas.find(p => esMiembroDeParroquia(p, user));
     if (parroquiaDelUsuario) {
         activarParroquia(parroquiaDelUsuario);
         return;
     }
 
-    // 3. Si el usuario es el Super Administrador y no tiene parroquia activa asignada
+    // 4. Si el usuario es el Super Administrador y no tiene parroquia activa asignada
     if (user.email?.toLowerCase().trim() === SUPER_ADMIN_EMAIL && todas.length > 0) {
         activarParroquia(todas[0]);
         return;
     }
 
-    // 4. No pertenece a ninguna parroquia: mostrar pantalla de ingreso de código / solicitar acceso
+    // 5. No pertenece a ninguna parroquia: mostrar pantalla de ingreso de código / solicitar acceso
     mostrarVista('sin-parroquia');
+    poblarSelectParroquiasDisponibles();
 }
 
 // --- UNIRSE CON CÓDIGO DE 16 CARACTERES ---
@@ -2129,9 +2308,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btnCambiarParroquia = document.getElementById('btn-cambiar-parroquia');
     if (btnCambiarParroquia) {
-        btnCambiarParroquia.addEventListener('click', () => {
-            cargarTodasLasParroquias();
+        btnCambiarParroquia.addEventListener('click', async () => {
+            await cargarTodasLasParroquias();
             mostrarVista('sin-parroquia');
+            poblarSelectParroquiasDisponibles();
         });
     }
 
@@ -2156,4 +2336,9 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarHeaderUsuario(user);
         await resolverParroquiaUsuario(user);
     });
+});
+
+// Sincronizar en caliente si el usuario regresa de perfil.html
+window.addEventListener('pageshow', () => {
+    poblarSelectParroquiasDisponibles();
 });

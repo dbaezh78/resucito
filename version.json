@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.23",
+  "latestVersion": "2.1.24",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.23)",
-  "updateMessage": "Carga instantánea de Parroquias con respaldo offline y enlace directo a soporte por chat.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.24)",
+  "updateMessage": "Sincronización automática y bidireccional de Parroquia entre Perfil y el módulo Parroquia.",
   "releaseNotes": [
-    "Carga inmediata y sin demoras del selector de Parroquias en el perfil y administración.",
-    "Respaldo local y catálogo offline de parroquias (data/parroquias.json) para funcionamiento garantizado aún sin conexión o lentitud de red.",
-    "Mensaje oficial para asignación como responsable de Canto: '🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. https://resucito.do/chat.html'."
+    "Sincronización en tiempo real: al seleccionar o guardar tu parroquia en Mi Perfil, se preselecciona automáticamente en el módulo de Parroquia.",
+    "Sincronización inversa: al cambiar o seleccionar tu parroquia en /parroquia.html, se actualiza inmediatamente en tu Perfil de Salmista.",
+    "Botón de entrada directa para miembros y encargados en la parroquia seleccionada."
   ]
 }

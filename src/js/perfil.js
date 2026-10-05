@@ -228,15 +228,57 @@ async function cargarParroquiasPerfil(paisFiltro = '', valorSeleccionado = '') {
   // 3. Renderizar INMEDIATAMENTE las opciones para que nunca se quede en 'Cargando parroquias...'
   renderizarOpcionesParroquia(selectParr, paisActual, valorSeleccionado);
 
-  // Configurar listener para cuando seleccione "__CREAR__"
+  // Configurar listener para cuando seleccione "__CREAR__" o cambie de parroquia (sincronizando con parroquia.html)
   if (!selectParr.dataset.hasCrearListener) {
     selectParr.dataset.hasCrearListener = "true";
-    selectParr.addEventListener('change', () => {
+    selectParr.addEventListener('change', async () => {
       if (selectParr.value === '__CREAR__') {
         const pais = selectPais ? selectPais.value : '';
         window.location.href = `datosparroquia.html?pais=${encodeURIComponent(pais)}&retorno=perfil.html`;
-      } else {
-        selectParr.dataset.valorSeleccionado = selectParr.value;
+        return;
+      }
+      
+      const val = selectParr.value;
+      selectParr.dataset.valorSeleccionado = val;
+
+      if (!val) return;
+
+      const pMatch = parroquiasPerfilCache.find(p => p.nombre === val || p.id === val);
+      const nombreParr = pMatch ? pMatch.nombre : val;
+      const paisParr = pMatch ? (pMatch.pais || '') : (selectPais ? selectPais.value : '');
+      const idParr = pMatch ? pMatch.id : '';
+
+      // Sincronizar inmediatamente en localStorage para que /parroquia.html lo detecte
+      localStorage.setItem('parroquia_perfil_nombre', nombreParr);
+      localStorage.setItem('parroquia_activa_nombre', nombreParr);
+      if (idParr) {
+        localStorage.setItem('parroquia_activa_id', idParr);
+      }
+
+      // Sincronizar user_profile_data
+      try {
+        let perfilData = {};
+        const local = localStorage.getItem('user_profile_data');
+        if (local) perfilData = JSON.parse(local);
+        perfilData.parroquia = nombreParr;
+        if (paisParr) perfilData.pais = paisParr;
+        perfilData.ultimaActualizacion = new Date().toISOString();
+        localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
+      } catch(e) {}
+
+      // Sincronizar en Firestore en segundo plano si el usuario está autenticado
+      const user = getCurrentUser() || auth.currentUser;
+      if (user) {
+        try {
+          const docRefConfig = doc(db, "usuarios", user.uid, "perfil", "config");
+          await setDoc(docRefConfig, {
+            parroquia: nombreParr,
+            pais: paisParr,
+            ultimaActualizacion: new Date().toISOString()
+          }, { merge: true });
+        } catch(e) {
+          console.warn("Error sincronizando parroquia a perfil en Firestore:", e);
+        }
       }
     });
   }
@@ -404,7 +446,11 @@ async function aplicarDatosPerfil(data) {
 
   if (selPais && data.pais) selPais.value = data.pais;
 
-  const parroquiaGuardada = data.parroquia || data.nombreParroquia || '';
+  let parroquiaGuardada = data.parroquia || data.nombreParroquia || '';
+  if (!parroquiaGuardada) {
+    parroquiaGuardada = localStorage.getItem('parroquia_perfil_nombre') || localStorage.getItem('parroquia_activa_nombre') || '';
+  }
+
   await cargarParroquiasPerfil(data.pais || (selPais ? selPais.value : ''), parroquiaGuardada);
 
   if (selComu && (data.comunidad || data.numeroComunidad)) selComu.value = data.comunidad || data.numeroComunidad;
@@ -432,6 +478,13 @@ window.guardarPerfil = async function () {
   };
 
   localStorage.setItem('user_profile_data', JSON.stringify(perfilData));
+
+  if (valParroquia) {
+    localStorage.setItem('parroquia_perfil_nombre', valParroquia);
+    localStorage.setItem('parroquia_activa_nombre', valParroquia);
+    const pMatch = parroquiasPerfilCache.find(p => p.nombre === valParroquia || p.id === valParroquia);
+    if (pMatch) localStorage.setItem('parroquia_activa_id', pMatch.id);
+  }
 
   const user = getCurrentUser() || auth.currentUser;
   if (!user) {
@@ -1232,5 +1285,15 @@ document.addEventListener('click', (e) => {
   const closeRep = document.getElementById('closeReporteHistorial');
   if (modalRep && (e.target === modalRep || e.target === closeRep)) {
     modalRep.style.display = 'none';
+  }
+});
+
+// Sincronizar en caliente si el usuario regresa de parroquia.html
+window.addEventListener('pageshow', () => {
+  const pGuardada = localStorage.getItem('parroquia_perfil_nombre') || localStorage.getItem('parroquia_activa_nombre');
+  const selectParr = document.getElementById('userParroquia');
+  const selectPais = document.getElementById('userCountry');
+  if (selectParr && pGuardada && selectParr.value !== pGuardada) {
+    renderizarOpcionesParroquia(selectParr, selectPais ? selectPais.value : '', pGuardada);
   }
 });

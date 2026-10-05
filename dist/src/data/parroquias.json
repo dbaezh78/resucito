@@ -36,6 +36,18 @@
     "codigoAcceso": "NSAL-HOND-RD2026"
   },
   {
+    "id": "espiritu-santo-villa-consuelo",
+    "pais": "República Dominicana",
+    "provincia": "Distrito Nacional",
+    "nombre": "Espíritu Santo",
+    "sector": "Villa Consuelo",
+    "direccion": "Calle Hermanos Deligne",
+    "parroco": "",
+    "cantorEncargado": "Carlos Báez",
+    "cantorEncargadoEmail": "dbaezmega01@gmail.com",
+    "codigoAcceso": "ESAN-VCON-RD2026"
+  },
+  {
     "id": "san-vicente-de-paul-santo-domingo-este",
     "pais": "República Dominicana",
     "provincia": "Santo Domingo Este",

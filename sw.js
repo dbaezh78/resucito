@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v353'; // v2.1.23 Carga instantánea de parroquias y mensaje de asignación vía chat
+const CACHE_NAME = 'resucito-cache-v354'; // v2.1.24 Sincronización bidireccional de Parroquia entre Perfil y Parroquia
 const STATIC_ASSETS = [
   './',
   'index.html',

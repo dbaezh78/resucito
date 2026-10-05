@@ -6,7 +6,7 @@
   <title>Parroquia - Preparación de Eucaristías - Resucitó</title>
   <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/parroquia-DjcbuUj8.js"></script>
+  <script type="module" crossorigin src="./assets/parroquia-BdixbUom.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/preload-helper-NIwTN0me.js">
   <link rel="modulepreload" crossorigin href="./assets/songs-data-DMudPMhN.js">
   <link rel="modulepreload" crossorigin href="./assets/navegador-BcYS7OjG.js">
@@ -93,11 +93,18 @@
           Parroquias Disponibles:
         </label>
         <select id="select-parroquia-disponible" style="width: 100%; padding: 10px 14px; border-radius: 10px; border: 1.5px solid var(--panel-border, #ccc); background: #ffffff !important; color: #212529 !important; font-size: 0.95rem; outline: none; box-sizing: border-box;">
-          <option value="">Cargando parroquias...</option>
+          <option value="">-- Selecciona una Parroquia --</option>
         </select>
+        <small id="sync-parroquia-perfil-aviso" style="display: block; margin-top: 6px; font-size: 0.78rem; color: #0369a1; font-weight: 500;">
+          🔄 Sincronizada automáticamente con tu Perfil de Salmista.
+        </small>
       </div>
 
       <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+        <button id="btn-entrar-parroquia-seleccionada" class="btn-accion" style="padding: 10px 20px; display: none; background: #16a34a; border-color: #15803d;">
+          <span class="material-symbols-outlined">church</span>
+          Entrar a esta Parroquia
+        </button>
         <button id="btn-solicitar-acceso" class="btn-parroquia-top" style="padding: 10px 18px;">
           <span class="material-symbols-outlined">send</span>
           Solicitar Acceso al Encargado
