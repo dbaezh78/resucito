@@ -279,7 +279,7 @@ async function cargarUsuariosRegistrados() {
     select.style.opacity = '0.75';
     select.style.cursor = 'not-allowed';
     if (infoText) {
-      infoText.innerHTML = `🔒 <b>Solo el Administrador Principal (${SUPER_ADMIN_EMAIL})</b> puede asignar o modificar al Cantor Encargado. Si tu parroquia no tiene encargado, comunícate con él para que te asigne.`;
+      infoText.innerHTML = `🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. <a href="chat.html" target="_blank" style="color: #b45309; text-decoration: underline; font-weight: 700;">https://resucito.do/chat.html</a>`;
       infoText.style.color = '#b45309';
     }
   } else {
@@ -308,21 +308,75 @@ async function cargarUsuariosRegistrados() {
   }
 }
 
-// Cargar listado completo de parroquias desde Firestore
+// Cargar listado completo de parroquias desde Firestore con respaldo local
 async function cargarTodasLasParroquias() {
   const contenedor = document.getElementById('contenedor-listado-parroquias');
   if (!contenedor) return;
 
+  // 1. Intentar renderizar inmediatamente desde cache local o data/parroquias.json
+  if (listaParroquiasCache.length === 0) {
+    try {
+      const localData = localStorage.getItem('resucito_parroquias_cache');
+      if (localData) {
+        listaParroquiasCache = JSON.parse(localData);
+        if (listaParroquiasCache.length > 0) {
+          renderizarListadoParroquias();
+        }
+      }
+    } catch(e) {}
+
+    if (listaParroquiasCache.length === 0) {
+      try {
+        const resp = await fetch('./data/parroquias.json');
+        if (resp.ok) {
+          listaParroquiasCache = await resp.json();
+          renderizarListadoParroquias();
+        }
+      } catch(e) {}
+    }
+  }
+
+  // 2. Sincronizar con Firestore en segundo plano con límite de 4 segundos
   try {
-    const snap = await getDocs(collection(db, "parroquias"));
-    listaParroquiasCache = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    const fetchPromise = getDocs(collection(db, "parroquias"));
+    const timeoutPromise = new Promise((_, reject) => 
+      setTimeout(() => reject(new Error('timeout')), 4000)
+    );
+    const snap = await Promise.race([fetchPromise, timeoutPromise]);
+    
+    const remotas = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    if (remotas.length > 0) {
+      // Unir evitando duplicados por nombre y sector
+      const mapa = new Map();
+      listaParroquiasCache.forEach(p => {
+        const key = `${normalizarTexto(p.nombre)}|${normalizarTexto(p.sector || '')}`;
+        mapa.set(key, p);
+      });
+      remotas.forEach(p => {
+        const key = `${normalizarTexto(p.nombre)}|${normalizarTexto(p.sector || '')}`;
+        mapa.set(key, p);
+      });
+      listaParroquiasCache = Array.from(mapa.values());
+    }
 
     // Ordenar alfabéticamente por nombre
     listaParroquiasCache.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || '', 'es', { sensitivity: 'base' }));
 
+    try {
+      localStorage.setItem('resucito_parroquias_cache', JSON.stringify(listaParroquiasCache));
+    } catch(e) {}
+
     renderizarListadoParroquias();
   } catch (err) {
-    console.error("Error al cargar parroquias:", err);
+    if (err.message !== 'timeout') {
+      console.warn("Advertencia al sincronizar parroquias con Firestore:", err);
+    }
+    // Si la cache local ya tiene parroquias, no mostrar pantalla de error fatal
+    if (listaParroquiasCache.length > 0) {
+      renderizarListadoParroquias();
+      return;
+    }
+
     if (err?.code === 'permission-denied' || err?.message?.includes('permissions')) {
       contenedor.innerHTML = `
         <div style="text-align: center; color: #b91c1c; padding: 20px; background: rgba(220, 38, 38, 0.05); border-radius: 12px; border: 1px solid rgba(220, 38, 38, 0.2);">
@@ -396,18 +450,18 @@ function renderizarListadoParroquias(filtro = '') {
     } else if (!p.cantorEncargadoEmail) {
       bloqueCodigoHtml = `
         <div style="margin-top: 8px;">
-          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; color: #b45309; font-size: 0.78rem; font-weight: 500;">
-            <span class="material-symbols-outlined" style="font-size: 16px; color: #d97706;">lock</span>
-            Sin cantor encargado asignado. Habla con el Administrador (${SUPER_ADMIN_EMAIL}) para ser asignado.
+          <span style="display: inline-flex; align-items: flex-start; gap: 6px; padding: 6px 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; color: #b45309; font-size: 0.76rem; font-weight: 500; line-height: 1.4;">
+            <span class="material-symbols-outlined" style="font-size: 16px; color: #d97706; flex-shrink: 0; margin-top: 1px;">lock</span>
+            <span>🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. <a href="chat.html" target="_blank" style="color: #b45309; text-decoration: underline; font-weight: 700;">https://resucito.do/chat.html</a></span>
           </span>
         </div>
       `;
     } else {
       bloqueCodigoHtml = `
         <div style="margin-top: 8px;">
-          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 8px; color: #4b5563; font-size: 0.78rem; font-weight: 500;">
-            <span class="material-symbols-outlined" style="font-size: 16px; color: #6b7280;">lock</span>
-            Código de 16 caracteres visible solo para el Encargado y Administrador.
+          <span style="display: inline-flex; align-items: flex-start; gap: 6px; padding: 6px 10px; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 8px; color: #4b5563; font-size: 0.76rem; font-weight: 500; line-height: 1.4;">
+            <span class="material-symbols-outlined" style="font-size: 16px; color: #6b7280; flex-shrink: 0; margin-top: 1px;">lock</span>
+            <span>🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. <a href="chat.html" target="_blank" style="color: inherit; text-decoration: underline; font-weight: 700;">https://resucito.do/chat.html</a></span>
           </span>
         </div>
       `;
@@ -602,7 +656,7 @@ async function guardarParroquiaDesdeFormulario(e) {
     const puedeVer = puedeVerCodigoParroquia(docData, user);
     const infoCodigo = puedeVer
       ? `Código de acceso (16 caracteres): <b>${codigo16}</b>.`
-      : `El código de 16 caracteres solo puede ser visto por el Cantor Encargado y el Administrador. Si deseas ser el encargado de esta parroquia, comunícate con dbaezh78@gmail.com.`;
+      : `El código de 16 caracteres solo puede ser visto por el Cantor Encargado y el Administrador. 🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. https://resucito.do/chat.html`;
 
     if (retornoUrl) {
       mostrarNotif(
@@ -775,7 +829,7 @@ window.copiarCodigoParroquia = (codigo, parrId = '') => {
   if (!puedeVerCodigoParroquia(parr, user)) {
     mostrarNotif(
       "Acceso Restringido",
-      `Solo el Cantor Encargado asignado a esta parroquia y el Administrador principal pueden ver y copiar el código de 16 caracteres. Si eres de esta parroquia y no tiene encargado asignado, habla con el Administrador (${SUPER_ADMIN_EMAIL}) para ser designado.`,
+      `🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. https://resucito.do/chat.html`,
       "lock"
     );
     return;

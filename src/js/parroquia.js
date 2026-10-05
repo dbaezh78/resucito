@@ -180,15 +180,55 @@ function actualizarHeaderUsuario(user) {
     `;
 }
 
-// --- CARGAR PARROQUIAS DESDE FIRESTORE ---
+// --- CARGAR PARROQUIAS DESDE FIRESTORE CON RESPALDO LOCAL ---
 async function cargarTodasLasParroquias() {
+    // 1. Cargar inmediatamente desde cache o json
+    if (todasLasParroquias.length === 0) {
+        try {
+            const rawCache = localStorage.getItem('resucito_parroquias_cache');
+            if (rawCache) {
+                todasLasParroquias = JSON.parse(rawCache);
+                if (todasLasParroquias.length > 0) poblarSelectParroquiasDisponibles();
+            }
+        } catch(e) {}
+
+        if (todasLasParroquias.length === 0) {
+            try {
+                const resp = await fetch('./data/parroquias.json');
+                if (resp.ok) {
+                    todasLasParroquias = await resp.json();
+                    poblarSelectParroquiasDisponibles();
+                }
+            } catch(e) {}
+        }
+    }
+
     try {
-        const snap = await getDocs(collection(db, "parroquias"));
-        todasLasParroquias = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        const fetchPromise = getDocs(collection(db, "parroquias"));
+        const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 4000));
+        const snap = await Promise.race([fetchPromise, timeoutPromise]);
+        
+        const remotas = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        if (remotas.length > 0) {
+            const mapa = new Map();
+            todasLasParroquias.forEach(p => mapa.set(`${p.nombre || ''}|${p.sector || ''}`, p));
+            remotas.forEach(p => mapa.set(`${p.nombre || ''}|${p.sector || ''}`, p));
+            todasLasParroquias = Array.from(mapa.values());
+        }
+
+        todasLasParroquias.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || '', 'es', { sensitivity: 'base' }));
+        try {
+            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(todasLasParroquias));
+        } catch(e) {}
+
         poblarSelectParroquiasDisponibles();
         return todasLasParroquias;
     } catch (e) {
-        console.warn("Error cargando lista de parroquias:", e);
+        if (e.message !== 'timeout') console.warn("Error sincronizando lista de parroquias con Firestore:", e);
+        if (todasLasParroquias.length > 0) {
+            poblarSelectParroquiasDisponibles();
+            return todasLasParroquias;
+        }
         return [];
     }
 }
@@ -805,19 +845,19 @@ function renderizarListadoAdminParroquias(filtro = '') {
             `;
         } else if (!p.cantorEncargadoEmail) {
             htmlCodigo = `
-                <div style="margin-top: 4px;">
-                    <span style="font-size: 0.72rem; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 3px 8px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
-                        <span class="material-symbols-outlined" style="font-size: 13px; color: #d97706;">lock</span>
-                        Sin cantor encargado. Contactar a ${SUPER_ADMIN_EMAIL}
+                <div style="margin-top: 6px;">
+                    <span style="font-size: 0.74rem; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 4px 8px; border-radius: 6px; display: inline-flex; align-items: flex-start; gap: 4px; line-height: 1.35;">
+                        <span class="material-symbols-outlined" style="font-size: 14px; color: #d97706; flex-shrink: 0; margin-top: 1px;">lock</span>
+                        <span>🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. <a href="chat.html" target="_blank" style="color: #b45309; text-decoration: underline; font-weight: 700;">https://resucito.do/chat.html</a></span>
                     </span>
                 </div>
             `;
         } else {
             htmlCodigo = `
-                <div style="margin-top: 4px;">
-                    <span style="font-size: 0.72rem; color: #6b7280; background: #f3f4f6; border: 1px solid #e5e7eb; padding: 3px 8px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
-                        <span class="material-symbols-outlined" style="font-size: 13px; color: #9ca3af;">lock</span>
-                        Código visible solo para el Encargado y Administrador.
+                <div style="margin-top: 6px;">
+                    <span style="font-size: 0.74rem; color: #6b7280; background: #f3f4f6; border: 1px solid #e5e7eb; padding: 4px 8px; border-radius: 6px; display: inline-flex; align-items: flex-start; gap: 4px; line-height: 1.35;">
+                        <span class="material-symbols-outlined" style="font-size: 14px; color: #9ca3af; flex-shrink: 0; margin-top: 1px;">lock</span>
+                        <span>🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. <a href="chat.html" target="_blank" style="color: inherit; text-decoration: underline; font-weight: 700;">https://resucito.do/chat.html</a></span>
                     </span>
                 </div>
             `;
@@ -1021,7 +1061,7 @@ window.procesarArchivoCsvParroquias = async (event) => {
 window.abrirModalCodigo16 = () => {
     if (!parroquiaActiva) return;
     if (!esAdminOEncargado()) {
-        mostrarAlerta(`Solo el Cantor Encargado y el Administrador principal (${SUPER_ADMIN_EMAIL}) pueden ver el código de acceso de 16 caracteres.`, "Acceso Restringido", "lock");
+        mostrarAlerta(`🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. https://resucito.do/chat.html`, "Acceso Restringido", "lock");
         return;
     }
     const modal = document.getElementById('modal-codigo-16');
@@ -1037,7 +1077,7 @@ window.abrirModalCodigo16 = () => {
 window.copiarCodigo16 = () => {
     if (!parroquiaActiva || !parroquiaActiva.codigoAcceso) return;
     if (!esAdminOEncargado()) {
-        mostrarAlerta(`Solo el Cantor Encargado y el Administrador principal pueden copiar el código de 16 caracteres.`, "Acceso Restringido", "lock");
+        mostrarAlerta(`🔒 Solicite al Administrador Principal la asignación como responsable de Canto de su parroquia. Si tu parroquia no tiene encargado, comunícate por el chat para ser agregado. https://resucito.do/chat.html`, "Acceso Restringido", "lock");
         return;
     }
     navigator.clipboard.writeText(parroquiaActiva.codigoAcceso).then(() => {

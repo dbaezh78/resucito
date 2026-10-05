@@ -1,5 +1,5 @@
 // sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v352'; // v2.1.22 Control de acceso de códigos de 16 caracteres por encargado
+const CACHE_NAME = 'resucito-cache-v353'; // v2.1.23 Carga instantánea de parroquias y mensaje de asignación vía chat
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -23,6 +23,7 @@ const STATIC_ASSETS = [
   'src/js/parroquia.js',
   'src/css/datosparroquia.css',
   'src/js/datosparroquia.js',
+  'src/js/perfil.js',
   'src/lib/jszip.min.js',
   'src/bitacora.css',
   'src/js/bitacora.js',
@@ -39,6 +40,7 @@ const STATIC_ASSETS = [
   'data/chord_positions.json',
   'data/catequesis.json',
   'data/paises.json',
+  'data/parroquias.json',
   'data/plantilla_parroquias.csv',
   'data/ajustes_modal.html'
 ];

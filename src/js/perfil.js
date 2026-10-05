@@ -47,14 +47,27 @@ const normalizarTexto = (texto) => {
 
 // Cache de parroquias para perfil
 let parroquiasPerfilCache = [];
+let sincronizacionParroquiasEnCurso = null;
+
+// Helper para leer cache local de parroquias
+function obtenerParroquiasLocales() {
+  try {
+    const raw = localStorage.getItem('resucito_parroquias_cache');
+    if (raw) {
+      const arr = JSON.parse(raw);
+      if (Array.isArray(arr) && arr.length > 0) return arr;
+    }
+  } catch(e) {}
+  return [];
+}
 
 // Carga inicial al cargar el DOM
 document.addEventListener('DOMContentLoaded', async () => {
   setupCollapsibles();
-  await cargarPaises();
-  await cargarParroquiasPerfil();
   llenarComunidades();
   initAuthState();
+  await cargarPaises();
+  await cargarParroquiasPerfil();
 });
 
 // Inicializar colapsables
@@ -122,7 +135,55 @@ async function cargarPaises() {
   }
 }
 
-// Cargar Parroquias desde Firestore para el perfil
+// Renderizar opciones en el selector de parroquias
+function renderizarOpcionesParroquia(selectParr, paisActual, valorSeleccionado) {
+  if (!selectParr) return;
+
+  let parroquiasFiltradas = parroquiasPerfilCache;
+  if (paisActual) {
+    const paisNorm = normalizarTexto(paisActual);
+    parroquiasFiltradas = parroquiasPerfilCache.filter(p => {
+      const pNorm = normalizarTexto(p.pais || p.ciudad || '');
+      return pNorm === paisNorm || pNorm.includes(paisNorm) || paisNorm.includes(pNorm);
+    });
+  }
+
+  let optionsHtml = '<option value="">-- Selecciona tu parroquia --</option>';
+
+  if (parroquiasFiltradas.length > 0) {
+    optionsHtml += parroquiasFiltradas.map(p => {
+      const sectorParts = [];
+      if (p.sector) sectorParts.push(p.sector);
+      if (p.provincia) sectorParts.push(p.provincia);
+      const sectorText = sectorParts.length > 0 ? ` (${sectorParts.join(', ')})` : '';
+      const paisText = !paisActual && p.pais ? ` - ${p.pais}` : '';
+      return `<option value="${p.nombre}">${p.nombre}${sectorText}${paisText}</option>`;
+    }).join('');
+  } else if (paisActual) {
+    optionsHtml += `<option value="" disabled>No hay parroquias registradas para ${paisActual}</option>`;
+  }
+
+  // Opción para crear nueva si no existe
+  optionsHtml += '<option value="__CREAR__">➕ Mi parroquia no existe (Crear Parroquia)...</option>';
+
+  selectParr.innerHTML = optionsHtml;
+
+  // Si el usuario tenía una parroquia guardada previamente
+  const valFinal = valorSeleccionado || selectParr.dataset.valorSeleccionado || '';
+  if (valFinal && valFinal !== '__CREAR__') {
+    const existeOpcion = Array.from(selectParr.options).some(o => o.value === valFinal);
+    if (!existeOpcion) {
+      const optPrev = document.createElement('option');
+      optPrev.value = valFinal;
+      optPrev.textContent = `${valFinal} (Guardada)`;
+      selectParr.insertBefore(optPrev, selectParr.lastElementChild);
+    }
+    selectParr.value = valFinal;
+    selectParr.dataset.valorSeleccionado = valFinal;
+  }
+}
+
+// Cargar Parroquias desde Firestore para el perfil con respaldo local instantáneo
 async function cargarParroquiasPerfil(paisFiltro = '', valorSeleccionado = '') {
   const selectParr = document.getElementById('userParroquia');
   const selectPais = document.getElementById('userCountry');
@@ -134,66 +195,86 @@ async function cargarParroquiasPerfil(paisFiltro = '', valorSeleccionado = '') {
     linkCrear.href = `datosparroquia.html?pais=${encodeURIComponent(paisActual)}&retorno=perfil.html`;
   }
 
-  try {
-    if (parroquiasPerfilCache.length === 0) {
-      const snap = await getDocs(collection(db, "parroquias"));
-      parroquiasPerfilCache = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      parroquiasPerfilCache.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || '', 'es', { sensitivity: 'base' }));
+  if (valorSeleccionado) {
+    selectParr.dataset.valorSeleccionado = valorSeleccionado;
+  }
+
+  // 1. Intentar cargar inmediatamente desde localStorage si la memoria está vacía
+  if (parroquiasPerfilCache.length === 0) {
+    const locales = obtenerParroquiasLocales();
+    if (locales.length > 0) {
+      parroquiasPerfilCache = locales;
     }
+  }
 
-    let parroquiasFiltradas = parroquiasPerfilCache;
-    if (paisActual) {
-      parroquiasFiltradas = parroquiasPerfilCache.filter(p => {
-        return normalizarTexto(p.pais || p.ciudad || '') === normalizarTexto(paisActual);
-      });
-    }
-
-    let optionsHtml = '<option value="">-- Selecciona tu parroquia --</option>';
-
-    if (parroquiasFiltradas.length > 0) {
-      optionsHtml += parroquiasFiltradas.map(p => {
-        const sectorParts = [];
-        if (p.sector) sectorParts.push(p.sector);
-        if (p.provincia) sectorParts.push(p.provincia);
-        const sectorText = sectorParts.length > 0 ? ` (${sectorParts.join(', ')})` : '';
-        const paisText = !paisActual && p.pais ? ` - ${p.pais}` : '';
-        return `<option value="${p.nombre}">${p.nombre}${sectorText}${paisText}</option>`;
-      }).join('');
-    } else if (paisActual) {
-      optionsHtml += `<option value="" disabled>No hay parroquias registradas para ${paisActual}</option>`;
-    }
-
-    // Opción para crear nueva si no existe
-    optionsHtml += '<option value="__CREAR__">➕ Mi parroquia no existe (Crear Parroquia)...</option>';
-
-    selectParr.innerHTML = optionsHtml;
-
-    // Si el usuario tenía una parroquia guardada previamente que no está en la lista oficial
-    if (valorSeleccionado && valorSeleccionado !== '__CREAR__') {
-      const existeOpcion = Array.from(selectParr.options).some(o => o.value === valorSeleccionado);
-      if (!existeOpcion) {
-        const optPrev = document.createElement('option');
-        optPrev.value = valorSeleccionado;
-        optPrev.textContent = `${valorSeleccionado} (Guardada)`;
-        selectParr.insertBefore(optPrev, selectParr.lastElementChild);
-      }
-      selectParr.value = valorSeleccionado;
-    }
-
-    // Configurar listener para cuando seleccione "__CREAR__"
-    if (!selectParr.dataset.hasCrearListener) {
-      selectParr.dataset.hasCrearListener = "true";
-      selectParr.addEventListener('change', () => {
-        if (selectParr.value === '__CREAR__') {
-          const pais = selectPais ? selectPais.value : '';
-          window.location.href = `datosparroquia.html?pais=${encodeURIComponent(pais)}&retorno=perfil.html`;
+  // 2. Si todavía está vacía, cargar inmediatamente desde data/parroquias.json
+  if (parroquiasPerfilCache.length === 0) {
+    try {
+      const res = await fetch('./data/parroquias.json');
+      if (res.ok) {
+        const jsonParr = await res.json();
+        if (Array.isArray(jsonParr) && jsonParr.length > 0) {
+          parroquiasPerfilCache = jsonParr;
+          try {
+            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(parroquiasPerfilCache));
+          } catch(e) {}
         }
-      });
+      }
+    } catch(e) {
+      console.warn("No se pudo cargar data/parroquias.json:", e);
     }
+  }
 
-  } catch (err) {
-    console.warn("Error cargando parroquias para perfil:", err);
-    selectParr.innerHTML = '<option value="">-- Error cargando parroquias --</option><option value="__CREAR__">➕ Crear Parroquia...</option>';
+  // 3. Renderizar INMEDIATAMENTE las opciones para que nunca se quede en 'Cargando parroquias...'
+  renderizarOpcionesParroquia(selectParr, paisActual, valorSeleccionado);
+
+  // Configurar listener para cuando seleccione "__CREAR__"
+  if (!selectParr.dataset.hasCrearListener) {
+    selectParr.dataset.hasCrearListener = "true";
+    selectParr.addEventListener('change', () => {
+      if (selectParr.value === '__CREAR__') {
+        const pais = selectPais ? selectPais.value : '';
+        window.location.href = `datosparroquia.html?pais=${encodeURIComponent(pais)}&retorno=perfil.html`;
+      } else {
+        selectParr.dataset.valorSeleccionado = selectParr.value;
+      }
+    });
+  }
+
+  // 4. Sincronizar en segundo plano con Firestore (timeout de 4 segundos para evitar bloqueos)
+  if (!sincronizacionParroquiasEnCurso) {
+    sincronizacionParroquiasEnCurso = (async () => {
+      try {
+        const fetchPromise = getDocs(collection(db, "parroquias"));
+        const timeoutPromise = new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('timeout')), 4000)
+        );
+        const snap = await Promise.race([fetchPromise, timeoutPromise]);
+        
+        const remotas = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        if (remotas.length > 0) {
+          const mapa = new Map();
+          parroquiasPerfilCache.forEach(p => mapa.set(`${normalizarTexto(p.nombre)}|${normalizarTexto(p.sector || '')}`, p));
+          remotas.forEach(p => mapa.set(`${normalizarTexto(p.nombre)}|${normalizarTexto(p.sector || '')}`, p));
+          parroquiasPerfilCache = Array.from(mapa.values());
+          parroquiasPerfilCache.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || '', 'es', { sensitivity: 'base' }));
+
+          try {
+            localStorage.setItem('resucito_parroquias_cache', JSON.stringify(parroquiasPerfilCache));
+          } catch(e) {}
+
+          const paisNow = selectPais ? selectPais.value : paisActual;
+          const valNow = selectParr.value || selectParr.dataset.valorSeleccionado || valorSeleccionado;
+          renderizarOpcionesParroquia(selectParr, paisNow, valNow);
+        }
+      } catch (err) {
+        if (err.message !== 'timeout') {
+          console.warn("Advertencia al sincronizar parroquias con Firestore:", err);
+        }
+      } finally {
+        sincronizacionParroquiasEnCurso = null;
+      }
+    })();
   }
 }
 
