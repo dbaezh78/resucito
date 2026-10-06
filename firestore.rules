@@ -63,19 +63,11 @@ service cloud.firestore {
     // 10. Colección de ASISTENCIA Y CHAT EN VIVO (Soporte WhatsApp Web)
     // - Los documentos principales son el encabezado del chat por usuario
     match /support_chats/{chatId} {
-      allow read, write: if request.auth != null && (
-        request.auth.token.email == 'dbaezh78@gmail.com' || 
-        request.auth.uid == chatId || 
-        (resource != null && resource.data.userId == request.auth.uid) ||
-        (request.resource != null && request.resource.data.userId == request.auth.uid)
-      );
+      allow read, write: if request.auth != null;
 
       // Subcolección de mensajes del chat
       match /messages/{messageId} {
-        allow read, write: if request.auth != null && (
-          request.auth.token.email == 'dbaezh78@gmail.com' || 
-          request.auth.uid == chatId
-        );
+        allow read, write: if request.auth != null;
       }
     }
 

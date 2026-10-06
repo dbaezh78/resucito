@@ -36,6 +36,18 @@
   letter-spacing: 0.5px;
 }
 
+.badge-programador {
+  background: #ede9fe;
+  color: #4338ca;
+  border: 1px solid #c7d2fe;
+}
+
+body.theme-dark .badge-programador {
+  background: #1e1b4b;
+  color: #a5b4fc;
+  border: 1px solid #4338ca;
+}
+
 .badge-encargado {
   background: #fef3c7;
   color: #b45309;
@@ -945,6 +957,34 @@
 
 #contenedor-seleccion-parroquia .item-canto:hover {
   background: rgba(208, 18, 18, 0.06) !important;
+}
+
+/* Sombreado temporal cuando se quita un canto para reemplazar */
+#contenedor-seleccion-parroquia .item-canto.canto-deseleccionado-anim,
+.item-canto.canto-deseleccionado-anim {
+  background: #fef08a !important;
+  border-left: 4px solid #eab308 !important;
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.4) !important;
+  animation: pulsoCantoDeseleccionado 3s ease-out forwards;
+}
+
+@keyframes pulsoCantoDeseleccionado {
+  0% {
+    background: #fef08a !important;
+  }
+  70% {
+    background: #fef08a !important;
+  }
+  100% {
+    background: inherit;
+  }
+}
+
+body.theme-dark #contenedor-seleccion-parroquia .item-canto.canto-deseleccionado-anim,
+body.theme-dark .item-canto.canto-deseleccionado-anim {
+  background: rgba(250, 204, 21, 0.3) !important;
+  border-left: 4px solid #facc15 !important;
+  box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.5) !important;
 }
 
 .prep-cantos-detalle .prep-canto-item-view:nth-child(even) {

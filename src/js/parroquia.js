@@ -252,10 +252,9 @@ function obtenerRolEnParroquia() {
 
     const email = (user.email || '').toLowerCase().trim();
 
-    // El Administrador General solicitó explícitamente figurar visualmente como 'cantor'
-    // en la parroquia, manteniendo el 100% de los privilegios administrativos en toda la aplicación.
+    // El Programador tiene todos los privilegios en la aplicación
     if (email === SUPER_ADMIN_EMAIL) {
-        return 'cantor';
+        return 'programador';
     }
 
     if (parroquiaActiva.cantorEncargadoEmail && parroquiaActiva.cantorEncargadoEmail.toLowerCase().trim() === email) {
@@ -794,6 +793,12 @@ function renderizarBarraParroquiaActiva() {
             // Contraído por defecto (con flecha apuntando a expand_more)
             window.contraerSeccionPrepForm();
         }
+    }
+
+    // Si la pantalla de asignación de cantores está abierta en vivo, actualizar sus controles
+    const boxAsignacion = document.getElementById('box-asignacion-cantores');
+    if (boxAsignacion && boxAsignacion.style.display === 'block') {
+        renderizarAreaAsignacionCantores();
     }
 }
 
@@ -1821,6 +1826,26 @@ window.abrirModalMiembros = async (parroquiaIdFiltro = null) => {
 
     poblarSelectorParroquiaModalMiembros();
     renderizarPestaniasMiembros();
+
+    // Configurar opciones de rol para añadir miembro según privilegios
+    const selectNuevoRol = document.getElementById('select-nuevo-miembro-rol');
+    if (selectNuevoRol) {
+        if (esSuperAdmin) {
+            selectNuevoRol.innerHTML = `
+                <option value="cantor">Cantor (puede ver y colaborar)</option>
+                <option value="asistente">Asistente (asistente del encargado de cantos)</option>
+                <option value="encargado">Encargado (responsable de cantos de la parroquia)</option>
+                <option value="miembro">Miembro / Asamblea (solo lectura)</option>
+            `;
+        } else {
+            selectNuevoRol.innerHTML = `
+                <option value="cantor">Cantor (puede ver y colaborar)</option>
+                <option value="asistente">Asistente (asistente del encargado de cantos)</option>
+                <option value="miembro">Miembro / Asamblea (solo lectura)</option>
+            `;
+        }
+    }
+
     if (modal) modal.style.display = 'flex';
 
     // Cargar usuarios registrados de Firebase para autocompletar si es encargado
@@ -2021,30 +2046,59 @@ function renderizarPestaniasMiembros() {
         if (listaMiembros.length === 0) {
             contenedorMiem.innerHTML = subtituloMiem + `<p style="text-align: center; color: var(--text-muted); padding: 24px;">No hay miembros registrados aún.</p>`;
         } else {
+            const userEmail = (usuarioActual?.email || auth.currentUser?.email || '').toLowerCase().trim();
+            const soyProgramador = userEmail === SUPER_ADMIN_EMAIL;
             const puedeCambiarRoles = esAdminOEncargado();
+
             contenedorMiem.innerHTML = subtituloMiem + listaMiembros.map(m => {
-                const esEncargadoParr = m.rol === 'encargado' || m.rol === 'admin';
-                const badgeClass = esEncargadoParr ? 'badge-encargado' : (m.rol === 'asistente' ? 'badge-asistente' : 'badge-cantor');
-                const badgeLabel = esEncargadoParr ? 'ENCARGADO' : (m.rol === 'asistente' ? 'ASISTENTE' : 'CANTOR');
+                const mEmail = (m.email || '').toLowerCase().trim();
+                const esEsteProgramador = mEmail === SUPER_ADMIN_EMAIL || m.rol === 'programador';
+                const esEncargadoParr = m.rol === 'encargado' || m.rol === 'admin' || (parroquiaSeleccionadaActual?.cantorEncargadoEmail && parroquiaSeleccionadaActual.cantorEncargadoEmail.toLowerCase().trim() === mEmail);
+
+                let badgeClass = 'badge-cantor';
+                let badgeLabel = 'CANTOR';
+                if (esEsteProgramador) {
+                    badgeClass = 'badge-programador';
+                    badgeLabel = 'PROGRAMADOR';
+                } else if (esEncargadoParr) {
+                    badgeClass = 'badge-encargado';
+                    badgeLabel = 'ENCARGADO';
+                } else if (m.rol === 'asistente') {
+                    badgeClass = 'badge-asistente';
+                    badgeLabel = 'ASISTENTE';
+                }
+
+                // El Programador puede editar cualquier miembro excepto a sí mismo (que siempre es Programador)
+                // Un Encargado solo puede alternar entre CANTOR y ASISTENTE para miembros comunes (no encargados ni programador)
+                const puedeEditarEsteRol = !esEsteProgramador && (soyProgramador || (puedeCambiarRoles && !esEncargadoParr));
+
+                // Nadie puede eliminar al Programador.
+                // El Programador puede eliminar a cualquier miembro (excepto a sí mismo).
+                // Un Encargado regular solo puede eliminar cantores o asistentes (no a otros encargados ni a sí mismo).
+                const puedeEliminarEste = !esEsteProgramador && (
+                    (soyProgramador && mEmail !== userEmail) ||
+                    (puedeCambiarRoles && !esEncargadoParr && mEmail !== userEmail)
+                );
 
                 return `
                 <div class="miembro-fila" style="background: rgba(0,0,0,0.02); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px;">
                     <div class="miembro-fila-info">
-                        <span class="miembro-fila-nombre" style="font-size: 0.95rem; font-weight: 700; color: #1e293b;">${m.displayName || m.email}</span>
-                        <span class="miembro-fila-email" style="font-size: 0.8rem; color: #64748b;">${m.email}</span>
+                        <span class="miembro-fila-nombre" style="font-size: 0.95rem; font-weight: 700; color: #1e293b;">${escapeHtml(m.displayName || m.email)}</span>
+                        <span class="miembro-fila-email" style="font-size: 0.8rem; color: #64748b;">${escapeHtml(m.email)}</span>
                     </div>
                     <div style="display: flex; align-items: center; gap: 8px;">
-                        ${puedeCambiarRoles && !esEncargadoParr ? `
+                        ${puedeEditarEsteRol ? `
                             <select onchange="window.cambiarRolMiembroParroquia('${m.email}', this.value, '${parroquiaSeleccionadaActual?.id}')" style="font-size: 0.78rem; font-weight: 700; padding: 3px 6px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">
-                                <option value="cantor" ${m.rol === 'cantor' || !m.rol ? 'selected' : ''}>CANTOR</option>
+                                <option value="cantor" ${(!m.rol || m.rol === 'cantor') && !esEncargadoParr ? 'selected' : ''}>CANTOR</option>
                                 <option value="asistente" ${m.rol === 'asistente' ? 'selected' : ''}>ASISTENTE</option>
+                                ${soyProgramador ? `<option value="encargado" ${esEncargadoParr ? 'selected' : ''}>ENCARGADO</option>` : ''}
                             </select>
                         ` : `
                             <span class="parroquia-badge-rol ${badgeClass}" style="letter-spacing: 0.5px; font-weight: 800; padding: 4px 10px; border-radius: 8px;">
                                 ${badgeLabel}
                             </span>
                         `}
-                        ${m.email !== usuarioActual?.email && puedeCambiarRoles ? `
+                        ${puedeEliminarEste ? `
                             <button class="btn-parroquia-top" style="padding: 4px 8px; color: #b91c1c; border-radius: 8px;" title="Eliminar miembro" onclick="window.eliminarMiembroParroquia('${m.email}', '${parroquiaSeleccionadaActual?.id}')">
                                 <span class="material-symbols-outlined" style="font-size: 16px;">delete</span>
                             </button>
@@ -2175,6 +2229,14 @@ window.agregarMiembroDirecto = async () => {
         return;
     }
 
+    const userEmail = (usuarioActual?.email || auth.currentUser?.email || '').toLowerCase().trim();
+    const soyProgramador = userEmail === SUPER_ADMIN_EMAIL;
+
+    if (rol === 'encargado' && !soyProgramador) {
+        mostrarAlerta("Solo el Programador puede asignar el rol de Encargado.", "Permiso denegado", "error");
+        return;
+    }
+
     const existe = (targetParr.miembros || []).some(m => m.email?.toLowerCase().trim() === email);
     if (existe) {
         mostrarAlerta("Este usuario ya es miembro de la parroquia.", "Ya registrado", "info");
@@ -2191,10 +2253,22 @@ window.agregarMiembroDirecto = async () => {
     try {
         const remaining = (targetParr.solicitudesPendientes || []).filter(s => s.email?.toLowerCase().trim() !== email);
 
-        await updateDoc(doc(db, "parroquias", targetId), {
+        let updateData = {
             miembros: arrayUnion(nuevoMiembro),
             solicitudesPendientes: remaining
-        });
+        };
+
+        if (rol === 'encargado') {
+            const nomEnc = nuevoMiembro.displayName;
+            updateData.cantorEncargado = nomEnc;
+            updateData.cantorEncargadoNombre = nomEnc;
+            updateData.cantorEncargadoEmail = email;
+            targetParr.cantorEncargado = nomEnc;
+            targetParr.cantorEncargadoNombre = nomEnc;
+            targetParr.cantorEncargadoEmail = email;
+        }
+
+        await updateDoc(doc(db, "parroquias", targetId), updateData);
 
         targetParr.miembros = targetParr.miembros || [];
         targetParr.miembros.push(nuevoMiembro);
@@ -2203,6 +2277,12 @@ window.agregarMiembroDirecto = async () => {
         if (parroquiaActiva && parroquiaActiva.id === targetId) {
             parroquiaActiva.miembros = targetParr.miembros;
             parroquiaActiva.solicitudesPendientes = remaining;
+            if (rol === 'encargado') {
+                parroquiaActiva.cantorEncargado = updateData.cantorEncargado;
+                parroquiaActiva.cantorEncargadoNombre = updateData.cantorEncargadoNombre;
+                parroquiaActiva.cantorEncargadoEmail = updateData.cantorEncargadoEmail;
+            }
+            renderizarBarraParroquiaActiva();
         }
 
         try {
@@ -2223,10 +2303,31 @@ window.cambiarRolMiembroParroquia = async (email, nuevoRol, parroquiaId = null) 
     const targetId = parroquiaId || parroquiaActiva?.id;
     if (!targetId) return;
 
-    const targetParr = todasLasParroquias.find(p => p.id === targetId) || parroquiaActiva;
     const emailNorm = (email || '').toLowerCase().trim();
+    if (emailNorm === SUPER_ADMIN_EMAIL) {
+        mostrarAlerta("No se puede modificar el rol del Programador.", "Acción no permitida", "warning");
+        return;
+    }
+
+    const userEmail = (usuarioActual?.email || auth.currentUser?.email || '').toLowerCase().trim();
+    const soyProgramador = userEmail === SUPER_ADMIN_EMAIL;
+
+    if (nuevoRol === 'encargado' && !soyProgramador) {
+        mostrarAlerta("Solo el Programador puede asignar el rol de Encargado.", "Permiso denegado", "error");
+        return;
+    }
+
+    const targetParr = todasLasParroquias.find(p => p.id === targetId) || parroquiaActiva;
+    const miembroActual = (targetParr.miembros || []).find(m => m.email?.toLowerCase().trim() === emailNorm);
+    const esActualmenteEncargado = miembroActual && (miembroActual.rol === 'encargado' || miembroActual.rol === 'admin' || targetParr.cantorEncargadoEmail?.toLowerCase().trim() === emailNorm);
+
+    if (esActualmenteEncargado && !soyProgramador) {
+        mostrarAlerta("Solo el Programador puede modificar el rol de un Encargado.", "Permiso denegado", "error");
+        return;
+    }
 
     try {
+        let updateData = {};
         const miembrosActualizados = (targetParr.miembros || []).map(m => {
             if (m.email?.toLowerCase().trim() === emailNorm) {
                 return { ...m, rol: nuevoRol };
@@ -2234,13 +2335,39 @@ window.cambiarRolMiembroParroquia = async (email, nuevoRol, parroquiaId = null) 
             return m;
         });
 
-        await updateDoc(doc(db, "parroquias", targetId), {
-            miembros: miembrosActualizados
-        });
+        updateData.miembros = miembrosActualizados;
+
+        if (nuevoRol === 'encargado') {
+            const nomEnc = miembroActual?.displayName || emailNorm.split('@')[0];
+            updateData.cantorEncargado = nomEnc;
+            updateData.cantorEncargadoNombre = nomEnc;
+            updateData.cantorEncargadoEmail = emailNorm;
+            targetParr.cantorEncargado = nomEnc;
+            targetParr.cantorEncargadoNombre = nomEnc;
+            targetParr.cantorEncargadoEmail = emailNorm;
+        } else if (targetParr.cantorEncargadoEmail?.toLowerCase().trim() === emailNorm) {
+            updateData.cantorEncargado = '';
+            updateData.cantorEncargadoNombre = '';
+            updateData.cantorEncargadoEmail = '';
+            targetParr.cantorEncargado = '';
+            targetParr.cantorEncargadoNombre = '';
+            targetParr.cantorEncargadoEmail = '';
+        }
+
+        await updateDoc(doc(db, "parroquias", targetId), updateData);
 
         targetParr.miembros = miembrosActualizados;
         if (parroquiaActiva && parroquiaActiva.id === targetId) {
             parroquiaActiva.miembros = miembrosActualizados;
+            if (nuevoRol === 'encargado') {
+                parroquiaActiva.cantorEncargado = updateData.cantorEncargado;
+                parroquiaActiva.cantorEncargadoNombre = updateData.cantorEncargadoNombre;
+                parroquiaActiva.cantorEncargadoEmail = updateData.cantorEncargadoEmail;
+            } else if (updateData.cantorEncargadoEmail === '') {
+                parroquiaActiva.cantorEncargado = '';
+                parroquiaActiva.cantorEncargadoNombre = '';
+                parroquiaActiva.cantorEncargadoEmail = '';
+            }
             renderizarBarraParroquiaActiva();
         }
 
@@ -2260,19 +2387,52 @@ window.eliminarMiembroParroquia = async (email, parroquiaId = null) => {
     const targetId = parroquiaId || parroquiaActiva?.id;
     if (!targetId) return;
 
+    const emailNorm = (email || '').toLowerCase().trim();
+    if (emailNorm === SUPER_ADMIN_EMAIL) {
+        mostrarAlerta("No se puede eliminar al Programador de la parroquia.", "Acción no permitida", "warning");
+        return;
+    }
+
+    const userEmail = (usuarioActual?.email || auth.currentUser?.email || '').toLowerCase().trim();
+    const soyProgramador = userEmail === SUPER_ADMIN_EMAIL;
+
     const targetParr = todasLasParroquias.find(p => p.id === targetId) || parroquiaActiva;
+    const miembro = (targetParr.miembros || []).find(m => m.email?.toLowerCase().trim() === emailNorm);
+    const esEncargado = miembro && (miembro.rol === 'encargado' || miembro.rol === 'admin' || targetParr.cantorEncargadoEmail?.toLowerCase().trim() === emailNorm);
+
+    if (esEncargado && !soyProgramador) {
+        mostrarAlerta("Solo el Programador puede eliminar a un Encargado.", "Permiso denegado", "error");
+        return;
+    }
+
     if (!confirm(`¿Eliminar a ${email} de la parroquia?`)) return;
 
     try {
-        const miembro = (targetParr.miembros || []).find(m => m.email?.toLowerCase().trim() === email.toLowerCase().trim());
         if (miembro) {
-            await updateDoc(doc(db, "parroquias", targetId), {
+            let updateData = {
                 miembros: arrayRemove(miembro)
-            });
+            };
 
-            targetParr.miembros = (targetParr.miembros || []).filter(m => m.email?.toLowerCase().trim() !== email.toLowerCase().trim());
+            if (targetParr.cantorEncargadoEmail?.toLowerCase().trim() === emailNorm) {
+                updateData.cantorEncargado = '';
+                updateData.cantorEncargadoNombre = '';
+                updateData.cantorEncargadoEmail = '';
+                targetParr.cantorEncargado = '';
+                targetParr.cantorEncargadoNombre = '';
+                targetParr.cantorEncargadoEmail = '';
+            }
+
+            await updateDoc(doc(db, "parroquias", targetId), updateData);
+
+            targetParr.miembros = (targetParr.miembros || []).filter(m => m.email?.toLowerCase().trim() !== emailNorm);
             if (parroquiaActiva && parroquiaActiva.id === targetId) {
                 parroquiaActiva.miembros = targetParr.miembros;
+                if (updateData.cantorEncargadoEmail === '') {
+                    parroquiaActiva.cantorEncargado = '';
+                    parroquiaActiva.cantorEncargadoNombre = '';
+                    parroquiaActiva.cantorEncargadoEmail = '';
+                }
+                renderizarBarraParroquiaActiva();
             }
 
             try {
@@ -2288,6 +2448,23 @@ window.eliminarMiembroParroquia = async (email, parroquiaId = null) => {
 };
 
 // --- GESTIÓN DE SELECCIÓN Y MOMENTOS LITÚRGICOS ---
+function activarMomentoLiturgico(momento) {
+    momentoSeleccionado = momento;
+    const contenedor = document.getElementById('contenedor-momentos-parroquia');
+    if (contenedor) {
+        const momentoNorm = normalizarTexto(momento || '');
+        contenedor.querySelectorAll('.opcion-momento').forEach(el => {
+            const attr = el.getAttribute('onclick') || '';
+            const texto = el.textContent || '';
+            if (normalizarTexto(attr).includes(`'${momentoNorm}'`) || normalizarTexto(texto).includes(momentoNorm)) {
+                el.classList.add('active');
+            } else {
+                el.classList.remove('active');
+            }
+        });
+    }
+}
+
 window.setMomentoParroquia = (elemento, momento) => {
     momentoSeleccionado = momento;
     if (elemento) {
@@ -2295,7 +2472,12 @@ window.setMomentoParroquia = (elemento, momento) => {
         padre.querySelectorAll('.opcion-momento').forEach(el => el.classList.remove('active'));
         elemento.classList.add('active');
     }
-    renderizarListaCantosParroquia(todosLosCantos);
+    const inputBuscador = document.getElementById('inputBuscadorCantosParroquia');
+    if (inputBuscador && inputBuscador.value.trim().length > 0) {
+        window.filtrarSeleccionParroquia();
+    } else {
+        renderizarListaCantosParroquia(todosLosCantos);
+    }
 };
 
 window.toggleCantoParroquia = (id) => {
@@ -2303,8 +2485,69 @@ window.toggleCantoParroquia = (id) => {
     const index = cantosSeleccionados.findIndex(item => String(item.id) === stringId);
 
     if (index !== -1) {
+        // --- QUITAR CANTO DE LA SELECCIÓN ---
+        const cantoEliminado = cantosSeleccionados[index];
+        const etiquetaEliminada = cantoEliminado.etiqueta;
+
         cantosSeleccionados.splice(index, 1);
+
+        if (preparacionActiva) {
+            preparacionActiva.cantos = [...cantosSeleccionados];
+        }
+
+        // 1. Cambiar automáticamente el momento litúrgico al momento del canto que se quitó
+        const MAPA_ETIQUETA_A_MOMENTO = {
+            'E': 'Entrada',
+            'P': 'Paz',
+            'L': 'Liturgia',
+            'C': 'Cuerpo',
+            'S': 'Sangre',
+            'CS': 'Comunión',
+            'F': 'Final'
+        };
+        const nuevoMomento = MAPA_ETIQUETA_A_MOMENTO[etiquetaEliminada] || (isNaN(parseInt(etiquetaEliminada)) ? 'Libre' : 'Libre');
+        activarMomentoLiturgico(nuevoMomento);
+
+        // 2. Presentar el canto como si se hubiera hecho una búsqueda
+        const metaCanto = todosLosCantos.find(c => String(c.id) === stringId);
+        const tituloCanto = metaCanto ? (metaCanto.title || metaCanto.titulo || '') : '';
+
+        const inputBuscador = document.getElementById('inputBuscadorCantosParroquia');
+        const btnLimpiar = document.getElementById('btnLimpiarCantosParroquia');
+        if (inputBuscador && tituloCanto) {
+            inputBuscador.value = tituloCanto;
+            if (btnLimpiar) btnLimpiar.style.display = 'block';
+            window.filtrarSeleccionParroquia();
+            inputBuscador.focus();
+            inputBuscador.select();
+        } else {
+            renderizarListaCantosParroquia(todosLosCantos);
+        }
+
+        // 3. Sombrear el canto en la lista por un momento y hacer scroll hacia él
+        setTimeout(() => {
+            const filaEl = document.getElementById(`item-canto-${stringId}`) || 
+                           document.querySelector(`#contenedor-seleccion-parroquia .item-canto[data-id="${stringId}"]`);
+            if (filaEl) {
+                filaEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                filaEl.classList.remove('canto-deseleccionado-anim');
+                void filaEl.offsetWidth; // Forzar reflow para reiniciar la animación
+                filaEl.classList.add('canto-deseleccionado-anim');
+                setTimeout(() => {
+                    filaEl.classList.remove('canto-deseleccionado-anim');
+                }, 3000);
+            }
+
+            const buscadorContainer = document.querySelector('.buscador-input-container');
+            if (buscadorContainer) {
+                const rect = buscadorContainer.getBoundingClientRect();
+                if (rect.top < 0 || rect.bottom > window.innerHeight) {
+                    buscadorContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }, 60);
     } else {
+        // --- AGREGAR CANTO A LA SELECCIÓN ---
         let etiqueta;
         if (momentoSeleccionado === 'Libre') {
             const numericos = cantosSeleccionados
@@ -2332,10 +2575,18 @@ window.toggleCantoParroquia = (id) => {
 
         // Orden litúrgico por defecto
         ordenarCantosPorLiturgia(cantosSeleccionados);
+
+        if (preparacionActiva) {
+            preparacionActiva.cantos = [...cantosSeleccionados];
+        }
     }
 
     actualizarInterfazSeleccionParroquia();
+    if (document.getElementById('box-asignacion-cantores')?.style.display === 'block') {
+        renderizarAreaAsignacionCantores();
+    }
     dispararAutoguardado();
+    renderizarListaPreparaciones();
 };
 
 window.moverCantoColaParroquia = (index, direccion) => {
@@ -2413,6 +2664,8 @@ function renderizarListaCantosParroquia(lista) {
     listaOrdenadaParaMostrar.forEach(canto => {
         const div = document.createElement('div');
         div.className = 'item-canto';
+        div.id = `item-canto-${canto.id}`;
+        div.setAttribute('data-id', String(canto.id));
         div.tabIndex = 0;
 
         const esDelMomento = cantoPerteneceAMomento(canto, momentoSeleccionado);
@@ -2586,6 +2839,41 @@ function renderizarAreaAsignacionCantores() {
     if (lblNombre) lblNombre.textContent = preparacionActiva.nombre;
     box.style.display = 'block';
 
+    const puedeEditar = puedeGestionarPreparacionesYCantores();
+
+    // Toolbar superior y botones de guardado
+    const btnAuto = document.getElementById('btn-toggle-autoguardado');
+    if (btnAuto) {
+        btnAuto.disabled = !puedeEditar;
+        btnAuto.style.opacity = puedeEditar ? '1' : '0.55';
+        btnAuto.style.cursor = puedeEditar ? 'pointer' : 'not-allowed';
+        btnAuto.title = puedeEditar ? 'Alternar autoguardado' : 'Acceso denegado: solo el encargado o asistente puede modificar el autoguardado';
+    }
+
+    const btnReordenar = document.getElementById('btn-reordenar-liturgia');
+    if (btnReordenar) {
+        btnReordenar.disabled = !puedeEditar;
+        btnReordenar.style.opacity = puedeEditar ? '1' : '0.55';
+        btnReordenar.style.cursor = puedeEditar ? 'pointer' : 'not-allowed';
+        btnReordenar.title = puedeEditar ? 'Ordenar automáticamente según el orden litúrgico por defecto' : 'Acceso denegado: solo el encargado o asistente puede ordenar según la liturgia';
+    }
+
+    const btnGuardarTop = document.getElementById('btn-guardar-manual');
+    if (btnGuardarTop) {
+        btnGuardarTop.disabled = !puedeEditar;
+        btnGuardarTop.style.opacity = puedeEditar ? '1' : '0.55';
+        btnGuardarTop.style.cursor = puedeEditar ? 'pointer' : 'not-allowed';
+        btnGuardarTop.title = puedeEditar ? 'Guardar y cerrar' : 'Acceso denegado: solo el encargado o asistente puede guardar cambios';
+    }
+
+    const btnGuardarFooter = document.getElementById('btn-guardar-manual-footer');
+    if (btnGuardarFooter) {
+        btnGuardarFooter.disabled = !puedeEditar;
+        btnGuardarFooter.style.opacity = puedeEditar ? '1' : '0.55';
+        btnGuardarFooter.style.cursor = puedeEditar ? 'pointer' : 'not-allowed';
+        btnGuardarFooter.title = puedeEditar ? 'Guardar y cerrar' : 'Acceso denegado: solo el encargado o asistente puede guardar cambios';
+    }
+
     // Obtener nombres de cantores / miembros de la parroquia de forma unificada
     const listaCantores = obtenerListaNombresCantores();
 
@@ -2624,25 +2912,25 @@ function renderizarAreaAsignacionCantores() {
                 <div class="canto-asignacion-controles">
                     <!-- Reordenar posición (Subir / Bajar) -->
                     <div class="canto-reorder-wrapper" style="display: flex; align-items: center; gap: 2px;">
-                        <button type="button" class="btn-mover-canto" title="Subir canto" ${index === 0 ? 'disabled' : ''} onclick="window.moverCantoAsignacion(${index}, -1)">
+                        <button type="button" class="btn-mover-canto" title="${puedeEditar ? 'Subir canto' : 'Acceso denegado'}" ${(!puedeEditar || index === 0) ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} onclick="window.moverCantoAsignacion(${index}, -1)">
                             <span class="material-symbols-outlined" style="font-size: 18px;">arrow_upward</span>
                         </button>
-                        <button type="button" class="btn-mover-canto" title="Bajar canto" ${index === cantosSeleccionados.length - 1 ? 'disabled' : ''} onclick="window.moverCantoAsignacion(${index}, 1)">
+                        <button type="button" class="btn-mover-canto" title="${puedeEditar ? 'Bajar canto' : 'Acceso denegado'}" ${(!puedeEditar || index === cantosSeleccionados.length - 1) ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} onclick="window.moverCantoAsignacion(${index}, 1)">
                             <span class="material-symbols-outlined" style="font-size: 18px;">arrow_downward</span>
                         </button>
                     </div>
 
                     <!-- Selector de Tono -->
-                    <div class="canto-tuning-wrapper" title="Tono de la interpretación">
-                        <button class="btn-tuning" onclick="window.cambiarTonoCanto(${index}, -1)">-</button>
+                    <div class="canto-tuning-wrapper" title="${puedeEditar ? 'Tono de la interpretación' : 'Acceso denegado'}">
+                        <button class="btn-tuning" ${!puedeEditar ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} onclick="window.cambiarTonoCanto(${index}, -1)">-</button>
                         <span class="badge-tono-actual" id="badge-tono-${index}">${tonoActual}</span>
-                        <button class="btn-tuning" onclick="window.cambiarTonoCanto(${index}, 1)">+</button>
+                        <button class="btn-tuning" ${!puedeEditar ? 'disabled style="opacity:0.4; cursor:not-allowed;"' : ''} onclick="window.cambiarTonoCanto(${index}, 1)">+</button>
                     </div>
 
                     <!-- Selector de Cejilla -->
                     <div style="display: flex; align-items: center; gap: 4px;">
                         <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted, #666);">Cej:</span>
-                        <select onchange="window.cambiarCejillaCanto(${index}, this.value)" style="padding: 4px 6px; border-radius: 6px; border: 1.5px solid var(--panel-border, #ccc); font-weight: 600; background: #fff;">
+                        <select ${!puedeEditar ? 'disabled style="opacity:0.6; cursor:not-allowed; background:#f1f5f9;"' : ''} onchange="window.cambiarCejillaCanto(${index}, this.value)" style="padding: 4px 6px; border-radius: 6px; border: 1.5px solid var(--panel-border, #ccc); font-weight: 600; background: ${puedeEditar ? '#fff' : '#f1f5f9'};">
                             ${[0,1,2,3,4,5,6,7,8,9].map(num => `
                                 <option value="${num}" ${String(cejillaActual) === String(num) ? 'selected' : ''}>${num === 0 ? 'Sin cejilla' : num}</option>
                             `).join('')}
@@ -2652,10 +2940,10 @@ function renderizarAreaAsignacionCantores() {
                     <!-- Selector de Cantor -->
                     <div class="canto-cantor-wrapper">
                         <span class="material-symbols-outlined">person</span>
-                        <select id="select-cantor-${index}" onchange="window.cambiarCantorCanto(${index}, this.value)">
+                        <select id="select-cantor-${index}" ${!puedeEditar ? 'disabled style="opacity:0.6; cursor:not-allowed; background:#f1f5f9;"' : ''} onchange="window.cambiarCantorCanto(${index}, this.value)">
                             ${opcionesCantores}
                         </select>
-                        <input type="text" id="input-otro-cantor-${index}" placeholder="Nombre del cantor" value="${cantorActual}" style="${esCantorPersonalizado ? 'display:block;' : 'display:none;'} min-width: 130px; border-bottom: 1.5px solid var(--accent-color, #d01212); padding: 2px;" oninput="window.guardarOtroCantor(${index}, this.value)">
+                        <input type="text" id="input-otro-cantor-${index}" placeholder="Nombre del cantor" value="${cantorActual}" style="${esCantorPersonalizado ? 'display:block;' : 'display:none;'} min-width: 130px; border-bottom: 1.5px solid var(--accent-color, #d01212); padding: 2px;" ${!puedeEditar ? 'disabled style="opacity:0.6; cursor:not-allowed;"' : ''} oninput="window.guardarOtroCantor(${index}, this.value)">
                     </div>
 
                     <!-- Botón para ver en Visor -->
@@ -2669,7 +2957,10 @@ function renderizarAreaAsignacionCantores() {
 }
 
 window.moverCantoAsignacion = (index, direccion) => {
-    if (!puedeGestionarPreparacionesYCantores()) return;
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Acceso denegado: Solo el encargado o asistente puede mover los cantos.", "Acceso denegado", "error");
+        return;
+    }
     const targetIdx = index + direccion;
     if (targetIdx < 0 || targetIdx >= cantosSeleccionados.length) return;
 
@@ -2688,7 +2979,10 @@ window.moverCantoAsignacion = (index, direccion) => {
 };
 
 window.reordenarLiturgicamentePreparacionActiva = () => {
-    if (!puedeGestionarPreparacionesYCantores()) return;
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Acceso denegado: Solo el encargado o asistente puede reordenar según la liturgia.", "Acceso denegado", "error");
+        return;
+    }
     if (!cantosSeleccionados || cantosSeleccionados.length === 0) return;
     ordenarCantosPorLiturgia(cantosSeleccionados);
     if (preparacionActiva) {
@@ -2703,6 +2997,10 @@ window.reordenarLiturgicamentePreparacionActiva = () => {
 
 // Transposición de Tono por Canto
 window.cambiarTonoCanto = (index, delta) => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Acceso denegado: Solo el encargado o asistente puede modificar los tonos.", "Acceso denegado", "error");
+        return;
+    }
     if (!cantosSeleccionados[index]) return;
     const c = cantosSeleccionados[index];
     const offsetActual = parseInt(c.acorde || 0) + delta;
@@ -2716,12 +3014,20 @@ window.cambiarTonoCanto = (index, delta) => {
 };
 
 window.cambiarCejillaCanto = (index, valor) => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Acceso denegado: Solo el encargado o asistente puede modificar la cejilla.", "Acceso denegado", "error");
+        return;
+    }
     if (!cantosSeleccionados[index]) return;
     cantosSeleccionados[index].cejilla = String(valor);
     dispararAutoguardado();
 };
 
 window.cambiarCantorCanto = (index, valor) => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Acceso denegado: Solo el encargado o asistente puede asignar cantores.", "Acceso denegado", "error");
+        return;
+    }
     if (!cantosSeleccionados[index]) return;
     const inputOtro = document.getElementById(`input-otro-cantor-${index}`);
 
@@ -2738,6 +3044,7 @@ window.cambiarCantorCanto = (index, valor) => {
 };
 
 window.guardarOtroCantor = (index, valor) => {
+    if (!puedeGestionarPreparacionesYCantores()) return;
     if (!cantosSeleccionados[index]) return;
     cantosSeleccionados[index].cantor = valor.trim();
     dispararAutoguardado();
@@ -2745,6 +3052,10 @@ window.guardarOtroCantor = (index, valor) => {
 
 // --- AUTOGUARDADO EN TIEMPO REAL ---
 window.toggleAutoguardado = () => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Acceso denegado: Solo el encargado o asistente puede modificar el autoguardado.", "Acceso denegado", "error");
+        return;
+    }
     autoguardadoActivo = !autoguardadoActivo;
     localStorage.setItem('parroquia_autoguardado', autoguardadoActivo ? 'true' : 'false');
     actualizarBotonAutoguardado();
@@ -2765,6 +3076,7 @@ function actualizarBotonAutoguardado() {
 }
 
 function dispararAutoguardado() {
+    if (!puedeGestionarPreparacionesYCantores()) return;
     if (!autoguardadoActivo || !preparacionActiva || !parroquiaActiva) return;
 
     const statusEl = document.getElementById('status-autoguardado');
@@ -2784,6 +3096,7 @@ function dispararAutoguardado() {
 }
 
 async function guardarCambiosPreparacionEnFirestore() {
+    if (!puedeGestionarPreparacionesYCantores()) return;
     if (!preparacionActiva || !parroquiaActiva) return;
     try {
         const prepRef = doc(db, "parroquias", parroquiaActiva.id, "preparaciones", preparacionActiva.id);
@@ -2798,6 +3111,10 @@ async function guardarCambiosPreparacionEnFirestore() {
 }
 
 window.guardarCambiosAsignacionManual = async (btn) => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Acceso denegado: Solo el encargado o asistente puede guardar o modificar la preparación.", "Acceso denegado", "error");
+        return;
+    }
     if (!preparacionActiva || !parroquiaActiva) return;
     try {
         await guardarCambiosPreparacionEnFirestore();
@@ -3712,4 +4029,47 @@ document.addEventListener('DOMContentLoaded', () => {
 // Sincronizar en caliente si el usuario regresa de perfil.html
 window.addEventListener('pageshow', () => {
     poblarSelectParroquiasDisponibles();
+});
+
+// =========================================================================
+// GESTIÓN UNIVERSAL DE CIERRE CON TECLA ESCAPE Y CLIC/TOQUE FUERA EN MODALES
+// =========================================================================
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' || e.key === 'Esc' || e.keyCode === 27) {
+        // 1. Cerrar cualquier modal que esté visible
+        const overlays = Array.from(document.querySelectorAll('.modal-overlay, .filter-modal-overlay')).filter(el => {
+            return el.style && el.style.display !== 'none' && getComputedStyle(el).display !== 'none';
+        });
+
+        if (overlays.length > 0) {
+            overlays.forEach(el => { el.style.display = 'none'; });
+            e.preventDefault();
+            return;
+        }
+
+        // 2. Si no hay modal visible, pero la pantalla de asignación de cantores está abierta, cerrarla
+        const boxAsignacion = document.getElementById('box-asignacion-cantores');
+        if (boxAsignacion && boxAsignacion.style.display !== 'none' && getComputedStyle(boxAsignacion).display !== 'none') {
+            window.cerrarAsignacionCantores();
+            e.preventDefault();
+        }
+    }
+});
+
+// Cerrar modales al hacer clic o tocar con el dedo en el fondo (fuera de la tarjeta)
+const cerrarModalSiClicAfuera = (e) => {
+    const target = e.target;
+    if (!target) return;
+    if (target.classList && (target.classList.contains('modal-overlay') || target.classList.contains('filter-modal-overlay'))) {
+        target.style.display = 'none';
+    }
+};
+
+window.addEventListener('click', cerrarModalSiClicAfuera);
+window.addEventListener('touchend', (e) => {
+    const target = e.target;
+    if (!target) return;
+    if (target.classList && (target.classList.contains('modal-overlay') || target.classList.contains('filter-modal-overlay'))) {
+        target.style.display = 'none';
+    }
 });

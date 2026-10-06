@@ -127,6 +127,53 @@ const accessControlState = {
 
 let unsubscribeOwnUserListener = null;
 
+// Permisos esenciales y completos que necesita cualquier usuario Invitado (sin inicio de sesión)
+export const DEFAULT_GUEST_PERMISSIONS = [
+  PERMISSIONS.VIEW_BOOKS,
+  PERMISSIONS.BOOK_RESUCITO,
+  PERMISSIONS.BOOK_JOVEN,
+  PERMISSIONS.BOOK_ACLAMACIONES,
+  PERMISSIONS.BOOK_SALMODIAS,
+  PERMISSIONS.BOOK_CATEQUESIS,
+  PERMISSIONS.BOOK_FAVORITOS,
+  PERMISSIONS.CONTROL_CANTO,
+  PERMISSIONS.EDIT_CHORDS,
+  PERMISSIONS.VIEW_SETTINGS_GENERAL,
+  "view_general_comun",
+  "view_general_cloud",
+  PERMISSIONS.VIEW_SETTINGS_THEME,
+  "view_theme_visual",
+  "view_theme_func_barra",
+  "view_theme_func_canto",
+  "view_theme_func_libro",
+  "view_theme_func_etapa",
+  "view_theme_func_botones",
+  "view_theme_func_navegador",
+  "view_theme_inicio",
+  "view_theme_preparacion",
+  "view_theme_perfil",
+  PERMISSIONS.VIEW_SETTINGS_SONG,
+  PERMISSIONS.VIEW_SONG_CANTO,
+  PERMISSIONS.VIEW_SONG_LITURGIA,
+  PERMISSIONS.VIEW_SONG_CATEQUESIS,
+  PERMISSIONS.VIEW_SETTINGS_USER,
+  "view_user_cuenta",
+  PERMISSIONS.VIEW_SETTINGS_DATA,
+  PERMISSIONS.VIEW_SETTINGS_PAGINAS,
+  PERMISSIONS.VIEW_SETTINGS_LOG,
+  PERMISSIONS.VIEW_LOGS,
+  PERMISSIONS.VIEW_STATUS,
+  PERMISSIONS.PAGE_INICIO,
+  PERMISSIONS.PAGE_PERFIL,
+  PERMISSIONS.PAGE_PREPARAR,
+  PERMISSIONS.PAGE_BITACORA,
+  PERMISSIONS.PAGE_INTRODUCCION,
+  PERMISSIONS.PAGE_RESUCITO_PDF,
+  PERMISSIONS.PAGE_INSTALAR_APP,
+  PERMISSIONS.PAGE_OPCIONES_PAGINAS,
+  PERMISSIONS.PAGE_CHAT
+];
+
 /**
  * Inicializa los grupos por defecto del sistema (Administradores, Cantores, Invitados).
  */
@@ -159,6 +206,10 @@ export function initAccessControl() {
       if (Array.isArray(parsed.bannedUsers)) {
         accessControlState.bannedUsers = new Set(parsed.bannedUsers);
       }
+      // Asegurar que el grupo de invitados tenga todos sus permisos indispensables
+      if (accessControlState.groups['invitados']) {
+        DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
+      }
       return;
     } catch (e) {
       console.warn("Error al cargar control de acceso desde localStorage, creando valores por defecto:", e);
@@ -170,50 +221,12 @@ export function initAccessControl() {
   
   // Crear Grupo de Cantores
   createGroup("cantores", "Grupo General de Cantores", [
-    PERMISSIONS.BOOK_RESUCITO,
-    PERMISSIONS.BOOK_JOVEN,
-    PERMISSIONS.BOOK_ACLAMACIONES,
-    PERMISSIONS.BOOK_SALMODIAS,
-    PERMISSIONS.BOOK_CATEQUESIS,
-    PERMISSIONS.BOOK_FAVORITOS,
-    PERMISSIONS.PAGE_INICIO,
-    PERMISSIONS.PAGE_PERFIL,
-    PERMISSIONS.PAGE_PREPARAR,
-    PERMISSIONS.PAGE_BITACORA,
-    PERMISSIONS.PAGE_INTRODUCCION,
-    PERMISSIONS.PAGE_RESUCITO_PDF,
-    PERMISSIONS.PAGE_INSTALAR_APP,
-    PERMISSIONS.PAGE_OPCIONES_PAGINAS,
-    PERMISSIONS.PAGE_CHAT,
-    PERMISSIONS.VIEW_SETTINGS_SONG,
-    PERMISSIONS.VIEW_SONG_CANTO,
-    PERMISSIONS.VIEW_SONG_LITURGIA,
-    PERMISSIONS.VIEW_SONG_CATEQUESIS
+    ...DEFAULT_GUEST_PERMISSIONS
   ], "Cantores registrados en la comunidad");
 
   // Crear Grupo de Invitados
   createGroup("invitados", "Usuarios Invitados", [
-    PERMISSIONS.BOOK_RESUCITO,
-    PERMISSIONS.BOOK_FAVORITOS,
-    PERMISSIONS.VIEW_SETTINGS_GENERAL,
-    PERMISSIONS.VIEW_SETTINGS_THEME,
-    PERMISSIONS.VIEW_SETTINGS_SONG,
-    PERMISSIONS.VIEW_SONG_CANTO,
-    PERMISSIONS.VIEW_SONG_LITURGIA,
-    PERMISSIONS.VIEW_SONG_CATEQUESIS,
-    PERMISSIONS.VIEW_SETTINGS_USER,
-    PERMISSIONS.VIEW_SETTINGS_DATA,
-    PERMISSIONS.VIEW_SETTINGS_PAGINAS,
-    PERMISSIONS.VIEW_SETTINGS_LOG,
-    PERMISSIONS.VIEW_BOOKS,
-    PERMISSIONS.PAGE_INICIO,
-    PERMISSIONS.PAGE_PERFIL,
-    PERMISSIONS.PAGE_PREPARAR,
-    PERMISSIONS.PAGE_BITACORA,
-    PERMISSIONS.PAGE_INTRODUCCION,
-    PERMISSIONS.PAGE_RESUCITO_PDF,
-    PERMISSIONS.PAGE_INSTALAR_APP,
-    PERMISSIONS.PAGE_OPCIONES_PAGINAS
+    ...DEFAULT_GUEST_PERMISSIONS
   ], "Usuarios sin inicio de sesión");
   
   // El grupo Cantores incluye al grupo Invitados (Subgrupo anidado)
@@ -335,6 +348,9 @@ export function listenToGroupConfigFromFirebase() {
               accessControlState.groups[gid].subgroupIds = new Set(gData.subgroupIds || []);
             }
           });
+          if (accessControlState.groups['invitados']) {
+            DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
+          }
           saveAccessControl();
           // Actualización silenciosa de visibilidad de libros y ajustes en la ventana principal
           if (typeof window !== 'undefined' && window.updateBookTabsVisibility) {
@@ -429,6 +445,9 @@ export async function syncAllAccessControlFromFirebase() {
             accessControlState.groups[gid].subgroupIds = new Set(gData.subgroupIds || []);
           }
         });
+        if (accessControlState.groups['invitados']) {
+          DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
+        }
       }
     }
   } catch (err) {
@@ -492,6 +511,7 @@ export async function trackLoggedInUser(user) {
   try {
     await setDoc(doc(db, "registered_users", cleanDocId), {
       email: email,
+      uid: user.uid,
       displayName: user.displayName || "",
       group: assignedGroup,
       banned: accessControlState.bannedUsers.has(email),
@@ -912,6 +932,8 @@ export function getGuestEffectivePermissions() {
       }
     });
   }
+  // Garantizar que todos los permisos esenciales de invitado siempre estén disponibles
+  DEFAULT_GUEST_PERMISSIONS.forEach(p => effectivePermissions.add(p));
   return effectivePermissions;
 }
 

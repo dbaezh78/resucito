@@ -1,5 +1,6 @@
 import { onAuthStateChanged, loginMock, logoutMock, isCurrentUserAdmin, isAuthInitialized, getCurrentUser } from './auth.js';
 import { hasPermission } from './accesscontrol.js';
+import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './firebase.js';
 
 (function () {
   // Evitar inyecciones duplicadas
@@ -80,7 +81,8 @@ import { hasPermission } from './accesscontrol.js';
 
             <button class="account-action-item" id="account-action-chat">
               <span class="material-symbols-outlined">chat</span>
-              <span>Asistencia y Chat</span>
+              <span style="flex: 1;">Asistencia y Chat</span>
+              <span id="badge-chat-account-popup" class="badge-unread-chat-popup" style="display: none;">0</span>
             </button>
 
             <button class="account-action-item" id="account-action-actualizar">
@@ -171,7 +173,7 @@ import { hasPermission } from './accesscontrol.js';
             <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
             <a href="mantcantos.html" id="nav-resucito-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
             <a href="respaldo.html" id="nav-resucito-respaldo"><span class="material-symbols-outlined arrow-icon">archive</span> Respaldo</a>
-            <a href="chat.html" id="nav-resucito-chat"><span class="material-symbols-outlined arrow-icon">chat</span> Asistencia y Chat</a>
+            <a href="chat.html" id="nav-resucito-chat"><span class="material-symbols-outlined arrow-icon">chat</span> <span style="flex: 1;">Asistencia y Chat</span><span id="badge-chat-nav-submenu" class="badge-unread-chat-popup" style="display: none; margin-left: auto;">0</span></a>
             <a href="privacidad.html" id="nav-resucito-privacidad"><span class="material-symbols-outlined arrow-icon">policy</span> Política de Privacidad</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
           </div>
@@ -185,6 +187,7 @@ import { hasPermission } from './accesscontrol.js';
         <a id="nav-google-auth" class="nav-item">
           <span class="material-symbols-outlined arrow-icon" id="nav-auth-icon">account_circle</span>
           <span id="nav-auth-text">Entrar</span>
+          <span id="badge-chat-nav-cuenta" class="badge-unread-chat-nav" style="display: none;">0</span>
         </a>
       </div>
     </div>
@@ -1066,9 +1069,177 @@ import { hasPermission } from './accesscontrol.js';
     // Ejecución inicial para renderizar botones de navegación
     updateNavPagesVisibility();
 
+    // 8. Lógica de Notificaciones y Badges de Chat No Leídos
+    let unsubscribeChatBadges = null;
+    let currentChatUnreadCount = 0;
+
+    function areChatNotificationsEnabled() {
+      return localStorage.getItem('resucito_chat_notificaciones') !== 'false';
+    }
+
+    function renderizarBadgesChat() {
+      const badgeNav = document.getElementById('badge-chat-nav-cuenta');
+      const badgePopup = document.getElementById('badge-chat-account-popup');
+      const badgeSubmenu = document.getElementById('badge-chat-nav-submenu');
+      const notifEnabled = areChatNotificationsEnabled();
+      const user = getCurrentUser() || window.firebaseAPI?.getCurrentUser?.();
+      const isChatPage = window.location.pathname.includes('chat.html');
+
+      const shouldShow = notifEnabled && !isChatPage && Boolean(user) && currentChatUnreadCount > 0;
+      const countDisplay = currentChatUnreadCount > 99 ? '99+' : String(currentChatUnreadCount);
+
+      if (badgeNav) {
+        if (shouldShow) {
+          badgeNav.textContent = countDisplay;
+          badgeNav.style.display = 'inline-flex';
+        } else {
+          badgeNav.style.display = 'none';
+        }
+      }
+
+      if (badgePopup) {
+        if (shouldShow) {
+          badgePopup.textContent = countDisplay;
+          badgePopup.style.display = 'inline-flex';
+        } else {
+          badgePopup.style.display = 'none';
+        }
+      }
+
+      if (badgeSubmenu) {
+        if (shouldShow) {
+          badgeSubmenu.textContent = countDisplay;
+          badgeSubmenu.style.display = 'inline-flex';
+        } else {
+          badgeSubmenu.style.display = 'none';
+        }
+      }
+    }
+
+    function iniciarEscuchaMensajesChatNoLeidos(user) {
+      if (unsubscribeChatBadges) {
+        unsubscribeChatBadges();
+        unsubscribeChatBadges = null;
+      }
+
+      if (!user || !db) {
+        currentChatUnreadCount = 0;
+        renderizarBadgesChat();
+        return;
+      }
+
+      const isAdmin = (user.email && user.email.toLowerCase().trim() === 'dbaezh78@gmail.com') || isCurrentUserAdmin();
+
+      if (isAdmin) {
+        try {
+          unsubscribeChatBadges = onSnapshot(collection(db, 'support_chats'), (snapshot) => {
+            let totalUnread = 0;
+            const myEmail = user.email ? user.email.toLowerCase().trim() : '';
+            const unreadByEmail = new Map();
+
+            snapshot.forEach((docSnap) => {
+              const data = docSnap.data();
+              if (data && typeof data.unreadAdmin === 'number' && data.unreadAdmin > 0) {
+                const lastSender = data.lastSenderEmail ? data.lastSenderEmail.toLowerCase().trim() : '';
+                // Solo cuenta como no leído si el último mensaje no lo envió el administrador
+                if (lastSender !== myEmail) {
+                  const emailKey = (data.userEmail || docSnap.id).toLowerCase().trim();
+                  const cur = unreadByEmail.get(emailKey) || 0;
+                  unreadByEmail.set(emailKey, Math.max(cur, data.unreadAdmin));
+                }
+              }
+            });
+
+            for (const count of unreadByEmail.values()) {
+              totalUnread += count;
+            }
+
+            currentChatUnreadCount = totalUnread;
+            renderizarBadgesChat();
+          }, (err) => {
+            console.warn('Aviso escuchando chats admin:', err);
+          });
+        } catch (err) {
+          console.warn('Error inicializando listener chats admin:', err);
+        }
+      } else {
+        try {
+          const cleanEmailId = user.email ? user.email.toLowerCase().trim().replace(/[^a-zA-Z0-9_-]/g, "_") : '';
+          const myEmail = user.email ? user.email.toLowerCase().trim() : '';
+          let unreadUid = 0;
+          let unreadEmail = 0;
+
+          function actualizarConteoCantor(data, origen) {
+            let count = 0;
+            if (data && typeof data.unreadUser === 'number' && data.unreadUser > 0) {
+              const lastSender = data.lastSenderEmail ? data.lastSenderEmail.toLowerCase().trim() : '';
+              // Solo cuenta como no leído si el último mensaje no lo envió el propio cantor
+              if (lastSender !== myEmail) {
+                count = data.unreadUser;
+              }
+            }
+            if (origen === 'uid') unreadUid = count;
+            if (origen === 'email') unreadEmail = count;
+            currentChatUnreadCount = Math.max(unreadUid, unreadEmail);
+            renderizarBadgesChat();
+          }
+
+          const unsub1 = onSnapshot(doc(db, 'support_chats', user.uid), (docSnap) => {
+            actualizarConteoCantor(docSnap.exists() ? docSnap.data() : null, 'uid');
+          }, (err) => {
+            console.warn('Aviso escuchando chat usuario por uid:', err);
+          });
+
+          let unsub2 = null;
+          if (cleanEmailId && cleanEmailId !== user.uid) {
+            unsub2 = onSnapshot(doc(db, 'support_chats', cleanEmailId), (docSnap) => {
+              actualizarConteoCantor(docSnap.exists() ? docSnap.data() : null, 'email');
+            }, () => {
+              // Silenciosamente ignorar si las reglas de Firestore restringen el doc por email
+            });
+          }
+
+          unsubscribeChatBadges = () => {
+            if (unsub1) unsub1();
+            if (unsub2) unsub2();
+          };
+        } catch (err) {
+          console.warn('Error inicializando listener chat usuario:', err);
+        }
+      }
+
+      // Si no existe preferencia en localStorage, intentar sincronizar desde el perfil en Firestore
+      if (localStorage.getItem('resucito_chat_notificaciones') === null) {
+        try {
+          getDoc(doc(db, "usuarios", user.uid, "perfil", "config")).then(confSnap => {
+            if (confSnap && confSnap.exists()) {
+              const cData = confSnap.data();
+              if (typeof cData.chatNotificaciones === 'boolean') {
+                localStorage.setItem('resucito_chat_notificaciones', cData.chatNotificaciones ? 'true' : 'false');
+                renderizarBadgesChat();
+              }
+            }
+          }).catch(() => {});
+        } catch (e) {}
+      }
+    }
+
+    // Escuchar cambios de notificaciones (desde switch en chat.html u otras ventanas)
+    window.addEventListener('chat_notificaciones_changed', () => {
+      renderizarBadgesChat();
+    });
+
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'resucito_chat_notificaciones') {
+        renderizarBadgesChat();
+      }
+    });
+
     onAuthStateChanged((user) => {
       updateAuthUI(user);
       updateNavPagesVisibility();
+      iniciarEscuchaMensajesChatNoLeidos(user);
+      renderizarBadgesChat();
     });
 
     // Lógica del botón de instalar PWA

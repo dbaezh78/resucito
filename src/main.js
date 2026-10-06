@@ -6634,12 +6634,14 @@ function setupEventListeners() {
     toolbarSaveChordBtn.addEventListener('click', saveChordPositionsAction);
   }
 
-  // Cerrar con Escape
+  // Cerrar modales con Escape
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      const chordModal = document.getElementById('chord-modal');
+    if (e.key === 'Escape' || e.key === 'Esc' || e.keyCode === 27) {
+      const overlays = Array.from(document.querySelectorAll('.modal-overlay, .modal')).filter(el => {
+        return el.style && el.style.display !== 'none' && getComputedStyle(el).display !== 'none';
+      });
+      overlays.forEach(el => { el.style.display = 'none'; });
       const settingsModal = document.getElementById('settings-modal');
-      if (chordModal) chordModal.style.display = 'none';
       if (settingsModal && settingsModal.style.display !== 'none') {
         settingsModal.style.display = 'none';
         if (typeof window.guardarAjustesEnNube === 'function') {
@@ -6648,6 +6650,16 @@ function setupEventListeners() {
       }
     }
   });
+
+  // Cerrar modales al hacer clic o toque fuera
+  const cerrarModalSiClicAfuera = (e) => {
+    const target = e.target;
+    if (target && target.classList && (target.classList.contains('modal-overlay') || target.classList.contains('modal'))) {
+      target.style.display = 'none';
+    }
+  };
+  window.addEventListener('click', cerrarModalSiClicAfuera);
+  window.addEventListener('touchend', cerrarModalSiClicAfuera);
   
   // Recalcular posiciones en resize de pantalla (sin afectar el teclado móvil)
   let resizeTimeout;

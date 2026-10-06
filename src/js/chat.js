@@ -90,6 +90,22 @@ function initAuth() {
       } else {
         initCantorView();
       }
+
+      // Sincronizar preferencia de notificaciones desde Firestore si no está en localStorage
+      try {
+        const confSnap = await getDoc(doc(db, "usuarios", user.uid, "perfil", "config"));
+        if (confSnap.exists()) {
+          const cData = confSnap.data();
+          if (typeof cData.chatNotificaciones === 'boolean') {
+            const cur = localStorage.getItem('resucito_chat_notificaciones');
+            if (cur === null) {
+              localStorage.setItem('resucito_chat_notificaciones', cData.chatNotificaciones ? 'true' : 'false');
+              if (window._updateNotifInputs) window._updateNotifInputs(cData.chatNotificaciones);
+              window.dispatchEvent(new CustomEvent('chat_notificaciones_changed', { detail: cData.chatNotificaciones }));
+            }
+          }
+        }
+      } catch (errConf) {}
     } else {
       mostrarModalLogin();
     }
@@ -104,7 +120,7 @@ function initAdminView() {
 }
 
 // 3. Vista para Cantor Normal
-function initCantorView() {
+async function initCantorView() {
   const searchSection = document.getElementById('wa-search-section');
   if (searchSection) searchSection.style.display = 'none';
 
@@ -127,9 +143,37 @@ function initCantorView() {
     `;
   }
 
-  activeChatId = currentUser.uid;
+  const cleanEmailId = currentUser.email ? currentUser.email.toLowerCase().trim().replace(/[^a-zA-Z0-9_-]/g, "_") : '';
+  let targetChatId = currentUser.uid;
+  let uidDoc = null;
+  let emailDoc = null;
+
+  try {
+    uidDoc = await getDoc(doc(db, 'support_chats', currentUser.uid));
+  } catch (e) {}
+
+  if (cleanEmailId && cleanEmailId !== currentUser.uid) {
+    try {
+      emailDoc = await getDoc(doc(db, 'support_chats', cleanEmailId));
+    } catch (e) {}
+  }
+
+  const uidTime = (uidDoc && uidDoc.exists()) ? (uidDoc.data().lastTimestamp || 0) : 0;
+  const emailTime = (emailDoc && emailDoc.exists()) ? (emailDoc.data().lastTimestamp || 0) : 0;
+
+  if (emailTime > uidTime) {
+    targetChatId = cleanEmailId;
+  } else if (uidDoc && uidDoc.exists()) {
+    targetChatId = currentUser.uid;
+  } else if (emailDoc && emailDoc.exists()) {
+    targetChatId = cleanEmailId;
+  } else {
+    targetChatId = currentUser.uid;
+  }
+
+  activeChatId = targetChatId;
   activeChatUser = {
-    id: currentUser.uid,
+    id: activeChatId,
     displayName: 'Soporte Resucitó (Administrador)',
     email: ADMIN_EMAIL,
     photoURL: '../img/christ.png'
@@ -137,6 +181,11 @@ function initCantorView() {
 
   actualizarHeaderChat(activeChatUser);
   escucharMensajesDeChat(activeChatId);
+
+  // Marcar como leído para el cantor en su propio chat
+  try {
+    updateDoc(doc(db, 'support_chats', currentUser.uid), { unreadUser: 0 }).catch(() => {});
+  } catch (e) {}
 
   document.getElementById('wa-app-root').classList.add('chat-open');
 }
@@ -149,20 +198,70 @@ function listenToAllChats() {
 
   unsubscribeChats = onSnapshot(q, async (snapshot) => {
     const list = [];
+    const chatsByEmail = new Map();
+
     snapshot.forEach(docSnap => {
-      list.push({ id: docSnap.id, ...docSnap.data() });
+      const d = docSnap.data();
+      const chatItem = { id: docSnap.id, ...d };
+
+      // Deduplicar si existen docs por UID y por email para el mismo usuario
+      const emailKey = (d.userEmail || '').toLowerCase().trim();
+      if (emailKey && emailKey !== ADMIN_EMAIL) {
+        if (!chatsByEmail.has(emailKey)) {
+          chatsByEmail.set(emailKey, chatItem);
+        } else {
+          const prev = chatsByEmail.get(emailKey);
+          const curTime = chatItem.lastTimestamp || 0;
+          const prevTime = prev.lastTimestamp || 0;
+          if (curTime >= prevTime) {
+            chatItem.unreadAdmin = (chatItem.unreadAdmin || 0) + (prev.unreadAdmin || 0);
+            chatsByEmail.set(emailKey, chatItem);
+          } else {
+            prev.unreadAdmin = (prev.unreadAdmin || 0) + (chatItem.unreadAdmin || 0);
+          }
+        }
+      } else {
+        list.push(chatItem);
+      }
+
+      if (d.lastMessage && d.lastMessage !== 'Sin mensajes aún' && typeof d.totalMessages !== 'number') {
+        getDocs(collection(db, 'support_chats', docSnap.id, 'messages')).then((mSnap) => {
+          if (mSnap.size > 0) {
+            setDoc(doc(db, 'support_chats', docSnap.id), { totalMessages: mSnap.size }, { merge: true }).catch(() => {});
+          }
+        }).catch(() => {});
+      }
     });
 
+    // Agregar las conversaciones deduplicadas por email
+    for (const chatItem of chatsByEmail.values()) {
+      list.push(chatItem);
+    }
+
     try {
+      // Mapear UIDs conocidos de registro_uso y registered_users
+      const uidByEmail = {};
+      try {
+        const usoSnap = await getDocs(collection(db, 'registro_uso'));
+        usoSnap.forEach(uDoc => {
+          const u = uDoc.data();
+          if (u && u.email && u.uid) {
+            uidByEmail[u.email.toLowerCase().trim()] = u.uid;
+          }
+        });
+      } catch (e) {}
+
       const regSnap = await getDocs(collection(db, 'registered_users'));
       regSnap.forEach(rDoc => {
         const uData = rDoc.data();
         if (uData.email && uData.email.toLowerCase() !== ADMIN_EMAIL) {
-          const exists = list.some(c => c.userEmail && c.userEmail.toLowerCase() === uData.email.toLowerCase());
+          const emailLower = uData.email.toLowerCase().trim();
+          const exists = list.some(c => c.userEmail && c.userEmail.toLowerCase().trim() === emailLower);
           if (!exists) {
+            const resolvedChatId = uData.uid || uidByEmail[emailLower] || rDoc.id;
             list.push({
-              id: rDoc.id,
-              userId: rDoc.id,
+              id: resolvedChatId,
+              userId: resolvedChatId,
               userEmail: uData.email,
               userName: uData.displayName || uData.email.split('@')[0],
               userPhoto: '../img/christ.png',
@@ -177,10 +276,13 @@ function listenToAllChats() {
       console.warn("Aviso cargando usuarios registrados para chats:", e);
     }
 
+    // Ordenar de más reciente a más antiguo
+    list.sort((a, b) => (b.lastTimestamp || 0) - (a.lastTimestamp || 0));
+
     rawChatsList = list;
     renderAdminChatList();
 
-    if (!activeChatId && rawChatsList.length > 0) {
+    if (!activeChatId && rawChatsList.length > 0 && window.innerWidth >= 768) {
       seleccionarChat(rawChatsList[0]);
     }
   }, (err) => {
@@ -266,9 +368,16 @@ function seleccionarChat(chat) {
   renderAdminChatList();
   escucharMensajesDeChat(activeChatId);
 
-  if (canViewAllChats && (chat.unreadAdmin || 0) > 0) {
+  if (canViewAllChats) {
     try {
-      updateDoc(doc(db, 'support_chats', activeChatId), { unreadAdmin: 0 });
+      updateDoc(doc(db, 'support_chats', activeChatId), { unreadAdmin: 0 }).catch(() => {});
+      if (chat.userId && chat.userId !== activeChatId) {
+        updateDoc(doc(db, 'support_chats', chat.userId), { unreadAdmin: 0 }).catch(() => {});
+      }
+      const cleanEmail = chat.userEmail ? chat.userEmail.toLowerCase().trim().replace(/[^a-zA-Z0-9_-]/g, "_") : '';
+      if (cleanEmail && cleanEmail !== activeChatId) {
+        updateDoc(doc(db, 'support_chats', cleanEmail), { unreadAdmin: 0 }).catch(() => {});
+      }
     } catch (e) {}
   }
 }
@@ -314,6 +423,24 @@ function escucharMensajesDeChat(chatId) {
     });
 
     renderizarMensajes(msgs);
+
+    // Si el usuario está viendo este chat activamente, marcar como leído en todos los IDs asociados
+    if (activeChatId) {
+      try {
+        if (canViewAllChats) {
+          updateDoc(doc(db, 'support_chats', activeChatId), { unreadAdmin: 0 }).catch(() => {});
+          if (activeChatUser?.id && activeChatUser.id !== activeChatId) {
+            updateDoc(doc(db, 'support_chats', activeChatUser.id), { unreadAdmin: 0 }).catch(() => {});
+          }
+          const cleanEmail = activeChatUser?.email ? activeChatUser.email.toLowerCase().trim().replace(/[^a-zA-Z0-9_-]/g, "_") : '';
+          if (cleanEmail && cleanEmail !== activeChatId) {
+            updateDoc(doc(db, 'support_chats', cleanEmail), { unreadAdmin: 0 }).catch(() => {});
+          }
+        } else if (currentUser) {
+          updateDoc(doc(db, 'support_chats', currentUser.uid), { unreadUser: 0 }).catch(() => {});
+        }
+      } catch (e) {}
+    }
   }, (err) => {
     console.error("Error al escuchar mensajes:", err);
   });
@@ -571,6 +698,15 @@ async function enviarMensaje() {
     const chatDocSnap = await getDoc(chatDocRef);
     const prevData = chatDocSnap.exists() ? chatDocSnap.data() : {};
 
+    // Contar el total de mensajes de esta conversación para el contador de mensajes
+    let totalMsgsCount = 1;
+    try {
+      const allMsgsSnap = await getDocs(collection(db, 'support_chats', activeChatId, 'messages'));
+      totalMsgsCount = allMsgsSnap.size;
+    } catch (e) {
+      totalMsgsCount = (prevData.totalMessages || 0) + 1;
+    }
+
     const updatedChatHeader = {
       chatId: activeChatId,
       userId: isAdmin ? (activeChatUser.id || activeChatId) : currentUser.uid,
@@ -580,11 +716,24 @@ async function enviarMensaje() {
       lastMessage: text || (pendingImageBase64 ? '📷 Foto' : 'Mensaje'),
       lastTimestamp: now,
       lastSenderEmail: currentUser.email,
+      totalMessages: totalMsgsCount,
       unreadAdmin: isAdmin ? 0 : (prevData.unreadAdmin || 0) + 1,
       unreadUser: isAdmin ? (prevData.unreadUser || 0) + 1 : 0
     };
 
     await setDoc(chatDocRef, updatedChatHeader, { merge: true });
+
+    // Sincronizar el encabezado en el ID alternativo si el remitente es Administrador
+    if (isAdmin && activeChatUser) {
+      const cleanEmail = activeChatUser.email ? activeChatUser.email.toLowerCase().trim().replace(/[^a-zA-Z0-9_-]/g, "_") : '';
+      const altId = (activeChatId === cleanEmail) ? activeChatUser.id : cleanEmail;
+      if (altId && altId !== activeChatId) {
+        setDoc(doc(db, 'support_chats', altId), {
+          ...updatedChatHeader,
+          chatId: altId
+        }, { merge: true }).catch(() => {});
+      }
+    }
   } catch (err) {
     console.error("Error enviando mensaje:", err);
     alert("No se pudo enviar el mensaje. Verifica tu conexión a internet.");
@@ -982,6 +1131,45 @@ function setupThemeAndHeaderMenus() {
     aplicarTemaChat(newTheme);
     updateSwitchInputs(shouldBeDark);
   }
+
+  const switchNotifSidebar = document.getElementById('switch-notif-sidebar');
+  const switchNotifChat = document.getElementById('switch-notif-chat');
+
+  // Inicializar estado de notificaciones: por defecto 'true' (Activado)
+  const notifActive = localStorage.getItem('resucito_chat_notificaciones') !== 'false';
+
+  function updateNotifInputs(active) {
+    if (switchNotifSidebar) switchNotifSidebar.checked = active;
+    if (switchNotifChat) switchNotifChat.checked = active;
+
+    const iconName = active ? 'notifications' : 'notifications_off';
+    const sidebarNotifIcon = document.getElementById('sidebar-notif-icon');
+    const chatNotifIcon = document.getElementById('chat-notif-icon');
+    if (sidebarNotifIcon) sidebarNotifIcon.textContent = iconName;
+    if (chatNotifIcon) chatNotifIcon.textContent = iconName;
+  }
+
+  window._updateNotifInputs = updateNotifInputs;
+  updateNotifInputs(notifActive);
+
+  function toggleNotificaciones(e) {
+    const active = e.target.checked;
+    localStorage.setItem('resucito_chat_notificaciones', active ? 'true' : 'false');
+    updateNotifInputs(active);
+    window.dispatchEvent(new CustomEvent('chat_notificaciones_changed', { detail: active }));
+
+    if (currentUser && db) {
+      try {
+        setDoc(doc(db, "usuarios", currentUser.uid, "perfil", "config"), {
+          chatNotificaciones: active,
+          ultimaActualizacion: new Date().toISOString()
+        }, { merge: true }).catch(() => {});
+      } catch (err) {}
+    }
+  }
+
+  switchNotifSidebar?.addEventListener('change', toggleNotificaciones);
+  switchNotifChat?.addEventListener('change', toggleNotificaciones);
 
   switchSidebar?.addEventListener('change', toggleTema);
   switchChat?.addEventListener('change', toggleTema);

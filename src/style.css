@@ -4330,11 +4330,11 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
 }
 @media (min-width: 411px) {.modal-content{max-width: max-content;}}
 @media (min-width: 768px) {.modal-content{max-width: 90%;}}
-@media (min-width: 1200px) {.modal-content{max-width: max-content;}}
-@media (min-width: 1500px) {.modal-content{max-width: max-content;}}
-@media (min-width: 1700px) {.modal-content{max-width: max-content;}}
-@media (min-width: 2000px) {.modal-content{max-width: max-content;}}
-@media (min-width: 2200px) {.modal-content{max-width: max-content;}}
+@media (min-width: 1200px) {.modal-content{max-width: 90%;}}
+@media (min-width: 1500px) {.modal-content{max-width: 90%;}}
+@media (min-width: 1700px) {.modal-content{max-width: 90%;}}
+@media (min-width: 2000px) {.modal-content{max-width: 90%;}}
+@media (min-width: 2200px) {.modal-content{max-width: 90%;}}
 
 .small {
   text-align: justify;
