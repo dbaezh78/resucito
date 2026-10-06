@@ -91,7 +91,12 @@ const MAPA_ETIQUETAS = {
     "Entrada": "E",
     "Paz": "P",
     "Liturgia": "L",
-    "Comunión": "C",
+    "Litúrgico": "L",
+    "Liturgico": "L",
+    "Cuerpo": "C",
+    "Sangre": "S",
+    "Comunión": "CS",
+    "Comunion": "CS",
     "Final": "F"
 };
 
@@ -142,6 +147,71 @@ const normalizarTexto = (texto) => {
         .replace(/[^a-z0-9\s]/g, "")
         .trim();
 };
+
+// --- ORDEN LITÚRGICO Y JERARQUÍA DE CANTOS EN LA EUCARISTÍA ---
+export function esCantoGloria(item) {
+    if (!item) return false;
+    const songId = String(typeof item === 'object' ? item.id : item || '').toLowerCase().trim();
+    if (songId === 'gloriaadiosenloaltodelcielo') return true;
+    const songMeta = todosLosCantos.find(c => String(c.id).toLowerCase().trim() === songId);
+    if (songMeta) {
+        const idMeta = String(songMeta.id || '').toLowerCase().trim();
+        const tit = normalizarTexto(songMeta.title || songMeta.titulo || '');
+        if (idMeta === 'gloriaadiosenloaltodelcielo' || tit.startsWith('gloria a dios en lo alto del cielo')) {
+            return true;
+        }
+    }
+    return false;
+}
+
+export function obtenerPesoLiturgico(item) {
+    if (!item) return 999;
+    const tag = String(item.etiqueta || item.tag || '').trim().toUpperCase();
+
+    // 1. Canto de Entrada = E
+    if (tag === 'E') return 10;
+
+    // 2. Gloria a Dios en lo alto del cielo (2do lugar por defecto)
+    if (esCantoGloria(item)) return 20;
+
+    // 3. Canto de paz = P (3er lugar)
+    if (tag === 'P') return 30;
+
+    // 4. Demás cantos litúrgicos = L
+    if (tag === 'L') return 40;
+
+    // 5. Cuerpo = C, Sangre = S, Comunión = CS
+    if (tag === 'C') return 50;
+    if (tag === 'S') return 60;
+    if (tag === 'CS') return 70;
+
+    // 6. Canto final = F
+    if (tag === 'F') return 80;
+
+    const num = parseInt(tag, 10);
+    if (!isNaN(num)) return 100 + num;
+    return 200;
+}
+
+export function ordenarCantosPorLiturgia(lista) {
+    if (!Array.isArray(lista)) return;
+    lista.sort((a, b) => {
+        const pesoA = obtenerPesoLiturgico(a);
+        const pesoB = obtenerPesoLiturgico(b);
+        if (pesoA !== pesoB) return pesoA - pesoB;
+        return 0;
+    });
+}
+
+export function cantoPerteneceAMomento(canto, momento) {
+    if (!canto || !canto.moments || !Array.isArray(canto.moments)) return false;
+    if (!momento || momento === 'Libre') return false;
+    if (canto.moments.includes(momento)) return true;
+    if (momento === 'Cuerpo' || momento === 'Sangre' || momento === 'Comunión' || momento === 'Comunion') {
+        return canto.moments.includes('Comunión') || canto.moments.includes('Fracción Del Pan');
+    }
+    return false;
+}
 
 let editarListaIdForzada = null;
 // Leer parámetros de URL para expandir categoría y lista específica si viene desde el visor
@@ -980,8 +1050,8 @@ function renderizarLista(lista) {
 
     const listaOrdenadaParaMostrar = [...lista].sort((a, b) => {
         if (momentoSeleccionado === 'Libre') return 0;
-        const esDelMomentoA = a.moments && a.moments.includes(momentoSeleccionado);
-        const esDelMomentoB = b.moments && b.moments.includes(momentoSeleccionado);
+        const esDelMomentoA = cantoPerteneceAMomento(a, momentoSeleccionado);
+        const esDelMomentoB = cantoPerteneceAMomento(b, momentoSeleccionado);
         if (esDelMomentoA && !esDelMomentoB) return -1;
         if (!esDelMomentoA && esDelMomentoB) return 1;
         return 0;
@@ -992,13 +1062,13 @@ function renderizarLista(lista) {
         div.className = 'item-canto';
         div.tabIndex = 0;
         
-        const esDelMomento = canto.moments && canto.moments.includes(momentoSeleccionado);
+        const esDelMomento = cantoPerteneceAMomento(canto, momentoSeleccionado);
         if (momentoSeleccionado !== 'Libre' && !esDelMomento) {
             div.style.opacity = "0.65";
         }
 
         const nombreAMostrar = canto.title || canto.titulo || "Sin título";
-        const isChecked = listaOrdenada.some(item => String(item.id) === String(canto.id));
+        const isChecked = listaOrdenada.some(item => String(typeof item === 'object' ? item.id : item) === String(canto.id));
         
         div.onclick = () => window.toggleCanto(canto.id);
         div.onkeydown = (e) => {
@@ -1082,7 +1152,7 @@ window.limpiarBuscadorListas = () => {
 // --- LÓGICA DE SELECCIÓN Y ORDENACIÓN ---
 window.toggleCanto = (id) => {
     const stringId = String(id);
-    const index = listaOrdenada.findIndex(item => String(item.id) === stringId);
+    const index = listaOrdenada.findIndex(item => String(typeof item === 'object' ? item.id : item) === stringId);
 
     if (index !== -1) {
         listaOrdenada.splice(index, 1);
@@ -1090,7 +1160,7 @@ window.toggleCanto = (id) => {
         let etiqueta;
         if (momentoSeleccionado === 'Libre') {
             const numericos = listaOrdenada
-                .filter(item => !['E', 'P', 'L', 'C', 'F'].includes(item.etiqueta))
+                .filter(item => !['E', 'P', 'L', 'C', 'S', 'CS', 'F'].includes(item.etiqueta))
                 .map(item => parseInt(item.etiqueta))
                 .filter(num => !isNaN(num))
                 .sort((a, b) => a - b);
@@ -1103,22 +1173,19 @@ window.toggleCanto = (id) => {
         }
         
         listaOrdenada.push({ id: stringId, etiqueta: etiqueta });
+        ordenarCantosPorLiturgia(listaOrdenada);
     }
 
-    const prioridad = { 'E': 1, 'P': 2, 'L': 3, 'C': 4, 'F': 5 };
-    
-    listaOrdenada.sort((a, b) => {
-        const getPeso = (item) => {
-            if (prioridad[item.etiqueta]) return prioridad[item.etiqueta];
-            return 2;
-        };
+    actualizarInterfazSeleccion();
+};
 
-        const pesoA = getPeso(a);
-        const pesoB = getPeso(b);
+window.moverCantoCola = (index, direccion) => {
+    const targetIdx = index + direccion;
+    if (targetIdx < 0 || targetIdx >= listaOrdenada.length) return;
 
-        if (pesoA !== pesoB) return pesoA - pesoB;
-        return parseInt(a.etiqueta || 0) - parseInt(b.etiqueta || 0);
-    });
+    const temp = listaOrdenada[index];
+    listaOrdenada[index] = listaOrdenada[targetIdx];
+    listaOrdenada[targetIdx] = temp;
 
     actualizarInterfazSeleccion();
 };
@@ -1130,7 +1197,7 @@ function actualizarInterfazSeleccion() {
     const cola = document.getElementById('cola-seleccion');
     if (cola) {
         cola.innerHTML = '';
-        listaOrdenada.forEach((item) => {
+        listaOrdenada.forEach((item, idx) => {
             const idCanto = (typeof item === 'object' && item !== null) ? item.id : item;
             const etiqueta = (typeof item === 'object' && item !== null) ? item.etiqueta : "N";
             const canto = todosLosCantos.find(c => String(c.id) === String(idCanto));
@@ -1149,7 +1216,16 @@ function actualizarInterfazSeleccion() {
 
                 const tag = document.createElement('div');
                 tag.className = 'canto-tag';
-                tag.innerHTML = `<span>${etiqueta}</span> ${canto.title || canto.titulo} ${tonoDisplay ? `<small style="opacity:0.75; font-weight:600; margin-left:4px;">(${tonoDisplay})</small>` : ''}`;
+                tag.innerHTML = `
+                    <span>${etiqueta}</span>
+                    <span style="font-weight: 600;">${canto.title || canto.titulo}</span>
+                    ${tonoDisplay ? `<small style="opacity:0.75; font-weight:600; margin-left:4px;">(${tonoDisplay})</small>` : ''}
+                    <span class="canto-tag-controles" onclick="event.stopPropagation()" style="display: inline-flex; align-items: center; gap: 2px; margin-left: 6px;">
+                        <button type="button" class="btn-tag-mover" title="Mover antes" ${idx === 0 ? 'disabled' : ''} onclick="window.moverCantoCola(${idx}, -1)">◀</button>
+                        <button type="button" class="btn-tag-mover" title="Mover después" ${idx === listaOrdenada.length - 1 ? 'disabled' : ''} onclick="window.moverCantoCola(${idx}, 1)">▶</button>
+                        <button type="button" class="btn-tag-quitar" title="Quitar canto" onclick="window.toggleCanto('${idCanto}')">✕</button>
+                    </span>
+                `;
                 tag.onclick = (e) => { 
                     e.stopPropagation(); 
                     window.toggleCanto(idCanto); 
@@ -1844,6 +1920,8 @@ window.toggleDetalleLista = (idLista) => {
         const lista = listasLocalesCache.find(l => l.id === idLista);
         if (!lista) return;
 
+        const esDuenio = esDuenioDeLista(lista);
+
         detalleDiv.innerHTML = lista.ids_cantos.map((item, i) => {
             const id = (typeof item === 'object' && item !== null) ? item.id : item;
             const etiqueta = (typeof item === 'object' && item !== null) ? (item.tag || item.etiqueta || (i + 1)) : (i + 1);
@@ -1866,8 +1944,40 @@ window.toggleDetalleLista = (idLista) => {
                 <span class="num">${etiqueta}</span>
                 <span style="flex-grow: 1;">${c ? (c.title || c.titulo) : "Canto desconocido"}</span>
                 ${metaBadges}
+                ${esDuenio ? `
+                <span class="sub-item-reorder-controles" onclick="event.stopPropagation()" style="display: inline-flex; align-items: center; gap: 2px; margin-left: 6px;">
+                    <button type="button" class="btn-tag-mover" title="Subir canto" ${i === 0 ? 'disabled' : ''} onclick="window.moverCantoListaPersonal('${idLista}', ${i}, -1)">▲</button>
+                    <button type="button" class="btn-tag-mover" title="Bajar canto" ${i === lista.ids_cantos.length - 1 ? 'disabled' : ''} onclick="window.moverCantoListaPersonal('${idLista}', ${i}, 1)">▼</button>
+                </span>
+                ` : ''}
             </div>`;
         }).join('');
+    }
+};
+
+window.moverCantoListaPersonal = (idLista, index, direccion) => {
+    const lista = listasLocalesCache.find(l => l.id === idLista);
+    if (!lista || !Array.isArray(lista.ids_cantos)) return;
+    if (!esDuenioDeLista(lista)) return;
+
+    const targetIdx = index + direccion;
+    if (targetIdx < 0 || targetIdx >= lista.ids_cantos.length) return;
+
+    const temp = lista.ids_cantos[index];
+    lista.ids_cantos[index] = lista.ids_cantos[targetIdx];
+    lista.ids_cantos[targetIdx] = temp;
+
+    lista.ultimaActualizacion = new Date().toISOString();
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(listasLocalesCache));
+
+    if (usuarioActual && !lista.id.startsWith('local-')) {
+        guardarListaEnFirestore(lista, usuarioActual);
+    }
+
+    const detalleDiv = document.getElementById(`detalle-${idLista}`);
+    if (detalleDiv && !detalleDiv.classList.contains('cfg-close')) {
+        detalleDiv.classList.add('cfg-close');
+        window.toggleDetalleLista(idLista);
     }
 };
 

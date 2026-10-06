@@ -7375,13 +7375,6 @@ window.abrirModalPlaylistActiva = function() {
 
     let metaBadges = '';
     if (typeof item === 'object' && item !== null) {
-      if (isEucaristia) {
-        if (item.cantor) {
-          metaBadges += `<span class="modal-playlist-badge-cantor" title="Cantor asignado: ${item.cantor}"><span class="material-symbols-outlined" style="font-size: 14px;">mic</span>${item.cantor}</span>`;
-        } else {
-          metaBadges += `<span class="modal-playlist-badge-sin-cantor">Sin cantor</span>`;
-        }
-      }
       if (item.tono) {
         metaBadges += `<span class="modal-playlist-badge-tono">${item.tono}</span>`;
       }
@@ -7390,6 +7383,14 @@ window.abrirModalPlaylistActiva = function() {
       }
       if (item.nota) {
         metaBadges += `<span title="Notas incluidas" style="font-size: 0.85rem; margin-left: 4px;">📝</span>`;
+      }
+      if (isEucaristia) {
+        if (item.cantor) {
+          const primerNombre = (item.cantor || '').trim().split(/\s+/)[0] || '';
+          metaBadges += `<span class="modal-playlist-badge-cantor" title="Cantor asignado: ${item.cantor}"><span class="material-symbols-outlined" style="font-size: 14px;">mic</span><span class="modal-playlist-cantor-full">${item.cantor}</span><span class="modal-playlist-cantor-short">${primerNombre}</span></span>`;
+        } else {
+          metaBadges += `<span class="modal-playlist-badge-sin-cantor">Sin cantor</span>`;
+        }
       }
     }
 

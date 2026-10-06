@@ -262,6 +262,28 @@
   color: #d97706;
 }
 
+.btn-cancelar-asignacion {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  background: rgba(108, 117, 125, 0.12);
+  color: var(--text-muted, #6c757d);
+  border: 1px solid var(--panel-border, #d1d5db);
+  transition: all 0.2s ease;
+}
+
+.btn-cancelar-asignacion:hover {
+  background: rgba(239, 68, 68, 0.12);
+  color: #ef4444;
+  border-color: #fca5a5;
+  transform: translateY(-1px);
+}
+
 /* Filas de Canto con Asignación de Cantor */
 .canto-asignacion-row {
   display: flex;
@@ -282,9 +304,11 @@
 }
 
 .canto-asignacion-badge {
-  width: 32px;
+  min-width: 32px;
   height: 32px;
-  border-radius: 50%;
+  width: auto;
+  padding: 0 6px;
+  border-radius: 999px;
   background: var(--accent-color, #d01212);
   color: #ffffff;
   font-weight: 700;
@@ -393,7 +417,7 @@
   background: var(--panel-bg, #ffffff);
   border: 1px solid var(--panel-border, #e5e7eb);
   border-radius: 14px;
-  padding: 16px;
+  padding: 4px;
   margin-bottom: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   transition: all 0.2s ease;
@@ -429,10 +453,36 @@
   gap: 10px;
 }
 
+.prep-tarjeta-cantores-resumen {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+/* En el celular ocultar lista de cantores en el título, ocultar tono y mostrar solo primer nombre del cantor */
+@media (max-width: 768px) {
+  .prep-tarjeta-cantores-resumen {
+    display: none !important;
+  }
+  .prep-canto-meta-tono {
+    display: none !important;
+  }
+  .prep-cantor-nombre-full {
+    display: none !important;
+  }
+  .prep-cantor-nombre-short {
+    display: inline !important;
+  }
+}
+
 .prep-tarjeta-acciones {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-shrink: 0;
 }
 
 .prep-cantos-detalle {
@@ -466,6 +516,11 @@
   border-radius: 8px;
   transition: background 0.15s ease, transform 0.1s ease;
   user-select: none;
+
+  @media (min-width: 411px) {
+    gap: 2px;
+    padding: 3px 3px;
+  }
 }
 
 .prep-canto-left:hover {
@@ -502,6 +557,20 @@
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-muted, #777);
+}
+
+.prep-canto-meta-tono {
+  font-size: 0.8rem;
+  color: var(--text-muted, #666);
+  margin-left: 4px;
+}
+
+.prep-cantor-nombre-full {
+  display: inline;
+}
+
+.prep-cantor-nombre-short {
+  display: none;
 }
 
 /* Modales */
@@ -896,12 +965,13 @@
   background: rgba(208, 18, 18, 0.04) !important;
 }
 
-/* === CIRCULO ROJO CON TEXTO BLANCO PARA E, P, L, C, F Y NÚMEROS (IMAGEN 4) === */
+/* === CIRCULO ROJO CON TEXTO BLANCO PARA E, P, L, C, S, CS, F Y NÚMEROS === */
 .badge-posicion-circulo {
-  width: 24px;
-  height: 24px;
   min-width: 24px;
-  border-radius: 50%;
+  height: 24px;
+  width: auto;
+  padding: 0 4px;
+  border-radius: 999px;
   background: #d01212;
   color: #ffffff;
   font-weight: 800;
@@ -913,6 +983,48 @@
   line-height: 1;
   box-shadow: 0 1px 3px rgba(208, 18, 18, 0.35);
   font-family: 'Franklin Gothic Medium', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* === BOTONES PARA SUBIR Y BAJAR CANTOS (RESPONSABLE DE CANTO) === */
+.prep-canto-right-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.prep-canto-reorder-controles,
+.canto-reorder-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.btn-mover-canto {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 3px 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.btn-mover-canto:hover:not(:disabled) {
+  background: rgba(208, 18, 18, 0.08);
+  color: #d01212;
+  border-color: #d01212;
+  transform: scale(1.05);
+}
+
+.btn-mover-canto:disabled {
+  opacity: 0.22;
+  cursor: not-allowed;
+  border-color: transparent;
 }
 
 /* Enlaces a los cantos desde la lista */
@@ -959,10 +1071,18 @@
     gap: 6px !important;
   }
   .badge-posicion-circulo {
-    width: 20px !important;
-    height: 20px !important;
     min-width: 20px !important;
+    height: 20px !important;
+    width: auto !important;
+    padding: 0 4px !important;
+    border-radius: 999px !important;
     font-size: 0.7rem !important;
+  }
+  .btn-mover-canto {
+    padding: 2px 3px !important;
+  }
+  .btn-mover-canto .material-symbols-outlined {
+    font-size: 16px !important;
   }
   .btn-asignar-cantor-inline {
     font-size: 0.78rem !important;

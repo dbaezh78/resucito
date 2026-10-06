@@ -17,7 +17,12 @@ const MAPA_ETIQUETAS = {
     "Entrada": "E",
     "Paz": "P",
     "Liturgia": "L",
-    "Comunión": "C",
+    "Litúrgico": "L",
+    "Liturgico": "L",
+    "Cuerpo": "C",
+    "Sangre": "S",
+    "Comunión": "CS",
+    "Comunion": "CS",
     "Final": "F"
 };
 
@@ -52,6 +57,78 @@ const normalizarTexto = (texto) => {
         .replace(/[^a-z0-9\s]/g, "")
         .trim();
 };
+
+// --- ORDEN LITÚRGICO Y JERARQUÍA DE CANTOS EN LA EUCARISTÍA ---
+// 1. Canto de Entrada = E
+// 2. Gloria a Dios en lo alto del cielo siempre en 2do lugar por defecto (aunque sea L)
+// 3. Canto de paz = P en 3er lugar
+// 4. Demás cantos litúrgicos = L
+// 5. Cuerpo = C, luego Sangre = S, luego Comunión = CS
+// 6. Canto final = F
+export function esCantoGloria(item) {
+    if (!item) return false;
+    const songId = String(typeof item === 'object' ? item.id : item || '').toLowerCase().trim();
+    if (songId === 'gloriaadiosenloaltodelcielo') return true;
+    const songMeta = todosLosCantos.find(c => String(c.id).toLowerCase().trim() === songId);
+    if (songMeta) {
+        const idMeta = String(songMeta.id || '').toLowerCase().trim();
+        const tit = normalizarTexto(songMeta.title || songMeta.titulo || '');
+        if (idMeta === 'gloriaadiosenloaltodelcielo' || tit.startsWith('gloria a dios en lo alto del cielo')) {
+            return true;
+        }
+    }
+    return false;
+}
+
+export function obtenerPesoLiturgico(item) {
+    if (!item) return 999;
+    const tag = String(item.etiqueta || item.tag || '').trim().toUpperCase();
+
+    // 1. Canto de Entrada = E
+    if (tag === 'E') return 10;
+
+    // 2. Gloria a Dios en lo alto del cielo (2do lugar por defecto)
+    if (esCantoGloria(item)) return 20;
+
+    // 3. Canto de paz = P (3er lugar)
+    if (tag === 'P') return 30;
+
+    // 4. Demás cantos litúrgicos = L
+    if (tag === 'L') return 40;
+
+    // 5. Cuerpo = C, Sangre = S, Comunión = CS
+    if (tag === 'C') return 50;
+    if (tag === 'S') return 60;
+    if (tag === 'CS') return 70;
+
+    // 6. Canto final = F
+    if (tag === 'F') return 80;
+
+    // Números libres (1, 2, 3...)
+    const num = parseInt(tag, 10);
+    if (!isNaN(num)) return 100 + num;
+    return 200;
+}
+
+export function ordenarCantosPorLiturgia(lista) {
+    if (!Array.isArray(lista)) return;
+    lista.sort((a, b) => {
+        const pesoA = obtenerPesoLiturgico(a);
+        const pesoB = obtenerPesoLiturgico(b);
+        if (pesoA !== pesoB) return pesoA - pesoB;
+        return 0;
+    });
+}
+
+export function cantoPerteneceAMomento(canto, momento) {
+    if (!canto || !canto.moments || !Array.isArray(canto.moments)) return false;
+    if (!momento || momento === 'Libre') return false;
+    if (canto.moments.includes(momento)) return true;
+    if (momento === 'Cuerpo' || momento === 'Sangre' || momento === 'Comunión' || momento === 'Comunion') {
+        return canto.moments.includes('Comunión') || canto.moments.includes('Fracción Del Pan');
+    }
+    return false;
+}
 
 // --- GENERADOR Y FORMATEADOR DE CÓDIGO DE 16 CARACTERES ---
 export function generarCodigo16() {
@@ -2231,7 +2308,7 @@ window.toggleCantoParroquia = (id) => {
         let etiqueta;
         if (momentoSeleccionado === 'Libre') {
             const numericos = cantosSeleccionados
-                .filter(item => !['E', 'P', 'L', 'C', 'F'].includes(item.etiqueta))
+                .filter(item => !['E', 'P', 'L', 'C', 'S', 'CS', 'F'].includes(item.etiqueta))
                 .map(item => parseInt(item.etiqueta))
                 .filter(num => !isNaN(num))
                 .sort((a, b) => a - b);
@@ -2252,19 +2329,33 @@ window.toggleCantoParroquia = (id) => {
             cejilla: (songMeta && songMeta.cejilla) ? String(songMeta.cejilla) : "0",
             tono: (songMeta && songMeta.acorde) ? songMeta.acorde : "La"
         });
-    }
 
-    // Orden litúrgico
-    const prioridad = { 'E': 1, 'P': 2, 'L': 3, 'C': 4, 'F': 5 };
-    cantosSeleccionados.sort((a, b) => {
-        const pesoA = prioridad[a.etiqueta] || 2;
-        const pesoB = prioridad[b.etiqueta] || 2;
-        if (pesoA !== pesoB) return pesoA - pesoB;
-        return parseInt(a.etiqueta || 0) - parseInt(b.etiqueta || 0);
-    });
+        // Orden litúrgico por defecto
+        ordenarCantosPorLiturgia(cantosSeleccionados);
+    }
 
     actualizarInterfazSeleccionParroquia();
     dispararAutoguardado();
+};
+
+window.moverCantoColaParroquia = (index, direccion) => {
+    const targetIdx = index + direccion;
+    if (targetIdx < 0 || targetIdx >= cantosSeleccionados.length) return;
+
+    const temp = cantosSeleccionados[index];
+    cantosSeleccionados[index] = cantosSeleccionados[targetIdx];
+    cantosSeleccionados[targetIdx] = temp;
+
+    if (preparacionActiva) {
+        preparacionActiva.cantos = [...cantosSeleccionados];
+    }
+
+    actualizarInterfazSeleccionParroquia();
+    if (document.getElementById('box-asignacion-cantores')?.style.display === 'block') {
+        renderizarAreaAsignacionCantores();
+    }
+    dispararAutoguardado();
+    renderizarListaPreparaciones();
 };
 
 function actualizarInterfazSeleccionParroquia() {
@@ -2274,12 +2365,21 @@ function actualizarInterfazSeleccionParroquia() {
     const cola = document.getElementById('cola-seleccion-parroquia');
     if (cola) {
         cola.innerHTML = '';
-        cantosSeleccionados.forEach((item) => {
+        cantosSeleccionados.forEach((item, idx) => {
             const c = todosLosCantos.find(can => String(can.id) === String(item.id));
             if (c) {
                 const tag = document.createElement('div');
                 tag.className = 'canto-tag';
-                tag.innerHTML = `<span>${item.etiqueta}</span> ${c.title || c.titulo} ${item.tono ? `<small style="opacity:0.75; font-weight:600; margin-left:4px;">(${item.tono})</small>` : ''}`;
+                tag.innerHTML = `
+                    <span>${item.etiqueta}</span>
+                    <span style="font-weight: 600;">${c.title || c.titulo}</span>
+                    ${item.tono ? `<small style="opacity:0.75; font-weight:600; margin-left:4px;">(${item.tono})</small>` : ''}
+                    <span class="canto-tag-controles" onclick="event.stopPropagation()" style="display: inline-flex; align-items: center; gap: 2px; margin-left: 6px;">
+                        <button type="button" class="btn-tag-mover" title="Mover antes" ${idx === 0 ? 'disabled' : ''} onclick="window.moverCantoColaParroquia(${idx}, -1)">◀</button>
+                        <button type="button" class="btn-tag-mover" title="Mover después" ${idx === cantosSeleccionados.length - 1 ? 'disabled' : ''} onclick="window.moverCantoColaParroquia(${idx}, 1)">▶</button>
+                        <button type="button" class="btn-tag-quitar" title="Quitar canto" onclick="window.toggleCantoParroquia('${item.id}')">✕</button>
+                    </span>
+                `;
                 tag.onclick = (e) => {
                     e.stopPropagation();
                     window.toggleCantoParroquia(item.id);
@@ -2303,8 +2403,8 @@ function renderizarListaCantosParroquia(lista) {
 
     const listaOrdenadaParaMostrar = [...lista].sort((a, b) => {
         if (momentoSeleccionado === 'Libre') return 0;
-        const esDelMomentoA = a.moments && a.moments.includes(momentoSeleccionado);
-        const esDelMomentoB = b.moments && b.moments.includes(momentoSeleccionado);
+        const esDelMomentoA = cantoPerteneceAMomento(a, momentoSeleccionado);
+        const esDelMomentoB = cantoPerteneceAMomento(b, momentoSeleccionado);
         if (esDelMomentoA && !esDelMomentoB) return -1;
         if (!esDelMomentoA && esDelMomentoB) return 1;
         return 0;
@@ -2315,7 +2415,7 @@ function renderizarListaCantosParroquia(lista) {
         div.className = 'item-canto';
         div.tabIndex = 0;
 
-        const esDelMomento = canto.moments && canto.moments.includes(momentoSeleccionado);
+        const esDelMomento = cantoPerteneceAMomento(canto, momentoSeleccionado);
         if (momentoSeleccionado !== 'Libre' && !esDelMomento) {
             div.style.opacity = "0.65";
         }
@@ -2522,6 +2622,16 @@ function renderizarAreaAsignacionCantores() {
                 </div>
 
                 <div class="canto-asignacion-controles">
+                    <!-- Reordenar posición (Subir / Bajar) -->
+                    <div class="canto-reorder-wrapper" style="display: flex; align-items: center; gap: 2px;">
+                        <button type="button" class="btn-mover-canto" title="Subir canto" ${index === 0 ? 'disabled' : ''} onclick="window.moverCantoAsignacion(${index}, -1)">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_upward</span>
+                        </button>
+                        <button type="button" class="btn-mover-canto" title="Bajar canto" ${index === cantosSeleccionados.length - 1 ? 'disabled' : ''} onclick="window.moverCantoAsignacion(${index}, 1)">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_downward</span>
+                        </button>
+                    </div>
+
                     <!-- Selector de Tono -->
                     <div class="canto-tuning-wrapper" title="Tono de la interpretación">
                         <button class="btn-tuning" onclick="window.cambiarTonoCanto(${index}, -1)">-</button>
@@ -2557,6 +2667,39 @@ function renderizarAreaAsignacionCantores() {
         `;
     }).join('');
 }
+
+window.moverCantoAsignacion = (index, direccion) => {
+    if (!puedeGestionarPreparacionesYCantores()) return;
+    const targetIdx = index + direccion;
+    if (targetIdx < 0 || targetIdx >= cantosSeleccionados.length) return;
+
+    const temp = cantosSeleccionados[index];
+    cantosSeleccionados[index] = cantosSeleccionados[targetIdx];
+    cantosSeleccionados[targetIdx] = temp;
+
+    if (preparacionActiva) {
+        preparacionActiva.cantos = [...cantosSeleccionados];
+    }
+
+    renderizarAreaAsignacionCantores();
+    actualizarInterfazSeleccionParroquia();
+    dispararAutoguardado();
+    renderizarListaPreparaciones();
+};
+
+window.reordenarLiturgicamentePreparacionActiva = () => {
+    if (!puedeGestionarPreparacionesYCantores()) return;
+    if (!cantosSeleccionados || cantosSeleccionados.length === 0) return;
+    ordenarCantosPorLiturgia(cantosSeleccionados);
+    if (preparacionActiva) {
+        preparacionActiva.cantos = [...cantosSeleccionados];
+    }
+    renderizarAreaAsignacionCantores();
+    actualizarInterfazSeleccionParroquia();
+    dispararAutoguardado();
+    renderizarListaPreparaciones();
+    mostrarToastVerde("Cantos ordenados según liturgia");
+};
 
 // Transposición de Tono por Canto
 window.cambiarTonoCanto = (index, delta) => {
@@ -2664,10 +2807,35 @@ window.guardarCambiosAsignacionManual = async (btn) => {
             btn.innerHTML = `<span class="material-symbols-outlined">check_circle</span> Guardado`;
             setTimeout(() => { btn.innerHTML = orig; }, 2000);
         }
+
+        // Ocultar pantalla de asignación al guardar
+        const box = document.getElementById('box-asignacion-cantores');
+        if (box) box.style.display = 'none';
+
+        renderizarListaPreparaciones();
+
+        const tarjeta = document.getElementById(`prep-tarjeta-${preparacionActiva.id}`);
+        if (tarjeta) {
+            tarjeta.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     } catch (e) {
         mostrarAlerta("Error al guardar: " + e.message, "Error", "error");
     }
 };
+
+window.cerrarAsignacionCantores = () => {
+    const box = document.getElementById('box-asignacion-cantores');
+    if (box) box.style.display = 'none';
+
+    const tarjeta = preparacionActiva ? document.getElementById(`prep-tarjeta-${preparacionActiva.id}`) : null;
+    if (tarjeta) {
+        tarjeta.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+        const wrapper = document.getElementById('wrapper-lista-preparaciones');
+        if (wrapper) wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+};
+window.cancelarAsignacionCantores = window.cerrarAsignacionCantores;
 
 // --- LISTADO DE PREPARACIONES DE LA PARROQUIA ---
 function renderizarListaPreparaciones(filtro = '') {
@@ -2739,12 +2907,15 @@ function renderizarListaPreparaciones(filtro = '') {
                             <span>📅 ${prep.fecha || 'Sin fecha'}</span>
                             <span>•</span>
                             <span>${cantos.length} cantos</span>
-                            ${cantoresUnicos.length > 0 ? `<span>•</span> <span>🎤 ${cantoresUnicos.join(', ')}</span>` : ''}
+                            ${cantoresUnicos.length > 0 ? `<span class="prep-tarjeta-cantores-resumen"><span>•</span> <span>🎤 ${cantoresUnicos.join(', ')}</span></span>` : ''}
                         </div>
                     </div>
 
                     <div class="prep-tarjeta-acciones" onclick="event.stopPropagation()">
                         ${puedeEditar ? `
+                        <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Aplicar orden litúrgico por defecto" onclick="window.reordenarLiturgicamentePreparacion('${prep.id}')">
+                            <span class="material-symbols-outlined" style="font-size: 16px;">low_priority</span>
+                        </button>
                         <button class="btn-parroquia-top" style="padding: 6px 10px;" title="Editar y asignar cantores" onclick="window.cargarPreparacionParaEditar('${prep.id}')">
                             <span class="material-symbols-outlined" style="font-size: 16px;">edit</span>
                         </button>
@@ -2771,6 +2942,7 @@ function renderizarListaPreparaciones(filtro = '') {
                         const tonoStr = item.tono ? `Tono: ${item.tono}` : '';
                         const cejStr = (item.cejilla && item.cejilla !== "0") ? `Cej. ${item.cejilla}` : '';
                         const meta = [tonoStr, cejStr].filter(Boolean).join(' | ');
+                        const primerNombre = (item.cantor || '').trim().split(/\s+/)[0] || '';
 
                         const safeTitle = (titulo || '').replace(/"/g, '&quot;');
                         return `
@@ -2780,32 +2952,45 @@ function renderizarListaPreparaciones(filtro = '') {
                                     <span class="link-canto-lista">
                                         ${titulo}
                                     </span>
-                                    ${meta ? `<span style="font-size: 0.8rem; color: #666; margin-left: 4px;">(${meta})</span>` : ''}
+                                    ${meta ? `<span class="prep-canto-meta-tono">(${meta})</span>` : ''}
                                 </div>
-                                <div id="canto-cantor-slot-${prep.id}-${idxCanto}" class="prep-canto-cantor-slot" onclick="event.stopPropagation()" style="display: flex; align-items: center; gap: 6px;">
-                                    ${item.cantor ? `
-                                        <span class="prep-cantor-pill ${puedeEditar ? 'interactivo' : ''}" 
-                                              title="${puedeEditar ? 'Doble clic para cambiar cantor' : 'Cantor asignado'}"
-                                              ${puedeEditar ? `ondblclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})"` : ''}
-                                              style="${puedeEditar ? 'cursor: pointer; user-select: none;' : ''}">
-                                            <span class="material-symbols-outlined" style="font-size: 14px;">mic</span>
-                                            ${item.cantor}
-                                        </span>
-                                        ${puedeEditar ? `
-                                        <button type="button" class="btn-asignar-cantor-inline" title="Cambiar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
-                                            <span class="material-symbols-outlined" style="font-size: 15px;">edit</span>
-                                        </button>
-                                        ` : ''}
-                                    ` : `
-                                        ${puedeEditar ? `
-                                        <button type="button" class="btn-asignar-cantor-inline btn-sin-cantor" title="Clic para asignar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
-                                            <span class="lbl-sin-cantor">Sin cantor</span>
-                                            <span class="material-symbols-outlined" style="font-size: 16px; color: var(--accent-color, #d01212);">edit</span>
-                                        </button>
+                                <div class="prep-canto-right-group">
+                                    <div id="canto-cantor-slot-${prep.id}-${idxCanto}" class="prep-canto-cantor-slot" onclick="event.stopPropagation()" style="display: flex; align-items: center; gap: 6px;">
+                                        ${item.cantor ? `
+                                            <span class="prep-cantor-pill ${puedeEditar ? 'interactivo' : ''}" 
+                                                  title="${item.cantor}${puedeEditar ? ' (Doble clic para cambiar)' : ''}"
+                                                  ${puedeEditar ? `ondblclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})"` : ''}
+                                                  style="${puedeEditar ? 'cursor: pointer; user-select: none;' : ''}">
+                                                <span class="material-symbols-outlined" style="font-size: 14px;">mic</span>
+                                                <span class="prep-cantor-nombre-full">${item.cantor}</span>
+                                                <span class="prep-cantor-nombre-short">${primerNombre}</span>
+                                            </span>
+                                            ${puedeEditar ? `
+                                            <button type="button" class="btn-asignar-cantor-inline" title="Cambiar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
+                                                <span class="material-symbols-outlined" style="font-size: 15px;">edit</span>
+                                            </button>
+                                            ` : ''}
                                         ` : `
-                                        <span class="lbl-sin-cantor" style="color: var(--text-muted, #999);">Sin cantor</span>
+                                            ${puedeEditar ? `
+                                            <button type="button" class="btn-asignar-cantor-inline btn-sin-cantor" title="Clic para asignar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
+                                                <span class="lbl-sin-cantor">Sin cantor</span>
+                                                <span class="material-symbols-outlined" style="font-size: 16px; color: var(--accent-color, #d01212);">edit</span>
+                                            </button>
+                                            ` : `
+                                            <span class="lbl-sin-cantor" style="color: var(--text-muted, #999);">Sin cantor</span>
+                                            `}
                                         `}
-                                    `}
+                                    </div>
+                                    ${puedeEditar ? `
+                                    <div class="prep-canto-reorder-controles" onclick="event.stopPropagation()">
+                                        <button type="button" class="btn-mover-canto" title="Subir canto" ${idxCanto === 0 ? 'disabled' : ''} onclick="window.moverCantoPreparacion('${prep.id}', ${idxCanto}, -1)">
+                                            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_upward</span>
+                                        </button>
+                                        <button type="button" class="btn-mover-canto" title="Bajar canto" ${idxCanto === cantos.length - 1 ? 'disabled' : ''} onclick="window.moverCantoPreparacion('${prep.id}', ${idxCanto}, 1)">
+                                            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_downward</span>
+                                        </button>
+                                    </div>
+                                    ` : ''}
                                 </div>
                             </div>
                         `;
@@ -2859,6 +3044,80 @@ window.limpiarBuscadorPreparaciones = () => {
     }
 };
 
+// Reordenar cantos de una preparación (Subir / Bajar)
+window.moverCantoPreparacion = async (prepId, idxCanto, direccion) => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Solo los responsables o cantores encargados pueden modificar el orden de los cantos.", "Acceso Restringido", "lock");
+        return;
+    }
+    const prep = preparacionesParroquia.find(p => String(p.id) === String(prepId));
+    if (!prep || !Array.isArray(prep.cantos)) return;
+
+    const targetIdx = idxCanto + direccion;
+    if (targetIdx < 0 || targetIdx >= prep.cantos.length) return;
+
+    const temp = prep.cantos[idxCanto];
+    prep.cantos[idxCanto] = prep.cantos[targetIdx];
+    prep.cantos[targetIdx] = temp;
+
+    if (preparacionActiva && String(preparacionActiva.id) === String(prepId)) {
+        preparacionActiva.cantos = [...prep.cantos];
+        cantosSeleccionados = JSON.parse(JSON.stringify(prep.cantos));
+        if (document.getElementById('box-asignacion-cantores')?.style.display === 'block') {
+            renderizarAreaAsignacionCantores();
+        }
+        actualizarInterfazSeleccionParroquia();
+    }
+
+    renderizarListaPreparaciones();
+
+    try {
+        const prepRef = doc(db, "parroquias", parroquiaActiva.id, "preparaciones", String(prepId));
+        await updateDoc(prepRef, {
+            cantos: prep.cantos,
+            actualizado: new Date().toISOString()
+        });
+    } catch (e) {
+        console.error("Error guardando orden de preparación:", e);
+        mostrarAlerta("Error al guardar el nuevo orden: " + e.message, "Error", "error");
+    }
+};
+
+// Reordenar litúrgicamente una preparación completa
+window.reordenarLiturgicamentePreparacion = async (prepId) => {
+    if (!puedeGestionarPreparacionesYCantores()) {
+        mostrarAlerta("Solo los responsables o cantores encargados pueden modificar el orden de los cantos.", "Acceso Restringido", "lock");
+        return;
+    }
+    const prep = preparacionesParroquia.find(p => String(p.id) === String(prepId));
+    if (!prep || !Array.isArray(prep.cantos) || prep.cantos.length === 0) return;
+
+    ordenarCantosPorLiturgia(prep.cantos);
+
+    if (preparacionActiva && String(preparacionActiva.id) === String(prepId)) {
+        preparacionActiva.cantos = [...prep.cantos];
+        cantosSeleccionados = JSON.parse(JSON.stringify(prep.cantos));
+        if (document.getElementById('box-asignacion-cantores')?.style.display === 'block') {
+            renderizarAreaAsignacionCantores();
+        }
+        actualizarInterfazSeleccionParroquia();
+    }
+
+    renderizarListaPreparaciones();
+
+    try {
+        const prepRef = doc(db, "parroquias", parroquiaActiva.id, "preparaciones", String(prepId));
+        await updateDoc(prepRef, {
+            cantos: prep.cantos,
+            actualizado: new Date().toISOString()
+        });
+        mostrarToastVerde(`Orden litúrgico aplicado a "${prep.nombre}"`);
+    } catch (e) {
+        console.error("Error guardando orden litúrgico:", e);
+        mostrarAlerta("Error al guardar: " + e.message, "Error", "error");
+    }
+};
+
 // Cargar preparación existente para editarla y asignar cantores
 window.cargarPreparacionParaEditar = (prepId) => {
     const prep = preparacionesParroquia.find(p => p.id === prepId);
@@ -2905,13 +3164,15 @@ window.cancelarSelectCantorInline = (prepId, idxCanto) => {
     const item = prep.cantos[idxCanto];
     const puedeEditar = puedeGestionarPreparacionesYCantores();
 
+    const primerNombre = (item.cantor || '').trim().split(/\s+/)[0] || '';
     slot.innerHTML = item.cantor ? `
         <span class="prep-cantor-pill ${puedeEditar ? 'interactivo' : ''}" 
-              title="${puedeEditar ? 'Doble clic para cambiar cantor' : 'Cantor asignado'}"
+              title="${item.cantor}${puedeEditar ? ' (Doble clic para cambiar)' : ''}"
               ${puedeEditar ? `ondblclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})"` : ''}
               style="${puedeEditar ? 'cursor: pointer; user-select: none;' : ''}">
             <span class="material-symbols-outlined" style="font-size: 14px;">mic</span>
-            ${item.cantor}
+            <span class="prep-cantor-nombre-full">${item.cantor}</span>
+            <span class="prep-cantor-nombre-short">${primerNombre}</span>
         </span>
         ${puedeEditar ? `
         <button type="button" class="btn-asignar-cantor-inline" title="Cambiar cantor" onclick="event.stopPropagation(); window.activarSelectCantorInline('${prep.id}', ${idxCanto})">
@@ -3032,7 +3293,9 @@ window.guardarCantorCantoDirecto = async (prepId, idxCanto, nuevoCantor) => {
         prepTarget.cantos = cantosClonados;
         if (preparacionActiva && String(preparacionActiva.id) === String(prepId)) {
             cantosSeleccionados = JSON.parse(JSON.stringify(cantosClonados));
-            renderizarAreaAsignacionCantores();
+            if (document.getElementById('box-asignacion-cantores')?.style.display === 'block') {
+                renderizarAreaAsignacionCantores();
+            }
         }
 
         renderizarListaPreparaciones();
@@ -3127,7 +3390,9 @@ window.abrirModalAsignacionRapida = (prepId, cantoIndex) => {
                 prepTarget.cantos = cantosClonados;
                 if (preparacionActiva && String(preparacionActiva.id) === String(prepIdAsignacionRapida)) {
                     cantosSeleccionados = JSON.parse(JSON.stringify(cantosClonados));
-                    renderizarAreaAsignacionCantores();
+                    if (document.getElementById('box-asignacion-cantores')?.style.display === 'block') {
+                        renderizarAreaAsignacionCantores();
+                    }
                 }
 
                 renderizarListaPreparaciones();

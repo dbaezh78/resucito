@@ -1520,9 +1520,24 @@ body.theme-dark .songs-grid.style-simple .song-card.canto-semana-actual {
   overflow-y: auto;
   box-shadow: var(--shadow-lg);
   animation: scale-up 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  @media (min-width: 384px) and (max-width: 420px) {
+    padding: 2px;
+  }
 }
 
+.modalcantos {
+  padding: 14px 16px; 
+  overflow-y: auto; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px;
 
+    @media (min-width: 384px) and (max-width: 420px) {
+        padding: 14px 2px;
+          gap: 4px;
+    }
+}
 
 @keyframes scale-up {
   from { transform: scale(0.9); opacity: 0; }
@@ -2543,11 +2558,13 @@ body.theme-dark .canto-header-cantor-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
+  min-width: 28px;
+  width: auto;
+  padding: 0 4px;
   height: 28px;
   background: var(--accent-color, #d01212);
   color: #ffffff;
-  border-radius: 8px;
+  border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 800;
   flex-shrink: 0;
@@ -2581,6 +2598,23 @@ body.theme-dark .canto-header-cantor-badge {
   margin-left: 6px;
   flex-shrink: 0;
   white-space: nowrap;
+}
+
+.modal-playlist-cantor-full {
+  display: inline;
+}
+
+.modal-playlist-cantor-short {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .modal-playlist-cantor-full {
+    display: none !important;
+  }
+  .modal-playlist-cantor-short {
+    display: inline !important;
+  }
 }
 
 body.theme-dark .modal-playlist-badge-cantor {
@@ -4290,10 +4324,12 @@ body.theme-dark .badge-tipo-lista.badge-sencilla {
 .pred {z-index: 99;}
 
 .modal-content {
-  max-width: 90% !important;
-    max-height: 70%;
+  max-width: 90%;
+    max-height: 80%;
     overflow: auto;
 }
+@media (min-width: 411px) {.modal-content{max-width: max-content;}}
+@media (min-width: 768px) {.modal-content{max-width: 90%;}}
 @media (min-width: 1200px) {.modal-content{max-width: max-content;}}
 @media (min-width: 1500px) {.modal-content{max-width: max-content;}}
 @media (min-width: 1700px) {.modal-content{max-width: max-content;}}

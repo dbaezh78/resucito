@@ -81,7 +81,7 @@
   transition: max-height 0.35s ease, opacity 0.3s ease;
 }
 
-@media (min-width: 384px) {.section-content {padding: 7px;}}
+@media (min-width: 384px) {.section-content {padding: 2px;}}
 @media (min-width: 768px) {.section-content {padding: 20px;}}
 
 .section-content.cfg-close {

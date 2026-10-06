@@ -7,13 +7,13 @@
   <link rel="icon" href="./assets/ico-CiCZOVa_.ico" type="image/x-icon">
   <link rel="manifest" href="./assets/manifest-Dpg-bcG-.json">
   <meta name="theme-color" content="#000000">
-  <script type="module" crossorigin src="./assets/main-ClCpGLZX.js"></script>
+  <script type="module" crossorigin src="./assets/main-S0_6Iot9.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/preload-helper-DsiLuOB8.js">
   <link rel="modulepreload" crossorigin href="./assets/bitacoraLogger-DmpsdGEk.js">
   <link rel="modulepreload" crossorigin href="./assets/datos-BoUg3fBB.js">
   <link rel="modulepreload" crossorigin href="./assets/songs-data-BjOYZCsz.js">
   <link rel="modulepreload" crossorigin href="./assets/sync-CAYozVCc.js">
-  <link rel="stylesheet" crossorigin href="./assets/main-BlrvZki8.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-86OvnLim.css">
 </head>
 <body class="theme-light">
   <div class="app-container">
@@ -560,7 +560,12 @@
 
   <!-- MODAL: LISTA DE CANTOS ACTIVA -->
   <div id="modal-playlist-activa" class="modal-overlay" style="display: none; z-index: 100006;">
-    <div class="modal-content" style="max-width: 520px; max-height: 85vh; border-radius: 16px; display: flex; flex-direction: column; overflow: hidden; background: var(--modal-bg, var(--panel-bg)); border: 1.5px solid var(--panel-border);">
+    <div class="modal-content" >
+
+      <!-- NO USAR
+      style="max-width: 520px; max-height: 85vh; border-radius: 16px; display: flex; flex-direction: column; overflow: hidden; background: var(--modal-bg, var(--panel-bg)); border: 1.5px solid var(--panel-border);"-->
+
+
       <div class="modal-header" style="display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border-bottom: 1.5px solid var(--panel-border); background: var(--panel-bg);">
         <div id="modal-playlist-activa-header-info" onclick="window.irAListaEnPreparar()" style="display: flex; align-items: center; gap: 10px; cursor: pointer; border-radius: 8px; padding: 4px 6px; margin: -4px -6px; transition: background 0.15s ease;" title="Ver esta lista en Listados Guardados (Preparación)">
           <span class="material-symbols-outlined" style="color: var(--accent-color, #d01212); font-size: 1.6rem;">queue_music</span>
@@ -583,7 +588,7 @@
           <button id="modal-playlist-activa-close" class="modal-close" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-color); line-height: 1; padding: 4px; display: flex; align-items: center; justify-content: center;">&times;</button>
         </div>
       </div>
-      <div id="modal-playlist-activa-lista" style="padding: 14px 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px;">
+      <div id="modal-playlist-activa-lista" class="modalcantos">
         <!-- Cantos renderizados dinámicamente -->
       </div>
     </div>

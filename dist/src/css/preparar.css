@@ -249,22 +249,54 @@
   user-select: none;
 }
 
-.canto-tag span {
-  width: 22px;
+.canto-tag span:first-child {
+  min-width: 22px;
   height: 22px;
-  border-radius: 50%;
+  width: auto;
+  padding: 0 4px;
+  border-radius: 999px;
   background: var(--accent-color, #d01212);
   color: #ffffff;
   font-weight: 800;
   font-size: 0.75rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
+.btn-tag-mover, .btn-tag-quitar {
+  background: transparent;
+  border: none;
+  font-size: 0.72rem;
+  padding: 1px 3px;
+  cursor: pointer;
+  color: var(--text-muted, #666);
+  border-radius: 3px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.btn-tag-mover:hover:not(:disabled) {
+  background: rgba(208, 18, 18, 0.12);
+  color: var(--accent-color, #d01212);
+}
+
+.btn-tag-quitar:hover {
+  background: rgba(220, 38, 38, 0.2);
+  color: #dc2626;
+}
+
+.btn-tag-mover:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
 .canto-tag:hover {
   background: rgba(208, 18, 18, 0.1);
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 /* Contador Footer y Botón Acción */
