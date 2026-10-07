@@ -1,0 +1,112 @@
+{
+  "id": "seua_51",
+  "title": "Domingo de la 7ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 7ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8 y 10. 12-13 (R.: 8a)",
+  "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8 y 10. 12-13 (R.: 8a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 507,
+  "respuesta": "R. El Señor es compasivo y misericordioso.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.",
+    "Él perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.",
+    "El Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno nos trata como merecen nuestros pecados\nni nos paga según nuestras culpas. R.",
+    "Como dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos.\nComo un padre siente ternura por sus hijos,\nsiente el Señor ternura por sus fieles. R."
+  ],
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno nos trata como merecen nuestros pecados\nni nos paga según nuestras culpas. R.\n\nComo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos.\nComo un padre siente ternura por sus hijos,\nsiente el Señor ternura por sus fieles. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 7 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 102 1 2 3 4 8 y 10 12 13 r 8a r el senor es compasivo y misericordioso bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no nos trata como merecen nuestros pecados ni nos paga segun nuestras culpas r como dista el oriente del ocaso asi aleja de nosotros nuestros delitos como un padre siente ternura por sus hijos siente el senor ternura por sus fieles r",
+  "lizq": [
+    {
+      "line": "R. El Señor es compasivo y misericordioso.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor,",
+      "sC": ""
+    },
+    {
+      "line": "y todo mi ser a su santo nombre.",
+      "sC": ""
+    },
+    {
+      "line": "Bendice, alma mía, al Señor,",
+      "sC": ""
+    },
+    {
+      "line": "y no olvides sus beneficios. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él perdona todas tus culpas",
+      "sC": ""
+    },
+    {
+      "line": "y cura todas tus enfermedades;",
+      "sC": ""
+    },
+    {
+      "line": "él rescata tu vida de la fosa",
+      "sC": ""
+    },
+    {
+      "line": "y te colma de gracia y de ternura. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es compasivo y misericordioso,",
+      "sC": ""
+    },
+    {
+      "line": "lento a la ira y rico en clemencia;",
+      "sC": ""
+    },
+    {
+      "line": "no nos trata como merecen nuestros pecados",
+      "sC": ""
+    },
+    {
+      "line": "ni nos paga según nuestras culpas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como dista el oriente del ocaso,",
+      "sC": ""
+    },
+    {
+      "line": "así aleja de nosotros nuestros delitos.",
+      "sC": ""
+    },
+    {
+      "line": "Como un padre siente ternura por sus hijos,",
+      "sC": ""
+    },
+    {
+      "line": "siente el Señor ternura por sus fieles. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

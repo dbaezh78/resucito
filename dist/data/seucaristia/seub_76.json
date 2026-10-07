@@ -1,0 +1,75 @@
+{
+  "id": "seub_76",
+  "title": "Domingo de la 34ª semana de Tiempo Ordinario - Jesucristo, Rey del Universo",
+  "celebracion": "Domingo de la 34ª semana de Tiempo Ordinario - Jesucristo, Rey del Universo",
+  "subtitle": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
+  "salmo": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 534,
+  "respuesta": "R. El Señor reina, vestido de majestad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "El Señor reina, vestido de majestad,\nel Señor, vestido y ceñido de poder. R.",
+    "Así está firme el orbe y no vacila.\nTu trono está firme desde siempre,\ny tú eres eterno. R.",
+    "Tus mandatos son fieles y seguros;\nla santidad es el adorno de tu casa,\nSeñor, por días sin término. R."
+  ],
+  "textoCompleto": "El Señor reina, vestido de majestad,\nel Señor, vestido y ceñido de poder. R.\n\nAsí está firme el orbe y no vacila.\nTu trono está firme desde siempre,\ny tú eres eterno. R.\n\nTus mandatos son fieles y seguros;\nla santidad es el adorno de tu casa,\nSeñor, por días sin término. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 34 semana de tiempo ordinario jesucristo rey del universo ciclo b tiempo ordinario domingo salmo responsorial salmo 92 1ab 1c 2 5 r 1a r el senor reina vestido de majestad el senor reina vestido de majestad el senor vestido y cenido de poder r asi esta firme el orbe y no vacila tu trono esta firme desde siempre y tu eres eterno r tus mandatos son fieles y seguros la santidad es el adorno de tu casa senor por dias sin termino r",
+  "lizq": [
+    {
+      "line": "R. El Señor reina, vestido de majestad.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor reina, vestido de majestad,",
+      "sC": ""
+    },
+    {
+      "line": "el Señor, vestido y ceñido de poder. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Así está firme el orbe y no vacila.",
+      "sC": ""
+    },
+    {
+      "line": "Tu trono está firme desde siempre,",
+      "sC": ""
+    },
+    {
+      "line": "y tú eres eterno. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tus mandatos son fieles y seguros;",
+      "sC": ""
+    },
+    {
+      "line": "la santidad es el adorno de tu casa,",
+      "sC": ""
+    },
+    {
+      "line": "Señor, por días sin término. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

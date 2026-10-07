@@ -1,0 +1,112 @@
+{
+  "id": "seua_46",
+  "title": "Domingo de la 2ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 39, 2 y 4ab, 7-8a. 8b-9. 10 (R.: 8a y 9a)",
+  "salmo": "Salmo responsorial: Salmo 39, 2 y 4ab, 7-8a. 8b-9. 10 (R.: 8a y 9a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 502,
+  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito;\nme puso en la boca un cántico nuevo,\nun himno a nuestro Dios. R.",
+    "Tú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.",
+    "Como está escrito en mi libro:\n«Para hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.",
+    "He proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R."
+  ],
+  "textoCompleto": "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito;\nme puso en la boca un cántico nuevo,\nun himno a nuestro Dios. R.\n\nTú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\nComo está escrito en mi libro:\n«Para hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 2 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 39 2 y 4ab 7 8a 8b 9 10 r 8a y 9a r aqui estoy senor para hacer tu voluntad yo esperaba con ansia al senor el se inclino y escucho mi grito me puso en la boca un cantico nuevo un himno a nuestro dios r tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio entonces yo digo aqui estoy r como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r",
+  "lizq": [
+    {
+      "line": "R. Aquí estoy, Señor, para hacer tu voluntad.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo esperaba con ansia al Señor;",
+      "sC": ""
+    },
+    {
+      "line": "él se inclinó y escuchó mi grito;",
+      "sC": ""
+    },
+    {
+      "line": "me puso en la boca un cántico nuevo,",
+      "sC": ""
+    },
+    {
+      "line": "un himno a nuestro Dios. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú no quieres sacrificios ni ofrendas,",
+      "sC": ""
+    },
+    {
+      "line": "y, en cambio, me abriste el oído;",
+      "sC": ""
+    },
+    {
+      "line": "no pides sacrificio expiatorio,",
+      "sC": ""
+    },
+    {
+      "line": "entonces yo digo: «Aquí estoy». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como está escrito en mi libro:",
+      "sC": ""
+    },
+    {
+      "line": "«Para hacer tu voluntad».",
+      "sC": ""
+    },
+    {
+      "line": "Dios mío, lo quiero,",
+      "sC": ""
+    },
+    {
+      "line": "y llevo tu ley en las entrañas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "He proclamado tu salvación",
+      "sC": ""
+    },
+    {
+      "line": "ante la gran asamblea;",
+      "sC": ""
+    },
+    {
+      "line": "no he cerrado los labios:",
+      "sC": ""
+    },
+    {
+      "line": "Señor, tú lo sabes. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

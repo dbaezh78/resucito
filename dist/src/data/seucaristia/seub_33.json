@@ -1,0 +1,80 @@
+{
+  "id": "seub_33",
+  "title": "Tercer domingo de Pascua",
+  "celebracion": "Tercer domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 4, 2. 7. 9 (R.: cf. 7)",
+  "salmo": "Salmo responsorial: Salmo 4, 2. 7. 9 (R.: cf. 7)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. Haz brillar sobre nosotros la luz de tu rostro, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "R. Aleluya",
+    "Escúchame cuando te invoco, Dios, defensor mío;\ntú que en el aprieto me diste anchura,\nten piedad de mí y escucha mi oración. R.",
+    "Hay muchos que dicen: «¿Quién nos hará ver la dicha,\nsi la luz de tu rostro ha huido de nosotros?». R.",
+    "En paz me acuesto y en seguida me duermo,\nporque tú solo, Señor, me haces vivir tranquilo. R."
+  ],
+  "textoCompleto": "R. Aleluya\n\nEscúchame cuando te invoco, Dios, defensor mío;\ntú que en el aprieto me diste anchura,\nten piedad de mí y escucha mi oración. R.\n\nHay muchos que dicen: «¿Quién nos hará ver la dicha,\nsi la luz de tu rostro ha huido de nosotros?». R.\n\nEn paz me acuesto y en seguida me duermo,\nporque tú solo, Señor, me haces vivir tranquilo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "tercer domingo de pascua ciclo b pascua domingo salmo responsorial salmo 4 2 7 9 r cf 7 r haz brillar sobre nosotros la luz de tu rostro senor r aleluya escuchame cuando te invoco dios defensor mio tu que en el aprieto me diste anchura ten piedad de mi y escucha mi oracion r hay muchos que dicen quien nos hara ver la dicha si la luz de tu rostro ha huido de nosotros r en paz me acuesto y en seguida me duermo porque tu solo senor me haces vivir tranquilo r",
+  "lizq": [
+    {
+      "line": "R. Haz brillar sobre nosotros la luz de tu rostro, Señor.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Escúchame cuando te invoco, Dios, defensor mío;",
+      "sC": ""
+    },
+    {
+      "line": "tú que en el aprieto me diste anchura,",
+      "sC": ""
+    },
+    {
+      "line": "ten piedad de mí y escucha mi oración. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hay muchos que dicen: «¿Quién nos hará ver la dicha,",
+      "sC": ""
+    },
+    {
+      "line": "si la luz de tu rostro ha huido de nosotros?». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En paz me acuesto y en seguida me duermo,",
+      "sC": ""
+    },
+    {
+      "line": "porque tú solo, Señor, me haces vivir tranquilo. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

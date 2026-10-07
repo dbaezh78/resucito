@@ -1,0 +1,112 @@
+{
+  "id": "seub_51",
+  "title": "Domingo de la 9ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 9ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 80, 3-4. 5-6ab. 6c-8a. 10-11ab (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 80, 3-4. 5-6ab. 6c-8a. 10-11ab (R.: 2a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 509,
+  "respuesta": "R. Aclamad a Dios, nuestra fuerza.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Acompañad, tocad los panderos,\nlas cítaras templadas y las arpas;\ntocad la trompeta por la luna nueva,\npor la luna llena, que es nuestra fiesta. R.",
+    "Porque es una ley de Israel,\nun precepto del Dios de Jacob,\nuna norma establecida para José\nal salir de Egipto. R.",
+    "Oigo un lenguaje desconocido:\n«Retiré sus hombros de la carga,\ny sus manos dejaron la espuerta;\nclamaste en la aflicción, y te libré. R.",
+    "No tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto». R."
+  ],
+  "textoCompleto": "Acompañad, tocad los panderos,\nlas cítaras templadas y las arpas;\ntocad la trompeta por la luna nueva,\npor la luna llena, que es nuestra fiesta. R.\n\nPorque es una ley de Israel,\nun precepto del Dios de Jacob,\nuna norma establecida para José\nal salir de Egipto. R.\n\nOigo un lenguaje desconocido:\n«Retiré sus hombros de la carga,\ny sus manos dejaron la espuerta;\nclamaste en la aflicción, y te libré. R.\n\nNo tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 9 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 80 3 4 5 6ab 6c 8a 10 11ab r 2a r aclamad a dios nuestra fuerza acompanad tocad los panderos las citaras templadas y las arpas tocad la trompeta por la luna nueva por la luna llena que es nuestra fiesta r porque es una ley de israel un precepto del dios de jacob una norma establecida para jose al salir de egipto r oigo un lenguaje desconocido retire sus hombros de la carga y sus manos dejaron la espuerta clamaste en la afliccion y te libre r no tendras un dios extrano no adoraras un dios extranjero yo soy el senor dios tuyo que te saque del pais de egipto r",
+  "lizq": [
+    {
+      "line": "R. Aclamad a Dios, nuestra fuerza.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Acompañad, tocad los panderos,",
+      "sC": ""
+    },
+    {
+      "line": "las cítaras templadas y las arpas;",
+      "sC": ""
+    },
+    {
+      "line": "tocad la trompeta por la luna nueva,",
+      "sC": ""
+    },
+    {
+      "line": "por la luna llena, que es nuestra fiesta. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque es una ley de Israel,",
+      "sC": ""
+    },
+    {
+      "line": "un precepto del Dios de Jacob,",
+      "sC": ""
+    },
+    {
+      "line": "una norma establecida para José",
+      "sC": ""
+    },
+    {
+      "line": "al salir de Egipto. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oigo un lenguaje desconocido:",
+      "sC": ""
+    },
+    {
+      "line": "«Retiré sus hombros de la carga,",
+      "sC": ""
+    },
+    {
+      "line": "y sus manos dejaron la espuerta;",
+      "sC": ""
+    },
+    {
+      "line": "clamaste en la aflicción, y te libré. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No tendrás un dios extraño,",
+      "sC": ""
+    },
+    {
+      "line": "no adorarás un dios extranjero;",
+      "sC": ""
+    },
+    {
+      "line": "yo soy el Señor, Dios tuyo,",
+      "sC": ""
+    },
+    {
+      "line": "que te saqué del país de Egipto». R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

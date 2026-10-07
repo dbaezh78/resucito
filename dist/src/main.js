@@ -66,6 +66,11 @@ let allAsambleaExpanded = true;
 let currentBook = 'resucito';
 let activeAclamacionCiclo = 'Ciclo A';
 let activeAclamacionTiempo = 'Tiempo Ordinario';
+let activeEucaristiaCiclo = 'Ciclo A';
+let activeEucaristiaTiempo = 'Todos';
+let activeEucaristiaDia = 'Todos';
+let salmosEucaristiaCargados = false;
+let salmosEucaristiaList = [];
 // favorites e isAdmin ahora son globales e inicializados en ajustes.js
 let catequesisData = null;
 let defaultChordPositions = {};
@@ -514,6 +519,47 @@ window.limpiarFiltrosIndex = function() {
   handleSearchAndFilters();
 };
 
+// --- Carga de Salmos de la Eucaristía ---
+export async function cargarSalmosEucaristia() {
+  if (salmosEucaristiaCargados && salmosEucaristiaList.length > 0) {
+    return salmosEucaristiaList;
+  }
+  try {
+    const files = ['cicloa.json', 'ciclob.json', 'cicloc.json', 'anopar.json', 'anoimpar.json'];
+    const responses = await Promise.all(
+      files.map(f => fetch(`data/seucaristia/${f}`).then(r => r.ok ? r.json() : []).catch(() => []))
+    );
+    const combined = [];
+    const seen = new Set();
+    responses.forEach(list => {
+      if (Array.isArray(list)) {
+        list.forEach(item => {
+          if (item && item.id && !seen.has(item.id)) {
+            seen.add(item.id);
+            combined.push(item);
+            loadedSongsCache[item.id] = item;
+          }
+        });
+      }
+    });
+    salmosEucaristiaList = combined;
+    salmosEucaristiaCargados = true;
+
+    if (Array.isArray(allSongs)) {
+      salmosEucaristiaList.forEach(s => {
+        if (!allSongs.some(existing => existing.id === s.id)) {
+          allSongs.push(s);
+        }
+      });
+    }
+    return salmosEucaristiaList;
+  } catch (e) {
+    console.error('Error al cargar salmos de la Eucaristía:', e);
+    return [];
+  }
+}
+window.cargarSalmosEucaristia = cargarSalmosEucaristia;
+
 // --- Inicialización ---
 document.addEventListener('DOMContentLoaded', async () => {
   // Si se abre un enlace compartido con ?v= en index.html, redirigir inmediatamente a preparar.html
@@ -551,6 +597,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     ]);
     allSongs = await indexRes.json();
     window.allSongs = allSongs;
+    await cargarSalmosEucaristia();
 
     // Enriquecer el searchPool de Aclamaciones con números romanos, arábigos y nombres litúrgicos
     allSongs.forEach(song => {
@@ -853,8 +900,16 @@ async function loadSongView(songId) {
     let songData;
     if (loadedSongsCache[songId]) {
       songData = loadedSongsCache[songId];
-    } else {
-      const folder = songId.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
+    } else if (salmosEucaristiaList && salmosEucaristiaList.length > 0) {
+      const found = salmosEucaristiaList.find(s => s.id === songId);
+      if (found) {
+        songData = found;
+        loadedSongsCache[songId] = songData;
+      }
+    }
+    
+    if (!songData) {
+      const folder = songId.startsWith('aet') ? 'data/songs-ae' : (songId.startsWith('seu') ? 'data/seucaristia' : 'data/songs');
       const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
       const response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`);
       if (!response.ok) throw new Error('Canto no encontrado');
@@ -937,9 +992,9 @@ async function loadSongView(songId) {
 
     // Configurar cabecera del visor (Christ block y título de libro)
     if (cantoHeaderBlock) {
-      const stage = (currentCanto.catCanto || '').toUpperCase();
-      const title = (currentCanto.title || currentCanto.tt || '').toUpperCase();
-      const subtitle = currentCanto.subtitle || '';
+      const stage = (currentCanto.catCanto || currentCanto.stage || 'SALMO EUCARISTÍA').toUpperCase();
+      const title = (currentCanto.celebracion || currentCanto.title || currentCanto.tt || '').toUpperCase();
+      const subtitle = currentCanto.subtitle || currentCanto.salmo || '';
       
       let cantorDeEsteCanto = '';
       if (activeCustomPlaylist && Array.isArray(activeCustomPlaylist.ids_cantos)) {
@@ -1002,12 +1057,12 @@ async function loadSongView(songId) {
     }
     
     if (viewerSongTitle) {
-      viewerSongTitle.textContent = currentCanto.title || currentCanto.tt || 'Sin Título';
+      viewerSongTitle.textContent = currentCanto.celebracion || currentCanto.title || currentCanto.tt || 'Sin Título';
     }
     if (viewerSongSubtitle) {
-      viewerSongSubtitle.textContent = currentCanto.subtitle || '';
+      viewerSongSubtitle.textContent = currentCanto.subtitle || currentCanto.salmo || '';
     }
-    document.title = `${currentCanto.title || currentCanto.tt || 'Sin Título'} - Resucitó`;
+    document.title = `${currentCanto.celebracion || currentCanto.title || currentCanto.tt || 'Sin Título'} - Resucitó`;
     
     renderSongContent();
     setupHeaderTitleObserver();
@@ -3362,6 +3417,19 @@ function renderSongsList(songsList) {
         `;
         songsGrid.appendChild(sep);
       }
+    } else if (currentBook === 'eucaristia' || song.sourceBook === 'eucaristia') {
+      card.innerHTML = `
+        <div class="song-card-number">
+          <span>Salmo Responsorial</span>
+          <span class="badge badge-aclamacion-ciclo">${song.ciclo || ''}</span>
+          <span class="badge badge-aclamacion-tiempo">${song.tiempo || ''}</span>
+          ${song.dia ? `<span class="badge badge-capo">${song.dia}</span>` : ''}
+        </div>
+        <div class="song-card-title">${song.celebracion || song.title} <span style="font-size: 0.85em; font-weight: 700; color: #0284c7; margin-left: 6px;">(${song.ciclo || ''})</span></div>
+        <div class="song-card-subtitle">${song.subtitle || song.salmo || ''}</div>
+        ${song.respuesta ? `<div class="song-card-subtitle" style="color: var(--accent-color, #c026d3); font-style: italic; margin-top: 4px;">${song.respuesta}</div>` : ''}
+      `;
+      songsGrid.appendChild(card);
     } else {
       card.innerHTML = `
         <div class="song-card-number">
@@ -4192,6 +4260,7 @@ async function handleSearchAndFilters() {
   const searchRow = document.querySelector('.search-and-settings-row');
   const filtersToggleSec = document.querySelector('.filters-toggle-section');
   const aclamacionesFilterBar = document.getElementById('aclamaciones-filter-bar');
+  const eucaristiaFilterBar = document.getElementById('eucaristia-filter-bar');
 
   if (searchBox) searchBox.style.display = 'flex';
   if (searchRow) searchRow.style.display = 'flex';
@@ -4199,6 +4268,7 @@ async function handleSearchAndFilters() {
   // Manejo de Catequesis (Muestra el índice con opción de visor de catequesis)
   if (currentBook === 'catequesis') {
     if (aclamacionesFilterBar) aclamacionesFilterBar.style.display = 'none';
+    if (eucaristiaFilterBar) eucaristiaFilterBar.style.display = 'none';
     if (filtersToggleSec) filtersToggleSec.style.display = 'block';
 
     let sourceList = allSongs.filter(song => (song.sourceBook || 'resucito') === 'resucito');
@@ -4272,8 +4342,61 @@ async function handleSearchAndFilters() {
     return;
   }
 
+  // Manejo exclusivo para Eucaristía (Ciclos, Tiempos Litúrgicos y Días de la Semana)
+  if (currentBook === 'eucaristia') {
+    if (filtersToggleSec) filtersToggleSec.style.display = 'none';
+    if (filtersPanel) filtersPanel.style.display = 'none';
+    if (toggleFiltersBtn) toggleFiltersBtn.classList.remove('active');
+    if (aclamacionesFilterBar) aclamacionesFilterBar.style.display = 'none';
+    if (eucaristiaFilterBar) eucaristiaFilterBar.style.display = 'flex';
+
+    if (!salmosEucaristiaCargados) {
+      await cargarSalmosEucaristia();
+    }
+
+    let eucaristiaList = salmosEucaristiaList.length > 0
+      ? [...salmosEucaristiaList]
+      : allSongs.filter(song => (song.sourceBook || 'resucito') === 'eucaristia');
+
+    // Filtrar por Ciclo
+    if (activeEucaristiaCiclo !== 'Todos') {
+      const cicloNorm = normalizeText(activeEucaristiaCiclo);
+      eucaristiaList = eucaristiaList.filter(song => normalizeText(song.ciclo || '') === cicloNorm);
+    }
+
+    // Filtrar por Tiempo Litúrgico
+    if (activeEucaristiaTiempo !== 'Todos') {
+      const tiempoNorm = normalizeText(activeEucaristiaTiempo);
+      eucaristiaList = eucaristiaList.filter(song => normalizeText(song.tiempo || '') === tiempoNorm);
+    }
+
+    // Filtrar por Día
+    if (activeEucaristiaDia !== 'Todos') {
+      const diaNorm = normalizeText(activeEucaristiaDia);
+      eucaristiaList = eucaristiaList.filter(song => normalizeText(song.dia || '') === diaNorm);
+    }
+
+    // Filtrar por texto de búsqueda
+    const query = searchInput ? searchInput.value : '';
+    filteredSongs = searchSongs(eucaristiaList, query, null, []);
+    window.filteredSongs = filteredSongs;
+
+    // Ordenar Eucaristía cronológicamente
+    filteredSongs.sort((a, b) => {
+      // Si estamos en 'Todos' los ciclos, agrupar primero por ciclo
+      if (activeEucaristiaCiclo === 'Todos' && (a.ciclo || '') !== (b.ciclo || '')) {
+        return (a.ciclo || '').localeCompare(b.ciclo || '');
+      }
+      return (a.orden || 9999) - (b.orden || 9999);
+    });
+
+    renderSongsList(filteredSongs);
+    return;
+  }
+
   // Comportamiento normal para los demás libros
   if (aclamacionesFilterBar) aclamacionesFilterBar.style.display = 'none';
+  if (eucaristiaFilterBar) eucaristiaFilterBar.style.display = 'none';
   if (filtersToggleSec) filtersToggleSec.style.display = 'block';
   
   let sourceList = allSongs;
@@ -4720,6 +4843,29 @@ function setupEventListeners() {
           b.classList.toggle('active', b.dataset.tiempo === 'Tiempo Ordinario');
         });
       }
+
+      // Reiniciar filtros de Eucaristía por defecto a Ciclo A, Tiempo Todos y Día Todos
+      activeEucaristiaCiclo = 'Ciclo A';
+      activeEucaristiaTiempo = 'Todos';
+      activeEucaristiaDia = 'Todos';
+      const eucCiclosCont = document.getElementById('eucaristia-ciclos-container');
+      if (eucCiclosCont) {
+        eucCiclosCont.querySelectorAll('.aclamaciones-pill').forEach(b => {
+          b.classList.toggle('active', b.dataset.ciclo === 'Ciclo A');
+        });
+      }
+      const eucTiemposCont = document.getElementById('eucaristia-tiempos-container');
+      if (eucTiemposCont) {
+        eucTiemposCont.querySelectorAll('.aclamaciones-pill').forEach(b => {
+          b.classList.toggle('active', b.dataset.tiempo === 'Todos');
+        });
+      }
+      const eucDiasCont = document.getElementById('eucaristia-dias-container');
+      if (eucDiasCont) {
+        eucDiasCont.querySelectorAll('.aclamaciones-pill').forEach(b => {
+          b.classList.toggle('active', b.dataset.dia === 'Todos');
+        });
+      }
       
       handleSearchAndFilters();
     });
@@ -4750,8 +4896,77 @@ function setupEventListeners() {
     });
   }
 
+  // Listeners para filtros de Eucaristía (Ciclo, Tiempo Litúrgico y Día)
+  const eucaristiaCiclosContainer = document.getElementById('eucaristia-ciclos-container');
+  if (eucaristiaCiclosContainer) {
+    eucaristiaCiclosContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.aclamaciones-pill');
+      if (!btn) return;
+      activeEucaristiaCiclo = btn.dataset.ciclo || 'Todos';
+      eucaristiaCiclosContainer.querySelectorAll('.aclamaciones-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      handleSearchAndFilters();
+    });
+  }
+
+  const eucaristiaTiemposContainer = document.getElementById('eucaristia-tiempos-container');
+  if (eucaristiaTiemposContainer) {
+    eucaristiaTiemposContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.aclamaciones-pill');
+      if (!btn) return;
+      activeEucaristiaTiempo = btn.dataset.tiempo || 'Todos';
+      eucaristiaTiemposContainer.querySelectorAll('.aclamaciones-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      handleSearchAndFilters();
+    });
+  }
+
+  const eucaristiaDiasContainer = document.getElementById('eucaristia-dias-container');
+  if (eucaristiaDiasContainer) {
+    eucaristiaDiasContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.aclamaciones-pill');
+      if (!btn) return;
+      activeEucaristiaDia = btn.dataset.dia || 'Todos';
+      eucaristiaDiasContainer.querySelectorAll('.aclamaciones-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      handleSearchAndFilters();
+    });
+  }
+
   // Buscador e inputs
   if (searchInput) {
+    let searchClickCount = 0;
+    let searchClickTimer = null;
+
+    // Limpiar con 3 clics en el buscador
+    searchInput.addEventListener('click', (e) => {
+      if (e.detail === 3) {
+        if (searchInput.value) {
+          searchInput.value = '';
+          if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+          handleSearchAndFilters();
+        }
+        return;
+      }
+
+      searchClickCount++;
+      if (searchClickCount >= 3) {
+        if (searchInput.value) {
+          searchInput.value = '';
+          if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+          handleSearchAndFilters();
+        }
+        searchClickCount = 0;
+        if (searchClickTimer) clearTimeout(searchClickTimer);
+        return;
+      }
+
+      if (searchClickTimer) clearTimeout(searchClickTimer);
+      searchClickTimer = setTimeout(() => {
+        searchClickCount = 0;
+      }, 500);
+    });
+
     searchInput.addEventListener('input', () => {
       if (clearSearchBtn) clearSearchBtn.style.display = searchInput.value ? 'block' : 'none';
       handleSearchAndFilters();
@@ -5127,8 +5342,26 @@ function setupEventListeners() {
 
   // Evitar que el toque/clic en el buscador rápido cierre el menú desplegable ≡ o cancele el foco nativo
   if (toolbarSearchInput) {
+    let toolbarClickCount = 0;
+    let toolbarClickTimer = null;
+
     toolbarSearchInput.addEventListener('click', (e) => {
       e.stopPropagation();
+      // Limpiar con 3 clics
+      if (e.detail === 3 || ++toolbarClickCount >= 3) {
+        if (toolbarSearchInput.value) {
+          toolbarSearchInput.value = '';
+          if (toolbarSearchClear) toolbarSearchClear.style.display = 'none';
+          if (toolbarSearchSuggestions) toolbarSearchSuggestions.style.display = 'none';
+        }
+        toolbarClickCount = 0;
+        if (toolbarClickTimer) clearTimeout(toolbarClickTimer);
+        return;
+      }
+      if (toolbarClickTimer) clearTimeout(toolbarClickTimer);
+      toolbarClickTimer = setTimeout(() => {
+        toolbarClickCount = 0;
+      }, 500);
     });
     toolbarSearchInput.addEventListener('touchstart', (e) => {
       e.stopPropagation();
@@ -5986,27 +6219,6 @@ function setupEventListeners() {
 
   // Intentar conectar los controles inicialmente si ya existen en el DOM
   window.attachLogControls();
-
-  // Logger de diagnóstico para inspeccionar el comportamiento táctil del buscador
-  const attachSearchDiagnostics = (inputEl, label) => {
-    if (!inputEl) return;
-    const events = ['pointerdown', 'touchstart', 'touchend', 'click', 'focus', 'blur', 'input'];
-    events.forEach(evtName => {
-      inputEl.addEventListener(evtName, (e) => {
-        const computed = window.getComputedStyle(inputEl);
-        console.log(`🔍 [Buscador ${label}] Evento: "${evtName}"`, {
-          activeElement: document.activeElement ? (document.activeElement.id || document.activeElement.tagName) : 'ninguno',
-          relatedTarget: e.relatedTarget ? (e.relatedTarget.id || e.relatedTarget.tagName) : 'null',
-          width: computed.width,
-          fontSize: computed.fontSize,
-          val: inputEl.value
-        });
-      });
-    });
-  };
-
-  attachSearchDiagnostics(searchInput, 'Principal (#search-input)');
-  attachSearchDiagnostics(toolbarSearchInput, 'Barra Superior (#toolbar-search-input)');
 
   // Sincronizar los toggles de Cantos > Canto (BIS, Contracción/Expansión y Acordes en JSON) con el canto actual
   function populateBisSongList() {

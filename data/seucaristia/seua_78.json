@@ -1,0 +1,113 @@
+{
+  "id": "seua_78",
+  "title": "Domingo de la 34ª semana de Tiempo Ordinario - Jesucristo, Rey del Universo",
+  "celebracion": "Domingo de la 34ª semana de Tiempo Ordinario - Jesucristo, Rey del Universo",
+  "subtitle": "Salmo responsorial: 22, 1-2a. 2b-3. 5-6 (R.: 1)",
+  "salmo": "Salmo responsorial: 22, 1-2a. 2b-3. 5-6 (R.: 1)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 534,
+  "respuesta": "",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "S. El Señor es mi pastor, nada me falta.",
+    "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar. R.",
+    "Me conduce hacia fuentes tranquilas\ny repara mis fuerzas;\nme guía por el sendero justo,\npor el honor de su nombre. R.",
+    "Preparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.",
+    "Tu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R."
+  ],
+  "textoCompleto": "S. El Señor es mi pastor, nada me falta.\n\nEl Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar. R.\n\nMe conduce hacia fuentes tranquilas\ny repara mis fuerzas;\nme guía por el sendero justo,\npor el honor de su nombre. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 34 semana de tiempo ordinario jesucristo rey del universo ciclo a tiempo ordinario domingo salmo responsorial 22 1 2a 2b 3 5 6 r 1 s el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar r me conduce hacia fuentes tranquilas y repara mis fuerzas me guia por el sendero justo por el honor de su nombre r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
+  "lizq": [
+    {
+      "line": "",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "S. El Señor es mi pastor, nada me falta.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es mi pastor, nada me falta:",
+      "sC": ""
+    },
+    {
+      "line": "en verdes praderas me hace recostar. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me conduce hacia fuentes tranquilas",
+      "sC": ""
+    },
+    {
+      "line": "y repara mis fuerzas;",
+      "sC": ""
+    },
+    {
+      "line": "me guía por el sendero justo,",
+      "sC": ""
+    },
+    {
+      "line": "por el honor de su nombre. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Preparas una mesa ante mí,",
+      "sC": ""
+    },
+    {
+      "line": "enfrente de mis enemigos;",
+      "sC": ""
+    },
+    {
+      "line": "me unges la cabeza con perfume,",
+      "sC": ""
+    },
+    {
+      "line": "y mi copa rebosa. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tu bondad y tu misericordia me acompañan",
+      "sC": ""
+    },
+    {
+      "line": "todos los días de mi vida,",
+      "sC": ""
+    },
+    {
+      "line": "y habitaré en la casa del Señor",
+      "sC": ""
+    },
+    {
+      "line": "por años sin término. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

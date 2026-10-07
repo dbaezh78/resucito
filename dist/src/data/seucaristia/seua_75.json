@@ -1,0 +1,75 @@
+{
+  "id": "seua_75",
+  "title": "Domingo de la 31ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 31ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
+  "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 531,
+  "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.",
+    "Sino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.",
+    "Espere Israel en el Señor\nahora y por siempre. R."
+  ],
+  "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 31 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r",
+  "lizq": [
+    {
+      "line": "R. Guarda mi alma en la paz, junto a ti, Señor.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, mi corazón no es ambicioso,",
+      "sC": ""
+    },
+    {
+      "line": "ni mis ojos altaneros;",
+      "sC": ""
+    },
+    {
+      "line": "no pretendo grandezas",
+      "sC": ""
+    },
+    {
+      "line": "que superan mi capacidad. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sino que acallo y modero mis deseos,",
+      "sC": ""
+    },
+    {
+      "line": "como un niño en brazos de su madre. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Espere Israel en el Señor",
+      "sC": ""
+    },
+    {
+      "line": "ahora y por siempre. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

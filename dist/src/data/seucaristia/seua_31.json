@@ -1,0 +1,95 @@
+{
+  "id": "seua_31",
+  "title": "Tañed para el Señor, que hizo proezas; - anunciadlas a toda la tierra; - gritad jubilosos, habitantes de Sión: - ¡Qué grande es en medio de ti el Santo de Israel! R. - Septimo Salmo - Opcion 3",
+  "celebracion": "Tañed para el Señor, que hizo proezas; - anunciadlas a toda la tierra; - gritad jubilosos, habitantes de Sión: - ¡Qué grande es en medio de ti el Santo de Israel! R. - Septimo Salmo - Opcion 3",
+  "subtitle": "Salmo responsorial: Salmo 50, 12-13. 14-15. 18-19 (R.: 12a)",
+  "salmo": "Salmo responsorial: Salmo 50, 12-13. 14-15. 18-19 (R.: 12a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Solemnidades y Fiestas",
+  "dia": "Domingo",
+  "orden": 600,
+  "respuesta": "R. ¡Oh Dios!, crea en mí un corazón puro.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "¡Oh Dios!, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.",
+    "Devuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nEnseñaré a los malvados tus caminos,\nlos pecadores volverán a ti. R.",
+    "Los sacrificios no te satisfacen;\nsi te ofreciera un holocausto, no lo querrías.\nMi sacrificio es un espíritu quebrantado,\nun corazón quebrantado y humillado\ntú no lo desprecias. R."
+  ],
+  "textoCompleto": "¡Oh Dios!, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nEnseñaré a los malvados tus caminos,\nlos pecadores volverán a ti. R.\n\nLos sacrificios no te satisfacen;\nsi te ofreciera un holocausto, no lo querrías.\nMi sacrificio es un espíritu quebrantado,\nun corazón quebrantado y humillado\ntú no lo desprecias. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "taned para el senor que hizo proezas anunciadlas a toda la tierra gritad jubilosos habitantes de sion que grande es en medio de ti el santo de israel r septimo salmo opcion 3 ciclo a solemnidades y fiestas domingo salmo responsorial salmo 50 12 13 14 15 18 19 r 12a r oh dios crea en mi un corazon puro oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso ensenare a los malvados tus caminos los pecadores volveran a ti r los sacrificios no te satisfacen si te ofreciera un holocausto no lo querrias mi sacrificio es un espiritu quebrantado un corazon quebrantado y humillado tu no lo desprecias r",
+  "lizq": [
+    {
+      "line": "R. ¡Oh Dios!, crea en mí un corazón puro.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Oh Dios!, crea en mí un corazón puro,",
+      "sC": ""
+    },
+    {
+      "line": "renuévame por dentro con espíritu firme;",
+      "sC": ""
+    },
+    {
+      "line": "no me arrojes lejos de tu rostro,",
+      "sC": ""
+    },
+    {
+      "line": "no me quites tu santo espíritu. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Devuélveme la alegría de tu salvación,",
+      "sC": ""
+    },
+    {
+      "line": "afiánzame con espíritu generoso.",
+      "sC": ""
+    },
+    {
+      "line": "Enseñaré a los malvados tus caminos,",
+      "sC": ""
+    },
+    {
+      "line": "los pecadores volverán a ti. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los sacrificios no te satisfacen;",
+      "sC": ""
+    },
+    {
+      "line": "si te ofreciera un holocausto, no lo querrías.",
+      "sC": ""
+    },
+    {
+      "line": "Mi sacrificio es un espíritu quebrantado,",
+      "sC": ""
+    },
+    {
+      "line": "un corazón quebrantado y humillado",
+      "sC": ""
+    },
+    {
+      "line": "tú no lo desprecias. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

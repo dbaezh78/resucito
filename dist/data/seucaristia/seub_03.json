@@ -1,0 +1,91 @@
+{
+  "id": "seub_03",
+  "title": "Domingo 3º de Adviento",
+  "celebracion": "Domingo 3º de Adviento",
+  "subtitle": "Interleccional: Lucas 1, 46-48. 49-50. 53-54 (R.: Is 61,10b)",
+  "salmo": "Interleccional: Lucas 1, 46-48. 49-50. 53-54 (R.: Is 61,10b)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Adviento",
+  "dia": "Domingo",
+  "orden": 103,
+  "respuesta": "R. Me alegro con mi Dios.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Proclama mi alma la grandeza del Señor,\nse alegra mi espíritu en Dios, mi salvador;\nporque ha mirado la humillación de su esclava.\nDesde ahora me felicitarán todas las generaciones. R.",
+    "Porque el Poderoso ha hecho obras grandes por mí:\nsu nombre es santo,\ny su misericordia llega a sus fieles\nde generación en generación. R.",
+    "A los hambrientos los colma de bienes\ny a los ricos los despide vacíos.\nAuxilia a Israel, su siervo,\nacordándose de la misericordia. R."
+  ],
+  "textoCompleto": "Proclama mi alma la grandeza del Señor,\nse alegra mi espíritu en Dios, mi salvador;\nporque ha mirado la humillación de su esclava.\nDesde ahora me felicitarán todas las generaciones. R.\n\nPorque el Poderoso ha hecho obras grandes por mí:\nsu nombre es santo,\ny su misericordia llega a sus fieles\nde generación en generación. R.\n\nA los hambrientos los colma de bienes\ny a los ricos los despide vacíos.\nAuxilia a Israel, su siervo,\nacordándose de la misericordia. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo 3 de adviento ciclo b adviento domingo interleccional lucas 1 46 48 49 50 53 54 r is 61 10b r me alegro con mi dios proclama mi alma la grandeza del senor se alegra mi espiritu en dios mi salvador porque ha mirado la humillacion de su esclava desde ahora me felicitaran todas las generaciones r porque el poderoso ha hecho obras grandes por mi su nombre es santo y su misericordia llega a sus fieles de generacion en generacion r a los hambrientos los colma de bienes y a los ricos los despide vacios auxilia a israel su siervo acordandose de la misericordia r",
+  "lizq": [
+    {
+      "line": "R. Me alegro con mi Dios.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Proclama mi alma la grandeza del Señor,",
+      "sC": ""
+    },
+    {
+      "line": "se alegra mi espíritu en Dios, mi salvador;",
+      "sC": ""
+    },
+    {
+      "line": "porque ha mirado la humillación de su esclava.",
+      "sC": ""
+    },
+    {
+      "line": "Desde ahora me felicitarán todas las generaciones. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque el Poderoso ha hecho obras grandes por mí:",
+      "sC": ""
+    },
+    {
+      "line": "su nombre es santo,",
+      "sC": ""
+    },
+    {
+      "line": "y su misericordia llega a sus fieles",
+      "sC": ""
+    },
+    {
+      "line": "de generación en generación. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A los hambrientos los colma de bienes",
+      "sC": ""
+    },
+    {
+      "line": "y a los ricos los despide vacíos.",
+      "sC": ""
+    },
+    {
+      "line": "Auxilia a Israel, su siervo,",
+      "sC": ""
+    },
+    {
+      "line": "acordándose de la misericordia. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

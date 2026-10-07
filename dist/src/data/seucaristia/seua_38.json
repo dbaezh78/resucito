@@ -1,0 +1,125 @@
+{
+  "id": "seua_38",
+  "title": "Sexto domingo de Pascua",
+  "celebracion": "Sexto domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 65, 1-3a. 4-5. 6-7a. 16 y 20 (R.: 1)",
+  "salmo": "Salmo responsorial: Salmo 65, 1-3a. 4-5. 6-7a. 16 y 20 (R.: 1)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. Aclamad al Señor, tierra entera.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "R. Aleluya.",
+    "Aclamad al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué temibles son tus obras!». R.",
+    "Que se postre ante ti la tierra entera,\nque toquen en tu honor,\nque toquen para tu nombre.\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres. R.",
+    "Transformó el mar en tierra firme,\na pie atravesaron el río.\nAlegrémonos con Dios,\nque con su poder gobierna eternamente. R.",
+    "Fieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo.\nBendito sea Dios, que no rechazó mi suplica\nni me retiró su favor. R."
+  ],
+  "textoCompleto": "R. Aleluya.\n\nAclamad al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué temibles son tus obras!». R.\n\nQue se postre ante ti la tierra entera,\nque toquen en tu honor,\nque toquen para tu nombre.\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres. R.\n\nTransformó el mar en tierra firme,\na pie atravesaron el río.\nAlegrémonos con Dios,\nque con su poder gobierna eternamente. R.\n\nFieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo.\nBendito sea Dios, que no rechazó mi suplica\nni me retiró su favor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "sexto domingo de pascua ciclo a pascua domingo salmo responsorial salmo 65 1 3a 4 5 6 7a 16 y 20 r 1 r aclamad al senor tierra entera r aleluya aclamad al senor tierra entera tocad en honor de su nombre cantad himnos a su gloria decid a dios que temibles son tus obras r que se postre ante ti la tierra entera que toquen en tu honor que toquen para tu nombre venid a ver las obras de dios sus temibles proezas en favor de los hombres r transformo el mar en tierra firme a pie atravesaron el rio alegremonos con dios que con su poder gobierna eternamente r fieles de dios venid a escuchar os contare lo que ha hecho conmigo bendito sea dios que no rechazo mi suplica ni me retiro su favor r",
+  "lizq": [
+    {
+      "line": "R. Aclamad al Señor, tierra entera.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aclamad al Señor, tierra entera;",
+      "sC": ""
+    },
+    {
+      "line": "tocad en honor de su nombre,",
+      "sC": ""
+    },
+    {
+      "line": "cantad himnos a su gloria.",
+      "sC": ""
+    },
+    {
+      "line": "Decid a Dios: «¡Qué temibles son tus obras!». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que se postre ante ti la tierra entera,",
+      "sC": ""
+    },
+    {
+      "line": "que toquen en tu honor,",
+      "sC": ""
+    },
+    {
+      "line": "que toquen para tu nombre.",
+      "sC": ""
+    },
+    {
+      "line": "Venid a ver las obras de Dios,",
+      "sC": ""
+    },
+    {
+      "line": "sus temibles proezas en favor de los hombres. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Transformó el mar en tierra firme,",
+      "sC": ""
+    },
+    {
+      "line": "a pie atravesaron el río.",
+      "sC": ""
+    },
+    {
+      "line": "Alegrémonos con Dios,",
+      "sC": ""
+    },
+    {
+      "line": "que con su poder gobierna eternamente. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Fieles de Dios, venid a escuchar,",
+      "sC": ""
+    },
+    {
+      "line": "os contaré lo que ha hecho conmigo.",
+      "sC": ""
+    },
+    {
+      "line": "Bendito sea Dios, que no rechazó mi suplica",
+      "sC": ""
+    },
+    {
+      "line": "ni me retiró su favor. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "seub_47",
+  "title": "Domingo de la 5ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 5ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 146, 1-2. 3-4. 5-6 (R.: cf. 3a)",
+  "salmo": "Salmo responsorial: Salmo 146, 1-2. 3-4. 5-6 (R.: cf. 3a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 505,
+  "respuesta": "R. Alabad al Señor, que sana los corazones destrozados.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "R. Aleluya",
+    "Alabad al Señor, que la música es buena;\nnuestro Dios merece una alabanza armoniosa.\nEl Señor reconstruye Jerusalén,\nreúne a los deportados de Israel. R.",
+    "Él sana los corazones destrozados,\nvenda sus heridas.\nCuenta el número de las estrellas,\na cada una la llama por su nombre. R.",
+    "Nuestro Señor es grande y poderoso,\nsu sabiduría no tiene medida.\nEl Señor sostiene a los humildes,\nhumilla hasta el polvo a los malvados. R."
+  ],
+  "textoCompleto": "R. Aleluya\n\nAlabad al Señor, que la música es buena;\nnuestro Dios merece una alabanza armoniosa.\nEl Señor reconstruye Jerusalén,\nreúne a los deportados de Israel. R.\n\nÉl sana los corazones destrozados,\nvenda sus heridas.\nCuenta el número de las estrellas,\na cada una la llama por su nombre. R.\n\nNuestro Señor es grande y poderoso,\nsu sabiduría no tiene medida.\nEl Señor sostiene a los humildes,\nhumilla hasta el polvo a los malvados. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 5 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 146 1 2 3 4 5 6 r cf 3a r alabad al senor que sana los corazones destrozados r aleluya alabad al senor que la musica es buena nuestro dios merece una alabanza armoniosa el senor reconstruye jerusalen reune a los deportados de israel r el sana los corazones destrozados venda sus heridas cuenta el numero de las estrellas a cada una la llama por su nombre r nuestro senor es grande y poderoso su sabiduria no tiene medida el senor sostiene a los humildes humilla hasta el polvo a los malvados r",
+  "lizq": [
+    {
+      "line": "R. Alabad al Señor, que sana los corazones destrozados.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Alabad al Señor, que la música es buena;",
+      "sC": ""
+    },
+    {
+      "line": "nuestro Dios merece una alabanza armoniosa.",
+      "sC": ""
+    },
+    {
+      "line": "El Señor reconstruye Jerusalén,",
+      "sC": ""
+    },
+    {
+      "line": "reúne a los deportados de Israel. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él sana los corazones destrozados,",
+      "sC": ""
+    },
+    {
+      "line": "venda sus heridas.",
+      "sC": ""
+    },
+    {
+      "line": "Cuenta el número de las estrellas,",
+      "sC": ""
+    },
+    {
+      "line": "a cada una la llama por su nombre. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nuestro Señor es grande y poderoso,",
+      "sC": ""
+    },
+    {
+      "line": "su sabiduría no tiene medida.",
+      "sC": ""
+    },
+    {
+      "line": "El Señor sostiene a los humildes,",
+      "sC": ""
+    },
+    {
+      "line": "humilla hasta el polvo a los malvados. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

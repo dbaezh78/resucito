@@ -1,0 +1,121 @@
+{
+  "id": "seub_41",
+  "title": "La Santísima Trinidad",
+  "celebracion": "La Santísima Trinidad",
+  "subtitle": "Salmo responsorial: Salmo 32, 4-5. 6 y 9. 18-19. 20 y 22 (R.: 12b)",
+  "salmo": "Salmo responsorial: Salmo 32, 4-5. 6 y 9. 18-19. 20 y 22 (R.: 12b)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 535,
+  "respuesta": "R. Dichoso el pueblo que el Señor se",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "escogió como heredad.",
+    "La palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.",
+    "La palabra del Señor hizo el cielo;\nel aliento de su boca, sus ejércitos,\nporque él lo dijo, y existió,\nél lo mandó, y surgió. R.",
+    "Los ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.",
+    "Nosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\nque tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R."
+  ],
+  "textoCompleto": "escogió como heredad.\n\nLa palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLa palabra del Señor hizo el cielo;\nel aliento de su boca, sus ejércitos,\nporque él lo dijo, y existió,\nél lo mandó, y surgió. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\nque tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "la santisima trinidad ciclo b tiempo ordinario domingo salmo responsorial salmo 32 4 5 6 y 9 18 19 20 y 22 r 12b r dichoso el pueblo que el senor se escogio como heredad la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r la palabra del senor hizo el cielo el aliento de su boca sus ejercitos porque el lo dijo y existio el lo mando y surgio r los ojos del senor estan puestos en sus fieles en los que esperan en su misericordia para librar sus vidas de la muerte y reanimarlos en tiempo de hambre r nosotros aguardamos al senor el es nuestro auxilio y escudo que tu misericordia senor venga sobre nosotros como lo esperamos de ti r",
+  "lizq": [
+    {
+      "line": "R. Dichoso el pueblo que el Señor se",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "escogió como heredad.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La palabra del Señor es sincera,",
+      "sC": ""
+    },
+    {
+      "line": "y todas sus acciones son leales;",
+      "sC": ""
+    },
+    {
+      "line": "él ama la justicia y el derecho,",
+      "sC": ""
+    },
+    {
+      "line": "y su misericordia llena la tierra. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La palabra del Señor hizo el cielo;",
+      "sC": ""
+    },
+    {
+      "line": "el aliento de su boca, sus ejércitos,",
+      "sC": ""
+    },
+    {
+      "line": "porque él lo dijo, y existió,",
+      "sC": ""
+    },
+    {
+      "line": "él lo mandó, y surgió. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los ojos del Señor están puestos en sus fieles,",
+      "sC": ""
+    },
+    {
+      "line": "en los que esperan en su misericordia,",
+      "sC": ""
+    },
+    {
+      "line": "para librar sus vidas de la muerte",
+      "sC": ""
+    },
+    {
+      "line": "y reanimarlos en tiempo de hambre. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nosotros aguardamos al Señor:",
+      "sC": ""
+    },
+    {
+      "line": "él es nuestro auxilio y escudo;",
+      "sC": ""
+    },
+    {
+      "line": "que tu misericordia, Señor, venga sobre nosotros,",
+      "sC": ""
+    },
+    {
+      "line": "como lo esperamos de ti. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

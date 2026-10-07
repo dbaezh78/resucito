@@ -1,0 +1,112 @@
+{
+  "id": "seua_50",
+  "title": "Domingo de la 6ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 6ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 1-2. 4-5. 17-18. 33-34 (R.: 1b)",
+  "salmo": "Salmo responsorial: Salmo 118, 1-2. 4-5. 17-18. 33-34 (R.: 1b)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 506,
+  "respuesta": "R. Dichoso el que camina en la voluntad del Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor;\ndichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.",
+    "Tú promulgas tus decretos\npara que se observen exactamente.\nOjalá esté firme mi camino,\npara cumplir tus consignas. R.",
+    "Haz bien a tu siervo: viviré\ny cumpliré tus palabras;\nábreme los ojos, y contemplaré\nlas maravillas de tu voluntad. R.",
+    "Muéstrame, Señor, el camino de tus leyes,\ny lo seguiré puntualmente;\nenséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R."
+  ],
+  "textoCompleto": "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor;\ndichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.\n\nTú promulgas tus decretos\npara que se observen exactamente.\nOjalá esté firme mi camino,\npara cumplir tus consignas. R.\n\nHaz bien a tu siervo: viviré\ny cumpliré tus palabras;\nábreme los ojos, y contemplaré\nlas maravillas de tu voluntad. R.\n\nMuéstrame, Señor, el camino de tus leyes,\ny lo seguiré puntualmente;\nenséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 6 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 118 1 2 4 5 17 18 33 34 r 1b r dichoso el que camina en la voluntad del senor dichoso el que con vida intachable camina en la voluntad del senor dichoso el que guardando sus preceptos lo busca de todo corazon r tu promulgas tus decretos para que se observen exactamente ojala este firme mi camino para cumplir tus consignas r haz bien a tu siervo vivire y cumplire tus palabras abreme los ojos y contemplare las maravillas de tu voluntad r muestrame senor el camino de tus leyes y lo seguire puntualmente ensename a cumplir tu voluntad y a guardarla de todo corazon r",
+  "lizq": [
+    {
+      "line": "R. Dichoso el que camina en la voluntad del Señor.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dichoso el que, con vida intachable,",
+      "sC": ""
+    },
+    {
+      "line": "camina en la voluntad del Señor;",
+      "sC": ""
+    },
+    {
+      "line": "dichoso el que, guardando sus preceptos,",
+      "sC": ""
+    },
+    {
+      "line": "lo busca de todo corazón. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú promulgas tus decretos",
+      "sC": ""
+    },
+    {
+      "line": "para que se observen exactamente.",
+      "sC": ""
+    },
+    {
+      "line": "Ojalá esté firme mi camino,",
+      "sC": ""
+    },
+    {
+      "line": "para cumplir tus consignas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Haz bien a tu siervo: viviré",
+      "sC": ""
+    },
+    {
+      "line": "y cumpliré tus palabras;",
+      "sC": ""
+    },
+    {
+      "line": "ábreme los ojos, y contemplaré",
+      "sC": ""
+    },
+    {
+      "line": "las maravillas de tu voluntad. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Muéstrame, Señor, el camino de tus leyes,",
+      "sC": ""
+    },
+    {
+      "line": "y lo seguiré puntualmente;",
+      "sC": ""
+    },
+    {
+      "line": "enséñame a cumplir tu voluntad",
+      "sC": ""
+    },
+    {
+      "line": "y a guardarla de todo corazón. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

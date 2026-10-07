@@ -704,6 +704,11 @@ export function canCurrentUserSeeSong(songId) {
     return true;
   }
 
+  // Salmos de la Eucaristía y Liturgia son públicos para todos
+  if (String(songId).startsWith('seu')) {
+    return true;
+  }
+
   // 2. Si el canto proviene de un enlace compartido o lista activa compartida, PERMITIR acceso
   try {
     const sId = String(songId);

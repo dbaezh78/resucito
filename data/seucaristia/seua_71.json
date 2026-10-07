@@ -1,0 +1,116 @@
+{
+  "id": "seua_71",
+  "title": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 79, 9 y 12. 13-14. 15-16. 19-20 (R.: Is 5,71)",
+  "salmo": "Salmo responsorial: Salmo 79, 9 y 12. 13-14. 15-16. 19-20 (R.: Is 5,71)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 527,
+  "respuesta": "R. La viña del Señor es la casa de Israel.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Sacaste una vid de Egipto,\nexpulsaste a los gentiles, y la trasplantaste.\nExtendió sus sarmientos hasta el mar,\ny sus brotes hasta el Gran Río. R.",
+    "¿Por qué has derribado su cerca\npara que la saqueen los viandantes,\nla pisoteen los jabalíes\ny se la coman las alimañas? R.",
+    "Dios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.",
+    "No nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre.\nSeñor, Dios de los ejércitos, restáuranos,\nque brille tu rostro y nos salve. R."
+  ],
+  "textoCompleto": "Sacaste una vid de Egipto,\nexpulsaste a los gentiles, y la trasplantaste.\nExtendió sus sarmientos hasta el mar,\ny sus brotes hasta el Gran Río. R.\n\n¿Por qué has derribado su cerca\npara que la saqueen los viandantes,\nla pisoteen los jabalíes\ny se la coman las alimañas? R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nNo nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre.\nSeñor, Dios de los ejércitos, restáuranos,\nque brille tu rostro y nos salve. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 27 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 79 9 y 12 13 14 15 16 19 20 r is 5 71 r la vina del senor es la casa de israel sacaste una vid de egipto expulsaste a los gentiles y la trasplantaste extendio sus sarmientos hasta el mar y sus brotes hasta el gran rio r por que has derribado su cerca para que la saqueen los viandantes la pisoteen los jabalies y se la coman las alimanas r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina la cepa que tu diestra planto y que tu hiciste vigorosa r no nos alejaremos de ti danos vida para que invoquemos tu nombre senor dios de los ejercitos restauranos que brille tu rostro y nos salve r",
+  "lizq": [
+    {
+      "line": "R. La viña del Señor es la casa de Israel.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sacaste una vid de Egipto,",
+      "sC": ""
+    },
+    {
+      "line": "expulsaste a los gentiles, y la trasplantaste.",
+      "sC": ""
+    },
+    {
+      "line": "Extendió sus sarmientos hasta el mar,",
+      "sC": ""
+    },
+    {
+      "line": "y sus brotes hasta el Gran Río. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¿Por qué has derribado su cerca",
+      "sC": ""
+    },
+    {
+      "line": "para que la saqueen los viandantes,",
+      "sC": ""
+    },
+    {
+      "line": "la pisoteen los jabalíes",
+      "sC": ""
+    },
+    {
+      "line": "y se la coman las alimañas? R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dios de los ejércitos, vuélvete:",
+      "sC": ""
+    },
+    {
+      "line": "mira desde el cielo, fíjate,",
+      "sC": ""
+    },
+    {
+      "line": "ven a visitar tu viña,",
+      "sC": ""
+    },
+    {
+      "line": "la cepa que tu diestra plantó,",
+      "sC": ""
+    },
+    {
+      "line": "y que tú hiciste vigorosa. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "No nos alejaremos de ti:",
+      "sC": ""
+    },
+    {
+      "line": "danos vida, para que invoquemos tu nombre.",
+      "sC": ""
+    },
+    {
+      "line": "Señor, Dios de los ejércitos, restáuranos,",
+      "sC": ""
+    },
+    {
+      "line": "que brille tu rostro y nos salve. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

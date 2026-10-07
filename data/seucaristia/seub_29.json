@@ -1,0 +1,121 @@
+{
+  "id": "seub_29",
+  "title": "Septimo Salmo",
+  "celebracion": "Septimo Salmo",
+  "subtitle": "Salmo responsorial: Salmo 41, 3. 5bcd; 42, 3. 4 (R.: 41, 2)",
+  "salmo": "Salmo responsorial: Salmo 41, 3. 5bcd; 42, 3. 4 (R.: 41, 2)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Solemnidades y Fiestas",
+  "dia": "Domingo",
+  "orden": 600,
+  "respuesta": "R. Como busca la cierva corrientes de agua,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "así mi alma te busca a ti, Dios mío.",
+    "Mi alma tiene sed de Dios,\ndel Dios vivo:\n¿cuándo entraré a ver\nel rostro de Dios? R.",
+    "Cómo marchaba a la cabeza del grupo\nhacia la casa de Dios,\nentre cantos de júbilo y alabanza,\nen el bullicio de la fiesta! R.",
+    "Envía tu luz y tu verdad;\nque ellas me guíen\ny me conduzcan hasta el monte santo,\nhasta tu morada. R.",
+    "Que yo me acerque al altar de Dios,\nal Dios de mi alegría;\nque te dé gracias al son de la cítara,\nDios, Dios mío. R."
+  ],
+  "textoCompleto": "así mi alma te busca a ti, Dios mío.\n\nMi alma tiene sed de Dios,\ndel Dios vivo:\n¿cuándo entraré a ver\nel rostro de Dios? R.\n\nCómo marchaba a la cabeza del grupo\nhacia la casa de Dios,\nentre cantos de júbilo y alabanza,\nen el bullicio de la fiesta! R.\n\nEnvía tu luz y tu verdad;\nque ellas me guíen\ny me conduzcan hasta el monte santo,\nhasta tu morada. R.\n\nQue yo me acerque al altar de Dios,\nal Dios de mi alegría;\nque te dé gracias al son de la cítara,\nDios, Dios mío. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "septimo salmo ciclo b solemnidades y fiestas domingo salmo responsorial salmo 41 3 5bcd 42 3 4 r 41 2 r como busca la cierva corrientes de agua asi mi alma te busca a ti dios mio mi alma tiene sed de dios del dios vivo cuando entrare a ver el rostro de dios r como marchaba a la cabeza del grupo hacia la casa de dios entre cantos de jubilo y alabanza en el bullicio de la fiesta r envia tu luz y tu verdad que ellas me guien y me conduzcan hasta el monte santo hasta tu morada r que yo me acerque al altar de dios al dios de mi alegria que te de gracias al son de la citara dios dios mio r",
+  "lizq": [
+    {
+      "line": "R. Como busca la cierva corrientes de agua,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "así mi alma te busca a ti, Dios mío.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mi alma tiene sed de Dios,",
+      "sC": ""
+    },
+    {
+      "line": "del Dios vivo:",
+      "sC": ""
+    },
+    {
+      "line": "¿cuándo entraré a ver",
+      "sC": ""
+    },
+    {
+      "line": "el rostro de Dios? R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cómo marchaba a la cabeza del grupo",
+      "sC": ""
+    },
+    {
+      "line": "hacia la casa de Dios,",
+      "sC": ""
+    },
+    {
+      "line": "entre cantos de júbilo y alabanza,",
+      "sC": ""
+    },
+    {
+      "line": "en el bullicio de la fiesta! R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Envía tu luz y tu verdad;",
+      "sC": ""
+    },
+    {
+      "line": "que ellas me guíen",
+      "sC": ""
+    },
+    {
+      "line": "y me conduzcan hasta el monte santo,",
+      "sC": ""
+    },
+    {
+      "line": "hasta tu morada. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que yo me acerque al altar de Dios,",
+      "sC": ""
+    },
+    {
+      "line": "al Dios de mi alegría;",
+      "sC": ""
+    },
+    {
+      "line": "que te dé gracias al son de la cítara,",
+      "sC": ""
+    },
+    {
+      "line": "Dios, Dios mío. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

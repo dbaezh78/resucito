@@ -1,0 +1,91 @@
+{
+  "id": "seua_10",
+  "title": "1 de Enero - Octava de la Natividad del Señor - Santa María Madre de Dios",
+  "celebracion": "1 de Enero - Octava de la Natividad del Señor - Santa María Madre de Dios",
+  "subtitle": "Salmo responsorial 66, 2-3. 5. 6 y 8 (R.: cf. 2a)",
+  "salmo": "Salmo responsorial 66, 2-3. 5. 6 y 8 (R.: cf. 2a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Navidad",
+  "dia": "Domingo",
+  "orden": 206,
+  "respuesta": "R. El Señor tenga piedad y nos bendiga.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "El Señor tenga piedad y nos bendiga,\nilumine su rostro sobre nosotros:\nconozca la tierra tus caminos,\ntodos los pueblos tu salvación. R.",
+    "Que canten de alegría las naciones,\nporque riges el mundo con justicia,\nriges los pueblos con rectitud,\ny gobiernas las naciones de la tierra. R.",
+    "Oh Dios, que te alaben los pueblos,\nque todos los pueblos te alaben.\nQue Dios nos bendiga; que le teman\nhasta los confines del orbe. R."
+  ],
+  "textoCompleto": "El Señor tenga piedad y nos bendiga,\nilumine su rostro sobre nosotros:\nconozca la tierra tus caminos,\ntodos los pueblos tu salvación. R.\n\nQue canten de alegría las naciones,\nporque riges el mundo con justicia,\nriges los pueblos con rectitud,\ny gobiernas las naciones de la tierra. R.\n\nOh Dios, que te alaben los pueblos,\nque todos los pueblos te alaben.\nQue Dios nos bendiga; que le teman\nhasta los confines del orbe. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "1 de enero octava de la natividad del senor santa maria madre de dios ciclo a navidad domingo salmo responsorial 66 2 3 5 6 y 8 r cf 2a r el senor tenga piedad y nos bendiga el senor tenga piedad y nos bendiga ilumine su rostro sobre nosotros conozca la tierra tus caminos todos los pueblos tu salvacion r que canten de alegria las naciones porque riges el mundo con justicia riges los pueblos con rectitud y gobiernas las naciones de la tierra r oh dios que te alaben los pueblos que todos los pueblos te alaben que dios nos bendiga que le teman hasta los confines del orbe r",
+  "lizq": [
+    {
+      "line": "R. El Señor tenga piedad y nos bendiga.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor tenga piedad y nos bendiga,",
+      "sC": ""
+    },
+    {
+      "line": "ilumine su rostro sobre nosotros:",
+      "sC": ""
+    },
+    {
+      "line": "conozca la tierra tus caminos,",
+      "sC": ""
+    },
+    {
+      "line": "todos los pueblos tu salvación. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que canten de alegría las naciones,",
+      "sC": ""
+    },
+    {
+      "line": "porque riges el mundo con justicia,",
+      "sC": ""
+    },
+    {
+      "line": "riges los pueblos con rectitud,",
+      "sC": ""
+    },
+    {
+      "line": "y gobiernas las naciones de la tierra. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh Dios, que te alaben los pueblos,",
+      "sC": ""
+    },
+    {
+      "line": "que todos los pueblos te alaben.",
+      "sC": ""
+    },
+    {
+      "line": "Que Dios nos bendiga; que le teman",
+      "sC": ""
+    },
+    {
+      "line": "hasta los confines del orbe. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

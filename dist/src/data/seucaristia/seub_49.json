@@ -1,0 +1,95 @@
+{
+  "id": "seub_49",
+  "title": "Domingo de la 7ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 7ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 40, 2-3. 4-5. 13-14 (R.: 5b)",
+  "salmo": "Salmo responsorial: Salmo 40, 2-3. 4-5. 13-14 (R.: 5b)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 507,
+  "respuesta": "R. Sáname, Señor, porque he pecado contra ti.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Dichoso el que cuida del pobre y desvalido;\nen el día aciago lo pondrá a salvo el Señor.\nEl Señor lo guarda y lo conserva en vida,\npara que sea dichoso en la tierra,\ny no lo entrega a la saña de sus enemigos. R.",
+    "El Señor lo sostendrá en el lecho del dolor,\ncalmará los dolores de su enfermedad.\nYo dije: «Señor, ten misericordia,\nsáname, porque he pecado contra ti». R.",
+    "A mí, en cambio, me conservas la salud,\nme mantienes siempre en tu presencia.\nBendito el Señor, Dios de Israel,\nahora y por siempre. Amén. Amén. R."
+  ],
+  "textoCompleto": "Dichoso el que cuida del pobre y desvalido;\nen el día aciago lo pondrá a salvo el Señor.\nEl Señor lo guarda y lo conserva en vida,\npara que sea dichoso en la tierra,\ny no lo entrega a la saña de sus enemigos. R.\n\nEl Señor lo sostendrá en el lecho del dolor,\ncalmará los dolores de su enfermedad.\nYo dije: «Señor, ten misericordia,\nsáname, porque he pecado contra ti». R.\n\nA mí, en cambio, me conservas la salud,\nme mantienes siempre en tu presencia.\nBendito el Señor, Dios de Israel,\nahora y por siempre. Amén. Amén. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 7 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 40 2 3 4 5 13 14 r 5b r saname senor porque he pecado contra ti dichoso el que cuida del pobre y desvalido en el dia aciago lo pondra a salvo el senor el senor lo guarda y lo conserva en vida para que sea dichoso en la tierra y no lo entrega a la sana de sus enemigos r el senor lo sostendra en el lecho del dolor calmara los dolores de su enfermedad yo dije senor ten misericordia saname porque he pecado contra ti r a mi en cambio me conservas la salud me mantienes siempre en tu presencia bendito el senor dios de israel ahora y por siempre amen amen r",
+  "lizq": [
+    {
+      "line": "R. Sáname, Señor, porque he pecado contra ti.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dichoso el que cuida del pobre y desvalido;",
+      "sC": ""
+    },
+    {
+      "line": "en el día aciago lo pondrá a salvo el Señor.",
+      "sC": ""
+    },
+    {
+      "line": "El Señor lo guarda y lo conserva en vida,",
+      "sC": ""
+    },
+    {
+      "line": "para que sea dichoso en la tierra,",
+      "sC": ""
+    },
+    {
+      "line": "y no lo entrega a la saña de sus enemigos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor lo sostendrá en el lecho del dolor,",
+      "sC": ""
+    },
+    {
+      "line": "calmará los dolores de su enfermedad.",
+      "sC": ""
+    },
+    {
+      "line": "Yo dije: «Señor, ten misericordia,",
+      "sC": ""
+    },
+    {
+      "line": "sáname, porque he pecado contra ti». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "A mí, en cambio, me conservas la salud,",
+      "sC": ""
+    },
+    {
+      "line": "me mantienes siempre en tu presencia.",
+      "sC": ""
+    },
+    {
+      "line": "Bendito el Señor, Dios de Israel,",
+      "sC": ""
+    },
+    {
+      "line": "ahora y por siempre. Amén. Amén. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

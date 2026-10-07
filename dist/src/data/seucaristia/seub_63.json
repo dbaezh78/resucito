@@ -1,0 +1,133 @@
+{
+  "id": "seub_63",
+  "title": "Domingo de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 21ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 33, 2-3. 16-17. 18-19. 20-21. 22-23 (R.: 9a)",
+  "salmo": "Salmo responsorial: Salmo 33, 2-3. 16-17. 18-19. 20-21. 22-23 (R.: 9a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 521,
+  "respuesta": "R. Gustad y ved qué bueno es el Señor",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor;\nque los humildes lo escuchen y se alegren. R.",
+    "Los ojos del Señor miran a los justos,\nsus oídos escuchan sus gritos;\npero el Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria. R.",
+    "Cuando uno grita, el Señor lo escucha\ny lo libra de sus angustias;\nel Señor está cerca de los atribulados,\nsalva a los abatidos. R.",
+    "Aunque el justo sufra muchos males,\nde todos lo libra el Señor;\nél cuida de todos sus huesos,\ny ni uno solo se quebrará. R.",
+    "La maldad da muerte al malvado,\ny los que odian al justo serán castigados.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R."
+  ],
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor;\nque los humildes lo escuchen y se alegren. R.\n\nLos ojos del Señor miran a los justos,\nsus oídos escuchan sus gritos;\npero el Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria. R.\n\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias;\nel Señor está cerca de los atribulados,\nsalva a los abatidos. R.\n\nAunque el justo sufra muchos males,\nde todos lo libra el Señor;\nél cuida de todos sus huesos,\ny ni uno solo se quebrará. R.\n\nLa maldad da muerte al malvado,\ny los que odian al justo serán castigados.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 21 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 33 2 3 16 17 18 19 20 21 22 23 r 9a r gustad y ved que bueno es el senor bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r los ojos del senor miran a los justos sus oidos escuchan sus gritos pero el senor se enfrenta con los malhechores para borrar de la tierra su memoria r cuando uno grita el senor lo escucha y lo libra de sus angustias el senor esta cerca de los atribulados salva a los abatidos r aunque el justo sufra muchos males de todos lo libra el senor el cuida de todos sus huesos y ni uno solo se quebrara r la maldad da muerte al malvado y los que odian al justo seran castigados el senor redime a sus siervos no sera castigado quien se acoge a el r",
+  "lizq": [
+    {
+      "line": "R. Gustad y ved qué bueno es el Señor",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendigo al Señor en todo momento,",
+      "sC": ""
+    },
+    {
+      "line": "su alabanza está siempre en mi boca;",
+      "sC": ""
+    },
+    {
+      "line": "mi alma se gloría en el Señor;",
+      "sC": ""
+    },
+    {
+      "line": "que los humildes lo escuchen y se alegren. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los ojos del Señor miran a los justos,",
+      "sC": ""
+    },
+    {
+      "line": "sus oídos escuchan sus gritos;",
+      "sC": ""
+    },
+    {
+      "line": "pero el Señor se enfrenta con los malhechores,",
+      "sC": ""
+    },
+    {
+      "line": "para borrar de la tierra su memoria. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuando uno grita, el Señor lo escucha",
+      "sC": ""
+    },
+    {
+      "line": "y lo libra de sus angustias;",
+      "sC": ""
+    },
+    {
+      "line": "el Señor está cerca de los atribulados,",
+      "sC": ""
+    },
+    {
+      "line": "salva a los abatidos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aunque el justo sufra muchos males,",
+      "sC": ""
+    },
+    {
+      "line": "de todos lo libra el Señor;",
+      "sC": ""
+    },
+    {
+      "line": "él cuida de todos sus huesos,",
+      "sC": ""
+    },
+    {
+      "line": "y ni uno solo se quebrará. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La maldad da muerte al malvado,",
+      "sC": ""
+    },
+    {
+      "line": "y los que odian al justo serán castigados.",
+      "sC": ""
+    },
+    {
+      "line": "El Señor redime a sus siervos,",
+      "sC": ""
+    },
+    {
+      "line": "no será castigado quien se acoge a él. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

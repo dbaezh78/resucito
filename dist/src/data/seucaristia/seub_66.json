@@ -1,0 +1,138 @@
+{
+  "id": "seub_66",
+  "title": "Domingo de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 24ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 114, 1-2. 3-4. 5-6. 8-9 (R.: 9)",
+  "salmo": "Salmo responsorial: Salmo 114, 1-2. 3-4. 5-6. 8-9 (R.: 9)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 524,
+  "respuesta": "R. Caminaré en presencia del Señor",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "en el país de la vida.",
+    "R. Aleluya.",
+    "Amo al Señor, porque escucha\nmi voz suplicante,\nporque inclina su oído hacia mí\nel día que lo invoco. R.",
+    "Me envolvían redes de muerte,\nme alcanzaron los lazos del abismo,\ncaí en tristeza y angustia.\nInvoqué el nombre el Señor,\n«Señor, salva mi vida». R.",
+    "El Señor es benigno y justo,\nnuestro Dios es compasivo;\nel Señor guarda a los sencillos:\nestando yo sin fuerzas, me salvó R.",
+    "Arrancó mi alma de la muerte,\nmis ojos de las lágrimas,\nmis pies de la caída.\nCaminaré en presencia del Señor\nen el país de la vida. R."
+  ],
+  "textoCompleto": "en el país de la vida.\n\nR. Aleluya.\n\nAmo al Señor, porque escucha\nmi voz suplicante,\nporque inclina su oído hacia mí\nel día que lo invoco. R.\n\nMe envolvían redes de muerte,\nme alcanzaron los lazos del abismo,\ncaí en tristeza y angustia.\nInvoqué el nombre el Señor,\n«Señor, salva mi vida». R.\n\nEl Señor es benigno y justo,\nnuestro Dios es compasivo;\nel Señor guarda a los sencillos:\nestando yo sin fuerzas, me salvó R.\n\nArrancó mi alma de la muerte,\nmis ojos de las lágrimas,\nmis pies de la caída.\nCaminaré en presencia del Señor\nen el país de la vida. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 24 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 114 1 2 3 4 5 6 8 9 r 9 r caminare en presencia del senor en el pais de la vida r aleluya amo al senor porque escucha mi voz suplicante porque inclina su oido hacia mi el dia que lo invoco r me envolvian redes de muerte me alcanzaron los lazos del abismo cai en tristeza y angustia invoque el nombre el senor senor salva mi vida r el senor es benigno y justo nuestro dios es compasivo el senor guarda a los sencillos estando yo sin fuerzas me salvo r arranco mi alma de la muerte mis ojos de las lagrimas mis pies de la caida caminare en presencia del senor en el pais de la vida r",
+  "lizq": [
+    {
+      "line": "R. Caminaré en presencia del Señor",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "en el país de la vida.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Amo al Señor, porque escucha",
+      "sC": ""
+    },
+    {
+      "line": "mi voz suplicante,",
+      "sC": ""
+    },
+    {
+      "line": "porque inclina su oído hacia mí",
+      "sC": ""
+    },
+    {
+      "line": "el día que lo invoco. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me envolvían redes de muerte,",
+      "sC": ""
+    },
+    {
+      "line": "me alcanzaron los lazos del abismo,",
+      "sC": ""
+    },
+    {
+      "line": "caí en tristeza y angustia.",
+      "sC": ""
+    },
+    {
+      "line": "Invoqué el nombre el Señor,",
+      "sC": ""
+    },
+    {
+      "line": "«Señor, salva mi vida». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es benigno y justo,",
+      "sC": ""
+    },
+    {
+      "line": "nuestro Dios es compasivo;",
+      "sC": ""
+    },
+    {
+      "line": "el Señor guarda a los sencillos:",
+      "sC": ""
+    },
+    {
+      "line": "estando yo sin fuerzas, me salvó R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Arrancó mi alma de la muerte,",
+      "sC": ""
+    },
+    {
+      "line": "mis ojos de las lágrimas,",
+      "sC": ""
+    },
+    {
+      "line": "mis pies de la caída.",
+      "sC": ""
+    },
+    {
+      "line": "Caminaré en presencia del Señor",
+      "sC": ""
+    },
+    {
+      "line": "en el país de la vida. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

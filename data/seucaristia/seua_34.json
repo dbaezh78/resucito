@@ -1,0 +1,133 @@
+{
+  "id": "seua_34",
+  "title": "Segundo domingo de Pascua",
+  "celebracion": "Segundo domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 117, 2-4. 13-15. 22-24 (R.: 1)",
+  "salmo": "Salmo responsorial: Salmo 117, 2-4. 13-15. 22-24 (R.: 1)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. Dad gracias al Señor porque es bueno,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "porque es eterna su misericordia.",
+    "R. Aleluya.",
+    "Diga la casa de Israel:\neterna es su misericordia.\nDiga la casa de Aarón:\neterna es su misericordia.\nDigan los fieles del Señor:\neterna es su misericordia. R.",
+    "Empujaban y empujaban para derribarme,\npero el Señor me ayudó;\nel Señor es mi fuerza y mi energía,\nél es mi salvación.\nEscuchad: hay cantos de victoria\nen las tiendas de los justos. R.",
+    "La piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente.\nÉste es el día en que actuó el Señor:\nsea nuestra alegría y nuestro gozo. R."
+  ],
+  "textoCompleto": "porque es eterna su misericordia.\n\nR. Aleluya.\n\nDiga la casa de Israel:\neterna es su misericordia.\nDiga la casa de Aarón:\neterna es su misericordia.\nDigan los fieles del Señor:\neterna es su misericordia. R.\n\nEmpujaban y empujaban para derribarme,\npero el Señor me ayudó;\nel Señor es mi fuerza y mi energía,\nél es mi salvación.\nEscuchad: hay cantos de victoria\nen las tiendas de los justos. R.\n\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente.\nÉste es el día en que actuó el Señor:\nsea nuestra alegría y nuestro gozo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "segundo domingo de pascua ciclo a pascua domingo salmo responsorial salmo 117 2 4 13 15 22 24 r 1 r dad gracias al senor porque es bueno porque es eterna su misericordia r aleluya diga la casa de israel eterna es su misericordia diga la casa de aaron eterna es su misericordia digan los fieles del senor eterna es su misericordia r empujaban y empujaban para derribarme pero el senor me ayudo el senor es mi fuerza y mi energia el es mi salvacion escuchad hay cantos de victoria en las tiendas de los justos r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo r",
+  "lizq": [
+    {
+      "line": "R. Dad gracias al Señor porque es bueno,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Diga la casa de Israel:",
+      "sC": ""
+    },
+    {
+      "line": "eterna es su misericordia.",
+      "sC": ""
+    },
+    {
+      "line": "Diga la casa de Aarón:",
+      "sC": ""
+    },
+    {
+      "line": "eterna es su misericordia.",
+      "sC": ""
+    },
+    {
+      "line": "Digan los fieles del Señor:",
+      "sC": ""
+    },
+    {
+      "line": "eterna es su misericordia. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Empujaban y empujaban para derribarme,",
+      "sC": ""
+    },
+    {
+      "line": "pero el Señor me ayudó;",
+      "sC": ""
+    },
+    {
+      "line": "el Señor es mi fuerza y mi energía,",
+      "sC": ""
+    },
+    {
+      "line": "él es mi salvación.",
+      "sC": ""
+    },
+    {
+      "line": "Escuchad: hay cantos de victoria",
+      "sC": ""
+    },
+    {
+      "line": "en las tiendas de los justos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La piedra que desecharon los arquitectos",
+      "sC": ""
+    },
+    {
+      "line": "es ahora la piedra angular.",
+      "sC": ""
+    },
+    {
+      "line": "Es el Señor quien lo ha hecho,",
+      "sC": ""
+    },
+    {
+      "line": "ha sido un milagro patente.",
+      "sC": ""
+    },
+    {
+      "line": "Éste es el día en que actuó el Señor:",
+      "sC": ""
+    },
+    {
+      "line": "sea nuestra alegría y nuestro gozo. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

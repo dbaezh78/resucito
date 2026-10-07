@@ -1,0 +1,113 @@
+{
+  "id": "seub_06",
+  "title": "Natividad del Señor - Misa de medianoche",
+  "celebracion": "Natividad del Señor - Misa de medianoche",
+  "subtitle": "Salmo responsorial: Salmo 95, 1-2a. 2b-3. 11-12. 13 (R.: Lc 2, 11)",
+  "salmo": "Salmo responsorial: Salmo 95, 1-2a. 2b-3. 11-12. 13 (R.: Lc 2, 11)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Navidad",
+  "dia": "Domingo",
+  "orden": 202,
+  "respuesta": "R. Hoy nos ha nacido un Salvador:",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "el Mesías, el Señor.",
+    "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre. R.",
+    "Proclamad día tras día su victoria.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.",
+    "Alégrese el cielo, goce la tierra,\nretumbe el mar y cuanto lo llena;\nvitoreen los campos y cuanto hay en ellos,\naclamen los árboles del bosque. R.",
+    "Delante del Señor, que ya llega,\nya llega a regir la tierra:\nregirá el orbe con justicia\ny los pueblos con fidelidad. R."
+  ],
+  "textoCompleto": "el Mesías, el Señor.\n\nCantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre. R.\n\nProclamad día tras día su victoria.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nAlégrese el cielo, goce la tierra,\nretumbe el mar y cuanto lo llena;\nvitoreen los campos y cuanto hay en ellos,\naclamen los árboles del bosque. R.\n\nDelante del Señor, que ya llega,\nya llega a regir la tierra:\nregirá el orbe con justicia\ny los pueblos con fidelidad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "natividad del senor misa de medianoche ciclo b navidad domingo salmo responsorial salmo 95 1 2a 2b 3 11 12 13 r lc 2 11 r hoy nos ha nacido un salvador el mesias el senor cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre r proclamad dia tras dia su victoria contad a los pueblos su gloria sus maravillas a todas las naciones r alegrese el cielo goce la tierra retumbe el mar y cuanto lo llena vitoreen los campos y cuanto hay en ellos aclamen los arboles del bosque r delante del senor que ya llega ya llega a regir la tierra regira el orbe con justicia y los pueblos con fidelidad r",
+  "lizq": [
+    {
+      "line": "R. Hoy nos ha nacido un Salvador:",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "el Mesías, el Señor.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": ""
+    },
+    {
+      "line": "cantad al Señor, toda la tierra;",
+      "sC": ""
+    },
+    {
+      "line": "cantad al Señor, bendecid su nombre. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Proclamad día tras día su victoria.",
+      "sC": ""
+    },
+    {
+      "line": "Contad a los pueblos su gloria,",
+      "sC": ""
+    },
+    {
+      "line": "sus maravillas a todas las naciones. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Alégrese el cielo, goce la tierra,",
+      "sC": ""
+    },
+    {
+      "line": "retumbe el mar y cuanto lo llena;",
+      "sC": ""
+    },
+    {
+      "line": "vitoreen los campos y cuanto hay en ellos,",
+      "sC": ""
+    },
+    {
+      "line": "aclamen los árboles del bosque. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Delante del Señor, que ya llega,",
+      "sC": ""
+    },
+    {
+      "line": "ya llega a regir la tierra:",
+      "sC": ""
+    },
+    {
+      "line": "regirá el orbe con justicia",
+      "sC": ""
+    },
+    {
+      "line": "y los pueblos con fidelidad. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

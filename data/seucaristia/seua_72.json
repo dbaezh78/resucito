@@ -1,0 +1,125 @@
+{
+  "id": "seua_72",
+  "title": "Domingo de la 28ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 28ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.: 6cd)",
+  "salmo": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.: 6cd)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 528,
+  "respuesta": "R. Habitaré en la casa del Señor",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "por años sin término.",
+    "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.",
+    "Me guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.",
+    "Preparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.",
+    "Tu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R."
+  ],
+  "textoCompleto": "por años sin término.\n\nEl Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.\n\nMe guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 28 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 22 1 3a 3b 4 5 6 r 6cd r habitare en la casa del senor por anos sin termino el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas r me guia por el sendero justo por el honor de su nombre aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
+  "lizq": [
+    {
+      "line": "R. Habitaré en la casa del Señor",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "por años sin término.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es mi pastor, nada me falta:",
+      "sC": ""
+    },
+    {
+      "line": "en verdes praderas me hace recostar;",
+      "sC": ""
+    },
+    {
+      "line": "me conduce hacia fuentes tranquilas",
+      "sC": ""
+    },
+    {
+      "line": "y repara mis fuerzas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me guía por el sendero justo,",
+      "sC": ""
+    },
+    {
+      "line": "por el honor de su nombre.",
+      "sC": ""
+    },
+    {
+      "line": "Aunque camine por cañadas oscuras,",
+      "sC": ""
+    },
+    {
+      "line": "nada temo, porque tú vas conmigo:",
+      "sC": ""
+    },
+    {
+      "line": "tu vara y tu cayado me sosiegan. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Preparas una mesa ante mí,",
+      "sC": ""
+    },
+    {
+      "line": "enfrente de mis enemigos;",
+      "sC": ""
+    },
+    {
+      "line": "me unges la cabeza con perfume,",
+      "sC": ""
+    },
+    {
+      "line": "y mi copa rebosa. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tu bondad y tu misericordia me acompañan",
+      "sC": ""
+    },
+    {
+      "line": "todos los días de mi vida,",
+      "sC": ""
+    },
+    {
+      "line": "y habitaré en la casa del Señor",
+      "sC": ""
+    },
+    {
+      "line": "por años sin término. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

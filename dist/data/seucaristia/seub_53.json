@@ -1,0 +1,91 @@
+{
+  "id": "seub_53",
+  "title": "Domingo de la 11ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 11ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 91, 2-3. 13-14. 15-16 (R.: cf. 2a)",
+  "salmo": "Salmo responsorial: Salmo 91, 2-3. 13-14. 15-16 (R.: cf. 2a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 511,
+  "respuesta": "R. Es bueno darte gracias, Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Es bueno dar gracias al Señor\ny tocar para tu nombre, oh Altísimo,\nproclamar por la mañana tu misericordia\ny de noche tu fidelidad. R.",
+    "El justo crecerá como una palmera,\nse alzará como un cedro del Líbano;\nplantado en la casa del Señor,\ncrecerá en los atrios de nuestro Dios. R.",
+    "En la vejez seguirá dando fruto\ny estará lozano y frondoso,\npara proclamar que el Señor es justo,\nque en mi Roca no existe la maldad. R."
+  ],
+  "textoCompleto": "Es bueno dar gracias al Señor\ny tocar para tu nombre, oh Altísimo,\nproclamar por la mañana tu misericordia\ny de noche tu fidelidad. R.\n\nEl justo crecerá como una palmera,\nse alzará como un cedro del Líbano;\nplantado en la casa del Señor,\ncrecerá en los atrios de nuestro Dios. R.\n\nEn la vejez seguirá dando fruto\ny estará lozano y frondoso,\npara proclamar que el Señor es justo,\nque en mi Roca no existe la maldad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 11 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 91 2 3 13 14 15 16 r cf 2a r es bueno darte gracias senor es bueno dar gracias al senor y tocar para tu nombre oh altisimo proclamar por la manana tu misericordia y de noche tu fidelidad r el justo crecera como una palmera se alzara como un cedro del libano plantado en la casa del senor crecera en los atrios de nuestro dios r en la vejez seguira dando fruto y estara lozano y frondoso para proclamar que el senor es justo que en mi roca no existe la maldad r",
+  "lizq": [
+    {
+      "line": "R. Es bueno darte gracias, Señor.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Es bueno dar gracias al Señor",
+      "sC": ""
+    },
+    {
+      "line": "y tocar para tu nombre, oh Altísimo,",
+      "sC": ""
+    },
+    {
+      "line": "proclamar por la mañana tu misericordia",
+      "sC": ""
+    },
+    {
+      "line": "y de noche tu fidelidad. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El justo crecerá como una palmera,",
+      "sC": ""
+    },
+    {
+      "line": "se alzará como un cedro del Líbano;",
+      "sC": ""
+    },
+    {
+      "line": "plantado en la casa del Señor,",
+      "sC": ""
+    },
+    {
+      "line": "crecerá en los atrios de nuestro Dios. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "En la vejez seguirá dando fruto",
+      "sC": ""
+    },
+    {
+      "line": "y estará lozano y frondoso,",
+      "sC": ""
+    },
+    {
+      "line": "para proclamar que el Señor es justo,",
+      "sC": ""
+    },
+    {
+      "line": "que en mi Roca no existe la maldad. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

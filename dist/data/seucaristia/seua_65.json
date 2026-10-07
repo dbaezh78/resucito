@@ -1,0 +1,100 @@
+{
+  "id": "seua_65",
+  "title": "Domingo de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 21ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 137, 1-2a. 2bc-3. 6 y 8bc (R.: 8bc)",
+  "salmo": "Salmo responsorial: Salmo 137, 1-2a. 2bc-3. 6 y 8bc (R.: 8bc)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 521,
+  "respuesta": "R. Señor, tu misericordia es eterna,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "no abandones la obra de tus manos.",
+    "Te doy gracias, Señor, de todo corazón;\ndelante de los ángeles tañeré para ti,\nme postraré hacia tu santuario,\ndaré gracias a tu nombre. R.",
+    "Por tu misericordia y tu lealtad,\nporque tu promesa supera a tu fama;\ncuando te invoqué, me escuchaste,\nacreciste el valor en mi alma. R.",
+    "El Señor es sublime, se fija en el humilde,\ny de lejos conoce al soberbio.\nSeñor, tu misericordia es eterna,\nno abandones la obra de tus manos. R."
+  ],
+  "textoCompleto": "no abandones la obra de tus manos.\n\nTe doy gracias, Señor, de todo corazón;\ndelante de los ángeles tañeré para ti,\nme postraré hacia tu santuario,\ndaré gracias a tu nombre. R.\n\nPor tu misericordia y tu lealtad,\nporque tu promesa supera a tu fama;\ncuando te invoqué, me escuchaste,\nacreciste el valor en mi alma. R.\n\nEl Señor es sublime, se fija en el humilde,\ny de lejos conoce al soberbio.\nSeñor, tu misericordia es eterna,\nno abandones la obra de tus manos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 21 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 137 1 2a 2bc 3 6 y 8bc r 8bc r senor tu misericordia es eterna no abandones la obra de tus manos te doy gracias senor de todo corazon delante de los angeles tanere para ti me postrare hacia tu santuario dare gracias a tu nombre r por tu misericordia y tu lealtad porque tu promesa supera a tu fama cuando te invoque me escuchaste acreciste el valor en mi alma r el senor es sublime se fija en el humilde y de lejos conoce al soberbio senor tu misericordia es eterna no abandones la obra de tus manos r",
+  "lizq": [
+    {
+      "line": "R. Señor, tu misericordia es eterna,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "no abandones la obra de tus manos.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te doy gracias, Señor, de todo corazón;",
+      "sC": ""
+    },
+    {
+      "line": "delante de los ángeles tañeré para ti,",
+      "sC": ""
+    },
+    {
+      "line": "me postraré hacia tu santuario,",
+      "sC": ""
+    },
+    {
+      "line": "daré gracias a tu nombre. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por tu misericordia y tu lealtad,",
+      "sC": ""
+    },
+    {
+      "line": "porque tu promesa supera a tu fama;",
+      "sC": ""
+    },
+    {
+      "line": "cuando te invoqué, me escuchaste,",
+      "sC": ""
+    },
+    {
+      "line": "acreciste el valor en mi alma. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es sublime, se fija en el humilde,",
+      "sC": ""
+    },
+    {
+      "line": "y de lejos conoce al soberbio.",
+      "sC": ""
+    },
+    {
+      "line": "Señor, tu misericordia es eterna,",
+      "sC": ""
+    },
+    {
+      "line": "no abandones la obra de tus manos. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

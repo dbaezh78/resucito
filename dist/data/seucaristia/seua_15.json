@@ -1,0 +1,100 @@
+{
+  "id": "seua_15",
+  "title": "Segundo domingo de Cuaresma",
+  "celebracion": "Segundo domingo de Cuaresma",
+  "subtitle": "Salmo responsorial: Salmo 32, 4-5. 18-19. 20 y 22 (R.: 22)",
+  "salmo": "Salmo responsorial: Salmo 32, 4-5. 18-19. 20 y 22 (R.: 22)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Cuaresma",
+  "dia": "Domingo",
+  "orden": 302,
+  "respuesta": "R. Que tu misericordia, Señor, venga sobre nosotros,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "como lo esperamos de ti.",
+    "La palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.",
+    "Los ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.",
+    "Nosotros aguardamos al Señor:\nél es nuestro auxilio y escudo.\nQue tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R."
+  ],
+  "textoCompleto": "como lo esperamos de ti.\n\nLa palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo.\nQue tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "segundo domingo de cuaresma ciclo a cuaresma domingo salmo responsorial salmo 32 4 5 18 19 20 y 22 r 22 r que tu misericordia senor venga sobre nosotros como lo esperamos de ti la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r los ojos del senor estan puestos en sus fieles en los que esperan en su misericordia para librar sus vidas de la muerte y reanimarlos en tiempo de hambre r nosotros aguardamos al senor el es nuestro auxilio y escudo que tu misericordia senor venga sobre nosotros como lo esperamos de ti r",
+  "lizq": [
+    {
+      "line": "R. Que tu misericordia, Señor, venga sobre nosotros,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "como lo esperamos de ti.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La palabra del Señor es sincera,",
+      "sC": ""
+    },
+    {
+      "line": "y todas sus acciones son leales;",
+      "sC": ""
+    },
+    {
+      "line": "él ama la justicia y el derecho,",
+      "sC": ""
+    },
+    {
+      "line": "y su misericordia llena la tierra. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los ojos del Señor están puestos en sus fieles,",
+      "sC": ""
+    },
+    {
+      "line": "en los que esperan en su misericordia,",
+      "sC": ""
+    },
+    {
+      "line": "para librar sus vidas de la muerte",
+      "sC": ""
+    },
+    {
+      "line": "y reanimarlos en tiempo de hambre. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Nosotros aguardamos al Señor:",
+      "sC": ""
+    },
+    {
+      "line": "él es nuestro auxilio y escudo.",
+      "sC": ""
+    },
+    {
+      "line": "Que tu misericordia, Señor, venga sobre nosotros,",
+      "sC": ""
+    },
+    {
+      "line": "como lo esperamos de ti. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

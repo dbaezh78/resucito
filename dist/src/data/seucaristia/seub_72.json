@@ -1,0 +1,121 @@
+{
+  "id": "seub_72",
+  "title": "Domingo de la 30ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 30ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 3)",
+  "salmo": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 3)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 530,
+  "respuesta": "R. El Señor ha estado grande con nosotros,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "y estamos alegres.",
+    "Cuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.",
+    "Hasta los gentiles decían:\n«El Señor ha estado grande con ellos».\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.",
+    "Que el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.",
+    "Al ir, iba llorando,\nllevando la semilla:\nal volver, vuelve cantando,\ntrayendo sus gavillas. R."
+  ],
+  "textoCompleto": "y estamos alegres.\n\nCuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.\n\nHasta los gentiles decían:\n«El Señor ha estado grande con ellos».\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.\n\nQue el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.\n\nAl ir, iba llorando,\nllevando la semilla:\nal volver, vuelve cantando,\ntrayendo sus gavillas. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 30 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 125 1 2ab 2cd 3 4 5 6 r 3 r el senor ha estado grande con nosotros y estamos alegres cuando el senor cambio la suerte de sion nos parecia sonar la boca se nos llenaba de risas la lengua de cantares r hasta los gentiles decian el senor ha estado grande con ellos el senor ha estado grande con nosotros y estamos alegres r que el senor cambie nuestra suerte como los torrentes del negueb los que sembraban con lagrimas cosechan entre cantares r al ir iba llorando llevando la semilla al volver vuelve cantando trayendo sus gavillas r",
+  "lizq": [
+    {
+      "line": "R. El Señor ha estado grande con nosotros,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "y estamos alegres.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuando el Señor cambió la suerte de Sión,",
+      "sC": ""
+    },
+    {
+      "line": "nos parecía soñar:",
+      "sC": ""
+    },
+    {
+      "line": "la boca se nos llenaba de risas,",
+      "sC": ""
+    },
+    {
+      "line": "la lengua de cantares. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Hasta los gentiles decían:",
+      "sC": ""
+    },
+    {
+      "line": "«El Señor ha estado grande con ellos».",
+      "sC": ""
+    },
+    {
+      "line": "El Señor ha estado grande con nosotros,",
+      "sC": ""
+    },
+    {
+      "line": "y estamos alegres. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que el Señor cambie nuestra suerte,",
+      "sC": ""
+    },
+    {
+      "line": "como los torrentes del Negueb.",
+      "sC": ""
+    },
+    {
+      "line": "Los que sembraban con lágrimas",
+      "sC": ""
+    },
+    {
+      "line": "cosechan entre cantares. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Al ir, iba llorando,",
+      "sC": ""
+    },
+    {
+      "line": "llevando la semilla:",
+      "sC": ""
+    },
+    {
+      "line": "al volver, vuelve cantando,",
+      "sC": ""
+    },
+    {
+      "line": "trayendo sus gavillas. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

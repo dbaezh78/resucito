@@ -1,0 +1,100 @@
+{
+  "id": "seub_38",
+  "title": "Séptimo domingo de Pascua",
+  "celebracion": "Séptimo domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 102, 1-2. 11-12. 19-20ab (R.: 19a)",
+  "salmo": "Salmo responsorial: Salmo 102, 1-2. 11-12. 19-20ab (R.: 19a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. El Señor puso en el cielo su trono.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "R. Aleluya.",
+    "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.",
+    "Como se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.",
+    "El Señor puso en el cielo su trono,\nsu soberanía gobierna el universo.\nBendecid al señor, ángeles suyos,\npoderosos ejecutores de sus órdenes. R."
+  ],
+  "textoCompleto": "R. Aleluya.\n\nBendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nComo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.\n\nEl Señor puso en el cielo su trono,\nsu soberanía gobierna el universo.\nBendecid al señor, ángeles suyos,\npoderosos ejecutores de sus órdenes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "septimo domingo de pascua ciclo b pascua domingo salmo responsorial salmo 102 1 2 11 12 19 20ab r 19a r el senor puso en el cielo su trono r aleluya bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r como se levanta el cielo sobre la tierra se levanta su bondad sobre sus fieles como dista el oriente del ocaso asi aleja de nosotros nuestros delitos r el senor puso en el cielo su trono su soberania gobierna el universo bendecid al senor angeles suyos poderosos ejecutores de sus ordenes r",
+  "lizq": [
+    {
+      "line": "R. El Señor puso en el cielo su trono.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor,",
+      "sC": ""
+    },
+    {
+      "line": "y todo mi ser a su santo nombre.",
+      "sC": ""
+    },
+    {
+      "line": "Bendice, alma mía, al Señor,",
+      "sC": ""
+    },
+    {
+      "line": "y no olvides sus beneficios. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Como se levanta el cielo sobre la tierra,",
+      "sC": ""
+    },
+    {
+      "line": "se levanta su bondad sobre sus fieles;",
+      "sC": ""
+    },
+    {
+      "line": "como dista el oriente del ocaso,",
+      "sC": ""
+    },
+    {
+      "line": "así aleja de nosotros nuestros delitos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor puso en el cielo su trono,",
+      "sC": ""
+    },
+    {
+      "line": "su soberanía gobierna el universo.",
+      "sC": ""
+    },
+    {
+      "line": "Bendecid al señor, ángeles suyos,",
+      "sC": ""
+    },
+    {
+      "line": "poderosos ejecutores de sus órdenes. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

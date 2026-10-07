@@ -1,0 +1,109 @@
+{
+  "id": "seua_42",
+  "title": "Domingo de Pentecostés - Misa del día",
+  "celebracion": "Domingo de Pentecostés - Misa del día",
+  "subtitle": "Salmo responsorial: Salmo 103, 1ab y 24ac. 29bc-30. 31 y 34 (R.: cf. 30)",
+  "salmo": "Salmo responsorial: Salmo 103, 1ab y 24ac. 29bc-30. 31 y 34 (R.: cf. 30)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 430,
+  "respuesta": "R. Envía tu Espíritu, Señor,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "y repuebla la faz de la tierra.",
+    "R. Aleluya.",
+    "Bendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nCuántas son tus obras, Señor;\nla tierra está llena de tus criaturas. R.",
+    "Les retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.",
+    "Gloria a Dios para siempre,\ngoce el Señor con sus obras.\nQue le sea agradable mi poema,\ny yo me alegraré con el Señor. R."
+  ],
+  "textoCompleto": "y repuebla la faz de la tierra.\n\nR. Aleluya.\n\nBendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nCuántas son tus obras, Señor;\nla tierra está llena de tus criaturas. R.\n\nLes retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.\n\nGloria a Dios para siempre,\ngoce el Señor con sus obras.\nQue le sea agradable mi poema,\ny yo me alegraré con el Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de pentecostes misa del dia ciclo a pascua domingo salmo responsorial salmo 103 1ab y 24ac 29bc 30 31 y 34 r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra r aleluya bendice alma mia al senor dios mio que grande eres cuantas son tus obras senor la tierra esta llena de tus criaturas r les retiras el aliento y expiran y vuelven a ser polvo envias tu aliento y los creas y repueblas la faz de la tierra r gloria a dios para siempre goce el senor con sus obras que le sea agradable mi poema y yo me alegrare con el senor r",
+  "lizq": [
+    {
+      "line": "R. Envía tu Espíritu, Señor,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "y repuebla la faz de la tierra.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor:",
+      "sC": ""
+    },
+    {
+      "line": "¡Dios mío, qué grande eres!",
+      "sC": ""
+    },
+    {
+      "line": "Cuántas son tus obras, Señor;",
+      "sC": ""
+    },
+    {
+      "line": "la tierra está llena de tus criaturas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Les retiras el aliento, y expiran",
+      "sC": ""
+    },
+    {
+      "line": "y vuelven a ser polvo;",
+      "sC": ""
+    },
+    {
+      "line": "envías tu aliento, y los creas,",
+      "sC": ""
+    },
+    {
+      "line": "y repueblas la faz de la tierra. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Gloria a Dios para siempre,",
+      "sC": ""
+    },
+    {
+      "line": "goce el Señor con sus obras.",
+      "sC": ""
+    },
+    {
+      "line": "Que le sea agradable mi poema,",
+      "sC": ""
+    },
+    {
+      "line": "y yo me alegraré con el Señor. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

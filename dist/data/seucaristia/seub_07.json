@@ -1,0 +1,79 @@
+{
+  "id": "seub_07",
+  "title": "Natividad del Señor - Misa de la aurora",
+  "celebracion": "Natividad del Señor - Misa de la aurora",
+  "subtitle": "Salmo responsorial: Salmo 96, 1 y 6. 11-12",
+  "salmo": "Salmo responsorial: Salmo 96, 1 y 6. 11-12",
+  "ciclo": "Ciclo B",
+  "tiempo": "Navidad",
+  "dia": "Domingo",
+  "orden": 203,
+  "respuesta": "R. Hoy brillará una luz sobre nosotros,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "porque nos ha nacido el Señor.",
+    "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.",
+    "Amanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R."
+  ],
+  "textoCompleto": "porque nos ha nacido el Señor.\n\nEl Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "natividad del senor misa de la aurora ciclo b navidad domingo salmo responsorial salmo 96 1 y 6 11 12 r hoy brillara una luz sobre nosotros porque nos ha nacido el senor el senor reina la tierra goza se alegran las islas innumerables los cielos pregonan su justicia y todos los pueblos contemplan su gloria r amanece la luz para el justo y la alegria para los rectos de corazon alegraos justos con el senor celebrad su santo nombre r",
+  "lizq": [
+    {
+      "line": "R. Hoy brillará una luz sobre nosotros,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "porque nos ha nacido el Señor.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor reina, la tierra goza,",
+      "sC": ""
+    },
+    {
+      "line": "se alegran las islas innumerables.",
+      "sC": ""
+    },
+    {
+      "line": "Los cielos pregonan su justicia,",
+      "sC": ""
+    },
+    {
+      "line": "y todos los pueblos contemplan su gloria. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Amanece la luz para el justo,",
+      "sC": ""
+    },
+    {
+      "line": "y la alegría para los rectos de corazón.",
+      "sC": ""
+    },
+    {
+      "line": "Alegraos, justos, con el Señor,",
+      "sC": ""
+    },
+    {
+      "line": "celebrad su santo nombre. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

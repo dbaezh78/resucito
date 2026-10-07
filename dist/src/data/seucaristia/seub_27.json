@@ -1,0 +1,87 @@
+{
+  "id": "seub_27",
+  "title": "Quinto Salmo",
+  "celebracion": "Quinto Salmo",
+  "subtitle": "Interleccional: Isaías 12, 2-3. 4bcd. 5-6 (R.: 3)",
+  "salmo": "Interleccional: Isaías 12, 2-3. 4bcd. 5-6 (R.: 3)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Solemnidades y Fiestas",
+  "dia": "Domingo",
+  "orden": 600,
+  "respuesta": "R. Sacaréis aguas con gozo",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "de las fuentes de la salvación.",
+    "El Señor es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.",
+    "Dad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R."
+  ],
+  "textoCompleto": "de las fuentes de la salvación.\n\nEl Señor es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "quinto salmo ciclo b solemnidades y fiestas domingo interleccional isaias 12 2 3 4bcd 5 6 r 3 r sacareis aguas con gozo de las fuentes de la salvacion el senor es mi dios y salvador confiare y no temere porque mi fuerza y mi poder es el senor el fue mi salvacion y sacareis aguas con gozo de las fuentes de la salvacion r dad gracias al senor invocad su nombre contad a los pueblos sus hazanas proclamad que su nombre es excelso r",
+  "lizq": [
+    {
+      "line": "R. Sacaréis aguas con gozo",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "de las fuentes de la salvación.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es mi Dios y Salvador:",
+      "sC": ""
+    },
+    {
+      "line": "confiaré y no temeré,",
+      "sC": ""
+    },
+    {
+      "line": "porque mi fuerza y mi poder es el Señor,",
+      "sC": ""
+    },
+    {
+      "line": "él fue mi salvación.",
+      "sC": ""
+    },
+    {
+      "line": "Y sacaréis aguas con gozo",
+      "sC": ""
+    },
+    {
+      "line": "de las fuentes de la salvación. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dad gracias al Señor,",
+      "sC": ""
+    },
+    {
+      "line": "invocad su nombre,",
+      "sC": ""
+    },
+    {
+      "line": "contad a los pueblos sus hazañas,",
+      "sC": ""
+    },
+    {
+      "line": "proclamad que su nombre es excelso. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

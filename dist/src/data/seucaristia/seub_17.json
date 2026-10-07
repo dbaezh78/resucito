@@ -1,0 +1,117 @@
+{
+  "id": "seub_17",
+  "title": "Cuarto domingo de Cuaresma",
+  "celebracion": "Cuarto domingo de Cuaresma",
+  "subtitle": "Salmo responsorial: Salmo 136, 1-2. 3. 4. 5. 6 (R.: 6a)",
+  "salmo": "Salmo responsorial: Salmo 136, 1-2. 3. 4. 5. 6 (R.: 6a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Cuaresma",
+  "dia": "Domingo",
+  "orden": 304,
+  "respuesta": "R. Que se me pegue la lengua al paladar",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "si no me acuerdo de ti.",
+    "Junto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.",
+    "Allí los que nos deportaron nos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.",
+    "¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.",
+    "Que se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R."
+  ],
+  "textoCompleto": "si no me acuerdo de ti.\n\nJunto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.\n\nAllí los que nos deportaron nos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.\n\n¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.\n\nQue se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "cuarto domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 136 1 2 3 4 5 6 r 6a r que se me pegue la lengua al paladar si no me acuerdo de ti junto a los canales de babilonia nos sentamos a llorar con nostalgia de sion en los sauces de sus orillas colgabamos nuestras citaras r alli los que nos deportaron nos invitaban a cantar nuestros opresores a divertirlos cantadnos un cantar de sion r como cantar un cantico del senor en tierra extranjera si me olvido de ti jerusalen que se me paralice la mano derecha r que se me pegue la lengua al paladar si no me acuerdo de ti si no pongo a jerusalen en la cumbre de mis alegrias r",
+  "lizq": [
+    {
+      "line": "R. Que se me pegue la lengua al paladar",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "si no me acuerdo de ti.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Junto a los canales de Babilonia",
+      "sC": ""
+    },
+    {
+      "line": "nos sentamos a llorar con nostalgia de Sión;",
+      "sC": ""
+    },
+    {
+      "line": "en los sauces de sus orillas",
+      "sC": ""
+    },
+    {
+      "line": "colgábamos nuestras cítaras. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Allí los que nos deportaron nos invitaban a cantar;",
+      "sC": ""
+    },
+    {
+      "line": "nuestros opresores, a divertirlos:",
+      "sC": ""
+    },
+    {
+      "line": "«Cantadnos un cantar de Sión». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Cómo cantar un cántico del Señor",
+      "sC": ""
+    },
+    {
+      "line": "en tierra extranjera!",
+      "sC": ""
+    },
+    {
+      "line": "Si me olvido de ti, Jerusalén,",
+      "sC": ""
+    },
+    {
+      "line": "que se me paralice la mano derecha. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que se me pegue la lengua al paladar",
+      "sC": ""
+    },
+    {
+      "line": "si no me acuerdo de ti,",
+      "sC": ""
+    },
+    {
+      "line": "si no pongo a Jerusalén",
+      "sC": ""
+    },
+    {
+      "line": "en la cumbre de mis alegrías. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

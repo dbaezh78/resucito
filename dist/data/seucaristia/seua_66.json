@@ -1,0 +1,112 @@
+{
+  "id": "seua_66",
+  "title": "Domingo de la 22ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 62, 2. 3-4. 5-6. 8-9 (R.:2b)",
+  "salmo": "Salmo responsorial: Salmo 62, 2. 3-4. 5-6. 8-9 (R.:2b)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 522,
+  "respuesta": "R. Mi alma está sedienta de ti, Señor, Dios mío.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Oh Dios, tú eres mi Dios, por ti madrugo,\nmi alma está sedienta de ti;\nmi carne tiene ansia de ti,\ncomo tierra reseca, agostada, sin agua. R.",
+    "¡Cómo te contemplaba en el santuario\nviendo tu fuerza y tu gloria!\nTu gracia vale más que la vida,\nte alabarán mis labios. R.",
+    "Toda mi vida te bendeciré\ny alzaré las manos invocándote.\nMe saciaré como de enjundia y de manteca,\ny mis labios te alabarán jubilosos. R.",
+    "Porque fuiste mi auxilio,\ny a la sombra de tus alas canto con júbilo;\nmi alma está unida a ti,\ny tu diestra me sostiene. R."
+  ],
+  "textoCompleto": "Oh Dios, tú eres mi Dios, por ti madrugo,\nmi alma está sedienta de ti;\nmi carne tiene ansia de ti,\ncomo tierra reseca, agostada, sin agua. R.\n\n¡Cómo te contemplaba en el santuario\nviendo tu fuerza y tu gloria!\nTu gracia vale más que la vida,\nte alabarán mis labios. R.\n\nToda mi vida te bendeciré\ny alzaré las manos invocándote.\nMe saciaré como de enjundia y de manteca,\ny mis labios te alabarán jubilosos. R.\n\nPorque fuiste mi auxilio,\ny a la sombra de tus alas canto con júbilo;\nmi alma está unida a ti,\ny tu diestra me sostiene. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 22 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 62 2 3 4 5 6 8 9 r 2b r mi alma esta sedienta de ti senor dios mio oh dios tu eres mi dios por ti madrugo mi alma esta sedienta de ti mi carne tiene ansia de ti como tierra reseca agostada sin agua r como te contemplaba en el santuario viendo tu fuerza y tu gloria tu gracia vale mas que la vida te alabaran mis labios r toda mi vida te bendecire y alzare las manos invocandote me saciare como de enjundia y de manteca y mis labios te alabaran jubilosos r porque fuiste mi auxilio y a la sombra de tus alas canto con jubilo mi alma esta unida a ti y tu diestra me sostiene r",
+  "lizq": [
+    {
+      "line": "R. Mi alma está sedienta de ti, Señor, Dios mío.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh Dios, tú eres mi Dios, por ti madrugo,",
+      "sC": ""
+    },
+    {
+      "line": "mi alma está sedienta de ti;",
+      "sC": ""
+    },
+    {
+      "line": "mi carne tiene ansia de ti,",
+      "sC": ""
+    },
+    {
+      "line": "como tierra reseca, agostada, sin agua. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "¡Cómo te contemplaba en el santuario",
+      "sC": ""
+    },
+    {
+      "line": "viendo tu fuerza y tu gloria!",
+      "sC": ""
+    },
+    {
+      "line": "Tu gracia vale más que la vida,",
+      "sC": ""
+    },
+    {
+      "line": "te alabarán mis labios. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Toda mi vida te bendeciré",
+      "sC": ""
+    },
+    {
+      "line": "y alzaré las manos invocándote.",
+      "sC": ""
+    },
+    {
+      "line": "Me saciaré como de enjundia y de manteca,",
+      "sC": ""
+    },
+    {
+      "line": "y mis labios te alabarán jubilosos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque fuiste mi auxilio,",
+      "sC": ""
+    },
+    {
+      "line": "y a la sombra de tus alas canto con júbilo;",
+      "sC": ""
+    },
+    {
+      "line": "mi alma está unida a ti,",
+      "sC": ""
+    },
+    {
+      "line": "y tu diestra me sostiene. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

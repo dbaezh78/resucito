@@ -1,0 +1,108 @@
+{
+  "id": "seub_35",
+  "title": "Quinto domingo de Pascua",
+  "celebracion": "Quinto domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 26a)",
+  "salmo": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 26a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. El Señor es mi alabanza en la gran asamblea.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "R. Aleluya.",
+    "Cumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.",
+    "Lo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nAnte él se postrarán las cenizas de la tumba,\nante él se inclinarán los que bajan al polvo. R.",
+    "Me hará vivir para él, mi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R."
+  ],
+  "textoCompleto": "R. Aleluya.\n\nCumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.\n\nLo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nAnte él se postrarán las cenizas de la tumba,\nante él se inclinarán los que bajan al polvo. R.\n\nMe hará vivir para él, mi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "quinto domingo de pascua ciclo b pascua domingo salmo responsorial salmo 21 26b 27 28 y 30 31 32 r 26a r el senor es mi alabanza en la gran asamblea r aleluya cumplire mis votos delante de sus fieles los desvalidos comeran hasta saciarse alabaran al senor los que lo buscan viva su corazon por siempre r lo recordaran y volveran al senor hasta de los confines del orbe en su presencia se postraran las familias de los pueblos ante el se postraran las cenizas de la tumba ante el se inclinaran los que bajan al polvo r me hara vivir para el mi descendencia le servira hablaran del senor a la generacion futura contaran su justicia al pueblo que ha de nacer todo lo que hizo el senor r",
+  "lizq": [
+    {
+      "line": "R. El Señor es mi alabanza en la gran asamblea.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cumpliré mis votos delante de sus fieles.",
+      "sC": ""
+    },
+    {
+      "line": "Los desvalidos comerán hasta saciarse,",
+      "sC": ""
+    },
+    {
+      "line": "alabarán al Señor los que lo buscan:",
+      "sC": ""
+    },
+    {
+      "line": "viva su corazón por siempre. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Lo recordarán y volverán al Señor",
+      "sC": ""
+    },
+    {
+      "line": "hasta de los confines del orbe;",
+      "sC": ""
+    },
+    {
+      "line": "en su presencia se postrarán",
+      "sC": ""
+    },
+    {
+      "line": "las familias de los pueblos.",
+      "sC": ""
+    },
+    {
+      "line": "Ante él se postrarán las cenizas de la tumba,",
+      "sC": ""
+    },
+    {
+      "line": "ante él se inclinarán los que bajan al polvo. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Me hará vivir para él, mi descendencia le servirá,",
+      "sC": ""
+    },
+    {
+      "line": "hablarán del Señor a la generación futura,",
+      "sC": ""
+    },
+    {
+      "line": "contarán su justicia al pueblo que ha de nacer:",
+      "sC": ""
+    },
+    {
+      "line": "todo lo que hizo el Señor. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

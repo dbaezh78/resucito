@@ -1,0 +1,91 @@
+{
+  "id": "seua_60",
+  "title": "Domingo de la 16ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 16ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 85, 5-6. 9-10. 15-16a (R.: 5a)",
+  "salmo": "Salmo responsorial: Salmo 85, 5-6. 9-10. 15-16a (R.: 5a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 516,
+  "respuesta": "R. Tú, Señor, eres bueno y clemente.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende a la voz de mi súplica. R.",
+    "Todos los pueblos vendrán\na postrarse en tu presencia, Señor;\nbendecirán tu nombre:\n«Grande eres tú, y haces maravillas;\ntú eres el único Dios». R.",
+    "Pero tú, Señor, Dios clemente y misericordioso,\nlento a la cólera, rico en piedad y leal,\nmírame, ten compasión de mí. R."
+  ],
+  "textoCompleto": "Tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende a la voz de mi súplica. R.\n\nTodos los pueblos vendrán\na postrarse en tu presencia, Señor;\nbendecirán tu nombre:\n«Grande eres tú, y haces maravillas;\ntú eres el único Dios». R.\n\nPero tú, Señor, Dios clemente y misericordioso,\nlento a la cólera, rico en piedad y leal,\nmírame, ten compasión de mí. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 16 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 85 5 6 9 10 15 16a r 5a r tu senor eres bueno y clemente tu senor eres bueno y clemente rico en misericordia con los que te invocan senor escucha mi oracion atiende a la voz de mi suplica r todos los pueblos vendran a postrarse en tu presencia senor bendeciran tu nombre grande eres tu y haces maravillas tu eres el unico dios r pero tu senor dios clemente y misericordioso lento a la colera rico en piedad y leal mirame ten compasion de mi r",
+  "lizq": [
+    {
+      "line": "R. Tú, Señor, eres bueno y clemente.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú, Señor, eres bueno y clemente,",
+      "sC": ""
+    },
+    {
+      "line": "rico en misericordia con los que te invocan.",
+      "sC": ""
+    },
+    {
+      "line": "Señor, escucha mi oración,",
+      "sC": ""
+    },
+    {
+      "line": "atiende a la voz de mi súplica. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Todos los pueblos vendrán",
+      "sC": ""
+    },
+    {
+      "line": "a postrarse en tu presencia, Señor;",
+      "sC": ""
+    },
+    {
+      "line": "bendecirán tu nombre:",
+      "sC": ""
+    },
+    {
+      "line": "«Grande eres tú, y haces maravillas;",
+      "sC": ""
+    },
+    {
+      "line": "tú eres el único Dios». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pero tú, Señor, Dios clemente y misericordioso,",
+      "sC": ""
+    },
+    {
+      "line": "lento a la cólera, rico en piedad y leal,",
+      "sC": ""
+    },
+    {
+      "line": "mírame, ten compasión de mí. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

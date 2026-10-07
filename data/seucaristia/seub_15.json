@@ -1,0 +1,104 @@
+{
+  "id": "seub_15",
+  "title": "Segundo domingo de Cuaresma",
+  "celebracion": "Segundo domingo de Cuaresma",
+  "subtitle": "Salmo responsorial: Salmo 115, 10 y 15. 16-17. 18-19 (R.: Sal 114,9)",
+  "salmo": "Salmo responsorial: Salmo 115, 10 y 15. 16-17. 18-19 (R.: Sal 114,9)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Cuaresma",
+  "dia": "Domingo",
+  "orden": 302,
+  "respuesta": "R. Caminaré en presencia del Señor",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "en el país de la vida.",
+    "Tenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nMucho le cuesta al Señor\nla muerte de sus fieles. R.",
+    "Señor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.",
+    "Cumpliré al Señor mis votos\nen presencia de todo el pueblo,\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R."
+  ],
+  "textoCompleto": "en el país de la vida.\n\nTenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nMucho le cuesta al Señor\nla muerte de sus fieles. R.\n\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo,\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "segundo domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 115 10 y 15 16 17 18 19 r sal 114 9 r caminare en presencia del senor en el pais de la vida tenia fe aun cuando dije que desgraciado soy mucho le cuesta al senor la muerte de sus fieles r senor yo soy tu siervo siervo tuyo hijo de tu esclava rompiste mis cadenas te ofrecere un sacrificio de alabanza invocando tu nombre senor r cumplire al senor mis votos en presencia de todo el pueblo en el atrio de la casa del senor en medio de ti jerusalen r",
+  "lizq": [
+    {
+      "line": "R. Caminaré en presencia del Señor",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "en el país de la vida.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tenía fe, aun cuando dije:",
+      "sC": ""
+    },
+    {
+      "line": "«¡Qué desgraciado soy!».",
+      "sC": ""
+    },
+    {
+      "line": "Mucho le cuesta al Señor",
+      "sC": ""
+    },
+    {
+      "line": "la muerte de sus fieles. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, yo soy tu siervo,",
+      "sC": ""
+    },
+    {
+      "line": "siervo tuyo, hijo de tu esclava:",
+      "sC": ""
+    },
+    {
+      "line": "rompiste mis cadenas.",
+      "sC": ""
+    },
+    {
+      "line": "Te ofreceré un sacrificio de alabanza,",
+      "sC": ""
+    },
+    {
+      "line": "invocando tu nombre, Señor. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cumpliré al Señor mis votos",
+      "sC": ""
+    },
+    {
+      "line": "en presencia de todo el pueblo,",
+      "sC": ""
+    },
+    {
+      "line": "en el atrio de la casa del Señor,",
+      "sC": ""
+    },
+    {
+      "line": "en medio de ti, Jerusalén. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

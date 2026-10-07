@@ -1,0 +1,112 @@
+{
+  "id": "seua_14",
+  "title": "Primer domingo de Cuaresma",
+  "celebracion": "Primer domingo de Cuaresma",
+  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 12-13. 14 y 17 (R.: cf. 3a)",
+  "salmo": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 12-13. 14 y 17 (R.: cf. 3a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Cuaresma",
+  "dia": "Domingo",
+  "orden": 301,
+  "respuesta": "R. Misericordia, Señor: hemos pecado.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa,\nlava del todo mi delito,\nlimpia mi pecado. R.",
+    "Pues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.",
+    "Oh, Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.",
+    "Devuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R."
+  ],
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa,\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nOh, Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "primer domingo de cuaresma ciclo a cuaresma domingo salmo responsorial salmo 50 3 4 5 6a 12 13 14 y 17 r cf 3a r misericordia senor hemos pecado misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso senor me abriras los labios y mi boca proclamara tu alabanza r",
+  "lizq": [
+    {
+      "line": "R. Misericordia, Señor: hemos pecado.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Misericordia, Dios mío, por tu bondad,",
+      "sC": ""
+    },
+    {
+      "line": "por tu inmensa compasión borra mi culpa,",
+      "sC": ""
+    },
+    {
+      "line": "lava del todo mi delito,",
+      "sC": ""
+    },
+    {
+      "line": "limpia mi pecado. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Pues yo reconozco mi culpa,",
+      "sC": ""
+    },
+    {
+      "line": "tengo siempre presente mi pecado:",
+      "sC": ""
+    },
+    {
+      "line": "contra ti, contra ti solo pequé,",
+      "sC": ""
+    },
+    {
+      "line": "cometí la maldad que aborreces. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Oh, Dios, crea en mí un corazón puro,",
+      "sC": ""
+    },
+    {
+      "line": "renuévame por dentro con espíritu firme;",
+      "sC": ""
+    },
+    {
+      "line": "no me arrojes lejos de tu rostro,",
+      "sC": ""
+    },
+    {
+      "line": "no me quites tu santo espíritu. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Devuélveme la alegría de tu salvación,",
+      "sC": ""
+    },
+    {
+      "line": "afiánzame con espíritu generoso.",
+      "sC": ""
+    },
+    {
+      "line": "Señor, me abrirás los labios,",
+      "sC": ""
+    },
+    {
+      "line": "y mi boca proclamará tu alabanza. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

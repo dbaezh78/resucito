@@ -1,0 +1,112 @@
+{
+  "id": "seua_58",
+  "title": "Domingo de la 14ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 14ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 144, 1-2. 8-9. 10-11. 13cd-14 (R.: cf. 1)",
+  "salmo": "Salmo responsorial: Salmo 144, 1-2. 8-9. 10-11. 13cd-14 (R.: cf. 1)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 514,
+  "respuesta": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nDía tras día, te bendeciré\ny alabaré tu nombre por siempre jamás. R.",
+    "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.",
+    "Que todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
+    "El Señor es fiel a sus palabras,\nbondadoso en todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R."
+  ],
+  "textoCompleto": "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nDía tras día, te bendeciré\ny alabaré tu nombre por siempre jamás. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nEl Señor es fiel a sus palabras,\nbondadoso en todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 14 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 144 1 2 8 9 10 11 13cd 14 r cf 1 r bendecire tu nombre por siempre dios mio mi rey te ensalzare dios mio mi rey bendecire tu nombre por siempre jamas dia tras dia te bendecire y alabare tu nombre por siempre jamas r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r el senor es fiel a sus palabras bondadoso en todas sus acciones el senor sostiene a los que van a caer endereza a los que ya se doblan r",
+  "lizq": [
+    {
+      "line": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te ensalzaré, Dios mío, mi rey;",
+      "sC": ""
+    },
+    {
+      "line": "bendeciré tu nombre por siempre jamás.",
+      "sC": ""
+    },
+    {
+      "line": "Día tras día, te bendeciré",
+      "sC": ""
+    },
+    {
+      "line": "y alabaré tu nombre por siempre jamás. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es clemente y misericordioso,",
+      "sC": ""
+    },
+    {
+      "line": "lento a la cólera y rico en piedad;",
+      "sC": ""
+    },
+    {
+      "line": "el Señor es bueno con todos,",
+      "sC": ""
+    },
+    {
+      "line": "es cariñoso con todas sus criaturas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que todas tus criaturas te den gracias, Señor,",
+      "sC": ""
+    },
+    {
+      "line": "que te bendigan tus fieles;",
+      "sC": ""
+    },
+    {
+      "line": "que proclamen la gloria de tu reinado,",
+      "sC": ""
+    },
+    {
+      "line": "que hablen de tus hazañas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es fiel a sus palabras,",
+      "sC": ""
+    },
+    {
+      "line": "bondadoso en todas sus acciones.",
+      "sC": ""
+    },
+    {
+      "line": "El Señor sostiene a los que van a caer,",
+      "sC": ""
+    },
+    {
+      "line": "endereza a los que ya se doblan. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

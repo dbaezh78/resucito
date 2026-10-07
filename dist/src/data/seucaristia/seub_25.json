@@ -1,0 +1,125 @@
+{
+  "id": "seub_25",
+  "title": "Tercer Salmo",
+  "celebracion": "Tercer Salmo",
+  "subtitle": "Interleccional: Éxodo 15, 1-2. 3-4. 5-6. 17-18 (R.: 1a)",
+  "salmo": "Interleccional: Éxodo 15, 1-2. 3-4. 5-6. 17-18 (R.: 1a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Solemnidades y Fiestas",
+  "dia": "Domingo",
+  "orden": 600,
+  "respuesta": "R. Cantaré al Señor, sublime es su victoria.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Cantaré al Señor, sublime es su victoria:\ncaballo y jinete ha arrojado en el mar.",
+    "Mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nÉl es mi Dios: yo lo alabaré;\nel Dios de mis padres: yo lo ensalzaré. R.",
+    "El Señor es un guerrero,\nsu nombre es «Yahvé».\nLos carros del faraón los lanzó al mar,\nahogó en el mar Rojo a sus mejores capitanes. R.",
+    "Las olas los cubrieron,\nbajaron hasta el fondo como piedras.\nTu diestra, Señor, es fuerte y terrible;\ntu diestra, Señor, tritura al enemigo. R.",
+    "Los introduces y los plantas en el monte de tu heredad,\nlugar del que hiciste tu trono, Señor;\nsantuario, Señor, que fundaron tus manos.\nEl Señor reina por siempre jamás. R."
+  ],
+  "textoCompleto": "Cantaré al Señor, sublime es su victoria:\ncaballo y jinete ha arrojado en el mar.\n\nMi fuerza y mi poder es el Señor,\nél fue mi salvación.\nÉl es mi Dios: yo lo alabaré;\nel Dios de mis padres: yo lo ensalzaré. R.\n\nEl Señor es un guerrero,\nsu nombre es «Yahvé».\nLos carros del faraón los lanzó al mar,\nahogó en el mar Rojo a sus mejores capitanes. R.\n\nLas olas los cubrieron,\nbajaron hasta el fondo como piedras.\nTu diestra, Señor, es fuerte y terrible;\ntu diestra, Señor, tritura al enemigo. R.\n\nLos introduces y los plantas en el monte de tu heredad,\nlugar del que hiciste tu trono, Señor;\nsantuario, Señor, que fundaron tus manos.\nEl Señor reina por siempre jamás. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "tercer salmo ciclo b solemnidades y fiestas domingo interleccional exodo 15 1 2 3 4 5 6 17 18 r 1a r cantare al senor sublime es su victoria cantare al senor sublime es su victoria caballo y jinete ha arrojado en el mar mi fuerza y mi poder es el senor el fue mi salvacion el es mi dios yo lo alabare el dios de mis padres yo lo ensalzare r el senor es un guerrero su nombre es yahve los carros del faraon los lanzo al mar ahogo en el mar rojo a sus mejores capitanes r las olas los cubrieron bajaron hasta el fondo como piedras tu diestra senor es fuerte y terrible tu diestra senor tritura al enemigo r los introduces y los plantas en el monte de tu heredad lugar del que hiciste tu trono senor santuario senor que fundaron tus manos el senor reina por siempre jamas r",
+  "lizq": [
+    {
+      "line": "R. Cantaré al Señor, sublime es su victoria.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cantaré al Señor, sublime es su victoria:",
+      "sC": ""
+    },
+    {
+      "line": "caballo y jinete ha arrojado en el mar.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mi fuerza y mi poder es el Señor,",
+      "sC": ""
+    },
+    {
+      "line": "él fue mi salvación.",
+      "sC": ""
+    },
+    {
+      "line": "Él es mi Dios: yo lo alabaré;",
+      "sC": ""
+    },
+    {
+      "line": "el Dios de mis padres: yo lo ensalzaré. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es un guerrero,",
+      "sC": ""
+    },
+    {
+      "line": "su nombre es «Yahvé».",
+      "sC": ""
+    },
+    {
+      "line": "Los carros del faraón los lanzó al mar,",
+      "sC": ""
+    },
+    {
+      "line": "ahogó en el mar Rojo a sus mejores capitanes. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Las olas los cubrieron,",
+      "sC": ""
+    },
+    {
+      "line": "bajaron hasta el fondo como piedras.",
+      "sC": ""
+    },
+    {
+      "line": "Tu diestra, Señor, es fuerte y terrible;",
+      "sC": ""
+    },
+    {
+      "line": "tu diestra, Señor, tritura al enemigo. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los introduces y los plantas en el monte de tu heredad,",
+      "sC": ""
+    },
+    {
+      "line": "lugar del que hiciste tu trono, Señor;",
+      "sC": ""
+    },
+    {
+      "line": "santuario, Señor, que fundaron tus manos.",
+      "sC": ""
+    },
+    {
+      "line": "El Señor reina por siempre jamás. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

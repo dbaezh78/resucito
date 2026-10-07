@@ -1,0 +1,91 @@
+{
+  "id": "seua_57",
+  "title": "Domingo de la 13ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 13ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 88, 2-3. 16-17. 18-19 (R.: 2a)",
+  "salmo": "Salmo responsorial: Salmo 88, 2-3. 16-17. 18-19 (R.: 2a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 513,
+  "respuesta": "R. Cantaré eternamente las misericordias del Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: «Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.",
+    "Dichoso el pueblo que sabe aclamarte:\ncamina, oh Señor, a la luz de tu rostro;\ntu nombre es su gozo cada día,\ntu justicia es su orgullo. R.",
+    "Porque tú eres su honor y su fuerza,\ny con tu favor realzas nuestro poder.\nPorque el Señor es nuestro escudo,\ny el Santo de Israel nuestro rey. R."
+  ],
+  "textoCompleto": "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: «Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.\n\nDichoso el pueblo que sabe aclamarte:\ncamina, oh Señor, a la luz de tu rostro;\ntu nombre es su gozo cada día,\ntu justicia es su orgullo. R.\n\nPorque tú eres su honor y su fuerza,\ny con tu favor realzas nuestro poder.\nPorque el Señor es nuestro escudo,\ny el Santo de Israel nuestro rey. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 13 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 88 2 3 16 17 18 19 r 2a r cantare eternamente las misericordias del senor cantare eternamente las misericordias del senor anunciare tu fidelidad por todas las edades porque dije tu misericordia es un edificio eterno mas que el cielo has afianzado tu fidelidad r dichoso el pueblo que sabe aclamarte camina oh senor a la luz de tu rostro tu nombre es su gozo cada dia tu justicia es su orgullo r porque tu eres su honor y su fuerza y con tu favor realzas nuestro poder porque el senor es nuestro escudo y el santo de israel nuestro rey r",
+  "lizq": [
+    {
+      "line": "R. Cantaré eternamente las misericordias del Señor.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cantaré eternamente las misericordias del Señor,",
+      "sC": ""
+    },
+    {
+      "line": "anunciaré tu fidelidad por todas las edades.",
+      "sC": ""
+    },
+    {
+      "line": "Porque dije: «Tu misericordia es un edificio eterno,",
+      "sC": ""
+    },
+    {
+      "line": "más que el cielo has afianzado tu fidelidad». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dichoso el pueblo que sabe aclamarte:",
+      "sC": ""
+    },
+    {
+      "line": "camina, oh Señor, a la luz de tu rostro;",
+      "sC": ""
+    },
+    {
+      "line": "tu nombre es su gozo cada día,",
+      "sC": ""
+    },
+    {
+      "line": "tu justicia es su orgullo. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Porque tú eres su honor y su fuerza,",
+      "sC": ""
+    },
+    {
+      "line": "y con tu favor realzas nuestro poder.",
+      "sC": ""
+    },
+    {
+      "line": "Porque el Señor es nuestro escudo,",
+      "sC": ""
+    },
+    {
+      "line": "y el Santo de Israel nuestro rey. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

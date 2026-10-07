@@ -1,0 +1,91 @@
+{
+  "id": "seub_45",
+  "title": "Domingo de la 3ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 3ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 24, 4-5ab. 6-7bc. 8-9 (R.: 4a)",
+  "salmo": "Salmo responsorial: Salmo 24, 4-5ab. 6-7bc. 8-9 (R.: 4a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 503,
+  "respuesta": "R. Señor, enséñame tus caminos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.",
+    "Recuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.",
+    "El Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R."
+  ],
+  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 3 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 24 4 5ab 6 7bc 8 9 r 4a r senor ensename tus caminos senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r recuerda senor que tu ternura y tu misericordia son eternas acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "lizq": [
+    {
+      "line": "R. Señor, enséñame tus caminos.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Señor, enséñame tus caminos,",
+      "sC": ""
+    },
+    {
+      "line": "instrúyeme en tus sendas:",
+      "sC": ""
+    },
+    {
+      "line": "haz que camine con lealtad;",
+      "sC": ""
+    },
+    {
+      "line": "enséñame, porque tú eres mi Dios y Salvador. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Recuerda, Señor, que tu ternura",
+      "sC": ""
+    },
+    {
+      "line": "y tu misericordia son eternas;",
+      "sC": ""
+    },
+    {
+      "line": "acuérdate de mí con misericordia,",
+      "sC": ""
+    },
+    {
+      "line": "por tu bondad, Señor. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es bueno y es recto,",
+      "sC": ""
+    },
+    {
+      "line": "y enseña el camino a los pecadores;",
+      "sC": ""
+    },
+    {
+      "line": "hace caminar a los humildes con rectitud,",
+      "sC": ""
+    },
+    {
+      "line": "enseña su camino a los humildes. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

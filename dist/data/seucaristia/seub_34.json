@@ -1,0 +1,133 @@
+{
+  "id": "seub_34",
+  "title": "Cuarto domingo de Pascua",
+  "celebracion": "Cuarto domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 117, 1 y 8-9. 21-23. 26 y 28-29 (R.: 22)",
+  "salmo": "Salmo responsorial: Salmo 117, 1 y 8-9. 21-23. 26 y 28-29 (R.: 22)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. La piedra que desecharon los arquitectos",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "es ahora la piedra angular.",
+    "R. Aleluya",
+    "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.",
+    "Te doy gracias porque me escuchaste\ny fuiste mi salvación.\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.",
+    "Bendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor.\nTú eres mi Dios, te doy gracias;\nDios mío, yo te ensalzo.\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia. R."
+  ],
+  "textoCompleto": "es ahora la piedra angular.\n\nR. Aleluya\n\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.\n\nTe doy gracias porque me escuchaste\ny fuiste mi salvación.\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.\n\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor.\nTú eres mi Dios, te doy gracias;\nDios mío, yo te ensalzo.\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "cuarto domingo de pascua ciclo b pascua domingo salmo responsorial salmo 117 1 y 8 9 21 23 26 y 28 29 r 22 r la piedra que desecharon los arquitectos es ahora la piedra angular r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia mejor es refugiarse en el senor que fiarse de los hombres mejor es refugiarse en el senor que fiarse de los jefes r te doy gracias porque me escuchaste y fuiste mi salvacion la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente r bendito el que viene en nombre del senor os bendecimos desde la casa del senor tu eres mi dios te doy gracias dios mio yo te ensalzo dad gracias al senor porque es bueno porque es eterna su misericordia r",
+  "lizq": [
+    {
+      "line": "R. La piedra que desecharon los arquitectos",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "es ahora la piedra angular.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dad gracias al Señor porque es bueno,",
+      "sC": ""
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": ""
+    },
+    {
+      "line": "Mejor es refugiarse en el Señor",
+      "sC": ""
+    },
+    {
+      "line": "que fiarse de los hombres,",
+      "sC": ""
+    },
+    {
+      "line": "mejor es refugiarse en el Señor",
+      "sC": ""
+    },
+    {
+      "line": "que fiarse de los jefes. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Te doy gracias porque me escuchaste",
+      "sC": ""
+    },
+    {
+      "line": "y fuiste mi salvación.",
+      "sC": ""
+    },
+    {
+      "line": "La piedra que desecharon los arquitectos",
+      "sC": ""
+    },
+    {
+      "line": "es ahora la piedra angular.",
+      "sC": ""
+    },
+    {
+      "line": "Es el Señor quien lo ha hecho,",
+      "sC": ""
+    },
+    {
+      "line": "ha sido un milagro patente. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito el que viene en nombre del Señor,",
+      "sC": ""
+    },
+    {
+      "line": "os bendecimos desde la casa del Señor.",
+      "sC": ""
+    },
+    {
+      "line": "Tú eres mi Dios, te doy gracias;",
+      "sC": ""
+    },
+    {
+      "line": "Dios mío, yo te ensalzo.",
+      "sC": ""
+    },
+    {
+      "line": "Dad gracias al Señor porque es bueno,",
+      "sC": ""
+    },
+    {
+      "line": "porque es eterna su misericordia. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

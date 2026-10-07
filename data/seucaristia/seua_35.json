@@ -1,0 +1,104 @@
+{
+  "id": "seua_35",
+  "title": "Tercer domingo de Pascua",
+  "celebracion": "Tercer domingo de Pascua",
+  "subtitle": "Salmo responsorial: 15, 1-2a y 5. 7-8. 9-10. 11 (R.: 11a)",
+  "salmo": "Salmo responsorial: 15, 1-2a y 5. 7-8. 9-10. 11 (R.: 11a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. Señor, me enseñarás el sendero de la vida.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "R. Aleluya.",
+    "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.",
+    "Bendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.",
+    "Por eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R."
+  ],
+  "textoCompleto": "R. Aleluya.\n\nProtégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "tercer domingo de pascua ciclo a pascua domingo salmo responsorial 15 1 2a y 5 7 8 9 10 11 r 11a r senor me ensenaras el sendero de la vida r aleluya protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r por eso se me alegra el corazon se gozan mis entranas y mi carne descansa serena porque no me entregaras a la muerte ni dejaras a tu fiel conocer la corrupcion r",
+  "lizq": [
+    {
+      "line": "R. Señor, me enseñarás el sendero de la vida.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Protégeme, Dios mío, que me refugio en ti;",
+      "sC": ""
+    },
+    {
+      "line": "yo digo al Señor: «Tú eres mi bien».",
+      "sC": ""
+    },
+    {
+      "line": "El Señor es el lote de mi heredad y mi copa;",
+      "sC": ""
+    },
+    {
+      "line": "mi suerte está en tu mano. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendeciré al Señor, que me aconseja,",
+      "sC": ""
+    },
+    {
+      "line": "hasta de noche me instruye internamente.",
+      "sC": ""
+    },
+    {
+      "line": "Tengo siempre presente al Señor,",
+      "sC": ""
+    },
+    {
+      "line": "con él a mi derecha no vacilaré. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Por eso se me alegra el corazón,",
+      "sC": ""
+    },
+    {
+      "line": "se gozan mis entrañas,",
+      "sC": ""
+    },
+    {
+      "line": "y mi carne descansa serena.",
+      "sC": ""
+    },
+    {
+      "line": "Porque no me entregarás a la muerte,",
+      "sC": ""
+    },
+    {
+      "line": "ni dejarás a tu fiel conocer la corrupción. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

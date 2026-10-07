@@ -1,0 +1,81 @@
+{
+  "id": "seua_43",
+  "title": "La Santísima Trinidad",
+  "celebracion": "La Santísima Trinidad",
+  "subtitle": "Interleccional: Daniel 3, 52. 53. 54. 55. 56",
+  "salmo": "Interleccional: Daniel 3, 52. 53. 54. 55. 56",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 535,
+  "respuesta": "R. A ti gloria y alabanza por los siglos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Bendito eres, Señor, Dios de nuestros padres,\nbendito tu nombre santo y glorioso. R.",
+    "Bendito eres en el templo de tu santa gloria. R.",
+    "Bendito eres sobre el trono de tu reino. R.",
+    "Bendito eres tú, que, sentado sobre querubines,\nsondeas los abismos. R.",
+    "Bendito eres en la bóveda del cielo. R."
+  ],
+  "textoCompleto": "Bendito eres, Señor, Dios de nuestros padres,\nbendito tu nombre santo y glorioso. R.\n\nBendito eres en el templo de tu santa gloria. R.\n\nBendito eres sobre el trono de tu reino. R.\n\nBendito eres tú, que, sentado sobre querubines,\nsondeas los abismos. R.\n\nBendito eres en la bóveda del cielo. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "la santisima trinidad ciclo a tiempo ordinario domingo interleccional daniel 3 52 53 54 55 56 r a ti gloria y alabanza por los siglos bendito eres senor dios de nuestros padres bendito tu nombre santo y glorioso r bendito eres en el templo de tu santa gloria r bendito eres sobre el trono de tu reino r bendito eres tu que sentado sobre querubines sondeas los abismos r bendito eres en la boveda del cielo r",
+  "lizq": [
+    {
+      "line": "R. A ti gloria y alabanza por los siglos.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito eres, Señor, Dios de nuestros padres,",
+      "sC": ""
+    },
+    {
+      "line": "bendito tu nombre santo y glorioso. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito eres en el templo de tu santa gloria. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito eres sobre el trono de tu reino. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito eres tú, que, sentado sobre querubines,",
+      "sC": ""
+    },
+    {
+      "line": "sondeas los abismos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendito eres en la bóveda del cielo. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

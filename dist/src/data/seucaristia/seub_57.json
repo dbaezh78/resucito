@@ -1,0 +1,104 @@
+{
+  "id": "seub_57",
+  "title": "Domingo de la 15ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 84, 9ab-10. 11-12. 13-14 (R.: 8)",
+  "salmo": "Salmo responsorial: Salmo 84, 9ab-10. 11-12. 13-14 (R.: 8)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 515,
+  "respuesta": "R. Muéstranos, Señor, tu misericordia",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "y danos tu salvación.",
+    "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.",
+    "La misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.",
+    "El Señor nos dará lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R."
+  ],
+  "textoCompleto": "y danos tu salvación.\n\nVoy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 15 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 84 9ab 10 11 12 13 14 r 8 r muestranos senor tu misericordia y danos tu salvacion voy a escuchar lo que dice el senor dios anuncia la paz a su pueblo y a sus amigos la salvacion esta ya cerca de sus fieles y la gloria habitara en nuestra tierra r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r",
+  "lizq": [
+    {
+      "line": "R. Muéstranos, Señor, tu misericordia",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "y danos tu salvación.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Voy a escuchar lo que dice el Señor:",
+      "sC": ""
+    },
+    {
+      "line": "«Dios anuncia la paz",
+      "sC": ""
+    },
+    {
+      "line": "a su pueblo y a sus amigos».",
+      "sC": ""
+    },
+    {
+      "line": "La salvación está ya cerca de sus fieles,",
+      "sC": ""
+    },
+    {
+      "line": "y la gloria habitará en nuestra tierra. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La misericordia y la fidelidad se encuentran,",
+      "sC": ""
+    },
+    {
+      "line": "la justicia y la paz se besan;",
+      "sC": ""
+    },
+    {
+      "line": "la fidelidad brota de la tierra,",
+      "sC": ""
+    },
+    {
+      "line": "y la justicia mira desde el cielo. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor nos dará lluvia,",
+      "sC": ""
+    },
+    {
+      "line": "y nuestra tierra dará su fruto.",
+      "sC": ""
+    },
+    {
+      "line": "La justicia marchará ante él,",
+      "sC": ""
+    },
+    {
+      "line": "la salvación seguirá sus pasos. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

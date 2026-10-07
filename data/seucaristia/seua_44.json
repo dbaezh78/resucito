@@ -1,0 +1,100 @@
+{
+  "id": "seua_44",
+  "title": "Santísimo Cuerpo y Sangre de Cristo - Domingo después de la Santísima Trinidad",
+  "celebracion": "Santísimo Cuerpo y Sangre de Cristo - Domingo después de la Santísima Trinidad",
+  "subtitle": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: 12a)",
+  "salmo": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: 12a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 535,
+  "respuesta": "R. Glorifica al Señor, Jerusalén.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "R. Aleluya.",
+    "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.",
+    "Ha puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.",
+    "Anuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obro así,\nni les dio a conocer sus mandatos. R."
+  ],
+  "textoCompleto": "R. Aleluya.\n\nGlorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nHa puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obro así,\nni les dio a conocer sus mandatos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "santisimo cuerpo y sangre de cristo domingo despues de la santisima trinidad ciclo a tiempo ordinario domingo salmo responsorial salmo 147 12 13 14 15 19 20 r 12a r glorifica al senor jerusalen r aleluya glorifica al senor jerusalen alaba a tu dios sion que ha reforzado los cerrojos de tus puertas y ha bendecido a tus hijos dentro de ti r ha puesto paz en tus fronteras te sacia con flor de harina el envia su mensaje a la tierra y su palabra corre veloz r anuncia su palabra a jacob sus decretos y mandatos a israel con ninguna nacion obro asi ni les dio a conocer sus mandatos r",
+  "lizq": [
+    {
+      "line": "R. Glorifica al Señor, Jerusalén.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Glorifica al Señor, Jerusalén;",
+      "sC": ""
+    },
+    {
+      "line": "alaba a tu Dios, Sión:",
+      "sC": ""
+    },
+    {
+      "line": "que ha reforzado los cerrojos de tus puertas,",
+      "sC": ""
+    },
+    {
+      "line": "y ha bendecido a tus hijos dentro de ti. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ha puesto paz en tus fronteras,",
+      "sC": ""
+    },
+    {
+      "line": "te sacia con flor de harina.",
+      "sC": ""
+    },
+    {
+      "line": "Él envía su mensaje a la tierra,",
+      "sC": ""
+    },
+    {
+      "line": "y su palabra corre veloz. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Anuncia su palabra a Jacob,",
+      "sC": ""
+    },
+    {
+      "line": "sus decretos y mandatos a Israel;",
+      "sC": ""
+    },
+    {
+      "line": "con ninguna nación obro así,",
+      "sC": ""
+    },
+    {
+      "line": "ni les dio a conocer sus mandatos. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

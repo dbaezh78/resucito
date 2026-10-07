@@ -1,0 +1,91 @@
+{
+  "id": "seub_60",
+  "title": "Domingo de la 18ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 18ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 77, 3 y 4bc. 23-24. 25 y 54 (R.: 24b)",
+  "salmo": "Salmo responsorial: Salmo 77, 3 y 4bc. 23-24. 25 y 54 (R.: 24b)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 518,
+  "respuesta": "R. El Señor les dio un trigo celeste.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Lo que oímos y aprendimos,\nlo que nuestros padres nos contaron,\nlo contaremos a la futura generación:\nlas alabanzas del Señor, su poder. R.",
+    "Dio orden a las altas nubes,\nabrió las compuertas del cielo:\nhizo llover sobre ellos maná,\nles dio un trigo celeste. R.",
+    "Y el hombre comió pan de ángeles,\nles mandó provisiones hasta la hartura.\nLos hizo entrar por las santas fronteras,\nhasta el monte que su diestra había adquirido. R."
+  ],
+  "textoCompleto": "Lo que oímos y aprendimos,\nlo que nuestros padres nos contaron,\nlo contaremos a la futura generación:\nlas alabanzas del Señor, su poder. R.\n\nDio orden a las altas nubes,\nabrió las compuertas del cielo:\nhizo llover sobre ellos maná,\nles dio un trigo celeste. R.\n\nY el hombre comió pan de ángeles,\nles mandó provisiones hasta la hartura.\nLos hizo entrar por las santas fronteras,\nhasta el monte que su diestra había adquirido. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 18 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 77 3 y 4bc 23 24 25 y 54 r 24b r el senor les dio un trigo celeste lo que oimos y aprendimos lo que nuestros padres nos contaron lo contaremos a la futura generacion las alabanzas del senor su poder r dio orden a las altas nubes abrio las compuertas del cielo hizo llover sobre ellos mana les dio un trigo celeste r y el hombre comio pan de angeles les mando provisiones hasta la hartura los hizo entrar por las santas fronteras hasta el monte que su diestra habia adquirido r",
+  "lizq": [
+    {
+      "line": "R. El Señor les dio un trigo celeste.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Lo que oímos y aprendimos,",
+      "sC": ""
+    },
+    {
+      "line": "lo que nuestros padres nos contaron,",
+      "sC": ""
+    },
+    {
+      "line": "lo contaremos a la futura generación:",
+      "sC": ""
+    },
+    {
+      "line": "las alabanzas del Señor, su poder. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dio orden a las altas nubes,",
+      "sC": ""
+    },
+    {
+      "line": "abrió las compuertas del cielo:",
+      "sC": ""
+    },
+    {
+      "line": "hizo llover sobre ellos maná,",
+      "sC": ""
+    },
+    {
+      "line": "les dio un trigo celeste. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Y el hombre comió pan de ángeles,",
+      "sC": ""
+    },
+    {
+      "line": "les mandó provisiones hasta la hartura.",
+      "sC": ""
+    },
+    {
+      "line": "Los hizo entrar por las santas fronteras,",
+      "sC": ""
+    },
+    {
+      "line": "hasta el monte que su diestra había adquirido. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

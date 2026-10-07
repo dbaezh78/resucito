@@ -1,0 +1,100 @@
+{
+  "id": "seua_03",
+  "title": "Domingo 3º de Adviento",
+  "celebracion": "Domingo 3º de Adviento",
+  "subtitle": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: cf. Is 35, 4)",
+  "salmo": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: cf. Is 35, 4)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Adviento",
+  "dia": "Domingo",
+  "orden": 103,
+  "respuesta": "R. Ven, Señor, a salvarnos.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "R. Aleluya",
+    "El Señor mantiene su fidelidad perpetuamente,\nhace justicia a los oprimidos,\nda pan a los hambrientos.\nEl Señor liberta a los cautivos. R.",
+    "El Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos,\nel Señor guarda a los peregrinos. R.",
+    "Sustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R."
+  ],
+  "textoCompleto": "R. Aleluya\n\nEl Señor mantiene su fidelidad perpetuamente,\nhace justicia a los oprimidos,\nda pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos,\nel Señor guarda a los peregrinos. R.\n\nSustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo 3 de adviento ciclo a adviento domingo salmo responsorial salmo 145 7 8 9a 9bc 10 r cf is 35 4 r ven senor a salvarnos r aleluya el senor mantiene su fidelidad perpetuamente hace justicia a los oprimidos da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
+  "lizq": [
+    {
+      "line": "R. Ven, Señor, a salvarnos.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor mantiene su fidelidad perpetuamente,",
+      "sC": ""
+    },
+    {
+      "line": "hace justicia a los oprimidos,",
+      "sC": ""
+    },
+    {
+      "line": "da pan a los hambrientos.",
+      "sC": ""
+    },
+    {
+      "line": "El Señor liberta a los cautivos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor abre los ojos al ciego,",
+      "sC": ""
+    },
+    {
+      "line": "el Señor endereza a los que ya se doblan,",
+      "sC": ""
+    },
+    {
+      "line": "el Señor ama a los justos,",
+      "sC": ""
+    },
+    {
+      "line": "el Señor guarda a los peregrinos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Sustenta al huérfano y a la viuda",
+      "sC": ""
+    },
+    {
+      "line": "y trastorna el camino de los malvados.",
+      "sC": ""
+    },
+    {
+      "line": "El Señor reina eternamente,",
+      "sC": ""
+    },
+    {
+      "line": "tu Dios, Sión, de edad en edad. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

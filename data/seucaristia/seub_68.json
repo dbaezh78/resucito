@@ -1,0 +1,112 @@
+{
+  "id": "seub_68",
+  "title": "Domingo de la 26ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 26ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 18, 8. 10.12-13. 14 (R.: 9a)",
+  "salmo": "Salmo responsorial: Salmo 18, 8. 10.12-13. 14 (R.: 9a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 526,
+  "respuesta": "R. Los mandatos del Señor son rectos y alegran el corazón.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.",
+    "La voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.",
+    "Aunque tu siervo vigila\npara guardarlos con cuidado,\n¿quién conoce sus faltas?\nAbsuélveme de lo que se me oculta. R.",
+    "Preserva a tu siervo de la arrogancia,\npara que no me domine:\nasí quedaré libre e inocente\ndel gran pecado. R."
+  ],
+  "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nAunque tu siervo vigila\npara guardarlos con cuidado,\n¿quién conoce sus faltas?\nAbsuélveme de lo que se me oculta. R.\n\nPreserva a tu siervo de la arrogancia,\npara que no me domine:\nasí quedaré libre e inocente\ndel gran pecado. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 26 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 18 8 10 12 13 14 r 9a r los mandatos del senor son rectos y alegran el corazon la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r aunque tu siervo vigila para guardarlos con cuidado quien conoce sus faltas absuelveme de lo que se me oculta r preserva a tu siervo de la arrogancia para que no me domine asi quedare libre e inocente del gran pecado r",
+  "lizq": [
+    {
+      "line": "R. Los mandatos del Señor son rectos y alegran el corazón.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La ley del Señor es perfecta",
+      "sC": ""
+    },
+    {
+      "line": "y es descanso del alma;",
+      "sC": ""
+    },
+    {
+      "line": "el precepto del Señor es fiel",
+      "sC": ""
+    },
+    {
+      "line": "e instruye al ignorante. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La voluntad del Señor es pura",
+      "sC": ""
+    },
+    {
+      "line": "y eternamente estable;",
+      "sC": ""
+    },
+    {
+      "line": "los mandamientos del Señor son verdaderos",
+      "sC": ""
+    },
+    {
+      "line": "y enteramente justos. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aunque tu siervo vigila",
+      "sC": ""
+    },
+    {
+      "line": "para guardarlos con cuidado,",
+      "sC": ""
+    },
+    {
+      "line": "¿quién conoce sus faltas?",
+      "sC": ""
+    },
+    {
+      "line": "Absuélveme de lo que se me oculta. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Preserva a tu siervo de la arrogancia,",
+      "sC": ""
+    },
+    {
+      "line": "para que no me domine:",
+      "sC": ""
+    },
+    {
+      "line": "así quedaré libre e inocente",
+      "sC": ""
+    },
+    {
+      "line": "del gran pecado. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

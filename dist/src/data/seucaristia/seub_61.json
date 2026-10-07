@@ -1,0 +1,112 @@
+{
+  "id": "seub_61",
+  "title": "Domingo de la 19ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 19ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 9a)",
+  "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 9a)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 519,
+  "respuesta": "R. Gustad y ved qué bueno es el Señor.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.",
+    "Proclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.",
+    "Contempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.",
+    "El ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R."
+  ],
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 19 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 33 2 3 4 5 6 7 8 9 r 9a r gustad y ved que bueno es el senor bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r",
+  "lizq": [
+    {
+      "line": "R. Gustad y ved qué bueno es el Señor.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendigo al Señor en todo momento,",
+      "sC": ""
+    },
+    {
+      "line": "su alabanza está siempre en mi boca;",
+      "sC": ""
+    },
+    {
+      "line": "mi alma se gloría en el Señor:",
+      "sC": ""
+    },
+    {
+      "line": "que los humildes lo escuchen y se alegren. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Proclamad conmigo la grandeza del Señor,",
+      "sC": ""
+    },
+    {
+      "line": "ensalcemos juntos su nombre.",
+      "sC": ""
+    },
+    {
+      "line": "Yo consulté al Señor, y me respondió,",
+      "sC": ""
+    },
+    {
+      "line": "me libró de todas mis ansias. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Contempladlo, y quedaréis radiantes,",
+      "sC": ""
+    },
+    {
+      "line": "vuestro rostro no se avergonzará.",
+      "sC": ""
+    },
+    {
+      "line": "Si el afligido invoca al Señor, él lo escucha",
+      "sC": ""
+    },
+    {
+      "line": "y lo salva de sus angustias. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El ángel del Señor acampa",
+      "sC": ""
+    },
+    {
+      "line": "en torno a sus fieles y los protege.",
+      "sC": ""
+    },
+    {
+      "line": "Gustad y ved qué bueno es el Señor,",
+      "sC": ""
+    },
+    {
+      "line": "dichoso el que se acoge a él. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

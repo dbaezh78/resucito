@@ -1,0 +1,109 @@
+{
+  "id": "seua_33",
+  "title": "Domingo de Pascua",
+  "celebracion": "Domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 117, 1-2. 16ab-17. 22-23 (R.: 24)",
+  "salmo": "Salmo responsorial: Salmo 117, 1-2. 16ab-17. 22-23 (R.: 24)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. Este es el día en que actuó el Señor:",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "sea nuestra alegría y nuestro gozo.",
+    "R. Aleluya.",
+    "Dad gracias al Señor, porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\nEterna es su misericordia. R.",
+    "La diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor. R.",
+    "La piedra que desecharon los arquitectos,\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R."
+  ],
+  "textoCompleto": "sea nuestra alegría y nuestro gozo.\n\nR. Aleluya.\n\nDad gracias al Señor, porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\nEterna es su misericordia. R.\n\nLa diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor. R.\n\nLa piedra que desecharon los arquitectos,\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de pascua ciclo a pascua domingo salmo responsorial salmo 117 1 2 16ab 17 22 23 r 24 r este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia diga la casa de israel eterna es su misericordia r la diestra del senor es poderosa la diestra del senor es excelsa no he de morir vivire para contar las hazanas del senor r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente r",
+  "lizq": [
+    {
+      "line": "R. Este es el día en que actuó el Señor:",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "sea nuestra alegría y nuestro gozo.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dad gracias al Señor, porque es bueno,",
+      "sC": ""
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": ""
+    },
+    {
+      "line": "Diga la casa de Israel:",
+      "sC": ""
+    },
+    {
+      "line": "Eterna es su misericordia. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La diestra del Señor es poderosa,",
+      "sC": ""
+    },
+    {
+      "line": "la diestra del Señor es excelsa.",
+      "sC": ""
+    },
+    {
+      "line": "No he de morir, viviré",
+      "sC": ""
+    },
+    {
+      "line": "para contar las hazañas del Señor. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "La piedra que desecharon los arquitectos,",
+      "sC": ""
+    },
+    {
+      "line": "es ahora la piedra angular.",
+      "sC": ""
+    },
+    {
+      "line": "Es el Señor quien lo ha hecho,",
+      "sC": ""
+    },
+    {
+      "line": "ha sido un milagro patente. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

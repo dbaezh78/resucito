@@ -1,0 +1,112 @@
+{
+  "id": "seua_61",
+  "title": "Domingo de la 17ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 17ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 118, 57 y 72. 76-77. 127-128. 129-130 (R.: 97a)",
+  "salmo": "Salmo responsorial: Salmo 118, 57 y 72. 76-77. 127-128. 129-130 (R.: 97a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 517,
+  "respuesta": "R. ¡Cuánto amo tu voluntad, Señor!",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Mi porción es el Señor;\nhe resuelto guardar tus palabras.\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.",
+    "Que tu bondad me consuele,\nsegún la promesa hecha a tu siervo;\ncuando me alcance tu compasión, viviré,\ny mis delicias serán tu voluntad. R.",
+    "Yo amo tus mandatos\nmás que el oro purísimo;\npor eso aprecio tus decretos\ny detesto el camino de la mentira. R.",
+    "Tus preceptos son admirables,\npor eso los guarda mi alma;\nla explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R."
+  ],
+  "textoCompleto": "Mi porción es el Señor;\nhe resuelto guardar tus palabras.\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nQue tu bondad me consuele,\nsegún la promesa hecha a tu siervo;\ncuando me alcance tu compasión, viviré,\ny mis delicias serán tu voluntad. R.\n\nYo amo tus mandatos\nmás que el oro purísimo;\npor eso aprecio tus decretos\ny detesto el camino de la mentira. R.\n\nTus preceptos son admirables,\npor eso los guarda mi alma;\nla explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 17 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 118 57 y 72 76 77 127 128 129 130 r 97a r cuanto amo tu voluntad senor mi porcion es el senor he resuelto guardar tus palabras mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r que tu bondad me consuele segun la promesa hecha a tu siervo cuando me alcance tu compasion vivire y mis delicias seran tu voluntad r yo amo tus mandatos mas que el oro purisimo por eso aprecio tus decretos y detesto el camino de la mentira r tus preceptos son admirables por eso los guarda mi alma la explicacion de tus palabras ilumina da inteligencia a los ignorantes r",
+  "lizq": [
+    {
+      "line": "R. ¡Cuánto amo tu voluntad, Señor!",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Mi porción es el Señor;",
+      "sC": ""
+    },
+    {
+      "line": "he resuelto guardar tus palabras.",
+      "sC": ""
+    },
+    {
+      "line": "Más estimo yo los preceptos de tu boca",
+      "sC": ""
+    },
+    {
+      "line": "que miles de monedas de oro y plata. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que tu bondad me consuele,",
+      "sC": ""
+    },
+    {
+      "line": "según la promesa hecha a tu siervo;",
+      "sC": ""
+    },
+    {
+      "line": "cuando me alcance tu compasión, viviré,",
+      "sC": ""
+    },
+    {
+      "line": "y mis delicias serán tu voluntad. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Yo amo tus mandatos",
+      "sC": ""
+    },
+    {
+      "line": "más que el oro purísimo;",
+      "sC": ""
+    },
+    {
+      "line": "por eso aprecio tus decretos",
+      "sC": ""
+    },
+    {
+      "line": "y detesto el camino de la mentira. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tus preceptos son admirables,",
+      "sC": ""
+    },
+    {
+      "line": "por eso los guarda mi alma;",
+      "sC": ""
+    },
+    {
+      "line": "la explicación de tus palabras ilumina,",
+      "sC": ""
+    },
+    {
+      "line": "da inteligencia a los ignorantes. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

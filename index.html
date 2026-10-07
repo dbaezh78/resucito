@@ -41,6 +41,7 @@
             <button class="book-tab active" data-book="resucito">Resucitó</button>
             <button class="book-tab" data-book="joven">Canto Joven</button>
             <button class="book-tab" data-book="aclamaciones">Aclamaciones</button>
+            <button class="book-tab" data-book="eucaristia">Eucaristía</button>
             <button class="book-tab" data-book="salmodias">Salmodias</button>
             <button class="book-tab" data-book="catequesis">Catequesis</button>
             <button class="book-tab" data-book="extras" id="book-tab-extras" style="display: none;">Extras</button>
@@ -90,6 +91,47 @@
               <button class="btn filter-pill aclamaciones-pill" data-tiempo="Pascua">Pascua</button>
               <button class="btn filter-pill aclamaciones-pill active" data-tiempo="Tiempo Ordinario">Ordinario</button>
               <button class="btn filter-pill aclamaciones-pill" data-tiempo="Solemnidades y Fiestas">Fiestas</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de Filtros Exclusiva para Eucaristía (Ciclos, Tiempos Litúrgicos y Días de la Semana) -->
+        <div id="eucaristia-filter-bar" class="eucaristia-filter-bar aclamaciones-filter-bar" style="display: none;">
+          <div class="aclamaciones-filter-group">
+            <span class="aclamaciones-filter-label">Ciclo:</span>
+            <div class="aclamaciones-pills" id="eucaristia-ciclos-container">
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill active" data-ciclo="Ciclo A">Ciclo A</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo B">Ciclo B</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Ciclo C">Ciclo C</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Año Par">Año Par</button>
+              <button class="btn filter-pill aclamaciones-pill" data-ciclo="Año Impar">Año Impar</button>
+            </div>
+          </div>
+          <div class="aclamaciones-filter-group">
+            <span class="aclamaciones-filter-label">Tiempo:</span>
+            <div class="aclamaciones-pills" id="eucaristia-tiempos-container">
+              <button class="btn filter-pill aclamaciones-pill active" data-tiempo="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Adviento">Adviento</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Navidad">Navidad</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Cuaresma">Cuaresma</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Pascua">Pascua</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Tiempo Ordinario">Ordinario</button>
+              <button class="btn filter-pill aclamaciones-pill" data-tiempo="Solemnidades y Fiestas">Fiestas</button>
+            </div>
+          </div>
+          <!-- Días de la semana empezando por Domingo -->
+          <div class="aclamaciones-filter-group eucaristia-dias-group">
+            <span class="aclamaciones-filter-label">Día:</span>
+            <div class="aclamaciones-pills" id="eucaristia-dias-container">
+              <button class="btn filter-pill aclamaciones-pill active" data-dia="Todos">Todos</button>
+              <button class="btn filter-pill aclamaciones-pill" data-dia="Domingo">Domingo</button>
+              <button class="btn filter-pill aclamaciones-pill" data-dia="Lunes">Lunes</button>
+              <button class="btn filter-pill aclamaciones-pill" data-dia="Martes">Martes</button>
+              <button class="btn filter-pill aclamaciones-pill" data-dia="Miércoles">Miércoles</button>
+              <button class="btn filter-pill aclamaciones-pill" data-dia="Jueves">Jueves</button>
+              <button class="btn filter-pill aclamaciones-pill" data-dia="Viernes">Viernes</button>
+              <button class="btn filter-pill aclamaciones-pill" data-dia="Sábado">Sábado</button>
             </div>
           </div>
         </div>

@@ -1,0 +1,104 @@
+{
+  "id": "seub_69",
+  "title": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5. 6 (R.: cf. 5)",
+  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5. 6 (R.: cf. 5)",
+  "ciclo": "Ciclo B",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 527,
+  "respuesta": "R. Que el Señor nos bendiga",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "todos los días de nuestra vida.",
+    "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.",
+    "Tu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.",
+    "Ésta es la bendición del hombre,\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R."
+  ],
+  "textoCompleto": "todos los días de nuestra vida.\n\nDichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre,\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 27 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 127 1 2 3 4 5 6 r cf 5 r que el senor nos bendiga todos los dias de nuestra vida dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r",
+  "lizq": [
+    {
+      "line": "R. Que el Señor nos bendiga",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "todos los días de nuestra vida.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dichoso el que teme al Señor",
+      "sC": ""
+    },
+    {
+      "line": "y sigue sus caminos.",
+      "sC": ""
+    },
+    {
+      "line": "Comerás del fruto de tu trabajo,",
+      "sC": ""
+    },
+    {
+      "line": "serás dichoso, te irá bien. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tu mujer, como parra fecunda,",
+      "sC": ""
+    },
+    {
+      "line": "en medio de tu casa;",
+      "sC": ""
+    },
+    {
+      "line": "tus hijos, como renuevos de olivo,",
+      "sC": ""
+    },
+    {
+      "line": "alrededor de tu mesa. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Ésta es la bendición del hombre,",
+      "sC": ""
+    },
+    {
+      "line": "que teme al Señor.",
+      "sC": ""
+    },
+    {
+      "line": "Que el Señor te bendiga desde Sión,",
+      "sC": ""
+    },
+    {
+      "line": "que veas la prosperidad de Jerusalén",
+      "sC": ""
+    },
+    {
+      "line": "todos los días de tu vida. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

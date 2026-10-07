@@ -1,0 +1,121 @@
+{
+  "id": "seua_02",
+  "title": "Domingo 2º de Adviento",
+  "celebracion": "Domingo 2º de Adviento",
+  "subtitle": "Salmo responsorial: Salmo 71, 1-2. 7-8. 12-13. 17 (R.: cf. 7)",
+  "salmo": "Salmo responsorial: Salmo 71, 1-2. 7-8. 12-13. 17 (R.: cf. 7)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Adviento",
+  "dia": "Domingo",
+  "orden": 102,
+  "respuesta": "R. Que en sus días florezca la justicia,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "y la paz abunde eternamente.",
+    "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.",
+    "Que en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.",
+    "Él librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.",
+    "Que su nombre sea eterno,\ny su fama dure como el sol:\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R."
+  ],
+  "textoCompleto": "y la paz abunde eternamente.\n\nDios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nÉl librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol:\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo 2 de adviento ciclo a adviento domingo salmo responsorial salmo 71 1 2 7 8 12 13 17 r cf 7 r que en sus dias florezca la justicia y la paz abunde eternamente dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que en sus dias florezca la justicia y la paz hasta que falte la luna que domine de mar a mar del gran rio al confin de la tierra r el librara al pobre que clamaba al afligido que no tenia protector el se apiadara del pobre y del indigente y salvara la vida de los pobres r que su nombre sea eterno y su fama dure como el sol que el sea la bendicion de todos los pueblos y lo proclamen dichoso todas las razas de la tierra r",
+  "lizq": [
+    {
+      "line": "R. Que en sus días florezca la justicia,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "y la paz abunde eternamente.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Dios mío, confía tu juicio al rey,",
+      "sC": ""
+    },
+    {
+      "line": "tu justicia al hijo de reyes,",
+      "sC": ""
+    },
+    {
+      "line": "para que rija a tu pueblo con justicia,",
+      "sC": ""
+    },
+    {
+      "line": "a tus humildes con rectitud. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que en sus días florezca la justicia",
+      "sC": ""
+    },
+    {
+      "line": "y la paz hasta que falte la luna;",
+      "sC": ""
+    },
+    {
+      "line": "que domine de mar a mar,",
+      "sC": ""
+    },
+    {
+      "line": "del Gran Río al confín de la tierra. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Él librará al pobre que clamaba,",
+      "sC": ""
+    },
+    {
+      "line": "al afligido que no tenía protector;",
+      "sC": ""
+    },
+    {
+      "line": "él se apiadará del pobre y del indigente,",
+      "sC": ""
+    },
+    {
+      "line": "y salvará la vida de los pobres. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que su nombre sea eterno,",
+      "sC": ""
+    },
+    {
+      "line": "y su fama dure como el sol:",
+      "sC": ""
+    },
+    {
+      "line": "que él sea la bendición de todos los pueblos,",
+      "sC": ""
+    },
+    {
+      "line": "y lo proclamen dichoso todas las razas de la tierra. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "seua_37",
+  "title": "Quinto domingo de Pascua",
+  "celebracion": "Quinto domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 32, 1-2. 4-5. 18-19 (R.: 22)",
+  "salmo": "Salmo responsorial: Salmo 32, 1-2. 4-5. 18-19 (R.: 22)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
+  "orden": 410,
+  "respuesta": "R. Que tu misericordia, Señor, venga sobre nosotros,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "como lo esperamos de ti.",
+    "R. Aleluya.",
+    "Aclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas. R.",
+    "Que la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.",
+    "Los ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R."
+  ],
+  "textoCompleto": "como lo esperamos de ti.\n\nR. Aleluya.\n\nAclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "quinto domingo de pascua ciclo a pascua domingo salmo responsorial salmo 32 1 2 4 5 18 19 r 22 r que tu misericordia senor venga sobre nosotros como lo esperamos de ti r aleluya aclamad justos al senor que merece la alabanza de los buenos dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r los ojos del senor estan puestos en sus fieles en los que esperan en su misericordia para librar sus vidas de la muerte y reanimarlos en tiempo de hambre r",
+  "lizq": [
+    {
+      "line": "R. Que tu misericordia, Señor, venga sobre nosotros,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "como lo esperamos de ti.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Aclamad, justos, al Señor,",
+      "sC": ""
+    },
+    {
+      "line": "que merece la alabanza de los buenos.",
+      "sC": ""
+    },
+    {
+      "line": "Dad gracias al Señor con la cítara,",
+      "sC": ""
+    },
+    {
+      "line": "tocad en su honor el arpa de diez cuerdas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Que la palabra del Señor es sincera,",
+      "sC": ""
+    },
+    {
+      "line": "y todas sus acciones son leales;",
+      "sC": ""
+    },
+    {
+      "line": "él ama la justicia y el derecho,",
+      "sC": ""
+    },
+    {
+      "line": "y su misericordia llena la tierra. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Los ojos del Señor están puestos en sus fieles,",
+      "sC": ""
+    },
+    {
+      "line": "en los que esperan en su misericordia,",
+      "sC": ""
+    },
+    {
+      "line": "para librar sus vidas de la muerte",
+      "sC": ""
+    },
+    {
+      "line": "y reanimarlos en tiempo de hambre. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

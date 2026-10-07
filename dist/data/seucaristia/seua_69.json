@@ -1,0 +1,91 @@
+{
+  "id": "seua_69",
+  "title": "Domingo de la 25ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 25ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 8-9. 17-18 (R.: 18a)",
+  "salmo": "Salmo responsorial: Salmo 144, 2-3. 8-9. 17-18 (R.: 18a)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 525,
+  "respuesta": "R. Cerca está el Señor de los que lo invocan.",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.",
+    "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.",
+    "El Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R."
+  ],
+  "textoCompleto": "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 25 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 144 2 3 8 9 17 18 r 18a r cerca esta el senor de los que lo invocan dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r el senor es justo en todos sus caminos es bondadoso en todas sus acciones cerca esta el senor de los que lo invocan de los que lo invocan sinceramente r",
+  "lizq": [
+    {
+      "line": "R. Cerca está el Señor de los que lo invocan.",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Día tras día, te bendeciré",
+      "sC": ""
+    },
+    {
+      "line": "y alabaré tu nombre por siempre jamás.",
+      "sC": ""
+    },
+    {
+      "line": "Grande es el Señor, merece toda alabanza,",
+      "sC": ""
+    },
+    {
+      "line": "es incalculable su grandeza. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es clemente y misericordioso,",
+      "sC": ""
+    },
+    {
+      "line": "lento a la cólera y rico en piedad;",
+      "sC": ""
+    },
+    {
+      "line": "el Señor es bueno con todos,",
+      "sC": ""
+    },
+    {
+      "line": "es cariñoso con todas sus criaturas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Señor es justo en todos sus caminos,",
+      "sC": ""
+    },
+    {
+      "line": "es bondadoso en todas sus acciones;",
+      "sC": ""
+    },
+    {
+      "line": "cerca está el Señor de los que lo invocan,",
+      "sC": ""
+    },
+    {
+      "line": "de los que lo invocan sinceramente. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

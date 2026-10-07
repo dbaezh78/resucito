@@ -1,0 +1,113 @@
+{
+  "id": "seua_59",
+  "title": "Domingo de la 15ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 64, 10. 11. 12-13. 14 (R.: Lc 8, 8)",
+  "salmo": "Salmo responsorial: Salmo 64, 10. 11. 12-13. 14 (R.: Lc 8, 8)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 515,
+  "respuesta": "R. La semilla cayó en tierra buena",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "y dio fruto.",
+    "Tú cuidas de la tierra, la riegas\ny la enriqueces sin medida;\nla acequia de Dios va llena de agua,\npreparas los trigales. R.",
+    "Riegas los surcos, igualas los terrones,\ntu llovizna los deja mullidos,\nbendices sus brotes. R.",
+    "Coronas el año con tus bienes,\ntus carriles rezuman abundancia;\nrezuman los pastos del páramo,\ny las colinas se orlan de alegría. R.",
+    "Las praderas se cubren de rebaños,\ny los valles se visten de mieses,\nque aclaman y cantan. R."
+  ],
+  "textoCompleto": "y dio fruto.\n\nTú cuidas de la tierra, la riegas\ny la enriqueces sin medida;\nla acequia de Dios va llena de agua,\npreparas los trigales. R.\n\nRiegas los surcos, igualas los terrones,\ntu llovizna los deja mullidos,\nbendices sus brotes. R.\n\nCoronas el año con tus bienes,\ntus carriles rezuman abundancia;\nrezuman los pastos del páramo,\ny las colinas se orlan de alegría. R.\n\nLas praderas se cubren de rebaños,\ny los valles se visten de mieses,\nque aclaman y cantan. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 15 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 64 10 11 12 13 14 r lc 8 8 r la semilla cayo en tierra buena y dio fruto tu cuidas de la tierra la riegas y la enriqueces sin medida la acequia de dios va llena de agua preparas los trigales r riegas los surcos igualas los terrones tu llovizna los deja mullidos bendices sus brotes r coronas el ano con tus bienes tus carriles rezuman abundancia rezuman los pastos del paramo y las colinas se orlan de alegria r las praderas se cubren de rebanos y los valles se visten de mieses que aclaman y cantan r",
+  "lizq": [
+    {
+      "line": "R. La semilla cayó en tierra buena",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "y dio fruto.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Tú cuidas de la tierra, la riegas",
+      "sC": ""
+    },
+    {
+      "line": "y la enriqueces sin medida;",
+      "sC": ""
+    },
+    {
+      "line": "la acequia de Dios va llena de agua,",
+      "sC": ""
+    },
+    {
+      "line": "preparas los trigales. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Riegas los surcos, igualas los terrones,",
+      "sC": ""
+    },
+    {
+      "line": "tu llovizna los deja mullidos,",
+      "sC": ""
+    },
+    {
+      "line": "bendices sus brotes. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Coronas el año con tus bienes,",
+      "sC": ""
+    },
+    {
+      "line": "tus carriles rezuman abundancia;",
+      "sC": ""
+    },
+    {
+      "line": "rezuman los pastos del páramo,",
+      "sC": ""
+    },
+    {
+      "line": "y las colinas se orlan de alegría. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Las praderas se cubren de rebaños,",
+      "sC": ""
+    },
+    {
+      "line": "y los valles se visten de mieses,",
+      "sC": ""
+    },
+    {
+      "line": "que aclaman y cantan. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "seua_41",
+  "title": "Domingo de Pentecostés - Misa de La vigilia.",
+  "celebracion": "Domingo de Pentecostés - Misa de La vigilia.",
+  "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 24. 27-28. 29bc-30 (R.: cf. 30)",
+  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 24. 27-28. 29bc-30 (R.: cf. 30)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Pascua",
+  "dia": "Sábado",
+  "orden": 429,
+  "respuesta": "R. Envía tu Espíritu, Señor,",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "y repuebla la faz de la tierra.",
+    "R. Aleluya.",
+    "Bendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.",
+    "Cuántas son tus obras,\nSeñor, y todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas. R.",
+    "Todos ellos aguardan\na que les eches comida a su tiempo;\nse la echas, y la atrapan;\nabres tu mano, y se sacian de bienes R.",
+    "Les retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R."
+  ],
+  "textoCompleto": "y repuebla la faz de la tierra.\n\nR. Aleluya.\n\nBendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nCuántas son tus obras,\nSeñor, y todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas. R.\n\nTodos ellos aguardan\na que les eches comida a su tiempo;\nse la echas, y la atrapan;\nabres tu mano, y se sacian de bienes R.\n\nLes retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de pentecostes misa de la vigilia ciclo a pascua sabado salmo responsorial salmo 103 1 2a 24 27 28 29bc 30 r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra r aleluya bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r cuantas son tus obras senor y todas las hiciste con sabiduria la tierra esta llena de tus criaturas r todos ellos aguardan a que les eches comida a su tiempo se la echas y la atrapan abres tu mano y se sacian de bienes r les retiras el aliento y expiran y vuelven a ser polvo envias tu aliento y los creas y repueblas la faz de la tierra r",
+  "lizq": [
+    {
+      "line": "R. Envía tu Espíritu, Señor,",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "y repuebla la faz de la tierra.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Bendice, alma mía, al Señor:",
+      "sC": ""
+    },
+    {
+      "line": "¡Dios mío, qué grande eres!",
+      "sC": ""
+    },
+    {
+      "line": "Te vistes de belleza y majestad,",
+      "sC": ""
+    },
+    {
+      "line": "la luz te envuelve como un manto. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Cuántas son tus obras,",
+      "sC": ""
+    },
+    {
+      "line": "Señor, y todas las hiciste con sabiduría;",
+      "sC": ""
+    },
+    {
+      "line": "la tierra está llena de tus criaturas. R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Todos ellos aguardan",
+      "sC": ""
+    },
+    {
+      "line": "a que les eches comida a su tiempo;",
+      "sC": ""
+    },
+    {
+      "line": "se la echas, y la atrapan;",
+      "sC": ""
+    },
+    {
+      "line": "abres tu mano, y se sacian de bienes R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "Les retiras el aliento, y expiran",
+      "sC": ""
+    },
+    {
+      "line": "y vuelven a ser polvo;",
+      "sC": ""
+    },
+    {
+      "line": "envías tu aliento, y los creas,",
+      "sC": ""
+    },
+    {
+      "line": "y repueblas la faz de la tierra. R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

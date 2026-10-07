@@ -1,0 +1,100 @@
+{
+  "id": "seua_54",
+  "title": "Domingo de la 10ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 10ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 49, 1 y 8. 12-13. 14-15 (R.: 23b)",
+  "salmo": "Salmo responsorial: Salmo 49, 1 y 8. 12-13. 14-15 (R.: 23b)",
+  "ciclo": "Ciclo A",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 510,
+  "respuesta": "R. Al que sigue buen camino",
+  "respuestaOpcional": "",
+  "estrofas": [
+    "le haré ver la salvación de Dios.",
+    "El Dios de los dioses, el Señor, habla:\nconvoca la tierra de oriente a occidente.\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí». R.",
+    "«Si tuviera hambre, no te lo diría;\npues el orbe y cuanto lo llena es mío.\n¿Comeré yo carne de toros,\nbeberé sangre de cabritos?». R.",
+    "«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo\ne invócame el día del peligro:\nyo te libraré, y tú me darás gloria». R."
+  ],
+  "textoCompleto": "le haré ver la salvación de Dios.\n\nEl Dios de los dioses, el Señor, habla:\nconvoca la tierra de oriente a occidente.\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí». R.\n\n«Si tuviera hambre, no te lo diría;\npues el orbe y cuanto lo llena es mío.\n¿Comeré yo carne de toros,\nbeberé sangre de cabritos?». R.\n\n«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo\ne invócame el día del peligro:\nyo te libraré, y tú me darás gloria». R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "hasAudio": false,
+  "searchPool": "domingo de la 10 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 49 1 y 8 12 13 14 15 r 23b r al que sigue buen camino le hare ver la salvacion de dios el dios de los dioses el senor habla convoca la tierra de oriente a occidente no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi r si tuviera hambre no te lo diria pues el orbe y cuanto lo llena es mio comere yo carne de toros bebere sangre de cabritos r ofrece a dios un sacrificio de alabanza cumple tus votos al altisimo e invocame el dia del peligro yo te librare y tu me daras gloria r",
+  "lizq": [
+    {
+      "line": "R. Al que sigue buen camino",
+      "sC": "tc ta as bg",
+      "color": "red"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "le haré ver la salvación de Dios.",
+      "sC": ""
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "El Dios de los dioses, el Señor, habla:",
+      "sC": ""
+    },
+    {
+      "line": "convoca la tierra de oriente a occidente.",
+      "sC": ""
+    },
+    {
+      "line": "«No te reprocho tus sacrificios,",
+      "sC": ""
+    },
+    {
+      "line": "pues siempre están tus holocaustos ante mí». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Si tuviera hambre, no te lo diría;",
+      "sC": ""
+    },
+    {
+      "line": "pues el orbe y cuanto lo llena es mío.",
+      "sC": ""
+    },
+    {
+      "line": "¿Comeré yo carne de toros,",
+      "sC": ""
+    },
+    {
+      "line": "beberé sangre de cabritos?». R.",
+      "sC": "salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "adb1"
+    },
+    {
+      "line": "«Ofrece a Dios un sacrificio de alabanza,",
+      "sC": ""
+    },
+    {
+      "line": "cumple tus votos al Altísimo",
+      "sC": ""
+    },
+    {
+      "line": "e invócame el día del peligro:",
+      "sC": ""
+    },
+    {
+      "line": "yo te libraré, y tú me darás gloria». R.",
+      "sC": "salmo-verso-fin"
+    }
+  ]
+}

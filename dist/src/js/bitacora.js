@@ -900,6 +900,26 @@ function formatearDetalleHTML(detalle, tipo) {
 function initEventListeners() {
   // Buscador de texto
   if (searchInputEl) {
+    let bitacoraClickCount = 0;
+    let bitacoraClickTimer = null;
+
+    searchInputEl.addEventListener('click', (e) => {
+      if (e.detail === 3 || ++bitacoraClickCount >= 3) {
+        if (searchInputEl.value) {
+          searchInputEl.value = '';
+          searchQuery = '';
+          aplicarFiltros();
+        }
+        bitacoraClickCount = 0;
+        if (bitacoraClickTimer) clearTimeout(bitacoraClickTimer);
+        return;
+      }
+      if (bitacoraClickTimer) clearTimeout(bitacoraClickTimer);
+      bitacoraClickTimer = setTimeout(() => {
+        bitacoraClickCount = 0;
+      }, 500);
+    });
+
     searchInputEl.addEventListener('input', (e) => {
       searchQuery = e.target.value.trim();
       aplicarFiltros();
