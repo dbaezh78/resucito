@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v364'; // v2.1.29 Notificaciones de chat con audio, toast, y corrección en sincronización de leídos
+const CACHE_NAME = 'resucito-cache-v365'; // v2.1.30 Aviso de actualización estilo chat y badge azul en Cuenta
 const STATIC_ASSETS = [
   './',
   'index.html',

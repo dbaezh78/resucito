@@ -29,6 +29,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
   });
 
   const appVersion = window.APP_VERSION || localStorage.getItem('resucito_installed_version') || '2.1.00';
+  window._hasAppUpdateAvailable = false;
 
   // 1. Estructura HTML del navegador
   const navHTML = `
@@ -218,9 +219,9 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
               <small style="color: var(--text-muted); font-size: 0.75rem;">2026</small>
             </div>
             <ul style="margin: 0; padding-left: 18px; font-size: 0.83rem; color: var(--text-color); line-height: 1.5;">
-              <li>Notificaciones de chat con campanilla de audio armónica y aviso toast emergente.</li>
-              <li>Sincronización instantánea de lectura de mensajes y corrección de contadores no leídos.</li>
-              <li>Optimización en apertura de cantos del visor y compatibilidad multiplataforma.</li>
+              <li>Aviso emergente interactivo estilo chat con campanilla armónica para nuevas versiones.</li>
+              <li>Indicador badge con "1" en color azul en Cuenta para actualizaciones disponibles.</li>
+              <li>Sincronización de lectura y contadores de chat perfeccionada.</li>
             </ul>
           </div>
 
@@ -888,6 +889,19 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
         
         if (info && info.latestVersion && esVersionSuperior(info.latestVersion, appVersion)) {
           window._latestRemoteVersion = info.latestVersion;
+          window._hasAppUpdateAvailable = true;
+
+          // Mostrar mensaje toast estilo chat avisando de la actualización (1 vez por versión y sesión)
+          const sessionNotifKey = 'resucito_update_notif_shown_' + info.latestVersion;
+          if (!sessionStorage.getItem(sessionNotifKey)) {
+            sessionStorage.setItem(sessionNotifKey, '1');
+            mostrarBannerActualizacion(info.latestVersion);
+          }
+
+          // Actualizar inmediatamente los badges para que Cuenta presente el "1" en fondo azul
+          if (typeof renderizarBadgesChat === 'function') {
+            renderizarBadgesChat();
+          }
 
           // Destacar el botón "Actualizar App" DENTRO del menú Cuenta con la marca y el halo dorado/verde
           if (actualizarBtn) {
@@ -930,6 +944,11 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
 
             document.getElementById('btn-ring-update-modal')?.addEventListener('click', ejecutarProcesoActualizacion);
             document.getElementById('btn-banner-update-modal')?.addEventListener('click', ejecutarProcesoActualizacion);
+          }
+        } else {
+          window._hasAppUpdateAvailable = false;
+          if (typeof renderizarBadgesChat === 'function') {
+            renderizarBadgesChat();
           }
         }
       } catch (err) {
@@ -1006,6 +1025,12 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           if (activeUser) {
             updateAuthUI(activeUser);
             if (card) card.classList.remove('hidden');
+            return;
+          }
+          // Si hay una actualización pendiente, permitir abrir el popup de cuenta para ver "Actualizar App"
+          if (window._hasAppUpdateAvailable && card) {
+            document.querySelectorAll('.nav-submenu').forEach((m) => m.classList.remove('active'));
+            card.classList.toggle('hidden');
             return;
           }
           if (window.firebaseAPI?.login) window.firebaseAPI.login();
@@ -1224,6 +1249,100 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       }, 5000);
     }
 
+    function mostrarBannerActualizacion(versionNueva) {
+      let toast = document.getElementById('resucito-update-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'resucito-update-toast';
+        toast.style.cssText = `
+          position: fixed;
+          top: -95px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 100000;
+          background: #111b21;
+          color: #ffffff;
+          border: 1.5px solid #007aff;
+          border-radius: 14px;
+          padding: 10px 16px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          box-shadow: 0 8px 24px rgba(0, 122, 255, 0.45);
+          cursor: pointer;
+          transition: top 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          max-width: 90vw;
+          min-width: 280px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        `;
+        toast.addEventListener('click', () => {
+          toast.style.top = '-95px';
+          if (window.location.pathname.includes('chat.html')) {
+            window.location.href = 'index.html?openAccount=1';
+            return;
+          }
+          const card = document.getElementById('account-popup-card');
+          if (card) {
+            document.querySelectorAll('.nav-submenu').forEach((m) => m.classList.remove('active'));
+            card.classList.remove('hidden');
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+        document.body.appendChild(toast);
+      }
+
+      toast.innerHTML = `
+        <div style="background: #007aff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 2px 6px rgba(0, 122, 255, 0.4);">
+          <span class="material-symbols-outlined" style="color: #ffffff; font-size: 20px;">system_update</span>
+        </div>
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-weight: 700; font-size: 0.85rem; color: #007aff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+            Actualización de la App (v${escapeHtml(versionNueva)})
+          </div>
+          <div style="font-size: 0.80rem; color: #e9edef; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+            Toca aquí o entra a Cuenta ➔ Actualizar App
+          </div>
+        </div>
+        <span class="material-symbols-outlined" style="color: #8696a0; font-size: 18px; margin-left: 6px;">chevron_right</span>
+      `;
+
+      reproducirSonidoNotificacion();
+
+      if (typeof Notification !== 'undefined' && Notification.permission === 'granted') {
+        try {
+          const notif = new Notification('🚀 Actualización de Resucitó (v' + versionNueva + ')', {
+            body: 'Nueva versión disponible. Entra a Cuenta para actualizar la App.',
+            icon: 'img/christ.png',
+            badge: 'img/christ.png',
+            tag: 'resucito-update-notif',
+            renotify: true
+          });
+          notif.onclick = () => {
+            window.focus();
+            if (window.location.pathname.includes('chat.html')) {
+              window.location.href = 'index.html?openAccount=1';
+              return;
+            }
+            const card = document.getElementById('account-popup-card');
+            if (card) {
+              document.querySelectorAll('.nav-submenu').forEach((m) => m.classList.remove('active'));
+              card.classList.remove('hidden');
+            }
+            notif.close();
+          };
+        } catch (e) {}
+      }
+
+      toast.style.top = '16px';
+
+      if (window._updateToastTimer) clearTimeout(window._updateToastTimer);
+      window._updateToastTimer = setTimeout(() => {
+        toast.style.top = '-95px';
+      }, 7000);
+    }
+
+    window._mostrarBannerActualizacion = mostrarBannerActualizacion;
+
     function mostrarNotificacionNavegador(remitente, texto) {
       if (typeof Notification === 'undefined' || Notification.permission !== 'granted') return;
       try {
@@ -1273,6 +1392,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
 
       const shouldShow = notifEnabled && !isChatPage && Boolean(user) && currentChatUnreadCount > 0;
       const countDisplay = currentChatUnreadCount > 99 ? '99+' : String(currentChatUnreadCount);
+      const hasUpdate = Boolean(window._hasAppUpdateAvailable);
 
       if (badgeNav) {
         if (shouldShow) {
@@ -1293,6 +1413,28 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           badgeNav.style.setProperty('border', '1.5px solid #ffffff', 'important');
           badgeNav.style.setProperty('box-sizing', 'border-box', 'important');
           badgeNav.style.setProperty('box-shadow', '0 2px 6px rgba(0, 0, 0, 0.4)', 'important');
+          badgeNav.style.setProperty('z-index', '10', 'important');
+          badgeNav.style.setProperty('pointer-events', 'none', 'important');
+          badgeNav.style.setProperty('align-items', 'center', 'important');
+          badgeNav.style.setProperty('justify-content', 'center', 'important');
+        } else if (hasUpdate && !isChatPage) {
+          badgeNav.textContent = '1';
+          badgeNav.style.setProperty('display', 'inline-flex', 'important');
+          badgeNav.style.setProperty('position', 'absolute', 'important');
+          badgeNav.style.setProperty('top', '-4px', 'important');
+          badgeNav.style.setProperty('right', 'calc(50% - 28px)', 'important');
+          badgeNav.style.setProperty('background-color', '#007aff', 'important');
+          badgeNav.style.setProperty('color', '#ffffff', 'important');
+          badgeNav.style.setProperty('font-weight', '900', 'important');
+          badgeNav.style.setProperty('font-size', '0.72rem', 'important');
+          badgeNav.style.setProperty('min-width', '18px', 'important');
+          badgeNav.style.setProperty('height', '18px', 'important');
+          badgeNav.style.setProperty('line-height', '18px', 'important');
+          badgeNav.style.setProperty('border-radius', '9999px', 'important');
+          badgeNav.style.setProperty('padding', '0 4px', 'important');
+          badgeNav.style.setProperty('border', '1.5px solid #ffffff', 'important');
+          badgeNav.style.setProperty('box-sizing', 'border-box', 'important');
+          badgeNav.style.setProperty('box-shadow', '0 2px 6px rgba(0, 122, 255, 0.55)', 'important');
           badgeNav.style.setProperty('z-index', '10', 'important');
           badgeNav.style.setProperty('pointer-events', 'none', 'important');
           badgeNav.style.setProperty('align-items', 'center', 'important');
@@ -1566,6 +1708,22 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           }
         }
       });
+    }
+
+    // Si la URL solicita abrir la cuenta directamente (ej. al pulsar la notificación toast de actualización)
+    if (window.location.search.includes('openAccount=1')) {
+      setTimeout(() => {
+        const card = document.getElementById('account-popup-card');
+        if (card) {
+          document.querySelectorAll('.nav-submenu').forEach((m) => m.classList.remove('active'));
+          card.classList.remove('hidden');
+        }
+        try {
+          const url = new URL(window.location.href);
+          url.searchParams.delete('openAccount');
+          window.history.replaceState({}, '', url.pathname + (url.search ? url.search : '') + url.hash);
+        } catch (e) {}
+      }, 400);
     }
 
     // Aplicar tema de colores del navegador

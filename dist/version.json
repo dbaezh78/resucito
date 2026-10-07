@@ -1,11 +1,11 @@
 {
-  "latestVersion": "2.1.29",
+  "latestVersion": "2.1.30",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.29)",
-  "updateMessage": "Notificaciones interactivas de chat con sonido, banner toast, HTML5 y corrección en sincronización de mensajes leídos.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.30)",
+  "updateMessage": "Aviso emergente estilo chat para actualizaciones y badge indicador '1' en azul en Cuenta.",
   "releaseNotes": [
-    "Sistema completo de notificaciones de soporte con campanilla de audio armónica y aviso toast emergente.",
-    "Sincronización instantánea de lectura de mensajes y corrección de contadores no leídos.",
-    "Optimización en carga y apertura de cantos del visor."
+    "Aviso emergente estilo chat con sonido armónico y badge '1' azul en Cuenta para nuevas actualizaciones.",
+    "Acceso directo a Actualizar App desde el aviso emergente o el menú de Cuenta.",
+    "Sincronización de lectura y contadores de chat perfeccionada."
   ]
 }
