@@ -1,5 +1,4 @@
-// sw.js - Service Worker para el cancionero Resucito
-const CACHE_NAME = 'resucito-cache-v358'; // v2.1.28 Chip Encargado de Canto en Perfil
+const CACHE_NAME = 'resucito-cache-v363'; // v2.1.28 Fix TypeError activeCustomPlaylist al abrir cantos
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -17,6 +16,8 @@ const STATIC_ASSETS = [
   'firebase.html',
   'img/christ.png',
   'img/Cristo_1.png',
+  'src/navegador.css',
+  'src/navegador.js',
   'src/css/chat.css',
   'src/js/chat.js',
   'src/css/parroquia.css',

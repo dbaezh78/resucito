@@ -42,13 +42,25 @@ folders.forEach(folder => {
 });
 
 // Asegurar que src (css, img, lib, data, etc.) esté presente en dist/src/
-const srcDirsToCopy = ['css', 'img', 'lib'];
+const srcDirsToCopy = ['css', 'img', 'lib', 'js'];
 srcDirsToCopy.forEach(sub => {
     const sDir = path.resolve(__dirname, 'src', sub);
     const dDir = path.resolve(distPath, 'src', sub);
     if (fs.existsSync(sDir)) {
         console.log(`Copiando src/${sub} a dist/src/${sub}...`);
         copyFolderRecursiveSync(sDir, dDir);
+    }
+});
+
+// Copiar archivos individuales de src/ a dist/src/
+const srcFilesToCopy = ['navegador.css', 'navegador.js', 'main.js', 'style.css', 'styleCanto.css', 'auth.js', 'firebase.js', 'sync.js', 'search.js', 'chords.js', 'pwa.js', 'accesscontrol.js', 'bitacora.css', 'bitacoraLogger.js'];
+srcFilesToCopy.forEach(f => {
+    const sFile = path.resolve(__dirname, 'src', f);
+    const dFile = path.resolve(distPath, 'src', f);
+    if (fs.existsSync(sFile)) {
+        try {
+            fs.copyFileSync(sFile, dFile);
+        } catch (e) {}
     }
 });
 

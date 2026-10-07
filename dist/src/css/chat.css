@@ -628,8 +628,20 @@ html, body {
 
 .wa-check-icon {
   font-size: 16px;
-  color: var(--wa-check-blue);
   line-height: 1;
+  vertical-align: middle;
+  color: var(--wa-text-secondary, #8696a0);
+  transition: color 0.2s ease;
+}
+
+.wa-check-icon.read,
+.wa-check-icon.wa-read {
+  color: #53bdeb !important;
+}
+
+.wa-check-icon.sent,
+.wa-check-icon.wa-sent {
+  color: #8696a0 !important;
 }
 
 /* Botón contextual de opciones (3 puntos en mensaje) */

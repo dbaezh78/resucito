@@ -1,0 +1,198 @@
+.srtp{
+    margin-top: -53px;
+    left: 237px;
+}
+
+@media (min-width: 384px){
+ .srtp{
+    margin-top: -43px;
+    left: 178px;
+    }
+
+    .linea-canto.ast-vsoislaluzdelmundo::after {left: 124px;}
+}
+
+@media (min-width: 768px){
+ .srtp{
+    margin-top: -77px;
+    left: 321px;
+    }
+
+    .linea-canto.ast-vsoislaluzdelmundo::after {left: 198px;}
+}
+
+@media (min-width: 992px){
+ .srtp{
+    margin-top: -52px;
+    left: 240px;
+    }
+
+    .linea-canto.ast-vsoislaluzdelmundo::after {left: 136px;}
+}
+
+
+
+.linea-canto.ast1::after {
+    content: "*";
+    font-weight: bold;
+    font-size: 0.7em;
+    color: var(--chord-color);
+    top: 7px;
+    left: 129px;
+    position: absolute;
+}
+
+/* Cuando se combinan con asterisco/melisma, la letra mantiene el color del tema y solo el final se colorea */
+.linea-canto.ast1.cRojo .letra {
+  color: var(--text-color) !important;
+}
+
+.linea-canto.ast1.cAzul .letra{
+  color: var(--text-color) !important;
+}
+
+/*venhijodelhombre*/
+
+.señorJesus{
+    margin-top: -47px;
+    left: 160px;
+}
+
+.vhha2 {margin-top: -48px;left: 55px;}
+.vhha3 {margin-top: -48px;left: 48px;}
+.vhha4 {margin-top: -48px;left: 101px;}
+.vhha5 {margin-top: -48px;left: 149px;}
+.vhha6 {margin-top: -48px;left: 200px;}
+.vhha7 {margin-top: -48px;left: 248px;}
+.vhha8 {margin-top: -48px;left: 300px;}
+
+.vhhb3 {margin-top: -48px;left: 71px;}
+.vhhb4 {margin-top: -48px;left: 153px;}
+.vhhb5 {margin-top: -48px;left: 235px;}
+.vhhb6 {margin-top: -48px;left: 279px;}
+
+.t0 {margin-top: -20px;}
+.t1 {margin-top: -29px;}
+.t2 {margin-top: -74px;}
+
+.b1 {margin-top: -24px;}
+
+
+
+.linea-canto.ast-vsoislaluzdelmundo::after {
+ 
+    content: "*";
+    font-weight: bold;
+    font-size: 0.7em;
+    color: var(--chord-color);
+    top: 0px;
+    position: absolute;
+}
+
+
+/*jte ohcieloslloveddeloalto*/
+.jte {
+    margin-top: -52px;
+    left: 165px;
+}
+
+.nonegrita, .normal {
+    font-weight: normal;
+}
+
+.ttgray {
+    font-variant: petite-caps;
+    left: -35px;
+}
+
+.nSpace {
+    margin-bottom: -25px
+}
+
+
+@media (min-width: 384px){
+    .sn1, .sn2, .sn3 {margin-top: -36px;}
+    .sn1{left: 92px;}
+    .sn2{left: 108px;}
+    .sn3{left: 233px;}
+
+    .sn1a, .sn2a, .sn3a {margin-top: -42px;}
+    .sn1a{left: 122px;}
+    .sn2a{left: 146px;}
+    .sn3a{left: 312px;}
+
+
+
+
+    .ttgray {
+        left: -29px;
+        font-size: medium;
+    }
+
+    .sub{margin-top: -42px;}
+    .ssem{left:195px;margin-top: -41px;}
+    .sangre{left: 93px;}
+}
+
+@media (min-width: 768px){
+    .sn1, .sn2, .sn3 {margin-top: -78px;}
+    .sn1{left: 235px;}
+    .sn2{left: 280px;}
+    .sn3{left: 594px;}
+
+    .sn1a, .sn2a, .sn3a {margin-top: -78px;}
+    .sn1a{left: 225px;}
+    .sn2a{left: 266px;}
+    .sn3a{left: 576px;}    
+
+    .ttgray {
+        left: -35px;
+        font-size: unset;
+    }
+
+    .sub{margin-top: -76px;}
+
+    .sangre{left: 184px;}
+
+    .ssem{left:350px;margin-top: -78px;}
+
+
+}
+
+@media (min-width: 992px){
+   
+    .sn1, .sn2, .sn3 {margin-top: -52px;}
+    .sn1a, .sn2a, .sn3a {margin-top: -52px;}
+
+    .sn1{left: 158px;}
+    .sn2{left: 190px;}
+    .sn3{left: 399px;}
+
+    .sn1a{left: 158px;}
+    .sn2a{left: 190px;}
+    .sn3a{left: 399px;}
+
+    .sub{margin-top: -52px;}
+
+    /*plegariaeucaristicaiimodeloii*/
+    .sangre{left: 117px;}
+
+    .ssem{left:230px;margin-top: -52px;}
+
+
+}
+
+
+.pos1 {
+    left: 10px;
+    position: absolute;
+}
+
+.cruz2 {
+    left: 93px;
+}
+
+
+.ptop0 {
+    margin-top: -23px;
+}
