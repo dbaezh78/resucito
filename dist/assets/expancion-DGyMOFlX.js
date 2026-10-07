@@ -1,4 +1,4 @@
-import{A as e,E as t,_ as n,b as r,j as i,v as a,x as o}from"./preload-helper-B_ERXZYM.js";import"./navegador-CZIuAJQU.js";var s=[],c={songs:{}};function l(e,t=!1){let n=document.getElementById(`expansion-toast`);n&&n.remove();let r=document.createElement(`div`);r.id=`expansion-toast`,r.style.cssText=`
+import{A as e,E as t,_ as n,b as r,j as i,v as a,x as o}from"./preload-helper-B_ERXZYM.js";import"./navegador-C4_TfOBi.js";var s=[],c={songs:{}};function l(e,t=!1){let n=document.getElementById(`expansion-toast`);n&&n.remove();let r=document.createElement(`div`);r.id=`expansion-toast`,r.style.cssText=`
         position: fixed;
         bottom: 24px;
         right: 24px;

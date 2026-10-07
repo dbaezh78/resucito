@@ -218,11 +218,9 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
               <small style="color: var(--text-muted); font-size: 0.75rem;">2026</small>
             </div>
             <ul style="margin: 0; padding-left: 18px; font-size: 0.83rem; color: var(--text-color); line-height: 1.5;">
-              <li>Nueva barra de navegación inferior interactiva con accesos directos.</li>
-              <li>Personalización completa de colores normales y efectos al pasar el puntero.</li>
-              <li>Panel de cuenta emergente al estilo Google Account con control de sesión.</li>
-              <li>Preparar Cantos y opción de Actualizar la Aplicación.</li>
-              <li>Ajustes avanzados, transposición de acordes y cejilla dinámica.</li>
+              <li>Notificaciones de chat con campanilla de audio armónica y aviso toast emergente.</li>
+              <li>Sincronización instantánea de lectura de mensajes y corrección de contadores no leídos.</li>
+              <li>Optimización en apertura de cantos del visor y compatibilidad multiplataforma.</li>
             </ul>
           </div>
 
@@ -1426,9 +1424,10 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           const myEmail = user.email ? user.email.toLowerCase().trim() : '';
           let unreadUid = 0;
           let unreadEmail = 0;
+          let docUidExists = false;
           let lastKnownCantorMsgTime = Date.now();
 
-          function actualizarConteoCantor(data, origen) {
+          function actualizarConteoCantor(data, origen, exists) {
             let count = 0;
             if (data && typeof data.unreadUser === 'number' && data.unreadUser > 0) {
               const lastSender = data.lastSenderEmail ? data.lastSenderEmail.toLowerCase().trim() : '';
@@ -1436,10 +1435,16 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
                 count = data.unreadUser;
               }
             }
-            if (origen === 'uid') unreadUid = count;
-            if (origen === 'email') unreadEmail = count;
-            // Tomamos el conteo mayor para no perder notificaciones de UID o de email
-            currentChatUnreadCount = Math.max(unreadUid, unreadEmail);
+            if (origen === 'uid') {
+              unreadUid = count;
+              if (exists) docUidExists = true;
+            }
+            if (origen === 'email') {
+              unreadEmail = count;
+            }
+
+            // Si el documento por UID existe (canal oficial activo), es la única fuente autoritativa
+            currentChatUnreadCount = docUidExists ? unreadUid : unreadEmail;
             renderizarBadgesChat();
 
             // Detectar si ha llegado un mensaje nuevo en tiempo real del Administrador
@@ -1453,7 +1458,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           }
 
           const unsub1 = onSnapshot(doc(db, 'support_chats', user.uid), (docSnap) => {
-            actualizarConteoCantor(docSnap.exists() ? docSnap.data() : null, 'uid');
+            actualizarConteoCantor(docSnap.exists() ? docSnap.data() : null, 'uid', docSnap.exists());
           }, (err) => {
             console.warn('Aviso escuchando chat usuario por uid:', err);
           });
@@ -1461,7 +1466,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
           let unsub2 = null;
           if (cleanEmailId && cleanEmailId !== user.uid) {
             unsub2 = onSnapshot(doc(db, 'support_chats', cleanEmailId), (docSnap) => {
-              actualizarConteoCantor(docSnap.exists() ? docSnap.data() : null, 'email');
+              actualizarConteoCantor(docSnap.exists() ? docSnap.data() : null, 'email', docSnap.exists());
             }, () => {
               // Silenciosamente ignorar si las reglas de Firestore restringen el doc por email
             });

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v363'; // v2.1.28 Fix TypeError activeCustomPlaylist al abrir cantos
+const CACHE_NAME = 'resucito-cache-v364'; // v2.1.29 Notificaciones de chat con audio, toast, y corrección en sincronización de leídos
 const STATIC_ASSETS = [
   './',
   'index.html',

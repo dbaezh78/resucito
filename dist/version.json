@@ -1,10 +1,11 @@
 {
-  "latestVersion": "2.1.28",
+  "latestVersion": "2.1.29",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.28)",
-  "updateMessage": "Botón minimizado 'Encargado de Canto' con modal flotante en Perfil para optimizar el espacio.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.29)",
+  "updateMessage": "Notificaciones interactivas de chat con sonido, banner toast, HTML5 y corrección en sincronización de mensajes leídos.",
   "releaseNotes": [
-    "Mensaje de asignación de encargado en Perfil reemplazado por botón compacto 'Encargado de Canto'.",
-    "Apertura de ventana flotante con el texto completo y acceso directo a chat de soporte."
+    "Sistema completo de notificaciones de soporte con campanilla de audio armónica y aviso toast emergente.",
+    "Sincronización instantánea de lectura de mensajes y corrección de contadores no leídos.",
+    "Optimización en carga y apertura de cantos del visor."
   ]
 }

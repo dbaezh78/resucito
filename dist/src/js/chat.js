@@ -376,6 +376,7 @@ function seleccionarChat(chat) {
   if (canViewAllChats && chat.userEmail) {
     const cleanEmail = chat.userEmail.toLowerCase().trim().replace(/[^a-zA-Z0-9_-]/g, "_");
     if (cleanEmail && cleanEmail !== activeChatId) {
+      updateDoc(doc(db, 'support_chats', cleanEmail), { unreadUser: 0, unreadAdmin: 0 }).catch(() => {});
       getDocs(collection(db, 'support_chats', cleanEmail, 'messages')).then((snap) => {
         if (!snap.empty) {
           snap.forEach((mDoc) => {
@@ -412,9 +413,6 @@ function puedeMarcarComoLeido() {
   if (document.hidden || document.visibilityState !== 'visible') {
     return false;
   }
-  if (typeof document.hasFocus === 'function') {
-    return document.hasFocus();
-  }
   return true;
 }
 
@@ -427,7 +425,7 @@ async function marcarMensajesComoLeidosActivos() {
 
   isMarkingAsRead = true;
   try {
-    // 1. Limpiar el contador no leído en la cabecera del chat activo sólo si es mayor a 0
+    // 1. Limpiar el contador no leído en la cabecera del chat activo
     if (canViewAllChats) {
       if (currentActiveChatHeader && typeof currentActiveChatHeader.unreadAdmin === 'number' && currentActiveChatHeader.unreadAdmin > 0) {
         await updateDoc(doc(db, 'support_chats', activeChatId), { unreadAdmin: 0 }).catch(() => {});
@@ -436,9 +434,9 @@ async function marcarMensajesComoLeidosActivos() {
         }
       }
     } else {
-      if (currentActiveChatHeader && typeof currentActiveChatHeader.unreadUser === 'number' && currentActiveChatHeader.unreadUser > 0) {
-        await updateDoc(doc(db, 'support_chats', activeChatId), { unreadUser: 0 }).catch(() => {});
-      }
+      // Para el cantor en chat.html: resetear unreadUser a 0 en Firestore inmediatamente
+      await updateDoc(doc(db, 'support_chats', activeChatId), { unreadUser: 0 }).catch(() => {});
+      if (currentActiveChatHeader) currentActiveChatHeader.unreadUser = 0;
     }
 
     // 2. Marcar como leídos únicamente los mensajes pendientes del otro interlocutor (read === false explícito)
@@ -512,6 +510,9 @@ function escucharMensajesDeChat(chatId) {
   unsubscribeChatHeader = onSnapshot(doc(db, 'support_chats', chatId), (docSnap) => {
     if (docSnap.exists()) {
       currentActiveChatHeader = docSnap.data();
+      if (!canViewAllChats && currentActiveChatHeader && currentActiveChatHeader.unreadUser > 0 && puedeMarcarComoLeido()) {
+        marcarMensajesComoLeidosActivos();
+      }
       if (lastRenderedMessages && lastRenderedMessages.length > 0) {
         renderizarMensajes(lastRenderedMessages);
       }
@@ -1249,12 +1250,24 @@ function setupDomEvents() {
   document.getElementById('btn-close-lightbox')?.addEventListener('click', cerrarModales);
   document.getElementById('wa-lightbox')?.addEventListener('click', cerrarModales);
 
-  // Marcar mensajes como leídos cuando el usuario vuelve o enfoca la ventana
+  // Marcar mensajes como leídos cuando el usuario vuelve, enfoca o interactúa con el chat
   window.addEventListener('focus', () => {
     marcarMensajesComoLeidosActivos();
   });
 
   document.addEventListener('visibilitychange', () => {
+    if (puedeMarcarComoLeido()) {
+      marcarMensajesComoLeidosActivos();
+    }
+  });
+
+  document.getElementById('wa-messages-area')?.addEventListener('click', () => {
+    if (puedeMarcarComoLeido()) {
+      marcarMensajesComoLeidosActivos();
+    }
+  });
+
+  document.getElementById('chat-input-text')?.addEventListener('focus', () => {
     if (puedeMarcarComoLeido()) {
       marcarMensajesComoLeidosActivos();
     }
