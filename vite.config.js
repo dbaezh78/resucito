@@ -28,7 +28,8 @@ export default defineConfig({
         privacidad: path.resolve(__dirname, 'privacidad.html'),
         chat: path.resolve(__dirname, 'chat.html'),
         parroquia: path.resolve(__dirname, 'parroquia.html'),
-        datosparroquia: path.resolve(__dirname, 'datosparroquia.html')
+        datosparroquia: path.resolve(__dirname, 'datosparroquia.html'),
+        seucaristico: path.resolve(__dirname, 'seucaristico.html')
       }
     }
   },

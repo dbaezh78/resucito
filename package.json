@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build && node copy_assets.cjs",
     "preview": "vite preview",
-    "pull-positions": "node pull_positions.js"
+    "pull-positions": "node pull_positions.js",
+    "sync-seucaristia": "node scripts/sync_firebase_seucaristia.cjs"
   },
   "devDependencies": {
     "vite": "^8.1.1"

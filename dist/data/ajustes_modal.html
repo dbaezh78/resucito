@@ -1258,6 +1258,10 @@
               <span class="material-symbols-outlined" style="font-size: 1.15rem;">auto_stories</span>
               Catequesis
             </button>
+            <button class="canto-subtab-btn" data-subtab="eucaristia" id="canto-subtab-eucaristia-btn" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border: none; background: none; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s;">
+              <span class="material-symbols-outlined" style="font-size: 1.15rem;">local_bar</span>
+              Eucaristía
+            </button>
           </div>
 
           <!-- Contenido Submódulo: Canto -->
@@ -1613,6 +1617,58 @@
               <div id="catequesis-import-status" style="display: none; margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 600;"></div>
             </div>
           </div><!-- Fin de canto-submodule-catequesis-content -->
+
+          <!-- Contenido Submódulo: Eucaristía -->
+          <div id="canto-submodule-eucaristia-content" class="canto-submodule-panel" style="display: none;">
+            <div style="margin-bottom: 16px;">
+              <h4 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                <span class="material-symbols-outlined" style="color: var(--accent-color);">local_bar</span>
+                Salmos de la Eucaristía
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">
+                Configura el origen de datos de los salmos eucarísticos (almacenamiento local o en la nube de Firebase) y gestiona su sincronización.
+              </p>
+            </div>
+
+            <!-- Fila Origen de Datos: Local vs Firebase -->
+            <div class="setting-row" style="padding: 12px 0; border-bottom: 1px solid var(--panel-border);">
+              <div class="setting-label">
+                <h4>Cargar desde Firebase Cloud</h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">
+                  Desactivado: usa archivos locales (por defecto). Activado: consulta salmos actualizados en Firebase Firestore.
+                </p>
+              </div>
+              <div class="setting-control" style="display: flex; align-items: center; gap: 10px;">
+                <span id="eucaristia-source-label" style="font-size: 0.8rem; font-weight: 700; color: var(--text-color);">Local</span>
+                <label class="switch">
+                  <input type="checkbox" id="toggle-eucaristia-firebase-source">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Sincronización, Formulario Web y Descarga -->
+            <div style="background: var(--input-bg); border: 1.5px solid var(--panel-border); border-radius: 12px; padding: 16px; margin-top: 16px;">
+              <h5 style="margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 700; display: flex; align-items: center; gap: 8px; color: var(--text-color);">
+                <span class="material-symbols-outlined" style="color: var(--accent-color);">sync</span>
+                Gestión y Descarga de Salmos Eucarísticos
+              </h5>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.4;">
+                Accede al formulario web interactivo para crear, editar y subir salmos a Firebase, o descarga directamente los cambios actualizados a tu ruta local.
+              </p>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                <a href="./seucaristico.html" class="btn theme-btn" style="padding: 8px 16px; font-size: 0.85rem; font-weight: 700; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: #fff;">
+                  <span class="material-symbols-outlined" style="font-size: 1.2rem;">edit_note</span>
+                  Abrir Formulario de Salmos (seucaristico.html)
+                </a>
+                <button id="btn-sync-eucaristia-download" class="btn" style="padding: 8px 16px; font-size: 0.85rem; font-weight: 700; border-radius: 8px; background: var(--panel-bg); border: 1px solid var(--panel-border); color: var(--text-color); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+                  <span class="material-symbols-outlined" style="font-size: 1.2rem;">cloud_download</span>
+                  Descargar desde Firebase
+                </button>
+              </div>
+              <div id="eucaristia-sync-status" style="display: none; margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 600;"></div>
+            </div>
+          </div><!-- Fin de canto-submodule-eucaristia-content -->
         </div>
 
         <!-- Panel Usuario (con Submódulos Cuenta y Acceso) -->

@@ -1893,15 +1893,17 @@ window.initAjustes = async function() {
     const cantoSubtabCantoBtn = document.getElementById('canto-subtab-canto-btn');
     const cantoSubtabLiturgiaBtn = document.getElementById('canto-subtab-liturgia-btn');
     const cantoSubtabCatequesisBtn = document.getElementById('canto-subtab-catequesis-btn');
+    const cantoSubtabEucaristiaBtn = document.getElementById('canto-subtab-eucaristia-btn');
 
     if (cantoSubtabCantoBtn) cantoSubtabCantoBtn.style.display = canViewSongCanto ? 'inline-flex' : 'none';
     if (cantoSubtabLiturgiaBtn) cantoSubtabLiturgiaBtn.style.display = canViewSongLiturgia ? 'inline-flex' : 'none';
     if (cantoSubtabCatequesisBtn) cantoSubtabCatequesisBtn.style.display = canViewSongCatequesis ? 'inline-flex' : 'none';
+    if (cantoSubtabEucaristiaBtn) cantoSubtabEucaristiaBtn.style.display = 'inline-flex';
 
     // Si el submódulo activo de Canto ya no está disponible, seleccionar el primero disponible
     const activeCantoSubtab = document.querySelector('.canto-subtab-btn.active');
     if (activeCantoSubtab && activeCantoSubtab.style.display === 'none') {
-      const firstAvailableCantoBtn = [cantoSubtabCantoBtn, cantoSubtabLiturgiaBtn, cantoSubtabCatequesisBtn].find(b => b && b.style.display !== 'none');
+      const firstAvailableCantoBtn = [cantoSubtabCantoBtn, cantoSubtabLiturgiaBtn, cantoSubtabCatequesisBtn, cantoSubtabEucaristiaBtn].find(b => b && b.style.display !== 'none');
       if (firstAvailableCantoBtn) {
         firstAvailableCantoBtn.click();
       }
@@ -3775,14 +3777,73 @@ window.initAjustes = async function() {
     const cantoContent = document.getElementById('canto-submodule-canto-content');
     const liturgiaContent = document.getElementById('canto-submodule-liturgia-content');
     const catequesisContent = document.getElementById('canto-submodule-catequesis-content');
+    const eucaristiaContent = document.getElementById('canto-submodule-eucaristia-content');
     if (cantoContent) cantoContent.style.display = submodule === 'canto' ? 'block' : 'none';
     if (liturgiaContent) liturgiaContent.style.display = submodule === 'liturgia' ? 'block' : 'none';
     if (catequesisContent) catequesisContent.style.display = submodule === 'catequesis' ? 'block' : 'none';
+    if (eucaristiaContent) eucaristiaContent.style.display = submodule === 'eucaristia' ? 'block' : 'none';
 
     if (submodule === 'liturgia') {
       window.refreshLiturgiaStatus();
     } else if (submodule === 'catequesis') {
       window.initCatequesisVoiceSettings();
+    } else if (submodule === 'eucaristia') {
+      window.initEucaristiaSettingsUI();
+    }
+  };
+
+  window.initEucaristiaSettingsUI = function() {
+    const toggle = document.getElementById('toggle-eucaristia-firebase-source');
+    const label = document.getElementById('eucaristia-source-label');
+    const btnDownload = document.getElementById('btn-sync-eucaristia-download');
+    const statusBox = document.getElementById('eucaristia-sync-status');
+    if (!toggle) return;
+
+    const currentSource = localStorage.getItem('resucito_eucaristia_source') || 'local';
+    toggle.checked = (currentSource === 'firebase');
+    if (label) {
+      label.textContent = toggle.checked ? 'Firebase (Nube)' : 'Local';
+      label.style.color = toggle.checked ? 'var(--accent-color)' : 'var(--text-color)';
+    }
+
+    toggle.onchange = function() {
+      const isCloud = toggle.checked;
+      const newSource = isCloud ? 'firebase' : 'local';
+      localStorage.setItem('resucito_eucaristia_source', newSource);
+      if (label) {
+        label.textContent = isCloud ? 'Firebase (Nube)' : 'Local';
+        label.style.color = isCloud ? 'var(--accent-color)' : 'var(--text-color)';
+      }
+
+      window.salmosEucaristiaCargados = false;
+      window.salmosEucaristiaList = [];
+
+      if (window.showToast) {
+        window.showToast(`Fuente de Eucaristía: ${isCloud ? 'Firebase Cloud' : 'Almacenamiento Local'}`);
+      }
+
+      if (typeof window.cargarSalmosEucaristia === 'function') {
+        window.cargarSalmosEucaristia().then(() => {
+          if (typeof window.handleSearchAndFilters === 'function') {
+            window.handleSearchAndFilters();
+          }
+        });
+      }
+    };
+
+    if (btnDownload) {
+      btnDownload.onclick = function() {
+        if (statusBox) {
+          statusBox.style.display = 'block';
+          statusBox.style.background = 'rgba(16, 185, 129, 0.1)';
+          statusBox.style.color = '#059669';
+          statusBox.innerHTML = `
+            <div><strong>Sincronización de Salmos:</strong> Puedes descargar los salmos actualizados en ZIP desde 
+            <a href="./seucaristico.html" style="color: var(--accent-color); font-weight: bold; text-decoration: underline;">seucaristico.html</a> 
+            o ejecutando en la consola de tu PC: <code>node scripts/sync_firebase_seucaristia.cjs</code>.</div>
+          `;
+        }
+      };
     }
   };
 

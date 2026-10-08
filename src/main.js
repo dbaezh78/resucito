@@ -526,6 +526,69 @@ export async function cargarSalmosEucaristia() {
   if (salmosEucaristiaCargados && salmosEucaristiaList.length > 0) {
     return salmosEucaristiaList;
   }
+
+  const isFirebaseMode = (typeof localStorage !== 'undefined') && localStorage.getItem('resucito_eucaristia_source') === 'firebase';
+  if (isFirebaseMode) {
+    try {
+      console.log('🔄 [Eucaristía] Modo Firebase activo: cargando salmos desde Firebase Firestore...');
+      const { db, collection, getDocs } = await import('./firebase.js');
+      const cloudItems = [];
+      
+      // 1. Intentar colecciones agrupadas por ciclo (optimizado: 7 lecturas)
+      try {
+        const ciclosSnap = await getDocs(collection(db, 'salmos_eucaristia_ciclos'));
+        if (!ciclosSnap.empty) {
+          ciclosSnap.forEach(d => {
+            const data = d.data();
+            if (Array.isArray(data.items)) {
+              cloudItems.push(...data.items);
+            }
+          });
+        }
+      } catch (eCiclos) {
+        console.debug('No se pudieron leer ciclos agrupados de Firebase:', eCiclos);
+      }
+
+      // 2. Si no hay agrupados, consultar colección individual
+      if (cloudItems.length === 0) {
+        const salmosSnap = await getDocs(collection(db, 'salmos_eucaristia'));
+        if (!salmosSnap.empty) {
+          salmosSnap.forEach(d => {
+            cloudItems.push({ id: d.id, ...d.data() });
+          });
+        }
+      }
+
+      if (cloudItems.length > 0) {
+        const combined = [];
+        const seen = new Set();
+        cloudItems.forEach(item => {
+          if (item && item.id && !seen.has(item.id)) {
+            seen.add(item.id);
+            combined.push(item);
+            loadedSongsCache[item.id] = item;
+          }
+        });
+        salmosEucaristiaList = combined;
+        salmosEucaristiaCargados = true;
+        console.log(`✅ [Firebase] ${salmosEucaristiaList.length} salmos eucarísticos cargados desde Firebase Cloud.`);
+
+        if (Array.isArray(allSongs)) {
+          salmosEucaristiaList.forEach(s => {
+            if (!allSongs.some(existing => existing.id === s.id)) {
+              allSongs.push(s);
+            }
+          });
+        }
+        return salmosEucaristiaList;
+      } else {
+        console.warn('⚠️ [Firebase] No se encontraron salmos en Firebase. Usando almacenamiento local como respaldo.');
+      }
+    } catch (fbErr) {
+      console.warn('⚠️ [Firebase] Error al cargar salmos de la nube. Usando respaldo local:', fbErr);
+    }
+  }
+
   try {
     const files = ['cicloa.json', 'ciclob.json', 'cicloc.json', 'anopar.json', 'anoimpar.json', 'ferias.json', 'santos.json'];
     const responses = await Promise.all(
