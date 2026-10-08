@@ -27,6 +27,7 @@ const STATIC_ASSETS = [
   'src/js/parroquia.js',
   'src/css/datosparroquia.css',
   'src/js/datosparroquia.js',
+  'src/css/seucaristico.css',
   'src/js/perfil.js',
   'src/lib/jszip.min.js',
   'src/bitacora.css',
