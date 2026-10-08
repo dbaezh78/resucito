@@ -1,15 +1,15 @@
 {
-  "id": "seuc_17",
-  "title": "Segundo domingo de Cuaresma",
-  "celebracion": "Segundo domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 26, 1. 7-8a. 8b-9abc. 13-14 (R.: la)",
-  "salmo": "Salmo responsorial: Salmo 26, 1. 7-8a. 8b-9abc. 13-14 (R.: la)",
-  "ciclo": "Ciclo C",
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nEscúchame, Señor, que te llamo;\nten piedad, respóndeme.\nOigo en mi corazón: «Buscad mi rostro». R.\n\nTu rostro buscaré, Señor,\nno me escondas tu rostro.\nNo rechaces con ira a tu siervo,\nque tú eres mi auxilio. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
+  "sourceBook": "eucaristia",
+  "searchPool": "segundo domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 26 1 7 8a 8b 9abc 13 14 r la r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r escuchame senor que te llamo ten piedad respondeme oigo en mi corazon buscad mi rostro r tu rostro buscare senor no me escondas tu rostro no rechaces con ira a tu siervo que tu eres mi auxilio r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
   "tiempo": "Cuaresma",
-  "dia": "Domingo",
-  "orden": 302,
-  "respuesta": "R. El Señor es mi luz y mi salvación.",
+  "stage": "Liturgia",
   "respuestaOpcional": "",
+  "ciclo": "Ciclo C",
+  "respuesta": "R. El Señor es mi luz y mi salvación.",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 26, 1. 7-8a. 8b-9abc. 13-14 (R.: la)",
+  "celebracion": "Segundo domingo de Cuaresma",
   "estrofas": [
     [
       "El Señor es mi luz y mi salvación,",
@@ -35,12 +35,12 @@
       "ten ánimo, espera en el Señor. R."
     ]
   ],
-  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nEscúchame, Señor, que te llamo;\nten piedad, respóndeme.\nOigo en mi corazón: «Buscad mi rostro». R.\n\nTu rostro buscaré, Señor,\nno me escondas tu rostro.\nNo rechaces con ira a tu siervo,\nque tú eres mi auxilio. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "orden": 302,
+  "title": "Segundo domingo de Cuaresma",
+  "dia": "Domingo",
   "hasAudio": false,
-  "searchPool": "segundo domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 26 1 7 8a 8b 9abc 13 14 r la r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r escuchame senor que te llamo ten piedad respondeme oigo en mi corazon buscad mi rostro r tu rostro buscare senor no me escondas tu rostro no rechaces con ira a tu siervo que tu eres mi auxilio r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "id": "seuc_17",
+  "salmo": "Salmo responsorial: Salmo 26, 1. 7-8a. 8b-9abc. 13-14 (R.: la)",
   "lizq": [
     {
       "line": "R. El Señor es mi luz y mi salvación.",
@@ -51,36 +51,36 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es mi luz y mi salvación,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es mi luz y mi salvación,"
     },
     {
       "line": "¿a quién temeré?",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor es la defensa de mi vida,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor es la defensa de mi vida,"
     },
     {
-      "line": "¿quién me hará temblar? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "¿quién me hará temblar? R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Escúchame, Señor, que te llamo;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Escúchame, Señor, que te llamo;"
     },
     {
       "line": "ten piedad, respóndeme.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Oigo en mi corazón: «Buscad mi rostro». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Oigo en mi corazón: «Buscad mi rostro». R."
     },
     {
       "line": "",
@@ -103,8 +103,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Espero gozar de la dicha del Señor",
@@ -115,8 +115,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Espera en el Señor, sé valiente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Espera en el Señor, sé valiente,"
     },
     {
       "line": "ten ánimo, espera en el Señor. R.",

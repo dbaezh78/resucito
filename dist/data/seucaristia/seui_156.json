@@ -1,15 +1,4 @@
 {
-  "id": "seui_156",
-  "title": "Sábado de la 26ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 26ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 68, 33-35. 36-37 (R.: 34a)",
-  "salmo": "Salmo responsorial: Salmo 68, 33-35. 36-37 (R.: 34a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5266,
-  "respuesta": "R. El Señor escucha a los pobres.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Miradlo, los humildes, y alegraos,",
@@ -27,12 +16,8 @@
       "los que aman su nombre vivirán en ella. R."
     ]
   ],
-  "textoCompleto": "Miradlo, los humildes, y alegraos,\nbuscad al Señor, y vivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos.\nAlábenlo el cielo y la tierra,\nlas aguas y cuanto bulle en ellas. R.\n\nEl Señor salvará a Sión,\nreconstruirá las ciudades de Judá,\ny las habitarán en posesión.\nLa estirpe de sus siervos la heredará,\nlos que aman su nombre vivirán en ella. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 26 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 68 33 35 36 37 r 34a semana 26 semana xxvi sabado 26 xxvi r el senor escucha a los pobres miradlo los humildes y alegraos buscad al senor y vivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos alabenlo el cielo y la tierra las aguas y cuanto bulle en ellas r el senor salvara a sion reconstruira las ciudades de juda y las habitaran en posesion la estirpe de sus siervos la heredara los que aman su nombre viviran en ella r",
+  "respuesta": "R. El Señor escucha a los pobres.",
+  "celebracion": "Sábado de la 26ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. El Señor escucha a los pobres.",
@@ -43,8 +28,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Miradlo, los humildes, y alegraos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Miradlo, los humildes, y alegraos,"
     },
     {
       "line": "buscad al Señor, y vivirá vuestro corazón.",
@@ -59,20 +44,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Alábenlo el cielo y la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Alábenlo el cielo y la tierra,"
     },
     {
-      "line": "las aguas y cuanto bulle en ellas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "las aguas y cuanto bulle en ellas. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "El Señor salvará a Sión,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor salvará a Sión,"
     },
     {
       "line": "reconstruirá las ciudades de Judá,",
@@ -90,5 +75,20 @@
       "line": "los que aman su nombre vivirán en ella. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Sábado",
+  "stage": "Liturgia",
+  "orden": 5266,
+  "ciclo": "Año Impar",
+  "searchPool": "sabado de la 26 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 68 33 35 36 37 r 34a semana 26 semana xxvi sabado 26 xxvi r el senor escucha a los pobres miradlo los humildes y alegraos buscad al senor y vivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos alabenlo el cielo y la tierra las aguas y cuanto bulle en ellas r el senor salvara a sion reconstruira las ciudades de juda y las habitaran en posesion la estirpe de sus siervos la heredara los que aman su nombre viviran en ella r",
+  "id": "seui_156",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 68, 33-35. 36-37 (R.: 34a)",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "title": "Sábado de la 26ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 68, 33-35. 36-37 (R.: 34a)",
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Miradlo, los humildes, y alegraos,\nbuscad al Señor, y vivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos.\nAlábenlo el cielo y la tierra,\nlas aguas y cuanto bulle en ellas. R.\n\nEl Señor salvará a Sión,\nreconstruirá las ciudades de Judá,\ny las habitarán en posesión.\nLa estirpe de sus siervos la heredará,\nlos que aman su nombre vivirán en ella. R."
 }

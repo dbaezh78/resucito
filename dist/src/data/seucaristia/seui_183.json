@@ -1,15 +1,14 @@
 {
-  "id": "seui_183",
-  "title": "Miércoles de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 31ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 111, 1-2. 4-5. 9 (R.: 5a)",
-  "salmo": "Salmo responsorial: Salmo 111, 1-2. 4-5. 9 (R.: 5a)",
-  "ciclo": "Año Impar",
+  "catCanto": "Salmo Eucaristía",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
+  "title": "Miércoles de la 31ª semana de Tiempo Ordinario",
+  "searchPool": "miercoles de la 31 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 111 1 2 4 5 9 r 5a semana 31 semana xxxi miercoles 31 xxxi r dichoso el que se apiada y presta r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en las tinieblas brilla como una luz el que es justo clemente y compasivo dichoso el que se apiada y presta y administra rectamente sus asuntos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r",
+  "id": "seui_183",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
   "orden": 5313,
-  "respuesta": "R. Dichoso el que se apiada y presta.",
-  "respuestaOpcional": "R. Aleluya.",
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 111, 1-2. 4-5. 9 (R.: 5a)",
   "estrofas": [
     [
       "Dichoso quien teme al Señor",
@@ -29,20 +28,20 @@
       "y alzará la frente con dignidad. R."
     ]
   ],
+  "dia": "Miércoles",
+  "subtitle": "Salmo responsorial: Salmo 111, 1-2. 4-5. 9 (R.: 5a)",
+  "celebracion": "Miércoles de la 31ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "R. Aleluya.",
   "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo.\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "miercoles de la 31 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 111 1 2 4 5 9 r 5a semana 31 semana xxxi miercoles 31 xxxi r dichoso el que se apiada y presta r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en las tinieblas brilla como una luz el que es justo clemente y compasivo dichoso el que se apiada y presta y administra rectamente sus asuntos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r",
   "lizq": [
     {
       "line": "R. Dichoso el que se apiada y presta.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -65,40 +64,40 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Su linaje será poderoso en la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Su linaje será poderoso en la tierra,"
     },
     {
       "line": "la descendencia del justo será bendita. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "En las tinieblas brilla como una luz",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "el que es justo, clemente y compasivo.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el que es justo, clemente y compasivo."
     },
     {
       "line": "Dichoso el que se apiada y presta,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y administra rectamente sus asuntos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y administra rectamente sus asuntos. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Reparte limosna a los pobres;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Reparte limosna a los pobres;"
     },
     {
       "line": "su caridad es constante, sin falta,",
@@ -108,5 +107,6 @@
       "line": "y alzará la frente con dignidad. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. Dichoso el que se apiada y presta."
 }

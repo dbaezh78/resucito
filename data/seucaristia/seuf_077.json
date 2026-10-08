@@ -1,10 +1,110 @@
 {
+  "respuesta": "R. El Señor es mi luz y mi salvación.",
   "id": "seuf_077",
-  "title": "Lunes santo",
-  "celebracion": "Lunes santo",
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿Quién me hará temblar? R.\n\nSi un ejército acampa contra mí,\nmi corazón no tiembla;\nsi me declaran la guerra,\nme siento tranquilo. R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida; gozar de la dulzura del Señor\ncontemplando su templo. R.\n\nÉl me protegerá en su tienda\nel día del peligro;\nme esconderá en lo escondido de su morada,\nme alzará sobre la roca. R.",
+  "tiempo": "Cuaresma",
   "subtitle": "Salmo 26, 1. 2. 3. 13-14 (R.: 1a)",
-  "salmo": "Salmo 26, 1. 2. 3. 13-14 (R.: 1a)",
+  "dia": "Lunes",
+  "searchPool": "lunes santo ciclo a ciclo b ciclo c ciclo a b y c cuaresma lunes salmo 26 1 2 3 13 14 r 1a lunes feria r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r si un ejercito acampa contra mi mi corazon no tiembla si me declaran la guerra me siento tranquilo r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r el me protegera en su tienda el dia del peligro me escondera en lo escondido de su morada me alzara sobre la roca r",
+  "title": "Lunes santo",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "celebracion": "Lunes santo",
+  "sourceBook": "eucaristia",
+  "orden": 371,
+  "lizq": [
+    {
+      "line": "R. El Señor es mi luz y mi salvación.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es mi luz y mi salvación,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿a quién temeré?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor es la defensa de mi vida,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "¿Quién me hará temblar? R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Si un ejército acampa contra mí,"
+    },
+    {
+      "line": "mi corazón no tiembla;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "si me declaran la guerra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me siento tranquilo. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Una cosa pido al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "eso buscaré:"
+    },
+    {
+      "line": "habitar en la casa del Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por los días de mi vida; gozar de la dulzura del Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "contemplando su templo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él me protegerá en su tienda",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el día del peligro;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me esconderá en lo escondido de su morada,"
+    },
+    {
+      "line": "me alzará sobre la roca. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "ciclo": "Ciclo A, B y C",
+  "salmo": "Salmo 26, 1. 2. 3. 13-14 (R.: 1a)",
+  "catCanto": "Salmo Eucaristía",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,10 +112,6 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Lunes",
-  "orden": 371,
-  "respuesta": "R. El Señor es mi luz y mi salvación.",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -43,101 +139,5 @@
       "me esconderá en lo escondido de su morada,",
       "me alzará sobre la roca. R."
     ]
-  ],
-  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿Quién me hará temblar? R.\n\nSi un ejército acampa contra mí,\nmi corazón no tiembla;\nsi me declaran la guerra,\nme siento tranquilo. R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida; gozar de la dulzura del Señor\ncontemplando su templo. R.\n\nÉl me protegerá en su tienda\nel día del peligro;\nme esconderá en lo escondido de su morada,\nme alzará sobre la roca. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes santo ciclo a ciclo b ciclo c ciclo a b y c cuaresma lunes salmo 26 1 2 3 13 14 r 1a lunes feria r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r si un ejercito acampa contra mi mi corazon no tiembla si me declaran la guerra me siento tranquilo r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r el me protegera en su tienda el dia del peligro me escondera en lo escondido de su morada me alzara sobre la roca r",
-  "lizq": [
-    {
-      "line": "R. El Señor es mi luz y mi salvación.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es mi luz y mi salvación,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "¿a quién temeré?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor es la defensa de mi vida,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿Quién me hará temblar? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Si un ejército acampa contra mí,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "mi corazón no tiembla;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "si me declaran la guerra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me siento tranquilo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Una cosa pido al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "eso buscaré:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "habitar en la casa del Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "por los días de mi vida; gozar de la dulzura del Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "contemplando su templo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Él me protegerá en su tienda",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el día del peligro;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me esconderá en lo escondido de su morada,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me alzará sobre la roca. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
   ]
 }

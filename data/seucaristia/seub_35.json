@@ -1,15 +1,5 @@
 {
-  "id": "seub_35",
-  "title": "Quinto domingo de Pascua",
-  "celebracion": "Quinto domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 26a)",
   "salmo": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 26a)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
-  "respuesta": "R. El Señor es mi alabanza en la gran asamblea.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Cumpliré mis votos delante de sus fieles.",
@@ -32,16 +22,22 @@
       "todo lo que hizo el Señor. R."
     ]
   ],
+  "respuesta": "R. El Señor es mi alabanza en la gran asamblea.",
   "textoCompleto": "Cumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.\n\nLo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nAnte él se postrarán las cenizas de la tumba,\nante él se inclinarán los que bajan al polvo. R.\n\nMe hará vivir para él, mi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "orden": 410,
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 26a)",
+  "tiempo": "Pascua",
+  "title": "Quinto domingo de Pascua",
+  "dia": "Domingo",
+  "celebracion": "Quinto domingo de Pascua",
+  "ciclo": "Ciclo B",
+  "sourceBook": "eucaristia",
   "searchPool": "quinto domingo de pascua ciclo b pascua domingo salmo responsorial salmo 21 26b 27 28 y 30 31 32 r 26a r el senor es mi alabanza en la gran asamblea r aleluya cumplire mis votos delante de sus fieles los desvalidos comeran hasta saciarse alabaran al senor los que lo buscan viva su corazon por siempre r lo recordaran y volveran al senor hasta de los confines del orbe en su presencia se postraran las familias de los pueblos ante el se postraran las cenizas de la tumba ante el se inclinaran los que bajan al polvo r me hara vivir para el mi descendencia le servira hablaran del senor a la generacion futura contaran su justicia al pueblo que ha de nacer todo lo que hizo el senor r",
   "lizq": [
     {
-      "line": "R. El Señor es mi alabanza en la gran asamblea.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor es mi alabanza en la gran asamblea."
     },
     {
       "line": "",
@@ -52,16 +48,16 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Cumpliré mis votos delante de sus fieles.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cumpliré mis votos delante de sus fieles."
     },
     {
       "line": "Los desvalidos comerán hasta saciarse,",
@@ -76,8 +72,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Lo recordarán y volverán al Señor",
@@ -88,8 +84,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en su presencia se postrarán",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en su presencia se postrarán"
     },
     {
       "line": "las familias de los pueblos.",
@@ -108,12 +104,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Me hará vivir para él, mi descendencia le servirá,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Me hará vivir para él, mi descendencia le servirá,"
     },
     {
-      "line": "hablarán del Señor a la generación futura,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hablarán del Señor a la generación futura,"
     },
     {
       "line": "contarán su justicia al pueblo que ha de nacer:",
@@ -123,5 +119,9 @@
       "line": "todo lo que hizo el Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "R. Aleluya.",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "id": "seub_35"
 }

@@ -1,15 +1,10 @@
 {
-  "id": "seup_119",
-  "title": "Viernes de la 20ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 20ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "stage": "Liturgia",
   "subtitle": "Salmo responsorial: Salmo 106, 2-3. 4-5. 6-7. 8-9 (R.: 1)",
-  "salmo": "Salmo responsorial: Salmo 106, 2-3. 4-5. 6-7. 8-9 (R.: 1)",
-  "ciclo": "Año Par",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5205,
-  "respuesta": "R. Dad gracias al Señor, porque es eterna su misericordia.",
-  "respuestaOpcional": "R. Aleluya.",
+  "textoCompleto": "Que lo confiesen los redimidos por el Señor,\nlos que él rescató de la mano del enemigo,\nlos que reunió de todos los países:\nnorte y sur, oriente y occidente. R.\n\nErraban por un desierto solitario,\nno encontraban el camino de ciudad habitada;\npasaban hambre y sed,\nse les iba agotando la vida. R.\n\nPero gritaron al Señor en su angustia,\ny los arrancó de la tribulación.\nLos guió por un camino derecho,\npara que llegaran a ciudad habitada. R.\n\nDen gracias al Señor por su misericordia,\npor las maravillas que hace con los hombres.\nCalmó el ansia de los sedientos,\ny a los hambrientos los colmó de bienes. R.",
+  "salmo": "Salmo responsorial: Salmo 106, 2-3. 4-5. 6-7. 8-9 (R.: 1)",
   "estrofas": [
     [
       "Que lo confiesen los redimidos por el Señor,",
@@ -36,20 +31,22 @@
       "y a los hambrientos los colmó de bienes. R."
     ]
   ],
-  "textoCompleto": "Que lo confiesen los redimidos por el Señor,\nlos que él rescató de la mano del enemigo,\nlos que reunió de todos los países:\nnorte y sur, oriente y occidente. R.\n\nErraban por un desierto solitario,\nno encontraban el camino de ciudad habitada;\npasaban hambre y sed,\nse les iba agotando la vida. R.\n\nPero gritaron al Señor en su angustia,\ny los arrancó de la tribulación.\nLos guió por un camino derecho,\npara que llegaran a ciudad habitada. R.\n\nDen gracias al Señor por su misericordia,\npor las maravillas que hace con los hombres.\nCalmó el ansia de los sedientos,\ny a los hambrientos los colmó de bienes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "viernes de la 20 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 106 2 3 4 5 6 7 8 9 r 1 semana 20 semana xx viernes 20 xx r dad gracias al senor porque es eterna su misericordia r aleluya que lo confiesen los redimidos por el senor los que el rescato de la mano del enemigo los que reunio de todos los paises norte y sur oriente y occidente r erraban por un desierto solitario no encontraban el camino de ciudad habitada pasaban hambre y sed se les iba agotando la vida r pero gritaron al senor en su angustia y los arranco de la tribulacion los guio por un camino derecho para que llegaran a ciudad habitada r den gracias al senor por su misericordia por las maravillas que hace con los hombres calmo el ansia de los sedientos y a los hambrientos los colmo de bienes r",
+  "orden": 5205,
+  "celebracion": "Viernes de la 20ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "R. Aleluya.",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Viernes de la 20ª semana de Tiempo Ordinario",
+  "respuesta": "R. Dad gracias al Señor, porque es eterna su misericordia.",
+  "ciclo": "Año Par",
   "lizq": [
     {
       "line": "R. Dad gracias al Señor,",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "porque es eterna su misericordia.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "porque es eterna su misericordia."
     },
     {
       "line": "",
@@ -72,8 +69,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "los que él rescató de la mano del enemigo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los que él rescató de la mano del enemigo,"
     },
     {
       "line": "los que reunió de todos los países:",
@@ -84,8 +81,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Erraban por un desierto solitario,",
@@ -100,24 +97,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "se les iba agotando la vida. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "se les iba agotando la vida. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Pero gritaron al Señor en su angustia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Pero gritaron al Señor en su angustia,"
     },
     {
-      "line": "y los arrancó de la tribulación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y los arrancó de la tribulación."
     },
     {
-      "line": "Los guió por un camino derecho,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Los guió por un camino derecho,"
     },
     {
       "line": "para que llegaran a ciudad habitada. R.",
@@ -128,20 +125,23 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Den gracias al Señor por su misericordia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Den gracias al Señor por su misericordia,"
     },
     {
-      "line": "por las maravillas que hace con los hombres.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por las maravillas que hace con los hombres."
     },
     {
       "line": "Calmó el ansia de los sedientos,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y a los hambrientos los colmó de bienes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y a los hambrientos los colmó de bienes. R."
     }
-  ]
+  ],
+  "sourceBook": "eucaristia",
+  "dia": "Viernes",
+  "id": "seup_119"
 }

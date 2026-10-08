@@ -1,22 +1,108 @@
 {
-  "id": "seuf_087",
+  "textoCompleto": "¿Por qué se amotinan las naciones,\ny los pueblos planean un fracaso?\nSe alían los reyes de la tierra,\nlos príncipes conspiran\ncontra el Señor y contra su Mesías:\n«Rompamos sus coyundas,\nsacudamos su yugo». R.\n\nEl que habita en el cielo sonríe,\nel Señor se burla de ellos.\nLuego les habla con ira,\nlos espanta con su cólera:\n«Yo mismo he establecido a mi rey\nen Sión, mi monte santo». R.\n\nVoy a proclamar el decreto del Señor;\nél me ha dicho:\n«Tú eres mi Hijo: yo te he engendrado hoy.\nPídemelo: te daré en herencia las naciones,\nen posesión, los confines de la tierra:\nlos gobernarás con cetro de hierro,\nlos quebrarás como jarro de loza». R.",
   "title": "Lunes de la segunda semana de Pascua",
-  "celebracion": "Lunes de la segunda semana de Pascua",
-  "subtitle": "Salmo 2, 1-3. 4-6. 7-9 (R.: cf. 12d)",
-  "salmo": "Salmo 2, 1-3. 4-6. 7-9 (R.: cf. 12d)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
+  "lizq": [
+    {
+      "line": "R. Dichosos los que se refugian en ti, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¿Por qué se amotinan las naciones,"
+    },
+    {
+      "line": "y los pueblos planean un fracaso?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Se alían los reyes de la tierra,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los príncipes conspiran"
+    },
+    {
+      "line": "contra el Señor y contra su Mesías:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Rompamos sus coyundas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sacudamos su yugo». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El que habita en el cielo sonríe,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor se burla de ellos."
+    },
+    {
+      "line": "Luego les habla con ira,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los espanta con su cólera:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "«Yo mismo he establecido a mi rey",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en Sión, mi monte santo». R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Voy a proclamar el decreto del Señor;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él me ha dicho:"
+    },
+    {
+      "line": "«Tú eres mi Hijo: yo te he engendrado hoy.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Pídemelo: te daré en herencia las naciones,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en posesión, los confines de la tierra:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los gobernarás con cetro de hierro,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los quebrarás como jarro de loza». R."
+    }
   ],
-  "tiempo": "Pascua",
-  "dia": "Lunes",
-  "orden": 421,
-  "respuesta": "R. Dichosos los que se refugian en ti, Señor.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo 2, 1-3. 4-6. 7-9 (R.: cf. 12d)",
+  "id": "seuf_087",
   "estrofas": [
     [
       "¿Por qué se amotinan las naciones,",
@@ -45,108 +131,22 @@
       "los quebrarás como jarro de loza». R."
     ]
   ],
-  "textoCompleto": "¿Por qué se amotinan las naciones,\ny los pueblos planean un fracaso?\nSe alían los reyes de la tierra,\nlos príncipes conspiran\ncontra el Señor y contra su Mesías:\n«Rompamos sus coyundas,\nsacudamos su yugo». R.\n\nEl que habita en el cielo sonríe,\nel Señor se burla de ellos.\nLuego les habla con ira,\nlos espanta con su cólera:\n«Yo mismo he establecido a mi rey\nen Sión, mi monte santo». R.\n\nVoy a proclamar el decreto del Señor;\nél me ha dicho:\n«Tú eres mi Hijo: yo te he engendrado hoy.\nPídemelo: te daré en herencia las naciones,\nen posesión, los confines de la tierra:\nlos gobernarás con cetro de hierro,\nlos quebrarás como jarro de loza». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "lunes de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua lunes salmo 2 1 3 4 6 7 9 r cf 12d semana 2 semana ii lunes feria r dichosos los que se refugian en ti senor por que se amotinan las naciones y los pueblos planean un fracaso se alian los reyes de la tierra los principes conspiran contra el senor y contra su mesias rompamos sus coyundas sacudamos su yugo r el que habita en el cielo sonrie el senor se burla de ellos luego les habla con ira los espanta con su colera yo mismo he establecido a mi rey en sion mi monte santo r voy a proclamar el decreto del senor el me ha dicho tu eres mi hijo yo te he engendrado hoy pidemelo te dare en herencia las naciones en posesion los confines de la tierra los gobernaras con cetro de hierro los quebraras como jarro de loza r",
-  "lizq": [
-    {
-      "line": "R. Dichosos los que se refugian en ti, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "¿Por qué se amotinan las naciones,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y los pueblos planean un fracaso?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Se alían los reyes de la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los príncipes conspiran",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "contra el Señor y contra su Mesías:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "«Rompamos sus coyundas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sacudamos su yugo». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El que habita en el cielo sonríe,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el Señor se burla de ellos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Luego les habla con ira,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los espanta con su cólera:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "«Yo mismo he establecido a mi rey",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en Sión, mi monte santo». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Voy a proclamar el decreto del Señor;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "él me ha dicho:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "«Tú eres mi Hijo: yo te he engendrado hoy.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Pídemelo: te daré en herencia las naciones,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en posesión, los confines de la tierra:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los gobernarás con cetro de hierro,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los quebrarás como jarro de loza». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "tiempo": "Pascua",
+  "ciclo": "Ciclo A, B y C",
+  "respuesta": "R. Dichosos los que se refugian en ti, Señor.",
+  "orden": 421,
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "celebracion": "Lunes de la segunda semana de Pascua",
+  "subtitle": "Salmo 2, 1-3. 4-6. 7-9 (R.: cf. 12d)",
+  "dia": "Lunes",
+  "hasAudio": false
 }

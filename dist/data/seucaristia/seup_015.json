@@ -1,15 +1,4 @@
 {
-  "id": "seup_015",
-  "title": "Miércoles de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 3ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 88, 4-5. 27-28. 29-30 (R.: 29a)",
-  "salmo": "Salmo responsorial: Salmo 88, 4-5. 27-28. 29-30 (R.: 29a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5033,
-  "respuesta": "R. Le mantendré eternamente mi favor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Sellé una alianza con mi elegido,",
@@ -31,20 +20,14 @@
       "y un trono duradero como el cielo. R."
     ]
   ],
-  "textoCompleto": "Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\n«Él me invocará:\n\"Tú eres mi padre,\nmi Dios, mi Roca salvadora\";\ny yo lo nombraré mi primogénito,\nexcelso entre los reyes de la tierra». R.\n\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable;\nle daré una posteridad perpetua\ny un trono duradero como el cielo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 3 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 88 4 5 27 28 29 30 r 29a semana 3 semana iii miercoles 3 iii r le mantendre eternamente mi favor selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r el me invocara tu eres mi padre mi dios mi roca salvadora y yo lo nombrare mi primogenito excelso entre los reyes de la tierra r le mantendre eternamente mi favor y mi alianza con el sera estable le dare una posteridad perpetua y un trono duradero como el cielo r",
   "lizq": [
     {
       "line": "R. Le mantendré eternamente mi favor.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Sellé una alianza con mi elegido,",
@@ -55,48 +38,48 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "«Te fundaré un linaje perpetuo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«Te fundaré un linaje perpetuo,"
     },
     {
-      "line": "edificaré tu trono para todas las edades». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "edificaré tu trono para todas las edades». R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "«Él me invocará:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Él me invocará:"
     },
     {
-      "line": "\"Tú eres mi padre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "\"Tú eres mi padre,"
     },
     {
       "line": "mi Dios, mi Roca salvadora\";",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y yo lo nombraré mi primogénito,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y yo lo nombraré mi primogénito,"
     },
     {
-      "line": "excelso entre los reyes de la tierra». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "excelso entre los reyes de la tierra». R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Le mantendré eternamente mi favor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y mi alianza con él será estable;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y mi alianza con él será estable;"
     },
     {
       "line": "le daré una posteridad perpetua",
@@ -106,5 +89,22 @@
       "line": "y un trono duradero como el cielo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Miércoles de la 3ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "stage": "Liturgia",
+  "searchPool": "miercoles de la 3 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 88 4 5 27 28 29 30 r 29a semana 3 semana iii miercoles 3 iii r le mantendre eternamente mi favor selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r el me invocara tu eres mi padre mi dios mi roca salvadora y yo lo nombrare mi primogenito excelso entre los reyes de la tierra r le mantendre eternamente mi favor y mi alianza con el sera estable le dare una posteridad perpetua y un trono duradero como el cielo r",
+  "orden": 5033,
+  "dia": "Miércoles",
+  "hasAudio": false,
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\n«Él me invocará:\n\"Tú eres mi padre,\nmi Dios, mi Roca salvadora\";\ny yo lo nombraré mi primogénito,\nexcelso entre los reyes de la tierra». R.\n\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable;\nle daré una posteridad perpetua\ny un trono duradero como el cielo. R.",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 88, 4-5. 27-28. 29-30 (R.: 29a)",
+  "respuesta": "R. Le mantendré eternamente mi favor.",
+  "sourceBook": "eucaristia",
+  "title": "Miércoles de la 3ª semana de Tiempo Ordinario",
+  "id": "seup_015",
+  "subtitle": "Salmo responsorial: Salmo 88, 4-5. 27-28. 29-30 (R.: 29a)"
 }

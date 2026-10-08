@@ -1,15 +1,5 @@
 {
-  "id": "seui_095",
-  "title": "Viernes de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
-  "salmo": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5165,
-  "respuesta": "R. Señor, tú tienes palabras de vida eterna.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "La ley del Señor es perfecta",
@@ -36,16 +26,21 @@
       "de un panal que destila. R."
     ]
   ],
-  "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLos mandatos del Señor son rectos\ny alegran el corazón;\nla norma del Señor es límpida\ny da luz a los ojos. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nMás preciosos que el oro,\nmás que el oro fino;\nmás dulces que la miel\nde un panal que destila. R.",
+  "respuestaOpcional": "",
+  "searchPool": "viernes de la 16 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 18 8 9 10 11 r jn 6 68c semana 16 semana xvi viernes 16 xvi r senor tu tienes palabras de vida eterna la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r los mandatos del senor son rectos y alegran el corazon la norma del senor es limpida y da luz a los ojos r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r mas preciosos que el oro mas que el oro fino mas dulces que la miel de un panal que destila r",
+  "title": "Viernes de la 16ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 16ª semana de Tiempo Ordinario",
   "sourceBook": "eucaristia",
+  "orden": 5165,
+  "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLos mandatos del Señor son rectos\ny alegran el corazón;\nla norma del Señor es límpida\ny da luz a los ojos. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nMás preciosos que el oro,\nmás que el oro fino;\nmás dulces que la miel\nde un panal que destila. R.",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 16 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 18 8 9 10 11 r jn 6 68c semana 16 semana xvi viernes 16 xvi r senor tu tienes palabras de vida eterna la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r los mandatos del senor son rectos y alegran el corazon la norma del senor es limpida y da luz a los ojos r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r mas preciosos que el oro mas que el oro fino mas dulces que la miel de un panal que destila r",
+  "salmo": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
+  "ciclo": "Año Impar",
   "lizq": [
     {
-      "line": "R. Señor, tú tienes palabras de vida eterna.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Señor, tú tienes palabras de vida eterna."
     },
     {
       "line": "",
@@ -72,24 +67,24 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los mandatos del Señor son rectos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los mandatos del Señor son rectos"
     },
     {
       "line": "y alegran el corazón;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "la norma del Señor es límpida",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la norma del Señor es límpida"
     },
     {
-      "line": "y da luz a los ojos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y da luz a los ojos. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "La voluntad del Señor es pura",
@@ -100,16 +95,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los mandamientos del Señor son verdaderos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los mandamientos del Señor son verdaderos"
     },
     {
       "line": "y enteramente justos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Más preciosos que el oro,",
@@ -124,8 +119,13 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "de un panal que destila. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de un panal que destila. R."
     }
-  ]
+  ],
+  "id": "seui_095",
+  "hasAudio": false,
+  "respuesta": "R. Señor, tú tienes palabras de vida eterna.",
+  "dia": "Viernes",
+  "subtitle": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 68c)"
 }

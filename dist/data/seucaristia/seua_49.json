@@ -1,15 +1,4 @@
 {
-  "id": "seua_49",
-  "title": "Domingo de la 5ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 5ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 111, 4-5. 6-7. 8a y 9 (R.: 4a)",
-  "salmo": "Salmo responsorial: Salmo 111, 4-5. 6-7. 8a y 9 (R.: 4a)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 505,
-  "respuesta": "R. El justo brilla en las tinieblas como una luz.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "En las tinieblas brilla como una luz",
@@ -30,12 +19,7 @@
       "y alzará la frente con dignidad. R."
     ]
   ],
-  "textoCompleto": "En las tinieblas brilla como una luz\nel que es justo, clemente y compasivo.\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos. R.\n\nEl justo jamás vacilará,\nsu recuerdo será perpetuo.\nNo temerá las malas noticias,\nsu corazón está firme en el Señor. R.\n\nSu corazón está seguro, sin temor.\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 5 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 111 4 5 6 7 8a y 9 r 4a r el justo brilla en las tinieblas como una luz en las tinieblas brilla como una luz el que es justo clemente y compasivo dichoso el que se apiada y presta y administra rectamente sus asuntos r el justo jamas vacilara su recuerdo sera perpetuo no temera las malas noticias su corazon esta firme en el senor r su corazon esta seguro sin temor reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r",
+  "id": "seua_49",
   "lizq": [
     {
       "line": "R. El justo brilla en las tinieblas como una luz.",
@@ -50,8 +34,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "el que es justo, clemente y compasivo.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el que es justo, clemente y compasivo."
     },
     {
       "line": "Dichoso el que se apiada y presta,",
@@ -62,44 +46,60 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El justo jamás vacilará,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "su recuerdo será perpetuo.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su recuerdo será perpetuo."
     },
     {
       "line": "No temerá las malas noticias,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "su corazón está firme en el Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su corazón está firme en el Señor. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Su corazón está seguro, sin temor.",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "Reparte limosna a los pobres;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Reparte limosna a los pobres;"
     },
     {
-      "line": "su caridad es constante, sin falta,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su caridad es constante, sin falta,"
     },
     {
       "line": "y alzará la frente con dignidad. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 111, 4-5. 6-7. 8a y 9 (R.: 4a)",
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Ciclo A",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "celebracion": "Domingo de la 5ª semana de Tiempo Ordinario",
+  "searchPool": "domingo de la 5 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 111 4 5 6 7 8a y 9 r 4a r el justo brilla en las tinieblas como una luz en las tinieblas brilla como una luz el que es justo clemente y compasivo dichoso el que se apiada y presta y administra rectamente sus asuntos r el justo jamas vacilara su recuerdo sera perpetuo no temera las malas noticias su corazon esta firme en el senor r su corazon esta seguro sin temor reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r",
+  "salmo": "Salmo responsorial: Salmo 111, 4-5. 6-7. 8a y 9 (R.: 4a)",
+  "hasAudio": false,
+  "dia": "Domingo",
+  "textoCompleto": "En las tinieblas brilla como una luz\nel que es justo, clemente y compasivo.\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos. R.\n\nEl justo jamás vacilará,\nsu recuerdo será perpetuo.\nNo temerá las malas noticias,\nsu corazón está firme en el Señor. R.\n\nSu corazón está seguro, sin temor.\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
+  "respuestaOpcional": "",
+  "title": "Domingo de la 5ª semana de Tiempo Ordinario",
+  "respuesta": "R. El justo brilla en las tinieblas como una luz.",
+  "orden": 505
 }

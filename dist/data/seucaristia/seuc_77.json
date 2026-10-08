@@ -1,15 +1,5 @@
 {
-  "id": "seuc_77",
-  "title": "Domingo de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 31ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial Salmo 144, 1-2. 8-9. 10-11. 13cd-14 (R.: cf. 1)",
-  "salmo": "Salmo responsorial Salmo 144, 1-2. 8-9. 10-11. 13cd-14 (R.: cf. 1)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 531,
-  "respuesta": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nDía tras día, te bendeciré\ny alabaré tu nombre por siempre jamás. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias,\nSeñor, que te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nEl Señor es fiel a sus palabras,\nbondadoso e todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R.",
   "estrofas": [
     [
       "Te ensalzaré, Dios mío, mi rey;",
@@ -36,12 +26,13 @@
       "endereza a los que ya se doblan. R."
     ]
   ],
-  "textoCompleto": "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nDía tras día, te bendeciré\ny alabaré tu nombre por siempre jamás. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias,\nSeñor, que te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nEl Señor es fiel a sus palabras,\nbondadoso e todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 31 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 144 1 2 8 9 10 11 13cd 14 r cf 1 r bendecire tu nombre por siempre dios mio mi rey te ensalzare dios mio mi rey bendecire tu nombre por siempre jamas dia tras dia te bendecire y alabare tu nombre por siempre jamas r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r el senor es fiel a sus palabras bondadoso e todas sus acciones el senor sostiene a los que van a caer endereza a los que ya se doblan r",
+  "subtitle": "Salmo responsorial Salmo 144, 1-2. 8-9. 10-11. 13cd-14 (R.: cf. 1)",
+  "salmo": "Salmo responsorial Salmo 144, 1-2. 8-9. 10-11. 13cd-14 (R.: cf. 1)",
+  "orden": 531,
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "title": "Domingo de la 31ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
@@ -52,72 +43,72 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Te ensalzaré, Dios mío, mi rey;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Te ensalzaré, Dios mío, mi rey;"
     },
     {
       "line": "bendeciré tu nombre por siempre jamás.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Día tras día, te bendeciré",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Día tras día, te bendeciré"
     },
     {
-      "line": "y alabaré tu nombre por siempre jamás. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y alabaré tu nombre por siempre jamás. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es clemente y misericordioso,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es clemente y misericordioso,"
     },
     {
       "line": "lento a la cólera y rico en piedad;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "el Señor es bueno con todos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor es bueno con todos,"
     },
     {
-      "line": "es cariñoso con todas sus criaturas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Que todas tus criaturas te den gracias,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Señor, que te bendigan tus fieles;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que proclamen la gloria de tu reinado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que hablen de tus hazañas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "es cariñoso con todas sus criaturas. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que todas tus criaturas te den gracias,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, que te bendigan tus fieles;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que proclamen la gloria de tu reinado,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que hablen de tus hazañas. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es fiel a sus palabras,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "bondadoso e todas sus acciones.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "bondadoso e todas sus acciones."
     },
     {
       "line": "El Señor sostiene a los que van a caer,",
@@ -127,5 +118,14 @@
       "line": "endereza a los que ya se doblan. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "searchPool": "domingo de la 31 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 144 1 2 8 9 10 11 13cd 14 r cf 1 r bendecire tu nombre por siempre dios mio mi rey te ensalzare dios mio mi rey bendecire tu nombre por siempre jamas dia tras dia te bendecire y alabare tu nombre por siempre jamas r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r el senor es fiel a sus palabras bondadoso e todas sus acciones el senor sostiene a los que van a caer endereza a los que ya se doblan r",
+  "ciclo": "Ciclo C",
+  "sourceBook": "eucaristia",
+  "id": "seuc_77",
+  "respuestaOpcional": "",
+  "celebracion": "Domingo de la 31ª semana de Tiempo Ordinario",
+  "respuesta": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
+  "stage": "Liturgia"
 }

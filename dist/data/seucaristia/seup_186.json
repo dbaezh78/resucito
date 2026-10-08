@@ -1,45 +1,12 @@
 {
-  "id": "seup_186",
-  "title": "Sábado de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 31ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 111, 1-2. 5-6. 8a y 9 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 111, 1-2. 5-6. 8a y 9 (R.: 1a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
+  "title": "Sábado de la 31ª semana de Tiempo Ordinario",
   "dia": "Sábado",
-  "orden": 5316,
-  "respuesta": "R. Dichoso quien teme al Señor.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Dichoso quien teme al Señor",
-      "y ama de corazón sus mandatos.",
-      "Su linaje será poderoso en la tierra,",
-      "la descendencia del justo será bendita. R."
-    ],
-    [
-      "Dichoso el que se apiada y presta,",
-      "administra rectamente sus asuntos.",
-      "El justo jamás vacilará,",
-      "su recuerdo será perpetuo. R."
-    ],
-    [
-      "Su corazón está seguro, sin temor.",
-      "Reparte limosna a los pobres;",
-      "su caridad es constante, sin falta,",
-      "y alzará la frente con dignidad. R."
-    ]
-  ],
-  "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nDichoso el que se apiada y presta,\nadministra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo. R.\n\nSu corazón está seguro, sin temor.\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "sabado de la 31 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 111 1 2 5 6 8a y 9 r 1a semana 31 semana xxxi sabado 31 xxxi r dichoso quien teme al senor r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r dichoso el que se apiada y presta administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo r su corazon esta seguro sin temor reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r",
   "lizq": [
     {
-      "line": "R. Dichoso quien teme al Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dichoso quien teme al Señor."
     },
     {
       "line": "",
@@ -50,8 +17,8 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
       "line": "",
@@ -62,8 +29,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y ama de corazón sus mandatos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y ama de corazón sus mandatos."
     },
     {
       "line": "Su linaje será poderoso en la tierra,",
@@ -74,8 +41,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Dichoso el que se apiada y presta,",
@@ -86,8 +53,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El justo jamás vacilará,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El justo jamás vacilará,"
     },
     {
       "line": "su recuerdo será perpetuo. R.",
@@ -113,5 +80,38 @@
       "line": "y alzará la frente con dignidad. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5316,
+  "respuestaOpcional": "R. Aleluya.",
+  "tiempo": "Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Dichoso quien teme al Señor",
+      "y ama de corazón sus mandatos.",
+      "Su linaje será poderoso en la tierra,",
+      "la descendencia del justo será bendita. R."
+    ],
+    [
+      "Dichoso el que se apiada y presta,",
+      "administra rectamente sus asuntos.",
+      "El justo jamás vacilará,",
+      "su recuerdo será perpetuo. R."
+    ],
+    [
+      "Su corazón está seguro, sin temor.",
+      "Reparte limosna a los pobres;",
+      "su caridad es constante, sin falta,",
+      "y alzará la frente con dignidad. R."
+    ]
+  ],
+  "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nDichoso el que se apiada y presta,\nadministra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo. R.\n\nSu corazón está seguro, sin temor.\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
+  "ciclo": "Año Par",
+  "respuesta": "R. Dichoso quien teme al Señor.",
+  "catCanto": "Salmo Eucaristía",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "celebracion": "Sábado de la 31ª semana de Tiempo Ordinario",
+  "searchPool": "sabado de la 31 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 111 1 2 5 6 8a y 9 r 1a semana 31 semana xxxi sabado 31 xxxi r dichoso quien teme al senor r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r dichoso el que se apiada y presta administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo r su corazon esta seguro sin temor reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r",
+  "id": "seup_186",
+  "salmo": "Salmo responsorial: Salmo 111, 1-2. 5-6. 8a y 9 (R.: 1a)"
 }

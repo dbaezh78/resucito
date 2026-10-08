@@ -1,15 +1,4 @@
 {
-  "id": "seup_126",
-  "title": "Sábado de la 21ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 21ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 32, 12-13. 18-19. 20-21 (R.: 12b)",
-  "salmo": "Salmo responsorial: Salmo 32, 12-13. 18-19. 20-21 (R.: 12b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5216,
-  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dichosa la nación cuyo Dios es el Señor,",
@@ -30,16 +19,22 @@
       "en su santo nombre confiamos. R."
     ]
   ],
-  "textoCompleto": "Dichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\ncon él se alegra nuestro corazón,\nen su santo nombre confiamos. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "dia": "Sábado",
   "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 32, 12-13. 18-19. 20-21 (R.: 12b)",
+  "salmo": "Salmo responsorial: Salmo 32, 12-13. 18-19. 20-21 (R.: 12b)",
   "searchPool": "sabado de la 21 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 32 12 13 18 19 20 21 r 12b semana 21 semana xxi sabado 21 xxi r dichoso el pueblo que el senor se escogio como heredad dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad el senor mira desde el cielo se fija en todos los hombres r los ojos del senor estan puestos en sus fieles en los que esperan en su misericordia para librar sus vidas de la muerte y reanimarlos en tiempo de hambre r nosotros aguardamos al senor el es nuestro auxilio y escudo con el se alegra nuestro corazon en su santo nombre confiamos r",
+  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
+  "textoCompleto": "Dichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\ncon él se alegra nuestro corazón,\nen su santo nombre confiamos. R.",
+  "title": "Sábado de la 21ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 21ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
   "lizq": [
     {
-      "line": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dichoso el pueblo que el Señor se escogió como heredad."
     },
     {
       "line": "",
@@ -54,8 +49,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor mira desde el cielo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor mira desde el cielo,"
     },
     {
       "line": "se fija en todos los hombres. R.",
@@ -78,28 +73,33 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y reanimarlos en tiempo de hambre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y reanimarlos en tiempo de hambre. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Nosotros aguardamos al Señor:",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "él es nuestro auxilio y escudo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él es nuestro auxilio y escudo;"
     },
     {
-      "line": "con él se alegra nuestro corazón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "con él se alegra nuestro corazón,"
     },
     {
       "line": "en su santo nombre confiamos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "orden": 5216,
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par",
+  "id": "seup_126"
 }

@@ -1,22 +1,15 @@
 {
-  "id": "seuf_004",
+  "hasAudio": false,
   "title": "Jueves de la 1ª semana de Adviento",
-  "celebracion": "Jueves de la 1ª semana de Adviento",
-  "subtitle": "Salmo 117, 1 y 8-9. 19-21. 25-27a (R/.: 26a)",
-  "salmo": "Salmo 117, 1 y 8-9. 19-21. 25-27a (R/.: 26a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Adviento",
-  "dia": "Jueves",
   "orden": 114,
-  "respuesta": "R. Bendito el que viene en nombre del Señor.",
+  "id": "seuf_004",
+  "sourceBook": "eucaristia",
   "respuestaOpcional": "R. Aleluya.",
+  "salmo": "Salmo 117, 1 y 8-9. 19-21. 25-27a (R/.: 26a)",
+  "tiempo": "Adviento",
+  "celebracion": "Jueves de la 1ª semana de Adviento",
+  "searchPool": "jueves de la 1 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento jueves salmo 117 1 y 8 9 19 21 25 27a r 26a semana 1 semana i jueves feria r bendito el que viene en nombre del senor r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia mejor es refugiarse en el senor que fiarse de los hombres mejor es refugiarse en el senor que fiarse de los jefes r abridme las puertas del triunfo y entrare para dar gracias al senor esta es la puerta del senor los vencedores entraran por ella te doy gracias porque me escuchaste y fuiste mi salvacion r senor danos la salvacion senor danos prosperidad bendito el que viene en nombre del senor os bendecimos desde la casa del senor el senor es dios el nos ilumina r",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Dad gracias al Señor porque es bueno,",
@@ -42,24 +35,18 @@
       "el Señor es Dios, él nos ilumina. R."
     ]
   ],
-  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.\n\nAbridme las puertas del triunfo,\ny entraré para dar gracias al Señor.\nEsta es la puerta del Señor:\nlos vencedores entrarán por ella.\nTe doy gracias porque me escuchaste\ny fuiste mi salvación. R.\n\nSeñor, danos la salvación;\nSeñor, danos prosperidad.\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor;\nel Señor es Dios, él nos ilumina. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 1 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento jueves salmo 117 1 y 8 9 19 21 25 27a r 26a semana 1 semana i jueves feria r bendito el que viene en nombre del senor r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia mejor es refugiarse en el senor que fiarse de los hombres mejor es refugiarse en el senor que fiarse de los jefes r abridme las puertas del triunfo y entrare para dar gracias al senor esta es la puerta del senor los vencedores entraran por ella te doy gracias porque me escuchaste y fuiste mi salvacion r senor danos la salvacion senor danos prosperidad bendito el que viene en nombre del senor os bendecimos desde la casa del senor el senor es dios el nos ilumina r",
   "lizq": [
     {
-      "line": "R. Bendito el que viene en nombre del Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Bendito el que viene en nombre del Señor."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
@@ -70,16 +57,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dad gracias al Señor porque es bueno,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dad gracias al Señor porque es bueno,"
     },
     {
       "line": "porque es eterna su misericordia.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Mejor es refugiarse en el Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Mejor es refugiarse en el Señor"
     },
     {
       "line": "que fiarse de los hombres,",
@@ -90,8 +77,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que fiarse de los jefes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que fiarse de los jefes. R."
     },
     {
       "line": "",
@@ -106,8 +93,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Esta es la puerta del Señor:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Esta es la puerta del Señor:"
     },
     {
       "line": "los vencedores entrarán por ella.",
@@ -126,24 +113,37 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Señor, danos la salvación;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Señor, danos la salvación;"
     },
     {
-      "line": "Señor, danos prosperidad.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, danos prosperidad."
     },
     {
-      "line": "Bendito el que viene en nombre del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Bendito el que viene en nombre del Señor,"
     },
     {
       "line": "os bendecimos desde la casa del Señor;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "el Señor es Dios, él nos ilumina. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "el Señor es Dios, él nos ilumina. R."
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo 117, 1 y 8-9. 19-21. 25-27a (R/.: 26a)",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "dia": "Jueves",
+  "ciclo": "Ciclo A, B y C",
+  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.\n\nAbridme las puertas del triunfo,\ny entraré para dar gracias al Señor.\nEsta es la puerta del Señor:\nlos vencedores entrarán por ella.\nTe doy gracias porque me escuchaste\ny fuiste mi salvación. R.\n\nSeñor, danos la salvación;\nSeñor, danos prosperidad.\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor;\nel Señor es Dios, él nos ilumina. R.",
+  "respuesta": "R. Bendito el que viene en nombre del Señor."
 }

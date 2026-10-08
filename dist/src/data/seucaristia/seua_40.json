@@ -1,42 +1,9 @@
 {
-  "id": "seua_40",
-  "title": "Séptimo domingo de Pascua",
-  "celebracion": "Séptimo domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 26, 1. 4. 7-8a (R.: 13)",
-  "salmo": "Salmo responsorial: Salmo 26, 1. 4. 7-8a (R.: 13)",
+  "hasAudio": false,
   "ciclo": "Ciclo A",
   "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
-  "respuesta": "R. Espero gozar de la dicha del Señor en el país de la vida.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "El Señor es mi luz y mi salvación,",
-      "¿a quién temeré?",
-      "El Señor es la defensa de mi vida,",
-      "¿quién me hará temblar? R."
-    ],
-    [
-      "Una cosa pido al Señor,",
-      "eso buscaré:",
-      "habitar en la casa del Señor",
-      "por los días de mi vida;",
-      "gozar de la dulzura del Señor,",
-      "contemplando su templo. R."
-    ],
-    [
-      "Escúchame, Señor, que te llamo;",
-      "ten piedad, respóndeme.",
-      "Oigo en mi corazón: «Buscad mi rostro». R."
-    ]
-  ],
-  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEscúchame, Señor, que te llamo;\nten piedad, respóndeme.\nOigo en mi corazón: «Buscad mi rostro». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "septimo domingo de pascua ciclo a pascua domingo salmo responsorial salmo 26 1 4 7 8a r 13 r espero gozar de la dicha del senor en el pais de la vida r aleluya el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r escuchame senor que te llamo ten piedad respondeme oigo en mi corazon buscad mi rostro r",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
       "line": "R. Espero gozar de la dicha del Señor",
@@ -67,12 +34,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "¿a quién temeré?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿a quién temeré?"
     },
     {
-      "line": "El Señor es la defensa de mi vida,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor es la defensa de mi vida,"
     },
     {
       "line": "¿quién me hará temblar? R.",
@@ -87,8 +54,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "eso buscaré:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "eso buscaré:"
     },
     {
       "line": "habitar en la casa del Señor",
@@ -115,12 +82,45 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "ten piedad, respóndeme.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ten piedad, respóndeme."
     },
     {
       "line": "Oigo en mi corazón: «Buscad mi rostro». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "id": "seua_40",
+  "respuestaOpcional": "R. Aleluya.",
+  "estrofas": [
+    [
+      "El Señor es mi luz y mi salvación,",
+      "¿a quién temeré?",
+      "El Señor es la defensa de mi vida,",
+      "¿quién me hará temblar? R."
+    ],
+    [
+      "Una cosa pido al Señor,",
+      "eso buscaré:",
+      "habitar en la casa del Señor",
+      "por los días de mi vida;",
+      "gozar de la dulzura del Señor,",
+      "contemplando su templo. R."
+    ],
+    [
+      "Escúchame, Señor, que te llamo;",
+      "ten piedad, respóndeme.",
+      "Oigo en mi corazón: «Buscad mi rostro». R."
+    ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 26, 1. 4. 7-8a (R.: 13)",
+  "salmo": "Salmo responsorial: Salmo 26, 1. 4. 7-8a (R.: 13)",
+  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Séptimo domingo de Pascua",
+  "respuesta": "R. Espero gozar de la dicha del Señor en el país de la vida.",
+  "orden": 410,
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEscúchame, Señor, que te llamo;\nten piedad, respóndeme.\nOigo en mi corazón: «Buscad mi rostro». R.",
+  "dia": "Domingo",
+  "title": "Séptimo domingo de Pascua"
 }

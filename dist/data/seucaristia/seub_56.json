@@ -1,47 +1,20 @@
 {
-  "id": "seub_56",
-  "title": "Domingo de la 14ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 14ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 122, 1-2a. 2bcd. 3-4 (R.: 2cd)",
-  "salmo": "Salmo responsorial: Salmo 122, 1-2a. 2bcd. 3-4 (R.: 2cd)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 514,
-  "respuesta": "R. Nuestros ojos están en el Señor, esperando su misericordia.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "A ti levanto mis ojos,",
-      "a ti que habitas en el cielo.",
-      "Como están los ojos de los esclavos",
-      "fijos en la manos de sus señores. R."
-    ],
-    [
-      "Como están los ojos de la esclava",
-      "fijos en las manos de su señora,",
-      "así están nuestros ojos",
-      "en el Señor, Dios nuestro,",
-      "esperando su misericordia. R."
-    ],
-    [
-      "Misericordia, Señor, misericordia,",
-      "que estamos saciados de desprecios;",
-      "nuestra alma está saciada",
-      "del sarcasmo de los satisfechos,",
-      "del desprecio de los orgullosos. R."
-    ]
-  ],
-  "textoCompleto": "A ti levanto mis ojos,\na ti que habitas en el cielo.\nComo están los ojos de los esclavos\nfijos en la manos de sus señores. R.\n\nComo están los ojos de la esclava\nfijos en las manos de su señora,\nasí están nuestros ojos\nen el Señor, Dios nuestro,\nesperando su misericordia. R.\n\nMisericordia, Señor, misericordia,\nque estamos saciados de desprecios;\nnuestra alma está saciada\ndel sarcasmo de los satisfechos,\ndel desprecio de los orgullosos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "domingo de la 14 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 122 1 2a 2bcd 3 4 r 2cd r nuestros ojos estan en el senor esperando su misericordia a ti levanto mis ojos a ti que habitas en el cielo como estan los ojos de los esclavos fijos en la manos de sus senores r como estan los ojos de la esclava fijos en las manos de su senora asi estan nuestros ojos en el senor dios nuestro esperando su misericordia r misericordia senor misericordia que estamos saciados de desprecios nuestra alma esta saciada del sarcasmo de los satisfechos del desprecio de los orgullosos r",
+  "stage": "Liturgia",
+  "dia": "Domingo",
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Nuestros ojos están en el Señor, esperando su misericordia.",
+  "textoCompleto": "A ti levanto mis ojos,\na ti que habitas en el cielo.\nComo están los ojos de los esclavos\nfijos en la manos de sus señores. R.\n\nComo están los ojos de la esclava\nfijos en las manos de su señora,\nasí están nuestros ojos\nen el Señor, Dios nuestro,\nesperando su misericordia. R.\n\nMisericordia, Señor, misericordia,\nque estamos saciados de desprecios;\nnuestra alma está saciada\ndel sarcasmo de los satisfechos,\ndel desprecio de los orgullosos. R.",
+  "id": "seub_56",
+  "ciclo": "Ciclo B",
+  "celebracion": "Domingo de la 14ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "title": "Domingo de la 14ª semana de Tiempo Ordinario",
   "lizq": [
     {
-      "line": "R. Nuestros ojos están en el Señor,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Nuestros ojos están en el Señor,"
     },
     {
       "line": "esperando su misericordia.",
@@ -80,16 +53,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "así están nuestros ojos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "así están nuestros ojos"
     },
     {
-      "line": "en el Señor, Dios nuestro,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en el Señor, Dios nuestro,"
     },
     {
-      "line": "esperando su misericordia. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "esperando su misericordia. R."
     },
     {
       "line": "",
@@ -100,20 +73,47 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que estamos saciados de desprecios;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que estamos saciados de desprecios;"
     },
     {
-      "line": "nuestra alma está saciada",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "nuestra alma está saciada"
     },
     {
       "line": "del sarcasmo de los satisfechos,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "del desprecio de los orgullosos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "del desprecio de los orgullosos. R."
     }
+  ],
+  "respuestaOpcional": "",
+  "orden": 514,
+  "subtitle": "Salmo responsorial: Salmo 122, 1-2a. 2bcd. 3-4 (R.: 2cd)",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 122, 1-2a. 2bcd. 3-4 (R.: 2cd)",
+  "estrofas": [
+    [
+      "A ti levanto mis ojos,",
+      "a ti que habitas en el cielo.",
+      "Como están los ojos de los esclavos",
+      "fijos en la manos de sus señores. R."
+    ],
+    [
+      "Como están los ojos de la esclava",
+      "fijos en las manos de su señora,",
+      "así están nuestros ojos",
+      "en el Señor, Dios nuestro,",
+      "esperando su misericordia. R."
+    ],
+    [
+      "Misericordia, Señor, misericordia,",
+      "que estamos saciados de desprecios;",
+      "nuestra alma está saciada",
+      "del sarcasmo de los satisfechos,",
+      "del desprecio de los orgullosos. R."
+    ]
   ]
 }

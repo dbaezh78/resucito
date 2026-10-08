@@ -1,15 +1,86 @@
 {
   "id": "seuc_01",
+  "respuesta": "R. A ti Señor, levanto mi alma",
+  "sourceBook": "eucaristia",
+  "orden": 101,
+  "searchPool": "domingo 1 de adviento ciclo c adviento domingo salmo responsorial salmo 24 4bc 5ab 8 9 10 y 14 r 1b r a ti senor levanto mi alma senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r las sendas del senor son misericordia y lealtad para los que guardan su alianza y sus mandatos el senor se confia con sus fieles y les da a conocer su alianza r",
   "title": "Domingo 1º de Adviento",
-  "celebracion": "Domingo 1º de Adviento",
-  "subtitle": "Salmo responsorial: Salmo 24, 4bc-5ab. 8-9. 10 y 14 (R.: 1b)",
-  "salmo": "Salmo responsorial: Salmo 24, 4bc-5ab. 8-9. 10 y 14 (R.: 1b)",
-  "ciclo": "Ciclo C",
   "tiempo": "Adviento",
   "dia": "Domingo",
-  "orden": 101,
-  "respuesta": "R. A ti Señor, levanto mi alma",
+  "salmo": "Salmo responsorial: Salmo 24, 4bc-5ab. 8-9. 10 y 14 (R.: 1b)",
+  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.\n\nLas sendas del Señor son misericordia y lealtad\npara los que guardan su alianza y sus mandatos.\nEl Señor se confía con sus fieles\ny les da a conocer su alianza. R.",
+  "hasAudio": false,
+  "stage": "Liturgia",
   "respuestaOpcional": "",
+  "ciclo": "Ciclo C",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. A ti Señor, levanto mi alma"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Señor, enséñame tus caminos,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "instrúyeme en tus sendas:"
+    },
+    {
+      "line": "haz que camine con lealtad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "enséñame, porque tú eres mi Dios y Salvador. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es bueno y es recto,"
+    },
+    {
+      "line": "y enseña el camino a los pecadores;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hace caminar a los humildes con rectitud,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "enseña su camino a los humildes. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Las sendas del Señor son misericordia y lealtad"
+    },
+    {
+      "line": "para los que guardan su alianza y sus mandatos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor se confía con sus fieles"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y les da a conocer su alianza. R."
+    }
+  ],
+  "subtitle": "Salmo responsorial: Salmo 24, 4bc-5ab. 8-9. 10 y 14 (R.: 1b)",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Señor, enséñame tus caminos,",
@@ -30,76 +101,5 @@
       "y les da a conocer su alianza. R."
     ]
   ],
-  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.\n\nLas sendas del Señor son misericordia y lealtad\npara los que guardan su alianza y sus mandatos.\nEl Señor se confía con sus fieles\ny les da a conocer su alianza. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo 1 de adviento ciclo c adviento domingo salmo responsorial salmo 24 4bc 5ab 8 9 10 y 14 r 1b r a ti senor levanto mi alma senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r las sendas del senor son misericordia y lealtad para los que guardan su alianza y sus mandatos el senor se confia con sus fieles y les da a conocer su alianza r",
-  "lizq": [
-    {
-      "line": "R. A ti Señor, levanto mi alma",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Señor, enséñame tus caminos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "instrúyeme en tus sendas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "haz que camine con lealtad;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "enséñame, porque tú eres mi Dios y Salvador. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es bueno y es recto,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y enseña el camino a los pecadores;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "hace caminar a los humildes con rectitud,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "enseña su camino a los humildes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Las sendas del Señor son misericordia y lealtad",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "para los que guardan su alianza y sus mandatos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor se confía con sus fieles",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y les da a conocer su alianza. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "celebracion": "Domingo 1º de Adviento"
 }

@@ -1,15 +1,82 @@
 {
-  "id": "seuc_44",
-  "title": "Domingo después de Pentecostés - La Santísima Trinidad",
-  "celebracion": "Domingo después de Pentecostés - La Santísima Trinidad",
-  "subtitle": "Salmo responsorial: Salmo 8, 4-5. 6-7a. 7b-9. (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 8, 4-5. 6-7a. 7b-9. (R.: 2a)",
-  "ciclo": "Ciclo C",
+  "stage": "Liturgia",
   "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 430,
-  "respuesta": "R. Señor, dueño nuestro, ¡qué admirable es tu nombre en toda la tierra!",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 8, 4-5. 6-7a. 7b-9. (R.: 2a)",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Señor, dueño nuestro,"
+    },
+    {
+      "line": "¡qué admirable es tu nombre",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "en toda la tierra!"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Cuando contemplo el cielo, obra de tus dedos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la luna y las estrellas que has creado,"
+    },
+    {
+      "line": "¿qué es el hombre, para que te acuerdes de él,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el ser humano, para darle poder? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Lo hiciste poco inferior a los ángeles,"
+    },
+    {
+      "line": "lo coronaste de gloria y dignidad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "le diste el mando sobre las obras de tus manos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Todo lo sometiste bajo sus pies:"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "rebaños de ovejas y toros,"
+    },
+    {
+      "line": "y hasta las bestias del campo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "las aves del cielo, los peces del mar,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que trazan sendas por el mar. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "estrofas": [
     [
       "Cuando contemplo el cielo, obra de tus dedos,",
@@ -30,84 +97,17 @@
       "que trazan sendas por el mar. R."
     ]
   ],
-  "textoCompleto": "Cuando contemplo el cielo, obra de tus dedos,\nla luna y las estrellas que has creado,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos. R.\n\nTodo lo sometiste bajo sus pies:\nrebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "id": "seuc_44",
+  "ciclo": "Ciclo C",
+  "respuesta": "R. Señor, dueño nuestro, ¡qué admirable es tu nombre en toda la tierra!",
+  "title": "Domingo después de Pentecostés - La Santísima Trinidad",
   "hasAudio": false,
+  "orden": 430,
+  "textoCompleto": "Cuando contemplo el cielo, obra de tus dedos,\nla luna y las estrellas que has creado,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos. R.\n\nTodo lo sometiste bajo sus pies:\nrebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.",
+  "respuestaOpcional": "",
   "searchPool": "domingo despues de pentecostes la santisima trinidad ciclo c pascua domingo salmo responsorial salmo 8 4 5 6 7a 7b 9 r 2a r senor dueno nuestro que admirable es tu nombre en toda la tierra cuando contemplo el cielo obra de tus dedos la luna y las estrellas que has creado que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos r todo lo sometiste bajo sus pies rebanos de ovejas y toros y hasta las bestias del campo las aves del cielo los peces del mar que trazan sendas por el mar r",
-  "lizq": [
-    {
-      "line": "R. Señor, dueño nuestro,",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "¡qué admirable es tu nombre",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "en toda la tierra!",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Cuando contemplo el cielo, obra de tus dedos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "la luna y las estrellas que has creado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿qué es el hombre, para que te acuerdes de él,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el ser humano, para darle poder? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Lo hiciste poco inferior a los ángeles,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "lo coronaste de gloria y dignidad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "le diste el mando sobre las obras de tus manos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Todo lo sometiste bajo sus pies:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "rebaños de ovejas y toros,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y hasta las bestias del campo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "las aves del cielo, los peces del mar,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que trazan sendas por el mar. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "dia": "Domingo",
+  "celebracion": "Domingo después de Pentecostés - La Santísima Trinidad",
+  "salmo": "Salmo responsorial: Salmo 8, 4-5. 6-7a. 7b-9. (R.: 2a)",
+  "sourceBook": "eucaristia"
 }

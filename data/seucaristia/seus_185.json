@@ -1,15 +1,5 @@
 {
-  "id": "seus_185",
-  "title": "LA DEDICACIÓN DE LA BASÍLICA DE LETRÁN",
-  "celebracion": "LA DEDICACIÓN DE LA BASÍLICA DE LETRÁN",
-  "subtitle": "Salmo responsorial: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)",
-  "salmo": "Salmo responsorial: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)",
-  "ciclo": "Santos",
-  "tiempo": "Noviembre",
-  "dia": "9",
   "orden": 11090,
-  "respuesta": "R. El correr de las acequias alegra la ciudad de Dios, el Altísimo consagra su morada.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dios es nuestro refugio y nuestra fuerza,",
@@ -31,72 +21,51 @@
       "pone fin a la guerra hasta el extremo del orbe. R."
     ]
   ],
+  "celebracion": "LA DEDICACIÓN DE LA BASÍLICA DE LETRÁN",
+  "ciclo": "Santos",
+  "id": "seus_185",
+  "respuesta": "R. El correr de las acequias alegra la ciudad de Dios, el Altísimo consagra su morada.",
+  "salmo": "Salmo responsorial: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)",
   "textoCompleto": "Dios es nuestro refugio y nuestra fuerza,\npoderoso defensor en el peligro.\nPor eso no tememos aunque tiemble la tierra,\ny los montes se desplomen en el mar. R.\n\nEl correr de las acequias alegra la ciudad de Dios,\nel Altísimo consagra su morada.\nTeniendo a Dios en medio, no vacila;\nDios la socorre al despuntar la aurora. R.\n\nEl Señor de los ejércitos está con nosotros,\nnuestro alcázar es el Dios de Jacob.\nVenid a ver las obras del Señor,\nlas maravillas que hace en la tierra:\npone fin a la guerra hasta el extremo del orbe. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
   "searchPool": "la dedicacion de la basilica de letran fiesta santos noviembre 9 opcion 1 salmo 45 2 3 5 6 8 9 r 5 r el correr de las acequias alegra la ciudad de dios el altisimo consagra su morada dios es nuestro refugio y nuestra fuerza poderoso defensor en el peligro por eso no tememos aunque tiemble la tierra y los montes se desplomen en el mar r el correr de las acequias alegra la ciudad de dios el altisimo consagra su morada teniendo a dios en medio no vacila dios la socorre al despuntar la aurora r el senor de los ejercitos esta con nosotros nuestro alcazar es el dios de jacob venid a ver las obras del senor las maravillas que hace en la tierra pone fin a la guerra hasta el extremo del orbe r opcion 2 salmo 83 3 4 5 y 10 11 r 2 r que deseables son tus moradas senor de los ejercitos mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre fijate oh dios en nuestro escudo mira el rostro de tu ungido r vale mas un dia en tus atrios que mil en mi casa y prefiero el umbral de la casa de dios a vivir con los malvados r opcion 3 1 cronicas 29 10 11 12 r 13b r alabamos tu nombre glorioso senor bendito eres senor dios de nuestro padre israel por los siglos de los siglos r tuyos son senor la grandeza y el poder la gloria el esplendor la majestad porque tuyo es cuanto hay en cielo y tierra tu eres rey y soberano de todo r de ti viene la riqueza y la gloria tu eres senor del universo en tu mano esta el poder y la fuerza tu engrandeces y confortas a todos r opcion 4 salmo 83 3 4 5 y 10 11 r ap 21 3b r esta es la morada de dios con los hombres mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre fijate oh dios en nuestro escudo mira el rostro de tu ungido r vale mas un dia en tus atrios que mil en mi casa y prefiero el umbral de la casa de dios a vivir con los malvados r opcion 5 1 cronicas 29 10 11 12 r 13b r alabamos tu nombre glorioso senor bendito eres senor dios de nuestro padre israel por los siglos de los siglos r tuyos son senor la grandeza y el poder la gloria el esplendor la majestad porque tuyo es cuanto hay en cielo y tierra tu eres rey y soberano de todo r de ti viene la riqueza y la gloria tu eres senor del universo en tu mano esta el poder y la fuerza tu engrandeces y confortas a todos r opcion 6 salmo 94 1 2 3 5 6 7 r 2a r entremos a la presencia del senor dandole gracias venid aclamemos al senor demos vitores a la roca que nos salva entremos a su presencia dandole gracias aclamandolo con cantos r porque el senor es un dios grande soberano de todos los dioses tiene en su mano las simas de la tierra son suyas las cumbres de los montes suyo es el mar porque el lo hizo la tierra firme que modelaron sus manos r entrad postremonos por tierra bendiciendo al senor creador nuestro porque el es nuestro dios y nosotros su pueblo el rebano que el guia r opcion 7 salmo 83 3 4 5 y 10 11 r ap 21 3b r dios estara con ellos y sera su dios mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre fijate oh dios en nuestro escudo mira el rostro de tu ungido r vale mas un dia en tus atrios que mil en mi casa y prefiero el umbral de la casa de dios a vivir con los malvados r opcion 8 salmo 121 1 2 3 4 8 9 r cf 1 r vamos alegres a la casa del senor que alegria cuando me dijeron vamos a la casa del senor ya estan pisando nuestros pies tus umbrales jerusalen r jerusalen esta fundada como ciudad bien compacta alla suben las tribus las tribus del senor segun la costumbre de israel a celebrar el nombre del senor r por mis hermanos y companeros voy a decir la paz contigo por la casa del senor nuestro dios te deseo todo bien r",
   "lizq": [
     {
-      "type": "variant-group",
-      "id": "salmo_variantes",
       "label": "Salmo Responsorial",
       "color": "var(--Rojo-Leccionario)",
+      "type": "variant-group",
       "variants": [
         {
           "id": "opt_1",
           "name": "Opción 1: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)",
-          "salmo": "Salmo responsorial: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)",
-          "subtitle": "Salmo responsorial: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)",
+          "textoCompleto": "Dios es nuestro refugio y nuestra fuerza,\npoderoso defensor en el peligro.\nPor eso no tememos aunque tiemble la tierra,\ny los montes se desplomen en el mar. R.\n\nEl correr de las acequias alegra la ciudad de Dios,\nel Altísimo consagra su morada.\nTeniendo a Dios en medio, no vacila;\nDios la socorre al despuntar la aurora. R.\n\nEl Señor de los ejércitos está con nosotros,\nnuestro alcázar es el Dios de Jacob.\nVenid a ver las obras del Señor,\nlas maravillas que hace en la tierra:\npone fin a la guerra hasta el extremo del orbe. R.",
           "respuesta": "R. El correr de las acequias alegra la ciudad de Dios, el Altísimo consagra su morada.",
           "respuestaOpcional": "",
-          "strophes": [
-            [
-              "Dios es nuestro refugio y nuestra fuerza,",
-              "poderoso defensor en el peligro.",
-              "Por eso no tememos aunque tiemble la tierra,",
-              "y los montes se desplomen en el mar. R."
-            ],
-            [
-              "El correr de las acequias alegra la ciudad de Dios,",
-              "el Altísimo consagra su morada.",
-              "Teniendo a Dios en medio, no vacila;",
-              "Dios la socorre al despuntar la aurora. R."
-            ],
-            [
-              "El Señor de los ejércitos está con nosotros,",
-              "nuestro alcázar es el Dios de Jacob.",
-              "Venid a ver las obras del Señor,",
-              "las maravillas que hace en la tierra:",
-              "pone fin a la guerra hasta el extremo del orbe. R."
-            ]
-          ],
-          "textoCompleto": "Dios es nuestro refugio y nuestra fuerza,\npoderoso defensor en el peligro.\nPor eso no tememos aunque tiemble la tierra,\ny los montes se desplomen en el mar. R.\n\nEl correr de las acequias alegra la ciudad de Dios,\nel Altísimo consagra su morada.\nTeniendo a Dios en medio, no vacila;\nDios la socorre al despuntar la aurora. R.\n\nEl Señor de los ejércitos está con nosotros,\nnuestro alcázar es el Dios de Jacob.\nVenid a ver las obras del Señor,\nlas maravillas que hace en la tierra:\npone fin a la guerra hasta el extremo del orbe. R.",
+          "subtitle": "Salmo responsorial: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)",
           "lines": [
             {
-              "line": "R. El correr de las acequias alegra la ciudad de Dios,",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. El correr de las acequias alegra la ciudad de Dios,"
             },
             {
               "line": "el Altísimo consagra su morada.",
               "sC": "salmo-linea salmo-respuesta salmo-sangria"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Dios es nuestro refugio y nuestra fuerza,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Dios es nuestro refugio y nuestra fuerza,"
             },
             {
               "line": "poderoso defensor en el peligro.",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Por eso no tememos aunque tiemble la tierra,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Por eso no tememos aunque tiemble la tierra,"
             },
             {
               "line": "y los montes se desplomen en el mar. R.",
@@ -127,8 +96,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "El Señor de los ejércitos está con nosotros,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "El Señor de los ejércitos está con nosotros,"
             },
             {
               "line": "nuestro alcázar es el Dios de Jacob.",
@@ -146,15 +115,131 @@
               "line": "pone fin a la guerra hasta el extremo del orbe. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "strophes": [
+            [
+              "Dios es nuestro refugio y nuestra fuerza,",
+              "poderoso defensor en el peligro.",
+              "Por eso no tememos aunque tiemble la tierra,",
+              "y los montes se desplomen en el mar. R."
+            ],
+            [
+              "El correr de las acequias alegra la ciudad de Dios,",
+              "el Altísimo consagra su morada.",
+              "Teniendo a Dios en medio, no vacila;",
+              "Dios la socorre al despuntar la aurora. R."
+            ],
+            [
+              "El Señor de los ejércitos está con nosotros,",
+              "nuestro alcázar es el Dios de Jacob.",
+              "Venid a ver las obras del Señor,",
+              "las maravillas que hace en la tierra:",
+              "pone fin a la guerra hasta el extremo del orbe. R."
+            ]
+          ],
+          "salmo": "Salmo responsorial: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)"
         },
         {
-          "id": "opt_2",
-          "name": "Opción 2: Salmo 83, 3. 4. 5 y 10. 11 (R.:2)",
-          "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.:2)",
-          "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.:2)",
           "respuesta": "R. ¡Qué deseables son tus moradas, Señor de los ejércitos!",
           "respuestaOpcional": "",
+          "name": "Opción 2: Salmo 83, 3. 4. 5 y 10. 11 (R.:2)",
+          "lines": [
+            {
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. ¡Qué deseables son tus moradas,"
+            },
+            {
+              "sC": "salmo-linea salmo-respuesta salmo-sangria",
+              "line": "Señor de los ejércitos!"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Mi alma se consume y anhela",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "los atrios del señor,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mi corazón y mi carne"
+            },
+            {
+              "line": "retozan por el Dios vivo. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Hasta el gorrión ha encontrado una casa"
+            },
+            {
+              "line": "la golondrina, un nido",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "donde colocar sus polluelos:",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "tus altares, Señor de los ejércitos,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Rey mío y Dios mío. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Dichosos los que viven en tu casa,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "alabándote siempre.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Fíjate, oh Dios, en nuestro Escudo,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "mira el rostro de tu Ungido. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Vale más un día en tus atrios",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "que mil en mi casa,"
+            },
+            {
+              "line": "y prefiero el umbral de la casa de Dios",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "a vivir con los malvados R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            }
+          ],
+          "textoCompleto": "Mi alma se consume y anhela\nlos atrios del señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa\nla golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nFíjate, oh Dios, en nuestro Escudo,\nmira el rostro de tu Ungido. R.\n\nVale más un día en tus atrios\nque mil en mi casa,\ny prefiero el umbral de la casa de Dios\na vivir con los malvados R.",
+          "id": "opt_2",
+          "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.:2)",
           "strophes": [
             [
               "Mi alma se consume y anhela",
@@ -182,109 +267,9 @@
               "a vivir con los malvados R."
             ]
           ],
-          "textoCompleto": "Mi alma se consume y anhela\nlos atrios del señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa\nla golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nFíjate, oh Dios, en nuestro Escudo,\nmira el rostro de tu Ungido. R.\n\nVale más un día en tus atrios\nque mil en mi casa,\ny prefiero el umbral de la casa de Dios\na vivir con los malvados R.",
-          "lines": [
-            {
-              "line": "R. ¡Qué deseables son tus moradas,",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "Señor de los ejércitos!",
-              "sC": "salmo-linea salmo-respuesta salmo-sangria"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Mi alma se consume y anhela",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "los atrios del señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "mi corazón y mi carne",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "retozan por el Dios vivo. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Hasta el gorrión ha encontrado una casa",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "la golondrina, un nido",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "donde colocar sus polluelos:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "tus altares, Señor de los ejércitos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Rey mío y Dios mío. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Dichosos los que viven en tu casa,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "alabándote siempre.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Fíjate, oh Dios, en nuestro Escudo,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "mira el rostro de tu Ungido. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Vale más un día en tus atrios",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "que mil en mi casa,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y prefiero el umbral de la casa de Dios",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "a vivir con los malvados R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.:2)"
         },
         {
-          "id": "opt_3",
-          "name": "Opción 3: 1 Crónicas 29, 10. 11. 12. (R.: 13b)",
-          "salmo": "Interleccional: 1 Crónicas 29, 10. 11. 12. (R.: 13b)",
-          "subtitle": "Interleccional: 1 Crónicas 29, 10. 11. 12. (R.: 13b)",
-          "respuesta": "R. Alabamos tu nombre glorioso, Señor.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Bendito eres, Señor,",
@@ -304,43 +289,43 @@
               "tú engrandeces y confortas a todos. R."
             ]
           ],
-          "textoCompleto": "Bendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos, R.\n\nTuyos son, Señor, la grandeza y el poder\nla gloria, el esplendor, la majestad,\nporque tuyo es cuanto hay en cielo y tierra,\ntú eres rey y soberano de todo. R.\n\nDe ti viene la riqueza y la gloria,\ntú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.",
+          "id": "opt_3",
           "lines": [
             {
-              "line": "R. Alabamos tu nombre glorioso, Señor.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Alabamos tu nombre glorioso, Señor."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Bendito eres, Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Bendito eres, Señor,"
             },
             {
               "line": "Dios de nuestro padre Israel,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "por los siglos de los siglos, R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "por los siglos de los siglos, R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Tuyos son, Señor, la grandeza y el poder",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Tuyos son, Señor, la grandeza y el poder"
             },
             {
               "line": "la gloria, el esplendor, la majestad,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "porque tuyo es cuanto hay en cielo y tierra,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "porque tuyo es cuanto hay en cielo y tierra,"
             },
             {
               "line": "tú eres rey y soberano de todo. R.",
@@ -351,8 +336,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "De ti viene la riqueza y la gloria,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "De ti viene la riqueza y la gloria,"
             },
             {
               "line": "tú eres Señor del universo,",
@@ -366,15 +351,15 @@
               "line": "tú engrandeces y confortas a todos. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "salmo": "Interleccional: 1 Crónicas 29, 10. 11. 12. (R.: 13b)",
+          "textoCompleto": "Bendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos, R.\n\nTuyos son, Señor, la grandeza y el poder\nla gloria, el esplendor, la majestad,\nporque tuyo es cuanto hay en cielo y tierra,\ntú eres rey y soberano de todo. R.\n\nDe ti viene la riqueza y la gloria,\ntú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.",
+          "name": "Opción 3: 1 Crónicas 29, 10. 11. 12. (R.: 13b)",
+          "respuestaOpcional": "",
+          "subtitle": "Interleccional: 1 Crónicas 29, 10. 11. 12. (R.: 13b)",
+          "respuesta": "R. Alabamos tu nombre glorioso, Señor."
         },
         {
-          "id": "opt_4",
-          "name": "Opción 4: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
-          "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
-          "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
-          "respuesta": "R. Ésta es la morada de Dios con los hombres.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Mi alma se consume y anhela",
@@ -402,15 +387,18 @@
               "Dios a vivir con los malvados. R."
             ]
           ],
+          "respuesta": "R. Ésta es la morada de Dios con los hombres.",
+          "name": "Opción 4: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
           "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\nla golondrina, un nido\ndonde colocar sus polluelos\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nFíjate, oh Dios, en nuestro Escudo,\nmira el rostro de tu Ungido. R.\n\nVale más un día en tus atrios\nque mil en mi casa,\ny prefiero el umbral de la casa de\nDios a vivir con los malvados. R.",
+          "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
           "lines": [
             {
               "line": "R. Ésta es la morada de Dios con los hombres.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Mi alma se consume y anhela",
@@ -433,8 +421,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Hasta el gorrión ha encontrado una casa;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Hasta el gorrión ha encontrado una casa;"
             },
             {
               "line": "la golondrina, un nido",
@@ -477,12 +465,12 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Vale más un día en tus atrios",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Vale más un día en tus atrios"
             },
             {
-              "line": "que mil en mi casa,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "que mil en mi casa,"
             },
             {
               "line": "y prefiero el umbral de la casa de",
@@ -492,15 +480,13 @@
               "line": "Dios a vivir con los malvados. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "respuestaOpcional": "",
+          "id": "opt_4",
+          "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)"
         },
         {
-          "id": "opt_5",
           "name": "Opción 5: 1 Crónicas 29, 10. 11. 12 (R.: 13b)",
-          "salmo": "Interleccional: 1 Crónicas 29, 10. 11. 12 (R.: 13b)",
-          "subtitle": "Interleccional: 1 Crónicas 29, 10. 11. 12 (R.: 13b)",
-          "respuesta": "R. Alabamos tu nombre glorioso, Señor.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Bendito eres, Señor,",
@@ -520,6 +506,8 @@
               "tú engrandeces y confortas a todos. R."
             ]
           ],
+          "respuestaOpcional": "",
+          "id": "opt_5",
           "textoCompleto": "Bendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuanto hay en cielo y tierra,\ntú eres rey y soberano de todo. R.\n\nDe ti viene la riqueza y la gloria,\ntú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.",
           "lines": [
             {
@@ -539,32 +527,32 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "por los siglos de los siglos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "por los siglos de los siglos. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Tuyos son, Señor, la grandeza y el poder,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Tuyos son, Señor, la grandeza y el poder,"
             },
             {
-              "line": "la gloria, el esplendor, la majestad,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "la gloria, el esplendor, la majestad,"
             },
             {
-              "line": "porque tuyo es cuanto hay en cielo y tierra,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "porque tuyo es cuanto hay en cielo y tierra,"
             },
             {
-              "line": "tú eres rey y soberano de todo. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "tú eres rey y soberano de todo. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "De ti viene la riqueza y la gloria,",
@@ -575,22 +563,19 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "en tu mano está el poder y la fuerza,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "en tu mano está el poder y la fuerza,"
             },
             {
-              "line": "tú engrandeces y confortas a todos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "tú engrandeces y confortas a todos. R."
             }
-          ]
+          ],
+          "respuesta": "R. Alabamos tu nombre glorioso, Señor.",
+          "subtitle": "Interleccional: 1 Crónicas 29, 10. 11. 12 (R.: 13b)",
+          "salmo": "Interleccional: 1 Crónicas 29, 10. 11. 12 (R.: 13b)"
         },
         {
-          "id": "opt_6",
-          "name": "Opción 6: Salmo 94, 1-2. 3-5. 6-7 (R.: 2a)",
-          "salmo": "Salmo responsorial: Salmo 94, 1-2. 3-5. 6-7 (R.: 2a)",
-          "subtitle": "Salmo responsorial: Salmo 94, 1-2. 3-5. 6-7 (R.: 2a)",
-          "respuesta": "R. Entremos a la presencia del Señor dándole gracias.",
-          "respuestaOpcional": "R. Aleluya.",
           "strophes": [
             [
               "Venid, aclamemos al Señor,",
@@ -614,23 +599,27 @@
               "el rebaño que él guía. R."
             ]
           ],
+          "respuestaOpcional": "R. Aleluya.",
+          "id": "opt_6",
           "textoCompleto": "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos. R.\n\nPorque el Señor es un Dios grande,\nsoberano de todos los dioses:\ntiene en su mano las simas de la tierra,\nson suyas las cumbres de los montes;\nsuyo es el mar, porque él lo hizo,\nla tierra firme que modelaron sus manos. R.\n\nEntrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía. R.",
+          "salmo": "Salmo responsorial: Salmo 94, 1-2. 3-5. 6-7 (R.: 2a)",
+          "name": "Opción 6: Salmo 94, 1-2. 3-5. 6-7 (R.: 2a)",
           "lines": [
             {
-              "line": "R. Entremos a la presencia del Señor dándole gracias.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Entremos a la presencia del Señor dándole gracias."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
             },
             {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Aleluya."
             },
             {
               "line": "",
@@ -641,12 +630,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "demos vítores a la Roca que nos salva;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "demos vítores a la Roca que nos salva;"
             },
             {
-              "line": "entremos a su presencia dándole gracias,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "entremos a su presencia dándole gracias,"
             },
             {
               "line": "aclamándolo con cantos. R.",
@@ -661,12 +650,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "soberano de todos los dioses:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "soberano de todos los dioses:"
             },
             {
-              "line": "tiene en su mano las simas de la tierra,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "tiene en su mano las simas de la tierra,"
             },
             {
               "line": "son suyas las cumbres de los montes;",
@@ -677,24 +666,24 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la tierra firme que modelaron sus manos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "la tierra firme que modelaron sus manos. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Entrad, postrémonos por tierra,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "bendiciendo al Señor, creador nuestro.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "bendiciendo al Señor, creador nuestro."
             },
             {
-              "line": "Porque él es nuestro Dios,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Porque él es nuestro Dios,"
             },
             {
               "line": "y nosotros su pueblo,",
@@ -704,43 +693,14 @@
               "line": "el rebaño que él guía. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "subtitle": "Salmo responsorial: Salmo 94, 1-2. 3-5. 6-7 (R.: 2a)",
+          "respuesta": "R. Entremos a la presencia del Señor dándole gracias."
         },
         {
-          "id": "opt_7",
-          "name": "Opción 7: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
           "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
-          "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
-          "respuesta": "R. Dios estará con ellos y será su Dios.",
-          "respuestaOpcional": "R. Aleluya.",
-          "strophes": [
-            [
-              "Mi alma se consume y anhela",
-              "los atrios del Señor,",
-              "mi corazón y mi carne",
-              "retozan por el Dios vivo. R."
-            ],
-            [
-              "Hasta el gorrión ha encontrado una casa;",
-              "la golondrina, un nido",
-              "donde colocar sus polluelos:",
-              "tus altares, Señor de los ejércitos,",
-              "Rey mío y Dios mío. R."
-            ],
-            [
-              "Dichosos los que viven en tu casa,",
-              "alabándote siempre.",
-              "Fíjate, oh Dios, en nuestro Escudo,",
-              "mira el rostro de tu Ungido. R."
-            ],
-            [
-              "Vale más un día en tus atrios",
-              "que mil en mi casa,",
-              "y prefiero el umbral de la casa de Dios",
-              "a vivir con los malvados. R."
-            ]
-          ],
           "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\nla golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nFíjate, oh Dios, en nuestro Escudo,\nmira el rostro de tu Ungido. R.\n\nVale más un día en tus atrios\nque mil en mi casa,\ny prefiero el umbral de la casa de Dios\na vivir con los malvados. R.",
+          "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)",
           "lines": [
             {
               "line": "R. Dios estará con ellos y será su Dios.",
@@ -755,16 +715,16 @@
               "sC": "salmo-linea salmo-obien"
             },
             {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Aleluya."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Mi alma se consume y anhela",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Mi alma se consume y anhela"
             },
             {
               "line": "los atrios del Señor,",
@@ -775,36 +735,36 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "retozan por el Dios vivo. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "retozan por el Dios vivo. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Hasta el gorrión ha encontrado una casa;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Hasta el gorrión ha encontrado una casa;"
             },
             {
-              "line": "la golondrina, un nido",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "la golondrina, un nido"
             },
             {
               "line": "donde colocar sus polluelos:",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "tus altares, Señor de los ejércitos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "tus altares, Señor de los ejércitos,"
             },
             {
               "line": "Rey mío y Dios mío. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Dichosos los que viven en tu casa,",
@@ -842,14 +802,128 @@
               "line": "a vivir con los malvados. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "respuestaOpcional": "R. Aleluya.",
+          "id": "opt_7",
+          "respuesta": "R. Dios estará con ellos y será su Dios.",
+          "strophes": [
+            [
+              "Mi alma se consume y anhela",
+              "los atrios del Señor,",
+              "mi corazón y mi carne",
+              "retozan por el Dios vivo. R."
+            ],
+            [
+              "Hasta el gorrión ha encontrado una casa;",
+              "la golondrina, un nido",
+              "donde colocar sus polluelos:",
+              "tus altares, Señor de los ejércitos,",
+              "Rey mío y Dios mío. R."
+            ],
+            [
+              "Dichosos los que viven en tu casa,",
+              "alabándote siempre.",
+              "Fíjate, oh Dios, en nuestro Escudo,",
+              "mira el rostro de tu Ungido. R."
+            ],
+            [
+              "Vale más un día en tus atrios",
+              "que mil en mi casa,",
+              "y prefiero el umbral de la casa de Dios",
+              "a vivir con los malvados. R."
+            ]
+          ],
+          "name": "Opción 7: Salmo 83, 3. 4. 5 y 10. 11 (R.: Ap 21, 3b)"
         },
         {
-          "id": "opt_8",
+          "lines": [
+            {
+              "line": "R. Vamos alegres a la casa del Señor.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
+            },
+            {
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Aleluya."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "¡Qué alegría cuando me dijeron:"
+            },
+            {
+              "line": "«Vamos a la casa del Señor»!",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Ya están pisando nuestros pies",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "tus umbrales, Jerusalén. R."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Jerusalén está fundada",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "como ciudad bien compacta."
+            },
+            {
+              "line": "Allá suben las tribus,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "las tribus del Señor,"
+            },
+            {
+              "line": "según la costumbre de Israel,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "a celebrar el nombre del Señor. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Por mis hermanos y compañeros,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "voy a decir: «La paz contigo»."
+            },
+            {
+              "line": "Por la casa del Señor, nuestro Dios,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "te deseo todo bien. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            }
+          ],
+          "textoCompleto": "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.\n\nJerusalén está fundada\ncomo ciudad bien compacta.\nAllá suben las tribus,\nlas tribus del Señor,\nsegún la costumbre de Israel,\na celebrar el nombre del Señor. R.\n\nPor mis hermanos y compañeros,\nvoy a decir: «La paz contigo».\nPor la casa del Señor, nuestro Dios,\nte deseo todo bien. R.",
           "name": "Opción 8: Salmo 121, 1-2. 3-4. 8-9 (R.: cf. 1)",
-          "salmo": "Salmo responsorial: Salmo 121, 1-2. 3-4. 8-9 (R.: cf. 1)",
-          "subtitle": "Salmo responsorial: Salmo 121, 1-2. 3-4. 8-9 (R.: cf. 1)",
-          "respuesta": "R. Vamos alegres a la casa del Señor.",
           "respuestaOpcional": "R. Aleluya.",
           "strophes": [
             [
@@ -873,95 +947,21 @@
               "te deseo todo bien. R."
             ]
           ],
-          "textoCompleto": "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.\n\nJerusalén está fundada\ncomo ciudad bien compacta.\nAllá suben las tribus,\nlas tribus del Señor,\nsegún la costumbre de Israel,\na celebrar el nombre del Señor. R.\n\nPor mis hermanos y compañeros,\nvoy a decir: «La paz contigo».\nPor la casa del Señor, nuestro Dios,\nte deseo todo bien. R.",
-          "lines": [
-            {
-              "line": "R. Vamos alegres a la casa del Señor.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
-            },
-            {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "¡Qué alegría cuando me dijeron:",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "«Vamos a la casa del Señor»!",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Ya están pisando nuestros pies",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "tus umbrales, Jerusalén. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Jerusalén está fundada",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "como ciudad bien compacta.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Allá suben las tribus,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "las tribus del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "según la costumbre de Israel,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "a celebrar el nombre del Señor. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Por mis hermanos y compañeros,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "voy a decir: «La paz contigo».",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Por la casa del Señor, nuestro Dios,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "te deseo todo bien. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "salmo": "Salmo responsorial: Salmo 121, 1-2. 3-4. 8-9 (R.: cf. 1)",
+          "id": "opt_8",
+          "subtitle": "Salmo responsorial: Salmo 121, 1-2. 3-4. 8-9 (R.: cf. 1)",
+          "respuesta": "R. Vamos alegres a la casa del Señor."
         }
-      ]
+      ],
+      "id": "salmo_variantes"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "tiempo": "Noviembre",
+  "dia": "9",
+  "catCanto": "Salmo Eucaristía",
+  "title": "LA DEDICACIÓN DE LA BASÍLICA DE LETRÁN",
+  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 45, 2-3. 5-6. 8-9 (R.: 5)"
 }

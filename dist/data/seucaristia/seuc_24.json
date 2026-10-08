@@ -1,15 +1,5 @@
 {
-  "id": "seuc_24",
-  "title": "Vigilia Pascual - Primer Salmo - Opcion 1",
-  "celebracion": "Vigilia Pascual - Primer Salmo - Opcion 1",
-  "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf.30)",
-  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf.30)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Pascua",
-  "dia": "Sábado",
   "orden": 401,
-  "respuesta": "R. Envía tu espíritu, Señor, y repuebla la faz de la tierra.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Bendice, alma mía, al Señor;",
@@ -42,12 +32,13 @@
       "¡Bendice, alma mía, al Señor! R."
     ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor;\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nAsentaste la tierra sobre sus cimientos,\ny no vacilará jamás;\nla cubriste con el manto del océano,\ny las aguas se posaron sobre las montañas. R.\n\nDe los manantiales sacas los ríos\npara que fluyan entre los montes,\njunto a ellos habitan las aves del cielo,\ny entre las frondas se oye su canto. R.\n\nDesde tu morada riegas los montes,\ny la tierra se sacia de tu acción fecunda;\nhaces brotar hierba para los ganados\ny forraje para los que sirven al hombre. R.\n\n¡Cuántas son tus obras, Señor!,\ny todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas.\n¡Bendice, alma mía, al Señor! R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "respuesta": "R. Envía tu espíritu, Señor, y repuebla la faz de la tierra.",
+  "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf.30)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "vigilia pascual primer salmo opcion 1 ciclo c pascua sabado salmo responsorial salmo 103 1 2a 5 6 10 y 12 13 14 24 y 35c r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r asentaste la tierra sobre sus cimientos y no vacilara jamas la cubriste con el manto del oceano y las aguas se posaron sobre las montanas r de los manantiales sacas los rios para que fluyan entre los montes junto a ellos habitan las aves del cielo y entre las frondas se oye su canto r desde tu morada riegas los montes y la tierra se sacia de tu accion fecunda haces brotar hierba para los ganados y forraje para los que sirven al hombre r cuantas son tus obras senor y todas las hiciste con sabiduria la tierra esta llena de tus criaturas bendice alma mia al senor r",
+  "title": "Vigilia Pascual - Primer Salmo - Opcion 1",
+  "dia": "Sábado",
+  "textoCompleto": "Bendice, alma mía, al Señor;\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nAsentaste la tierra sobre sus cimientos,\ny no vacilará jamás;\nla cubriste con el manto del océano,\ny las aguas se posaron sobre las montañas. R.\n\nDe los manantiales sacas los ríos\npara que fluyan entre los montes,\njunto a ellos habitan las aves del cielo,\ny entre las frondas se oye su canto. R.\n\nDesde tu morada riegas los montes,\ny la tierra se sacia de tu acción fecunda;\nhaces brotar hierba para los ganados\ny forraje para los que sirven al hombre. R.\n\n¡Cuántas son tus obras, Señor!,\ny todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas.\n¡Bendice, alma mía, al Señor! R.",
+  "respuestaOpcional": "",
   "lizq": [
     {
       "line": "R. Envía tu espíritu, Señor, y repuebla la faz de la tierra.",
@@ -58,8 +49,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Bendice, alma mía, al Señor;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Bendice, alma mía, al Señor;"
     },
     {
       "line": "¡Dios mío, qué grande eres!",
@@ -82,8 +73,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y no vacilará jamás;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no vacilará jamás;"
     },
     {
       "line": "la cubriste con el manto del océano,",
@@ -110,16 +101,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y entre las frondas se oye su canto. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y entre las frondas se oye su canto. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Desde tu morada riegas los montes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Desde tu morada riegas los montes,"
     },
     {
       "line": "y la tierra se sacia de tu acción fecunda;",
@@ -130,20 +121,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y forraje para los que sirven al hombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y forraje para los que sirven al hombre. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "¡Cuántas son tus obras, Señor!,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y todas las hiciste con sabiduría;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y todas las hiciste con sabiduría;"
     },
     {
       "line": "la tierra está llena de tus criaturas.",
@@ -153,5 +144,14 @@
       "line": "¡Bendice, alma mía, al Señor! R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf.30)",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "celebracion": "Vigilia Pascual - Primer Salmo - Opcion 1",
+  "ciclo": "Ciclo C",
+  "sourceBook": "eucaristia",
+  "id": "seuc_24",
+  "searchPool": "vigilia pascual primer salmo opcion 1 ciclo c pascua sabado salmo responsorial salmo 103 1 2a 5 6 10 y 12 13 14 24 y 35c r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r asentaste la tierra sobre sus cimientos y no vacilara jamas la cubriste con el manto del oceano y las aguas se posaron sobre las montanas r de los manantiales sacas los rios para que fluyan entre los montes junto a ellos habitan las aves del cielo y entre las frondas se oye su canto r desde tu morada riegas los montes y la tierra se sacia de tu accion fecunda haces brotar hierba para los ganados y forraje para los que sirven al hombre r cuantas son tus obras senor y todas las hiciste con sabiduria la tierra esta llena de tus criaturas bendice alma mia al senor r",
+  "tiempo": "Pascua"
 }

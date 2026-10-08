@@ -1,15 +1,6 @@
 {
-  "id": "seuc_43",
-  "title": "Domingo de Pentecostés",
-  "celebracion": "Domingo de Pentecostés",
   "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 24. 27-28. 29bc-30 (R.: cf. 30)",
-  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 24. 27-28. 29bc-30 (R.: cf. 30)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 430,
-  "respuesta": "R. Envía tu Espíritu, Señor, y repuebla la faz de la tierra.",
-  "respuestaOpcional": "R. Aleluya.",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Bendice, alma mía, al Señor:",
@@ -35,16 +26,20 @@
       "y repueblas la faz de la tierra. R."
     ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nCuántas son tus obras,\nSeñor, y todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas. R.\n\nTodos ellos aguardan\na que les eches comida a su tiempo;\nse la echas, y la atrapan;\nabres tu mano, y se sacian de bienes R.\n\nLes retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.",
+  "ciclo": "Ciclo C",
+  "respuesta": "R. Envía tu Espíritu, Señor, y repuebla la faz de la tierra.",
+  "dia": "Domingo",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuestaOpcional": "R. Aleluya.",
   "searchPool": "domingo de pentecostes ciclo c pascua domingo salmo responsorial salmo 103 1 2a 24 27 28 29bc 30 r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra r aleluya bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r cuantas son tus obras senor y todas las hiciste con sabiduria la tierra esta llena de tus criaturas r todos ellos aguardan a que les eches comida a su tiempo se la echas y la atrapan abres tu mano y se sacian de bienes r les retiras el aliento y expiran y vuelven a ser polvo envias tu aliento y los creas y repueblas la faz de la tierra r",
+  "tiempo": "Pascua",
+  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 24. 27-28. 29bc-30 (R.: cf. 30)",
+  "hasAudio": false,
   "lizq": [
     {
-      "line": "R. Envía tu Espíritu, Señor,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Envía tu Espíritu, Señor,"
     },
     {
       "line": "y repuebla la faz de la tierra.",
@@ -59,12 +54,12 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendice, alma mía, al Señor:",
@@ -83,8 +78,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cuántas son tus obras,",
@@ -95,8 +90,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "la tierra está llena de tus criaturas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "la tierra está llena de tus criaturas. R."
     },
     {
       "line": "",
@@ -107,8 +102,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "a que les eches comida a su tiempo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "a que les eches comida a su tiempo;"
     },
     {
       "line": "se la echas, y la atrapan;",
@@ -119,16 +114,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Les retiras el aliento, y expiran",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y vuelven a ser polvo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y vuelven a ser polvo;"
     },
     {
       "line": "envías tu aliento, y los creas,",
@@ -138,5 +133,10 @@
       "line": "y repueblas la faz de la tierra. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Bendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nCuántas son tus obras,\nSeñor, y todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas. R.\n\nTodos ellos aguardan\na que les eches comida a su tiempo;\nse la echas, y la atrapan;\nabres tu mano, y se sacian de bienes R.\n\nLes retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.",
+  "title": "Domingo de Pentecostés",
+  "celebracion": "Domingo de Pentecostés",
+  "orden": 430,
+  "id": "seuc_43"
 }

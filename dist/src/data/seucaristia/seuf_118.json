@@ -1,10 +1,5 @@
 {
   "id": "seuf_118",
-  "title": "Martes de la séptima semana de Pascua",
-  "celebracion": "Martes de la séptima semana de Pascua",
-  "subtitle": "Salmo 67, 10-11. 20-21 (R/.: 33a)",
-  "salmo": "Salmo 67, 10-11. 20-21 (R/.: 33a)",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,10 +7,70 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Martes",
-  "orden": 472,
-  "respuesta": "R. Reyes de la tierra, cantad a Dios.",
+  "hasAudio": false,
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Reyes de la tierra, cantad a Dios."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Derramaste en tu heredad, oh Dios, una lluvia copiosa,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "aliviaste la tierra extenuada;"
+    },
+    {
+      "line": "y tu rebaño habitó en la tierra",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tu bondad, oh Dios, preparó para los pobres. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Bendito el Señor cada día,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dios lleva nuestras cargas, es nuestra salvación."
+    },
+    {
+      "line": "Nuestro Dios es un Dios que salva,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "el Señor Dios nos hace escapar de la muerte. R."
+    }
+  ],
+  "celebracion": "Martes de la séptima semana de Pascua",
+  "subtitle": "Salmo 67, 10-11. 20-21 (R/.: 33a)",
+  "textoCompleto": "Derramaste en tu heredad, oh Dios, una lluvia copiosa,\naliviaste la tierra extenuada;\ny tu rebaño habitó en la tierra\nque tu bondad, oh Dios, preparó para los pobres. R.\n\nBendito el Señor cada día,\nDios lleva nuestras cargas, es nuestra salvación.\nNuestro Dios es un Dios que salva,\nel Señor Dios nos hace escapar de la muerte. R.",
+  "sourceBook": "eucaristia",
+  "title": "Martes de la séptima semana de Pascua",
   "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
@@ -31,68 +86,13 @@
       "el Señor Dios nos hace escapar de la muerte. R."
     ]
   ],
-  "textoCompleto": "Derramaste en tu heredad, oh Dios, una lluvia copiosa,\naliviaste la tierra extenuada;\ny tu rebaño habitó en la tierra\nque tu bondad, oh Dios, preparó para los pobres. R.\n\nBendito el Señor cada día,\nDios lleva nuestras cargas, es nuestra salvación.\nNuestro Dios es un Dios que salva,\nel Señor Dios nos hace escapar de la muerte. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "salmo": "Salmo 67, 10-11. 20-21 (R/.: 33a)",
+  "tiempo": "Pascua",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "ciclo": "Ciclo A, B y C",
+  "dia": "Martes",
+  "respuesta": "R. Reyes de la tierra, cantad a Dios.",
+  "orden": 472,
   "searchPool": "martes de la septima semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 67 10 11 20 21 r 33a semana 7 semana vii martes feria r reyes de la tierra cantad a dios r aleluya derramaste en tu heredad oh dios una lluvia copiosa aliviaste la tierra extenuada y tu rebano habito en la tierra que tu bondad oh dios preparo para los pobres r bendito el senor cada dia dios lleva nuestras cargas es nuestra salvacion nuestro dios es un dios que salva el senor dios nos hace escapar de la muerte r",
-  "lizq": [
-    {
-      "line": "R. Reyes de la tierra, cantad a Dios.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Derramaste en tu heredad, oh Dios, una lluvia copiosa,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "aliviaste la tierra extenuada;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y tu rebaño habitó en la tierra",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tu bondad, oh Dios, preparó para los pobres. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Bendito el Señor cada día,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Dios lleva nuestras cargas, es nuestra salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Nuestro Dios es un Dios que salva,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el Señor Dios nos hace escapar de la muerte. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "stage": "Liturgia"
 }

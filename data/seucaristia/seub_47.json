@@ -1,14 +1,7 @@
 {
-  "id": "seub_47",
-  "title": "Domingo de la 5ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 5ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 146, 1-2. 3-4. 5-6 (R.: cf. 3a)",
-  "salmo": "Salmo responsorial: Salmo 146, 1-2. 3-4. 5-6 (R.: cf. 3a)",
-  "ciclo": "Ciclo B",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 505,
-  "respuesta": "R. Alabad al Señor, que sana los corazones destrozados.",
+  "subtitle": "Salmo responsorial: Salmo 146, 1-2. 3-4. 5-6 (R.: cf. 3a)",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "R. Aleluya",
   "estrofas": [
     [
@@ -31,15 +24,12 @@
     ]
   ],
   "textoCompleto": "Alabad al Señor, que la música es buena;\nnuestro Dios merece una alabanza armoniosa.\nEl Señor reconstruye Jerusalén,\nreúne a los deportados de Israel. R.\n\nÉl sana los corazones destrozados,\nvenda sus heridas.\nCuenta el número de las estrellas,\na cada una la llama por su nombre. R.\n\nNuestro Señor es grande y poderoso,\nsu sabiduría no tiene medida.\nEl Señor sostiene a los humildes,\nhumilla hasta el polvo a los malvados. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 5 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 146 1 2 3 4 5 6 r cf 3a r alabad al senor que sana los corazones destrozados r aleluya alabad al senor que la musica es buena nuestro dios merece una alabanza armoniosa el senor reconstruye jerusalen reune a los deportados de israel r el sana los corazones destrozados venda sus heridas cuenta el numero de las estrellas a cada una la llama por su nombre r nuestro senor es grande y poderoso su sabiduria no tiene medida el senor sostiene a los humildes humilla hasta el polvo a los malvados r",
+  "salmo": "Salmo responsorial: Salmo 146, 1-2. 3-4. 5-6 (R.: cf. 3a)",
+  "orden": 505,
   "lizq": [
     {
-      "line": "R. Alabad al Señor, que sana los corazones destrozados.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Alabad al Señor, que sana los corazones destrozados."
     },
     {
       "line": "",
@@ -50,8 +40,8 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya"
     },
     {
       "line": "",
@@ -74,8 +64,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Él sana los corazones destrozados,",
@@ -106,12 +96,22 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor sostiene a los humildes,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor sostiene a los humildes,"
     },
     {
       "line": "humilla hasta el polvo a los malvados. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Domingo",
+  "title": "Domingo de la 5ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "id": "seub_47",
+  "ciclo": "Ciclo B",
+  "hasAudio": false,
+  "searchPool": "domingo de la 5 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 146 1 2 3 4 5 6 r cf 3a r alabad al senor que sana los corazones destrozados r aleluya alabad al senor que la musica es buena nuestro dios merece una alabanza armoniosa el senor reconstruye jerusalen reune a los deportados de israel r el sana los corazones destrozados venda sus heridas cuenta el numero de las estrellas a cada una la llama por su nombre r nuestro senor es grande y poderoso su sabiduria no tiene medida el senor sostiene a los humildes humilla hasta el polvo a los malvados r",
+  "celebracion": "Domingo de la 5ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "respuesta": "R. Alabad al Señor, que sana los corazones destrozados."
 }

@@ -1,15 +1,94 @@
 {
-  "id": "seup_010",
-  "title": "Jueves de la 2ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 2ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 55, 2-3. 9-10. 11-12. 13 (R.: 5bc)",
+  "orden": 5024,
+  "sourceBook": "eucaristia",
+  "respuesta": "R. En Dios confío y no temo.",
+  "stage": "Liturgia",
   "salmo": "Salmo responsorial: Salmo 55, 2-3. 9-10. 11-12. 13 (R.: 5bc)",
   "ciclo": "Año Par",
+  "hasAudio": false,
   "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5024,
-  "respuesta": "R. En Dios confío y no temo.",
-  "respuestaOpcional": "",
+  "lizq": [
+    {
+      "line": "R. En Dios confío y no temo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Misericordia, Dios mío, que me hostigan,"
+    },
+    {
+      "line": "me atacan y me acosan todo el día;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todo el día me hostigan mis enemigos,"
+    },
+    {
+      "line": "me atacan en masa. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Anota en tu libro mi vida errante,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "recoge mis lágrimas en tu odre, Dios mío."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Que retrocedan mis enemigos cuando te invoco"
+    },
+    {
+      "line": "y así sabré que eres mi Dios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "En Dios, cuya promesa alabo,"
+    },
+    {
+      "line": "en el Señor, cuya promesa alabo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en Dios confío y no temo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿qué podrá hacerme un hombre? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Te debo, Dios mío, los votos que hice;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los cumpliré con acción de gracias. R."
+    }
+  ],
+  "subtitle": "Salmo responsorial: Salmo 55, 2-3. 9-10. 11-12. 13 (R.: 5bc)",
+  "id": "seup_010",
+  "searchPool": "jueves de la 2 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 55 2 3 9 10 11 12 13 r 5bc semana 2 semana ii jueves 2 ii r en dios confio y no temo misericordia dios mio que me hostigan me atacan y me acosan todo el dia todo el dia me hostigan mis enemigos me atacan en masa r anota en tu libro mi vida errante recoge mis lagrimas en tu odre dios mio que retrocedan mis enemigos cuando te invoco y asi sabre que eres mi dios r en dios cuya promesa alabo en el senor cuya promesa alabo en dios confio y no temo que podra hacerme un hombre r te debo dios mio los votos que hice los cumplire con accion de gracias r",
+  "title": "Jueves de la 2ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Misericordia, Dios mío, que me hostigan,",
@@ -35,87 +114,8 @@
     ]
   ],
   "textoCompleto": "Misericordia, Dios mío, que me hostigan,\nme atacan y me acosan todo el día;\ntodo el día me hostigan mis enemigos,\nme atacan en masa. R.\n\nAnota en tu libro mi vida errante,\nrecoge mis lágrimas en tu odre, Dios mío.\nQue retrocedan mis enemigos cuando te invoco\ny así sabré que eres mi Dios. R.\n\nEn Dios, cuya promesa alabo,\nen el Señor, cuya promesa alabo,\nen Dios confío y no temo;\n¿qué podrá hacerme un hombre? R.\n\nTe debo, Dios mío, los votos que hice;\nlos cumpliré con acción de gracias. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 2 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 55 2 3 9 10 11 12 13 r 5bc semana 2 semana ii jueves 2 ii r en dios confio y no temo misericordia dios mio que me hostigan me atacan y me acosan todo el dia todo el dia me hostigan mis enemigos me atacan en masa r anota en tu libro mi vida errante recoge mis lagrimas en tu odre dios mio que retrocedan mis enemigos cuando te invoco y asi sabre que eres mi dios r en dios cuya promesa alabo en el senor cuya promesa alabo en dios confio y no temo que podra hacerme un hombre r te debo dios mio los votos que hice los cumplire con accion de gracias r",
-  "lizq": [
-    {
-      "line": "R. En Dios confío y no temo.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Misericordia, Dios mío, que me hostigan,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "me atacan y me acosan todo el día;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "todo el día me hostigan mis enemigos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me atacan en masa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Anota en tu libro mi vida errante,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "recoge mis lágrimas en tu odre, Dios mío.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Que retrocedan mis enemigos cuando te invoco",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y así sabré que eres mi Dios. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "En Dios, cuya promesa alabo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "en el Señor, cuya promesa alabo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en Dios confío y no temo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿qué podrá hacerme un hombre? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Te debo, Dios mío, los votos que hice;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "los cumpliré con acción de gracias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuestaOpcional": "",
+  "celebracion": "Jueves de la 2ª semana de Tiempo Ordinario",
+  "dia": "Jueves",
+  "catCanto": "Salmo Eucaristía"
 }

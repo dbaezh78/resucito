@@ -1,22 +1,13 @@
 {
-  "id": "seuf_048",
-  "title": "Viernes de la 1ª semana de Cuaresma",
-  "celebracion": "Viernes de la 1ª semana de Cuaresma",
-  "subtitle": "Salmo 129, 1-2. 3-4. 5-7a. 7bc-8 (R.: 3)",
-  "salmo": "Salmo 129, 1-2. 3-4. 5-7a. 7bc-8 (R.: 3)",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "textoCompleto": "Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos, Señor,\n¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela la aurora.\nAguarde Israel al Señor,\ncomo el centinela la aurora. R.\n\nPorque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.",
+  "searchPool": "viernes de la 1 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma viernes salmo 129 1 2 3 4 5 7a 7bc 8 r 3 semana 1 semana i viernes feria r si llevas cuenta de los delitos senor quien podra resistir desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuenta de los delitos senor quien podra resistir pero de ti procede el perdon y asi infundes respeto r mi alma espera en el senor espera en su palabra mi alma aguarda al senor mas que el centinela la aurora aguarde israel al senor como el centinela la aurora r porque del senor viene la misericordia la redencion copiosa y el redimira a israel de todos sus delitos r",
   "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Cuaresma",
-  "dia": "Viernes",
-  "orden": 315,
+  "celebracion": "Viernes de la 1ª semana de Cuaresma",
   "respuesta": "R. Si llevas cuenta de los delitos, Señor, ¿quién podrá resistir?",
-  "respuestaOpcional": "",
+  "tiempo": "Cuaresma",
   "estrofas": [
     [
       "Desde lo hondo a ti grito, Señor;",
@@ -45,12 +36,13 @@
       "de todos sus delitos. R."
     ]
   ],
-  "textoCompleto": "Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos, Señor,\n¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela la aurora.\nAguarde Israel al Señor,\ncomo el centinela la aurora. R.\n\nPorque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "id": "seuf_048",
+  "orden": 315,
+  "subtitle": "Salmo 129, 1-2. 3-4. 5-7a. 7bc-8 (R.: 3)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 1 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma viernes salmo 129 1 2 3 4 5 7a 7bc 8 r 3 semana 1 semana i viernes feria r si llevas cuenta de los delitos senor quien podra resistir desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuenta de los delitos senor quien podra resistir pero de ti procede el perdon y asi infundes respeto r mi alma espera en el senor espera en su palabra mi alma aguarda al senor mas que el centinela la aurora aguarde israel al senor como el centinela la aurora r porque del senor viene la misericordia la redencion copiosa y el redimira a israel de todos sus delitos r",
+  "respuestaOpcional": "",
+  "title": "Viernes de la 1ª semana de Cuaresma",
+  "dia": "Viernes",
   "lizq": [
     {
       "line": "R. Si llevas cuenta de los delitos, Señor,",
@@ -113,8 +105,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mi alma aguarda al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mi alma aguarda al Señor,"
     },
     {
       "line": "más que el centinela la aurora.",
@@ -133,8 +125,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Porque del Señor viene la misericordia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque del Señor viene la misericordia,"
     },
     {
       "line": "la redención copiosa;",
@@ -145,8 +137,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "de todos sus delitos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de todos sus delitos. R."
     }
-  ]
+  ],
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "salmo": "Salmo 129, 1-2. 3-4. 5-7a. 7bc-8 (R.: 3)"
 }

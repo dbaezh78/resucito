@@ -1,10 +1,7 @@
 {
-  "id": "seuf_097",
-  "title": "Viernes de la tercera semana de Pascua",
-  "celebracion": "Viernes de la tercera semana de Pascua",
-  "subtitle": "Salmo 116, 1. 2 (R.: Mc 16, 15)",
-  "salmo": "Salmo 116, 1. 2 (R.: Mc 16, 15)",
-  "ciclo": "Ciclo A, B y C",
+  "respuestaOpcional": "",
+  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
+  "hasAudio": false,
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +9,12 @@
     "Año Par",
     "Año Impar"
   ],
+  "subtitle": "Salmo 116, 1. 2 (R.: Mc 16, 15)",
+  "textoCompleto": "Alabad al Señor, todas las naciones,\naclamadlo, todos los pueblos. R.\n\nFirme es su misericordia con nosotros,\nsu fidelidad dura por siempre. R.",
   "tiempo": "Pascua",
-  "dia": "Viernes",
-  "orden": 435,
-  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
-  "respuestaOpcional": "",
+  "celebracion": "Viernes de la tercera semana de Pascua",
+  "sourceBook": "eucaristia",
+  "title": "Viernes de la tercera semana de Pascua",
   "estrofas": [
     [
       "Alabad al Señor, todas las naciones,",
@@ -27,28 +25,27 @@
       "su fidelidad dura por siempre. R."
     ]
   ],
-  "textoCompleto": "Alabad al Señor, todas las naciones,\naclamadlo, todos los pueblos. R.\n\nFirme es su misericordia con nosotros,\nsu fidelidad dura por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "orden": 435,
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "stage": "Liturgia",
   "searchPool": "viernes de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 116 1 2 r mc 16 15 semana 3 semana iii viernes feria r id al mundo entero y proclamad el evangelio aleluya alabad al senor todas las naciones aclamadlo todos los pueblos r firme es su misericordia con nosotros su fidelidad dura por siempre r",
+  "salmo": "Salmo 116, 1. 2 (R.: Mc 16, 15)",
   "lizq": [
     {
       "line": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Alabad al Señor, todas las naciones,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "aclamadlo, todos los pueblos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "aclamadlo, todos los pueblos. R."
     },
     {
       "line": "",
@@ -62,5 +59,8 @@
       "line": "su fidelidad dura por siempre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Viernes",
+  "ciclo": "Ciclo A, B y C",
+  "id": "seuf_097"
 }

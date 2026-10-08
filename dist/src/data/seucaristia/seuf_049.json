@@ -1,10 +1,81 @@
 {
-  "id": "seuf_049",
-  "title": "Sábado de la 1ª semana de Cuaresma",
-  "celebracion": "Sábado de la 1ª semana de Cuaresma",
-  "subtitle": "Salmo 118, 1-2. 4-5. 7-8 (R.: cf. 1)",
-  "salmo": "Salmo 118, 1-2. 4-5. 7-8 (R.: cf. 1)",
+  "dia": "Sábado",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "tiempo": "Cuaresma",
+  "searchPool": "sabado de la 1 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma sabado salmo 118 1 2 4 5 7 8 r cf 1 semana 1 semana i sabado feria r dichoso el que camina en la voluntad del senor dichoso el que con vida intachable camina en la voluntad del senor dichoso el que guardando sus preceptos lo busca de todo corazon r tu promulgas tus decretos para que se observen exactamente ojala este firme mi camino para cumplir tus consignas r te alabare con sincero corazon cuando aprenda tus justos mandamientos quiero guardar tus leyes exactamente tu no me abandones r",
+  "respuestaOpcional": "",
   "ciclo": "Ciclo A, B y C",
+  "lizq": [
+    {
+      "line": "R. Dichoso el que camina en la voluntad del Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Dichoso el que, con vida intachable,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "camina en la voluntad del Señor;"
+    },
+    {
+      "line": "dichoso el que, guardando sus preceptos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "lo busca de todo corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú promulgas tus decretos"
+    },
+    {
+      "line": "para que se observen exactamente.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Ojalá esté firme mi camino,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para cumplir tus consignas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Te alabaré con sincero corazón",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cuando aprenda tus justos mandamientos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Quiero guardar tus leyes exactamente,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tú, no me abandones. R."
+    }
+  ],
+  "respuesta": "R. Dichoso el que camina en la voluntad del Señor.",
+  "id": "seuf_049",
+  "hasAudio": false,
+  "orden": 316,
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +83,10 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Sábado",
-  "orden": 316,
-  "respuesta": "R. Dichoso el que camina en la voluntad del Señor.",
-  "respuestaOpcional": "",
+  "title": "Sábado de la 1ª semana de Cuaresma",
+  "celebracion": "Sábado de la 1ª semana de Cuaresma",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo 118, 1-2. 4-5. 7-8 (R.: cf. 1)",
   "estrofas": [
     [
       "Dichoso el que, con vida intachable,",
@@ -38,75 +108,5 @@
     ]
   ],
   "textoCompleto": "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor;\ndichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.\n\nTú promulgas tus decretos\npara que se observen exactamente.\nOjalá esté firme mi camino,\npara cumplir tus consignas. R.\n\nTe alabaré con sincero corazón\ncuando aprenda tus justos mandamientos.\nQuiero guardar tus leyes exactamente,\ntú, no me abandones. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 1 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma sabado salmo 118 1 2 4 5 7 8 r cf 1 semana 1 semana i sabado feria r dichoso el que camina en la voluntad del senor dichoso el que con vida intachable camina en la voluntad del senor dichoso el que guardando sus preceptos lo busca de todo corazon r tu promulgas tus decretos para que se observen exactamente ojala este firme mi camino para cumplir tus consignas r te alabare con sincero corazon cuando aprenda tus justos mandamientos quiero guardar tus leyes exactamente tu no me abandones r",
-  "lizq": [
-    {
-      "line": "R. Dichoso el que camina en la voluntad del Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichoso el que, con vida intachable,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "camina en la voluntad del Señor;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "dichoso el que, guardando sus preceptos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "lo busca de todo corazón. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tú promulgas tus decretos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "para que se observen exactamente.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Ojalá esté firme mi camino,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "para cumplir tus consignas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Te alabaré con sincero corazón",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "cuando aprenda tus justos mandamientos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Quiero guardar tus leyes exactamente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tú, no me abandones. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "salmo": "Salmo 118, 1-2. 4-5. 7-8 (R.: cf. 1)"
 }

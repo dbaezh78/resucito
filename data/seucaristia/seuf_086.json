@@ -1,22 +1,118 @@
 {
-  "id": "seuf_086",
-  "title": "Sábado de la octava de Pascua",
-  "celebracion": "Sábado de la octava de Pascua",
-  "subtitle": "Salmo 117, 1 y 14-15. 16-18. 19-21 (R.: 21a)",
-  "salmo": "Salmo 117, 1 y 14-15. 16-18. 19-21 (R.: 21a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Sábado",
-  "orden": 406,
   "respuesta": "R. Te doy gracias, Señor, porque me escuchaste.",
+  "lizq": [
+    {
+      "line": "R. Te doy gracias, Señor, porque me escuchaste.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dad gracias al Señor porque es bueno,"
+    },
+    {
+      "line": "porque es eterna su misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor es mi fuerza y mi energía,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él es mi salvación.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Escuchad: hay cantos de victoria"
+    },
+    {
+      "line": "en las tiendas de los justos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La diestra del Señor es excelsa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la diestra del Señor es poderosa.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "No he de morir, viviré",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "para contar las hazañas del Señor."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Me castigó, me castigó el Señor,"
+    },
+    {
+      "line": "pero no me entregó a la muerte. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Abridme las puertas del triunfo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y entraré para dar gracias al Señor."
+    },
+    {
+      "line": "Ésta es la puerta del Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los vencedores entraran por ella.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Te doy gracias porque me escuchaste"
+    },
+    {
+      "line": "y fuiste mi salvación. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "hasAudio": false,
+  "tiempo": "Pascua",
+  "celebracion": "Sábado de la octava de Pascua",
+  "sourceBook": "eucaristia",
   "respuestaOpcional": "R. Aleluya",
+  "searchPool": "sabado de la octava de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 117 1 y 14 15 16 18 19 21 r 21a sabado feria r te doy gracias senor porque me escuchaste r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia el senor es mi fuerza y mi energia el es mi salvacion escuchad hay cantos de victoria en las tiendas de los justos r la diestra del senor es excelsa la diestra del senor es poderosa no he de morir vivire para contar las hazanas del senor me castigo me castigo el senor pero no me entrego a la muerte r abridme las puertas del triunfo y entrare para dar gracias al senor esta es la puerta del senor los vencedores entraran por ella te doy gracias porque me escuchaste y fuiste mi salvacion r",
+  "id": "seuf_086",
+  "subtitle": "Salmo 117, 1 y 14-15. 16-18. 19-21 (R.: 21a)",
+  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nEl Señor es mi fuerza y mi energía,\nél es mi salvación.\nEscuchad: hay cantos de victoria\nen las tiendas de los justos. R.\n\nLa diestra del Señor es excelsa,\nla diestra del Señor es poderosa.\nNo he de morir, viviré\npara contar las hazañas del Señor.\nMe castigó, me castigó el Señor,\npero no me entregó a la muerte. R.\n\nAbridme las puertas del triunfo,\ny entraré para dar gracias al Señor.\nÉsta es la puerta del Señor:\nlos vencedores entraran por ella.\nTe doy gracias porque me escuchaste\ny fuiste mi salvación. R.",
+  "title": "Sábado de la octava de Pascua",
+  "dia": "Sábado",
   "estrofas": [
     [
       "Dad gracias al Señor porque es bueno,",
@@ -43,112 +139,16 @@
       "y fuiste mi salvación. R."
     ]
   ],
-  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nEl Señor es mi fuerza y mi energía,\nél es mi salvación.\nEscuchad: hay cantos de victoria\nen las tiendas de los justos. R.\n\nLa diestra del Señor es excelsa,\nla diestra del Señor es poderosa.\nNo he de morir, viviré\npara contar las hazañas del Señor.\nMe castigó, me castigó el Señor,\npero no me entregó a la muerte. R.\n\nAbridme las puertas del triunfo,\ny entraré para dar gracias al Señor.\nÉsta es la puerta del Señor:\nlos vencedores entraran por ella.\nTe doy gracias porque me escuchaste\ny fuiste mi salvación. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "ciclo": "Ciclo A, B y C",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la octava de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 117 1 y 14 15 16 18 19 21 r 21a sabado feria r te doy gracias senor porque me escuchaste r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia el senor es mi fuerza y mi energia el es mi salvacion escuchad hay cantos de victoria en las tiendas de los justos r la diestra del senor es excelsa la diestra del senor es poderosa no he de morir vivire para contar las hazanas del senor me castigo me castigo el senor pero no me entrego a la muerte r abridme las puertas del triunfo y entrare para dar gracias al senor esta es la puerta del senor los vencedores entraran por ella te doy gracias porque me escuchaste y fuiste mi salvacion r",
-  "lizq": [
-    {
-      "line": "R. Te doy gracias, Señor, porque me escuchaste.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dad gracias al Señor porque es bueno,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "porque es eterna su misericordia.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor es mi fuerza y mi energía,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él es mi salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Escuchad: hay cantos de victoria",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en las tiendas de los justos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "La diestra del Señor es excelsa,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "la diestra del Señor es poderosa.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "No he de morir, viviré",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "para contar las hazañas del Señor.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Me castigó, me castigó el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "pero no me entregó a la muerte. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Abridme las puertas del triunfo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y entraré para dar gracias al Señor.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Ésta es la puerta del Señor:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los vencedores entraran por ella.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Te doy gracias porque me escuchaste",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y fuiste mi salvación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "salmo": "Salmo 117, 1 y 14-15. 16-18. 19-21 (R.: 21a)",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "stage": "Liturgia",
+  "orden": 406
 }

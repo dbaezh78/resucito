@@ -1,60 +1,30 @@
 {
-  "id": "seup_013",
-  "title": "Lunes de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 3ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 88, 20. 21-22. 25-26 (R.: 25a)",
-  "salmo": "Salmo responsorial: Salmo 88, 20. 21-22. 25-26 (R.: 25a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5031,
-  "respuesta": "R. Mi fidelidad y misericordia lo acompañarán.",
+  "id": "seup_013",
   "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Un día hablaste en visión a tus amigos:",
-      "He ceñido la corona a un héroe,",
-      "he levantado a un soldado sobre el pueblo. R."
-    ],
-    [
-      "Encontré David mi siervo",
-      "y lo he ungido con óleo sagrado;",
-      "para que mi mano esté siempre con él",
-      "y mi brazo lo haga valeroso. R."
-    ],
-    [
-      "Mi fidelidad y misericordia lo acompañarán,",
-      "por mi nombre crecerá su poder:",
-      "extenderé su izquierda hasta el mar",
-      "y su derecha hasta el Gran Río. R."
-    ]
-  ],
-  "textoCompleto": "Un día hablaste en visión a tus amigos:\nHe ceñido la corona a un héroe,\nhe levantado a un soldado sobre el pueblo. R.\n\nEncontré David mi siervo\ny lo he ungido con óleo sagrado;\npara que mi mano esté siempre con él\ny mi brazo lo haga valeroso. R.\n\nMi fidelidad y misericordia lo acompañarán,\npor mi nombre crecerá su poder:\nextenderé su izquierda hasta el mar\ny su derecha hasta el Gran Río. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Lunes de la 3ª semana de Tiempo Ordinario",
+  "dia": "Lunes",
   "hasAudio": false,
-  "searchPool": "lunes de la 3 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 88 20 21 22 25 26 r 25a semana 3 semana iii lunes 3 iii r mi fidelidad y misericordia lo acompanaran un dia hablaste en vision a tus amigos he cenido la corona a un heroe he levantado a un soldado sobre el pueblo r encontre david mi siervo y lo he ungido con oleo sagrado para que mi mano este siempre con el y mi brazo lo haga valeroso r mi fidelidad y misericordia lo acompanaran por mi nombre crecera su poder extendere su izquierda hasta el mar y su derecha hasta el gran rio r",
   "lizq": [
     {
       "line": "R. Mi fidelidad y misericordia lo acompañarán.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Un día hablaste en visión a tus amigos:",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "He ceñido la corona a un héroe,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "He ceñido la corona a un héroe,"
     },
     {
-      "line": "he levantado a un soldado sobre el pueblo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "he levantado a un soldado sobre el pueblo. R."
     },
     {
       "line": "",
@@ -65,16 +35,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y lo he ungido con óleo sagrado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y lo he ungido con óleo sagrado;"
     },
     {
       "line": "para que mi mano esté siempre con él",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y mi brazo lo haga valeroso. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y mi brazo lo haga valeroso. R."
     },
     {
       "line": "",
@@ -96,5 +66,35 @@
       "line": "y su derecha hasta el Gran Río. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "title": "Lunes de la 3ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 5031,
+  "searchPool": "lunes de la 3 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 88 20 21 22 25 26 r 25a semana 3 semana iii lunes 3 iii r mi fidelidad y misericordia lo acompanaran un dia hablaste en vision a tus amigos he cenido la corona a un heroe he levantado a un soldado sobre el pueblo r encontre david mi siervo y lo he ungido con oleo sagrado para que mi mano este siempre con el y mi brazo lo haga valeroso r mi fidelidad y misericordia lo acompanaran por mi nombre crecera su poder extendere su izquierda hasta el mar y su derecha hasta el gran rio r",
+  "textoCompleto": "Un día hablaste en visión a tus amigos:\nHe ceñido la corona a un héroe,\nhe levantado a un soldado sobre el pueblo. R.\n\nEncontré David mi siervo\ny lo he ungido con óleo sagrado;\npara que mi mano esté siempre con él\ny mi brazo lo haga valeroso. R.\n\nMi fidelidad y misericordia lo acompañarán,\npor mi nombre crecerá su poder:\nextenderé su izquierda hasta el mar\ny su derecha hasta el Gran Río. R.",
+  "stage": "Liturgia",
+  "estrofas": [
+    [
+      "Un día hablaste en visión a tus amigos:",
+      "He ceñido la corona a un héroe,",
+      "he levantado a un soldado sobre el pueblo. R."
+    ],
+    [
+      "Encontré David mi siervo",
+      "y lo he ungido con óleo sagrado;",
+      "para que mi mano esté siempre con él",
+      "y mi brazo lo haga valeroso. R."
+    ],
+    [
+      "Mi fidelidad y misericordia lo acompañarán,",
+      "por mi nombre crecerá su poder:",
+      "extenderé su izquierda hasta el mar",
+      "y su derecha hasta el Gran Río. R."
+    ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 88, 20. 21-22. 25-26 (R.: 25a)",
+  "respuesta": "R. Mi fidelidad y misericordia lo acompañarán.",
+  "ciclo": "Año Par"
 }

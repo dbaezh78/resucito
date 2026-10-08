@@ -1,15 +1,86 @@
 {
-  "id": "seup_069",
-  "title": "Miércoles de la 12ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 12ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 33. 34. 35. 36. 37. 40 (R.: 33a)",
-  "salmo": "Salmo responsorial: Salmo 118, 33. 34. 35. 36. 37. 40 (R.: 33a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Miércoles",
-  "orden": 5123,
-  "respuesta": "R. Muéstrame, Señor, el camino de tus leyes.",
-  "respuestaOpcional": "",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 118, 33. 34. 35. 36. 37. 40 (R.: 33a)",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Muéstrame, Señor, el camino de tus leyes."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Muéstrame, Señor, el camino de tus leyes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y lo seguiré puntualmente. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Enséñame a cumplir tu voluntad",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y a guardarla de todo corazón. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Guíame por la senda de tus mandatos,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "porque ella es mi gozo. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Inclina mi corazón a tus preceptos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y no al interés. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Aparta mis ojos de las vanidades,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "dame vida con tu palabra. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mira cómo ansío tus decretos:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "dame vida con tu justicia. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "subtitle": "Salmo responsorial: Salmo 118, 33. 34. 35. 36. 37. 40 (R.: 33a)",
   "estrofas": [
     [
       "Muéstrame, Señor, el camino de tus leyes,",
@@ -36,88 +107,17 @@
       "dame vida con tu justicia. R."
     ]
   ],
-  "textoCompleto": "Muéstrame, Señor, el camino de tus leyes,\ny lo seguiré puntualmente. R.\n\nEnséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R.\n\nGuíame por la senda de tus mandatos,\nporque ella es mi gozo. R.\n\nInclina mi corazón a tus preceptos,\ny no al interés. R.\n\nAparta mis ojos de las vanidades,\ndame vida con tu palabra. R.\n\nMira cómo ansío tus decretos:\ndame vida con tu justicia. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuesta": "R. Muéstrame, Señor, el camino de tus leyes.",
+  "celebracion": "Miércoles de la 12ª semana de Tiempo Ordinario",
+  "textoCompleto": "Muéstrame, Señor, el camino de tus leyes,\ny lo seguiré puntualmente. R.\n\nEnséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R.\n\nGuíame por la senda de tus mandatos,\nporque ella es mi gozo. R.\n\nInclina mi corazón a tus preceptos,\ny no al interés. R.\n\nAparta mis ojos de las vanidades,\ndame vida con tu palabra. R.\n\nMira cómo ansío tus decretos:\ndame vida con tu justicia. R.",
   "searchPool": "miercoles de la 12 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 118 33 34 35 36 37 40 r 33a semana 12 semana xii miercoles 12 xii r muestrame senor el camino de tus leyes muestrame senor el camino de tus leyes y lo seguire puntualmente r ensename a cumplir tu voluntad y a guardarla de todo corazon r guiame por la senda de tus mandatos porque ella es mi gozo r inclina mi corazon a tus preceptos y no al interes r aparta mis ojos de las vanidades dame vida con tu palabra r mira como ansio tus decretos dame vida con tu justicia r",
-  "lizq": [
-    {
-      "line": "R. Muéstrame, Señor, el camino de tus leyes.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Muéstrame, Señor, el camino de tus leyes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y lo seguiré puntualmente. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Enséñame a cumplir tu voluntad",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y a guardarla de todo corazón. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Guíame por la senda de tus mandatos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "porque ella es mi gozo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Inclina mi corazón a tus preceptos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y no al interés. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Aparta mis ojos de las vanidades,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "dame vida con tu palabra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Mira cómo ansío tus decretos:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "dame vida con tu justicia. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "catCanto": "Salmo Eucaristía",
+  "id": "seup_069",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "title": "Miércoles de la 12ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "orden": 5123
 }

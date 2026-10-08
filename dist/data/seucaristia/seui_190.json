@@ -1,15 +1,7 @@
 {
-  "id": "seui_190",
-  "title": "Jueves de la 32ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 32ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 89. 90. 91. 130. 135. 175 (R.: 89a)",
-  "salmo": "Salmo responsorial: Salmo 118, 89. 90. 91. 130. 135. 175 (R.: 89a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5324,
+  "textoCompleto": "Tu palabra, Señor, es eterna,\nmás estable que el cielo. R.\n\nTu fidelidad de generación en generación,\nigual que fundaste la tierra y permanece. R.\n\nPor tu mandamiento subsisten hasta hoy,\nporque todo está a tu servicio. R.\n\nLa explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.\n\nHaz brillar tu rostro sobre tu siervo,\nenséñame tus leyes. R.\n\nQue mi alma viva para alabarte,\nque tus mandamientos me auxilien. R.",
   "respuesta": "R. Tu palabra, Señor, es eterna.",
-  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
   "estrofas": [
     [
       "Tu palabra, Señor, es eterna,",
@@ -36,12 +28,18 @@
       "que tus mandamientos me auxilien. R."
     ]
   ],
-  "textoCompleto": "Tu palabra, Señor, es eterna,\nmás estable que el cielo. R.\n\nTu fidelidad de generación en generación,\nigual que fundaste la tierra y permanece. R.\n\nPor tu mandamiento subsisten hasta hoy,\nporque todo está a tu servicio. R.\n\nLa explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.\n\nHaz brillar tu rostro sobre tu siervo,\nenséñame tus leyes. R.\n\nQue mi alma viva para alabarte,\nque tus mandamientos me auxilien. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "celebracion": "Jueves de la 32ª semana de Tiempo Ordinario",
   "catCanto": "Salmo Eucaristía",
+  "respuestaOpcional": "",
+  "id": "seui_190",
+  "stage": "Liturgia",
   "hasAudio": false,
+  "orden": 5324,
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 118, 89. 90. 91. 130. 135. 175 (R.: 89a)",
   "searchPool": "jueves de la 32 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 118 89 90 91 130 135 175 r 89a semana 32 semana xxxii jueves 32 xxxii r tu palabra senor es eterna tu palabra senor es eterna mas estable que el cielo r tu fidelidad de generacion en generacion igual que fundaste la tierra y permanece r por tu mandamiento subsisten hasta hoy porque todo esta a tu servicio r la explicacion de tus palabras ilumina da inteligencia a los ignorantes r haz brillar tu rostro sobre tu siervo ensename tus leyes r que mi alma viva para alabarte que tus mandamientos me auxilien r",
+  "dia": "Jueves",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
       "line": "R. Tu palabra, Señor, es eterna.",
@@ -52,28 +50,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tu palabra, Señor, es eterna,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tu palabra, Señor, es eterna,"
     },
     {
-      "line": "más estable que el cielo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "más estable que el cielo. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tu fidelidad de generación en generación,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tu fidelidad de generación en generación,"
     },
     {
       "line": "igual que fundaste la tierra y permanece. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Por tu mandamiento subsisten hasta hoy,",
@@ -84,28 +82,28 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La explicación de tus palabras ilumina,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "da inteligencia a los ignorantes. R."
+    },
+    {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "La explicación de tus palabras ilumina,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Haz brillar tu rostro sobre tu siervo,"
     },
     {
-      "line": "da inteligencia a los ignorantes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Haz brillar tu rostro sobre tu siervo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "enséñame tus leyes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "enséñame tus leyes. R."
     },
     {
       "line": "",
@@ -119,5 +117,7 @@
       "line": "que tus mandamientos me auxilien. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 118, 89. 90. 91. 130. 135. 175 (R.: 89a)",
+  "title": "Jueves de la 32ª semana de Tiempo Ordinario"
 }

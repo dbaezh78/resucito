@@ -1,15 +1,6 @@
 {
-  "id": "seup_157",
-  "title": "Lunes de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 7-8. 9 y 10 (R.: cf. 5b)",
-  "salmo": "Salmo responsorial: Salmo 110, 1-2. 7-8. 9 y 10 (R.: cf. 5b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
   "dia": "Lunes",
-  "orden": 5271,
-  "respuesta": "R. El Señor recuerda siempre su alianza.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Doy gracias al Señor de todo corazón,",
@@ -30,24 +21,21 @@
       "La alabanza del Señor dura por siempre. R."
     ]
   ],
+  "salmo": "Salmo responsorial: Salmo 110, 1-2. 7-8. 9 y 10 (R.: cf. 5b)",
   "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en la asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nJusticia y verdad son las obras de sus manos,\ntodos sus preceptos merecen confianza\nson estables para siempre jamás,\nse han de cumplir con verdad y rectitud. R.\n\nEnvió la redención a su pueblo,\nratificó para siempre su alianza,\nsu nombre es sagrado y temible.\nLa alabanza del Señor dura por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 27 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 110 1 2 7 8 9 y 10 r cf 5b semana 27 semana xxvii lunes 27 xxvii r el senor recuerda siempre su alianza r aleluya doy gracias al senor de todo corazon en compania de los rectos en la asamblea grandes son las obras del senor dignas de estudio para los que las aman r justicia y verdad son las obras de sus manos todos sus preceptos merecen confianza son estables para siempre jamas se han de cumplir con verdad y rectitud r envio la redencion a su pueblo ratifico para siempre su alianza su nombre es sagrado y temible la alabanza del senor dura por siempre r",
+  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 7-8. 9 y 10 (R.: cf. 5b)",
   "lizq": [
     {
-      "line": "R. El Señor recuerda siempre su alianza.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor recuerda siempre su alianza."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
@@ -58,16 +46,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Doy gracias al Señor de todo corazón,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Doy gracias al Señor de todo corazón,"
     },
     {
-      "line": "en compañía de los rectos, en la asamblea.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en compañía de los rectos, en la asamblea."
     },
     {
-      "line": "Grandes son las obras del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Grandes son las obras del Señor,"
     },
     {
       "line": "dignas de estudio para los que las aman. R.",
@@ -98,20 +86,32 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Envió la redención a su pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Envió la redención a su pueblo,"
     },
     {
-      "line": "ratificó para siempre su alianza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ratificó para siempre su alianza,"
     },
     {
       "line": "su nombre es sagrado y temible.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "La alabanza del Señor dura por siempre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "La alabanza del Señor dura por siempre. R."
     }
-  ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false,
+  "id": "seup_157",
+  "orden": 5271,
+  "searchPool": "lunes de la 27 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 110 1 2 7 8 9 y 10 r cf 5b semana 27 semana xxvii lunes 27 xxvii r el senor recuerda siempre su alianza r aleluya doy gracias al senor de todo corazon en compania de los rectos en la asamblea grandes son las obras del senor dignas de estudio para los que las aman r justicia y verdad son las obras de sus manos todos sus preceptos merecen confianza son estables para siempre jamas se han de cumplir con verdad y rectitud r envio la redencion a su pueblo ratifico para siempre su alianza su nombre es sagrado y temible la alabanza del senor dura por siempre r",
+  "title": "Lunes de la 27ª semana de Tiempo Ordinario",
+  "respuesta": "R. El Señor recuerda siempre su alianza.",
+  "celebracion": "Lunes de la 27ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "R. Aleluya.",
+  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia"
 }

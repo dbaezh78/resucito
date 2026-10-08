@@ -1,242 +1,17 @@
 {
-  "id": "seus_161",
-  "title": "TÉMPORAS DE ACCIÓN DE GRACIAS Y DE PETICIÓN",
   "celebracion": "TÉMPORAS DE ACCIÓN DE GRACIAS Y DE PETICIÓN",
-  "subtitle": "Interleccional: 1 Crónicas 29, 10. 11abc. 11d-12a. 12bcd (R.: 12b)",
-  "salmo": "Interleccional: 1 Crónicas 29, 10. 11abc. 11d-12a. 12bcd (R.: 12b)",
-  "ciclo": "Santos",
-  "tiempo": "Octubre",
-  "dia": "5",
-  "orden": 10050,
-  "respuesta": "R. Tú eres Señor del universo.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Bendito eres, Señor,",
-      "Dios de nuestro padre Israel,",
-      "por los siglos de los siglos. R."
-    ],
-    [
-      "Tuyos son, Señor, la grandeza y el poder,",
-      "la gloria, el esplendor, la majestad,",
-      "porque tuyo es cuánto hay en cielo y tierra. R."
-    ],
-    [
-      "Tú eres rey y soberano de todo.",
-      "De ti viene la riqueza y la gloria. R."
-    ],
-    [
-      "Tú eres Señor del universo,",
-      "en tu mano está el poder y la fuerza,",
-      "tú engrandeces y confortas a todos. R."
-    ],
-    [
-      "LECTURAS PARA CUANDO LAS TÉMPORAS SE CELEBRAN EN TRES DÍAS",
-      "Día de acción de gracias R."
-    ],
-    [
-      "OPCION 1",
-      "Salmo responsorial: Salmo 8, 4-5. 6-7. 8-9. 10 (R.: cf. 7) R."
-    ],
-    [
-      "R. Señor, diste al hombre el mando sobre las obras de tus manos. R."
-    ],
-    [
-      "Cuando contemplo el cielo, obra de tus dedos,",
-      "la luna y las estrellas que has creado,",
-      "¿qué es el hombre, para que te acuerdes de él,",
-      "el ser humano, para darle poder? R."
-    ],
-    [
-      "Lo hiciste poco inferior a los ángeles,",
-      "lo coronaste de gloria y dignidad,",
-      "le diste el mando sobre las obras de tus manos,",
-      "todo lo sometiste bajo sus pies. R."
-    ],
-    [
-      "Rebaños de ovejas y toros,",
-      "y hasta las bestias del campo,",
-      "las aves del cielo, los peces del mar,",
-      "que trazan sendas por el mar. R."
-    ],
-    [
-      "Señor, dueño nuestro,",
-      "¡qué admirable es tu nombre",
-      "en toda la tierra! R."
-    ],
-    [
-      "OPCION 2",
-      "Interleccional: 1 Crónicas 29, 10. 11 abc. 11 d- 12a. 12bcd (R.: 12b) R."
-    ],
-    [
-      "R. Tú eres Señor del universo. R."
-    ],
-    [
-      "Bendito eres, Señor,",
-      "Dios de nuestro padre Israel,",
-      "por los siglos de los siglos. R."
-    ],
-    [
-      "Tuyos son, Señor, la grandeza y el poder,",
-      "la gloria, el esplendor, la majestad,",
-      "porque tuyo es cuanto hay en cielo y tierra. R."
-    ],
-    [
-      "Tú eres rey y soberano de todo.",
-      "De ti viene la riqueza y la gloria. R."
-    ],
-    [
-      "Tú eres Señor del universo,",
-      "en tu mano está el poder y la fuerza,",
-      "tú engrandeces y confortas a todos. R."
-    ],
-    [
-      "Día penitencial",
-      "OPCION 1",
-      "Salmo responsorial: Salmo 50, 3-4. 5-6a. 12-13. 14 y 17 (R.: cf. 3a) R."
-    ],
-    [
-      "R. Misericordia, Señor: hemos pecado. R."
-    ],
-    [
-      "Misericordia, Dios mío, por tu bondad,",
-      "por tu inmensa compasión borra mi culpa;",
-      "lava del todo mi delito, limpia mi pecado. R."
-    ],
-    [
-      "Pues yo reconozco mi culpa,",
-      "tengo siempre presente mi pecado:",
-      "contra ti, contra ti solo pequé,",
-      "cometí la maldad que aborreces. R."
-    ],
-    [
-      "Oh Dios, crea en mí un corazón puro,",
-      "renuévame por dentro con espíritu firme;",
-      "no me arrojes lejos de tu rostro,",
-      "no me quites tu santo espíritu. R."
-    ],
-    [
-      "Devuélveme la alegría de tu salvación,",
-      "afiánzame con espíritu generoso.",
-      "Señor, me abrirás los labios,",
-      "y mi boca proclamará tu alabanza. R."
-    ],
-    [
-      "OPCION 2",
-      "Salmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 3) R."
-    ],
-    [
-      "R. Si llevas cuenta de los delitos, Señor,",
-      "¿quién podrá resistir? R."
-    ],
-    [
-      "Desde lo hondo a ti grito, Señor;",
-      "Señor, escucha mi voz;",
-      "estén tus oídos atentos",
-      "a la voz de mi súplica. R."
-    ],
-    [
-      "Si llevas cuenta de los delitos,",
-      "Señor, ¿quién podrá resistir?",
-      "Pero de ti procede el perdón,",
-      "y así infundes respeto. R."
-    ],
-    [
-      "Mi alma espera en el Señor,",
-      "espera en su palabra;",
-      "mi alma aguarda al Señor,",
-      "más que el centinela la aurora. R."
-    ],
-    [
-      "Aguarde Israel al Señor,",
-      "como el centinela la aurora;",
-      "porque del Señor viene la misericordia,",
-      "la redención copiosa;",
-      "y él redimirá a Israel",
-      "de todos sus delitos. R."
-    ],
-    [
-      "Día de petición por la actividad humana R."
-    ],
-    [
-      "OPCION 1",
-      "Salmo responsorial: Salmo 27, 1ab-2. 7. 8-9 (R.: 2a) R."
-    ],
-    [
-      "R. Escucha, Señor, mi voz suplicante. R."
-    ],
-    [
-      "A ti, Señor, te invoco;",
-      "Roca mía, no seas sordo a mi voz.",
-      "Escucha mi voz suplicante",
-      "cuando te pido auxilio,",
-      "cuando alzo las manos",
-      "hacia tu santuario. R."
-    ],
-    [
-      "El Señor es mi fuerza y mi escudo:",
-      "en él confía mi corazón;",
-      "me socorrió, y mi corazón se alegra",
-      "y le canta agradecido. R."
-    ],
-    [
-      "El Señor es fuerza para su pueblo,",
-      "apoyo y salvación para su Ungido.",
-      "Salva a tu pueblo y bendice tu heredad,",
-      "sé su pastor y llévalos siempre. R."
-    ],
-    [
-      "OPCION 2",
-      "Salmo responsorial: Salmo 24, 1-3. 4-5. 6-7 (R.: 2a) R."
-    ],
-    [
-      "R. Dios mío, en ti confío,",
-      "no quede yo defraudado. R."
-    ],
-    [
-      "A ti, Señor, levanto mi alma;",
-      "Dios mío, en ti confío,",
-      "no quede yo defraudado,",
-      "que no triunfen de mí mis enemigos;",
-      "pues los que esperan en ti no quedan defraudados,",
-      "mientras que el fracaso malogra a los traidores. R."
-    ],
-    [
-      "Señor, enséñame tus caminos,",
-      "instrúyeme en tus sendas:",
-      "haz que camine con lealtad;",
-      "enséñame, porque tú eres mi Dios y Salvador,",
-      "y todo el día te estoy esperando. R."
-    ],
-    [
-      "Recuerda, Señor, que tu ternura",
-      "y tu misericordia son eternas;",
-      "no te acuerdes de los pecados",
-      "ni de las maldades de mi juventud;",
-      "acuérdate de mí con misericordia,",
-      "por tu bondad, Señor. R."
-    ]
-  ],
-  "textoCompleto": "Bendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuánto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.\n\nLECTURAS PARA CUANDO LAS TÉMPORAS SE CELEBRAN EN TRES DÍAS\nDía de acción de gracias R.\n\nOPCION 1\nSalmo responsorial: Salmo 8, 4-5. 6-7. 8-9. 10 (R.: cf. 7) R.\n\nR. Señor, diste al hombre el mando sobre las obras de tus manos. R.\n\nCuando contemplo el cielo, obra de tus dedos,\nla luna y las estrellas que has creado,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos,\ntodo lo sometiste bajo sus pies. R.\n\nRebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.\n\nSeñor, dueño nuestro,\n¡qué admirable es tu nombre\nen toda la tierra! R.\n\nOPCION 2\nInterleccional: 1 Crónicas 29, 10. 11 abc. 11 d- 12a. 12bcd (R.: 12b) R.\n\nR. Tú eres Señor del universo. R.\n\nBendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuanto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.\n\nDía penitencial\nOPCION 1\nSalmo responsorial: Salmo 50, 3-4. 5-6a. 12-13. 14 y 17 (R.: cf. 3a) R.\n\nR. Misericordia, Señor: hemos pecado. R.\n\nMisericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito, limpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.\n\nOPCION 2\nSalmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 3) R.\n\nR. Si llevas cuenta de los delitos, Señor,\n¿quién podrá resistir? R.\n\nDesde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos,\nSeñor, ¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela la aurora. R.\n\nAguarde Israel al Señor,\ncomo el centinela la aurora;\nporque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.\n\nDía de petición por la actividad humana R.\n\nOPCION 1\nSalmo responsorial: Salmo 27, 1ab-2. 7. 8-9 (R.: 2a) R.\n\nR. Escucha, Señor, mi voz suplicante. R.\n\nA ti, Señor, te invoco;\nRoca mía, no seas sordo a mi voz.\nEscucha mi voz suplicante\ncuando te pido auxilio,\ncuando alzo las manos\nhacia tu santuario. R.\n\nEl Señor es mi fuerza y mi escudo:\nen él confía mi corazón;\nme socorrió, y mi corazón se alegra\ny le canta agradecido. R.\n\nEl Señor es fuerza para su pueblo,\napoyo y salvación para su Ungido.\nSalva a tu pueblo y bendice tu heredad,\nsé su pastor y llévalos siempre. R.\n\nOPCION 2\nSalmo responsorial: Salmo 24, 1-3. 4-5. 6-7 (R.: 2a) R.\n\nR. Dios mío, en ti confío,\nno quede yo defraudado. R.\n\nA ti, Señor, levanto mi alma;\nDios mío, en ti confío,\nno quede yo defraudado,\nque no triunfen de mí mis enemigos;\npues los que esperan en ti no quedan defraudados,\nmientras que el fracaso malogra a los traidores. R.\n\nSeñor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador,\ny todo el día te estoy esperando. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nno te acuerdes de los pecados\nni de las maldades de mi juventud;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "temporas de accion de gracias y de peticion memoria libre santos octubre 5 opcion 1 1 cronicas 29 10 11abc 11d 12a 12bcd r 12b r tu eres senor del universo bendito eres senor dios de nuestro padre israel por los siglos de los siglos r tuyos son senor la grandeza y el poder la gloria el esplendor la majestad porque tuyo es cuanto hay en cielo y tierra r tu eres rey y soberano de todo de ti viene la riqueza y la gloria r tu eres senor del universo en tu mano esta el poder y la fuerza tu engrandeces y confortas a todos r lecturas para cuando las temporas se celebran en tres dias dia de accion de gracias r opcion 1 salmo responsorial salmo 8 4 5 6 7 8 9 10 r cf 7 r r senor diste al hombre el mando sobre las obras de tus manos r cuando contemplo el cielo obra de tus dedos la luna y las estrellas que has creado que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos todo lo sometiste bajo sus pies r rebanos de ovejas y toros y hasta las bestias del campo las aves del cielo los peces del mar que trazan sendas por el mar r senor dueno nuestro que admirable es tu nombre en toda la tierra r opcion 2 interleccional 1 cronicas 29 10 11 abc 11 d 12a 12bcd r 12b r r tu eres senor del universo r bendito eres senor dios de nuestro padre israel por los siglos de los siglos r tuyos son senor la grandeza y el poder la gloria el esplendor la majestad porque tuyo es cuanto hay en cielo y tierra r tu eres rey y soberano de todo de ti viene la riqueza y la gloria r tu eres senor del universo en tu mano esta el poder y la fuerza tu engrandeces y confortas a todos r dia penitencial opcion 1 salmo responsorial salmo 50 3 4 5 6a 12 13 14 y 17 r cf 3a r r misericordia senor hemos pecado r misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso senor me abriras los labios y mi boca proclamara tu alabanza r opcion 2 salmo responsorial salmo 129 1 2 3 4 5 6 7 8 r 3 r r si llevas cuenta de los delitos senor quien podra resistir r desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuenta de los delitos senor quien podra resistir pero de ti procede el perdon y asi infundes respeto r mi alma espera en el senor espera en su palabra mi alma aguarda al senor mas que el centinela la aurora r aguarde israel al senor como el centinela la aurora porque del senor viene la misericordia la redencion copiosa y el redimira a israel de todos sus delitos r dia de peticion por la actividad humana r opcion 1 salmo responsorial salmo 27 1ab 2 7 8 9 r 2a r r escucha senor mi voz suplicante r a ti senor te invoco roca mia no seas sordo a mi voz escucha mi voz suplicante cuando te pido auxilio cuando alzo las manos hacia tu santuario r el senor es mi fuerza y mi escudo en el confia mi corazon me socorrio y mi corazon se alegra y le canta agradecido r el senor es fuerza para su pueblo apoyo y salvacion para su ungido salva a tu pueblo y bendice tu heredad se su pastor y llevalos siempre r opcion 2 salmo responsorial salmo 24 1 3 4 5 6 7 r 2a r r dios mio en ti confio no quede yo defraudado r a ti senor levanto mi alma dios mio en ti confio no quede yo defraudado que no triunfen de mi mis enemigos pues los que esperan en ti no quedan defraudados mientras que el fracaso malogra a los traidores r senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador y todo el dia te estoy esperando r recuerda senor que tu ternura y tu misericordia son eternas no te acuerdes de los pecados ni de las maldades de mi juventud acuerdate de mi con misericordia por tu bondad senor r opcion 2 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r opcion 3 salmo 14 2 3ab 3cd 4ab 5 r 1b r el justo habitara en tu monte santo senor el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r opcion 4 salmo 111 1 2 3 4 5 7a 7b 8 9 r 1a r dichoso quien teme al senor dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo no temera las malas noticias r su corazon esta firme en el senor su corazon esta seguro sin temor hasta que vea derrotados a sus enemigos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r opcion 5 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r opcion 6 salmo 14 2 3ab 3cd 4ab 5 r 1b r el justo habitara en tu monte santo senor el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r opcion 7 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r opcion 8 salmo 127 1 2 3 4 5 r 1a r dichoso el que teme al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r opcion 9 salmo 102 1 2 3 4 8 9 13 14 17 18a r 1a r bendice alma mia al senor bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no esta siempre acusando ni guarda rencor perpetuo r como un padre siente ternura por sus hijos siente el senor ternura por sus fieles porque el conoce nuestra masa se acuerda de que somos barro r pero la misericordia del senor dura siempre su justicia pasa de hijos a nietos para los que guardan la alianza r opcion 10 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r opcion 11 salmo 33 2 3 4 5 6 7 8 9 10 11 r 2a r bendigo al senor en todo momento bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r todos sus santos temed al senor porque nada les falta a los que le temen los ricos empobrecen y pasan hambre los que buscan al senor no carecen de nada r opcion 12 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r opcion 13 salmo 111 1 2 3 4 5 7a 7b 8 9 r 1a r dichoso quien teme al senor dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo no temera las malas noticias r su corazon esta firme en el senor su corazon esta seguro sin temor hasta que vea derrotados a sus enemigos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r opcion 14 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r opcion 15 salmo 127 1 2 3 4 5 r 1a r dichoso el que teme al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r opcion 16 salmo 111 1 2 3 4 5 7a 7b 8 9 r 1a r dichoso quien teme al senor dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo no temera las malas noticias r su corazon esta firme en el senor su corazon esta seguro sin temor hasta que vea derrotados a sus enemigos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r opcion 17 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r opcion 18 salmo 1 1 2 3 4 y 6 r 2a r su gozo es la ley del senor dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r opcion 19 salmo 33 2 3 4 5 6 7 8 9 10 11 r 9a r gustad y ved que bueno es el senor bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r todos sus santos temed al senor porque nada les falta a los que le temen los ricos empobrecen y pasan hambre los que buscan al senor no carecen de nada r",
   "lizq": [
     {
       "type": "variant-group",
-      "id": "salmo_variantes",
-      "label": "Salmo Responsorial",
       "color": "var(--Rojo-Leccionario)",
       "variants": [
         {
-          "id": "opt_1",
+          "subtitle": "Interleccional: 1 Crónicas 29, 10. 11abc. 11d-12a. 12bcd (R.: 12b)",
           "name": "Opción 1: 1 Crónicas 29, 10. 11abc. 11d-12a. 12bcd (R.: 12b)",
           "salmo": "Interleccional: 1 Crónicas 29, 10. 11abc. 11d-12a. 12bcd (R.: 12b)",
-          "subtitle": "Interleccional: 1 Crónicas 29, 10. 11abc. 11d-12a. 12bcd (R.: 12b)",
           "respuesta": "R. Tú eres Señor del universo.",
-          "respuestaOpcional": "",
+          "id": "opt_1",
+          "textoCompleto": "Bendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuánto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.\n\nLECTURAS PARA CUANDO LAS TÉMPORAS SE CELEBRAN EN TRES DÍAS\nDía de acción de gracias R.\n\nOPCION 1\nSalmo responsorial: Salmo 8, 4-5. 6-7. 8-9. 10 (R.: cf. 7) R.\n\nR. Señor, diste al hombre el mando sobre las obras de tus manos. R.\n\nCuando contemplo el cielo, obra de tus dedos,\nla luna y las estrellas que has creado,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos,\ntodo lo sometiste bajo sus pies. R.\n\nRebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.\n\nSeñor, dueño nuestro,\n¡qué admirable es tu nombre\nen toda la tierra! R.\n\nOPCION 2\nInterleccional: 1 Crónicas 29, 10. 11 abc. 11 d- 12a. 12bcd (R.: 12b) R.\n\nR. Tú eres Señor del universo. R.\n\nBendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuanto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.\n\nDía penitencial\nOPCION 1\nSalmo responsorial: Salmo 50, 3-4. 5-6a. 12-13. 14 y 17 (R.: cf. 3a) R.\n\nR. Misericordia, Señor: hemos pecado. R.\n\nMisericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito, limpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.\n\nOPCION 2\nSalmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 3) R.\n\nR. Si llevas cuenta de los delitos, Señor,\n¿quién podrá resistir? R.\n\nDesde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos,\nSeñor, ¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela la aurora. R.\n\nAguarde Israel al Señor,\ncomo el centinela la aurora;\nporque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.\n\nDía de petición por la actividad humana R.\n\nOPCION 1\nSalmo responsorial: Salmo 27, 1ab-2. 7. 8-9 (R.: 2a) R.\n\nR. Escucha, Señor, mi voz suplicante. R.\n\nA ti, Señor, te invoco;\nRoca mía, no seas sordo a mi voz.\nEscucha mi voz suplicante\ncuando te pido auxilio,\ncuando alzo las manos\nhacia tu santuario. R.\n\nEl Señor es mi fuerza y mi escudo:\nen él confía mi corazón;\nme socorrió, y mi corazón se alegra\ny le canta agradecido. R.\n\nEl Señor es fuerza para su pueblo,\napoyo y salvación para su Ungido.\nSalva a tu pueblo y bendice tu heredad,\nsé su pastor y llévalos siempre. R.\n\nOPCION 2\nSalmo responsorial: Salmo 24, 1-3. 4-5. 6-7 (R.: 2a) R.\n\nR. Dios mío, en ti confío,\nno quede yo defraudado. R.\n\nA ti, Señor, levanto mi alma;\nDios mío, en ti confío,\nno quede yo defraudado,\nque no triunfen de mí mis enemigos;\npues los que esperan en ti no quedan defraudados,\nmientras que el fracaso malogra a los traidores. R.\n\nSeñor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador,\ny todo el día te estoy esperando. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nno te acuerdes de los pecados\nni de las maldades de mi juventud;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.",
           "strophes": [
             [
               "Bendito eres, Señor,",
@@ -444,7 +219,7 @@
               "por tu bondad, Señor. R."
             ]
           ],
-          "textoCompleto": "Bendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuánto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.\n\nLECTURAS PARA CUANDO LAS TÉMPORAS SE CELEBRAN EN TRES DÍAS\nDía de acción de gracias R.\n\nOPCION 1\nSalmo responsorial: Salmo 8, 4-5. 6-7. 8-9. 10 (R.: cf. 7) R.\n\nR. Señor, diste al hombre el mando sobre las obras de tus manos. R.\n\nCuando contemplo el cielo, obra de tus dedos,\nla luna y las estrellas que has creado,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos,\ntodo lo sometiste bajo sus pies. R.\n\nRebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.\n\nSeñor, dueño nuestro,\n¡qué admirable es tu nombre\nen toda la tierra! R.\n\nOPCION 2\nInterleccional: 1 Crónicas 29, 10. 11 abc. 11 d- 12a. 12bcd (R.: 12b) R.\n\nR. Tú eres Señor del universo. R.\n\nBendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuanto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.\n\nDía penitencial\nOPCION 1\nSalmo responsorial: Salmo 50, 3-4. 5-6a. 12-13. 14 y 17 (R.: cf. 3a) R.\n\nR. Misericordia, Señor: hemos pecado. R.\n\nMisericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito, limpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.\n\nOPCION 2\nSalmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 3) R.\n\nR. Si llevas cuenta de los delitos, Señor,\n¿quién podrá resistir? R.\n\nDesde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos,\nSeñor, ¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela la aurora. R.\n\nAguarde Israel al Señor,\ncomo el centinela la aurora;\nporque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.\n\nDía de petición por la actividad humana R.\n\nOPCION 1\nSalmo responsorial: Salmo 27, 1ab-2. 7. 8-9 (R.: 2a) R.\n\nR. Escucha, Señor, mi voz suplicante. R.\n\nA ti, Señor, te invoco;\nRoca mía, no seas sordo a mi voz.\nEscucha mi voz suplicante\ncuando te pido auxilio,\ncuando alzo las manos\nhacia tu santuario. R.\n\nEl Señor es mi fuerza y mi escudo:\nen él confía mi corazón;\nme socorrió, y mi corazón se alegra\ny le canta agradecido. R.\n\nEl Señor es fuerza para su pueblo,\napoyo y salvación para su Ungido.\nSalva a tu pueblo y bendice tu heredad,\nsé su pastor y llévalos siempre. R.\n\nOPCION 2\nSalmo responsorial: Salmo 24, 1-3. 4-5. 6-7 (R.: 2a) R.\n\nR. Dios mío, en ti confío,\nno quede yo defraudado. R.\n\nA ti, Señor, levanto mi alma;\nDios mío, en ti confío,\nno quede yo defraudado,\nque no triunfen de mí mis enemigos;\npues los que esperan en ti no quedan defraudados,\nmientras que el fracaso malogra a los traidores. R.\n\nSeñor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador,\ny todo el día te estoy esperando. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nno te acuerdes de los pecados\nni de las maldades de mi juventud;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.",
+          "respuestaOpcional": "",
           "lines": [
             {
               "line": "R. Tú eres Señor del universo.",
@@ -463,8 +238,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "por los siglos de los siglos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "por los siglos de los siglos. R."
             },
             {
               "line": "",
@@ -483,20 +258,20 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Tú eres rey y soberano de todo.",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Tú eres rey y soberano de todo."
             },
             {
               "line": "De ti viene la riqueza y la gloria. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Tú eres Señor del universo,",
@@ -511,12 +286,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "LECTURAS PARA CUANDO LAS TÉMPORAS SE CELEBRAN EN TRES DÍAS",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "LECTURAS PARA CUANDO LAS TÉMPORAS SE CELEBRAN EN TRES DÍAS"
             },
             {
               "line": "Día de acción de gracias R.",
@@ -527,12 +302,12 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "OPCION 1",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "OPCION 1"
             },
             {
-              "line": "Salmo responsorial: Salmo 8, 4-5. 6-7. 8-9. 10 (R.: cf. 7) R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "Salmo responsorial: Salmo 8, 4-5. 6-7. 8-9. 10 (R.: cf. 7) R."
             },
             {
               "line": "",
@@ -543,28 +318,28 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Cuando contemplo el cielo, obra de tus dedos,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Cuando contemplo el cielo, obra de tus dedos,"
             },
             {
               "line": "la luna y las estrellas que has creado,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "¿qué es el hombre, para que te acuerdes de él,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "¿qué es el hombre, para que te acuerdes de él,"
             },
             {
-              "line": "el ser humano, para darle poder? R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "el ser humano, para darle poder? R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Lo hiciste poco inferior a los ángeles,",
@@ -579,8 +354,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "todo lo sometiste bajo sus pies. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "todo lo sometiste bajo sus pies. R."
             },
             {
               "line": "",
@@ -591,12 +366,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "y hasta las bestias del campo,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "y hasta las bestias del campo,"
             },
             {
-              "line": "las aves del cielo, los peces del mar,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "las aves del cielo, los peces del mar,"
             },
             {
               "line": "que trazan sendas por el mar. R.",
@@ -607,12 +382,12 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Señor, dueño nuestro,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Señor, dueño nuestro,"
             },
             {
-              "line": "¡qué admirable es tu nombre",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "¡qué admirable es tu nombre"
             },
             {
               "line": "en toda la tierra! R.",
@@ -623,64 +398,64 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "OPCION 2",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "OPCION 2"
             },
             {
-              "line": "Interleccional: 1 Crónicas 29, 10. 11 abc. 11 d- 12a. 12bcd (R.: 12b) R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "R. Tú eres Señor del universo. R.",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "Interleccional: 1 Crónicas 29, 10. 11 abc. 11 d- 12a. 12bcd (R.: 12b) R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+              "line": "R. Tú eres Señor del universo. R."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Bendito eres, Señor,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "Dios de nuestro padre Israel,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Dios de nuestro padre Israel,"
             },
             {
               "line": "por los siglos de los siglos. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Tuyos son, Señor, la grandeza y el poder,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "la gloria, el esplendor, la majestad,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "la gloria, el esplendor, la majestad,"
             },
             {
               "line": "porque tuyo es cuanto hay en cielo y tierra. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Tú eres rey y soberano de todo.",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Tú eres rey y soberano de todo."
             },
             {
-              "line": "De ti viene la riqueza y la gloria. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "De ti viene la riqueza y la gloria. R."
             },
             {
               "line": "",
@@ -691,12 +466,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "en tu mano está el poder y la fuerza,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "en tu mano está el poder y la fuerza,"
             },
             {
-              "line": "tú engrandeces y confortas a todos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "tú engrandeces y confortas a todos. R."
             },
             {
               "line": "",
@@ -743,16 +518,16 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Pues yo reconozco mi culpa,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Pues yo reconozco mi culpa,"
             },
             {
               "line": "tengo siempre presente mi pecado:",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "contra ti, contra ti solo pequé,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "contra ti, contra ti solo pequé,"
             },
             {
               "line": "cometí la maldad que aborreces. R.",
@@ -791,16 +566,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Señor, me abrirás los labios,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Señor, me abrirás los labios,"
             },
             {
               "line": "y mi boca proclamará tu alabanza. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "OPCION 2",
@@ -823,8 +598,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Desde lo hondo a ti grito, Señor;",
@@ -839,16 +614,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "a la voz de mi súplica. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "a la voz de mi súplica. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Si llevas cuenta de los delitos,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Si llevas cuenta de los delitos,"
             },
             {
               "line": "Señor, ¿quién podrá resistir?",
@@ -875,8 +650,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "mi alma aguarda al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mi alma aguarda al Señor,"
             },
             {
               "line": "más que el centinela la aurora. R.",
@@ -891,12 +666,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "como el centinela la aurora;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "como el centinela la aurora;"
             },
             {
-              "line": "porque del Señor viene la misericordia,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "porque del Señor viene la misericordia,"
             },
             {
               "line": "la redención copiosa;",
@@ -911,12 +686,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Día de petición por la actividad humana R.",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+              "line": "Día de petición por la actividad humana R."
             },
             {
               "line": "",
@@ -931,24 +706,24 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "R. Escucha, Señor, mi voz suplicante. R.",
               "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "A ti, Señor, te invoco;",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "Roca mía, no seas sordo a mi voz.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Roca mía, no seas sordo a mi voz."
             },
             {
               "line": "Escucha mi voz suplicante",
@@ -983,16 +758,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "y le canta agradecido. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y le canta agradecido. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "El Señor es fuerza para su pueblo,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "El Señor es fuerza para su pueblo,"
             },
             {
               "line": "apoyo y salvación para su Ungido.",
@@ -1015,8 +790,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "Salmo responsorial: Salmo 24, 1-3. 4-5. 6-7 (R.: 2a) R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "Salmo responsorial: Salmo 24, 1-3. 4-5. 6-7 (R.: 2a) R."
             },
             {
               "line": "",
@@ -1039,8 +814,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "Dios mío, en ti confío,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Dios mío, en ti confío,"
             },
             {
               "line": "no quede yo defraudado,",
@@ -1067,8 +842,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "instrúyeme en tus sendas:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "instrúyeme en tus sendas:"
             },
             {
               "line": "haz que camine con lealtad;",
@@ -1091,8 +866,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "y tu misericordia son eternas;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "y tu misericordia son eternas;"
             },
             {
               "line": "no te acuerdes de los pecados",
@@ -1113,12 +888,74 @@
           ]
         },
         {
-          "id": "opt_2",
-          "name": "Opción 2: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
           "respuestaOpcional": "",
+          "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+          "name": "Opción 2: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+          "lines": [
+            {
+              "line": "R. Tú, Señor, eres el lote de mi heredad.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Protégeme, Dios mío, que me refugio en ti;",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "yo digo al Señor: «Tú eres mi bien»."
+            },
+            {
+              "line": "El Señor es el lote de mi heredad y mi copa;",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "mi suerte está en tu mano. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Bendeciré al Señor, que me aconseja,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "hasta de noche me instruye internamente."
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Tengo siempre presente al Señor,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "con él a mi derecha no vacilaré. R."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Me enseñarás el sendero de la vida,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "me saciarás de gozo en tu presencia,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "de alegría perpetua a tu derecha. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            }
+          ],
+          "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
+          "id": "opt_2",
           "strophes": [
             [
               "Protégeme, Dios mío, que me refugio en ti;",
@@ -1138,77 +975,9 @@
               "de alegría perpetua a tu derecha. R."
             ]
           ],
-          "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
-          "lines": [
-            {
-              "line": "R. Tú, Señor, eres el lote de mi heredad.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Protégeme, Dios mío, que me refugio en ti;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "yo digo al Señor: «Tú eres mi bien».",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "El Señor es el lote de mi heredad y mi copa;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "mi suerte está en tu mano. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Bendeciré al Señor, que me aconseja,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "hasta de noche me instruye internamente.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Tengo siempre presente al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "con él a mi derecha no vacilaré. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Me enseñarás el sendero de la vida,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "me saciarás de gozo en tu presencia,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "de alegría perpetua a tu derecha. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R."
         },
         {
-          "id": "opt_3",
-          "name": "Opción 3: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
-          "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
-          "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
-          "respuesta": "R. El justo habitará en tu monte santo, Señor.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "El que procede honradamente",
@@ -1228,7 +997,8 @@
               "El que así obra nunca fallará. R."
             ]
           ],
-          "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel qué tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nEl que así obra nunca fallará. R.",
+          "respuestaOpcional": "",
+          "name": "Opción 3: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
           "lines": [
             {
               "line": "R. El justo habitará en tu monte santo, Señor.",
@@ -1239,8 +1009,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "El que procede honradamente",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "El que procede honradamente"
             },
             {
               "line": "y practica la justicia,",
@@ -1267,12 +1037,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "el que considera despreciable al impío",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "el que considera despreciable al impío"
             },
             {
-              "line": "y honra a los que temen al Señor. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y honra a los que temen al Señor. R."
             },
             {
               "line": "",
@@ -1290,15 +1060,134 @@
               "line": "El que así obra nunca fallará. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "id": "opt_3",
+          "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel qué tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nEl que así obra nunca fallará. R.",
+          "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
+          "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
+          "respuesta": "R. El justo habitará en tu monte santo, Señor."
         },
         {
-          "id": "opt_4",
-          "name": "Opción 4: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
           "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
-          "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
           "respuesta": "R. Dichoso quien teme al Señor.",
-          "respuestaOpcional": "R. Aleluya.",
+          "name": "Opción 4: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
+          "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
+          "lines": [
+            {
+              "line": "R. Dichoso quien teme al Señor.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "O bien:",
+              "sC": "salmo-linea salmo-obien"
+            },
+            {
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Aleluya."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Dichoso quien teme al Señor"
+            },
+            {
+              "line": "y ama de corazón sus mandatos.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Su linaje será poderoso en la tierra,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "la descendencia del justo será bendita. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "En su casa habrá riquezas y abundancia,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "su caridad es constante, sin falta.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "En las tinieblas brilla como una luz",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "el que es justo, clemente y compasivo. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Dichoso el que se apiada y presta,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "y administra rectamente sus asuntos.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "El justo jamás vacilará,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "su recuerdo será perpetuo;",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "no temerá las malas noticias. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Su corazón está firme en el Señor.",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Su corazón está seguro, sin temor,"
+            },
+            {
+              "line": "hasta que vea derrotados a sus enemigos. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Reparte limosna a los pobres;",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "su caridad es constante, sin falta,"
+            },
+            {
+              "line": "y alzará la frente con dignidad. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            }
+          ],
+          "id": "opt_4",
+          "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo;\nno temerá las malas noticias. R.\n\nSu corazón está firme en el Señor.\nSu corazón está seguro, sin temor,\nhasta que vea derrotados a sus enemigos. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
           "strophes": [
             [
               "Dichoso quien teme al Señor",
@@ -1330,129 +1219,14 @@
               "y alzará la frente con dignidad. R."
             ]
           ],
-          "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo;\nno temerá las malas noticias. R.\n\nSu corazón está firme en el Señor.\nSu corazón está seguro, sin temor,\nhasta que vea derrotados a sus enemigos. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
-          "lines": [
-            {
-              "line": "R. Dichoso quien teme al Señor.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
-            },
-            {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Dichoso quien teme al Señor",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "y ama de corazón sus mandatos.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Su linaje será poderoso en la tierra,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "la descendencia del justo será bendita. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "En su casa habrá riquezas y abundancia,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "su caridad es constante, sin falta.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "En las tinieblas brilla como una luz",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "el que es justo, clemente y compasivo. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Dichoso el que se apiada y presta,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "y administra rectamente sus asuntos.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "El justo jamás vacilará,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "su recuerdo será perpetuo;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "no temerá las malas noticias. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Su corazón está firme en el Señor.",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "Su corazón está seguro, sin temor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "hasta que vea derrotados a sus enemigos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Reparte limosna a los pobres;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "su caridad es constante, sin falta,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y alzará la frente con dignidad. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "respuestaOpcional": "R. Aleluya."
         },
         {
           "id": "opt_5",
-          "name": "Opción 5: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+          "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
           "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
-          "respuestaOpcional": "",
+          "name": "Opción 5: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
           "strophes": [
             [
               "Protégeme, Dios mío, que me refugio en ti;",
@@ -1472,11 +1246,11 @@
               "de alegría perpetua a tu derecha. R."
             ]
           ],
-          "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
+          "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
           "lines": [
             {
-              "line": "R. Tú, Señor, eres el lote de mi heredad.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Tú, Señor, eres el lote de mi heredad."
             },
             {
               "line": "",
@@ -1487,8 +1261,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "yo digo al Señor: «Tú eres mi bien».",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "yo digo al Señor: «Tú eres mi bien»."
             },
             {
               "line": "El Señor es el lote de mi heredad y mi copa;",
@@ -1499,28 +1273,28 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Bendeciré al Señor, que me aconseja,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Bendeciré al Señor, que me aconseja,"
             },
             {
               "line": "hasta de noche me instruye internamente.",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Tengo siempre presente al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Tengo siempre presente al Señor,"
             },
             {
-              "line": "con él a mi derecha no vacilaré. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "con él a mi derecha no vacilaré. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Me enseñarás el sendero de la vida,",
@@ -1531,18 +1305,79 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "de alegría perpetua a tu derecha. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "de alegría perpetua a tu derecha. R."
             }
-          ]
+          ],
+          "respuestaOpcional": ""
         },
         {
-          "id": "opt_6",
-          "name": "Opción 6: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
+          "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel que tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nEl que así obra nunca fallará. R.",
+          "lines": [
+            {
+              "line": "R. El justo habitará en tu monte santo, Señor.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "El que procede honradamente"
+            },
+            {
+              "line": "y practica la justicia,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "el que tiene intenciones leales"
+            },
+            {
+              "line": "y no calumnia con su lengua. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "El que no hace mal a su prójimo",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "ni difama al vecino,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "el que considera despreciable al impío"
+            },
+            {
+              "line": "y honra a los que temen al Señor. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "El que no presta dinero a usura",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "ni acepta soborno contra el inocente."
+            },
+            {
+              "line": "El que así obra nunca fallará. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            }
+          ],
           "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
           "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)",
           "respuesta": "R. El justo habitará en tu monte santo, Señor.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "El que procede honradamente",
@@ -1562,101 +1397,17 @@
               "El que así obra nunca fallará. R."
             ]
           ],
-          "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel que tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nEl que así obra nunca fallará. R.",
-          "lines": [
-            {
-              "line": "R. El justo habitará en tu monte santo, Señor.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "El que procede honradamente",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "y practica la justicia,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "el que tiene intenciones leales",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y no calumnia con su lengua. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "El que no hace mal a su prójimo",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "ni difama al vecino,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "el que considera despreciable al impío",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y honra a los que temen al Señor. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "El que no presta dinero a usura",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "ni acepta soborno contra el inocente.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "El que así obra nunca fallará. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "respuestaOpcional": "",
+          "id": "opt_6",
+          "name": "Opción 6: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1b)"
         },
         {
-          "id": "opt_7",
-          "name": "Opción 7: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
           "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
-          "respuestaOpcional": "",
-          "strophes": [
-            [
-              "Protégeme, Dios mío, que me refugio en ti;",
-              "yo digo al Señor: «Tú eres mi bien».",
-              "El Señor es el lote de mi heredad y mi copa;",
-              "mi suerte está en tu mano. R."
-            ],
-            [
-              "Bendeciré al Señor, que me aconseja,",
-              "hasta de noche me instruye internamente.",
-              "Tengo siempre presente al Señor,",
-              "con él a mi derecha no vacilaré. R."
-            ],
-            [
-              "Me enseñarás el sendero de la vida,",
-              "me saciarás de gozo en tu presencia,",
-              "de alegría perpetua a tu derecha. R."
-            ]
-          ],
-          "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
+          "name": "Opción 7: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
           "lines": [
             {
-              "line": "R. Tú, Señor, eres el lote de mi heredad.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Tú, Señor, eres el lote de mi heredad."
             },
             {
               "line": "",
@@ -1687,20 +1438,20 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "hasta de noche me instruye internamente.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "hasta de noche me instruye internamente."
             },
             {
               "line": "Tengo siempre presente al Señor,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "con él a mi derecha no vacilaré. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "con él a mi derecha no vacilaré. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Me enseñarás el sendero de la vida,",
@@ -1711,40 +1462,40 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "de alegría perpetua a tu derecha. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "de alegría perpetua a tu derecha. R."
             }
-          ]
-        },
-        {
-          "id": "opt_8",
-          "name": "Opción 8: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
-          "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
-          "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
-          "respuesta": "R. Dichoso el que teme al Señor.",
-          "respuestaOpcional": "",
+          ],
           "strophes": [
             [
-              "Dichoso el que teme al Señor",
-              "y sigue sus caminos.",
-              "Comerás del fruto de tu trabajo,",
-              "serás dichoso, te irá bien. R."
+              "Protégeme, Dios mío, que me refugio en ti;",
+              "yo digo al Señor: «Tú eres mi bien».",
+              "El Señor es el lote de mi heredad y mi copa;",
+              "mi suerte está en tu mano. R."
             ],
             [
-              "Tu mujer, como parra fecunda,",
-              "en medio de tu casa;",
-              "tus hijos, como renuevos de olivo,",
-              "alrededor de tu mesa. R."
+              "Bendeciré al Señor, que me aconseja,",
+              "hasta de noche me instruye internamente.",
+              "Tengo siempre presente al Señor,",
+              "con él a mi derecha no vacilaré. R."
             ],
             [
-              "Ésta es la bendición del hombre",
-              "que teme al Señor.",
-              "Que el Señor te bendiga desde Sión,",
-              "que veas la prosperidad de Jerusalén",
-              "todos los días de tu vida. R."
+              "Me enseñarás el sendero de la vida,",
+              "me saciarás de gozo en tu presencia,",
+              "de alegría perpetua a tu derecha. R."
             ]
           ],
+          "id": "opt_7",
+          "respuestaOpcional": "",
+          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+          "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
+          "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R."
+        },
+        {
+          "respuestaOpcional": "",
+          "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
           "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
+          "respuesta": "R. Dichoso el que teme al Señor.",
           "lines": [
             {
               "line": "R. Dichoso el que teme al Señor.",
@@ -1759,12 +1510,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "y sigue sus caminos.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "y sigue sus caminos."
             },
             {
-              "line": "Comerás del fruto de tu trabajo,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Comerás del fruto de tu trabajo,"
             },
             {
               "line": "serás dichoso, te irá bien. R.",
@@ -1795,16 +1546,16 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Ésta es la bendición del hombre",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Ésta es la bendición del hombre"
             },
             {
-              "line": "que teme al Señor.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "que teme al Señor."
             },
             {
-              "line": "Que el Señor te bendiga desde Sión,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Que el Señor te bendiga desde Sión,"
             },
             {
               "line": "que veas la prosperidad de Jerusalén",
@@ -1814,15 +1565,33 @@
               "line": "todos los días de tu vida. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "id": "opt_8",
+          "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
+          "strophes": [
+            [
+              "Dichoso el que teme al Señor",
+              "y sigue sus caminos.",
+              "Comerás del fruto de tu trabajo,",
+              "serás dichoso, te irá bien. R."
+            ],
+            [
+              "Tu mujer, como parra fecunda,",
+              "en medio de tu casa;",
+              "tus hijos, como renuevos de olivo,",
+              "alrededor de tu mesa. R."
+            ],
+            [
+              "Ésta es la bendición del hombre",
+              "que teme al Señor.",
+              "Que el Señor te bendiga desde Sión,",
+              "que veas la prosperidad de Jerusalén",
+              "todos los días de tu vida. R."
+            ]
+          ],
+          "name": "Opción 8: Salmo 127, 1-2. 3. 4-5 (R.: 1a)"
         },
         {
-          "id": "opt_9",
-          "name": "Opción 9: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a. (R.: 1a)",
-          "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a. (R.: 1a)",
-          "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a. (R.: 1a)",
-          "respuesta": "R. Bendice, alma mía, al Señor.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Bendice, alma mía, al Señor,",
@@ -1855,6 +1624,10 @@
             ]
           ],
           "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno está siempre acusando\nni guarda rencor perpetuo. R.\n\nComo un padre siente ternura por sus hijos,\nsiente el Señor ternura por sus fieles;\nporque él conoce nuestra masa,\nse acuerda de que somos barro. R.\n\nPero la misericordia del Señor dura siempre,\nsu justicia pasa de hijos a nietos,\npara los que guardan la alianza. R.",
+          "name": "Opción 9: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a. (R.: 1a)",
+          "respuestaOpcional": "",
+          "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a. (R.: 1a)",
+          "respuesta": "R. Bendice, alma mía, al Señor.",
           "lines": [
             {
               "line": "R. Bendice, alma mía, al Señor.",
@@ -1865,8 +1638,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Bendice, alma mía, al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Bendice, alma mía, al Señor,"
             },
             {
               "line": "y todo mi ser a su santo nombre.",
@@ -1881,8 +1654,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Él perdona todas tus culpas",
@@ -1901,12 +1674,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "El Señor es compasivo y misericordioso,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "El Señor es compasivo y misericordioso,"
             },
             {
               "line": "lento a la ira y rico en clemencia;",
@@ -1925,16 +1698,16 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Como un padre siente ternura por sus hijos,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Como un padre siente ternura por sus hijos,"
             },
             {
               "line": "siente el Señor ternura por sus fieles;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "porque él conoce nuestra masa,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "porque él conoce nuestra masa,"
             },
             {
               "line": "se acuerda de que somos barro. R.",
@@ -1949,22 +1722,24 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "su justicia pasa de hijos a nietos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "su justicia pasa de hijos a nietos,"
             },
             {
               "line": "para los que guardan la alianza. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "id": "opt_9",
+          "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a. (R.: 1a)"
         },
         {
-          "id": "opt_10",
-          "name": "Opción 10: Salmo 130, 1. 2. 3",
-          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
           "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
-          "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
           "respuestaOpcional": "",
+          "name": "Opción 10: Salmo 130, 1. 2. 3",
+          "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
+          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
+          "id": "opt_10",
           "strophes": [
             [
               "Señor, mi corazón no es ambicioso,",
@@ -1981,23 +1756,22 @@
               "ahora y por siempre. R."
             ]
           ],
-          "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
           "lines": [
             {
               "line": "R. Guarda mi alma en la paz, junto a ti, Señor.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Señor, mi corazón no es ambicioso,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "ni mis ojos altaneros;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "ni mis ojos altaneros;"
             },
             {
               "line": "no pretendo grandezas",
@@ -2012,8 +1786,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Sino que acallo y modero mis deseos,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Sino que acallo y modero mis deseos,"
             },
             {
               "line": "como un niño en brazos de su madre. R.",
@@ -2031,15 +1805,14 @@
               "line": "ahora y por siempre. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R."
         },
         {
-          "id": "opt_11",
           "name": "Opción 11: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 2a)",
-          "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 2a)",
-          "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 2a)",
+          "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.\n\nTodos sus santos, temed al Señor,\nporque nada les falta a los que le temen;\nlos ricos empobrecen y pasan hambre,\nlos que buscan al Señor no carecen de nada. R.",
           "respuesta": "R. Bendigo al Señor en todo momento.",
-          "respuestaOpcional": "",
+          "id": "opt_11",
           "strophes": [
             [
               "Bendigo al Señor en todo momento,",
@@ -2072,51 +1845,53 @@
               "los que buscan al Señor no carecen de nada. R."
             ]
           ],
-          "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.\n\nTodos sus santos, temed al Señor,\nporque nada les falta a los que le temen;\nlos ricos empobrecen y pasan hambre,\nlos que buscan al Señor no carecen de nada. R.",
+          "respuestaOpcional": "",
+          "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 2a)",
+          "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 2a)",
           "lines": [
             {
-              "line": "R. Bendigo al Señor en todo momento.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Bendigo al Señor en todo momento."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Bendigo al Señor en todo momento,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Bendigo al Señor en todo momento,"
             },
             {
               "line": "su alabanza está siempre en mi boca;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "mi alma se gloría en el Señor:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mi alma se gloría en el Señor:"
             },
             {
-              "line": "que los humildes lo escuchen y se alegren. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "que los humildes lo escuchen y se alegren. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Proclamad conmigo la grandeza del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Proclamad conmigo la grandeza del Señor,"
             },
             {
-              "line": "ensalcemos juntos su nombre.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "ensalcemos juntos su nombre."
             },
             {
               "line": "Yo consulté al Señor, y me respondió,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "me libró de todas mis ansias. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "me libró de todas mis ansias. R."
             },
             {
               "line": "",
@@ -2127,12 +1902,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "vuestro rostro no se avergonzará.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "vuestro rostro no se avergonzará."
             },
             {
-              "line": "Si el afligido invoca al Señor, él lo escucha",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Si el afligido invoca al Señor, él lo escucha"
             },
             {
               "line": "y lo salva de sus angustias. R.",
@@ -2155,8 +1930,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "dichoso el que se acoge a él. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "dichoso el que se acoge a él. R."
             },
             {
               "line": "",
@@ -2181,12 +1956,8 @@
           ]
         },
         {
-          "id": "opt_12",
-          "name": "Opción 12: Salmo 130, 1. 2. 3",
-          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
-          "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
           "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
-          "respuestaOpcional": "",
+          "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
           "strophes": [
             [
               "Señor, mi corazón no es ambicioso,",
@@ -2203,27 +1974,28 @@
               "ahora y por siempre. R."
             ]
           ],
-          "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
+          "id": "opt_12",
+          "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
           "lines": [
             {
               "line": "R. Guarda mi alma en la paz, junto a ti, Señor.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Señor, mi corazón no es ambicioso,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Señor, mi corazón no es ambicioso,"
             },
             {
-              "line": "ni mis ojos altaneros;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "ni mis ojos altaneros;"
             },
             {
-              "line": "no pretendo grandezas",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "no pretendo grandezas"
             },
             {
               "line": "que superan mi capacidad. R.",
@@ -2238,62 +2010,31 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "como un niño en brazos de su madre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "como un niño en brazos de su madre. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Espere Israel en el Señor",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Espere Israel en el Señor"
             },
             {
-              "line": "ahora y por siempre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "ahora y por siempre. R."
             }
-          ]
+          ],
+          "respuestaOpcional": "",
+          "name": "Opción 12: Salmo 130, 1. 2. 3",
+          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3"
         },
         {
           "id": "opt_13",
-          "name": "Opción 13: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
-          "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
-          "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
-          "respuesta": "R. Dichoso quien teme al Señor.",
-          "respuestaOpcional": "R. Aleluya.",
-          "strophes": [
-            [
-              "Dichoso quien teme al Señor",
-              "y ama de corazón sus mandatos.",
-              "Su linaje será poderoso en la tierra,",
-              "la descendencia del justo será bendita. R."
-            ],
-            [
-              "En su casa habrá riquezas y abundancia,",
-              "su caridad es constante, sin falta.",
-              "En las tinieblas brilla como una luz",
-              "el que es justo, clemente y compasivo. R."
-            ],
-            [
-              "Dichoso el que se apiada y presta,",
-              "y administra rectamente sus asuntos.",
-              "El justo jamás vacilará,",
-              "su recuerdo será perpetuo;",
-              "no temerá las malas noticias. R."
-            ],
-            [
-              "Su corazón está firme en el Señor.",
-              "Su corazón está seguro, sin temor,",
-              "hasta que vea derrotados a sus enemigos. R."
-            ],
-            [
-              "Reparte limosna a los pobres;",
-              "su caridad es constante, sin falta,",
-              "y alzará la frente con dignidad. R."
-            ]
-          ],
           "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo;\nno temerá las malas noticias. R.\n\nSu corazón está firme en el Señor.\nSu corazón está seguro, sin temor,\nhasta que vea derrotados a sus enemigos. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
+          "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
+          "respuestaOpcional": "R. Aleluya.",
           "lines": [
             {
               "line": "R. Dichoso quien teme al Señor.",
@@ -2308,8 +2049,8 @@
               "sC": "salmo-linea salmo-obien"
             },
             {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Aleluya."
             },
             {
               "line": "",
@@ -2328,8 +2069,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la descendencia del justo será bendita. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "la descendencia del justo será bendita. R."
             },
             {
               "line": "",
@@ -2340,20 +2081,20 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "su caridad es constante, sin falta.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "su caridad es constante, sin falta."
             },
             {
-              "line": "En las tinieblas brilla como una luz",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "En las tinieblas brilla como una luz"
             },
             {
               "line": "el que es justo, clemente y compasivo. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Dichoso el que se apiada y presta,",
@@ -2392,8 +2133,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Reparte limosna a los pobres;",
@@ -2404,18 +2145,103 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "y alzará la frente con dignidad. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y alzará la frente con dignidad. R."
             }
-          ]
+          ],
+          "respuesta": "R. Dichoso quien teme al Señor.",
+          "strophes": [
+            [
+              "Dichoso quien teme al Señor",
+              "y ama de corazón sus mandatos.",
+              "Su linaje será poderoso en la tierra,",
+              "la descendencia del justo será bendita. R."
+            ],
+            [
+              "En su casa habrá riquezas y abundancia,",
+              "su caridad es constante, sin falta.",
+              "En las tinieblas brilla como una luz",
+              "el que es justo, clemente y compasivo. R."
+            ],
+            [
+              "Dichoso el que se apiada y presta,",
+              "y administra rectamente sus asuntos.",
+              "El justo jamás vacilará,",
+              "su recuerdo será perpetuo;",
+              "no temerá las malas noticias. R."
+            ],
+            [
+              "Su corazón está firme en el Señor.",
+              "Su corazón está seguro, sin temor,",
+              "hasta que vea derrotados a sus enemigos. R."
+            ],
+            [
+              "Reparte limosna a los pobres;",
+              "su caridad es constante, sin falta,",
+              "y alzará la frente con dignidad. R."
+            ]
+          ],
+          "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
+          "name": "Opción 13: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)"
         },
         {
-          "id": "opt_14",
-          "name": "Opción 14: Salmo 130, 1. 2. 3",
-          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
           "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
-          "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor",
           "respuestaOpcional": "",
+          "lines": [
+            {
+              "line": "R. Guarda mi alma en la paz, junto a ti, Señor",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Señor, mi corazón no es ambicioso,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "ni mis ojos altaneros;"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "no pretendo grandezas"
+            },
+            {
+              "line": "que superan mi capacidad. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Sino que acallo y modero mis deseos,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "como un niño en brazos de su madre. R."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Espere Israel en el Señor"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "ahora y por siempre. R."
+            }
+          ],
+          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
+          "id": "opt_14",
+          "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
+          "name": "Opción 14: Salmo 130, 1. 2. 3",
+          "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor",
           "strophes": [
             [
               "Señor, mi corazón no es ambicioso,",
@@ -2431,66 +2257,12 @@
               "Espere Israel en el Señor",
               "ahora y por siempre. R."
             ]
-          ],
-          "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
-          "lines": [
-            {
-              "line": "R. Guarda mi alma en la paz, junto a ti, Señor",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Señor, mi corazón no es ambicioso,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "ni mis ojos altaneros;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "no pretendo grandezas",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "que superan mi capacidad. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Sino que acallo y modero mis deseos,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "como un niño en brazos de su madre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Espere Israel en el Señor",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "ahora y por siempre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
           ]
         },
         {
-          "id": "opt_15",
           "name": "Opción 15: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
-          "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
-          "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
-          "respuesta": "R. Dichoso el que teme al Señor.",
-          "respuestaOpcional": "",
+          "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
+          "id": "opt_15",
           "strophes": [
             [
               "Dichoso el que teme al Señor",
@@ -2512,7 +2284,10 @@
               "todos los días de tu vida. R."
             ]
           ],
-          "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
+          "respuesta": "R. Dichoso el que teme al Señor.",
+          "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
+          "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
+          "respuestaOpcional": "",
           "lines": [
             {
               "line": "R. Dichoso el que teme al Señor.",
@@ -2523,8 +2298,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Dichoso el que teme al Señor",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Dichoso el que teme al Señor"
             },
             {
               "line": "y sigue sus caminos.",
@@ -2535,12 +2310,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "serás dichoso, te irá bien. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "serás dichoso, te irá bien. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Tu mujer, como parra fecunda,",
@@ -2555,16 +2330,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "alrededor de tu mesa. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "alrededor de tu mesa. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Ésta es la bendición del hombre",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Ésta es la bendición del hombre"
             },
             {
               "line": "que teme al Señor.",
@@ -2575,8 +2350,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "que veas la prosperidad de Jerusalén",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "que veas la prosperidad de Jerusalén"
             },
             {
               "line": "todos los días de tu vida. R.",
@@ -2585,12 +2360,126 @@
           ]
         },
         {
-          "id": "opt_16",
           "name": "Opción 16: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
-          "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
-          "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
+          "id": "opt_16",
           "respuesta": "R. Dichoso quien teme al Señor.",
+          "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
           "respuestaOpcional": "R. Aleluya",
+          "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-7a. 7b-8. 9 (R.: 1a)",
+          "lines": [
+            {
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Dichoso quien teme al Señor."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
+            },
+            {
+              "line": "R. Aleluya",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Dichoso quien teme al Señor",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "y ama de corazón sus mandatos.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Su linaje será poderoso en la tierra,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "la descendencia del justo será bendita. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "En su casa habrá riquezas y abundancia,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "su caridad es constante, sin falta."
+            },
+            {
+              "line": "En las tinieblas brilla como una luz",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "el que es justo, clemente y compasivo. R."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Dichoso el que se apiada y presta,"
+            },
+            {
+              "line": "y administra rectamente sus asuntos.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "El justo jamás vacilará,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "su recuerdo será perpetuo;"
+            },
+            {
+              "line": "no temerá las malas noticias. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Su corazón está firme en el Señor.",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "Su corazón está seguro, sin temor,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "hasta que vea derrotados a sus enemigos. R."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Reparte limosna a los pobres;",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "su caridad es constante, sin falta,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y alzará la frente con dignidad. R."
+            }
+          ],
           "strophes": [
             [
               "Dichoso quien teme al Señor",
@@ -2622,129 +2511,72 @@
               "y alzará la frente con dignidad. R."
             ]
           ],
-          "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo;\nno temerá las malas noticias. R.\n\nSu corazón está firme en el Señor.\nSu corazón está seguro, sin temor,\nhasta que vea derrotados a sus enemigos. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
-          "lines": [
-            {
-              "line": "R. Dichoso quien teme al Señor.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
-            },
-            {
-              "line": "R. Aleluya",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Dichoso quien teme al Señor",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "y ama de corazón sus mandatos.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Su linaje será poderoso en la tierra,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "la descendencia del justo será bendita. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "En su casa habrá riquezas y abundancia,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "su caridad es constante, sin falta.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "En las tinieblas brilla como una luz",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "el que es justo, clemente y compasivo. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Dichoso el que se apiada y presta,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "y administra rectamente sus asuntos.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "El justo jamás vacilará,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "su recuerdo será perpetuo;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "no temerá las malas noticias. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Su corazón está firme en el Señor.",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "Su corazón está seguro, sin temor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "hasta que vea derrotados a sus enemigos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Reparte limosna a los pobres;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "su caridad es constante, sin falta,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y alzará la frente con dignidad. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo;\nno temerá las malas noticias. R.\n\nSu corazón está firme en el Señor.\nSu corazón está seguro, sin temor,\nhasta que vea derrotados a sus enemigos. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R."
         },
         {
-          "id": "opt_17",
-          "name": "Opción 17: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+          "lines": [
+            {
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Tú, Señor, eres el lote de mi heredad."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Protégeme, Dios mío, que me refugio en ti;",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "yo digo al Señor: «Tú eres mi bien».",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "El Señor es el lote de mi heredad y mi copa;"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "mi suerte está en tu mano. R."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Bendeciré al Señor, que me aconseja,"
+            },
+            {
+              "line": "hasta de noche me instruye internamente.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Tengo siempre presente al Señor,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "con él a mi derecha no vacilaré. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Me enseñarás el sendero de la vida,"
+            },
+            {
+              "line": "me saciarás de gozo en tu presencia,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "de alegría perpetua a tu derecha. R."
+            }
+          ],
           "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Protégeme, Dios mío, que me refugio en ti;",
@@ -2764,105 +2596,23 @@
               "de alegría perpetua a tu derecha. R."
             ]
           ],
+          "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
+          "id": "opt_17",
+          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
           "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
-          "lines": [
-            {
-              "line": "R. Tú, Señor, eres el lote de mi heredad.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Protégeme, Dios mío, que me refugio en ti;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "yo digo al Señor: «Tú eres mi bien».",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "El Señor es el lote de mi heredad y mi copa;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "mi suerte está en tu mano. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Bendeciré al Señor, que me aconseja,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "hasta de noche me instruye internamente.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Tengo siempre presente al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "con él a mi derecha no vacilaré. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Me enseñarás el sendero de la vida,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "me saciarás de gozo en tu presencia,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "de alegría perpetua a tu derecha. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "respuestaOpcional": "",
+          "name": "Opción 17: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)"
         },
         {
-          "id": "opt_18",
-          "name": "Opción 18: Salmo 1, 1-2. 3. 4 y 6 (R.: 2a)",
-          "salmo": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: 2a)",
           "subtitle": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: 2a)",
           "respuesta": "R. Su gozo es la ley del Señor.",
           "respuestaOpcional": "",
-          "strophes": [
-            [
-              "Dichoso el hombre",
-              "que no sigue el consejo de los impíos,",
-              "ni entra por la senda de los pecadores,",
-              "ni se sienta en la reunión de los cínicos;",
-              "sino que su gozo es la ley del Señor,",
-              "y medita su ley día y noche. R."
-            ],
-            [
-              "Será como un árbol",
-              "plantado al borde de la acequia:",
-              "da fruto en su sazón",
-              "y no se marchitan sus hojas;",
-              "y cuanto emprende tiene buen fin. R."
-            ],
-            [
-              "No así los impíos, no así;",
-              "serán paja que arrebata el viento.",
-              "Porque el Señor protege el camino de los justos,",
-              "pero el camino de los impíos acaba mal. R."
-            ]
-          ],
-          "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
+          "salmo": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: 2a)",
+          "id": "opt_18",
           "lines": [
             {
-              "line": "R. Su gozo es la ley del Señor.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Su gozo es la ley del Señor."
             },
             {
               "line": "",
@@ -2897,12 +2647,12 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Será como un árbol",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Será como un árbol"
             },
             {
-              "line": "plantado al borde de la acequia:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "plantado al borde de la acequia:"
             },
             {
               "line": "da fruto en su sazón",
@@ -2925,8 +2675,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "serán paja que arrebata el viento.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "serán paja que arrebata el viento."
             },
             {
               "line": "Porque el Señor protege el camino de los justos,",
@@ -2936,15 +2686,34 @@
               "line": "pero el camino de los impíos acaba mal. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
+          ],
+          "name": "Opción 18: Salmo 1, 1-2. 3. 4 y 6 (R.: 2a)",
+          "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
+          "strophes": [
+            [
+              "Dichoso el hombre",
+              "que no sigue el consejo de los impíos,",
+              "ni entra por la senda de los pecadores,",
+              "ni se sienta en la reunión de los cínicos;",
+              "sino que su gozo es la ley del Señor,",
+              "y medita su ley día y noche. R."
+            ],
+            [
+              "Será como un árbol",
+              "plantado al borde de la acequia:",
+              "da fruto en su sazón",
+              "y no se marchitan sus hojas;",
+              "y cuanto emprende tiene buen fin. R."
+            ],
+            [
+              "No así los impíos, no así;",
+              "serán paja que arrebata el viento.",
+              "Porque el Señor protege el camino de los justos,",
+              "pero el camino de los impíos acaba mal. R."
+            ]
           ]
         },
         {
-          "id": "opt_19",
-          "name": "Opción 19: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 9a)",
-          "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 9a)",
-          "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 9a)",
-          "respuesta": "R. Gustad y ved qué bueno es el Señor.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Bendigo al Señor en todo momento,",
@@ -2977,19 +2746,23 @@
               "los que buscan al Señor no carecen de nada. R."
             ]
           ],
-          "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.\n\nTodos sus santos, temed al Señor,\nporque nada les falta a los que le temen;\nlos ricos empobrecen y pasan hambre,\nlos que buscan al Señor no carecen de nada. R.",
+          "respuesta": "R. Gustad y ved qué bueno es el Señor.",
+          "name": "Opción 19: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 9a)",
+          "respuestaOpcional": "",
+          "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 9a)",
+          "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9. 10-11 (R.: 9a)",
           "lines": [
             {
               "line": "R. Gustad y ved qué bueno es el Señor.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Bendigo al Señor en todo momento,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Bendigo al Señor en todo momento,"
             },
             {
               "line": "su alabanza está siempre en mi boca;",
@@ -3024,16 +2797,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Contempladlo, y quedaréis radiantes,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "vuestro rostro no se avergonzará.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "vuestro rostro no se avergonzará."
             },
             {
               "line": "Si el afligido invoca al Señor, él lo escucha",
@@ -3048,32 +2821,32 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "El ángel del Señor acampa",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "El ángel del Señor acampa"
             },
             {
               "line": "en torno a sus fieles y los protege.",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Gustad y ved qué bueno es el Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Gustad y ved qué bueno es el Señor,"
             },
             {
               "line": "dichoso el que se acoge a él. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Todos sus santos, temed al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Todos sus santos, temed al Señor,"
             },
             {
-              "line": "porque nada les falta a los que le temen;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "porque nada les falta a los que le temen;"
             },
             {
               "line": "los ricos empobrecen y pasan hambre,",
@@ -3083,9 +2856,236 @@
               "line": "los que buscan al Señor no carecen de nada. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.\n\nTodos sus santos, temed al Señor,\nporque nada les falta a los que le temen;\nlos ricos empobrecen y pasan hambre,\nlos que buscan al Señor no carecen de nada. R.",
+          "id": "opt_19"
         }
-      ]
+      ],
+      "id": "salmo_variantes",
+      "label": "Salmo Responsorial"
     }
-  ]
+  ],
+  "subtitle": "Interleccional: 1 Crónicas 29, 10. 11abc. 11d-12a. 12bcd (R.: 12b)",
+  "sourceBook": "eucaristia",
+  "tiempo": "Octubre",
+  "ciclo": "Santos",
+  "title": "TÉMPORAS DE ACCIÓN DE GRACIAS Y DE PETICIÓN",
+  "id": "seus_161",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "5",
+  "estrofas": [
+    [
+      "Bendito eres, Señor,",
+      "Dios de nuestro padre Israel,",
+      "por los siglos de los siglos. R."
+    ],
+    [
+      "Tuyos son, Señor, la grandeza y el poder,",
+      "la gloria, el esplendor, la majestad,",
+      "porque tuyo es cuánto hay en cielo y tierra. R."
+    ],
+    [
+      "Tú eres rey y soberano de todo.",
+      "De ti viene la riqueza y la gloria. R."
+    ],
+    [
+      "Tú eres Señor del universo,",
+      "en tu mano está el poder y la fuerza,",
+      "tú engrandeces y confortas a todos. R."
+    ],
+    [
+      "LECTURAS PARA CUANDO LAS TÉMPORAS SE CELEBRAN EN TRES DÍAS",
+      "Día de acción de gracias R."
+    ],
+    [
+      "OPCION 1",
+      "Salmo responsorial: Salmo 8, 4-5. 6-7. 8-9. 10 (R.: cf. 7) R."
+    ],
+    [
+      "R. Señor, diste al hombre el mando sobre las obras de tus manos. R."
+    ],
+    [
+      "Cuando contemplo el cielo, obra de tus dedos,",
+      "la luna y las estrellas que has creado,",
+      "¿qué es el hombre, para que te acuerdes de él,",
+      "el ser humano, para darle poder? R."
+    ],
+    [
+      "Lo hiciste poco inferior a los ángeles,",
+      "lo coronaste de gloria y dignidad,",
+      "le diste el mando sobre las obras de tus manos,",
+      "todo lo sometiste bajo sus pies. R."
+    ],
+    [
+      "Rebaños de ovejas y toros,",
+      "y hasta las bestias del campo,",
+      "las aves del cielo, los peces del mar,",
+      "que trazan sendas por el mar. R."
+    ],
+    [
+      "Señor, dueño nuestro,",
+      "¡qué admirable es tu nombre",
+      "en toda la tierra! R."
+    ],
+    [
+      "OPCION 2",
+      "Interleccional: 1 Crónicas 29, 10. 11 abc. 11 d- 12a. 12bcd (R.: 12b) R."
+    ],
+    [
+      "R. Tú eres Señor del universo. R."
+    ],
+    [
+      "Bendito eres, Señor,",
+      "Dios de nuestro padre Israel,",
+      "por los siglos de los siglos. R."
+    ],
+    [
+      "Tuyos son, Señor, la grandeza y el poder,",
+      "la gloria, el esplendor, la majestad,",
+      "porque tuyo es cuanto hay en cielo y tierra. R."
+    ],
+    [
+      "Tú eres rey y soberano de todo.",
+      "De ti viene la riqueza y la gloria. R."
+    ],
+    [
+      "Tú eres Señor del universo,",
+      "en tu mano está el poder y la fuerza,",
+      "tú engrandeces y confortas a todos. R."
+    ],
+    [
+      "Día penitencial",
+      "OPCION 1",
+      "Salmo responsorial: Salmo 50, 3-4. 5-6a. 12-13. 14 y 17 (R.: cf. 3a) R."
+    ],
+    [
+      "R. Misericordia, Señor: hemos pecado. R."
+    ],
+    [
+      "Misericordia, Dios mío, por tu bondad,",
+      "por tu inmensa compasión borra mi culpa;",
+      "lava del todo mi delito, limpia mi pecado. R."
+    ],
+    [
+      "Pues yo reconozco mi culpa,",
+      "tengo siempre presente mi pecado:",
+      "contra ti, contra ti solo pequé,",
+      "cometí la maldad que aborreces. R."
+    ],
+    [
+      "Oh Dios, crea en mí un corazón puro,",
+      "renuévame por dentro con espíritu firme;",
+      "no me arrojes lejos de tu rostro,",
+      "no me quites tu santo espíritu. R."
+    ],
+    [
+      "Devuélveme la alegría de tu salvación,",
+      "afiánzame con espíritu generoso.",
+      "Señor, me abrirás los labios,",
+      "y mi boca proclamará tu alabanza. R."
+    ],
+    [
+      "OPCION 2",
+      "Salmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 3) R."
+    ],
+    [
+      "R. Si llevas cuenta de los delitos, Señor,",
+      "¿quién podrá resistir? R."
+    ],
+    [
+      "Desde lo hondo a ti grito, Señor;",
+      "Señor, escucha mi voz;",
+      "estén tus oídos atentos",
+      "a la voz de mi súplica. R."
+    ],
+    [
+      "Si llevas cuenta de los delitos,",
+      "Señor, ¿quién podrá resistir?",
+      "Pero de ti procede el perdón,",
+      "y así infundes respeto. R."
+    ],
+    [
+      "Mi alma espera en el Señor,",
+      "espera en su palabra;",
+      "mi alma aguarda al Señor,",
+      "más que el centinela la aurora. R."
+    ],
+    [
+      "Aguarde Israel al Señor,",
+      "como el centinela la aurora;",
+      "porque del Señor viene la misericordia,",
+      "la redención copiosa;",
+      "y él redimirá a Israel",
+      "de todos sus delitos. R."
+    ],
+    [
+      "Día de petición por la actividad humana R."
+    ],
+    [
+      "OPCION 1",
+      "Salmo responsorial: Salmo 27, 1ab-2. 7. 8-9 (R.: 2a) R."
+    ],
+    [
+      "R. Escucha, Señor, mi voz suplicante. R."
+    ],
+    [
+      "A ti, Señor, te invoco;",
+      "Roca mía, no seas sordo a mi voz.",
+      "Escucha mi voz suplicante",
+      "cuando te pido auxilio,",
+      "cuando alzo las manos",
+      "hacia tu santuario. R."
+    ],
+    [
+      "El Señor es mi fuerza y mi escudo:",
+      "en él confía mi corazón;",
+      "me socorrió, y mi corazón se alegra",
+      "y le canta agradecido. R."
+    ],
+    [
+      "El Señor es fuerza para su pueblo,",
+      "apoyo y salvación para su Ungido.",
+      "Salva a tu pueblo y bendice tu heredad,",
+      "sé su pastor y llévalos siempre. R."
+    ],
+    [
+      "OPCION 2",
+      "Salmo responsorial: Salmo 24, 1-3. 4-5. 6-7 (R.: 2a) R."
+    ],
+    [
+      "R. Dios mío, en ti confío,",
+      "no quede yo defraudado. R."
+    ],
+    [
+      "A ti, Señor, levanto mi alma;",
+      "Dios mío, en ti confío,",
+      "no quede yo defraudado,",
+      "que no triunfen de mí mis enemigos;",
+      "pues los que esperan en ti no quedan defraudados,",
+      "mientras que el fracaso malogra a los traidores. R."
+    ],
+    [
+      "Señor, enséñame tus caminos,",
+      "instrúyeme en tus sendas:",
+      "haz que camine con lealtad;",
+      "enséñame, porque tú eres mi Dios y Salvador,",
+      "y todo el día te estoy esperando. R."
+    ],
+    [
+      "Recuerda, Señor, que tu ternura",
+      "y tu misericordia son eternas;",
+      "no te acuerdes de los pecados",
+      "ni de las maldades de mi juventud;",
+      "acuérdate de mí con misericordia,",
+      "por tu bondad, Señor. R."
+    ]
+  ],
+  "searchPool": "temporas de accion de gracias y de peticion memoria libre santos octubre 5 opcion 1 1 cronicas 29 10 11abc 11d 12a 12bcd r 12b r tu eres senor del universo bendito eres senor dios de nuestro padre israel por los siglos de los siglos r tuyos son senor la grandeza y el poder la gloria el esplendor la majestad porque tuyo es cuanto hay en cielo y tierra r tu eres rey y soberano de todo de ti viene la riqueza y la gloria r tu eres senor del universo en tu mano esta el poder y la fuerza tu engrandeces y confortas a todos r lecturas para cuando las temporas se celebran en tres dias dia de accion de gracias r opcion 1 salmo responsorial salmo 8 4 5 6 7 8 9 10 r cf 7 r r senor diste al hombre el mando sobre las obras de tus manos r cuando contemplo el cielo obra de tus dedos la luna y las estrellas que has creado que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos todo lo sometiste bajo sus pies r rebanos de ovejas y toros y hasta las bestias del campo las aves del cielo los peces del mar que trazan sendas por el mar r senor dueno nuestro que admirable es tu nombre en toda la tierra r opcion 2 interleccional 1 cronicas 29 10 11 abc 11 d 12a 12bcd r 12b r r tu eres senor del universo r bendito eres senor dios de nuestro padre israel por los siglos de los siglos r tuyos son senor la grandeza y el poder la gloria el esplendor la majestad porque tuyo es cuanto hay en cielo y tierra r tu eres rey y soberano de todo de ti viene la riqueza y la gloria r tu eres senor del universo en tu mano esta el poder y la fuerza tu engrandeces y confortas a todos r dia penitencial opcion 1 salmo responsorial salmo 50 3 4 5 6a 12 13 14 y 17 r cf 3a r r misericordia senor hemos pecado r misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso senor me abriras los labios y mi boca proclamara tu alabanza r opcion 2 salmo responsorial salmo 129 1 2 3 4 5 6 7 8 r 3 r r si llevas cuenta de los delitos senor quien podra resistir r desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuenta de los delitos senor quien podra resistir pero de ti procede el perdon y asi infundes respeto r mi alma espera en el senor espera en su palabra mi alma aguarda al senor mas que el centinela la aurora r aguarde israel al senor como el centinela la aurora porque del senor viene la misericordia la redencion copiosa y el redimira a israel de todos sus delitos r dia de peticion por la actividad humana r opcion 1 salmo responsorial salmo 27 1ab 2 7 8 9 r 2a r r escucha senor mi voz suplicante r a ti senor te invoco roca mia no seas sordo a mi voz escucha mi voz suplicante cuando te pido auxilio cuando alzo las manos hacia tu santuario r el senor es mi fuerza y mi escudo en el confia mi corazon me socorrio y mi corazon se alegra y le canta agradecido r el senor es fuerza para su pueblo apoyo y salvacion para su ungido salva a tu pueblo y bendice tu heredad se su pastor y llevalos siempre r opcion 2 salmo responsorial salmo 24 1 3 4 5 6 7 r 2a r r dios mio en ti confio no quede yo defraudado r a ti senor levanto mi alma dios mio en ti confio no quede yo defraudado que no triunfen de mi mis enemigos pues los que esperan en ti no quedan defraudados mientras que el fracaso malogra a los traidores r senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador y todo el dia te estoy esperando r recuerda senor que tu ternura y tu misericordia son eternas no te acuerdes de los pecados ni de las maldades de mi juventud acuerdate de mi con misericordia por tu bondad senor r opcion 2 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r opcion 3 salmo 14 2 3ab 3cd 4ab 5 r 1b r el justo habitara en tu monte santo senor el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r opcion 4 salmo 111 1 2 3 4 5 7a 7b 8 9 r 1a r dichoso quien teme al senor dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo no temera las malas noticias r su corazon esta firme en el senor su corazon esta seguro sin temor hasta que vea derrotados a sus enemigos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r opcion 5 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r opcion 6 salmo 14 2 3ab 3cd 4ab 5 r 1b r el justo habitara en tu monte santo senor el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r opcion 7 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r opcion 8 salmo 127 1 2 3 4 5 r 1a r dichoso el que teme al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r opcion 9 salmo 102 1 2 3 4 8 9 13 14 17 18a r 1a r bendice alma mia al senor bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no esta siempre acusando ni guarda rencor perpetuo r como un padre siente ternura por sus hijos siente el senor ternura por sus fieles porque el conoce nuestra masa se acuerda de que somos barro r pero la misericordia del senor dura siempre su justicia pasa de hijos a nietos para los que guardan la alianza r opcion 10 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r opcion 11 salmo 33 2 3 4 5 6 7 8 9 10 11 r 2a r bendigo al senor en todo momento bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r todos sus santos temed al senor porque nada les falta a los que le temen los ricos empobrecen y pasan hambre los que buscan al senor no carecen de nada r opcion 12 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r opcion 13 salmo 111 1 2 3 4 5 7a 7b 8 9 r 1a r dichoso quien teme al senor dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo no temera las malas noticias r su corazon esta firme en el senor su corazon esta seguro sin temor hasta que vea derrotados a sus enemigos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r opcion 14 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r opcion 15 salmo 127 1 2 3 4 5 r 1a r dichoso el que teme al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r opcion 16 salmo 111 1 2 3 4 5 7a 7b 8 9 r 1a r dichoso quien teme al senor dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo no temera las malas noticias r su corazon esta firme en el senor su corazon esta seguro sin temor hasta que vea derrotados a sus enemigos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r opcion 17 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r opcion 18 salmo 1 1 2 3 4 y 6 r 2a r su gozo es la ley del senor dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r opcion 19 salmo 33 2 3 4 5 6 7 8 9 10 11 r 9a r gustad y ved que bueno es el senor bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r todos sus santos temed al senor porque nada les falta a los que le temen los ricos empobrecen y pasan hambre los que buscan al senor no carecen de nada r",
+  "textoCompleto": "Bendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuánto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.\n\nLECTURAS PARA CUANDO LAS TÉMPORAS SE CELEBRAN EN TRES DÍAS\nDía de acción de gracias R.\n\nOPCION 1\nSalmo responsorial: Salmo 8, 4-5. 6-7. 8-9. 10 (R.: cf. 7) R.\n\nR. Señor, diste al hombre el mando sobre las obras de tus manos. R.\n\nCuando contemplo el cielo, obra de tus dedos,\nla luna y las estrellas que has creado,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos,\ntodo lo sometiste bajo sus pies. R.\n\nRebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.\n\nSeñor, dueño nuestro,\n¡qué admirable es tu nombre\nen toda la tierra! R.\n\nOPCION 2\nInterleccional: 1 Crónicas 29, 10. 11 abc. 11 d- 12a. 12bcd (R.: 12b) R.\n\nR. Tú eres Señor del universo. R.\n\nBendito eres, Señor,\nDios de nuestro padre Israel,\npor los siglos de los siglos. R.\n\nTuyos son, Señor, la grandeza y el poder,\nla gloria, el esplendor, la majestad,\nporque tuyo es cuanto hay en cielo y tierra. R.\n\nTú eres rey y soberano de todo.\nDe ti viene la riqueza y la gloria. R.\n\nTú eres Señor del universo,\nen tu mano está el poder y la fuerza,\ntú engrandeces y confortas a todos. R.\n\nDía penitencial\nOPCION 1\nSalmo responsorial: Salmo 50, 3-4. 5-6a. 12-13. 14 y 17 (R.: cf. 3a) R.\n\nR. Misericordia, Señor: hemos pecado. R.\n\nMisericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito, limpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.\n\nOPCION 2\nSalmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 3) R.\n\nR. Si llevas cuenta de los delitos, Señor,\n¿quién podrá resistir? R.\n\nDesde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos,\nSeñor, ¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela la aurora. R.\n\nAguarde Israel al Señor,\ncomo el centinela la aurora;\nporque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.\n\nDía de petición por la actividad humana R.\n\nOPCION 1\nSalmo responsorial: Salmo 27, 1ab-2. 7. 8-9 (R.: 2a) R.\n\nR. Escucha, Señor, mi voz suplicante. R.\n\nA ti, Señor, te invoco;\nRoca mía, no seas sordo a mi voz.\nEscucha mi voz suplicante\ncuando te pido auxilio,\ncuando alzo las manos\nhacia tu santuario. R.\n\nEl Señor es mi fuerza y mi escudo:\nen él confía mi corazón;\nme socorrió, y mi corazón se alegra\ny le canta agradecido. R.\n\nEl Señor es fuerza para su pueblo,\napoyo y salvación para su Ungido.\nSalva a tu pueblo y bendice tu heredad,\nsé su pastor y llévalos siempre. R.\n\nOPCION 2\nSalmo responsorial: Salmo 24, 1-3. 4-5. 6-7 (R.: 2a) R.\n\nR. Dios mío, en ti confío,\nno quede yo defraudado. R.\n\nA ti, Señor, levanto mi alma;\nDios mío, en ti confío,\nno quede yo defraudado,\nque no triunfen de mí mis enemigos;\npues los que esperan en ti no quedan defraudados,\nmientras que el fracaso malogra a los traidores. R.\n\nSeñor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador,\ny todo el día te estoy esperando. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nno te acuerdes de los pecados\nni de las maldades de mi juventud;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.",
+  "respuestaOpcional": "",
+  "hasAudio": false,
+  "orden": 10050,
+  "respuesta": "R. Tú eres Señor del universo.",
+  "salmo": "Interleccional: 1 Crónicas 29, 10. 11abc. 11d-12a. 12bcd (R.: 12b)"
 }

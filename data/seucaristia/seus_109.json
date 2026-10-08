@@ -1,15 +1,5 @@
 {
-  "id": "seus_109",
-  "title": "San Pedro Crisólogo, obispo y doctor de la Iglesia",
-  "celebracion": "San Pedro Crisólogo, obispo y doctor de la Iglesia",
-  "subtitle": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
-  "salmo": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
-  "ciclo": "Santos",
-  "tiempo": "Julio",
-  "dia": "30",
-  "orden": 7300,
-  "respuesta": "R. Enséñame, Señor, tus leyes.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "¿Cómo podrá un joven andar honestamente?",
@@ -36,26 +26,23 @@
       "más que todas las riquezas. R."
     ]
   ],
-  "textoCompleto": "¿Cómo podrá un joven andar honestamente?\nCumpliendo tus palabras. R.\n\nTe busco de todo corazón,\nno consientas que me desvíe de tus mandamientos. R.\n\nEn mi corazón escondo tus consignas,\nasí no pecaré contra ti. R.\n\nBendito eres, Señor,\nenséñame tus leyes. R.\n\nMis labios van enumerando\nlos mandamientos de tu boca. R.\n\nMi alegría es el camino de tus preceptos,\nmás que todas las riquezas. R.",
-  "sourceBook": "eucaristia",
+  "ciclo": "Santos",
+  "celebracion": "San Pedro Crisólogo, obispo y doctor de la Iglesia",
+  "title": "San Pedro Crisólogo, obispo y doctor de la Iglesia",
+  "respuesta": "R. Enséñame, Señor, tus leyes.",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "id": "seus_109",
   "hasAudio": false,
-  "searchPool": "san pedro crisologo obispo y doctor de la iglesia memoria libre santos julio 30 opcion 1 salmo 118 9 10 11 12 13 14 r 12b r ensename senor tus leyes como podra un joven andar honestamente cumpliendo tus palabras r te busco de todo corazon no consientas que me desvie de tus mandamientos r en mi corazon escondo tus consignas asi no pecare contra ti r bendito eres senor ensename tus leyes r mis labios van enumerando los mandamientos de tu boca r mi alegria es el camino de tus preceptos mas que todas las riquezas r opcion 2 salmo 36 3 4 5 6 30 31 r 30a r la boca del justo expone la sabiduria confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r encomienda tu camino al senor confia en el y el actuara hara tu justicia como el amanecer tu derecho como el mediodia r la boca del justo expone la sabiduria su lengua explica el derecho porque lleva en el corazon la ley de su dios y sus pasos no vacilan r opcion 3 salmo 18 8 9 10 11 r 10b r los mandamientos del senor son verdaderos y enteramente justos la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r los mandamientos del senor son rectos y alegran el corazon la norma del senor es limpida y da luz a los ojos r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r mas preciosos que el oro mas que el oro fino mas dulces que la miel de un panal que destila r opcion 4 salmo 36 3 4 5 6 30 31 r 30a r la boca del justo expone la sabiduria confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r encomienda tu camino al senor confia en el y el actuara hara tu justicia como el amanecer tu derecho como el mediodia r la boca del justo expone la sabiduria su lengua explica el derecho porque lleva en el corazon la ley de su dios y sus pasos no vacilan r opcion 5 salmo 18 8 9 10 11 r jn 6 63c r tus palabras senor son espiritu y vida la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r los mandamientos del senor son rectos y alegran el corazon la norma del senor es limpida y da luz a los ojos r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r mas preciosos que el oro mas que el oro fino mas dulces que la miel de un panal que destila r opcion 6 salmo 36 3 4 5 6 30 31 r 30a r la boca del justo expone la sabiduria confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r encomienda tu camino al senor confia en el y el actuara hara tu justicia como el amanecer tu derecho como el mediodia r la boca del justo expone la sabiduria su lengua explica el derecho porque lleva en el corazon la ley de su dios y sus pasos no vacilan r",
   "lizq": [
     {
-      "type": "variant-group",
-      "id": "salmo_variantes",
       "label": "Salmo Responsorial",
+      "id": "salmo_variantes",
       "color": "var(--Rojo-Leccionario)",
+      "type": "variant-group",
       "variants": [
         {
-          "id": "opt_1",
           "name": "Opción 1: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
-          "salmo": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
-          "subtitle": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
           "respuesta": "R. Enséñame, Señor, tus leyes.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "¿Cómo podrá un joven andar honestamente?",
@@ -82,19 +69,23 @@
               "más que todas las riquezas. R."
             ]
           ],
+          "subtitle": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
+          "salmo": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
           "textoCompleto": "¿Cómo podrá un joven andar honestamente?\nCumpliendo tus palabras. R.\n\nTe busco de todo corazón,\nno consientas que me desvíe de tus mandamientos. R.\n\nEn mi corazón escondo tus consignas,\nasí no pecaré contra ti. R.\n\nBendito eres, Señor,\nenséñame tus leyes. R.\n\nMis labios van enumerando\nlos mandamientos de tu boca. R.\n\nMi alegría es el camino de tus preceptos,\nmás que todas las riquezas. R.",
+          "respuestaOpcional": "",
+          "id": "opt_1",
           "lines": [
             {
-              "line": "R. Enséñame, Señor, tus leyes.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Enséñame, Señor, tus leyes."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "¿Cómo podrá un joven andar honestamente?",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "¿Cómo podrá un joven andar honestamente?"
             },
             {
               "line": "Cumpliendo tus palabras. R.",
@@ -121,8 +112,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "así no pecaré contra ti. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "así no pecaré contra ti. R."
             },
             {
               "line": "",
@@ -141,8 +132,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Mis labios van enumerando",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Mis labios van enumerando"
             },
             {
               "line": "los mandamientos de tu boca. R.",
@@ -153,22 +144,89 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Mi alegría es el camino de tus preceptos,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Mi alegría es el camino de tus preceptos,"
             },
             {
-              "line": "más que todas las riquezas. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "más que todas las riquezas. R."
             }
           ]
         },
         {
-          "id": "opt_2",
-          "name": "Opción 2: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
-          "salmo": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
+          "lines": [
+            {
+              "line": "R. La boca del justo expone la sabiduría.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Confía en el Señor y haz el bien,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "habita tu tierra y practica la lealtad;"
+            },
+            {
+              "line": "sea el Señor tu delicia,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "y él te dará lo que pide tu corazón. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Encomienda tu camino al Señor,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "confía en él, y. él actuará:"
+            },
+            {
+              "line": "hará tu justicia como el amanecer,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "tu derecho como el mediodía. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "La boca del justo expone la sabiduría,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "su lengua explica el derecho;",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "porque lleva en el corazón la ley de su Dios,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y sus pasos no vacilan. R."
+            }
+          ],
           "subtitle": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
-          "respuesta": "R. La boca del justo expone la sabiduría.",
+          "id": "opt_2",
+          "salmo": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
           "respuestaOpcional": "",
+          "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEncomienda tu camino al Señor,\nconfía en él, y. él actuará:\nhará tu justicia como el amanecer,\ntu derecho como el mediodía. R.\n\nLa boca del justo expone la sabiduría,\nsu lengua explica el derecho;\nporque lleva en el corazón la ley de su Dios,\ny sus pasos no vacilan. R.",
+          "respuesta": "R. La boca del justo expone la sabiduría.",
+          "name": "Opción 2: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
           "strophes": [
             [
               "Confía en el Señor y haz el bien,",
@@ -188,109 +246,15 @@
               "porque lleva en el corazón la ley de su Dios,",
               "y sus pasos no vacilan. R."
             ]
-          ],
-          "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEncomienda tu camino al Señor,\nconfía en él, y. él actuará:\nhará tu justicia como el amanecer,\ntu derecho como el mediodía. R.\n\nLa boca del justo expone la sabiduría,\nsu lengua explica el derecho;\nporque lleva en el corazón la ley de su Dios,\ny sus pasos no vacilan. R.",
-          "lines": [
-            {
-              "line": "R. La boca del justo expone la sabiduría.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Confía en el Señor y haz el bien,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "habita tu tierra y practica la lealtad;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "sea el Señor tu delicia,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y él te dará lo que pide tu corazón. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Encomienda tu camino al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "confía en él, y. él actuará:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "hará tu justicia como el amanecer,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "tu derecho como el mediodía. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "La boca del justo expone la sabiduría,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "su lengua explica el derecho;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "porque lleva en el corazón la ley de su Dios,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y sus pasos no vacilan. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
           ]
         },
         {
-          "id": "opt_3",
-          "name": "Opción 3: Salmo 18, 8. 9. 10. 11 (R.: 10b)",
-          "salmo": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: 10b)",
           "subtitle": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: 10b)",
-          "respuesta": "R. Los mandamientos del Señor son verdaderos y enteramente justos.",
-          "respuestaOpcional": "",
-          "strophes": [
-            [
-              "La ley del Señor es perfecta",
-              "y es descanso del alma;",
-              "el precepto del Señor es fiel",
-              "e instruye al ignorante. R."
-            ],
-            [
-              "Los mandamientos del Señor son rectos",
-              "y alegran el corazón;",
-              "la norma del Señor es límpida",
-              "y da luz a los ojos. R."
-            ],
-            [
-              "La voluntad del Señor es pura",
-              "y eternamente estable;",
-              "los mandamientos del Señor son verdaderos",
-              "y enteramente justos. R."
-            ],
-            [
-              "Más preciosos que el oro,",
-              "más que el oro fino;",
-              "más dulces que la miel",
-              "de un panal que destila. R."
-            ]
-          ],
           "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLos mandamientos del Señor son rectos\ny alegran el corazón;\nla norma del Señor es límpida\ny da luz a los ojos. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nMás preciosos que el oro,\nmás que el oro fino;\nmás dulces que la miel\nde un panal que destila. R.",
+          "respuesta": "R. Los mandamientos del Señor son verdaderos y enteramente justos.",
+          "id": "opt_3",
+          "respuestaOpcional": "",
+          "name": "Opción 3: Salmo 18, 8. 9. 10. 11 (R.: 10b)",
           "lines": [
             {
               "line": "R. Los mandamientos del Señor son verdaderos",
@@ -301,28 +265,28 @@
               "sC": "salmo-linea salmo-respuesta salmo-sangria"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "La ley del Señor es perfecta",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "y es descanso del alma;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "y es descanso del alma;"
             },
             {
-              "line": "el precepto del Señor es fiel",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "el precepto del Señor es fiel"
             },
             {
-              "line": "e instruye al ignorante. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "e instruye al ignorante. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Los mandamientos del Señor son rectos",
@@ -361,8 +325,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Más preciosos que el oro,",
@@ -373,117 +337,14 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "más dulces que la miel",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "más dulces que la miel"
             },
             {
               "line": "de un panal que destila. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
-        },
-        {
-          "id": "opt_4",
-          "name": "Opción 4: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
-          "salmo": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
-          "subtitle": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
-          "respuesta": "R. La boca del justo expone la sabiduría.",
-          "respuestaOpcional": "",
-          "strophes": [
-            [
-              "Confía en el Señor y haz el bien,",
-              "habita tu tierra y practica la lealtad;",
-              "sea el Señor tu delicia,",
-              "y él te dará lo que pide tu corazón. R."
-            ],
-            [
-              "Encomienda tu camino al Señor,",
-              "confía en él, y él actuará:",
-              "hará tu justicia como el amanecer,",
-              "tu derecho como el mediodía. R."
-            ],
-            [
-              "La boca del justo expone la sabiduría,",
-              "su lengua explica el derecho;",
-              "porque lleva en el corazón la ley de su Dios,",
-              "y sus pasos no vacilan. R."
-            ]
           ],
-          "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEncomienda tu camino al Señor,\nconfía en él, y él actuará:\nhará tu justicia como el amanecer,\ntu derecho como el mediodía. R.\n\nLa boca del justo expone la sabiduría,\nsu lengua explica el derecho;\nporque lleva en el corazón la ley de su Dios,\ny sus pasos no vacilan. R.",
-          "lines": [
-            {
-              "line": "R. La boca del justo expone la sabiduría.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Confía en el Señor y haz el bien,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "habita tu tierra y practica la lealtad;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "sea el Señor tu delicia,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y él te dará lo que pide tu corazón. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Encomienda tu camino al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "confía en él, y él actuará:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "hará tu justicia como el amanecer,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "tu derecho como el mediodía. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "La boca del justo expone la sabiduría,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "su lengua explica el derecho;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "porque lleva en el corazón la ley de su Dios,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y sus pasos no vacilan. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
-        },
-        {
-          "id": "opt_5",
-          "name": "Opción 5: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 63c)",
-          "salmo": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 63c)",
-          "subtitle": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 63c)",
-          "respuesta": "R. Tus palabras, Señor, son espíritu y vida.",
-          "respuestaOpcional": "R. Aleluya.",
           "strophes": [
             [
               "La ley del Señor es perfecta",
@@ -510,10 +371,17 @@
               "de un panal que destila. R."
             ]
           ],
-          "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLos mandamientos del Señor son rectos\ny alegran el corazón;\nla norma del Señor es límpida\ny da luz a los ojos. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nMás preciosos que el oro,\nmás que el oro fino;\nmás dulces que la miel\nde un panal que destila. R.",
+          "salmo": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: 10b)"
+        },
+        {
+          "subtitle": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
+          "salmo": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
+          "respuestaOpcional": "",
+          "name": "Opción 4: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
+          "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEncomienda tu camino al Señor,\nconfía en él, y él actuará:\nhará tu justicia como el amanecer,\ntu derecho como el mediodía. R.\n\nLa boca del justo expone la sabiduría,\nsu lengua explica el derecho;\nporque lleva en el corazón la ley de su Dios,\ny sus pasos no vacilan. R.",
           "lines": [
             {
-              "line": "R. Tus palabras, Señor, son espíritu y vida.",
+              "line": "R. La boca del justo expone la sabiduría.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
@@ -521,8 +389,98 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Confía en el Señor y haz el bien,"
+            },
+            {
+              "line": "habita tu tierra y practica la lealtad;",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "sea el Señor tu delicia,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y él te dará lo que pide tu corazón. R."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Encomienda tu camino al Señor,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "confía en él, y él actuará:"
+            },
+            {
+              "line": "hará tu justicia como el amanecer,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "tu derecho como el mediodía. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "La boca del justo expone la sabiduría,"
+            },
+            {
+              "line": "su lengua explica el derecho;",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "porque lleva en el corazón la ley de su Dios,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y sus pasos no vacilan. R."
+            }
+          ],
+          "id": "opt_4",
+          "respuesta": "R. La boca del justo expone la sabiduría.",
+          "strophes": [
+            [
+              "Confía en el Señor y haz el bien,",
+              "habita tu tierra y practica la lealtad;",
+              "sea el Señor tu delicia,",
+              "y él te dará lo que pide tu corazón. R."
+            ],
+            [
+              "Encomienda tu camino al Señor,",
+              "confía en él, y él actuará:",
+              "hará tu justicia como el amanecer,",
+              "tu derecho como el mediodía. R."
+            ],
+            [
+              "La boca del justo expone la sabiduría,",
+              "su lengua explica el derecho;",
+              "porque lleva en el corazón la ley de su Dios,",
+              "y sus pasos no vacilan. R."
+            ]
+          ]
+        },
+        {
+          "lines": [
+            {
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Tus palabras, Señor, son espíritu y vida."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
             },
             {
               "line": "R. Aleluya.",
@@ -533,12 +491,12 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "La ley del Señor es perfecta",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "La ley del Señor es perfecta"
             },
             {
-              "line": "y es descanso del alma;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "y es descanso del alma;"
             },
             {
               "line": "el precepto del Señor es fiel",
@@ -553,12 +511,12 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Los mandamientos del Señor son rectos",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Los mandamientos del Señor son rectos"
             },
             {
-              "line": "y alegran el corazón;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "y alegran el corazón;"
             },
             {
               "line": "la norma del Señor es límpida",
@@ -597,47 +555,53 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "más que el oro fino;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "más que el oro fino;"
             },
             {
-              "line": "más dulces que la miel",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "más dulces que la miel"
             },
             {
-              "line": "de un panal que destila. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "de un panal que destila. R."
             }
-          ]
-        },
-        {
-          "id": "opt_6",
-          "name": "Opción 6: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
-          "salmo": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
-          "subtitle": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
-          "respuesta": "R. La boca del justo expone la sabiduría.",
-          "respuestaOpcional": "R. Aleluya.",
+          ],
+          "id": "opt_5",
+          "respuesta": "R. Tus palabras, Señor, son espíritu y vida.",
+          "subtitle": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 63c)",
+          "salmo": "Salmo responsorial: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 63c)",
+          "name": "Opción 5: Salmo 18, 8. 9. 10. 11 (R.: Jn 6, 63c)",
+          "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLos mandamientos del Señor son rectos\ny alegran el corazón;\nla norma del Señor es límpida\ny da luz a los ojos. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nMás preciosos que el oro,\nmás que el oro fino;\nmás dulces que la miel\nde un panal que destila. R.",
           "strophes": [
             [
-              "Confía en el Señor y haz el bien,",
-              "habita tu tierra y practica la lealtad;",
-              "sea el Señor tu delicia,",
-              "y él te dará lo que pide tu corazón. R."
+              "La ley del Señor es perfecta",
+              "y es descanso del alma;",
+              "el precepto del Señor es fiel",
+              "e instruye al ignorante. R."
             ],
             [
-              "Encomienda tu camino al Señor,",
-              "confía en él, y él actuará:",
-              "hará tu justicia como el amanecer,",
-              "tu derecho como el mediodía. R."
+              "Los mandamientos del Señor son rectos",
+              "y alegran el corazón;",
+              "la norma del Señor es límpida",
+              "y da luz a los ojos. R."
             ],
             [
-              "La boca del justo expone la sabiduría,",
-              "su lengua explica el derecho;",
-              "porque lleva en el corazón la ley de su Dios,",
-              "y sus pasos no vacilan. R."
+              "La voluntad del Señor es pura",
+              "y eternamente estable;",
+              "los mandamientos del Señor son verdaderos",
+              "y enteramente justos. R."
+            ],
+            [
+              "Más preciosos que el oro,",
+              "más que el oro fino;",
+              "más dulces que la miel",
+              "de un panal que destila. R."
             ]
           ],
-          "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEncomienda tu camino al Señor,\nconfía en él, y él actuará:\nhará tu justicia como el amanecer,\ntu derecho como el mediodía. R.\n\nLa boca del justo expone la sabiduría,\nsu lengua explica el derecho;\nporque lleva en el corazón la ley de su Dios,\ny sus pasos no vacilan. R.",
+          "respuestaOpcional": "R. Aleluya."
+        },
+        {
           "lines": [
             {
               "line": "R. La boca del justo expone la sabiduría.",
@@ -652,8 +616,8 @@
               "sC": "salmo-linea salmo-obien"
             },
             {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Aleluya."
             },
             {
               "line": "",
@@ -664,32 +628,32 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "habita tu tierra y practica la lealtad;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "habita tu tierra y practica la lealtad;"
             },
             {
               "line": "sea el Señor tu delicia,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "y él te dará lo que pide tu corazón. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y él te dará lo que pide tu corazón. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Encomienda tu camino al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Encomienda tu camino al Señor,"
             },
             {
-              "line": "confía en él, y él actuará:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "confía en él, y él actuará:"
             },
             {
-              "line": "hará tu justicia como el amanecer,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "hará tu justicia como el amanecer,"
             },
             {
               "line": "tu derecho como el mediodía. R.",
@@ -715,9 +679,45 @@
               "line": "y sus pasos no vacilan. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "respuestaOpcional": "R. Aleluya.",
+          "salmo": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
+          "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEncomienda tu camino al Señor,\nconfía en él, y él actuará:\nhará tu justicia como el amanecer,\ntu derecho como el mediodía. R.\n\nLa boca del justo expone la sabiduría,\nsu lengua explica el derecho;\nporque lleva en el corazón la ley de su Dios,\ny sus pasos no vacilan. R.",
+          "subtitle": "Salmo responsorial: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
+          "id": "opt_6",
+          "strophes": [
+            [
+              "Confía en el Señor y haz el bien,",
+              "habita tu tierra y practica la lealtad;",
+              "sea el Señor tu delicia,",
+              "y él te dará lo que pide tu corazón. R."
+            ],
+            [
+              "Encomienda tu camino al Señor,",
+              "confía en él, y él actuará:",
+              "hará tu justicia como el amanecer,",
+              "tu derecho como el mediodía. R."
+            ],
+            [
+              "La boca del justo expone la sabiduría,",
+              "su lengua explica el derecho;",
+              "porque lleva en el corazón la ley de su Dios,",
+              "y sus pasos no vacilan. R."
+            ]
+          ],
+          "name": "Opción 6: Salmo 36, 3-4. 5-6. 30-31 (R.: 30a)",
+          "respuesta": "R. La boca del justo expone la sabiduría."
         }
       ]
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)",
+  "textoCompleto": "¿Cómo podrá un joven andar honestamente?\nCumpliendo tus palabras. R.\n\nTe busco de todo corazón,\nno consientas que me desvíe de tus mandamientos. R.\n\nEn mi corazón escondo tus consignas,\nasí no pecaré contra ti. R.\n\nBendito eres, Señor,\nenséñame tus leyes. R.\n\nMis labios van enumerando\nlos mandamientos de tu boca. R.\n\nMi alegría es el camino de tus preceptos,\nmás que todas las riquezas. R.",
+  "dia": "30",
+  "tiempo": "Julio",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 7300,
+  "searchPool": "san pedro crisologo obispo y doctor de la iglesia memoria libre santos julio 30 opcion 1 salmo 118 9 10 11 12 13 14 r 12b r ensename senor tus leyes como podra un joven andar honestamente cumpliendo tus palabras r te busco de todo corazon no consientas que me desvie de tus mandamientos r en mi corazon escondo tus consignas asi no pecare contra ti r bendito eres senor ensename tus leyes r mis labios van enumerando los mandamientos de tu boca r mi alegria es el camino de tus preceptos mas que todas las riquezas r opcion 2 salmo 36 3 4 5 6 30 31 r 30a r la boca del justo expone la sabiduria confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r encomienda tu camino al senor confia en el y el actuara hara tu justicia como el amanecer tu derecho como el mediodia r la boca del justo expone la sabiduria su lengua explica el derecho porque lleva en el corazon la ley de su dios y sus pasos no vacilan r opcion 3 salmo 18 8 9 10 11 r 10b r los mandamientos del senor son verdaderos y enteramente justos la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r los mandamientos del senor son rectos y alegran el corazon la norma del senor es limpida y da luz a los ojos r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r mas preciosos que el oro mas que el oro fino mas dulces que la miel de un panal que destila r opcion 4 salmo 36 3 4 5 6 30 31 r 30a r la boca del justo expone la sabiduria confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r encomienda tu camino al senor confia en el y el actuara hara tu justicia como el amanecer tu derecho como el mediodia r la boca del justo expone la sabiduria su lengua explica el derecho porque lleva en el corazon la ley de su dios y sus pasos no vacilan r opcion 5 salmo 18 8 9 10 11 r jn 6 63c r tus palabras senor son espiritu y vida la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r los mandamientos del senor son rectos y alegran el corazon la norma del senor es limpida y da luz a los ojos r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r mas preciosos que el oro mas que el oro fino mas dulces que la miel de un panal que destila r opcion 6 salmo 36 3 4 5 6 30 31 r 30a r la boca del justo expone la sabiduria confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r encomienda tu camino al senor confia en el y el actuara hara tu justicia como el amanecer tu derecho como el mediodia r la boca del justo expone la sabiduria su lengua explica el derecho porque lleva en el corazon la ley de su dios y sus pasos no vacilan r",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 118, 9. 10. 11. 12. 13. 14 (R.: 12b)"
 }

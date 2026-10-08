@@ -1,22 +1,75 @@
 {
-  "id": "seuf_065",
-  "title": "Martes de la 4ª semana de Cuaresma",
-  "celebracion": "Martes de la 4ª semana de Cuaresma",
-  "subtitle": "Salmo 45, 2-3. 5-6. 8-9 (R.: 8)",
-  "salmo": "Salmo 45, 2-3. 5-6. 8-9 (R.: 8)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
+  "lizq": [
+    {
+      "line": "R. El Señor de los ejércitos está con nosotros,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "nuestro alcázar es el Dios de Jacob."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Dios es nuestro refugio y nuestra fuerza,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "poderoso defensor en el peligro."
+    },
+    {
+      "line": "Por eso no tememos aunque tiemble la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y los montes se desplomen en el mar. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El correr de las acequias alegra la ciudad de Dios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Altísimo consagra su morada."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Teniendo a Dios en medio, no vacila;"
+    },
+    {
+      "line": "Dios la socorre al despuntar la aurora. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor de los ejércitos está con nosotros,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "nuestro alcázar es el Dios de Jacob.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Venid a ver las obras del Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "las maravillas que hace en la tierra. R."
+    }
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Martes",
-  "orden": 342,
   "respuesta": "R. El Señor de los ejércitos está con nosotros, nuestro alcázar es el Dios de Jacob.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dios es nuestro refugio y nuestra fuerza,",
@@ -37,80 +90,27 @@
       "las maravillas que hace en la tierra. R."
     ]
   ],
-  "textoCompleto": "Dios es nuestro refugio y nuestra fuerza,\npoderoso defensor en el peligro.\nPor eso no tememos aunque tiemble la tierra,\ny los montes se desplomen en el mar. R.\n\nEl correr de las acequias alegra la ciudad de Dios,\nel Altísimo consagra su morada.\nTeniendo a Dios en medio, no vacila;\nDios la socorre al despuntar la aurora. R.\n\nEl Señor de los ejércitos está con nosotros,\nnuestro alcázar es el Dios de Jacob.\nVenid a ver las obras del Señor,\nlas maravillas que hace en la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "ciclo": "Ciclo A, B y C",
   "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo 45, 2-3. 5-6. 8-9 (R.: 8)",
+  "dia": "Martes",
+  "stage": "Liturgia",
+  "textoCompleto": "Dios es nuestro refugio y nuestra fuerza,\npoderoso defensor en el peligro.\nPor eso no tememos aunque tiemble la tierra,\ny los montes se desplomen en el mar. R.\n\nEl correr de las acequias alegra la ciudad de Dios,\nel Altísimo consagra su morada.\nTeniendo a Dios en medio, no vacila;\nDios la socorre al despuntar la aurora. R.\n\nEl Señor de los ejércitos está con nosotros,\nnuestro alcázar es el Dios de Jacob.\nVenid a ver las obras del Señor,\nlas maravillas que hace en la tierra. R.",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
   "hasAudio": false,
+  "salmo": "Salmo 45, 2-3. 5-6. 8-9 (R.: 8)",
+  "id": "seuf_065",
+  "celebracion": "Martes de la 4ª semana de Cuaresma",
+  "title": "Martes de la 4ª semana de Cuaresma",
+  "tiempo": "Cuaresma",
+  "sourceBook": "eucaristia",
   "searchPool": "martes de la 4 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma martes salmo 45 2 3 5 6 8 9 r 8 semana 4 semana iv martes feria r el senor de los ejercitos esta con nosotros nuestro alcazar es el dios de jacob dios es nuestro refugio y nuestra fuerza poderoso defensor en el peligro por eso no tememos aunque tiemble la tierra y los montes se desplomen en el mar r el correr de las acequias alegra la ciudad de dios el altisimo consagra su morada teniendo a dios en medio no vacila dios la socorre al despuntar la aurora r el senor de los ejercitos esta con nosotros nuestro alcazar es el dios de jacob venid a ver las obras del senor las maravillas que hace en la tierra r",
-  "lizq": [
-    {
-      "line": "R. El Señor de los ejércitos está con nosotros,",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "nuestro alcázar es el Dios de Jacob.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dios es nuestro refugio y nuestra fuerza,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "poderoso defensor en el peligro.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Por eso no tememos aunque tiemble la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y los montes se desplomen en el mar. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El correr de las acequias alegra la ciudad de Dios,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el Altísimo consagra su morada.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Teniendo a Dios en medio, no vacila;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Dios la socorre al despuntar la aurora. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor de los ejércitos está con nosotros,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "nuestro alcázar es el Dios de Jacob.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Venid a ver las obras del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "las maravillas que hace en la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuestaOpcional": "",
+  "orden": 342
 }

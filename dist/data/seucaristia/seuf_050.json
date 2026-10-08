@@ -1,22 +1,100 @@
 {
-  "id": "seuf_050",
-  "title": "Lunes de la 2ª semana de Cuaresma",
-  "celebracion": "Lunes de la 2ª semana de Cuaresma",
-  "subtitle": "Salmo 78, 8. 9.11 y 13 (R.: Sal 102, 10a)",
-  "salmo": "Salmo 78, 8. 9.11 y 13 (R.: Sal 102, 10a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Cuaresma",
-  "dia": "Lunes",
-  "orden": 321,
   "respuesta": "R. Señor, no nos trates como merecen nuestros pecados.",
+  "stage": "Liturgia",
+  "tiempo": "Cuaresma",
   "respuestaOpcional": "",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Señor, no nos trates como merecen nuestros pecados."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "No recuerdes contra nosotros",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "las culpas de nuestros padres;"
+    },
+    {
+      "line": "que tu compasión nos alcance pronto,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pues estamos agotados. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Socórrenos, Dios, salvador nuestro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por el honor de tu nombre;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "líbranos y perdona nuestros pecados"
+    },
+    {
+      "line": "a causa de tu nombre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Llegue a tu presencia el gemido del cautivo:"
+    },
+    {
+      "line": "con tu brazo poderoso,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "salva a los condenados a muerte. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Mientras, nosotros, pueblo tuyo,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ovejas de tu rebaño,"
+    },
+    {
+      "line": "te daremos gracias siempre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "contaremos tus alabanzas",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de generación en generación. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "celebracion": "Lunes de la 2ª semana de Cuaresma",
+  "searchPool": "lunes de la 2 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma lunes salmo 78 8 9 11 y 13 r sal 102 10a semana 2 semana ii lunes feria r senor no nos trates como merecen nuestros pecados no recuerdes contra nosotros las culpas de nuestros padres que tu compasion nos alcance pronto pues estamos agotados r socorrenos dios salvador nuestro por el honor de tu nombre libranos y perdona nuestros pecados a causa de tu nombre r llegue a tu presencia el gemido del cautivo con tu brazo poderoso salva a los condenados a muerte r mientras nosotros pueblo tuyo ovejas de tu rebano te daremos gracias siempre contaremos tus alabanzas de generacion en generacion r",
+  "subtitle": "Salmo 78, 8. 9.11 y 13 (R.: Sal 102, 10a)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "ciclo": "Ciclo A, B y C",
   "estrofas": [
     [
       "No recuerdes contra nosotros",
@@ -43,96 +121,18 @@
       "de generación en generación. R."
     ]
   ],
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "title": "Lunes de la 2ª semana de Cuaresma",
+  "orden": 321,
   "textoCompleto": "No recuerdes contra nosotros\nlas culpas de nuestros padres;\nque tu compasión nos alcance pronto,\npues estamos agotados. R.\n\nSocórrenos, Dios, salvador nuestro,\npor el honor de tu nombre;\nlíbranos y perdona nuestros pecados\na causa de tu nombre. R.\n\nLlegue a tu presencia el gemido del cautivo:\ncon tu brazo poderoso,\nsalva a los condenados a muerte. R.\n\nMientras, nosotros, pueblo tuyo,\novejas de tu rebaño,\nte daremos gracias siempre,\ncontaremos tus alabanzas\nde generación en generación. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "dia": "Lunes",
   "hasAudio": false,
-  "searchPool": "lunes de la 2 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma lunes salmo 78 8 9 11 y 13 r sal 102 10a semana 2 semana ii lunes feria r senor no nos trates como merecen nuestros pecados no recuerdes contra nosotros las culpas de nuestros padres que tu compasion nos alcance pronto pues estamos agotados r socorrenos dios salvador nuestro por el honor de tu nombre libranos y perdona nuestros pecados a causa de tu nombre r llegue a tu presencia el gemido del cautivo con tu brazo poderoso salva a los condenados a muerte r mientras nosotros pueblo tuyo ovejas de tu rebano te daremos gracias siempre contaremos tus alabanzas de generacion en generacion r",
-  "lizq": [
-    {
-      "line": "R. Señor, no nos trates como merecen nuestros pecados.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "No recuerdes contra nosotros",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "las culpas de nuestros padres;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tu compasión nos alcance pronto,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "pues estamos agotados. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Socórrenos, Dios, salvador nuestro,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "por el honor de tu nombre;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "líbranos y perdona nuestros pecados",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "a causa de tu nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Llegue a tu presencia el gemido del cautivo:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "con tu brazo poderoso,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "salva a los condenados a muerte. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Mientras, nosotros, pueblo tuyo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ovejas de tu rebaño,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "te daremos gracias siempre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "contaremos tus alabanzas",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "de generación en generación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "salmo": "Salmo 78, 8. 9.11 y 13 (R.: Sal 102, 10a)",
+  "id": "seuf_050"
 }

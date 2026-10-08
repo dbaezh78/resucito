@@ -1,22 +1,70 @@
 {
-  "id": "seuf_047",
-  "title": "Jueves de la 1ª semana de Cuaresma",
-  "celebracion": "Jueves de la 1ª semana de Cuaresma",
-  "subtitle": "Salmo 137, 1-2a. 2bc y 3. 7c-8 (R.: 3a)",
-  "salmo": "Salmo 137, 1-2a. 2bc y 3. 7c-8 (R.: 3a)",
   "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Cuaresma",
   "dia": "Jueves",
-  "orden": 314,
-  "respuesta": "R. Cuando te invoqué, me escuchaste, Señor.",
-  "respuestaOpcional": "",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Cuando te invoqué, me escuchaste, Señor."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Te doy gracias, Señor, de todo corazón;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "delante de los ángeles tañeré para ti,"
+    },
+    {
+      "line": "me postraré hacia tu santuario. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Daré gracias a tu nombre,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por tu misericordia y tu lealtad;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cuando te invoqué, me escuchaste,"
+    },
+    {
+      "line": "acreciste el valor en mi alma. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tu derecha me salva."
+    },
+    {
+      "line": "El Señor completará sus favores conmigo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Señor, tu misericordia es eterna,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no abandones la obra de tus manos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "searchPool": "jueves de la 1 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma jueves salmo 137 1 2a 2bc y 3 7c 8 r 3a semana 1 semana i jueves feria r cuando te invoque me escuchaste senor te doy gracias senor de todo corazon delante de los angeles tanere para ti me postrare hacia tu santuario r dare gracias a tu nombre por tu misericordia y tu lealtad cuando te invoque me escuchaste acreciste el valor en mi alma r tu derecha me salva el senor completara sus favores conmigo senor tu misericordia es eterna no abandones la obra de tus manos r",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Te doy gracias, Señor, de todo corazón;",
@@ -36,72 +84,24 @@
       "no abandones la obra de tus manos. R."
     ]
   ],
-  "textoCompleto": "Te doy gracias, Señor, de todo corazón;\ndelante de los ángeles tañeré para ti,\nme postraré hacia tu santuario. R.\n\nDaré gracias a tu nombre,\npor tu misericordia y tu lealtad;\ncuando te invoqué, me escuchaste,\nacreciste el valor en mi alma. R.\n\nTu derecha me salva.\nEl Señor completará sus favores conmigo:\nSeñor, tu misericordia es eterna,\nno abandones la obra de tus manos. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo 137, 1-2a. 2bc y 3. 7c-8 (R.: 3a)",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "id": "seuf_047",
+  "respuestaOpcional": "",
+  "salmo": "Salmo 137, 1-2a. 2bc y 3. 7c-8 (R.: 3a)",
+  "textoCompleto": "Te doy gracias, Señor, de todo corazón;\ndelante de los ángeles tañeré para ti,\nme postraré hacia tu santuario. R.\n\nDaré gracias a tu nombre,\npor tu misericordia y tu lealtad;\ncuando te invoqué, me escuchaste,\nacreciste el valor en mi alma. R.\n\nTu derecha me salva.\nEl Señor completará sus favores conmigo:\nSeñor, tu misericordia es eterna,\nno abandones la obra de tus manos. R.",
+  "celebracion": "Jueves de la 1ª semana de Cuaresma",
   "hasAudio": false,
-  "searchPool": "jueves de la 1 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma jueves salmo 137 1 2a 2bc y 3 7c 8 r 3a semana 1 semana i jueves feria r cuando te invoque me escuchaste senor te doy gracias senor de todo corazon delante de los angeles tanere para ti me postrare hacia tu santuario r dare gracias a tu nombre por tu misericordia y tu lealtad cuando te invoque me escuchaste acreciste el valor en mi alma r tu derecha me salva el senor completara sus favores conmigo senor tu misericordia es eterna no abandones la obra de tus manos r",
-  "lizq": [
-    {
-      "line": "R. Cuando te invoqué, me escuchaste, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Te doy gracias, Señor, de todo corazón;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "delante de los ángeles tañeré para ti,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me postraré hacia tu santuario. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Daré gracias a tu nombre,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "por tu misericordia y tu lealtad;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "cuando te invoqué, me escuchaste,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "acreciste el valor en mi alma. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tu derecha me salva.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "El Señor completará sus favores conmigo:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Señor, tu misericordia es eterna,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no abandones la obra de tus manos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "tiempo": "Cuaresma",
+  "orden": 314,
+  "title": "Jueves de la 1ª semana de Cuaresma",
+  "respuesta": "R. Cuando te invoqué, me escuchaste, Señor."
 }

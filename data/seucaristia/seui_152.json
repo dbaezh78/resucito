@@ -1,15 +1,7 @@
 {
-  "id": "seui_152",
-  "title": "Martes de la 26ª semana de Tiempo Ordinario",
   "celebracion": "Martes de la 26ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 86, 1-3. 4-5. 6-7 (R.: Za 8, 23)",
-  "salmo": "Salmo responsorial: Salmo 86, 1-3. 4-5. 6-7 (R.: Za 8, 23)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
   "dia": "Martes",
-  "orden": 5262,
-  "respuesta": "R. Dios está con nosotros.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Él la ha cimentado sobre el monte santo;",
@@ -33,24 +25,31 @@
       "«Todas mis fuentes están en ti». R."
     ]
   ],
-  "textoCompleto": "Él la ha cimentado sobre el monte santo;\ny el Señor prefiere las puertas de Sión\na todas las moradas de Jacob.\n¡Qué pregón tan glorioso para ti,\nciudad de Dios! R.\n\n«Contaré a Egipto y a Babilonia\nentre mis fieles;\nfilisteos, tirios y etíopes\nhan nacido allí». Se dirá de Sión: «Uno por uno\ntodos han nacido de ella;\nel Altísimo en persona la ha fundado». R.\n\nEl Señor escribirá en el registro de los pueblos:\n«Éste ha nacido allí».\nY cantarán mientras danzan:\n«Todas mis fuentes están en ti». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 86, 1-3. 4-5. 6-7 (R.: Za 8, 23)",
   "searchPool": "martes de la 26 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 86 1 3 4 5 6 7 r za 8 23 semana 26 semana xxvi martes 26 xxvi r dios esta con nosotros el la ha cimentado sobre el monte santo y el senor prefiere las puertas de sion a todas las moradas de jacob que pregon tan glorioso para ti ciudad de dios r contare a egipto y a babilonia entre mis fieles filisteos tirios y etiopes han nacido alli se dira de sion uno por uno todos han nacido de ella el altisimo en persona la ha fundado r el senor escribira en el registro de los pueblos este ha nacido alli y cantaran mientras danzan todas mis fuentes estan en ti r",
+  "respuestaOpcional": "",
+  "id": "seui_152",
+  "title": "Martes de la 26ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 5262,
+  "textoCompleto": "Él la ha cimentado sobre el monte santo;\ny el Señor prefiere las puertas de Sión\na todas las moradas de Jacob.\n¡Qué pregón tan glorioso para ti,\nciudad de Dios! R.\n\n«Contaré a Egipto y a Babilonia\nentre mis fieles;\nfilisteos, tirios y etíopes\nhan nacido allí». Se dirá de Sión: «Uno por uno\ntodos han nacido de ella;\nel Altísimo en persona la ha fundado». R.\n\nEl Señor escribirá en el registro de los pueblos:\n«Éste ha nacido allí».\nY cantarán mientras danzan:\n«Todas mis fuentes están en ti». R.",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 86, 1-3. 4-5. 6-7 (R.: Za 8, 23)",
+  "respuesta": "R. Dios está con nosotros.",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
       "line": "R. Dios está con nosotros.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Él la ha cimentado sobre el monte santo;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Él la ha cimentado sobre el monte santo;"
     },
     {
       "line": "y el Señor prefiere las puertas de Sión",
@@ -61,16 +60,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "¡Qué pregón tan glorioso para ti,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¡Qué pregón tan glorioso para ti,"
     },
     {
       "line": "ciudad de Dios! R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "«Contaré a Egipto y a Babilonia",
@@ -81,8 +80,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "filisteos, tirios y etíopes",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "filisteos, tirios y etíopes"
     },
     {
       "line": "han nacido allí». Se dirá de Sión: «Uno por uno",
@@ -97,12 +96,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "El Señor escribirá en el registro de los pueblos:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor escribirá en el registro de los pueblos:"
     },
     {
       "line": "«Éste ha nacido allí».",
@@ -116,5 +115,6 @@
       "line": "«Todas mis fuentes están en ti». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Año Impar"
 }

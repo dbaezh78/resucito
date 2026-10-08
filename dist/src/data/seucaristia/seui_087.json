@@ -1,49 +1,16 @@
 {
+  "hasAudio": false,
   "id": "seui_087",
   "title": "Miércoles de la 15ª semana de Tiempo Ordinario",
   "celebracion": "Miércoles de la 15ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 6-7 (R.: 8a)",
-  "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 6-7 (R.: 8a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5153,
-  "respuesta": "R. El Señor es compasivo y misericordioso.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Bendice, alma mía, al Señor,",
-      "y todo mi ser a su santo nombre.",
-      "Bendice, alma mía, al Señor,",
-      "y no olvides sus beneficios. R."
-    ],
-    [
-      "Él perdona todas tus culpas",
-      "y cura todas tus enfermedades;",
-      "él rescata tu vida de la fosa",
-      "y te colma de gracia y de ternura. R."
-    ],
-    [
-      "El Señor hace justicia",
-      "y defiende a todos los oprimidos;",
-      "enseñó sus caminos a Moisés",
-      "y sus hazañas a los hijos de Israel. R."
-    ]
-  ],
-  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 15 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 102 1 2 3 4 6 7 r 8a semana 15 semana xv miercoles 15 xv r el senor es compasivo y misericordioso bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor hace justicia y defiende a todos los oprimidos enseno sus caminos a moises y sus hazanas a los hijos de israel r",
   "lizq": [
     {
-      "line": "R. El Señor es compasivo y misericordioso.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor es compasivo y misericordioso."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendice, alma mía, al Señor,",
@@ -94,12 +61,45 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "enseñó sus caminos a Moisés",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "enseñó sus caminos a Moisés"
     },
     {
-      "line": "y sus hazañas a los hijos de Israel. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y sus hazañas a los hijos de Israel. R."
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 6-7 (R.: 8a)",
+  "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 6-7 (R.: 8a)",
+  "dia": "Miércoles",
+  "ciclo": "Año Impar",
+  "orden": 5153,
+  "stage": "Liturgia",
+  "respuesta": "R. El Señor es compasivo y misericordioso.",
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "miercoles de la 15 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 102 1 2 3 4 6 7 r 8a semana 15 semana xv miercoles 15 xv r el senor es compasivo y misericordioso bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor hace justicia y defiende a todos los oprimidos enseno sus caminos a moises y sus hazanas a los hijos de israel r",
+  "estrofas": [
+    [
+      "Bendice, alma mía, al Señor,",
+      "y todo mi ser a su santo nombre.",
+      "Bendice, alma mía, al Señor,",
+      "y no olvides sus beneficios. R."
+    ],
+    [
+      "Él perdona todas tus culpas",
+      "y cura todas tus enfermedades;",
+      "él rescata tu vida de la fosa",
+      "y te colma de gracia y de ternura. R."
+    ],
+    [
+      "El Señor hace justicia",
+      "y defiende a todos los oprimidos;",
+      "enseñó sus caminos a Moisés",
+      "y sus hazañas a los hijos de Israel. R."
+    ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "respuestaOpcional": "",
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R."
 }

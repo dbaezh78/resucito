@@ -1235,24 +1235,27 @@
         // Subida de ciclos empaquetados para lectura ultra rápida
         progressStatus.textContent = 'Guardando paquetes por ciclo...';
         const ciclosMap = {
-          'cicloa': allPsalms.filter(p => p.ciclo === 'Ciclo A').map(preparePsalmForFirestore),
-          'ciclob': allPsalms.filter(p => p.ciclo === 'Ciclo B').map(preparePsalmForFirestore),
-          'cicloc': allPsalms.filter(p => p.ciclo === 'Ciclo C').map(preparePsalmForFirestore),
-          'anopar': allPsalms.filter(p => p.ciclo === 'Año Par').map(preparePsalmForFirestore),
-          'anoimpar': allPsalms.filter(p => p.ciclo === 'Año Impar').map(preparePsalmForFirestore),
-          'ferias': allPsalms.filter(p => p.ciclo === 'Ferias').map(preparePsalmForFirestore),
-          'santos': allPsalms.filter(p => p.ciclo === 'Santos').map(preparePsalmForFirestore)
+          'cicloa': allPsalms.filter(p => p.ciclo === 'Ciclo A' || (p.id && p.id.startsWith('seua_'))).map(preparePsalmForFirestore),
+          'ciclob': allPsalms.filter(p => p.ciclo === 'Ciclo B' || (p.id && p.id.startsWith('seub_'))).map(preparePsalmForFirestore),
+          'cicloc': allPsalms.filter(p => p.ciclo === 'Ciclo C' || (p.id && p.id.startsWith('seuc_'))).map(preparePsalmForFirestore),
+          'anopar': allPsalms.filter(p => p.ciclo === 'Año Par' || (p.id && p.id.startsWith('seup_'))).map(preparePsalmForFirestore),
+          'anoimpar': allPsalms.filter(p => p.ciclo === 'Año Impar' || (p.id && p.id.startsWith('seui_'))).map(preparePsalmForFirestore),
+          'ferias': allPsalms.filter(p => p.ciclo === 'Ferias' || (p.id && p.id.startsWith('seuf_'))).map(preparePsalmForFirestore)
         };
 
         for (const [cicloKey, items] of Object.entries(ciclosMap)) {
-          const cRef = doc(db, 'salmos_eucaristia_ciclos', cicloKey);
-          await setDoc(cRef, { id: cicloKey, items });
+          try {
+            const cRef = doc(db, 'salmos_eucaristia_ciclos', cicloKey);
+            await setDoc(cRef, { id: cicloKey, items });
+          } catch (eC) {
+            console.warn(`Aviso guardando paquete ${cicloKey}:`, eC);
+          }
         }
 
         progressBar.style.width = '100%';
         progressPercent.textContent = '100%';
         progressStatus.textContent = '¡Completado con éxito!';
-        logMsg.textContent = `✅ ${total} salmos individuales y 7 paquetes de ciclo sincronizados en Firebase Cloud.`;
+        logMsg.textContent = `✅ ${total} salmos individuales y paquetes de ciclo sincronizados en Firebase Cloud.`;
         closeBtn.style.display = 'inline-flex';
         closeBtn.onclick = () => modal.classList.remove('active');
 
@@ -1267,11 +1270,11 @@
       }
     };
 
-    // 11. Cargar Salmos desde Firebase Cloud
-    document.getElementById('btn-load-cloud').onclick = async () => {
+    // 11. Función Centralizada: Cargar Salmos desde Firebase Cloud
+    async function cargarSalmosFirebase(showFeedback = false) {
       try {
-        showToast('Consultando Firebase Cloud...', 'cloud_download');
-        const cloudItems = [];
+        if (showFeedback) showToast('Consultando Firebase Cloud...', 'cloud_download');
+        let cloudItems = [];
         
         // 1. Intentar colecciones agrupadas por ciclo
         try {
@@ -1284,10 +1287,13 @@
               }
             });
           }
-        } catch (eC) {}
+        } catch (eC) {
+          console.debug('Aviso leyendo ciclos agrupados:', eC);
+        }
 
-        // 2. Si no hay agrupados, consultar individuales
-        if (cloudItems.length === 0) {
+        // 2. Si no hay agrupados o están incompletos (< 900 salmos), consultar colección individual completa (981 salmos)
+        if (cloudItems.length < 900) {
+          cloudItems = [];
           const snapInd = await getDocs(collection(db, 'salmos_eucaristia'));
           if (!snapInd.empty) {
             snapInd.forEach(d => {
@@ -1297,23 +1303,55 @@
         }
 
         if (cloudItems.length > 0) {
-          allPsalms = cloudItems;
+          const mapById = new Map();
+          cloudItems.forEach(p => { if (p && p.id) mapById.set(p.id, p); });
+          allPsalms = Array.from(mapById.values());
+
           cloudStatusText.textContent = `Firebase Cloud (${allPsalms.length} Salmos)`;
           cloudStatusText.style.background = 'rgba(208, 18, 18, 0.15)';
           cloudStatusText.style.color = 'var(--salmo-red)';
           applyFilters();
-          if (allPsalms.length > 0) {
+          if (allPsalms.length > 0 && !currentPsalm) {
             selectPsalm(allPsalms[0]);
           }
-          showToast(`✅ ${allPsalms.length} salmos cargados desde Firebase Cloud.`);
+          if (showFeedback) showToast(`✅ ${allPsalms.length} salmos cargados desde Firebase Cloud.`);
+          return true;
         } else {
-          showToast('No se encontraron salmos en Firebase aún. Usa "Subir TODOS a Firebase" para inicializarlos.', 'warning');
+          if (showFeedback) showToast('No se encontraron salmos en Firebase aún. Cargando locales...', 'warning');
+          return false;
         }
       } catch (err) {
         console.error('Error cargando de Firebase:', err);
-        showToast(`Error al conectar con Firebase: ${err.message}`, 'error');
+        if (showFeedback) showToast(`Error al conectar con Firebase: ${err.message}`, 'error');
+        return false;
       }
+    }
+
+    document.getElementById('btn-load-cloud').onclick = () => {
+      cargarSalmosFirebase(true);
     };
+
+    // Inicializador Inteligente: Siempre Firebase si hay internet, sino Local
+    async function initPsalms() {
+      const hasNetwork = (typeof navigator === 'undefined') || (navigator.onLine !== false);
+      if (hasNetwork) {
+        try {
+          const loadedCloud = await cargarSalmosFirebase(false);
+          if (loadedCloud && allPsalms.length > 0) {
+            return;
+          }
+        } catch (e) {
+          console.warn('Fallo al conectar con Firebase en el inicio, usando respaldo local:', e);
+        }
+      }
+      await loadAllLocalPsalms();
+    }
+
+    // Escuchar reconexión a internet para sincronizar en tiempo real
+    window.addEventListener('online', () => {
+      console.log('🌐 Conexión restablecida en seucaristico.html: sincronizando con Firebase Cloud...');
+      cargarSalmosFirebase(false).catch(console.error);
+    });
 
     // Verificación de Seguridad y Permisos
     function checkAccessSecurity() {
@@ -1334,7 +1372,7 @@
     initTheme();
     initFilterPills();
     updateFilterVisibility();
-    loadAllLocalPsalms();
+    initPsalms();
   </script>
   <script type="module" src="src/navegador.js"></script>
 </body>

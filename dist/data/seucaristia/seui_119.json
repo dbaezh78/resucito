@@ -1,15 +1,119 @@
 {
   "id": "seui_119",
-  "title": "Viernes de la 20ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 20ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 145, 5-6ab. 6c-7. 8-9a. 9bc-10 (R.: 2a)",
   "salmo": "Salmo responsorial: Salmo 145, 5-6ab. 6c-7. 8-9a. 9bc-10 (R.: 2a)",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
+  "subtitle": "Salmo responsorial: Salmo 145, 5-6ab. 6c-7. 8-9a. 9bc-10 (R.: 2a)",
   "orden": 5205,
-  "respuesta": "R. Alaba, alma mía, al Señor.",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "textoCompleto": "Dichoso a quien auxilia el Dios de Jacob,\nel que espera en el Señor, su Dios,\nque hizo el cielo y la tierra,\nel mar y cuanto hay en él. R.\n\nQue mantiene su fidelidad perpetuamente,\nque hace justicia a los oprimidos,\nque da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos.\nEl Señor guarda a los peregrinos. R.\n\nSustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R.",
+  "title": "Viernes de la 20ª semana de Tiempo Ordinario",
+  "celebracion": "Viernes de la 20ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "viernes de la 20 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 145 5 6ab 6c 7 8 9a 9bc 10 r 2a semana 20 semana xx viernes 20 xx r alaba alma mia al senor r aleluya dichoso a quien auxilia el dios de jacob el que espera en el senor su dios que hizo el cielo y la tierra el mar y cuanto hay en el r que mantiene su fidelidad perpetuamente que hace justicia a los oprimidos que da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
+  "tiempo": "Tiempo Ordinario",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Alaba, alma mía, al Señor."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso a quien auxilia el Dios de Jacob,"
+    },
+    {
+      "line": "el que espera en el Señor, su Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que hizo el cielo y la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "el mar y cuanto hay en él. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Que mantiene su fidelidad perpetuamente,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que hace justicia a los oprimidos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que da pan a los hambrientos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "El Señor liberta a los cautivos. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor abre los ojos al ciego,"
+    },
+    {
+      "line": "el Señor endereza a los que ya se doblan,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el Señor ama a los justos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "El Señor guarda a los peregrinos. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sustenta al huérfano y a la viuda"
+    },
+    {
+      "line": "y trastorna el camino de los malvados.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor reina eternamente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tu Dios, Sión, de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "respuestaOpcional": "R. Aleluya.",
+  "dia": "Viernes",
+  "respuesta": "R. Alaba, alma mía, al Señor.",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Dichoso a quien auxilia el Dios de Jacob,",
@@ -35,109 +139,5 @@
       "El Señor reina eternamente,",
       "tu Dios, Sión, de edad en edad. R."
     ]
-  ],
-  "textoCompleto": "Dichoso a quien auxilia el Dios de Jacob,\nel que espera en el Señor, su Dios,\nque hizo el cielo y la tierra,\nel mar y cuanto hay en él. R.\n\nQue mantiene su fidelidad perpetuamente,\nque hace justicia a los oprimidos,\nque da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos.\nEl Señor guarda a los peregrinos. R.\n\nSustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 20 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 145 5 6ab 6c 7 8 9a 9bc 10 r 2a semana 20 semana xx viernes 20 xx r alaba alma mia al senor r aleluya dichoso a quien auxilia el dios de jacob el que espera en el senor su dios que hizo el cielo y la tierra el mar y cuanto hay en el r que mantiene su fidelidad perpetuamente que hace justicia a los oprimidos que da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
-  "lizq": [
-    {
-      "line": "R. Alaba, alma mía, al Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichoso a quien auxilia el Dios de Jacob,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el que espera en el Señor, su Dios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que hizo el cielo y la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el mar y cuanto hay en él. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Que mantiene su fidelidad perpetuamente,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que hace justicia a los oprimidos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que da pan a los hambrientos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor liberta a los cautivos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor abre los ojos al ciego,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el Señor endereza a los que ya se doblan,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el Señor ama a los justos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor guarda a los peregrinos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Sustenta al huérfano y a la viuda",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y trastorna el camino de los malvados.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor reina eternamente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tu Dios, Sión, de edad en edad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
   ]
 }

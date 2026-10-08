@@ -1,15 +1,13 @@
 {
-  "id": "seua_11",
-  "title": "2º Domingo después de Navidad",
-  "celebracion": "2º Domingo después de Navidad",
-  "subtitle": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: Jn 1,14)",
-  "salmo": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: Jn 1,14)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Navidad",
-  "dia": "Domingo",
+  "searchPool": "2 domingo despues de navidad ciclo a navidad domingo salmo responsorial salmo 147 12 13 14 15 19 20 r jn 1 14 r la palabra se hizo carne y acampo entre nosotros r aleluya glorifica al senor jerusalen alaba a tu dios sion que ha reforzado los cerrojos de tus puertas y ha bendecido a tus hijos dentro de ti r ha puesto paz en tus fronteras te sacia con flor de harina el envia su mensaje a la tierra y su palabra corre veloz r anuncia su palabra a jacob sus decretos y mandatos a israel con ninguna nacion obro asi ni les dio a conocer sus mandatos r",
   "orden": 207,
-  "respuesta": "R. La Palabra se hizo carne y acampó entre nosotros.",
-  "respuestaOpcional": "R. Aleluya",
+  "id": "seua_11",
+  "sourceBook": "eucaristia",
+  "tiempo": "Navidad",
+  "title": "2º Domingo después de Navidad",
+  "subtitle": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: Jn 1,14)",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: Jn 1,14)",
   "estrofas": [
     [
       "Glorifica al Señor, Jerusalén;",
@@ -30,52 +28,53 @@
       "ni les dio a conocer sus mandatos. R."
     ]
   ],
+  "respuestaOpcional": "R. Aleluya",
+  "respuesta": "R. La Palabra se hizo carne y acampó entre nosotros.",
   "textoCompleto": "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nHa puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R.",
-  "sourceBook": "eucaristia",
+  "celebracion": "2º Domingo después de Navidad",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Ciclo A",
   "hasAudio": false,
-  "searchPool": "2 domingo despues de navidad ciclo a navidad domingo salmo responsorial salmo 147 12 13 14 15 19 20 r jn 1 14 r la palabra se hizo carne y acampo entre nosotros r aleluya glorifica al senor jerusalen alaba a tu dios sion que ha reforzado los cerrojos de tus puertas y ha bendecido a tus hijos dentro de ti r ha puesto paz en tus fronteras te sacia con flor de harina el envia su mensaje a la tierra y su palabra corre veloz r anuncia su palabra a jacob sus decretos y mandatos a israel con ninguna nacion obro asi ni les dio a conocer sus mandatos r",
   "lizq": [
     {
       "line": "R. La Palabra se hizo carne",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "y acampó entre nosotros.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "y acampó entre nosotros."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya"
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Glorifica al Señor, Jerusalén;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Glorifica al Señor, Jerusalén;"
     },
     {
-      "line": "alaba a tu Dios, Sión:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alaba a tu Dios, Sión:"
     },
     {
       "line": "que ha reforzado los cerrojos de tus puertas,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y ha bendecido a tus hijos dentro de ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y ha bendecido a tus hijos dentro de ti. R."
     },
     {
       "line": "",
@@ -90,32 +89,33 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Él envía su mensaje a la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Él envía su mensaje a la tierra,"
     },
     {
       "line": "y su palabra corre veloz. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Anuncia su palabra a Jacob,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "sus decretos y mandatos a Israel;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "sus decretos y mandatos a Israel;"
     },
     {
-      "line": "con ninguna nación obró así,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "con ninguna nación obró así,"
     },
     {
-      "line": "ni les dio a conocer sus mandatos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ni les dio a conocer sus mandatos. R."
     }
-  ]
+  ],
+  "dia": "Domingo"
 }

@@ -1,39 +1,13 @@
 {
-  "id": "seuc_54",
-  "title": "Domingo de la 9ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 9ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
-  "salmo": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 509,
-  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Alabad al Señor, todas las naciones,",
-      "aclamadlo, todos los pueblos. R."
-    ],
-    [
-      "Firme es su misericordia con nosotros,",
-      "su fidelidad dura por siempre. R."
-    ]
-  ],
-  "textoCompleto": "Alabad al Señor, todas las naciones,\naclamadlo, todos los pueblos. R.\n\nFirme es su misericordia con nosotros,\nsu fidelidad dura por siempre. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 9 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 116 1 2 r mc 16 15 r id al mundo entero y proclamad el evangelio aleluya alabad al senor todas las naciones aclamadlo todos los pueblos r firme es su misericordia con nosotros su fidelidad dura por siempre r",
   "lizq": [
     {
       "line": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Alabad al Señor, todas las naciones,",
@@ -55,5 +29,31 @@
       "line": "su fidelidad dura por siempre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Alabad al Señor, todas las naciones,\naclamadlo, todos los pueblos. R.\n\nFirme es su misericordia con nosotros,\nsu fidelidad dura por siempre. R.",
+  "dia": "Domingo",
+  "estrofas": [
+    [
+      "Alabad al Señor, todas las naciones,",
+      "aclamadlo, todos los pueblos. R."
+    ],
+    [
+      "Firme es su misericordia con nosotros,",
+      "su fidelidad dura por siempre. R."
+    ]
+  ],
+  "id": "seuc_54",
+  "subtitle": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
+  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Domingo de la 9ª semana de Tiempo Ordinario",
+  "ciclo": "Ciclo C",
+  "searchPool": "domingo de la 9 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 116 1 2 r mc 16 15 r id al mundo entero y proclamad el evangelio aleluya alabad al senor todas las naciones aclamadlo todos los pueblos r firme es su misericordia con nosotros su fidelidad dura por siempre r",
+  "hasAudio": false,
+  "title": "Domingo de la 9ª semana de Tiempo Ordinario",
+  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
+  "sourceBook": "eucaristia",
+  "orden": 509,
+  "salmo": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
+  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario"
 }

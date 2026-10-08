@@ -1,59 +1,17 @@
 {
-  "id": "seup_103",
-  "title": "Lunes de la 18ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 18ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 29. 43. 79. 80. 95. 102 (R.: 68b)",
-  "salmo": "Salmo responsorial: Salmo 118, 29. 43. 79. 80. 95. 102 (R.: 68b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5181,
-  "respuesta": "R. Instrúyeme, Señor, en tus leyes.",
   "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Apártame del camino falso,",
-      "y dame la gracia de tu voluntad. R."
-    ],
-    [
-      "No quites de mi boca las palabras sinceras,",
-      "porque yo espero en tus mandamientos. R."
-    ],
-    [
-      "Vuelvan a mí tus fieles",
-      "que hacen caso de tus preceptos. R."
-    ],
-    [
-      "Sea mi corazón perfecto en tus leyes,",
-      "así no quedaré avergonzado. R."
-    ],
-    [
-      "Los malvados me esperaban para perderme,",
-      "pero yo meditaba tus preceptos. R."
-    ],
-    [
-      "No me aparto de tus mandamientos,",
-      "porque tú me has instruido. R."
-    ]
-  ],
-  "textoCompleto": "Apártame del camino falso,\ny dame la gracia de tu voluntad. R.\n\nNo quites de mi boca las palabras sinceras,\nporque yo espero en tus mandamientos. R.\n\nVuelvan a mí tus fieles\nque hacen caso de tus preceptos. R.\n\nSea mi corazón perfecto en tus leyes,\nasí no quedaré avergonzado. R.\n\nLos malvados me esperaban para perderme,\npero yo meditaba tus preceptos. R.\n\nNo me aparto de tus mandamientos,\nporque tú me has instruido. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 18 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 118 29 43 79 80 95 102 r 68b semana 18 semana xviii lunes 18 xviii r instruyeme senor en tus leyes apartame del camino falso y dame la gracia de tu voluntad r no quites de mi boca las palabras sinceras porque yo espero en tus mandamientos r vuelvan a mi tus fieles que hacen caso de tus preceptos r sea mi corazon perfecto en tus leyes asi no quedare avergonzado r los malvados me esperaban para perderme pero yo meditaba tus preceptos r no me aparto de tus mandamientos porque tu me has instruido r",
   "lizq": [
     {
-      "line": "R. Instrúyeme, Señor, en tus leyes.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Instrúyeme, Señor, en tus leyes."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Apártame del camino falso,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Apártame del camino falso,"
     },
     {
       "line": "y dame la gracia de tu voluntad. R.",
@@ -88,8 +46,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Sea mi corazón perfecto en tus leyes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sea mi corazón perfecto en tus leyes,"
     },
     {
       "line": "así no quedaré avergonzado. R.",
@@ -112,12 +70,54 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "No me aparto de tus mandamientos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No me aparto de tus mandamientos,"
     },
     {
       "line": "porque tú me has instruido. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 118, 29. 43. 79. 80. 95. 102 (R.: 68b)",
+  "ciclo": "Año Par",
+  "hasAudio": false,
+  "title": "Lunes de la 18ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Apártame del camino falso,",
+      "y dame la gracia de tu voluntad. R."
+    ],
+    [
+      "No quites de mi boca las palabras sinceras,",
+      "porque yo espero en tus mandamientos. R."
+    ],
+    [
+      "Vuelvan a mí tus fieles",
+      "que hacen caso de tus preceptos. R."
+    ],
+    [
+      "Sea mi corazón perfecto en tus leyes,",
+      "así no quedaré avergonzado. R."
+    ],
+    [
+      "Los malvados me esperaban para perderme,",
+      "pero yo meditaba tus preceptos. R."
+    ],
+    [
+      "No me aparto de tus mandamientos,",
+      "porque tú me has instruido. R."
+    ]
+  ],
+  "textoCompleto": "Apártame del camino falso,\ny dame la gracia de tu voluntad. R.\n\nNo quites de mi boca las palabras sinceras,\nporque yo espero en tus mandamientos. R.\n\nVuelvan a mí tus fieles\nque hacen caso de tus preceptos. R.\n\nSea mi corazón perfecto en tus leyes,\nasí no quedaré avergonzado. R.\n\nLos malvados me esperaban para perderme,\npero yo meditaba tus preceptos. R.\n\nNo me aparto de tus mandamientos,\nporque tú me has instruido. R.",
+  "orden": 5181,
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "lunes de la 18 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 118 29 43 79 80 95 102 r 68b semana 18 semana xviii lunes 18 xviii r instruyeme senor en tus leyes apartame del camino falso y dame la gracia de tu voluntad r no quites de mi boca las palabras sinceras porque yo espero en tus mandamientos r vuelvan a mi tus fieles que hacen caso de tus preceptos r sea mi corazon perfecto en tus leyes asi no quedare avergonzado r los malvados me esperaban para perderme pero yo meditaba tus preceptos r no me aparto de tus mandamientos porque tu me has instruido r",
+  "salmo": "Salmo responsorial: Salmo 118, 29. 43. 79. 80. 95. 102 (R.: 68b)",
+  "celebracion": "Lunes de la 18ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "respuesta": "R. Instrúyeme, Señor, en tus leyes.",
+  "sourceBook": "eucaristia",
+  "id": "seup_103",
+  "dia": "Lunes",
+  "stage": "Liturgia"
 }

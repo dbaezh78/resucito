@@ -1,45 +1,14 @@
 {
-  "id": "seui_139",
-  "title": "Lunes de la 24ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 24ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 27, 2. 7. 8-9 (R.: 6)",
-  "salmo": "Salmo responsorial: Salmo 27, 2. 7. 8-9 (R.: 6)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5241,
-  "respuesta": "R. Bendito el Señor, que escuchó mi voz suplicante.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Escucha mi voz suplicante",
-      "cuando te pido auxilio,",
-      "cuando alzo las manos",
-      "hacia tu santuario. R."
-    ],
-    [
-      "El Señor es mi fuerza y mi escudo:",
-      "en él confía mi corazón;",
-      "me socorrió, y mi corazón se alegra",
-      "y le canta agradecido. R."
-    ],
-    [
-      "El Señor es fuerza para su pueblo,",
-      "apoyo y salvación para su Ungido.",
-      "Salva a tu pueblo y bendice tu heredad,",
-      "sé su pastor y llévalos siempre. R."
-    ]
-  ],
-  "textoCompleto": "Escucha mi voz suplicante\ncuando te pido auxilio,\ncuando alzo las manos\nhacia tu santuario. R.\n\nEl Señor es mi fuerza y mi escudo:\nen él confía mi corazón;\nme socorrió, y mi corazón se alegra\ny le canta agradecido. R.\n\nEl Señor es fuerza para su pueblo,\napoyo y salvación para su Ungido.\nSalva a tu pueblo y bendice tu heredad,\nsé su pastor y llévalos siempre. R.",
+  "id": "seui_139",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
   "searchPool": "lunes de la 24 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 27 2 7 8 9 r 6 semana 24 semana xxiv lunes 24 xxiv r bendito el senor que escucho mi voz suplicante r aleluya escucha mi voz suplicante cuando te pido auxilio cuando alzo las manos hacia tu santuario r el senor es mi fuerza y mi escudo en el confia mi corazon me socorrio y mi corazon se alegra y le canta agradecido r el senor es fuerza para su pueblo apoyo y salvacion para su ungido salva a tu pueblo y bendice tu heredad se su pastor y llevalos siempre r",
+  "hasAudio": false,
   "lizq": [
     {
-      "line": "R. Bendito el Señor, que escuchó mi voz suplicante.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Bendito el Señor, que escuchó mi voz suplicante."
     },
     {
       "line": "",
@@ -50,12 +19,12 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Escucha mi voz suplicante",
@@ -70,8 +39,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "hacia tu santuario. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "hacia tu santuario. R."
     },
     {
       "line": "",
@@ -94,8 +63,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es fuerza para su pueblo,",
@@ -110,8 +79,39 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "sé su pastor y llévalos siempre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "sé su pastor y llévalos siempre. R."
     }
-  ]
+  ],
+  "dia": "Lunes",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Lunes de la 24ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 24ª semana de Tiempo Ordinario",
+  "respuesta": "R. Bendito el Señor, que escuchó mi voz suplicante.",
+  "stage": "Liturgia",
+  "orden": 5241,
+  "ciclo": "Año Impar",
+  "estrofas": [
+    [
+      "Escucha mi voz suplicante",
+      "cuando te pido auxilio,",
+      "cuando alzo las manos",
+      "hacia tu santuario. R."
+    ],
+    [
+      "El Señor es mi fuerza y mi escudo:",
+      "en él confía mi corazón;",
+      "me socorrió, y mi corazón se alegra",
+      "y le canta agradecido. R."
+    ],
+    [
+      "El Señor es fuerza para su pueblo,",
+      "apoyo y salvación para su Ungido.",
+      "Salva a tu pueblo y bendice tu heredad,",
+      "sé su pastor y llévalos siempre. R."
+    ]
+  ],
+  "respuestaOpcional": "R. Aleluya.",
+  "salmo": "Salmo responsorial: Salmo 27, 2. 7. 8-9 (R.: 6)",
+  "textoCompleto": "Escucha mi voz suplicante\ncuando te pido auxilio,\ncuando alzo las manos\nhacia tu santuario. R.\n\nEl Señor es mi fuerza y mi escudo:\nen él confía mi corazón;\nme socorrió, y mi corazón se alegra\ny le canta agradecido. R.\n\nEl Señor es fuerza para su pueblo,\napoyo y salvación para su Ungido.\nSalva a tu pueblo y bendice tu heredad,\nsé su pastor y llévalos siempre. R."
 }

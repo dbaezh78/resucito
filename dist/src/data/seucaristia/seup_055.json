@@ -1,15 +1,4 @@
 {
-  "id": "seup_055",
-  "title": "Lunes de la 10ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 10ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 120, 1-2. 3-4. 5-6. 7-8 (R.: cf. 2)",
-  "salmo": "Salmo responsorial: Salmo 120, 1-2. 3-4. 5-6. 7-8 (R.: cf. 2)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5101,
-  "respuesta": "R. Nuestro auxilio es el nombre del Señor, que hizo el cielo y la tierra.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Levanto mis ojos a los montes:",
@@ -36,16 +25,22 @@
       "ahora y por siempre. R."
     ]
   ],
-  "textoCompleto": "Levanto mis ojos a los montes:\n¿de dónde me vendrá el auxilio?\nEl auxilio me viene del Señor,\nque hizo el cielo y la tierra. R.\n\nNo permitirá que resbale tu pie,\ntu guardián no duerme;\nno duerme ni reposa\nel guardián de Israel. R.\n\nEl Señor te guarda a su sombra,\nestá a tu derecha;\nde día el sol no te hará daño,\nni la luna de noche. R.\n\nEl Señor te guarda de todo mal,\nél guarda tu alma;\nel Señor guarda tus entradas y salidas,\nahora y por siempre. R.",
+  "salmo": "Salmo responsorial: Salmo 120, 1-2. 3-4. 5-6. 7-8 (R.: cf. 2)",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "id": "seup_055",
   "hasAudio": false,
   "searchPool": "lunes de la 10 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 120 1 2 3 4 5 6 7 8 r cf 2 semana 10 semana x lunes 10 x r nuestro auxilio es el nombre del senor que hizo el cielo y la tierra levanto mis ojos a los montes de donde me vendra el auxilio el auxilio me viene del senor que hizo el cielo y la tierra r no permitira que resbale tu pie tu guardian no duerme no duerme ni reposa el guardian de israel r el senor te guarda a su sombra esta a tu derecha de dia el sol no te hara dano ni la luna de noche r el senor te guarda de todo mal el guarda tu alma el senor guarda tus entradas y salidas ahora y por siempre r",
+  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 120, 1-2. 3-4. 5-6. 7-8 (R.: cf. 2)",
+  "tiempo": "Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "respuesta": "R. Nuestro auxilio es el nombre del Señor, que hizo el cielo y la tierra.",
+  "dia": "Lunes",
+  "ciclo": "Año Par",
   "lizq": [
     {
-      "line": "R. Nuestro auxilio es el nombre del Señor,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Nuestro auxilio es el nombre del Señor,"
     },
     {
       "line": "que hizo el cielo y la tierra.",
@@ -56,8 +51,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Levanto mis ojos a los montes:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Levanto mis ojos a los montes:"
     },
     {
       "line": "¿de dónde me vendrá el auxilio?",
@@ -68,20 +63,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que hizo el cielo y la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que hizo el cielo y la tierra. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "No permitirá que resbale tu pie,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tu guardián no duerme;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tu guardián no duerme;"
     },
     {
       "line": "no duerme ni reposa",
@@ -96,24 +91,24 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor te guarda a su sombra,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor te guarda a su sombra,"
     },
     {
-      "line": "está a tu derecha;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "está a tu derecha;"
     },
     {
-      "line": "de día el sol no te hará daño,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "de día el sol no te hará daño,"
     },
     {
-      "line": "ni la luna de noche. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ni la luna de noche. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor te guarda de todo mal,",
@@ -128,8 +123,13 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ahora y por siempre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ahora y por siempre. R."
     }
-  ]
+  ],
+  "textoCompleto": "Levanto mis ojos a los montes:\n¿de dónde me vendrá el auxilio?\nEl auxilio me viene del Señor,\nque hizo el cielo y la tierra. R.\n\nNo permitirá que resbale tu pie,\ntu guardián no duerme;\nno duerme ni reposa\nel guardián de Israel. R.\n\nEl Señor te guarda a su sombra,\nestá a tu derecha;\nde día el sol no te hará daño,\nni la luna de noche. R.\n\nEl Señor te guarda de todo mal,\nél guarda tu alma;\nel Señor guarda tus entradas y salidas,\nahora y por siempre. R.",
+  "title": "Lunes de la 10ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Lunes de la 10ª semana de Tiempo Ordinario",
+  "orden": 5101
 }

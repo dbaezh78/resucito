@@ -1,15 +1,13 @@
 {
   "id": "seub_44",
-  "title": "Domingo de la 2ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 2ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 39, 2 y 4ab. 7. 8-9. 10 (R.: 8a y 9a)",
-  "salmo": "Salmo responsorial: Salmo 39, 2 y 4ab. 7. 8-9. 10 (R.: 8a y 9a)",
+  "hasAudio": false,
+  "textoCompleto": "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito;\nme puso en la boca un cántico nuevo,\nun himno a nuestro Dios. R.\n\nTú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio. R.\n\nEntonces yo digo: «Aquí estoy\n— como está escrito en mi libro—\npara hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios;\nSeñor, tú lo sabes. R.",
+  "stage": "Liturgia",
   "ciclo": "Ciclo B",
   "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
   "orden": 502,
-  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
-  "respuestaOpcional": "",
+  "celebracion": "Domingo de la 2ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Yo esperaba con ansia al Señor;",
@@ -36,12 +34,11 @@
       "Señor, tú lo sabes. R."
     ]
   ],
-  "textoCompleto": "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito;\nme puso en la boca un cántico nuevo,\nun himno a nuestro Dios. R.\n\nTú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio. R.\n\nEntonces yo digo: «Aquí estoy\n— como está escrito en mi libro—\npara hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios;\nSeñor, tú lo sabes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "title": "Domingo de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 39, 2 y 4ab. 7. 8-9. 10 (R.: 8a y 9a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 2 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 39 2 y 4ab 7 8 9 10 r 8a y 9a r aqui estoy senor para hacer tu voluntad yo esperaba con ansia al senor el se inclino y escucho mi grito me puso en la boca un cantico nuevo un himno a nuestro dios r tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio r entonces yo digo aqui estoy como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r",
+  "sourceBook": "eucaristia",
+  "respuestaOpcional": "",
   "lizq": [
     {
       "line": "R. Aquí estoy, Señor, para hacer tu voluntad.",
@@ -56,16 +53,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "él se inclinó y escuchó mi grito;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él se inclinó y escuchó mi grito;"
     },
     {
       "line": "me puso en la boca un cántico nuevo,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "un himno a nuestro Dios. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "un himno a nuestro Dios. R."
     },
     {
       "line": "",
@@ -76,8 +73,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y, en cambio, me abriste el oído;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y, en cambio, me abriste el oído;"
     },
     {
       "line": "no pides sacrificio expiatorio. R.",
@@ -100,8 +97,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Dios mío, lo quiero,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dios mío, lo quiero,"
     },
     {
       "line": "y llevo tu ley en las entrañas. R.",
@@ -120,12 +117,15 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "no he cerrado los labios;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no he cerrado los labios;"
     },
     {
       "line": "Señor, tú lo sabes. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 39, 2 y 4ab. 7. 8-9. 10 (R.: 8a y 9a)",
+  "searchPool": "domingo de la 2 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 39 2 y 4ab 7 8 9 10 r 8a y 9a r aqui estoy senor para hacer tu voluntad yo esperaba con ansia al senor el se inclino y escucho mi grito me puso en la boca un cantico nuevo un himno a nuestro dios r tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio r entonces yo digo aqui estoy como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r",
+  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad."
 }

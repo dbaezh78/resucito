@@ -1,15 +1,12 @@
 {
-  "id": "seui_009",
-  "title": "Miércoles de la 2ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 2ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 109, 1. 2. 3. 4 (R.: 4bc)",
-  "salmo": "Salmo responsorial: Salmo 109, 1. 2. 3. 4 (R.: 4bc)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
   "orden": 5023,
-  "respuesta": "R. Tú eres sacerdote eterno, según el rito de Melquisedec.",
+  "id": "seui_009",
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 109, 1. 2. 3. 4 (R.: 4bc)",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "",
+  "ciclo": "Año Impar",
   "estrofas": [
     [
       "Oráculo del Señor a mi Señor:",
@@ -35,9 +32,12 @@
     ]
   ],
   "textoCompleto": "Oráculo del Señor a mi Señor:\n«Siéntate a mi derecha,\ny haré de tus enemigos\nestrado de tus pies». R.\n\nDesde Sión extenderá el Señor\nel poder de tu cetro:\nsomete en la batalla a tus enemigos. R.\n\n«Eres príncipe desde el día de tu nacimiento,\nentre esplendores sagrados;\nyo mismo te engendré, como rocío,\nantes de la aurora». R.\n\nEl Señor lo ha jurado y no se arrepiente:\n«Tú eres sacerdote eterno,\nsegún el rito de Melquisedec». R.",
+  "respuesta": "R. Tú eres sacerdote eterno, según el rito de Melquisedec.",
+  "title": "Miércoles de la 2ª semana de Tiempo Ordinario",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 109, 1. 2. 3. 4 (R.: 4bc)",
+  "dia": "Miércoles",
+  "celebracion": "Miércoles de la 2ª semana de Tiempo Ordinario",
   "hasAudio": false,
   "searchPool": "miercoles de la 2 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 109 1 2 3 4 r 4bc semana 2 semana ii miercoles 2 ii r tu eres sacerdote eterno segun el rito de melquisedec oraculo del senor a mi senor sientate a mi derecha y hare de tus enemigos estrado de tus pies r desde sion extendera el senor el poder de tu cetro somete en la batalla a tus enemigos r eres principe desde el dia de tu nacimiento entre esplendores sagrados yo mismo te engendre como rocio antes de la aurora r el senor lo ha jurado y no se arrepiente tu eres sacerdote eterno segun el rito de melquisedec r",
   "lizq": [
@@ -50,12 +50,12 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Oráculo del Señor a mi Señor:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Oráculo del Señor a mi Señor:"
     },
     {
       "line": "«Siéntate a mi derecha,",
@@ -66,8 +66,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "estrado de tus pies». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "estrado de tus pies». R."
     },
     {
       "line": "",
@@ -82,12 +82,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "somete en la batalla a tus enemigos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "somete en la batalla a tus enemigos. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "«Eres príncipe desde el día de tu nacimiento,",
@@ -106,16 +106,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor lo ha jurado y no se arrepiente:",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "«Tú eres sacerdote eterno,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«Tú eres sacerdote eterno,"
     },
     {
       "line": "según el rito de Melquisedec». R.",

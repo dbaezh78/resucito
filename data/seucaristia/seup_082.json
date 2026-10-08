@@ -1,15 +1,5 @@
 {
-  "id": "seup_082",
-  "title": "Jueves de la 14ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 14ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 79, 2ac y 3b. 15-16 (R.: 4b)",
-  "salmo": "Salmo responsorial: Salmo 79, 2ac y 3b. 15-16 (R.: 4b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5144,
-  "respuesta": "R. Que brille tu rostro, Señor, y nos salve.",
-  "respuestaOpcional": "",
+  "searchPool": "jueves de la 14 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 79 2ac y 3b 15 16 r 4b semana 14 semana xiv jueves 14 xiv r que brille tu rostro senor y nos salve pastor de israel escucha tu que te sientas sobre querubines resplandece despierta tu poder y ven a salvarnos r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina la cepa que tu diestra planto y que tu hiciste vigorosa r",
   "estrofas": [
     [
       "Pastor de Israel, escucha,",
@@ -24,12 +14,17 @@
       "y que tú hiciste vigorosa. R."
     ]
   ],
+  "respuesta": "R. Que brille tu rostro, Señor, y nos salve.",
+  "dia": "Jueves",
+  "salmo": "Salmo responsorial: Salmo 79, 2ac y 3b. 15-16 (R.: 4b)",
   "textoCompleto": "Pastor de Israel, escucha,\ntú que te sientas sobre querubines, resplandece;\ndespierta tu poder y ven a salvarnos. R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "jueves de la 14 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 79 2ac y 3b 15 16 r 4b semana 14 semana xiv jueves 14 xiv r que brille tu rostro senor y nos salve pastor de israel escucha tu que te sientas sobre querubines resplandece despierta tu poder y ven a salvarnos r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina la cepa que tu diestra planto y que tu hiciste vigorosa r",
+  "sourceBook": "eucaristia",
+  "subtitle": "Salmo responsorial: Salmo 79, 2ac y 3b. 15-16 (R.: 4b)",
+  "stage": "Liturgia",
+  "celebracion": "Jueves de la 14ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Año Par",
   "lizq": [
     {
       "line": "R. Que brille tu rostro, Señor, y nos salve.",
@@ -48,32 +43,37 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "despierta tu poder y ven a salvarnos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "despierta tu poder y ven a salvarnos. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dios de los ejércitos, vuélvete:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dios de los ejércitos, vuélvete:"
     },
     {
-      "line": "mira desde el cielo, fíjate,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mira desde el cielo, fíjate,"
     },
     {
       "line": "ven a visitar tu viña,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "la cepa que tu diestra plantó,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la cepa que tu diestra plantó,"
     },
     {
       "line": "y que tú hiciste vigorosa. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "title": "Jueves de la 14ª semana de Tiempo Ordinario",
+  "id": "seup_082",
+  "catCanto": "Salmo Eucaristía",
+  "respuestaOpcional": "",
+  "orden": 5144
 }

@@ -1,10 +1,8 @@
 {
-  "id": "seuf_115",
-  "title": "Viernes de la sexta semana de Pascua",
   "celebracion": "Viernes de la sexta semana de Pascua",
   "subtitle": "Salmo 46, 2-3. 4-5. 6-7 (R.: 8a)",
-  "salmo": "Salmo 46, 2-3. 4-5. 6-7 (R.: 8a)",
-  "ciclo": "Ciclo A, B y C",
+  "id": "seuf_115",
+  "hasAudio": false,
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +10,95 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Viernes",
-  "orden": 465,
-  "respuesta": "R. Dios es el rey del mundo.",
   "respuestaOpcional": "R. Aleluya.",
+  "stage": "Liturgia",
+  "orden": 465,
+  "textoCompleto": "Pueblos todos, batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.\n\nÉl nos somete los pueblos\ny nos sojuzga las naciones;\nél nos escogió por heredad suya:\ngloria de Jacob, su amado. R.\n\nDios asciende entre aclamaciones;\nel Señor, al son de trompetas:\ntocad para Dios, tocad,\ntocad para nuestro Rey, tocad. R.",
+  "ciclo": "Ciclo A, B y C",
+  "tiempo": "Pascua",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Viernes",
+  "salmo": "Salmo 46, 2-3. 4-5. 6-7 (R.: 8a)",
+  "searchPool": "viernes de la sexta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 46 2 3 4 5 6 7 r 8a semana 6 semana vi viernes feria r dios es el rey del mundo r aleluya pueblos todos batid palmas aclamad a dios con gritos de jubilo porque el senor es sublime y terrible emperador de toda la tierra r el nos somete los pueblos y nos sojuzga las naciones el nos escogio por heredad suya gloria de jacob su amado r dios asciende entre aclamaciones el senor al son de trompetas tocad para dios tocad tocad para nuestro rey tocad r",
+  "sourceBook": "eucaristia",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dios es el rey del mundo."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Pueblos todos, batid palmas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "aclamad a Dios con gritos de júbilo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque el Señor es sublime y terrible,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "emperador de toda la tierra. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él nos somete los pueblos",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y nos sojuzga las naciones;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él nos escogió por heredad suya:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "gloria de Jacob, su amado. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dios asciende entre aclamaciones;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor, al son de trompetas:"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tocad para Dios, tocad,"
+    },
+    {
+      "line": "tocad para nuestro Rey, tocad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "estrofas": [
     [
       "Pueblos todos, batid palmas,",
@@ -37,88 +119,6 @@
       "tocad para nuestro Rey, tocad. R."
     ]
   ],
-  "textoCompleto": "Pueblos todos, batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.\n\nÉl nos somete los pueblos\ny nos sojuzga las naciones;\nél nos escogió por heredad suya:\ngloria de Jacob, su amado. R.\n\nDios asciende entre aclamaciones;\nel Señor, al son de trompetas:\ntocad para Dios, tocad,\ntocad para nuestro Rey, tocad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la sexta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 46 2 3 4 5 6 7 r 8a semana 6 semana vi viernes feria r dios es el rey del mundo r aleluya pueblos todos batid palmas aclamad a dios con gritos de jubilo porque el senor es sublime y terrible emperador de toda la tierra r el nos somete los pueblos y nos sojuzga las naciones el nos escogio por heredad suya gloria de jacob su amado r dios asciende entre aclamaciones el senor al son de trompetas tocad para dios tocad tocad para nuestro rey tocad r",
-  "lizq": [
-    {
-      "line": "R. Dios es el rey del mundo.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Pueblos todos, batid palmas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "aclamad a Dios con gritos de júbilo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "porque el Señor es sublime y terrible,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "emperador de toda la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Él nos somete los pueblos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y nos sojuzga las naciones;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él nos escogió por heredad suya:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "gloria de Jacob, su amado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dios asciende entre aclamaciones;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el Señor, al son de trompetas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tocad para Dios, tocad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tocad para nuestro Rey, tocad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "title": "Viernes de la sexta semana de Pascua",
+  "respuesta": "R. Dios es el rey del mundo."
 }

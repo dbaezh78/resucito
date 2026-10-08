@@ -1,15 +1,17 @@
 {
-  "id": "seup_133",
+  "orden": 5231,
   "title": "Lunes de la 23ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 23ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 5, 5-6. 7. 12 (R.: 9a)",
-  "salmo": "Salmo responsorial: Salmo 5, 5-6. 7. 12 (R.: 9a)",
+  "catCanto": "Salmo Eucaristía",
   "ciclo": "Año Par",
+  "respuesta": "R. Señor, guíame con tu justicia.",
   "tiempo": "Tiempo Ordinario",
   "dia": "Lunes",
-  "orden": 5231,
-  "respuesta": "R. Señor, guíame con tu justicia.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
+  "textoCompleto": "Tú no eres un Dios que ame la maldad,\nni el malvado es tu huésped,\nni el arrogante se mantiene en tu presencia. R.\n\nDetestas a los malhechores,\ndestruyes a los mentirosos;\nal hombre sanguinario y traicionero\nlo aborrece el Señor. R.\n\nQue se alegren los que se acogen a ti,\ncon júbilo eterno;\nprotégelos, para que se llenen de gozo\nlos que aman tu nombre. R.",
+  "stage": "Liturgia",
+  "celebracion": "Lunes de la 23ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 5, 5-6. 7. 12 (R.: 9a)",
   "estrofas": [
     [
       "Tú no eres un Dios que ame la maldad,",
@@ -29,36 +31,30 @@
       "los que aman tu nombre. R."
     ]
   ],
-  "textoCompleto": "Tú no eres un Dios que ame la maldad,\nni el malvado es tu huésped,\nni el arrogante se mantiene en tu presencia. R.\n\nDetestas a los malhechores,\ndestruyes a los mentirosos;\nal hombre sanguinario y traicionero\nlo aborrece el Señor. R.\n\nQue se alegren los que se acogen a ti,\ncon júbilo eterno;\nprotégelos, para que se llenen de gozo\nlos que aman tu nombre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 23 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 5 5 6 7 12 r 9a semana 23 semana xxiii lunes 23 xxiii r senor guiame con tu justicia tu no eres un dios que ame la maldad ni el malvado es tu huesped ni el arrogante se mantiene en tu presencia r detestas a los malhechores destruyes a los mentirosos al hombre sanguinario y traicionero lo aborrece el senor r que se alegren los que se acogen a ti con jubilo eterno protegelos para que se llenen de gozo los que aman tu nombre r",
   "lizq": [
     {
-      "line": "R. Señor, guíame con tu justicia.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Señor, guíame con tu justicia."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tú no eres un Dios que ame la maldad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú no eres un Dios que ame la maldad,"
     },
     {
-      "line": "ni el malvado es tu huésped,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ni el malvado es tu huésped,"
     },
     {
-      "line": "ni el arrogante se mantiene en tu presencia. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ni el arrogante se mantiene en tu presencia. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Detestas a los malhechores,",
@@ -69,12 +65,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "al hombre sanguinario y traicionero",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "al hombre sanguinario y traicionero"
     },
     {
-      "line": "lo aborrece el Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "lo aborrece el Señor. R."
     },
     {
       "line": "",
@@ -96,5 +92,9 @@
       "line": "los que aman tu nombre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 5, 5-6. 7. 12 (R.: 9a)",
+  "respuestaOpcional": "",
+  "id": "seup_133",
+  "searchPool": "lunes de la 23 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 5 5 6 7 12 r 9a semana 23 semana xxiii lunes 23 xxiii r senor guiame con tu justicia tu no eres un dios que ame la maldad ni el malvado es tu huesped ni el arrogante se mantiene en tu presencia r detestas a los malhechores destruyes a los mentirosos al hombre sanguinario y traicionero lo aborrece el senor r que se alegren los que se acogen a ti con jubilo eterno protegelos para que se llenen de gozo los que aman tu nombre r"
 }

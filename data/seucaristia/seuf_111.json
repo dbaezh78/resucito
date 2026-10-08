@@ -1,22 +1,10 @@
 {
+  "sourceBook": "eucaristia",
   "id": "seuf_111",
-  "title": "Lunes de la sexta semana de Pascua",
-  "celebracion": "Lunes de la sexta semana de Pascua",
-  "subtitle": "Salmo 149, 1-2. 3-4. 5-6a y 9b (R.: 4a)",
   "salmo": "Salmo 149, 1-2. 3-4. 5-6a y 9b (R.: 4a)",
   "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Lunes",
+  "celebracion": "Lunes de la sexta semana de Pascua",
   "orden": 461,
-  "respuesta": "R. El Señor ama a su pueblo.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -37,16 +25,24 @@
       "es un honor para todos sus fieles. R."
     ]
   ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\nresuene su alabanza en la asamblea de los fieles;\nque se alegre Israel por su Creador,\nlos hijos de Sión por su Rey. R.\n\nAlabad su nombre con danzas,\ncantadle con tambores y cítaras;\nporque el Señor ama a su pueblo\ny adorna con la victoria a los humildes. R.\n\nQue los fieles festejen su gloria\ny canten jubilosos en filas,\ncon vítores a Dios en la boca;\nes un honor para todos sus fieles. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "title": "Lunes de la sexta semana de Pascua",
   "searchPool": "lunes de la sexta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua lunes salmo 149 1 2 3 4 5 6a y 9b r 4a semana 6 semana vi lunes feria r el senor ama a su pueblo r aleluya cantad al senor un cantico nuevo resuene su alabanza en la asamblea de los fieles que se alegre israel por su creador los hijos de sion por su rey r alabad su nombre con danzas cantadle con tambores y citaras porque el senor ama a su pueblo y adorna con la victoria a los humildes r que los fieles festejen su gloria y canten jubilosos en filas con vitores a dios en la boca es un honor para todos sus fieles r",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "hasAudio": false,
+  "respuesta": "R. El Señor ama a su pueblo.",
+  "tiempo": "Pascua",
   "lizq": [
     {
-      "line": "R. El Señor ama a su pueblo.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor ama a su pueblo."
     },
     {
       "line": "",
@@ -69,8 +65,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "resuene su alabanza en la asamblea de los fieles;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "resuene su alabanza en la asamblea de los fieles;"
     },
     {
       "line": "que se alegre Israel por su Creador,",
@@ -97,16 +93,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y adorna con la victoria a los humildes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y adorna con la victoria a los humildes. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Que los fieles festejen su gloria",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que los fieles festejen su gloria"
     },
     {
       "line": "y canten jubilosos en filas,",
@@ -120,5 +116,9 @@
       "line": "es un honor para todos sus fieles. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nresuene su alabanza en la asamblea de los fieles;\nque se alegre Israel por su Creador,\nlos hijos de Sión por su Rey. R.\n\nAlabad su nombre con danzas,\ncantadle con tambores y cítaras;\nporque el Señor ama a su pueblo\ny adorna con la victoria a los humildes. R.\n\nQue los fieles festejen su gloria\ny canten jubilosos en filas,\ncon vítores a Dios en la boca;\nes un honor para todos sus fieles. R.",
+  "subtitle": "Salmo 149, 1-2. 3-4. 5-6a y 9b (R.: 4a)",
+  "dia": "Lunes",
+  "respuestaOpcional": "R. Aleluya."
 }

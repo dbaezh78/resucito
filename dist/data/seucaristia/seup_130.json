@@ -1,15 +1,8 @@
 {
-  "id": "seup_130",
-  "title": "Jueves de la 22ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 22ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: 1a)",
+  "hasAudio": false,
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5224,
-  "respuesta": "R. Del Señor es la tierra y cuanto la llena.",
-  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: 1a)",
+  "id": "seup_130",
   "estrofas": [
     [
       "Del Señor es la tierra y cuanto la llena,",
@@ -31,20 +24,22 @@
       "que viene a tu presencia, Dios de Jacob. R."
     ]
   ],
-  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "celebracion": "Jueves de la 22ª semana de Tiempo Ordinario",
+  "title": "Jueves de la 22ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "orden": 5224,
   "searchPool": "jueves de la 22 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 23 1 2 3 4ab 5 6 r 1a semana 22 semana xxii jueves 22 xxii r del senor es la tierra y cuanto la llena del senor es la tierra y cuanto la llena el orbe y todos sus habitantes el la fundo sobre los mares el la afianzo sobre los rios r quien puede subir al monte del senor quien puede estar en el recinto sacro el hombre de manos inocentes y puro corazon que no confia en los idolos r ese recibira la bendicion del senor le hara justicia el dios de salvacion este es el grupo que busca al senor que viene a tu presencia dios de jacob r",
+  "dia": "Jueves",
+  "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: 1a)",
+  "catCanto": "Salmo Eucaristía",
   "lizq": [
     {
       "line": "R. Del Señor es la tierra y cuanto la llena.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Del Señor es la tierra y cuanto la llena,",
@@ -55,12 +50,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "él la fundó sobre los mares,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él la fundó sobre los mares,"
     },
     {
-      "line": "él la afianzó sobre los ríos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "él la afianzó sobre los ríos. R."
     },
     {
       "line": "",
@@ -106,5 +101,10 @@
       "line": "que viene a tu presencia, Dios de Jacob. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
+  "respuesta": "R. Del Señor es la tierra y cuanto la llena.",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia"
 }

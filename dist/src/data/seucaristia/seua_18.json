@@ -1,15 +1,4 @@
 {
-  "id": "seua_18",
-  "title": "Quinto domingo de Cuaresma",
-  "celebracion": "Quinto domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 129, 1-2. 3-4ab. 4c-6. 7-8 (R.: 7)",
-  "salmo": "Salmo responsorial: Salmo 129, 1-2. 3-4ab. 4c-6. 7-8 (R.: 7)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
-  "orden": 305,
-  "respuesta": "R. Del Señor viene la misericordia, la redención copiosa.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Desde lo hondo a ti grito, Señor;",
@@ -39,15 +28,22 @@
     ]
   ],
   "textoCompleto": "Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuentas de los delitos, Señor,\n¿quién podrá resistir?\nPero de ti procede el perdón,\nasí infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela la aurora.\nAguarde Israel al Señor,\ncomo el centinela la aurora. R.\n\nPorque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 129, 1-2. 3-4ab. 4c-6. 7-8 (R.: 7)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "id": "seua_18",
+  "celebracion": "Quinto domingo de Cuaresma",
+  "ciclo": "Ciclo A",
+  "respuesta": "R. Del Señor viene la misericordia, la redención copiosa.",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
   "searchPool": "quinto domingo de cuaresma ciclo a cuaresma domingo salmo responsorial salmo 129 1 2 3 4ab 4c 6 7 8 r 7 r del senor viene la misericordia la redencion copiosa desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuentas de los delitos senor quien podra resistir pero de ti procede el perdon asi infundes respeto r mi alma espera en el senor espera en su palabra mi alma aguarda al senor mas que el centinela la aurora aguarde israel al senor como el centinela la aurora r porque del senor viene la misericordia la redencion copiosa y el redimira a israel de todos sus delitos r",
+  "salmo": "Salmo responsorial: Salmo 129, 1-2. 3-4ab. 4c-6. 7-8 (R.: 7)",
+  "respuestaOpcional": "",
+  "hasAudio": false,
   "lizq": [
     {
-      "line": "R. Del Señor viene la misericordia,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Del Señor viene la misericordia,"
     },
     {
       "line": "la redención copiosa.",
@@ -70,8 +66,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "a la voz de mi súplica. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "a la voz de mi súplica. R."
     },
     {
       "line": "",
@@ -102,24 +98,24 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "espera en su palabra;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "espera en su palabra;"
     },
     {
-      "line": "mi alma aguarda al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mi alma aguarda al Señor,"
     },
     {
-      "line": "más que el centinela la aurora.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "más que el centinela la aurora."
     },
     {
-      "line": "Aguarde Israel al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Aguarde Israel al Señor,"
     },
     {
-      "line": "como el centinela la aurora. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "como el centinela la aurora. R."
     },
     {
       "line": "",
@@ -134,12 +130,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y él redimirá a Israel",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y él redimirá a Israel"
     },
     {
       "line": "de todos sus delitos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "tiempo": "Cuaresma",
+  "title": "Quinto domingo de Cuaresma",
+  "dia": "Domingo",
+  "orden": 305
 }

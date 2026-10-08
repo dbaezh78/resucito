@@ -1,15 +1,83 @@
 {
-  "id": "seup_028",
-  "title": "Jueves de la 5ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 5ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 105, 3-4. 35-36. 37 y 40 (R.: 4a)",
-  "salmo": "Salmo responsorial: Salmo 105, 3-4. 35-36. 37 y 40 (R.: 4a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5054,
-  "respuesta": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
   "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 105, 3-4. 35-36. 37 y 40 (R.: 4a)",
+  "respuesta": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
+  "lizq": [
+    {
+      "line": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Dichosos los que respetan el derecho",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y practican siempre la justicia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Acuérdate de mí por amor a tu pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "visítame con tu salvación. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Emparentaron con los gentiles,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "imitaron sus costumbres;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "adoraron sus ídolos"
+    },
+    {
+      "line": "y cayeron en sus lazos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Inmolaron a los demonios",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "sus hijos y sus hijas.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "La ira del Señor se encendió contra su pueblo,"
+    },
+    {
+      "line": "y aborreció su heredad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Jueves de la 5ª semana de Tiempo Ordinario",
+  "dia": "Jueves",
+  "textoCompleto": "Dichosos los que respetan el derecho\ny practican siempre la justicia.\nAcuérdate de mí por amor a tu pueblo,\nvisítame con tu salvación. R.\n\nEmparentaron con los gentiles,\nimitaron sus costumbres;\nadoraron sus ídolos\ny cayeron en sus lazos. R.\n\nInmolaron a los demonios\nsus hijos y sus hijas.\nLa ira del Señor se encendió contra su pueblo,\ny aborreció su heredad. R.",
+  "stage": "Liturgia",
+  "id": "seup_028",
+  "orden": 5054,
   "estrofas": [
     [
       "Dichosos los que respetan el derecho",
@@ -30,76 +98,8 @@
       "y aborreció su heredad. R."
     ]
   ],
-  "textoCompleto": "Dichosos los que respetan el derecho\ny practican siempre la justicia.\nAcuérdate de mí por amor a tu pueblo,\nvisítame con tu salvación. R.\n\nEmparentaron con los gentiles,\nimitaron sus costumbres;\nadoraron sus ídolos\ny cayeron en sus lazos. R.\n\nInmolaron a los demonios\nsus hijos y sus hijas.\nLa ira del Señor se encendió contra su pueblo,\ny aborreció su heredad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "ciclo": "Año Par",
+  "salmo": "Salmo responsorial: Salmo 105, 3-4. 35-36. 37 y 40 (R.: 4a)",
   "searchPool": "jueves de la 5 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 105 3 4 35 36 37 y 40 r 4a semana 5 semana v jueves 5 v r acuerdate de mi senor por amor a tu pueblo dichosos los que respetan el derecho y practican siempre la justicia acuerdate de mi por amor a tu pueblo visitame con tu salvacion r emparentaron con los gentiles imitaron sus costumbres adoraron sus idolos y cayeron en sus lazos r inmolaron a los demonios sus hijos y sus hijas la ira del senor se encendio contra su pueblo y aborrecio su heredad r",
-  "lizq": [
-    {
-      "line": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichosos los que respetan el derecho",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y practican siempre la justicia.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Acuérdate de mí por amor a tu pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "visítame con tu salvación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Emparentaron con los gentiles,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "imitaron sus costumbres;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "adoraron sus ídolos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y cayeron en sus lazos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Inmolaron a los demonios",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "sus hijos y sus hijas.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "La ira del Señor se encendió contra su pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y aborreció su heredad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "celebracion": "Jueves de la 5ª semana de Tiempo Ordinario"
 }

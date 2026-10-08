@@ -1,10 +1,113 @@
 {
-  "id": "seuf_079",
-  "title": "Miércoles santo",
-  "celebracion": "Miércoles santo",
-  "subtitle": "Salmo 68, 8-10. 21-22. 31 y 33-34 (R.: 14c y b)",
-  "salmo": "Salmo 68, 8-10. 21-22. 31 y 33-34 (R.: 14c y b)",
   "ciclo": "Ciclo A, B y C",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Señor, que tu bondad me escuche"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "en el día de tu favor"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Por ti he aguantado afrentas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la vergüenza cubrió mi rostro."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Soy un extraño para mis hermanos,"
+    },
+    {
+      "line": "un extranjero para los hijos de mi madre;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque me devora el celo de tu templo,"
+    },
+    {
+      "line": "y las afrentas con que te afrentan caen sobre mí. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "La afrenta me destroza el corazón,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y desfallezco.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Espero compasión, y no la hay,"
+    },
+    {
+      "line": "consoladores, y no los encuentro.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "En mi comida me echaron hiel,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "para mi sed me dieron vinagre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabaré el nombre de Dios con cantos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "proclamaré su grandeza con acción de gracias.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Miradlo, los humildes, y alegraos,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "buscad al Señor, y vivirá vuestro corazón."
+    },
+    {
+      "line": "Que el Señor escucha a sus pobres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no desprecia a sus cautivos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Jueves Santo R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    }
+  ],
+  "textoCompleto": "Por ti he aguantado afrentas,\nla vergüenza cubrió mi rostro.\nSoy un extraño para mis hermanos,\nun extranjero para los hijos de mi madre;\nporque me devora el celo de tu templo,\ny las afrentas con que te afrentan caen sobre mí. R.\n\nLa afrenta me destroza el corazón,\ny desfallezco.\nEspero compasión, y no la hay,\nconsoladores, y no los encuentro.\nEn mi comida me echaron hiel,\npara mi sed me dieron vinagre. R.\n\nAlabaré el nombre de Dios con cantos,\nproclamaré su grandeza con acción de gracias.\nMiradlo, los humildes, y alegraos,\nbuscad al Señor, y vivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos. R.\n\nJueves Santo R.",
+  "salmo": "Salmo 68, 8-10. 21-22. 31 y 33-34 (R.: 14c y b)",
+  "searchPool": "miercoles santo ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles salmo 68 8 10 21 22 31 y 33 34 r 14c y b miercoles feria r senor que tu bondad me escuche en el dia de tu favor por ti he aguantado afrentas la verguenza cubrio mi rostro soy un extrano para mis hermanos un extranjero para los hijos de mi madre porque me devora el celo de tu templo y las afrentas con que te afrentan caen sobre mi r la afrenta me destroza el corazon y desfallezco espero compasion y no la hay consoladores y no los encuentro en mi comida me echaron hiel para mi sed me dieron vinagre r alabare el nombre de dios con cantos proclamare su grandeza con accion de gracias miradlo los humildes y alegraos buscad al senor y vivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos r jueves santo r",
+  "stage": "Liturgia",
+  "subtitle": "Salmo 68, 8-10. 21-22. 31 y 33-34 (R.: 14c y b)",
+  "orden": 373,
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +115,14 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Miércoles",
-  "orden": 373,
+  "title": "Miércoles santo",
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
   "respuesta": "R. Señor, que tu bondad me escuche en el día de tu favor",
+  "celebracion": "Miércoles santo",
+  "dia": "Miércoles",
   "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Por ti he aguantado afrentas,",
@@ -46,112 +152,6 @@
       "Jueves Santo R."
     ]
   ],
-  "textoCompleto": "Por ti he aguantado afrentas,\nla vergüenza cubrió mi rostro.\nSoy un extraño para mis hermanos,\nun extranjero para los hijos de mi madre;\nporque me devora el celo de tu templo,\ny las afrentas con que te afrentan caen sobre mí. R.\n\nLa afrenta me destroza el corazón,\ny desfallezco.\nEspero compasión, y no la hay,\nconsoladores, y no los encuentro.\nEn mi comida me echaron hiel,\npara mi sed me dieron vinagre. R.\n\nAlabaré el nombre de Dios con cantos,\nproclamaré su grandeza con acción de gracias.\nMiradlo, los humildes, y alegraos,\nbuscad al Señor, y vivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos. R.\n\nJueves Santo R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles santo ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles salmo 68 8 10 21 22 31 y 33 34 r 14c y b miercoles feria r senor que tu bondad me escuche en el dia de tu favor por ti he aguantado afrentas la verguenza cubrio mi rostro soy un extrano para mis hermanos un extranjero para los hijos de mi madre porque me devora el celo de tu templo y las afrentas con que te afrentan caen sobre mi r la afrenta me destroza el corazon y desfallezco espero compasion y no la hay consoladores y no los encuentro en mi comida me echaron hiel para mi sed me dieron vinagre r alabare el nombre de dios con cantos proclamare su grandeza con accion de gracias miradlo los humildes y alegraos buscad al senor y vivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos r jueves santo r",
-  "lizq": [
-    {
-      "line": "R. Señor, que tu bondad me escuche",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "en el día de tu favor",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Por ti he aguantado afrentas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "la vergüenza cubrió mi rostro.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Soy un extraño para mis hermanos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "un extranjero para los hijos de mi madre;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "porque me devora el celo de tu templo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y las afrentas con que te afrentan caen sobre mí. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "La afrenta me destroza el corazón,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y desfallezco.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Espero compasión, y no la hay,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "consoladores, y no los encuentro.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "En mi comida me echaron hiel,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "para mi sed me dieron vinagre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Alabaré el nombre de Dios con cantos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "proclamaré su grandeza con acción de gracias.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Miradlo, los humildes, y alegraos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "buscad al Señor, y vivirá vuestro corazón.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Que el Señor escucha a sus pobres,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no desprecia a sus cautivos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Jueves Santo R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    }
-  ]
+  "id": "seuf_079",
+  "tiempo": "Cuaresma"
 }

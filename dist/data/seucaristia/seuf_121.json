@@ -1,21 +1,16 @@
 {
-  "id": "seuf_121",
-  "title": "Viernes de la séptima semana de Pascua",
-  "celebracion": "Viernes de la séptima semana de Pascua",
-  "subtitle": "Salmo 102, 1-2. 11-12. 19-20ab (R.: 19a)",
-  "salmo": "Salmo 102, 1-2. 11-12. 19-20ab (R.: 19a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Viernes",
+  "hasAudio": false,
+  "stage": "Liturgia",
   "orden": 475,
-  "respuesta": "R. El Señor puso en el cielo su trono.",
+  "id": "seuf_121",
+  "tiempo": "Pascua",
+  "ciclo": "Ciclo A, B y C",
+  "salmo": "Salmo 102, 1-2. 11-12. 19-20ab (R.: 19a)",
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nComo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.\n\nEl Señor puso en el cielo su trono,\nsu soberanía gobierna el universo.\nBendecid al Señor, ángeles suyos,\npoderosos ejecutores de sus órdenes. R.",
+  "subtitle": "Salmo 102, 1-2. 11-12. 19-20ab (R.: 19a)",
+  "title": "Viernes de la séptima semana de Pascua",
+  "dia": "Viernes",
+  "sourceBook": "eucaristia",
   "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
@@ -37,11 +32,9 @@
       "poderosos ejecutores de sus órdenes. R."
     ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nComo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.\n\nEl Señor puso en el cielo su trono,\nsu soberanía gobierna el universo.\nBendecid al Señor, ángeles suyos,\npoderosos ejecutores de sus órdenes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "respuesta": "R. El Señor puso en el cielo su trono.",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "celebracion": "Viernes de la séptima semana de Pascua",
   "searchPool": "viernes de la septima semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 102 1 2 11 12 19 20ab r 19a semana 7 semana vii viernes feria r el senor puso en el cielo su trono r aleluya bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r como se levanta el cielo sobre la tierra se levanta su bondad sobre sus fieles como dista el oriente del ocaso asi aleja de nosotros nuestros delitos r el senor puso en el cielo su trono su soberania gobierna el universo bendecid al senor angeles suyos poderosos ejecutores de sus ordenes r",
   "lizq": [
     {
@@ -49,36 +42,36 @@
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendice, alma mía, al Señor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y todo mi ser a su santo nombre",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y todo mi ser a su santo nombre"
     },
     {
       "line": "Bendice, alma mía, al Señor,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y no olvides sus beneficios. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y no olvides sus beneficios. R."
     },
     {
       "line": "",
@@ -89,8 +82,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "se levanta su bondad sobre sus fieles;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "se levanta su bondad sobre sus fieles;"
     },
     {
       "line": "como dista el oriente del ocaso,",
@@ -117,8 +110,15 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "poderosos ejecutores de sus órdenes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "poderosos ejecutores de sus órdenes. R."
     }
+  ],
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
   ]
 }

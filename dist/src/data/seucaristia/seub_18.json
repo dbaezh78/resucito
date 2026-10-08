@@ -1,73 +1,40 @@
 {
-  "id": "seub_18",
-  "title": "Quinto domingo de Cuaresma",
-  "celebracion": "Quinto domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 50, 3-4, 12-13. 14-15. (R.: 12a)",
-  "salmo": "Salmo responsorial: Salmo 50, 3-4, 12-13. 14-15. (R.: 12a)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
-  "orden": 305,
-  "respuesta": "R. Oh Dios, crea en mí un corazón puro.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Misericordia, Dios mío, por tu bondad,",
-      "por tu inmensa compasión borra mi culpa;",
-      "lava del todo mi delito,",
-      "limpia mi pecado. R."
-    ],
-    [
-      "Oh Dios, crea en mí un corazón puro,",
-      "renuévame por dentro con espíritu firme;",
-      "no me arrojes lejos de tu rostro,",
-      "no me quites tu santo espíritu. R."
-    ],
-    [
-      "Devuélveme la alegría de tu salvación",
-      "afiánzame con espíritu generoso:",
-      "enseñaré a los malvados tus caminos,",
-      "los pecadores volverán a ti. R."
-    ]
-  ],
-  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación\nafiánzame con espíritu generoso:\nenseñaré a los malvados tus caminos,\nlos pecadores volverán a ti. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "quinto domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 50 3 4 12 13 14 15 r 12a r oh dios crea en mi un corazon puro misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso ensenare a los malvados tus caminos los pecadores volveran a ti r",
+  "ciclo": "Ciclo B",
+  "respuesta": "R. Oh Dios, crea en mí un corazón puro.",
   "lizq": [
     {
       "line": "R. Oh Dios, crea en mí un corazón puro.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Misericordia, Dios mío, por tu bondad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Misericordia, Dios mío, por tu bondad,"
     },
     {
       "line": "por tu inmensa compasión borra mi culpa;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "lava del todo mi delito,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lava del todo mi delito,"
     },
     {
-      "line": "limpia mi pecado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "limpia mi pecado. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Oh Dios, crea en mí un corazón puro,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Oh Dios, crea en mí un corazón puro,"
     },
     {
       "line": "renuévame por dentro con espíritu firme;",
@@ -98,8 +65,41 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los pecadores volverán a ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los pecadores volverán a ti. R."
     }
-  ]
+  ],
+  "id": "seub_18",
+  "orden": 305,
+  "subtitle": "Salmo responsorial: Salmo 50, 3-4, 12-13. 14-15. (R.: 12a)",
+  "catCanto": "Salmo Eucaristía",
+  "respuestaOpcional": "",
+  "estrofas": [
+    [
+      "Misericordia, Dios mío, por tu bondad,",
+      "por tu inmensa compasión borra mi culpa;",
+      "lava del todo mi delito,",
+      "limpia mi pecado. R."
+    ],
+    [
+      "Oh Dios, crea en mí un corazón puro,",
+      "renuévame por dentro con espíritu firme;",
+      "no me arrojes lejos de tu rostro,",
+      "no me quites tu santo espíritu. R."
+    ],
+    [
+      "Devuélveme la alegría de tu salvación",
+      "afiánzame con espíritu generoso:",
+      "enseñaré a los malvados tus caminos,",
+      "los pecadores volverán a ti. R."
+    ]
+  ],
+  "celebracion": "Quinto domingo de Cuaresma",
+  "title": "Quinto domingo de Cuaresma",
+  "tiempo": "Cuaresma",
+  "dia": "Domingo",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación\nafiánzame con espíritu generoso:\nenseñaré a los malvados tus caminos,\nlos pecadores volverán a ti. R.",
+  "salmo": "Salmo responsorial: Salmo 50, 3-4, 12-13. 14-15. (R.: 12a)",
+  "searchPool": "quinto domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 50 3 4 12 13 14 15 r 12a r oh dios crea en mi un corazon puro misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso ensenare a los malvados tus caminos los pecadores volveran a ti r"
 }

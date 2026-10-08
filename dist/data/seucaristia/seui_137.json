@@ -1,15 +1,7 @@
 {
-  "id": "seui_137",
-  "title": "Viernes de la 23ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 23ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11(R.: cf. 5a)",
-  "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11(R.: cf. 5a)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5235,
-  "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Viernes de la 23ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Protégeme, Dios mío, que me refugio en ti;",
@@ -29,12 +21,18 @@
       "de alegría perpetua a tu derecha. R."
     ]
   ],
-  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
-  "sourceBook": "eucaristia",
+  "orden": 5235,
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11(R.: cf. 5a)",
+  "respuestaOpcional": "",
+  "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
+  "ciclo": "Año Impar",
+  "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11(R.: cf. 5a)",
   "searchPool": "viernes de la 23 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 15 1 2a y 5 7 8 11 r cf 5a semana 23 semana xxiii viernes 23 xxiii r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
+  "id": "seui_137",
+  "hasAudio": false,
+  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
   "lizq": [
     {
       "line": "R. Tú, Señor, eres el lote de mi heredad.",
@@ -45,40 +43,40 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Protégeme, Dios mío, que me refugio en ti;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Protégeme, Dios mío, que me refugio en ti;"
     },
     {
       "line": "yo digo al Señor: «Tú eres mi bien».",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor es el lote de mi heredad y mi copa;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor es el lote de mi heredad y mi copa;"
     },
     {
-      "line": "mi suerte está en tu mano. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "mi suerte está en tu mano. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Bendeciré al Señor, que me aconseja,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Bendeciré al Señor, que me aconseja,"
     },
     {
-      "line": "hasta de noche me instruye internamente.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hasta de noche me instruye internamente."
     },
     {
-      "line": "Tengo siempre presente al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Tengo siempre presente al Señor,"
     },
     {
-      "line": "con él a mi derecha no vacilaré. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "con él a mi derecha no vacilaré. R."
     },
     {
       "line": "",
@@ -89,12 +87,14 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "me saciarás de gozo en tu presencia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me saciarás de gozo en tu presencia,"
     },
     {
       "line": "de alegría perpetua a tu derecha. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Viernes",
+  "title": "Viernes de la 23ª semana de Tiempo Ordinario"
 }

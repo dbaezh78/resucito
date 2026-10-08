@@ -1,40 +1,8 @@
 {
-  "id": "seup_200",
-  "title": "Martes de la 34ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 34ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 95, 10. 11-12. 13 (R.: 13b)",
-  "salmo": "Salmo responsorial: Salmo 95, 10. 11-12. 13 (R.: 13b)",
   "ciclo": "Año Par",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5342,
-  "respuesta": "R. El Señor llega a regir la tierra.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Decid a los pueblos: «El Señor es rey,",
-      "él afianzó el orbe, y no se moverá;",
-      "él gobierna a los pueblos rectamente». R."
-    ],
-    [
-      "Alégrese el cielo, goce la tierra,",
-      "retumbe el mar y cuanto lo llena;",
-      "vitoreen los campos y cuanto hay en ellos,",
-      "aclamen los árboles del bosque. R."
-    ],
-    [
-      "Delante del Señor, que ya llega,",
-      "ya llega a regir la tierra:",
-      "regirá el orbe con justicia",
-      "y los pueblos con fidelidad. R."
-    ]
-  ],
   "textoCompleto": "Decid a los pueblos: «El Señor es rey,\nél afianzó el orbe, y no se moverá;\nél gobierna a los pueblos rectamente». R.\n\nAlégrese el cielo, goce la tierra,\nretumbe el mar y cuanto lo llena;\nvitoreen los campos y cuanto hay en ellos,\naclamen los árboles del bosque. R.\n\nDelante del Señor, que ya llega,\nya llega a regir la tierra:\nregirá el orbe con justicia\ny los pueblos con fidelidad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 34 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 95 10 11 12 13 r 13b semana 34 semana xxxiv martes 34 xxxiv r el senor llega a regir la tierra decid a los pueblos el senor es rey el afianzo el orbe y no se movera el gobierna a los pueblos rectamente r alegrese el cielo goce la tierra retumbe el mar y cuanto lo llena vitoreen los campos y cuanto hay en ellos aclamen los arboles del bosque r delante del senor que ya llega ya llega a regir la tierra regira el orbe con justicia y los pueblos con fidelidad r",
+  "celebracion": "Martes de la 34ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. El Señor llega a regir la tierra.",
@@ -49,12 +17,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "él afianzó el orbe, y no se moverá;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él afianzó el orbe, y no se moverá;"
     },
     {
-      "line": "él gobierna a los pueblos rectamente». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "él gobierna a los pueblos rectamente». R."
     },
     {
       "line": "",
@@ -77,16 +45,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Delante del Señor, que ya llega,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "ya llega a regir la tierra:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ya llega a regir la tierra:"
     },
     {
       "line": "regirá el orbe con justicia",
@@ -96,5 +64,37 @@
       "line": "y los pueblos con fidelidad. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5342,
+  "catCanto": "Salmo Eucaristía",
+  "title": "Martes de la 34ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Decid a los pueblos: «El Señor es rey,",
+      "él afianzó el orbe, y no se moverá;",
+      "él gobierna a los pueblos rectamente». R."
+    ],
+    [
+      "Alégrese el cielo, goce la tierra,",
+      "retumbe el mar y cuanto lo llena;",
+      "vitoreen los campos y cuanto hay en ellos,",
+      "aclamen los árboles del bosque. R."
+    ],
+    [
+      "Delante del Señor, que ya llega,",
+      "ya llega a regir la tierra:",
+      "regirá el orbe con justicia",
+      "y los pueblos con fidelidad. R."
+    ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 95, 10. 11-12. 13 (R.: 13b)",
+  "respuesta": "R. El Señor llega a regir la tierra.",
+  "searchPool": "martes de la 34 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 95 10 11 12 13 r 13b semana 34 semana xxxiv martes 34 xxxiv r el senor llega a regir la tierra decid a los pueblos el senor es rey el afianzo el orbe y no se movera el gobierna a los pueblos rectamente r alegrese el cielo goce la tierra retumbe el mar y cuanto lo llena vitoreen los campos y cuanto hay en ellos aclamen los arboles del bosque r delante del senor que ya llega ya llega a regir la tierra regira el orbe con justicia y los pueblos con fidelidad r",
+  "id": "seup_200",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "dia": "Martes",
+  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 95, 10. 11-12. 13 (R.: 13b)",
+  "sourceBook": "eucaristia"
 }

@@ -1,49 +1,9 @@
 {
-  "id": "seub_52",
-  "title": "Domingo de la 10ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 10ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 7bc)",
-  "salmo": "Salmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 7bc)",
-  "ciclo": "Ciclo B",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 510,
-  "respuesta": "R. Del Señor viene la misericordia, la redención copiosa.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Desde lo hondo a ti grito, Señor;",
-      "Señor, escucha mi voz;",
-      "estén tus oídos atentos",
-      "a la voz de mi súplica. R."
-    ],
-    [
-      "Si llevas cuenta de los delitos, Señor,",
-      "¿quién podrá resistir?",
-      "Pero de ti procede el perdón,",
-      "y así infundes respeto. R."
-    ],
-    [
-      "Mi alma espera en el Señor,",
-      "espera en su palabra;",
-      "mi alma aguarda al Señor,",
-      "más que el centinela a la aurora. R."
-    ],
-    [
-      "Aguarde Israel al Señor,",
-      "como el centinela la aurora;",
-      "porque del Señor viene la misericordia,",
-      "la redención copiosa;",
-      "y él redimirá a Israel",
-      "de todos sus delitos. R."
-    ]
-  ],
-  "textoCompleto": "Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos, Señor,\n¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela a la aurora. R.\n\nAguarde Israel al Señor,\ncomo el centinela la aurora;\nporque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "id": "seub_52",
+  "salmo": "Salmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 7bc)",
   "hasAudio": false,
-  "searchPool": "domingo de la 10 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 129 1 2 3 4 5 6 7 8 r 7bc r del senor viene la misericordia la redencion copiosa desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuenta de los delitos senor quien podra resistir pero de ti procede el perdon y asi infundes respeto r mi alma espera en el senor espera en su palabra mi alma aguarda al senor mas que el centinela a la aurora r aguarde israel al senor como el centinela la aurora porque del senor viene la misericordia la redencion copiosa y el redimira a israel de todos sus delitos r",
+  "celebracion": "Domingo de la 10ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Del Señor viene la misericordia,",
@@ -54,8 +14,8 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Desde lo hondo a ti grito, Señor;",
@@ -86,8 +46,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Pero de ti procede el perdón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Pero de ti procede el perdón,"
     },
     {
       "line": "y así infundes respeto. R.",
@@ -114,8 +74,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Aguarde Israel al Señor,",
@@ -138,8 +98,48 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "de todos sus delitos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de todos sus delitos. R."
     }
-  ]
+  ],
+  "searchPool": "domingo de la 10 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 129 1 2 3 4 5 6 7 8 r 7bc r del senor viene la misericordia la redencion copiosa desde lo hondo a ti grito senor senor escucha mi voz esten tus oidos atentos a la voz de mi suplica r si llevas cuenta de los delitos senor quien podra resistir pero de ti procede el perdon y asi infundes respeto r mi alma espera en el senor espera en su palabra mi alma aguarda al senor mas que el centinela a la aurora r aguarde israel al senor como el centinela la aurora porque del senor viene la misericordia la redencion copiosa y el redimira a israel de todos sus delitos r",
+  "textoCompleto": "Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos\na la voz de mi súplica. R.\n\nSi llevas cuenta de los delitos, Señor,\n¿quién podrá resistir?\nPero de ti procede el perdón,\ny así infundes respeto. R.\n\nMi alma espera en el Señor,\nespera en su palabra;\nmi alma aguarda al Señor,\nmás que el centinela a la aurora. R.\n\nAguarde Israel al Señor,\ncomo el centinela la aurora;\nporque del Señor viene la misericordia,\nla redención copiosa;\ny él redimirá a Israel\nde todos sus delitos. R.",
+  "title": "Domingo de la 10ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "orden": 510,
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Del Señor viene la misericordia, la redención copiosa.",
+  "subtitle": "Salmo responsorial: Salmo 129, 1-2. 3-4. 5-6. 7-8 (R.: 7bc)",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "Desde lo hondo a ti grito, Señor;",
+      "Señor, escucha mi voz;",
+      "estén tus oídos atentos",
+      "a la voz de mi súplica. R."
+    ],
+    [
+      "Si llevas cuenta de los delitos, Señor,",
+      "¿quién podrá resistir?",
+      "Pero de ti procede el perdón,",
+      "y así infundes respeto. R."
+    ],
+    [
+      "Mi alma espera en el Señor,",
+      "espera en su palabra;",
+      "mi alma aguarda al Señor,",
+      "más que el centinela a la aurora. R."
+    ],
+    [
+      "Aguarde Israel al Señor,",
+      "como el centinela la aurora;",
+      "porque del Señor viene la misericordia,",
+      "la redención copiosa;",
+      "y él redimirá a Israel",
+      "de todos sus delitos. R."
+    ]
+  ],
+  "ciclo": "Ciclo B",
+  "stage": "Liturgia",
+  "dia": "Domingo"
 }

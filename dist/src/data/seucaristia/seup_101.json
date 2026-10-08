@@ -1,15 +1,91 @@
 {
-  "id": "seup_101",
-  "title": "Viernes de la 17ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 17ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 68, 5. 8-10. 14 (R.: 14c)",
-  "salmo": "Salmo responsorial: Salmo 68, 5. 8-10. 14 (R.: 14c)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5175,
+  "hasAudio": false,
   "respuesta": "R. Que me escuche tu gran bondad, Señor.",
-  "respuestaOpcional": "",
+  "searchPool": "viernes de la 17 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 68 5 8 10 14 r 14c semana 17 semana xvii viernes 17 xvii r que me escuche tu gran bondad senor mas que los pelos de mi cabeza son los que me odian sin razon mas duros que mis huesos los que me atacan injustamente es que voy a devolver lo que no he robado r por ti he aguantado afrentas la verguenza cubrio mi rostro soy un extrano para mis hermanos un extranjero para los hijos de mi madre porque me devora el celo de tu templo y las afrentas con que te afrentan caen sobre mi r pero mi oracion se dirige a ti dios mio el dia de tu favor que me escuche tu gran bondad que tu fidelidad me ayude r",
+  "subtitle": "Salmo responsorial: Salmo 68, 5. 8-10. 14 (R.: 14c)",
+  "stage": "Liturgia",
+  "lizq": [
+    {
+      "line": "R. Que me escuche tu gran bondad, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Más que los pelos de mi cabeza",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "son los que me odian sin razón;"
+    },
+    {
+      "line": "más duros que mis huesos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los que me atacan injustamente.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿Es que voy a devolver"
+    },
+    {
+      "line": "lo que no he robado? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Por ti he aguantado afrentas,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la vergüenza cubrió mi rostro."
+    },
+    {
+      "line": "Soy un extraño para mis hermanos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "un extranjero para los hijos de mi madre;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "porque me devora el celo de tu templo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y las afrentas con que te afrentan caen sobre mí. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Pero mi oración se dirige a ti,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Dios mío, el día de tu favor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que me escuche tu gran bondad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tu fidelidad me ayude. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "estrofas": [
     [
       "Más que los pelos de mi cabeza",
@@ -34,92 +110,16 @@
       "que tu fidelidad me ayude. R."
     ]
   ],
-  "textoCompleto": "Más que los pelos de mi cabeza\nson los que me odian sin razón;\nmás duros que mis huesos,\nlos que me atacan injustamente.\n¿Es que voy a devolver\nlo que no he robado? R.\n\nPor ti he aguantado afrentas,\nla vergüenza cubrió mi rostro.\nSoy un extraño para mis hermanos,\nun extranjero para los hijos de mi madre;\nporque me devora el celo de tu templo,\ny las afrentas con que te afrentan caen sobre mí. R.\n\nPero mi oración se dirige a ti,\nDios mío, el día de tu favor;\nque me escuche tu gran bondad,\nque tu fidelidad me ayude. R.",
+  "salmo": "Salmo responsorial: Salmo 68, 5. 8-10. 14 (R.: 14c)",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "textoCompleto": "Más que los pelos de mi cabeza\nson los que me odian sin razón;\nmás duros que mis huesos,\nlos que me atacan injustamente.\n¿Es que voy a devolver\nlo que no he robado? R.\n\nPor ti he aguantado afrentas,\nla vergüenza cubrió mi rostro.\nSoy un extraño para mis hermanos,\nun extranjero para los hijos de mi madre;\nporque me devora el celo de tu templo,\ny las afrentas con que te afrentan caen sobre mí. R.\n\nPero mi oración se dirige a ti,\nDios mío, el día de tu favor;\nque me escuche tu gran bondad,\nque tu fidelidad me ayude. R.",
+  "title": "Viernes de la 17ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 17 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 68 5 8 10 14 r 14c semana 17 semana xvii viernes 17 xvii r que me escuche tu gran bondad senor mas que los pelos de mi cabeza son los que me odian sin razon mas duros que mis huesos los que me atacan injustamente es que voy a devolver lo que no he robado r por ti he aguantado afrentas la verguenza cubrio mi rostro soy un extrano para mis hermanos un extranjero para los hijos de mi madre porque me devora el celo de tu templo y las afrentas con que te afrentan caen sobre mi r pero mi oracion se dirige a ti dios mio el dia de tu favor que me escuche tu gran bondad que tu fidelidad me ayude r",
-  "lizq": [
-    {
-      "line": "R. Que me escuche tu gran bondad, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Más que los pelos de mi cabeza",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "son los que me odian sin razón;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "más duros que mis huesos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los que me atacan injustamente.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿Es que voy a devolver",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "lo que no he robado? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Por ti he aguantado afrentas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "la vergüenza cubrió mi rostro.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Soy un extraño para mis hermanos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "un extranjero para los hijos de mi madre;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "porque me devora el celo de tu templo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y las afrentas con que te afrentan caen sobre mí. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Pero mi oración se dirige a ti,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Dios mío, el día de tu favor;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que me escuche tu gran bondad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tu fidelidad me ayude. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "dia": "Viernes",
+  "orden": 5175,
+  "id": "seup_101",
+  "celebracion": "Viernes de la 17ª semana de Tiempo Ordinario",
+  "ciclo": "Año Par"
 }

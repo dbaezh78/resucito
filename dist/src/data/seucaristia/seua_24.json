@@ -1,15 +1,6 @@
 {
-  "id": "seua_24",
-  "title": "Segundo Salmo",
-  "celebracion": "Segundo Salmo",
   "subtitle": "Salmo responsorial: Salmo 15, 5 y 8. 9-10. 11 (R.: 1)",
-  "salmo": "Salmo responsorial: Salmo 15, 5 y 8. 9-10. 11 (R.: 1)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Solemnidades y Fiestas",
-  "dia": "Domingo",
-  "orden": 600,
-  "respuesta": "R. Protégeme, Dios mío, que me refugio en ti.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "El Señor es el lote de mi heredad y mi copa,",
@@ -30,20 +21,27 @@
       "de alegría perpetua a tu derecha. R."
     ]
   ],
-  "textoCompleto": "El Señor es el lote de mi heredad y mi copa,\nmi suerte está en tu mano.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena:\nporque no me entregarás a la muerte\nni dejarás a tu fiel conocer la corrupción. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuestaOpcional": "",
+  "id": "seua_24",
   "searchPool": "segundo salmo ciclo a solemnidades y fiestas domingo salmo responsorial salmo 15 5 y 8 9 10 11 r 1 r protegeme dios mio que me refugio en ti el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano tengo siempre presente al senor con el a mi derecha no vacilare r por eso se me alegra el corazon se gozan mis entranas y mi carne descansa serena porque no me entregaras a la muerte ni dejaras a tu fiel conocer la corrupcion r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
+  "salmo": "Salmo responsorial: Salmo 15, 5 y 8. 9-10. 11 (R.: 1)",
+  "respuesta": "R. Protégeme, Dios mío, que me refugio en ti.",
+  "orden": 600,
+  "dia": "Domingo",
+  "title": "Segundo Salmo",
+  "tiempo": "Solemnidades y Fiestas",
+  "ciclo": "Ciclo A",
+  "textoCompleto": "El Señor es el lote de mi heredad y mi copa,\nmi suerte está en tu mano.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena:\nporque no me entregarás a la muerte\nni dejarás a tu fiel conocer la corrupción. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
+  "hasAudio": false,
   "lizq": [
     {
       "line": "R. Protégeme, Dios mío, que me refugio en ti.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es el lote de mi heredad y mi copa,",
@@ -58,8 +56,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "con él a mi derecha no vacilaré. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "con él a mi derecha no vacilaré. R."
     },
     {
       "line": "",
@@ -90,16 +88,18 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Me enseñarás el sendero de la vida,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Me enseñarás el sendero de la vida,"
     },
     {
-      "line": "me saciarás de gozo en tu presencia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me saciarás de gozo en tu presencia,"
     },
     {
       "line": "de alegría perpetua a tu derecha. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Segundo Salmo",
+  "stage": "Liturgia"
 }

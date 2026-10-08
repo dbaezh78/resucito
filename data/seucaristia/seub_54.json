@@ -1,15 +1,7 @@
 {
-  "id": "seub_54",
-  "title": "Domingo de la 12ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 12ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
   "subtitle": "Salmo responsorial: Salmo 106, 23-24. 25-26. 28-29. 30-31 (R.: 1)",
-  "salmo": "Salmo responsorial: Salmo 106, 23-24. 25-26. 28-29. 30-31 (R.: 1)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 512,
-  "respuesta": "R. Dad gracias al Señor, porque es eterna su misericordia.",
-  "respuestaOpcional": "R. Aleluya",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Entraron en naves por el mar,",
@@ -36,36 +28,31 @@
       "por las maravillas que hace con los hombres. R."
     ]
   ],
-  "textoCompleto": "Entraron en naves por el mar,\ncomerciando por las aguas inmensas.\nContemplaron las obras de Dios,\nsus maravillas en el océano. R.\n\nÉl habló y levantó un viento tormentoso,\nque alzaba las olas a lo alto;\nsubían al cielo, bajaban al abismo,\nel estómago revuelto por el mareo. R.\n\nPero gritaron al Señor en su angustia,\ny los arrancó de la tribulación.\nApaciguó la tormenta en suave brisa,\ny enmudecieron las olas del mar. R.\n\nSe alegraron de aquella bonanza,\ny él los condujo al ansiado puerto.\nDen gracias al Señor por su misericordia,\npor las maravillas que hace con los hombres. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "domingo de la 12 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 106 23 24 25 26 28 29 30 31 r 1 r dad gracias al senor porque es eterna su misericordia r aleluya entraron en naves por el mar comerciando por las aguas inmensas contemplaron las obras de dios sus maravillas en el oceano r el hablo y levanto un viento tormentoso que alzaba las olas a lo alto subian al cielo bajaban al abismo el estomago revuelto por el mareo r pero gritaron al senor en su angustia y los arranco de la tribulacion apaciguo la tormenta en suave brisa y enmudecieron las olas del mar r se alegraron de aquella bonanza y el los condujo al ansiado puerto den gracias al senor por su misericordia por las maravillas que hace con los hombres r",
   "lizq": [
     {
-      "line": "R. Dad gracias al Señor, porque es eterna su misericordia.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dad gracias al Señor, porque es eterna su misericordia."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
-      "line": "R. Aleluya",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Entraron en naves por el mar,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Entraron en naves por el mar,"
     },
     {
       "line": "comerciando por las aguas inmensas.",
@@ -100,8 +87,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Pero gritaron al Señor en su angustia,",
@@ -128,8 +115,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y él los condujo al ansiado puerto.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y él los condujo al ansiado puerto."
     },
     {
       "line": "Den gracias al Señor por su misericordia,",
@@ -139,5 +126,18 @@
       "line": "por las maravillas que hace con los hombres. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Ciclo B",
+  "respuestaOpcional": "R. Aleluya",
+  "dia": "Domingo",
+  "stage": "Liturgia",
+  "celebracion": "Domingo de la 12ª semana de Tiempo Ordinario",
+  "textoCompleto": "Entraron en naves por el mar,\ncomerciando por las aguas inmensas.\nContemplaron las obras de Dios,\nsus maravillas en el océano. R.\n\nÉl habló y levantó un viento tormentoso,\nque alzaba las olas a lo alto;\nsubían al cielo, bajaban al abismo,\nel estómago revuelto por el mareo. R.\n\nPero gritaron al Señor en su angustia,\ny los arrancó de la tribulación.\nApaciguó la tormenta en suave brisa,\ny enmudecieron las olas del mar. R.\n\nSe alegraron de aquella bonanza,\ny él los condujo al ansiado puerto.\nDen gracias al Señor por su misericordia,\npor las maravillas que hace con los hombres. R.",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 106, 23-24. 25-26. 28-29. 30-31 (R.: 1)",
+  "hasAudio": false,
+  "title": "Domingo de la 12ª semana de Tiempo Ordinario",
+  "id": "seub_54",
+  "orden": 512,
+  "respuesta": "R. Dad gracias al Señor, porque es eterna su misericordia."
 }

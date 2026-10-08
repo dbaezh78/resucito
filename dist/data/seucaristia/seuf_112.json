@@ -1,22 +1,89 @@
 {
-  "id": "seuf_112",
-  "title": "Martes de la sexta semana de Pascua",
   "celebracion": "Martes de la sexta semana de Pascua",
-  "subtitle": "Salmo 137, 1-2a. 2bc y 3. 7c-8 (R.: 7c)",
-  "salmo": "Salmo 137, 1-2a. 2bc y 3. 7c-8 (R.: 7c)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
+  "searchPool": "martes de la sexta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 137 1 2a 2bc y 3 7c 8 r 7c semana 6 semana vi martes feria r senor tu derecha me salva r aleluya te doy gracias senor de todo corazon delante de los angeles tanere para ti me postrare hacia tu santuario r dare gracias a tu nombre por tu misericordia y tu lealtad cuando te invoque me escuchaste acreciste el valor en mi alma r tu derecha me salva el senor completara sus favores conmigo senor tu misericordia es eterna no abandones la obra de tus manos r",
+  "hasAudio": false,
+  "lizq": [
+    {
+      "line": "R. Señor, tu derecha me salva.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Te doy gracias, Señor, de todo corazón;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "delante de los ángeles tañeré para ti,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me postraré hacia tu santuario. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Daré gracias a tu nombre",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por tu misericordia y tu lealtad."
+    },
+    {
+      "line": "Cuando te invoqué, me escuchaste,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "acreciste el valor en mi alma. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tu derecha me salva."
+    },
+    {
+      "line": "El Señor completará sus favores conmigo:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, tu misericordia es eterna,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "no abandones la obra de tus manos. R."
+    }
   ],
   "tiempo": "Pascua",
-  "dia": "Martes",
-  "orden": 462,
-  "respuesta": "R. Señor, tu derecha me salva.",
+  "id": "seuf_112",
+  "subtitle": "Salmo 137, 1-2a. 2bc y 3. 7c-8 (R.: 7c)",
+  "textoCompleto": "Te doy gracias, Señor, de todo corazón;\ndelante de los ángeles tañeré para ti,\nme postraré hacia tu santuario. R.\n\nDaré gracias a tu nombre\npor tu misericordia y tu lealtad.\nCuando te invoqué, me escuchaste,\nacreciste el valor en mi alma. R.\n\nTu derecha me salva.\nEl Señor completará sus favores conmigo:\nSeñor, tu misericordia es eterna,\nno abandones la obra de tus manos. R.",
+  "sourceBook": "eucaristia",
   "respuestaOpcional": "R. Aleluya.",
+  "respuesta": "R. Señor, tu derecha me salva.",
+  "title": "Martes de la sexta semana de Pascua",
   "estrofas": [
     [
       "Te doy gracias, Señor, de todo corazón;",
@@ -36,84 +103,17 @@
       "no abandones la obra de tus manos. R."
     ]
   ],
-  "textoCompleto": "Te doy gracias, Señor, de todo corazón;\ndelante de los ángeles tañeré para ti,\nme postraré hacia tu santuario. R.\n\nDaré gracias a tu nombre\npor tu misericordia y tu lealtad.\nCuando te invoqué, me escuchaste,\nacreciste el valor en mi alma. R.\n\nTu derecha me salva.\nEl Señor completará sus favores conmigo:\nSeñor, tu misericordia es eterna,\nno abandones la obra de tus manos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "dia": "Martes",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la sexta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 137 1 2a 2bc y 3 7c 8 r 7c semana 6 semana vi martes feria r senor tu derecha me salva r aleluya te doy gracias senor de todo corazon delante de los angeles tanere para ti me postrare hacia tu santuario r dare gracias a tu nombre por tu misericordia y tu lealtad cuando te invoque me escuchaste acreciste el valor en mi alma r tu derecha me salva el senor completara sus favores conmigo senor tu misericordia es eterna no abandones la obra de tus manos r",
-  "lizq": [
-    {
-      "line": "R. Señor, tu derecha me salva.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Te doy gracias, Señor, de todo corazón;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "delante de los ángeles tañeré para ti,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me postraré hacia tu santuario. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Daré gracias a tu nombre",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "por tu misericordia y tu lealtad.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Cuando te invoqué, me escuchaste,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "acreciste el valor en mi alma. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tu derecha me salva.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "El Señor completará sus favores conmigo:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Señor, tu misericordia es eterna,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no abandones la obra de tus manos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "ciclo": "Ciclo A, B y C",
+  "salmo": "Salmo 137, 1-2a. 2bc y 3. 7c-8 (R.: 7c)",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "stage": "Liturgia",
+  "orden": 462
 }

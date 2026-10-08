@@ -1,15 +1,6 @@
 {
-  "id": "seup_163",
-  "title": "Lunes de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 28ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5a y 6-7 (R.: cf. 2)",
   "salmo": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5a y 6-7 (R.: cf. 2)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5281,
-  "respuesta": "R. Bendito sea el nombre del Señor por siempre.",
-  "respuestaOpcional": "R. Aleluya.",
+  "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nDe la salida del sol hasta su ocaso,\nalabado sea el nombre del Señor.\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos. R.\n\n¿Quién como el Señor, Dios nuestro,\nque se eleva en su trono\ny se abaja para mirar\nal cielo y a la tierra?\nLevanta del polvo al desvalido,\nalza de la basura al pobre. R.",
   "estrofas": [
     [
       "Alabad, siervos del Señor,",
@@ -32,20 +23,26 @@
       "alza de la basura al pobre. R."
     ]
   ],
-  "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nDe la salida del sol hasta su ocaso,\nalabado sea el nombre del Señor.\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos. R.\n\n¿Quién como el Señor, Dios nuestro,\nque se eleva en su trono\ny se abaja para mirar\nal cielo y a la tierra?\nLevanta del polvo al desvalido,\nalza de la basura al pobre. R.",
-  "sourceBook": "eucaristia",
+  "respuesta": "R. Bendito sea el nombre del Señor por siempre.",
+  "subtitle": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5a y 6-7 (R.: cf. 2)",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Lunes de la 28ª semana de Tiempo Ordinario",
   "hasAudio": false,
-  "searchPool": "lunes de la 28 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 112 1 2 3 4 5a y 6 7 r cf 2 semana 28 semana xxviii lunes 28 xxviii r bendito sea el nombre del senor por siempre r aleluya alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar al cielo y a la tierra levanta del polvo al desvalido alza de la basura al pobre r",
+  "dia": "Lunes",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "id": "seup_163",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 5281,
   "lizq": [
     {
       "line": "R. Bendito sea el nombre del Señor por siempre.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -72,8 +69,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ahora y por siempre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ahora y por siempre. R."
     },
     {
       "line": "",
@@ -84,16 +81,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "alabado sea el nombre del Señor.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alabado sea el nombre del Señor."
     },
     {
       "line": "El Señor se eleva sobre todos los pueblos,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "su gloria sobre los cielos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su gloria sobre los cielos. R."
     },
     {
       "line": "",
@@ -120,8 +117,11 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "alza de la basura al pobre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "alza de la basura al pobre. R."
     }
-  ]
+  ],
+  "respuestaOpcional": "R. Aleluya.",
+  "title": "Lunes de la 28ª semana de Tiempo Ordinario",
+  "searchPool": "lunes de la 28 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 112 1 2 3 4 5a y 6 7 r cf 2 semana 28 semana xxviii lunes 28 xxviii r bendito sea el nombre del senor por siempre r aleluya alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar al cielo y a la tierra levanta del polvo al desvalido alza de la basura al pobre r"
 }

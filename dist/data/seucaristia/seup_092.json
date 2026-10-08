@@ -1,15 +1,87 @@
 {
-  "id": "seup_092",
   "title": "Martes de la 16ª semana de Tiempo Ordinario",
   "celebracion": "Martes de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 84, 2-4. 5-6. 7-8 (R.: 8a)",
-  "salmo": "Salmo responsorial: Salmo 84, 2-4. 5-6. 7-8 (R.: 8a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
   "orden": 5162,
+  "tiempo": "Tiempo Ordinario",
+  "id": "seup_092",
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par",
   "respuesta": "R. Muéstranos, Señor, tu misericordia.",
-  "respuestaOpcional": "",
+  "lizq": [
+    {
+      "line": "R. Muéstranos, Señor, tu misericordia.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Señor, has sido bueno con tu tierra,"
+    },
+    {
+      "line": "has restaurado la suerte de Jacob,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "has perdonado la culpa de tu pueblo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "has sepultado todos sus pecados,"
+    },
+    {
+      "line": "has reprimido tu cólera,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "has frenado el incendio de tu ira. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Restáuranos, Dios salvador nuestro;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cesa en tu rencor contra nosotros."
+    },
+    {
+      "line": "¿Vas a estar siempre enojado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "o a prolongar tu ira de edad en edad? R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "¿No vas a devolvernos la vida,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "para que tu pueblo se alegre contigo?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Muéstranos, Señor, tu misericordia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y danos tu salvación. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "textoCompleto": "Señor, has sido bueno con tu tierra,\nhas restaurado la suerte de Jacob,\nhas perdonado la culpa de tu pueblo,\nhas sepultado todos sus pecados,\nhas reprimido tu cólera,\nhas frenado el incendio de tu ira. R.\n\nRestáuranos, Dios salvador nuestro;\ncesa en tu rencor contra nosotros.\n¿Vas a estar siempre enojado,\no a prolongar tu ira de edad en edad? R.\n\n¿No vas a devolvernos la vida,\npara que tu pueblo se alegre contigo?\nMuéstranos, Señor, tu misericordia\ny danos tu salvación. R.",
   "estrofas": [
     [
       "Señor, has sido bueno con tu tierra,",
@@ -32,84 +104,12 @@
       "y danos tu salvación. R."
     ]
   ],
-  "textoCompleto": "Señor, has sido bueno con tu tierra,\nhas restaurado la suerte de Jacob,\nhas perdonado la culpa de tu pueblo,\nhas sepultado todos sus pecados,\nhas reprimido tu cólera,\nhas frenado el incendio de tu ira. R.\n\nRestáuranos, Dios salvador nuestro;\ncesa en tu rencor contra nosotros.\n¿Vas a estar siempre enojado,\no a prolongar tu ira de edad en edad? R.\n\n¿No vas a devolvernos la vida,\npara que tu pueblo se alegre contigo?\nMuéstranos, Señor, tu misericordia\ny danos tu salvación. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "martes de la 16 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 84 2 4 5 6 7 8 r 8a semana 16 semana xvi martes 16 xvi r muestranos senor tu misericordia senor has sido bueno con tu tierra has restaurado la suerte de jacob has perdonado la culpa de tu pueblo has sepultado todos sus pecados has reprimido tu colera has frenado el incendio de tu ira r restauranos dios salvador nuestro cesa en tu rencor contra nosotros vas a estar siempre enojado o a prolongar tu ira de edad en edad r no vas a devolvernos la vida para que tu pueblo se alegre contigo muestranos senor tu misericordia y danos tu salvacion r",
-  "lizq": [
-    {
-      "line": "R. Muéstranos, Señor, tu misericordia.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Señor, has sido bueno con tu tierra,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "has restaurado la suerte de Jacob,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "has perdonado la culpa de tu pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "has sepultado todos sus pecados,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "has reprimido tu cólera,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "has frenado el incendio de tu ira. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Restáuranos, Dios salvador nuestro;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "cesa en tu rencor contra nosotros.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿Vas a estar siempre enojado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "o a prolongar tu ira de edad en edad? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "¿No vas a devolvernos la vida,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "para que tu pueblo se alegre contigo?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Muéstranos, Señor, tu misericordia",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y danos tu salvación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "dia": "Martes",
+  "subtitle": "Salmo responsorial: Salmo 84, 2-4. 5-6. 7-8 (R.: 8a)",
+  "salmo": "Salmo responsorial: Salmo 84, 2-4. 5-6. 7-8 (R.: 8a)"
 }

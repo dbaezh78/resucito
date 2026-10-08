@@ -1,22 +1,4 @@
 {
-  "id": "seuf_035",
-  "title": "8 DE ENERO: Martes después de Epifanía",
-  "celebracion": "8 DE ENERO: Martes después de Epifanía",
-  "subtitle": "Salmo 71, 1-2. 3-4ab. 7-8 (R.: cf. 11)",
-  "salmo": "Salmo 71, 1-2. 3-4ab. 7-8 (R.: cf. 11)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Navidad",
-  "dia": "Martes",
-  "orden": 232,
-  "respuesta": "R. Que todos los pueblos de la tierra se postren ante ti, Señor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dios mío, confía tu juicio al rey,",
@@ -37,16 +19,28 @@
       "del Gran Río al confín de la tierra. R."
     ]
   ],
-  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue los montes traigan paz,\ny los collados justicia;\nque él defienda a los humildes del pueblo,\nsocorra a los hijos del pobre. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "title": "8 DE ENERO: Martes después de Epifanía",
+  "subtitle": "Salmo 71, 1-2. 3-4ab. 7-8 (R.: cf. 11)",
   "catCanto": "Salmo Eucaristía",
+  "orden": 232,
+  "id": "seuf_035",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "salmo": "Salmo 71, 1-2. 3-4ab. 7-8 (R.: cf. 11)",
+  "respuestaOpcional": "",
+  "celebracion": "8 DE ENERO: Martes después de Epifanía",
+  "stage": "Liturgia",
   "hasAudio": false,
-  "searchPool": "8 de enero martes despues de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad martes salmo 71 1 2 3 4ab 7 8 r cf 11 martes feria r que todos los pueblos de la tierra se postren ante ti senor dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que los montes traigan paz y los collados justicia que el defienda a los humildes del pueblo socorra a los hijos del pobre r que en sus dias florezca la justicia y la paz hasta que falte la luna que domine de mar a mar del gran rio al confin de la tierra r",
+  "respuesta": "R. Que todos los pueblos de la tierra se postren ante ti, Señor.",
   "lizq": [
     {
-      "line": "R. Que todos los pueblos de la tierra",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Que todos los pueblos de la tierra"
     },
     {
       "line": "se postren ante ti, Señor.",
@@ -77,28 +71,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Que los montes traigan paz,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que los montes traigan paz,"
     },
     {
-      "line": "y los collados justicia;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y los collados justicia;"
     },
     {
       "line": "que él defienda a los humildes del pueblo,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "socorra a los hijos del pobre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "socorra a los hijos del pobre. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Que en sus días florezca la justicia",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que en sus días florezca la justicia"
     },
     {
       "line": "y la paz hasta que falte la luna;",
@@ -112,5 +106,11 @@
       "line": "del Gran Río al confín de la tierra. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue los montes traigan paz,\ny los collados justicia;\nque él defienda a los humildes del pueblo,\nsocorra a los hijos del pobre. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.",
+  "searchPool": "8 de enero martes despues de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad martes salmo 71 1 2 3 4ab 7 8 r cf 11 martes feria r que todos los pueblos de la tierra se postren ante ti senor dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que los montes traigan paz y los collados justicia que el defienda a los humildes del pueblo socorra a los hijos del pobre r que en sus dias florezca la justicia y la paz hasta que falte la luna que domine de mar a mar del gran rio al confin de la tierra r",
+  "dia": "Martes",
+  "tiempo": "Navidad",
+  "sourceBook": "eucaristia",
+  "ciclo": "Ciclo A, B y C"
 }

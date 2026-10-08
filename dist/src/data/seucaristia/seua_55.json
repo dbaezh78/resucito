@@ -1,38 +1,8 @@
 {
-  "id": "seua_55",
-  "title": "Domingo de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 99, 2. 3. 5 (R.: 3c)",
-  "salmo": "Salmo responsorial: Salmo 99, 2. 3. 5 (R.: 3c)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
   "orden": 511,
-  "respuesta": "R. Nosotros somos su pueblo y ovejas de su rebaño.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Aclama al Señor, tierra entera,",
-      "servid al Señor con alegría,",
-      "entrad en su presencia con vítores, R."
-    ],
-    [
-      "Sabed que el Señor es Dios:",
-      "que él nos hizo y somos suyos,",
-      "su pueblo y ovejas de su rebaño. R."
-    ],
-    [
-      "El Señor es bueno,",
-      "su misericordia es eterna,",
-      "su fidelidad por todas las edades. R."
-    ]
-  ],
-  "textoCompleto": "Aclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores, R.\n\nSabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.\n\nEl Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "title": "Domingo de la 11ª semana de Tiempo Ordinario",
   "hasAudio": false,
-  "searchPool": "domingo de la 11 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 99 2 3 5 r 3c r nosotros somos su pueblo y ovejas de su rebano aclama al senor tierra entera servid al senor con alegria entrad en su presencia con vitores r sabed que el senor es dios que el nos hizo y somos suyos su pueblo y ovejas de su rebano r el senor es bueno su misericordia es eterna su fidelidad por todas las edades r",
+  "textoCompleto": "Aclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores, R.\n\nSabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.\n\nEl Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades. R.",
   "lizq": [
     {
       "line": "R. Nosotros somos su pueblo",
@@ -51,44 +21,74 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "servid al Señor con alegría,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "servid al Señor con alegría,"
     },
     {
-      "line": "entrad en su presencia con vítores, R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "entrad en su presencia con vítores, R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Sabed que el Señor es Dios:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sabed que el Señor es Dios:"
     },
     {
       "line": "que él nos hizo y somos suyos,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "su pueblo y ovejas de su rebaño. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su pueblo y ovejas de su rebaño. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "El Señor es bueno,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es bueno,"
     },
     {
       "line": "su misericordia es eterna,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "su fidelidad por todas las edades. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su fidelidad por todas las edades. R."
     }
-  ]
+  ],
+  "respuesta": "R. Nosotros somos su pueblo y ovejas de su rebaño.",
+  "salmo": "Salmo responsorial: Salmo 99, 2. 3. 5 (R.: 3c)",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 99, 2. 3. 5 (R.: 3c)",
+  "estrofas": [
+    [
+      "Aclama al Señor, tierra entera,",
+      "servid al Señor con alegría,",
+      "entrad en su presencia con vítores, R."
+    ],
+    [
+      "Sabed que el Señor es Dios:",
+      "que él nos hizo y somos suyos,",
+      "su pueblo y ovejas de su rebaño. R."
+    ],
+    [
+      "El Señor es bueno,",
+      "su misericordia es eterna,",
+      "su fidelidad por todas las edades. R."
+    ]
+  ],
+  "celebracion": "Domingo de la 11ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "id": "seua_55",
+  "sourceBook": "eucaristia",
+  "ciclo": "Ciclo A",
+  "dia": "Domingo",
+  "respuestaOpcional": "",
+  "searchPool": "domingo de la 11 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 99 2 3 5 r 3c r nosotros somos su pueblo y ovejas de su rebano aclama al senor tierra entera servid al senor con alegria entrad en su presencia con vitores r sabed que el senor es dios que el nos hizo y somos suyos su pueblo y ovejas de su rebano r el senor es bueno su misericordia es eterna su fidelidad por todas las edades r"
 }

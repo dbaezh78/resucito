@@ -1,15 +1,107 @@
 {
-  "id": "seup_109",
-  "title": "Lunes de la 19ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 19ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 148, 1-2. 11-12ab. 12c-14a.",
-  "salmo": "Salmo responsorial: Salmo 148, 1-2. 11-12ab. 12c-14a.",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
   "orden": 5191,
-  "respuesta": "R. Llenos están el cielo y la tierra de tu gloria.",
+  "dia": "Lunes",
+  "title": "Lunes de la 19ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "id": "seup_109",
+  "ciclo": "Año Par",
   "respuestaOpcional": "R. Aleluya.",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Llenos están el cielo y la tierra de tu gloria."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Alabad al Señor en el cielo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "alabad al Señor en lo alto.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Alabadlo, todos sus ángeles;"
+    },
+    {
+      "line": "alabadlo, todos sus ejércitos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Reyes y pueblos del orbe,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "príncipes y jefes del mundo,"
+    },
+    {
+      "line": "los jóvenes y también las doncellas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los viejos junto con los niños. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alaben el nombre del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el único nombre sublime."
+    },
+    {
+      "line": "Su majestad sobre el cielo y la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "El acrece el vigor de su pueblo.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "Alabanza de todos sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de Israel, su pueblo escogido. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "celebracion": "Lunes de la 19ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "textoCompleto": "Alabad al Señor en el cielo,\nalabad al Señor en lo alto.\nAlabadlo, todos sus ángeles;\nalabadlo, todos sus ejércitos. R.\n\nReyes y pueblos del orbe,\npríncipes y jefes del mundo,\nlos jóvenes y también las doncellas,\nlos viejos junto con los niños. R.\n\nAlaben el nombre del Señor,\nel único nombre sublime.\nSu majestad sobre el cielo y la tierra. R.\n\nEl acrece el vigor de su pueblo.\nAlabanza de todos sus fieles,\nde Israel, su pueblo escogido. R.",
+  "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 148, 1-2. 11-12ab. 12c-14a.",
+  "searchPool": "lunes de la 19 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 148 1 2 11 12ab 12c 14a semana 19 semana xix lunes 19 xix r llenos estan el cielo y la tierra de tu gloria r aleluya alabad al senor en el cielo alabad al senor en lo alto alabadlo todos sus angeles alabadlo todos sus ejercitos r reyes y pueblos del orbe principes y jefes del mundo los jovenes y tambien las doncellas los viejos junto con los ninos r alaben el nombre del senor el unico nombre sublime su majestad sobre el cielo y la tierra r el acrece el vigor de su pueblo alabanza de todos sus fieles de israel su pueblo escogido r",
   "estrofas": [
     [
       "Alabad al Señor en el cielo,",
@@ -34,100 +126,8 @@
       "de Israel, su pueblo escogido. R."
     ]
   ],
-  "textoCompleto": "Alabad al Señor en el cielo,\nalabad al Señor en lo alto.\nAlabadlo, todos sus ángeles;\nalabadlo, todos sus ejércitos. R.\n\nReyes y pueblos del orbe,\npríncipes y jefes del mundo,\nlos jóvenes y también las doncellas,\nlos viejos junto con los niños. R.\n\nAlaben el nombre del Señor,\nel único nombre sublime.\nSu majestad sobre el cielo y la tierra. R.\n\nEl acrece el vigor de su pueblo.\nAlabanza de todos sus fieles,\nde Israel, su pueblo escogido. R.",
+  "salmo": "Salmo responsorial: Salmo 148, 1-2. 11-12ab. 12c-14a.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 19 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 148 1 2 11 12ab 12c 14a semana 19 semana xix lunes 19 xix r llenos estan el cielo y la tierra de tu gloria r aleluya alabad al senor en el cielo alabad al senor en lo alto alabadlo todos sus angeles alabadlo todos sus ejercitos r reyes y pueblos del orbe principes y jefes del mundo los jovenes y tambien las doncellas los viejos junto con los ninos r alaben el nombre del senor el unico nombre sublime su majestad sobre el cielo y la tierra r el acrece el vigor de su pueblo alabanza de todos sus fieles de israel su pueblo escogido r",
-  "lizq": [
-    {
-      "line": "R. Llenos están el cielo y la tierra de tu gloria.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Alabad al Señor en el cielo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "alabad al Señor en lo alto.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Alabadlo, todos sus ángeles;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "alabadlo, todos sus ejércitos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Reyes y pueblos del orbe,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "príncipes y jefes del mundo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los jóvenes y también las doncellas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los viejos junto con los niños. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Alaben el nombre del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el único nombre sublime.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Su majestad sobre el cielo y la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El acrece el vigor de su pueblo.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Alabanza de todos sus fieles,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "de Israel, su pueblo escogido. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuesta": "R. Llenos están el cielo y la tierra de tu gloria.",
+  "tiempo": "Tiempo Ordinario"
 }

@@ -1,15 +1,6 @@
 {
-  "id": "seup_096",
-  "title": "Sábado de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5-6a y 8a. 11 (R.: 2)",
-  "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5-6a y 8a. 11 (R.: 2)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
   "orden": 5166,
-  "respuesta": "R. ¡Qué deseables son tus moradas, Señor de los ejércitos!",
-  "respuestaOpcional": "",
+  "id": "seup_096",
   "estrofas": [
     [
       "Mi alma se consume y anhela",
@@ -37,12 +28,12 @@
       "a vivir con los malvados. R."
     ]
   ],
-  "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\ny la golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nDichosos los que encuentran en ti su fuerza;\ncaminan de baluarte en baluarte. R.\n\nVale más un día en tus atrios\nque mil en mi casa,\ny prefiero el umbral de la casa de Dios\na vivir con los malvados. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "title": "Sábado de la 16ª semana de Tiempo Ordinario",
+  "respuesta": "R. ¡Qué deseables son tus moradas, Señor de los ejércitos!",
+  "respuestaOpcional": "",
   "hasAudio": false,
-  "searchPool": "sabado de la 16 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 83 3 4 5 6a y 8a 11 r 2 semana 16 semana xvi sabado 16 xvi r que deseables son tus moradas senor de los ejercitos mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa y la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre dichosos los que encuentran en ti su fuerza caminan de baluarte en baluarte r vale mas un dia en tus atrios que mil en mi casa y prefiero el umbral de la casa de dios a vivir con los malvados r",
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5-6a y 8a. 11 (R.: 2)",
   "lizq": [
     {
       "line": "R. ¡Qué deseables son tus moradas,",
@@ -57,12 +48,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Mi alma se consume y anhela",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Mi alma se consume y anhela"
     },
     {
-      "line": "los atrios del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los atrios del Señor,"
     },
     {
       "line": "mi corazón y mi carne",
@@ -73,8 +64,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Hasta el gorrión ha encontrado una casa;",
@@ -89,12 +80,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tus altares, Señor de los ejércitos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tus altares, Señor de los ejércitos,"
     },
     {
-      "line": "Rey mío y Dios mío. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Rey mío y Dios mío. R."
     },
     {
       "line": "",
@@ -105,16 +96,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "alabándote siempre.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alabándote siempre."
     },
     {
       "line": "Dichosos los que encuentran en ti su fuerza;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "caminan de baluarte en baluarte. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "caminan de baluarte en baluarte. R."
     },
     {
       "line": "",
@@ -125,8 +116,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que mil en mi casa,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que mil en mi casa,"
     },
     {
       "line": "y prefiero el umbral de la casa de Dios",
@@ -136,5 +127,14 @@
       "line": "a vivir con los malvados. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\ny la golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nDichosos los que encuentran en ti su fuerza;\ncaminan de baluarte en baluarte. R.\n\nVale más un día en tus atrios\nque mil en mi casa,\ny prefiero el umbral de la casa de Dios\na vivir con los malvados. R.",
+  "stage": "Liturgia",
+  "dia": "Sábado",
+  "celebracion": "Sábado de la 16ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5-6a y 8a. 11 (R.: 2)",
+  "searchPool": "sabado de la 16 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 83 3 4 5 6a y 8a 11 r 2 semana 16 semana xvi sabado 16 xvi r que deseables son tus moradas senor de los ejercitos mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa y la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre dichosos los que encuentran en ti su fuerza caminan de baluarte en baluarte r vale mas un dia en tus atrios que mil en mi casa y prefiero el umbral de la casa de dios a vivir con los malvados r",
+  "catCanto": "Salmo Eucaristía"
 }

@@ -1,50 +1,11 @@
 {
-  "id": "seui_083",
-  "title": "Viernes de la 14ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 14ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 36, 3-4. 18-19. 27-28. 39-40 (R.: 39a)",
-  "salmo": "Salmo responsorial: Salmo 36, 3-4. 18-19. 27-28. 39-40 (R.: 39a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5145,
-  "respuesta": "R. El Señor es quien salva a los justos.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Confía en el Señor y haz el bien,",
-      "habita tu tierra y practica la lealtad;",
-      "sea el Señor tu delicia,",
-      "y él te dará lo que pide tu corazón. R."
-    ],
-    [
-      "El Señor vela por los días de los buenos,",
-      "y su herencia durará siempre;",
-      "no se agostarán en tiempo de sequía,",
-      "en tiempo de hambre se saciarán. R."
-    ],
-    [
-      "Apártate del mal y haz el bien,",
-      "y siempre tendrás una casa;",
-      "porque el Señor ama la justicia",
-      "y no abandona a sus fieles.",
-      "Los inicuos son exterminados,",
-      "la estirpe de los malvados se extinguirá. R."
-    ],
-    [
-      "El Señor es quien salva a los justos,",
-      "él es su alcázar en el peligro;",
-      "el Señor los protege y los libra,",
-      "los libra de los malvados y los salva",
-      "porque se acogen a él. R."
-    ]
-  ],
   "textoCompleto": "Confía en el Señor y haz el bien,\nhabita tu tierra y practica la lealtad;\nsea el Señor tu delicia,\ny él te dará lo que pide tu corazón. R.\n\nEl Señor vela por los días de los buenos,\ny su herencia durará siempre;\nno se agostarán en tiempo de sequía,\nen tiempo de hambre se saciarán. R.\n\nApártate del mal y haz el bien,\ny siempre tendrás una casa;\nporque el Señor ama la justicia\ny no abandona a sus fieles.\nLos inicuos son exterminados,\nla estirpe de los malvados se extinguirá. R.\n\nEl Señor es quien salva a los justos,\nél es su alcázar en el peligro;\nel Señor los protege y los libra,\nlos libra de los malvados y los salva\nporque se acogen a él. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 36, 3-4. 18-19. 27-28. 39-40 (R.: 39a)",
+  "tiempo": "Tiempo Ordinario",
   "hasAudio": false,
-  "searchPool": "viernes de la 14 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 36 3 4 18 19 27 28 39 40 r 39a semana 14 semana xiv viernes 14 xiv r el senor es quien salva a los justos confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r el senor vela por los dias de los buenos y su herencia durara siempre no se agostaran en tiempo de sequia en tiempo de hambre se saciaran r apartate del mal y haz el bien y siempre tendras una casa porque el senor ama la justicia y no abandona a sus fieles los inicuos son exterminados la estirpe de los malvados se extinguira r el senor es quien salva a los justos el es su alcazar en el peligro el senor los protege y los libra los libra de los malvados y los salva porque se acogen a el r",
+  "title": "Viernes de la 14ª semana de Tiempo Ordinario",
+  "dia": "Viernes",
+  "catCanto": "Salmo Eucaristía",
   "lizq": [
     {
       "line": "R. El Señor es quien salva a los justos.",
@@ -71,16 +32,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor vela por los días de los buenos,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y su herencia durará siempre;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y su herencia durará siempre;"
     },
     {
       "line": "no se agostarán en tiempo de sequía,",
@@ -91,12 +52,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Apártate del mal y haz el bien,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Apártate del mal y haz el bien,"
     },
     {
       "line": "y siempre tendrás una casa;",
@@ -107,8 +68,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y no abandona a sus fieles.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no abandona a sus fieles."
     },
     {
       "line": "Los inicuos son exterminados,",
@@ -142,5 +103,44 @@
       "line": "porque se acogen a él. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "id": "seui_083",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. El Señor es quien salva a los justos.",
+  "ciclo": "Año Impar",
+  "searchPool": "viernes de la 14 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 36 3 4 18 19 27 28 39 40 r 39a semana 14 semana xiv viernes 14 xiv r el senor es quien salva a los justos confia en el senor y haz el bien habita tu tierra y practica la lealtad sea el senor tu delicia y el te dara lo que pide tu corazon r el senor vela por los dias de los buenos y su herencia durara siempre no se agostaran en tiempo de sequia en tiempo de hambre se saciaran r apartate del mal y haz el bien y siempre tendras una casa porque el senor ama la justicia y no abandona a sus fieles los inicuos son exterminados la estirpe de los malvados se extinguira r el senor es quien salva a los justos el es su alcazar en el peligro el senor los protege y los libra los libra de los malvados y los salva porque se acogen a el r",
+  "salmo": "Salmo responsorial: Salmo 36, 3-4. 18-19. 27-28. 39-40 (R.: 39a)",
+  "celebracion": "Viernes de la 14ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Confía en el Señor y haz el bien,",
+      "habita tu tierra y practica la lealtad;",
+      "sea el Señor tu delicia,",
+      "y él te dará lo que pide tu corazón. R."
+    ],
+    [
+      "El Señor vela por los días de los buenos,",
+      "y su herencia durará siempre;",
+      "no se agostarán en tiempo de sequía,",
+      "en tiempo de hambre se saciarán. R."
+    ],
+    [
+      "Apártate del mal y haz el bien,",
+      "y siempre tendrás una casa;",
+      "porque el Señor ama la justicia",
+      "y no abandona a sus fieles.",
+      "Los inicuos son exterminados,",
+      "la estirpe de los malvados se extinguirá. R."
+    ],
+    [
+      "El Señor es quien salva a los justos,",
+      "él es su alcázar en el peligro;",
+      "el Señor los protege y los libra,",
+      "los libra de los malvados y los salva",
+      "porque se acogen a él. R."
+    ]
+  ],
+  "stage": "Liturgia",
+  "orden": 5145
 }

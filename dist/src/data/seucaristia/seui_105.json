@@ -1,47 +1,17 @@
 {
   "id": "seui_105",
-  "title": "Miércoles de la 18ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 18ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 105, 6-7a. 13-14. 21-22. 23 (R.: 4a)",
-  "salmo": "Salmo responsorial: Salmo 105, 6-7a. 13-14. 21-22. 23 (R.: 4a)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5183,
-  "respuesta": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Hemos pecado con nuestros padres,",
-      "hemos cometido maldades e iniquidades.",
-      "Nuestros padres en Egipto",
-      "no comprendieron tus maravillas. R."
-    ],
-    [
-      "Bien pronto olvidaron sus obras,",
-      "y no se fiaron de sus planes:",
-      "ardían de avidez en el desierto",
-      "y tentaron a Dios en la estepa. R."
-    ],
-    [
-      "Se olvidaron de Dios, su salvador,",
-      "que había hecho prodigios en Egipto,",
-      "maravillas en el país de Cam,",
-      "portentos junto al mar Rojo. R."
-    ],
-    [
-      "Dios hablaba ya de aniquilarlos;",
-      "pero Moisés, su elegido,",
-      "se puso en la brecha frente a él,",
-      "para apartar su cólera del exterminio. R."
-    ]
-  ],
-  "textoCompleto": "Hemos pecado con nuestros padres,\nhemos cometido maldades e iniquidades.\nNuestros padres en Egipto\nno comprendieron tus maravillas. R.\n\nBien pronto olvidaron sus obras,\ny no se fiaron de sus planes:\nardían de avidez en el desierto\ny tentaron a Dios en la estepa. R.\n\nSe olvidaron de Dios, su salvador,\nque había hecho prodigios en Egipto,\nmaravillas en el país de Cam,\nportentos junto al mar Rojo. R.\n\nDios hablaba ya de aniquilarlos;\npero Moisés, su elegido,\nse puso en la brecha frente a él,\npara apartar su cólera del exterminio. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Miércoles de la 18ª semana de Tiempo Ordinario",
   "hasAudio": false,
   "searchPool": "miercoles de la 18 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 105 6 7a 13 14 21 22 23 r 4a semana 18 semana xviii miercoles 18 xviii r acuerdate de mi senor por amor a tu pueblo r aleluya hemos pecado con nuestros padres hemos cometido maldades e iniquidades nuestros padres en egipto no comprendieron tus maravillas r bien pronto olvidaron sus obras y no se fiaron de sus planes ardian de avidez en el desierto y tentaron a dios en la estepa r se olvidaron de dios su salvador que habia hecho prodigios en egipto maravillas en el pais de cam portentos junto al mar rojo r dios hablaba ya de aniquilarlos pero moises su elegido se puso en la brecha frente a el para apartar su colera del exterminio r",
+  "title": "Miércoles de la 18ª semana de Tiempo Ordinario",
+  "orden": 5183,
+  "dia": "Miércoles",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 105, 6-7a. 13-14. 21-22. 23 (R.: 4a)",
+  "subtitle": "Salmo responsorial: Salmo 105, 6-7a. 13-14. 21-22. 23 (R.: 4a)",
+  "ciclo": "Año Impar",
   "lizq": [
     {
       "line": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
@@ -88,28 +58,28 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y no se fiaron de sus planes:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no se fiaron de sus planes:"
     },
     {
       "line": "ardían de avidez en el desierto",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y tentaron a Dios en la estepa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y tentaron a Dios en la estepa. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Se olvidaron de Dios, su salvador,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Se olvidaron de Dios, su salvador,"
     },
     {
-      "line": "que había hecho prodigios en Egipto,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que había hecho prodigios en Egipto,"
     },
     {
       "line": "maravillas en el país de Cam,",
@@ -128,8 +98,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "pero Moisés, su elegido,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "pero Moisés, su elegido,"
     },
     {
       "line": "se puso en la brecha frente a él,",
@@ -139,5 +109,35 @@
       "line": "para apartar su cólera del exterminio. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
+  "estrofas": [
+    [
+      "Hemos pecado con nuestros padres,",
+      "hemos cometido maldades e iniquidades.",
+      "Nuestros padres en Egipto",
+      "no comprendieron tus maravillas. R."
+    ],
+    [
+      "Bien pronto olvidaron sus obras,",
+      "y no se fiaron de sus planes:",
+      "ardían de avidez en el desierto",
+      "y tentaron a Dios en la estepa. R."
+    ],
+    [
+      "Se olvidaron de Dios, su salvador,",
+      "que había hecho prodigios en Egipto,",
+      "maravillas en el país de Cam,",
+      "portentos junto al mar Rojo. R."
+    ],
+    [
+      "Dios hablaba ya de aniquilarlos;",
+      "pero Moisés, su elegido,",
+      "se puso en la brecha frente a él,",
+      "para apartar su cólera del exterminio. R."
+    ]
+  ],
+  "textoCompleto": "Hemos pecado con nuestros padres,\nhemos cometido maldades e iniquidades.\nNuestros padres en Egipto\nno comprendieron tus maravillas. R.\n\nBien pronto olvidaron sus obras,\ny no se fiaron de sus planes:\nardían de avidez en el desierto\ny tentaron a Dios en la estepa. R.\n\nSe olvidaron de Dios, su salvador,\nque había hecho prodigios en Egipto,\nmaravillas en el país de Cam,\nportentos junto al mar Rojo. R.\n\nDios hablaba ya de aniquilarlos;\npero Moisés, su elegido,\nse puso en la brecha frente a él,\npara apartar su cólera del exterminio. R.",
+  "respuestaOpcional": "R. Aleluya.",
+  "catCanto": "Salmo Eucaristía"
 }

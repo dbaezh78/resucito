@@ -1,15 +1,6 @@
 {
-  "id": "seui_200",
-  "title": "Martes de la 34ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 34ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Daniel 3, 57. 58. 59. 60. 61.",
-  "salmo": "Interleccional: Daniel 3, 57. 58. 59. 60. 61.",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5342,
-  "respuesta": "R. Ensalzadlo con himnos por los siglos.",
-  "respuestaOpcional": "",
+  "id": "seui_200",
   "estrofas": [
     [
       "Criaturas todas del Señor, bendecid al Señor. R."
@@ -27,36 +18,38 @@
       "Ejércitos del Señor, bendecid al Señor. R."
     ]
   ],
+  "title": "Martes de la 34ª semana de Tiempo Ordinario",
   "textoCompleto": "Criaturas todas del Señor, bendecid al Señor. R.\n\nÁngeles del Señor: bendecid al Señor. R.\n\nCielos, bendecid al Señor. R.\n\nAguas del espacio, bendecid al Señor. R.\n\nEjércitos del Señor, bendecid al Señor. R.",
-  "sourceBook": "eucaristia",
+  "respuestaOpcional": "",
+  "orden": 5342,
   "stage": "Liturgia",
+  "dia": "Martes",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 34 semana de tiempo ordinario ano impar tiempo ordinario martes interleccional daniel 3 57 58 59 60 61 semana 34 semana xxxiv martes 34 xxxiv r ensalzadlo con himnos por los siglos criaturas todas del senor bendecid al senor r angeles del senor bendecid al senor r cielos bendecid al senor r aguas del espacio bendecid al senor r ejercitos del senor bendecid al senor r",
+  "salmo": "Interleccional: Daniel 3, 57. 58. 59. 60. 61.",
   "lizq": [
     {
-      "line": "R. Ensalzadlo con himnos por los siglos.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Ensalzadlo con himnos por los siglos."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Criaturas todas del Señor, bendecid al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Criaturas todas del Señor, bendecid al Señor. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Ángeles del Señor: bendecid al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Ángeles del Señor: bendecid al Señor. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cielos, bendecid al Señor. R.",
@@ -67,16 +60,23 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Aguas del espacio, bendecid al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Aguas del espacio, bendecid al Señor. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Ejércitos del Señor, bendecid al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Ejércitos del Señor, bendecid al Señor. R."
     }
-  ]
+  ],
+  "ciclo": "Año Impar",
+  "respuesta": "R. Ensalzadlo con himnos por los siglos.",
+  "hasAudio": false,
+  "searchPool": "martes de la 34 semana de tiempo ordinario ano impar tiempo ordinario martes interleccional daniel 3 57 58 59 60 61 semana 34 semana xxxiv martes 34 xxxiv r ensalzadlo con himnos por los siglos criaturas todas del senor bendecid al senor r angeles del senor bendecid al senor r cielos bendecid al senor r aguas del espacio bendecid al senor r ejercitos del senor bendecid al senor r",
+  "sourceBook": "eucaristia",
+  "celebracion": "Martes de la 34ª semana de Tiempo Ordinario",
+  "subtitle": "Interleccional: Daniel 3, 57. 58. 59. 60. 61."
 }

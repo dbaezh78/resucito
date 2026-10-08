@@ -1,22 +1,8 @@
 {
-  "id": "seuf_024",
-  "title": "Día 23 de diciembre.",
-  "celebracion": "Día 23 de diciembre.",
-  "subtitle": "Salmo 24, 4-5ab. 8-9. 10 y 14 (R.: Lc 21, 28)",
   "salmo": "Salmo 24, 4-5ab. 8-9. 10 y 14 (R.: Lc 21, 28)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Adviento",
-  "dia": "Feria",
   "orden": 177,
-  "respuesta": "R. Levantaos, alzad la cabeza: se acerca vuestra liberación.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
+  "title": "Día 23 de diciembre.",
   "estrofas": [
     [
       "Señor, enséñame tus caminos,",
@@ -31,16 +17,25 @@
       "enseña su camino a los humildes. R."
     ]
   ],
-  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo 24, 4-5ab. 8-9. 10 y 14 (R.: Lc 21, 28)",
   "catCanto": "Salmo Eucaristía",
+  "celebracion": "Día 23 de diciembre.",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "dia": "Feria",
+  "ciclo": "Ciclo A, B y C",
+  "respuestaOpcional": "",
   "hasAudio": false,
-  "searchPool": "dia 23 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria salmo 24 4 5ab 8 9 10 y 14 r lc 21 28 feria r levantaos alzad la cabeza se acerca vuestra liberacion senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
-      "line": "R. Levantaos, alzad la cabeza:",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Levantaos, alzad la cabeza:"
     },
     {
       "line": "se acerca vuestra liberación.",
@@ -51,20 +46,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Señor, enséñame tus caminos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Señor, enséñame tus caminos,"
     },
     {
-      "line": "instrúyeme en tus sendas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "instrúyeme en tus sendas:"
     },
     {
       "line": "haz que camine con lealtad;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "enséñame, porque tú eres mi Dios y Salvador. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "enséñame, porque tú eres mi Dios y Salvador. R."
     },
     {
       "line": "",
@@ -86,5 +81,10 @@
       "line": "enseña su camino a los humildes. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. Levantaos, alzad la cabeza: se acerca vuestra liberación.",
+  "tiempo": "Adviento",
+  "searchPool": "dia 23 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria salmo 24 4 5ab 8 9 10 y 14 r lc 21 28 feria r levantaos alzad la cabeza se acerca vuestra liberacion senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "stage": "Liturgia",
+  "id": "seuf_024"
 }

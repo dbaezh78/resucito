@@ -1,15 +1,12 @@
 {
-  "id": "seup_060",
-  "title": "Sábado de la 10ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 10ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 9-10 (R.: 5a)",
-  "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 9-10 (R.: 5a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5106,
   "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
-  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 9-10 (R.: 5a)",
+  "orden": 5106,
+  "hasAudio": false,
+  "title": "Sábado de la 10ª semana de Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.",
+  "celebracion": "Sábado de la 10ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Protégeme, Dios mío, que me refugio en ti;",
@@ -31,12 +28,14 @@
       "ni dejarás a tu fiel conocer la corrupción. R."
     ]
   ],
-  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.",
-  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "dia": "Sábado",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 9-10 (R.: 5a)",
   "searchPool": "sabado de la 10 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 15 1 2a y 5 7 8 9 10 r 5a semana 10 semana x sabado 10 x r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r por eso se me alegra el corazon se gozan mis entranas y mi carne descansa serena porque no me entregaras a la muerte ni dejaras a tu fiel conocer la corrupcion r",
+  "respuestaOpcional": "",
   "lizq": [
     {
       "line": "R. Tú, Señor, eres el lote de mi heredad.",
@@ -71,16 +70,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "hasta de noche me instruye internamente.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hasta de noche me instruye internamente."
     },
     {
       "line": "Tengo siempre presente al Señor,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "con él a mi derecha no vacilaré. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "con él a mi derecha no vacilaré. R."
     },
     {
       "line": "",
@@ -91,8 +90,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "se gozan mis entrañas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "se gozan mis entrañas,"
     },
     {
       "line": "y mi carne descansa serena.",
@@ -106,5 +105,6 @@
       "line": "ni dejarás a tu fiel conocer la corrupción. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "id": "seup_060"
 }

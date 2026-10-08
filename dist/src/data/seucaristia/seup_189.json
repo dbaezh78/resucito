@@ -1,15 +1,11 @@
 {
   "id": "seup_189",
-  "title": "Miércoles de la 32ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 32ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "dia": "Miércoles",
+  "hasAudio": false,
+  "respuesta": "R. El Señor es mi pastor, nada me falta.",
   "subtitle": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.: 1)",
   "salmo": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.: 1)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5323,
-  "respuesta": "R. El Señor es mi pastor, nada me falta.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "El Señor es mi pastor, nada me falta:",
@@ -38,19 +34,14 @@
     ]
   ],
   "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.\n\nMe guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 32 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 22 1 3a 3b 4 5 6 r 1 semana 32 semana xxxii miercoles 32 xxxii r el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas r me guia por el sendero justo por el honor de su nombre aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
   "lizq": [
     {
-      "line": "R. El Señor es mi pastor, nada me falta.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor es mi pastor, nada me falta."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es mi pastor, nada me falta:",
@@ -73,8 +64,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Me guía por el sendero justo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Me guía por el sendero justo,"
     },
     {
       "line": "por el honor de su nombre.",
@@ -89,16 +80,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tu vara y tu cayado me sosiegan. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tu vara y tu cayado me sosiegan. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Preparas una mesa ante mí,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Preparas una mesa ante mí,"
     },
     {
       "line": "enfrente de mis enemigos;",
@@ -132,5 +123,14 @@
       "line": "por años sin término. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Miércoles de la 32ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "orden": 5323,
+  "title": "Miércoles de la 32ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par",
+  "searchPool": "miercoles de la 32 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 22 1 3a 3b 4 5 6 r 1 semana 32 semana xxxii miercoles 32 xxxii r el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas r me guia por el sendero justo por el honor de su nombre aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
+  "tiempo": "Tiempo Ordinario"
 }

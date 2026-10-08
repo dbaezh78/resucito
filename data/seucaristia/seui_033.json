@@ -1,15 +1,6 @@
 {
-  "id": "seui_033",
-  "title": "Miércoles de la 6ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 6ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 14-15. 18-19 (R.: 17a)",
-  "salmo": "Salmo responsorial: Salmo 115, 12-13. 14-15. 18-19 (R.: 17a)",
-  "ciclo": "Año Impar",
+  "searchPool": "miercoles de la 6 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 115 12 13 14 15 18 19 r 17a semana 6 semana vi miercoles 6 vi r te ofrecere senor un sacrificio de alabanza r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r cumplire al senor mis votos en presencia de todo el pueblo mucho le cuesta al senor la muerte de sus fieles r cumplire al senor mis votos en presencia de todo el pueblo en el atrio de la casa del senor en medio de ti jerusalen r",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5063,
-  "respuesta": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "¿Cómo pagaré al Señor",
@@ -30,20 +21,27 @@
       "en medio de ti, Jerusalén. R."
     ]
   ],
+  "dia": "Miércoles",
   "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo.\nMucho le cuesta al Señor\nla muerte de sus fieles. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo,\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R.",
+  "catCanto": "Salmo Eucaristía",
+  "id": "seui_033",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "miercoles de la 6 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 115 12 13 14 15 18 19 r 17a semana 6 semana vi miercoles 6 vi r te ofrecere senor un sacrificio de alabanza r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r cumplire al senor mis votos en presencia de todo el pueblo mucho le cuesta al senor la muerte de sus fieles r cumplire al senor mis votos en presencia de todo el pueblo en el atrio de la casa del senor en medio de ti jerusalen r",
+  "celebracion": "Miércoles de la 6ª semana de Tiempo Ordinario",
+  "orden": 5063,
+  "ciclo": "Año Impar",
+  "respuestaOpcional": "R. Aleluya.",
+  "salmo": "Salmo responsorial: Salmo 115, 12-13. 14-15. 18-19 (R.: 17a)",
+  "respuesta": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
   "lizq": [
     {
-      "line": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Te ofreceré, Señor, un sacrificio de alabanza."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -58,16 +56,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "¿Cómo pagaré al Señor",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¿Cómo pagaré al Señor"
     },
     {
       "line": "todo el bien que me ha hecho?",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Alzaré la copa de la salvación,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Alzaré la copa de la salvación,"
     },
     {
       "line": "invocando su nombre. R.",
@@ -78,12 +76,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Cumpliré al Señor mis votos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cumpliré al Señor mis votos"
     },
     {
-      "line": "en presencia de todo el pueblo.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en presencia de todo el pueblo."
     },
     {
       "line": "Mucho le cuesta al Señor",
@@ -102,16 +100,18 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "en presencia de todo el pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en presencia de todo el pueblo,"
     },
     {
       "line": "en el atrio de la casa del Señor,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en medio de ti, Jerusalén. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en medio de ti, Jerusalén. R."
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 14-15. 18-19 (R.: 17a)",
+  "title": "Miércoles de la 6ª semana de Tiempo Ordinario"
 }

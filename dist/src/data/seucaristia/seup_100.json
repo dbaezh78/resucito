@@ -1,44 +1,12 @@
 {
-  "id": "seup_100",
-  "title": "Jueves de la 17ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 17ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 145, 1b-2. 3-4. 5-6 (R.: 5a)",
-  "salmo": "Salmo responsorial: Salmo 145, 1b-2. 3-4. 5-6 (R.: 5a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5174,
-  "respuesta": "R. Dichoso a quien auxilia el Dios de Jacob.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Alaba, alma mía, al Señor:",
-      "alabaré al Señor mientras viva,",
-      "tañeré para mi Dios mientras exista. R."
-    ],
-    [
-      "No confiéis en los príncipes,",
-      "seres de polvo que no pueden salvar;",
-      "exhalan el espíritu y vuelven al polvo,",
-      "ese día perecen sus planes. R."
-    ],
-    [
-      "Dichoso a quien auxilia el Dios de Jacob,",
-      "el que espera en el Señor, su Dios,",
-      "que hizo el cielo y la tierra,",
-      "el mar y cuanto hay en él. R."
-    ]
-  ],
-  "textoCompleto": "Alaba, alma mía, al Señor:\nalabaré al Señor mientras viva,\ntañeré para mi Dios mientras exista. R.\n\nNo confiéis en los príncipes,\nseres de polvo que no pueden salvar;\nexhalan el espíritu y vuelven al polvo,\nese día perecen sus planes. R.\n\nDichoso a quien auxilia el Dios de Jacob,\nel que espera en el Señor, su Dios,\nque hizo el cielo y la tierra,\nel mar y cuanto hay en él. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 17 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 145 1b 2 3 4 5 6 r 5a semana 17 semana xvii jueves 17 xvii r dichoso a quien auxilia el dios de jacob r aleluya alaba alma mia al senor alabare al senor mientras viva tanere para mi dios mientras exista r no confieis en los principes seres de polvo que no pueden salvar exhalan el espiritu y vuelven al polvo ese dia perecen sus planes r dichoso a quien auxilia el dios de jacob el que espera en el senor su dios que hizo el cielo y la tierra el mar y cuanto hay en el r",
+  "respuestaOpcional": "R. Aleluya.",
+  "celebracion": "Jueves de la 17ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 145, 1b-2. 3-4. 5-6 (R.: 5a)",
   "lizq": [
     {
-      "line": "R. Dichoso a quien auxilia el Dios de Jacob.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dichoso a quien auxilia el Dios de Jacob."
     },
     {
       "line": "",
@@ -65,40 +33,40 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tañeré para mi Dios mientras exista. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tañeré para mi Dios mientras exista. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "No confiéis en los príncipes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No confiéis en los príncipes,"
     },
     {
-      "line": "seres de polvo que no pueden salvar;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "seres de polvo que no pueden salvar;"
     },
     {
-      "line": "exhalan el espíritu y vuelven al polvo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "exhalan el espíritu y vuelven al polvo,"
     },
     {
-      "line": "ese día perecen sus planes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ese día perecen sus planes. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Dichoso a quien auxilia el Dios de Jacob,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso a quien auxilia el Dios de Jacob,"
     },
     {
-      "line": "el que espera en el Señor, su Dios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el que espera en el Señor, su Dios,"
     },
     {
       "line": "que hizo el cielo y la tierra,",
@@ -108,5 +76,37 @@
       "line": "el mar y cuanto hay en él. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Alaba, alma mía, al Señor:\nalabaré al Señor mientras viva,\ntañeré para mi Dios mientras exista. R.\n\nNo confiéis en los príncipes,\nseres de polvo que no pueden salvar;\nexhalan el espíritu y vuelven al polvo,\nese día perecen sus planes. R.\n\nDichoso a quien auxilia el Dios de Jacob,\nel que espera en el Señor, su Dios,\nque hizo el cielo y la tierra,\nel mar y cuanto hay en él. R.",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Jueves",
+  "estrofas": [
+    [
+      "Alaba, alma mía, al Señor:",
+      "alabaré al Señor mientras viva,",
+      "tañeré para mi Dios mientras exista. R."
+    ],
+    [
+      "No confiéis en los príncipes,",
+      "seres de polvo que no pueden salvar;",
+      "exhalan el espíritu y vuelven al polvo,",
+      "ese día perecen sus planes. R."
+    ],
+    [
+      "Dichoso a quien auxilia el Dios de Jacob,",
+      "el que espera en el Señor, su Dios,",
+      "que hizo el cielo y la tierra,",
+      "el mar y cuanto hay en él. R."
+    ]
+  ],
+  "orden": 5174,
+  "sourceBook": "eucaristia",
+  "id": "seup_100",
+  "title": "Jueves de la 17ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 145, 1b-2. 3-4. 5-6 (R.: 5a)",
+  "tiempo": "Tiempo Ordinario",
+  "respuesta": "R. Dichoso a quien auxilia el Dios de Jacob.",
+  "searchPool": "jueves de la 17 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 145 1b 2 3 4 5 6 r 5a semana 17 semana xvii jueves 17 xvii r dichoso a quien auxilia el dios de jacob r aleluya alaba alma mia al senor alabare al senor mientras viva tanere para mi dios mientras exista r no confieis en los principes seres de polvo que no pueden salvar exhalan el espiritu y vuelven al polvo ese dia perecen sus planes r dichoso a quien auxilia el dios de jacob el que espera en el senor su dios que hizo el cielo y la tierra el mar y cuanto hay en el r"
 }

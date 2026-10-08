@@ -1,47 +1,5 @@
 {
-  "id": "seup_039",
-  "title": "Miércoles de la 7ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 7ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 48, 2-3. 6-7. 8-10. 11 (R.: Mt 5, 3)",
-  "salmo": "Salmo responsorial: Salmo 48, 2-3. 6-7. 8-10. 11 (R.: Mt 5, 3)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Miércoles",
-  "orden": 5073,
-  "respuesta": "R. Dichosos los pobres en el espíritu, porque de ellos es el reino de los cielos.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Oíd esto, todas las naciones;",
-      "escuchadlo, habitantes del orbe:",
-      "plebeyos y nobles, ricos y pobres. R."
-    ],
-    [
-      "¿Por qué habré de temer los días aciagos,",
-      "cuando me cerquen y acechen los malvados,",
-      "que confían en su opulencia",
-      "y se jactan de sus inmensas riquezas? R."
-    ],
-    [
-      "¿Si nadie puede salvarse",
-      "ni dar a Dios un rescate?",
-      "Es tan caro el rescate de la vida,",
-      "que nunca les bastará",
-      "para vivir perpetuamente",
-      "sin bajar a la fosa. R."
-    ],
-    [
-      "Mirad: los sabios mueren,",
-      "lo mismo que perecen los ignorantes y necios,",
-      "y legan sus riquezas a extraños. R."
-    ]
-  ],
-  "textoCompleto": "Oíd esto, todas las naciones;\nescuchadlo, habitantes del orbe:\nplebeyos y nobles, ricos y pobres. R.\n\n¿Por qué habré de temer los días aciagos,\ncuando me cerquen y acechen los malvados,\nque confían en su opulencia\ny se jactan de sus inmensas riquezas? R.\n\n¿Si nadie puede salvarse\nni dar a Dios un rescate?\nEs tan caro el rescate de la vida,\nque nunca les bastará\npara vivir perpetuamente\nsin bajar a la fosa. R.\n\nMirad: los sabios mueren,\nlo mismo que perecen los ignorantes y necios,\ny legan sus riquezas a extraños. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 7 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 48 2 3 6 7 8 10 11 r mt 5 3 semana 7 semana vii miercoles 7 vii r dichosos los pobres en el espiritu porque de ellos es el reino de los cielos oid esto todas las naciones escuchadlo habitantes del orbe plebeyos y nobles ricos y pobres r por que habre de temer los dias aciagos cuando me cerquen y acechen los malvados que confian en su opulencia y se jactan de sus inmensas riquezas r si nadie puede salvarse ni dar a dios un rescate es tan caro el rescate de la vida que nunca les bastara para vivir perpetuamente sin bajar a la fosa r mirad los sabios mueren lo mismo que perecen los ignorantes y necios y legan sus riquezas a extranos r",
   "lizq": [
     {
       "line": "R. Dichosos los pobres en el espíritu,",
@@ -52,8 +10,8 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Oíd esto, todas las naciones;",
@@ -68,8 +26,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "¿Por qué habré de temer los días aciagos,",
@@ -80,8 +38,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que confían en su opulencia",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que confían en su opulencia"
     },
     {
       "line": "y se jactan de sus inmensas riquezas? R.",
@@ -112,8 +70,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "sin bajar a la fosa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "sin bajar a la fosa. R."
     },
     {
       "line": "",
@@ -124,12 +82,54 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "lo mismo que perecen los ignorantes y necios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lo mismo que perecen los ignorantes y necios,"
     },
     {
       "line": "y legan sus riquezas a extraños. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "Oíd esto, todas las naciones;",
+      "escuchadlo, habitantes del orbe:",
+      "plebeyos y nobles, ricos y pobres. R."
+    ],
+    [
+      "¿Por qué habré de temer los días aciagos,",
+      "cuando me cerquen y acechen los malvados,",
+      "que confían en su opulencia",
+      "y se jactan de sus inmensas riquezas? R."
+    ],
+    [
+      "¿Si nadie puede salvarse",
+      "ni dar a Dios un rescate?",
+      "Es tan caro el rescate de la vida,",
+      "que nunca les bastará",
+      "para vivir perpetuamente",
+      "sin bajar a la fosa. R."
+    ],
+    [
+      "Mirad: los sabios mueren,",
+      "lo mismo que perecen los ignorantes y necios,",
+      "y legan sus riquezas a extraños. R."
+    ]
+  ],
+  "celebracion": "Miércoles de la 7ª semana de Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "respuesta": "R. Dichosos los pobres en el espíritu, porque de ellos es el reino de los cielos.",
+  "salmo": "Salmo responsorial: Salmo 48, 2-3. 6-7. 8-10. 11 (R.: Mt 5, 3)",
+  "textoCompleto": "Oíd esto, todas las naciones;\nescuchadlo, habitantes del orbe:\nplebeyos y nobles, ricos y pobres. R.\n\n¿Por qué habré de temer los días aciagos,\ncuando me cerquen y acechen los malvados,\nque confían en su opulencia\ny se jactan de sus inmensas riquezas? R.\n\n¿Si nadie puede salvarse\nni dar a Dios un rescate?\nEs tan caro el rescate de la vida,\nque nunca les bastará\npara vivir perpetuamente\nsin bajar a la fosa. R.\n\nMirad: los sabios mueren,\nlo mismo que perecen los ignorantes y necios,\ny legan sus riquezas a extraños. R.",
+  "searchPool": "miercoles de la 7 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 48 2 3 6 7 8 10 11 r mt 5 3 semana 7 semana vii miercoles 7 vii r dichosos los pobres en el espiritu porque de ellos es el reino de los cielos oid esto todas las naciones escuchadlo habitantes del orbe plebeyos y nobles ricos y pobres r por que habre de temer los dias aciagos cuando me cerquen y acechen los malvados que confian en su opulencia y se jactan de sus inmensas riquezas r si nadie puede salvarse ni dar a dios un rescate es tan caro el rescate de la vida que nunca les bastara para vivir perpetuamente sin bajar a la fosa r mirad los sabios mueren lo mismo que perecen los ignorantes y necios y legan sus riquezas a extranos r",
+  "subtitle": "Salmo responsorial: Salmo 48, 2-3. 6-7. 8-10. 11 (R.: Mt 5, 3)",
+  "stage": "Liturgia",
+  "id": "seup_039",
+  "orden": 5073,
+  "title": "Miércoles de la 7ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario"
 }

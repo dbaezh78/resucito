@@ -1,15 +1,8 @@
 {
-  "id": "seup_021",
-  "title": "Miércoles de la 4ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 4ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 31, 1-2. 5. 6. 7 (R.: cf. 5c)",
-  "salmo": "Salmo responsorial: Salmo 31, 1-2. 5. 6. 7 (R.: cf. 5c)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5043,
   "respuesta": "R. Perdona, Señor, mi culpa y mi pecado.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "celebracion": "Miércoles de la 4ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Dichoso el que está absuelto de su culpa,",
@@ -34,12 +27,6 @@
       "me rodeas de cantos de liberación. R."
     ]
   ],
-  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»,\ny tú perdonaste mi culpa y mi pecado. R.\n\nPor eso, que todo fiel te suplique\nen el momento de la desgracia:\nla crecida de las aguas caudalosas\nno lo alcanzará. R.\n\nTú eres mi refugio, me libras del peligro,\nme rodeas de cantos de liberación. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 4 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 31 1 2 5 6 7 r cf 5c semana 4 semana iv miercoles 4 iv r perdona senor mi culpa y mi pecado dichoso el que esta absuelto de su culpa a quien le han sepultado su pecado dichoso el hombre a quien el senor no le apunta el delito r habia pecado lo reconoci no te encubri mi delito propuse confesare al senor mi culpa y tu perdonaste mi culpa y mi pecado r por eso que todo fiel te suplique en el momento de la desgracia la crecida de las aguas caudalosas no lo alcanzara r tu eres mi refugio me libras del peligro me rodeas de cantos de liberacion r",
   "lizq": [
     {
       "line": "R. Perdona, Señor, mi culpa y mi pecado.",
@@ -54,8 +41,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "a quien le han sepultado su pecado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "a quien le han sepultado su pecado;"
     },
     {
       "line": "dichoso el hombre a quien el Señor",
@@ -66,12 +53,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Había pecado, lo reconocí,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Había pecado, lo reconocí,"
     },
     {
       "line": "no te encubrí mi delito;",
@@ -86,16 +73,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Por eso, que todo fiel te suplique",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "en el momento de la desgracia:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en el momento de la desgracia:"
     },
     {
       "line": "la crecida de las aguas caudalosas",
@@ -110,12 +97,25 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tú eres mi refugio, me libras del peligro,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú eres mi refugio, me libras del peligro,"
     },
     {
-      "line": "me rodeas de cantos de liberación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me rodeas de cantos de liberación. R."
     }
-  ]
+  ],
+  "searchPool": "miercoles de la 4 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 31 1 2 5 6 7 r cf 5c semana 4 semana iv miercoles 4 iv r perdona senor mi culpa y mi pecado dichoso el que esta absuelto de su culpa a quien le han sepultado su pecado dichoso el hombre a quien el senor no le apunta el delito r habia pecado lo reconoci no te encubri mi delito propuse confesare al senor mi culpa y tu perdonaste mi culpa y mi pecado r por eso que todo fiel te suplique en el momento de la desgracia la crecida de las aguas caudalosas no lo alcanzara r tu eres mi refugio me libras del peligro me rodeas de cantos de liberacion r",
+  "dia": "Miércoles",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "orden": 5043,
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 31, 1-2. 5. 6. 7 (R.: cf. 5c)",
+  "id": "seup_021",
+  "salmo": "Salmo responsorial: Salmo 31, 1-2. 5. 6. 7 (R.: cf. 5c)",
+  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»,\ny tú perdonaste mi culpa y mi pecado. R.\n\nPor eso, que todo fiel te suplique\nen el momento de la desgracia:\nla crecida de las aguas caudalosas\nno lo alcanzará. R.\n\nTú eres mi refugio, me libras del peligro,\nme rodeas de cantos de liberación. R.",
+  "title": "Miércoles de la 4ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false
 }

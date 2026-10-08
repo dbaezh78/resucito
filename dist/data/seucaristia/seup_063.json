@@ -1,15 +1,74 @@
 {
-  "id": "seup_063",
-  "title": "Miércoles de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 30, 20. 21. 24 (R.: 25)",
-  "salmo": "Salmo responsorial: Salmo 30, 20. 21. 24 (R.: 25)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Miércoles",
-  "orden": 5113,
-  "respuesta": "R. Sed fuertes y valientes de corazón, los que esperáis en el Señor.",
-  "respuestaOpcional": "",
+  "hasAudio": false,
+  "lizq": [
+    {
+      "line": "R. Sed fuertes y valientes de corazón,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "los que esperáis en el Señor.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Qué bondad tan grande, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "reservas para tus fieles,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y concedes a los que a ti se acogen"
+    },
+    {
+      "line": "a la vista de todos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "En el asilo de tu presencia los escondes",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "de las conjuras humanas;"
+    },
+    {
+      "line": "los ocultas de tu tabernáculo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "frente a las lenguas pendencieras. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Amad al Señor, fieles suyos;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor guarda a sus leales,"
+    },
+    {
+      "line": "y a los soberbios les paga con creces. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "salmo": "Salmo responsorial: Salmo 30, 20. 21. 24 (R.: 25)",
+  "subtitle": "Salmo responsorial: Salmo 30, 20. 21. 24 (R.: 25)",
   "estrofas": [
     [
       "Qué bondad tan grande, Señor,",
@@ -29,76 +88,17 @@
       "y a los soberbios les paga con creces. R."
     ]
   ],
-  "textoCompleto": "Qué bondad tan grande, Señor,\nreservas para tus fieles,\ny concedes a los que a ti se acogen\na la vista de todos. R.\n\nEn el asilo de tu presencia los escondes\nde las conjuras humanas;\nlos ocultas de tu tabernáculo,\nfrente a las lenguas pendencieras. R.\n\nAmad al Señor, fieles suyos;\nel Señor guarda a sus leales,\ny a los soberbios les paga con creces. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "textoCompleto": "Qué bondad tan grande, Señor,\nreservas para tus fieles,\ny concedes a los que a ti se acogen\na la vista de todos. R.\n\nEn el asilo de tu presencia los escondes\nde las conjuras humanas;\nlos ocultas de tu tabernáculo,\nfrente a las lenguas pendencieras. R.\n\nAmad al Señor, fieles suyos;\nel Señor guarda a sus leales,\ny a los soberbios les paga con creces. R.",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "miercoles de la 11 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 30 20 21 24 r 25 semana 11 semana xi miercoles 11 xi r sed fuertes y valientes de corazon los que esperais en el senor que bondad tan grande senor reservas para tus fieles y concedes a los que a ti se acogen a la vista de todos r en el asilo de tu presencia los escondes de las conjuras humanas los ocultas de tu tabernaculo frente a las lenguas pendencieras r amad al senor fieles suyos el senor guarda a sus leales y a los soberbios les paga con creces r",
-  "lizq": [
-    {
-      "line": "R. Sed fuertes y valientes de corazón,",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "los que esperáis en el Señor.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Qué bondad tan grande, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "reservas para tus fieles,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y concedes a los que a ti se acogen",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "a la vista de todos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "En el asilo de tu presencia los escondes",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "de las conjuras humanas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los ocultas de tu tabernáculo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "frente a las lenguas pendencieras. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Amad al Señor, fieles suyos;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el Señor guarda a sus leales,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y a los soberbios les paga con creces. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "ciclo": "Año Par",
+  "id": "seup_063",
+  "celebracion": "Miércoles de la 11ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "title": "Miércoles de la 11ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Sed fuertes y valientes de corazón, los que esperáis en el Señor.",
+  "orden": 5113
 }

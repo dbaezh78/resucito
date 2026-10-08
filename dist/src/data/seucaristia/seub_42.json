@@ -1,41 +1,10 @@
 {
   "id": "seub_42",
-  "title": "Santísimo Cuerpo y Sangre de Cristo",
-  "celebracion": "Santísimo Cuerpo y Sangre de Cristo",
-  "subtitle": "Salmo responsorial: Salmo 115,12-13. 15 y 16bc. 17-18 (R.:13)",
-  "salmo": "Salmo responsorial: Salmo 115,12-13. 15 y 16bc. 17-18 (R.:13)",
-  "ciclo": "Ciclo B",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 536,
-  "respuesta": "R. Alzaré la copa de la salvación, invocando el nombre del Señor.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "¿Cómo pagaré al Señor",
-      "todo el bien que me ha hecho?",
-      "Alzaré la copa de la salvación,",
-      "invocando su nombre. R."
-    ],
-    [
-      "Mucho le cuesta al Señor",
-      "la muerte de sus fieles.",
-      "Señor, yo soy tu siervo, hijo de tu esclava;",
-      "rompiste mis cadenas. R."
-    ],
-    [
-      "Te ofreceré un sacrificio de alabanza,",
-      "invocando tu nombre, Señor.",
-      "Cumpliré al Señor mis votos",
-      "en presencia de todo el pueblo. R."
-    ]
-  ],
+  "salmo": "Salmo responsorial: Salmo 115,12-13. 15 y 16bc. 17-18 (R.:13)",
   "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nMucho le cuesta al Señor\nla muerte de sus fieles.\nSeñor, yo soy tu siervo, hijo de tu esclava;\nrompiste mis cadenas. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 115,12-13. 15 y 16bc. 17-18 (R.:13)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "santisimo cuerpo y sangre de cristo ciclo b tiempo ordinario domingo salmo responsorial salmo 115 12 13 15 y 16bc 17 18 r 13 r alzare la copa de la salvacion invocando el nombre del senor r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r mucho le cuesta al senor la muerte de sus fieles senor yo soy tu siervo hijo de tu esclava rompiste mis cadenas r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
   "lizq": [
     {
       "line": "R. Alzaré la copa de la salvación,",
@@ -66,8 +35,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "todo el bien que me ha hecho?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todo el bien que me ha hecho?"
     },
     {
       "line": "Alzaré la copa de la salvación,",
@@ -90,8 +59,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Señor, yo soy tu siervo, hijo de tu esclava;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, yo soy tu siervo, hijo de tu esclava;"
     },
     {
       "line": "rompiste mis cadenas. R.",
@@ -102,20 +71,51 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Te ofreceré un sacrificio de alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Te ofreceré un sacrificio de alabanza,"
     },
     {
       "line": "invocando tu nombre, Señor.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Cumpliré al Señor mis votos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Cumpliré al Señor mis votos"
     },
     {
-      "line": "en presencia de todo el pueblo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en presencia de todo el pueblo. R."
     }
-  ]
+  ],
+  "estrofas": [
+    [
+      "¿Cómo pagaré al Señor",
+      "todo el bien que me ha hecho?",
+      "Alzaré la copa de la salvación,",
+      "invocando su nombre. R."
+    ],
+    [
+      "Mucho le cuesta al Señor",
+      "la muerte de sus fieles.",
+      "Señor, yo soy tu siervo, hijo de tu esclava;",
+      "rompiste mis cadenas. R."
+    ],
+    [
+      "Te ofreceré un sacrificio de alabanza,",
+      "invocando tu nombre, Señor.",
+      "Cumpliré al Señor mis votos",
+      "en presencia de todo el pueblo. R."
+    ]
+  ],
+  "sourceBook": "eucaristia",
+  "title": "Santísimo Cuerpo y Sangre de Cristo",
+  "searchPool": "santisimo cuerpo y sangre de cristo ciclo b tiempo ordinario domingo salmo responsorial salmo 115 12 13 15 y 16bc 17 18 r 13 r alzare la copa de la salvacion invocando el nombre del senor r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r mucho le cuesta al senor la muerte de sus fieles senor yo soy tu siervo hijo de tu esclava rompiste mis cadenas r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
+  "orden": 536,
+  "respuestaOpcional": "R. Aleluya.",
+  "hasAudio": false,
+  "celebracion": "Santísimo Cuerpo y Sangre de Cristo",
+  "ciclo": "Ciclo B",
+  "respuesta": "R. Alzaré la copa de la salvación, invocando el nombre del Señor.",
+  "stage": "Liturgia",
+  "dia": "Domingo"
 }

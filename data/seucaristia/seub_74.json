@@ -1,15 +1,7 @@
 {
-  "id": "seub_74",
-  "title": "Domingo de la 32ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 32ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
   "subtitle": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: 1)",
   "salmo": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: 1)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 532,
-  "respuesta": "R. Alaba, alma mía, al Señor.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Que mantiene su fidelidad perpetuamente,",
@@ -30,16 +22,18 @@
       "tu Dios, Sión, de edad en edad. R."
     ]
   ],
+  "respuestaOpcional": "R. Aleluya.",
+  "id": "seub_74",
+  "celebracion": "Domingo de la 32ª semana de Tiempo Ordinario",
+  "title": "Domingo de la 32ª semana de Tiempo Ordinario",
+  "orden": 532,
   "textoCompleto": "Que mantiene su fidelidad perpetuamente,\nque hace justicia a los oprimidos,\nque da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos,\nel Señor guarda a los peregrinos. R.\n\nSustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R.",
+  "tiempo": "Tiempo Ordinario",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 32 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 145 7 8 9a 9bc 10 r 1 r alaba alma mia al senor r aleluya que mantiene su fidelidad perpetuamente que hace justicia a los oprimidos que da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
   "lizq": [
     {
-      "line": "R. Alaba, alma mía, al Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Alaba, alma mía, al Señor."
     },
     {
       "line": "",
@@ -50,20 +44,20 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Que mantiene su fidelidad perpetuamente,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que mantiene su fidelidad perpetuamente,"
     },
     {
-      "line": "que hace justicia a los oprimidos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que hace justicia a los oprimidos,"
     },
     {
       "line": "que da pan a los hambrientos.",
@@ -86,32 +80,38 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "el Señor ama a los justos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor ama a los justos,"
     },
     {
-      "line": "el Señor guarda a los peregrinos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "el Señor guarda a los peregrinos. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Sustenta al huérfano y a la viuda",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sustenta al huérfano y a la viuda"
     },
     {
       "line": "y trastorna el camino de los malvados.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor reina eternamente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor reina eternamente,"
     },
     {
-      "line": "tu Dios, Sión, de edad en edad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tu Dios, Sión, de edad en edad. R."
     }
-  ]
+  ],
+  "ciclo": "Ciclo B",
+  "hasAudio": false,
+  "searchPool": "domingo de la 32 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 145 7 8 9a 9bc 10 r 1 r alaba alma mia al senor r aleluya que mantiene su fidelidad perpetuamente que hace justicia a los oprimidos que da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
+  "respuesta": "R. Alaba, alma mía, al Señor.",
+  "stage": "Liturgia",
+  "dia": "Domingo"
 }

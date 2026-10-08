@@ -1,15 +1,10 @@
 {
+  "stage": "Liturgia",
   "id": "seup_204",
-  "title": "Sábado de la 34ª semana de Tiempo Ordinario",
+  "hasAudio": false,
   "celebracion": "Sábado de la 34ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 94, 1-2. 3-5. 6-7 (R.: 1Co 16, 22b y Ap 22,20c)",
   "salmo": "Salmo responsorial: Salmo 94, 1-2. 3-5. 6-7 (R.: 1Co 16, 22b y Ap 22,20c)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5346,
-  "respuesta": "R. Marana tha. Ven, Señor Jesús.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Venid, aclamemos al Señor,",
@@ -33,16 +28,10 @@
       "el rebaño que él guía. R."
     ]
   ],
-  "textoCompleto": "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos. R.\n\nPorque el Señor es un Dios grande,\nsoberano de todos los dioses:\ntiene en su mano las simas de la tierra,\nson suyas las cumbres de los montes;\nsuyo es el mar, porque él lo hizo,\nla tierra firme que modelaron sus manos. R.\n\nEntrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 34 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 94 1 2 3 5 6 7 r 1co 16 22b y ap 22 20c semana 34 semana xxxiv sabado 34 xxxiv r marana tha ven senor jesus venid aclamemos al senor demos vitores a la roca que nos salva entremos a su presencia dandole gracias aclamandolo con cantos r porque el senor es un dios grande soberano de todos los dioses tiene en su mano las simas de la tierra son suyas las cumbres de los montes suyo es el mar porque el lo hizo la tierra firme que modelaron sus manos r entrad postremonos por tierra bendiciendo al senor creador nuestro porque el es nuestro dios y nosotros su pueblo el rebano que el guia r",
   "lizq": [
     {
-      "line": "R. Marana tha. Ven, Señor Jesús.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Marana tha. Ven, Señor Jesús."
     },
     {
       "line": "",
@@ -53,8 +42,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "demos vítores a la Roca que nos salva;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "demos vítores a la Roca que nos salva;"
     },
     {
       "line": "entremos a su presencia dándole gracias,",
@@ -65,8 +54,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Porque el Señor es un Dios grande,",
@@ -77,16 +66,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tiene en su mano las simas de la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tiene en su mano las simas de la tierra,"
     },
     {
-      "line": "son suyas las cumbres de los montes;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "son suyas las cumbres de los montes;"
     },
     {
-      "line": "suyo es el mar, porque él lo hizo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "suyo es el mar, porque él lo hizo,"
     },
     {
       "line": "la tierra firme que modelaron sus manos. R.",
@@ -116,5 +105,16 @@
       "line": "el rebaño que él guía. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Sábado",
+  "respuestaOpcional": "",
+  "orden": 5346,
+  "searchPool": "sabado de la 34 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 94 1 2 3 5 6 7 r 1co 16 22b y ap 22 20c semana 34 semana xxxiv sabado 34 xxxiv r marana tha ven senor jesus venid aclamemos al senor demos vitores a la roca que nos salva entremos a su presencia dandole gracias aclamandolo con cantos r porque el senor es un dios grande soberano de todos los dioses tiene en su mano las simas de la tierra son suyas las cumbres de los montes suyo es el mar porque el lo hizo la tierra firme que modelaron sus manos r entrad postremonos por tierra bendiciendo al senor creador nuestro porque el es nuestro dios y nosotros su pueblo el rebano que el guia r",
+  "respuesta": "R. Marana tha. Ven, Señor Jesús.",
+  "title": "Sábado de la 34ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par",
+  "textoCompleto": "Venid, aclamemos al Señor,\ndemos vítores a la Roca que nos salva;\nentremos a su presencia dándole gracias,\naclamándolo con cantos. R.\n\nPorque el Señor es un Dios grande,\nsoberano de todos los dioses:\ntiene en su mano las simas de la tierra,\nson suyas las cumbres de los montes;\nsuyo es el mar, porque él lo hizo,\nla tierra firme que modelaron sus manos. R.\n\nEntrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía. R.",
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario"
 }

@@ -1,22 +1,17 @@
 {
-  "id": "seuf_122",
-  "title": "Sábado de la séptima semana de Pascua",
-  "celebracion": "Sábado de la séptima semana de Pascua",
-  "subtitle": "Salmo 10, 4. 5 y 7 (R.: cf. 7b)",
-  "salmo": "Salmo 10, 4. 5 y 7 (R.: cf. 7b)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Sábado",
+  "hasAudio": false,
+  "stage": "Liturgia",
   "orden": 476,
-  "respuesta": "R. Los buenos verán tu rostro, Señor",
-  "respuestaOpcional": "R. Aleluya.",
+  "id": "seuf_122",
+  "sourceBook": "eucaristia",
+  "tiempo": "Pascua",
+  "ciclo": "Ciclo A, B y C",
+  "salmo": "Salmo 10, 4. 5 y 7 (R.: cf. 7b)",
+  "textoCompleto": "El Señor está en su templo santo,\nel Señor tiene su trono en el cielo;\nsus ojos están observando,\nsus pupilas examinan a los hombres. R.\n\nEl Señor examina a inocentes y culpables,\ny al que ama la violencia él lo odia.\nPorque el Señor es justo y ama la justicia:\nlos buenos verán su rostro. R.",
+  "searchPool": "sabado de la septima semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 10 4 5 y 7 r cf 7b semana 7 semana vii sabado feria r los buenos veran tu rostro senor r aleluya el senor esta en su templo santo el senor tiene su trono en el cielo sus ojos estan observando sus pupilas examinan a los hombres r el senor examina a inocentes y culpables y al que ama la violencia el lo odia porque el senor es justo y ama la justicia los buenos veran su rostro r",
+  "subtitle": "Salmo 10, 4. 5 y 7 (R.: cf. 7b)",
+  "title": "Sábado de la séptima semana de Pascua",
+  "dia": "Sábado",
   "estrofas": [
     [
       "El Señor está en su templo santo,",
@@ -31,12 +26,8 @@
       "los buenos verán su rostro. R."
     ]
   ],
-  "textoCompleto": "El Señor está en su templo santo,\nel Señor tiene su trono en el cielo;\nsus ojos están observando,\nsus pupilas examinan a los hombres. R.\n\nEl Señor examina a inocentes y culpables,\ny al que ama la violencia él lo odia.\nPorque el Señor es justo y ama la justicia:\nlos buenos verán su rostro. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la septima semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 10 4 5 y 7 r cf 7b semana 7 semana vii sabado feria r los buenos veran tu rostro senor r aleluya el senor esta en su templo santo el senor tiene su trono en el cielo sus ojos estan observando sus pupilas examinan a los hombres r el senor examina a inocentes y culpables y al que ama la violencia el lo odia porque el senor es justo y ama la justicia los buenos veran su rostro r",
+  "respuestaOpcional": "R. Aleluya.",
   "lizq": [
     {
       "line": "R. Los buenos verán tu rostro, Señor",
@@ -51,12 +42,12 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor está en su templo santo,",
@@ -83,8 +74,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y al que ama la violencia él lo odia.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y al que ama la violencia él lo odia."
     },
     {
       "line": "Porque el Señor es justo y ama la justicia:",
@@ -94,5 +85,14 @@
       "line": "los buenos verán su rostro. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
+  ],
+  "respuesta": "R. Los buenos verán tu rostro, Señor",
+  "celebracion": "Sábado de la séptima semana de Pascua",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
   ]
 }

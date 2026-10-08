@@ -1,15 +1,4 @@
 {
-  "id": "seub_69",
-  "title": "Domingo de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5. 6 (R.: cf. 5)",
-  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5. 6 (R.: cf. 5)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 527,
-  "respuesta": "R. Que el Señor nos bendiga todos los días de nuestra vida.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dichoso el que teme al Señor",
@@ -35,12 +24,9 @@
       "¡Paz a Israel! R."
     ]
   ],
-  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre,\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.\n\nQue veas a los hijos de tus hijos.\n¡Paz a Israel! R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5. 6 (R.: cf. 5)",
+  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5. 6 (R.: cf. 5)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 27 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 127 1 2 3 4 5 6 r cf 5 r que el senor nos bendiga todos los dias de nuestra vida dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r que veas a los hijos de tus hijos paz a israel r",
   "lizq": [
     {
       "line": "R. Que el Señor nos bendiga",
@@ -51,8 +37,8 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Dichoso el que teme al Señor",
@@ -67,8 +53,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "serás dichoso, te irá bien. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "serás dichoso, te irá bien. R."
     },
     {
       "line": "",
@@ -83,40 +69,40 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tus hijos, como renuevos de olivo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tus hijos, como renuevos de olivo,"
     },
     {
-      "line": "alrededor de tu mesa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "alrededor de tu mesa. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Ésta es la bendición del hombre,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Ésta es la bendición del hombre,"
     },
     {
       "line": "que teme al Señor.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Que el Señor te bendiga desde Sión,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Que el Señor te bendiga desde Sión,"
     },
     {
       "line": "que veas la prosperidad de Jerusalén",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "todos los días de tu vida. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "todos los días de tu vida. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Que veas a los hijos de tus hijos.",
@@ -126,5 +112,19 @@
       "line": "¡Paz a Israel! R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "title": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre,\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.\n\nQue veas a los hijos de tus hijos.\n¡Paz a Israel! R.",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 527,
+  "celebracion": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "searchPool": "domingo de la 27 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 127 1 2 3 4 5 6 r cf 5 r que el senor nos bendiga todos los dias de nuestra vida dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r que veas a los hijos de tus hijos paz a israel r",
+  "dia": "Domingo",
+  "hasAudio": false,
+  "ciclo": "Ciclo B",
+  "sourceBook": "eucaristia",
+  "id": "seub_69",
+  "respuesta": "R. Que el Señor nos bendiga todos los días de nuestra vida.",
+  "stage": "Liturgia"
 }

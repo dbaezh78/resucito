@@ -1,10 +1,95 @@
 {
-  "id": "seuf_053",
-  "title": "Jueves de la 2ª semana de Cuaresma",
-  "celebracion": "Jueves de la 2ª semana de Cuaresma",
-  "subtitle": "Salmo 1, 1-2. 3. 4 y 6 (R.: Sal 39, 5a)",
-  "salmo": "Salmo 1, 1-2. 3. 4 y 6 (R.: Sal 39, 5a)",
+  "hasAudio": false,
+  "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
+  "tiempo": "Cuaresma",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "dia": "Jueves",
   "ciclo": "Ciclo A, B y C",
+  "respuesta": "R. Dichoso el hombre que ha puesto su confianza en el Señor.",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dichoso el hombre que ha puesto"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "su confianza en el Señor."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso el hombre"
+    },
+    {
+      "line": "que no sigue el consejo de los impíos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni entra por la senda de los pecadores,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni se sienta en la reunión de los cínicos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sino que su gozo es la ley del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y medita su ley día y noche. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Será como un árbol"
+    },
+    {
+      "line": "plantado al borde de la acequia:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "da fruto en su sazón",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no se marchitan sus hojas;"
+    },
+    {
+      "line": "y cuanto emprende tiene buen fin. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No así los impíos, no así;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "serán paja que arrebata el viento."
+    },
+    {
+      "line": "Porque el Señor protege el camino de los justos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero el camino de los impíos acaba mal. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "orden": 324,
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +97,9 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Jueves",
-  "orden": 324,
-  "respuesta": "R. Dichoso el hombre que ha puesto su confianza en el Señor.",
-  "respuestaOpcional": "",
+  "subtitle": "Salmo 1, 1-2. 3. 4 y 6 (R.: Sal 39, 5a)",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Jueves de la 2ª semana de Cuaresma",
   "estrofas": [
     [
       "Dichoso el hombre",
@@ -40,92 +123,9 @@
       "pero el camino de los impíos acaba mal. R."
     ]
   ],
-  "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "id": "seuf_053",
+  "celebracion": "Jueves de la 2ª semana de Cuaresma",
   "searchPool": "jueves de la 2 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma jueves salmo 1 1 2 3 4 y 6 r sal 39 5a semana 2 semana ii jueves feria r dichoso el hombre que ha puesto su confianza en el senor dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
-  "lizq": [
-    {
-      "line": "R. Dichoso el hombre que ha puesto",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "su confianza en el Señor.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichoso el hombre",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que no sigue el consejo de los impíos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ni entra por la senda de los pecadores,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ni se sienta en la reunión de los cínicos;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sino que su gozo es la ley del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y medita su ley día y noche. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Será como un árbol",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "plantado al borde de la acequia:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "da fruto en su sazón",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y no se marchitan sus hojas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y cuanto emprende tiene buen fin. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "No así los impíos, no así;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "serán paja que arrebata el viento.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Porque el Señor protege el camino de los justos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "pero el camino de los impíos acaba mal. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "salmo": "Salmo 1, 1-2. 3. 4 y 6 (R.: Sal 39, 5a)"
 }

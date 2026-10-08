@@ -1,15 +1,84 @@
 {
-  "id": "seui_090",
-  "title": "Sábado de la 15ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 15ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 135, 1. 23. 24. 10. 12. 13-15",
-  "salmo": "Salmo responsorial: Salmo 135, 1. 23. 24. 10. 12. 13-15",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5156,
-  "respuesta": "R. Porque es eterna su misericordia.",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "",
+  "lizq": [
+    {
+      "line": "R. Porque es eterna su misericordia.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor porque es bueno. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "En nuestra humillación, se acordó de nosotros: R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Y nos libró de nuestros opresores. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Él hirió a Egipto en sus primogénitos. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Y sacó a Israel de aquel país. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Con mano poderosa, con brazo extendido. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Él dividió en dos partes el mar Rojo. R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Y condujo por en medio a Israel. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Arrojó en el mar Rojo al Faraón. R."
+    }
+  ],
   "estrofas": [
     [
       "Dad gracias al Señor porque es bueno. R."
@@ -39,88 +108,19 @@
       "Arrojó en el mar Rojo al Faraón. R."
     ]
   ],
+  "celebracion": "Sábado de la 15ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "orden": 5156,
+  "ciclo": "Año Impar",
+  "dia": "Sábado",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 135, 1. 23. 24. 10. 12. 13-15",
+  "respuesta": "R. Porque es eterna su misericordia.",
+  "searchPool": "sabado de la 15 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 135 1 23 24 10 12 13 15 semana 15 semana xv sabado 15 xv r porque es eterna su misericordia dad gracias al senor porque es bueno r en nuestra humillacion se acordo de nosotros r y nos libro de nuestros opresores r el hirio a egipto en sus primogenitos r y saco a israel de aquel pais r con mano poderosa con brazo extendido r el dividio en dos partes el mar rojo r y condujo por en medio a israel r arrojo en el mar rojo al faraon r",
+  "subtitle": "Salmo responsorial: Salmo 135, 1. 23. 24. 10. 12. 13-15",
   "textoCompleto": "Dad gracias al Señor porque es bueno. R.\n\nEn nuestra humillación, se acordó de nosotros: R.\n\nY nos libró de nuestros opresores. R.\n\nÉl hirió a Egipto en sus primogénitos. R.\n\nY sacó a Israel de aquel país. R.\n\nCon mano poderosa, con brazo extendido. R.\n\nÉl dividió en dos partes el mar Rojo. R.\n\nY condujo por en medio a Israel. R.\n\nArrojó en el mar Rojo al Faraón. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "sabado de la 15 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 135 1 23 24 10 12 13 15 semana 15 semana xv sabado 15 xv r porque es eterna su misericordia dad gracias al senor porque es bueno r en nuestra humillacion se acordo de nosotros r y nos libro de nuestros opresores r el hirio a egipto en sus primogenitos r y saco a israel de aquel pais r con mano poderosa con brazo extendido r el dividio en dos partes el mar rojo r y condujo por en medio a israel r arrojo en el mar rojo al faraon r",
-  "lizq": [
-    {
-      "line": "R. Porque es eterna su misericordia.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dad gracias al Señor porque es bueno. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "En nuestra humillación, se acordó de nosotros: R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Y nos libró de nuestros opresores. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Él hirió a Egipto en sus primogénitos. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Y sacó a Israel de aquel país. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Con mano poderosa, con brazo extendido. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Él dividió en dos partes el mar Rojo. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Y condujo por en medio a Israel. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Arrojó en el mar Rojo al Faraón. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    }
-  ]
+  "title": "Sábado de la 15ª semana de Tiempo Ordinario",
+  "id": "seui_090"
 }

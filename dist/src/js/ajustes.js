@@ -3816,19 +3816,20 @@ window.initAjustes = async function() {
     const statusBox = document.getElementById('eucaristia-sync-status');
     if (!toggle) return;
 
-    const currentSource = localStorage.getItem('resucito_eucaristia_source') || 'local';
-    toggle.checked = (currentSource === 'firebase');
+    const currentSource = localStorage.getItem('resucito_eucaristia_source') || 'auto';
+    const isCloudEnabled = (currentSource !== 'local_only');
+    toggle.checked = isCloudEnabled;
     if (label) {
-      label.textContent = toggle.checked ? 'Firebase (Nube)' : 'Local';
-      label.style.color = toggle.checked ? 'var(--accent-color)' : 'var(--text-color)';
+      label.textContent = isCloudEnabled ? 'Firebase Cloud (con Respaldo Local)' : 'Solo Local (Offline)';
+      label.style.color = isCloudEnabled ? 'var(--accent-color)' : 'var(--text-color)';
     }
 
     toggle.onchange = function() {
       const isCloud = toggle.checked;
-      const newSource = isCloud ? 'firebase' : 'local';
+      const newSource = isCloud ? 'auto' : 'local_only';
       localStorage.setItem('resucito_eucaristia_source', newSource);
       if (label) {
-        label.textContent = isCloud ? 'Firebase (Nube)' : 'Local';
+        label.textContent = isCloud ? 'Firebase Cloud (con Respaldo Local)' : 'Solo Local (Offline)';
         label.style.color = isCloud ? 'var(--accent-color)' : 'var(--text-color)';
       }
 
@@ -3836,7 +3837,7 @@ window.initAjustes = async function() {
       window.salmosEucaristiaList = [];
 
       if (window.showToast) {
-        window.showToast(`Fuente de Eucaristía: ${isCloud ? 'Firebase Cloud' : 'Almacenamiento Local'}`);
+        window.showToast(`Fuente de Eucaristía: ${isCloud ? 'Firebase Cloud (con Respaldo Local)' : 'Solo Almacenamiento Local'}`);
       }
 
       if (typeof window.cargarSalmosEucaristia === 'function') {

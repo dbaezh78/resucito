@@ -1,43 +1,13 @@
 {
-  "id": "seua_47",
-  "title": "Domingo de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 3ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 26, 1. 4. 13-14 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 26, 1. 4. 13-14 (R.: 1a)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 503,
-  "respuesta": "R. El Señor es mi luz y mi salvación.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "El Señor es mi luz y mi salvación,",
-      "¿a quién temeré?",
-      "El Señor es la defensa de mi vida,",
-      "¿quién me hará temblar? R."
-    ],
-    [
-      "Una cosa pido al Señor,",
-      "eso buscaré:",
-      "habitar en la casa del Señor",
-      "por los días de mi vida;",
-      "gozar de la dulzura del Señor,",
-      "contemplando su templo. R."
-    ],
-    [
-      "Espero gozar de la dicha del Señor",
-      "en el país de la vida.",
-      "Espera en el Señor, sé valiente,",
-      "ten ánimo, espera en el Señor. R."
-    ]
-  ],
-  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "domingo de la 3 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 26 1 4 13 14 r 1a r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "salmo": "Salmo responsorial: Salmo 26, 1. 4. 13-14 (R.: 1a)",
+  "orden": 503,
+  "tiempo": "Tiempo Ordinario",
+  "id": "seua_47",
+  "respuestaOpcional": "",
+  "title": "Domingo de la 3ª semana de Tiempo Ordinario",
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
+  "celebracion": "Domingo de la 3ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. El Señor es mi luz y mi salvación.",
@@ -72,24 +42,24 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "eso buscaré:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "eso buscaré:"
     },
     {
-      "line": "habitar en la casa del Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "habitar en la casa del Señor"
     },
     {
-      "line": "por los días de mi vida;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por los días de mi vida;"
     },
     {
       "line": "gozar de la dulzura del Señor,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "contemplando su templo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "contemplando su templo. R."
     },
     {
       "line": "",
@@ -104,12 +74,42 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Espera en el Señor, sé valiente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Espera en el Señor, sé valiente,"
     },
     {
       "line": "ten ánimo, espera en el Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "searchPool": "domingo de la 3 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 26 1 4 13 14 r 1a r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "respuesta": "R. El Señor es mi luz y mi salvación.",
+  "ciclo": "Ciclo A",
+  "estrofas": [
+    [
+      "El Señor es mi luz y mi salvación,",
+      "¿a quién temeré?",
+      "El Señor es la defensa de mi vida,",
+      "¿quién me hará temblar? R."
+    ],
+    [
+      "Una cosa pido al Señor,",
+      "eso buscaré:",
+      "habitar en la casa del Señor",
+      "por los días de mi vida;",
+      "gozar de la dulzura del Señor,",
+      "contemplando su templo. R."
+    ],
+    [
+      "Espero gozar de la dicha del Señor",
+      "en el país de la vida.",
+      "Espera en el Señor, sé valiente,",
+      "ten ánimo, espera en el Señor. R."
+    ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 26, 1. 4. 13-14 (R.: 1a)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "dia": "Domingo",
+  "stage": "Liturgia"
 }

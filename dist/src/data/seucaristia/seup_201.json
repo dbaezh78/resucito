@@ -1,15 +1,14 @@
 {
-  "id": "seup_201",
-  "title": "Miércoles de la 34ª semana de Tiempo Ordinario",
   "celebracion": "Miércoles de la 34ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 7-8. 9 (R.: Ap 15, 3b)",
-  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 7-8. 9 (R.: Ap 15, 3b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5343,
   "respuesta": "R. Grandes y maravillosas son tus obras, Señor, Dios omnipotente.",
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
+  "stage": "Liturgia",
   "respuestaOpcional": "",
+  "dia": "Miércoles",
+  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 7-8. 9 (R.: Ap 15, 3b)",
+  "searchPool": "miercoles de la 34 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 97 1 2 3ab 7 8 9 r ap 15 3b semana 34 semana xxxiv miercoles 34 xxxiv r grandes y maravillosas son tus obras senor dios omnipotente cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r retumbe el mar y cuanto contiene la tierra y cuantos la habitan aplaudan los rios aclamen los montes r al senor que llega para regir la tierra regira el orbe con justicia y los pueblos con rectitud r",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -34,12 +33,8 @@
       "y los pueblos con rectitud. R."
     ]
   ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nRetumbe el mar y cuanto contiene,\nla tierra y cuantos la habitan;\naplaudan los ríos, aclamen los montes. R.\n\nAl Señor, que llega para regir la tierra.\nRegirá el orbe con justicia\ny los pueblos con rectitud. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 34 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 97 1 2 3ab 7 8 9 r ap 15 3b semana 34 semana xxxiv miercoles 34 xxxiv r grandes y maravillosas son tus obras senor dios omnipotente cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r retumbe el mar y cuanto contiene la tierra y cuantos la habitan aplaudan los rios aclamen los montes r al senor que llega para regir la tierra regira el orbe con justicia y los pueblos con rectitud r",
+  "title": "Miércoles de la 34ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Grandes y maravillosas son tus obras,",
@@ -58,52 +53,52 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "porque ha hecho maravillas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque ha hecho maravillas:"
     },
     {
-      "line": "su diestra le ha dado la victoria,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su diestra le ha dado la victoria,"
     },
     {
-      "line": "su santo brazo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor da a conocer su victoria,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "revela a las naciones su justicia:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "se acordó de su misericordia y su fidelidad",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en favor de la casa de Israel. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su santo brazo. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Retumbe el mar y cuanto contiene,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor da a conocer su victoria,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "revela a las naciones su justicia:"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "se acordó de su misericordia y su fidelidad"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en favor de la casa de Israel. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Retumbe el mar y cuanto contiene,"
     },
     {
       "line": "la tierra y cuantos la habitan;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "aplaudan los ríos, aclamen los montes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "aplaudan los ríos, aclamen los montes. R."
     },
     {
       "line": "",
@@ -118,8 +113,13 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y los pueblos con rectitud. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y los pueblos con rectitud. R."
     }
-  ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "orden": 5343,
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nRetumbe el mar y cuanto contiene,\nla tierra y cuantos la habitan;\naplaudan los ríos, aclamen los montes. R.\n\nAl Señor, que llega para regir la tierra.\nRegirá el orbe con justicia\ny los pueblos con rectitud. R.",
+  "ciclo": "Año Par",
+  "id": "seup_201"
 }

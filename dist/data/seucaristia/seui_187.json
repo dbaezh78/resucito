@@ -1,15 +1,6 @@
 {
-  "id": "seui_187",
-  "title": "Lunes de la 32ª semana de Tiempo Ordinario",
   "celebracion": "Lunes de la 32ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 138, 1-3a. 3b-6. 7-8. 9-10 (R.: 24b)",
-  "salmo": "Salmo responsorial: Salmo 138, 1-3a. 3b-6. 7-8. 9-10 (R.: 24b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Lunes",
-  "orden": 5321,
-  "respuesta": "R. Guíame, Señor, por el camino eterno.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Señor, tú me sondeas y me conoces;",
@@ -39,20 +30,21 @@
       "me agarrará tu derecha. R."
     ]
   ],
-  "textoCompleto": "Señor, tú me sondeas y me conoces;\nme conoces cuando me siento o me levanto,\nde lejos penetras mis pensamientos;\ndistingues mi camino y mi descanso. R.\n\nTodas mis sendas te son familiares.\nNo ha llegado la palabra a mi lengua,\ny ya, Señor, te la sabes toda.\nMe estrechas detrás y delante,\nme cubres con tu palma.\nTanto saber me sobrepasa,\nes sublime, y no lo abarco. R.\n\n¿Adónde iré lejos de tu aliento,\nadónde escaparé de tu mirada?\nSi escalo el cielo, allí estás tú;\nsi me acuesto en el abismo, allí te encuentro. R.\n\nSi vuelo hasta el margen de la aurora,\nsi emigro hasta el confín del mar,\nallí me alcanzará tu izquierda,\nme agarrará tu derecha. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "id": "seui_187",
+  "respuesta": "R. Guíame, Señor, por el camino eterno.",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
   "searchPool": "lunes de la 32 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 138 1 3a 3b 6 7 8 9 10 r 24b semana 32 semana xxxii lunes 32 xxxii r guiame senor por el camino eterno senor tu me sondeas y me conoces me conoces cuando me siento o me levanto de lejos penetras mis pensamientos distingues mi camino y mi descanso r todas mis sendas te son familiares no ha llegado la palabra a mi lengua y ya senor te la sabes toda me estrechas detras y delante me cubres con tu palma tanto saber me sobrepasa es sublime y no lo abarco r adonde ire lejos de tu aliento adonde escapare de tu mirada si escalo el cielo alli estas tu si me acuesto en el abismo alli te encuentro r si vuelo hasta el margen de la aurora si emigro hasta el confin del mar alli me alcanzara tu izquierda me agarrara tu derecha r",
+  "title": "Lunes de la 32ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
   "lizq": [
     {
-      "line": "R. Guíame, Señor, por el camino eterno.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Guíame, Señor, por el camino eterno."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Señor, tú me sondeas y me conoces;",
@@ -75,28 +67,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Todas mis sendas te son familiares.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Todas mis sendas te son familiares."
     },
     {
       "line": "No ha llegado la palabra a mi lengua,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y ya, Señor, te la sabes toda.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y ya, Señor, te la sabes toda."
     },
     {
-      "line": "Me estrechas detrás y delante,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Me estrechas detrás y delante,"
     },
     {
       "line": "me cubres con tu palma.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Tanto saber me sobrepasa,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Tanto saber me sobrepasa,"
     },
     {
       "line": "es sublime, y no lo abarco. R.",
@@ -107,8 +99,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "¿Adónde iré lejos de tu aliento,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¿Adónde iré lejos de tu aliento,"
     },
     {
       "line": "adónde escaparé de tu mirada?",
@@ -119,8 +111,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "si me acuesto en el abismo, allí te encuentro. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "si me acuesto en el abismo, allí te encuentro. R."
     },
     {
       "line": "",
@@ -139,8 +131,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "me agarrará tu derecha. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me agarrará tu derecha. R."
     }
-  ]
+  ],
+  "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 138, 1-3a. 3b-6. 7-8. 9-10 (R.: 24b)",
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 138, 1-3a. 3b-6. 7-8. 9-10 (R.: 24b)",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Señor, tú me sondeas y me conoces;\nme conoces cuando me siento o me levanto,\nde lejos penetras mis pensamientos;\ndistingues mi camino y mi descanso. R.\n\nTodas mis sendas te son familiares.\nNo ha llegado la palabra a mi lengua,\ny ya, Señor, te la sabes toda.\nMe estrechas detrás y delante,\nme cubres con tu palma.\nTanto saber me sobrepasa,\nes sublime, y no lo abarco. R.\n\n¿Adónde iré lejos de tu aliento,\nadónde escaparé de tu mirada?\nSi escalo el cielo, allí estás tú;\nsi me acuesto en el abismo, allí te encuentro. R.\n\nSi vuelo hasta el margen de la aurora,\nsi emigro hasta el confín del mar,\nallí me alcanzará tu izquierda,\nme agarrará tu derecha. R.",
+  "orden": 5321
 }

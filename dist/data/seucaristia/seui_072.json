@@ -1,15 +1,12 @@
 {
-  "id": "seui_072",
-  "title": "Sábado de la 12ª semana de Tiempo Ordinario",
+  "textoCompleto": "Proclama mi alma la grandeza del Señor,\nse alegra mi espíritu en Dios, mi salvador. R.\n\nPorque ha mirado la humillación de su esclava.\nDesde ahora me felicitarán todas las generaciones,\nporque el Poderoso ha hecho obras grandes por mí:\nsu nombre es Santo. R.\n\nY su misericordia llega a sus fieles\nde generación en generación.\nA los hambrientos los colma de bienes\ny a los ricos los despide vacíos. R.\n\nAuxilia a Israel, su siervo,\nacordándose de la misericordia\n—como lo había prometido a nuestros padres—\nen favor de Abrahán y su descendencia por siempre. R.",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
   "celebracion": "Sábado de la 12ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "sabado de la 12 semana de tiempo ordinario ano impar tiempo ordinario sabado interleccional lucas 1 46 47 48 49 50 y 53 54 55 r cf 54b semana 12 semana xii sabado 12 xii r el senor se acuerda de la misericordia proclama mi alma la grandeza del senor se alegra mi espiritu en dios mi salvador r porque ha mirado la humillacion de su esclava desde ahora me felicitaran todas las generaciones porque el poderoso ha hecho obras grandes por mi su nombre es santo r y su misericordia llega a sus fieles de generacion en generacion a los hambrientos los colma de bienes y a los ricos los despide vacios r auxilia a israel su siervo acordandose de la misericordia como lo habia prometido a nuestros padres en favor de abrahan y su descendencia por siempre r",
   "subtitle": "Interleccional: Lucas 1, 46-47. 48-49. 50 y 53. 54-55 (R.: cf.54b)",
   "salmo": "Interleccional: Lucas 1, 46-47. 48-49. 50 y 53. 54-55 (R.: cf.54b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5126,
-  "respuesta": "R. El Señor se acuerda de la misericordia.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Proclama mi alma la grandeza del Señor,",
@@ -34,12 +31,8 @@
       "en favor de Abrahán y su descendencia por siempre. R."
     ]
   ],
-  "textoCompleto": "Proclama mi alma la grandeza del Señor,\nse alegra mi espíritu en Dios, mi salvador. R.\n\nPorque ha mirado la humillación de su esclava.\nDesde ahora me felicitarán todas las generaciones,\nporque el Poderoso ha hecho obras grandes por mí:\nsu nombre es Santo. R.\n\nY su misericordia llega a sus fieles\nde generación en generación.\nA los hambrientos los colma de bienes\ny a los ricos los despide vacíos. R.\n\nAuxilia a Israel, su siervo,\nacordándose de la misericordia\n—como lo había prometido a nuestros padres—\nen favor de Abrahán y su descendencia por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 12 semana de tiempo ordinario ano impar tiempo ordinario sabado interleccional lucas 1 46 47 48 49 50 y 53 54 55 r cf 54b semana 12 semana xii sabado 12 xii r el senor se acuerda de la misericordia proclama mi alma la grandeza del senor se alegra mi espiritu en dios mi salvador r porque ha mirado la humillacion de su esclava desde ahora me felicitaran todas las generaciones porque el poderoso ha hecho obras grandes por mi su nombre es santo r y su misericordia llega a sus fieles de generacion en generacion a los hambrientos los colma de bienes y a los ricos los despide vacios r auxilia a israel su siervo acordandose de la misericordia como lo habia prometido a nuestros padres en favor de abrahan y su descendencia por siempre r",
+  "ciclo": "Año Impar",
+  "orden": 5126,
   "lizq": [
     {
       "line": "R. El Señor se acuerda de la misericordia.",
@@ -50,20 +43,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Proclama mi alma la grandeza del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Proclama mi alma la grandeza del Señor,"
     },
     {
-      "line": "se alegra mi espíritu en Dios, mi salvador. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "se alegra mi espíritu en Dios, mi salvador. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Porque ha mirado la humillación de su esclava.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque ha mirado la humillación de su esclava."
     },
     {
       "line": "Desde ahora me felicitarán todas las generaciones,",
@@ -74,8 +67,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "su nombre es Santo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su nombre es Santo. R."
     },
     {
       "line": "",
@@ -86,8 +79,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "de generación en generación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "de generación en generación."
     },
     {
       "line": "A los hambrientos los colma de bienes",
@@ -102,8 +95,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Auxilia a Israel, su siervo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Auxilia a Israel, su siervo,"
     },
     {
       "line": "acordándose de la misericordia",
@@ -117,5 +110,12 @@
       "line": "en favor de Abrahán y su descendencia por siempre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "id": "seui_072",
+  "title": "Sábado de la 12ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. El Señor se acuerda de la misericordia.",
+  "dia": "Sábado"
 }

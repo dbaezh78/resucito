@@ -1,15 +1,11 @@
 {
-  "id": "seuc_38",
-  "title": "Cuarto domingo de Pascua",
-  "celebracion": "Cuarto domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 99, 1-2. 3. 5 (R.: 3c)",
-  "salmo": "Salmo responsorial: Salmo 99, 1-2. 3. 5 (R.: 3c)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
   "respuesta": "R. Somos su pueblo y ovejas de su rebaño.",
   "respuestaOpcional": "R. Aleluya.",
+  "orden": 410,
+  "title": "Cuarto domingo de Pascua",
+  "subtitle": "Salmo responsorial: Salmo 99, 1-2. 3. 5 (R.: 3c)",
+  "catCanto": "Salmo Eucaristía",
+  "id": "seuc_38",
   "estrofas": [
     [
       "Aclama al Señor, tierra entera,",
@@ -27,16 +23,10 @@
       "su fidelidad por todas las edades». R."
     ]
   ],
-  "textoCompleto": "Aclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores. R.\n\nSabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.\n\n«El Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "cuarto domingo de pascua ciclo c pascua domingo salmo responsorial salmo 99 1 2 3 5 r 3c r somos su pueblo y ovejas de su rebano r aleluya aclama al senor tierra entera servid al senor con alegria entrad en su presencia con vitores r sabed que el senor es dios que el nos hizo y somos suyos su pueblo y ovejas de su rebano r el senor es bueno su misericordia es eterna su fidelidad por todas las edades r",
   "lizq": [
     {
-      "line": "R. Somos su pueblo y ovejas de su rebaño.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Somos su pueblo y ovejas de su rebaño."
     },
     {
       "line": "",
@@ -47,32 +37,32 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Aclama al Señor, tierra entera,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "servid al Señor con alegría,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "servid al Señor con alegría,"
     },
     {
       "line": "entrad en su presencia con vítores. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Sabed que el Señor es Dios:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sabed que el Señor es Dios:"
     },
     {
       "line": "que él nos hizo y somos suyos,",
@@ -83,20 +73,30 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "«El Señor es bueno,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "su misericordia es eterna,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su misericordia es eterna,"
     },
     {
-      "line": "su fidelidad por todas las edades». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su fidelidad por todas las edades». R."
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 99, 1-2. 3. 5 (R.: 3c)",
+  "textoCompleto": "Aclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores. R.\n\nSabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.\n\n«El Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades». R.",
+  "searchPool": "cuarto domingo de pascua ciclo c pascua domingo salmo responsorial salmo 99 1 2 3 5 r 3c r somos su pueblo y ovejas de su rebano r aleluya aclama al senor tierra entera servid al senor con alegria entrad en su presencia con vitores r sabed que el senor es dios que el nos hizo y somos suyos su pueblo y ovejas de su rebano r el senor es bueno su misericordia es eterna su fidelidad por todas las edades r",
+  "hasAudio": false,
+  "dia": "Domingo",
+  "celebracion": "Cuarto domingo de Pascua",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "tiempo": "Pascua",
+  "ciclo": "Ciclo C"
 }

@@ -1,15 +1,102 @@
 {
-  "id": "seuc_71",
-  "title": "Domingo de la 25ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 25ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 112, 1-2. 4-6. 7-8 (R.: cf. 1a y 7b)",
-  "salmo": "Salmo responsorial: Salmo 112, 1-2. 4-6. 7-8 (R.: cf. 1a y 7b)",
   "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 525,
   "respuesta": "R. Alabad al Señor, que alza al pobre.",
+  "searchPool": "domingo de la 25 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 112 1 2 4 6 7 8 r cf 1a y 7b r alabad al senor que alza al pobre r aleluya alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r el senor se eleva sobre todos los pueblos su gloria sobre los cielos quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar al cielo y a la tierra r levanta del polvo al desvalido alza de la basura al pobre para sentarlo con los principes los principes de su pueblo r",
   "respuestaOpcional": "R. Aleluya",
+  "dia": "Domingo",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos.\n¿Quién como el Señor, Dios nuestro,\nque se eleva en su trono\ny se abaja para mirar\nal cielo y a la tierra? R.\n\nLevanta del polvo al desvalido,\nalza de la basura al pobre,\npara sentarlo con los príncipes,\nlos príncipes de su pueblo. R.",
+  "lizq": [
+    {
+      "line": "R. Alabad al Señor, que alza al pobre.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alabad, siervos del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alabad el nombre del Señor."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Bendito sea el nombre del Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ahora y por siempre. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor se eleva sobre todos los pueblos,"
+    },
+    {
+      "line": "su gloria sobre los cielos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿Quién como el Señor, Dios nuestro,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que se eleva en su trono"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y se abaja para mirar"
+    },
+    {
+      "line": "al cielo y a la tierra? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Levanta del polvo al desvalido,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alza de la basura al pobre,"
+    },
+    {
+      "line": "para sentarlo con los príncipes,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los príncipes de su pueblo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "id": "seuc_71",
+  "salmo": "Salmo responsorial: Salmo 112, 1-2. 4-6. 7-8 (R.: cf. 1a y 7b)",
   "estrofas": [
     [
       "Alabad, siervos del Señor,",
@@ -32,96 +119,9 @@
       "los príncipes de su pueblo. R."
     ]
   ],
-  "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos.\n¿Quién como el Señor, Dios nuestro,\nque se eleva en su trono\ny se abaja para mirar\nal cielo y a la tierra? R.\n\nLevanta del polvo al desvalido,\nalza de la basura al pobre,\npara sentarlo con los príncipes,\nlos príncipes de su pueblo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 112, 1-2. 4-6. 7-8 (R.: cf. 1a y 7b)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 25 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 112 1 2 4 6 7 8 r cf 1a y 7b r alabad al senor que alza al pobre r aleluya alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r el senor se eleva sobre todos los pueblos su gloria sobre los cielos quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar al cielo y a la tierra r levanta del polvo al desvalido alza de la basura al pobre para sentarlo con los principes los principes de su pueblo r",
-  "lizq": [
-    {
-      "line": "R. Alabad al Señor, que alza al pobre.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Alabad, siervos del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "alabad el nombre del Señor.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Bendito sea el nombre del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ahora y por siempre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor se eleva sobre todos los pueblos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "su gloria sobre los cielos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿Quién como el Señor, Dios nuestro,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que se eleva en su trono",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y se abaja para mirar",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "al cielo y a la tierra? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Levanta del polvo al desvalido,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "alza de la basura al pobre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "para sentarlo con los príncipes,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los príncipes de su pueblo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "orden": 525,
+  "title": "Domingo de la 25ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 25ª semana de Tiempo Ordinario"
 }

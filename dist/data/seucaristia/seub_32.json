@@ -1,15 +1,6 @@
 {
   "id": "seub_32",
-  "title": "Segundo domingo de Pascua",
-  "celebracion": "Segundo domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 117, 2-4. 16ab-18. 22-24 (R.: 1)",
-  "salmo": "Salmo responsorial: Salmo 117, 2-4. 16ab-18. 22-24 (R.: 1)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
-  "respuesta": "R. Dad gracias al Señor porque es bueno, porque es eterna su misericordia.",
-  "respuestaOpcional": "R. Aleluya",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Diga la casa de Israel:",
@@ -36,12 +27,16 @@
       "sea nuestra alegría y nuestro gozo. R."
     ]
   ],
-  "textoCompleto": "Diga la casa de Israel:\neterna es su misericordia.\nDiga la casa de Aarón:\neterna es su misericordia.\nDigan los fieles del Señor:\neterna es su misericordia. R.\n\nLa diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor.\nMe castigó, me castigó el Señor,\npero no me entregó a la muerte. R.\n\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente.\nÉste es el día en que actuó el Señor:\nsea nuestra alegría y nuestro gozo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 117, 2-4. 16ab-18. 22-24 (R.: 1)",
   "catCanto": "Salmo Eucaristía",
+  "respuestaOpcional": "R. Aleluya",
+  "tiempo": "Pascua",
+  "ciclo": "Ciclo B",
+  "respuesta": "R. Dad gracias al Señor porque es bueno, porque es eterna su misericordia.",
   "hasAudio": false,
-  "searchPool": "segundo domingo de pascua ciclo b pascua domingo salmo responsorial salmo 117 2 4 16ab 18 22 24 r 1 r dad gracias al senor porque es bueno porque es eterna su misericordia r aleluya diga la casa de israel eterna es su misericordia diga la casa de aaron eterna es su misericordia digan los fieles del senor eterna es su misericordia r la diestra del senor es poderosa la diestra del senor es excelsa no he de morir vivire para contar las hazanas del senor me castigo me castigo el senor pero no me entrego a la muerte r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo r",
+  "title": "Segundo domingo de Pascua",
+  "textoCompleto": "Diga la casa de Israel:\neterna es su misericordia.\nDiga la casa de Aarón:\neterna es su misericordia.\nDigan los fieles del Señor:\neterna es su misericordia. R.\n\nLa diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor.\nMe castigó, me castigó el Señor,\npero no me entregó a la muerte. R.\n\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente.\nÉste es el día en que actuó el Señor:\nsea nuestra alegría y nuestro gozo. R.",
+  "orden": 410,
   "lizq": [
     {
       "line": "R. Dad gracias al Señor porque es bueno,",
@@ -80,12 +75,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "eterna es su misericordia.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "eterna es su misericordia."
     },
     {
-      "line": "Digan los fieles del Señor:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Digan los fieles del Señor:"
     },
     {
       "line": "eterna es su misericordia. R.",
@@ -104,8 +99,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "No he de morir, viviré",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "No he de morir, viviré"
     },
     {
       "line": "para contar las hazañas del Señor.",
@@ -116,28 +111,28 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "pero no me entregó a la muerte. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "pero no me entregó a la muerte. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "La piedra que desecharon los arquitectos",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "es ahora la piedra angular.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "es ahora la piedra angular."
     },
     {
       "line": "Es el Señor quien lo ha hecho,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ha sido un milagro patente.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ha sido un milagro patente."
     },
     {
       "line": "Éste es el día en que actuó el Señor:",
@@ -147,5 +142,10 @@
       "line": "sea nuestra alegría y nuestro gozo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "searchPool": "segundo domingo de pascua ciclo b pascua domingo salmo responsorial salmo 117 2 4 16ab 18 22 24 r 1 r dad gracias al senor porque es bueno porque es eterna su misericordia r aleluya diga la casa de israel eterna es su misericordia diga la casa de aaron eterna es su misericordia digan los fieles del senor eterna es su misericordia r la diestra del senor es poderosa la diestra del senor es excelsa no he de morir vivire para contar las hazanas del senor me castigo me castigo el senor pero no me entrego a la muerte r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo r",
+  "salmo": "Salmo responsorial: Salmo 117, 2-4. 16ab-18. 22-24 (R.: 1)",
+  "celebracion": "Segundo domingo de Pascua",
+  "sourceBook": "eucaristia",
+  "dia": "Domingo"
 }

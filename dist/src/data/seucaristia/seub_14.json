@@ -1,15 +1,9 @@
 {
+  "stage": "Liturgia",
   "id": "seub_14",
-  "title": "Primer domingo de Cuaresma",
-  "celebracion": "Primer domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 24, 4bc-5ab. 6-7bc. 8-9 (R.: cf 10)",
-  "salmo": "Salmo responsorial: Salmo 24, 4bc-5ab. 6-7bc. 8-9 (R.: cf 10)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
-  "orden": 301,
-  "respuesta": "R. Tus sendas, Señor, son misericordia y lealtad para los que guardan tu alianza.",
-  "respuestaOpcional": "",
+  "searchPool": "primer domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 24 4bc 5ab 6 7bc 8 9 r cf 10 r tus sendas senor son misericordia y lealtad para los que guardan tu alianza senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r recuerda senor que tu ternura y tu misericordia son eternas acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas.\nAcuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
   "estrofas": [
     [
       "Señor, enséñame tus caminos,",
@@ -30,12 +24,11 @@
       "enseña su camino a los humildes. R."
     ]
   ],
-  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas.\nAcuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 24, 4bc-5ab. 6-7bc. 8-9 (R.: cf 10)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "primer domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 24 4bc 5ab 6 7bc 8 9 r cf 10 r tus sendas senor son misericordia y lealtad para los que guardan tu alianza senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r recuerda senor que tu ternura y tu misericordia son eternas acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "ciclo": "Ciclo B",
+  "tiempo": "Cuaresma",
+  "celebracion": "Primer domingo de Cuaresma",
   "lizq": [
     {
       "line": "R. Tus sendas, Señor, son misericordia y lealtad",
@@ -46,8 +39,8 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Señor, enséñame tus caminos,",
@@ -66,8 +59,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Recuerda, Señor, que tu ternura",
@@ -78,16 +71,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Acuérdate de mí con misericordia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Acuérdate de mí con misericordia,"
     },
     {
-      "line": "por tu bondad, Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "por tu bondad, Señor. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es bueno y es recto,",
@@ -102,8 +95,15 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "enseña su camino a los humildes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "enseña su camino a los humildes. R."
     }
-  ]
+  ],
+  "title": "Primer domingo de Cuaresma",
+  "respuestaOpcional": "",
+  "respuesta": "R. Tus sendas, Señor, son misericordia y lealtad para los que guardan tu alianza.",
+  "orden": 301,
+  "dia": "Domingo",
+  "salmo": "Salmo responsorial: Salmo 24, 4bc-5ab. 6-7bc. 8-9 (R.: cf 10)",
+  "hasAudio": false
 }

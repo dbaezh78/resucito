@@ -1,15 +1,5 @@
 {
-  "id": "seui_001",
-  "title": "Lunes de la 1ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 1ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 96, 1 y 2b. 6 y 7c. 9 (R.: cf. 7c)",
-  "salmo": "Salmo responsorial: Salmo 96, 1 y 2b. 6 y 7c. 9 (R.: cf. 7c)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5011,
   "respuesta": "R. Adorad a Dios, todos sus ángeles.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "El Señor reina, la tierra goza,",
@@ -27,20 +17,25 @@
       "encumbrado sobre todos los dioses. R."
     ]
   ],
-  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nJusticia y derecho sostienen su trono. R.\n\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria.\nAnte él se postran todos los dioses. R.\n\nPorque tú eres, Señor,\naltísimo sobre toda la tierra,\nencumbrado sobre todos los dioses. R.",
-  "sourceBook": "eucaristia",
+  "respuestaOpcional": "",
+  "title": "Lunes de la 1ª semana de Tiempo Ordinario",
   "stage": "Liturgia",
+  "orden": 5011,
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 96, 1 y 2b. 6 y 7c. 9 (R.: cf. 7c)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nJusticia y derecho sostienen su trono. R.\n\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria.\nAnte él se postran todos los dioses. R.\n\nPorque tú eres, Señor,\naltísimo sobre toda la tierra,\nencumbrado sobre todos los dioses. R.",
+  "dia": "Lunes",
   "searchPool": "lunes de la 1 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 96 1 y 2b 6 y 7c 9 r cf 7c semana 1 semana i lunes 1 i r adorad a dios todos sus angeles el senor reina la tierra goza se alegran las islas innumerables justicia y derecho sostienen su trono r los cielos pregonan su justicia y todos los pueblos contemplan su gloria ante el se postran todos los dioses r porque tu eres senor altisimo sobre toda la tierra encumbrado sobre todos los dioses r",
+  "hasAudio": false,
   "lizq": [
     {
       "line": "R. Adorad a Dios, todos sus ángeles.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor reina, la tierra goza,",
@@ -63,28 +58,33 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y todos los pueblos contemplan su gloria.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y todos los pueblos contemplan su gloria."
     },
     {
-      "line": "Ante él se postran todos los dioses. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Ante él se postran todos los dioses. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Porque tú eres, Señor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "altísimo sobre toda la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "altísimo sobre toda la tierra,"
     },
     {
-      "line": "encumbrado sobre todos los dioses. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "encumbrado sobre todos los dioses. R."
     }
-  ]
+  ],
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "celebracion": "Lunes de la 1ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 96, 1 y 2b. 6 y 7c. 9 (R.: cf. 7c)",
+  "id": "seui_001"
 }

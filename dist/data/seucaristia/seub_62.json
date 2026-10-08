@@ -1,63 +1,30 @@
 {
-  "id": "seub_62",
-  "title": "Domingo de la 20ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 20ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 33, 2-3. 10-1 1. 12-13. 14-15 (R.: 9a)",
-  "salmo": "Salmo responsorial: Salmo 33, 2-3. 10-1 1. 12-13. 14-15 (R.: 9a)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 520,
-  "respuesta": "R. Gustad y ved qué bueno es el Señor.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Bendigo al Señor en todo momento,",
-      "su alabanza está siempre en mi boca;",
-      "mi alma se gloría en el Señor:",
-      "que los humildes lo escuchen y se alegren. R."
-    ],
-    [
-      "Todos sus santos, temed al Señor,",
-      "porque nada les falta a los que le temen;",
-      "los ricos empobrecen y pasan hambre,",
-      "los que buscan al Señor no carecen de nada. R."
-    ],
-    [
-      "Venid, hijos, escuchadme:",
-      "os instruiré en el temor del Señor;",
-      "¿hay alguien que ame la vida",
-      "y desee días de prosperidad? R."
-    ],
-    [
-      "Guarda tu lengua del mal,",
-      "tus labios de la falsedad;",
-      "apártate del mal, obra el bien,",
-      "busca la paz y corre tras ella. R."
-    ]
-  ],
-  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nTodos sus santos, temed al Señor,\nporque nada les falta a los que le temen;\nlos ricos empobrecen y pasan hambre,\nlos que buscan al Señor no carecen de nada. R.\n\nVenid, hijos, escuchadme:\nos instruiré en el temor del Señor;\n¿hay alguien que ame la vida\ny desee días de prosperidad? R.\n\nGuarda tu lengua del mal,\ntus labios de la falsedad;\napártate del mal, obra el bien,\nbusca la paz y corre tras ella. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "domingo de la 20 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 33 2 3 10 1 1 12 13 14 15 r 9a r gustad y ved que bueno es el senor bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r todos sus santos temed al senor porque nada les falta a los que le temen los ricos empobrecen y pasan hambre los que buscan al senor no carecen de nada r venid hijos escuchadme os instruire en el temor del senor hay alguien que ame la vida y desee dias de prosperidad r guarda tu lengua del mal tus labios de la falsedad apartate del mal obra el bien busca la paz y corre tras ella r",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 33, 2-3. 10-1 1. 12-13. 14-15 (R.: 9a)",
+  "id": "seub_62",
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
+  "title": "Domingo de la 20ª semana de Tiempo Ordinario",
+  "orden": 520,
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nTodos sus santos, temed al Señor,\nporque nada les falta a los que le temen;\nlos ricos empobrecen y pasan hambre,\nlos que buscan al Señor no carecen de nada. R.\n\nVenid, hijos, escuchadme:\nos instruiré en el temor del Señor;\n¿hay alguien que ame la vida\ny desee días de prosperidad? R.\n\nGuarda tu lengua del mal,\ntus labios de la falsedad;\napártate del mal, obra el bien,\nbusca la paz y corre tras ella. R.",
+  "celebracion": "Domingo de la 20ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Gustad y ved qué bueno es el Señor.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Bendigo al Señor en todo momento,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Bendigo al Señor en todo momento,"
     },
     {
-      "line": "su alabanza está siempre en mi boca;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su alabanza está siempre en mi boca;"
     },
     {
       "line": "mi alma se gloría en el Señor:",
@@ -68,20 +35,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Todos sus santos, temed al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Todos sus santos, temed al Señor,"
     },
     {
-      "line": "porque nada les falta a los que le temen;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque nada les falta a los que le temen;"
     },
     {
-      "line": "los ricos empobrecen y pasan hambre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los ricos empobrecen y pasan hambre,"
     },
     {
       "line": "los que buscan al Señor no carecen de nada. R.",
@@ -108,8 +75,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Guarda tu lengua del mal,",
@@ -120,12 +87,45 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "apártate del mal, obra el bien,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "apártate del mal, obra el bien,"
     },
     {
-      "line": "busca la paz y corre tras ella. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "busca la paz y corre tras ella. R."
     }
-  ]
+  ],
+  "ciclo": "Ciclo B",
+  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 33, 2-3. 10-1 1. 12-13. 14-15 (R.: 9a)",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Gustad y ved qué bueno es el Señor.",
+  "dia": "Domingo",
+  "estrofas": [
+    [
+      "Bendigo al Señor en todo momento,",
+      "su alabanza está siempre en mi boca;",
+      "mi alma se gloría en el Señor:",
+      "que los humildes lo escuchen y se alegren. R."
+    ],
+    [
+      "Todos sus santos, temed al Señor,",
+      "porque nada les falta a los que le temen;",
+      "los ricos empobrecen y pasan hambre,",
+      "los que buscan al Señor no carecen de nada. R."
+    ],
+    [
+      "Venid, hijos, escuchadme:",
+      "os instruiré en el temor del Señor;",
+      "¿hay alguien que ame la vida",
+      "y desee días de prosperidad? R."
+    ],
+    [
+      "Guarda tu lengua del mal,",
+      "tus labios de la falsedad;",
+      "apártate del mal, obra el bien,",
+      "busca la paz y corre tras ella. R."
+    ]
+  ],
+  "respuestaOpcional": ""
 }

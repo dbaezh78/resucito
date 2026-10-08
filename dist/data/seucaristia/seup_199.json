@@ -1,15 +1,6 @@
 {
-  "id": "seup_199",
-  "title": "Lunes de la 34ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 34ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 6)",
-  "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 6)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
+  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
   "orden": 5341,
-  "respuesta": "R. Éste es el grupo que viene a tu presencia, Señor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Del Señor es la tierra y cuanto la llena,",
@@ -31,12 +22,21 @@
       "que viene a tu presencia, Dios de Jacob. R."
     ]
   ],
-  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "title": "Lunes de la 34ª semana de Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 6)",
+  "tiempo": "Tiempo Ordinario",
   "hasAudio": false,
+  "id": "seup_199",
+  "respuesta": "R. Éste es el grupo que viene a tu presencia, Señor.",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "dia": "Lunes",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 6)",
   "searchPool": "lunes de la 34 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 23 1 2 3 4ab 5 6 r cf 6 semana 34 semana xxxiv lunes 34 xxxiv r este es el grupo que viene a tu presencia senor del senor es la tierra y cuanto la llena el orbe y todos sus habitantes el la fundo sobre los mares el la afianzo sobre los rios r quien puede subir al monte del senor quien puede estar en el recinto sacro el hombre de manos inocentes y puro corazon que no confia en los idolos r ese recibira la bendicion del senor le hara justicia el dios de salvacion este es el grupo que busca al senor que viene a tu presencia dios de jacob r",
+  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Lunes de la 34ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Éste es el grupo que viene a tu presencia, Señor.",
@@ -59,8 +59,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "él la afianzó sobre los ríos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "él la afianzó sobre los ríos. R."
     },
     {
       "line": "",
@@ -79,12 +79,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y puro corazón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y puro corazón,"
     },
     {
-      "line": "que no confía en los ídolos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que no confía en los ídolos. R."
     },
     {
       "line": "",
@@ -95,16 +95,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "le hará justicia el Dios de salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "le hará justicia el Dios de salvación."
     },
     {
       "line": "Éste es el grupo que busca al Señor,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que viene a tu presencia, Dios de Jacob. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que viene a tu presencia, Dios de Jacob. R."
     }
   ]
 }

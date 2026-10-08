@@ -1,15 +1,17 @@
 {
-  "id": "seup_093",
-  "title": "Miércoles de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 70, 1-2. 3-4a. 5-6ab. 15ab y 17 (R.: cf. 15)",
-  "salmo": "Salmo responsorial: Salmo 70, 1-2. 3-4a. 5-6ab. 15ab y 17 (R.: cf. 15)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5163,
-  "respuesta": "R. Mi boca contará tu salvación, Señor.",
+  "sourceBook": "eucaristia",
   "respuestaOpcional": "",
+  "textoCompleto": "A ti, Señor, me acojo:\nno quede yo derrotado para siempre;\ntú que eres justo, líbrame y ponme a salvo,\ninclina a mí tu oído, y sálvame. R.\n\nSé tú mi roca de refugio,\nel alcázar donde me salve,\nporque mi peña y mi alcázar eres tú.\nDios mío, líbrame de la mano perversa. R.\n\nPorque tú, Dios mío, fuiste mi esperanza\ny mi confianza, Señor, desde mi juventud.\nEn el vientre materno ya me apoyaba en ti,\nen el seno tú me sostenías. R.\n\nMi boca contará tu auxilio,\ny todo el día tu salvación.\nDios mío, me instruiste desde mi juventud,\ny hasta hoy relato tus maravillas. R.",
+  "celebracion": "Miércoles de la 16ª semana de Tiempo Ordinario",
+  "respuesta": "R. Mi boca contará tu salvación, Señor.",
+  "id": "seup_093",
+  "orden": 5163,
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "miercoles de la 16 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 70 1 2 3 4a 5 6ab 15ab y 17 r cf 15 semana 16 semana xvi miercoles 16 xvi r mi boca contara tu salvacion senor a ti senor me acojo no quede yo derrotado para siempre tu que eres justo librame y ponme a salvo inclina a mi tu oido y salvame r se tu mi roca de refugio el alcazar donde me salve porque mi pena y mi alcazar eres tu dios mio librame de la mano perversa r porque tu dios mio fuiste mi esperanza y mi confianza senor desde mi juventud en el vientre materno ya me apoyaba en ti en el seno tu me sostenias r mi boca contara tu auxilio y todo el dia tu salvacion dios mio me instruiste desde mi juventud y hasta hoy relato tus maravillas r",
+  "title": "Miércoles de la 16ª semana de Tiempo Ordinario",
+  "dia": "Miércoles",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "A ti, Señor, me acojo:",
@@ -36,12 +38,9 @@
       "y hasta hoy relato tus maravillas. R."
     ]
   ],
-  "textoCompleto": "A ti, Señor, me acojo:\nno quede yo derrotado para siempre;\ntú que eres justo, líbrame y ponme a salvo,\ninclina a mí tu oído, y sálvame. R.\n\nSé tú mi roca de refugio,\nel alcázar donde me salve,\nporque mi peña y mi alcázar eres tú.\nDios mío, líbrame de la mano perversa. R.\n\nPorque tú, Dios mío, fuiste mi esperanza\ny mi confianza, Señor, desde mi juventud.\nEn el vientre materno ya me apoyaba en ti,\nen el seno tú me sostenías. R.\n\nMi boca contará tu auxilio,\ny todo el día tu salvación.\nDios mío, me instruiste desde mi juventud,\ny hasta hoy relato tus maravillas. R.",
-  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 70, 1-2. 3-4a. 5-6ab. 15ab y 17 (R.: cf. 15)",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "miercoles de la 16 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 70 1 2 3 4a 5 6ab 15ab y 17 r cf 15 semana 16 semana xvi miercoles 16 xvi r mi boca contara tu salvacion senor a ti senor me acojo no quede yo derrotado para siempre tu que eres justo librame y ponme a salvo inclina a mi tu oido y salvame r se tu mi roca de refugio el alcazar donde me salve porque mi pena y mi alcazar eres tu dios mio librame de la mano perversa r porque tu dios mio fuiste mi esperanza y mi confianza senor desde mi juventud en el vientre materno ya me apoyaba en ti en el seno tu me sostenias r mi boca contara tu auxilio y todo el dia tu salvacion dios mio me instruiste desde mi juventud y hasta hoy relato tus maravillas r",
   "lizq": [
     {
       "line": "R. Mi boca contará tu salvación, Señor.",
@@ -60,8 +59,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tú que eres justo, líbrame y ponme a salvo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tú que eres justo, líbrame y ponme a salvo,"
     },
     {
       "line": "inclina a mí tu oído, y sálvame. R.",
@@ -84,8 +83,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Dios mío, líbrame de la mano perversa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Dios mío, líbrame de la mano perversa. R."
     },
     {
       "line": "",
@@ -96,12 +95,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y mi confianza, Señor, desde mi juventud.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y mi confianza, Señor, desde mi juventud."
     },
     {
-      "line": "En el vientre materno ya me apoyaba en ti,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "En el vientre materno ya me apoyaba en ti,"
     },
     {
       "line": "en el seno tú me sostenías. R.",
@@ -120,12 +119,13 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Dios mío, me instruiste desde mi juventud,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dios mío, me instruiste desde mi juventud,"
     },
     {
       "line": "y hasta hoy relato tus maravillas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 70, 1-2. 3-4a. 5-6ab. 15ab y 17 (R.: cf. 15)"
 }

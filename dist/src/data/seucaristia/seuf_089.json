@@ -1,22 +1,117 @@
 {
-  "id": "seuf_089",
-  "title": "Miércoles de la segunda semana de Pascua",
-  "celebracion": "Miércoles de la segunda semana de Pascua",
-  "subtitle": "Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 7a)",
   "salmo": "Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 7a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Miércoles",
-  "orden": 423,
-  "respuesta": "R. Si el afligido invoca al Señor, él lo escucha.",
+  "celebracion": "Miércoles de la segunda semana de Pascua",
   "respuestaOpcional": "R. Aleluya.",
+  "ciclo": "Ciclo A, B y C",
+  "hasAudio": false,
+  "orden": 423,
+  "tiempo": "Pascua",
+  "lizq": [
+    {
+      "line": "R. Si el afligido invoca al Señor,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "él lo escucha."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Bendigo al Señor en todo momento,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "su alabanza está siempre en mi boca;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi alma se gloría en el Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que los humildes lo escuchen y se alegren. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Proclamad conmigo la grandeza del Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ensalcemos juntos su nombre."
+    },
+    {
+      "line": "Yo consulté al Señor, y me respondió,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me libró de todas mis ansias. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Contempladlo, y quedaréis radiantes,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "vuestro rostro no se avergonzará."
+    },
+    {
+      "line": "Si el afligido invoca al Señor, él lo escucha",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y lo salva de sus angustias. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El ángel del Señor acampa"
+    },
+    {
+      "line": "en torno a sus fieles y los protege.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Gustad y ved qué bueno es el Señor,"
+    },
+    {
+      "line": "dichoso el que se acoge a él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "stage": "Liturgia",
+  "title": "Miércoles de la segunda semana de Pascua",
+  "subtitle": "Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 7a)",
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.",
   "estrofas": [
     [
       "Bendigo al Señor en todo momento,",
@@ -43,112 +138,17 @@
       "dichoso el que se acoge a él. R."
     ]
   ],
-  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "id": "seuf_089",
   "searchPool": "miercoles de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua miercoles salmo 33 2 3 4 5 6 7 8 9 r 7a semana 2 semana ii miercoles feria r si el afligido invoca al senor el lo escucha r aleluya bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r",
-  "lizq": [
-    {
-      "line": "R. Si el afligido invoca al Señor,",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "él lo escucha.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Bendigo al Señor en todo momento,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "su alabanza está siempre en mi boca;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "mi alma se gloría en el Señor:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que los humildes lo escuchen y se alegren. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Proclamad conmigo la grandeza del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ensalcemos juntos su nombre.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Yo consulté al Señor, y me respondió,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me libró de todas mis ansias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Contempladlo, y quedaréis radiantes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "vuestro rostro no se avergonzará.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Si el afligido invoca al Señor, él lo escucha",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y lo salva de sus angustias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El ángel del Señor acampa",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "en torno a sus fieles y los protege.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Gustad y ved qué bueno es el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "dichoso el que se acoge a él. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
+  "dia": "Miércoles",
+  "respuesta": "R. Si el afligido invoca al Señor, él lo escucha.",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
   ]
 }

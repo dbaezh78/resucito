@@ -1,22 +1,14 @@
 {
-  "id": "seuf_105",
-  "title": "Lunes de la quinta semana de Pascua",
+  "tiempo": "Pascua",
+  "hasAudio": false,
   "celebracion": "Lunes de la quinta semana de Pascua",
   "subtitle": "Salmo 113 B, 1-2. 3-4. 15-16 (R.: 1)",
-  "salmo": "Salmo 113 B, 1-2. 3-4. 15-16 (R.: 1)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Lunes",
-  "orden": 451,
-  "respuesta": "R. No a nosotros, Señor, no a nosotros, sino a tu nombre da la gloria.",
   "respuestaOpcional": "R. Aleluya.",
+  "id": "seuf_105",
+  "respuesta": "R. No a nosotros, Señor, no a nosotros, sino a tu nombre da la gloria.",
+  "dia": "Lunes",
+  "searchPool": "lunes de la quinta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua lunes salmo 113 b 1 2 3 4 15 16 r 1 semana 5 semana v lunes feria r no a nosotros senor no a nosotros sino a tu nombre da la gloria r aleluya no a nosotros senor no a nosotros sino a tu nombre da la gloria por tu bondad por tu lealtad por que han de decir las naciones donde esta su dios r nuestro dios esta en el cielo lo que quiere lo hace sus idolos en cambio son plata y oro hechura de manos humanas r benditos seais del senor que hizo el cielo y la tierra el cielo pertenece al senor la tierra se la ha dado a los hombres r",
+  "title": "Lunes de la quinta semana de Pascua",
   "estrofas": [
     [
       "No a nosotros, Señor, no a nosotros,",
@@ -38,12 +30,6 @@
       "la tierra se la ha dado a los hombres. R."
     ]
   ],
-  "textoCompleto": "No a nosotros, Señor, no a nosotros,\nsino a tu nombre da la gloria,\npor tu bondad, por tu lealtad.\n¿Por qué han de decir las naciones:\n«Dónde está su Dios»? R.\n\nNuestro Dios está en el cielo,\nlo que quiere lo hace.\nSus ídolos, en cambio, son plata y oro,\nhechura de manos humanas. R.\n\nBenditos seáis del Señor,\nque hizo el cielo y la tierra.\nEl cielo pertenece al Señor,\nla tierra se la ha dado a los hombres. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la quinta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua lunes salmo 113 b 1 2 3 4 15 16 r 1 semana 5 semana v lunes feria r no a nosotros senor no a nosotros sino a tu nombre da la gloria r aleluya no a nosotros senor no a nosotros sino a tu nombre da la gloria por tu bondad por tu lealtad por que han de decir las naciones donde esta su dios r nuestro dios esta en el cielo lo que quiere lo hace sus idolos en cambio son plata y oro hechura de manos humanas r benditos seais del senor que hizo el cielo y la tierra el cielo pertenece al senor la tierra se la ha dado a los hombres r",
   "lizq": [
     {
       "line": "R. No a nosotros, Señor, no a nosotros,",
@@ -58,12 +44,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
       "line": "",
@@ -78,24 +64,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "por tu bondad, por tu lealtad.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por tu bondad, por tu lealtad."
     },
     {
       "line": "¿Por qué han de decir las naciones:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "«Dónde está su Dios»? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "«Dónde está su Dios»? R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Nuestro Dios está en el cielo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Nuestro Dios está en el cielo,"
     },
     {
       "line": "lo que quiere lo hace.",
@@ -126,8 +112,22 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "la tierra se la ha dado a los hombres. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "la tierra se la ha dado a los hombres. R."
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "textoCompleto": "No a nosotros, Señor, no a nosotros,\nsino a tu nombre da la gloria,\npor tu bondad, por tu lealtad.\n¿Por qué han de decir las naciones:\n«Dónde está su Dios»? R.\n\nNuestro Dios está en el cielo,\nlo que quiere lo hace.\nSus ídolos, en cambio, son plata y oro,\nhechura de manos humanas. R.\n\nBenditos seáis del Señor,\nque hizo el cielo y la tierra.\nEl cielo pertenece al Señor,\nla tierra se la ha dado a los hombres. R.",
+  "orden": 451,
+  "sourceBook": "eucaristia",
+  "ciclo": "Ciclo A, B y C",
+  "salmo": "Salmo 113 B, 1-2. 3-4. 15-16 (R.: 1)"
 }

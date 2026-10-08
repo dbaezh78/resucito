@@ -1,15 +1,10 @@
 {
-  "id": "seuc_69",
-  "title": "Domingo de la 23ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 23ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 89, 3-4. 5-6. 12-13. 14 y 17 (R.: 1)",
-  "salmo": "Salmo responsorial: Salmo 89, 3-4. 5-6. 12-13. 14 y 17 (R.: 1)",
-  "ciclo": "Ciclo C",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 523,
-  "respuesta": "R. Señor, tú has sido nuestro refugio de generación en generación.",
-  "respuestaOpcional": "",
+  "celebracion": "Domingo de la 23ª semana de Tiempo Ordinario",
+  "searchPool": "domingo de la 23 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 89 3 4 5 6 12 13 14 y 17 r 1 r senor tu has sido nuestro refugio de generacion en generacion tu reduces el hombre a polvo diciendo retornad hijos de adan mil anos en tu presencia son un ayer que paso una vela nocturna r los siembras ano por ano como hierba que se renueva que florece y se renueva por la manana y por la tarde la siegan y se seca r ensenanos a calcular nuestros anos para que adquiramos un corazon sensato vuelvete senor hasta cuando ten compasion de tus siervos r por la manana sacianos de tu misericordia y toda nuestra vida sera alegria y jubilo baje a nosotros la bondad del senor y haga prosperas las obras de nuestras manos r",
+  "subtitle": "Salmo responsorial: Salmo 89, 3-4. 5-6. 12-13. 14 y 17 (R.: 1)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Tú reduces el hombre a polvo,",
@@ -38,11 +33,9 @@
     ]
   ],
   "textoCompleto": "Tú reduces el hombre a polvo,\ndiciendo: «Retornad, hijos de Adán».\nMil años en tu presencia\nson un ayer, que pasó;\nuna vela nocturna. R.\n\nLos siembras año por año,\ncomo hierba que se renueva:\nque florece y se renueva por la mañana,\ny por la tarde la siegan y se seca. R.\n\nEnséñanos a calcular nuestros años,\npara que adquiramos un corazón sensato.\nVuélvete, Señor, ¿hasta cuándo?\nTen compasión de tus siervos. R.\n\nPor la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nBaje a nosotros la bondad del Señor\ny haga prósperas las obras de nuestras manos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 23 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 89 3 4 5 6 12 13 14 y 17 r 1 r senor tu has sido nuestro refugio de generacion en generacion tu reduces el hombre a polvo diciendo retornad hijos de adan mil anos en tu presencia son un ayer que paso una vela nocturna r los siembras ano por ano como hierba que se renueva que florece y se renueva por la manana y por la tarde la siegan y se seca r ensenanos a calcular nuestros anos para que adquiramos un corazon sensato vuelvete senor hasta cuando ten compasion de tus siervos r por la manana sacianos de tu misericordia y toda nuestra vida sera alegria y jubilo baje a nosotros la bondad del senor y haga prosperas las obras de nuestras manos r",
+  "salmo": "Salmo responsorial: Salmo 89, 3-4. 5-6. 12-13. 14 y 17 (R.: 1)",
+  "orden": 523,
+  "respuesta": "R. Señor, tú has sido nuestro refugio de generación en generación.",
   "lizq": [
     {
       "line": "R. Señor, tú has sido nuestro refugio",
@@ -65,16 +58,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Mil años en tu presencia",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Mil años en tu presencia"
     },
     {
-      "line": "son un ayer, que pasó;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "son un ayer, que pasó;"
     },
     {
-      "line": "una vela nocturna. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "una vela nocturna. R."
     },
     {
       "line": "",
@@ -113,16 +106,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Ten compasión de tus siervos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Ten compasión de tus siervos. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Por la mañana sácianos de tu misericordia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Por la mañana sácianos de tu misericordia,"
     },
     {
       "line": "y toda nuestra vida será alegría y júbilo.",
@@ -136,5 +129,12 @@
       "line": "y haga prósperas las obras de nuestras manos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "title": "Domingo de la 23ª semana de Tiempo Ordinario",
+  "dia": "Domingo",
+  "id": "seuc_69",
+  "ciclo": "Ciclo C",
+  "hasAudio": false,
+  "respuestaOpcional": "",
+  "stage": "Liturgia"
 }

@@ -1,15 +1,19 @@
 {
-  "id": "seup_062",
-  "title": "Martes de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 11 y 16 (R.: cf. 3a)",
-  "salmo": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 11 y 16 (R.: cf. 3a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5112,
+  "catCanto": "Salmo Eucaristía",
   "respuesta": "R. Misericordia, Señor: hemos pecado.",
+  "salmo": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 11 y 16 (R.: cf. 3a)",
+  "tiempo": "Tiempo Ordinario",
+  "celebracion": "Martes de la 11ª semana de Tiempo Ordinario",
+  "searchPool": "martes de la 11 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 50 3 4 5 6a 11 y 16 r cf 3a semana 11 semana xi martes 11 xi r misericordia senor hemos pecado misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r aparta de mi pecado tu vista borra en mi toda culpa librame de la sangre oh dios dios salvador mio y cantara mi lengua tu justicia r",
   "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "id": "seup_062",
+  "sourceBook": "eucaristia",
+  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 5-6a. 11 y 16 (R.: cf. 3a)",
+  "ciclo": "Año Par",
+  "dia": "Martes",
+  "hasAudio": false,
+  "orden": 5112,
   "estrofas": [
     [
       "Misericordia, Dios mío, por tu bondad,",
@@ -32,27 +36,23 @@
     ]
   ],
   "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nAparta de mi pecado tu vista,\nborra en mí toda culpa.\nLíbrame de la sangre, oh Dios,\nDios, Salvador mío,\ny cantará mi lengua tu justicia. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 11 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 50 3 4 5 6a 11 y 16 r cf 3a semana 11 semana xi martes 11 xi r misericordia senor hemos pecado misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r aparta de mi pecado tu vista borra en mi toda culpa librame de la sangre oh dios dios salvador mio y cantara mi lengua tu justicia r",
+  "title": "Martes de la 11ª semana de Tiempo Ordinario",
   "lizq": [
     {
-      "line": "R. Misericordia, Señor: hemos pecado.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Misericordia, Señor: hemos pecado."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Misericordia, Dios mío, por tu bondad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Misericordia, Dios mío, por tu bondad,"
     },
     {
-      "line": "por tu inmensa compasión borra mi culpa;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por tu inmensa compasión borra mi culpa;"
     },
     {
       "line": "lava del todo mi delito,",
@@ -63,24 +63,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Pues yo reconozco mi culpa,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Pues yo reconozco mi culpa,"
     },
     {
       "line": "tengo siempre presente mi pecado:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "contra ti, contra ti solo pequé,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "contra ti, contra ti solo pequé,"
     },
     {
-      "line": "cometí la maldad que aborreces. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "cometí la maldad que aborreces. R."
     },
     {
       "line": "",

@@ -1,41 +1,4 @@
 {
-  "id": "seup_095",
-  "title": "Viernes de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Jeremías 31, 10. 11 -12ab. 13 (R.: cf. 10d)",
-  "salmo": "Interleccional: Jeremías 31, 10. 11 -12ab. 13 (R.: cf. 10d)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5165,
-  "respuesta": "R. El Señor nos guardará como un pastor a su rebaño.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Escuchad, pueblos, la palabra del Señor,",
-      "anunciadla en las islas remotas:",
-      "«El que dispersó a Israel lo reunirá,",
-      "lo guardará como un pastor a su rebaño». R."
-    ],
-    [
-      "«Porque el Señor redimió a Jacob,",
-      "lo rescató de una mano más fuerte».",
-      "Vendrán con aclamaciones a la altura de Sión,",
-      "afluirán hacia los bienes del Señor. R."
-    ],
-    [
-      "Entonces se alegrará la doncella en la danza,",
-      "gozarán los jóvenes y los viejos;",
-      "convertiré su tristeza en gozo,",
-      "los alegraré y aliviaré sus penas. R."
-    ]
-  ],
-  "textoCompleto": "Escuchad, pueblos, la palabra del Señor,\nanunciadla en las islas remotas:\n«El que dispersó a Israel lo reunirá,\nlo guardará como un pastor a su rebaño». R.\n\n«Porque el Señor redimió a Jacob,\nlo rescató de una mano más fuerte».\nVendrán con aclamaciones a la altura de Sión,\nafluirán hacia los bienes del Señor. R.\n\nEntonces se alegrará la doncella en la danza,\ngozarán los jóvenes y los viejos;\nconvertiré su tristeza en gozo,\nlos alegraré y aliviaré sus penas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 16 semana de tiempo ordinario ano par tiempo ordinario viernes interleccional jeremias 31 10 11 12ab 13 r cf 10d semana 16 semana xvi viernes 16 xvi r el senor nos guardara como un pastor a su rebano escuchad pueblos la palabra del senor anunciadla en las islas remotas el que disperso a israel lo reunira lo guardara como un pastor a su rebano r porque el senor redimio a jacob lo rescato de una mano mas fuerte vendran con aclamaciones a la altura de sion afluiran hacia los bienes del senor r entonces se alegrara la doncella en la danza gozaran los jovenes y los viejos convertire su tristeza en gozo los alegrare y aliviare sus penas r",
   "lizq": [
     {
       "line": "R. El Señor nos guardará como un pastor a su rebaño.",
@@ -58,8 +21,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "lo guardará como un pastor a su rebaño». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "lo guardará como un pastor a su rebaño». R."
     },
     {
       "line": "",
@@ -70,12 +33,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "lo rescató de una mano más fuerte».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lo rescató de una mano más fuerte»."
     },
     {
-      "line": "Vendrán con aclamaciones a la altura de Sión,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Vendrán con aclamaciones a la altura de Sión,"
     },
     {
       "line": "afluirán hacia los bienes del Señor. R.",
@@ -86,8 +49,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Entonces se alegrará la doncella en la danza,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Entonces se alegrará la doncella en la danza,"
     },
     {
       "line": "gozarán los jóvenes y los viejos;",
@@ -101,5 +64,42 @@
       "line": "los alegraré y aliviaré sus penas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "id": "seup_095",
+  "salmo": "Interleccional: Jeremías 31, 10. 11 -12ab. 13 (R.: cf. 10d)",
+  "respuesta": "R. El Señor nos guardará como un pastor a su rebaño.",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "Escuchad, pueblos, la palabra del Señor,",
+      "anunciadla en las islas remotas:",
+      "«El que dispersó a Israel lo reunirá,",
+      "lo guardará como un pastor a su rebaño». R."
+    ],
+    [
+      "«Porque el Señor redimió a Jacob,",
+      "lo rescató de una mano más fuerte».",
+      "Vendrán con aclamaciones a la altura de Sión,",
+      "afluirán hacia los bienes del Señor. R."
+    ],
+    [
+      "Entonces se alegrará la doncella en la danza,",
+      "gozarán los jóvenes y los viejos;",
+      "convertiré su tristeza en gozo,",
+      "los alegraré y aliviaré sus penas. R."
+    ]
+  ],
+  "celebracion": "Viernes de la 16ª semana de Tiempo Ordinario",
+  "textoCompleto": "Escuchad, pueblos, la palabra del Señor,\nanunciadla en las islas remotas:\n«El que dispersó a Israel lo reunirá,\nlo guardará como un pastor a su rebaño». R.\n\n«Porque el Señor redimió a Jacob,\nlo rescató de una mano más fuerte».\nVendrán con aclamaciones a la altura de Sión,\nafluirán hacia los bienes del Señor. R.\n\nEntonces se alegrará la doncella en la danza,\ngozarán los jóvenes y los viejos;\nconvertiré su tristeza en gozo,\nlos alegraré y aliviaré sus penas. R.",
+  "dia": "Viernes",
+  "searchPool": "viernes de la 16 semana de tiempo ordinario ano par tiempo ordinario viernes interleccional jeremias 31 10 11 12ab 13 r cf 10d semana 16 semana xvi viernes 16 xvi r el senor nos guardara como un pastor a su rebano escuchad pueblos la palabra del senor anunciadla en las islas remotas el que disperso a israel lo reunira lo guardara como un pastor a su rebano r porque el senor redimio a jacob lo rescato de una mano mas fuerte vendran con aclamaciones a la altura de sion afluiran hacia los bienes del senor r entonces se alegrara la doncella en la danza gozaran los jovenes y los viejos convertire su tristeza en gozo los alegrare y aliviare sus penas r",
+  "ciclo": "Año Par",
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "title": "Viernes de la 16ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "orden": 5165,
+  "subtitle": "Interleccional: Jeremías 31, 10. 11 -12ab. 13 (R.: cf. 10d)"
 }

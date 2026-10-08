@@ -1,47 +1,5 @@
 {
-  "id": "seup_071",
   "title": "Viernes de la 12ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 12ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 136, 1-2. 3. 4-5. 6 (R.: 6a)",
-  "salmo": "Salmo responsorial: Salmo 136, 1-2. 3. 4-5. 6 (R.: 6a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5125,
-  "respuesta": "R. Que se me pegue la lengua al paladar si no me acuerdo de ti.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Junto a los canales de Babilonia",
-      "nos sentamos a llorar con nostalgia de Sión;",
-      "en los sauces de sus orillas",
-      "colgábamos nuestras cítaras. R."
-    ],
-    [
-      "Allí los que nos deportaron",
-      "nos invitaban a cantar;",
-      "nuestros opresores, a divertirlos:",
-      "«Cantadnos un cantar de Sión». R."
-    ],
-    [
-      "¡Cómo cantar un cántico del Señor",
-      "en tierra extranjera!",
-      "Si me olvido de ti, Jerusalén,",
-      "que se me paralice la mano derecha. R."
-    ],
-    [
-      "Que se me pegue la lengua al paladar",
-      "si no me acuerdo de ti,",
-      "si no pongo a Jerusalén",
-      "en la cumbre de mis alegrías. R."
-    ]
-  ],
-  "textoCompleto": "Junto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.\n\nAllí los que nos deportaron\nnos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.\n\n¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.\n\nQue se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 12 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 136 1 2 3 4 5 6 r 6a semana 12 semana xii viernes 12 xii r que se me pegue la lengua al paladar si no me acuerdo de ti junto a los canales de babilonia nos sentamos a llorar con nostalgia de sion en los sauces de sus orillas colgabamos nuestras citaras r alli los que nos deportaron nos invitaban a cantar nuestros opresores a divertirlos cantadnos un cantar de sion r como cantar un cantico del senor en tierra extranjera si me olvido de ti jerusalen que se me paralice la mano derecha r que se me pegue la lengua al paladar si no me acuerdo de ti si no pongo a jerusalen en la cumbre de mis alegrias r",
   "lizq": [
     {
       "line": "R. Que se me pegue la lengua al paladar",
@@ -68,20 +26,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "colgábamos nuestras cítaras. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "colgábamos nuestras cítaras. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Allí los que nos deportaron",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "nos invitaban a cantar;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "nos invitaban a cantar;"
     },
     {
       "line": "nuestros opresores, a divertirlos:",
@@ -100,20 +58,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "en tierra extranjera!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en tierra extranjera!"
     },
     {
-      "line": "Si me olvido de ti, Jerusalén,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Si me olvido de ti, Jerusalén,"
     },
     {
       "line": "que se me paralice la mano derecha. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Que se me pegue la lengua al paladar",
@@ -128,8 +86,50 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en la cumbre de mis alegrías. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en la cumbre de mis alegrías. R."
     }
-  ]
+  ],
+  "orden": 5125,
+  "estrofas": [
+    [
+      "Junto a los canales de Babilonia",
+      "nos sentamos a llorar con nostalgia de Sión;",
+      "en los sauces de sus orillas",
+      "colgábamos nuestras cítaras. R."
+    ],
+    [
+      "Allí los que nos deportaron",
+      "nos invitaban a cantar;",
+      "nuestros opresores, a divertirlos:",
+      "«Cantadnos un cantar de Sión». R."
+    ],
+    [
+      "¡Cómo cantar un cántico del Señor",
+      "en tierra extranjera!",
+      "Si me olvido de ti, Jerusalén,",
+      "que se me paralice la mano derecha. R."
+    ],
+    [
+      "Que se me pegue la lengua al paladar",
+      "si no me acuerdo de ti,",
+      "si no pongo a Jerusalén",
+      "en la cumbre de mis alegrías. R."
+    ]
+  ],
+  "id": "seup_071",
+  "subtitle": "Salmo responsorial: Salmo 136, 1-2. 3. 4-5. 6 (R.: 6a)",
+  "ciclo": "Año Par",
+  "hasAudio": false,
+  "textoCompleto": "Junto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.\n\nAllí los que nos deportaron\nnos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.\n\n¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.\n\nQue se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R.",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "celebracion": "Viernes de la 12ª semana de Tiempo Ordinario",
+  "searchPool": "viernes de la 12 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 136 1 2 3 4 5 6 r 6a semana 12 semana xii viernes 12 xii r que se me pegue la lengua al paladar si no me acuerdo de ti junto a los canales de babilonia nos sentamos a llorar con nostalgia de sion en los sauces de sus orillas colgabamos nuestras citaras r alli los que nos deportaron nos invitaban a cantar nuestros opresores a divertirlos cantadnos un cantar de sion r como cantar un cantico del senor en tierra extranjera si me olvido de ti jerusalen que se me paralice la mano derecha r que se me pegue la lengua al paladar si no me acuerdo de ti si no pongo a jerusalen en la cumbre de mis alegrias r",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Viernes",
+  "respuestaOpcional": "",
+  "respuesta": "R. Que se me pegue la lengua al paladar si no me acuerdo de ti.",
+  "salmo": "Salmo responsorial: Salmo 136, 1-2. 3. 4-5. 6 (R.: 6a)"
 }

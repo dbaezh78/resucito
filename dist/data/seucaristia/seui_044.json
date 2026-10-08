@@ -1,44 +1,10 @@
 {
-  "id": "seui_044",
-  "title": "Martes de la 8ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 8ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 49, 5-6. 7-8. 14 y 23 (R.: 23b)",
   "salmo": "Salmo responsorial: Salmo 49, 5-6. 7-8. 14 y 23 (R.: 23b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5082,
-  "respuesta": "R. Al que sigue buen camino le haré ver la salvación de Dios.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "«Congregadme a mis fieles,",
-      "que sellaron mi pacto con un sacrificio».",
-      "Proclame el cielo su justicia;",
-      "Dios en persona va a juzgar. R."
-    ],
-    [
-      "«Escucha, pueblo mío, me voy a hablarte;",
-      "Israel, voy a dar testimonio contra ti;",
-      "—yo, Dios, tu Dios—.",
-      "No te reprocho tus sacrificios,",
-      "pues siempre están tus holocaustos ante mí». R."
-    ],
-    [
-      "«Ofrece a Dios un sacrificio de alabanza,",
-      "cumple tus votos al Altísimo.",
-      "El que me ofrece acción de gracias,",
-      "ése me honra;",
-      "al que sigue buen camino",
-      "le haré ver la salvación de Dios». R."
-    ]
-  ],
-  "textoCompleto": "«Congregadme a mis fieles,\nque sellaron mi pacto con un sacrificio».\nProclame el cielo su justicia;\nDios en persona va a juzgar. R.\n\n«Escucha, pueblo mío, me voy a hablarte;\nIsrael, voy a dar testimonio contra ti;\n—yo, Dios, tu Dios—.\nNo te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí». R.\n\n«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo.\nEl que me ofrece acción de gracias,\nése me honra;\nal que sigue buen camino\nle haré ver la salvación de Dios». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "martes de la 8 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 49 5 6 7 8 14 y 23 r 23b semana 8 semana viii martes 8 viii r al que sigue buen camino le hare ver la salvacion de dios congregadme a mis fieles que sellaron mi pacto con un sacrificio proclame el cielo su justicia dios en persona va a juzgar r escucha pueblo mio me voy a hablarte israel voy a dar testimonio contra ti yo dios tu dios no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi r ofrece a dios un sacrificio de alabanza cumple tus votos al altisimo el que me ofrece accion de gracias ese me honra al que sigue buen camino le hare ver la salvacion de dios r",
+  "ciclo": "Año Impar",
+  "subtitle": "Salmo responsorial: Salmo 49, 5-6. 7-8. 14 y 23 (R.: 23b)",
+  "id": "seui_044",
+  "orden": 5082,
   "lizq": [
     {
       "line": "R. Al que sigue buen camino",
@@ -65,48 +31,48 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Dios en persona va a juzgar. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Dios en persona va a juzgar. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "«Escucha, pueblo mío, me voy a hablarte;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Escucha, pueblo mío, me voy a hablarte;"
     },
     {
-      "line": "Israel, voy a dar testimonio contra ti;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Israel, voy a dar testimonio contra ti;"
     },
     {
-      "line": "—yo, Dios, tu Dios—.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "—yo, Dios, tu Dios—."
     },
     {
-      "line": "No te reprocho tus sacrificios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "No te reprocho tus sacrificios,"
     },
     {
       "line": "pues siempre están tus holocaustos ante mí». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "«Ofrece a Dios un sacrificio de alabanza,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "cumple tus votos al Altísimo.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cumple tus votos al Altísimo."
     },
     {
-      "line": "El que me ofrece acción de gracias,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El que me ofrece acción de gracias,"
     },
     {
       "line": "ése me honra;",
@@ -117,8 +83,42 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "le haré ver la salvación de Dios». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "le haré ver la salvación de Dios». R."
     }
+  ],
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "celebracion": "Martes de la 8ª semana de Tiempo Ordinario",
+  "title": "Martes de la 8ª semana de Tiempo Ordinario",
+  "textoCompleto": "«Congregadme a mis fieles,\nque sellaron mi pacto con un sacrificio».\nProclame el cielo su justicia;\nDios en persona va a juzgar. R.\n\n«Escucha, pueblo mío, me voy a hablarte;\nIsrael, voy a dar testimonio contra ti;\n—yo, Dios, tu Dios—.\nNo te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí». R.\n\n«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo.\nEl que me ofrece acción de gracias,\nése me honra;\nal que sigue buen camino\nle haré ver la salvación de Dios». R.",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "respuesta": "R. Al que sigue buen camino le haré ver la salvación de Dios.",
+  "estrofas": [
+    [
+      "«Congregadme a mis fieles,",
+      "que sellaron mi pacto con un sacrificio».",
+      "Proclame el cielo su justicia;",
+      "Dios en persona va a juzgar. R."
+    ],
+    [
+      "«Escucha, pueblo mío, me voy a hablarte;",
+      "Israel, voy a dar testimonio contra ti;",
+      "—yo, Dios, tu Dios—.",
+      "No te reprocho tus sacrificios,",
+      "pues siempre están tus holocaustos ante mí». R."
+    ],
+    [
+      "«Ofrece a Dios un sacrificio de alabanza,",
+      "cumple tus votos al Altísimo.",
+      "El que me ofrece acción de gracias,",
+      "ése me honra;",
+      "al que sigue buen camino",
+      "le haré ver la salvación de Dios». R."
+    ]
   ]
 }

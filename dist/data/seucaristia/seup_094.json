@@ -1,41 +1,5 @@
 {
   "id": "seup_094",
-  "title": "Jueves de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 35, 6-7ab. 8-9. 10-11 (R.: 10a)",
-  "salmo": "Salmo responsorial: Salmo 35, 6-7ab. 8-9. 10-11 (R.: 10a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5164,
-  "respuesta": "R. En ti, Señor, está la fuente viva.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Señor, tu misericordia llega al cielo,",
-      "tu fidelidad hasta las nubes;",
-      "tu justicia hasta las altas cordilleras,",
-      "tus sentencias son como el océano inmenso. R."
-    ],
-    [
-      "¡Qué inapreciable es tu misericordia, oh Dios!,",
-      "los humanos se acogen a la sombra de tus alas;",
-      "se nutren de lo sabroso de tu casa,",
-      "les das a beber del torrente de tus delicias. R."
-    ],
-    [
-      "Porque en ti está la fuente viva,",
-      "y tu luz nos hace ver la luz.",
-      "Prolonga tu misericordia con los que te reconocen,",
-      "tu justicia con los rectos de corazón. R."
-    ]
-  ],
-  "textoCompleto": "Señor, tu misericordia llega al cielo,\ntu fidelidad hasta las nubes;\ntu justicia hasta las altas cordilleras,\ntus sentencias son como el océano inmenso. R.\n\n¡Qué inapreciable es tu misericordia, oh Dios!,\nlos humanos se acogen a la sombra de tus alas;\nse nutren de lo sabroso de tu casa,\nles das a beber del torrente de tus delicias. R.\n\nPorque en ti está la fuente viva,\ny tu luz nos hace ver la luz.\nProlonga tu misericordia con los que te reconocen,\ntu justicia con los rectos de corazón. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 16 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 35 6 7ab 8 9 10 11 r 10a semana 16 semana xvi jueves 16 xvi r en ti senor esta la fuente viva senor tu misericordia llega al cielo tu fidelidad hasta las nubes tu justicia hasta las altas cordilleras tus sentencias son como el oceano inmenso r que inapreciable es tu misericordia oh dios los humanos se acogen a la sombra de tus alas se nutren de lo sabroso de tu casa les das a beber del torrente de tus delicias r porque en ti esta la fuente viva y tu luz nos hace ver la luz prolonga tu misericordia con los que te reconocen tu justicia con los rectos de corazon r",
   "lizq": [
     {
       "line": "R. En ti, Señor, está la fuente viva.",
@@ -54,12 +18,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tu justicia hasta las altas cordilleras,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tu justicia hasta las altas cordilleras,"
     },
     {
-      "line": "tus sentencias son como el océano inmenso. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tus sentencias son como el océano inmenso. R."
     },
     {
       "line": "",
@@ -90,16 +54,52 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y tu luz nos hace ver la luz.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y tu luz nos hace ver la luz."
     },
     {
-      "line": "Prolonga tu misericordia con los que te reconocen,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Prolonga tu misericordia con los que te reconocen,"
     },
     {
-      "line": "tu justicia con los rectos de corazón. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tu justicia con los rectos de corazón. R."
     }
-  ]
+  ],
+  "estrofas": [
+    [
+      "Señor, tu misericordia llega al cielo,",
+      "tu fidelidad hasta las nubes;",
+      "tu justicia hasta las altas cordilleras,",
+      "tus sentencias son como el océano inmenso. R."
+    ],
+    [
+      "¡Qué inapreciable es tu misericordia, oh Dios!,",
+      "los humanos se acogen a la sombra de tus alas;",
+      "se nutren de lo sabroso de tu casa,",
+      "les das a beber del torrente de tus delicias. R."
+    ],
+    [
+      "Porque en ti está la fuente viva,",
+      "y tu luz nos hace ver la luz.",
+      "Prolonga tu misericordia con los que te reconocen,",
+      "tu justicia con los rectos de corazón. R."
+    ]
+  ],
+  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 35, 6-7ab. 8-9. 10-11 (R.: 10a)",
+  "salmo": "Salmo responsorial: Salmo 35, 6-7ab. 8-9. 10-11 (R.: 10a)",
+  "textoCompleto": "Señor, tu misericordia llega al cielo,\ntu fidelidad hasta las nubes;\ntu justicia hasta las altas cordilleras,\ntus sentencias son como el océano inmenso. R.\n\n¡Qué inapreciable es tu misericordia, oh Dios!,\nlos humanos se acogen a la sombra de tus alas;\nse nutren de lo sabroso de tu casa,\nles das a beber del torrente de tus delicias. R.\n\nPorque en ti está la fuente viva,\ny tu luz nos hace ver la luz.\nProlonga tu misericordia con los que te reconocen,\ntu justicia con los rectos de corazón. R.",
+  "respuesta": "R. En ti, Señor, está la fuente viva.",
+  "title": "Jueves de la 16ª semana de Tiempo Ordinario",
+  "orden": 5164,
+  "searchPool": "jueves de la 16 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 35 6 7ab 8 9 10 11 r 10a semana 16 semana xvi jueves 16 xvi r en ti senor esta la fuente viva senor tu misericordia llega al cielo tu fidelidad hasta las nubes tu justicia hasta las altas cordilleras tus sentencias son como el oceano inmenso r que inapreciable es tu misericordia oh dios los humanos se acogen a la sombra de tus alas se nutren de lo sabroso de tu casa les das a beber del torrente de tus delicias r porque en ti esta la fuente viva y tu luz nos hace ver la luz prolonga tu misericordia con los que te reconocen tu justicia con los rectos de corazon r",
+  "celebracion": "Jueves de la 16ª semana de Tiempo Ordinario",
+  "dia": "Jueves",
+  "sourceBook": "eucaristia",
+  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía"
 }

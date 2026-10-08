@@ -1,22 +1,4 @@
 {
-  "id": "seuf_018",
-  "title": "Día 17 de diciembre.",
-  "celebracion": "Día 17 de diciembre.",
-  "subtitle": "Salmo 71, 1-2. 3-4ab. 7-8. 17 (R.: cf. 7)",
-  "salmo": "Salmo 71, 1-2. 3-4ab. 7-8. 17 (R.: cf. 7)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Adviento",
-  "dia": "Feria",
-  "orden": 171,
-  "respuesta": "R. Que en sus días florezca la justicia, y la paz abunde eternamente",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dios mío, confía tu juicio al rey,",
@@ -43,12 +25,11 @@
       "y lo proclamen dichoso todas las razas de la tierra. R."
     ]
   ],
-  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue los montes traigan paz,\ny los collados justicia;\nque él defienda a los humildes del pueblo,\nsocorra a los hijos del pobre. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol;\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "title": "Día 17 de diciembre.",
+  "subtitle": "Salmo 71, 1-2. 3-4ab. 7-8. 17 (R.: cf. 7)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "dia 17 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria salmo 71 1 2 3 4ab 7 8 17 r cf 7 feria r que en sus dias florezca la justicia y la paz abunde eternamente dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que los montes traigan paz y los collados justicia que el defienda a los humildes del pueblo socorra a los hijos del pobre r que en sus dias florezca la justicia y la paz hasta que falte la luna que domine de mar a mar del gran rio al confin de la tierra r que su nombre sea eterno y su fama dure como el sol que el sea la bendicion de todos los pueblos y lo proclamen dichoso todas las razas de la tierra r",
+  "orden": 171,
+  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue los montes traigan paz,\ny los collados justicia;\nque él defienda a los humildes del pueblo,\nsocorra a los hijos del pobre. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol;\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
   "lizq": [
     {
       "line": "R. Que en sus días florezca la justicia,",
@@ -63,8 +44,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dios mío, confía tu juicio al rey,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dios mío, confía tu juicio al rey,"
     },
     {
       "line": "tu justicia al hijo de reyes,",
@@ -75,60 +56,60 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "a tus humildes con rectitud. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "a tus humildes con rectitud. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Que los montes traigan paz,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que los montes traigan paz,"
     },
     {
-      "line": "y los collados justicia;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y los collados justicia;"
     },
     {
-      "line": "que él defienda a los humildes del pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que él defienda a los humildes del pueblo,"
     },
     {
       "line": "socorra a los hijos del pobre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Que en sus días florezca la justicia",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que en sus días florezca la justicia"
     },
     {
       "line": "y la paz hasta que falte la luna;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que domine de mar a mar,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que domine de mar a mar,"
     },
     {
       "line": "del Gran Río al confín de la tierra. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Que su nombre sea eterno,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que su nombre sea eterno,"
     },
     {
-      "line": "y su fama dure como el sol;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y su fama dure como el sol;"
     },
     {
       "line": "que él sea la bendición de todos los pueblos,",
@@ -138,5 +119,24 @@
       "line": "y lo proclamen dichoso todas las razas de la tierra. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Día 17 de diciembre.",
+  "dia": "Feria",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "salmo": "Salmo 71, 1-2. 3-4ab. 7-8. 17 (R.: cf. 7)",
+  "id": "seuf_018",
+  "respuesta": "R. Que en sus días florezca la justicia, y la paz abunde eternamente",
+  "searchPool": "dia 17 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria salmo 71 1 2 3 4ab 7 8 17 r cf 7 feria r que en sus dias florezca la justicia y la paz abunde eternamente dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que los montes traigan paz y los collados justicia que el defienda a los humildes del pueblo socorra a los hijos del pobre r que en sus dias florezca la justicia y la paz hasta que falte la luna que domine de mar a mar del gran rio al confin de la tierra r que su nombre sea eterno y su fama dure como el sol que el sea la bendicion de todos los pueblos y lo proclamen dichoso todas las razas de la tierra r",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "tiempo": "Adviento",
+  "ciclo": "Ciclo A, B y C",
+  "respuestaOpcional": ""
 }

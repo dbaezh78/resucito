@@ -1,15 +1,17 @@
 {
-  "id": "seui_018",
-  "title": "Sábado de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 3ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Lucas 1, 69-70. 71-72. 73-75 (R.: cf. 68)",
-  "salmo": "Interleccional: Lucas 1, 69-70. 71-72. 73-75 (R.: cf. 68)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5036,
-  "respuesta": "R. Bendito sea el Señor, Dios de Israel, porque ha visitado a su pueblo.",
+  "searchPool": "sabado de la 3 semana de tiempo ordinario ano impar tiempo ordinario sabado interleccional lucas 1 69 70 71 72 73 75 r cf 68 semana 3 semana iii sabado 3 iii r bendito sea el senor dios de israel porque ha visitado a su pueblo nos ha suscitado una fuerza de salvacion en la casa de david su siervo segun lo habia predicho desde antiguo por boca de sus santos profetas r es la salvacion que nos libra de nuestros enemigos y de la mano de todos los que nos odian realizando la misericordia que tuvo con nuestros padres recordando su santa alianza r y el juramento que juro a nuestro padre abrahan para concedernos que libres de temor arrancados de la mano de los enemigos le sirvamos con santidad y justicia en su presencia todos nuestros dias r",
+  "subtitle": "Interleccional: Lucas 1, 69-70. 71-72. 73-75 (R.: cf. 68)",
+  "textoCompleto": "Nos ha suscitado una fuerza de salvación\nen la casa de David, su siervo,\nsegún lo había predicho desde antiguo\npor boca de sus santos profetas. R.\n\nEs la salvación que nos libra de nuestros enemigos\ny de la mano de todos los que nos odian;\nrealizando la misericordia\nque tuvo con nuestros padres,\nrecordando su santa alianza. R.\n\nY el juramento que juró\na nuestro padre Abrahán.\nPara concedernos que, libres de temor,\narrancados de la mano de los enemigos,\nle sirvamos con santidad y justicia,\nen su presencia, todos nuestros días. R.",
+  "celebracion": "Sábado de la 3ª semana de Tiempo Ordinario",
   "respuestaOpcional": "",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Bendito sea el Señor, Dios de Israel, porque ha visitado a su pueblo.",
+  "title": "Sábado de la 3ª semana de Tiempo Ordinario",
+  "orden": 5036,
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Nos ha suscitado una fuerza de salvación",
@@ -33,12 +35,7 @@
       "en su presencia, todos nuestros días. R."
     ]
   ],
-  "textoCompleto": "Nos ha suscitado una fuerza de salvación\nen la casa de David, su siervo,\nsegún lo había predicho desde antiguo\npor boca de sus santos profetas. R.\n\nEs la salvación que nos libra de nuestros enemigos\ny de la mano de todos los que nos odian;\nrealizando la misericordia\nque tuvo con nuestros padres,\nrecordando su santa alianza. R.\n\nY el juramento que juró\na nuestro padre Abrahán.\nPara concedernos que, libres de temor,\narrancados de la mano de los enemigos,\nle sirvamos con santidad y justicia,\nen su presencia, todos nuestros días. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 3 semana de tiempo ordinario ano impar tiempo ordinario sabado interleccional lucas 1 69 70 71 72 73 75 r cf 68 semana 3 semana iii sabado 3 iii r bendito sea el senor dios de israel porque ha visitado a su pueblo nos ha suscitado una fuerza de salvacion en la casa de david su siervo segun lo habia predicho desde antiguo por boca de sus santos profetas r es la salvacion que nos libra de nuestros enemigos y de la mano de todos los que nos odian realizando la misericordia que tuvo con nuestros padres recordando su santa alianza r y el juramento que juro a nuestro padre abrahan para concedernos que libres de temor arrancados de la mano de los enemigos le sirvamos con santidad y justicia en su presencia todos nuestros dias r",
+  "dia": "Sábado",
   "lizq": [
     {
       "line": "R. Bendito sea el Señor, Dios de Israel,",
@@ -49,12 +46,12 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Nos ha suscitado una fuerza de salvación",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Nos ha suscitado una fuerza de salvación"
     },
     {
       "line": "en la casa de David, su siervo,",
@@ -65,8 +62,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "por boca de sus santos profetas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "por boca de sus santos profetas. R."
     },
     {
       "line": "",
@@ -81,44 +78,47 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "realizando la misericordia",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "realizando la misericordia"
     },
     {
       "line": "que tuvo con nuestros padres,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "recordando su santa alianza. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "recordando su santa alianza. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Y el juramento que juró",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Y el juramento que juró"
     },
     {
       "line": "a nuestro padre Abrahán.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Para concedernos que, libres de temor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Para concedernos que, libres de temor,"
     },
     {
-      "line": "arrancados de la mano de los enemigos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "arrancados de la mano de los enemigos,"
     },
     {
-      "line": "le sirvamos con santidad y justicia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "le sirvamos con santidad y justicia,"
     },
     {
       "line": "en su presencia, todos nuestros días. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Interleccional: Lucas 1, 69-70. 71-72. 73-75 (R.: cf. 68)",
+  "ciclo": "Año Impar",
+  "id": "seui_018"
 }

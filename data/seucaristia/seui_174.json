@@ -1,15 +1,78 @@
 {
-  "id": "seui_174",
-  "title": "Sábado de la 29ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 29ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 6)",
-  "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 6)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5296,
-  "respuesta": "R. Éste es el grupo que viene a tu presencia, Señor.",
+  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
+  "catCanto": "Salmo Eucaristía",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Éste es el grupo que viene a tu presencia, Señor."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Del Señor es la tierra y cuanto la llena,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el orbe y todos sus habitantes:"
+    },
+    {
+      "line": "él la fundó sobre los mares,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él la afianzó sobre los ríos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¿Quién puede subir al monte del Señor?"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿Quién puede estar en el recinto sacro?"
+    },
+    {
+      "line": "El hombre de manos inocentes",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y puro corazón,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que no confía en los ídolos. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ése recibirá la bendición del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "le hará justicia el Dios de salvación.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Éste es el grupo que busca al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que viene a tu presencia, Dios de Jacob. R."
+    }
+  ],
   "respuestaOpcional": "",
+  "id": "seui_174",
   "estrofas": [
     [
       "Del Señor es la tierra y cuanto la llena,",
@@ -31,80 +94,17 @@
       "que viene a tu presencia, Dios de Jacob. R."
     ]
   ],
-  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
-  "sourceBook": "eucaristia",
+  "respuesta": "R. Éste es el grupo que viene a tu presencia, Señor.",
+  "orden": 5296,
+  "celebracion": "Sábado de la 29ª semana de Tiempo Ordinario",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 6)",
+  "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 6)",
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Año Impar",
   "hasAudio": false,
   "searchPool": "sabado de la 29 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 23 1 2 3 4ab 5 6 r cf 6 semana 29 semana xxix sabado 29 xxix r este es el grupo que viene a tu presencia senor del senor es la tierra y cuanto la llena el orbe y todos sus habitantes el la fundo sobre los mares el la afianzo sobre los rios r quien puede subir al monte del senor quien puede estar en el recinto sacro el hombre de manos inocentes y puro corazon que no confia en los idolos r ese recibira la bendicion del senor le hara justicia el dios de salvacion este es el grupo que busca al senor que viene a tu presencia dios de jacob r",
-  "lizq": [
-    {
-      "line": "R. Éste es el grupo que viene a tu presencia, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Del Señor es la tierra y cuanto la llena,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el orbe y todos sus habitantes:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él la fundó sobre los mares,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él la afianzó sobre los ríos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "¿Quién puede subir al monte del Señor?",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "¿Quién puede estar en el recinto sacro?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El hombre de manos inocentes",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y puro corazón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que no confía en los ídolos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Ése recibirá la bendición del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "le hará justicia el Dios de salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Éste es el grupo que busca al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que viene a tu presencia, Dios de Jacob. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "dia": "Sábado",
+  "title": "Sábado de la 29ª semana de Tiempo Ordinario"
 }

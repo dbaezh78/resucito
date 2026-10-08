@@ -1,15 +1,10 @@
 {
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
   "id": "seui_164",
-  "title": "Martes de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 28ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 18, 2-3. 4-5 (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 18, 2-3. 4-5 (R.: 2a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Martes",
-  "orden": 5282,
-  "respuesta": "R. El cielo proclama la gloria de Dios.",
-  "respuestaOpcional": "",
+  "textoCompleto": "El cielo proclama la gloria de Dios,\nel firmamento pregona la obra de sus manos:\nel día al día le pasa el mensaje,\nla noche a la noche se lo susurra. R.\n\nSin que hablen, sin que pronuncien,\nsin que resuene su voz,\na toda la tierra alcanza su pregón\ny hasta los límites del orbe su lenguaje. R.",
+  "searchPool": "martes de la 28 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 18 2 3 4 5 r 2a semana 28 semana xxviii martes 28 xxviii r el cielo proclama la gloria de dios el cielo proclama la gloria de dios el firmamento pregona la obra de sus manos el dia al dia le pasa el mensaje la noche a la noche se lo susurra r sin que hablen sin que pronuncien sin que resuene su voz a toda la tierra alcanza su pregon y hasta los limites del orbe su lenguaje r",
   "estrofas": [
     [
       "El cielo proclama la gloria de Dios,",
@@ -24,12 +19,16 @@
       "y hasta los límites del orbe su lenguaje. R."
     ]
   ],
-  "textoCompleto": "El cielo proclama la gloria de Dios,\nel firmamento pregona la obra de sus manos:\nel día al día le pasa el mensaje,\nla noche a la noche se lo susurra. R.\n\nSin que hablen, sin que pronuncien,\nsin que resuene su voz,\na toda la tierra alcanza su pregón\ny hasta los límites del orbe su lenguaje. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 18, 2-3. 4-5 (R.: 2a)",
+  "respuestaOpcional": "",
+  "title": "Martes de la 28ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 28ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 5282,
+  "respuesta": "R. El cielo proclama la gloria de Dios.",
   "hasAudio": false,
-  "searchPool": "martes de la 28 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 18 2 3 4 5 r 2a semana 28 semana xxviii martes 28 xxviii r el cielo proclama la gloria de dios el cielo proclama la gloria de dios el firmamento pregona la obra de sus manos el dia al dia le pasa el mensaje la noche a la noche se lo susurra r sin que hablen sin que pronuncien sin que resuene su voz a toda la tierra alcanza su pregon y hasta los limites del orbe su lenguaje r",
+  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 18, 2-3. 4-5 (R.: 2a)",
   "lizq": [
     {
       "line": "R. El cielo proclama la gloria de Dios.",
@@ -44,8 +43,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "el firmamento pregona la obra de sus manos:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el firmamento pregona la obra de sus manos:"
     },
     {
       "line": "el día al día le pasa el mensaje,",
@@ -56,8 +55,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Sin que hablen, sin que pronuncien,",
@@ -68,12 +67,13 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "a toda la tierra alcanza su pregón",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "a toda la tierra alcanza su pregón"
     },
     {
       "line": "y hasta los límites del orbe su lenguaje. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Año Impar"
 }

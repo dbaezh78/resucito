@@ -1,15 +1,11 @@
 {
-  "id": "seup_066",
-  "title": "Sábado de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 88, 4-5. 29-30. 31-32. 33-34 (R.: 29a)",
-  "salmo": "Salmo responsorial: Salmo 88, 4-5. 29-30. 31-32. 33-34 (R.: 29a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Sábado",
+  "hasAudio": false,
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 88, 4-5. 29-30. 31-32. 33-34 (R.: 29a)",
+  "sourceBook": "eucaristia",
+  "searchPool": "sabado de la 11 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 88 4 5 29 30 31 32 33 34 r 29a semana 11 semana xi sabado 11 xi r le mantendre eternamente mi favor selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r le mantendre eternamente mi favor y mi alianza con el sera estable le dare una posteridad perpetua y un trono duradero como el cielo r si sus hijos abandonan mi ley y no siguen mis mandamientos si profanan mis preceptos y no guardan mis mandatos r castigare con la vara sus pecados y a latigazos sus culpas pero no les retirare mi favor ni desmentire mi fidelidad r",
   "orden": 5116,
-  "respuesta": "R. Le mantendré eternamente mi favor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Sellé una alianza con mi elegido,",
@@ -36,12 +32,16 @@
       "ni desmentiré mi fidelidad». R."
     ]
   ],
-  "textoCompleto": "Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\n«Le mantendré eternamente mi favor,\ny mi alianza con él será estable;\nle daré una posteridad perpetua\ny un trono duradero como el cielo». R.\n\n«Si sus hijos abandonan mi ley\ny no siguen mis mandamientos,\nsi profanan mis preceptos\ny no guardan mis mandatos». R.\n\n«Castigaré con la vara sus pecados\ny a latigazos sus culpas;\npero no les retiraré mi favor\nni desmentiré mi fidelidad». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "title": "Sábado de la 11ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 88, 4-5. 29-30. 31-32. 33-34 (R.: 29a)",
+  "respuesta": "R. Le mantendré eternamente mi favor.",
+  "id": "seup_066",
+  "tiempo": "Tiempo Ordinario",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 11 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 88 4 5 29 30 31 32 33 34 r 29a semana 11 semana xi sabado 11 xi r le mantendre eternamente mi favor selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r le mantendre eternamente mi favor y mi alianza con el sera estable le dare una posteridad perpetua y un trono duradero como el cielo r si sus hijos abandonan mi ley y no siguen mis mandamientos si profanan mis preceptos y no guardan mis mandatos r castigare con la vara sus pecados y a latigazos sus culpas pero no les retirare mi favor ni desmentire mi fidelidad r",
+  "respuestaOpcional": "",
+  "textoCompleto": "Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\n«Le mantendré eternamente mi favor,\ny mi alianza con él será estable;\nle daré una posteridad perpetua\ny un trono duradero como el cielo». R.\n\n«Si sus hijos abandonan mi ley\ny no siguen mis mandamientos,\nsi profanan mis preceptos\ny no guardan mis mandatos». R.\n\n«Castigaré con la vara sus pecados\ny a latigazos sus culpas;\npero no les retiraré mi favor\nni desmentiré mi fidelidad». R.",
+  "stage": "Liturgia",
+  "celebracion": "Sábado de la 11ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Le mantendré eternamente mi favor.",
@@ -64,16 +64,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "edificaré tu trono para todas las edades». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "edificaré tu trono para todas las edades». R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "«Le mantendré eternamente mi favor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Le mantendré eternamente mi favor,"
     },
     {
       "line": "y mi alianza con él será estable;",
@@ -100,28 +100,28 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "si profanan mis preceptos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "si profanan mis preceptos"
     },
     {
-      "line": "y no guardan mis mandatos». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y no guardan mis mandatos». R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "«Castigaré con la vara sus pecados",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Castigaré con la vara sus pecados"
     },
     {
       "line": "y a latigazos sus culpas;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "pero no les retiraré mi favor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "pero no les retiraré mi favor"
     },
     {
       "line": "ni desmentiré mi fidelidad». R.",

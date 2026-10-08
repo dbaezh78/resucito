@@ -1,15 +1,5 @@
 {
   "id": "seui_013",
-  "title": "Lunes de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 3ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 1a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5031,
-  "respuesta": "R. Cantad al Señor un cántico nuevo, porque ha hecho maravillas.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -36,32 +26,30 @@
       "aclamad al Rey y Señor. R."
     ]
   ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclamad al Señor, tierra entera;\ngritad, vitoread, tocad. R.\n\nTañed la cítara para el Señor,\nsuenen los instrumentos:\ncon clarines y al son de trompetas,\naclamad al Rey y Señor. R.",
-  "sourceBook": "eucaristia",
+  "dia": "Lunes",
+  "title": "Lunes de la 3ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 3ª semana de Tiempo Ordinario",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 3 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 97 1 2 3ab 3cd 4 5 6 r 1a semana 3 semana iii lunes 3 iii r cantad al senor un cantico nuevo porque ha hecho maravillas cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclamad al senor tierra entera gritad vitoread tocad r taned la citara para el senor suenen los instrumentos con clarines y al son de trompetas aclamad al rey y senor r",
   "lizq": [
     {
-      "line": "R. Cantad al Señor un cántico nuevo,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Cantad al Señor un cántico nuevo,"
     },
     {
-      "line": "porque ha hecho maravillas.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "porque ha hecho maravillas."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cantad al Señor un cántico nuevo,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "porque ha hecho maravillas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque ha hecho maravillas:"
     },
     {
       "line": "su diestra le ha dado la victoria,",
@@ -84,8 +72,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "se acordó de su misericordia y su fidelidad",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "se acordó de su misericordia y su fidelidad"
     },
     {
       "line": "en favor de la casa de Israel. R.",
@@ -96,8 +84,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los confines de la tierra han contemplado",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los confines de la tierra han contemplado"
     },
     {
       "line": "la victoria de nuestro Dios.",
@@ -108,28 +96,40 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "gritad, vitoread, tocad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "gritad, vitoread, tocad. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Tañed la cítara para el Señor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "suenen los instrumentos:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "suenen los instrumentos:"
     },
     {
       "line": "con clarines y al son de trompetas,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "aclamad al Rey y Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "aclamad al Rey y Señor. R."
     }
-  ]
+  ],
+  "orden": 5031,
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Impar",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 1a)",
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "lunes de la 3 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 97 1 2 3ab 3cd 4 5 6 r 1a semana 3 semana iii lunes 3 iii r cantad al senor un cantico nuevo porque ha hecho maravillas cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclamad al senor tierra entera gritad vitoread tocad r taned la citara para el senor suenen los instrumentos con clarines y al son de trompetas aclamad al rey y senor r",
+  "hasAudio": false,
+  "respuesta": "R. Cantad al Señor un cántico nuevo, porque ha hecho maravillas.",
+  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 1a)",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclamad al Señor, tierra entera;\ngritad, vitoread, tocad. R.\n\nTañed la cítara para el Señor,\nsuenen los instrumentos:\ncon clarines y al son de trompetas,\naclamad al Rey y Señor. R."
 }

@@ -1,50 +1,12 @@
 {
-  "id": "seua_04",
-  "title": "Domingo 4º de Adviento",
-  "celebracion": "Domingo 4º de Adviento",
-  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 7c y 10b)",
-  "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 7c y 10b)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Adviento",
-  "dia": "Domingo",
-  "orden": 104,
-  "respuesta": "R. Va a entrar el Señor, él es el Rey de la gloria.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Del Señor es la tierra y cuanto la llena,",
-      "el orbe y todos sus habitantes:",
-      "él la fundó sobre los mares,",
-      "él la afianzó sobre los ríos. R."
-    ],
-    [
-      "¿Quién puede subir al monte del Señor?",
-      "¿Quién puede estar en el recinto sacro?",
-      "El hombre de manos inocentes",
-      "y puro corazón,",
-      "que no confía en los ídolos. R."
-    ],
-    [
-      "Ése recibirá la bendición del Señor,",
-      "le hará justicia el Dios de salvación.",
-      "Éste es el grupo que busca al Señor,",
-      "que viene a tu presencia, Dios de Jacob. R."
-    ]
-  ],
-  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo 4 de adviento ciclo a adviento domingo salmo responsorial salmo 23 1 2 3 4ab 5 6 r cf 7c y 10b r va a entrar el senor el es el rey de la gloria del senor es la tierra y cuanto la llena el orbe y todos sus habitantes el la fundo sobre los mares el la afianzo sobre los rios r quien puede subir al monte del senor quien puede estar en el recinto sacro el hombre de manos inocentes y puro corazon que no confia en los idolos r ese recibira la bendicion del senor le hara justicia el dios de salvacion este es el grupo que busca al senor que viene a tu presencia dios de jacob r",
   "lizq": [
     {
-      "line": "R. Va a entrar el Señor,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Va a entrar el Señor,"
     },
     {
-      "line": "él es el Rey de la gloria.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "él es el Rey de la gloria."
     },
     {
       "line": "",
@@ -55,8 +17,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "el orbe y todos sus habitantes:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el orbe y todos sus habitantes:"
     },
     {
       "line": "él la fundó sobre los mares,",
@@ -79,8 +41,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El hombre de manos inocentes",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El hombre de manos inocentes"
     },
     {
       "line": "y puro corazón,",
@@ -95,20 +57,58 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Ése recibirá la bendición del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Ése recibirá la bendición del Señor,"
     },
     {
-      "line": "le hará justicia el Dios de salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "le hará justicia el Dios de salvación."
     },
     {
       "line": "Éste es el grupo que busca al Señor,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que viene a tu presencia, Dios de Jacob. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que viene a tu presencia, Dios de Jacob. R."
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
+  "estrofas": [
+    [
+      "Del Señor es la tierra y cuanto la llena,",
+      "el orbe y todos sus habitantes:",
+      "él la fundó sobre los mares,",
+      "él la afianzó sobre los ríos. R."
+    ],
+    [
+      "¿Quién puede subir al monte del Señor?",
+      "¿Quién puede estar en el recinto sacro?",
+      "El hombre de manos inocentes",
+      "y puro corazón,",
+      "que no confía en los ídolos. R."
+    ],
+    [
+      "Ése recibirá la bendición del Señor,",
+      "le hará justicia el Dios de salvación.",
+      "Éste es el grupo que busca al Señor,",
+      "que viene a tu presencia, Dios de Jacob. R."
+    ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 7c y 10b)",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Domingo",
+  "searchPool": "domingo 4 de adviento ciclo a adviento domingo salmo responsorial salmo 23 1 2 3 4ab 5 6 r cf 7c y 10b r va a entrar el senor el es el rey de la gloria del senor es la tierra y cuanto la llena el orbe y todos sus habitantes el la fundo sobre los mares el la afianzo sobre los rios r quien puede subir al monte del senor quien puede estar en el recinto sacro el hombre de manos inocentes y puro corazon que no confia en los idolos r ese recibira la bendicion del senor le hara justicia el dios de salvacion este es el grupo que busca al senor que viene a tu presencia dios de jacob r",
+  "ciclo": "Ciclo A",
+  "tiempo": "Adviento",
+  "sourceBook": "eucaristia",
+  "title": "Domingo 4º de Adviento",
+  "respuesta": "R. Va a entrar el Señor, él es el Rey de la gloria.",
+  "hasAudio": false,
+  "id": "seua_04",
+  "orden": 104,
+  "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf. 7c y 10b)",
+  "celebracion": "Domingo 4º de Adviento",
+  "respuestaOpcional": ""
 }

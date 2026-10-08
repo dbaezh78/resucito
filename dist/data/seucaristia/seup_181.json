@@ -1,15 +1,55 @@
 {
-  "id": "seup_181",
-  "title": "Lunes de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 31ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
-  "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5311,
-  "respuesta": "R. Guarda mi alma en la paz junto a ti, Señor.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspera Israel en el Señor\nahora y por siempre. R.",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Guarda mi alma en la paz junto a ti, Señor."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Señor, mi corazón no es ambicioso,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni mis ojos altaneros;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no pretendo grandezas"
+    },
+    {
+      "line": "que superan mi capacidad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sino que acallo y modero mis deseos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "como un niño en brazos de su madre. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Espera Israel en el Señor"
+    },
+    {
+      "line": "ahora y por siempre. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "estrofas": [
     [
       "Señor, mi corazón no es ambicioso,",
@@ -26,60 +66,20 @@
       "ahora y por siempre. R."
     ]
   ],
-  "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspera Israel en el Señor\nahora y por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
+  "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
   "hasAudio": false,
+  "dia": "Lunes",
+  "stage": "Liturgia",
+  "id": "seup_181",
   "searchPool": "lunes de la 31 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 130 1 2 3 semana 31 semana xxxi lunes 31 xxxi r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espera israel en el senor ahora y por siempre r",
-  "lizq": [
-    {
-      "line": "R. Guarda mi alma en la paz junto a ti, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Señor, mi corazón no es ambicioso,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ni mis ojos altaneros;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no pretendo grandezas",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que superan mi capacidad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Sino que acallo y modero mis deseos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "como un niño en brazos de su madre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Espera Israel en el Señor",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ahora y por siempre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Lunes de la 31ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "celebracion": "Lunes de la 31ª semana de Tiempo Ordinario",
+  "respuesta": "R. Guarda mi alma en la paz junto a ti, Señor.",
+  "sourceBook": "eucaristia",
+  "orden": 5311
 }

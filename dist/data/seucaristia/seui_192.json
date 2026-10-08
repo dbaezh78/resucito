@@ -1,49 +1,16 @@
 {
-  "id": "seui_192",
-  "title": "Sábado de la 32ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 32ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 104, 2-3. 36-37. 42-43 (R.:5a)",
-  "salmo": "Salmo responsorial: Salmo 104, 2-3. 36-37. 42-43 (R.:5a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5326,
-  "respuesta": "R. Recordad las maravillas que hizo el Señor.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Cantadle al son de instrumentos,",
-      "hablad de sus maravillas;",
-      "gloriaos de su nombre santo,",
-      "que se alegren los que buscan al Señor. R."
-    ],
-    [
-      "Hirió de muerte a los primogénitos del país,",
-      "primicias de su virilidad.",
-      "Sacó a su pueblo cargado de oro y plata,",
-      "y entre sus tribus nadie tropezaba. R."
-    ],
-    [
-      "Porque se acordaba de la palabra sagrada",
-      "que había dado a su siervo Abrahán,",
-      "sacó a su pueblo con alegría,",
-      "a sus escogidos con gritos de triunfo. R."
-    ]
-  ],
-  "textoCompleto": "Cantadle al son de instrumentos,\nhablad de sus maravillas;\ngloriaos de su nombre santo,\nque se alegren los que buscan al Señor. R.\n\nHirió de muerte a los primogénitos del país,\nprimicias de su virilidad.\nSacó a su pueblo cargado de oro y plata,\ny entre sus tribus nadie tropezaba. R.\n\nPorque se acordaba de la palabra sagrada\nque había dado a su siervo Abrahán,\nsacó a su pueblo con alegría,\na sus escogidos con gritos de triunfo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "sabado de la 32 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 104 2 3 36 37 42 43 r 5a semana 32 semana xxxii sabado 32 xxxii r recordad las maravillas que hizo el senor r aleluya cantadle al son de instrumentos hablad de sus maravillas gloriaos de su nombre santo que se alegren los que buscan al senor r hirio de muerte a los primogenitos del pais primicias de su virilidad saco a su pueblo cargado de oro y plata y entre sus tribus nadie tropezaba r porque se acordaba de la palabra sagrada que habia dado a su siervo abrahan saco a su pueblo con alegria a sus escogidos con gritos de triunfo r",
+  "respuestaOpcional": "R. Aleluya.",
+  "dia": "Sábado",
+  "tiempo": "Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Recordad las maravillas que hizo el Señor.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -70,8 +37,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que se alegren los que buscan al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que se alegren los que buscan al Señor. R."
     },
     {
       "line": "",
@@ -82,12 +49,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "primicias de su virilidad.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "primicias de su virilidad."
     },
     {
-      "line": "Sacó a su pueblo cargado de oro y plata,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Sacó a su pueblo cargado de oro y plata,"
     },
     {
       "line": "y entre sus tribus nadie tropezaba. R.",
@@ -102,8 +69,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que había dado a su siervo Abrahán,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que había dado a su siervo Abrahán,"
     },
     {
       "line": "sacó a su pueblo con alegría,",
@@ -113,5 +80,38 @@
       "line": "a sus escogidos con gritos de triunfo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 104, 2-3. 36-37. 42-43 (R.:5a)",
+  "id": "seui_192",
+  "stage": "Liturgia",
+  "searchPool": "sabado de la 32 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 104 2 3 36 37 42 43 r 5a semana 32 semana xxxii sabado 32 xxxii r recordad las maravillas que hizo el senor r aleluya cantadle al son de instrumentos hablad de sus maravillas gloriaos de su nombre santo que se alegren los que buscan al senor r hirio de muerte a los primogenitos del pais primicias de su virilidad saco a su pueblo cargado de oro y plata y entre sus tribus nadie tropezaba r porque se acordaba de la palabra sagrada que habia dado a su siervo abrahan saco a su pueblo con alegria a sus escogidos con gritos de triunfo r",
+  "orden": 5326,
+  "ciclo": "Año Impar",
+  "celebracion": "Sábado de la 32ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 104, 2-3. 36-37. 42-43 (R.:5a)",
+  "estrofas": [
+    [
+      "Cantadle al son de instrumentos,",
+      "hablad de sus maravillas;",
+      "gloriaos de su nombre santo,",
+      "que se alegren los que buscan al Señor. R."
+    ],
+    [
+      "Hirió de muerte a los primogénitos del país,",
+      "primicias de su virilidad.",
+      "Sacó a su pueblo cargado de oro y plata,",
+      "y entre sus tribus nadie tropezaba. R."
+    ],
+    [
+      "Porque se acordaba de la palabra sagrada",
+      "que había dado a su siervo Abrahán,",
+      "sacó a su pueblo con alegría,",
+      "a sus escogidos con gritos de triunfo. R."
+    ]
+  ],
+  "respuesta": "R. Recordad las maravillas que hizo el Señor.",
+  "textoCompleto": "Cantadle al son de instrumentos,\nhablad de sus maravillas;\ngloriaos de su nombre santo,\nque se alegren los que buscan al Señor. R.\n\nHirió de muerte a los primogénitos del país,\nprimicias de su virilidad.\nSacó a su pueblo cargado de oro y plata,\ny entre sus tribus nadie tropezaba. R.\n\nPorque se acordaba de la palabra sagrada\nque había dado a su siervo Abrahán,\nsacó a su pueblo con alegría,\na sus escogidos con gritos de triunfo. R.",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Sábado de la 32ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia"
 }

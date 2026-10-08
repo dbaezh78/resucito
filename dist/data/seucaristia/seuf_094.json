@@ -1,22 +1,90 @@
 {
-  "id": "seuf_094",
-  "title": "Martes de la tercera semana de Pascua",
-  "celebracion": "Martes de la tercera semana de Pascua",
-  "subtitle": "Salmo 30, 3cd-4. 6ab y 7b y 8a. 17 y 21ab (R.: 6a)",
-  "salmo": "Salmo 30, 3cd-4. 6ab y 7b y 8a. 17 y 21ab (R.: 6a)",
   "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
+  "lizq": [
+    {
+      "line": "R. A tus manos, Señor, encomiendo mi espíritu.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Sé la roca de mi refugio,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "un baluarte donde me salve,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tú que eres mi roca y mi baluarte;"
+    },
+    {
+      "line": "por tu nombre dirígeme y guíame. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "A tus manos encomiendo mi espíritu:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tú, el Dios leal, me librarás;"
+    },
+    {
+      "line": "yo confío en el Señor.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Tu misericordia sea mi gozo y mi alegría. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Haz brillar tu rostro sobre tu siervo,"
+    },
+    {
+      "line": "sálvame por tu misericordia.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "En el asilo de tu presencia los escondes",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "de las conjuras humanas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
   ],
-  "tiempo": "Pascua",
-  "dia": "Martes",
+  "salmo": "Salmo 30, 3cd-4. 6ab y 7b y 8a. 17 y 21ab (R.: 6a)",
+  "catCanto": "Salmo Eucaristía",
+  "stage": "Liturgia",
+  "searchPool": "martes de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 30 3cd 4 6ab y 7b y 8a 17 y 21ab r 6a semana 3 semana iii martes feria r a tus manos senor encomiendo mi espiritu r aleluya se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r a tus manos encomiendo mi espiritu tu el dios leal me libraras yo confio en el senor tu misericordia sea mi gozo y mi alegria r haz brillar tu rostro sobre tu siervo salvame por tu misericordia en el asilo de tu presencia los escondes de las conjuras humanas r",
   "orden": 432,
-  "respuesta": "R. A tus manos, Señor, encomiendo mi espíritu.",
-  "respuestaOpcional": "R. Aleluya.",
+  "sourceBook": "eucaristia",
+  "title": "Martes de la tercera semana de Pascua",
   "estrofas": [
     [
       "Sé la roca de mi refugio,",
@@ -37,88 +105,20 @@
       "de las conjuras humanas. R."
     ]
   ],
-  "textoCompleto": "Sé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás;\nyo confío en el Señor.\nTu misericordia sea mi gozo y mi alegría. R.\n\nHaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia.\nEn el asilo de tu presencia los escondes\nde las conjuras humanas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "id": "seuf_094",
+  "celebracion": "Martes de la tercera semana de Pascua",
+  "respuesta": "R. A tus manos, Señor, encomiendo mi espíritu.",
+  "tiempo": "Pascua",
+  "subtitle": "Salmo 30, 3cd-4. 6ab y 7b y 8a. 17 y 21ab (R.: 6a)",
+  "dia": "Martes",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
   "hasAudio": false,
-  "searchPool": "martes de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 30 3cd 4 6ab y 7b y 8a 17 y 21ab r 6a semana 3 semana iii martes feria r a tus manos senor encomiendo mi espiritu r aleluya se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r a tus manos encomiendo mi espiritu tu el dios leal me libraras yo confio en el senor tu misericordia sea mi gozo y mi alegria r haz brillar tu rostro sobre tu siervo salvame por tu misericordia en el asilo de tu presencia los escondes de las conjuras humanas r",
-  "lizq": [
-    {
-      "line": "R. A tus manos, Señor, encomiendo mi espíritu.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Sé la roca de mi refugio,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "un baluarte donde me salve,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tú que eres mi roca y mi baluarte;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "por tu nombre dirígeme y guíame. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "A tus manos encomiendo mi espíritu:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "tú, el Dios leal, me librarás;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "yo confío en el Señor.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Tu misericordia sea mi gozo y mi alegría. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Haz brillar tu rostro sobre tu siervo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "sálvame por tu misericordia.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "En el asilo de tu presencia los escondes",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "de las conjuras humanas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "textoCompleto": "Sé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás;\nyo confío en el Señor.\nTu misericordia sea mi gozo y mi alegría. R.\n\nHaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia.\nEn el asilo de tu presencia los escondes\nde las conjuras humanas. R.",
+  "respuestaOpcional": "R. Aleluya."
 }

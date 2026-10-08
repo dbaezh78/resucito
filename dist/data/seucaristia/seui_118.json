@@ -1,15 +1,6 @@
 {
-  "id": "seui_118",
-  "title": "Jueves de la 20ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 20ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 39, 5. 7-8a. 8b-9. 10 (R.: cf. 8a y 9a)",
-  "salmo": "Salmo responsorial: Salmo 39, 5. 7-8a. 8b-9. 10 (R.: cf. 8a y 9a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5204,
-  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
   "respuestaOpcional": "",
+  "celebracion": "Jueves de la 20ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Dichoso el hombre que ha puesto",
@@ -36,12 +27,8 @@
       "Señor, tú lo sabes. R."
     ]
   ],
-  "textoCompleto": "Dichoso el hombre que ha puesto\nsu confianza en el Señor,\ny no acude a los idólatras,\nque se extravían con engaños. R.\n\nTú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\n—Como está escrito en mi libro—\n«para hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 20 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 39 5 7 8a 8b 9 10 r cf 8a y 9a semana 20 semana xx jueves 20 xx r aqui estoy senor para hacer tu voluntad dichoso el hombre que ha puesto su confianza en el senor y no acude a los idolatras que se extravian con enganos r tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio entonces yo digo aqui estoy r como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r",
+  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
   "lizq": [
     {
       "line": "R. Aquí estoy, Señor, para hacer tu voluntad.",
@@ -56,12 +43,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "su confianza en el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su confianza en el Señor,"
     },
     {
-      "line": "y no acude a los idólatras,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no acude a los idólatras,"
     },
     {
       "line": "que se extravían con engaños. R.",
@@ -76,20 +63,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y, en cambio, me abriste el oído;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y, en cambio, me abriste el oído;"
     },
     {
       "line": "no pides sacrificio expiatorio,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "entonces yo digo: «Aquí estoy». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "entonces yo digo: «Aquí estoy». R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "—Como está escrito en mi libro—",
@@ -120,12 +107,25 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "no he cerrado los labios:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no he cerrado los labios:"
     },
     {
       "line": "Señor, tú lo sabes. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Dichoso el hombre que ha puesto\nsu confianza en el Señor,\ny no acude a los idólatras,\nque se extravían con engaños. R.\n\nTú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\n—Como está escrito en mi libro—\n«para hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R.",
+  "dia": "Jueves",
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "title": "Jueves de la 20ª semana de Tiempo Ordinario",
+  "orden": 5204,
+  "searchPool": "jueves de la 20 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 39 5 7 8a 8b 9 10 r cf 8a y 9a semana 20 semana xx jueves 20 xx r aqui estoy senor para hacer tu voluntad dichoso el hombre que ha puesto su confianza en el senor y no acude a los idolatras que se extravian con enganos r tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio entonces yo digo aqui estoy r como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r",
+  "id": "seui_118",
+  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 39, 5. 7-8a. 8b-9. 10 (R.: cf. 8a y 9a)",
+  "salmo": "Salmo responsorial: Salmo 39, 5. 7-8a. 8b-9. 10 (R.: cf. 8a y 9a)",
+  "ciclo": "Año Impar"
 }

@@ -1,21 +1,7 @@
 {
-  "id": "seuf_015",
-  "title": "Miércoles de la 3ª semana de Adviento",
-  "celebracion": "Miércoles de la 3ª semana de Adviento",
-  "subtitle": "Salmo 84, 9ab-10. 11-12. 13-14 (R.: cf. Is 45, 8)",
-  "salmo": "Salmo 84, 9ab-10. 11-12. 13-14 (R.: cf. Is 45, 8)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Adviento",
-  "dia": "Miércoles",
   "orden": 133,
   "respuesta": "R. Cielos, destilad el rocío; nubes, derramad al Justo.",
+  "title": "Miércoles de la 3ª semana de Adviento",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -38,12 +24,15 @@
       "la salvación seguirá sus pasos. R."
     ]
   ],
-  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "subtitle": "Salmo 84, 9ab-10. 11-12. 13-14 (R.: cf. Is 45, 8)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 3 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento miercoles salmo 84 9ab 10 11 12 13 14 r cf is 45 8 semana 3 semana iii miercoles feria r cielos destilad el rocio nubes derramad al justo voy a escuchar lo que dice el senor dios anuncia la paz a su pueblo y a sus amigos la salvacion esta ya cerca de sus fieles y la gloria habitara en nuestra tierra r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara la lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r",
   "lizq": [
     {
       "line": "R. Cielos, destilad el rocío;",
@@ -62,48 +51,48 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "«Dios anuncia la paz",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«Dios anuncia la paz"
     },
     {
       "line": "a su pueblo y a sus amigos».",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "La salvación está ya cerca de sus fieles,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "La salvación está ya cerca de sus fieles,"
     },
     {
-      "line": "y la gloria habitará en nuestra tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y la gloria habitará en nuestra tierra. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "La misericordia y la fidelidad se encuentran,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La misericordia y la fidelidad se encuentran,"
     },
     {
       "line": "la justicia y la paz se besan;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "la fidelidad brota de la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la fidelidad brota de la tierra,"
     },
     {
       "line": "y la justicia mira desde el cielo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "El Señor nos dará la lluvia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor nos dará la lluvia,"
     },
     {
       "line": "y nuestra tierra dará su fruto.",
@@ -117,5 +106,16 @@
       "line": "la salvación seguirá sus pasos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo 84, 9ab-10. 11-12. 13-14 (R.: cf. Is 45, 8)",
+  "searchPool": "miercoles de la 3 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento miercoles salmo 84 9ab 10 11 12 13 14 r cf is 45 8 semana 3 semana iii miercoles feria r cielos destilad el rocio nubes derramad al justo voy a escuchar lo que dice el senor dios anuncia la paz a su pueblo y a sus amigos la salvacion esta ya cerca de sus fieles y la gloria habitara en nuestra tierra r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara la lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r",
+  "celebracion": "Miércoles de la 3ª semana de Adviento",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "dia": "Miércoles",
+  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
+  "ciclo": "Ciclo A, B y C",
+  "hasAudio": false,
+  "tiempo": "Adviento",
+  "id": "seuf_015"
 }

@@ -1,41 +1,14 @@
 {
-  "id": "seub_45",
   "title": "Domingo de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 3ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 24, 4-5ab. 6-7bc. 8-9 (R.: 4a)",
-  "salmo": "Salmo responsorial: Salmo 24, 4-5ab. 6-7bc. 8-9 (R.: 4a)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 503,
-  "respuesta": "R. Señor, enséñame tus caminos.",
+  "id": "seub_45",
   "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Señor, enséñame tus caminos,",
-      "instrúyeme en tus sendas:",
-      "haz que camine con lealtad;",
-      "enséñame, porque tú eres mi Dios y Salvador. R."
-    ],
-    [
-      "Recuerda, Señor, que tu ternura",
-      "y tu misericordia son eternas;",
-      "acuérdate de mí con misericordia,",
-      "por tu bondad, Señor. R."
-    ],
-    [
-      "El Señor es bueno y es recto,",
-      "y enseña el camino a los pecadores;",
-      "hace caminar a los humildes con rectitud,",
-      "enseña su camino a los humildes. R."
-    ]
-  ],
+  "tiempo": "Tiempo Ordinario",
   "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Señor, enséñame tus caminos.",
+  "orden": 503,
+  "salmo": "Salmo responsorial: Salmo 24, 4-5ab. 6-7bc. 8-9 (R.: 4a)",
   "hasAudio": false,
-  "searchPool": "domingo de la 3 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 24 4 5ab 6 7bc 8 9 r 4a r senor ensename tus caminos senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r recuerda senor que tu ternura y tu misericordia son eternas acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "stage": "Liturgia",
   "lizq": [
     {
       "line": "R. Señor, enséñame tus caminos.",
@@ -70,28 +43,28 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y tu misericordia son eternas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y tu misericordia son eternas;"
     },
     {
-      "line": "acuérdate de mí con misericordia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "acuérdate de mí con misericordia,"
     },
     {
       "line": "por tu bondad, Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es bueno y es recto,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y enseña el camino a los pecadores;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y enseña el camino a los pecadores;"
     },
     {
       "line": "hace caminar a los humildes con rectitud,",
@@ -101,5 +74,32 @@
       "line": "enseña su camino a los humildes. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Domingo",
+  "subtitle": "Salmo responsorial: Salmo 24, 4-5ab. 6-7bc. 8-9 (R.: 4a)",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "domingo de la 3 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 24 4 5ab 6 7bc 8 9 r 4a r senor ensename tus caminos senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r recuerda senor que tu ternura y tu misericordia son eternas acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "estrofas": [
+    [
+      "Señor, enséñame tus caminos,",
+      "instrúyeme en tus sendas:",
+      "haz que camine con lealtad;",
+      "enséñame, porque tú eres mi Dios y Salvador. R."
+    ],
+    [
+      "Recuerda, Señor, que tu ternura",
+      "y tu misericordia son eternas;",
+      "acuérdate de mí con misericordia,",
+      "por tu bondad, Señor. R."
+    ],
+    [
+      "El Señor es bueno y es recto,",
+      "y enseña el camino a los pecadores;",
+      "hace caminar a los humildes con rectitud,",
+      "enseña su camino a los humildes. R."
+    ]
+  ],
+  "sourceBook": "eucaristia",
+  "ciclo": "Ciclo B",
+  "celebracion": "Domingo de la 3ª semana de Tiempo Ordinario"
 }

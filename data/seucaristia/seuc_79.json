@@ -1,15 +1,10 @@
 {
-  "id": "seuc_79",
-  "title": "Domingo de la 33ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 33ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: 97, 5-6. 7-9a. 9bc (R.: cf. 9)",
-  "salmo": "Salmo responsorial: 97, 5-6. 7-9a. 9bc (R.: cf. 9)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 533,
   "respuesta": "R. El Señor llega para regir los pueblos con rectitud.",
+  "salmo": "Salmo responsorial: 97, 5-6. 7-9a. 9bc (R.: cf. 9)",
+  "subtitle": "Salmo responsorial: 97, 5-6. 7-9a. 9bc (R.: cf. 9)",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "",
+  "textoCompleto": "Tañed la cítara para el Señor,\nsuenen los instrumentos:\ncon clarines y al son de trompetas,\naclamad al Rey y Señor. R.\n\nRetumbe el mar y cuanto contiene,\nla tierra y cuantos la habitan;\naplaudan los ríos, aclamen los montes\nal Señor, que llega para regir la tierra. R.\n\nRegirá el orbe con justicia\ny los pueblos con rectitud. R.",
   "estrofas": [
     [
       "Tañed la cítara para el Señor,",
@@ -28,12 +23,7 @@
       "y los pueblos con rectitud. R."
     ]
   ],
-  "textoCompleto": "Tañed la cítara para el Señor,\nsuenen los instrumentos:\ncon clarines y al son de trompetas,\naclamad al Rey y Señor. R.\n\nRetumbe el mar y cuanto contiene,\nla tierra y cuantos la habitan;\naplaudan los ríos, aclamen los montes\nal Señor, que llega para regir la tierra. R.\n\nRegirá el orbe con justicia\ny los pueblos con rectitud. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 33 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial 97 5 6 7 9a 9bc r cf 9 r el senor llega para regir los pueblos con rectitud taned la citara para el senor suenen los instrumentos con clarines y al son de trompetas aclamad al rey y senor r retumbe el mar y cuanto contiene la tierra y cuantos la habitan aplaudan los rios aclamen los montes al senor que llega para regir la tierra r regira el orbe con justicia y los pueblos con rectitud r",
+  "dia": "Domingo",
   "lizq": [
     {
       "line": "R. El Señor llega para regir los pueblos con rectitud.",
@@ -48,48 +38,58 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "suenen los instrumentos:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "suenen los instrumentos:"
     },
     {
       "line": "con clarines y al son de trompetas,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "aclamad al Rey y Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "aclamad al Rey y Señor. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Retumbe el mar y cuanto contiene,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Retumbe el mar y cuanto contiene,"
     },
     {
-      "line": "la tierra y cuantos la habitan;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la tierra y cuantos la habitan;"
     },
     {
-      "line": "aplaudan los ríos, aclamen los montes",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "aplaudan los ríos, aclamen los montes"
     },
     {
-      "line": "al Señor, que llega para regir la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "al Señor, que llega para regir la tierra. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Regirá el orbe con justicia",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Regirá el orbe con justicia"
     },
     {
       "line": "y los pueblos con rectitud. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 533,
+  "title": "Domingo de la 33ª semana de Tiempo Ordinario",
+  "id": "seuc_79",
+  "ciclo": "Ciclo C",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "domingo de la 33 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial 97 5 6 7 9a 9bc r cf 9 r el senor llega para regir los pueblos con rectitud taned la citara para el senor suenen los instrumentos con clarines y al son de trompetas aclamad al rey y senor r retumbe el mar y cuanto contiene la tierra y cuantos la habitan aplaudan los rios aclamen los montes al senor que llega para regir la tierra r regira el orbe con justicia y los pueblos con rectitud r",
+  "celebracion": "Domingo de la 33ª semana de Tiempo Ordinario",
+  "stage": "Liturgia"
 }

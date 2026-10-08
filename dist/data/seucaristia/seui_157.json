@@ -1,15 +1,17 @@
 {
-  "id": "seui_157",
-  "title": "Lunes de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Jonás 2, 3. 4. 5. 8 (R.: 7c)",
+  "orden": 5271,
+  "stage": "Liturgia",
+  "hasAudio": false,
   "salmo": "Interleccional: Jonás 2, 3. 4. 5. 8 (R.: 7c)",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5271,
+  "id": "seui_157",
+  "subtitle": "Interleccional: Jonás 2, 3. 4. 5. 8 (R.: 7c)",
   "respuesta": "R. Sacaste mi vida de la fosa, Señor.",
+  "textoCompleto": "En mi aflicción clamé al Señor,\ny me atendió;\ndesde el vientre del infierno pedí auxilio,\ny escuchó mi clamor. R.\n\nMe arrojaste a lo profundo en alta mar,\nme rodeaban las olas,\ntus corrientes y tu oleaje pasaban sobre mí. R.\n\nYo dije: «Me has arrojado de tu presencia;\nquién pudiera ver de nuevo tu santo templo». R.\n\nCuando se me acababan las fuerzas\nme acordé del Señor;\nllegó hasta ti mi oración,\nhasta tu santo templo. R.",
+  "title": "Lunes de la 27ª semana de Tiempo Ordinario",
+  "dia": "Lunes",
   "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "En mi aflicción clamé al Señor,",
@@ -33,16 +35,14 @@
       "hasta tu santo templo. R."
     ]
   ],
-  "textoCompleto": "En mi aflicción clamé al Señor,\ny me atendió;\ndesde el vientre del infierno pedí auxilio,\ny escuchó mi clamor. R.\n\nMe arrojaste a lo profundo en alta mar,\nme rodeaban las olas,\ntus corrientes y tu oleaje pasaban sobre mí. R.\n\nYo dije: «Me has arrojado de tu presencia;\nquién pudiera ver de nuevo tu santo templo». R.\n\nCuando se me acababan las fuerzas\nme acordé del Señor;\nllegó hasta ti mi oración,\nhasta tu santo templo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "celebracion": "Lunes de la 27ª semana de Tiempo Ordinario",
   "searchPool": "lunes de la 27 semana de tiempo ordinario ano impar tiempo ordinario lunes interleccional jonas 2 3 4 5 8 r 7c semana 27 semana xxvii lunes 27 xxvii r sacaste mi vida de la fosa senor en mi afliccion clame al senor y me atendio desde el vientre del infierno pedi auxilio y escucho mi clamor r me arrojaste a lo profundo en alta mar me rodeaban las olas tus corrientes y tu oleaje pasaban sobre mi r yo dije me has arrojado de tu presencia quien pudiera ver de nuevo tu santo templo r cuando se me acababan las fuerzas me acorde del senor llego hasta ti mi oracion hasta tu santo templo r",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
   "lizq": [
     {
-      "line": "R. Sacaste mi vida de la fosa, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Sacaste mi vida de la fosa, Señor."
     },
     {
       "line": "",
@@ -53,8 +53,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y me atendió;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y me atendió;"
     },
     {
       "line": "desde el vientre del infierno pedí auxilio,",
@@ -73,12 +73,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "me rodeaban las olas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me rodeaban las olas,"
     },
     {
-      "line": "tus corrientes y tu oleaje pasaban sobre mí. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tus corrientes y tu oleaje pasaban sobre mí. R."
     },
     {
       "line": "",
@@ -97,12 +97,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Cuando se me acababan las fuerzas",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cuando se me acababan las fuerzas"
     },
     {
-      "line": "me acordé del Señor;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me acordé del Señor;"
     },
     {
       "line": "llegó hasta ti mi oración,",

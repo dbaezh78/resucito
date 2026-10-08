@@ -1,15 +1,7 @@
 {
-  "id": "seuc_74",
-  "title": "Domingo de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 28ª semana de Tiempo Ordinario",
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclama al Señor, tierra entera,\ngritad, vitoread, tocad. R.",
   "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: cf. 2b)",
-  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: cf. 2b)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 528,
-  "respuesta": "R. El Señor revela a las naciones su salvación.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -30,12 +22,19 @@
       "gritad, vitoread, tocad. R."
     ]
   ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclama al Señor, tierra entera,\ngritad, vitoread, tocad. R.",
+  "ciclo": "Ciclo C",
+  "celebracion": "Domingo de la 28ª semana de Tiempo Ordinario",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "domingo de la 28 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 97 1 2 3ab 3cd 4 r cf 2b r el senor revela a las naciones su salvacion cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclama al senor tierra entera gritad vitoread tocad r",
+  "id": "seuc_74",
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: cf. 2b)",
+  "orden": 528,
+  "dia": "Domingo",
+  "respuesta": "R. El Señor revela a las naciones su salvación.",
+  "title": "Domingo de la 28ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. El Señor revela a las naciones su salvación.",
@@ -46,12 +45,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Cantad al Señor un cántico nuevo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cantad al Señor un cántico nuevo,"
     },
     {
-      "line": "porque ha hecho maravillas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque ha hecho maravillas:"
     },
     {
       "line": "su diestra le ha dado la victoria,",
@@ -66,20 +65,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor da a conocer su victoria,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor da a conocer su victoria,"
     },
     {
-      "line": "revela a las naciones su justicia:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "revela a las naciones su justicia:"
     },
     {
-      "line": "se acordó de su misericordia y su fidelidad",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "se acordó de su misericordia y su fidelidad"
     },
     {
-      "line": "en favor de la casa de Israel. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en favor de la casa de Israel. R."
     },
     {
       "line": "",
@@ -98,8 +97,9 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "gritad, vitoread, tocad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "gritad, vitoread, tocad. R."
     }
-  ]
+  ],
+  "respuestaOpcional": ""
 }

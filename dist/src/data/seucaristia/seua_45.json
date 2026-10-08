@@ -1,15 +1,4 @@
 {
-  "id": "seua_45",
-  "title": "Viernes posterior al segundo domingo después de Pentecostés - El sagrado Corazón de Jesús",
-  "celebracion": "Viernes posterior al segundo domingo después de Pentecostés - El sagrado Corazón de Jesús",
-  "subtitle": "Salmo responsorial: Salmo 102. 1-2. 3-4. 6-7. 8 y 10 (R.:17 )",
-  "salmo": "Salmo responsorial: Salmo 102. 1-2. 3-4. 6-7. 8 y 10 (R.:17 )",
-  "ciclo": "Ciclo A",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 430,
-  "respuesta": "R. La misericordia del Señor dura siempre, para los que cumplen sus mandatos.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Bendice, alma mía, al Señor,",
@@ -36,24 +25,32 @@
       "ni nos paga según nuestras culpas. R."
     ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia.\nNo nos trata como merecen nuestros pecados\nni nos paga según nuestras culpas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "title": "Viernes posterior al segundo domingo después de Pentecostés - El sagrado Corazón de Jesús",
+  "subtitle": "Salmo responsorial: Salmo 102. 1-2. 3-4. 6-7. 8 y 10 (R.:17 )",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "orden": 430,
+  "respuesta": "R. La misericordia del Señor dura siempre, para los que cumplen sus mandatos.",
+  "celebracion": "Viernes posterior al segundo domingo después de Pentecostés - El sagrado Corazón de Jesús",
+  "id": "seua_45",
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia.\nNo nos trata como merecen nuestros pecados\nni nos paga según nuestras culpas. R.",
+  "salmo": "Salmo responsorial: Salmo 102. 1-2. 3-4. 6-7. 8 y 10 (R.:17 )",
+  "respuestaOpcional": "",
+  "stage": "Liturgia",
   "searchPool": "viernes posterior al segundo domingo despues de pentecostes el sagrado corazon de jesus ciclo a pascua domingo salmo responsorial salmo 102 1 2 3 4 6 7 8 y 10 r 17 r la misericordia del senor dura siempre para los que cumplen sus mandatos bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor hace justicia y defiende a todos los oprimidos enseno sus caminos a moises y sus hazanas a los hijos de israel r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no nos trata como merecen nuestros pecados ni nos paga segun nuestras culpas r",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
   "lizq": [
     {
       "line": "R. La misericordia del Señor dura siempre,",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "para los que cumplen sus mandatos.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "para los que cumplen sus mandatos."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendice, alma mía, al Señor,",
@@ -80,8 +77,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y cura todas tus enfermedades;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y cura todas tus enfermedades;"
     },
     {
       "line": "él rescata tu vida de la fosa",
@@ -104,32 +101,35 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "enseñó sus caminos a Moisés",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "enseñó sus caminos a Moisés"
     },
     {
       "line": "y sus hazañas a los hijos de Israel. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "El Señor es compasivo y misericordioso,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es compasivo y misericordioso,"
     },
     {
       "line": "lento a la ira y rico en clemencia.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "No nos trata como merecen nuestros pecados",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "No nos trata como merecen nuestros pecados"
     },
     {
       "line": "ni nos paga según nuestras culpas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Domingo",
+  "tiempo": "Pascua",
+  "ciclo": "Ciclo A"
 }

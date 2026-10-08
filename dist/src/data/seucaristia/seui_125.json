@@ -1,15 +1,6 @@
 {
-  "id": "seui_125",
-  "title": "Viernes de la 21ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 21ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 96, 1 y 2b. 5-6. 10. 11-12 (R.: 12a)",
-  "salmo": "Salmo responsorial: Salmo 96, 1 y 2b. 5-6. 10. 11-12 (R.: 12a)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5215,
-  "respuesta": "R. Alegraos, justos, con el Señor.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "El Señor reina, la tierra goza,",
@@ -34,12 +25,6 @@
       "celebrad su santo nombre. R."
     ]
   ],
-  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nJusticia y derecho sostienen su trono. R.\n\nLos montes se derriten como cera\nante el dueño de toda la tierra;\nlos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nEl Señor ama al que aborrece el mal,\nprotege la vida de sus fieles\ny los libra de los malvados. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 21 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 96 1 y 2b 5 6 10 11 12 r 12a semana 21 semana xxi viernes 21 xxi r alegraos justos con el senor el senor reina la tierra goza se alegran las islas innumerables justicia y derecho sostienen su trono r los montes se derriten como cera ante el dueno de toda la tierra los cielos pregonan su justicia y todos los pueblos contemplan su gloria r el senor ama al que aborrece el mal protege la vida de sus fieles y los libra de los malvados r amanece la luz para el justo y la alegria para los rectos de corazon alegraos justos con el senor celebrad su santo nombre r",
   "lizq": [
     {
       "line": "R. Alegraos, justos, con el Señor.",
@@ -74,12 +59,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los cielos pregonan su justicia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los cielos pregonan su justicia,"
     },
     {
-      "line": "y todos los pueblos contemplan su gloria. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y todos los pueblos contemplan su gloria. R."
     },
     {
       "line": "",
@@ -90,16 +75,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "protege la vida de sus fieles",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "protege la vida de sus fieles"
     },
     {
       "line": "y los libra de los malvados. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Amanece la luz para el justo,",
@@ -110,12 +95,27 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Alegraos, justos, con el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Alegraos, justos, con el Señor,"
     },
     {
       "line": "celebrad su santo nombre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5215,
+  "respuestaOpcional": "",
+  "respuesta": "R. Alegraos, justos, con el Señor.",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 96, 1 y 2b. 5-6. 10. 11-12 (R.: 12a)",
+  "celebracion": "Viernes de la 21ª semana de Tiempo Ordinario",
+  "ciclo": "Año Impar",
+  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nJusticia y derecho sostienen su trono. R.\n\nLos montes se derriten como cera\nante el dueño de toda la tierra;\nlos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nEl Señor ama al que aborrece el mal,\nprotege la vida de sus fieles\ny los libra de los malvados. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
+  "subtitle": "Salmo responsorial: Salmo 96, 1 y 2b. 5-6. 10. 11-12 (R.: 12a)",
+  "hasAudio": false,
+  "dia": "Viernes",
+  "searchPool": "viernes de la 21 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 96 1 y 2b 5 6 10 11 12 r 12a semana 21 semana xxi viernes 21 xxi r alegraos justos con el senor el senor reina la tierra goza se alegran las islas innumerables justicia y derecho sostienen su trono r los montes se derriten como cera ante el dueno de toda la tierra los cielos pregonan su justicia y todos los pueblos contemplan su gloria r el senor ama al que aborrece el mal protege la vida de sus fieles y los libra de los malvados r amanece la luz para el justo y la alegria para los rectos de corazon alegraos justos con el senor celebrad su santo nombre r",
+  "id": "seui_125",
+  "title": "Viernes de la 21ª semana de Tiempo Ordinario"
 }

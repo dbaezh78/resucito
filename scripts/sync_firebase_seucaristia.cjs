@@ -96,8 +96,9 @@ async function syncSeucaristia() {
     console.warn('Aviso al consultar salmos_eucaristia_ciclos:', errCiclos.message);
   }
 
-  // 2. Si no hubo paquetes o están vacíos, consultar colección individual
-  if (items.length === 0) {
+  // 2. Si no hubo paquetes o están incompletos (< 900 salmos), consultar colección individual completa
+  if (items.length < 900) {
+    items = []; // Limpiar para tomar la colección individual completa de 981 salmos
     try {
       const indUrl = 'https://firestore.googleapis.com/v1/projects/cristoresucito/databases/(default)/documents/salmos_eucaristia?pageSize=300';
       const rawInd = await fetchAllPages(indUrl);
@@ -175,15 +176,17 @@ async function syncSeucaristia() {
     }
   });
 
-  // Agrupar y guardar los 7 archivos por ciclo
+  // Agrupar y guardar los 7 archivos por ciclo (también con nombres con ñ para compatibilidad)
   const ciclosMap = {
-    'cicloa.json': uniqueList.filter(p => p.ciclo === 'Ciclo A'),
-    'ciclob.json': uniqueList.filter(p => p.ciclo === 'Ciclo B'),
-    'cicloc.json': uniqueList.filter(p => p.ciclo === 'Ciclo C'),
-    'anopar.json': uniqueList.filter(p => p.ciclo === 'Año Par'),
-    'anoimpar.json': uniqueList.filter(p => p.ciclo === 'Año Impar'),
-    'ferias.json': uniqueList.filter(p => p.ciclo === 'Ferias'),
-    'santos.json': uniqueList.filter(p => p.ciclo === 'Santos')
+    'cicloa.json': uniqueList.filter(p => p.ciclo === 'Ciclo A' || (p.id && p.id.startsWith('seua_'))),
+    'ciclob.json': uniqueList.filter(p => p.ciclo === 'Ciclo B' || (p.id && p.id.startsWith('seub_'))),
+    'cicloc.json': uniqueList.filter(p => p.ciclo === 'Ciclo C' || (p.id && p.id.startsWith('seuc_'))),
+    'anopar.json': uniqueList.filter(p => p.ciclo === 'Año Par' || (p.id && p.id.startsWith('seup_'))),
+    'añopar.json': uniqueList.filter(p => p.ciclo === 'Año Par' || (p.id && p.id.startsWith('seup_'))),
+    'anoimpar.json': uniqueList.filter(p => p.ciclo === 'Año Impar' || (p.id && p.id.startsWith('seui_'))),
+    'añoimpar.json': uniqueList.filter(p => p.ciclo === 'Año Impar' || (p.id && p.id.startsWith('seui_'))),
+    'ferias.json': uniqueList.filter(p => p.ciclo === 'Ferias' || (p.id && p.id.startsWith('seuf_'))),
+    'santos.json': uniqueList.filter(p => p.ciclo === 'Santos' || (p.id && p.id.startsWith('seus_')))
   };
 
   Object.entries(ciclosMap).forEach(([file, list]) => {

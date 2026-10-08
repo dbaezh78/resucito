@@ -1,15 +1,11 @@
 {
-  "id": "seua_39",
-  "title": "La Ascensión del Señor",
-  "celebracion": "La Ascensión del Señor",
-  "subtitle": "Salmo responsorial: Salmo 46, 2-3. 6-7. 8-9 (R.: 6)",
-  "salmo": "Salmo responsorial: Salmo 46, 2-3. 6-7. 8-9 (R.: 6)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 425,
   "respuesta": "R. Dios asciende entre aclamaciones; el Señor, al son de trompetas.",
-  "respuestaOpcional": "R. Aleluya.",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 46, 2-3. 6-7. 8-9 (R.: 6)",
+  "celebracion": "La Ascensión del Señor",
+  "orden": 425,
+  "title": "La Ascensión del Señor",
+  "id": "seua_39",
   "estrofas": [
     [
       "Pueblos todos batid palmas,",
@@ -30,12 +26,13 @@
       "Dios se sienta en su trono sagrado. R."
     ]
   ],
-  "textoCompleto": "Pueblos todos batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.\n\nDios asciende entre aclamaciones;\nel Señor, al son de trompetas;\ntocad para Dios, tocad,\ntocad para nuestro Rey, tocad. R.\n\nPorque Dios es el rey del mundo;\ntocad con maestría.\nDios reina sobre las naciones,\nDios se sienta en su trono sagrado. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 46, 2-3. 6-7. 8-9 (R.: 6)",
+  "ciclo": "Ciclo A",
+  "dia": "Domingo",
   "searchPool": "la ascension del senor ciclo a pascua domingo salmo responsorial salmo 46 2 3 6 7 8 9 r 6 r dios asciende entre aclamaciones el senor al son de trompetas r aleluya pueblos todos batid palmas aclamad a dios con gritos de jubilo porque el senor es sublime y terrible emperador de toda la tierra r dios asciende entre aclamaciones el senor al son de trompetas tocad para dios tocad tocad para nuestro rey tocad r porque dios es el rey del mundo tocad con maestria dios reina sobre las naciones dios se sienta en su trono sagrado r",
+  "tiempo": "Pascua",
+  "textoCompleto": "Pueblos todos batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.\n\nDios asciende entre aclamaciones;\nel Señor, al son de trompetas;\ntocad para Dios, tocad,\ntocad para nuestro Rey, tocad. R.\n\nPorque Dios es el rey del mundo;\ntocad con maestría.\nDios reina sobre las naciones,\nDios se sienta en su trono sagrado. R.",
   "lizq": [
     {
       "line": "R. Dios asciende entre aclamaciones;",
@@ -54,8 +51,8 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
       "line": "",
@@ -90,8 +87,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tocad para Dios, tocad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tocad para Dios, tocad,"
     },
     {
       "line": "tocad para nuestro Rey, tocad. R.",
@@ -106,16 +103,19 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tocad con maestría.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tocad con maestría."
     },
     {
-      "line": "Dios reina sobre las naciones,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dios reina sobre las naciones,"
     },
     {
-      "line": "Dios se sienta en su trono sagrado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Dios se sienta en su trono sagrado. R."
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "respuestaOpcional": "R. Aleluya.",
+  "sourceBook": "eucaristia"
 }

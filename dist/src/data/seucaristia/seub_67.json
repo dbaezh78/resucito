@@ -1,15 +1,12 @@
 {
-  "id": "seub_67",
-  "title": "Domingo de la 25ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 25ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 53, 3-4. 5. 6 y 8 (R.: 6b)",
-  "salmo": "Salmo responsorial: Salmo 53, 3-4. 5. 6 y 8 (R.: 6b)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
-  "orden": 525,
-  "respuesta": "R. El Señor sostiene mi vida.",
-  "respuestaOpcional": "",
+  "ciclo": "Ciclo B",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 53, 3-4. 5. 6 y 8 (R.: 6b)",
+  "id": "seub_67",
+  "stage": "Liturgia",
+  "searchPool": "domingo de la 25 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 53 3 4 5 6 y 8 r 6b r el senor sostiene mi vida oh dios salvame por tu nombre sal por mi con tu poder oh dios escucha mi suplica atiende mis palabras r porque unos insolentes se alzan contra mi y hombres violentos me persiguen a muerte sin tener presente a dios r pero dios es mi auxilio el senor sostiene mi vida te ofrecere un sacrificio voluntario dando gracias a tu nombre que es bueno r",
   "estrofas": [
     [
       "Oh Dios, sálvame por tu nombre,",
@@ -30,11 +27,10 @@
     ]
   ],
   "textoCompleto": "Oh Dios, sálvame por tu nombre,\nsal por mí con tu poder.\nOh Dios, escucha mi súplica,\natiende mis palabras. R.\n\nPorque unos insolentes se alzan contra mí,\ny hombres violentos me persiguen a muerte,\nsin tener presente a Dios. R.\n\nPero Dios es mi auxilio,\nel Señor sostiene mi vida.\nTe ofreceré un sacrificio voluntario,\ndando gracias a tu nombre, que es bueno. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 25 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 53 3 4 5 6 y 8 r 6b r el senor sostiene mi vida oh dios salvame por tu nombre sal por mi con tu poder oh dios escucha mi suplica atiende mis palabras r porque unos insolentes se alzan contra mi y hombres violentos me persiguen a muerte sin tener presente a dios r pero dios es mi auxilio el senor sostiene mi vida te ofrecere un sacrificio voluntario dando gracias a tu nombre que es bueno r",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 53, 3-4. 5. 6 y 8 (R.: 6b)",
+  "respuestaOpcional": "",
+  "orden": 525,
   "lizq": [
     {
       "line": "R. El Señor sostiene mi vida.",
@@ -45,28 +41,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Oh Dios, sálvame por tu nombre,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Oh Dios, sálvame por tu nombre,"
     },
     {
       "line": "sal por mí con tu poder.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Oh Dios, escucha mi súplica,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Oh Dios, escucha mi súplica,"
     },
     {
       "line": "atiende mis palabras. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Porque unos insolentes se alzan contra mí,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque unos insolentes se alzan contra mí,"
     },
     {
       "line": "y hombres violentos me persiguen a muerte,",
@@ -81,20 +77,24 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Pero Dios es mi auxilio,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Pero Dios es mi auxilio,"
     },
     {
       "line": "el Señor sostiene mi vida.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Te ofreceré un sacrificio voluntario,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Te ofreceré un sacrificio voluntario,"
     },
     {
-      "line": "dando gracias a tu nombre, que es bueno. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "dando gracias a tu nombre, que es bueno. R."
     }
-  ]
+  ],
+  "hasAudio": false,
+  "celebracion": "Domingo de la 25ª semana de Tiempo Ordinario",
+  "title": "Domingo de la 25ª semana de Tiempo Ordinario",
+  "respuesta": "R. El Señor sostiene mi vida."
 }

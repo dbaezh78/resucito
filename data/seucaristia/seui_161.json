@@ -1,49 +1,13 @@
 {
-  "id": "seui_161",
   "title": "Viernes de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 9, 2-3. 6 y 16. 8-9 (R.: 9a)",
-  "salmo": "Salmo responsorial: Salmo 9, 2-3. 6 y 16. 8-9 (R.: 9a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5275,
-  "respuesta": "R. El Señor juzgará el orbe con justicia.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Te doy gracias, Señor, de todo corazón,",
-      "proclamando todas tus maravillas;",
-      "me alegro y exulto contigo",
-      "y toco en honor de tu nombre, oh Altísimo. R."
-    ],
-    [
-      "Reprendiste a los pueblos, destruiste al impío",
-      "y borraste para siempre su apellido.",
-      "Los pueblos se han hundido en la fosa que hicieron,",
-      "su pie quedó prendido en la red que escondieron. R."
-    ],
-    [
-      "Dios está sentado por siempre",
-      "en el trono que ha colocado para juzgar.",
-      "Él juzgará el orbe con justicia",
-      "y regirá las naciones con rectitud. R."
-    ]
-  ],
-  "textoCompleto": "Te doy gracias, Señor, de todo corazón,\nproclamando todas tus maravillas;\nme alegro y exulto contigo\ny toco en honor de tu nombre, oh Altísimo. R.\n\nReprendiste a los pueblos, destruiste al impío\ny borraste para siempre su apellido.\nLos pueblos se han hundido en la fosa que hicieron,\nsu pie quedó prendido en la red que escondieron. R.\n\nDios está sentado por siempre\nen el trono que ha colocado para juzgar.\nÉl juzgará el orbe con justicia\ny regirá las naciones con rectitud. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 27 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 9 2 3 6 y 16 8 9 r 9a semana 27 semana xxvii viernes 27 xxvii r el senor juzgara el orbe con justicia te doy gracias senor de todo corazon proclamando todas tus maravillas me alegro y exulto contigo y toco en honor de tu nombre oh altisimo r reprendiste a los pueblos destruiste al impio y borraste para siempre su apellido los pueblos se han hundido en la fosa que hicieron su pie quedo prendido en la red que escondieron r dios esta sentado por siempre en el trono que ha colocado para juzgar el juzgara el orbe con justicia y regira las naciones con rectitud r",
   "lizq": [
     {
       "line": "R. El Señor juzgará el orbe con justicia.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Te doy gracias, Señor, de todo corazón,",
@@ -70,8 +34,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y borraste para siempre su apellido.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y borraste para siempre su apellido."
     },
     {
       "line": "Los pueblos se han hundido en la fosa que hicieron,",
@@ -90,16 +54,52 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "en el trono que ha colocado para juzgar.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en el trono que ha colocado para juzgar."
     },
     {
       "line": "Él juzgará el orbe con justicia",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y regirá las naciones con rectitud. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y regirá las naciones con rectitud. R."
     }
-  ]
+  ],
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Te doy gracias, Señor, de todo corazón,\nproclamando todas tus maravillas;\nme alegro y exulto contigo\ny toco en honor de tu nombre, oh Altísimo. R.\n\nReprendiste a los pueblos, destruiste al impío\ny borraste para siempre su apellido.\nLos pueblos se han hundido en la fosa que hicieron,\nsu pie quedó prendido en la red que escondieron. R.\n\nDios está sentado por siempre\nen el trono que ha colocado para juzgar.\nÉl juzgará el orbe con justicia\ny regirá las naciones con rectitud. R.",
+  "dia": "Viernes",
+  "hasAudio": false,
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 9, 2-3. 6 y 16. 8-9 (R.: 9a)",
+  "subtitle": "Salmo responsorial: Salmo 9, 2-3. 6 y 16. 8-9 (R.: 9a)",
+  "stage": "Liturgia",
+  "searchPool": "viernes de la 27 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 9 2 3 6 y 16 8 9 r 9a semana 27 semana xxvii viernes 27 xxvii r el senor juzgara el orbe con justicia te doy gracias senor de todo corazon proclamando todas tus maravillas me alegro y exulto contigo y toco en honor de tu nombre oh altisimo r reprendiste a los pueblos destruiste al impio y borraste para siempre su apellido los pueblos se han hundido en la fosa que hicieron su pie quedo prendido en la red que escondieron r dios esta sentado por siempre en el trono que ha colocado para juzgar el juzgara el orbe con justicia y regira las naciones con rectitud r",
+  "orden": 5275,
+  "estrofas": [
+    [
+      "Te doy gracias, Señor, de todo corazón,",
+      "proclamando todas tus maravillas;",
+      "me alegro y exulto contigo",
+      "y toco en honor de tu nombre, oh Altísimo. R."
+    ],
+    [
+      "Reprendiste a los pueblos, destruiste al impío",
+      "y borraste para siempre su apellido.",
+      "Los pueblos se han hundido en la fosa que hicieron,",
+      "su pie quedó prendido en la red que escondieron. R."
+    ],
+    [
+      "Dios está sentado por siempre",
+      "en el trono que ha colocado para juzgar.",
+      "Él juzgará el orbe con justicia",
+      "y regirá las naciones con rectitud. R."
+    ]
+  ],
+  "respuesta": "R. El Señor juzgará el orbe con justicia.",
+  "respuestaOpcional": "",
+  "celebracion": "Viernes de la 27ª semana de Tiempo Ordinario",
+  "id": "seui_161",
+  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía"
 }

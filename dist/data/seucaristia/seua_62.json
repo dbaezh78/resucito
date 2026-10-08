@@ -1,15 +1,13 @@
 {
-  "id": "seua_62",
-  "title": "Domingo de la 18ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 18ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 144, 8-9. 15-16. 17-18 (R.: cf. 16)",
-  "salmo": "Salmo responsorial: Salmo 144, 8-9. 15-16. 17-18 (R.: cf. 16)",
-  "ciclo": "Ciclo A",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
+  "salmo": "Salmo responsorial: Salmo 144, 8-9. 15-16. 17-18 (R.: cf. 16)",
+  "celebracion": "Domingo de la 18ª semana de Tiempo Ordinario",
   "orden": 518,
-  "respuesta": "R. Abres tú la mano, Señor, y nos sacias de favores.",
-  "respuestaOpcional": "",
+  "searchPool": "domingo de la 18 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 144 8 9 15 16 17 18 r cf 16 r abres tu la mano senor y nos sacias de favores el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r los ojos de todos te estan aguardando tu les das la comida a su tiempo abres tu la mano y sacias de favores a todo viviente r el senor es justo en todos sus caminos es bondadoso en todas sus acciones cerca esta el senor de los que lo invocan de los que lo invocan sinceramente r",
+  "subtitle": "Salmo responsorial: Salmo 144, 8-9. 15-16. 17-18 (R.: cf. 16)",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Domingo",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "El Señor es clemente y misericordioso,",
@@ -30,24 +28,24 @@
       "de los que lo invocan sinceramente. R."
     ]
   ],
-  "textoCompleto": "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nLos ojos de todos te están aguardando,\ntú les das la comida a su tiempo;\nabres tú la mano,\ny sacias de favores a todo viviente. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Abres tú la mano, Señor, y nos sacias de favores.",
+  "title": "Domingo de la 18ª semana de Tiempo Ordinario",
+  "ciclo": "Ciclo A",
+  "respuestaOpcional": "",
+  "id": "seua_62",
   "hasAudio": false,
-  "searchPool": "domingo de la 18 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 144 8 9 15 16 17 18 r cf 16 r abres tu la mano senor y nos sacias de favores el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r los ojos de todos te estan aguardando tu les das la comida a su tiempo abres tu la mano y sacias de favores a todo viviente r el senor es justo en todos sus caminos es bondadoso en todas sus acciones cerca esta el senor de los que lo invocan de los que lo invocan sinceramente r",
   "lizq": [
     {
-      "line": "R. Abres tú la mano, Señor,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Abres tú la mano, Señor,"
     },
     {
       "line": "y nos sacias de favores.",
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es clemente y misericordioso,",
@@ -62,24 +60,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "es cariñoso con todas sus criaturas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "es cariñoso con todas sus criaturas. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Los ojos de todos te están aguardando,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los ojos de todos te están aguardando,"
     },
     {
       "line": "tú les das la comida a su tiempo;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "abres tú la mano,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "abres tú la mano,"
     },
     {
       "line": "y sacias de favores a todo viviente. R.",
@@ -98,12 +96,14 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "cerca está el Señor de los que lo invocan,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cerca está el Señor de los que lo invocan,"
     },
     {
-      "line": "de los que lo invocan sinceramente. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de los que lo invocan sinceramente. R."
     }
-  ]
+  ],
+  "textoCompleto": "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nLos ojos de todos te están aguardando,\ntú les das la comida a su tiempo;\nabres tú la mano,\ny sacias de favores a todo viviente. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
+  "stage": "Liturgia"
 }

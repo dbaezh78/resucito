@@ -527,14 +527,49 @@ export async function cargarSalmosEucaristia() {
     return salmosEucaristiaList;
   }
 
-  const isFirebaseMode = (typeof localStorage !== 'undefined') && localStorage.getItem('resucito_eucaristia_source') === 'firebase';
-  if (isFirebaseMode) {
+  function normalizeStrophesList(strophes) {
+    if (!Array.isArray(strophes)) return strophes;
+    return strophes.map(st => {
+      if (Array.isArray(st)) return st;
+      if (typeof st === 'string') return st.split(/\r?\n/);
+      return [String(st)];
+    });
+  }
+
+  function normalizePsalm(item) {
+    if (!item) return item;
+    const clone = { ...item };
+    if (Array.isArray(clone.estrofas)) {
+      clone.estrofas = normalizeStrophesList(clone.estrofas);
+    }
+    if (Array.isArray(clone.lizq)) {
+      clone.lizq = clone.lizq.map(lz => {
+        if (lz && Array.isArray(lz.variants)) {
+          return {
+            ...lz,
+            variants: lz.variants.map(v => ({
+              ...v,
+              strophes: normalizeStrophesList(v.strophes)
+            }))
+          };
+        }
+        return lz;
+      });
+    }
+    return clone;
+  }
+
+  const isLocalOnly = (typeof localStorage !== 'undefined') && localStorage.getItem('resucito_eucaristia_source') === 'local_only';
+  const hasNetwork = (typeof navigator === 'undefined') || (navigator.onLine !== false);
+
+  // 1. Siempre intentar cargar desde Firebase Firestore si hay conexión y no se forzó solo local
+  if (!isLocalOnly && hasNetwork) {
     try {
-      console.log('🔄 [Eucaristía] Modo Firebase activo: cargando salmos desde Firebase Firestore...');
+      console.log('🔄 [Eucaristía] Conexión disponible: consultando salmos desde Firebase Cloud Firestore...');
       const { db, collection, getDocs } = await import('./firebase.js');
-      const cloudItems = [];
+      let cloudItems = [];
       
-      // 1. Intentar colecciones agrupadas por ciclo (optimizado: 7 lecturas)
+      // Intentar primero paquetes agrupados por ciclo
       try {
         const ciclosSnap = await getDocs(collection(db, 'salmos_eucaristia_ciclos'));
         if (!ciclosSnap.empty) {
@@ -546,11 +581,12 @@ export async function cargarSalmosEucaristia() {
           });
         }
       } catch (eCiclos) {
-        console.debug('No se pudieron leer ciclos agrupados de Firebase:', eCiclos);
+        console.debug('Aviso al leer paquetes de ciclos de Firebase:', eCiclos);
       }
 
-      // 2. Si no hay agrupados, consultar colección individual
-      if (cloudItems.length === 0) {
+      // Si no hay paquetes o están incompletos (< 900 salmos), consultar colección individual completa (981 salmos)
+      if (cloudItems.length < 900) {
+        cloudItems = [];
         const salmosSnap = await getDocs(collection(db, 'salmos_eucaristia'));
         if (!salmosSnap.empty) {
           salmosSnap.forEach(d => {
@@ -562,9 +598,10 @@ export async function cargarSalmosEucaristia() {
       if (cloudItems.length > 0) {
         const combined = [];
         const seen = new Set();
-        cloudItems.forEach(item => {
-          if (item && item.id && !seen.has(item.id)) {
-            seen.add(item.id);
+        cloudItems.forEach(rawItem => {
+          if (rawItem && rawItem.id && !seen.has(rawItem.id)) {
+            seen.add(rawItem.id);
+            const item = normalizePsalm(rawItem);
             combined.push(item);
             loadedSongsCache[item.id] = item;
           }
@@ -582,14 +619,16 @@ export async function cargarSalmosEucaristia() {
         }
         return salmosEucaristiaList;
       } else {
-        console.warn('⚠️ [Firebase] No se encontraron salmos en Firebase. Usando almacenamiento local como respaldo.');
+        console.warn('⚠️ [Firebase] Colección vacía en la nube. Usando almacenamiento local como respaldo.');
       }
     } catch (fbErr) {
-      console.warn('⚠️ [Firebase] Error al cargar salmos de la nube. Usando respaldo local:', fbErr);
+      console.warn('⚠️ [Firebase] No se pudo conectar a Firebase. Usando respaldo local:', fbErr);
     }
   }
 
+  // 2. Respaldo Local: si no hay internet, falla Firebase o modo solo local
   try {
+    console.log('📂 [Eucaristía] Cargando salmos desde almacenamiento local (data/seucaristia/)...');
     const files = ['cicloa.json', 'ciclob.json', 'cicloc.json', 'anopar.json', 'anoimpar.json', 'ferias.json', 'santos.json'];
     const responses = await Promise.all(
       files.map(f => fetch(`data/seucaristia/${f}`).then(r => r.ok ? r.json() : []).catch(() => []))
@@ -598,9 +637,10 @@ export async function cargarSalmosEucaristia() {
     const seen = new Set();
     responses.forEach(list => {
       if (Array.isArray(list)) {
-        list.forEach(item => {
-          if (item && item.id && !seen.has(item.id)) {
-            seen.add(item.id);
+        list.forEach(rawItem => {
+          if (rawItem && rawItem.id && !seen.has(rawItem.id)) {
+            seen.add(rawItem.id);
+            const item = normalizePsalm(rawItem);
             combined.push(item);
             loadedSongsCache[item.id] = item;
           }
@@ -609,6 +649,7 @@ export async function cargarSalmosEucaristia() {
     });
     salmosEucaristiaList = combined;
     salmosEucaristiaCargados = true;
+    console.log(`✅ [Local] ${salmosEucaristiaList.length} salmos eucarísticos cargados desde archivos locales.`);
 
     if (Array.isArray(allSongs)) {
       salmosEucaristiaList.forEach(s => {
@@ -619,11 +660,26 @@ export async function cargarSalmosEucaristia() {
     }
     return salmosEucaristiaList;
   } catch (e) {
-    console.error('Error al cargar salmos de la Eucaristía:', e);
+    console.error('Error al cargar salmos de la Eucaristía locales:', e);
     return [];
   }
 }
 window.cargarSalmosEucaristia = cargarSalmosEucaristia;
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('online', () => {
+    const isLocalOnly = (typeof localStorage !== 'undefined') && localStorage.getItem('resucito_eucaristia_source') === 'local_only';
+    if (!isLocalOnly) {
+      console.log('🌐 [Eucaristía] Conexión a internet restablecida: sincronizando salmos con Firebase Cloud...');
+      salmosEucaristiaCargados = false;
+      cargarSalmosEucaristia().then(() => {
+        if (typeof window.handleSearchAndFilters === 'function') {
+          window.handleSearchAndFilters();
+        }
+      }).catch(console.error);
+    }
+  });
+}
 
 // --- Inicialización ---
 document.addEventListener('DOMContentLoaded', async () => {
@@ -977,12 +1033,38 @@ async function loadSongView(songId) {
     }
     
     if (!songData) {
-      const folder = songId.startsWith('aet') ? 'data/songs-ae' : (songId.startsWith('seu') ? 'data/seucaristia' : 'data/songs');
-      const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
-      const response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`);
-      if (!response.ok) throw new Error('Canto no encontrado');
-      songData = await response.json();
-      loadedSongsCache[songId] = songData;
+      if (songId.startsWith('seu') && (typeof navigator === 'undefined' || navigator.onLine !== false)) {
+        try {
+          const isLocalOnly = (typeof localStorage !== 'undefined') && localStorage.getItem('resucito_eucaristia_source') === 'local_only';
+          if (!isLocalOnly) {
+            const { db, doc, getDoc } = await import('./firebase.js');
+            const dSnap = await getDoc(doc(db, 'salmos_eucaristia', songId));
+            if (dSnap.exists()) {
+              const data = { id: dSnap.id, ...dSnap.data() };
+              if (Array.isArray(data.estrofas)) {
+                data.estrofas = data.estrofas.map(st => {
+                  if (Array.isArray(st)) return st;
+                  if (typeof st === 'string') return st.split(/\r?\n/);
+                  return [String(st)];
+                });
+              }
+              songData = data;
+              loadedSongsCache[songId] = songData;
+            }
+          }
+        } catch (e) {
+          console.debug('Fallback local para salmo eucarístico individual:', songId);
+        }
+      }
+
+      if (!songData) {
+        const folder = songId.startsWith('aet') ? 'data/songs-ae' : (songId.startsWith('seu') ? 'data/seucaristia' : 'data/songs');
+        const isOffline = localStorage.getItem('cantoEquipoOffline') === 'true';
+        const response = await fetch(`${folder}/${songId}.json?offline=${isOffline}`);
+        if (!response.ok) throw new Error('Canto no encontrado');
+        songData = await response.json();
+        loadedSongsCache[songId] = songData;
+      }
     }
     currentCanto = songData;
     window.currentCanto = currentCanto;

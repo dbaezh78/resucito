@@ -1,15 +1,6 @@
 {
-  "id": "seup_031",
-  "title": "Lunes de la 6ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 6ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 67. 68. 71. 72. 75. 76 (R.: 77a)",
-  "salmo": "Salmo responsorial: Salmo 118, 67. 68. 71. 72. 75. 76 (R.: 77a)",
-  "ciclo": "Año Par",
+  "searchPool": "lunes de la 6 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 118 67 68 71 72 75 76 r 77a semana 6 semana vi lunes 6 vi r cuando me alcance tu compasion vivire senor antes de sufrir yo andaba extraviado pero ahora me ajusto a tu promesa r tu eres bueno y haces el bien instruyeme en tus leyes r me estuvo bien el sufrir asi aprendi tus mandamientos r mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r reconozco senor que tus mandamientos son justos que con razon me hiciste sufrir r que tu bondad me consuele segun la promesa hecha a tu siervo r",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5061,
-  "respuesta": "R. Cuando me alcance tu compasión, viviré, Señor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Antes de sufrir, yo andaba extraviado,",
@@ -36,16 +27,11 @@
       "según la promesa hecha a tu siervo. R."
     ]
   ],
-  "textoCompleto": "Antes de sufrir, yo andaba extraviado,\npero ahora me ajusto a tu promesa. R.\n\nTú eres bueno y haces el bien;\ninstrúyeme en tus leyes. R.\n\nMe estuvo bien el sufrir,\nasí aprendí tus mandamientos. R.\n\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nReconozco, Señor, que tus mandamientos son justos,\nque con razón me hiciste sufrir. R.\n\nQue tu bondad me consuele,\nsegún la promesa hecha a tu siervo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 6 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 118 67 68 71 72 75 76 r 77a semana 6 semana vi lunes 6 vi r cuando me alcance tu compasion vivire senor antes de sufrir yo andaba extraviado pero ahora me ajusto a tu promesa r tu eres bueno y haces el bien instruyeme en tus leyes r me estuvo bien el sufrir asi aprendi tus mandamientos r mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r reconozco senor que tus mandamientos son justos que con razon me hiciste sufrir r que tu bondad me consuele segun la promesa hecha a tu siervo r",
   "lizq": [
     {
-      "line": "R. Cuando me alcance tu compasión, viviré, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Cuando me alcance tu compasión, viviré, Señor."
     },
     {
       "line": "",
@@ -72,40 +58,40 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Me estuvo bien el sufrir,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "así aprendí tus mandamientos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "así aprendí tus mandamientos. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Más estimo yo los preceptos de tu boca",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Más estimo yo los preceptos de tu boca"
     },
     {
       "line": "que miles de monedas de oro y plata. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Reconozco, Señor, que tus mandamientos son justos,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que con razón me hiciste sufrir. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que con razón me hiciste sufrir. R."
     },
     {
       "line": "",
@@ -119,5 +105,19 @@
       "line": "según la promesa hecha a tu siervo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "id": "seup_031",
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
+  "respuestaOpcional": "",
+  "textoCompleto": "Antes de sufrir, yo andaba extraviado,\npero ahora me ajusto a tu promesa. R.\n\nTú eres bueno y haces el bien;\ninstrúyeme en tus leyes. R.\n\nMe estuvo bien el sufrir,\nasí aprendí tus mandamientos. R.\n\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nReconozco, Señor, que tus mandamientos son justos,\nque con razón me hiciste sufrir. R.\n\nQue tu bondad me consuele,\nsegún la promesa hecha a tu siervo. R.",
+  "title": "Lunes de la 6ª semana de Tiempo Ordinario",
+  "dia": "Lunes",
+  "celebracion": "Lunes de la 6ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "respuesta": "R. Cuando me alcance tu compasión, viviré, Señor.",
+  "orden": 5061,
+  "subtitle": "Salmo responsorial: Salmo 118, 67. 68. 71. 72. 75. 76 (R.: 77a)",
+  "ciclo": "Año Par",
+  "salmo": "Salmo responsorial: Salmo 118, 67. 68. 71. 72. 75. 76 (R.: 77a)"
 }

@@ -1,22 +1,75 @@
 {
-  "id": "seuf_043",
-  "title": "Sábado después de Cenizas",
-  "celebracion": "Sábado después de Cenizas",
-  "subtitle": "Salmo 85, 1-2. 3-4. 5-6 (R.: 11a)",
   "salmo": "Salmo 85, 1-2. 3-4. 5-6 (R.: 11a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
+  "lizq": [
+    {
+      "line": "R. Enséñame, Señor, tu camino,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "para que siga tu verdad."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Inclina tu oído, Señor, escúchame,"
+    },
+    {
+      "line": "que soy un pobre desamparado;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "protege mi vida, que soy un fiel tuyo;"
+    },
+    {
+      "line": "salva a tu siervo, que confía en ti. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú eres mi Dios, piedad de mí, Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que a ti te estoy llamando todo el día;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alegra el alma de tu siervo,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "pues levanto mi alma hacia ti. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque tú, Señor, eres bueno y clemente,"
+    },
+    {
+      "line": "rico en misericordia con los que te invocan.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Señor, escucha mi oración,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "atiende a la voz de mi súplica. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Miércoles",
-  "orden": 300,
-  "respuesta": "R. Enséñame, Señor, tu camino, para que siga tu verdad.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Inclina tu oído, Señor, escúchame,",
@@ -37,80 +90,27 @@
       "atiende a la voz de mi súplica. R."
     ]
   ],
-  "textoCompleto": "Inclina tu oído, Señor, escúchame,\nque soy un pobre desamparado;\nprotege mi vida, que soy un fiel tuyo;\nsalva a tu siervo, que confía en ti. R.\n\nTú eres mi Dios, piedad de mí, Señor,\nque a ti te estoy llamando todo el día;\nalegra el alma de tu siervo,\npues levanto mi alma hacia ti. R.\n\nPorque tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende a la voz de mi súplica. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo 85, 1-2. 3-4. 5-6 (R.: 11a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "id": "seuf_043",
+  "title": "Sábado después de Cenizas",
+  "dia": "Miércoles",
+  "orden": 300,
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "sourceBook": "eucaristia",
+  "celebracion": "Sábado después de Cenizas",
+  "textoCompleto": "Inclina tu oído, Señor, escúchame,\nque soy un pobre desamparado;\nprotege mi vida, que soy un fiel tuyo;\nsalva a tu siervo, que confía en ti. R.\n\nTú eres mi Dios, piedad de mí, Señor,\nque a ti te estoy llamando todo el día;\nalegra el alma de tu siervo,\npues levanto mi alma hacia ti. R.\n\nPorque tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende a la voz de mi súplica. R.",
   "searchPool": "sabado despues de cenizas ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles salmo 85 1 2 3 4 5 6 r 11a miercoles feria r ensename senor tu camino para que siga tu verdad inclina tu oido senor escuchame que soy un pobre desamparado protege mi vida que soy un fiel tuyo salva a tu siervo que confia en ti r tu eres mi dios piedad de mi senor que a ti te estoy llamando todo el dia alegra el alma de tu siervo pues levanto mi alma hacia ti r porque tu senor eres bueno y clemente rico en misericordia con los que te invocan senor escucha mi oracion atiende a la voz de mi suplica r",
-  "lizq": [
-    {
-      "line": "R. Enséñame, Señor, tu camino,",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "para que siga tu verdad.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Inclina tu oído, Señor, escúchame,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que soy un pobre desamparado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "protege mi vida, que soy un fiel tuyo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "salva a tu siervo, que confía en ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tú eres mi Dios, piedad de mí, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que a ti te estoy llamando todo el día;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "alegra el alma de tu siervo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "pues levanto mi alma hacia ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Porque tú, Señor, eres bueno y clemente,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "rico en misericordia con los que te invocan.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Señor, escucha mi oración,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "atiende a la voz de mi súplica. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "ciclo": "Ciclo A, B y C",
+  "tiempo": "Cuaresma",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "hasAudio": false,
+  "respuesta": "R. Enséñame, Señor, tu camino, para que siga tu verdad."
 }

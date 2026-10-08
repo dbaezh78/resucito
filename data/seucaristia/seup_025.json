@@ -1,15 +1,75 @@
 {
-  "id": "seup_025",
-  "title": "Lunes de la 5ª semana de Tiempo Ordinario",
+  "respuesta": "R. Levántate, Señor, ven a tu mansión.",
   "celebracion": "Lunes de la 5ª semana de Tiempo Ordinario",
+  "title": "Lunes de la 5ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 131, 6-7. 8-10 (R.: 8a)",
+  "id": "seup_025",
+  "hasAudio": false,
   "salmo": "Salmo responsorial: Salmo 131, 6-7. 8-10 (R.: 8a)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5051,
-  "respuesta": "R. Levántate, Señor, ven a tu mansión.",
   "respuestaOpcional": "",
+  "orden": 5051,
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Oímos que estaba en Efrata,\nla encontramos en el Soto de Jaar:\nentremos en su morada,\npostrémonos ante el estrado de sus pies. R.\n\nLevántate, Señor, ven a tu mansión,\nven con el arca de tu poder:\nque tus sacerdotes se vistan de gala,\nque tus fieles vitoreen.\nPor amor a tu siervo David,\nno niegues audiencia a tu Ungido. R.",
+  "searchPool": "lunes de la 5 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 131 6 7 8 10 r 8a semana 5 semana v lunes 5 v r levantate senor ven a tu mansion oimos que estaba en efrata la encontramos en el soto de jaar entremos en su morada postremonos ante el estrado de sus pies r levantate senor ven a tu mansion ven con el arca de tu poder que tus sacerdotes se vistan de gala que tus fieles vitoreen por amor a tu siervo david no niegues audiencia a tu ungido r",
+  "lizq": [
+    {
+      "line": "R. Levántate, Señor, ven a tu mansión.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Oímos que estaba en Efrata,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la encontramos en el Soto de Jaar:"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "entremos en su morada,"
+    },
+    {
+      "line": "postrémonos ante el estrado de sus pies. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Levántate, Señor, ven a tu mansión,"
+    },
+    {
+      "line": "ven con el arca de tu poder:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que tus sacerdotes se vistan de gala,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que tus fieles vitoreen."
+    },
+    {
+      "line": "Por amor a tu siervo David,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no niegues audiencia a tu Ungido. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "dia": "Lunes",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Oímos que estaba en Efrata,",
@@ -25,65 +85,5 @@
       "Por amor a tu siervo David,",
       "no niegues audiencia a tu Ungido. R."
     ]
-  ],
-  "textoCompleto": "Oímos que estaba en Efrata,\nla encontramos en el Soto de Jaar:\nentremos en su morada,\npostrémonos ante el estrado de sus pies. R.\n\nLevántate, Señor, ven a tu mansión,\nven con el arca de tu poder:\nque tus sacerdotes se vistan de gala,\nque tus fieles vitoreen.\nPor amor a tu siervo David,\nno niegues audiencia a tu Ungido. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 5 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 131 6 7 8 10 r 8a semana 5 semana v lunes 5 v r levantate senor ven a tu mansion oimos que estaba en efrata la encontramos en el soto de jaar entremos en su morada postremonos ante el estrado de sus pies r levantate senor ven a tu mansion ven con el arca de tu poder que tus sacerdotes se vistan de gala que tus fieles vitoreen por amor a tu siervo david no niegues audiencia a tu ungido r",
-  "lizq": [
-    {
-      "line": "R. Levántate, Señor, ven a tu mansión.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Oímos que estaba en Efrata,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "la encontramos en el Soto de Jaar:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "entremos en su morada,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "postrémonos ante el estrado de sus pies. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Levántate, Señor, ven a tu mansión,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ven con el arca de tu poder:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tus sacerdotes se vistan de gala,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tus fieles vitoreen.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Por amor a tu siervo David,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no niegues audiencia a tu Ungido. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
   ]
 }

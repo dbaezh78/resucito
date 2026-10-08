@@ -1,15 +1,5 @@
 {
-  "id": "seui_027",
   "title": "Miércoles de la 5ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 5ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 27-28. 29bc-30 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 27-28. 29bc-30 (R.: 1a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5053,
-  "respuesta": "R. Bendice, alma mía, al Señor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Bendice, alma mía, al Señor,",
@@ -30,12 +20,6 @@
       "y repueblas la faz de la tierra. R."
     ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor,\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nTodos ellos aguardan\na que les eches comida a su tiempo:\nse la echas, y la atrapan;\nabres tu mano, y se sacian de bienes. R.\n\nLes retiras el aliento, y expiran,\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 5 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 103 1 2a 27 28 29bc 30 r 1a semana 5 semana v miercoles 5 v r bendice alma mia al senor bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r todos ellos aguardan a que les eches comida a su tiempo se la echas y la atrapan abres tu mano y se sacian de bienes r les retiras el aliento y expiran y vuelven a ser polvo envias tu aliento y los creas y repueblas la faz de la tierra r",
   "lizq": [
     {
       "line": "R. Bendice, alma mía, al Señor.",
@@ -46,8 +30,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Bendice, alma mía, al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Bendice, alma mía, al Señor,"
     },
     {
       "line": "¡Dios mío, qué grande eres!",
@@ -62,8 +46,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Todos ellos aguardan",
@@ -74,8 +58,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "se la echas, y la atrapan;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "se la echas, y la atrapan;"
     },
     {
       "line": "abres tu mano, y se sacian de bienes. R.",
@@ -98,8 +82,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y repueblas la faz de la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y repueblas la faz de la tierra. R."
     }
-  ]
+  ],
+  "textoCompleto": "Bendice, alma mía, al Señor,\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nTodos ellos aguardan\na que les eches comida a su tiempo:\nse la echas, y la atrapan;\nabres tu mano, y se sacian de bienes. R.\n\nLes retiras el aliento, y expiran,\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.",
+  "celebracion": "Miércoles de la 5ª semana de Tiempo Ordinario",
+  "ciclo": "Año Impar",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 27-28. 29bc-30 (R.: 1a)",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Bendice, alma mía, al Señor.",
+  "stage": "Liturgia",
+  "orden": 5053,
+  "sourceBook": "eucaristia",
+  "id": "seui_027",
+  "dia": "Miércoles",
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 5 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 103 1 2a 27 28 29bc 30 r 1a semana 5 semana v miercoles 5 v r bendice alma mia al senor bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r todos ellos aguardan a que les eches comida a su tiempo se la echas y la atrapan abres tu mano y se sacian de bienes r les retiras el aliento y expiran y vuelven a ser polvo envias tu aliento y los creas y repueblas la faz de la tierra r",
+  "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 27-28. 29bc-30 (R.: 1a)"
 }

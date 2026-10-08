@@ -1,15 +1,9 @@
 {
-  "id": "seui_036",
+  "catCanto": "Salmo Eucaristía",
   "title": "Sábado de la 6ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 6ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 4-5. 10-11 (R.: cf. 1b)",
-  "salmo": "Salmo responsorial: Salmo 144, 2-3. 4-5. 10-11 (R.: cf. 1b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
   "orden": 5066,
-  "respuesta": "R. Bendeciré tu nombre; Señor, por siempre.",
-  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
+  "id": "seui_036",
   "estrofas": [
     [
       "Día tras día te bendeciré",
@@ -30,12 +24,8 @@
       "que hablen de tus hazañas. R."
     ]
   ],
-  "textoCompleto": "Día tras día te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nUna generación pondera tus obras a la otra,\ny le cuenta tus hazañas.\nAlaban ellos la gloria de tu majestad,\ny yo repito tus maravillas. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 6 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 144 2 3 4 5 10 11 r cf 1b semana 6 semana vi sabado 6 vi r bendecire tu nombre senor por siempre dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r una generacion pondera tus obras a la otra y le cuenta tus hazanas alaban ellos la gloria de tu majestad y yo repito tus maravillas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r",
+  "salmo": "Salmo responsorial: Salmo 144, 2-3. 4-5. 10-11 (R.: cf. 1b)",
   "lizq": [
     {
       "line": "R. Bendeciré tu nombre; Señor, por siempre.",
@@ -50,32 +40,32 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y alabaré tu nombre por siempre jamás.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y alabaré tu nombre por siempre jamás."
     },
     {
       "line": "Grande es el Señor, merece toda alabanza,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "es incalculable su grandeza. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "es incalculable su grandeza. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Una generación pondera tus obras a la otra,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y le cuenta tus hazañas.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y le cuenta tus hazañas."
     },
     {
-      "line": "Alaban ellos la gloria de tu majestad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Alaban ellos la gloria de tu majestad,"
     },
     {
       "line": "y yo repito tus maravillas. R.",
@@ -94,12 +84,22 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que proclamen la gloria de tu reinado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que proclamen la gloria de tu reinado,"
     },
     {
-      "line": "que hablen de tus hazañas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que hablen de tus hazañas. R."
     }
-  ]
+  ],
+  "ciclo": "Año Impar",
+  "celebracion": "Sábado de la 6ª semana de Tiempo Ordinario",
+  "respuesta": "R. Bendeciré tu nombre; Señor, por siempre.",
+  "dia": "Sábado",
+  "textoCompleto": "Día tras día te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nUna generación pondera tus obras a la otra,\ny le cuenta tus hazañas.\nAlaban ellos la gloria de tu majestad,\ny yo repito tus maravillas. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
+  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 4-5. 10-11 (R.: cf. 1b)",
+  "sourceBook": "eucaristia",
+  "searchPool": "sabado de la 6 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 144 2 3 4 5 10 11 r cf 1b semana 6 semana vi sabado 6 vi r bendecire tu nombre senor por siempre dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r una generacion pondera tus obras a la otra y le cuenta tus hazanas alaban ellos la gloria de tu majestad y yo repito tus maravillas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r",
+  "respuestaOpcional": "",
+  "hasAudio": false
 }

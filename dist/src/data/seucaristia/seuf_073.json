@@ -1,10 +1,5 @@
 {
   "id": "seuf_073",
-  "title": "Miércoles de la 5ª semana de Cuaresma",
-  "celebracion": "Miércoles de la 5ª semana de Cuaresma",
-  "subtitle": "Daniel 3, 52. 53. 54. 55. 56",
-  "salmo": "Daniel 3, 52. 53. 54. 55. 56",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +7,20 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
+  "subtitle": "Daniel 3, 52. 53. 54. 55. 56",
+  "sourceBook": "eucaristia",
+  "searchPool": "miercoles de la 5 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles daniel 3 52 53 54 55 56 semana 5 semana v miercoles feria r a ti gloria y alabanza por los siglos bendito eres senor dios de nuestros padres bendito tu nombre santo y glorioso r bendito eres en el templo de tu santa gloria r bendito eres sobre el trono de tu reino r bendito eres tu que sentado sobre querubines sondeas los abismos r bendito eres en la boveda del cielo r",
+  "respuestaOpcional": "",
+  "respuesta": "R. A ti gloria y alabanza por los siglos.",
+  "hasAudio": false,
+  "celebracion": "Miércoles de la 5ª semana de Cuaresma",
+  "stage": "Liturgia",
   "dia": "Miércoles",
   "orden": 353,
-  "respuesta": "R. A ti gloria y alabanza por los siglos.",
-  "respuestaOpcional": "",
+  "ciclo": "Ciclo A, B y C",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Daniel 3, 52. 53. 54. 55. 56",
+  "textoCompleto": "Bendito eres, Señor, Dios de nuestros padres,\nbendito tu nombre santo y glorioso. R.\n\nBendito eres en el templo de tu santa gloria. R.\n\nBendito eres sobre el trono de tu reino. R.\n\nBendito eres tú, que sentado sobre querubines\nsondeas los abismos. R.\n\nBendito eres en la bóveda del cielo. R.",
   "estrofas": [
     [
       "Bendito eres, Señor, Dios de nuestros padres,",
@@ -36,20 +40,14 @@
       "Bendito eres en la bóveda del cielo. R."
     ]
   ],
-  "textoCompleto": "Bendito eres, Señor, Dios de nuestros padres,\nbendito tu nombre santo y glorioso. R.\n\nBendito eres en el templo de tu santa gloria. R.\n\nBendito eres sobre el trono de tu reino. R.\n\nBendito eres tú, que sentado sobre querubines\nsondeas los abismos. R.\n\nBendito eres en la bóveda del cielo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 5 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles daniel 3 52 53 54 55 56 semana 5 semana v miercoles feria r a ti gloria y alabanza por los siglos bendito eres senor dios de nuestros padres bendito tu nombre santo y glorioso r bendito eres en el templo de tu santa gloria r bendito eres sobre el trono de tu reino r bendito eres tu que sentado sobre querubines sondeas los abismos r bendito eres en la boveda del cielo r",
   "lizq": [
     {
       "line": "R. A ti gloria y alabanza por los siglos.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendito eres, Señor, Dios de nuestros padres,",
@@ -68,8 +66,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendito eres sobre el trono de tu reino. R.",
@@ -95,5 +93,7 @@
       "line": "Bendito eres en la bóveda del cielo. R.",
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     }
-  ]
+  ],
+  "title": "Miércoles de la 5ª semana de Cuaresma",
+  "tiempo": "Cuaresma"
 }

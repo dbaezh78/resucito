@@ -1,10 +1,6 @@
 {
   "id": "seuf_007",
-  "title": "Lunes de la 2ª semana de Adviento",
-  "celebracion": "Lunes de la 2ª semana de Adviento",
-  "subtitle": "Salmo 84, 9ab-10. 11-12. 13-14 (R.: Is 35, 4d)",
   "salmo": "Salmo 84, 9ab-10. 11-12. 13-14 (R.: Is 35, 4d)",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +8,79 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Adviento",
-  "dia": "Lunes",
-  "orden": 121,
-  "respuesta": "R. Nuestro Señor viene y nos salvará.",
-  "respuestaOpcional": "",
+  "lizq": [
+    {
+      "line": "R. Nuestro Señor viene y nos salvará.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Voy a escuchar lo que dice el Señor:"
+    },
+    {
+      "line": "«Dios anuncia la paz",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "a su pueblo y sus amigos».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "La salvación está ya cerca de sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y la gloria habitará en nuestra tierra. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "La misericordia y la fidelidad se encuentran,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la justicia y la paz se besan;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la fidelidad brota de la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y la justicia mira desde el cielo. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor nos dará la lluvia,"
+    },
+    {
+      "line": "y nuestra tierra dará su fruto.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "La justicia marchará ante él,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la salvación seguirá sus pasos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "subtitle": "Salmo 84, 9ab-10. 11-12. 13-14 (R.: Is 35, 4d)",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
   "estrofas": [
     [
       "Voy a escuchar lo que dice el Señor:",
@@ -38,80 +102,16 @@
       "la salvación seguirá sus pasos. R."
     ]
   ],
-  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
+  "title": "Lunes de la 2ª semana de Adviento",
+  "orden": 121,
+  "dia": "Lunes",
+  "tiempo": "Adviento",
+  "celebracion": "Lunes de la 2ª semana de Adviento",
+  "respuestaOpcional": "",
+  "ciclo": "Ciclo A, B y C",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Nuestro Señor viene y nos salvará.",
   "hasAudio": false,
-  "searchPool": "lunes de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento lunes salmo 84 9ab 10 11 12 13 14 r is 35 4d semana 2 semana ii lunes feria r nuestro senor viene y nos salvara voy a escuchar lo que dice el senor dios anuncia la paz a su pueblo y sus amigos la salvacion esta ya cerca de sus fieles y la gloria habitara en nuestra tierra r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara la lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r",
-  "lizq": [
-    {
-      "line": "R. Nuestro Señor viene y nos salvará.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Voy a escuchar lo que dice el Señor:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "«Dios anuncia la paz",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "a su pueblo y sus amigos».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "La salvación está ya cerca de sus fieles,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y la gloria habitará en nuestra tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "La misericordia y la fidelidad se encuentran,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "la justicia y la paz se besan;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "la fidelidad brota de la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y la justicia mira desde el cielo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor nos dará la lluvia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y nuestra tierra dará su fruto.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "La justicia marchará ante él,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "la salvación seguirá sus pasos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "searchPool": "lunes de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento lunes salmo 84 9ab 10 11 12 13 14 r is 35 4d semana 2 semana ii lunes feria r nuestro senor viene y nos salvara voy a escuchar lo que dice el senor dios anuncia la paz a su pueblo y sus amigos la salvacion esta ya cerca de sus fieles y la gloria habitara en nuestra tierra r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara la lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r"
 }

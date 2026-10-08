@@ -1,15 +1,4 @@
 {
-  "id": "seup_026",
-  "title": "Martes de la 5ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 5ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: 2)",
-  "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: 2)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5052,
-  "respuesta": "R. ¡Qué deseables son tus moradas, Señor de los ejércitos!",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Mi alma se consume y anhela",
@@ -37,16 +26,19 @@
       "a vivir con los malvados. R."
     ]
   ],
-  "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\nla golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nFíjate, oh Dios, en nuestro Escudo,\nmira el rostro de tu Ungido. R.\n\nVale más un día en tus atrios\nque mil en mi casa,\ny prefiero el umbral de la casa de Dios\na vivir con los malvados. R.",
+  "id": "seup_026",
+  "celebracion": "Martes de la 5ª semana de Tiempo Ordinario",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "martes de la 5 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 83 3 4 5 y 10 11 r 2 semana 5 semana v martes 5 v r que deseables son tus moradas senor de los ejercitos mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre fijate oh dios en nuestro escudo mira el rostro de tu ungido r vale mas un dia en tus atrios que mil en mi casa y prefiero el umbral de la casa de dios a vivir con los malvados r",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. ¡Qué deseables son tus moradas, Señor de los ejércitos!",
+  "title": "Martes de la 5ª semana de Tiempo Ordinario",
+  "dia": "Martes",
+  "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\nla golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nFíjate, oh Dios, en nuestro Escudo,\nmira el rostro de tu Ungido. R.\n\nVale más un día en tus atrios\nque mil en mi casa,\ny prefiero el umbral de la casa de Dios\na vivir con los malvados. R.",
   "lizq": [
     {
-      "line": "R. ¡Qué deseables son tus moradas,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. ¡Qué deseables son tus moradas,"
     },
     {
       "line": "Señor de los ejércitos!",
@@ -65,8 +57,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mi corazón y mi carne",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mi corazón y mi carne"
     },
     {
       "line": "retozan por el Dios vivo. R.",
@@ -81,24 +73,24 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "la golondrina, un nido",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la golondrina, un nido"
     },
     {
       "line": "donde colocar sus polluelos:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tus altares, Señor de los ejércitos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tus altares, Señor de los ejércitos,"
     },
     {
-      "line": "Rey mío y Dios mío. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Rey mío y Dios mío. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Dichosos los que viven en tu casa,",
@@ -109,12 +101,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Fíjate, oh Dios, en nuestro Escudo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Fíjate, oh Dios, en nuestro Escudo,"
     },
     {
-      "line": "mira el rostro de tu Ungido. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "mira el rostro de tu Ungido. R."
     },
     {
       "line": "",
@@ -136,5 +128,13 @@
       "line": "a vivir con los malvados. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "ciclo": "Año Par",
+  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: 2)",
+  "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5 y 10. 11 (R.: 2)",
+  "stage": "Liturgia",
+  "orden": 5052
 }

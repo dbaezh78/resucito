@@ -1635,13 +1635,13 @@
               <div class="setting-label">
                 <h4>Cargar desde Firebase Cloud</h4>
                 <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">
-                  Desactivado: usa archivos locales (por defecto). Activado: consulta salmos actualizados en Firebase Firestore.
+                  Activado (Recomendado): Carga siempre de Firebase si hay internet y usa los archivos locales como respaldo. Desactivado: Solo usa archivos locales (modo sin conexión).
                 </p>
               </div>
               <div class="setting-control" style="display: flex; align-items: center; gap: 10px;">
-                <span id="eucaristia-source-label" style="font-size: 0.8rem; font-weight: 700; color: var(--text-color);">Local</span>
+                <span id="eucaristia-source-label" style="font-size: 0.8rem; font-weight: 700; color: var(--accent-color);">Firebase Cloud (con Respaldo Local)</span>
                 <label class="switch">
-                  <input type="checkbox" id="toggle-eucaristia-firebase-source">
+                  <input type="checkbox" id="toggle-eucaristia-firebase-source" checked>
                   <span class="slider round"></span>
                 </label>
               </div>

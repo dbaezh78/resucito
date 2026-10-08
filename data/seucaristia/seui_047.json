@@ -1,15 +1,8 @@
 {
-  "id": "seui_047",
-  "title": "Viernes de la 8ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 8ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo149, 1-2. 3-4. 5-6a y 9b (R.: 4a)",
-  "salmo": "Salmo responsorial: Salmo149, 1-2. 3-4. 5-6a y 9b (R.: 4a)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5085,
-  "respuesta": "R. El Señor ama a su pueblo.",
-  "respuestaOpcional": "R. Aleluya.",
+  "sourceBook": "eucaristia",
+  "title": "Viernes de la 8ª semana de Tiempo Ordinario",
+  "id": "seui_047",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -30,20 +23,25 @@
       "es un honor para todos sus fieles. R."
     ]
   ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\nresuene su alabanza en la asamblea de los fieles;\nque se alegre Israel por su Creador,\nlos hijos de Sión por su Rey. R.\n\nAlabad su nombre con danzas,\ncantadle con tambores y cítaras;\nporque el Señor ama a su pueblo\ny adorna con la victoria a los humildes. R.\n\nQue los fieles festejen su gloria\ny canten jubilosos en filas:\ncon vítores a Dios en la boca;\nes un honor para todos sus fieles. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "stage": "Liturgia",
   "searchPool": "viernes de la 8 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo149 1 2 3 4 5 6a y 9b r 4a semana 8 semana viii viernes 8 viii r el senor ama a su pueblo r aleluya cantad al senor un cantico nuevo resuene su alabanza en la asamblea de los fieles que se alegre israel por su creador los hijos de sion por su rey r alabad su nombre con danzas cantadle con tambores y citaras porque el senor ama a su pueblo y adorna con la victoria a los humildes r que los fieles festejen su gloria y canten jubilosos en filas con vitores a dios en la boca es un honor para todos sus fieles r",
+  "orden": 5085,
+  "celebracion": "Viernes de la 8ª semana de Tiempo Ordinario",
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo149, 1-2. 3-4. 5-6a y 9b (R.: 4a)",
+  "dia": "Viernes",
+  "hasAudio": false,
+  "respuestaOpcional": "R. Aleluya.",
+  "subtitle": "Salmo responsorial: Salmo149, 1-2. 3-4. 5-6a y 9b (R.: 4a)",
   "lizq": [
     {
       "line": "R. El Señor ama a su pueblo.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -54,12 +52,12 @@
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Cantad al Señor un cántico nuevo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cantad al Señor un cántico nuevo,"
     },
     {
       "line": "resuene su alabanza en la asamblea de los fieles;",
@@ -70,16 +68,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los hijos de Sión por su Rey. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los hijos de Sión por su Rey. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Alabad su nombre con danzas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Alabad su nombre con danzas,"
     },
     {
       "line": "cantadle con tambores y cítaras;",
@@ -90,8 +88,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y adorna con la victoria a los humildes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y adorna con la victoria a los humildes. R."
     },
     {
       "line": "",
@@ -110,8 +108,10 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "es un honor para todos sus fieles. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "es un honor para todos sus fieles. R."
     }
-  ]
+  ],
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nresuene su alabanza en la asamblea de los fieles;\nque se alegre Israel por su Creador,\nlos hijos de Sión por su Rey. R.\n\nAlabad su nombre con danzas,\ncantadle con tambores y cítaras;\nporque el Señor ama a su pueblo\ny adorna con la victoria a los humildes. R.\n\nQue los fieles festejen su gloria\ny canten jubilosos en filas:\ncon vítores a Dios en la boca;\nes un honor para todos sus fieles. R.",
+  "respuesta": "R. El Señor ama a su pueblo."
 }

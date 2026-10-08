@@ -1,15 +1,12 @@
 {
-  "id": "seub_04",
-  "title": "Domingo 4º de Adviento",
-  "celebracion": "Domingo 4º de Adviento",
-  "subtitle": "Salmo responsorial: Salmo 88, 2-3. 4-5. 27 y 29 (R.: cf 2a)",
-  "salmo": "Salmo responsorial: Salmo 88, 2-3. 4-5. 27 y 29 (R.: cf 2a)",
+  "hasAudio": false,
   "ciclo": "Ciclo B",
-  "tiempo": "Adviento",
-  "dia": "Domingo",
-  "orden": 104,
+  "searchPool": "domingo 4 de adviento ciclo b adviento domingo salmo responsorial salmo 88 2 3 4 5 27 y 29 r cf 2a r cantare eternamente tus misericordias senor cantare eternamente las misericordias del senor anunciare tu fidelidad por todas las edades porque dije tu misericordia es un edificio eterno mas que el cielo has afianzado tu fidelidad r selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r el me invocara tu eres mi padre mi dios mi roca salvadora le mantendre eternamente mi favor y mi alianza con el sera estable r",
+  "sourceBook": "eucaristia",
   "respuesta": "R. Cantaré eternamente tus misericordias, Señor.",
-  "respuestaOpcional": "",
+  "tiempo": "Adviento",
+  "stage": "Liturgia",
+  "celebracion": "Domingo 4º de Adviento",
   "estrofas": [
     [
       "Cantaré eternamente las misericordias del Señor,",
@@ -30,24 +27,24 @@
       "y mi alianza con él será estable. R."
     ]
   ],
-  "textoCompleto": "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.\n\n«Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n\"Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades\"». R.\n\nÉl me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora».\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 88, 2-3. 4-5. 27 y 29 (R.: cf 2a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo 4 de adviento ciclo b adviento domingo salmo responsorial salmo 88 2 3 4 5 27 y 29 r cf 2a r cantare eternamente tus misericordias senor cantare eternamente las misericordias del senor anunciare tu fidelidad por todas las edades porque dije tu misericordia es un edificio eterno mas que el cielo has afianzado tu fidelidad r selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r el me invocara tu eres mi padre mi dios mi roca salvadora le mantendre eternamente mi favor y mi alianza con el sera estable r",
+  "subtitle": "Salmo responsorial: Salmo 88, 2-3. 4-5. 27 y 29 (R.: cf 2a)",
+  "id": "seub_04",
+  "respuestaOpcional": "",
+  "orden": 104,
   "lizq": [
     {
-      "line": "R. Cantaré eternamente tus misericordias, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Cantaré eternamente tus misericordias, Señor."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Cantaré eternamente las misericordias del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cantaré eternamente las misericordias del Señor,"
     },
     {
       "line": "anunciaré tu fidelidad por todas las edades.",
@@ -66,8 +63,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "«Sellé una alianza con mi elegido,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Sellé una alianza con mi elegido,"
     },
     {
       "line": "jurando a David, mi siervo:",
@@ -86,8 +83,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Él me invocará: «Tú eres mi padre,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Él me invocará: «Tú eres mi padre,"
     },
     {
       "line": "mi Dios, mi Roca salvadora».",
@@ -98,8 +95,11 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y mi alianza con él será estable. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y mi alianza con él será estable. R."
     }
-  ]
+  ],
+  "dia": "Domingo",
+  "textoCompleto": "Cantaré eternamente las misericordias del Señor,\nanunciaré tu fidelidad por todas las edades.\nPorque dije: Tu misericordia es un edificio eterno,\nmás que el cielo has afianzado tu fidelidad». R.\n\n«Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n\"Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades\"». R.\n\nÉl me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora».\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable. R.",
+  "title": "Domingo 4º de Adviento"
 }

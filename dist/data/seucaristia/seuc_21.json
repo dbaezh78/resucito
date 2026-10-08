@@ -1,14 +1,6 @@
 {
+  "stage": "Liturgia",
   "id": "seuc_21",
-  "title": "Domingo de Ramos",
-  "celebracion": "Domingo de Ramos",
-  "subtitle": "Salmo responsorial: Salmo 21, 8-9. 17-18a. 19-20. 23-24 (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 21, 8-9. 17-18a. 19-20. 23-24 (R.: 2a)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
-  "orden": 310,
-  "respuesta": "R. Dios mío, Dios mío, ¿por qué me has abandonado?",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -37,12 +29,13 @@
       "temedlo, linaje de Israel. R."
     ]
   ],
-  "textoCompleto": "Al verme se burlan de mí,\nhacen visajes, menean la cabeza:\n«Acudió al Señor, que lo ponga a salvo;\nque lo libre si tanto lo quiere». R.\n\nMe acorrala una jauría de mastines,\nme cerca una banda de malhechores;\nme taladran las manos y los pies,\npuedo contar mis huesos. R.\n\nSe reparten mi ropa,\nechan a suerte mi túnica.\nPero tú, Señor, no te quedes lejos;\nfuerza mía ven corriendo a ayudarme. R.\n\nContaré tu fama a mis hermanos,\nen medio de la asamblea te alabaré.\nFieles del Señor, alabadlo;\nlinaje de Jacob, glorificadlo;\ntemedlo, linaje de Israel. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 21, 8-9. 17-18a. 19-20. 23-24 (R.: 2a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "domingo de ramos ciclo c cuaresma domingo salmo responsorial salmo 21 8 9 17 18a 19 20 23 24 r 2a r dios mio dios mio por que me has abandonado al verme se burlan de mi hacen visajes menean la cabeza acudio al senor que lo ponga a salvo que lo libre si tanto lo quiere r me acorrala una jauria de mastines me cerca una banda de malhechores me taladran las manos y los pies puedo contar mis huesos r se reparten mi ropa echan a suerte mi tunica pero tu senor no te quedes lejos fuerza mia ven corriendo a ayudarme r contare tu fama a mis hermanos en medio de la asamblea te alabare fieles del senor alabadlo linaje de jacob glorificadlo temedlo linaje de israel r",
+  "ciclo": "Ciclo C",
+  "tiempo": "Cuaresma",
+  "respuesta": "R. Dios mío, Dios mío, ¿por qué me has abandonado?",
   "lizq": [
     {
       "line": "R. Dios mío, Dios mío, ¿por qué me has abandonado?",
@@ -61,12 +54,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "«Acudió al Señor, que lo ponga a salvo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«Acudió al Señor, que lo ponga a salvo;"
     },
     {
-      "line": "que lo libre si tanto lo quiere». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que lo libre si tanto lo quiere». R."
     },
     {
       "line": "",
@@ -85,8 +78,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "puedo contar mis huesos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "puedo contar mis huesos. R."
     },
     {
       "line": "",
@@ -101,8 +94,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Pero tú, Señor, no te quedes lejos;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Pero tú, Señor, no te quedes lejos;"
     },
     {
       "line": "fuerza mía ven corriendo a ayudarme. R.",
@@ -113,16 +106,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Contaré tu fama a mis hermanos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Contaré tu fama a mis hermanos,"
     },
     {
       "line": "en medio de la asamblea te alabaré.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Fieles del Señor, alabadlo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Fieles del Señor, alabadlo;"
     },
     {
       "line": "linaje de Jacob, glorificadlo;",
@@ -132,5 +125,12 @@
       "line": "temedlo, linaje de Israel. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "title": "Domingo de Ramos",
+  "celebracion": "Domingo de Ramos",
+  "dia": "Domingo",
+  "orden": 310,
+  "salmo": "Salmo responsorial: Salmo 21, 8-9. 17-18a. 19-20. 23-24 (R.: 2a)",
+  "textoCompleto": "Al verme se burlan de mí,\nhacen visajes, menean la cabeza:\n«Acudió al Señor, que lo ponga a salvo;\nque lo libre si tanto lo quiere». R.\n\nMe acorrala una jauría de mastines,\nme cerca una banda de malhechores;\nme taladran las manos y los pies,\npuedo contar mis huesos. R.\n\nSe reparten mi ropa,\nechan a suerte mi túnica.\nPero tú, Señor, no te quedes lejos;\nfuerza mía ven corriendo a ayudarme. R.\n\nContaré tu fama a mis hermanos,\nen medio de la asamblea te alabaré.\nFieles del Señor, alabadlo;\nlinaje de Jacob, glorificadlo;\ntemedlo, linaje de Israel. R.",
+  "hasAudio": false
 }

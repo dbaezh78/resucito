@@ -1,15 +1,87 @@
 {
-  "id": "seup_125",
-  "title": "Viernes de la 21ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 21ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 32, 1-2. 4-5. 10ab y 11 (R.: 5b)",
-  "salmo": "Salmo responsorial: Salmo 32, 1-2. 4-5. 10ab y 11 (R.: 5b)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5215,
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "viernes de la 21 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 32 1 2 4 5 10ab y 11 r 5b semana 21 semana xxi viernes 21 xxi r la misericordia del senor llena la tierra aclamad justos al senor que merece la alabanza de los buenos dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r el senor deshace los planes de las naciones frustra los proyectos de los pueblos pero el plan del senor subsiste por siempre los proyectos de su corazon de edad en edad r",
+  "id": "seup_125",
+  "celebracion": "Viernes de la 21ª semana de Tiempo Ordinario",
   "respuesta": "R. La misericordia del Señor llena la tierra.",
+  "sourceBook": "eucaristia",
+  "orden": 5215,
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. La misericordia del Señor llena la tierra."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Aclamad, justos, al Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que merece la alabanza de los buenos."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dad gracias al Señor con la cítara,"
+    },
+    {
+      "line": "tocad en su honor el arpa de diez cuerdas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Que la palabra del Señor es sincera,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todas sus acciones son leales;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él ama la justicia y el derecho,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y su misericordia llena la tierra. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor deshace los planes de las naciones,"
+    },
+    {
+      "line": "frustra los proyectos de los pueblos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero el plan del Señor subsiste por siempre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los proyectos de su corazón, de edad en edad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "title": "Viernes de la 21ª semana de Tiempo Ordinario",
   "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 32, 1-2. 4-5. 10ab y 11 (R.: 5b)",
+  "hasAudio": false,
+  "dia": "Viernes",
+  "tiempo": "Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 32, 1-2. 4-5. 10ab y 11 (R.: 5b)",
+  "textoCompleto": "Aclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nEl Señor deshace los planes de las naciones,\nfrustra los proyectos de los pueblos,\npero el plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad. R.",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Aclamad, justos, al Señor,",
@@ -29,77 +101,5 @@
       "pero el plan del Señor subsiste por siempre,",
       "los proyectos de su corazón, de edad en edad. R."
     ]
-  ],
-  "textoCompleto": "Aclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nEl Señor deshace los planes de las naciones,\nfrustra los proyectos de los pueblos,\npero el plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 21 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 32 1 2 4 5 10ab y 11 r 5b semana 21 semana xxi viernes 21 xxi r la misericordia del senor llena la tierra aclamad justos al senor que merece la alabanza de los buenos dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r el senor deshace los planes de las naciones frustra los proyectos de los pueblos pero el plan del senor subsiste por siempre los proyectos de su corazon de edad en edad r",
-  "lizq": [
-    {
-      "line": "R. La misericordia del Señor llena la tierra.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Aclamad, justos, al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que merece la alabanza de los buenos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Dad gracias al Señor con la cítara,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tocad en su honor el arpa de diez cuerdas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Que la palabra del Señor es sincera,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y todas sus acciones son leales;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él ama la justicia y el derecho,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y su misericordia llena la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor deshace los planes de las naciones,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "frustra los proyectos de los pueblos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "pero el plan del Señor subsiste por siempre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los proyectos de su corazón, de edad en edad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
   ]
 }

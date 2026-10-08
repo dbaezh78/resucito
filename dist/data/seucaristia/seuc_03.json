@@ -1,15 +1,102 @@
 {
-  "id": "seuc_03",
-  "title": "Domingo 3º de Adviento",
+  "tiempo": "Adviento",
+  "textoCompleto": "El Señor es mi Dios y salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.\n\nTañed para el Señor, que hizo proezas,\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n«Qué grande es en medio de ti\nel Santo de Israel». R.",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Gritad jubilosos: «Qué grande es en medio de ti"
+    },
+    {
+      "line": "el Santo de Israel».",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es mi Dios y salvador:"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "confiaré y no temeré,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque mi fuerza y mi poder es el Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él fue mi salvación."
+    },
+    {
+      "line": "Y sacaréis aguas con gozo",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de las fuentes de la salvación. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Dad gracias al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "invocad su nombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "contad a los pueblos sus hazañas,"
+    },
+    {
+      "line": "proclamad que su nombre es excelso. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tañed para el Señor, que hizo proezas,"
+    },
+    {
+      "line": "anunciadlas a toda la tierra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "gritad jubilosos, habitantes de Sión:"
+    },
+    {
+      "line": "«Qué grande es en medio de ti",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "el Santo de Israel». R."
+    }
+  ],
+  "respuesta": "R. Gritad jubilosos: «Qué grande es en medio de ti el Santo de Israel».",
+  "ciclo": "Ciclo C",
+  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "salmo": "Interleccional: Isaías 12, 2-3. 4bcd, 5-6 (R.: 6)",
+  "dia": "Domingo",
+  "searchPool": "domingo 3 de adviento ciclo c adviento domingo interleccional isaias 12 2 3 4bcd 5 6 r 6 r gritad jubilosos que grande es en medio de ti el santo de israel el senor es mi dios y salvador confiare y no temere porque mi fuerza y mi poder es el senor el fue mi salvacion y sacareis aguas con gozo de las fuentes de la salvacion r dad gracias al senor invocad su nombre contad a los pueblos sus hazanas proclamad que su nombre es excelso r taned para el senor que hizo proezas anunciadlas a toda la tierra gritad jubilosos habitantes de sion que grande es en medio de ti el santo de israel r",
+  "sourceBook": "eucaristia",
   "celebracion": "Domingo 3º de Adviento",
   "subtitle": "Interleccional: Isaías 12, 2-3. 4bcd, 5-6 (R.: 6)",
-  "salmo": "Interleccional: Isaías 12, 2-3. 4bcd, 5-6 (R.: 6)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Adviento",
-  "dia": "Domingo",
-  "orden": 103,
-  "respuesta": "R. Gritad jubilosos: «Qué grande es en medio de ti el Santo de Israel».",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Domingo 3º de Adviento",
+  "id": "seuc_03",
   "estrofas": [
     [
       "El Señor es mi Dios y salvador:",
@@ -33,92 +120,5 @@
       "el Santo de Israel». R."
     ]
   ],
-  "textoCompleto": "El Señor es mi Dios y salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.\n\nTañed para el Señor, que hizo proezas,\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n«Qué grande es en medio de ti\nel Santo de Israel». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo 3 de adviento ciclo c adviento domingo interleccional isaias 12 2 3 4bcd 5 6 r 6 r gritad jubilosos que grande es en medio de ti el santo de israel el senor es mi dios y salvador confiare y no temere porque mi fuerza y mi poder es el senor el fue mi salvacion y sacareis aguas con gozo de las fuentes de la salvacion r dad gracias al senor invocad su nombre contad a los pueblos sus hazanas proclamad que su nombre es excelso r taned para el senor que hizo proezas anunciadlas a toda la tierra gritad jubilosos habitantes de sion que grande es en medio de ti el santo de israel r",
-  "lizq": [
-    {
-      "line": "R. Gritad jubilosos: «Qué grande es en medio de ti",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "el Santo de Israel».",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es mi Dios y salvador:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "confiaré y no temeré,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "porque mi fuerza y mi poder es el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él fue mi salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Y sacaréis aguas con gozo",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "de las fuentes de la salvación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dad gracias al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "invocad su nombre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "contad a los pueblos sus hazañas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "proclamad que su nombre es excelso. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tañed para el Señor, que hizo proezas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "anunciadlas a toda la tierra;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "gritad jubilosos, habitantes de Sión:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "«Qué grande es en medio de ti",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el Santo de Israel». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "orden": 103
 }

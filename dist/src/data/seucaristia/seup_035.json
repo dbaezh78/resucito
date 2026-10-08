@@ -1,15 +1,19 @@
 {
+  "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-6 (R.: cf. 1)",
+  "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo. R.",
   "id": "seup_035",
+  "respuestaOpcional": "R. Aleluya.",
+  "ciclo": "Año Par",
+  "hasAudio": false,
+  "orden": 5065,
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
   "title": "Viernes de la 6ª semana de Tiempo Ordinario",
+  "respuesta": "R. Dichoso quien ama de corazón los mandatos del Señor.",
+  "dia": "Viernes",
   "celebracion": "Viernes de la 6ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-6 (R.: cf. 1)",
-  "salmo": "Salmo responsorial: Salmo 111, 1-2. 3-4. 5-6 (R.: cf. 1)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5065,
-  "respuesta": "R. Dichoso quien ama de corazón los mandatos del Señor.",
-  "respuestaOpcional": "R. Aleluya.",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Dichoso quien teme al Señor",
@@ -30,12 +34,6 @@
       "su recuerdo será perpetuo. R."
     ]
   ],
-  "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nEn su casa habrá riquezas y abundancia,\nsu caridad es constante, sin falta.\nEn las tinieblas brilla como una luz\nel que es justo, clemente y compasivo. R.\n\nDichoso el que se apiada y presta,\ny administra rectamente sus asuntos.\nEl justo jamás vacilará,\nsu recuerdo será perpetuo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 6 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 111 1 2 3 4 5 6 r cf 1 semana 6 semana vi viernes 6 vi r dichoso quien ama de corazon los mandatos del senor r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo r",
   "lizq": [
     {
       "line": "R. Dichoso quien ama de corazón los mandatos del Señor.",
@@ -62,12 +60,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y ama de corazón sus mandatos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y ama de corazón sus mandatos."
     },
     {
-      "line": "Su linaje será poderoso en la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Su linaje será poderoso en la tierra,"
     },
     {
       "line": "la descendencia del justo será bendita. R.",
@@ -78,12 +76,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "En su casa habrá riquezas y abundancia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "En su casa habrá riquezas y abundancia,"
     },
     {
-      "line": "su caridad es constante, sin falta.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su caridad es constante, sin falta."
     },
     {
       "line": "En las tinieblas brilla como una luz",
@@ -113,5 +111,7 @@
       "line": "su recuerdo será perpetuo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "viernes de la 6 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 111 1 2 3 4 5 6 r cf 1 semana 6 semana vi viernes 6 vi r dichoso quien ama de corazon los mandatos del senor r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r en su casa habra riquezas y abundancia su caridad es constante sin falta en las tinieblas brilla como una luz el que es justo clemente y compasivo r dichoso el que se apiada y presta y administra rectamente sus asuntos el justo jamas vacilara su recuerdo sera perpetuo r"
 }

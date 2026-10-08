@@ -1,44 +1,5 @@
 {
-  "id": "seuf_088",
-  "title": "Martes de la segunda semana de Pascua",
-  "celebracion": "Martes de la segunda semana de Pascua",
-  "subtitle": "Salmo 92, 1ab. 1c-2. 5 (R/.: 1a)",
-  "salmo": "Salmo 92, 1ab. 1c-2. 5 (R/.: 1a)",
   "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Martes",
-  "orden": 422,
-  "respuesta": "R. El Señor reina, vestido de majestad.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "El Señor reina, vestido de majestad,",
-      "el Señor, vestido y ceñido de poder. R."
-    ],
-    [
-      "Así está firme el orbe y no vacila.",
-      "Tu trono está firme desde siempre,",
-      "y tú eres eterno. R."
-    ],
-    [
-      "Tus mandatos son fieles y seguros;",
-      "la santidad es el adorno de tu casa,",
-      "Señor, por días sin término. R."
-    ]
-  ],
-  "textoCompleto": "El Señor reina, vestido de majestad,\nel Señor, vestido y ceñido de poder. R.\n\nAsí está firme el orbe y no vacila.\nTu trono está firme desde siempre,\ny tú eres eterno. R.\n\nTus mandatos son fieles y seguros;\nla santidad es el adorno de tu casa,\nSeñor, por días sin término. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 92 1ab 1c 2 5 r 1a semana 2 semana ii martes feria r el senor reina vestido de majestad r aleluya el senor reina vestido de majestad el senor vestido y cenido de poder r asi esta firme el orbe y no vacila tu trono esta firme desde siempre y tu eres eterno r tus mandatos son fieles y seguros la santidad es el adorno de tu casa senor por dias sin termino r",
   "lizq": [
     {
       "line": "R. El Señor reina, vestido de majestad.",
@@ -61,24 +22,24 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor reina, vestido de majestad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor reina, vestido de majestad,"
     },
     {
       "line": "el Señor, vestido y ceñido de poder. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Así está firme el orbe y no vacila.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Así está firme el orbe y no vacila."
     },
     {
-      "line": "Tu trono está firme desde siempre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Tu trono está firme desde siempre,"
     },
     {
       "line": "y tú eres eterno. R.",
@@ -100,5 +61,44 @@
       "line": "Señor, por días sin término. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "El Señor reina, vestido de majestad,\nel Señor, vestido y ceñido de poder. R.\n\nAsí está firme el orbe y no vacila.\nTu trono está firme desde siempre,\ny tú eres eterno. R.\n\nTus mandatos son fieles y seguros;\nla santidad es el adorno de tu casa,\nSeñor, por días sin término. R.",
+  "salmo": "Salmo 92, 1ab. 1c-2. 5 (R/.: 1a)",
+  "stage": "Liturgia",
+  "celebracion": "Martes de la segunda semana de Pascua",
+  "dia": "Martes",
+  "subtitle": "Salmo 92, 1ab. 1c-2. 5 (R/.: 1a)",
+  "orden": 422,
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "sourceBook": "eucaristia",
+  "title": "Martes de la segunda semana de Pascua",
+  "searchPool": "martes de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 92 1ab 1c 2 5 r 1a semana 2 semana ii martes feria r el senor reina vestido de majestad r aleluya el senor reina vestido de majestad el senor vestido y cenido de poder r asi esta firme el orbe y no vacila tu trono esta firme desde siempre y tu eres eterno r tus mandatos son fieles y seguros la santidad es el adorno de tu casa senor por dias sin termino r",
+  "respuesta": "R. El Señor reina, vestido de majestad.",
+  "respuestaOpcional": "R. Aleluya.",
+  "hasAudio": false,
+  "id": "seuf_088",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "El Señor reina, vestido de majestad,",
+      "el Señor, vestido y ceñido de poder. R."
+    ],
+    [
+      "Así está firme el orbe y no vacila.",
+      "Tu trono está firme desde siempre,",
+      "y tú eres eterno. R."
+    ],
+    [
+      "Tus mandatos son fieles y seguros;",
+      "la santidad es el adorno de tu casa,",
+      "Señor, por días sin término. R."
+    ]
+  ],
+  "tiempo": "Pascua"
 }

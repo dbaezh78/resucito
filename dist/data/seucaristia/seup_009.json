@@ -1,15 +1,9 @@
 {
-  "id": "seup_009",
-  "title": "Miércoles de la 2ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 2ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 143, 1. 2. 9-10 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 143, 1. 2. 9-10 (R.: 1a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5023,
-  "respuesta": "R. Bendito el Señor, mi Roca.",
   "respuestaOpcional": "",
+  "title": "Miércoles de la 2ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Miércoles",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Bendito el Señor, mi Roca,",
@@ -30,12 +24,6 @@
       "Defiéndeme de la espada cruel. R."
     ]
   ],
-  "textoCompleto": "Bendito el Señor, mi Roca,\nque adiestra mis manos para el combate,\nmis dedos para la pelea. R.\n\nMi bienhechor, mi alcázar,\nbaluarte donde me pongo a salvo,\nmi escudo y mi refugio,\nque me somete los pueblos. R.\n\nDios mío, te cantaré un cántico nuevo,\ntocaré para ti el arpa de diez cuerdas;\npara ti, que das la victoria a los reyes\ny salvas a David, tu siervo.\nDefiéndeme de la espada cruel. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 2 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 143 1 2 9 10 r 1a semana 2 semana ii miercoles 2 ii r bendito el senor mi roca bendito el senor mi roca que adiestra mis manos para el combate mis dedos para la pelea r mi bienhechor mi alcazar baluarte donde me pongo a salvo mi escudo y mi refugio que me somete los pueblos r dios mio te cantare un cantico nuevo tocare para ti el arpa de diez cuerdas para ti que das la victoria a los reyes y salvas a david tu siervo defiendeme de la espada cruel r",
   "lizq": [
     {
       "line": "R. Bendito el Señor, mi Roca.",
@@ -50,20 +38,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que adiestra mis manos para el combate,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que adiestra mis manos para el combate,"
     },
     {
-      "line": "mis dedos para la pelea. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "mis dedos para la pelea. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Mi bienhechor, mi alcázar,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Mi bienhechor, mi alcázar,"
     },
     {
       "line": "baluarte donde me pongo a salvo,",
@@ -82,8 +70,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dios mío, te cantaré un cántico nuevo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dios mío, te cantaré un cántico nuevo,"
     },
     {
       "line": "tocaré para ti el arpa de diez cuerdas;",
@@ -94,12 +82,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y salvas a David, tu siervo.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y salvas a David, tu siervo."
     },
     {
       "line": "Defiéndeme de la espada cruel. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5023,
+  "ciclo": "Año Par",
+  "salmo": "Salmo responsorial: Salmo 143, 1. 2. 9-10 (R.: 1a)",
+  "respuesta": "R. Bendito el Señor, mi Roca.",
+  "celebracion": "Miércoles de la 2ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 143, 1. 2. 9-10 (R.: 1a)",
+  "textoCompleto": "Bendito el Señor, mi Roca,\nque adiestra mis manos para el combate,\nmis dedos para la pelea. R.\n\nMi bienhechor, mi alcázar,\nbaluarte donde me pongo a salvo,\nmi escudo y mi refugio,\nque me somete los pueblos. R.\n\nDios mío, te cantaré un cántico nuevo,\ntocaré para ti el arpa de diez cuerdas;\npara ti, que das la victoria a los reyes\ny salvas a David, tu siervo.\nDefiéndeme de la espada cruel. R.",
+  "searchPool": "miercoles de la 2 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 143 1 2 9 10 r 1a semana 2 semana ii miercoles 2 ii r bendito el senor mi roca bendito el senor mi roca que adiestra mis manos para el combate mis dedos para la pelea r mi bienhechor mi alcazar baluarte donde me pongo a salvo mi escudo y mi refugio que me somete los pueblos r dios mio te cantare un cantico nuevo tocare para ti el arpa de diez cuerdas para ti que das la victoria a los reyes y salvas a david tu siervo defiendeme de la espada cruel r",
+  "id": "seup_009",
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "hasAudio": false
 }

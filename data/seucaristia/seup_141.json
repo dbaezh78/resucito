@@ -1,15 +1,7 @@
 {
-  "id": "seup_141",
-  "title": "Miércoles de la 24ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 24ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 32, 2-3. 4-5. 12 y 22 (R.: 12b)",
-  "salmo": "Salmo responsorial: Salmo 32, 2-3. 4-5. 12 y 22 (R.: 12b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5243,
+  "stage": "Liturgia",
   "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Dad gracias al Señor con la cítara,",
@@ -30,12 +22,10 @@
       "como lo esperamos de ti. R."
     ]
   ],
+  "salmo": "Salmo responsorial: Salmo 32, 2-3. 4-5. 12 y 22 (R.: 12b)",
+  "subtitle": "Salmo responsorial: Salmo 32, 2-3. 4-5. 12 y 22 (R.: 12b)",
   "textoCompleto": "Dad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas;\ncantadle un cántico nuevo,\nacompañando los vítores con bordones. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nQue tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 24 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 32 2 3 4 5 12 y 22 r 12b semana 24 semana xxiv miercoles 24 xxiv r dichoso el pueblo que el senor se escogio como heredad dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas cantadle un cantico nuevo acompanando los vitores con bordones r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad que tu misericordia senor venga sobre nosotros como lo esperamos de ti r",
+  "celebracion": "Miércoles de la 24ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
@@ -46,8 +36,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dad gracias al Señor con la cítara,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dad gracias al Señor con la cítara,"
     },
     {
       "line": "tocad en su honor el arpa de diez cuerdas;",
@@ -62,8 +52,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Que la palabra del Señor es sincera,",
@@ -78,16 +68,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y su misericordia llena la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y su misericordia llena la tierra. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Dichosa la nación cuyo Dios es el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichosa la nación cuyo Dios es el Señor,"
     },
     {
       "line": "el pueblo que él se escogió como heredad.",
@@ -101,5 +91,15 @@
       "line": "como lo esperamos de ti. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "miercoles de la 24 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 32 2 3 4 5 12 y 22 r 12b semana 24 semana xxiv miercoles 24 xxiv r dichoso el pueblo que el senor se escogio como heredad dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas cantadle un cantico nuevo acompanando los vitores con bordones r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad que tu misericordia senor venga sobre nosotros como lo esperamos de ti r",
+  "dia": "Miércoles",
+  "orden": 5243,
+  "id": "seup_141",
+  "title": "Miércoles de la 24ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par"
 }

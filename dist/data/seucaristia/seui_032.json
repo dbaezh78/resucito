@@ -1,15 +1,81 @@
 {
-  "id": "seui_032",
+  "textoCompleto": "Hijos de Dios, aclamad al Señor,\naclamad la gloria del nombre del Señor,\npostraos ante el Señor en el atrio sagrado. R.\n\nLa voz del Señor sobre las aguas,\nel Señor sobre las aguas torrenciales.\nLa voz del Señor es potente,\nla voz del Señor es magnífica. R.\n\nEl Dios de la gloria ha tronado.\nEn su templo un grito unánime: «¡Gloria!».\nEl Señor se sienta por encima del aguacero,\nel Señor se sienta como rey eterno. R.",
+  "respuestaOpcional": "",
   "title": "Martes de la 6ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 6ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 28, 1a y 2. 3ac-4. 3b y 9c-10 (R.: 11b)",
   "salmo": "Salmo responsorial: Salmo 28, 1a y 2. 3ac-4. 3b y 9c-10 (R.: 11b)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
+  "ciclo": "Año Impar",
+  "celebracion": "Martes de la 6ª semana de Tiempo Ordinario",
   "dia": "Martes",
   "orden": 5062,
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor bendice a su pueblo con la paz."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Hijos de Dios, aclamad al Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "aclamad la gloria del nombre del Señor,"
+    },
+    {
+      "line": "postraos ante el Señor en el atrio sagrado. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La voz del Señor sobre las aguas,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor sobre las aguas torrenciales."
+    },
+    {
+      "line": "La voz del Señor es potente,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "la voz del Señor es magnífica. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Dios de la gloria ha tronado.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "En su templo un grito unánime: «¡Gloria!».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor se sienta por encima del aguacero,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "el Señor se sienta como rey eterno. R."
+    }
+  ],
+  "catCanto": "Salmo Eucaristía",
   "respuesta": "R. El Señor bendice a su pueblo con la paz.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Hijos de Dios, aclamad al Señor,",
@@ -29,72 +95,6 @@
       "el Señor se sienta como rey eterno. R."
     ]
   ],
-  "textoCompleto": "Hijos de Dios, aclamad al Señor,\naclamad la gloria del nombre del Señor,\npostraos ante el Señor en el atrio sagrado. R.\n\nLa voz del Señor sobre las aguas,\nel Señor sobre las aguas torrenciales.\nLa voz del Señor es potente,\nla voz del Señor es magnífica. R.\n\nEl Dios de la gloria ha tronado.\nEn su templo un grito unánime: «¡Gloria!».\nEl Señor se sienta por encima del aguacero,\nel Señor se sienta como rey eterno. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "martes de la 6 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 28 1a y 2 3ac 4 3b y 9c 10 r 11b semana 6 semana vi martes 6 vi r el senor bendice a su pueblo con la paz hijos de dios aclamad al senor aclamad la gloria del nombre del senor postraos ante el senor en el atrio sagrado r la voz del senor sobre las aguas el senor sobre las aguas torrenciales la voz del senor es potente la voz del senor es magnifica r el dios de la gloria ha tronado en su templo un grito unanime gloria el senor se sienta por encima del aguacero el senor se sienta como rey eterno r",
-  "lizq": [
-    {
-      "line": "R. El Señor bendice a su pueblo con la paz.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Hijos de Dios, aclamad al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "aclamad la gloria del nombre del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "postraos ante el Señor en el atrio sagrado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "La voz del Señor sobre las aguas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el Señor sobre las aguas torrenciales.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "La voz del Señor es potente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "la voz del Señor es magnífica. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Dios de la gloria ha tronado.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "En su templo un grito unánime: «¡Gloria!».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor se sienta por encima del aguacero,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el Señor se sienta como rey eterno. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "id": "seui_032"
 }

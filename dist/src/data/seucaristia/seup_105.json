@@ -1,15 +1,9 @@
 {
-  "id": "seup_105",
-  "title": "Miércoles de la 18ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 18ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Jeremías 31. 10. 11-12ab. 13 (R.: cf. 10d)",
-  "salmo": "Interleccional: Jeremías 31. 10. 11-12ab. 13 (R.: cf. 10d)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5183,
-  "respuesta": "R. El Señor nos guardará como un pastor a su rebaño.",
   "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "salmo": "Interleccional: Jeremías 31. 10. 11-12ab. 13 (R.: cf. 10d)",
+  "hasAudio": false,
+  "subtitle": "Interleccional: Jeremías 31. 10. 11-12ab. 13 (R.: cf. 10d)",
   "estrofas": [
     [
       "Escuchad, pueblos, la palabra del Señor,",
@@ -30,28 +24,22 @@
       "los alegraré y aliviaré sus penas. R."
     ]
   ],
-  "textoCompleto": "Escuchad, pueblos, la palabra del Señor,\nanunciadla en las islas remotas:\n«El que dispersó a Israel lo reunirá,\nlo guardará como un pastor a su rebaño». R.\n\n«Porque el Señor redimió a Jacob,\nlo rescató de una mano más fuerte».\nVendrán con aclamaciones a la altura de Sión,\nafluirán hacia los bienes del Señor. R.\n\nEntonces se alegrará la doncella en la danza,\ngozarán los jóvenes y los viejos;\nconvertiré su tristeza en gozo,\nlos alegraré y aliviaré sus penas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 18 semana de tiempo ordinario ano par tiempo ordinario miercoles interleccional jeremias 31 10 11 12ab 13 r cf 10d semana 18 semana xviii miercoles 18 xviii r el senor nos guardara como un pastor a su rebano escuchad pueblos la palabra del senor anunciadla en las islas remotas el que disperso a israel lo reunira lo guardara como un pastor a su rebano r porque el senor redimio a jacob lo rescato de una mano mas fuerte vendran con aclamaciones a la altura de sion afluiran hacia los bienes del senor r entonces se alegrara la doncella en la danza gozaran los jovenes y los viejos convertire su tristeza en gozo los alegrare y aliviare sus penas r",
   "lizq": [
     {
-      "line": "R. El Señor nos guardará como un pastor a su rebaño.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor nos guardará como un pastor a su rebaño."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Escuchad, pueblos, la palabra del Señor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "anunciadla en las islas remotas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "anunciadla en las islas remotas:"
     },
     {
       "line": "«El que dispersó a Israel lo reunirá,",
@@ -62,16 +50,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "«Porque el Señor redimió a Jacob,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "lo rescató de una mano más fuerte».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lo rescató de una mano más fuerte»."
     },
     {
       "line": "Vendrán con aclamaciones a la altura de Sión,",
@@ -94,12 +82,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "convertiré su tristeza en gozo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "convertiré su tristeza en gozo,"
     },
     {
       "line": "los alegraré y aliviaré sus penas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "respuesta": "R. El Señor nos guardará como un pastor a su rebaño.",
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Escuchad, pueblos, la palabra del Señor,\nanunciadla en las islas remotas:\n«El que dispersó a Israel lo reunirá,\nlo guardará como un pastor a su rebaño». R.\n\n«Porque el Señor redimió a Jacob,\nlo rescató de una mano más fuerte».\nVendrán con aclamaciones a la altura de Sión,\nafluirán hacia los bienes del Señor. R.\n\nEntonces se alegrará la doncella en la danza,\ngozarán los jóvenes y los viejos;\nconvertiré su tristeza en gozo,\nlos alegraré y aliviaré sus penas. R.",
+  "searchPool": "miercoles de la 18 semana de tiempo ordinario ano par tiempo ordinario miercoles interleccional jeremias 31 10 11 12ab 13 r cf 10d semana 18 semana xviii miercoles 18 xviii r el senor nos guardara como un pastor a su rebano escuchad pueblos la palabra del senor anunciadla en las islas remotas el que disperso a israel lo reunira lo guardara como un pastor a su rebano r porque el senor redimio a jacob lo rescato de una mano mas fuerte vendran con aclamaciones a la altura de sion afluiran hacia los bienes del senor r entonces se alegrara la doncella en la danza gozaran los jovenes y los viejos convertire su tristeza en gozo los alegrare y aliviare sus penas r",
+  "ciclo": "Año Par",
+  "id": "seup_105",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 5183,
+  "celebracion": "Miércoles de la 18ª semana de Tiempo Ordinario",
+  "dia": "Miércoles",
+  "title": "Miércoles de la 18ª semana de Tiempo Ordinario"
 }

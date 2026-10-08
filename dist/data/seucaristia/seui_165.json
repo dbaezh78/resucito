@@ -1,15 +1,12 @@
 {
-  "id": "seui_165",
-  "title": "Miércoles de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 28ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 61, 2-3. 6-7. 9 (R.: 13b)",
+  "searchPool": "miercoles de la 28 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 61 2 3 6 7 9 r 13b semana 28 semana xxviii miercoles 28 xxviii r tu senor pagas a cada uno segun sus obras solo en dios descansa mi alma porque de el viene mi salvacion solo el es mi roca y mi salvacion mi alcazar no vacilare r descansa solo en dios alma mia porque el es mi esperanza solo el es mi roca y mi salvacion mi alcazar no vacilare r pueblo suyo confiad en el desahogad ante el vuestro corazon que dios es nuestro refugio r",
+  "orden": 5283,
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
   "salmo": "Salmo responsorial: Salmo 61, 2-3. 6-7. 9 (R.: 13b)",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5283,
-  "respuesta": "R. Tú, Señor, pagas a cada uno según sus obras.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Sólo en Dios descansa mi alma,\nporque de él viene mi salvación;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.\n\nDescansa sólo en Dios, alma mía,\nporque él es mi esperanza;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.\n\nPueblo suyo, confiad en él,\ndesahogad ante él vuestro corazón,\nque Dios es nuestro refugio. R.",
   "estrofas": [
     [
       "Sólo en Dios descansa mi alma,",
@@ -29,16 +26,19 @@
       "que Dios es nuestro refugio. R."
     ]
   ],
-  "textoCompleto": "Sólo en Dios descansa mi alma,\nporque de él viene mi salvación;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.\n\nDescansa sólo en Dios, alma mía,\nporque él es mi esperanza;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.\n\nPueblo suyo, confiad en él,\ndesahogad ante él vuestro corazón,\nque Dios es nuestro refugio. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "title": "Miércoles de la 28ª semana de Tiempo Ordinario",
+  "id": "seui_165",
+  "celebracion": "Miércoles de la 28ª semana de Tiempo Ordinario",
+  "respuesta": "R. Tú, Señor, pagas a cada uno según sus obras.",
+  "subtitle": "Salmo responsorial: Salmo 61, 2-3. 6-7. 9 (R.: 13b)",
+  "dia": "Miércoles",
   "hasAudio": false,
-  "searchPool": "miercoles de la 28 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 61 2 3 6 7 9 r 13b semana 28 semana xxviii miercoles 28 xxviii r tu senor pagas a cada uno segun sus obras solo en dios descansa mi alma porque de el viene mi salvacion solo el es mi roca y mi salvacion mi alcazar no vacilare r descansa solo en dios alma mia porque el es mi esperanza solo el es mi roca y mi salvacion mi alcazar no vacilare r pueblo suyo confiad en el desahogad ante el vuestro corazon que dios es nuestro refugio r",
+  "respuestaOpcional": "",
   "lizq": [
     {
-      "line": "R. Tú, Señor, pagas a cada uno según sus obras.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Tú, Señor, pagas a cada uno según sus obras."
     },
     {
       "line": "",
@@ -49,8 +49,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "porque de él viene mi salvación;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque de él viene mi salvación;"
     },
     {
       "line": "sólo él es mi roca y mi salvación,",
@@ -81,8 +81,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Pueblo suyo, confiad en él,",

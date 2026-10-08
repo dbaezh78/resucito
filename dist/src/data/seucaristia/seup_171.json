@@ -1,15 +1,8 @@
 {
-  "id": "seup_171",
-  "title": "Miércoles de la 29ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 29ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Isaías 12, 2-3. 4bcd. 5-6 (R.: cf 3)",
   "salmo": "Interleccional: Isaías 12, 2-3. 4bcd. 5-6 (R.: cf 3)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Miércoles",
-  "orden": 5293,
-  "respuesta": "R. Sacaréis aguas con gozo de las fuentes del Salvador.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "id": "seup_171",
   "estrofas": [
     [
       "Él es mi Dios y Salvador:",
@@ -33,12 +26,10 @@
       "el santo de Israel». R."
     ]
   ],
-  "textoCompleto": "Él es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.\n\nTañed para el Señor, que hizo proezas,\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n«Qué grande es en medio de ti\nel santo de Israel». R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 29 semana de tiempo ordinario ano par tiempo ordinario miercoles interleccional isaias 12 2 3 4bcd 5 6 r cf 3 semana 29 semana xxix miercoles 29 xxix r sacareis aguas con gozo de las fuentes del salvador el es mi dios y salvador confiare y no temere porque mi fuerza y mi poder es el senor el fue mi salvacion y sacareis aguas con gozo de las fuentes de la salvacion r dad gracias al senor invocad su nombre contad a los pueblos sus hazanas proclamad que su nombre es excelso r taned para el senor que hizo proezas anunciadlas a toda la tierra gritad jubilosos habitantes de sion que grande es en medio de ti el santo de israel r",
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Él es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.\n\nTañed para el Señor, que hizo proezas,\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n«Qué grande es en medio de ti\nel santo de Israel». R.",
+  "subtitle": "Interleccional: Isaías 12, 2-3. 4bcd. 5-6 (R.: cf 3)",
   "lizq": [
     {
       "line": "R. Sacaréis aguas con gozo",
@@ -65,12 +56,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "él fue mi salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él fue mi salvación."
     },
     {
-      "line": "Y sacaréis aguas con gozo",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Y sacaréis aguas con gozo"
     },
     {
       "line": "de las fuentes de la salvación. R.",
@@ -81,12 +72,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dad gracias al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dad gracias al Señor,"
     },
     {
-      "line": "invocad su nombre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "invocad su nombre,"
     },
     {
       "line": "contad a los pueblos sus hazañas,",
@@ -113,12 +104,21 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "«Qué grande es en medio de ti",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«Qué grande es en medio de ti"
     },
     {
       "line": "el santo de Israel». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "searchPool": "miercoles de la 29 semana de tiempo ordinario ano par tiempo ordinario miercoles interleccional isaias 12 2 3 4bcd 5 6 r cf 3 semana 29 semana xxix miercoles 29 xxix r sacareis aguas con gozo de las fuentes del salvador el es mi dios y salvador confiare y no temere porque mi fuerza y mi poder es el senor el fue mi salvacion y sacareis aguas con gozo de las fuentes de la salvacion r dad gracias al senor invocad su nombre contad a los pueblos sus hazanas proclamad que su nombre es excelso r taned para el senor que hizo proezas anunciadlas a toda la tierra gritad jubilosos habitantes de sion que grande es en medio de ti el santo de israel r",
+  "hasAudio": false,
+  "ciclo": "Año Par",
+  "celebracion": "Miércoles de la 29ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "respuesta": "R. Sacaréis aguas con gozo de las fuentes del Salvador.",
+  "orden": 5293,
+  "catCanto": "Salmo Eucaristía",
+  "title": "Miércoles de la 29ª semana de Tiempo Ordinario"
 }

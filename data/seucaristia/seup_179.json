@@ -1,15 +1,6 @@
 {
-  "id": "seup_179",
-  "title": "Viernes de la 30ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 30ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: 2a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
   "orden": 5305,
-  "respuesta": "R. Grandes son las obras del Señor.",
-  "respuestaOpcional": "R. Aleluya.",
+  "dia": "Viernes",
   "estrofas": [
     [
       "Doy gracias al Señor de todo corazón,",
@@ -30,16 +21,23 @@
       "dándoles la heredad de los gentiles. R."
     ]
   ],
+  "title": "Viernes de la 30ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: 2a)",
+  "respuestaOpcional": "R. Aleluya.",
+  "stage": "Liturgia",
   "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en la asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nEsplendor y belleza son su obra,\nsu generosidad dura por siempre;\nha hecho maravillas memorables,\nel Señor es piadoso y clemente. R.\n\nÉl da alimento a sus fieles,\nrecordando siempre su alianza;\nmostró a su pueblo la fuerza de su obrar,\ndándoles la heredad de los gentiles. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "id": "seup_179",
+  "respuesta": "R. Grandes son las obras del Señor.",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: 2a)",
   "searchPool": "viernes de la 30 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 110 1 2 3 4 5 6 r 2a semana 30 semana xxx viernes 30 xxx r grandes son las obras del senor r aleluya doy gracias al senor de todo corazon en compania de los rectos en la asamblea grandes son las obras del senor dignas de estudio para los que las aman r esplendor y belleza son su obra su generosidad dura por siempre ha hecho maravillas memorables el senor es piadoso y clemente r el da alimento a sus fieles recordando siempre su alianza mostro a su pueblo la fuerza de su obrar dandoles la heredad de los gentiles r",
   "lizq": [
     {
-      "line": "R. Grandes son las obras del Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Grandes son las obras del Señor."
     },
     {
       "line": "",
@@ -50,44 +48,44 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Doy gracias al Señor de todo corazón,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "en compañía de los rectos, en la asamblea.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en compañía de los rectos, en la asamblea."
     },
     {
-      "line": "Grandes son las obras del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Grandes son las obras del Señor,"
     },
     {
       "line": "dignas de estudio para los que las aman. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Esplendor y belleza son su obra,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Esplendor y belleza son su obra,"
     },
     {
       "line": "su generosidad dura por siempre;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ha hecho maravillas memorables,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ha hecho maravillas memorables,"
     },
     {
       "line": "el Señor es piadoso y clemente. R.",
@@ -102,8 +100,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "recordando siempre su alianza;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "recordando siempre su alianza;"
     },
     {
       "line": "mostró a su pueblo la fuerza de su obrar,",
@@ -113,5 +111,7 @@
       "line": "dándoles la heredad de los gentiles. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Viernes de la 30ª semana de Tiempo Ordinario"
 }

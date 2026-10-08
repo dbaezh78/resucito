@@ -1,43 +1,4 @@
 {
-  "id": "seui_169",
-  "title": "Lunes de la 29ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 29ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Lucas 1, 69-70. 71-72. 73-75 (R.: cf. 68)",
-  "salmo": "Interleccional: Lucas 1, 69-70. 71-72. 73-75 (R.: cf. 68)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5291,
-  "respuesta": "R. Bendito sea el Señor, Dios de Israel, porque ha visitado a su pueblo.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Nos ha suscitado una fuerza de salvación",
-      "en la casa de David, su siervo",
-      "según lo había predicho desde antiguo",
-      "por boca de sus santos profetas. R."
-    ],
-    [
-      "Es la salvación que nos libra de nuestros enemigos",
-      "y de la mano de todos los que nos odian;",
-      "realizando la misericordia",
-      "que tuvo con nuestros padres,",
-      "recordando su santa alianza. R."
-    ],
-    [
-      "Y el juramento que juró a nuestro padre Abrahán.",
-      "Para concedernos que, libres de temor,",
-      "arrancados de la mano de los enemigos,",
-      "le sirvamos con santidad y justicia,",
-      "en su presencia, todos nuestros días. R."
-    ]
-  ],
-  "textoCompleto": "Nos ha suscitado una fuerza de salvación\nen la casa de David, su siervo\nsegún lo había predicho desde antiguo\npor boca de sus santos profetas. R.\n\nEs la salvación que nos libra de nuestros enemigos\ny de la mano de todos los que nos odian;\nrealizando la misericordia\nque tuvo con nuestros padres,\nrecordando su santa alianza. R.\n\nY el juramento que juró a nuestro padre Abrahán.\nPara concedernos que, libres de temor,\narrancados de la mano de los enemigos,\nle sirvamos con santidad y justicia,\nen su presencia, todos nuestros días. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 29 semana de tiempo ordinario ano impar tiempo ordinario lunes interleccional lucas 1 69 70 71 72 73 75 r cf 68 semana 29 semana xxix lunes 29 xxix r bendito sea el senor dios de israel porque ha visitado a su pueblo nos ha suscitado una fuerza de salvacion en la casa de david su siervo segun lo habia predicho desde antiguo por boca de sus santos profetas r es la salvacion que nos libra de nuestros enemigos y de la mano de todos los que nos odian realizando la misericordia que tuvo con nuestros padres recordando su santa alianza r y el juramento que juro a nuestro padre abrahan para concedernos que libres de temor arrancados de la mano de los enemigos le sirvamos con santidad y justicia en su presencia todos nuestros dias r",
   "lizq": [
     {
       "line": "R. Bendito sea el Señor, Dios de Israel,",
@@ -64,8 +25,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "por boca de sus santos profetas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "por boca de sus santos profetas. R."
     },
     {
       "line": "",
@@ -76,44 +37,83 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y de la mano de todos los que nos odian;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y de la mano de todos los que nos odian;"
     },
     {
       "line": "realizando la misericordia",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que tuvo con nuestros padres,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que tuvo con nuestros padres,"
     },
     {
-      "line": "recordando su santa alianza. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "recordando su santa alianza. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Y el juramento que juró a nuestro padre Abrahán.",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "Para concedernos que, libres de temor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Para concedernos que, libres de temor,"
     },
     {
-      "line": "arrancados de la mano de los enemigos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "arrancados de la mano de los enemigos,"
     },
     {
       "line": "le sirvamos con santidad y justicia,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en su presencia, todos nuestros días. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en su presencia, todos nuestros días. R."
     }
+  ],
+  "subtitle": "Interleccional: Lucas 1, 69-70. 71-72. 73-75 (R.: cf. 68)",
+  "celebracion": "Lunes de la 29ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false,
+  "respuestaOpcional": "",
+  "id": "seui_169",
+  "ciclo": "Año Impar",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Interleccional: Lucas 1, 69-70. 71-72. 73-75 (R.: cf. 68)",
+  "searchPool": "lunes de la 29 semana de tiempo ordinario ano impar tiempo ordinario lunes interleccional lucas 1 69 70 71 72 73 75 r cf 68 semana 29 semana xxix lunes 29 xxix r bendito sea el senor dios de israel porque ha visitado a su pueblo nos ha suscitado una fuerza de salvacion en la casa de david su siervo segun lo habia predicho desde antiguo por boca de sus santos profetas r es la salvacion que nos libra de nuestros enemigos y de la mano de todos los que nos odian realizando la misericordia que tuvo con nuestros padres recordando su santa alianza r y el juramento que juro a nuestro padre abrahan para concedernos que libres de temor arrancados de la mano de los enemigos le sirvamos con santidad y justicia en su presencia todos nuestros dias r",
+  "stage": "Liturgia",
+  "dia": "Lunes",
+  "orden": 5291,
+  "title": "Lunes de la 29ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Bendito sea el Señor, Dios de Israel, porque ha visitado a su pueblo.",
+  "textoCompleto": "Nos ha suscitado una fuerza de salvación\nen la casa de David, su siervo\nsegún lo había predicho desde antiguo\npor boca de sus santos profetas. R.\n\nEs la salvación que nos libra de nuestros enemigos\ny de la mano de todos los que nos odian;\nrealizando la misericordia\nque tuvo con nuestros padres,\nrecordando su santa alianza. R.\n\nY el juramento que juró a nuestro padre Abrahán.\nPara concedernos que, libres de temor,\narrancados de la mano de los enemigos,\nle sirvamos con santidad y justicia,\nen su presencia, todos nuestros días. R.",
+  "estrofas": [
+    [
+      "Nos ha suscitado una fuerza de salvación",
+      "en la casa de David, su siervo",
+      "según lo había predicho desde antiguo",
+      "por boca de sus santos profetas. R."
+    ],
+    [
+      "Es la salvación que nos libra de nuestros enemigos",
+      "y de la mano de todos los que nos odian;",
+      "realizando la misericordia",
+      "que tuvo con nuestros padres,",
+      "recordando su santa alianza. R."
+    ],
+    [
+      "Y el juramento que juró a nuestro padre Abrahán.",
+      "Para concedernos que, libres de temor,",
+      "arrancados de la mano de los enemigos,",
+      "le sirvamos con santidad y justicia,",
+      "en su presencia, todos nuestros días. R."
+    ]
   ]
 }

@@ -1,22 +1,6 @@
 {
-  "id": "seuf_116",
-  "title": "Sábado de la sexta semana de Pascua",
-  "celebracion": "Sábado de la sexta semana de Pascua",
-  "subtitle": "Salmo 46, 2-3. 8-9. 10 (R.: 8a)",
-  "salmo": "Salmo 46, 2-3. 8-9. 10 (R.: 8a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
   "tiempo": "Pascua",
-  "dia": "Sábado",
-  "orden": 466,
-  "respuesta": "R. Dios es el rey del mundo.",
-  "respuestaOpcional": "R. Aleluya.",
+  "searchPool": "sabado de la sexta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 46 2 3 8 9 10 r 8a semana 6 semana vi sabado feria r dios es el rey del mundo r aleluya pueblos todos batid palmas aclamad a dios con gritos de jubilo porque el senor es sublime y terrible emperador de toda la tierra r porque dios es el rey del mundo tocad con maestria dios reina sobre las naciones dios se sienta en su trono sagrado r los principes de los gentiles se reunen con el pueblo del dios de abrahan porque de dios son los grandes de la tierra y el es excelso r",
   "estrofas": [
     [
       "Pueblos todos, batid palmas,",
@@ -38,19 +22,17 @@
     ]
   ],
   "textoCompleto": "Pueblos todos, batid palmas,\naclamad a Dios con gritos de júbilo;\nporque el Señor es sublime y terrible,\nemperador de toda la tierra. R.\n\nPorque Dios es el rey del mundo:\ntocad con maestría.\nDios reina sobre las naciones,\nDios se sienta en su trono sagrado. R.\n\nLos príncipes de los gentiles se reúnen\ncon el pueblo del Dios de Abrahán;\nporque de Dios son los grandes de la tierra,\ny él es excelso. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "dia": "Sábado",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la sexta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 46 2 3 8 9 10 r 8a semana 6 semana vi sabado feria r dios es el rey del mundo r aleluya pueblos todos batid palmas aclamad a dios con gritos de jubilo porque el senor es sublime y terrible emperador de toda la tierra r porque dios es el rey del mundo tocad con maestria dios reina sobre las naciones dios se sienta en su trono sagrado r los principes de los gentiles se reunen con el pueblo del dios de abrahan porque de dios son los grandes de la tierra y el es excelso r",
+  "id": "seuf_116",
   "lizq": [
     {
       "line": "R. Dios es el rey del mundo.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -69,12 +51,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "aclamad a Dios con gritos de júbilo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "aclamad a Dios con gritos de júbilo;"
     },
     {
-      "line": "porque el Señor es sublime y terrible,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque el Señor es sublime y terrible,"
     },
     {
       "line": "emperador de toda la tierra. R.",
@@ -85,28 +67,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Porque Dios es el rey del mundo:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque Dios es el rey del mundo:"
     },
     {
-      "line": "tocad con maestría.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tocad con maestría."
     },
     {
       "line": "Dios reina sobre las naciones,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Dios se sienta en su trono sagrado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Dios se sienta en su trono sagrado. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los príncipes de los gentiles se reúnen",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los príncipes de los gentiles se reúnen"
     },
     {
       "line": "con el pueblo del Dios de Abrahán;",
@@ -117,8 +99,26 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y él es excelso. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y él es excelso. R."
     }
-  ]
+  ],
+  "respuestaOpcional": "R. Aleluya.",
+  "respuesta": "R. Dios es el rey del mundo.",
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
+  "title": "Sábado de la sexta semana de Pascua",
+  "stage": "Liturgia",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "subtitle": "Salmo 46, 2-3. 8-9. 10 (R.: 8a)",
+  "orden": 466,
+  "ciclo": "Ciclo A, B y C",
+  "celebracion": "Sábado de la sexta semana de Pascua",
+  "salmo": "Salmo 46, 2-3. 8-9. 10 (R.: 8a)"
 }

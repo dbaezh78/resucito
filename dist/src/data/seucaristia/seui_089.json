@@ -1,41 +1,4 @@
 {
-  "id": "seui_089",
-  "title": "Viernes de la 15ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 15ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 15-16bc. 17-18 (R.: 13)",
-  "salmo": "Salmo responsorial: Salmo 115, 12-13. 15-16bc. 17-18 (R.: 13)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5155,
-  "respuesta": "R. Alzaré la copa de la salvación, invocando el nombre del Señor.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "¿Cómo pagaré al Señor",
-      "todo el bien que me ha hecho?",
-      "Alzaré la copa de la salvación,",
-      "invocando su nombre. R."
-    ],
-    [
-      "Mucho le cuesta al Señor",
-      "la muerte de sus fieles.",
-      "Siervo tuyo soy, hijo de tu esclava:",
-      "rompiste mis cadenas. R."
-    ],
-    [
-      "Te ofreceré un sacrificio de alabanza,",
-      "invocando tu nombre, Señor.",
-      "Cumpliré al Señor mis votos",
-      "en presencia de todo el pueblo. R."
-    ]
-  ],
-  "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nMucho le cuesta al Señor\nla muerte de sus fieles.\nSiervo tuyo soy, hijo de tu esclava:\nrompiste mis cadenas. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 15 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 115 12 13 15 16bc 17 18 r 13 semana 15 semana xv viernes 15 xv r alzare la copa de la salvacion invocando el nombre del senor r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r mucho le cuesta al senor la muerte de sus fieles siervo tuyo soy hijo de tu esclava rompiste mis cadenas r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
   "lizq": [
     {
       "line": "R. Alzaré la copa de la salvación, invocando el nombre del Señor.",
@@ -54,36 +17,36 @@
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "¿Cómo pagaré al Señor",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "todo el bien que me ha hecho?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todo el bien que me ha hecho?"
     },
     {
       "line": "Alzaré la copa de la salvación,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "invocando su nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "invocando su nombre. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Mucho le cuesta al Señor",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "la muerte de sus fieles.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la muerte de sus fieles."
     },
     {
       "line": "Siervo tuyo soy, hijo de tu esclava:",
@@ -110,8 +73,45 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en presencia de todo el pueblo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en presencia de todo el pueblo. R."
     }
-  ]
+  ],
+  "sourceBook": "eucaristia",
+  "title": "Viernes de la 15ª semana de Tiempo Ordinario",
+  "respuesta": "R. Alzaré la copa de la salvación, invocando el nombre del Señor.",
+  "dia": "Viernes",
+  "hasAudio": false,
+  "respuestaOpcional": "R. Aleluya.",
+  "ciclo": "Año Impar",
+  "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nMucho le cuesta al Señor\nla muerte de sus fieles.\nSiervo tuyo soy, hijo de tu esclava:\nrompiste mis cadenas. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R.",
+  "salmo": "Salmo responsorial: Salmo 115, 12-13. 15-16bc. 17-18 (R.: 13)",
+  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 15-16bc. 17-18 (R.: 13)",
+  "stage": "Liturgia",
+  "orden": 5155,
+  "searchPool": "viernes de la 15 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 115 12 13 15 16bc 17 18 r 13 semana 15 semana xv viernes 15 xv r alzare la copa de la salvacion invocando el nombre del senor r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r mucho le cuesta al senor la muerte de sus fieles siervo tuyo soy hijo de tu esclava rompiste mis cadenas r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
+  "estrofas": [
+    [
+      "¿Cómo pagaré al Señor",
+      "todo el bien que me ha hecho?",
+      "Alzaré la copa de la salvación,",
+      "invocando su nombre. R."
+    ],
+    [
+      "Mucho le cuesta al Señor",
+      "la muerte de sus fieles.",
+      "Siervo tuyo soy, hijo de tu esclava:",
+      "rompiste mis cadenas. R."
+    ],
+    [
+      "Te ofreceré un sacrificio de alabanza,",
+      "invocando tu nombre, Señor.",
+      "Cumpliré al Señor mis votos",
+      "en presencia de todo el pueblo. R."
+    ]
+  ],
+  "celebracion": "Viernes de la 15ª semana de Tiempo Ordinario",
+  "id": "seui_089",
+  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía"
 }

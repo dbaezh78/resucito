@@ -1,15 +1,12 @@
 {
-  "id": "seub_40",
-  "title": "Salmo Opción 2",
-  "celebracion": "Salmo Opción 2",
-  "subtitle": "Salmo responsorial: Salmo 103, 1ab y 24ac. 29bc-30. 31 y 34 (R.: cf. 30)",
-  "salmo": "Salmo responsorial: Salmo 103, 1ab y 24ac. 29bc-30. 31 y 34 (R.: cf. 30)",
-  "ciclo": "Ciclo B",
+  "searchPool": "salmo opcion 2 ciclo b solemnidades y fiestas domingo salmo responsorial salmo 103 1ab y 24ac 29bc 30 31 y 34 r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra bendice alma mia al senor dios mio que grande eres cuantas son tus obras senor la tierra esta llena de tus criaturas r les retiras el aliento y expiran y vuelven a ser polvo envias tu aliento y los creas y repueblas la faz de la tierra r gloria a dios para siempre goce el senor con sus obras que le sea agradable mi poema y yo me alegrare con el senor r",
+  "textoCompleto": "Bendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nCuántas son tus obras, Señor;\nla tierra está llena de tus criaturas. R.\n\nLes retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.\n\nGloria a Dios para siempre,\ngoce el Señor con sus obras.\nQue le sea agradable mi poema,\ny yo me alegraré con el Señor. R.",
   "tiempo": "Solemnidades y Fiestas",
-  "dia": "Domingo",
-  "orden": 600,
+  "salmo": "Salmo responsorial: Salmo 103, 1ab y 24ac. 29bc-30. 31 y 34 (R.: cf. 30)",
   "respuesta": "R. Envía tu Espíritu, Señor, y repuebla la faz de la tierra.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 103, 1ab y 24ac. 29bc-30. 31 y 34 (R.: cf. 30)",
   "estrofas": [
     [
       "Bendice, alma mía, al Señor:",
@@ -30,12 +27,13 @@
       "y yo me alegraré con el Señor. R."
     ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor:\n¡Dios mío, qué grande eres!\nCuántas son tus obras, Señor;\nla tierra está llena de tus criaturas. R.\n\nLes retiras el aliento, y expiran\ny vuelven a ser polvo;\nenvías tu aliento, y los creas,\ny repueblas la faz de la tierra. R.\n\nGloria a Dios para siempre,\ngoce el Señor con sus obras.\nQue le sea agradable mi poema,\ny yo me alegraré con el Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "salmo opcion 2 ciclo b solemnidades y fiestas domingo salmo responsorial salmo 103 1ab y 24ac 29bc 30 31 y 34 r cf 30 r envia tu espiritu senor y repuebla la faz de la tierra bendice alma mia al senor dios mio que grande eres cuantas son tus obras senor la tierra esta llena de tus criaturas r les retiras el aliento y expiran y vuelven a ser polvo envias tu aliento y los creas y repueblas la faz de la tierra r gloria a dios para siempre goce el senor con sus obras que le sea agradable mi poema y yo me alegrare con el senor r",
+  "orden": 600,
+  "title": "Salmo Opción 2",
+  "ciclo": "Ciclo B",
+  "celebracion": "Salmo Opción 2",
+  "respuestaOpcional": "",
+  "dia": "Domingo",
+  "id": "seub_40",
   "lizq": [
     {
       "line": "R. Envía tu Espíritu, Señor,",
@@ -46,16 +44,16 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendice, alma mía, al Señor:",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "¡Dios mío, qué grande eres!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¡Dios mío, qué grande eres!"
     },
     {
       "line": "Cuántas son tus obras, Señor;",
@@ -82,16 +80,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y repueblas la faz de la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y repueblas la faz de la tierra. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Gloria a Dios para siempre,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Gloria a Dios para siempre,"
     },
     {
       "line": "goce el Señor con sus obras.",
@@ -102,8 +100,10 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y yo me alegraré con el Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y yo me alegraré con el Señor. R."
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "hasAudio": false
 }

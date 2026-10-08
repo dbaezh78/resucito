@@ -1,15 +1,13 @@
 {
-  "id": "seua_48",
-  "title": "Domingo de la 4ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 4ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: Mt 5, 13)",
-  "salmo": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: Mt 5, 13)",
   "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 504,
+  "searchPool": "domingo de la 4 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 145 7 8 9a 9bc 10 r mt 5 13 r dichosos los pobres en el espiritu porque de ellos es el reino de los cielos r aleluya el senor mantiene su fidelidad perpetuamente el hace justicia a los oprimidos el da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
   "respuesta": "R. Dichosos los pobres en el espíritu, porque de ellos es el reino de los cielos.",
+  "sourceBook": "eucaristia",
+  "celebracion": "Domingo de la 4ª semana de Tiempo Ordinario",
   "respuestaOpcional": "R. Aleluya.",
+  "subtitle": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: Mt 5, 13)",
+  "catCanto": "Salmo Eucaristía",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "El Señor mantiene su fidelidad perpetuamente,",
@@ -30,16 +28,14 @@
       "tu Dios, Sión, de edad en edad. R."
     ]
   ],
-  "textoCompleto": "El Señor mantiene su fidelidad perpetuamente,\nél hace justicia a los oprimidos,\nél da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos,\nel Señor guarda a los peregrinos. R.\n\nSustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 4 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 145 7 8 9a 9bc 10 r mt 5 13 r dichosos los pobres en el espiritu porque de ellos es el reino de los cielos r aleluya el senor mantiene su fidelidad perpetuamente el hace justicia a los oprimidos el da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
+  "dia": "Domingo",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: Mt 5, 13)",
+  "orden": 504,
   "lizq": [
     {
-      "line": "R. Dichosos los pobres en el espíritu,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dichosos los pobres en el espíritu,"
     },
     {
       "line": "porque de ellos es el reino de los cielos.",
@@ -50,8 +46,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
@@ -70,16 +66,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "él da pan a los hambrientos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él da pan a los hambrientos."
     },
     {
-      "line": "El Señor liberta a los cautivos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "El Señor liberta a los cautivos. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor abre los ojos al ciego,",
@@ -106,16 +102,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y trastorna el camino de los malvados.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y trastorna el camino de los malvados."
     },
     {
-      "line": "El Señor reina eternamente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor reina eternamente,"
     },
     {
-      "line": "tu Dios, Sión, de edad en edad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tu Dios, Sión, de edad en edad. R."
     }
-  ]
+  ],
+  "hasAudio": false,
+  "title": "Domingo de la 4ª semana de Tiempo Ordinario",
+  "textoCompleto": "El Señor mantiene su fidelidad perpetuamente,\nél hace justicia a los oprimidos,\nél da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos,\nel Señor guarda a los peregrinos. R.\n\nSustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R.",
+  "id": "seua_48"
 }

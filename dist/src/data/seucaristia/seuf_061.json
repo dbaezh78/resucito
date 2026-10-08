@@ -1,10 +1,4 @@
 {
-  "id": "seuf_061",
-  "title": "Viernes de la 3ª semana de Cuaresma",
-  "celebracion": "Viernes de la 3ª semana de Cuaresma",
-  "subtitle": "Salmo 80, 6c-8a. 8bc-9. 10-11ab. 14 y 17 (R.: cf. 11 y 9a)",
-  "salmo": "Salmo 80, 6c-8a. 8bc-9. 10-11ab. 14 y 17 (R.: cf. 11 y 9a)",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,10 +6,15 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Viernes",
+  "celebracion": "Viernes de la 3ª semana de Cuaresma",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "textoCompleto": "Oigo un lenguaje desconocido:\n«Retiré sus hombros de la carga,\ny sus manos dejaron la espuerta.\nClamaste en la aflicción, y te libré. R.\n\nTe respondí oculto entre los truenos,\nte puse a prueba junto a la fuente de Meribá.\nEscucha, pueblo mío, doy testimonio contra ti;\n¡ojalá me escuchases, Israel! R.\n\nNo tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto. R.\n\n¡Ojalá me escuchase mi pueblo\ny caminase Israel por mi camino!:\nte alimentaría con flor de harina,\nte saciaría con miel silvestre». R.",
+  "ciclo": "Ciclo A, B y C",
   "orden": 335,
-  "respuesta": "R. Yo soy el Señor, Dios tuyo: escucha mi voz.",
+  "sourceBook": "eucaristia",
+  "subtitle": "Salmo 80, 6c-8a. 8bc-9. 10-11ab. 14 y 17 (R.: cf. 11 y 9a)",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -43,12 +42,12 @@
       "te saciaría con miel silvestre». R."
     ]
   ],
-  "textoCompleto": "Oigo un lenguaje desconocido:\n«Retiré sus hombros de la carga,\ny sus manos dejaron la espuerta.\nClamaste en la aflicción, y te libré. R.\n\nTe respondí oculto entre los truenos,\nte puse a prueba junto a la fuente de Meribá.\nEscucha, pueblo mío, doy testimonio contra ti;\n¡ojalá me escuchases, Israel! R.\n\nNo tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto. R.\n\n¡Ojalá me escuchase mi pueblo\ny caminase Israel por mi camino!:\nte alimentaría con flor de harina,\nte saciaría con miel silvestre». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "tiempo": "Cuaresma",
+  "title": "Viernes de la 3ª semana de Cuaresma",
   "searchPool": "viernes de la 3 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma viernes salmo 80 6c 8a 8bc 9 10 11ab 14 y 17 r cf 11 y 9a semana 3 semana iii viernes feria r yo soy el senor dios tuyo escucha mi voz oigo un lenguaje desconocido retire sus hombros de la carga y sus manos dejaron la espuerta clamaste en la afliccion y te libre r te respondi oculto entre los truenos te puse a prueba junto a la fuente de meriba escucha pueblo mio doy testimonio contra ti ojala me escuchases israel r no tendras un dios extrano no adoraras un dios extranjero yo soy el senor dios tuyo que te saque del pais de egipto r ojala me escuchase mi pueblo y caminase israel por mi camino te alimentaria con flor de harina te saciaria con miel silvestre r",
+  "dia": "Viernes",
+  "id": "seuf_061",
+  "respuesta": "R. Yo soy el Señor, Dios tuyo: escucha mi voz.",
   "lizq": [
     {
       "line": "R. Yo soy el Señor, Dios tuyo:",
@@ -63,8 +62,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Oigo un lenguaje desconocido:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Oigo un lenguaje desconocido:"
     },
     {
       "line": "«Retiré sus hombros de la carga,",
@@ -75,12 +74,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Clamaste en la aflicción, y te libré. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Clamaste en la aflicción, y te libré. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Te respondí oculto entre los truenos,",
@@ -91,8 +90,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Escucha, pueblo mío, doy testimonio contra ti;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Escucha, pueblo mío, doy testimonio contra ti;"
     },
     {
       "line": "¡ojalá me escuchases, Israel! R.",
@@ -103,8 +102,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "No tendrás un dios extraño,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No tendrás un dios extraño,"
     },
     {
       "line": "no adorarás un dios extranjero;",
@@ -115,8 +114,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que te saqué del país de Egipto. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que te saqué del país de Egipto. R."
     },
     {
       "line": "",
@@ -135,8 +134,9 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "te saciaría con miel silvestre». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "te saciaría con miel silvestre». R."
     }
-  ]
+  ],
+  "salmo": "Salmo 80, 6c-8a. 8bc-9. 10-11ab. 14 y 17 (R.: cf. 11 y 9a)"
 }

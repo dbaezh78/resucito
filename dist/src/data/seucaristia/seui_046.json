@@ -1,14 +1,10 @@
 {
-  "id": "seui_046",
-  "title": "Jueves de la 8ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 8ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 32, 2-3. 4-5. 6-7. 8-9 (R.: 6a)",
-  "salmo": "Salmo responsorial: Salmo 32, 2-3. 4-5. 6-7. 8-9 (R.: 6a)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5084,
   "respuesta": "R. La palabra del Señor hizo el cielo.",
+  "hasAudio": false,
+  "id": "seui_046",
+  "dia": "Jueves",
+  "subtitle": "Salmo responsorial: Salmo 32, 2-3. 4-5. 6-7. 8-9 (R.: 6a)",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -36,20 +32,20 @@
       "él lo mandó, y surgió. R."
     ]
   ],
-  "textoCompleto": "Dad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas;\ncantadle un cántico nuevo,\nacompañando los vítores con bordones. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLa palabra del Señor hizo el cielo;\nel aliento de su boca, sus ejércitos;\nencierra en un odre las aguas marinas,\nmete en un depósito el océano. R.\n\nTema al Señor la tierra entera,\ntiemblen ante él los habitantes del orbe:\nporque él lo dijo, y existió,\nél lo mandó, y surgió. R.",
   "sourceBook": "eucaristia",
+  "title": "Jueves de la 8ª semana de Tiempo Ordinario",
+  "orden": 5084,
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 8 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 32 2 3 4 5 6 7 8 9 r 6a semana 8 semana viii jueves 8 viii r la palabra del senor hizo el cielo dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas cantadle un cantico nuevo acompanando los vitores con bordones r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r la palabra del senor hizo el cielo el aliento de su boca sus ejercitos encierra en un odre las aguas marinas mete en un deposito el oceano r tema al senor la tierra entera tiemblen ante el los habitantes del orbe porque el lo dijo y existio el lo mando y surgio r",
+  "celebracion": "Jueves de la 8ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 32, 2-3. 4-5. 6-7. 8-9 (R.: 6a)",
   "lizq": [
     {
       "line": "R. La palabra del Señor hizo el cielo.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Dad gracias al Señor con la cítara,",
@@ -72,28 +68,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Que la palabra del Señor es sincera,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que la palabra del Señor es sincera,"
     },
     {
-      "line": "y todas sus acciones son leales;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y todas sus acciones son leales;"
     },
     {
       "line": "él ama la justicia y el derecho,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y su misericordia llena la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y su misericordia llena la tierra. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "La palabra del Señor hizo el cielo;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La palabra del Señor hizo el cielo;"
     },
     {
       "line": "el aliento de su boca, sus ejércitos;",
@@ -116,16 +112,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tiemblen ante él los habitantes del orbe:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tiemblen ante él los habitantes del orbe:"
     },
     {
-      "line": "porque él lo dijo, y existió,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque él lo dijo, y existió,"
     },
     {
       "line": "él lo mandó, y surgió. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Dad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas;\ncantadle un cántico nuevo,\nacompañando los vítores con bordones. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLa palabra del Señor hizo el cielo;\nel aliento de su boca, sus ejércitos;\nencierra en un odre las aguas marinas,\nmete en un depósito el océano. R.\n\nTema al Señor la tierra entera,\ntiemblen ante él los habitantes del orbe:\nporque él lo dijo, y existió,\nél lo mandó, y surgió. R.",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "jueves de la 8 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 32 2 3 4 5 6 7 8 9 r 6a semana 8 semana viii jueves 8 viii r la palabra del senor hizo el cielo dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas cantadle un cantico nuevo acompanando los vitores con bordones r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r la palabra del senor hizo el cielo el aliento de su boca sus ejercitos encierra en un odre las aguas marinas mete en un deposito el oceano r tema al senor la tierra entera tiemblen ante el los habitantes del orbe porque el lo dijo y existio el lo mando y surgio r",
+  "ciclo": "Año Impar"
 }

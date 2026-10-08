@@ -1,15 +1,11 @@
 {
-  "id": "seuc_36",
-  "title": "Segundo domingo de Pascua",
-  "celebracion": "Segundo domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 117, 2-4. 22-24. 25-27a (R.: 1)",
-  "salmo": "Salmo responsorial: Salmo 117, 2-4. 22-24. 25-27a (R.: 1)",
+  "textoCompleto": "Diga la casa de Israel:\neterna es su misericordia.\nDiga la casa de Aarón:\neterna es su misericordia.\nDigan los fieles del Señor:\neterna es su misericordia. R.\n\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho, ha sido un milagro patente.\nÉste es el día en que actuó el Señor:\nsea nuestra alegría y nuestro gozo. R.\n\nSeñor, danos la salvación;\nSeñor, danos prosperidad.\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor;\nel Señor es Dios, él nos ilumina. R.",
   "ciclo": "Ciclo C",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
-  "respuesta": "R. Dad gracias al Señor porque es bueno, porque es eterna su misericordia.",
+  "hasAudio": false,
+  "id": "seuc_36",
   "respuestaOpcional": "",
+  "respuesta": "R. Dad gracias al Señor porque es bueno, porque es eterna su misericordia.",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Diga la casa de Israel:",
@@ -34,12 +30,14 @@
       "el Señor es Dios, él nos ilumina. R."
     ]
   ],
-  "textoCompleto": "Diga la casa de Israel:\neterna es su misericordia.\nDiga la casa de Aarón:\neterna es su misericordia.\nDigan los fieles del Señor:\neterna es su misericordia. R.\n\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho, ha sido un milagro patente.\nÉste es el día en que actuó el Señor:\nsea nuestra alegría y nuestro gozo. R.\n\nSeñor, danos la salvación;\nSeñor, danos prosperidad.\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor;\nel Señor es Dios, él nos ilumina. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 117, 2-4. 22-24. 25-27a (R.: 1)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "segundo domingo de pascua ciclo c pascua domingo salmo responsorial salmo 117 2 4 22 24 25 27a r 1 r dad gracias al senor porque es bueno porque es eterna su misericordia diga la casa de israel eterna es su misericordia diga la casa de aaron eterna es su misericordia digan los fieles del senor eterna es su misericordia r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo r senor danos la salvacion senor danos prosperidad bendito el que viene en nombre del senor os bendecimos desde la casa del senor el senor es dios el nos ilumina r",
+  "salmo": "Salmo responsorial: Salmo 117, 2-4. 22-24. 25-27a (R.: 1)",
+  "sourceBook": "eucaristia",
+  "orden": 410,
+  "celebracion": "Segundo domingo de Pascua",
+  "tiempo": "Pascua",
+  "dia": "Domingo",
   "lizq": [
     {
       "line": "R. Dad gracias al Señor porque es bueno,",
@@ -54,8 +52,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Diga la casa de Israel:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Diga la casa de Israel:"
     },
     {
       "line": "eterna es su misericordia.",
@@ -78,12 +76,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "La piedra que desecharon los arquitectos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La piedra que desecharon los arquitectos"
     },
     {
       "line": "es ahora la piedra angular.",
@@ -102,8 +100,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Señor, danos la salvación;",
@@ -125,5 +123,7 @@
       "line": "el Señor es Dios, él nos ilumina. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "searchPool": "segundo domingo de pascua ciclo c pascua domingo salmo responsorial salmo 117 2 4 22 24 25 27a r 1 r dad gracias al senor porque es bueno porque es eterna su misericordia diga la casa de israel eterna es su misericordia diga la casa de aaron eterna es su misericordia digan los fieles del senor eterna es su misericordia r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo r senor danos la salvacion senor danos prosperidad bendito el que viene en nombre del senor os bendecimos desde la casa del senor el senor es dios el nos ilumina r",
+  "title": "Segundo domingo de Pascua"
 }

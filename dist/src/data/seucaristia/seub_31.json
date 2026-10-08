@@ -1,15 +1,13 @@
 {
-  "id": "seub_31",
-  "title": "Domingo de Pascua",
-  "celebracion": "Domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 117, 1- 2. 16ab-17. 22-23 (R.: 24)",
-  "salmo": "Salmo responsorial: Salmo 117, 1- 2. 16ab-17. 22-23 (R.: 24)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
   "respuesta": "R. Este es el día en que actuó el Señor: sea nuestra alegría y nuestro gozo.",
-  "respuestaOpcional": "",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "tiempo": "Pascua",
+  "ciclo": "Ciclo B",
+  "dia": "Domingo",
+  "title": "Domingo de Pascua",
+  "id": "seub_31",
+  "orden": 410,
   "estrofas": [
     [
       "Dad gracias al Señor, porque es bueno,",
@@ -30,12 +28,6 @@
       "ha sido un milagro patente. R."
     ]
   ],
-  "textoCompleto": "Dad gracias al Señor, porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\nEterna es su misericordia. R.\n\nLa diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor. R.\n\nLa piedra que desecharon los arquitectos,\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de pascua ciclo b pascua domingo salmo responsorial salmo 117 1 2 16ab 17 22 23 r 24 r este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo dad gracias al senor porque es bueno porque es eterna su misericordia diga la casa de israel eterna es su misericordia r la diestra del senor es poderosa la diestra del senor es excelsa no he de morir vivire para contar las hazanas del senor r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente r",
   "lizq": [
     {
       "line": "R. Este es el día en que actuó el Señor:",
@@ -54,24 +46,24 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "porque es eterna su misericordia.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque es eterna su misericordia."
     },
     {
       "line": "Diga la casa de Israel:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Eterna es su misericordia. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Eterna es su misericordia. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "La diestra del Señor es poderosa,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La diestra del Señor es poderosa,"
     },
     {
       "line": "la diestra del Señor es excelsa.",
@@ -82,8 +74,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "para contar las hazañas del Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "para contar las hazañas del Señor. R."
     },
     {
       "line": "",
@@ -102,8 +94,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ha sido un milagro patente. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ha sido un milagro patente. R."
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 117, 1- 2. 16ab-17. 22-23 (R.: 24)",
+  "catCanto": "Salmo Eucaristía",
+  "respuestaOpcional": "",
+  "textoCompleto": "Dad gracias al Señor, porque es bueno,\nporque es eterna su misericordia.\nDiga la casa de Israel:\nEterna es su misericordia. R.\n\nLa diestra del Señor es poderosa,\nla diestra del Señor es excelsa.\nNo he de morir, viviré\npara contar las hazañas del Señor. R.\n\nLa piedra que desecharon los arquitectos,\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.",
+  "salmo": "Salmo responsorial: Salmo 117, 1- 2. 16ab-17. 22-23 (R.: 24)",
+  "sourceBook": "eucaristia",
+  "celebracion": "Domingo de Pascua",
+  "searchPool": "domingo de pascua ciclo b pascua domingo salmo responsorial salmo 117 1 2 16ab 17 22 23 r 24 r este es el dia en que actuo el senor sea nuestra alegria y nuestro gozo dad gracias al senor porque es bueno porque es eterna su misericordia diga la casa de israel eterna es su misericordia r la diestra del senor es poderosa la diestra del senor es excelsa no he de morir vivire para contar las hazanas del senor r la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente r"
 }

@@ -1,15 +1,79 @@
 {
   "id": "seui_002",
-  "title": "Martes de la 1ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "lizq": [
+    {
+      "line": "R. Diste a tu Hijo el mando sobre las obras de tus manos.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "¡Señor, dueño nuestro,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "qué admirable es tu nombre"
+    },
+    {
+      "line": "en toda la tierra!",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Qué es el hombre, para que te acuerdes de él,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el ser humano, para darle poder? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Lo hiciste poco inferior a los ángeles,"
+    },
+    {
+      "line": "lo coronaste de gloria y dignidad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "le diste el mando sobre las obras de tus manos. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Todo lo sometiste bajo sus pies:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "rebaños de ovejas y toros,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y hasta las bestias del campo,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "las aves del cielo, los peces del mar,"
+    },
+    {
+      "line": "que trazan sendas por el mar. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "celebracion": "Martes de la 1ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 8, 2 a y 5. 6-7. 8-9 (R.: cf. 7)",
-  "salmo": "Salmo responsorial: Salmo 8, 2 a y 5. 6-7. 8-9 (R.: cf. 7)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5012,
-  "respuesta": "R. Diste a tu Hijo el mando sobre las obras de tus manos.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "¡Señor, dueño nuestro,",
@@ -31,80 +95,16 @@
       "que trazan sendas por el mar. R."
     ]
   ],
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 8, 2 a y 5. 6-7. 8-9 (R.: cf. 7)",
+  "ciclo": "Año Impar",
+  "searchPool": "martes de la 1 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 8 2 a y 5 6 7 8 9 r cf 7 semana 1 semana i martes 1 i r diste a tu hijo el mando sobre las obras de tus manos senor dueno nuestro que admirable es tu nombre en toda la tierra que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos r todo lo sometiste bajo sus pies rebanos de ovejas y toros y hasta las bestias del campo las aves del cielo los peces del mar que trazan sendas por el mar r",
+  "orden": 5012,
+  "stage": "Liturgia",
+  "dia": "Martes",
+  "title": "Martes de la 1ª semana de Tiempo Ordinario",
   "textoCompleto": "¡Señor, dueño nuestro,\nqué admirable es tu nombre\nen toda la tierra!\n¿Qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos. R.\n\nTodo lo sometiste bajo sus pies:\nrebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 1 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 8 2 a y 5 6 7 8 9 r cf 7 semana 1 semana i martes 1 i r diste a tu hijo el mando sobre las obras de tus manos senor dueno nuestro que admirable es tu nombre en toda la tierra que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos r todo lo sometiste bajo sus pies rebanos de ovejas y toros y hasta las bestias del campo las aves del cielo los peces del mar que trazan sendas por el mar r",
-  "lizq": [
-    {
-      "line": "R. Diste a tu Hijo el mando sobre las obras de tus manos.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "¡Señor, dueño nuestro,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "qué admirable es tu nombre",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en toda la tierra!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿Qué es el hombre, para que te acuerdes de él,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el ser humano, para darle poder? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Lo hiciste poco inferior a los ángeles,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "lo coronaste de gloria y dignidad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "le diste el mando sobre las obras de tus manos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Todo lo sometiste bajo sus pies:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "rebaños de ovejas y toros,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y hasta las bestias del campo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "las aves del cielo, los peces del mar,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que trazan sendas por el mar. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuesta": "R. Diste a tu Hijo el mando sobre las obras de tus manos.",
+  "catCanto": "Salmo Eucaristía"
 }

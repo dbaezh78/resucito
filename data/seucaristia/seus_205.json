@@ -1,75 +1,19 @@
 {
-  "id": "seus_205",
-  "title": "LA INMACULADA CONCEPCIÓN DE SANTA MARÍA VIRGEN",
-  "celebracion": "LA INMACULADA CONCEPCIÓN DE SANTA MARÍA VIRGEN",
-  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
   "ciclo": "Santos",
-  "tiempo": "Diciembre",
-  "dia": "8",
-  "orden": 12080,
-  "respuesta": "R. Cantad al Señor un cántico nuevo, porque ha hecho maravillas.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Cantad al Señor un cántico nuevo,",
-      "porque ha hecho maravillas:",
-      "su diestra le ha dado la victoria,",
-      "su santo brazo. R."
-    ],
-    [
-      "El Señor da a conocer su victoria,",
-      "revela a las naciones su justicia:",
-      "se acordó de su misericordia y su fidelidad",
-      "en favor de la casa de Israel. R."
-    ],
-    [
-      "Los confines de la tierra han contemplado",
-      "la victoria de nuestro Dios.",
-      "Aclama al Señor, tierra entera;",
-      "gritad, vitoread, tocad. R."
-    ]
-  ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclama al Señor, tierra entera;\ngritad, vitoread, tocad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "la inmaculada concepcion de santa maria virgen solemnidad santos diciembre 8 opcion 1 salmo 97 1 2 3ab 3c 4 r 1a r cantad al senor un cantico nuevo porque ha hecho maravillas cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclama al senor tierra entera gritad vitoread tocad r opcion 2 judit 13 18bcde 19 r 15 9d r tu eres el orgullo de nuestra raza el altisimo te ha bendecido hija mas que a todas las mujeres de la tierra bendito el senor creador del cielo y tierra r que hoy ha glorificado tu nombre de tal modo que tu alabanza estara siempre en la boca de todos los que se acuerden de esta obra poderosa de dios r opcion 3 lucas 1 46 47 48 49 50 51 52 53 54 55 r 49 r el poderoso ha hecho obras grandes por mi su nombre es santo proclama mi alma la grandeza del senor se alegra mi espiritu en dios mi salvador r porque ha mirado la humillacion de su esclava desde ahora me felicitaran todas las generaciones porque el poderoso ha hecho obras grandes por mi su nombre es santo r y su misericordia llega a sus fieles de generacion en generacion el hace proezas con su brazo dispersa a los soberbios de corazon r derriba del trono a los poderosos y enaltece a los humildes a los hambrientos los colma de bienes y a los ricos los despide vacios r auxilia a israel su siervo acordandose de la misericordia como lo habia prometido a nuestros padres en favor de abrahan y su descendencia por siempre r opcion 4 1 samuel 2 1 4 5 6 7 8abcd r 1a r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r opcion 5 salmo 112 1 2 3 4 5 6 7 8 r 2 r bendito sea el nombre del senor ahora y por siempre alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar el cielo y a la tierra r levanta del polvo al desvalido alza de la basura al pobre para sentarlo con los principes los principes de su pueblo r opcion 6 salmo 44 11 12 14 15 16 17 r 11a r escucha hija mira inclina el oido escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r opcion 7 salmo 44 11 12 14 15 16 17 r 1 1a r escucha hija mira inclina el oido escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r opcion 8 1 samuel 2 1 4 5 6 7 8abcd r 1a r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r opcion 9 salmo 112 1 2 3 4 5 6 7 8 r 2 r bendito sea el nombre del senor ahora y por siempre alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar al cielo y a la tierra r levanta del polvo al desvalido alza de la basura al pobre para sentarlo con los principes los principes de su pueblo r opcion 10 1 samuel 2 1 4 5 6 7 8abcd r 1a r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r opcion 11 salmo 112 1 2 3 4 5 6 7 8 r 2 r bendito sea el nombre del senor ahora y por siempre alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar al cielo y a la tierra r levanta del polvo al desvalido alza de la basura al pobre para sentarlo con los principes los principes de su pueblo r opcion 12 lucas 1 46 47 48 49 50 51 52 53 54 55 r bienaventurada eres virgen maria que llevaste en tu seno al hijo del padre eterno proclama mi alma la grandeza del senor se alegra mi espiritu en dios mi salvador r porque ha mirado la humillacion de su esclava desde ahora me felicitaran todas las generaciones porque el poderoso ha hecho obras grandes por mi su nombre es santo r y su misericordia llega a sus fieles de generacion en generacion el hace proezas con su brazo dispersa a los soberbios de corazon r derriba del trono a los poderosos y enaltece a los humildes a los hambrientos los colma de bienes y a los ricos los despide vacios r auxilia a israel su siervo acordandose de la misericordia como lo habia prometido a nuestros padres en favor de abrahan y su descendencia por siempre r",
+  "celebracion": "LA INMACULADA CONCEPCIÓN DE SANTA MARÍA VIRGEN",
   "lizq": [
     {
-      "type": "variant-group",
-      "id": "salmo_variantes",
-      "label": "Salmo Responsorial",
       "color": "var(--Rojo-Leccionario)",
+      "label": "Salmo Responsorial",
+      "id": "salmo_variantes",
+      "type": "variant-group",
       "variants": [
         {
-          "id": "opt_1",
-          "name": "Opción 1: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
-          "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
-          "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
-          "respuesta": "R. Cantad al Señor un cántico nuevo, porque ha hecho maravillas.",
           "respuestaOpcional": "",
-          "strophes": [
-            [
-              "Cantad al Señor un cántico nuevo,",
-              "porque ha hecho maravillas:",
-              "su diestra le ha dado la victoria,",
-              "su santo brazo. R."
-            ],
-            [
-              "El Señor da a conocer su victoria,",
-              "revela a las naciones su justicia:",
-              "se acordó de su misericordia y su fidelidad",
-              "en favor de la casa de Israel. R."
-            ],
-            [
-              "Los confines de la tierra han contemplado",
-              "la victoria de nuestro Dios.",
-              "Aclama al Señor, tierra entera;",
-              "gritad, vitoread, tocad. R."
-            ]
-          ],
+          "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
+          "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
+          "id": "opt_1",
           "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclama al Señor, tierra entera;\ngritad, vitoread, tocad. R.",
           "lines": [
             {
@@ -77,12 +21,12 @@
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "porque ha hecho maravillas.",
-              "sC": "salmo-linea salmo-respuesta salmo-sangria"
+              "sC": "salmo-linea salmo-respuesta salmo-sangria",
+              "line": "porque ha hecho maravillas."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Cantad al Señor un cántico nuevo,",
@@ -113,16 +57,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "se acordó de su misericordia y su fidelidad",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "se acordó de su misericordia y su fidelidad"
             },
             {
-              "line": "en favor de la casa de Israel. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "en favor de la casa de Israel. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Los confines de la tierra han contemplado",
@@ -133,22 +77,44 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Aclama al Señor, tierra entera;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Aclama al Señor, tierra entera;"
             },
             {
-              "line": "gritad, vitoread, tocad. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "gritad, vitoread, tocad. R."
             }
-          ]
+          ],
+          "respuesta": "R. Cantad al Señor un cántico nuevo, porque ha hecho maravillas.",
+          "strophes": [
+            [
+              "Cantad al Señor un cántico nuevo,",
+              "porque ha hecho maravillas:",
+              "su diestra le ha dado la victoria,",
+              "su santo brazo. R."
+            ],
+            [
+              "El Señor da a conocer su victoria,",
+              "revela a las naciones su justicia:",
+              "se acordó de su misericordia y su fidelidad",
+              "en favor de la casa de Israel. R."
+            ],
+            [
+              "Los confines de la tierra han contemplado",
+              "la victoria de nuestro Dios.",
+              "Aclama al Señor, tierra entera;",
+              "gritad, vitoread, tocad. R."
+            ]
+          ],
+          "name": "Opción 1: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)"
         },
         {
-          "id": "opt_2",
-          "name": "Opción 2: Judit 13, 18bcde. 19 (R.: 15, 9d)",
-          "salmo": "Interleccional: Judit 13, 18bcde. 19 (R.: 15, 9d)",
           "subtitle": "Interleccional: Judit 13, 18bcde. 19 (R.: 15, 9d)",
           "respuesta": "R. Tú eres el orgullo de nuestra raza",
+          "textoCompleto": "El Altísimo te ha bendecido, hija,\nmás que a todas las mujeres de la tierra.\nBendito el Señor, creador del cielo y tierra. R.\n\nQue hoy ha glorificado tu nombre de tal modo,\nQue tu alabanza estará siempre en la boca de todos\nlos que se acuerden de esta obra poderosa de Dios. R.",
           "respuestaOpcional": "",
+          "salmo": "Interleccional: Judit 13, 18bcde. 19 (R.: 15, 9d)",
+          "id": "opt_2",
           "strophes": [
             [
               "El Altísimo te ha bendecido, hija,",
@@ -161,11 +127,10 @@
               "los que se acuerden de esta obra poderosa de Dios. R."
             ]
           ],
-          "textoCompleto": "El Altísimo te ha bendecido, hija,\nmás que a todas las mujeres de la tierra.\nBendito el Señor, creador del cielo y tierra. R.\n\nQue hoy ha glorificado tu nombre de tal modo,\nQue tu alabanza estará siempre en la boca de todos\nlos que se acuerden de esta obra poderosa de Dios. R.",
           "lines": [
             {
-              "line": "R. Tú eres el orgullo de nuestra raza",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Tú eres el orgullo de nuestra raza"
             },
             {
               "line": "",
@@ -188,26 +153,26 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Que hoy ha glorificado tu nombre de tal modo,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Que hoy ha glorificado tu nombre de tal modo,"
             },
             {
-              "line": "Que tu alabanza estará siempre en la boca de todos",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Que tu alabanza estará siempre en la boca de todos"
             },
             {
               "line": "los que se acuerden de esta obra poderosa de Dios. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "name": "Opción 2: Judit 13, 18bcde. 19 (R.: 15, 9d)"
         },
         {
-          "id": "opt_3",
-          "name": "Opción 3: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55 (R.: 49)",
-          "salmo": "Interleccional: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55 (R.: 49)",
           "subtitle": "Interleccional: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55 (R.: 49)",
+          "id": "opt_3",
+          "textoCompleto": "Proclama mi alma la grandeza del Señor,\nse alegra mi espíritu en Dios, mi salvador. R.\n\nPorque ha mirado la humillación de su esclava.\nDesde ahora me felicitarán todas las generaciones,\nporque el Poderoso ha hecho obras grandes por mí:\nsu nombre es santo. R.\n\nY su misericordia llega a sus fieles\nde generación en generación.\nÉl hace proezas con su brazo:\ndispersa a los soberbios de corazón. R.\n\nDerriba del trono a los poderosos\ny enaltece a los humildes,\na los hambrientos los colma de bienes\ny a los ricos los despide vacíos. R.\n\nAuxilia a Israel, su siervo,\nacordándose de la misericordia\n—como lo había prometido a nuestros padres—\nen favor de Abrahán y su descendencia por siempre. R.",
+          "salmo": "Interleccional: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55 (R.: 49)",
           "respuesta": "R. El Poderoso ha hecho obras grandes por mí: su nombre es santo.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Proclama mi alma la grandeza del Señor,",
@@ -238,43 +203,44 @@
               "en favor de Abrahán y su descendencia por siempre. R."
             ]
           ],
-          "textoCompleto": "Proclama mi alma la grandeza del Señor,\nse alegra mi espíritu en Dios, mi salvador. R.\n\nPorque ha mirado la humillación de su esclava.\nDesde ahora me felicitarán todas las generaciones,\nporque el Poderoso ha hecho obras grandes por mí:\nsu nombre es santo. R.\n\nY su misericordia llega a sus fieles\nde generación en generación.\nÉl hace proezas con su brazo:\ndispersa a los soberbios de corazón. R.\n\nDerriba del trono a los poderosos\ny enaltece a los humildes,\na los hambrientos los colma de bienes\ny a los ricos los despide vacíos. R.\n\nAuxilia a Israel, su siervo,\nacordándose de la misericordia\n—como lo había prometido a nuestros padres—\nen favor de Abrahán y su descendencia por siempre. R.",
+          "respuestaOpcional": "",
+          "name": "Opción 3: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55 (R.: 49)",
           "lines": [
             {
-              "line": "R. El Poderoso ha hecho obras grandes por mí:",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. El Poderoso ha hecho obras grandes por mí:"
             },
             {
-              "line": "su nombre es santo.",
-              "sC": "salmo-linea salmo-respuesta salmo-sangria"
+              "sC": "salmo-linea salmo-respuesta salmo-sangria",
+              "line": "su nombre es santo."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Proclama mi alma la grandeza del Señor,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "se alegra mi espíritu en Dios, mi salvador. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "se alegra mi espíritu en Dios, mi salvador. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Porque ha mirado la humillación de su esclava.",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Porque ha mirado la humillación de su esclava."
             },
             {
               "line": "Desde ahora me felicitarán todas las generaciones,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "porque el Poderoso ha hecho obras grandes por mí:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "porque el Poderoso ha hecho obras grandes por mí:"
             },
             {
               "line": "su nombre es santo. R.",
@@ -285,28 +251,28 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Y su misericordia llega a sus fieles",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Y su misericordia llega a sus fieles"
             },
             {
               "line": "de generación en generación.",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Él hace proezas con su brazo:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Él hace proezas con su brazo:"
             },
             {
-              "line": "dispersa a los soberbios de corazón. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "dispersa a los soberbios de corazón. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Derriba del trono a los poderosos",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Derriba del trono a los poderosos"
             },
             {
               "line": "y enaltece a los humildes,",
@@ -317,16 +283,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "y a los ricos los despide vacíos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y a los ricos los despide vacíos. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Auxilia a Israel, su siervo,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Auxilia a Israel, su siervo,"
             },
             {
               "line": "acordándose de la misericordia",
@@ -343,41 +309,7 @@
           ]
         },
         {
-          "id": "opt_4",
-          "name": "Opción 4: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-          "salmo": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-          "subtitle": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
           "respuesta": "R. Mi corazón se regocija por el Señor, mi salvador.",
-          "respuestaOpcional": "",
-          "strophes": [
-            [
-              "Mi corazón se regocija por el Señor,",
-              "mi poder se exalta por Dios;",
-              "mi boca se ríe de mis enemigos,",
-              "porque gozo con tu salvación. R."
-            ],
-            [
-              "Se rompen los arcos de los valientes,",
-              "mientras los cobardes se ciñen de valor;",
-              "los hartos se contratan por el pan,",
-              "mientras los hambrientos engordan;",
-              "la mujer estéril da a luz siete hijos,",
-              "mientras la madre de muchos queda baldía. R."
-            ],
-            [
-              "El Señor da la muerte y la vida,",
-              "hunde en el abismo y levanta;",
-              "da la pobreza y la riqueza,",
-              "humilla y enaltece. R."
-            ],
-            [
-              "Él levanta del polvo al desvalido,",
-              "alza de la basura al pobre,",
-              "para hacer que se siente entre príncipes",
-              "y que herede un trono de gloria. R."
-            ]
-          ],
-          "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nÉl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
           "lines": [
             {
               "line": "R. Mi corazón se regocija por el Señor, mi salvador.",
@@ -388,8 +320,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Mi corazón se regocija por el Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Mi corazón se regocija por el Señor,"
             },
             {
               "line": "mi poder se exalta por Dios;",
@@ -404,8 +336,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Se rompen los arcos de los valientes,",
@@ -448,37 +380,67 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "humilla y enaltece. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "humilla y enaltece. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Él levanta del polvo al desvalido,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "alza de la basura al pobre,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "alza de la basura al pobre,"
             },
             {
               "line": "para hacer que se siente entre príncipes",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "y que herede un trono de gloria. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y que herede un trono de gloria. R."
             }
-          ]
+          ],
+          "subtitle": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
+          "salmo": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
+          "respuestaOpcional": "",
+          "name": "Opción 4: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
+          "strophes": [
+            [
+              "Mi corazón se regocija por el Señor,",
+              "mi poder se exalta por Dios;",
+              "mi boca se ríe de mis enemigos,",
+              "porque gozo con tu salvación. R."
+            ],
+            [
+              "Se rompen los arcos de los valientes,",
+              "mientras los cobardes se ciñen de valor;",
+              "los hartos se contratan por el pan,",
+              "mientras los hambrientos engordan;",
+              "la mujer estéril da a luz siete hijos,",
+              "mientras la madre de muchos queda baldía. R."
+            ],
+            [
+              "El Señor da la muerte y la vida,",
+              "hunde en el abismo y levanta;",
+              "da la pobreza y la riqueza,",
+              "humilla y enaltece. R."
+            ],
+            [
+              "Él levanta del polvo al desvalido,",
+              "alza de la basura al pobre,",
+              "para hacer que se siente entre príncipes",
+              "y que herede un trono de gloria. R."
+            ]
+          ],
+          "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nÉl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
+          "id": "opt_4"
         },
         {
-          "id": "opt_5",
-          "name": "Opción 5: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
-          "salmo": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
           "subtitle": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
-          "respuesta": "R. Bendito sea el nombre del Señor, ahora y por siempre.",
           "respuestaOpcional": "R. Aleluya.",
           "strophes": [
             [
@@ -506,6 +468,8 @@
               "los príncipes de su pueblo. R."
             ]
           ],
+          "salmo": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
+          "respuesta": "R. Bendito sea el nombre del Señor, ahora y por siempre.",
           "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nDe la salida del sol hasta su ocaso,\nalabado sea el nombre del Señor.\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos. R.\n\n¿Quién como el Señor, Dios. nuestro,\nque se eleva en su trono\ny se abaja para mirar\nel cielo y a la tierra? R.\n\nLevanta del polvo al desvalido,\nalza de la basura al pobre,\npara sentarlo con los príncipes,\nlos príncipes de su pueblo. R.",
           "lines": [
             {
@@ -537,8 +501,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Bendito sea el nombre del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Bendito sea el nombre del Señor,"
             },
             {
               "line": "ahora y por siempre. R.",
@@ -557,12 +521,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "El Señor se eleva sobre todos los pueblos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "El Señor se eleva sobre todos los pueblos,"
             },
             {
-              "line": "su gloria sobre los cielos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "su gloria sobre los cielos. R."
             },
             {
               "line": "",
@@ -573,8 +537,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "que se eleva en su trono",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "que se eleva en su trono"
             },
             {
               "line": "y se abaja para mirar",
@@ -585,16 +549,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Levanta del polvo al desvalido,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Levanta del polvo al desvalido,"
             },
             {
-              "line": "alza de la basura al pobre,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "alza de la basura al pobre,"
             },
             {
               "line": "para sentarlo con los príncipes,",
@@ -604,15 +568,17 @@
               "line": "los príncipes de su pueblo. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "name": "Opción 5: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
+          "id": "opt_5"
         },
         {
-          "id": "opt_6",
-          "name": "Opción 6: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
-          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
           "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
           "respuesta": "R. Escucha, hija, mira: inclina el oído.",
+          "id": "opt_6",
+          "name": "Opción 6: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
           "respuestaOpcional": "",
+          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
           "strophes": [
             [
               "Escucha, hija, mira: inclina el oído,",
@@ -644,56 +610,56 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Escucha, hija, mira: inclina el oído,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Escucha, hija, mira: inclina el oído,"
             },
             {
-              "line": "olvida tu pueblo y la casa paterna;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "olvida tu pueblo y la casa paterna;"
             },
             {
               "line": "prendado está el rey de tu belleza:",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "póstrate ante él, que él es tu señor. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "póstrate ante él, que él es tu señor. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Ya entra la princesa, bellísima,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Ya entra la princesa, bellísima,"
             },
             {
               "line": "vestida de perlas y brocado;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la llevan ante el rey, con séquito de vírgenes,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "la llevan ante el rey, con séquito de vírgenes,"
             },
             {
               "line": "la siguen sus compañeras. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Las traen entre alegría y algazara,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Las traen entre alegría y algazara,"
             },
             {
               "line": "van entrando en el palacio real.",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "«A cambio de tus padres, tendrás hijos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "«A cambio de tus padres, tendrás hijos,"
             },
             {
               "line": "que nombrarás príncipes por toda la tierra». R.",
@@ -702,11 +668,76 @@
           ]
         },
         {
-          "id": "opt_7",
-          "name": "Opción 7: Salmo 44, 11-12. 14-15. 16-17 (R.: 1 1a)",
-          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 1 1a)",
           "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 1 1a)",
-          "respuesta": "R. Escucha, hija, mira: inclina el oído.",
+          "name": "Opción 7: Salmo 44, 11-12. 14-15. 16-17 (R.: 1 1a)",
+          "lines": [
+            {
+              "line": "R. Escucha, hija, mira: inclina el oído.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Escucha, hija, mira: inclina el oído,"
+            },
+            {
+              "line": "olvida tu pueblo y la casa paterna;",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "prendado está el rey de tu belleza:"
+            },
+            {
+              "line": "póstrate ante él, que él es tu señor. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Ya entra la princesa, bellísima,"
+            },
+            {
+              "line": "vestida de perlas y brocado;",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "la llevan ante el rey, con séquito de vírgenes,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "la siguen sus compañeras. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Las traen entre alegría y algazara,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "van entrando en el palacio real."
+            },
+            {
+              "line": "«A cambio de tus padres, tendrás hijos,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "que nombrarás príncipes por toda la tierra». R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            }
+          ],
+          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 1 1a)",
+          "id": "opt_7",
           "respuestaOpcional": "",
           "strophes": [
             [
@@ -728,30 +759,35 @@
               "que nombrarás príncipes por toda la tierra». R."
             ]
           ],
-          "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes,\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\n«A cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra». R.",
+          "respuesta": "R. Escucha, hija, mira: inclina el oído.",
+          "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes,\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\n«A cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra». R."
+        },
+        {
+          "respuesta": "R. Mi corazón se regocija por el Señor, mi salvador.",
+          "name": "Opción 8: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
           "lines": [
             {
-              "line": "R. Escucha, hija, mira: inclina el oído.",
+              "line": "R. Mi corazón se regocija por el Señor, mi salvador.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Escucha, hija, mira: inclina el oído,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Mi corazón se regocija por el Señor,"
             },
             {
-              "line": "olvida tu pueblo y la casa paterna;",
+              "line": "mi poder se exalta por Dios;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "prendado está el rey de tu belleza:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mi boca se ríe de mis enemigos,"
             },
             {
-              "line": "póstrate ante él, que él es tu señor. R.",
+              "line": "porque gozo con tu salvación. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
@@ -759,50 +795,74 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Ya entra la princesa, bellísima,",
+              "line": "Se rompen los arcos de los valientes,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "vestida de perlas y brocado;",
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mientras los cobardes se ciñen de valor;"
+            },
+            {
+              "line": "los hartos se contratan por el pan,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la llevan ante el rey, con séquito de vírgenes,",
+              "line": "mientras los hambrientos engordan;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la siguen sus compañeras. R.",
+              "line": "la mujer estéril da a luz siete hijos,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "mientras la madre de muchos queda baldía. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Las traen entre alegría y algazara,",
+              "line": "El Señor da la muerte y, la vida,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "van entrando en el palacio real.",
+              "line": "hunde en el abismo y levanta;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "«A cambio de tus padres, tendrás hijos,",
+              "line": "da la pobreza y la riqueza,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "que nombrarás príncipes por toda la tierra». R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "humilla y enaltece. R."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Él levanta del polvo al desvalido,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "alza de la basura al pobre,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "para hacer que se siente entre príncipes"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y que herede un trono de gloria. R."
             }
-          ]
-        },
-        {
+          ],
+          "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y, la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nÉl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
           "id": "opt_8",
-          "name": "Opción 8: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-          "salmo": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-          "subtitle": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-          "respuesta": "R. Mi corazón se regocija por el Señor, mi salvador.",
           "respuestaOpcional": "",
+          "salmo": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
           "strophes": [
             [
               "Mi corazón se regocija por el Señor,",
@@ -831,136 +891,11 @@
               "y que herede un trono de gloria. R."
             ]
           ],
-          "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y, la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nÉl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
-          "lines": [
-            {
-              "line": "R. Mi corazón se regocija por el Señor, mi salvador.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Mi corazón se regocija por el Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "mi poder se exalta por Dios;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "mi boca se ríe de mis enemigos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "porque gozo con tu salvación. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Se rompen los arcos de los valientes,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "mientras los cobardes se ciñen de valor;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "los hartos se contratan por el pan,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "mientras los hambrientos engordan;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "la mujer estéril da a luz siete hijos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "mientras la madre de muchos queda baldía. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "El Señor da la muerte y, la vida,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "hunde en el abismo y levanta;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "da la pobreza y la riqueza,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "humilla y enaltece. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Él levanta del polvo al desvalido,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "alza de la basura al pobre,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "para hacer que se siente entre príncipes",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y que herede un trono de gloria. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "subtitle": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)"
         },
         {
-          "id": "opt_9",
-          "name": "Opción 9: Salmo 112 1-2. 3-4. 5-6. 7-8 (R.: 2)",
-          "salmo": "Salmo responsorial: Salmo 112 1-2. 3-4. 5-6. 7-8 (R.: 2)",
           "subtitle": "Salmo responsorial: Salmo 112 1-2. 3-4. 5-6. 7-8 (R.: 2)",
-          "respuesta": "R. Bendito sea el nombre del Señor, ahora y por siempre.",
           "respuestaOpcional": "R. Aleluya.",
-          "strophes": [
-            [
-              "Alabad, siervos del Señor,",
-              "alabad el nombre del Señor.",
-              "Bendito sea el nombre del Señor,",
-              "ahora y por siempre. R."
-            ],
-            [
-              "De la salida del sol hasta su ocaso,",
-              "alabado sea el nombre del Señor.",
-              "El Señor se eleva sobre todos los pueblos,",
-              "su gloria sobre los cielos. R."
-            ],
-            [
-              "¿Quién como el Señor, Dios nuestro,",
-              "que se eleva en su trono",
-              "y se abaja para mirar",
-              "al cielo y a la tierra? R."
-            ],
-            [
-              "Levanta del polvo al desvalido,",
-              "alza de la basura, al pobre,",
-              "para sentarlo con los príncipes,",
-              "los príncipes de su pueblo. R."
-            ]
-          ],
-          "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nDe la salida del sol hasta su ocaso,\nalabado sea el nombre del Señor.\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos. R.\n\n¿Quién como el Señor, Dios nuestro,\nque se eleva en su trono\ny se abaja para mirar\nal cielo y a la tierra? R.\n\nLevanta del polvo al desvalido,\nalza de la basura, al pobre,\npara sentarlo con los príncipes,\nlos príncipes de su pueblo. R.",
           "lines": [
             {
               "line": "R. Bendito sea el nombre del Señor,",
@@ -971,8 +906,8 @@
               "sC": "salmo-linea salmo-respuesta salmo-sangria"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "O bien:",
@@ -983,8 +918,8 @@
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Alabad, siervos del Señor,",
@@ -1023,12 +958,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "¿Quién como el Señor, Dios nuestro,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "¿Quién como el Señor, Dios nuestro,"
             },
             {
               "line": "que se eleva en su trono",
@@ -1055,22 +990,50 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "para sentarlo con los príncipes,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "para sentarlo con los príncipes,"
             },
             {
-              "line": "los príncipes de su pueblo. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "los príncipes de su pueblo. R."
             }
-          ]
+          ],
+          "salmo": "Salmo responsorial: Salmo 112 1-2. 3-4. 5-6. 7-8 (R.: 2)",
+          "name": "Opción 9: Salmo 112 1-2. 3-4. 5-6. 7-8 (R.: 2)",
+          "id": "opt_9",
+          "respuesta": "R. Bendito sea el nombre del Señor, ahora y por siempre.",
+          "strophes": [
+            [
+              "Alabad, siervos del Señor,",
+              "alabad el nombre del Señor.",
+              "Bendito sea el nombre del Señor,",
+              "ahora y por siempre. R."
+            ],
+            [
+              "De la salida del sol hasta su ocaso,",
+              "alabado sea el nombre del Señor.",
+              "El Señor se eleva sobre todos los pueblos,",
+              "su gloria sobre los cielos. R."
+            ],
+            [
+              "¿Quién como el Señor, Dios nuestro,",
+              "que se eleva en su trono",
+              "y se abaja para mirar",
+              "al cielo y a la tierra? R."
+            ],
+            [
+              "Levanta del polvo al desvalido,",
+              "alza de la basura, al pobre,",
+              "para sentarlo con los príncipes,",
+              "los príncipes de su pueblo. R."
+            ]
+          ],
+          "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nDe la salida del sol hasta su ocaso,\nalabado sea el nombre del Señor.\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos. R.\n\n¿Quién como el Señor, Dios nuestro,\nque se eleva en su trono\ny se abaja para mirar\nal cielo y a la tierra? R.\n\nLevanta del polvo al desvalido,\nalza de la basura, al pobre,\npara sentarlo con los príncipes,\nlos príncipes de su pueblo. R."
         },
         {
           "id": "opt_10",
-          "name": "Opción 10: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-          "salmo": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-          "subtitle": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
           "respuesta": "R. Mi corazón se regocija por el Señor, mi salvador.",
-          "respuestaOpcional": "",
+          "subtitle": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
           "strophes": [
             [
               "Mi corazón se regocija por el Señor,",
@@ -1099,7 +1062,9 @@
               "y que herede un trono de gloria. R."
             ]
           ],
-          "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nÉl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
+          "name": "Opción 10: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
+          "respuestaOpcional": "",
+          "salmo": "Interleccional: 1 Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
           "lines": [
             {
               "line": "R. Mi corazón se regocija por el Señor, mi salvador.",
@@ -1110,16 +1075,16 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Mi corazón se regocija por el Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Mi corazón se regocija por el Señor,"
             },
             {
-              "line": "mi poder se exalta por Dios;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mi poder se exalta por Dios;"
             },
             {
-              "line": "mi boca se ríe de mis enemigos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mi boca se ríe de mis enemigos,"
             },
             {
               "line": "porque gozo con tu salvación. R.",
@@ -1130,12 +1095,12 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Se rompen los arcos de los valientes,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Se rompen los arcos de los valientes,"
             },
             {
-              "line": "mientras los cobardes se ciñen de valor;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mientras los cobardes se ciñen de valor;"
             },
             {
               "line": "los hartos se contratan por el pan,",
@@ -1146,12 +1111,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la mujer estéril da a luz siete hijos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "la mujer estéril da a luz siete hijos,"
             },
             {
-              "line": "mientras la madre de muchos queda baldía. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "mientras la madre de muchos queda baldía. R."
             },
             {
               "line": "",
@@ -1162,16 +1127,16 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "hunde en el abismo y levanta;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "hunde en el abismo y levanta;"
             },
             {
               "line": "da la pobreza y la riqueza,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "humilla y enaltece. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "humilla y enaltece. R."
             },
             {
               "line": "",
@@ -1182,8 +1147,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "alza de la basura al pobre,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "alza de la basura al pobre,"
             },
             {
               "line": "para hacer que se siente entre príncipes",
@@ -1193,15 +1158,11 @@
               "line": "y que herede un trono de gloria. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nÉl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R."
         },
         {
-          "id": "opt_11",
-          "name": "Opción 11: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
           "salmo": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
-          "subtitle": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
-          "respuesta": "R. Bendito sea el nombre del Señor, ahora y por siempre.",
-          "respuestaOpcional": "R. Aleluya.",
           "strophes": [
             [
               "Alabad, siervos del Señor,",
@@ -1228,6 +1189,7 @@
               "los príncipes de su pueblo. R."
             ]
           ],
+          "id": "opt_11",
           "textoCompleto": "Alabad, siervos del Señor,\nalabad el nombre del Señor.\nBendito sea el nombre del Señor,\nahora y por siempre. R.\n\nDe la salida del sol hasta, su ocaso,\nalabado sea el nombre del Señor.\nEl Señor se eleva sobre todos los pueblos,\nsu gloria sobre los cielos. R.\n\n¿Quién como el Señor, Dios nuestro,\nque se eleva en su trono\ny se abaja para mirar\nal cielo y a la tierra? R.\n\nLevanta del polvo al desvalido,\nalza de la basura al pobre,\npara sentarlo con los príncipes,\nlos príncipes de su pueblo. R.",
           "lines": [
             {
@@ -1239,32 +1201,32 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
             },
             {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Aleluya."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Alabad, siervos del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Alabad, siervos del Señor,"
             },
             {
               "line": "alabad el nombre del Señor.",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Bendito sea el nombre del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Bendito sea el nombre del Señor,"
             },
             {
-              "line": "ahora y por siempre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "ahora y por siempre. R."
             },
             {
               "line": "",
@@ -1275,24 +1237,24 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "alabado sea el nombre del Señor.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "alabado sea el nombre del Señor."
             },
             {
-              "line": "El Señor se eleva sobre todos los pueblos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "El Señor se eleva sobre todos los pueblos,"
             },
             {
-              "line": "su gloria sobre los cielos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "su gloria sobre los cielos. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "¿Quién como el Señor, Dios nuestro,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "¿Quién como el Señor, Dios nuestro,"
             },
             {
               "line": "que se eleva en su trono",
@@ -1326,15 +1288,16 @@
               "line": "los príncipes de su pueblo. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "respuestaOpcional": "R. Aleluya.",
+          "subtitle": "Salmo responsorial: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
+          "name": "Opción 11: Salmo 112, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
+          "respuesta": "R. Bendito sea el nombre del Señor, ahora y por siempre."
         },
         {
-          "id": "opt_12",
-          "name": "Opción 12: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55",
           "salmo": "Interleccional: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55",
-          "subtitle": "Interleccional: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55",
-          "respuesta": "R. Bienaventurada eres, Virgen María, que llevaste en tu seno al Hijo del Padre eterno.",
           "respuestaOpcional": "",
+          "respuesta": "R. Bienaventurada eres, Virgen María, que llevaste en tu seno al Hijo del Padre eterno.",
           "strophes": [
             [
               "Proclama mi alma la grandeza del Señor,",
@@ -1365,15 +1328,15 @@
               "en favor de Abrahán y su descendencia por siempre. R."
             ]
           ],
-          "textoCompleto": "Proclama mi alma la grandeza del Señor,\nse alegra mi espíritu en Dios, mi salvador. R.\n\nPorque ha mirado la humillación de su esclava.\nDesde ahora me felicitarán todas las generaciones,\nporque el Poderoso ha hecho obras grandes por mí:\nsu nombre es santo. R.\n\nY su misericordia llega a sus fieles\nde generación en generación.\nÉl hace proezas con su brazo:\ndispersa a los soberbios de corazón. R.\n\nDerriba del trono a los poderosos\ny enaltece a los humildes,\na los hambrientos los colma de bienes\ny a los ricos los despide vacíos. R.\n\nAuxilia a Israel, su siervo,\nacordándose de la misericordia\n—como lo había prometido a nuestros padres —\nen favor de Abrahán y su descendencia por siempre. R.",
+          "id": "opt_12",
           "lines": [
             {
-              "line": "R. Bienaventurada eres, Virgen María,",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Bienaventurada eres, Virgen María,"
             },
             {
-              "line": "que llevaste en tu seno al Hijo del Padre eterno.",
-              "sC": "salmo-linea salmo-respuesta salmo-sangria"
+              "sC": "salmo-linea salmo-respuesta salmo-sangria",
+              "line": "que llevaste en tu seno al Hijo del Padre eterno."
             },
             {
               "line": "",
@@ -1384,8 +1347,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "se alegra mi espíritu en Dios, mi salvador. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "se alegra mi espíritu en Dios, mi salvador. R."
             },
             {
               "line": "",
@@ -1404,8 +1367,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "su nombre es santo. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "su nombre es santo. R."
             },
             {
               "line": "",
@@ -1440,20 +1403,20 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "a los hambrientos los colma de bienes",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "a los hambrientos los colma de bienes"
             },
             {
-              "line": "y a los ricos los despide vacíos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y a los ricos los despide vacíos. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Auxilia a Israel, su siervo,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Auxilia a Israel, su siervo,"
             },
             {
               "line": "acordándose de la misericordia",
@@ -1464,12 +1427,49 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "en favor de Abrahán y su descendencia por siempre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "en favor de Abrahán y su descendencia por siempre. R."
             }
-          ]
+          ],
+          "subtitle": "Interleccional: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55",
+          "name": "Opción 12: Lucas 1, 46-47. 48-49. 50-51. 52-53. 54-55",
+          "textoCompleto": "Proclama mi alma la grandeza del Señor,\nse alegra mi espíritu en Dios, mi salvador. R.\n\nPorque ha mirado la humillación de su esclava.\nDesde ahora me felicitarán todas las generaciones,\nporque el Poderoso ha hecho obras grandes por mí:\nsu nombre es santo. R.\n\nY su misericordia llega a sus fieles\nde generación en generación.\nÉl hace proezas con su brazo:\ndispersa a los soberbios de corazón. R.\n\nDerriba del trono a los poderosos\ny enaltece a los humildes,\na los hambrientos los colma de bienes\ny a los ricos los despide vacíos. R.\n\nAuxilia a Israel, su siervo,\nacordándose de la misericordia\n—como lo había prometido a nuestros padres —\nen favor de Abrahán y su descendencia por siempre. R."
         }
       ]
     }
-  ]
+  ],
+  "orden": 12080,
+  "estrofas": [
+    [
+      "Cantad al Señor un cántico nuevo,",
+      "porque ha hecho maravillas:",
+      "su diestra le ha dado la victoria,",
+      "su santo brazo. R."
+    ],
+    [
+      "El Señor da a conocer su victoria,",
+      "revela a las naciones su justicia:",
+      "se acordó de su misericordia y su fidelidad",
+      "en favor de la casa de Israel. R."
+    ],
+    [
+      "Los confines de la tierra han contemplado",
+      "la victoria de nuestro Dios.",
+      "Aclama al Señor, tierra entera;",
+      "gritad, vitoread, tocad. R."
+    ]
+  ],
+  "searchPool": "la inmaculada concepcion de santa maria virgen solemnidad santos diciembre 8 opcion 1 salmo 97 1 2 3ab 3c 4 r 1a r cantad al senor un cantico nuevo porque ha hecho maravillas cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclama al senor tierra entera gritad vitoread tocad r opcion 2 judit 13 18bcde 19 r 15 9d r tu eres el orgullo de nuestra raza el altisimo te ha bendecido hija mas que a todas las mujeres de la tierra bendito el senor creador del cielo y tierra r que hoy ha glorificado tu nombre de tal modo que tu alabanza estara siempre en la boca de todos los que se acuerden de esta obra poderosa de dios r opcion 3 lucas 1 46 47 48 49 50 51 52 53 54 55 r 49 r el poderoso ha hecho obras grandes por mi su nombre es santo proclama mi alma la grandeza del senor se alegra mi espiritu en dios mi salvador r porque ha mirado la humillacion de su esclava desde ahora me felicitaran todas las generaciones porque el poderoso ha hecho obras grandes por mi su nombre es santo r y su misericordia llega a sus fieles de generacion en generacion el hace proezas con su brazo dispersa a los soberbios de corazon r derriba del trono a los poderosos y enaltece a los humildes a los hambrientos los colma de bienes y a los ricos los despide vacios r auxilia a israel su siervo acordandose de la misericordia como lo habia prometido a nuestros padres en favor de abrahan y su descendencia por siempre r opcion 4 1 samuel 2 1 4 5 6 7 8abcd r 1a r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r opcion 5 salmo 112 1 2 3 4 5 6 7 8 r 2 r bendito sea el nombre del senor ahora y por siempre alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar el cielo y a la tierra r levanta del polvo al desvalido alza de la basura al pobre para sentarlo con los principes los principes de su pueblo r opcion 6 salmo 44 11 12 14 15 16 17 r 11a r escucha hija mira inclina el oido escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r opcion 7 salmo 44 11 12 14 15 16 17 r 1 1a r escucha hija mira inclina el oido escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r opcion 8 1 samuel 2 1 4 5 6 7 8abcd r 1a r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r opcion 9 salmo 112 1 2 3 4 5 6 7 8 r 2 r bendito sea el nombre del senor ahora y por siempre alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar al cielo y a la tierra r levanta del polvo al desvalido alza de la basura al pobre para sentarlo con los principes los principes de su pueblo r opcion 10 1 samuel 2 1 4 5 6 7 8abcd r 1a r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r opcion 11 salmo 112 1 2 3 4 5 6 7 8 r 2 r bendito sea el nombre del senor ahora y por siempre alabad siervos del senor alabad el nombre del senor bendito sea el nombre del senor ahora y por siempre r de la salida del sol hasta su ocaso alabado sea el nombre del senor el senor se eleva sobre todos los pueblos su gloria sobre los cielos r quien como el senor dios nuestro que se eleva en su trono y se abaja para mirar al cielo y a la tierra r levanta del polvo al desvalido alza de la basura al pobre para sentarlo con los principes los principes de su pueblo r opcion 12 lucas 1 46 47 48 49 50 51 52 53 54 55 r bienaventurada eres virgen maria que llevaste en tu seno al hijo del padre eterno proclama mi alma la grandeza del senor se alegra mi espiritu en dios mi salvador r porque ha mirado la humillacion de su esclava desde ahora me felicitaran todas las generaciones porque el poderoso ha hecho obras grandes por mi su nombre es santo r y su misericordia llega a sus fieles de generacion en generacion el hace proezas con su brazo dispersa a los soberbios de corazon r derriba del trono a los poderosos y enaltece a los humildes a los hambrientos los colma de bienes y a los ricos los despide vacios r auxilia a israel su siervo acordandose de la misericordia como lo habia prometido a nuestros padres en favor de abrahan y su descendencia por siempre r",
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclama al Señor, tierra entera;\ngritad, vitoread, tocad. R.",
+  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "id": "seus_205",
+  "catCanto": "Salmo Eucaristía",
+  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3c-4 (R.: 1a)",
+  "title": "LA INMACULADA CONCEPCIÓN DE SANTA MARÍA VIRGEN",
+  "dia": "8",
+  "respuesta": "R. Cantad al Señor un cántico nuevo, porque ha hecho maravillas.",
+  "tiempo": "Diciembre"
 }

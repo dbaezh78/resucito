@@ -1,15 +1,15 @@
 {
-  "id": "seup_162",
-  "title": "Sábado de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 104, 2-3. 4-5. 6-7 (R.: 8a)",
+  "stage": "Liturgia",
+  "searchPool": "sabado de la 27 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 104 2 3 4 5 6 7 r 8a semana 27 semana xxvii sabado 27 xxvii r el senor se acuerda de su alianza eternamente r aleluya cantadle al son de instrumentos hablad de sus maravillas gloriaos de su nombre santo que se alegren los que buscan al senor r recurrid al senor y a su poder buscad continuamente su rostro recordad las maravillas que hizo sus prodigios las sentencias de su boca r estirpe de abrahan su siervo hijos de jacob su elegido el senor es nuestro dios el gobierna toda la tierra r",
+  "sourceBook": "eucaristia",
   "salmo": "Salmo responsorial: Salmo 104, 2-3. 4-5. 6-7 (R.: 8a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
   "dia": "Sábado",
-  "orden": 5276,
-  "respuesta": "R. El Señor se acuerda de su alianza eternamente.",
   "respuestaOpcional": "R. Aleluya.",
+  "orden": 5276,
+  "title": "Sábado de la 27ª semana de Tiempo Ordinario",
+  "id": "seup_162",
+  "celebracion": "Sábado de la 27ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Cantadle al son de instrumentos,",
@@ -30,12 +30,6 @@
       "él gobierna toda la tierra. R."
     ]
   ],
-  "textoCompleto": "Cantadle al son de instrumentos,\nhablad de sus maravillas;\ngloriaos de su nombre santo,\nque se alegren los que buscan al Señor. R.\n\nRecurrid al Señor y a su poder,\nbuscad continuamente su rostro.\nRecordad las maravillas que hizo,\nsus prodigios, las sentencias de su boca. R.\n\n¡Estirpe de Abrahán, su siervo;\nhijos de Jacob, su elegido!\nEl Señor es nuestro Dios,\nél gobierna toda la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 27 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 104 2 3 4 5 6 7 r 8a semana 27 semana xxvii sabado 27 xxvii r el senor se acuerda de su alianza eternamente r aleluya cantadle al son de instrumentos hablad de sus maravillas gloriaos de su nombre santo que se alegren los que buscan al senor r recurrid al senor y a su poder buscad continuamente su rostro recordad las maravillas que hizo sus prodigios las sentencias de su boca r estirpe de abrahan su siervo hijos de jacob su elegido el senor es nuestro dios el gobierna toda la tierra r",
   "lizq": [
     {
       "line": "R. El Señor se acuerda de su alianza eternamente.",
@@ -50,20 +44,20 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cantadle al son de instrumentos,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "hablad de sus maravillas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hablad de sus maravillas;"
     },
     {
       "line": "gloriaos de su nombre santo,",
@@ -74,8 +68,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Recurrid al Señor y a su poder,",
@@ -94,24 +88,30 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "¡Estirpe de Abrahán, su siervo;",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "hijos de Jacob, su elegido!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hijos de Jacob, su elegido!"
     },
     {
       "line": "El Señor es nuestro Dios,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "él gobierna toda la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "él gobierna toda la tierra. R."
     }
-  ]
+  ],
+  "textoCompleto": "Cantadle al son de instrumentos,\nhablad de sus maravillas;\ngloriaos de su nombre santo,\nque se alegren los que buscan al Señor. R.\n\nRecurrid al Señor y a su poder,\nbuscad continuamente su rostro.\nRecordad las maravillas que hizo,\nsus prodigios, las sentencias de su boca. R.\n\n¡Estirpe de Abrahán, su siervo;\nhijos de Jacob, su elegido!\nEl Señor es nuestro Dios,\nél gobierna toda la tierra. R.",
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 104, 2-3. 4-5. 6-7 (R.: 8a)",
+  "respuesta": "R. El Señor se acuerda de su alianza eternamente.",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario"
 }

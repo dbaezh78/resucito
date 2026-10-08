@@ -1,40 +1,16 @@
 {
-  "id": "seub_13",
   "title": "Bautismo del Señor",
-  "celebracion": "Bautismo del Señor",
-  "subtitle": "Salmo responsorial: Salmo 28, 1a y 2. 3ac-4. 3b y 9b-10 (R.: 11b)",
-  "salmo": "Salmo responsorial: Salmo 28, 1a y 2. 3ac-4. 3b y 9b-10 (R.: 11b)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Navidad",
-  "dia": "Domingo",
-  "orden": 209,
+  "id": "seub_13",
   "respuesta": "R. El Señor bendice a su pueblo con la paz.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Hijos de Dios, aclamad al Señor,",
-      "aclamad la gloria del nombre del Señor,",
-      "postraos ante el Señor en el atrio sagrado. R."
-    ],
-    [
-      "La voz del Señor sobre las aguas,",
-      "el Señor sobre las aguas torrenciales.",
-      "La voz del Señor es potente,",
-      "la voz del Señor es magnífica. R."
-    ],
-    [
-      "El Dios de la gloria ha tronado.",
-      "En su templo un grito unánime: «¡Gloria!».",
-      "El Señor se sienta por encima del aguacero,",
-      "el Señor se sienta como rey eterno. R."
-    ]
-  ],
+  "tiempo": "Navidad",
+  "orden": 209,
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 28, 1a y 2. 3ac-4. 3b y 9b-10 (R.: 11b)",
+  "stage": "Liturgia",
   "textoCompleto": "Hijos de Dios, aclamad al Señor,\naclamad la gloria del nombre del Señor,\npostraos ante el Señor en el atrio sagrado. R.\n\nLa voz del Señor sobre las aguas,\nel Señor sobre las aguas torrenciales.\nLa voz del Señor es potente,\nla voz del Señor es magnífica. R.\n\nEl Dios de la gloria ha tronado.\nEn su templo un grito unánime: «¡Gloria!».\nEl Señor se sienta por encima del aguacero,\nel Señor se sienta como rey eterno. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "bautismo del senor ciclo b navidad domingo salmo responsorial salmo 28 1a y 2 3ac 4 3b y 9b 10 r 11b r el senor bendice a su pueblo con la paz hijos de dios aclamad al senor aclamad la gloria del nombre del senor postraos ante el senor en el atrio sagrado r la voz del senor sobre las aguas el senor sobre las aguas torrenciales la voz del senor es potente la voz del senor es magnifica r el dios de la gloria ha tronado en su templo un grito unanime gloria el senor se sienta por encima del aguacero el senor se sienta como rey eterno r",
+  "subtitle": "Salmo responsorial: Salmo 28, 1a y 2. 3ac-4. 3b y 9b-10 (R.: 11b)",
   "lizq": [
     {
       "line": "R. El Señor bendice a su pueblo con la paz.",
@@ -69,8 +45,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "La voz del Señor es potente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "La voz del Señor es potente,"
     },
     {
       "line": "la voz del Señor es magnífica. R.",
@@ -89,12 +65,36 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor se sienta por encima del aguacero,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor se sienta por encima del aguacero,"
     },
     {
       "line": "el Señor se sienta como rey eterno. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "estrofas": [
+    [
+      "Hijos de Dios, aclamad al Señor,",
+      "aclamad la gloria del nombre del Señor,",
+      "postraos ante el Señor en el atrio sagrado. R."
+    ],
+    [
+      "La voz del Señor sobre las aguas,",
+      "el Señor sobre las aguas torrenciales.",
+      "La voz del Señor es potente,",
+      "la voz del Señor es magnífica. R."
+    ],
+    [
+      "El Dios de la gloria ha tronado.",
+      "En su templo un grito unánime: «¡Gloria!».",
+      "El Señor se sienta por encima del aguacero,",
+      "el Señor se sienta como rey eterno. R."
+    ]
+  ],
+  "celebracion": "Bautismo del Señor",
+  "respuestaOpcional": "",
+  "dia": "Domingo",
+  "searchPool": "bautismo del senor ciclo b navidad domingo salmo responsorial salmo 28 1a y 2 3ac 4 3b y 9b 10 r 11b r el senor bendice a su pueblo con la paz hijos de dios aclamad al senor aclamad la gloria del nombre del senor postraos ante el senor en el atrio sagrado r la voz del senor sobre las aguas el senor sobre las aguas torrenciales la voz del senor es potente la voz del senor es magnifica r el dios de la gloria ha tronado en su templo un grito unanime gloria el senor se sienta por encima del aguacero el senor se sienta como rey eterno r",
+  "ciclo": "Ciclo B"
 }

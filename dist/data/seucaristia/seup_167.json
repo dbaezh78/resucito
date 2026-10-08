@@ -1,15 +1,12 @@
 {
-  "id": "seup_167",
-  "title": "Viernes de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 28ª semana de Tiempo Ordinario",
+  "searchPool": "viernes de la 28 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 32 1 2 4 5 12 13 r 12b semana 28 semana xxviii viernes 28 xxviii r dichoso el pueblo que el senor se escogio como heredad aclamad justos al senor que merece la alabanza de los buenos dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad el senor mira desde el cielo se fija en todos los hombres r",
   "subtitle": "Salmo responsorial: Salmo 32. 1-2. 4-5. 12-13 (R.: 12b)",
-  "salmo": "Salmo responsorial: Salmo 32. 1-2. 4-5. 12-13 (R.: 12b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5285,
+  "stage": "Liturgia",
+  "celebracion": "Viernes de la 28ª semana de Tiempo Ordinario",
   "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
-  "respuestaOpcional": "",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 32. 1-2. 4-5. 12-13 (R.: 12b)",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Aclamad, justos, al Señor,",
@@ -30,12 +27,11 @@
       "se fija en todos los hombres. R."
     ]
   ],
-  "textoCompleto": "Aclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "orden": 5285,
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 28 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 32 1 2 4 5 12 13 r 12b semana 28 semana xxviii viernes 28 xxviii r dichoso el pueblo que el senor se escogio como heredad aclamad justos al senor que merece la alabanza de los buenos dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad el senor mira desde el cielo se fija en todos los hombres r",
+  "title": "Viernes de la 28ª semana de Tiempo Ordinario",
+  "id": "seup_167",
+  "respuestaOpcional": "",
   "lizq": [
     {
       "line": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
@@ -50,20 +46,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que merece la alabanza de los buenos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que merece la alabanza de los buenos."
     },
     {
-      "line": "Dad gracias al Señor con la cítara,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dad gracias al Señor con la cítara,"
     },
     {
-      "line": "tocad en su honor el arpa de diez cuerdas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tocad en su honor el arpa de diez cuerdas. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Que la palabra del Señor es sincera,",
@@ -74,8 +70,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "él ama la justicia y el derecho,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él ama la justicia y el derecho,"
     },
     {
       "line": "y su misericordia llena la tierra. R.",
@@ -98,8 +94,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "se fija en todos los hombres. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "se fija en todos los hombres. R."
     }
-  ]
+  ],
+  "textoCompleto": "Aclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.",
+  "ciclo": "Año Par",
+  "dia": "Viernes",
+  "tiempo": "Tiempo Ordinario"
 }

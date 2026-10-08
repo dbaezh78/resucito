@@ -1,15 +1,16 @@
 {
-  "id": "seub_76",
-  "title": "Domingo de la 34ª semana de Tiempo Ordinario - Jesucristo, Rey del Universo",
-  "celebracion": "Domingo de la 34ª semana de Tiempo Ordinario - Jesucristo, Rey del Universo",
-  "subtitle": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
-  "ciclo": "Ciclo B",
+  "hasAudio": false,
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
+  "salmo": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
   "orden": 534,
-  "respuesta": "R. El Señor reina, vestido de majestad.",
-  "respuestaOpcional": "",
+  "dia": "Domingo",
+  "title": "Domingo de la 34ª semana de Tiempo Ordinario - Jesucristo, Rey del Universo",
+  "searchPool": "domingo de la 34 semana de tiempo ordinario jesucristo rey del universo ciclo b tiempo ordinario domingo salmo responsorial salmo 92 1ab 1c 2 5 r 1a r el senor reina vestido de majestad el senor reina vestido de majestad el senor vestido y cenido de poder r asi esta firme el orbe y no vacila tu trono esta firme desde siempre y tu eres eterno r tus mandatos son fieles y seguros la santidad es el adorno de tu casa senor por dias sin termino r",
+  "ciclo": "Ciclo B",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
+  "id": "seub_76",
   "estrofas": [
     [
       "El Señor reina, vestido de majestad,",
@@ -26,20 +27,17 @@
       "Señor, por días sin término. R."
     ]
   ],
+  "respuestaOpcional": "",
   "textoCompleto": "El Señor reina, vestido de majestad,\nel Señor, vestido y ceñido de poder. R.\n\nAsí está firme el orbe y no vacila.\nTu trono está firme desde siempre,\ny tú eres eterno. R.\n\nTus mandatos son fieles y seguros;\nla santidad es el adorno de tu casa,\nSeñor, por días sin término. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 34 semana de tiempo ordinario jesucristo rey del universo ciclo b tiempo ordinario domingo salmo responsorial salmo 92 1ab 1c 2 5 r 1a r el senor reina vestido de majestad el senor reina vestido de majestad el senor vestido y cenido de poder r asi esta firme el orbe y no vacila tu trono esta firme desde siempre y tu eres eterno r tus mandatos son fieles y seguros la santidad es el adorno de tu casa senor por dias sin termino r",
+  "respuesta": "R. El Señor reina, vestido de majestad.",
   "lizq": [
     {
       "line": "R. El Señor reina, vestido de majestad.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor reina, vestido de majestad,",
@@ -54,16 +52,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Así está firme el orbe y no vacila.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Así está firme el orbe y no vacila."
     },
     {
-      "line": "Tu trono está firme desde siempre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Tu trono está firme desde siempre,"
     },
     {
-      "line": "y tú eres eterno. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y tú eres eterno. R."
     },
     {
       "line": "",
@@ -81,5 +79,7 @@
       "line": "Señor, por días sin término. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "celebracion": "Domingo de la 34ª semana de Tiempo Ordinario - Jesucristo, Rey del Universo"
 }

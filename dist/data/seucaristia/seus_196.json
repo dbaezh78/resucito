@@ -1,55 +1,15 @@
 {
-  "id": "seus_196",
-  "title": "Santa Cecilia, virgen y mártir",
-  "celebracion": "Santa Cecilia, virgen y mártir",
-  "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-  "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
   "ciclo": "Santos",
-  "tiempo": "Noviembre",
-  "dia": "22",
-  "orden": 11220,
-  "respuesta": "R. Llega el Esposo; salid a recibir a Cristo, el Señor.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Escucha, hija, mira: inclina el oído,",
-      "olvida tu pueblo y la casa paterna;",
-      "prendado está el rey de tu belleza:",
-      "póstrate ante él, que él es tu señor. R."
-    ],
-    [
-      "Ya entra la princesa, bellísima,",
-      "vestida de perlas y brocado;",
-      "la llevan ante el rey, con séquito de vírgenes",
-      "la siguen sus compañeras. R."
-    ],
-    [
-      "Las traen entre alegría y algazara,",
-      "van entrando en el palacio real.",
-      "A cambio de tus padres, tendrás hijos,",
-      "que nombrarás príncipes por toda la tierra. R."
-    ]
-  ],
-  "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\nA cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "santa cecilia virgen y martir memoria libre santos noviembre 22 opcion 1 salmo 44 11 12 14 15 16 17 r cf mt 25 6b r llega el esposo salid a recibir a cristo el senor escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r opcion 2 salmo 30 3cd 4 6 y 8ab 16bc 17 r 6a r a tus manos senor encomiendo mi espiritu se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r a tus manos encomiendo mi espiritu tu el dios leal me libraras tu misericordia sea mi gozo y mi alegria te has fijado en mi afliccion r librame de los enemigos que me persiguen haz brillar tu rostro sobre tu siervo salvame por tu misericordia r opcion 3 salmo 33 2 3 4 5 6 7 8 9 r 5b r el senor me libro de todas mis ansias bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r opcion 4 salmo 123 2 3 4 5 7b 8 r 7a r hemos salvado la vida como un pajaro de la trampa del cazador si el senor no hubiera estado de nuestra parte cuando nos asaltaban los hombres nos habrian tragado vivos tanto ardia su ira contra nosotros r nos habrian arrollado las aguas llegandonos el torrente hasta el cuello nos habrian llegado hasta el cuello las aguas espumantes r la trampa se rompio y escapamos nuestro auxilio es el nombre del senor que hizo el cielo y la tierra r opcion 5 salmo 30 3cd 4 6 y 8ab 16bc 17 r 6a r a tus manos senor encomiendo mi espiritu se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r a tus manos encomiendo mi espiritu tu el dios leal me libraras tu misericordia sea mi gozo y mi alegria te has fijado en mi afliccion r librame de los enemigos que me persiguen haz brillar tu rostro sobre tu siervo salvame por tu misericordia r opcion 6 salmo 125 1 2ab 2cd 3 4 5 6 r 5 r los que sembraban con lagrimas cosechan entre cantares cuando el senor cambio la suerte de sion nos parecia sonar la boca se nos llenaba de risas la lengua de cantares r hasta los gentiles decian el senor ha estado grande con ellos el senor ha estado grande con nosotros y estamos alegres r que el senor cambie nuestra suerte como los torrentes del negueb los que sembraban con lagrimas cosechan entre cantares r al ir iba llorando llevando la semilla al volver vuelve cantando trayendo sus gavillas r opcion 7 salmo 30 3cd 4 6 y 8ab 16bc 17 r 6a r a tus manos senor encomiendo mi espiritu se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r a tus manos encomiendo mi espiritu tu el dios leal me libraras tu misericordia sea mi gozo y mi alegria te has fijado en mi afliccion r librame de los enemigos que me persiguen haz brillar tu rostro sobre tu siervo salvame por tu misericordia r opcion 8 salmo 123 2 3 4 5 7b 8 r 7a r hemos salvado la vida como un pajaro de la trampa del cazador si el senor no hubiera estado de nuestra parte cuando nos asaltaban los hombres nos habrian tragado vivos tanto ardia su ira contra nosotros r nos habrian arrollado las aguas llegandonos el torrente hasta el cuello nos habrian llegado hasta el cuello las aguas espumantes r la trampa se rompio y escapamos nuestro auxilio es el nombre del senor que hizo el cielo y la tierra r opcion 9 salmo 33 2 3 4 5 6 7 8 9 r 5b r el senor me libro de todas mis ansias bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r opcion 10 salmo 125 1 2ab 2cd 3 4 5 6 r 5 r los que sembraban con lagrimas cosechan entre cantares cuando el senor cambio la suerte de sion nos parecia sonar la boca se nos llenaba de risas la lengua de cantares r hasta los gentiles decian el senor ha estado grande con ellos el senor ha estado grande con nosotros y estamos alegres r que el senor cambie nuestra suerte como los torrentes del negueb los que sembraban con lagrimas cosechan entre cantares r al ir iba llorando llevando la semilla al volver vuelve cantando trayendo sus gavillas r",
+  "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\nA cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra. R.",
   "lizq": [
     {
       "type": "variant-group",
-      "id": "salmo_variantes",
-      "label": "Salmo Responsorial",
       "color": "var(--Rojo-Leccionario)",
+      "label": "Salmo Responsorial",
+      "id": "salmo_variantes",
       "variants": [
         {
-          "id": "opt_1",
-          "name": "Opción 1: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "respuesta": "R. Llega el Esposo; salid a recibir a Cristo, el Señor.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Escucha, hija, mira: inclina el oído,",
@@ -70,11 +30,12 @@
               "que nombrarás príncipes por toda la tierra. R."
             ]
           ],
-          "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\nA cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra. R.",
+          "id": "opt_1",
+          "name": "Opción 1: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
           "lines": [
             {
-              "line": "R. Llega el Esposo;",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Llega el Esposo;"
             },
             {
               "line": "salid a recibir a Cristo, el Señor.",
@@ -85,8 +46,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Escucha, hija, mira: inclina el oído,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Escucha, hija, mira: inclina el oído,"
             },
             {
               "line": "olvida tu pueblo y la casa paterna;",
@@ -109,20 +70,20 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "vestida de perlas y brocado;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "vestida de perlas y brocado;"
             },
             {
               "line": "la llevan ante el rey, con séquito de vírgenes",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la siguen sus compañeras. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "la siguen sus compañeras. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Las traen entre alegría y algazara,",
@@ -137,18 +98,19 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "que nombrarás príncipes por toda la tierra. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "que nombrarás príncipes por toda la tierra. R."
             }
-          ]
+          ],
+          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
+          "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\nA cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra. R.",
+          "respuestaOpcional": "",
+          "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
+          "respuesta": "R. Llega el Esposo; salid a recibir a Cristo, el Señor."
         },
         {
-          "id": "opt_2",
-          "name": "Opción 2: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
-          "salmo": "Salmo responsorial: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
-          "subtitle": "Salmo responsorial: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
-          "respuesta": "R. A tus manos, Señor, encomiendo mi espíritu.",
           "respuestaOpcional": "",
+          "name": "Opción 2: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
           "strophes": [
             [
               "Sé la roca de mi refugio,",
@@ -168,39 +130,40 @@
               "sálvame por tu misericordia. R."
             ]
           ],
+          "id": "opt_2",
           "textoCompleto": "Sé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás.\nTu misericordia sea mi gozo y mi alegría.\nTe has fijado en mi aflicción. R.\n\nLíbrame de los enemigos que me persiguen;\nhaz brillar tu rostro sobre tu siervo;\nsálvame por tu misericordia. R.",
           "lines": [
             {
-              "line": "R. A tus manos, Señor, encomiendo mi espíritu.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. A tus manos, Señor, encomiendo mi espíritu."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Sé la roca de mi refugio,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "un baluarte donde me salve,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "un baluarte donde me salve,"
             },
             {
               "line": "tú que eres mi roca y mi baluarte;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "por tu nombre dirígeme y guíame. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "por tu nombre dirígeme y guíame. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "A tus manos encomiendo mi espíritu:",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "A tus manos encomiendo mi espíritu:"
             },
             {
               "line": "tú, el Dios leal, me librarás.",
@@ -215,12 +178,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Líbrame de los enemigos que me persiguen;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Líbrame de los enemigos que me persiguen;"
             },
             {
               "line": "haz brillar tu rostro sobre tu siervo;",
@@ -230,15 +193,12 @@
               "line": "sálvame por tu misericordia. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "subtitle": "Salmo responsorial: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
+          "respuesta": "R. A tus manos, Señor, encomiendo mi espíritu.",
+          "salmo": "Salmo responsorial: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)"
         },
         {
-          "id": "opt_3",
-          "name": "Opción 3: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
-          "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
-          "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
-          "respuesta": "R. El Señor me libró de todas mis ansias.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Bendigo al Señor en todo momento,",
@@ -265,11 +225,16 @@
               "dichoso el que se acoge a él. R."
             ]
           ],
+          "respuestaOpcional": "",
+          "respuesta": "R. El Señor me libró de todas mis ansias.",
+          "id": "opt_3",
+          "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
           "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes;\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.",
+          "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
           "lines": [
             {
-              "line": "R. El Señor me libró de todas mis ansias.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. El Señor me libró de todas mis ansias."
             },
             {
               "line": "",
@@ -280,8 +245,8 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "su alabanza está siempre en mi boca;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "su alabanza está siempre en mi boca;"
             },
             {
               "line": "mi alma se gloría en el Señor:",
@@ -292,8 +257,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Proclamad conmigo la grandeza del Señor,",
@@ -312,8 +277,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Contempladlo, y quedaréis radiantes;",
@@ -324,8 +289,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Si el afligido invoca al Señor, él lo escucha",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Si el afligido invoca al Señor, él lo escucha"
             },
             {
               "line": "y lo salva de sus angustias. R.",
@@ -344,22 +309,22 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Gustad y ved qué bueno es el Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Gustad y ved qué bueno es el Señor,"
             },
             {
-              "line": "dichoso el que se acoge a él. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "dichoso el que se acoge a él. R."
             }
-          ]
+          ],
+          "name": "Opción 3: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)"
         },
         {
-          "id": "opt_4",
-          "name": "Opción 4: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
-          "salmo": "Salmo responsorial: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
-          "subtitle": "Salmo responsorial: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
           "respuesta": "R. Hemos salvado la vida, como un pájaro de la trampa del cazador.",
-          "respuestaOpcional": "",
+          "name": "Opción 4: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
+          "subtitle": "Salmo responsorial: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
+          "id": "opt_4",
+          "textoCompleto": "Si el Señor no hubiera estado de nuestra parte,\ncuando nos asaltaban los hombres,\nnos habrían tragado vivos:\ntanto ardía su ira contra nosotros. R.\n\nNos habrían arrollado las aguas,\nllegándonos el torrente hasta el cuello;\nnos habrían llegado\nhasta el cuello\nlas aguas espumantes. R.\n\nLa trampa se rompió, y escapamos.\nNuestro auxilio es el nombre del Señor,\nque hizo el cielo y la tierra. R.",
           "strophes": [
             [
               "Si el Señor no hubiera estado de nuestra parte,",
@@ -380,23 +345,23 @@
               "que hizo el cielo y la tierra. R."
             ]
           ],
-          "textoCompleto": "Si el Señor no hubiera estado de nuestra parte,\ncuando nos asaltaban los hombres,\nnos habrían tragado vivos:\ntanto ardía su ira contra nosotros. R.\n\nNos habrían arrollado las aguas,\nllegándonos el torrente hasta el cuello;\nnos habrían llegado\nhasta el cuello\nlas aguas espumantes. R.\n\nLa trampa se rompió, y escapamos.\nNuestro auxilio es el nombre del Señor,\nque hizo el cielo y la tierra. R.",
+          "respuestaOpcional": "",
           "lines": [
             {
-              "line": "R. Hemos salvado la vida, como un pájaro",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Hemos salvado la vida, como un pájaro"
             },
             {
-              "line": "de la trampa del cazador.",
-              "sC": "salmo-linea salmo-respuesta salmo-sangria"
+              "sC": "salmo-linea salmo-respuesta salmo-sangria",
+              "line": "de la trampa del cazador."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Si el Señor no hubiera estado de nuestra parte,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Si el Señor no hubiera estado de nuestra parte,"
             },
             {
               "line": "cuando nos asaltaban los hombres,",
@@ -415,50 +380,46 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Nos habrían arrollado las aguas,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Nos habrían arrollado las aguas,"
             },
             {
               "line": "llegándonos el torrente hasta el cuello;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "nos habrían llegado",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "nos habrían llegado"
             },
             {
-              "line": "hasta el cuello",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "hasta el cuello"
             },
             {
-              "line": "las aguas espumantes. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "las aguas espumantes. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "La trampa se rompió, y escapamos.",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "Nuestro auxilio es el nombre del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Nuestro auxilio es el nombre del Señor,"
             },
             {
               "line": "que hizo el cielo y la tierra. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "salmo": "Salmo responsorial: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)"
         },
         {
-          "id": "opt_5",
-          "name": "Opción 5: Salmo 30. 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
-          "salmo": "Salmo responsorial: Salmo 30. 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
-          "subtitle": "Salmo responsorial: Salmo 30. 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
-          "respuesta": "R. A tus manos, Señor, encomiendo mi espíritu.",
-          "respuestaOpcional": "",
+          "textoCompleto": "Sé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás.\nTu misericordia sea mi gozo y mi alegría.\nTe has fijado en mi aflicción. R.\n\nLíbrame de los enemigos que me persiguen;\nhaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia. R.",
           "strophes": [
             [
               "Sé la roca de mi refugio,",
@@ -478,19 +439,23 @@
               "sálvame por tu misericordia. R."
             ]
           ],
-          "textoCompleto": "Sé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás.\nTu misericordia sea mi gozo y mi alegría.\nTe has fijado en mi aflicción. R.\n\nLíbrame de los enemigos que me persiguen;\nhaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia. R.",
+          "id": "opt_5",
+          "respuesta": "R. A tus manos, Señor, encomiendo mi espíritu.",
+          "respuestaOpcional": "",
+          "salmo": "Salmo responsorial: Salmo 30. 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
+          "subtitle": "Salmo responsorial: Salmo 30. 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
           "lines": [
             {
               "line": "R. A tus manos, Señor, encomiendo mi espíritu.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Sé la roca de mi refugio,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Sé la roca de mi refugio,"
             },
             {
               "line": "un baluarte donde me salve,",
@@ -505,8 +470,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "A tus manos encomiendo mi espíritu:",
@@ -517,16 +482,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Tu misericordia sea mi gozo y mi alegría.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Tu misericordia sea mi gozo y mi alegría."
             },
             {
-              "line": "Te has fijado en mi aflicción. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "Te has fijado en mi aflicción. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Líbrame de los enemigos que me persiguen;",
@@ -540,15 +505,11 @@
               "line": "sálvame por tu misericordia. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "name": "Opción 5: Salmo 30. 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)"
         },
         {
-          "id": "opt_6",
-          "name": "Opción 6: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
-          "salmo": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
-          "subtitle": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
-          "respuesta": "R. Los que sembraban con lágrimas cosechan entre cantares.",
-          "respuestaOpcional": "",
+          "textoCompleto": "Cuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.\n\nHasta los gentiles decían:\nEl Señor ha estado grande con ellos.\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.\n\nQue el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.\n\nAl ir, iba llorando,\nllevando la semilla;\nal volver, vuelve cantando,\ntrayendo sus gavillas. R.",
           "strophes": [
             [
               "Cuando el Señor cambió la suerte de Sión,",
@@ -575,15 +536,15 @@
               "trayendo sus gavillas. R."
             ]
           ],
-          "textoCompleto": "Cuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.\n\nHasta los gentiles decían:\nEl Señor ha estado grande con ellos.\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.\n\nQue el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.\n\nAl ir, iba llorando,\nllevando la semilla;\nal volver, vuelve cantando,\ntrayendo sus gavillas. R.",
+          "salmo": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
           "lines": [
             {
-              "line": "R. Los que sembraban con lágrimas",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Los que sembraban con lágrimas"
             },
             {
-              "line": "cosechan entre cantares.",
-              "sC": "salmo-linea salmo-respuesta salmo-sangria"
+              "sC": "salmo-linea salmo-respuesta salmo-sangria",
+              "line": "cosechan entre cantares."
             },
             {
               "line": "",
@@ -598,16 +559,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la boca se nos llenaba de risas,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "la boca se nos llenaba de risas,"
             },
             {
               "line": "la lengua de cantares. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Hasta los gentiles decían:",
@@ -618,8 +579,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "El Señor ha estado grande con nosotros,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "El Señor ha estado grande con nosotros,"
             },
             {
               "line": "y estamos alegres. R.",
@@ -650,30 +611,35 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Al ir, iba llorando,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Al ir, iba llorando,"
             },
             {
-              "line": "llevando la semilla;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "llevando la semilla;"
             },
             {
               "line": "al volver, vuelve cantando,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "trayendo sus gavillas. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "trayendo sus gavillas. R."
             }
-          ]
+          ],
+          "respuestaOpcional": "",
+          "name": "Opción 6: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
+          "id": "opt_6",
+          "respuesta": "R. Los que sembraban con lágrimas cosechan entre cantares.",
+          "subtitle": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)"
         },
         {
-          "id": "opt_7",
+          "subtitle": "Salmo responsorial: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
+          "textoCompleto": "Sé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nA tus manos encomiendo mi espíritu;\ntú, el Dios leal, me librarás.\nTu misericordia sea mi gozo y mi alegría.\nTe has fijado en mi aflicción. R.\n\nLíbrame de los enemigos que me persiguen;\nhaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia. R.",
+          "respuesta": "R. A tus manos, Señor, encomiendo mi espíritu.",
           "name": "Opción 7: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
           "salmo": "Salmo responsorial: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
-          "subtitle": "Salmo responsorial: Salmo 30, 3cd-4. 6 y 8ab. 16bc-17 (R.: 6a)",
-          "respuesta": "R. A tus manos, Señor, encomiendo mi espíritu.",
-          "respuestaOpcional": "R. Aleluya.",
+          "id": "opt_7",
           "strophes": [
             [
               "Sé la roca de mi refugio,",
@@ -693,7 +659,6 @@
               "sálvame por tu misericordia. R."
             ]
           ],
-          "textoCompleto": "Sé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nA tus manos encomiendo mi espíritu;\ntú, el Dios leal, me librarás.\nTu misericordia sea mi gozo y mi alegría.\nTe has fijado en mi aflicción. R.\n\nLíbrame de los enemigos que me persiguen;\nhaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia. R.",
           "lines": [
             {
               "line": "R. A tus manos, Señor, encomiendo mi espíritu.",
@@ -712,8 +677,8 @@
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Sé la roca de mi refugio,",
@@ -744,8 +709,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Tu misericordia sea mi gozo y mi alegría.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Tu misericordia sea mi gozo y mi alegría."
             },
             {
               "line": "Te has fijado en mi aflicción. R.",
@@ -767,15 +732,13 @@
               "line": "sálvame por tu misericordia. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "respuestaOpcional": "R. Aleluya."
         },
         {
           "id": "opt_8",
-          "name": "Opción 8: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
           "salmo": "Salmo responsorial: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
-          "subtitle": "Salmo responsorial: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
-          "respuesta": "R. Hemos salvado la vida, como un pájaro de la trampa del cazador.",
-          "respuestaOpcional": "R. Aleluya.",
+          "textoCompleto": "Si el Señor no hubiera estado de nuestra parte,\ncuando nos asaltaban los hombres,\nnos habrían tragado vivos:\ntanto ardía su ira contra nosotros. R.\n\nNos habrían arrollado las aguas,\nllegándonos el torrente hasta el cuello;\nnos habrían llegado hasta el cuello\nlas aguas espumantes. R.\n\nLa trampa se rompió, y escapamos.\nNuestro auxilio es el nombre del Señor,\nque hizo el cielo y la tierra. R.",
           "strophes": [
             [
               "Si el Señor no hubiera estado de nuestra parte,",
@@ -795,7 +758,6 @@
               "que hizo el cielo y la tierra. R."
             ]
           ],
-          "textoCompleto": "Si el Señor no hubiera estado de nuestra parte,\ncuando nos asaltaban los hombres,\nnos habrían tragado vivos:\ntanto ardía su ira contra nosotros. R.\n\nNos habrían arrollado las aguas,\nllegándonos el torrente hasta el cuello;\nnos habrían llegado hasta el cuello\nlas aguas espumantes. R.\n\nLa trampa se rompió, y escapamos.\nNuestro auxilio es el nombre del Señor,\nque hizo el cielo y la tierra. R.",
           "lines": [
             {
               "line": "R. Hemos salvado la vida, como un pájaro",
@@ -806,12 +768,12 @@
               "sC": "salmo-linea salmo-respuesta salmo-sangria"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
             },
             {
               "line": "R. Aleluya.",
@@ -850,12 +812,12 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "nos habrían llegado hasta el cuello",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "nos habrían llegado hasta el cuello"
             },
             {
-              "line": "las aguas espumantes. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "las aguas espumantes. R."
             },
             {
               "line": "",
@@ -870,18 +832,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "que hizo el cielo y la tierra. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "que hizo el cielo y la tierra. R."
             }
-          ]
+          ],
+          "subtitle": "Salmo responsorial: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
+          "respuestaOpcional": "R. Aleluya.",
+          "name": "Opción 8: Salmo 123, 2-3. 4-5. 7b-8 (R.: 7a)",
+          "respuesta": "R. Hemos salvado la vida, como un pájaro de la trampa del cazador."
         },
         {
-          "id": "opt_9",
-          "name": "Opción 9: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
-          "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
-          "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
-          "respuesta": "R. El Señor me libró de todas mis ansias.",
-          "respuestaOpcional": "R. Aleluya.",
           "strophes": [
             [
               "Bendigo al Señor en todo momento,",
@@ -908,15 +868,14 @@
               "dichoso el que se acoge a él. R."
             ]
           ],
-          "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloria en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y. los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.",
           "lines": [
             {
-              "line": "R. El Señor me libró de todas mis ansias.",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. El Señor me libró de todas mis ansias."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "O bien:",
@@ -931,16 +890,16 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Bendigo al Señor en todo momento,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Bendigo al Señor en todo momento,"
             },
             {
               "line": "su alabanza está siempre en mi boca;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "mi alma se gloria en el Señor:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "mi alma se gloria en el Señor:"
             },
             {
               "line": "que los humildes lo escuchen y se alegren. R.",
@@ -951,8 +910,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Proclamad conmigo la grandeza del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Proclamad conmigo la grandeza del Señor,"
             },
             {
               "line": "ensalcemos juntos su nombre.",
@@ -967,8 +926,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Contempladlo, y quedaréis radiantes,",
@@ -991,8 +950,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "El ángel del Señor acampa",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "El ángel del Señor acampa"
             },
             {
               "line": "en torno a sus fieles y. los protege.",
@@ -1006,15 +965,121 @@
               "line": "dichoso el que se acoge a él. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
+          "respuestaOpcional": "R. Aleluya.",
+          "respuesta": "R. El Señor me libró de todas mis ansias.",
+          "name": "Opción 9: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
+          "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloria en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nEl ángel del Señor acampa\nen torno a sus fieles y. los protege.\nGustad y ved qué bueno es el Señor,\ndichoso el que se acoge a él. R.",
+          "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7. 8-9 (R.: 5b)",
+          "id": "opt_9"
         },
         {
-          "id": "opt_10",
-          "name": "Opción 10: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
-          "salmo": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
           "subtitle": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
+          "textoCompleto": "Cuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.\n\nHasta los gentiles decían:\nEl Señor ha estado grande con ellos.\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.\n\nQue el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.\n\nAl ir, iba llorando,\nllevando la semilla;\nal volver, vuelve cantando,\ntrayendo sus gavillas. R.",
+          "name": "Opción 10: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
           "respuesta": "R. Los que sembraban con lágrimas cosechan entre cantares.",
+          "lines": [
+            {
+              "line": "R. Los que sembraban con lágrimas cosechan entre cantares.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "O bien:",
+              "sC": "salmo-linea salmo-obien"
+            },
+            {
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Aleluya."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Cuando el Señor cambió la suerte de Sión,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "nos parecía soñar:"
+            },
+            {
+              "line": "la boca se nos llenaba de risas,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "la lengua de cantares. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Hasta los gentiles decían:",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "El Señor ha estado grande con ellos."
+            },
+            {
+              "line": "El Señor ha estado grande con nosotros,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y estamos alegres. R."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Que el Señor cambie nuestra suerte,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "como los torrentes del Negueb.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Los que sembraban con lágrimas",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "cosechan entre cantares. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Al ir, iba llorando,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "llevando la semilla;"
+            },
+            {
+              "line": "al volver, vuelve cantando,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "trayendo sus gavillas. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            }
+          ],
+          "salmo": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 5)",
           "respuestaOpcional": "R. Aleluya.",
+          "id": "opt_10",
           "strophes": [
             [
               "Cuando el Señor cambió la suerte de Sión,",
@@ -1040,108 +1105,43 @@
               "al volver, vuelve cantando,",
               "trayendo sus gavillas. R."
             ]
-          ],
-          "textoCompleto": "Cuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.\n\nHasta los gentiles decían:\nEl Señor ha estado grande con ellos.\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.\n\nQue el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.\n\nAl ir, iba llorando,\nllevando la semilla;\nal volver, vuelve cantando,\ntrayendo sus gavillas. R.",
-          "lines": [
-            {
-              "line": "R. Los que sembraban con lágrimas cosechan entre cantares.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
-            },
-            {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Cuando el Señor cambió la suerte de Sión,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "nos parecía soñar:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "la boca se nos llenaba de risas,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "la lengua de cantares. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Hasta los gentiles decían:",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "El Señor ha estado grande con ellos.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "El Señor ha estado grande con nosotros,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y estamos alegres. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Que el Señor cambie nuestra suerte,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "como los torrentes del Negueb.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Los que sembraban con lágrimas",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "cosechan entre cantares. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Al ir, iba llorando,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "llevando la semilla;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "al volver, vuelve cantando,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "trayendo sus gavillas. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
           ]
         }
       ]
     }
-  ]
+  ],
+  "celebracion": "Santa Cecilia, virgen y mártir",
+  "orden": 11220,
+  "sourceBook": "eucaristia",
+  "estrofas": [
+    [
+      "Escucha, hija, mira: inclina el oído,",
+      "olvida tu pueblo y la casa paterna;",
+      "prendado está el rey de tu belleza:",
+      "póstrate ante él, que él es tu señor. R."
+    ],
+    [
+      "Ya entra la princesa, bellísima,",
+      "vestida de perlas y brocado;",
+      "la llevan ante el rey, con séquito de vírgenes",
+      "la siguen sus compañeras. R."
+    ],
+    [
+      "Las traen entre alegría y algazara,",
+      "van entrando en el palacio real.",
+      "A cambio de tus padres, tendrás hijos,",
+      "que nombrarás príncipes por toda la tierra. R."
+    ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
+  "dia": "22",
+  "respuesta": "R. Llega el Esposo; salid a recibir a Cristo, el Señor.",
+  "id": "seus_196",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
+  "stage": "Liturgia",
+  "title": "Santa Cecilia, virgen y mártir",
+  "tiempo": "Noviembre",
+  "searchPool": "santa cecilia virgen y martir memoria libre santos noviembre 22 opcion 1 salmo 44 11 12 14 15 16 17 r cf mt 25 6b r llega el esposo salid a recibir a cristo el senor escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r opcion 2 salmo 30 3cd 4 6 y 8ab 16bc 17 r 6a r a tus manos senor encomiendo mi espiritu se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r a tus manos encomiendo mi espiritu tu el dios leal me libraras tu misericordia sea mi gozo y mi alegria te has fijado en mi afliccion r librame de los enemigos que me persiguen haz brillar tu rostro sobre tu siervo salvame por tu misericordia r opcion 3 salmo 33 2 3 4 5 6 7 8 9 r 5b r el senor me libro de todas mis ansias bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r opcion 4 salmo 123 2 3 4 5 7b 8 r 7a r hemos salvado la vida como un pajaro de la trampa del cazador si el senor no hubiera estado de nuestra parte cuando nos asaltaban los hombres nos habrian tragado vivos tanto ardia su ira contra nosotros r nos habrian arrollado las aguas llegandonos el torrente hasta el cuello nos habrian llegado hasta el cuello las aguas espumantes r la trampa se rompio y escapamos nuestro auxilio es el nombre del senor que hizo el cielo y la tierra r opcion 5 salmo 30 3cd 4 6 y 8ab 16bc 17 r 6a r a tus manos senor encomiendo mi espiritu se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r a tus manos encomiendo mi espiritu tu el dios leal me libraras tu misericordia sea mi gozo y mi alegria te has fijado en mi afliccion r librame de los enemigos que me persiguen haz brillar tu rostro sobre tu siervo salvame por tu misericordia r opcion 6 salmo 125 1 2ab 2cd 3 4 5 6 r 5 r los que sembraban con lagrimas cosechan entre cantares cuando el senor cambio la suerte de sion nos parecia sonar la boca se nos llenaba de risas la lengua de cantares r hasta los gentiles decian el senor ha estado grande con ellos el senor ha estado grande con nosotros y estamos alegres r que el senor cambie nuestra suerte como los torrentes del negueb los que sembraban con lagrimas cosechan entre cantares r al ir iba llorando llevando la semilla al volver vuelve cantando trayendo sus gavillas r opcion 7 salmo 30 3cd 4 6 y 8ab 16bc 17 r 6a r a tus manos senor encomiendo mi espiritu se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r a tus manos encomiendo mi espiritu tu el dios leal me libraras tu misericordia sea mi gozo y mi alegria te has fijado en mi afliccion r librame de los enemigos que me persiguen haz brillar tu rostro sobre tu siervo salvame por tu misericordia r opcion 8 salmo 123 2 3 4 5 7b 8 r 7a r hemos salvado la vida como un pajaro de la trampa del cazador si el senor no hubiera estado de nuestra parte cuando nos asaltaban los hombres nos habrian tragado vivos tanto ardia su ira contra nosotros r nos habrian arrollado las aguas llegandonos el torrente hasta el cuello nos habrian llegado hasta el cuello las aguas espumantes r la trampa se rompio y escapamos nuestro auxilio es el nombre del senor que hizo el cielo y la tierra r opcion 9 salmo 33 2 3 4 5 6 7 8 9 r 5b r el senor me libro de todas mis ansias bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r el angel del senor acampa en torno a sus fieles y los protege gustad y ved que bueno es el senor dichoso el que se acoge a el r opcion 10 salmo 125 1 2ab 2cd 3 4 5 6 r 5 r los que sembraban con lagrimas cosechan entre cantares cuando el senor cambio la suerte de sion nos parecia sonar la boca se nos llenaba de risas la lengua de cantares r hasta los gentiles decian el senor ha estado grande con ellos el senor ha estado grande con nosotros y estamos alegres r que el senor cambie nuestra suerte como los torrentes del negueb los que sembraban con lagrimas cosechan entre cantares r al ir iba llorando llevando la semilla al volver vuelve cantando trayendo sus gavillas r",
+  "respuestaOpcional": ""
 }

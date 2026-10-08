@@ -1,15 +1,5 @@
 {
-  "id": "seui_124",
-  "title": "Jueves de la 21ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 21ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 89, 3-4. 12-13. 14 y 17 (R.: 14)",
-  "salmo": "Salmo responsorial: Salmo 89, 3-4. 12-13. 14 y 17 (R.: 14)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5214,
-  "respuesta": "R. Sácianos de tu misericordia, Señor, y estaremos alegres.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Tú reduces al hombre a polvo,",
@@ -31,36 +21,36 @@
       "y haga prósperas las obras de nuestras manos. R."
     ]
   ],
-  "textoCompleto": "Tú reduces al hombre a polvo,\ndiciendo: «Retornad, hijos de Adán».\nMil años en tu presencia\nson un ayer, que pasó;\nuna vela nocturna. R.\n\nEnséñanos a calcular nuestros años,\npara que adquiramos un corazón sensato.\nVuélvete, Señor, ¿hasta cuándo?\nTen compasión de tus siervos. R.\n\nPor la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nBaje a nosotros la bondad del Señor\ny haga prósperas las obras de nuestras manos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "jueves de la 21 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 89 3 4 12 13 14 y 17 r 14 semana 21 semana xxi jueves 21 xxi r sacianos de tu misericordia senor y estaremos alegres tu reduces al hombre a polvo diciendo retornad hijos de adan mil anos en tu presencia son un ayer que paso una vela nocturna r ensenanos a calcular nuestros anos para que adquiramos un corazon sensato vuelvete senor hasta cuando ten compasion de tus siervos r por la manana sacianos de tu misericordia y toda nuestra vida sera alegria y jubilo baje a nosotros la bondad del senor y haga prosperas las obras de nuestras manos r",
+  "celebracion": "Jueves de la 21ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "id": "seui_124",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Jueves de la 21ª semana de Tiempo Ordinario",
   "lizq": [
     {
-      "line": "R. Sácianos de tu misericordia,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Sácianos de tu misericordia,"
     },
     {
-      "line": "Señor, y estaremos alegres.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "Señor, y estaremos alegres."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Tú reduces al hombre a polvo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú reduces al hombre a polvo,"
     },
     {
-      "line": "diciendo: «Retornad, hijos de Adán».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "diciendo: «Retornad, hijos de Adán»."
     },
     {
-      "line": "Mil años en tu presencia",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Mil años en tu presencia"
     },
     {
       "line": "son un ayer, que pasó;",
@@ -75,8 +65,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Enséñanos a calcular nuestros años,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Enséñanos a calcular nuestros años,"
     },
     {
       "line": "para que adquiramos un corazón sensato.",
@@ -87,16 +77,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Ten compasión de tus siervos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Ten compasión de tus siervos. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Por la mañana sácianos de tu misericordia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Por la mañana sácianos de tu misericordia,"
     },
     {
       "line": "y toda nuestra vida será alegría y júbilo.",
@@ -110,5 +100,15 @@
       "line": "y haga prósperas las obras de nuestras manos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 89, 3-4. 12-13. 14 y 17 (R.: 14)",
+  "respuestaOpcional": "",
+  "respuesta": "R. Sácianos de tu misericordia, Señor, y estaremos alegres.",
+  "ciclo": "Año Impar",
+  "textoCompleto": "Tú reduces al hombre a polvo,\ndiciendo: «Retornad, hijos de Adán».\nMil años en tu presencia\nson un ayer, que pasó;\nuna vela nocturna. R.\n\nEnséñanos a calcular nuestros años,\npara que adquiramos un corazón sensato.\nVuélvete, Señor, ¿hasta cuándo?\nTen compasión de tus siervos. R.\n\nPor la mañana sácianos de tu misericordia,\ny toda nuestra vida será alegría y júbilo.\nBaje a nosotros la bondad del Señor\ny haga prósperas las obras de nuestras manos. R.",
+  "orden": 5214,
+  "dia": "Jueves",
+  "subtitle": "Salmo responsorial: Salmo 89, 3-4. 12-13. 14 y 17 (R.: 14)",
+  "stage": "Liturgia"
 }

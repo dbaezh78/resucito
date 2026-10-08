@@ -1,15 +1,7 @@
 {
-  "id": "seua_53",
-  "title": "Domingo de la 9ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 9ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 30, 2-3a. 3bc-4. 17 y 25 (R.: 3b)",
-  "salmo": "Salmo responsorial: Salmo 30, 2-3a. 3bc-4. 17 y 25 (R.: 3b)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 509,
-  "respuesta": "R. Sé la roca de mi refugio, Señor.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Domingo de la 9ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "A ti, Señor, me acojo;",
@@ -31,12 +23,7 @@
       "los que esperáis en el Señor. R."
     ]
   ],
-  "textoCompleto": "A ti, Señor, me acojo;\nno quede yo nunca defraudado;\ntú, que eres justo, ponme a salvo,\ninclina tu oído hacia mí;\nven aprisa a librarme. R.\n\nSé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nHaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia.\nSed fuertes y valientes de corazón,\nlos que esperáis en el Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 9 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 30 2 3a 3bc 4 17 y 25 r 3b r se la roca de mi refugio senor a ti senor me acojo no quede yo nunca defraudado tu que eres justo ponme a salvo inclina tu oido hacia mi ven aprisa a librarme r se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r haz brillar tu rostro sobre tu siervo salvame por tu misericordia sed fuertes y valientes de corazon los que esperais en el senor r",
+  "respuesta": "R. Sé la roca de mi refugio, Señor.",
   "lizq": [
     {
       "line": "R. Sé la roca de mi refugio, Señor.",
@@ -51,20 +38,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "no quede yo nunca defraudado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no quede yo nunca defraudado;"
     },
     {
-      "line": "tú, que eres justo, ponme a salvo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tú, que eres justo, ponme a salvo,"
     },
     {
-      "line": "inclina tu oído hacia mí;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "inclina tu oído hacia mí;"
     },
     {
-      "line": "ven aprisa a librarme. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ven aprisa a librarme. R."
     },
     {
       "line": "",
@@ -75,20 +62,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "un baluarte donde me salve,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "un baluarte donde me salve,"
     },
     {
-      "line": "tú que eres mi roca y mi baluarte;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tú que eres mi roca y mi baluarte;"
     },
     {
       "line": "por tu nombre dirígeme y guíame. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Haz brillar tu rostro sobre tu siervo,",
@@ -103,8 +90,21 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los que esperáis en el Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los que esperáis en el Señor. R."
     }
-  ]
+  ],
+  "orden": 509,
+  "salmo": "Salmo responsorial: Salmo 30, 2-3a. 3bc-4. 17 y 25 (R.: 3b)",
+  "searchPool": "domingo de la 9 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 30 2 3a 3bc 4 17 y 25 r 3b r se la roca de mi refugio senor a ti senor me acojo no quede yo nunca defraudado tu que eres justo ponme a salvo inclina tu oido hacia mi ven aprisa a librarme r se la roca de mi refugio un baluarte donde me salve tu que eres mi roca y mi baluarte por tu nombre dirigeme y guiame r haz brillar tu rostro sobre tu siervo salvame por tu misericordia sed fuertes y valientes de corazon los que esperais en el senor r",
+  "sourceBook": "eucaristia",
+  "respuestaOpcional": "",
+  "textoCompleto": "A ti, Señor, me acojo;\nno quede yo nunca defraudado;\ntú, que eres justo, ponme a salvo,\ninclina tu oído hacia mí;\nven aprisa a librarme. R.\n\nSé la roca de mi refugio,\nun baluarte donde me salve,\ntú que eres mi roca y mi baluarte;\npor tu nombre dirígeme y guíame. R.\n\nHaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia.\nSed fuertes y valientes de corazón,\nlos que esperáis en el Señor. R.",
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "id": "seua_53",
+  "celebracion": "Domingo de la 9ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "dia": "Domingo",
+  "ciclo": "Ciclo A"
 }

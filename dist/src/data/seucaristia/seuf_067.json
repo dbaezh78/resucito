@@ -1,10 +1,11 @@
 {
-  "id": "seuf_067",
-  "title": "Jueves de la 4ª semana de Cuaresma",
-  "celebracion": "Jueves de la 4ª semana de Cuaresma",
-  "subtitle": "Salmo 105, 19-20. 21-22. 23 (R.: 4a)",
+  "orden": 344,
+  "catCanto": "Salmo Eucaristía",
+  "stage": "Liturgia",
   "salmo": "Salmo 105, 19-20. 21-22. 23 (R.: 4a)",
   "ciclo": "Ciclo A, B y C",
+  "celebracion": "Jueves de la 4ª semana de Cuaresma",
+  "dia": "Jueves",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +13,7 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Jueves",
-  "orden": 344,
-  "respuesta": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
-  "respuestaOpcional": "",
+  "title": "Jueves de la 4ª semana de Cuaresma",
   "estrofas": [
     [
       "En Horeb se hicieron un becerro,",
@@ -37,24 +34,18 @@
       "para apartar su cólera del exterminio. R."
     ]
   ],
-  "textoCompleto": "En Horeb se hicieron un becerro,\nadoraron un ídolo de fundición;\ncambiaron su gloria por la imagen\nde un toro que come hierba. R.\n\nSe olvidaron de Dios, su salvador,\nque había hecho prodigios en Egipto,\nmaravillas en el país de Cam,\nportentos junto al mar Rojo. R.\n\nDios hablaba ya de aniquilarlos;\npero Moisés, su elegido,\nse puso en la brecha frente a él,\npara apartar su cólera del exterminio. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 4 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma jueves salmo 105 19 20 21 22 23 r 4a semana 4 semana iv jueves feria r acuerdate de mi senor por amor a tu pueblo en horeb se hicieron un becerro adoraron un idolo de fundicion cambiaron su gloria por la imagen de un toro que come hierba r se olvidaron de dios su salvador que habia hecho prodigios en egipto maravillas en el pais de cam portentos junto al mar rojo r dios hablaba ya de aniquilarlos pero moises su elegido se puso en la brecha frente a el para apartar su colera del exterminio r",
   "lizq": [
     {
       "line": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "En Horeb se hicieron un becerro,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "En Horeb se hicieron un becerro,"
     },
     {
       "line": "adoraron un ídolo de fundición;",
@@ -93,8 +84,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dios hablaba ya de aniquilarlos;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dios hablaba ya de aniquilarlos;"
     },
     {
       "line": "pero Moisés, su elegido,",
@@ -105,8 +96,17 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "para apartar su cólera del exterminio. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "para apartar su cólera del exterminio. R."
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "subtitle": "Salmo 105, 19-20. 21-22. 23 (R.: 4a)",
+  "respuesta": "R. Acuérdate de mí, Señor, por amor a tu pueblo.",
+  "tiempo": "Cuaresma",
+  "id": "seuf_067",
+  "searchPool": "jueves de la 4 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma jueves salmo 105 19 20 21 22 23 r 4a semana 4 semana iv jueves feria r acuerdate de mi senor por amor a tu pueblo en horeb se hicieron un becerro adoraron un idolo de fundicion cambiaron su gloria por la imagen de un toro que come hierba r se olvidaron de dios su salvador que habia hecho prodigios en egipto maravillas en el pais de cam portentos junto al mar rojo r dios hablaba ya de aniquilarlos pero moises su elegido se puso en la brecha frente a el para apartar su colera del exterminio r",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "textoCompleto": "En Horeb se hicieron un becerro,\nadoraron un ídolo de fundición;\ncambiaron su gloria por la imagen\nde un toro que come hierba. R.\n\nSe olvidaron de Dios, su salvador,\nque había hecho prodigios en Egipto,\nmaravillas en el país de Cam,\nportentos junto al mar Rojo. R.\n\nDios hablaba ya de aniquilarlos;\npero Moisés, su elegido,\nse puso en la brecha frente a él,\npara apartar su cólera del exterminio. R."
 }

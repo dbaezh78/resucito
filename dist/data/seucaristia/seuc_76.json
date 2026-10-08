@@ -1,40 +1,12 @@
 {
-  "id": "seuc_76",
-  "title": "Domingo de la 30ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 30ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 33, 3-3. 17-18. 19 y 23 (R.: 7a)",
-  "salmo": "Salmo responsorial: Salmo 33, 3-3. 17-18. 19 y 23 (R.: 7a)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 530,
-  "respuesta": "R. Si el afligido invoca al Señor, él lo escucha.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Bendigo al Señor en todo momento,",
-      "su alabanza está siempre en mi boca;",
-      "mi alma se gloría en el Señor:",
-      "que los humildes lo escuchen y se alegren. R."
-    ],
-    [
-      "El Señor se enfrenta con los malhechores,",
-      "para borrar de la tierra su memoria.",
-      "Cuando uno grita, el Señor lo escucha",
-      "y lo libra de sus angustias. R."
-    ],
-    [
-      "El Señor está cerca de los atribulados,",
-      "salva a los abatidos.",
-      "El Señor redime a sus siervos,",
-      "no será castigado quien se acoge a él. R."
-    ]
-  ],
-  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nEl Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria.\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias. R.\n\nEl Señor está cerca de los atribulados,\nsalva a los abatidos.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nEl Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria.\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias. R.\n\nEl Señor está cerca de los atribulados,\nsalva a los abatidos.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R.",
+  "ciclo": "Ciclo C",
+  "dia": "Domingo",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Si el afligido invoca al Señor, él lo escucha.",
+  "celebracion": "Domingo de la 30ª semana de Tiempo Ordinario",
   "searchPool": "domingo de la 30 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 33 3 3 17 18 19 y 23 r 7a r si el afligido invoca al senor el lo escucha bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r el senor se enfrenta con los malhechores para borrar de la tierra su memoria cuando uno grita el senor lo escucha y lo libra de sus angustias r el senor esta cerca de los atribulados salva a los abatidos el senor redime a sus siervos no sera castigado quien se acoge a el r",
   "lizq": [
     {
@@ -42,8 +14,8 @@
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendigo al Señor en todo momento,",
@@ -54,8 +26,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mi alma se gloría en el Señor:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mi alma se gloría en el Señor:"
     },
     {
       "line": "que los humildes lo escuchen y se alegren. R.",
@@ -101,5 +73,33 @@
       "line": "no será castigado quien se acoge a él. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 33, 3-3. 17-18. 19 y 23 (R.: 7a)",
+  "estrofas": [
+    [
+      "Bendigo al Señor en todo momento,",
+      "su alabanza está siempre en mi boca;",
+      "mi alma se gloría en el Señor:",
+      "que los humildes lo escuchen y se alegren. R."
+    ],
+    [
+      "El Señor se enfrenta con los malhechores,",
+      "para borrar de la tierra su memoria.",
+      "Cuando uno grita, el Señor lo escucha",
+      "y lo libra de sus angustias. R."
+    ],
+    [
+      "El Señor está cerca de los atribulados,",
+      "salva a los abatidos.",
+      "El Señor redime a sus siervos,",
+      "no será castigado quien se acoge a él. R."
+    ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 33, 3-3. 17-18. 19 y 23 (R.: 7a)",
+  "catCanto": "Salmo Eucaristía",
+  "id": "seuc_76",
+  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
+  "title": "Domingo de la 30ª semana de Tiempo Ordinario",
+  "orden": 530
 }

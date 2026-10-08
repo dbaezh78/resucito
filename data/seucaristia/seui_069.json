@@ -1,47 +1,11 @@
 {
-  "id": "seui_069",
-  "title": "Miércoles de la 12ª semana de Tiempo Ordinario",
   "celebracion": "Miércoles de la 12ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 104, 1-2. 3-4. 6-7. 8-9 (R.: 8a)",
-  "salmo": "Salmo responsorial: Salmo 104, 1-2. 3-4. 6-7. 8-9 (R.: 8a)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5123,
-  "respuesta": "R. El Señor se acuerda de su alianza eternamente.",
   "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Dad gracias al Señor, invocad su nombre,",
-      "dad a conocer sus hazañas a los pueblos.",
-      "Cantadle al son de instrumentos,",
-      "hablad de sus maravillas. R."
-    ],
-    [
-      "Gloriaos de su nombre santo,",
-      "que se alegren los que buscan al Señor.",
-      "Recurrid al Señor y a su poder,",
-      "buscad continuamente su rostro. R."
-    ],
-    [
-      "¡Estirpe de Abrahán, su siervo;",
-      "hijos de Jacob, su elegido!",
-      "El Señor es nuestro Dios,",
-      "él gobierna toda la tierra. R."
-    ],
-    [
-      "Se acuerda de su alianza eternamente,",
-      "de la palabra dada, por mil generaciones;",
-      "de la alianza sellada con Abrahán,",
-      "del juramento hecho a Isaac. R."
-    ]
-  ],
   "textoCompleto": "Dad gracias al Señor, invocad su nombre,\ndad a conocer sus hazañas a los pueblos.\nCantadle al son de instrumentos,\nhablad de sus maravillas. R.\n\nGloriaos de su nombre santo,\nque se alegren los que buscan al Señor.\nRecurrid al Señor y a su poder,\nbuscad continuamente su rostro. R.\n\n¡Estirpe de Abrahán, su siervo;\nhijos de Jacob, su elegido!\nEl Señor es nuestro Dios,\nél gobierna toda la tierra. R.\n\nSe acuerda de su alianza eternamente,\nde la palabra dada, por mil generaciones;\nde la alianza sellada con Abrahán,\ndel juramento hecho a Isaac. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. El Señor se acuerda de su alianza eternamente.",
   "hasAudio": false,
-  "searchPool": "miercoles de la 12 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 104 1 2 3 4 6 7 8 9 r 8a semana 12 semana xii miercoles 12 xii r el senor se acuerda de su alianza eternamente r aleluya dad gracias al senor invocad su nombre dad a conocer sus hazanas a los pueblos cantadle al son de instrumentos hablad de sus maravillas r gloriaos de su nombre santo que se alegren los que buscan al senor recurrid al senor y a su poder buscad continuamente su rostro r estirpe de abrahan su siervo hijos de jacob su elegido el senor es nuestro dios el gobierna toda la tierra r se acuerda de su alianza eternamente de la palabra dada por mil generaciones de la alianza sellada con abrahan del juramento hecho a isaac r",
   "lizq": [
     {
       "line": "R. El Señor se acuerda de su alianza eternamente.",
@@ -68,20 +32,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "dad a conocer sus hazañas a los pueblos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "dad a conocer sus hazañas a los pueblos."
     },
     {
-      "line": "Cantadle al son de instrumentos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Cantadle al son de instrumentos,"
     },
     {
-      "line": "hablad de sus maravillas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "hablad de sus maravillas. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Gloriaos de su nombre santo,",
@@ -92,20 +56,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Recurrid al Señor y a su poder,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Recurrid al Señor y a su poder,"
     },
     {
       "line": "buscad continuamente su rostro. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "¡Estirpe de Abrahán, su siervo;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¡Estirpe de Abrahán, su siervo;"
     },
     {
       "line": "hijos de Jacob, su elegido!",
@@ -124,8 +88,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Se acuerda de su alianza eternamente,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Se acuerda de su alianza eternamente,"
     },
     {
       "line": "de la palabra dada, por mil generaciones;",
@@ -136,8 +100,44 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "del juramento hecho a Isaac. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "del juramento hecho a Isaac. R."
     }
-  ]
+  ],
+  "id": "seui_069",
+  "searchPool": "miercoles de la 12 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 104 1 2 3 4 6 7 8 9 r 8a semana 12 semana xii miercoles 12 xii r el senor se acuerda de su alianza eternamente r aleluya dad gracias al senor invocad su nombre dad a conocer sus hazanas a los pueblos cantadle al son de instrumentos hablad de sus maravillas r gloriaos de su nombre santo que se alegren los que buscan al senor recurrid al senor y a su poder buscad continuamente su rostro r estirpe de abrahan su siervo hijos de jacob su elegido el senor es nuestro dios el gobierna toda la tierra r se acuerda de su alianza eternamente de la palabra dada por mil generaciones de la alianza sellada con abrahan del juramento hecho a isaac r",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 5123,
+  "ciclo": "Año Impar",
+  "dia": "Miércoles",
+  "salmo": "Salmo responsorial: Salmo 104, 1-2. 3-4. 6-7. 8-9 (R.: 8a)",
+  "title": "Miércoles de la 12ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Dad gracias al Señor, invocad su nombre,",
+      "dad a conocer sus hazañas a los pueblos.",
+      "Cantadle al son de instrumentos,",
+      "hablad de sus maravillas. R."
+    ],
+    [
+      "Gloriaos de su nombre santo,",
+      "que se alegren los que buscan al Señor.",
+      "Recurrid al Señor y a su poder,",
+      "buscad continuamente su rostro. R."
+    ],
+    [
+      "¡Estirpe de Abrahán, su siervo;",
+      "hijos de Jacob, su elegido!",
+      "El Señor es nuestro Dios,",
+      "él gobierna toda la tierra. R."
+    ],
+    [
+      "Se acuerda de su alianza eternamente,",
+      "de la palabra dada, por mil generaciones;",
+      "de la alianza sellada con Abrahán,",
+      "del juramento hecho a Isaac. R."
+    ]
+  ],
+  "sourceBook": "eucaristia"
 }

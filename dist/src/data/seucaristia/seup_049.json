@@ -1,44 +1,13 @@
 {
   "id": "seup_049",
-  "title": "Lunes de la 9ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 9ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 90, 1-2. 14-15ab. 15c-16 (R.: 2b)",
-  "salmo": "Salmo responsorial: Salmo 90, 1-2. 14-15ab. 15c-16 (R.: 2b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5091,
-  "respuesta": "R. Dios mío, confío en ti.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Tú que habitas al amparo del Altísimo,",
-      "que vives a la sombra del Omnipotente,",
-      "di al Señor: «Refugio mío, alcázar mío,",
-      "Dios mío, confío en ti». R."
-    ],
-    [
-      "«Se puso junto a mí: lo libraré;",
-      "lo protegeré porque conoce mi nombre,",
-      "me invocará y lo escucharé.",
-      "Con él estaré en la tribulación». R."
-    ],
-    [
-      "«Lo defenderé, lo glorificaré,",
-      "lo saciaré de largos días",
-      "y le haré ver mi salvación». R."
-    ]
-  ],
-  "textoCompleto": "Tú que habitas al amparo del Altísimo,\nque vives a la sombra del Omnipotente,\ndi al Señor: «Refugio mío, alcázar mío,\nDios mío, confío en ti». R.\n\n«Se puso junto a mí: lo libraré;\nlo protegeré porque conoce mi nombre,\nme invocará y lo escucharé.\nCon él estaré en la tribulación». R.\n\n«Lo defenderé, lo glorificaré,\nlo saciaré de largos días\ny le haré ver mi salvación». R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 9 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 90 1 2 14 15ab 15c 16 r 2b semana 9 semana ix lunes 9 ix r dios mio confio en ti tu que habitas al amparo del altisimo que vives a la sombra del omnipotente di al senor refugio mio alcazar mio dios mio confio en ti r se puso junto a mi lo librare lo protegere porque conoce mi nombre me invocara y lo escuchare con el estare en la tribulacion r lo defendere lo glorificare lo saciare de largos dias y le hare ver mi salvacion r",
+  "textoCompleto": "Tú que habitas al amparo del Altísimo,\nque vives a la sombra del Omnipotente,\ndi al Señor: «Refugio mío, alcázar mío,\nDios mío, confío en ti». R.\n\n«Se puso junto a mí: lo libraré;\nlo protegeré porque conoce mi nombre,\nme invocará y lo escucharé.\nCon él estaré en la tribulación». R.\n\n«Lo defenderé, lo glorificaré,\nlo saciaré de largos días\ny le haré ver mi salvación». R.",
+  "respuestaOpcional": "",
   "lizq": [
     {
-      "line": "R. Dios mío, confío en ti.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dios mío, confío en ti."
     },
     {
       "line": "",
@@ -73,8 +42,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "me invocará y lo escucharé.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me invocará y lo escucharé."
     },
     {
       "line": "Con él estaré en la tribulación». R.",
@@ -89,12 +58,43 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "lo saciaré de largos días",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lo saciaré de largos días"
     },
     {
       "line": "y le haré ver mi salvación». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Lunes",
+  "salmo": "Salmo responsorial: Salmo 90, 1-2. 14-15ab. 15c-16 (R.: 2b)",
+  "orden": 5091,
+  "sourceBook": "eucaristia",
+  "subtitle": "Salmo responsorial: Salmo 90, 1-2. 14-15ab. 15c-16 (R.: 2b)",
+  "title": "Lunes de la 9ª semana de Tiempo Ordinario",
+  "celebracion": "Lunes de la 9ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "respuesta": "R. Dios mío, confío en ti.",
+  "ciclo": "Año Par",
+  "estrofas": [
+    [
+      "Tú que habitas al amparo del Altísimo,",
+      "que vives a la sombra del Omnipotente,",
+      "di al Señor: «Refugio mío, alcázar mío,",
+      "Dios mío, confío en ti». R."
+    ],
+    [
+      "«Se puso junto a mí: lo libraré;",
+      "lo protegeré porque conoce mi nombre,",
+      "me invocará y lo escucharé.",
+      "Con él estaré en la tribulación». R."
+    ],
+    [
+      "«Lo defenderé, lo glorificaré,",
+      "lo saciaré de largos días",
+      "y le haré ver mi salvación». R."
+    ]
+  ],
+  "searchPool": "lunes de la 9 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 90 1 2 14 15ab 15c 16 r 2b semana 9 semana ix lunes 9 ix r dios mio confio en ti tu que habitas al amparo del altisimo que vives a la sombra del omnipotente di al senor refugio mio alcazar mio dios mio confio en ti r se puso junto a mi lo librare lo protegere porque conoce mi nombre me invocara y lo escuchare con el estare en la tribulacion r lo defendere lo glorificare lo saciare de largos dias y le hare ver mi salvacion r",
+  "tiempo": "Tiempo Ordinario"
 }

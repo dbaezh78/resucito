@@ -1,10 +1,4 @@
 {
-  "id": "seuf_093",
-  "title": "Lunes de la tercera semana de Pascua",
-  "celebracion": "Lunes de la tercera semana de Pascua",
-  "subtitle": "Salmo 118, 23-24. 26-27. 29-30 (R.: 1)",
-  "salmo": "Salmo 118, 23-24. 26-27. 29-30 (R.: 1)",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,37 +6,9 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Lunes",
-  "orden": 431,
-  "respuesta": "R. Dichoso el que camina en la voluntad del Señor.",
   "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Aunque los nobles se sienten a murmurar de mí,",
-      "tu siervo medita tus leyes;",
-      "tus preceptos son mi delicia,",
-      "tus decretos son mis consejeros. R."
-    ],
-    [
-      "Te expliqué mi camino, y me escuchaste:",
-      "enséñame tus leyes;",
-      "instrúyeme en el camino de tus decretos,",
-      "y meditaré tus maravillas. R."
-    ],
-    [
-      "Apártame del camino falso,",
-      "y dame la gracia de tu voluntad;",
-      "escogí el camino verdadero,",
-      "deseé tus mandamientos. R."
-    ]
-  ],
-  "textoCompleto": "Aunque los nobles se sienten a murmurar de mí,\ntu siervo medita tus leyes;\ntus preceptos son mi delicia,\ntus decretos son mis consejeros. R.\n\nTe expliqué mi camino, y me escuchaste:\nenséñame tus leyes;\ninstrúyeme en el camino de tus decretos,\ny meditaré tus maravillas. R.\n\nApártame del camino falso,\ny dame la gracia de tu voluntad;\nescogí el camino verdadero,\ndeseé tus mandamientos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "lunes de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua lunes salmo 118 23 24 26 27 29 30 r 1 semana 3 semana iii lunes feria r dichoso el que camina en la voluntad del senor r aleluya aunque los nobles se sienten a murmurar de mi tu siervo medita tus leyes tus preceptos son mi delicia tus decretos son mis consejeros r te explique mi camino y me escuchaste ensename tus leyes instruyeme en el camino de tus decretos y meditare tus maravillas r apartame del camino falso y dame la gracia de tu voluntad escogi el camino verdadero desee tus mandamientos r",
+  "title": "Lunes de la tercera semana de Pascua",
   "lizq": [
     {
       "line": "R. Dichoso el que camina en la voluntad del Señor.",
@@ -53,20 +19,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Aunque los nobles se sienten a murmurar de mí,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Aunque los nobles se sienten a murmurar de mí,"
     },
     {
       "line": "tu siervo medita tus leyes;",
@@ -77,8 +43,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tus decretos son mis consejeros. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tus decretos son mis consejeros. R."
     },
     {
       "line": "",
@@ -101,8 +67,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Apártame del camino falso,",
@@ -117,8 +83,42 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "deseé tus mandamientos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "deseé tus mandamientos. R."
     }
-  ]
+  ],
+  "respuesta": "R. Dichoso el que camina en la voluntad del Señor.",
+  "salmo": "Salmo 118, 23-24. 26-27. 29-30 (R.: 1)",
+  "subtitle": "Salmo 118, 23-24. 26-27. 29-30 (R.: 1)",
+  "ciclo": "Ciclo A, B y C",
+  "orden": 431,
+  "stage": "Liturgia",
+  "dia": "Lunes",
+  "sourceBook": "eucaristia",
+  "celebracion": "Lunes de la tercera semana de Pascua",
+  "estrofas": [
+    [
+      "Aunque los nobles se sienten a murmurar de mí,",
+      "tu siervo medita tus leyes;",
+      "tus preceptos son mi delicia,",
+      "tus decretos son mis consejeros. R."
+    ],
+    [
+      "Te expliqué mi camino, y me escuchaste:",
+      "enséñame tus leyes;",
+      "instrúyeme en el camino de tus decretos,",
+      "y meditaré tus maravillas. R."
+    ],
+    [
+      "Apártame del camino falso,",
+      "y dame la gracia de tu voluntad;",
+      "escogí el camino verdadero,",
+      "deseé tus mandamientos. R."
+    ]
+  ],
+  "textoCompleto": "Aunque los nobles se sienten a murmurar de mí,\ntu siervo medita tus leyes;\ntus preceptos son mi delicia,\ntus decretos son mis consejeros. R.\n\nTe expliqué mi camino, y me escuchaste:\nenséñame tus leyes;\ninstrúyeme en el camino de tus decretos,\ny meditaré tus maravillas. R.\n\nApártame del camino falso,\ny dame la gracia de tu voluntad;\nescogí el camino verdadero,\ndeseé tus mandamientos. R.",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Pascua",
+  "id": "seuf_093",
+  "searchPool": "lunes de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua lunes salmo 118 23 24 26 27 29 30 r 1 semana 3 semana iii lunes feria r dichoso el que camina en la voluntad del senor r aleluya aunque los nobles se sienten a murmurar de mi tu siervo medita tus leyes tus preceptos son mi delicia tus decretos son mis consejeros r te explique mi camino y me escuchaste ensename tus leyes instruyeme en el camino de tus decretos y meditare tus maravillas r apartame del camino falso y dame la gracia de tu voluntad escogi el camino verdadero desee tus mandamientos r"
 }

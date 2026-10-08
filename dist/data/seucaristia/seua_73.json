@@ -1,15 +1,7 @@
 {
-  "id": "seua_73",
-  "title": "Domingo de la 29ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 29ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 95, 1 y 3. 4-5. 7-8. 9-10a y c (R.: 7b)",
-  "salmo": "Salmo responsorial: Salmo 95, 1 y 3. 4-5. 7-8. 9-10a y c (R.: 7b)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
   "orden": 529,
-  "respuesta": "R. Aclamad la gloria y el poder del Señor.",
   "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -37,15 +29,14 @@
     ]
   ],
   "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nPorque es grande el Señor, y muy digno de alabanza,\nmás temible que todos los dioses.\nPues los dioses de los gentiles son apariencia,\nmientras que el Señor ha hecho el cielo. R.\n\nFamilias de los pueblos, aclamad al Señor,\naclamad la gloria y el poder del Señor,\naclamad la gloria del nombre del Señor,\nentrad en sus atrios trayéndole ofrendas. R.\n\nPostraos ante el Señor en el atrio sagrado,\ntiemble en su presencia la tierra toda;\ndecid a los pueblos: «El Señor es rey,\nél gobierna a los pueblos rectamente». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "title": "Domingo de la 29ª semana de Tiempo Ordinario",
   "searchPool": "domingo de la 29 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 95 1 y 3 4 5 7 8 9 10a y c r 7b r aclamad la gloria y el poder del senor cantad al senor un cantico nuevo cantad al senor toda la tierra contad a los pueblos su gloria sus maravillas a todas las naciones r porque es grande el senor y muy digno de alabanza mas temible que todos los dioses pues los dioses de los gentiles son apariencia mientras que el senor ha hecho el cielo r familias de los pueblos aclamad al senor aclamad la gloria y el poder del senor aclamad la gloria del nombre del senor entrad en sus atrios trayendole ofrendas r postraos ante el senor en el atrio sagrado tiemble en su presencia la tierra toda decid a los pueblos el senor es rey el gobierna a los pueblos rectamente r",
+  "subtitle": "Salmo responsorial: Salmo 95, 1 y 3. 4-5. 7-8. 9-10a y c (R.: 7b)",
+  "catCanto": "Salmo Eucaristía",
   "lizq": [
     {
-      "line": "R. Aclamad la gloria y el poder del Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aclamad la gloria y el poder del Señor."
     },
     {
       "line": "",
@@ -68,12 +59,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Porque es grande el Señor, y muy digno de alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque es grande el Señor, y muy digno de alabanza,"
     },
     {
       "line": "más temible que todos los dioses.",
@@ -84,36 +75,36 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mientras que el Señor ha hecho el cielo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "mientras que el Señor ha hecho el cielo. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Familias de los pueblos, aclamad al Señor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "aclamad la gloria y el poder del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "aclamad la gloria y el poder del Señor,"
     },
     {
-      "line": "aclamad la gloria del nombre del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "aclamad la gloria del nombre del Señor,"
     },
     {
-      "line": "entrad en sus atrios trayéndole ofrendas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "entrad en sus atrios trayéndole ofrendas. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Postraos ante el Señor en el atrio sagrado,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Postraos ante el Señor en el atrio sagrado,"
     },
     {
       "line": "tiemble en su presencia la tierra toda;",
@@ -127,5 +118,14 @@
       "line": "él gobierna a los pueblos rectamente». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 95, 1 y 3. 4-5. 7-8. 9-10a y c (R.: 7b)",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "dia": "Domingo",
+  "respuesta": "R. Aclamad la gloria y el poder del Señor.",
+  "celebracion": "Domingo de la 29ª semana de Tiempo Ordinario",
+  "ciclo": "Ciclo A",
+  "id": "seua_73"
 }

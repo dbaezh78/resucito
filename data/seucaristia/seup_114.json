@@ -1,15 +1,7 @@
 {
-  "id": "seup_114",
-  "title": "Sábado de la 19ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 19ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 50, 12-13. 14-15. 18-19 (R.: 12a)",
-  "salmo": "Salmo responsorial: Salmo 50, 12-13. 14-15. 18-19 (R.: 12a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
   "orden": 5196,
-  "respuesta": "R. Oh Dios, crea en mí un corazón puro.",
   "respuestaOpcional": "",
+  "title": "Sábado de la 19ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Oh Dios, crea en mí un corazón puro,",
@@ -31,12 +23,16 @@
       "tú no lo desprecias. R."
     ]
   ],
-  "textoCompleto": "Oh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso:\nenseñaré a los malvados tus caminos,\nlos pecadores volverán a ti. R.\n\nLos sacrificios no te satisfacen:\nsi te ofreciera un holocausto, no lo querrías.\nMi sacrificio es un espíritu quebrantado;\nun corazón quebrantado y humillado,\ntú no lo desprecias. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 50, 12-13. 14-15. 18-19 (R.: 12a)",
+  "ciclo": "Año Par",
+  "dia": "Sábado",
   "hasAudio": false,
-  "searchPool": "sabado de la 19 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 50 12 13 14 15 18 19 r 12a semana 19 semana xix sabado 19 xix r oh dios crea en mi un corazon puro oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso ensenare a los malvados tus caminos los pecadores volveran a ti r los sacrificios no te satisfacen si te ofreciera un holocausto no lo querrias mi sacrificio es un espiritu quebrantado un corazon quebrantado y humillado tu no lo desprecias r",
+  "celebracion": "Sábado de la 19ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "id": "seup_114",
+  "respuesta": "R. Oh Dios, crea en mí un corazón puro.",
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Oh Dios, crea en mí un corazón puro.",
@@ -55,36 +51,36 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "no me arrojes lejos de tu rostro,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no me arrojes lejos de tu rostro,"
     },
     {
-      "line": "no me quites tu santo espíritu. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "no me quites tu santo espíritu. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Devuélveme la alegría de tu salvación,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Devuélveme la alegría de tu salvación,"
     },
     {
-      "line": "afiánzame con espíritu generoso:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "afiánzame con espíritu generoso:"
     },
     {
       "line": "enseñaré a los malvados tus caminos,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los pecadores volverán a ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los pecadores volverán a ti. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Los sacrificios no te satisfacen:",
@@ -99,12 +95,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "un corazón quebrantado y humillado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "un corazón quebrantado y humillado,"
     },
     {
       "line": "tú no lo desprecias. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "searchPool": "sabado de la 19 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 50 12 13 14 15 18 19 r 12a semana 19 semana xix sabado 19 xix r oh dios crea en mi un corazon puro oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso ensenare a los malvados tus caminos los pecadores volveran a ti r los sacrificios no te satisfacen si te ofreciera un holocausto no lo querrias mi sacrificio es un espiritu quebrantado un corazon quebrantado y humillado tu no lo desprecias r",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 50, 12-13. 14-15. 18-19 (R.: 12a)",
+  "textoCompleto": "Oh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso:\nenseñaré a los malvados tus caminos,\nlos pecadores volverán a ti. R.\n\nLos sacrificios no te satisfacen:\nsi te ofreciera un holocausto, no lo querrías.\nMi sacrificio es un espíritu quebrantado;\nun corazón quebrantado y humillado,\ntú no lo desprecias. R."
 }

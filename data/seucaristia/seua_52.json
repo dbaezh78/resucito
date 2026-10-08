@@ -1,15 +1,16 @@
 {
-  "id": "seua_52",
-  "title": "Domingo de la 8ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 8ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: 61, 2-3. 6-7. 8-9ab (R.: 6a)",
-  "salmo": "Salmo responsorial: 61, 2-3. 6-7. 8-9ab (R.: 6a)",
-  "ciclo": "Ciclo A",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 508,
   "respuesta": "R. Descansa sólo en Dios, alma mía.",
+  "ciclo": "Ciclo A",
+  "hasAudio": false,
+  "celebracion": "Domingo de la 8ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "id": "seua_52",
   "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: 61, 2-3. 6-7. 8-9ab (R.: 6a)",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: 61, 2-3. 6-7. 8-9ab (R.: 6a)",
+  "dia": "Domingo",
   "estrofas": [
     [
       "Sólo en Dios descansa mi alma,",
@@ -31,12 +32,6 @@
       "desahogad ante él vuestro corazón. R."
     ]
   ],
-  "textoCompleto": "Sólo en Dios descansa mi alma,\nporque de él viene mi salvación;\nsólo él es mi roca y mi salvación;\nmi alcázar: no vacilaré. R.\n\nDescansa sólo en Dios, alma mía,\nporque él es mi esperanza;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.\n\nDe Dios viene mi salvación y mi gloria,\nél es mi roca firme,\nDios es mi refugio.\nPueblo suyo, confiad en él,\ndesahogad ante él vuestro corazón. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 8 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial 61 2 3 6 7 8 9ab r 6a r descansa solo en dios alma mia solo en dios descansa mi alma porque de el viene mi salvacion solo el es mi roca y mi salvacion mi alcazar no vacilare r descansa solo en dios alma mia porque el es mi esperanza solo el es mi roca y mi salvacion mi alcazar no vacilare r de dios viene mi salvacion y mi gloria el es mi roca firme dios es mi refugio pueblo suyo confiad en el desahogad ante el vuestro corazon r",
   "lizq": [
     {
       "line": "R. Descansa sólo en Dios, alma mía.",
@@ -47,28 +42,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Sólo en Dios descansa mi alma,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sólo en Dios descansa mi alma,"
     },
     {
       "line": "porque de él viene mi salvación;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "sólo él es mi roca y mi salvación;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "sólo él es mi roca y mi salvación;"
     },
     {
-      "line": "mi alcázar: no vacilaré. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "mi alcázar: no vacilaré. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Descansa sólo en Dios, alma mía,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Descansa sólo en Dios, alma mía,"
     },
     {
       "line": "porque él es mi esperanza;",
@@ -83,28 +78,33 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "De Dios viene mi salvación y mi gloria,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "De Dios viene mi salvación y mi gloria,"
     },
     {
       "line": "él es mi roca firme,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Dios es mi refugio.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dios es mi refugio."
     },
     {
-      "line": "Pueblo suyo, confiad en él,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Pueblo suyo, confiad en él,"
     },
     {
-      "line": "desahogad ante él vuestro corazón. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "desahogad ante él vuestro corazón. R."
     }
-  ]
+  ],
+  "title": "Domingo de la 8ª semana de Tiempo Ordinario",
+  "searchPool": "domingo de la 8 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial 61 2 3 6 7 8 9ab r 6a r descansa solo en dios alma mia solo en dios descansa mi alma porque de el viene mi salvacion solo el es mi roca y mi salvacion mi alcazar no vacilare r descansa solo en dios alma mia porque el es mi esperanza solo el es mi roca y mi salvacion mi alcazar no vacilare r de dios viene mi salvacion y mi gloria el es mi roca firme dios es mi refugio pueblo suyo confiad en el desahogad ante el vuestro corazon r",
+  "sourceBook": "eucaristia",
+  "orden": 508,
+  "textoCompleto": "Sólo en Dios descansa mi alma,\nporque de él viene mi salvación;\nsólo él es mi roca y mi salvación;\nmi alcázar: no vacilaré. R.\n\nDescansa sólo en Dios, alma mía,\nporque él es mi esperanza;\nsólo él es mi roca y mi salvación,\nmi alcázar: no vacilaré. R.\n\nDe Dios viene mi salvación y mi gloria,\nél es mi roca firme,\nDios es mi refugio.\nPueblo suyo, confiad en él,\ndesahogad ante él vuestro corazón. R."
 }

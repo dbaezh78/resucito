@@ -1,15 +1,4 @@
 {
-  "id": "seus_157",
-  "title": "Santa Teresa del Niño Jesús, virgen",
-  "celebracion": "Santa Teresa del Niño Jesús, virgen",
-  "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
-  "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
-  "ciclo": "Santos",
-  "tiempo": "Octubre",
-  "dia": "1",
-  "orden": 10010,
-  "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Señor, mi corazón no es ambicioso,",
@@ -26,26 +15,20 @@
       "ahora y por siempre. R."
     ]
   ],
+  "ciclo": "Santos",
   "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "santa teresa del nino jesus virgen memoria santos octubre 1 opcion 1 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r opcion 2 salmo 148 1 2 11 13b 13c 14 r cf 12a 13a r jovenes y doncellas alabad el nombre del senor alabad al senor en el cielo alabad al senor en lo alto alabadlo todos sus angeles alabadlo todos sus ejercitos r reyes y pueblos del orbe principes y jefes del mundo los jovenes y tambien las doncellas los viejos junto con los ninos alaben el nombre del senor el unico nombre sublime r su majestad sobre el cielo y la tierra el acrece el vigor de su pueblo alabanza de todos sus fieles de israel su pueblo escogido r opcion 3 salmo 44 11 12 14 15 16 17 r cf mt 25 6b r llega el esposo salid a recibir a cristo el senor escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r opcion 4 salmo 148 1 2 11 13b 13c 14 r cf 12a 13a r jovenes y doncellas alabad el nombre del senor alabad al senor en el cielo alabad al senor en lo alto alabadlo todos sus angeles alabadlo todos sus ejercitos r reyes y pueblos del orbe principes y jefes del mundo los jovenes y tambien las doncellas los viejos junto con los ninos alaben el nombre del senor el unico nombre sublime r su majestad sobre el cielo y la tierra el acrece el vigor de su pueblo alabanza de todos sus fieles de israel su pueblo escogido r opcion 5 salmo 44 11 12 14 15 16 17 r cf mt 25 6b r llega el esposo salid a recibir a cristo el senor escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r",
+  "dia": "1",
+  "hasAudio": false,
+  "title": "Santa Teresa del Niño Jesús, virgen",
+  "id": "seus_157",
+  "stage": "Liturgia",
+  "celebracion": "Santa Teresa del Niño Jesús, virgen",
   "lizq": [
     {
       "type": "variant-group",
-      "id": "salmo_variantes",
-      "label": "Salmo Responsorial",
-      "color": "var(--Rojo-Leccionario)",
       "variants": [
         {
-          "id": "opt_1",
-          "name": "Opción 1: Salmo 130, 1. 2. 3",
-          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
-          "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
-          "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Señor, mi corazón no es ambicioso,",
@@ -62,7 +45,12 @@
               "ahora y por siempre. R."
             ]
           ],
+          "respuestaOpcional": "",
+          "name": "Opción 1: Salmo 130, 1. 2. 3",
           "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
+          "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
+          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
+          "id": "opt_1",
           "lines": [
             {
               "line": "R. Guarda mi alma en la paz, junto a ti, Señor.",
@@ -81,8 +69,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "no pretendo grandezas",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "no pretendo grandezas"
             },
             {
               "line": "que superan mi capacidad. R.",
@@ -97,57 +85,36 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "como un niño en brazos de su madre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "como un niño en brazos de su madre. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Espere Israel en el Señor",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Espere Israel en el Señor"
             },
             {
-              "line": "ahora y por siempre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "ahora y por siempre. R."
             }
-          ]
+          ],
+          "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3"
         },
         {
-          "id": "opt_2",
-          "name": "Opción 2: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
-          "salmo": "Salmo responsorial: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
-          "subtitle": "Salmo responsorial: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
           "respuesta": "R. Jóvenes y doncellas, alabad el nombre del Señor.",
-          "respuestaOpcional": "R. Aleluya.",
-          "strophes": [
-            [
-              "Alabad al Señor en el cielo,",
-              "alabad al Señor en lo alto.",
-              "Alabadlo, todos sus ángeles;",
-              "alabadlo, todos sus ejércitos. R."
-            ],
-            [
-              "Reyes y pueblos del orbe,",
-              "príncipes y jefes del mundo,",
-              "los jóvenes y también las doncellas,",
-              "los viejos junto con los niños,",
-              "alaben el nombre del Señor,",
-              "el único nombre sublime. R."
-            ],
-            [
-              "Su majestad sobre el cielo y la tierra;",
-              "él acrece el vigor de su pueblo.",
-              "Alabanza de todos sus fieles,",
-              "de Israel, su pueblo escogido. R."
-            ]
-          ],
+          "subtitle": "Salmo responsorial: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
+          "name": "Opción 2: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
           "textoCompleto": "Alabad al Señor en el cielo,\nalabad al Señor en lo alto.\nAlabadlo, todos sus ángeles;\nalabadlo, todos sus ejércitos. R.\n\nReyes y pueblos del orbe,\npríncipes y jefes del mundo,\nlos jóvenes y también las doncellas,\nlos viejos junto con los niños,\nalaben el nombre del Señor,\nel único nombre sublime. R.\n\nSu majestad sobre el cielo y la tierra;\nél acrece el vigor de su pueblo.\nAlabanza de todos sus fieles,\nde Israel, su pueblo escogido. R.",
+          "respuestaOpcional": "R. Aleluya.",
+          "id": "opt_2",
+          "salmo": "Salmo responsorial: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
           "lines": [
             {
-              "line": "R. Jóvenes y doncellas,",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Jóvenes y doncellas,"
             },
             {
               "line": "alabad el nombre del Señor.",
@@ -174,40 +141,40 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "alabad al Señor en lo alto.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "alabad al Señor en lo alto."
             },
             {
-              "line": "Alabadlo, todos sus ángeles;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Alabadlo, todos sus ángeles;"
             },
             {
-              "line": "alabadlo, todos sus ejércitos. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "alabadlo, todos sus ejércitos. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Reyes y pueblos del orbe,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "príncipes y jefes del mundo,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "príncipes y jefes del mundo,"
             },
             {
-              "line": "los jóvenes y también las doncellas,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "los jóvenes y también las doncellas,"
             },
             {
-              "line": "los viejos junto con los niños,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "los viejos junto con los niños,"
             },
             {
-              "line": "alaben el nombre del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "alaben el nombre del Señor,"
             },
             {
               "line": "el único nombre sublime. R.",
@@ -218,30 +185,50 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Su majestad sobre el cielo y la tierra;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Su majestad sobre el cielo y la tierra;"
             },
             {
-              "line": "él acrece el vigor de su pueblo.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "él acrece el vigor de su pueblo."
             },
             {
-              "line": "Alabanza de todos sus fieles,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "Alabanza de todos sus fieles,"
             },
             {
-              "line": "de Israel, su pueblo escogido. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "de Israel, su pueblo escogido. R."
             }
+          ],
+          "strophes": [
+            [
+              "Alabad al Señor en el cielo,",
+              "alabad al Señor en lo alto.",
+              "Alabadlo, todos sus ángeles;",
+              "alabadlo, todos sus ejércitos. R."
+            ],
+            [
+              "Reyes y pueblos del orbe,",
+              "príncipes y jefes del mundo,",
+              "los jóvenes y también las doncellas,",
+              "los viejos junto con los niños,",
+              "alaben el nombre del Señor,",
+              "el único nombre sublime. R."
+            ],
+            [
+              "Su majestad sobre el cielo y la tierra;",
+              "él acrece el vigor de su pueblo.",
+              "Alabanza de todos sus fieles,",
+              "de Israel, su pueblo escogido. R."
+            ]
           ]
         },
         {
-          "id": "opt_3",
-          "name": "Opción 3: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "respuesta": "R. Llega el Esposo; salid a recibir a Cristo, el Señor.",
+          "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\nA cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra. R.",
           "respuestaOpcional": "",
+          "id": "opt_3",
+          "respuesta": "R. Llega el Esposo; salid a recibir a Cristo, el Señor.",
           "strophes": [
             [
               "Escucha, hija, mira: inclina el oído,",
@@ -262,23 +249,23 @@
               "que nombrarás príncipes por toda la tierra. R."
             ]
           ],
-          "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\nA cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra. R.",
+          "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
           "lines": [
             {
-              "line": "R. Llega el Esposo;",
-              "sC": "salmo-linea salmo-respuesta"
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Llega el Esposo;"
             },
             {
               "line": "salid a recibir a Cristo, el Señor.",
               "sC": "salmo-linea salmo-respuesta salmo-sangria"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Escucha, hija, mira: inclina el oído,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Escucha, hija, mira: inclina el oído,"
             },
             {
               "line": "olvida tu pueblo y la casa paterna;",
@@ -293,8 +280,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Ya entra la princesa, bellísima,",
@@ -309,36 +296,129 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "la siguen sus compañeras. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "la siguen sus compañeras. R."
             },
             {
               "line": "",
               "sC": "salmo-espacio"
             },
             {
-              "line": "Las traen entre alegría y algazara,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Las traen entre alegría y algazara,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "van entrando en el palacio real."
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "A cambio de tus padres, tendrás hijos,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "que nombrarás príncipes por toda la tierra. R."
+            }
+          ],
+          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
+          "name": "Opción 3: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)"
+        },
+        {
+          "name": "Opción 4: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
+          "textoCompleto": "Alabad al Señor en el cielo,\nalabad al Señor en lo alto.\nAlabadlo, todos sus ángeles;\nalabadlo, todos sus ejércitos. R.\n\nReyes y pueblos del orbe,\npríncipes y jefes del mundo,\nlos jóvenes y también las doncellas,\nlos viejos junto con los niños,\nalaben el nombre del Señor,\nel único nombre sublime. R.\n\nSu majestad sobre el cielo y la tierra;\nél acrece el vigor de su pueblo.\nAlabanza de todos sus fieles,\nde Israel, su pueblo escogido. R.",
+          "salmo": "Salmo responsorial: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
+          "subtitle": "Salmo responsorial: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
+          "id": "opt_4",
+          "lines": [
+            {
+              "line": "R. Jóvenes y doncellas,",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "line": "alabad el nombre del Señor.",
+              "sC": "salmo-linea salmo-respuesta salmo-sangria"
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "O bien:",
+              "sC": "salmo-linea salmo-obien"
+            },
+            {
+              "line": "R. Aleluya.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Alabad al Señor en el cielo,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "van entrando en el palacio real.",
+              "line": "alabad al Señor en lo alto.",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "A cambio de tus padres, tendrás hijos,",
+              "line": "Alabadlo, todos sus ángeles;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "que nombrarás príncipes por toda la tierra. R.",
+              "line": "alabadlo, todos sus ejércitos. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Reyes y pueblos del orbe,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "príncipes y jefes del mundo,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "los jóvenes y también las doncellas,"
+            },
+            {
+              "line": "los viejos junto con los niños,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "alaben el nombre del Señor,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "el único nombre sublime. R."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "Su majestad sobre el cielo y la tierra;",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "él acrece el vigor de su pueblo.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Alabanza de todos sus fieles,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "de Israel, su pueblo escogido. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
-        },
-        {
-          "id": "opt_4",
-          "name": "Opción 4: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
-          "salmo": "Salmo responsorial: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
-          "subtitle": "Salmo responsorial: Salmo 148, 1-2. 11-13b. 13c-14 (R.: cf. 12a. 13a)",
+          ],
           "respuesta": "R. Jóvenes y doncellas, alabad el nombre del Señor.",
           "respuestaOpcional": "R. Aleluya.",
           "strophes": [
@@ -362,15 +442,19 @@
               "Alabanza de todos sus fieles,",
               "de Israel, su pueblo escogido. R."
             ]
-          ],
-          "textoCompleto": "Alabad al Señor en el cielo,\nalabad al Señor en lo alto.\nAlabadlo, todos sus ángeles;\nalabadlo, todos sus ejércitos. R.\n\nReyes y pueblos del orbe,\npríncipes y jefes del mundo,\nlos jóvenes y también las doncellas,\nlos viejos junto con los niños,\nalaben el nombre del Señor,\nel único nombre sublime. R.\n\nSu majestad sobre el cielo y la tierra;\nél acrece el vigor de su pueblo.\nAlabanza de todos sus fieles,\nde Israel, su pueblo escogido. R.",
+          ]
+        },
+        {
+          "id": "opt_5",
+          "name": "Opción 5: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
+          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
           "lines": [
             {
-              "line": "R. Jóvenes y doncellas,",
+              "line": "R. Llega el Esposo;",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "alabad el nombre del Señor.",
+              "line": "salid a recibir a Cristo, el Señor.",
               "sC": "salmo-linea salmo-respuesta salmo-sangria"
             },
             {
@@ -378,8 +462,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
             },
             {
               "line": "R. Aleluya.",
@@ -390,19 +474,39 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Alabad al Señor en el cielo,",
+              "line": "Escucha, hija, mira: inclina el oído,",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "alabad al Señor en lo alto.",
+              "line": "olvida tu pueblo y la casa paterna;",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "Alabadlo, todos sus ángeles;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "prendado está el rey de tu belleza:"
             },
             {
-              "line": "alabadlo, todos sus ejércitos. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "póstrate ante él, que él es tu señor. R."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Ya entra la princesa, bellísima,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "vestida de perlas y brocado;"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "la llevan ante el rey, con séquito de vírgenes,"
+            },
+            {
+              "line": "la siguen sus compañeras. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
@@ -410,58 +514,22 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Reyes y pueblos del orbe,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Las traen entre alegría y algazara,"
             },
             {
-              "line": "príncipes y jefes del mundo,",
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "van entrando en el palacio real."
+            },
+            {
+              "line": "A cambio de tus padres, tendrás hijos,",
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "los jóvenes y también las doncellas,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "los viejos junto con los niños,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "alaben el nombre del Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "el único nombre sublime. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Su majestad sobre el cielo y la tierra;",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "él acrece el vigor de su pueblo.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Alabanza de todos sus fieles,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "de Israel, su pueblo escogido. R.",
+              "line": "que nombrarás príncipes por toda la tierra. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
-        },
-        {
-          "id": "opt_5",
-          "name": "Opción 5: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
-          "respuesta": "R. Llega el Esposo; salid a recibir a Cristo, el Señor.",
-          "respuestaOpcional": "R. Aleluya.",
+          ],
           "strophes": [
             [
               "Escucha, hija, mira: inclina el oído,",
@@ -482,91 +550,23 @@
               "que nombrarás príncipes por toda la tierra. R."
             ]
           ],
-          "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes,\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\nA cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra. R.",
-          "lines": [
-            {
-              "line": "R. Llega el Esposo;",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "salid a recibir a Cristo, el Señor.",
-              "sC": "salmo-linea salmo-respuesta salmo-sangria"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
-            },
-            {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Escucha, hija, mira: inclina el oído,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "olvida tu pueblo y la casa paterna;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "prendado está el rey de tu belleza:",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "póstrate ante él, que él es tu señor. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Ya entra la princesa, bellísima,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "vestida de perlas y brocado;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "la llevan ante el rey, con séquito de vírgenes,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "la siguen sus compañeras. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Las traen entre alegría y algazara,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "van entrando en el palacio real.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "A cambio de tus padres, tendrás hijos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "que nombrarás príncipes por toda la tierra. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
-          ]
+          "respuestaOpcional": "R. Aleluya.",
+          "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: cf. Mt 25, 6b)",
+          "respuesta": "R. Llega el Esposo; salid a recibir a Cristo, el Señor.",
+          "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes,\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\nA cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra. R."
         }
-      ]
+      ],
+      "id": "salmo_variantes",
+      "color": "var(--Rojo-Leccionario)",
+      "label": "Salmo Responsorial"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
+  "tiempo": "Octubre",
+  "sourceBook": "eucaristia",
+  "orden": 10010,
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
+  "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
+  "catCanto": "Salmo Eucaristía"
 }

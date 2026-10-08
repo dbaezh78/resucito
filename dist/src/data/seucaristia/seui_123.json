@@ -1,15 +1,6 @@
 {
-  "id": "seui_123",
-  "title": "Miércoles de la 21ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 21ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 138, 7-8. 9-10. 11-12ab (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 138, 7-8. 9-10. 11-12ab (R.: 1a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Miércoles",
-  "orden": 5213,
-  "respuesta": "R. Señor, tú me sondeas y me conoces.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "¿Adónde iré lejos de tu aliento,",
@@ -30,24 +21,22 @@
       "la noche es clara como el día. R."
     ]
   ],
+  "respuesta": "R. Señor, tú me sondeas y me conoces.",
+  "celebracion": "Miércoles de la 21ª semana de Tiempo Ordinario",
   "textoCompleto": "¿Adónde iré lejos de tu aliento,\nadónde escaparé de tu mirada?\nSi escalo el cielo, allí estás tú;\nsi me acuesto en el abismo, allí te encuentro. R.\n\nSi vuelo hasta el margen de la aurora,\nsi emigro hasta el confín del mar,\nallí me alcanzará tu izquierda,\nme agarrará tu derecha. R.\n\nSi digo: «Que al menos las tinieblas me encubran,\nque la luz se haga noche en torno a mí»,\nni las tinieblas son oscuras para ti,\nla noche es clara como el día. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 21 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 138 7 8 9 10 11 12ab r 1a semana 21 semana xxi miercoles 21 xxi r senor tu me sondeas y me conoces adonde ire lejos de tu aliento adonde escapare de tu mirada si escalo el cielo alli estas tu si me acuesto en el abismo alli te encuentro r si vuelo hasta el margen de la aurora si emigro hasta el confin del mar alli me alcanzara tu izquierda me agarrara tu derecha r si digo que al menos las tinieblas me encubran que la luz se haga noche en torno a mi ni las tinieblas son oscuras para ti la noche es clara como el dia r",
+  "title": "Miércoles de la 21ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Señor, tú me sondeas y me conoces.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "¿Adónde iré lejos de tu aliento,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¿Adónde iré lejos de tu aliento,"
     },
     {
       "line": "adónde escaparé de tu mirada?",
@@ -58,8 +47,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "si me acuesto en el abismo, allí te encuentro. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "si me acuesto en el abismo, allí te encuentro. R."
     },
     {
       "line": "",
@@ -70,16 +59,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "si emigro hasta el confín del mar,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "si emigro hasta el confín del mar,"
     },
     {
       "line": "allí me alcanzará tu izquierda,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "me agarrará tu derecha. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me agarrará tu derecha. R."
     },
     {
       "line": "",
@@ -101,5 +90,16 @@
       "line": "la noche es clara como el día. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 138, 7-8. 9-10. 11-12ab (R.: 1a)",
+  "id": "seui_123",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "searchPool": "miercoles de la 21 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 138 7 8 9 10 11 12ab r 1a semana 21 semana xxi miercoles 21 xxi r senor tu me sondeas y me conoces adonde ire lejos de tu aliento adonde escapare de tu mirada si escalo el cielo alli estas tu si me acuesto en el abismo alli te encuentro r si vuelo hasta el margen de la aurora si emigro hasta el confin del mar alli me alcanzara tu izquierda me agarrara tu derecha r si digo que al menos las tinieblas me encubran que la luz se haga noche en torno a mi ni las tinieblas son oscuras para ti la noche es clara como el dia r",
+  "ciclo": "Año Impar",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 138, 7-8. 9-10. 11-12ab (R.: 1a)",
+  "stage": "Liturgia",
+  "orden": 5213,
+  "hasAudio": false
 }

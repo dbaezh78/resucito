@@ -1,15 +1,7 @@
 {
-  "id": "seua_61",
-  "title": "Domingo de la 17ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 17ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 57 y 72. 76-77. 127-128. 129-130 (R.: 97a)",
-  "salmo": "Salmo responsorial: Salmo 118, 57 y 72. 76-77. 127-128. 129-130 (R.: 97a)",
   "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
-  "orden": 517,
-  "respuesta": "R. ¡Cuánto amo tu voluntad, Señor!",
-  "respuestaOpcional": "",
+  "id": "seua_61",
   "estrofas": [
     [
       "Mi porción es el Señor;",
@@ -36,20 +28,22 @@
       "da inteligencia a los ignorantes. R."
     ]
   ],
-  "textoCompleto": "Mi porción es el Señor;\nhe resuelto guardar tus palabras.\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nQue tu bondad me consuele,\nsegún la promesa hecha a tu siervo;\ncuando me alcance tu compasión, viviré,\ny mis delicias serán tu voluntad. R.\n\nYo amo tus mandatos\nmás que el oro purísimo;\npor eso aprecio tus decretos\ny detesto el camino de la mentira. R.\n\nTus preceptos son admirables,\npor eso los guarda mi alma;\nla explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 118, 57 y 72. 76-77. 127-128. 129-130 (R.: 97a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 17 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 118 57 y 72 76 77 127 128 129 130 r 97a r cuanto amo tu voluntad senor mi porcion es el senor he resuelto guardar tus palabras mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r que tu bondad me consuele segun la promesa hecha a tu siervo cuando me alcance tu compasion vivire y mis delicias seran tu voluntad r yo amo tus mandatos mas que el oro purisimo por eso aprecio tus decretos y detesto el camino de la mentira r tus preceptos son admirables por eso los guarda mi alma la explicacion de tus palabras ilumina da inteligencia a los ignorantes r",
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "respuesta": "R. ¡Cuánto amo tu voluntad, Señor!",
+  "salmo": "Salmo responsorial: Salmo 118, 57 y 72. 76-77. 127-128. 129-130 (R.: 97a)",
+  "celebracion": "Domingo de la 17ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. ¡Cuánto amo tu voluntad, Señor!",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Mi porción es el Señor;",
@@ -60,8 +54,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Más estimo yo los preceptos de tu boca",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Más estimo yo los preceptos de tu boca"
     },
     {
       "line": "que miles de monedas de oro y plata. R.",
@@ -96,20 +90,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "más que el oro purísimo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "más que el oro purísimo;"
     },
     {
-      "line": "por eso aprecio tus decretos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por eso aprecio tus decretos"
     },
     {
       "line": "y detesto el camino de la mentira. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Tus preceptos son admirables,",
@@ -127,5 +121,11 @@
       "line": "da inteligencia a los ignorantes. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "sourceBook": "eucaristia",
+  "orden": 517,
+  "textoCompleto": "Mi porción es el Señor;\nhe resuelto guardar tus palabras.\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nQue tu bondad me consuele,\nsegún la promesa hecha a tu siervo;\ncuando me alcance tu compasión, viviré,\ny mis delicias serán tu voluntad. R.\n\nYo amo tus mandatos\nmás que el oro purísimo;\npor eso aprecio tus decretos\ny detesto el camino de la mentira. R.\n\nTus preceptos son admirables,\npor eso los guarda mi alma;\nla explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.",
+  "hasAudio": false,
+  "title": "Domingo de la 17ª semana de Tiempo Ordinario",
+  "searchPool": "domingo de la 17 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 118 57 y 72 76 77 127 128 129 130 r 97a r cuanto amo tu voluntad senor mi porcion es el senor he resuelto guardar tus palabras mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r que tu bondad me consuele segun la promesa hecha a tu siervo cuando me alcance tu compasion vivire y mis delicias seran tu voluntad r yo amo tus mandatos mas que el oro purisimo por eso aprecio tus decretos y detesto el camino de la mentira r tus preceptos son admirables por eso los guarda mi alma la explicacion de tus palabras ilumina da inteligencia a los ignorantes r"
 }

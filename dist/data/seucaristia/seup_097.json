@@ -1,15 +1,14 @@
 {
-  "id": "seup_097",
-  "title": "Lunes de la 17ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 17ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Deuteronomio 32, 18-19. 20. 21 (R.: 18a)",
-  "salmo": "Interleccional: Deuteronomio 32, 18-19. 20. 21 (R.: 18a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
   "dia": "Lunes",
-  "orden": 5171,
-  "respuesta": "R. Despreciaste a la Roca que te engendró.",
+  "id": "seup_097",
   "respuestaOpcional": "",
+  "salmo": "Interleccional: Deuteronomio 32, 18-19. 20. 21 (R.: 18a)",
+  "celebracion": "Lunes de la 17ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "lunes de la 17 semana de tiempo ordinario ano par tiempo ordinario lunes interleccional deuteronomio 32 18 19 20 21 r 18a semana 17 semana xvii lunes 17 xvii r despreciaste a la roca que te engendro despreciaste a la roca que te engendro y olvidaste al dios que te dio a luz lo vio el senor e irritado rechazo a sus hijos e hijas r pensando les escondere mi rostro y vere en que acaban porque son una generacion depravada unos hijos desleales r ellos me han dado celos con un dios ilusorio me han irritado con idolos vacios pues yo les dare celos con un pueblo ilusorio los irritare con una nacion fatua r",
+  "textoCompleto": "Despreciaste a la Roca que te engendró,\ny olvidaste al Dios que te dio a luz.\nLo vio el Señor, e irritado\nrechazó a sus hijos e hijas. R.\n\nPensando: «Les esconderé mi rostro\ny veré en qué acaban,\nporque son una generación depravada,\nunos hijos desleales». R.\n\n«Ellos me han dado celos con un dios ilusorio,\nme han irritado con ídolos vacíos;\npues yo les daré celos con un pueblo ilusorio,\nlos irritaré con una nación fatua». R.",
   "estrofas": [
     [
       "Despreciaste a la Roca que te engendró,",
@@ -30,20 +29,19 @@
       "los irritaré con una nación fatua». R."
     ]
   ],
-  "textoCompleto": "Despreciaste a la Roca que te engendró,\ny olvidaste al Dios que te dio a luz.\nLo vio el Señor, e irritado\nrechazó a sus hijos e hijas. R.\n\nPensando: «Les esconderé mi rostro\ny veré en qué acaban,\nporque son una generación depravada,\nunos hijos desleales». R.\n\n«Ellos me han dado celos con un dios ilusorio,\nme han irritado con ídolos vacíos;\npues yo les daré celos con un pueblo ilusorio,\nlos irritaré con una nación fatua». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "orden": 5171,
+  "title": "Lunes de la 17ª semana de Tiempo Ordinario",
   "hasAudio": false,
-  "searchPool": "lunes de la 17 semana de tiempo ordinario ano par tiempo ordinario lunes interleccional deuteronomio 32 18 19 20 21 r 18a semana 17 semana xvii lunes 17 xvii r despreciaste a la roca que te engendro despreciaste a la roca que te engendro y olvidaste al dios que te dio a luz lo vio el senor e irritado rechazo a sus hijos e hijas r pensando les escondere mi rostro y vere en que acaban porque son una generacion depravada unos hijos desleales r ellos me han dado celos con un dios ilusorio me han irritado con idolos vacios pues yo les dare celos con un pueblo ilusorio los irritare con una nacion fatua r",
+  "respuesta": "R. Despreciaste a la Roca que te engendró.",
+  "ciclo": "Año Par",
   "lizq": [
     {
       "line": "R. Despreciaste a la Roca que te engendró.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Despreciaste a la Roca que te engendró,",
@@ -62,8 +60,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Pensando: «Les esconderé mi rostro",
@@ -74,8 +72,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "porque son una generación depravada,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque son una generación depravada,"
     },
     {
       "line": "unos hijos desleales». R.",
@@ -90,16 +88,18 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "me han irritado con ídolos vacíos;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me han irritado con ídolos vacíos;"
     },
     {
       "line": "pues yo les daré celos con un pueblo ilusorio,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los irritaré con una nación fatua». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los irritaré con una nación fatua». R."
     }
-  ]
+  ],
+  "subtitle": "Interleccional: Deuteronomio 32, 18-19. 20. 21 (R.: 18a)",
+  "tiempo": "Tiempo Ordinario"
 }

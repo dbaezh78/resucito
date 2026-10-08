@@ -1,15 +1,12 @@
 {
-  "id": "seup_145",
-  "title": "Lunes de la 25ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 25ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: cf. 1b)",
-  "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: cf. 1b)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5251,
-  "respuesta": "R. El justo habitará en tu monte santo, Señor.",
   "respuestaOpcional": "",
+  "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel que tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nEl que así obra nunca fallará. R.",
+  "orden": 5251,
+  "catCanto": "Salmo Eucaristía",
+  "title": "Lunes de la 25ª semana de Tiempo Ordinario",
+  "searchPool": "lunes de la 25 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 14 2 3ab 3cd 4ab 5 r cf 1b semana 25 semana xxv lunes 25 xxv r el justo habitara en tu monte santo senor el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r",
+  "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: cf. 1b)",
   "estrofas": [
     [
       "El que procede honradamente",
@@ -29,12 +26,8 @@
       "El que así obra nunca fallará. R."
     ]
   ],
-  "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel que tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nEl que así obra nunca fallará. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 25 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 14 2 3ab 3cd 4ab 5 r cf 1b semana 25 semana xxv lunes 25 xxv r el justo habitara en tu monte santo senor el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r",
+  "respuesta": "R. El justo habitará en tu monte santo, Señor.",
+  "id": "seup_145",
   "lizq": [
     {
       "line": "R. El justo habitará en tu monte santo, Señor.",
@@ -57,8 +50,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y no calumnia con su lengua. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y no calumnia con su lengua. R."
     },
     {
       "line": "",
@@ -69,32 +62,39 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "ni difama al vecino,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ni difama al vecino,"
     },
     {
-      "line": "el que considera despreciable al impío",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el que considera despreciable al impío"
     },
     {
-      "line": "y honra a los que temen al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y honra a los que temen al Señor. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El que no presta dinero a usura",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "ni acepta soborno contra el inocente.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ni acepta soborno contra el inocente."
     },
     {
       "line": "El que así obra nunca fallará. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Lunes de la 25ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: cf. 1b)",
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "sourceBook": "eucaristia",
+  "hasAudio": false
 }

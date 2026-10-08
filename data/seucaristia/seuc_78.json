@@ -1,15 +1,6 @@
 {
-  "id": "seuc_78",
-  "title": "Domingo de la 32ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 32ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 16, 1. 5-6. 8 y 15 (R.: 15b)",
-  "salmo": "Salmo responsorial: Salmo 16, 1. 5-6. 8 y 15 (R.: 15b)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 532,
-  "respuesta": "R. Al despertar me saciaré de tu semblante, Señor.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Señor, escucha mi apelación,",
@@ -30,12 +21,16 @@
       "y al despertar me saciaré de tu semblante. R."
     ]
   ],
-  "textoCompleto": "Señor, escucha mi apelación,\natiende a mis clamores,\npresta oído a mi suplica,\nque en mis labios no hay engaño. R.\n\nMis pies estuvieron firmes en tus caminos,\ny no vacilaron mis pasos.\nYo te invoco porque tú me respondes, Dios mío;\ninclina el oído y escucha mis palabras. R.\n\nGuárdame como a las niñas de tus ojos,\na la sombra de tus alas escóndeme.\nYo con mi apelación vengo a tu presencia,\ny al despertar me saciaré de tu semblante. R.",
-  "sourceBook": "eucaristia",
+  "celebracion": "Domingo de la 32ª semana de Tiempo Ordinario",
+  "ciclo": "Ciclo C",
+  "dia": "Domingo",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuestaOpcional": "",
+  "id": "seuc_78",
   "searchPool": "domingo de la 32 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 16 1 5 6 8 y 15 r 15b r al despertar me saciare de tu semblante senor senor escucha mi apelacion atiende a mis clamores presta oido a mi suplica que en mis labios no hay engano r mis pies estuvieron firmes en tus caminos y no vacilaron mis pasos yo te invoco porque tu me respondes dios mio inclina el oido y escucha mis palabras r guardame como a las ninas de tus ojos a la sombra de tus alas escondeme yo con mi apelacion vengo a tu presencia y al despertar me saciare de tu semblante r",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 16, 1. 5-6. 8 y 15 (R.: 15b)",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
       "line": "R. Al despertar me saciaré de tu semblante, Señor.",
@@ -78,8 +73,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "inclina el oído y escucha mis palabras. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "inclina el oído y escucha mis palabras. R."
     },
     {
       "line": "",
@@ -101,5 +96,10 @@
       "line": "y al despertar me saciaré de tu semblante. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "textoCompleto": "Señor, escucha mi apelación,\natiende a mis clamores,\npresta oído a mi suplica,\nque en mis labios no hay engaño. R.\n\nMis pies estuvieron firmes en tus caminos,\ny no vacilaron mis pasos.\nYo te invoco porque tú me respondes, Dios mío;\ninclina el oído y escucha mis palabras. R.\n\nGuárdame como a las niñas de tus ojos,\na la sombra de tus alas escóndeme.\nYo con mi apelación vengo a tu presencia,\ny al despertar me saciaré de tu semblante. R.",
+  "respuesta": "R. Al despertar me saciaré de tu semblante, Señor.",
+  "title": "Domingo de la 32ª semana de Tiempo Ordinario",
+  "orden": 532
 }

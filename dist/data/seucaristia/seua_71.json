@@ -1,15 +1,9 @@
 {
-  "id": "seua_71",
-  "title": "Domingo de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 79, 9 y 12. 13-14. 15-16. 19-20 (R.: Is 5,71)",
-  "salmo": "Salmo responsorial: Salmo 79, 9 y 12. 13-14. 15-16. 19-20 (R.: Is 5,71)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
   "orden": 527,
   "respuesta": "R. La viña del Señor es la casa de Israel.",
-  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 79, 9 y 12. 13-14. 15-16. 19-20 (R.: Is 5,71)",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
   "estrofas": [
     [
       "Sacaste una vid de Egipto,",
@@ -27,8 +21,8 @@
       "Dios de los ejércitos, vuélvete:",
       "mira desde el cielo, fíjate,",
       "ven a visitar tu viña,",
-      "la cepa que tu diestra plantó,",
-      "y que tú hiciste vigorosa. R."
+      "Cuida la cepa que tu diestra plantó,",
+      "y al hijo del hombre que tú has fortalecido. R."
     ],
     [
       "No nos alejaremos de ti:",
@@ -37,40 +31,45 @@
       "que brille tu rostro y nos salve. R."
     ]
   ],
-  "textoCompleto": "Sacaste una vid de Egipto,\nexpulsaste a los gentiles, y la trasplantaste.\nExtendió sus sarmientos hasta el mar,\ny sus brotes hasta el Gran Río. R.\n\n¿Por qué has derribado su cerca\npara que la saqueen los viandantes,\nla pisoteen los jabalíes\ny se la coman las alimañas? R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nNo nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre.\nSeñor, Dios de los ejércitos, restáuranos,\nque brille tu rostro y nos salve. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "title": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "celebracion": "Domingo de la 27ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 79, 9 y 12. 13-14. 15-16. 19-20 (R.: Is 5,71)",
+  "searchPool": "domingo de la 27 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 79 9 y 12 13 14 15 16 19 20 r is 5 71 r la vina del senor es la casa de israel sacaste una vid de egipto expulsaste a los gentiles y la trasplantaste extendio sus sarmientos hasta el mar y sus brotes hasta el gran rio r por que has derribado su cerca para que la saqueen los viandantes la pisoteen los jabalies y se la coman las alimanas r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina cuida la cepa que tu diestra planto y al hijo del hombre que tu has fortalecido r no nos alejaremos de ti danos vida para que invoquemos tu nombre senor dios de los ejercitos restauranos que brille tu rostro y nos salve r",
   "hasAudio": false,
-  "searchPool": "domingo de la 27 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 79 9 y 12 13 14 15 16 19 20 r is 5 71 r la vina del senor es la casa de israel sacaste una vid de egipto expulsaste a los gentiles y la trasplantaste extendio sus sarmientos hasta el mar y sus brotes hasta el gran rio r por que has derribado su cerca para que la saqueen los viandantes la pisoteen los jabalies y se la coman las alimanas r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina la cepa que tu diestra planto y que tu hiciste vigorosa r no nos alejaremos de ti danos vida para que invoquemos tu nombre senor dios de los ejercitos restauranos que brille tu rostro y nos salve r",
+  "id": "seua_71",
+  "respuestaOpcional": "",
+  "textoCompleto": "Sacaste una vid de Egipto,\nexpulsaste a los gentiles, y la trasplantaste.\nExtendió sus sarmientos hasta el mar,\ny sus brotes hasta el Gran Río. R.\n\n¿Por qué has derribado su cerca\npara que la saqueen los viandantes,\nla pisoteen los jabalíes\ny se la coman las alimañas? R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nCuida la cepa que tu diestra plantó,\ny al hijo del hombre que tú has fortalecido. R.\n\nNo nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre.\nSeñor, Dios de los ejércitos, restáuranos,\nque brille tu rostro y nos salve. R.",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "ciclo": "Ciclo A",
   "lizq": [
     {
-      "line": "R. La viña del Señor es la casa de Israel.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. La viña del Señor es la casa de Israel."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Sacaste una vid de Egipto,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sacaste una vid de Egipto,"
     },
     {
       "line": "expulsaste a los gentiles, y la trasplantaste.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Extendió sus sarmientos hasta el mar,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Extendió sus sarmientos hasta el mar,"
     },
     {
       "line": "y sus brotes hasta el Gran Río. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "¿Por qué has derribado su cerca",
@@ -85,40 +84,40 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y se la coman las alimañas? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y se la coman las alimañas? R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dios de los ejércitos, vuélvete:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dios de los ejércitos, vuélvete:"
     },
     {
       "line": "mira desde el cielo, fíjate,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ven a visitar tu viña,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ven a visitar tu viña,"
     },
     {
-      "line": "la cepa que tu diestra plantó,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Cuida la cepa que tu diestra plantó,"
     },
     {
-      "line": "y que tú hiciste vigorosa. R.",
+      "line": "y al hijo del hombre que tú has fortalecido. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "No nos alejaremos de ti:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No nos alejaremos de ti:"
     },
     {
       "line": "danos vida, para que invoquemos tu nombre.",
@@ -132,5 +131,6 @@
       "line": "que brille tu rostro y nos salve. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Domingo"
 }

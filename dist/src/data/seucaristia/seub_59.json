@@ -1,15 +1,8 @@
 {
-  "id": "seub_59",
-  "title": "Domingo de la 17ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 17ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 144, 10-11. 15-16. 17-18 (R.: cf. 16)",
-  "salmo": "Salmo responsorial: Salmo 144, 10-11. 15-16. 17-18 (R.: cf. 16)",
-  "ciclo": "Ciclo B",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 517,
-  "respuesta": "R. Abres tú la mano, Señor, y nos sacias.",
-  "respuestaOpcional": "",
+  "celebracion": "Domingo de la 17ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 144, 10-11. 15-16. 17-18 (R.: cf. 16)",
   "estrofas": [
     [
       "Que todas tus criaturas te den gracias, Señor,",
@@ -30,32 +23,36 @@
       "de los que lo invocan sinceramente. R."
     ]
   ],
-  "textoCompleto": "Que todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nLos ojos de todos te están aguardando,\ntú les das la comida a su tiempo;\nabres tú la mano,\ny sacias de favores a todo viviente. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
+  "ciclo": "Ciclo B",
+  "dia": "Domingo",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuesta": "R. Abres tú la mano, Señor, y nos sacias.",
   "searchPool": "domingo de la 17 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 144 10 11 15 16 17 18 r cf 16 r abres tu la mano senor y nos sacias que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r los ojos de todos te estan aguardando tu les das la comida a su tiempo abres tu la mano y sacias de favores a todo viviente r el senor es justo en todos sus caminos es bondadoso en todas sus acciones cerca esta el senor de los que lo invocan de los que lo invocan sinceramente r",
+  "id": "seub_59",
+  "textoCompleto": "Que todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nLos ojos de todos te están aguardando,\ntú les das la comida a su tiempo;\nabres tú la mano,\ny sacias de favores a todo viviente. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 144, 10-11. 15-16. 17-18 (R.: cf. 16)",
   "lizq": [
     {
       "line": "R. Abres tú la mano, Señor, y nos sacias.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Que todas tus criaturas te den gracias, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que todas tus criaturas te den gracias, Señor,"
     },
     {
-      "line": "que te bendigan tus fieles;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que te bendigan tus fieles;"
     },
     {
-      "line": "que proclamen la gloria de tu reinado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que proclamen la gloria de tu reinado,"
     },
     {
       "line": "que hablen de tus hazañas. R.",
@@ -66,12 +63,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los ojos de todos te están aguardando,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los ojos de todos te están aguardando,"
     },
     {
-      "line": "tú les das la comida a su tiempo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tú les das la comida a su tiempo;"
     },
     {
       "line": "abres tú la mano,",
@@ -86,12 +83,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es justo en todos sus caminos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es justo en todos sus caminos,"
     },
     {
-      "line": "es bondadoso en todas sus acciones;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "es bondadoso en todas sus acciones;"
     },
     {
       "line": "cerca está el Señor de los que lo invocan,",
@@ -101,5 +98,8 @@
       "line": "de los que lo invocan sinceramente. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "title": "Domingo de la 17ª semana de Tiempo Ordinario",
+  "orden": 517
 }

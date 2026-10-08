@@ -1,22 +1,7 @@
 {
-  "id": "seuf_091",
   "title": "Viernes de la segunda semana de Pascua",
-  "celebracion": "Viernes de la segunda semana de Pascua",
-  "subtitle": "Salmo 26, 1. 4. 13-14 (R.: cf. 4ab)",
-  "salmo": "Salmo 26, 1. 4. 13-14 (R.: cf. 4ab)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
+  "searchPool": "viernes de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 26 1 4 13 14 r cf 4ab semana 2 semana ii viernes feria r una cosa pido al senor habitar en su casa r aleluya el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
   "tiempo": "Pascua",
-  "dia": "Viernes",
-  "orden": 425,
-  "respuesta": "R. Una cosa pido al Señor: habitar en su casa.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "El Señor es mi luz y mi salvación,",
@@ -39,56 +24,59 @@
       "ten ánimo, espera en el Señor. R."
     ]
   ],
-  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
+  "ciclo": "Ciclo A, B y C",
+  "salmo": "Salmo 26, 1. 4. 13-14 (R.: cf. 4ab)",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "orden": 425,
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
+  "dia": "Viernes",
   "hasAudio": false,
-  "searchPool": "viernes de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 26 1 4 13 14 r cf 4ab semana 2 semana ii viernes feria r una cosa pido al senor habitar en su casa r aleluya el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
   "lizq": [
     {
-      "line": "R. Una cosa pido al Señor:",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Una cosa pido al Señor:"
     },
     {
       "line": "habitar en su casa.",
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es mi luz y mi salvación,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "¿a quién temeré?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿a quién temeré?"
     },
     {
       "line": "El Señor es la defensa de mi vida,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "¿quién me hará temblar? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "¿quién me hará temblar? R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Una cosa pido al Señor,",
@@ -99,8 +87,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "habitar en la casa del Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "habitar en la casa del Señor"
     },
     {
       "line": "por los días de mi vida;",
@@ -115,8 +103,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Espero gozar de la dicha del Señor",
@@ -134,5 +122,17 @@
       "line": "ten ánimo, espera en el Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "id": "seuf_091",
+  "respuesta": "R. Una cosa pido al Señor: habitar en su casa.",
+  "respuestaOpcional": "R. Aleluya.",
+  "subtitle": "Salmo 26, 1. 4. 13-14 (R.: cf. 4ab)",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "celebracion": "Viernes de la segunda semana de Pascua"
 }

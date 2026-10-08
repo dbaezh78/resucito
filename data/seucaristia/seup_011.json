@@ -1,15 +1,14 @@
 {
-  "id": "seup_011",
-  "title": "Viernes de la 2ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 2ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 56, 2. 3-4. 6 y 11 (R.: 2a)",
   "salmo": "Salmo responsorial: Salmo 56, 2. 3-4. 6 y 11 (R.: 2a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5025,
   "respuesta": "R. Misericordia, Dios mío Misericordia.",
+  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 5025,
+  "stage": "Liturgia",
   "respuestaOpcional": "",
+  "id": "seup_011",
+  "textoCompleto": "Misericordia, Dios mío Misericordia,\nque mi alma se refugia en ti;\nMe refugio a la sombra de tus alas,\nmientras pasa la calamidad. R.\n\nInvoco al Dios altísimo,\nAl Dios que hace tanto por mí.\nDesde el cielo me enviará la salvación,\nconfundirá a los que ansían matarme,\nenviará su gracia y su lealtad. R.\n\nElévate sobre el cielo, Dios mío,\ny llene la tierra tu gloria.\nPor tu bondad que es más grande que los cielos,\npor tu fidelidad que alcanza las nubes. R.",
+  "title": "Viernes de la 2ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Misericordia, Dios mío Misericordia,",
@@ -31,12 +30,9 @@
       "por tu fidelidad que alcanza las nubes. R."
     ]
   ],
-  "textoCompleto": "Misericordia, Dios mío Misericordia,\nque mi alma se refugia en ti;\nMe refugio a la sombra de tus alas,\nmientras pasa la calamidad. R.\n\nInvoco al Dios altísimo,\nAl Dios que hace tanto por mí.\nDesde el cielo me enviará la salvación,\nconfundirá a los que ansían matarme,\nenviará su gracia y su lealtad. R.\n\nElévate sobre el cielo, Dios mío,\ny llene la tierra tu gloria.\nPor tu bondad que es más grande que los cielos,\npor tu fidelidad que alcanza las nubes. R.",
+  "dia": "Viernes",
+  "subtitle": "Salmo responsorial: Salmo 56, 2. 3-4. 6 y 11 (R.: 2a)",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 2 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 56 2 3 4 6 y 11 r 2a semana 2 semana ii viernes 2 ii r misericordia dios mio misericordia misericordia dios mio misericordia que mi alma se refugia en ti me refugio a la sombra de tus alas mientras pasa la calamidad r invoco al dios altisimo al dios que hace tanto por mi desde el cielo me enviara la salvacion confundira a los que ansian matarme enviara su gracia y su lealtad r elevate sobre el cielo dios mio y llene la tierra tu gloria por tu bondad que es mas grande que los cielos por tu fidelidad que alcanza las nubes r",
   "lizq": [
     {
       "line": "R. Misericordia, Dios mío Misericordia.",
@@ -51,16 +47,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que mi alma se refugia en ti;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que mi alma se refugia en ti;"
     },
     {
       "line": "Me refugio a la sombra de tus alas,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mientras pasa la calamidad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "mientras pasa la calamidad. R."
     },
     {
       "line": "",
@@ -71,20 +67,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "Al Dios que hace tanto por mí.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Al Dios que hace tanto por mí."
     },
     {
-      "line": "Desde el cielo me enviará la salvación,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Desde el cielo me enviará la salvación,"
     },
     {
       "line": "confundirá a los que ansían matarme,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "enviará su gracia y su lealtad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "enviará su gracia y su lealtad. R."
     },
     {
       "line": "",
@@ -99,12 +95,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Por tu bondad que es más grande que los cielos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Por tu bondad que es más grande que los cielos,"
     },
     {
       "line": "por tu fidelidad que alcanza las nubes. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Viernes de la 2ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "searchPool": "viernes de la 2 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 56 2 3 4 6 y 11 r 2a semana 2 semana ii viernes 2 ii r misericordia dios mio misericordia misericordia dios mio misericordia que mi alma se refugia en ti me refugio a la sombra de tus alas mientras pasa la calamidad r invoco al dios altisimo al dios que hace tanto por mi desde el cielo me enviara la salvacion confundira a los que ansian matarme enviara su gracia y su lealtad r elevate sobre el cielo dios mio y llene la tierra tu gloria por tu bondad que es mas grande que los cielos por tu fidelidad que alcanza las nubes r",
+  "tiempo": "Tiempo Ordinario"
 }

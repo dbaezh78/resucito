@@ -1,15 +1,7 @@
 {
-  "id": "seup_159",
-  "title": "Miércoles de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
-  "salmo": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
   "orden": 5273,
-  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
-  "respuestaOpcional": "",
+  "title": "Miércoles de la 27ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
   "estrofas": [
     [
       "Alabad al Señor, todas las naciones,",
@@ -20,16 +12,15 @@
       "su fidelidad dura por siempre. R."
     ]
   ],
+  "subtitle": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
+  "celebracion": "Miércoles de la 27ª semana de Tiempo Ordinario",
   "textoCompleto": "Alabad al Señor, todas las naciones,\naclamadlo, todos los pueblos. R.\n\nFirme es su misericordia con nosotros,\nsu fidelidad dura por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par",
   "hasAudio": false,
-  "searchPool": "miercoles de la 27 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 116 1 2 r mc 16 15 semana 27 semana xxvii miercoles 27 xxvii r id al mundo entero y proclamad el evangelio aleluya alabad al senor todas las naciones aclamadlo todos los pueblos r firme es su misericordia con nosotros su fidelidad dura por siempre r",
   "lizq": [
     {
-      "line": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Id al mundo entero y proclamad el Evangelio. Aleluya."
     },
     {
       "line": "",
@@ -48,12 +39,21 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Firme es su misericordia con nosotros,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Firme es su misericordia con nosotros,"
     },
     {
-      "line": "su fidelidad dura por siempre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su fidelidad dura por siempre. R."
     }
-  ]
+  ],
+  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
+  "dia": "Miércoles",
+  "stage": "Liturgia",
+  "searchPool": "miercoles de la 27 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 116 1 2 r mc 16 15 semana 27 semana xxvii miercoles 27 xxvii r id al mundo entero y proclamad el evangelio aleluya alabad al senor todas las naciones aclamadlo todos los pueblos r firme es su misericordia con nosotros su fidelidad dura por siempre r",
+  "id": "seup_159",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia"
 }

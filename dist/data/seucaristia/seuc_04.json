@@ -1,41 +1,6 @@
 {
-  "id": "seuc_04",
   "title": "Domingo 4º de Adviento",
-  "celebracion": "Domingo 4º de Adviento",
-  "subtitle": "Salmo responsorial: Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
-  "salmo": "Salmo responsorial: Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
-  "ciclo": "Ciclo C",
   "tiempo": "Adviento",
-  "dia": "Domingo",
-  "orden": 104,
-  "respuesta": "R. Oh Dios, restáuranos, que brille tu rostro y nos salve.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Pastor de Israel, escucha,",
-      "tú que te sientas sobre querubines, resplandece.",
-      "Despierta tu poder y ven a salvarnos. R."
-    ],
-    [
-      "Dios de los ejércitos, vuélvete:",
-      "mira desde el cielo, fíjate,",
-      "ven a visitar tu viña,",
-      "la cepa que tu diestra plantó,",
-      "y que tú hiciste vigorosa. R."
-    ],
-    [
-      "Que tu mano proteja a tu escogido,",
-      "al hombre que tú fortaleciste.",
-      "No nos alejaremos de ti:",
-      "danos vida, para que invoquemos tu nombre. R."
-    ]
-  ],
-  "textoCompleto": "Pastor de Israel, escucha,\ntú que te sientas sobre querubines, resplandece.\nDespierta tu poder y ven a salvarnos. R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nQue tu mano proteja a tu escogido,\nal hombre que tú fortaleciste.\nNo nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo 4 de adviento ciclo c adviento domingo salmo responsorial salmo 79 2ac y 3b 15 16 18 19 r 4 r oh dios restauranos que brille tu rostro y nos salve pastor de israel escucha tu que te sientas sobre querubines resplandece despierta tu poder y ven a salvarnos r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina la cepa que tu diestra planto y que tu hiciste vigorosa r que tu mano proteja a tu escogido al hombre que tu fortaleciste no nos alejaremos de ti danos vida para que invoquemos tu nombre r",
   "lizq": [
     {
       "line": "R. Oh Dios, restáuranos,",
@@ -46,8 +11,8 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Pastor de Israel, escucha,",
@@ -62,8 +27,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Dios de los ejércitos, vuélvete:",
@@ -90,20 +55,55 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Que tu mano proteja a tu escogido,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que tu mano proteja a tu escogido,"
     },
     {
-      "line": "al hombre que tú fortaleciste.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "al hombre que tú fortaleciste."
     },
     {
       "line": "No nos alejaremos de ti:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "danos vida, para que invoquemos tu nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "danos vida, para que invoquemos tu nombre. R."
     }
-  ]
+  ],
+  "id": "seuc_04",
+  "orden": 104,
+  "respuesta": "R. Oh Dios, restáuranos, que brille tu rostro y nos salve.",
+  "searchPool": "domingo 4 de adviento ciclo c adviento domingo salmo responsorial salmo 79 2ac y 3b 15 16 18 19 r 4 r oh dios restauranos que brille tu rostro y nos salve pastor de israel escucha tu que te sientas sobre querubines resplandece despierta tu poder y ven a salvarnos r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina la cepa que tu diestra planto y que tu hiciste vigorosa r que tu mano proteja a tu escogido al hombre que tu fortaleciste no nos alejaremos de ti danos vida para que invoquemos tu nombre r",
+  "salmo": "Salmo responsorial: Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
+  "textoCompleto": "Pastor de Israel, escucha,\ntú que te sientas sobre querubines, resplandece.\nDespierta tu poder y ven a salvarnos. R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nQue tu mano proteja a tu escogido,\nal hombre que tú fortaleciste.\nNo nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre. R.",
+  "subtitle": "Salmo responsorial: Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "estrofas": [
+    [
+      "Pastor de Israel, escucha,",
+      "tú que te sientas sobre querubines, resplandece.",
+      "Despierta tu poder y ven a salvarnos. R."
+    ],
+    [
+      "Dios de los ejércitos, vuélvete:",
+      "mira desde el cielo, fíjate,",
+      "ven a visitar tu viña,",
+      "la cepa que tu diestra plantó,",
+      "y que tú hiciste vigorosa. R."
+    ],
+    [
+      "Que tu mano proteja a tu escogido,",
+      "al hombre que tú fortaleciste.",
+      "No nos alejaremos de ti:",
+      "danos vida, para que invoquemos tu nombre. R."
+    ]
+  ],
+  "celebracion": "Domingo 4º de Adviento",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "hasAudio": false,
+  "dia": "Domingo",
+  "ciclo": "Ciclo C"
 }

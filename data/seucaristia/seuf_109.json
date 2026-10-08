@@ -1,10 +1,15 @@
 {
+  "ciclo": "Ciclo A, B y C",
   "id": "seuf_109",
+  "salmo": "Salmo 56, 8-9. 10-12 (R.: 10a)",
+  "stage": "Liturgia",
+  "textoCompleto": "Mi corazón está firme, Dios mío,\nmi corazón está firme.\nVoy a cantar y a tocar:\ndespierta, gloria mía;\ndespertad, cítara y arpa;\ndespertaré a la aurora. R.\n\nTe daré gracias ante los pueblos, Señor;\ntocaré para ti ante las naciones:\npor tu bondad, que es más grande que los cielos;\npor tu fidelidad, que alcanza a las nubes.\nElévate sobre el cielo, Dios mío,\ny llene la tierra tu gloria. R.",
+  "orden": 455,
+  "subtitle": "Salmo 56, 8-9. 10-12 (R.: 10a)",
   "title": "Viernes de la quinta semana de Pascua",
   "celebracion": "Viernes de la quinta semana de Pascua",
-  "subtitle": "Salmo 56, 8-9. 10-12 (R.: 10a)",
-  "salmo": "Salmo 56, 8-9. 10-12 (R.: 10a)",
-  "ciclo": "Ciclo A, B y C",
+  "hasAudio": false,
+  "respuesta": "R. Te daré gracias ante los pueblos, Señor.",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,35 +17,9 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Viernes",
-  "orden": 455,
-  "respuesta": "R. Te daré gracias ante los pueblos, Señor.",
   "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Mi corazón está firme, Dios mío,",
-      "mi corazón está firme.",
-      "Voy a cantar y a tocar:",
-      "despierta, gloria mía;",
-      "despertad, cítara y arpa;",
-      "despertaré a la aurora. R."
-    ],
-    [
-      "Te daré gracias ante los pueblos, Señor;",
-      "tocaré para ti ante las naciones:",
-      "por tu bondad, que es más grande que los cielos;",
-      "por tu fidelidad, que alcanza a las nubes.",
-      "Elévate sobre el cielo, Dios mío,",
-      "y llene la tierra tu gloria. R."
-    ]
-  ],
-  "textoCompleto": "Mi corazón está firme, Dios mío,\nmi corazón está firme.\nVoy a cantar y a tocar:\ndespierta, gloria mía;\ndespertad, cítara y arpa;\ndespertaré a la aurora. R.\n\nTe daré gracias ante los pueblos, Señor;\ntocaré para ti ante las naciones:\npor tu bondad, que es más grande que los cielos;\npor tu fidelidad, que alcanza a las nubes.\nElévate sobre el cielo, Dios mío,\ny llene la tierra tu gloria. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la quinta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 56 8 9 10 12 r 10a semana 5 semana v viernes feria r te dare gracias ante los pueblos senor r aleluya mi corazon esta firme dios mio mi corazon esta firme voy a cantar y a tocar despierta gloria mia despertad citara y arpa despertare a la aurora r te dare gracias ante los pueblos senor tocare para ti ante las naciones por tu bondad que es mas grande que los cielos por tu fidelidad que alcanza a las nubes elevate sobre el cielo dios mio y llene la tierra tu gloria r",
+  "dia": "Viernes",
   "lizq": [
     {
       "line": "R. Te daré gracias ante los pueblos, Señor.",
@@ -51,8 +30,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
@@ -63,16 +42,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Mi corazón está firme, Dios mío,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Mi corazón está firme, Dios mío,"
     },
     {
       "line": "mi corazón está firme.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Voy a cantar y a tocar:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Voy a cantar y a tocar:"
     },
     {
       "line": "despierta, gloria mía;",
@@ -91,8 +70,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Te daré gracias ante los pueblos, Señor;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Te daré gracias ante los pueblos, Señor;"
     },
     {
       "line": "tocaré para ti ante las naciones:",
@@ -114,5 +93,26 @@
       "line": "y llene la tierra tu gloria. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Pascua",
+  "estrofas": [
+    [
+      "Mi corazón está firme, Dios mío,",
+      "mi corazón está firme.",
+      "Voy a cantar y a tocar:",
+      "despierta, gloria mía;",
+      "despertad, cítara y arpa;",
+      "despertaré a la aurora. R."
+    ],
+    [
+      "Te daré gracias ante los pueblos, Señor;",
+      "tocaré para ti ante las naciones:",
+      "por tu bondad, que es más grande que los cielos;",
+      "por tu fidelidad, que alcanza a las nubes.",
+      "Elévate sobre el cielo, Dios mío,",
+      "y llene la tierra tu gloria. R."
+    ]
+  ],
+  "searchPool": "viernes de la quinta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua viernes salmo 56 8 9 10 12 r 10a semana 5 semana v viernes feria r te dare gracias ante los pueblos senor r aleluya mi corazon esta firme dios mio mi corazon esta firme voy a cantar y a tocar despierta gloria mia despertad citara y arpa despertare a la aurora r te dare gracias ante los pueblos senor tocare para ti ante las naciones por tu bondad que es mas grande que los cielos por tu fidelidad que alcanza a las nubes elevate sobre el cielo dios mio y llene la tierra tu gloria r"
 }

@@ -1,47 +1,17 @@
 {
-  "id": "seui_091",
-  "title": "Lunes de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Éxodo 15, 1-2. 3-4. 5-6 (R.: 1a)",
-  "salmo": "Salmo responsorial: Éxodo 15, 1-2. 3-4. 5-6 (R.: 1a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5161,
   "respuesta": "R. Cantaré al Señor, sublime es su victoria.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Cantaré al Señor, sublime es su victoria,",
-      "caballos y carros ha arrojado en el mar.",
-      "Mi fuerza y mi poder es el Señor,",
-      "él fue mi salvación.",
-      "Él es mi Dios: yo lo alabaré;",
-      "el Dios de mis padres: yo lo ensalzaré. R."
-    ],
-    [
-      "El Señor es un guerrero,",
-      "su nombre es «Yahvé».",
-      "Los carros del Faraón los lanzó al mar,",
-      "ahogó en el mar Rojo a sus mejores capitanes. R."
-    ],
-    [
-      "Las olas los cubrieron,",
-      "bajaron hasta el fondo como piedras.",
-      "Tu diestra, Señor, es fuerte y terrible,",
-      "tu diestra, Señor, tritura al enemigo. R."
-    ]
-  ],
-  "textoCompleto": "Cantaré al Señor, sublime es su victoria,\ncaballos y carros ha arrojado en el mar.\nMi fuerza y mi poder es el Señor,\nél fue mi salvación.\nÉl es mi Dios: yo lo alabaré;\nel Dios de mis padres: yo lo ensalzaré. R.\n\nEl Señor es un guerrero,\nsu nombre es «Yahvé».\nLos carros del Faraón los lanzó al mar,\nahogó en el mar Rojo a sus mejores capitanes. R.\n\nLas olas los cubrieron,\nbajaron hasta el fondo como piedras.\nTu diestra, Señor, es fuerte y terrible,\ntu diestra, Señor, tritura al enemigo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "dia": "Lunes",
   "hasAudio": false,
   "searchPool": "lunes de la 16 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial exodo 15 1 2 3 4 5 6 r 1a semana 16 semana xvi lunes 16 xvi r cantare al senor sublime es su victoria cantare al senor sublime es su victoria caballos y carros ha arrojado en el mar mi fuerza y mi poder es el senor el fue mi salvacion el es mi dios yo lo alabare el dios de mis padres yo lo ensalzare r el senor es un guerrero su nombre es yahve los carros del faraon los lanzo al mar ahogo en el mar rojo a sus mejores capitanes r las olas los cubrieron bajaron hasta el fondo como piedras tu diestra senor es fuerte y terrible tu diestra senor tritura al enemigo r",
+  "subtitle": "Salmo responsorial: Éxodo 15, 1-2. 3-4. 5-6 (R.: 1a)",
+  "textoCompleto": "Cantaré al Señor, sublime es su victoria,\ncaballos y carros ha arrojado en el mar.\nMi fuerza y mi poder es el Señor,\nél fue mi salvación.\nÉl es mi Dios: yo lo alabaré;\nel Dios de mis padres: yo lo ensalzaré. R.\n\nEl Señor es un guerrero,\nsu nombre es «Yahvé».\nLos carros del Faraón los lanzó al mar,\nahogó en el mar Rojo a sus mejores capitanes. R.\n\nLas olas los cubrieron,\nbajaron hasta el fondo como piedras.\nTu diestra, Señor, es fuerte y terrible,\ntu diestra, Señor, tritura al enemigo. R.",
+  "tiempo": "Tiempo Ordinario",
+  "celebracion": "Lunes de la 16ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
-      "line": "R. Cantaré al Señor, sublime es su victoria.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Cantaré al Señor, sublime es su victoria."
     },
     {
       "line": "",
@@ -56,16 +26,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Mi fuerza y mi poder es el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Mi fuerza y mi poder es el Señor,"
     },
     {
       "line": "él fue mi salvación.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Él es mi Dios: yo lo alabaré;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Él es mi Dios: yo lo alabaré;"
     },
     {
       "line": "el Dios de mis padres: yo lo ensalzaré. R.",
@@ -76,16 +46,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es un guerrero,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es un guerrero,"
     },
     {
       "line": "su nombre es «Yahvé».",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Los carros del Faraón los lanzó al mar,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Los carros del Faraón los lanzó al mar,"
     },
     {
       "line": "ahogó en el mar Rojo a sus mejores capitanes. R.",
@@ -111,5 +81,35 @@
       "line": "tu diestra, Señor, tritura al enemigo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "id": "seui_091",
+  "title": "Lunes de la 16ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Cantaré al Señor, sublime es su victoria,",
+      "caballos y carros ha arrojado en el mar.",
+      "Mi fuerza y mi poder es el Señor,",
+      "él fue mi salvación.",
+      "Él es mi Dios: yo lo alabaré;",
+      "el Dios de mis padres: yo lo ensalzaré. R."
+    ],
+    [
+      "El Señor es un guerrero,",
+      "su nombre es «Yahvé».",
+      "Los carros del Faraón los lanzó al mar,",
+      "ahogó en el mar Rojo a sus mejores capitanes. R."
+    ],
+    [
+      "Las olas los cubrieron,",
+      "bajaron hasta el fondo como piedras.",
+      "Tu diestra, Señor, es fuerte y terrible,",
+      "tu diestra, Señor, tritura al enemigo. R."
+    ]
+  ],
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 5161,
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Éxodo 15, 1-2. 3-4. 5-6 (R.: 1a)"
 }

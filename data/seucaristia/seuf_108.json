@@ -1,10 +1,83 @@
 {
-  "id": "seuf_108",
-  "title": "Jueves de la quinta semana de Pascua",
-  "celebracion": "Jueves de la quinta semana de Pascua",
-  "subtitle": "Salmo 95, 1-2a. 2b-3. 10 (R.: cf. 3)",
   "salmo": "Salmo 95, 1-2a. 2b-3. 10 (R.: cf. 3)",
   "ciclo": "Ciclo A, B y C",
+  "orden": 454,
+  "subtitle": "Salmo 95, 1-2a. 2b-3. 10 (R.: cf. 3)",
+  "respuestaOpcional": "R. Aleluya.",
+  "stage": "Liturgia",
+  "title": "Jueves de la quinta semana de Pascua",
+  "tiempo": "Pascua",
+  "dia": "Jueves",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "lizq": [
+    {
+      "line": "R. Contad las maravillas del Señor a todas las naciones.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cantad al Señor, toda la tierra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "cantad al Señor, bendecid su nombre. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Proclamad día tras día su victoria."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Contad a los pueblos su gloria,"
+    },
+    {
+      "line": "sus maravillas a todas las naciones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Decid a los pueblos: «El Señor es rey,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él afianzó el orbe, y no se moverá;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "él gobierna a los pueblos rectamente». R."
+    }
+  ],
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre. R.\n\nProclamad día tras día su victoria.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nDecid a los pueblos: «El Señor es rey,\nél afianzó el orbe, y no se moverá;\nél gobierna a los pueblos rectamente». R.",
+  "celebracion": "Jueves de la quinta semana de Pascua",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +85,8 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Jueves",
-  "orden": 454,
+  "catCanto": "Salmo Eucaristía",
   "respuesta": "R. Contad las maravillas del Señor a todas las naciones.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -34,76 +104,6 @@
       "él gobierna a los pueblos rectamente». R."
     ]
   ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre. R.\n\nProclamad día tras día su victoria.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nDecid a los pueblos: «El Señor es rey,\nél afianzó el orbe, y no se moverá;\nél gobierna a los pueblos rectamente». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la quinta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 95 1 2a 2b 3 10 r cf 3 semana 5 semana v jueves feria r contad las maravillas del senor a todas las naciones r aleluya cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre r proclamad dia tras dia su victoria contad a los pueblos su gloria sus maravillas a todas las naciones r decid a los pueblos el senor es rey el afianzo el orbe y no se movera el gobierna a los pueblos rectamente r",
-  "lizq": [
-    {
-      "line": "R. Contad las maravillas del Señor a todas las naciones.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Cantad al Señor un cántico nuevo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "cantad al Señor, toda la tierra;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "cantad al Señor, bendecid su nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Proclamad día tras día su victoria.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Contad a los pueblos su gloria,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sus maravillas a todas las naciones. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Decid a los pueblos: «El Señor es rey,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "él afianzó el orbe, y no se moverá;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él gobierna a los pueblos rectamente». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "id": "seuf_108",
+  "searchPool": "jueves de la quinta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 95 1 2a 2b 3 10 r cf 3 semana 5 semana v jueves feria r contad las maravillas del senor a todas las naciones r aleluya cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre r proclamad dia tras dia su victoria contad a los pueblos su gloria sus maravillas a todas las naciones r decid a los pueblos el senor es rey el afianzo el orbe y no se movera el gobierna a los pueblos rectamente r"
 }

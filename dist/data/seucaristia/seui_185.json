@@ -1,49 +1,14 @@
 {
-  "id": "seui_185",
-  "title": "Viernes de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 31ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: cf. 2b)",
-  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: cf. 2b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5315,
-  "respuesta": "R. El Señor revela a las naciones su victoria.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Cantad al Señor un cántico nuevo,",
-      "porque ha hecho maravillas:",
-      "su diestra le ha dado la victoria,",
-      "su santo brazo. R."
-    ],
-    [
-      "El Señor da a conocer su victoria,",
-      "revela a las naciones su justicia:",
-      "se acordó de su misericordia y su fidelidad",
-      "en favor de la casa de Israel. R."
-    ],
-    [
-      "Los confines de la tierra han contemplado",
-      "la victoria de nuestro Dios.",
-      "Aclamad al Señor, tierra entera;",
-      "gritad, vitoread, tocad. R."
-    ]
-  ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclamad al Señor, tierra entera;\ngritad, vitoread, tocad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "viernes de la 31 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 97 1 2 3ab 3cd 4 r cf 2b semana 31 semana xxxi viernes 31 xxxi r el senor revela a las naciones su victoria cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclamad al senor tierra entera gritad vitoread tocad r",
+  "celebracion": "Viernes de la 31ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. El Señor revela a las naciones su victoria.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cantad al Señor un cántico nuevo,",
@@ -78,16 +43,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en favor de la casa de Israel. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en favor de la casa de Israel. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Los confines de la tierra han contemplado",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los confines de la tierra han contemplado"
     },
     {
       "line": "la victoria de nuestro Dios.",
@@ -98,8 +63,43 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "gritad, vitoread, tocad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "gritad, vitoread, tocad. R."
     }
-  ]
+  ],
+  "dia": "Viernes",
+  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: cf. 2b)",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: cf. 2b)",
+  "respuesta": "R. El Señor revela a las naciones su victoria.",
+  "ciclo": "Año Impar",
+  "estrofas": [
+    [
+      "Cantad al Señor un cántico nuevo,",
+      "porque ha hecho maravillas:",
+      "su diestra le ha dado la victoria,",
+      "su santo brazo. R."
+    ],
+    [
+      "El Señor da a conocer su victoria,",
+      "revela a las naciones su justicia:",
+      "se acordó de su misericordia y su fidelidad",
+      "en favor de la casa de Israel. R."
+    ],
+    [
+      "Los confines de la tierra han contemplado",
+      "la victoria de nuestro Dios.",
+      "Aclamad al Señor, tierra entera;",
+      "gritad, vitoread, tocad. R."
+    ]
+  ],
+  "orden": 5315,
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclamad al Señor, tierra entera;\ngritad, vitoread, tocad. R.",
+  "id": "seui_185",
+  "stage": "Liturgia",
+  "title": "Viernes de la 31ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "viernes de la 31 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 97 1 2 3ab 3cd 4 r cf 2b semana 31 semana xxxi viernes 31 xxxi r el senor revela a las naciones su victoria cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclamad al senor tierra entera gritad vitoread tocad r"
 }

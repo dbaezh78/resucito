@@ -1,10 +1,7 @@
 {
-  "id": "seuf_120",
-  "title": "Jueves de la séptima semana de Pascua",
-  "celebracion": "Jueves de la séptima semana de Pascua",
-  "subtitle": "Salmo 15, 1-2 y 5. 7-8. 9-10. 11 (R.: 1)",
-  "salmo": "Salmo 15, 1-2 y 5. 7-8. 9-10. 11 (R.: 1)",
-  "ciclo": "Ciclo A, B y C",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "jueves de la septima semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 15 1 2 y 5 7 8 9 10 11 r 1 semana 7 semana vii jueves feria r protegeme dios mio que me refugio en ti r aleluya protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r por eso se me alegra el corazon se gozan mis entranas y mi carne descansa serena porque no me entregaras a la muerte ni dejaras a tu fiel conocer la corrupcion r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
+  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +9,8 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
+  "sourceBook": "eucaristia",
   "dia": "Jueves",
-  "orden": 474,
-  "respuesta": "R. Protégeme, Dios mío, que me refugio en ti.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Protégeme, Dios mío, que me refugio en ti;",
@@ -43,12 +37,9 @@
       "de alegría perpetua a tu derecha. R."
     ]
   ],
-  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la septima semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 15 1 2 y 5 7 8 9 10 11 r 1 semana 7 semana vii jueves feria r protegeme dios mio que me refugio en ti r aleluya protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r por eso se me alegra el corazon se gozan mis entranas y mi carne descansa serena porque no me entregaras a la muerte ni dejaras a tu fiel conocer la corrupcion r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
+  "subtitle": "Salmo 15, 1-2 y 5. 7-8. 9-10. 11 (R.: 1)",
+  "tiempo": "Pascua",
+  "title": "Jueves de la séptima semana de Pascua",
   "lizq": [
     {
       "line": "R. Protégeme, Dios mío, que me refugio en ti.",
@@ -59,8 +50,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
@@ -83,8 +74,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mi suerte está en tu mano. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "mi suerte está en tu mano. R."
     },
     {
       "line": "",
@@ -107,8 +98,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Por eso se me alegra el corazón,",
@@ -123,8 +114,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Porque no me entregarás a la muerte,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Porque no me entregarás a la muerte,"
     },
     {
       "line": "ni dejarás a tu fiel conocer la corrupción. R.",
@@ -146,5 +137,14 @@
       "line": "de alegría perpetua a tu derecha. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo 15, 1-2 y 5. 7-8. 9-10. 11 (R.: 1)",
+  "hasAudio": false,
+  "ciclo": "Ciclo A, B y C",
+  "orden": 474,
+  "respuesta": "R. Protégeme, Dios mío, que me refugio en ti.",
+  "stage": "Liturgia",
+  "celebracion": "Jueves de la séptima semana de Pascua",
+  "respuestaOpcional": "R. Aleluya.",
+  "id": "seuf_120"
 }

@@ -1,15 +1,77 @@
 {
-  "id": "seub_48",
-  "title": "Domingo de la 6ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 6ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 31, 1-2. 5. 11 (R.: cf. 7)",
-  "salmo": "Salmo responsorial: Salmo 31, 1-2. 5. 11 (R.: cf. 7)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 506,
-  "respuesta": "R. Tú eres mi refugio, me rodeas de cantos de liberación.",
   "respuestaOpcional": "",
+  "title": "Domingo de la 6ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "lizq": [
+    {
+      "line": "R. Tú eres mi refugio,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "me rodeas de cantos de liberación."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Dichoso el que está absuelto de su culpa,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "a quien le han sepultado su pecado;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "dichoso el hombre a quien el Señor",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "no le apunta el delito. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Había pecado, lo reconocí,"
+    },
+    {
+      "line": "no te encubrí mi delito;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "propuse: «Confesaré al Señor mi culpa»"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y tú perdonaste mi culpa y mi pecado. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alegraos, justos, y gozad con el Señor;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "aclamadlo, los de corazón sincero. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "orden": 506,
+  "id": "seub_48",
+  "respuesta": "R. Tú eres mi refugio, me rodeas de cantos de liberación.",
+  "salmo": "Salmo responsorial: Salmo 31, 1-2. 5. 11 (R.: cf. 7)",
+  "dia": "Domingo",
+  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»\ny tú perdonaste mi culpa y mi pecado. R.\n\nAlegraos, justos, y gozad con el Señor;\naclamadlo, los de corazón sincero. R.",
+  "subtitle": "Salmo responsorial: Salmo 31, 1-2. 5. 11 (R.: cf. 7)",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Dichoso el que está absuelto de su culpa,",
@@ -28,72 +90,10 @@
       "aclamadlo, los de corazón sincero. R."
     ]
   ],
-  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»\ny tú perdonaste mi culpa y mi pecado. R.\n\nAlegraos, justos, y gozad con el Señor;\naclamadlo, los de corazón sincero. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "domingo de la 6 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 31 1 2 5 11 r cf 7 r tu eres mi refugio me rodeas de cantos de liberacion dichoso el que esta absuelto de su culpa a quien le han sepultado su pecado dichoso el hombre a quien el senor no le apunta el delito r habia pecado lo reconoci no te encubri mi delito propuse confesare al senor mi culpa y tu perdonaste mi culpa y mi pecado r alegraos justos y gozad con el senor aclamadlo los de corazon sincero r",
-  "lizq": [
-    {
-      "line": "R. Tú eres mi refugio,",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "me rodeas de cantos de liberación.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichoso el que está absuelto de su culpa,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "a quien le han sepultado su pecado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "dichoso el hombre a quien el Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no le apunta el delito. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Había pecado, lo reconocí,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "no te encubrí mi delito;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "propuse: «Confesaré al Señor mi culpa»",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y tú perdonaste mi culpa y mi pecado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Alegraos, justos, y gozad con el Señor;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "aclamadlo, los de corazón sincero. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
+  "ciclo": "Ciclo B",
+  "celebracion": "Domingo de la 6ª semana de Tiempo Ordinario"
 }

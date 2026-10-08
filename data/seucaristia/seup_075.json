@@ -1,15 +1,123 @@
 {
-  "id": "seup_075",
-  "title": "Miércoles de la 13ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 13ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 49, 7. 8-9. 10-11. 12-13. 16bc-17 (R.: 23b)",
-  "salmo": "Salmo responsorial: Salmo 49, 7. 8-9. 10-11. 12-13. 16bc-17 (R.: 23b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5133,
+  "stage": "Liturgia",
   "respuesta": "R. Al que sigue buen camino le haré ver la salvación de Dios.",
+  "catCanto": "Salmo Eucaristía",
+  "id": "seup_075",
+  "lizq": [
+    {
+      "line": "R. Al que sigue buen camino",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "le haré ver la salvación de Dios.",
+      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Escucha, pueblo mío, que voy a hablarte;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Israel, voy a dar testimonio contra ti;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "—yo, Dios, tu Dios—». R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«No te reprocho tus sacrificios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "pues siempre están tus holocaustos ante mí."
+    },
+    {
+      "line": "Pero no aceptaré un becerro de tu casa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni un cabrito de tus rebaños». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Pues las fieras de la selva son mías,"
+    },
+    {
+      "line": "y hay miles de bestias en mis montes;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "conozco todos los pájaros del cielo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tengo a mano cuanto se agita en los campos». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Si tuviera hambre, no te lo diría:"
+    },
+    {
+      "line": "pues el orbe y cuanto lo llena es mío.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿Comeré yo carne de toros,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "beberé sangre de cabritos?». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "«¿Por qué recitas mis preceptos",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y tienes siempre en la boca mi alianza,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tú que detestas mi enseñanza"
+    },
+    {
+      "line": "y te echas a la espalda mis mandatos?». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "celebracion": "Miércoles de la 13ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 49, 7. 8-9. 10-11. 12-13. 16bc-17 (R.: 23b)",
+  "textoCompleto": "«Escucha, pueblo mío, que voy a hablarte;\nIsrael, voy a dar testimonio contra ti;\n—yo, Dios, tu Dios—». R.\n\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí.\nPero no aceptaré un becerro de tu casa,\nni un cabrito de tus rebaños». R.\n\n«Pues las fieras de la selva son mías,\ny hay miles de bestias en mis montes;\nconozco todos los pájaros del cielo,\ntengo a mano cuanto se agita en los campos». R.\n\n«Si tuviera hambre, no te lo diría:\npues el orbe y cuanto lo llena es mío.\n¿Comeré yo carne de toros,\nbeberé sangre de cabritos?». R.\n\n«¿Por qué recitas mis preceptos\ny tienes siempre en la boca mi alianza,\ntú que detestas mi enseñanza\ny te echas a la espalda mis mandatos?». R.",
+  "dia": "Miércoles",
   "respuestaOpcional": "",
+  "orden": 5133,
+  "sourceBook": "eucaristia",
+  "title": "Miércoles de la 13ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
   "estrofas": [
     [
       "«Escucha, pueblo mío, que voy a hablarte;",
@@ -41,116 +149,8 @@
       "y te echas a la espalda mis mandatos?». R."
     ]
   ],
-  "textoCompleto": "«Escucha, pueblo mío, que voy a hablarte;\nIsrael, voy a dar testimonio contra ti;\n—yo, Dios, tu Dios—». R.\n\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí.\nPero no aceptaré un becerro de tu casa,\nni un cabrito de tus rebaños». R.\n\n«Pues las fieras de la selva son mías,\ny hay miles de bestias en mis montes;\nconozco todos los pájaros del cielo,\ntengo a mano cuanto se agita en los campos». R.\n\n«Si tuviera hambre, no te lo diría:\npues el orbe y cuanto lo llena es mío.\n¿Comeré yo carne de toros,\nbeberé sangre de cabritos?». R.\n\n«¿Por qué recitas mis preceptos\ny tienes siempre en la boca mi alianza,\ntú que detestas mi enseñanza\ny te echas a la espalda mis mandatos?». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 49, 7. 8-9. 10-11. 12-13. 16bc-17 (R.: 23b)",
   "hasAudio": false,
-  "searchPool": "miercoles de la 13 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 49 7 8 9 10 11 12 13 16bc 17 r 23b semana 13 semana xiii miercoles 13 xiii r al que sigue buen camino le hare ver la salvacion de dios escucha pueblo mio que voy a hablarte israel voy a dar testimonio contra ti yo dios tu dios r no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi pero no aceptare un becerro de tu casa ni un cabrito de tus rebanos r pues las fieras de la selva son mias y hay miles de bestias en mis montes conozco todos los pajaros del cielo tengo a mano cuanto se agita en los campos r si tuviera hambre no te lo diria pues el orbe y cuanto lo llena es mio comere yo carne de toros bebere sangre de cabritos r por que recitas mis preceptos y tienes siempre en la boca mi alianza tu que detestas mi ensenanza y te echas a la espalda mis mandatos r",
-  "lizq": [
-    {
-      "line": "R. Al que sigue buen camino",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "le haré ver la salvación de Dios.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«Escucha, pueblo mío, que voy a hablarte;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Israel, voy a dar testimonio contra ti;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "—yo, Dios, tu Dios—». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«No te reprocho tus sacrificios,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "pues siempre están tus holocaustos ante mí.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Pero no aceptaré un becerro de tu casa,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ni un cabrito de tus rebaños». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«Pues las fieras de la selva son mías,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y hay miles de bestias en mis montes;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "conozco todos los pájaros del cielo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tengo a mano cuanto se agita en los campos». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«Si tuviera hambre, no te lo diría:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "pues el orbe y cuanto lo llena es mío.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿Comeré yo carne de toros,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "beberé sangre de cabritos?». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«¿Por qué recitas mis preceptos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y tienes siempre en la boca mi alianza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tú que detestas mi enseñanza",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y te echas a la espalda mis mandatos?». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "searchPool": "miercoles de la 13 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 49 7 8 9 10 11 12 13 16bc 17 r 23b semana 13 semana xiii miercoles 13 xiii r al que sigue buen camino le hare ver la salvacion de dios escucha pueblo mio que voy a hablarte israel voy a dar testimonio contra ti yo dios tu dios r no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi pero no aceptare un becerro de tu casa ni un cabrito de tus rebanos r pues las fieras de la selva son mias y hay miles de bestias en mis montes conozco todos los pajaros del cielo tengo a mano cuanto se agita en los campos r si tuviera hambre no te lo diria pues el orbe y cuanto lo llena es mio comere yo carne de toros bebere sangre de cabritos r por que recitas mis preceptos y tienes siempre en la boca mi alianza tu que detestas mi ensenanza y te echas a la espalda mis mandatos r"
 }

@@ -1,58 +1,16 @@
 {
-  "id": "seup_091",
-  "title": "Lunes de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 49, 5-6. 8-9. 16bc-17. 21 y 23 (R.: 23b)",
-  "salmo": "Salmo responsorial: Salmo 49, 5-6. 8-9. 16bc-17. 21 y 23 (R.: 23b)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5161,
+  "celebracion": "Lunes de la 16ª semana de Tiempo Ordinario",
   "respuesta": "R. Al que sigue buen camino le haré ver la salvación de Dios.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "«Congregadme a mis fieles,",
-      "que sellaron mi pacto con un sacrificio».",
-      "Proclame el cielo su justicia;",
-      "Dios en persona va a juzgar. R."
-    ],
-    [
-      "«No te reprocho tus sacrificios,",
-      "pues siempre están tus holocaustos ante mí.",
-      "Pero no aceptaré un becerro de tu casa,",
-      "ni un cabrito de tus rebaños». R."
-    ],
-    [
-      "«¿Por qué recitas mis preceptos",
-      "y tienes siempre en la boca mi alianza,",
-      "tú que detestas mi enseñanza",
-      "y te echas a la espalda mis mandatos?». R."
-    ],
-    [
-      "«Esto haces, ¿y me voy a callar?",
-      "¿Crees que soy como tú?",
-      "Te acusaré, te lo echaré en cara.",
-      "El que me ofrece acción de gracias,",
-      "ése me honra;",
-      "al que sigue buen camino",
-      "le haré ver la salvación de Dios». R."
-    ]
-  ],
-  "textoCompleto": "«Congregadme a mis fieles,\nque sellaron mi pacto con un sacrificio».\nProclame el cielo su justicia;\nDios en persona va a juzgar. R.\n\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí.\nPero no aceptaré un becerro de tu casa,\nni un cabrito de tus rebaños». R.\n\n«¿Por qué recitas mis preceptos\ny tienes siempre en la boca mi alianza,\ntú que detestas mi enseñanza\ny te echas a la espalda mis mandatos?». R.\n\n«Esto haces, ¿y me voy a callar?\n¿Crees que soy como tú?\nTe acusaré, te lo echaré en cara.\nEl que me ofrece acción de gracias,\nése me honra;\nal que sigue buen camino\nle haré ver la salvación de Dios». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 16 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 49 5 6 8 9 16bc 17 21 y 23 r 23b semana 16 semana xvi lunes 16 xvi r al que sigue buen camino le hare ver la salvacion de dios congregadme a mis fieles que sellaron mi pacto con un sacrificio proclame el cielo su justicia dios en persona va a juzgar r no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi pero no aceptare un becerro de tu casa ni un cabrito de tus rebanos r por que recitas mis preceptos y tienes siempre en la boca mi alianza tu que detestas mi ensenanza y te echas a la espalda mis mandatos r esto haces y me voy a callar crees que soy como tu te acusare te lo echare en cara el que me ofrece accion de gracias ese me honra al que sigue buen camino le hare ver la salvacion de dios r",
+  "orden": 5161,
   "lizq": [
     {
-      "line": "R. Al que sigue buen camino",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Al que sigue buen camino"
     },
     {
-      "line": "le haré ver la salvación de Dios.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "le haré ver la salvación de Dios."
     },
     {
       "line": "",
@@ -71,28 +29,28 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Dios en persona va a juzgar. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Dios en persona va a juzgar. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "«No te reprocho tus sacrificios,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«No te reprocho tus sacrificios,"
     },
     {
       "line": "pues siempre están tus holocaustos ante mí.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Pero no aceptaré un becerro de tu casa,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Pero no aceptaré un becerro de tu casa,"
     },
     {
-      "line": "ni un cabrito de tus rebaños». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ni un cabrito de tus rebaños». R."
     },
     {
       "line": "",
@@ -123,28 +81,70 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "¿Crees que soy como tú?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿Crees que soy como tú?"
     },
     {
       "line": "Te acusaré, te lo echaré en cara.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El que me ofrece acción de gracias,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El que me ofrece acción de gracias,"
     },
     {
       "line": "ése me honra;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "al que sigue buen camino",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "al que sigue buen camino"
     },
     {
-      "line": "le haré ver la salvación de Dios». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "le haré ver la salvación de Dios». R."
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "«Congregadme a mis fieles,\nque sellaron mi pacto con un sacrificio».\nProclame el cielo su justicia;\nDios en persona va a juzgar. R.\n\n«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí.\nPero no aceptaré un becerro de tu casa,\nni un cabrito de tus rebaños». R.\n\n«¿Por qué recitas mis preceptos\ny tienes siempre en la boca mi alianza,\ntú que detestas mi enseñanza\ny te echas a la espalda mis mandatos?». R.\n\n«Esto haces, ¿y me voy a callar?\n¿Crees que soy como tú?\nTe acusaré, te lo echaré en cara.\nEl que me ofrece acción de gracias,\nése me honra;\nal que sigue buen camino\nle haré ver la salvación de Dios». R.",
+  "title": "Lunes de la 16ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Lunes",
+  "estrofas": [
+    [
+      "«Congregadme a mis fieles,",
+      "que sellaron mi pacto con un sacrificio».",
+      "Proclame el cielo su justicia;",
+      "Dios en persona va a juzgar. R."
+    ],
+    [
+      "«No te reprocho tus sacrificios,",
+      "pues siempre están tus holocaustos ante mí.",
+      "Pero no aceptaré un becerro de tu casa,",
+      "ni un cabrito de tus rebaños». R."
+    ],
+    [
+      "«¿Por qué recitas mis preceptos",
+      "y tienes siempre en la boca mi alianza,",
+      "tú que detestas mi enseñanza",
+      "y te echas a la espalda mis mandatos?». R."
+    ],
+    [
+      "«Esto haces, ¿y me voy a callar?",
+      "¿Crees que soy como tú?",
+      "Te acusaré, te lo echaré en cara.",
+      "El que me ofrece acción de gracias,",
+      "ése me honra;",
+      "al que sigue buen camino",
+      "le haré ver la salvación de Dios». R."
+    ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 49, 5-6. 8-9. 16bc-17. 21 y 23 (R.: 23b)",
+  "sourceBook": "eucaristia",
+  "searchPool": "lunes de la 16 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 49 5 6 8 9 16bc 17 21 y 23 r 23b semana 16 semana xvi lunes 16 xvi r al que sigue buen camino le hare ver la salvacion de dios congregadme a mis fieles que sellaron mi pacto con un sacrificio proclame el cielo su justicia dios en persona va a juzgar r no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi pero no aceptare un becerro de tu casa ni un cabrito de tus rebanos r por que recitas mis preceptos y tienes siempre en la boca mi alianza tu que detestas mi ensenanza y te echas a la espalda mis mandatos r esto haces y me voy a callar crees que soy como tu te acusare te lo echare en cara el que me ofrece accion de gracias ese me honra al que sigue buen camino le hare ver la salvacion de dios r",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "id": "seup_091",
+  "subtitle": "Salmo responsorial: Salmo 49, 5-6. 8-9. 16bc-17. 21 y 23 (R.: 23b)"
 }

@@ -1,15 +1,18 @@
 {
-  "id": "seui_010",
-  "title": "Jueves de la 2ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 2ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 39, 7-8a. 8b-9. 10. 17 (R.: cf. 8a y 9a)",
-  "salmo": "Salmo responsorial: Salmo 39, 7-8a. 8b-9. 10. 17 (R.: cf. 8a y 9a)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Tú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\n«—Como está escrito en mi libro—\npara hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R.\n\nAlégrense y gocen contigo\ntodos los que te buscan;\ndigan siempre: «Grande es el Señor»\nlos que desean tu salvación. R.",
+  "subtitle": "Salmo responsorial: Salmo 39, 7-8a. 8b-9. 10. 17 (R.: cf. 8a y 9a)",
+  "id": "seui_010",
+  "hasAudio": false,
   "dia": "Jueves",
   "orden": 5024,
-  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
+  "stage": "Liturgia",
+  "searchPool": "jueves de la 2 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 39 7 8a 8b 9 10 17 r cf 8a y 9a semana 2 semana ii jueves 2 ii r aqui estoy senor para hacer tu voluntad tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio entonces yo digo aqui estoy r como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r alegrense y gocen contigo todos los que te buscan digan siempre grande es el senor los que desean tu salvacion r",
+  "salmo": "Salmo responsorial: Salmo 39, 7-8a. 8b-9. 10. 17 (R.: cf. 8a y 9a)",
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Impar",
   "respuestaOpcional": "",
+  "celebracion": "Jueves de la 2ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Tú no quieres sacrificios ni ofrendas,",
@@ -36,24 +39,19 @@
       "los que desean tu salvación. R."
     ]
   ],
-  "textoCompleto": "Tú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\n«—Como está escrito en mi libro—\npara hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R.\n\nAlégrense y gocen contigo\ntodos los que te buscan;\ndigan siempre: «Grande es el Señor»\nlos que desean tu salvación. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 2 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 39 7 8a 8b 9 10 17 r cf 8a y 9a semana 2 semana ii jueves 2 ii r aqui estoy senor para hacer tu voluntad tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio entonces yo digo aqui estoy r como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r alegrense y gocen contigo todos los que te buscan digan siempre grande es el senor los que desean tu salvacion r",
   "lizq": [
     {
-      "line": "R. Aquí estoy, Señor, para hacer tu voluntad.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aquí estoy, Señor, para hacer tu voluntad."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tú no quieres sacrificios ni ofrendas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú no quieres sacrificios ni ofrendas,"
     },
     {
       "line": "y, en cambio, me abriste el oído;",
@@ -72,12 +70,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "«—Como está escrito en mi libro—",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«—Como está escrito en mi libro—"
     },
     {
-      "line": "para hacer tu voluntad».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "para hacer tu voluntad»."
     },
     {
       "line": "Dios mío, lo quiero,",
@@ -88,8 +86,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "He proclamado tu salvación",
@@ -100,8 +98,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "no he cerrado los labios:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no he cerrado los labios:"
     },
     {
       "line": "Señor, tú lo sabes. R.",
@@ -112,12 +110,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Alégrense y gocen contigo",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Alégrense y gocen contigo"
     },
     {
-      "line": "todos los que te buscan;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todos los que te buscan;"
     },
     {
       "line": "digan siempre: «Grande es el Señor»",
@@ -127,5 +125,7 @@
       "line": "los que desean tu salvación. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
+  "title": "Jueves de la 2ª semana de Tiempo Ordinario"
 }

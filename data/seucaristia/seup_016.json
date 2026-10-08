@@ -1,15 +1,9 @@
 {
-  "id": "seup_016",
-  "title": "Jueves de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 3ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 131, 1-2. 3-5. 11. 12. 13-14 (R.: Lc 1, 32b)",
-  "salmo": "Salmo responsorial: Salmo 131, 1-2. 3-5. 11. 12. 13-14 (R.: Lc 1, 32b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Jueves",
-  "orden": 5034,
-  "respuesta": "R. El Señor Dios le dará el trono de David, su padre.",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Señor, tenle en cuenta a David\ntodos sus afanes:\ncómo juró al Señor\ne hizo voto al Fuerte de Jacob. R.\n\n«No entraré bajo el techo de mi casa,\nno subiré al lecho de mi descanso,\nno daré sueño a mis ojos,\nni reposo a mis párpados,\nhasta que encuentre un lugar para el Señor,\nuna morada para el Fuerte de Jacob». R.\n\nEl Señor ha jurado a David\nuna promesa que no retractará:\n«A uno de tu linaje\npondré sobre tu trono». R.\n\n«Si tus hijos guardan mi alianza\ny los mandatos que les enseño,\ntambién sus hijos, por siempre,\nse sentarán sobre tu trono». R.\n\nPorque el Señor ha elegido a Sión,\nha deseado vivir en ella:\n«Ésta es mi mansión por siempre,\naquí viviré, porque la deseo». R.",
   "estrofas": [
     [
       "Señor, tenle en cuenta a David",
@@ -44,16 +38,13 @@
       "aquí viviré, porque la deseo». R."
     ]
   ],
-  "textoCompleto": "Señor, tenle en cuenta a David\ntodos sus afanes:\ncómo juró al Señor\ne hizo voto al Fuerte de Jacob. R.\n\n«No entraré bajo el techo de mi casa,\nno subiré al lecho de mi descanso,\nno daré sueño a mis ojos,\nni reposo a mis párpados,\nhasta que encuentre un lugar para el Señor,\nuna morada para el Fuerte de Jacob». R.\n\nEl Señor ha jurado a David\nuna promesa que no retractará:\n«A uno de tu linaje\npondré sobre tu trono». R.\n\n«Si tus hijos guardan mi alianza\ny los mandatos que les enseño,\ntambién sus hijos, por siempre,\nse sentarán sobre tu trono». R.\n\nPorque el Señor ha elegido a Sión,\nha deseado vivir en ella:\n«Ésta es mi mansión por siempre,\naquí viviré, porque la deseo». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "jueves de la 3 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 131 1 2 3 5 11 12 13 14 r lc 1 32b semana 3 semana iii jueves 3 iii r el senor dios le dara el trono de david su padre senor tenle en cuenta a david todos sus afanes como juro al senor e hizo voto al fuerte de jacob r no entrare bajo el techo de mi casa no subire al lecho de mi descanso no dare sueno a mis ojos ni reposo a mis parpados hasta que encuentre un lugar para el senor una morada para el fuerte de jacob r el senor ha jurado a david una promesa que no retractara a uno de tu linaje pondre sobre tu trono r si tus hijos guardan mi alianza y los mandatos que les enseno tambien sus hijos por siempre se sentaran sobre tu trono r porque el senor ha elegido a sion ha deseado vivir en ella esta es mi mansion por siempre aqui vivire porque la deseo r",
+  "subtitle": "Salmo responsorial: Salmo 131, 1-2. 3-5. 11. 12. 13-14 (R.: Lc 1, 32b)",
+  "title": "Jueves de la 3ª semana de Tiempo Ordinario",
   "lizq": [
     {
-      "line": "R. El Señor Dios le dará el trono de David, su padre.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor Dios le dará el trono de David, su padre."
     },
     {
       "line": "",
@@ -64,20 +55,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "todos sus afanes:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todos sus afanes:"
     },
     {
       "line": "cómo juró al Señor",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "e hizo voto al Fuerte de Jacob. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "e hizo voto al Fuerte de Jacob. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "«No entraré bajo el techo de mi casa,",
@@ -96,12 +87,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "hasta que encuentre un lugar para el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hasta que encuentre un lugar para el Señor,"
     },
     {
-      "line": "una morada para el Fuerte de Jacob». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "una morada para el Fuerte de Jacob». R."
     },
     {
       "line": "",
@@ -112,8 +103,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "una promesa que no retractará:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "una promesa que no retractará:"
     },
     {
       "line": "«A uno de tu linaje",
@@ -128,12 +119,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "«Si tus hijos guardan mi alianza",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Si tus hijos guardan mi alianza"
     },
     {
-      "line": "y los mandatos que les enseño,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y los mandatos que les enseño,"
     },
     {
       "line": "también sus hijos, por siempre,",
@@ -163,5 +154,14 @@
       "line": "aquí viviré, porque la deseo». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Jueves de la 3ª semana de Tiempo Ordinario",
+  "id": "seup_016",
+  "ciclo": "Año Par",
+  "respuesta": "R. El Señor Dios le dará el trono de David, su padre.",
+  "salmo": "Salmo responsorial: Salmo 131, 1-2. 3-5. 11. 12. 13-14 (R.: Lc 1, 32b)",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "orden": 5034
 }

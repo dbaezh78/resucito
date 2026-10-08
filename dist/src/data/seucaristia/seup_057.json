@@ -1,15 +1,88 @@
 {
-  "id": "seup_057",
-  "title": "Miércoles de la 10ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 10ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 15, 1-2a. 4. 5 y 8. 11 (R.: 1)",
-  "salmo": "Salmo responsorial: Salmo 15, 1-2a. 4. 5 y 8. 11 (R.: 1)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5103,
-  "respuesta": "R. Protégeme, Dios mío, que me refugio en ti.",
+  "celebracion": "Miércoles de la 10ª semana de Tiempo Ordinario",
   "respuestaOpcional": "",
+  "searchPool": "miercoles de la 10 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 15 1 2a 4 5 y 8 11 r 1 semana 10 semana x miercoles 10 x r protegeme dios mio que me refugio en ti protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien r multiplican las estatuas de dioses extranos no derramare sus libaciones con mis manos ni tomare sus nombres en mis labios r el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
+  "hasAudio": false,
+  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien». R.\n\nMultiplican las estatuas\nde dioses extraños;\nno derramaré sus libaciones con mis manos,\nni tomaré sus nombres en mis labios. R.\n\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Protégeme, Dios mío, que me refugio en ti."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Protégeme, Dios mío, que me refugio en ti;"
+    },
+    {
+      "line": "yo digo al Señor: «Tú eres mi bien». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Multiplican las estatuas"
+    },
+    {
+      "line": "de dioses extraños;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no derramaré sus libaciones con mis manos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni tomaré sus nombres en mis labios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "El Señor es el lote de mi heredad y mi copa;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "mi suerte está en tu mano.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Tengo siempre presente al Señor,"
+    },
+    {
+      "line": "con él a mi derecha no vacilaré. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Me enseñarás el sendero de la vida,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me saciarás de gozo en tu presencia,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de alegría perpetua a tu derecha. R."
+    }
+  ],
+  "orden": 5103,
+  "sourceBook": "eucaristia",
+  "title": "Miércoles de la 10ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Protégeme, Dios mío, que me refugio en ti;",
@@ -33,84 +106,11 @@
       "de alegría perpetua a tu derecha. R."
     ]
   ],
-  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien». R.\n\nMultiplican las estatuas\nde dioses extraños;\nno derramaré sus libaciones con mis manos,\nni tomaré sus nombres en mis labios. R.\n\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 10 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 15 1 2a 4 5 y 8 11 r 1 semana 10 semana x miercoles 10 x r protegeme dios mio que me refugio en ti protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien r multiplican las estatuas de dioses extranos no derramare sus libaciones con mis manos ni tomare sus nombres en mis labios r el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
-  "lizq": [
-    {
-      "line": "R. Protégeme, Dios mío, que me refugio en ti.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Protégeme, Dios mío, que me refugio en ti;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "yo digo al Señor: «Tú eres mi bien». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Multiplican las estatuas",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "de dioses extraños;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no derramaré sus libaciones con mis manos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ni tomaré sus nombres en mis labios. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es el lote de mi heredad y mi copa;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "mi suerte está en tu mano.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Tengo siempre presente al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "con él a mi derecha no vacilaré. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Me enseñarás el sendero de la vida,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "me saciarás de gozo en tu presencia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "de alegría perpetua a tu derecha. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "salmo": "Salmo responsorial: Salmo 15, 1-2a. 4. 5 y 8. 11 (R.: 1)",
+  "tiempo": "Tiempo Ordinario",
+  "id": "seup_057",
+  "respuesta": "R. Protégeme, Dios mío, que me refugio en ti.",
+  "stage": "Liturgia",
+  "dia": "Miércoles"
 }

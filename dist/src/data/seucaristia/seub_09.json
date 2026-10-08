@@ -1,15 +1,11 @@
 {
-  "id": "seub_09",
-  "title": "La Sagrada Familia",
-  "celebracion": "La Sagrada Familia",
+  "respuestaOpcional": "",
   "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1)",
-  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1)",
-  "ciclo": "Ciclo B",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
+  "respuesta": "R. Dichosos los que temen al Señor y siguen sus caminos.",
   "tiempo": "Navidad",
   "dia": "Domingo",
-  "orden": 205,
-  "respuesta": "R. Dichosos los que temen al Señor y siguen sus caminos.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dichoso el que teme al Señor",
@@ -31,20 +27,14 @@
       "todos los días de tu vida. R."
     ]
   ],
-  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "la sagrada familia ciclo b navidad domingo salmo responsorial salmo 127 1 2 3 4 5 r cf 1 r dichosos los que temen al senor y siguen sus caminos dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r",
   "lizq": [
     {
       "line": "R. Dichosos los que temen al Señor",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "y siguen sus caminos.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "y siguen sus caminos."
     },
     {
       "line": "",
@@ -55,8 +45,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y sigue sus caminos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y sigue sus caminos."
     },
     {
       "line": "Comerás del fruto de tu trabajo",
@@ -71,44 +61,54 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tu mujer, como parra fecunda,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tu mujer, como parra fecunda,"
     },
     {
-      "line": "en medio de tu casa;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en medio de tu casa;"
     },
     {
       "line": "tus hijos, como renuevos de olivo,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "alrededor de tu mesa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "alrededor de tu mesa. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Ésta es la bendición del hombre",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que teme al Señor.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que teme al Señor."
     },
     {
       "line": "Que el Señor te bendiga desde Sión,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que veas la prosperidad de Jerusalén",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que veas la prosperidad de Jerusalén"
     },
     {
-      "line": "todos los días de tu vida. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "todos los días de tu vida. R."
     }
-  ]
+  ],
+  "ciclo": "Ciclo B",
+  "stage": "Liturgia",
+  "id": "seub_09",
+  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1)",
+  "sourceBook": "eucaristia",
+  "celebracion": "La Sagrada Familia",
+  "searchPool": "la sagrada familia ciclo b navidad domingo salmo responsorial salmo 127 1 2 3 4 5 r cf 1 r dichosos los que temen al senor y siguen sus caminos dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r",
+  "hasAudio": false,
+  "title": "La Sagrada Familia",
+  "orden": 205
 }

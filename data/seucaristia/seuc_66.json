@@ -1,15 +1,6 @@
 {
-  "id": "seuc_66",
-  "title": "Domingo de la 20ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 20ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 39, 2. 3. 4. 18 (R.: 14b)",
+  "searchPool": "domingo de la 20 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 39 2 3 4 18 r 14b r senor date prisa en socorrerme yo esperaba con ansia al senor el se inclino y escucho mi grito r me levanto de la fosa fatal de la charca fangosa afianzo mis pies sobre roca y aseguro mis pasos r me puso en la boca un cantico nuevo un himno a nuestro dios muchos al verlo quedaron sobrecogidos y confiaron en el senor r yo soy pobre y desgraciado pero el senor se cuida de mi tu eres mi auxilio y mi liberacion dios mio no tardes r",
   "salmo": "Salmo responsorial: Salmo 39, 2. 3. 4. 18 (R.: 14b)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 520,
-  "respuesta": "R. Señor, date prisa en socorrerme.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Yo esperaba con ansia al Señor;",
@@ -34,12 +25,16 @@
       "Dios mío, no tardes. R."
     ]
   ],
-  "textoCompleto": "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito. R.\n\nMe levantó de la fosa fatal,\nde la charca fangosa;\nafianzó mis pies sobre roca,\ny aseguró mis pasos. R.\n\nMe puso en la boca un cántico nuevo,\nun himno a nuestro Dios.\nMuchos, al verlo, quedaron sobrecogidos\ny confiaron en el Señor. R.\n\nYo soy pobre y desgraciado,\npero el Señor se cuida de mí;\ntú eres mi auxilio y mi liberación:\nDios mío, no tardes. R.",
+  "respuestaOpcional": "",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 39, 2. 3. 4. 18 (R.: 14b)",
   "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "title": "Domingo de la 20ª semana de Tiempo Ordinario",
+  "id": "seuc_66",
+  "orden": 520,
+  "textoCompleto": "Yo esperaba con ansia al Señor;\nél se inclinó y escuchó mi grito. R.\n\nMe levantó de la fosa fatal,\nde la charca fangosa;\nafianzó mis pies sobre roca,\ny aseguró mis pasos. R.\n\nMe puso en la boca un cántico nuevo,\nun himno a nuestro Dios.\nMuchos, al verlo, quedaron sobrecogidos\ny confiaron en el Señor. R.\n\nYo soy pobre y desgraciado,\npero el Señor se cuida de mí;\ntú eres mi auxilio y mi liberación:\nDios mío, no tardes. R.",
   "hasAudio": false,
-  "searchPool": "domingo de la 20 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 39 2 3 4 18 r 14b r senor date prisa en socorrerme yo esperaba con ansia al senor el se inclino y escucho mi grito r me levanto de la fosa fatal de la charca fangosa afianzo mis pies sobre roca y aseguro mis pasos r me puso en la boca un cantico nuevo un himno a nuestro dios muchos al verlo quedaron sobrecogidos y confiaron en el senor r yo soy pobre y desgraciado pero el senor se cuida de mi tu eres mi auxilio y mi liberacion dios mio no tardes r",
   "lizq": [
     {
       "line": "R. Señor, date prisa en socorrerme.",
@@ -50,16 +45,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Yo esperaba con ansia al Señor;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Yo esperaba con ansia al Señor;"
     },
     {
-      "line": "él se inclinó y escuchó mi grito. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "él se inclinó y escuchó mi grito. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Me levantó de la fosa fatal,",
@@ -90,8 +85,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Muchos, al verlo, quedaron sobrecogidos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Muchos, al verlo, quedaron sobrecogidos"
     },
     {
       "line": "y confiaron en el Señor. R.",
@@ -102,8 +97,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Yo soy pobre y desgraciado,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Yo soy pobre y desgraciado,"
     },
     {
       "line": "pero el Señor se cuida de mí;",
@@ -117,5 +112,10 @@
       "line": "Dios mío, no tardes. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Ciclo C",
+  "dia": "Domingo",
+  "stage": "Liturgia",
+  "respuesta": "R. Señor, date prisa en socorrerme.",
+  "celebracion": "Domingo de la 20ª semana de Tiempo Ordinario"
 }

@@ -1,15 +1,80 @@
 {
-  "id": "seub_05",
-  "title": "Natividad del Señor - Misa de la vigilia",
-  "celebracion": "Natividad del Señor - Misa de la vigilia",
-  "subtitle": "Salmo responsorial: 88, 4-5. 16-17. 27 y 29 (R.: cf 2a)",
-  "salmo": "Salmo responsorial: 88, 4-5. 16-17. 27 y 29 (R.: cf 2a)",
+  "lizq": [
+    {
+      "line": "R. Cantaré eternamente tus misericordias, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Sellé una alianza con mi elegido,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "jurando a David, mi siervo:"
+    },
+    {
+      "line": "«Te fundaré un linaje perpetuo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "edificaré tu trono para todas las edades». R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dichoso el pueblo que sabe aclamarte:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "caminará, oh Señor, a la luz de tu rostro;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tu nombre es su gozo cada día,"
+    },
+    {
+      "line": "tu justicia es su orgullo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Él me invocará: «Tú eres mi padre,"
+    },
+    {
+      "line": "mi Dios, mi Roca salvadora».",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Le mantendré eternamente mi favor,"
+    },
+    {
+      "line": "y mi alianza con él será estable. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "ciclo": "Ciclo B",
-  "tiempo": "Navidad",
-  "dia": "Sábado",
-  "orden": 201,
-  "respuesta": "R. Cantaré eternamente tus misericordias, Señor.",
+  "stage": "Liturgia",
+  "textoCompleto": "Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\nDichoso el pueblo que sabe aclamarte:\ncaminará, oh Señor, a la luz de tu rostro;\ntu nombre es su gozo cada día,\ntu justicia es su orgullo. R.\n\nÉl me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora».\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable. R.",
+  "hasAudio": false,
   "respuestaOpcional": "",
+  "respuesta": "R. Cantaré eternamente tus misericordias, Señor.",
+  "id": "seub_05",
+  "salmo": "Salmo responsorial: 88, 4-5. 16-17. 27 y 29 (R.: cf 2a)",
+  "celebracion": "Natividad del Señor - Misa de la vigilia",
+  "tiempo": "Navidad",
   "estrofas": [
     [
       "Sellé una alianza con mi elegido,",
@@ -30,76 +95,11 @@
       "y mi alianza con él será estable. R."
     ]
   ],
-  "textoCompleto": "Sellé una alianza con mi elegido,\njurando a David, mi siervo:\n«Te fundaré un linaje perpetuo,\nedificaré tu trono para todas las edades». R.\n\nDichoso el pueblo que sabe aclamarte:\ncaminará, oh Señor, a la luz de tu rostro;\ntu nombre es su gozo cada día,\ntu justicia es su orgullo. R.\n\nÉl me invocará: «Tú eres mi padre,\nmi Dios, mi Roca salvadora».\nLe mantendré eternamente mi favor,\ny mi alianza con él será estable. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "natividad del senor misa de la vigilia ciclo b navidad sabado salmo responsorial 88 4 5 16 17 27 y 29 r cf 2a r cantare eternamente tus misericordias senor selle una alianza con mi elegido jurando a david mi siervo te fundare un linaje perpetuo edificare tu trono para todas las edades r dichoso el pueblo que sabe aclamarte caminara oh senor a la luz de tu rostro tu nombre es su gozo cada dia tu justicia es su orgullo r el me invocara tu eres mi padre mi dios mi roca salvadora le mantendre eternamente mi favor y mi alianza con el sera estable r",
-  "lizq": [
-    {
-      "line": "R. Cantaré eternamente tus misericordias, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Sellé una alianza con mi elegido,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "jurando a David, mi siervo:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "«Te fundaré un linaje perpetuo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "edificaré tu trono para todas las edades». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichoso el pueblo que sabe aclamarte:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "caminará, oh Señor, a la luz de tu rostro;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tu nombre es su gozo cada día,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tu justicia es su orgullo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Él me invocará: «Tú eres mi padre,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "mi Dios, mi Roca salvadora».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Le mantendré eternamente mi favor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y mi alianza con él será estable. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "subtitle": "Salmo responsorial: 88, 4-5. 16-17. 27 y 29 (R.: cf 2a)",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Natividad del Señor - Misa de la vigilia",
+  "orden": 201,
+  "sourceBook": "eucaristia",
+  "dia": "Sábado"
 }

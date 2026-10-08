@@ -1,15 +1,5 @@
 {
-  "id": "seuc_16",
-  "title": "Primer domingo de Cuaresma",
-  "celebracion": "Primer domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 90, 1-2. 10-11. 12-13. 14-15 (R.: 15b)",
-  "salmo": "Salmo responsorial: Salmo 90, 1-2. 10-11. 12-13. 14-15 (R.: 15b)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
-  "orden": 301,
   "respuesta": "R. Está conmigo, Señor, en la tribulación.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Tú que habitas al amparo del Altísimo,",
@@ -37,12 +27,9 @@
       "lo defenderé, lo glorificaré». R."
     ]
   ],
-  "textoCompleto": "Tú que habitas al amparo del Altísimo,\nque vives a la sombra del Omnipotente,\ndi al Señor: «Refugio mío, alcázar mío,\nDios mío, confío en ti». R.\n\nNo se te acercará la desgracia,\nni la plaga llegará hasta tu tienda,\nporque a sus ángeles ha dado órdenes\npara que te guarden en tus caminos. R.\n\nTe llevarán en sus palmas,\npara que tu pie no tropiece en la piedra;\ncaminarás sobre áspides y víboras,\npisotearás leones y dragones. R.\n\n«Se puso junto a mí: lo libraré;\nlo protegeré porque conoce mi nombre,\nme invocará y lo escucharé.\nCon él estaré en la tribulación,\nlo defenderé, lo glorificaré». R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 90, 1-2. 10-11. 12-13. 14-15 (R.: 15b)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "primer domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 90 1 2 10 11 12 13 14 15 r 15b r esta conmigo senor en la tribulacion tu que habitas al amparo del altisimo que vives a la sombra del omnipotente di al senor refugio mio alcazar mio dios mio confio en ti r no se te acercara la desgracia ni la plaga llegara hasta tu tienda porque a sus angeles ha dado ordenes para que te guarden en tus caminos r te llevaran en sus palmas para que tu pie no tropiece en la piedra caminaras sobre aspides y viboras pisotearas leones y dragones r se puso junto a mi lo librare lo protegere porque conoce mi nombre me invocara y lo escuchare con el estare en la tribulacion lo defendere lo glorificare r",
   "lizq": [
     {
       "line": "R. Está conmigo, Señor, en la tribulación.",
@@ -53,12 +40,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tú que habitas al amparo del Altísimo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú que habitas al amparo del Altísimo,"
     },
     {
-      "line": "que vives a la sombra del Omnipotente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que vives a la sombra del Omnipotente,"
     },
     {
       "line": "di al Señor: «Refugio mío, alcázar mío,",
@@ -69,8 +56,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "No se te acercará la desgracia,",
@@ -97,16 +84,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "para que tu pie no tropiece en la piedra;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "para que tu pie no tropiece en la piedra;"
     },
     {
-      "line": "caminarás sobre áspides y víboras,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "caminarás sobre áspides y víboras,"
     },
     {
-      "line": "pisotearás leones y dragones. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "pisotearás leones y dragones. R."
     },
     {
       "line": "",
@@ -129,8 +116,21 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "lo defenderé, lo glorificaré». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "lo defenderé, lo glorificaré». R."
     }
-  ]
+  ],
+  "ciclo": "Ciclo C",
+  "searchPool": "primer domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 90 1 2 10 11 12 13 14 15 r 15b r esta conmigo senor en la tribulacion tu que habitas al amparo del altisimo que vives a la sombra del omnipotente di al senor refugio mio alcazar mio dios mio confio en ti r no se te acercara la desgracia ni la plaga llegara hasta tu tienda porque a sus angeles ha dado ordenes para que te guarden en tus caminos r te llevaran en sus palmas para que tu pie no tropiece en la piedra caminaras sobre aspides y viboras pisotearas leones y dragones r se puso junto a mi lo librare lo protegere porque conoce mi nombre me invocara y lo escuchare con el estare en la tribulacion lo defendere lo glorificare r",
+  "respuestaOpcional": "",
+  "celebracion": "Primer domingo de Cuaresma",
+  "textoCompleto": "Tú que habitas al amparo del Altísimo,\nque vives a la sombra del Omnipotente,\ndi al Señor: «Refugio mío, alcázar mío,\nDios mío, confío en ti». R.\n\nNo se te acercará la desgracia,\nni la plaga llegará hasta tu tienda,\nporque a sus ángeles ha dado órdenes\npara que te guarden en tus caminos. R.\n\nTe llevarán en sus palmas,\npara que tu pie no tropiece en la piedra;\ncaminarás sobre áspides y víboras,\npisotearás leones y dragones. R.\n\n«Se puso junto a mí: lo libraré;\nlo protegeré porque conoce mi nombre,\nme invocará y lo escucharé.\nCon él estaré en la tribulación,\nlo defenderé, lo glorificaré». R.",
+  "title": "Primer domingo de Cuaresma",
+  "id": "seuc_16",
+  "hasAudio": false,
+  "orden": 301,
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 90, 1-2. 10-11. 12-13. 14-15 (R.: 15b)",
+  "tiempo": "Cuaresma",
+  "dia": "Domingo"
 }

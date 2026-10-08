@@ -1,15 +1,13 @@
 {
-  "id": "seup_116",
-  "title": "Martes de la 20ª semana de Tiempo Ordinario",
   "celebracion": "Martes de la 20ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Deuteronomio 32, 26-27ab. 27cd-28a. 30. 35cd-36ab (R.: 39c)",
   "salmo": "Interleccional: Deuteronomio 32, 26-27ab. 27cd-28a. 30. 35cd-36ab (R.: 39c)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5202,
   "respuesta": "R. Yo doy la muerte y la vida.",
-  "respuestaOpcional": "",
+  "id": "seup_116",
+  "textoCompleto": "Yo pensaba: «Voy a dispersarlos\ny a borrar su memoria entre los hombres».\nPero no; que temo la jactancia del enemigo\ny la mala interpretación del adversario. R.\n\nQue diría: «Nuestra mano ha vencido,\nno es el Señor quien lo ha hecho».\nPorque son una nación que ha perdido el juicio. R.\n\n¿Cómo es que uno persigue a mil,\ny dos ponen en fuga a diez mil?\n¿No es porque su Roca los ha vendido,\nporque el Señor los ha entregado? R.\n\nEl día de su perdición se acerca,\ny su suerte se apresura.\nPorque el Señor defenderá a su pueblo\ny tendrá compasión de sus siervos. R.",
+  "catCanto": "Salmo Eucaristía",
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "martes de la 20 semana de tiempo ordinario ano par tiempo ordinario martes interleccional deuteronomio 32 26 27ab 27cd 28a 30 35cd 36ab r 39c semana 20 semana xx martes 20 xx r yo doy la muerte y la vida yo pensaba voy a dispersarlos y a borrar su memoria entre los hombres pero no que temo la jactancia del enemigo y la mala interpretacion del adversario r que diria nuestra mano ha vencido no es el senor quien lo ha hecho porque son una nacion que ha perdido el juicio r como es que uno persigue a mil y dos ponen en fuga a diez mil no es porque su roca los ha vendido porque el senor los ha entregado r el dia de su perdicion se acerca y su suerte se apresura porque el senor defendera a su pueblo y tendra compasion de sus siervos r",
   "estrofas": [
     [
       "Yo pensaba: «Voy a dispersarlos",
@@ -35,20 +33,16 @@
       "y tendrá compasión de sus siervos. R."
     ]
   ],
-  "textoCompleto": "Yo pensaba: «Voy a dispersarlos\ny a borrar su memoria entre los hombres».\nPero no; que temo la jactancia del enemigo\ny la mala interpretación del adversario. R.\n\nQue diría: «Nuestra mano ha vencido,\nno es el Señor quien lo ha hecho».\nPorque son una nación que ha perdido el juicio. R.\n\n¿Cómo es que uno persigue a mil,\ny dos ponen en fuga a diez mil?\n¿No es porque su Roca los ha vendido,\nporque el Señor los ha entregado? R.\n\nEl día de su perdición se acerca,\ny su suerte se apresura.\nPorque el Señor defenderá a su pueblo\ny tendrá compasión de sus siervos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 20 semana de tiempo ordinario ano par tiempo ordinario martes interleccional deuteronomio 32 26 27ab 27cd 28a 30 35cd 36ab r 39c semana 20 semana xx martes 20 xx r yo doy la muerte y la vida yo pensaba voy a dispersarlos y a borrar su memoria entre los hombres pero no que temo la jactancia del enemigo y la mala interpretacion del adversario r que diria nuestra mano ha vencido no es el senor quien lo ha hecho porque son una nacion que ha perdido el juicio r como es que uno persigue a mil y dos ponen en fuga a diez mil no es porque su roca los ha vendido porque el senor los ha entregado r el dia de su perdicion se acerca y su suerte se apresura porque el senor defendera a su pueblo y tendra compasion de sus siervos r",
+  "dia": "Martes",
+  "ciclo": "Año Par",
   "lizq": [
     {
-      "line": "R. Yo doy la muerte y la vida.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Yo doy la muerte y la vida."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Yo pensaba: «Voy a dispersarlos",
@@ -79,20 +73,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Porque son una nación que ha perdido el juicio. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Porque son una nación que ha perdido el juicio. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "¿Cómo es que uno persigue a mil,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¿Cómo es que uno persigue a mil,"
     },
     {
-      "line": "y dos ponen en fuga a diez mil?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y dos ponen en fuga a diez mil?"
     },
     {
       "line": "¿No es porque su Roca los ha vendido,",
@@ -119,8 +113,14 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y tendrá compasión de sus siervos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y tendrá compasión de sus siervos. R."
     }
-  ]
+  ],
+  "hasAudio": false,
+  "respuestaOpcional": "",
+  "title": "Martes de la 20ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "subtitle": "Interleccional: Deuteronomio 32, 26-27ab. 27cd-28a. 30. 35cd-36ab (R.: 39c)",
+  "orden": 5202
 }

@@ -1,10 +1,9 @@
 {
-  "id": "seuf_096",
-  "title": "Jueves de la tercera semana de Pascua",
-  "celebracion": "Jueves de la tercera semana de Pascua",
+  "sourceBook": "eucaristia",
+  "dia": "Jueves",
   "subtitle": "Salmo 65, 8-9. 16-17. 20 (R.: 1)",
-  "salmo": "Salmo 65, 8-9. 16-17. 20 (R.: 1)",
-  "ciclo": "Ciclo A, B y C",
+  "hasAudio": false,
+  "respuesta": "R. Aclamad al Señor, tierra entera.",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,39 +11,14 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Jueves",
-  "orden": 434,
-  "respuesta": "R. Aclamad al Señor, tierra entera.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Bendecid, pueblos, a nuestro Dios,",
-      "haced resonar sus alabanzas,",
-      "porque él nos ha devuelto la vida",
-      "y no dejó que tropezaran nuestros pies. R."
-    ],
-    [
-      "Fieles de Dios, venid a escuchar,",
-      "os contaré lo que ha hecho conmigo:",
-      "a él gritó mi boca",
-      "y lo ensalzó mi lengua. R."
-    ],
-    [
-      "Bendito sea Dios, que no rechazó mi súplica",
-      "ni me retiró su favor. R."
-    ]
-  ],
-  "textoCompleto": "Bendecid, pueblos, a nuestro Dios,\nhaced resonar sus alabanzas,\nporque él nos ha devuelto la vida\ny no dejó que tropezaran nuestros pies. R.\n\nFieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo:\na él gritó mi boca\ny lo ensalzó mi lengua. R.\n\nBendito sea Dios, que no rechazó mi súplica\nni me retiró su favor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "jueves de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 65 8 9 16 17 20 r 1 semana 3 semana iii jueves feria r aclamad al senor tierra entera r aleluya bendecid pueblos a nuestro dios haced resonar sus alabanzas porque el nos ha devuelto la vida y no dejo que tropezaran nuestros pies r fieles de dios venid a escuchar os contare lo que ha hecho conmigo a el grito mi boca y lo ensalzo mi lengua r bendito sea dios que no rechazo mi suplica ni me retiro su favor r",
+  "celebracion": "Jueves de la tercera semana de Pascua",
+  "ciclo": "Ciclo A, B y C",
+  "respuestaOpcional": "R. Aleluya.",
   "lizq": [
     {
-      "line": "R. Aclamad al Señor, tierra entera.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aclamad al Señor, tierra entera."
     },
     {
       "line": "",
@@ -79,8 +53,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Fieles de Dios, venid a escuchar,",
@@ -110,5 +84,31 @@
       "line": "ni me retiró su favor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo 65, 8-9. 16-17. 20 (R.: 1)",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 434,
+  "tiempo": "Pascua",
+  "title": "Jueves de la tercera semana de Pascua",
+  "estrofas": [
+    [
+      "Bendecid, pueblos, a nuestro Dios,",
+      "haced resonar sus alabanzas,",
+      "porque él nos ha devuelto la vida",
+      "y no dejó que tropezaran nuestros pies. R."
+    ],
+    [
+      "Fieles de Dios, venid a escuchar,",
+      "os contaré lo que ha hecho conmigo:",
+      "a él gritó mi boca",
+      "y lo ensalzó mi lengua. R."
+    ],
+    [
+      "Bendito sea Dios, que no rechazó mi súplica",
+      "ni me retiró su favor. R."
+    ]
+  ],
+  "id": "seuf_096",
+  "textoCompleto": "Bendecid, pueblos, a nuestro Dios,\nhaced resonar sus alabanzas,\nporque él nos ha devuelto la vida\ny no dejó que tropezaran nuestros pies. R.\n\nFieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo:\na él gritó mi boca\ny lo ensalzó mi lengua. R.\n\nBendito sea Dios, que no rechazó mi súplica\nni me retiró su favor. R."
 }

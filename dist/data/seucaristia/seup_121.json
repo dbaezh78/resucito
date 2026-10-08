@@ -1,15 +1,77 @@
 {
-  "id": "seup_121",
-  "title": "Lunes de la 21ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 21ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 95, 1-2a. 2b-3. 4-5 (R.: 3)",
   "salmo": "Salmo responsorial: Salmo 95, 1-2a. 2b-3. 4-5 (R.: 3)",
-  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía",
+  "id": "seup_121",
+  "stage": "Liturgia",
   "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre. R.\n\nProclamad día tras día su victoria.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nPorque es grande el Señor, y muy digno de alabanza,\nmás temible que todos los dioses.\nPues los dioses de los gentiles son apariencia,\nmientras que el Señor ha hecho el cielo. R.",
+  "celebracion": "Lunes de la 21ª semana de Tiempo Ordinario",
+  "lizq": [
+    {
+      "line": "R. Contad las maravillas del Señor a todas las naciones.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "cantad al Señor, toda la tierra;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "cantad al Señor, bendecid su nombre. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Proclamad día tras día su victoria.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Contad a los pueblos su gloria,"
+    },
+    {
+      "line": "sus maravillas a todas las naciones. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque es grande el Señor, y muy digno de alabanza,"
+    },
+    {
+      "line": "más temible que todos los dioses.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Pues los dioses de los gentiles son apariencia,"
+    },
+    {
+      "line": "mientras que el Señor ha hecho el cielo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "dia": "Lunes",
-  "orden": 5211,
+  "subtitle": "Salmo responsorial: Salmo 95, 1-2a. 2b-3. 4-5 (R.: 3)",
+  "ciclo": "Año Par",
   "respuesta": "R. Contad las maravillas del Señor a todas las naciones.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "hasAudio": false,
+  "searchPool": "lunes de la 21 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 95 1 2a 2b 3 4 5 r 3 semana 21 semana xxi lunes 21 xxi r contad las maravillas del senor a todas las naciones cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre r proclamad dia tras dia su victoria contad a los pueblos su gloria sus maravillas a todas las naciones r porque es grande el senor y muy digno de alabanza mas temible que todos los dioses pues los dioses de los gentiles son apariencia mientras que el senor ha hecho el cielo r",
+  "orden": 5211,
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -28,68 +90,6 @@
       "mientras que el Señor ha hecho el cielo. R."
     ]
   ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre. R.\n\nProclamad día tras día su victoria.\nContad a los pueblos su gloria,\nsus maravillas a todas las naciones. R.\n\nPorque es grande el Señor, y muy digno de alabanza,\nmás temible que todos los dioses.\nPues los dioses de los gentiles son apariencia,\nmientras que el Señor ha hecho el cielo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 21 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 95 1 2a 2b 3 4 5 r 3 semana 21 semana xxi lunes 21 xxi r contad las maravillas del senor a todas las naciones cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre r proclamad dia tras dia su victoria contad a los pueblos su gloria sus maravillas a todas las naciones r porque es grande el senor y muy digno de alabanza mas temible que todos los dioses pues los dioses de los gentiles son apariencia mientras que el senor ha hecho el cielo r",
-  "lizq": [
-    {
-      "line": "R. Contad las maravillas del Señor a todas las naciones.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Cantad al Señor un cántico nuevo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "cantad al Señor, toda la tierra;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "cantad al Señor, bendecid su nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Proclamad día tras día su victoria.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Contad a los pueblos su gloria,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sus maravillas a todas las naciones. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Porque es grande el Señor, y muy digno de alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "más temible que todos los dioses.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Pues los dioses de los gentiles son apariencia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "mientras que el Señor ha hecho el cielo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuestaOpcional": "",
+  "title": "Lunes de la 21ª semana de Tiempo Ordinario"
 }

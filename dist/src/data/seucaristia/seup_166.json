@@ -1,14 +1,19 @@
 {
-  "id": "seup_166",
-  "title": "Jueves de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 28ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 2a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
+  "searchPool": "jueves de la 28 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 97 1 2 3ab 3cd 4 5 6 r 2a semana 28 semana xxviii jueves 28 xxviii r el senor da a conocer su victoria cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclamad al senor tierra entera gritad vitoread tocad r taned la citara para el senor suenen los instrumentos con clarines y al son de trompetas aclamad al rey y senor r",
   "orden": 5284,
+  "catCanto": "Salmo Eucaristía",
+  "title": "Jueves de la 28ª semana de Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "celebracion": "Jueves de la 28ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 2a)",
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclamad al Señor, tierra entera;\ngritad, vitoread, tocad. R.\n\nTañed la cítara para el Señor,\nsuenen los instrumentos:\ncon clarines y al son de trompetas,\naclamad al Rey y Señor. R.",
+  "hasAudio": false,
+  "dia": "Jueves",
   "respuesta": "R. El Señor da a conocer su victoria.",
+  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4. 5-6 (R.: 2a)",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -36,20 +41,14 @@
       "aclamad al Rey y Señor. R."
     ]
   ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclamad al Señor, tierra entera;\ngritad, vitoread, tocad. R.\n\nTañed la cítara para el Señor,\nsuenen los instrumentos:\ncon clarines y al son de trompetas,\naclamad al Rey y Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 28 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 97 1 2 3ab 3cd 4 5 6 r 2a semana 28 semana xxviii jueves 28 xxviii r el senor da a conocer su victoria cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclamad al senor tierra entera gritad vitoread tocad r taned la citara para el senor suenen los instrumentos con clarines y al son de trompetas aclamad al rey y senor r",
   "lizq": [
     {
-      "line": "R. El Señor da a conocer su victoria.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor da a conocer su victoria."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cantad al Señor un cántico nuevo,",
@@ -60,8 +59,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "su diestra le ha dado la victoria,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su diestra le ha dado la victoria,"
     },
     {
       "line": "su santo brazo. R.",
@@ -84,20 +83,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en favor de la casa de Israel. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en favor de la casa de Israel. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Los confines de la tierra han contemplado",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los confines de la tierra han contemplado"
     },
     {
-      "line": "la victoria de nuestro Dios.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la victoria de nuestro Dios."
     },
     {
       "line": "Aclamad al Señor, tierra entera;",
@@ -124,8 +123,9 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "aclamad al Rey y Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "aclamad al Rey y Señor. R."
     }
-  ]
+  ],
+  "id": "seup_166"
 }

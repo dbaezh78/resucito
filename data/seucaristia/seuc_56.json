@@ -1,49 +1,12 @@
 {
-  "id": "seuc_56",
-  "title": "Domingo de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 31, 1-2. 5. 7. 11 (R.: cf. 5c)",
-  "salmo": "Salmo responsorial: Salmo 31, 1-2. 5. 7. 11 (R.: cf. 5c)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 511,
-  "respuesta": "R. Perdona, Señor, mi culpa y mi pecado.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Dichoso el que está absuelto de su culpa,",
-      "a quien le han sepultado su pecado;",
-      "dichoso el hombre a quien el Señor",
-      "no le apunta el delito. R."
-    ],
-    [
-      "Había pecado, lo reconocí,",
-      "no te encubrí mi delito;",
-      "propuse: «Confesaré al Señor mi culpa»,",
-      "y tú perdonaste mi culpa y mi pecado. R."
-    ],
-    [
-      "Tú eres mi refugio, me libras del peligro,",
-      "me rodeas de cantos de liberación.",
-      "Alegraos, justos, y gozad con el Señor;",
-      "aclamadlo, los de corazón sincero. R."
-    ]
-  ],
-  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»,\ny tú perdonaste mi culpa y mi pecado. R.\n\nTú eres mi refugio, me libras del peligro,\nme rodeas de cantos de liberación.\nAlegraos, justos, y gozad con el Señor;\naclamadlo, los de corazón sincero. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 11 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 31 1 2 5 7 11 r cf 5c r perdona senor mi culpa y mi pecado dichoso el que esta absuelto de su culpa a quien le han sepultado su pecado dichoso el hombre a quien el senor no le apunta el delito r habia pecado lo reconoci no te encubri mi delito propuse confesare al senor mi culpa y tu perdonaste mi culpa y mi pecado r tu eres mi refugio me libras del peligro me rodeas de cantos de liberacion alegraos justos y gozad con el senor aclamadlo los de corazon sincero r",
   "lizq": [
     {
       "line": "R. Perdona, Señor, mi culpa y mi pecado.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Dichoso el que está absuelto de su culpa,",
@@ -70,28 +33,28 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "no te encubrí mi delito;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no te encubrí mi delito;"
     },
     {
-      "line": "propuse: «Confesaré al Señor mi culpa»,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "propuse: «Confesaré al Señor mi culpa»,"
     },
     {
       "line": "y tú perdonaste mi culpa y mi pecado. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Tú eres mi refugio, me libras del peligro,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú eres mi refugio, me libras del peligro,"
     },
     {
-      "line": "me rodeas de cantos de liberación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me rodeas de cantos de liberación."
     },
     {
       "line": "Alegraos, justos, y gozad con el Señor;",
@@ -101,5 +64,42 @@
       "line": "aclamadlo, los de corazón sincero. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Ciclo C",
+  "searchPool": "domingo de la 11 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 31 1 2 5 7 11 r cf 5c r perdona senor mi culpa y mi pecado dichoso el que esta absuelto de su culpa a quien le han sepultado su pecado dichoso el hombre a quien el senor no le apunta el delito r habia pecado lo reconoci no te encubri mi delito propuse confesare al senor mi culpa y tu perdonaste mi culpa y mi pecado r tu eres mi refugio me libras del peligro me rodeas de cantos de liberacion alegraos justos y gozad con el senor aclamadlo los de corazon sincero r",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»,\ny tú perdonaste mi culpa y mi pecado. R.\n\nTú eres mi refugio, me libras del peligro,\nme rodeas de cantos de liberación.\nAlegraos, justos, y gozad con el Señor;\naclamadlo, los de corazón sincero. R.",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 31, 1-2. 5. 7. 11 (R.: cf. 5c)",
+  "tiempo": "Tiempo Ordinario",
+  "celebracion": "Domingo de la 11ª semana de Tiempo Ordinario",
+  "dia": "Domingo",
+  "id": "seuc_56",
+  "title": "Domingo de la 11ª semana de Tiempo Ordinario",
+  "respuesta": "R. Perdona, Señor, mi culpa y mi pecado.",
+  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 31, 1-2. 5. 7. 11 (R.: cf. 5c)",
+  "estrofas": [
+    [
+      "Dichoso el que está absuelto de su culpa,",
+      "a quien le han sepultado su pecado;",
+      "dichoso el hombre a quien el Señor",
+      "no le apunta el delito. R."
+    ],
+    [
+      "Había pecado, lo reconocí,",
+      "no te encubrí mi delito;",
+      "propuse: «Confesaré al Señor mi culpa»,",
+      "y tú perdonaste mi culpa y mi pecado. R."
+    ],
+    [
+      "Tú eres mi refugio, me libras del peligro,",
+      "me rodeas de cantos de liberación.",
+      "Alegraos, justos, y gozad con el Señor;",
+      "aclamadlo, los de corazón sincero. R."
+    ]
+  ],
+  "orden": 511
 }

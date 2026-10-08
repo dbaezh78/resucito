@@ -1,15 +1,6 @@
 {
-  "id": "seui_111",
-  "title": "Miércoles de la 19ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 19ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 65, 1-3a. 5 y 8. 16-17 (R.: cf. 20a y 9a)",
   "salmo": "Salmo responsorial: Salmo 65, 1-3a. 5 y 8. 16-17 (R.: cf. 20a y 9a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5193,
-  "respuesta": "R. Bendito sea Dios, que me ha devuelto la vida.",
-  "respuestaOpcional": "",
+  "searchPool": "miercoles de la 19 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 65 1 3a 5 y 8 16 17 r cf 20a y 9a semana 19 semana xix miercoles 19 xix r bendito sea dios que me ha devuelto la vida aclama al senor tierra entera tocad en honor de su nombre cantad himnos a su gloria decid a dios que temibles son tus obras r venid a ver las obras de dios sus temibles proezas en favor de los hombres bendecid pueblos a nuestro dios haced resonar sus alabanzas r fieles de dios venid a escuchar os contare lo que ha hecho conmigo a el grito mi boca y lo ensalzo mi lengua r",
   "estrofas": [
     [
       "Aclama al Señor, tierra entera;",
@@ -30,16 +21,22 @@
       "y lo ensalzó mi lengua. R."
     ]
   ],
-  "textoCompleto": "Aclama al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué temibles son tus obras!». R.\n\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres.\nBendecid, pueblos, a nuestro Dios,\nhaced resonar sus alabanzas. R.\n\nFieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo:\na él gritó mi boca\ny lo ensalzó mi lengua. R.",
-  "sourceBook": "eucaristia",
+  "ciclo": "Año Impar",
+  "orden": 5193,
+  "tiempo": "Tiempo Ordinario",
   "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "title": "Miércoles de la 19ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
   "catCanto": "Salmo Eucaristía",
+  "id": "seui_111",
   "hasAudio": false,
-  "searchPool": "miercoles de la 19 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 65 1 3a 5 y 8 16 17 r cf 20a y 9a semana 19 semana xix miercoles 19 xix r bendito sea dios que me ha devuelto la vida aclama al senor tierra entera tocad en honor de su nombre cantad himnos a su gloria decid a dios que temibles son tus obras r venid a ver las obras de dios sus temibles proezas en favor de los hombres bendecid pueblos a nuestro dios haced resonar sus alabanzas r fieles de dios venid a escuchar os contare lo que ha hecho conmigo a el grito mi boca y lo ensalzo mi lengua r",
+  "respuesta": "R. Bendito sea Dios, que me ha devuelto la vida.",
+  "textoCompleto": "Aclama al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué temibles son tus obras!». R.\n\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres.\nBendecid, pueblos, a nuestro Dios,\nhaced resonar sus alabanzas. R.\n\nFieles de Dios, venid a escuchar,\nos contaré lo que ha hecho conmigo:\na él gritó mi boca\ny lo ensalzó mi lengua. R.",
   "lizq": [
     {
-      "line": "R. Bendito sea Dios, que me ha devuelto la vida.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Bendito sea Dios, que me ha devuelto la vida."
     },
     {
       "line": "",
@@ -50,8 +47,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tocad en honor de su nombre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tocad en honor de su nombre,"
     },
     {
       "line": "cantad himnos a su gloria.",
@@ -66,12 +63,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Venid a ver las obras de Dios,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Venid a ver las obras de Dios,"
     },
     {
-      "line": "sus temibles proezas en favor de los hombres.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "sus temibles proezas en favor de los hombres."
     },
     {
       "line": "Bendecid, pueblos, a nuestro Dios,",
@@ -101,5 +98,8 @@
       "line": "y lo ensalzó mi lengua. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Miércoles de la 19ª semana de Tiempo Ordinario",
+  "dia": "Miércoles",
+  "subtitle": "Salmo responsorial: Salmo 65, 1-3a. 5 y 8. 16-17 (R.: cf. 20a y 9a)"
 }

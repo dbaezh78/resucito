@@ -1,47 +1,10 @@
 {
-  "id": "seui_098",
-  "title": "Martes de la 17ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 17ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 102, 6-7. 8-9. 10-11. 12-13 (R.: 8a)",
-  "salmo": "Salmo responsorial: Salmo 102, 6-7. 8-9. 10-11. 12-13 (R.: 8a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5172,
-  "respuesta": "R. El Señor es compasivo y misericordioso.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "El Señor hace justicia",
-      "y defiende a todos los oprimidos;",
-      "enseñó sus caminos a Moisés",
-      "y sus hazañas a los hijos de Israel. R."
-    ],
-    [
-      "El Señor es compasivo y misericordioso,",
-      "lento a la ira y rico en clemencia;",
-      "no está siempre acusando",
-      "ni guarda rencor perpetuo. R."
-    ],
-    [
-      "No nos trata como merecen nuestros pecados",
-      "ni nos paga según nuestras culpas.",
-      "Como se levanta el cielo sobre la tierra,",
-      "se levanta su bondad sobre sus fieles. R."
-    ],
-    [
-      "Como dista el oriente del ocaso,",
-      "así aleja de nosotros nuestros delitos.",
-      "Como un padre siente ternura por sus hijos,",
-      "siente el Señor ternura por sus fieles. R."
-    ]
-  ],
   "textoCompleto": "El Señor hace justicia\ny defiende a todos los oprimidos;\nenseñó sus caminos a Moisés\ny sus hazañas a los hijos de Israel. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno está siempre acusando\nni guarda rencor perpetuo. R.\n\nNo nos trata como merecen nuestros pecados\nni nos paga según nuestras culpas.\nComo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles. R.\n\nComo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos.\nComo un padre siente ternura por sus hijos,\nsiente el Señor ternura por sus fieles. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "dia": "Martes",
+  "celebracion": "Martes de la 17ª semana de Tiempo Ordinario",
   "hasAudio": false,
-  "searchPool": "martes de la 17 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 102 6 7 8 9 10 11 12 13 r 8a semana 17 semana xvii martes 17 xvii r el senor es compasivo y misericordioso el senor hace justicia y defiende a todos los oprimidos enseno sus caminos a moises y sus hazanas a los hijos de israel r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no esta siempre acusando ni guarda rencor perpetuo r no nos trata como merecen nuestros pecados ni nos paga segun nuestras culpas como se levanta el cielo sobre la tierra se levanta su bondad sobre sus fieles r como dista el oriente del ocaso asi aleja de nosotros nuestros delitos como un padre siente ternura por sus hijos siente el senor ternura por sus fieles r",
+  "respuestaOpcional": "",
   "lizq": [
     {
       "line": "R. El Señor es compasivo y misericordioso.",
@@ -52,20 +15,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor hace justicia",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor hace justicia"
     },
     {
-      "line": "y defiende a todos los oprimidos;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y defiende a todos los oprimidos;"
     },
     {
-      "line": "enseñó sus caminos a Moisés",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "enseñó sus caminos a Moisés"
     },
     {
-      "line": "y sus hazañas a los hijos de Israel. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y sus hazañas a los hijos de Israel. R."
     },
     {
       "line": "",
@@ -88,8 +51,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "No nos trata como merecen nuestros pecados",
@@ -116,8 +79,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "así aleja de nosotros nuestros delitos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "así aleja de nosotros nuestros delitos."
     },
     {
       "line": "Como un padre siente ternura por sus hijos,",
@@ -127,5 +90,42 @@
       "line": "siente el Señor ternura por sus fieles. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 102, 6-7. 8-9. 10-11. 12-13 (R.: 8a)",
+  "searchPool": "martes de la 17 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 102 6 7 8 9 10 11 12 13 r 8a semana 17 semana xvii martes 17 xvii r el senor es compasivo y misericordioso el senor hace justicia y defiende a todos los oprimidos enseno sus caminos a moises y sus hazanas a los hijos de israel r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no esta siempre acusando ni guarda rencor perpetuo r no nos trata como merecen nuestros pecados ni nos paga segun nuestras culpas como se levanta el cielo sobre la tierra se levanta su bondad sobre sus fieles r como dista el oriente del ocaso asi aleja de nosotros nuestros delitos como un padre siente ternura por sus hijos siente el senor ternura por sus fieles r",
+  "id": "seui_098",
+  "estrofas": [
+    [
+      "El Señor hace justicia",
+      "y defiende a todos los oprimidos;",
+      "enseñó sus caminos a Moisés",
+      "y sus hazañas a los hijos de Israel. R."
+    ],
+    [
+      "El Señor es compasivo y misericordioso,",
+      "lento a la ira y rico en clemencia;",
+      "no está siempre acusando",
+      "ni guarda rencor perpetuo. R."
+    ],
+    [
+      "No nos trata como merecen nuestros pecados",
+      "ni nos paga según nuestras culpas.",
+      "Como se levanta el cielo sobre la tierra,",
+      "se levanta su bondad sobre sus fieles. R."
+    ],
+    [
+      "Como dista el oriente del ocaso,",
+      "así aleja de nosotros nuestros delitos.",
+      "Como un padre siente ternura por sus hijos,",
+      "siente el Señor ternura por sus fieles. R."
+    ]
+  ],
+  "respuesta": "R. El Señor es compasivo y misericordioso.",
+  "title": "Martes de la 17ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "orden": 5172,
+  "ciclo": "Año Impar",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 102, 6-7. 8-9. 10-11. 12-13 (R.: 8a)"
 }

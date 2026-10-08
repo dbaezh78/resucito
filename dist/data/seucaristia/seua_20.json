@@ -1,15 +1,5 @@
 {
-  "id": "seua_20",
-  "title": "Jueves santo - Misa de la cena del Señor",
-  "celebracion": "Jueves santo - Misa de la cena del Señor",
-  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 15-16bc. 17-18 (R.: cf. 1 Co 10, 16)",
-  "salmo": "Salmo responsorial: Salmo 115, 12-13. 15-16bc. 17-18 (R.: cf. 1 Co 10, 16)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Cuaresma",
-  "dia": "Jueves",
-  "orden": 315,
-  "respuesta": "R. El cáliz de la bendición es comunión con la sangre de Cristo.",
-  "respuestaOpcional": "",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "¿Cómo pagaré al Señor",
@@ -31,12 +21,16 @@
       "en presencia de todo el pueblo. R."
     ]
   ],
+  "searchPool": "jueves santo misa de la cena del senor ciclo a cuaresma jueves salmo responsorial salmo 115 12 13 15 16bc 17 18 r cf 1 co 10 16 r el caliz de la bendicion es comunion con la sangre de cristo como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r mucho le cuesta al senor la muerte de sus fieles senor yo soy tu siervo hijo de tu esclava rompiste mis cadenas r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
+  "id": "seua_20",
+  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 15-16bc. 17-18 (R.: cf. 1 Co 10, 16)",
+  "catCanto": "Salmo Eucaristía",
   "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nMucho le cuesta al Señor\nla muerte de sus fieles.\nSeñor, yo soy tu siervo,\nhijo de tu esclava;\nrompiste mis cadenas. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves santo misa de la cena del senor ciclo a cuaresma jueves salmo responsorial salmo 115 12 13 15 16bc 17 18 r cf 1 co 10 16 r el caliz de la bendicion es comunion con la sangre de cristo como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r mucho le cuesta al senor la muerte de sus fieles senor yo soy tu siervo hijo de tu esclava rompiste mis cadenas r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
+  "ciclo": "Ciclo A",
+  "tiempo": "Cuaresma",
+  "respuesta": "R. El cáliz de la bendición es comunión con la sangre de Cristo.",
+  "title": "Jueves santo - Misa de la cena del Señor",
   "lizq": [
     {
       "line": "R. El cáliz de la bendición",
@@ -63,16 +57,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "invocando su nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "invocando su nombre. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Mucho le cuesta al Señor",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Mucho le cuesta al Señor"
     },
     {
       "line": "la muerte de sus fieles.",
@@ -83,16 +77,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "hijo de tu esclava;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hijo de tu esclava;"
     },
     {
       "line": "rompiste mis cadenas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Te ofreceré un sacrificio de alabanza,",
@@ -110,5 +104,11 @@
       "line": "en presencia de todo el pueblo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "orden": 315,
+  "dia": "Jueves",
+  "salmo": "Salmo responsorial: Salmo 115, 12-13. 15-16bc. 17-18 (R.: cf. 1 Co 10, 16)",
+  "celebracion": "Jueves santo - Misa de la cena del Señor",
+  "respuestaOpcional": ""
 }

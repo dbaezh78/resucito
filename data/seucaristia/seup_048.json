@@ -1,15 +1,4 @@
 {
-  "id": "seup_048",
-  "title": "Sábado de la 8ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 8ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 62, 2. 3-4. 5-6 (R.: 2b )",
-  "salmo": "Salmo responsorial: Salmo 62, 2. 3-4. 5-6 (R.: 2b )",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5086,
-  "respuesta": "R. Mi alma está sedienta de ti, Señor, Dios mío.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Oh Dios, tú eres mi Dios, por ti madrugo,",
@@ -30,20 +19,18 @@
       "y mis labios te alabarán jubilosos. R."
     ]
   ],
-  "textoCompleto": "Oh Dios, tú eres mi Dios, por ti madrugo,\nmi alma está sedienta de ti;\nmi carne tiene ansia de ti,\ncomo tierra reseca, agostada, sin agua. R.\n\n¡Cómo te contemplaba en el santuario\nviendo tu fuerza y tu gloria!\nTu gracia vale más que la vida,\nte alabarán mis labios. R.\n\nToda mi vida te bendeciré\ny alzaré las manos invocándote.\nMe saciaré como de enjundia y de manteca,\ny mis labios te alabarán jubilosos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par",
+  "id": "seup_048",
   "hasAudio": false,
-  "searchPool": "sabado de la 8 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 62 2 3 4 5 6 r 2b semana 8 semana viii sabado 8 viii r mi alma esta sedienta de ti senor dios mio oh dios tu eres mi dios por ti madrugo mi alma esta sedienta de ti mi carne tiene ansia de ti como tierra reseca agostada sin agua r como te contemplaba en el santuario viendo tu fuerza y tu gloria tu gracia vale mas que la vida te alabaran mis labios r toda mi vida te bendecire y alzare las manos invocandote me saciare como de enjundia y de manteca y mis labios te alabaran jubilosos r",
+  "orden": 5086,
   "lizq": [
     {
-      "line": "R. Mi alma está sedienta de ti, Señor, Dios mío.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Mi alma está sedienta de ti, Señor, Dios mío."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Oh Dios, tú eres mi Dios, por ti madrugo,",
@@ -54,8 +41,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mi carne tiene ansia de ti,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mi carne tiene ansia de ti,"
     },
     {
       "line": "como tierra reseca, agostada, sin agua. R.",
@@ -78,28 +65,41 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "te alabarán mis labios. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "te alabarán mis labios. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Toda mi vida te bendeciré",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Toda mi vida te bendeciré"
     },
     {
-      "line": "y alzaré las manos invocándote.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y alzaré las manos invocándote."
     },
     {
       "line": "Me saciaré como de enjundia y de manteca,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y mis labios te alabarán jubilosos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y mis labios te alabarán jubilosos. R."
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 62, 2. 3-4. 5-6 (R.: 2b )",
+  "title": "Sábado de la 8ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 8ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 62, 2. 3-4. 5-6 (R.: 2b )",
+  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "textoCompleto": "Oh Dios, tú eres mi Dios, por ti madrugo,\nmi alma está sedienta de ti;\nmi carne tiene ansia de ti,\ncomo tierra reseca, agostada, sin agua. R.\n\n¡Cómo te contemplaba en el santuario\nviendo tu fuerza y tu gloria!\nTu gracia vale más que la vida,\nte alabarán mis labios. R.\n\nToda mi vida te bendeciré\ny alzaré las manos invocándote.\nMe saciaré como de enjundia y de manteca,\ny mis labios te alabarán jubilosos. R.",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "searchPool": "sabado de la 8 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 62 2 3 4 5 6 r 2b semana 8 semana viii sabado 8 viii r mi alma esta sedienta de ti senor dios mio oh dios tu eres mi dios por ti madrugo mi alma esta sedienta de ti mi carne tiene ansia de ti como tierra reseca agostada sin agua r como te contemplaba en el santuario viendo tu fuerza y tu gloria tu gracia vale mas que la vida te alabaran mis labios r toda mi vida te bendecire y alzare las manos invocandote me saciare como de enjundia y de manteca y mis labios te alabaran jubilosos r",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Mi alma está sedienta de ti, Señor, Dios mío."
 }

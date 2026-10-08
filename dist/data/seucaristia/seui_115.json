@@ -1,15 +1,11 @@
 {
-  "id": "seui_115",
-  "title": "Lunes de la 20ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 20ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 105, 34-35. 36-37. 39-40. 43ab y 44 (R.: cf. 4a)",
-  "salmo": "Salmo responsorial: Salmo 105, 34-35. 36-37. 39-40. 43ab y 44 (R.: cf. 4a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5201,
-  "respuesta": "R. Acuérdate de nosotros, Señor, por amor a tu pueblo.",
   "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "No exterminaron a los pueblos\nque el Señor les había mandado;\nemparentaron con los gentiles,\naprendieron sus costumbres. R.\n\nDieron culto a sus ídolos,\nque les sirvieron de trampa;\ninmolaron a sus propios hijos\ny a sus hijas a los demonios. R.\n\nSe mancharon con sus acciones,\nse prostituyeron con sus maldades.\nLa ira del Señor se encendió contra su pueblo,\ny aborreció a su heredad. R.\n\nMuchas veces los libró,\nmas ellos se obstinaron en su rebelión.\nPero él miró su angustia\ncuando escuchó sus gritos. R.",
+  "title": "Lunes de la 20ª semana de Tiempo Ordinario",
+  "orden": 5201,
+  "tiempo": "Tiempo Ordinario",
+  "respuesta": "R. Acuérdate de nosotros, Señor, por amor a tu pueblo.",
   "estrofas": [
     [
       "No exterminaron a los pueblos",
@@ -36,32 +32,35 @@
       "cuando escuchó sus gritos. R."
     ]
   ],
-  "textoCompleto": "No exterminaron a los pueblos\nque el Señor les había mandado;\nemparentaron con los gentiles,\naprendieron sus costumbres. R.\n\nDieron culto a sus ídolos,\nque les sirvieron de trampa;\ninmolaron a sus propios hijos\ny a sus hijas a los demonios. R.\n\nSe mancharon con sus acciones,\nse prostituyeron con sus maldades.\nLa ira del Señor se encendió contra su pueblo,\ny aborreció a su heredad. R.\n\nMuchas veces los libró,\nmas ellos se obstinaron en su rebelión.\nPero él miró su angustia\ncuando escuchó sus gritos. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "id": "seui_115",
+  "salmo": "Salmo responsorial: Salmo 105, 34-35. 36-37. 39-40. 43ab y 44 (R.: cf. 4a)",
+  "dia": "Lunes",
+  "ciclo": "Año Impar",
+  "celebracion": "Lunes de la 20ª semana de Tiempo Ordinario",
   "searchPool": "lunes de la 20 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 105 34 35 36 37 39 40 43ab y 44 r cf 4a semana 20 semana xx lunes 20 xx r acuerdate de nosotros senor por amor a tu pueblo no exterminaron a los pueblos que el senor les habia mandado emparentaron con los gentiles aprendieron sus costumbres r dieron culto a sus idolos que les sirvieron de trampa inmolaron a sus propios hijos y a sus hijas a los demonios r se mancharon con sus acciones se prostituyeron con sus maldades la ira del senor se encendio contra su pueblo y aborrecio a su heredad r muchas veces los libro mas ellos se obstinaron en su rebelion pero el miro su angustia cuando escucho sus gritos r",
+  "subtitle": "Salmo responsorial: Salmo 105, 34-35. 36-37. 39-40. 43ab y 44 (R.: cf. 4a)",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
-      "line": "R. Acuérdate de nosotros, Señor, por amor a tu pueblo.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Acuérdate de nosotros, Señor, por amor a tu pueblo."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "No exterminaron a los pueblos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No exterminaron a los pueblos"
     },
     {
-      "line": "que el Señor les había mandado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que el Señor les había mandado;"
     },
     {
-      "line": "emparentaron con los gentiles,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "emparentaron con los gentiles,"
     },
     {
       "line": "aprendieron sus costumbres. R.",
@@ -80,8 +79,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "inmolaron a sus propios hijos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "inmolaron a sus propios hijos"
     },
     {
       "line": "y a sus hijas a los demonios. R.",
@@ -92,20 +91,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Se mancharon con sus acciones,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Se mancharon con sus acciones,"
     },
     {
       "line": "se prostituyeron con sus maldades.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "La ira del Señor se encendió contra su pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "La ira del Señor se encendió contra su pueblo,"
     },
     {
-      "line": "y aborreció a su heredad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y aborreció a su heredad. R."
     },
     {
       "line": "",
@@ -127,5 +126,6 @@
       "line": "cuando escuchó sus gritos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false
 }

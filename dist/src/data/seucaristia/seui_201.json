@@ -1,45 +1,10 @@
 {
-  "id": "seui_201",
-  "title": "Miércoles de la 34ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 34ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Daniel 3, 62. 63. 64. 65. 66. 67",
-  "salmo": "Interleccional: Daniel 3, 62. 63. 64. 65. 66. 67",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Miércoles",
-  "orden": 5343,
-  "respuesta": "R. Ensalzadlo con himnos por los siglos.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Sol y luna, bendecid al Señor. R."
-    ],
-    [
-      "Astros del cielo, bendecid al Señor. R."
-    ],
-    [
-      "Lluvia y rocío, bendecid al Señor. R."
-    ],
-    [
-      "Vientos todos, bendecid al Señor. R."
-    ],
-    [
-      "Fuego y calor, bendecid al Señor. R."
-    ],
-    [
-      "Fríos y heladas, bendecid al Señor. R."
-    ]
-  ],
-  "textoCompleto": "Sol y luna, bendecid al Señor. R.\n\nAstros del cielo, bendecid al Señor. R.\n\nLluvia y rocío, bendecid al Señor. R.\n\nVientos todos, bendecid al Señor. R.\n\nFuego y calor, bendecid al Señor. R.\n\nFríos y heladas, bendecid al Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 34 semana de tiempo ordinario ano impar tiempo ordinario miercoles interleccional daniel 3 62 63 64 65 66 67 semana 34 semana xxxiv miercoles 34 xxxiv r ensalzadlo con himnos por los siglos sol y luna bendecid al senor r astros del cielo bendecid al senor r lluvia y rocio bendecid al senor r vientos todos bendecid al senor r fuego y calor bendecid al senor r frios y heladas bendecid al senor r",
+  "ciclo": "Año Impar",
   "lizq": [
     {
-      "line": "R. Ensalzadlo con himnos por los siglos.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Ensalzadlo con himnos por los siglos."
     },
     {
       "line": "",
@@ -74,20 +39,55 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Fuego y calor, bendecid al Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Fríos y heladas, bendecid al Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. Ensalzadlo con himnos por los siglos.",
+  "salmo": "Interleccional: Daniel 3, 62. 63. 64. 65. 66. 67",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "miercoles de la 34 semana de tiempo ordinario ano impar tiempo ordinario miercoles interleccional daniel 3 62 63 64 65 66 67 semana 34 semana xxxiv miercoles 34 xxxiv r ensalzadlo con himnos por los siglos sol y luna bendecid al senor r astros del cielo bendecid al senor r lluvia y rocio bendecid al senor r vientos todos bendecid al senor r fuego y calor bendecid al senor r frios y heladas bendecid al senor r",
+  "textoCompleto": "Sol y luna, bendecid al Señor. R.\n\nAstros del cielo, bendecid al Señor. R.\n\nLluvia y rocío, bendecid al Señor. R.\n\nVientos todos, bendecid al Señor. R.\n\nFuego y calor, bendecid al Señor. R.\n\nFríos y heladas, bendecid al Señor. R.",
+  "stage": "Liturgia",
+  "orden": 5343,
+  "title": "Miércoles de la 34ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Sol y luna, bendecid al Señor. R."
+    ],
+    [
+      "Astros del cielo, bendecid al Señor. R."
+    ],
+    [
+      "Lluvia y rocío, bendecid al Señor. R."
+    ],
+    [
+      "Vientos todos, bendecid al Señor. R."
+    ],
+    [
+      "Fuego y calor, bendecid al Señor. R."
+    ],
+    [
+      "Fríos y heladas, bendecid al Señor. R."
+    ]
+  ],
+  "sourceBook": "eucaristia",
+  "respuestaOpcional": "",
+  "id": "seui_201",
+  "celebracion": "Miércoles de la 34ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "subtitle": "Interleccional: Daniel 3, 62. 63. 64. 65. 66. 67",
+  "hasAudio": false
 }

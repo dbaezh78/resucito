@@ -1,15 +1,98 @@
 {
-  "id": "seui_023",
-  "title": "Viernes de la 4ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 4ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 26, 1. 3. 5. 8b-9abc (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 26, 1. 3. 5. 8b-9abc (R.: 1a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5045,
-  "respuesta": "R. El Señor es mi luz y mi salvación.",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "",
+  "celebracion": "Viernes de la 4ª semana de Tiempo Ordinario",
+  "lizq": [
+    {
+      "line": "R. El Señor es mi luz y mi salvación.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "El Señor es mi luz y mi salvación,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿a quién temeré?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor es la defensa de mi vida,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "¿quién me hará temblar? R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Si un ejército acampa contra mí,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "mi corazón no tiembla;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "si me declaran la guerra,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me siento tranquilo. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Él me protegerá en su tienda"
+    },
+    {
+      "line": "el día del peligro;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me esconderá en lo escondido de su morada,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "me alzará sobre la roca. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Tu rostro buscaré, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no me escondas tu rostro."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "No rechaces con ira a tu siervo,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que tú eres mi auxilio;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "no me deseches. R."
+    }
+  ],
+  "dia": "Viernes",
   "estrofas": [
     [
       "El Señor es mi luz y mi salvación,",
@@ -37,100 +120,17 @@
       "no me deseches. R."
     ]
   ],
-  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nSi un ejército acampa contra mí,\nmi corazón no tiembla;\nsi me declaran la guerra,\nme siento tranquilo. R.\n\nÉl me protegerá en su tienda\nel día del peligro;\nme esconderá en lo escondido de su morada,\nme alzará sobre la roca. R.\n\nTu rostro buscaré, Señor,\nno me escondas tu rostro.\nNo rechaces con ira a tu siervo,\nque tú eres mi auxilio;\nno me deseches. R.",
+  "subtitle": "Salmo responsorial: Salmo 26, 1. 3. 5. 8b-9abc (R.: 1a)",
+  "title": "Viernes de la 4ª semana de Tiempo Ordinario",
+  "id": "seui_023",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuesta": "R. El Señor es mi luz y mi salvación.",
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nSi un ejército acampa contra mí,\nmi corazón no tiembla;\nsi me declaran la guerra,\nme siento tranquilo. R.\n\nÉl me protegerá en su tienda\nel día del peligro;\nme esconderá en lo escondido de su morada,\nme alzará sobre la roca. R.\n\nTu rostro buscaré, Señor,\nno me escondas tu rostro.\nNo rechaces con ira a tu siervo,\nque tú eres mi auxilio;\nno me deseches. R.",
+  "salmo": "Salmo responsorial: Salmo 26, 1. 3. 5. 8b-9abc (R.: 1a)",
+  "tiempo": "Tiempo Ordinario",
   "searchPool": "viernes de la 4 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 26 1 3 5 8b 9abc r 1a semana 4 semana iv viernes 4 iv r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r si un ejercito acampa contra mi mi corazon no tiembla si me declaran la guerra me siento tranquilo r el me protegera en su tienda el dia del peligro me escondera en lo escondido de su morada me alzara sobre la roca r tu rostro buscare senor no me escondas tu rostro no rechaces con ira a tu siervo que tu eres mi auxilio no me deseches r",
-  "lizq": [
-    {
-      "line": "R. El Señor es mi luz y mi salvación.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es mi luz y mi salvación,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "¿a quién temeré?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor es la defensa de mi vida,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿quién me hará temblar? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Si un ejército acampa contra mí,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "mi corazón no tiembla;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "si me declaran la guerra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me siento tranquilo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Él me protegerá en su tienda",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el día del peligro;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me esconderá en lo escondido de su morada,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me alzará sobre la roca. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tu rostro buscaré, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "no me escondas tu rostro.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "No rechaces con ira a tu siervo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tú eres mi auxilio;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no me deseches. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "ciclo": "Año Impar",
+  "hasAudio": false,
+  "orden": 5045,
+  "stage": "Liturgia"
 }

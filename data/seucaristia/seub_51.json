@@ -1,15 +1,13 @@
 {
-  "id": "seub_51",
+  "searchPool": "domingo de la 9 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 80 3 4 5 6ab 6c 8a 10 11ab r 2a r aclamad a dios nuestra fuerza acompanad tocad los panderos las citaras templadas y las arpas tocad la trompeta por la luna nueva por la luna llena que es nuestra fiesta r porque es una ley de israel un precepto del dios de jacob una norma establecida para jose al salir de egipto r oigo un lenguaje desconocido retire sus hombros de la carga y sus manos dejaron la espuerta clamaste en la afliccion y te libre r no tendras un dios extrano no adoraras un dios extranjero yo soy el senor dios tuyo que te saque del pais de egipto r",
   "title": "Domingo de la 9ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 9ª semana de Tiempo Ordinario",
+  "respuesta": "R. Aclamad a Dios, nuestra fuerza.",
+  "textoCompleto": "Acompañad, tocad los panderos,\nlas cítaras templadas y las arpas;\ntocad la trompeta por la luna nueva,\npor la luna llena, que es nuestra fiesta. R.\n\nPorque es una ley de Israel,\nun precepto del Dios de Jacob,\nuna norma establecida para José\nal salir de Egipto. R.\n\nOigo un lenguaje desconocido:\n«Retiré sus hombros de la carga,\ny sus manos dejaron la espuerta;\nclamaste en la aflicción, y te libré. R.\n\nNo tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto». R.",
   "subtitle": "Salmo responsorial: Salmo 80, 3-4. 5-6ab. 6c-8a. 10-11ab (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 80, 3-4. 5-6ab. 6c-8a. 10-11ab (R.: 2a)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
   "dia": "Domingo",
   "orden": 509,
-  "respuesta": "R. Aclamad a Dios, nuestra fuerza.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Acompañad, tocad los panderos,",
@@ -36,40 +34,38 @@
       "que te saqué del país de Egipto». R."
     ]
   ],
-  "textoCompleto": "Acompañad, tocad los panderos,\nlas cítaras templadas y las arpas;\ntocad la trompeta por la luna nueva,\npor la luna llena, que es nuestra fiesta. R.\n\nPorque es una ley de Israel,\nun precepto del Dios de Jacob,\nuna norma establecida para José\nal salir de Egipto. R.\n\nOigo un lenguaje desconocido:\n«Retiré sus hombros de la carga,\ny sus manos dejaron la espuerta;\nclamaste en la aflicción, y te libré. R.\n\nNo tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto». R.",
-  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 80, 3-4. 5-6ab. 6c-8a. 10-11ab (R.: 2a)",
+  "respuestaOpcional": "",
+  "celebracion": "Domingo de la 9ª semana de Tiempo Ordinario",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 9 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 80 3 4 5 6ab 6c 8a 10 11ab r 2a r aclamad a dios nuestra fuerza acompanad tocad los panderos las citaras templadas y las arpas tocad la trompeta por la luna nueva por la luna llena que es nuestra fiesta r porque es una ley de israel un precepto del dios de jacob una norma establecida para jose al salir de egipto r oigo un lenguaje desconocido retire sus hombros de la carga y sus manos dejaron la espuerta clamaste en la afliccion y te libre r no tendras un dios extrano no adoraras un dios extranjero yo soy el senor dios tuyo que te saque del pais de egipto r",
   "lizq": [
     {
-      "line": "R. Aclamad a Dios, nuestra fuerza.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aclamad a Dios, nuestra fuerza."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Acompañad, tocad los panderos,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "las cítaras templadas y las arpas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "las cítaras templadas y las arpas;"
     },
     {
       "line": "tocad la trompeta por la luna nueva,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "por la luna llena, que es nuestra fiesta. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "por la luna llena, que es nuestra fiesta. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Porque es una ley de Israel,",
@@ -84,8 +80,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "al salir de Egipto. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "al salir de Egipto. R."
     },
     {
       "line": "",
@@ -112,8 +108,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "No tendrás un dios extraño,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No tendrás un dios extraño,"
     },
     {
       "line": "no adorarás un dios extranjero;",
@@ -127,5 +123,9 @@
       "line": "que te saqué del país de Egipto». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "id": "seub_51",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Ciclo B"
 }

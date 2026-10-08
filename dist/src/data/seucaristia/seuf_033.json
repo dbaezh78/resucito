@@ -1,10 +1,7 @@
 {
-  "id": "seuf_033",
-  "title": "6 de enero: Antes de Epifanía",
-  "celebracion": "6 de enero: Antes de Epifanía",
+  "respuesta": "R. Glorifica al Señor, Jerusalén.",
   "subtitle": "Salmo 147,12-13.14-15. 19-20 (R.: 12a)",
-  "salmo": "Salmo 147,12-13.14-15. 19-20 (R.: 12a)",
-  "ciclo": "Ciclo A, B y C",
+  "catCanto": "Salmo Eucaristía",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +9,6 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Navidad",
-  "dia": "Feria",
-  "orden": 226,
-  "respuesta": "R. Glorifica al Señor, Jerusalén.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Glorifica al Señor, Jerusalén;",
@@ -37,11 +29,10 @@
       "ni les dio a conocer sus mandatos. R."
     ]
   ],
+  "stage": "Liturgia",
   "textoCompleto": "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nHa puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "ciclo": "Ciclo A, B y C",
   "searchPool": "6 de enero antes de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad feria salmo 147 12 13 14 15 19 20 r 12a feria r glorifica al senor jerusalen glorifica al senor jerusalen alaba a tu dios sion que ha reforzado los cerrojos de tus puertas y ha bendecido a tus hijos dentro de ti r ha puesto paz en tus fronteras te sacia con flor de harina el envia su mensaje a la tierra y su palabra corre veloz r anuncia su palabra a jacob sus decretos y mandatos a israel con ninguna nacion obro asi ni les dio a conocer sus mandatos r",
   "lizq": [
     {
@@ -53,12 +44,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Glorifica al Señor, Jerusalén;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Glorifica al Señor, Jerusalén;"
     },
     {
-      "line": "alaba a tu Dios, Sión:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alaba a tu Dios, Sión:"
     },
     {
       "line": "que ha reforzado los cerrojos de tus puertas,",
@@ -73,8 +64,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Ha puesto paz en tus fronteras,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Ha puesto paz en tus fronteras,"
     },
     {
       "line": "te sacia con flor de harina.",
@@ -105,8 +96,17 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ni les dio a conocer sus mandatos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ni les dio a conocer sus mandatos. R."
     }
-  ]
+  ],
+  "orden": 226,
+  "respuestaOpcional": "",
+  "tiempo": "Navidad",
+  "title": "6 de enero: Antes de Epifanía",
+  "hasAudio": false,
+  "dia": "Feria",
+  "celebracion": "6 de enero: Antes de Epifanía",
+  "id": "seuf_033",
+  "salmo": "Salmo 147,12-13.14-15. 19-20 (R.: 12a)"
 }

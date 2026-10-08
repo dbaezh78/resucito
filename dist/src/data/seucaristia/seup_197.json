@@ -1,15 +1,6 @@
 {
-  "id": "seup_197",
-  "title": "Viernes de la 33ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
   "celebracion": "Viernes de la 33ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 14. 24. 72. 103. 111. 131 (R.: 103a)",
-  "salmo": "Salmo responsorial: Salmo 118, 14. 24. 72. 103. 111. 131 (R.: 103a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5335,
-  "respuesta": "R. ¡Qué dulce al paladar tu promesa!",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Mi alegría es el camino de tus preceptos,",
@@ -36,12 +27,20 @@
       "ansiando tus mandamientos. R."
     ]
   ],
-  "textoCompleto": "Mi alegría es el camino de tus preceptos,\nmás que todas las riquezas. R.\n\nTus preceptos son mi delicia,\ntus decretos son mis consejeros. R.\n\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\n¡Qué dulce al paladar tu promesa:\nmás que miel en la boca! R.\n\nTus preceptos son mi herencia perpetua,\nla alegría de mi corazón. R.\n\nAbro la boca y respiro,\nansiando tus mandamientos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "dia": "Viernes",
   "hasAudio": false,
+  "textoCompleto": "Mi alegría es el camino de tus preceptos,\nmás que todas las riquezas. R.\n\nTus preceptos son mi delicia,\ntus decretos son mis consejeros. R.\n\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\n¡Qué dulce al paladar tu promesa:\nmás que miel en la boca! R.\n\nTus preceptos son mi herencia perpetua,\nla alegría de mi corazón. R.\n\nAbro la boca y respiro,\nansiando tus mandamientos. R.",
+  "salmo": "Salmo responsorial: Salmo 118, 14. 24. 72. 103. 111. 131 (R.: 103a)",
+  "id": "seup_197",
+  "subtitle": "Salmo responsorial: Salmo 118, 14. 24. 72. 103. 111. 131 (R.: 103a)",
+  "orden": 5335,
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "respuesta": "R. ¡Qué dulce al paladar tu promesa!",
+  "title": "Viernes de la 33ª semana de Tiempo Ordinario",
   "searchPool": "viernes de la 33 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 118 14 24 72 103 111 131 r 103a semana 33 semana xxxiii viernes 33 xxxiii r que dulce al paladar tu promesa mi alegria es el camino de tus preceptos mas que todas las riquezas r tus preceptos son mi delicia tus decretos son mis consejeros r mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r que dulce al paladar tu promesa mas que miel en la boca r tus preceptos son mi herencia perpetua la alegria de mi corazon r abro la boca y respiro ansiando tus mandamientos r",
+  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía",
   "lizq": [
     {
       "line": "R. ¡Qué dulce al paladar tu promesa!",
@@ -60,12 +59,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Tus preceptos son mi delicia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tus preceptos son mi delicia,"
     },
     {
       "line": "tus decretos son mis consejeros. R.",
@@ -80,12 +79,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que miles de monedas de oro y plata. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que miles de monedas de oro y plata. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "¡Qué dulce al paladar tu promesa:",
@@ -100,12 +99,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tus preceptos son mi herencia perpetua,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tus preceptos son mi herencia perpetua,"
     },
     {
-      "line": "la alegría de mi corazón. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "la alegría de mi corazón. R."
     },
     {
       "line": "",
@@ -119,5 +118,6 @@
       "line": "ansiando tus mandamientos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": ""
 }

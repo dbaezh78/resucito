@@ -1,63 +1,34 @@
 {
-  "id": "seub_55",
-  "title": "Domingo de la 13ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 13ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 513,
-  "respuesta": "R. Te ensalzaré, Señor, porque me has librado.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Te ensalzaré, Señor, porque me has librado",
-      "y no has dejado que mis enemigos se rían de mí.",
-      "Señor, sacaste mi vida del abismo,",
-      "me hiciste revivir cuando bajaba a la fosa. R."
-    ],
-    [
-      "Tañed para el Señor, fieles suyos,",
-      "dad gracias a su nombre santo;",
-      "su cólera dura un instante;",
-      "su bondad, de por vida;",
-      "al atardecer nos visita el llanto;",
-      "por la mañana, el júbilo. R."
-    ],
-    [
-      "Escucha, Señor, y ten piedad de mí;",
-      "Señor, socórreme.",
-      "Cambiaste mi luto en danzas.",
-      "Señor, Dios mío, te daré gracias por siempre. R."
-    ]
-  ],
   "textoCompleto": "Te ensalzaré, Señor, porque me has librado\ny no has dejado que mis enemigos se rían de mí.\nSeñor, sacaste mi vida del abismo,\nme hiciste revivir cuando bajaba a la fosa. R.\n\nTañed para el Señor, fieles suyos,\ndad gracias a su nombre santo;\nsu cólera dura un instante;\nsu bondad, de por vida;\nal atardecer nos visita el llanto;\npor la mañana, el júbilo. R.\n\nEscucha, Señor, y ten piedad de mí;\nSeñor, socórreme.\nCambiaste mi luto en danzas.\nSeñor, Dios mío, te daré gracias por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
+  "respuestaOpcional": "",
+  "respuesta": "R. Te ensalzaré, Señor, porque me has librado.",
+  "title": "Domingo de la 13ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
   "searchPool": "domingo de la 13 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 29 2 y 4 5 6 11 y 12a y 13b r 2a r te ensalzare senor porque me has librado te ensalzare senor porque me has librado y no has dejado que mis enemigos se rian de mi senor sacaste mi vida del abismo me hiciste revivir cuando bajaba a la fosa r taned para el senor fieles suyos dad gracias a su nombre santo su colera dura un instante su bondad de por vida al atardecer nos visita el llanto por la manana el jubilo r escucha senor y ten piedad de mi senor socorreme cambiaste mi luto en danzas senor dios mio te dare gracias por siempre r",
+  "orden": 513,
+  "dia": "Domingo",
   "lizq": [
     {
       "line": "R. Te ensalzaré, Señor, porque me has librado.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Te ensalzaré, Señor, porque me has librado",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Te ensalzaré, Señor, porque me has librado"
     },
     {
-      "line": "y no has dejado que mis enemigos se rían de mí.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no has dejado que mis enemigos se rían de mí."
     },
     {
-      "line": "Señor, sacaste mi vida del abismo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, sacaste mi vida del abismo,"
     },
     {
       "line": "me hiciste revivir cuando bajaba a la fosa. R.",
@@ -84,8 +55,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "al atardecer nos visita el llanto;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "al atardecer nos visita el llanto;"
     },
     {
       "line": "por la mañana, el júbilo. R.",
@@ -104,12 +75,41 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Cambiaste mi luto en danzas.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Cambiaste mi luto en danzas."
     },
     {
       "line": "Señor, Dios mío, te daré gracias por siempre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "estrofas": [
+    [
+      "Te ensalzaré, Señor, porque me has librado",
+      "y no has dejado que mis enemigos se rían de mí.",
+      "Señor, sacaste mi vida del abismo,",
+      "me hiciste revivir cuando bajaba a la fosa. R."
+    ],
+    [
+      "Tañed para el Señor, fieles suyos,",
+      "dad gracias a su nombre santo;",
+      "su cólera dura un instante;",
+      "su bondad, de por vida;",
+      "al atardecer nos visita el llanto;",
+      "por la mañana, el júbilo. R."
+    ],
+    [
+      "Escucha, Señor, y ten piedad de mí;",
+      "Señor, socórreme.",
+      "Cambiaste mi luto en danzas.",
+      "Señor, Dios mío, te daré gracias por siempre. R."
+    ]
+  ],
+  "ciclo": "Ciclo B",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
+  "celebracion": "Domingo de la 13ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "id": "seub_55"
 }

@@ -1,15 +1,98 @@
 {
-  "id": "seup_156",
-  "title": "Sábado de la 26ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 26ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 66. 71. 75. 91. 125. 130 (R.: 135a)",
-  "salmo": "Salmo responsorial: Salmo 118, 66. 71. 75. 91. 125. 130 (R.: 135a)",
+  "catCanto": "Salmo Eucaristía",
+  "respuestaOpcional": "",
   "ciclo": "Año Par",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
+  "id": "seup_156",
+  "title": "Sábado de la 26ª semana de Tiempo Ordinario",
+  "textoCompleto": "Enséñame a gustar y a comprender,\nporque me fío de tus mandatos. R.\n\nMe estuvo bien el sufrir,\nasí aprendí tus mandamientos. R.\n\nReconozco, Señor, que tus mandamientos son justos,\nque con razón me hiciste sufrir. R.\n\nPor tu mandamiento subsisten hasta hoy,\nporque todo está a tu servicio. R.\n\nYo soy tu siervo: dame inteligencia,\ny conoceré tus preceptos. R.\n\nLa explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.",
   "orden": 5266,
+  "subtitle": "Salmo responsorial: Salmo 118, 66. 71. 75. 91. 125. 130 (R.: 135a)",
+  "salmo": "Salmo responsorial: Salmo 118, 66. 71. 75. 91. 125. 130 (R.: 135a)",
+  "dia": "Sábado",
+  "searchPool": "sabado de la 26 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 118 66 71 75 91 125 130 r 135a semana 26 semana xxvi sabado 26 xxvi r haz brillar senor tu rostro sobre tu siervo ensename a gustar y a comprender porque me fio de tus mandatos r me estuvo bien el sufrir asi aprendi tus mandamientos r reconozco senor que tus mandamientos son justos que con razon me hiciste sufrir r por tu mandamiento subsisten hasta hoy porque todo esta a tu servicio r yo soy tu siervo dame inteligencia y conocere tus preceptos r la explicacion de tus palabras ilumina da inteligencia a los ignorantes r",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Haz brillar, Señor, tu rostro sobre tu siervo."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Enséñame a gustar y a comprender,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque me fío de tus mandatos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Me estuvo bien el sufrir,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "así aprendí tus mandamientos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Reconozco, Señor, que tus mandamientos son justos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que con razón me hiciste sufrir. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Por tu mandamiento subsisten hasta hoy,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque todo está a tu servicio. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Yo soy tu siervo: dame inteligencia,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y conoceré tus preceptos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "La explicación de tus palabras ilumina,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "da inteligencia a los ignorantes. R."
+    }
+  ],
+  "hasAudio": false,
   "respuesta": "R. Haz brillar, Señor, tu rostro sobre tu siervo.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "celebracion": "Sábado de la 26ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Enséñame a gustar y a comprender,",
@@ -36,88 +119,5 @@
       "da inteligencia a los ignorantes. R."
     ]
   ],
-  "textoCompleto": "Enséñame a gustar y a comprender,\nporque me fío de tus mandatos. R.\n\nMe estuvo bien el sufrir,\nasí aprendí tus mandamientos. R.\n\nReconozco, Señor, que tus mandamientos son justos,\nque con razón me hiciste sufrir. R.\n\nPor tu mandamiento subsisten hasta hoy,\nporque todo está a tu servicio. R.\n\nYo soy tu siervo: dame inteligencia,\ny conoceré tus preceptos. R.\n\nLa explicación de tus palabras ilumina,\nda inteligencia a los ignorantes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 26 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 118 66 71 75 91 125 130 r 135a semana 26 semana xxvi sabado 26 xxvi r haz brillar senor tu rostro sobre tu siervo ensename a gustar y a comprender porque me fio de tus mandatos r me estuvo bien el sufrir asi aprendi tus mandamientos r reconozco senor que tus mandamientos son justos que con razon me hiciste sufrir r por tu mandamiento subsisten hasta hoy porque todo esta a tu servicio r yo soy tu siervo dame inteligencia y conocere tus preceptos r la explicacion de tus palabras ilumina da inteligencia a los ignorantes r",
-  "lizq": [
-    {
-      "line": "R. Haz brillar, Señor, tu rostro sobre tu siervo.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Enséñame a gustar y a comprender,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "porque me fío de tus mandatos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Me estuvo bien el sufrir,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "así aprendí tus mandamientos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Reconozco, Señor, que tus mandamientos son justos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que con razón me hiciste sufrir. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Por tu mandamiento subsisten hasta hoy,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "porque todo está a tu servicio. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Yo soy tu siervo: dame inteligencia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y conoceré tus preceptos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "La explicación de tus palabras ilumina,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "da inteligencia a los ignorantes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "stage": "Liturgia"
 }

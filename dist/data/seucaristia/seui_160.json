@@ -1,15 +1,99 @@
 {
-  "id": "seui_160",
-  "title": "Jueves de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 1, 1-2a. 3. 4 y 6 (R.: Sal 39, 5a)",
-  "salmo": "Salmo responsorial: Salmo 1, 1-2a. 3. 4 y 6 (R.: Sal 39, 5a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5274,
-  "respuesta": "R. Dichoso el hombre que ha puesto su confianza en el Señor.",
   "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 1, 1-2a. 3. 4 y 6 (R.: Sal 39, 5a)",
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false,
+  "id": "seui_160",
+  "celebracion": "Jueves de la 27ª semana de Tiempo Ordinario",
+  "ciclo": "Año Impar",
+  "textoCompleto": "Dichoso el hombre que no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dichoso el hombre que ha puesto"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "su confianza en el Señor."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso el hombre que no sigue el consejo de los impíos,"
+    },
+    {
+      "line": "ni entra por la senda de los pecadores,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ni se sienta en la reunión de los cínicos;"
+    },
+    {
+      "line": "sino que su gozo es la ley del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y medita su ley día y noche. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Será como árbol",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "plantado al borde de la acequia:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "da fruto en su sazón",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no se marchitan sus hojas;"
+    },
+    {
+      "line": "y cuanto emprende tiene buen fin. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No así los impíos, no así;"
+    },
+    {
+      "line": "serán paja que arrebata el viento.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Porque el Señor protege el camino de los justos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero el camino de los impíos acaba mal. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 1, 1-2a. 3. 4 y 6 (R.: Sal 39, 5a)",
+  "stage": "Liturgia",
+  "searchPool": "jueves de la 27 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 1 1 2a 3 4 y 6 r sal 39 5a semana 27 semana xxvii jueves 27 xxvii r dichoso el hombre que ha puesto su confianza en el senor dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
+  "orden": 5274,
+  "dia": "Jueves",
+  "sourceBook": "eucaristia",
+  "title": "Jueves de la 27ª semana de Tiempo Ordinario",
+  "respuesta": "R. Dichoso el hombre que ha puesto su confianza en el Señor.",
   "estrofas": [
     [
       "Dichoso el hombre que no sigue el consejo de los impíos,",
@@ -31,89 +115,5 @@
       "Porque el Señor protege el camino de los justos,",
       "pero el camino de los impíos acaba mal. R."
     ]
-  ],
-  "textoCompleto": "Dichoso el hombre que no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 27 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 1 1 2a 3 4 y 6 r sal 39 5a semana 27 semana xxvii jueves 27 xxvii r dichoso el hombre que ha puesto su confianza en el senor dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
-  "lizq": [
-    {
-      "line": "R. Dichoso el hombre que ha puesto",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "su confianza en el Señor.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichoso el hombre que no sigue el consejo de los impíos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ni entra por la senda de los pecadores,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ni se sienta en la reunión de los cínicos;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sino que su gozo es la ley del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y medita su ley día y noche. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Será como árbol",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "plantado al borde de la acequia:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "da fruto en su sazón",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y no se marchitan sus hojas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y cuanto emprende tiene buen fin. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "No así los impíos, no así;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "serán paja que arrebata el viento.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Porque el Señor protege el camino de los justos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "pero el camino de los impíos acaba mal. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
   ]
 }

@@ -1,15 +1,99 @@
 {
-  "id": "seuc_49",
-  "title": "Domingo de la 4ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 4ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 70, 1-2. 3-4a. 5-6ab. 15ab y 17 (R.: cf. 15ab)",
-  "salmo": "Salmo responsorial: Salmo 70, 1-2. 3-4a. 5-6ab. 15ab y 17 (R.: cf. 15ab)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Domingo",
-  "orden": 504,
-  "respuesta": "R. Mi boca contará tu salvación, Señor.",
-  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Mi boca contará tu salvación, Señor."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "A ti, Señor, me acojo:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "no quede yo derrotado para siempre;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú que eres justo, líbrame y ponme a salvo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "inclina a mí tu oído, y sálvame. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Sé tú mi roca de refugio,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el alcázar donde me salve,"
+    },
+    {
+      "line": "porque mi peña y mi alcázar eres tú,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Dios mío, líbrame de la mano perversa. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque tú, Dios mío, fuiste mi esperanza",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y mi confianza, Señor, desde mi juventud.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "En el vientre materno ya me apoyaba en ti,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "en el seno tú me sostenías. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Mi boca contará tu auxilio,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y todo el día tu salvación."
+    },
+    {
+      "line": "Dios mío, me instruiste desde mi juventud,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y hasta hoy relato tus maravillas. R."
+    }
+  ],
+  "celebracion": "Domingo de la 4ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "searchPool": "domingo de la 4 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 70 1 2 3 4a 5 6ab 15ab y 17 r cf 15ab r mi boca contara tu salvacion senor a ti senor me acojo no quede yo derrotado para siempre tu que eres justo librame y ponme a salvo inclina a mi tu oido y salvame r se tu mi roca de refugio el alcazar donde me salve porque mi pena y mi alcazar eres tu dios mio librame de la mano perversa r porque tu dios mio fuiste mi esperanza y mi confianza senor desde mi juventud en el vientre materno ya me apoyaba en ti en el seno tu me sostenias r mi boca contara tu auxilio y todo el dia tu salvacion dios mio me instruiste desde mi juventud y hasta hoy relato tus maravillas r",
+  "subtitle": "Salmo responsorial: Salmo 70, 1-2. 3-4a. 5-6ab. 15ab y 17 (R.: cf. 15ab)",
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Ciclo C",
+  "id": "seuc_49",
   "estrofas": [
     [
       "A ti, Señor, me acojo:",
@@ -36,96 +120,12 @@
       "y hasta hoy relato tus maravillas. R."
     ]
   ],
+  "title": "Domingo de la 4ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 504,
+  "respuesta": "R. Mi boca contará tu salvación, Señor.",
+  "salmo": "Salmo responsorial: Salmo 70, 1-2. 3-4a. 5-6ab. 15ab y 17 (R.: cf. 15ab)",
+  "respuestaOpcional": "",
   "textoCompleto": "A ti, Señor, me acojo:\nno quede yo derrotado para siempre;\ntú que eres justo, líbrame y ponme a salvo,\ninclina a mí tu oído, y sálvame. R.\n\nSé tú mi roca de refugio,\nel alcázar donde me salve,\nporque mi peña y mi alcázar eres tú,\nDios mío, líbrame de la mano perversa. R.\n\nPorque tú, Dios mío, fuiste mi esperanza\ny mi confianza, Señor, desde mi juventud.\nEn el vientre materno ya me apoyaba en ti,\nen el seno tú me sostenías. R.\n\nMi boca contará tu auxilio,\ny todo el día tu salvación.\nDios mío, me instruiste desde mi juventud,\ny hasta hoy relato tus maravillas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 4 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 70 1 2 3 4a 5 6ab 15ab y 17 r cf 15ab r mi boca contara tu salvacion senor a ti senor me acojo no quede yo derrotado para siempre tu que eres justo librame y ponme a salvo inclina a mi tu oido y salvame r se tu mi roca de refugio el alcazar donde me salve porque mi pena y mi alcazar eres tu dios mio librame de la mano perversa r porque tu dios mio fuiste mi esperanza y mi confianza senor desde mi juventud en el vientre materno ya me apoyaba en ti en el seno tu me sostenias r mi boca contara tu auxilio y todo el dia tu salvacion dios mio me instruiste desde mi juventud y hasta hoy relato tus maravillas r",
-  "lizq": [
-    {
-      "line": "R. Mi boca contará tu salvación, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "A ti, Señor, me acojo:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "no quede yo derrotado para siempre;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tú que eres justo, líbrame y ponme a salvo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "inclina a mí tu oído, y sálvame. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Sé tú mi roca de refugio,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el alcázar donde me salve,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "porque mi peña y mi alcázar eres tú,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Dios mío, líbrame de la mano perversa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Porque tú, Dios mío, fuiste mi esperanza",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y mi confianza, Señor, desde mi juventud.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "En el vientre materno ya me apoyaba en ti,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en el seno tú me sostenías. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Mi boca contará tu auxilio,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y todo el día tu salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Dios mío, me instruiste desde mi juventud,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y hasta hoy relato tus maravillas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "hasAudio": false
 }

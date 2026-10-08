@@ -1,15 +1,4 @@
 {
-  "id": "seua_59",
-  "title": "Domingo de la 15ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 15ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 64, 10. 11. 12-13. 14 (R.: Lc 8, 8)",
-  "salmo": "Salmo responsorial: Salmo 64, 10. 11. 12-13. 14 (R.: Lc 8, 8)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 515,
-  "respuesta": "R. La semilla cayó en tierra buena y dio fruto.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Tú cuidas de la tierra, la riegas",
@@ -35,11 +24,10 @@
     ]
   ],
   "textoCompleto": "Tú cuidas de la tierra, la riegas\ny la enriqueces sin medida;\nla acequia de Dios va llena de agua,\npreparas los trigales. R.\n\nRiegas los surcos, igualas los terrones,\ntu llovizna los deja mullidos,\nbendices sus brotes. R.\n\nCoronas el año con tus bienes,\ntus carriles rezuman abundancia;\nrezuman los pastos del páramo,\ny las colinas se orlan de alegría. R.\n\nLas praderas se cubren de rebaños,\ny los valles se visten de mieses,\nque aclaman y cantan. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "title": "Domingo de la 15ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 64, 10. 11. 12-13. 14 (R.: Lc 8, 8)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 15 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 64 10 11 12 13 14 r lc 8 8 r la semilla cayo en tierra buena y dio fruto tu cuidas de la tierra la riegas y la enriqueces sin medida la acequia de dios va llena de agua preparas los trigales r riegas los surcos igualas los terrones tu llovizna los deja mullidos bendices sus brotes r coronas el ano con tus bienes tus carriles rezuman abundancia rezuman los pastos del paramo y las colinas se orlan de alegria r las praderas se cubren de rebanos y los valles se visten de mieses que aclaman y cantan r",
+  "orden": 515,
   "lizq": [
     {
       "line": "R. La semilla cayó en tierra buena",
@@ -66,16 +54,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "preparas los trigales. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "preparas los trigales. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Riegas los surcos, igualas los terrones,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Riegas los surcos, igualas los terrones,"
     },
     {
       "line": "tu llovizna los deja mullidos,",
@@ -90,12 +78,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Coronas el año con tus bienes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Coronas el año con tus bienes,"
     },
     {
-      "line": "tus carriles rezuman abundancia;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tus carriles rezuman abundancia;"
     },
     {
       "line": "rezuman los pastos del páramo,",
@@ -106,8 +94,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Las praderas se cubren de rebaños,",
@@ -121,5 +109,17 @@
       "line": "que aclaman y cantan. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Domingo",
+  "searchPool": "domingo de la 15 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 64 10 11 12 13 14 r lc 8 8 r la semilla cayo en tierra buena y dio fruto tu cuidas de la tierra la riegas y la enriqueces sin medida la acequia de dios va llena de agua preparas los trigales r riegas los surcos igualas los terrones tu llovizna los deja mullidos bendices sus brotes r coronas el ano con tus bienes tus carriles rezuman abundancia rezuman los pastos del paramo y las colinas se orlan de alegria r las praderas se cubren de rebanos y los valles se visten de mieses que aclaman y cantan r",
+  "salmo": "Salmo responsorial: Salmo 64, 10. 11. 12-13. 14 (R.: Lc 8, 8)",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "id": "seua_59",
+  "celebracion": "Domingo de la 15ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "respuesta": "R. La semilla cayó en tierra buena y dio fruto.",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Ciclo A"
 }

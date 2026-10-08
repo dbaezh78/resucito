@@ -1,15 +1,9 @@
 {
-  "id": "seui_059",
-  "title": "Viernes de la 10ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 10ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 115, 10-11. 15-16. 17-18 (R.: 17a)",
-  "salmo": "Salmo responsorial: Salmo 115, 10-11. 15-16. 17-18 (R.: 17a)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
+  "id": "seui_059",
   "dia": "Viernes",
-  "orden": 5105,
-  "respuesta": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
-  "respuestaOpcional": "R. Aleluya.",
+  "title": "Viernes de la 10ª semana de Tiempo Ordinario",
+  "searchPool": "viernes de la 10 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 115 10 11 15 16 17 18 r 17a semana 10 semana x viernes 10 x r te ofrecere senor un sacrificio de alabanza r aleluya tenia fe aun cuando dije que desgraciado soy yo decia en mi apuro los hombres son unos mentirosos r mucho le cuesta al senor la muerte de sus fieles senor yo soy tu siervo siervo tuyo hijo de tu esclava rompiste mis cadenas r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
   "estrofas": [
     [
       "Tenía fe, aun cuando dije:",
@@ -31,12 +25,9 @@
       "en presencia de todo el pueblo. R."
     ]
   ],
-  "textoCompleto": "Tenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nYo decía en mi apuro:\n«Los hombres son unos mentirosos». R.\n\nMucho le cuesta al Señor\nla muerte de sus fieles.\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 10 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 115 10 11 15 16 17 18 r 17a semana 10 semana x viernes 10 x r te ofrecere senor un sacrificio de alabanza r aleluya tenia fe aun cuando dije que desgraciado soy yo decia en mi apuro los hombres son unos mentirosos r mucho le cuesta al senor la muerte de sus fieles senor yo soy tu siervo siervo tuyo hijo de tu esclava rompiste mis cadenas r te ofrecere un sacrificio de alabanza invocando tu nombre senor cumplire al senor mis votos en presencia de todo el pueblo r",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
       "line": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
@@ -51,12 +42,12 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Tenía fe, aun cuando dije:",
@@ -67,44 +58,44 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Yo decía en mi apuro:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Yo decía en mi apuro:"
     },
     {
       "line": "«Los hombres son unos mentirosos». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Mucho le cuesta al Señor",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "la muerte de sus fieles.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la muerte de sus fieles."
     },
     {
-      "line": "Señor, yo soy tu siervo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, yo soy tu siervo,"
     },
     {
       "line": "siervo tuyo, hijo de tu esclava:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "rompiste mis cadenas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "rompiste mis cadenas. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Te ofreceré un sacrificio de alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Te ofreceré un sacrificio de alabanza,"
     },
     {
       "line": "invocando tu nombre, Señor.",
@@ -118,5 +109,14 @@
       "line": "en presencia de todo el pueblo. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5105,
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 115, 10-11. 15-16. 17-18 (R.: 17a)",
+  "hasAudio": false,
+  "respuesta": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
+  "subtitle": "Salmo responsorial: Salmo 115, 10-11. 15-16. 17-18 (R.: 17a)",
+  "respuestaOpcional": "R. Aleluya.",
+  "celebracion": "Viernes de la 10ª semana de Tiempo Ordinario",
+  "textoCompleto": "Tenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nYo decía en mi apuro:\n«Los hombres son unos mentirosos». R.\n\nMucho le cuesta al Señor\nla muerte de sus fieles.\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas. R.\n\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor.\nCumpliré al Señor mis votos\nen presencia de todo el pueblo. R."
 }

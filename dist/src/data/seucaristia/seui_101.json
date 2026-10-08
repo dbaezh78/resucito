@@ -1,14 +1,81 @@
 {
-  "id": "seui_101",
-  "title": "Viernes de la 17ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 17ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 80, 3-4. 5-6ab. 10-11ab (R.: 2a)",
   "salmo": "Salmo responsorial: Salmo 80, 3-4. 5-6ab. 10-11ab (R.: 2a)",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
+  "id": "seui_101",
+  "hasAudio": false,
   "orden": 5175,
-  "respuesta": "R. Aclamad a Dios, nuestra fuerza.",
+  "tiempo": "Tiempo Ordinario",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aclamad a Dios, nuestra fuerza."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Acompañad, tocad los panderos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "las cítaras templadas y las arpas;"
+    },
+    {
+      "line": "tocad la trompeta por la luna nueva,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "por la luna llena, que es nuestra fiesta. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Porque es una ley de Israel,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "un precepto del Dios de Jacob,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "una norma establecida para José"
+    },
+    {
+      "line": "al salir de Egipto. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«No tendrás un dios extraño,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no adorarás un dios extranjero;"
+    },
+    {
+      "line": "yo soy el Señor, Dios tuyo,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que te saqué del país de Egipto». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "stage": "Liturgia",
+  "title": "Viernes de la 17ª semana de Tiempo Ordinario",
+  "textoCompleto": "Acompañad, tocad los panderos,\nlas cítaras templadas y las arpas;\ntocad la trompeta por la luna nueva,\npor la luna llena, que es nuestra fiesta. R.\n\nPorque es una ley de Israel,\nun precepto del Dios de Jacob,\nuna norma establecida para José\nal salir de Egipto. R.\n\n«No tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto». R.",
+  "subtitle": "Salmo responsorial: Salmo 80, 3-4. 5-6ab. 10-11ab (R.: 2a)",
+  "celebracion": "Viernes de la 17ª semana de Tiempo Ordinario",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -30,76 +97,9 @@
       "que te saqué del país de Egipto». R."
     ]
   ],
-  "textoCompleto": "Acompañad, tocad los panderos,\nlas cítaras templadas y las arpas;\ntocad la trompeta por la luna nueva,\npor la luna llena, que es nuestra fiesta. R.\n\nPorque es una ley de Israel,\nun precepto del Dios de Jacob,\nuna norma establecida para José\nal salir de Egipto. R.\n\n«No tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "viernes de la 17 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 80 3 4 5 6ab 10 11ab r 2a semana 17 semana xvii viernes 17 xvii r aclamad a dios nuestra fuerza acompanad tocad los panderos las citaras templadas y las arpas tocad la trompeta por la luna nueva por la luna llena que es nuestra fiesta r porque es una ley de israel un precepto del dios de jacob una norma establecida para jose al salir de egipto r no tendras un dios extrano no adoraras un dios extranjero yo soy el senor dios tuyo que te saque del pais de egipto r",
-  "lizq": [
-    {
-      "line": "R. Aclamad a Dios, nuestra fuerza.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Acompañad, tocad los panderos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "las cítaras templadas y las arpas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tocad la trompeta por la luna nueva,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "por la luna llena, que es nuestra fiesta. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Porque es una ley de Israel,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "un precepto del Dios de Jacob,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "una norma establecida para José",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "al salir de Egipto. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«No tendrás un dios extraño,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "no adorarás un dios extranjero;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "yo soy el Señor, Dios tuyo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que te saqué del país de Egipto». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "sourceBook": "eucaristia",
+  "dia": "Viernes",
+  "respuesta": "R. Aclamad a Dios, nuestra fuerza.",
+  "catCanto": "Salmo Eucaristía"
 }

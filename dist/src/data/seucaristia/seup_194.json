@@ -1,15 +1,67 @@
 {
-  "id": "seup_194",
   "title": "Martes de la 33ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 33ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: Ap 3, 21)",
-  "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: Ap 3, 21)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5332,
-  "respuesta": "R. Al que salga vencedor lo sentaré en mi trono, junto a mí.",
-  "respuestaOpcional": "",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Al que salga vencedor lo sentaré en mi trono, junto a mí."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El que procede honradamente"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y practica la justicia,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el que tiene intenciones leales"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y no calumnia con su lengua. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El que no hace mal a su prójimo",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "ni difama al vecino,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el que considera despreciable al impío"
+    },
+    {
+      "line": "y honra a los que temen al Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El que no presta dinero a usura"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ni acepta soborno contra el inocente."
+    },
+    {
+      "line": "El que así obra nunca fallará. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "estrofas": [
     [
       "El que procede honradamente",
@@ -29,72 +81,20 @@
       "El que así obra nunca fallará. R."
     ]
   ],
+  "id": "seup_194",
+  "orden": 5332,
+  "celebracion": "Martes de la 33ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
   "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel que tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nEl que así obra nunca fallará. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Al que salga vencedor lo sentaré en mi trono, junto a mí.",
+  "dia": "Martes",
   "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: Ap 3, 21)",
+  "ciclo": "Año Par",
   "searchPool": "martes de la 33 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 14 2 3ab 3cd 4ab 5 r ap 3 21 semana 33 semana xxxiii martes 33 xxxiii r al que salga vencedor lo sentare en mi trono junto a mi el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r",
-  "lizq": [
-    {
-      "line": "R. Al que salga vencedor lo sentaré en mi trono, junto a mí.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El que procede honradamente",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y practica la justicia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el que tiene intenciones leales",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y no calumnia con su lengua. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El que no hace mal a su prójimo",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ni difama al vecino,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el que considera despreciable al impío",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y honra a los que temen al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El que no presta dinero a usura",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ni acepta soborno contra el inocente.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El que así obra nunca fallará. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: Ap 3, 21)"
 }

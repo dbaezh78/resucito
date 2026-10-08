@@ -1,15 +1,11 @@
 {
-  "id": "seup_164",
-  "title": "Martes de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 28ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 41. 43. 44. 45. 47. 48 (R.: 41a)",
-  "salmo": "Salmo responsorial: Salmo 118, 41. 43. 44. 45. 47. 48 (R.: 41a)",
-  "ciclo": "Año Par",
+  "hasAudio": false,
   "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5282,
-  "respuesta": "R. Señor, que me alcance tu favor.",
+  "salmo": "Salmo responsorial: Salmo 118, 41. 43. 44. 45. 47. 48 (R.: 41a)",
+  "subtitle": "Salmo responsorial: Salmo 118, 41. 43. 44. 45. 47. 48 (R.: 41a)",
+  "textoCompleto": "Señor, que me alcance tu favor,\ntu salvación según tu promesa. R.\n\nNo quites de mi boca las palabras sinceras,\nporque yo espero en tus mandamientos. R.\n\nCumpliré sin cesar tu voluntad,\npor siempre jamás. R.\n\nAndaré por un camino ancho,\nbuscando tus decretos. R.\n\nSerán mi delicia tus mandatos,\nque tanto amo. R.\n\nLevantaré mis manos hacia ti\nrecitando tus mandatos. R.",
   "respuestaOpcional": "",
+  "respuesta": "R. Señor, que me alcance tu favor.",
   "estrofas": [
     [
       "Señor, que me alcance tu favor,",
@@ -36,12 +32,14 @@
       "recitando tus mandatos. R."
     ]
   ],
-  "textoCompleto": "Señor, que me alcance tu favor,\ntu salvación según tu promesa. R.\n\nNo quites de mi boca las palabras sinceras,\nporque yo espero en tus mandamientos. R.\n\nCumpliré sin cesar tu voluntad,\npor siempre jamás. R.\n\nAndaré por un camino ancho,\nbuscando tus decretos. R.\n\nSerán mi delicia tus mandatos,\nque tanto amo. R.\n\nLevantaré mis manos hacia ti\nrecitando tus mandatos. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
+  "ciclo": "Año Par",
+  "celebracion": "Martes de la 28ª semana de Tiempo Ordinario",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "martes de la 28 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 118 41 43 44 45 47 48 r 41a semana 28 semana xxviii martes 28 xxviii r senor que me alcance tu favor senor que me alcance tu favor tu salvacion segun tu promesa r no quites de mi boca las palabras sinceras porque yo espero en tus mandamientos r cumplire sin cesar tu voluntad por siempre jamas r andare por un camino ancho buscando tus decretos r seran mi delicia tus mandatos que tanto amo r levantare mis manos hacia ti recitando tus mandatos r",
+  "orden": 5282,
+  "sourceBook": "eucaristia",
+  "id": "seup_164",
   "lizq": [
     {
       "line": "R. Señor, que me alcance tu favor.",
@@ -56,12 +54,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tu salvación según tu promesa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tu salvación según tu promesa. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "No quites de mi boca las palabras sinceras,",
@@ -72,8 +70,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cumpliré sin cesar tu voluntad,",
@@ -88,24 +86,24 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Andaré por un camino ancho,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Andaré por un camino ancho,"
     },
     {
-      "line": "buscando tus decretos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "buscando tus decretos. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Serán mi delicia tus mandatos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Serán mi delicia tus mandatos,"
     },
     {
-      "line": "que tanto amo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que tanto amo. R."
     },
     {
       "line": "",
@@ -119,5 +117,7 @@
       "line": "recitando tus mandatos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Martes",
+  "title": "Martes de la 28ª semana de Tiempo Ordinario"
 }

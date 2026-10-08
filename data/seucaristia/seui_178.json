@@ -1,15 +1,4 @@
 {
-  "id": "seui_178",
-  "title": "Jueves de la 30ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 30ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 108, 21-22. 26-27. 30-31 (R.: 26b)",
-  "salmo": "Salmo responsorial: Salmo 108, 21-22. 26-27. 30-31 (R.: 26b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5304,
-  "respuesta": "R. Sálvame, señor, por tu bondad.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Tú, Señor, trátame bien, por tu nombre,",
@@ -31,19 +20,16 @@
     ]
   ],
   "textoCompleto": "Tú, Señor, trátame bien, por tu nombre,\nlíbrame con la ternura de tu bondad;\nque yo soy un pobre desvalido,\ny llevo dentro el corazón traspasado. R.\n\nSocórreme, Señor, Dios mío,\nsálvame por tu bondad.\nReconozcan que aquí está tu mano,\nque eres tú, Señor, quien lo ha hecho. R.\n\nYo daré gracias al Señor con voz potente,\nlo alabaré en medio de la multitud:\nporque se puso a la derecha del pobre,\npara salvar su vida de los jueces. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 30 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 108 21 22 26 27 30 31 r 26b semana 30 semana xxx jueves 30 xxx r salvame senor por tu bondad tu senor tratame bien por tu nombre librame con la ternura de tu bondad que yo soy un pobre desvalido y llevo dentro el corazon traspasado r socorreme senor dios mio salvame por tu bondad reconozcan que aqui esta tu mano que eres tu senor quien lo ha hecho r yo dare gracias al senor con voz potente lo alabare en medio de la multitud porque se puso a la derecha del pobre para salvar su vida de los jueces r",
+  "id": "seui_178",
+  "respuestaOpcional": "",
   "lizq": [
     {
-      "line": "R. Sálvame, señor, por tu bondad.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Sálvame, señor, por tu bondad."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Tú, Señor, trátame bien, por tu nombre,",
@@ -58,8 +44,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y llevo dentro el corazón traspasado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y llevo dentro el corazón traspasado. R."
     },
     {
       "line": "",
@@ -78,20 +64,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que eres tú, Señor, quien lo ha hecho. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que eres tú, Señor, quien lo ha hecho. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Yo daré gracias al Señor con voz potente,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "lo alabaré en medio de la multitud:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lo alabaré en medio de la multitud:"
     },
     {
       "line": "porque se puso a la derecha del pobre,",
@@ -101,5 +87,19 @@
       "line": "para salvar su vida de los jueces. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. Sálvame, señor, por tu bondad.",
+  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Jueves de la 30ª semana de Tiempo Ordinario",
+  "dia": "Jueves",
+  "title": "Jueves de la 30ª semana de Tiempo Ordinario",
+  "searchPool": "jueves de la 30 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 108 21 22 26 27 30 31 r 26b semana 30 semana xxx jueves 30 xxx r salvame senor por tu bondad tu senor tratame bien por tu nombre librame con la ternura de tu bondad que yo soy un pobre desvalido y llevo dentro el corazon traspasado r socorreme senor dios mio salvame por tu bondad reconozcan que aqui esta tu mano que eres tu senor quien lo ha hecho r yo dare gracias al senor con voz potente lo alabare en medio de la multitud porque se puso a la derecha del pobre para salvar su vida de los jueces r",
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 5304,
+  "sourceBook": "eucaristia",
+  "subtitle": "Salmo responsorial: Salmo 108, 21-22. 26-27. 30-31 (R.: 26b)",
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 108, 21-22. 26-27. 30-31 (R.: 26b)"
 }

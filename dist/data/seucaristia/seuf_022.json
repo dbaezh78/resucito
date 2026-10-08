@@ -1,22 +1,10 @@
 {
-  "id": "seuf_022",
   "title": "Día 21 de diciembre.",
-  "celebracion": "Día 21 de diciembre.",
-  "subtitle": "Salmo 32, 2-3. 11-12. 20-21 (R.: 1a y 3a)",
-  "salmo": "Salmo 32, 2-3. 11-12. 20-21 (R.: 1a y 3a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Adviento",
-  "dia": "Feria",
   "orden": 175,
-  "respuesta": "R. Aclamad, justos, al Señor, cantadle un cántico nuevo.",
-  "respuestaOpcional": "",
+  "id": "seuf_022",
+  "dia": "Feria",
+  "salmo": "Salmo 32, 2-3. 11-12. 20-21 (R.: 1a y 3a)",
+  "tiempo": "Adviento",
   "estrofas": [
     [
       "Dad gracias al Señor con la cítara,",
@@ -37,20 +25,20 @@
       "en su santo nombre confiamos. R."
     ]
   ],
-  "textoCompleto": "Dad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas;\ncantadle un cántico nuevo,\nacompañando los vítores con bordones. R.\n\nEl plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad.\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\ncon él se alegra nuestro corazón,\nen su santo nombre confiamos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "subtitle": "Salmo 32, 2-3. 11-12. 20-21 (R.: 1a y 3a)",
   "searchPool": "dia 21 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria salmo 32 2 3 11 12 20 21 r 1a y 3a feria r aclamad justos al senor cantadle un cantico nuevo dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas cantadle un cantico nuevo acompanando los vitores con bordones r el plan del senor subsiste por siempre los proyectos de su corazon de edad en edad dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad r nosotros aguardamos al senor el es nuestro auxilio y escudo con el se alegra nuestro corazon en su santo nombre confiamos r",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Dad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas;\ncantadle un cántico nuevo,\nacompañando los vítores con bordones. R.\n\nEl plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad.\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\ncon él se alegra nuestro corazón,\nen su santo nombre confiamos. R.",
   "lizq": [
     {
-      "line": "R. Aclamad, justos, al Señor,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aclamad, justos, al Señor,"
     },
     {
-      "line": "cantadle un cántico nuevo.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "cantadle un cántico nuevo."
     },
     {
       "line": "",
@@ -61,28 +49,28 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tocad en su honor el arpa de diez cuerdas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tocad en su honor el arpa de diez cuerdas;"
     },
     {
-      "line": "cantadle un cántico nuevo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cantadle un cántico nuevo,"
     },
     {
       "line": "acompañando los vítores con bordones. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El plan del Señor subsiste por siempre,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "los proyectos de su corazón, de edad en edad.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los proyectos de su corazón, de edad en edad."
     },
     {
       "line": "Dichosa la nación cuyo Dios es el Señor,",
@@ -97,20 +85,32 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Nosotros aguardamos al Señor:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Nosotros aguardamos al Señor:"
     },
     {
       "line": "él es nuestro auxilio y escudo;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "con él se alegra nuestro corazón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "con él se alegra nuestro corazón,"
     },
     {
-      "line": "en su santo nombre confiamos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en su santo nombre confiamos. R."
     }
-  ]
+  ],
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "respuestaOpcional": "",
+  "hasAudio": false,
+  "respuesta": "R. Aclamad, justos, al Señor, cantadle un cántico nuevo.",
+  "celebracion": "Día 21 de diciembre.",
+  "ciclo": "Ciclo A, B y C"
 }

@@ -1,15 +1,94 @@
 {
-  "id": "seui_093",
-  "title": "Miércoles de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 77, 18-19. 23-24. 25-26. 27-28 (R.: 24b)",
-  "salmo": "Salmo responsorial: Salmo 77, 18-19. 23-24. 25-26. 27-28 (R.: 24b)",
-  "ciclo": "Año Impar",
+  "textoCompleto": "Tentaron a Dios en sus corazones,\npidiendo una comida a su gusto;\nhablaron contra Dios: «¿Podrá Dios\npreparar una mesa en el desierto?». R.\n\nPero dio orden a las nubes,\nabrió las compuertas del cielo:\nhizo llover sobre ellos maná,\nles dio un trigo celeste. R.\n\nY el hombre comió pan de ángeles,\nles mandó provisiones hasta la hartura.\nHizo soplar desde el cielo el levante,\ny dirigió con su fuerza el viento sur. R.\n\nHizo llover carne como una polvareda,\ny volátiles como arena del mar;\nlos hizo caer en mitad del campamento,\nalrededor de sus tiendas. R.",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5163,
+  "catCanto": "Salmo Eucaristía",
   "respuesta": "R. El Señor les dio un trigo celeste.",
-  "respuestaOpcional": "",
+  "lizq": [
+    {
+      "line": "R. El Señor les dio un trigo celeste.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Tentaron a Dios en sus corazones,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "pidiendo una comida a su gusto;"
+    },
+    {
+      "line": "hablaron contra Dios: «¿Podrá Dios",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "preparar una mesa en el desierto?». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Pero dio orden a las nubes,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "abrió las compuertas del cielo:"
+    },
+    {
+      "line": "hizo llover sobre ellos maná,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "les dio un trigo celeste. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Y el hombre comió pan de ángeles,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "les mandó provisiones hasta la hartura."
+    },
+    {
+      "line": "Hizo soplar desde el cielo el levante,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y dirigió con su fuerza el viento sur. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Hizo llover carne como una polvareda,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y volátiles como arena del mar;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "los hizo caer en mitad del campamento,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "alrededor de sus tiendas. R."
+    }
+  ],
   "estrofas": [
     [
       "Tentaron a Dios en sus corazones,",
@@ -36,96 +115,17 @@
       "alrededor de sus tiendas. R."
     ]
   ],
-  "textoCompleto": "Tentaron a Dios en sus corazones,\npidiendo una comida a su gusto;\nhablaron contra Dios: «¿Podrá Dios\npreparar una mesa en el desierto?». R.\n\nPero dio orden a las nubes,\nabrió las compuertas del cielo:\nhizo llover sobre ellos maná,\nles dio un trigo celeste. R.\n\nY el hombre comió pan de ángeles,\nles mandó provisiones hasta la hartura.\nHizo soplar desde el cielo el levante,\ny dirigió con su fuerza el viento sur. R.\n\nHizo llover carne como una polvareda,\ny volátiles como arena del mar;\nlos hizo caer en mitad del campamento,\nalrededor de sus tiendas. R.",
+  "celebracion": "Miércoles de la 16ª semana de Tiempo Ordinario",
+  "dia": "Miércoles",
+  "respuestaOpcional": "",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "title": "Miércoles de la 16ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 77, 18-19. 23-24. 25-26. 27-28 (R.: 24b)",
+  "salmo": "Salmo responsorial: Salmo 77, 18-19. 23-24. 25-26. 27-28 (R.: 24b)",
+  "ciclo": "Año Impar",
+  "id": "seui_093",
   "searchPool": "miercoles de la 16 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 77 18 19 23 24 25 26 27 28 r 24b semana 16 semana xvi miercoles 16 xvi r el senor les dio un trigo celeste tentaron a dios en sus corazones pidiendo una comida a su gusto hablaron contra dios podra dios preparar una mesa en el desierto r pero dio orden a las nubes abrio las compuertas del cielo hizo llover sobre ellos mana les dio un trigo celeste r y el hombre comio pan de angeles les mando provisiones hasta la hartura hizo soplar desde el cielo el levante y dirigio con su fuerza el viento sur r hizo llover carne como una polvareda y volatiles como arena del mar los hizo caer en mitad del campamento alrededor de sus tiendas r",
-  "lizq": [
-    {
-      "line": "R. El Señor les dio un trigo celeste.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tentaron a Dios en sus corazones,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "pidiendo una comida a su gusto;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "hablaron contra Dios: «¿Podrá Dios",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "preparar una mesa en el desierto?». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Pero dio orden a las nubes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "abrió las compuertas del cielo:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "hizo llover sobre ellos maná,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "les dio un trigo celeste. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Y el hombre comió pan de ángeles,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "les mandó provisiones hasta la hartura.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Hizo soplar desde el cielo el levante,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y dirigió con su fuerza el viento sur. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Hizo llover carne como una polvareda,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y volátiles como arena del mar;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los hizo caer en mitad del campamento,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "alrededor de sus tiendas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "orden": 5163,
+  "hasAudio": false,
+  "stage": "Liturgia"
 }

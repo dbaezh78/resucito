@@ -1,15 +1,4 @@
 {
-  "id": "seuc_62",
-  "title": "Domingo de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1a)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 516,
-  "respuesta": "R. Señor, ¿quién puede hospedarse en tu tienda?",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "El que procede honradamente",
@@ -29,16 +18,14 @@
       "el que así obra nunca fallará. R."
     ]
   ],
-  "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel que tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nel que así obra nunca fallará. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1a)",
+  "subtitle": "Salmo responsorial: Salmo 14, 2-3ab. 3cd-4ab. 5 (R.: 1a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 16 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 14 2 3ab 3cd 4ab 5 r 1a r senor quien puede hospedarse en tu tienda el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r",
   "lizq": [
     {
-      "line": "R. Señor, ¿quién puede hospedarse en tu tienda?",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Señor, ¿quién puede hospedarse en tu tienda?"
     },
     {
       "line": "",
@@ -53,8 +40,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "el que tiene intenciones leales",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el que tiene intenciones leales"
     },
     {
       "line": "y no calumnia con su lengua. R.",
@@ -65,8 +52,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El que no hace mal a su prójimo",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El que no hace mal a su prójimo"
     },
     {
       "line": "ni difama al vecino,",
@@ -96,5 +83,18 @@
       "line": "el que así obra nunca fallará. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "El que procede honradamente\ny practica la justicia,\nel que tiene intenciones leales\ny no calumnia con su lengua. R.\n\nEl que no hace mal a su prójimo\nni difama al vecino,\nel que considera despreciable al impío\ny honra a los que temen al Señor. R.\n\nEl que no presta dinero a usura\nni acepta soborno contra el inocente.\nel que así obra nunca fallará. R.",
+  "searchPool": "domingo de la 16 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 14 2 3ab 3cd 4ab 5 r 1a r senor quien puede hospedarse en tu tienda el que procede honradamente y practica la justicia el que tiene intenciones leales y no calumnia con su lengua r el que no hace mal a su projimo ni difama al vecino el que considera despreciable al impio y honra a los que temen al senor r el que no presta dinero a usura ni acepta soborno contra el inocente el que asi obra nunca fallara r",
+  "title": "Domingo de la 16ª semana de Tiempo Ordinario",
+  "id": "seuc_62",
+  "tiempo": "Tiempo Ordinario",
+  "celebracion": "Domingo de la 16ª semana de Tiempo Ordinario",
+  "orden": 516,
+  "respuestaOpcional": "",
+  "dia": "Domingo",
+  "respuesta": "R. Señor, ¿quién puede hospedarse en tu tienda?",
+  "hasAudio": false,
+  "ciclo": "Ciclo C",
+  "stage": "Liturgia"
 }

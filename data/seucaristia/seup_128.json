@@ -1,47 +1,4 @@
 {
-  "id": "seup_128",
-  "title": "Martes de la 22ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 22ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 144, 8-9. 10-11. 12-13ab. 13cb-14 (R.: 17a)",
-  "salmo": "Salmo responsorial: Salmo 144, 8-9. 10-11. 12-13ab. 13cb-14 (R.: 17a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5222,
-  "respuesta": "R. El Señor es justo en todos sus caminos.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "El Señor es clemente y misericordioso,",
-      "lento a la cólera y rico en piedad;",
-      "el Señor es bueno con todos,",
-      "es cariñoso con todas sus criaturas. R."
-    ],
-    [
-      "Que todas tus criaturas te den gracias,",
-      "Señor, que te bendigan tus fieles;",
-      "que proclamen la gloria de tu reinado,",
-      "que hablen de tus hazañas. R."
-    ],
-    [
-      "Explicando tus hazañas a los hombres,",
-      "la gloria y majestad de tu reinado.",
-      "Tu reinado es un reinado perpetuo,",
-      "tu gobierno va de edad en edad. R."
-    ],
-    [
-      "El Señor es fiel a sus palabras,",
-      "bondadoso en todas sus acciones.",
-      "El Señor sostiene a los que van a caer,",
-      "endereza a los que ya se doblan. R."
-    ]
-  ],
-  "textoCompleto": "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias,\nSeñor, que te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nExplicando tus hazañas a los hombres,\nla gloria y majestad de tu reinado.\nTu reinado es un reinado perpetuo,\ntu gobierno va de edad en edad. R.\n\nEl Señor es fiel a sus palabras,\nbondadoso en todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 22 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 144 8 9 10 11 12 13ab 13cb 14 r 17a semana 22 semana xxii martes 22 xxii r el senor es justo en todos sus caminos el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r explicando tus hazanas a los hombres la gloria y majestad de tu reinado tu reinado es un reinado perpetuo tu gobierno va de edad en edad r el senor es fiel a sus palabras bondadoso en todas sus acciones el senor sostiene a los que van a caer endereza a los que ya se doblan r",
   "lizq": [
     {
       "line": "R. El Señor es justo en todos sus caminos.",
@@ -56,8 +13,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "lento a la cólera y rico en piedad;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lento a la cólera y rico en piedad;"
     },
     {
       "line": "el Señor es bueno con todos,",
@@ -84,8 +41,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que hablen de tus hazañas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que hablen de tus hazañas. R."
     },
     {
       "line": "",
@@ -112,20 +69,63 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es fiel a sus palabras,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es fiel a sus palabras,"
     },
     {
       "line": "bondadoso en todas sus acciones.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor sostiene a los que van a caer,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor sostiene a los que van a caer,"
     },
     {
       "line": "endereza a los que ya se doblan. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "El Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias,\nSeñor, que te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.\n\nExplicando tus hazañas a los hombres,\nla gloria y majestad de tu reinado.\nTu reinado es un reinado perpetuo,\ntu gobierno va de edad en edad. R.\n\nEl Señor es fiel a sus palabras,\nbondadoso en todas sus acciones.\nEl Señor sostiene a los que van a caer,\nendereza a los que ya se doblan. R.",
+  "respuestaOpcional": "",
+  "searchPool": "martes de la 22 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 144 8 9 10 11 12 13ab 13cb 14 r 17a semana 22 semana xxii martes 22 xxii r el senor es justo en todos sus caminos el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r explicando tus hazanas a los hombres la gloria y majestad de tu reinado tu reinado es un reinado perpetuo tu gobierno va de edad en edad r el senor es fiel a sus palabras bondadoso en todas sus acciones el senor sostiene a los que van a caer endereza a los que ya se doblan r",
+  "estrofas": [
+    [
+      "El Señor es clemente y misericordioso,",
+      "lento a la cólera y rico en piedad;",
+      "el Señor es bueno con todos,",
+      "es cariñoso con todas sus criaturas. R."
+    ],
+    [
+      "Que todas tus criaturas te den gracias,",
+      "Señor, que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ],
+    [
+      "Explicando tus hazañas a los hombres,",
+      "la gloria y majestad de tu reinado.",
+      "Tu reinado es un reinado perpetuo,",
+      "tu gobierno va de edad en edad. R."
+    ],
+    [
+      "El Señor es fiel a sus palabras,",
+      "bondadoso en todas sus acciones.",
+      "El Señor sostiene a los que van a caer,",
+      "endereza a los que ya se doblan. R."
+    ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 144, 8-9. 10-11. 12-13ab. 13cb-14 (R.: 17a)",
+  "id": "seup_128",
+  "sourceBook": "eucaristia",
+  "dia": "Martes",
+  "celebracion": "Martes de la 22ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 144, 8-9. 10-11. 12-13ab. 13cb-14 (R.: 17a)",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "ciclo": "Año Par",
+  "title": "Martes de la 22ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 5222,
+  "respuesta": "R. El Señor es justo en todos sus caminos."
 }

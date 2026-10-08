@@ -1,59 +1,23 @@
 {
-  "id": "seua_12",
-  "title": "Epifanía del Señor - 6 de enero",
-  "celebracion": "Epifanía del Señor - 6 de enero",
-  "subtitle": "Salmo responsorial: Salmo 71, 1-2. 7-8. 10-11. 12-13 (R.: cf. 11)",
-  "salmo": "Salmo responsorial: Salmo 71, 1-2. 7-8. 10-11. 12-13 (R.: cf. 11)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Navidad",
-  "dia": "Domingo",
-  "orden": 208,
-  "respuesta": "R. Se postrarán ante ti, Señor, todos los reyes de la tierra.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Dios mío, confía tu juicio al rey,",
-      "tu justicia al hijo de reyes:",
-      "para que rija a tu pueblo con justicia,",
-      "a tus humildes con rectitud. R."
-    ],
-    [
-      "Que en sus días florezca la justicia",
-      "y la paz hasta que falte la luna;",
-      "que domine de mar a mar,",
-      "del Gran Río al confín de la tierra. R."
-    ],
-    [
-      "Que los reyes de Tarsis y de las islas le paguen tributos;",
-      "que los reyes de Saba y de Arabia le ofrezcan sus dones,",
-      "que se postren ante él todos los reyes,",
-      "y que todos los pueblos le sirvan. R."
-    ],
-    [
-      "Porque él librará al pobre que clamaba,",
-      "al afligido que no tenía protector;",
-      "él se apiadará del pobre y del indigente,",
-      "y salvará la vida de los pobres. R."
-    ]
-  ],
-  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes:\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nQue los reyes de Tarsis y de las islas le paguen tributos;\nque los reyes de Saba y de Arabia le ofrezcan sus dones,\nque se postren ante él todos los reyes,\ny que todos los pueblos le sirvan. R.\n\nPorque él librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "epifania del senor 6 de enero ciclo a navidad domingo salmo responsorial salmo 71 1 2 7 8 10 11 12 13 r cf 11 r se postraran ante ti senor todos los reyes de la tierra dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que en sus dias florezca la justicia y la paz hasta que falte la luna que domine de mar a mar del gran rio al confin de la tierra r que los reyes de tarsis y de las islas le paguen tributos que los reyes de saba y de arabia le ofrezcan sus dones que se postren ante el todos los reyes y que todos los pueblos le sirvan r porque el librara al pobre que clamaba al afligido que no tenia protector el se apiadara del pobre y del indigente y salvara la vida de los pobres r",
+  "respuesta": "R. Se postrarán ante ti, Señor, todos los reyes de la tierra.",
+  "ciclo": "Ciclo A",
+  "id": "seua_12",
+  "hasAudio": false,
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
   "lizq": [
     {
       "line": "R. Se postrarán ante ti, Señor, todos los reyes de la tierra.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Dios mío, confía tu juicio al rey,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dios mío, confía tu juicio al rey,"
     },
     {
       "line": "tu justicia al hijo de reyes:",
@@ -84,8 +48,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "del Gran Río al confín de la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "del Gran Río al confín de la tierra. R."
     },
     {
       "line": "",
@@ -96,8 +60,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que los reyes de Saba y de Arabia le ofrezcan sus dones,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que los reyes de Saba y de Arabia le ofrezcan sus dones,"
     },
     {
       "line": "que se postren ante él todos los reyes,",
@@ -108,24 +72,60 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Porque él librará al pobre que clamaba,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque él librará al pobre que clamaba,"
     },
     {
-      "line": "al afligido que no tenía protector;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "al afligido que no tenía protector;"
     },
     {
       "line": "él se apiadará del pobre y del indigente,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y salvará la vida de los pobres. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y salvará la vida de los pobres. R."
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "estrofas": [
+    [
+      "Dios mío, confía tu juicio al rey,",
+      "tu justicia al hijo de reyes:",
+      "para que rija a tu pueblo con justicia,",
+      "a tus humildes con rectitud. R."
+    ],
+    [
+      "Que en sus días florezca la justicia",
+      "y la paz hasta que falte la luna;",
+      "que domine de mar a mar,",
+      "del Gran Río al confín de la tierra. R."
+    ],
+    [
+      "Que los reyes de Tarsis y de las islas le paguen tributos;",
+      "que los reyes de Saba y de Arabia le ofrezcan sus dones,",
+      "que se postren ante él todos los reyes,",
+      "y que todos los pueblos le sirvan. R."
+    ],
+    [
+      "Porque él librará al pobre que clamaba,",
+      "al afligido que no tenía protector;",
+      "él se apiadará del pobre y del indigente,",
+      "y salvará la vida de los pobres. R."
+    ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 71, 1-2. 7-8. 10-11. 12-13 (R.: cf. 11)",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 71, 1-2. 7-8. 10-11. 12-13 (R.: cf. 11)",
+  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes:\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nQue los reyes de Tarsis y de las islas le paguen tributos;\nque los reyes de Saba y de Arabia le ofrezcan sus dones,\nque se postren ante él todos los reyes,\ny que todos los pueblos le sirvan. R.\n\nPorque él librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.",
+  "orden": 208,
+  "tiempo": "Navidad",
+  "celebracion": "Epifanía del Señor - 6 de enero",
+  "dia": "Domingo",
+  "title": "Epifanía del Señor - 6 de enero"
 }

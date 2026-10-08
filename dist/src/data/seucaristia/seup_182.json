@@ -1,48 +1,16 @@
 {
-  "id": "seup_182",
-  "title": "Martes de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 31ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 21, 26b-27. 28-30a. 31-32 (R.: 26a)",
-  "salmo": "Salmo responsorial: Salmo 21, 26b-27. 28-30a. 31-32 (R.: 26a)",
+  "catCanto": "Salmo Eucaristía",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "searchPool": "martes de la 31 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 21 26b 27 28 30a 31 32 r 26a semana 31 semana xxxi martes 31 xxxi r el senor es mi alabanza en la gran asamblea cumplire mis votos delante de sus fieles los desvalidos comeran hasta saciarse alabaran al senor los que lo buscan viva su corazon por siempre r lo recordaran y volveran al senor hasta de los confines del orbe en su presencia se postraran las familias de los pueblos porque del senor es el reino el gobierna a los pueblos ante el se postraran las cenizas de la tumba r mi descendencia le servira hablaran del senor a la generacion futura contaran su justicia al pueblo que ha de nacer todo lo que hizo el senor r",
+  "title": "Martes de la 31ª semana de Tiempo Ordinario",
   "dia": "Martes",
   "orden": 5312,
-  "respuesta": "R. El Señor es mi alabanza en la gran asamblea.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Cumpliré mis votos delante de sus fieles.",
-      "Los desvalidos comerán hasta saciarse,",
-      "alabarán al Señor los que lo buscan:",
-      "viva su corazón por siempre. R."
-    ],
-    [
-      "Lo recordarán y volverán al Señor",
-      "hasta de los confines del orbe;",
-      "en su presencia se postrarán",
-      "las familias de los pueblos.",
-      "Porque del Señor es el reino,",
-      "él gobierna a los pueblos.",
-      "Ante él se postrarán las cenizas de la tumba. R."
-    ],
-    [
-      "Mi descendencia le servirá,",
-      "hablarán del Señor a la generación futura,",
-      "contarán su justicia al pueblo que ha de nacer:",
-      "todo lo que hizo el Señor. R."
-    ]
-  ],
-  "textoCompleto": "Cumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.\n\nLo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nPorque del Señor es el reino,\nél gobierna a los pueblos.\nAnte él se postrarán las cenizas de la tumba. R.\n\nMi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 31 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 21 26b 27 28 30a 31 32 r 26a semana 31 semana xxxi martes 31 xxxi r el senor es mi alabanza en la gran asamblea cumplire mis votos delante de sus fieles los desvalidos comeran hasta saciarse alabaran al senor los que lo buscan viva su corazon por siempre r lo recordaran y volveran al senor hasta de los confines del orbe en su presencia se postraran las familias de los pueblos porque del senor es el reino el gobierna a los pueblos ante el se postraran las cenizas de la tumba r mi descendencia le servira hablaran del senor a la generacion futura contaran su justicia al pueblo que ha de nacer todo lo que hizo el senor r",
+  "subtitle": "Salmo responsorial: Salmo 21, 26b-27. 28-30a. 31-32 (R.: 26a)",
   "lizq": [
     {
-      "line": "R. El Señor es mi alabanza en la gran asamblea.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor es mi alabanza en la gran asamblea."
     },
     {
       "line": "",
@@ -57,8 +25,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "alabarán al Señor los que lo buscan:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alabarán al Señor los que lo buscan:"
     },
     {
       "line": "viva su corazón por siempre. R.",
@@ -93,8 +61,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Ante él se postrarán las cenizas de la tumba. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Ante él se postrarán las cenizas de la tumba. R."
     },
     {
       "line": "",
@@ -116,5 +84,37 @@
       "line": "todo lo que hizo el Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "respuesta": "R. El Señor es mi alabanza en la gran asamblea.",
+  "textoCompleto": "Cumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.\n\nLo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nPorque del Señor es el reino,\nél gobierna a los pueblos.\nAnte él se postrarán las cenizas de la tumba. R.\n\nMi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R.",
+  "hasAudio": false,
+  "celebracion": "Martes de la 31ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 21, 26b-27. 28-30a. 31-32 (R.: 26a)",
+  "tiempo": "Tiempo Ordinario",
+  "id": "seup_182",
+  "estrofas": [
+    [
+      "Cumpliré mis votos delante de sus fieles.",
+      "Los desvalidos comerán hasta saciarse,",
+      "alabarán al Señor los que lo buscan:",
+      "viva su corazón por siempre. R."
+    ],
+    [
+      "Lo recordarán y volverán al Señor",
+      "hasta de los confines del orbe;",
+      "en su presencia se postrarán",
+      "las familias de los pueblos.",
+      "Porque del Señor es el reino,",
+      "él gobierna a los pueblos.",
+      "Ante él se postrarán las cenizas de la tumba. R."
+    ],
+    [
+      "Mi descendencia le servirá,",
+      "hablarán del Señor a la generación futura,",
+      "contarán su justicia al pueblo que ha de nacer:",
+      "todo lo que hizo el Señor. R."
+    ]
+  ],
+  "stage": "Liturgia"
 }

@@ -1,70 +1,40 @@
 {
-  "id": "seup_056",
-  "title": "Martes de la 10ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 10ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 4, 2-3. 4-5. 7-8 (R.: cf. 7)",
-  "salmo": "Salmo responsorial: Salmo 4, 2-3. 4-5. 7-8 (R.: cf. 7)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5102,
-  "respuesta": "R. Haz brillar sobre nosotros, Señor, la luz de tu rostro.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Escúchame cuando te invoco, Dios, defensor mío;",
-      "tú que en el aprieto me diste anchura,",
-      "ten piedad de mí y escucha mi oración.",
-      "Y vosotros, ¿hasta cuándo ultrajaréis mi honor,",
-      "amaréis la falsedad y buscaréis el engaño? R."
-    ],
-    [
-      "Sabedlo: el Señor hizo milagros en mi favor,",
-      "y el Señor me escuchará cuando lo invoque.",
-      "Temblad y no pequéis,",
-      "reflexionad en el silencio de vuestro lecho. R."
-    ],
-    [
-      "Hay muchos que dicen: «¿Quién nos hará ver la dicha,",
-      "si la luz de tu rostro ha huido de nosotros?».",
-      "Pero tú, Señor, has puesto en mi corazón más alegría",
-      "que si abundara en trigo y en vino. R."
-    ]
-  ],
   "textoCompleto": "Escúchame cuando te invoco, Dios, defensor mío;\ntú que en el aprieto me diste anchura,\nten piedad de mí y escucha mi oración.\nY vosotros, ¿hasta cuándo ultrajaréis mi honor,\namaréis la falsedad y buscaréis el engaño? R.\n\nSabedlo: el Señor hizo milagros en mi favor,\ny el Señor me escuchará cuando lo invoque.\nTemblad y no pequéis,\nreflexionad en el silencio de vuestro lecho. R.\n\nHay muchos que dicen: «¿Quién nos hará ver la dicha,\nsi la luz de tu rostro ha huido de nosotros?».\nPero tú, Señor, has puesto en mi corazón más alegría\nque si abundara en trigo y en vino. R.",
+  "celebracion": "Martes de la 10ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuesta": "R. Haz brillar sobre nosotros, Señor, la luz de tu rostro.",
   "searchPool": "martes de la 10 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 4 2 3 4 5 7 8 r cf 7 semana 10 semana x martes 10 x r haz brillar sobre nosotros senor la luz de tu rostro escuchame cuando te invoco dios defensor mio tu que en el aprieto me diste anchura ten piedad de mi y escucha mi oracion y vosotros hasta cuando ultrajareis mi honor amareis la falsedad y buscareis el engano r sabedlo el senor hizo milagros en mi favor y el senor me escuchara cuando lo invoque temblad y no pequeis reflexionad en el silencio de vuestro lecho r hay muchos que dicen quien nos hara ver la dicha si la luz de tu rostro ha huido de nosotros pero tu senor has puesto en mi corazon mas alegria que si abundara en trigo y en vino r",
+  "orden": 5102,
   "lizq": [
     {
       "line": "R. Haz brillar sobre nosotros, Señor,",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "la luz de tu rostro.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "la luz de tu rostro."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Escúchame cuando te invoco, Dios, defensor mío;",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tú que en el aprieto me diste anchura,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tú que en el aprieto me diste anchura,"
     },
     {
       "line": "ten piedad de mí y escucha mi oración.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Y vosotros, ¿hasta cuándo ultrajaréis mi honor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Y vosotros, ¿hasta cuándo ultrajaréis mi honor,"
     },
     {
       "line": "amaréis la falsedad y buscaréis el engaño? R.",
@@ -87,16 +57,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "reflexionad en el silencio de vuestro lecho. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "reflexionad en el silencio de vuestro lecho. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Hay muchos que dicen: «¿Quién nos hará ver la dicha,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Hay muchos que dicen: «¿Quién nos hará ver la dicha,"
     },
     {
       "line": "si la luz de tu rostro ha huido de nosotros?».",
@@ -110,5 +80,35 @@
       "line": "que si abundara en trigo y en vino. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "title": "Martes de la 10ª semana de Tiempo Ordinario",
+  "id": "seup_056",
+  "salmo": "Salmo responsorial: Salmo 4, 2-3. 4-5. 7-8 (R.: cf. 7)",
+  "estrofas": [
+    [
+      "Escúchame cuando te invoco, Dios, defensor mío;",
+      "tú que en el aprieto me diste anchura,",
+      "ten piedad de mí y escucha mi oración.",
+      "Y vosotros, ¿hasta cuándo ultrajaréis mi honor,",
+      "amaréis la falsedad y buscaréis el engaño? R."
+    ],
+    [
+      "Sabedlo: el Señor hizo milagros en mi favor,",
+      "y el Señor me escuchará cuando lo invoque.",
+      "Temblad y no pequéis,",
+      "reflexionad en el silencio de vuestro lecho. R."
+    ],
+    [
+      "Hay muchos que dicen: «¿Quién nos hará ver la dicha,",
+      "si la luz de tu rostro ha huido de nosotros?».",
+      "Pero tú, Señor, has puesto en mi corazón más alegría",
+      "que si abundara en trigo y en vino. R."
+    ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 4, 2-3. 4-5. 7-8 (R.: cf. 7)",
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "dia": "Martes",
+  "hasAudio": false
 }

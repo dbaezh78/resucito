@@ -1,15 +1,8 @@
 {
-  "id": "seub_15",
-  "title": "Segundo domingo de Cuaresma",
-  "celebracion": "Segundo domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 115, 10 y 15. 16-17. 18-19 (R.: Sal 114,9)",
-  "salmo": "Salmo responsorial: Salmo 115, 10 y 15. 16-17. 18-19 (R.: Sal 114,9)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
-  "orden": 302,
+  "stage": "Liturgia",
   "respuesta": "R. Caminaré en presencia del Señor en el país de la vida.",
-  "respuestaOpcional": "",
+  "dia": "Domingo",
+  "ciclo": "Ciclo B",
   "estrofas": [
     [
       "Tenía fe, aun cuando dije:",
@@ -31,16 +24,17 @@
       "en medio de ti, Jerusalén. R."
     ]
   ],
-  "textoCompleto": "Tenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nMucho le cuesta al Señor\nla muerte de sus fieles. R.\n\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo,\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 115, 10 y 15. 16-17. 18-19 (R.: Sal 114,9)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "segundo domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 115 10 y 15 16 17 18 19 r sal 114 9 r caminare en presencia del senor en el pais de la vida tenia fe aun cuando dije que desgraciado soy mucho le cuesta al senor la muerte de sus fieles r senor yo soy tu siervo siervo tuyo hijo de tu esclava rompiste mis cadenas te ofrecere un sacrificio de alabanza invocando tu nombre senor r cumplire al senor mis votos en presencia de todo el pueblo en el atrio de la casa del senor en medio de ti jerusalen r",
+  "id": "seub_15",
+  "orden": 302,
+  "title": "Segundo domingo de Cuaresma",
+  "textoCompleto": "Tenía fe, aun cuando dije:\n«¡Qué desgraciado soy!».\nMucho le cuesta al Señor\nla muerte de sus fieles. R.\n\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo,\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R.",
+  "respuestaOpcional": "",
   "lizq": [
     {
-      "line": "R. Caminaré en presencia del Señor",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Caminaré en presencia del Señor"
     },
     {
       "line": "en el país de la vida.",
@@ -59,16 +53,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Mucho le cuesta al Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Mucho le cuesta al Señor"
     },
     {
       "line": "la muerte de sus fieles. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Señor, yo soy tu siervo,",
@@ -83,20 +77,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Te ofreceré un sacrificio de alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Te ofreceré un sacrificio de alabanza,"
     },
     {
-      "line": "invocando tu nombre, Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "invocando tu nombre, Señor. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Cumpliré al Señor mis votos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cumpliré al Señor mis votos"
     },
     {
       "line": "en presencia de todo el pueblo,",
@@ -110,5 +104,11 @@
       "line": "en medio de ti, Jerusalén. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "searchPool": "segundo domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 115 10 y 15 16 17 18 19 r sal 114 9 r caminare en presencia del senor en el pais de la vida tenia fe aun cuando dije que desgraciado soy mucho le cuesta al senor la muerte de sus fieles r senor yo soy tu siervo siervo tuyo hijo de tu esclava rompiste mis cadenas te ofrecere un sacrificio de alabanza invocando tu nombre senor r cumplire al senor mis votos en presencia de todo el pueblo en el atrio de la casa del senor en medio de ti jerusalen r",
+  "celebracion": "Segundo domingo de Cuaresma",
+  "salmo": "Salmo responsorial: Salmo 115, 10 y 15. 16-17. 18-19 (R.: Sal 114,9)",
+  "sourceBook": "eucaristia",
+  "tiempo": "Cuaresma"
 }

@@ -1,22 +1,8 @@
 {
-  "id": "seuf_071",
-  "title": "Lunes de la 5ª semana de Cuaresma",
-  "celebracion": "Lunes de la 5ª semana de Cuaresma",
-  "subtitle": "Salmo22, 1-3a. 3b-4. 5. 6 (R.: 4ab)",
   "salmo": "Salmo22, 1-3a. 3b-4. 5. 6 (R.: 4ab)",
   "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Cuaresma",
-  "dia": "Lunes",
+  "sourceBook": "eucaristia",
   "orden": 351,
-  "respuesta": "R. Aunque camine por cañadas oscuras, nada temo, porque tú vas conmigo.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "El Señor es mi pastor, nada me falta:",
@@ -44,16 +30,10 @@
       "por años sin término. R."
     ]
   ],
-  "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.\n\nMe guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 5 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma lunes salmo22 1 3a 3b 4 5 6 r 4ab semana 5 semana v lunes feria r aunque camine por canadas oscuras nada temo porque tu vas conmigo el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas r me guia por el sendero justo por el honor de su nombre aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
   "lizq": [
     {
-      "line": "R. Aunque camine por cañadas oscuras,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aunque camine por cañadas oscuras,"
     },
     {
       "line": "nada temo, porque tú vas conmigo.",
@@ -92,12 +72,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Aunque camine por cañadas oscuras,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Aunque camine por cañadas oscuras,"
     },
     {
-      "line": "nada temo, porque tú vas conmigo:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "nada temo, porque tú vas conmigo:"
     },
     {
       "line": "tu vara y tu cayado me sosiegan. R.",
@@ -124,12 +104,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Tu bondad y tu misericordia me acompañan",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tu bondad y tu misericordia me acompañan"
     },
     {
       "line": "todos los días de mi vida,",
@@ -143,5 +123,25 @@
       "line": "por años sin término. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.\n\nMe guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
+  "title": "Lunes de la 5ª semana de Cuaresma",
+  "respuesta": "R. Aunque camine por cañadas oscuras, nada temo, porque tú vas conmigo.",
+  "searchPool": "lunes de la 5 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma lunes salmo22 1 3a 3b 4 5 6 r 4ab semana 5 semana v lunes feria r aunque camine por canadas oscuras nada temo porque tu vas conmigo el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas r me guia por el sendero justo por el honor de su nombre aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "celebracion": "Lunes de la 5ª semana de Cuaresma",
+  "hasAudio": false,
+  "respuestaOpcional": "",
+  "id": "seuf_071",
+  "tiempo": "Cuaresma",
+  "dia": "Lunes",
+  "subtitle": "Salmo22, 1-3a. 3b-4. 5. 6 (R.: 4ab)"
 }

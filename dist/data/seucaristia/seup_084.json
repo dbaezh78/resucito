@@ -1,45 +1,16 @@
 {
-  "id": "seup_084",
-  "title": "Sábado de la 14ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 14ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
+  "hasAudio": false,
   "ciclo": "Año Par",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5146,
-  "respuesta": "R. El Señor reina, vestido de majestad.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "El Señor reina, vestido de majestad,",
-      "el Señor, vestido y ceñido de poder. R."
-    ],
-    [
-      "Así está firme el orbe y no vacila.",
-      "Tu trono está firme desde siempre,",
-      "y tú eres eterno. R."
-    ],
-    [
-      "Tus mandatos son fieles y seguros;",
-      "la santidad es el adorno de tu casa,",
-      "Señor, por días sin término. R."
-    ]
-  ],
-  "textoCompleto": "El Señor reina, vestido de majestad,\nel Señor, vestido y ceñido de poder. R.\n\nAsí está firme el orbe y no vacila.\nTu trono está firme desde siempre,\ny tú eres eterno. R.\n\nTus mandatos son fieles y seguros;\nla santidad es el adorno de tu casa,\nSeñor, por días sin término. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 14 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 92 1ab 1c 2 5 r 1a semana 14 semana xiv sabado 14 xiv r el senor reina vestido de majestad el senor reina vestido de majestad el senor vestido y cenido de poder r asi esta firme el orbe y no vacila tu trono esta firme desde siempre y tu eres eterno r tus mandatos son fieles y seguros la santidad es el adorno de tu casa senor por dias sin termino r",
+  "subtitle": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
   "lizq": [
     {
       "line": "R. El Señor reina, vestido de majestad.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor reina, vestido de majestad,",
@@ -50,8 +21,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Así está firme el orbe y no vacila.",
@@ -70,8 +41,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tus mandatos son fieles y seguros;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tus mandatos son fieles y seguros;"
     },
     {
       "line": "la santidad es el adorno de tu casa,",
@@ -81,5 +52,34 @@
       "line": "Señor, por días sin término. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5146,
+  "respuesta": "R. El Señor reina, vestido de majestad.",
+  "estrofas": [
+    [
+      "El Señor reina, vestido de majestad,",
+      "el Señor, vestido y ceñido de poder. R."
+    ],
+    [
+      "Así está firme el orbe y no vacila.",
+      "Tu trono está firme desde siempre,",
+      "y tú eres eterno. R."
+    ],
+    [
+      "Tus mandatos son fieles y seguros;",
+      "la santidad es el adorno de tu casa,",
+      "Señor, por días sin término. R."
+    ]
+  ],
+  "title": "Sábado de la 14ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 92, 1ab. 1c-2. 5 (R.: 1a)",
+  "catCanto": "Salmo Eucaristía",
+  "respuestaOpcional": "",
+  "id": "seup_084",
+  "celebracion": "Sábado de la 14ª semana de Tiempo Ordinario",
+  "dia": "Sábado",
+  "textoCompleto": "El Señor reina, vestido de majestad,\nel Señor, vestido y ceñido de poder. R.\n\nAsí está firme el orbe y no vacila.\nTu trono está firme desde siempre,\ny tú eres eterno. R.\n\nTus mandatos son fieles y seguros;\nla santidad es el adorno de tu casa,\nSeñor, por días sin término. R.",
+  "stage": "Liturgia",
+  "searchPool": "sabado de la 14 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 92 1ab 1c 2 5 r 1a semana 14 semana xiv sabado 14 xiv r el senor reina vestido de majestad el senor reina vestido de majestad el senor vestido y cenido de poder r asi esta firme el orbe y no vacila tu trono esta firme desde siempre y tu eres eterno r tus mandatos son fieles y seguros la santidad es el adorno de tu casa senor por dias sin termino r"
 }

@@ -1,15 +1,21 @@
 {
-  "id": "seui_096",
-  "title": "Sábado de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 16ª semana de Tiempo Ordinario",
+  "orden": 5166,
+  "respuestaOpcional": "",
   "subtitle": "Salmo responsorial: Salmo 49, 1-2. 5-6. 14-15 (R.: 14a)",
+  "stage": "Liturgia",
   "salmo": "Salmo responsorial: Salmo 49, 1-2. 5-6. 14-15 (R.: 14a)",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5166,
+  "hasAudio": false,
   "respuesta": "R. Ofrece a Dios un sacrificio de alabanza.",
-  "respuestaOpcional": "",
+  "dia": "Sábado",
+  "title": "Sábado de la 16ª semana de Tiempo Ordinario",
+  "searchPool": "sabado de la 16 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 49 1 2 5 6 14 15 r 14a semana 16 semana xvi sabado 16 xvi r ofrece a dios un sacrificio de alabanza el dios de los dioses el senor habla convoca la tierra de oriente a occidente desde sion la hermosa dios resplandece r congregadme a mis fieles que sellaron mi pacto con un sacrificio proclame el cielo su justicia dios en persona va a juzgar r ofrece a dios un sacrificio de alabanza cumple tus votos al altisimo e invocame el dia del peligro yo te librare y tu me daras gloria r",
+  "celebracion": "Sábado de la 16ª semana de Tiempo Ordinario",
+  "id": "seui_096",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "El Dios de los dioses, el Señor, habla:\nconvoca la tierra de oriente a occidente.\nDesde Sión, la hermosa, Dios resplandece. R.\n\n«Congregadme a mis fieles,\nque sellaron mi pacto con un sacrificio».\nProclame el cielo su justicia;\nDios en persona va a juzgar. R.\n\n«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo\ne invócame el día del peligro:\nyo te libraré, y tú me darás gloria». R.",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "El Dios de los dioses, el Señor, habla:",
@@ -29,12 +35,6 @@
       "yo te libraré, y tú me darás gloria». R."
     ]
   ],
-  "textoCompleto": "El Dios de los dioses, el Señor, habla:\nconvoca la tierra de oriente a occidente.\nDesde Sión, la hermosa, Dios resplandece. R.\n\n«Congregadme a mis fieles,\nque sellaron mi pacto con un sacrificio».\nProclame el cielo su justicia;\nDios en persona va a juzgar. R.\n\n«Ofrece a Dios un sacrificio de alabanza,\ncumple tus votos al Altísimo\ne invócame el día del peligro:\nyo te libraré, y tú me darás gloria». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 16 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 49 1 2 5 6 14 15 r 14a semana 16 semana xvi sabado 16 xvi r ofrece a dios un sacrificio de alabanza el dios de los dioses el senor habla convoca la tierra de oriente a occidente desde sion la hermosa dios resplandece r congregadme a mis fieles que sellaron mi pacto con un sacrificio proclame el cielo su justicia dios en persona va a juzgar r ofrece a dios un sacrificio de alabanza cumple tus votos al altisimo e invocame el dia del peligro yo te librare y tu me daras gloria r",
   "lizq": [
     {
       "line": "R. Ofrece a Dios un sacrificio de alabanza.",
@@ -49,8 +49,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "convoca la tierra de oriente a occidente.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "convoca la tierra de oriente a occidente."
     },
     {
       "line": "Desde Sión, la hermosa, Dios resplandece. R.",
@@ -65,8 +65,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que sellaron mi pacto con un sacrificio».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que sellaron mi pacto con un sacrificio»."
     },
     {
       "line": "Proclame el cielo su justicia;",
@@ -85,8 +85,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "cumple tus votos al Altísimo",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cumple tus votos al Altísimo"
     },
     {
       "line": "e invócame el día del peligro:",

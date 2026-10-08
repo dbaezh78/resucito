@@ -1,22 +1,14 @@
 {
-  "id": "seuf_075",
+  "ciclo": "Ciclo A, B y C",
+  "dia": "Viernes",
+  "salmo": "Salmo 17, 2-3a. 3bc-4. 5-6. 7 (R.: 7)",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. En el peligro invoqué al Señor, y me escuchó.",
+  "orden": 355,
   "title": "Viernes de la 5ª semana de Cuaresma",
   "celebracion": "Viernes de la 5ª semana de Cuaresma",
-  "subtitle": "Salmo 17, 2-3a. 3bc-4. 5-6. 7 (R.: 7)",
-  "salmo": "Salmo 17, 2-3a. 3bc-4. 5-6. 7 (R.: 7)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Cuaresma",
-  "dia": "Viernes",
-  "orden": 355,
-  "respuesta": "R. En el peligro invoqué al Señor, y me escuchó.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Yo te amo, Señor; tú eres mi fortaleza;",
@@ -41,24 +33,26 @@
       "y mi grito llegó a sus oídos. R."
     ]
   ],
-  "textoCompleto": "Yo te amo, Señor; tú eres mi fortaleza;\nSeñor, mi roca, mi alcázar, mi libertador. R.\n\nDios mío, peña mía, refugio mío, escudo mío,\nmi fuerza salvadora, mi baluarte.\nInvoco al Señor de mi alabanza\ny quedo libre de mis enemigos. R.\n\nMe cercaban olas mortales,\ntorrentes destructores me aterraban,\nme envolvían las redes del abismo,\nme alcanzaban los lazos de la muerte. R.\n\nEn el peligro invoqué al Señor,\ngrité a mi Dios:\ndesde su templo él escuchó mi voz,\ny mi grito llegó a sus oídos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 5 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma viernes salmo 17 2 3a 3bc 4 5 6 7 r 7 semana 5 semana v viernes feria r en el peligro invoque al senor y me escucho yo te amo senor tu eres mi fortaleza senor mi roca mi alcazar mi libertador r dios mio pena mia refugio mio escudo mio mi fuerza salvadora mi baluarte invoco al senor de mi alabanza y quedo libre de mis enemigos r me cercaban olas mortales torrentes destructores me aterraban me envolvian las redes del abismo me alcanzaban los lazos de la muerte r en el peligro invoque al senor grite a mi dios desde su templo el escucho mi voz y mi grito llego a sus oidos r",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "id": "seuf_075",
   "lizq": [
     {
       "line": "R. En el peligro invoqué al Señor, y me escuchó.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Yo te amo, Señor; tú eres mi fortaleza;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Yo te amo, Señor; tú eres mi fortaleza;"
     },
     {
       "line": "Señor, mi roca, mi alcázar, mi libertador. R.",
@@ -69,8 +63,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dios mío, peña mía, refugio mío, escudo mío,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dios mío, peña mía, refugio mío, escudo mío,"
     },
     {
       "line": "mi fuerza salvadora, mi baluarte.",
@@ -81,8 +75,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y quedo libre de mis enemigos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y quedo libre de mis enemigos. R."
     },
     {
       "line": "",
@@ -101,12 +95,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "me alcanzaban los lazos de la muerte. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me alcanzaban los lazos de la muerte. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "En el peligro invoqué al Señor,",
@@ -121,8 +115,14 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y mi grito llegó a sus oídos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y mi grito llegó a sus oídos. R."
     }
-  ]
+  ],
+  "searchPool": "viernes de la 5 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma viernes salmo 17 2 3a 3bc 4 5 6 7 r 7 semana 5 semana v viernes feria r en el peligro invoque al senor y me escucho yo te amo senor tu eres mi fortaleza senor mi roca mi alcazar mi libertador r dios mio pena mia refugio mio escudo mio mi fuerza salvadora mi baluarte invoco al senor de mi alabanza y quedo libre de mis enemigos r me cercaban olas mortales torrentes destructores me aterraban me envolvian las redes del abismo me alcanzaban los lazos de la muerte r en el peligro invoque al senor grite a mi dios desde su templo el escucho mi voz y mi grito llego a sus oidos r",
+  "textoCompleto": "Yo te amo, Señor; tú eres mi fortaleza;\nSeñor, mi roca, mi alcázar, mi libertador. R.\n\nDios mío, peña mía, refugio mío, escudo mío,\nmi fuerza salvadora, mi baluarte.\nInvoco al Señor de mi alabanza\ny quedo libre de mis enemigos. R.\n\nMe cercaban olas mortales,\ntorrentes destructores me aterraban,\nme envolvían las redes del abismo,\nme alcanzaban los lazos de la muerte. R.\n\nEn el peligro invoqué al Señor,\ngrité a mi Dios:\ndesde su templo él escuchó mi voz,\ny mi grito llegó a sus oídos. R.",
+  "subtitle": "Salmo 17, 2-3a. 3bc-4. 5-6. 7 (R.: 7)",
+  "tiempo": "Cuaresma",
+  "hasAudio": false,
+  "sourceBook": "eucaristia"
 }

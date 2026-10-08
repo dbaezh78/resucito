@@ -1,15 +1,7 @@
 {
-  "id": "seui_025",
-  "title": "Lunes de la 5ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 5ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 5-6. 10 y 12. 24 y 35c (R.: 31b)",
-  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 5-6. 10 y 12. 24 y 35c (R.: 31b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
+  "searchPool": "lunes de la 5 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 103 1 2a 5 6 10 y 12 24 y 35c r 31b semana 5 semana v lunes 5 v r goce el senor con sus obras bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r asentaste la tierra sobre sus cimientos y no vacilara jamas la cubriste con el manto del oceano y las aguas se posaron sobre las montanas r de los manantiales sacas los rios para que fluyan entre los montes junto a ellos habitan las aves del cielo y entre las frondas se oye su canto r cuantas son tus obras senor y todas las hiciste con sabiduria la tierra esta llena de tus criaturas bendice alma mia al senor r",
+  "catCanto": "Salmo Eucaristía",
   "dia": "Lunes",
-  "orden": 5051,
-  "respuesta": "R. Goce el Señor con sus obras.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Bendice, alma mía, al Señor,",
@@ -36,28 +28,31 @@
       "¡Bendice, alma mía, al Señor! R."
     ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor,\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nAsentaste la tierra sobre sus cimientos,\ny no vacilará jamás;\nla cubriste con el manto del océano,\ny las aguas se posaron sobre las montañas. R.\n\nDe los manantiales sacas los ríos,\npara que fluyan entre los montes;\njunto a ellos habitan las aves del cielo,\ny entre las frondas se oye su canto. R.\n\nCuántas son tus obras, Señor,\ny todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas.\n¡Bendice, alma mía, al Señor! R.",
+  "id": "seui_025",
   "sourceBook": "eucaristia",
+  "celebracion": "Lunes de la 5ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "title": "Lunes de la 5ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 103, 1-2a. 5-6. 10 y 12. 24 y 35c (R.: 31b)",
+  "textoCompleto": "Bendice, alma mía, al Señor,\n¡Dios mío, qué grande eres!\nTe vistes de belleza y majestad,\nla luz te envuelve como un manto. R.\n\nAsentaste la tierra sobre sus cimientos,\ny no vacilará jamás;\nla cubriste con el manto del océano,\ny las aguas se posaron sobre las montañas. R.\n\nDe los manantiales sacas los ríos,\npara que fluyan entre los montes;\njunto a ellos habitan las aves del cielo,\ny entre las frondas se oye su canto. R.\n\nCuántas son tus obras, Señor,\ny todas las hiciste con sabiduría;\nla tierra está llena de tus criaturas.\n¡Bendice, alma mía, al Señor! R.",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 5 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 103 1 2a 5 6 10 y 12 24 y 35c r 31b semana 5 semana v lunes 5 v r goce el senor con sus obras bendice alma mia al senor dios mio que grande eres te vistes de belleza y majestad la luz te envuelve como un manto r asentaste la tierra sobre sus cimientos y no vacilara jamas la cubriste con el manto del oceano y las aguas se posaron sobre las montanas r de los manantiales sacas los rios para que fluyan entre los montes junto a ellos habitan las aves del cielo y entre las frondas se oye su canto r cuantas son tus obras senor y todas las hiciste con sabiduria la tierra esta llena de tus criaturas bendice alma mia al senor r",
   "lizq": [
     {
       "line": "R. Goce el Señor con sus obras.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendice, alma mía, al Señor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "¡Dios mío, qué grande eres!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¡Dios mío, qué grande eres!"
     },
     {
       "line": "Te vistes de belleza y majestad,",
@@ -68,16 +63,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Asentaste la tierra sobre sus cimientos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Asentaste la tierra sobre sus cimientos,"
     },
     {
-      "line": "y no vacilará jamás;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no vacilará jamás;"
     },
     {
       "line": "la cubriste con el manto del océano,",
@@ -112,12 +107,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Cuántas son tus obras, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cuántas son tus obras, Señor,"
     },
     {
-      "line": "y todas las hiciste con sabiduría;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y todas las hiciste con sabiduría;"
     },
     {
       "line": "la tierra está llena de tus criaturas.",
@@ -127,5 +122,10 @@
       "line": "¡Bendice, alma mía, al Señor! R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5051,
+  "ciclo": "Año Impar",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 103, 1-2a. 5-6. 10 y 12. 24 y 35c (R.: 31b)",
+  "respuesta": "R. Goce el Señor con sus obras."
 }

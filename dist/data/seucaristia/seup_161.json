@@ -1,15 +1,4 @@
 {
-  "id": "seup_161",
-  "title": "Viernes de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 27ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: cf. 5b)",
-  "salmo": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: cf. 5b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5275,
-  "respuesta": "R. El Señor recuerda siempre su alianza.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Doy gracias al Señor de todo corazón,",
@@ -30,11 +19,20 @@
       "dándoles la heredad de los gentiles. R."
     ]
   ],
-  "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en la asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nEsplendor y belleza son su obra,\nsu generosidad dura por siempre;\nha hecho maravillas memorables,\nel Señor es piadoso y clemente. R.\n\nÉl da alimento a sus fieles,\nrecordando siempre su alianza;\nmostró a su pueblo la fuerza de su obrar,\ndándoles la heredad de los gentiles. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "orden": 5275,
+  "title": "Viernes de la 27ª semana de Tiempo Ordinario",
   "hasAudio": false,
+  "ciclo": "Año Par",
+  "celebracion": "Viernes de la 27ª semana de Tiempo Ordinario",
+  "id": "seup_161",
+  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: cf. 5b)",
+  "stage": "Liturgia",
+  "respuesta": "R. El Señor recuerda siempre su alianza.",
+  "respuestaOpcional": "R. Aleluya.",
+  "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en la asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nEsplendor y belleza son su obra,\nsu generosidad dura por siempre;\nha hecho maravillas memorables,\nel Señor es piadoso y clemente. R.\n\nÉl da alimento a sus fieles,\nrecordando siempre su alianza;\nmostró a su pueblo la fuerza de su obrar,\ndándoles la heredad de los gentiles. R.",
+  "dia": "Viernes",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 110, 1-2. 3-4. 5-6 (R.: cf. 5b)",
   "searchPool": "viernes de la 27 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 110 1 2 3 4 5 6 r cf 5b semana 27 semana xxvii viernes 27 xxvii r el senor recuerda siempre su alianza r aleluya doy gracias al senor de todo corazon en compania de los rectos en la asamblea grandes son las obras del senor dignas de estudio para los que las aman r esplendor y belleza son su obra su generosidad dura por siempre ha hecho maravillas memorables el senor es piadoso y clemente r el da alimento a sus fieles recordando siempre su alianza mostro a su pueblo la fuerza de su obrar dandoles la heredad de los gentiles r",
   "lizq": [
     {
@@ -50,8 +48,8 @@
       "sC": "salmo-linea salmo-obien"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
       "line": "",
@@ -70,16 +68,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "dignas de estudio para los que las aman. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "dignas de estudio para los que las aman. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Esplendor y belleza son su obra,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Esplendor y belleza son su obra,"
     },
     {
       "line": "su generosidad dura por siempre;",
@@ -90,28 +88,30 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "el Señor es piadoso y clemente. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "el Señor es piadoso y clemente. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Él da alimento a sus fieles,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Él da alimento a sus fieles,"
     },
     {
-      "line": "recordando siempre su alianza;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "recordando siempre su alianza;"
     },
     {
-      "line": "mostró a su pueblo la fuerza de su obrar,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mostró a su pueblo la fuerza de su obrar,"
     },
     {
       "line": "dándoles la heredad de los gentiles. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía"
 }

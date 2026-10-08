@@ -1,10 +1,4 @@
 {
-  "id": "seuf_058",
-  "title": "Martes de la 3ª semana de Cuaresma",
-  "celebracion": "Martes de la 3ª semana de Cuaresma",
-  "subtitle": "Salmo 24, 4-5ab. 6 y 7bc. 8-9 (R.: cf. 6a)",
-  "salmo": "Salmo 24, 4-5ab. 6 y 7bc. 8-9 (R.: cf. 6a)",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +6,80 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Martes",
   "orden": 332,
-  "respuesta": "R. Señor, recuerda tu misericordia.",
+  "title": "Martes de la 3ª semana de Cuaresma",
+  "lizq": [
+    {
+      "line": "R. Señor, recuerda tu misericordia.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Señor, enséñame tus caminos",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "instrúyeme en tus sendas:"
+    },
+    {
+      "line": "haz que camine con lealtad;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "enséñame, porque tú eres mi Dios y Salvador. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Recuerda, Señor, que tu ternura",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y tu misericordia son eternas;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "acuérdate de mí con misericordia,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "por tu bondad, Señor. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El Señor es bueno y es recto,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y enseña el camino a los pecadores;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hace caminar a los humildes con rectitud,"
+    },
+    {
+      "line": "enseña su camino a los humildes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "celebracion": "Martes de la 3ª semana de Cuaresma",
   "respuestaOpcional": "",
+  "textoCompleto": "Señor, enséñame tus caminos\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
+  "salmo": "Salmo 24, 4-5ab. 6 y 7bc. 8-9 (R.: cf. 6a)",
+  "subtitle": "Salmo 24, 4-5ab. 6 y 7bc. 8-9 (R.: cf. 6a)",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Señor, enséñame tus caminos",
@@ -37,76 +100,13 @@
       "enseña su camino a los humildes. R."
     ]
   ],
-  "textoCompleto": "Señor, enséñame tus caminos\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "martes de la 3 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma martes salmo 24 4 5ab 6 y 7bc 8 9 r cf 6a semana 3 semana iii martes feria r senor recuerda tu misericordia senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r recuerda senor que tu ternura y tu misericordia son eternas acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
-  "lizq": [
-    {
-      "line": "R. Señor, recuerda tu misericordia.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Señor, enséñame tus caminos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "instrúyeme en tus sendas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "haz que camine con lealtad;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "enséñame, porque tú eres mi Dios y Salvador. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Recuerda, Señor, que tu ternura",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y tu misericordia son eternas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "acuérdate de mí con misericordia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "por tu bondad, Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es bueno y es recto,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y enseña el camino a los pecadores;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "hace caminar a los humildes con rectitud,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "enseña su camino a los humildes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuesta": "R. Señor, recuerda tu misericordia.",
+  "stage": "Liturgia",
+  "dia": "Martes",
+  "id": "seuf_058",
+  "sourceBook": "eucaristia",
+  "tiempo": "Cuaresma",
+  "ciclo": "Ciclo A, B y C",
+  "hasAudio": false
 }

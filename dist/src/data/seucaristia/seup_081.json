@@ -1,15 +1,91 @@
 {
+  "sourceBook": "eucaristia",
+  "ciclo": "Año Par",
+  "respuesta": "R. Buscad continuamente el rostro del Señor.",
   "id": "seup_081",
   "title": "Miércoles de la 14ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "miercoles de la 14 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 104 2 3 4 5 6 7 r 4b semana 14 semana xiv miercoles 14 xiv r buscad continuamente el rostro del senor r aleluya cantadle al son de instrumentos hablad de sus maravillas gloriaos de su nombre santo que se alegren los que buscan al senor r recurrid al senor y a su poder buscad continuamente su rostro recordad las maravillas que hizo sus prodigios las sentencias de su boca r estirpe de abrahan su siervo hijos de jacob su elegido el senor es nuestro dios el gobierna toda la tierra r",
   "celebracion": "Miércoles de la 14ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 104, 2-3. 4-5. 6-7 (R.: 4b)",
-  "salmo": "Salmo responsorial: Salmo 104, 2-3. 4-5. 6-7 (R.: 4b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
   "orden": 5143,
-  "respuesta": "R. Buscad continuamente el rostro del Señor.",
-  "respuestaOpcional": "R. Aleluya.",
+  "lizq": [
+    {
+      "line": "R. Buscad continuamente el rostro del Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "O bien:",
+      "sC": "salmo-linea salmo-obien"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Cantadle al son de instrumentos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hablad de sus maravillas;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "gloriaos de su nombre santo,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que se alegren los que buscan al Señor. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Recurrid al Señor y a su poder,"
+    },
+    {
+      "line": "buscad continuamente su rostro.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Recordad las maravillas que hizo,"
+    },
+    {
+      "line": "sus prodigios, las sentencias de su boca. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¡Estirpe de Abrahán, su siervo;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hijos de Jacob, su elegido!"
+    },
+    {
+      "line": "El Señor es nuestro Dios,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "él gobierna toda la tierra. R."
+    }
+  ],
   "estrofas": [
     [
       "Cantadle al son de instrumentos,",
@@ -30,88 +106,12 @@
       "él gobierna toda la tierra. R."
     ]
   ],
-  "textoCompleto": "Cantadle al son de instrumentos,\nhablad de sus maravillas;\ngloriaos de su nombre santo,\nque se alegren los que buscan al Señor. R.\n\nRecurrid al Señor y a su poder,\nbuscad continuamente su rostro.\nRecordad las maravillas que hizo,\nsus prodigios, las sentencias de su boca. R.\n\n¡Estirpe de Abrahán, su siervo;\nhijos de Jacob, su elegido!\nEl Señor es nuestro Dios,\nél gobierna toda la tierra. R.",
-  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 104, 2-3. 4-5. 6-7 (R.: 4b)",
+  "tiempo": "Tiempo Ordinario",
+  "respuestaOpcional": "R. Aleluya.",
+  "subtitle": "Salmo responsorial: Salmo 104, 2-3. 4-5. 6-7 (R.: 4b)",
+  "dia": "Miércoles",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 14 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 104 2 3 4 5 6 7 r 4b semana 14 semana xiv miercoles 14 xiv r buscad continuamente el rostro del senor r aleluya cantadle al son de instrumentos hablad de sus maravillas gloriaos de su nombre santo que se alegren los que buscan al senor r recurrid al senor y a su poder buscad continuamente su rostro recordad las maravillas que hizo sus prodigios las sentencias de su boca r estirpe de abrahan su siervo hijos de jacob su elegido el senor es nuestro dios el gobierna toda la tierra r",
-  "lizq": [
-    {
-      "line": "R. Buscad continuamente el rostro del Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Cantadle al son de instrumentos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "hablad de sus maravillas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "gloriaos de su nombre santo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que se alegren los que buscan al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Recurrid al Señor y a su poder,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "buscad continuamente su rostro.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Recordad las maravillas que hizo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sus prodigios, las sentencias de su boca. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "¡Estirpe de Abrahán, su siervo;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "hijos de Jacob, su elegido!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor es nuestro Dios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él gobierna toda la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "textoCompleto": "Cantadle al son de instrumentos,\nhablad de sus maravillas;\ngloriaos de su nombre santo,\nque se alegren los que buscan al Señor. R.\n\nRecurrid al Señor y a su poder,\nbuscad continuamente su rostro.\nRecordad las maravillas que hizo,\nsus prodigios, las sentencias de su boca. R.\n\n¡Estirpe de Abrahán, su siervo;\nhijos de Jacob, su elegido!\nEl Señor es nuestro Dios,\nél gobierna toda la tierra. R.",
+  "hasAudio": false
 }

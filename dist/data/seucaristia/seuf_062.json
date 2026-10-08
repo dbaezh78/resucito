@@ -1,9 +1,6 @@
 {
   "id": "seuf_062",
-  "title": "Sábado de la 3ª semana de Cuaresma",
-  "celebracion": "Sábado de la 3ª semana de Cuaresma",
-  "subtitle": "Salmo 50, 3-4. 18-19. 20-21 ab (R.: Os 6, 6)",
-  "salmo": "Salmo 50, 3-4. 18-19. 20-21 ab (R.: Os 6, 6)",
+  "stage": "Liturgia",
   "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
@@ -12,46 +9,14 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Sábado",
-  "orden": 336,
-  "respuesta": "R. Quiero misericordia, y no sacrificios.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Misericordia, Dios mío, por tu bondad,",
-      "por tu inmensa compasión borra mi culpa;",
-      "lava del todo mi delito,",
-      "limpia mi pecado. R."
-    ],
-    [
-      "Los sacrificios no te satisfacen:",
-      "si te ofreciera un holocausto, no lo querrías.",
-      "Mi sacrificio es un espíritu quebrantado;",
-      "un corazón quebrantado y humillado,",
-      "tú no lo desprecias. R."
-    ],
-    [
-      "Señor, por tu bondad, favorece a Sión,",
-      "reconstruye las murallas de Jerusalén:",
-      "entonces aceptarás los sacrificios rituales,",
-      "ofrendas y holocaustos. R."
-    ]
-  ],
-  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nLos sacrificios no te satisfacen:\nsi te ofreciera un holocausto, no lo querrías.\nMi sacrificio es un espíritu quebrantado;\nun corazón quebrantado y humillado,\ntú no lo desprecias. R.\n\nSeñor, por tu bondad, favorece a Sión,\nreconstruye las murallas de Jerusalén:\nentonces aceptarás los sacrificios rituales,\nofrendas y holocaustos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 3 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma sabado salmo 50 3 4 18 19 20 21 ab r os 6 6 semana 3 semana iii sabado feria r quiero misericordia y no sacrificios misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r los sacrificios no te satisfacen si te ofreciera un holocausto no lo querrias mi sacrificio es un espiritu quebrantado un corazon quebrantado y humillado tu no lo desprecias r senor por tu bondad favorece a sion reconstruye las murallas de jerusalen entonces aceptaras los sacrificios rituales ofrendas y holocaustos r",
   "lizq": [
     {
       "line": "R. Quiero misericordia, y no sacrificios.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Misericordia, Dios mío, por tu bondad,",
@@ -74,8 +39,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los sacrificios no te satisfacen:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los sacrificios no te satisfacen:"
     },
     {
       "line": "si te ofreciera un holocausto, no lo querrías.",
@@ -90,16 +55,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tú no lo desprecias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tú no lo desprecias. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Señor, por tu bondad, favorece a Sión,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Señor, por tu bondad, favorece a Sión,"
     },
     {
       "line": "reconstruye las murallas de Jerusalén:",
@@ -113,5 +78,40 @@
       "line": "ofrendas y holocaustos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "dia": "Sábado",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "orden": 336,
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nLos sacrificios no te satisfacen:\nsi te ofreciera un holocausto, no lo querrías.\nMi sacrificio es un espíritu quebrantado;\nun corazón quebrantado y humillado,\ntú no lo desprecias. R.\n\nSeñor, por tu bondad, favorece a Sión,\nreconstruye las murallas de Jerusalén:\nentonces aceptarás los sacrificios rituales,\nofrendas y holocaustos. R.",
+  "searchPool": "sabado de la 3 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma sabado salmo 50 3 4 18 19 20 21 ab r os 6 6 semana 3 semana iii sabado feria r quiero misericordia y no sacrificios misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r los sacrificios no te satisfacen si te ofreciera un holocausto no lo querrias mi sacrificio es un espiritu quebrantado un corazon quebrantado y humillado tu no lo desprecias r senor por tu bondad favorece a sion reconstruye las murallas de jerusalen entonces aceptaras los sacrificios rituales ofrendas y holocaustos r",
+  "title": "Sábado de la 3ª semana de Cuaresma",
+  "estrofas": [
+    [
+      "Misericordia, Dios mío, por tu bondad,",
+      "por tu inmensa compasión borra mi culpa;",
+      "lava del todo mi delito,",
+      "limpia mi pecado. R."
+    ],
+    [
+      "Los sacrificios no te satisfacen:",
+      "si te ofreciera un holocausto, no lo querrías.",
+      "Mi sacrificio es un espíritu quebrantado;",
+      "un corazón quebrantado y humillado,",
+      "tú no lo desprecias. R."
+    ],
+    [
+      "Señor, por tu bondad, favorece a Sión,",
+      "reconstruye las murallas de Jerusalén:",
+      "entonces aceptarás los sacrificios rituales,",
+      "ofrendas y holocaustos. R."
+    ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo 50, 3-4. 18-19. 20-21 ab (R.: Os 6, 6)",
+  "respuesta": "R. Quiero misericordia, y no sacrificios.",
+  "tiempo": "Cuaresma",
+  "salmo": "Salmo 50, 3-4. 18-19. 20-21 ab (R.: Os 6, 6)",
+  "celebracion": "Sábado de la 3ª semana de Cuaresma"
 }

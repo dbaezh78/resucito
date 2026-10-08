@@ -1,15 +1,4 @@
 {
-  "id": "seuc_67",
-  "title": "Domingo de la 21ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 21ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
-  "salmo": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 521,
-  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Alabad al Señor, todas las naciones,",
@@ -20,12 +9,9 @@
       "su fidelidad dura por siempre. R."
     ]
   ],
-  "textoCompleto": "Alabad al Señor, todas las naciones,\naclamadlo, todos los pueblos. R.\n\nFirme es su misericordia con nosotros,\nsu fidelidad dura por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
+  "subtitle": "Salmo responsorial: Salmo 116, 1. 2 (R.: Mc 16, 15)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 21 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 116 1 2 r mc 16 15 r id al mundo entero y proclamad el evangelio aleluya alabad al senor todas las naciones aclamadlo todos los pueblos r firme es su misericordia con nosotros su fidelidad dura por siempre r",
   "lizq": [
     {
       "line": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
@@ -44,8 +30,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Firme es su misericordia con nosotros,",
@@ -55,5 +41,19 @@
       "line": "su fidelidad dura por siempre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. Id al mundo entero y proclamad el Evangelio. Aleluya.",
+  "title": "Domingo de la 21ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 521,
+  "dia": "Domingo",
+  "hasAudio": false,
+  "ciclo": "Ciclo C",
+  "textoCompleto": "Alabad al Señor, todas las naciones,\naclamadlo, todos los pueblos. R.\n\nFirme es su misericordia con nosotros,\nsu fidelidad dura por siempre. R.",
+  "id": "seuc_67",
+  "stage": "Liturgia",
+  "searchPool": "domingo de la 21 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 116 1 2 r mc 16 15 r id al mundo entero y proclamad el evangelio aleluya alabad al senor todas las naciones aclamadlo todos los pueblos r firme es su misericordia con nosotros su fidelidad dura por siempre r",
+  "celebracion": "Domingo de la 21ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "respuestaOpcional": ""
 }

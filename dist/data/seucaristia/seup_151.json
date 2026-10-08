@@ -1,44 +1,4 @@
 {
-  "id": "seup_151",
-  "title": "Lunes de la 26ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 26ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 16, 1. 2-3. 6-7 (R.: 6b)",
-  "salmo": "Salmo responsorial: Salmo 16, 1. 2-3. 6-7 (R.: 6b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5261,
-  "respuesta": "R. Inclina el oído y escucha mis palabras.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Señor, escucha mi apelación,",
-      "atiende a mis clamores,",
-      "presta oído a mi súplica,",
-      "que en mis labios no hay engaño. R."
-    ],
-    [
-      "Emane de ti la sentencia,",
-      "miren tus ojos la rectitud.",
-      "Aunque sondees mi corazón,",
-      "visitándolo de noche,",
-      "aunque me pruebes al fuego,",
-      "no encontrarás malicia en mí. R."
-    ],
-    [
-      "Yo te invoco porque tú me respondes, Dios mío;",
-      "inclina el oído y escucha mis palabras.",
-      "Muestra las maravillas de tu misericordia,",
-      "tú que salvas de los adversarios",
-      "a quien se refugia a tu derecha. R."
-    ]
-  ],
-  "textoCompleto": "Señor, escucha mi apelación,\natiende a mis clamores,\npresta oído a mi súplica,\nque en mis labios no hay engaño. R.\n\nEmane de ti la sentencia,\nmiren tus ojos la rectitud.\nAunque sondees mi corazón,\nvisitándolo de noche,\naunque me pruebes al fuego,\nno encontrarás malicia en mí. R.\n\nYo te invoco porque tú me respondes, Dios mío;\ninclina el oído y escucha mis palabras.\nMuestra las maravillas de tu misericordia,\ntú que salvas de los adversarios\na quien se refugia a tu derecha. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 26 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 16 1 2 3 6 7 r 6b semana 26 semana xxvi lunes 26 xxvi r inclina el oido y escucha mis palabras senor escucha mi apelacion atiende a mis clamores presta oido a mi suplica que en mis labios no hay engano r emane de ti la sentencia miren tus ojos la rectitud aunque sondees mi corazon visitandolo de noche aunque me pruebes al fuego no encontraras malicia en mi r yo te invoco porque tu me respondes dios mio inclina el oido y escucha mis palabras muestra las maravillas de tu misericordia tu que salvas de los adversarios a quien se refugia a tu derecha r",
   "lizq": [
     {
       "line": "R. Inclina el oído y escucha mis palabras.",
@@ -65,8 +25,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Emane de ti la sentencia,",
@@ -77,12 +37,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Aunque sondees mi corazón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Aunque sondees mi corazón,"
     },
     {
-      "line": "visitándolo de noche,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "visitándolo de noche,"
     },
     {
       "line": "aunque me pruebes al fuego,",
@@ -116,5 +76,45 @@
       "line": "a quien se refugia a tu derecha. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Lunes de la 26ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 16, 1. 2-3. 6-7 (R.: 6b)",
+  "subtitle": "Salmo responsorial: Salmo 16, 1. 2-3. 6-7 (R.: 6b)",
+  "estrofas": [
+    [
+      "Señor, escucha mi apelación,",
+      "atiende a mis clamores,",
+      "presta oído a mi súplica,",
+      "que en mis labios no hay engaño. R."
+    ],
+    [
+      "Emane de ti la sentencia,",
+      "miren tus ojos la rectitud.",
+      "Aunque sondees mi corazón,",
+      "visitándolo de noche,",
+      "aunque me pruebes al fuego,",
+      "no encontrarás malicia en mí. R."
+    ],
+    [
+      "Yo te invoco porque tú me respondes, Dios mío;",
+      "inclina el oído y escucha mis palabras.",
+      "Muestra las maravillas de tu misericordia,",
+      "tú que salvas de los adversarios",
+      "a quien se refugia a tu derecha. R."
+    ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
+  "id": "seup_151",
+  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "lunes de la 26 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 16 1 2 3 6 7 r 6b semana 26 semana xxvi lunes 26 xxvi r inclina el oido y escucha mis palabras senor escucha mi apelacion atiende a mis clamores presta oido a mi suplica que en mis labios no hay engano r emane de ti la sentencia miren tus ojos la rectitud aunque sondees mi corazon visitandolo de noche aunque me pruebes al fuego no encontraras malicia en mi r yo te invoco porque tu me respondes dios mio inclina el oido y escucha mis palabras muestra las maravillas de tu misericordia tu que salvas de los adversarios a quien se refugia a tu derecha r",
+  "title": "Lunes de la 26ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Inclina el oído y escucha mis palabras.",
+  "dia": "Lunes",
+  "textoCompleto": "Señor, escucha mi apelación,\natiende a mis clamores,\npresta oído a mi súplica,\nque en mis labios no hay engaño. R.\n\nEmane de ti la sentencia,\nmiren tus ojos la rectitud.\nAunque sondees mi corazón,\nvisitándolo de noche,\naunque me pruebes al fuego,\nno encontrarás malicia en mí. R.\n\nYo te invoco porque tú me respondes, Dios mío;\ninclina el oído y escucha mis palabras.\nMuestra las maravillas de tu misericordia,\ntú que salvas de los adversarios\na quien se refugia a tu derecha. R.",
+  "orden": 5261
 }

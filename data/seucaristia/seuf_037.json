@@ -1,10 +1,8 @@
 {
-  "id": "seuf_037",
-  "title": "10 DE ENERO: Jueves después de Epifanía",
   "celebracion": "10 DE ENERO: Jueves después de Epifanía",
-  "subtitle": "Salmo 71, 1-2. 14 y 15bc. 17 (R.: cf. 11)",
-  "salmo": "Salmo 71, 1-2. 14 y 15bc. 17 (R.: cf. 11)",
   "ciclo": "Ciclo A, B y C",
+  "hasAudio": false,
+  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nÉl rescatará sus vidas de la violencia,\nsu sangre será preciosa a sus ojos.\nQue recen por él continuamente\ny lo bendigan todo el día. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol;\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,37 +10,7 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Navidad",
-  "dia": "Jueves",
-  "orden": 234,
-  "respuesta": "R. Se postrarán ante ti, Señor, todos los pueblos de la tierra.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Dios mío, confía tu juicio al rey,",
-      "tu justicia al hijo de reyes,",
-      "para que rija a tu pueblo con justicia,",
-      "a tus humildes con rectitud. R."
-    ],
-    [
-      "Él rescatará sus vidas de la violencia,",
-      "su sangre será preciosa a sus ojos.",
-      "Que recen por él continuamente",
-      "y lo bendigan todo el día. R."
-    ],
-    [
-      "Que su nombre sea eterno,",
-      "y su fama dure como el sol;",
-      "que él sea la bendición de todos los pueblos,",
-      "y lo proclamen dichoso todas las razas de la tierra. R."
-    ]
-  ],
-  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nÉl rescatará sus vidas de la violencia,\nsu sangre será preciosa a sus ojos.\nQue recen por él continuamente\ny lo bendigan todo el día. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol;\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "10 de enero jueves despues de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad jueves salmo 71 1 2 14 y 15bc 17 r cf 11 jueves feria r se postraran ante ti senor todos los pueblos de la tierra dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r el rescatara sus vidas de la violencia su sangre sera preciosa a sus ojos que recen por el continuamente y lo bendigan todo el dia r que su nombre sea eterno y su fama dure como el sol que el sea la bendicion de todos los pueblos y lo proclamen dichoso todas las razas de la tierra r",
+  "id": "seuf_037",
   "lizq": [
     {
       "line": "R. Se postrarán ante ti, Señor,",
@@ -65,8 +33,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "para que rija a tu pueblo con justicia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "para que rija a tu pueblo con justicia,"
     },
     {
       "line": "a tus humildes con rectitud. R.",
@@ -81,12 +49,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "su sangre será preciosa a sus ojos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su sangre será preciosa a sus ojos."
     },
     {
-      "line": "Que recen por él continuamente",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Que recen por él continuamente"
     },
     {
       "line": "y lo bendigan todo el día. R.",
@@ -105,12 +73,44 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que él sea la bendición de todos los pueblos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que él sea la bendición de todos los pueblos,"
     },
     {
       "line": "y lo proclamen dichoso todas las razas de la tierra. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "dia": "Jueves",
+  "respuesta": "R. Se postrarán ante ti, Señor, todos los pueblos de la tierra.",
+  "tiempo": "Navidad",
+  "subtitle": "Salmo 71, 1-2. 14 y 15bc. 17 (R.: cf. 11)",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo 71, 1-2. 14 y 15bc. 17 (R.: cf. 11)",
+  "estrofas": [
+    [
+      "Dios mío, confía tu juicio al rey,",
+      "tu justicia al hijo de reyes,",
+      "para que rija a tu pueblo con justicia,",
+      "a tus humildes con rectitud. R."
+    ],
+    [
+      "Él rescatará sus vidas de la violencia,",
+      "su sangre será preciosa a sus ojos.",
+      "Que recen por él continuamente",
+      "y lo bendigan todo el día. R."
+    ],
+    [
+      "Que su nombre sea eterno,",
+      "y su fama dure como el sol;",
+      "que él sea la bendición de todos los pueblos,",
+      "y lo proclamen dichoso todas las razas de la tierra. R."
+    ]
+  ],
+  "orden": 234,
+  "sourceBook": "eucaristia",
+  "title": "10 DE ENERO: Jueves después de Epifanía",
+  "searchPool": "10 de enero jueves despues de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad jueves salmo 71 1 2 14 y 15bc 17 r cf 11 jueves feria r se postraran ante ti senor todos los pueblos de la tierra dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r el rescatara sus vidas de la violencia su sangre sera preciosa a sus ojos que recen por el continuamente y lo bendigan todo el dia r que su nombre sea eterno y su fama dure como el sol que el sea la bendicion de todos los pueblos y lo proclamen dichoso todas las razas de la tierra r",
+  "respuestaOpcional": ""
 }

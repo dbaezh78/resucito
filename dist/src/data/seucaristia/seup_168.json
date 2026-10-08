@@ -1,62 +1,28 @@
 {
-  "id": "seup_168",
-  "title": "Sábado de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 28ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 8, 2-3a. 4-5. 6-7 (R.: cf. 7)",
-  "salmo": "Salmo responsorial: Salmo 8, 2-3a. 4-5. 6-7 (R.: cf. 7)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Sábado",
-  "orden": 5286,
-  "respuesta": "R. Diste a tu Hijo el mando sobre las obras de tus manos.",
+  "id": "seup_168",
   "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Señor, dueño nuestro,",
-      "¡qué admirable es tu nombre",
-      "en toda la tierra!",
-      "Ensalzaste tu majestad sobre los cielos.",
-      "De la boca de los niños de pecho",
-      "has sacado una alabanza. R."
-    ],
-    [
-      "Cuando contemplo el cielo, obra de tus dedos,",
-      "la luna y las estrellas que has creado,",
-      "¿qué es el hombre, para que te acuerdes de él,",
-      "el ser humano, para darle poder? R."
-    ],
-    [
-      "Lo hiciste poco inferior a los ángeles,",
-      "lo coronaste de gloria y dignidad,",
-      "le diste el mando sobre las obras de tus manos. R."
-    ]
-  ],
-  "textoCompleto": "Señor, dueño nuestro,\n¡qué admirable es tu nombre\nen toda la tierra!\nEnsalzaste tu majestad sobre los cielos.\nDe la boca de los niños de pecho\nhas sacado una alabanza. R.\n\nCuando contemplo el cielo, obra de tus dedos,\nla luna y las estrellas que has creado,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 28 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 8 2 3a 4 5 6 7 r cf 7 semana 28 semana xxviii sabado 28 xxviii r diste a tu hijo el mando sobre las obras de tus manos senor dueno nuestro que admirable es tu nombre en toda la tierra ensalzaste tu majestad sobre los cielos de la boca de los ninos de pecho has sacado una alabanza r cuando contemplo el cielo obra de tus dedos la luna y las estrellas que has creado que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos r",
   "lizq": [
     {
       "line": "R. Diste a tu Hijo el mando sobre las obras de tus manos.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Señor, dueño nuestro,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "¡qué admirable es tu nombre",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¡qué admirable es tu nombre"
     },
     {
-      "line": "en toda la tierra!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en toda la tierra!"
     },
     {
       "line": "Ensalzaste tu majestad sobre los cielos.",
@@ -67,12 +33,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "has sacado una alabanza. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "has sacado una alabanza. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cuando contemplo el cielo, obra de tus dedos,",
@@ -83,8 +49,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "¿qué es el hombre, para que te acuerdes de él,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿qué es el hombre, para que te acuerdes de él,"
     },
     {
       "line": "el ser humano, para darle poder? R.",
@@ -106,5 +72,39 @@
       "line": "le diste el mando sobre las obras de tus manos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Señor, dueño nuestro,\n¡qué admirable es tu nombre\nen toda la tierra!\nEnsalzaste tu majestad sobre los cielos.\nDe la boca de los niños de pecho\nhas sacado una alabanza. R.\n\nCuando contemplo el cielo, obra de tus dedos,\nla luna y las estrellas que has creado,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos. R.",
+  "salmo": "Salmo responsorial: Salmo 8, 2-3a. 4-5. 6-7 (R.: cf. 7)",
+  "respuesta": "R. Diste a tu Hijo el mando sobre las obras de tus manos.",
+  "hasAudio": false,
+  "title": "Sábado de la 28ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "subtitle": "Salmo responsorial: Salmo 8, 2-3a. 4-5. 6-7 (R.: cf. 7)",
+  "orden": 5286,
+  "searchPool": "sabado de la 28 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 8 2 3a 4 5 6 7 r cf 7 semana 28 semana xxviii sabado 28 xxviii r diste a tu hijo el mando sobre las obras de tus manos senor dueno nuestro que admirable es tu nombre en toda la tierra ensalzaste tu majestad sobre los cielos de la boca de los ninos de pecho has sacado una alabanza r cuando contemplo el cielo obra de tus dedos la luna y las estrellas que has creado que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos r",
+  "estrofas": [
+    [
+      "Señor, dueño nuestro,",
+      "¡qué admirable es tu nombre",
+      "en toda la tierra!",
+      "Ensalzaste tu majestad sobre los cielos.",
+      "De la boca de los niños de pecho",
+      "has sacado una alabanza. R."
+    ],
+    [
+      "Cuando contemplo el cielo, obra de tus dedos,",
+      "la luna y las estrellas que has creado,",
+      "¿qué es el hombre, para que te acuerdes de él,",
+      "el ser humano, para darle poder? R."
+    ],
+    [
+      "Lo hiciste poco inferior a los ángeles,",
+      "lo coronaste de gloria y dignidad,",
+      "le diste el mando sobre las obras de tus manos. R."
+    ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "celebracion": "Sábado de la 28ª semana de Tiempo Ordinario"
 }

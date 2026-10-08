@@ -1,15 +1,17 @@
 {
-  "id": "seup_087",
-  "title": "Miércoles de la 15ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 15ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 93, 5-6. 7-8. 9-10. 14-15 (R.: 14a)",
-  "salmo": "Salmo responsorial: Salmo 93, 5-6. 7-8. 9-10. 14-15 (R.: 14a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
   "orden": 5153,
+  "sourceBook": "eucaristia",
+  "title": "Miércoles de la 15ª semana de Tiempo Ordinario",
   "respuesta": "R. El Señor no rechaza a su pueblo.",
+  "id": "seup_087",
+  "tiempo": "Tiempo Ordinario",
   "respuestaOpcional": "",
+  "celebracion": "Miércoles de la 15ª semana de Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "dia": "Miércoles",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "miercoles de la 15 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 93 5 6 7 8 9 10 14 15 r 14a semana 15 semana xv miercoles 15 xv r el senor no rechaza a su pueblo trituran senor a tu pueblo oprimen a tu heredad asesinan a viudas y forasteros deguellan a los huerfanos r y comentan dios no lo ve el dios de jacob no se entera enteraos los mas necios del pueblo ignorantes cuando discurrireis r el que planto el oido no va a oir el que formo el ojo no va a ver el que educa a los pueblos no va a castigar el que instruye al hombre no va a saber r porque el senor no rechaza a su pueblo ni abandona su heredad el justo obtendra su derecho y un porvenir los rectos de corazon r",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Trituran, Señor, a tu pueblo,",
@@ -37,19 +39,15 @@
     ]
   ],
   "textoCompleto": "Trituran, Señor, a tu pueblo,\noprimen a tu heredad;\nasesinan a viudas y forasteros,\ndegüellan a los huérfanos. R.\n\nY comentan: «Dios no lo ve,\nel Dios de Jacob no se entera».\nEnteraos, los más necios del pueblo,\nignorantes, ¿cuándo discurriréis? R.\n\nEl que plantó el oído ¿no va a oír?;\nel que formó el ojo ¿no va a ver?;\nel que educa a los pueblos ¿no va a castigar?;\nel que instruye al hombre ¿no va a saber? R.\n\nPorque el Señor no rechaza a su pueblo,\nni abandona su heredad:\nel justo obtendrá su derecho,\ny un porvenir los rectos de corazón. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "miercoles de la 15 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 93 5 6 7 8 9 10 14 15 r 14a semana 15 semana xv miercoles 15 xv r el senor no rechaza a su pueblo trituran senor a tu pueblo oprimen a tu heredad asesinan a viudas y forasteros deguellan a los huerfanos r y comentan dios no lo ve el dios de jacob no se entera enteraos los mas necios del pueblo ignorantes cuando discurrireis r el que planto el oido no va a oir el que formo el ojo no va a ver el que educa a los pueblos no va a castigar el que instruye al hombre no va a saber r porque el senor no rechaza a su pueblo ni abandona su heredad el justo obtendra su derecho y un porvenir los rectos de corazon r",
   "lizq": [
     {
-      "line": "R. El Señor no rechaza a su pueblo.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor no rechaza a su pueblo."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Trituran, Señor, a tu pueblo,",
@@ -64,8 +62,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "degüellan a los huérfanos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "degüellan a los huérfanos. R."
     },
     {
       "line": "",
@@ -76,12 +74,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "el Dios de Jacob no se entera».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Dios de Jacob no se entera»."
     },
     {
-      "line": "Enteraos, los más necios del pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Enteraos, los más necios del pueblo,"
     },
     {
       "line": "ignorantes, ¿cuándo discurriréis? R.",
@@ -100,8 +98,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "el que educa a los pueblos ¿no va a castigar?;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el que educa a los pueblos ¿no va a castigar?;"
     },
     {
       "line": "el que instruye al hombre ¿no va a saber? R.",
@@ -112,12 +110,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Porque el Señor no rechaza a su pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Porque el Señor no rechaza a su pueblo,"
     },
     {
-      "line": "ni abandona su heredad:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ni abandona su heredad:"
     },
     {
       "line": "el justo obtendrá su derecho,",
@@ -127,5 +125,7 @@
       "line": "y un porvenir los rectos de corazón. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 93, 5-6. 7-8. 9-10. 14-15 (R.: 14a)",
+  "subtitle": "Salmo responsorial: Salmo 93, 5-6. 7-8. 9-10. 14-15 (R.: 14a)"
 }

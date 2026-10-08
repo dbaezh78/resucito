@@ -1,15 +1,5 @@
 {
-  "id": "seui_060",
-  "title": "Sábado de la 10ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 10ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 11-12 (R.: 8a)",
-  "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 11-12 (R.: 8a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5106,
-  "respuesta": "R. El Señor es compasivo y misericordioso.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Bendice, alma mía, al Señor,",
@@ -36,20 +26,23 @@
       "así aleja de nosotros nuestros delitos. R."
     ]
   ],
-  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno está siempre acusando\nni guarda rencor perpetuo. R.\n\nComo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "sabado de la 10 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 102 1 2 3 4 8 9 11 12 r 8a semana 10 semana x sabado 10 x r el senor es compasivo y misericordioso bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no esta siempre acusando ni guarda rencor perpetuo r como se levanta el cielo sobre la tierra se levanta su bondad sobre sus fieles como dista el oriente del ocaso asi aleja de nosotros nuestros delitos r",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. El Señor es compasivo y misericordioso.",
+  "dia": "Sábado",
+  "id": "seui_060",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno está siempre acusando\nni guarda rencor perpetuo. R.\n\nComo se levanta el cielo sobre la tierra,\nse levanta su bondad sobre sus fieles;\ncomo dista el oriente del ocaso,\nasí aleja de nosotros nuestros delitos. R.",
+  "title": "Sábado de la 10ª semana de Tiempo Ordinario",
   "lizq": [
     {
-      "line": "R. El Señor es compasivo y misericordioso.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor es compasivo y misericordioso."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendice, alma mía, al Señor,",
@@ -72,8 +65,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Él perdona todas tus culpas",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Él perdona todas tus culpas"
     },
     {
       "line": "y cura todas tus enfermedades;",
@@ -88,24 +81,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor es compasivo y misericordioso,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "lento a la ira y rico en clemencia;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lento a la ira y rico en clemencia;"
     },
     {
       "line": "no está siempre acusando",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ni guarda rencor perpetuo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ni guarda rencor perpetuo. R."
     },
     {
       "line": "",
@@ -124,8 +117,15 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "así aleja de nosotros nuestros delitos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "así aleja de nosotros nuestros delitos. R."
     }
-  ]
+  ],
+  "celebracion": "Sábado de la 10ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 11-12 (R.: 8a)",
+  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 11-12 (R.: 8a)",
+  "ciclo": "Año Impar",
+  "orden": 5106,
+  "stage": "Liturgia"
 }

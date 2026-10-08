@@ -1,15 +1,9 @@
 {
-  "id": "seui_147",
-  "title": "Miércoles de la 25ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 25ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Tobías 13, 2. 4. 6. 7. 8 (R.:)1a",
+  "orden": 5253,
+  "stage": "Liturgia",
   "salmo": "Interleccional: Tobías 13, 2. 4. 6. 7. 8 (R.:)1a",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5253,
-  "respuesta": "R. Bendito sea Dios, que vive eternamente.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Él azota y se compadece,",
@@ -42,28 +36,22 @@
       "y tendrá compasión. R."
     ]
   ],
-  "textoCompleto": "Él azota y se compadece,\nhunde hasta el abismo y saca de él,\ny no hay quien escape de su mano. R.\n\nDadle gracias, israelitas, ante los gentiles,\nporque él nos dispersó entre ellos.\nProclamad allí su grandeza,\nensalzadlo ante todos los vivientes:\nque él es nuestro Dios y Señor,\nnuestro padre por todos los siglos. R.\n\nVeréis lo que hará con vosotros,\nle daréis gracias a boca llena,\nbendeciréis al Señor de la justicia\ny ensalzaréis al rey de los siglos. R.\n\nYo le doy gracias en mi cautiverio,\nanuncio su grandeza y su poder\na un pueblo pecador. R.\n\nConvertíos pecadores,\nobrad rectamente en su presencia:\nquizás os mostrará benevolencia\ny tendrá compasión. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 25 semana de tiempo ordinario ano impar tiempo ordinario miercoles interleccional tobias 13 2 4 6 7 8 r 1a semana 25 semana xxv miercoles 25 xxv r bendito sea dios que vive eternamente el azota y se compadece hunde hasta el abismo y saca de el y no hay quien escape de su mano r dadle gracias israelitas ante los gentiles porque el nos disperso entre ellos proclamad alli su grandeza ensalzadlo ante todos los vivientes que el es nuestro dios y senor nuestro padre por todos los siglos r vereis lo que hara con vosotros le dareis gracias a boca llena bendecireis al senor de la justicia y ensalzareis al rey de los siglos r yo le doy gracias en mi cautiverio anuncio su grandeza y su poder a un pueblo pecador r convertios pecadores obrad rectamente en su presencia quizas os mostrara benevolencia y tendra compasion r",
   "lizq": [
     {
       "line": "R. Bendito sea Dios, que vive eternamente.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Él azota y se compadece,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Él azota y se compadece,"
     },
     {
-      "line": "hunde hasta el abismo y saca de él,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hunde hasta el abismo y saca de él,"
     },
     {
       "line": "y no hay quien escape de su mano. R.",
@@ -102,16 +90,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Veréis lo que hará con vosotros,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Veréis lo que hará con vosotros,"
     },
     {
       "line": "le daréis gracias a boca llena,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "bendeciréis al Señor de la justicia",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "bendeciréis al Señor de la justicia"
     },
     {
       "line": "y ensalzaréis al rey de los siglos. R.",
@@ -126,20 +114,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "anuncio su grandeza y su poder",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "anuncio su grandeza y su poder"
     },
     {
       "line": "a un pueblo pecador. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Convertíos pecadores,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Convertíos pecadores,"
     },
     {
       "line": "obrad rectamente en su presencia:",
@@ -153,5 +141,17 @@
       "line": "y tendrá compasión. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "id": "seui_147",
+  "title": "Miércoles de la 25ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Él azota y se compadece,\nhunde hasta el abismo y saca de él,\ny no hay quien escape de su mano. R.\n\nDadle gracias, israelitas, ante los gentiles,\nporque él nos dispersó entre ellos.\nProclamad allí su grandeza,\nensalzadlo ante todos los vivientes:\nque él es nuestro Dios y Señor,\nnuestro padre por todos los siglos. R.\n\nVeréis lo que hará con vosotros,\nle daréis gracias a boca llena,\nbendeciréis al Señor de la justicia\ny ensalzaréis al rey de los siglos. R.\n\nYo le doy gracias en mi cautiverio,\nanuncio su grandeza y su poder\na un pueblo pecador. R.\n\nConvertíos pecadores,\nobrad rectamente en su presencia:\nquizás os mostrará benevolencia\ny tendrá compasión. R.",
+  "subtitle": "Interleccional: Tobías 13, 2. 4. 6. 7. 8 (R.:)1a",
+  "respuestaOpcional": "",
+  "respuesta": "R. Bendito sea Dios, que vive eternamente.",
+  "celebracion": "Miércoles de la 25ª semana de Tiempo Ordinario",
+  "dia": "Miércoles",
+  "hasAudio": false,
+  "searchPool": "miercoles de la 25 semana de tiempo ordinario ano impar tiempo ordinario miercoles interleccional tobias 13 2 4 6 7 8 r 1a semana 25 semana xxv miercoles 25 xxv r bendito sea dios que vive eternamente el azota y se compadece hunde hasta el abismo y saca de el y no hay quien escape de su mano r dadle gracias israelitas ante los gentiles porque el nos disperso entre ellos proclamad alli su grandeza ensalzadlo ante todos los vivientes que el es nuestro dios y senor nuestro padre por todos los siglos r vereis lo que hara con vosotros le dareis gracias a boca llena bendecireis al senor de la justicia y ensalzareis al rey de los siglos r yo le doy gracias en mi cautiverio anuncio su grandeza y su poder a un pueblo pecador r convertios pecadores obrad rectamente en su presencia quizas os mostrara benevolencia y tendra compasion r"
 }

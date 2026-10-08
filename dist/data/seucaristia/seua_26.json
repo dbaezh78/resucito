@@ -1,15 +1,8 @@
 {
   "id": "seua_26",
-  "title": "Cuarto Salmo",
-  "celebracion": "Cuarto Salmo",
-  "subtitle": "Salmo responsorial: 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
-  "salmo": "Salmo responsorial: 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Solemnidades y Fiestas",
-  "dia": "Domingo",
-  "orden": 600,
+  "stage": "Liturgia",
   "respuesta": "R. Te ensalzaré, Señor, porque me has librado.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Te ensalzaré, Señor, porque me has librado\ny no has dejado que mis enemigos se rían de mí.\nSacaste mi vida del abismo,\ny me hiciste revivir cuando bajaba a la fosa. R.\n\nTañed para el Señor, fieles suyos;\ndad gracias a su nombre santo;\nsu cólera dura un instante;\nsu bondad, de por vida;\nal atardecer nos visita el llanto;\npor la mañana, el júbilo. R.\n\nEscucha, Señor, y ten piedad de mí;\nSeñor, socórreme.\nCambiaste mi luto en danzas.\nSeñor, Dios mío, te daré gracias por siempre. R.",
   "estrofas": [
     [
       "Te ensalzaré, Señor, porque me has librado",
@@ -32,20 +25,20 @@
       "Señor, Dios mío, te daré gracias por siempre. R."
     ]
   ],
-  "textoCompleto": "Te ensalzaré, Señor, porque me has librado\ny no has dejado que mis enemigos se rían de mí.\nSacaste mi vida del abismo,\ny me hiciste revivir cuando bajaba a la fosa. R.\n\nTañed para el Señor, fieles suyos;\ndad gracias a su nombre santo;\nsu cólera dura un instante;\nsu bondad, de por vida;\nal atardecer nos visita el llanto;\npor la mañana, el júbilo. R.\n\nEscucha, Señor, y ten piedad de mí;\nSeñor, socórreme.\nCambiaste mi luto en danzas.\nSeñor, Dios mío, te daré gracias por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "celebracion": "Cuarto Salmo",
+  "subtitle": "Salmo responsorial: 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "cuarto salmo ciclo a solemnidades y fiestas domingo salmo responsorial 29 2 y 4 5 6 11 y 12a y 13b r 2a r te ensalzare senor porque me has librado te ensalzare senor porque me has librado y no has dejado que mis enemigos se rian de mi sacaste mi vida del abismo y me hiciste revivir cuando bajaba a la fosa r taned para el senor fieles suyos dad gracias a su nombre santo su colera dura un instante su bondad de por vida al atardecer nos visita el llanto por la manana el jubilo r escucha senor y ten piedad de mi senor socorreme cambiaste mi luto en danzas senor dios mio te dare gracias por siempre r",
+  "ciclo": "Ciclo A",
+  "dia": "Domingo",
+  "title": "Cuarto Salmo",
   "lizq": [
     {
-      "line": "R. Te ensalzaré, Señor, porque me has librado.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Te ensalzaré, Señor, porque me has librado."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Te ensalzaré, Señor, porque me has librado",
@@ -64,16 +57,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Tañed para el Señor, fieles suyos;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tañed para el Señor, fieles suyos;"
     },
     {
-      "line": "dad gracias a su nombre santo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "dad gracias a su nombre santo;"
     },
     {
       "line": "su cólera dura un instante;",
@@ -100,8 +93,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "Señor, socórreme.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, socórreme."
     },
     {
       "line": "Cambiaste mi luto en danzas.",
@@ -111,5 +104,12 @@
       "line": "Señor, Dios mío, te daré gracias por siempre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 600,
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
+  "tiempo": "Solemnidades y Fiestas",
+  "hasAudio": false,
+  "searchPool": "cuarto salmo ciclo a solemnidades y fiestas domingo salmo responsorial 29 2 y 4 5 6 11 y 12a y 13b r 2a r te ensalzare senor porque me has librado te ensalzare senor porque me has librado y no has dejado que mis enemigos se rian de mi sacaste mi vida del abismo y me hiciste revivir cuando bajaba a la fosa r taned para el senor fieles suyos dad gracias a su nombre santo su colera dura un instante su bondad de por vida al atardecer nos visita el llanto por la manana el jubilo r escucha senor y ten piedad de mi senor socorreme cambiaste mi luto en danzas senor dios mio te dare gracias por siempre r"
 }

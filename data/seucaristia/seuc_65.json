@@ -1,41 +1,4 @@
 {
-  "id": "seuc_65",
-  "title": "Domingo de la 19ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 19ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 32, 1 y 12. 18-19. 20 y 22 (R.: l2b)",
-  "salmo": "Salmo responsorial: Salmo 32, 1 y 12. 18-19. 20 y 22 (R.: l2b)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 519,
-  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Aclamad, justos, al Señor,",
-      "que merece la alabanza de los buenos.",
-      "Dichosa la nación cuyo Dios es el Señor,",
-      "el pueblo que él se escogió como heredad. R."
-    ],
-    [
-      "Los ojos del Señor están puestos en sus fieles,",
-      "en los que esperan en su misericordia,",
-      "para librar sus vidas de la muerte",
-      "y reanimarlos en tiempo de hambre. R."
-    ],
-    [
-      "Nosotros aguardamos al Señor:",
-      "él es nuestro auxilio y escudo;",
-      "que tu misericordia, Señor, venga sobre nosotros,",
-      "como lo esperamos de ti. R."
-    ]
-  ],
-  "textoCompleto": "Aclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\nque tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 19 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 32 1 y 12 18 19 20 y 22 r l2b r dichoso el pueblo que el senor se escogio como heredad aclamad justos al senor que merece la alabanza de los buenos dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad r los ojos del senor estan puestos en sus fieles en los que esperan en su misericordia para librar sus vidas de la muerte y reanimarlos en tiempo de hambre r nosotros aguardamos al senor el es nuestro auxilio y escudo que tu misericordia senor venga sobre nosotros como lo esperamos de ti r",
   "lizq": [
     {
       "line": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
@@ -54,8 +17,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Dichosa la nación cuyo Dios es el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dichosa la nación cuyo Dios es el Señor,"
     },
     {
       "line": "el pueblo que él se escogió como heredad. R.",
@@ -66,8 +29,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los ojos del Señor están puestos en sus fieles,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los ojos del Señor están puestos en sus fieles,"
     },
     {
       "line": "en los que esperan en su misericordia,",
@@ -98,8 +61,45 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "como lo esperamos de ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "como lo esperamos de ti. R."
     }
-  ]
+  ],
+  "title": "Domingo de la 19ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 519,
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 32, 1 y 12. 18-19. 20 y 22 (R.: l2b)",
+  "searchPool": "domingo de la 19 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 32 1 y 12 18 19 20 y 22 r l2b r dichoso el pueblo que el senor se escogio como heredad aclamad justos al senor que merece la alabanza de los buenos dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad r los ojos del senor estan puestos en sus fieles en los que esperan en su misericordia para librar sus vidas de la muerte y reanimarlos en tiempo de hambre r nosotros aguardamos al senor el es nuestro auxilio y escudo que tu misericordia senor venga sobre nosotros como lo esperamos de ti r",
+  "sourceBook": "eucaristia",
+  "respuestaOpcional": "",
+  "textoCompleto": "Aclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.\n\nNosotros aguardamos al Señor:\nél es nuestro auxilio y escudo;\nque tu misericordia, Señor, venga sobre nosotros,\ncomo lo esperamos de ti. R.",
+  "celebracion": "Domingo de la 19ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 32, 1 y 12. 18-19. 20 y 22 (R.: l2b)",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "Aclamad, justos, al Señor,",
+      "que merece la alabanza de los buenos.",
+      "Dichosa la nación cuyo Dios es el Señor,",
+      "el pueblo que él se escogió como heredad. R."
+    ],
+    [
+      "Los ojos del Señor están puestos en sus fieles,",
+      "en los que esperan en su misericordia,",
+      "para librar sus vidas de la muerte",
+      "y reanimarlos en tiempo de hambre. R."
+    ],
+    [
+      "Nosotros aguardamos al Señor:",
+      "él es nuestro auxilio y escudo;",
+      "que tu misericordia, Señor, venga sobre nosotros,",
+      "como lo esperamos de ti. R."
+    ]
+  ],
+  "id": "seuc_65",
+  "dia": "Domingo",
+  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
+  "ciclo": "Ciclo C"
 }

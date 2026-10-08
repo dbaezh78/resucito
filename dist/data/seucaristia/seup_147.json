@@ -1,47 +1,5 @@
 {
-  "id": "seup_147",
-  "title": "Miércoles de la 25ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 25ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 29. 72. 89. 101. 104. 163(R.: 105a)",
-  "salmo": "Salmo responsorial: Salmo 118, 29. 72. 89. 101. 104. 163(R.: 105a)",
-  "ciclo": "Año Par",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5253,
-  "respuesta": "R. Lámpara es tu palabra para mis pasos, Señor.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Apártame del camino falso,",
-      "y dame la gracia de tu voluntad. R."
-    ],
-    [
-      "Más estimo yo los preceptos de tu boca",
-      "que miles de monedas de oro y plata. R."
-    ],
-    [
-      "Tu palabra, Señor, es eterna,",
-      "más estable que el cielo. R."
-    ],
-    [
-      "Aparto mi pie de toda senda mala,",
-      "para guardar tu palabra. R."
-    ],
-    [
-      "Considero tus decretos,",
-      "y odio el camino de la mentira. R."
-    ],
-    [
-      "Detesto y aborrezco la mentira,",
-      "y amo tu voluntad. R."
-    ]
-  ],
-  "textoCompleto": "Apártame del camino falso,\ny dame la gracia de tu voluntad. R.\n\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nTu palabra, Señor, es eterna,\nmás estable que el cielo. R.\n\nAparto mi pie de toda senda mala,\npara guardar tu palabra. R.\n\nConsidero tus decretos,\ny odio el camino de la mentira. R.\n\nDetesto y aborrezco la mentira,\ny amo tu voluntad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 25 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 118 29 72 89 101 104 163 r 105a semana 25 semana xxv miercoles 25 xxv r lampara es tu palabra para mis pasos senor apartame del camino falso y dame la gracia de tu voluntad r mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r tu palabra senor es eterna mas estable que el cielo r aparto mi pie de toda senda mala para guardar tu palabra r considero tus decretos y odio el camino de la mentira r detesto y aborrezco la mentira y amo tu voluntad r",
   "lizq": [
     {
       "line": "R. Lámpara es tu palabra para mis pasos, Señor.",
@@ -68,8 +26,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que miles de monedas de oro y plata. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que miles de monedas de oro y plata. R."
     },
     {
       "line": "",
@@ -80,28 +38,28 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "más estable que el cielo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "más estable que el cielo. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Aparto mi pie de toda senda mala,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "para guardar tu palabra. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Aparto mi pie de toda senda mala,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "para guardar tu palabra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Considero tus decretos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Considero tus decretos,"
     },
     {
       "line": "y odio el camino de la mentira. R.",
@@ -112,12 +70,54 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Detesto y aborrezco la mentira,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Detesto y aborrezco la mentira,"
     },
     {
-      "line": "y amo tu voluntad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y amo tu voluntad. R."
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 118, 29. 72. 89. 101. 104. 163(R.: 105a)",
+  "searchPool": "miercoles de la 25 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 118 29 72 89 101 104 163 r 105a semana 25 semana xxv miercoles 25 xxv r lampara es tu palabra para mis pasos senor apartame del camino falso y dame la gracia de tu voluntad r mas estimo yo los preceptos de tu boca que miles de monedas de oro y plata r tu palabra senor es eterna mas estable que el cielo r aparto mi pie de toda senda mala para guardar tu palabra r considero tus decretos y odio el camino de la mentira r detesto y aborrezco la mentira y amo tu voluntad r",
+  "respuestaOpcional": "",
+  "id": "seup_147",
+  "textoCompleto": "Apártame del camino falso,\ny dame la gracia de tu voluntad. R.\n\nMás estimo yo los preceptos de tu boca\nque miles de monedas de oro y plata. R.\n\nTu palabra, Señor, es eterna,\nmás estable que el cielo. R.\n\nAparto mi pie de toda senda mala,\npara guardar tu palabra. R.\n\nConsidero tus decretos,\ny odio el camino de la mentira. R.\n\nDetesto y aborrezco la mentira,\ny amo tu voluntad. R.",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "respuesta": "R. Lámpara es tu palabra para mis pasos, Señor.",
+  "ciclo": "Año Par",
+  "subtitle": "Salmo responsorial: Salmo 118, 29. 72. 89. 101. 104. 163(R.: 105a)",
+  "title": "Miércoles de la 25ª semana de Tiempo Ordinario",
+  "celebracion": "Miércoles de la 25ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Apártame del camino falso,",
+      "y dame la gracia de tu voluntad. R."
+    ],
+    [
+      "Más estimo yo los preceptos de tu boca",
+      "que miles de monedas de oro y plata. R."
+    ],
+    [
+      "Tu palabra, Señor, es eterna,",
+      "más estable que el cielo. R."
+    ],
+    [
+      "Aparto mi pie de toda senda mala,",
+      "para guardar tu palabra. R."
+    ],
+    [
+      "Considero tus decretos,",
+      "y odio el camino de la mentira. R."
+    ],
+    [
+      "Detesto y aborrezco la mentira,",
+      "y amo tu voluntad. R."
+    ]
+  ],
+  "orden": 5253,
+  "dia": "Miércoles"
 }

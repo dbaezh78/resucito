@@ -1,14 +1,12 @@
 {
-  "id": "seup_184",
-  "title": "Jueves de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 31ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 104. 2-3. 4-5. 6-7 (R.: 3b)",
-  "salmo": "Salmo responsorial: Salmo 104. 2-3. 4-5. 6-7 (R.: 3b)",
-  "ciclo": "Año Par",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5314,
   "respuesta": "R. Que se alegren los que buscan al Señor.",
+  "salmo": "Salmo responsorial: Salmo 104. 2-3. 4-5. 6-7 (R.: 3b)",
+  "id": "seup_184",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Jueves",
+  "celebracion": "Jueves de la 31ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
   "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
@@ -30,32 +28,26 @@
       "él gobierna toda la tierra. R."
     ]
   ],
-  "textoCompleto": "Cantadle al son de instrumentos,\nhablad de sus maravillas;\ngloriaos de su nombre santo,\nque se alegren los que buscan al Señor. R.\n\nRecurrid al Señor y a su poder,\nbuscad continuamente su rostro.\nRecordad las maravillas que hizo,\nsus prodigios, las sentencias de su boca. R.\n\n¡Estirpe de Abrahán, su siervo;\nhijos de Jacob, su elegido!\nEl Señor es nuestro Dios,\nél gobierna toda la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 31 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 104 2 3 4 5 6 7 r 3b semana 31 semana xxxi jueves 31 xxxi r que se alegren los que buscan al senor r aleluya cantadle al son de instrumentos hablad de sus maravillas gloriaos de su nombre santo que se alegren los que buscan al senor r recurrid al senor y a su poder buscad continuamente su rostro recordad las maravillas que hizo sus prodigios las sentencias de su boca r estirpe de abrahan su siervo hijos de jacob su elegido el senor es nuestro dios el gobierna toda la tierra r",
   "lizq": [
     {
-      "line": "R. Que se alegren los que buscan al Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Que se alegren los que buscan al Señor."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cantadle al son de instrumentos,",
@@ -70,16 +62,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que se alegren los que buscan al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que se alegren los que buscan al Señor. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Recurrid al Señor y a su poder,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Recurrid al Señor y a su poder,"
     },
     {
       "line": "buscad continuamente su rostro.",
@@ -113,5 +105,13 @@
       "line": "él gobierna toda la tierra. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Año Par",
+  "sourceBook": "eucaristia",
+  "title": "Jueves de la 31ª semana de Tiempo Ordinario",
+  "textoCompleto": "Cantadle al son de instrumentos,\nhablad de sus maravillas;\ngloriaos de su nombre santo,\nque se alegren los que buscan al Señor. R.\n\nRecurrid al Señor y a su poder,\nbuscad continuamente su rostro.\nRecordad las maravillas que hizo,\nsus prodigios, las sentencias de su boca. R.\n\n¡Estirpe de Abrahán, su siervo;\nhijos de Jacob, su elegido!\nEl Señor es nuestro Dios,\nél gobierna toda la tierra. R.",
+  "hasAudio": false,
+  "searchPool": "jueves de la 31 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 104 2 3 4 5 6 7 r 3b semana 31 semana xxxi jueves 31 xxxi r que se alegren los que buscan al senor r aleluya cantadle al son de instrumentos hablad de sus maravillas gloriaos de su nombre santo que se alegren los que buscan al senor r recurrid al senor y a su poder buscad continuamente su rostro recordad las maravillas que hizo sus prodigios las sentencias de su boca r estirpe de abrahan su siervo hijos de jacob su elegido el senor es nuestro dios el gobierna toda la tierra r",
+  "orden": 5314,
+  "subtitle": "Salmo responsorial: Salmo 104. 2-3. 4-5. 6-7 (R.: 3b)"
 }

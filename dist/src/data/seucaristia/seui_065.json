@@ -1,41 +1,14 @@
 {
-  "id": "seui_065",
-  "title": "Viernes de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 11ª semana de Tiempo Ordinario",
+  "orden": 5115,
   "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7 (R.: cf. 18b)",
+  "stage": "Liturgia",
+  "respuestaOpcional": "",
   "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7 (R.: cf. 18b)",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5115,
-  "respuesta": "R. El Señor libra a los justos de sus angustias.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Bendigo al Señor en todo momento,",
-      "su alabanza está siempre en mi boca;",
-      "mi alma se gloría en el Señor:",
-      "que los humildes lo escuchen y se alegren. R."
-    ],
-    [
-      "Proclamad conmigo la grandeza del Señor,",
-      "ensalcemos juntos su nombre.",
-      "Yo consulté al Señor, y me respondió,",
-      "me libró de todas mis ansias. R."
-    ],
-    [
-      "Contempladlo, y quedaréis radiantes,",
-      "vuestro rostro no se avergonzará.",
-      "Si el afligido invoca al Señor, él lo escucha",
-      "y lo salva de sus angustias. R."
-    ]
-  ],
-  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "viernes de la 11 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 33 2 3 4 5 6 7 r cf 18b semana 11 semana xi viernes 11 xi r el senor libra a los justos de sus angustias bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r",
+  "dia": "Viernes",
+  "respuesta": "R. El Señor libra a los justos de sus angustias.",
+  "title": "Viernes de la 11ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. El Señor libra a los justos",
@@ -46,16 +19,16 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendigo al Señor en todo momento,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "su alabanza está siempre en mi boca;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su alabanza está siempre en mi boca;"
     },
     {
       "line": "mi alma se gloría en el Señor:",
@@ -78,24 +51,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Yo consulté al Señor, y me respondió,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Yo consulté al Señor, y me respondió,"
     },
     {
       "line": "me libró de todas mis ansias. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Contempladlo, y quedaréis radiantes,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "vuestro rostro no se avergonzará.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "vuestro rostro no se avergonzará."
     },
     {
       "line": "Si el afligido invoca al Señor, él lo escucha",
@@ -105,5 +78,32 @@
       "line": "y lo salva de sus angustias. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Viernes de la 11ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "id": "seui_065",
+  "estrofas": [
+    [
+      "Bendigo al Señor en todo momento,",
+      "su alabanza está siempre en mi boca;",
+      "mi alma se gloría en el Señor:",
+      "que los humildes lo escuchen y se alegren. R."
+    ],
+    [
+      "Proclamad conmigo la grandeza del Señor,",
+      "ensalcemos juntos su nombre.",
+      "Yo consulté al Señor, y me respondió,",
+      "me libró de todas mis ansias. R."
+    ],
+    [
+      "Contempladlo, y quedaréis radiantes,",
+      "vuestro rostro no se avergonzará.",
+      "Si el afligido invoca al Señor, él lo escucha",
+      "y lo salva de sus angustias. R."
+    ]
+  ],
+  "searchPool": "viernes de la 11 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 33 2 3 4 5 6 7 r cf 18b semana 11 semana xi viernes 11 xi r el senor libra a los justos de sus angustias bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r"
 }

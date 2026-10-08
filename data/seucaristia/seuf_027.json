@@ -1,10 +1,12 @@
 {
-  "id": "seuf_027",
-  "title": "30 de diciembre: 6º día de la octava de Navidad.",
-  "celebracion": "30 de diciembre: 6º día de la octava de Navidad.",
-  "subtitle": "Salmo 95, 7-8a. 8b-9. 10 (R.: 11a)",
-  "salmo": "Salmo 95, 7-8a. 8b-9. 10 (R.: 11a)",
   "ciclo": "Ciclo A, B y C",
+  "respuesta": "R. Alégrese el cielo, goce la tierra.",
+  "dia": "Feria",
+  "hasAudio": false,
+  "textoCompleto": "Familias de los pueblos, aclamad al Señor,\naclamad la gloria y el poder del Señor,\naclamad la gloria del nombre del Señor. R.\n\nEntrad en sus atrios trayéndole ofrendas,\npostraos ante el Señor en el atrio sagrado,\ntiemble en su presencia la tierra toda. R.\n\nDecid a los pueblos: «El Señor es rey,\nél afianzó el orbe, y no se moverá;\nél gobierna a los pueblos rectamente». R.",
+  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "celebracion": "30 de diciembre: 6º día de la octava de Navidad.",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +14,66 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Navidad",
-  "dia": "Feria",
+  "searchPool": "30 de diciembre 6 dia de la octava de navidad ciclo a ciclo b ciclo c ciclo a b y c navidad feria salmo 95 7 8a 8b 9 10 r 11a feria r alegrese el cielo goce la tierra familias de los pueblos aclamad al senor aclamad la gloria y el poder del senor aclamad la gloria del nombre del senor r entrad en sus atrios trayendole ofrendas postraos ante el senor en el atrio sagrado tiemble en su presencia la tierra toda r decid a los pueblos el senor es rey el afianzo el orbe y no se movera el gobierna a los pueblos rectamente r",
+  "salmo": "Salmo 95, 7-8a. 8b-9. 10 (R.: 11a)",
+  "id": "seuf_027",
+  "sourceBook": "eucaristia",
+  "lizq": [
+    {
+      "line": "R. Alégrese el cielo, goce la tierra.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Familias de los pueblos, aclamad al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "aclamad la gloria y el poder del Señor,"
+    },
+    {
+      "line": "aclamad la gloria del nombre del Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Entrad en sus atrios trayéndole ofrendas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "postraos ante el Señor en el atrio sagrado,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tiemble en su presencia la tierra toda. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Decid a los pueblos: «El Señor es rey,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él afianzó el orbe, y no se moverá;"
+    },
+    {
+      "line": "él gobierna a los pueblos rectamente». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "orden": 212,
-  "respuesta": "R. Alégrese el cielo, goce la tierra.",
-  "respuestaOpcional": "",
+  "tiempo": "Navidad",
   "estrofas": [
     [
       "Familias de los pueblos, aclamad al Señor,",
@@ -34,64 +91,7 @@
       "él gobierna a los pueblos rectamente». R."
     ]
   ],
-  "textoCompleto": "Familias de los pueblos, aclamad al Señor,\naclamad la gloria y el poder del Señor,\naclamad la gloria del nombre del Señor. R.\n\nEntrad en sus atrios trayéndole ofrendas,\npostraos ante el Señor en el atrio sagrado,\ntiemble en su presencia la tierra toda. R.\n\nDecid a los pueblos: «El Señor es rey,\nél afianzó el orbe, y no se moverá;\nél gobierna a los pueblos rectamente». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "30 de diciembre 6 dia de la octava de navidad ciclo a ciclo b ciclo c ciclo a b y c navidad feria salmo 95 7 8a 8b 9 10 r 11a feria r alegrese el cielo goce la tierra familias de los pueblos aclamad al senor aclamad la gloria y el poder del senor aclamad la gloria del nombre del senor r entrad en sus atrios trayendole ofrendas postraos ante el senor en el atrio sagrado tiemble en su presencia la tierra toda r decid a los pueblos el senor es rey el afianzo el orbe y no se movera el gobierna a los pueblos rectamente r",
-  "lizq": [
-    {
-      "line": "R. Alégrese el cielo, goce la tierra.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Familias de los pueblos, aclamad al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "aclamad la gloria y el poder del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "aclamad la gloria del nombre del Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Entrad en sus atrios trayéndole ofrendas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "postraos ante el Señor en el atrio sagrado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tiemble en su presencia la tierra toda. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Decid a los pueblos: «El Señor es rey,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "él afianzó el orbe, y no se moverá;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él gobierna a los pueblos rectamente». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "title": "30 de diciembre: 6º día de la octava de Navidad.",
+  "subtitle": "Salmo 95, 7-8a. 8b-9. 10 (R.: 11a)",
+  "catCanto": "Salmo Eucaristía"
 }

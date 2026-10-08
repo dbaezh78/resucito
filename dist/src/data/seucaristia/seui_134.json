@@ -1,49 +1,17 @@
 {
-  "id": "seui_134",
-  "title": "Martes de la 23ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 23ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 144, 1-2. 8-9. 10-11(R.: 9a)",
-  "salmo": "Salmo responsorial: Salmo 144, 1-2. 8-9. 10-11(R.: 9a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Martes",
-  "orden": 5232,
-  "respuesta": "R. El Señor es bueno con todos.",
   "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Te ensalzaré, Dios mío, mi rey;",
-      "bendeciré tu nombre por siempre jamás.",
-      "Día tras día, te bendeciré",
-      "y alabaré tu nombre por siempre jamás. R."
-    ],
-    [
-      "El Señor es clemente y misericordioso,",
-      "lento a la cólera y rico en piedad;",
-      "el Señor es bueno con todos,",
-      "es cariñoso con todas sus criaturas. R."
-    ],
-    [
-      "Que todas tus criaturas te den gracias, Señor,",
-      "que te bendigan tus fieles;",
-      "que proclamen la gloria de tu reinado,",
-      "que hablen de tus hazañas. R."
-    ]
-  ],
-  "textoCompleto": "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nDía tras día, te bendeciré\ny alabaré tu nombre por siempre jamás. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "id": "seui_134",
   "hasAudio": false,
-  "searchPool": "martes de la 23 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 144 1 2 8 9 10 11 r 9a semana 23 semana xxiii martes 23 xxiii r el senor es bueno con todos te ensalzare dios mio mi rey bendecire tu nombre por siempre jamas dia tras dia te bendecire y alabare tu nombre por siempre jamas r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r",
   "lizq": [
     {
       "line": "R. El Señor es bueno con todos.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Te ensalzaré, Dios mío, mi rey;",
@@ -74,12 +42,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "el Señor es bueno con todos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor es bueno con todos,"
     },
     {
-      "line": "es cariñoso con todas sus criaturas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "es cariñoso con todas sus criaturas. R."
     },
     {
       "line": "",
@@ -90,8 +58,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que te bendigan tus fieles;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que te bendigan tus fieles;"
     },
     {
       "line": "que proclamen la gloria de tu reinado,",
@@ -101,5 +69,37 @@
       "line": "que hablen de tus hazañas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
+  ],
+  "respuesta": "R. El Señor es bueno con todos.",
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "celebracion": "Martes de la 23ª semana de Tiempo Ordinario",
+  "searchPool": "martes de la 23 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 144 1 2 8 9 10 11 r 9a semana 23 semana xxiii martes 23 xxiii r el senor es bueno con todos te ensalzare dios mio mi rey bendecire tu nombre por siempre jamas dia tras dia te bendecire y alabare tu nombre por siempre jamas r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r que todas tus criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r",
+  "orden": 5232,
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Impar",
+  "textoCompleto": "Te ensalzaré, Dios mío, mi rey;\nbendeciré tu nombre por siempre jamás.\nDía tras día, te bendeciré\ny alabaré tu nombre por siempre jamás. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nQue todas tus criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
+  "salmo": "Salmo responsorial: Salmo 144, 1-2. 8-9. 10-11(R.: 9a)",
+  "sourceBook": "eucaristia",
+  "title": "Martes de la 23ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Te ensalzaré, Dios mío, mi rey;",
+      "bendeciré tu nombre por siempre jamás.",
+      "Día tras día, te bendeciré",
+      "y alabaré tu nombre por siempre jamás. R."
+    ],
+    [
+      "El Señor es clemente y misericordioso,",
+      "lento a la cólera y rico en piedad;",
+      "el Señor es bueno con todos,",
+      "es cariñoso con todas sus criaturas. R."
+    ],
+    [
+      "Que todas tus criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ]
   ]
 }

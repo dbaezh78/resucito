@@ -1,9 +1,82 @@
 {
-  "id": "seuf_028",
-  "title": "31 de diciembre: 7º día de la octava de Navidad.",
-  "celebracion": "31 de diciembre: 7º día de la octava de Navidad.",
-  "subtitle": "Salmo 95, 1-2. 11-12. 13-14 (R.: 11a)",
-  "salmo": "Salmo 95, 1-2. 11-12. 13-14 (R.: 11a)",
+  "stage": "Liturgia",
+  "tiempo": "Navidad",
+  "lizq": [
+    {
+      "line": "R. Alégrese el cielo, goce la tierra.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Cantad al Señor un cántico nuevo,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cantad al Señor, toda la tierra;"
+    },
+    {
+      "line": "cantad al Señor, bendecid su nombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "proclamad día tras día su victoria. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Alégrese el cielo, goce la tierra,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "retumbe el mar y cuanto lo llena;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "vitoreen los campos y cuanto hay en ellos,"
+    },
+    {
+      "line": "aclamen los árboles del bosque. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Delante del Señor, que ya llega,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ya llega a regir la tierra:"
+    },
+    {
+      "line": "regirá el orbe con justicia",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y los pueblos con fidelidad. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Antes de Epifanía R.",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+    }
+  ],
+  "hasAudio": false,
+  "respuestaOpcional": "",
   "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
@@ -12,11 +85,18 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Navidad",
-  "dia": "Feria",
+  "title": "31 de diciembre: 7º día de la octava de Navidad.",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre,\nproclamad día tras día su victoria. R.\n\nAlégrese el cielo, goce la tierra,\nretumbe el mar y cuanto lo llena;\nvitoreen los campos y cuanto hay en ellos,\naclamen los árboles del bosque. R.\n\nDelante del Señor, que ya llega,\nya llega a regir la tierra:\nregirá el orbe con justicia\ny los pueblos con fidelidad. R.\n\nAntes de Epifanía R.",
   "orden": 213,
+  "searchPool": "31 de diciembre 7 dia de la octava de navidad ciclo a ciclo b ciclo c ciclo a b y c navidad feria salmo 95 1 2 11 12 13 14 r 11a feria r alegrese el cielo goce la tierra cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre proclamad dia tras dia su victoria r alegrese el cielo goce la tierra retumbe el mar y cuanto lo llena vitoreen los campos y cuanto hay en ellos aclamen los arboles del bosque r delante del senor que ya llega ya llega a regir la tierra regira el orbe con justicia y los pueblos con fidelidad r antes de epifania r",
+  "celebracion": "31 de diciembre: 7º día de la octava de Navidad.",
+  "dia": "Feria",
   "respuesta": "R. Alégrese el cielo, goce la tierra.",
-  "respuestaOpcional": "",
+  "salmo": "Salmo 95, 1-2. 11-12. 13-14 (R.: 11a)",
+  "subtitle": "Salmo 95, 1-2. 11-12. 13-14 (R.: 11a)",
+  "catCanto": "Salmo Eucaristía",
+  "id": "seuf_028",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -39,85 +119,5 @@
     [
       "Antes de Epifanía R."
     ]
-  ],
-  "textoCompleto": "Cantad al Señor un cántico nuevo,\ncantad al Señor, toda la tierra;\ncantad al Señor, bendecid su nombre,\nproclamad día tras día su victoria. R.\n\nAlégrese el cielo, goce la tierra,\nretumbe el mar y cuanto lo llena;\nvitoreen los campos y cuanto hay en ellos,\naclamen los árboles del bosque. R.\n\nDelante del Señor, que ya llega,\nya llega a regir la tierra:\nregirá el orbe con justicia\ny los pueblos con fidelidad. R.\n\nAntes de Epifanía R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "31 de diciembre 7 dia de la octava de navidad ciclo a ciclo b ciclo c ciclo a b y c navidad feria salmo 95 1 2 11 12 13 14 r 11a feria r alegrese el cielo goce la tierra cantad al senor un cantico nuevo cantad al senor toda la tierra cantad al senor bendecid su nombre proclamad dia tras dia su victoria r alegrese el cielo goce la tierra retumbe el mar y cuanto lo llena vitoreen los campos y cuanto hay en ellos aclamen los arboles del bosque r delante del senor que ya llega ya llega a regir la tierra regira el orbe con justicia y los pueblos con fidelidad r antes de epifania r",
-  "lizq": [
-    {
-      "line": "R. Alégrese el cielo, goce la tierra.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Cantad al Señor un cántico nuevo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "cantad al Señor, toda la tierra;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "cantad al Señor, bendecid su nombre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "proclamad día tras día su victoria. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Alégrese el cielo, goce la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "retumbe el mar y cuanto lo llena;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "vitoreen los campos y cuanto hay en ellos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "aclamen los árboles del bosque. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Delante del Señor, que ya llega,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "ya llega a regir la tierra:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "regirá el orbe con justicia",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y los pueblos con fidelidad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Antes de Epifanía R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
-    }
   ]
 }

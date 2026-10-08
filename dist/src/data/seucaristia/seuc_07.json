@@ -1,15 +1,13 @@
 {
   "id": "seuc_07",
-  "title": "Natividad del Señor - Misa de la aurora",
+  "hasAudio": false,
   "celebracion": "Natividad del Señor - Misa de la aurora",
-  "subtitle": "Salmo responsorial: Salmo 96, 1. 6. 11-12",
-  "salmo": "Salmo responsorial: Salmo 96, 1. 6. 11-12",
+  "stage": "Liturgia",
   "ciclo": "Ciclo C",
+  "respuestaOpcional": "",
   "tiempo": "Navidad",
   "dia": "Domingo",
   "orden": 203,
-  "respuesta": "R. Hoy brillará una luz sobre nosotros, porque nos ha nacido el Señor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "El Señor reina, la tierra goza,",
@@ -24,16 +22,15 @@
       "celebrad su santo nombre. R."
     ]
   ],
-  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 96, 1. 6. 11-12",
+  "title": "Natividad del Señor - Misa de la aurora",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "natividad del senor misa de la aurora ciclo c navidad domingo salmo responsorial salmo 96 1 6 11 12 r hoy brillara una luz sobre nosotros porque nos ha nacido el senor el senor reina la tierra goza se alegran las islas innumerables los cielos pregonan su justicia y todos los pueblos contemplan su gloria r amanece la luz para el justo y la alegria para los rectos de corazon alegraos justos con el senor celebrad su santo nombre r",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
   "lizq": [
     {
-      "line": "R. Hoy brillará una luz sobre nosotros,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Hoy brillará una luz sobre nosotros,"
     },
     {
       "line": "porque nos ha nacido el Señor.",
@@ -60,8 +57,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Amanece la luz para el justo,",
@@ -76,8 +73,11 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "celebrad su santo nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "celebrad su santo nombre. R."
     }
-  ]
+  ],
+  "searchPool": "natividad del senor misa de la aurora ciclo c navidad domingo salmo responsorial salmo 96 1 6 11 12 r hoy brillara una luz sobre nosotros porque nos ha nacido el senor el senor reina la tierra goza se alegran las islas innumerables los cielos pregonan su justicia y todos los pueblos contemplan su gloria r amanece la luz para el justo y la alegria para los rectos de corazon alegraos justos con el senor celebrad su santo nombre r",
+  "salmo": "Salmo responsorial: Salmo 96, 1. 6. 11-12",
+  "respuesta": "R. Hoy brillará una luz sobre nosotros, porque nos ha nacido el Señor."
 }

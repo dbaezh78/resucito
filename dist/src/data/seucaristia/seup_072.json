@@ -1,15 +1,110 @@
 {
   "id": "seup_072",
-  "title": "Sábado de la 12ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 12ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 73, 1-2. 3-5a. 5b-7. 20-21 (R.: 19b)",
-  "salmo": "Salmo responsorial: Salmo 73, 1-2. 3-5a. 5b-7. 20-21 (R.: 19b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
   "orden": 5126,
-  "respuesta": "R. No olvides sin remedio la vida de tus pobres.",
-  "respuestaOpcional": "",
+  "celebracion": "Sábado de la 12ª semana de Tiempo Ordinario",
+  "title": "Sábado de la 12ª semana de Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía",
+  "lizq": [
+    {
+      "line": "R. No olvides sin remedio la vida de tus pobres.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "¿Por qué, oh Dios, nos tienes siempre abandonados,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y está ardiendo tu cólera contra las ovejas de tu rebaño?"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Acuérdate de la comunidad que adquiriste desde antiguo,"
+    },
+    {
+      "line": "de la tribu que rescataste para posesión tuya,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "del monte Sión donde pusiste tu morada. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dirige tus pasos a estas ruinas sin remedio;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el enemigo ha arrasado del todo el santuario."
+    },
+    {
+      "line": "Rugían los agresores en medio de tu asamblea,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "levantaron sus propios estandartes. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "En la entrada superior"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "abatieron a hachazos el entramado;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "después, con martillos y mazas,"
+    },
+    {
+      "line": "destrozaron todas las esculturas.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Prendieron fuego a tu santuario,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "derribaron y profanaron la morada de tu nombre. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Piensa en tu alianza: que los rincones del país",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "están llenos de violencias.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Que el humilde no se marche defraudado,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que pobres y afligidos alaben tu nombre. R."
+    }
+  ],
+  "stage": "Liturgia",
+  "dia": "Sábado",
   "estrofas": [
     [
       "¿Por qué, oh Dios, nos tienes siempre abandonados,",
@@ -39,108 +134,13 @@
       "que pobres y afligidos alaben tu nombre. R."
     ]
   ],
-  "textoCompleto": "¿Por qué, oh Dios, nos tienes siempre abandonados,\ny está ardiendo tu cólera contra las ovejas de tu rebaño?\nAcuérdate de la comunidad que adquiriste desde antiguo,\nde la tribu que rescataste para posesión tuya,\ndel monte Sión donde pusiste tu morada. R.\n\nDirige tus pasos a estas ruinas sin remedio;\nel enemigo ha arrasado del todo el santuario.\nRugían los agresores en medio de tu asamblea,\nlevantaron sus propios estandartes. R.\n\nEn la entrada superior\nabatieron a hachazos el entramado;\ndespués, con martillos y mazas,\ndestrozaron todas las esculturas.\nPrendieron fuego a tu santuario,\nderribaron y profanaron la morada de tu nombre. R.\n\nPiensa en tu alianza: que los rincones del país\nestán llenos de violencias.\nQue el humilde no se marche defraudado,\nque pobres y afligidos alaben tu nombre. R.",
+  "respuesta": "R. No olvides sin remedio la vida de tus pobres.",
+  "tiempo": "Tiempo Ordinario",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 73, 1-2. 3-5a. 5b-7. 20-21 (R.: 19b)",
+  "respuestaOpcional": "",
+  "textoCompleto": "¿Por qué, oh Dios, nos tienes siempre abandonados,\ny está ardiendo tu cólera contra las ovejas de tu rebaño?\nAcuérdate de la comunidad que adquiriste desde antiguo,\nde la tribu que rescataste para posesión tuya,\ndel monte Sión donde pusiste tu morada. R.\n\nDirige tus pasos a estas ruinas sin remedio;\nel enemigo ha arrasado del todo el santuario.\nRugían los agresores en medio de tu asamblea,\nlevantaron sus propios estandartes. R.\n\nEn la entrada superior\nabatieron a hachazos el entramado;\ndespués, con martillos y mazas,\ndestrozaron todas las esculturas.\nPrendieron fuego a tu santuario,\nderribaron y profanaron la morada de tu nombre. R.\n\nPiensa en tu alianza: que los rincones del país\nestán llenos de violencias.\nQue el humilde no se marche defraudado,\nque pobres y afligidos alaben tu nombre. R.",
   "searchPool": "sabado de la 12 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 73 1 2 3 5a 5b 7 20 21 r 19b semana 12 semana xii sabado 12 xii r no olvides sin remedio la vida de tus pobres por que oh dios nos tienes siempre abandonados y esta ardiendo tu colera contra las ovejas de tu rebano acuerdate de la comunidad que adquiriste desde antiguo de la tribu que rescataste para posesion tuya del monte sion donde pusiste tu morada r dirige tus pasos a estas ruinas sin remedio el enemigo ha arrasado del todo el santuario rugian los agresores en medio de tu asamblea levantaron sus propios estandartes r en la entrada superior abatieron a hachazos el entramado despues con martillos y mazas destrozaron todas las esculturas prendieron fuego a tu santuario derribaron y profanaron la morada de tu nombre r piensa en tu alianza que los rincones del pais estan llenos de violencias que el humilde no se marche defraudado que pobres y afligidos alaben tu nombre r",
-  "lizq": [
-    {
-      "line": "R. No olvides sin remedio la vida de tus pobres.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "¿Por qué, oh Dios, nos tienes siempre abandonados,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y está ardiendo tu cólera contra las ovejas de tu rebaño?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Acuérdate de la comunidad que adquiriste desde antiguo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "de la tribu que rescataste para posesión tuya,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "del monte Sión donde pusiste tu morada. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dirige tus pasos a estas ruinas sin remedio;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el enemigo ha arrasado del todo el santuario.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Rugían los agresores en medio de tu asamblea,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "levantaron sus propios estandartes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "En la entrada superior",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "abatieron a hachazos el entramado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "después, con martillos y mazas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "destrozaron todas las esculturas.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Prendieron fuego a tu santuario,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "derribaron y profanaron la morada de tu nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Piensa en tu alianza: que los rincones del país",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "están llenos de violencias.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Que el humilde no se marche defraudado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que pobres y afligidos alaben tu nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "subtitle": "Salmo responsorial: Salmo 73, 1-2. 3-5a. 5b-7. 20-21 (R.: 19b)"
 }

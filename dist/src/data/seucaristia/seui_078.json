@@ -1,15 +1,7 @@
 {
-  "id": "seui_078",
-  "title": "Sábado de la 13ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 13ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 134, 1-2. 3-4. 5-6 (R.: 3a)",
-  "salmo": "Salmo responsorial: Salmo 134, 1-2. 3-4. 5-6 (R.: 3a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5136,
   "respuesta": "R. Alabad al Señor porque es bueno.",
-  "respuestaOpcional": "R. Aleluya.",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Alabad el nombre del Señor,\nalabadlo, siervos del Señor,\nque estáis en la casa del Señor,\nen los atrios de la casa de nuestro Dios. R.\n\nAlabad al Señor porque es bueno,\ntañed para su nombre, que es amable.\nPorque él se escogió a Jacob,\na Israel en posesión suya. R.\n\nYo sé que el Señor es grande,\nnuestro dueño más que todos los dioses.\nEl Señor todo lo que quiere lo hace:\nen el cielo y en la tierra,\nen los mares y en los océanos. R.",
   "estrofas": [
     [
       "Alabad el nombre del Señor,",
@@ -31,20 +23,14 @@
       "en los mares y en los océanos. R."
     ]
   ],
-  "textoCompleto": "Alabad el nombre del Señor,\nalabadlo, siervos del Señor,\nque estáis en la casa del Señor,\nen los atrios de la casa de nuestro Dios. R.\n\nAlabad al Señor porque es bueno,\ntañed para su nombre, que es amable.\nPorque él se escogió a Jacob,\na Israel en posesión suya. R.\n\nYo sé que el Señor es grande,\nnuestro dueño más que todos los dioses.\nEl Señor todo lo que quiere lo hace:\nen el cielo y en la tierra,\nen los mares y en los océanos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 13 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 134 1 2 3 4 5 6 r 3a semana 13 semana xiii sabado 13 xiii r alabad al senor porque es bueno r aleluya alabad el nombre del senor alabadlo siervos del senor que estais en la casa del senor en los atrios de la casa de nuestro dios r alabad al senor porque es bueno taned para su nombre que es amable porque el se escogio a jacob a israel en posesion suya r yo se que el senor es grande nuestro dueno mas que todos los dioses el senor todo lo que quiere lo hace en el cielo y en la tierra en los mares y en los oceanos r",
   "lizq": [
     {
       "line": "R. Alabad al Señor porque es bueno.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -55,24 +41,24 @@
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Alabad el nombre del Señor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "alabadlo, siervos del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alabadlo, siervos del Señor,"
     },
     {
       "line": "que estáis en la casa del Señor,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en los atrios de la casa de nuestro Dios. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en los atrios de la casa de nuestro Dios. R."
     },
     {
       "line": "",
@@ -83,8 +69,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tañed para su nombre, que es amable.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tañed para su nombre, que es amable."
     },
     {
       "line": "Porque él se escogió a Jacob,",
@@ -99,12 +85,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Yo sé que el Señor es grande,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Yo sé que el Señor es grande,"
     },
     {
-      "line": "nuestro dueño más que todos los dioses.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "nuestro dueño más que todos los dioses."
     },
     {
       "line": "El Señor todo lo que quiere lo hace:",
@@ -118,5 +104,19 @@
       "line": "en los mares y en los océanos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 134, 1-2. 3-4. 5-6 (R.: 3a)",
+  "orden": 5136,
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 134, 1-2. 3-4. 5-6 (R.: 3a)",
+  "celebracion": "Sábado de la 13ª semana de Tiempo Ordinario",
+  "id": "seui_078",
+  "ciclo": "Año Impar",
+  "dia": "Sábado",
+  "respuestaOpcional": "R. Aleluya.",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "sabado de la 13 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 134 1 2 3 4 5 6 r 3a semana 13 semana xiii sabado 13 xiii r alabad al senor porque es bueno r aleluya alabad el nombre del senor alabadlo siervos del senor que estais en la casa del senor en los atrios de la casa de nuestro dios r alabad al senor porque es bueno taned para su nombre que es amable porque el se escogio a jacob a israel en posesion suya r yo se que el senor es grande nuestro dueno mas que todos los dioses el senor todo lo que quiere lo hace en el cielo y en la tierra en los mares y en los oceanos r",
+  "title": "Sábado de la 13ª semana de Tiempo Ordinario"
 }

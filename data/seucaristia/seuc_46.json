@@ -1,15 +1,4 @@
 {
-  "id": "seuc_46",
-  "title": "Viernes posterior al segundo domingo después de Pentecostés - El sagrado Corazón de Jesús",
-  "celebracion": "Viernes posterior al segundo domingo después de Pentecostés - El sagrado Corazón de Jesús",
-  "subtitle": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.: 1)",
-  "salmo": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.: 1)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 430,
-  "respuesta": "R. El Señor es mi pastor, nada me falta.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "El Señor es mi pastor, nada me falta:",
@@ -37,12 +26,19 @@
       "por años sin término. R."
     ]
   ],
-  "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.\n\nMe guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
+  "ciclo": "Ciclo C",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.: 1)",
+  "respuesta": "R. El Señor es mi pastor, nada me falta.",
+  "dia": "Domingo",
+  "tiempo": "Pascua",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "viernes posterior al segundo domingo despues de pentecostes el sagrado corazon de jesus ciclo c pascua domingo salmo responsorial salmo 22 1 3a 3b 4 5 6 r 1 r el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas r me guia por el sendero justo por el honor de su nombre aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
+  "id": "seuc_46",
+  "salmo": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.: 1)",
+  "hasAudio": false,
+  "respuestaOpcional": "",
   "lizq": [
     {
       "line": "R. El Señor es mi pastor,",
@@ -57,20 +53,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es mi pastor, nada me falta:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es mi pastor, nada me falta:"
     },
     {
       "line": "en verdes praderas me hace recostar;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "me conduce hacia fuentes tranquilas",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me conduce hacia fuentes tranquilas"
     },
     {
-      "line": "y repara mis fuerzas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y repara mis fuerzas. R."
     },
     {
       "line": "",
@@ -89,8 +85,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "nada temo, porque tú vas conmigo:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "nada temo, porque tú vas conmigo:"
     },
     {
       "line": "tu vara y tu cayado me sosiegan. R.",
@@ -125,16 +121,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "todos los días de mi vida,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todos los días de mi vida,"
     },
     {
-      "line": "y habitaré en la casa del Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y habitaré en la casa del Señor"
     },
     {
       "line": "por años sin término. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 430,
+  "celebracion": "Viernes posterior al segundo domingo después de Pentecostés - El sagrado Corazón de Jesús",
+  "title": "Viernes posterior al segundo domingo después de Pentecostés - El sagrado Corazón de Jesús",
+  "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.\n\nMe guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R."
 }

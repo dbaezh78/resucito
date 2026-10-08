@@ -1,15 +1,11 @@
 {
-  "id": "seup_180",
-  "title": "Sábado de la 30ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 30ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 41, 2. 3. 5bcd (R.: 3a)",
-  "salmo": "Salmo responsorial: Salmo 41, 2. 3. 5bcd (R.: 3a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5306,
-  "respuesta": "R. Mi alma tiene sed del Dios vivo.",
   "respuestaOpcional": "",
+  "hasAudio": false,
+  "textoCompleto": "Como busca la cierva\ncorrientes de agua,\nasí mi alma te busca\na ti, Dios mío. R.\n\nTiene sed de Dios,\ndel Dios vivo:\n¿cuándo entraré a ver\nel rostro de Dios? R.\n\nRecuerdo cómo marchaba a la cabeza del grupo\nhacia la casa de Dios,\nentre cantos de júbilo y alabanza,\nen el bullicio de la fiesta. R.",
+  "searchPool": "sabado de la 30 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 41 2 3 5bcd r 3a semana 30 semana xxx sabado 30 xxx r mi alma tiene sed del dios vivo como busca la cierva corrientes de agua asi mi alma te busca a ti dios mio r tiene sed de dios del dios vivo cuando entrare a ver el rostro de dios r recuerdo como marchaba a la cabeza del grupo hacia la casa de dios entre cantos de jubilo y alabanza en el bullicio de la fiesta r",
+  "subtitle": "Salmo responsorial: Salmo 41, 2. 3. 5bcd (R.: 3a)",
+  "ciclo": "Año Par",
+  "title": "Sábado de la 30ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Como busca la cierva",
@@ -30,16 +26,17 @@
       "en el bullicio de la fiesta. R."
     ]
   ],
-  "textoCompleto": "Como busca la cierva\ncorrientes de agua,\nasí mi alma te busca\na ti, Dios mío. R.\n\nTiene sed de Dios,\ndel Dios vivo:\n¿cuándo entraré a ver\nel rostro de Dios? R.\n\nRecuerdo cómo marchaba a la cabeza del grupo\nhacia la casa de Dios,\nentre cantos de júbilo y alabanza,\nen el bullicio de la fiesta. R.",
+  "orden": 5306,
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Sábado",
+  "id": "seup_180",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 30 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 41 2 3 5bcd r 3a semana 30 semana xxx sabado 30 xxx r mi alma tiene sed del dios vivo como busca la cierva corrientes de agua asi mi alma te busca a ti dios mio r tiene sed de dios del dios vivo cuando entrare a ver el rostro de dios r recuerdo como marchaba a la cabeza del grupo hacia la casa de dios entre cantos de jubilo y alabanza en el bullicio de la fiesta r",
+  "salmo": "Salmo responsorial: Salmo 41, 2. 3. 5bcd (R.: 3a)",
   "lizq": [
     {
-      "line": "R. Mi alma tiene sed del Dios vivo.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Mi alma tiene sed del Dios vivo."
     },
     {
       "line": "",
@@ -54,8 +51,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "así mi alma te busca",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "así mi alma te busca"
     },
     {
       "line": "a ti, Dios mío. R.",
@@ -94,12 +91,15 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "entre cantos de júbilo y alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "entre cantos de júbilo y alabanza,"
     },
     {
       "line": "en el bullicio de la fiesta. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. Mi alma tiene sed del Dios vivo.",
+  "stage": "Liturgia",
+  "celebracion": "Sábado de la 30ª semana de Tiempo Ordinario"
 }

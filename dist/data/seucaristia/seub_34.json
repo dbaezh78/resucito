@@ -1,15 +1,11 @@
 {
-  "id": "seub_34",
-  "title": "Cuarto domingo de Pascua",
-  "celebracion": "Cuarto domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 117, 1 y 8-9. 21-23. 26 y 28-29 (R.: 22)",
-  "salmo": "Salmo responsorial: Salmo 117, 1 y 8-9. 21-23. 26 y 28-29 (R.: 22)",
-  "ciclo": "Ciclo B",
+  "stage": "Liturgia",
+  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.\n\nTe doy gracias porque me escuchaste\ny fuiste mi salvación.\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.\n\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor.\nTú eres mi Dios, te doy gracias;\nDios mío, yo te ensalzo.\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia. R.",
   "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
-  "respuesta": "R. La piedra que desecharon los arquitectos es ahora la piedra angular.",
-  "respuestaOpcional": "R. Aleluya",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 117, 1 y 8-9. 21-23. 26 y 28-29 (R.: 22)",
+  "id": "seub_34",
+  "celebracion": "Cuarto domingo de Pascua",
   "estrofas": [
     [
       "Dad gracias al Señor porque es bueno,",
@@ -36,12 +32,9 @@
       "porque es eterna su misericordia. R."
     ]
   ],
-  "textoCompleto": "Dad gracias al Señor porque es bueno,\nporque es eterna su misericordia.\nMejor es refugiarse en el Señor\nque fiarse de los hombres,\nmejor es refugiarse en el Señor\nque fiarse de los jefes. R.\n\nTe doy gracias porque me escuchaste\ny fuiste mi salvación.\nLa piedra que desecharon los arquitectos\nes ahora la piedra angular.\nEs el Señor quien lo ha hecho,\nha sido un milagro patente. R.\n\nBendito el que viene en nombre del Señor,\nos bendecimos desde la casa del Señor.\nTú eres mi Dios, te doy gracias;\nDios mío, yo te ensalzo.\nDad gracias al Señor porque es bueno,\nporque es eterna su misericordia. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "cuarto domingo de pascua ciclo b pascua domingo salmo responsorial salmo 117 1 y 8 9 21 23 26 y 28 29 r 22 r la piedra que desecharon los arquitectos es ahora la piedra angular r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia mejor es refugiarse en el senor que fiarse de los hombres mejor es refugiarse en el senor que fiarse de los jefes r te doy gracias porque me escuchaste y fuiste mi salvacion la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente r bendito el que viene en nombre del senor os bendecimos desde la casa del senor tu eres mi dios te doy gracias dios mio yo te ensalzo dad gracias al senor porque es bueno porque es eterna su misericordia r",
+  "ciclo": "Ciclo B",
+  "title": "Cuarto domingo de Pascua",
+  "dia": "Domingo",
   "lizq": [
     {
       "line": "R. La piedra que desecharon los arquitectos",
@@ -56,28 +49,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Dad gracias al Señor porque es bueno,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dad gracias al Señor porque es bueno,"
     },
     {
       "line": "porque es eterna su misericordia.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Mejor es refugiarse en el Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Mejor es refugiarse en el Señor"
     },
     {
       "line": "que fiarse de los hombres,",
@@ -88,8 +81,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que fiarse de los jefes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que fiarse de los jefes. R."
     },
     {
       "line": "",
@@ -100,8 +93,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y fuiste mi salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y fuiste mi salvación."
     },
     {
       "line": "La piedra que desecharon los arquitectos",
@@ -116,8 +109,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ha sido un milagro patente. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ha sido un milagro patente. R."
     },
     {
       "line": "",
@@ -132,12 +125,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Tú eres mi Dios, te doy gracias;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Tú eres mi Dios, te doy gracias;"
     },
     {
-      "line": "Dios mío, yo te ensalzo.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dios mío, yo te ensalzo."
     },
     {
       "line": "Dad gracias al Señor porque es bueno,",
@@ -147,5 +140,12 @@
       "line": "porque es eterna su misericordia. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuesta": "R. La piedra que desecharon los arquitectos es ahora la piedra angular.",
+  "orden": 410,
+  "respuestaOpcional": "R. Aleluya",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 117, 1 y 8-9. 21-23. 26 y 28-29 (R.: 22)",
+  "searchPool": "cuarto domingo de pascua ciclo b pascua domingo salmo responsorial salmo 117 1 y 8 9 21 23 26 y 28 29 r 22 r la piedra que desecharon los arquitectos es ahora la piedra angular r aleluya dad gracias al senor porque es bueno porque es eterna su misericordia mejor es refugiarse en el senor que fiarse de los hombres mejor es refugiarse en el senor que fiarse de los jefes r te doy gracias porque me escuchaste y fuiste mi salvacion la piedra que desecharon los arquitectos es ahora la piedra angular es el senor quien lo ha hecho ha sido un milagro patente r bendito el que viene en nombre del senor os bendecimos desde la casa del senor tu eres mi dios te doy gracias dios mio yo te ensalzo dad gracias al senor porque es bueno porque es eterna su misericordia r",
+  "hasAudio": false
 }

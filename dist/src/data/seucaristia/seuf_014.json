@@ -1,22 +1,102 @@
 {
-  "id": "seuf_014",
-  "title": "Martes de la 3ª semana de Adviento",
-  "celebracion": "Martes de la 3ª semana de Adviento",
-  "subtitle": "Salmo 33, 2-3. 6-7. 17-18. 19 y 23 (R.: 7a)",
-  "salmo": "Salmo 33, 2-3. 6-7. 17-18. 19 y 23 (R.: 7a)",
   "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
+  "id": "seuf_014",
+  "hasAudio": false,
+  "respuesta": "R. Si el afligido invoca al Señor, él lo escucha.",
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nPero el Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria.\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias. R.\n\nEl Señor está cerca de los atribulados,\nsalva a los abatidos.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R.",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Si el afligido invoca al Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "él lo escucha."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Bendigo al Señor en todo momento,"
+    },
+    {
+      "line": "su alabanza está siempre en mi boca;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "mi alma se gloría en el Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que los humildes lo escuchen y se alegren. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Contempladlo, y quedaréis radiantes,"
+    },
+    {
+      "line": "vuestro rostro no se avergonzará.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Si el afligido invoca al Señor, él lo escucha"
+    },
+    {
+      "line": "y lo salva de sus angustias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Pero el Señor se enfrenta con los malhechores,"
+    },
+    {
+      "line": "para borrar de la tierra su memoria.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Cuando uno grita, el Señor lo escucha"
+    },
+    {
+      "line": "y lo libra de sus angustias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor está cerca de los atribulados,"
+    },
+    {
+      "line": "salva a los abatidos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "El Señor redime a sus siervos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no será castigado quien se acoge a él. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
   ],
   "tiempo": "Adviento",
-  "dia": "Martes",
-  "orden": 132,
-  "respuesta": "R. Si el afligido invoca al Señor, él lo escucha.",
-  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "celebracion": "Martes de la 3ª semana de Adviento",
   "estrofas": [
     [
       "Bendigo al Señor en todo momento,",
@@ -43,100 +123,20 @@
       "no será castigado quien se acoge a él. R."
     ]
   ],
-  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.\n\nPero el Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria.\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias. R.\n\nEl Señor está cerca de los atribulados,\nsalva a los abatidos.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo 33, 2-3. 6-7. 17-18. 19 y 23 (R.: 7a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "martes de la 3 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento martes salmo 33 2 3 6 7 17 18 19 y 23 r 7a semana 3 semana iii martes feria r si el afligido invoca al senor el lo escucha bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r pero el senor se enfrenta con los malhechores para borrar de la tierra su memoria cuando uno grita el senor lo escucha y lo libra de sus angustias r el senor esta cerca de los atribulados salva a los abatidos el senor redime a sus siervos no sera castigado quien se acoge a el r",
-  "lizq": [
-    {
-      "line": "R. Si el afligido invoca al Señor,",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "él lo escucha.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Bendigo al Señor en todo momento,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "su alabanza está siempre en mi boca;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "mi alma se gloría en el Señor:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que los humildes lo escuchen y se alegren. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Contempladlo, y quedaréis radiantes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "vuestro rostro no se avergonzará.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Si el afligido invoca al Señor, él lo escucha",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y lo salva de sus angustias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Pero el Señor se enfrenta con los malhechores,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "para borrar de la tierra su memoria.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Cuando uno grita, el Señor lo escucha",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y lo libra de sus angustias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor está cerca de los atribulados,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "salva a los abatidos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El Señor redime a sus siervos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no será castigado quien se acoge a él. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
+  "salmo": "Salmo 33, 2-3. 6-7. 17-18. 19 y 23 (R.: 7a)",
+  "sourceBook": "eucaristia",
+  "dia": "Martes",
+  "respuestaOpcional": "",
+  "orden": 132,
+  "title": "Martes de la 3ª semana de Adviento",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
   ]
 }

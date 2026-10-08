@@ -1,15 +1,15 @@
 {
-  "id": "seup_052",
-  "title": "Jueves de la 9ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 9ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 24, 4bc-5ab. 8-9. 10 y 14 (R.: 4a)",
-  "salmo": "Salmo responsorial: Salmo 24, 4bc-5ab. 8-9. 10 y 14 (R.: 4a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
   "orden": 5094,
-  "respuesta": "R. Señor, enséñame tus caminos.",
+  "title": "Jueves de la 9ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "ciclo": "Año Par",
+  "dia": "Jueves",
+  "celebracion": "Jueves de la 9ª semana de Tiempo Ordinario",
+  "stage": "Liturgia",
+  "id": "seup_052",
+  "searchPool": "jueves de la 9 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 24 4bc 5ab 8 9 10 y 14 r 4a semana 9 semana ix jueves 9 ix r senor ensename tus caminos senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r las sendas del senor son misericordia y lealtad para los que guardan su alianza y sus mandatos el senor se confia con sus fieles y les da a conocer su alianza r",
   "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
   "estrofas": [
     [
       "Señor, enséñame tus caminos,",
@@ -30,64 +30,60 @@
       "y les da a conocer su alianza. R."
     ]
   ],
-  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.\n\nLas sendas del Señor son misericordia y lealtad\npara los que guardan su alianza y sus mandatos.\nEl Señor se confía con sus fieles\ny les da a conocer su alianza. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 9 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 24 4bc 5ab 8 9 10 y 14 r 4a semana 9 semana ix jueves 9 ix r senor ensename tus caminos senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r las sendas del senor son misericordia y lealtad para los que guardan su alianza y sus mandatos el senor se confia con sus fieles y les da a conocer su alianza r",
+  "respuesta": "R. Señor, enséñame tus caminos.",
+  "subtitle": "Salmo responsorial: Salmo 24, 4bc-5ab. 8-9. 10 y 14 (R.: 4a)",
   "lizq": [
     {
       "line": "R. Señor, enséñame tus caminos.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Señor, enséñame tus caminos,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "instrúyeme en tus sendas:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "instrúyeme en tus sendas:"
     },
     {
-      "line": "haz que camine con lealtad;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "haz que camine con lealtad;"
     },
     {
-      "line": "enséñame, porque tú eres mi Dios y Salvador. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "enséñame, porque tú eres mi Dios y Salvador. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es bueno y es recto,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es bueno y es recto,"
     },
     {
-      "line": "y enseña el camino a los pecadores;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y enseña el camino a los pecadores;"
     },
     {
       "line": "hace caminar a los humildes con rectitud,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "enseña su camino a los humildes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "enseña su camino a los humildes. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Las sendas del Señor son misericordia y lealtad",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Las sendas del Señor son misericordia y lealtad"
     },
     {
       "line": "para los que guardan su alianza y sus mandatos.",
@@ -101,5 +97,9 @@
       "line": "y les da a conocer su alianza. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial: Salmo 24, 4bc-5ab. 8-9. 10 y 14 (R.: 4a)",
+  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.\n\nLas sendas del Señor son misericordia y lealtad\npara los que guardan su alianza y sus mandatos.\nEl Señor se confía con sus fieles\ny les da a conocer su alianza. R.",
+  "sourceBook": "eucaristia",
+  "hasAudio": false
 }

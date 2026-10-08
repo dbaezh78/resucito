@@ -1,45 +1,15 @@
 {
-  "id": "seui_064",
-  "title": "Jueves de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 3-4. 7-8 (R.: 7a)",
-  "salmo": "Salmo responsorial: Salmo 110, 1-2. 3-4. 7-8 (R.: 7a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5114,
-  "respuesta": "R. Justicia y verdad son las obras de tus manos, Señor.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Doy gracias al Señor de todo corazón,",
-      "en compañía de los rectos, en asamblea.",
-      "Grandes son las obras del Señor,",
-      "dignas de estudio para los que las aman. R."
-    ],
-    [
-      "Esplendor y belleza son su obra,",
-      "su generosidad dura por siempre;",
-      "ha hecho maravillas memorables,",
-      "el Señor es piadoso y clemente. R."
-    ],
-    [
-      "Justicia y verdad son las obras de sus manos,",
-      "todos sus preceptos merecen confianza:",
-      "son estables para siempre jamás,",
-      "se han de cumplir con verdad y rectitud. R."
-    ]
-  ],
-  "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nEsplendor y belleza son su obra,\nsu generosidad dura por siempre;\nha hecho maravillas memorables,\nel Señor es piadoso y clemente. R.\n\nJusticia y verdad son las obras de sus manos,\ntodos sus preceptos merecen confianza:\nson estables para siempre jamás,\nse han de cumplir con verdad y rectitud. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Doy gracias al Señor de todo corazón,\nen compañía de los rectos, en asamblea.\nGrandes son las obras del Señor,\ndignas de estudio para los que las aman. R.\n\nEsplendor y belleza son su obra,\nsu generosidad dura por siempre;\nha hecho maravillas memorables,\nel Señor es piadoso y clemente. R.\n\nJusticia y verdad son las obras de sus manos,\ntodos sus preceptos merecen confianza:\nson estables para siempre jamás,\nse han de cumplir con verdad y rectitud. R.",
+  "orden": 5114,
   "hasAudio": false,
   "searchPool": "jueves de la 11 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 110 1 2 3 4 7 8 r 7a semana 11 semana xi jueves 11 xi r justicia y verdad son las obras de tus manos senor r aleluya doy gracias al senor de todo corazon en compania de los rectos en asamblea grandes son las obras del senor dignas de estudio para los que las aman r esplendor y belleza son su obra su generosidad dura por siempre ha hecho maravillas memorables el senor es piadoso y clemente r justicia y verdad son las obras de sus manos todos sus preceptos merecen confianza son estables para siempre jamas se han de cumplir con verdad y rectitud r",
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 110, 1-2. 3-4. 7-8 (R.: 7a)",
   "lizq": [
     {
-      "line": "R. Justicia y verdad son las obras de tus manos, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Justicia y verdad son las obras de tus manos, Señor."
     },
     {
       "line": "",
@@ -54,16 +24,16 @@
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Doy gracias al Señor de todo corazón,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "en compañía de los rectos, en asamblea.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en compañía de los rectos, en asamblea."
     },
     {
       "line": "Grandes son las obras del Señor,",
@@ -86,20 +56,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ha hecho maravillas memorables,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ha hecho maravillas memorables,"
     },
     {
       "line": "el Señor es piadoso y clemente. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Justicia y verdad son las obras de sus manos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Justicia y verdad son las obras de sus manos,"
     },
     {
       "line": "todos sus preceptos merecen confianza:",
@@ -110,8 +80,38 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "se han de cumplir con verdad y rectitud. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "se han de cumplir con verdad y rectitud. R."
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 110, 1-2. 3-4. 7-8 (R.: 7a)",
+  "celebracion": "Jueves de la 11ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "R. Aleluya.",
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "title": "Jueves de la 11ª semana de Tiempo Ordinario",
+  "id": "seui_064",
+  "dia": "Jueves",
+  "estrofas": [
+    [
+      "Doy gracias al Señor de todo corazón,",
+      "en compañía de los rectos, en asamblea.",
+      "Grandes son las obras del Señor,",
+      "dignas de estudio para los que las aman. R."
+    ],
+    [
+      "Esplendor y belleza son su obra,",
+      "su generosidad dura por siempre;",
+      "ha hecho maravillas memorables,",
+      "el Señor es piadoso y clemente. R."
+    ],
+    [
+      "Justicia y verdad son las obras de sus manos,",
+      "todos sus preceptos merecen confianza:",
+      "son estables para siempre jamás,",
+      "se han de cumplir con verdad y rectitud. R."
+    ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Justicia y verdad son las obras de tus manos, Señor."
 }

@@ -1,40 +1,9 @@
 {
-  "id": "seui_114",
-  "title": "Sábado de la 19ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 19ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
   "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5196,
   "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Protégeme, Dios mío, que me refugio en ti;",
-      "yo digo al Señor: «Tú eres mi bien».",
-      "El Señor es el lote de mi heredad y mi copa;",
-      "mi suerte está en tu mano. R."
-    ],
-    [
-      "Bendeciré al Señor, que me aconseja,",
-      "hasta de noche me instruye internamente.",
-      "Tengo siempre presente al Señor,",
-      "con él a mi derecha no vacilaré. R."
-    ],
-    [
-      "Me enseñarás el sendero de la vida,",
-      "me saciarás de gozo en tu presencia,",
-      "de alegría perpetua a tu derecha. R."
-    ]
-  ],
-  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
+  "ciclo": "Año Impar",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 19 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 15 1 2a y 5 7 8 11 r cf 5a semana 19 semana xix sabado 19 xix r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
   "lizq": [
     {
       "line": "R. Tú, Señor, eres el lote de mi heredad.",
@@ -61,8 +30,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendeciré al Señor, que me aconseja,",
@@ -93,8 +62,39 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "de alegría perpetua a tu derecha. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de alegría perpetua a tu derecha. R."
     }
-  ]
+  ],
+  "orden": 5196,
+  "stage": "Liturgia",
+  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
+  "title": "Sábado de la 19ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Protégeme, Dios mío, que me refugio en ti;",
+      "yo digo al Señor: «Tú eres mi bien».",
+      "El Señor es el lote de mi heredad y mi copa;",
+      "mi suerte está en tu mano. R."
+    ],
+    [
+      "Bendeciré al Señor, que me aconseja,",
+      "hasta de noche me instruye internamente.",
+      "Tengo siempre presente al Señor,",
+      "con él a mi derecha no vacilaré. R."
+    ],
+    [
+      "Me enseñarás el sendero de la vida,",
+      "me saciarás de gozo en tu presencia,",
+      "de alegría perpetua a tu derecha. R."
+    ]
+  ],
+  "searchPool": "sabado de la 19 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 15 1 2a y 5 7 8 11 r cf 5a semana 19 semana xix sabado 19 xix r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
+  "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+  "respuestaOpcional": "",
+  "hasAudio": false,
+  "dia": "Sábado",
+  "id": "seui_114",
+  "celebracion": "Sábado de la 19ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario"
 }

@@ -1,15 +1,94 @@
 {
-  "id": "seui_043",
-  "title": "Lunes de la 8ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 8ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 31, 1-2. 5. 6. 7 (R.: 11a)",
-  "salmo": "Salmo responsorial: Salmo 31, 1-2. 5. 6. 7 (R.: 11a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5081,
   "respuesta": "R. Alegraos, justos, y gozad con el Señor.",
+  "dia": "Lunes",
   "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false,
+  "title": "Lunes de la 8ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»,\ny tú perdonaste mi culpa y mi pecado. R.\n\nPor eso, que todo fiel te suplique\nen el momento de la desgracia:\nla crecida de las aguas caudalosas\nno lo alcanzará. R.\n\nTú eres mi refugio, me libras del peligro,\nme rodeas de cantos de liberación. R.",
+  "catCanto": "Salmo Eucaristía",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Alegraos, justos, y gozad con el Señor."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso el que está absuelto de su culpa,"
+    },
+    {
+      "line": "a quien le han sepultado su pecado;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "dichoso el hombre a quien el Señor"
+    },
+    {
+      "line": "no le apunta el delito. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Había pecado, lo reconocí,"
+    },
+    {
+      "line": "no te encubrí mi delito;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "propuse: «Confesaré al Señor mi culpa»,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y tú perdonaste mi culpa y mi pecado. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Por eso, que todo fiel te suplique"
+    },
+    {
+      "line": "en el momento de la desgracia:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "la crecida de las aguas caudalosas",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "no lo alcanzará. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú eres mi refugio, me libras del peligro,"
+    },
+    {
+      "line": "me rodeas de cantos de liberación. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "id": "seui_043",
+  "salmo": "Salmo responsorial: Salmo 31, 1-2. 5. 6. 7 (R.: 11a)",
   "estrofas": [
     [
       "Dichoso el que está absuelto de su culpa,",
@@ -34,88 +113,9 @@
       "me rodeas de cantos de liberación. R."
     ]
   ],
-  "textoCompleto": "Dichoso el que está absuelto de su culpa,\na quien le han sepultado su pecado;\ndichoso el hombre a quien el Señor\nno le apunta el delito. R.\n\nHabía pecado, lo reconocí,\nno te encubrí mi delito;\npropuse: «Confesaré al Señor mi culpa»,\ny tú perdonaste mi culpa y mi pecado. R.\n\nPor eso, que todo fiel te suplique\nen el momento de la desgracia:\nla crecida de las aguas caudalosas\nno lo alcanzará. R.\n\nTú eres mi refugio, me libras del peligro,\nme rodeas de cantos de liberación. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "ciclo": "Año Impar",
+  "celebracion": "Lunes de la 8ª semana de Tiempo Ordinario",
+  "orden": 5081,
   "searchPool": "lunes de la 8 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 31 1 2 5 6 7 r 11a semana 8 semana viii lunes 8 viii r alegraos justos y gozad con el senor dichoso el que esta absuelto de su culpa a quien le han sepultado su pecado dichoso el hombre a quien el senor no le apunta el delito r habia pecado lo reconoci no te encubri mi delito propuse confesare al senor mi culpa y tu perdonaste mi culpa y mi pecado r por eso que todo fiel te suplique en el momento de la desgracia la crecida de las aguas caudalosas no lo alcanzara r tu eres mi refugio me libras del peligro me rodeas de cantos de liberacion r",
-  "lizq": [
-    {
-      "line": "R. Alegraos, justos, y gozad con el Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichoso el que está absuelto de su culpa,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "a quien le han sepultado su pecado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "dichoso el hombre a quien el Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no le apunta el delito. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Había pecado, lo reconocí,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "no te encubrí mi delito;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "propuse: «Confesaré al Señor mi culpa»,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y tú perdonaste mi culpa y mi pecado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Por eso, que todo fiel te suplique",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "en el momento de la desgracia:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "la crecida de las aguas caudalosas",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no lo alcanzará. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tú eres mi refugio, me libras del peligro,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "me rodeas de cantos de liberación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "stage": "Liturgia"
 }

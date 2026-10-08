@@ -1,15 +1,10 @@
 {
-  "id": "seua_77",
-  "title": "Domingo de la 33ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 33ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
-  "ciclo": "Ciclo A",
+  "searchPool": "domingo de la 33 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 127 1 2 3 4 5 r 1a r dichoso el que teme al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 533,
-  "respuesta": "R. Dichoso el que teme al Señor.",
-  "respuestaOpcional": "",
+  "ciclo": "Ciclo A",
+  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Dichoso el que teme al Señor",
@@ -31,20 +26,24 @@
       "todos los días de tu vida. R."
     ]
   ],
-  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
-  "sourceBook": "eucaristia",
+  "dia": "Domingo",
+  "respuesta": "R. Dichoso el que teme al Señor.",
+  "id": "seua_77",
+  "respuestaOpcional": "",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "domingo de la 33 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 127 1 2 3 4 5 r 1a r dichoso el que teme al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r",
+  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: 1a)",
+  "orden": 533,
+  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
+  "celebracion": "Domingo de la 33ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Dichoso el que teme al Señor.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Dichoso el que teme al Señor",
@@ -55,16 +54,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Comerás del fruto de tu trabajo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Comerás del fruto de tu trabajo,"
     },
     {
       "line": "serás dichoso, te irá bien. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Tu mujer, como parra fecunda,",
@@ -75,8 +74,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tus hijos, como renuevos de olivo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tus hijos, como renuevos de olivo,"
     },
     {
       "line": "alrededor de tu mesa. R.",
@@ -91,20 +90,21 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "que teme al Señor.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que teme al Señor."
     },
     {
-      "line": "Que el Señor te bendiga desde Sión,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Que el Señor te bendiga desde Sión,"
     },
     {
-      "line": "que veas la prosperidad de Jerusalén",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que veas la prosperidad de Jerusalén"
     },
     {
-      "line": "todos los días de tu vida. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "todos los días de tu vida. R."
     }
-  ]
+  ],
+  "title": "Domingo de la 33ª semana de Tiempo Ordinario"
 }

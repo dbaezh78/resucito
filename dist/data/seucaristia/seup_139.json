@@ -1,15 +1,4 @@
 {
-  "id": "seup_139",
-  "title": "Lunes de la 24ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 24ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 39, 7-8a. 8b-9. 10. 17 (R.: 1Co 11, 26b)",
-  "salmo": "Salmo responsorial: Salmo 39, 7-8a. 8b-9. 10. 17 (R.: 1Co 11, 26b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5241,
-  "respuesta": "R. Proclamad la muerte del Señor, hasta que vuelva.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Tú no quieres sacrificios ni ofrendas,",
@@ -36,12 +25,13 @@
       "los que desean tu salvación. R."
     ]
   ],
-  "textoCompleto": "Tú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\n«—Como está escrito en mi libro—\npara hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R.\n\nAlégrense y gocen contigo\ntodos los que te buscan;\ndigan siempre: «Grande es el Señor».\nlos que desean tu salvación. R.",
+  "ciclo": "Año Par",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "celebracion": "Lunes de la 24ª semana de Tiempo Ordinario",
   "searchPool": "lunes de la 24 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 39 7 8a 8b 9 10 17 r 1co 11 26b semana 24 semana xxiv lunes 24 xxiv r proclamad la muerte del senor hasta que vuelva tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio entonces yo digo aqui estoy r como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r he proclamado tu salvacion ante la gran asamblea no he cerrado los labios senor tu lo sabes r alegrense y gocen contigo todos los que te buscan digan siempre grande es el senor los que desean tu salvacion r",
+  "hasAudio": false,
+  "orden": 5241,
+  "textoCompleto": "Tú no quieres sacrificios ni ofrendas,\ny, en cambio, me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\n«—Como está escrito en mi libro—\npara hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.\n\nHe proclamado tu salvación\nante la gran asamblea;\nno he cerrado los labios:\nSeñor, tú lo sabes. R.\n\nAlégrense y gocen contigo\ntodos los que te buscan;\ndigan siempre: «Grande es el Señor».\nlos que desean tu salvación. R.",
   "lizq": [
     {
       "line": "R. Proclamad la muerte del Señor, hasta que vuelva.",
@@ -52,28 +42,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tú no quieres sacrificios ni ofrendas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tú no quieres sacrificios ni ofrendas,"
     },
     {
-      "line": "y, en cambio, me abriste el oído;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y, en cambio, me abriste el oído;"
     },
     {
       "line": "no pides sacrificio expiatorio,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "entonces yo digo: «Aquí estoy». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "entonces yo digo: «Aquí estoy». R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "«—Como está escrito en mi libro—",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«—Como está escrito en mi libro—"
     },
     {
       "line": "para hacer tu voluntad».",
@@ -88,8 +78,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "He proclamado tu salvación",
@@ -116,16 +106,26 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "todos los que te buscan;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todos los que te buscan;"
     },
     {
       "line": "digan siempre: «Grande es el Señor».",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los que desean tu salvación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los que desean tu salvación. R."
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 39, 7-8a. 8b-9. 10. 17 (R.: 1Co 11, 26b)",
+  "title": "Lunes de la 24ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 39, 7-8a. 8b-9. 10. 17 (R.: 1Co 11, 26b)",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "id": "seup_139",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Proclamad la muerte del Señor, hasta que vuelva."
 }

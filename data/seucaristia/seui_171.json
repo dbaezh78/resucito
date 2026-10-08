@@ -1,15 +1,105 @@
 {
-  "id": "seui_171",
   "title": "Miércoles de la 29ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 29ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 123, 1-3. 4-6. 7-8 (R.: 8a)",
-  "salmo": "Salmo responsorial: Salmo 123, 1-3. 4-6. 7-8 (R.: 8a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Miércoles",
-  "orden": 5293,
-  "respuesta": "R. Nuestro auxilio es el nombre del Señor.",
+  "subtitle": "Salmo responsorial: Salmo 123, 1-3. 4-6. 7-8 (R.: 8a)",
+  "ciclo": "Año Impar",
   "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 123, 1-3. 4-6. 7-8 (R.: 8a)",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "orden": 5293,
+  "lizq": [
+    {
+      "line": "R. Nuestro auxilio es el nombre del Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Si el Señor no hubiera estado de nuestra parte"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "—que lo diga Israel—,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "si el Señor no hubiera estado de nuestra parte,"
+    },
+    {
+      "line": "cuando nos asaltaban los hombres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "nos habrían tragado vivos:"
+    },
+    {
+      "line": "tanto ardía su ira contra nosotros. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Nos habrían arrollado las aguas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "llegándonos el torrente hasta el cuello;"
+    },
+    {
+      "line": "nos habrían llegado hasta el cuello",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "las aguas espumantes."
+    },
+    {
+      "line": "Bendito sea el Señor, que no nos entregó",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en presa a sus dientes. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Hemos salvado la vida, como el pájaro"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "de la trampa del cazador;"
+    },
+    {
+      "line": "la trampa se rompió, y escapamos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Nuestro auxilio es el nombre del Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que hizo el cielo y la tierra. R."
+    }
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Si el Señor no hubiera estado de nuestra parte\n—que lo diga Israel—,\nsi el Señor no hubiera estado de nuestra parte,\ncuando nos asaltaban los hombres,\nnos habrían tragado vivos:\ntanto ardía su ira contra nosotros. R.\n\nNos habrían arrollado las aguas,\nllegándonos el torrente hasta el cuello;\nnos habrían llegado hasta el cuello\nlas aguas espumantes.\nBendito sea el Señor, que no nos entregó\nen presa a sus dientes. R.\n\nHemos salvado la vida, como el pájaro\nde la trampa del cazador;\nla trampa se rompió, y escapamos.\nNuestro auxilio es el nombre del Señor,\nque hizo el cielo y la tierra. R.",
+  "respuesta": "R. Nuestro auxilio es el nombre del Señor.",
+  "id": "seui_171",
   "estrofas": [
     [
       "Si el Señor no hubiera estado de nuestra parte",
@@ -35,96 +125,6 @@
       "que hizo el cielo y la tierra. R."
     ]
   ],
-  "textoCompleto": "Si el Señor no hubiera estado de nuestra parte\n—que lo diga Israel—,\nsi el Señor no hubiera estado de nuestra parte,\ncuando nos asaltaban los hombres,\nnos habrían tragado vivos:\ntanto ardía su ira contra nosotros. R.\n\nNos habrían arrollado las aguas,\nllegándonos el torrente hasta el cuello;\nnos habrían llegado hasta el cuello\nlas aguas espumantes.\nBendito sea el Señor, que no nos entregó\nen presa a sus dientes. R.\n\nHemos salvado la vida, como el pájaro\nde la trampa del cazador;\nla trampa se rompió, y escapamos.\nNuestro auxilio es el nombre del Señor,\nque hizo el cielo y la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 29 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 123 1 3 4 6 7 8 r 8a semana 29 semana xxix miercoles 29 xxix r nuestro auxilio es el nombre del senor si el senor no hubiera estado de nuestra parte que lo diga israel si el senor no hubiera estado de nuestra parte cuando nos asaltaban los hombres nos habrian tragado vivos tanto ardia su ira contra nosotros r nos habrian arrollado las aguas llegandonos el torrente hasta el cuello nos habrian llegado hasta el cuello las aguas espumantes bendito sea el senor que no nos entrego en presa a sus dientes r hemos salvado la vida como el pajaro de la trampa del cazador la trampa se rompio y escapamos nuestro auxilio es el nombre del senor que hizo el cielo y la tierra r",
-  "lizq": [
-    {
-      "line": "R. Nuestro auxilio es el nombre del Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Si el Señor no hubiera estado de nuestra parte",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "—que lo diga Israel—,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "si el Señor no hubiera estado de nuestra parte,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "cuando nos asaltaban los hombres,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "nos habrían tragado vivos:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tanto ardía su ira contra nosotros. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Nos habrían arrollado las aguas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "llegándonos el torrente hasta el cuello;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "nos habrían llegado hasta el cuello",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "las aguas espumantes.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Bendito sea el Señor, que no nos entregó",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en presa a sus dientes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Hemos salvado la vida, como el pájaro",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "de la trampa del cazador;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "la trampa se rompió, y escapamos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Nuestro auxilio es el nombre del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que hizo el cielo y la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "celebracion": "Miércoles de la 29ª semana de Tiempo Ordinario",
+  "searchPool": "miercoles de la 29 semana de tiempo ordinario ano impar tiempo ordinario miercoles salmo responsorial salmo 123 1 3 4 6 7 8 r 8a semana 29 semana xxix miercoles 29 xxix r nuestro auxilio es el nombre del senor si el senor no hubiera estado de nuestra parte que lo diga israel si el senor no hubiera estado de nuestra parte cuando nos asaltaban los hombres nos habrian tragado vivos tanto ardia su ira contra nosotros r nos habrian arrollado las aguas llegandonos el torrente hasta el cuello nos habrian llegado hasta el cuello las aguas espumantes bendito sea el senor que no nos entrego en presa a sus dientes r hemos salvado la vida como el pajaro de la trampa del cazador la trampa se rompio y escapamos nuestro auxilio es el nombre del senor que hizo el cielo y la tierra r"
 }

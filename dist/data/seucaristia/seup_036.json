@@ -1,48 +1,15 @@
 {
-  "id": "seup_036",
-  "title": "Sábado de la 6ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
   "celebracion": "Sábado de la 6ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 11, 2-3. 4-5. 7-8 (R.: 8a)",
-  "salmo": "Salmo responsorial: Salmo 11, 2-3. 4-5. 7-8 (R.: 8a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Sábado",
-  "orden": 5066,
-  "respuesta": "R. Tú nos guardarás, Señor.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Sálvanos, Señor, que se acaban los buenos,",
-      "que desaparece la lealtad entre los hombres:",
-      "no hacen más que mentir a su prójimo,",
-      "hablan con labios embusteros",
-      "y con doblez de corazón. R."
-    ],
-    [
-      "Estirpe el Señor los labios embusteros",
-      "y la lengua fanfarrona",
-      "de los que dicen: «La lengua es nuestra fuerza,",
-      "nuestros labios nos defienden,",
-      "¿quién será nuestro amo?». R."
-    ],
-    [
-      "Las palabras del Señor son palabras auténticas,",
-      "como plata limpia de ganga,",
-      "refinada siete veces.",
-      "Tú nos guardarás, Señor,",
-      "nos librarás para siempre de esa gente. R."
-    ]
-  ],
-  "textoCompleto": "Sálvanos, Señor, que se acaban los buenos,\nque desaparece la lealtad entre los hombres:\nno hacen más que mentir a su prójimo,\nhablan con labios embusteros\ny con doblez de corazón. R.\n\nEstirpe el Señor los labios embusteros\ny la lengua fanfarrona\nde los que dicen: «La lengua es nuestra fuerza,\nnuestros labios nos defienden,\n¿quién será nuestro amo?». R.\n\nLas palabras del Señor son palabras auténticas,\ncomo plata limpia de ganga,\nrefinada siete veces.\nTú nos guardarás, Señor,\nnos librarás para siempre de esa gente. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "sabado de la 6 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 11 2 3 4 5 7 8 r 8a semana 6 semana vi sabado 6 vi r tu nos guardaras senor salvanos senor que se acaban los buenos que desaparece la lealtad entre los hombres no hacen mas que mentir a su projimo hablan con labios embusteros y con doblez de corazon r estirpe el senor los labios embusteros y la lengua fanfarrona de los que dicen la lengua es nuestra fuerza nuestros labios nos defienden quien sera nuestro amo r las palabras del senor son palabras autenticas como plata limpia de ganga refinada siete veces tu nos guardaras senor nos libraras para siempre de esa gente r",
+  "respuesta": "R. Tú nos guardarás, Señor.",
   "lizq": [
     {
-      "line": "R. Tú nos guardarás, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Tú nos guardarás, Señor."
     },
     {
       "line": "",
@@ -73,16 +40,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Estirpe el Señor los labios embusteros",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Estirpe el Señor los labios embusteros"
     },
     {
       "line": "y la lengua fanfarrona",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "de los que dicen: «La lengua es nuestra fuerza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "de los que dicen: «La lengua es nuestra fuerza,"
     },
     {
       "line": "nuestros labios nos defienden,",
@@ -101,20 +68,53 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "como plata limpia de ganga,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "como plata limpia de ganga,"
     },
     {
-      "line": "refinada siete veces.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "refinada siete veces."
     },
     {
-      "line": "Tú nos guardarás, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Tú nos guardarás, Señor,"
     },
     {
       "line": "nos librarás para siempre de esa gente. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5066,
+  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "estrofas": [
+    [
+      "Sálvanos, Señor, que se acaban los buenos,",
+      "que desaparece la lealtad entre los hombres:",
+      "no hacen más que mentir a su prójimo,",
+      "hablan con labios embusteros",
+      "y con doblez de corazón. R."
+    ],
+    [
+      "Estirpe el Señor los labios embusteros",
+      "y la lengua fanfarrona",
+      "de los que dicen: «La lengua es nuestra fuerza,",
+      "nuestros labios nos defienden,",
+      "¿quién será nuestro amo?». R."
+    ],
+    [
+      "Las palabras del Señor son palabras auténticas,",
+      "como plata limpia de ganga,",
+      "refinada siete veces.",
+      "Tú nos guardarás, Señor,",
+      "nos librarás para siempre de esa gente. R."
+    ]
+  ],
+  "id": "seup_036",
+  "salmo": "Salmo responsorial: Salmo 11, 2-3. 4-5. 7-8 (R.: 8a)",
+  "ciclo": "Año Par",
+  "textoCompleto": "Sálvanos, Señor, que se acaban los buenos,\nque desaparece la lealtad entre los hombres:\nno hacen más que mentir a su prójimo,\nhablan con labios embusteros\ny con doblez de corazón. R.\n\nEstirpe el Señor los labios embusteros\ny la lengua fanfarrona\nde los que dicen: «La lengua es nuestra fuerza,\nnuestros labios nos defienden,\n¿quién será nuestro amo?». R.\n\nLas palabras del Señor son palabras auténticas,\ncomo plata limpia de ganga,\nrefinada siete veces.\nTú nos guardarás, Señor,\nnos librarás para siempre de esa gente. R.",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "title": "Sábado de la 6ª semana de Tiempo Ordinario"
 }

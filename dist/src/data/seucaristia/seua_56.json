@@ -1,15 +1,108 @@
 {
-  "id": "seua_56",
-  "title": "Domingo de la 12ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 12ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 68, 8-10. 14 y 17. 33-35 (R.: 14c)",
-  "salmo": "Salmo responsorial: Salmo 68, 8-10. 14 y 17. 33-35 (R.: 14c)",
-  "ciclo": "Ciclo A",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 68, 8-10. 14 y 17. 33-35 (R.: 14c)",
   "orden": 512,
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Que me escuche tu gran bondad, Señor."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Por ti he aguantado afrentas,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "la vergüenza cubrió mi rostro.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Soy un extraño para mis hermanos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "un extranjero para los hijos de mi madre;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque me devora el celo de tu templo,"
+    },
+    {
+      "line": "y las afrentas con que te afrentan caen sobre mí. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero mi oración se dirige a ti,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dios mío, el día de tu favor;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que me escuche tu gran bondad,"
+    },
+    {
+      "line": "que tu fidelidad me ayude.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Respóndeme, Señor, con la bondad de tu gracia;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "por tu gran compasión, vuélvete hacia mí. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Miradlo, los humildes, y alegraos,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "buscad al Señor, y vivirá vuestro corazón.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor escucha a sus pobres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no desprecia a sus cautivos."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Alábenlo el cielo y la tierra,"
+    },
+    {
+      "line": "las aguas y cuanto bulle en ellas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "title": "Domingo de la 12ª semana de Tiempo Ordinario",
+  "dia": "Domingo",
+  "id": "seua_56",
+  "ciclo": "Ciclo A",
+  "searchPool": "domingo de la 12 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 68 8 10 14 y 17 33 35 r 14c r que me escuche tu gran bondad senor por ti he aguantado afrentas la verguenza cubrio mi rostro soy un extrano para mis hermanos un extranjero para los hijos de mi madre porque me devora el celo de tu templo y las afrentas con que te afrentan caen sobre mi r pero mi oracion se dirige a ti dios mio el dia de tu favor que me escuche tu gran bondad que tu fidelidad me ayude respondeme senor con la bondad de tu gracia por tu gran compasion vuelvete hacia mi r miradlo los humildes y alegraos buscad al senor y vivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos alabenlo el cielo y la tierra las aguas y cuanto bulle en ellas r",
   "respuesta": "R. Que me escuche tu gran bondad, Señor.",
   "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 68, 8-10. 14 y 17. 33-35 (R.: 14c)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Por ti he aguantado afrentas,",
@@ -36,100 +129,7 @@
       "las aguas y cuanto bulle en ellas. R."
     ]
   ],
+  "celebracion": "Domingo de la 12ª semana de Tiempo Ordinario",
   "textoCompleto": "Por ti he aguantado afrentas,\nla vergüenza cubrió mi rostro.\nSoy un extraño para mis hermanos,\nun extranjero para los hijos de mi madre;\nporque me devora el celo de tu templo,\ny las afrentas con que te afrentan caen sobre mí. R.\n\nPero mi oración se dirige a ti,\nDios mío, el día de tu favor;\nque me escuche tu gran bondad,\nque tu fidelidad me ayude.\nRespóndeme, Señor, con la bondad de tu gracia;\npor tu gran compasión, vuélvete hacia mí. R.\n\nMiradlo, los humildes, y alegraos,\nbuscad al Señor, y vivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a sus cautivos.\nAlábenlo el cielo y la tierra,\nlas aguas y cuanto bulle en ellas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 12 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 68 8 10 14 y 17 33 35 r 14c r que me escuche tu gran bondad senor por ti he aguantado afrentas la verguenza cubrio mi rostro soy un extrano para mis hermanos un extranjero para los hijos de mi madre porque me devora el celo de tu templo y las afrentas con que te afrentan caen sobre mi r pero mi oracion se dirige a ti dios mio el dia de tu favor que me escuche tu gran bondad que tu fidelidad me ayude respondeme senor con la bondad de tu gracia por tu gran compasion vuelvete hacia mi r miradlo los humildes y alegraos buscad al senor y vivira vuestro corazon que el senor escucha a sus pobres no desprecia a sus cautivos alabenlo el cielo y la tierra las aguas y cuanto bulle en ellas r",
-  "lizq": [
-    {
-      "line": "R. Que me escuche tu gran bondad, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Por ti he aguantado afrentas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "la vergüenza cubrió mi rostro.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Soy un extraño para mis hermanos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "un extranjero para los hijos de mi madre;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "porque me devora el celo de tu templo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y las afrentas con que te afrentan caen sobre mí. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Pero mi oración se dirige a ti,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Dios mío, el día de tu favor;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que me escuche tu gran bondad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tu fidelidad me ayude.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Respóndeme, Señor, con la bondad de tu gracia;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "por tu gran compasión, vuélvete hacia mí. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Miradlo, los humildes, y alegraos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "buscad al Señor, y vivirá vuestro corazón.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Que el Señor escucha a sus pobres,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no desprecia a sus cautivos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Alábenlo el cielo y la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "las aguas y cuanto bulle en ellas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "stage": "Liturgia"
 }

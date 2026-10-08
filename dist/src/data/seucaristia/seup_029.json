@@ -1,15 +1,20 @@
 {
-  "id": "seup_029",
-  "title": "Viernes de la 5ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 5ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 80, 10-11ab. 12-13. 14-15 (R.: cf. 11a y 9a)",
-  "salmo": "Salmo responsorial: Salmo 80, 10-11ab. 12-13. 14-15 (R.: cf. 11a y 9a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5055,
+  "title": "Viernes de la 5ª semana de Tiempo Ordinario",
+  "searchPool": "viernes de la 5 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 80 10 11ab 12 13 14 15 r cf 11a y 9a semana 5 semana v viernes 5 v r yo soy el senor dios tuyo escucha mi voz no tendras un dios extrano no adoraras un dios extranjero yo soy el senor dios tuyo que te saque del pais de egipto r pero mi pueblo no escucho mi voz israel no quiso obedecer los entregue a su corazon obstinado para que anduviesen segun sus antojos r ojala me escuchase mi pueblo y caminase israel por mi camino en un momento humillaria a sus enemigos y volveria mi mano contra sus adversarios r",
   "respuesta": "R. Yo soy el Señor, Dios tuyo: escucha mi voz.",
+  "orden": 5055,
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 80, 10-11ab. 12-13. 14-15 (R.: cf. 11a y 9a)",
+  "dia": "Viernes",
+  "ciclo": "Año Par",
+  "hasAudio": false,
+  "textoCompleto": "No tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto. R.\n\nPero mi pueblo no escuchó mi voz,\nIsrael no quiso obedecer:\nlos entregué a su corazón obstinado,\npara que anduviesen según sus antojos. R.\n\n¡Ojalá me escuchase mi pueblo\ny caminase Israel por mi camino!:\nen un momento humillaría a sus enemigos\ny volvería mi mano contra sus adversarios. R.",
   "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "celebracion": "Viernes de la 5ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "No tendrás un dios extraño,",
@@ -30,12 +35,6 @@
       "y volvería mi mano contra sus adversarios. R."
     ]
   ],
-  "textoCompleto": "No tendrás un dios extraño,\nno adorarás un dios extranjero;\nyo soy el Señor, Dios tuyo,\nque te saqué del país de Egipto. R.\n\nPero mi pueblo no escuchó mi voz,\nIsrael no quiso obedecer:\nlos entregué a su corazón obstinado,\npara que anduviesen según sus antojos. R.\n\n¡Ojalá me escuchase mi pueblo\ny caminase Israel por mi camino!:\nen un momento humillaría a sus enemigos\ny volvería mi mano contra sus adversarios. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 5 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 80 10 11ab 12 13 14 15 r cf 11a y 9a semana 5 semana v viernes 5 v r yo soy el senor dios tuyo escucha mi voz no tendras un dios extrano no adoraras un dios extranjero yo soy el senor dios tuyo que te saque del pais de egipto r pero mi pueblo no escucho mi voz israel no quiso obedecer los entregue a su corazon obstinado para que anduviesen segun sus antojos r ojala me escuchase mi pueblo y caminase israel por mi camino en un momento humillaria a sus enemigos y volveria mi mano contra sus adversarios r",
   "lizq": [
     {
       "line": "R. Yo soy el Señor, Dios tuyo:",
@@ -50,8 +49,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "No tendrás un dios extraño,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No tendrás un dios extraño,"
     },
     {
       "line": "no adorarás un dios extranjero;",
@@ -62,8 +61,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que te saqué del país de Egipto. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que te saqué del país de Egipto. R."
     },
     {
       "line": "",
@@ -94,16 +93,17 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y caminase Israel por mi camino!:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y caminase Israel por mi camino!:"
     },
     {
-      "line": "en un momento humillaría a sus enemigos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en un momento humillaría a sus enemigos"
     },
     {
-      "line": "y volvería mi mano contra sus adversarios. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y volvería mi mano contra sus adversarios. R."
     }
-  ]
+  ],
+  "id": "seup_029"
 }

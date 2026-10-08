@@ -1,14 +1,13 @@
 {
+  "respuesta": "R. Dichoso el que camina en la voluntad del Señor.",
   "id": "seua_50",
   "title": "Domingo de la 6ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 6ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 1-2. 4-5. 17-18. 33-34 (R.: 1b)",
-  "salmo": "Salmo responsorial: Salmo 118, 1-2. 4-5. 17-18. 33-34 (R.: 1b)",
-  "ciclo": "Ciclo A",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
   "orden": 506,
-  "respuesta": "R. Dichoso el que camina en la voluntad del Señor.",
+  "salmo": "Salmo responsorial: Salmo 118, 1-2. 4-5. 17-18. 33-34 (R.: 1b)",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 118, 1-2. 4-5. 17-18. 33-34 (R.: 1b)",
+  "searchPool": "domingo de la 6 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 118 1 2 4 5 17 18 33 34 r 1b r dichoso el que camina en la voluntad del senor dichoso el que con vida intachable camina en la voluntad del senor dichoso el que guardando sus preceptos lo busca de todo corazon r tu promulgas tus decretos para que se observen exactamente ojala este firme mi camino para cumplir tus consignas r haz bien a tu siervo vivire y cumplire tus palabras abreme los ojos y contemplare las maravillas de tu voluntad r muestrame senor el camino de tus leyes y lo seguire puntualmente ensename a cumplir tu voluntad y a guardarla de todo corazon r",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -36,12 +35,9 @@
       "y a guardarla de todo corazón. R."
     ]
   ],
-  "textoCompleto": "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor;\ndichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.\n\nTú promulgas tus decretos\npara que se observen exactamente.\nOjalá esté firme mi camino,\npara cumplir tus consignas. R.\n\nHaz bien a tu siervo: viviré\ny cumpliré tus palabras;\nábreme los ojos, y contemplaré\nlas maravillas de tu voluntad. R.\n\nMuéstrame, Señor, el camino de tus leyes,\ny lo seguiré puntualmente;\nenséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R.",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 6 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 118 1 2 4 5 17 18 33 34 r 1b r dichoso el que camina en la voluntad del senor dichoso el que con vida intachable camina en la voluntad del senor dichoso el que guardando sus preceptos lo busca de todo corazon r tu promulgas tus decretos para que se observen exactamente ojala este firme mi camino para cumplir tus consignas r haz bien a tu siervo vivire y cumplire tus palabras abreme los ojos y contemplare las maravillas de tu voluntad r muestrame senor el camino de tus leyes y lo seguire puntualmente ensename a cumplir tu voluntad y a guardarla de todo corazon r",
+  "textoCompleto": "Dichoso el que, con vida intachable,\ncamina en la voluntad del Señor;\ndichoso el que, guardando sus preceptos,\nlo busca de todo corazón. R.\n\nTú promulgas tus decretos\npara que se observen exactamente.\nOjalá esté firme mi camino,\npara cumplir tus consignas. R.\n\nHaz bien a tu siervo: viviré\ny cumpliré tus palabras;\nábreme los ojos, y contemplaré\nlas maravillas de tu voluntad. R.\n\nMuéstrame, Señor, el camino de tus leyes,\ny lo seguiré puntualmente;\nenséñame a cumplir tu voluntad\ny a guardarla de todo corazón. R.",
   "lizq": [
     {
       "line": "R. Dichoso el que camina en la voluntad del Señor.",
@@ -56,12 +52,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "camina en la voluntad del Señor;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "camina en la voluntad del Señor;"
     },
     {
-      "line": "dichoso el que, guardando sus preceptos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "dichoso el que, guardando sus preceptos,"
     },
     {
       "line": "lo busca de todo corazón. R.",
@@ -92,40 +88,44 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Haz bien a tu siervo: viviré",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Haz bien a tu siervo: viviré"
     },
     {
       "line": "y cumpliré tus palabras;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ábreme los ojos, y contemplaré",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ábreme los ojos, y contemplaré"
     },
     {
       "line": "las maravillas de tu voluntad. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Muéstrame, Señor, el camino de tus leyes,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y lo seguiré puntualmente;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y lo seguiré puntualmente;"
     },
     {
-      "line": "enséñame a cumplir tu voluntad",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "enséñame a cumplir tu voluntad"
     },
     {
       "line": "y a guardarla de todo corazón. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Domingo",
+  "ciclo": "Ciclo A",
+  "celebracion": "Domingo de la 6ª semana de Tiempo Ordinario",
+  "hasAudio": false
 }

@@ -1,15 +1,113 @@
 {
-  "id": "seuc_60",
-  "title": "Domingo de la 15ª semana de Tiempo Ordinario - Opcion 1",
+  "stage": "Liturgia",
   "celebracion": "Domingo de la 15ª semana de Tiempo Ordinario - Opcion 1",
-  "subtitle": "Salmo responsorial: Salmo 68, 14 y 17. 30-31. 33-34. 36ab y 37 (R.: cf. 33)",
-  "salmo": "Salmo responsorial: Salmo 68, 14 y 17. 30-31. 33-34. 36ab y 37 (R.: cf. 33)",
-  "ciclo": "Ciclo C",
   "tiempo": "Tiempo Ordinario",
+  "id": "seuc_60",
+  "searchPool": "domingo de la 15 semana de tiempo ordinario opcion 1 ciclo c tiempo ordinario domingo salmo responsorial salmo 68 14 y 17 30 31 33 34 36ab y 37 r cf 33 r humildes buscad al senor y revivira vuestro corazon mi oracion se dirige a ti dios mio el dia de tu favor que me escuche tu gran bondad que tu fidelidad me ayude respondeme senor con la bondad de tu gracia por tu gran compasion vuelvete hacia mi r yo soy un pobre malherido dios mio tu salvacion me levante alabare el nombre de dios con cantos proclamare su grandeza con accion de gracias r miradlo los humildes y alegraos buscad al senor y revivira vuestro corazon que el senor escucha a sus pobres no desprecia a los cautivos r el senor salvara a sion reconstruira las ciudades de juda la estirpe de sus siervos la heredara los que aman su nombre viviran en ella r",
+  "sourceBook": "eucaristia",
+  "ciclo": "Ciclo C",
+  "hasAudio": false,
+  "title": "Domingo de la 15ª semana de Tiempo Ordinario - Opcion 1",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Humildes, buscad al Señor, y revivirá vuestro corazón."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Mi oración se dirige a ti,"
+    },
+    {
+      "line": "Dios mío, el día de tu favor;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "que me escuche tu gran bondad,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que tu fidelidad me ayude."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Respóndeme, Señor, con la bondad de tu gracia;"
+    },
+    {
+      "line": "por tu gran compasión, vuélvete hacia mí. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Yo soy un pobre malherido;"
+    },
+    {
+      "line": "Dios mío, tu salvación me levante.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Alabaré el nombre de Dios con cantos,"
+    },
+    {
+      "line": "proclamaré su grandeza con acción de gracias. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Miradlo, los humildes, y alegraos,"
+    },
+    {
+      "line": "buscad al Señor, y revivirá vuestro corazón.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Que el Señor escucha a sus pobres,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "no desprecia a los cautivos. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor salvará a Sión,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "reconstruirá las ciudades de Judá."
+    },
+    {
+      "line": "La estirpe de sus siervos la heredará,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los que aman su nombre vivirán en ella. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "dia": "Domingo",
   "orden": 515,
-  "respuesta": "R. Humildes, buscad al Señor, y revivirá vuestro corazón.",
-  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 68, 14 y 17. 30-31. 33-34. 36ab y 37 (R.: cf. 33)",
+  "subtitle": "Salmo responsorial: Salmo 68, 14 y 17. 30-31. 33-34. 36ab y 37 (R.: cf. 33)",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Mi oración se dirige a ti,\nDios mío, el día de tu favor;\nque me escuche tu gran bondad,\nque tu fidelidad me ayude.\nRespóndeme, Señor, con la bondad de tu gracia;\npor tu gran compasión, vuélvete hacia mí. R.\n\nYo soy un pobre malherido;\nDios mío, tu salvación me levante.\nAlabaré el nombre de Dios con cantos,\nproclamaré su grandeza con acción de gracias. R.\n\nMiradlo, los humildes, y alegraos,\nbuscad al Señor, y revivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a los cautivos. R.\n\nEl Señor salvará a Sión,\nreconstruirá las ciudades de Judá.\nLa estirpe de sus siervos la heredará,\nlos que aman su nombre vivirán en ella. R.",
   "estrofas": [
     [
       "Mi oración se dirige a ti,",
@@ -38,104 +136,6 @@
       "los que aman su nombre vivirán en ella. R."
     ]
   ],
-  "textoCompleto": "Mi oración se dirige a ti,\nDios mío, el día de tu favor;\nque me escuche tu gran bondad,\nque tu fidelidad me ayude.\nRespóndeme, Señor, con la bondad de tu gracia;\npor tu gran compasión, vuélvete hacia mí. R.\n\nYo soy un pobre malherido;\nDios mío, tu salvación me levante.\nAlabaré el nombre de Dios con cantos,\nproclamaré su grandeza con acción de gracias. R.\n\nMiradlo, los humildes, y alegraos,\nbuscad al Señor, y revivirá vuestro corazón.\nQue el Señor escucha a sus pobres,\nno desprecia a los cautivos. R.\n\nEl Señor salvará a Sión,\nreconstruirá las ciudades de Judá.\nLa estirpe de sus siervos la heredará,\nlos que aman su nombre vivirán en ella. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 15 semana de tiempo ordinario opcion 1 ciclo c tiempo ordinario domingo salmo responsorial salmo 68 14 y 17 30 31 33 34 36ab y 37 r cf 33 r humildes buscad al senor y revivira vuestro corazon mi oracion se dirige a ti dios mio el dia de tu favor que me escuche tu gran bondad que tu fidelidad me ayude respondeme senor con la bondad de tu gracia por tu gran compasion vuelvete hacia mi r yo soy un pobre malherido dios mio tu salvacion me levante alabare el nombre de dios con cantos proclamare su grandeza con accion de gracias r miradlo los humildes y alegraos buscad al senor y revivira vuestro corazon que el senor escucha a sus pobres no desprecia a los cautivos r el senor salvara a sion reconstruira las ciudades de juda la estirpe de sus siervos la heredara los que aman su nombre viviran en ella r",
-  "lizq": [
-    {
-      "line": "R. Humildes, buscad al Señor, y revivirá vuestro corazón.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Mi oración se dirige a ti,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Dios mío, el día de tu favor;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que me escuche tu gran bondad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tu fidelidad me ayude.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Respóndeme, Señor, con la bondad de tu gracia;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "por tu gran compasión, vuélvete hacia mí. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Yo soy un pobre malherido;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Dios mío, tu salvación me levante.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Alabaré el nombre de Dios con cantos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "proclamaré su grandeza con acción de gracias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Miradlo, los humildes, y alegraos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "buscad al Señor, y revivirá vuestro corazón.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Que el Señor escucha a sus pobres,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "no desprecia a los cautivos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor salvará a Sión,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "reconstruirá las ciudades de Judá.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "La estirpe de sus siervos la heredará,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los que aman su nombre vivirán en ella. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuesta": "R. Humildes, buscad al Señor, y revivirá vuestro corazón.",
+  "respuestaOpcional": ""
 }

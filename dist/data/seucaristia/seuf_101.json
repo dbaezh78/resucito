@@ -1,10 +1,13 @@
 {
-  "id": "seuf_101",
-  "title": "Miércoles de la cuarta semana de Pascua",
-  "celebracion": "Miércoles de la cuarta semana de Pascua",
-  "subtitle": "Salmo 66, 2-3. 5. 6 y 8 (R.: 4)",
+  "orden": 443,
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
   "salmo": "Salmo 66, 2-3. 5. 6 y 8 (R.: 4)",
   "ciclo": "Ciclo A, B y C",
+  "celebracion": "Miércoles de la cuarta semana de Pascua",
+  "dia": "Miércoles",
+  "searchPool": "miercoles de la cuarta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua miercoles salmo 66 2 3 5 6 y 8 r 4 semana 4 semana iv miercoles feria r oh dios que te alaben los pueblos que todos los pueblos te alaben r aleluya el senor tenga piedad y nos bendiga ilumine su rostro sobre nosotros conozca la tierra tus caminos todos los pueblos tu salvacion r que canten de alegria las naciones porque riges el mundo con justicia riges los pueblos con rectitud y gobiernas las naciones de la tierra r oh dios que te alaben los pueblos que todos los pueblos te alaben que dios nos bendiga que le teman hasta los confines del orbe r",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +15,7 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Miércoles",
-  "orden": 443,
-  "respuesta": "R. Oh Dios, que te alaben los pueblos, que todos los pueblos te alaben.",
-  "respuestaOpcional": "R. Aleluya.",
+  "title": "Miércoles de la cuarta semana de Pascua",
   "estrofas": [
     [
       "El Señor tenga piedad y nos bendiga,",
@@ -37,56 +36,57 @@
       "hasta los confines del orbe. R."
     ]
   ],
+  "respuestaOpcional": "R. Aleluya.",
+  "respuesta": "R. Oh Dios, que te alaben los pueblos, que todos los pueblos te alaben.",
+  "id": "seuf_101",
   "textoCompleto": "El Señor tenga piedad y nos bendiga,\nilumine su rostro sobre nosotros;\nconozca la tierra tus caminos,\ntodos los pueblos tu salvación. R.\n\nQue canten de alegría las naciones,\nporque riges el mundo con justicia,\nriges los pueblos con rectitud\ny gobiernas las naciones de la tierra. R.\n\nOh Dios, que te alaben los pueblos,\nque todos los pueblos te alaben.\nQue Dios nos bendiga; que le teman\nhasta los confines del orbe. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo 66, 2-3. 5. 6 y 8 (R.: 4)",
+  "tiempo": "Pascua",
   "hasAudio": false,
-  "searchPool": "miercoles de la cuarta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua miercoles salmo 66 2 3 5 6 y 8 r 4 semana 4 semana iv miercoles feria r oh dios que te alaben los pueblos que todos los pueblos te alaben r aleluya el senor tenga piedad y nos bendiga ilumine su rostro sobre nosotros conozca la tierra tus caminos todos los pueblos tu salvacion r que canten de alegria las naciones porque riges el mundo con justicia riges los pueblos con rectitud y gobiernas las naciones de la tierra r oh dios que te alaben los pueblos que todos los pueblos te alaben que dios nos bendiga que le teman hasta los confines del orbe r",
   "lizq": [
     {
       "line": "R. Oh Dios, que te alaben los pueblos,",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "que todos los pueblos te alaben.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "que todos los pueblos te alaben."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor tenga piedad y nos bendiga,"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ilumine su rostro sobre nosotros;"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "conozca la tierra tus caminos,"
     },
     {
-      "line": "El Señor tenga piedad y nos bendiga,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "todos los pueblos tu salvación. R."
     },
     {
-      "line": "ilumine su rostro sobre nosotros;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "conozca la tierra tus caminos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "todos los pueblos tu salvación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Que canten de alegría las naciones,",
@@ -97,8 +97,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "riges los pueblos con rectitud",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "riges los pueblos con rectitud"
     },
     {
       "line": "y gobiernas las naciones de la tierra. R.",
@@ -109,8 +109,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Oh Dios, que te alaben los pueblos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Oh Dios, que te alaben los pueblos,"
     },
     {
       "line": "que todos los pueblos te alaben.",

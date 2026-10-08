@@ -1,15 +1,97 @@
 {
-  "id": "seub_68",
-  "title": "Domingo de la 26ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 26ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 18, 8. 10.12-13. 14 (R.: 9a)",
-  "salmo": "Salmo responsorial: Salmo 18, 8. 10.12-13. 14 (R.: 9a)",
-  "ciclo": "Ciclo B",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 526,
-  "respuesta": "R. Los mandatos del Señor son rectos y alegran el corazón.",
+  "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nAunque tu siervo vigila\npara guardarlos con cuidado,\n¿quién conoce sus faltas?\nAbsuélveme de lo que se me oculta. R.\n\nPreserva a tu siervo de la arrogancia,\npara que no me domine:\nasí quedaré libre e inocente\ndel gran pecado. R.",
+  "lizq": [
+    {
+      "line": "R. Los mandatos del Señor son rectos y alegran el corazón.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La ley del Señor es perfecta"
+    },
+    {
+      "line": "y es descanso del alma;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "el precepto del Señor es fiel",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "e instruye al ignorante. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La voluntad del Señor es pura"
+    },
+    {
+      "line": "y eternamente estable;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "los mandamientos del Señor son verdaderos",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y enteramente justos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Aunque tu siervo vigila"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "para guardarlos con cuidado,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿quién conoce sus faltas?"
+    },
+    {
+      "line": "Absuélveme de lo que se me oculta. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Preserva a tu siervo de la arrogancia,"
+    },
+    {
+      "line": "para que no me domine:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "así quedaré libre e inocente"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "del gran pecado. R."
+    }
+  ],
+  "ciclo": "Ciclo B",
   "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 18, 8. 10.12-13. 14 (R.: 9a)",
   "estrofas": [
     [
       "La ley del Señor es perfecta",
@@ -36,96 +118,14 @@
       "del gran pecado. R."
     ]
   ],
-  "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nAunque tu siervo vigila\npara guardarlos con cuidado,\n¿quién conoce sus faltas?\nAbsuélveme de lo que se me oculta. R.\n\nPreserva a tu siervo de la arrogancia,\npara que no me domine:\nasí quedaré libre e inocente\ndel gran pecado. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 18, 8. 10.12-13. 14 (R.: 9a)",
   "searchPool": "domingo de la 26 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 18 8 10 12 13 14 r 9a r los mandatos del senor son rectos y alegran el corazon la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r aunque tu siervo vigila para guardarlos con cuidado quien conoce sus faltas absuelveme de lo que se me oculta r preserva a tu siervo de la arrogancia para que no me domine asi quedare libre e inocente del gran pecado r",
-  "lizq": [
-    {
-      "line": "R. Los mandatos del Señor son rectos y alegran el corazón.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "La ley del Señor es perfecta",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y es descanso del alma;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el precepto del Señor es fiel",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "e instruye al ignorante. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "La voluntad del Señor es pura",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y eternamente estable;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "los mandamientos del Señor son verdaderos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y enteramente justos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Aunque tu siervo vigila",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "para guardarlos con cuidado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¿quién conoce sus faltas?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Absuélveme de lo que se me oculta. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Preserva a tu siervo de la arrogancia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "para que no me domine:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "así quedaré libre e inocente",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "del gran pecado. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "celebracion": "Domingo de la 26ª semana de Tiempo Ordinario",
+  "id": "seub_68",
+  "hasAudio": false,
+  "title": "Domingo de la 26ª semana de Tiempo Ordinario",
+  "dia": "Domingo",
+  "orden": 526,
+  "respuesta": "R. Los mandatos del Señor son rectos y alegran el corazón."
 }

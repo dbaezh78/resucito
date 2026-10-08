@@ -1,15 +1,17 @@
 {
-  "id": "seuc_72",
-  "title": "Domingo de la 26ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 26ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: 1b)",
-  "salmo": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: 1b)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 526,
   "respuesta": "R. Alaba, alma mía, al Señor.",
+  "celebracion": "Domingo de la 26ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "searchPool": "domingo de la 26 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 145 7 8 9a 9bc 10 r 1b r alaba alma mia al senor r aleluya el mantiene su fidelidad perpetuamente el hace justicia a los oprimidos el da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
+  "id": "seuc_72",
+  "dia": "Domingo",
+  "textoCompleto": "Él mantiene su fidelidad perpetuamente,\nél hace justicia a los oprimidos,\nél da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos,\nel Señor guarda a los peregrinos. R.\n\nSustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R.",
   "respuestaOpcional": "R. Aleluya",
+  "ciclo": "Ciclo C",
+  "subtitle": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: 1b)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Él mantiene su fidelidad perpetuamente,",
@@ -30,20 +32,18 @@
       "tu Dios, Sión, de edad en edad. R."
     ]
   ],
-  "textoCompleto": "Él mantiene su fidelidad perpetuamente,\nél hace justicia a los oprimidos,\nél da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos,\nel Señor guarda a los peregrinos. R.\n\nSustenta al huérfano y a la viuda\ny trastorna el camino de los malvados.\nEl Señor reina eternamente,\ntu Dios, Sión, de edad en edad. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "orden": 526,
+  "title": "Domingo de la 26ª semana de Tiempo Ordinario",
   "hasAudio": false,
-  "searchPool": "domingo de la 26 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 145 7 8 9a 9bc 10 r 1b r alaba alma mia al senor r aleluya el mantiene su fidelidad perpetuamente el hace justicia a los oprimidos el da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r sustenta al huerfano y a la viuda y trastorna el camino de los malvados el senor reina eternamente tu dios sion de edad en edad r",
+  "salmo": "Salmo responsorial: Salmo 145, 7. 8-9a. 9bc-10 (R.: 1b)",
   "lizq": [
     {
-      "line": "R. Alaba, alma mía, al Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Alaba, alma mía, al Señor."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -70,8 +70,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor liberta a los cautivos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "El Señor liberta a los cautivos. R."
     },
     {
       "line": "",
@@ -94,8 +94,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Sustenta al huérfano y a la viuda",
@@ -106,12 +106,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor reina eternamente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor reina eternamente,"
     },
     {
-      "line": "tu Dios, Sión, de edad en edad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tu Dios, Sión, de edad en edad. R."
     }
   ]
 }

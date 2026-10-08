@@ -1,15 +1,83 @@
 {
-  "id": "seup_019",
-  "title": "Lunes de la 4ª semana de Tiempo Ordinario",
+  "respuesta": "R. Levántate, Señor, sálvame.",
   "celebracion": "Lunes de la 4ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 3, 2-3, 4-5. 6-7 (R.: 7b)",
+  "orden": 5041,
+  "hasAudio": false,
+  "stage": "Liturgia",
   "salmo": "Salmo responsorial: Salmo 3, 2-3, 4-5. 6-7 (R.: 7b)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 3, 2-3, 4-5. 6-7 (R.: 7b)",
+  "id": "seup_019",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Levántate, Señor, sálvame."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Señor, cuántos son mis enemigos,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cuántos se levantan contra mí;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cuántos dicen de mí:"
+    },
+    {
+      "line": "«Ya no lo protege Dios». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero tú, Señor, eres mi escudo y mi gloria,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "tú mantienes alta mi cabeza.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Si grito, invocando al Señor,"
+    },
+    {
+      "line": "él me escucha desde su monte santo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Puedo acostarme y dormir y despertar:"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor me sostiene."
+    },
+    {
+      "line": "No temeré al pueblo innumerable",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que acampa a mi alrededor. R."
+    }
+  ],
   "dia": "Lunes",
-  "orden": 5041,
-  "respuesta": "R. Levántate, Señor, sálvame.",
+  "title": "Lunes de la 4ª semana de Tiempo Ordinario",
   "respuestaOpcional": "",
+  "searchPool": "lunes de la 4 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 3 2 3 4 5 6 7 r 7b semana 4 semana iv lunes 4 iv r levantate senor salvame senor cuantos son mis enemigos cuantos se levantan contra mi cuantos dicen de mi ya no lo protege dios r pero tu senor eres mi escudo y mi gloria tu mantienes alta mi cabeza si grito invocando al senor el me escucha desde su monte santo r puedo acostarme y dormir y despertar el senor me sostiene no temere al pueblo innumerable que acampa a mi alrededor r",
   "estrofas": [
     [
       "Señor, cuántos son mis enemigos,",
@@ -31,75 +99,7 @@
     ]
   ],
   "textoCompleto": "Señor, cuántos son mis enemigos,\ncuántos se levantan contra mí;\ncuántos dicen de mí:\n«Ya no lo protege Dios». R.\n\nPero tú, Señor, eres mi escudo y mi gloria,\ntú mantienes alta mi cabeza.\nSi grito, invocando al Señor,\nél me escucha desde su monte santo. R.\n\nPuedo acostarme y dormir y despertar:\nel Señor me sostiene.\nNo temeré al pueblo innumerable\nque acampa a mi alrededor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 4 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 3 2 3 4 5 6 7 r 7b semana 4 semana iv lunes 4 iv r levantate senor salvame senor cuantos son mis enemigos cuantos se levantan contra mi cuantos dicen de mi ya no lo protege dios r pero tu senor eres mi escudo y mi gloria tu mantienes alta mi cabeza si grito invocando al senor el me escucha desde su monte santo r puedo acostarme y dormir y despertar el senor me sostiene no temere al pueblo innumerable que acampa a mi alrededor r",
-  "lizq": [
-    {
-      "line": "R. Levántate, Señor, sálvame.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Señor, cuántos son mis enemigos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "cuántos se levantan contra mí;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "cuántos dicen de mí:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "«Ya no lo protege Dios». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Pero tú, Señor, eres mi escudo y mi gloria,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "tú mantienes alta mi cabeza.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Si grito, invocando al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él me escucha desde su monte santo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Puedo acostarme y dormir y despertar:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "el Señor me sostiene.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "No temeré al pueblo innumerable",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que acampa a mi alrededor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia"
 }

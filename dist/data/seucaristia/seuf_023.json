@@ -1,10 +1,5 @@
 {
-  "id": "seuf_023",
   "title": "Día 22 de diciembre.",
-  "celebracion": "Día 22 de diciembre.",
-  "subtitle": "1Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-  "salmo": "1Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +7,13 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Adviento",
+  "respuestaOpcional": "",
   "dia": "Feria",
   "orden": 176,
-  "respuesta": "R. Mi corazón se regocija por el Señor, mi Salvador.",
-  "respuestaOpcional": "",
+  "salmo": "1Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
+  "celebracion": "Día 22 de diciembre.",
+  "subtitle": "1Samuel 2, 1. 4-5. 6-7. 8abcd (R.: 1a)",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Mi corazón se regocija por el Señor,",
@@ -45,12 +42,7 @@
       "y que herede un trono de gloria. R."
     ]
   ],
-  "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nÉl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "dia 22 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria 1samuel 2 1 4 5 6 7 8abcd r 1a feria r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r",
   "lizq": [
     {
       "line": "R. Mi corazón se regocija por el Señor, mi Salvador.",
@@ -61,8 +53,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Mi corazón se regocija por el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Mi corazón se regocija por el Señor,"
     },
     {
       "line": "mi poder se exalta por Dios;",
@@ -73,12 +65,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "porque gozo con tu salvación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "porque gozo con tu salvación. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Se rompen los arcos de los valientes,",
@@ -93,56 +85,64 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mientras los hambrientos engordan;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mientras los hambrientos engordan;"
     },
     {
-      "line": "la mujer estéril da a luz siete hijos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la mujer estéril da a luz siete hijos,"
     },
     {
-      "line": "mientras la madre de muchos queda baldía. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "mientras la madre de muchos queda baldía. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor da la muerte y la vida,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "hunde en el abismo y levanta;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "hunde en el abismo y levanta;"
     },
     {
-      "line": "da la pobreza y la riqueza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "da la pobreza y la riqueza,"
     },
     {
-      "line": "humilla y enaltece. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "humilla y enaltece. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Él levanta del polvo al desvalido,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Él levanta del polvo al desvalido,"
     },
     {
       "line": "alza de la basura al pobre,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "para hacer que se siente entre príncipes",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "para hacer que se siente entre príncipes"
     },
     {
-      "line": "y que herede un trono de gloria. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y que herede un trono de gloria. R."
     }
-  ]
+  ],
+  "id": "seuf_023",
+  "tiempo": "Adviento",
+  "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nÉl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
+  "searchPool": "dia 22 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria 1samuel 2 1 4 5 6 7 8abcd r 1a feria r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r",
+  "hasAudio": false,
+  "ciclo": "Ciclo A, B y C",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Mi corazón se regocija por el Señor, mi Salvador."
 }

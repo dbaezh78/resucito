@@ -1,15 +1,15 @@
 {
-  "id": "seui_140",
-  "title": "Martes de la 24ª semana de Tiempo Ordinario",
   "celebracion": "Martes de la 24ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 100, 1-2ab. 2cd-3ab. 5. 6(R.: 2c)",
-  "salmo": "Salmo responsorial: Salmo 100, 1-2ab. 2cd-3ab. 5. 6(R.: 2c)",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "martes de la 24 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 100 1 2ab 2cd 3ab 5 6 r 2c semana 24 semana xxiv martes 24 xxiv r andare con rectitud de corazon voy a cantar la bondad y la justicia para ti es mi musica senor voy a explicar el camino perfecto cuando vendras a mi r andare con rectitud de corazon dentro de mi casa no pondre mis ojos en intenciones viles aborrezco al que obra mal r al que en secreto difama a su projimo lo hare callar ojos engreidos corazones arrogantes no los soportare r pongo mis ojos en los que son leales ellos viviran conmigo el que sigue un camino perfecto ese me servira r",
   "dia": "Martes",
+  "salmo": "Salmo responsorial: Salmo 100, 1-2ab. 2cd-3ab. 5. 6(R.: 2c)",
+  "id": "seui_140",
+  "stage": "Liturgia",
   "orden": 5242,
-  "respuesta": "R. Andaré con rectitud de corazón.",
-  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
+  "title": "Martes de la 24ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Voy a cantar la bondad y la justicia,",
@@ -37,12 +37,10 @@
       "ése me servirá. R."
     ]
   ],
-  "textoCompleto": "Voy a cantar la bondad y la justicia,\npara ti es mi música, Señor;\nvoy a explicar el camino perfecto:\n¿cuándo vendrás a mí? R.\n\nAndaré con rectitud de corazón\ndentro de mi casa;\nno pondré mis ojos\nen intenciones viles.\nAborrezco al que obra mal. R.\n\nAl que en secreto difama a su prójimo\nlo haré callar;\nojos engreídos, corazones arrogantes,\nno los soportaré. R.\n\nPongo mis ojos en los que son leales,\nellos vivirán conmigo;\nel que sigue un camino perfecto,\nése me servirá. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 24 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 100 1 2ab 2cd 3ab 5 6 r 2c semana 24 semana xxiv martes 24 xxiv r andare con rectitud de corazon voy a cantar la bondad y la justicia para ti es mi musica senor voy a explicar el camino perfecto cuando vendras a mi r andare con rectitud de corazon dentro de mi casa no pondre mis ojos en intenciones viles aborrezco al que obra mal r al que en secreto difama a su projimo lo hare callar ojos engreidos corazones arrogantes no los soportare r pongo mis ojos en los que son leales ellos viviran conmigo el que sigue un camino perfecto ese me servira r",
+  "textoCompleto": "Voy a cantar la bondad y la justicia,\npara ti es mi música, Señor;\nvoy a explicar el camino perfecto:\n¿cuándo vendrás a mí? R.\n\nAndaré con rectitud de corazón\ndentro de mi casa;\nno pondré mis ojos\nen intenciones viles.\nAborrezco al que obra mal. R.\n\nAl que en secreto difama a su prójimo\nlo haré callar;\nojos engreídos, corazones arrogantes,\nno los soportaré. R.\n\nPongo mis ojos en los que son leales,\nellos vivirán conmigo;\nel que sigue un camino perfecto,\nése me servirá. R.",
+  "respuesta": "R. Andaré con rectitud de corazón.",
+  "subtitle": "Salmo responsorial: Salmo 100, 1-2ab. 2cd-3ab. 5. 6(R.: 2c)",
   "lizq": [
     {
       "line": "R. Andaré con rectitud de corazón.",
@@ -73,12 +71,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Andaré con rectitud de corazón",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Andaré con rectitud de corazón"
     },
     {
-      "line": "dentro de mi casa;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "dentro de mi casa;"
     },
     {
       "line": "no pondré mis ojos",
@@ -89,24 +87,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Aborrezco al que obra mal. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Aborrezco al que obra mal. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Al que en secreto difama a su prójimo",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Al que en secreto difama a su prójimo"
     },
     {
-      "line": "lo haré callar;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lo haré callar;"
     },
     {
-      "line": "ojos engreídos, corazones arrogantes,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ojos engreídos, corazones arrogantes,"
     },
     {
       "line": "no los soportaré. R.",
@@ -132,5 +130,7 @@
       "line": "ése me servirá. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "respuestaOpcional": ""
 }

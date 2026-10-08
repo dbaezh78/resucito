@@ -1,49 +1,9 @@
 {
-  "id": "seuc_23",
-  "title": "Viernes santo - Celebración de la Pasión del Señor",
-  "celebracion": "Viernes santo - Celebración de la Pasión del Señor",
-  "subtitle": "Salmo responsorial: Salmo 30, 2 y 6. 12-13. 15-16. 17 y 25 (R.: Lc 23,46)",
-  "salmo": "Salmo responsorial: Salmo 30, 2 y 6. 12-13. 15-16. 17 y 25 (R.: Lc 23,46)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Cuaresma",
-  "dia": "Viernes",
-  "orden": 316,
-  "respuesta": "R. Padre, a tus manos encomiendo mi espíritu.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "A ti, Señor, me acojo:",
-      "no quede yo nunca defraudado;",
-      "tú, que eres justo, ponme a salvo.",
-      "A tus manos encomiendo mi espíritu:",
-      "tú, el Dios leal, me librarás. R."
-    ],
-    [
-      "Soy la burla de todos mis enemigos,",
-      "la irrisión de mis vecinos,",
-      "el espanto de mis conocidos;",
-      "me ven por la calle, y escapan de mí.",
-      "Me han olvidado como a un muerto,",
-      "me han desechado como a un cachorro inútil. R."
-    ],
-    [
-      "Pero yo confío en ti, Señor,",
-      "te digo: «Tú eres mi Dios».",
-      "En tu mano están mis azares;",
-      "líbrame de los enemigos que me persiguen. R."
-    ],
-    [
-      "Haz brillar tu rostro sobre tu siervo,",
-      "sálvame por tu misericordia.",
-      "Sed fuertes y valientes de corazón,",
-      "los que esperáis en el Señor. R."
-    ]
-  ],
-  "textoCompleto": "A ti, Señor, me acojo:\nno quede yo nunca defraudado;\ntú, que eres justo, ponme a salvo.\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás. R.\n\nSoy la burla de todos mis enemigos,\nla irrisión de mis vecinos,\nel espanto de mis conocidos;\nme ven por la calle, y escapan de mí.\nMe han olvidado como a un muerto,\nme han desechado como a un cachorro inútil. R.\n\nPero yo confío en ti, Señor,\nte digo: «Tú eres mi Dios».\nEn tu mano están mis azares;\nlíbrame de los enemigos que me persiguen. R.\n\nHaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia.\nSed fuertes y valientes de corazón,\nlos que esperáis en el Señor. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
+  "stage": "Liturgia",
+  "tiempo": "Cuaresma",
+  "celebracion": "Viernes santo - Celebración de la Pasión del Señor",
   "searchPool": "viernes santo celebracion de la pasion del senor ciclo c cuaresma viernes salmo responsorial salmo 30 2 y 6 12 13 15 16 17 y 25 r lc 23 46 r padre a tus manos encomiendo mi espiritu a ti senor me acojo no quede yo nunca defraudado tu que eres justo ponme a salvo a tus manos encomiendo mi espiritu tu el dios leal me libraras r soy la burla de todos mis enemigos la irrision de mis vecinos el espanto de mis conocidos me ven por la calle y escapan de mi me han olvidado como a un muerto me han desechado como a un cachorro inutil r pero yo confio en ti senor te digo tu eres mi dios en tu mano estan mis azares librame de los enemigos que me persiguen r haz brillar tu rostro sobre tu siervo salvame por tu misericordia sed fuertes y valientes de corazon los que esperais en el senor r",
   "lizq": [
     {
@@ -71,12 +31,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tú, el Dios leal, me librarás. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tú, el Dios leal, me librarás. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Soy la burla de todos mis enemigos,",
@@ -91,12 +51,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "me ven por la calle, y escapan de mí.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me ven por la calle, y escapan de mí."
     },
     {
-      "line": "Me han olvidado como a un muerto,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Me han olvidado como a un muerto,"
     },
     {
       "line": "me han desechado como a un cachorro inútil. R.",
@@ -127,8 +87,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Haz brillar tu rostro sobre tu siervo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Haz brillar tu rostro sobre tu siervo,"
     },
     {
       "line": "sálvame por tu misericordia.",
@@ -139,8 +99,48 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los que esperáis en el Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los que esperáis en el Señor. R."
     }
-  ]
+  ],
+  "textoCompleto": "A ti, Señor, me acojo:\nno quede yo nunca defraudado;\ntú, que eres justo, ponme a salvo.\nA tus manos encomiendo mi espíritu:\ntú, el Dios leal, me librarás. R.\n\nSoy la burla de todos mis enemigos,\nla irrisión de mis vecinos,\nel espanto de mis conocidos;\nme ven por la calle, y escapan de mí.\nMe han olvidado como a un muerto,\nme han desechado como a un cachorro inútil. R.\n\nPero yo confío en ti, Señor,\nte digo: «Tú eres mi Dios».\nEn tu mano están mis azares;\nlíbrame de los enemigos que me persiguen. R.\n\nHaz brillar tu rostro sobre tu siervo,\nsálvame por tu misericordia.\nSed fuertes y valientes de corazón,\nlos que esperáis en el Señor. R.",
+  "id": "seuc_23",
+  "ciclo": "Ciclo C",
+  "title": "Viernes santo - Celebración de la Pasión del Señor",
+  "orden": 316,
+  "subtitle": "Salmo responsorial: Salmo 30, 2 y 6. 12-13. 15-16. 17 y 25 (R.: Lc 23,46)",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "A ti, Señor, me acojo:",
+      "no quede yo nunca defraudado;",
+      "tú, que eres justo, ponme a salvo.",
+      "A tus manos encomiendo mi espíritu:",
+      "tú, el Dios leal, me librarás. R."
+    ],
+    [
+      "Soy la burla de todos mis enemigos,",
+      "la irrisión de mis vecinos,",
+      "el espanto de mis conocidos;",
+      "me ven por la calle, y escapan de mí.",
+      "Me han olvidado como a un muerto,",
+      "me han desechado como a un cachorro inútil. R."
+    ],
+    [
+      "Pero yo confío en ti, Señor,",
+      "te digo: «Tú eres mi Dios».",
+      "En tu mano están mis azares;",
+      "líbrame de los enemigos que me persiguen. R."
+    ],
+    [
+      "Haz brillar tu rostro sobre tu siervo,",
+      "sálvame por tu misericordia.",
+      "Sed fuertes y valientes de corazón,",
+      "los que esperáis en el Señor. R."
+    ]
+  ],
+  "dia": "Viernes",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 30, 2 y 6. 12-13. 15-16. 17 y 25 (R.: Lc 23,46)",
+  "respuesta": "R. Padre, a tus manos encomiendo mi espíritu."
 }

@@ -1,15 +1,9 @@
 {
-  "id": "seui_035",
-  "title": "Viernes de la 6ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 6ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 32, 10-11. 12-13. 14-15 (R.: 12b)",
-  "salmo": "Salmo responsorial: Salmo 32, 10-11. 12-13. 14-15 (R.: 12b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5065,
-  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
   "respuestaOpcional": "",
+  "textoCompleto": "El Señor deshace los planes de las naciones,\nfrustra los proyectos de los pueblos;\npero el plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad. R.\n\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.\n\nDesde su morada observa\na todos los habitantes de la tierra:\nél modeló cada corazón,\ny comprende todas sus acciones. R.",
+  "searchPool": "viernes de la 6 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 32 10 11 12 13 14 15 r 12b semana 6 semana vi viernes 6 vi r dichoso el pueblo que el senor se escogio como heredad el senor deshace los planes de las naciones frustra los proyectos de los pueblos pero el plan del senor subsiste por siempre los proyectos de su corazon de edad en edad r dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad el senor mira desde el cielo se fija en todos los hombres r desde su morada observa a todos los habitantes de la tierra el modelo cada corazon y comprende todas sus acciones r",
+  "catCanto": "Salmo Eucaristía",
+  "id": "seui_035",
   "estrofas": [
     [
       "El Señor deshace los planes de las naciones,",
@@ -30,20 +24,14 @@
       "y comprende todas sus acciones. R."
     ]
   ],
-  "textoCompleto": "El Señor deshace los planes de las naciones,\nfrustra los proyectos de los pueblos;\npero el plan del Señor subsiste por siempre,\nlos proyectos de su corazón, de edad en edad. R.\n\nDichosa la nación cuyo Dios es el Señor,\nel pueblo que él se escogió como heredad.\nEl Señor mira desde el cielo,\nse fija en todos los hombres. R.\n\nDesde su morada observa\na todos los habitantes de la tierra:\nél modeló cada corazón,\ny comprende todas sus acciones. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 6 semana de tiempo ordinario ano impar tiempo ordinario viernes salmo responsorial salmo 32 10 11 12 13 14 15 r 12b semana 6 semana vi viernes 6 vi r dichoso el pueblo que el senor se escogio como heredad el senor deshace los planes de las naciones frustra los proyectos de los pueblos pero el plan del senor subsiste por siempre los proyectos de su corazon de edad en edad r dichosa la nacion cuyo dios es el senor el pueblo que el se escogio como heredad el senor mira desde el cielo se fija en todos los hombres r desde su morada observa a todos los habitantes de la tierra el modelo cada corazon y comprende todas sus acciones r",
   "lizq": [
     {
-      "line": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Dichoso el pueblo que el Señor se escogió como heredad."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor deshace los planes de las naciones,",
@@ -82,8 +70,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Desde su morada observa",
@@ -94,12 +82,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "él modeló cada corazón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él modeló cada corazón,"
     },
     {
-      "line": "y comprende todas sus acciones. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y comprende todas sus acciones. R."
     }
-  ]
+  ],
+  "sourceBook": "eucaristia",
+  "dia": "Viernes",
+  "stage": "Liturgia",
+  "respuesta": "R. Dichoso el pueblo que el Señor se escogió como heredad.",
+  "orden": 5065,
+  "ciclo": "Año Impar",
+  "subtitle": "Salmo responsorial: Salmo 32, 10-11. 12-13. 14-15 (R.: 12b)",
+  "celebracion": "Viernes de la 6ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 32, 10-11. 12-13. 14-15 (R.: 12b)",
+  "title": "Viernes de la 6ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "hasAudio": false
 }

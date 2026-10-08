@@ -1,15 +1,8 @@
 {
-  "id": "seub_58",
-  "title": "Domingo de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 16ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.:1)",
+  "sourceBook": "eucaristia",
   "salmo": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.:1)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 516,
-  "respuesta": "R. El Señor es mi pastor, nada me falta.",
-  "respuestaOpcional": "",
+  "celebracion": "Domingo de la 16ª semana de Tiempo Ordinario",
+  "searchPool": "domingo de la 16 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 22 1 3a 3b 4 5 6 r 1 r el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas r me guia por el sendero justo por el honor de su nombre aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
   "estrofas": [
     [
       "El Señor es mi pastor, nada me falta:",
@@ -37,12 +30,14 @@
       "por años sin término. R."
     ]
   ],
-  "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.\n\nMe guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo responsorial: Salmo 22, 1-3a. 3b-4. 5. 6 (R.:1)",
   "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Domingo",
+  "title": "Domingo de la 16ª semana de Tiempo Ordinario",
+  "orden": 516,
+  "id": "seub_58",
   "hasAudio": false,
-  "searchPool": "domingo de la 16 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 22 1 3a 3b 4 5 6 r 1 r el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas r me guia por el sendero justo por el honor de su nombre aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r",
   "lizq": [
     {
       "line": "R. El Señor es mi pastor, nada me falta.",
@@ -73,28 +68,28 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Me guía por el sendero justo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Me guía por el sendero justo,"
     },
     {
-      "line": "por el honor de su nombre.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por el honor de su nombre."
     },
     {
-      "line": "Aunque camine por cañadas oscuras,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Aunque camine por cañadas oscuras,"
     },
     {
       "line": "nada temo, porque tú vas conmigo:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tu vara y tu cayado me sosiegan. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tu vara y tu cayado me sosiegan. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Preparas una mesa ante mí,",
@@ -105,24 +100,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "me unges la cabeza con perfume,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me unges la cabeza con perfume,"
     },
     {
       "line": "y mi copa rebosa. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Tu bondad y tu misericordia me acompañan",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "todos los días de mi vida,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todos los días de mi vida,"
     },
     {
       "line": "y habitaré en la casa del Señor",
@@ -132,5 +127,10 @@
       "line": "por años sin término. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Ciclo B",
+  "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas. R.\n\nMe guía por el sendero justo,\npor el honor de su nombre.\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
+  "respuesta": "R. El Señor es mi pastor, nada me falta.",
+  "stage": "Liturgia",
+  "respuestaOpcional": ""
 }

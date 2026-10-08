@@ -1,15 +1,6 @@
 {
-  "id": "seui_184",
-  "title": "Jueves de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 31ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 26, 1. 4. 13-14 (R.: 13)",
-  "salmo": "Salmo responsorial: Salmo 26, 1. 4. 13-14 (R.: 13)",
-  "ciclo": "Año Impar",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5314,
-  "respuesta": "R. Espero gozar de la dicha del Señor en el país de la vida.",
-  "respuestaOpcional": "",
+  "id": "seui_184",
   "estrofas": [
     [
       "El Señor es mi luz y mi salvación,",
@@ -32,20 +23,21 @@
       "ten ánimo, espera en el Señor. R."
     ]
   ],
-  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
-  "sourceBook": "eucaristia",
+  "title": "Jueves de la 31ª semana de Tiempo Ordinario",
+  "orden": 5314,
   "stage": "Liturgia",
+  "dia": "Jueves",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 31 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 26 1 4 13 14 r 13 semana 31 semana xxxi jueves 31 xxxi r espero gozar de la dicha del senor en el pais de la vida el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "salmo": "Salmo responsorial: Salmo 26, 1. 4. 13-14 (R.: 13)",
+  "respuesta": "R. Espero gozar de la dicha del Señor en el país de la vida.",
   "lizq": [
     {
       "line": "R. Espero gozar de la dicha del Señor",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "en el país de la vida.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "en el país de la vida."
     },
     {
       "line": "",
@@ -56,8 +48,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "¿a quién temeré?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿a quién temeré?"
     },
     {
       "line": "El Señor es la defensa de mi vida,",
@@ -72,16 +64,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Una cosa pido al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Una cosa pido al Señor,"
     },
     {
-      "line": "eso buscaré:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "eso buscaré:"
     },
     {
-      "line": "habitar en la casa del Señor",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "habitar en la casa del Señor"
     },
     {
       "line": "por los días de mi vida;",
@@ -108,12 +100,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Espera en el Señor, sé valiente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Espera en el Señor, sé valiente,"
     },
     {
       "line": "ten ánimo, espera en el Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Año Impar",
+  "searchPool": "jueves de la 31 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 26 1 4 13 14 r 13 semana 31 semana xxxi jueves 31 xxxi r espero gozar de la dicha del senor en el pais de la vida el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "hasAudio": false,
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
+  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "celebracion": "Jueves de la 31ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 26, 1. 4. 13-14 (R.: 13)"
 }

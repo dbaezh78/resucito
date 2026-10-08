@@ -1,14 +1,9 @@
 {
-  "id": "seuc_42",
-  "title": "Séptimo domingo de Pascua",
-  "celebracion": "Séptimo domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 96, 1 y 2b. 6 y 7c. 9 (R.: 1a y 9a)",
-  "salmo": "Salmo responsorial: Salmo 96, 1 y 2b. 6 y 7c. 9 (R.: 1a y 9a)",
-  "ciclo": "Ciclo C",
   "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
-  "respuesta": "R. El Señor reina, altísimo sobre toda la tierra.",
+  "celebracion": "Séptimo domingo de Pascua",
+  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nJusticia y derecho sostienen su trono. R.\n\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria.\nAnte él se postran todos los dioses. R.\n\nPorque tú eres, Señor,\naltísimo sobre toda la tierra,\nencumbrado sobre todos los dioses. R.",
+  "subtitle": "Salmo responsorial: Salmo 96, 1 y 2b. 6 y 7c. 9 (R.: 1a y 9a)",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "R. Aleluya",
   "estrofas": [
     [
@@ -27,12 +22,15 @@
       "encumbrado sobre todos los dioses. R."
     ]
   ],
-  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nJusticia y derecho sostienen su trono. R.\n\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria.\nAnte él se postran todos los dioses. R.\n\nPorque tú eres, Señor,\naltísimo sobre toda la tierra,\nencumbrado sobre todos los dioses. R.",
+  "ciclo": "Ciclo C",
+  "dia": "Domingo",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuesta": "R. El Señor reina, altísimo sobre toda la tierra.",
+  "id": "seuc_42",
   "searchPool": "septimo domingo de pascua ciclo c pascua domingo salmo responsorial salmo 96 1 y 2b 6 y 7c 9 r 1a y 9a r el senor reina altisimo sobre toda la tierra r aleluya el senor reina la tierra goza se alegran las islas innumerables justicia y derecho sostienen su trono r los cielos pregonan su justicia y todos los pueblos contemplan su gloria ante el se postran todos los dioses r porque tu eres senor altisimo sobre toda la tierra encumbrado sobre todos los dioses r",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 96, 1 y 2b. 6 y 7c. 9 (R.: 1a y 9a)",
   "lizq": [
     {
       "line": "R. El Señor reina, altísimo sobre toda la tierra.",
@@ -43,12 +41,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
-      "line": "R. Aleluya",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya"
     },
     {
       "line": "",
@@ -71,16 +69,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los cielos pregonan su justicia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los cielos pregonan su justicia,"
     },
     {
-      "line": "y todos los pueblos contemplan su gloria.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y todos los pueblos contemplan su gloria."
     },
     {
-      "line": "Ante él se postran todos los dioses. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Ante él se postran todos los dioses. R."
     },
     {
       "line": "",
@@ -98,5 +96,7 @@
       "line": "encumbrado sobre todos los dioses. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "title": "Séptimo domingo de Pascua",
+  "orden": 410
 }

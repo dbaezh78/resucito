@@ -1,15 +1,11 @@
 {
-  "id": "seuc_68",
-  "title": "Domingo de la 22ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 22ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 67, 4-5ac. 6-7ab. 10-11 (R.: cf. 11b)",
-  "salmo": "Salmo responsorial: Salmo 67, 4-5ac. 6-7ab. 10-11 (R.: cf. 11b)",
-  "ciclo": "Ciclo C",
+  "searchPool": "domingo de la 22 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 67 4 5ac 6 7ab 10 11 r cf 11b r preparaste oh dios casa para los pobres los justos se alegran gozan en la presencia de dios rebosando de alegria cantad a dios tocad en su honor su nombre es el senor r padre de huerfanos protector de viudas dios vive en su santa morada dios prepara casa a los desvalidos libera a los cautivos y los enriquece r derramaste en tu heredad oh dios una lluvia copiosa aliviaste la tierra extenuada y tu rebano habito en la tierra que tu bondad oh dios preparo para los pobres r",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 522,
-  "respuesta": "R. Preparaste, oh Dios, casa para los pobres.",
-  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 67, 4-5ac. 6-7ab. 10-11 (R.: cf. 11b)",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 67, 4-5ac. 6-7ab. 10-11 (R.: cf. 11b)",
+  "id": "seuc_68",
   "estrofas": [
     [
       "Los justos se alegran,",
@@ -33,12 +29,14 @@
       "que tu bondad, oh Dios, preparó para los pobres. R."
     ]
   ],
-  "textoCompleto": "Los justos se alegran,\ngozan en la presencia de Dios,\nrebosando de alegría.\nCantad a Dios, tocad en su honor;\nsu nombre es el Señor. R.\n\nPadre de huérfanos,\nprotector de viudas,\nDios vive en su santa morada.\nDios prepara casa a los desvalidos,\nlibera a los cautivos y los enriquece. R.\n\nDerramaste en tu heredad,\noh Dios, una lluvia copiosa,\naliviaste la tierra extenuada;\ny tu rebaño habitó en la tierra\nque tu bondad, oh Dios, preparó para los pobres. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "respuestaOpcional": "",
+  "orden": 522,
+  "respuesta": "R. Preparaste, oh Dios, casa para los pobres.",
+  "title": "Domingo de la 22ª semana de Tiempo Ordinario",
+  "ciclo": "Ciclo C",
   "hasAudio": false,
-  "searchPool": "domingo de la 22 semana de tiempo ordinario ciclo c tiempo ordinario domingo salmo responsorial salmo 67 4 5ac 6 7ab 10 11 r cf 11b r preparaste oh dios casa para los pobres los justos se alegran gozan en la presencia de dios rebosando de alegria cantad a dios tocad en su honor su nombre es el senor r padre de huerfanos protector de viudas dios vive en su santa morada dios prepara casa a los desvalidos libera a los cautivos y los enriquece r derramaste en tu heredad oh dios una lluvia copiosa aliviaste la tierra extenuada y tu rebano habito en la tierra que tu bondad oh dios preparo para los pobres r",
+  "textoCompleto": "Los justos se alegran,\ngozan en la presencia de Dios,\nrebosando de alegría.\nCantad a Dios, tocad en su honor;\nsu nombre es el Señor. R.\n\nPadre de huérfanos,\nprotector de viudas,\nDios vive en su santa morada.\nDios prepara casa a los desvalidos,\nlibera a los cautivos y los enriquece. R.\n\nDerramaste en tu heredad,\noh Dios, una lluvia copiosa,\naliviaste la tierra extenuada;\ny tu rebaño habitó en la tierra\nque tu bondad, oh Dios, preparó para los pobres. R.",
+  "dia": "Domingo",
   "lizq": [
     {
       "line": "R. Preparaste, oh Dios, casa para los pobres.",
@@ -53,20 +51,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "gozan en la presencia de Dios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "gozan en la presencia de Dios,"
     },
     {
-      "line": "rebosando de alegría.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "rebosando de alegría."
     },
     {
       "line": "Cantad a Dios, tocad en su honor;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "su nombre es el Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "su nombre es el Señor. R."
     },
     {
       "line": "",
@@ -89,16 +87,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "libera a los cautivos y los enriquece. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "libera a los cautivos y los enriquece. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Derramaste en tu heredad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Derramaste en tu heredad,"
     },
     {
       "line": "oh Dios, una lluvia copiosa,",
@@ -113,8 +111,10 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que tu bondad, oh Dios, preparó para los pobres. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que tu bondad, oh Dios, preparó para los pobres. R."
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "celebracion": "Domingo de la 22ª semana de Tiempo Ordinario"
 }

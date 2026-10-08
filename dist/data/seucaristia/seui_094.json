@@ -1,15 +1,6 @@
 {
-  "id": "seui_094",
-  "title": "Jueves de la 16ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 16ª semana de Tiempo Ordinario",
+  "hasAudio": false,
   "subtitle": "salmo responsorial: Daniel 3, 52. 53. 54. 55. 56",
-  "salmo": "salmo responsorial: Daniel 3, 52. 53. 54. 55. 56",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5164,
-  "respuesta": "R. A ti gloria y alabanza por los siglos.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Bendito eres, Señor, Dios de nuestros padres,",
@@ -29,12 +20,9 @@
       "Bendito eres en la bóveda del cielo. R."
     ]
   ],
-  "textoCompleto": "Bendito eres, Señor, Dios de nuestros padres,\nbendito tu nombre, santo y glorioso. R.\n\nBendito eres en el templo de tu santa gloria. R.\n\nBendito eres sobre el trono de tu reino. R.\n\nBendito eres tú, que sentado sobre querubines\nsondeas los abismos. R.\n\nBendito eres en la bóveda del cielo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 16 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial daniel 3 52 53 54 55 56 semana 16 semana xvi jueves 16 xvi r a ti gloria y alabanza por los siglos bendito eres senor dios de nuestros padres bendito tu nombre santo y glorioso r bendito eres en el templo de tu santa gloria r bendito eres sobre el trono de tu reino r bendito eres tu que sentado sobre querubines sondeas los abismos r bendito eres en la boveda del cielo r",
+  "id": "seui_094",
+  "ciclo": "Año Impar",
+  "respuestaOpcional": "",
   "lizq": [
     {
       "line": "R. A ti gloria y alabanza por los siglos.",
@@ -53,8 +41,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendito eres en el templo de tu santa gloria. R.",
@@ -69,8 +57,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendito eres tú, que sentado sobre querubines",
@@ -81,12 +69,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Bendito eres en la bóveda del cielo. R.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin",
+      "line": "Bendito eres en la bóveda del cielo. R."
     }
-  ]
+  ],
+  "salmo": "salmo responsorial: Daniel 3, 52. 53. 54. 55. 56",
+  "dia": "Jueves",
+  "searchPool": "jueves de la 16 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial daniel 3 52 53 54 55 56 semana 16 semana xvi jueves 16 xvi r a ti gloria y alabanza por los siglos bendito eres senor dios de nuestros padres bendito tu nombre santo y glorioso r bendito eres en el templo de tu santa gloria r bendito eres sobre el trono de tu reino r bendito eres tu que sentado sobre querubines sondeas los abismos r bendito eres en la boveda del cielo r",
+  "stage": "Liturgia",
+  "orden": 5164,
+  "title": "Jueves de la 16ª semana de Tiempo Ordinario",
+  "celebracion": "Jueves de la 16ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Bendito eres, Señor, Dios de nuestros padres,\nbendito tu nombre, santo y glorioso. R.\n\nBendito eres en el templo de tu santa gloria. R.\n\nBendito eres sobre el trono de tu reino. R.\n\nBendito eres tú, que sentado sobre querubines\nsondeas los abismos. R.\n\nBendito eres en la bóveda del cielo. R.",
+  "respuesta": "R. A ti gloria y alabanza por los siglos.",
+  "tiempo": "Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía"
 }

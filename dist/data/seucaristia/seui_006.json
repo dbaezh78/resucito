@@ -1,15 +1,16 @@
 {
-  "id": "seui_006",
+  "dia": "Sábado",
+  "respuesta": "R. Tus palabras, Señor, son espíritu y vida.",
   "title": "Sábado de la 1ª semana de Tiempo Ordinario",
   "celebracion": "Sábado de la 1ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 18, 8. 9. 10. 15 (R.: cf. Jn 6, 63b)",
-  "salmo": "Salmo responsorial: Salmo 18, 8. 9. 10. 15 (R.: cf. Jn 6, 63b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
+  "hasAudio": false,
+  "stage": "Liturgia",
   "orden": 5016,
-  "respuesta": "R. Tus palabras, Señor, son espíritu y vida.",
-  "respuestaOpcional": "",
+  "ciclo": "Año Impar",
+  "subtitle": "Salmo responsorial: Salmo 18, 8. 9. 10. 15 (R.: cf. Jn 6, 63b)",
+  "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLos mandatos del Señor son rectos\ny alegran el corazón;\nla norma del Señor es límpida\ny da luz a los ojos. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nQue te agraden las palabras de mi boca,\ny llegue a tu presencia el meditar de mi corazón,\nSeñor, roca mía, redentor mío. R.",
+  "salmo": "Salmo responsorial: Salmo 18, 8. 9. 10. 15 (R.: cf. Jn 6, 63b)",
+  "tiempo": "Tiempo Ordinario",
   "estrofas": [
     [
       "La ley del Señor es perfecta",
@@ -35,11 +36,9 @@
       "Señor, roca mía, redentor mío. R."
     ]
   ],
-  "textoCompleto": "La ley del Señor es perfecta\ny es descanso del alma;\nel precepto del Señor es fiel\ne instruye al ignorante. R.\n\nLos mandatos del Señor son rectos\ny alegran el corazón;\nla norma del Señor es límpida\ny da luz a los ojos. R.\n\nLa voluntad del Señor es pura\ny eternamente estable;\nlos mandamientos del Señor son verdaderos\ny enteramente justos. R.\n\nQue te agraden las palabras de mi boca,\ny llegue a tu presencia el meditar de mi corazón,\nSeñor, roca mía, redentor mío. R.",
+  "id": "seui_006",
+  "respuestaOpcional": "",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "sabado de la 1 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 18 8 9 10 15 r cf jn 6 63b semana 1 semana i sabado 1 i r tus palabras senor son espiritu y vida la ley del senor es perfecta y es descanso del alma el precepto del senor es fiel e instruye al ignorante r los mandatos del senor son rectos y alegran el corazon la norma del senor es limpida y da luz a los ojos r la voluntad del senor es pura y eternamente estable los mandamientos del senor son verdaderos y enteramente justos r que te agraden las palabras de mi boca y llegue a tu presencia el meditar de mi corazon senor roca mia redentor mio r",
   "lizq": [
     {
@@ -51,20 +50,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "La ley del Señor es perfecta",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La ley del Señor es perfecta"
     },
     {
-      "line": "y es descanso del alma;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y es descanso del alma;"
     },
     {
       "line": "el precepto del Señor es fiel",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "e instruye al ignorante. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "e instruye al ignorante. R."
     },
     {
       "line": "",
@@ -91,8 +90,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "La voluntad del Señor es pura",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La voluntad del Señor es pura"
     },
     {
       "line": "y eternamente estable;",
@@ -107,12 +106,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Que te agraden las palabras de mi boca,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que te agraden las palabras de mi boca,"
     },
     {
       "line": "y llegue a tu presencia el meditar de mi corazón,",
@@ -122,5 +121,6 @@
       "line": "Señor, roca mía, redentor mío. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía"
 }

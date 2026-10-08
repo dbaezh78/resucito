@@ -1,15 +1,8 @@
 {
-  "id": "seui_193",
-  "title": "Lunes de la 33ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 33ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 53. 61. 134. 150. 155. 158 (R.: cf. 88)",
-  "salmo": "Salmo responsorial: Salmo 118, 53. 61. 134. 150. 155. 158 (R.: cf. 88)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5331,
   "respuesta": "R. Dame vida, Señor, para que observe tus decretos.",
-  "respuestaOpcional": "",
+  "title": "Lunes de la 33ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Sentí indignación ante los malvados,",
@@ -36,12 +29,14 @@
       "porque no guardan tus mandatos. R."
     ]
   ],
-  "textoCompleto": "Sentí indignación ante los malvados,\nque abandonan tu voluntad. R.\n\nLos lazos de los malvados me envuelven,\npero no olvido tu voluntad. R.\n\nLíbrame de la opresión de los hombres,\ny guardaré tus decretos. R.\n\nYa se acercan mis inicuos perseguidores,\nestán lejos de tu voluntad. R.\n\nLa justicia está lejos de los malvados,\nque no buscan tus leyes. R.\n\nViendo a los renegados, sentía asco,\nporque no guardan tus mandatos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "orden": 5331,
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 118, 53. 61. 134. 150. 155. 158 (R.: cf. 88)",
+  "id": "seui_193",
   "searchPool": "lunes de la 33 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 118 53 61 134 150 155 158 r cf 88 semana 33 semana xxxiii lunes 33 xxxiii r dame vida senor para que observe tus decretos senti indignacion ante los malvados que abandonan tu voluntad r los lazos de los malvados me envuelven pero no olvido tu voluntad r librame de la opresion de los hombres y guardare tus decretos r ya se acercan mis inicuos perseguidores estan lejos de tu voluntad r la justicia esta lejos de los malvados que no buscan tus leyes r viendo a los renegados sentia asco porque no guardan tus mandatos r",
+  "subtitle": "Salmo responsorial: Salmo 118, 53. 61. 134. 150. 155. 158 (R.: cf. 88)",
+  "dia": "Lunes",
+  "textoCompleto": "Sentí indignación ante los malvados,\nque abandonan tu voluntad. R.\n\nLos lazos de los malvados me envuelven,\npero no olvido tu voluntad. R.\n\nLíbrame de la opresión de los hombres,\ny guardaré tus decretos. R.\n\nYa se acercan mis inicuos perseguidores,\nestán lejos de tu voluntad. R.\n\nLa justicia está lejos de los malvados,\nque no buscan tus leyes. R.\n\nViendo a los renegados, sentía asco,\nporque no guardan tus mandatos. R.",
   "lizq": [
     {
       "line": "R. Dame vida, Señor, para que observe tus decretos.",
@@ -52,40 +47,40 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Sentí indignación ante los malvados,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sentí indignación ante los malvados,"
     },
     {
-      "line": "que abandonan tu voluntad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que abandonan tu voluntad. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los lazos de los malvados me envuelven,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "pero no olvido tu voluntad. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los lazos de los malvados me envuelven,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "pero no olvido tu voluntad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Líbrame de la opresión de los hombres,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Líbrame de la opresión de los hombres,"
     },
     {
       "line": "y guardaré tus decretos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Ya se acercan mis inicuos perseguidores,",
@@ -96,28 +91,33 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "La justicia está lejos de los malvados,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La justicia está lejos de los malvados,"
     },
     {
-      "line": "que no buscan tus leyes. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que no buscan tus leyes. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Viendo a los renegados, sentía asco,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Viendo a los renegados, sentía asco,"
     },
     {
       "line": "porque no guardan tus mandatos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "celebracion": "Lunes de la 33ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "hasAudio": false,
+  "sourceBook": "eucaristia"
 }

@@ -1,15 +1,95 @@
 {
-  "id": "seup_085",
   "title": "Lunes de la 15ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 15ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 49, 8-9. 16bc-17. 21 y 23 (R.: 23b)",
-  "salmo": "Salmo responsorial: Salmo 49, 8-9. 16bc-17. 21 y 23 (R.: 23b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Lunes",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Al que sigue buen camino"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "le haré ver la salvación de Dios."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "«No te reprocho tus sacrificios,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "pues siempre están tus holocaustos ante mí.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Pero no aceptaré un becerro de tu casa,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni un cabrito de tus rebaños». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«¿Por qué recitas mis preceptos"
+    },
+    {
+      "line": "y tienes siempre en la boca mi alianza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tú que detestas mi enseñanza",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y te echas a la espalda mis mandatos?». R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "«Esto haces, ¿y me voy a callar?",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "¿Crees que soy como tú?",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Te acusaré, te lo echaré en cara."
+    },
+    {
+      "line": "El que me ofrece acción de gracias,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ése me honra;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "al que sigue buen camino"
+    },
+    {
+      "line": "le haré ver la salvación de Dios». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
   "orden": 5151,
-  "respuesta": "R. Al que sigue buen camino le haré ver la salvación de Dios.",
-  "respuestaOpcional": "",
+  "id": "seup_085",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "textoCompleto": "«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí.\nPero no aceptaré un becerro de tu casa,\nni un cabrito de tus rebaños». R.\n\n«¿Por qué recitas mis preceptos\ny tienes siempre en la boca mi alianza,\ntú que detestas mi enseñanza\ny te echas a la espalda mis mandatos?». R.\n\n«Esto haces, ¿y me voy a callar?\n¿Crees que soy como tú?\nTe acusaré, te lo echaré en cara.\nEl que me ofrece acción de gracias,\nése me honra;\nal que sigue buen camino\nle haré ver la salvación de Dios». R.",
+  "searchPool": "lunes de la 15 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 49 8 9 16bc 17 21 y 23 r 23b semana 15 semana xv lunes 15 xv r al que sigue buen camino le hare ver la salvacion de dios no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi pero no aceptare un becerro de tu casa ni un cabrito de tus rebanos r por que recitas mis preceptos y tienes siempre en la boca mi alianza tu que detestas mi ensenanza y te echas a la espalda mis mandatos r esto haces y me voy a callar crees que soy como tu te acusare te lo echare en cara el que me ofrece accion de gracias ese me honra al que sigue buen camino le hare ver la salvacion de dios r",
   "estrofas": [
     [
       "«No te reprocho tus sacrificios,",
@@ -33,92 +113,12 @@
       "le haré ver la salvación de Dios». R."
     ]
   ],
-  "textoCompleto": "«No te reprocho tus sacrificios,\npues siempre están tus holocaustos ante mí.\nPero no aceptaré un becerro de tu casa,\nni un cabrito de tus rebaños». R.\n\n«¿Por qué recitas mis preceptos\ny tienes siempre en la boca mi alianza,\ntú que detestas mi enseñanza\ny te echas a la espalda mis mandatos?». R.\n\n«Esto haces, ¿y me voy a callar?\n¿Crees que soy como tú?\nTe acusaré, te lo echaré en cara.\nEl que me ofrece acción de gracias,\nése me honra;\nal que sigue buen camino\nle haré ver la salvación de Dios». R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 15 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 49 8 9 16bc 17 21 y 23 r 23b semana 15 semana xv lunes 15 xv r al que sigue buen camino le hare ver la salvacion de dios no te reprocho tus sacrificios pues siempre estan tus holocaustos ante mi pero no aceptare un becerro de tu casa ni un cabrito de tus rebanos r por que recitas mis preceptos y tienes siempre en la boca mi alianza tu que detestas mi ensenanza y te echas a la espalda mis mandatos r esto haces y me voy a callar crees que soy como tu te acusare te lo echare en cara el que me ofrece accion de gracias ese me honra al que sigue buen camino le hare ver la salvacion de dios r",
-  "lizq": [
-    {
-      "line": "R. Al que sigue buen camino",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "le haré ver la salvación de Dios.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«No te reprocho tus sacrificios,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "pues siempre están tus holocaustos ante mí.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Pero no aceptaré un becerro de tu casa,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ni un cabrito de tus rebaños». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«¿Por qué recitas mis preceptos",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y tienes siempre en la boca mi alianza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tú que detestas mi enseñanza",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y te echas a la espalda mis mandatos?». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "«Esto haces, ¿y me voy a callar?",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "¿Crees que soy como tú?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Te acusaré, te lo echaré en cara.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "El que me ofrece acción de gracias,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ése me honra;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "al que sigue buen camino",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "le haré ver la salvación de Dios». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "sourceBook": "eucaristia",
+  "celebracion": "Lunes de la 15ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 49, 8-9. 16bc-17. 21 y 23 (R.: 23b)",
+  "respuesta": "R. Al que sigue buen camino le haré ver la salvación de Dios.",
+  "salmo": "Salmo responsorial: Salmo 49, 8-9. 16bc-17. 21 y 23 (R.: 23b)",
+  "hasAudio": false
 }

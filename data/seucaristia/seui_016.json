@@ -1,15 +1,7 @@
 {
-  "id": "seui_016",
-  "title": "Jueves de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 3ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf.6)",
+  "respuestaOpcional": "",
   "salmo": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf.6)",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5034,
-  "respuesta": "R. Éste es el grupo que viene a tu presencia, Señor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Del Señor es la tierra y cuanto la llena,",
@@ -31,80 +23,88 @@
       "que viene a tu presencia, Dios de Jacob. R."
     ]
   ],
-  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
-  "sourceBook": "eucaristia",
+  "orden": 5034,
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
+  "title": "Jueves de la 3ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
   "hasAudio": false,
-  "searchPool": "jueves de la 3 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 23 1 2 3 4ab 5 6 r cf 6 semana 3 semana iii jueves 3 iii r este es el grupo que viene a tu presencia senor del senor es la tierra y cuanto la llena el orbe y todos sus habitantes el la fundo sobre los mares el la afianzo sobre los rios r quien puede subir al monte del senor quien puede estar en el recinto sacro el hombre de manos inocentes y puro corazon que no confia en los idolos r ese recibira la bendicion del senor le hara justicia el dios de salvacion este es el grupo que busca al senor que viene a tu presencia dios de jacob r",
   "lizq": [
     {
-      "line": "R. Éste es el grupo que viene a tu presencia, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Éste es el grupo que viene a tu presencia, Señor."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Del Señor es la tierra y cuanto la llena,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Del Señor es la tierra y cuanto la llena,"
     },
     {
       "line": "el orbe y todos sus habitantes:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "él la fundó sobre los mares,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él la fundó sobre los mares,"
     },
     {
       "line": "él la afianzó sobre los ríos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "¿Quién puede subir al monte del Señor?",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¿Quién puede subir al monte del Señor?"
     },
     {
-      "line": "¿Quién puede estar en el recinto sacro?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿Quién puede estar en el recinto sacro?"
     },
     {
       "line": "El hombre de manos inocentes",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y puro corazón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y puro corazón,"
     },
     {
       "line": "que no confía en los ídolos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Ése recibirá la bendición del Señor,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "le hará justicia el Dios de salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "le hará justicia el Dios de salvación."
     },
     {
-      "line": "Éste es el grupo que busca al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Éste es el grupo que busca al Señor,"
     },
     {
       "line": "que viene a tu presencia, Dios de Jacob. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "textoCompleto": "Del Señor es la tierra y cuanto la llena,\nel orbe y todos sus habitantes:\nél la fundó sobre los mares,\nél la afianzó sobre los ríos. R.\n\n¿Quién puede subir al monte del Señor?\n¿Quién puede estar en el recinto sacro?\nEl hombre de manos inocentes\ny puro corazón,\nque no confía en los ídolos. R.\n\nÉse recibirá la bendición del Señor,\nle hará justicia el Dios de salvación.\nÉste es el grupo que busca al Señor,\nque viene a tu presencia, Dios de Jacob. R.",
+  "celebracion": "Jueves de la 3ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 23, 1-2. 3-4ab. 5-6 (R.: cf.6)",
+  "id": "seui_016",
+  "respuesta": "R. Éste es el grupo que viene a tu presencia, Señor.",
+  "searchPool": "jueves de la 3 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 23 1 2 3 4ab 5 6 r cf 6 semana 3 semana iii jueves 3 iii r este es el grupo que viene a tu presencia senor del senor es la tierra y cuanto la llena el orbe y todos sus habitantes el la fundo sobre los mares el la afianzo sobre los rios r quien puede subir al monte del senor quien puede estar en el recinto sacro el hombre de manos inocentes y puro corazon que no confia en los idolos r ese recibira la bendicion del senor le hara justicia el dios de salvacion este es el grupo que busca al senor que viene a tu presencia dios de jacob r",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Jueves"
 }

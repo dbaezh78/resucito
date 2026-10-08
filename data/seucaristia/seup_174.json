@@ -1,41 +1,16 @@
 {
-  "id": "seup_174",
-  "title": "Sábado de la 29ª semana de Tiempo Ordinario",
   "celebracion": "Sábado de la 29ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 121, 1-2. 3-4a. 4b-5 (R.: cf.1)",
-  "salmo": "Salmo responsorial: Salmo 121, 1-2. 3-4a. 4b-5 (R.: cf.1)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5296,
-  "respuesta": "R. Vamos alegres a la casa del Señor.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "¡Qué alegría cuando me dijeron:",
-      "«Vamos a la casa del Señor»!",
-      "Ya están pisando nuestros pies",
-      "tus umbrales, Jerusalén. R."
-    ],
-    [
-      "Jerusalén está fundada",
-      "como ciudad bien compacta.",
-      "Allá suben las tribus,",
-      "las tribus del Señor. R."
-    ],
-    [
-      "Según la costumbre de Israel,",
-      "a celebrar el nombre del Señor;",
-      "en ella están los tribunales de justicia,",
-      "en el palacio de David. R."
-    ]
-  ],
-  "textoCompleto": "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.\n\nJerusalén está fundada\ncomo ciudad bien compacta.\nAllá suben las tribus,\nlas tribus del Señor. R.\n\nSegún la costumbre de Israel,\na celebrar el nombre del Señor;\nen ella están los tribunales de justicia,\nen el palacio de David. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "respuestaOpcional": "",
   "searchPool": "sabado de la 29 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 121 1 2 3 4a 4b 5 r cf 1 semana 29 semana xxix sabado 29 xxix r vamos alegres a la casa del senor que alegria cuando me dijeron vamos a la casa del senor ya estan pisando nuestros pies tus umbrales jerusalen r jerusalen esta fundada como ciudad bien compacta alla suben las tribus las tribus del senor r segun la costumbre de israel a celebrar el nombre del senor en ella estan los tribunales de justicia en el palacio de david r",
+  "textoCompleto": "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.\n\nJerusalén está fundada\ncomo ciudad bien compacta.\nAllá suben las tribus,\nlas tribus del Señor. R.\n\nSegún la costumbre de Israel,\na celebrar el nombre del Señor;\nen ella están los tribunales de justicia,\nen el palacio de David. R.",
+  "respuesta": "R. Vamos alegres a la casa del Señor.",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 121, 1-2. 3-4a. 4b-5 (R.: cf.1)",
+  "tiempo": "Tiempo Ordinario",
+  "title": "Sábado de la 29ª semana de Tiempo Ordinario",
+  "dia": "Sábado",
   "lizq": [
     {
       "line": "R. Vamos alegres a la casa del Señor.",
@@ -50,8 +25,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "«Vamos a la casa del Señor»!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«Vamos a la casa del Señor»!"
     },
     {
       "line": "Ya están pisando nuestros pies",
@@ -62,8 +37,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Jerusalén está fundada",
@@ -74,8 +49,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Allá suben las tribus,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Allá suben las tribus,"
     },
     {
       "line": "las tribus del Señor. R.",
@@ -101,5 +76,30 @@
       "line": "en el palacio de David. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "estrofas": [
+    [
+      "¡Qué alegría cuando me dijeron:",
+      "«Vamos a la casa del Señor»!",
+      "Ya están pisando nuestros pies",
+      "tus umbrales, Jerusalén. R."
+    ],
+    [
+      "Jerusalén está fundada",
+      "como ciudad bien compacta.",
+      "Allá suben las tribus,",
+      "las tribus del Señor. R."
+    ],
+    [
+      "Según la costumbre de Israel,",
+      "a celebrar el nombre del Señor;",
+      "en ella están los tribunales de justicia,",
+      "en el palacio de David. R."
+    ]
+  ],
+  "id": "seup_174",
+  "orden": 5296,
+  "subtitle": "Salmo responsorial: Salmo 121, 1-2. 3-4a. 4b-5 (R.: cf.1)",
+  "hasAudio": false,
+  "ciclo": "Año Par"
 }

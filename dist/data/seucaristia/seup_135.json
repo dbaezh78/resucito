@@ -1,15 +1,85 @@
 {
-  "id": "seup_135",
-  "title": "Miércoles de la 23ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 23ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
-  "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5233,
   "respuesta": "R. Escucha, hija, mira: inclina el oído.",
-  "respuestaOpcional": "",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
+  "celebracion": "Miércoles de la 23ª semana de Tiempo Ordinario",
+  "id": "seup_135",
+  "lizq": [
+    {
+      "line": "R. Escucha, hija, mira: inclina el oído.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Escucha, hija, mira: inclina el oído,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "olvida tu pueblo y la casa paterna;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "prendado está el rey de tu belleza:"
+    },
+    {
+      "line": "póstrate ante él, que él es tu Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Ya entra la princesa, bellísima,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "vestida de perlas y brocado;"
+    },
+    {
+      "line": "la llevan ante el rey, con séquito de vírgenes,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "la siguen sus compañeras. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Las traen entre alegría y algazara,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "van entrando en el palacio real."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«A cambio de tus padres, tendrás hijos,"
+    },
+    {
+      "line": "que nombrarás príncipes por toda la tierra». R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "stage": "Liturgia",
+  "ciclo": "Año Par",
+  "sourceBook": "eucaristia",
+  "subtitle": "Salmo responsorial: Salmo 44, 11-12. 14-15. 16-17 (R.: 11a)",
+  "hasAudio": false,
+  "orden": 5233,
+  "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu Señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes,\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\n«A cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra». R.",
+  "dia": "Miércoles",
+  "tiempo": "Tiempo Ordinario",
+  "title": "Miércoles de la 23ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Escucha, hija, mira: inclina el oído,",
@@ -30,76 +100,6 @@
       "que nombrarás príncipes por toda la tierra». R."
     ]
   ],
-  "textoCompleto": "Escucha, hija, mira: inclina el oído,\nolvida tu pueblo y la casa paterna;\nprendado está el rey de tu belleza:\npóstrate ante él, que él es tu Señor. R.\n\nYa entra la princesa, bellísima,\nvestida de perlas y brocado;\nla llevan ante el rey, con séquito de vírgenes,\nla siguen sus compañeras. R.\n\nLas traen entre alegría y algazara,\nvan entrando en el palacio real.\n«A cambio de tus padres, tendrás hijos,\nque nombrarás príncipes por toda la tierra». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 23 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 44 11 12 14 15 16 17 r 11a semana 23 semana xxiii miercoles 23 xxiii r escucha hija mira inclina el oido escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r",
-  "lizq": [
-    {
-      "line": "R. Escucha, hija, mira: inclina el oído.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Escucha, hija, mira: inclina el oído,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "olvida tu pueblo y la casa paterna;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "prendado está el rey de tu belleza:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "póstrate ante él, que él es tu Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Ya entra la princesa, bellísima,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "vestida de perlas y brocado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "la llevan ante el rey, con séquito de vírgenes,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "la siguen sus compañeras. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Las traen entre alegría y algazara,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "van entrando en el palacio real.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "«A cambio de tus padres, tendrás hijos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que nombrarás príncipes por toda la tierra». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuestaOpcional": "",
+  "searchPool": "miercoles de la 23 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 44 11 12 14 15 16 17 r 11a semana 23 semana xxiii miercoles 23 xxiii r escucha hija mira inclina el oido escucha hija mira inclina el oido olvida tu pueblo y la casa paterna prendado esta el rey de tu belleza postrate ante el que el es tu senor r ya entra la princesa bellisima vestida de perlas y brocado la llevan ante el rey con sequito de virgenes la siguen sus companeras r las traen entre alegria y algazara van entrando en el palacio real a cambio de tus padres tendras hijos que nombraras principes por toda la tierra r"
 }

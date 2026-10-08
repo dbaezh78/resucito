@@ -1,22 +1,6 @@
 {
-  "id": "seuf_019",
-  "title": "Día 18 de diciembre.",
-  "celebracion": "Día 18 de diciembre.",
+  "catCanto": "Salmo Eucaristía",
   "subtitle": "Salmo 71, 1-2. 12-13. 18-19 (R.: cf. 7)",
-  "salmo": "Salmo 71, 1-2. 12-13. 18-19 (R.: cf. 7)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Adviento",
-  "dia": "Feria",
-  "orden": 172,
-  "respuesta": "R. Que en sus días florezca la justicia, y la paz abunde eternamente.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dios mío, confía tu juicio al rey,",
@@ -38,28 +22,41 @@
       "¡Amén, amén! R."
     ]
   ],
-  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nÉl librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.\n\nBendito sea el Señor, Dios de Israel,\nel único que hace maravillas;\nbendito por siempre su nombre glorioso;\nque su gloria llene la tierra.\n¡Amén, amén! R.",
+  "tiempo": "Adviento",
+  "salmo": "Salmo 71, 1-2. 12-13. 18-19 (R.: cf. 7)",
+  "id": "seuf_019",
+  "respuesta": "R. Que en sus días florezca la justicia, y la paz abunde eternamente.",
+  "orden": 172,
+  "title": "Día 18 de diciembre.",
+  "ciclo": "Ciclo A, B y C",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "dia": "Feria",
   "searchPool": "dia 18 de diciembre ciclo a ciclo b ciclo c ciclo a b y c adviento feria salmo 71 1 2 12 13 18 19 r cf 7 feria r que en sus dias florezca la justicia y la paz abunde eternamente dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r el librara al pobre que clamaba al afligido que no tenia protector el se apiadara del pobre y del indigente y salvara la vida de los pobres r bendito sea el senor dios de israel el unico que hace maravillas bendito por siempre su nombre glorioso que su gloria llene la tierra amen amen r",
+  "hasAudio": false,
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "respuestaOpcional": "",
   "lizq": [
     {
       "line": "R. Que en sus días florezca la justicia,",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "y la paz abunde eternamente.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "y la paz abunde eternamente."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dios mío, confía tu juicio al rey,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dios mío, confía tu juicio al rey,"
     },
     {
       "line": "tu justicia al hijo de reyes,",
@@ -74,8 +71,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Él librará al pobre que clamaba,",
@@ -90,24 +87,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y salvará la vida de los pobres. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y salvará la vida de los pobres. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendito sea el Señor, Dios de Israel,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "el único que hace maravillas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el único que hace maravillas;"
     },
     {
-      "line": "bendito por siempre su nombre glorioso;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "bendito por siempre su nombre glorioso;"
     },
     {
       "line": "que su gloria llene la tierra.",
@@ -117,5 +114,8 @@
       "line": "¡Amén, amén! R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nÉl librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.\n\nBendito sea el Señor, Dios de Israel,\nel único que hace maravillas;\nbendito por siempre su nombre glorioso;\nque su gloria llene la tierra.\n¡Amén, amén! R.",
+  "celebracion": "Día 18 de diciembre."
 }

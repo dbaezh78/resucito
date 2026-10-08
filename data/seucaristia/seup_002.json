@@ -1,49 +1,12 @@
 {
   "id": "seup_002",
   "title": "Martes de la 1ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 1ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: 1Samuel 2, 1. 4-5. 6-7. 8abcd (R.: cf. 1a)",
-  "salmo": "Interleccional: 1Samuel 2, 1. 4-5. 6-7. 8abcd (R.: cf. 1a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5012,
-  "respuesta": "R. Mi corazón se regocija por el Señor, mi salvador.",
   "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Mi corazón se regocija por el Señor,",
-      "mi poder se exalta por Dios;",
-      "mi boca se ríe de mis enemigos,",
-      "porque gozo con tu salvación. R."
-    ],
-    [
-      "Se rompen los arcos de los valientes,",
-      "mientras los cobardes se ciñen de valor;",
-      "los hartos se contratan por el pan,",
-      "mientras los hambrientos engordan;",
-      "la mujer estéril da a luz siete hijos,",
-      "mientras la madre de muchos queda baldía. R."
-    ],
-    [
-      "El Señor da la muerte y la vida,",
-      "hunde en el abismo y levanta;",
-      "da la pobreza y la riqueza,",
-      "humilla y enaltece. R."
-    ],
-    [
-      "El levanta del polvo al desvalido,",
-      "alza de la basura al pobre,",
-      "para hacer que se siente entre príncipes",
-      "y que herede un trono de gloria. R."
-    ]
-  ],
-  "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nEl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "subtitle": "Interleccional: 1Samuel 2, 1. 4-5. 6-7. 8abcd (R.: cf. 1a)",
   "searchPool": "martes de la 1 semana de tiempo ordinario ano par tiempo ordinario martes interleccional 1samuel 2 1 4 5 6 7 8abcd r cf 1a semana 1 semana i martes 1 i r mi corazon se regocija por el senor mi salvador mi corazon se regocija por el senor mi poder se exalta por dios mi boca se rie de mis enemigos porque gozo con tu salvacion r se rompen los arcos de los valientes mientras los cobardes se cinen de valor los hartos se contratan por el pan mientras los hambrientos engordan la mujer esteril da a luz siete hijos mientras la madre de muchos queda baldia r el senor da la muerte y la vida hunde en el abismo y levanta da la pobreza y la riqueza humilla y enaltece r el levanta del polvo al desvalido alza de la basura al pobre para hacer que se siente entre principes y que herede un trono de gloria r",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "orden": 5012,
   "lizq": [
     {
       "line": "R. Mi corazón se regocija por el Señor, mi salvador.",
@@ -58,8 +21,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "mi poder se exalta por Dios;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mi poder se exalta por Dios;"
     },
     {
       "line": "mi boca se ríe de mis enemigos,",
@@ -86,8 +49,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mientras los hambrientos engordan;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mientras los hambrientos engordan;"
     },
     {
       "line": "la mujer estéril da a luz siete hijos,",
@@ -122,20 +85,57 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El levanta del polvo al desvalido,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El levanta del polvo al desvalido,"
     },
     {
       "line": "alza de la basura al pobre,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "para hacer que se siente entre príncipes",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "para hacer que se siente entre príncipes"
     },
     {
-      "line": "y que herede un trono de gloria. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y que herede un trono de gloria. R."
     }
+  ],
+  "ciclo": "Año Par",
+  "hasAudio": false,
+  "salmo": "Interleccional: 1Samuel 2, 1. 4-5. 6-7. 8abcd (R.: cf. 1a)",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Martes",
+  "celebracion": "Martes de la 1ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Mi corazón se regocija por el Señor, mi salvador.",
+  "textoCompleto": "Mi corazón se regocija por el Señor,\nmi poder se exalta por Dios;\nmi boca se ríe de mis enemigos,\nporque gozo con tu salvación. R.\n\nSe rompen los arcos de los valientes,\nmientras los cobardes se ciñen de valor;\nlos hartos se contratan por el pan,\nmientras los hambrientos engordan;\nla mujer estéril da a luz siete hijos,\nmientras la madre de muchos queda baldía. R.\n\nEl Señor da la muerte y la vida,\nhunde en el abismo y levanta;\nda la pobreza y la riqueza,\nhumilla y enaltece. R.\n\nEl levanta del polvo al desvalido,\nalza de la basura al pobre,\npara hacer que se siente entre príncipes\ny que herede un trono de gloria. R.",
+  "estrofas": [
+    [
+      "Mi corazón se regocija por el Señor,",
+      "mi poder se exalta por Dios;",
+      "mi boca se ríe de mis enemigos,",
+      "porque gozo con tu salvación. R."
+    ],
+    [
+      "Se rompen los arcos de los valientes,",
+      "mientras los cobardes se ciñen de valor;",
+      "los hartos se contratan por el pan,",
+      "mientras los hambrientos engordan;",
+      "la mujer estéril da a luz siete hijos,",
+      "mientras la madre de muchos queda baldía. R."
+    ],
+    [
+      "El Señor da la muerte y la vida,",
+      "hunde en el abismo y levanta;",
+      "da la pobreza y la riqueza,",
+      "humilla y enaltece. R."
+    ],
+    [
+      "El levanta del polvo al desvalido,",
+      "alza de la basura al pobre,",
+      "para hacer que se siente entre príncipes",
+      "y que herede un trono de gloria. R."
+    ]
   ]
 }

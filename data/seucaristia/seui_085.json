@@ -1,46 +1,15 @@
 {
-  "id": "seui_085",
   "title": "Lunes de la 15ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 15ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 123, 1-3. 4-6. 7-8 (R.: 8a)",
+  "celebracion": "Lunes de la 15ª semana de Tiempo Ordinario",
   "salmo": "Salmo responsorial: Salmo 123, 1-3. 4-6. 7-8 (R.: 8a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5151,
-  "respuesta": "R. Nuestro auxilio es el nombre del Señor.",
   "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Si el Señor no hubiera estado de nuestra parte",
-      "—que lo diga Israel—,",
-      "si el Señor no hubiera estado de nuestra parte,",
-      "cuando nos asaltaban los hombres,",
-      "nos habrían tragado vivos:",
-      "tanto ardía su ira contra nosotros. R."
-    ],
-    [
-      "Nos habrían arrollado las aguas,",
-      "llegándonos el torrente hasta el cuello;",
-      "nos habrían llegado hasta el cuello",
-      "las aguas espumantes.",
-      "Bendito el Señor, que no nos entregó",
-      "en presa a sus dientes. R."
-    ],
-    [
-      "Hemos salvado la vida, como un pájaro",
-      "de la trampa del cazador;",
-      "la trampa se rompió, y escapamos.",
-      "Nuestro auxilio es el nombre del Señor,",
-      "que hizo el cielo y la tierra. R."
-    ]
-  ],
-  "textoCompleto": "Si el Señor no hubiera estado de nuestra parte\n—que lo diga Israel—,\nsi el Señor no hubiera estado de nuestra parte,\ncuando nos asaltaban los hombres,\nnos habrían tragado vivos:\ntanto ardía su ira contra nosotros. R.\n\nNos habrían arrollado las aguas,\nllegándonos el torrente hasta el cuello;\nnos habrían llegado hasta el cuello\nlas aguas espumantes.\nBendito el Señor, que no nos entregó\nen presa a sus dientes. R.\n\nHemos salvado la vida, como un pájaro\nde la trampa del cazador;\nla trampa se rompió, y escapamos.\nNuestro auxilio es el nombre del Señor,\nque hizo el cielo y la tierra. R.",
-  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Año Impar",
+  "id": "seui_085",
+  "orden": 5151,
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "lunes de la 15 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 123 1 3 4 6 7 8 r 8a semana 15 semana xv lunes 15 xv r nuestro auxilio es el nombre del senor si el senor no hubiera estado de nuestra parte que lo diga israel si el senor no hubiera estado de nuestra parte cuando nos asaltaban los hombres nos habrian tragado vivos tanto ardia su ira contra nosotros r nos habrian arrollado las aguas llegandonos el torrente hasta el cuello nos habrian llegado hasta el cuello las aguas espumantes bendito el senor que no nos entrego en presa a sus dientes r hemos salvado la vida como un pajaro de la trampa del cazador la trampa se rompio y escapamos nuestro auxilio es el nombre del senor que hizo el cielo y la tierra r",
   "lizq": [
     {
       "line": "R. Nuestro auxilio es el nombre del Señor.",
@@ -51,8 +20,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Si el Señor no hubiera estado de nuestra parte",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Si el Señor no hubiera estado de nuestra parte"
     },
     {
       "line": "—que lo diga Israel—,",
@@ -79,20 +48,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Nos habrían arrollado las aguas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Nos habrían arrollado las aguas,"
     },
     {
-      "line": "llegándonos el torrente hasta el cuello;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "llegándonos el torrente hasta el cuello;"
     },
     {
       "line": "nos habrían llegado hasta el cuello",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "las aguas espumantes.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "las aguas espumantes."
     },
     {
       "line": "Bendito el Señor, que no nos entregó",
@@ -107,8 +76,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Hemos salvado la vida, como un pájaro",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Hemos salvado la vida, como un pájaro"
     },
     {
       "line": "de la trampa del cazador;",
@@ -126,5 +95,36 @@
       "line": "que hizo el cielo y la tierra. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Si el Señor no hubiera estado de nuestra parte\n—que lo diga Israel—,\nsi el Señor no hubiera estado de nuestra parte,\ncuando nos asaltaban los hombres,\nnos habrían tragado vivos:\ntanto ardía su ira contra nosotros. R.\n\nNos habrían arrollado las aguas,\nllegándonos el torrente hasta el cuello;\nnos habrían llegado hasta el cuello\nlas aguas espumantes.\nBendito el Señor, que no nos entregó\nen presa a sus dientes. R.\n\nHemos salvado la vida, como un pájaro\nde la trampa del cazador;\nla trampa se rompió, y escapamos.\nNuestro auxilio es el nombre del Señor,\nque hizo el cielo y la tierra. R.",
+  "respuesta": "R. Nuestro auxilio es el nombre del Señor.",
+  "searchPool": "lunes de la 15 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 123 1 3 4 6 7 8 r 8a semana 15 semana xv lunes 15 xv r nuestro auxilio es el nombre del senor si el senor no hubiera estado de nuestra parte que lo diga israel si el senor no hubiera estado de nuestra parte cuando nos asaltaban los hombres nos habrian tragado vivos tanto ardia su ira contra nosotros r nos habrian arrollado las aguas llegandonos el torrente hasta el cuello nos habrian llegado hasta el cuello las aguas espumantes bendito el senor que no nos entrego en presa a sus dientes r hemos salvado la vida como un pajaro de la trampa del cazador la trampa se rompio y escapamos nuestro auxilio es el nombre del senor que hizo el cielo y la tierra r",
+  "estrofas": [
+    [
+      "Si el Señor no hubiera estado de nuestra parte",
+      "—que lo diga Israel—,",
+      "si el Señor no hubiera estado de nuestra parte,",
+      "cuando nos asaltaban los hombres,",
+      "nos habrían tragado vivos:",
+      "tanto ardía su ira contra nosotros. R."
+    ],
+    [
+      "Nos habrían arrollado las aguas,",
+      "llegándonos el torrente hasta el cuello;",
+      "nos habrían llegado hasta el cuello",
+      "las aguas espumantes.",
+      "Bendito el Señor, que no nos entregó",
+      "en presa a sus dientes. R."
+    ],
+    [
+      "Hemos salvado la vida, como un pájaro",
+      "de la trampa del cazador;",
+      "la trampa se rompió, y escapamos.",
+      "Nuestro auxilio es el nombre del Señor,",
+      "que hizo el cielo y la tierra. R."
+    ]
+  ],
+  "dia": "Lunes"
 }

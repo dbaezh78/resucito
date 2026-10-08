@@ -1,15 +1,73 @@
 {
-  "id": "seup_020",
-  "title": "Martes de la 4ª semana de Tiempo Ordinario",
   "celebracion": "Martes de la 4ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 85, 1-2. 3-4. 5-6 (R.: 1a)",
-  "salmo": "Salmo responsorial: Salmo 85, 1-2. 3-4. 5-6 (R.: 1a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5042,
-  "respuesta": "R. Inclina tu oído, Señor, escúchame.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
+  "lizq": [
+    {
+      "line": "R. Inclina tu oído, Señor, escúchame.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Inclina tu oído, Señor, escúchame,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que soy un pobre desamparado;"
+    },
+    {
+      "line": "protege mi vida, que soy un fiel tuyo;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "salva a tu siervo, que confía en ti. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Tú eres mi Dios, piedad de mí, Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "que a ti te estoy llamando todo el día;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alegra el alma de tu siervo,"
+    },
+    {
+      "line": "pues levanto mi alma hacia ti. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Porque tú, Señor, eres bueno y clemente,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "rico en misericordia con los que te invocan."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, escucha mi oración,"
+    },
+    {
+      "line": "atiende a la voz de mi súplica. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "textoCompleto": "Inclina tu oído, Señor, escúchame,\nque soy un pobre desamparado;\nprotege mi vida, que soy un fiel tuyo;\nsalva a tu siervo, que confía en ti. R.\n\nTú eres mi Dios, piedad de mí, Señor,\nque a ti te estoy llamando todo el día;\nalegra el alma de tu siervo,\npues levanto mi alma hacia ti. R.\n\nPorque tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende a la voz de mi súplica. R.",
   "estrofas": [
     [
       "Inclina tu oído, Señor, escúchame,",
@@ -30,76 +88,18 @@
       "atiende a la voz de mi súplica. R."
     ]
   ],
-  "textoCompleto": "Inclina tu oído, Señor, escúchame,\nque soy un pobre desamparado;\nprotege mi vida, que soy un fiel tuyo;\nsalva a tu siervo, que confía en ti. R.\n\nTú eres mi Dios, piedad de mí, Señor,\nque a ti te estoy llamando todo el día;\nalegra el alma de tu siervo,\npues levanto mi alma hacia ti. R.\n\nPorque tú, Señor, eres bueno y clemente,\nrico en misericordia con los que te invocan.\nSeñor, escucha mi oración,\natiende a la voz de mi súplica. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "id": "seup_020",
   "searchPool": "martes de la 4 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 85 1 2 3 4 5 6 r 1a semana 4 semana iv martes 4 iv r inclina tu oido senor escuchame inclina tu oido senor escuchame que soy un pobre desamparado protege mi vida que soy un fiel tuyo salva a tu siervo que confia en ti r tu eres mi dios piedad de mi senor que a ti te estoy llamando todo el dia alegra el alma de tu siervo pues levanto mi alma hacia ti r porque tu senor eres bueno y clemente rico en misericordia con los que te invocan senor escucha mi oracion atiende a la voz de mi suplica r",
-  "lizq": [
-    {
-      "line": "R. Inclina tu oído, Señor, escúchame.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Inclina tu oído, Señor, escúchame,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que soy un pobre desamparado;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "protege mi vida, que soy un fiel tuyo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "salva a tu siervo, que confía en ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tú eres mi Dios, piedad de mí, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que a ti te estoy llamando todo el día;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "alegra el alma de tu siervo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "pues levanto mi alma hacia ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Porque tú, Señor, eres bueno y clemente,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "rico en misericordia con los que te invocan.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Señor, escucha mi oración,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "atiende a la voz de mi súplica. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "dia": "Martes",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "title": "Martes de la 4ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "respuesta": "R. Inclina tu oído, Señor, escúchame.",
+  "salmo": "Salmo responsorial: Salmo 85, 1-2. 3-4. 5-6 (R.: 1a)",
+  "subtitle": "Salmo responsorial: Salmo 85, 1-2. 3-4. 5-6 (R.: 1a)",
+  "ciclo": "Año Par",
+  "orden": 5042,
+  "stage": "Liturgia"
 }

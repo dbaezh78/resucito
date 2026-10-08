@@ -1,14 +1,4 @@
 {
-  "id": "seui_050",
-  "title": "Martes de la 9ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 9ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 111, 1-2. 7-8. 9 (R.: cf. 7b)",
-  "salmo": "Salmo responsorial: Salmo 111, 1-2. 7-8. 9 (R.: cf. 7b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5092,
-  "respuesta": "R. El corazón del justo está firme en el Señor.",
   "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
@@ -29,12 +19,20 @@
       "y alzará la frente con dignidad. R."
     ]
   ],
-  "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nNo temerá las malas noticias,\nsu corazón está firme en el Señor.\nSu corazón está seguro, sin temor,\nhasta que vea derrotados a sus enemigos. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
-  "sourceBook": "eucaristia",
+  "title": "Martes de la 9ª semana de Tiempo Ordinario",
+  "orden": 5092,
+  "respuesta": "R. El corazón del justo está firme en el Señor.",
+  "celebracion": "Martes de la 9ª semana de Tiempo Ordinario",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 111, 1-2. 7-8. 9 (R.: cf. 7b)",
+  "ciclo": "Año Impar",
+  "id": "seui_050",
   "searchPool": "martes de la 9 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 111 1 2 7 8 9 r cf 7b semana 9 semana ix martes 9 ix r el corazon del justo esta firme en el senor r aleluya dichoso quien teme al senor y ama de corazon sus mandatos su linaje sera poderoso en la tierra la descendencia del justo sera bendita r no temera las malas noticias su corazon esta firme en el senor su corazon esta seguro sin temor hasta que vea derrotados a sus enemigos r reparte limosna a los pobres su caridad es constante sin falta y alzara la frente con dignidad r",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 111, 1-2. 7-8. 9 (R.: cf. 7b)",
+  "dia": "Martes",
   "lizq": [
     {
       "line": "R. El corazón del justo está firme en el Señor.",
@@ -45,8 +43,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
@@ -57,12 +55,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dichoso quien teme al Señor",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso quien teme al Señor"
     },
     {
-      "line": "y ama de corazón sus mandatos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y ama de corazón sus mandatos."
     },
     {
       "line": "Su linaje será poderoso en la tierra,",
@@ -77,8 +75,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "No temerá las malas noticias,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No temerá las malas noticias,"
     },
     {
       "line": "su corazón está firme en el Señor.",
@@ -105,8 +103,10 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y alzará la frente con dignidad. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y alzará la frente con dignidad. R."
     }
-  ]
+  ],
+  "textoCompleto": "Dichoso quien teme al Señor\ny ama de corazón sus mandatos.\nSu linaje será poderoso en la tierra,\nla descendencia del justo será bendita. R.\n\nNo temerá las malas noticias,\nsu corazón está firme en el Señor.\nSu corazón está seguro, sin temor,\nhasta que vea derrotados a sus enemigos. R.\n\nReparte limosna a los pobres;\nsu caridad es constante, sin falta,\ny alzará la frente con dignidad. R.",
+  "sourceBook": "eucaristia"
 }

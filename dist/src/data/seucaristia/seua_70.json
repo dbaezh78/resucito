@@ -1,44 +1,5 @@
 {
-  "id": "seua_70",
   "title": "Domingo de la 26ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 26ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 24, 4bc-5. 6-7. 8-9 (R.: 6a)",
-  "salmo": "Salmo responsorial: Salmo 24, 4bc-5. 6-7. 8-9 (R.: 6a)",
-  "ciclo": "Ciclo A",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 526,
-  "respuesta": "R. Recuerda, Señor, que tu misericordia es eterna.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Señor, enséñame tus caminos,",
-      "instrúyeme en tus sendas:",
-      "haz que camine con lealtad;",
-      "enséñame, porque tú eres mi Dios y Salvador,",
-      "y todo el día te estoy esperando. R."
-    ],
-    [
-      "Recuerda, Señor, que tu ternura",
-      "y tu misericordia son eternas;",
-      "no te acuerdes de los pecados",
-      "ni de las maldades de mi juventud;",
-      "acuérdate de mí con misericordia,",
-      "por tu bondad, Señor. R."
-    ],
-    [
-      "El Señor es bueno y es recto,",
-      "y enseña el camino a los pecadores;",
-      "hace caminar a los humildes con rectitud,",
-      "enseña su camino a los humildes. R."
-    ]
-  ],
-  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador,\ny todo el día te estoy esperando. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nno te acuerdes de los pecados\nni de las maldades de mi juventud;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 26 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 24 4bc 5 6 7 8 9 r 6a r recuerda senor que tu misericordia es eterna senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador y todo el dia te estoy esperando r recuerda senor que tu ternura y tu misericordia son eternas no te acuerdes de los pecados ni de las maldades de mi juventud acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
   "lizq": [
     {
       "line": "R. Recuerda, Señor, que tu misericordia es eterna.",
@@ -69,24 +30,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Recuerda, Señor, que tu ternura",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Recuerda, Señor, que tu ternura"
     },
     {
-      "line": "y tu misericordia son eternas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y tu misericordia son eternas;"
     },
     {
       "line": "no te acuerdes de los pecados",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ni de las maldades de mi juventud;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ni de las maldades de mi juventud;"
     },
     {
       "line": "acuérdate de mí con misericordia,",
@@ -105,8 +66,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "y enseña el camino a los pecadores;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y enseña el camino a los pecadores;"
     },
     {
       "line": "hace caminar a los humildes con rectitud,",
@@ -116,5 +77,44 @@
       "line": "enseña su camino a los humildes. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "orden": 526,
+  "celebracion": "Domingo de la 26ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 24, 4bc-5. 6-7. 8-9 (R.: 6a)",
+  "estrofas": [
+    [
+      "Señor, enséñame tus caminos,",
+      "instrúyeme en tus sendas:",
+      "haz que camine con lealtad;",
+      "enséñame, porque tú eres mi Dios y Salvador,",
+      "y todo el día te estoy esperando. R."
+    ],
+    [
+      "Recuerda, Señor, que tu ternura",
+      "y tu misericordia son eternas;",
+      "no te acuerdes de los pecados",
+      "ni de las maldades de mi juventud;",
+      "acuérdate de mí con misericordia,",
+      "por tu bondad, Señor. R."
+    ],
+    [
+      "El Señor es bueno y es recto,",
+      "y enseña el camino a los pecadores;",
+      "hace caminar a los humildes con rectitud,",
+      "enseña su camino a los humildes. R."
+    ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 24, 4bc-5. 6-7. 8-9 (R.: 6a)",
+  "stage": "Liturgia",
+  "dia": "Domingo",
+  "searchPool": "domingo de la 26 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 24 4bc 5 6 7 8 9 r 6a r recuerda senor que tu misericordia es eterna senor ensename tus caminos instruyeme en tus sendas haz que camine con lealtad ensename porque tu eres mi dios y salvador y todo el dia te estoy esperando r recuerda senor que tu ternura y tu misericordia son eternas no te acuerdes de los pecados ni de las maldades de mi juventud acuerdate de mi con misericordia por tu bondad senor r el senor es bueno y es recto y ensena el camino a los pecadores hace caminar a los humildes con rectitud ensena su camino a los humildes r",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Recuerda, Señor, que tu misericordia es eterna.",
+  "hasAudio": false,
+  "id": "seua_70",
+  "tiempo": "Tiempo Ordinario",
+  "ciclo": "Ciclo A",
+  "textoCompleto": "Señor, enséñame tus caminos,\ninstrúyeme en tus sendas:\nhaz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador,\ny todo el día te estoy esperando. R.\n\nRecuerda, Señor, que tu ternura\ny tu misericordia son eternas;\nno te acuerdes de los pecados\nni de las maldades de mi juventud;\nacuérdate de mí con misericordia,\npor tu bondad, Señor. R.\n\nEl Señor es bueno y es recto,\ny enseña el camino a los pecadores;\nhace caminar a los humildes con rectitud,\nenseña su camino a los humildes. R."
 }

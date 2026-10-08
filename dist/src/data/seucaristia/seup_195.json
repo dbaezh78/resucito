@@ -1,15 +1,5 @@
 {
-  "id": "seup_195",
-  "title": "Miércoles de la 33ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 33ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 150, 1-2. 3-4. 5-6 (R.: Ap 4, 8b)",
-  "salmo": "Salmo responsorial: Salmo 150, 1-2. 3-4. 5-6 (R.: Ap 4, 8b)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5333,
-  "respuesta": "R. Santo, Santo, Santo es el Señor, soberano de todo.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Alabad al Señor en su templo,",
@@ -30,24 +20,34 @@
       "alabe al Señor. R."
     ]
   ],
+  "tiempo": "Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 150, 1-2. 3-4. 5-6 (R.: Ap 4, 8b)",
+  "celebracion": "Miércoles de la 33ª semana de Tiempo Ordinario",
+  "orden": 5333,
   "textoCompleto": "Alabad al Señor en su templo,\nalabadlo en su fuerte firmamento.\nAlabadlo por sus obras magníficas,\nalabadlo por su inmensa grandeza. R.\n\nAlabadlo tocando trompetas,\nalabadlo con arpas y cítaras,\nalabadlo con tambores y danzas,\nalabadlo con trompas y flautas. R.\n\nAlabadlo con platillos sonoros,\nalabadlo con platillos vibrantes.\nTodo ser que alienta\nalabe al Señor. R.",
+  "title": "Miércoles de la 33ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 150, 1-2. 3-4. 5-6 (R.: Ap 4, 8b)",
   "sourceBook": "eucaristia",
+  "dia": "Miércoles",
+  "respuestaOpcional": "",
+  "respuesta": "R. Santo, Santo, Santo es el Señor, soberano de todo.",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "id": "seup_195",
   "searchPool": "miercoles de la 33 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 150 1 2 3 4 5 6 r ap 4 8b semana 33 semana xxxiii miercoles 33 xxxiii r santo santo santo es el senor soberano de todo alabad al senor en su templo alabadlo en su fuerte firmamento alabadlo por sus obras magnificas alabadlo por su inmensa grandeza r alabadlo tocando trompetas alabadlo con arpas y citaras alabadlo con tambores y danzas alabadlo con trompas y flautas r alabadlo con platillos sonoros alabadlo con platillos vibrantes todo ser que alienta alabe al senor r",
   "lizq": [
     {
-      "line": "R. Santo, Santo, Santo es el Señor, soberano de todo.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Santo, Santo, Santo es el Señor, soberano de todo."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Alabad al Señor en su templo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Alabad al Señor en su templo,"
     },
     {
       "line": "alabadlo en su fuerte firmamento.",
@@ -62,24 +62,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Alabadlo tocando trompetas,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Alabadlo tocando trompetas,"
     },
     {
       "line": "alabadlo con arpas y cítaras,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "alabadlo con tambores y danzas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alabadlo con tambores y danzas,"
     },
     {
-      "line": "alabadlo con trompas y flautas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "alabadlo con trompas y flautas. R."
     },
     {
       "line": "",
@@ -94,12 +94,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Todo ser que alienta",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Todo ser que alienta"
     },
     {
-      "line": "alabe al Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "alabe al Señor. R."
     }
   ]
 }

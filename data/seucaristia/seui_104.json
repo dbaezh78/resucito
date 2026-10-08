@@ -1,15 +1,11 @@
 {
   "id": "seui_104",
-  "title": "Martes de la 18ª semana de Tiempo Ordinario",
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces.\nEn la sentencia tendrás razón,\nen el juicio resultarás inocente. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.",
+  "hasAudio": false,
   "celebracion": "Martes de la 18ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 5-6. 12-13 (R.: cf. 3a)",
-  "salmo": "Salmo responsorial: Salmo 50, 3-4. 5-6. 12-13 (R.: cf. 3a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5182,
-  "respuesta": "R. Misericordia, Señor: hemos pecado.",
   "respuestaOpcional": "",
+  "respuesta": "R. Misericordia, Señor: hemos pecado.",
+  "subtitle": "Salmo responsorial: Salmo 50, 3-4. 5-6. 12-13 (R.: cf. 3a)",
   "estrofas": [
     [
       "Misericordia, Dios mío, por tu bondad,",
@@ -32,44 +28,44 @@
       "no me quites tu santo espíritu. R."
     ]
   ],
-  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces.\nEn la sentencia tendrás razón,\nen el juicio resultarás inocente. R.\n\nOh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "martes de la 18 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 50 3 4 5 6 12 13 r cf 3a semana 18 semana xviii martes 18 xviii r misericordia senor hemos pecado misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces en la sentencia tendras razon en el juicio resultaras inocente r oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r",
+  "dia": "Martes",
+  "orden": 5182,
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 50, 3-4. 5-6. 12-13 (R.: cf. 3a)",
   "lizq": [
     {
-      "line": "R. Misericordia, Señor: hemos pecado.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Misericordia, Señor: hemos pecado."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Misericordia, Dios mío, por tu bondad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Misericordia, Dios mío, por tu bondad,"
     },
     {
       "line": "por tu inmensa compasión borra mi culpa;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "lava del todo mi delito,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lava del todo mi delito,"
     },
     {
       "line": "limpia mi pecado. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Pues yo reconozco mi culpa,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Pues yo reconozco mi culpa,"
     },
     {
       "line": "tengo siempre presente mi pecado:",
@@ -88,28 +84,32 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en el juicio resultarás inocente. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en el juicio resultarás inocente. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Oh Dios, crea en mí un corazón puro,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Oh Dios, crea en mí un corazón puro,"
     },
     {
       "line": "renuévame por dentro con espíritu firme;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "no me arrojes lejos de tu rostro,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no me arrojes lejos de tu rostro,"
     },
     {
       "line": "no me quites tu santo espíritu. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "title": "Martes de la 18ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía"
 }

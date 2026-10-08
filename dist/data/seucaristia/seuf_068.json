@@ -1,10 +1,4 @@
 {
-  "id": "seuf_068",
-  "title": "Viernes de la 4ª semana de Cuaresma",
-  "celebracion": "Viernes de la 4ª semana de Cuaresma",
-  "subtitle": "Salmo 33, 17-18. 19-20. 21 y 23 (R.: 19a)",
-  "salmo": "Salmo 33, 17-18. 19-20. 21 y 23 (R.: 19a)",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +6,17 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Cuaresma",
-  "dia": "Viernes",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "viernes de la 4 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma viernes salmo 33 17 18 19 20 21 y 23 r 19a semana 4 semana iv viernes feria r el senor esta cerca de los atribulados el senor se enfrenta con los malhechores para borrar de la tierra su memoria cuando uno grita el senor lo escucha y lo libra de sus angustias r el senor esta cerca de los atribulados salva a los abatidos aunque el justo sufra muchos males de todos lo librara el senor r el cuida de todos sus huesos y ni uno solo se quebrara el senor redime a sus siervos no sera castigado quien se acoge a el r",
+  "textoCompleto": "El Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria.\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias. R.\n\nEl Señor está cerca de los atribulados,\nsalva a los abatidos.\nAunque el justo sufra muchos males,\nde todos lo librará el Señor. R.\n\nÉl cuida de todos sus huesos,\ny ni uno solo se quebrará.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R.",
+  "celebracion": "Viernes de la 4ª semana de Cuaresma",
+  "title": "Viernes de la 4ª semana de Cuaresma",
   "orden": 345,
+  "stage": "Liturgia",
+  "id": "seuf_068",
+  "salmo": "Salmo 33, 17-18. 19-20. 21 y 23 (R.: 19a)",
+  "sourceBook": "eucaristia",
   "respuesta": "R. El Señor está cerca de los atribulados.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "El Señor se enfrenta con los malhechores,",
@@ -37,12 +37,6 @@
       "no será castigado quien se acoge a él. R."
     ]
   ],
-  "textoCompleto": "El Señor se enfrenta con los malhechores,\npara borrar de la tierra su memoria.\nCuando uno grita, el Señor lo escucha\ny lo libra de sus angustias. R.\n\nEl Señor está cerca de los atribulados,\nsalva a los abatidos.\nAunque el justo sufra muchos males,\nde todos lo librará el Señor. R.\n\nÉl cuida de todos sus huesos,\ny ni uno solo se quebrará.\nEl Señor redime a sus siervos,\nno será castigado quien se acoge a él. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 4 semana de cuaresma ciclo a ciclo b ciclo c ciclo a b y c cuaresma viernes salmo 33 17 18 19 20 21 y 23 r 19a semana 4 semana iv viernes feria r el senor esta cerca de los atribulados el senor se enfrenta con los malhechores para borrar de la tierra su memoria cuando uno grita el senor lo escucha y lo libra de sus angustias r el senor esta cerca de los atribulados salva a los abatidos aunque el justo sufra muchos males de todos lo librara el senor r el cuida de todos sus huesos y ni uno solo se quebrara el senor redime a sus siervos no sera castigado quien se acoge a el r",
   "lizq": [
     {
       "line": "R. El Señor está cerca de los atribulados.",
@@ -69,8 +63,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor está cerca de los atribulados,",
@@ -85,8 +79,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "de todos lo librará el Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de todos lo librará el Señor. R."
     },
     {
       "line": "",
@@ -105,8 +99,14 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "no será castigado quien se acoge a él. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "no será castigado quien se acoge a él. R."
     }
-  ]
+  ],
+  "ciclo": "Ciclo A, B y C",
+  "subtitle": "Salmo 33, 17-18. 19-20. 21 y 23 (R.: 19a)",
+  "respuestaOpcional": "",
+  "tiempo": "Cuaresma",
+  "hasAudio": false,
+  "dia": "Viernes"
 }

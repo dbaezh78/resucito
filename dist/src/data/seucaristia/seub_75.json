@@ -1,15 +1,15 @@
 {
-  "id": "seub_75",
-  "title": "Domingo de la 33ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 33ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 15, 5 y 8. 9-10.11 (R.:1)",
-  "salmo": "Salmo responsorial: Salmo 15, 5 y 8. 9-10.11 (R.:1)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 533,
+  "hasAudio": false,
+  "textoCompleto": "El Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
   "respuesta": "R. Protégeme, Dios mío, que me refugio en ti",
-  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 15, 5 y 8. 9-10.11 (R.:1)",
+  "celebracion": "Domingo de la 33ª semana de Tiempo Ordinario",
+  "orden": 533,
+  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "searchPool": "domingo de la 33 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 15 5 y 8 9 10 11 r 1 r protegeme dios mio que me refugio en ti el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano tengo siempre presente al senor con el a mi derecha no vacilare r por eso se me alegra el corazon se gozan mis entranas y mi carne descansa serena porque no me entregaras a la muerte ni dejaras a tu fiel conocer la corrupcion r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
+  "title": "Domingo de la 33ª semana de Tiempo Ordinario",
+  "ciclo": "Ciclo B",
   "estrofas": [
     [
       "El Señor es el lote de mi heredad y mi copa;",
@@ -30,12 +30,9 @@
       "de alegría perpetua a tu derecha. R."
     ]
   ],
-  "textoCompleto": "El Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nPor eso se me alegra el corazón,\nse gozan mis entrañas,\ny mi carne descansa serena.\nPorque no me entregarás a la muerte,\nni dejarás a tu fiel conocer la corrupción. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 33 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 15 5 y 8 9 10 11 r 1 r protegeme dios mio que me refugio en ti el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano tengo siempre presente al senor con el a mi derecha no vacilare r por eso se me alegra el corazon se gozan mis entranas y mi carne descansa serena porque no me entregaras a la muerte ni dejaras a tu fiel conocer la corrupcion r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r",
+  "subtitle": "Salmo responsorial: Salmo 15, 5 y 8. 9-10.11 (R.:1)",
+  "dia": "Domingo",
   "lizq": [
     {
       "line": "R. Protégeme, Dios mío, que me refugio en ti",
@@ -46,44 +43,44 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es el lote de mi heredad y mi copa;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es el lote de mi heredad y mi copa;"
     },
     {
       "line": "mi suerte está en tu mano.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Tengo siempre presente al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Tengo siempre presente al Señor,"
     },
     {
       "line": "con él a mi derecha no vacilaré. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Por eso se me alegra el corazón,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Por eso se me alegra el corazón,"
     },
     {
       "line": "se gozan mis entrañas,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y mi carne descansa serena.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y mi carne descansa serena."
     },
     {
-      "line": "Porque no me entregarás a la muerte,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Porque no me entregarás a la muerte,"
     },
     {
-      "line": "ni dejarás a tu fiel conocer la corrupción. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ni dejarás a tu fiel conocer la corrupción. R."
     },
     {
       "line": "",
@@ -101,5 +98,8 @@
       "line": "de alegría perpetua a tu derecha. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "id": "seub_75",
+  "stage": "Liturgia"
 }

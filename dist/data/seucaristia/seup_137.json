@@ -1,15 +1,18 @@
 {
-  "id": "seup_137",
-  "title": "Viernes de la 23ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 23ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5-6. 12 (R.: 2)",
-  "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5-6. 12 (R.: 2)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5235,
-  "respuesta": "R. ¡Qué deseables son tus moradas, Señor de los ejércitos!",
   "respuestaOpcional": "",
+  "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\nla golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nDichosos los que encuentran en ti su fuerza\nal preparar su peregrinación. R.\n\nPorque el Señor es sol y escudo,\nél da la gracia y la gloria;\nel Señor no niega sus bienes\na los de conducta intachable. R.",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 83, 3. 4. 5-6. 12 (R.: 2)",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. ¡Qué deseables son tus moradas, Señor de los ejércitos!",
+  "searchPool": "viernes de la 23 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 83 3 4 5 6 12 r 2 semana 23 semana xxiii viernes 23 xxiii r que deseables son tus moradas senor de los ejercitos mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre dichosos los que encuentran en ti su fuerza al preparar su peregrinacion r porque el senor es sol y escudo el da la gracia y la gloria el senor no niega sus bienes a los de conducta intachable r",
+  "id": "seup_137",
+  "stage": "Liturgia",
+  "ciclo": "Año Par",
+  "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 83, 3. 4. 5-6. 12 (R.: 2)",
+  "orden": 5235,
   "estrofas": [
     [
       "Mi alma se consume y anhela",
@@ -37,24 +40,19 @@
       "a los de conducta intachable. R."
     ]
   ],
-  "textoCompleto": "Mi alma se consume y anhela\nlos atrios del Señor,\nmi corazón y mi carne\nretozan por el Dios vivo. R.\n\nHasta el gorrión ha encontrado una casa;\nla golondrina, un nido\ndonde colocar sus polluelos:\ntus altares, Señor de los ejércitos,\nRey mío y Dios mío. R.\n\nDichosos los que viven en tu casa,\nalabándote siempre.\nDichosos los que encuentran en ti su fuerza\nal preparar su peregrinación. R.\n\nPorque el Señor es sol y escudo,\nél da la gracia y la gloria;\nel Señor no niega sus bienes\na los de conducta intachable. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 23 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 83 3 4 5 6 12 r 2 semana 23 semana xxiii viernes 23 xxiii r que deseables son tus moradas senor de los ejercitos mi alma se consume y anhela los atrios del senor mi corazon y mi carne retozan por el dios vivo r hasta el gorrion ha encontrado una casa la golondrina un nido donde colocar sus polluelos tus altares senor de los ejercitos rey mio y dios mio r dichosos los que viven en tu casa alabandote siempre dichosos los que encuentran en ti su fuerza al preparar su peregrinacion r porque el senor es sol y escudo el da la gracia y la gloria el senor no niega sus bienes a los de conducta intachable r",
+  "celebracion": "Viernes de la 23ª semana de Tiempo Ordinario",
   "lizq": [
     {
-      "line": "R. ¡Qué deseables son tus moradas,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. ¡Qué deseables son tus moradas,"
     },
     {
       "line": "Señor de los ejércitos!",
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Mi alma se consume y anhela",
@@ -65,36 +63,36 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "mi corazón y mi carne",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mi corazón y mi carne"
     },
     {
-      "line": "retozan por el Dios vivo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "retozan por el Dios vivo. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Hasta el gorrión ha encontrado una casa;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Hasta el gorrión ha encontrado una casa;"
     },
     {
-      "line": "la golondrina, un nido",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la golondrina, un nido"
     },
     {
       "line": "donde colocar sus polluelos:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tus altares, Señor de los ejércitos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tus altares, Señor de los ejércitos,"
     },
     {
-      "line": "Rey mío y Dios mío. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Rey mío y Dios mío. R."
     },
     {
       "line": "",
@@ -113,8 +111,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "al preparar su peregrinación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "al preparar su peregrinación. R."
     },
     {
       "line": "",
@@ -136,5 +134,7 @@
       "line": "a los de conducta intachable. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "dia": "Viernes",
+  "title": "Viernes de la 23ª semana de Tiempo Ordinario"
 }

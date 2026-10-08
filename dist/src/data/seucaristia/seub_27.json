@@ -1,15 +1,98 @@
 {
-  "id": "seub_27",
   "title": "Quinto Salmo",
-  "celebracion": "Quinto Salmo",
-  "subtitle": "Interleccional: Isaías 12, 2-3. 4bcd. 5-6 (R.: 3)",
+  "id": "seub_27",
+  "sourceBook": "eucaristia",
+  "searchPool": "quinto salmo ciclo b solemnidades y fiestas domingo interleccional isaias 12 2 3 4bcd 5 6 r 3 r sacareis aguas con gozo de las fuentes de la salvacion el senor es mi dios y salvador confiare y no temere porque mi fuerza y mi poder es el senor el fue mi salvacion y sacareis aguas con gozo de las fuentes de la salvacion r dad gracias al senor invocad su nombre contad a los pueblos sus hazanas proclamad que su nombre es excelso r taned para el senor que hizo proezas anunciadlas a toda la tierra gritad jubilosos habitantes de sion que grande es en medio de ti el santo de israel r",
+  "orden": 600,
   "salmo": "Interleccional: Isaías 12, 2-3. 4bcd. 5-6 (R.: 3)",
-  "ciclo": "Ciclo B",
+  "hasAudio": false,
+  "celebracion": "Quinto Salmo",
+  "stage": "Liturgia",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Sacaréis aguas con gozo"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "de las fuentes de la salvación."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es mi Dios y Salvador:"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "confiaré y no temeré,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque mi fuerza y mi poder es el Señor,"
+    },
+    {
+      "line": "él fue mi salvación.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Y sacaréis aguas con gozo",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de las fuentes de la salvación. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Dad gracias al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "invocad su nombre,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "contad a los pueblos sus hazañas,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "proclamad que su nombre es excelso. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tañed para el Señor, que hizo proezas;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "anunciadlas a toda la tierra;"
+    },
+    {
+      "line": "gritad jubilosos, habitantes de Sión:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "¡Qué grande es en medio de ti el Santo de Israel! R."
+    }
+  ],
+  "respuestaOpcional": "",
   "tiempo": "Solemnidades y Fiestas",
   "dia": "Domingo",
-  "orden": 600,
   "respuesta": "R. Sacaréis aguas con gozo de las fuentes de la salvación.",
-  "respuestaOpcional": "",
+  "ciclo": "Ciclo B",
+  "subtitle": "Interleccional: Isaías 12, 2-3. 4bcd. 5-6 (R.: 3)",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "El Señor es mi Dios y Salvador:",
@@ -32,88 +115,5 @@
       "¡Qué grande es en medio de ti el Santo de Israel! R."
     ]
   ],
-  "textoCompleto": "El Señor es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.\n\nTañed para el Señor, que hizo proezas;\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n¡Qué grande es en medio de ti el Santo de Israel! R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "quinto salmo ciclo b solemnidades y fiestas domingo interleccional isaias 12 2 3 4bcd 5 6 r 3 r sacareis aguas con gozo de las fuentes de la salvacion el senor es mi dios y salvador confiare y no temere porque mi fuerza y mi poder es el senor el fue mi salvacion y sacareis aguas con gozo de las fuentes de la salvacion r dad gracias al senor invocad su nombre contad a los pueblos sus hazanas proclamad que su nombre es excelso r taned para el senor que hizo proezas anunciadlas a toda la tierra gritad jubilosos habitantes de sion que grande es en medio de ti el santo de israel r",
-  "lizq": [
-    {
-      "line": "R. Sacaréis aguas con gozo",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "de las fuentes de la salvación.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es mi Dios y Salvador:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "confiaré y no temeré,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "porque mi fuerza y mi poder es el Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él fue mi salvación.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Y sacaréis aguas con gozo",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "de las fuentes de la salvación. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dad gracias al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "invocad su nombre,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "contad a los pueblos sus hazañas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "proclamad que su nombre es excelso. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tañed para el Señor, que hizo proezas;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "anunciadlas a toda la tierra;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "gritad jubilosos, habitantes de Sión:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "¡Qué grande es en medio de ti el Santo de Israel! R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "textoCompleto": "El Señor es mi Dios y Salvador:\nconfiaré y no temeré,\nporque mi fuerza y mi poder es el Señor,\nél fue mi salvación.\nY sacaréis aguas con gozo\nde las fuentes de la salvación. R.\n\nDad gracias al Señor,\ninvocad su nombre,\ncontad a los pueblos sus hazañas,\nproclamad que su nombre es excelso. R.\n\nTañed para el Señor, que hizo proezas;\nanunciadlas a toda la tierra;\ngritad jubilosos, habitantes de Sión:\n¡Qué grande es en medio de ti el Santo de Israel! R."
 }

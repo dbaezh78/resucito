@@ -1,40 +1,4 @@
 {
-  "id": "seup_074",
-  "title": "Martes de la 13ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 13ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial Salmo 5, 5-6. 7. 8 (R.: 9a)",
-  "salmo": "Salmo responsorial Salmo 5, 5-6. 7. 8 (R.: 9a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5132,
-  "respuesta": "R. Señor, guíame con tu justicia.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Tú no eres un Dios que ame la maldad,",
-      "ni el malvado es tu huésped,",
-      "ni el arrogante se mantiene en tu presencia. R."
-    ],
-    [
-      "Detestas a los malhechores,",
-      "destruyes a los mentirosos;",
-      "al hombre sanguinario y traicionero",
-      "lo aborrece el Señor. R."
-    ],
-    [
-      "Pero yo, por tu gran bondad,",
-      "entraré en tu casa,",
-      "me postraré ante tu templo santo",
-      "con toda reverencia. R."
-    ]
-  ],
-  "textoCompleto": "Tú no eres un Dios que ame la maldad,\nni el malvado es tu huésped,\nni el arrogante se mantiene en tu presencia. R.\n\nDetestas a los malhechores,\ndestruyes a los mentirosos;\nal hombre sanguinario y traicionero\nlo aborrece el Señor. R.\n\nPero yo, por tu gran bondad,\nentraré en tu casa,\nme postraré ante tu templo santo\ncon toda reverencia. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 13 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 5 5 6 7 8 r 9a semana 13 semana xiii martes 13 xiii r senor guiame con tu justicia tu no eres un dios que ame la maldad ni el malvado es tu huesped ni el arrogante se mantiene en tu presencia r detestas a los malhechores destruyes a los mentirosos al hombre sanguinario y traicionero lo aborrece el senor r pero yo por tu gran bondad entrare en tu casa me postrare ante tu templo santo con toda reverencia r",
   "lizq": [
     {
       "line": "R. Señor, guíame con tu justicia.",
@@ -61,8 +25,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Detestas a los malhechores,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Detestas a los malhechores,"
     },
     {
       "line": "destruyes a los mentirosos;",
@@ -81,8 +45,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Pero yo, por tu gran bondad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Pero yo, por tu gran bondad,"
     },
     {
       "line": "entraré en tu casa,",
@@ -93,8 +57,44 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "con toda reverencia. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "con toda reverencia. R."
     }
-  ]
+  ],
+  "id": "seup_074",
+  "salmo": "Salmo responsorial Salmo 5, 5-6. 7. 8 (R.: 9a)",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. Señor, guíame con tu justicia.",
+  "stage": "Liturgia",
+  "celebracion": "Martes de la 13ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Tú no eres un Dios que ame la maldad,",
+      "ni el malvado es tu huésped,",
+      "ni el arrogante se mantiene en tu presencia. R."
+    ],
+    [
+      "Detestas a los malhechores,",
+      "destruyes a los mentirosos;",
+      "al hombre sanguinario y traicionero",
+      "lo aborrece el Señor. R."
+    ],
+    [
+      "Pero yo, por tu gran bondad,",
+      "entraré en tu casa,",
+      "me postraré ante tu templo santo",
+      "con toda reverencia. R."
+    ]
+  ],
+  "sourceBook": "eucaristia",
+  "ciclo": "Año Par",
+  "title": "Martes de la 13ª semana de Tiempo Ordinario",
+  "searchPool": "martes de la 13 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 5 5 6 7 8 r 9a semana 13 semana xiii martes 13 xiii r senor guiame con tu justicia tu no eres un dios que ame la maldad ni el malvado es tu huesped ni el arrogante se mantiene en tu presencia r detestas a los malhechores destruyes a los mentirosos al hombre sanguinario y traicionero lo aborrece el senor r pero yo por tu gran bondad entrare en tu casa me postrare ante tu templo santo con toda reverencia r",
+  "tiempo": "Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "dia": "Martes",
+  "subtitle": "Salmo responsorial Salmo 5, 5-6. 7. 8 (R.: 9a)",
+  "orden": 5132,
+  "textoCompleto": "Tú no eres un Dios que ame la maldad,\nni el malvado es tu huésped,\nni el arrogante se mantiene en tu presencia. R.\n\nDetestas a los malhechores,\ndestruyes a los mentirosos;\nal hombre sanguinario y traicionero\nlo aborrece el Señor. R.\n\nPero yo, por tu gran bondad,\nentraré en tu casa,\nme postraré ante tu templo santo\ncon toda reverencia. R.",
+  "hasAudio": false
 }

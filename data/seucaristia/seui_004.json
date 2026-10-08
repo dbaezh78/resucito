@@ -1,15 +1,8 @@
 {
-  "id": "seui_004",
-  "title": "Jueves de la 1ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 1ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 94, 6-7. 8-9. 10-11 (R.: 8)",
-  "salmo": "Salmo responsorial: Salmo 94, 6-7. 8-9. 10-11 (R.: 8)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5014,
-  "respuesta": "R. Ojalá escuchéis hoy la voz del Señor: «No endurezcáis vuestro corazón».",
+  "catCanto": "Salmo Eucaristía",
   "respuestaOpcional": "",
+  "respuesta": "R. Ojalá escuchéis hoy la voz del Señor: «No endurezcáis vuestro corazón».",
+  "id": "seui_004",
   "estrofas": [
     [
       "Entrad, postrémonos por tierra,",
@@ -34,12 +27,16 @@
       "que no entrarán en mi descanso\"». R."
     ]
   ],
-  "textoCompleto": "Entrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía. R.\n\nOjalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masá en el desierto;\ncuando vuestros padres me pusieron a prueba\ny me tentaron, aunque habían visto mis obras». R.\n\n«Durante cuarenta años\naquella generación me asqueó, y dije:\n\"Es un pueblo de corazón extraviado,\nque no reconoce mi camino;\npor eso he jurado en mi cólera\nque no entrarán en mi descanso\"». R.",
   "sourceBook": "eucaristia",
+  "orden": 5014,
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 94, 6-7. 8-9. 10-11 (R.: 8)",
+  "celebracion": "Jueves de la 1ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 94, 6-7. 8-9. 10-11 (R.: 8)",
+  "ciclo": "Año Impar",
+  "textoCompleto": "Entrad, postrémonos por tierra,\nbendiciendo al Señor, creador nuestro.\nPorque él es nuestro Dios,\ny nosotros su pueblo,\nel rebaño que él guía. R.\n\nOjalá escuchéis hoy su voz:\n«No endurezcáis el corazón como en Meribá,\ncomo el día de Masá en el desierto;\ncuando vuestros padres me pusieron a prueba\ny me tentaron, aunque habían visto mis obras». R.\n\n«Durante cuarenta años\naquella generación me asqueó, y dije:\n\"Es un pueblo de corazón extraviado,\nque no reconoce mi camino;\npor eso he jurado en mi cólera\nque no entrarán en mi descanso\"». R.",
   "hasAudio": false,
-  "searchPool": "jueves de la 1 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 94 6 7 8 9 10 11 r 8 semana 1 semana i jueves 1 i r ojala escucheis hoy la voz del senor no endurezcais vuestro corazon entrad postremonos por tierra bendiciendo al senor creador nuestro porque el es nuestro dios y nosotros su pueblo el rebano que el guia r ojala escucheis hoy su voz no endurezcais el corazon como en meriba como el dia de masa en el desierto cuando vuestros padres me pusieron a prueba y me tentaron aunque habian visto mis obras r durante cuarenta anos aquella generacion me asqueo y dije es un pueblo de corazon extraviado que no reconoce mi camino por eso he jurado en mi colera que no entraran en mi descanso r",
   "lizq": [
     {
       "line": "R. Ojalá escuchéis hoy la voz del Señor:",
@@ -50,48 +47,48 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Entrad, postrémonos por tierra,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "bendiciendo al Señor, creador nuestro.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "bendiciendo al Señor, creador nuestro."
     },
     {
-      "line": "Porque él es nuestro Dios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Porque él es nuestro Dios,"
     },
     {
-      "line": "y nosotros su pueblo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y nosotros su pueblo,"
     },
     {
       "line": "el rebaño que él guía. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Ojalá escuchéis hoy su voz:",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "«No endurezcáis el corazón como en Meribá,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«No endurezcáis el corazón como en Meribá,"
     },
     {
-      "line": "como el día de Masá en el desierto;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "como el día de Masá en el desierto;"
     },
     {
-      "line": "cuando vuestros padres me pusieron a prueba",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "cuando vuestros padres me pusieron a prueba"
     },
     {
       "line": "y me tentaron, aunque habían visto mis obras». R.",
@@ -102,28 +99,31 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "«Durante cuarenta años",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Durante cuarenta años"
     },
     {
       "line": "aquella generación me asqueó, y dije:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "\"Es un pueblo de corazón extraviado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "\"Es un pueblo de corazón extraviado,"
     },
     {
-      "line": "que no reconoce mi camino;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que no reconoce mi camino;"
     },
     {
-      "line": "por eso he jurado en mi cólera",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "por eso he jurado en mi cólera"
     },
     {
       "line": "que no entrarán en mi descanso\"». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "searchPool": "jueves de la 1 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 94 6 7 8 9 10 11 r 8 semana 1 semana i jueves 1 i r ojala escucheis hoy la voz del senor no endurezcais vuestro corazon entrad postremonos por tierra bendiciendo al senor creador nuestro porque el es nuestro dios y nosotros su pueblo el rebano que el guia r ojala escucheis hoy su voz no endurezcais el corazon como en meriba como el dia de masa en el desierto cuando vuestros padres me pusieron a prueba y me tentaron aunque habian visto mis obras r durante cuarenta anos aquella generacion me asqueo y dije es un pueblo de corazon extraviado que no reconoce mi camino por eso he jurado en mi colera que no entraran en mi descanso r",
+  "dia": "Jueves",
+  "title": "Jueves de la 1ª semana de Tiempo Ordinario"
 }

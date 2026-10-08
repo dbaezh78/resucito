@@ -1,15 +1,94 @@
 {
-  "id": "seup_080",
-  "title": "Martes de la 14ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 14ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 113B, 3-4. 5-6. 7-8. 9-10 (R.: 9a)",
+  "lizq": [
+    {
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Israel confía en el Señor."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Nuestro Dios está en el cielo,"
+    },
+    {
+      "line": "lo que quiere lo hace.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Sus ídolos, en cambio, son plata y oro,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "hechura de manos humanas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tienen boca, y no hablan;"
+    },
+    {
+      "line": "tienen ojos, y no ven;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "tienen orejas, y no oyen;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tienen nariz, y no huelen. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tienen manos, y no tocan;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "tienen pies, y no andan."
+    },
+    {
+      "line": "Que sean igual los que los hacen,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "cuantos confían en ellos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Israel confía en el Señor:",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "él es su auxilio y su escudo."
+    },
+    {
+      "line": "La casa de Aarón confía en el Señor:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él es su auxilio y su escudo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "hasAudio": false,
   "salmo": "Salmo responsorial: Salmo 113B, 3-4. 5-6. 7-8. 9-10 (R.: 9a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5142,
-  "respuesta": "R. Israel confía en el Señor.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Nuestro Dios está en el cielo,\nlo que quiere lo hace.\nSus ídolos, en cambio, son plata y oro,\nhechura de manos humanas. R.\n\nTienen boca, y no hablan;\ntienen ojos, y no ven;\ntienen orejas, y no oyen;\ntienen nariz, y no huelen. R.\n\nTienen manos, y no tocan;\ntienen pies, y no andan.\nQue sean igual los que los hacen,\ncuantos confían en ellos. R.\n\nIsrael confía en el Señor:\nél es su auxilio y su escudo.\nLa casa de Aarón confía en el Señor:\nél es su auxilio y su escudo. R.",
   "estrofas": [
     [
       "Nuestro Dios está en el cielo,",
@@ -36,96 +115,17 @@
       "él es su auxilio y su escudo. R."
     ]
   ],
-  "textoCompleto": "Nuestro Dios está en el cielo,\nlo que quiere lo hace.\nSus ídolos, en cambio, son plata y oro,\nhechura de manos humanas. R.\n\nTienen boca, y no hablan;\ntienen ojos, y no ven;\ntienen orejas, y no oyen;\ntienen nariz, y no huelen. R.\n\nTienen manos, y no tocan;\ntienen pies, y no andan.\nQue sean igual los que los hacen,\ncuantos confían en ellos. R.\n\nIsrael confía en el Señor:\nél es su auxilio y su escudo.\nLa casa de Aarón confía en el Señor:\nél es su auxilio y su escudo. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "ciclo": "Año Par",
+  "respuestaOpcional": "",
+  "respuesta": "R. Israel confía en el Señor.",
+  "title": "Martes de la 14ª semana de Tiempo Ordinario",
+  "celebracion": "Martes de la 14ª semana de Tiempo Ordinario",
+  "id": "seup_080",
+  "orden": 5142,
   "searchPool": "martes de la 14 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 113b 3 4 5 6 7 8 9 10 r 9a semana 14 semana xiv martes 14 xiv r israel confia en el senor nuestro dios esta en el cielo lo que quiere lo hace sus idolos en cambio son plata y oro hechura de manos humanas r tienen boca y no hablan tienen ojos y no ven tienen orejas y no oyen tienen nariz y no huelen r tienen manos y no tocan tienen pies y no andan que sean igual los que los hacen cuantos confian en ellos r israel confia en el senor el es su auxilio y su escudo la casa de aaron confia en el senor el es su auxilio y su escudo r",
-  "lizq": [
-    {
-      "line": "R. Israel confía en el Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Nuestro Dios está en el cielo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "lo que quiere lo hace.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Sus ídolos, en cambio, son plata y oro,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "hechura de manos humanas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tienen boca, y no hablan;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "tienen ojos, y no ven;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tienen orejas, y no oyen;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tienen nariz, y no huelen. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Tienen manos, y no tocan;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "tienen pies, y no andan.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Que sean igual los que los hacen,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "cuantos confían en ellos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Israel confía en el Señor:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "él es su auxilio y su escudo.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "La casa de Aarón confía en el Señor:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él es su auxilio y su escudo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "dia": "Martes"
 }

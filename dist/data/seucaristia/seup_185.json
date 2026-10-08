@@ -1,15 +1,12 @@
 {
-  "id": "seup_185",
-  "title": "Viernes de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 31ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 121, 1-2. 4-5 (R.: cf. 1)",
-  "salmo": "Salmo responsorial: Salmo 121, 1-2. 4-5 (R.: cf. 1)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
   "dia": "Viernes",
-  "orden": 5315,
-  "respuesta": "R. Vamos alegres a la casa del Señor.",
+  "title": "Viernes de la 31ª semana de Tiempo Ordinario",
+  "textoCompleto": "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.\n\nAllá suben las tribus,\nlas tribus del Señor,\nsegún la costumbre de Israel,\na celebrar el nombre del Señor;\nen ella están los tribunales de justicia,\nen el palacio de David. R.",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
   "respuestaOpcional": "",
+  "orden": 5315,
   "estrofas": [
     [
       "¡Qué alegría cuando me dijeron:",
@@ -26,12 +23,9 @@
       "en el palacio de David. R."
     ]
   ],
-  "textoCompleto": "¡Qué alegría cuando me dijeron:\n«Vamos a la casa del Señor»!\nYa están pisando nuestros pies\ntus umbrales, Jerusalén. R.\n\nAllá suben las tribus,\nlas tribus del Señor,\nsegún la costumbre de Israel,\na celebrar el nombre del Señor;\nen ella están los tribunales de justicia,\nen el palacio de David. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "ciclo": "Año Par",
   "searchPool": "viernes de la 31 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 121 1 2 4 5 r cf 1 semana 31 semana xxxi viernes 31 xxxi r vamos alegres a la casa del senor que alegria cuando me dijeron vamos a la casa del senor ya estan pisando nuestros pies tus umbrales jerusalen r alla suben las tribus las tribus del senor segun la costumbre de israel a celebrar el nombre del senor en ella estan los tribunales de justicia en el palacio de david r",
+  "catCanto": "Salmo Eucaristía",
   "lizq": [
     {
       "line": "R. Vamos alegres a la casa del Señor.",
@@ -42,24 +36,24 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "¡Qué alegría cuando me dijeron:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¡Qué alegría cuando me dijeron:"
     },
     {
-      "line": "«Vamos a la casa del Señor»!",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«Vamos a la casa del Señor»!"
     },
     {
       "line": "Ya están pisando nuestros pies",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "tus umbrales, Jerusalén. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tus umbrales, Jerusalén. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Allá suben las tribus,",
@@ -74,8 +68,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "a celebrar el nombre del Señor;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "a celebrar el nombre del Señor;"
     },
     {
       "line": "en ella están los tribunales de justicia,",
@@ -85,5 +79,11 @@
       "line": "en el palacio de David. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "respuesta": "R. Vamos alegres a la casa del Señor.",
+  "id": "seup_185",
+  "salmo": "Salmo responsorial: Salmo 121, 1-2. 4-5 (R.: cf. 1)",
+  "sourceBook": "eucaristia",
+  "celebracion": "Viernes de la 31ª semana de Tiempo Ordinario"
 }

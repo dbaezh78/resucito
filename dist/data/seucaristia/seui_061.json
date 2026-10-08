@@ -1,15 +1,4 @@
 {
-  "id": "seui_061",
-  "title": "Lunes de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: 2a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5111,
-  "respuesta": "R. El Señor da a conocer su victoria.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Cantad al Señor un cántico nuevo,",
@@ -30,20 +19,30 @@
       "gritad, vitoread, tocad. R."
     ]
   ],
+  "celebracion": "Lunes de la 11ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Lunes",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. El Señor da a conocer su victoria.",
+  "searchPool": "lunes de la 11 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 97 1 2 3ab 3cd 4 r 2a semana 11 semana xi lunes 11 xi r el senor da a conocer su victoria cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclamad al senor tierra entera gritad vitoread tocad r",
+  "id": "seui_061",
+  "title": "Lunes de la 11ª semana de Tiempo Ordinario",
+  "hasAudio": false,
   "textoCompleto": "Cantad al Señor un cántico nuevo,\nporque ha hecho maravillas:\nsu diestra le ha dado la victoria,\nsu santo brazo. R.\n\nEl Señor da a conocer su victoria,\nrevela a las naciones su justicia:\nse acordó de su misericordia y su fidelidad\nen favor de la casa de Israel. R.\n\nLos confines de la tierra han contemplado\nla victoria de nuestro Dios.\nAclamad al Señor, tierra entera;\ngritad, vitoread, tocad. R.",
+  "orden": 5111,
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 11 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 97 1 2 3ab 3cd 4 r 2a semana 11 semana xi lunes 11 xi r el senor da a conocer su victoria cantad al senor un cantico nuevo porque ha hecho maravillas su diestra le ha dado la victoria su santo brazo r el senor da a conocer su victoria revela a las naciones su justicia se acordo de su misericordia y su fidelidad en favor de la casa de israel r los confines de la tierra han contemplado la victoria de nuestro dios aclamad al senor tierra entera gritad vitoread tocad r",
+  "subtitle": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: 2a)",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 97, 1. 2-3ab. 3cd-4 (R.: 2a)",
   "lizq": [
     {
       "line": "R. El Señor da a conocer su victoria.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cantad al Señor un cántico nuevo,",
@@ -66,8 +65,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor da a conocer su victoria,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor da a conocer su victoria,"
     },
     {
       "line": "revela a las naciones su justicia:",
@@ -86,20 +85,21 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Los confines de la tierra han contemplado",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los confines de la tierra han contemplado"
     },
     {
       "line": "la victoria de nuestro Dios.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Aclamad al Señor, tierra entera;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Aclamad al Señor, tierra entera;"
     },
     {
       "line": "gritad, vitoread, tocad. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Año Impar"
 }

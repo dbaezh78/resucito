@@ -1,10 +1,7 @@
 {
-  "id": "seuf_012",
-  "title": "Sábado de la 2ª semana de Adviento",
-  "celebracion": "Sábado de la 2ª semana de Adviento",
-  "subtitle": "Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
-  "salmo": "Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
+  "dia": "Sábado",
   "ciclo": "Ciclo A, B y C",
+  "respuestaOpcional": "",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,49 +9,27 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Adviento",
-  "dia": "Sábado",
-  "orden": 126,
-  "respuesta": "R. Oh Dios, restáuranos, que brille tu rostro y nos salve.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Pastor de Israel, escucha,",
-      "tú que te sientas sobre querubines, resplandece;",
-      "despierta tu poder y ven a salvarnos. R."
-    ],
-    [
-      "Dios de los ejércitos, vuélvete:",
-      "mira desde el cielo, fíjate,",
-      "ven a visitar tu viña,",
-      "la cepa que tu diestra plantó,",
-      "y que tú hiciste vigorosa. R."
-    ],
-    [
-      "Que tu mano proteja a tu escogido,",
-      "al hombre que tú fortaleciste.",
-      "No nos alejaremos de ti:",
-      "danos vida, para que invoquemos tu nombre. R."
-    ]
-  ],
+  "hasAudio": false,
+  "stage": "Liturgia",
+  "id": "seuf_012",
   "textoCompleto": "Pastor de Israel, escucha,\ntú que te sientas sobre querubines, resplandece;\ndespierta tu poder y ven a salvarnos. R.\n\nDios de los ejércitos, vuélvete:\nmira desde el cielo, fíjate,\nven a visitar tu viña,\nla cepa que tu diestra plantó,\ny que tú hiciste vigorosa. R.\n\nQue tu mano proteja a tu escogido,\nal hombre que tú fortaleciste.\nNo nos alejaremos de ti:\ndanos vida, para que invoquemos tu nombre. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "tiempo": "Adviento",
+  "salmo": "Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
   "searchPool": "sabado de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento sabado salmo 79 2ac y 3b 15 16 18 19 r 4 semana 2 semana ii sabado feria r oh dios restauranos que brille tu rostro y nos salve pastor de israel escucha tu que te sientas sobre querubines resplandece despierta tu poder y ven a salvarnos r dios de los ejercitos vuelvete mira desde el cielo fijate ven a visitar tu vina la cepa que tu diestra planto y que tu hiciste vigorosa r que tu mano proteja a tu escogido al hombre que tu fortaleciste no nos alejaremos de ti danos vida para que invoquemos tu nombre r",
+  "respuesta": "R. Oh Dios, restáuranos, que brille tu rostro y nos salve.",
   "lizq": [
     {
-      "line": "R. Oh Dios, restáuranos,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Oh Dios, restáuranos,"
     },
     {
-      "line": "que brille tu rostro y nos salve.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "que brille tu rostro y nos salve."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Pastor de Israel, escucha,",
@@ -97,8 +72,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Que tu mano proteja a tu escogido,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que tu mano proteja a tu escogido,"
     },
     {
       "line": "al hombre que tú fortaleciste.",
@@ -112,5 +87,30 @@
       "line": "danos vida, para que invoquemos tu nombre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
+  ],
+  "orden": 126,
+  "subtitle": "Salmo 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Sábado de la 2ª semana de Adviento",
+  "celebracion": "Sábado de la 2ª semana de Adviento",
+  "estrofas": [
+    [
+      "Pastor de Israel, escucha,",
+      "tú que te sientas sobre querubines, resplandece;",
+      "despierta tu poder y ven a salvarnos. R."
+    ],
+    [
+      "Dios de los ejércitos, vuélvete:",
+      "mira desde el cielo, fíjate,",
+      "ven a visitar tu viña,",
+      "la cepa que tu diestra plantó,",
+      "y que tú hiciste vigorosa. R."
+    ],
+    [
+      "Que tu mano proteja a tu escogido,",
+      "al hombre que tú fortaleciste.",
+      "No nos alejaremos de ti:",
+      "danos vida, para que invoquemos tu nombre. R."
+    ]
   ]
 }

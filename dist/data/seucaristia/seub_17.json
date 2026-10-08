@@ -1,15 +1,4 @@
 {
-  "id": "seub_17",
-  "title": "Cuarto domingo de Cuaresma",
-  "celebracion": "Cuarto domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 136, 1-2. 3. 4. 5. 6 (R.: 6a)",
-  "salmo": "Salmo responsorial: Salmo 136, 1-2. 3. 4. 5. 6 (R.: 6a)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
-  "orden": 304,
-  "respuesta": "R. Que se me pegue la lengua al paladar si no me acuerdo de ti.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Junto a los canales de Babilonia",
@@ -35,12 +24,12 @@
       "en la cumbre de mis alegrías. R."
     ]
   ],
-  "textoCompleto": "Junto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.\n\nAllí los que nos deportaron nos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.\n\n¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.\n\nQue se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "ciclo": "Ciclo B",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "cuarto domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 136 1 2 3 4 5 6 r 6a r que se me pegue la lengua al paladar si no me acuerdo de ti junto a los canales de babilonia nos sentamos a llorar con nostalgia de sion en los sauces de sus orillas colgabamos nuestras citaras r alli los que nos deportaron nos invitaban a cantar nuestros opresores a divertirlos cantadnos un cantar de sion r como cantar un cantico del senor en tierra extranjera si me olvido de ti jerusalen que se me paralice la mano derecha r que se me pegue la lengua al paladar si no me acuerdo de ti si no pongo a jerusalen en la cumbre de mis alegrias r",
+  "subtitle": "Salmo responsorial: Salmo 136, 1-2. 3. 4. 5. 6 (R.: 6a)",
+  "id": "seub_17",
+  "respuestaOpcional": "",
+  "respuesta": "R. Que se me pegue la lengua al paladar si no me acuerdo de ti.",
   "lizq": [
     {
       "line": "R. Que se me pegue la lengua al paladar",
@@ -51,16 +40,16 @@
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Junto a los canales de Babilonia",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Junto a los canales de Babilonia"
     },
     {
-      "line": "nos sentamos a llorar con nostalgia de Sión;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "nos sentamos a llorar con nostalgia de Sión;"
     },
     {
       "line": "en los sauces de sus orillas",
@@ -79,20 +68,20 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "nuestros opresores, a divertirlos:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "nuestros opresores, a divertirlos:"
     },
     {
       "line": "«Cantadnos un cantar de Sión». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "¡Cómo cantar un cántico del Señor",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "¡Cómo cantar un cántico del Señor"
     },
     {
       "line": "en tierra extranjera!",
@@ -103,8 +92,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que se me paralice la mano derecha. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que se me paralice la mano derecha. R."
     },
     {
       "line": "",
@@ -115,16 +104,27 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "si no me acuerdo de ti,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "si no me acuerdo de ti,"
     },
     {
       "line": "si no pongo a Jerusalén",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en la cumbre de mis alegrías. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en la cumbre de mis alegrías. R."
     }
-  ]
+  ],
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "salmo": "Salmo responsorial: Salmo 136, 1-2. 3. 4. 5. 6 (R.: 6a)",
+  "textoCompleto": "Junto a los canales de Babilonia\nnos sentamos a llorar con nostalgia de Sión;\nen los sauces de sus orillas\ncolgábamos nuestras cítaras. R.\n\nAllí los que nos deportaron nos invitaban a cantar;\nnuestros opresores, a divertirlos:\n«Cantadnos un cantar de Sión». R.\n\n¡Cómo cantar un cántico del Señor\nen tierra extranjera!\nSi me olvido de ti, Jerusalén,\nque se me paralice la mano derecha. R.\n\nQue se me pegue la lengua al paladar\nsi no me acuerdo de ti,\nsi no pongo a Jerusalén\nen la cumbre de mis alegrías. R.",
+  "orden": 304,
+  "tiempo": "Cuaresma",
+  "sourceBook": "eucaristia",
+  "celebracion": "Cuarto domingo de Cuaresma",
+  "searchPool": "cuarto domingo de cuaresma ciclo b cuaresma domingo salmo responsorial salmo 136 1 2 3 4 5 6 r 6a r que se me pegue la lengua al paladar si no me acuerdo de ti junto a los canales de babilonia nos sentamos a llorar con nostalgia de sion en los sauces de sus orillas colgabamos nuestras citaras r alli los que nos deportaron nos invitaban a cantar nuestros opresores a divertirlos cantadnos un cantar de sion r como cantar un cantico del senor en tierra extranjera si me olvido de ti jerusalen que se me paralice la mano derecha r que se me pegue la lengua al paladar si no me acuerdo de ti si no pongo a jerusalen en la cumbre de mis alegrias r",
+  "dia": "Domingo",
+  "title": "Cuarto domingo de Cuaresma"
 }

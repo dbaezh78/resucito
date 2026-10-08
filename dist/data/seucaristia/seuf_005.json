@@ -1,50 +1,15 @@
 {
-  "id": "seuf_005",
-  "title": "Viernes de la 1ª semana de Adviento",
   "celebracion": "Viernes de la 1ª semana de Adviento",
-  "subtitle": "Salmo 26, 1. 4. 13-14 (R.; 1a)",
-  "salmo": "Salmo 26, 1. 4. 13-14 (R.; 1a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
+  "title": "Viernes de la 1ª semana de Adviento",
+  "id": "seuf_005",
   "tiempo": "Adviento",
   "dia": "Viernes",
   "orden": 115,
+  "salmo": "Salmo 26, 1. 4. 13-14 (R.; 1a)",
   "respuesta": "R. El Señor es mi luz y mi salvación.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "El Señor es mi luz y mi salvación,",
-      "¿a quién temeré?",
-      "El Señor es la defensa de mi vida,",
-      "¿quién me hará temblar? R."
-    ],
-    [
-      "Una cosa pido al Señor,",
-      "eso buscaré:",
-      "habitar en la casa del Señor",
-      "por los días de mi vida;",
-      "gozar de la dulzura del Señor,",
-      "contemplando su templo. R."
-    ],
-    [
-      "Espero gozar de la dicha del Señor",
-      "en el país de la vida.",
-      "Espera en el Señor, sé valiente,",
-      "ten ánimo, espera en el Señor. R."
-    ]
-  ],
-  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "viernes de la 1 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento viernes salmo 26 1 4 13 14 r 1a semana 1 semana i viernes feria r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "respuestaOpcional": "",
+  "stage": "Liturgia",
   "lizq": [
     {
       "line": "R. El Señor es mi luz y mi salvación.",
@@ -55,20 +20,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor es mi luz y mi salvación,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es mi luz y mi salvación,"
     },
     {
-      "line": "¿a quién temeré?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿a quién temeré?"
     },
     {
-      "line": "El Señor es la defensa de mi vida,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor es la defensa de mi vida,"
     },
     {
-      "line": "¿quién me hará temblar? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "¿quién me hará temblar? R."
     },
     {
       "line": "",
@@ -103,20 +68,55 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Espero gozar de la dicha del Señor",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Espero gozar de la dicha del Señor"
     },
     {
       "line": "en el país de la vida.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Espera en el Señor, sé valiente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Espera en el Señor, sé valiente,"
     },
     {
       "line": "ten ánimo, espera en el Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo 26, 1. 4. 13-14 (R.; 1a)",
+  "sourceBook": "eucaristia",
+  "estrofas": [
+    [
+      "El Señor es mi luz y mi salvación,",
+      "¿a quién temeré?",
+      "El Señor es la defensa de mi vida,",
+      "¿quién me hará temblar? R."
+    ],
+    [
+      "Una cosa pido al Señor,",
+      "eso buscaré:",
+      "habitar en la casa del Señor",
+      "por los días de mi vida;",
+      "gozar de la dulzura del Señor,",
+      "contemplando su templo. R."
+    ],
+    [
+      "Espero gozar de la dicha del Señor",
+      "en el país de la vida.",
+      "Espera en el Señor, sé valiente,",
+      "ten ánimo, espera en el Señor. R."
+    ]
+  ],
+  "ciclo": "Ciclo A, B y C",
+  "searchPool": "viernes de la 1 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento viernes salmo 26 1 4 13 14 r 1a semana 1 semana i viernes feria r el senor es mi luz y mi salvacion el senor es mi luz y mi salvacion a quien temere el senor es la defensa de mi vida quien me hara temblar r una cosa pido al senor eso buscare habitar en la casa del senor por los dias de mi vida gozar de la dulzura del senor contemplando su templo r espero gozar de la dicha del senor en el pais de la vida espera en el senor se valiente ten animo espera en el senor r",
+  "textoCompleto": "El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar? R.\n\nUna cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\npor los días de mi vida;\ngozar de la dulzura del Señor,\ncontemplando su templo. R.\n\nEspero gozar de la dicha del Señor\nen el país de la vida.\nEspera en el Señor, sé valiente,\nten ánimo, espera en el Señor. R."
 }

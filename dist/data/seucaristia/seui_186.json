@@ -1,81 +1,49 @@
 {
-  "id": "seui_186",
-  "title": "Sábado de la 31ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 31ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 4-5. 10-11 (R.: cf. 1)",
-  "salmo": "Salmo responsorial: Salmo 144, 2-3. 4-5. 10-11 (R.: cf. 1)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5316,
-  "respuesta": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Día tras día, te bendeciré",
-      "y alabaré tu nombre por siempre jamás.",
-      "Grande es el Señor, merece toda alabanza,",
-      "es incalculable su grandeza. R."
-    ],
-    [
-      "Una generación pondera tus obras a la otra,",
-      "y le cuenta tus hazañas.",
-      "Alaban ellos la gloria de tu majestad,",
-      "y yo repito tus maravillas. R."
-    ],
-    [
-      "Que todas las criaturas te den gracias, Señor,",
-      "que te bendigan tus fieles;",
-      "que proclamen la gloria de tu reinado,",
-      "que hablen de tus hazañas. R."
-    ]
-  ],
-  "textoCompleto": "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nUna generación pondera tus obras a la otra,\ny le cuenta tus hazañas.\nAlaban ellos la gloria de tu majestad,\ny yo repito tus maravillas. R.\n\nQue todas las criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la 31 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 144 2 3 4 5 10 11 r cf 1 semana 31 semana xxxi sabado 31 xxxi r bendecire tu nombre por siempre dios mio mi rey dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r una generacion pondera tus obras a la otra y le cuenta tus hazanas alaban ellos la gloria de tu majestad y yo repito tus maravillas r que todas las criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r",
+  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 4-5. 10-11 (R.: cf. 1)",
+  "orden": 5316,
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 144, 2-3. 4-5. 10-11 (R.: cf. 1)",
   "lizq": [
     {
       "line": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Día tras día, te bendeciré",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Día tras día, te bendeciré"
     },
     {
       "line": "y alabaré tu nombre por siempre jamás.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Grande es el Señor, merece toda alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Grande es el Señor, merece toda alabanza,"
     },
     {
-      "line": "es incalculable su grandeza. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "es incalculable su grandeza. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Una generación pondera tus obras a la otra,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Una generación pondera tus obras a la otra,"
     },
     {
       "line": "y le cuenta tus hazañas.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Alaban ellos la gloria de tu majestad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Alaban ellos la gloria de tu majestad,"
     },
     {
       "line": "y yo repito tus maravillas. R.",
@@ -101,5 +69,37 @@
       "line": "que hablen de tus hazañas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "title": "Sábado de la 31ª semana de Tiempo Ordinario",
+  "celebracion": "Sábado de la 31ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "dia": "Sábado",
+  "textoCompleto": "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nUna generación pondera tus obras a la otra,\ny le cuenta tus hazañas.\nAlaban ellos la gloria de tu majestad,\ny yo repito tus maravillas. R.\n\nQue todas las criaturas te den gracias, Señor,\nque te bendigan tus fieles;\nque proclamen la gloria de tu reinado,\nque hablen de tus hazañas. R.",
+  "searchPool": "sabado de la 31 semana de tiempo ordinario ano impar tiempo ordinario sabado salmo responsorial salmo 144 2 3 4 5 10 11 r cf 1 semana 31 semana xxxi sabado 31 xxxi r bendecire tu nombre por siempre dios mio mi rey dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r una generacion pondera tus obras a la otra y le cuenta tus hazanas alaban ellos la gloria de tu majestad y yo repito tus maravillas r que todas las criaturas te den gracias senor que te bendigan tus fieles que proclamen la gloria de tu reinado que hablen de tus hazanas r",
+  "estrofas": [
+    [
+      "Día tras día, te bendeciré",
+      "y alabaré tu nombre por siempre jamás.",
+      "Grande es el Señor, merece toda alabanza,",
+      "es incalculable su grandeza. R."
+    ],
+    [
+      "Una generación pondera tus obras a la otra,",
+      "y le cuenta tus hazañas.",
+      "Alaban ellos la gloria de tu majestad,",
+      "y yo repito tus maravillas. R."
+    ],
+    [
+      "Que todas las criaturas te den gracias, Señor,",
+      "que te bendigan tus fieles;",
+      "que proclamen la gloria de tu reinado,",
+      "que hablen de tus hazañas. R."
+    ]
+  ],
+  "respuesta": "R. Bendeciré tu nombre por siempre, Dios mío, mi rey.",
+  "id": "seui_186"
 }

@@ -1,15 +1,119 @@
 {
-  "id": "seup_099",
-  "title": "Miércoles de la 17ª semana de Tiempo Ordinario",
+  "lizq": [
+    {
+      "line": "R. Dios es mi refugio en el peligro.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Líbrame de mi enemigo, Dios mío;",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "protégeme de mis agresores;"
+    },
+    {
+      "line": "líbrame de los malhechores,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sálvame de los hombres sanguinarios. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mira que me están acechando,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y me acosan los poderosos:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "sin que yo haya pecado ni faltado, Señor,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "sin culpa mía, avanzan para acometerme. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Estoy velando contigo, fuerza mía,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque tú, oh Dios, eres mi alcázar;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que tu favor se adelante, oh Dios,"
+    },
+    {
+      "line": "y me haga ver la derrota del enemigo. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Pero yo cantaré tu fuerza,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "por la mañana aclamaré tu misericordia;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque has sido mi alcázar"
+    },
+    {
+      "line": "y mi refugio en el peligro. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Y tañeré en tu honor, fuerza mía,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "porque tú, oh Dios, eres mi alcázar. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "searchPool": "miercoles de la 17 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 58 23 4 5a 10 11 17 18 r 17d semana 17 semana xvii miercoles 17 xvii r dios es mi refugio en el peligro librame de mi enemigo dios mio protegeme de mis agresores librame de los malhechores salvame de los hombres sanguinarios r mira que me estan acechando y me acosan los poderosos sin que yo haya pecado ni faltado senor sin culpa mia avanzan para acometerme r estoy velando contigo fuerza mia porque tu oh dios eres mi alcazar que tu favor se adelante oh dios y me haga ver la derrota del enemigo r pero yo cantare tu fuerza por la manana aclamare tu misericordia porque has sido mi alcazar y mi refugio en el peligro r y tanere en tu honor fuerza mia porque tu oh dios eres mi alcazar r",
   "celebracion": "Miércoles de la 17ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 58, 23. 4-5a. 10-11. 17. 18 (R.: 17d)",
-  "salmo": "Salmo responsorial: Salmo 58, 23. 4-5a. 10-11. 17. 18 (R.: 17d)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5173,
   "respuesta": "R. Dios es mi refugio en el peligro.",
+  "textoCompleto": "Líbrame de mi enemigo, Dios mío;\nprotégeme de mis agresores;\nlíbrame de los malhechores,\nsálvame de los hombres sanguinarios. R.\n\nMira que me están acechando,\ny me acosan los poderosos:\nsin que yo haya pecado ni faltado, Señor,\nsin culpa mía, avanzan para acometerme. R.\n\nEstoy velando contigo, fuerza mía,\nporque tú, oh Dios, eres mi alcázar;\nque tu favor se adelante, oh Dios,\ny me haga ver la derrota del enemigo. R.\n\nPero yo cantaré tu fuerza,\npor la mañana aclamaré tu misericordia;\nporque has sido mi alcázar\ny mi refugio en el peligro. R.\n\nY tañeré en tu honor, fuerza mía,\nporque tú, oh Dios, eres mi alcázar. R.",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 58, 23. 4-5a. 10-11. 17. 18 (R.: 17d)",
+  "id": "seup_099",
+  "dia": "Miércoles",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
   "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 58, 23. 4-5a. 10-11. 17. 18 (R.: 17d)",
+  "ciclo": "Año Par",
+  "hasAudio": false,
+  "title": "Miércoles de la 17ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 5173,
   "estrofas": [
     [
       "Líbrame de mi enemigo, Dios mío;",
@@ -39,109 +143,5 @@
       "Y tañeré en tu honor, fuerza mía,",
       "porque tú, oh Dios, eres mi alcázar. R."
     ]
-  ],
-  "textoCompleto": "Líbrame de mi enemigo, Dios mío;\nprotégeme de mis agresores;\nlíbrame de los malhechores,\nsálvame de los hombres sanguinarios. R.\n\nMira que me están acechando,\ny me acosan los poderosos:\nsin que yo haya pecado ni faltado, Señor,\nsin culpa mía, avanzan para acometerme. R.\n\nEstoy velando contigo, fuerza mía,\nporque tú, oh Dios, eres mi alcázar;\nque tu favor se adelante, oh Dios,\ny me haga ver la derrota del enemigo. R.\n\nPero yo cantaré tu fuerza,\npor la mañana aclamaré tu misericordia;\nporque has sido mi alcázar\ny mi refugio en el peligro. R.\n\nY tañeré en tu honor, fuerza mía,\nporque tú, oh Dios, eres mi alcázar. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 17 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 58 23 4 5a 10 11 17 18 r 17d semana 17 semana xvii miercoles 17 xvii r dios es mi refugio en el peligro librame de mi enemigo dios mio protegeme de mis agresores librame de los malhechores salvame de los hombres sanguinarios r mira que me estan acechando y me acosan los poderosos sin que yo haya pecado ni faltado senor sin culpa mia avanzan para acometerme r estoy velando contigo fuerza mia porque tu oh dios eres mi alcazar que tu favor se adelante oh dios y me haga ver la derrota del enemigo r pero yo cantare tu fuerza por la manana aclamare tu misericordia porque has sido mi alcazar y mi refugio en el peligro r y tanere en tu honor fuerza mia porque tu oh dios eres mi alcazar r",
-  "lizq": [
-    {
-      "line": "R. Dios es mi refugio en el peligro.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Líbrame de mi enemigo, Dios mío;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "protégeme de mis agresores;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "líbrame de los malhechores,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sálvame de los hombres sanguinarios. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Mira que me están acechando,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y me acosan los poderosos:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sin que yo haya pecado ni faltado, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sin culpa mía, avanzan para acometerme. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Estoy velando contigo, fuerza mía,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "porque tú, oh Dios, eres mi alcázar;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "que tu favor se adelante, oh Dios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y me haga ver la derrota del enemigo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Pero yo cantaré tu fuerza,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "por la mañana aclamaré tu misericordia;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "porque has sido mi alcázar",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y mi refugio en el peligro. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Y tañeré en tu honor, fuerza mía,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "porque tú, oh Dios, eres mi alcázar. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
   ]
 }

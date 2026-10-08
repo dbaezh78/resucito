@@ -1,36 +1,10 @@
 {
-  "id": "seub_33",
-  "title": "Tercer domingo de Pascua",
-  "celebracion": "Tercer domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 4, 2. 7. 9 (R.: cf. 7)",
-  "salmo": "Salmo responsorial: Salmo 4, 2. 7. 9 (R.: cf. 7)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
-  "respuesta": "R. Haz brillar sobre nosotros la luz de tu rostro, Señor.",
-  "respuestaOpcional": "R. Aleluya",
-  "estrofas": [
-    [
-      "Escúchame cuando te invoco, Dios, defensor mío;",
-      "tú que en el aprieto me diste anchura,",
-      "ten piedad de mí y escucha mi oración. R."
-    ],
-    [
-      "Hay muchos que dicen: «¿Quién nos hará ver la dicha,",
-      "si la luz de tu rostro ha huido de nosotros?». R."
-    ],
-    [
-      "En paz me acuesto y en seguida me duermo,",
-      "porque tú solo, Señor, me haces vivir tranquilo. R."
-    ]
-  ],
-  "textoCompleto": "Escúchame cuando te invoco, Dios, defensor mío;\ntú que en el aprieto me diste anchura,\nten piedad de mí y escucha mi oración. R.\n\nHay muchos que dicen: «¿Quién nos hará ver la dicha,\nsi la luz de tu rostro ha huido de nosotros?». R.\n\nEn paz me acuesto y en seguida me duermo,\nporque tú solo, Señor, me haces vivir tranquilo. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "tercer domingo de pascua ciclo b pascua domingo salmo responsorial salmo 4 2 7 9 r cf 7 r haz brillar sobre nosotros la luz de tu rostro senor r aleluya escuchame cuando te invoco dios defensor mio tu que en el aprieto me diste anchura ten piedad de mi y escucha mi oracion r hay muchos que dicen quien nos hara ver la dicha si la luz de tu rostro ha huido de nosotros r en paz me acuesto y en seguida me duermo porque tu solo senor me haces vivir tranquilo r",
+  "respuesta": "R. Haz brillar sobre nosotros la luz de tu rostro, Señor.",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo responsorial: Salmo 4, 2. 7. 9 (R.: cf. 7)",
+  "textoCompleto": "Escúchame cuando te invoco, Dios, defensor mío;\ntú que en el aprieto me diste anchura,\nten piedad de mí y escucha mi oración. R.\n\nHay muchos que dicen: «¿Quién nos hará ver la dicha,\nsi la luz de tu rostro ha huido de nosotros?». R.\n\nEn paz me acuesto y en seguida me duermo,\nporque tú solo, Señor, me haces vivir tranquilo. R.",
+  "orden": 410,
   "lizq": [
     {
       "line": "R. Haz brillar sobre nosotros la luz de tu rostro, Señor.",
@@ -41,8 +15,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya",
@@ -53,8 +27,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Escúchame cuando te invoco, Dios, defensor mío;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Escúchame cuando te invoco, Dios, defensor mío;"
     },
     {
       "line": "tú que en el aprieto me diste anchura,",
@@ -77,16 +51,42 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "En paz me acuesto y en seguida me duermo,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "porque tú solo, Señor, me haces vivir tranquilo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "porque tú solo, Señor, me haces vivir tranquilo. R."
     }
-  ]
+  ],
+  "respuestaOpcional": "R. Aleluya",
+  "hasAudio": false,
+  "celebracion": "Tercer domingo de Pascua",
+  "title": "Tercer domingo de Pascua",
+  "dia": "Domingo",
+  "id": "seub_33",
+  "tiempo": "Pascua",
+  "ciclo": "Ciclo B",
+  "subtitle": "Salmo responsorial: Salmo 4, 2. 7. 9 (R.: cf. 7)",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "Escúchame cuando te invoco, Dios, defensor mío;",
+      "tú que en el aprieto me diste anchura,",
+      "ten piedad de mí y escucha mi oración. R."
+    ],
+    [
+      "Hay muchos que dicen: «¿Quién nos hará ver la dicha,",
+      "si la luz de tu rostro ha huido de nosotros?». R."
+    ],
+    [
+      "En paz me acuesto y en seguida me duermo,",
+      "porque tú solo, Señor, me haces vivir tranquilo. R."
+    ]
+  ],
+  "stage": "Liturgia"
 }

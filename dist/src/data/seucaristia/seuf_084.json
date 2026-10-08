@@ -1,10 +1,7 @@
 {
-  "id": "seuf_084",
-  "title": "Jueves de la octava de Pascua",
-  "celebracion": "Jueves de la octava de Pascua",
+  "respuesta": "R. Señor, dueño nuestro, ¡qué admirable es tu nombre en toda la tierra!",
   "subtitle": "Salmo 8, 2a y 5. 6-7. 8-9 (R.: 2ab)",
-  "salmo": "Salmo 8, 2a y 5. 6-7. 8-9 (R.: 2ab)",
-  "ciclo": "Ciclo A, B y C",
+  "respuestaOpcional": "R. Aleluya.",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,40 +9,13 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Jueves",
-  "orden": 404,
-  "respuesta": "R. Señor, dueño nuestro, ¡qué admirable es tu nombre en toda la tierra!",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "¡Señor, dueño nuestro,",
-      "¿qué es el hombre, para que te acuerdes de él,",
-      "el ser humano, para darle poder? R."
-    ],
-    [
-      "Lo hiciste poco inferior a los ángeles,",
-      "lo coronaste de gloria y dignidad,",
-      "le diste el mando sobre las obras de tus manos,",
-      "todo lo sometiste bajo sus pies. R."
-    ],
-    [
-      "Rebaños de ovejas y toros,",
-      "y hasta las bestias del campo,",
-      "las aves del cielo, los peces del mar,",
-      "que trazan sendas por el mar. R."
-    ]
-  ],
-  "textoCompleto": "¡Señor, dueño nuestro,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos,\ntodo lo sometiste bajo sus pies. R.\n\nRebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "jueves de la octava de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 8 2a y 5 6 7 8 9 r 2ab jueves feria r senor dueno nuestro que admirable es tu nombre en toda la tierra r aleluya senor dueno nuestro que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos todo lo sometiste bajo sus pies r rebanos de ovejas y toros y hasta las bestias del campo las aves del cielo los peces del mar que trazan sendas por el mar r",
+  "id": "seuf_084",
+  "textoCompleto": "¡Señor, dueño nuestro,\n¿qué es el hombre, para que te acuerdes de él,\nel ser humano, para darle poder? R.\n\nLo hiciste poco inferior a los ángeles,\nlo coronaste de gloria y dignidad,\nle diste el mando sobre las obras de tus manos,\ntodo lo sometiste bajo sus pies. R.\n\nRebaños de ovejas y toros,\ny hasta las bestias del campo,\nlas aves del cielo, los peces del mar,\nque trazan sendas por el mar. R.",
   "lizq": [
     {
-      "line": "R. Señor, dueño nuestro,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Señor, dueño nuestro,"
     },
     {
       "line": "¡qué admirable es tu nombre",
@@ -60,8 +30,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
@@ -76,32 +46,32 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "¿qué es el hombre, para que te acuerdes de él,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¿qué es el hombre, para que te acuerdes de él,"
     },
     {
-      "line": "el ser humano, para darle poder? R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "el ser humano, para darle poder? R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Lo hiciste poco inferior a los ángeles,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Lo hiciste poco inferior a los ángeles,"
     },
     {
-      "line": "lo coronaste de gloria y dignidad,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lo coronaste de gloria y dignidad,"
     },
     {
       "line": "le diste el mando sobre las obras de tus manos,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "todo lo sometiste bajo sus pies. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "todo lo sometiste bajo sus pies. R."
     },
     {
       "line": "",
@@ -120,8 +90,38 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que trazan sendas por el mar. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que trazan sendas por el mar. R."
     }
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Pascua",
+  "celebracion": "Jueves de la octava de Pascua",
+  "searchPool": "jueves de la octava de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua jueves salmo 8 2a y 5 6 7 8 9 r 2ab jueves feria r senor dueno nuestro que admirable es tu nombre en toda la tierra r aleluya senor dueno nuestro que es el hombre para que te acuerdes de el el ser humano para darle poder r lo hiciste poco inferior a los angeles lo coronaste de gloria y dignidad le diste el mando sobre las obras de tus manos todo lo sometiste bajo sus pies r rebanos de ovejas y toros y hasta las bestias del campo las aves del cielo los peces del mar que trazan sendas por el mar r",
+  "title": "Jueves de la octava de Pascua",
+  "orden": 404,
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "salmo": "Salmo 8, 2a y 5. 6-7. 8-9 (R.: 2ab)",
+  "ciclo": "Ciclo A, B y C",
+  "dia": "Jueves",
+  "estrofas": [
+    [
+      "¡Señor, dueño nuestro,",
+      "¿qué es el hombre, para que te acuerdes de él,",
+      "el ser humano, para darle poder? R."
+    ],
+    [
+      "Lo hiciste poco inferior a los ángeles,",
+      "lo coronaste de gloria y dignidad,",
+      "le diste el mando sobre las obras de tus manos,",
+      "todo lo sometiste bajo sus pies. R."
+    ],
+    [
+      "Rebaños de ovejas y toros,",
+      "y hasta las bestias del campo,",
+      "las aves del cielo, los peces del mar,",
+      "que trazan sendas por el mar. R."
+    ]
   ]
 }

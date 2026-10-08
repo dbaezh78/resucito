@@ -1,10 +1,5 @@
 {
-  "id": "seuf_011",
-  "title": "Viernes de la 2ª semana de Adviento",
-  "celebracion": "Viernes de la 2ª semana de Adviento",
-  "subtitle": "Salmo 1, 1-2. 3. 4 y 6 (R.: cf. Jn 8, 12)",
-  "salmo": "Salmo 1, 1-2. 3. 4 y 6 (R.: cf. Jn 8, 12)",
-  "ciclo": "Ciclo A, B y C",
+  "orden": 125,
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,40 +7,9 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Adviento",
-  "dia": "Viernes",
-  "orden": 125,
-  "respuesta": "R. El que te sigue, Señor, tendrá la luz de la vida.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Dichoso el hombre",
-      "que no sigue el consejo de los impíos,",
-      "ni entra por la senda de los pecadores,",
-      "ni se sienta en la reunión de los cínicos;",
-      "sino que su gozo es la ley del Señor,",
-      "y medita su ley día y noche. R."
-    ],
-    [
-      "Será como un árbol",
-      "plantado al borde de la acequia:",
-      "da fruto en su sazón",
-      "y no se marchitan sus hojas;",
-      "y cuanto emprende tiene buen fin. R."
-    ],
-    [
-      "No así los impíos, no así;",
-      "serán paja que arrebata el viento.",
-      "Porque el Señor protege el camino de los justos,",
-      "pero el camino de los impíos acaba mal. R."
-    ]
-  ],
-  "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "viernes de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento viernes salmo 1 1 2 3 4 y 6 r cf jn 8 12 semana 2 semana ii viernes feria r el que te sigue senor tendra la luz de la vida dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
+  "title": "Viernes de la 2ª semana de Adviento",
+  "id": "seuf_011",
+  "celebracion": "Viernes de la 2ª semana de Adviento",
   "lizq": [
     {
       "line": "R. El que te sigue, Señor, tendrá la luz de la vida.",
@@ -56,8 +20,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dichoso el hombre",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso el hombre"
     },
     {
       "line": "que no sigue el consejo de los impíos,",
@@ -68,8 +32,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ni se sienta en la reunión de los cínicos;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ni se sienta en la reunión de los cínicos;"
     },
     {
       "line": "sino que su gozo es la ley del Señor,",
@@ -84,20 +48,20 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Será como un árbol",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Será como un árbol"
     },
     {
-      "line": "plantado al borde de la acequia:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "plantado al borde de la acequia:"
     },
     {
-      "line": "da fruto en su sazón",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "da fruto en su sazón"
     },
     {
-      "line": "y no se marchitan sus hojas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no se marchitan sus hojas;"
     },
     {
       "line": "y cuanto emprende tiene buen fin. R.",
@@ -123,5 +87,41 @@
       "line": "pero el camino de los impíos acaba mal. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
+  ],
+  "hasAudio": false,
+  "salmo": "Salmo 1, 1-2. 3. 4 y 6 (R.: cf. Jn 8, 12)",
+  "respuestaOpcional": "",
+  "respuesta": "R. El que te sigue, Señor, tendrá la luz de la vida.",
+  "searchPool": "viernes de la 2 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento viernes salmo 1 1 2 3 4 y 6 r cf jn 8 12 semana 2 semana ii viernes feria r el que te sigue senor tendra la luz de la vida dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "dia": "Viernes",
+  "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
+  "tiempo": "Adviento",
+  "ciclo": "Ciclo A, B y C",
+  "subtitle": "Salmo 1, 1-2. 3. 4 y 6 (R.: cf. Jn 8, 12)",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "Dichoso el hombre",
+      "que no sigue el consejo de los impíos,",
+      "ni entra por la senda de los pecadores,",
+      "ni se sienta en la reunión de los cínicos;",
+      "sino que su gozo es la ley del Señor,",
+      "y medita su ley día y noche. R."
+    ],
+    [
+      "Será como un árbol",
+      "plantado al borde de la acequia:",
+      "da fruto en su sazón",
+      "y no se marchitan sus hojas;",
+      "y cuanto emprende tiene buen fin. R."
+    ],
+    [
+      "No así los impíos, no así;",
+      "serán paja que arrebata el viento.",
+      "Porque el Señor protege el camino de los justos,",
+      "pero el camino de los impíos acaba mal. R."
+    ]
   ]
 }

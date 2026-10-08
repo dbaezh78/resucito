@@ -1,41 +1,5 @@
 {
-  "id": "seui_109",
-  "title": "Lunes de la 19ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 19ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: 12a)",
-  "salmo": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: 12a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5191,
-  "respuesta": "R. Glorifica al Señor, Jerusalén.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Glorifica al Señor, Jerusalén;",
-      "alaba a tu Dios, Sión:",
-      "que ha reforzado los cerrojos de tus puertas,",
-      "y ha bendecido a tus hijos dentro de ti. R."
-    ],
-    [
-      "Ha puesto paz en tus fronteras,",
-      "te sacia con flor de harina.",
-      "Él envía su mensaje a la tierra,",
-      "y su palabra corre veloz. R."
-    ],
-    [
-      "Anuncia su palabra a Jacob,",
-      "sus decretos y mandatos a Israel;",
-      "con ninguna nación obró así,",
-      "ni les dio a conocer sus mandatos. R."
-    ]
-  ],
-  "textoCompleto": "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nHa puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 19 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 147 12 13 14 15 19 20 r 12a semana 19 semana xix lunes 19 xix r glorifica al senor jerusalen r aleluya glorifica al senor jerusalen alaba a tu dios sion que ha reforzado los cerrojos de tus puertas y ha bendecido a tus hijos dentro de ti r ha puesto paz en tus fronteras te sacia con flor de harina el envia su mensaje a la tierra y su palabra corre veloz r anuncia su palabra a jacob sus decretos y mandatos a israel con ninguna nacion obro asi ni les dio a conocer sus mandatos r",
   "lizq": [
     {
       "line": "R. Glorifica al Señor, Jerusalén.",
@@ -46,8 +10,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
@@ -58,12 +22,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Glorifica al Señor, Jerusalén;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Glorifica al Señor, Jerusalén;"
     },
     {
-      "line": "alaba a tu Dios, Sión:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "alaba a tu Dios, Sión:"
     },
     {
       "line": "que ha reforzado los cerrojos de tus puertas,",
@@ -74,12 +38,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Ha puesto paz en tus fronteras,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Ha puesto paz en tus fronteras,"
     },
     {
       "line": "te sacia con flor de harina.",
@@ -113,5 +77,41 @@
       "line": "ni les dio a conocer sus mandatos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "R. Aleluya.",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Lunes",
+  "estrofas": [
+    [
+      "Glorifica al Señor, Jerusalén;",
+      "alaba a tu Dios, Sión:",
+      "que ha reforzado los cerrojos de tus puertas,",
+      "y ha bendecido a tus hijos dentro de ti. R."
+    ],
+    [
+      "Ha puesto paz en tus fronteras,",
+      "te sacia con flor de harina.",
+      "Él envía su mensaje a la tierra,",
+      "y su palabra corre veloz. R."
+    ],
+    [
+      "Anuncia su palabra a Jacob,",
+      "sus decretos y mandatos a Israel;",
+      "con ninguna nación obró así,",
+      "ni les dio a conocer sus mandatos. R."
+    ]
+  ],
+  "searchPool": "lunes de la 19 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 147 12 13 14 15 19 20 r 12a semana 19 semana xix lunes 19 xix r glorifica al senor jerusalen r aleluya glorifica al senor jerusalen alaba a tu dios sion que ha reforzado los cerrojos de tus puertas y ha bendecido a tus hijos dentro de ti r ha puesto paz en tus fronteras te sacia con flor de harina el envia su mensaje a la tierra y su palabra corre veloz r anuncia su palabra a jacob sus decretos y mandatos a israel con ninguna nacion obro asi ni les dio a conocer sus mandatos r",
+  "celebracion": "Lunes de la 19ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: 12a)",
+  "ciclo": "Año Impar",
+  "subtitle": "Salmo responsorial: Salmo 147, 12-13. 14-15. 19-20 (R.: 12a)",
+  "orden": 5191,
+  "respuesta": "R. Glorifica al Señor, Jerusalén.",
+  "id": "seui_109",
+  "stage": "Liturgia",
+  "title": "Lunes de la 19ª semana de Tiempo Ordinario",
+  "textoCompleto": "Glorifica al Señor, Jerusalén;\nalaba a tu Dios, Sión:\nque ha reforzado los cerrojos de tus puertas,\ny ha bendecido a tus hijos dentro de ti. R.\n\nHa puesto paz en tus fronteras,\nte sacia con flor de harina.\nÉl envía su mensaje a la tierra,\ny su palabra corre veloz. R.\n\nAnuncia su palabra a Jacob,\nsus decretos y mandatos a Israel;\ncon ninguna nación obró así,\nni les dio a conocer sus mandatos. R.",
+  "hasAudio": false
 }

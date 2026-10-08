@@ -1,45 +1,13 @@
 {
-  "id": "seui_116",
-  "title": "Martes de la 20ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 20ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 84, 9. 11-12. 13-14 (R.: 9)",
-  "salmo": "Salmo responsorial: Salmo 84, 9. 11-12. 13-14 (R.: 9)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5202,
-  "respuesta": "R. El Señor anuncia la paz a su pueblo.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Voy a escuchar lo que dice el Señor:",
-      "«Dios anuncia la paz",
-      "a su pueblo y a sus amigos",
-      "y a los que se convierten de corazón». R."
-    ],
-    [
-      "La misericordia y la fidelidad se encuentran,",
-      "la justicia y la paz se besan;",
-      "la fidelidad brota de la tierra,",
-      "y la justicia mira desde el cielo. R."
-    ],
-    [
-      "El Señor nos dará la lluvia,",
-      "y nuestra tierra dará su fruto.",
-      "La justicia marchará ante él,",
-      "la salvación seguirá sus pasos. R."
-    ]
-  ],
-  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos\ny a los que se convierten de corazón». R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "martes de la 20 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 84 9 11 12 13 14 r 9 semana 20 semana xx martes 20 xx r el senor anuncia la paz a su pueblo voy a escuchar lo que dice el senor dios anuncia la paz a su pueblo y a sus amigos y a los que se convierten de corazon r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara la lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r",
+  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos\ny a los que se convierten de corazón». R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
+  "respuestaOpcional": "",
+  "id": "seui_116",
+  "subtitle": "Salmo responsorial: Salmo 84, 9. 11-12. 13-14 (R.: 9)",
   "lizq": [
     {
-      "line": "R. El Señor anuncia la paz a su pueblo.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor anuncia la paz a su pueblo."
     },
     {
       "line": "",
@@ -66,8 +34,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "La misericordia y la fidelidad se encuentran,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "La misericordia y la fidelidad se encuentran,"
     },
     {
       "line": "la justicia y la paz se besan;",
@@ -78,28 +46,60 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y la justicia mira desde el cielo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y la justicia mira desde el cielo. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor nos dará la lluvia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor nos dará la lluvia,"
     },
     {
       "line": "y nuestra tierra dará su fruto.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "La justicia marchará ante él,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "La justicia marchará ante él,"
     },
     {
-      "line": "la salvación seguirá sus pasos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "la salvación seguirá sus pasos. R."
     }
-  ]
+  ],
+  "dia": "Martes",
+  "celebracion": "Martes de la 20ª semana de Tiempo Ordinario",
+  "tiempo": "Tiempo Ordinario",
+  "respuesta": "R. El Señor anuncia la paz a su pueblo.",
+  "title": "Martes de la 20ª semana de Tiempo Ordinario",
+  "estrofas": [
+    [
+      "Voy a escuchar lo que dice el Señor:",
+      "«Dios anuncia la paz",
+      "a su pueblo y a sus amigos",
+      "y a los que se convierten de corazón». R."
+    ],
+    [
+      "La misericordia y la fidelidad se encuentran,",
+      "la justicia y la paz se besan;",
+      "la fidelidad brota de la tierra,",
+      "y la justicia mira desde el cielo. R."
+    ],
+    [
+      "El Señor nos dará la lluvia,",
+      "y nuestra tierra dará su fruto.",
+      "La justicia marchará ante él,",
+      "la salvación seguirá sus pasos. R."
+    ]
+  ],
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "orden": 5202,
+  "searchPool": "martes de la 20 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 84 9 11 12 13 14 r 9 semana 20 semana xx martes 20 xx r el senor anuncia la paz a su pueblo voy a escuchar lo que dice el senor dios anuncia la paz a su pueblo y a sus amigos y a los que se convierten de corazon r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara la lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r",
+  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 84, 9. 11-12. 13-14 (R.: 9)",
+  "ciclo": "Año Impar"
 }

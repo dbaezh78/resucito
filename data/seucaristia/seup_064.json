@@ -1,15 +1,5 @@
 {
   "id": "seup_064",
-  "title": "Jueves de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial Salmo 96, 1-2. 3-4. 5-6. 7 (R.: 12a)",
-  "salmo": "Salmo responsorial Salmo 96, 1-2. 3-4. 5-6. 7 (R.: 12a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
-  "orden": 5114,
-  "respuesta": "R. Alegraos, justos, con el Señor.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "El Señor reina, la tierra goza,",
@@ -35,16 +25,13 @@
       "ante él se postran todos los dioses. R."
     ]
   ],
-  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nTinieblas y nube lo rodean,\njusticia y derecho sostienen su trono. R.\n\nDelante de él avanza fuego,\nabrasando en torno a los enemigos;\nsus relámpagos deslumbran el orbe,\ny, viéndolos, la tierra se estremece. R.\n\nLos montes se derriten como cera\nante el dueño de toda la tierra;\nlos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nLos que adoran estatuas se sonrojan,\nlos que ponen su orgullo en los ídolos;\nante él se postran todos los dioses. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 11 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 96 1 2 3 4 5 6 7 r 12a semana 11 semana xi jueves 11 xi r alegraos justos con el senor el senor reina la tierra goza se alegran las islas innumerables tinieblas y nube lo rodean justicia y derecho sostienen su trono r delante de el avanza fuego abrasando en torno a los enemigos sus relampagos deslumbran el orbe y viendolos la tierra se estremece r los montes se derriten como cera ante el dueno de toda la tierra los cielos pregonan su justicia y todos los pueblos contemplan su gloria r los que adoran estatuas se sonrojan los que ponen su orgullo en los idolos ante el se postran todos los dioses r",
+  "respuesta": "R. Alegraos, justos, con el Señor.",
+  "dia": "Jueves",
   "lizq": [
     {
-      "line": "R. Alegraos, justos, con el Señor.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Alegraos, justos, con el Señor."
     },
     {
       "line": "",
@@ -63,12 +50,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "justicia y derecho sostienen su trono. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "justicia y derecho sostienen su trono. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Delante de él avanza fuego,",
@@ -79,16 +66,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "sus relámpagos deslumbran el orbe,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "sus relámpagos deslumbran el orbe,"
     },
     {
       "line": "y, viéndolos, la tierra se estremece. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Los montes se derriten como cera",
@@ -119,8 +106,21 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "ante él se postran todos los dioses. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ante él se postran todos los dioses. R."
     }
-  ]
+  ],
+  "salmo": "Salmo responsorial Salmo 96, 1-2. 3-4. 5-6. 7 (R.: 12a)",
+  "hasAudio": false,
+  "subtitle": "Salmo responsorial Salmo 96, 1-2. 3-4. 5-6. 7 (R.: 12a)",
+  "tiempo": "Tiempo Ordinario",
+  "orden": 5114,
+  "searchPool": "jueves de la 11 semana de tiempo ordinario ano par tiempo ordinario jueves salmo responsorial salmo 96 1 2 3 4 5 6 7 r 12a semana 11 semana xi jueves 11 xi r alegraos justos con el senor el senor reina la tierra goza se alegran las islas innumerables tinieblas y nube lo rodean justicia y derecho sostienen su trono r delante de el avanza fuego abrasando en torno a los enemigos sus relampagos deslumbran el orbe y viendolos la tierra se estremece r los montes se derriten como cera ante el dueno de toda la tierra los cielos pregonan su justicia y todos los pueblos contemplan su gloria r los que adoran estatuas se sonrojan los que ponen su orgullo en los idolos ante el se postran todos los dioses r",
+  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nTinieblas y nube lo rodean,\njusticia y derecho sostienen su trono. R.\n\nDelante de él avanza fuego,\nabrasando en torno a los enemigos;\nsus relámpagos deslumbran el orbe,\ny, viéndolos, la tierra se estremece. R.\n\nLos montes se derriten como cera\nante el dueño de toda la tierra;\nlos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nLos que adoran estatuas se sonrojan,\nlos que ponen su orgullo en los ídolos;\nante él se postran todos los dioses. R.",
+  "title": "Jueves de la 11ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "celebracion": "Jueves de la 11ª semana de Tiempo Ordinario",
+  "ciclo": "Año Par",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía"
 }

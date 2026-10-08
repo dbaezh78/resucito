@@ -1,22 +1,94 @@
 {
+  "lizq": [
+    {
+      "line": "R. Que tu misericordia, Señor, venga sobre nosotros,",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "como lo esperamos de ti."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
+    },
+    {
+      "line": "R. Aleluya.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Aclamad, justos, al Señor,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que merece la alabanza de los buenos."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dad gracias al Señor con la cítara,"
+    },
+    {
+      "line": "tocad en su honor el arpa de diez cuerdas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Que la palabra del Señor es sincera,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y todas sus acciones son leales;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "él ama la justicia y el derecho,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y su misericordia llena la tierra. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Los ojos del Señor están puestos en sus fieles,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en los que esperan en su misericordia,"
+    },
+    {
+      "line": "para librar sus vidas de la muerte",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y reanimarlos en tiempo de hambre. R."
+    }
+  ],
+  "hasAudio": false,
+  "tiempo": "Pascua",
+  "respuestaOpcional": "R. Aleluya.",
+  "respuesta": "R. Que tu misericordia, Señor, venga sobre nosotros, como lo esperamos de ti.",
   "id": "seuf_092",
-  "title": "Sábado de la segunda semana de Pascua",
-  "celebracion": "Sábado de la segunda semana de Pascua",
   "subtitle": "Salmo 32, 1-2. 4-5. 18-19 (R.: 22)",
   "salmo": "Salmo 32, 1-2. 4-5. 18-19 (R.: 22)",
   "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Sábado",
-  "orden": 426,
-  "respuesta": "R. Que tu misericordia, Señor, venga sobre nosotros, como lo esperamos de ti.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Aclamad, justos, al Señor,",
@@ -38,91 +110,19 @@
     ]
   ],
   "textoCompleto": "Aclamad, justos, al Señor,\nque merece la alabanza de los buenos.\nDad gracias al Señor con la cítara,\ntocad en su honor el arpa de diez cuerdas. R.\n\nQue la palabra del Señor es sincera,\ny todas sus acciones son leales;\nél ama la justicia y el derecho,\ny su misericordia llena la tierra. R.\n\nLos ojos del Señor están puestos en sus fieles,\nen los que esperan en su misericordia,\npara librar sus vidas de la muerte\ny reanimarlos en tiempo de hambre. R.",
-  "sourceBook": "eucaristia",
+  "orden": 426,
+  "celebracion": "Sábado de la segunda semana de Pascua",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "sourceBook": "eucaristia",
   "searchPool": "sabado de la segunda semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 32 1 2 4 5 18 19 r 22 semana 2 semana ii sabado feria r que tu misericordia senor venga sobre nosotros como lo esperamos de ti r aleluya aclamad justos al senor que merece la alabanza de los buenos dad gracias al senor con la citara tocad en su honor el arpa de diez cuerdas r que la palabra del senor es sincera y todas sus acciones son leales el ama la justicia y el derecho y su misericordia llena la tierra r los ojos del senor estan puestos en sus fieles en los que esperan en su misericordia para librar sus vidas de la muerte y reanimarlos en tiempo de hambre r",
-  "lizq": [
-    {
-      "line": "R. Que tu misericordia, Señor, venga sobre nosotros,",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "como lo esperamos de ti.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
-    },
-    {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Aclamad, justos, al Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que merece la alabanza de los buenos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Dad gracias al Señor con la cítara,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "tocad en su honor el arpa de diez cuerdas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Que la palabra del Señor es sincera,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y todas sus acciones son leales;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "él ama la justicia y el derecho,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y su misericordia llena la tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Los ojos del Señor están puestos en sus fieles,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "en los que esperan en su misericordia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "para librar sus vidas de la muerte",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y reanimarlos en tiempo de hambre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
+  "title": "Sábado de la segunda semana de Pascua",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Sábado",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
   ]
 }

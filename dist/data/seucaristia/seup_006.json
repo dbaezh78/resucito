@@ -1,15 +1,6 @@
 {
-  "id": "seup_006",
+  "sourceBook": "eucaristia",
   "title": "Sábado de la 1ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 1ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 20, 2-3. 4-5. 6-7 (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 20, 2-3. 4-5. 6-7 (R.: 2a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5016,
-  "respuesta": "R. Señor, el rey se alegra por tu fuerza.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "¡Señor, el rey se alegra por tu fuerza,",
@@ -24,16 +15,21 @@
       "años que se prolongan sin término. R."
     ]
   ],
+  "celebracion": "Sábado de la 1ª semana de Tiempo Ordinario",
   "textoCompleto": "¡Señor, el rey se alegra por tu fuerza,\ny cuánto goza con tu victoria!\nLe has concedido el deseo de su corazón,\nno le has negado lo que pedían sus labios. R.\n\nTe adelantaste a bendecirlo con el éxito,\ny has puesto en su cabeza una corona de oro fino.\nTe pidió vida y se la has concedido,\naños que se prolongan sin término. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 20, 2-3. 4-5. 6-7 (R.: 2a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "ciclo": "Año Par",
   "searchPool": "sabado de la 1 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 20 2 3 4 5 6 7 r 2a semana 1 semana i sabado 1 i r senor el rey se alegra por tu fuerza senor el rey se alegra por tu fuerza y cuanto goza con tu victoria le has concedido el deseo de su corazon no le has negado lo que pedian sus labios r te adelantaste a bendecirlo con el exito y has puesto en su cabeza una corona de oro fino te pidio vida y se la has concedido anos que se prolongan sin termino r",
+  "orden": 5016,
+  "dia": "Sábado",
+  "id": "seup_006",
+  "stage": "Liturgia",
+  "hasAudio": false,
   "lizq": [
     {
-      "line": "R. Señor, el rey se alegra por tu fuerza.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Señor, el rey se alegra por tu fuerza."
     },
     {
       "line": "",
@@ -48,16 +44,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Le has concedido el deseo de su corazón,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Le has concedido el deseo de su corazón,"
     },
     {
       "line": "no le has negado lo que pedían sus labios. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Te adelantaste a bendecirlo con el éxito,",
@@ -72,8 +68,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "años que se prolongan sin término. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "años que se prolongan sin término. R."
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 20, 2-3. 4-5. 6-7 (R.: 2a)",
+  "respuesta": "R. Señor, el rey se alegra por tu fuerza.",
+  "tiempo": "Tiempo Ordinario",
+  "respuestaOpcional": ""
 }

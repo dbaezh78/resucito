@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v371'; // v2.1.35 Caché persistente e independiente para cantos (+1400 archivos)
+const CACHE_NAME = 'resucito-cache-v372'; // v2.1.36 Sincronización nube-local para salmos eucarísticos
 const SONGS_CACHE_NAME = 'resucito-cantos-cache'; // Caché permanente y separada para no re-descargar cantos
 
 const STATIC_ASSETS = [

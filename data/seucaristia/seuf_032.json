@@ -1,22 +1,5 @@
 {
-  "id": "seuf_032",
-  "title": "5 de enero: Antes de Epifanía",
-  "celebracion": "5 de enero: Antes de Epifanía",
-  "subtitle": "Salmo 99, 1-2. 3. 4. 5 (R.: 1)",
-  "salmo": "Salmo 99, 1-2. 3. 4. 5 (R.: 1)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Navidad",
-  "dia": "Feria",
-  "orden": 225,
-  "respuesta": "R. Aclama al Señor, tierra entera.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Aclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores. R.\n\nSabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.\n\nEntrad por sus puertas con acción de gracias,\npor sus atrios con himnos,\ndándole gracias y bendiciendo su nombre. R.\n\n«El Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades». R.",
   "estrofas": [
     [
       "Aclama al Señor, tierra entera,",
@@ -39,24 +22,22 @@
       "su fidelidad por todas las edades». R."
     ]
   ],
-  "textoCompleto": "Aclama al Señor, tierra entera,\nservid al Señor con alegría,\nentrad en su presencia con vítores. R.\n\nSabed que el Señor es Dios:\nque él nos hizo y somos suyos,\nsu pueblo y ovejas de su rebaño. R.\n\nEntrad por sus puertas con acción de gracias,\npor sus atrios con himnos,\ndándole gracias y bendiciendo su nombre. R.\n\n«El Señor es bueno,\nsu misericordia es eterna,\nsu fidelidad por todas las edades». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo 99, 1-2. 3. 4. 5 (R.: 1)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "5 de enero antes de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad feria salmo 99 1 2 3 4 5 r 1 feria r aclama al senor tierra entera aclama al senor tierra entera servid al senor con alegria entrad en su presencia con vitores r sabed que el senor es dios que el nos hizo y somos suyos su pueblo y ovejas de su rebano r entrad por sus puertas con accion de gracias por sus atrios con himnos dandole gracias y bendiciendo su nombre r el senor es bueno su misericordia es eterna su fidelidad por todas las edades r",
+  "stage": "Liturgia",
+  "ciclo": "Ciclo A, B y C",
   "lizq": [
     {
-      "line": "R. Aclama al Señor, tierra entera.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aclama al Señor, tierra entera."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Aclama al Señor, tierra entera,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Aclama al Señor, tierra entera,"
     },
     {
       "line": "servid al Señor con alegría,",
@@ -67,12 +48,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Sabed que el Señor es Dios:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Sabed que el Señor es Dios:"
     },
     {
       "line": "que él nos hizo y somos suyos,",
@@ -87,8 +68,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Entrad por sus puertas con acción de gracias,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Entrad por sus puertas con acción de gracias,"
     },
     {
       "line": "por sus atrios con himnos,",
@@ -99,8 +80,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "«El Señor es bueno,",
@@ -114,5 +95,24 @@
       "line": "su fidelidad por todas las edades». R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "searchPool": "5 de enero antes de epifania ciclo a ciclo b ciclo c ciclo a b y c navidad feria salmo 99 1 2 3 4 5 r 1 feria r aclama al senor tierra entera aclama al senor tierra entera servid al senor con alegria entrad en su presencia con vitores r sabed que el senor es dios que el nos hizo y somos suyos su pueblo y ovejas de su rebano r entrad por sus puertas con accion de gracias por sus atrios con himnos dandole gracias y bendiciendo su nombre r el senor es bueno su misericordia es eterna su fidelidad por todas las edades r",
+  "sourceBook": "eucaristia",
+  "tiempo": "Navidad",
+  "respuestaOpcional": "",
+  "orden": 225,
+  "dia": "Feria",
+  "hasAudio": false,
+  "title": "5 de enero: Antes de Epifanía",
+  "id": "seuf_032",
+  "respuesta": "R. Aclama al Señor, tierra entera.",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "salmo": "Salmo 99, 1-2. 3. 4. 5 (R.: 1)",
+  "celebracion": "5 de enero: Antes de Epifanía"
 }

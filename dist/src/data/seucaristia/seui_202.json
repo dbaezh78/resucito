@@ -1,15 +1,13 @@
 {
-  "id": "seui_202",
-  "title": "Jueves de la 34ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 34ª semana de Tiempo Ordinario",
-  "subtitle": "Interleccional: Daniel 3, 68. 69. 70. 71. 72. 73. 74",
   "salmo": "Interleccional: Daniel 3, 68. 69. 70. 71. 72. 73. 74",
   "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
+  "catCanto": "Salmo Eucaristía",
   "orden": 5344,
-  "respuesta": "R. Ensalzadlo con himnos por los siglos.",
+  "tiempo": "Tiempo Ordinario",
   "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "dia": "Jueves",
+  "title": "Jueves de la 34ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Rocíos y nevadas, bendecid al Señor. R."
@@ -33,28 +31,26 @@
       "Bendiga la tierra al Señor. R."
     ]
   ],
+  "celebracion": "Jueves de la 34ª semana de Tiempo Ordinario",
   "textoCompleto": "Rocíos y nevadas, bendecid al Señor. R.\n\nTémpanos y hielos, bendecid al Señor. R.\n\nEscarchas y nieves, bendecid al Señor. R.\n\nNoche y día, bendecid al Señor. R.\n\nLuz y tinieblas, bendecid al Señor. R.\n\nRayos y nubes, bendecid al Señor. R.\n\nBendiga la tierra al Señor. R.",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "jueves de la 34 semana de tiempo ordinario ano impar tiempo ordinario jueves interleccional daniel 3 68 69 70 71 72 73 74 semana 34 semana xxxiv jueves 34 xxxiv r ensalzadlo con himnos por los siglos rocios y nevadas bendecid al senor r tempanos y hielos bendecid al senor r escarchas y nieves bendecid al senor r noche y dia bendecid al senor r luz y tinieblas bendecid al senor r rayos y nubes bendecid al senor r bendiga la tierra al senor r",
+  "id": "seui_202",
   "lizq": [
     {
       "line": "R. Ensalzadlo con himnos por los siglos.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Rocíos y nevadas, bendecid al Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Témpanos y hielos, bendecid al Señor. R.",
@@ -85,20 +81,24 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Rayos y nubes, bendecid al Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Bendiga la tierra al Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
     }
-  ]
+  ],
+  "subtitle": "Interleccional: Daniel 3, 68. 69. 70. 71. 72. 73. 74",
+  "respuesta": "R. Ensalzadlo con himnos por los siglos.",
+  "hasAudio": false,
+  "searchPool": "jueves de la 34 semana de tiempo ordinario ano impar tiempo ordinario jueves interleccional daniel 3 68 69 70 71 72 73 74 semana 34 semana xxxiv jueves 34 xxxiv r ensalzadlo con himnos por los siglos rocios y nevadas bendecid al senor r tempanos y hielos bendecid al senor r escarchas y nieves bendecid al senor r noche y dia bendecid al senor r luz y tinieblas bendecid al senor r rayos y nubes bendecid al senor r bendiga la tierra al senor r"
 }

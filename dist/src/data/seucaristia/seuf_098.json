@@ -1,57 +1,12 @@
 {
-  "id": "seuf_098",
-  "title": "Sábado de la tercera semana de Pascua",
-  "celebracion": "Sábado de la tercera semana de Pascua",
-  "subtitle": "Salmo 115, 12-13. 14-15. 16-17 (R.: 12)",
-  "salmo": "Salmo 115, 12-13. 14-15. 16-17 (R.: 12)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Sábado",
-  "orden": 436,
-  "respuesta": "R. ¿Cómo pagaré al Señor todo el bien que me ha hecho?",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "¿Cómo pagaré al Señor",
-      "todo el bien que me ha hecho?",
-      "Alzaré la copa de la salvación,",
-      "invocando su nombre. R."
-    ],
-    [
-      "Cumpliré al Señor mis votos",
-      "en presencia de todo el pueblo.",
-      "Mucho le cuesta al Señor",
-      "la muerte de sus fieles. R."
-    ],
-    [
-      "Señor, yo soy tu siervo,",
-      "siervo tuyo, hijo de tu esclava:",
-      "rompiste mis cadenas.",
-      "Te ofreceré un sacrificio de alabanza,",
-      "invocando tu nombre, Señor. R."
-    ]
-  ],
-  "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo.\nMucho le cuesta al Señor\nla muerte de sus fieles. R.\n\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "sabado de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 115 12 13 14 15 16 17 r 12 semana 3 semana iii sabado feria r como pagare al senor todo el bien que me ha hecho r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r cumplire al senor mis votos en presencia de todo el pueblo mucho le cuesta al senor la muerte de sus fieles r senor yo soy tu siervo siervo tuyo hijo de tu esclava rompiste mis cadenas te ofrecere un sacrificio de alabanza invocando tu nombre senor r",
   "lizq": [
     {
-      "line": "R. ¿Cómo pagaré al Señor",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. ¿Cómo pagaré al Señor"
     },
     {
-      "line": "todo el bien que me ha hecho?",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "todo el bien que me ha hecho?"
     },
     {
       "line": "",
@@ -74,8 +29,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "todo el bien que me ha hecho?",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "todo el bien que me ha hecho?"
     },
     {
       "line": "Alzaré la copa de la salvación,",
@@ -86,8 +41,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Cumpliré al Señor mis votos",
@@ -102,12 +57,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "la muerte de sus fieles. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "la muerte de sus fieles. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Señor, yo soy tu siervo,",
@@ -118,16 +73,61 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "rompiste mis cadenas.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "rompiste mis cadenas."
     },
     {
-      "line": "Te ofreceré un sacrificio de alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Te ofreceré un sacrificio de alabanza,"
     },
     {
       "line": "invocando tu nombre, Señor. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "id": "seuf_098",
+  "hasAudio": false,
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "celebracion": "Sábado de la tercera semana de Pascua",
+  "respuestaOpcional": "R. Aleluya.",
+  "subtitle": "Salmo 115, 12-13. 14-15. 16-17 (R.: 12)",
+  "estrofas": [
+    [
+      "¿Cómo pagaré al Señor",
+      "todo el bien que me ha hecho?",
+      "Alzaré la copa de la salvación,",
+      "invocando su nombre. R."
+    ],
+    [
+      "Cumpliré al Señor mis votos",
+      "en presencia de todo el pueblo.",
+      "Mucho le cuesta al Señor",
+      "la muerte de sus fieles. R."
+    ],
+    [
+      "Señor, yo soy tu siervo,",
+      "siervo tuyo, hijo de tu esclava:",
+      "rompiste mis cadenas.",
+      "Te ofreceré un sacrificio de alabanza,",
+      "invocando tu nombre, Señor. R."
+    ]
+  ],
+  "ciclo": "Ciclo A, B y C",
+  "dia": "Sábado",
+  "salmo": "Salmo 115, 12-13. 14-15. 16-17 (R.: 12)",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "orden": 436,
+  "title": "Sábado de la tercera semana de Pascua",
+  "searchPool": "sabado de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua sabado salmo 115 12 13 14 15 16 17 r 12 semana 3 semana iii sabado feria r como pagare al senor todo el bien que me ha hecho r aleluya como pagare al senor todo el bien que me ha hecho alzare la copa de la salvacion invocando su nombre r cumplire al senor mis votos en presencia de todo el pueblo mucho le cuesta al senor la muerte de sus fieles r senor yo soy tu siervo siervo tuyo hijo de tu esclava rompiste mis cadenas te ofrecere un sacrificio de alabanza invocando tu nombre senor r",
+  "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que me ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo.\nMucho le cuesta al Señor\nla muerte de sus fieles. R.\n\nSeñor, yo soy tu siervo,\nsiervo tuyo, hijo de tu esclava:\nrompiste mis cadenas.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.",
+  "respuesta": "R. ¿Cómo pagaré al Señor todo el bien que me ha hecho?",
+  "tiempo": "Pascua",
+  "catCanto": "Salmo Eucaristía"
 }

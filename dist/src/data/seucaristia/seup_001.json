@@ -1,49 +1,16 @@
 {
-  "id": "seup_001",
-  "title": "Lunes de la 1ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 1ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 14 y 17. 18-19 (R.: 17a)",
   "salmo": "Salmo responsorial: Salmo 115, 12-13. 14 y 17. 18-19 (R.: 17a)",
   "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5011,
-  "respuesta": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "¿Cómo pagaré al Señor",
-      "todo el bien que ha hecho?",
-      "Alzaré la copa de la salvación,",
-      "invocando su nombre. R."
-    ],
-    [
-      "Cumpliré al Señor mis votos",
-      "en presencia de todo el pueblo.",
-      "Te ofreceré un sacrificio de alabanza,",
-      "invocando tu nombre, Señor. R."
-    ],
-    [
-      "Cumpliré al Señor mis votos",
-      "en presencia de todo el pueblo;",
-      "en el atrio de la casa del Señor,",
-      "en medio de ti, Jerusalén. R."
-    ]
-  ],
-  "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo;\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "lunes de la 1 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 115 12 13 14 y 17 18 19 r 17a semana 1 semana i lunes 1 i r te ofrecere senor un sacrificio de alabanza r aleluya como pagare al senor todo el bien que ha hecho alzare la copa de la salvacion invocando su nombre r cumplire al senor mis votos en presencia de todo el pueblo te ofrecere un sacrificio de alabanza invocando tu nombre senor r cumplire al senor mis votos en presencia de todo el pueblo en el atrio de la casa del senor en medio de ti jerusalen r",
+  "orden": 5011,
   "lizq": [
     {
-      "line": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Te ofreceré, Señor, un sacrificio de alabanza."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -70,8 +37,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "invocando su nombre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "invocando su nombre. R."
     },
     {
       "line": "",
@@ -86,12 +53,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Te ofreceré un sacrificio de alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Te ofreceré un sacrificio de alabanza,"
     },
     {
-      "line": "invocando tu nombre, Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "invocando tu nombre, Señor. R."
     },
     {
       "line": "",
@@ -102,16 +69,49 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "en presencia de todo el pueblo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en presencia de todo el pueblo;"
     },
     {
-      "line": "en el atrio de la casa del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en el atrio de la casa del Señor,"
     },
     {
-      "line": "en medio de ti, Jerusalén. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "en medio de ti, Jerusalén. R."
     }
-  ]
+  ],
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "respuesta": "R. Te ofreceré, Señor, un sacrificio de alabanza.",
+  "title": "Lunes de la 1ª semana de Tiempo Ordinario",
+  "subtitle": "Salmo responsorial: Salmo 115, 12-13. 14 y 17. 18-19 (R.: 17a)",
+  "sourceBook": "eucaristia",
+  "estrofas": [
+    [
+      "¿Cómo pagaré al Señor",
+      "todo el bien que ha hecho?",
+      "Alzaré la copa de la salvación,",
+      "invocando su nombre. R."
+    ],
+    [
+      "Cumpliré al Señor mis votos",
+      "en presencia de todo el pueblo.",
+      "Te ofreceré un sacrificio de alabanza,",
+      "invocando tu nombre, Señor. R."
+    ],
+    [
+      "Cumpliré al Señor mis votos",
+      "en presencia de todo el pueblo;",
+      "en el atrio de la casa del Señor,",
+      "en medio de ti, Jerusalén. R."
+    ]
+  ],
+  "respuestaOpcional": "R. Aleluya.",
+  "id": "seup_001",
+  "textoCompleto": "¿Cómo pagaré al Señor\ntodo el bien que ha hecho?\nAlzaré la copa de la salvación,\ninvocando su nombre. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo.\nTe ofreceré un sacrificio de alabanza,\ninvocando tu nombre, Señor. R.\n\nCumpliré al Señor mis votos\nen presencia de todo el pueblo;\nen el atrio de la casa del Señor,\nen medio de ti, Jerusalén. R.",
+  "dia": "Lunes",
+  "celebracion": "Lunes de la 1ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "searchPool": "lunes de la 1 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 115 12 13 14 y 17 18 19 r 17a semana 1 semana i lunes 1 i r te ofrecere senor un sacrificio de alabanza r aleluya como pagare al senor todo el bien que ha hecho alzare la copa de la salvacion invocando su nombre r cumplire al senor mis votos en presencia de todo el pueblo te ofrecere un sacrificio de alabanza invocando tu nombre senor r cumplire al senor mis votos en presencia de todo el pueblo en el atrio de la casa del senor en medio de ti jerusalen r"
 }

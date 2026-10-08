@@ -1,56 +1,16 @@
 {
-  "id": "seup_165",
-  "title": "Miércoles de la 28ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 28ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: cf. Jn 8, 12)",
-  "salmo": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: cf. Jn 8, 12)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5283,
-  "respuesta": "R. El que te sigue, Señor, tendrá la luz de la vida.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Dichoso el hombre",
-      "que no sigue el consejo de los impíos,",
-      "ni entra por la senda de los pecadores,",
-      "ni se sienta en la reunión de los cínicos;",
-      "sino que su gozo es la ley del Señor,",
-      "y medita su ley día y noche. R."
-    ],
-    [
-      "Será como un árbol",
-      "plantado al borde de la acequia:",
-      "da fruto en su sazón",
-      "y no se marchitan sus hojas;",
-      "y cuanto emprende tiene buen fin. R."
-    ],
-    [
-      "No así los impíos, no así;",
-      "serán paja que arrebata el viento.",
-      "Porque el Señor protege el camino de los justos,",
-      "pero el camino de los impíos acaba mal. R."
-    ]
-  ],
-  "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la 28 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 1 1 2 3 4 y 6 r cf jn 8 12 semana 28 semana xxviii miercoles 28 xxviii r el que te sigue senor tendra la luz de la vida dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
   "lizq": [
     {
-      "line": "R. El que te sigue, Señor, tendrá la luz de la vida.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El que te sigue, Señor, tendrá la luz de la vida."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Dichoso el hombre",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso el hombre"
     },
     {
       "line": "que no sigue el consejo de los impíos,",
@@ -73,8 +33,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Será como un árbol",
@@ -85,12 +45,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "da fruto en su sazón",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "da fruto en su sazón"
     },
     {
-      "line": "y no se marchitan sus hojas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no se marchitan sus hojas;"
     },
     {
       "line": "y cuanto emprende tiene buen fin. R.",
@@ -116,5 +76,45 @@
       "line": "pero el camino de los impíos acaba mal. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "searchPool": "miercoles de la 28 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 1 1 2 3 4 y 6 r cf jn 8 12 semana 28 semana xxviii miercoles 28 xxviii r el que te sigue senor tendra la luz de la vida dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
+  "salmo": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: cf. Jn 8, 12)",
+  "id": "seup_165",
+  "tiempo": "Tiempo Ordinario",
+  "dia": "Miércoles",
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
+  "catCanto": "Salmo Eucaristía",
+  "respuesta": "R. El que te sigue, Señor, tendrá la luz de la vida.",
+  "estrofas": [
+    [
+      "Dichoso el hombre",
+      "que no sigue el consejo de los impíos,",
+      "ni entra por la senda de los pecadores,",
+      "ni se sienta en la reunión de los cínicos;",
+      "sino que su gozo es la ley del Señor,",
+      "y medita su ley día y noche. R."
+    ],
+    [
+      "Será como un árbol",
+      "plantado al borde de la acequia:",
+      "da fruto en su sazón",
+      "y no se marchitan sus hojas;",
+      "y cuanto emprende tiene buen fin. R."
+    ],
+    [
+      "No así los impíos, no así;",
+      "serán paja que arrebata el viento.",
+      "Porque el Señor protege el camino de los justos,",
+      "pero el camino de los impíos acaba mal. R."
+    ]
+  ],
+  "celebracion": "Miércoles de la 28ª semana de Tiempo Ordinario",
+  "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
+  "ciclo": "Año Par",
+  "title": "Miércoles de la 28ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "orden": 5283,
+  "subtitle": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: cf. Jn 8, 12)"
 }

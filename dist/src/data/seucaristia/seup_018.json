@@ -1,46 +1,10 @@
 {
-  "id": "seup_018",
-  "title": "Sábado de la 3ª semana de Tiempo Ordinario",
-  "celebracion": "Sábado de la 3ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 50 12-13. 14-15. 16-17 (R.: 12a)",
-  "salmo": "Salmo responsorial: Salmo 50 12-13. 14-15. 16-17 (R.: 12a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Sábado",
-  "orden": 5036,
-  "respuesta": "R. Oh Dios, crea en mí un corazón puro.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Oh Dios, crea en mí un corazón puro,",
-      "renuévame por dentro con espíritu firme;",
-      "no me arrojes lejos de tu rostro,",
-      "no me quites tu santo espíritu. R."
-    ],
-    [
-      "Devuélveme la alegría de tu salvación,",
-      "afiánzame con espíritu generoso:",
-      "enseñaré a los malvados tus caminos,",
-      "los pecadores volverán a ti. R."
-    ],
-    [
-      "Líbrame de la sangre, oh Dios,",
-      "Dios, Salvador mío,",
-      "y cantará mi lengua tu justicia.",
-      "Señor, me abrirás los labios,",
-      "y mi boca proclamará tu alabanza. R."
-    ]
-  ],
-  "textoCompleto": "Oh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso:\nenseñaré a los malvados tus caminos,\nlos pecadores volverán a ti. R.\n\nLíbrame de la sangre, oh Dios,\nDios, Salvador mío,\ny cantará mi lengua tu justicia.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "sabado de la 3 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 50 12 13 14 15 16 17 r 12a semana 3 semana iii sabado 3 iii r oh dios crea en mi un corazon puro oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso ensenare a los malvados tus caminos los pecadores volveran a ti r librame de la sangre oh dios dios salvador mio y cantara mi lengua tu justicia senor me abriras los labios y mi boca proclamara tu alabanza r",
+  "respuesta": "R. Oh Dios, crea en mí un corazón puro.",
   "lizq": [
     {
-      "line": "R. Oh Dios, crea en mí un corazón puro.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Oh Dios, crea en mí un corazón puro."
     },
     {
       "line": "",
@@ -55,8 +19,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "no me arrojes lejos de tu rostro,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no me arrojes lejos de tu rostro,"
     },
     {
       "line": "no me quites tu santo espíritu. R.",
@@ -79,24 +43,24 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "los pecadores volverán a ti. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "los pecadores volverán a ti. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Líbrame de la sangre, oh Dios,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "Dios, Salvador mío,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Dios, Salvador mío,"
     },
     {
-      "line": "y cantará mi lengua tu justicia.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y cantará mi lengua tu justicia."
     },
     {
       "line": "Señor, me abrirás los labios,",
@@ -106,5 +70,41 @@
       "line": "y mi boca proclamará tu alabanza. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "id": "seup_018",
+  "respuestaOpcional": "",
+  "dia": "Sábado",
+  "subtitle": "Salmo responsorial: Salmo 50 12-13. 14-15. 16-17 (R.: 12a)",
+  "celebracion": "Sábado de la 3ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 50 12-13. 14-15. 16-17 (R.: 12a)",
+  "ciclo": "Año Par",
+  "sourceBook": "eucaristia",
+  "estrofas": [
+    [
+      "Oh Dios, crea en mí un corazón puro,",
+      "renuévame por dentro con espíritu firme;",
+      "no me arrojes lejos de tu rostro,",
+      "no me quites tu santo espíritu. R."
+    ],
+    [
+      "Devuélveme la alegría de tu salvación,",
+      "afiánzame con espíritu generoso:",
+      "enseñaré a los malvados tus caminos,",
+      "los pecadores volverán a ti. R."
+    ],
+    [
+      "Líbrame de la sangre, oh Dios,",
+      "Dios, Salvador mío,",
+      "y cantará mi lengua tu justicia.",
+      "Señor, me abrirás los labios,",
+      "y mi boca proclamará tu alabanza. R."
+    ]
+  ],
+  "orden": 5036,
+  "stage": "Liturgia",
+  "searchPool": "sabado de la 3 semana de tiempo ordinario ano par tiempo ordinario sabado salmo responsorial salmo 50 12 13 14 15 16 17 r 12a semana 3 semana iii sabado 3 iii r oh dios crea en mi un corazon puro oh dios crea en mi un corazon puro renuevame por dentro con espiritu firme no me arrojes lejos de tu rostro no me quites tu santo espiritu r devuelveme la alegria de tu salvacion afianzame con espiritu generoso ensenare a los malvados tus caminos los pecadores volveran a ti r librame de la sangre oh dios dios salvador mio y cantara mi lengua tu justicia senor me abriras los labios y mi boca proclamara tu alabanza r",
+  "title": "Sábado de la 3ª semana de Tiempo Ordinario",
+  "catCanto": "Salmo Eucaristía",
+  "textoCompleto": "Oh Dios, crea en mí un corazón puro,\nrenuévame por dentro con espíritu firme;\nno me arrojes lejos de tu rostro,\nno me quites tu santo espíritu. R.\n\nDevuélveme la alegría de tu salvación,\nafiánzame con espíritu generoso:\nenseñaré a los malvados tus caminos,\nlos pecadores volverán a ti. R.\n\nLíbrame de la sangre, oh Dios,\nDios, Salvador mío,\ny cantará mi lengua tu justicia.\nSeñor, me abrirás los labios,\ny mi boca proclamará tu alabanza. R.",
+  "tiempo": "Tiempo Ordinario"
 }

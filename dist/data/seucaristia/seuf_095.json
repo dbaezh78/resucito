@@ -1,10 +1,4 @@
 {
-  "id": "seuf_095",
-  "title": "Miércoles de la tercera semana de Pascua",
-  "celebracion": "Miércoles de la tercera semana de Pascua",
-  "subtitle": "Salmo 65, 1-3a. 4-5. 6-7a (R.: 1)",
-  "salmo": "Salmo 65, 1-3a. 4-5. 6-7a (R.: 1)",
-  "ciclo": "Ciclo A, B y C",
   "ciclos": [
     "Ciclo A",
     "Ciclo B",
@@ -12,11 +6,14 @@
     "Año Par",
     "Año Impar"
   ],
-  "tiempo": "Pascua",
-  "dia": "Miércoles",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Miércoles de la tercera semana de Pascua",
   "orden": 433,
+  "id": "seuf_095",
+  "stage": "Liturgia",
+  "celebracion": "Miércoles de la tercera semana de Pascua",
+  "salmo": "Salmo 65, 1-3a. 4-5. 6-7a (R.: 1)",
   "respuesta": "R. Aclamad al Señor, tierra entera.",
-  "respuestaOpcional": "R. Aleluya.",
   "estrofas": [
     [
       "Aclamad al Señor, tierra entera;",
@@ -38,36 +35,30 @@
       "que con su poder gobierna enteramente. R."
     ]
   ],
-  "textoCompleto": "Aclamad al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué terribles son tus obras!»». R.\n\nQue se postre ante ti la tierra entera,\nque toquen en tu honor,\nque toquen para tu nombre.\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres. R.\n\nTransformó el mar en tierra firme,\na pie atravesaron el río.\nAlegrémonos con Dios,\nque con su poder gobierna enteramente. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "miercoles de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua miercoles salmo 65 1 3a 4 5 6 7a r 1 semana 3 semana iii miercoles feria r aclamad al senor tierra entera r aleluya aclamad al senor tierra entera tocad en honor de su nombre cantad himnos a su gloria decid a dios que terribles son tus obras r que se postre ante ti la tierra entera que toquen en tu honor que toquen para tu nombre venid a ver las obras de dios sus temibles proezas en favor de los hombres r transformo el mar en tierra firme a pie atravesaron el rio alegremonos con dios que con su poder gobierna enteramente r",
   "lizq": [
     {
-      "line": "R. Aclamad al Señor, tierra entera.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aclamad al Señor, tierra entera."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
       "line": "R. Aleluya.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Aclamad al Señor, tierra entera;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Aclamad al Señor, tierra entera;"
     },
     {
       "line": "tocad en honor de su nombre,",
@@ -78,32 +69,32 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Decid a Dios: «¡Qué terribles son tus obras!»». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "Decid a Dios: «¡Qué terribles son tus obras!»». R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Que se postre ante ti la tierra entera,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que se postre ante ti la tierra entera,"
     },
     {
-      "line": "que toquen en tu honor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que toquen en tu honor,"
     },
     {
       "line": "que toquen para tu nombre.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Venid a ver las obras de Dios,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Venid a ver las obras de Dios,"
     },
     {
-      "line": "sus temibles proezas en favor de los hombres. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "sus temibles proezas en favor de los hombres. R."
     },
     {
       "line": "",
@@ -125,5 +116,14 @@
       "line": "que con su poder gobierna enteramente. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclo": "Ciclo A, B y C",
+  "respuestaOpcional": "R. Aleluya.",
+  "dia": "Miércoles",
+  "subtitle": "Salmo 65, 1-3a. 4-5. 6-7a (R.: 1)",
+  "searchPool": "miercoles de la tercera semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua miercoles salmo 65 1 3a 4 5 6 7a r 1 semana 3 semana iii miercoles feria r aclamad al senor tierra entera r aleluya aclamad al senor tierra entera tocad en honor de su nombre cantad himnos a su gloria decid a dios que terribles son tus obras r que se postre ante ti la tierra entera que toquen en tu honor que toquen para tu nombre venid a ver las obras de dios sus temibles proezas en favor de los hombres r transformo el mar en tierra firme a pie atravesaron el rio alegremonos con dios que con su poder gobierna enteramente r",
+  "textoCompleto": "Aclamad al Señor, tierra entera;\ntocad en honor de su nombre,\ncantad himnos a su gloria.\nDecid a Dios: «¡Qué terribles son tus obras!»». R.\n\nQue se postre ante ti la tierra entera,\nque toquen en tu honor,\nque toquen para tu nombre.\nVenid a ver las obras de Dios,\nsus temibles proezas en favor de los hombres. R.\n\nTransformó el mar en tierra firme,\na pie atravesaron el río.\nAlegrémonos con Dios,\nque con su poder gobierna enteramente. R.",
+  "tiempo": "Pascua",
+  "sourceBook": "eucaristia",
+  "hasAudio": false
 }

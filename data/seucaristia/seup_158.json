@@ -1,14 +1,12 @@
 {
-  "id": "seup_158",
-  "title": "Martes de la 27ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 27ª semana de Tiempo Ordinario",
   "subtitle": "Salmo responsorial: Salmo 138, 1-3. 13-14ab. 14c-15 (R.: 24b)",
   "salmo": "Salmo responsorial: Salmo 138, 1-3. 13-14ab. 14c-15 (R.: 24b)",
-  "ciclo": "Año Par",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5272,
-  "respuesta": "R. Guíame, Señor, por el camino eterno.",
+  "hasAudio": false,
+  "celebracion": "Martes de la 27ª semana de Tiempo Ordinario",
+  "textoCompleto": "Señor, tú me sondeas y me conoces;\nme conoces cuando me siento o me levanto,\nde lejos penetras mis pensamientos;\ndistingues mi camino y mi descanso,\ntodas mis sendas te son familiares. R.\n\nTú has creado mis entrañas,\nme has tejido en el seno materno.\nTe doy gracias,\nporque me has escogido portentosamente,\nporque son admirables tus obras. R.\n\nConocías hasta el fondo de mi alma,\nno desconocías mis huesos.\nCuando, en lo oculto, me iba formando,\ny entretejiendo en lo profundo de la tierra. R.",
+  "stage": "Liturgia",
+  "id": "seup_158",
   "respuestaOpcional": "",
   "estrofas": [
     [
@@ -32,12 +30,14 @@
       "y entretejiendo en lo profundo de la tierra. R."
     ]
   ],
-  "textoCompleto": "Señor, tú me sondeas y me conoces;\nme conoces cuando me siento o me levanto,\nde lejos penetras mis pensamientos;\ndistingues mi camino y mi descanso,\ntodas mis sendas te son familiares. R.\n\nTú has creado mis entrañas,\nme has tejido en el seno materno.\nTe doy gracias,\nporque me has escogido portentosamente,\nporque son admirables tus obras. R.\n\nConocías hasta el fondo de mi alma,\nno desconocías mis huesos.\nCuando, en lo oculto, me iba formando,\ny entretejiendo en lo profundo de la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "ciclo": "Año Par",
+  "dia": "Martes",
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Guíame, Señor, por el camino eterno.",
   "searchPool": "martes de la 27 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 138 1 3 13 14ab 14c 15 r 24b semana 27 semana xxvii martes 27 xxvii r guiame senor por el camino eterno senor tu me sondeas y me conoces me conoces cuando me siento o me levanto de lejos penetras mis pensamientos distingues mi camino y mi descanso todas mis sendas te son familiares r tu has creado mis entranas me has tejido en el seno materno te doy gracias porque me has escogido portentosamente porque son admirables tus obras r conocias hasta el fondo de mi alma no desconocias mis huesos cuando en lo oculto me iba formando y entretejiendo en lo profundo de la tierra r",
+  "orden": 5272,
+  "title": "Martes de la 27ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Guíame, Señor, por el camino eterno.",
@@ -64,12 +64,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "todas mis sendas te son familiares. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "todas mis sendas te son familiares. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Tú has creado mis entrañas,",
@@ -80,12 +80,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Te doy gracias,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Te doy gracias,"
     },
     {
-      "line": "porque me has escogido portentosamente,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "porque me has escogido portentosamente,"
     },
     {
       "line": "porque son admirables tus obras. R.",
@@ -104,8 +104,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "Cuando, en lo oculto, me iba formando,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Cuando, en lo oculto, me iba formando,"
     },
     {
       "line": "y entretejiendo en lo profundo de la tierra. R.",

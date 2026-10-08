@@ -1,71 +1,39 @@
 {
-  "id": "seuc_20",
   "title": "Quinto domingo de Cuaresma",
   "celebracion": "Quinto domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 3)",
-  "salmo": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 3)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
   "orden": 305,
-  "respuesta": "R. El Señor ha estado grande con nosotros, y estamos alegres.",
-  "respuestaOpcional": "",
-  "estrofas": [
-    [
-      "Cuando el Señor cambió la suerte de Sión,",
-      "nos parecía soñar:",
-      "la boca se nos llenaba de risas,",
-      "la lengua de cantares. R."
-    ],
-    [
-      "Hasta los gentiles decían: «El Señor",
-      "ha estado grande con ellos».",
-      "El Señor ha estado grande con nosotros,",
-      "y estamos alegres. R."
-    ],
-    [
-      "Que el Señor cambie nuestra suerte,",
-      "como los torrentes del Negueb.",
-      "Los que sembraban con lágrimas",
-      "cosechan entre cantares. R."
-    ],
-    [
-      "Al ir, iba llorando,",
-      "llevando la semilla;",
-      "al volver, vuelve cantando,",
-      "trayendo sus gavillas. R."
-    ]
-  ],
   "textoCompleto": "Cuando el Señor cambió la suerte de Sión,\nnos parecía soñar:\nla boca se nos llenaba de risas,\nla lengua de cantares. R.\n\nHasta los gentiles decían: «El Señor\nha estado grande con ellos».\nEl Señor ha estado grande con nosotros,\ny estamos alegres. R.\n\nQue el Señor cambie nuestra suerte,\ncomo los torrentes del Negueb.\nLos que sembraban con lágrimas\ncosechan entre cantares. R.\n\nAl ir, iba llorando,\nllevando la semilla;\nal volver, vuelve cantando,\ntrayendo sus gavillas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 3)",
+  "respuesta": "R. El Señor ha estado grande con nosotros, y estamos alegres.",
   "hasAudio": false,
-  "searchPool": "quinto domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 125 1 2ab 2cd 3 4 5 6 r 3 r el senor ha estado grande con nosotros y estamos alegres cuando el senor cambio la suerte de sion nos parecia sonar la boca se nos llenaba de risas la lengua de cantares r hasta los gentiles decian el senor ha estado grande con ellos el senor ha estado grande con nosotros y estamos alegres r que el senor cambie nuestra suerte como los torrentes del negueb los que sembraban con lagrimas cosechan entre cantares r al ir iba llorando llevando la semilla al volver vuelve cantando trayendo sus gavillas r",
+  "sourceBook": "eucaristia",
+  "id": "seuc_20",
+  "stage": "Liturgia",
+  "tiempo": "Cuaresma",
   "lizq": [
     {
-      "line": "R. El Señor ha estado grande con nosotros,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. El Señor ha estado grande con nosotros,"
     },
     {
       "line": "y estamos alegres.",
       "sC": "salmo-linea salmo-respuesta salmo-sangria"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Cuando el Señor cambió la suerte de Sión,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cuando el Señor cambió la suerte de Sión,"
     },
     {
       "line": "nos parecía soñar:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "la boca se nos llenaba de risas,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "la boca se nos llenaba de risas,"
     },
     {
       "line": "la lengua de cantares. R.",
@@ -80,16 +48,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "ha estado grande con ellos».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ha estado grande con ellos»."
     },
     {
       "line": "El Señor ha estado grande con nosotros,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y estamos alegres. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y estamos alegres. R."
     },
     {
       "line": "",
@@ -124,12 +92,44 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "al volver, vuelve cantando,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "al volver, vuelve cantando,"
     },
     {
       "line": "trayendo sus gavillas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "searchPool": "quinto domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 125 1 2ab 2cd 3 4 5 6 r 3 r el senor ha estado grande con nosotros y estamos alegres cuando el senor cambio la suerte de sion nos parecia sonar la boca se nos llenaba de risas la lengua de cantares r hasta los gentiles decian el senor ha estado grande con ellos el senor ha estado grande con nosotros y estamos alegres r que el senor cambie nuestra suerte como los torrentes del negueb los que sembraban con lagrimas cosechan entre cantares r al ir iba llorando llevando la semilla al volver vuelve cantando trayendo sus gavillas r",
+  "subtitle": "Salmo responsorial: Salmo 125, 1-2ab. 2cd-3. 4-5. 6 (R.: 3)",
+  "catCanto": "Salmo Eucaristía",
+  "estrofas": [
+    [
+      "Cuando el Señor cambió la suerte de Sión,",
+      "nos parecía soñar:",
+      "la boca se nos llenaba de risas,",
+      "la lengua de cantares. R."
+    ],
+    [
+      "Hasta los gentiles decían: «El Señor",
+      "ha estado grande con ellos».",
+      "El Señor ha estado grande con nosotros,",
+      "y estamos alegres. R."
+    ],
+    [
+      "Que el Señor cambie nuestra suerte,",
+      "como los torrentes del Negueb.",
+      "Los que sembraban con lágrimas",
+      "cosechan entre cantares. R."
+    ],
+    [
+      "Al ir, iba llorando,",
+      "llevando la semilla;",
+      "al volver, vuelve cantando,",
+      "trayendo sus gavillas. R."
+    ]
+  ],
+  "respuestaOpcional": "",
+  "ciclo": "Ciclo C",
+  "dia": "Domingo"
 }

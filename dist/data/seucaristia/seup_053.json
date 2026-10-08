@@ -1,15 +1,86 @@
 {
-  "id": "seup_053",
-  "title": "Viernes de la 9ª semana de Tiempo Ordinario",
-  "celebracion": "Viernes de la 9ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 118, 157. 160. 161. 165. 166. 168 (R.: 165a)",
+  "lizq": [
+    {
+      "line": "R. Mucha paz tienen los que aman tus leyes, Señor.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Muchos son los enemigos que me persiguen,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "pero yo no me aparto de tus preceptos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "El compendio de tu palabra es la verdad,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y tus justos juicios son eternos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Los nobles me perseguían sin motivo,"
+    },
+    {
+      "line": "pero mi corazón respetaba tus palabras. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Mucha paz tienen los que aman tus leyes,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "y nada los hace tropezar. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Aguardo tu salvación, Señor,"
+    },
+    {
+      "line": "y cumplo tus mandatos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Guardo tus decretos,"
+    },
+    {
+      "line": "y tú tienes presentes mis caminos. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "hasAudio": false,
+  "textoCompleto": "Muchos son los enemigos que me persiguen,\npero yo no me aparto de tus preceptos. R.\n\nEl compendio de tu palabra es la verdad,\ny tus justos juicios son eternos. R.\n\nLos nobles me perseguían sin motivo,\npero mi corazón respetaba tus palabras. R.\n\nMucha paz tienen los que aman tus leyes,\ny nada los hace tropezar. R.\n\nAguardo tu salvación, Señor,\ny cumplo tus mandatos. R.\n\nGuardo tus decretos,\ny tú tienes presentes mis caminos. R.",
   "salmo": "Salmo responsorial: Salmo 118, 157. 160. 161. 165. 166. 168 (R.: 165a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Viernes",
-  "orden": 5095,
-  "respuesta": "R. Mucha paz tienen los que aman tus leyes, Señor.",
-  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 118, 157. 160. 161. 165. 166. 168 (R.: 165a)",
   "estrofas": [
     [
       "Muchos son los enemigos que me persiguen,",
@@ -36,88 +107,17 @@
       "y tú tienes presentes mis caminos. R."
     ]
   ],
-  "textoCompleto": "Muchos son los enemigos que me persiguen,\npero yo no me aparto de tus preceptos. R.\n\nEl compendio de tu palabra es la verdad,\ny tus justos juicios son eternos. R.\n\nLos nobles me perseguían sin motivo,\npero mi corazón respetaba tus palabras. R.\n\nMucha paz tienen los que aman tus leyes,\ny nada los hace tropezar. R.\n\nAguardo tu salvación, Señor,\ny cumplo tus mandatos. R.\n\nGuardo tus decretos,\ny tú tienes presentes mis caminos. R.",
-  "sourceBook": "eucaristia",
+  "tiempo": "Tiempo Ordinario",
+  "celebracion": "Viernes de la 9ª semana de Tiempo Ordinario",
   "stage": "Liturgia",
+  "id": "seup_053",
+  "ciclo": "Año Par",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "viernes de la 9 semana de tiempo ordinario ano par tiempo ordinario viernes salmo responsorial salmo 118 157 160 161 165 166 168 r 165a semana 9 semana ix viernes 9 ix r mucha paz tienen los que aman tus leyes senor muchos son los enemigos que me persiguen pero yo no me aparto de tus preceptos r el compendio de tu palabra es la verdad y tus justos juicios son eternos r los nobles me perseguian sin motivo pero mi corazon respetaba tus palabras r mucha paz tienen los que aman tus leyes y nada los hace tropezar r aguardo tu salvacion senor y cumplo tus mandatos r guardo tus decretos y tu tienes presentes mis caminos r",
-  "lizq": [
-    {
-      "line": "R. Mucha paz tienen los que aman tus leyes, Señor.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Muchos son los enemigos que me persiguen,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "pero yo no me aparto de tus preceptos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El compendio de tu palabra es la verdad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y tus justos juicios son eternos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Los nobles me perseguían sin motivo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "pero mi corazón respetaba tus palabras. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Mucha paz tienen los que aman tus leyes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y nada los hace tropezar. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Aguardo tu salvación, Señor,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y cumplo tus mandatos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Guardo tus decretos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y tú tienes presentes mis caminos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "title": "Viernes de la 9ª semana de Tiempo Ordinario",
+  "sourceBook": "eucaristia",
+  "respuestaOpcional": "",
+  "dia": "Viernes",
+  "respuesta": "R. Mucha paz tienen los que aman tus leyes, Señor.",
+  "orden": 5095
 }

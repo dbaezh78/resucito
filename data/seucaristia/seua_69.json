@@ -1,15 +1,78 @@
 {
-  "id": "seua_69",
-  "title": "Domingo de la 25ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 25ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 8-9. 17-18 (R.: 18a)",
   "salmo": "Salmo responsorial: Salmo 144, 2-3. 8-9. 17-18 (R.: 18a)",
-  "ciclo": "Ciclo A",
+  "sourceBook": "eucaristia",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Domingo",
-  "orden": 525,
-  "respuesta": "R. Cerca está el Señor de los que lo invocan.",
-  "respuestaOpcional": "",
+  "lizq": [
+    {
+      "line": "R. Cerca está el Señor de los que lo invocan.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Día tras día, te bendeciré"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y alabaré tu nombre por siempre jamás."
+    },
+    {
+      "line": "Grande es el Señor, merece toda alabanza,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "es incalculable su grandeza. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es clemente y misericordioso,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lento a la cólera y rico en piedad;"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "el Señor es bueno con todos,"
+    },
+    {
+      "line": "es cariñoso con todas sus criaturas. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor es justo en todos sus caminos,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "es bondadoso en todas sus acciones;"
+    },
+    {
+      "line": "cerca está el Señor de los que lo invocan,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "de los que lo invocan sinceramente. R."
+    }
+  ],
+  "searchPool": "domingo de la 25 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 144 2 3 8 9 17 18 r 18a r cerca esta el senor de los que lo invocan dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r el senor es justo en todos sus caminos es bondadoso en todas sus acciones cerca esta el senor de los que lo invocan de los que lo invocan sinceramente r",
+  "textoCompleto": "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
+  "subtitle": "Salmo responsorial: Salmo 144, 2-3. 8-9. 17-18 (R.: 18a)",
+  "catCanto": "Salmo Eucaristía",
+  "title": "Domingo de la 25ª semana de Tiempo Ordinario",
   "estrofas": [
     [
       "Día tras día, te bendeciré",
@@ -30,76 +93,13 @@
       "de los que lo invocan sinceramente. R."
     ]
   ],
-  "textoCompleto": "Día tras día, te bendeciré\ny alabaré tu nombre por siempre jamás.\nGrande es el Señor, merece toda alabanza,\nes incalculable su grandeza. R.\n\nEl Señor es clemente y misericordioso,\nlento a la cólera y rico en piedad;\nel Señor es bueno con todos,\nes cariñoso con todas sus criaturas. R.\n\nEl Señor es justo en todos sus caminos,\nes bondadoso en todas sus acciones;\ncerca está el Señor de los que lo invocan,\nde los que lo invocan sinceramente. R.",
-  "sourceBook": "eucaristia",
+  "respuesta": "R. Cerca está el Señor de los que lo invocan.",
+  "celebracion": "Domingo de la 25ª semana de Tiempo Ordinario",
+  "orden": 525,
+  "id": "seua_69",
+  "ciclo": "Ciclo A",
+  "dia": "Domingo",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "domingo de la 25 semana de tiempo ordinario ciclo a tiempo ordinario domingo salmo responsorial salmo 144 2 3 8 9 17 18 r 18a r cerca esta el senor de los que lo invocan dia tras dia te bendecire y alabare tu nombre por siempre jamas grande es el senor merece toda alabanza es incalculable su grandeza r el senor es clemente y misericordioso lento a la colera y rico en piedad el senor es bueno con todos es carinoso con todas sus criaturas r el senor es justo en todos sus caminos es bondadoso en todas sus acciones cerca esta el senor de los que lo invocan de los que lo invocan sinceramente r",
-  "lizq": [
-    {
-      "line": "R. Cerca está el Señor de los que lo invocan.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Día tras día, te bendeciré",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y alabaré tu nombre por siempre jamás.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Grande es el Señor, merece toda alabanza,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "es incalculable su grandeza. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es clemente y misericordioso,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "lento a la cólera y rico en piedad;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "el Señor es bueno con todos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "es cariñoso con todas sus criaturas. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "El Señor es justo en todos sus caminos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "es bondadoso en todas sus acciones;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "cerca está el Señor de los que lo invocan,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "de los que lo invocan sinceramente. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "respuestaOpcional": "",
+  "hasAudio": false
 }

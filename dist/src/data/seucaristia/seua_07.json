@@ -1,15 +1,17 @@
 {
-  "id": "seua_07",
-  "title": "Natividad del Señor - Misa de la aurora",
-  "celebracion": "Natividad del Señor - Misa de la aurora",
-  "subtitle": "Salmo responsorial: Salmo 96, 1 y 6. 11-12",
-  "salmo": "Salmo responsorial: Salmo 96, 1 y 6. 11-12",
-  "ciclo": "Ciclo A",
+  "searchPool": "natividad del senor misa de la aurora ciclo a navidad domingo salmo responsorial salmo 96 1 y 6 11 12 r hoy brillara una luz sobre nosotros porque nos ha nacido el senor el senor reina la tierra goza se alegran las islas innumerables los cielos pregonan su justicia y todos los pueblos contemplan su gloria r amanece la luz para el justo y la alegria para los rectos de corazon alegraos justos con el senor celebrad su santo nombre r",
+  "hasAudio": false,
   "tiempo": "Navidad",
-  "dia": "Domingo",
-  "orden": 203,
+  "sourceBook": "eucaristia",
+  "stage": "Liturgia",
   "respuesta": "R. Hoy brillará una luz sobre nosotros, porque nos ha nacido el Señor.",
-  "respuestaOpcional": "",
+  "ciclo": "Ciclo A",
+  "celebracion": "Natividad del Señor - Misa de la aurora",
+  "orden": 203,
+  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 96, 1 y 6. 11-12",
+  "title": "Natividad del Señor - Misa de la aurora",
   "estrofas": [
     [
       "El Señor reina, la tierra goza,",
@@ -24,36 +26,34 @@
       "celebrad su santo nombre. R."
     ]
   ],
-  "textoCompleto": "El Señor reina, la tierra goza,\nse alegran las islas innumerables.\nLos cielos pregonan su justicia,\ny todos los pueblos contemplan su gloria. R.\n\nAmanece la luz para el justo,\ny la alegría para los rectos de corazón.\nAlegraos, justos, con el Señor,\ncelebrad su santo nombre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "natividad del senor misa de la aurora ciclo a navidad domingo salmo responsorial salmo 96 1 y 6 11 12 r hoy brillara una luz sobre nosotros porque nos ha nacido el senor el senor reina la tierra goza se alegran las islas innumerables los cielos pregonan su justicia y todos los pueblos contemplan su gloria r amanece la luz para el justo y la alegria para los rectos de corazon alegraos justos con el senor celebrad su santo nombre r",
+  "dia": "Domingo",
+  "id": "seua_07",
+  "respuestaOpcional": "",
+  "salmo": "Salmo responsorial: Salmo 96, 1 y 6. 11-12",
   "lizq": [
     {
-      "line": "R. Hoy brillará una luz sobre nosotros,",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Hoy brillará una luz sobre nosotros,"
     },
     {
-      "line": "porque nos ha nacido el Señor.",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "porque nos ha nacido el Señor."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor reina, la tierra goza,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor reina, la tierra goza,"
     },
     {
-      "line": "se alegran las islas innumerables.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "se alegran las islas innumerables."
     },
     {
-      "line": "Los cielos pregonan su justicia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Los cielos pregonan su justicia,"
     },
     {
       "line": "y todos los pueblos contemplan su gloria. R.",
@@ -64,8 +64,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Amanece la luz para el justo,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Amanece la luz para el justo,"
     },
     {
       "line": "y la alegría para los rectos de corazón.",

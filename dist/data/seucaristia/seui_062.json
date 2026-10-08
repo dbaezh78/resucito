@@ -1,15 +1,15 @@
 {
-  "id": "seui_062",
   "title": "Martes de la 11ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 11ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 145, 2. 5-6. 7. 8-9a (R.: 1b)",
-  "salmo": "Salmo responsorial: Salmo 145, 2. 5-6. 7. 8-9a (R.: 1b)",
-  "ciclo": "Año Impar",
+  "catCanto": "Salmo Eucaristía",
   "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5112,
+  "sourceBook": "eucaristia",
   "respuesta": "R. Alaba, alma mía, al Señor.",
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 145, 2. 5-6. 7. 8-9a (R.: 1b)",
+  "celebracion": "Martes de la 11ª semana de Tiempo Ordinario",
+  "searchPool": "martes de la 11 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 145 2 5 6 7 8 9a r 1b semana 11 semana xi martes 11 xi r alaba alma mia al senor r aleluya alabare al senor mientras viva tanere para mi dios mientras exista r dichoso a quien auxilia el dios de jacob el que espera en el senor su dios que hizo el cielo y la tierra el mar y cuanto hay en el que mantiene su fidelidad perpetuamente r que hace justicia a los oprimidos que da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r",
   "respuestaOpcional": "R. Aleluya.",
+  "stage": "Liturgia",
   "estrofas": [
     [
       "Alabaré al Señor mientras viva,",
@@ -34,20 +34,16 @@
       "El Señor guarda a los peregrinos. R."
     ]
   ],
-  "textoCompleto": "Alabaré al Señor mientras viva,\ntañeré para mi Dios mientras exista. R.\n\nDichoso a quien auxilia el Dios de Jacob,\nel que espera en el Señor, su Dios,\nque hizo el cielo y la tierra,\nel mar y cuanto hay en él;\nque mantiene su fidelidad perpetuamente. R.\n\nQue hace justicia a los oprimidos,\nque da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos.\nEl Señor guarda a los peregrinos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "martes de la 11 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 145 2 5 6 7 8 9a r 1b semana 11 semana xi martes 11 xi r alaba alma mia al senor r aleluya alabare al senor mientras viva tanere para mi dios mientras exista r dichoso a quien auxilia el dios de jacob el que espera en el senor su dios que hizo el cielo y la tierra el mar y cuanto hay en el que mantiene su fidelidad perpetuamente r que hace justicia a los oprimidos que da pan a los hambrientos el senor liberta a los cautivos r el senor abre los ojos al ciego el senor endereza a los que ya se doblan el senor ama a los justos el senor guarda a los peregrinos r",
+  "orden": 5112,
+  "dia": "Martes",
   "lizq": [
     {
       "line": "R. Alaba, alma mía, al Señor.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -66,12 +62,12 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "tañeré para mi Dios mientras exista. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tañeré para mi Dios mientras exista. R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Dichoso a quien auxilia el Dios de Jacob,",
@@ -82,8 +78,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "que hizo el cielo y la tierra,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que hizo el cielo y la tierra,"
     },
     {
       "line": "el mar y cuanto hay en él;",
@@ -126,8 +122,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor guarda a los peregrinos. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "El Señor guarda a los peregrinos. R."
     }
-  ]
+  ],
+  "subtitle": "Salmo responsorial: Salmo 145, 2. 5-6. 7. 8-9a (R.: 1b)",
+  "id": "seui_062",
+  "hasAudio": false,
+  "textoCompleto": "Alabaré al Señor mientras viva,\ntañeré para mi Dios mientras exista. R.\n\nDichoso a quien auxilia el Dios de Jacob,\nel que espera en el Señor, su Dios,\nque hizo el cielo y la tierra,\nel mar y cuanto hay en él;\nque mantiene su fidelidad perpetuamente. R.\n\nQue hace justicia a los oprimidos,\nque da pan a los hambrientos.\nEl Señor liberta a los cautivos. R.\n\nEl Señor abre los ojos al ciego,\nel Señor endereza a los que ya se doblan,\nel Señor ama a los justos.\nEl Señor guarda a los peregrinos. R."
 }

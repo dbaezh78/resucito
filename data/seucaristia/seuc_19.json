@@ -1,15 +1,16 @@
 {
-  "id": "seuc_19",
-  "title": "Cuarto domingo de Cuaresma",
   "celebracion": "Cuarto domingo de Cuaresma",
-  "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7 (R.: 9a)",
-  "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7 (R.: 9a)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Cuaresma",
-  "dia": "Domingo",
+  "id": "seuc_19",
   "orden": 304,
-  "respuesta": "R. Gustad y ved qué bueno es el Señor.",
-  "respuestaOpcional": "",
+  "title": "Cuarto domingo de Cuaresma",
+  "hasAudio": false,
+  "tiempo": "Cuaresma",
+  "searchPool": "cuarto domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 33 2 3 4 5 6 7 r 9a r gustad y ved que bueno es el senor bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r",
+  "salmo": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7 (R.: 9a)",
+  "sourceBook": "eucaristia",
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 33, 2-3. 4-5. 6-7 (R.: 9a)",
+  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.",
   "estrofas": [
     [
       "Bendigo al Señor en todo momento,",
@@ -30,12 +31,10 @@
       "y lo salva de sus angustias. R."
     ]
   ],
-  "textoCompleto": "Bendigo al Señor en todo momento,\nsu alabanza está siempre en mi boca;\nmi alma se gloría en el Señor:\nque los humildes lo escuchen y se alegren. R.\n\nProclamad conmigo la grandeza del Señor,\nensalcemos juntos su nombre.\nYo consulté al Señor, y me respondió,\nme libró de todas mis ansias. R.\n\nContempladlo, y quedaréis radiantes,\nvuestro rostro no se avergonzará.\nSi el afligido invoca al Señor, él lo escucha\ny lo salva de sus angustias. R.",
-  "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "cuarto domingo de cuaresma ciclo c cuaresma domingo salmo responsorial salmo 33 2 3 4 5 6 7 r 9a r gustad y ved que bueno es el senor bendigo al senor en todo momento su alabanza esta siempre en mi boca mi alma se gloria en el senor que los humildes lo escuchen y se alegren r proclamad conmigo la grandeza del senor ensalcemos juntos su nombre yo consulte al senor y me respondio me libro de todas mis ansias r contempladlo y quedareis radiantes vuestro rostro no se avergonzara si el afligido invoca al senor el lo escucha y lo salva de sus angustias r",
+  "dia": "Domingo",
+  "ciclo": "Ciclo C",
+  "respuesta": "R. Gustad y ved qué bueno es el Señor.",
   "lizq": [
     {
       "line": "R. Gustad y ved qué bueno es el Señor.",
@@ -50,16 +49,16 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "su alabanza está siempre en mi boca;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su alabanza está siempre en mi boca;"
     },
     {
-      "line": "mi alma se gloría en el Señor:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "mi alma se gloría en el Señor:"
     },
     {
-      "line": "que los humildes lo escuchen y se alegren. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "que los humildes lo escuchen y se alegren. R."
     },
     {
       "line": "",
@@ -70,8 +69,8 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "ensalcemos juntos su nombre.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "ensalcemos juntos su nombre."
     },
     {
       "line": "Yo consulté al Señor, y me respondió,",
@@ -86,8 +85,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Contempladlo, y quedaréis radiantes,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Contempladlo, y quedaréis radiantes,"
     },
     {
       "line": "vuestro rostro no se avergonzará.",
@@ -98,8 +97,9 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y lo salva de sus angustias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y lo salva de sus angustias. R."
     }
-  ]
+  ],
+  "respuestaOpcional": ""
 }

@@ -1,15 +1,17 @@
 {
-  "id": "seuc_37",
-  "title": "Tercer domingo de Pascua",
-  "celebracion": "Tercer domingo de Pascua",
-  "subtitle": "Salmo responsorial: Salmo 29, 2 y 4. 5 y 6. 11 y 12a y 13b (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 29, 2 y 4. 5 y 6. 11 y 12a y 13b (R.: 2a)",
-  "ciclo": "Ciclo C",
-  "tiempo": "Pascua",
-  "dia": "Domingo",
-  "orden": 410,
-  "respuesta": "R. Te ensalzaré, Señor, porque me has librado.",
   "respuestaOpcional": "R. Aleluya.",
+  "respuesta": "R. Te ensalzaré, Señor, porque me has librado.",
+  "salmo": "Salmo responsorial: Salmo 29, 2 y 4. 5 y 6. 11 y 12a y 13b (R.: 2a)",
+  "hasAudio": false,
+  "orden": 410,
+  "tiempo": "Pascua",
+  "title": "Tercer domingo de Pascua",
+  "searchPool": "tercer domingo de pascua ciclo c pascua domingo salmo responsorial salmo 29 2 y 4 5 y 6 11 y 12a y 13b r 2a r te ensalzare senor porque me has librado r aleluya te ensalzare senor porque me has librado y no has dejado que mis enemigos se rian de mi senor sacaste mi vida del abismo me hiciste revivir cuando bajaba a la fosa r taned para el senor fieles suyos dad gracias a su nombre santo su colera dura un instante su bondad de por vida al atardecer nos visita el llanto por la manana el jubilo r escucha senor y ten piedad de mi senor socorreme cambiaste mi luto en danzas senor dios mio te dare gracias por siempre r",
+  "ciclo": "Ciclo C",
+  "sourceBook": "eucaristia",
+  "textoCompleto": "Te ensalzaré, Señor, porque me has librado\ny no has dejado que mis enemigos se rían de mí.\nSeñor, sacaste mi vida del abismo,\nme hiciste revivir cuando bajaba a la fosa. R.\n\nTañed para el Señor, fieles suyos,\ndad gracias a su nombre santo;\nsu cólera dura un instante,\nsu bondad, de por vida;\nal atardecer nos visita el llanto;\npor la mañana, el júbilo. R.\n\nEscucha, Señor, y ten piedad de mí;\nSeñor, socórreme.\nCambiaste mi luto en danzas. Señor,\nDios mío, te daré gracias por siempre. R.",
+  "dia": "Domingo",
+  "celebracion": "Tercer domingo de Pascua",
   "estrofas": [
     [
       "Te ensalzaré, Señor, porque me has librado",
@@ -32,12 +34,6 @@
       "Dios mío, te daré gracias por siempre. R."
     ]
   ],
-  "textoCompleto": "Te ensalzaré, Señor, porque me has librado\ny no has dejado que mis enemigos se rían de mí.\nSeñor, sacaste mi vida del abismo,\nme hiciste revivir cuando bajaba a la fosa. R.\n\nTañed para el Señor, fieles suyos,\ndad gracias a su nombre santo;\nsu cólera dura un instante,\nsu bondad, de por vida;\nal atardecer nos visita el llanto;\npor la mañana, el júbilo. R.\n\nEscucha, Señor, y ten piedad de mí;\nSeñor, socórreme.\nCambiaste mi luto en danzas. Señor,\nDios mío, te daré gracias por siempre. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "tercer domingo de pascua ciclo c pascua domingo salmo responsorial salmo 29 2 y 4 5 y 6 11 y 12a y 13b r 2a r te ensalzare senor porque me has librado r aleluya te ensalzare senor porque me has librado y no has dejado que mis enemigos se rian de mi senor sacaste mi vida del abismo me hiciste revivir cuando bajaba a la fosa r taned para el senor fieles suyos dad gracias a su nombre santo su colera dura un instante su bondad de por vida al atardecer nos visita el llanto por la manana el jubilo r escucha senor y ten piedad de mi senor socorreme cambiaste mi luto en danzas senor dios mio te dare gracias por siempre r",
   "lizq": [
     {
       "line": "R. Te ensalzaré, Señor, porque me has librado.",
@@ -48,68 +44,68 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "O bien:",
-      "sC": "salmo-linea salmo-obien"
+      "sC": "salmo-linea salmo-obien",
+      "line": "O bien:"
     },
     {
-      "line": "R. Aleluya.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Te ensalzaré, Señor, porque me has librado",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "y no has dejado que mis enemigos se rían de mí.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Señor, sacaste mi vida del abismo,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "me hiciste revivir cuando bajaba a la fosa. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aleluya."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Tañed para el Señor, fieles suyos,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Te ensalzaré, Señor, porque me has librado"
     },
     {
-      "line": "dad gracias a su nombre santo;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y no has dejado que mis enemigos se rían de mí."
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Señor, sacaste mi vida del abismo,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "me hiciste revivir cuando bajaba a la fosa. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Tañed para el Señor, fieles suyos,"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "dad gracias a su nombre santo;"
     },
     {
       "line": "su cólera dura un instante,",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "su bondad, de por vida;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "su bondad, de por vida;"
     },
     {
-      "line": "al atardecer nos visita el llanto;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "al atardecer nos visita el llanto;"
     },
     {
-      "line": "por la mañana, el júbilo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "por la mañana, el júbilo. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "Escucha, Señor, y ten piedad de mí;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Escucha, Señor, y ten piedad de mí;"
     },
     {
       "line": "Señor, socórreme.",
@@ -123,5 +119,9 @@
       "line": "Dios mío, te daré gracias por siempre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "subtitle": "Salmo responsorial: Salmo 29, 2 y 4. 5 y 6. 11 y 12a y 13b (R.: 2a)",
+  "id": "seuc_37",
+  "stage": "Liturgia"
 }

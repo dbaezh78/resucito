@@ -1,15 +1,8 @@
 {
-  "id": "seui_052",
-  "title": "Jueves de la 9ª semana de Tiempo Ordinario",
-  "celebracion": "Jueves de la 9ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1a)",
-  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Jueves",
+  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
   "orden": 5094,
-  "respuesta": "R. Dichosos los que temen al Señor.",
-  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Dichoso el que teme al Señor",
@@ -31,12 +24,19 @@
       "todos los días de tu vida. R."
     ]
   ],
-  "textoCompleto": "Dichoso el que teme al Señor\ny sigue sus caminos.\nComerás del fruto de tu trabajo,\nserás dichoso, te irá bien. R.\n\nTu mujer, como parra fecunda,\nen medio de tu casa;\ntus hijos, como renuevos de olivo,\nalrededor de tu mesa. R.\n\nÉsta es la bendición del hombre\nque teme al Señor.\nQue el Señor te bendiga desde Sión,\nque veas la prosperidad de Jerusalén\ntodos los días de tu vida. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "salmo": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1a)",
+  "ciclo": "Año Impar",
+  "celebracion": "Jueves de la 9ª semana de Tiempo Ordinario",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "jueves de la 9 semana de tiempo ordinario ano impar tiempo ordinario jueves salmo responsorial salmo 127 1 2 3 4 5 r cf 1a semana 9 semana ix jueves 9 ix r dichosos los que temen al senor dichoso el que teme al senor y sigue sus caminos comeras del fruto de tu trabajo seras dichoso te ira bien r tu mujer como parra fecunda en medio de tu casa tus hijos como renuevos de olivo alrededor de tu mesa r esta es la bendicion del hombre que teme al senor que el senor te bendiga desde sion que veas la prosperidad de jerusalen todos los dias de tu vida r",
+  "respuestaOpcional": "",
+  "title": "Jueves de la 9ª semana de Tiempo Ordinario",
+  "dia": "Jueves",
+  "respuesta": "R. Dichosos los que temen al Señor.",
+  "hasAudio": false,
+  "id": "seui_052",
+  "subtitle": "Salmo responsorial: Salmo 127, 1-2. 3. 4-5 (R.: cf. 1a)",
+  "tiempo": "Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Dichosos los que temen al Señor.",
@@ -87,8 +87,8 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Ésta es la bendición del hombre",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Ésta es la bendición del hombre"
     },
     {
       "line": "que teme al Señor.",
@@ -103,8 +103,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "todos los días de tu vida. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "todos los días de tu vida. R."
     }
   ]
 }

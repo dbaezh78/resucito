@@ -1,15 +1,6 @@
 {
-  "id": "seup_003",
   "title": "Miércoles de la 1ª semana de Tiempo Ordinario",
-  "celebracion": "Miércoles de la 1ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 39, 2 y 5. 7-8a. 8b-9. 10 (R.: cf. 8a y 9a)",
-  "salmo": "Salmo responsorial: Salmo 39, 2 y 5. 7-8a. 8b-9. 10 (R.: cf. 8a y 9a)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Miércoles",
-  "orden": 5013,
-  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
-  "respuestaOpcional": "",
+  "sourceBook": "eucaristia",
   "estrofas": [
     [
       "Yo esperaba con ansia al Señor:",
@@ -32,20 +23,24 @@
       "y llevo tu ley en las entrañas. R."
     ]
   ],
-  "textoCompleto": "Yo esperaba con ansia al Señor:\nél se inclinó y escuchó mi grito.\nDichoso el hombre que ha puesto\nsu confianza en el Señor,\ny no acude a los idólatras\nque se extravían con engaños. R.\n\nTú no quieres sacrificios ni ofrendas,\ny en cambio me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\nComo está escrito en mi libro:\n«Para hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "ciclo": "Año Par",
+  "celebracion": "Miércoles de la 1ª semana de Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 39, 2 y 5. 7-8a. 8b-9. 10 (R.: cf. 8a y 9a)",
   "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "miercoles de la 1 semana de tiempo ordinario ano par tiempo ordinario miercoles salmo responsorial salmo 39 2 y 5 7 8a 8b 9 10 r cf 8a y 9a semana 1 semana i miercoles 1 i r aqui estoy senor para hacer tu voluntad yo esperaba con ansia al senor el se inclino y escucho mi grito dichoso el hombre que ha puesto su confianza en el senor y no acude a los idolatras que se extravian con enganos r tu no quieres sacrificios ni ofrendas y en cambio me abriste el oido no pides sacrificio expiatorio entonces yo digo aqui estoy r como esta escrito en mi libro para hacer tu voluntad dios mio lo quiero y llevo tu ley en las entranas r",
+  "tiempo": "Tiempo Ordinario",
+  "stage": "Liturgia",
+  "respuesta": "R. Aquí estoy, Señor, para hacer tu voluntad.",
+  "id": "seup_003",
+  "orden": 5013,
   "lizq": [
     {
       "line": "R. Aquí estoy, Señor, para hacer tu voluntad.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Yo esperaba con ansia al Señor:",
@@ -84,16 +79,16 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "no pides sacrificio expiatorio,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "no pides sacrificio expiatorio,"
     },
     {
-      "line": "entonces yo digo: «Aquí estoy». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "entonces yo digo: «Aquí estoy». R."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Como está escrito en mi libro:",
@@ -111,5 +106,10 @@
       "line": "y llevo tu ley en las entrañas. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "dia": "Miércoles",
+  "respuestaOpcional": "",
+  "subtitle": "Salmo responsorial: Salmo 39, 2 y 5. 7-8a. 8b-9. 10 (R.: cf. 8a y 9a)",
+  "textoCompleto": "Yo esperaba con ansia al Señor:\nél se inclinó y escuchó mi grito.\nDichoso el hombre que ha puesto\nsu confianza en el Señor,\ny no acude a los idólatras\nque se extravían con engaños. R.\n\nTú no quieres sacrificios ni ofrendas,\ny en cambio me abriste el oído;\nno pides sacrificio expiatorio,\nentonces yo digo: «Aquí estoy». R.\n\nComo está escrito en mi libro:\n«Para hacer tu voluntad».\nDios mío, lo quiero,\ny llevo tu ley en las entrañas. R."
 }

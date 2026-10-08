@@ -1,22 +1,6 @@
 {
-  "id": "seuf_042",
-  "title": "Viernes después de Cenizas",
-  "celebracion": "Viernes después de Cenizas",
-  "subtitle": "Salmo 50, 3-4. 5-6a. 18-19 (R.: 19b)",
-  "salmo": "Salmo 50, 3-4. 5-6a. 18-19 (R.: 19b)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Cuaresma",
-  "dia": "Miércoles",
   "orden": 300,
-  "respuesta": "R. Un corazón quebrantado y humillado, tú, Dios mío, no lo desprecias.",
-  "respuestaOpcional": "",
+  "searchPool": "viernes despues de cenizas ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles salmo 50 3 4 5 6a 18 19 r 19b miercoles feria r un corazon quebrantado y humillado tu dios mio no lo desprecias misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r los sacrificios no te satisfacen si te ofreciera un holocausto no lo querrias mi sacrificio es un espiritu quebrantado un corazon quebrantado y humillado tu no lo desprecias r",
   "estrofas": [
     [
       "Misericordia, Dios mío, por tu bondad,",
@@ -38,12 +22,28 @@
       "tú no lo desprecias. R."
     ]
   ],
-  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nLos sacrificios no te satisfacen:\nsi te ofreciera un holocausto, no lo querrías.\nMi sacrificio es un espíritu quebrantado;\nun corazón quebrantado y humillado,\ntú no lo desprecias. R.",
+  "title": "Viernes después de Cenizas",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo 50, 3-4. 5-6a. 18-19 (R.: 19b)",
   "catCanto": "Salmo Eucaristía",
+  "id": "seuf_042",
+  "textoCompleto": "Misericordia, Dios mío, por tu bondad,\npor tu inmensa compasión borra mi culpa;\nlava del todo mi delito,\nlimpia mi pecado. R.\n\nPues yo reconozco mi culpa,\ntengo siempre presente mi pecado:\ncontra ti, contra ti solo pequé,\ncometí la maldad que aborreces. R.\n\nLos sacrificios no te satisfacen:\nsi te ofreciera un holocausto, no lo querrías.\nMi sacrificio es un espíritu quebrantado;\nun corazón quebrantado y humillado,\ntú no lo desprecias. R.",
+  "dia": "Miércoles",
+  "tiempo": "Cuaresma",
+  "salmo": "Salmo 50, 3-4. 5-6a. 18-19 (R.: 19b)",
   "hasAudio": false,
-  "searchPool": "viernes despues de cenizas ciclo a ciclo b ciclo c ciclo a b y c cuaresma miercoles salmo 50 3 4 5 6a 18 19 r 19b miercoles feria r un corazon quebrantado y humillado tu dios mio no lo desprecias misericordia dios mio por tu bondad por tu inmensa compasion borra mi culpa lava del todo mi delito limpia mi pecado r pues yo reconozco mi culpa tengo siempre presente mi pecado contra ti contra ti solo peque cometi la maldad que aborreces r los sacrificios no te satisfacen si te ofreciera un holocausto no lo querrias mi sacrificio es un espiritu quebrantado un corazon quebrantado y humillado tu no lo desprecias r",
+  "celebracion": "Viernes después de Cenizas",
+  "respuesta": "R. Un corazón quebrantado y humillado, tú, Dios mío, no lo desprecias.",
+  "stage": "Liturgia",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "respuestaOpcional": "",
+  "ciclo": "Ciclo A, B y C",
   "lizq": [
     {
       "line": "R. Un corazón quebrantado y humillado,",
@@ -58,36 +58,36 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Misericordia, Dios mío, por tu bondad,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Misericordia, Dios mío, por tu bondad,"
     },
     {
       "line": "por tu inmensa compasión borra mi culpa;",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "lava del todo mi delito,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "lava del todo mi delito,"
     },
     {
       "line": "limpia mi pecado. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Pues yo reconozco mi culpa,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Pues yo reconozco mi culpa,"
     },
     {
       "line": "tengo siempre presente mi pecado:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "contra ti, contra ti solo pequé,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "contra ti, contra ti solo pequé,"
     },
     {
       "line": "cometí la maldad que aborreces. R.",
@@ -110,12 +110,12 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "un corazón quebrantado y humillado,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "un corazón quebrantado y humillado,"
     },
     {
-      "line": "tú no lo desprecias. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "tú no lo desprecias. R."
     }
   ]
 }

@@ -1,15 +1,82 @@
 {
-  "id": "seui_020",
-  "title": "Martes de la 4ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 4ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 27b)",
-  "salmo": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 27b)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
+  "lizq": [
+    {
+      "line": "R. Te alabarán, Señor, los que te buscan.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Cumpliré mis votos delante de sus fieles."
+    },
+    {
+      "line": "Los desvalidos comerán hasta saciarse,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "alabarán al Señor los que lo buscan:",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "viva su corazón por siempre. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "line": "Lo recordarán y volverán al Señor",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "hasta de los confines del orbe;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en su presencia se postrarán"
+    },
+    {
+      "line": "las familias de los pueblos.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Ante él se postrarán las cenizas de la tumba,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ante él se inclinarán los que bajan al polvo. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Me hará vivir para él, mi descendencia le servirá,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "line": "hablarán del Señor a la generación futura,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "contarán su justicia al pueblo que ha de nacer:"
+    },
+    {
+      "line": "todo lo que hizo el Señor. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "catCanto": "Salmo Eucaristía",
   "dia": "Martes",
-  "orden": 5042,
-  "respuesta": "R. Te alabarán, Señor, los que te buscan.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Cumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.\n\nLo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nAnte él se postrarán las cenizas de la tumba,\nante él se inclinarán los que bajan al polvo. R.\n\nMe hará vivir para él, mi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R.",
+  "id": "seui_020",
   "estrofas": [
     [
       "Cumpliré mis votos delante de sus fieles.",
@@ -32,84 +99,17 @@
       "todo lo que hizo el Señor. R."
     ]
   ],
-  "textoCompleto": "Cumpliré mis votos delante de sus fieles.\nLos desvalidos comerán hasta saciarse,\nalabarán al Señor los que lo buscan:\nviva su corazón por siempre. R.\n\nLo recordarán y volverán al Señor\nhasta de los confines del orbe;\nen su presencia se postrarán\nlas familias de los pueblos.\nAnte él se postrarán las cenizas de la tumba,\nante él se inclinarán los que bajan al polvo. R.\n\nMe hará vivir para él, mi descendencia le servirá,\nhablarán del Señor a la generación futura,\ncontarán su justicia al pueblo que ha de nacer:\ntodo lo que hizo el Señor. R.",
+  "respuesta": "R. Te alabarán, Señor, los que te buscan.",
+  "title": "Martes de la 4ª semana de Tiempo Ordinario",
+  "respuestaOpcional": "",
+  "tiempo": "Tiempo Ordinario",
   "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "subtitle": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 27b)",
+  "ciclo": "Año Impar",
+  "salmo": "Salmo responsorial: Salmo 21, 26b-27. 28 y 30. 31-32 (R.: 27b)",
   "searchPool": "martes de la 4 semana de tiempo ordinario ano impar tiempo ordinario martes salmo responsorial salmo 21 26b 27 28 y 30 31 32 r 27b semana 4 semana iv martes 4 iv r te alabaran senor los que te buscan cumplire mis votos delante de sus fieles los desvalidos comeran hasta saciarse alabaran al senor los que lo buscan viva su corazon por siempre r lo recordaran y volveran al senor hasta de los confines del orbe en su presencia se postraran las familias de los pueblos ante el se postraran las cenizas de la tumba ante el se inclinaran los que bajan al polvo r me hara vivir para el mi descendencia le servira hablaran del senor a la generacion futura contaran su justicia al pueblo que ha de nacer todo lo que hizo el senor r",
-  "lizq": [
-    {
-      "line": "R. Te alabarán, Señor, los que te buscan.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Cumpliré mis votos delante de sus fieles.",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "Los desvalidos comerán hasta saciarse,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "alabarán al Señor los que lo buscan:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "viva su corazón por siempre. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Lo recordarán y volverán al Señor",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "hasta de los confines del orbe;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "en su presencia se postrarán",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "las familias de los pueblos.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Ante él se postrarán las cenizas de la tumba,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ante él se inclinarán los que bajan al polvo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Me hará vivir para él, mi descendencia le servirá,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "hablarán del Señor a la generación futura,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "contarán su justicia al pueblo que ha de nacer:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "todo lo que hizo el Señor. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "stage": "Liturgia",
+  "celebracion": "Martes de la 4ª semana de Tiempo Ordinario",
+  "hasAudio": false,
+  "orden": 5042
 }

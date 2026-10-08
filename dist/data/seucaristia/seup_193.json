@@ -1,15 +1,98 @@
 {
-  "id": "seup_193",
+  "lizq": [
+    {
+      "line": "R. Al que salga vencedor le daré a comer del árbol de la vida.",
+      "sC": "salmo-linea salmo-respuesta"
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Dichoso el hombre",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que no sigue el consejo de los impíos,"
+    },
+    {
+      "line": "ni entra por la senda de los pecadores,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "ni se sienta en la reunión de los cínicos;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "sino que su gozo es la ley del Señor,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y medita su ley día y noche. R."
+    },
+    {
+      "sC": "salmo-espacio",
+      "line": ""
+    },
+    {
+      "line": "Será como un árbol,",
+      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "plantado al borde de la acequia:"
+    },
+    {
+      "line": "da fruto en su sazón",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "y no se marchitan sus hojas;",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y cuanto emprende tiene buen fin. R."
+    },
+    {
+      "line": "",
+      "sC": "salmo-espacio"
+    },
+    {
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "No así los impíos, no así;"
+    },
+    {
+      "line": "serán paja que arrebata el viento.",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "Porque el Señor protege el camino de los justos,",
+      "sC": "salmo-linea salmo-verso salmo-sangria"
+    },
+    {
+      "line": "pero el camino de los impíos acaba mal. R.",
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+    }
+  ],
+  "sourceBook": "eucaristia",
+  "respuesta": "R. Al que salga vencedor le daré a comer del árbol de la vida.",
+  "ciclo": "Año Par",
+  "catCanto": "Salmo Eucaristía",
+  "tiempo": "Tiempo Ordinario",
   "title": "Lunes de la 33ª semana de Tiempo Ordinario",
+  "orden": 5331,
+  "dia": "Lunes",
+  "id": "seup_193",
+  "searchPool": "lunes de la 33 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 1 1 2 3 4 y 6 r ap 2 7b semana 33 semana xxxiii lunes 33 xxxiii r al que salga vencedor le dare a comer del arbol de la vida dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
+  "respuestaOpcional": "",
+  "hasAudio": false,
   "celebracion": "Lunes de la 33ª semana de Tiempo Ordinario",
+  "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol,\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
   "subtitle": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: Ap 2, 7b)",
   "salmo": "Salmo responsorial: Salmo 1, 1-2. 3. 4 y 6 (R.: Ap 2, 7b)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5331,
-  "respuesta": "R. Al que salga vencedor le daré a comer del árbol de la vida.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dichoso el hombre",
@@ -33,88 +116,5 @@
       "pero el camino de los impíos acaba mal. R."
     ]
   ],
-  "textoCompleto": "Dichoso el hombre\nque no sigue el consejo de los impíos,\nni entra por la senda de los pecadores,\nni se sienta en la reunión de los cínicos;\nsino que su gozo es la ley del Señor,\ny medita su ley día y noche. R.\n\nSerá como un árbol,\nplantado al borde de la acequia:\nda fruto en su sazón\ny no se marchitan sus hojas;\ny cuanto emprende tiene buen fin. R.\n\nNo así los impíos, no así;\nserán paja que arrebata el viento.\nPorque el Señor protege el camino de los justos,\npero el camino de los impíos acaba mal. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 33 semana de tiempo ordinario ano par tiempo ordinario lunes salmo responsorial salmo 1 1 2 3 4 y 6 r ap 2 7b semana 33 semana xxxiii lunes 33 xxxiii r al que salga vencedor le dare a comer del arbol de la vida dichoso el hombre que no sigue el consejo de los impios ni entra por la senda de los pecadores ni se sienta en la reunion de los cinicos sino que su gozo es la ley del senor y medita su ley dia y noche r sera como un arbol plantado al borde de la acequia da fruto en su sazon y no se marchitan sus hojas y cuanto emprende tiene buen fin r no asi los impios no asi seran paja que arrebata el viento porque el senor protege el camino de los justos pero el camino de los impios acaba mal r",
-  "lizq": [
-    {
-      "line": "R. Al que salga vencedor le daré a comer del árbol de la vida.",
-      "sC": "salmo-linea salmo-respuesta"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Dichoso el hombre",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "que no sigue el consejo de los impíos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ni entra por la senda de los pecadores,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "ni se sienta en la reunión de los cínicos;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "sino que su gozo es la ley del Señor,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y medita su ley día y noche. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "Será como un árbol,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "plantado al borde de la acequia:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "da fruto en su sazón",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y no se marchitan sus hojas;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "y cuanto emprende tiene buen fin. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    },
-    {
-      "line": "",
-      "sC": "salmo-espacio"
-    },
-    {
-      "line": "No así los impíos, no así;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
-    },
-    {
-      "line": "serán paja que arrebata el viento.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "Porque el Señor protege el camino de los justos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
-    },
-    {
-      "line": "pero el camino de los impíos acaba mal. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-    }
-  ]
+  "stage": "Liturgia"
 }

@@ -1,15 +1,18 @@
 {
+  "stage": "Liturgia",
+  "sourceBook": "eucaristia",
+  "dia": "17",
   "id": "seus_005",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+  "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
+  "searchPool": "san antonio abad memoria santos enero 17 opcion 1 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r debajo dice martires y cuando diga asi sino tiene salmos quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos r opcion 2 salmo 22 1 3 4 5 6 r 1 r el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas me guia por el sendero justo por el honor de su nombre r aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r opcion 3 salmo 102 1 2 3 4 8 9 13 14 17 18a r 1a r bendice alma mia al senor bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no esta siempre acusando ni guarda rencor perpetuo r como un padre siente ternura por sus hijos siente el senor ternura por sus fieles porque el conoce nuestra masa se acuerda de que somos barro r pero la misericordia del senor dura siempre su justicia pasa de hijos a nietos para los que guardan la alianza r opcion 4 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r",
+  "orden": 1170,
+  "hasAudio": false,
+  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.\n\nDebajo dice mártires, y cuando diga asi, sino tiene Salmos, quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos. R.",
+  "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
   "title": "San Antonio, abad",
   "celebracion": "San Antonio, abad",
-  "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-  "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-  "ciclo": "Santos",
-  "tiempo": "Enero",
-  "dia": "17",
-  "orden": 1170,
-  "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Protégeme, Dios mío, que me refugio en ti;",
@@ -32,26 +35,12 @@
       "Debajo dice mártires, y cuando diga asi, sino tiene Salmos, quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos. R."
     ]
   ],
-  "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.\n\nDebajo dice mártires, y cuando diga asi, sino tiene Salmos, quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "san antonio abad memoria santos enero 17 opcion 1 salmo 15 1 2a y 5 7 8 11 r cf 5a r tu senor eres el lote de mi heredad protegeme dios mio que me refugio en ti yo digo al senor tu eres mi bien el senor es el lote de mi heredad y mi copa mi suerte esta en tu mano r bendecire al senor que me aconseja hasta de noche me instruye internamente tengo siempre presente al senor con el a mi derecha no vacilare r me ensenaras el sendero de la vida me saciaras de gozo en tu presencia de alegria perpetua a tu derecha r debajo dice martires y cuando diga asi sino tiene salmos quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos r opcion 2 salmo 22 1 3 4 5 6 r 1 r el senor es mi pastor nada me falta el senor es mi pastor nada me falta en verdes praderas me hace recostar me conduce hacia fuentes tranquilas y repara mis fuerzas me guia por el sendero justo por el honor de su nombre r aunque camine por canadas oscuras nada temo porque tu vas conmigo tu vara y tu cayado me sosiegan r preparas una mesa ante mi enfrente de mis enemigos me unges la cabeza con perfume y mi copa rebosa r tu bondad y tu misericordia me acompanan todos los dias de mi vida y habitare en la casa del senor por anos sin termino r opcion 3 salmo 102 1 2 3 4 8 9 13 14 17 18a r 1a r bendice alma mia al senor bendice alma mia al senor y todo mi ser a su santo nombre bendice alma mia al senor y no olvides sus beneficios r el perdona todas tus culpas y cura todas tus enfermedades el rescata tu vida de la fosa y te colma de gracia y de ternura r el senor es compasivo y misericordioso lento a la ira y rico en clemencia no esta siempre acusando ni guarda rencor perpetuo r como un padre siente ternura por sus hijos siente el senor ternura por sus fieles porque el conoce nuestra masa se acuerda de que somos barro r pero la misericordia del senor dura siempre su justicia pasa de hijos a nietos para los que guardan la alianza r opcion 4 salmo 130 1 2 3 r guarda mi alma en la paz junto a ti senor senor mi corazon no es ambicioso ni mis ojos altaneros no pretendo grandezas que superan mi capacidad r sino que acallo y modero mis deseos como un nino en brazos de su madre r espere israel en el senor ahora y por siempre r",
+  "ciclo": "Santos",
   "lizq": [
     {
-      "type": "variant-group",
-      "id": "salmo_variantes",
-      "label": "Salmo Responsorial",
-      "color": "var(--Rojo-Leccionario)",
       "variants": [
         {
-          "id": "opt_1",
           "name": "Opción 1: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
-          "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
-          "respuestaOpcional": "",
           "strophes": [
             [
               "Protégeme, Dios mío, que me refugio en ti;",
@@ -74,15 +63,14 @@
               "Debajo dice mártires, y cuando diga asi, sino tiene Salmos, quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos. R."
             ]
           ],
-          "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.\n\nDebajo dice mártires, y cuando diga asi, sino tiene Salmos, quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos. R.",
           "lines": [
             {
               "line": "R. Tú, Señor, eres el lote de mi heredad.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Protégeme, Dios mío, que me refugio en ti;",
@@ -105,8 +93,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "Bendeciré al Señor, que me aconseja,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Bendeciré al Señor, que me aconseja,"
             },
             {
               "line": "hasta de noche me instruye internamente.",
@@ -137,22 +125,22 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Debajo dice mártires, y cuando diga asi, sino tiene Salmos, quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos. R.",
               "sC": "salmo-linea salmo-verso salmo-verso-primero salmo-verso-fin"
             }
-          ]
+          ],
+          "respuesta": "R. Tú, Señor, eres el lote de mi heredad.",
+          "respuestaOpcional": "",
+          "id": "opt_1",
+          "subtitle": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)",
+          "textoCompleto": "Protégeme, Dios mío, que me refugio en ti;\nyo digo al Señor: «Tú eres mi bien».\nEl Señor es el lote de mi heredad y mi copa;\nmi suerte está en tu mano. R.\n\nBendeciré al Señor, que me aconseja,\nhasta de noche me instruye internamente.\nTengo siempre presente al Señor,\ncon él a mi derecha no vacilaré. R.\n\nMe enseñarás el sendero de la vida,\nme saciarás de gozo en tu presencia,\nde alegría perpetua a tu derecha. R.\n\nDebajo dice mártires, y cuando diga asi, sino tiene Salmos, quiero que pongas un select con los salmos que te puse que son diferentes opciones para que la persona pueda seleccionar un salmo de esos. R.",
+          "salmo": "Salmo responsorial: Salmo 15, 1-2a y 5. 7-8. 11 (R.: cf. 5a)"
         },
         {
-          "id": "opt_2",
-          "name": "Opción 2: Salmo 22, 1-3. 4. 5. 6 (R.: 1)",
-          "salmo": "Salmo responsorial: Salmo 22, 1-3. 4. 5. 6 (R.: 1)",
-          "subtitle": "Salmo responsorial: Salmo 22, 1-3. 4. 5. 6 (R.: 1)",
-          "respuesta": "R. El Señor es mi pastor, nada me falta.",
-          "respuestaOpcional": "R. Aleluya.",
           "strophes": [
             [
               "El Señor es mi pastor, nada me falta:",
@@ -180,7 +168,7 @@
               "por años sin término. R."
             ]
           ],
-          "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas;\nme guía por el sendero justo,\npor el honor de su nombre. R.\n\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R.",
+          "respuestaOpcional": "R. Aleluya.",
           "lines": [
             {
               "line": "R. El Señor es mi pastor, nada me falta.",
@@ -191,8 +179,8 @@
               "sC": "salmo-espacio"
             },
             {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
             },
             {
               "line": "R. Aleluya.",
@@ -207,12 +195,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "en verdes praderas me hace recostar;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "en verdes praderas me hace recostar;"
             },
             {
-              "line": "me conduce hacia fuentes tranquilas",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "me conduce hacia fuentes tranquilas"
             },
             {
               "line": "y repara mis fuerzas;",
@@ -239,16 +227,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "tu vara y tu cayado me sosiegan. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "tu vara y tu cayado me sosiegan. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "Preparas una mesa ante mí,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Preparas una mesa ante mí,"
             },
             {
               "line": "enfrente de mis enemigos;",
@@ -263,16 +251,16 @@
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Tu bondad y tu misericordia me acompañan",
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "todos los días de mi vida,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "todos los días de mi vida,"
             },
             {
               "line": "y habitaré en la casa del Señor",
@@ -282,15 +270,136 @@
               "line": "por años sin término. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "name": "Opción 2: Salmo 22, 1-3. 4. 5. 6 (R.: 1)",
+          "id": "opt_2",
+          "salmo": "Salmo responsorial: Salmo 22, 1-3. 4. 5. 6 (R.: 1)",
+          "subtitle": "Salmo responsorial: Salmo 22, 1-3. 4. 5. 6 (R.: 1)",
+          "respuesta": "R. El Señor es mi pastor, nada me falta.",
+          "textoCompleto": "El Señor es mi pastor, nada me falta:\nen verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas;\nme guía por el sendero justo,\npor el honor de su nombre. R.\n\nAunque camine por cañadas oscuras,\nnada temo, porque tú vas conmigo:\ntu vara y tu cayado me sosiegan. R.\n\nPreparas una mesa ante mí,\nenfrente de mis enemigos;\nme unges la cabeza con perfume,\ny mi copa rebosa. R.\n\nTu bondad y tu misericordia me acompañan\ntodos los días de mi vida,\ny habitaré en la casa del Señor\npor años sin término. R."
         },
         {
-          "id": "opt_3",
+          "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno está siempre acusando\nni guarda rencor perpetuo. R.\n\nComo un padre siente ternura por sus hijos,\nsiente el Señor ternura por sus fieles;\nporque él conoce nuestra masa,\nse acuerda de que somos barro. R.\n\nPero la misericordia del Señor dura siempre,\nsu justicia pasa de hijos a nietos,\npara los que guardan la alianza. R.",
+          "respuesta": "R. Bendice, alma mía, al Señor.",
+          "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a (R.: 1a)",
+          "respuestaOpcional": "R. Aleluya.",
+          "lines": [
+            {
+              "sC": "salmo-linea salmo-respuesta",
+              "line": "R. Bendice, alma mía, al Señor."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "O bien:",
+              "sC": "salmo-linea salmo-obien"
+            },
+            {
+              "line": "R. Aleluya.",
+              "sC": "salmo-linea salmo-respuesta"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "line": "Bendice, alma mía, al Señor,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "line": "y todo mi ser a su santo nombre.",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "Bendice, alma mía, al Señor,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "y no olvides sus beneficios. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Él perdona todas tus culpas"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "y cura todas tus enfermedades;"
+            },
+            {
+              "line": "él rescata tu vida de la fosa",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "y te colma de gracia y de ternura. R."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "line": "El Señor es compasivo y misericordioso,",
+              "sC": "salmo-linea salmo-verso salmo-verso-primero"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "lento a la ira y rico en clemencia;"
+            },
+            {
+              "line": "no está siempre acusando",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "ni guarda rencor perpetuo. R."
+            },
+            {
+              "sC": "salmo-espacio",
+              "line": ""
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Como un padre siente ternura por sus hijos,"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria",
+              "line": "siente el Señor ternura por sus fieles;"
+            },
+            {
+              "line": "porque él conoce nuestra masa,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "se acuerda de que somos barro. R."
+            },
+            {
+              "line": "",
+              "sC": "salmo-espacio"
+            },
+            {
+              "sC": "salmo-linea salmo-verso salmo-verso-primero",
+              "line": "Pero la misericordia del Señor dura siempre,"
+            },
+            {
+              "line": "su justicia pasa de hijos a nietos,",
+              "sC": "salmo-linea salmo-verso salmo-sangria"
+            },
+            {
+              "line": "para los que guardan la alianza. R.",
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+            }
+          ],
           "name": "Opción 3: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a (R.: 1a)",
           "salmo": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a (R.: 1a)",
-          "subtitle": "Salmo responsorial: Salmo 102, 1-2. 3-4. 8-9. 13-14. 17-18a (R.: 1a)",
-          "respuesta": "R. Bendice, alma mía, al Señor.",
-          "respuestaOpcional": "R. Aleluya.",
+          "id": "opt_3",
           "strophes": [
             [
               "Bendice, alma mía, al Señor,",
@@ -321,130 +430,13 @@
               "su justicia pasa de hijos a nietos,",
               "para los que guardan la alianza. R."
             ]
-          ],
-          "textoCompleto": "Bendice, alma mía, al Señor,\ny todo mi ser a su santo nombre.\nBendice, alma mía, al Señor,\ny no olvides sus beneficios. R.\n\nÉl perdona todas tus culpas\ny cura todas tus enfermedades;\nél rescata tu vida de la fosa\ny te colma de gracia y de ternura. R.\n\nEl Señor es compasivo y misericordioso,\nlento a la ira y rico en clemencia;\nno está siempre acusando\nni guarda rencor perpetuo. R.\n\nComo un padre siente ternura por sus hijos,\nsiente el Señor ternura por sus fieles;\nporque él conoce nuestra masa,\nse acuerda de que somos barro. R.\n\nPero la misericordia del Señor dura siempre,\nsu justicia pasa de hijos a nietos,\npara los que guardan la alianza. R.",
-          "lines": [
-            {
-              "line": "R. Bendice, alma mía, al Señor.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
-            },
-            {
-              "line": "R. Aleluya.",
-              "sC": "salmo-linea salmo-respuesta"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Bendice, alma mía, al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "y todo mi ser a su santo nombre.",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "Bendice, alma mía, al Señor,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y no olvides sus beneficios. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Él perdona todas tus culpas",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "y cura todas tus enfermedades;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "él rescata tu vida de la fosa",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "y te colma de gracia y de ternura. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "El Señor es compasivo y misericordioso,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "lento a la ira y rico en clemencia;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "no está siempre acusando",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "ni guarda rencor perpetuo. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Como un padre siente ternura por sus hijos,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "siente el Señor ternura por sus fieles;",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "porque él conoce nuestra masa,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "se acuerda de que somos barro. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            },
-            {
-              "line": "",
-              "sC": "salmo-espacio"
-            },
-            {
-              "line": "Pero la misericordia del Señor dura siempre,",
-              "sC": "salmo-linea salmo-verso salmo-verso-primero"
-            },
-            {
-              "line": "su justicia pasa de hijos a nietos,",
-              "sC": "salmo-linea salmo-verso salmo-sangria"
-            },
-            {
-              "line": "para los que guardan la alianza. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
-            }
           ]
         },
         {
-          "id": "opt_4",
           "name": "Opción 4: Salmo 130, 1. 2. 3",
-          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
+          "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
           "subtitle": "Salmo responsorial: Salmo 130, 1. 2. 3",
-          "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor.",
-          "respuestaOpcional": "R. Aleluya.",
+          "salmo": "Salmo responsorial: Salmo 130, 1. 2. 3",
           "strophes": [
             [
               "Señor, mi corazón no es ambicioso,",
@@ -461,19 +453,18 @@
               "ahora y por siempre. R."
             ]
           ],
-          "textoCompleto": "Señor, mi corazón no es ambicioso,\nni mis ojos altaneros;\nno pretendo grandezas\nque superan mi capacidad. R.\n\nSino que acallo y modero mis deseos,\ncomo un niño en brazos de su madre. R.\n\nEspere Israel en el Señor\nahora y por siempre. R.",
           "lines": [
             {
               "line": "R. Guarda mi alma en la paz, junto a ti, Señor.",
               "sC": "salmo-linea salmo-respuesta"
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
-              "line": "O bien:",
-              "sC": "salmo-linea salmo-obien"
+              "sC": "salmo-linea salmo-obien",
+              "line": "O bien:"
             },
             {
               "line": "R. Aleluya.",
@@ -496,8 +487,8 @@
               "sC": "salmo-linea salmo-verso salmo-sangria"
             },
             {
-              "line": "que superan mi capacidad. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "que superan mi capacidad. R."
             },
             {
               "line": "",
@@ -508,12 +499,12 @@
               "sC": "salmo-linea salmo-verso salmo-verso-primero"
             },
             {
-              "line": "como un niño en brazos de su madre. R.",
-              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+              "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+              "line": "como un niño en brazos de su madre. R."
             },
             {
-              "line": "",
-              "sC": "salmo-espacio"
+              "sC": "salmo-espacio",
+              "line": ""
             },
             {
               "line": "Espere Israel en el Señor",
@@ -523,9 +514,18 @@
               "line": "ahora y por siempre. R.",
               "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
             }
-          ]
+          ],
+          "respuestaOpcional": "R. Aleluya.",
+          "id": "opt_4",
+          "respuesta": "R. Guarda mi alma en la paz, junto a ti, Señor."
         }
-      ]
+      ],
+      "id": "salmo_variantes",
+      "color": "var(--Rojo-Leccionario)",
+      "label": "Salmo Responsorial",
+      "type": "variant-group"
     }
-  ]
+  ],
+  "respuestaOpcional": "",
+  "tiempo": "Enero"
 }

@@ -1,22 +1,4 @@
 {
-  "id": "seuf_002",
-  "title": "Martes de la 1ª semana de Adviento",
-  "celebracion": "Martes de la 1ª semana de Adviento",
-  "subtitle": "Salmo 71, 1-2. 7-8. 12-13. 17 (R.: cf. 7)",
-  "salmo": "Salmo 71, 1-2. 7-8. 12-13. 17 (R.: cf. 7)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Adviento",
-  "dia": "Martes",
-  "orden": 112,
-  "respuesta": "R. Que en sus días florezca la justicia, y la paz abunde eternamente",
-  "respuestaOpcional": "",
   "estrofas": [
     [
       "Dios mío, confía tu juicio al rey,",
@@ -43,20 +25,28 @@
       "y lo proclamen dichoso todas las razas de la tierra. R."
     ]
   ],
-  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nÉl librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol:\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
+  "subtitle": "Salmo 71, 1-2. 7-8. 12-13. 17 (R.: cf. 7)",
   "catCanto": "Salmo Eucaristía",
+  "celebracion": "Martes de la 1ª semana de Adviento",
+  "stage": "Liturgia",
+  "dia": "Martes",
+  "ciclo": "Ciclo A, B y C",
+  "textoCompleto": "Dios mío, confía tu juicio al rey,\ntu justicia al hijo de reyes,\npara que rija a tu pueblo con justicia,\na tus humildes con rectitud. R.\n\nQue en sus días florezca la justicia\ny la paz hasta que falte la luna;\nque domine de mar a mar,\ndel Gran Río al confín de la tierra. R.\n\nÉl librará al pobre que clamaba,\nal afligido que no tenía protector;\nél se apiadará del pobre y del indigente,\ny salvará la vida de los pobres. R.\n\nQue su nombre sea eterno,\ny su fama dure como el sol:\nque él sea la bendición de todos los pueblos,\ny lo proclamen dichoso todas las razas de la tierra. R.",
+  "tiempo": "Adviento",
+  "id": "seuf_002",
+  "orden": 112,
+  "respuestaOpcional": "",
+  "title": "Martes de la 1ª semana de Adviento",
+  "respuesta": "R. Que en sus días florezca la justicia, y la paz abunde eternamente",
   "hasAudio": false,
-  "searchPool": "martes de la 1 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento martes salmo 71 1 2 7 8 12 13 17 r cf 7 semana 1 semana i martes feria r que en sus dias florezca la justicia y la paz abunde eternamente dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que en sus dias florezca la justicia y la paz hasta que falte la luna que domine de mar a mar del gran rio al confin de la tierra r el librara al pobre que clamaba al afligido que no tenia protector el se apiadara del pobre y del indigente y salvara la vida de los pobres r que su nombre sea eterno y su fama dure como el sol que el sea la bendicion de todos los pueblos y lo proclamen dichoso todas las razas de la tierra r",
   "lizq": [
     {
       "line": "R. Que en sus días florezca la justicia,",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "y la paz abunde eternamente",
-      "sC": "salmo-linea salmo-respuesta salmo-sangria"
+      "sC": "salmo-linea salmo-respuesta salmo-sangria",
+      "line": "y la paz abunde eternamente"
     },
     {
       "line": "",
@@ -71,8 +61,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "para que rija a tu pueblo con justicia,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "para que rija a tu pueblo con justicia,"
     },
     {
       "line": "a tus humildes con rectitud. R.",
@@ -99,8 +89,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Él librará al pobre que clamaba,",
@@ -119,24 +109,34 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "Que su nombre sea eterno,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Que su nombre sea eterno,"
     },
     {
-      "line": "y su fama dure como el sol:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y su fama dure como el sol:"
     },
     {
-      "line": "que él sea la bendición de todos los pueblos,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "que él sea la bendición de todos los pueblos,"
     },
     {
       "line": "y lo proclamen dichoso todas las razas de la tierra. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
+  ],
+  "searchPool": "martes de la 1 semana de adviento ciclo a ciclo b ciclo c ciclo a b y c adviento martes salmo 71 1 2 7 8 12 13 17 r cf 7 semana 1 semana i martes feria r que en sus dias florezca la justicia y la paz abunde eternamente dios mio confia tu juicio al rey tu justicia al hijo de reyes para que rija a tu pueblo con justicia a tus humildes con rectitud r que en sus dias florezca la justicia y la paz hasta que falte la luna que domine de mar a mar del gran rio al confin de la tierra r el librara al pobre que clamaba al afligido que no tenia protector el se apiadara del pobre y del indigente y salvara la vida de los pobres r que su nombre sea eterno y su fama dure como el sol que el sea la bendicion de todos los pueblos y lo proclamen dichoso todas las razas de la tierra r",
+  "salmo": "Salmo 71, 1-2. 7-8. 12-13. 17 (R.: cf. 7)",
+  "sourceBook": "eucaristia"
 }

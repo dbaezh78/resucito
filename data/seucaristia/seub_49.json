@@ -1,15 +1,9 @@
 {
-  "id": "seub_49",
-  "title": "Domingo de la 7ª semana de Tiempo Ordinario",
-  "celebracion": "Domingo de la 7ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 40, 2-3. 4-5. 13-14 (R.: 5b)",
-  "salmo": "Salmo responsorial: Salmo 40, 2-3. 4-5. 13-14 (R.: 5b)",
-  "ciclo": "Ciclo B",
-  "tiempo": "Tiempo Ordinario",
+  "sourceBook": "eucaristia",
   "dia": "Domingo",
-  "orden": 507,
-  "respuesta": "R. Sáname, Señor, porque he pecado contra ti.",
-  "respuestaOpcional": "",
+  "ciclo": "Ciclo B",
+  "subtitle": "Salmo responsorial: Salmo 40, 2-3. 4-5. 13-14 (R.: 5b)",
+  "catCanto": "Salmo Eucaristía",
   "estrofas": [
     [
       "Dichoso el que cuida del pobre y desvalido;",
@@ -31,12 +25,15 @@
       "ahora y por siempre. Amén. Amén. R."
     ]
   ],
-  "textoCompleto": "Dichoso el que cuida del pobre y desvalido;\nen el día aciago lo pondrá a salvo el Señor.\nEl Señor lo guarda y lo conserva en vida,\npara que sea dichoso en la tierra,\ny no lo entrega a la saña de sus enemigos. R.\n\nEl Señor lo sostendrá en el lecho del dolor,\ncalmará los dolores de su enfermedad.\nYo dije: «Señor, ten misericordia,\nsáname, porque he pecado contra ti». R.\n\nA mí, en cambio, me conservas la salud,\nme mantienes siempre en tu presencia.\nBendito el Señor, Dios de Israel,\nahora y por siempre. Amén. Amén. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
   "searchPool": "domingo de la 7 semana de tiempo ordinario ciclo b tiempo ordinario domingo salmo responsorial salmo 40 2 3 4 5 13 14 r 5b r saname senor porque he pecado contra ti dichoso el que cuida del pobre y desvalido en el dia aciago lo pondra a salvo el senor el senor lo guarda y lo conserva en vida para que sea dichoso en la tierra y no lo entrega a la sana de sus enemigos r el senor lo sostendra en el lecho del dolor calmara los dolores de su enfermedad yo dije senor ten misericordia saname porque he pecado contra ti r a mi en cambio me conservas la salud me mantienes siempre en tu presencia bendito el senor dios de israel ahora y por siempre amen amen r",
+  "textoCompleto": "Dichoso el que cuida del pobre y desvalido;\nen el día aciago lo pondrá a salvo el Señor.\nEl Señor lo guarda y lo conserva en vida,\npara que sea dichoso en la tierra,\ny no lo entrega a la saña de sus enemigos. R.\n\nEl Señor lo sostendrá en el lecho del dolor,\ncalmará los dolores de su enfermedad.\nYo dije: «Señor, ten misericordia,\nsáname, porque he pecado contra ti». R.\n\nA mí, en cambio, me conservas la salud,\nme mantienes siempre en tu presencia.\nBendito el Señor, Dios de Israel,\nahora y por siempre. Amén. Amén. R.",
+  "respuestaOpcional": "",
+  "stage": "Liturgia",
+  "id": "seub_49",
+  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
+  "salmo": "Salmo responsorial: Salmo 40, 2-3. 4-5. 13-14 (R.: 5b)",
+  "celebracion": "Domingo de la 7ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Sáname, Señor, porque he pecado contra ti.",
@@ -47,16 +44,16 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "Dichoso el que cuida del pobre y desvalido;",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "Dichoso el que cuida del pobre y desvalido;"
     },
     {
       "line": "en el día aciago lo pondrá a salvo el Señor.",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "El Señor lo guarda y lo conserva en vida,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "El Señor lo guarda y lo conserva en vida,"
     },
     {
       "line": "para que sea dichoso en la tierra,",
@@ -67,8 +64,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "El Señor lo sostendrá en el lecho del dolor,",
@@ -95,16 +92,19 @@
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "me mantienes siempre en tu presencia.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "me mantienes siempre en tu presencia."
     },
     {
-      "line": "Bendito el Señor, Dios de Israel,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Bendito el Señor, Dios de Israel,"
     },
     {
-      "line": "ahora y por siempre. Amén. Amén. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "ahora y por siempre. Amén. Amén. R."
     }
-  ]
+  ],
+  "orden": 507,
+  "title": "Domingo de la 7ª semana de Tiempo Ordinario",
+  "respuesta": "R. Sáname, Señor, porque he pecado contra ti."
 }

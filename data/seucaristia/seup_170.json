@@ -1,15 +1,5 @@
 {
-  "id": "seup_170",
-  "title": "Martes de la 29ª semana de Tiempo Ordinario",
-  "celebracion": "Martes de la 29ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 84, 9ab-10. 11-12. 13-14 (R.: 9)",
-  "salmo": "Salmo responsorial: Salmo 84, 9ab-10. 11-12. 13-14 (R.: 9)",
-  "ciclo": "Año Par",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Martes",
-  "orden": 5292,
-  "respuesta": "R. Dios anuncia la paz a su pueblo.",
-  "respuestaOpcional": "",
+  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
   "estrofas": [
     [
       "Voy a escuchar lo que dice el Señor:",
@@ -31,12 +21,15 @@
       "la salvación seguirá sus pasos. R."
     ]
   ],
-  "textoCompleto": "Voy a escuchar lo que dice el Señor:\n«Dios anuncia la paz\na su pueblo y a sus amigos».\nLa salvación está ya cerca de sus fieles,\ny la gloria habitará en nuestra tierra. R.\n\nLa misericordia y la fidelidad se encuentran,\nla justicia y la paz se besan;\nla fidelidad brota de la tierra,\ny la justicia mira desde el cielo. R.\n\nEl Señor nos dará la lluvia,\ny nuestra tierra dará su fruto.\nLa justicia marchará ante él,\nla salvación seguirá sus pasos. R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
+  "tiempo": "Tiempo Ordinario",
   "searchPool": "martes de la 29 semana de tiempo ordinario ano par tiempo ordinario martes salmo responsorial salmo 84 9ab 10 11 12 13 14 r 9 semana 29 semana xxix martes 29 xxix r dios anuncia la paz a su pueblo voy a escuchar lo que dice el senor dios anuncia la paz a su pueblo y a sus amigos la salvacion esta ya cerca de sus fieles y la gloria habitara en nuestra tierra r la misericordia y la fidelidad se encuentran la justicia y la paz se besan la fidelidad brota de la tierra y la justicia mira desde el cielo r el senor nos dara la lluvia y nuestra tierra dara su fruto la justicia marchara ante el la salvacion seguira sus pasos r",
+  "respuesta": "R. Dios anuncia la paz a su pueblo.",
+  "stage": "Liturgia",
+  "hasAudio": false,
+  "sourceBook": "eucaristia",
+  "subtitle": "Salmo responsorial: Salmo 84, 9ab-10. 11-12. 13-14 (R.: 9)",
+  "salmo": "Salmo responsorial: Salmo 84, 9ab-10. 11-12. 13-14 (R.: 9)",
+  "title": "Martes de la 29ª semana de Tiempo Ordinario",
   "lizq": [
     {
       "line": "R. Dios anuncia la paz a su pueblo.",
@@ -63,8 +56,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y la gloria habitará en nuestra tierra. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y la gloria habitará en nuestra tierra. R."
     },
     {
       "line": "",
@@ -83,20 +76,20 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "y la justicia mira desde el cielo. R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "y la justicia mira desde el cielo. R."
     },
     {
       "line": "",
       "sC": "salmo-espacio"
     },
     {
-      "line": "El Señor nos dará la lluvia,",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor nos dará la lluvia,"
     },
     {
-      "line": "y nuestra tierra dará su fruto.",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "y nuestra tierra dará su fruto."
     },
     {
       "line": "La justicia marchará ante él,",
@@ -106,5 +99,12 @@
       "line": "la salvación seguirá sus pasos. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "orden": 5292,
+  "respuestaOpcional": "",
+  "ciclo": "Año Par",
+  "celebracion": "Martes de la 29ª semana de Tiempo Ordinario",
+  "id": "seup_170",
+  "catCanto": "Salmo Eucaristía",
+  "dia": "Martes"
 }

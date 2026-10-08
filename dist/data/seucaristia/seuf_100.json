@@ -1,60 +1,16 @@
 {
-  "id": "seuf_100",
   "title": "Martes de la cuarta semana de Pascua",
-  "celebracion": "Martes de la cuarta semana de Pascua",
-  "subtitle": "Salmo 86, 1-3. 4-5. 6- 7 (R.: Sal 116, 1a)",
-  "salmo": "Salmo 86, 1-3. 4-5. 6- 7 (R.: Sal 116, 1a)",
-  "ciclo": "Ciclo A, B y C",
-  "ciclos": [
-    "Ciclo A",
-    "Ciclo B",
-    "Ciclo C",
-    "Año Par",
-    "Año Impar"
-  ],
-  "tiempo": "Pascua",
-  "dia": "Martes",
-  "orden": 442,
-  "respuesta": "R. Alabad al Señor, todas las naciones.",
-  "respuestaOpcional": "R. Aleluya.",
-  "estrofas": [
-    [
-      "Él la ha cimentado sobre el monte santo;",
-      "y el Señor prefiere las puertas de Sión",
-      "a todas las moradas de Jacob.",
-      "¡Qué pregón tan glorioso para ti,",
-      "ciudad de Dios! R."
-    ],
-    [
-      "«Contaré a Egipto y a Babilonia",
-      "entre mis fieles;",
-      "filisteos, tirios y etíopes",
-      "han nacido allí».",
-      "Se dirá de Sión: «Uno por uno",
-      "todos han nacido en ella;",
-      "el Altísimo en persona la ha fundado». R."
-    ],
-    [
-      "El Señor escribirá en el registro de los pueblos:",
-      "«Éste ha nacido allí».",
-      "Y cantarán mientras danzan:",
-      "«Todas mis fuentes están en ti». R."
-    ]
-  ],
-  "textoCompleto": "Él la ha cimentado sobre el monte santo;\ny el Señor prefiere las puertas de Sión\na todas las moradas de Jacob.\n¡Qué pregón tan glorioso para ti,\nciudad de Dios! R.\n\n«Contaré a Egipto y a Babilonia\nentre mis fieles;\nfilisteos, tirios y etíopes\nhan nacido allí».\nSe dirá de Sión: «Uno por uno\ntodos han nacido en ella;\nel Altísimo en persona la ha fundado». R.\n\nEl Señor escribirá en el registro de los pueblos:\n«Éste ha nacido allí».\nY cantarán mientras danzan:\n«Todas mis fuentes están en ti». R.",
-  "sourceBook": "eucaristia",
-  "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
   "hasAudio": false,
-  "searchPool": "martes de la cuarta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 86 1 3 4 5 6 7 r sal 116 1a semana 4 semana iv martes feria r alabad al senor todas las naciones r aleluya el la ha cimentado sobre el monte santo y el senor prefiere las puertas de sion a todas las moradas de jacob que pregon tan glorioso para ti ciudad de dios r contare a egipto y a babilonia entre mis fieles filisteos tirios y etiopes han nacido alli se dira de sion uno por uno todos han nacido en ella el altisimo en persona la ha fundado r el senor escribira en el registro de los pueblos este ha nacido alli y cantaran mientras danzan todas mis fuentes estan en ti r",
+  "textoCompleto": "Él la ha cimentado sobre el monte santo;\ny el Señor prefiere las puertas de Sión\na todas las moradas de Jacob.\n¡Qué pregón tan glorioso para ti,\nciudad de Dios! R.\n\n«Contaré a Egipto y a Babilonia\nentre mis fieles;\nfilisteos, tirios y etíopes\nhan nacido allí».\nSe dirá de Sión: «Uno por uno\ntodos han nacido en ella;\nel Altísimo en persona la ha fundado». R.\n\nEl Señor escribirá en el registro de los pueblos:\n«Éste ha nacido allí».\nY cantarán mientras danzan:\n«Todas mis fuentes están en ti». R.",
+  "tiempo": "Pascua",
   "lizq": [
     {
       "line": "R. Alabad al Señor, todas las naciones.",
       "sC": "salmo-linea salmo-respuesta"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "O bien:",
@@ -81,8 +37,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "¡Qué pregón tan glorioso para ti,",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "¡Qué pregón tan glorioso para ti,"
     },
     {
       "line": "ciudad de Dios! R.",
@@ -93,12 +49,12 @@
       "sC": "salmo-espacio"
     },
     {
-      "line": "«Contaré a Egipto y a Babilonia",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "«Contaré a Egipto y a Babilonia"
     },
     {
-      "line": "entre mis fieles;",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "entre mis fieles;"
     },
     {
       "line": "filisteos, tirios y etíopes",
@@ -121,24 +77,68 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
-      "line": "El Señor escribirá en el registro de los pueblos:",
-      "sC": "salmo-linea salmo-verso salmo-verso-primero"
+      "sC": "salmo-linea salmo-verso salmo-verso-primero",
+      "line": "El Señor escribirá en el registro de los pueblos:"
     },
     {
-      "line": "«Éste ha nacido allí».",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "«Éste ha nacido allí»."
     },
     {
       "line": "Y cantarán mientras danzan:",
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "«Todas mis fuentes están en ti». R.",
-      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
+      "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin",
+      "line": "«Todas mis fuentes están en ti». R."
     }
+  ],
+  "respuestaOpcional": "R. Aleluya.",
+  "ciclo": "Ciclo A, B y C",
+  "subtitle": "Salmo 86, 1-3. 4-5. 6- 7 (R.: Sal 116, 1a)",
+  "salmo": "Salmo 86, 1-3. 4-5. 6- 7 (R.: Sal 116, 1a)",
+  "stage": "Liturgia",
+  "orden": 442,
+  "id": "seuf_100",
+  "respuesta": "R. Alabad al Señor, todas las naciones.",
+  "dia": "Martes",
+  "searchPool": "martes de la cuarta semana de pascua ciclo a ciclo b ciclo c ciclo a b y c pascua martes salmo 86 1 3 4 5 6 7 r sal 116 1a semana 4 semana iv martes feria r alabad al senor todas las naciones r aleluya el la ha cimentado sobre el monte santo y el senor prefiere las puertas de sion a todas las moradas de jacob que pregon tan glorioso para ti ciudad de dios r contare a egipto y a babilonia entre mis fieles filisteos tirios y etiopes han nacido alli se dira de sion uno por uno todos han nacido en ella el altisimo en persona la ha fundado r el senor escribira en el registro de los pueblos este ha nacido alli y cantaran mientras danzan todas mis fuentes estan en ti r",
+  "celebracion": "Martes de la cuarta semana de Pascua",
+  "estrofas": [
+    [
+      "Él la ha cimentado sobre el monte santo;",
+      "y el Señor prefiere las puertas de Sión",
+      "a todas las moradas de Jacob.",
+      "¡Qué pregón tan glorioso para ti,",
+      "ciudad de Dios! R."
+    ],
+    [
+      "«Contaré a Egipto y a Babilonia",
+      "entre mis fieles;",
+      "filisteos, tirios y etíopes",
+      "han nacido allí».",
+      "Se dirá de Sión: «Uno por uno",
+      "todos han nacido en ella;",
+      "el Altísimo en persona la ha fundado». R."
+    ],
+    [
+      "El Señor escribirá en el registro de los pueblos:",
+      "«Éste ha nacido allí».",
+      "Y cantarán mientras danzan:",
+      "«Todas mis fuentes están en ti». R."
+    ]
+  ],
+  "catCanto": "Salmo Eucaristía",
+  "sourceBook": "eucaristia",
+  "ciclos": [
+    "Ciclo A",
+    "Ciclo B",
+    "Ciclo C",
+    "Año Par",
+    "Año Impar"
   ]
 }

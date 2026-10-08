@@ -1,15 +1,6 @@
 {
-  "id": "seui_103",
   "title": "Lunes de la 18ª semana de Tiempo Ordinario",
-  "celebracion": "Lunes de la 18ª semana de Tiempo Ordinario",
-  "subtitle": "Salmo responsorial: Salmo 80, 12-13. 14-15. 16-17 (R.: 2a)",
-  "salmo": "Salmo responsorial: Salmo 80, 12-13. 14-15. 16-17 (R.: 2a)",
-  "ciclo": "Año Impar",
-  "tiempo": "Tiempo Ordinario",
-  "dia": "Lunes",
-  "orden": 5181,
-  "respuesta": "R. Aclamad a Dios, nuestra fuerza.",
-  "respuestaOpcional": "",
+  "searchPool": "lunes de la 18 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 80 12 13 14 15 16 17 r 2a semana 18 semana xviii lunes 18 xviii r aclamad a dios nuestra fuerza mi pueblo no escucho mi voz israel no quiso obedecer los entregue a su corazon obstinado para que anduviesen segun sus antojos r ojala me escuchase mi pueblo y caminase israel por mi camino en un momento humillaria a sus enemigos y volveria mi mano contra sus adversarios r los que aborrecen al senor te adularian y su suerte quedaria fijada te alimentaria con flor de harina te saciaria con miel silvestre r",
   "estrofas": [
     [
       "Mi pueblo no escuchó mi voz,",
@@ -31,27 +22,29 @@
     ]
   ],
   "textoCompleto": "Mi pueblo no escuchó mi voz,\nIsrael no quiso obedecer:\nlos entregué a su corazón obstinado,\npara que anduviesen según sus antojos. R.\n\n¡Ojalá me escuchase mi pueblo\ny caminase Israel por mi camino!:\nen un momento humillaría a sus enemigos\ny volvería mi mano contra sus adversarios. R.\n\nLos que aborrecen al Señor te adularían,\ny su suerte quedaría fijada;\nte alimentaría con flor de harina,\nte saciaría con miel silvestre. R.",
+  "ciclo": "Año Impar",
+  "catCanto": "Salmo Eucaristía",
+  "salmo": "Salmo responsorial: Salmo 80, 12-13. 14-15. 16-17 (R.: 2a)",
+  "tiempo": "Tiempo Ordinario",
   "sourceBook": "eucaristia",
   "stage": "Liturgia",
-  "catCanto": "Salmo Eucaristía",
-  "hasAudio": false,
-  "searchPool": "lunes de la 18 semana de tiempo ordinario ano impar tiempo ordinario lunes salmo responsorial salmo 80 12 13 14 15 16 17 r 2a semana 18 semana xviii lunes 18 xviii r aclamad a dios nuestra fuerza mi pueblo no escucho mi voz israel no quiso obedecer los entregue a su corazon obstinado para que anduviesen segun sus antojos r ojala me escuchase mi pueblo y caminase israel por mi camino en un momento humillaria a sus enemigos y volveria mi mano contra sus adversarios r los que aborrecen al senor te adularian y su suerte quedaria fijada te alimentaria con flor de harina te saciaria con miel silvestre r",
+  "orden": 5181,
   "lizq": [
     {
-      "line": "R. Aclamad a Dios, nuestra fuerza.",
-      "sC": "salmo-linea salmo-respuesta"
+      "sC": "salmo-linea salmo-respuesta",
+      "line": "R. Aclamad a Dios, nuestra fuerza."
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "Mi pueblo no escuchó mi voz,",
       "sC": "salmo-linea salmo-verso salmo-verso-primero"
     },
     {
-      "line": "Israel no quiso obedecer:",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "Israel no quiso obedecer:"
     },
     {
       "line": "los entregué a su corazón obstinado,",
@@ -62,8 +55,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     },
     {
-      "line": "",
-      "sC": "salmo-espacio"
+      "sC": "salmo-espacio",
+      "line": ""
     },
     {
       "line": "¡Ojalá me escuchase mi pueblo",
@@ -74,8 +67,8 @@
       "sC": "salmo-linea salmo-verso salmo-sangria"
     },
     {
-      "line": "en un momento humillaría a sus enemigos",
-      "sC": "salmo-linea salmo-verso salmo-sangria"
+      "sC": "salmo-linea salmo-verso salmo-sangria",
+      "line": "en un momento humillaría a sus enemigos"
     },
     {
       "line": "y volvería mi mano contra sus adversarios. R.",
@@ -101,5 +94,12 @@
       "line": "te saciaría con miel silvestre. R.",
       "sC": "salmo-linea salmo-verso salmo-sangria salmo-verso-fin"
     }
-  ]
+  ],
+  "hasAudio": false,
+  "respuestaOpcional": "",
+  "dia": "Lunes",
+  "subtitle": "Salmo responsorial: Salmo 80, 12-13. 14-15. 16-17 (R.: 2a)",
+  "id": "seui_103",
+  "celebracion": "Lunes de la 18ª semana de Tiempo Ordinario",
+  "respuesta": "R. Aclamad a Dios, nuestra fuerza."
 }
