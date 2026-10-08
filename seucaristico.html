@@ -1019,30 +1019,69 @@
     }
 
     // Funciones para preparar y normalizar salmos con Firebase Firestore
-    // (Firestore no admite arreglos anidados: Array<Array<string>>, por lo que aplanamos estrofas a Array<string>)
-    function preparePsalmForFirestore(psalm) {
-      if (!psalm) return psalm;
-      const p = { ...psalm };
-      if (Array.isArray(p.estrofas)) {
-        p.estrofas = p.estrofas.map(st => {
-          if (Array.isArray(st)) return st.join('\n');
-          return String(st);
+    // (Firestore no admite arreglos anidados: Array<Array<T>> en ningún nivel del documento,
+    // como estrofas[][] o lizq[].variants[].strophes[][])
+    function sanitizeForFirestore(val) {
+      if (val === null || val === undefined) return val;
+      if (Array.isArray(val)) {
+        return val.map(item => {
+          if (Array.isArray(item)) {
+            // Nested array detectado: aplanar a string con saltos de línea para que Firestore lo acepte
+            return item.map(sub => Array.isArray(sub) ? sub.join(' ') : String(sub)).join('\n');
+          }
+          if (typeof item === 'object' && item !== null) {
+            return sanitizeForFirestore(item);
+          }
+          return item;
         });
       }
-      return p;
+      if (typeof val === 'object') {
+        const res = {};
+        for (const [k, v] of Object.entries(val)) {
+          if (v !== undefined) {
+            res[k] = sanitizeForFirestore(v);
+          }
+        }
+        return res;
+      }
+      return val;
+    }
+
+    function preparePsalmForFirestore(psalm) {
+      if (!psalm) return psalm;
+      return sanitizeForFirestore(psalm);
+    }
+
+    function normalizeStrophes(estrofas) {
+      if (!Array.isArray(estrofas)) return estrofas;
+      return estrofas.map(st => {
+        if (Array.isArray(st)) return st;
+        if (typeof st === 'string') return st.split(/\r?\n/);
+        return [String(st)];
+      });
     }
 
     function normalizePsalmFromFirestore(p) {
       if (!p) return p;
       const clone = { ...p };
       if (Array.isArray(clone.estrofas)) {
-        clone.estrofas = clone.estrofas.map(st => {
-          if (Array.isArray(st)) return st;
-          if (typeof st === 'string') return st.split(/\r?\n/);
-          return [String(st)];
-        });
+        clone.estrofas = normalizeStrophes(clone.estrofas);
       } else if (clone.textoCompleto) {
         clone.estrofas = parseStrophesFromText(clone.textoCompleto);
+      }
+      if (Array.isArray(clone.lizq)) {
+        clone.lizq = clone.lizq.map(lz => {
+          if (lz && Array.isArray(lz.variants)) {
+            return {
+              ...lz,
+              variants: lz.variants.map(v => ({
+                ...v,
+                strophes: normalizeStrophes(v.strophes)
+              }))
+            };
+          }
+          return lz;
+        });
       }
       return clone;
     }

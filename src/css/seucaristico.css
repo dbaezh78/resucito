@@ -441,7 +441,7 @@ body {
   border: 1.5px solid var(--panel-border, #ccc);
   background: var(--panel-bg, #ffffff);
   color: var(--text-color, #212529);
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   box-sizing: border-box;
   outline: none;
   transition: border-color 0.2s;

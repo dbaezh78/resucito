@@ -127,17 +127,36 @@ async function syncSeucaristia() {
     }
   });
 
+  function normalizeStrophes(estrofas) {
+    if (!Array.isArray(estrofas)) return estrofas;
+    return estrofas.map(st => {
+      if (Array.isArray(st)) return st;
+      if (typeof st === 'string') return st.split(/\r?\n/);
+      return [String(st)];
+    });
+  }
+
   function normalizePsalmStrophes(p) {
     if (!p) return p;
     const clone = { ...p };
     if (Array.isArray(clone.estrofas)) {
-      clone.estrofas = clone.estrofas.map(st => {
-        if (Array.isArray(st)) return st;
-        if (typeof st === 'string') return st.split(/\r?\n/);
-        return [String(st)];
-      });
+      clone.estrofas = normalizeStrophes(clone.estrofas);
     } else if (clone.textoCompleto) {
       clone.estrofas = clone.textoCompleto.split(/\r?\n\s*\r?\n/).map(b => b.split(/\r?\n/));
+    }
+    if (Array.isArray(clone.lizq)) {
+      clone.lizq = clone.lizq.map(lz => {
+        if (lz && Array.isArray(lz.variants)) {
+          return {
+            ...lz,
+            variants: lz.variants.map(v => ({
+              ...v,
+              strophes: normalizeStrophes(v.strophes)
+            }))
+          };
+        }
+        return lz;
+      });
     }
     return clone;
   }
