@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="src/style.css">
   <link rel="stylesheet" href="src/navegador.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="src/lib/jszip.min.js"></script>
   <style>
     :root {
       --salmo-red: #d01212;
@@ -792,7 +793,6 @@
 
   <!-- Script Principal del Formulario -->
   <script type="module">
-    import JSZip from "jszip";
     import { db, collection, doc, setDoc, getDocs, writeBatch } from "./src/firebase.js";
 
     // Estado global de datos
@@ -1294,7 +1294,22 @@
 
     // 9. Descargar TODO en ZIP (con JSZip) para sincronización con disco local
     document.getElementById('btn-download-all-zip').onclick = async () => {
-      const ZipClass = JSZip || window.JSZip;
+      let ZipClass = window.JSZip || (typeof JSZip !== 'undefined' ? JSZip : null);
+      if (!ZipClass) {
+        try {
+          await new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = 'src/lib/jszip.min.js';
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+          });
+          ZipClass = window.JSZip;
+        } catch (e) {
+          console.warn('Error cargando JSZip dinámicamente:', e);
+        }
+      }
+
       if (!ZipClass) {
         showToast('Error: Biblioteca JSZip no cargada', 'error');
         return;

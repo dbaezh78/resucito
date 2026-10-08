@@ -1,4 +1,4 @@
-const CACHE_NAME = 'resucito-cache-v365'; // v2.1.30 Aviso de actualización estilo chat y badge azul en Cuenta
+const CACHE_NAME = 'resucito-cache-v367'; // v2.1.31 Nuevo menú Formulario y Salmo Eucarístico
 const STATIC_ASSETS = [
   './',
   'index.html',
@@ -11,6 +11,7 @@ const STATIC_ASSETS = [
   'bitacora.html',
   'mantcantos.html',
   'respaldo.html',
+  'seucaristico.html',
   'privacidad.html',
   'chat.html',
   'firebase.html',

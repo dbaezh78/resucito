@@ -168,15 +168,22 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
             <a href="perfil.html" id="nav-resucito-perfil"><span class="material-symbols-outlined arrow-icon">person</span> Perfil</a>
             <a href="preparar.html" id="nav-resucito-preparar"><span class="material-symbols-outlined arrow-icon">playlist_add</span>Preparar Cantos</a>
             <a href="parroquia.html" id="nav-resucito-parroquia"><span class="material-symbols-outlined arrow-icon">church</span> Cantos Eucaristía</a>
-            <a href="datosparroquia.html" id="nav-resucito-datosparroquia" style="display: none;"><span class="material-symbols-outlined arrow-icon">edit_location_alt</span> Formulario Parroquia</a>
             <a href="bitacora.html" id="nav-resucito-bitacora"><span class="material-symbols-outlined arrow-icon">history</span> Bitácora</a>
-            <a href="/src/html/intro.html" id="nav-resucito-intro"><span class="material-symbols-outlined arrow-icon">menu_book</span> Introducción</a>
             <a href="https://docs.resucito.do/resucito.pdf" target="_blank" id="nav-resucito-pdf"><span class="material-symbols-outlined arrow-icon">menu_book</span> Resucitó PDF</a>
-            <a href="mantcantos.html" id="nav-resucito-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
-            <a href="respaldo.html" id="nav-resucito-respaldo"><span class="material-symbols-outlined arrow-icon">archive</span> Respaldo</a>
             <a href="chat.html" id="nav-resucito-chat"><span class="material-symbols-outlined arrow-icon">chat</span> <span style="flex: 1;">Asistencia y Chat</span><span id="badge-chat-nav-submenu" class="badge-unread-chat-popup" style="display: none; margin-left: auto; background-color: #25d366; color: #000000; font-size: 0.75rem; font-weight: 900; min-width: 20px; height: 20px; line-height: 20px; border-radius: 9999px; padding: 0 6px; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.35); flex-shrink: 0; border: 1.5px solid #ffffff; box-sizing: border-box;">0</span></a>
             <a href="privacidad.html" id="nav-resucito-privacidad"><span class="material-symbols-outlined arrow-icon">policy</span> Política de Privacidad</a>
             <a href="#" id="installButton"><span class="material-symbols-outlined arrow-icon">download_for_offline</span>Instalar App</a>
+          </div>
+        </button>
+
+        <button class="nav-item" id="btn-nav-formulario">
+          <span class="material-symbols-outlined arrow-icon">edit_note</span>
+          <span>Formulario</span>
+          <div class="nav-submenu" id="nav-submenu-formulario">
+            <a href="datosparroquia.html" id="nav-formulario-datosparroquia" style="display: none;"><span class="material-symbols-outlined arrow-icon">edit_location_alt</span> Formulario Parroquia</a>
+            <a href="mantcantos.html" id="nav-formulario-mantcantos"><span class="material-symbols-outlined arrow-icon">build</span> Mantenimiento</a>
+            <a href="respaldo.html" id="nav-formulario-respaldo"><span class="material-symbols-outlined arrow-icon">archive</span> Respaldo</a>
+            <a href="seucaristico.html" id="nav-formulario-seucaristico"><span class="material-symbols-outlined arrow-icon">local_bar</span> Salmo Eucarístico</a>
           </div>
         </button>
 
@@ -563,6 +570,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
     setupSubmenu('btn-nav-menu', 'nav-submenu');
     setupSubmenu('btn-nav-neocate', 'nav-submenu-neocate');
     setupSubmenu('btn-nav-resucito', 'nav-submenu-resucito');
+    setupSubmenu('btn-nav-formulario', 'nav-submenu-formulario');
 
     // 5. Lógica del botón Ajustes -> Abrir el Modal de Ajustes V2
     const btnOpenSettings = document.getElementById('btn-open-settings');
@@ -1052,6 +1060,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       const canInstalar = isAdmin || hasPermission('page_instalar_app');
       const canMantcantos = isAdmin || hasPermission('page_mantcantos');
       const canRespaldo = isAdmin || hasPermission('page_respaldo');
+      const canSeucaristico = isAdmin || hasPermission('page_seucaristico');
       const user = getCurrentUser() || window.firebaseAPI?.getCurrentUser?.();
       const canChat = isAdmin || (Boolean(user) && hasPermission('page_chat'));
 
@@ -1064,11 +1073,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       const navResucitoPerfil = document.getElementById('nav-resucito-perfil');
       const navResucitoPreparar = document.getElementById('nav-resucito-preparar');
       const navResucitoBitacora = document.getElementById('nav-resucito-bitacora');
-      const navResucitoIntro = document.getElementById('nav-resucito-intro');
       const navResucitoPdf = document.getElementById('nav-resucito-pdf');
-      const navResucitoMantcantos = document.getElementById('nav-resucito-mantcantos');
-      const navResucitoDatosparroquia = document.getElementById('nav-resucito-datosparroquia');
-      const navResucitoRespaldo = document.getElementById('nav-resucito-respaldo');
       const navResucitoChat = document.getElementById('nav-resucito-chat');
       const navResucitoInstalar = document.getElementById('installButton');
 
@@ -1076,13 +1081,24 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       if (navResucitoPerfil) navResucitoPerfil.style.display = canPerfil ? 'flex' : 'none';
       if (navResucitoPreparar) navResucitoPreparar.style.display = canPreparar ? 'flex' : 'none';
       if (navResucitoBitacora) navResucitoBitacora.style.display = canBitacora ? 'flex' : 'none';
-      if (navResucitoIntro) navResucitoIntro.style.display = canIntro ? 'flex' : 'none';
       if (navResucitoPdf) navResucitoPdf.style.display = canPdf ? 'flex' : 'none';
-      if (navResucitoMantcantos) navResucitoMantcantos.style.display = canMantcantos ? 'flex' : 'none';
-      if (navResucitoDatosparroquia) navResucitoDatosparroquia.style.display = isAdmin ? 'flex' : 'none';
-      if (navResucitoRespaldo) navResucitoRespaldo.style.display = canRespaldo ? 'flex' : 'none';
       if (navResucitoChat) navResucitoChat.style.display = canChat ? 'flex' : 'none';
       if (navResucitoInstalar) navResucitoInstalar.style.display = canInstalar ? 'flex' : 'none';
+
+      // Botón y Enlaces en Submenú Formulario
+      const btnNavFormulario = document.getElementById('btn-nav-formulario');
+      const navFormularioDatosparroquia = document.getElementById('nav-formulario-datosparroquia');
+      const navFormularioMantcantos = document.getElementById('nav-formulario-mantcantos');
+      const navFormularioRespaldo = document.getElementById('nav-formulario-respaldo');
+      const navFormularioSeucaristico = document.getElementById('nav-formulario-seucaristico');
+
+      if (navFormularioDatosparroquia) navFormularioDatosparroquia.style.display = isAdmin ? 'flex' : 'none';
+      if (navFormularioMantcantos) navFormularioMantcantos.style.display = canMantcantos ? 'flex' : 'none';
+      if (navFormularioRespaldo) navFormularioRespaldo.style.display = canRespaldo ? 'flex' : 'none';
+      if (navFormularioSeucaristico) navFormularioSeucaristico.style.display = canSeucaristico ? 'flex' : 'none';
+
+      const canFormulario = isAdmin || canMantcantos || canRespaldo || canSeucaristico;
+      if (btnNavFormulario) btnNavFormulario.style.display = canFormulario ? 'flex' : 'none';
 
       // Acciones en Popup de Cuenta
       const accountActionPreparar = document.getElementById('account-action-preparar');
@@ -1126,6 +1142,9 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
         window.location.replace('./index.html');
       } else if (pathname.includes('respaldo.html') && !hasPermission('page_respaldo')) {
         console.warn("Acceso denegado a respaldo.html por permisos. Redirigiendo a Inicio...");
+        window.location.replace('./index.html');
+      } else if (pathname.includes('seucaristico.html') && !hasPermission('page_seucaristico')) {
+        console.warn("Acceso denegado a seucaristico.html por permisos. Redirigiendo a Inicio...");
         window.location.replace('./index.html');
       } else if (pathname.includes('firebase.html') && !hasPermission('page_firebase')) {
         console.warn("Acceso denegado a firebase.html por permisos. Redirigiendo a Inicio...");
@@ -1698,7 +1717,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
 
     // Si estamos dentro de una subcarpeta (ej. /src/chat.html), normalizar los enlaces del navegador
     if (isUnderSrc) {
-      document.querySelectorAll('#nav-submenu-resucito a, .account-popup-footer a').forEach(a => {
+      document.querySelectorAll('#nav-submenu-resucito a, #nav-submenu-formulario a, .account-popup-footer a').forEach(a => {
         const href = a.getAttribute('href');
         if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('/') && !href.startsWith('../')) {
           if (href.startsWith('src/')) {

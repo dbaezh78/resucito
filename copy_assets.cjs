@@ -73,7 +73,7 @@ if (fs.existsSync(dataFolderSrc)) {
 }
 
 // Copy individual files
-const files = ['manifest.json', 'sw.js', '.nojekyll', 'CNAME', 'version.json', 'chat.html', 'seucaristico.html'];
+const files = ['manifest.json', 'sw.js', '.nojekyll', 'CNAME', 'version.json'];
 files.forEach(file => {
     const src = path.resolve(__dirname, file);
     const dest = path.resolve(distPath, file);

@@ -54,6 +54,7 @@ export const PERMISSIONS = {
   PAGE_OPCIONES_PAGINAS: "page_opciones_paginas",
   PAGE_MANTCANTOS: "page_mantcantos",
   PAGE_RESPALDO: "page_respaldo",
+  PAGE_SEUCARISTICO: "page_seucaristico",
   PAGE_FIREBASE: "page_firebase",
   PAGE_CHAT: "page_chat",
   VIEW_ALL_CHATS: "view_all_chats",
@@ -92,6 +93,7 @@ export const PERMISSION_LABELS = {
   "page_opciones_paginas": "Opciones de páginas",
   "page_mantcantos": "Mantenimiento Páginas",
   "page_respaldo": "Respaldo",
+  "page_seucaristico": "Salmo Eucarístico",
   "page_firebase": "Consumo de Firebase",
   "page_chat": "Asistencia y Chat",
   "view_all_chats": "Ver Todos los Chats (Asistencia)",
@@ -174,6 +176,7 @@ export const DEFAULT_GUEST_PERMISSIONS = [
   PERMISSIONS.PAGE_RESUCITO_PDF,
   PERMISSIONS.PAGE_INSTALAR_APP,
   PERMISSIONS.PAGE_OPCIONES_PAGINAS,
+  PERMISSIONS.PAGE_SEUCARISTICO,
   PERMISSIONS.PAGE_CHAT
 ];
 
@@ -1565,6 +1568,7 @@ const PERMISSION_TREE = [
       { key: "page_opciones_paginas", label: "Opciones de páginas" },
       { key: "page_mantcantos", label: "Mantenimiento Páginas" },
       { key: "page_respaldo", label: "Respaldo" },
+      { key: "page_seucaristico", label: "Salmo Eucarístico" },
       { key: "page_firebase", label: "Consumo de Firebase" },
       { 
         key: "page_chat", 
