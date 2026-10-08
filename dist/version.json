@@ -1,11 +1,12 @@
 {
-  "latestVersion": "2.1.31",
+  "latestVersion": "2.1.35",
   "minVersion": "2.1.00",
-  "updateTitle": "Nueva Versión Disponible (v2.1.31)",
-  "updateMessage": "Nuevo menú 'Formulario', formulario interactivo de Salmo Eucarístico y optimización del menú de navegación.",
+  "updateTitle": "Nueva Versión Disponible (v2.1.35)",
+  "updateMessage": "Caché independiente para cantos (+1400 archivos): ya no se borran al limpiar caché o actualizar.",
   "releaseNotes": [
-    "Nuevo menú 'Formulario' en la barra inferior (al lado de Resucitó) con acceso a Parroquia, Mantenimiento, Respaldo y Salmo Eucarístico.",
-    "Formulario interactivo de Salmo Eucarístico (seucaristico.html) con vista previa litúrgica, letra R en rojo y sincronización en Firebase.",
-    "Ajustes de Eucaristía para alternar entre almacenamiento local y en la nube."
+    "Caché independiente y persistente ('resucito-cantos-cache') para más de 1400 archivos de cantos y salmos.",
+    "Al limpiar la caché desde Ajustes, se actualiza el código del sistema pero se conservan intactos todos los cantos.",
+    "Al actualizar la aplicación a una nueva versión, los cantos descargados se preservan y migran automáticamente.",
+    "Lectura y guardado de cantos con estrategia inteligente: no requiere re-descargar cantos ya existentes."
   ]
 }

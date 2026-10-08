@@ -1,0 +1,2646 @@
+
+
+pwa.js:10 Service Worker registrado con éxito. Scope: https://es.laantillana.com/
+ajustes.js?v=141:1729 🔓 Protección de inspección de página desactivada (Inspección permitida).
+navegador.js?v=143:13 📥 PWA: beforeinstallprompt guardado.
+index.html:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+ajustes.js?v=141:1729 🔓 Protección de inspección de página desactivada (Inspección permitida).
+main.js?v=147:6456 📥 [Firebase] Iniciando sincronización integral de datos para usuario: dbaezh78@gmail.com
+main.js?v=147:6456 📥 [Firebase] Perfil de usuario descargado y aplicado.
+main.js?v=147:6456 📥 [Firebase] Ajustes personales descargados de la nube.
+main.js?v=147:6456 📊 Registro de uso de la app sincronizado con Firebase.
+main.js?v=147:6456 📥 [Firebase] Favoritos (15 cantos) sincronizados desde la nube.
+main.js?v=147:6456 📥 [Firebase] Zooms de cantos descargados de la nube.
+main.js?v=147:6456 📥 [Firebase] 104 cantos sincronizados desde la nube a almacenamiento local (acorde, cejilla, notas, estrellas).
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_039.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_038.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_029.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_11.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_11.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_12.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_030.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_026.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_10.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_10.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_11.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_037.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_034.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_035.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_14.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_033.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_13.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_036.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seus_182.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_027.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_031.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_028.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_032.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_17.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_38.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_26.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_020.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_021.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_26.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_19.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_34.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_018.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_019.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_28.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_36.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_17.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_024.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_025.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_01.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_01.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_02.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_022.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_01.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_023.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_03.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_03.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_02.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_02.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_03.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_54.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_55.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_55.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_56.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_53.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_52.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_54.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_04.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_04.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_04.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_56.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_58.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_56.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_57.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_60.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_59.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_57.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_59.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_57.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_60.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_58.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_55.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_58.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_64.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_62.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_63.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_60.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_61.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_65.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_64.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_62.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_61.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_63.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_59.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_62.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_66.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_65.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_63.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_67.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_66.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_64.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_67.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_68.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_69.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_65.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_66.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_68.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_71.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_68.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_72.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_71.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_73.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_72.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_69.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_70.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_70.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_69.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_70.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_67.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_74.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_72.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_75.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_46.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_44.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_47.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_76.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_73.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_74.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_73.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_71.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_75.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_77.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_75.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_79.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_78.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_76.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_77.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_80.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_76.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_74.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_78.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_47.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_45.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_47.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_48.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_49.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_51.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_50.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_50.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_51.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_49.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_48.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_48.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_46.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_49.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_53.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_52.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_52.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_50.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_51.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_54.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_43.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_35.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_41.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_33.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_31.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_53.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_39.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_42.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_19.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_19.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_21.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seus_139.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_44.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_45.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_13.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_37.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seub_12.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seua_12.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuc_13.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_058.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_058.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_064.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_064.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_070.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_070.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_076.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_076.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_082.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_082.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_088.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_100.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_106.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_088.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_094.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_100.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_094.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_106.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_112.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_112.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_004.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_047.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_004.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_004.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_118.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_118.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_124.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_124.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_136.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_136.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_130.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_130.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_142.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_142.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_148.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_148.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_154.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_154.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_160.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_160.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_166.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_172.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_166.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_172.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_010.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_010.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_053.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_010.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_178.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_178.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_184.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_184.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_190.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_190.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_196.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_202.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_196.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_202.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_016.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_060.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_016.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seui_016.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seuf_067.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+ajustes.js?v=141:2160  GET https://es.laantillana.com/data/songs/seup_022.json?offline=true 404 (Not Found)
+loadResourceIntoCache @ ajustes.js?v=141:2160
+await in loadResourceIntoCache
+(anonymous) @ ajustes.js?v=141:2313
+window.cargarTodosLosRecursosFaltantes @ ajustes.js?v=141:2312
+await in window.cargarTodosLosRecursosFaltantes
+onConfirm @ navegador.js?v=143:807
+await in onConfirm
+handleSi @ navegador.js?v=143:347
+  GET https://es.laantillana.com/data/songs/seui_022.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_074.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_028.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_028.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_034.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_034.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_040.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_040.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_046.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_046.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_052.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_102.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_052.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_108.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_114.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_096.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_084.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_090.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_120.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_041.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_20.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_20.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_41.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_22.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_039.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_39.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_125.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_029.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_013.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_115.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_185.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_194.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_144.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_205.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_088.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_141.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_195.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_018.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_09.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_09.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_43.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_41.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_09.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_116.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_074.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_215.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_027.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_055.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_055.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_061.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_061.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_067.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_067.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_073.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_073.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_079.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_079.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_085.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_091.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_085.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_091.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_097.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_097.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_103.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_103.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_109.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_109.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_044.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_001.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_115.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_115.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_001.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_001.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_121.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_127.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_121.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_133.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_127.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_133.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_139.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_139.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_145.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_151.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_145.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_157.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_151.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_163.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_169.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_157.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_169.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_163.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_007.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_050.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_007.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_007.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_181.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_181.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_175.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_175.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_187.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_187.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_193.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_193.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_199.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_199.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_013.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_057.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_013.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_013.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_019.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_019.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_064.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_071.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_025.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_025.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_031.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_037.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_031.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_037.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_043.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_049.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_043.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_049.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_099.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_081.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_105.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_087.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_117.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_111.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_093.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_077.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_056.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_056.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_062.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_068.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_062.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_068.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_074.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_074.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_080.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_080.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_086.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_086.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_092.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_092.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_104.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_098.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_098.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_104.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_110.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_110.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_002.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_045.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_002.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_002.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_116.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_122.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_122.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_116.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_128.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_134.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_128.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_134.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_140.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_140.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_146.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_146.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_158.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_158.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_152.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_152.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_164.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_170.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_164.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_170.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_051.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_008.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_008.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_008.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_176.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_182.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_188.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_182.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_176.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_194.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_188.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_194.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_200.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_200.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_014.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_058.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_014.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_014.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_065.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_020.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_020.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_072.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_026.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_026.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_032.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_038.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_032.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_038.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_044.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_044.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_050.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_050.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_100.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_082.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_106.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_088.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_118.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_112.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_094.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_078.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_040.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_057.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_057.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_063.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_063.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_069.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_069.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_075.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_075.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_081.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_081.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_087.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_093.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_087.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_099.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_099.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_093.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_105.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_105.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_111.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_111.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_003.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_046.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_003.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_003.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_117.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_117.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_123.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_123.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_129.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_129.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_135.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_135.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_141.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_141.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_147.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_147.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_153.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_153.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_171.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_165.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_165.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_159.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_159.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_171.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_009.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_052.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_009.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_009.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_177.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_177.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_183.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_183.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_189.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_189.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_195.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_195.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_201.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_201.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_015.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_059.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_015.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_015.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_066.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_021.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_021.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_073.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_027.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_027.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_033.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_033.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_039.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_039.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_045.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_045.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_083.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_051.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_051.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_107.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_101.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_089.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_119.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_063.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_113.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_095.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_079.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_080.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_070.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_056.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_07.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_07.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_07.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_05.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_06.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_08.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_08.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_05.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_05.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_06.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_06.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_08.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_168.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_025.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_102.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_145.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_32.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_30.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_34.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_163.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_10.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_32.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_61.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_16.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_33.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_14.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_14.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_23.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_18.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_20.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_23.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_25.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_18.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_37.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_29.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_35.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuc_39.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_27.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seua_27.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_060.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_072.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_078.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_078.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_060.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_084.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_066.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_066.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_072.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_084.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_090.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_090.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_096.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_096.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_102.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_102.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_108.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_108.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_114.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_114.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_006.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_049.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_006.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_006.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_120.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_120.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_126.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_126.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_132.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_132.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_138.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_138.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_144.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_144.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_150.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_150.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_156.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_156.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_162.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_162.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_168.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_168.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_174.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_174.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_012.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_055.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_012.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_012.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_180.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_180.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_186.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_186.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_192.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_192.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_198.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_198.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_204.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_062.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_204.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_018.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_018.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_069.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_024.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_076.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_024.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_030.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_030.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_036.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_036.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_042.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_042.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_048.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_048.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seup_054.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seui_054.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_104.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_086.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_110.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_122.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_092.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_116.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_098.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seuf_043.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seub_40.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_048.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_072.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_138.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_190.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_111.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_204.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_199.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_149.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_200.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_082.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_046.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_179.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_096.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_005.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_057.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_133.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_001.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_068.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_098.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_081.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_066.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_129.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_019.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_078.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_162.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_101.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_169.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_100.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_184.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_077.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_031.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_118.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_090.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_036.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_026.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_197.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_198.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_146.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_151.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_207.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_164.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_080.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_099.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_043.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_126.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_213.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_003.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_112.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_128.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_007.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_071.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_058.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_073.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_159.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_049.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_160.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_040.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_201.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_012.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_006.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_140.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_069.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_045.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_004.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_173.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_110.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_011.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_091.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_051.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_063.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_148.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_023.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_156.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_107.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_047.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_188.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_135.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_037.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_056.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_042.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_017.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_143.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_202.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_059.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_176.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_178.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_033.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_212.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_210.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_127.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_087.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_065.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_075.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_114.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_214.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_165.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_189.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_186.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_103.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_154.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_121.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_174.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_134.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_085.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_053.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_076.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_183.json?offline=true 404 (Not Found)
+  GET https://es.laantillana.com/data/songs/seus_050.json?offline=true 404 (Not Found)

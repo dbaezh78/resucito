@@ -127,7 +127,22 @@ async function syncSeucaristia() {
     }
   });
 
-  const uniqueList = Array.from(mapById.values());
+  function normalizePsalmStrophes(p) {
+    if (!p) return p;
+    const clone = { ...p };
+    if (Array.isArray(clone.estrofas)) {
+      clone.estrofas = clone.estrofas.map(st => {
+        if (Array.isArray(st)) return st;
+        if (typeof st === 'string') return st.split(/\r?\n/);
+        return [String(st)];
+      });
+    } else if (clone.textoCompleto) {
+      clone.estrofas = clone.textoCompleto.split(/\r?\n\s*\r?\n/).map(b => b.split(/\r?\n/));
+    }
+    return clone;
+  }
+
+  const uniqueList = Array.from(mapById.values()).map(normalizePsalmStrophes);
   console.log(`💾 Guardando ${uniqueList.length} salmos individuales en ${targetDir}...`);
 
   // Guardar cada archivo individual [id].json

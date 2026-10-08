@@ -7319,13 +7319,15 @@ function setupEventListeners() {
         authUpdateBtn.disabled = true;
         authUpdateBtn.textContent = 'Actualizando...';
         
-        // 1. Limpiar toda la caché del Cache Storage
+        // 1. Limpiar la caché de la aplicación del Cache Storage (PRESERVANDO la caché de cantos)
         if ('caches' in window) {
           const cacheKeys = await caches.keys();
           await Promise.all(
-            cacheKeys.map(key => caches.delete(key))
+            cacheKeys
+              .filter(key => key !== 'resucito-cantos-cache')
+              .map(key => caches.delete(key))
           );
-          console.log('[App] Caché de CacheStorage eliminada por completo.');
+          console.log('[App] Caché de código eliminada (cantos +1400 preservados).');
         }
         
         // 2. Desregistrar todos los Service Workers activos

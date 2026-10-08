@@ -176,7 +176,6 @@ export const DEFAULT_GUEST_PERMISSIONS = [
   PERMISSIONS.PAGE_RESUCITO_PDF,
   PERMISSIONS.PAGE_INSTALAR_APP,
   PERMISSIONS.PAGE_OPCIONES_PAGINAS,
-  PERMISSIONS.PAGE_SEUCARISTICO,
   PERMISSIONS.PAGE_CHAT
 ];
 
@@ -212,9 +211,13 @@ export function initAccessControl() {
       if (Array.isArray(parsed.bannedUsers)) {
         accessControlState.bannedUsers = new Set(parsed.bannedUsers);
       }
-      // Asegurar que el grupo de invitados tenga todos sus permisos indispensables
+      // Asegurar que el grupo de invitados tenga todos sus permisos indispensables y remover páginas restringidas
       if (accessControlState.groups['invitados']) {
         DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
+        accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
+      }
+      if (accessControlState.groups['cantores']) {
+        accessControlState.groups['cantores'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
       }
       return;
     } catch (e) {
@@ -355,6 +358,10 @@ export function listenToGroupConfigFromFirebase() {
           });
           if (accessControlState.groups['invitados']) {
             DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
+            accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
+          }
+          if (accessControlState.groups['cantores']) {
+            accessControlState.groups['cantores'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
           }
           saveAccessControl();
           // Actualización silenciosa de visibilidad de libros y ajustes en la ventana principal
@@ -450,6 +457,10 @@ export async function syncAllAccessControlFromFirebase() {
         });
         if (accessControlState.groups['invitados']) {
           DEFAULT_GUEST_PERMISSIONS.forEach(p => accessControlState.groups['invitados'].permissions.add(p));
+          accessControlState.groups['invitados'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
+        }
+        if (accessControlState.groups['cantores']) {
+          accessControlState.groups['cantores'].permissions.delete(PERMISSIONS.PAGE_SEUCARISTICO);
         }
       }
     }

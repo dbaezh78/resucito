@@ -554,7 +554,28 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
       const btn = document.getElementById(btnId);
       const menu = document.getElementById(menuId);
       if (btn && menu) {
+        // Asegurar que al hacer clic en cualquier enlace del submenú se navegue directamente
+        menu.addEventListener('click', (e) => {
+          const link = e.target.closest('a');
+          if (link) {
+            e.stopPropagation();
+            menu.classList.remove('active');
+            const href = link.getAttribute('href');
+            const target = link.getAttribute('target');
+            if (href && href !== '#' && !href.startsWith('javascript:')) {
+              if (target === '_blank') {
+                window.open(link.href, '_blank', 'noopener');
+              } else {
+                window.location.href = link.href;
+              }
+            }
+          }
+        });
+
         btn.addEventListener('click', (e) => {
+          if (e.target.closest('.nav-submenu')) {
+            return;
+          }
           e.stopPropagation();
           const accountCard = document.getElementById('account-popup-card');
           if (accountCard) accountCard.classList.add('hidden');
@@ -816,8 +837,9 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
             } else {
               // Fallback directo con los cantos
               const keys = await caches.keys();
-              const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v311';
+              const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v371';
               const cache = await caches.open(cacheName);
+              const songsCache = await caches.open('resucito-cantos-cache');
               const indexRes = await fetch('data/songs-index.json?t=' + Date.now());
               if (indexRes.ok) {
                 const songs = await indexRes.clone().json();
@@ -829,7 +851,7 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
                     const u = `${folder}/${s.id}.json?offline=true`;
                     try {
                       const cr = await fetch(u);
-                      if (cr.ok) await cache.put(u, cr);
+                      if (cr.ok) await songsCache.put(u, cr);
                     } catch(e) {}
                   }));
                 }
@@ -1185,11 +1207,14 @@ import { db, doc, collection, onSnapshot, getDoc, getDocs, setDoc } from './fire
     // --- Sistema de Notificaciones en Vivo (Audio Chime, Banner Toast, HTML5 Notification) ---
     function reproducirSonidoNotificacion() {
       try {
+        if (navigator.userActivation && !navigator.userActivation.hasBeenActive) {
+          return;
+        }
         const AudioCtx = window.AudioContext || window.webkitAudioContext;
         if (!AudioCtx) return;
         const ctx = new AudioCtx();
         if (ctx.state === 'suspended') {
-          ctx.resume().catch(() => {});
+          return;
         }
         const osc = ctx.createOscillator();
         const gain = ctx.createGain();

@@ -2120,7 +2120,11 @@ window.initAjustes = async function() {
           
           if ('caches' in window) {
             const cacheKeys = await caches.keys();
-            await Promise.all(cacheKeys.map(key => caches.delete(key)));
+            await Promise.all(
+              cacheKeys
+                .filter(key => key !== 'resucito-cantos-cache')
+                .map(key => caches.delete(key))
+            );
           }
           
           if ('serviceWorker' in navigator) {
@@ -2153,9 +2157,15 @@ window.initAjustes = async function() {
   // --- MÓDULO ESTADO RESUCITÓ ---
   async function loadResourceIntoCache(url) {
     try {
-      const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v304';
-      const cache = await caches.open(cacheName);
+      const isSong = url.includes('data/songs/') || url.includes('data/songs-ae/') || url.includes('data/seucaristia/');
+      let cache;
+      if (isSong) {
+        cache = await caches.open('resucito-cantos-cache');
+      } else {
+        const keys = await caches.keys();
+        const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v371';
+        cache = await caches.open(cacheName);
+      }
       
       const res = await fetch(url);
       if (res.ok) {
@@ -2271,8 +2281,9 @@ window.initAjustes = async function() {
   window.cargarTodosLosRecursosFaltantes = async function (onProgressCallback) {
     try {
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v311';
-      const cache = await caches.open(cacheName);
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v371';
+      const appCache = await caches.open(cacheName);
+      const songsCache = await caches.open('resucito-cantos-cache');
       
       const resourcesData = await getAllAppResources();
       
@@ -2284,14 +2295,16 @@ window.initAjustes = async function() {
       resourcesData.assetResources.forEach(r => allUrls.push(r.url));
       resourcesData.songResources.forEach(r => allUrls.push(r.url));
       
-      const cachedRequests = await cache.keys();
       const cachedUrls = new Set();
-      cachedRequests.forEach(r => {
-        const urlObj = new URL(r.url, window.location.href);
-        let path = urlObj.pathname.replace(/^\//, '');
-        cachedUrls.add(path + urlObj.search);
-        cachedUrls.add(path);
-      });
+      for (const c of [appCache, songsCache]) {
+        const reqs = await c.keys();
+        reqs.forEach(r => {
+          const urlObj = new URL(r.url, window.location.href);
+          let path = urlObj.pathname.replace(/^\//, '');
+          cachedUrls.add(path + urlObj.search);
+          cachedUrls.add(path);
+        });
+      }
       
       const missingUrls = Array.from(new Set(allUrls)).filter(u => {
         const clean = u.replace(/^\.\//, '').replace(/^\//, '');
@@ -2446,23 +2459,26 @@ window.initAjustes = async function() {
         songResources
       } = await getAllAppResources();
 
-      // 2. Conectar a la caché
+      // 2. Conectar a la caché (app y cantos persistentes)
       const keys = await caches.keys();
-      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v304';
-      const cache = await caches.open(cacheName);
+      const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v371';
+      const appCache = await caches.open(cacheName);
+      const songsCache = await caches.open('resucito-cantos-cache');
       
-      // Obtener todas las claves cacheadas para búsqueda rápida
-      const cachedRequests = await cache.keys();
+      // Obtener todas las claves cacheadas para búsqueda rápida de AMBAS cachés
       const cachedUrls = new Set();
-      cachedRequests.forEach(r => {
-        const urlObj = new URL(r.url, window.location.href);
-        let path = urlObj.pathname;
-        if (path.startsWith('/')) {
-          path = path.substring(1);
-        }
-        cachedUrls.add(path + urlObj.search);
-        cachedUrls.add(path); // También registrar sin query string
-      });
+      for (const c of [appCache, songsCache]) {
+        const cachedRequests = await c.keys();
+        cachedRequests.forEach(r => {
+          const urlObj = new URL(r.url, window.location.href);
+          let path = urlObj.pathname;
+          if (path.startsWith('/')) {
+            path = path.substring(1);
+          }
+          cachedUrls.add(path + urlObj.search);
+          cachedUrls.add(path); // También registrar sin query string
+        });
+      }
 
       // Helper para comprobar existencia en caché (tolerante a ?offline=true y ?v=...)
       const checkCached = (relUrl) => {
@@ -2679,8 +2695,9 @@ window.initAjustes = async function() {
           updateCloudProgress("Iniciando escaneo y descarga...", 0);
           
           const keys = await caches.keys();
-          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v304';
-          const cache = await caches.open(cacheName);
+          const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v371';
+          const appCache = await caches.open(cacheName);
+          const songsCache = await caches.open('resucito-cantos-cache');
           
           const resourcesData = await getAllAppResources();
           
@@ -2715,9 +2732,11 @@ window.initAjustes = async function() {
             const batch = uniqueUrls.slice(i, i + batchSize);
             await Promise.all(batch.map(async (url) => {
               try {
+                const isSong = url.includes('data/songs/') || url.includes('data/songs-ae/') || url.includes('data/seucaristia/');
+                const targetCache = isSong ? songsCache : appCache;
                 const res = await fetch(url);
                 if (res.ok) {
-                  await cache.put(url, res.clone());
+                  await targetCache.put(url, res.clone());
                 }
               } catch (err) {
                 console.warn(`Error descargando recurso ${url}:`, err);
@@ -2755,9 +2774,7 @@ window.initAjustes = async function() {
           cantoEquipoToggle.disabled = true;
           try {
             updateCloudProgress("Eliminando cantos guardados...", 20);
-            const keys = await caches.keys();
-            const cacheName = keys.find(k => k.startsWith('resucito-cache-')) || 'resucito-cache-v304';
-            const cache = await caches.open(cacheName);
+            const songsCache = await caches.open('resucito-cantos-cache');
             
             const songs = await getOrFetchAllSongs();
             const songIds = songs.map(s => s.id);
@@ -2766,7 +2783,8 @@ window.initAjustes = async function() {
             for (const id of songIds) {
               const folder = id.startsWith('aet') ? 'data/songs-ae' : 'data/songs';
               const url = `${folder}/${id}.json?offline=true`;
-              await cache.delete(url);
+              await songsCache.delete(url);
+              await songsCache.delete(`${folder}/${id}.json`);
               deleted++;
               const pct = 20 + Math.round((deleted / songIds.length) * 80);
               updateCloudProgress(`Eliminando canto ${deleted}/${songIds.length}...`, pct);
@@ -2914,24 +2932,23 @@ window.initAjustes = async function() {
       const doClear = async () => {
         btnClearCache.disabled = true;
         try {
-          updateCloudProgress("Eliminando caché...", 20);
+          updateCloudProgress("Eliminando caché de la aplicación...", 20);
           const keys = await caches.keys();
+          const keysToDelete = keys.filter(key => key !== 'resucito-cantos-cache');
           let deletedCount = 0;
           
-          for (const key of keys) {
+          for (const key of keysToDelete) {
             await caches.delete(key);
             deletedCount++;
-            const pct = 20 + Math.round((deletedCount / keys.length) * 80);
-            updateCloudProgress(`Eliminado caché: ${key}...`, pct);
+            const pct = 20 + Math.round((deletedCount / (keysToDelete.length || 1)) * 80);
+            updateCloudProgress(`Eliminada caché: ${key}...`, pct);
           }
           
           if (window.loadedSongsCache) {
             window.loadedSongsCache = {};
           }
           
-          localStorage.setItem('cantoEquipoOffline', 'false'); // Desactivar el toggle de canto offline
-          
-          updateCloudProgress("¡Caché limpiada con éxito! Recargando aplicación...", 100);
+          updateCloudProgress("¡Caché de app limpiada con éxito! (Tus cantos siguen guardados). Recargando...", 100);
           setTimeout(() => {
             window.location.reload();
           }, 1500);
@@ -2955,14 +2972,14 @@ window.initAjustes = async function() {
       if (window.mostrarConfirmacion) {
         window.mostrarConfirmacion({
           titulo: 'Limpiar Caché',
-          mensaje: '¿Estás seguro de que deseas limpiar la caché de la aplicación? Esto forzará la descarga de las últimas versiones de cantos y recursos la próxima vez que los abras.',
+          mensaje: '¿Estás seguro de que deseas limpiar la caché de la aplicación? Esto actualizará la interfaz y los scripts del sistema, pero conservará intactos todos tus cantos y salmos guardados (+1400 archivos).',
           icono: 'delete_forever',
           textoSi: 'Sí',
           textoNo: 'No',
           onConfirm: doClear
         });
       } else {
-        if (confirm("¿Estás seguro de que deseas limpiar la caché de la aplicación? Esto forzará la descarga de las últimas versiones de cantos y recursos la próxima vez que los abras.")) {
+        if (confirm("¿Estás seguro de que deseas limpiar la caché de la aplicación? Esto actualizará la interfaz y los scripts del sistema, pero conservará intactos todos tus cantos y salmos guardados (+1400 archivos).")) {
           doClear();
         }
       }

@@ -21,9 +21,11 @@
       color: var(--text-color, #212529);
       margin: 0;
       padding: 0;
+      padding-bottom: 60px;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      box-sizing: border-box;
     }
 
     .app-header {
@@ -124,7 +126,7 @@
     .main-workspace {
       display: flex;
       flex: 1;
-      height: calc(100vh - 72px);
+      height: calc(100vh - 72px - 60px);
       overflow: hidden;
     }
 
@@ -133,12 +135,13 @@
         flex-direction: column;
         height: auto;
         overflow: visible;
+        padding-bottom: 80px;
       }
     }
 
     /* Panel Lateral de Salmos */
     .psalms-sidebar {
-      width: 380px;
+      width: 420px;
       background: var(--panel-bg, #ffffff);
       border-right: 1px solid var(--panel-border, #e0e0e0);
       display: flex;
@@ -150,14 +153,15 @@
     @media (max-width: 960px) {
       .psalms-sidebar {
         width: 100%;
-        height: 380px;
+        height: auto;
+        max-height: 480px;
         border-right: none;
         border-bottom: 2px solid var(--panel-border, #e0e0e0);
       }
     }
 
     .sidebar-header {
-      padding: 14px 16px;
+      padding: 12px 14px;
       border-bottom: 1px solid var(--panel-border, #e0e0e0);
       background: rgba(0,0,0,0.015);
       display: flex;
@@ -165,57 +169,161 @@
       gap: 10px;
     }
 
+    /* Tarjeta de Filtros Progresivos: Ciclo, Tiempo, Día y Santos */
+    .eucaristia-filter-card {
+      background: var(--panel-bg, #ffffff);
+      border: 1px solid var(--panel-border, #e0e0e0);
+      border-radius: 14px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    .filter-pills-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .filter-pills-label {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--text-color, #1e293b);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .aclamaciones-pills {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .aclamaciones-pill {
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 20px;
+      background: var(--input-bg, #f1f5f9);
+      color: var(--text-muted, #475569);
+      border: 1px solid var(--panel-border, #cbd5e1);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+      line-height: 1.2;
+    }
+
+    .aclamaciones-pill:hover {
+      background: var(--hover-bg, #e2e8f0);
+      color: var(--text-color, #0f172a);
+    }
+
+    .aclamaciones-pill.active {
+      background: var(--salmo-red, #d01212) !important;
+      color: #ffffff !important;
+      border-color: var(--salmo-red, #d01212) !important;
+      box-shadow: 0 2px 6px rgba(208, 18, 18, 0.3);
+    }
+
+    .eucaristia-dias-mes-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .eucaristia-dias-mes-pills .aclamaciones-pill {
+      padding: 3px 8px !important;
+      min-width: 28px !important;
+      font-size: 0.78rem !important;
+      line-height: 1.2 !important;
+      text-align: center !important;
+      justify-content: center !important;
+    }
+
+    /* Buscador de Salmos Estilizado */
     .search-box-wrap {
       position: relative;
       display: flex;
       align-items: center;
-    }
-    .search-box-wrap input {
       width: 100%;
-      padding: 8px 32px 8px 34px;
-      border-radius: 8px;
-      border: 1px solid var(--panel-border, #ccc);
-      background: var(--bg-color, #fff);
-      color: var(--text-color, #000);
-      font-size: 0.88rem;
-      outline: none;
+      background: var(--panel-bg, #ffffff);
+      border: 1.5px solid var(--panel-border, #cbd5e1);
+      border-radius: 24px;
+      padding: 4px 14px;
       box-sizing: border-box;
-    }
-    .search-box-wrap .search-icon {
-      position: absolute;
-      left: 10px;
-      font-size: 1.15rem;
-      color: var(--text-muted, #888);
-      pointer-events: none;
-    }
-    .search-box-wrap .clear-icon {
-      position: absolute;
-      right: 10px;
-      font-size: 1.15rem;
-      color: var(--text-muted, #888);
-      cursor: pointer;
-      display: none;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
+      gap: 8px;
     }
 
-    .cycle-filter-select {
+    .search-box-wrap:hover {
+      border-color: #94a3b8;
+    }
+
+    .search-box-wrap:focus-within {
+      border-color: var(--salmo-red, #d01212) !important;
+      box-shadow: 0 0 0 3px rgba(208, 18, 18, 0.15), 0 2px 6px rgba(0, 0, 0, 0.04);
+      background: var(--panel-bg, #ffffff);
+    }
+
+    .search-box-wrap .search-icon {
+      font-size: 1.25rem;
+      color: var(--salmo-red, #d01212);
+      flex-shrink: 0;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-box-wrap input#search-psalms-input {
+      flex: 1;
+      min-width: 0;
       width: 100%;
-      padding: 7px 10px;
-      border-radius: 8px;
-      border: 1px solid var(--panel-border, #ccc);
-      background: var(--bg-color, #fff);
-      color: var(--text-color, #000);
-      font-size: 0.82rem;
-      font-weight: 600;
-      outline: none;
+      border: none !important;
+      outline: none !important;
+      background: transparent !important;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-color, #1e293b);
+      padding: 6px 0;
+      font-family: inherit;
+      box-shadow: none !important;
+    }
+
+    .search-box-wrap input#search-psalms-input::placeholder {
+      color: var(--text-muted, #94a3b8);
+      font-size: 0.84rem;
+    }
+
+    .search-box-wrap .clear-icon {
+      font-size: 1.15rem;
+      color: var(--text-muted, #94a3b8);
+      cursor: pointer;
+      display: none;
+      padding: 3px;
+      border-radius: 50%;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    .search-box-wrap .clear-icon:hover {
+      color: var(--salmo-red, #d01212);
+      background: rgba(208, 18, 18, 0.1);
     }
 
     .sidebar-stats-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       color: var(--text-muted, #666);
-      font-weight: 600;
+      font-weight: 700;
+      padding: 0 2px;
     }
 
     .psalm-list-scroll {
@@ -534,8 +642,8 @@
       opacity: 1;
     }
   </style>
-  <script type="module" crossorigin src="./assets/seucaristico-7uoSnFaK.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/firebase-BtgfbH6E.js">
+  <script type="module" crossorigin src="./assets/seucaristico-DSBBy6No.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/preload-helper-BoU5IU9X.js">
   <link rel="stylesheet" crossorigin href="./assets/seucaristico-C01epT6a.css">
   <link rel="stylesheet" crossorigin href="./assets/expancion-3BOBeFOq.css">
 </head>
@@ -576,26 +684,89 @@
     <!-- Panel Lateral: Buscador y Lista de Salmos -->
     <aside class="psalms-sidebar">
       <div class="sidebar-header">
+        <!-- Tarjeta de Filtros Progresivos: Ciclo, Tiempo, Día y Santos -->
+        <div class="eucaristia-filter-card" id="eucaristia-hierarchical-filter-card">
+          <!-- Grupo 1: CICLO -->
+          <div class="filter-pills-row" id="group-ciclo">
+            <span class="filter-pills-label">CICLO:</span>
+            <div class="aclamaciones-pills" id="pills-ciclos">
+              <button type="button" class="aclamaciones-pill active" data-ciclo="Todos">Todos</button>
+              <button type="button" class="aclamaciones-pill" data-ciclo="Ciclo A">Ciclo A</button>
+              <button type="button" class="aclamaciones-pill" data-ciclo="Ciclo B">Ciclo B</button>
+              <button type="button" class="aclamaciones-pill" data-ciclo="Ciclo C">Ciclo C</button>
+              <button type="button" class="aclamaciones-pill" data-ciclo="Año Par">Año Par</button>
+              <button type="button" class="aclamaciones-pill" data-ciclo="Año Impar">Año Impar</button>
+              <button type="button" class="aclamaciones-pill" data-ciclo="Santos">Santos</button>
+            </div>
+          </div>
+
+          <!-- Grupo 2: TIEMPO (para ciclos regulares) -->
+          <div class="filter-pills-row" id="group-tiempo" style="display: none;">
+            <span class="filter-pills-label">TIEMPO:</span>
+            <div class="aclamaciones-pills" id="pills-tiempos">
+              <button type="button" class="aclamaciones-pill active" data-tiempo="Todos">Todos</button>
+              <button type="button" class="aclamaciones-pill" data-tiempo="Adviento">Adviento</button>
+              <button type="button" class="aclamaciones-pill" data-tiempo="Navidad">Navidad</button>
+              <button type="button" class="aclamaciones-pill" data-tiempo="Cuaresma">Cuaresma</button>
+              <button type="button" class="aclamaciones-pill" data-tiempo="Pascua">Pascua</button>
+              <button type="button" class="aclamaciones-pill" data-tiempo="Tiempo Ordinario">Ordinario</button>
+              <button type="button" class="aclamaciones-pill" data-tiempo="Solemnidades y Fiestas">Fiestas</button>
+            </div>
+          </div>
+
+          <!-- Grupo 3: DÍA (de la semana) -->
+          <div class="filter-pills-row" id="group-dia" style="display: none;">
+            <span class="filter-pills-label">DÍA:</span>
+            <div class="aclamaciones-pills" id="pills-dias">
+              <button type="button" class="aclamaciones-pill active" data-dia="Todos">Todos</button>
+              <button type="button" class="aclamaciones-pill" data-dia="Domingo">Domingo</button>
+              <button type="button" class="aclamaciones-pill" data-dia="Lunes">Lunes</button>
+              <button type="button" class="aclamaciones-pill" data-dia="Martes">Martes</button>
+              <button type="button" class="aclamaciones-pill" data-dia="Miércoles">Miércoles</button>
+              <button type="button" class="aclamaciones-pill" data-dia="Jueves">Jueves</button>
+              <button type="button" class="aclamaciones-pill" data-dia="Viernes">Viernes</button>
+              <button type="button" class="aclamaciones-pill" data-dia="Sábado">Sábado</button>
+            </div>
+          </div>
+
+          <!-- Grupo 4: MES (para Santos) -->
+          <div class="filter-pills-row" id="group-mes" style="display: none;">
+            <span class="filter-pills-label">MES:</span>
+            <div class="aclamaciones-pills" id="pills-meses">
+              <button type="button" class="aclamaciones-pill active" data-mes="Todos">Todos</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Enero">Enero</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Febrero">Febrero</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Marzo">Marzo</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Abril">Abril</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Mayo">Mayo</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Junio">Junio</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Julio">Julio</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Agosto">Agosto</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Septiembre">Septiembre</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Octubre">Octubre</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Noviembre">Noviembre</button>
+              <button type="button" class="aclamaciones-pill" data-mes="Diciembre">Diciembre</button>
+            </div>
+          </div>
+
+          <!-- Grupo 5: DÍA DEL MES (para Santos) -->
+          <div class="filter-pills-row" id="group-dia-mes" style="display: none;">
+            <span class="filter-pills-label">DÍA:</span>
+            <div class="aclamaciones-pills eucaristia-dias-mes-pills" id="pills-dias-mes">
+              <!-- Botones compactos 1, 2, 3... dinámicos según el mes -->
+            </div>
+          </div>
+        </div>
+
         <div class="search-box-wrap">
           <span class="material-symbols-outlined search-icon">search</span>
           <input type="text" id="search-psalms-input" placeholder="Buscar salmo, domingo, fiesta...">
           <span class="material-symbols-outlined clear-icon" id="clear-search-btn">close</span>
         </div>
 
-        <select id="cycle-filter-select" class="cycle-filter-select">
-          <option value="todos">Todos los Ciclos (981)</option>
-          <option value="Ciclo A">Ciclo A (78)</option>
-          <option value="Ciclo B">Ciclo B (76)</option>
-          <option value="Ciclo C">Ciclo C (80)</option>
-          <option value="Año Par">Año Par (204)</option>
-          <option value="Año Impar">Año Impar (204)</option>
-          <option value="Ferias">Ferias (122)</option>
-          <option value="Santos">Santos (217)</option>
-        </select>
-
         <div class="sidebar-stats-row">
           <span id="filtered-count-badge">981 salmos</span>
-          <button id="btn-new-psalm" class="btn-action" style="padding: 4px 10px; font-size: 0.78rem;">
+          <button type="button" id="btn-new-psalm" class="btn-action" style="padding: 4px 10px; font-size: 0.78rem;">
             <span class="material-symbols-outlined" style="font-size: 1rem;">add</span> Nuevo
           </button>
         </div>

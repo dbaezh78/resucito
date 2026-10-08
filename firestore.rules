@@ -61,25 +61,32 @@ service cloud.firestore {
     }
 
     // 10. Colección de ASISTENCIA Y CHAT EN VIVO (Soporte WhatsApp Web)
-    // - Los documentos principales son el encabezado del chat por usuario
     match /support_chats/{chatId} {
-      allow read, write: if request.auth != null;
+      allow read, write: if request.auth != null && (
+        request.auth.token.email == 'dbaezh78@gmail.com' || 
+        request.auth.uid == chatId || 
+        (resource != null && resource.data.userId == request.auth.uid) ||
+        (request.resource != null && request.resource.data.userId == request.auth.uid)
+      );
 
       // Subcolección de mensajes del chat
       match /messages/{messageId} {
-        allow read, write: if request.auth != null;
+        allow read, write: if request.auth != null && (
+          request.auth.token.email == 'dbaezh78@gmail.com' || 
+          request.auth.uid == chatId
+        );
       }
     }
 
     // 11. Guardar Registros de log en firebase
     match /app_logs/{docId} {
-      allow read, write: if true; // o if request.auth != null;
+      allow read, write: if true;
     }
 
     // 12. Colección de PARROQUIAS y Preparaciones de Eucaristía
-    // - Lectura pública (para selector en perfil y vistas compartidas)
+    // - Lectura pública (para selector en perfil, listados y colaboradores)
     // - Creación y edición para usuarios autenticados
-    // - Eliminación para creador o Administrador Principal
+    // - Eliminación restringida al creador o Administrador Principal
     match /parroquias/{parroquiaId} {
       allow read: if true;
       allow create, update: if request.auth != null;
@@ -88,28 +95,27 @@ service cloud.firestore {
         (resource != null && resource.data.creadorUid == request.auth.uid)
       );
 
-      // Subcolecciones de parroquia (preparaciones, miembros, avisos, etc.)
+      // Subcolecciones de parroquia (preparaciones, miembros, etc.)
       match /{document=**} {
         allow read: if true;
         allow write: if request.auth != null;
       }
     }
 
-    // 13. Salmos de la Eucaristía (Lectura pública para todos, escritura para usuarios autenticados)
+    // 13. Colección de Salmos de la Eucaristía y Ciclos
+    // - Lectura y escritura pública para administración y sincronización inmediata
     match /salmos_eucaristia/{salmoId} {
-      allow read: if true;
-      allow write: if request.auth != null;
+      allow read, write: if true;
     }
 
     match /salmos_eucaristia_ciclos/{cicloId} {
-      allow read: if true;
-      allow write: if request.auth != null;
+      allow read, write: if true;
     }
 
     // 14. Bloqueo por defecto para cualquier otra colección no especificada
     match /{document=**} {
       allow read, write: if false;
     }
-    
+
   }
 }
